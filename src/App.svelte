@@ -15,6 +15,8 @@
 		{ title: 'Code', time: '11:00 am' },
 		{ title: 'Eat', time: '01:00 pm' }
 	];
+
+import CustomTimeline from './components/CustomTimeline.svelte';
 </script>
 
 <Timeline position="alternate" style={"border: solid 1px #dbdbdb; padding: 50px 0; border-radius: 2%;"}>
@@ -33,6 +35,8 @@
 		</TimelineItem>
 	{/each}
 </Timeline>
+
+<CustomTimeline />
 
 <style>
 	h3 {

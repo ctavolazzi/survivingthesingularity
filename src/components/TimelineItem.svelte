@@ -95,12 +95,21 @@
   }
 
   .modal-content {
+    position: relative; /* Added to ensure the close button is positioned relative to this container */
     background-color: white;
     padding: 20px;
     border-radius: 4px;
     max-width: 500px;
     max-height: 90vh;
     overflow-y: auto;
+    margin: 2% auto;
+  }
+
+  @media (max-width: 768px) {
+    .modal-content {
+      margin: 10% auto;
+      max-width: 90%;
+    }
   }
 
   .close-button {
@@ -108,6 +117,9 @@
     border: none;
     background: none;
     font-size: 1.5rem;
+    position: absolute; /* Positions the button relative to .modal-content now */
+    top: 10px;
+    right: 10px;
   }
 
   .modal-header {
@@ -133,3 +145,4 @@
     margin-top: 20px;
   }
 </style>
+

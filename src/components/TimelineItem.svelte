@@ -61,14 +61,23 @@
         <button class="close-button" on:click={toggleModal}>&times;</button>
       </div>
       <div class="modal-body">
-        <h3><strong>Details:</strong></h3> 
+        <h4>Authors</h4>
+        <p>{event.authors}</p>
+        <h4><strong>Details:</strong></h4> 
         <p>{event.details}</p>
         <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>
           Learn More
         </button>
+        <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>
+          arXiv Link
+        </button>
+        <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>
+          PDF Link
+        </button>
       </div>
     </div>
   </div>
+  
 {/if}
 
 <style>

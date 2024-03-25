@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "daisyui": "^4.8.0",
+    "lodash": "^4.17.21",
     "sirv-cli": "^2.0.0",
     "svelte-vertical-timeline": "^1.0.0"
   }

@@ -8,6 +8,7 @@
 		TimelineContent,
 		TimelineOppositeContent
 	} from 'svelte-vertical-timeline';
+  import MyTimeline from './components/MyTimeline.svelte';
 
 	const options = [
 		{ title: 'Eat', time: '09:30 am' },
@@ -17,7 +18,7 @@
 	];
 </script>
 
-<Timeline position="alternate" style={"border: solid 1px #dbdbdb; padding: 50px 0; border-radius: 2%;"}>
+<!-- <Timeline position="alternate" style={"border: solid 1px #dbdbdb; padding: 50px 0; border-radius: 2%;"}>
 	{#each options as option}
 		<TimelineItem>
 			<TimelineOppositeContent slot="opposite-content">
@@ -32,7 +33,9 @@
 			</TimelineContent>
 		</TimelineItem>
 	{/each}
-</Timeline>
+</Timeline> -->
+
+<MyTimeline />
 
 <style>
 	h3 {

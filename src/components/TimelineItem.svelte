@@ -1,9 +1,12 @@
 <script>
   import { TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from 'svelte-vertical-timeline';
   import ItemModal from './ItemModal.svelte';
+  import { fade } from 'svelte/transition';
+  import { inview } from 'svelte-inview';
 
   export let event;
 
+  let isInView = false;
   let showModal = false;
 
   function openModal() {
@@ -13,29 +16,90 @@
   function closeModal() {
     showModal = false;
   }
+
+  const options = {
+    unobserveOnEnter: true,
+    rootMargin: '-20%'
+  };
+
+  const handleChange = ({ detail }) => {
+    isInView = detail.inView;
+  };
+  function formatDate(dateString) {
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+                        
+    // Starting from the back to grab the day and month
+    const day = dateString.slice(-2);
+    const monthIndex = parseInt(dateString.slice(-5, -3)) - 1;
+    const month = monthNames[monthIndex];
+    
+    // For the year, taking the whole string except the last 6 characters
+    // This correctly accounts for both negative and positive years
+    const year = dateString.slice(0, -6);
+
+    return `${month} ${day}, ${year}`;
+}
+
+
+
 </script>
 
-<TimelineItem>
-  <TimelineOppositeContent slot="opposite-content" class="timeline-time">
-    <h3>{event.published}</h3>
-    <h4>Published by {event.authors}</h4>
-    <p>{new Date(event.published).getHours() < 12 ? 'Morning' : 'Afternoon'}</p>
-    <p>{new Date(event.published).getHours() < 12 ? '🌅' : '🌆'}</p>
-  </TimelineOppositeContent>
-  <TimelineSeparator>
-    <TimelineDot />
-    <TimelineConnector />
-  </TimelineSeparator>
-  <TimelineContent>
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">{event.title}</h2>
-        <p>{event.abstract}</p>
-        <button class="btn btn-primary" on:click={openModal}>View Details</button>
-      </div>
+<div use:inview={options} on:inview_change={handleChange}>
+  {#if isInView}
+    <div in:fade={{ duration: 400 }}>
+      <TimelineItem>
+        <TimelineOppositeContent slot="opposite-content" class="timeline-time">
+          <h3>{formatDate(event.published)}</h3>
+          <h4>{event.authors.length > 0 ? `By ${event.authors.join(', ')}` : 'Anonymous'}</h4>
+          <p>
+            {event.category === 'Computing' ? '🖥️' : event.category === 'Mathematics' ? '➕' : event.category === 'Technology' ? '🔩' : '📚'}
+            {event.category}
+          </p>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot aria-hidden="true" />
+          <TimelineConnector aria-hidden="true" />
+        </TimelineSeparator>
+        <TimelineContent>
+          <div class="card bg-base-100 shadow-xl" id="timeline-item-{event.id}">
+            <div class="card-body">
+              <h2 class="card-title">{event.title}</h2>
+              <p>{event.abstract}</p>
+              <button class="btn btn-primary" on:click={openModal}>View Details</button>
+            </div>
+          </div>
+        </TimelineContent>
+      </TimelineItem>
     </div>
-  </TimelineContent>
-</TimelineItem>
+  {:else}
+    <div style="visibility: hidden;">
+      <TimelineItem>
+        <TimelineOppositeContent slot="opposite-content" class="timeline-time">
+          <h3>{formatDate(event.published)}</h3>
+          <h4>{event.authors.length > 0 ? `By ${event.authors.join(', ')}` : 'Anonymous'}</h4>
+          <p>
+            {event.category === 'Computing' ? '🖥️' : event.category === 'Mathematics' ? '➕' : event.category === 'Technology' ? '🔩' : '📚'}
+            {event.category}
+          </p>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot aria-hidden="true" />
+          <TimelineConnector aria-hidden="true" />
+        </TimelineSeparator>
+        <TimelineContent>
+          <div class="card bg-base-100 shadow-xl" id="timeline-item-{event.id}">
+            <div class="card-body">
+              <h2 class="card-title">{event.title}</h2>
+              <p>{event.abstract}</p>
+              <button class="btn btn-primary" on:click={openModal}>View Details</button>
+            </div>
+          </div>
+        </TimelineContent>
+      </TimelineItem>
+    </div>
+  {/if}
+</div>
 
 {#if showModal}
   <ItemModal {event} on:close={closeModal} />

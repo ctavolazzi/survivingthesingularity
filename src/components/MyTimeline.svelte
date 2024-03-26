@@ -1,28 +1,23 @@
 <script>
   import { Timeline } from 'svelte-vertical-timeline';
   import TimelineItem from './TimelineItem.svelte';
-  import Navbar from './Navbar.svelte';
-
   import { events } from '../events.js';
 </script>
 
-
-  <!-- <Navbar /> -->
-  <div class="timeline-container">
-    <Timeline position="right">
-      {#each events as event}
-        <TimelineItem {event} />
-      {/each}
-    </Timeline>
-  </div>
-
+<div class="timeline-container">
+  <Timeline position="right">
+    {#each events as event (event.id)}
+      <TimelineItem {event} />
+    {/each}
+  </Timeline>
+</div>
 
 <style>
   .timeline-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 0;
-    padding-top: 0px
+    padding-top: 0px;
   }
 
   :global(.timeline-item) {

@@ -12,7 +12,7 @@
   
   <div class="container">
     <div class="content">
-      <h1 class="title">About Surviving the Singularity</h1>
+      <h1 class="title">What is this all about?</h1>
       <p class="description">
         Once considered a theoretical concept confined to the realms of science fiction and fringe discussions, the technological singularity has now become an increasingly plausible reality. The singularity—a future period during which the pace of technological change will be so rapid, its impact so deep, that human life will be irreversibly transformed—is no longer a mere hypothetical scenario.
       </p>

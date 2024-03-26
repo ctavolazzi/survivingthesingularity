@@ -1,30 +1,37 @@
 <script>
+  import { fade } from 'svelte/transition';
   import Navbar from './components/Navbar.svelte';
   import About from './components/About.svelte';
   import Contact from './components/Contact.svelte';
-  let activeTab = 'Home';
   import MyTimeline from './components/MyTimeline.svelte';
   import Countdown from './components/Countdown.svelte';
+  let activeTab = 'Home'; // This will ensure 'Home' content is visible on initial load
   const targetDate = new Date('2028-11-06').getTime();
-  // Optionally import TypingEffect if needed later
-  // import TypingEffect from './components/TypingEffect.svelte';
 </script>
 
-<Navbar on:tabChange="{e => activeTab = e.detail.tab}" />
+<Navbar on:tabChange="{e => (activeTab = e.detail.tab)}" />
 
+<!-- Direct use of activeTab for conditional rendering and animation -->
 {#if activeTab === 'Home'}
-  <div>
-    <h1 class="text-center mt-8 font-bold text-4xl">Surviving the Singularity</h1>
-    <h3 class="text-center text-xl mt-4">Time Left Until the Singularity:</h3>
+  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+    <h1 class="text-center mt-8 font-bold text-4xl">Time Left Until the Singularity:</h1>
     <Countdown {targetDate} />
     <h2 class="text-center text-2xl mt-4">Timeline of Events</h2>
     <MyTimeline />
   </div>
-{:else if activeTab === 'About'}
-  <About />
-{:else if activeTab === 'Contact'}
-  <Contact />
 {/if}
+{#if activeTab === 'About'}
+  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+    <About />
+  </div>
+{/if}
+{#if activeTab === 'Contact'}
+  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+    <Contact />
+  </div>
+{/if}
+
+
 
 <style>
   h1 {

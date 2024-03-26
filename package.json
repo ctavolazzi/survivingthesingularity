@@ -25,6 +25,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "sirv-cli": "^2.0.0",
+    "svelte-inview": "^4.0.2",
     "svelte-vertical-timeline": "^1.0.0"
   }
 }

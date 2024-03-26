@@ -13,6 +13,7 @@
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-terser": "^0.4.0",
     "autoprefixer": "^10.4.19",
+    "daisyui": "^4.8.0",
     "postcss": "^8.4.38",
     "rollup": "^3.15.0",
     "rollup-plugin-css-only": "^4.3.0",
@@ -22,7 +23,6 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
-    "daisyui": "^4.8.0",
     "lodash": "^4.17.21",
     "sirv-cli": "^2.0.0",
     "svelte-vertical-timeline": "^1.0.0"

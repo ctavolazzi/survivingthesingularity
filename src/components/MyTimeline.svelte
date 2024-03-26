@@ -18,6 +18,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 0;
+    padding-top: 0px
   }
 
   :global(.timeline-item) {

@@ -1,17 +1,21 @@
 <script>
   import { Timeline } from 'svelte-vertical-timeline';
   import TimelineItem from './TimelineItem.svelte';
+  import Navbar from './Navbar.svelte';
 
   import { events } from '../events.js';
 </script>
 
-<div class="timeline-container">
-  <Timeline position="right">
-    {#each events as event}
-      <TimelineItem {event} />
-    {/each}
-  </Timeline>
-</div>
+
+  <!-- <Navbar /> -->
+  <div class="timeline-container">
+    <Timeline position="right">
+      {#each events as event}
+        <TimelineItem {event} />
+      {/each}
+    </Timeline>
+  </div>
+
 
 <style>
   .timeline-container {

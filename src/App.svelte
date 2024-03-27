@@ -5,6 +5,9 @@
   import Contact from './components/Contact.svelte';
   import MyTimeline from './components/MyTimeline.svelte';
   import Countdown from './components/Countdown.svelte';
+  import Chat from './components/Chat.svelte';
+  import NewsPage from './components/NewsPage.svelte';
+  // import NewsArticle from './components/NewsArticle.svelte';
   let activeTab = 'Home'; // This will ensure 'Home' content is visible on initial load
   const targetDate = new Date('2028-11-06').getTime();
 </script>
@@ -30,8 +33,16 @@
     <Contact />
   </div>
 {/if}
-
-
+{#if activeTab === 'Chat'}
+  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+    <Chat />
+  </div>
+{/if}
+{#if activeTab === 'News'}
+  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+    <NewsPage />
+  </div>
+{/if}
 
 <style>
   h1 {

@@ -23,7 +23,10 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
+    "ai": "^3.0.14",
     "lodash": "^4.17.21",
+    "newsapi": "^2.4.1",
+    "openai": "^4.29.2",
     "sirv-cli": "^2.0.0",
     "svelte-inview": "^4.0.2",
     "svelte-vertical-timeline": "^1.0.0"

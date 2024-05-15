@@ -9,6 +9,10 @@
       email = '';
     }
   }
+
+  function handleBuyBook() {
+    alert("The book is still under development and will be available in November 2023.");
+  }
 </script>
 
 <div class="container">
@@ -28,7 +32,7 @@
       <button class="sample-button" on:click={() => window.open('https://docs.google.com/document/d/1plGfd2X8-TsH3aCjbSz6aJeZTpfmrHZ6zNJ2hw6ww9s/edit?usp=sharing', '_blank')}>
         Read a Sample
       </button>
-      <button class="buy-button" on:click={() => window.open('https://www.example.com/buy-surviving-the-singularity', '_blank')}>
+      <button class="buy-button" on:click={handleBuyBook}>
         Buy the Book
       </button>
     </div>

@@ -107,6 +107,7 @@
     gap: 1rem;
     height: 150px; /* Adjust this value to match the desired height */
     padding: 0 2rem; /* Add padding to give more room on the sides */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   }
 
   .countdown-item {
@@ -120,14 +121,14 @@
   }
 
   .countdown-value {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    width: 4.5rem; /* Increase width to accommodate up to 3 digits */
+    width: 3.5rem; /* Adjust width to better fit mobile screens */
     text-align: center;
   }
 
   .countdown-label {
-    font-size: 1rem;
+    font-size: 0.8rem; /* Adjust font size for better readability on mobile */
     text-transform: uppercase;
     text-align: center;
   }

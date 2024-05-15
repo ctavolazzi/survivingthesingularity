@@ -2,15 +2,20 @@
   import { fileFromPath } from "openai";
   import { onMount } from "svelte";
   //// variables
-  const API_KEY = "51e31e1aada647c19f316bbfb4dfbff4";
-  const TOP_NEWS_URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+  // import api keys from .env.local
+  import { config } from "dotenv"; 
+  config();
+
+  // const API_KEY = '51e31e1aada647c19f316bbfb4dfbff4';
+  const NEWS_API_KEY = process.env.NEWS_API_KEY;
+  const TOP_NEWS_URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${NEWS_API_KEY}`;
   const SINGULARITY_NEWS_URL = `GET https://newsapi.org/v2/everything?q=Singularity&from=2024-03-26&sortBy=popularity&apiKey=${API_KEY}`;
 
   var url = 'https://newsapi.org/v2/everything?' +
           'q=Singularity&' +
           'from=2024-03-26&' +
           'sortBy=popularity&' +
-          'apiKey=51e31e1aada647c19f316bbfb4dfbff4';
+          `apiKey=${NEWS_API_KEY}`;
 
   var req = new Request(url);
 
@@ -49,7 +54,7 @@
   onMount(async function() {
     const response = await fetch(TOP_NEWS_URL);
     const json = await response.json();
-    singularity_articles = json["articles"];
+    articles = json["articles"];
   });
 </script>
 
@@ -80,7 +85,7 @@
   }
 </style>
 
-{#each singularity_articles as article}
+{#each articles as article}
   <div class="card">
     {#if article.urlToImage === null}
       <br />

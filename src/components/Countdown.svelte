@@ -98,11 +98,12 @@
     </div>
   </div>
 {/if}
-
 <style>
-  .countdown-container, .loading-container {
+  .countdown-container,
+  .loading-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     height: 150px; /* Adjust this value to match the desired height */
   }
@@ -126,8 +127,17 @@
     text-transform: uppercase;
   }
 
+  @media (max-width: 600px) {
+    .countdown-container {
+      transform: scale(0.8);
+      transform-origin: center;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+  }
+
   .loading-container {
-    align-items: center;
     font-size: 1.2rem;
   }
 

@@ -6,8 +6,6 @@
   import MyTimeline from './components/MyTimeline.svelte';
   import Countdown from './components/Countdown.svelte';
   import Chat from './components/Chat.svelte';
-  import NewsPage from './components/NewsPage.svelte';
-  // import NewsArticle from './components/NewsArticle.svelte';
   let activeTab = 'Home'; // This will ensure 'Home' content is visible on initial load
   const targetDate = new Date('2028-11-06').getTime();
 </script>
@@ -16,9 +14,11 @@
 
 <!-- Direct use of activeTab for conditional rendering and animation -->
 {#if activeTab === 'Home'}
-  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+  <div class="home-content" in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
     <h1 class="text-center mt-8 font-bold text-4xl">Time Left Until the Singularity:</h1>
-    <Countdown {targetDate} />
+    <div class="countdown-container">
+      <Countdown {targetDate} />
+    </div>
     <h2 class="text-center text-2xl mt-4">Timeline of Events</h2>
     <MyTimeline />
   </div>
@@ -38,11 +38,6 @@
     <Chat />
   </div>
 {/if}
-{#if activeTab === 'News'}
-  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
-    <NewsPage />
-  </div>
-{/if}
 
 <style>
   h1 {
@@ -57,5 +52,38 @@
   h3 {
     text-align: center;
     font-size: 1.25rem;
+  }
+  .home-content {
+    padding: 1rem;
+  }
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .countdown-container {
+      padding: 0.5rem;
+    }
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    .countdown-container {
+      padding: 0.25rem;
+    }
   }
 </style>

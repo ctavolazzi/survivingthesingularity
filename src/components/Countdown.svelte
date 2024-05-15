@@ -124,14 +124,14 @@
   }
 
   .countdown-value {
-    font-size: 2rem; /* Adjust font size for better readability on mobile */
+    font-size: 3rem; /* Increased font size for better readability */
     font-weight: bold;
     width: 100%; /* Use 100% width for better scaling */
     text-align: center;
   }
 
   .countdown-label {
-    font-size: 0.8rem; /* Adjust font size for better readability on mobile */
+    font-size: 1rem; /* Increased font size for labels */
     text-transform: uppercase;
     text-align: center;
   }
@@ -160,11 +160,11 @@
   /* Media queries for responsive design */
   @media (max-width: 600px) {
     .countdown-value {
-      font-size: 1.5rem; /* Reduce font size for smaller screens */
+      font-size: 2.5rem; /* Adjusted font size for smaller screens */
     }
 
     .countdown-label {
-      font-size: 0.7rem; /* Adjust label size for smaller screens */
+      font-size: 0.8rem; /* Adjust label size for smaller screens */
     }
 
     .countdown-item {
@@ -174,11 +174,11 @@
 
   @media (max-width: 400px) {
     .countdown-value {
-      font-size: 1.2rem; /* Further reduce font size for very small screens */
+      font-size: 2rem; /* Further reduce font size for very small screens */
     }
 
     .countdown-label {
-      font-size: 0.6rem; /* Further adjust label size for very small screens */
+      font-size: 0.7rem; /* Further adjust label size for very small screens */
     }
 
     .countdown-item {

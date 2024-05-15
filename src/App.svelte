@@ -40,7 +40,7 @@
 <!-- Direct use of activeTab for conditional rendering and animation -->
 {#if activeTab === 'Home'}
   <div class="home-content" in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
-    <h1 class="text-center font-bold text-4xl mt-4 mb-2">Time Left Until the Singularity:</h1> <!-- Reduced margin-bottom -->
+    <h1 class="text-center font-bold text-4xl mt-4 mb-2">Time Left Until the Singularity:</h1>
     <div class="countdown-container mt-1">
       <Countdown {targetDate} />
       <ProgressBar progress={progressPercentage} />

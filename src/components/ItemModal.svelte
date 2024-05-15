@@ -78,6 +78,12 @@
 </div>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   :global(body.modal-open) {
     overflow: hidden;
     position: fixed;
@@ -105,7 +111,7 @@
     border-radius: 8px;
     width: 90%; /* Use percentage-based width */
     max-width: 500px; /* Set a reasonable max width for larger screens */
-    max-height: 90vh;
+    max-height: 90vh; /* Ensure the modal does not exceed the viewport height */
     overflow-y: auto;
     margin: auto; /* Center the modal vertically and horizontally */
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
@@ -128,16 +134,16 @@
     align-items: center;
   }
 
+  .modal-body {
+    margin-top: 20px;
+  }
+
   .modal-image {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
     margin-right: 20px;
-  }
-
-  .modal-body {
-    margin-top: 20px;
   }
 
   .btn {
@@ -151,16 +157,10 @@
     margin-top: 20px;
   }
 
-  /* Add flex properties to ensure vertical centering on mobile */
   @media (max-width: 768px) {
-    .modal-overlay {
-      align-items: center;
-      justify-content: center;
-    }
-
     .modal-content {
-      width: 100%; /* Make modal content full width on mobile */
-      max-width: none; /* Remove max-width on mobile */
+      width: 90%;
+      max-width: 90%;
       margin: 0 10px; /* Add some margin to avoid touching edges */
     }
   }

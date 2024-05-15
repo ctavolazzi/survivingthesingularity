@@ -25,24 +25,18 @@
   const handleChange = ({ detail }) => {
     isInView = detail.inView;
   };
+
   function formatDate(dateString) {
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
                         'July', 'August', 'September', 'October', 'November', 'December'];
-                        
-    // Starting from the back to grab the day and month
+
     const day = dateString.slice(-2);
     const monthIndex = parseInt(dateString.slice(-5, -3)) - 1;
     const month = monthNames[monthIndex];
-    
-    // For the year, taking the whole string except the last 6 characters
-    // This correctly accounts for both negative and positive years
     const year = dateString.slice(0, -6);
 
     return `${month} ${day}, ${year}`;
-}
-
-
-
+  }
 </script>
 
 <div use:inview={options} on:inview_change={handleChange}>

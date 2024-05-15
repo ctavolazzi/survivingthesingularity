@@ -98,28 +98,22 @@
     </div>
   </div>
 {/if}
-<<<<<<< HEAD
-<style>
-  .countdown-container,
-  .loading-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-=======
 
 <style>
   .countdown-container, .loading-container {
     display: flex;
     justify-content: center;
->>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
+    align-items: center;
     gap: 1rem;
     height: 150px; /* Adjust this value to match the desired height */
+    padding: 0 2rem; /* Add padding to give more room on the sides */
   }
 
   .countdown-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center items vertically */
     padding: 0.5rem;
     color: #000000;
     border-radius: 4px;
@@ -128,29 +122,18 @@
   .countdown-value {
     font-size: 3rem;
     font-weight: bold;
+    width: 4.5rem; /* Increase width to accommodate up to 3 digits */
+    text-align: center;
   }
 
   .countdown-label {
     font-size: 1rem;
     text-transform: uppercase;
+    text-align: center;
   }
 
-<<<<<<< HEAD
-  @media (max-width: 600px) {
-    .countdown-container {
-      transform: scale(0.8);
-      transform-origin: center;
-      max-width: 100%;
-      box-sizing: border-box;
-      padding: 0 10px;
-    }
-  }
-
-  .loading-container {
-=======
   .loading-container {
     align-items: center;
->>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
     font-size: 1.2rem;
   }
 

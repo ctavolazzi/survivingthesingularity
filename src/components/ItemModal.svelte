@@ -39,23 +39,20 @@
 
   function swingUp(node, { duration, easing }) {
     return {
-        duration,
-        easing,
-        css: (t, u) => {
-            const eased = easing(t);
-            // Adjust translateYStart if you need the modal to start from further below
-            const translateYStart = 100; // Starting from below the view
-            const translateYEnd = 0; // Ending at its natural position
+      duration,
+      easing,
+      css: (t, u) => {
+        const eased = easing(t);
+        const translateYStart = 100; // Starting from below the view
+        const translateYEnd = 0; // Ending at its natural position
 
-            return `
-                transform: translateY(${(1 - eased) * translateYStart + translateYEnd}vh) scale(${eased});
-                opacity: ${t};
-            `;
-        }
+        return `
+          transform: translateY(${(1 - eased) * translateYStart + translateYEnd}vh) scale(${eased});
+          opacity: ${t};
+        `;
+      }
     };
-}
-
-
+  }
 </script>
 
 <div class="modal-overlay" on:click={closeModal} transition:fade={{ duration: 300 }}>
@@ -72,18 +69,10 @@
     </div>
     <div class="modal-body">
       <h4>Authors</h4>
-      <p>{event.authors}</p>
+      <p>{event.authors.join(', ')}</p>
       <h4><strong>Details:</strong></h4>
       <p>{event.details}</p>
-      <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>
-        Learn More
-      </button>
-      <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>
-        arXiv Link
-      </button>
-      <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>
-        PDF Link
-      </button>
+      <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>Learn More</button>
     </div>
   </div>
 </div>
@@ -106,24 +95,21 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    padding: 20px; /* Ensure some padding around the modal */
   }
 
   .modal-content {
     position: relative;
     background-color: white;
     padding: 20px;
-    border-radius: 4px;
-    max-width: 500px;
+    border-radius: 8px;
+    width: 90%; /* Use percentage-based width */
+    max-width: 500px; /* Set a reasonable max width for larger screens */
     max-height: 90vh;
     overflow-y: auto;
-    margin: 2% auto;
-  }
-
-  @media (max-width: 768px) {
-    .modal-content {
-      margin: 10% auto;
-      max-width: 90%;
-    }
+    margin: auto; /* Center the modal vertically and horizontally */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    transition: all 0.3s ease;
   }
 
   .close-button {
@@ -154,8 +140,14 @@
     margin-top: 20px;
   }
 
-  .learn-more-button {
+  .btn {
     display: block;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .learn-more-button {
     margin-top: 20px;
   }
 </style>

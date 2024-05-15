@@ -150,4 +150,24 @@
   .learn-more-button {
     margin-top: 20px;
   }
+
+  /* Add flex properties to ensure vertical centering on mobile */
+  @media (max-width: 768px) {
+    .modal-overlay {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      width: 100%; /* Make modal content full width on mobile */
+      max-width: none; /* Remove max-width on mobile */
+      margin: 0 10px; /* Add some margin to avoid touching edges */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 15px; /* Slightly reduce padding on very small screens */
+    }
+  }
 </style>

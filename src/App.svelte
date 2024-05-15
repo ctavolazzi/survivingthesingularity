@@ -41,10 +41,10 @@
 {#if activeTab === 'Home'}
   <div class="home-content" in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
     <h1 class="text-center font-bold text-4xl mt-4 mb-2">Time Left Until the Singularity:</h1> <!-- Reduced margin-bottom -->
-    <div class="countdown-container mt-1"> <!-- Adjusted margin-top -->
-      <Countdown {targetDate} />
-      <ProgressBar progress={progressPercentage} /> <!-- Use calculated progress value -->
-    </div>
+    <!-- <div class="countdown-container mt-1"> Adjusted margin-top -->
+      <!-- <Countdown {targetDate} /> -->
+      <!-- <ProgressBar progress={progressPercentage} /> Use calculated progress value -->
+    <!-- </div> -->
     <h2 class="text-center text-2xl mt-4">Timeline of Events</h2>
     <MyTimeline />
   </div>

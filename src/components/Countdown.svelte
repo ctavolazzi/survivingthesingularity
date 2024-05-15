@@ -108,7 +108,8 @@
     gap: 1rem;
     height: auto; /* Adjust this value to match the desired height */
     padding: 1rem; /* Add padding to give more room on the sides */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
   }
 
   .countdown-item {
@@ -119,14 +120,11 @@
     padding: 0.5rem;
     color: #000000;
     border-radius: 4px;
-    flex: 1; /* Allow items to grow and shrink */
-    max-width: 100px; /* Limit the maximum width of each item */
   }
 
   .countdown-value {
     font-size: 3rem; /* Increased font size for better readability */
     font-weight: bold;
-    width: 100%; /* Use 100% width for better scaling */
     text-align: center;
   }
 
@@ -166,10 +164,6 @@
     .countdown-label {
       font-size: 0.8rem; /* Adjust label size for smaller screens */
     }
-
-    .countdown-item {
-      max-width: 80px; /* Further limit the max width on small screens */
-    }
   }
 
   @media (max-width: 400px) {
@@ -179,10 +173,6 @@
 
     .countdown-label {
       font-size: 0.7rem; /* Further adjust label size for very small screens */
-    }
-
-    .countdown-item {
-      max-width: 60px; /* Further limit the max width on very small screens */
     }
   }
 </style>

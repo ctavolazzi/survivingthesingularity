@@ -17,8 +17,11 @@
 <nav>
     <ul>
         <li class:selected={activeTab === 'Home'} on:click={() => setActiveTab('Home')}>Home</li>
+<<<<<<< HEAD
         <!-- <li class:selected={activeTab === 'News'} on:click={() => setActiveTab('News')}>News</li> -->
         <!-- <li class:selected={activeTab === 'Chat'} on:click={() => setActiveTab('Chat')}>Chat</li> -->
+=======
+>>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
         <li class:selected={activeTab === 'About'} on:click={() => setActiveTab('About')}>About</li>
         <li class:selected={activeTab === 'Contact'} on:click={() => setActiveTab('Contact')}>Contact</li>
     </ul>

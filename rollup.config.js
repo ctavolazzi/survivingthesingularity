@@ -5,7 +5,10 @@ import terser from '@rollup/plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-only';
+<<<<<<< HEAD
 import json from '@rollup/plugin-json';
+=======
+>>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -48,7 +51,10 @@ export default {
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		css({ output: 'bundle.css' }),
+<<<<<<< HEAD
 		json(),
+=======
+>>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In

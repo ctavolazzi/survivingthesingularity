@@ -5,7 +5,10 @@
   import Contact from './components/Contact.svelte';
   import MyTimeline from './components/MyTimeline.svelte';
   import Countdown from './components/Countdown.svelte';
+<<<<<<< HEAD
   import Chat from './components/Chat.svelte';
+=======
+>>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
   let activeTab = 'Home'; // This will ensure 'Home' content is visible on initial load
   const targetDate = new Date('2028-11-06').getTime();
 </script>
@@ -14,11 +17,17 @@
 
 <!-- Direct use of activeTab for conditional rendering and animation -->
 {#if activeTab === 'Home'}
+<<<<<<< HEAD
   <div class="home-content" in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
     <h1 class="text-center mt-8 font-bold text-4xl">Time Left Until the Singularity:</h1>
     <div class="countdown-container">
       <Countdown {targetDate} />
     </div>
+=======
+  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+    <h1 class="text-center mt-8 font-bold text-4xl">Time Left Until the Singularity:</h1>
+    <Countdown {targetDate} />
+>>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
     <h2 class="text-center text-2xl mt-4">Timeline of Events</h2>
     <MyTimeline />
   </div>
@@ -33,11 +42,16 @@
     <Contact />
   </div>
 {/if}
+<<<<<<< HEAD
 {#if activeTab === 'Chat'}
   <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
     <Chat />
   </div>
 {/if}
+=======
+
+
+>>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
 
 <style>
   h1 {
@@ -53,6 +67,7 @@
     text-align: center;
     font-size: 1.25rem;
   }
+<<<<<<< HEAD
   .home-content {
     padding: 1rem;
   }
@@ -86,4 +101,6 @@
       padding: 0.25rem;
     }
   }
+=======
+>>>>>>> 14b9fbe9146cdd5bd3fa3ef8f1194d4bb09b6695
 </style>

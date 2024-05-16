@@ -29,12 +29,10 @@
   function formatDate(dateString) {
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
                         'July', 'August', 'September', 'October', 'November', 'December'];
-
     const day = dateString.slice(-2);
     const monthIndex = parseInt(dateString.slice(-5, -3)) - 1;
     const month = monthNames[monthIndex];
     const year = dateString.slice(0, -6);
-
     return `${month} ${day}, ${year}`;
   }
 </script>
@@ -98,3 +96,59 @@
 {#if showModal}
   <ItemModal {event} on:close={closeModal} />
 {/if}
+
+<style>
+  .timeline-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .timeline-time h3, .timeline-time h4, .timeline-time p {
+    margin: 0;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .card-title {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    align-self: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-time {
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    .card-body {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .timeline-time {
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    .card-body {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+</style>

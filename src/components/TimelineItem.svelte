@@ -101,19 +101,20 @@
 
 <style>
   .timeline-time {
-    text-align: center;
+    text-align: left;
     padding: 0 1rem;
   }
 
   .card {
     margin: 0 auto;
+    padding: 1rem;
+    text-align: left;
   }
 
   .card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start; /* Align items to the left */
   }
 
   .card-title {
@@ -127,15 +128,23 @@
 
   @media (max-width: 768px) {
     .timeline-time {
-      text-align: left;
+      padding: 0.5rem;
+    }
+
+    .card {
+      padding: 0.5rem;
     }
 
     .card-body {
-      padding: 1rem;
+      padding: 0.5rem;
     }
   }
 
   @media (max-width: 480px) {
+    .timeline-time {
+      padding: 0.5rem;
+    }
+
     .card-title {
       font-size: 1.25rem;
     }

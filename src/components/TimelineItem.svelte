@@ -136,19 +136,6 @@
 
     .card-body {
       align-items: flex-start;
-      text-align: left;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .timeline-time {
-      text-align: left;
-      align-items: flex-start;
-    }
-
-    .card-body {
-      align-items: flex-start;
-      text-align: left;
     }
   }
 </style>

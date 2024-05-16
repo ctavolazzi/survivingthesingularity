@@ -6,12 +6,13 @@
   import MyTimeline from './components/MyTimeline.svelte';
   import Countdown from './components/Countdown.svelte';
   import Chat from './components/Chat.svelte';
-  import ProgressBar from './components/ProgressBar.svelte';
+  import ProgressBar from './components/ProgressBar.svelte'; // Import the custom ProgressBar component
 
-  let activeTab = 'Home';
+  let activeTab = 'Home'; // This will ensure 'Home' content is visible on initial load
   const targetDate = new Date('2027-11-20').getTime();
 
-  const startDate = new Date('1888-11-20').getTime();
+  // Use a fixed start date
+  const startDate = new Date('1888-11-20').getTime(); // Fixed start date: November 20, 1888
   let progressPercentage = 0;
   let countdownInterval;
 
@@ -36,6 +37,7 @@
 
 <Navbar on:tabChange="{e => (activeTab = e.detail.tab)}" />
 
+<!-- Direct use of activeTab for conditional rendering and animation -->
 {#if activeTab === 'Home'}
   <div class="home-content" in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
     <h1 class="text-center font-bold text-4xl mt-4 mb-2">Time Left Until the Singularity:</h1>
@@ -70,7 +72,7 @@
     text-align: center;
     font-size: 4rem;
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Reduced margin-bottom */
   }
   h2 {
     text-align: center;
@@ -83,17 +85,17 @@
   }
   .countdown-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Make the container column-based */
+    align-items: center; /* Center items horizontally */
     padding: 1rem;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 600px; /* Ensure countdown container has a fixed max width */
     width: 100%;
-    margin-top: 0.25rem;
+    margin-top: 0.25rem; /* Further adjusted margin-top */
   }
 
   .progress-bar-container {
-    width: 100%;
+    width: 100%; /* Match the width of the countdown container */
   }
 
   @media (max-width: 768px) {

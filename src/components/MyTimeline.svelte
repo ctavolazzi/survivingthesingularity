@@ -47,4 +47,16 @@
   :global(.timeline-item:last-child) {
     margin-bottom: 0;
   }
+
+  @media (max-width: 768px) {
+    .timeline-container {
+      padding: 20px 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .timeline-container {
+      padding: 10px 0;
+    }
+  }
 </style>

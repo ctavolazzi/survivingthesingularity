@@ -1,6 +1,6 @@
 <script>
-  import { TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from 'svelte-vertical-timeline';
-  import ItemModal from './ItemModal.svelte';
+  import { TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent } from 'svelte-vertical-timeline';
+  import ItemModal from './CustomItemModal.svelte';
   import { fade } from 'svelte/transition';
   import { inview } from 'svelte-inview';
 
@@ -43,22 +43,20 @@
   {#if isInView}
     <div in:fade={{ duration: 400 }}>
       <TimelineItem>
-        <TimelineOppositeContent slot="opposite-content" class="timeline-time">
-          <h3>{formatDate(event.published)}</h3>
-          <h4>{event.authors.length > 0 ? `By ${event.authors.join(', ')}` : 'Anonymous'}</h4>
-          <p>
-            {event.category === 'Computing' ? '🖥️' : event.category === 'Mathematics' ? '➕' : event.category === 'Technology' ? '🔩' : '📚'}
-            {event.category}
-          </p>
-        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot aria-hidden="true" />
           <TimelineConnector aria-hidden="true" />
         </TimelineSeparator>
-        <TimelineContent>
+        <TimelineContent class="timeline-content">
           <div class="card bg-base-100 shadow-xl" id="timeline-item-{event.id}">
             <div class="card-body">
+              <h3 class="timeline-date">{formatDate(event.published)}</h3>
               <h2 class="card-title">{event.title}</h2>
+              <h4>{event.authors.length > 0 ? `By ${event.authors.join(', ')}` : 'Anonymous'}</h4>
+              <p>
+                {event.category === 'Computing' ? '🖥️' : event.category === 'Mathematics' ? '➕' : event.category === 'Technology' ? '🔩' : '📚'}
+                {event.category}
+              </p>
               <p>{event.abstract}</p>
               <button class="btn btn-primary" on:click={openModal}>View Details</button>
             </div>
@@ -69,22 +67,20 @@
   {:else}
     <div style="visibility: hidden;">
       <TimelineItem>
-        <TimelineOppositeContent slot="opposite-content" class="timeline-time">
-          <h3>{formatDate(event.published)}</h3>
-          <h4>{event.authors.length > 0 ? `By ${event.authors.join(', ')}` : 'Anonymous'}</h4>
-          <p>
-            {event.category === 'Computing' ? '🖥️' : event.category === 'Mathematics' ? '➕' : event.category === 'Technology' ? '🔩' : '📚'}
-            {event.category}
-          </p>
-        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot aria-hidden="true" />
           <TimelineConnector aria-hidden="true" />
         </TimelineSeparator>
-        <TimelineContent>
+        <TimelineContent class="timeline-content">
           <div class="card bg-base-100 shadow-xl" id="timeline-item-{event.id}">
             <div class="card-body">
+              <h3 class="timeline-date">{formatDate(event.published)}</h3>
               <h2 class="card-title">{event.title}</h2>
+              <h4>{event.authors.length > 0 ? `By ${event.authors.join(', ')}` : 'Anonymous'}</h4>
+              <p>
+                {event.category === 'Computing' ? '🖥️' : event.category === 'Mathematics' ? '➕' : event.category === 'Technology' ? '🔩' : '📚'}
+                {event.category}
+              </p>
               <p>{event.abstract}</p>
               <button class="btn btn-primary" on:click={openModal}>View Details</button>
             </div>
@@ -100,61 +96,56 @@
 {/if}
 
 <style>
-  .timeline-time {
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align: left;
-    padding: 0 1rem;
+    width: calc(100% - 50px); /* Adjust this value to take up more width */
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .timeline-date {
+    font-weight: bold;
   }
 
   .card {
-    margin: 0 auto;
-    padding: 1rem;
-    text-align: left;
+    width: 100%;
   }
 
   .card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    padding: 20px;
   }
 
   .card-title {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
 
-  .btn {
-    margin-top: 1rem;
+  .timeline-date, .card-title, h4, p {
+    margin: 5px 0;
   }
 
   @media (max-width: 768px) {
-    .timeline-time {
-      padding: 0.5rem;
-    }
-
-    .card {
-      padding: 0.5rem;
-    }
-
-    .card-body {
-      padding: 0.5rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .timeline-time {
-      padding: 0.5rem;
-    }
-
     .card-title {
       font-size: 1.25rem;
     }
 
     .card-body {
-      padding: 0.5rem;
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card-title {
+      font-size: 1rem;
     }
 
-    .btn {
-      width: 100%;
+    .card-body {
+      padding: 10px;
     }
   }
 </style>
+

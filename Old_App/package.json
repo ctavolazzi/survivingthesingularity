@@ -1,6 +1,6 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "Surviving the Singularity",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -15,15 +15,19 @@
     "@rollup/plugin-terser": "^0.4.0",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.8.0",
+    "flowbite": "^2.3.0",
+    "flowbite-svelte": "^0.46.1",
+    "flowbite-svelte-icons": "^1.6.1",
     "postcss": "^8.4.38",
     "rollup": "^3.15.0",
     "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.1.2",
-    "svelte": "^3.55.0",
-    "tailwindcss": "^3.4.1"
+    "svelte": "^4.2.17",
+    "tailwindcss": "^3.4.3"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "ai": "^3.0.14",
     "dotenv": "^16.4.5",
     "lodash": "^4.17.21",

@@ -1,13 +1,12 @@
 <script>
   export let event;
   export let onClose;
-  console.log("EventModal initialized");
+
   function searchEvent(event) {
     const searchQuery = encodeURIComponent(event.title);
     const searchUrl = `https://www.google.com/search?q=${searchQuery}`;
     window.open(searchUrl, '_blank');
   }
-  console.log("EventModal event: ", event);
 </script>
 
 <div class="modal-overlay" on:click={onClose}>
@@ -21,9 +20,8 @@
     </div>
     <div class="modal-body">
       <p><strong>Date Published:</strong> {event.published}</p>
-      <p><strong>Authors:</strong> {event.authors}</p>
+      <p><strong>Authors:</strong> {event.authors.join(', ')}</p>
       <p><strong>Abstract:</strong> {event.abstract}</p>
-      <!-- Additional event details can be included here -->
       <button class="btn btn-primary learn-more-button" on:click={() => searchEvent(event)}>
         Learn More
       </button>
@@ -45,6 +43,26 @@
     z-index: 1000;
   }
 
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 2%;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal-body {
+    margin-top: 20px;
+  }
+
   .close-button {
     position: absolute;
     top: 10px;
@@ -55,20 +73,17 @@
     font-size: 1.5rem;
   }
 
-  .modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 4px;
-  max-width: 500px; /* Adjusts based on screen size */
-  max-height: 90vh;
-  overflow-y: auto;
-  margin: 2%; /* Provides a slight offset from screen edges */
-}
-
-@media (max-width: 768px) {
-  .modal-content {
-    max-width: 90%; /* Allows more space around the modal on smaller screens */
-    margin: 5%; /* Increased margin for smaller devices */
+  .btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
   }
-}
+
+  .btn:hover {
+    background-color: #333;
+  }
 </style>

@@ -396,7 +396,7 @@ export const events = [
         ]
       },
       {
-        "id": 19, 
+        "id": 19,
         "title": "Integrated Circuit",
         "authors": ["Jack Kilby", "Robert Noyce"],
         "abstract": "The integrated circuit, a single chip containing transistors and other components, is independently invented by Jack Kilby and Robert Noyce in 1958-1959, revolutionizing electronics and enabling modern computing.",

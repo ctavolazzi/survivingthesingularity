@@ -1,18 +1,17 @@
 <script>
-  import { fade } from 'svelte/transition';
   import Navbar from './components/Navbar.svelte';
   import About from './components/About.svelte';
   import Contact from './components/Contact.svelte';
   import MyTimeline from './components/MyTimeline.svelte';
   import Countdown from './components/Countdown.svelte';
   import Chat from './components/Chat.svelte';
-  import ProgressBar from './components/ProgressBar.svelte'; // Import the custom ProgressBar component
+  import ProgressBar from './components/ProgressBar.svelte';
+  import MailchimpSignup from './components/MailchimpSignup.svelte';
 
-  let activeTab = 'Home'; // This will ensure 'Home' content is visible on initial load
+
+  let activeTab = 'Home';
   const targetDate = new Date('2027-11-20').getTime();
-
-  // Use a fixed start date
-  const startDate = new Date('1888-11-20').getTime(); // Fixed start date: November 20, 1888
+  const startDate = new Date('1888-11-20').getTime();
   let progressPercentage = 0;
   let countdownInterval;
 
@@ -37,42 +36,42 @@
 
 <Navbar on:tabChange="{e => (activeTab = e.detail.tab)}" />
 
-<!-- Direct use of activeTab for conditional rendering and animation -->
 {#if activeTab === 'Home'}
-  <div class="home-content" in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+  <div class="home-content">
     <h1 class="text-center font-bold text-4xl mt-4 mb-2">Time Left Until the Singularity:</h1>
     <div class="countdown-container mt-1">
       <Countdown {targetDate} />
       <ProgressBar progress={progressPercentage} />
     </div>
+    <MailchimpSignup />
     <h2 class="text-center text-2xl mt-4">Timeline of Events</h2>
     <MyTimeline />
   </div>
 {/if}
 
 {#if activeTab === 'About'}
-  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+  <div>
     <About />
   </div>
 {/if}
 {#if activeTab === 'Contact'}
-  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+  <div>
     <Contact />
   </div>
 {/if}
 
 {#if activeTab === 'Chat'}
-  <div in:fade={{ duration: 300 }} out:fade={{ duration: 200 }}>
+  <div>
     <Chat />
   </div>
 {/if}
 
-<style>
+<!-- <style>
   h1 {
     text-align: center;
     font-size: 4rem;
     margin-top: 1rem;
-    margin-bottom: 0.5rem; /* Reduced margin-bottom */
+    margin-bottom: 0.5rem;
   }
   h2 {
     text-align: center;
@@ -85,17 +84,13 @@
   }
   .countdown-container {
     display: flex;
-    flex-direction: column; /* Make the container column-based */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
     margin: 0 auto;
-    max-width: 600px; /* Ensure countdown container has a fixed max width */
+    max-width: 600px;
     width: 100%;
-    margin-top: 0.25rem; /* Further adjusted margin-top */
-  }
-
-  .progress-bar-container {
-    width: 100%; /* Match the width of the countdown container */
+    margin-top: 0.25rem;
   }
 
   @media (max-width: 768px) {
@@ -122,4 +117,4 @@
       padding: 0.25rem;
     }
   }
-</style>
+</style> -->

@@ -10,7 +10,9 @@
 </script>
 
 <div class="timeline-container">
+
   <div class="timeline-header">Timeline of Events</div>
+  <hr class="my-8 border-t border-gray-300 dark:border-gray-700" />
   <Timeline>
     {#each timelineItems.timelineItems as item (item.id)}
       <TimelineItem title={item.title} date={item.date}>
@@ -21,6 +23,8 @@
       </TimelineItem>
     {/each}
   </Timeline>
+  <hr class="my-8 border-t border-gray-300 dark:border-gray-700" />
+
 </div>
 
 <style>
@@ -30,7 +34,7 @@
   .timeline-header {
     text-align: center;
     font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 1rem; /* Add some spacing below the header */
+    font-size: 1.5rem;
+    margin-bottom: .5rem; /* Add some spacing below the header */
   }
 </style>

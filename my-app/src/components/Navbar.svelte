@@ -9,7 +9,7 @@
 <Navbar let:NavContainer color="primary">
   <NavContainer class="border px-5 py-2 rounded-lg bg-white dark:bg-gray-600">
     <NavBrand href="/">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
+      <img src="/src/images/sts-logo-image-white.png" class="me-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
       <span class="self-center whitespace-nowrap text-xl font-semibold">Surviving the Singularity</span>
     </NavBrand>
     <NavHamburger />
@@ -21,3 +21,9 @@
     </NavUl>
   </NavContainer>
 </Navbar>
+
+<style>
+  .me-3 {
+    margin-right: 1rem;
+  }
+</style>

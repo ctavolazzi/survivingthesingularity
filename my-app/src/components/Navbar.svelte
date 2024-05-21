@@ -1,15 +1,34 @@
 <script>
   import { Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
 
-  function handleBuyBook() {
-    alert("The book is not complete and will be available for preorder 7-30-24.\n\nAuthor Christopher Tavolazzi is still collecting interviews for the book.\n\nThank you for your patience.");
+  async function handleBuyBook() {
+    try {
+      const response = await fetch('/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ priceId: 'price_1PIz8QJ0IdEZ0VwUhLugZtTL' }),
+      });
+      const data = await response.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error('Failed to get session URL');
+      }
+    } catch (err) {
+      console.error('Error during payment initiation:', err);
+      alert('Payment initiation failed. Please try again.');
+    }
   }
 </script>
+
+<!-- Rest of the Navbar code remains the same -->
 
 <Navbar let:NavContainer color="primary">
   <NavContainer class="border px-5 py-2 rounded-lg bg-white dark:bg-gray-600">
     <NavBrand href="/">
-      <img src="/src/images/sts-logo-image-white.png" class="me-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
+      <img src="/src/images/android-chrome-192x192.png" class="me-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
       <span class="self-center whitespace-nowrap text-xl font-semibold">Surviving the Singularity</span>
     </NavBrand>
     <NavHamburger />

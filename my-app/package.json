@@ -20,5 +20,13 @@
 		"tailwindcss": "^3.4.1",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@stripe/stripe-js": "^3.4.1",
+		"@sveltejs/adapter-node": "^5.0.1",
+		"cors": "^2.8.5",
+		"express": "^4.19.2",
+		"stripe": "^15.7.0",
+		"svelte-stripe": "^1.2.0"
+	}
 }

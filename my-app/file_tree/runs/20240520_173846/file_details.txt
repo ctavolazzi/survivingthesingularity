@@ -1,0 +1,14 @@
+=== Summary ===
+Total Files Processed: 5913
+File Type 'File': 5913 files
+MIME Type 'Unknown': 1639 files
+MIME Type 'application/javascript': 2695 files
+MIME Type 'application/json': 345 files
+MIME Type 'video/mp2t': 1151 files
+MIME Type 'text/css': 31 files
+MIME Type 'text/plain': 9 files
+MIME Type 'model/vnd.mts': 7 files
+MIME Type 'text/html': 4 files
+MIME Type 'image/png': 9 files
+MIME Type 'image/svg+xml': 17 files
+MIME Type 'text/x-python': 6 files

@@ -1,0 +1,13 @@
+=== Summary ===
+Total Files Processed: 114
+File Type 'File': 114 files
+MIME Type 'Unknown': 16 files
+MIME Type 'application/javascript': 52 files
+MIME Type 'application/json': 6 files
+MIME Type 'image/png': 8 files
+MIME Type 'application/vnd.chipnuts.karaoke-mmd': 2 files
+MIME Type 'text/plain': 6 files
+MIME Type 'video/mp2t': 2 files
+MIME Type 'text/css': 15 files
+MIME Type 'text/html': 1 files
+MIME Type 'text/x-python': 6 files

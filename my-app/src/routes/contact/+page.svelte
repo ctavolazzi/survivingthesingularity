@@ -10,7 +10,7 @@
   <div class="form-wrapper max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
     <h1 class="form-title text-2xl font-semibold mb-6 text-center">Get in touch:</h1>
     <p class="text-center">Please use the Mailchimp form below to get in touch with us.</p>
-    <iframe src="https://us19.list-manage.com/contact-form?u=79a060ac083c62360805246c1&form_id=c4630b003308d7c72c1d0479c30c9a64" width="100%" height="600px" frameborder="0" style="border:0; overflow:hidden;"></iframe>
+    <iframe src="https://us19.list-manage.com/contact-form?u=79a060ac083c62360805246c1&form_id=c4630b003308d7c72c1d0479c30c9a64" width="100%" height="600px" frameborder="0" style="border:0; overflow:hidden;" title="Mailchimp contact form"></iframe>
   </div>
 </div>
 

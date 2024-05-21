@@ -8,7 +8,8 @@
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ priceId: 'price_1PIz8QJ0IdEZ0VwUhLugZtTL' }),
+        // body: JSON.stringify({ priceId: 'price_1PIz8QJ0IdEZ0VwUhLugZtTL' }),
+        body: JSON.stringify({ priceId: 'price_1PJ1TsJ0IdEZ0VwUNRWjALBU' }),
       });
       const data = await response.json();
       if (data.url) {

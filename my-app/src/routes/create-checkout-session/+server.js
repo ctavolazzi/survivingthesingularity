@@ -1,7 +1,7 @@
 import Stripe from 'stripe';
-import { SECRET_STRIPE_KEY_LIVE } from '$env/static/private';
+import { SECRET_STRIPE_KEY_TEST, SECRET_STRIPE_KEY_LIVE } from '$env/static/private';
 
-const stripe = new Stripe(SECRET_STRIPE_KEY_LIVE);
+const stripe = new Stripe(SECRET_STRIPE_KEY_TEST);
 
 export async function POST({ request }) {
   try {
@@ -19,8 +19,12 @@ export async function POST({ request }) {
         },
       ],
       mode: 'payment',
-      success_url: `${baseUrl}/?success=true`,
-      cancel_url: `${baseUrl}/?canceled=true`,
+      // Use these endpoints to redirect to the success and cancel conditionals
+      // success_url: `${baseUrl}/?success=true`,
+      // cancel_url: `${baseUrl}/?canceled=true`,
+      // Use these endpoints to redirect to the success and cancel hardcoded pages
+      success_url: `${baseUrl}/success`,
+      cancel_url: `${baseUrl}/canceled`,
       automatic_tax: { enabled: true },
     });
 

@@ -154,11 +154,15 @@
   .loading-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.2rem;
+    width: 100%; /* Ensure the loading container takes full width */
+    height: 100%; /* Ensure the loading container takes full height */
   }
 
   .loading-icon {
     animation: pulse 1s infinite;
+    margin-right: 0.5rem;
   }
 
   @keyframes pulse {

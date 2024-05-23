@@ -17,9 +17,19 @@
     if (response.ok) {
       const { link } = await response.json();
       downloadLink = link;
+      triggerDownload(link);
     } else {
       console.error('Failed to verify payment');
     }
+  }
+
+  function triggerDownload(link) {
+    const anchor = document.createElement('a');
+    anchor.href = link;
+    anchor.download = 'Surviving_the_Singularity.pdf';
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
   }
 
   onMount(verifyPayment);
@@ -53,5 +63,3 @@
     background-color: #555;
   }
 </style>
-
-

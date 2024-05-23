@@ -1,68 +1,18 @@
 <script>
   import Navbar from '../../components/Navbar.svelte';
   import BottomNav from '../../components/BottomNav.svelte';
-  import { loadStripe } from '@stripe/stripe-js';
-  import { onMount } from 'svelte';
-  import { PUBLIC_STRIPE_KEY_TEST, PUBLIC_STRIPE_KEY_LIVE } from '$env/static/public';
   import Spacer from '../../components/Spacer.svelte';
   import MailchimpSignup from '../../components/MailchimpSignup.svelte';
-  import { goto } from '$app/navigation';
+  import BuyBookButton from '../../components/BuyBookButton.svelte';
 
-  let stripe = null;
-  let elements = null;
-  let paymentElement = null;
-  let clientSecret = '';
-  let loading = false; // Added this line to define the 'loading' variable
+  let isLoading = false;
 
-  onMount(async () => {
-    stripe = await loadStripe(PUBLIC_STRIPE_KEY_TEST);
-    console.log('Stripe loaded:', stripe);
-  });
-
-  async function handleBuyBook() {
-    console.log('handleBuyBook called');
-    loading = true;
-
-    const response = await fetch('/create-payment-intent', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ amount: 2000, currency: 'usd' })
-    });
-    const data = await response.json();
-    console.log('Payment Intent Response:', data);
-    clientSecret = data.clientSecret;
-    console.log('Client Secret:', clientSecret);
-
-    // Create and mount the payment element only when clientSecret is available
-    if (clientSecret) {
-      elements = stripe.elements({ clientSecret });
-      paymentElement = elements.create('payment');
-      paymentElement.mount('#payment-element');
-    }
-
-    loading = false;
+  function handleBuyClick() {
+    isLoading = true;
   }
 
-  async function submitPayment(event) {
-    event.preventDefault();
-    console.log('submitPayment called');
-
-    const { error } = await stripe.confirmPayment({
-      elements,
-      confirmParams: {
-        return_url: `${window.location.origin}/thank-you`,
-      },
-    });
-
-    if (error) {
-      console.error('Payment Error:', error.message);
-    } else {
-      console.log('Payment successful');
-      // Redirect to the thank-you page
-      goto('/thank-you');
-    }
+  function handleBuyComplete() {
+    isLoading = false;
   }
 </script>
 
@@ -85,22 +35,17 @@
       <button class="sample-button" on:click={() => window.open('https://docs.google.com/document/d/1plGfd2X8-TsH3aCjbSz6aJeZTpfmrHZ6zNJ2hw6ww9s/edit?usp=sharing', '_blank')}>
         Read a Sample
       </button>
-      <button class="buy-button" on:click={handleBuyBook} disabled={loading}>
-        {#if loading}
-          Loading...
-        {:else}
-          Buy the Book
-        {/if}
+      <button class="buy-button" class:loading={isLoading} on:click={handleBuyClick}>
+        <BuyBookButton on:buyComplete={handleBuyComplete}>
+          {#if isLoading}
+            <span class="loading-spinner"></span>
+            Loading...
+          {:else}
+            Buy the Book
+          {/if}
+        </BuyBookButton>
       </button>
     </div>
-
-    {#if clientSecret}
-      <form on:submit|preventDefault={submitPayment}>
-        <div id="payment-element"><!-- Payment Element will be mounted here --></div>
-        <button type="submit">Pay</button>
-      </form>
-    {/if}
-
 
     <div class="additional-content">
       <div class="section">
@@ -158,7 +103,7 @@
     margin-bottom: 2rem;
   }
 
-  .sample-button, .buy-button {
+  .sample-button {
     padding: 1rem 2rem;
     background-color: #333;
     color: white;
@@ -169,8 +114,47 @@
     transition: background-color 0.3s ease;
   }
 
-  .sample-button:hover, .buy-button:hover {
+  .sample-button:hover {
     background-color: #555;
+  }
+
+  .buy-button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .buy-button:hover {
+    background-color: #555;
+  }
+
+  .buy-button.loading {
+    cursor: wait;
+  }
+
+  .loading-spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .additional-content {

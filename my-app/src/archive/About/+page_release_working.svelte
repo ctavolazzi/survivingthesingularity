@@ -1,28 +1,18 @@
-<!-- src/routes/about/index.svelte -->
 <script>
   import Navbar from '../../components/Navbar.svelte';
   import BottomNav from '../../components/BottomNav.svelte';
   import Spacer from '../../components/Spacer.svelte';
   import MailchimpSignup from '../../components/MailchimpSignup.svelte';
   import BackBookButton from '../../components/BackBookButton.svelte';
-  import BuyBookButton from '../../components/BuyBookButton.svelte';
-  import { supabase } from '$lib/supabaseClient';
 
-  // async function logBackBookClick() {
-  //   console.log('Back Book Clicked');
-  // }
+  let isLoading = false;
 
-  async function logBackBookClick() {
-    await supabase.from('back_book_clicks').insert({
-      timestamp: new Date(),
-      referrer: window.location.href,
-      user_agent: navigator.userAgent,
-    });
+  function handleBuyClick() {
+    isLoading = true;
   }
 
-  function handleBackBook() {
-    logBackBookClick();
-    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank');
+  function handleBuyComplete() {
+    isLoading = false;
   }
 </script>
 
@@ -45,12 +35,15 @@
       <button class="sample-button" on:click={() => window.open('https://docs.google.com/document/d/1plGfd2X8-TsH3aCjbSz6aJeZTpfmrHZ6zNJ2hw6ww9s/edit?usp=sharing', '_blank')}>
         Read a Sample
       </button>
-      <!-- <BackBookButton class="back-button" on:click={() => window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank')}>
-      </BackBookButton>
-      <BuyBookButton class="buy-button" on:click={() => window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank')}>
-      </BuyBookButton> -->
-      <button class="back-button" on:click={() => handleBackBook()}>
-        Back the Book
+      <button class="buy-button" class:loading={isLoading} on:click={handleBuyClick}>
+        <BuyBookButton on:buyComplete={handleBuyComplete}>
+          {#if isLoading}
+            <span class="loading-spinner"></span>
+            Loading...
+          {:else}
+            Buy the Book
+          {/if}
+        </BuyBookButton>
       </button>
     </div>
 
@@ -125,7 +118,7 @@
     background-color: #555;
   }
 
-  .back-button {
+  .buy-button {
     padding: 1rem 2rem;
     background-color: #333;
     color: white;
@@ -136,8 +129,32 @@
     transition: background-color 0.3s ease;
   }
 
-  .back-button:hover {
+  .buy-button:hover {
     background-color: #555;
+  }
+
+  .buy-button.loading {
+    cursor: wait;
+  }
+
+  .loading-spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .additional-content {

@@ -2,9 +2,9 @@
 import { supabase } from "$lib/supabaseClient";
 
 export async function load() {
-  const { data } = await supabase.from("countries").select();
+  const { data } = await supabase.from("back_book_clicks").select();
   return {
-    countries: data ?? [],
+    backBookClicks: data ?? [],
   };
 }
 

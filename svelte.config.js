@@ -5,7 +5,8 @@ const config = {
 	kit: {
 		adapter: adapter({
 			// default options are shown
-			out: 'build',
+			// out: 'build',
+			out: 'public',
 			precompress: false,
 			env: {
 				host: 'HOST',

@@ -32,4 +32,4 @@
 
 <Spacer height="6rem"/>
 
-<BottomNav />
+<!-- <BottomNav /> -->

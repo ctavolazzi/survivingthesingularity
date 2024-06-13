@@ -71,18 +71,18 @@
 
 <script>
   import { Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
-  import { supabase } from '$lib/supabaseClient';
+  // import { supabase } from '$lib/supabaseClient';
 
-  async function logBackBookClick() {
-    await supabase.from('back_book_clicks').insert({
-      timestamp: new Date(),
-      referrer: window.location.href,
-      user_agent: navigator.userAgent,
-    });
-  }
+  // async function logBackBookClick() {
+  //   await supabase.from('back_book_clicks').insert({
+  //     timestamp: new Date(),
+  //     referrer: window.location.href,
+  //     user_agent: navigator.userAgent,
+  //   });
+  // }
 
   function handleBackBook() {
-    logBackBookClick();
+    // logBackBookClick();
     window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank');
   }
 </script>

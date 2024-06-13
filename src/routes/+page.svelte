@@ -1,6 +1,6 @@
 <script>
   import Navbar from '../components/Navbar.svelte';
-  import BottomNav from '../components/BottomNav.svelte';
+  // import BottomNav from '../components/BottomNav.svelte';
   import Spacer from '../components/Spacer.svelte';
   import Timeline from '../components/Timeline.svelte';
   import Countdown from '../components/Countdown.svelte';

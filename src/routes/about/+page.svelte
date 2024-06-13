@@ -1,12 +1,12 @@
 <!-- src/routes/about/index.svelte -->
 <script>
   import Navbar from '../../components/Navbar.svelte';
-  import BottomNav from '../../components/BottomNav.svelte';
+  // import BottomNav from '../../components/BottomNav.svelte';
   import Spacer from '../../components/Spacer.svelte';
   import MailchimpSignup from '../../components/MailchimpSignup.svelte';
-  import BackBookButton from '../../components/BackBookButton.svelte';
-  import BuyBookButton from '../../components/BuyBookButton.svelte';
-  import { supabase } from '$lib/supabaseClient';
+  // import BackBookButton from '../../components/BackBookButton.svelte';
+  // import BuyBookButton from '../../components/BuyBookButton.svelte';
+  // import { supabase } from '$lib/supabaseClient';
 
   // async function logBackBookClick() {
   //   console.log('Back Book Clicked');

@@ -79,7 +79,7 @@
 <!-- Spacer for bottom navigation -->
 <Spacer height="4rem"/>
 
-<BottomNav />
+<!-- <BottomNav /> -->
 
 <style>
   .container {

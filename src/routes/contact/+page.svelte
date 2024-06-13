@@ -1,6 +1,6 @@
 <script>
   import Navbar from '../../components/Navbar.svelte';
-  import BottomNav from '../../components/BottomNav.svelte';
+  // import BottomNav from '../../components/BottomNav.svelte';
   import Spacer from '../../components/Spacer.svelte'; // Import Spacer component
 </script>
 
@@ -17,7 +17,7 @@
 <!-- Spacer for bottom navigation -->
 <Spacer height="6rem" />
 
-<BottomNav />
+<!-- <BottomNav /> -->
 
 <style>
   .container {

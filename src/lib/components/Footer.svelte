@@ -19,9 +19,9 @@
       <div class="w-full md:w-auto text-center md:text-left">
         <h5 class="font-bold text-lg mb-2">Legal</h5>
         <ul class="list-none">
-          <li class="mb-1"><a href="#" class="text-gray-400 hover:text-gray-200">Privacy Policy</a></li>
-          <li class="mb-1"><a href="#" class="text-gray-400 hover:text-gray-200">Terms of Service</a></li>
-          <li class="mb-1"><a href="#" class="text-gray-400 hover:text-gray-200">Cookie Policy</a></li>
+          <li class="mb-1"><a href="/policies#privacy-policy" class="text-gray-400 hover:text-gray-200">Privacy Policy</a></li>
+          <li class="mb-1"><a href="/policies#terms-of-service" class="text-gray-400 hover:text-gray-200">Terms of Service</a></li>
+          <li class="mb-1"><a href="/policies#cookie-policy" class="text-gray-400 hover:text-gray-200">Cookie Policy</a></li>
         </ul>
       </div>
     </div>

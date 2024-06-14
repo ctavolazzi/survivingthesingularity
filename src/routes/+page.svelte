@@ -24,7 +24,7 @@
 
   <Timeline items={timelineItems.timelineItems} />
 
-  <button class="buy-button block w-full" on:click={handleBackBook}>Back the Book</button>
+  <button class="buy-button block w-full" on:click={handleBackBook}>Back the Book on Kickstarter</button>
   <Spacer height="1rem"/>
 
   <MailchimpSignup />

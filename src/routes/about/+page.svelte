@@ -69,12 +69,13 @@
       <p class="section-description">
         "Surviving the Singularity" is sponsored by AIECO, a humanity-focused organization.
       </p>
+      <button class="buy-button block w-full mt-4" on:click={handleBackBook}>Back the Book on Kickstarter</button>
     </div>
   </div>
 </div>
 
 <!-- Spacer for bottom navigation -->
-<Spacer height="4rem"/>
+<!-- <Spacer height="4rem"/> -->
 
 <!-- <BottomNav /> -->
 
@@ -151,4 +152,20 @@
     line-height: 1.6;
     margin-bottom: 1rem;
   }
+
+	.buy-button {
+      font-weight: bold;
+	    font-size: 1.5rem;
+      background-color: #f8f9fa;
+      border: 2px solid #000000;
+      border-radius: 4px;
+      padding: 1rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .buy-button:hover {
+      background-color: #e2e6ea;
+    }
 </style>

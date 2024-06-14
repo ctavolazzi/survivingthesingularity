@@ -56,15 +56,18 @@
 <script>
 	import "../app.css";
 	import Navbar from '$lib/components/Navbar.svelte';
-  </script>
-  
+	import Footer from '$lib/components/Footer.svelte';
+</script>
+
   <Navbar />
-  
+
   <main>
 	<slot></slot>
   </main>
-  
-  <style>
+
+  <Footer />
+
+<style>
 	.app {
 		display: flex;
 		flex-direction: column;

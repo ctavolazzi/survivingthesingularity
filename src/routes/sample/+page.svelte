@@ -15,6 +15,8 @@
 <main class="container mx-auto px-4 py-8">
   <h1 class="text-4xl font-bold mb-8 text-center">Surviving the Singularity</h1>
 
+
+  
   <div class="mb-8 flex justify-center space-x-4">
     <button on:click={joinSkool} class="action-button">
       Join Skool Community
@@ -23,7 +25,10 @@
       Back on Kickstarter
     </button>
   </div>
-
+  
+  <div class="warning-container">
+    <p class="warning-text"><strong>Content Warning:</strong> Do not read this text if you have ever suffered from derealization or depersonalization.</p>
+  </div>
     <section class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">Introduction</h2>
       <p>So the robots have taken over. Congratulations! You've lost.</p>
@@ -97,5 +102,27 @@
   .action-button:hover {
     background-color: #000000;
     color: #ffffff;
+  }
+
+  .warning-container {
+    background-color: #f8d7da;
+    border: 2px solid #842029;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .warning-container {
+    background-color: #f8d7da;
+    border: 1px solid #842029;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .warning-text {
+    color: #842029;
+    font-size: 1rem;
+    margin: 0;
   }
 </style>

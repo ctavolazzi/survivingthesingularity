@@ -4,47 +4,86 @@
 	import Countdown from '$lib/components/Countdown.svelte';
 	import MailchimpSignup from '$lib/components/MailchimpSignup.svelte';
 
-	// Correct the import path for the JSON file
 	import timelineItems from '$lib/data/timelineItems.json';
-	// Define the target date for the countdown
-	const targetDate = new Date("2027-11-20T23:59:59").getTime(); // Example target date
-	// export let data;
+	const targetDate = new Date("2027-11-20T23:59:59").getTime();
+
 	function handleBackBook() {
       window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank');
     }
-  </script>
 
-  <button class="buy-button block" on:click={handleBackBook}>Back the Book on Kickstarter</button>
-  <Spacer height="1.25rem"/>
+    function handleJoinSkool() {
+      // window.open('https://www.skool.com/surviving-the-singularity', '_blank');
+      window.location.href = '/coming-soon';
+    }
 
-  <!-- Pass the targetDate prop to the Countdown component -->
-  <Countdown {targetDate} />
+    function handleGetGuide() {
+      window.open('https://tavolazzi.gumroad.com/l/singularitychecklist', '_blank');
+    }
+</script>
 
+<Spacer height="1.25rem"/>
 
+<Countdown {targetDate} />
 
-  <Timeline items={timelineItems.timelineItems} />
+<div class="button-container">
+  <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
+  <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
+</div>
 
-  <button class="buy-button block w-full" on:click={handleBackBook}>Back the Book on Kickstarter</button>
-  <Spacer height="1rem"/>
+<Timeline items={timelineItems.timelineItems} />
 
-  <MailchimpSignup />
+<Spacer height="2rem"/>
 
-  <Spacer height="1rem"/>
+<div class="button-container">
+  <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
+  <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
+</div>
+
+<Spacer height="1rem"/>
+
+<MailchimpSignup />
+
+<Spacer height="1rem"/>
 
 <style>
-	.buy-button {
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .action-button {
       font-weight: bold;
-	    font-size: 1.5rem;
+      background-color: #f8f9fa;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      color: #000000;
+      padding: 1rem 5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .action-button:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .big-button {
+      flex: 1;
+      font-weight: bold;
+      font-size: 1.25rem;
       background-color: #f8f9fa;
       border: 2px solid #000000;
       border-radius: 4px;
-      padding: 1rem 1rem;
+      padding: 1rem 0.5rem;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
       text-align: center;
     }
 
-    .buy-button:hover {
-      background-color: #e2e6ea;
+    .big-button:hover {
+      background-color: #000000;
+      color: #ffffff;
     }
 </style>

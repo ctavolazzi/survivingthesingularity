@@ -23,6 +23,10 @@
     logBackBookClick();
     window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank');
   }
+
+  function handleJoinSkool() {
+    window.location.href = '/coming-soon'
+  }
 </script>
 
 <div class="container">
@@ -48,6 +52,9 @@
       </BuyBookButton> -->
       <button class="back-button" on:click={() => handleBackBook()}>
         Back the Book
+      </button>
+      <button class="back-button" on:click={() => handleJoinSkool()}>
+        Join the Skool Community
       </button>
     </div>
 

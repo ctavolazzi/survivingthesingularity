@@ -1,80 +1,91 @@
-<!-- <script>
-  import { Timeline, TimelineItem, Button } from 'flowbite-svelte';
-  import { ArrowRightOutline } from 'flowbite-svelte-icons';
-  import timelineItems from '../data/timelineItems.json'; // Adjust the path as necessary
-
-  function searchGoogle(title) {
-    const query = encodeURIComponent(title);
-    window.open(`https://www.google.com/search?q=${query}`, '_blank');
-  }
-</script>
-
-<div class="timeline-container">
-
-  <div class="timeline-header">Timeline of Events</div>
-  <hr class="my-8 border-t border-gray-300 dark:border-gray-700" />
-  <Timeline>
-    {#each timelineItems.timelineItems as item (item.id)}
-      <TimelineItem title={item.title} date={item.date}>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{item.abstract}</p>
-        <Button on:click={() => searchGoogle(item.title)} color="black" size="small">
-          Learn More <ArrowRightOutline />
-        </Button>
-      </TimelineItem>
-    {/each}
-  </Timeline>
-  <hr class="my-8 border-t border-gray-300 dark:border-gray-700" />
-
-</div>
-
-<style>
-  .timeline-container {
-    padding: 2rem; /* Equivalent to p-4 in Tailwind CSS */
-  }
-  .timeline-header {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: .5rem; /* Add some spacing below the header */
-  }
-</style> -->
-
 <script>
-  import { Button } from 'flowbite-svelte';
-  import { ArrowRightOutline } from 'flowbite-svelte-icons';
   import timelineItems from '../data/timelineItems.json'; // Adjust the path as necessary
+
+  let showModal = Array(timelineItems.timelineItems.length).fill(false);
+
+  function toggleModal(index) {
+    showModal[index] = !showModal[index];
+    showModal = [...showModal]; // Trigger reactivity
+  }
+
+  function handleModalClick(event, index) {
+    if (event.target === event.currentTarget) {
+      toggleModal(index);
+    }
+  }
 
   function searchGoogle(title) {
     const query = encodeURIComponent(title);
     window.open(`https://www.google.com/search?q=${query}`, '_blank');
   }
+
+  function openWikipedia(url) {
+    window.open(url, '_blank');
+  }
 </script>
 
-<div class="timeline-container p-4 md:p-8 bg-white shadow-lg rounded-lg">
-  <h1 class="text-3xl font-bold text-center text-gray-900 mb-6">Timeline of Events</h1>
-  <hr class="mb-8 border-gray-300" />
+<div class="timeline-container" style="padding: 1rem; background-color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 0.5rem; max-width: 800px; margin: auto;">
+  <h1 style="font-size: 1.875rem; font-weight: bold; text-align: center; color: #1F2937; margin-bottom: 1.5rem;">Timeline of Events</h1>
+  <hr style="margin-bottom: 2rem; border-color: #E5E7EB;" />
 
-  <ol class="relative border-l border-gray-200 dark:border-gray-700">
-    {#each timelineItems.timelineItems as item (item.id)}
-      <li class="mb-10 ml-4 pl-4">
-        <div class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{item.date}</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-black">{item.title}</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-600 mb-4">{item.abstract}</p>
-        <Button on:click={() => searchGoogle(item.title)} color="blue" size="sm">
-          Learn More <ArrowRightOutline class="ml-2 h-5 w-4" />
-        </Button>
+  <ol style="position: relative; border-left: 2px solid #E5E7EB; padding-left: 1rem;">
+    {#each timelineItems.timelineItems as item, index (item.id)}
+      <li style="margin-bottom: 2.5rem; padding-left: 1rem;">
+        <div style="position: absolute; width: 0.75rem; height: 0.75rem; background-color: black; border-radius: 50%; margin-top: 0.375rem; left: -0.375rem; border: 2px solid white;"></div>
+        <time style="display: block; margin-bottom: 0.25rem; font-size: 0.875rem; color: #6B7280;">{item.date}</time>
+        <h3 style="font-size: 1.125rem; font-weight: 600; color: #1F2937; margin-bottom: 0.5rem;">{item.title}</h3>
+        <p style="font-size: 1rem; color: #4B5563; margin-bottom: 1rem;">{item.abstract}</p>
+        <button 
+          class="learn-more-btn" 
+          on:click={() => toggleModal(index)} 
+          style="display: inline-flex; align-items: center; padding: 0.5rem 1rem; background-color: transparent; color: black; font-weight: 500; border-radius: 0.25rem; border: none; cursor: pointer; transition: all 0.3s;"
+        >
+          Learn More 
+          <svg style="width: 1rem; height: 1rem; margin-left: 0.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+
+        {#if showModal[index]}
+          <div class="modal" on:click={(e) => handleModalClick(e, index)} style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center; z-index: 1000;">
+            <div style="position: relative; background-color: white; padding: 2rem; border-radius: 0.5rem; max-width: 80%; max-height: 80%; overflow-y: auto;">
+              <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">{item.title}</h2>
+              <p style="margin-bottom: 1rem;">{item.description}</p>
+              <p style="margin-bottom: 1rem;"><strong>Significance:</strong> {item.significance}</p>
+              <div style="display: flex; justify-content: flex-end; gap: 0.5rem;">
+                <button 
+                  on:click={() => openWikipedia(item.urls.wikipedia)}
+                  style="padding: 0.5rem 1rem; background-color: white; color: black; border: 2px solid black; border-radius: 0.25rem; cursor: pointer; transition: all 0.3s;"
+                >
+                  Wikipedia
+                </button>
+                <button 
+                  on:click={() => searchGoogle(item.title)}
+                  style="padding: 0.5rem 1rem; background-color: white; color: black; border: 2px solid black; border-radius: 0.25rem; cursor: pointer; transition: all 0.3s;"
+                >
+                  Search Google
+                </button>
+              </div>
+              <button 
+                on:click={() => toggleModal(index)}
+                style="position: absolute; top: 0.5rem; right: 0.5rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 0.25rem 0.5rem; line-height: 1;"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+        {/if}
       </li>
     {/each}
   </ol>
 
-  <hr class="mt-8 mb-4 border-gray-300" />
-
+  <hr style="margin-top: 2rem; margin-bottom: 1rem; border-color: #E5E7EB;" />
 </div>
 
 <style>
-  .timeline-container {
-    max-width: 800px;
-    margin: auto;
+  .learn-more-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+  .modal button:hover {
+    background-color: black !important;
+    color: white !important;
   }
 </style>

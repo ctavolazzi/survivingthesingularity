@@ -1,6 +1,6 @@
 <script>
   function joinSkool() {
-    alert("The Skool Community is coming soon! We'll notify you when it's ready.");
+    alert("The Skool Community is launching next Friday 8/9 - please stay tuned.");
   }
 
   function backOnKickstarter() {
@@ -16,7 +16,7 @@
   <h1 class="text-4xl font-bold mb-8 text-center">Surviving the Singularity</h1>
 
 
-  
+
   <div class="mb-8 flex justify-center space-x-4">
     <button on:click={joinSkool} class="action-button">
       Join Skool Community
@@ -25,7 +25,7 @@
       Back on Kickstarter
     </button>
   </div>
-  
+
   <div class="warning-container">
     <p class="warning-text"><strong>Content Warning:</strong> Do not read this text if you have ever suffered from derealization or depersonalization.</p>
   </div>

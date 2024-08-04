@@ -13,7 +13,7 @@
 
   function handleJoinSkool() {
       // window.open('https://www.skool.com/surviving-the-singularity', '_blank');
-      alert("The Skool Community is coming soon! We'll notify you when it's ready.");
+      alert("The Skool Community is launching next Friday 8/9 - please stay tuned.");
     }
 
   function handleGetGuide() {

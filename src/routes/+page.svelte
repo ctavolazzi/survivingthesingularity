@@ -30,6 +30,11 @@
   <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
 </div>
 
+<div class="quote-container">
+  <p class="quote">"I am patiently waiting for the Singularity."</p>
+  <p class="attribution">- Harper Reed</p>
+</div>
+
 <Timeline items={timelineItems.timelineItems} />
 
 <Spacer height="2rem"/>
@@ -85,5 +90,32 @@
     .big-button:hover {
       background-color: #000000;
       color: #ffffff;
+    }
+
+    .quote-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4rem 0;
+      padding: 1rem;
+      position: relative;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0;
+      color: #000;
+      line-height: 1.4;
+      font-weight: 500;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .attribution {
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #555;
     }
 </style>

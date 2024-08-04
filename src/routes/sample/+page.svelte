@@ -1,10 +1,10 @@
 <script>
   function joinSkool() {
-    window.open('https://www.skool.com/surviving-the-singularity', '_blank');
+    alert("The Skool Community is coming soon! We'll notify you when it's ready.");
   }
 
   function backOnKickstarter() {
-    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity', '_blank');
+    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
   }
 </script>
 

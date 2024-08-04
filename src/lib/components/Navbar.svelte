@@ -13,11 +13,11 @@
   }
 
   function handleBackBook() {
-    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank');
+    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
   }
 
   function handleJoinSkool() {
-    window.location.href = '/coming-soon'
+    alert("The Skool Community is coming soon! We'll notify you when it's ready.");
   }
 </script>
 

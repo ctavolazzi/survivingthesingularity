@@ -1,7 +1,7 @@
 <script>
   // import BottomNav from '../../components/BottomNav.svelte';
   function handleBackBook() {
-    window.location.href = 'https://www.kickstarter.com/projects/your-book-title';
+    window.location.href = 'https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook';
   }
 </script>
 

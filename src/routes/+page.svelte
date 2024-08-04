@@ -8,15 +8,15 @@
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
 
 	function handleBackBook() {
-      window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank');
+      window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
     }
 
-    function handleJoinSkool() {
+  function handleJoinSkool() {
       // window.open('https://www.skool.com/surviving-the-singularity', '_blank');
-      window.location.href = '/coming-soon';
+      alert("The Skool Community is coming soon! We'll notify you when it's ready.");
     }
 
-    function handleGetGuide() {
+  function handleGetGuide() {
       window.open('https://tavolazzi.gumroad.com/l/singularitychecklist', '_blank');
     }
 </script>

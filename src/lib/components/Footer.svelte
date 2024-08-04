@@ -1,6 +1,6 @@
 <script>
   function handleBackBook() {
-    window.location.href = 'https://www.kickstarter.com/projects/your-book-title';
+    window.location.href = 'https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook';
   }
 </script>
 
@@ -27,7 +27,7 @@
     </div>
     <div class="text-center mt-6">
       <p>&copy; 2024 AIECO. All rights reserved.</p>
-      <p class="text-gray-400 text-sm">6392 Lardanel Lane, Anderson, CA, 96007</p>
+      <p class="text-gray-400 text-sm">469 East 5th Street, Chico, CA, 95926</p>
     </div>
     <!-- <div class="text-center mt-4">
       <button class="buy-button w-full md:w-auto px-6 py-2" on:click={handleBackBook}>Back the Book on Kickstarter</button>

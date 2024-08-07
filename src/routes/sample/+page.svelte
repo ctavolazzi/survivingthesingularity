@@ -69,7 +69,7 @@
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Introduction</h2>
+      <h2 class="text-2xl font-semibold mb-4">AGI</h2>
       <p>Before we get started, let's do a little framing, shall we? What do robots, ChatGPT, math, organic chemistry, and water parks have in common?</p>
       <p>No, it's not that they all get me wet. They all are aspects of a greater whole, slices of what might be the final invention of humanity, limbs of the sci-fi future we are all, willingly or not, careening toward at an exponential pace.</p>
       <p>We need to talk about AGI.</p>

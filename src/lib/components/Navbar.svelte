@@ -45,6 +45,9 @@
       <a class="nav-link block w-full text-right py-2" href="/contact" on:click={closeMenu}>Contact</a>
     </NavLi>
     <NavLi>
+      <a class="nav-link block w-full text-right py-2" href="/blog" on:click={closeMenu}>Blog</a>
+    </NavLi>
+    <NavLi>
       <a class="nav-link block w-full text-right py-2" href="/sample" on:click={closeMenu}>Read a Sample</a>
     </NavLi>
     <NavLi class="w-full">

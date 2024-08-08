@@ -19,6 +19,10 @@
   function handleGetGuide() {
       window.open('https://tavolazzi.gumroad.com/l/singularitychecklist', '_blank');
     }
+
+  function handleReadSample() {
+    window.open('https://survivingthesingularity.com/sample', '_blank');
+  }
 </script>
 
 <Spacer height="1.25rem"/>
@@ -28,6 +32,10 @@
 <div class="button-container">
   <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
   <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
+</div>
+
+<div class="sample-button-container">
+  <button class="big-button" on:click={handleReadSample}>Read a Sample</button>
 </div>
 
 <div class="quote-container">
@@ -41,6 +49,7 @@
 
 <div class="button-container">
   <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
+  <button class="big-button" on:click={handleReadSample}>Read a Sample</button>
   <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
 </div>
 
@@ -118,4 +127,21 @@
       font-size: 1.2rem;
       color: #555;
     }
+
+    .sample-button-container {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+  .sample-button-container .big-button {
+    max-width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .sample-button-container .big-button {
+      max-width: none;
+      width: 100%;
+    }
+  }
 </style>

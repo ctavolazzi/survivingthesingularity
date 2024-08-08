@@ -21,8 +21,7 @@
     }
 
   function handleReadSample() {
-    window.open('https://survivingthesingularity.com/sample', '_blank');
-  }
+    window.location.href = 'https://survivingthesingularity.com/sample';  }
 </script>
 
 <Spacer height="1.25rem"/>

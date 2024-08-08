@@ -2,7 +2,7 @@
 <script>
   const posts = [
     {
-      id: "singularity-express",
+      id: 1,
       title: "The Singularity Express Arrives at the Station",
       date: "2024-08-08",
       excerpt: "Choo Choo, Motherfuckers. The Singularity Express just pulled into the station, and it's one hell of a ride."
@@ -18,11 +18,11 @@
     {#each posts as post}
       <li class="border-b border-gray-200 pb-8">
         <h2 class="text-2xl font-semibold mb-2">
-          <a href="/blog/{encodeURIComponent(post.id)}" class="text-black hover:text-gray-600 transition-colors duration-300">{post.title}</a>
+          <a href="/blog/post{post.id}" class="text-black hover:text-gray-600 transition-colors duration-300">{post.title}</a>
         </h2>
         <p class="text-gray-600 text-sm mb-4">{post.date}</p>
         <p class="text-gray-800 mb-4">{post.excerpt}</p>
-        <a href="/blog/{encodeURIComponent(post.id)}" class="text-black hover:text-gray-600 transition-colors duration-300 font-semibold">Read more →</a>
+        <a href="/blog/post{post.id}" class="text-black hover:text-gray-600 transition-colors duration-300 font-semibold">Read more →</a>
       </li>
     {/each}
   </ul>

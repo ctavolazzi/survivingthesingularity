@@ -1,23 +1,7 @@
 <!-- src/routes/about/index.svelte -->
 <script>
-  // import BottomNav from '../../components/BottomNav.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import MailchimpSignup from '$lib/components/MailchimpSignup.svelte';
-  // import BackBookButton from '../../components/BackBookButton.svelte';
-  // import BuyBookButton from '../../components/BuyBookButton.svelte';
-  // import { supabase } from '$lib/supabaseClient';
-
-  // async function logBackBookClick() {
-  //   console.log('Back Book Clicked');
-  // }
-
-  async function logBackBookClick() {
-    await supabase.from('back_book_clicks').insert({
-      timestamp: new Date(),
-      referrer: window.location.href,
-      user_agent: navigator.userAgent,
-    });
-  }
 
   function handleBackBook() {
     logBackBookClick();
@@ -43,17 +27,13 @@
     </p>
 
     <div class="button-group">
-      <button class="sample-button" on:click={() => window.open('https://docs.google.com/document/d/1plGfd2X8-TsH3aCjbSz6aJeZTpfmrHZ6zNJ2hw6ww9s/edit?usp=sharing', '_blank')}>
+      <button class="btn" on:click={() => window.open('https://docs.google.com/document/d/1plGfd2X8-TsH3aCjbSz6aJeZTpfmrHZ6zNJ2hw6ww9s/edit?usp=sharing', '_blank')}>
         Read a Sample
       </button>
-      <!-- <BackBookButton class="back-button" on:click={() => window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank')}>
-      </BackBookButton>
-      <BuyBookButton class="buy-button" on:click={() => window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity?ref=user_menu', '_blank')}>
-      </BuyBookButton> -->
-      <button class="back-button" on:click={() => handleBackBook()}>
+      <button class="btn" on:click={handleBackBook}>
         Back the Book
       </button>
-      <button class="back-button" on:click={() => handleJoinSkool()}>
+      <button class="btn" on:click={handleJoinSkool}>
         Join the Skool Community
       </button>
     </div>
@@ -76,21 +56,15 @@
       <p class="section-description">
         "Surviving the Singularity" is sponsored by AIECO, a humanity-focused organization.
       </p>
-      <button class="buy-button block w-full mt-4" on:click={handleBackBook}>Back the Book on Kickstarter</button>
+      <button class="btn full-width" on:click={handleBackBook}>Back the Book on Kickstarter</button>
     </div>
   </div>
 </div>
 
-<!-- Spacer for bottom navigation -->
-<!-- <Spacer height="4rem"/> -->
-
-<!-- <BottomNav /> -->
-
 <style>
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    max-width: 100%;
+    padding: 1rem;
     color: #333;
   }
 
@@ -99,80 +73,102 @@
   }
 
   .title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
 
   .button-group {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 2rem;
   }
 
-  .sample-button {
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: white;
+  .btn {
+    padding: 0.75rem 1rem;
     border: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .sample-button:hover {
-    background-color: #555;
-  }
-
-  .back-button {
-    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
     background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 
-  .back-button:hover {
+  .btn:hover {
     background-color: #555;
   }
 
   .additional-content {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
   .section-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
 
-	.buy-button {
-      font-weight: bold;
-	    font-size: 1.5rem;
-      background-color: #f8f9fa;
-      border: 2px solid #000000;
-      border-radius: 4px;
-      padding: 1rem 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-align: center;
+  .full-width {
+    width: 100%;
+    max-width: none;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 2rem;
     }
 
-    .buy-button:hover {
-      background-color: #e2e6ea;
+    .title {
+      font-size: 2.5rem;
     }
+
+    .description {
+      font-size: 1.1rem;
+    }
+
+    .button-group {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .btn {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .description {
+      font-size: 1.2rem;
+    }
+  }
 </style>

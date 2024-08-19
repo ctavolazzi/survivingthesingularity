@@ -75,11 +75,12 @@
       </button>
     </div>
     <NavUl class="md:flex md:items-center md:justify-end w-full md:w-auto md:order-1 hidden">
+      <NavLi href="/" class="nav-item" on:click={closeMenu}>Home</NavLi>
       <NavLi href="/about" class="nav-item" on:click={closeMenu}>About</NavLi>
       <NavLi href="/contact" class="nav-item" on:click={closeMenu}>Contact</NavLi>
       <NavLi href="/blog" class="nav-item" on:click={closeMenu}>Blog</NavLi>
       <NavLi href="/sample" class="nav-item" on:click={closeMenu}>Read a Sample</NavLi>
-      <NavLi href="/download" class="nav-item" on:click={closeMenu}>Download</NavLi>
+      <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); window.location.href = '/download'; }}>Download</NavLi>
       <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); handleBackBook(); }}>Back the Book</NavLi>
       <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); handleJoinSkool(); }}>Join the Skool Community</NavLi>
     </NavUl>
@@ -89,14 +90,20 @@
 <div class="mobile-menu md:hidden w-full bg-white dark:bg-gray-800 fixed top-[navbarHeight]px left-0 right-0 z-40" style="display: none;">
   <ul class="flex flex-col items-end p-6">
     <li class="w-full text-right py-3"><a href="/" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Home</a></li>
+
+    <li class="w-full text-right py-3"><a href="/" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Home</a></li>
     <li class="w-full text-right py-3"><a href="/about" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>About</a></li>
     <li class="w-full text-right py-3"><a href="/contact" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Contact</a></li>
     <li class="w-full text-right py-3"><a href="/blog" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Blog</a></li>
-    <li class="w-full text-right py-3"><a href="/sample" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Read a Sample from the Book</a></li>
-    <li class="w-full text-right py-3"><a href="/download" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Download the FREE Orientation Guide</a></li>
+    <li class="w-full text-right py-3"><a href="/sample" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Read a Sample</a></li>
+    <li class="w-full text-right py-3">
+      <button class="mobile-menu-button" on:click={() => { closeMenu(); window.location.href = '/download'; }}>
+        Download
+      </button>
+    </li>
     <li class="w-full text-right py-3">
       <button class="mobile-menu-button" on:click={() => { closeMenu(); handleBackBook(); }}>
-        Back the Book on Kickstarter
+        Back the Book
       </button>
     </li>
     <li class="w-full text-right py-3">

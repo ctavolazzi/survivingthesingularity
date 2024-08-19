@@ -1,11 +1,6 @@
 <script>
-  import { onMount } from 'svelte';
+  import { darkMode } from '$lib/stores/darkMode';
   let isDownloading = false;
-  let isDarkMode = false;
-
-  onMount(() => {
-    isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  });
 
   async function downloadSamplePDF() {
     isDownloading = true;
@@ -21,88 +16,111 @@
   }
 </script>
 
-<div class="outer-container" class:dark-mode={isDarkMode}>
-  <main class="content-container">
-    <h1>Download Singularity Checklist</h1>
-    <p>Click the button below to download our free Singularity Checklist PDF.</p>
-    <button on:click={downloadSamplePDF} class="cta-button" class:downloading={isDownloading} disabled={isDownloading}>
-      <span class="button-text">{isDownloading ? 'Downloading...' : 'Download Checklist PDF'}</span>
-      <span class="button-icon">{isDownloading ? '⟳' : '↓'}</span>
-      <div class="button-flash"></div>
-    </button>
-  </main>
+<div class="main-content">
+  <div class="content-container">
+    <div class="card bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Download Singularity Checklist</h1>
+      <p class="intro text-xl text-gray-700 dark:text-gray-300 mb-6">Prepare for the future with our comprehensive guide.</p>
+      <div class="description text-gray-700 dark:text-gray-300 mb-8">
+        <p class="mb-4">Our Singularity Checklist is a carefully curated PDF resource designed to help you:</p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Understand key concepts related to technological singularity</li>
+          <li>Identify potential challenges and opportunities in a rapidly changing world</li>
+          <li>Develop strategies to adapt and thrive in the face of exponential technological growth</li>
+        </ul>
+        <p>Download now and take the first step towards future-proofing your life and career.</p>
+      </div>
+      <button on:click={downloadSamplePDF} 
+              class="big-button bg-blue-500 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800 text-white w-full" 
+              class:downloading={isDownloading} 
+              disabled={isDownloading}>
+        {isDownloading ? 'Downloading...' : 'Download Checklist PDF'}
+        <span class="button-icon">{isDownloading ? '⟳' : '↓'}</span>
+      </button>
+    </div>
+  </div>
 </div>
 
 <style>
-  .outer-container {
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f0f0f0;
-    --color-text-primary: #333333;
-    --color-text-secondary: #666666;
-    --color-accent: #3498db;
-    --color-accent-hover: #2980b9;
-    --color-flash: rgba(52, 152, 219, 0.3);
-  }
-
-  .dark-mode {
-    --color-bg-primary: #2c3e50;
-    --color-bg-secondary: #34495e;
-    --color-text-primary: #ecf0f1;
-    --color-text-secondary: #bdc3c7;
-    --color-accent: #3498db;
-    --color-accent-hover: #2980b9;
-    --color-flash: rgba(52, 152, 219, 0.3);
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
   }
 
   .content-container {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
+    max-width: 800px;
     text-align: center;
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--color-accent);
   }
 
-  p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: var(--color-text-secondary);
+  .intro {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
-  .cta-button {
-    position: relative;
-    background-color: var(--color-accent);
-    border: none;
-    padding: 12px 24px;
-    color: var(--color-bg-primary);
+  .description p,
+  li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    list-style-type: disc;
+  }
+
+  .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+  }
+
+  .big-button {
+    flex: 1;
+    font-weight: 600;
     font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid #2c3e50;
+    border-radius: 6px;
+    color: #2c3e50;
+    padding: 0.75rem 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    overflow: hidden;
-    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
-  .cta-button:hover {
-    background-color: var(--color-accent-hover);
+  .big-button:hover {
+    background-color: #f8f9fa;
+    border-color: #34495e;
+    color: #34495e;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
   }
 
-  .button-text, .button-icon {
-    position: relative;
-    z-index: 2;
+  :global(.dark) .big-button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border-color: #34495e;
+  }
+
+  :global(.dark) .big-button:hover {
+    background-color: #34495e;
+    border-color: #4a6785;
+    color: #ffffff;
   }
 
   .button-icon {
-    margin-left: 10px;
+    margin-left: 8px;
     font-size: 1.2rem;
   }
 
@@ -114,39 +132,17 @@
     100% { transform: rotate(360deg); }
   }
 
-  .button-flash {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, var(--color-flash) 0%, transparent 70%);
-    transform: scale(0);
-    opacity: 0;
-    z-index: 1;
-  }
-
-  .cta-button:hover .button-flash {
-    animation: flash 1.5s infinite;
-  }
-
-  @keyframes flash {
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-    30% {
-      transform: scale(0);
-      opacity: 0.5;
-    }
-    100% {
-      transform: scale(3);
-      opacity: 0;
-    }
-  }
-
-  .cta-button:disabled {
-    cursor: not-allowed;
+  .big-button:disabled {
     opacity: 0.7;
+    cursor: not-allowed;
   }
+
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  } */
 </style>

@@ -12,6 +12,12 @@
       darkMode.set(true);
       document.documentElement.classList.add('dark');
     }
+
+    // Add Mailchimp script
+    const script = document.createElement('script');
+    script.src = "https://chimpstatic.com/mcjs-connected/js/users/79a060ac083c62360805246c1/5e8ab5ae486a7bce45867fe6b.js";
+    script.async = true;
+    document.body.appendChild(script);
   });
 
   $: if (typeof document !== 'undefined') {

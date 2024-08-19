@@ -152,11 +152,27 @@
 
   :global(body.dark) {
     background-color: #1a202c;
-    color: #e2e8f0;
+    color: #ffffff;
   }
 
   .main-content {
     transition: padding-top 0.3s ease-in-out;
+  }
+
+  :global(body.dark) .content :global(*) {
+    color: #ffffff !important;
+  }
+
+  :global(body.dark) .content :global(a) {
+    color: #63b3ed !important;
+  }
+
+  :global(body.dark) .content :global(.survival-tip) {
+    color: #68d391 !important;
+  }
+
+  :global(body.dark) .content :global(h1) {
+    color: #ffffff !important;
   }
 
   .spacer-text {
@@ -267,12 +283,12 @@
 
   :global(body.dark) .big-button {
     background-color: #2d3748;
-    border-color: #e2e8f0;
-    color: #e2e8f0;
+    border-color: #ffffff;
+    color: #ffffff;
   }
 
   :global(body.dark) .big-button:hover {
-    background-color: #e2e8f0;
+    background-color: #ffffff;
     color: #2d3748;
   }
 

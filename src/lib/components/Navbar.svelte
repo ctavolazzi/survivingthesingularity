@@ -60,7 +60,7 @@
 <div class="navbar-container" style="height: {navbarHeight}px">
   <Navbar 
     bind:this={navbar}
-    class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 transition-all duration-300 w-full {isFloating ? 'fixed' : 'absolute'} top-0 left-0 right-0 z-50"
+    class="bg-white dark:bg-gray-800 transition-all duration-300 w-full {isFloating ? 'fixed' : 'absolute'} top-0 left-0 right-0 z-50 shadow-lg"
   >
     <NavBrand href="/">
       <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
@@ -75,19 +75,19 @@
       </button>
     </div>
     <NavUl class="md:flex md:items-center md:justify-end w-full md:w-auto md:order-1 hidden">
-      <NavLi href="/about" class="md:text-right" on:click={closeMenu}>About</NavLi>
-      <NavLi href="/contact" class="md:text-right" on:click={closeMenu}>Contact</NavLi>
-      <NavLi href="/blog" class="md:text-right" on:click={closeMenu}>Blog</NavLi>
-      <NavLi href="/sample" class="md:text-right" on:click={closeMenu}>Read a Sample</NavLi>
-      <NavLi href="/" on:click={() => { closeMenu(); handleBackBook(); }} class="md:text-right">Back the Book</NavLi>
-      <NavLi href="/" on:click={() => { closeMenu(); handleJoinSkool(); }} class="md:text-right">Join the Skool Community</NavLi>
+      <NavLi href="/about" class="nav-item" on:click={closeMenu}>About</NavLi>
+      <NavLi href="/contact" class="nav-item" on:click={closeMenu}>Contact</NavLi>
+      <NavLi href="/blog" class="nav-item" on:click={closeMenu}>Blog</NavLi>
+      <NavLi href="/sample" class="nav-item" on:click={closeMenu}>Read a Sample</NavLi>
+      <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); handleBackBook(); }}>Back the Book</NavLi>
+      <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); handleJoinSkool(); }}>Join the Skool Community</NavLi>
     </NavUl>
   </Navbar>
 </div>
 
-<div class="mobile-menu md:hidden w-full bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 fixed top-[navbarHeight]px left-0 right-0 z-40" style="display: none;">
+<div class="mobile-menu md:hidden w-full bg-white dark:bg-gray-800 fixed top-[navbarHeight]px left-0 right-0 z-40" style="display: none;">
   <ul class="flex flex-col items-end p-6">
-    <li class="w-full text-right py-3"><a href="/about" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>About</a></li>
+    <li class="w-full text-right py-3"><a href="/" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Home</a></li>
     <li class="w-full text-right py-3"><a href="/about" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>About</a></li>
     <li class="w-full text-right py-3"><a href="/contact" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Contact</a></li>
     <li class="w-full text-right py-3"><a href="/blog" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Blog</a></li>
@@ -116,11 +116,23 @@
   }
 
   .mobile-menu {
-    transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out, box-shadow 0.2s ease-out;
     opacity: 0;
+    box-shadow: none;
   }
   .mobile-menu:not([style*="display: none"]) {
     opacity: 1;
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 8px 8px -8px rgba(0, 0, 0, 0.8);
+  }
+
+  :global(.dark .mobile-menu:not([style*="display: none"])) {
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 8px 8px -8px rgba(255, 255, 255, 0.8);
   }
   
   :global(.mobile-menu-button) {
@@ -145,7 +157,22 @@
     opacity: 0.8;
   }
 
-  :global(.mobile-menu a, .mobile-menu button) {
+  :global(.mobile-menu li a, .mobile-menu li button) {
+    transition: transform 0.3s ease, margin-right 0.3s ease;
     display: inline-block;
+  }
+
+  :global(.mobile-menu li a:hover, .mobile-menu li button:hover) {
+    transform: scale(1.05);
+    margin-right: 5px;
+  }
+
+  :global(.nav-item) {
+    transition: transform 0.3s ease, margin-left 0.3s ease;
+  }
+
+  :global(.nav-item:hover) {
+    transform: scale(1.05);
+    margin-left: -5px;
   }
 </style>

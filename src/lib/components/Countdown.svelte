@@ -109,6 +109,7 @@
       font-weight: bold;
       margin-bottom: 1rem;
       font-size: 2.4rem;
+      color: var(--color-text-primary);
     }
   
     .countdown-container {
@@ -123,6 +124,8 @@
       max-width: 100vw;
       box-sizing: border-box;
       overflow: hidden;
+      background-color: var(--color-surface);
+      border-radius: 4px;
     }
   
     .countdown-item {
@@ -131,7 +134,7 @@
       align-items: center;
       justify-content: center;
       padding: 0.2rem;
-      color: #000000;
+      color: var(--color-text-secondary);
       border-radius: 4px;
       flex: 1; /* Ensure items are evenly spaced */
       min-width: 0; /* Prevent flex items from overflowing */
@@ -143,12 +146,14 @@
       font-weight: bold;
       text-align: center;
       min-width: 5vw; /* Ensure consistent width to prevent shifting */
+      color: var(--color-text-primary);
     }
   
     .countdown-label {
       font-size: 2vw;
       text-transform: uppercase;
       text-align: center;
+      color: var(--color-text-secondary);
     }
   
     .loading-container {
@@ -158,11 +163,13 @@
       font-size: 1.2rem;
       width: 100%; /* Ensure the loading container takes full width */
       height: 100%; /* Ensure the loading container takes full height */
+      color: var(--color-text-primary);
     }
   
     .loading-icon {
       animation: pulse 1s infinite;
       margin-right: 0.5rem;
+      color: var(--color-text-secondary);
     }
   
     @keyframes pulse {

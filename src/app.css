@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+}
+
+.dark {
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-bg-primary: #1a202c;
+  --color-bg-secondary: #2d3748;
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200 ease-in-out;
+}
+
+.content-box {
+  @apply bg-[var(--color-surface)] rounded-lg p-4;
+}
+
+.btn {
+  @apply bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-600 transition-colors;
+}

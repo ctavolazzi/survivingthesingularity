@@ -13,9 +13,9 @@
 </svelte:head>
 
 <main class="container mx-auto px-4 py-8">
+  <div class="h-16"></div> <!-- Spacer for the menu -->
+
   <h1 class="text-4xl font-bold mb-8 text-center">Surviving the Singularity</h1>
-
-
 
   <div class="mb-8 flex justify-center space-x-4">
     <button on:click={joinSkool} class="action-button">

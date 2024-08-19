@@ -1,18 +1,24 @@
 <!-- src/routes/blog/singularity-express/+page.svelte -->
-<!-- src/routes/blog/post1/+page.svelte -->
-<!-- (Update this for post2 and post3 as well) -->
 <script>
-	function handleBackBook() {
-      window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
+  import Spacer from '$lib/components/Spacer.svelte';
+  import { onMount } from 'svelte';
+
+  let navbarHeight = 0;
+
+  onMount(() => {
+    navbarHeight = document.querySelector('nav').offsetHeight;
+  });
+
+  function handleBackBook() {
+    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
   }
 
   function handleJoinSkool() {
-      // window.open('https://www.skool.com/surviving-the-singularity', '_blank');
-      alert("The Skool Community is launching next Friday 8/9 - please stay tuned.");
+    alert("The Skool Community is launching next Friday 8/9 - please stay tuned.");
   }
 
   function handleGetGuide() {
-      window.open('https://tavolazzi.gumroad.com/l/singularitychecklist', '_blank');
+    window.open('https://tavolazzi.gumroad.com/l/singularitychecklist', '_blank');
   }
 
   function handleReadSample() {
@@ -113,30 +119,59 @@
 
 <p>Now, if you'll excuse me, I need to patent my idea for "AI Overlord Appeasement" before some silicon smartass beats me to it.</p>`
   };
-  import default_image from '$lib/images/default-blog-image.png';
 </script>
 
-<article class="max-w-2xl mx-auto px-4 py-8">
-  <h1 class="text-3xl font-bold mb-4">{post.title}</h1>
-  <p class="text-gray-600 italic mb-6">{post.date} - {post.author}</p>
-  <button on:click={() => window.location.href = '/blog'} class="mb-4 px-4 py-2 bg-white text-black rounded hover:bg-gray-300 transition-colors duration-300">← Back to Blog List</button>
-  <img alt="Default Blog Image" src="https://cdn.midjourney.com/2cfb73bc-4072-40fa-aa86-8cf4f842b428/0_2.png" class="w-full max-w-2xl h-auto mb-6 rounded" />
-  <div class="content">
-    {@html post.content}
-  </div>
-</article>
+<div class="main-content" style="padding-top: {navbarHeight}px">
+  <Spacer height=".5rem">
+    <span class="spacer-text">Surviving the Singularity</span>
+  </Spacer>
 
-<div class="button-container">
-  <button class="blog-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
-  <button class="blog-button" on:click={handleReadSample}>Read a Sample</button>
-  <button class="blog-button" on:click={handleGetGuide}>Get the FREE Guide</button>
-  <button class="blog-button" on:click={handleJoinSkool}>Join the Skool Community</button>
+  <article class="max-w-2xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">{post.title}</h1>
+    <p class="text-gray-600 dark:text-gray-400 italic mb-6">{post.date} - {post.author}</p>
+    <button on:click={() => window.location.href = '/blog'} class="mb-4 px-4 py-2 bg-white dark:bg-gray-800 text-black dark:text-white rounded hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors duration-300">← Back to Blog List</button>
+    <img alt="Default Blog Image" src="https://cdn.midjourney.com/2cfb73bc-4072-40fa-aa86-8cf4f842b428/0_2.png" class="w-full max-w-2xl h-auto mb-6 rounded" />
+    <div class="content">
+      {@html post.content}
+    </div>
+  </article>
+
+  <div class="button-container">
+    <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
+    <button class="big-button" on:click={handleReadSample}>Read a Sample</button>
+    <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
+    <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
+  </div>
 </div>
 
 <style>
   :global(body) {
     background-color: #ffffff;
     color: #000000;
+  }
+
+  :global(body.dark) {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
+
+  .main-content {
+    transition: padding-top 0.3s ease-in-out;
+  }
+
+  .spacer-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  :global(body.dark) .spacer-text {
+    color: #ffffff;
+    background-color: #2d3748;
   }
 
   .content :global(h1) {
@@ -206,9 +241,14 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 2rem;
+    max-width: 2xl;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .blog-button {
+  .big-button {
     font-weight: bold;
     font-size: 1.25rem;
     background-color: #f8f9fa;
@@ -220,9 +260,20 @@
     text-align: center;
   }
 
-  .blog-button:hover {
+  .big-button:hover {
     background-color: #000000;
     color: #ffffff;
+  }
+
+  :global(body.dark) .big-button {
+    background-color: #2d3748;
+    border-color: #e2e8f0;
+    color: #e2e8f0;
+  }
+
+  :global(body.dark) .big-button:hover {
+    background-color: #e2e8f0;
+    color: #2d3748;
   }
 
   @media (max-width: 640px) {
@@ -232,6 +283,10 @@
 
     .button-container {
       grid-template-columns: 1fr;
+    }
+
+    .spacer-text {
+      font-size: 1.25rem;
     }
   }
 </style>

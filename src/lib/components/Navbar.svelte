@@ -1,15 +1,11 @@
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl } from 'flowbite-svelte';
+  import { Navbar, NavBrand, NavHamburger } from 'flowbite-svelte';
   import { slide } from 'svelte/transition';
 
   let isOpen = false;
 
   function toggleMenu() {
     isOpen = !isOpen;
-  }
-
-  function closeMenu() {
-    isOpen = false;
   }
 
   function handleBackBook() {
@@ -21,49 +17,41 @@
   }
 </script>
 
-<Navbar let:NavContainer color="white">
-  <NavContainer class="px-5 py-2 bg-white flex justify-between items-center">
+<Navbar color="white" class="px-4 py-2.5">
+  <div class="flex justify-between items-center w-full">
     <NavBrand href="/">
       <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
       <span class="self-center whitespace-nowrap text-xl font-semibold">Surviving the Singularity</span>
     </NavBrand>
-    <button on:click={toggleMenu} class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+    <button on:click={toggleMenu} class="text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2.5">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
       </svg>
     </button>
-  </NavContainer>
+  </div>
 </Navbar>
 
 {#if isOpen}
-<div transition:slide class="px-5 py-2 bg-white">
-  <NavUl class="flex flex-col items-end space-y-2">
-    <NavLi>
-      <a class="nav-link block w-full text-right py-2" href="/about" on:click={closeMenu}>About</a>
-    </NavLi>
-    <NavLi>
-      <a class="nav-link block w-full text-right py-2" href="/contact" on:click={closeMenu}>Contact</a>
-    </NavLi>
-    <NavLi>
-      <a class="nav-link block w-full text-right py-2" href="/blog" on:click={closeMenu}>Blog</a>
-    </NavLi>
-    <NavLi>
-      <a class="nav-link block w-full text-right py-2" href="/sample" on:click={closeMenu}>Read a Sample</a>
-    </NavLi>
-    <NavLi class="w-full">
-      <button class="buy-button w-full text-right py-2 px-4" on:click={handleBackBook}>Back the Book</button>
-    </NavLi>
-    <NavLi class="w-full">
-      <button class="buy-button w-full text-right py-2 px-4" on:click={handleJoinSkool}>Join the Skool Community</button>
-    </NavLi>
-  </NavUl>
-</div>
+  <div transition:slide={{ duration: 300 }} class="w-full bg-white border-b border-gray-200">
+    <ul class="flex flex-col items-end p-4">
+      <li class="w-full text-right py-2"><a href="/about">About</a></li>
+      <li class="w-full text-right py-2"><a href="/contact">Contact</a></li>
+      <li class="w-full text-right py-2"><a href="/blog">Blog</a></li>
+      <li class="w-full text-right py-2"><a href="/sample">Read a Sample</a></li>
+      <li class="w-full text-right py-2">
+        <button class="buy-button" on:click={handleBackBook}>Back the Book</button>
+      </li>
+      <li class="w-full text-right py-2">
+        <button class="buy-button" on:click={handleJoinSkool}>Join the Skool Community</button>
+      </li>
+    </ul>
+  </div>
 {/if}
 
 <style>
   .nav-link, .buy-button {
     color: black !important;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
   }
 
   .nav-link:hover, .buy-button:hover {
@@ -76,8 +64,10 @@
     border: 1px solid #000000;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: auto;
     display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: auto;
   }
 
   .buy-button:hover {

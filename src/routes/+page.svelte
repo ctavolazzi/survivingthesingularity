@@ -5,6 +5,8 @@
 	import MailchimpSignup from '$lib/components/MailchimpSignup.svelte';
 	import { Accordion, AccordionItem } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
+	import NewsletterPopup from '$lib/components/NewsletterPopup.svelte';
+	// import { newsletterSubmitted } from '$lib/stores/newsletterStore';
 
 	import timelineItems from '$lib/data/timelineItems.json';
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
@@ -39,9 +41,6 @@
   <div class="button-container">
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
     <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
-  </div>
-
-  <div class="sample-button-container">
     <button class="big-button" on:click={handleReadSample}>Read a Sample</button>
   </div>
 
@@ -112,6 +111,8 @@
 
   <Spacer height="1rem"/>
 </div>
+
+<NewsletterPopup delayMs={3000} />
 
 <style>
     .button-container {

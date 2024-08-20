@@ -2,18 +2,7 @@
 <script>
   import Spacer from '$lib/components/Spacer.svelte';
   import { onMount } from 'svelte';
-
-  const posts = [
-    {
-      id: "singularity-express",
-      title: "The Singularity Express Arrives at the Station",
-      date: "2024-08-08",
-      excerpt: "Choo Choo, Motherfuckers. The Singularity Express just pulled into the station, and it's one hell of a ride."
-    },
-    // Add more posts here as needed
-  ];
-
-  let navbarHeight = 0;
+  import { posts } from '$lib/data/blog-posts/blogPosts.js';  let navbarHeight = 0;
 
   onMount(() => {
     navbarHeight = document.querySelector('nav').offsetHeight;
@@ -26,18 +15,22 @@
   <div class="content-container">
     <h1 class="title">Blog Posts</h1>
 
-    <ul class="post-list">
+    <div class="post-grid">
       {#each posts as post}
-        <li class="post-item">
-          <h2 class="post-title">
-            <a href="/blog/{post.id}" class="post-link">{post.title}</a>
-          </h2>
-          <p class="post-date">{post.date}</p>
-          <p class="post-excerpt">{post.excerpt}</p>
-          <a href="/blog/{post.id}" class="read-more">Read more →</a>
-        </li>
+        <a href="/blog/{post.slug}" class="post-card-link">
+          <div class="post-card">
+            <img src={post.image} alt={post.title} class="post-image" />
+            <div class="post-content">
+              <h2 class="post-title">{post.title}</h2>
+              <p class="post-date">{post.date}</p>
+              <p class="post-author">By {post.author}</p>
+              <p class="post-excerpt">{post.excerpt}</p>
+              <span class="read-more">Read more →</span>
+            </div>
+          </div>
+        </a>
       {/each}
-    </ul>
+    </div>
   </div>
 </div>
 
@@ -60,40 +53,55 @@
     text-align: center;
   }
 
-  .post-list {
-    list-style-type: none;
-    padding: 0;
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
   }
 
-  .post-item {
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+  .post-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .post-card {
+    background-color: var(--color-background-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .post-content {
+    padding: 1.5rem;
   }
 
   .post-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .post-date, .post-author {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
     margin-bottom: 0.5rem;
   }
 
-  .post-link {
-    color: var(--color-text-primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .post-link:hover {
-    color: var(--color-text-secondary);
-  }
-
-  .post-date {
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1rem;
-  }
-
   .post-excerpt {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
     color: var(--color-text-secondary);
@@ -103,49 +111,29 @@
     display: inline-block;
     font-weight: 600;
     color: var(--color-text-primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .read-more:hover {
-    color: var(--color-text-secondary);
   }
 
   @media (max-width: 768px) {
-    .title {
-      font-size: 2rem;
-    }
-
-    .post-title {
-      font-size: 1.5rem;
-    }
-
-    .post-excerpt {
-      font-size: 1rem;
+    .post-grid {
+      grid-template-columns: 1fr;
     }
   }
 
-  :global(.dark) .post-link {
+  :global(.dark) .post-card {
+    background-color: #2d3748;
+  }
+
+  :global(.dark) .post-title {
     color: #e5e7eb;
   }
 
-  :global(.dark) .post-link:hover {
-    color: #d1d5db;
-  }
-
-  :global(.dark) .post-date {
-    color: #9ca3af;
-  }
-
+  :global(.dark) .post-date,
+  :global(.dark) .post-author,
   :global(.dark) .post-excerpt {
-    color: #d1d5db;
+    color: #9ca3af;
   }
 
   :global(.dark) .read-more {
     color: #e5e7eb;
-  }
-
-  :global(.dark) .read-more:hover {
-    color: #d1d5db;
   }
 </style>

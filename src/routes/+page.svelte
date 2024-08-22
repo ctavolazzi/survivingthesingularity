@@ -8,6 +8,8 @@
 	import NewsletterPopup from '$lib/components/NewsletterPopup.svelte';
 	// import { newsletterSubmitted } from '$lib/stores/newsletterStore';
 
+  export let data;
+
 	import timelineItems from '$lib/data/timelineItems.json';
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
 
@@ -15,6 +17,8 @@
 
 	onMount(() => {
 		navbarHeight = document.querySelector('nav').offsetHeight;
+    console.log("Testing Supabase Connection");
+    console.log(data);
 	});
 
 	function handleBackBook() {

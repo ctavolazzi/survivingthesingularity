@@ -1,24 +1,101 @@
 <script>
   import { onMount } from 'svelte';
   import { fade, fly, scale } from 'svelte/transition';
-  import { elasticOut } from 'svelte/easing';
+  import { elasticOut, cubicOut } from 'svelte/easing';
+  import { supabase } from '$lib/supabaseClient';
 
-  export let delayMs = 1000;
+  export let delayMs = 5000;
+  export let scrollThreshold = 0.5;
 
   let isOpen = false;
   let mounted = false;
+  let email = '';
+  let marketingOptIn = false;
+  let message = '';
+  let isLoading = false;
+  let isSuccess = false;
+  let showOptIn = false;
+  let subscriberCount = 0;
 
-  onMount(() => {
+  $: isValid = email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  onMount(async () => {
     mounted = true;
-    const timer = setTimeout(() => {
-      isOpen = true;
-    }, delayMs);
+    window.addEventListener('scroll', checkScroll);
+    setTimeout(showPopup, delayMs);
 
-    return () => clearTimeout(timer);
+    // Fetch subscriber count
+    const { count, error } = await supabase
+      .from('newsletter_subscribers')
+      .select('*', { count: 'exact' });
+    
+    if (!error) {
+      subscriberCount = count;
+    }
   });
+
+  function checkScroll() {
+    const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    if (scrollPercentage > scrollThreshold) {
+      showPopup();
+    }
+  }
+
+  function showPopup() {
+    isOpen = true;
+    window.removeEventListener('scroll', checkScroll);
+  }
+
+  function validateEmail() {
+    if (isValid && !showOptIn) {
+      setTimeout(() => {
+        showOptIn = true;
+      }, 300);
+    }
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    if (isLoading || !isValid) return;
+
+    isLoading = true;
+    message = '';
+
+    try {
+      const { error } = await supabase
+        .from('newsletter_subscribers')
+        .insert([{ 
+          email: email.trim(), 
+          marketing_opt_in: marketingOptIn 
+        }]);
+
+      if (error) throw error;
+
+      isSuccess = true;
+      message = 'Thank you for subscribing!';
+      email = '';
+      marketingOptIn = false;
+      subscriberCount++;
+
+      setTimeout(() => closePopup(), 3000);
+    } catch (error) {
+      console.error('Subscription error:', error);
+      message = error.code === '23505' 
+        ? 'This email is already subscribed.' 
+        : 'Error subscribing. Please try again.';
+    } finally {
+      isLoading = false;
+    }
+  }
 
   function closePopup() {
     isOpen = false;
+    email = '';
+    marketingOptIn = false;
+    message = '';
+    isLoading = false;
+    isSuccess = false;
+    showOptIn = false;
   }
 </script>
 
@@ -28,36 +105,64 @@
          in:fly="{{ y: 100, duration: 800, easing: elasticOut }}" 
          out:scale="{{ duration: 300, start: 1, opacity: 0 }}">
       <button class="close-button" on:click={closePopup} aria-label="Close newsletter popup">×</button>
-      <div id="mc_embed_signup">
-        <form action="https://irg-listings.us19.list-manage.com/subscribe/post?u=79a060ac083c62360805246c1&amp;id=fe966f6f0e&amp;v_id=4556&amp;f_id=0003bce4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <h2 class="text-[var(--color-text-primary)]">Get Our Exclusive Newsletter</h2>
-            <p class="newsletter-description text-[var(--color-text-secondary)]">Join other forward-thinkers and receive our insights directly in your email inbox.</p>
-            <div class="mc-field-group">
-              <label for="mce-EMAIL" class="text-[var(--color-text-primary)]">Email Address <span class="asterisk">*</span></label>
-              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Your email address">
-            </div>
-            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
-              <div class="content__gdpr">
-                <label class="checkbox-container text-[var(--color-text-secondary)]" for="gdpr122232">
-                  <input type="checkbox" id="gdpr_122232" name="gdpr[122232]" class="gdpr" value="Y" required>
-                  <span class="checkmark"></span>
-                  <span class="checkbox-text">I agree to receive the newsletter via email. You can unsubscribe at any time.</span>
-                </label>
-              </div>
-            </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display: none;"></div>
-              <div class="response" id="mce-success-response" style="display: none;"></div>
-            </div>
-            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-              <input type="text" name="b_79a060ac083c62360805246c1_fe966f6f0e" tabindex="-1" value="">
-            </div>
-            <div class="clear">
-              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="SUBSCRIBE TO NEWSLETTER">
-            </div>
+      <div class="popup-content">
+        {#if isSuccess}
+          <div class="success-message" in:scale="{{ duration: 300, easing: cubicOut }}">
+            <h2>Thank You For Subscribing!</h2>
+            <p>We appreciate your interest. You'll hear from us soon!</p>
           </div>
-        </form>
+        {:else}
+          <div id="mc_embed_signup">
+            <form on:submit={handleSubmit} id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+              <div id="mc_embed_signup_scroll">
+                <h2>Get The Survival Newsletter</h2>
+                <p class="newsletter-description">Join {subscriberCount.toLocaleString()}+ forward-thinkers and receive our insights directly in your inbox.</p>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                  <div class="input-wrapper">
+                    <input 
+                      type="email" 
+                      name="EMAIL" 
+                      class="required email" 
+                      id="mce-EMAIL" 
+                      required 
+                      placeholder="Your email address" 
+                      bind:value={email}
+                      on:input={validateEmail}
+                    >
+                    {#if isValid}
+                      <span class="valid-email" in:scale="{{ duration: 200 }}">✓</span>
+                    {/if}
+                  </div>
+                </div>
+                {#if showOptIn}
+                  <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group" in:scale="{{ duration: 300, easing: cubicOut }}">
+                    <div class="content__gdpr">
+                      <label class="checkbox-container">
+                        <input type="checkbox" id="gdpr_122232" name="gdpr[122232]" value="Y" class="gdpr" bind:checked={marketingOptIn}>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">I agree to receive the newsletter via email. You can unsubscribe at any time.</span>
+                      </label>
+                    </div>
+                  </div>
+                {/if}
+                <div class="clear">
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" disabled={isLoading || !isValid}>
+                    {#if isLoading}
+                      <div class="spinner"></div>
+                    {:else}
+                      Prepare Me for the Singularity
+                    {/if}
+                  </button>
+                </div>
+                <p class="legal-text">You may opt out at any time. We will never sell your data without your consent.</p>
+              </div>
+            </form>
+          </div>
+        {/if}
+        {#if message}
+          <p class="message" in:scale="{{ duration: 300 }}">{message}</p>
+        {/if}
       </div>
     </div>
   </div>
@@ -78,16 +183,19 @@
   }
 
   .newsletter-popup {
-    background: linear-gradient(135deg, #ffffff, #f0f0f0);
-    padding: 2rem;
+    background: var(--color-bg-primary);
+    padding: 1rem 1rem; /* Reduced from 2rem to 1.5rem for top and bottom */
     border-radius: 12px 12px 0 0;
     width: 100%;
     max-width: 600px;
     position: relative;
   }
 
-  :global(.dark) .newsletter-popup {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
+  .popup-content {
+    min-height: 350px; /* Reduced from 400px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .close-button {
@@ -107,11 +215,72 @@
     transform: scale(1.1);
   }
 
+  .success-message {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .message {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--color-text-secondary);
+  }
+
+  .input-wrapper {
+    position: relative;
+  }
+
+  .valid-email {
+    color: #4CAF50;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .legal-text {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.75rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .newsletter-popup {
+      width: 100%;
+      max-width: none;
+      border-radius: 12px 12px 0 0;
+      padding: 1rem 1.5rem; /* Further reduced for mobile */
+    }
+
+    .popup-content {
+      min-height: 300px; /* Further reduced for mobile */
+    }
+  }
+
   /* Override Mailchimp styles */
   :global(#mc_embed_signup) {
     background: transparent !important;
     font-family: 'Arial', sans-serif !important;
     width: 100% !important;
+    color: var(--color-text-primary) !important;
   }
 
   :global(#mc_embed_signup form) {
@@ -144,7 +313,7 @@
     font-size: 1rem !important;
     border: 2px solid var(--color-text-secondary) !important;
     border-radius: 4px !important;
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: var(--color-bg-secondary) !important;
     color: var(--color-text-primary) !important;
   }
 
@@ -152,8 +321,8 @@
     display: flex !important;
     align-items: flex-start !important;
     position: relative !important;
-    padding-left: 28px !important;
-    margin-bottom: 0.5rem !important;
+    padding-left: 35px !important;
+    margin-bottom: 12px !important;
     cursor: pointer !important;
     font-size: 14px !important;
     user-select: none !important;
@@ -167,45 +336,38 @@
     width: 0 !important;
   }
 
-  :global(#mc_embed_signup .checkmark) {
+  :global(#mc_embed_signup .checkbox-custom) {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
-    height: 20px !important;
-    width: 20px !important;
-    background-color: #eee !important;
+    height: 25px !important;
+    width: 25px !important;
+    background-color: var(--color-bg-secondary) !important;
+    border: 1px solid var(--color-text-secondary) !important;
     border-radius: 4px !important;
   }
 
-  :global(.dark) :global(#mc_embed_signup .checkmark) {
-    background-color: #4a5568 !important;
+  :global(#mc_embed_signup .checkbox-container:hover input ~ .checkbox-custom) {
+    background-color: var(--color-bg-tertiary) !important;
   }
 
-  :global(#mc_embed_signup .checkbox-container:hover input ~ .checkmark) {
-    background-color: #ccc !important;
-  }
-
-  :global(.dark) :global(#mc_embed_signup .checkbox-container:hover input ~ .checkmark) {
-    background-color: #718096 !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-container input:checked ~ .checkmark) {
+  :global(#mc_embed_signup .checkbox-container input:checked ~ .checkbox-custom) {
     background-color: #FF4E50 !important;
   }
 
-  :global(#mc_embed_signup .checkmark:after) {
+  :global(#mc_embed_signup .checkbox-custom:after) {
     content: "" !important;
     position: absolute !important;
     display: none !important;
   }
 
-  :global(#mc_embed_signup .checkbox-container input:checked ~ .checkmark:after) {
+  :global(#mc_embed_signup .checkbox-container input:checked ~ .checkbox-custom:after) {
     display: block !important;
   }
 
-  :global(#mc_embed_signup .checkbox-container .checkmark:after) {
-    left: 6px !important;
-    top: 2px !important;
+  :global(#mc_embed_signup .checkbox-container .checkbox-custom:after) {
+    left: 9px !important;
+    top: 5px !important;
     width: 5px !important;
     height: 10px !important;
     border: solid white !important;
@@ -214,8 +376,7 @@
   }
 
   :global(#mc_embed_signup .checkbox-text) {
-    line-height: 1.3 !important;
-    font-size: 0.85rem !important;
+    margin-left: 8px !important;
   }
 
   :global(#mc_embed_signup .button) {

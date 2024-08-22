@@ -2,7 +2,7 @@ import content from './content.md?raw';
 
 export const post = {
   title: "Robot Farm Bot: The Future of Residential Agriculture",
-  date: "2024-09-15",
+  date: "2024-08-15",
   author: "Christopher Tavolazzi",
   imageUrl: "https://farm.bot/cdn/shop/files/FarmBot_Genesis_v1-3_c10ecd67-00ed-4ae1-a32e-111f11312655_2049x1365.jpg?v=1697756943", // Replace with actual image URL
   content,

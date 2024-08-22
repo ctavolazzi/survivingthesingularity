@@ -11,3 +11,7 @@ node_modules/
 .output
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Add these lines to ignore pnpm store
+.pnpm-store
+**/node_modules/.pnpm/

@@ -15,11 +15,11 @@
   }
 
   function handleJoinSkool() {
-    alert("The Skool Community is launching next Friday 8/9 - please stay tuned.");
+    window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');
   }
 
   function handleReadSample() {
-    window.open('https://docs.google.com/document/d/1plGfd2X8-TsH3aCjbSz6aJeZTpfmrHZ6zNJ2hw6ww9s/edit?usp=sharing', '_blank');
+    window.location.href = '/sample';
   }
 </script>
 

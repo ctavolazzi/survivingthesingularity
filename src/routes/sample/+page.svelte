@@ -1,7 +1,6 @@
 <script>
   function joinSkool() {
-    alert("The Skool Community is launching next Friday 8/9 - please stay tuned.");
-  }
+    window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');  }
 
   function backOnKickstarter() {
     window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');

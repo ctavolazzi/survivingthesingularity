@@ -30,8 +30,8 @@
     }
 
   function handleGetGuide() {
-      window.open('https://tavolazzi.gumroad.com/l/singularitychecklist', '_blank');
-    }
+    window.location.href = '/download';
+  }
 
   function handleReadSample() {
     window.location.href = 'https://survivingthesingularity.com/sample';  }
@@ -61,14 +61,14 @@
           The Singularity is that mind-bending point where AI surpasses human intelligence. Imagine your smartphone suddenly deciding it's smarter than you - and being right. It's when our tech takes the wheel and starts driving us into uncharted territory. Whether that's a utopia or a "rise of the machines" scenario is anyone's guess. Buckle up!
         </p>
       </AccordionItem>
-      
+
       <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">When is the Singularity expected to occur?</span>
         <p class="text-[var(--color-text-secondary)]">
           Here's the thing about the Singularity - it's not a single "boom" moment, but more like a rollercoaster that's already left the station and is picking up speed. Check out our timeline below for our best educated guess on when things will really start to feel like they're taking off. But remember, we're already on this ride. Each day, technology gets more sophisticated, cheaper, and easier to access. The pace of change is accelerating, and before you know it, we'll be in a world that makes today look like the Stone Age. So when is the Singularity? In many ways, it's already begun.
         </p>
       </AccordionItem>
-      
+
       <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What are the potential impacts of the Singularity?</span>
         <p class="text-[var(--color-text-secondary)]">
@@ -81,7 +81,7 @@
           </ul>
           Each advancement on our timeline isn't just a cool new gadget - it's a step towards a fundamentally different world. The Singularity isn't just a tech revolution - it's a redefinition of what it means to be human.
       </AccordionItem>
-      
+
       <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">How can one prepare for the Singularity?</span>
         <p class="text-[var(--color-text-secondary)]">

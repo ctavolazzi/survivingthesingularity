@@ -16,13 +16,16 @@
   let isSuccess = false;
   let showOptIn = false;
   let subscriberCount = 0;
+  let hasShown = false; // New variable to track if popup has been shown
 
   $: isValid = email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   onMount(async () => {
     mounted = true;
     window.addEventListener('scroll', checkScroll);
-    setTimeout(showPopup, delayMs);
+    setTimeout(() => {
+      if (!hasShown) showPopup();
+    }, delayMs);
 
     // Fetch subscriber count
     const { count, error } = await supabase
@@ -35,6 +38,7 @@
   });
 
   function checkScroll() {
+    if (hasShown) return; // Exit if popup has already been shown
     const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
     if (scrollPercentage > scrollThreshold) {
       showPopup();
@@ -42,7 +46,9 @@
   }
 
   function showPopup() {
+    if (hasShown) return; // Exit if popup has already been shown
     isOpen = true;
+    hasShown = true; // Mark popup as shown
     window.removeEventListener('scroll', checkScroll);
   }
 
@@ -171,36 +177,47 @@
 <style>
   .newsletter-popup-container {
     position: fixed;
-    bottom: 0;
     left: 0;
     right: 0;
-    height: auto;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     z-index: 1000;
   }
 
   .newsletter-popup {
     background: var(--color-bg-primary);
-    padding: 1rem 1rem; /* Reduced from 2rem to 1.5rem for top and bottom */
-    border-radius: 12px 12px 0 0;
+    padding: 0;
+    border-radius: 0;
     width: 100%;
     max-width: 600px;
     position: relative;
+    overflow: hidden;
+  }
+
+  .newsletter-popup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    background-color: #1a1a1a;
   }
 
   .popup-content {
-    min-height: 350px; /* Reduced from 400px */
+    min-height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    padding-top: 1.5rem;
   }
 
   .close-button {
     position: absolute;
-    top: 1rem;
+    top: 0.75rem;
     right: 1rem;
     background: none;
     border: none;
@@ -266,12 +283,12 @@
     .newsletter-popup {
       width: 100%;
       max-width: none;
-      border-radius: 12px 12px 0 0;
-      padding: 1rem 1.5rem; /* Further reduced for mobile */
+      border-radius: 0;
     }
 
     .popup-content {
-      min-height: 300px; /* Further reduced for mobile */
+      padding: 1rem;
+      padding-top: 1.5rem;
     }
   }
 
@@ -411,7 +428,7 @@
   @media (max-width: 600px) {
     .newsletter-popup {
       padding: 1.5rem;
-      border-radius: 12px 12px 0 0;
+      border-radius: 0;
       max-width: 100%;
     }
 

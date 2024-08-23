@@ -6,5 +6,6 @@ export const post = {
   author: "Christopher Tavolazzi",
   imageUrl: "https://cdn.midjourney.com/2cfb73bc-4072-40fa-aa86-8cf4f842b428/0_2.png",
   content,
-  excerpt: "Choo Choo, Motherfuckers. The Singularity Express just pulled into the station, and it's one hell of a ride."
+  excerpt: "Choo Choo, Motherfuckers. The Singularity Express just pulled into the station, and it's one hell of a ride.",
+  slug: "singularity-express"
 };

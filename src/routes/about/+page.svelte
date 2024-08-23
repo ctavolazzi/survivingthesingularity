@@ -1,14 +1,8 @@
-<!-- src/routes/about/index.svelte -->
 <script>
-  import Spacer from '$lib/components/Spacer.svelte';
-  import MailchimpSignup from '$lib/components/MailchimpSignup.svelte';
-  import { onMount } from 'svelte';
-
-  let navbarHeight = 0;
-
-  onMount(() => {
-    navbarHeight = document.querySelector('nav').offsetHeight;
-  });
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+  import FAQ from '$lib/components/FAQ.svelte';
+  import Divider from '$lib/components/Divider.svelte';
+  import StSBookImage from '$lib/images/default-blog-image.png';
 
   function handleBackBook() {
     window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
@@ -19,199 +13,232 @@
   }
 
   function handleReadSample() {
-    window.location.href = '/sample';
+    window.location.href = 'https://survivingthesingularity.com/sample';
   }
 </script>
 
-<Spacer height=".1rem"/>
-
-<div class="main-content" style="padding-top: {navbarHeight}px">
-  <div class="content-container">
-    <h1 class="title">What is this all about?</h1>
-    <p class="description">
-      Are you ready for a future where AI outpaces human intelligence, where your kids' tech-savvy isn't just about mastering the latest app, but surviving in a world that looks more like The Matrix and Blade Runner had a mutant baby with the Terminator?
-    </p>
-    <p class="description">
-      This book isn't just about understanding technology; it's about preparing you and your family for the rapid changes ahead.
-    </p>
-    <p class="description">
-      What will you do when machines can think, feel, and even outsmart us? How will you protect your family in a world where the lines between human and machine are increasingly blurred? "Surviving the Singularity" provides the insights and strategies to help you navigate the cognitive dissonance ahead as you learn to survive AND thrive in this new era.
-    </p>
-
-    <div class="button-container">
-      <button class="big-button" on:click={handleReadSample}>Read a Sample</button>
-      <button class="big-button" on:click={handleBackBook}>Back the Book</button>
-      <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
-    </div>
-
-    <div class="quote-container">
-      <p class="quote dark:text-gray-200">"The future is already here — it's just not very evenly distributed."</p>
-      <p class="attribution dark:text-gray-400">- William Gibson</p>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Our Mission</h2>
-      <p class="description">
-        Our mission is to help you understand the Singularity and its impact on our lives. Join our community of forward-thinkers, researchers, and innovators to navigate the challenges and opportunities of this rapidly changing world.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Stay Updated</h2>
-      <p class="description">
-        Subscribe to our newsletter for regular updates, insights, and exclusive content about the technological Singularity.
-      </p>
-      <MailchimpSignup />
-    </div>
-
-    <p class="description">
-      "Surviving the Singularity" is sponsored by AIECO, a humanity-focused organization.
-    </p>
-
-    <div class="button-container">
-      <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
-    </div>
+<div class="main-content">
+  <div class="hero-section">
+    <h1 class="title">Your Guide to Thriving Through the AI Revolution</h1>
+    <Divider />
+    <p class="subtitle">Forge your place in the rapidly changing future.</p>
   </div>
+
+  <div class="content-container">
+    <h2 class="section-title">What is this all about?</h2>
+    <p class="description">
+      "Surviving the Singularity" isn't just another tech bro book. It's your family's survival guide for the AI revolution. We're preparing you for a future where:
+    </p>
+    <ul class="feature-list">
+      <li>AI overtakes human intelligence</li>
+      <li>Your kids' tech-savvy influences their survival</li>
+      <li>The world looks more like science fiction than reality</li>
+    </ul>
+  </div>
+
+  <div class="cta-container">
+    <button class="cta-button primary" on:click={handleBackBook}>BACK THE BOOK</button>
+    <button class="cta-button secondary" on:click={handleReadSample}>READ A SAMPLE</button>
+  </div>
+
+  <Divider />
+
+  <img src={StSBookImage} alt="Surviving the Singularity Book" class="StS-book-image" />
+
+  <div class="quote-container">
+    <p class="quote">"The future is already here — it's just not very evenly distributed."</p>
+    <p class="attribution">- William Gibson</p>
+  </div>
+  
+
+  <FAQ />
+
+  <Divider />
+
+  <div class="content-container">
+    <h2 class="section-title">Join Our Community</h2>
+    <p class="description">
+      Connect with forward-thinkers, researchers, and innovators. Navigate the challenges and opportunities of our rapidly changing world together.
+    </p>
+    <button class="skool-button" on:click={handleJoinSkool}>JOIN SKOOL COMMUNITY</button>
+  </div>
+
+  <Divider />
+
+  <NewsletterSignup />
 </div>
 
 <style>
   .main-content {
-    transition: padding-top 0.3s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
 
-  .content-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    width: 100%;
+  .hero-section {
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   .title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
     color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+  }
+
+  .quote-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .quote {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .attribution {
+    font-weight: bold;
+    color: var(--color-text-secondary);
   }
 
   .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
     color: var(--color-text-primary);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #FF9933; /* Lighter orange */
+    padding-bottom: 0.5rem;
   }
 
   .description {
     font-size: 1.1rem;
     line-height: 1.6;
+    color: var(--color-text-secondary);
     margin-bottom: 1rem;
-    color: var(--color-text-secondary);
   }
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
+  .feature-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
   }
 
-  .big-button {
-    flex: 1;
-    font-weight: 600;
-    font-size: 1.1rem;
-    background-color: #ffffff;
-    border: 1px solid #2c3e50;
-    border-radius: 6px;
-    color: #2c3e50;
-    padding: 0.75rem 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    min-width: 200px;
-  }
-
-  .big-button:hover {
-    background-color: #f8f9fa;
-    border-color: #34495e;
-    color: #34495e;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-  }
-
-  .quote-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 4rem 0;
-    padding: 1rem;
+  .feature-list li {
+    padding-left: 1.5rem;
     position: relative;
+    margin-bottom: 0.5rem;
   }
 
-  .quote {
-    font-style: italic;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0;
-    color: var(--color-text-primary);
-    line-height: 1.4;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .attribution {
+  .feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #FF9933; /* Lighter orange */
     font-weight: bold;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: var(--color-text-secondary);
   }
 
-  .section {
-    margin-top: 3rem;
+  .cta-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 2rem 0;
   }
 
-  @media (max-width: 768px) {
-    .title {
-      font-size: 2rem;
-    }
+  .cta-button {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-    .section-title {
-      font-size: 1.5rem;
-    }
+  .cta-button.primary {
+    background-color: #FF9933;
+    color: white;
+    border: none;
+  }
 
-    .description {
-      font-size: 1rem;
-    }
+  .cta-button.secondary {
+    background-color: white;
+    color: #FF9933;
+    border: 2px solid #FF9933;
+  }
 
-    .quote {
-      font-size: 1.5rem;
-    }
+  .cta-button:hover {
+    opacity: 0.9;
+  }
 
-    .attribution {
-      font-size: 1rem;
-    }
-
-    .big-button {
-      width: 100%;
+  @media (max-width: 350px) {
+    .cta-button {
+      font-size: 0.8rem;
+      padding: 0.5rem 0.25rem;
     }
   }
 
-  :global(.dark) .big-button {
+  :global(.dark) .quote-container {
     background-color: #2c3e50;
-    color: #ffffff;
-    border-color: #34495e;
   }
 
-  :global(.dark) .big-button:hover {
+  :global(.dark) .cta-button.primary {
+    background: linear-gradient(135deg, #FF9933, #FF6600); /* Orange gradient */
+    color: #ffffff;
+  }
+
+  :global(.dark) .cta-button.secondary {
+    background-color: #2c3e50;
+    color: #FF9933; /* Lighter orange */
+    border-color: #FF9933; /* Lighter orange */
+  }
+
+  :global(.dark) .cta-button.primary:hover {
+    background: linear-gradient(135deg, #FFB366, #FF8533); /* Lighter orange gradient on hover */
+  }
+
+  :global(.dark) .cta-button.secondary:hover {
     background-color: #34495e;
-    border-color: #4a6785;
-    color: #ffffff;
+    border-color: #FFB366; /* Lighter orange on hover */
+    color: #FFB366; /* Lighter orange on hover */
   }
 
-  :global(.dark) .quote {
-    color: #e5e7eb;
+  .skool-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    color: #FF9933;
+    border: 2px solid #FF9933;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 
-  :global(.dark) .attribution {
-    color: #9ca3af;
+  .skool-button:hover {
+    background-color: #FFF5E6;
+  }
+
+  .StS-book-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 </style>

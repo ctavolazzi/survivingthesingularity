@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { fade, fly, scale } from 'svelte/transition';
   import { elasticOut, cubicOut } from 'svelte/easing';
-  import { supabase } from '$lib/supabaseClient';
+  import { supabase } from '$lib/utils/supabaseClient';
 
   export let delayMs = 5000;
   export let scrollThreshold = 0.5;

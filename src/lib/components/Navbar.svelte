@@ -2,12 +2,15 @@
   import { Navbar, NavBrand, NavUl, NavLi, DarkMode } from 'flowbite-svelte';
   import { darkMode } from '$lib/stores/darkMode';
   import { onMount } from 'svelte';
+  import { supabase } from '$lib/utils/supabaseClient';
+  import { goto } from '$app/navigation';
 
   let isFloating = false;
   let navbarHeight = 0;
   let navbar;
   let menuElement;
   let isMenuOpen = false;
+  let session = null;
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -34,7 +37,20 @@
     localStorage.setItem('darkMode', $darkMode);
   }
 
-  onMount(() => {
+  function handleLogin() {
+    goto('/login');
+    closeMenu();
+  }
+
+  async function handleLogout() {
+    const { error } = await supabase.auth.signOut();
+    if (error) console.error('Error logging out:', error);
+    session = null;
+    closeMenu();
+    goto('/');
+  }
+
+  onMount(async () => {
     const handleScroll = () => {
       isFloating = window.scrollY > 0;
     };
@@ -42,12 +58,20 @@
     window.addEventListener('scroll', handleScroll);
     navbarHeight = navbar.offsetHeight;
 
-    // Add click event listener to the document
     document.addEventListener('click', (event) => {
       const navbarElement = document.querySelector('.navbar-container');
       if (!navbarElement.contains(event.target) && isMenuOpen) {
         closeMenu();
       }
+    });
+
+    // Get initial session
+    const { data } = await supabase.auth.getSession();
+    session = data.session;
+
+    // Listen for auth changes
+    supabase.auth.onAuthStateChange((_, _session) => {
+      session = _session;
     });
 
     return () => {
@@ -83,14 +107,17 @@
       <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); window.location.href = '/download'; }}>Download</NavLi>
       <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); handleBackBook(); }}>Back the Book</NavLi>
       <NavLi href="/" class="nav-item" on:click={() => { closeMenu(); handleJoinSkool(); }}>Join the Skool Community</NavLi>
+      {#if session}
+        <NavLi href="/" class="nav-item" on:click={handleLogout}>Logout</NavLi>
+      {:else}
+        <NavLi href="/login" class="nav-item" on:click={handleLogin}>Login</NavLi>
+      {/if}
     </NavUl>
   </Navbar>
 </div>
 
 <div class="mobile-menu md:hidden w-full bg-white dark:bg-gray-800 fixed top-[navbarHeight]px left-0 right-0 z-40" style="display: none;">
   <ul class="flex flex-col items-end p-6">
-    <li class="w-full text-right py-3"><a href="/" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Home</a></li>
-
     <li class="w-full text-right py-3"><a href="/" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Home</a></li>
     <li class="w-full text-right py-3"><a href="/about" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>About</a></li>
     <li class="w-full text-right py-3"><a href="/contact" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg" on:click={closeMenu}>Contact</a></li>
@@ -111,6 +138,19 @@
         Join the Skool Community
       </button>
     </li>
+    {#if session}
+      <li class="w-full text-right py-3">
+        <button class="mobile-menu-button" on:click={handleLogout}>
+          Logout
+        </button>
+      </li>
+    {:else}
+      <li class="w-full text-right py-3">
+        <button class="mobile-menu-button" on:click={handleLogin}>
+          Login
+        </button>
+      </li>
+    {/if}
   </ul>
 </div>
 

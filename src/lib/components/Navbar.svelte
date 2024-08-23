@@ -5,6 +5,8 @@
   import { supabase } from '$lib/utils/supabaseClient';
   import { goto } from '$app/navigation';
 
+  console.log('Navbar.svelte');
+
   let isFloating = false;
   let navbarHeight = 0;
   let navbar;

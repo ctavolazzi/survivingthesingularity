@@ -16,16 +16,13 @@
   let isSuccess = false;
   let showOptIn = false;
   let subscriberCount = 0;
-  let hasShown = false; // New variable to track if popup has been shown
 
   $: isValid = email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   onMount(async () => {
     mounted = true;
     window.addEventListener('scroll', checkScroll);
-    setTimeout(() => {
-      if (!hasShown) showPopup();
-    }, delayMs);
+    setTimeout(showPopup, delayMs);
 
     // Fetch subscriber count
     const { count, error } = await supabase
@@ -38,7 +35,6 @@
   });
 
   function checkScroll() {
-    if (hasShown) return; // Exit if popup has already been shown
     const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
     if (scrollPercentage > scrollThreshold) {
       showPopup();
@@ -46,9 +42,7 @@
   }
 
   function showPopup() {
-    if (hasShown) return; // Exit if popup has already been shown
     isOpen = true;
-    hasShown = true; // Mark popup as shown
     window.removeEventListener('scroll', checkScroll);
   }
 
@@ -187,32 +181,18 @@
   }
 
   .newsletter-popup {
-    background: var(--color-bg-primary);
-    padding: 0;
-    border-radius: 0;
+    background: white;
     width: 100%;
     max-width: 600px;
     position: relative;
-    overflow: hidden;
-  }
-
-  .newsletter-popup::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0.5rem;
-    background-color: #1a1a1a;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid black;
   }
 
   .popup-content {
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem;
-    padding-top: 1.5rem;
+    background-color: white;
+    margin: 0;
+    padding: 1.5rem;
   }
 
   .close-button {
@@ -223,13 +203,7 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    padding: 0.5rem;
-    color: var(--color-text-primary);
-    transition: transform 0.2s ease;
-  }
-
-  .close-button:hover {
-    transform: scale(1.1);
+    color: #333;
   }
 
   .success-message {
@@ -284,11 +258,36 @@
       width: 100%;
       max-width: none;
       border-radius: 0;
+      margin: 0;
+      padding: 0;
+      border-top: 3px solid black;
     }
 
     .popup-content {
       padding: 1rem;
-      padding-top: 1.5rem;
+    }
+
+    :global(#mc_embed_signup h2) {
+      font-size: 1.3rem !important;
+    }
+
+    :global(#mc_embed_signup .newsletter-description) {
+      font-size: 0.8rem !important;
+    }
+
+    :global(#mc_embed_signup .mc-field-group input) {
+      padding: 0.6rem 0.8rem !important;
+      font-size: 0.9rem !important;
+    }
+
+    :global(#mc_embed_signup .button) {
+      padding: 0.8rem !important;
+      font-size: 0.8rem !important;
+      white-space: nowrap;
+    }
+
+    :global(#mc_embed_signup .checkbox-text) {
+      font-size: 0.7rem !important;
     }
   }
 

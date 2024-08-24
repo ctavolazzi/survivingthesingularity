@@ -130,10 +130,11 @@
   }
 
   .countdown-label {
-    font-size: 2vw;
+    font-size: 1.2vw; /* Further reduced from 1.5vw */
     text-transform: uppercase;
     text-align: center;
     color: var(--color-text-secondary);
+    font-weight: bold; /* Added bold font weight */
   }
 
   .countdown-value.placeholder {
@@ -148,7 +149,7 @@
     }
 
     .countdown-label {
-      font-size: 3vw;
+      font-size: 2vw; /* Further reduced from 2.5vw */
     }
   }
 
@@ -159,7 +160,7 @@
     }
 
     .countdown-label {
-      font-size: 4vw;
+      font-size: 2.8vw; /* Further reduced from 3.5vw */
     }
   }
 </style>

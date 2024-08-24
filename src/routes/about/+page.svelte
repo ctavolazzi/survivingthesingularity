@@ -2,6 +2,7 @@
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import FAQ from '$lib/components/FAQ.svelte';
   import StSBookImage from '$lib/images/default-blog-image.png';
+  import StSChessImage from '$lib/images/sts-chess.jpg';
   import SkoolGroup from '$lib/components/SkoolGroup.svelte';
   import Countdown from '$lib/components/Countdown.svelte';
   
@@ -43,7 +44,9 @@
     <p>A book, a community, and a plan to survive the Singularity</p>
     <p>Author Chris Tavolazzi has been hard at work on building a resource to help you process the arrival of the future.</p>
     <div class="kit-item">
-      <img src={StSBookImage} alt="Surviving the Singularity Book" class="StS-book-image" />
+      <div class="kit-image">
+        <img src={StSBookImage} alt="Surviving the Singularity Book" class="StS-book-image" />
+      </div>
       <div class="kit-info">
         <p class="osm">The "Oh Sh*t" Manual</p>
         <p>Our book is for when Google can't help you navigate the AI apocalypse</p>
@@ -100,9 +103,14 @@
   </div>
 
   <div class="final-cta-section">
-    <h2 class="section-title">Ready to Survive the Singularity?</h2>
-    <p class="description">Join the Skool community to get access to our book, resources, and a community of like-minded individuals.</p>
-    <button class="skool-button" on:click={handleJoinSkool}>JOIN THE MADNESS</button>
+    <div class="final-cta-content">
+      <h2 class="section-title">Ready to Survive the Singularity?</h2>
+      <div class="final-cta-image">
+        <img src={StSChessImage} alt="Surviving the Singularity Chess" class="sts-chess-image" />
+      </div>
+      <p class="description">Join the other badass people on Skool to get access to our book, so many other resources, and a community of like-minded individuals.</p>
+      <button class="skool-button" on:click={handleJoinSkool}>JOIN THE MADNESS</button>
+    </div>
   </div>
 </div>
 
@@ -119,13 +127,14 @@
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Reduced from 3rem */
     color: var(--color-text-primary);
     margin-bottom: 0.5rem;
+    font-weight: bold;
   }
 
   .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduced from 1.5rem */
     color: var(--color-text-secondary);
     font-style: italic;
   }
@@ -152,15 +161,16 @@
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
     color: var(--color-text-primary);
     margin-bottom: 1rem;
     border-bottom: 2px solid #FF9933; /* Lighter orange */
     padding-bottom: 0.5rem;
+    font-weight: bold;
   }
 
   .description {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Slightly reduced from 1.1rem */
     line-height: 1.6;
     color: var(--color-text-secondary);
     margin-bottom: 1rem;
@@ -330,11 +340,17 @@
   .kit-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .kit-image {
+    flex: 1;
+    max-width: 50%;
   }
 
   .kit-info {
-    margin-left: 1rem;
+    flex: 1;
   }
 
   .surfer-section {
@@ -372,8 +388,26 @@
     padding: 2rem;
     border-radius: 8px;
     margin-top: 2rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .final-cta-content {
+    flex: 1;
+  }
+
+  .final-cta-image {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .sts-chess-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .pulse-animation {
@@ -401,6 +435,7 @@
     font-size: 1.8rem;
     color: var(--color-text-primary);
     margin-bottom: 1.5rem;
+    font-weight: bold;
   }
 
   .testimonial-grid {
@@ -453,5 +488,111 @@
 
   .center-text {
     text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .main-content {
+      padding: 1rem 0.5rem;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+    }
+
+    .final-cta-content .description {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .kit-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .kit-image {
+      max-width: 80%;
+    }
+
+    .kit-info {
+      width: 100%;
+    }
+
+    .StS-book-image {
+      max-width: 80%;
+    }
+
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-button,
+    .skool-button {
+      width: 100%;
+      max-width: 300px;
+      margin: 0.5rem auto;
+    }
+
+    .cta-button,
+    .skool-button {
+      font-size: 0.9rem;
+      padding: 0.6rem 0.8rem;
+    }
+
+    .testimonial {
+      padding: 1rem;
+    }
+
+    .countdown-section {
+      padding: 1rem;
+    }
+
+    .countdown-header {
+      font-size: 1.2rem;
+    }
+
+    .countdown-cta {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .kit-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .kit-image {
+      max-width: 80%;
+    }
+
+    .kit-info {
+      width: 100%;
+    }
+
+    .final-cta-section {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .final-cta-image {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
   }
 </style>

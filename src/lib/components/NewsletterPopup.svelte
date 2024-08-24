@@ -181,7 +181,8 @@
   }
 
   .newsletter-popup {
-    background: white;
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
     width: 100%;
     max-width: 600px;
     position: relative;
@@ -190,7 +191,7 @@
   }
 
   .popup-content {
-    background-color: white;
+    background-color: var(--color-bg-primary);
     margin: 0;
     padding: 1.5rem;
   }
@@ -203,7 +204,7 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #333;
+    color: var(--color-text-primary);
   }
 
   .success-message {
@@ -222,7 +223,7 @@
   }
 
   .valid-email {
-    color: #4CAF50;
+    color: var(--color-success);
     position: absolute;
     right: 1rem;
     top: 50%;
@@ -238,8 +239,8 @@
   }
 
   .spinner {
-    border: 2px solid #f3f3f3;
-    border-top: 2px solid #3498db;
+    border: 2px solid var(--color-bg-secondary);
+    border-top: 2px solid var(--color-primary);
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -327,7 +328,7 @@
     box-sizing: border-box !important;
     padding: 0.8rem 1rem !important;
     font-size: 1rem !important;
-    border: 2px solid var(--color-text-secondary) !important;
+    border: 2px solid var(--color-border) !important;
     border-radius: 4px !important;
     background-color: var(--color-bg-secondary) !important;
     color: var(--color-text-primary) !important;
@@ -359,16 +360,16 @@
     height: 25px !important;
     width: 25px !important;
     background-color: var(--color-bg-secondary) !important;
-    border: 1px solid var(--color-text-secondary) !important;
+    border: 1px solid var(--color-border) !important;
     border-radius: 4px !important;
   }
 
   :global(#mc_embed_signup .checkbox-container:hover input ~ .checkbox-custom) {
-    background-color: var(--color-bg-tertiary) !important;
+    background-color: var(--color-bg-hover) !important;
   }
 
   :global(#mc_embed_signup .checkbox-container input:checked ~ .checkbox-custom) {
-    background-color: #FF4E50 !important;
+    background-color: var(--color-primary) !important;
   }
 
   :global(#mc_embed_signup .checkbox-custom:after) {
@@ -396,8 +397,8 @@
   }
 
   :global(#mc_embed_signup .button) {
-    background: linear-gradient(45deg, #FF4E50, #F9D423) !important;
-    color: white !important;
+    background: linear-gradient(135deg, #ff8f00, #ff6b00) !important;
+    color: #ffffff !important;
     border: none !important;
     padding: 1rem !important;
     font-size: 0.9rem !important;
@@ -414,14 +415,15 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    box-shadow: 0 2px 10px rgba(255, 78, 80, 0.2) !important;
+    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.3) !important;
     text-align: center !important;
     line-height: 1 !important;
   }
 
   :global(#mc_embed_signup .button:hover) {
     transform: translateY(-2px) !important;
-    box-shadow: 0 4px 15px rgba(255, 78, 80, 0.3) !important;
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.5) !important;
+    background: linear-gradient(135deg, #ffa000, #ff7900) !important;
   }
 
   @media (max-width: 600px) {

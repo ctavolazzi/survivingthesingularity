@@ -8,7 +8,6 @@
   export let buttonText = "SECURE YOUR SPOT NOW";
   export let imageSrc = skoolClassImage;
   export let imageAlt = "Community members";
-  export let handleSkool = () => {};
 
   export let benefits = [
     "Exclusive AI Innovators Network",
@@ -18,6 +17,10 @@
     "Secret Content Available Nowhere Else"
   ];
   export let limitedOffer = "100 spots at current price. Lock in your lifetime membership now!";
+
+  function handleSkool() {
+    window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');
+  }
 </script>
 
 <div class="skool-group">

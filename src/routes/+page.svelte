@@ -71,7 +71,7 @@
   <FAQ />
   <div class="stylish-divider"></div>
 
-  <div class="button-container orange-border-buttons">
+  <div class="button-container orange-border">
     <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
     <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
@@ -246,9 +246,5 @@
     .orange-border {
       padding: 0.5rem;
     }
-  }
-
-  .orange-border-buttons .big-button {
-    box-shadow: 0 0 0 2px orange;
   }
 </style>

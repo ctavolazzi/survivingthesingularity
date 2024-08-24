@@ -8,7 +8,7 @@
   export let buttonText = "SECURE YOUR SPOT NOW";
   export let imageSrc = skoolClassImage;
   export let imageAlt = "Community members";
-  export let onButtonClick = () => {};
+  export let handleSkool = () => {};
 
   export let benefits = [
     "Exclusive AI Innovators Network",
@@ -21,13 +21,13 @@
 </script>
 
 <div class="skool-group">
-  <div class="title-container">
+  <div class="title-container" on:click={handleSkool} role="button" tabindex="0">
     <h2 class="title">{title}</h2>
     <p class="subtitle">{subtitle}</p>
   </div>
   <div class="content">
     <img src={imageSrc} alt={imageAlt} />
-    <p class="skool-benefit">{skoolBenefit}</p>
+    <p class="skool-benefit" on:click={handleSkool} role="button" tabindex="0">{skoolBenefit}</p>
     <p class="tagline">Your Gateway to AI Mastery</p>
     <p>{description}</p>
     <ul class="benefits">
@@ -35,8 +35,8 @@
         <li>{benefit}</li>
       {/each}
     </ul>
-    <p class="limited-offer">{limitedOffer}</p>
-    <button on:click={onButtonClick}>{buttonText}</button>
+    <p class="limited-offer" on:click={handleSkool} role="button" tabindex="0">{limitedOffer}</p>
+    <button on:click={handleSkool}>{buttonText}</button>
   </div>
 </div>
 
@@ -262,5 +262,24 @@
       font-size: 1rem;
       padding: 0.75rem 1.5rem;
     }
+  }
+
+  .title-container,
+  .skool-benefit,
+  .limited-offer {
+    cursor: pointer;
+  }
+
+  .title-container:hover,
+  .skool-benefit:hover,
+  .limited-offer:hover {
+    opacity: 0.8;
+  }
+
+  .title-container:focus,
+  .skool-benefit:focus,
+  .limited-offer:focus {
+    outline: 2px solid #ff7708;
+    outline-offset: 2px;
   }
 </style>

@@ -10,6 +10,7 @@
   import { onMount } from 'svelte';
   import MainPageBlurb from '$lib/components/MainPageBlurb.svelte';
   import SkoolGroup from '$lib/components/SkoolGroup.svelte'; // Added this import
+  import StSBook from '$lib/images/default-blog-image.png';
 
 	export let data;
 
@@ -49,11 +50,15 @@
     <p class="attribution dark:text-gray-400">- Harper Reed</p>
   </div>
   
+  
   <div class="button-container">
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
     <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
     <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
   </div>
+  <div class="book-container">
+    <img src={StSBook} alt="Surviving the Singularity Book" />
+  </div>  
 
   <MainPageBlurb />
 
@@ -247,5 +252,20 @@
     .orange-border {
       padding: 0.5rem;
     }
+  }
+
+  .book-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 80%;
+  }
+
+  .book-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
   }
 </style>

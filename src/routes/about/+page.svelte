@@ -117,7 +117,7 @@
 <style>
   .main-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem 1rem;
   }
 

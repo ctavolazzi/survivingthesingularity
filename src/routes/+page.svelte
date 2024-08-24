@@ -57,19 +57,20 @@
 
   <MainPageBlurb />
 
-  <div class="stylish-divider"></div>
-
-  <LatestNews {post} />
-
-  <div class="stylish-divider"></div>
-
+  
   <div class="content-container">
     <Timeline items={timelineItems.timelineItems} />
   </div>
-
+  
   <div class="stylish-divider"></div>
   <FAQ />
   <div class="stylish-divider"></div>
+  <LatestNews {post} />
+
+  <div class="quote-container">
+    <p class="quote">The past is over, the present is fleeting - we live in the future.</p>
+    <p class="attribution">- Ray Kurzweil</p>
+  </div>
 
   <div class="button-container orange-border">
     <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>

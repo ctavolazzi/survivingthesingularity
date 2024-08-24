@@ -3,13 +3,15 @@
 	import Timeline from '$lib/components/Timeline.svelte';
 	import Countdown from '$lib/components/Countdown.svelte';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-	import { onMount } from 'svelte';
 	import NewsletterPopup from '$lib/components/NewsletterPopup.svelte';
-	import { post } from '$lib/data/blog-posts/farm-bot-deep-dive/index.js';
+	import { post } from '$lib/data/blog-posts/singularity-express/index.js';
   import FAQ from '$lib/components/FAQ.svelte';
   import LatestNews from '$lib/components/LatestNews.svelte';
+  import { onMount } from 'svelte';
+  import MainPageBlurb from '$lib/components/MainPageBlurb.svelte';
+  import SkoolGroup from '$lib/components/SkoolGroup.svelte'; // Added this import
 
-  export let data;
+	export let data;
 
 	import timelineItems from '$lib/data/timelineItems.json';
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
@@ -50,8 +52,10 @@
   <div class="button-container">
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
     <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
-    <button class="big-button" on:click={handleReadSample}>Read a Sample</button>
+    <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
   </div>
+
+  <MainPageBlurb />
 
   <div class="stylish-divider"></div>
 
@@ -67,14 +71,18 @@
   <FAQ />
   <div class="stylish-divider"></div>
 
-  <div class="button-container">
+  <div class="button-container orange-border-buttons">
     <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
-    <button class="big-button" on:click={handleReadSample}>Read a Sample</button>
+    <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
   </div>
 
   <div class="stylish-divider"></div>
   <NewsletterSignup />
+
+  <div class="stylish-divider"></div>
+
+  <SkoolGroup /> <!-- Added this component -->
 
   <Spacer height="1rem"/>
 
@@ -226,5 +234,21 @@
 
   :global(.dark) .stylish-divider {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  }
+
+  .orange-border {
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .orange-border {
+      padding: 0.5rem;
+    }
+  }
+
+  .orange-border-buttons .big-button {
+    box-shadow: 0 0 0 2px orange;
   }
 </style>

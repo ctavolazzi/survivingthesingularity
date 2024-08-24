@@ -1,11 +1,25 @@
 <script>
   import { posts } from '$lib/data/blog-posts/blogPosts.js';
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+  import SkoolGroup from '$lib/components/SkoolGroup.svelte';
+
+  function handleJoinSkool() {
+    // Handle join action (you can implement this later)
+  }
 </script>
 
 <div class="main-content">
   <div class="content-container">
-    <h1 class="title">Blog Posts</h1>
+    <h1 class="title">Insights for the AI Age</h1>
 
+    <div class="blog-intro">
+      <p><strong>Welcome to the Surviving the Singularity blog</strong>, curated by Christopher Tavolazzi, author and AI expert. Dive into infrequent but profound explorations of AI, technology, and our rapidly evolving world.</p>
+      <p>🚀 <em>Prepare for the future. Gain insights. Stay ahead of the curve.</em></p>
+    </div>
+
+    <NewsletterSignup />
+
+    <h2 id="latest-posts" class="section-title">Latest Posts</h2>
     <div class="post-grid">
       {#each posts as post}
         <a href="/blog/{post.slug}" class="post-card-link">
@@ -24,6 +38,10 @@
         </a>
       {/each}
     </div>
+
+    <div class="skool-group-container">
+      <SkoolGroup onButtonClick={handleJoinSkool} />
+    </div>
   </div>
 </div>
 
@@ -40,12 +58,50 @@
   }
 
   .title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
     color: var(--color-text-primary);
     text-align: center;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-weight: 800;
+    letter-spacing: -1px;
+  }
+
+  .blog-intro {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--color-background-secondary);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .blog-intro p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin: 3rem 0 2rem;
+    text-align: center;
+    color: var(--color-text-primary);
   }
 
   .post-grid {
@@ -149,5 +205,11 @@
 
   :global(.dark) .read-more {
     color: #e5e7eb;
+  }
+
+  .skool-group-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
   }
 </style>

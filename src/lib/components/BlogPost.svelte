@@ -38,6 +38,7 @@
   
     .blog-post-description {
       font-size: 1rem;
+      font-weight: bold;
       color: var(--color-text-secondary);
       margin: 0.5rem 0 1rem;
     }

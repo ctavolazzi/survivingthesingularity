@@ -33,7 +33,7 @@
       background-color: #ffffff;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
+      padding: .0rem 1rem 0rem 1rem;
       margin-top: 1rem;
       border: 1px solid #e5e7eb;
     }

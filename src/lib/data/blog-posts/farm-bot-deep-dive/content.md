@@ -238,7 +238,7 @@ Here's where FarmBot's AI really flexes its silicon muscles:
 
 So there you have it, folks. From a box of parts to a thriving, AI-managed garden, FarmBot transforms your backyard into a high-tech agricultural wonderland. It's not just about growing vegetables; it's about cultivating a new relationship with our food and the technology that can help us produce it more sustainably.
 
-In our next section, we'll dive deeper into the AI and machine learning capabilities that make FarmBot not just a tool, but a constantly evolving gardening partner. Get ready to see how artificial intelligence is giving Mother Nature a run for her money!
+## "But what about the money?"
 
 ![FarmBot with an audience](https://farm.bot/cdn/shop/files/high_res_08af2057-bc7e-45da-be06-09043fca07fd_960x638.jpg?v=1697758848)
 
@@ -372,6 +372,10 @@ The decision between the two models should be based on available space, househol
 
 Remember, the true value of FarmBot extends beyond mere financial calculations, offering a unique blend of technology, sustainability, and personal connection to food production.
 
-[1] farm.bot/pages/yield
-[2] USDA Economic Information Bulletin 71
-[3] eenews.net
+## References
+
+[1] FarmBot. (n.d.). Yield. Retrieved from https://farm.bot/pages/yield
+
+[2] Stewart, H., & Hyman, J. (2019). Fruit and Vegetable Prices. USDA Economic Research Service, Economic Information Bulletin 71.
+
+[3] Lavelle, M. (2023, June 5). Social cost of carbon climbs to $190 per ton in Biden admin analysis. E&E News. Retrieved from https://www.eenews.net/articles/social-cost-of-carbon-climbs-to-190-per-ton-in-biden-admin-analysis/

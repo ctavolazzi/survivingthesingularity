@@ -26,8 +26,6 @@
       </ul>
       <p>Once you submit the form, we will get back to you as soon as possible.</p>
     </div>
-
-    <button on:click={handleBackBook}>Back the Book on Kickstarter</button>
   </div>
 </div>
 

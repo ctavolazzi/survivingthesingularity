@@ -48,7 +48,7 @@
   <meta name="description" content="Download your free guide on processing AI anxiety and confusion. Join 10,000+ readers preparing for the future of technology.">
 </svelte:head>
 
-<main class="container mx-auto px-4 py-8 max-w-3xl">
+<main class="container mx-auto px-4 py-8 max-w-3xl dark:bg-gray-800 dark:text-gray-200">
   <header in:fade="{{ duration: 1000 }}">
     <h1 class="text-4xl font-bold mb-4 text-center">Survive and Thrive in the AI Revolution</h1>
     <h2 class="text-2xl mb-8 text-center">The Ultimate Workbook for Processing AI Anxiety and Confusion</h2>
@@ -70,8 +70,8 @@
   <Divider />
 
   <section class="my-12">
-    <h3 class="text-2xl font-bold mb-4">Preview: Surviving the Singularity Guide</h3>
-    <div class="content bg-gray-100 p-6 rounded-lg">
+    <h3 class="text-2xl font-bold mb-4 dark:text-gray-200">Preview: Surviving the Singularity Guide</h3>
+    <div class="content bg-gray-100 dark:bg-gray-700 p-6 rounded-lg">
       {@html parsedContent}
     </div>
   </section>
@@ -84,7 +84,7 @@
     <Countdown targetDate={targetDate} />
     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
       <button on:click={joinSkool} class="action-button">
-        Join Skool Community (50% OFF)
+        Join Skool Community (Lock in your lifetime discount)
       </button>
       <button on:click={backOnKickstarter} class="action-button">
         Back on Kickstarter (Early Bird)
@@ -103,10 +103,10 @@
 
 {#if showPopup}
   <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" in:fade>
-    <div class="bg-white p-8 rounded-lg max-w-md relative" in:fly="{{ y: 200, duration: 500 }}">
+    <div class="bg-white dark:bg-gray-800 p-8 rounded-lg max-w-md relative" in:fly="{{ y: 200, duration: 500 }}">
       <button 
         on:click={closePopup} 
-        class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+        class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
         aria-label="Close popup"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,12 +114,12 @@
         </svg>
       </button>
       <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" class="w-full mb-4 rounded-lg shadow-md">
-      <h3 class="text-2xl font-bold mb-4">Don't miss out!</h3>
-      <p class="mb-4">Get your free guide to surviving the AI revolution now.</p>
+      <h3 class="text-2xl font-bold mb-4 dark:text-gray-200">Don't miss out!</h3>
+      <p class="mb-4 dark:text-gray-300">Get your free guide to surviving the AI revolution now.</p>
       <button on:click={navigateToDownload} class="cta-button mb-4 w-full">
         Get Free Guide
       </button>
-      <button on:click={closePopup} class="text-sm text-gray-500 w-full">No thanks, I'll pass</button>
+      <button on:click={closePopup} class="text-sm text-gray-500 dark:text-gray-400 w-full">No thanks, I'll pass</button>
     </div>
   </div>
 {/if}
@@ -210,6 +210,18 @@
     border-bottom-color: #FF9933;
   }
 
+  :global(.dark) .content :global(p) {
+    color: #e2e8f0;
+  }
+
+  :global(.dark) .content-warning {
+    background-color: rgba(255, 153, 51, 0.2);
+  }
+
+  :global(.dark) .content-warning p {
+    color: #b0b0b0;
+  }
+
   .content-warning {
     border-left: 4px solid #FF9933;
     padding: 0.5rem 1rem;
@@ -221,14 +233,6 @@
     margin: 0;
     font-size: 0.9rem;
     color: #666;
-  }
-
-  :global(.dark) .content-warning {
-    background-color: rgba(255, 153, 51, 0.2);
-  }
-
-  :global(.dark) .content-warning p {
-    color: #b0b0b0;
   }
 
   .StS-book-image {
@@ -277,5 +281,13 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  :global(.dark) .cta-button {
+    color: #1a202c;
+  }
+
+  :global(.dark) .cta-button:hover {
+    background-color: #FF8000;
   }
 </style>

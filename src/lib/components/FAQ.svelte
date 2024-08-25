@@ -6,43 +6,55 @@
     <div class="faq-header">Frequently Asked Questions</div>
     <Accordion class="content-box">
       <AccordionItem>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What is this website about?</span>
+        <p class="text-[var(--color-text-secondary)]">
+          This website explores the potential future of technology and its impact on society. We provide information, timelines, and discussions about emerging technologies and their possible effects on various aspects of our lives.
+        </p>
+      </AccordionItem>
+
+      <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What is the Singularity?</span>
-        <p class="text-[var(--color-text-secondary)]">
-          The Singularity is that mind-bending point where AI surpasses human intelligence. Imagine your smartphone suddenly deciding it's smarter than you - and being right. It's when our tech takes the wheel and starts driving us into uncharted territory. Whether that's a utopia or a "rise of the machines" scenario is anyone's guess. Buckle up!
-        </p>
-      </AccordionItem>
-
-      <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">When is the Singularity expected to occur?</span>
-        <p class="text-[var(--color-text-secondary)]">
-          Here's the thing about the Singularity - it's not a single "boom" moment, but more like a rollercoaster that's already left the station and is picking up speed. Check out our timeline below for our best educated guess on when things will really start to feel like they're taking off. But remember, we're already on this ride. Each day, technology gets more sophisticated, cheaper, and easier to access. The pace of change is accelerating, and before you know it, we'll be in a world that makes today look like the Stone Age. So when is the Singularity? In many ways, it's already begun.
-        </p>
-      </AccordionItem>
-
-      <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What are the potential impacts of the Singularity?</span>
-        <p class="text-[var(--color-text-secondary)]">
-          As our timeline shows, the impacts of the Singularity will be far-reaching and mind-boggling:
+        <div class="text-[var(--color-text-secondary)]">
+          <p>The Singularity refers to a hypothetical future point in time when artificial intelligence surpasses human intelligence, potentially leading to rapid and unpredictable technological growth. Key aspects include:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>Medicine: We might cure death before we cure the common cold. Immortality, anyone?</li>
-            <li>Economy: When AI can do any job, what happens to human work? Universal Basic Income or universal poverty?</li>
-            <li>Education: Forget studying - just download knowledge directly to your brain. Hope you like pop-up ads in your dreams.</li>
-            <li>Ethics: When machines can think and feel, do they deserve rights? And who gets to decide?</li>
+            <li>Exponential advancement in AI capabilities</li>
+            <li>Potential for AI to improve itself, leading to recursive self-improvement</li>
+            <li>Profound changes in society, economy, and human existence</li>
+            <li>Debates about its likelihood, timeline, and implications</li>
           </ul>
-          Each advancement on our timeline isn't just a cool new gadget - it's a step towards a fundamentally different world. The Singularity isn't just a tech revolution - it's a redefinition of what it means to be human.
+          <p>The concept raises important questions about the future of humanity and our relationship with technology.</p>
+        </div>
       </AccordionItem>
 
       <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">How can one prepare for the Singularity?</span>
-        <p class="text-[var(--color-text-secondary)]">
-          Preparing for the Singularity is like trying to pack for a trip where the destination keeps changing. But don't panic - here's your survival kit:
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">How might my life be affected by near-future technology?</span>
+        <div class="text-[var(--color-text-secondary)]">
+          <p>Future technologies could potentially impact many areas of our lives, including:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>Stay informed: Keep an eye on our timeline. Today's sci-fi is tomorrow's reality.</li>
-            <li>Embrace adaptability: The only constant will be change, so get comfortable with being uncomfortable.</li>
-            <li>Develop a growth mindset: Learning won't stop when you leave school. In fact, it'll be more important than ever.</li>
-            <li>Engage in the conversation: The future's coming whether we like it or not. Might as well have a say in shaping it.</li>
+            <li>Healthcare and medicine</li>
+            <li>Work and the economy</li>
+            <li>Education and learning</li>
+            <li>Communication and social interactions</li>
+            <li>Transportation and energy</li>
+            <li>Environmental sustainability</li>
           </ul>
-          Remember, surviving the Singularity isn't just about keeping up with the latest tech - it's about staying human in a world that's evolving faster than we can comprehend. Keep an eye on our timeline, but more importantly, keep an eye on what makes us human.
+          <p>Our timeline and articles explore these topics in more detail.</p>
+        </div>
+      </AccordionItem>
+
+      <AccordionItem>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">How can I stay informed about technological developments?</span>
+        <div class="text-[var(--color-text-secondary)]">
+          <p>To stay informed about technological developments:</p>
+          <ul class="list-disc pl-5 mt-2">
+            <li>Regularly check our timeline and articles for updates</li>
+            <li>Follow reputable science and technology news sources</li>
+            <li>Attend technology conferences or webinars</li>
+            <li>Engage in discussions with others interested in these topics</li>
+            <li>Consider taking online courses in relevant fields</li>
+          </ul>
+          <p>Remember, the goal is to develop a broad understanding of trends and potential impacts rather than focusing on every technical detail.</p>
+        </div>
       </AccordionItem>
     </Accordion>
 </div>

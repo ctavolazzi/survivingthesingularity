@@ -26,8 +26,8 @@
 
     try {
       const { error } = await supabase
-        .from('contact_requests')
-        .insert([{ name, email, subject, message }]);
+        from('contact_requests')
+        insert([{ name, email, subject, message }]);
 
       if (error) throw error;
 
@@ -236,13 +236,15 @@
     text-align: center;
     margin-top: 1rem;
     color: var(--disclaimer-color);
+    margin-bottom: 0; /* Remove bottom margin */
   }
 
   @media (max-width: 768px) {
     .contact-form {
       padding: 1rem;
       margin: 1rem auto;
-      height: 550px; /* Slightly reduced height for mobile */
+      height: auto; /* Change fixed height to auto */
+      min-height: unset; /* Remove minimum height constraint */
     }
 
     .explore-options {

@@ -1,118 +1,176 @@
 <script>
   import ContactForm from '$lib/components/ContactForm.svelte';
+  import { fade, fly } from 'svelte/transition';
+  import { onMount } from 'svelte';
 
-  function handleBackBook() {
-    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
-  }
+  let navbarHeight = 0;
+
+  onMount(() => {
+    navbarHeight = document.querySelector('nav').offsetHeight;
+  });
 </script>
 
-<div class="outer-container">
-  <div class="content-container">
-    <h1>Get in Touch</h1>
-    <p>We're here to help and answer any questions you might have. Please use the form below to get in touch with us.</p>
-    <p>Your privacy is important to us. We will never share or sell your information.</p>
-    
-    <div class="form-wrapper">
+<div class="main-content" style="padding-top: {navbarHeight}px">
+  <h1 in:fly="{{ y: -50, duration: 1000 }}">Get in Touch</h1>
+  <p class="subheadline" in:fade="{{ delay: 500, duration: 800 }}">We're here to listen, help, and connect</p>
+  
+  <div class="content-wrapper">
+    <div class="form-container" in:fly="{{ x: -50, duration: 1000 }}">
+      <h2>Send Us a Message</h2>
       <ContactForm />
     </div>
-
-    <div class="additional-info">
-      <h2>Here are a few reasons you might want to reach out:</h2>
+    
+    <div class="info-container" in:fly="{{ x: 50, duration: 1000 }}">
+      <h2>Why Reach Out?</h2>
       <ul>
-        <li>Questions about the book</li>
-        <li>Questions about our projects or services</li>
-        <li>Inquiries about collaborations or partnerships</li>
-        <li>Feedback or suggestions</li>
+        <li>📝 Share your thoughts or feedback</li>
+        <li>❓ Ask us anything</li>
+        <li>💡 Propose ideas or collaborations</li>
+        <li>🤝 Connect with our team</li>
+        <li>🆘 Get support or assistance</li>
       </ul>
-      <p>Once you submit the form, we will get back to you as soon as possible.</p>
+      <p class="response-time">We aim to respond to all messages within 1 business day.</p>
     </div>
+  </div>
+
+  <div class="privacy-note">
+    <h3>Your Privacy Matters</h3>
+    <p>We respect your privacy and will only use your information to respond to your message. For more details, please see our Privacy Policy.</p>
   </div>
 </div>
 
 <style>
-  .outer-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-top: 2rem;
-  }
-
-  .content-container {
-    max-width: 800px;
+  .main-content {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
-    width: 100%;
+    padding: 2rem 1rem;
+    transition: padding-top 0.3s ease-in-out;
   }
 
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-text-primary);
+    font-size: 3rem;
     text-align: center;
-    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  .subheadline {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    color: var(--color-text-secondary);
+  }
+
+  .content-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .form-container, .info-container {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg-secondary);
   }
 
   h2 {
-    font-size: 1.75rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
     color: var(--color-text-primary);
-  }
-
-  p, li {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-  }
-
-  .form-wrapper {
-    margin: 2.5rem 0;
   }
 
   ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
+    list-style-type: none;
+    padding-left: 0;
   }
 
   li {
-    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--color-text-secondary);
   }
 
-  button {
-    display: block;
-    width: 100%;
+  li::before {
+    content: attr(data-icon);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+  }
+
+  .response-time {
     font-weight: bold;
-    font-size: 1.25rem;
-    background-color: var(--color-bg-secondary);
-    border: 2px solid var(--color-text-primary);
-    border-radius: 8px;
-    padding: 1rem 0.5rem;
-    margin-top: 2.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
     text-align: center;
+    background: var(--color-bg-accent);
+    padding: 0.8rem;
+    border-radius: 8px;
     color: var(--color-text-primary);
   }
 
-  button:hover {
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-secondary);
-    transform: translateY(-2px);
+  .privacy-note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--color-bg-accent);
+    border-radius: 8px;
   }
 
+  .privacy-note h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .privacy-note p {
+    color: var(--color-text-secondary);
+  }
+
+  /* Dark mode styles */
+  :global(.dark) .main-content {
+    background-color: var(--color-bg-primary);
+  }
+
+  :global(.dark) .form-container,
+  :global(.dark) .info-container {
+    background-color: var(--color-bg-secondary);
+  }
+
+  :global(.dark) h1,
+  :global(.dark) h2,
+  :global(.dark) .response-time,
+  :global(.dark) .privacy-note h3 {
+    color: var(--color-text-primary-dark);
+  }
+
+  :global(.dark) .subheadline,
+  :global(.dark) li,
+  :global(.dark) .privacy-note p {
+    color: var(--color-text-secondary-dark);
+  }
+
+  /* Responsive styles */
   @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .subheadline {
+      font-size: 1.2rem;
     }
 
     h2 {
-      font-size: 1.5rem;
-    }
-
-    button {
-      font-size: 1.1rem;
+      font-size: 1.8rem;
     }
   }
 </style>

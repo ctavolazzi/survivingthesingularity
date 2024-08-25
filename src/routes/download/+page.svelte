@@ -10,7 +10,7 @@
   import { spring } from 'svelte/motion';
 
   let isDownloading = false;
-  let buttonText = "Get Your FREE Checklist (Limited Time Offer)";
+  let buttonText = "Get Your FREE Checklist";
   let remainingTime = 600; // 10 minutes in seconds
   let showTestimonials = false;
   let spotsRemaining = 100;
@@ -189,10 +189,10 @@
         <p>Download now and take the first step towards future-proofing your life and career.</p>
       </div>
       <div class="button-container">
-        <button class="big-button" on:click={handleReadSample}>
+        <button class="big-button outlined-button" on:click={handleReadSample}>
           Read a Sample
         </button>
-        <button class="big-button" on:click={handleJoinSkool}>
+        <button class="big-button outlined-button" on:click={handleJoinSkool}>
           Join the Skool Community
         </button>
       </div>
@@ -635,5 +635,26 @@
 
   :global(.dark) .comparison-header .comparison-cell {
     background-color: #1e293b;
+  }
+
+  .outlined-button {
+    background-color: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+  }
+
+  .outlined-button:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  :global(.dark) .outlined-button {
+    border-color: #60a5fa;
+    color: #60a5fa;
+  }
+
+  :global(.dark) .outlined-button:hover {
+    background-color: #60a5fa;
+    color: #1e293b;
   }
 </style>

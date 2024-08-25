@@ -3,7 +3,7 @@
   import { darkMode } from '$lib/stores/darkMode';
   import StSFreeGuideImage from '$lib/images/StSFreeGuide.png';
   import { downloadStats } from '$lib/stores/downloadStats';
-  import SKoolGroup from '$lib/components/SKoolGroup.svelte';
+  import SkoolGroup from '$lib/components/SkoolGroup.svelte';
   import { fade, fly, scale, slide } from 'svelte/transition';
   import { tweened } from 'svelte/motion';
   import { cubicOut, elasticOut } from 'svelte/easing';
@@ -259,7 +259,7 @@
       <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
         Connect with like-minded individuals, share insights, and stay ahead of the curve in our Skool community.
       </p>
-      <SKoolGroup />
+      <SkoolGroup />
       <button class="big-button mt-4 w-full" on:click={handleJoinSkool}>
         Join Skool Now - Limited Spots Available!
       </button>

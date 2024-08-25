@@ -80,7 +80,6 @@
 
   <section class="text-center mt-16 mb-12">
     <h2 class="text-3xl font-bold mb-4">Limited Time Offer</h2>
-    <p class="text-xl mb-8">Get 50% off when you pre-order now!</p>
     <Countdown targetDate={targetDate} />
     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
       <button on:click={joinSkool} class="action-button">

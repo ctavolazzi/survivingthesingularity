@@ -88,7 +88,9 @@
 
   <div class="stylish-divider"></div>
 
-  <SkoolGroup /> <!-- Added this component -->
+  <div class="skool-group-container">
+    <SkoolGroup />
+  </div>
 
   <Spacer height="1rem"/>
 
@@ -267,5 +269,12 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #e5e7eb;
+  }
+
+  .skool-group-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
   }
 </style>

@@ -3,6 +3,7 @@
   import { fade, fly, scale } from 'svelte/transition';
   import { elasticOut, cubicOut } from 'svelte/easing';
   import { supabase } from '$lib/utils/supabaseClient';
+  import { newsletterSubmitted } from '$lib/stores/newsletterSubmitted';
 
   export let delayMs = 5000;
   export let scrollThreshold = 0.5;
@@ -42,8 +43,10 @@
   }
 
   function showPopup() {
-    isOpen = true;
-    window.removeEventListener('scroll', checkScroll);
+    if (!$newsletterSubmitted) {
+      isOpen = true;
+      window.removeEventListener('scroll', checkScroll);
+    }
   }
 
   function validateEmail() {
@@ -96,10 +99,11 @@
     isLoading = false;
     isSuccess = false;
     showOptIn = false;
+    newsletterSubmitted.setSubmitted();
   }
 </script>
 
-{#if mounted && isOpen}
+{#if mounted && isOpen && !$newsletterSubmitted}
   <div class="newsletter-popup-container" transition:fade="{{ duration: 300 }}">
     <div class="newsletter-popup" 
          in:fly="{{ y: 100, duration: 800, easing: elasticOut }}" 

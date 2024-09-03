@@ -10,11 +10,10 @@
   import { onMount } from 'svelte';
   import MainPageBlurb from '$lib/components/MainPageBlurb.svelte';
   import SkoolGroup from '$lib/components/SkoolGroup.svelte';
-  import StSBook from '$lib/images/default-blog-image.png';
   import BookSample from '$lib/components/BookSample.svelte';
   import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
-  import AdventureButton from '$lib/components/AdventureButton.svelte';
   import welcomeImage from '$lib/images/sts-welcome.png';
+  import { newsletterSubmitted } from '$lib/stores/newsletterSubmitted';
 
 	export let data;
 
@@ -28,6 +27,11 @@
 		navbarHeight = document.querySelector('nav').offsetHeight;
     console.log("Testing Supabase Connection");
     console.log(data);
+
+    // Handle newsletter popup
+    setTimeout(() => {
+      newsletterSubmitted.reset();
+    }, newsletterPopupDelay);
 	});
 
 	function handleBackBook() {
@@ -125,7 +129,9 @@
 
 </div>
 
-<NewsletterPopup delayMs={newsletterPopupDelay} />
+{#if $newsletterSubmitted === false}
+  <NewsletterPopup />
+{/if}
 
 <style>
   /* Layout */

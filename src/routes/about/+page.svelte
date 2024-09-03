@@ -1,124 +1,270 @@
 <script>
-  import { fade, fly } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
   import FAQ from '$lib/components/FAQ.svelte';
   import Countdown from '$lib/components/Countdown.svelte';
-  import AIThreatMeter from '$lib/components/AIThreatMeter.svelte';
-  import BookSample from '$lib/components/BookSample.svelte';
-  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+  import BookSample from '$lib/components/BookSample.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
-  import SkoolGroup from '$lib/components/SkoolGroup.svelte';
 
   const targetDate = new Date("2027-11-20T23:59:59").getTime();
-
-  import { onMount } from 'svelte';
-
-  let showContent = false;
-
-  onMount(() => {
-    showContent = true;
-  });
 </script>
 
 <Spacer height="50px" />
 
-<div class="about-container bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
-  <header class="mb-8">
-    <h1 class="title text-4xl md:text-5xl font-bold mb-4" in:fly="{{ y: -20, duration: 500 }}">About Surviving the Singularity</h1>
-    <p class="subtitle text-xl md:text-2xl text-gray-600 dark:text-gray-400" in:fly="{{ y: 20, duration: 500, delay: 200 }}">Navigate the AI Revolution Together</p>
+<div class="main-content">
+  <header>
+    <h1 class="title">About Surviving the Singularity</h1>
+    <p class="subtitle">Navigate the AI Revolution Together</p>
   </header>
 
-  <section class="book-info mb-12" in:fade="{{ duration: 500, delay: 800 }}">
-    <h2 class="text-3xl font-bold mb-6">More Than Just a Book</h2>
-    
-    <div class="grid md:grid-cols-2 gap-8 items-start">
-      <div>
-        <p class="mb-4 text-lg">"Surviving the Singularity" is a revolutionary multi-format experience designed to guide you through the AI revolution:</p>
-        <ul class="list-disc list-inside space-y-2 mb-6">
-          <li><strong>Interactive Workbook:</strong> Engage with thought-provoking exercises and scenarios to deepen your understanding of AI's impact.</li>
-          <li><strong>Personal AI Journal:</strong> Document your journey and insights as you navigate the rapidly evolving AI landscape.</li>
-          <li><strong>Exclusive Digital Content:</strong> Access hidden rabbit holes of knowledge via QR codes, unlocking additional resources and cutting-edge information.</li>
-          <li><strong>Self-Guided Research Tool:</strong> Embark on your own AI exploration with curated starting points and guided inquiry methods.</li>
-          <li><strong>Future-Proofing Strategies:</strong> Develop practical skills and mindsets to thrive in an AI-driven world.</li>
+  <section class="book-info">
+    <h2>More Than Just a Book</h2>
+    <div class="content-grid">
+      <div class="ul-centered-left">
+        <p>"Surviving the Singularity" is a revolutionary multi-format experience designed to guide you through the AI revolution:</p>
+        <ul>
+          <li><strong>Interactive Workbook:</strong> Engage with thought-provoking exercises and scenarios.</li>
+          <li><strong>Personal AI Journal:</strong> Document your journey and insights.</li>
+          <li><strong>Exclusive Digital Content:</strong> Access additional resources via QR codes.</li>
+          <li><strong>Self-Guided Research Tool:</strong> Embark on your own AI exploration.</li>
+          <li><strong>Future-Proofing Strategies:</strong> Develop practical skills for an AI-driven world.</li>
         </ul>
-        <BookSample />
-    <div class="mt-8 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-      <h3 class="text-2xl font-bold mb-4">Experience the Future of Learning</h3>
-      <p class="mb-4">Our innovative QR code system allows you to:</p>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Access exclusive online content updated in real-time</li>
-        <li>Dive deep into AI topics with curated resources</li>
-        <li>Participate in community discussions and expert Q&As</li>
-        <li>Track your progress and unlock achievements</li>
-      </ul>
-    </div>
-
-    <div class="mt-8 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-      <h3 class="text-2xl font-bold mb-4">What Early Adopters Are Saying</h3>
-      <div class="space-y-4">
-        <blockquote class="italic">
-          "This isn't just a book, it's a personal AI revolution in your hands. The interactive elements and QR codes make learning about AI an exciting journey of discovery."
-          <footer class="text-right">- Emma Rodriguez, Tech Entrepreneur</footer>
-        </blockquote>
-        <blockquote class="italic">
-          "The workbook and journal aspects helped me apply AI concepts to my own life and career in ways I never imagined. A truly transformative experience!"
-          <footer class="text-right">- Dr. James Lee, Futurist</footer>
-        </blockquote>
+      </div>
+      <div class="visual-content">
+        <div class="book-sample-wrapper">
+          <BookSample />
+        </div>
       </div>
     </div>
-    
   </section>
 
-  <!-- <SkoolGroup /> -->
-  
+  <div class="stylish-divider"></div>
+
+  <section class="future-learning">
+    <h2 class="text-center">Experience the Future of Learning</h2>
+    <div class="content-grid">
+      <div class="ul-centered-left">
+        <p>Our innovative QR code system allows you to:</p>
+        <ul>
+          <li>Access exclusive online content updated in real-time</li>
+          <li>Dive deep into AI topics with curated resources</li>
+          <li>Participate in community discussions and expert Q&As</li>
+          <li>Track your progress and unlock achievements</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="stylish-divider"></div>
+
+  <section class="testimonials">
+    <h2 class="text-center">What Early Adopters Are Saying</h2>
+    <div class="content-grid">
+      <blockquote>
+        <p>"This isn't just a book, it's a personal AI revolution in your hands. The interactive elements and QR codes make learning about AI an exciting journey of discovery."</p>
+        <footer>- Emma Rodriguez, Tech Entrepreneur</footer>
+      </blockquote>
+      <blockquote>
+        <p>"The workbook and journal aspects helped me apply AI concepts to my own life and career in ways I never imagined. A truly transformative experience!"</p>
+        <footer>- Dr. James Lee, Futurist</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="stylish-divider"></div>
+
   <FAQ />
 
-  <section class="intro mb-8" in:fade="{{ duration: 500, delay: 400 }}">
-    <p class="text-lg">Surviving the Singularity is a vibrant community of like-minded individuals navigating the AI revolution together. We're here to help each other stay informed, get ahead, and understand the transformative impact of AI on our world.</p>
-  </section>
+  <div class="stylish-divider"></div>
 
-  <section class="community-info mb-8" in:fade="{{ duration: 500, delay: 600 }}">
-    <h2 class="text-3xl font-bold mb-4">Join Our Supportive AI Community</h2>
-    <p class="mb-4">Our community is a space where members:</p>
-    <ul class="list-disc list-inside space-y-2">
-      <li><strong>Share Insights:</strong> Post about the latest AI developments and their implications.</li>
-      <li><strong>Collaborate:</strong> Help each other understand and contextualize new technologies.</li>
-      <li><strong>Stay Ahead:</strong> Access curated content and discussions to remain at the forefront of AI advancements.</li>
-      <li><strong>Support Growth:</strong> Encourage and assist one another in personal and professional development.</li>
-      <li><strong>Navigate Change:</strong> Work together to adapt to the rapidly transforming AI landscape.</li>
-    </ul>
-    <CommunityIntakePopupForm />
-  </section>
-
-  <section class="newsletter mb-8" in:fade="{{ duration: 500, delay: 1000 }}">
-    <h2 class="text-3xl font-bold mb-4">Stay Informed</h2>
-    <p class="mb-4">Join our newsletter to receive regular updates on AI advancements and community insights.</p>
+  <section class="newsletter">
+    <h2>Stay Informed</h2>
+    <p>Join our newsletter to receive regular updates on AI advancements and community insights.</p>
     <NewsletterSignup />
   </section>
 
-  <p class="text-lg text-center">What's your risk tolerance?</p>
-  <AIThreatMeter />
+  <div class="stylish-divider"></div>
 
-
-  <section class="countdown mb-8" in:fade="{{ duration: 500, delay: 1200 }}">
-    <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-      <Countdown targetDate={targetDate} />
-      <p class="mt-4 text-lg">The technological singularity is approaching rapidly. This countdown represents our estimated timeline to the mass production of human-level AI robots, but the exact moment is unpredictable. Will you be prepared?</p>
+  <section class="countdown">
+    <div class="countdown-container">
+      <Countdown {targetDate} />
+      <p>The technological singularity is approaching rapidly. Will you be prepared?</p>
     </div>
   </section>
 
+  <Spacer height="1rem"/>
 </div>
 
 <style>
-  .about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+
+.book-info {
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .about-container {
-      padding: 1rem;
+  .main-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  header, section {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  .title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--color-text-secondary);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  p, li {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .ul-centered-left {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ul-centered-left p {
+    margin-bottom: 1rem;
+  }
+
+  .ul-centered-left ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .visual-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  blockquote {
+    background-color: var(--color-bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  blockquote p {
+    font-style: italic;
+  }
+
+  blockquote footer {
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+
+  .countdown-container {
+    background-color: var(--color-bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .stylish-divider {
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 80%;
+  }
+
+  .book-sample-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .book-sample-wrapper {
+      width: 95%; /* Slightly smaller on very small screens */
     }
+  }
+
+  @media (min-width: 768px) {
+    .main-content {
+      padding: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .main-content {
+      padding: 3rem;
+    }
+  }
+
+  /* Dark mode styles */
+  :global(.dark) .title,
+  :global(.dark) h2,
+  :global(.dark) p,
+  :global(.dark) li {
+    color: #e5e7eb;
+  }
+
+  :global(.dark) .subtitle {
+    color: #9ca3af;
+  }
+
+  :global(.dark) blockquote,
+  :global(.dark) .countdown-container {
+    background-color: #2a2a2a;
+  }
+
+  :global(.dark) .stylish-divider {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  }
+
+  :global(.dark) .placeholder-image {
+    background-color: #2a2a2a;
+    color: #9ca3af;
   }
 </style>

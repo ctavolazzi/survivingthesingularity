@@ -14,6 +14,7 @@
   import BookSample from '$lib/components/BookSample.svelte';
   import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
   import AdventureButton from '$lib/components/AdventureButton.svelte';
+  import welcomeImage from '$lib/images/sts-welcome.png';
 
 	export let data;
 
@@ -55,7 +56,7 @@
   
   
   <div class="book-container">
-    <img src={StSBook} alt="Surviving the Singularity Book" />
+    <img src={welcomeImage} alt="Surviving the Singularity Book" />
   </div>  
   
   <MainPageBlurb />
@@ -65,7 +66,11 @@
     <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
   </div>
   
-  <BookSample />
+  <div class="visual-content">
+    <div class="book-sample-container">
+      <BookSample />
+    </div>
+  </div>
 
   <div class="stylish-divider"></div>
   <FAQ />
@@ -297,5 +302,25 @@
     justify-content: center;
     width: 100%;
     margin: 2rem 0;
+  }
+
+  .visual-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* New styles for the BookSample component */
+  :global(.book-sample-container) {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    :global(.book-sample-container) {
+      width: 80%;
+    }
   }
 </style>

@@ -43,10 +43,6 @@
 
   export let testimonials = [
     {
-      text: "This community has been a game-changer for my AI journey. The insights and connections are invaluable! I've actually made friends here.",
-      author: "Sarah K., AI Researcher"
-    },
-    {
       text: "I've learned more about AI in the last month than I did in the last year on my own. This community is amazing!",
       author: "Emily W., AI Enthusiast"
     },

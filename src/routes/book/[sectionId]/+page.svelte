@@ -7,7 +7,6 @@
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
-  import { darkMode } from '$lib/stores/darkMode';
   export let data;
 
   let currentSection = 1;
@@ -108,6 +107,7 @@
   :global(.prose p) {
     color: #333; /* Dark gray for better contrast */
     text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.5);
+    text-align: left; /* Add this line to ensure left justification */
   }
 
   :global(.dark .prose h1) {
@@ -117,6 +117,7 @@
   :global(.dark .prose p) {
     color: #e0e0e0; /* Light gray for dark mode */
     text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);
+    text-align: left; /* Add this line to ensure left justification in dark mode */
   }
 
   @media (max-width: 640px) {

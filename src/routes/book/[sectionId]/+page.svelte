@@ -102,6 +102,15 @@
     max-width: 100%;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-align: left; /* Add this line to ensure left justification */
+  }
+
+  :global(.prose h2),
+  :global(.prose h3),
+  :global(.prose h4),
+  :global(.prose h5),
+  :global(.prose h6) {
+    text-align: left; /* Add this block to ensure all heading levels are left-justified */
   }
 
   :global(.prose p) {
@@ -112,6 +121,15 @@
 
   :global(.dark .prose h1) {
     color: #ff9933;
+    text-align: left; /* Add this line to ensure left justification in dark mode */
+  }
+
+  :global(.dark .prose h2),
+  :global(.dark .prose h3),
+  :global(.dark .prose h4),
+  :global(.dark .prose h5),
+  :global(.dark .prose h6) {
+    text-align: left; /* Add this block to ensure all heading levels are left-justified in dark mode */
   }
 
   :global(.dark .prose p) {

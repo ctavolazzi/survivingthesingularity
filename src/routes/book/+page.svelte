@@ -19,11 +19,12 @@
   <h1>First Draft Disclaimer</h1>
   <p>
     Welcome, brave explorer of the future! You're about to dive into the raw, unfiltered first draft of "Surviving the Singularity." 
-    This version is offered on a trial, as-is basis. Expect typos, plot holes, and possibly some AI-generated jokes that didn't quite compute.
+    This version is offered on a trial, as-is basis. Expect typos, plot holes, and remember:
   </p>
+  <p class="text-center"><strong>If any of the jokes don't compute, I didn't write them. All the unfunny jokes were AI generated 👍</strong></p>
   <p>
     Your feedback is crucial for our survival! If you spot any glitches in the matrix (or just have thoughts to share), 
-    please transmit a signal to <a href="https://twitter.com/thecoffeejesus" target="_blank" rel="noopener noreferrer">@thecoffeejesus</a> on any social media platform.
+    please transmit a signal to <a href="https://solo.to/thecoffeejesus" target="_blank" rel="noopener noreferrer">@thecoffeejesus</a> on any social media platform.
   </p>
   <p>Together, we can make this book as singularity-proof as possible!</p>
 </section>

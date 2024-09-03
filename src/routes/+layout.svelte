@@ -2,6 +2,7 @@
   import '../app.css';
   import Navbar from '$lib/components/Navbar.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import FloatingProgressBar from '$lib/components/FloatingProgressBar.svelte';
   import { darkMode } from '$lib/stores/darkMode';
   import { onMount } from 'svelte';
 
@@ -25,6 +26,7 @@
 </script>
 
 <div class="app bg-white dark:bg-gray-900 min-h-screen">
+  <FloatingProgressBar />
   <Navbar />
   <main class="container mx-auto px-4 py-8">
     <slot />

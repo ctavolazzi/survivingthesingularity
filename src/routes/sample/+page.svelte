@@ -8,6 +8,7 @@
   import StSBookImage from '$lib/images/default-blog-image.png';
   import Countdown from '$lib/components/Countdown.svelte';
   import StSFreeGuideImage from '$lib/images/StSFreeGuide.png';
+  import Spacer from '$lib/components/Spacer.svelte';
 
   let showPopup = false;
   const targetDate = new Date("2027-11-20T23:59:59").getTime();
@@ -48,6 +49,8 @@
   <meta name="description" content="Download your free guide on processing AI anxiety and confusion. Join 10,000+ readers preparing for the future of technology.">
 </svelte:head>
 
+<Spacer height="50px" />
+
 <main class="container mx-auto px-4 py-8 max-w-3xl dark:bg-gray-800 dark:text-gray-200">
   <header in:fade="{{ duration: 1000 }}">
     <h1 class="text-4xl font-bold mb-4 text-center">Survive and Thrive in the AI Revolution</h1>
@@ -55,7 +58,9 @@
   </header>
 
   <div class="flex flex-col md:flex-row items-center mb-12">
-    <img src={StSBookImage} alt="Surviving the Singularity" class="StS-book-image mb-8 md:mb-0 md:mr-8" />
+    <a href="/book" class="mb-8 md:mb-0 md:mr-8">
+      <img src={StSBookImage} alt="Surviving the Singularity" class="StS-book-image mb-8 md:mb-0 md:mr-8" />
+    </a>
     <div>
       <ul class="list-disc pl-5 mb-6">
         <li>Practical exercises to process AI-related emotions</li>

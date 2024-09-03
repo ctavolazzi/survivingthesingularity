@@ -1,5 +1,7 @@
 # Acknowledgements
 
+I would like to acknowledge the following people for their contributions to this book:
+
 No one.
 
 For nothing.

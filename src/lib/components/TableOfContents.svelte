@@ -1,34 +1,42 @@
 <!-- src/lib/components/TableOfContents.svelte -->
 <script>
   import { goto } from '$app/navigation';
-  import { fly, fade } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
+  // Remove these imports as they're no longer needed
+  // import { fly, fade } from 'svelte/transition';
+  // import { quintOut } from 'svelte/easing';
   import { darkMode } from '$lib/stores/darkMode';
+  import { bookPage } from '$lib/stores/bookPage';
   
   export let sections = [];
   let hoveredIndex = -1;
+  let currentSectionId;
+
+  bookPage.subscribe(state => {
+    currentSectionId = state.currentSectionId;
+  });
 
   function handleClick(sectionId) {
+    bookPage.setCurrentSection(sectionId);
     goto(`/book/${sectionId}`);
   }
 </script>
 
 <nav class="table-of-contents">
-  <div class="title-container" in:fly="{{ y: -20, duration: 500, delay: 200 }}">
+  <div class="title-container">
     <h2>Table of Contents</h2>
   </div>
   <ul>
     {#each sections as section, index}
       <li 
-        in:fly="{{ y: 20, duration: 300, delay: index * 50 }}"
+        class:active={section.id === currentSectionId}
         on:mouseenter={() => hoveredIndex = index}
         on:mouseleave={() => hoveredIndex = -1}
       >
         <button on:click={() => handleClick(section.id)}>
           <span class="section-number">{index + 1}</span>
           <span class="section-title">{section.title}</span>
-          {#if hoveredIndex === index}
-            <span class="hover-effect" in:fade="{{ duration: 150 }}"></span>
+          {#if hoveredIndex === index || section.id === currentSectionId}
+            <span class="hover-effect"></span>
           {/if}
         </button>
       </li>
@@ -120,6 +128,13 @@
     bottom: 0;
     background: linear-gradient(90deg, rgba(255, 153, 51, 0.2) 0%, rgba(255, 153, 51, 0) 100%);
     pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  button:hover .hover-effect,
+  .active button .hover-effect {
+    opacity: 1;
   }
 
   /* Dark mode styles */
@@ -167,5 +182,10 @@
       font-size: 1rem;
       margin-right: 0.75rem;
     }
+  }
+
+  .active button {
+    background-color: rgba(255, 153, 51, 0.2);
+    font-weight: bold;
   }
 </style>

@@ -1,11 +1,13 @@
 <script>
   import { marked } from 'marked';
   import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
+  import { bookPage } from '$lib/stores/bookPage';
   import Pagination from '$lib/components/Pagination.svelte';
-  import FloatingProgressBar from '$lib/components/FloatingProgressBar.svelte';
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
   export let data;
+  import Spacer from '$lib/components/Spacer.svelte';
 
   let currentSection = 1;
   let totalSections = data.book.sections.length;
@@ -15,12 +17,8 @@
 
   onMount(() => {
     currentSection = data.book.sections.findIndex(section => section.id === data.section.id) + 1;
-    // Load last visited section from local storage
-    const lastVisited = localStorage.getItem('lastVisitedSection');
-    if (lastVisited && lastVisited !== data.section.id) {
-      // Redirect to last visited section
-      window.location.href = `/book/${lastVisited}`;
-    }
+    bookPage.setCurrentSection(data.section.id);
+    bookPage.updateLastVisited();
   });
 
   function handleNavigation(event) {
@@ -28,15 +26,11 @@
     const newIndex = currentSection + (direction === 'next' ? 1 : -1) - 1;
     const newSection = data.book.sections[newIndex];
     if (newSection) {
-      // Save current section to local storage
-      localStorage.setItem('lastVisitedSection', newSection.id);
-      // Navigate to new section
-      window.location.href = `/book/${newSection.id}`;
+      goto(`/book/${newSection.id}`);
     }
   }
 </script>
 
-<FloatingProgressBar />
 <FloatingPopupProgressBar />
 <FloatingQuotePopup />
 
@@ -45,40 +39,44 @@
   <meta name="description" content="Read {data.section.title} from {data.book.title}">
 </svelte:head>
 
-<!-- Top link -->
-<div class="mt-4 mb-4 text-center">
-  <a href="/book" class="toc-link">
-    <span class="icon">&#8592;</span> Back to Table of Contents
-  </a>
-</div>
+<Spacer height="50px" />
 
-<!-- Existing Progress Bar -->
-<div class="progress-container mb-8">
-  <div class="progress-bar" style="width: {(currentSection / totalSections) * 100}%"></div>
-  <div class="progress-text">
-    Part {currentSection} of {totalSections}
+<div class="content-wrapper">
+  <!-- Top link -->
+  <div class="mt-4 mb-4 text-center">
+    <a href="/book" class="toc-link">
+      <span class="icon">&#8592;</span> Back to Table of Contents
+    </a>
   </div>
+
+  <!-- Existing Progress Bar -->
+  <div class="progress-container mb-8">
+    <div class="progress-bar" style="width: {(currentSection / totalSections) * 100}%"></div>
+    <div class="progress-text">
+      Part {currentSection} of {totalSections}
+    </div>
+  </div>
+
+  <article class="prose prose-lg dark:prose-invert">
+    {@html content}
+  </article>
+
+  <!-- Add this anchor element right after the article content -->
+  <div id="article-end-anchor"></div>
+
+  <!-- Bottom link -->
+  <div class="mt-8 mb-4 text-center">
+    <a href="/book" class="toc-link">
+      <span class="icon">&#8592;</span> Back to Table of Contents
+    </a>
+  </div>
+
+  <Pagination 
+    currentSection={currentSection}
+    totalSections={totalSections}
+    on:navigate={handleNavigation}
+  />
 </div>
-
-<article class="prose prose-lg dark:prose-invert">
-  {@html content}
-</article>
-
-<!-- Add this anchor element right after the article content -->
-<div id="article-end-anchor"></div>
-
-<!-- Bottom link -->
-<div class="mt-8 mb-4 text-center">
-  <a href="/book" class="toc-link">
-    <span class="icon">&#8592;</span> Back to Table of Contents
-  </a>
-</div>
-
-<Pagination 
-  currentSection={currentSection}
-  totalSections={totalSections}
-  on:navigate={handleNavigation}
-/>
 
 <style>
   :global(.prose) {
@@ -200,5 +198,17 @@
   :global(.dark) .toc-link:hover {
     color: #ffb366;
     background-color: rgba(255, 153, 51, 0.1);
+  }
+
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  @media (max-width: 840px) {
+    .content-wrapper {
+      max-width: 100%;
+    }
   }
 </style>

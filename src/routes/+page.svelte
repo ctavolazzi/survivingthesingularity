@@ -9,8 +9,11 @@
   import LatestNews from '$lib/components/LatestNews.svelte';
   import { onMount } from 'svelte';
   import MainPageBlurb from '$lib/components/MainPageBlurb.svelte';
-  import SkoolGroup from '$lib/components/SkoolGroup.svelte'; // Added this import
+  import SkoolGroup from '$lib/components/SkoolGroup.svelte';
   import StSBook from '$lib/images/default-blog-image.png';
+  import BookSample from '$lib/components/BookSample.svelte';
+  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
+  import AdventureButton from '$lib/components/AdventureButton.svelte';
 
 	export let data;
 
@@ -51,30 +54,43 @@
   </div>
   
   
+  <div class="book-container">
+    <img src={StSBook} alt="Surviving the Singularity Book" />
+  </div>  
+  
+  <MainPageBlurb />
   <div class="button-container">
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
     <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
     <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
   </div>
-  <div class="book-container">
-    <img src={StSBook} alt="Surviving the Singularity Book" />
-  </div>  
-
-  <MainPageBlurb />
-
   
-  <div class="content-container">
-    <Timeline items={timelineItems.timelineItems} />
-  </div>
-  
+  <BookSample />
+
   <div class="stylish-divider"></div>
   <FAQ />
+  <div class="stylish-divider"></div>
+
+  
+  <div class="skool-group-container">
+    <SkoolGroup />
+  </div>
+  
   <div class="stylish-divider"></div>
   <LatestNews {post} />
 
   <div class="quote-container">
     <p class="quote">The past is over, the present is fleeting - we live in the future.</p>
     <p class="attribution">- Ray Kurzweil</p>
+  </div>
+
+  <div class="community-intake-container">
+    <div class="stylish-divider"></div>
+    <CommunityIntakePopupForm 
+      ctaText="Ready to join the rebellion against the singularity?"
+      buttonText="Enlist Now"
+    />
+    <div class="stylish-divider"></div>
   </div>
 
   <div class="button-container orange-border">
@@ -88,9 +104,14 @@
 
   <div class="stylish-divider"></div>
 
-  <div class="skool-group-container">
-    <SkoolGroup />
+  <Countdown {targetDate} />
+
+  <div class="content-container">
+    <Timeline items={timelineItems.timelineItems} />
   </div>
+
+  <div class="stylish-divider"></div>
+  <NewsletterSignup />
 
   <Spacer height="1rem"/>
 

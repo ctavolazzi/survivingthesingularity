@@ -1,598 +1,211 @@
 <script>
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+  import { fade, fly } from 'svelte/transition';
   import FAQ from '$lib/components/FAQ.svelte';
-  import StSBookImage from '$lib/images/default-blog-image.png';
-  import StSChessImage from '$lib/images/sts-chess.jpg';
-  import SkoolGroup from '$lib/components/SkoolGroup.svelte';
   import Countdown from '$lib/components/Countdown.svelte';
-  
-  const targetDate = new Date("2027-11-20T23:59:59").getTime();
+  import AIThreatMeter from '$lib/components/AIThreatMeter.svelte';
+  import StSFreeGuideImage from '$lib/images/StSFreeGuide.png';
 
-  function handleReadSample() {
-    window.location.href = 'https://survivingthesingularity.com/sample';
-  }
-
-  function handleJoinSkool() {
-    console.log('Join Skool functionality not implemented yet');
-  }
+  const targetDate = new Date("2027-01-01T00:00:00").getTime(); // Adjust as needed
 </script>
 
-<div class="main-content">
-  <div class="hero-section">
-    <h1 class="title">What the f*** is going on?</h1>
-    <p class="subtitle">AI seems to be taking over the world - are you on boarding the Singularity Express or will you be left behind at the station?</p>
-    <!-- <button class="cta-button primary" on:click={handleJoinSkool}>JOIN THE MADNESS</button> -->
-  </div>
+<div class="about-container">
+  <header>
+    <h1 class="title" in:fly="{{ y: -20, duration: 500 }}">About Surviving the Singularity</h1>
+    <p class="subtitle" in:fly="{{ y: 20, duration: 500, delay: 200 }}">Navigate the AI Revolution with Confidence</p>
+  </header>
 
-  <div class="wtf-section">
-    <h2 class="section-title">No, seriously, WTF?</h2>
-    <p class="description">
-      Remember when the scariest thing about AI was autocorrect? Those were the days. Now we've got:
-    </p>
-    <ul class="wtf-list">
-      <li>AI writing your college essays (and probably doing a better job)</li>
-      <li>Robots that can parkour better than you</li>
-      <li>ChatGPT stealing your job while you're reading this</li>
+  <section class="intro" in:fade="{{ duration: 500, delay: 400 }}">
+    <p>The AI revolution isn't coming—it's already here. At Surviving the Singularity, we're not just observing this transformation; we're equipping you to thrive in it.</p>
+  </section>
+
+  <section class="why-join" in:fade="{{ duration: 500, delay: 600 }}">
+    <h2>Why Join Our AI Mastery Community?</h2>
+    <ol>
+      <li><strong>Curated, Actionable Insights:</strong> Cut through the noise with our expertly curated content on the latest AI advancements and their real-world applications.</li>
+      <li><strong>Practical Implementation Strategies:</strong> Learn how to leverage AI tools and techniques to enhance your career, business, and personal growth.</li>
+      <li><strong>Exclusive AI Innovators Network:</strong> Connect with forward-thinking professionals, industry experts, and AI enthusiasts who are shaping the future.</li>
+      <li><strong>Weekly Mastery Sessions:</strong> Dive deep into AI concepts, tools, and strategies with our live interactive sessions led by industry experts.</li>
+      <li><strong>Personalized Learning Paths:</strong> Whether you're an AI novice or a seasoned pro, our community offers tailored content to accelerate your growth.</li>
+      <li><strong>Ethical AI Framework:</strong> Understand the societal impacts of AI and learn how to implement AI responsibly and ethically.</li>
+    </ol>
+  </section>
+
+  <section class="approach" in:fade="{{ duration: 500, delay: 800 }}">
+    <h2>Our Approach: Informed Optimism</h2>
+    <p>We believe in embracing AI's potential while maintaining a critical perspective. Our community fosters:</p>
+    <ul>
+      <li><strong>Curiosity:</strong> We encourage continuous learning and exploration of AI's possibilities.</li>
+      <li><strong>Critical Thinking:</strong> We analyze AI developments with a balanced, informed approach.</li>
+      <li><strong>Creativity:</strong> We inspire innovative applications of AI across various industries.</li>
+      <li><strong>Community:</strong> We support each other in navigating the challenges and opportunities of the AI age.</li>
     </ul>
-    <p class="description">
-      And that's just Tuesday. Welcome to the singularity, folks. It's weird, it's wild, and it's happening faster than you can say "artificial intelligence."
-    </p>
-  </div>
+  </section>
 
-  <div class="survival-kit">
-    <h2 class="section-title">Your Singularity Survival Kit</h2>
-    <p>A book, a community, and a plan to survive the Singularity</p>
-    <p>Author Chris Tavolazzi has been hard at work on building a resource to help you process the arrival of the future.</p>
-    <div class="kit-item">
-      <div class="kit-image">
-        <img src={StSBookImage} alt="Surviving the Singularity Book" class="StS-book-image" />
-      </div>
-      <div class="kit-info">
-        <p class="osm">The "Oh Sh*t" Manual</p>
-        <p>Our book is for when Google can't help you navigate the AI apocalypse</p>
-        <br>
-        <button class="cta-button secondary" on:click={handleReadSample}>SNEAK A PEEK</button>
+  <section class="survival-kit" in:fade="{{ duration: 500, delay: 1000 }}">
+    <h2>Your Singularity Survival Kit</h2>
+    <p>Get started with our free guide to navigating the AI revolution</p>
+    <div class="kit-items">
+      <div class="kit-item">
+        <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" />
+        <div class="kit-info">
+          <h3>Surviving the Singularity: Free Guide</h3>
+          <p>Your first step in preparing for the AI-driven future. Download now and start your journey!</p>
+          <a href="/download" class="cta-button">Download Free Guide</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="faq-section">
-    <FAQ />
-  </div>
+  <AIThreatMeter />
 
-  <div class="newsletter-section">
-    <h2 class="section-title">Stay in the Loop (While You Still Can)</h2>
-    <p class="description center-text">Sign up for our newsletter. It's like a time capsule, but for the future that's happening now.</p>
-    <NewsletterSignup />
-  </div>
+  <section class="join-skool" in:fade="{{ duration: 500, delay: 1200 }}">
+    <h2>Join the AI Mastery Guild on Skool</h2>
+    <p>Secure your spot in our exclusive community and gain access to:</p>
+    <ul>
+      <li><strong>Cutting-Edge AI Tools:</strong> Stay ahead with early access to emerging AI technologies.</li>
+      <li><strong>Implementation Playbooks:</strong> Step-by-step guides to apply AI in your work and life.</li>
+      <li><strong>Expert-Led Workshops:</strong> Learn from AI pioneers and industry leaders.</li>
+      <li><strong>Peer Networking:</strong> Collaborate with like-minded individuals on AI projects and ideas.</li>
+      <li><strong>Resource Library:</strong> Access our comprehensive collection of AI research, case studies, and tutorials.</li>
+    </ul>
+  </section>
 
-  <div class="mission-statement">
-    <h2 class="section-title">Our "Keep Calm and Carry On" Mission</h2>
-    <p class="description">
-      At Surviving the Singularity, we're not here to stop the AI tsunami. We're here to teach you how to surf it. With a mix of humor, panic, and actual useful information, we're building a community of humans trying to stay relevant in an increasingly robotic world.
-    </p>
-  </div>
+  <section class="cta" in:fade="{{ duration: 500, delay: 1400 }}">
+    <h2>Your AI Future Starts Here</h2>
+    <p>Don't just survive the AI revolution—lead it. Join Surviving the Singularity and transform uncertainty into opportunity.</p>
+    <a href="/join-skool" class="cta-button">Secure Your Lifetime Membership Now</a>
+    <p class="urgency">Limited spots available at current pricing. Invest in your future today!</p>
+  </section>
 
-  <SkoolGroup />
+  <FAQ />
 
-  <div class="testimonial-section">
-    <h3 class="testimonial-header">What Our Members Say</h3>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <p>"This community has been my lifeline in understanding AI. It's like having a cheat code for the future!"</p>
-        <span class="testimonial-author">- Sarah K., Software Dev</span>
-      </div>
-      <div class="testimonial">
-        <p>"I thought I was doomed when AI started writing better code than me. This book gave me hope and a game plan!"</p>
-        <span class="testimonial-author">- Mike R., Data Scientist</span>
-      </div>
-      <div class="testimonial">
-        <p>"Finally, a resource that doesn't make me feel like a Luddite for being cautious about AI. Informative and hilarious!"</p>
-        <span class="testimonial-author">- Emma L., Marketer</span>
-      </div>
-      <div class="testimonial">
-        <p>"I thought I was doomed when AI started writing better code than me. This book gave me hope and a game plan!"</p>
-        <span class="testimonial-author">- Mike G., Father</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="countdown-section">
+  <section class="countdown" in:fade="{{ duration: 500, delay: 1600 }}">
+    <h2>Time Left Until the Singularity</h2>
     <Countdown targetDate={targetDate} />
-    <p class="countdown-cta">Don't let AI catch you unprepared.</p>
-  </div>
-
-  <div class="final-cta-section">
-    <div class="final-cta-content">
-      <h2 class="section-title">Ready to Survive the Singularity?</h2>
-      <div class="final-cta-image">
-        <img src={StSChessImage} alt="Surviving the Singularity Chess" class="sts-chess-image" />
-      </div>
-      <p class="description">Join the other badass people on Skool to get access to our book, so many other resources, and a community of like-minded individuals.</p>
-      <button class="skool-button" on:click={handleJoinSkool}>JOIN THE MADNESS</button>
-    </div>
-  </div>
+    <p>Don't let AI catch you unprepared.</p>
+  </section>
 </div>
 
 <style>
-  .main-content {
+  .about-container {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem 1rem;
-  }
-
-  .hero-section {
-    text-align: center;
-    margin-bottom: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
   }
 
   .title {
-    font-size: 2.5rem; /* Reduced from 3rem */
+    font-size: 2.5rem;
     color: var(--color-text-primary);
-    margin-bottom: 0.5rem;
-    font-weight: bold;
   }
 
   .subtitle {
-    font-size: 1.2rem; /* Reduced from 1.5rem */
+    font-size: 1.2rem;
     color: var(--color-text-secondary);
-    font-style: italic;
   }
 
-  .quote-container {
-    background-color: #f8f9fa;
-    padding: 2rem;
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+  }
+
+  .intro, .why-join, .approach, .join-skool {
+    margin-bottom: 2rem;
+  }
+
+  ol, ul {
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .survival-kit {
+    background-color: var(--color-bg-secondary);
+    padding: 1rem;
     border-radius: 8px;
     margin-bottom: 2rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
 
-  .quote {
-    font-style: italic;
-    font-size: 1.5rem;
-    color: var(--color-text-primary);
-    margin-bottom: 0.5rem;
-  }
-
-  .attribution {
-    font-weight: bold;
-    color: var(--color-text-secondary);
-  }
-
-  .section-title {
-    font-size: 1.8rem; /* Reduced from 2rem */
-    color: var(--color-text-primary);
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #FF9933; /* Lighter orange */
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-  }
-
-  .description {
-    font-size: 1rem; /* Slightly reduced from 1.1rem */
-    line-height: 1.6;
-    color: var(--color-text-secondary);
-    margin-bottom: 1rem;
-  }
-
-  .feature-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 2rem;
-  }
-
-  .feature-list li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.5rem;
-  }
-
-  .feature-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #FF9933; /* Lighter orange */
-    font-weight: bold;
-  }
-
-  .cta-container {
+  .kit-items {
     display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-    margin: 2rem 0;
-  }
-
-  .cta-button {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .cta-button.primary {
-    background-color: #FF9933;
-    color: white;
-    border: none;
-    margin-top: 1rem;
-    padding: 0.75rem 3rem;
-  }
-
-  .cta-button.secondary {
-    background-color: white;
-    color: #FF9933;
-    border: 2px solid #FF9933;
-  }
-
-  .cta-button:hover {
-    opacity: 0.9;
-  }
-
-  @media (max-width: 350px) {
-    .cta-button {
-      font-size: 0.8rem;
-      padding: 0.5rem 0.25rem;
-    }
-  }
-
-  :global(.dark) .quote-container {
-    background-color: #2c3e50;
-  }
-
-  :global(.dark) .cta-button.primary {
-    background: linear-gradient(135deg, #FF9933, #FF6600); /* Orange gradient */
-    color: #ffffff;
-  }
-
-  :global(.dark) .cta-button.secondary {
-    background-color: #2c3e50;
-    color: #FF9933; /* Lighter orange */
-    border-color: #FF9933; /* Lighter orange */
-  }
-
-  :global(.dark) .cta-button.primary:hover {
-    background: linear-gradient(135deg, #FFB366, #FF8533); /* Lighter orange gradient on hover */
-  }
-
-  :global(.dark) .cta-button.secondary:hover {
-    background-color: #34495e;
-    border-color: #FFB366; /* Lighter orange on hover */
-    color: #FFB366; /* Lighter orange on hover */
-  }
-
-  .skool-button {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    margin-top: 1rem;
-    background-color: transparent;
-    color: #FF9933;
-    border: 2px solid #FF9933;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .skool-button:hover {
-    background-color: #FF9933;
-    color: white;
-  }
-
-  :global(.dark) .skool-button {
-    color: #FFB366;
-    border-color: #FFB366;
-  }
-
-  :global(.dark) .skool-button:hover {
-    background-color: #FFB366;
-    color: #2c3e50;
-  }
-
-  .StS-book-image {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .community-intro,
-  .resources-section,
-  .book-preview,
-  .mission-statement {
-    margin-bottom: 2rem;
-  }
-
-  .community-intro .description,
-  .resources-section .description,
-  .book-preview .book-description,
-  .mission-statement .description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--color-text-secondary);
-    margin-bottom: 1rem;
-  }
-
-  .wtf-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .wtf-list li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.5rem;
-  }
-
-  .wtf-list li::before {
-    content: "🤖";
-    position: absolute;
-    left: 0;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .kit-item {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    background-color: var(--color-bg-primary);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
-  .kit-image {
-    flex: 1;
-    max-width: 50%;
+  .kit-item img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    object-fit: cover;
+    margin-right: 1rem;
   }
 
   .kit-info {
-    flex: 1;
+    flex-grow: 1;
   }
 
-  .surfer-section {
-    background-color: var(--color-background-secondary);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-
-  .surfer-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--color-text-primary);
-  }
-
-  .surfer-section p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: var(--color-text-secondary);
-  }
-
-  .surfer-section .cta-button {
-    display: inline-block;
-    margin-top: 0.5rem;
-  }
-
-  .osm {
+  .urgency {
+    color: var(--color-danger);
     font-weight: bold;
-    font-size: 1.1rem;
-  }
-
-  .final-cta-section {
-    background-color: var(--color-background-secondary);
-    padding: 2rem;
-    border-radius: 8px;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .final-cta-content {
-    flex: 1;
-  }
-
-  .final-cta-image {
-    flex: 1;
-    max-width: 50%;
-  }
-
-  .sts-chess-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .pulse-animation {
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  .testimonial-section {
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  .testimonial-header {
-    font-size: 1.8rem;
-    color: var(--color-text-primary);
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-  }
-
-  .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .testimonial {
-    font-style: italic;
-    background-color: var(--color-background-secondary);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-
-  .testimonial:hover {
-    transform: translateY(-5px);
-  }
-
-  .testimonial-author {
-    display: block;
-    margin-top: 0.5rem;
-    font-weight: bold;
-    color: var(--color-text-secondary);
-  }
-
-  .countdown-section {
-    margin-top: 2rem;
-    text-align: center;
-    background-color: var(--color-background-secondary);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .countdown-header {
-    font-size: 1.5rem;
-    color: var(--color-text-primary);
-    margin-bottom: 1rem;
-  }
-
-  .countdown-cta {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--color-text-primary);
     margin-top: 1rem;
   }
 
-  .center-text {
-    text-align: center;
+  .cta-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-text-on-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
   }
 
-  @media (max-width: 600px) {
-    .main-content {
-      padding: 1rem 0.5rem;
-    }
-
-    .title {
-      font-size: 2rem;
-    }
-
-    .subtitle {
-      font-size: 1rem;
-    }
-
-    .section-title {
-      font-size: 1.5rem;
-    }
-
-    .description {
-      font-size: 0.9rem;
-    }
-
-    .final-cta-content .description {
-      font-size: 0.9rem;
-      font-weight: bold;
-    }
-
-    .kit-item {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 1rem;
-    }
-
-    .kit-image {
-      max-width: 80%;
-    }
-
-    .kit-info {
-      width: 100%;
-    }
-
-    .StS-book-image {
-      max-width: 80%;
-    }
-
-    .testimonial-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .cta-button,
-    .skool-button {
-      width: 100%;
-      max-width: 300px;
-      margin: 0.5rem auto;
-    }
-
-    .cta-button,
-    .skool-button {
-      font-size: 0.9rem;
-      padding: 0.6rem 0.8rem;
-    }
-
-    .testimonial {
-      padding: 1rem;
-    }
-
-    .countdown-section {
-      padding: 1rem;
-    }
-
-    .countdown-header {
-      font-size: 1.2rem;
-    }
-
-    .countdown-cta {
-      font-size: 1rem;
-    }
+  .cta-button:hover {
+    background-color: var(--color-primary-dark);
   }
 
-  @media (max-width: 768px) {
-    .kit-item {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 1rem;
-    }
+  /* Dark mode adjustments */
+  :global(.dark) {
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #cccccc;
+    --color-bg-primary: #1a1a1a;
+    --color-bg-secondary: #2c2c2c;
+    --color-border: #444444;
+    --color-primary: #4a90e2;
+    --color-primary-dark: #3a7bc8;
+    --color-text-on-primary: #ffffff;
+    --color-danger: #ff6b6b;
+  }
 
-    .kit-image {
-      max-width: 80%;
-    }
-
-    .kit-info {
-      width: 100%;
-    }
-
-    .final-cta-section {
-      flex-direction: column-reverse;
-      text-align: center;
-    }
-
-    .final-cta-image {
-      max-width: 100%;
-      margin-bottom: 1rem;
-    }
+  /* Light mode colors */
+  :global(:not(.dark)) {
+    --color-text-primary: #333333;
+    --color-text-secondary: #666666;
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f0f0f0;
+    --color-border: #e0e0e0;
+    --color-primary: #3a7bc8;
+    --color-primary-dark: #2c5d99;
+    --color-text-on-primary: #ffffff;
+    --color-danger: #d32f2f;
   }
 </style>

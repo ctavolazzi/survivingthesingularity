@@ -1,0 +1,92 @@
+[
+    {
+      "text": "The Singularity is near.",
+      "author": "Ray Kurzweil",
+      "source": "The Singularity Is Near",
+      "year": 2005,
+      "categories": ["AI", "futurism", "technology"],
+      "relevantSections": ["introduction", "AI development", "future predictions"],
+      "language": "en"
+    },
+    {
+      "text": "The future is already here – it's just not evenly distributed.",
+      "author": "William Gibson",
+      "source": "The Economist",
+      "year": 2003,
+      "categories": ["technology", "society"],
+      "relevantSections": ["introduction", "technology impact"],
+      "language": "en"
+    },
+    {
+      "text": "We are on the edge of change comparable to the rise of human life on Earth.",
+      "author": "Vernor Vinge",
+      "source": "The Coming Technological Singularity",
+      "year": 1993,
+      "categories": ["AI", "singularity", "futurism"],
+      "relevantSections": ["introduction", "AI impact", "future scenarios"],
+      "language": "en"
+    },
+    {
+      "text": "The development of full artificial intelligence could spell the end of the human race.",
+      "author": "Stephen Hawking",
+      "source": "BBC Interview",
+      "year": 2014,
+      "categories": ["AI", "existential risk"],
+      "relevantSections": ["AI risks", "future challenges"],
+      "language": "en"
+    },
+    {
+      "text": "I visualize a time when we will be to robots what dogs are to humans, and I'm rooting for the machines.",
+      "author": "Claude Shannon",
+      "source": "Omni Magazine",
+      "year": 1987,
+      "categories": ["AI", "robotics", "future society"],
+      "relevantSections": ["AI development", "human-machine relationship"],
+      "language": "en"
+    },
+    {
+      "text": "By far, the greatest danger of Artificial Intelligence is that people conclude too early that they understand it.",
+      "author": "Eliezer Yudkowsky",
+      "source": "Artificial Intelligence as a Positive and Negative Factor in Global Risk",
+      "year": 2008,
+      "categories": ["AI", "risk assessment", "understanding AI"],
+      "relevantSections": ["AI challenges", "misconceptions about AI"],
+      "language": "en"
+    },
+    {
+      "text": "The human brain has 100 billion neurons, each neuron connected to 10 thousand other neurons. Sitting on your shoulders is the most complicated object in the known universe.",
+      "author": "Michio Kaku",
+      "source": "The Future of the Mind",
+      "year": 2014,
+      "categories": ["neuroscience", "human intelligence", "complexity"],
+      "relevantSections": ["human cognition", "brain complexity"],
+      "language": "en"
+    },
+    {
+      "text": "Artificial intelligence will reach human levels by around 2029. Follow that out further to, say, 2045, we will have multiplied the intelligence, the human biological machine intelligence of our civilization a billion-fold.",
+      "author": "Ray Kurzweil",
+      "source": "TED Talk",
+      "year": 2005,
+      "categories": ["AI", "singularity", "future predictions"],
+      "relevantSections": ["AI development timeline", "future scenarios"],
+      "language": "en"
+    },
+    {
+      "text": "The pace of progress in artificial intelligence is incredibly fast. Unless you have direct exposure to groups like Deepmind, you have no idea how fast—it is growing at a pace close to exponential.",
+      "author": "Elon Musk",
+      "source": "Edge.org",
+      "year": 2015,
+      "categories": ["AI", "technological progress", "AI development"],
+      "relevantSections": ["AI advancements", "future challenges"],
+      "language": "en"
+    },
+    {
+      "text": "I believe that at the end of the century the use of words and general educated opinion will have altered so much that one will be able to speak of machines thinking without expecting to be contradicted.",
+      "author": "Alan Turing",
+      "source": "Computing Machinery and Intelligence",
+      "year": 1950,
+      "categories": ["AI", "machine intelligence", "future predictions"],
+      "relevantSections": ["AI development", "future of machine intelligence"],
+      "language": "en"
+    }
+  ]

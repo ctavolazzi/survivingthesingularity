@@ -1,0 +1,119 @@
+[
+  {
+    "text": "The real question is not whether machines think but whether men do.",
+    "author": "B.F. Skinner",
+    "source": "Contingencies of Reinforcement: A Theoretical Analysis",
+    "year": 1969,
+    "categories": ["AI", "human cognition", "philosophy"],
+    "relevantSections": ["nature of intelligence", "human-machine comparison"],
+    "language": "en"
+  },
+  {
+    "text": "A year spent in artificial intelligence is enough to make one believe in God.",
+    "author": "Alan Perlis",
+    "source": "Epigrams on Programming",
+    "year": 1982,
+    "categories": ["AI", "complexity", "philosophy"],
+    "relevantSections": ["AI challenges", "limits of human understanding"],
+    "language": "en"
+  },
+  {
+    "text": "The question of whether a computer can think is no more interesting than the question of whether a submarine can swim.",
+    "author": "Edsger W. Dijkstra",
+    "source": "The Threats to Computing Science",
+    "year": 1984,
+    "categories": ["AI", "computer science", "philosophy"],
+    "relevantSections": ["nature of intelligence", "AI misconceptions"],
+    "language": "en"
+  },
+  {
+    "text": "Artificial intelligence is the science of making machines do things that would require intelligence if done by men.",
+    "author": "Marvin Minsky",
+    "source": "Semantic Information Processing",
+    "year": 1968,
+    "categories": ["AI", "machine intelligence", "cognitive science"],
+    "relevantSections": ["defining AI", "AI capabilities"],
+    "language": "en"
+  },
+  {
+    "text": "The sad thing about artificial intelligence is that it lacks artifice and therefore intelligence.",
+    "author": "Jean Baudrillard",
+    "source": "Cool Memories",
+    "year": 1987,
+    "categories": ["AI", "philosophy", "critique"],
+    "relevantSections": ["AI limitations", "nature of intelligence"],
+    "language": "en"
+  },
+  {
+    "text": "The coming era of Artificial Intelligence will not be the era of war, but be the era of deep compassion, non-violence, and love.",
+    "author": "Amit Ray",
+    "source": "Compassionate Artificial Intelligence",
+    "year": 2018,
+    "categories": ["AI", "ethics", "future society"],
+    "relevantSections": ["AI ethics", "positive AI outcomes"],
+    "language": "en"
+  },
+  {
+    "text": "Some people worry that artificial intelligence will make us feel inferior, but then, anybody in his right mind should have an inferiority complex every time he looks at a flower.",
+    "author": "Alan Kay",
+    "source": "Interview in EDGE",
+    "year": 2019,
+    "categories": ["AI", "nature", "human perspective"],
+    "relevantSections": ["AI impact on society", "human-AI relationship"],
+    "language": "en"
+  },
+  {
+    "text": "The key to artificial intelligence has always been the representation.",
+    "author": "Jeff Hawkins",
+    "source": "On Intelligence",
+    "year": 2004,
+    "categories": ["AI", "cognitive science", "machine learning"],
+    "relevantSections": ["AI fundamentals", "machine learning concepts"],
+    "language": "en"
+  },
+  {
+    "text": "Artificial intelligence is growing up fast, as are robots whose facial expressions can elicit empathy and make your mirror neurons quiver.",
+    "author": "Diane Ackerman",
+    "source": "The Human Age: The World Shaped by Us",
+    "year": 2014,
+    "categories": ["AI", "robotics", "neuroscience"],
+    "relevantSections": ["AI advancements", "human-robot interaction"],
+    "language": "en"
+  },
+  {
+    "text": "The question isn't whether intelligent machines can have emotions, but whether machines can be intelligent without having emotions.",
+    "author": "Marvin Minsky",
+    "source": "The Emotion Machine",
+    "year": 2006,
+    "categories": ["AI", "emotions", "machine intelligence"],
+    "relevantSections": ["AI and emotions", "nature of intelligence"],
+    "language": "en"
+  },
+  {
+    "text": "AI doesn't have to be evil to destroy humanity – if AI has a goal and humanity just happens to come in the way, it will destroy humanity as a matter of course without even thinking about it, no hard feelings.",
+    "author": "Elon Musk",
+    "source": "Aeon Interview",
+    "year": 2014,
+    "categories": ["AI", "existential risk", "AI alignment"],
+    "relevantSections": ["AI risks", "importance of AI alignment"],
+    "language": "en"
+  },
+  {
+    "text": "The ultimate search engine would basically understand everything in the world, and it would always give you the right thing. And we're a long, long ways from that.",
+    "author": "Larry Page",
+    "source": "TED Conference",
+    "year": 2014,
+    "categories": ["AI", "search engines", "information processing"],
+    "relevantSections": ["AI applications", "future of information technology"],
+    "language": "en"
+  },
+  {
+    "text": "It's going to be interesting to see how society deals with artificial intelligence, but it will definitely be cool.",
+    "author": "Colin Angle",
+    "source": "Interview with The Boston Globe",
+    "year": 2015,
+    "categories": ["AI", "society", "future impact"],
+    "relevantSections": ["AI and society", "future scenarios"],
+    "language": "en"
+  }
+]

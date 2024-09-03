@@ -5,11 +5,43 @@ export default {
     "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}"
   ],
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('@tailwindcss/typography'),
   ],
   darkMode: 'class',
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '65ch',
+            color: 'inherit',
+            a: {
+              color: '#ff7708',
+              '&:hover': {
+                color: '#ff9933',
+              },
+            },
+            h1: {
+              color: '#ff7708',
+              fontFamily: 'Orbitron, sans-serif',
+            },
+            h2: {
+              color: '#ff7708',
+              fontFamily: 'Orbitron, sans-serif',
+            },
+            h3: {
+              color: '#ff7708',
+              fontFamily: 'Orbitron, sans-serif',
+            },
+            h4: {
+              color: '#ff7708',
+              fontFamily: 'Orbitron, sans-serif',
+            },
+            // ... you can add more specific styles here
+          },
+        },
+      },
       colors: {
         // flowbite-svelte
         primary: {

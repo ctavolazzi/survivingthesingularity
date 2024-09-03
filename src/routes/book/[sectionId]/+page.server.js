@@ -1,20 +1,19 @@
-import { readFile } from 'fs/promises';
-import { join } from 'path';
 import { error } from '@sveltejs/kit';
+import { book, sections } from '$lib/bookContent';
 
 export async function load({ params }) {
   try {
-    const bookPath = join(process.cwd(), 'src', 'lib', 'data', 'book', 'book.json');
-    const bookContent = await readFile(bookPath, 'utf-8');
-    const book = JSON.parse(bookContent);
-
     const section = book.sections.find(s => s.id === params.sectionId);
     if (!section) {
       throw error(404, 'Section not found');
     }
 
-    const contentPath = join(process.cwd(), 'src', 'lib', 'data', 'book', section.file);
-    const content = await readFile(contentPath, 'utf-8');
+    const contentLoader = sections[section.id];
+    if (!contentLoader) {
+      throw error(404, 'Content not found');
+    }
+
+    const content = await contentLoader();
 
     return {
       book,

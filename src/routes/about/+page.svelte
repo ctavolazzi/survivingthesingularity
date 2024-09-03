@@ -3,87 +3,110 @@
   import FAQ from '$lib/components/FAQ.svelte';
   import Countdown from '$lib/components/Countdown.svelte';
   import AIThreatMeter from '$lib/components/AIThreatMeter.svelte';
-  import StSFreeGuideImage from '$lib/images/StSFreeGuide.png';
+  import BookSample from '$lib/components/BookSample.svelte';
+  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+  import Spacer from '$lib/components/Spacer.svelte';
+  import SkoolGroup from '$lib/components/SkoolGroup.svelte';
 
-  const targetDate = new Date("2027-01-01T00:00:00").getTime(); // Adjust as needed
+  const targetDate = new Date("2027-11-20T23:59:59").getTime();
+
+  import { onMount } from 'svelte';
+
+  let showContent = false;
+
+  onMount(() => {
+    showContent = true;
+  });
 </script>
 
-<div class="about-container">
-  <header>
-    <h1 class="title" in:fly="{{ y: -20, duration: 500 }}">About Surviving the Singularity</h1>
-    <p class="subtitle" in:fly="{{ y: 20, duration: 500, delay: 200 }}">Navigate the AI Revolution with Confidence</p>
+<Spacer height="50px" />
+
+<div class="about-container bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+  <header class="mb-8">
+    <h1 class="title text-4xl md:text-5xl font-bold mb-4" in:fly="{{ y: -20, duration: 500 }}">About Surviving the Singularity</h1>
+    <p class="subtitle text-xl md:text-2xl text-gray-600 dark:text-gray-400" in:fly="{{ y: 20, duration: 500, delay: 200 }}">Navigate the AI Revolution Together</p>
   </header>
 
-  <section class="intro" in:fade="{{ duration: 500, delay: 400 }}">
-    <p>The AI revolution isn't coming—it's already here. At Surviving the Singularity, we're not just observing this transformation; we're equipping you to thrive in it.</p>
-  </section>
+  <section class="book-info mb-12" in:fade="{{ duration: 500, delay: 800 }}">
+    <h2 class="text-3xl font-bold mb-6">More Than Just a Book</h2>
+    
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <p class="mb-4 text-lg">"Surviving the Singularity" is a revolutionary multi-format experience designed to guide you through the AI revolution:</p>
+        <ul class="list-disc list-inside space-y-2 mb-6">
+          <li><strong>Interactive Workbook:</strong> Engage with thought-provoking exercises and scenarios to deepen your understanding of AI's impact.</li>
+          <li><strong>Personal AI Journal:</strong> Document your journey and insights as you navigate the rapidly evolving AI landscape.</li>
+          <li><strong>Exclusive Digital Content:</strong> Access hidden rabbit holes of knowledge via QR codes, unlocking additional resources and cutting-edge information.</li>
+          <li><strong>Self-Guided Research Tool:</strong> Embark on your own AI exploration with curated starting points and guided inquiry methods.</li>
+          <li><strong>Future-Proofing Strategies:</strong> Develop practical skills and mindsets to thrive in an AI-driven world.</li>
+        </ul>
+        <BookSample />
+    <div class="mt-8 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+      <h3 class="text-2xl font-bold mb-4">Experience the Future of Learning</h3>
+      <p class="mb-4">Our innovative QR code system allows you to:</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Access exclusive online content updated in real-time</li>
+        <li>Dive deep into AI topics with curated resources</li>
+        <li>Participate in community discussions and expert Q&As</li>
+        <li>Track your progress and unlock achievements</li>
+      </ul>
+    </div>
 
-  <section class="why-join" in:fade="{{ duration: 500, delay: 600 }}">
-    <h2>Why Join Our AI Mastery Community?</h2>
-    <ol>
-      <li><strong>Curated, Actionable Insights:</strong> Cut through the noise with our expertly curated content on the latest AI advancements and their real-world applications.</li>
-      <li><strong>Practical Implementation Strategies:</strong> Learn how to leverage AI tools and techniques to enhance your career, business, and personal growth.</li>
-      <li><strong>Exclusive AI Innovators Network:</strong> Connect with forward-thinking professionals, industry experts, and AI enthusiasts who are shaping the future.</li>
-      <li><strong>Weekly Mastery Sessions:</strong> Dive deep into AI concepts, tools, and strategies with our live interactive sessions led by industry experts.</li>
-      <li><strong>Personalized Learning Paths:</strong> Whether you're an AI novice or a seasoned pro, our community offers tailored content to accelerate your growth.</li>
-      <li><strong>Ethical AI Framework:</strong> Understand the societal impacts of AI and learn how to implement AI responsibly and ethically.</li>
-    </ol>
-  </section>
-
-  <section class="approach" in:fade="{{ duration: 500, delay: 800 }}">
-    <h2>Our Approach: Informed Optimism</h2>
-    <p>We believe in embracing AI's potential while maintaining a critical perspective. Our community fosters:</p>
-    <ul>
-      <li><strong>Curiosity:</strong> We encourage continuous learning and exploration of AI's possibilities.</li>
-      <li><strong>Critical Thinking:</strong> We analyze AI developments with a balanced, informed approach.</li>
-      <li><strong>Creativity:</strong> We inspire innovative applications of AI across various industries.</li>
-      <li><strong>Community:</strong> We support each other in navigating the challenges and opportunities of the AI age.</li>
-    </ul>
-  </section>
-
-  <section class="survival-kit" in:fade="{{ duration: 500, delay: 1000 }}">
-    <h2>Your Singularity Survival Kit</h2>
-    <p>Get started with our free guide to navigating the AI revolution</p>
-    <div class="kit-items">
-      <div class="kit-item">
-        <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" />
-        <div class="kit-info">
-          <h3>Surviving the Singularity: Free Guide</h3>
-          <p>Your first step in preparing for the AI-driven future. Download now and start your journey!</p>
-          <a href="/download" class="cta-button">Download Free Guide</a>
-        </div>
+    <div class="mt-8 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+      <h3 class="text-2xl font-bold mb-4">What Early Adopters Are Saying</h3>
+      <div class="space-y-4">
+        <blockquote class="italic">
+          "This isn't just a book, it's a personal AI revolution in your hands. The interactive elements and QR codes make learning about AI an exciting journey of discovery."
+          <footer class="text-right">- Emma Rodriguez, Tech Entrepreneur</footer>
+        </blockquote>
+        <blockquote class="italic">
+          "The workbook and journal aspects helped me apply AI concepts to my own life and career in ways I never imagined. A truly transformative experience!"
+          <footer class="text-right">- Dr. James Lee, Futurist</footer>
+        </blockquote>
       </div>
+    </div>
+    
+  </section>
+
+  <!-- <SkoolGroup /> -->
+  
+  <FAQ />
+
+  <section class="intro mb-8" in:fade="{{ duration: 500, delay: 400 }}">
+    <p class="text-lg">Surviving the Singularity is a vibrant community of like-minded individuals navigating the AI revolution together. We're here to help each other stay informed, get ahead, and understand the transformative impact of AI on our world.</p>
+  </section>
+
+  <section class="community-info mb-8" in:fade="{{ duration: 500, delay: 600 }}">
+    <h2 class="text-3xl font-bold mb-4">Join Our Supportive AI Community</h2>
+    <p class="mb-4">Our community is a space where members:</p>
+    <ul class="list-disc list-inside space-y-2">
+      <li><strong>Share Insights:</strong> Post about the latest AI developments and their implications.</li>
+      <li><strong>Collaborate:</strong> Help each other understand and contextualize new technologies.</li>
+      <li><strong>Stay Ahead:</strong> Access curated content and discussions to remain at the forefront of AI advancements.</li>
+      <li><strong>Support Growth:</strong> Encourage and assist one another in personal and professional development.</li>
+      <li><strong>Navigate Change:</strong> Work together to adapt to the rapidly transforming AI landscape.</li>
+    </ul>
+    <CommunityIntakePopupForm />
+  </section>
+
+  <section class="newsletter mb-8" in:fade="{{ duration: 500, delay: 1000 }}">
+    <h2 class="text-3xl font-bold mb-4">Stay Informed</h2>
+    <p class="mb-4">Join our newsletter to receive regular updates on AI advancements and community insights.</p>
+    <NewsletterSignup />
+  </section>
+
+  <p class="text-lg text-center">What's your risk tolerance?</p>
+  <AIThreatMeter />
+
+
+  <section class="countdown mb-8" in:fade="{{ duration: 500, delay: 1200 }}">
+    <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+      <Countdown targetDate={targetDate} />
+      <p class="mt-4 text-lg">The technological singularity is approaching rapidly. This countdown represents our estimated timeline to the mass production of human-level AI robots, but the exact moment is unpredictable. Will you be prepared?</p>
     </div>
   </section>
 
-  <AIThreatMeter />
-
-  <section class="join-skool" in:fade="{{ duration: 500, delay: 1200 }}">
-    <h2>Join the AI Mastery Guild on Skool</h2>
-    <p>Secure your spot in our exclusive community and gain access to:</p>
-    <ul>
-      <li><strong>Cutting-Edge AI Tools:</strong> Stay ahead with early access to emerging AI technologies.</li>
-      <li><strong>Implementation Playbooks:</strong> Step-by-step guides to apply AI in your work and life.</li>
-      <li><strong>Expert-Led Workshops:</strong> Learn from AI pioneers and industry leaders.</li>
-      <li><strong>Peer Networking:</strong> Collaborate with like-minded individuals on AI projects and ideas.</li>
-      <li><strong>Resource Library:</strong> Access our comprehensive collection of AI research, case studies, and tutorials.</li>
-    </ul>
-  </section>
-
-  <section class="cta" in:fade="{{ duration: 500, delay: 1400 }}">
-    <h2>Your AI Future Starts Here</h2>
-    <p>Don't just survive the AI revolution—lead it. Join Surviving the Singularity and transform uncertainty into opportunity.</p>
-    <a href="/join-skool" class="cta-button">Secure Your Lifetime Membership Now</a>
-    <p class="urgency">Limited spots available at current pricing. Invest in your future today!</p>
-  </section>
-
-  <FAQ />
-
-  <section class="countdown" in:fade="{{ duration: 500, delay: 1600 }}">
-    <h2>Time Left Until the Singularity</h2>
-    <Countdown targetDate={targetDate} />
-    <p>Don't let AI catch you unprepared.</p>
-  </section>
 </div>
 
 <style>
@@ -91,121 +114,11 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    font-family: Arial, sans-serif;
   }
 
-  .title {
-    font-size: 2.5rem;
-    color: var(--color-text-primary);
-  }
-
-  .subtitle {
-    font-size: 1.2rem;
-    color: var(--color-text-secondary);
-  }
-
-  section {
-    margin-bottom: 3rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    color: var(--color-text-primary);
-    margin-bottom: 1rem;
-  }
-
-  .intro, .why-join, .approach, .join-skool {
-    margin-bottom: 2rem;
-  }
-
-  ol, ul {
-    padding-left: 1.5rem;
-  }
-
-  li {
-    margin-bottom: 0.5rem;
-  }
-
-  .survival-kit {
-    background-color: var(--color-bg-secondary);
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-  }
-
-  .kit-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .kit-item {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-bg-primary);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .kit-item img {
-    width: 150px; /* Adjust as needed */
-    height: auto;
-    object-fit: cover;
-    margin-right: 1rem;
-  }
-
-  .kit-info {
-    flex-grow: 1;
-  }
-
-  .urgency {
-    color: var(--color-danger);
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-
-  .cta-button {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: var(--color-text-on-primary);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
-    border: none;
-    cursor: pointer;
-  }
-
-  .cta-button:hover {
-    background-color: var(--color-primary-dark);
-  }
-
-  /* Dark mode adjustments */
-  :global(.dark) {
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #cccccc;
-    --color-bg-primary: #1a1a1a;
-    --color-bg-secondary: #2c2c2c;
-    --color-border: #444444;
-    --color-primary: #4a90e2;
-    --color-primary-dark: #3a7bc8;
-    --color-text-on-primary: #ffffff;
-    --color-danger: #ff6b6b;
-  }
-
-  /* Light mode colors */
-  :global(:not(.dark)) {
-    --color-text-primary: #333333;
-    --color-text-secondary: #666666;
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f0f0f0;
-    --color-border: #e0e0e0;
-    --color-primary: #3a7bc8;
-    --color-primary-dark: #2c5d99;
-    --color-text-on-primary: #ffffff;
-    --color-danger: #d32f2f;
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 1rem;
+    }
   }
 </style>

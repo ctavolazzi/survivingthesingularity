@@ -53,7 +53,7 @@
   <!-- Top link -->
   <div class="mt-4 mb-4 text-center">
     <a href="/book" class="toc-link">
-      <span class="icon">&#8592;</span> Back to Table of Contents
+      Back to Table of Contents
     </a>
   </div>
 
@@ -75,7 +75,7 @@
   <!-- Bottom link -->
   <div class="mt-8 mb-4 text-center">
     <a href="/book" class="toc-link">
-      <span class="icon">&#8592;</span> Back to Table of Contents
+      Back to Table of Contents
     </a>
   </div>
 

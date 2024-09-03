@@ -729,18 +729,29 @@
   }
 
   .prev-button {
-    background: none;
-    color: #4a5568;
-    border: 2px solid #e2e8f0;
+    background: none !important;
+    color: #000000 !important; /* Dark text for light mode */
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
   }
 
-  .next-button:hover, .prev-button:hover {
-    opacity: 0.9;
+  .prev-button:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important; /* Slight background on hover */
   }
 
   :global(.dark) .prev-button {
-    color: #e2e8f0;
-    border-color: #4a5568;
+    color: #ffffff !important; /* White text for dark mode */
+  }
+
+  :global(.dark) .prev-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important; /* Slight background on hover in dark mode */
   }
 
   .arrow {
@@ -798,6 +809,12 @@
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for better readability */
+    font-weight: 600; /* Slightly bolder text for better visibility */
+  }
+
+  :global(.dark) .prev-button, :global(.dark) .next-button {
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.1); /* Subtle text shadow for dark mode */
   }
 
   .prev-button {

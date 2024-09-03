@@ -9,6 +9,9 @@
   import Countdown from '$lib/components/Countdown.svelte';
   import StSFreeGuideImage from '$lib/images/StSFreeGuide.png';
   import Spacer from '$lib/components/Spacer.svelte';
+  import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
+  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
+  import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
 
   let showPopup = false;
   const targetDate = new Date("2027-11-20T23:59:59").getTime();
@@ -127,6 +130,10 @@
     </div>
   </div>
 {/if}
+
+<FloatingPopupProgressBar />
+<CommunityIntakePopupForm />
+<FloatingQuotePopup initialDelay={12000} />
 
 <style>
   :global(body) {

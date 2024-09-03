@@ -5,13 +5,16 @@
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import BookSample from '$lib/components/BookSample.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
+  import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
+  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
+  import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
 
   const targetDate = new Date("2027-11-20T23:59:59").getTime();
 </script>
 
 <Spacer height="50px" />
 
-<div class="main-content">
+<div class="main-content text-center">
   <header>
     <h1 class="title">About Surviving the Singularity</h1>
     <p class="subtitle">Navigate the AI Revolution Together</p>
@@ -88,16 +91,29 @@
   <section class="countdown">
     <div class="countdown-container">
       <Countdown {targetDate} />
-      <p>The technological singularity is approaching rapidly. Will you be prepared?</p>
+      <p class="text-center">The technological singularity is approaching rapidly.</p>
+      <p class="text-center large-text">Will you be prepared?</p>
+      <div class="text-center">
+        <p><em>This timer is our estimate of when human-level robots with general intelligence will begin to be mass-produced and available to the public.</em></p>
+        <p>
+          If that makes you feel anxious, or excited, or both, we'd love to have you join us on this journey.
+        </p>
+        <p>
+          <button class="big-button">Get a free sample</button>
+        </p>
+      </div>
     </div>
   </section>
 
   <Spacer height="1rem"/>
 </div>
 
-<style>
+<FloatingPopupProgressBar />
+<CommunityIntakePopupForm />
+<FloatingQuotePopup minDelay={20000} />
 
-.book-info {
+<style>
+  .book-info {
     text-align: center;
     margin-bottom: 3rem;
     width: 100%;
@@ -266,5 +282,97 @@
   :global(.dark) .placeholder-image {
     background-color: #2a2a2a;
     color: #9ca3af;
+  }
+
+  .large-text {
+    font-size: 1.5rem; /* Equivalent to text-2xl in Tailwind */
+    line-height: 2rem;
+  }
+
+  @keyframes pulse-glow {
+    0% {
+      box-shadow: 0 0 5px #FF8C00, 0 0 10px #FF8C00, 0 0 15px #FF8C00;
+    }
+    50% {
+      box-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500, 0 0 30px #FFA500;
+    }
+    100% {
+      box-shadow: 0 0 5px #FF8C00, 0 0 10px #FF8C00, 0 0 15px #FF8C00;
+    }
+  }
+
+  .big-button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #FF8C00; /* Dark Orange */
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    animation: pulse-glow 2s infinite;
+  }
+
+  .big-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,215,0,0.3) 0%, rgba(255,165,0,0.1) 50%, rgba(255,140,0,0) 70%);
+    transform: scale(0);
+    transition: transform 0.6s ease-out;
+  }
+
+  .big-button:hover {
+    background-color: #FFA500; /* Brighter Orange */
+    transform: scale(1.05);
+    animation: pulse-glow 1s infinite;
+  }
+
+  .big-button:hover::before {
+    transform: scale(1);
+  }
+
+  .big-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.5), 0 0 25px rgba(255, 165, 0, 0.7);
+  }
+
+  /* Dark mode styles */
+  :global(.dark) .big-button {
+    background-color: #FFA500; /* Brighter Orange for dark mode */
+    color: #1a1a1a; /* Dark text for contrast */
+  }
+
+  :global(.dark) .big-button:hover {
+    background-color: #FFD700; /* Gold */
+  }
+
+  :global(.dark) .big-button {
+    animation: pulse-glow-dark 2s infinite;
+  }
+
+  :global(.dark) .big-button:hover {
+    animation: pulse-glow-dark 1s infinite;
+  }
+
+  @keyframes pulse-glow-dark {
+    0% {
+      box-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500;
+    }
+    50% {
+      box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+    100% {
+      box-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500;
+    }
   }
 </style>

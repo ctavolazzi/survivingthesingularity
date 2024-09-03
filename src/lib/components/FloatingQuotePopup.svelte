@@ -5,6 +5,8 @@
     import quotes from '$lib/data/quotes.json';
     import moreQuotes from '$lib/data/more_quotes.json';
 
+    export let initialDelay = 20000; // Minimum 20 seconds for the first quote
+    
     let visible = false;
     let currentQuote = null;
 
@@ -26,21 +28,24 @@
         goto('/about');
     }
 
+    function getRandomDelay() {
+        return Math.floor(Math.random() * (30000 - 10000) + 10000); // Random between 10 and 30 seconds
+    }
+
     onMount(() => {
         function scheduleNextQuote() {
-            const randomDelay = Math.floor(Math.random() * (60000 - 20000) + 20000);
             setTimeout(() => {
                 showNewQuote();
                 scheduleNextQuote();
-            }, randomDelay);
+            }, getRandomDelay());
         }
         
-        const initialDelay = setTimeout(() => {
+        const initialTimer = setTimeout(() => {
             showNewQuote();
             scheduleNextQuote();
-        }, 10000);
+        }, initialDelay);
 
-        return () => clearTimeout(initialDelay);
+        return () => clearTimeout(initialTimer);
     });
 </script>
 

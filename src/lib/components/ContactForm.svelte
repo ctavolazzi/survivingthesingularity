@@ -92,8 +92,8 @@
         </div>
       </div>
     {/if}
+    <p class="disclaimer">We respect your privacy and will never share your information.</p>
   </div>
-  <p class="disclaimer">We respect your privacy and will never share your information.</p>
 </div>
 
 <style>
@@ -115,9 +115,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: 600px; /* Fixed height */
+    height: auto; /* Change from fixed height to auto */
+    min-height: 600px; /* Minimum height instead of fixed */
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Changed from flex-start */
   }
 
   :global(.dark) .contact-form {
@@ -136,6 +138,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  form, .response-message {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   h2 {
@@ -234,9 +242,10 @@
   .disclaimer {
     font-size: 0.8rem;
     text-align: center;
-    margin-top: 1rem;
     color: var(--disclaimer-color);
-    margin-bottom: 0; /* Remove bottom margin */
+    padding-top: 1rem; /* Added padding */
+    margin-top: auto; /* Push to the bottom */
+    margin-bottom: 0;
   }
 
   @media (max-width: 768px) {
@@ -244,7 +253,7 @@
       padding: 1rem;
       margin: 1rem auto;
       height: auto; /* Change fixed height to auto */
-      min-height: unset; /* Remove minimum height constraint */
+      min-height: auto; /* Remove minimum height on mobile */
     }
 
     .explore-options {

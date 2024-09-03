@@ -2,6 +2,7 @@
   import { posts } from '$lib/data/blog-posts/blogPosts.js';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import SkoolGroup from '$lib/components/SkoolGroup.svelte';
+  import Spacer from '$lib/components/Spacer.svelte';
 
   function handleJoinSkool() {
     // Handle join action (you can implement this later)
@@ -17,28 +18,33 @@
       <p>🚀 <em>Prepare for the future. Gain insights. Stay ahead of the curve.</em></p>
     </div>
 
-    <NewsletterSignup />
-
+    
+    
     <h2 id="latest-posts" class="section-title">Latest Posts</h2>
+    <div class="stylish-divider"></div>
     <div class="post-grid">
       {#each posts as post}
-        <a href="/blog/{post.slug}" class="post-card-link">
-          <div class="post-card">
-            <img src={post.image} alt={post.title} class="post-image" />
-            <div class="post-content">
-              <h2 class="post-title">{post.title}</h2>
-              <p class="post-meta">
-                <span class="post-date">{post.date}</span> • 
-                <span class="post-author">By {post.author}</span>
-              </p>
-              <p class="post-excerpt">{post.excerpt}</p>
-              <span class="read-more">Read more →</span>
-            </div>
+      <a href="/blog/{post.slug}" class="post-card-link">
+        <div class="post-card">
+          <img src={post.image} alt={post.title} class="post-image" />
+          <div class="post-content">
+            <h2 class="post-title">{post.title}</h2>
+            <p class="post-meta">
+              <span class="post-date">{post.date}</span> • 
+              <span class="post-author">By {post.author}</span>
+            </p>
+            <p class="post-excerpt">{post.excerpt}</p>
+            <span class="read-more">Read more →</span>
           </div>
-        </a>
+        </div>
+      </a>
       {/each}
     </div>
-
+    
+    <div class="stylish-divider"></div>
+    <NewsletterSignup />
+    <div class="stylish-divider"></div>
+    
     <div class="skool-group-container">
       <SkoolGroup onButtonClick={handleJoinSkool} />
     </div>
@@ -102,6 +108,17 @@
     margin: 3rem 0 2rem;
     text-align: center;
     color: var(--color-text-primary);
+  }
+
+  .stylish-divider {
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 2rem auto;
+    max-width: 80%;
+  }
+
+  :global(.dark) .stylish-divider {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
   }
 
   .post-grid {

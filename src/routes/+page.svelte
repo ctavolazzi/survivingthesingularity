@@ -60,6 +60,9 @@
   </div>  
   
   <MainPageBlurb />
+
+  <div class="stylish-divider"></div>
+
   <div class="button-container">
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
     <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>

@@ -104,12 +104,12 @@
       </div>
     </div>
   </section>
+  <CommunityIntakePopupForm />
 
   <Spacer height="1rem"/>
 </div>
 
 <FloatingPopupProgressBar />
-<CommunityIntakePopupForm />
 <FloatingQuotePopup minDelay={20000} />
 
 <style>

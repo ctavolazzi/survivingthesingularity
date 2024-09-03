@@ -5,33 +5,41 @@
   import FloatingProgressBar from '$lib/components/FloatingProgressBar.svelte';
   import { darkMode } from '$lib/stores/darkMode';
   import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
 
-  onMount(() => {
-    // Check for saved dark mode preference
-    const savedDarkMode = localStorage.getItem('darkMode');
-    if (savedDarkMode === 'true') {
-      darkMode.set(true);
-      document.documentElement.classList.add('dark');
+  function initDarkMode() {
+    if (browser) {
+      const savedDarkMode = localStorage.getItem('darkMode');
+      if (savedDarkMode === 'true') {
+        darkMode.set(true);
+      } else {
+        darkMode.set(false);
+      }
     }
+  }
 
-  });
+  onMount(initDarkMode);
 
-  $: if (typeof document !== 'undefined') {
+  $: if (browser) {
     if ($darkMode) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('darkMode', 'true');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('darkMode', 'false');
     }
   }
 </script>
 
-<div class="app bg-white dark:bg-gray-900 min-h-screen">
-  <FloatingProgressBar />
-  <Navbar />
-  <main class="container mx-auto px-4 py-8">
-    <slot />
-  </main>
-  <Footer />
+<div class:dark={$darkMode}>
+  <div class="app bg-white dark:bg-gray-900 min-h-screen">
+    <FloatingProgressBar />
+    <Navbar />
+    <main class="container mx-auto px-4 py-8">
+      <slot />
+    </main>
+    <Footer />
+  </div>
 </div>
 
 <style>
@@ -50,23 +58,5 @@
     max-width: 64rem;
     margin: 0 auto;
     box-sizing: border-box;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-  }
-
-  footer a {
-    font-weight: bold;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 12px 0;
-    }
   }
 </style>

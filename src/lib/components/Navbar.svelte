@@ -33,7 +33,6 @@
 
   function toggleDarkMode() {
     darkMode.update(d => !d);
-    localStorage.setItem('darkMode', $darkMode);
   }
 
   function handleBackBook() {

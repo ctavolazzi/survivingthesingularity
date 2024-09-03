@@ -6,14 +6,21 @@
   import Pagination from '$lib/components/Pagination.svelte';
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
-  export let data;
   import Spacer from '$lib/components/Spacer.svelte';
+  import { darkMode } from '$lib/stores/darkMode';
+  export let data;
 
   let currentSection = 1;
   let totalSections = data.book.sections.length;
 
   // Convert markdown to HTML
   $: content = marked(data.content);
+
+  $: {
+    if (data && data.section) {
+      currentSection = data.book.sections.findIndex(section => section.id === data.section.id) + 1;
+    }
+  }
 
   onMount(() => {
     currentSection = data.book.sections.findIndex(section => section.id === data.section.id) + 1;
@@ -24,9 +31,11 @@
   function handleNavigation(event) {
     const { direction } = event.detail;
     const newIndex = currentSection + (direction === 'next' ? 1 : -1) - 1;
-    const newSection = data.book.sections[newIndex];
-    if (newSection) {
-      goto(`/book/${newSection.id}`);
+    if (newIndex >= 0 && newIndex < totalSections) {
+      const newSection = data.book.sections[newIndex];
+      if (newSection) {
+        goto(`/book/${newSection.id}`);
+      }
     }
   }
 </script>
@@ -72,8 +81,8 @@
   </div>
 
   <Pagination 
-    currentSection={currentSection}
-    totalSections={totalSections}
+    {currentSection}
+    {totalSections}
     on:navigate={handleNavigation}
   />
 </div>

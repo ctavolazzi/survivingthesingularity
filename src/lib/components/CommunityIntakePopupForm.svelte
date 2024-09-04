@@ -3,7 +3,7 @@
   import { createEventDispatcher } from 'svelte';
   import { fade } from 'svelte/transition';
 
-  export let ctaText = "Ready to join the rebellion against the singularity?";
+  export let ctaText = "Ready to learn how to survive the Singularity?";
   export let buttonText = "Enlist Now";
 
   let isPopupOpen = false;

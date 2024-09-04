@@ -12,6 +12,7 @@
     <li>Understand the risks (and benefits) of AI</li>
     <li>Explore tips and strategies for adapting to an AI-dominated world</li>
     <li>Engage with the ethical implications of rapid technological change</li>
+    <li>Prepare your own future for the Singularity</li>
   </ul>
 
 </div>

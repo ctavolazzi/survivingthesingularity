@@ -2,7 +2,6 @@
   import { createEventDispatcher, onMount } from 'svelte';
   import coverImage from '$lib/images/Surviving-the-Singularity-Cover.png';
   import PreorderButton from './PreorderButton.svelte';
-  import CountdownTimer from './CountdownTimer.svelte';
 
   export let isOpen = false;
 
@@ -36,6 +35,36 @@
 
   // Set the target date for the offer (adjust as needed)
   const offerEndDate = new Date('2024-11-08T23:59:59');
+
+  // Add countdown timer logic
+  let timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+
+  function updateCountdown() {
+    const now = new Date();
+    const difference = offerEndDate.getTime() - now.getTime();
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      };
+    }
+  }
+
+  onMount(() => {
+    if (imageElement) {
+      imageElement.onload = adjustModalSize;
+    }
+    window.addEventListener('resize', adjustModalSize);
+    const timer = setInterval(updateCountdown, 1000);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener('resize', adjustModalSize);
+    };
+  });
+
 </script>
 
 <img 
@@ -70,10 +99,15 @@
             <PreorderButton buttonText="Pre-order Now" />
           </div>
           <div class="lto-container">
-            <CountdownTimer 
-              countdownText="Limited Time Offer Ends In:" 
-              endDate={offerEndDate} 
-            />
+            <div class="countdown-timer">
+              <p>Limited Time Offer Ends In:</p>
+              <div class="timer">
+                <span>{timeLeft.days}d</span>
+                <span>{timeLeft.hours}h</span>
+                <span>{timeLeft.minutes}m</span>
+                <span>{timeLeft.seconds}s</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -234,5 +268,28 @@
     .modal-image {
       max-height: 80vh;
     }
+  }
+
+  .countdown-timer {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .countdown-timer p {
+    margin-bottom: 0.5rem;
+  }
+
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .timer span {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 4px;
+    min-width: 2.5rem;
   }
 </style>

@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
 
   export let title = "AI Mastery Guild";
-  export let subtitle = "Survive the Singularity on Skool";
+  export let subtitle = "Survive the Singularity with Us";
   export let skoolBenefit = "Join on Skool: Exclusive Community & Resources";
   export let description = "Connect with other friendly forward-thinkers, researchers, and innovators. Navigate the challenges and opportunities of our rapidly changing world together.";
   export let buttonText = "SECURE YOUR SPOT NOW";
@@ -181,7 +181,7 @@
 
   .tagline {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem !important;
     color: #ff7708;
     margin-bottom: 0.5rem;
   }

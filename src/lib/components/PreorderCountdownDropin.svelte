@@ -22,8 +22,8 @@
     .preorder-countdown-dropin {
         width: 100%;
         max-width: 1200px;
-        margin: 4rem auto;
-        padding: 2rem 1rem;
+        /* margin: 4rem auto; */
+        /* padding: 2rem 1rem; */
     }
 
     .content {

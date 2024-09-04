@@ -32,6 +32,7 @@
   }
 
   function toggleDarkMode() {
+    console.log("Toggling dark mode");
     darkMode.update(d => !d);
   }
 

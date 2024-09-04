@@ -8,17 +8,48 @@
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
+  import { goto } from '$app/navigation';
 
   const targetDate = new Date("2027-11-20T23:59:59").getTime();
+
+  const handleGetFreeSample = () => {
+    goto("/sample");
+    console.log("Get a free sample");
+  };
 </script>
 
 <Spacer height="50px" />
 
 <div class="main-content text-center">
   <header>
-    <h1 class="title">About Surviving the Singularity</h1>
-    <p class="subtitle">Navigate the AI Revolution Together</p>
+    <h1 class="title">Surviving the Singularity</h1>
+    <p class="subtitle">Navigate and Thrive in the AI Revolution</p>
+    <p class="tagline">A comprehensive program to prepare you for the AI-driven future</p>
   </header>
+
+  <section class="intro">
+    <p class="large-text">The future is approaching faster than you think. Are you prepared?</p>
+    <p>Our comprehensive program equips you with the knowledge, skills, and community to not just survive, but thrive in the coming age of artificial intelligence.</p>
+  </section>
+
+  <div class="stylish-divider"></div>
+
+  <section class="program-overview">
+    <h2 class="text-center">What You'll Gain</h2>
+    <div class="content-grid">
+      <div class="ul-centered-left">
+        <ul>
+          <li>Deep understanding of AI and its societal impacts</li>
+          <li>Practical skills for adapting to an AI-driven world</li>
+          <li>Strategies for future-proofing your career</li>
+          <li>Network of like-minded individuals and experts</li>
+          <li>Confidence in navigating rapid technological changes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="stylish-divider"></div>
 
   <section class="book-info">
     <h2>More Than Just a Book</h2>
@@ -43,16 +74,52 @@
 
   <div class="stylish-divider"></div>
 
+  <section class="program-structure">
+    <h2 class="text-center">Program Structure</h2>
+    <div class="content-grid">
+      <div class="ul-centered-left">
+        <p class="text-center">Our self-paced program typically takes 12 weeks to complete:</p>
+        <ul class="feature-list">
+          <li><span class="icon">📚</span> Weekly modules with video lessons and readings</li>
+          <li><span class="icon">🧠</span> Interactive exercises and quizzes</li>
+          <li><span class="icon">💬</span> Monthly live Q&A sessions with experts</li>
+          <li><span class="icon">🌐</span> Ongoing access to our online community</li>
+        </ul>
+        <p class="text-center">Access all materials for a full year after enrollment.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="stylish-divider"></div>
+
   <section class="future-learning">
     <h2 class="text-center">Experience the Future of Learning</h2>
     <div class="content-grid">
       <div class="ul-centered-left">
-        <p>Our innovative QR code system allows you to:</p>
+        <p>Our innovative QR code system is just the beginning of your journey:</p>
         <ul>
           <li>Access exclusive online content updated in real-time</li>
           <li>Dive deep into AI topics with curated resources</li>
-          <li>Participate in community discussions and expert Q&As</li>
-          <li>Track your progress and unlock achievements</li>
+          <li>Participate in our vibrant online learning community</li>
+          <li>Engage in practical exercises to prepare for the AI-driven future</li>
+          <li>Track your progress and unlock achievements as you adapt to the rapidly evolving tech landscape</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="stylish-divider"></div>
+
+  <section class="who-is-this-for">
+    <h2 class="text-center">Who Is This For?</h2>
+    <div class="content-grid">
+      <div class="ul-centered-left">
+        <p class="font-bold">This program is ideal for:</p>
+        <ul>
+          <li>Professionals looking to future-proof their careers</li>
+          <li>Entrepreneurs seeking AI-driven opportunities</li>
+          <li>Students preparing for an AI-dominated job market</li>
+          <li>Anyone curious about the impact of AI on society</li>
         </ul>
       </div>
     </div>
@@ -76,6 +143,25 @@
 
   <div class="stylish-divider"></div>
 
+  <section class="future-scenarios">
+    <h2 class="font-bold text-center">Preparing for the Near Future</h2>
+    <div class="content-grid">
+      <div class="ul-centered-left">
+        <p>The technological singularity is closer than you think. Our program helps you prepare for scenarios like:</p>
+        <ul>
+          <li>Robots handling household chores by 2025</li>
+          <li>AI doctors leveraging all medical knowledge for diagnoses by 2026</li>
+          <li>Autonomous vehicles becoming the norm on our roads</li>
+          <li>AI-driven personal assistants managing your daily life</li>
+          <li>Rapid job market shifts due to AI and automation</li>
+        </ul>
+        <p class="emphasis-text font-bold">Don't just witness the future—be ready to thrive in it.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="stylish-divider"></div>
+
   <FAQ />
 
   <div class="stylish-divider"></div>
@@ -86,9 +172,37 @@
     <NewsletterSignup />
   </section>
 
+  <!-- <section class="enrollment">
+    <h2 class="text-center">Join Surviving the Singularity</h2>
+    <div class="pricing-grid">
+      <div class="pricing-option">
+        <h3>Basic Access</h3>
+        <p class="price">$299</p>
+        <ul>
+          <li>Full course access</li>
+          <li>Community forum</li>
+          <li>3 months support</li>
+        </ul>
+        <button class="enroll-button" on:click={() => goto("/enroll/basic")}>Enroll Now</button>
+      </div>
+      <div class="pricing-option featured">
+        <h3>Premium Access</h3>
+        <p class="price">$499</p>
+        <ul>
+          <li>Everything in Basic</li>
+          <li>1-on-1 coaching session</li>
+          <li>Lifetime support</li>
+          <li>Exclusive webinars</li>
+        </ul>
+        <button class="enroll-button" on:click={() => goto("/enroll/premium")}>Enroll Now</button>
+      </div>
+    </div>
+    <p class="money-back">30-day money-back guarantee</p>
+  </section> -->
+
   <div class="stylish-divider"></div>
 
-  <section class="countdown">
+  <!-- <section class="countdown">
     <div class="countdown-container">
       <Countdown {targetDate} />
       <p class="text-center">The technological singularity is approaching rapidly.</p>
@@ -99,18 +213,26 @@
           If that makes you feel anxious, or excited, or both, we'd love to have you join us on this journey.
         </p>
         <p>
-          <button class="big-button">Get a free sample</button>
+          <button class="big-button" on:click={handleGetFreeSample}>Get a free sample</button>
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
   <CommunityIntakePopupForm />
+
+  <Spacer height="50px" />
+
+  <section class="support-info">
+    <h2 class="text-center">We're Here to Help</h2>
+    <p>Have questions? Our support team is available 24/7.</p>
+    <p>Email: info@survivingthesingularity.com</p>
+  </section>
 
   <Spacer height="1rem"/>
 </div>
 
-<FloatingPopupProgressBar />
-<FloatingQuotePopup minDelay={20000} />
+<!-- <FloatingPopupProgressBar /> -->
+<!-- <FloatingQuotePopup minDelay={20000} /> -->
 
 <style>
   .book-info {
@@ -175,7 +297,7 @@
 
   .ul-centered-left {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -186,13 +308,16 @@
 
   .ul-centered-left ul {
     list-style-type: disc;
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
     margin-bottom: 1rem;
+    text-align: left;
   }
 
-  .text-content {
-    width: 100%;
-    text-align: left;
+  .emphasis-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-top: 1rem;
   }
 
   .visual-content {
@@ -374,5 +499,86 @@
     100% {
       box-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500;
     }
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .pricing-option {
+    background-color: var(--color-bg-secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .pricing-option.featured {
+    border: 2px solid var(--color-accent);
+  }
+
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  .enroll-button {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .enroll-button:hover {
+    background-color: var(--color-accent-hover);
+  }
+
+  .money-back {
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  /* Dark mode styles */
+  :global(.dark) .pricing-option {
+    background-color: #2a2a2a;
+  }
+
+  :global(.dark) .enroll-button {
+    background-color: #FFA500;
+    color: #1a1a1a;
+  }
+
+  :global(.dark) .enroll-button:hover {
+    background-color: #FFD700;
+  }
+
+  .feature-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .feature-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
   }
 </style>

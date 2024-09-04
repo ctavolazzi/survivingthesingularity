@@ -3,11 +3,12 @@
     import { onMount } from 'svelte';
     import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
     import PreorderButton from './PreorderButton.svelte';
+    import { goto } from '$app/navigation';
 
     let readerCount = 4921;
 
     function handleReadSample() {
-        window.location.href = '/sample';
+        goto('/sample');
     }
 
     onMount(() => {
@@ -24,14 +25,14 @@
 <section class="book-sample" in:fade="{{ duration: 1000 }}">
     <div class="content">
         <h2 class="heading-text">Surviving the Singularity: A Sneak Peek</h2>
-        <p class="subheading">Get a taste of the AI revolution with our free sample</p>
+        <p class="subheading">Get a taste of the AI revolution</p>
         
         <div class="book-preview">
             <div class="image-container">
                 <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" on:click={handleReadSample} />
             </div>
             <div class="preview-highlights">
-                <h3>In this free sample, you'll find:</h3>
+                <h3>In this free sample of the book, you'll find:</h3>
                 <ul>
                     <li>🔮 A glimpse into AI's potential impact on your future</li>
                     <li>🚀 Teasers of key strategies for thriving in an AI world</li>

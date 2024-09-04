@@ -9,8 +9,7 @@
       window.history.back();
     }
   </script>
-  
-  <Spacer height="1.25rem"/>
+
   
   <div class="main-content">
     <div class="content-container">
@@ -39,7 +38,7 @@
   
   <style>
     .main-content {
-      padding-top: 72px; /* Adjust this value if needed */
+      padding-top: 50px; /* Adjust this value if needed */
     }
   
     .content-container {

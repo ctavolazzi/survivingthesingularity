@@ -36,7 +36,6 @@
 <style>
   .cta-section {
     text-align: center;
-    margin: 3rem 0;
     padding: 2rem;
     background: linear-gradient(135deg, var(--color-bg-accent, #e6f7ff), var(--color-bg-secondary, #f0f5fa));
     border-radius: 1rem;

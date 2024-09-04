@@ -8,6 +8,7 @@
   import FAQ from '$lib/components/FAQ.svelte';
   import LatestNews from '$lib/components/LatestNews.svelte';
   import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
   import MainPageBlurb from '$lib/components/MainPageBlurb.svelte';
   import SkoolGroup from '$lib/components/SkoolGroup.svelte';
   import BookSample from '$lib/components/BookSample.svelte';
@@ -22,6 +23,7 @@
   export let preorderDate = new Date("2024-11-08T23:59:59").getTime()
 
 	import timelineItems from '$lib/data/timelineItems.json';
+  import PreorderDropin from '../lib/components/PreorderDropin.svelte';
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
 
 	let navbarHeight = 0;
@@ -47,15 +49,15 @@
     }
 
   function handleGetGuide() {
-    window.location.href = '/download';
+    goto('/download');
   }
 
   function handleReadSample() {
-    window.location.href = 'https://survivingthesingularity.com/sample';  
+    goto('/sample');  
   }
 
   function handlePreorder() {
-    window.location.href = '/preorder';
+    goto('/preorder');
   }
 </script>
 
@@ -109,20 +111,19 @@
     <p class="attribution">- Ray Kurzweil</p>
   </div>
 
-  <PreorderCountdownDropin targetDate={preorderDate} headerText="Book Dropping Soon" />
+  <PreorderCountdownDropin targetDate={preorderDate} />
 
-  <div class="community-intake-container">
-    <CommunityIntakePopupForm 
-      ctaText="Ready to join the rebellion against the singularity?"
-      buttonText="Enlist Now"
-    />
-    <div class="stylish-divider"></div>
-  </div>
+  <CommunityIntakePopupForm 
+    ctaText="Ready to join the community and prepare for the Singularity?"
+    buttonText="Enlist Now"
+  />
+  <div class="stylish-divider"></div>
 
   <div class="button-container orange-border">
     <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
     <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
+    <button class="big-button" on:click={handlePreorder}>Preorder the Book</button>
   </div>
 
   <div class="stylish-divider"></div>

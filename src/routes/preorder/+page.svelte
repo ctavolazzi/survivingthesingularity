@@ -5,6 +5,13 @@
   import { onMount } from 'svelte';
   import coverImage from '$lib/images/Surviving-the-Singularity-Cover.png';
   import welcomeImage from '$lib/images/sts-welcome.png';
+  import { darkMode } from '$lib/stores/darkMode';
+
+  let isDarkMode;
+  darkMode.subscribe(value => {
+    isDarkMode = value;
+    console.log('Dark mode is:', isDarkMode);
+  });
 
   let pageTitle = "Preorder 'Surviving the Singularity'";
   let isModalOpen = false;
@@ -28,7 +35,7 @@
   <meta name="description" content="Preorder 'Surviving the Singularity' and prepare for the AI revolution. Secure your future in a world of rapid technological change.">
 </svelte:head>
 
-<div class="preorder-page">
+<div class="preorder-page {$darkMode ? 'dark' : ''}">
   <header class="hero">
     <h1>{pageTitle}</h1>
     <p class="subtitle">Your Essential Guide to Thriving in the AI Revolution</p>

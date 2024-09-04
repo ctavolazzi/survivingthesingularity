@@ -1,5 +1,10 @@
 <script>
     export let post;
+    import { goto } from '$app/navigation';
+
+    function handleReadBlog() {
+        goto(`/blog/${post.slug}`);
+    }
 </script>
   
   <div class="blog-post-container">
@@ -8,7 +13,7 @@
       <img src={post.imageUrl} alt={post.title} class="blog-post-image"/>
     </div>
     <p class="blog-post-description">{post.excerpt}</p>
-    <button class="big-button" on:click={() => window.location.href = `/blog/${post.slug}`}>Read the Blog</button>
+    <button class="big-button" on:click={handleReadBlog}>Read the Blog</button>
   </div>
   
   <style>

@@ -10,6 +10,7 @@
 </script>
 
 <div class="main-content">
+  <Spacer height="50px" />  
   <div class="content-container">
     <h1 class="title">Insights for the AI Age</h1>
 

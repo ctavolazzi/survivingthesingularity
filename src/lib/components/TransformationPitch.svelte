@@ -3,29 +3,29 @@
   </script>
   
   <div class="transformation-pitch">
-    <h2>Your AI Survival Glow-Up Starts Here!</h2>
-    <p>Tired of feeling like a caveman in a world of killer robots? Ready to level up from "I could totally punch Alexa" to "I'm basically the John Connor of my cul-de-sac"? Surviving the Singularity is your ticket to the ultimate transformation:</p>
+    <h2 class="text-4xl font-bold mb-4 text-center">Your AI Survival Glow-Up Starts Here!</h2>
+    <p class="text-2xl mb-4 text-center">Tired of feeling like a caveman in a world of killer robots? Ready to level up from "I could totally punch Alexa" to "I'm basically the John Connor of my cul-de-sac"? Surviving the Singularity is your ticket to the ultimate transformation:</p>
     
     <div class="before-after">
       <div class="before">
-        <h3>Before:</h3>
+        <h3 class="text-2xl font-bold mb-4 text-center">Before:</h3>
         <ul>
-          <li>Thinks "neural network" is a fishing term</li>
-          <li>Survival plan involves hiding under a blanket</li>
-          <li>Secretly afraid your toaster is plotting against you</li>
+          <li>- Thinks "neural network" is a fishing term</li>
+          <li>- Survival plan involves hiding under a blanket</li>
+          <li>- Secretly afraid your toaster is plotting against you <em>(It is! You're sure of it!)</em></li>
         </ul>
       </div>
       <div class="after">
-        <h3>After:</h3>
+        <h3 class="text-2xl font-bold mb-4 text-center">After:</h3>
         <ul>
-          <li>Casually drops "recursive self-improvement" in conversation</li>
-          <li>Has a fully stocked bunker (with Wi-Fi!)</li>
-          <li>Can negotiate with rogue AIs in binary</li>
+          <li>- Casually drops "recursive self-improvement" in conversation</li>
+          <li>- Has a fully stocked bunker (with Wi-Fi!)</li>
+          <li>- Can negotiate with rogue AIs in binary</li>
         </ul>
       </div>
     </div>
     
-    <p>Don't just survive the singularity - thrive in it! Join us and go from "anxious tech newbie" to "confident cyber-sage" faster than you can say "artificial general intelligence"!</p>
+    <p class="text-lg text-center">Don't just survive the singularity - thrive in it! Join us and go from "anxious tech newbie" to "confident cyber-sage" faster than you can say "artificial general intelligence"!</p>
   </div>
   
   <style>

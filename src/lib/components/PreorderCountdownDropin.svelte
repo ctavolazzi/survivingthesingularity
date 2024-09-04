@@ -7,20 +7,58 @@
     export let headerText = "Time Left";
 </script>
 
-<div class="text-center mt-16 mb-12">
-    <div class="mb-8">
-        <Divider />
+<div class="preorder-countdown-dropin">
+    <Divider />
+    <div class="content">
+        <h2 class="title">Limited Time Offer</h2>
+        <h1 class="main-title">Book Dropping Soon</h1>
+        <Countdown {targetDate} {headerText} />
+        <PreorderDropin />
     </div>
-    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
-    <h2 class="text-3xl font-bold mb-4">Limited Time Offer</h2>
-    <Countdown {targetDate} headerText={headerText} />
-    <PreorderDropin />
-    </div>
-    <div class="mt-8">
-        <Divider />
-    </div>
+    <Divider />
 </div>
 
 <style>
+    .preorder-countdown-dropin {
+        width: 100%;
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 2rem 1rem;
+    }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    /* Ensure Countdown and PreorderDropin components stack vertically */
+    :global(.preorder-countdown-dropin .content > *) {
+        margin-bottom: 2rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .preorder-countdown-dropin {
+            margin: 2rem auto;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+        }
+    }
 </style>

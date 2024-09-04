@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-  <title>Surviving the Singularity: Your Free Guide to Thriving in the AI Era</title>
+  <title>Free Book Sample</title>
   <meta name="description" content="Download your free guide on processing AI anxiety and confusion. Join 10,000+ readers preparing for the future of technology.">
 </svelte:head>
 
@@ -58,7 +58,7 @@
 
 <main class="container mx-auto px-4 py-8 max-w-3xl dark:bg-gray-800 dark:text-gray-200">
   <header in:fade="{{ duration: 1000 }}">
-    <h1 class="text-4xl font-bold mb-4 text-center">Survive and Thrive in the AI Revolution</h1>
+    <h1 class="text-4xl font-bold mb-4 text-center">Read a Free Sample</h1>
     <h2 class="text-2xl mb-8 text-center">The Ultimate Workbook for Processing AI Anxiety and Confusion</h2>
   </header>
 

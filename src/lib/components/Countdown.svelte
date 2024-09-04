@@ -1,11 +1,12 @@
 <script>
   import { onMount, onDestroy, tick } from 'svelte';
   import { fade, scale } from 'svelte/transition';
-  export let targetDate;
 
   let years = 0, days = 0, hours = 0, minutes = 0, seconds = 0;
   let countdownInterval;
   let loading = true;
+  export let headerText = "Time Left Until the Singularity";
+  export let targetDate = new Date("2027-11-20T23:59:59").getTime();
 
   function calculateTimeLeft() {
     const currentTime = new Date().getTime();
@@ -58,7 +59,7 @@
 </script>
 
 <div class="countdown-header">
-  Time Left Until the Singularity
+  {headerText}
 </div>
 
 <div class="countdown-container">

@@ -14,8 +14,12 @@
   import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
   import welcomeImage from '$lib/images/sts-welcome.png';
   import { newsletterSubmitted } from '$lib/stores/newsletterSubmitted';
+  import PreorderCountdownDropin from '$lib/components/PreorderCountdownDropin.svelte';
+  import Divider from '$lib/components/Divider.svelte';
+  import TransformationPitch from '$lib/components/TransformationPitch.svelte';
 
 	export let data;
+  export let preorderDate = new Date("2024-11-08T23:59:59").getTime()
 
 	import timelineItems from '$lib/data/timelineItems.json';
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
@@ -47,7 +51,12 @@
   }
 
   function handleReadSample() {
-    window.location.href = 'https://survivingthesingularity.com/sample';  }
+    window.location.href = 'https://survivingthesingularity.com/sample';  
+  }
+
+  function handlePreorder() {
+    window.location.href = '/preorder';
+  }
 </script>
 
 <div class="main-content" style="padding-top: {navbarHeight}px">
@@ -65,12 +74,13 @@
   
   <MainPageBlurb />
 
-  <div class="stylish-divider"></div>
+  <Divider />
 
   <div class="button-container">
     <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
     <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
     <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
+    <button class="big-button" on:click={handlePreorder}>Preorder the Book</button>
   </div>
   
   <div class="visual-content">
@@ -83,6 +93,7 @@
   <FAQ />
   <div class="stylish-divider"></div>
 
+  <TransformationPitch />
   
   <div class="skool-group-container">
     <SkoolGroup />
@@ -96,8 +107,9 @@
     <p class="attribution">- Ray Kurzweil</p>
   </div>
 
+  <PreorderCountdownDropin targetDate={preorderDate} headerText="Book Dropping Soon" />
+
   <div class="community-intake-container">
-    <div class="stylish-divider"></div>
     <CommunityIntakePopupForm 
       ctaText="Ready to join the rebellion against the singularity?"
       buttonText="Enlist Now"

@@ -12,6 +12,8 @@
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
+  import PreorderDropin from '$lib/components/PreorderDropin.svelte';
+
 
   let showPopup = false;
   const targetDate = new Date("2027-11-20T23:59:59").getTime();
@@ -90,12 +92,7 @@
     <h2 class="text-3xl font-bold mb-4">Limited Time Offer</h2>
     <Countdown targetDate={targetDate} />
     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
-      <button on:click={joinSkool} class="action-button">
-        Join Skool Community (Lock in your lifetime discount)
-      </button>
-      <button on:click={backOnKickstarter} class="action-button">
-        Back on Kickstarter (Early Bird)
-      </button>
+      <PreorderDropin />
     </div>
   </section>
 

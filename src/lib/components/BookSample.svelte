@@ -2,6 +2,7 @@
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
+    import PreorderButton from './PreorderButton.svelte';
 
     let readerCount = 4921;
 
@@ -50,6 +51,12 @@
             <button on:click={handleReadSample} class="cta-button">
                 Read the Free Sample Now
             </button>
+            <p class="or">or</p>
+            <PreorderButton />
+            <p class="preorder-info">
+                <span class="urgent">Limited copies remain at this price!</span>
+                <span class="non-urgent">Secure your copy now. The book is set to release the first week of November.</span>
+            </p>
             <p class="reader-count">{readerCount} curious minds have peeked at the sample</p>
         </div>
         
@@ -178,6 +185,7 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 1rem;
+        gap: 1rem;
     }
 
     .cta-button {
@@ -204,8 +212,77 @@
 
     .reader-count {
         font-size: 0.9rem;
-        color: #666666;
-        margin-bottom: 0.5rem;
+        color: #3498db;
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            90deg,
+            rgba(52, 152, 219, 0.1) 0%,
+            rgba(155, 89, 182, 0.1) 50%,
+            rgba(52, 152, 219, 0.1) 100%
+        );
+        background-size: 200% 100%;
+        animation: gradientShift 8s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .reader-count::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent
+        );
+        transform: translateX(-100%);
+        animation: shine 4s ease-in-out infinite;
+    }
+
+    @keyframes shine {
+        0%, 100% { transform: translateX(-100%); }
+        50% { transform: translateX(100%); }
+    }
+
+    /* Light mode specific styles */
+    @media (prefers-color-scheme: light) {
+        .reader-count {
+            background: linear-gradient(
+                90deg,
+                rgba(52, 152, 219, 0.2) 0%,
+                rgba(155, 89, 182, 0.2) 50%,
+                rgba(52, 152, 219, 0.2) 100%
+            );
+            color: #2980b9;
+            text-shadow: 0 0 10px rgba(41, 128, 185, 0.3);
+        }
+
+        .reader-count::after {
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.6),
+                transparent
+            );
+        }
+    }
+
+    /* Dark mode specific styles */
+    @media (prefers-color-scheme: dark) {
+        .reader-count {
+            color: #5dade2;
+        }
     }
 
     .trust-indicators {
@@ -287,6 +364,93 @@
         .cta-button {
             font-size: 1.1rem;
             padding: 0.8rem 1.6rem;
+        }
+    }
+
+    .or {
+        position: relative;
+        font-size: 1rem;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .or::before,
+    .or::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 40%;
+        height: 1px;
+        background: linear-gradient(to var(--direction, right), #888, transparent);
+    }
+
+    .or::before {
+        left: 0;
+        --direction: right;
+    }
+
+    .or::after {
+        right: 0;
+        --direction: left;
+    }
+
+    .preorder-info {
+        font-size: 0.9rem;
+        color: #34495e;
+        margin-top: 0.5rem;
+        text-align: center;
+        max-width: 300px;
+        line-height: 1.4;
+        padding: 0.75rem;
+        border-radius: 8px;
+        background-color: rgba(52, 152, 219, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.3);
+    }
+
+    .preorder-info:hover {
+        background-color: rgba(52, 152, 219, 0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .urgent {
+        display: block;
+        color: #e74c3c;
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+    }
+
+    /* Light mode specific styles */
+    @media (prefers-color-scheme: light) {
+        .preorder-info {
+            color: #2c3e50;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .preorder-info .non-urgent {
+            color: #34495e !important; /* Override the default color */
+        }
+    }
+
+    /* Dark mode specific styles */
+    @media (prefers-color-scheme: dark) {
+        .preorder-info {
+            color: #8e9fa3;
+            background-color: rgba(52, 152, 219, 0.2);
+            border-color: rgba(52, 152, 219, 0.4);
+        }
+
+        .preorder-info:hover {
+            background-color: rgba(52, 152, 219, 0.3);
+        }
+
+        .urgent {
+            color: #ff6b6b;
         }
     }
 </style>

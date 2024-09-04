@@ -3,7 +3,7 @@
   import { darkMode } from '$lib/stores/darkMode';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
-  import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconMore } from '$lib/assets/Icons.svelte';
+  import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconPreorder, IconResources } from '$lib/assets/Icons.svelte';
   import { onMount } from 'svelte';
 
   let navbar;
@@ -44,14 +44,16 @@
   }
 
   onMount(() => {
-    document.addEventListener('click', (event) => {
-      if (navbar && !navbar.contains(event.target) && isMenuOpen) {
-        closeMenu();
+    const closeDropdown = (event) => {
+      if (isDropdownOpen && !event.target.closest('.nav-item')) {
+        isDropdownOpen = false;
       }
-    });
+    };
+
+    document.addEventListener('click', closeDropdown);
 
     return () => {
-      document.removeEventListener('click', closeMenu);
+      document.removeEventListener('click', closeDropdown);
     };
   });
 
@@ -76,19 +78,57 @@
       </button>
     </div>
     <NavUl class="md:flex md:items-center md:justify-end w-full md:w-auto md:order-1 hidden">
-      <NavLi href="/" class="nav-item" on:click={closeMenu}>Home</NavLi>
-      <NavLi href="/about" class="nav-item" on:click={closeMenu}>About</NavLi>
-      <NavLi href="/blog" class="nav-item" on:click={closeMenu}>Blog</NavLi>
-      <NavLi href="/contact" class="nav-item" on:click={closeMenu}>Contact</NavLi>
-      <NavLi href="/sample" class="nav-item" on:click={closeMenu}>Sample</NavLi>
-      <NavLi class="nav-item relative dropdown">
-        <button class="dropdown-toggle" on:click={toggleDropdown}>Resources</button>
+      <!-- <NavLi href="/" class="nav-item">
+        <span class="nav-button flex items-center h-full w-full">
+          <span class="flex-grow text-left">Home</span>
+          <span class="nav-icon ml-2">{@html IconHome.svg}</span>
+        </span>
+      </NavLi> -->
+      <NavLi href="/about" class="nav-item">
+        <span class="nav-button flex items-center h-full w-full">
+          <span class="flex-grow text-left">About</span>
+          <span class="nav-icon ml-2">{@html IconAbout.svg}</span>
+        </span>
+      </NavLi>
+      <NavLi href="/blog" class="nav-item">
+        <span class="nav-button flex items-center h-full w-full">
+          <span class="flex-grow text-left">Blog</span>
+          <span class="nav-icon ml-2">{@html IconBlog.svg}</span>
+        </span>
+      </NavLi>
+      <NavLi href="/contact" class="nav-item">
+        <span class="nav-button flex items-center h-full w-full">
+          <span class="flex-grow text-left">Contact</span>
+          <span class="nav-icon ml-2">{@html IconContact.svg}</span>
+        </span>
+      </NavLi>
+      <NavLi href="/sample" class="nav-item">
+        <span class="nav-button flex items-center h-full w-full">
+          <span class="flex-grow text-left">Sample</span>
+          <span class="nav-icon ml-2">{@html IconSample.svg}</span>
+        </span>
+      </NavLi>
+      <NavLi href="/preorder" class="nav-item">
+        <span class="preorder-button flex items-center h-full w-full">
+          <span class="flex-grow text-left">Preorder</span>
+          <span class="nav-icon ml-2">{@html IconPreorder.svg}</span>
+        </span>
+      </NavLi>
+      <NavLi class="nav-item relative">
+        <button 
+          on:click={toggleDropdown} 
+          class="nav-button flex items-center h-full w-full"
+          aria-expanded={isDropdownOpen}
+        >
+          <span class="flex-grow text-left">Resources</span>
+          <span class="nav-icon ml-2">{@html IconResources.svg}</span>
+        </button>
         {#if isDropdownOpen}
-          <ul class="dropdown-menu show">
-            <li><a href="/download" class="dropdown-item highlight" on:click={closeMenu}>Download FREE Guide</a></li>
-            <li><button class="dropdown-item" on:click={() => { closeMenu(); handleBackBook(); }}>Support on Kickstarter</button></li>
-            <li><button class="dropdown-item" on:click={() => { closeMenu(); handleJoinSkool(); }}>Join the Skool Community</button></li>
-          </ul>
+          <div class="dropdown-menu absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+            <a href="/download" class="dropdown-item">Download FREE Guide</a>
+            <button on:click={handleBackBook} class="dropdown-item">Support on Kickstarter</button>
+            <button on:click={handleJoinSkool} class="dropdown-item">Join Skool Community</button>
+          </div>
         {/if}
       </NavLi>
     </NavUl>
@@ -129,9 +169,15 @@
         </a>
       </li>
       <li class="w-full border-b border-gray-200 dark:border-gray-700">
+        <a href="/preorder" class="mobile-menu-link preorder-button flex items-center justify-between w-full" on:click={closeMenu} aria-label="Preorder" data-tracking="nav-preorder">
+          Preorder
+          <span class="nav-icon">{@html IconPreorder.svg}</span>
+        </a>
+      </li>
+      <li class="w-full border-b border-gray-200 dark:border-gray-700">
         <button class="mobile-menu-link flex items-center justify-between w-full" on:click={toggleMobileMore} aria-expanded={isMobileMoreOpen} data-tracking="nav-resources">
           Resources
-          <span class="nav-icon">{@html IconMore.svg}</span>
+          <span class="nav-icon">{@html IconResources.svg}</span>
         </button>
         {#if isMobileMoreOpen}
           <ul class="mt-2 space-y-2 w-full">
@@ -292,6 +338,11 @@
     color: #b794f4;
   }
 
+  .nav-item {
+    display: flex;
+    align-items: stretch; /* Ensures child elements stretch to full height */
+  }
+
   .dropdown-toggle {
     background: none;
     border: none;
@@ -302,7 +353,7 @@
   }
 
   .dropdown-menu {
-    display: none;
+    display: block;
     position: absolute;
     right: 0;
     top: 100%;
@@ -314,10 +365,6 @@
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
-  }
-
-  .dropdown-menu.show {
-    display: block;
   }
 
   .dropdown-item {
@@ -340,16 +387,6 @@
     background-color: #ebf8ff;
   }
 
-  .dropdown-item.highlight {
-    font-weight: 600;
-    color: #3182ce;
-  }
-
-  .dropdown-item.highlight:hover {
-    color: #2c5282;
-    background-color: #bee3f8;
-  }
-
   :global(.dark) .dropdown-menu {
     background-color: #2d3748;
     border-color: rgba(255,255,255,0.1);
@@ -360,17 +397,8 @@
   }
 
   :global(.dark) .dropdown-item:hover, :global(.dark) .dropdown-item:focus {
-    color: #fff;
-    background-color: #4a5568;
-  }
-
-  :global(.dark) .dropdown-item.highlight {
-    color: #63b3ed;
-  }
-
-  :global(.dark) .dropdown-item.highlight:hover {
     color: #90cdf4;
-    background-color: #2c5282;
+    background-color: #4a5568;
   }
 
   .mobile-menu-link:hover,
@@ -410,5 +438,97 @@
   .nav-icon :global(svg) {
     width: 100%;
     height: 100%;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .nav-button,
+  .preorder-button {
+    position: relative;
+    color: inherit;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-button::before,
+  .preorder-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .nav-button:hover::before {
+    opacity: 0.1;
+  }
+
+  .preorder-button::before {
+    opacity: 0.1;
+  }
+
+  .preorder-button:hover::before {
+    opacity: 0.2;
+  }
+
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .nav-icon :global(svg) {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Pulsing animation only for preorder button */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(66, 153, 225, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(66, 153, 225, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(66, 153, 225, 0);
+    }
+  }
+
+  .preorder-button {
+    animation: pulse 2s infinite;
+  }
+
+  :global(.dark) .preorder-button {
+    animation: pulse-dark 2s infinite;
+  }
+
+  @keyframes pulse-dark {
+    0% {
+      box-shadow: 0 0 0 0 rgba(99, 179, 237, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(99, 179, 237, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(99, 179, 237, 0);
+    }
   }
 </style>

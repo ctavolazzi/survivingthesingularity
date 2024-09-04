@@ -21,22 +21,19 @@
     
     <div class="stylish-divider"></div>
     
-    <div class="skool-signup">
+    <div class="next-steps">
       <h2 class="quote text-2xl font-bold">Next Steps: Email Confirmation & Join Our Community</h2>
-      <div class="skool-text-container">
-        <p class="attribution">Now that you've got your book on the way, you're ready to dive deep into the community.</p>
-        <p class="attribution highlight">If you entered your email, you should receive an email from us shortly with a link to confirm your email address.</p>
-        <p class="attribution">Just wait for the email to hit your inbox, and you'll be all set.</p>
-        <h3 class="text-4xl font-bold">Wait, don't go yet!</h3>
-        <p class="attribution highlight-bright">By purchasing the book, you're now eligible to join the Surviving the Singularity community for FREE</p>
-        <p class="attribution highlight">You should receive an email shortly with a link to join the community with exclusive LIFETIME FREE ACCESS</p>
-        <p class="attribution">For any questions, please reach out to us through the contact form below.</p>
-      </div>
-      <ContactForm />
-      <div class="skool-group-container">
-        <SkoolGroup />
-      </div>
+      <p class="attribution">Now that you've got your book on the way, you're ready to dive deep into the community.</p>
+      <p class="attribution highlight">If you entered your email, you should receive an email from us shortly with a link to confirm your email address.</p>
+      <p class="attribution">Just wait for the email to hit your inbox, and you'll be all set.</p>
+      <h3 class="text-4xl font-bold">Wait, don't go yet!</h3>
+      <p class="attribution highlight-bright">By purchasing the book, you're now eligible to join the Surviving the Singularity community for FREE</p>
+      <p class="attribution highlight">You should receive an email shortly with a link to join the community with exclusive LIFETIME FREE ACCESS</p>
+      <p class="attribution">For any questions, please reach out to us through the contact form below.</p>
     </div>
+    
+    <ContactForm />
+    <SkoolGroup />
     
     <div class="stylish-divider"></div>
     
@@ -98,35 +95,17 @@
     font-size: 1.1rem;
   }
 
-  .skool-signup {
-    background-color: var(--color-bg-secondary);
-    border-radius: 10px;
-    padding: 30px 15px;  /* Adjusted padding */
+  .next-steps {
     margin: 30px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .skool-text-container {
-    margin: 20px 0;
-    max-width: 100%;  /* Ensure text doesn't overflow */
-    overflow-wrap: break-word;  /* Allow long words to break */
-  }
-
-  .skool-signup h2.quote {
+  .next-steps h2, .next-steps h3 {
     margin-bottom: 20px;
   }
 
-  .skool-signup .attribution {
+  .next-steps p {
     margin-bottom: 15px;
     line-height: 1.5;
-  }
-
-  .skool-group-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 2rem 0;
-    margin-top: 30px;
   }
 
   .button-container {
@@ -192,10 +171,6 @@
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
   }
 
-  :global(.dark) .skool-signup {
-    background-color: #2c3e50;
-  }
-
   /* Responsive styles */
   @media (max-width: 768px) {
     .button-container {
@@ -207,16 +182,20 @@
     }
 
     .content-container {
-      padding: 0 0.5rem;
+      padding: 0 0.75rem;
     }
 
-    .skool-signup {
-      padding: 20px 10px;
+    .next-steps {
+      margin: 20px 0;
     }
 
     .attribution, .attribution.highlight, .attribution.highlight-bright {
-      font-size: 1rem;
+      font-size: 0.95rem;
       padding: 0.5rem 0.25rem;
+    }
+
+    .big-button {
+      margin-bottom: 10px;
     }
   }
 

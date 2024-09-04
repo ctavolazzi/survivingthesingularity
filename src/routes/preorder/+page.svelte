@@ -6,6 +6,7 @@
   import coverImage from '$lib/images/Surviving-the-Singularity-Cover.png';
   import welcomeImage from '$lib/images/sts-welcome.png';
   import { darkMode } from '$lib/stores/darkMode';
+  import Spacer from '$lib/components/Spacer.svelte';
 
   let isDarkMode;
   darkMode.subscribe(value => {
@@ -35,12 +36,15 @@
   <meta name="description" content="Preorder 'Surviving the Singularity' and prepare for the AI revolution. Secure your future in a world of rapid technological change.">
 </svelte:head>
 
+<Spacer height="50px" />
+
 <div class="preorder-page {$darkMode ? 'dark' : ''}">
   <header class="hero">
     <h1>{pageTitle}</h1>
     <p class="subtitle">Your Essential Guide to Thriving in the AI Revolution</p>
     <div class="cover-image-container">
-        <img src={coverImage} alt="Surviving the Singularity Book Cover" class="book-cover" on:click={openModal} />
+        <!-- <img src={coverImage} alt="Surviving the Singularity Book Cover" class="book-cover" on:click={openModal} /> -->
+        <BookCoverModal targetDate={offerEndDate} />
     </div>
       <div class="hero-cta">
           <div class="preorder-button-wrapper">
@@ -62,7 +66,6 @@
               <li>Personal development techniques to thrive alongside AI</li>
           </ul>
           <div class="preorder-button-wrapper">
-              <PreorderButton />
           </div>
       </div>
   </section>
@@ -91,7 +94,7 @@
   <section class="author-bio">
       <h2 class="text-center">Meet the Author: Your Guide to the AI Revolution</h2>
       <div class="author-content">
-          <img src={welcomeImage} alt="Author Name" class="author-image" />
+          <img src={welcomeImage} alt="Christopher Tavolazzi" class="author-image" />
           <div class="author-text">
               <p>With over 20 years of experience in AI and technology, Christopher Tavolazzi brings unparalleled insights into the future of humanity and artificial intelligence. As a renowned futurist and AI ethicist, he has advised Fortune 500 companies and governments on preparing for the technological Singularity.</p>
               <blockquote>"My goal is to empower every reader with the knowledge and tools to not just survive, but thrive in the coming age of superintelligent AI." - Christopher Tavolazzi</blockquote>
@@ -193,7 +196,7 @@
           <PreorderButton />
       </div>
     </section>
-    <BookCoverModal isOpen={isModalOpen} on:close={closeModal} />
+    <BookCoverModal isOpen={isModalOpen} on:close={closeModal} offerEndDate={offerEndDate} />
 </div>
 
 
@@ -227,24 +230,24 @@
 
   .hero-cta {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       gap: 1rem;
       margin-bottom: 2rem;
   }
 
   .learn-more {
       padding: 0.5rem 1rem;
-      background-color: var(--bg-secondary);
-      color: var(--text-primary);
-      border: 2px solid var(--text-accent);
-      border-radius: 5px;
+      background-color: transparent;
+      color: var(--text-accent);
+      border: none;
       cursor: pointer;
       transition: all 0.3s ease;
+      font-size: 1rem;
   }
 
   .learn-more:hover {
-      background-color: var(--text-accent);
-      color: var(--bg-primary);
+      text-decoration: underline;
   }
 
   section {
@@ -258,26 +261,16 @@
   }
 
   .book-preview {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-  }
-
-  .book-cover {
-      max-width: 300px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 4px;
-      cursor: pointer;
-      transition: transform 0.2s ease-in-out;
-  }
-
-  .book-cover:hover {
-      transform: scale(1.05);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
   }
 
   .book-details ul {
       list-style-type: none;
       padding: 0;
+      display: inline-block;
+      text-align: left;
   }
 
   .book-details li {
@@ -311,25 +304,41 @@
       margin-bottom: 0.25rem;
   }
 
-  .author-image {
-      max-width: 100%; /* This allows the image to use its original dimensions */
-      height: auto; /* Maintains aspect ratio */
-      border-radius: 20px; /* Adds rounded corners */
-      border: 4px solid white; /* Adds a white border */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  .author-bio {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
 
   .author-content {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .author-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 4px solid var(--text-accent);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .author-text {
+    text-align: center;
+  }
+
+  .author-text p {
+    margin-bottom: 1rem;
   }
 
   blockquote {
-      font-style: italic;
-      border-left: 4px solid var(--text-accent);
-      padding-left: 1rem;
-      margin-top: 1rem;
+    font-style: italic;
+    border-left: 4px solid var(--text-accent);
+    padding-left: 1rem;
+    margin-top: 1rem;
+    text-align: left;
   }
 
   .endorsements {

@@ -5,13 +5,12 @@
   import CountdownTimer from './CountdownTimer.svelte';
 
   export let isOpen = false;
-  const dispatch = createEventDispatcher();
 
   let modalContent;
   let imageElement;
 
-  function closeModal() {
-    dispatch('close');
+  function toggleModal() {
+    isOpen = !isOpen;
   }
 
   onMount(() => {
@@ -36,13 +35,18 @@
   }
 
   // Set the target date for the offer (adjust as needed)
-  const offerEndDate = '2024-11-08T23:59:59';
+  const offerEndDate = new Date('2024-11-08T23:59:59');
 </script>
 
-<img src={coverImage} alt="Surviving the Singularity Book Cover" class="book-cover" on:click={() => dispatch('open')} />
+<img 
+  src={coverImage} 
+  alt="Surviving the Singularity Book Cover" 
+  class="book-cover" 
+  on:click={toggleModal} 
+/>
 
 {#if isOpen}
-  <div class="modal-overlay" on:click={closeModal}>
+  <div class="modal-overlay" on:click={toggleModal}>
     <div class="modal-content" bind:this={modalContent} on:click|stopPropagation>
       <div class="modal-inner">
         <div class="modal-image-container">
@@ -66,11 +70,14 @@
             <PreorderButton buttonText="Pre-order Now" />
           </div>
           <div class="lto-container">
-            <CountdownTimer targetDate={offerEndDate} />
+            <CountdownTimer 
+              countdownText="Limited Time Offer Ends In:" 
+              endDate={offerEndDate} 
+            />
           </div>
         </div>
       </div>
-      <button class="close-button" on:click={closeModal}>Close</button>
+      <button class="close-button" on:click={toggleModal}>Close</button>
     </div>
   </div>
 {/if}

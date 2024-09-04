@@ -74,6 +74,8 @@
   
   <MainPageBlurb />
 
+  <!-- This is the section that will be shown when the book is released -->
+
   <Divider />
 
   <div class="button-container">

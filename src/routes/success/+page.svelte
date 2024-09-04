@@ -101,22 +101,24 @@
   .skool-signup {
     background-color: var(--color-bg-secondary);
     border-radius: 10px;
-    padding: 30px;  /* Increased padding */
-    margin: 30px 0;  /* Increased margin */
+    padding: 30px 15px;  /* Adjusted padding */
+    margin: 30px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .skool-text-container {
-    margin: 20px 0;  /* Added margin above and below the text */
+    margin: 20px 0;
+    max-width: 100%;  /* Ensure text doesn't overflow */
+    overflow-wrap: break-word;  /* Allow long words to break */
   }
 
   .skool-signup h2.quote {
-    margin-bottom: 20px;  /* Increased space below the heading */
+    margin-bottom: 20px;
   }
 
   .skool-signup .attribution {
-    margin-bottom: 15px;  /* Added space between paragraphs */
-    line-height: 1.5;  /* Improved line spacing */
+    margin-bottom: 15px;
+    line-height: 1.5;
   }
 
   .skool-group-container {
@@ -124,7 +126,7 @@
     justify-content: center;
     width: 100%;
     margin: 2rem 0;
-    margin-top: 30px;  /* Increased space above the SkoolGroup component */
+    margin-top: 30px;
   }
 
   .button-container {
@@ -203,12 +205,25 @@
     .big-button {
       width: 100%;
     }
+
+    .content-container {
+      padding: 0 0.5rem;
+    }
+
+    .skool-signup {
+      padding: 20px 10px;
+    }
+
+    .attribution, .attribution.highlight, .attribution.highlight-bright {
+      font-size: 1rem;
+      padding: 0.5rem 0.25rem;
+    }
   }
 
   .attribution.highlight {
-    color: #ff6b6b; /* Bright coral red */
+    color: #ff6b6b;
     font-weight: bold;
-    background-color: rgba(255, 107, 107, 0.1); /* Light background */
+    background-color: rgba(255, 107, 107, 0.1);
     padding: 0.5rem;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -216,19 +231,19 @@
 
   /* For dark mode */
   :global(.dark) .attribution.highlight {
-    color: #ffa07a; /* Light salmon */
-    background-color: rgba(255, 160, 122, 0.2); /* Darker background */
+    color: #ffa07a;
+    background-color: rgba(255, 160, 122, 0.2);
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
   }
   
   .attribution.highlight-bright {
-    color: #ffffff; /* White text */
+    color: #ffffff;
     font-weight: bold;
-    background-color: #ff4757; /* Bright red background */
+    background-color: #ff4757;
     padding: 0.75rem;
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(255, 71, 87, 0.6);
-    border: 2px solid #ff6b6b; /* Slightly lighter red for border */
+    border: 2px solid #ff6b6b;
     margin: 1rem 0;
     transform: translateY(-2px);
     transition: all 0.3s ease;
@@ -241,10 +256,10 @@
 
   /* For dark mode */
   :global(.dark) .attribution.highlight-bright {
-    color: #ff4757; /* Bright red text */
-    background-color: #ffffff; /* White background */
+    color: #ff4757;
+    background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-    border: 2px solid #ff4757; /* Bright red border */
+    border: 2px solid #ff4757;
   }
 
   :global(.dark) .attribution.highlight-bright:hover {

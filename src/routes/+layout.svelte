@@ -33,7 +33,7 @@
 </script>
 
 <svelte:head>
-  <meta property="og:image" content="{base}/images/sts-welcome.png" />
+  <meta property="og:image" content="{base}/sts-welcome.png" />
   <meta property="og:image:width" content="1280" />
   <meta property="og:image:height" content="720" />
   <meta property="og:image:alt" content="Surviving the Singularity Welcome Image" />

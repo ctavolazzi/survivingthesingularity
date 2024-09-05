@@ -6,6 +6,7 @@
   import { darkMode } from '$lib/stores/darkMode';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+  import { base } from '$app/paths';
 
   function initDarkMode() {
     if (browser) {
@@ -30,6 +31,17 @@
     }
   }
 </script>
+
+<svelte:head>
+  <meta property="og:image" content="{base}/images/sts-welcome.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta property="og:image:alt" content="Surviving the Singularity Welcome Image" />
+  <meta property="og:title" content="Surviving the Singularity" />
+  <meta property="og:description" content="Surviving the Singularity is a workbook that helps you navigate the future of humanity." />
+  <meta property="og:url" content="https://survivingthesingularity.com" />
+  <meta property="og:type" content="website" />
+</svelte:head>
 
 <div class:dark={$darkMode}>
   <div class="app bg-white dark:bg-gray-900 min-h-screen">

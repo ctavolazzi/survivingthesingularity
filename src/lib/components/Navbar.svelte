@@ -3,7 +3,7 @@
   import { darkMode } from '$lib/stores/darkMode';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
-  import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconPreorder, IconResources } from '$lib/assets/Icons.svelte';
+  import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconPreorder, IconResources, IconData } from '$lib/assets/Icons.svelte';
   import { onMount } from 'svelte';
 
   let navbar;
@@ -42,6 +42,11 @@
 
   function handleJoinSkool() {
     window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');
+  }
+
+  function handleDataClick() {
+    goto('/data');
+    closeMenu();
   }
 
   onMount(() => {
@@ -129,6 +134,7 @@
             <a href="/download" class="dropdown-item">Download FREE Guide</a>
             <button on:click={handleBackBook} class="dropdown-item">Support on Kickstarter</button>
             <button on:click={handleJoinSkool} class="dropdown-item">Join Skool Community</button>
+            <button on:click={handleDataClick} class="dropdown-item">Data</button>
           </div>
         {/if}
       </NavLi>
@@ -196,6 +202,11 @@
               <button class="mobile-menu-sublink external-link" on:click={() => { closeMenu(); handleJoinSkool(); }} aria-label="Join Skool Community" data-tracking="nav-skool">
                 Join Skool Community
               </button>
+            </li>
+            <li>
+              <a href="/data" class="mobile-menu-sublink" on:click={closeMenu} aria-label="Data" data-tracking="nav-data">
+                Data
+              </a>
             </li>
           </ul>
         {/if}

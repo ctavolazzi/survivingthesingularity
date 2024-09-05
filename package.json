@@ -28,6 +28,7 @@
 		"flowbite-svelte": "^0.46.15",
 		"flowbite-svelte-icons": "^1.6.1",
 		"marked": "^14.1.0",
+		"papaparse": "^5.4.1",
 		"stripe": "^16.9.0",
 		"three": "^0.168.0"
 	}

@@ -2,20 +2,20 @@
   import stsWelcomeImage from '$lib/images/sts-welcome.png';
   import { onMount } from 'svelte';
 
-  export let title = "AI Mastery Guild";
-  export let subtitle = "Survive the Singularity with Us";
-  export let skoolBenefit = "Join on Skool: Exclusive Community & Resources";
-  export let description = "Connect with other friendly forward-thinkers, researchers, and innovators. Navigate the challenges and opportunities of our rapidly changing world together.";
+  export let title = "AI Mastery Guild: Surviving the Singularity";
+  export let subtitle = "Join Our Exclusive Community & Accelerate Your AI Journey";
+  export let skoolBenefit = "Exclusive Skool Community: Your Gateway to AI Mastery";
+  export let description = "Become part of the 'Surviving the Singularity' program - a comprehensive AI learning experience that includes our book, exclusive Skool community, and much more!";
   export let buttonText = "SECURE YOUR SPOT NOW";
   export let imageSrc = stsWelcomeImage;
   export let imageAlt = "Surviving the Singularity Welcome";
 
-  export let benefits = [
-    "Exclusive AI Innovators Network",
-    "Curated AI Tools",
-    "Implementation Strategies",
-    "Weekly Mastery Sessions",
-    "Secret Content Available Nowhere Else"
+  const programBenefits = [
+    "Exclusive access to our innovative thinkers' network",
+    "Connect with peers, from curious beginners to seasoned professionals",
+    "Early insights into groundbreaking research and technologies",
+    "Digital and physical copies of 'Surviving the Singularity'",
+    "Lifetime updates to keep you at the forefront of innovation"
   ];
 
   let spotsLeft = 100;
@@ -65,14 +65,15 @@
   <div class="content">
     <img src={imageSrc} alt={imageAlt} />
     <p class="skool-benefit" on:click={handleSkool} role="button" tabindex="0">{skoolBenefit}</p>
-    <p class="tagline">Your Gateway to AI Mastery</p>
+    <p class="tagline">Your Complete AI Mastery Program</p>
     <p>{description}</p>
+    <h3>What You'll Get:</h3>
     <ul class="benefits">
-      {#each benefits as benefit}
+      {#each programBenefits as benefit}
         <li>{benefit}</li>
       {/each}
     </ul>
-    
+
     <div class="testimonials">
       {#each testimonials as testimonial}
       <div class="testimonial">
@@ -85,11 +86,12 @@
       </div>
       {/each}
     </div>
-    
+
     <button on:click={handleSkool}>{buttonText}</button>
-    <p class="dont-wait">Don't wait!</p>
+    <p class="dont-wait">Don't miss out on this opportunity to future-proof your skills!</p>
     <p class="limited-offer" class:urgent={isUrgent} on:click={handleSkool} role="button" tabindex="0">{limitedOffer}</p>
-    <button class="final-cta" on:click={handleSkool}>Start Your Adventure Today</button>
+    <button class="final-cta" on:click={handleSkool}>Start Your AI Mastery Journey Today</button>
+    <p class="cta-explanation">By clicking this button, you'll be directed to our Skool community page where you can join the AI Mastery Guild and gain access to all program benefits.</p>
     <button class="community-cta" on:click={handleSkool}>Join the Skool Community</button>
   </div>
 </div>
@@ -553,5 +555,16 @@
     .testimonial {
       margin-bottom: 0;
     }
+  }
+
+  .cta-explanation {
+    font-size: 0.9rem;
+    color: #4a5568;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  :global(.dark) .cta-explanation {
+    color: #e2e8f0;
   }
 </style>

@@ -49,6 +49,11 @@
     closeMenu();
   }
 
+  function handleNewsletterClick() {
+    goto('/newsletter');
+    closeMenu();
+  }
+
   onMount(() => {
     const closeDropdown = (event) => {
       if (isDropdownOpen && !event.target.closest('.nav-item')) {
@@ -68,7 +73,7 @@
 </script>
 
 <div class="navbar-container" bind:this={navbar}>
-  <Navbar 
+  <Navbar
     class="bg-white dark:bg-gray-800 transition-all duration-300 w-full fixed top-0 left-0 right-0 z-50 shadow-lg"
   >
     <NavBrand href="/">
@@ -121,8 +126,8 @@
         </span>
       </NavLi>
       <NavLi class="nav-item relative">
-        <button 
-          on:click={toggleDropdown} 
+        <button
+          on:click={toggleDropdown}
           class="nav-button flex items-center h-full w-full"
           aria-expanded={isDropdownOpen}
         >
@@ -134,6 +139,7 @@
             <a href="/download" class="dropdown-item">Download FREE Guide</a>
             <button on:click={handleBackBook} class="dropdown-item">Support on Kickstarter</button>
             <button on:click={handleJoinSkool} class="dropdown-item">Join Skool Community</button>
+            <button on:click={handleNewsletterClick} class="dropdown-item">Newsletter</button>
             <button on:click={handleDataClick} class="dropdown-item">Data</button>
           </div>
         {/if}
@@ -204,9 +210,14 @@
               </button>
             </li>
             <li>
-              <a href="/data" class="mobile-menu-sublink" on:click={closeMenu} aria-label="Data" data-tracking="nav-data">
+              <button class="mobile-menu-sublink" on:click={handleNewsletterClick} aria-label="Newsletter" data-tracking="nav-newsletter">
+                Newsletter
+              </button>
+            </li>
+            <li>
+              <button class="mobile-menu-sublink" on:click={handleDataClick} aria-label="Data" data-tracking="nav-data">
                 Data
-              </a>
+              </button>
             </li>
           </ul>
         {/if}

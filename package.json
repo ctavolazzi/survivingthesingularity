@@ -27,9 +27,15 @@
 		"flowbite": "^2.5.1",
 		"flowbite-svelte": "^0.46.15",
 		"flowbite-svelte-icons": "^1.6.1",
-		"marked": "^14.1.0",
+		"gray-matter": "^4.0.3",
+		"marked": "^14.1.1",
 		"papaparse": "^5.4.1",
+		"remark": "^15.0.1",
+		"remark-html": "^16.0.1",
+		"remark-parse": "^11.0.0",
 		"stripe": "^16.9.0",
-		"three": "^0.168.0"
+		"three": "^0.168.0",
+		"unified": "^11.0.5",
+		"unist-util-visit": "^5.0.0"
 	}
 }

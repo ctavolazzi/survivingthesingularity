@@ -10,7 +10,7 @@
             description: "Comprehensive list of robotics companies with detailed information, including websites and industry focus.",
             lastEdited: "9.5.2024",
             icon: IconData,
-            link: "/data/robotics-companies",
+            link: "/data-warehouse/robotics-companies", // Updated this line
             entries: 393,
             tags: ["Robotics", "Industry"],
             buttonText: "View Companies",

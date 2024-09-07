@@ -1,4 +1,4 @@
-import { newsletters } from '$lib/newsletters';
+import { newsletters } from '$lib/data/newsletters';
 
 export async function GET({ url }) {
   const filename = url.searchParams.get('filename');

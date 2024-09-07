@@ -20,7 +20,7 @@
 
 <Spacer height="50px" />
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div>
     <div class="flex flex-col lg:flex-row gap-8">
       <div class="w-full lg:w-1/3 order-2 lg:order-1">
         <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden sticky top-4">

@@ -1,32 +1,25 @@
 <script>
-    import { IconData } from '$lib/assets/Icons.svelte';
+    import { dataResources } from '$lib/data/dataResources.js';
     import Spacer from '$lib/components/Spacer.svelte';
     import { Card, Button, Badge, Tooltip } from 'flowbite-svelte';
     import { goto } from '$app/navigation';
-
-    const dataResources = [
-        {
-            title: "Robotics Companies",
-            description: "Comprehensive list of robotics companies with detailed information, including websites and industry focus.",
-            lastEdited: "9.5.2024",
-            icon: IconData,
-            link: "/data-warehouse/robotics-companies", // Updated this line
-            entries: 393,
-            tags: ["Robotics", "Industry"],
-            buttonText: "View Companies",
-            csvUrl: "/data/robotics_companies.csv", // Add this line
-            csvSize: "50 KB" // Add this line (update with actual size)
-        },
-        // Add more data resources here
-    ];
 
     function handleViewDataset(link) {
         goto(link);
     }
 
     function handleDownloadCSV(csvUrl) {
-        // Implement download logic here if needed
         window.open(csvUrl, '_blank');
+    }
+
+    let csvSizes = {};
+
+    async function handleCSVHover(resource) {
+        if (!csvSizes[resource.csvUrl]) {
+            csvSizes[resource.csvUrl] = resource.getCSVSize 
+                ? await resource.getCSVSize() 
+                : resource.csvSize;
+        }
     }
 </script>
 
@@ -35,7 +28,7 @@
 </svelte:head>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <Spacer height="50px" />
+    <Spacer height="3rem" />
 
     <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100">
         Explore Our <span class="text-blue-600 dark:text-blue-400">Data Resources</span>
@@ -73,8 +66,18 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </Button>
-                        <Button on:click={() => handleDownloadCSV(resource.csvUrl)} class="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300">
-                            Download CSV ({resource.csvSize})
+                        <Button 
+                            on:click={() => handleDownloadCSV(resource.csvUrl)} 
+                            on:mouseenter={() => handleCSVHover(resource)}
+                            on:focus={() => handleCSVHover(resource)}
+                            class="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300"
+                        >
+                            Download CSV 
+                            {#if csvSizes[resource.csvUrl]}
+                                ({csvSizes[resource.csvUrl]})
+                            {:else}
+                                (Calculating...)
+                            {/if}
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                             </svg>

@@ -10,6 +10,7 @@
   let isMenuOpen = false;
   let isDropdownOpen = false;
   let isMobileMoreOpen = false;
+  let isLargeScreen = false;
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -63,8 +64,15 @@
 
     document.addEventListener('click', closeDropdown);
 
+    const mediaQuery = window.matchMedia('(min-width: 1280px)');
+    isLargeScreen = mediaQuery.matches;
+    
+    const handler = (e) => isLargeScreen = e.matches;
+    mediaQuery.addListener(handler);
+    
     return () => {
       document.removeEventListener('click', closeDropdown);
+      mediaQuery.removeListener(handler);
     };
   });
 
@@ -72,29 +80,27 @@
   $: currentPath = $page.url.pathname;
 </script>
 
-<div class="navbar-container" bind:this={navbar}>
-  <Navbar
-    class="bg-white dark:bg-gray-800 transition-all duration-300 w-full fixed top-0 left-0 right-0 z-50 shadow-lg"
-  >
-    <NavBrand href="/">
-      <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
-      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-        Surviving the Singularity
-      </span>
-    </NavBrand>
-    <div class="flex items-center md:order-2">
-      <DarkMode on:change={toggleDarkMode} class="mr-3" />
-      <button on:click={toggleMenu} class="text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 inline-flex items-center dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden">
+<Navbar
+  class="bg-white dark:bg-gray-800 transition-all duration-300 w-full fixed top-0 left-0 right-0 z-50 shadow-lg"
+>
+  <NavBrand href="/">
+    <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
+    <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+      Surviving the Singularity
+    </span>
+  </NavBrand>
+  
+  <div class="flex items-center xl:order-2">
+    <DarkMode on:change={toggleDarkMode} class="mr-3" />
+    {#if !isLargeScreen}
+      <button on:click={toggleMenu} class="text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 inline-flex items-center dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
-    </div>
-    <NavUl class="md:flex md:items-center md:justify-end w-full md:w-auto md:order-1 hidden">
-      <!-- <NavLi href="/" class="nav-item">
-        <span class="nav-button flex items-center h-full w-full">
-          <span class="flex-grow text-left">Home</span>
-          <span class="nav-icon ml-2">{@html IconHome.svg}</span>
-        </span>
-      </NavLi> -->
+    {/if}
+  </div>
+  
+  {#if isLargeScreen}
+    <NavUl class="flex items-center justify-end w-full xl:w-auto xl:order-1">
       <NavLi href="/about" class="nav-item">
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">About</span>
@@ -145,11 +151,11 @@
         {/if}
       </NavLi>
     </NavUl>
-  </Navbar>
-</div>
+  {/if}
+</Navbar>
 
-{#if isMenuOpen}
-  <div class="mobile-menu md:hidden w-full bg-white dark:bg-gray-800 fixed top-[64px] left-0 right-0 z-40">
+{#if !isLargeScreen && isMenuOpen}
+  <div class="mobile-menu w-full bg-white dark:bg-gray-800 fixed top-[64px] left-0 right-0 z-40">
     <ul class="flex flex-col items-end p-6">
       <li class="w-full border-b border-gray-200 dark:border-gray-700">
         <a href="/" class="mobile-menu-link {currentPath === '/' ? 'active' : ''}" on:click={closeMenu} aria-label="Home" data-tracking="nav-home">
@@ -216,7 +222,7 @@
             </li>
             <li>
               <button class="mobile-menu-sublink" on:click={handleDataWarehouseClick} aria-label="Data Warehouse" data-tracking="nav-data-warehouse">
-                Data
+                Data Warehouse
               </button>
             </li>
           </ul>

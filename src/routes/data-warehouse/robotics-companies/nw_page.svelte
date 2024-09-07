@@ -68,34 +68,32 @@
     }
 </script>
 
-<div class="page-container">
-    <div bind:this={container} class="particle-container"></div>
+<div bind:this={container} class="particle-container"></div>
 
-    <div class="content-container">
-        {#if titleVisible}
-            <div class="title-container" in:scale={{duration: 1000, easing: elasticOut}}>
-                <h1 class="title">
-                    <span class="char" style="animation-delay: 0.1s;">R</span>
-                    <span class="char" style="animation-delay: 0.2s;">o</span>
-                    <span class="char" style="animation-delay: 0.3s;">b</span>
-                    <span class="char" style="animation-delay: 0.4s;">o</span>
-                    <span class="char" style="animation-delay: 0.5s;">t</span>
-                    <span class="char" style="animation-delay: 0.6s;">i</span>
-                    <span class="char" style="animation-delay: 0.7s;">c</span>
-                    <span class="char" style="animation-delay: 0.8s;">s</span>
-                </h1>
-                <h1 class="title subtitle" in:fly={{y: 50, duration: 1000, delay: 1000}}>
-                    Revolution
-                </h1>
-            </div>
-            <p class="tagline" in:fade={{delay: 2000, duration: 1000}}>
-                These companies are at the forefront of the industry.<br>
-                Please feel free to browse or download the raw data.
-            </p>
-        {/if}
-        <div class="companies-container">
-            <RoboticsCompanies />
+<div class="content-container">
+    {#if titleVisible}
+        <div class="title-container" in:scale={{duration: 1000, easing: elasticOut}}>
+            <h1 class="title">
+                <span class="char" style="animation-delay: 0.1s;">R</span>
+                <span class="char" style="animation-delay: 0.2s;">o</span>
+                <span class="char" style="animation-delay: 0.3s;">b</span>
+                <span class="char" style="animation-delay: 0.4s;">o</span>
+                <span class="char" style="animation-delay: 0.5s;">t</span>
+                <span class="char" style="animation-delay: 0.6s;">i</span>
+                <span class="char" style="animation-delay: 0.7s;">c</span>
+                <span class="char" style="animation-delay: 0.8s;">s</span>
+            </h1>
+            <h1 class="title subtitle" in:fly={{y: 50, duration: 1000, delay: 1000}}>
+                Revolution
+            </h1>
         </div>
+        <p class="tagline" in:fade={{delay: 2000, duration: 1000}}>
+            These companies are at the forefront of the industry.<br>
+            Please feel free to browse or download the raw data.
+        </p>
+    {/if}
+    <div class="companies-container">
+        <RoboticsCompanies />
     </div>
 </div>
 
@@ -125,28 +123,22 @@
         font-family: 'Arial', sans-serif;
     }
 
-    .page-container {
-        position: relative;
-        width: 100%;
-        min-height: 100vh;
-    }
-
     .particle-container {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
+        z-index: -1;
     }
 
     .content-container {
         position: relative;
-        z-index: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 75px 20px 20px;
+        min-height: 100vh;
     }
 
     .companies-container {

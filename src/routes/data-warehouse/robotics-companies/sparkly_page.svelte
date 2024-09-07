@@ -4,7 +4,6 @@
     import { fade, fly, scale } from 'svelte/transition';
     import { elasticOut } from 'svelte/easing';
     import { tweened } from 'svelte/motion';
-    import RoboticsCompanies from '$lib/components/RoboticsCompanies.svelte';
 
     let container;
     let scene, camera, renderer, particles;
@@ -68,35 +67,30 @@
     }
 </script>
 
-<div class="page-container">
-    <div bind:this={container} class="particle-container"></div>
+<div bind:this={container} class="particle-container"></div>
 
-    <div class="content-container">
-        {#if titleVisible}
-            <div class="title-container" in:scale={{duration: 1000, easing: elasticOut}}>
-                <h1 class="title">
-                    <span class="char" style="animation-delay: 0.1s;">R</span>
-                    <span class="char" style="animation-delay: 0.2s;">o</span>
-                    <span class="char" style="animation-delay: 0.3s;">b</span>
-                    <span class="char" style="animation-delay: 0.4s;">o</span>
-                    <span class="char" style="animation-delay: 0.5s;">t</span>
-                    <span class="char" style="animation-delay: 0.6s;">i</span>
-                    <span class="char" style="animation-delay: 0.7s;">c</span>
-                    <span class="char" style="animation-delay: 0.8s;">s</span>
-                </h1>
-                <h1 class="title subtitle" in:fly={{y: 50, duration: 1000, delay: 1000}}>
-                    Revolution
-                </h1>
-            </div>
-            <p class="tagline" in:fade={{delay: 2000, duration: 1000}}>
-                These companies are at the forefront of the industry.<br>
-                Please feel free to browse or download the raw data.
-            </p>
-        {/if}
-        <div class="companies-container">
-            <RoboticsCompanies />
+<div class="content-container">
+    {#if titleVisible}
+        <div class="title-container" in:scale={{duration: 1000, easing: elasticOut}}>
+            <h1 class="title">
+                <span class="char" style="animation-delay: 0.1s;">R</span>
+                <span class="char" style="animation-delay: 0.2s;">o</span>
+                <span class="char" style="animation-delay: 0.3s;">b</span>
+                <span class="char" style="animation-delay: 0.4s;">o</span>
+                <span class="char" style="animation-delay: 0.5s;">t</span>
+                <span class="char" style="animation-delay: 0.6s;">i</span>
+                <span class="char" style="animation-delay: 0.7s;">c</span>
+                <span class="char" style="animation-delay: 0.8s;">s</span>
+            </h1>
+            <h1 class="title subtitle" in:fly={{y: 50, duration: 1000, delay: 1000}}>
+                Revolution
+            </h1>
         </div>
-    </div>
+        <p class="tagline" in:fade={{delay: 2000, duration: 1000}}>
+            These companies are at the forefront of the industry.<br>
+            Please feel free to browse or download the raw data.
+        </p>
+    {/if}
 </div>
 
 <style>
@@ -118,17 +112,10 @@
 
     :global(body) {
         margin: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
+        overflow: hidden;
         background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
         color: #fff;
         font-family: 'Arial', sans-serif;
-    }
-
-    .page-container {
-        position: relative;
-        width: 100%;
-        min-height: 100vh;
     }
 
     .particle-container {
@@ -137,22 +124,17 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
     }
 
     .content-container {
-        position: relative;
-        z-index: 2;
+        position: absolute;
+        top: 75px; /* Positioned 75px from the top */
+        left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 75px 20px 20px;
-    }
-
-    .companies-container {
-        width: 100%;
-        max-width: 1200px;
-        margin-top: 2rem;
+        padding: 20px;
     }
 
     .title-container {
@@ -198,7 +180,7 @@
 
     @media (max-height: 500px) {
         .content-container {
-            padding-top: 30px;
+            top: 30px; /* Adjust for very small heights */
         }
         .title {
             font-size: clamp(2rem, 8vw, 4rem);

@@ -7,7 +7,7 @@
     import { fetchAndParseCSV } from '$lib/utils/csvParser.js';
 
     const csvUrl = "/data/ai_singularity_videos.csv";
-    const csvSize = "2 KB"; // Update this with the actual file size
+    let csvSize = "Calculating...";
 
     let youtubeResources = [];
     let selectedTags = [];
@@ -21,7 +21,19 @@
         youtubeResources = await fetchAndParseCSV(csvUrl);
         processTagsAlgorithmically();
         showFilters = true;
+        calculateCSVSize();
     });
+
+    async function calculateCSVSize() {
+        try {
+            const response = await fetch(csvUrl, { method: 'HEAD' });
+            const size = response.headers.get('Content-Length');
+            csvSize = size ? `${(size / 1024).toFixed(2)} KB` : "Unknown";
+        } catch (error) {
+            console.error("Error calculating CSV size:", error);
+            csvSize = "Unknown";
+        }
+    }
 
     function processTagsAlgorithmically() {
         const tagCounts = {};
@@ -64,13 +76,16 @@
     <title>AI and Singularity Videos | Surviving the Singularity</title>
 </svelte:head>
 
-<div class="mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-screen min-w-full">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
     <Spacer height="50px" />
 
-    <div class="flex items-center justify-between mb-6" in:fly="{{ y: -50, duration: 1000 }}">
-        <h1 class="text-4xl sm:text-5xl font-extrabold">
+    <div class="text-center mb-12" in:fly="{{ y: -50, duration: 1000 }}">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-6">
             AI and Singularity <span class="text-blue-400">Videos</span>
         </h1>
+        <p class="text-xl mb-8 max-w-3xl mx-auto" in:fly="{{ y: 50, duration: 1000, delay: 300 }}">
+            Explore our curated collection of informative videos about AI, technological singularity, and related topics.
+        </p>
         <Button on:click={handleDownloadCSV} class="bg-blue-500 hover:bg-blue-600 text-white transition-all duration-300">
             <div class="flex flex-col items-center">
                 <span>Download CSV</span>
@@ -82,14 +97,10 @@
         </Button>
     </div>
 
-    <p class="text-xl mb-12 max-w-3xl" in:fly="{{ y: 50, duration: 1000, delay: 300 }}">
-        Explore our curated collection of informative videos about AI, technological singularity, and related topics.
-    </p>
-
     {#if showFilters}
-        <div class="mb-8" in:fade="{{ duration: 1000, delay: 600 }}">
+        <div class="mb-8 text-center" in:fade="{{ duration: 1000, delay: 600 }}">
             <h2 class="text-2xl font-bold mb-4">Filter by Tags</h2>
-            <div class="flex flex-wrap gap-2 mb-4">
+            <div class="flex flex-wrap justify-center gap-2 mb-4">
                 {#each showAllTags ? allTags : topTags as { tag, count }}
                     <button
                         class="px-3 py-1 rounded-full text-sm font-semibold transition-all duration-300 {selectedTags.includes(tag) ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}"
@@ -108,7 +119,7 @@
         </div>
     {/if}
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {#each filteredVideos as video, i}
             <div in:fly="{{ y: 50, duration: 500, delay: i * 100 }}">
                 <YouTubeResourceCard {video} />

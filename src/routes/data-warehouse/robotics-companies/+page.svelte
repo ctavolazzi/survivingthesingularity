@@ -1,24 +1,48 @@
 <script>
-    import { onMount } from 'svelte';
+    import { onMount, afterUpdate } from 'svelte';
     import * as THREE from 'three';
     import { fade, fly, scale } from 'svelte/transition';
     import { elasticOut } from 'svelte/easing';
     import { tweened } from 'svelte/motion';
     import RoboticsCompanies from '$lib/components/RoboticsCompanies.svelte';
+    import { darkMode } from '$lib/stores/darkMode';
+    import { browser } from '$app/environment';
 
     let container;
     let scene, camera, renderer, particles;
     let titleVisible = false;
+    let particleColor = 0xffffff;
 
-    const glowIntensity = tweened(0, {
-        duration: 2000,
-        easing: elasticOut
-    });
+    console.log("darkMode in robotics-companies/+page.svelte: start of script", $darkMode);
+    console.log("typeof darkMode in robotics-companies/+page.svelte: start of script", typeof $darkMode);
+
+    function updateParticleColor(isDarkMode) {
+        if (particles) {
+            particles.material.color.setHex(isDarkMode ? 0xffffff : 0x000000);
+            particles.material.needsUpdate = true;
+        }
+    }
+
+    $: {
+        particleColor = $darkMode ? 0xffffff : 0x000000;
+        if (browser) {
+            document.body.classList.toggle('dark', $darkMode);
+        }
+    }
 
     onMount(() => {
         initScene();
         animate();
         setTimeout(() => titleVisible = true, 500);
+
+        // Initial color update
+        updateParticleColor($darkMode);
+
+        // Listen for dark mode changes
+        const handleDarkModeChange = (event) => {
+            updateParticleColor(event.detail);
+        };
+        window.addEventListener('darkModeChanged', handleDarkModeChange);
 
         return () => {
             if (renderer) {
@@ -27,7 +51,17 @@
             if (scene) {
                 scene.clear();
             }
+            window.removeEventListener('darkModeChanged', handleDarkModeChange);
         };
+    });
+
+    afterUpdate(() => {
+        if (particles) {
+            particles.material.color.setHex(particleColor);
+            particles.material.needsUpdate = true;
+        }
+        console.log("darkMode in robotics-companies/+page.svelte: afterUpdate", $darkMode);
+        console.log("typeof darkMode in robotics-companies/+page.svelte: afterUpdate", typeof $darkMode);
     });
 
     function initScene() {
@@ -45,7 +79,12 @@
             vertices.push(THREE.MathUtils.randFloatSpread(2000));
         }
         geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-        const material = new THREE.PointsMaterial({ color: 0xffffff, size: 2, transparent: true, opacity: 0.8 });
+        const material = new THREE.PointsMaterial({ 
+            color: particleColor,  // Use the reactive particleColor here
+            size: 2, 
+            transparent: true, 
+            opacity: 0.8
+        });
         particles = new THREE.Points(geometry, material);
         scene.add(particles);
 
@@ -54,17 +93,27 @@
         window.addEventListener('resize', onWindowResize, false);
     }
 
+    function animate() {
+        requestAnimationFrame(animate);
+        if (particles) {
+            particles.rotation.x += 0.0001;
+            particles.rotation.y += 0.0001;
+        }
+        renderer.render(scene, camera);
+    }
+
     function onWindowResize() {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
-    function animate() {
-        requestAnimationFrame(animate);
-        particles.rotation.x += 0.0001;
-        particles.rotation.y += 0.0001;
-        renderer.render(scene, camera);
+    $: console.log("darkMode in robotics-companies/+page.svelte: end of script", $darkMode);
+    $: console.log("typeof darkMode in robotics-companies/+page.svelte: end of script", typeof $darkMode);
+
+    $: {
+        console.log("Dark mode changed in robotics-companies page. New value:", $darkMode);
+        // Your existing dark mode logic here
     }
 </script>
 
@@ -120,9 +169,15 @@
         margin: 0;
         overflow-x: hidden;
         overflow-y: auto;
+        font-family: 'Arial', sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        background: linear-gradient(to bottom, #f0f4f8, #d0e4f5);
+        color: #333;
+    }
+
+    :global(body.dark) {
         background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
         color: #fff;
-        font-family: 'Arial', sans-serif;
     }
 
     .page-container {
@@ -183,11 +238,17 @@
 
     .tagline {
         font-size: clamp(1rem, 3vw, 1.5rem);
-        color: #f0f0f0;
         text-align: center;
         max-width: 800px;
         margin: 2rem auto 0;
         line-height: 1.5;
+        color: #333;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    :global(body.dark) .tagline {
+        color: #f0f0f0;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 

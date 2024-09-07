@@ -5,6 +5,7 @@
   import { page } from '$app/stores';
   import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconPreorder, IconResources, IconData } from '$lib/assets/Icons.svelte';
   import { onMount } from 'svelte';
+  import DarkModeToggle from './DarkModeToggle.svelte';
 
   let navbar;
   let isMenuOpen = false;
@@ -25,16 +26,18 @@
   function toggleDropdown(event) {
     event.stopPropagation();
     isDropdownOpen = !isDropdownOpen;
+    console.log("Dropdown open:", isDropdownOpen);
   }
 
   function toggleMobileMore(event) {
     event.stopPropagation();
     isMobileMoreOpen = !isMobileMoreOpen;
+    console.log("Mobile more open:", isMobileMoreOpen);
   }
 
   function toggleDarkMode() {
-    console.log("Toggling dark mode");
-    darkMode.update(d => !d);
+    darkMode.update(current => !current);
+    console.log("Dark mode toggled. New value:", $darkMode);
   }
 
   function handleBackBook() {
@@ -78,6 +81,12 @@
 
   let currentPath;
   $: currentPath = $page.url.pathname;
+
+  $: if (typeof document !== 'undefined') {
+    document.documentElement.classList.toggle('dark', $darkMode);
+  }
+
+  $: console.log("Dark mode value in Navbar:", $darkMode);
 </script>
 
 <Navbar
@@ -91,7 +100,8 @@
   </NavBrand>
   
   <div class="flex items-center xl:order-2">
-    <DarkMode on:change={toggleDarkMode} class="mr-3" />
+    <!-- <DarkMode checked={$darkMode} on:change={toggleDarkMode} class="mr-3" /> -->
+    <DarkModeToggle />
     {#if !isLargeScreen}
       <button on:click={toggleMenu} class="text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 inline-flex items-center dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>

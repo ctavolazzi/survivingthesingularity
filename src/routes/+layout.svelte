@@ -8,27 +8,15 @@
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
 
-  function initDarkMode() {
+  onMount(() => {
     if (browser) {
-      const savedDarkMode = localStorage.getItem('darkMode');
-      if (savedDarkMode === 'true') {
-        darkMode.set(true);
-      } else {
-        darkMode.set(false);
-      }
+      const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+      darkMode.set(savedDarkMode);
     }
-  }
-
-  onMount(initDarkMode);
+  });
 
   $: if (browser) {
-    if ($darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
-    }
+    document.documentElement.classList.toggle('dark', $darkMode);
   }
 </script>
 
@@ -43,15 +31,13 @@
   <meta property="og:type" content="website" />
 </svelte:head>
 
-<div class:dark={$darkMode}>
-  <div class="app bg-white dark:bg-gray-900 min-h-screen">
-    <FloatingProgressBar />
-    <Navbar />
-    <main class="container mx-auto px-4 py-8">
-      <slot />
-    </main>
-    <Footer />
-  </div>
+<div class="app bg-white dark:bg-gray-900 min-h-screen">
+  <FloatingProgressBar />
+  <Navbar />
+  <main class="container mx-auto px-4 py-8">
+    <slot />
+  </main>
+  <Footer />
 </div>
 
 <style>

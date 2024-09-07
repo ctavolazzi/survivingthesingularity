@@ -18,6 +18,7 @@
   import PreorderCountdownDropin from '$lib/components/PreorderCountdownDropin.svelte';
   import Divider from '$lib/components/Divider.svelte';
   import TransformationPitch from '$lib/components/TransformationPitch.svelte';
+  import { darkMode } from '$lib/stores/darkMode';
 
 	export let data;
   export let preorderDate = new Date("2024-11-08T23:59:59").getTime()
@@ -38,6 +39,8 @@
     setTimeout(() => {
       newsletterSubmitted.reset();
     }, newsletterPopupDelay);
+    console.log("darkMode in +page.svelte: onmount", $darkMode);
+    console.log("typeof darkMode in +page.svelte: onmount", typeof $darkMode);
 	});
 
 	function handleBackBook() {

@@ -3,6 +3,7 @@
     import Spacer from '$lib/components/Spacer.svelte';
     import { Card, Button, Badge, Tooltip } from 'flowbite-svelte';
     import { goto } from '$app/navigation';
+    import { onMount } from 'svelte';
 
     function handleViewDataset(link) {
         goto(link);
@@ -14,13 +15,18 @@
 
     let csvSizes = {};
 
-    async function handleCSVHover(resource) {
+    async function calculateCSVSize(resource) {
         if (!csvSizes[resource.csvUrl]) {
             csvSizes[resource.csvUrl] = resource.getCSVSize 
                 ? await resource.getCSVSize() 
                 : resource.csvSize;
+            csvSizes = csvSizes; // Trigger reactivity
         }
     }
+
+    onMount(() => {
+        dataResources.forEach(calculateCSVSize);
+    });
 </script>
 
 <svelte:head>
@@ -68,8 +74,6 @@
                         </Button>
                         <Button 
                             on:click={() => handleDownloadCSV(resource.csvUrl)} 
-                            on:mouseenter={() => handleCSVHover(resource)}
-                            on:focus={() => handleCSVHover(resource)}
                             class="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300"
                         >
                             Download CSV 

@@ -1,31 +1,27 @@
 import { error } from '@sveltejs/kit';
-import { readdir, readFile } from 'fs/promises';
-import { join } from 'path';
 import { parseMarkdown } from '$lib/utils/markdownParser.js';
 
+const newsletterFiles = import.meta.glob('/src/lib/data/newsletters/*.md', { query: '?raw', import: 'default' });
+
 export async function load() {
-  const newsletterDir = join(process.cwd(), 'src', 'lib', 'data', 'newsletters');
-  
   try {
-    const files = await readdir(newsletterDir);
     const newsletters = await Promise.all(
-      files
-        .filter(file => file.endsWith('.md'))
-        .map(async file => {
-          const content = await readFile(join(newsletterDir, file), 'utf-8');
-          const { metadata, htmlContent } = await parseMarkdown(content);
-          
-          const editionNumber = file.match(/\d+/)[0];
-          
-          return {
-            slug: file.replace('.md', ''),
-            title: metadata.title,
-            date: metadata.date,
-            description: metadata.description,
-            content: htmlContent,
-            editionNumber: parseInt(editionNumber, 10)
-          };
-        })
+      Object.entries(newsletterFiles).map(async ([path, loader]) => {
+        const content = await loader();
+        const { metadata, htmlContent } = await parseMarkdown(content);
+        
+        const file = path.split('/').pop();
+        const editionNumber = file.match(/\d+/)[0];
+        
+        return {
+          slug: file.replace('.md', ''),
+          title: metadata.title,
+          date: metadata.date,
+          description: metadata.description,
+          content: htmlContent,
+          editionNumber: parseInt(editionNumber, 10)
+        };
+      })
     );
 
     // Sort newsletters by edition number, descending

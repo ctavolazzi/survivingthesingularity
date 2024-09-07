@@ -1,5 +1,4 @@
-import { readFile } from 'fs/promises';
-import { join } from 'path';
+import { newsletters } from '$lib/newsletters';
 
 export async function GET({ url }) {
   const filename = url.searchParams.get('filename');
@@ -7,10 +6,8 @@ export async function GET({ url }) {
     return new Response('Filename is required', { status: 400 });
   }
 
-  const newsletterPath = join(process.cwd(), 'src', 'lib', 'data', 'newsletters', filename);
-
   try {
-    const content = await readFile(newsletterPath, 'utf-8');
+    const content = await newsletters[filename]();
     return new Response(content);
   } catch (error) {
     console.error('Error reading newsletter:', error);

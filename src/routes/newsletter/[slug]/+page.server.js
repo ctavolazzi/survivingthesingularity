@@ -1,36 +1,37 @@
 import { error } from '@sveltejs/kit';
-import { readdir, readFile } from 'fs/promises';
-import { join } from 'path';
 import { parseMarkdown } from '$lib/utils/markdownParser.js';
+
+const newsletterFiles = import.meta.glob('/src/lib/data/newsletters/*.md', { query: '?raw', import: 'default' });
 
 export async function load({ params }) {
   const { slug } = params;
-  const newsletterDir = join(process.cwd(), 'src', 'lib', 'data', 'newsletters');
 
   try {
-    const files = await readdir(newsletterDir);
     const allNewsletters = await Promise.all(
-      files
-        .filter(file => file.endsWith('.md'))
-        .map(async file => {
-          const content = await readFile(join(newsletterDir, file), 'utf-8');
-          const { metadata } = await parseMarkdown(content);
-          const editionNumber = file.match(/\d+/)[0];
-          
-          return {
-            slug: file.replace('.md', ''),
-            title: metadata.title,
-            date: metadata.date,
-            description: metadata.description,
-            editionNumber: parseInt(editionNumber, 10)
-          };
-        })
+      Object.entries(newsletterFiles).map(async ([path, loader]) => {
+        const content = await loader();
+        const { metadata } = await parseMarkdown(content);
+        const file = path.split('/').pop();
+        const editionNumber = file.match(/\d+/)[0];
+        
+        return {
+          slug: file.replace('.md', ''),
+          title: metadata.title,
+          date: metadata.date,
+          description: metadata.description,
+          editionNumber: parseInt(editionNumber, 10)
+        };
+      })
     );
 
     allNewsletters.sort((a, b) => b.editionNumber - a.editionNumber);
 
-    const filePath = join(newsletterDir, `${slug}.md`);
-    const content = await readFile(filePath, 'utf-8');
+    const newsletterLoader = newsletterFiles[`/src/lib/data/newsletters/${slug}.md`];
+    if (!newsletterLoader) {
+      throw error(404, 'Newsletter not found');
+    }
+
+    const content = await newsletterLoader();
     const { metadata, htmlContent } = await parseMarkdown(content);
     
     return {

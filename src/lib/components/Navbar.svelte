@@ -44,8 +44,8 @@
     window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');
   }
 
-  function handleDataClick() {
-    goto('/data');
+  function handleDataWarehouseClick() {
+    goto('/data-warehouse');
     closeMenu();
   }
 
@@ -140,7 +140,7 @@
             <button on:click={handleBackBook} class="dropdown-item">Support on Kickstarter</button>
             <button on:click={handleJoinSkool} class="dropdown-item">Join Skool Community</button>
             <button on:click={handleNewsletterClick} class="dropdown-item">Newsletter</button>
-            <button on:click={handleDataClick} class="dropdown-item">Data</button>
+            <button on:click={handleDataWarehouseClick} class="dropdown-item">Data Warehouse</button>
           </div>
         {/if}
       </NavLi>
@@ -215,7 +215,7 @@
               </button>
             </li>
             <li>
-              <button class="mobile-menu-sublink" on:click={handleDataClick} aria-label="Data" data-tracking="nav-data">
+              <button class="mobile-menu-sublink" on:click={handleDataWarehouseClick} aria-label="Data Warehouse" data-tracking="nav-data-warehouse">
                 Data
               </button>
             </li>

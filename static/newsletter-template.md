@@ -1,6 +1,7 @@
 # Surviving the Singularity Newsletter
 
-## Issue #[Number] | [Date]
+## Issue #[Number] 
+### [Date]
 
 <!-- ![Newsletter Header Image](header-image-url) -->
 

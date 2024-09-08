@@ -39,6 +39,22 @@
       <p class="mb-2">If you have any questions about these Terms of Service, please contact us.</p>
     </section>
 
+    <section id="community-guidelines" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Community Guidelines</h2>
+      <p class="mb-2">Our community guidelines are designed to ensure a positive experience for all users. By participating in our community, you agree to adhere to these guidelines:</p>
+      <ul class="list-disc list-inside mb-2">
+        <li>Comply with all applicable laws and regulations.</li>
+        <li>Respect the rights and dignity of others.</li>
+        <li>Use the platform responsibly and for its intended purpose.</li>
+        <li>Protect your personal information and respect the privacy of others.</li>
+        <li>Adhere to intellectual property laws and respect copyrights.</li>
+        <li>Contribute to constructive discussions within the community.</li>
+        <li>Report any concerns or violations to the appropriate channels.</li>
+      </ul>
+      <p class="mb-2">We reserve the right to take appropriate action, which may include content removal or account restrictions, for any behavior that violates these guidelines or negatively impacts our community.</p>
+      <p class="mb-2">These guidelines may be updated periodically. Users are encouraged to review them regularly to ensure compliance.</p>
+    </section>
+
     <section id="cookie-policy" class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">Cookie Policy</h2>
       <p class="mb-2">We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our social media, advertising, and analytics partners.</p>

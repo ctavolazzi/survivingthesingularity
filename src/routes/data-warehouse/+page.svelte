@@ -33,24 +33,24 @@
     <title>Data Resources | Surviving the Singularity</title>
 </svelte:head>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center">
     <Spacer height="1rem" />
 
-    <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100">
+    <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100 text-center">
         Explore Our <span class="text-blue-600 dark:text-blue-400">Data Resources</span>
     </h1>
-    <p class="text-xl mb-12 text-gray-600 dark:text-gray-300 max-w-3xl">
+    <p class="text-xl mb-12 text-gray-600 dark:text-gray-300 max-w-3xl text-center">
         Dive into our curated collection of AI and robotics datasets. These resources provide valuable insights into the rapidly evolving world of technology.
     </p>
 
-    <div class="mb-8">
+    <div class="mb-8 text-center">
         <p class="text-xl mb-4 text-gray-600 dark:text-gray-300 max-w-3xl italic">Think we're missing something? Add your own research here.</p>
         <Button class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600" on:click={() => goto('/data-warehouse/research-links/contribute')}>Add Your Research</Button>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {#each dataResources as resource}
-            <Card class="hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+            <Card class="hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 w-full">
                 <div class="flex flex-col h-full">
                     <div class="flex items-center mb-4">
                         <span class="icon-container mr-4 text-blue-600 dark:text-blue-400 p-3 bg-blue-100 dark:bg-blue-900 rounded-full">

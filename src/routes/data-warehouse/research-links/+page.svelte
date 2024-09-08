@@ -10,7 +10,8 @@
       console.log('Fetching research links');
       const { data, error } = await supabase
         .from('research_links')
-        .select('*');
+        .select('*')
+        .order('added_at', { ascending: false }); // Add this line
 
       if (error) {
         console.error('Error fetching research links:', error);

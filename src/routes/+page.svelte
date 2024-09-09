@@ -64,7 +64,7 @@
   }
 </script>
 
-<div class="main-content" style="padding-top: {navbarHeight}px">
+<div class="main-content">
   <Countdown {targetDate} />
 
   <div class="quote-container">

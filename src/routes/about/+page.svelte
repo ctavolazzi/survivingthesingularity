@@ -18,8 +18,6 @@
   };
 </script>
 
-<Spacer height="50px" />
-
 <div class="main-content text-center">
   <header>
     <h1 class="title">Surviving the Singularity</h1>

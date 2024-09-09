@@ -1,6 +1,5 @@
 <script>
     import { onMount } from 'svelte';
-    import Spacer from '$lib/components/Spacer.svelte';
 
     let pdfData = [];
 
@@ -38,7 +37,7 @@
     }
 </script>
 
-<Spacer height="2rem" />
+
 <h1 class="text-3xl font-bold mb-4">PDF Locker</h1>
 <p class="mb-6 text-gray-600">Access a collection of curated PDFs related to AI, singularity, and future technologies.</p>
 

@@ -8,7 +8,6 @@
   import StSBookImage from '$lib/images/default-blog-image.png';
   import Countdown from '$lib/components/Countdown.svelte';
   import StSFreeGuideImage from '$lib/images/StSFreeGuide.png';
-  import Spacer from '$lib/components/Spacer.svelte';
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
@@ -53,8 +52,6 @@
   <title>Free Book Sample</title>
   <meta name="description" content="Download your free guide on processing AI anxiety and confusion. Join 10,000+ readers preparing for the future of technology.">
 </svelte:head>
-
-<Spacer height="50px" />
 
 <main class="container mx-auto px-4 py-8 max-w-3xl dark:bg-gray-800 dark:text-gray-200">
   <header in:fade="{{ duration: 1000 }}">

@@ -1,5 +1,4 @@
 <script>
-  import Spacer from '$lib/components/Spacer.svelte';
   import { onMount } from 'svelte';
 
   let navbarHeight = 0;
@@ -9,13 +8,10 @@
   });
 </script>
 
-<div class="outer-container" style="padding-top: {navbarHeight}px">
-  <Spacer height="1rem">
-    <span class="spacer-text">Our Policies</span>
-  </Spacer>
+<div class="outer-container">
 
   <div class="content-container">
-    <h1 class="text-3xl font-bold mb-6 text-center">Our Policies</h1>
+    <h1 class="text-3xl font-bold text-center">Our Policies</h1>
 
     <section id="privacy-policy" class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">Privacy Policy</h2>

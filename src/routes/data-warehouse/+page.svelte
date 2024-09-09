@@ -1,6 +1,5 @@
 <script>
     import { dataResources } from '$lib/data/dataResources.js';
-    import Spacer from '$lib/components/Spacer.svelte';
     import { Card, Button, Badge, Tooltip } from 'flowbite-svelte';
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
@@ -34,7 +33,6 @@
 </svelte:head>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center">
-    <Spacer height="1rem" />
 
     <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100 text-center">
         Explore Our <span class="text-blue-600 dark:text-blue-400">Data Resources</span>

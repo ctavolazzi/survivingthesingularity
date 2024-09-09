@@ -6,7 +6,6 @@
   import coverImage from '$lib/images/Surviving-the-Singularity-Cover.png';
   import welcomeImage from '$lib/images/sts-welcome.png';
   import { darkMode } from '$lib/stores/darkMode';
-  import Spacer from '$lib/components/Spacer.svelte';
 
   let isDarkMode;
   darkMode.subscribe(value => {
@@ -35,8 +34,6 @@
   <title>{pageTitle}</title>
   <meta name="description" content="Preorder 'Surviving the Singularity' and prepare for the AI revolution. Secure your future in a world of rapid technological change.">
 </svelte:head>
-
-<Spacer height="50px" />
 
 <div class="preorder-page {$darkMode ? 'dark' : ''}">
   <header class="hero">

@@ -50,7 +50,6 @@
 </script>
 
 <div class="main-content">
-  <Spacer height="50px"/>
   <Countdown {targetDate} />
 
   <div class="stylish-divider"></div>

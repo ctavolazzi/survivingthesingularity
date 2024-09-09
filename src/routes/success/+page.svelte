@@ -1,7 +1,6 @@
 <script>
   import { goto } from '$app/navigation';
   import SkoolGroup from '$lib/components/SkoolGroup.svelte';
-  import Spacer from '$lib/components/Spacer.svelte';
   import StSWelcome from '$lib/images/sts-welcome.png';
   import ContactForm from '$lib/components/ContactForm.svelte';
 
@@ -42,8 +41,6 @@
     </div>
   </div>
 </div>
-
-<Spacer height="1rem"/>
 
 <style>
   .main-content {

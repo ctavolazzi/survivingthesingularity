@@ -244,7 +244,7 @@
 
 <style>
   :global(body) {
-    padding-top: 30px; /* Adjust this value based on your navbar height */
+    padding-top: 72px; /* Adjust this value based on your navbar height */
     overflow-x: hidden;
   }
 

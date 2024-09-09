@@ -3,7 +3,6 @@
     import NewsletterList from './NewsletterList.svelte';
     import NewsletterSignup from './NewsletterSignup.svelte';
     import SkoolGroup from './SkoolGroup.svelte';
-    import Spacer from './Spacer.svelte';
     import Divider from './Divider.svelte';
     import PreorderCountdownDropin from './PreorderCountdownDropin.svelte';
   
@@ -17,8 +16,6 @@
       }
     }
 </script>
-
-<Spacer height="50px" />
 
 <div>
     <div class="flex flex-col lg:flex-row gap-8">

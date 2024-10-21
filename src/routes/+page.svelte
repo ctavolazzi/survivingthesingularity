@@ -30,7 +30,20 @@
   <FAQ />
 
 	<div class="book-container">
-		<img src={welcomeImage} alt="Surviving the Singularity Book" />
+		<img
+			src={welcomeImage}
+			on:click={() => {
+				window.location.href = '/sample';
+			}}
+			on:keypress={(e) => {
+				if (e.key === 'Enter') {
+					window.location.href = '/sample';
+				}
+			}}
+			alt="Surviving the Singularity Book"
+			class="clickable-image"
+			tabindex="0"
+		/>
 	</div>
 
 	<LatestNews {post} />
@@ -160,11 +173,18 @@
 		margin: 0 auto;
 	}
 
-	.book-container img {
+	.clickable-image {
 		width: 100%;
 		height: auto;
 		border-radius: 8px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+		transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	}
+
+	.clickable-image:hover, .clickable-image:focus {
+		transform: scale(1.05);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 	}
 
 	/* Dark mode styles */

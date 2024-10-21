@@ -24,12 +24,24 @@
 
 <section class="book-sample" in:fade="{{ duration: 1000 }}">
     <div class="content">
-        <h2 class="heading-text">Surviving the Singularity: A Sneak Peek</h2>
-        <p class="subheading">Get a taste of the AI revolution</p>
-        
+        <h1 class="heading-text">Surviving the Singularity: Workbook</h1>
+        <h2 class="subheading-1">Learn how to thrive in the age of AI</h2>
+        <h2 class="subheading-2">A guided workbook for processing AI anxiety and cognitive dissonance</h2>
+
         <div class="book-preview">
             <div class="image-container">
-                <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" on:click={handleReadSample} />
+                <img
+                    src={StSBookImage}
+                    alt="Surviving the Singularity Book Cover"
+                    class="book-image clickable-image"
+                    on:click={handleReadSample}
+                    on:keypress={(e) => {
+                        if (e.key === 'Enter') {
+                            handleReadSample();
+                        }
+                    }}
+                    tabindex="0"
+                />
             </div>
             <div class="preview-highlights">
                 <h3>In this free sample of the book, you'll find:</h3>
@@ -41,13 +53,13 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="spoof-disclaimer">
             <blockquote>"This book is so good, it made my neural networks tingle!" </blockquote>
             <cite>- Definitely Not A Real AI, Fictional Endorsement Bot</cite>
             <p class="spoof-disclaimer-text">(Just kidding! We don't need fake endorsements. Read the sample and judge for yourself!)</p>
         </div>
-        
+
         <div class="cta-container">
             <button on:click={handleReadSample} class="cta-button">
                 Read the Free Sample Now
@@ -60,7 +72,7 @@
             </p>
             <p class="reader-count">{readerCount} curious minds have peeked at the sample</p>
         </div>
-        
+
         <div class="trust-indicators">
             <p class="no-signup">✓ No sign-up required &nbsp;&nbsp; ✓ Instant access &nbsp;&nbsp; ✓ 10-minute read</p>
             <p class="data-policy">We respect your privacy. It's just a sample page - no strings attached!</p>
@@ -70,33 +82,39 @@
 
 <style>
     .book-sample {
-        background-color: #ffffff;
-        border-radius: 12px;
+        background-color: #1a202c;
         padding: 2rem;
-        margin: 2rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        color: var(--color-text-primary);
+        border-radius: 1rem;
     }
 
     .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
+        padding: 1rem 1.5rem;
     }
 
     .heading-text {
-        font-size: 2rem;
-        font-weight: 600;
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        font-weight: 700;
+        color: #ffffff;
         margin-bottom: 0.5rem;
-        color: #333333;
+        line-height: 1.2;
     }
 
-    .subheading {
-        font-size: 1.1rem;
-        color: #555555;
-        margin-bottom: 1.5rem;
-        max-width: 600px;
+    .subheading-1 {
+        font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+        font-weight: 500;
+        color: #a0aec0;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .subheading-2 {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        font-weight: 400;
+        color: #718096;
+        max-width: 90%;
+        margin: 0 auto 2rem;
+        line-height: 1.6;
     }
 
     .book-preview {
@@ -116,11 +134,16 @@
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .book-image:hover {
+    .clickable-image {
+        cursor: pointer;
+    }
+
+    .clickable-image:hover, .clickable-image:focus {
         transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
     .preview-highlights {
@@ -305,7 +328,6 @@
         color: #e5e7eb;
     }
 
-    :global(.dark) .subheading,
     :global(.dark) .spoof-disclaimer blockquote {
         color: #b0b0b0;
     }
@@ -342,14 +364,19 @@
     @media (max-width: 768px) {
         .book-sample {
             padding: 1.5rem;
+            padding-top: 0;
         }
 
         .heading-text {
-            font-size: 1.75rem;
+            font-size: 2rem;
         }
 
-        .subheading {
-            font-size: 1rem;
+        .subheading-1 {
+            font-size: 1.1rem;
+        }
+
+        .subheading-2 {
+            font-size: 0.9rem;
         }
 
         .book-preview {
@@ -359,7 +386,7 @@
 
         .book-image {
             max-width: 150px;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
         }
 
         .cta-button {
@@ -454,4 +481,35 @@
             color: #ff6b6b;
         }
     }
+
+    @media (max-width: 640px) {
+        .content {
+            padding: 2rem 1rem;
+        }
+
+        .heading-text {
+            margin-bottom: 1.5rem;
+        }
+
+        .subheading-2 {
+            max-width: 100%;
+        }
+    }
+
+    .heading-text {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .subheading-1,
+    .subheading-2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    /* This targets the container of the countdown timer if it exists */
+    :global(.countdown-container) {
+        margin-bottom: 0;
+    }
 </style>
+

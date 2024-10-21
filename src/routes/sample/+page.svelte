@@ -50,7 +50,7 @@
 
 <svelte:head>
   <title>Free Book Sample</title>
-  <meta name="description" content="Download your free guide on processing AI anxiety and confusion. Join 10,000+ readers preparing for the future of technology.">
+  <meta name="description" content="Download your free guide on processing AI anxiety and confusion. Join thousands of other readers preparing for the future of technology.">
 </svelte:head>
 
 <main class="container mx-auto px-4 py-8 max-w-3xl dark:bg-gray-800 dark:text-gray-200">
@@ -105,8 +105,8 @@
 {#if showPopup}
   <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" in:fade>
     <div class="bg-white dark:bg-gray-800 p-8 rounded-lg max-w-md relative" in:fly="{{ y: 200, duration: 500 }}">
-      <button 
-        on:click={closePopup} 
+      <button
+        on:click={closePopup}
         class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
         aria-label="Close popup"
       >

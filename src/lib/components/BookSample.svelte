@@ -4,6 +4,7 @@
     import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
     import PreorderButton from './PreorderButton.svelte';
     import { goto } from '$app/navigation';
+    import { darkMode } from '$lib/stores/darkMode';
 
     let readerCount = 4921;
 
@@ -22,7 +23,7 @@
     });
 </script>
 
-<section class="book-sample" in:fade="{{ duration: 1000 }}">
+<section class="book-sample" class:dark={$darkMode} in:fade="{{ duration: 1000 }}">
     <div class="content">
         <h1 class="heading-text">Surviving the Singularity: Workbook</h1>
         <h2 class="subheading-1">Learn how to thrive in the age of AI</h2>
@@ -30,18 +31,7 @@
 
         <div class="book-preview">
             <div class="image-container">
-                <img
-                    src={StSBookImage}
-                    alt="Surviving the Singularity Book Cover"
-                    class="book-image clickable-image"
-                    on:click={handleReadSample}
-                    on:keypress={(e) => {
-                        if (e.key === 'Enter') {
-                            handleReadSample();
-                        }
-                    }}
-                    tabindex="0"
-                />
+                <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" on:click={handleReadSample} />
             </div>
             <div class="preview-highlights">
                 <h3>In this free sample of the book, you'll find:</h3>
@@ -82,9 +72,30 @@
 
 <style>
     .book-sample {
-        background-color: #1a202c;
+        --bg-color: #ffffff;
+        --text-color: #1a202c;
+        --subheading-color: #718096;
+        --highlight-bg: #f0f8ff;
+        --highlight-border: #3498db;
+        --button-bg: #3498db;
+        --button-hover-bg: #2980b9;
+        --reader-count-bg: rgba(52, 152, 219, 0.1);
+
+        background-color: var(--bg-color);
+        color: var(--text-color);
         padding: 2rem;
         border-radius: 1rem;
+    }
+
+    .book-sample.dark {
+        --bg-color: #1a202c;
+        --text-color: #e5e7eb;
+        --subheading-color: #a0aec0;
+        --highlight-bg: #2c3e50;
+        --highlight-border: #3498db;
+        --button-bg: #3498db;
+        --button-hover-bg: #2980b9;
+        --reader-count-bg: rgba(52, 152, 219, 0.2);
     }
 
     .content {
@@ -95,7 +106,7 @@
     .heading-text {
         font-size: clamp(2.5rem, 5vw, 3.5rem);
         font-weight: 700;
-        color: #ffffff;
+        color: var(--text-color);
         margin-bottom: 0.5rem;
         line-height: 1.2;
     }
@@ -103,7 +114,7 @@
     .subheading-1 {
         font-size: clamp(1.25rem, 2.5vw, 1.5rem);
         font-weight: 500;
-        color: #a0aec0;
+        color: var(--subheading-color);
         margin-top: 0;
         margin-bottom: 0.5rem;
     }
@@ -111,7 +122,7 @@
     .subheading-2 {
         font-size: clamp(1rem, 2vw, 1.25rem);
         font-weight: 400;
-        color: #718096;
+        color: var(--subheading-color);
         max-width: 90%;
         margin: 0 auto 2rem;
         line-height: 1.6;
@@ -134,73 +145,64 @@
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s ease;
     }
 
-    .clickable-image {
-        cursor: pointer;
-    }
-
-    .clickable-image:hover, .clickable-image:focus {
+    .book-image:hover {
         transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
     .preview-highlights {
-        background-color: #f8f8f8;
-        padding: 1rem;
+        background-color: var(--highlight-bg);
+        padding: 1rem 0;
         border-radius: 8px;
         text-align: left;
-        flex-grow: 1;
     }
 
     .preview-highlights h3 {
-        color: #333333;
+        color: var(--text-color);
         margin-bottom: 0.5rem;
+        padding: 0 1rem;
     }
 
     .preview-highlights ul {
         list-style-type: none;
-        padding-left: 0;
-        margin-left: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
     }
 
     .preview-highlights li {
         margin-bottom: 0.5rem;
         display: flex;
         align-items: center;
-    }
-
-    .preview-highlights li::before {
-        content: attr(data-emoji);
-        margin-right: 0.5rem;
-        font-size: 1.2em;
+        color: var(--text-color);
     }
 
     .spoof-disclaimer {
         font-style: italic;
         max-width: 600px;
         margin-bottom: 1.5rem;
-        background-color: #f0f8ff;
+        background-color: var(--highlight-bg);
         padding: 1rem;
         border-radius: 8px;
-        border: 2px dashed #3498db;
+        border: 2px dashed var(--highlight-border);
     }
 
     .spoof-disclaimer blockquote {
         font-size: 1rem;
-        color: #555555;
+        color: var(--text-color);
         margin-bottom: 0.5rem;
     }
 
     .spoof-disclaimer cite {
         font-size: 0.9rem;
-        color: #777777;
+        color: var(--subheading-color);
     }
 
     .spoof-disclaimer-text {
         font-size: 0.8rem;
-        color: #888888;
+        color: var(--subheading-color);
         margin-top: 0.5rem;
     }
 
@@ -214,7 +216,7 @@
 
     .cta-button {
         font-weight: bold;
-        background-color: #3498db;
+        background-color: var(--button-bg);
         color: #ffffff;
         border: none;
         padding: 1rem 2rem;
@@ -229,24 +231,19 @@
     }
 
     .cta-button:hover {
-        background-color: #2980b9;
+        background-color: var(--button-hover-bg);
         transform: translateY(-3px);
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     }
 
     .reader-count {
         font-size: 0.9rem;
-        color: #3498db;
+        color: var(--text-color);
         margin: 1rem 0;
         padding: 0.5rem 1rem;
         position: relative;
         overflow: hidden;
-        background: linear-gradient(
-            90deg,
-            rgba(52, 152, 219, 0.1) 0%,
-            rgba(155, 89, 182, 0.1) 50%,
-            rgba(52, 152, 219, 0.1) 100%
-        );
+        background: var(--reader-count-bg);
         background-size: 200% 100%;
         animation: gradientShift 8s ease-in-out infinite;
     }
@@ -257,61 +254,9 @@
         100% { background-position: 0% 50%; }
     }
 
-    .reader-count::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(255, 255, 255, 0.4),
-            transparent
-        );
-        transform: translateX(-100%);
-        animation: shine 4s ease-in-out infinite;
-    }
-
-    @keyframes shine {
-        0%, 100% { transform: translateX(-100%); }
-        50% { transform: translateX(100%); }
-    }
-
-    /* Light mode specific styles */
-    @media (prefers-color-scheme: light) {
-        .reader-count {
-            background: linear-gradient(
-                90deg,
-                rgba(52, 152, 219, 0.2) 0%,
-                rgba(155, 89, 182, 0.2) 50%,
-                rgba(52, 152, 219, 0.2) 100%
-            );
-            color: #2980b9;
-            text-shadow: 0 0 10px rgba(41, 128, 185, 0.3);
-        }
-
-        .reader-count::after {
-            background: linear-gradient(
-                90deg,
-                transparent,
-                rgba(255, 255, 255, 0.6),
-                transparent
-            );
-        }
-    }
-
-    /* Dark mode specific styles */
-    @media (prefers-color-scheme: dark) {
-        .reader-count {
-            color: #5dade2;
-        }
-    }
-
     .trust-indicators {
         font-size: 0.8rem;
-        color: #888888;
+        color: var(--subheading-color);
     }
 
     .data-policy {
@@ -319,86 +264,10 @@
         font-style: italic;
     }
 
-    :global(.dark) .book-sample {
-        background-color: #2c3e50;
-        color: #e5e7eb;
-    }
-
-    :global(.dark) .heading-text {
-        color: #e5e7eb;
-    }
-
-    :global(.dark) .spoof-disclaimer blockquote {
-        color: #b0b0b0;
-    }
-
-    :global(.dark) .preview-highlights {
-        background-color: #34495e;
-    }
-
-    :global(.dark) .preview-highlights h3,
-    :global(.dark) .preview-highlights ul {
-        color: #e5e7eb;
-    }
-
-    :global(.dark) .spoof-disclaimer {
-        background-color: #2c3e50;
-        border-color: #3498db;
-    }
-
-    :global(.dark) .spoof-disclaimer cite,
-    :global(.dark) .reader-count,
-    :global(.dark) .trust-indicators,
-    :global(.dark) .spoof-disclaimer-text {
-        color: #a0a0a0;
-    }
-
-    :global(.dark) .cta-button {
-        background-color: #3498db;
-    }
-
-    :global(.dark) .cta-button:hover {
-        background-color: #2980b9;
-    }
-
-    @media (max-width: 768px) {
-        .book-sample {
-            padding: 1.5rem;
-            padding-top: 0;
-        }
-
-        .heading-text {
-            font-size: 2rem;
-        }
-
-        .subheading-1 {
-            font-size: 1.1rem;
-        }
-
-        .subheading-2 {
-            font-size: 0.9rem;
-        }
-
-        .book-preview {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .book-image {
-            max-width: 150px;
-            margin-top: 1rem;
-        }
-
-        .cta-button {
-            font-size: 1.1rem;
-            padding: 0.8rem 1.6rem;
-        }
-    }
-
     .or {
         position: relative;
         font-size: 1rem;
-        color: #888;
+        color: var(--subheading-color);
         text-transform: uppercase;
         letter-spacing: 2px;
         margin: 1rem 0;
@@ -413,7 +282,7 @@
         top: 50%;
         width: 40%;
         height: 1px;
-        background: linear-gradient(to var(--direction, right), #888, transparent);
+        background: linear-gradient(to var(--direction, right), var(--subheading-color), transparent);
     }
 
     .or::before {
@@ -428,20 +297,20 @@
 
     .preorder-info {
         font-size: 0.9rem;
-        color: #34495e;
+        color: var(--text-color);
         margin-top: 0.5rem;
         text-align: center;
         max-width: 300px;
         line-height: 1.4;
         padding: 0.75rem;
         border-radius: 8px;
-        background-color: rgba(52, 152, 219, 0.1);
+        background-color: var(--reader-count-bg);
         transition: all 0.3s ease;
-        border: 1px solid rgba(52, 152, 219, 0.3);
+        border: 1px solid var(--highlight-border);
     }
 
     .preorder-info:hover {
-        background-color: rgba(52, 152, 219, 0.2);
+        background-color: var(--highlight-bg);
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -453,32 +322,38 @@
         margin-bottom: 0.25rem;
     }
 
-    /* Light mode specific styles */
-    @media (prefers-color-scheme: light) {
-        .preorder-info {
-            color: #2c3e50;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    @media (max-width: 768px) {
+        .book-sample {
+            padding: 1.5rem 0;
+            padding-top: 0;
         }
 
-        .preorder-info .non-urgent {
-            color: #34495e !important; /* Override the default color */
-        }
-    }
-
-    /* Dark mode specific styles */
-    @media (prefers-color-scheme: dark) {
-        .preorder-info {
-            color: #8e9fa3;
-            background-color: rgba(52, 152, 219, 0.2);
-            border-color: rgba(52, 152, 219, 0.4);
+        .content {
+            padding: 1rem 0;
         }
 
-        .preorder-info:hover {
-            background-color: rgba(52, 152, 219, 0.3);
+        .book-preview {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 0;
         }
 
-        .urgent {
-            color: #ff6b6b;
+        .preview-highlights {
+            width: 100%;
+            border-radius: 8px;
+            margin: 0 -1.5rem;
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .book-image {
+            max-width: 150px;
+            margin-top: 1rem;
         }
     }
 
@@ -507,9 +382,7 @@
         margin-bottom: 0.5rem;
     }
 
-    /* This targets the container of the countdown timer if it exists */
     :global(.countdown-container) {
         margin-bottom: 0;
     }
 </style>
-

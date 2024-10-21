@@ -1,5 +1,6 @@
 <script>
   import timelineItems from '../data/timelineItems.json'; // Adjust the path as necessary
+  import PathToSingularity from './PathToSingularity.svelte';
 
   let showModal = Array(timelineItems.timelineItems.length).fill(false);
 
@@ -25,6 +26,7 @@
 </script>
 
 <div class="timeline-container p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg max-w-3xl mx-auto">
+  <PathToSingularity />
   <h1 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Timeline of Events</h1>
   <hr class="mb-8 border-gray-200 dark:border-gray-700" />
 

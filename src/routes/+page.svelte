@@ -1,353 +1,422 @@
 <script>
-	import Spacer from '$lib/components/Spacer.svelte';
-	import Timeline from '$lib/components/Timeline.svelte';
 	import Countdown from '$lib/components/Countdown.svelte';
+	// import HeroSection from '$lib/components/HeroSection.svelte';
+	import Timeline from '$lib/components/Timeline.svelte';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-	import NewsletterPopup from '$lib/components/NewsletterPopup.svelte';
 	import { post } from '$lib/data/blog-posts/singularity-express/index.js';
-  import FAQ from '$lib/components/FAQ.svelte';
-  import LatestNews from '$lib/components/LatestNews.svelte';
-  import { onMount } from 'svelte';
-  import { goto } from '$app/navigation';
-  import MainPageBlurb from '$lib/components/MainPageBlurb.svelte';
-  import SkoolGroup from '$lib/components/SkoolGroup.svelte';
-  import BookSample from '$lib/components/BookSample.svelte';
-  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
-  import welcomeImage from '$lib/images/sts-welcome.png';
-  import { newsletterSubmitted } from '$lib/stores/newsletterSubmitted';
-  import PreorderCountdownDropin from '$lib/components/PreorderCountdownDropin.svelte';
-  import Divider from '$lib/components/Divider.svelte';
-  import TransformationPitch from '$lib/components/TransformationPitch.svelte';
-  import { darkMode } from '$lib/stores/darkMode';
+	import FAQ from '$lib/components/FAQ.svelte';
+	import LatestNews from '$lib/components/LatestNews.svelte';
+	import BookSample from '$lib/components/BookSample.svelte';
+	import welcomeImage from '$lib/images/sts-welcome.png';
+	import timelineItems from '$lib/data/timelineItems.json';
 
 	export let data;
-  export let preorderDate = new Date("2024-11-08T23:59:59").getTime()
-
-	import timelineItems from '$lib/data/timelineItems.json';
-  import PreorderDropin from '../lib/components/PreorderDropin.svelte';
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
-
-	let navbarHeight = 0;
-  const newsletterPopupDelay = 10000; // 10 seconds delay
-
-	onMount(() => {
-		navbarHeight = document.querySelector('nav').offsetHeight;
-    console.log("Testing Supabase Connection");
-    console.log(data);
-
-    // Handle newsletter popup
-    setTimeout(() => {
-      newsletterSubmitted.reset();
-    }, newsletterPopupDelay);
-    console.log("darkMode in +page.svelte: onmount", $darkMode);
-    console.log("typeof darkMode in +page.svelte: onmount", typeof $darkMode);
-	});
-
-	function handleBackBook() {
-      window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
-    }
-
-  function handleJoinSkool() {
-      window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');
-    }
-
-  function handleGetGuide() {
-    goto('/download');
-  }
-
-  function handleReadSample() {
-    goto('/sample');  
-  }
-
-  function handlePreorder() {
-    goto('/preorder');
-  }
 </script>
 
 <div class="main-content">
-  <Countdown {targetDate} />
+	<Countdown {targetDate} />
 
-  <div class="quote-container">
-    <p class="quote dark:text-gray-200">"I am patiently waiting for the Singularity."</p>
-    <p class="attribution dark:text-gray-400">- Harper Reed</p>
-  </div>
-  
-  
-  <div class="book-container">
-    <img src={welcomeImage} alt="Surviving the Singularity Book" />
-  </div>  
-  
-  <MainPageBlurb />
+	<!-- <HeroSection /> -->
 
-  <!-- This is the section that will be shown when the book is released -->
+  <section class="book-sample-section">
+		<div class="book-sample-container">
+			<BookSample />
+		</div>
+	</section>
 
-  <Divider />
+	<Timeline items={timelineItems.timelineItems} />
 
-  <div class="button-container">
-    <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
-    <button class="big-button" on:click={handleJoinSkool}>Join the Skool Community</button>
-    <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
-    <button class="big-button" on:click={handlePreorder}>Preorder the Book</button>
-  </div>
-  
-  <div class="visual-content">
-    <div class="book-sample-container">
-      <BookSample />
-    </div>
-  </div>
-
-  <div class="stylish-divider"></div>
   <FAQ />
-  <div class="stylish-divider"></div>
 
-  <TransformationPitch />
-  
-  <div class="skool-group-container">
-    <SkoolGroup />
-  </div>
-  
-  <div class="stylish-divider"></div>
-  <LatestNews {post} />
+	<div class="book-container">
+		<img src={welcomeImage} alt="Surviving the Singularity Book" />
+	</div>
 
-  <div class="quote-container">
-    <p class="quote">The past is over, the present is fleeting - we live in the future.</p>
-    <p class="attribution">- Ray Kurzweil</p>
-  </div>
+	<LatestNews {post} />
 
-  <PreorderCountdownDropin targetDate={preorderDate} />
-
-  <CommunityIntakePopupForm 
-    ctaText="Ready to join the community and prepare for the Singularity?"
-    buttonText="Enlist Now"
-  />
-  <div class="stylish-divider"></div>
-
-  <div class="button-container orange-border">
-    <button class="big-button" on:click={handleBackBook}>Back the Book on Kickstarter</button>
-    <button class="big-button" on:click={handleReadSample}>Read a Sample of the Book</button>
-    <button class="big-button" on:click={handleGetGuide}>Get the FREE Guide</button>
-    <button class="big-button" on:click={handlePreorder}>Preorder the Book</button>
-  </div>
-
-  <div class="stylish-divider"></div>
-  <NewsletterSignup />
-
-  <div class="stylish-divider"></div>
-
-  <Countdown {targetDate} />
-
-  <div class="content-container">
-    <Timeline items={timelineItems.timelineItems} />
-  </div>
-
-  <div class="stylish-divider"></div>
-  <NewsletterSignup />
-
-  <Spacer height="1rem"/>
-
+	<NewsletterSignup />
 </div>
 
-{#if $newsletterSubmitted === false}
-  <NewsletterPopup />
-{/if}
-
 <style>
-  /* Layout */
-  .main-content {
-    transition: padding-top 0.3s ease-in-out;
-  }
+	.main-content {
+		max-width: 100%;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
 
-  .content-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    width: 100%;
-  }
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+		color: #333;
+	}
 
-  /* Quote */
-  .quote-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 1rem;
-    position: relative;
-  }
+	.tagline {
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+		color: #666;
+	}
 
-  .quote {
-    font-style: italic;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0;
-    color: var(--color-text-primary);
-    line-height: 1.4;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-  }
+	.hero-section {
+		padding: 1.5rem;
+		background-color: #f0f4f8;
+		color: #333333;
+		border-radius: 8px;
+		max-width: 600px;
+		margin: 0 auto;
+	}
 
-  .attribution {
-    font-weight: bold;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: var(--color-text-secondary);
-  }
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+		text-align: center;
+	}
 
-  /* Buttons */
-  .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
-  }
+	.tagline {
+		font-size: 1.2rem;
+		text-align: center;
+		margin-bottom: 1.5rem;
+		color: #a0aec0;
+	}
 
-  .big-button {
-    flex: 1;
-    font-weight: 600;
-    font-size: 1.1rem;
-    background-color: #ffffff;
-    border: 1px solid #2c3e50;
-    border-radius: 6px;
-    color: #2c3e50;
-    padding: 0.75rem 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
+	.content-box {
+		background-color: #e2e8f0;
+		padding: 1.5rem;
+		border-radius: 8px;
+		margin-bottom: 1.5rem;
+	}
 
-  .big-button:hover {
-    background-color: #f8f9fa;
-    border-color: #34495e;
-    color: #34495e;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-  }
+	.welcome {
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+	}
 
-  /* Dark mode styles */
-  :global(.dark) .quote {
-    color: #e5e7eb;
-  }
+	.mission {
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+	}
 
-  :global(.dark) .attribution {
-    color: #9ca3af;
-  }
+	.benefits {
+		list-style-type: none;
+		padding-left: 0;
+	}
 
-  :global(.dark) .big-button {
-    background-color: #2c3e50;
-    color: #ffffff;
-    border-color: #34495e;
-  }
+	.benefits li {
+		margin-bottom: 0.5rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
 
-  :global(.dark) .big-button:hover {
-    background-color: #34495e;
-    border-color: #4a6785;
-    color: #ffffff;
-  }
+	.benefits li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: #4299e1;
+	}
 
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .button-container {
-      flex-direction: column;
-    }
+	.cta-container {
+		text-align: center;
+	}
 
-    .big-button {
-      width: 100%;
-    }
-  }
+	.cta-button {
+		display: block;
+		width: 100%;
+		padding: 1rem;
+		background-color: #4a4a4a;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		font-size: 1.1rem;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		margin-bottom: 0.5rem;
+	}
 
-  /* Global styles */
-  :global(.full-width-accordion) {
-    width: 100%;
-  }
+	.cta-button:hover {
+		background-color: #333333;
+	}
 
-  :global(.full-width-accordion > *) {
-    width: 100%;
-  }
+	.cta-info {
+		font-size: 1rem;
+		font-weight: bold;
+		color: #805ad5;
+		margin-bottom: 0.5rem;
+	}
 
-  :global(.full-width-accordion button) {
-    width: 100%;
-    justify-content: space-between;
-    padding: 1rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
-  }
+	.cta-subtext {
+		font-size: 0.9rem;
+		color: #a0aec0;
+	}
 
-  :global(.full-width-accordion button:hover) {
-    background-color: #f3f4f6;
-  }
+	.stylish-divider {
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		margin: 2rem 0;
+	}
 
-  :global(.dark-text) {
-    color: #000000;
-  }
+	.book-container {
+		max-width: 300px;
+		margin: 0 auto;
+	}
 
-  :global(.dark) :global(.dark-text) {
-    color: #f3f4f6;
-  }
+	.book-container img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
 
-  .stylish-divider {
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    margin: 2rem auto;
-    max-width: 80%;
-  }
+	/* Dark mode styles */
+	:global(.dark) body {
+		background-color: #1a202c;
+		color: #e2e8f0;
+	}
 
-  :global(.dark) .stylish-divider {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-  }
+	:global(.dark) .hero-section {
+		background-color: #2d3748;
+		color: #e2e8f0;
+	}
 
-  .orange-border {
-    border: 2px solid orange;
-    border-radius: 8px;
-    padding: 1rem;
-  }
+	:global(.dark) .content-box {
+		background-color: #4a5568;
+	}
 
-  @media (max-width: 768px) {
-    .orange-border {
-      padding: 0.5rem;
-    }
-  }
+	:global(.dark) .cta-button {
+		background-color: #a0aec0;
+	}
 
-  .book-container {
-    display: flex;
-    justify-content: center;
-    margin: 2rem auto;
-    max-width: 80%;
-  }
+	:global(.dark) .cta-button:hover {
+		background-color: #718096;
+	}
 
-  .book-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e5e7eb;
-  }
+	:global(.dark) .cta-info {
+		color: #fbd38d;
+	}
 
-  .skool-group-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 2rem 0;
-  }
+	:global(.dark) .singularity-path-container {
+		background-color: #2d3748;
+	}
 
-  .visual-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+	:global(.dark) .path {
+		color: #b0b0b0;
+	}
 
-  /* New styles for the BookSample component */
-  :global(.book-sample-container) {
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+	:global(.dark) .singularity {
+		color: #f0f0f0;
+	}
 
-  @media (min-width: 768px) {
-    :global(.book-sample-container) {
-      width: 80%;
-    }
-  }
+	:global(.dark) .singularity::after {
+		background: linear-gradient(90deg, transparent, #f0f0f0, transparent);
+	}
+
+	:global(.dark) h1, :global(.dark) h2 {
+		color: #e2e8f0;
+	}
+
+	:global(.dark) .tagline {
+		color: #a0aec0;
+	}
+
+	:global(.dark) .stylish-divider {
+		background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+	}
+
+	/* Responsive styles */
+	@media (min-width: 768px) {
+		.main-content {
+			max-width: 768px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.tagline {
+			font-size: 1.5rem;
+		}
+
+		.cta-button {
+			font-size: 1.2rem;
+		}
+	}
+
+	@media (min-width: 640px) {
+		.hero-section {
+			padding: 2rem;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.tagline {
+			font-size: 1.4rem;
+		}
+
+		.path {
+			font-size: 2rem;
+		}
+
+		.singularity {
+			font-size: 4rem;
+		}
+	}
+
+	.singularity-path-container {
+		background-color: #e2e8f0;
+		padding: 2rem 1rem;
+		text-align: center;
+	}
+
+	.singularity-path-title {
+		font-family: 'Arial', sans-serif;
+		font-weight: bold;
+		line-height: 1.2;
+		margin: 0 0 2rem 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.path {
+		display: block;
+		font-size: 1.8rem;
+		color: #4a4a4a;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-bottom: 0.5rem;
+	}
+
+	.singularity {
+		display: block;
+		font-size: 3.5rem;
+		color: #1a1a1a;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.singularity::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+		animation: underline 2s ease-in-out infinite;
+	}
+
+	@keyframes underline {
+		0% { transform: translateX(-100%); }
+		50% { transform: translateX(100%); }
+		100% { transform: translateX(100%); }
+	}
+
+	.timeline-subtitle {
+		text-align: center;
+		font-size: 1.5rem;
+		color: #4a4a4a;
+		margin-bottom: 2rem;
+	}
+
+	/* Dark mode styles */
+	:global(.dark) .timeline-section {
+		background-color: #1a1a1a;
+	}
+
+	:global(.dark) .path {
+		color: #b0b0b0;
+	}
+
+	:global(.dark) .singularity {
+		color: #f0f0f0;
+	}
+
+	:global(.dark) .singularity::after {
+		background: linear-gradient(90deg, transparent, #f0f0f0, transparent);
+	}
+
+	:global(.dark) .timeline-subtitle {
+		color: #b0b0b0;
+	}
+
+	/* Responsive styles */
+	@media (min-width: 640px) {
+		.path {
+			font-size: 2.2rem;
+		}
+
+		.singularity {
+			font-size: 4.5rem;
+		}
+
+		.timeline-subtitle {
+			font-size: 1.8rem;
+		}
+	}
+
+	.singularity-path-section {
+		background-color: #1a202c;
+		padding: 3rem 1rem;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.singularity-path-title {
+		font-family: 'Arial', sans-serif;
+		text-align: center;
+		margin: 0 0 1rem 0;
+		line-height: 1.2;
+	}
+
+	.path {
+		display: block;
+		font-size: 1.5rem;
+		color: #a0aec0;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-bottom: 0.5rem;
+		font-weight: 300;
+	}
+
+	.singularity {
+		display: block;
+		font-size: 3.5rem;
+		color: #f7fafc;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+	}
+
+	.underline {
+		width: 100px;
+		height: 3px;
+		background: linear-gradient(90deg, #4299e1, #667eea);
+		margin: 1rem auto 2rem;
+		border-radius: 2px;
+	}
+
+	/* Dark mode styles */
+	:global(.dark) .singularity-path-section {
+		background-color: #2d3748;
+	}
+
+	/* Responsive styles */
+	@media (min-width: 640px) {
+		.singularity-path-section {
+			padding: 4rem 2rem;
+		}
+
+		.path {
+			font-size: 1.8rem;
+		}
+
+		.singularity {
+			font-size: 4.5rem;
+		}
+
+		.underline {
+			width: 150px;
+		}
+	}
 </style>

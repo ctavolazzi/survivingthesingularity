@@ -314,18 +314,6 @@
     },
     {
       "id": 27,
-      "title": "ChatGPT Launch",
-      "abstract": "OpenAI releases ChatGPT, a conversational AI model based on GPT-3.5.",
-      "description": "ChatGPT showcases advanced conversational abilities and task completion, leading to widespread public interest and discussions about AI's potential impact on various industries.",
-      "date": "2022-11-30",
-      "significance": "Brought advanced AI capabilities to the mainstream public",
-      "urls": {
-        "main": "https://openai.com/chatgpt",
-        "wikipedia": "https://en.wikipedia.org/wiki/ChatGPT"
-      }
-    },
-    {
-      "id": 28,
       "title": "Tesla Optimus Robot Unveiled",
       "abstract": "Tesla unveils the Optimus humanoid robot prototype at AI Day 2022.",
       "description": "The Tesla Optimus, also known as Tesla Bot, is introduced as a general-purpose humanoid robot designed to perform a wide range of tasks. It represents Tesla's entry into humanoid robotics and automation beyond vehicles.",
@@ -337,7 +325,31 @@
       }
     },
     {
+      "id": 28,
+      "title": "ChatGPT Launch",
+      "abstract": "OpenAI releases ChatGPT, a conversational AI model based on GPT-3.5.",
+      "description": "ChatGPT showcases advanced conversational abilities and task completion, leading to widespread public interest and discussions about AI's potential impact on various industries.",
+      "date": "2022-11-30",
+      "significance": "Brought advanced AI capabilities to the mainstream public",
+      "urls": {
+        "main": "https://openai.com/chatgpt",
+        "wikipedia": "https://en.wikipedia.org/wiki/ChatGPT"
+      }
+    },
+    {
       "id": 29,
+      "title": "Claude Computer Use",
+      "abstract": "Anthropic's Claude demonstrates ability to use computer interfaces directly through vision and control capabilities.",
+      "description": "Claude gains the ability to view screens, move cursors, click buttons, and input text via virtual keyboard, marking a significant advancement in AI's capability to interact with computers like humans. This experimental feature represents a step toward more direct human-computer interaction by AI systems.",
+      "date": "2024-03-19",
+      "significance": "First major AI model to directly operate computer interfaces through vision and control",
+      "urls": {
+        "main": "https://www.anthropic.com/news/developing-computer-use",
+        "wikipedia": "https://en.wikipedia.org/wiki/Claude_(artificial_intelligence)"
+      }
+    },
+    {
+      "id": 30,
       "title": "Figure 02 Announcement",
       "abstract": "Figure AI announces Figure 02, an advanced general-purpose humanoid robot.",
       "description": "Figure AI announces Figure 02, promising significant improvements in capabilities and functionality compared to its predecessor. The robot is designed for a wide range of applications, potentially advancing the field of practical humanoid robotics.",
@@ -346,6 +358,78 @@
       "urls": {
         "main": "https://www.figure.ai/",
         "wikipedia": "https://en.wikipedia.org/wiki/Figure_AI"
+      }
+    },
+    {
+      "id": 31,
+      "title": "Google's Quantum Supremacy",
+      "abstract": "Google announces achieving quantum supremacy with its Sycamore quantum computer.",
+      "description": "Google's quantum computer, Sycamore, achieved quantum supremacy by performing a specific task faster than the fastest classical supercomputers. This milestone demonstrated the potential of quantum computing to solve complex problems beyond the reach of classical computers.",
+      "date": "2019-10-23",
+      "significance": "First demonstration of quantum supremacy",
+      "urls": {
+        "main": "https://www.nature.com/articles/s41586-019-1666-5",
+        "wikipedia": "https://en.wikipedia.org/wiki/Quantum_supremacy"
+      }
+    },
+    {
+      "id": 32,
+      "title": "'Trojan Horse' Nanoparticle Development",
+      "abstract": "Researchers develop nanoparticles capable of targeting and eliminating atherosclerotic plaque cells.",
+      "description": "Researchers at Stanford and Michigan State University developed a nanoparticle capable of targeting and eliminating cells that cause atherosclerotic plaque, showcasing the potential of nanotechnology in medical treatments.",
+      "date": "2020",
+      "significance": "Advanced application of nanotechnology in medical treatment",
+      "urls": {
+        "main": "https://news.stanford.edu/2020/01/27/nanoparticle-chomps-away-plaques-cause-heart-attacks/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Nanoparticle"
+      }
+    },
+    {
+      "id": 33,
+      "title": "IBM's Quantum Computer Advances",
+      "abstract": "IBM unveils a 1,121-qubit quantum processor named Condor.",
+      "description": "IBM's Condor processor marks a significant step towards practical quantum computing by improving error correction and computational power, bringing quantum computing closer to real-world applications.",
+      "date": "2023",
+      "significance": "Major advancement in quantum computing capabilities",
+      "urls": {
+        "main": "https://research.ibm.com/blog/ibm-quantum-roadmap",
+        "wikipedia": "https://en.wikipedia.org/wiki/IBM_Quantum"
+      }
+    },
+    {
+      "id": 34,
+      "title": "Advancements in Organoid Intelligence",
+      "abstract": "Significant progress in brain organoid research for modeling human brain development and disorders.",
+      "description": "Research into brain organoids has advanced significantly, allowing for modeling of human brain development and disorders. This technology is being explored for applications in neuroscience, medicine, and biocomputing.",
+      "date": "2023",
+      "significance": "Breakthrough in brain organoid research and applications",
+      "urls": {
+        "main": "https://www.frontiersin.org/articles/10.3389/frai.2023.1307613/full",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cerebral_organoid"
+      }
+    },
+    {
+      "id": 35,
+      "title": "Generative AI Misuse Analysis",
+      "abstract": "Google DeepMind publishes research on potential misuse of generative AI technologies.",
+      "description": "Google DeepMind published research analyzing the misuse of generative AI technologies, highlighting issues such as manipulation, fraud, and the creation of deepfakes. The study aims to guide the development of safer AI technologies.",
+      "date": "2024-08-02",
+      "significance": "Comprehensive analysis of generative AI risks and mitigation strategies",
+      "urls": {
+        "main": "https://deepmind.google/discover/blog/mapping-the-misuse-of-generative-ai/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"
+      }
+    },
+    {
+      "id": 36,
+      "title": "Ongoing Concerns about Existential Risks from AI",
+      "abstract": "Continued discussions and research on potential existential threats posed by advanced AI systems.",
+      "description": "Concerns about existential risks from AI include potential threats from advanced AI systems that could lead to catastrophic events or societal disruptions. Discussions focus on both immediate risks from narrow AI and long-term risks from artificial general intelligence (AGI).",
+      "date": "Ongoing",
+      "significance": "Heightened awareness and research into long-term AI safety",
+      "urls": {
+        "main": "https://www.nature.com/articles/d41586-023-02094-7",
+        "wikipedia": "https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence"
       }
     }
   ]

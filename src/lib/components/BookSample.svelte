@@ -2,14 +2,41 @@
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
-    import PreorderButton from './PreorderButton.svelte';
     import { goto } from '$app/navigation';
     import { darkMode } from '$lib/stores/darkMode';
 
     let readerCount = 4921;
+    let isLoading = false;
+    let error = null;
 
     function handleReadSample() {
         goto('/sample');
+    }
+
+    async function handlePreorder() {
+        isLoading = true;
+        error = null;
+
+        try {
+            const response = await fetch('/api/create-checkout-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const { url } = await response.json();
+            window.location.href = url;
+        } catch (err) {
+            console.error('Preorder error:', err);
+            error = 'An error occurred. Please try again.';
+        } finally {
+            isLoading = false;
+        }
     }
 
     onMount(() => {
@@ -55,7 +82,17 @@
                 Read the Free Sample Now
             </button>
             <p class="or">or</p>
-            <PreorderButton />
+            <button
+                on:click={handlePreorder}
+                disabled={isLoading}
+                class="preorder-button"
+            >
+                {#if isLoading}
+                    <span class="loader"></span>
+                {:else}
+                    PREORDER NOW
+                {/if}
+            </button>
             <p class="preorder-info">
                 <span class="urgent">Limited copies remain at this price!</span>
                 <span class="non-urgent">Secure your copy now. The book is set to release the first week of November.</span>
@@ -384,5 +421,45 @@
 
     :global(.countdown-container) {
         margin-bottom: 0;
+    }
+
+    .preorder-button {
+        width: 100%;
+        background: linear-gradient(135deg, #ff8a00, #ff5e03);
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 0.9rem 2rem;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(255, 94, 3, 0.2);
+    }
+
+    .preorder-button:hover {
+        background: linear-gradient(135deg, #ff5e03, #ff8a00);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 94, 3, 0.3);
+    }
+
+    .preorder-button:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    .loader {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        border: 4px solid #ffffff;
+        border-radius: 50%;
+        border-top: 4px solid transparent;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 </style>

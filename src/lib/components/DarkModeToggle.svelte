@@ -1,13 +1,9 @@
 <script>
     import { darkMode } from '$lib/stores/darkMode';
-
-    function toggleDarkMode() {
-        darkMode.toggle();
-    }
 </script>
 
-<button 
-    on:click={toggleDarkMode}
+<button
+    on:click={() => $darkMode = !$darkMode}
     class="p-2 rounded-full transition-colors duration-200 hover:bg-gray-200 dark:hover:bg-gray-700"
     aria-label="Toggle dark mode"
 >

@@ -56,7 +56,7 @@
 <style>
 	.main-content {
 		max-width: 100%;
-		padding: 1rem;
+		padding: 0 1rem 1rem 1rem;
 		box-sizing: border-box;
 	}
 

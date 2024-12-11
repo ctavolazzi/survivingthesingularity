@@ -69,7 +69,7 @@
         <span class="countdown-value placeholder">-</span>
         <span class="countdown-label">{label}</span>
       {:else}
-        <span 
+        <span
           class="countdown-value"
           in:scale={{
             duration: 300,
@@ -88,9 +88,10 @@
   .countdown-header {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 1rem;
-    font-size: 2.4rem;
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
     color: var(--color-text-primary);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
   }
 
   .countdown-container {
@@ -98,15 +99,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     height: auto;
-    padding: 1rem;
+    padding: 0.5rem;
     white-space: nowrap;
     max-width: 100vw;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: var(--color-surface);
-    border-radius: 4px;
   }
 
   .countdown-item {
@@ -115,27 +114,55 @@
     align-items: center;
     justify-content: center;
     padding: 0.2rem;
-    color: var(--color-text-secondary);
-    border-radius: 4px;
-    flex: 1; /* Ensure items are evenly spaced */
-    min-width: 0; /* Prevent flex items from overflowing */
+    flex: 1;
+    min-width: 0;
   }
 
   .countdown-value {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5vw;
-    font-weight: bold;
+    font-size: 5.5vw;
+    font-weight: 900;
     text-align: center;
-    min-width: 5vw; /* Ensure consistent width to prevent shifting */
-    color: var(--color-text-primary);
+    min-width: 5vw;
+    color: #ffffff;
+    text-shadow:
+      0 0 25px rgba(255, 255, 255, 0.3),
+      0 0 50px rgba(255, 255, 255, 0.15);
+    letter-spacing: 0.02em;
+    line-height: 1;
+  }
+
+  .countdown-value:not(.placeholder) {
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      text-shadow:
+        0 0 25px rgba(255, 255, 255, 0.3),
+        0 0 50px rgba(255, 255, 255, 0.15);
+    }
+    50% {
+      text-shadow:
+        0 0 35px rgba(255, 255, 255, 0.4),
+        0 0 70px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+      text-shadow:
+        0 0 25px rgba(255, 255, 255, 0.3),
+        0 0 50px rgba(255, 255, 255, 0.15);
+    }
   }
 
   .countdown-label {
-    font-size: 1.2vw; /* Further reduced from 1.5vw */
+    font-size: 1.2vw;
     text-transform: uppercase;
     text-align: center;
     color: var(--color-text-secondary);
-    font-weight: bold; /* Added bold font weight */
+    font-weight: bold;
+    opacity: 0.9;
+    margin-top: 0.15rem;
+    letter-spacing: 0.05em;
   }
 
   .countdown-value.placeholder {
@@ -144,24 +171,33 @@
 
   /* Media queries for responsive design */
   @media (max-width: 600px) {
+    .countdown-container {
+      gap: 0.75rem;
+    }
+
     .countdown-value {
-      font-size: 7vw;
+      font-size: 7.5vw;
       min-width: 7vw;
     }
 
     .countdown-label {
-      font-size: 2vw; /* Further reduced from 2.5vw */
+      font-size: 2vw;
+      margin-top: 0.1rem;
     }
   }
 
   @media (max-width: 400px) {
+    .countdown-container {
+      gap: 0.5rem;
+    }
+
     .countdown-value {
-      font-size: 8vw;
+      font-size: 8.5vw;
       min-width: 8vw;
     }
 
     .countdown-label {
-      font-size: 2.8vw; /* Further reduced from 3.5vw */
+      font-size: 2.8vw;
     }
   }
 </style>

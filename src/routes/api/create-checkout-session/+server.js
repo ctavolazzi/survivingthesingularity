@@ -51,8 +51,8 @@ export async function POST({ request, getClientAddress }) {
         },
       ],
       mode: 'payment',
-      success_url: `${PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${PUBLIC_BASE_URL}/cancel`,
+      success_url: `${request.headers.get('origin')}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${request.headers.get('origin')}/`,
       metadata: {
         ...metadata,
         source: 'website',

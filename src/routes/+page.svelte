@@ -27,7 +27,7 @@
 		</div>
 	</section> -->
 
-	<Timeline items={timelineItems.timelineItems} />
+	<Timeline />
 
   <FAQ />
 

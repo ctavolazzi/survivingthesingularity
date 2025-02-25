@@ -1,14 +1,25 @@
 <script>
   import { enhance } from '$app/forms';
+  import { goto } from '$app/navigation';
   import Countdown from '$lib/components/Countdown.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import ContactForm from '$lib/components/ContactForm.svelte';
+  import { onMount } from 'svelte';
 
   let cancellationSuccess = false;
   let error = '';
   let isLoading = false;
 
   const targetDate = new Date("2027-11-20T23:59:59").getTime();
+
+  // Redirect to home page after a short delay
+  onMount(() => {
+    const timer = setTimeout(() => {
+      goto('/');
+    }, 0); // Immediate redirect
+
+    return () => clearTimeout(timer);
+  });
 
   const handleSubmit = () => {
     return async ({ result }) => {
@@ -54,68 +65,9 @@
 
   <div class="stylish-divider"></div>
 
-  <h1>Cancel Your Preorder?</h1>
+  <h1>Redirecting to Home Page...</h1>
 
-  <div class="quote-container">
-    <p class="quote">"The future is not something we enter. The future is something we create."</p>
-    <p class="attribution">- Leonard I. Sweet</p>
-  </div>
-
-  <div class="stylish-divider"></div>
-
-  {#if cancellationSuccess}
-    <p class="centered-text">Your subscription has been successfully cancelled. We're sorry to see you go.</p>
-    <div class="urgency-message">
-      <p>But wait! The future waits for no one. Secure your spot before it's too late!</p>
-    </div>
-    <div class="button-container">
-      <button class="big-button preorder-button" on:click={handlePreorder} disabled={isLoading}>
-        {#if isLoading}
-          <span class="loader"></span>
-        {:else}
-          Reclaim Your Future Now
-        {/if}
-      </button>
-    </div>
-  {:else}
-    <p class="centered-text">We're sorry to see you considering leaving. Are you sure you want to cancel?</p>
-    
-    <div class="benefits-container">
-      <h2>Before you go, remember what you'll be missing:</h2>
-      <ul>
-        <li>Exclusive insights into surviving the technological singularity</li>
-        <li>Regular updates on AI advancements and their implications</li>
-        <li>Community access to like-minded individuals preparing for the future</li>
-        <li>Personalized strategies to thrive in an AI-dominated world</li>
-      </ul>
-    </div>
-
-    <div class="urgency-message">
-      <p>Time is running out! The singularity waits for no one. Don't be left behind!</p>
-    </div>
-
-    <div class="button-container">
-      <form method="POST" use:enhance={handleSubmit}>
-        <button type="submit" class="big-button cancel-button">Confirm Cancellation</button>
-      </form>
-      <button class="big-button preorder-button" on:click={handlePreorder} disabled={isLoading}>
-        {#if isLoading}
-          <span class="loader"></span>
-        {:else}
-          Secure Your Future Now
-        {/if}
-      </button>
-    </div>
-
-    {#if error}
-      <p class="error">{error}</p>
-    {/if}
-
-    <p class="centered-text">If you're having issues, please <a href="/contact">contact us</a> first. We're here to help!</p>
-    <div class="contact-container">
-        <ContactForm />
-    </div>
-  {/if}
+  <p class="centered-text">Please wait while we redirect you...</p>
 
   <div class="stylish-divider"></div>
 

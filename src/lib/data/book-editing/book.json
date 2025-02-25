@@ -1,0 +1,98 @@
+{
+  "title": "Surviving the Singularity",
+  "author": "Christopher Tavolazzi",
+  "version": "0.1.0",
+  "lastUpdated": "2023-09-02",
+  "sections": [
+    {
+      "id": "acknowledgements",
+      "title": "Acknowledgements",
+      "file": "01-acknowledgements.md"
+    },
+    {
+      "id": "introduction",
+      "title": "Introduction: Welcome to the Weirdness",
+      "file": "02-introduction.md"
+    },
+    {
+      "id": "chapter1",
+      "title": "Chapter 1: What the Hell is Going On?: An Overview of AI and the Singularity",
+      "file": "03-chapter1.md"
+    },
+    {
+      "id": "chapter2",
+      "title": "Chapter 2: Show Me the Money (While It Still Exists): AI's Impact on Jobs and the Economy",
+      "file": "04-chapter2.md"
+    },
+    {
+      "id": "chapter3",
+      "title": "Chapter 3: Your AI BFF (Best Fridge Forever): AI in Our Everyday Lives",
+      "file": "05-chapter3.md"
+    },
+    {
+      "id": "chapter4",
+      "title": "Chapter 4: Dr. AI Will See You Now (No Lollipops, Just Binary Code): AI in Healthcare",
+      "file": "06-chapter4.md"
+    },
+    {
+      "id": "chapter5",
+      "title": "Chapter 5: School of the Future (No Hoverboards, Just Smart Blackboards): AI in Education",
+      "file": "07-chapter5.md"
+    },
+    {
+      "id": "chapter6",
+      "title": "Chapter 6: When Robots Get Creative (Spoiler: It's Weird): AI in Art and Creativity",
+      "file": "08-chapter6.md"
+    },
+    {
+      "id": "chapter7",
+      "title": "Chapter 7: Love in the Time of Algorithms: AI in Relationships and Dating",
+      "file": "09-chapter7.md"
+    },
+    {
+      "id": "chapter8",
+      "title": "Chapter 8: Lights, Camera, Algorithm!: AI in Entertainment and Media",
+      "file": "10-chapter8.md"
+    },
+    {
+      "id": "chapter9",
+      "title": "Chapter 9: AI for President: No Kissing Babies Required: AI in Politics and Governance",
+      "file": "11-chapter9.md"
+    },
+    {
+      "id": "chapter10",
+      "title": "Chapter 10: Money Never Sleeps, and Neither Do the AIs: AI in Finance and Economics",
+      "file": "12-chapter10.md"
+    },
+    {
+      "id": "chapter11",
+      "title": "Chapter 11: The Singularity: When AI Becomes SMARTer Than U",
+      "file": "13-chapter11.md"
+    },
+    {
+      "id": "chapter12",
+      "title": "Chapter 12: So Long, and Thanks for All the Data: Surviving and Thriving in the Age of AI",
+      "file": "14-chapter12.md"
+    },
+    {
+      "id": "epilogue",
+      "title": "Epilogue: The Future is Unwritten (But Probably Typed by an AI)",
+      "file": "15-epilogue.md"
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary of AI Terms (For When You're Faking It at Dinner Parties)",
+      "file": "16-glossary.md"
+    },
+    {
+      "id": "further-reading",
+      "title": "Further Reading (In Case This Book Didn't Fry Your Circuits Enough)",
+      "file": "17-further-reading.md"
+    },
+    {
+      "id": "index",
+      "title": "Index",
+      "file": "18-index.md"
+    }
+  ]
+}

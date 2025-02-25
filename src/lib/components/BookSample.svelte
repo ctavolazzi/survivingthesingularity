@@ -58,7 +58,9 @@
 
         <div class="book-preview">
             <div class="image-container">
-                <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" on:click={handleReadSample} />
+                <button class="book-image-button" on:click={handleReadSample} on:keydown={e => e.key === 'Enter' && handleReadSample()}>
+                    <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" />
+                </button>
             </div>
             <div class="preview-highlights">
                 <h3>In this free sample of the book, you'll find:</h3>
@@ -175,6 +177,24 @@
 
     .image-container {
         flex-shrink: 0;
+    }
+
+    .book-image-button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        display: block;
+    }
+
+    .book-image-button:hover {
+        transform: scale(1.03);
+    }
+
+    .book-image-button:focus {
+        outline: 2px solid var(--highlight-border);
+        outline-offset: 4px;
     }
 
     .book-image {

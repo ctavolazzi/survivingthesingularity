@@ -32,8 +32,8 @@
   <FAQ />
 
 	<div class="book-container">
-		<img
-			src={welcomeImage}
+		<button
+			class="image-button"
 			on:click={() => {
 				window.location.href = '/sample';
 			}}
@@ -42,10 +42,14 @@
 					window.location.href = '/sample';
 				}
 			}}
-			alt="Surviving the Singularity Book"
-			class="clickable-image"
 			tabindex="0"
-		/>
+			aria-label="View book sample"
+		>
+			<img
+				src={welcomeImage}
+				alt="Surviving the Singularity welcome"
+			/>
+		</button>
 	</div>
 
 	<LatestNews {post} />
@@ -184,7 +188,29 @@
 		transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 	}
 
-	.clickable-image:hover, .clickable-image:focus {
+	.image-button {
+		background: none;
+		border: none;
+		padding: 0;
+		width: 100%;
+		cursor: pointer;
+		display: block;
+	}
+
+	.image-button:focus {
+		outline: 2px solid #3498db;
+		outline-offset: 4px;
+	}
+
+	.image-button img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	}
+
+	.image-button:hover img {
 		transform: scale(1.05);
 		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 	}

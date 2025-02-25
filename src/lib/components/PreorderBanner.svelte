@@ -2,7 +2,6 @@
     import { fade, slide } from 'svelte/transition';
     import { onMount } from 'svelte';
     import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
-    import CtHeroImage from '$lib/images/ct_hero_image.png';
     import { darkMode } from '$lib/stores/darkMode';
 
     let isExpanded = false;
@@ -132,46 +131,6 @@
                             <h4>Future-Proof</h4>
                             <p>Expert insights on AI development and trends</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Proof -->
-            <div class="author-section">
-                <h2 class="author-title">The Author</h2>
-
-                <div class="author-content">
-                    <div class="author-image-container">
-                        <img
-                        src={CtHeroImage}
-                        alt="Christopher Tavolazzi"
-                        class="author-image"
-                        />
-                    </div>
-
-                    <div class="author-text">
-                        <p class="author-byline">
-                            <span class="author-name">Christopher Tavolazzi</span>
-                        </p>
-                        <p class="author-description">
-                            Software engineer and AI researcher making complex technology accessible.
-                        </p>
-                    </div>
-                    <div class="credentials-list">
-                        <a href="https://themultiverse.school" class="credential-item">
-                            <span class="credential-icon">🎓</span>
-                            <span class="credential-text">Professor at <span class="highlight-link">The Multiverse School</span></span>
-                        </a>
-
-                        <a href="https://solo.to/thecoffeejesus" class="credential-item">
-                            <span class="credential-icon">🚀</span>
-                            <span class="credential-text">Creator with <span class="highlight-link">100,000+ followers</span> across platforms</span>
-                        </a>
-
-                        <a href="https://thecoffeejesus.com" class="credential-item">
-                            <span class="credential-icon">💻</span>
-                            <span class="credential-text">Tech educator at <span class="highlight-link">thecoffeejesus.com</span></span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -406,49 +365,6 @@
         color: var(--text-color);
     }
 
-    /* Author section */
-    .author-section {
-        text-align: center;
-        padding: 0.6rem 0;
-    }
-
-    .author-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.6rem;
-    }
-
-    .author-image-container {
-        width: 140px;
-        height: 140px;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 0 auto;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .author-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .author-text {
-        margin: 0.4rem 0;
-        text-align: center;
-    }
-
-    .author-name {
-        color: var(--accent-color);
-        font-weight: 600;
-    }
-
-    .credentials-list {
-        gap: 0.4rem;
-        margin-top: 0.2rem;
-    }
-
     /* Price section */
     .preview-cta {
         margin-top: 1rem;
@@ -538,11 +454,6 @@
 
         .learning-item {
             padding: 0.75rem;
-        }
-
-        .author-image-container {
-            width: 160px;
-            height: 160px;
         }
     }
 

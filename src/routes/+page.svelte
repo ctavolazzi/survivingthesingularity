@@ -50,9 +50,20 @@
 		</button>
 	</div>
 
-	<LatestNews {post} />
+	<div class="newsletter-container">
+		<div class="newsletter-inner">
+			<h2 class="newsletter-heading">Join Our Community</h2>
+			<p class="newsletter-text">
+				Stay updated with the latest information and resources to help you prepare for the technological Singularity.
+			</p>
+			<NewsletterSignup />
+		</div>
+	</div>
 
-	<NewsletterSignup />
+	<div class="recent-posts">
+		<h2 class="recent-posts-heading">Latest Insights</h2>
+		<LatestNews {post} />
+	</div>
 </div>
 
 <style>

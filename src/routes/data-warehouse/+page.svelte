@@ -16,8 +16,8 @@
 
     async function calculateCSVSize(resource) {
         if (!csvSizes[resource.csvUrl]) {
-            csvSizes[resource.csvUrl] = resource.getCSVSize 
-                ? await resource.getCSVSize() 
+            csvSizes[resource.csvUrl] = resource.getCSVSize
+                ? await resource.getCSVSize()
                 : resource.csvSize;
             csvSizes = csvSizes; // Trigger reactivity
         }
@@ -40,11 +40,6 @@
     <p class="text-xl mb-12 text-gray-600 dark:text-gray-300 max-w-3xl text-center">
         Dive into our curated collection of AI and robotics datasets. These resources provide valuable insights into the rapidly evolving world of technology.
     </p>
-
-    <div class="mb-8 text-center">
-        <p class="text-xl mb-4 text-gray-600 dark:text-gray-300 max-w-3xl italic">Think we're missing something? Add your own research here.</p>
-        <Button class="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600" on:click={() => goto('/data-warehouse/research-links/contribute')}>Add Your Research</Button>
-    </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {#each dataResources as resource}
@@ -75,11 +70,11 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </Button>
-                        <Button 
-                            on:click={() => handleDownloadCSV(resource.csvUrl)} 
+                        <Button
+                            on:click={() => handleDownloadCSV(resource.csvUrl)}
                             class="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300"
                         >
-                            Download CSV 
+                            Download CSV
                             {#if csvSizes[resource.csvUrl]}
                                 ({csvSizes[resource.csvUrl]})
                             {:else}

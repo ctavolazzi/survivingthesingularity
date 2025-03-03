@@ -40,14 +40,6 @@
     console.log("Dark mode toggled. New value:", $darkMode);
   }
 
-  function handleBackBook() {
-    window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
-  }
-
-  function handleJoinSkool() {
-    window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');
-  }
-
   function handleDataWarehouseClick() {
     goto('/data-warehouse');
     closeMenu();
@@ -147,8 +139,6 @@
         {#if isDropdownOpen}
           <div class="dropdown-menu absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
             <a href="/download" class="dropdown-item">Download FREE Guide</a>
-            <button on:click={handleBackBook} class="dropdown-item">Support on Kickstarter</button>
-            <button on:click={handleJoinSkool} class="dropdown-item">Join Skool Community</button>
             <button on:click={handleNewsletterClick} class="dropdown-item">Newsletter</button>
             <button on:click={handleDataWarehouseClick} class="dropdown-item">Data Warehouse</button>
           </div>
@@ -202,16 +192,6 @@
               <a href="/download" class="mobile-menu-sublink highlight" on:click={closeMenu} aria-label="Download FREE Guide" data-tracking="nav-download">
                 Download FREE Guide
               </a>
-            </li>
-            <li>
-              <button class="mobile-menu-sublink external-link" on:click={() => { closeMenu(); handleBackBook(); }} aria-label="Support on Kickstarter" data-tracking="nav-kickstarter">
-                Support on Kickstarter
-              </button>
-            </li>
-            <li>
-              <button class="mobile-menu-sublink external-link" on:click={() => { closeMenu(); handleJoinSkool(); }} aria-label="Join Skool Community" data-tracking="nav-skool">
-                Join Skool Community
-              </button>
             </li>
             <li>
               <button class="mobile-menu-sublink" on:click={handleNewsletterClick} aria-label="Newsletter" data-tracking="nav-newsletter">

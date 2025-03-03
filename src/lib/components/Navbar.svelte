@@ -69,10 +69,10 @@
 
     const mediaQuery = window.matchMedia('(min-width: 1280px)');
     isLargeScreen = mediaQuery.matches;
-    
+
     const handler = (e) => isLargeScreen = e.matches;
     mediaQuery.addListener(handler);
-    
+
     return () => {
       document.removeEventListener('click', closeDropdown);
       mediaQuery.removeListener(handler);
@@ -98,7 +98,7 @@
       Surviving the Singularity
     </span>
   </NavBrand>
-  
+
   <div class="flex items-center xl:order-2">
     <!-- <DarkMode checked={$darkMode} on:change={toggleDarkMode} class="mr-3" /> -->
     <DarkModeToggle />
@@ -108,7 +108,7 @@
       </button>
     {/if}
   </div>
-  
+
   {#if isLargeScreen}
     <NavUl class="flex items-center justify-end w-full xl:w-auto xl:order-1">
       <NavLi href="/about" class="nav-item">
@@ -133,12 +133,6 @@
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Sample</span>
           <span class="nav-icon ml-2">{@html IconSample.svg}</span>
-        </span>
-      </NavLi>
-      <NavLi href="/preorder" class="nav-item">
-        <span class="preorder-button flex items-center h-full w-full">
-          <span class="flex-grow text-left">Preorder</span>
-          <span class="nav-icon ml-2">{@html IconPreorder.svg}</span>
         </span>
       </NavLi>
       <NavLi class="nav-item relative">
@@ -195,12 +189,6 @@
         <a href="/sample" class="mobile-menu-link {currentPath === '/sample' ? 'active' : ''}" on:click={closeMenu} aria-label="Sample" data-tracking="nav-sample">
           Sample
           <span class="nav-icon">{@html IconSample.svg}</span>
-        </a>
-      </li>
-      <li class="w-full border-b border-gray-200 dark:border-gray-700">
-        <a href="/preorder" class="mobile-menu-link preorder-button flex items-center justify-between w-full" on:click={closeMenu} aria-label="Preorder" data-tracking="nav-preorder">
-          Preorder
-          <span class="nav-icon">{@html IconPreorder.svg}</span>
         </a>
       </li>
       <li class="w-full border-b border-gray-200 dark:border-gray-700">

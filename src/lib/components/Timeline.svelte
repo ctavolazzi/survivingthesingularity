@@ -7,6 +7,7 @@
   let showModal = [];
   let isLoading = true;
   let isLoadingMore = false;
+  let isLoadingAll = false;
   let activeModalIndex = -1;
   let currentPage = 1;
   let totalPages = 0;
@@ -45,9 +46,38 @@
     }
   }
 
+  // Load all timeline items
+  async function loadAllTimelineItems() {
+    try {
+      isLoadingAll = true;
+
+      const response = await fetch(`/api/timeline?limit=100`);
+      if (!response.ok) throw new Error('Failed to load all timeline data');
+
+      const data = await response.json();
+
+      items = data.items;
+      showModal = Array(data.items.length).fill(false);
+
+      currentPage = data.pagination.currentPage;
+      totalPages = data.pagination.totalPages;
+      hasMore = data.pagination.hasMore;
+    } catch (error) {
+      console.error('Error loading all timeline items:', error);
+    } finally {
+      isLoadingAll = false;
+    }
+  }
+
   function loadMore() {
     if (hasMore && !isLoadingMore) {
       loadTimelineItems(currentPage + 1, true);
+    }
+  }
+
+  function loadAll() {
+    if (!isLoadingAll) {
+      loadAllTimelineItems();
     }
   }
 
@@ -90,7 +120,7 @@
   <h1 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Timeline of Events</h1>
   <hr class="mb-8 border-gray-200 dark:border-gray-700" />
 
-  {#if isLoading}
+  {#if isLoading || isLoadingAll}
     <div class="flex justify-center items-center py-12">
       <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
     </div>
@@ -188,15 +218,28 @@
     </ol>
 
     {#if hasMore}
-      <div class="flex justify-center mt-8">
+      <div class="flex justify-center mt-8 gap-4">
         <Button
           variant="secondary"
           on:click={loadMore}
           loading={isLoadingMore}
-          disabled={isLoadingMore}
+          disabled={isLoadingMore || isLoadingAll}
+          class="min-w-[160px]"
         >
           {isLoadingMore ? 'Loading...' : 'Load More Events'}
         </Button>
+
+        {#if currentPage >= 2}
+          <Button
+            variant="secondary"
+            on:click={loadAll}
+            loading={isLoadingAll}
+            disabled={isLoadingAll || isLoadingMore}
+            class="min-w-[160px]"
+          >
+            {isLoadingAll ? 'Loading...' : 'Load All Events'}
+          </Button>
+        {/if}
       </div>
     {/if}
   {/if}

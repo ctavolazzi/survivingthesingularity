@@ -11,7 +11,6 @@
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
-  import PreorderDropin from '$lib/components/PreorderDropin.svelte';
 
 
   let showPopup = false;
@@ -86,11 +85,9 @@
   <Divider />
 
   <section class="text-center mt-16 mb-12">
-    <h2 class="text-3xl font-bold mb-4">Limited Time Offer</h2>
+    <h2 class="text-3xl font-bold mb-4">Coming Soon</h2>
     <Countdown targetDate={targetDate} />
-    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
-      <PreorderDropin />
-    </div>
+    <p class="mt-6">The book will be available for purchase soon. Stay tuned for updates!</p>
   </section>
 
   <Divider />

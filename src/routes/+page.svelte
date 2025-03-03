@@ -9,7 +9,6 @@
 	import BookSample from '$lib/components/BookSample.svelte';
 	import welcomeImage from '$lib/images/sts-welcome.png';
 	import timelineItems from '$lib/data/timelineItems.json';
-	import PreorderBanner from '$lib/components/PreorderBanner.svelte';
 
 	export let data;
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
@@ -17,7 +16,6 @@
 
 <div class="main-content">
 	<Countdown {targetDate} />
-	<PreorderBanner />
 
 	<!-- <HeroSection /> -->
 

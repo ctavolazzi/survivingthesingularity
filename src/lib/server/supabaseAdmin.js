@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
-import { SUPABASE_URL, SUPABASE_SERVICE_KEY } from '$env/static/private';
+import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public';
 
-// This file is only imported server-side
-export const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
+// This file now uses the public client instead of admin credentials
+// Note: This will have reduced permissions compared to the service key client
+export const supabase = createClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY);

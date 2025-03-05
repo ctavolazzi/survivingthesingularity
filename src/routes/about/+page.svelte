@@ -1,582 +1,795 @@
 <script>
-  import { fade } from 'svelte/transition';
+  import { fade, fly, scale } from 'svelte/transition';
+  import { onMount } from 'svelte';
   import FAQ from '$lib/components/FAQ.svelte';
-  import Countdown from '$lib/components/Countdown.svelte';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import BookSample from '$lib/components/BookSample.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
-  import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
-  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
-  import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
   import { goto } from '$app/navigation';
-
-  const targetDate = new Date("2027-11-20T23:59:59").getTime();
 
   const handleGetFreeSample = () => {
     goto("/sample");
     console.log("Get a free sample");
   };
+
+  // For intersection observer animations
+  let sections = [];
+  let visibleSections = new Set();
+
+  onMount(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          visibleSections.add(entry.target.id);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+      if (section) observer.observe(section);
+    });
+
+    return () => sections.forEach(section => {
+      if (section) observer.unobserve(section);
+    });
+  });
 </script>
 
-<div class="main-content text-center">
-  <header>
-    <h1 class="title">Surviving the Singularity</h1>
-    <p class="subtitle">Navigate and Thrive in the AI Revolution</p>
-    <p class="tagline">A comprehensive program to prepare you for the AI-driven future</p>
+<div class="main-content">
+  <header in:fade={{ duration: 800, delay: 200 }} class="hero">
+    <div class="hero-content">
+      <h1 class="title">Surviving the Singularity</h1>
+      <p class="subtitle">Navigate and Thrive in the AI Revolution</p>
+      <p class="tagline">A companion for making sense of our rapidly changing world</p>
+      <button class="cta-button" on:click={handleGetFreeSample}>
+        Get Free Sample Chapter
+      </button>
+    </div>
   </header>
 
-  <section class="intro">
-    <p class="large-text">The future is approaching faster than you think. Are you prepared?</p>
-    <p>Our comprehensive program equips you with the knowledge, skills, and community to not just survive, but thrive in the coming age of artificial intelligence.</p>
-  </section>
-
-  <div class="stylish-divider"></div>
-
-  <section class="program-overview">
-    <h2 class="text-center">What You'll Gain</h2>
-    <div class="content-grid">
-      <div class="ul-centered-left">
-        <ul>
-          <li>Deep understanding of AI and its societal impacts</li>
-          <li>Practical skills for adapting to an AI-driven world</li>
-          <li>Strategies for future-proofing your career</li>
-          <li>Network of like-minded individuals and experts</li>
-          <li>Confidence in navigating rapid technological changes</li>
-        </ul>
-      </div>
+  <section class="book-showcase container">
+    <div in:scale={{ duration: 600, delay: 300, start: 0.9 }}>
+      <BookSample />
     </div>
   </section>
 
-  <div class="stylish-divider"></div>
+  <section
+    bind:this={sections[0]}
+    id="intro"
+    class="intro-section container"
+    class:visible={visibleSections.has('intro')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-left">The Future Is Now</h2>
+      <p class="large-text">The future is approaching faster than you think.</p>
+      <p>This book is being actively written as a companion to help you process the rapid technological changes we're experiencing. It aims to provide you with tools for thinking more clearly about our collective future.</p>
+    </div>
+  </section>
 
-  <section class="book-info">
-    <h2>More Than Just a Book</h2>
-    <div class="content-grid">
-      <div class="ul-centered-left">
-        <p>"Surviving the Singularity" is a revolutionary multi-format experience designed to guide you through the AI revolution:</p>
-        <ul>
-          <li><strong>Interactive Workbook:</strong> Engage with thought-provoking exercises and scenarios.</li>
-          <li><strong>Personal AI Journal:</strong> Document your journey and insights.</li>
-          <li><strong>Exclusive Digital Content:</strong> Access additional resources via QR codes.</li>
-          <li><strong>Self-Guided Research Tool:</strong> Embark on your own AI exploration.</li>
-          <li><strong>Future-Proofing Strategies:</strong> Develop practical skills for an AI-driven world.</li>
-        </ul>
+  <section
+    bind:this={sections[1]}
+    id="writing"
+    class="writing-section container"
+    class:visible={visibleSections.has('writing')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-right">A Book Being Actively Written</h2>
+      <div class="two-column">
+        <div class="column">
+          <p>This book is being written in real-time as we all navigate these unprecedented technological changes together. Rather than rush to conclusions, I'm taking the time to:</p>
+        </div>
+        <div class="column feature-list-container">
+          <ul class="feature-list">
+            <li><span class="icon">📝</span> Document the unfolding AI revolution as it happens</li>
+            <li><span class="icon">🔍</span> Research and analyze emerging patterns</li>
+            <li><span class="icon">🧠</span> Develop thoughtful frameworks for understanding these changes</li>
+            <li><span class="icon">🌐</span> Build a community of thoughtful participants in this journey</li>
+          </ul>
+        </div>
       </div>
-      <div class="visual-content">
-        <div class="book-sample-wrapper">
-          <BookSample />
+      <p class="highlight-text">Your patience and participation are valuable parts of this process.</p>
+    </div>
+  </section>
+
+  <section
+    bind:this={sections[2]}
+    id="benefits"
+    class="benefits-section container"
+    class:visible={visibleSections.has('benefits')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-left">What You Might Gain</h2>
+      <div class="cards-grid">
+        <div class="benefit-card">
+          <div class="card-icon">🧠</div>
+          <h3>Deep Understanding</h3>
+          <p>Deeper understanding of AI and its societal impacts</p>
+        </div>
+        <div class="benefit-card">
+          <div class="card-icon">🛠️</div>
+          <h3>Practical Frameworks</h3>
+          <p>Frameworks for thinking about an AI-driven world</p>
+        </div>
+        <div class="benefit-card">
+          <div class="card-icon">🧭</div>
+          <h3>Navigation Skills</h3>
+          <p>Strategies for navigating uncertainty</p>
+        </div>
+        <div class="benefit-card">
+          <div class="card-icon">🔧</div>
+          <h3>Processing Tools</h3>
+          <p>Tools for processing complex technological shifts</p>
+        </div>
+        <div class="benefit-card">
+          <div class="card-icon">🔍</div>
+          <h3>Personal Perspective</h3>
+          <p>Confidence in forming your own view on emerging technologies</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="stylish-divider"></div>
-
-  <section class="program-structure">
-    <h2 class="text-center">Program Structure</h2>
-    <div class="content-grid">
-      <div class="ul-centered-left">
-        <p class="text-center">Our self-paced program typically takes 12 weeks to complete:</p>
-        <ul class="feature-list">
-          <li><span class="icon">📚</span> Weekly modules with video lessons and readings</li>
-          <li><span class="icon">🧠</span> Interactive exercises and quizzes</li>
-          <li><span class="icon">💬</span> Monthly live Q&A sessions with experts</li>
-          <li><span class="icon">🌐</span> Ongoing access to our online community</li>
-        </ul>
-        <p class="text-center">Access all materials for a full year after enrollment.</p>
+  <section
+    bind:this={sections[3]}
+    id="bookInfo"
+    class="book-info-section container"
+    class:visible={visibleSections.has('bookInfo')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-center">More Than Just a Book</h2>
+      <div class="two-column aligned-items">
+        <div class="column">
+          <p class="intro-text">"Surviving the Singularity" is designed as an evolving resource to guide you through the AI revolution:</p>
+        </div>
+        <div class="column">
+          <div class="features-grid">
+            <div class="feature">
+              <strong>Interactive Workbook</strong>
+              <p>Engage with thought-provoking exercises and scenarios</p>
+            </div>
+            <div class="feature">
+              <strong>Personal AI Journal</strong>
+              <p>Document your journey and insights</p>
+            </div>
+            <div class="feature">
+              <strong>Digital Resources</strong>
+              <p>Access additional materials as they're developed</p>
+            </div>
+            <div class="feature">
+              <strong>Self-Guided Research</strong>
+              <p>Embark on your own AI exploration</p>
+            </div>
+            <div class="feature">
+              <strong>Future-Proofing</strong>
+              <p>Develop frameworks for an AI-driven world</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="stylish-divider"></div>
-
-  <section class="future-learning">
-    <h2 class="text-center">Experience the Future of Learning</h2>
-    <div class="content-grid">
-      <div class="ul-centered-left">
-        <p>Our innovative QR code system is just the beginning of your journey:</p>
-        <ul>
-          <li>Access exclusive online content updated in real-time</li>
-          <li>Dive deep into AI topics with curated resources</li>
-          <li>Participate in our vibrant online learning community</li>
-          <li>Engage in practical exercises to prepare for the AI-driven future</li>
-          <li>Track your progress and unlock achievements as you adapt to the rapidly evolving tech landscape</li>
-        </ul>
+  <section
+    bind:this={sections[4]}
+    id="future"
+    class="evolving-section container"
+    class:visible={visibleSections.has('future')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-right">An Evolving Resource</h2>
+      <div class="evolution-timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p>Content evolves with new AI developments</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p>Resources expand to include different perspectives</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p>Community insights inform future directions</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p>Practical frameworks refined based on real-world applications</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p>Final book reflects our journey through this pivotal period</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="stylish-divider"></div>
-
-  <section class="who-is-this-for">
-    <h2 class="text-center">Who Is This For?</h2>
-    <div class="content-grid">
-      <div class="ul-centered-left">
-        <p class="font-bold">This program is ideal for:</p>
-        <ul>
-          <li>Professionals looking to future-proof their careers</li>
-          <li>Entrepreneurs seeking AI-driven opportunities</li>
-          <li>Students preparing for an AI-dominated job market</li>
-          <li>Anyone curious about the impact of AI on society</li>
-        </ul>
+  <section
+    bind:this={sections[5]}
+    id="audience"
+    class="audience-section container"
+    class:visible={visibleSections.has('audience')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-left">Who Is This For?</h2>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-icon">👩‍💼</div>
+          <p>Thoughtful individuals processing rapid technological change</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">👨‍💻</div>
+          <p>Professionals seeking to understand AI's potential impacts</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">🤔</div>
+          <p>Anyone feeling overwhelmed by the pace of technological advancement</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">🔍</div>
+          <p>Those curious about the societal implications of AI</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="stylish-divider"></div>
-
-  <section class="testimonials">
-    <h2 class="text-center">What Early Adopters Are Saying</h2>
-    <div class="content-grid">
-      <blockquote>
-        <p>"This isn't just a book, it's a personal AI revolution in your hands. The interactive elements and QR codes make learning about AI an exciting journey of discovery."</p>
-        <footer>- Emma Rodriguez, Tech Entrepreneur</footer>
-      </blockquote>
-      <blockquote>
-        <p>"The workbook and journal aspects helped me apply AI concepts to my own life and career in ways I never imagined. A truly transformative experience!"</p>
-        <footer>- Dr. James Lee, Futurist</footer>
-      </blockquote>
-    </div>
-  </section>
-
-  <div class="stylish-divider"></div>
-
-  <section class="future-scenarios">
-    <h2 class="font-bold text-center">Preparing for the Near Future</h2>
-    <div class="content-grid">
-      <div class="ul-centered-left">
-        <p>The technological singularity is closer than you think. Our program helps you prepare for scenarios like:</p>
-        <ul>
-          <li>Robots handling household chores by 2025</li>
-          <li>AI doctors leveraging all medical knowledge for diagnoses by 2026</li>
-          <li>Autonomous vehicles becoming the norm on our roads</li>
-          <li>AI-driven personal assistants managing your daily life</li>
-          <li>Rapid job market shifts due to AI and automation</li>
-        </ul>
-        <p class="emphasis-text font-bold">Don't just witness the future—be ready to thrive in it.</p>
+  <section
+    bind:this={sections[6]}
+    id="testimonials"
+    class="testimonials-section container"
+    class:visible={visibleSections.has('testimonials')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-center">What Early Readers Are Saying</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>This isn't just a book, it's a personal AI revolution in your hands. The interactive elements make learning about AI an exciting journey of discovery.</p>
+          <div class="testimonial-author">
+            <span class="author-name">Emma Rodriguez</span>
+            <span class="author-title">Tech Entrepreneur</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>The workbook and journal aspects helped me apply AI concepts to my own life and career in ways I never imagined. A truly transformative experience!</p>
+          <div class="testimonial-author">
+            <span class="author-name">Dr. James Lee</span>
+            <span class="author-title">Futurist</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="stylish-divider"></div>
+  <section
+    bind:this={sections[7]}
+    id="scenarios"
+    class="scenarios-section container"
+    class:visible={visibleSections.has('scenarios')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-right">Making Sense of Rapid Change</h2>
+      <p class="large-text">The pace of technological change can be overwhelming.</p>
+      <p>This book helps you think through scenarios like:</p>
 
-  <FAQ />
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <div class="scenario-number">01</div>
+          <p>How AI might transform everyday tasks and routines</p>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-number">02</div>
+          <p>The potential evolution of AI in healthcare, education, and work</p>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-number">03</div>
+          <p>Ethical considerations as AI becomes more integrated into society</p>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-number">04</div>
+          <p>Ways to maintain human agency and meaning in an AI-rich world</p>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-number">05</div>
+          <p>How to prepare mentally and practically for continuing technological shifts</p>
+        </div>
+      </div>
 
-  <div class="stylish-divider"></div>
-
-  <section class="newsletter">
-    <h2>Stay Informed</h2>
-    <p>Join our newsletter to receive regular updates on AI advancements and community insights.</p>
-    <NewsletterSignup />
+      <p class="emphasis-text">Don't just witness the future—develop tools to understand it.</p>
+    </div>
   </section>
 
-  <!-- <section class="enrollment">
-    <h2 class="text-center">Join Surviving the Singularity</h2>
-    <div class="pricing-grid">
-      <div class="pricing-option">
-        <h3>Basic Access</h3>
-        <p class="price">$299</p>
-        <ul>
-          <li>Full course access</li>
-          <li>Community forum</li>
-          <li>3 months support</li>
-        </ul>
-        <button class="enroll-button" on:click={() => goto("/enroll/basic")}>Enroll Now</button>
-      </div>
-      <div class="pricing-option featured">
-        <h3>Premium Access</h3>
-        <p class="price">$499</p>
-        <ul>
-          <li>Everything in Basic</li>
-          <li>1-on-1 coaching session</li>
-          <li>Lifetime support</li>
-          <li>Exclusive webinars</li>
-        </ul>
-        <button class="enroll-button" on:click={() => goto("/enroll/premium")}>Enroll Now</button>
+  <section class="faq-section container">
+    <div class="section-inner">
+      <FAQ />
+    </div>
+  </section>
+
+  <section
+    bind:this={sections[8]}
+    id="newsletter"
+    class="newsletter-section container"
+    class:visible={visibleSections.has('newsletter')}
+  >
+    <div class="section-inner">
+      <h2 class="accent-center">Stay Informed</h2>
+      <p>Join our newsletter to receive updates as the book develops and new insights emerge.</p>
+      <div class="newsletter-container">
+        <NewsletterSignup />
       </div>
     </div>
-    <p class="money-back">30-day money-back guarantee</p>
-  </section> -->
-
-  <div class="stylish-divider"></div>
-
-  <!-- <section class="countdown">
-    <div class="countdown-container">
-      <Countdown {targetDate} />
-      <p class="text-center">The technological singularity is approaching rapidly.</p>
-      <p class="text-center large-text">Will you be prepared?</p>
-      <div class="text-center">
-        <p><em>This timer is our estimate of when human-level robots with general intelligence will begin to be mass-produced and available to the public.</em></p>
-        <p>
-          If that makes you feel anxious, or excited, or both, we'd love to have you join us on this journey.
-        </p>
-        <p>
-          <button class="big-button" on:click={handleGetFreeSample}>Get a free sample</button>
-        </p>
-      </div>
-    </div>
-  </section> -->
-  <CommunityIntakePopupForm />
+  </section>
 
   <Spacer height="50px" />
 
-  <section class="support-info">
-    <h2 class="text-center">We're Here to Help</h2>
-    <p>Have questions? Our support team is available 24/7.</p>
-    <p>Email: info@survivingthesingularity.com</p>
-  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h2>Get In Touch</h2>
+      <p>Have questions or thoughts about the project?</p>
+      <a href="mailto:info@survivingthesingularity.com" class="email-link">
+        info@survivingthesingularity.com
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com" aria-label="Twitter profile" rel="noopener noreferrer" target="_blank" class="social-icon">Twitter</a>
+        <a href="https://linkedin.com" aria-label="LinkedIn profile" rel="noopener noreferrer" target="_blank" class="social-icon">LinkedIn</a>
+        <a href="https://instagram.com" aria-label="Instagram profile" rel="noopener noreferrer" target="_blank" class="social-icon">Instagram</a>
+      </div>
+      <p class="copyright">© {new Date().getFullYear()} Surviving the Singularity</p>
+    </div>
+  </footer>
 
   <Spacer height="1rem"/>
 </div>
 
-<!-- <FloatingPopupProgressBar /> -->
-<!-- <FloatingQuotePopup minDelay={20000} /> -->
-
 <style>
-  .book-info {
-    text-align: center;
-    margin-bottom: 3rem;
-    width: 100%;
-  }
-
+  /* Base Layout */
   .main-content {
     width: 100%;
-    max-width: 800px;
     margin: 0 auto;
-    padding: 1rem;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  header, section {
-    margin-bottom: 3rem;
+  .container {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+    scroll-margin-top: 2rem;
   }
 
+  .section-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* Typography */
   .title {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(120deg, var(--color-text-primary), var(--color-accent, #7c3aed));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    position: relative;
+  }
+
+  .accent-left {
+    padding-left: 1.5rem;
+    border-left: 6px solid var(--color-accent, #7c3aed);
+    margin-left: -1.5rem;
+  }
+
+  .accent-right {
+    padding-right: 1.5rem;
+    border-right: 6px solid var(--color-accent, #7c3aed);
+    margin-right: -1.5rem;
+    text-align: right;
+  }
+
+  .accent-center {
+    position: relative;
+    text-align: center;
+  }
+
+  .accent-center::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-accent, #7c3aed);
+    bottom: -15px;
+    left: calc(50% - 40px);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  p, li {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-secondary, #4b5563);
+  }
+
+  .large-text {
+    font-size: clamp(1.25rem, 3vw, 1.8rem);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
     color: var(--color-text-primary);
   }
 
   .subtitle {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
-    color: var(--color-text-secondary);
-  }
-
-  h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--color-text-primary);
-  }
-
-  p, li {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    color: var(--color-text-primary);
-  }
-
-  ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .content-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .ul-centered-left {
-    display: inline-block;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .ul-centered-left p {
-    margin-bottom: 1rem;
-  }
-
-  .ul-centered-left ul {
-    list-style-type: disc;
-    padding-left: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-
-  .emphasis-text {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-text-secondary);
-    margin-top: 1rem;
-  }
-
-  .visual-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  blockquote {
-    background-color: var(--color-bg-secondary);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-
-  blockquote p {
-    font-style: italic;
-  }
-
-  blockquote footer {
-    font-weight: bold;
-    margin-top: 0.5rem;
-  }
-
-  .countdown-container {
-    background-color: var(--color-bg-secondary);
-    padding: 1.5rem;
-    border-radius: 8px;
-    width: 100%;
-  }
-
-  .stylish-divider {
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    margin: 2rem auto;
-    width: 100%;
-    max-width: 80%;
-  }
-
-  .book-sample-wrapper {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 640px) {
-    .book-sample-wrapper {
-      width: 95%; /* Slightly smaller on very small screens */
-    }
-  }
-
-  @media (min-width: 768px) {
-    .main-content {
-      padding: 2rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .main-content {
-      padding: 3rem;
-    }
-  }
-
-  /* Dark mode styles */
-  :global(.dark) .title,
-  :global(.dark) h2,
-  :global(.dark) p,
-  :global(.dark) li {
-    color: #e5e7eb;
-  }
-
-  :global(.dark) .subtitle {
-    color: #9ca3af;
-  }
-
-  :global(.dark) blockquote,
-  :global(.dark) .countdown-container {
-    background-color: #2a2a2a;
-  }
-
-  :global(.dark) .stylish-divider {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-  }
-
-  :global(.dark) .placeholder-image {
-    background-color: #2a2a2a;
-    color: #9ca3af;
-  }
-
-  .large-text {
-    font-size: 1.5rem; /* Equivalent to text-2xl in Tailwind */
-    line-height: 2rem;
-  }
-
-  @keyframes pulse-glow {
-    0% {
-      box-shadow: 0 0 5px #FF8C00, 0 0 10px #FF8C00, 0 0 15px #FF8C00;
-    }
-    50% {
-      box-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500, 0 0 30px #FFA500;
-    }
-    100% {
-      box-shadow: 0 0 5px #FF8C00, 0 0 10px #FF8C00, 0 0 15px #FF8C00;
-    }
-  }
-
-  .big-button {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    background-color: #FF8C00; /* Dark Orange */
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    position: relative;
-    overflow: hidden;
-    animation: pulse-glow 2s infinite;
-  }
-
-  .big-button::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,215,0,0.3) 0%, rgba(255,165,0,0.1) 50%, rgba(255,140,0,0) 70%);
-    transform: scale(0);
-    transition: transform 0.6s ease-out;
-  }
-
-  .big-button:hover {
-    background-color: #FFA500; /* Brighter Orange */
-    transform: scale(1.05);
-    animation: pulse-glow 1s infinite;
-  }
-
-  .big-button:hover::before {
-    transform: scale(1);
-  }
-
-  .big-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.5), 0 0 25px rgba(255, 165, 0, 0.7);
-  }
-
-  /* Dark mode styles */
-  :global(.dark) .big-button {
-    background-color: #FFA500; /* Brighter Orange for dark mode */
-    color: #1a1a1a; /* Dark text for contrast */
-  }
-
-  :global(.dark) .big-button:hover {
-    background-color: #FFD700; /* Gold */
-  }
-
-  :global(.dark) .big-button {
-    animation: pulse-glow-dark 2s infinite;
-  }
-
-  :global(.dark) .big-button:hover {
-    animation: pulse-glow-dark 1s infinite;
-  }
-
-  @keyframes pulse-glow-dark {
-    0% {
-      box-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500;
-    }
-    50% {
-      box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
-    }
-    100% {
-      box-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500;
-    }
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin-bottom: 0.75rem;
+    color: var(--color-text-secondary, #4b5563);
+    font-weight: 500;
   }
 
   .tagline {
-    font-size: 1.2rem;
-    color: var(--color-text-secondary);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: var(--color-text-secondary, #4b5563);
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  /* Header/Hero Section */
+  .hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: radial-gradient(circle at center, rgba(124, 58, 237, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+
+  .cta-button {
+    background-color: var(--color-accent, #7c3aed);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+  }
+
+  /* Grid Layouts */
+  .two-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .aligned-items {
+    align-items: center;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  /* Card Components */
+  .benefit-card, .feature, .testimonial-card, .scenario-card, .audience-card {
+    background-color: var(--color-bg-card, #f9fafb);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .benefit-card:hover, .scenario-card:hover, .audience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+  }
+
+  .card-icon, .audience-icon {
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-
-  .pricing-option {
-    background-color: var(--color-bg-secondary);
+  .testimonial-card {
     padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
+    position: relative;
   }
 
-  .pricing-option.featured {
-    border: 2px solid var(--color-accent);
+  .quote-mark {
+    font-size: 4rem;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: var(--color-accent, #7c3aed);
+    opacity: 0.2;
+    font-family: serif;
   }
 
-  .price {
+  .testimonial-author {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-name {
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .author-title {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary, #6b7280);
+  }
+
+  .scenario-number {
     font-size: 2rem;
-    font-weight: bold;
-    margin: 1rem 0;
+    font-weight: 700;
+    color: var(--color-accent, #7c3aed);
+    opacity: 0.4;
+    margin-bottom: 0.5rem;
   }
 
-  .enroll-button {
-    background-color: var(--color-accent);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .enroll-button:hover {
-    background-color: var(--color-accent-hover);
-  }
-
-  .money-back {
-    margin-top: 1rem;
-    font-style: italic;
-  }
-
-  /* Dark mode styles */
-  :global(.dark) .pricing-option {
-    background-color: #2a2a2a;
-  }
-
-  :global(.dark) .enroll-button {
-    background-color: #FFA500;
-    color: #1a1a1a;
-  }
-
-  :global(.dark) .enroll-button:hover {
-    background-color: #FFD700;
-  }
-
+  /* Feature List */
   .feature-list {
     list-style-type: none;
     padding: 0;
-    margin: 1rem 0;
+    margin: 0;
   }
 
   .feature-list li {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
     font-size: 1.1rem;
   }
 
   .icon {
     margin-right: 1rem;
     font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  /* Timeline */
+  .evolution-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    position: relative;
+  }
+
+  .evolution-timeline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    width: 2px;
+    background-color: var(--color-accent, #7c3aed);
+    opacity: 0.3;
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    padding-left: 2.5rem;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-bg-card, #f9fafb);
+    border: 2px solid var(--color-accent, #7c3aed);
+    z-index: 2;
+  }
+
+  .timeline-content {
+    flex: 1;
+  }
+
+  .timeline-content p {
+    margin-bottom: 0;
+  }
+
+  /* Highlight Elements */
+  .highlight-text {
+    display: inline-block;
+    background-color: rgba(124, 58, 237, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  .emphasis-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-accent, #7c3aed);
+    margin: 2rem 0 1rem;
+    text-align: center;
+  }
+
+  /* Newsletter */
+  .newsletter-container {
+    max-width: 500px;
+    margin: 2rem auto 0;
+  }
+
+  /* Footer */
+  .site-footer {
+    background-color: var(--color-bg-secondary, #f3f4f6);
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .social-icon {
+    color: var(--color-text-secondary, #4b5563);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .social-icon:hover {
+    color: var(--color-accent, #7c3aed);
+  }
+
+  .email-link {
+    color: var(--color-accent, #7c3aed);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+    display: inline-block;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .email-link:hover {
+    opacity: 0.8;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: var(--color-text-secondary, #6b7280);
+  }
+
+  /* Animations */
+  section {
+    opacity: 0.5;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .two-column {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .evolution-timeline::after {
+      left: 40px;
+    }
+
+    .timeline-marker {
+      width: 40px;
+      height: 40px;
+      left: 20px;
+    }
+
+    .timeline-item {
+      padding-left: 5rem;
+    }
+  }
+
+  /* Dark mode styles */
+  :global(.dark) {
+    --color-bg-card: #2a2a2a;
+    --color-bg-secondary: #1a1a1a;
+    --color-text-primary: #e5e7eb;
+    --color-text-secondary: #9ca3af;
+    --color-accent: #a78bfa;
+  }
+
+  :global(.dark) .testimonial-card,
+  :global(.dark) .benefit-card,
+  :global(.dark) .scenario-card,
+  :global(.dark) .audience-card,
+  :global(.dark) .feature {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  :global(.dark) .timeline-marker {
+    background-color: #2a2a2a;
   }
 </style>

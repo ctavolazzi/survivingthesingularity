@@ -1,25 +1,48 @@
 <script>
   import { onMount } from 'svelte';
-  import { fade, fly } from 'svelte/transition';
+  import { fade, fly, scale } from 'svelte/transition';
   import { marked } from 'marked';
   import sampleContent from '$lib/data/sample.md?raw';
   import ContactForm from '$lib/components/ContactForm.svelte';
   import Divider from '$lib/components/Divider.svelte';
   import StSBookImage from '$lib/images/default-blog-image.png';
-  import Countdown from '$lib/components/Countdown.svelte';
-  import StSFreeGuideImage from '$lib/images/StSFreeGuide.png';
-  import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
-  import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
-  import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
 
-
-  let showPopup = false;
-  const targetDate = new Date("2027-11-20T23:59:59").getTime();
+  let animatedSections = {};
+  let isScrolled = false;
 
   onMount(() => {
-    setTimeout(() => {
-      showPopup = true;
-    }, 8000); // Show popup after 8 seconds
+    // Add scroll position detection for enhanced scrolling effects
+    const handleScroll = () => {
+      isScrolled = window.scrollY > 50;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Set up intersection observer for scroll animations - as enhancement only
+    try {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            if (entry.target.id) {
+              animatedSections[entry.target.id] = true;
+            }
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+      // Observe all elements with animate-on-scroll class
+      const sections = document.querySelectorAll('.animate-on-scroll');
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    } catch (error) {
+      console.warn('Animation setup failed, but content will still be visible:', error);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   });
 
   function joinSkool() {
@@ -37,204 +60,103 @@
     console.log('Form submitted:', event.detail);
     // Implement your form submission logic here
   }
-
-  function closePopup() {
-    showPopup = false;
-  }
-
-  function navigateToDownload() {
-    window.location.href = '/download';
-  }
 </script>
 
 <svelte:head>
-  <title>Free Book Sample</title>
+  <title>Free Book Sample | Surviving the Singularity</title>
   <meta name="description" content="Download your free guide on processing AI anxiety and confusion. Join thousands of other readers preparing for the future of technology.">
 </svelte:head>
 
-<main class="container mx-auto px-4 py-8 max-w-3xl dark:bg-gray-800 dark:text-gray-200">
-  <header in:fade="{{ duration: 1000 }}">
-    <h1 class="text-4xl font-bold mb-4 text-center">Read a Free Sample</h1>
-    <h2 class="text-2xl mb-8 text-center">The Ultimate Workbook for Processing AI Anxiety and Confusion</h2>
+<main class="container mx-auto py-5 max-w-3xl dark:bg-gray-800/95 dark:text-gray-200">
+  <header in:fade="{{ duration: 1000 }}" class="mb-6">
+    <h1 class="text-5xl sm:text-6xl font-bold mb-3 text-center text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">Read a Free Sample</h1>
+    <h2 class="text-2xl sm:text-3xl mb-4 text-center font-light max-w-2xl mx-auto leading-relaxed">The Ultimate Workbook for Processing AI Anxiety and Confusion</h2>
   </header>
 
-  <div class="flex flex-col md:flex-row items-center mb-12">
-    <a href="/book" class="mb-8 md:mb-0 md:mr-8">
-      <img src={StSBookImage} alt="Surviving the Singularity" class="StS-book-image mb-8 md:mb-0 md:mr-8" />
+  <div id="book-preview" class="animate-on-scroll flex flex-col md:flex-row items-center mb-10 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-2xl p-6 shadow-xl">
+    <a href="/book" class="mb-8 md:mb-0 md:mr-10 transform transition-all duration-500 hover:scale-105 hover:rotate-1 focus:outline-none focus:ring-4 focus:ring-orange-200 dark:focus:ring-orange-900 rounded-xl">
+      <img src={StSBookImage} alt="Surviving the Singularity" class="StS-book-image rounded-xl shadow-2xl" />
     </a>
-    <div>
-      <ul class="list-disc pl-5 mb-6">
-        <li>Practical exercises to process AI-related emotions</li>
-        <li>Strategies for adapting to rapid technological change</li>
-        <li>Insights from leading AI researchers and ethicists</li>
-        <li>Future-proofing techniques for your career and life</li>
+    <div class="md:ml-4 w-full">
+      <h3 class="text-2xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">What You'll Learn</h3>
+      <ul class="list-none pl-0 mb-6 space-y-3">
+        <li class="flex items-start feature-item">
+          <div class="feature-icon-container">
+            <svg class="h-6 w-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <span class="text-lg">Practical exercises to process AI-related emotions</span>
+        </li>
+        <li class="flex items-start feature-item">
+          <div class="feature-icon-container">
+            <svg class="h-6 w-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <span class="text-lg">Strategies for adapting to rapid technological change</span>
+        </li>
+        <li class="flex items-start feature-item">
+          <div class="feature-icon-container">
+            <svg class="h-6 w-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <span class="text-lg">Insights from leading AI researchers and ethicists</span>
+        </li>
+        <li class="flex items-start feature-item">
+          <div class="feature-icon-container">
+            <svg class="h-6 w-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <span class="text-lg">Future-proofing techniques for your career and life</span>
+        </li>
       </ul>
-      <p class="text-center text-sm">Join 10,000+ readers preparing for the future</p>
     </div>
   </div>
 
-  <Divider />
+  <section id="preview-content" class="mb-10 animate-on-scroll">
+    <h3 class="text-3xl sm:text-4xl font-bold mb-6 text-center">
+      Surviving the Singularity Guide
+    </h3>
 
-  <section class="my-12">
-    <h3 class="text-2xl font-bold mb-4 dark:text-gray-200">Preview: Surviving the Singularity Guide</h3>
-    <div class="content bg-gray-100 dark:bg-gray-700 p-6 rounded-lg">
-      {@html parsedContent}
+    <div class="content bg-white dark:bg-gray-700 p-6 sm:p-8 rounded-2xl shadow-xl prose prose-orange dark:prose-invert lg:prose-lg mx-auto">
+      {#if parsedContent}
+        {@html parsedContent}
+      {:else}
+        <div class="flex justify-center items-center h-32">
+          <div class="loading-spinner"></div>
+          <p class="ml-4 text-gray-600 dark:text-gray-300">Loading content...</p>
+        </div>
+      {/if}
     </div>
   </section>
 
-  <Divider />
+  <section id="contact-form" class="mb-8 animate-on-scroll">
+    <div class="bg-gradient-to-b from-orange-100 via-orange-50/90 to-white dark:from-gray-800 dark:via-gray-800/80 dark:to-gray-900/90 p-6 md:p-8 rounded-2xl shadow-xl relative overflow-hidden">
+      <!-- Background elements -->
+      <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-300 to-amber-400 rounded-full opacity-10 dark:opacity-5 blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-orange-400 to-amber-300 rounded-full opacity-10 dark:opacity-5 blur-3xl"></div>
 
-  <section class="text-center mt-16 mb-12">
-    <h2 class="text-3xl font-bold mb-4">Coming Soon</h2>
-    <Countdown targetDate={targetDate} />
-    <p class="mt-6">The book will be available for purchase soon. Stay tuned for updates!</p>
-  </section>
+      <div class="relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">Stay Updated</h2>
+        <p class="text-center mb-5 text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">Get exclusive content and be the first to know about new releases and special offers.</p>
 
-  <Divider />
-
-  <section class="mt-16">
-    <h2 class="text-3xl font-bold mb-8 text-center">Stay Updated</h2>
-    <p class="text-center mb-8">Get exclusive content and be the first to know about new releases and special offers.</p>
-    <ContactForm on:submit={handleFormSubmit} />
+        <div class="max-w-md mx-auto bg-white/90 dark:bg-gray-800/60 p-6 rounded-xl shadow-lg backdrop-blur-sm border border-orange-100/50 dark:border-gray-700/50">
+          <ContactForm on:submit={handleFormSubmit} />
+          <p class="text-center text-xs text-gray-500 dark:text-gray-400 mt-3 italic">We respect your privacy and will never share your information.</p>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 
-{#if showPopup}
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" in:fade>
-    <div class="bg-white dark:bg-gray-800 p-8 rounded-lg max-w-md relative" in:fly="{{ y: 200, duration: 500 }}">
-      <button
-        on:click={closePopup}
-        class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-        aria-label="Close popup"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-      <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" class="w-full mb-4 rounded-lg shadow-md">
-      <h3 class="text-2xl font-bold mb-4 dark:text-gray-200">Don't miss out!</h3>
-      <p class="mb-4 dark:text-gray-300">Get your free guide to surviving the AI revolution now.</p>
-      <button on:click={navigateToDownload} class="cta-button mb-4 w-full">
-        Get Free Guide
-      </button>
-      <button on:click={closePopup} class="text-sm text-gray-500 dark:text-gray-400 w-full">No thanks, I'll pass</button>
-    </div>
-  </div>
-{/if}
-
-<FloatingPopupProgressBar />
-<CommunityIntakePopupForm />
-<FloatingQuotePopup initialDelay={12000} />
-
 <style>
-  :global(body) {
-    background-color: #f8f9fa;
-    color: #333;
-  }
-
   main {
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-
-  .action-button {
-    font-weight: bold;
-    background-color: #FF9933;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    font-size: 1rem;
-    border-radius: 5px;
-  }
-
-  .action-button:hover {
-    background-color: #FF8000;
-    transform: translateY(-2px);
-  }
-
-  .content :global(h2) {
-    font-size: 2rem;
-    color: #333;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #FF9933;
-    padding-bottom: 0.5rem;
-  }
-
-  .content :global(p) {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    font-size: 1.1rem;
-  }
-
-  .content :global(h2:first-of-type) {
-    margin-top: 0;
-  }
-
-  @media (max-width: 640px) {
-    .content :global(h2) {
-      font-size: 1.75rem;
-    }
-
-    .content :global(p) {
-      font-size: 1rem;
-    }
-
-    .action-button {
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-    }
-  }
-
-  :global(.dark) body {
-    background-color: #1a202c;
-    color: #e2e8f0;
-  }
-
-  :global(.dark) main {
-    background-color: #2d3748;
-  }
-
-  :global(.dark) .action-button {
-    background-color: #FF9933;
-    color: #1a202c;
-  }
-
-  :global(.dark) .action-button:hover {
-    background-color: #FF8000;
-  }
-
-  :global(.dark) .content :global(h2) {
-    color: #e2e8f0;
-    border-bottom-color: #FF9933;
-  }
-
-  :global(.dark) .content :global(p) {
-    color: #e2e8f0;
-  }
-
-  :global(.dark) .content-warning {
-    background-color: rgba(255, 153, 51, 0.2);
-  }
-
-  :global(.dark) .content-warning p {
-    color: #b0b0b0;
-  }
-
-  .content-warning {
-    border-left: 4px solid #FF9933;
-    padding: 0.5rem 1rem;
-    background-color: rgba(255, 153, 51, 0.1);
-    font-style: italic;
-  }
-
-  .content-warning p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #666;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
   }
 
   .StS-book-image {
@@ -242,54 +164,283 @@
     margin: 1rem auto;
     max-width: 100%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15),
+                0 5px 15px rgba(0, 0, 0, 0.08),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .StS-book-image:hover {
+    box-shadow: 0 20px 40px rgba(255, 153, 51, 0.2),
+                0 10px 20px rgba(255, 153, 51, 0.1),
+                0 0 0 1px rgba(255, 153, 51, 0.1);
+  }
+
+  .feature-item {
+    transition: transform 0.3s ease;
+  }
+
+  .feature-item:hover {
+    transform: translateX(5px);
+  }
+
+  .feature-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 153, 51, 0.2) 0%, rgba(255, 128, 0, 0.1) 100%);
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(255, 128, 0, 0.1);
   }
 
   .cta-button {
     font-weight: bold;
-    background-color: #FF9933;
+    background: linear-gradient(135deg, #FF9933 0%, #FF8000 100%);
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.85rem 1.75rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    font-size: 1rem;
-    border-radius: 5px;
-    animation: pulse 2s infinite;
-    display: block;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 1.1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(255, 153, 51, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
     width: 100%;
-    text-align: center;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transition: all 0.6s ease;
   }
 
   .cta-button:hover {
-    background-color: #FF8000;
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, #FF8000 0%, #FF6600 100%);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(255, 153, 51, 0.4);
+  }
+
+  .cta-button:hover:before {
+    left: 100%;
+  }
+
+  .cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(255, 153, 51, 0.2);
+  }
+
+  .pulse-animation {
+    animation: pulse 2s infinite;
   }
 
   @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 153, 51, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(255, 153, 51, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 153, 51, 0);
+    }
   }
 
-  .StS-book-image {
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .content {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  .content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #FF9933, #FF8000);
+    border-radius: 5px 5px 0 0;
   }
 
-  :global(.dark) .cta-button {
-    color: #1a202c;
+  .content :global(h2) {
+    font-size: 1.85rem;
+    color: #FF8000;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid rgba(255, 153, 51, 0.2);
+    padding-bottom: 0.7rem;
+    font-weight: 700;
   }
 
-  :global(.dark) .cta-button:hover {
-    background-color: #FF8000;
+  .content :global(p) {
+    margin-bottom: 1.8rem;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    color: #374151;
+  }
+
+  .content :global(h2:first-of-type) {
+    margin-top: 0;
+  }
+
+  .content :global(a) {
+    color: #FF8000;
+    text-decoration: none;
+    border-bottom: 1px dotted #FF8000;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .content :global(a:hover) {
+    color: #FF6600;
+    border-bottom: 1px solid #FF6600;
+  }
+
+  .content :global(blockquote) {
+    border-left: 4px solid #FF9933;
+    padding: 1rem 0 1rem 1.5rem;
+    margin: 2rem 0;
+    background: rgba(255, 153, 51, 0.05);
+    border-radius: 0 8px 8px 0;
+    color: #4B5563;
+    font-style: italic;
+  }
+
+  .content :global(ul), .content :global(ol) {
+    margin-bottom: 1.8rem;
+    line-height: 1.9;
+    padding-left: 1.5rem;
+  }
+
+  .content :global(li) {
+    margin-bottom: 0.8rem;
+    position: relative;
+  }
+
+  .content :global(ul li::before) {
+    content: '';
+    position: absolute;
+    left: -1.2rem;
+    top: 0.6rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #FF9933;
+  }
+
+  /* Loading spinner */
+  .loading-spinner {
+    border: 4px solid rgba(255, 153, 51, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #FF9933;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Background grid pattern */
+  .bg-grid-pattern {
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+
+  /* Animate on scroll effects */
+  .animate-on-scroll {
+    opacity: 1; /* Start visible */
+    transform: translateY(0); /* Start in normal position */
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Tighter section spacing */
+  section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Adjust divider spacing */
+  :global(.divider) {
+    margin: 1rem auto;
+  }
+
+  :global(.stylish-divider) {
+    margin: 1.5rem auto !important;
+  }
+
+  /* Dark mode adjustments */
+  :global(.dark) .content {
+    color: #e2e8f0;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  :global(.dark) .content :global(p) {
+    color: #e2e8f0;
+  }
+
+  :global(.dark) .content :global(blockquote) {
+    color: #cbd5e0;
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  :global(.dark) .content :global(h2) {
+    color: #FF9933;
+    border-bottom-color: rgba(255, 153, 51, 0.3);
+  }
+
+  /* Additional responsive adjustments */
+  @media (max-width: 640px) {
+    .content {
+      padding: 1.5rem;
+    }
+
+    .content:before {
+      height: 3px;
+    }
+
+    .content :global(h2) {
+      font-size: 1.5rem;
+    }
+
+    .content :global(p) {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .feature-icon-container {
+      padding: 6px;
+    }
+
+    .cta-button {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    main {
+      padding: 3rem 0.5rem;
+    }
   }
 </style>

@@ -64,15 +64,15 @@
     try {
       const { error } = await supabase
         .from('hooked_leads')
-        .insert([{ 
-          name, 
-          email, 
-          address, 
-          city, 
-          state, 
-          zip_code: zipCode, 
-          country, 
-          age: age ? parseInt(age) : null, 
+        .insert([{
+          name,
+          email,
+          address,
+          city,
+          state,
+          zip_code: zipCode,
+          country,
+          age: age ? parseInt(age) : null,
           occupation,
           interests: interests.split(',').map(i => i.trim())
         }]);
@@ -122,8 +122,8 @@
 
 {#if isOpen}
   <div class="popup-overlay" transition:fade="{{ duration: 300 }}" on:click|self={closePopup}>
-    <div class="popup" 
-         in:fly="{{ y: 100, duration: 800, easing: backOut }}" 
+    <div class="popup"
+         in:fly="{{ y: 100, duration: 800, easing: backOut }}"
          out:fade="{{ duration: 300 }}">
       <button class="close-button" on:click={closePopup} aria-label="Close popup">×</button>
       <div class="popup-content">
@@ -161,9 +161,9 @@
         {:else}
           <div class="step-indicator">
             {#each Array(totalSteps) as _, i}
-              <button 
-                class="step-dot" 
-                class:active={currentStep === i + 1} 
+              <button
+                class="step-dot"
+                class:active={currentStep === i + 1}
                 on:click={() => goToStep(i + 1)}
                 aria-label="Go to step {i + 1}"
               ></button>
@@ -171,8 +171,8 @@
           </div>
 
           {#key currentStep}
-            <div 
-              class="step" 
+            <div
+              class="step"
               in:fly="{{ x: 100 * slideDirection, duration: 300, easing: quintOut }}"
               out:fly="{{ x: -100 * slideDirection, duration: 300, easing: quintOut }}"
             >
@@ -385,41 +385,9 @@
     box-shadow: 0 0 0 3px rgba(255, 119, 8, 0.2);
   }
 
-  button[type="submit"] {
-    background: linear-gradient(135deg, #ff9933, #ff7708);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Orbitron', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(255, 119, 8, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  button[type="submit"]:hover {
+  button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(255, 119, 8, 0.3);
-  }
-
-  button[type="submit"] svg {
-    width: 20px;
-    height: 20px;
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-  }
-
-  button[type="submit"]:hover svg {
-    transform: translateX(4px);
   }
 
   .loading-message,
@@ -561,30 +529,21 @@
     box-shadow: 0 2px 4px rgba(255, 119, 8, 0.2);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     .popup {
-      width: 95%;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
 
     h2 {
       font-size: 1.5rem;
     }
 
-    input, button[type="submit"] {
+    input {
       font-size: 1rem;
     }
 
     .success-message h2 {
       font-size: 1.5rem;
-    }
-
-    .success-message h3 {
-      font-size: 1.2rem;
-    }
-
-    .home-button {
-      font-size: 1rem;
     }
   }
 

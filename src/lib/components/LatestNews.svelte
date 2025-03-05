@@ -1,26 +1,34 @@
 <script>
     import BlogPost from './BlogPost.svelte';
-    export let post;
+    export let latestPost;
+
+    // Fallback content if no post is available
+    $: post = latestPost || {
+      title: "No posts available yet",
+      date: new Date().toISOString().split('T')[0],
+      excerpt: "Check back soon for new content.",
+      slug: ""
+    };
   </script>
-  
+
   <!-- <hr class="section-divider"> -->
-  
+
   <div class="latest-news-container">
     <h2 class="heading-text">Latest News</h2>
     <div class="news-card">
       <BlogPost {post} />
     </div>
   </div>
-  
+
   <!-- <hr class="section-divider"> -->
-  
+
   <style>
     .latest-news-container {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-  
+
     .heading-text {
       font-size: 2rem;
       font-weight: 600;
@@ -28,7 +36,7 @@
       margin-bottom: 1.5rem;
       color: var(--color-text-primary);
     }
-  
+
     .news-card {
       background-color: #ffffff;
       border-radius: 8px;
@@ -37,7 +45,7 @@
       margin-top: 1rem;
       border: 1px solid #e5e7eb;
     }
-  
+
     /* .section-divider {
       border: 0;
       height: 1px;
@@ -45,16 +53,16 @@
       margin: 2rem auto;
       max-width: 80%;
     } */
-  
+
     :global(.dark) .heading-text {
       color: #e5e7eb;
     }
-  
+
     :global(.dark) .news-card {
       background-color: #2c3e50;
       border-color: #4a6785;
     }
-  
+
     /* :global(.dark) .section-divider {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     } */

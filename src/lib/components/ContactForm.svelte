@@ -98,38 +98,33 @@
 
 <style>
   .contact-form {
-    --bg-color: #ffffff;
+    --bg-color: transparent;
     --text-color: #2c3e50;
-    --input-bg: #f8f9fa;
-    --input-border: #ced4da;
-    --button-bg: #2c3e50;
+    --input-bg: #ffffff;
+    --input-border: #e2e8f0;
+    --button-bg: linear-gradient(135deg, #f97316, #f59e0b);
     --button-text: #ffffff;
-    --button-hover: #34495e;
+    --button-hover: linear-gradient(135deg, #ea580c, #d97706);
     --disclaimer-color: #6c757d;
 
-    max-width: 500px;
-    margin: 2rem auto;
-    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
     background-color: var(--bg-color);
     color: var(--text-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: auto; /* Change from fixed height to auto */
-    min-height: 600px; /* Minimum height instead of fixed */
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Changed from flex-start */
   }
 
   :global(.dark) .contact-form {
-    --bg-color: #1f2937;
+    --bg-color: transparent;
     --text-color: #e5e7eb;
-    --input-bg: #374151;
+    --input-bg: rgba(55, 65, 81, 0.8);
     --input-border: #4b5563;
-    --button-bg: #e5e7eb;
-    --button-text: #1f2937;
-    --button-hover: #d1d5db;
+    --button-bg: linear-gradient(135deg, #f97316, #f59e0b);
+    --button-text: #ffffff;
+    --button-hover: linear-gradient(135deg, #ea580c, #d97706);
     --disclaimer-color: #9ca3af;
   }
 
@@ -137,7 +132,6 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   form, .response-message {
@@ -148,21 +142,22 @@
 
   h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: var(--text-color);
+    font-weight: 700;
   }
 
   h3 {
     font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
     color: var(--text-color);
   }
 
   .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 
   label {
@@ -170,21 +165,36 @@
     margin-bottom: 0.5rem;
     font-weight: 600;
     color: var(--text-color);
+    font-size: 0.9rem;
+  }
+
+  .asterisk {
+    color: #f97316;
   }
 
   input[type="text"],
   input[type="email"],
   textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 1px solid var(--input-border);
-    border-radius: 4px;
+    border-radius: 0.5rem;
     background-color: var(--input-bg);
     color: var(--text-color);
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
   }
 
   textarea {
-    height: 100px;
+    height: 120px;
     resize: vertical;
   }
 
@@ -192,23 +202,34 @@
     display: inline-block;
     width: 100%;
     padding: 0.75rem 1rem;
-    background-color: var(--button-bg);
+    background: var(--button-bg);
     color: var(--button-text);
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     font-size: 1rem;
     font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .button:hover {
-    background-color: var(--button-hover);
+    background: var(--button-hover);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
   .button:disabled {
     opacity: 0.7;
     cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
   }
 
   .response-message {

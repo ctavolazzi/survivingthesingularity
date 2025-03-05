@@ -8,64 +8,64 @@
       <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What is the Singularity?</span>
         <p class="text-[var(--color-text-secondary)]">
-          The Technological Singularity refers to a hypothetical future point when artificial intelligence surpasses human intelligence, potentially leading to rapid and unpredictable technological growth. This concept is central to our book, as we explore its implications and how to prepare for this transformative event.
+          The Technological Singularity refers to a hypothetical future point when artificial intelligence surpasses human intelligence, potentially leading to rapid and unpredictable technological growth. This concept is central to our book, as we explore its implications and how to navigate this transformative period.
         </p>
       </AccordionItem>
 
       <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">How can I best prepare for my future?</span>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">How can I think about preparing for these changes?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>Preparing for the AI revolution involves several strategies:</p>
+          <p>Navigating the AI revolution involves considering several approaches:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>Stay informed about AI developments and their potential impacts</li>
-            <li>Develop adaptable skills that complement AI capabilities</li>
-            <li>Understand the ethical considerations surrounding AI</li>
-            <li>Explore ways to leverage AI in your personal and professional life</li>
+            <li>Staying informed about AI developments and their potential impacts</li>
+            <li>Developing frameworks for thinking about the relationship between humans and AI</li>
+            <li>Exploring ethical considerations surrounding emerging technologies</li>
+            <li>Considering how AI might affect different aspects of society and personal life</li>
           </ul>
-          <p>Our book provides in-depth guidance on these topics and more.</p>
+          <p>The book explores these topics as they continue to evolve.</p>
         </div>
       </AccordionItem>
 
       <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">Is there something I can read now to help me understand what's going on?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>"Surviving the Singularity" covers a range of crucial topics, including:</p>
+          <p>"Surviving the Singularity" is examining a range of crucial topics, including:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>The potential impact of AI on various industries and job markets</li>
-            <li>Strategies for thriving in an AI-driven world</li>
+            <li>The potential impact of AI on various industries and social structures</li>
+            <li>Approaches for adapting to rapid technological changes</li>
             <li>Ethical considerations in AI development and implementation</li>
-            <li>The future of human-AI collaboration</li>
-            <li>Preparing for rapid technological changes</li>
+            <li>The evolving relationship between humans and technology</li>
+            <li>Tools for processing complex technological shifts</li>
           </ul>
-          <p>The free sample provides a glimpse into these topics, enticing readers to explore further.</p>
+          <p>The free sample provides initial thoughts on these topics as they continue to be developed.</p>
         </div>
       </AccordionItem>
 
       <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">Is "Surviving the Singularity" suitable for non-technical readers?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>Absolutely! "Surviving the Singularity" is written for a broad audience, including:</p>
+          <p>Absolutely! "Surviving the Singularity" is being written for a broad audience, including:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>Professionals from various fields interested in future-proofing their careers</li>
-            <li>Students preparing for a rapidly changing job market</li>
-            <li>Entrepreneurs looking to leverage AI in their businesses</li>
-            <li>Anyone curious about the future of technology and its impact on society</li>
+            <li>People from all backgrounds interested in understanding technological change</li>
+            <li>Anyone trying to make sense of how AI might affect society</li>
+            <li>Those feeling overwhelmed by the pace of technological advancement</li>
+            <li>People curious about developing clearer thinking about the future</li>
           </ul>
-          <p>The book explains complex concepts in an accessible manner, making it valuable for both technical and non-technical readers.</p>
+          <p>The book approaches complex concepts in an accessible manner, making it valuable for both technical and non-technical readers.</p>
         </div>
       </AccordionItem>
 
       <AccordionItem>
         <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What's this I hear about a Skool community? Is it any good?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>"Surviving the Singularity" aligns perfectly with the Skool community's focus on continuous learning and adaptation:</p>
+          <p>"Surviving the Singularity" connects with the Skool community's focus on learning and adaptation:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>It provides a foundation for understanding AI's impact, complementing Skool's tech-focused courses</li>
-            <li>The book's strategies for personal and professional growth resonate with Skool's emphasis on skill development</li>
-            <li>It encourages critical thinking about future scenarios, fostering the kind of forward-thinking mindset valued in the Skool community</li>
-            <li>The content can spark meaningful discussions and collaborations among Skool members interested in AI and future technologies</li>
+            <li>It explores AI's potential impacts, complementing Skool's tech-focused discussions</li>
+            <li>The book's frameworks for thinking about change resonate with Skool's emphasis on development</li>
+            <li>It encourages critical thinking about future scenarios, supporting the kind of forward-thinking mindset valued in the Skool community</li>
+            <li>The evolving content can spark meaningful discussions among those interested in AI and future technologies</li>
           </ul>
-          <p>By reading this book, Skool community members can gain valuable insights that enhance their learning journey and prepare them for the challenges and opportunities of an AI-driven future.</p>
+          <p>The Skool community provides a space for readers to discuss these topics as the book develops.</p>
         </div>
       </AccordionItem>
     </Accordion>

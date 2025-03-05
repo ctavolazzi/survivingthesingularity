@@ -3,8 +3,8 @@
   import { createEventDispatcher } from 'svelte';
   import { fade } from 'svelte/transition';
 
-  export let ctaText = "Ready to learn how to survive the Singularity?";
-  export let buttonText = "Enlist Now";
+  export let ctaText = "Interested in learning more about navigating the AI revolution?";
+  export let buttonText = "Join the Community";
 
   let isPopupOpen = false;
   const dispatch = createEventDispatcher();
@@ -22,12 +22,12 @@
 <section class="cta-section" transition:fade={{duration: 800}}>
   <div class="cta-content">
     <h2>{ctaText}</h2>
-    <p class="subtext">Join a community of forward-thinkers preparing for the future.</p>
+    <p class="subtext">Connect with others thinking about our technological future.</p>
     <button class="cta-button" on:click={showPopup}>
       {buttonText}
       <span class="arrow">→</span>
     </button>
-    <p class="disclaimer">By enlisting, you agree to receive communications about joining our community and learning how to adapt and survive the singularity with like-minded individuals who are watching developments with curiosity and caution.</p>
+    <p class="disclaimer">By joining, you'll receive occasional updates about the community and our conversations around technology and society.</p>
   </div>
 </section>
 

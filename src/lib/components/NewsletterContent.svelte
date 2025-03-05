@@ -56,16 +56,16 @@
 
 <style>
   .newsletter-content {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0.75rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
   }
 
   .newsletter-header {
     position: relative;
-    padding: 2rem 0;
+    padding: 1.25rem 0;
     overflow: hidden;
   }
 
@@ -80,7 +80,7 @@
   }
 
   .newsletter-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -94,26 +94,26 @@
   .publication-date {
     position: relative;
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.6rem;
     background-color: rgba(52, 152, 219, 0.1);
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: italic;
     opacity: 0.8;
   }
 
   .table-of-contents {
-    border-left: 4px solid #3498db;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    border-left: 3px solid #3498db;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
     background-color: rgba(52, 152, 219, 0.1);
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 4px 4px 0;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .table-of-contents:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   }
 
   .table-of-contents ul {
@@ -128,13 +128,13 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: 2px;
+    width: 1px;
     background-color: rgba(52, 152, 219, 0.3);
   }
 
   .table-of-contents li {
     position: relative;
-    padding-left: 1rem;
+    padding-left: 0.75rem;
   }
 
   .table-of-contents li::before {
@@ -142,8 +142,8 @@
     position: absolute;
     left: -4px;
     top: 50%;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #3498db;
     border-radius: 50%;
     transform: translateY(-50%);
@@ -151,12 +151,12 @@
 
   .toc-item-2 {
     margin-left: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
   }
 
   .toc-item-3 {
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
+    margin-left: 0.75rem;
+    margin-bottom: 0.35rem;
   }
 
   .table-of-contents a {
@@ -170,39 +170,39 @@
   }
 
   :global(.newsletter-content h2) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
     position: relative;
   }
 
   :global(.newsletter-content h2)::after {
     content: '';
     display: block;
-    width: 50px;
-    height: 3px;
+    width: 40px;
+    height: 2px;
     background-color: #3498db;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
   }
 
   :global(.newsletter-content h3) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.6rem;
   }
 
   :global(.newsletter-content p) {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
   }
 
   :global(.newsletter-content blockquote) {
-    border-left: 4px solid #3498db;
-    padding-left: 1rem;
+    border-left: 3px solid #3498db;
+    padding-left: 0.8rem;
     font-style: italic;
     color: #555;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
   }
 
   :global(.newsletter-content a) {
@@ -218,8 +218,8 @@
 
   /* Enhanced list styling */
   :global(.newsletter-content ul, .newsletter-content ol) {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1.25rem;
   }
 
   :global(.newsletter-content ul) {
@@ -247,31 +247,34 @@
   }
 
   :global(.newsletter-content li) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .newsletter-content {
+      padding: 0.5rem;
+    }
+
+    .newsletter-title {
+      font-size: 2rem;
+    }
+
+    .table-of-contents {
+      padding: 0.5rem 0.5rem;
+    }
+
+    :global(.newsletter-content h2) {
+      font-size: 1.75rem;
+    }
+
+    :global(.newsletter-content h3) {
+      font-size: 1.4rem;
+    }
   }
 
   :global(.newsletter-content li::marker) {
     color: #3498db;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :global(.newsletter-content li::marker) {
-      color: #5dade2;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .newsletter-title {
-      font-size: 2.5rem;
-    }
-
-    :global(.newsletter-content h2) {
-      font-size: 2rem;
-    }
-
-    :global(.newsletter-content h3) {
-      font-size: 1.75rem;
-    }
   }
 
   @media (prefers-color-scheme: dark) {
@@ -289,6 +292,10 @@
 
     :global(.newsletter-content a:hover) {
       border-bottom-color: #5dade2;
+    }
+
+    :global(.newsletter-content li::marker) {
+      color: #5dade2;
     }
   }
 </style>

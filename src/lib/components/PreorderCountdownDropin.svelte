@@ -2,7 +2,7 @@
     import Countdown from './Countdown.svelte';
     import PreorderDropin from './PreorderDropin.svelte';
     import Divider from './Divider.svelte';
-  
+
     export let targetDate = new Date("2027-11-20T23:59:59").getTime();
     export let headerText = "Time Left";
 </script>

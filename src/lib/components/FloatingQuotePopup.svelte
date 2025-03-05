@@ -6,7 +6,7 @@
     import moreQuotes from '$lib/data/more_quotes.json';
 
     export let initialDelay = 20000; // Minimum 20 seconds for the first quote
-    
+
     let visible = false;
     let currentQuote = null;
 
@@ -39,7 +39,7 @@
                 scheduleNextQuote();
             }, getRandomDelay());
         }
-        
+
         const initialTimer = setTimeout(() => {
             showNewQuote();
             scheduleNextQuote();
@@ -50,10 +50,14 @@
 </script>
 
 {#if visible && currentQuote}
-    <div 
-        class="floating-quote-popup" 
+    <div
+        class="floating-quote-popup"
         transition:fly="{{ y: 50, duration: 500 }}"
         on:click={handleQuoteClick}
+        on:keydown={(e) => e.key === 'Enter' && handleQuoteClick()}
+        role="button"
+        tabindex="0"
+        aria-label="Quote from {currentQuote.author}. Click to learn more."
     >
         <button class="close-button" on:click|stopPropagation={() => visible = false}>×</button>
         <div class="quote-content">

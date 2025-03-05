@@ -58,52 +58,63 @@
   ];
 </script>
 
-<div class="countdown-header">
-  {headerText}
-</div>
+<div class="countdown-wrapper">
+  <h3 class="countdown-header">{headerText}</h3>
 
-<div class="countdown-container">
-  {#each timeUnits as { label, value }, i}
-    <div class="countdown-item">
-      {#if loading}
-        <span class="countdown-value placeholder">-</span>
+  <div class="countdown-container">
+    {#each timeUnits as { label, value }, i}
+      <div class="countdown-item">
+        <div class="countdown-box">
+          {#if loading}
+            <span class="countdown-value placeholder">-</span>
+          {:else}
+            <span
+              class="countdown-value"
+              in:scale={{
+                duration: 300,
+                delay: i * 100,
+                start: 0.5,
+                opacity: 0
+              }}
+            >{value}</span>
+          {/if}
+        </div>
         <span class="countdown-label">{label}</span>
-      {:else}
-        <span
-          class="countdown-value"
-          in:scale={{
-            duration: 300,
-            delay: i * 100,
-            start: 0.5,
-            opacity: 0
-          }}
-        >{value}</span>
-        <span class="countdown-label">{label}</span>
+      </div>
+      {#if i < timeUnits.length - 1}
+        <div class="countdown-separator">:</div>
       {/if}
-    </div>
-  {/each}
+    {/each}
+  </div>
 </div>
 
 <style>
+  .countdown-wrapper {
+    width: 100%;
+  }
+
   .countdown-header {
     text-align: center;
     font-weight: bold;
-    margin: 0 0 0.5rem 0;
-    font-size: 2rem;
-    color: var(--color-text-primary);
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+    margin: 0.5rem 0 1.5rem 0;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    background: linear-gradient(to right, #FF9933, #FF8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 
   .countdown-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.25rem;
     height: auto;
-    padding: 0.5rem;
+    padding: 1.5rem 0.5rem;
     white-space: nowrap;
-    max-width: 100vw;
+    max-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -113,21 +124,44 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem;
+    padding: 0.25rem;
     flex: 1;
-    min-width: 0;
+  }
+
+  .countdown-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.75rem 0.5rem;
+    min-width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .countdown-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
   }
 
   .countdown-value {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5.5vw;
+    font-size: clamp(1.75rem, 4vw, 3rem);
     font-weight: 900;
     text-align: center;
-    min-width: 5vw;
+    min-width: 1.2ch;
     color: #ffffff;
-    text-shadow:
-      0 0 25px rgba(255, 255, 255, 0.3),
-      0 0 50px rgba(255, 255, 255, 0.15);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.02em;
     line-height: 1;
   }
@@ -136,33 +170,33 @@
     animation: pulse 1.5s infinite;
   }
 
+  .countdown-separator {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: -1.5rem;
+  }
+
   @keyframes pulse {
     0% {
-      text-shadow:
-        0 0 25px rgba(255, 255, 255, 0.3),
-        0 0 50px rgba(255, 255, 255, 0.15);
+      opacity: 1;
     }
     50% {
-      text-shadow:
-        0 0 35px rgba(255, 255, 255, 0.4),
-        0 0 70px rgba(255, 255, 255, 0.2);
+      opacity: 0.8;
     }
     100% {
-      text-shadow:
-        0 0 25px rgba(255, 255, 255, 0.3),
-        0 0 50px rgba(255, 255, 255, 0.15);
+      opacity: 1;
     }
   }
 
   .countdown-label {
-    font-size: 1.2vw;
+    font-size: clamp(0.7rem, 1vw, 0.875rem);
     text-transform: uppercase;
     text-align: center;
-    color: var(--color-text-secondary);
-    font-weight: bold;
-    opacity: 0.9;
-    margin-top: 0.15rem;
-    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    margin-top: 0.75rem;
+    letter-spacing: 0.1em;
   }
 
   .countdown-value.placeholder {
@@ -170,34 +204,43 @@
   }
 
   /* Media queries for responsive design */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .countdown-container {
-      gap: 0.75rem;
+      padding: 1rem 0.5rem;
     }
 
-    .countdown-value {
-      font-size: 7.5vw;
-      min-width: 7vw;
+    .countdown-header {
+      margin-bottom: 1rem;
     }
 
-    .countdown-label {
-      font-size: 2vw;
-      margin-top: 0.1rem;
+    .countdown-box {
+      min-width: 50px;
+      padding: 0.5rem 0.25rem;
+    }
+
+    .countdown-separator {
+      margin-top: -1rem;
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     .countdown-container {
-      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
-    .countdown-value {
-      font-size: 8.5vw;
-      min-width: 8vw;
+    .countdown-item {
+      padding: 0.25rem;
+      min-width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .countdown-separator {
+      display: none;
     }
 
     .countdown-label {
-      font-size: 2.8vw;
+      margin-top: 0.25rem;
     }
   }
 </style>

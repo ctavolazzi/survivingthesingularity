@@ -1,12 +1,12 @@
 <script>
     import { onMount } from 'svelte';
     import PreorderButton from './PreorderButton.svelte';
-  
+
     export let fullPrice = "$24.99";
     export let discountedPrice = "$9";
     export let releaseDate = "First week of November";
     export let limitedCopies = 1000;
-  
+
     let availableCopies = limitedCopies;
     let timer;
 
@@ -18,7 +18,7 @@
     function reduceAvailableCopies() {
       const reduction = Math.floor(Math.random() * 3) + 1; // Random reduction between 1 and 3
       availableCopies = Math.max(0, availableCopies - reduction);
-      
+
       if (availableCopies > 0) {
         scheduleNextReduction();
       } else {
@@ -41,9 +41,9 @@
 <h3 class="text-3xl font-bold mb-4">Transform Your Future with 'Surviving the Singularity'</h3>
 <div class="content">
     <p class="story mb-4">
-    Imagine waking up confident and prepared for the AI-driven world, instead of feeling overwhelmed and left behind. 
+    Imagine waking up confident and prepared for the AI-driven world, instead of feeling overwhelmed and left behind.
     </p>
-    <p class="story-2 mb-4">That's the transformation 'Surviving the Singularity' offers. Readers like you have gone from anxious to empowered, 
+    <p class="story-2 mb-4">That's the transformation 'Surviving the Singularity' offers. Readers like you have gone from anxious to empowered,
     from confused to clear-minded about their place in the AI revolution.
     </p>
     <ul class="list-disc pl-5 mb-6">
@@ -53,8 +53,8 @@
     <li>Access exclusive insights from AI experts and ethicists</li>
     </ul>
     <p class="urgency mb-4">
-    <span class="discount-highlight">Limited Time Offer:</span> Pre-order now for just <strong>{discountedPrice}</strong> 
-    (regular price: <s>{fullPrice}</s>)! Only <strong>{availableCopies}</strong> copies left at this special price. 
+    <span class="discount-highlight">Limited Time Offer:</span> Pre-order now for just <strong>{discountedPrice}</strong>
+    (regular price: <s>{fullPrice}</s>)! Only <strong>{availableCopies}</strong> copies left at this special price.
     Don't miss this opportunity to secure your future!
     </p>
 </div>

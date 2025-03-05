@@ -1,16 +1,31 @@
 import { getPostBySlug, getAllPosts } from '$lib/utils/markdown';
-import { blogPosts as importedPosts } from '$lib/data/blog-posts/blogPosts';
+import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts';
 import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageServerLoad} */
-export function load({ params }) {
+export async function load({ params }) {
   const { slug } = params;
+  let importedPosts = [];
+  let markdownPost = null;
 
-  // First try to find the post from the imported posts (client-side imports)
+  // First try to load all posts using the dynamic import method
+  // This is the preferred method for Cloudflare Workers
+  try {
+    importedPosts = await loadBlogPosts();
+  } catch (err) {
+    console.error('Error loading blog posts via dynamic imports:', err);
+  }
+
+  // Find the requested post from the imported posts
   const importedPost = importedPosts.find(p => p.slug === slug);
 
-  // Then try the server-side markdown loader as backup
-  const markdownPost = getPostBySlug(slug);
+  // Try the server-side markdown loader as backup (won't work in Cloudflare)
+  try {
+    markdownPost = getPostBySlug(slug);
+  } catch (err) {
+    console.error('Error loading post via filesystem (expected in Cloudflare):', err);
+    // This is expected to fail in Cloudflare, so we'll just continue
+  }
 
   // Merge data from both sources, preferring the imported post data when available
   const post = importedPost ? {
@@ -29,7 +44,17 @@ export function load({ params }) {
   }
 
   // Get all posts for navigation
-  const allPosts = importedPosts.length > 0 ? importedPosts : getAllPosts();
+  let allPosts = [];
+  if (importedPosts.length > 0) {
+    allPosts = importedPosts;
+  } else {
+    try {
+      allPosts = getAllPosts();
+    } catch (err) {
+      console.error('Error getting all posts via filesystem (expected in Cloudflare):', err);
+      // This is expected to fail in Cloudflare, so we'll just continue with an empty array
+    }
+  }
 
   // Sort by date, newest first (if there are dates, otherwise use array order)
   const sortedPosts = [...allPosts].sort((a, b) => {
@@ -67,13 +92,18 @@ export function load({ params }) {
   };
 }
 
-// Enable prerendering for all blog posts
+// Disable prerendering for dynamic blog posts
 export const prerender = false;
 
 // Provide entries for prerendering all posts
-export function entries() {
-  const posts = importedPosts.length > 0 ? importedPosts : getAllPosts();
-  return posts.map(post => ({
-    slug: post.slug || ''
-  }));
+export async function entries() {
+  try {
+    const posts = await loadBlogPosts();
+    return posts.map(post => ({
+      slug: post.slug || ''
+    }));
+  } catch (err) {
+    console.error('Error generating entries:', err);
+    return [];
+  }
 }

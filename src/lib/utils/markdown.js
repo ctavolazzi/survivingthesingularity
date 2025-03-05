@@ -1,46 +1,5 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
-import { existsSync, readdirSync, readFileSync } from 'fs';
 import { marked } from 'marked';
 import { dev } from '$app/environment';
-
-// Get directory path for ES modules
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-/**
- * Get the appropriate content directory path based on environment
- */
-function getContentDirectory() {
-  // Try different possible paths for blog posts
-  const paths = [
-    // Development path
-    path.join(process.cwd(), 'src', 'lib', 'data', 'blog-posts'),
-    // Build path in .svelte-kit
-    path.join(process.cwd(), '.svelte-kit', 'output', 'server', 'chunks', 'lib', 'data', 'blog-posts'),
-    // Fallback to relative path
-    '../../lib/data/blog-posts'
-  ];
-
-  for (const p of paths) {
-    try {
-      if (fs.existsSync(p)) {
-        console.log('Using content directory:', p);
-        return p;
-      }
-    } catch (error) {
-      // Ignore errors and try next path
-    }
-  }
-
-  // Fallback to relative path
-  console.log('Falling back to relative path for content directory');
-  return '../../lib/data/blog-posts';
-}
-
-// Use contentDirectory function to determine the right path
-const contentDirectory = getContentDirectory();
 
 /**
  * Parse frontmatter from markdown content
@@ -83,41 +42,13 @@ function parseFrontmatter(content) {
 
 /**
  * Get all blog posts with their metadata
+ * This version uses the pre-processed blog posts from blogPosts.js
  */
 export function getAllPosts() {
   try {
-    const posts = [];
-    let directories;
-
-    try {
-      directories = readdirSync(contentDirectory)
-        .filter(dir => !dir.startsWith('.') && existsSync(join(contentDirectory, dir, 'content.md')));
-    } catch (err) {
-      console.error(`Error reading content directory (${contentDirectory}):`, err);
-      return [];
-    }
-
-    for (const dir of directories) {
-      try {
-        const contentPath = join(contentDirectory, dir, 'content.md');
-        const content = readFileSync(contentPath, 'utf-8');
-        const { metadata, markdown } = parseFrontmatter(content);
-
-        if (metadata) {
-          posts.push({
-            ...metadata,
-            slug: dir,
-            excerpt: metadata.excerpt || markdown.substring(0, 150) + '...',
-            content: markdown
-          });
-        }
-      } catch (err) {
-        console.error(`Error processing post ${dir}:`, err);
-      }
-    }
-
-    // Sort posts by date in descending order
-    return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    // In a Cloudflare environment, we'll rely on the pre-processed blog posts
+    // This function will be called by the dynamic import in +page.server.js
+    return []; // Return empty array - the actual posts will be loaded via loadBlogPosts()
   } catch (err) {
     console.error('Error getting all posts:', err);
     return [];
@@ -126,33 +57,13 @@ export function getAllPosts() {
 
 /**
  * Get a single post by its slug
+ * This version uses the pre-processed blog posts from blogPosts.js
  */
 export function getPostBySlug(slug) {
   try {
-    const contentPath = join(contentDirectory, slug, 'content.md');
-
-    if (!existsSync(contentPath)) {
-      console.error(`Post not found: ${slug}`);
-      return null;
-    }
-
-    const content = readFileSync(contentPath, 'utf-8');
-    const { metadata, markdown } = parseFrontmatter(content);
-
-    if (!metadata) {
-      console.error(`Invalid metadata in post: ${slug}`);
-      return null;
-    }
-
-    // Convert markdown to HTML
-    const html = marked(markdown);
-
-    return {
-      ...metadata,
-      slug,
-      content: markdown,
-      html
-    };
+    // In a Cloudflare environment, we'll rely on the pre-processed blog posts
+    // This function will be called by the dynamic import in +page.server.js
+    return null; // Return null - the actual post will be loaded via the imported posts
   } catch (err) {
     console.error(`Error getting post by slug (${slug}):`, err);
     return null;

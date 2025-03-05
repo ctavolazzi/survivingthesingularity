@@ -24,5 +24,26 @@ export default defineConfig({
 		fs: {
 			allow: ['src/lib/data']
 		}
+	},
+	// Add specific configuration for Cloudflare
+	ssr: {
+		// Avoid using Node.js built-in modules in SSR
+		noExternal: ['marked', 'gray-matter', 'papaparse']
+	},
+	resolve: {
+		// Explicitly tell Vite not to try to resolve these Node builtins
+		browserField: true,
+		conditions: ['browser', 'module', 'jsnext:main', 'jsnext'],
+		alias: {
+			// These are Node.js built-ins that need to be ignored in Cloudflare
+			fs: 'undefined',
+			path: 'undefined',
+			url: 'undefined'
+		}
+	},
+	// Optimization settings
+	optimizeDeps: {
+		include: ['marked', 'gray-matter'],
+		exclude: ['fs', 'path', 'url']
 	}
 });

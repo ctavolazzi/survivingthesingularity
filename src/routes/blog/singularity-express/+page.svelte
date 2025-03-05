@@ -269,6 +269,15 @@
   }
 
   .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--color-primary, #3b82f6);
+    z-index: 100;
+    transition: width 0.1s;
+  }
+
   .article-title {
     font-size: clamp(2.2rem, 5vw, 3.2rem);
     line-height: 1.2;

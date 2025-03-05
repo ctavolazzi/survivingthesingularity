@@ -74,7 +74,6 @@
 	</div>
 
 	<div class="recent-posts">
-		<h2 class="recent-posts-heading">Latest Insights</h2>
 		<LatestNews {latestPost} />
 	</div>
 </div>

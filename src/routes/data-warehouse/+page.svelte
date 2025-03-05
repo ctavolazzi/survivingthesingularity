@@ -146,12 +146,6 @@
                 creator: "Sam Harris",
                 description: "TED talk on the risks of advanced AI and why alignment is crucial for humanity's future.",
                 youtubeId: "8nt3edWLgIg"
-            },
-            {
-                title: "AI Safety: From Technical to Governance Solutions",
-                creator: "Anthropic",
-                description: "A 2023 discussion on technical and governance approaches to AI safety with leading researchers.",
-                youtubeId: "THI4n0rWIXQ"
             }
         ],
         "Future of Intelligence": [

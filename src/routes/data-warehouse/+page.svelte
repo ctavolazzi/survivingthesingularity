@@ -1,28 +1,16 @@
 <script>
     import { dataResources } from '$lib/data/dataResources.js';
-    import { Card, Button, Badge, Tooltip, Tabs, TabItem, Pagination } from 'flowbite-svelte';
+    import { Card, Button, Badge, Tooltip, Tabs, TabItem } from 'flowbite-svelte';
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
+    import { IconData } from '$lib/assets/Icons.svelte';
 
     function handleViewDataset(link) {
         goto(link);
     }
 
-    // Pagination state
-    let booksCurrentPage = 1;
-    let articlesCurrentPage = 1;
-    let otherCurrentPage = 1;
-    let videosCurrentPage = 1;
-    let dataWarehouseCurrentPage = 1;
-
-    const itemsPerPage = 3;
-
-    // Helper function to paginate array
-    function paginateArray(array, currentPage, itemsPerPage) {
-        const startIndex = (currentPage - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-        return array.slice(startIndex, endIndex);
-    }
+    // Add state for reading tab selection
+    let selectedReadingTab = "Books";
 
     // Recommended reading - Books
     const recommendedBooks = [
@@ -55,6 +43,12 @@
             author: "Kai-Fu Lee & Chen Qiufan",
             description: "A blend of fiction and analysis exploring how AI might transform society over the next 20 years.",
             link: "https://www.amazon.com/AI-2041-Ten-Visions-Future/dp/059323829X"
+        },
+        {
+            title: "Power and Prediction: The Disruptive Economics of Artificial Intelligence",
+            author: "Ajay Agrawal, Joshua Gans & Avi Goldfarb",
+            description: "A 2023 exploration of how AI is reshaping decision-making and business models across industries.",
+            link: "https://www.amazon.com/Power-Prediction-Disruptive-Economics-Intelligence/dp/1647824389"
         }
     ];
 
@@ -70,7 +64,7 @@
             title: "Alignment Research Center: Progress Report",
             author: "Paul Christiano",
             description: "Updates on AI alignment research and progress toward safe AI systems.",
-            link: "https://www.alignmentresearch.org/"
+            link: "https://www.alignment.org/"
         },
         {
             title: "AI Alignment: Why It's Hard, and Where to Start",
@@ -89,6 +83,12 @@
             author: "Dario Amodei et al.",
             description: "A research paper outlining practical safety challenges in modern AI systems.",
             link: "https://arxiv.org/abs/1606.06565"
+        },
+        {
+            title: "Frontier AI Regulation: Managing Emerging Risks to Public Safety",
+            author: "Anthropic, Google DeepMind, Microsoft, OpenAI",
+            description: "A 2023 joint publication from leading AI labs on the responsible development of frontier AI systems.",
+            link: "https://cdn.openai.com/papers/frontier-ai-regulation.pdf"
         }
     ];
 
@@ -110,13 +110,19 @@
             title: "AI Alignment Podcast",
             author: "Lucas Perry",
             description: "Conversations with researchers working on AI alignment and safety.",
-            link: "https://futureoflife.org/ai-alignment-podcast/"
+            link: "https://futureoflife.org/project/future-of-life-institute-podcast/"
         },
         {
             title: "Stampy's Wiki",
             author: "AI Safety Community",
             description: "A collaboratively edited knowledge base for AI safety concepts.",
             link: "https://stampy.ai/"
+        },
+        {
+            title: "AI Governance and Risk Course",
+            author: "Center for AI Safety",
+            description: "A free online course covering AI governance, risk assessment, and safety frameworks.",
+            link: "https://www.safe.ai/ai-governance-and-risk"
         }
     ];
 
@@ -136,10 +142,16 @@
                 youtubeId: "3TYT1QfdfsM"
             },
             {
-                title: "The Case for Taking AI Seriously as a Threat",
+                title: "Can we build AI without losing control over it?",
                 creator: "Sam Harris",
-                description: "A philosophical perspective on AI risk and why we should be concerned.",
-                youtubeId: "BXRLoKQHu-k"
+                description: "TED talk on the risks of advanced AI and why alignment is crucial for humanity's future.",
+                youtubeId: "8nt3edWLgIg"
+            },
+            {
+                title: "AI Safety: From Technical to Governance Solutions",
+                creator: "Anthropic",
+                description: "A 2023 discussion on technical and governance approaches to AI safety with leading researchers.",
+                youtubeId: "THI4n0rWIXQ"
             }
         ],
         "Future of Intelligence": [
@@ -154,6 +166,12 @@
                 creator: "Two Minute Papers",
                 description: "A concise explanation of AGI and its potential implications.",
                 youtubeId: "Yd1XTQ2Y0Ks"
+            },
+            {
+                title: "The Future of Intelligence: Human, Machine, and Extraterrestrial",
+                creator: "Oxford University",
+                description: "A 2023 lecture by Stuart Russell on the future of intelligence and AI safety considerations.",
+                youtubeId: "3TYT1QfdfsM"
             }
         ],
         "Technical Concepts": [
@@ -168,6 +186,12 @@
                 creator: "Siraj Raval",
                 description: "Mathematical foundations behind modern AI systems.",
                 youtubeId: "ov_RkIJptwE"
+            },
+            {
+                title: "Large Language Models and the Future of AI",
+                creator: "Andrej Karpathy",
+                description: "A 2023 comprehensive explanation of how large language models work and their implications.",
+                youtubeId: "zjkBMFhNj_g"
             }
         ]
     };
@@ -175,270 +199,288 @@
     // Flatten videos for pagination
     let selectedVideoCategory = Object.keys(videoCategories)[0];
     $: currentVideos = videoCategories[selectedVideoCategory] || [];
-    $: paginatedVideos = paginateArray(currentVideos, videosCurrentPage, itemsPerPage);
-    $: videoPageCount = Math.ceil(currentVideos.length / itemsPerPage);
 
-    // Group data resources by category
+    // Add new resources for the data warehouse
+    const additionalDataResources = [
+        {
+            title: "AI Alignment Landscape",
+            description: "A 2023 comprehensive map of the AI alignment research landscape, categorizing different approaches and methodologies.",
+            lastEdited: "Dec 2023",
+            icon: IconData,
+            link: "https://alignmentresearchcenter.org/alignment-landscape/",
+            entries: 50,
+            buttonText: "View Resource",
+            tags: ["Research", "Alignment"]
+        },
+        {
+            title: "State of AI Report 2023",
+            description: "Annual report covering the most important developments in AI research, industry, politics, and safety.",
+            lastEdited: "Oct 2023",
+            icon: IconData,
+            link: "https://www.stateof.ai/",
+            entries: 1,
+            buttonText: "View Report",
+            tags: ["Industry", "Companies", "Research"]
+        },
+        {
+            title: "AI Safety Fundamentals Course Materials",
+            description: "Comprehensive course materials on AI safety, including readings, videos, and exercises.",
+            lastEdited: "Jan 2024",
+            icon: IconData,
+            link: "https://aisafetyfundamentals.com/",
+            entries: 25,
+            buttonText: "Access Course",
+            tags: ["PDFs", "Videos", "Education"]
+        }
+    ];
+
+    // Combine original and additional resources
+    const allDataResources = [...dataResources, ...additionalDataResources];
+
+    // Group data resources by category - fix the overlapping categories
     const dataCategories = {
-        "Research & Analysis": dataResources.filter(r => r.tags.some(t => ["Research", "AI", "Singularity"].includes(t))),
-        "Industry & Companies": dataResources.filter(r => r.tags.some(t => ["Industry", "Robotics", "Companies"].includes(t))),
-        "Media & Resources": dataResources.filter(r => r.tags.some(t => ["Videos", "PDFs", "Links"].includes(t)))
+        "Research & Analysis": allDataResources.filter(resource =>
+            (resource.tags?.includes("Research") &&
+            !resource.tags?.includes("PDFs") &&
+            !resource.tags?.includes("Videos")) ||
+            resource.title === "AI Alignment Landscape"
+        ),
+        "Industry & Applications": allDataResources.filter(resource =>
+            resource.tags?.includes("Industry") ||
+            resource.tags?.includes("Robotics") ||
+            resource.tags?.includes("Companies") ||
+            resource.title === "State of AI Report 2023"
+        ),
+        "Media & Resources": allDataResources.filter(resource =>
+            resource.tags?.includes("PDFs") ||
+            resource.tags?.includes("Videos") ||
+            resource.title === "AI Safety Fundamentals Course Materials"
+        )
     };
 
     let selectedDataCategory = Object.keys(dataCategories)[0];
     $: currentDataResources = dataCategories[selectedDataCategory] || [];
-    $: paginatedDataResources = paginateArray(currentDataResources, dataWarehouseCurrentPage, itemsPerPage);
-    $: dataPageCount = Math.ceil(currentDataResources.length / itemsPerPage);
-
-    // Paginated reading resources
-    $: paginatedBooks = paginateArray(recommendedBooks, booksCurrentPage, itemsPerPage);
-    $: booksPageCount = Math.ceil(recommendedBooks.length / itemsPerPage);
-
-    $: paginatedArticles = paginateArray(recommendedArticles, articlesCurrentPage, itemsPerPage);
-    $: articlesPageCount = Math.ceil(recommendedArticles.length / itemsPerPage);
-
-    $: paginatedOther = paginateArray(recommendedOther, otherCurrentPage, itemsPerPage);
-    $: otherPageCount = Math.ceil(recommendedOther.length / itemsPerPage);
 </script>
 
 <svelte:head>
     <title>Data Resources | Surviving the Singularity</title>
 </svelte:head>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center">
-
-    <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100 text-center">
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 sm:mb-4 text-gray-900 dark:text-gray-100 text-center">
         Explore Our <span class="text-blue-600 dark:text-blue-400">Data Resources</span>
     </h1>
-    <p class="text-xl mb-12 text-gray-600 dark:text-gray-300 max-w-3xl text-center">
+    <p class="text-lg sm:text-xl mb-8 sm:mb-12 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-center">
         Dive into our curated collection of AI and robotics datasets. These resources provide valuable insights into the rapidly evolving world of technology.
     </p>
 
     <!-- Recommended Reading Section -->
-    <div class="w-full mb-12">
-        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100 border-b pb-2 border-gray-200 dark:border-gray-700">
+    <div class="mb-10">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100 border-b pb-2 border-gray-200 dark:border-gray-700">
             Recommended Reading
         </h2>
 
-        <Tabs style="underline">
-            <TabItem open title="Books">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                    {#each paginatedBooks as book}
-                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all">
-                            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{book.title}</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">by {book.author}</p>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">{book.description}</p>
-                            <a href={book.link} target="_blank" rel="noopener noreferrer"
-                               class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
-                                View Book
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    {/each}
-                </div>
-                {#if booksPageCount > 1}
-                    <div class="flex justify-center mt-6">
-                        <Pagination
-                            totalItems={recommendedBooks.length}
-                            pageSize={itemsPerPage}
-                            currentPage={booksCurrentPage}
-                            on:page={(e) => booksCurrentPage = e.detail}
-                        />
-                    </div>
-                {/if}
-            </TabItem>
+        <!-- Tab navigation -->
+        <div class="flex justify-center mb-6 border-b border-gray-200 dark:border-gray-700">
+            <button
+                class="px-4 py-2 font-medium {selectedReadingTab === 'Books' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}"
+                on:click={() => selectedReadingTab = 'Books'}
+            >
+                Books
+            </button>
+            <button
+                class="px-4 py-2 font-medium {selectedReadingTab === 'Articles' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}"
+                on:click={() => selectedReadingTab = 'Articles'}
+            >
+                Articles & Blog Posts
+            </button>
+            <button
+                class="px-4 py-2 font-medium {selectedReadingTab === 'Other' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}"
+                on:click={() => selectedReadingTab = 'Other'}
+            >
+                Other Resources
+            </button>
+        </div>
 
-            <TabItem title="Articles & Blog Posts">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                    {#each paginatedArticles as article}
-                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all">
-                            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{article.title}</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">by {article.author}</p>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">{article.description}</p>
-                            <a href={article.link} target="_blank" rel="noopener noreferrer"
-                               class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
-                                Read Article
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    {/each}
+        <!-- Books content -->
+        {#if selectedReadingTab === 'Books'}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {#each recommendedBooks as book}
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-white line-clamp-2">{book.title}</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">by {book.author}</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">{book.description}</p>
+                    <a href={book.link} target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                        View Book
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
                 </div>
-                {#if articlesPageCount > 1}
-                    <div class="flex justify-center mt-6">
-                        <Pagination
-                            totalItems={recommendedArticles.length}
-                            pageSize={itemsPerPage}
-                            currentPage={articlesCurrentPage}
-                            on:page={(e) => articlesCurrentPage = e.detail}
-                        />
-                    </div>
-                {/if}
-            </TabItem>
+            {/each}
+        </div>
+        {/if}
 
-            <TabItem title="Other Resources">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                    {#each paginatedOther as resource}
-                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all">
-                            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{resource.title}</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">by {resource.author}</p>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">{resource.description}</p>
-                            <a href={resource.link} target="_blank" rel="noopener noreferrer"
-                               class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
-                                Explore Resource
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    {/each}
+        <!-- Articles content -->
+        {#if selectedReadingTab === 'Articles'}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {#each recommendedArticles as article}
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-white line-clamp-2">{article.title}</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">by {article.author}</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">{article.description}</p>
+                    <a href={article.link} target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                        View Article
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
                 </div>
-                {#if otherPageCount > 1}
-                    <div class="flex justify-center mt-6">
-                        <Pagination
-                            totalItems={recommendedOther.length}
-                            pageSize={itemsPerPage}
-                            currentPage={otherCurrentPage}
-                            on:page={(e) => otherCurrentPage = e.detail}
-                        />
-                    </div>
-                {/if}
-            </TabItem>
-        </Tabs>
+            {/each}
+        </div>
+        {/if}
+
+        <!-- Other resources content -->
+        {#if selectedReadingTab === 'Other'}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {#each recommendedOther as resource}
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-white line-clamp-2">{resource.title}</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">by {resource.author}</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">{resource.description}</p>
+                    <a href={resource.link} target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline text-sm">
+                        View Resource
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+            {/each}
+        </div>
+        {/if}
     </div>
 
     <!-- Recommended Videos Section -->
-    <div class="w-full mb-12">
-        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100 border-b pb-2 border-gray-200 dark:border-gray-700">
+    <div class="mb-10">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100 border-b pb-2 border-gray-200 dark:border-gray-700">
             Recommended Videos
         </h2>
 
-        <div class="mb-6">
-            <Tabs style="underline">
-                {#each Object.keys(videoCategories) as category}
-                    <TabItem
-                        title={category}
-                        active={selectedVideoCategory === category}
-                        on:click={() => {
-                            selectedVideoCategory = category;
-                            videosCurrentPage = 1;
-                        }}
-                    />
-                {/each}
-            </Tabs>
+        <!-- Tab navigation -->
+        <div class="flex justify-center mb-6 border-b border-gray-200 dark:border-gray-700">
+            {#each Object.keys(videoCategories) as category, i}
+                <button
+                    class="px-4 py-2 font-medium {selectedVideoCategory === category ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}"
+                    on:click={() => selectedVideoCategory = category}
+                >
+                    {category}
+                </button>
+            {/each}
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {#each paginatedVideos as video}
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all">
-                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                        <iframe
-                            src={`https://www.youtube.com/embed/${video.youtubeId}`}
-                            title={video.title}
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            class="w-full h-full rounded"
-                            loading="lazy"
-                        ></iframe>
+        <!-- Video content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {#each videoCategories[selectedVideoCategory] as video}
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+                    <div class="aspect-w-16 aspect-h-9 mb-3">
+                        <!-- Link directly to YouTube instead of embedding -->
+                        <a
+                            href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="video-thumbnail relative w-full h-full rounded bg-gray-200 dark:bg-gray-700 flex items-center justify-center"
+                            aria-label="Watch video on YouTube: {video.title}"
+                        >
+                            <!-- YouTube thumbnail -->
+                            <img
+                                src={`https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`}
+                                alt={video.title}
+                                class="w-full h-full object-cover rounded"
+                                loading="lazy"
+                            />
+                            <!-- Play button overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-red-600 rounded-full p-3 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{video.title}</h3>
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">by {video.creator}</p>
-                    <p class="text-gray-700 dark:text-gray-300">{video.description}</p>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-white line-clamp-2">{video.title}</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">by {video.creator}</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">{video.description}</p>
                 </div>
             {/each}
         </div>
-
-        {#if videoPageCount > 1}
-            <div class="flex justify-center mt-6">
-                <Pagination
-                    totalItems={currentVideos.length}
-                    pageSize={itemsPerPage}
-                    currentPage={videosCurrentPage}
-                    on:page={(e) => videosCurrentPage = e.detail}
-                />
-            </div>
-        {/if}
     </div>
 
     <!-- Data Warehouse Resources Section -->
-    <div class="w-full">
-        <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100 border-b pb-2 border-gray-200 dark:border-gray-700">
+    <div>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100 border-b pb-2 border-gray-200 dark:border-gray-700">
             Data Warehouse Resources
         </h2>
-        <p class="text-lg mb-8 text-gray-600 dark:text-gray-300 max-w-4xl">
+        <p class="text-base sm:text-lg mb-6 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Explore our curated collection of datasets, research materials, and specialized resources. Each card below represents a different category of data that you can browse, analyze, and use for your own research or understanding of AI and singularity topics.
         </p>
 
-        <div class="mb-6">
-            <Tabs style="underline">
-                {#each Object.keys(dataCategories) as category}
-                    <TabItem
-                        title={category}
-                        active={selectedDataCategory === category}
-                        on:click={() => {
-                            selectedDataCategory = category;
-                            dataWarehouseCurrentPage = 1;
-                        }}
-                    />
-                {/each}
-            </Tabs>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            {#each paginatedDataResources as resource}
-                <Card class="hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 w-full">
-                    <div class="flex flex-col h-full">
-                        <div class="flex items-center mb-4">
-                            <span class="icon-container mr-4 text-blue-600 dark:text-blue-400 p-3 bg-blue-100 dark:bg-blue-900 rounded-full">
-                                {@html resource.icon.svg}
-                            </span>
-                            <h2 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{resource.title}</h2>
-                        </div>
-                        <p class="mb-6 text-gray-700 dark:text-gray-300 flex-grow">
-                            {resource.description}
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            {#each resource.tags as tag}
-                                <Badge color="blue" class="text-xs font-semibold">{tag}</Badge>
-                            {/each}
-                        </div>
-                        <div class="flex justify-between items-center text-sm text-gray-600 dark:text-gray-400 mb-6">
-                            <span>Updated: {resource.lastEdited}</span>
-                            <span class="font-medium">{resource.entries.toLocaleString()} entries</span>
-                        </div>
-                        <div class="mt-4 space-y-2">
-                            <Button on:click={() => handleViewDataset(resource.link)} class="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
-                                {resource.buttonText}
-                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                </svg>
-                            </Button>
-                        </div>
-                    </div>
-                </Card>
+        <!-- Tab navigation -->
+        <div class="flex justify-center mb-6 border-b border-gray-200 dark:border-gray-700">
+            {#each Object.keys(dataCategories) as category, i}
+                <button
+                    class="px-4 py-2 font-medium {selectedDataCategory === category ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}"
+                    on:click={() => selectedDataCategory = category}
+                >
+                    {category}
+                </button>
             {/each}
         </div>
 
-        {#if dataPageCount > 1}
-            <div class="flex justify-center mt-6">
-                <Pagination
-                    totalItems={currentDataResources.length}
-                    pageSize={itemsPerPage}
-                    currentPage={dataWarehouseCurrentPage}
-                    on:page={(e) => dataWarehouseCurrentPage = e.detail}
-                />
-            </div>
-        {/if}
+        <!-- Data resources content -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {#each dataCategories[selectedDataCategory] as resource}
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+                    <div class="flex items-center mb-3">
+                        <span class="icon-container mr-3 text-blue-600 dark:text-blue-400 p-2 bg-blue-100 dark:bg-blue-900 rounded-full">
+                            {@html resource.icon.svg}
+                        </span>
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">{resource.title}</h3>
+                    </div>
+                    <p class="mb-4 text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
+                        {resource.description}
+                    </p>
+                    <div class="flex flex-wrap gap-1 mb-3">
+                        {#each resource.tags as tag}
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{tag}</span>
+                        {/each}
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-gray-600 dark:text-gray-400 mb-4">
+                        <span>Updated: {resource.lastEdited}</span>
+                        <span class="font-medium">{resource.entries.toLocaleString()} entries</span>
+                    </div>
+                    <button
+                        on:click={() => handleViewDataset(resource.link)}
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded flex items-center justify-center"
+                    >
+                        {resource.buttonText}
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
+            {/each}
+        </div>
     </div>
 </div>
 
 <style>
     .icon-container :global(svg) {
-        @apply w-8 h-8;
+        @apply w-6 h-6;
     }
 
     /* Add aspect ratio support for YouTube embeds */
@@ -447,11 +489,27 @@
         padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     }
 
-    .aspect-w-16 iframe {
+    /* This style applies to both iframes and buttons within the aspect container */
+    .aspect-w-16 > * {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    /* Text truncation for long content */
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 </style>

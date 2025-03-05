@@ -23,6 +23,17 @@ const config = {
 				throw new Error(message);
 			},
 			handleMissingId: 'ignore'
+		},
+		// Cloudflare-specific settings
+		platform: {
+			name: 'cloudflare',
+			useNodePolyfills: false
+		},
+		// Add aliases for Node.js built-ins
+		alias: {
+			fs: '$lib/utils/cloudflare-polyfills/fs-empty.js',
+			path: '$lib/utils/cloudflare-polyfills/path-empty.js',
+			url: '$lib/utils/cloudflare-polyfills/url-empty.js'
 		}
 	},
 	preprocess: vitePreprocess()

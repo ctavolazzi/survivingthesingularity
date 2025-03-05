@@ -3,22 +3,21 @@
 
   // Props
   export let targetSelector = '.timeline-container'; // Selector for the timeline container
-  export let offset = 100; // Offset from the bottom in pixels
+  export let offset = 100; // Offset from the top in pixels
   export let showAfterScroll = 300; // Show button after scrolling this many pixels
 
   let visible = false;
   let timelineElement;
 
-  function scrollToOrigins() {
+  function scrollToLatest() {
     if (!timelineElement) return;
 
     // Get the timeline element's position
     const timelineRect = timelineElement.getBoundingClientRect();
-    const targetPosition = window.scrollY + timelineRect.bottom - offset;
 
-    // Scroll to the bottom of the timeline (where the oldest events are now)
+    // Scroll to the top of the timeline (where the latest events are now)
     window.scrollTo({
-      top: targetPosition,
+      top: window.scrollY + timelineRect.top - offset,
       behavior: 'smooth'
     });
   }
@@ -43,38 +42,37 @@
 
 <button
   class="jump-button {visible ? 'visible' : ''}"
-  on:click={scrollToOrigins}
-  aria-label="Jump to the beginning of the timeline"
+  on:click={scrollToLatest}
+  aria-label="Jump to the latest events in the timeline"
 >
   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="7 13 12 18 17 13"></polyline>
-    <polyline points="7 6 12 11 17 6"></polyline>
+    <polyline points="17 11 12 6 7 11"></polyline>
+    <polyline points="17 18 12 13 7 18"></polyline>
   </svg>
-  <span class="text">Origins</span>
+  <span class="text">Latest</span>
 </button>
 
 <style>
   .jump-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--color-primary, #ff7708);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    z-index: 50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
-    padding: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 100;
   }
 
   .jump-button.visible {
@@ -83,23 +81,17 @@
   }
 
   .jump-button:hover {
-    background-color: #2563eb;
-  }
-
-  .jump-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+    background-color: var(--color-primary-dark, #e66700);
   }
 
   .icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 2px;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .text {
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
   }
 
   /* Dark mode support */

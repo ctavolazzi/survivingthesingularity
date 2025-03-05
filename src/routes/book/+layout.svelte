@@ -2,9 +2,8 @@
     import { onMount } from 'svelte';
     import { fade } from 'svelte/transition';
     import Spacer from '$lib/components/Spacer.svelte';
-    import SkoolGroup from '$lib/components/SkoolGroup.svelte';
     import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-    import CommunityIntakePopupForm from '$lib/components/CommunityIntakePopupForm.svelte';
+    import SimpleBookCallout from '$lib/components/SimpleBookCallout.svelte';
 
     let showLowerSections = false;
 
@@ -25,13 +24,11 @@
             {#if showLowerSections}
                 <Spacer height="50px" />
 
-                <section class="community">
-                    <SkoolGroup />
-                </section>
-
-                <CommunityIntakePopupForm 
-                    ctaText="Ready to join the rebellion against the singularity?" 
-                    buttonText="Enlist Now"
+                <SimpleBookCallout
+                    title="Navigate the Path to Singularity"
+                    description="Get the insights and strategies you need to prepare for the technological changes that will reshape our world."
+                    buttonText="Explore the Book"
+                    buttonLink="/book"
                 />
 
                 <section class="newsletter">

@@ -1,6 +1,5 @@
 <script>
   import { darkMode } from '$lib/stores/darkMode';
-  import { supabase } from '$lib/utils/supabaseClient';
   import { fade } from 'svelte/transition';
   import { goto } from '$app/navigation';
 
@@ -11,6 +10,7 @@
   let isLoading = false;
   let isSubmitted = false;
   let isSuccess = false;
+  let errorMessage = '';
 
   const exploreOptions = [
     { title: 'Explore Our Blog', path: '/blog' },
@@ -23,18 +23,34 @@
     if (isLoading) return;
 
     isLoading = true;
+    errorMessage = '';
 
     try {
-      const { error } = await supabase
-        from('contact_requests')
-        insert([{ name, email, subject, message }]);
+      // Using the specific Formspree endpoint
+      const response = await fetch('https://formspree.io/f/xgvawenl', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject: subject || 'Contact Form Submission',
+          message,
+          _gotcha: '' // This is the honeypot field
+        })
+      });
 
-      if (error) throw error;
+      if (!response.ok) {
+        const result = await response.json();
+        throw new Error(result.error || 'Failed to submit form');
+      }
 
       isSuccess = true;
     } catch (error) {
       console.error('Submission error:', error);
       isSuccess = false;
+      errorMessage = error.message || 'An unexpected error occurred. Please try again later.';
     } finally {
       isLoading = false;
       isSubmitted = true;
@@ -44,6 +60,16 @@
   function handleExplore(path) {
     goto(path);
   }
+
+  // Format the subject line
+  $: formattedSubject = subject ? `Contact Form: ${subject}` : 'Contact Form Submission';
+
+  // Format the body with name and email
+  $: formattedBody = `Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
 </script>
 
 <div class="contact-form" class:dark={$darkMode}>
@@ -67,6 +93,10 @@
           <label for="message">Message <span class="asterisk">*</span></label>
           <textarea name="message" class="required" id="message" required bind:value={message}></textarea>
         </div>
+        <!-- Honeypot field to prevent spam -->
+        <div style="display:none">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+        </div>
         <div class="form-group">
           <button type="submit" class="button" disabled={isLoading}>
             {isLoading ? 'Sending...' : 'Send Message'}
@@ -80,7 +110,8 @@
           <p>Your message has been sent successfully. We'll get back to you soon!</p>
         {:else}
           <h2>Oops!</h2>
-          <p>There was an error submitting your message. Please try again later or contact us directly.</p>
+          <p>There was an error submitting your message. {errorMessage}</p>
+          <button class="button retry-button" on:click={() => isSubmitted = false}>Try Again</button>
         {/if}
         <h3>While you wait, why not explore more?</h3>
         <div class="explore-options">
@@ -284,5 +315,14 @@
     .explore-button {
       max-width: 200px;
     }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .retry-button {
+    margin-top: 1rem;
+    max-width: 200px;
   }
 </style>

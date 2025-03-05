@@ -5,12 +5,6 @@
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import BookSample from '$lib/components/BookSample.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
-  import { goto } from '$app/navigation';
-
-  const handleGetFreeSample = () => {
-    goto("/sample");
-    console.log("Get a free sample");
-  };
 
   // For intersection observer animations
   let sections = [];
@@ -41,9 +35,6 @@
       <h1 class="title">Surviving the Singularity</h1>
       <p class="subtitle">Navigate and Thrive in the AI Revolution</p>
       <p class="tagline">A companion for making sense of our rapidly changing world</p>
-      <button class="cta-button" on:click={handleGetFreeSample}>
-        Get Free Sample Chapter
-      </button>
     </div>
   </header>
 
@@ -470,25 +461,6 @@
 
   .hero-content {
     max-width: 800px;
-  }
-
-  .cta-button {
-    background-color: var(--color-accent, #7c3aed);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
-    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
-  }
-
-  .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
   }
 
   /* Grid Layouts */

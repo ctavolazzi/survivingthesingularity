@@ -172,7 +172,11 @@
         </div>
 
         <div class="blog-content">
-          {@html htmlContent}
+          {#if data.Content}
+            <svelte:component this={data.Content} />
+          {:else}
+            {@html htmlContent}
+          {/if}
         </div>
       </div>
 

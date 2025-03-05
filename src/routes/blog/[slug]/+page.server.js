@@ -1,10 +1,31 @@
 import { getPostBySlug, getAllPosts } from '$lib/utils/markdown';
 import { blogPosts as importedPosts } from '$lib/data/blog-posts/blogPosts';
 import { error } from '@sveltejs/kit';
+import { promises as fs } from 'node:fs';
+import { join } from 'node:path';
 
 /** @type {import('./$types').PageServerLoad} */
-export function load({ params }) {
+export async function load({ params }) {
   const { slug } = params;
+
+  // Check if this is an MDsveX post first (they take precedence)
+  if (slug === 'test') {
+    // For MDsveX posts, we don't need to do anything special here
+    // The +page.js will handle importing the .md file
+    return {
+      post: {
+        title: 'MDsveX Test',
+        date: new Date().toISOString(),
+        author: 'System',
+        slug: 'test',
+        excerpt: 'A test of our new MDsveX integration',
+        image: '/images/blog/default.jpg',
+        authorAvatar: null
+      },
+      nextPost: null,
+      prevPost: null
+    };
+  }
 
   // First try to find the post from the imported posts (client-side imports)
   const importedPost = importedPosts.find(p => p.slug === slug);
@@ -29,10 +50,20 @@ export function load({ params }) {
   }
 
   // Get all posts for navigation
-  const allPosts = importedPosts.length > 0 ? importedPosts : getAllPosts();
+  const allPosts = [
+    // Add MDsveX test post
+    {
+      title: 'MDsveX Test',
+      date: new Date().toISOString(),
+      author: 'System',
+      slug: 'test',
+      excerpt: 'A test of our new MDsveX integration'
+    },
+    ...(importedPosts.length > 0 ? importedPosts : getAllPosts())
+  ];
 
-  // Sort by date, newest first (if there are dates, otherwise use array order)
-  const sortedPosts = [...allPosts].sort((a, b) => {
+  // Sort by date, newest first
+  const sortedPosts = allPosts.sort((a, b) => {
     if (!a.date || !b.date) return 0;
     return new Date(b.date) - new Date(a.date);
   });
@@ -41,7 +72,6 @@ export function load({ params }) {
   const nextPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
   const prevPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
 
-  // Include only essential data for navigation
   const nextPostData = nextPost ? {
     title: nextPost.title,
     slug: nextPost.slug
@@ -52,12 +82,10 @@ export function load({ params }) {
     slug: prevPost.slug
   } : null;
 
-  // Create a safe version of the post with explicit authorAvatar handling
   const safePost = {
     ...post,
-    // Force null authorAvatar during SSR to prevent 404s
     authorAvatar: null,
-    image: post.image || post.imageUrl || `/images/blog/${post.slug}.jpg` // Fallback to conventional path
+    image: post.image || post.imageUrl || `/images/blog/${post.slug}.jpg`
   };
 
   return {
@@ -67,13 +95,16 @@ export function load({ params }) {
   };
 }
 
-// Enable prerendering for all blog posts
+// Disable prerendering since we're using async data fetching
 export const prerender = false;
 
 // Provide entries for prerendering all posts
 export function entries() {
-  const posts = importedPosts.length > 0 ? importedPosts : getAllPosts();
-  return posts.map(post => ({
-    slug: post.slug || ''
-  }));
+  const posts = [
+    { slug: 'test' },
+    ...(importedPosts.length > 0 ? importedPosts : getAllPosts()).map(post => ({
+      slug: post.slug || ''
+    }))
+  ];
+  return posts;
 }

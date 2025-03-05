@@ -10,7 +10,7 @@ export default defineConfig({
 			// Whether to polyfill `node:` protocol imports.
 			protocolImports: true,
 			// Polyfills for specific Node.js modules
-			include: ['fs', 'path', 'url']
+			include: ['fs', 'path', 'url', 'stream']
 		})
 	],
 	assetsInclude: ['**/*.md'],
@@ -46,12 +46,13 @@ export default defineConfig({
 			// Use our polyfills
 			fs: '$lib/utils/cloudflare-polyfills/fs-empty.js',
 			path: '$lib/utils/cloudflare-polyfills/path-empty.js',
-			url: '$lib/utils/cloudflare-polyfills/url-empty.js'
+			url: '$lib/utils/cloudflare-polyfills/url-empty.js',
+			stream: '$lib/utils/cloudflare-polyfills/stream-empty.js'
 		}
 	},
 	// Optimization settings
 	optimizeDeps: {
 		include: ['marked', 'gray-matter'],
-		exclude: ['fs', 'path', 'url']
+		exclude: ['fs', 'path', 'url', 'stream']
 	}
 });

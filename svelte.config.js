@@ -26,11 +26,6 @@ const config = {
 			},
 			handleMissingId: 'ignore'
 		},
-		// Cloudflare-specific settings
-		platform: {
-			name: 'cloudflare',
-			useNodePolyfills: true
-		},
 		// Add aliases for Node.js built-ins
 		alias: {
 			fs: '$lib/utils/cloudflare-polyfills/fs-empty.js',

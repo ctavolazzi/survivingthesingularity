@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import PathToSingularity from './PathToSingularity.svelte';
   import Button from './ui/Button.svelte';
-  import JumpToOrigins from './JumpToOrigins.svelte';
+  import JumpToLatest from './JumpToLatest.svelte';
 
   let items = [];
   let showModal = [];
@@ -15,6 +15,7 @@
   let hasMore = false;
   let showShareOptions = []; // Track share dropdown visibility for each item
   let isMobile = false; // Track if device is mobile
+  let modalFocusedElementBeforeOpen; // Store the element that had focus before opening modal
 
   // Load timeline items from API with pagination
   async function loadTimelineItems(page = 1, append = false) {
@@ -30,17 +31,15 @@
 
       const data = await response.json();
 
-      // Reverse the items array to show newest first
-      const reversedItems = [...data.items].reverse();
-
+      // Use items directly without reversing them
       if (append) {
-        items = [...items, ...reversedItems];
-        showModal = [...showModal, ...Array(reversedItems.length).fill(false)];
-        showShareOptions = [...showShareOptions, ...Array(reversedItems.length).fill(false)];
+        items = [...items, ...data.items];
+        showModal = [...showModal, ...Array(data.items.length).fill(false)];
+        showShareOptions = [...showShareOptions, ...Array(data.items.length).fill(false)];
       } else {
-        items = reversedItems;
-        showModal = Array(reversedItems.length).fill(false);
-        showShareOptions = Array(reversedItems.length).fill(false);
+        items = data.items;
+        showModal = Array(data.items.length).fill(false);
+        showShareOptions = Array(data.items.length).fill(false);
       }
 
       currentPage = data.pagination.currentPage;
@@ -64,12 +63,10 @@
 
       const data = await response.json();
 
-      // Reverse the items array to show newest first
-      const reversedItems = [...data.items].reverse();
-
-      items = reversedItems;
-      showModal = Array(reversedItems.length).fill(false);
-      showShareOptions = Array(reversedItems.length).fill(false);
+      // Use items directly without reversing them
+      items = data.items;
+      showModal = Array(data.items.length).fill(false);
+      showShareOptions = Array(data.items.length).fill(false);
 
       currentPage = data.pagination.currentPage;
       totalPages = data.pagination.totalPages;
@@ -94,14 +91,19 @@
   }
 
   function toggleModal(index) {
-    showModal[index] = !showModal[index];
+    const wasOpen = showModal[index];
+
+    // Close any other open modals first
+    if (!wasOpen) {
+      showModal = showModal.map(() => false);
+    }
+
+    showModal[index] = !wasOpen;
     showModal = [...showModal];
     activeModalIndex = showModal[index] ? index : -1;
-    if (showModal[index]) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+
+    // Toggle body scroll
+    document.body.style.overflow = showModal[index] ? 'hidden' : '';
   }
 
   function handleKeydown(e) {
@@ -364,71 +366,98 @@
           </div>
 
           {#if showModal[index]}
-            <!-- Modal implementation remains the same -->
-            <div
-              id={`modal-backdrop-${item.id}`}
-              class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-40"
-              aria-hidden="true"
-            />
-
-            <button
-              type="button"
-              class="sr-only"
-              on:click={() => toggleModal(index)}
-            >
-              Close modal
-            </button>
-
-            <div
-              id={`modal-${item.id}`}
-              class="fixed inset-0 overflow-y-auto h-full w-full flex justify-center items-center z-50"
-              role="dialog"
-              aria-labelledby={`modal-title-${item.id}`}
-              aria-modal="true"
-            >
-              <div
-                class="relative bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8 m-4 max-w-xl w-full"
-                role="document"
-              >
+            <!-- Modal dialog with proper accessibility -->
+            <div class="fixed inset-0 z-50 overflow-y-auto">
+              <div class="flex items-center justify-center min-h-screen p-0">
+                <!-- Backdrop - using a button for proper accessibility -->
                 <button
                   type="button"
-                  on:click={() => toggleModal(index)}
-                  class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-100"
+                  class="fixed inset-0 bg-gray-600 bg-opacity-50 cursor-default"
                   aria-label="Close modal"
-                >
-                  ×
-                </button>
+                  on:click={() => toggleModal(index)}
+                ></button>
 
-                <h2
-                  id={`modal-title-${item.id}`}
-                  class="text-2xl font-bold mb-4 text-gray-900 dark:text-white"
-                >
-                  {item.title}
-                </h2>
-
-                <p class="mb-4 text-gray-700 dark:text-gray-300">
-                  {item.description}
-                </p>
-
-                <p class="mb-4 text-gray-700 dark:text-gray-300">
-                  <strong>Significance:</strong> {item.significance}
-                </p>
-
-                <div class="flex justify-end space-x-2">
+                <!-- Modal content -->
+                <div class="relative bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8 m-4 max-w-xl w-full z-10">
                   <button
                     type="button"
-                    on:click={() => openWikipedia(item.urls.wikipedia)}
-                    class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600"
+                    on:click={() => toggleModal(index)}
+                    class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-100 text-xl font-bold p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    aria-label="Close modal"
                   >
-                    Wikipedia
+                    <span aria-hidden="true">×</span>
                   </button>
-                  <button
-                    type="button"
-                    on:click={() => searchGoogle(item.title)}
-                    class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600"
-                  >
-                    Search Google
-                  </button>
+
+                  <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                    {item.title}
+                  </h2>
+
+                  <p class="mb-4 text-gray-700 dark:text-gray-300">
+                    {item.description}
+                  </p>
+
+                  <p class="mb-4 text-gray-700 dark:text-gray-300">
+                    <strong>Significance:</strong> {item.significance}
+                  </p>
+
+                  <div class="flex flex-wrap justify-between items-center mt-6">
+                    <!-- External links -->
+                    <div class="flex space-x-2 mb-4 md:mb-0">
+                      <button
+                        type="button"
+                        on:click={() => openWikipedia(item.urls.wikipedia)}
+                        class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600"
+                      >
+                        Wikipedia
+                      </button>
+                      <button
+                        type="button"
+                        on:click={() => searchGoogle(item.title)}
+                        class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600"
+                      >
+                        Search Google
+                      </button>
+                    </div>
+
+                    <!-- Share buttons -->
+                    <div class="flex space-x-2">
+                      {#if isMobile && navigator.share}
+                        <!-- Native share button for mobile -->
+                        <button
+                          type="button"
+                          class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600 flex items-center"
+                          on:click={() => nativeShare(item)}
+                        >
+                          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+                          </svg>
+                          Share
+                        </button>
+                      {:else}
+                        <!-- Desktop share buttons -->
+                        <button
+                          type="button"
+                          class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600 flex items-center"
+                          on:click={() => copyToClipboard(item)}
+                        >
+                          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path>
+                          </svg>
+                          Copy
+                        </button>
+                        <button
+                          type="button"
+                          class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600 flex items-center"
+                          on:click={() => shareOnTwitter(item)}
+                        >
+                          <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                          </svg>
+                          X
+                        </button>
+                      {/if}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -465,8 +494,8 @@
   {/if}
 </div>
 
-<!-- Add the JumpToOrigins component -->
-<JumpToOrigins targetSelector=".timeline-container" />
+<!-- Add the JumpToLatest component -->
+<JumpToLatest targetSelector=".timeline-container" />
 
 <style>
   /* Add styles for the share dropdown */

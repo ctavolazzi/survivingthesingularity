@@ -45,6 +45,13 @@
             </button>
         </div>
     </div>
+
+    <div class="decorative-element">
+        <div class="tech-circle"></div>
+        <div class="tech-circle"></div>
+        <div class="tech-circle"></div>
+        <div class="tech-dots"></div>
+    </div>
 </section>
 
 <style>
@@ -56,6 +63,8 @@
         background-color: rgba(25, 25, 35, 0.6);
         border-radius: 12px;
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(124, 58, 237, 0.1);
+        position: relative;
+        overflow: hidden;
     }
 
     .book-sample.dark {
@@ -227,6 +236,62 @@
 
         .image-container {
             flex: 0 0 250px;
+        }
+    }
+
+    .decorative-element {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 120px;
+        height: 120px;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    .tech-circle {
+        position: absolute;
+        border-radius: 50%;
+        border: 1px dashed rgba(124, 58, 237, 0.4);
+    }
+
+    .tech-circle:nth-child(1) {
+        width: 100%;
+        height: 100%;
+        animation: rotate 20s linear infinite;
+    }
+
+    .tech-circle:nth-child(2) {
+        width: 70%;
+        height: 70%;
+        top: 15%;
+        left: 15%;
+        animation: rotate 15s linear infinite reverse;
+    }
+
+    .tech-circle:nth-child(3) {
+        width: 40%;
+        height: 40%;
+        top: 30%;
+        left: 30%;
+        animation: rotate 10s linear infinite;
+    }
+
+    .tech-dots {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle, rgba(124, 58, 237, 0.5) 1px, transparent 1px);
+        background-size: 10px 10px;
+        opacity: 0.3;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
         }
     }
 </style>

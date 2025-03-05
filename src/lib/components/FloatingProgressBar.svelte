@@ -1,31 +1,40 @@
 <script>
     import { onMount } from 'svelte';
-  
+
     let progress = 0;
     let visible = false;
-  
+    let ticking = false;
+
     onMount(() => {
       const handleScroll = () => {
-        const windowHeight = window.innerHeight;
-        const documentHeight = document.documentElement.scrollHeight;
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Calculate progress
-        progress = (scrollTop / (documentHeight - windowHeight)) * 100;
-        
-        // Show progress bar after scrolling a bit
-        visible = scrollTop > 100;
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Calculate progress
+            progress = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+            // Show progress bar after scrolling a bit
+            visible = scrollTop > 100;
+
+            ticking = false;
+          });
+
+          ticking = true;
+        }
       };
-  
-      window.addEventListener('scroll', handleScroll);
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
       return () => window.removeEventListener('scroll', handleScroll);
     });
 </script>
-  
+
 <div class="floating-progress-container" class:visible>
     <div class="floating-progress-bar" style="width: {progress}%"></div>
 </div>
-  
+
 <style>
     .floating-progress-container {
       position: fixed;
@@ -38,17 +47,17 @@
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
     }
-  
+
     .floating-progress-container.visible {
       opacity: 1;
     }
-  
+
     .floating-progress-bar {
       height: 100%;
       background-color: #ff7708;
       transition: width 0.1s ease-out;
     }
-  
+
     :global(.dark) .floating-progress-bar {
       background-color: #ff9933;
     }

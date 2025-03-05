@@ -197,70 +197,6 @@
     box-shadow: 0 2px 5px rgba(255, 128, 0, 0.1);
   }
 
-  .cta-button {
-    font-weight: bold;
-    background: linear-gradient(135deg, #FF9933 0%, #FF8000 100%);
-    color: white;
-    border: none;
-    padding: 0.85rem 1.75rem;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    font-size: 1.1rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(255, 153, 51, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .cta-button:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    transition: all 0.6s ease;
-  }
-
-  .cta-button:hover {
-    background: linear-gradient(135deg, #FF8000 0%, #FF6600 100%);
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(255, 153, 51, 0.4);
-  }
-
-  .cta-button:hover:before {
-    left: 100%;
-  }
-
-  .cta-button:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 8px rgba(255, 153, 51, 0.2);
-  }
-
-  .pulse-animation {
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 0 rgba(255, 153, 51, 0.7);
-    }
-    70% {
-      box-shadow: 0 0 0 15px rgba(255, 153, 51, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(255, 153, 51, 0);
-    }
-  }
-
   .content {
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -359,14 +295,6 @@
     100% { transform: rotate(360deg); }
   }
 
-  /* Background grid pattern */
-  .bg-grid-pattern {
-    background-size: 20px 20px;
-    background-image:
-      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  }
-
   /* Animate on scroll effects */
   .animate-on-scroll {
     opacity: 1; /* Start visible */
@@ -430,11 +358,6 @@
 
     .feature-icon-container {
       padding: 6px;
-    }
-
-    .cta-button {
-      font-size: 1rem;
-      padding: 0.75rem 1.5rem;
     }
   }
 

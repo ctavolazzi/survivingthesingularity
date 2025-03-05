@@ -5,11 +5,32 @@
   import FloatingProgressBar from '$lib/components/FloatingProgressBar.svelte';
   import { darkMode } from '$lib/stores/darkMode';
   import { browser } from '$app/environment';
+  import { afterNavigate } from '$app/navigation';
+  import { onMount } from 'svelte';
 
   // Force dark mode on the document
   $: if (browser) {
     document.documentElement.classList.add('dark');
   }
+
+  // Scroll to top after navigation - more forceful approach
+  afterNavigate(({ from, to }) => {
+    if (browser && from && to && from.url.pathname !== to.url.pathname) {
+      // Use setTimeout to ensure this runs after the DOM is updated
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }, 0);
+    }
+  });
+
+  // Also handle initial page load
+  onMount(() => {
+    if (browser) {
+      window.scrollTo(0, 0);
+    }
+  });
 </script>
 
 <div class="app">

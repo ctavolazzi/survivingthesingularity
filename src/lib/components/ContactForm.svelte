@@ -321,12 +321,10 @@ ${message}`;
     }
   }
 
-  .hidden {
-    display: none;
-  }
-
-  .retry-button {
-    margin-top: 1rem;
-    max-width: 200px;
+  @media (max-width: 640px) {
+    .retry-button {
+      margin-top: 1rem;
+      max-width: 200px;
+    }
   }
 </style>

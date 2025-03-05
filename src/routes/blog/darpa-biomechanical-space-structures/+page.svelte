@@ -1,26 +1,18 @@
 <script>
-  import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
 
   const post = {
     title: 'DARPA Seeks Plans for Large Bio-Mechanical Space Structures',
-    date: '2024-03-04',
+    date: '2025-03-04',
     author: 'Christopher Tavolazzi',
     image: 'https://futurism.com/_next/image?url=https%3A%2F%2Fwordpress-assets.futurism.com%2F2025%2F02%2Fdarpa-requests-plans-large-bio-mechanical-space-structures.jpg&w=2048&q=75',
     readingTime: '5 min read'
   };
-
-  let isImageLoaded = false;
-  let mounted = false;
-
-  onMount(() => {
-    mounted = true;
-  });
 </script>
 
-<div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>
+<div class="blog-post">
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
     <header class="mb-8">
       <h1 class="text-4xl font-bold mb-4">{post.title}</h1>
@@ -37,10 +29,9 @@
       <img
         src={post.image}
         alt={post.title}
-        class="w-full h-auto transition-opacity duration-300"
-        class:opacity-0={!isImageLoaded}
-        class:opacity-100={isImageLoaded}
-        on:load={() => isImageLoaded = true}
+        class="w-full h-auto"
+        loading="lazy"
+        decoding="async"
       />
     </div>
 
@@ -117,14 +108,17 @@
   .featured-image-container {
     position: relative;
     width: 100%;
-    max-height: 500px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .featured-image-container img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 80vh; /* Limit height on large screens */
   }
 
   .content {

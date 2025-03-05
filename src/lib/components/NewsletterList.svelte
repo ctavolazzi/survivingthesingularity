@@ -6,7 +6,7 @@
   export let newsletters = [];
   export let selectedSlug = '';
   export let pagination = null;
-  export let compact = false;
+  export const compact = false;
 
   const dispatch = createEventDispatcher();
 
@@ -45,8 +45,13 @@
   }
 
   function selectNewsletter(slug) {
+    // Dispatch the selection event with the slug
     dispatch('select', slug);
+
+    // Close the dropdown after selection
     isNavExpanded = false;
+
+    // Hide search on mobile after selection
     if (window.innerWidth < 768) {
       searchVisible = false;
     }
@@ -167,46 +172,46 @@
               <button
                 class="px-2 py-1 text-xs rounded {activeTab === 'recent' ? 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300' : 'hover:bg-gray-100 dark:hover:bg-gray-700'}"
                 on:click={() => setActiveTab('recent')}
-        >
-          Recent
-        </button>
-        {#each years as year}
-          <button
+              >
+                Recent
+              </button>
+              {#each years as year}
+                <button
                   class="px-2 py-1 text-xs rounded {activeTab === year ? 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300' : 'hover:bg-gray-100 dark:hover:bg-gray-700'}"
-            on:click={() => setActiveTab(year)}
-          >
-            {year}
-          </button>
-        {/each}
+                  on:click={() => setActiveTab(year)}
+                >
+                  {year}
+                </button>
+              {/each}
             </div>
-      </div>
+          </div>
 
           <!-- Newsletter List -->
           <div class="p-1">
-        {#if activeTab === 'recent'}
-            {#each newsletters.slice(0, 5) as newsletter}
+            {#if activeTab === 'recent'}
+              {#each newsletters.slice(0, 5) as newsletter}
                 <button
                   class="w-full text-left p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded {newsletter.slug === selectedSlug ? 'bg-orange-50 dark:bg-orange-900/20' : ''}"
-                on:click={() => selectNewsletter(newsletter.slug)}
-              >
+                  on:click={() => selectNewsletter(newsletter.slug)}
+                >
                   <div class="flex items-center justify-between">
                     <div>
                       <div class="font-medium">{newsletter.title}</div>
                       <div class="text-xs text-gray-500 dark:text-gray-400">Edition #{newsletter.editionNumber}</div>
-                </div>
+                    </div>
                     <div class="text-xs text-gray-500 dark:text-gray-400">{newsletter.date}</div>
                   </div>
                 </button>
-            {/each}
+              {/each}
               <div class="px-2 py-1 border-t border-gray-200 dark:border-gray-700">
-                  <button
+                <button
                   class="w-full text-center text-sm text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300"
                   on:click={() => setActiveTab('all')}
-                  >
+                >
                   View All Editions
-                  </button>
-          </div>
-        {:else}
+                </button>
+              </div>
+            {:else}
               {#each newslettersByYear[activeTab] || [] as newsletter}
                 <button
                   class="w-full text-left p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded {newsletter.slug === selectedSlug ? 'bg-orange-50 dark:bg-orange-900/20' : ''}"
@@ -225,33 +230,38 @@
           </div>
         </div>
       {/if}
-        </div>
-      </div>
+    </div>
+  </div>
 
   <!-- Currently Reading Content -->
   <div class="newsletter-content mt-4">
     {#if selectedSlug && newsletters.length > 0}
-      {#each filteredNewsletters.filter(n => n.slug === selectedSlug) as newsletter}
+      {#each filteredNewsletters.filter(n => n.slug === selectedSlug) as newsletter (newsletter.slug)}
         <div
           class="newsletter-card-large px-4 py-3 border-l-2 border-orange-500 bg-white dark:bg-gray-800 rounded-md shadow-sm"
-            transition:fade={{ duration: 150 }}
-          >
+          transition:fade={{ duration: 150 }}
+        >
           <div class="flex justify-between items-start mb-2">
-              <h3 class="text-sm font-semibold">#{newsletter.editionNumber}</h3>
-              <p class="text-xs text-gray-600 dark:text-gray-400">{newsletter.date}</p>
-            </div>
-          <h2 class="text-xl font-bold mb-2">{newsletter.title}</h2>
-            {#if newsletter.description}
-            <p class="text-gray-700 dark:text-gray-300 text-sm">{newsletter.description}</p>
-            {/if}
+            <h3 class="text-sm font-semibold">#{newsletter.editionNumber}</h3>
+            <p class="text-xs text-gray-600 dark:text-gray-400">{newsletter.date}</p>
           </div>
-        {/each}
+          <h2 class="text-xl font-bold mb-2">{newsletter.title}</h2>
+          {#if newsletter.description}
+            <p class="text-gray-700 dark:text-gray-300 text-sm">{newsletter.description}</p>
+          {/if}
+        </div>
+      {:else}
+        <!-- No matching newsletter found -->
+        <div class="text-center py-8 text-gray-500 dark:text-gray-400">
+          <p>Newsletter not found. Selected slug: {selectedSlug}</p>
+        </div>
+      {/each}
     {:else}
       <div class="text-center py-8 text-gray-500 dark:text-gray-400">
         <p>Select a newsletter to start reading</p>
-          </div>
-        {/if}
       </div>
+    {/if}
+  </div>
 </div>
 
 <style lang="postcss">

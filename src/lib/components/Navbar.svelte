@@ -37,6 +37,24 @@
     }
   }
 
+  // Custom navigation handler to ensure scroll to top
+  function navigateTo(path, event) {
+    if (event) event.preventDefault();
+
+    // Only navigate if it's a different path
+    if (path !== $page.url.pathname) {
+      // Close menu if open
+      if (isMenuOpen) closeMenu();
+
+      // Navigate and scroll to top
+      goto(path).then(() => {
+        window.scrollTo(0, 0);
+      });
+    }
+
+    return false;
+  }
+
   onMount(() => {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
     isLargeScreen = mediaQuery.matches;
@@ -68,7 +86,7 @@
 <Navbar
   class="bg-gray-800 transition-all duration-300 w-full sticky top-0 left-0 right-0 z-50 shadow-lg"
 >
-  <NavBrand href="/">
+  <NavBrand href="/" on:click={(e) => navigateTo('/', e)}>
     <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
     <span class="self-center whitespace-nowrap text-xl font-semibold text-white">
       Surviving the Singularity
@@ -90,37 +108,37 @@
 
   {#if isLargeScreen}
     <NavUl class="flex items-center justify-end w-full lg:w-auto lg:order-1">
-      <NavLi href="/about" class="nav-item {currentPath === '/about' ? 'active' : ''}">
+      <NavLi href="/about" class="nav-item {currentPath === '/about' ? 'active' : ''}" on:click={(e) => navigateTo('/about', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">About</span>
           <span class="nav-icon ml-2">{@html IconAbout.svg}</span>
         </span>
       </NavLi>
-      <NavLi href="/blog" class="nav-item {currentPath === '/blog' ? 'active' : ''}">
+      <NavLi href="/blog" class="nav-item {currentPath === '/blog' ? 'active' : ''}" on:click={(e) => navigateTo('/blog', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Blog</span>
           <span class="nav-icon ml-2">{@html IconBlog.svg}</span>
         </span>
       </NavLi>
-      <NavLi href="/sample" class="nav-item {currentPath === '/sample' ? 'active' : ''}">
+      <NavLi href="/sample" class="nav-item {currentPath === '/sample' ? 'active' : ''}" on:click={(e) => navigateTo('/sample', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Sample</span>
           <span class="nav-icon ml-2">{@html IconSample.svg}</span>
         </span>
       </NavLi>
-      <NavLi href="/data-warehouse" class="nav-item {currentPath.startsWith('/data-warehouse') ? 'active' : ''}">
+      <NavLi href="/data-warehouse" class="nav-item {currentPath.startsWith('/data-warehouse') ? 'active' : ''}" on:click={(e) => navigateTo('/data-warehouse', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Data Warehouse</span>
           <span class="nav-icon ml-2">{@html IconData.svg}</span>
         </span>
       </NavLi>
-      <NavLi href="/newsletter" class="nav-item {currentPath === '/newsletter' ? 'active' : ''}">
+      <NavLi href="/newsletter" class="nav-item {currentPath === '/newsletter' ? 'active' : ''}" on:click={(e) => navigateTo('/newsletter', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Newsletter</span>
           <span class="nav-icon ml-2">{@html IconNewsletter.svg}</span>
         </span>
       </NavLi>
-      <NavLi href="/contact" class="nav-item {currentPath === '/contact' ? 'active' : ''}">
+      <NavLi href="/contact" class="nav-item {currentPath === '/contact' ? 'active' : ''}" on:click={(e) => navigateTo('/contact', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Contact</span>
           <span class="nav-icon ml-2">{@html IconContact.svg}</span>
@@ -146,85 +164,86 @@
     class="mobile-menu w-full bg-gray-800 z-40 shadow-lg overflow-y-auto"
     transition:slide={{ duration: 300 }}
   >
-    <ul class="flex flex-col p-4 space-y-2">
-      <li class="w-full p-2 rounded-lg hover:bg-gray-700">
-        <a
-          href="/"
-          class="mobile-menu-link {currentPath === '/' ? 'active' : ''}"
-          on:click={closeMenu}
-          aria-label="Home"
-        >
-          <span class="nav-icon mr-3">{@html IconHome.svg}</span>
-          Home
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex justify-between items-center mb-6">
+        <a href="/" class="flex items-center" on:click={(e) => navigateTo('/', e)}>
+          <img src="/android-chrome-192x192.png" class="mr-3 h-8" alt="Surviving the Singularity Logo" />
+          <span class="self-center text-xl font-semibold text-white">Surviving the Singularity</span>
         </a>
-      </li>
-      <li class="w-full p-2 rounded-lg hover:bg-gray-700">
+        <button
+          class="text-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-600 rounded-lg text-sm p-2.5"
+          on:click={closeMenu}
+          aria-label="Close menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="space-y-4">
         <a
           href="/about"
-          class="mobile-menu-link {currentPath === '/about' ? 'active' : ''}"
-          on:click={closeMenu}
-          aria-label="About"
+          class="mobile-nav-item {currentPath === '/about' ? 'active' : ''}"
+          on:click={(e) => navigateTo('/about', e)}
         >
-          <span class="nav-icon mr-3">{@html IconAbout.svg}</span>
-          About
+          <span class="flex items-center">
+            <span class="mr-3">{@html IconAbout.svg}</span>
+            <span>About</span>
+          </span>
         </a>
-      </li>
-      <li class="w-full p-2 rounded-lg hover:bg-gray-700">
         <a
           href="/blog"
-          class="mobile-menu-link {currentPath === '/blog' ? 'active' : ''}"
-          on:click={closeMenu}
-          aria-label="Blog"
+          class="mobile-nav-item {currentPath === '/blog' ? 'active' : ''}"
+          on:click={(e) => navigateTo('/blog', e)}
         >
-          <span class="nav-icon mr-3">{@html IconBlog.svg}</span>
-          Blog
+          <span class="flex items-center">
+            <span class="mr-3">{@html IconBlog.svg}</span>
+            <span>Blog</span>
+          </span>
         </a>
-      </li>
-      <li class="w-full p-2 rounded-lg hover:bg-gray-700">
         <a
           href="/sample"
-          class="mobile-menu-link {currentPath === '/sample' ? 'active' : ''}"
-          on:click={closeMenu}
-          aria-label="Sample"
+          class="mobile-nav-item {currentPath === '/sample' ? 'active' : ''}"
+          on:click={(e) => navigateTo('/sample', e)}
         >
-          <span class="nav-icon mr-3">{@html IconSample.svg}</span>
-          Sample
+          <span class="flex items-center">
+            <span class="mr-3">{@html IconSample.svg}</span>
+            <span>Sample</span>
+          </span>
         </a>
-      </li>
-      <li class="w-full p-2 rounded-lg hover:bg-gray-700">
         <a
           href="/data-warehouse"
-          class="mobile-menu-link {currentPath.startsWith('/data-warehouse') ? 'active' : ''}"
-          on:click={closeMenu}
-          aria-label="Data Warehouse"
+          class="mobile-nav-item {currentPath.startsWith('/data-warehouse') ? 'active' : ''}"
+          on:click={(e) => navigateTo('/data-warehouse', e)}
         >
-          <span class="nav-icon mr-3">{@html IconData.svg}</span>
-          Data Warehouse
+          <span class="flex items-center">
+            <span class="mr-3">{@html IconData.svg}</span>
+            <span>Data Warehouse</span>
+          </span>
         </a>
-      </li>
-      <li class="w-full p-2 rounded-lg hover:bg-gray-700">
         <a
           href="/newsletter"
-          class="mobile-menu-link {currentPath === '/newsletter' ? 'active' : ''}"
-          on:click={closeMenu}
-          aria-label="Newsletter"
+          class="mobile-nav-item {currentPath === '/newsletter' ? 'active' : ''}"
+          on:click={(e) => navigateTo('/newsletter', e)}
         >
-          <span class="nav-icon mr-3">{@html IconNewsletter.svg}</span>
-          Newsletter
+          <span class="flex items-center">
+            <span class="mr-3">{@html IconNewsletter.svg}</span>
+            <span>Newsletter</span>
+          </span>
         </a>
-      </li>
-      <li class="w-full p-2 rounded-lg hover:bg-gray-700">
         <a
           href="/contact"
-          class="mobile-menu-link {currentPath === '/contact' ? 'active' : ''}"
-          on:click={closeMenu}
-          aria-label="Contact"
+          class="mobile-nav-item {currentPath === '/contact' ? 'active' : ''}"
+          on:click={(e) => navigateTo('/contact', e)}
         >
-          <span class="nav-icon mr-3">{@html IconContact.svg}</span>
-          Contact
+          <span class="flex items-center">
+            <span class="mr-3">{@html IconContact.svg}</span>
+            <span>Contact</span>
+          </span>
         </a>
-      </li>
-    </ul>
+      </nav>
+    </div>
   </div>
 {/if}
 
@@ -240,15 +259,6 @@
     overflow-y: auto;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     z-index: 40;
-  }
-
-  .mobile-menu-link {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    font-size: 1.125rem;
-    color: #e2e8f0;
-    transition: all 0.2s ease-in-out;
   }
 
   /* These styles are used in desktop view by NavLi elements */
@@ -280,5 +290,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /* Mobile navigation styles */
+  .mobile-nav-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #e5e7eb;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+
+  .mobile-nav-item:hover {
+    background-color: #374151;
+  }
+
+  .mobile-nav-item.active {
+    background-color: #4b5563;
+    font-weight: 500;
   }
 </style>

@@ -93,7 +93,6 @@
     width: 100%;
     text-align: center;
     z-index: 2;
-    animation: fadeIn 1s ease-out forwards;
   }
 
   .hero-decoration {
@@ -118,7 +117,6 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     top: -120px;
     right: -100px;
-    animation: float 15s infinite ease-in-out;
   }
 
   .circle-2 {
@@ -127,7 +125,6 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
     bottom: -80px;
     left: -80px;
-    animation: float 18s infinite ease-in-out reverse;
   }
 
   .circle-3 {
@@ -136,7 +133,6 @@
     background: radial-gradient(circle, rgba(59, 130, 246, 0.1), transparent);
     top: 20%;
     left: 10%;
-    animation: pulse 8s infinite alternate;
   }
 
   .grid-pattern {
@@ -161,12 +157,8 @@
     padding: 0.5rem 1rem;
     border-radius: 50px;
     margin-bottom: 1.5rem;
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(59, 130, 246, 0.2);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transform: translateY(10px);
-    opacity: 1;
-    animation: none;
   }
 
   .hero-title {
@@ -180,17 +172,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transform: translateY(10px);
-    opacity: 1;
-    animation: none;
   }
 
   .hero-tagline {
     max-width: 700px;
     margin: 0 auto;
-    transform: translateY(10px);
-    opacity: 1;
-    animation: none;
   }
 
   .hero-tagline p {
@@ -217,7 +203,6 @@
     background: rgba(30, 41, 59, 0.6);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
     max-width: max-content;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
@@ -225,7 +210,6 @@
   .rocket {
     font-size: 1.8rem;
     display: inline-block;
-    animation: rocketShake 2s infinite ease-in-out;
   }
 
   .cta-text {
@@ -287,11 +271,11 @@
     color: inherit;
     display: block;
     height: 100%;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.2s ease-out;
   }
 
   .post-card-link:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
 
   .post-card-link:focus {
@@ -308,11 +292,11 @@
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: box-shadow 0.2s ease;
   }
 
   .post-card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   }
 
   .post-image-container {
@@ -325,11 +309,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.8s ease;
-  }
-
-  .post-card:hover .post-image {
-    transform: scale(1.05);
   }
 
   .post-category {
@@ -400,50 +379,12 @@
     font-weight: 600;
     font-size: 0.95rem;
     color: var(--color-primary);
-    transition: all 0.3s ease;
     margin-top: auto;
   }
 
   .arrow {
     display: inline-block;
     margin-left: 0.35rem;
-    transition: transform 0.3s ease;
-  }
-
-  .post-card:hover .arrow {
-    transform: translateX(4px);
-  }
-
-  /* Animations */
-  @keyframes fadeIn {
-    0% { opacity: 1; }
-    100% { opacity: 1; }
-  }
-
-  @keyframes slideUp {
-    0% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes rocketShake {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(15px, 15px); }
-  }
-
-  @keyframes pulse {
-    0% { opacity: 0.05; }
-    100% { opacity: 0.2; }
   }
 
   /* Improved mobile optimization */

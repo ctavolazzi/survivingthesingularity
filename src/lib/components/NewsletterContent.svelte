@@ -4,7 +4,7 @@
 
   export let component = null; // The newsletter component to render
   export let showTableOfContents = true;
-  export let metadata = { title: '', date: '' };
+  export const metadata = { title: '', date: '' };
 
   let contentElement;
   let toc = [];
@@ -26,13 +26,6 @@
 </script>
 
 <div class="newsletter-content">
-  <header class="newsletter-header">
-    <h1 class="newsletter-title">{metadata.title}</h1>
-    {#if metadata.date}
-      <p class="publication-date">Published on {metadata.date}</p>
-    {/if}
-  </header>
-
   {#if showTableOfContents && toc.length > 0}
     <div class="table-of-contents">
       <h2>Table of Contents</h2>
@@ -62,45 +55,6 @@
     padding: 0.75rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-  }
-
-  .newsletter-header {
-    position: relative;
-    padding: 1.25rem 0;
-    overflow: hidden;
-  }
-
-  .newsletter-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #3498db, #2ecc71);
-  }
-
-  .newsletter-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(45deg, #3498db, #2ecc71);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .publication-date {
-    position: relative;
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    background-color: rgba(52, 152, 219, 0.1);
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-style: italic;
-    opacity: 0.8;
   }
 
   .table-of-contents {

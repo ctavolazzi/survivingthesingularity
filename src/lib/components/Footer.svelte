@@ -17,18 +17,27 @@
         </ul>
       </div>
       <div class="w-full md:w-auto text-center md:text-left">
-        <h5 class="font-bold text-lg mb-2">Legal</h5>
+        <h5 class="font-bold text-lg mb-2">Policies</h5>
         <ul class="list-none">
-          <li class="mb-1"><a href="/policies#privacy-policy" class="text-gray-400 hover:text-gray-200">Privacy Policy</a></li>
-          <li class="mb-1"><a href="/policies#terms-of-service" class="text-gray-400 hover:text-gray-200">Terms of Service</a></li>
-          <li class="mb-1"><a href="/policies#community-guidelines" class="text-gray-400 hover:text-gray-200">Community Guidelines</a></li>
-          <li class="mb-1"><a href="/policies#cookie-policy" class="text-gray-400 hover:text-gray-200">Cookie Policy</a></li>
+          <li class="mb-1"><a href="/policies" class="text-gray-400 hover:text-gray-200">All Policies</a></li>
+          <li class="mb-1"><a href="/policies#disclaimers" class="text-gray-400 hover:text-gray-200">Disclaimers</a></li>
         </ul>
       </div>
     </div>
     <!-- <div class="text-center mt-4">
       <button class="buy-button w-full md:w-auto px-6 py-2" on:click={handleBackBook}>Back the Book on Kickstarter</button>
     </div> -->
+
+    <div class="disclaimer-section mt-6 pt-4 border-t border-gray-800 text-center">
+      <p class="text-gray-500 text-sm">
+        <strong>Disclaimer:</strong> The content on this site represents educated guesses and personal opinions. Nothing is certain about the future.
+        Always do your own research and consult appropriate professionals before making decisions.
+        This is commentary and opinion only and should not be taken as financial, legal, or professional advice.
+      </p>
+      <p class="text-gray-500 text-xs mt-2">
+        <a href="/policies#disclaimers" class="text-gray-400 hover:text-gray-200">Read our full disclaimers</a>
+      </p>
+    </div>
   </div>
 </footer>
 
@@ -41,5 +50,10 @@
 
   footer ul li {
     list-style: none;
+  }
+
+  .disclaimer-section {
+    max-width: 800px;
+    margin: 0 auto;
   }
 </style>

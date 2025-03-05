@@ -11,25 +11,30 @@
 
 <div class="about-page">
   <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-background">
-      <div class="grid-lines"></div>
-      <div class="glow-orb"></div>
-    </div>
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="title">Surviving the Singularity</h1>
-        <div class="subtitle-container">
-          <p class="subtitle">Navigate and Thrive in the AI Revolution</p>
-          <div class="animated-bar"></div>
-        </div>
+  <header class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Surviving the Singularity</div>
+      <h1 class="hero-title">Navigate and Thrive in the AI Revolution</h1>
+      <div class="hero-tagline">
+        <p class="hero-description">Expert insights to help you navigate the rapidly evolving world of artificial intelligence and technology.</p>
         <div class="hero-cta">
-          <a href="#singularity" class="scroll-btn">
-            <span>Learn More</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5"/></svg>
-          </a>
+          <span class="rocket">🚀</span>
+          <span class="cta-text">Prepare for the future. Gain valuable insights. Stay ahead of the curve.</span>
         </div>
       </div>
+      <div class="hero-scroll">
+        <a href="#singularity" class="scroll-btn">
+          <span>Learn More</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+      <div class="grid-pattern"></div>
     </div>
   </header>
 
@@ -144,7 +149,7 @@
           <div class="support-icon">💬</div>
           <h3>Provide Feedback</h3>
           <p>Share your thoughts and suggestions to help shape future content.</p>
-          <a href="mailto:hello@survivingthesingularity.com" class="contact-button">
+          <a href="/contact" class="contact-button" data-sveltekit-preload-data="hover">
             Contact Us
           </a>
         </div>
@@ -166,7 +171,7 @@
   <!-- Footer -->
   <section class="contact">
     <div class="container">
-      <p class="copyright">© {new Date().getFullYear()} Surviving the Singularity. All rights reserved.</p>
+      <!-- Copyright notice removed -->
     </div>
   </section>
 </div>
@@ -225,202 +230,254 @@
   }
 
   /* Hero Section */
-  .hero {
-    background-color: #0a0a1a;
+  .hero-section {
     position: relative;
-    overflow: hidden;
-    height: 70vh;
-    max-height: 600px;
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    margin: 0 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 4rem 1.5rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    margin-bottom: 3rem;
   }
 
-  .hero-background {
+  .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.15), transparent 50%);
     z-index: 1;
-    padding: 20px;
-    box-sizing: border-box;
   }
 
-  .grid-lines {
+  .hero-content {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(124, 58, 237, 0.15);
+    color: #a78bfa;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+    opacity: 1;
+    animation: none;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 8vw, 4.5rem);
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    background: linear-gradient(120deg, #f0f9ff, #e0f2fe, #bae6fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(10px);
+    opacity: 1;
+    animation: none;
+  }
+
+  .hero-tagline {
+    max-width: 700px;
+    margin: 0 auto;
+    transform: translateY(10px);
+    opacity: 1;
+    animation: none;
+  }
+
+  .hero-description {
+    font-size: clamp(1.1rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+  }
+
+  .hero-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    max-width: max-content;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .rocket {
+    font-size: 1.8rem;
+    display: inline-block;
+    animation: rocketShake 2s infinite ease-in-out;
+  }
+
+  .cta-text {
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    font-weight: 500;
+    color: #f8fafc;
+    font-style: italic;
+  }
+
+  .hero-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+  }
+
+  .circle-1 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    top: -120px;
+    right: -100px;
+    animation: float 15s infinite ease-in-out;
+  }
+
+  .circle-2 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    bottom: -80px;
+    left: -80px;
+    animation: float 18s infinite ease-in-out reverse;
+  }
+
+  .circle-3 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.1), transparent);
+    top: 20%;
+    left: 10%;
+    animation: pulse 8s infinite alternate;
+  }
+
+  .grid-pattern {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image:
-      linear-gradient(rgba(124, 58, 237, 0.08) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(124, 58, 237, 0.08) 1px, transparent 1px);
-    background-size: 50px 50px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    transform: rotateX(60deg) scale(1.5);
-    animation: grid-move 60s linear infinite;
-    opacity: 0.8;
-    border-radius: 40px;
-    overflow: hidden;
-    border: 1px solid rgba(124, 58, 237, 0.15);
-    box-shadow: 0 0 30px rgba(124, 58, 237, 0.1);
-    margin: 20px;
-    mask-image: radial-gradient(circle at center, black 80%, transparent 100%);
-    -webkit-mask-image: radial-gradient(circle at center, black 80%, transparent 100%);
-  }
-
-  .glow-orb {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(139, 92, 246, 0.05) 40%, rgba(139, 92, 246, 0) 70%);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: blur(60px);
-    opacity: 0.6;
-    animation: pulse 15s ease-in-out infinite alternate;
-  }
-
-  .hero-content {
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 15px rgba(167, 139, 250, 0.2);
-    transition: text-shadow 0.5s ease;
-  }
-
-  .title:hover {
-    text-shadow: 0 0 20px rgba(167, 139, 250, 0.4);
-  }
-
-  .subtitle-container {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 2.5rem;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-    color: #e5e7eb;
-    margin-bottom: 0.75rem;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-  }
-
-  .animated-bar {
-    height: 1px;
-    width: 0;
-    background: linear-gradient(90deg, transparent, rgba(167, 139, 250, 0.5), transparent);
-    margin: 0 auto;
-    animation: expand 3s ease-out forwards;
-  }
-
-  .hero-cta {
-    margin-top: 2rem;
-  }
-
-  .scroll-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.75rem;
-    background-color: rgba(124, 58, 237, 0.1);
-    border: 1px solid rgba(124, 58, 237, 0.3);
-    border-radius: 30px;
-    color: #a78bfa;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.5s ease;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-  }
-
-  .scroll-btn:hover {
-    background-color: rgba(124, 58, 237, 0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .scroll-btn svg {
-    animation: gentle-bounce 4s ease-in-out infinite;
-    opacity: 0.8;
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
   }
 
   /* Animations */
-  @keyframes grid-move {
-    0% {
-      background-position: 0 0;
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
     }
-    100% {
-      background-position: 50px 50px;
+    50% {
+      transform: translateY(-20px) rotate(5deg);
     }
   }
 
   @keyframes pulse {
     0%, 100% {
       opacity: 0.4;
-      transform: translate(-50%, -50%) scale(1);
+      transform: scale(1);
     }
     50% {
       opacity: 0.6;
-      transform: translate(-50%, -50%) scale(1.1);
+      transform: scale(1.1);
     }
   }
 
-  @keyframes expand {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-
-  @keyframes gentle-bounce {
-    0%, 20%, 50%, 80%, 100% {
+  @keyframes rocketShake {
+    0%, 100% {
       transform: translateY(0);
     }
-    40% {
-      transform: translateY(3px);
+    50% {
+      transform: translateY(-5px);
     }
-    60% {
-      transform: translateY(2px);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
-    .hero {
-      height: 60vh;
+    .hero-section {
+      padding: 3rem 1rem;
+      min-height: 450px;
     }
 
-    .title {
+    .hero-title {
       font-size: 2.5rem;
     }
 
-    .subtitle {
-      font-size: 1.2rem;
+    .hero-description {
+      font-size: 1rem;
+    }
+
+    .hero-cta {
+      padding: 0.75rem 1rem;
+    }
+
+    .rocket {
+      font-size: 1.5rem;
+    }
+
+    .cta-text {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section {
+      min-height: 400px;
+    }
+
+    .hero-badge {
+      font-size: 0.8rem;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      gap: 0.5rem;
     }
   }
 
@@ -681,8 +738,46 @@
     background-color: #0f0f23;
   }
 
-  .copyright {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
+  .hero-scroll {
+    margin-top: 2rem;
+  }
+
+  .scroll-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    background-color: rgba(124, 58, 237, 0.1);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    border-radius: 30px;
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .scroll-btn:hover {
+    background-color: rgba(124, 58, 237, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .scroll-btn svg {
+    animation: gentle-bounce 4s ease-in-out infinite;
+    opacity: 0.8;
+  }
+
+  @keyframes gentle-bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(3px);
+    }
+    60% {
+      transform: translateY(2px);
+    }
   }
 </style>

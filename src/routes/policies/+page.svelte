@@ -16,23 +16,16 @@
     <section id="privacy-policy" class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">Privacy Policy</h2>
       <p class="mb-2">Your privacy is important to us. This privacy statement explains the personal data we process, how we process it, and for what purposes.</p>
-      <p class="mb-2">We collect information to provide better services to all our users. We collect information in the following ways: information you give us, information we get from your use of our services, and information from third parties.</p>
-      <p class="mb-2">We use the information we collect from all our services to provide, maintain, protect, and improve them, to develop new ones, and to protect our users. We also use this information to offer you tailored content.</p>
-      <p class="mb-2">We will never sell or share your data without your permission. By submitting information through our site, you grant us a license to use your information in our normal business actions, including market research and product development. We will never personally identify you without your consent, and we will only use your data in adherance with applicable laws.</p>
+      <p class="mb-2">We collect minimal information from our users. Specifically:</p>
+
+      <ul class="list-disc list-inside mb-2">
+        <li><strong>Newsletter Subscriptions:</strong> If you sign up for our newsletter, we collect only your email address. This email is used solely for sending you the newsletter you requested. You can unsubscribe at any time using the link provided in each newsletter.</li>
+        <li><strong>Contact Form Submissions:</strong> Information submitted through our contact form is used only to respond to your inquiry. This information is processed by Formspree (a third-party service) to deliver your message to us via email and is not used for marketing or any other purposes.</li>
+      </ul>
+
+      <p class="mb-2">We will never sell or share your data without your permission. We will never personally identify you without your consent, and we will only use your data in adherence with applicable laws.</p>
       <p class="mb-2">We may share aggregated, non-personally identifiable information publicly and with our partners. For example, we may share information publicly to show trends about the general use of our services.</p>
       <p class="mb-2">If you have any questions about this Privacy Policy, please contact us.</p>
-    </section>
-
-    <section id="terms-of-service" class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Terms of Service</h2>
-      <p class="mb-2">By accessing or using our services, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.</p>
-      <p class="mb-2">Our services are diverse, so sometimes additional terms or product requirements may apply. Additional terms will be available with the relevant services, and those additional terms become part of your agreement with us if you use those services.</p>
-      <p class="mb-2">We may modify these terms or any additional terms that apply to a service to reflect changes to the law or changes to our services. You should look at the terms regularly. Changes will not apply retroactively and will become effective no sooner than fourteen days after they are posted.</p>
-      <p class="mb-2">We grant you a personal, non-transferable, non-exclusive, limited license to use our services. This license is for the sole purpose of enabling you to use and enjoy the benefit of the services as provided by us, in the manner permitted by these terms.</p>
-      <p class="mb-2">You may use the content on our site for personal or commercial purposes, including creating derivative works, provided that you do not replicate the exact content of the book "Surviving the Singularity" or any of its derivative works produced by Christopher Tavolazzi or AIECO without permission. You are free to use the book content to make derivative works or for any lawful purpose, but you must obtain permission before using the exact contents of the book or its derivative works produced by Christopher Tavolazzi and/or AIECO.</p>
-      <p class="mb-2">You may not copy, modify, distribute, sell, or lease any part of our services or included software, nor may you reverse engineer or attempt to extract the source code of that software, unless laws prohibit those restrictions or you have our written permission.</p>
-      <p class="mb-2">Using our services does not give you ownership of any intellectual property rights in our services or the content you access. You may not use content from our services unless you obtain permission from its owner or are otherwise permitted by law.</p>
-      <p class="mb-2">If you have any questions about these Terms of Service, please contact us.</p>
     </section>
 
     <section id="community-guidelines" class="mb-8">
@@ -41,7 +34,7 @@
       <ul class="list-disc list-inside mb-2">
         <li>Comply with all applicable laws and regulations.</li>
         <li>Respect the rights and dignity of others.</li>
-        <li>Use the platform responsibly and for its intended purpose.</li>
+        <li>Use the site responsibly and for its intended purpose.</li>
         <li>Protect your personal information and respect the privacy of others.</li>
         <li>Adhere to intellectual property laws and respect copyrights.</li>
         <li>Contribute to constructive discussions within the community.</li>
@@ -53,17 +46,39 @@
 
     <section id="cookie-policy" class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">Cookie Policy</h2>
-      <p class="mb-2">We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our social media, advertising, and analytics partners.</p>
-      <p class="mb-2">Cookies are small text files that can be used by websites to make a user's experience more efficient. The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies, we need your permission.</p>
-      <p class="mb-2">This site uses different types of cookies. Some cookies are placed by third-party services that appear on our pages. You can at any time change or withdraw your consent from the Cookie Declaration on our website.</p>
-      <p class="mb-2">We use cookies for the following purposes:</p>
+      <p class="mb-2">We do not use cookies on this site to track users. This website is offered as-is for informational purposes only and should be treated as such.</p>
+      <p class="mb-2">Our site is designed to be simple and straightforward, without the need for tracking technologies that collect personal information. We prioritize your privacy and aim to provide valuable content without unnecessary data collection.</p>
+      <p class="mb-2">However, we do use certain third-party services that may collect data according to their own privacy policies. By using our website, you may interact with these third-party services:</p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">Third-Party Services</h3>
       <ul class="list-disc list-inside mb-2">
-        <li>Necessary: These cookies are essential for the website to function properly.</li>
-        <li>Preferences: These cookies allow the website to remember choices you make to give you better functionality and personal features.</li>
-        <li>Statistics: These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</li>
-        <li>Marketing: These cookies are used to track visitors across websites to display ads that are relevant and engaging for the individual user.</li>
+        <li><strong>Formspree</strong> - Used for contact form submissions. When you submit a contact form, your information is processed by Formspree to deliver an email and is not used for any other purpose. For more details, see their <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">privacy policy</a>.</li>
+        <li><strong>Supabase</strong> - Used for database services and user authentication. Data stored in Supabase is subject to their <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">privacy policy</a>.</li>
       </ul>
+
+      <p class="mb-2">These third-party services may use cookies and collect data according to their own privacy policies, which may change over time. We recommend reviewing the privacy policies of these services for the most up-to-date information about how they handle your data.</p>
+      <p class="mb-2">This policy is designed to be transparent and straightforward. While we've made our best effort to comply with relevant privacy laws and regulations, this is not legal advice. If you have specific concerns about legal compliance, we recommend consulting with a legal professional familiar with privacy laws in your jurisdiction.</p>
+      <p class="mb-2">If we ever change this policy in the future, we will update this section to reflect those changes and provide clear information about any cookies or tracking technologies that might be implemented.</p>
       <p class="mb-2">If you have any questions about this Cookie Policy, please contact us.</p>
+    </section>
+
+    <section id="disclaimers" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Disclaimers</h2>
+      <p class="mb-2"><strong>General Disclaimer:</strong> The content on this website represents educated guesses, personal opinions, and commentary about artificial intelligence, technology, and potential future developments. Nothing presented on this site that is unconfirmed by official sources should be considered certain or guaranteed.</p>
+
+      <p class="mb-2"><strong>Technological Progression is Not Guaranteed:</strong> While we discuss potential future scenarios and developments, no one can predict the future with certainty. All discussions about future events should be understood as speculation and possibility, not certainty.</p>
+
+      <p class="mb-2"><strong>Not Professional Advice:</strong> The information provided on this website is for general informational and educational purposes only. It is not intended to be and should not be taken as financial, legal, investment, medical, or other professional advice.</p>
+
+      <p class="mb-2"><strong>Do Your Own Research:</strong> We strongly encourage visitors to conduct their own research, exercise critical thinking, and consult qualified professionals before making any decisions based on information found on this site.</p>
+
+      <p class="mb-2"><strong>No Liability:</strong> By using this site, you are agreeing that you understand that anything unconfirmed by official sources is speculation and should be treated as such. We will not be held liable for any losses, damages, or other negative outcomes that may result from using or relying upon the information presented on this website.</p>
+
+      <p class="mb-2"><strong>Accuracy of Information:</strong> While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained on this website.</p>
+
+      <p class="mb-2"><strong>External Links:</strong> This website may contain links to external websites that are not provided or maintained by us. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+
+      <p class="mb-2">By using this website, you acknowledge and agree that you understand these disclaimers and will not hold us responsible for any decisions you make based on any information provided on this website.</p>
     </section>
   </div>
 </div>
@@ -79,16 +94,6 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
-  }
-
-  .spacer-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: var(--color-bg-secondary);
-    color: var(--color-text-secondary);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   h1 {

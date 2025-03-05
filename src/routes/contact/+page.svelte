@@ -2,7 +2,7 @@
   import ContactForm from '$lib/components/ContactForm.svelte';
   import { fade, fly } from 'svelte/transition';
   import { onMount } from 'svelte';
-  
+
 
   let navbarHeight = 0;
 
@@ -14,23 +14,52 @@
 <div class="main-content" style="padding-top: {navbarHeight}px">
   <h1 class="text-4xl font-bold mb-4 text-center" in:fly="{{ y: -50, duration: 1000 }}">Get in Touch</h1>
   <p class="subheadline" in:fade="{{ delay: 500, duration: 800 }}">We're here to listen, help, and connect</p>
-  
+
   <div class="content-wrapper">
     <div class="form-container" in:fly="{{ x: -50, duration: 1000 }}">
       <h2>Send Us a Message</h2>
       <ContactForm />
     </div>
-    
+
     <div class="info-container" in:fly="{{ x: 50, duration: 1000 }}">
       <h2>Why Reach Out?</h2>
-      <ul>
-        <li>📝 Share your thoughts or feedback</li>
-        <li>❓ Ask us anything</li>
-        <li>💡 Propose ideas or collaborations</li>
-        <li>🤝 Connect with our team</li>
-        <li>🆘 Get support or assistance</li>
+      <ul class="contact-reasons">
+        <li class="contact-reason">
+          <span class="icon">📝</span>
+          <div class="reason-content">
+            <h3>Share your thoughts or feedback</h3>
+            <p>We value your insights and opinions about our content, services, or any aspect of our platform.</p>
+          </div>
+        </li>
+        <li class="contact-reason">
+          <span class="icon">❓</span>
+          <div class="reason-content">
+            <h3>Ask us anything</h3>
+            <p>Have questions about AI, the singularity, or our resources? We're happy to help clarify and provide information.</p>
+          </div>
+        </li>
+        <li class="contact-reason">
+          <span class="icon">💡</span>
+          <div class="reason-content">
+            <h3>Propose ideas or collaborations</h3>
+            <p>Have a great idea or interested in working together? We're open to innovative partnerships and suggestions.</p>
+          </div>
+        </li>
+        <li class="contact-reason">
+          <span class="icon">🤝</span>
+          <div class="reason-content">
+            <h3>Connect with our team</h3>
+            <p>Reach out to learn more about who we are and what we do. We're always happy to connect with like-minded individuals.</p>
+          </div>
+        </li>
+        <li class="contact-reason">
+          <span class="icon">🆘</span>
+          <div class="reason-content">
+            <h3>Get support or assistance</h3>
+            <p>Need help with something specific? Let us know how we can assist you with our resources or services.</p>
+          </div>
+        </li>
       </ul>
-      <p class="response-time">We aim to respond to all messages within 1 business day.</p>
     </div>
   </div>
 
@@ -102,6 +131,42 @@
     position: absolute;
     left: 0;
     font-size: 1.5rem;
+  }
+
+  .contact-reasons {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .contact-reason {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    position: relative;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  .reason-content {
+    flex: 1;
+  }
+
+  .reason-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .reason-content p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
   }
 
   .response-time {

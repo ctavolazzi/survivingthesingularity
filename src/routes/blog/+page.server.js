@@ -6,7 +6,7 @@ export async function load() {
   const posts = [
     {
       title: 'DARPA Seeks Plans for Large Bio-Mechanical Space Structures',
-      date: '2024-03-04',
+      date: '2025-03-04',
       author: 'Christopher Tavolazzi',
       route: '/blog/darpa-biomechanical-space-structures',
       excerpt: 'DARPA has issued a request for information on building massive biological structures in space, exploring a sci-fi future where space infrastructure might be grown rather than assembled.',

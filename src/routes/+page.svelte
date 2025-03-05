@@ -48,6 +48,7 @@
 			title="Navigate the Path to Singularity"
 			description="Get the insights and strategies you need to prepare for the technological changes that will reshape our world."
 			buttonText="Explore the Book"
+			buttonLink="/sample"
 		/>
 	</div>
 	<FuturePredictions />
@@ -55,17 +56,9 @@
   <FAQ />
 
 	<div class="book-container">
-		<button
+		<a
+			href="/sample"
 			class="image-button"
-			on:click={() => {
-				window.location.href = '/sample';
-			}}
-			on:keypress={(e) => {
-				if (e.key === 'Enter') {
-					window.location.href = '/sample';
-				}
-			}}
-			tabindex="0"
 			aria-label="View book sample"
 		>
 			<img
@@ -73,7 +66,7 @@
 				alt="Surviving the Singularity welcome"
 				class="welcome-image"
 			/>
-		</button>
+		</a>
 	</div>
 
 	<div class="newsletter-container">

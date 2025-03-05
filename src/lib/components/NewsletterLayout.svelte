@@ -10,8 +10,11 @@
 
     function handleSelectNewsletter(event) {
       const slug = event.detail;
+
       if (slug !== currentSlug) {
-        goto(`/newsletter/${slug}`);
+        // Use direct window.location navigation to ensure a full page reload
+        // This is more reliable than goto() for ensuring content updates
+        window.location.href = `/newsletter/${slug}`;
       }
     }
 </script>

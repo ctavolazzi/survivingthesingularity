@@ -165,8 +165,8 @@
     border: 1px solid rgba(59, 130, 246, 0.2);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(10px);
-    opacity: 0;
-    animation: slideUp 0.6s ease-out 0.2s forwards;
+    opacity: 1;
+    animation: none;
   }
 
   .hero-title {
@@ -181,16 +181,16 @@
     -webkit-text-fill-color: transparent;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transform: translateY(10px);
-    opacity: 0;
-    animation: slideUp 0.6s ease-out 0.4s forwards;
+    opacity: 1;
+    animation: none;
   }
 
   .hero-tagline {
     max-width: 700px;
     margin: 0 auto;
     transform: translateY(10px);
-    opacity: 0;
-    animation: slideUp 0.6s ease-out 0.6s forwards;
+    opacity: 1;
+    animation: none;
   }
 
   .hero-tagline p {
@@ -416,14 +416,14 @@
 
   /* Animations */
   @keyframes fadeIn {
-    0% { opacity: 0; }
+    0% { opacity: 1; }
     100% { opacity: 1; }
   }
 
   @keyframes slideUp {
     0% {
-      opacity: 0;
-      transform: translateY(10px);
+      opacity: 1;
+      transform: translateY(0);
     }
     100% {
       opacity: 1;

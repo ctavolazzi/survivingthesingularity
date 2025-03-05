@@ -17,3 +17,28 @@ vite.config.ts.timestamp-*
 **/node_modules/.pnpm/
 
 cloudflare_logs/Discord.dmg
+
+# Supabase files (for security reasons)
+/supabase/
+*.sql
+
+# Scripts and sensitive directories (for security reasons)
+/scripts/
+/cursor/
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+logs
+*.log
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -10,7 +10,7 @@
     }
 </script>
 
-<section class="book-sample" class:dark={$darkMode} in:fade="{{ duration: 1000 }}">
+<section class="book-sample" class:dark={$darkMode}>
     <div class="content">
         <h1 class="heading-text">Surviving the Singularity: Workbook</h1>
         <h2 class="subheading-1">A guide for thinking about AI and our changing world</h2>
@@ -53,13 +53,13 @@
         max-width: 100%;
         margin: 0 auto;
         padding: 1.5rem;
-        background-color: var(--color-bg-secondary, #f7f9fc);
+        background-color: rgba(25, 25, 35, 0.6);
         border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(124, 58, 237, 0.1);
     }
 
     .book-sample.dark {
-        background-color: var(--color-bg-secondary-dark, #1a1e2d);
+        background-color: rgba(25, 25, 35, 0.6);
     }
 
     .content {
@@ -72,11 +72,11 @@
         font-weight: 800;
         text-align: center;
         margin-bottom: 0.5rem;
-        color: var(--color-text-primary, #333);
+        color: #ffffff;
     }
 
     .book-sample.dark .heading-text {
-        color: var(--color-text-primary-dark, #e2e8f0);
+        color: #ffffff;
     }
 
     .subheading-1, .subheading-2 {
@@ -84,12 +84,12 @@
         text-align: center;
         font-weight: 600;
         margin-bottom: 0.5rem;
-        color: var(--color-text-secondary, #666);
+        color: #ffffff;
     }
 
     .book-sample.dark .subheading-1,
     .book-sample.dark .subheading-2 {
-        color: var(--color-text-secondary-dark, #a0aec0);
+        color: #ffffff;
     }
 
     .book-preview {
@@ -124,7 +124,7 @@
         width: 100%;
         height: auto;
         border-radius: 8px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
     .preview-highlights {
@@ -135,11 +135,11 @@
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 1rem;
-        color: var(--color-text-primary, #333);
+        color: #ffffff;
     }
 
     .book-sample.dark .preview-highlights h3 {
-        color: var(--color-text-primary-dark, #e2e8f0);
+        color: #ffffff;
     }
 
     .preview-highlights ul {
@@ -152,11 +152,11 @@
         align-items: flex-start;
         margin-bottom: 0.75rem;
         font-size: 1rem;
-        color: var(--color-text-secondary, #555);
+        color: #ffffff;
     }
 
     .book-sample.dark .preview-highlights li {
-        color: var(--color-text-secondary-dark, #cbd5e0);
+        color: #ffffff;
     }
 
     .cta-container {
@@ -168,7 +168,7 @@
 
     .cta-button {
         padding: 0.75rem 1.5rem;
-        background-color: var(--color-primary, #3182ce);
+        background-color: #7c3aed;
         color: white;
         border: none;
         border-radius: 4px;
@@ -176,30 +176,32 @@
         font-weight: 600;
         cursor: pointer;
         transition: all 0.2s ease;
+        box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
     }
 
     .cta-button:hover {
-        background-color: var(--color-primary-hover, #2b6cb0);
+        background-color: #6d28d9;
         transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
     }
 
     .book-sample.dark .cta-button {
-        background-color: var(--color-primary-dark, #4299e1);
+        background-color: #7c3aed;
     }
 
     .book-sample.dark .cta-button:hover {
-        background-color: var(--color-primary-hover-dark, #3182ce);
+        background-color: #6d28d9;
     }
 
     .spoof-disclaimer {
         margin: 2rem 0;
         text-align: center;
         font-style: italic;
-        color: var(--color-text-secondary, #666);
+        color: #ffffff;
     }
 
     .book-sample.dark .spoof-disclaimer {
-        color: var(--color-text-secondary-dark, #a0aec0);
+        color: #ffffff;
     }
 
     .spoof-disclaimer blockquote {

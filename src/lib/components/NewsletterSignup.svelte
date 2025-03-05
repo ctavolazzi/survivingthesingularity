@@ -3,12 +3,14 @@
     import Button from '$lib/components/ui/Button.svelte';
     import Input from '$lib/components/ui/Input.svelte';
     import Checkbox from '$lib/components/ui/Checkbox.svelte';
+    import { fade } from 'svelte/transition';
 
     let email = '';
-    let marketingOptIn = false;
+    let marketingOptIn = true; // Default to checked for better conversion
     let isLoading = false;
     let message = '';
     let emailError = '';
+    let isSuccess = false;
 
     async function handleSubmit(event) {
       event.preventDefault();
@@ -17,6 +19,7 @@
       isLoading = true;
       message = '';
       emailError = '';
+      isSuccess = false;
 
       try {
         const response = await fetch('/api/newsletter/subscribe', {
@@ -37,13 +40,15 @@
           } else if (response.status === 409) {
             throw new Error(result.error);
           } else {
-            throw new Error('Server error. Please try again later.');
+            throw new Error(result.error || 'Server error. Please try again later.');
           }
         }
 
-        message = 'Thank you for subscribing!';
+        // Success!
+        isSuccess = true;
+        message = result.message || 'Thank you for subscribing to the Surviving the Singularity newsletter!';
         email = '';
-        marketingOptIn = false;
+        marketingOptIn = true;
       } catch (error) {
         console.error('Subscription error:', error);
         message = error.message || 'Error subscribing. Please try again.';
@@ -59,51 +64,67 @@
   </script>
 
   <div class="newsletter-signup rounded-lg shadow-md p-6 bg-white dark:bg-gray-800" class:dark={$darkMode}>
-    <form on:submit={handleSubmit} id="newsletter-subscribe-form" name="newsletter-subscribe-form">
-      <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Subscribe to our newsletter</h2>
-
-      <Input
-        type="email"
-        id="newsletter-email"
-        name="email"
-        label="Email Address"
-        required={true}
-        value={email}
-        error={emailError}
-        on:input={handleEmailInput}
-        placeholder="your@email.com"
-        disabled={isLoading}
-      />
-
-      <Checkbox
-        id="marketing_opt_in"
-        label="I agree to receive marketing emails"
-        checked={marketingOptIn}
-        on:change={e => marketingOptIn = e.detail.checked}
-      />
-
-      <div class="mt-4">
-        <Button
-          type="submit"
-          variant="primary"
-          fullWidth={true}
-          loading={isLoading}
-          disabled={isLoading}
-        >
-          {isLoading ? 'Subscribing...' : 'Subscribe'}
-        </Button>
-      </div>
-
-      {#if message}
-        <p class="mt-3 text-center font-medium {message.includes('Error') ? 'text-red-600 dark:text-red-400' : 'text-green-600 dark:text-green-400'}">
-          {message}
+    {#if isSuccess}
+      <div class="success-message" in:fade={{ duration: 300 }}>
+        <div class="checkmark-circle">
+          <div class="checkmark"></div>
+        </div>
+        <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Subscription Successful!</h2>
+        <p class="text-center text-green-600 dark:text-green-400 mb-4">{message}</p>
+        <p class="text-sm text-center text-gray-600 dark:text-gray-400">
+          We've added your email to our list. You'll be the first to know about new content and updates.
         </p>
-      {/if}
+      </div>
+    {:else}
+      <form on:submit={handleSubmit} id="newsletter-subscribe-form" name="newsletter-subscribe-form">
+        <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Subscribe to our newsletter</h2>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+          Stay updated with the latest insights on AI, technology, and the future of humanity.
+        </p>
 
-      <p class="text-xs text-center mt-4 text-gray-500 dark:text-gray-400">
-        We respect your privacy. Unsubscribe at any time.
-      </p>
-    </form>
+        <Input
+          type="email"
+          id="newsletter-email"
+          name="email"
+          label="Email Address"
+          required={true}
+          value={email}
+          error={emailError}
+          on:input={handleEmailInput}
+          placeholder="your@email.com"
+          disabled={isLoading}
+        />
+
+        <Checkbox
+          id="marketing_opt_in"
+          label="I agree to receive marketing emails about Surviving the Singularity"
+          checked={marketingOptIn}
+          on:change={e => marketingOptIn = e.detail.checked}
+        />
+
+        <div class="mt-4">
+          <Button
+            type="submit"
+            variant="primary"
+            fullWidth={true}
+            loading={isLoading}
+            disabled={isLoading}
+          >
+            {isLoading ? 'Subscribing...' : 'Subscribe'}
+          </Button>
+        </div>
+
+        {#if message && !isSuccess}
+          <p class="mt-3 text-center font-medium text-red-600 dark:text-red-400">
+            {message}
+          </p>
+        {/if}
+
+        <p class="text-xs text-center mt-4 text-gray-500 dark:text-gray-400">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </form>
+    {/if}
   </div>
 
   <style>
@@ -143,6 +164,41 @@
       margin-bottom: 1rem;
       text-align: center;
       color: var(--text-color);
+    }
+
+    .success-message {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .checkmark-circle {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 1rem;
+    }
+
+    .checkmark-circle .checkmark {
+      border-radius: 5px;
+    }
+
+    .checkmark-circle .checkmark:after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 50px;
+      border: solid #4ade80;
+      border-width: 0 4px 4px 0;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+      left: 18px;
     }
 
     @media (max-width: 768px) {

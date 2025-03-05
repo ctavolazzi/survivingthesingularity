@@ -50,7 +50,7 @@
         {#each 'The Path to the'.split('') as char, i}
           <span
             class="char"
-            style="transition-delay: {i * 50}ms; opacity: {animationStarted ? 1 : 0}; transform: translateY({animationStarted ? '0' : '20px'});"
+            style="transition-delay: {i * 50}ms; opacity: 1; transform: translateY(0);"
           >
             {char === ' ' ? '\u00A0' : char}
           </span>
@@ -63,16 +63,8 @@
             style="
               --char-index: {i};
               transition-delay: {i * 50}ms;
-              opacity: {animationPhase > 0 ? 1 : 0};
-              transform: {animationPhase === 2
-                ? `translate(
-                    ${Math.cos(i * 0.5) * (i * 20)}px,
-                    ${Math.sin(i * 0.5) * (i * 20)}px
-                  )
-                  rotate(${i * 360}deg)
-                  scale(0)`
-                : 'none'
-              };
+              opacity: 1;
+              transform: none;
             "
           >
             {char}

@@ -15,7 +15,8 @@
   const exploreOptions = [
     { title: 'Explore Our Blog', path: '/blog' },
     { title: 'Read a Book Sample', path: '/sample' },
-    { title: 'Download the Free Guide', path: '/download' }
+    { title: 'Download the Free Guide', path: '/download' },
+    { title: 'Join Our Newsletter', path: '/newsletter' }
   ];
 
   async function handleSubmit(event) {
@@ -281,13 +282,16 @@ ${message}`;
 
   .explore-options {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 1rem;
+    width: 100%;
+    justify-items: center;
   }
 
   .explore-button {
-    max-width: 150px;
+    width: 100%;
+    max-width: 180px;
     font-size: 0.9rem;
   }
 

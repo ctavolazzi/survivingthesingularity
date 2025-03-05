@@ -121,7 +121,11 @@ This project has transitioned from a community-contributed platform to a curated
 
 ## Contributing
 
-While we no longer accept direct contributions to the data warehouse, we welcome code improvements and bug fixes. Please see our [style guide](./STYLE_GUIDE.md) for coding standards.
+While we no longer accept direct contributions to the data warehouse, we welcome code improvements and bug fixes. Please see our [contributing guidelines](./docs/contributing/CONTRIBUTING.md) for detailed information on how to contribute to this project.
+
+Our contributing documentation includes:
+- [Style Guide](./docs/contributing/STYLE_GUIDE.md) - Code style and formatting guidelines
+- [Supabase Security Guidelines](./docs/contributing/SUPABASE_SECURITY.md) - Security best practices for database work
 
 ## License
 

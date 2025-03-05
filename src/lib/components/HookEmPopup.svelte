@@ -1,5 +1,5 @@
 <script>
-  import { fade, fly, slide } from 'svelte/transition';
+  import { fade, fly, slide, scale } from 'svelte/transition';
   import { elasticOut, backOut, quintOut } from 'svelte/easing';
   import { supabase } from '$lib/utils/supabaseClient';
   import { createEventDispatcher } from 'svelte';

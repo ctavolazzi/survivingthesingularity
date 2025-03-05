@@ -1,6 +1,6 @@
 <script>
     import { Card, Button, Heading, P } from 'flowbite-svelte';
-    import { ArrowLeftSolid } from 'flowbite-svelte-icons';
+    import { ArrowLeftOutline } from 'flowbite-svelte-icons';
     import { goto } from '$app/navigation';
 </script>
 
@@ -10,7 +10,7 @@
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <Button class="mb-6" color="light" on:click={() => goto('/data-warehouse/research-links')}>
-        <ArrowLeftSolid class="mr-2 h-5 w-5" />
+        <ArrowLeftOutline class="mr-2 h-5 w-5" />
         Back to Research Links
     </Button>
 

@@ -68,7 +68,7 @@ export function load({ params }) {
 }
 
 // Enable prerendering for all blog posts
-export const prerender = true;
+export const prerender = false;
 
 // Provide entries for prerendering all posts
 export function entries() {

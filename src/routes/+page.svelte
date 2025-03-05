@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import Countdown from '$lib/components/Countdown.svelte';
 	// import HeroSection from '$lib/components/HeroSection.svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
@@ -6,7 +7,7 @@
 	import BookCallout from '$lib/components/BookCallout.svelte';
 	import FuturePredictions from '$lib/components/FuturePredictions.svelte';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-	import { posts } from '$lib/data/blog-posts/blogPosts.js';
+	import { loadBlogPosts, blogPosts } from '$lib/data/blog-posts/blogPosts.js';
 	import FAQ from '$lib/components/FAQ.svelte';
 	import LatestNews from '$lib/components/LatestNews.svelte';
 	import BookSample from '$lib/components/BookSample.svelte';
@@ -15,8 +16,16 @@
 
 	export const data = {};
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
-	// Get the first post for the latest news section
-	const latestPost = posts.length > 0 ? posts[0] : null;
+	// We'll populate this later
+	let posts = [];
+	let latestPost = null;
+
+	// Load the blog posts when the component is created
+	onMount(async () => {
+		posts = await loadBlogPosts();
+		// Get the first post for the latest news section
+		latestPost = posts.length > 0 ? posts[0] : null;
+	});
 </script>
 
 <div class="main-content">

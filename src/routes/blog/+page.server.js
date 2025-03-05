@@ -1,10 +1,12 @@
 import { getAllPosts } from '$lib/utils/markdown';
-import { blogPosts } from '$lib/data/blog-posts/blogPosts';
+import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts';
 
 /** @type {import('./$types').PageServerLoad} */
-export function load() {
+export async function load() {
   try {
-    // First try to use the imported posts from blogPosts.js
+    // First try to use the async load function
+    const blogPosts = await loadBlogPosts();
+
     if (blogPosts && blogPosts.length > 0) {
       return {
         posts: blogPosts.map(post => ({
@@ -38,5 +40,5 @@ export function load() {
   }
 }
 
-// Enable prerendering for the blog index
-export const prerender = true;
+// Disable prerendering since we're now using async data fetching
+export const prerender = false;

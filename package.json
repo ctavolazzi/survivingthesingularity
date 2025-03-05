@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
+		"prebuild": "mkdir -p .svelte-kit/output/server/chunks/lib/data/blog-posts && cp -r src/lib/data/blog-posts/* .svelte-kit/output/server/chunks/lib/data/blog-posts/",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",

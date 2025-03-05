@@ -4,11 +4,17 @@ import { parseMarkdown } from '$lib/utils/markdownParser.js';
 // Use glob import for all newsletter files
 const newsletterFiles = import.meta.glob('/src/lib/data/newsletters/*.md', { query: '?raw', import: 'default' });
 
-export async function load({ url }) {
+export async function load({ url, isPrerendering }) {
   try {
-    // Get pagination parameters from query string
-    const page = parseInt(url.searchParams.get('page') || '1', 10);
-    const perPage = parseInt(url.searchParams.get('perPage') || '10', 10);
+    // Default values for pagination
+    let page = 1;
+    let perPage = 10;
+
+    // Only try to access searchParams if not prerendering
+    if (!isPrerendering && url.searchParams) {
+      page = parseInt(url.searchParams.get('page') || '1', 10);
+      perPage = parseInt(url.searchParams.get('perPage') || '10', 10);
+    }
 
     // Load all newsletter metadata
     const newsletters = await Promise.all(
@@ -93,4 +99,5 @@ export async function load({ url }) {
   }
 }
 
-export const prerender = true;
+// Disable prerendering for this page
+export const prerender = false;

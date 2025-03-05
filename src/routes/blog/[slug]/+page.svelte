@@ -1,17 +1,37 @@
 <script>
   import Spacer from '$lib/components/Spacer.svelte';
-  import { post } from '$lib/data/blog-posts/singularity-express/index.js';
   import { marked } from 'marked';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
 
-  const defaultAvatar = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="%23718096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>';
+  // Get page params from URL
+  export let data;
+  const { post, nextPost, prevPost } = data;
 
-  let htmlContent = marked(post.content);
-  let readingTime = '5 min read'; // This could be calculated dynamically
+  let htmlContent = marked(post?.content || '');
+  let readingTime = '5 min read'; // This could be calculated dynamically based on content length
   let scrollProgress = 0;
   let isProcessingClick = false;
   let lastClickTime = 0;
+
+  // Simple data URL for default avatar to avoid 404 errors
+  const defaultAvatar = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="%23718096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>';
+
+  // Function to safely get avatar URL with fallback
+  function getAvatarSrc(post) {
+    // During SSR, always return null to prevent any attempts to load images
+    if (typeof window === 'undefined' || !browser) {
+      return null;
+    }
+
+    // Special handling to avoid loading /images/default-avatar.jpg
+    if (!post?.authorAvatar || post.authorAvatar === '/images/default-avatar.jpg') {
+      return defaultAvatar; // Use our inline SVG data URL
+    }
+
+    // Only use actual author avatar if it exists and isn't the default path
+    return post.authorAvatar;
+  }
 
   function handleBackToBlog() {
     window.history.back();
@@ -73,26 +93,19 @@
     }
   });
 
-  // Function to safely get avatar URL with fallback
-  function getAvatarSrc(post) {
-    // During SSR, always return null to prevent any attempts to load images
-    if (typeof window === 'undefined' || !browser) {
-      return null;
-    }
-
-    // Special handling to avoid loading /images/default-avatar.jpg
-    if (!post?.authorAvatar || post.authorAvatar === '/images/default-avatar.jpg') {
-      return defaultAvatar; // Use our inline SVG data URL
-    }
-
-    // Only use actual author avatar if it exists and isn't the default path
-    return post.authorAvatar;
-  }
-
+  // Calculate estimated reading time
   onMount(() => {
     // Don't run on the server
     if (typeof window === 'undefined') return;
 
+    // Estimate reading time (average reading speed: 200 words per minute)
+    if (post.rawContent) {
+      const wordCount = post.rawContent.trim().split(/\s+/).length;
+      const minutes = Math.ceil(wordCount / 200);
+      readingTime = `${minutes} min read`;
+    }
+
+    // Setup scroll progress tracking
     const updateScrollProgress = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight - windowHeight;
@@ -107,81 +120,95 @@
   });
 </script>
 
-<div class="progress-bar" style="width: {scrollProgress}%"></div>
-
-<article class="main-content">
-  <header class="article-header">
-    <div class="content-container narrow">
-      <a href="/blog" class="back-link">
-        <span class="back-arrow">←</span> All articles
-      </a>
-      <h1 class="article-title">{post.title}</h1>
-
-      <div class="article-meta">
-        <div class="meta-item author">
-          {#if typeof window !== 'undefined' && browser}
-            <img src={getAvatarSrc(post)} alt="{post.author}" class="author-avatar" />
-          {:else}
-            <div class="author-avatar-placeholder"></div>
-          {/if}
-          <span>{post.author}</span>
-        </div>
-        <time datetime={post.date} class="meta-item date">{post.date}</time>
-        <div class="meta-item reading-time">{readingTime}</div>
-      </div>
-    </div>
-
-    <div class="featured-image-container">
-      <img src={post.imageUrl} alt="{post.title}" class="featured-image" />
-      <div class="image-overlay"></div>
-    </div>
-  </header>
-
-  <div class="content-container">
-    <div class="article-content-wrapper">
-      <div class="share-sidebar">
-        <button class="share-button" aria-label="Share on Twitter" on:click={shareOnTwitter}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-        </button>
-        <button class="share-button" aria-label="Share on LinkedIn" on:click={shareOnLinkedIn}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-        </button>
-        <button class="share-button" aria-label="Copy Link" on:click={copyLink}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-        </button>
-      </div>
-
-      <div class="blog-content">
-        {@html htmlContent}
-      </div>
-    </div>
-
-    <div class="article-footer">
-      <div class="tags">
-        {#if post.tags}
-          {#each post.tags as tag}
-            <span class="tag">{tag}</span>
-          {/each}
-        {:else}
-          <span class="tag">AI</span>
-          <span class="tag">Singularity</span>
-          <span class="tag">Future</span>
-        {/if}
-      </div>
-
-      <div class="article-navigation">
-        <a href="/blog" class="nav-button">
-          <span class="nav-arrow">←</span>
-          <span class="nav-text">All articles</span>
-        </a>
-        <a href="/blog" class="nav-button next">
-          <span class="nav-text">Next article</span>
-          <span class="nav-arrow">→</span>
-        </a>
-      </div>
-    </div>
+{#if !post}
+  <div class="error-container">
+    <h1>Post not found</h1>
+    <p>Sorry, the blog post you're looking for doesn't exist.</p>
+    <a href="/blog" class="back-link">Return to blog</a>
   </div>
-</article>
+{:else}
+  <div class="progress-bar" style="width: {scrollProgress}%"></div>
+
+  <article class="main-content">
+    <header class="article-header">
+      <div class="content-container narrow">
+        <a href="/blog" class="back-link">
+          <span class="back-arrow">←</span> All articles
+        </a>
+        <h1 class="article-title">{post.title}</h1>
+
+        <div class="article-meta">
+          <div class="meta-item author">
+            {#if typeof window !== 'undefined' && browser}
+              <img src={getAvatarSrc(post)} alt="{post.author}" class="author-avatar" />
+            {:else}
+              <div class="author-avatar-placeholder"></div>
+            {/if}
+            <span>{post.author}</span>
+          </div>
+          <time datetime={post.date} class="meta-item date">{post.date}</time>
+          <div class="meta-item reading-time">{readingTime}</div>
+        </div>
+      </div>
+
+      <div class="featured-image-container">
+        <img src={post.image} alt="{post.title}" class="featured-image" />
+        <div class="image-overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-container">
+      <div class="article-content-wrapper">
+        <div class="share-sidebar">
+          <button class="share-button" aria-label="Share on Twitter" on:click={shareOnTwitter}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+          </button>
+          <button class="share-button" aria-label="Share on LinkedIn" on:click={shareOnLinkedIn}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </button>
+          <button class="share-button" aria-label="Copy Link" on:click={copyLink}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </button>
+        </div>
+
+        <div class="blog-content">
+          {@html htmlContent}
+        </div>
+      </div>
+
+      <div class="article-footer">
+        <div class="tags">
+          {#if post.tags}
+            {#each post.tags as tag}
+              <span class="tag">{tag}</span>
+            {/each}
+          {/if}
+        </div>
+
+        <div class="article-navigation">
+          {#if prevPost}
+            <a href="/blog/{prevPost.slug}" class="nav-button">
+              <span class="nav-arrow">←</span>
+              <span class="nav-text">Previous article</span>
+            </a>
+          {:else}
+            <a href="/blog" class="nav-button">
+              <span class="nav-arrow">←</span>
+              <span class="nav-text">All articles</span>
+            </a>
+          {/if}
+
+          {#if nextPost}
+            <a href="/blog/{nextPost.slug}" class="nav-button next">
+              <span class="nav-text">Next article</span>
+              <span class="nav-arrow">→</span>
+            </a>
+          {/if}
+        </div>
+      </div>
+    </div>
+  </article>
+{/if}
 
 <style>
   .progress-bar {
@@ -192,6 +219,13 @@
     background: var(--color-primary, #3b82f6);
     z-index: 100;
     transition: width 0.1s;
+  }
+
+  .error-container {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 2rem;
+    text-align: center;
   }
 
   .main-content {

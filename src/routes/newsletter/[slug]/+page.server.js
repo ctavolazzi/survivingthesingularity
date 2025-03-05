@@ -12,8 +12,14 @@ export async function load({ params }) {
         const content = await loader();
         const { metadata } = await parseMarkdown(content);
         const file = path.split('/').pop();
-        const editionNumber = file.match(/\d+/)[0];
-        
+
+        // Skip README.md file
+        if (file === 'README.md') {
+          return null;
+        }
+
+        const editionNumber = file.match(/\d+/)?.[0] || '0';
+
         return {
           slug: file.replace('.md', ''),
           title: metadata.title,
@@ -24,16 +30,22 @@ export async function load({ params }) {
       })
     );
 
-    allNewsletters.sort((a, b) => b.editionNumber - a.editionNumber);
+    // Filter out null entries and sort
+    const validNewsletters = allNewsletters.filter(n => n !== null);
+    validNewsletters.sort((a, b) => b.editionNumber - a.editionNumber);
 
-    const newsletterLoader = newsletterFiles[`/src/lib/data/newsletters/${slug}.md`];
-    if (!newsletterLoader) {
+    // Find the path that ends with the slug
+    const filePath = Object.keys(newsletterFiles).find(path => path.endsWith(`/${slug}.md`));
+
+    if (!filePath) {
+      console.error(`Newsletter file not found for slug: ${slug}`);
       throw error(404, 'Newsletter not found');
     }
 
+    const newsletterLoader = newsletterFiles[filePath];
     const content = await newsletterLoader();
     const { metadata, htmlContent } = await parseMarkdown(content);
-    
+
     return {
       newsletter: {
         slug,
@@ -41,7 +53,7 @@ export async function load({ params }) {
         date: metadata.date,
         content: htmlContent
       },
-      allNewsletters
+      allNewsletters: validNewsletters
     };
   } catch (e) {
     console.error(`Error loading newsletter ${slug}:`, e);

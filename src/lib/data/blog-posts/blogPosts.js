@@ -1,24 +1,52 @@
-// Import all post index files dynamically
-const postFiles = import.meta.glob('./**/index.js', { eager: true });
+/**
+ * This file imports all blog posts and exports them as an array.
+ */
 
-// Function to get default image URL
-function getDefaultImageUrl(slug) {
-  return `/images/blog/${slug}.jpg`;
+// Import posts with try/catch to handle any missing files
+let darpa_biomechanical_space_structures, robot_farm_bot, singularity_express;
+let farm_bot_deep_dive, claude_projects_weekend_project;
+
+try {
+  // Use dynamic imports with relative paths
+  darpa_biomechanical_space_structures = (await import('./darpa-biomechanical-space-structures/index.js')).post;
+} catch (error) {
+  console.error('Error importing darpa-biomechanical-space-structures:', error.message);
+  darpa_biomechanical_space_structures = null;
 }
 
-// Process and export posts
-export const posts = Object.entries(postFiles)
-  .map(([key, module]) => {
-    const { post } = module;
-    const slug = key.split('/')[1]; // Get the folder name as slug
-    return {
-      ...post,
-      slug,
-      image: post.imageUrl || getDefaultImageUrl(slug),
-      excerpt: post.excerpt || (post.content && post.content.split('\n').slice(0, 2).join('\n') + '...') || ''
-    };
-  })
-  .filter(post => post.title && post.date) // Ensure we only include valid posts
-  .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date, newest first
+try {
+  robot_farm_bot = (await import('./robot-farm-bot/index.js')).post;
+} catch (error) {
+  console.error('Error importing robot-farm-bot:', error.message);
+  robot_farm_bot = null;
+}
 
-console.log('Processed posts:', posts); // For debugging
+try {
+  singularity_express = (await import('./singularity-express/index.js')).post;
+} catch (error) {
+  console.error('Error importing singularity-express:', error.message);
+  singularity_express = null;
+}
+
+try {
+  farm_bot_deep_dive = (await import('./farm-bot-deep-dive/index.js')).post;
+} catch (error) {
+  console.error('Error importing farm-bot-deep-dive:', error.message);
+  farm_bot_deep_dive = null;
+}
+
+try {
+  claude_projects_weekend_project = (await import('./claude-projects-weekend-project/index.js')).post;
+} catch (error) {
+  console.error('Error importing claude-projects-weekend-project:', error.message);
+  claude_projects_weekend_project = null;
+}
+
+// Filter out any null posts
+export const blogPosts = [
+  darpa_biomechanical_space_structures,
+  robot_farm_bot,
+  singularity_express,
+  farm_bot_deep_dive,
+  claude_projects_weekend_project
+].filter(post => post !== null);

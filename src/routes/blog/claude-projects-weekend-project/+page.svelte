@@ -3,17 +3,14 @@
     import { post } from '$lib/data/blog-posts/claude-projects-weekend-project/index.js';
     import { marked } from 'marked';
     import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-    import SkoolGroup from '$lib/components/SkoolGroup.svelte';
     import RecommendedContent from '$lib/components/RecommendedContent.svelte';
 
     const renderer = new marked.Renderer();
     renderer.link = (href, title, text) => {
-      console.log('Link renderer:', { href, title, text });
-      
       if (typeof href === 'object' && href.href) {
         href = href.href;
       }
-      
+
       if (typeof href === 'string' && (href.includes('youtube.com') || href.includes('youtu.be'))) {
         const videoId = href.includes('youtube.com') ? href.split('v=')[1] : href.split('/').pop();
         return `<YouTubeVidBox videoId="${videoId}" title="${text}" />`;
@@ -57,7 +54,7 @@
   <div class="content-container">
     <h1 class="text-4xl font-bold mb-4 text-[var(--color-text-primary)]">{post.title}</h1>
     <p class="text-[var(--color-text-secondary)] italic mb-6">{post.date} - {post.author}</p>
-    
+
     <div class="button-container">
       <button class="big-button" on:click={handleBackToBlog}>← Back to Blog List</button>
     </div>
@@ -69,7 +66,7 @@
     </div>
 
     <Spacer height="2rem"/>
-    <RecommendedContent 
+    <RecommendedContent
       title="View more content like this"
       description="Here are some more videos that dive deeper into AI and gaming"
       videos={recommendedVideos}
@@ -83,8 +80,6 @@
     <Spacer height="1rem"/>
 
     <NewsletterSignup />
-    <Spacer height="1rem"/>
-    <SkoolGroup />
   </div>
 
   <Spacer height="2rem"/>
@@ -96,8 +91,6 @@
   <Spacer height="1rem"/>
 
   <NewsletterSignup />
-  <Spacer height="1rem"/>
-  <SkoolGroup />
 </div>
 
 <style>

@@ -61,9 +61,59 @@ npm run preview
 - `src/routes/` - Application pages and API endpoints
 - `src/lib/components/` - Reusable UI components
 - `src/lib/data/` - Content and data resources
+- `src/lib/content/` - Blog posts and other content in markdown format
+- `src/lib/utils/` - Utility functions and helpers
 - `src/lib/server/` - Server-side utilities
 - `static/` - Static assets
 - `cursor/` - Development logs and documentation
+
+## Blog System
+
+The blog system follows SvelteKit conventions:
+
+- **Blog posts** are stored as markdown files with frontmatter in `src/lib/content/blog/`
+- Each post has its own markdown file with metadata in the frontmatter section
+- Server-side loading is handled through `+page.server.js` files
+- Blog images are stored in `static/images/blog/`
+
+For detailed instructions on adding new blog posts, see the [Blog Content Guide](src/lib/content/README.md).
+
+## Working with Blog Posts
+
+Blog posts are stored in the `src/lib/data/blog-posts` directory, with each post in its own subdirectory containing:
+
+- `content.md`: The main content of the blog post in Markdown format
+- `index.js`: Metadata and exports for the blog post
+
+### Adding a New Blog Post
+
+To create a new blog post:
+
+```bash
+# Using npm
+npm run create-blog "Your Blog Post Title"
+
+# Using the script directly
+node scripts/create-blog-post.js "Your Blog Post Title"
+```
+
+This will:
+1. Create a new directory in `src/lib/data/blog-posts` with a slug based on the title
+2. Add a template `content.md` and `index.js` file
+3. Pre-fill some metadata fields with the current date
+
+### Migrating Blog Posts
+
+If you have blog posts in the old format (`.md` files in `src/content/blog`), you can migrate them to the new format:
+
+```bash
+npm run migrate-blog
+```
+
+This will:
+1. Find all `.md` files in the old location
+2. Create a directory structure in `src/lib/data/blog-posts` for each post
+3. Generate the necessary `content.md` and `index.js` files
 
 ## Development Approach
 

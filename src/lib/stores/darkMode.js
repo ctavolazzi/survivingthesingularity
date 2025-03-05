@@ -1,6 +1,6 @@
-import { writable } from 'svelte/store';
-import { browser } from '$app/environment';
+import { readable } from 'svelte/store';
 
-const darkMode = writable(true);
+// Use a readable store with a constant value of true to ensure dark mode is always active
+const darkMode = readable(true);
 
 export { darkMode };

@@ -1,36 +1,45 @@
 import { json } from '@sveltejs/kit';
-import { exec } from 'child_process';
-import { promisify } from 'util';
 
-const execPromise = promisify(exec);
-
-export async function POST({ request }) {
+export async function POST({ request, fetch }) {
   try {
     // Parse the request body
-    const { name, email, subject, message } = await request.json();
+    const formData = await request.json();
 
     // Validate required fields
-    if (!name || !email || !message) {
+    if (!formData.email || !formData.message) {
       return json({ success: false, error: 'Missing required fields' }, { status: 400 });
     }
 
-    // Format the email subject and body
-    const emailSubject = subject ? `[Contact Form] ${subject}` : '[Contact Form] New message from website';
-    const emailBody = `
-From: ${name} <${email}>
-Subject: ${subject || 'N/A'}
+    // Add the honeypot field if not present
+    if (!formData._gotcha) {
+      formData._gotcha = '';
+    }
 
-Message:
-${message}
-    `;
+    // Forward the submission to Formspree
+    const response = await fetch('https://formspree.io/f/xgvawenl', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
 
-    // Send email using the mail command
-    // This works because we confirmed the mail command works from the terminal
-    await execPromise(`echo "${emailBody}" | mail -s "${emailSubject}" info@survivingthesingularity.com`);
+    const responseData = await response.json();
 
-    return json({ success: true });
+    if (!response.ok) {
+      throw new Error(responseData.error || 'Failed to submit form');
+    }
+
+    return json({
+      success: true,
+      message: 'Your message has been received. We will get back to you soon.'
+    });
   } catch (error) {
     console.error('Server error:', error);
-    return json({ success: false, error: 'Failed to send message. Please try again later.' }, { status: 500 });
+    return json({
+      success: false,
+      error: 'Failed to send message. Please try again later.'
+    }, { status: 500 });
   }
 }

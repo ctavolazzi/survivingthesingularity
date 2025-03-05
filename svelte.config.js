@@ -10,7 +10,9 @@ const config = {
 			routes: {
 				include: ['/*'],
 				exclude: []
-			}
+			},
+			// Enable Node.js compatibility
+			nodeCompat: true
 		}),
 		// Disable prerendering for routes that use dynamic data loading
 		prerender: {
@@ -27,13 +29,18 @@ const config = {
 		// Cloudflare-specific settings
 		platform: {
 			name: 'cloudflare',
-			useNodePolyfills: false
+			useNodePolyfills: true
 		},
 		// Add aliases for Node.js built-ins
 		alias: {
 			fs: '$lib/utils/cloudflare-polyfills/fs-empty.js',
 			path: '$lib/utils/cloudflare-polyfills/path-empty.js',
 			url: '$lib/utils/cloudflare-polyfills/url-empty.js'
+		},
+		// Ensure proper environment variables are available
+		env: {
+			publicPrefix: 'PUBLIC_',
+			privatePrefix: 'PRIVATE_'
 		}
 	},
 	preprocess: vitePreprocess()

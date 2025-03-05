@@ -1,9 +1,17 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig({
 	plugins: [
-		sveltekit()
+		sveltekit(),
+		// Add Node.js polyfills for Cloudflare
+		nodePolyfills({
+			// Whether to polyfill `node:` protocol imports.
+			protocolImports: true,
+			// Polyfills for specific Node.js modules
+			include: ['fs', 'path', 'url']
+		})
 	],
 	assetsInclude: ['**/*.md'],
 	build: {
@@ -35,10 +43,10 @@ export default defineConfig({
 		browserField: true,
 		conditions: ['browser', 'module', 'jsnext:main', 'jsnext'],
 		alias: {
-			// These are Node.js built-ins that need to be ignored in Cloudflare
-			fs: 'undefined',
-			path: 'undefined',
-			url: 'undefined'
+			// Use our polyfills
+			fs: '$lib/utils/cloudflare-polyfills/fs-empty.js',
+			path: '$lib/utils/cloudflare-polyfills/path-empty.js',
+			url: '$lib/utils/cloudflare-polyfills/url-empty.js'
 		}
 	},
 	// Optimization settings

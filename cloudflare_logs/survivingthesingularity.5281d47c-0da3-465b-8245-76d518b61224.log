@@ -1,0 +1,1071 @@
+2025-03-05T05:33:15.287206Z	Cloning repository...
+2025-03-05T05:33:16.154781Z	From https://github.com/ctavolazzi/survivingthesingularity
+2025-03-05T05:33:16.155243Z	 * branch            4a1db1127d7caf9a065a5dfc427acbabd4e67804 -> FETCH_HEAD
+2025-03-05T05:33:16.155425Z	
+2025-03-05T05:33:16.26264Z	HEAD is now at 4a1db11 Fix build process and blog functionality: Disable prerendering for blog slug, fix URI malformed error, update Vite config, simplify configurations
+2025-03-05T05:33:16.263174Z	
+2025-03-05T05:33:16.342448Z	
+2025-03-05T05:33:16.343243Z	Using v2 root directory strategy
+2025-03-05T05:33:16.366398Z	Success: Finished cloning repository files
+2025-03-05T05:33:18.073297Z	Checking for configuration in a Wrangler configuration file (BETA)
+2025-03-05T05:33:18.074148Z	
+2025-03-05T05:33:19.175206Z	No wrangler.toml file found. Continuing.
+2025-03-05T05:33:19.241627Z	Detected the following tools from environment: npm@9.6.7, nodejs@18.17.1
+2025-03-05T05:33:19.242258Z	Installing project dependencies: npm clean-install --progress=false
+2025-03-05T05:33:21.897162Z	npm WARN deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+2025-03-05T05:33:22.091217Z	npm WARN deprecated npmlog@5.0.1: This package is no longer supported.
+2025-03-05T05:33:22.389161Z	npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-03-05T05:33:22.724451Z	npm WARN deprecated gauge@3.0.2: This package is no longer supported.
+2025-03-05T05:33:22.805591Z	npm WARN deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+2025-03-05T05:33:23.122226Z	npm WARN deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-03-05T05:33:30.170953Z	
+2025-03-05T05:33:30.171272Z	added 382 packages, and audited 383 packages in 10s
+2025-03-05T05:33:30.171841Z	
+2025-03-05T05:33:30.172015Z	116 packages are looking for funding
+2025-03-05T05:33:30.172099Z	  run `npm fund` for details
+2025-03-05T05:33:30.201469Z	
+2025-03-05T05:33:30.201702Z	10 vulnerabilities (3 low, 5 moderate, 2 high)
+2025-03-05T05:33:30.20184Z	
+2025-03-05T05:33:30.201951Z	To address all issues, run:
+2025-03-05T05:33:30.202054Z	  npm audit fix
+2025-03-05T05:33:30.20222Z	
+2025-03-05T05:33:30.202507Z	Run `npm audit` for details.
+2025-03-05T05:33:30.219429Z	Executing user command: npm run build
+2025-03-05T05:33:30.753868Z	
+2025-03-05T05:33:30.754152Z	> my-app@0.0.1 prebuild
+2025-03-05T05:33:30.754366Z	> mkdir -p .svelte-kit/output/server/chunks/lib/data/blog-posts && cp -r src/lib/data/blog-posts/* .svelte-kit/output/server/chunks/lib/data/blog-posts/
+2025-03-05T05:33:30.75452Z	
+2025-03-05T05:33:30.7738Z	
+2025-03-05T05:33:30.77413Z	> my-app@0.0.1 build
+2025-03-05T05:33:30.774235Z	> vite build
+2025-03-05T05:33:30.774421Z	
+2025-03-05T05:33:31.442847Z	[36mvite v5.2.13 [32mbuilding SSR bundle for production...[36m[39m
+2025-03-05T05:33:31.49699Z	transforming...
+2025-03-05T05:33:32.805035Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/blog/robot-farm-bot/+page.svelte:23:6 A11y: Screenreaders already announce <img> elements as an image.
+2025-03-05T05:33:32.805873Z	21:       </div>
+2025-03-05T05:33:32.806048Z	22:   
+2025-03-05T05:33:32.806364Z	23:       <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
+2025-03-05T05:33:32.806484Z	          ^
+2025-03-05T05:33:32.806557Z	24:   
+2025-03-05T05:33:32.806742Z	25:       <div class="blog-content">
+2025-03-05T05:33:32.806837Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/blog/farm-bot-deep-dive/+page.svelte:23:6 A11y: Screenreaders already announce <img> elements as an image.
+2025-03-05T05:33:32.806906Z	21:       </div>
+2025-03-05T05:33:32.806962Z	22:   
+2025-03-05T05:33:32.807059Z	23:       <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
+2025-03-05T05:33:32.807156Z	          ^
+2025-03-05T05:33:32.807219Z	24:   
+2025-03-05T05:33:32.808283Z	25:       <div class="blog-content">
+2025-03-05T05:33:32.808656Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/book/[sectionId]/+page.svelte:218:2 Unused CSS selector ".icon"
+2025-03-05T05:33:32.808753Z	216:   }
+2025-03-05T05:33:32.80922Z	217: 
+2025-03-05T05:33:32.809322Z	218:   .icon {
+2025-03-05T05:33:32.809801Z	       ^
+2025-03-05T05:33:32.809957Z	219:     margin-right: 0.5rem;
+2025-03-05T05:33:32.810132Z	220:     font-size: 1.5rem;
+2025-03-05T05:33:32.810333Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/coming-soon/+page.svelte:70:12 A11y: A form label must be associated with a control.
+2025-03-05T05:33:32.810556Z	68:         <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+2025-03-05T05:33:32.810779Z	69:           <div class="content__gdpr">
+2025-03-05T05:33:32.810982Z	70:             <label>Marketing Permissions</label>
+2025-03-05T05:33:32.811191Z	                ^
+2025-03-05T05:33:32.811275Z	71:             <p>Please select all the ways you would like to hear from us.</p>
+2025-03-05T05:33:32.81148Z	72:             <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+2025-03-05T05:33:32.811564Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/coming-soon/+page.svelte:136:2 Unused CSS selector ".action-button"
+2025-03-05T05:33:32.811715Z	134:   }
+2025-03-05T05:33:32.81191Z	135: 
+2025-03-05T05:33:32.811994Z	136:   .action-button {
+2025-03-05T05:33:32.812155Z	       ^
+2025-03-05T05:33:32.812263Z	137:     font-weight: bold;
+2025-03-05T05:33:32.812378Z	138:     background-color: #f8f9fa;
+2025-03-05T05:33:32.812453Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/coming-soon/+page.svelte:146:2 Unused CSS selector ".action-button:hover"
+2025-03-05T05:33:32.812797Z	144:   }
+2025-03-05T05:33:32.81287Z	145: 
+2025-03-05T05:33:32.812997Z	146:   .action-button:hover {
+2025-03-05T05:33:32.813108Z	       ^
+2025-03-05T05:33:32.81324Z	147:     background-color: #000000;
+2025-03-05T05:33:32.813424Z	148:     color: #ffffff;
+2025-03-05T05:33:32.813513Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:92:2 Unused CSS selector ".quote-container"
+2025-03-05T05:33:32.813728Z	90:   }
+2025-03-05T05:33:32.813854Z	91: 
+2025-03-05T05:33:32.814032Z	92:   .quote-container {
+2025-03-05T05:33:32.814109Z	      ^
+2025-03-05T05:33:32.814286Z	93:     display: flex;
+2025-03-05T05:33:32.814824Z	94:     flex-direction: column;
+2025-03-05T05:33:32.814962Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:100:2 Unused CSS selector ".quote"
+2025-03-05T05:33:32.815068Z	 98:   }
+2025-03-05T05:33:32.815205Z	 99: 
+2025-03-05T05:33:32.815317Z	100:   .quote {
+2025-03-05T05:33:32.815421Z	       ^
+2025-03-05T05:33:32.81551Z	101:     font-style: italic;
+2025-03-05T05:33:32.81561Z	102:     font-size: 1.8rem;
+2025-03-05T05:33:32.815702Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:110:2 Unused CSS selector ".attribution"
+2025-03-05T05:33:32.815794Z	108:   }
+2025-03-05T05:33:32.815889Z	109: 
+2025-03-05T05:33:32.815981Z	110:   .attribution {
+2025-03-05T05:33:32.81608Z	       ^
+2025-03-05T05:33:32.816174Z	111:     font-weight: bold;
+2025-03-05T05:33:32.81627Z	112:     margin-top: 1rem;
+2025-03-05T05:33:32.816457Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:117:2 Unused CSS selector ".button-container"
+2025-03-05T05:33:32.816636Z	115:   }
+2025-03-05T05:33:32.81676Z	116: 
+2025-03-05T05:33:32.81688Z	117:   .button-container {
+2025-03-05T05:33:32.816994Z	       ^
+2025-03-05T05:33:32.817104Z	118:     display: flex;
+2025-03-05T05:33:32.817206Z	119:     justify-content: center;
+2025-03-05T05:33:32.817404Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:124:2 Unused CSS selector ".big-button"
+2025-03-05T05:33:32.817487Z	122:   }
+2025-03-05T05:33:32.817613Z	123: 
+2025-03-05T05:33:32.817728Z	124:   .big-button {
+2025-03-05T05:33:32.817866Z	       ^
+2025-03-05T05:33:32.817968Z	125:     font-weight: 600;
+2025-03-05T05:33:32.818115Z	126:     font-size: 1.2rem;
+2025-03-05T05:33:32.818281Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:135:2 Unused CSS selector ".cancel-button"
+2025-03-05T05:33:32.818491Z	133:   }
+2025-03-05T05:33:32.818623Z	134: 
+2025-03-05T05:33:32.818737Z	135:   .cancel-button {
+2025-03-05T05:33:32.818885Z	       ^
+2025-03-05T05:33:32.819023Z	136:     background-color: var(--color-bg-secondary);
+2025-03-05T05:33:32.819173Z	137:     color: var(--color-text-primary);
+2025-03-05T05:33:32.819427Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:141:2 Unused CSS selector ".preorder-button"
+2025-03-05T05:33:32.819507Z	139:   }
+2025-03-05T05:33:32.819623Z	140: 
+2025-03-05T05:33:32.819709Z	141:   .preorder-button {
+2025-03-05T05:33:32.819818Z	       ^
+2025-03-05T05:33:32.819921Z	142:     background-color: #ff6600;
+2025-03-05T05:33:32.82002Z	143:     color: white;
+2025-03-05T05:33:32.820236Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:147:2 Unused CSS selector ".big-button:hover"
+2025-03-05T05:33:32.82049Z	145:   }
+2025-03-05T05:33:32.820588Z	146: 
+2025-03-05T05:33:32.820672Z	147:   .big-button:hover {
+2025-03-05T05:33:32.820736Z	       ^
+2025-03-05T05:33:32.820794Z	148:     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+2025-03-05T05:33:32.82085Z	149:     transform: translateY(-3px);
+2025-03-05T05:33:32.820907Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:152:2 Unused CSS selector ".cancel-button:hover"
+2025-03-05T05:33:32.820964Z	150:   }
+2025-03-05T05:33:32.821025Z	151: 
+2025-03-05T05:33:32.821085Z	152:   .cancel-button:hover {
+2025-03-05T05:33:32.821142Z	       ^
+2025-03-05T05:33:32.821198Z	153:     background-color: var(--color-bg-hover);
+2025-03-05T05:33:32.821253Z	154:   }
+2025-03-05T05:33:32.821332Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:156:2 Unused CSS selector ".preorder-button:hover"
+2025-03-05T05:33:32.821406Z	154:   }
+2025-03-05T05:33:32.821467Z	155: 
+2025-03-05T05:33:32.821523Z	156:   .preorder-button:hover {
+2025-03-05T05:33:32.821587Z	       ^
+2025-03-05T05:33:32.821641Z	157:     background-color: #ff8533;
+2025-03-05T05:33:32.821703Z	158:   }
+2025-03-05T05:33:32.821758Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:167:2 Unused CSS selector ".benefits-container"
+2025-03-05T05:33:32.821814Z	165:   }
+2025-03-05T05:33:32.82187Z	166: 
+2025-03-05T05:33:32.821924Z	167:   .benefits-container {
+2025-03-05T05:33:32.821978Z	       ^
+2025-03-05T05:33:32.822034Z	168:     background-color: var(--color-bg-secondary);
+2025-03-05T05:33:32.822089Z	169:     border: 2px solid #ff6600;
+2025-03-05T05:33:32.822147Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:176:2 Unused CSS selector ".benefits-container h2"
+2025-03-05T05:33:32.822204Z	174:   }
+2025-03-05T05:33:32.822259Z	175: 
+2025-03-05T05:33:32.822471Z	176:   .benefits-container h2 {
+2025-03-05T05:33:32.822553Z	       ^
+2025-03-05T05:33:32.82261Z	177:     font-size: 1.4rem;
+2025-03-05T05:33:32.822668Z	178:     margin-bottom: 1rem;
+2025-03-05T05:33:32.822723Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:182:2 Unused CSS selector ".benefits-container ul"
+2025-03-05T05:33:32.822779Z	180:   }
+2025-03-05T05:33:32.822834Z	181: 
+2025-03-05T05:33:32.822889Z	182:   .benefits-container ul {
+2025-03-05T05:33:32.822943Z	       ^
+2025-03-05T05:33:32.823079Z	183:     text-align: left;
+2025-03-05T05:33:32.823139Z	184:     display: inline-block;
+2025-03-05T05:33:32.823197Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:188:2 Unused CSS selector ".benefits-container li"
+2025-03-05T05:33:32.823269Z	186:   }
+2025-03-05T05:33:32.823381Z	187: 
+2025-03-05T05:33:32.823479Z	188:   .benefits-container li {
+2025-03-05T05:33:32.823577Z	       ^
+2025-03-05T05:33:32.82366Z	189:     color: var(--color-text-secondary);
+2025-03-05T05:33:32.823742Z	190:     margin-bottom: 0.5rem;
+2025-03-05T05:33:32.823823Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:194:2 Unused CSS selector ".error"
+2025-03-05T05:33:32.823914Z	192:   }
+2025-03-05T05:33:32.823995Z	193: 
+2025-03-05T05:33:32.824076Z	194:   .error {
+2025-03-05T05:33:32.824158Z	       ^
+2025-03-05T05:33:32.824246Z	195:     color: #ff3333;
+2025-03-05T05:33:32.824351Z	196:     text-align: center;
+2025-03-05T05:33:32.824461Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:200:2 Unused CSS selector ".loader"
+2025-03-05T05:33:32.82455Z	198:   }
+2025-03-05T05:33:32.824638Z	199: 
+2025-03-05T05:33:32.824721Z	200:   .loader {
+2025-03-05T05:33:32.824805Z	       ^
+2025-03-05T05:33:32.824892Z	201:     display: inline-block;
+2025-03-05T05:33:32.825545Z	202:     width: 24px;
+2025-03-05T05:33:32.825707Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:214:2 Unused CSS selector ".urgency-message"
+2025-03-05T05:33:32.825952Z	212:   }
+2025-03-05T05:33:32.826246Z	213: 
+2025-03-05T05:33:32.826425Z	214:   .urgency-message {
+2025-03-05T05:33:32.826611Z	       ^
+2025-03-05T05:33:32.826707Z	215:     background-color: #fff3e6;
+2025-03-05T05:33:32.826866Z	216:     border: 2px solid #ff6600;
+2025-03-05T05:33:32.827029Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:227:2 Unused CSS selector ":global(.dark) .urgency-message"
+2025-03-05T05:33:32.827144Z	225:   }
+2025-03-05T05:33:32.82725Z	226: 
+2025-03-05T05:33:32.827422Z	227:   :global(.dark) .urgency-message {
+2025-03-05T05:33:32.827606Z	       ^
+2025-03-05T05:33:32.827689Z	228:     background-color: #4d2600;
+2025-03-05T05:33:32.827797Z	229:     color: #ff9933;
+2025-03-05T05:33:32.827902Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:239:4 Unused CSS selector ".button-container"
+2025-03-05T05:33:32.828007Z	237: 
+2025-03-05T05:33:32.828129Z	238:   @media (max-width: 768px) {
+2025-03-05T05:33:32.828273Z	239:     .button-container {
+2025-03-05T05:33:32.828384Z	         ^
+2025-03-05T05:33:32.828598Z	240:       flex-direction: column;
+2025-03-05T05:33:32.828732Z	241:     }
+2025-03-05T05:33:32.828915Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:243:4 Unused CSS selector ".big-button"
+2025-03-05T05:33:32.829088Z	241:     }
+2025-03-05T05:33:32.829207Z	242: 
+2025-03-05T05:33:32.829358Z	243:     .big-button {
+2025-03-05T05:33:32.829464Z	         ^
+2025-03-05T05:33:32.829585Z	244:       width: 100%;
+2025-03-05T05:33:32.829681Z	245:     }
+2025-03-05T05:33:32.940187Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/policies/+page.svelte:84:2 Unused CSS selector ".spacer-text"
+2025-03-05T05:33:32.940505Z	82:   }
+2025-03-05T05:33:32.940632Z	83: 
+2025-03-05T05:33:32.940852Z	84:   .spacer-text {
+2025-03-05T05:33:32.941125Z	      ^
+2025-03-05T05:33:32.941706Z	85:     font-size: 1.5rem;
+2025-03-05T05:33:32.941858Z	86:     font-weight: bold;
+2025-03-05T05:33:32.993062Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:200:2 Unused CSS selector ".cta-button"
+2025-03-05T05:33:32.9934Z	198:   }
+2025-03-05T05:33:32.993573Z	199: 
+2025-03-05T05:33:32.993702Z	200:   .cta-button {
+2025-03-05T05:33:32.993802Z	       ^
+2025-03-05T05:33:32.993904Z	201:     font-weight: bold;
+2025-03-05T05:33:32.994007Z	202:     background: linear-gradient(135deg, #FF9933 0%, #FF8000 100%);
+2025-03-05T05:33:32.994117Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:217:2 Unused CSS selector ".cta-button:before"
+2025-03-05T05:33:32.994232Z	215:   }
+2025-03-05T05:33:32.994362Z	216: 
+2025-03-05T05:33:32.994435Z	217:   .cta-button:before {
+2025-03-05T05:33:32.99449Z	       ^
+2025-03-05T05:33:32.994572Z	218:     content: '';
+2025-03-05T05:33:32.994643Z	219:     position: absolute;
+2025-03-05T05:33:32.994699Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:233:2 Unused CSS selector ".cta-button:hover"
+2025-03-05T05:33:32.994755Z	231:   }
+2025-03-05T05:33:32.99481Z	232: 
+2025-03-05T05:33:32.994863Z	233:   .cta-button:hover {
+2025-03-05T05:33:32.994927Z	       ^
+2025-03-05T05:33:32.994985Z	234:     background: linear-gradient(135deg, #FF8000 0%, #FF6600 100%);
+2025-03-05T05:33:32.995039Z	235:     transform: translateY(-3px) scale(1.02);
+2025-03-05T05:33:32.995093Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:239:2 Unused CSS selector ".cta-button:hover:before"
+2025-03-05T05:33:32.995151Z	237:   }
+2025-03-05T05:33:32.995207Z	238: 
+2025-03-05T05:33:32.995259Z	239:   .cta-button:hover:before {
+2025-03-05T05:33:32.995341Z	       ^
+2025-03-05T05:33:32.995407Z	240:     left: 100%;
+2025-03-05T05:33:32.995461Z	241:   }
+2025-03-05T05:33:32.995515Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:243:2 Unused CSS selector ".cta-button:active"
+2025-03-05T05:33:32.99557Z	241:   }
+2025-03-05T05:33:32.995623Z	242: 
+2025-03-05T05:33:32.995678Z	243:   .cta-button:active {
+2025-03-05T05:33:32.995732Z	       ^
+2025-03-05T05:33:32.995835Z	244:     transform: translateY(0);
+2025-03-05T05:33:32.996077Z	245:     box-shadow: 0 4px 8px rgba(255, 153, 51, 0.2);
+2025-03-05T05:33:32.99715Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:248:2 Unused CSS selector ".pulse-animation"
+2025-03-05T05:33:32.997257Z	246:   }
+2025-03-05T05:33:32.997436Z	247: 
+2025-03-05T05:33:32.997579Z	248:   .pulse-animation {
+2025-03-05T05:33:32.997697Z	       ^
+2025-03-05T05:33:32.997804Z	249:     animation: pulse 2s infinite;
+2025-03-05T05:33:32.99793Z	250:   }
+2025-03-05T05:33:32.998037Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:363:2 Unused CSS selector ".bg-grid-pattern"
+2025-03-05T05:33:32.998149Z	361: 
+2025-03-05T05:33:32.998246Z	362:   /* Background grid pattern */
+2025-03-05T05:33:32.998378Z	363:   .bg-grid-pattern {
+2025-03-05T05:33:32.998514Z	       ^
+2025-03-05T05:33:32.998614Z	364:     background-size: 20px 20px;
+2025-03-05T05:33:32.998716Z	365:     background-image:
+2025-03-05T05:33:32.998832Z	5:33:32 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:435:4 Unused CSS selector ".cta-button"
+2025-03-05T05:33:32.998938Z	433:     }
+2025-03-05T05:33:32.999039Z	434: 
+2025-03-05T05:33:32.999156Z	435:     .cta-button {
+2025-03-05T05:33:32.999267Z	         ^
+2025-03-05T05:33:32.999388Z	436:       font-size: 1rem;
+2025-03-05T05:33:32.999489Z	437:       padding: 0.75rem 1.5rem;
+2025-03-05T05:33:33.097142Z	[33mThe glob option "as" has been deprecated in favour of "query". Please update `as: 'raw'` to `query: '?raw', import: 'default'`.[39m
+2025-03-05T05:33:33.102283Z	[33mThe glob option "as" has been deprecated in favour of "query". Please update `as: 'raw'` to `query: '?raw', import: 'default'`.[39m
+2025-03-05T05:33:33.53717Z	5:33:33 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:61:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:33.537562Z	59: 
+2025-03-05T05:33:33.537748Z	60: <div class="skool-group">
+2025-03-05T05:33:33.537907Z	61:   <div class="title-container" on:click={handleSkool} role="button" tabindex="0">
+2025-03-05T05:33:33.538024Z	      ^
+2025-03-05T05:33:33.538123Z	62:     <h2 class="title">{title}</h2>
+2025-03-05T05:33:33.538224Z	63:     <p class="subtitle">{subtitle}</p>
+2025-03-05T05:33:33.538348Z	5:33:33 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:67:4 A11y: Non-interactive element <p> cannot have interactive role 'button'
+2025-03-05T05:33:33.538483Z	65:   <div class="content">
+2025-03-05T05:33:33.538591Z	66:     <img src={imageSrc} alt={imageAlt} />
+2025-03-05T05:33:33.538687Z	67:     <p class="skool-benefit" on:click={handleSkool} role="button" tabindex="0">{skoolBenefit}</p>
+2025-03-05T05:33:33.538782Z	        ^
+2025-03-05T05:33:33.538888Z	68:     <p class="tagline">Your Complete AI Mastery Program</p>
+2025-03-05T05:33:33.538995Z	69:     <p>{description}</p>
+2025-03-05T05:33:33.539109Z	5:33:33 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:67:4 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:33.539226Z	65:   <div class="content">
+2025-03-05T05:33:33.539355Z	66:     <img src={imageSrc} alt={imageAlt} />
+2025-03-05T05:33:33.539467Z	67:     <p class="skool-benefit" on:click={handleSkool} role="button" tabindex="0">{skoolBenefit}</p>
+2025-03-05T05:33:33.539693Z	        ^
+2025-03-05T05:33:33.539804Z	68:     <p class="tagline">Your Complete AI Mastery Program</p>
+2025-03-05T05:33:33.539899Z	69:     <p>{description}</p>
+2025-03-05T05:33:33.540053Z	5:33:33 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:92:4 A11y: Non-interactive element <p> cannot have interactive role 'button'
+2025-03-05T05:33:33.540227Z	90:     <button on:click={handleSkool}>{buttonText}</button>
+2025-03-05T05:33:33.540374Z	91:     <p class="dont-wait">Don't miss out on this opportunity to future-proof your skills!</p>
+2025-03-05T05:33:33.540487Z	92:     <p class="limited-offer" class:urgent={isUrgent} on:click={handleSkool} role="button" tabindex="0">{limitedOffer}</p>
+2025-03-05T05:33:33.540618Z	        ^
+2025-03-05T05:33:33.540809Z	93:     <button class="final-cta" on:click={handleSkool}>Start Your AI Mastery Journey Today</button>
+2025-03-05T05:33:33.540937Z	94:     <p class="cta-explanation">By clicking this button, you'll be directed to our Skool community page where you can join the AI Mastery Guild and gain access to all program benefits.</p>
+2025-03-05T05:33:33.541062Z	5:33:33 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:92:4 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:33.541232Z	90:     <button on:click={handleSkool}>{buttonText}</button>
+2025-03-05T05:33:33.541386Z	91:     <p class="dont-wait">Don't miss out on this opportunity to future-proof your skills!</p>
+2025-03-05T05:33:33.541491Z	92:     <p class="limited-offer" class:urgent={isUrgent} on:click={handleSkool} role="button" tabindex="0">{limitedOffer}</p>
+2025-03-05T05:33:33.54159Z	        ^
+2025-03-05T05:33:33.541791Z	93:     <button class="final-cta" on:click={handleSkool}>Start Your AI Mastery Journey Today</button>
+2025-03-05T05:33:33.541917Z	94:     <p class="cta-explanation">By clicking this button, you'll be directed to our Skool community page where you can join the AI Mastery Guild and gain access to all program benefits.</p>
+2025-03-05T05:33:34.826928Z	5:33:34 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterLayout.svelte:67:4 Unused CSS selector ".newsletter-main"
+2025-03-05T05:33:34.827378Z	65:     }
+2025-03-05T05:33:34.827864Z	66: 
+2025-03-05T05:33:34.828118Z	67:     .newsletter-main {
+2025-03-05T05:33:34.82822Z	        ^
+2025-03-05T05:33:34.828467Z	68:       display: flex;
+2025-03-05T05:33:34.828548Z	69:       flex-direction: column;
+2025-03-05T05:33:34.829115Z	5:33:34 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterLayout.svelte:77:4 Unused CSS selector ":global(.dark) .newsletter-main"
+2025-03-05T05:33:34.829239Z	75:     }
+2025-03-05T05:33:34.829361Z	76: 
+2025-03-05T05:33:34.829472Z	77:     :global(.dark) .newsletter-main {
+2025-03-05T05:33:34.829567Z	        ^
+2025-03-05T05:33:34.829673Z	78:       background-color: #1f2937;
+2025-03-05T05:33:34.829763Z	79:     }
+2025-03-05T05:33:34.829862Z	5:33:34 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterLayout.svelte:88:6 Unused CSS selector ".newsletter-main"
+2025-03-05T05:33:34.829956Z	86:       }
+2025-03-05T05:33:34.830211Z	87: 
+2025-03-05T05:33:34.830382Z	88:       .newsletter-main {
+2025-03-05T05:33:34.830495Z	          ^
+2025-03-05T05:33:34.8306Z	89:         padding: 1.25rem;
+2025-03-05T05:33:34.830702Z	90:       }
+2025-03-05T05:33:35.200849Z	5:33:35 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/HookEmPopup.svelte:124:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:35.20119Z	122: 
+2025-03-05T05:33:35.201348Z	123: {#if isOpen}
+2025-03-05T05:33:35.201461Z	124:   <div class="popup-overlay" transition:fade="{{ duration: 300 }}" on:click|self={closePopup}>
+2025-03-05T05:33:35.201581Z	       ^
+2025-03-05T05:33:35.201693Z	125:     <div class="popup"
+2025-03-05T05:33:35.201811Z	126:          in:fly="{{ y: 100, duration: 800, easing: backOut }}"
+2025-03-05T05:33:35.201913Z	5:33:35 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/HookEmPopup.svelte:124:2 A11y: <div> with click handler must have an ARIA role
+2025-03-05T05:33:35.202004Z	122: 
+2025-03-05T05:33:35.202107Z	123: {#if isOpen}
+2025-03-05T05:33:35.202207Z	124:   <div class="popup-overlay" transition:fade="{{ duration: 300 }}" on:click|self={closePopup}>
+2025-03-05T05:33:35.202344Z	       ^
+2025-03-05T05:33:35.202464Z	125:     <div class="popup"
+2025-03-05T05:33:35.202573Z	126:          in:fly="{{ y: 100, duration: 800, easing: backOut }}"
+2025-03-05T05:33:39.935569Z	5:33:39 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:258:2 Unused CSS selector ".newsletter-list"
+2025-03-05T05:33:39.936191Z	256: <style lang="postcss">
+2025-03-05T05:33:39.936345Z	257:   /* Base Styles */
+2025-03-05T05:33:39.936507Z	258:   .newsletter-list {
+2025-03-05T05:33:39.936631Z	       ^
+2025-03-05T05:33:39.936742Z	259:     display: flex;
+2025-03-05T05:33:39.93684Z	260:     flex-direction: column;
+2025-03-05T05:33:39.93694Z	5:33:39 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:264:2 Unused CSS selector ".newsletter-list::-webkit-scrollbar"
+2025-03-05T05:33:39.937037Z	262: 
+2025-03-05T05:33:39.937133Z	263:   /* Custom scrollbar */
+2025-03-05T05:33:39.937296Z	264:   .newsletter-list::-webkit-scrollbar {
+2025-03-05T05:33:39.937488Z	       ^
+2025-03-05T05:33:39.937596Z	265:     width: 1px;
+2025-03-05T05:33:39.937675Z	266:   }
+2025-03-05T05:33:39.937732Z	5:33:39 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:268:2 Unused CSS selector ".newsletter-list::-webkit-scrollbar-track"
+2025-03-05T05:33:39.937798Z	266:   }
+2025-03-05T05:33:39.937915Z	267: 
+2025-03-05T05:33:39.938065Z	268:   .newsletter-list::-webkit-scrollbar-track {
+2025-03-05T05:33:39.938149Z	       ^
+2025-03-05T05:33:39.93823Z	269:     background: transparent;
+2025-03-05T05:33:39.938357Z	270:   }
+2025-03-05T05:33:39.938463Z	5:33:39 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:272:2 Unused CSS selector ".newsletter-list::-webkit-scrollbar-thumb"
+2025-03-05T05:33:39.938561Z	270:   }
+2025-03-05T05:33:39.938662Z	271: 
+2025-03-05T05:33:39.93876Z	272:   .newsletter-list::-webkit-scrollbar-thumb {
+2025-03-05T05:33:39.93886Z	       ^
+2025-03-05T05:33:39.939008Z	273:     background-color: rgba(156, 163, 175, 0.5);
+2025-03-05T05:33:39.939113Z	274:     border-radius: 20px;
+2025-03-05T05:33:40.562839Z	[32m✓[39m 972 modules transformed.
+2025-03-05T05:33:40.707346Z	rendering chunks...
+2025-03-05T05:33:41.52916Z	Using content directory: /opt/buildhome/repo/src/lib/data/blog-posts
+2025-03-05T05:33:41.661752Z	[36mvite v5.2.13 [32mbuilding for production...[36m[39m
+2025-03-05T05:33:41.669352Z	transforming...
+2025-03-05T05:33:42.595993Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/blog/robot-farm-bot/+page.svelte:23:6 A11y: Screenreaders already announce <img> elements as an image.
+2025-03-05T05:33:42.596283Z	21:       </div>
+2025-03-05T05:33:42.59644Z	22:   
+2025-03-05T05:33:42.596564Z	23:       <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
+2025-03-05T05:33:42.596647Z	          ^
+2025-03-05T05:33:42.596741Z	24:   
+2025-03-05T05:33:42.596834Z	25:       <div class="blog-content">
+2025-03-05T05:33:42.596926Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:92:2 Unused CSS selector ".quote-container"
+2025-03-05T05:33:42.597Z	90:   }
+2025-03-05T05:33:42.597059Z	91: 
+2025-03-05T05:33:42.597153Z	92:   .quote-container {
+2025-03-05T05:33:42.597246Z	      ^
+2025-03-05T05:33:42.597359Z	93:     display: flex;
+2025-03-05T05:33:42.597487Z	94:     flex-direction: column;
+2025-03-05T05:33:42.597584Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:100:2 Unused CSS selector ".quote"
+2025-03-05T05:33:42.597654Z	 98:   }
+2025-03-05T05:33:42.597977Z	 99: 
+2025-03-05T05:33:42.598345Z	100:   .quote {
+2025-03-05T05:33:42.598659Z	       ^
+2025-03-05T05:33:42.59899Z	101:     font-style: italic;
+2025-03-05T05:33:42.599084Z	102:     font-size: 1.8rem;
+2025-03-05T05:33:42.59927Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:110:2 Unused CSS selector ".attribution"
+2025-03-05T05:33:42.599383Z	108:   }
+2025-03-05T05:33:42.599676Z	109: 
+2025-03-05T05:33:42.599778Z	110:   .attribution {
+2025-03-05T05:33:42.600043Z	       ^
+2025-03-05T05:33:42.600223Z	111:     font-weight: bold;
+2025-03-05T05:33:42.600433Z	112:     margin-top: 1rem;
+2025-03-05T05:33:42.600599Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:117:2 Unused CSS selector ".button-container"
+2025-03-05T05:33:42.600745Z	115:   }
+2025-03-05T05:33:42.601004Z	116: 
+2025-03-05T05:33:42.601078Z	117:   .button-container {
+2025-03-05T05:33:42.601178Z	       ^
+2025-03-05T05:33:42.601569Z	118:     display: flex;
+2025-03-05T05:33:42.601804Z	119:     justify-content: center;
+2025-03-05T05:33:42.602045Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:124:2 Unused CSS selector ".big-button"
+2025-03-05T05:33:42.602131Z	122:   }
+2025-03-05T05:33:42.60242Z	123: 
+2025-03-05T05:33:42.602502Z	124:   .big-button {
+2025-03-05T05:33:42.602694Z	       ^
+2025-03-05T05:33:42.602842Z	125:     font-weight: 600;
+2025-03-05T05:33:42.602973Z	126:     font-size: 1.2rem;
+2025-03-05T05:33:42.603239Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:135:2 Unused CSS selector ".cancel-button"
+2025-03-05T05:33:42.60342Z	133:   }
+2025-03-05T05:33:42.603569Z	134: 
+2025-03-05T05:33:42.603697Z	135:   .cancel-button {
+2025-03-05T05:33:42.60385Z	       ^
+2025-03-05T05:33:42.60393Z	136:     background-color: var(--color-bg-secondary);
+2025-03-05T05:33:42.604084Z	137:     color: var(--color-text-primary);
+2025-03-05T05:33:42.604205Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:141:2 Unused CSS selector ".preorder-button"
+2025-03-05T05:33:42.604329Z	139:   }
+2025-03-05T05:33:42.604539Z	140: 
+2025-03-05T05:33:42.604681Z	141:   .preorder-button {
+2025-03-05T05:33:42.604793Z	       ^
+2025-03-05T05:33:42.605017Z	142:     background-color: #ff6600;
+2025-03-05T05:33:42.605197Z	143:     color: white;
+2025-03-05T05:33:42.605362Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:147:2 Unused CSS selector ".big-button:hover"
+2025-03-05T05:33:42.605497Z	145:   }
+2025-03-05T05:33:42.605625Z	146: 
+2025-03-05T05:33:42.605776Z	147:   .big-button:hover {
+2025-03-05T05:33:42.605915Z	       ^
+2025-03-05T05:33:42.606021Z	148:     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+2025-03-05T05:33:42.606152Z	149:     transform: translateY(-3px);
+2025-03-05T05:33:42.60628Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:152:2 Unused CSS selector ".cancel-button:hover"
+2025-03-05T05:33:42.606398Z	150:   }
+2025-03-05T05:33:42.606502Z	151: 
+2025-03-05T05:33:42.6066Z	152:   .cancel-button:hover {
+2025-03-05T05:33:42.606741Z	       ^
+2025-03-05T05:33:42.606858Z	153:     background-color: var(--color-bg-hover);
+2025-03-05T05:33:42.606995Z	154:   }
+2025-03-05T05:33:42.607105Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:156:2 Unused CSS selector ".preorder-button:hover"
+2025-03-05T05:33:42.607224Z	154:   }
+2025-03-05T05:33:42.607345Z	155: 
+2025-03-05T05:33:42.607459Z	156:   .preorder-button:hover {
+2025-03-05T05:33:42.607556Z	       ^
+2025-03-05T05:33:42.60765Z	157:     background-color: #ff8533;
+2025-03-05T05:33:42.607745Z	158:   }
+2025-03-05T05:33:42.607858Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:167:2 Unused CSS selector ".benefits-container"
+2025-03-05T05:33:42.607979Z	165:   }
+2025-03-05T05:33:42.608084Z	166: 
+2025-03-05T05:33:42.608182Z	167:   .benefits-container {
+2025-03-05T05:33:42.608273Z	       ^
+2025-03-05T05:33:42.608408Z	168:     background-color: var(--color-bg-secondary);
+2025-03-05T05:33:42.608522Z	169:     border: 2px solid #ff6600;
+2025-03-05T05:33:42.608619Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:176:2 Unused CSS selector ".benefits-container h2"
+2025-03-05T05:33:42.608715Z	174:   }
+2025-03-05T05:33:42.608809Z	175: 
+2025-03-05T05:33:42.608911Z	176:   .benefits-container h2 {
+2025-03-05T05:33:42.609013Z	       ^
+2025-03-05T05:33:42.609108Z	177:     font-size: 1.4rem;
+2025-03-05T05:33:42.609213Z	178:     margin-bottom: 1rem;
+2025-03-05T05:33:42.609325Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:182:2 Unused CSS selector ".benefits-container ul"
+2025-03-05T05:33:42.609448Z	180:   }
+2025-03-05T05:33:42.609556Z	181: 
+2025-03-05T05:33:42.609663Z	182:   .benefits-container ul {
+2025-03-05T05:33:42.60977Z	       ^
+2025-03-05T05:33:42.609875Z	183:     text-align: left;
+2025-03-05T05:33:42.609976Z	184:     display: inline-block;
+2025-03-05T05:33:42.610079Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:188:2 Unused CSS selector ".benefits-container li"
+2025-03-05T05:33:42.610192Z	186:   }
+2025-03-05T05:33:42.610289Z	187: 
+2025-03-05T05:33:42.610409Z	188:   .benefits-container li {
+2025-03-05T05:33:42.61052Z	       ^
+2025-03-05T05:33:42.610619Z	189:     color: var(--color-text-secondary);
+2025-03-05T05:33:42.610721Z	190:     margin-bottom: 0.5rem;
+2025-03-05T05:33:42.610829Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:194:2 Unused CSS selector ".error"
+2025-03-05T05:33:42.610941Z	192:   }
+2025-03-05T05:33:42.611053Z	193: 
+2025-03-05T05:33:42.611162Z	194:   .error {
+2025-03-05T05:33:42.611274Z	       ^
+2025-03-05T05:33:42.611436Z	195:     color: #ff3333;
+2025-03-05T05:33:42.611547Z	196:     text-align: center;
+2025-03-05T05:33:42.611625Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:200:2 Unused CSS selector ".loader"
+2025-03-05T05:33:42.611713Z	198:   }
+2025-03-05T05:33:42.611855Z	199: 
+2025-03-05T05:33:42.612031Z	200:   .loader {
+2025-03-05T05:33:42.61218Z	       ^
+2025-03-05T05:33:42.612351Z	201:     display: inline-block;
+2025-03-05T05:33:42.612518Z	202:     width: 24px;
+2025-03-05T05:33:42.612669Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:214:2 Unused CSS selector ".urgency-message"
+2025-03-05T05:33:42.612743Z	212:   }
+2025-03-05T05:33:42.612855Z	213: 
+2025-03-05T05:33:42.613041Z	214:   .urgency-message {
+2025-03-05T05:33:42.613194Z	       ^
+2025-03-05T05:33:42.613356Z	215:     background-color: #fff3e6;
+2025-03-05T05:33:42.613677Z	216:     border: 2px solid #ff6600;
+2025-03-05T05:33:42.613867Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:227:2 Unused CSS selector ":global(.dark) .urgency-message"
+2025-03-05T05:33:42.614139Z	225:   }
+2025-03-05T05:33:42.614295Z	226: 
+2025-03-05T05:33:42.614455Z	227:   :global(.dark) .urgency-message {
+2025-03-05T05:33:42.614606Z	       ^
+2025-03-05T05:33:42.614758Z	228:     background-color: #4d2600;
+2025-03-05T05:33:42.614874Z	229:     color: #ff9933;
+2025-03-05T05:33:42.614983Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:239:4 Unused CSS selector ".button-container"
+2025-03-05T05:33:42.615135Z	237: 
+2025-03-05T05:33:42.615265Z	238:   @media (max-width: 768px) {
+2025-03-05T05:33:42.615381Z	239:     .button-container {
+2025-03-05T05:33:42.615497Z	         ^
+2025-03-05T05:33:42.615616Z	240:       flex-direction: column;
+2025-03-05T05:33:42.615717Z	241:     }
+2025-03-05T05:33:42.615792Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/cancel/+page.svelte:243:4 Unused CSS selector ".big-button"
+2025-03-05T05:33:42.615929Z	241:     }
+2025-03-05T05:33:42.616059Z	242: 
+2025-03-05T05:33:42.61617Z	243:     .big-button {
+2025-03-05T05:33:42.616289Z	         ^
+2025-03-05T05:33:42.616414Z	244:       width: 100%;
+2025-03-05T05:33:42.616516Z	245:     }
+2025-03-05T05:33:42.616615Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/book/[sectionId]/+page.svelte:218:2 Unused CSS selector ".icon"
+2025-03-05T05:33:42.616718Z	216:   }
+2025-03-05T05:33:42.616835Z	217: 
+2025-03-05T05:33:42.616936Z	218:   .icon {
+2025-03-05T05:33:42.617045Z	       ^
+2025-03-05T05:33:42.617152Z	219:     margin-right: 0.5rem;
+2025-03-05T05:33:42.617254Z	220:     font-size: 1.5rem;
+2025-03-05T05:33:42.617371Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/blog/farm-bot-deep-dive/+page.svelte:23:6 A11y: Screenreaders already announce <img> elements as an image.
+2025-03-05T05:33:42.617482Z	21:       </div>
+2025-03-05T05:33:42.617572Z	22:   
+2025-03-05T05:33:42.617667Z	23:       <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
+2025-03-05T05:33:42.617761Z	          ^
+2025-03-05T05:33:42.617854Z	24:   
+2025-03-05T05:33:42.617947Z	25:       <div class="blog-content">
+2025-03-05T05:33:42.618041Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/coming-soon/+page.svelte:70:12 A11y: A form label must be associated with a control.
+2025-03-05T05:33:42.618136Z	68:         <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+2025-03-05T05:33:42.618227Z	69:           <div class="content__gdpr">
+2025-03-05T05:33:42.618335Z	70:             <label>Marketing Permissions</label>
+2025-03-05T05:33:42.61845Z	                ^
+2025-03-05T05:33:42.618551Z	71:             <p>Please select all the ways you would like to hear from us.</p>
+2025-03-05T05:33:42.618659Z	72:             <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+2025-03-05T05:33:42.618759Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/coming-soon/+page.svelte:136:2 Unused CSS selector ".action-button"
+2025-03-05T05:33:42.618856Z	134:   }
+2025-03-05T05:33:42.618953Z	135: 
+2025-03-05T05:33:42.61905Z	136:   .action-button {
+2025-03-05T05:33:42.619138Z	       ^
+2025-03-05T05:33:42.619228Z	137:     font-weight: bold;
+2025-03-05T05:33:42.619337Z	138:     background-color: #f8f9fa;
+2025-03-05T05:33:42.619441Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/coming-soon/+page.svelte:146:2 Unused CSS selector ".action-button:hover"
+2025-03-05T05:33:42.619537Z	144:   }
+2025-03-05T05:33:42.61963Z	145: 
+2025-03-05T05:33:42.619722Z	146:   .action-button:hover {
+2025-03-05T05:33:42.619817Z	       ^
+2025-03-05T05:33:42.619908Z	147:     background-color: #000000;
+2025-03-05T05:33:42.619998Z	148:     color: #ffffff;
+2025-03-05T05:33:42.62009Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/policies/+page.svelte:84:2 Unused CSS selector ".spacer-text"
+2025-03-05T05:33:42.620196Z	82:   }
+2025-03-05T05:33:42.620291Z	83: 
+2025-03-05T05:33:42.620433Z	84:   .spacer-text {
+2025-03-05T05:33:42.620533Z	      ^
+2025-03-05T05:33:42.620624Z	85:     font-size: 1.5rem;
+2025-03-05T05:33:42.620723Z	86:     font-weight: bold;
+2025-03-05T05:33:42.620835Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:200:2 Unused CSS selector ".cta-button"
+2025-03-05T05:33:42.620937Z	198:   }
+2025-03-05T05:33:42.621045Z	199: 
+2025-03-05T05:33:42.621149Z	200:   .cta-button {
+2025-03-05T05:33:42.621247Z	       ^
+2025-03-05T05:33:42.621363Z	201:     font-weight: bold;
+2025-03-05T05:33:42.621477Z	202:     background: linear-gradient(135deg, #FF9933 0%, #FF8000 100%);
+2025-03-05T05:33:42.621582Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:217:2 Unused CSS selector ".cta-button:before"
+2025-03-05T05:33:42.621694Z	215:   }
+2025-03-05T05:33:42.6218Z	216: 
+2025-03-05T05:33:42.621905Z	217:   .cta-button:before {
+2025-03-05T05:33:42.621995Z	       ^
+2025-03-05T05:33:42.622086Z	218:     content: '';
+2025-03-05T05:33:42.622205Z	219:     position: absolute;
+2025-03-05T05:33:42.622321Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:233:2 Unused CSS selector ".cta-button:hover"
+2025-03-05T05:33:42.622444Z	231:   }
+2025-03-05T05:33:42.622551Z	232: 
+2025-03-05T05:33:42.622653Z	233:   .cta-button:hover {
+2025-03-05T05:33:42.62275Z	       ^
+2025-03-05T05:33:42.622835Z	234:     background: linear-gradient(135deg, #FF8000 0%, #FF6600 100%);
+2025-03-05T05:33:42.622925Z	235:     transform: translateY(-3px) scale(1.02);
+2025-03-05T05:33:42.623032Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:239:2 Unused CSS selector ".cta-button:hover:before"
+2025-03-05T05:33:42.623108Z	237:   }
+2025-03-05T05:33:42.62318Z	238: 
+2025-03-05T05:33:42.623284Z	239:   .cta-button:hover:before {
+2025-03-05T05:33:42.623403Z	       ^
+2025-03-05T05:33:42.623508Z	240:     left: 100%;
+2025-03-05T05:33:42.623631Z	241:   }
+2025-03-05T05:33:42.623729Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:243:2 Unused CSS selector ".cta-button:active"
+2025-03-05T05:33:42.623825Z	241:   }
+2025-03-05T05:33:42.623912Z	242: 
+2025-03-05T05:33:42.624002Z	243:   .cta-button:active {
+2025-03-05T05:33:42.624108Z	       ^
+2025-03-05T05:33:42.624209Z	244:     transform: translateY(0);
+2025-03-05T05:33:42.624312Z	245:     box-shadow: 0 4px 8px rgba(255, 153, 51, 0.2);
+2025-03-05T05:33:42.624407Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:248:2 Unused CSS selector ".pulse-animation"
+2025-03-05T05:33:42.624473Z	246:   }
+2025-03-05T05:33:42.624554Z	247: 
+2025-03-05T05:33:42.624632Z	248:   .pulse-animation {
+2025-03-05T05:33:42.624718Z	       ^
+2025-03-05T05:33:42.624805Z	249:     animation: pulse 2s infinite;
+2025-03-05T05:33:42.624924Z	250:   }
+2025-03-05T05:33:42.625039Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:363:2 Unused CSS selector ".bg-grid-pattern"
+2025-03-05T05:33:42.625142Z	361: 
+2025-03-05T05:33:42.625243Z	362:   /* Background grid pattern */
+2025-03-05T05:33:42.625353Z	363:   .bg-grid-pattern {
+2025-03-05T05:33:42.62545Z	       ^
+2025-03-05T05:33:42.625545Z	364:     background-size: 20px 20px;
+2025-03-05T05:33:42.625647Z	365:     background-image:
+2025-03-05T05:33:42.625817Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/routes/sample/+page.svelte:435:4 Unused CSS selector ".cta-button"
+2025-03-05T05:33:42.625932Z	433:     }
+2025-03-05T05:33:42.626057Z	434: 
+2025-03-05T05:33:42.626219Z	435:     .cta-button {
+2025-03-05T05:33:42.626381Z	         ^
+2025-03-05T05:33:42.626505Z	436:       font-size: 1rem;
+2025-03-05T05:33:42.626609Z	437:       padding: 0.75rem 1.5rem;
+2025-03-05T05:33:42.701349Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterLayout.svelte:67:4 Unused CSS selector ".newsletter-main"
+2025-03-05T05:33:42.701959Z	65:     }
+2025-03-05T05:33:42.702105Z	66: 
+2025-03-05T05:33:42.702571Z	67:     .newsletter-main {
+2025-03-05T05:33:42.702693Z	        ^
+2025-03-05T05:33:42.703211Z	68:       display: flex;
+2025-03-05T05:33:42.703378Z	69:       flex-direction: column;
+2025-03-05T05:33:42.703815Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterLayout.svelte:77:4 Unused CSS selector ":global(.dark) .newsletter-main"
+2025-03-05T05:33:42.704026Z	75:     }
+2025-03-05T05:33:42.704106Z	76: 
+2025-03-05T05:33:42.704259Z	77:     :global(.dark) .newsletter-main {
+2025-03-05T05:33:42.704461Z	        ^
+2025-03-05T05:33:42.704604Z	78:       background-color: #1f2937;
+2025-03-05T05:33:42.704705Z	79:     }
+2025-03-05T05:33:42.70481Z	5:33:42 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterLayout.svelte:88:6 Unused CSS selector ".newsletter-main"
+2025-03-05T05:33:42.705017Z	86:       }
+2025-03-05T05:33:42.705107Z	87: 
+2025-03-05T05:33:42.705259Z	88:       .newsletter-main {
+2025-03-05T05:33:42.705399Z	          ^
+2025-03-05T05:33:42.705556Z	89:         padding: 1.25rem;
+2025-03-05T05:33:42.705689Z	90:       }
+2025-03-05T05:33:43.246646Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:61:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:43.24728Z	59: 
+2025-03-05T05:33:43.247467Z	60: <div class="skool-group">
+2025-03-05T05:33:43.247575Z	61:   <div class="title-container" on:click={handleSkool} role="button" tabindex="0">
+2025-03-05T05:33:43.247677Z	      ^
+2025-03-05T05:33:43.247768Z	62:     <h2 class="title">{title}</h2>
+2025-03-05T05:33:43.247856Z	63:     <p class="subtitle">{subtitle}</p>
+2025-03-05T05:33:43.247952Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:67:4 A11y: Non-interactive element <p> cannot have interactive role 'button'
+2025-03-05T05:33:43.248093Z	65:   <div class="content">
+2025-03-05T05:33:43.248193Z	66:     <img src={imageSrc} alt={imageAlt} />
+2025-03-05T05:33:43.249184Z	67:     <p class="skool-benefit" on:click={handleSkool} role="button" tabindex="0">{skoolBenefit}</p>
+2025-03-05T05:33:43.249365Z	        ^
+2025-03-05T05:33:43.249463Z	68:     <p class="tagline">Your Complete AI Mastery Program</p>
+2025-03-05T05:33:43.249572Z	69:     <p>{description}</p>
+2025-03-05T05:33:43.250139Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:67:4 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:43.250286Z	65:   <div class="content">
+2025-03-05T05:33:43.250797Z	66:     <img src={imageSrc} alt={imageAlt} />
+2025-03-05T05:33:43.250881Z	67:     <p class="skool-benefit" on:click={handleSkool} role="button" tabindex="0">{skoolBenefit}</p>
+2025-03-05T05:33:43.250964Z	        ^
+2025-03-05T05:33:43.251459Z	68:     <p class="tagline">Your Complete AI Mastery Program</p>
+2025-03-05T05:33:43.251545Z	69:     <p>{description}</p>
+2025-03-05T05:33:43.25165Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:92:4 A11y: Non-interactive element <p> cannot have interactive role 'button'
+2025-03-05T05:33:43.252016Z	90:     <button on:click={handleSkool}>{buttonText}</button>
+2025-03-05T05:33:43.252134Z	91:     <p class="dont-wait">Don't miss out on this opportunity to future-proof your skills!</p>
+2025-03-05T05:33:43.252247Z	92:     <p class="limited-offer" class:urgent={isUrgent} on:click={handleSkool} role="button" tabindex="0">{limitedOffer}</p>
+2025-03-05T05:33:43.252358Z	        ^
+2025-03-05T05:33:43.252465Z	93:     <button class="final-cta" on:click={handleSkool}>Start Your AI Mastery Journey Today</button>
+2025-03-05T05:33:43.252563Z	94:     <p class="cta-explanation">By clicking this button, you'll be directed to our Skool community page where you can join the AI Mastery Guild and gain access to all program benefits.</p>
+2025-03-05T05:33:43.25266Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/SkoolGroup.svelte:92:4 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:43.252769Z	90:     <button on:click={handleSkool}>{buttonText}</button>
+2025-03-05T05:33:43.252868Z	91:     <p class="dont-wait">Don't miss out on this opportunity to future-proof your skills!</p>
+2025-03-05T05:33:43.252956Z	92:     <p class="limited-offer" class:urgent={isUrgent} on:click={handleSkool} role="button" tabindex="0">{limitedOffer}</p>
+2025-03-05T05:33:43.253046Z	        ^
+2025-03-05T05:33:43.25315Z	93:     <button class="final-cta" on:click={handleSkool}>Start Your AI Mastery Journey Today</button>
+2025-03-05T05:33:43.253244Z	94:     <p class="cta-explanation">By clicking this button, you'll be directed to our Skool community page where you can join the AI Mastery Guild and gain access to all program benefits.</p>
+2025-03-05T05:33:43.900479Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:258:2 Unused CSS selector ".newsletter-list"
+2025-03-05T05:33:43.901171Z	256: <style lang="postcss">
+2025-03-05T05:33:43.901353Z	257:   /* Base Styles */
+2025-03-05T05:33:43.901848Z	258:   .newsletter-list {
+2025-03-05T05:33:43.90193Z	       ^
+2025-03-05T05:33:43.902014Z	259:     display: flex;
+2025-03-05T05:33:43.902143Z	260:     flex-direction: column;
+2025-03-05T05:33:43.902251Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:264:2 Unused CSS selector ".newsletter-list::-webkit-scrollbar"
+2025-03-05T05:33:43.902371Z	262: 
+2025-03-05T05:33:43.902467Z	263:   /* Custom scrollbar */
+2025-03-05T05:33:43.902566Z	264:   .newsletter-list::-webkit-scrollbar {
+2025-03-05T05:33:43.902668Z	       ^
+2025-03-05T05:33:43.902916Z	265:     width: 1px;
+2025-03-05T05:33:43.903046Z	266:   }
+2025-03-05T05:33:43.903175Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:268:2 Unused CSS selector ".newsletter-list::-webkit-scrollbar-track"
+2025-03-05T05:33:43.903363Z	266:   }
+2025-03-05T05:33:43.90352Z	267: 
+2025-03-05T05:33:43.90368Z	268:   .newsletter-list::-webkit-scrollbar-track {
+2025-03-05T05:33:43.903799Z	       ^
+2025-03-05T05:33:43.903902Z	269:     background: transparent;
+2025-03-05T05:33:43.904009Z	270:   }
+2025-03-05T05:33:43.904116Z	5:33:43 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/NewsletterList.svelte:272:2 Unused CSS selector ".newsletter-list::-webkit-scrollbar-thumb"
+2025-03-05T05:33:43.904228Z	270:   }
+2025-03-05T05:33:43.904357Z	271: 
+2025-03-05T05:33:43.904459Z	272:   .newsletter-list::-webkit-scrollbar-thumb {
+2025-03-05T05:33:43.904564Z	       ^
+2025-03-05T05:33:43.904667Z	273:     background-color: rgba(156, 163, 175, 0.5);
+2025-03-05T05:33:43.904766Z	274:     border-radius: 20px;
+2025-03-05T05:33:46.301446Z	5:33:46 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/HookEmPopup.svelte:124:2 A11y: visible, non-interactive elements with an on:click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as <button type="button"> or <a> might be more appropriate. See https://svelte.dev/docs/accessibility-warnings#a11y-click-events-have-key-events for more details.
+2025-03-05T05:33:46.301899Z	122: 
+2025-03-05T05:33:46.302284Z	123: {#if isOpen}
+2025-03-05T05:33:46.302627Z	124:   <div class="popup-overlay" transition:fade="{{ duration: 300 }}" on:click|self={closePopup}>
+2025-03-05T05:33:46.302885Z	       ^
+2025-03-05T05:33:46.303111Z	125:     <div class="popup"
+2025-03-05T05:33:46.30322Z	126:          in:fly="{{ y: 100, duration: 800, easing: backOut }}"
+2025-03-05T05:33:46.303345Z	5:33:46 AM [vite-plugin-svelte] /opt/buildhome/repo/src/lib/components/HookEmPopup.svelte:124:2 A11y: <div> with click handler must have an ARIA role
+2025-03-05T05:33:46.303442Z	122: 
+2025-03-05T05:33:46.30354Z	123: {#if isOpen}
+2025-03-05T05:33:46.303633Z	124:   <div class="popup-overlay" transition:fade="{{ duration: 300 }}" on:click|self={closePopup}>
+2025-03-05T05:33:46.303744Z	       ^
+2025-03-05T05:33:46.303848Z	125:     <div class="popup"
+2025-03-05T05:33:46.30395Z	126:          in:fly="{{ y: 100, duration: 800, easing: backOut }}"
+2025-03-05T05:34:01.913178Z	[32m✓[39m 1028 modules transformed.
+2025-03-05T05:34:02.213217Z	rendering chunks...
+2025-03-05T05:34:02.816534Z	computing gzip size...
+2025-03-05T05:34:02.871152Z	[2m.svelte-kit/output/client/[22m[32m_app/version.json                                                           [39m[1m[2m    0.03 kB[22m[1m[22m[2m │ gzip:   0.05 kB[22m
+2025-03-05T05:34:02.871508Z	[2m.svelte-kit/output/client/[22m[32m.vite/manifest.json                                                         [39m[1m[2m   31.46 kB[22m[1m[22m[2m │ gzip:   3.48 kB[22m
+2025-03-05T05:34:02.871652Z	[2m.svelte-kit/output/client/[22m[32m_app/immutable/assets/default-blog-image.-LBrR5g2.png                       [39m[1m[2m   33.53 kB[22m[1m[22m
+2025-03-05T05:34:02.871798Z	[2m.svelte-kit/output/client/[22m[32m_app/immutable/assets/StSFreeGuide.BjbLHlIE.png                             [39m[1m[2m  283.10 kB[22m[1m[22m
+2025-03-05T05:34:02.871951Z	[2m.svelte-kit/output/client/[22m[32m_app/immutable/assets/Surviving-the-Singularity-Cover.DVSibteC.png          [39m[1m[2m  426.99 kB[22m[1m[22m
+2025-03-05T05:34:02.872077Z	[2m.svelte-kit/output/client/[22m[32m_app/immutable/assets/sts-welcome.BNDB7Aot.png                              [39m[1m[2m1,152.09 kB[22m[1m[22m
+2025-03-05T05:34:02.872229Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/20.DM9W5W0m.css                                       [39m[1m[2m    0.03 kB[22m[1m[22m[2m │ gzip:   0.05 kB[22m
+2025-03-05T05:34:02.872403Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/17.DpqAc0et.css                                       [39m[1m[2m    0.06 kB[22m[1m[22m[2m │ gzip:   0.07 kB[22m
+2025-03-05T05:34:02.872545Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/35.32nLFVw4.css                                       [39m[1m[2m    0.07 kB[22m[1m[22m[2m │ gzip:   0.09 kB[22m
+2025-03-05T05:34:02.872682Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/18.Bsht-HWY.css                                       [39m[1m[2m    0.15 kB[22m[1m[22m[2m │ gzip:   0.12 kB[22m
+2025-03-05T05:34:02.872803Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/16.BO3UJCN5.css                                       [39m[1m[2m    0.24 kB[22m[1m[22m[2m │ gzip:   0.17 kB[22m
+2025-03-05T05:34:02.872915Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/13.DMTlRC5k.css                                       [39m[1m[2m    0.49 kB[22m[1m[22m[2m │ gzip:   0.29 kB[22m
+2025-03-05T05:34:02.873033Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/Divider.DPHn9zud.css                                  [39m[1m[2m    0.58 kB[22m[1m[22m[2m │ gzip:   0.22 kB[22m
+2025-03-05T05:34:02.873159Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/14.BJNOiLTL.css                                       [39m[1m[2m    0.77 kB[22m[1m[22m[2m │ gzip:   0.44 kB[22m
+2025-03-05T05:34:02.873268Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/NewsletterSignup.DGC-jofv.css                         [39m[1m[2m    0.79 kB[22m[1m[22m[2m │ gzip:   0.38 kB[22m
+2025-03-05T05:34:02.873388Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/24.DUmzRvir.css                                       [39m[1m[2m    0.85 kB[22m[1m[22m[2m │ gzip:   0.41 kB[22m
+2025-03-05T05:34:02.873509Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/27.CO3dR5MP.css                                       [39m[1m[2m    0.89 kB[22m[1m[22m[2m │ gzip:   0.36 kB[22m
+2025-03-05T05:34:02.873627Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/8.CkflPXE0.css                                        [39m[1m[2m    1.72 kB[22m[1m[22m[2m │ gzip:   0.58 kB[22m
+2025-03-05T05:34:02.873737Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/25.C48qChVj.css                                       [39m[1m[2m    1.83 kB[22m[1m[22m[2m │ gzip:   0.54 kB[22m
+2025-03-05T05:34:02.87384Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/23.kzF3xIoE.css                                       [39m[1m[2m    2.40 kB[22m[1m[22m[2m │ gzip:   0.74 kB[22m
+2025-03-05T05:34:02.873944Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/Countdown.CVpFi2T6.css                                [39m[1m[2m    2.48 kB[22m[1m[22m[2m │ gzip:   0.87 kB[22m
+2025-03-05T05:34:02.87405Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/15.D3CsEVEt.css                                       [39m[1m[2m    2.60 kB[22m[1m[22m[2m │ gzip:   0.64 kB[22m
+2025-03-05T05:34:02.87416Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/32.CgHfiP4W.css                                       [39m[1m[2m    3.29 kB[22m[1m[22m[2m │ gzip:   1.13 kB[22m
+2025-03-05T05:34:02.874354Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/ContactForm.BC1jFbgk.css                              [39m[1m[2m    3.51 kB[22m[1m[22m[2m │ gzip:   0.96 kB[22m
+2025-03-05T05:34:02.874505Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/7.4UCniQR_.css                                        [39m[1m[2m    3.57 kB[22m[1m[22m[2m │ gzip:   1.02 kB[22m
+2025-03-05T05:34:02.874581Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/11.CC0lLoEZ.css                                       [39m[1m[2m    3.69 kB[22m[1m[22m[2m │ gzip:   0.97 kB[22m
+2025-03-05T05:34:02.874711Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/33.CnS7mw19.css                                       [39m[1m[2m    3.72 kB[22m[1m[22m[2m │ gzip:   0.97 kB[22m
+2025-03-05T05:34:02.874875Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/BookSample.BXwBgBi7.css                               [39m[1m[2m    3.79 kB[22m[1m[22m[2m │ gzip:   0.89 kB[22m
+2025-03-05T05:34:02.875066Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/22.CSIzms4U.css                                       [39m[1m[2m    3.84 kB[22m[1m[22m[2m │ gzip:   1.23 kB[22m
+2025-03-05T05:34:02.875202Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/12.Fu1Y4l-d.css                                       [39m[1m[2m    4.42 kB[22m[1m[22m[2m │ gzip:   1.34 kB[22m
+2025-03-05T05:34:02.875449Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/NewsletterContent.Cqk_uZ8A.css                        [39m[1m[2m    4.44 kB[22m[1m[22m[2m │ gzip:   1.21 kB[22m
+2025-03-05T05:34:02.8761Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/10.C4bZ4NGd.css                                       [39m[1m[2m    7.06 kB[22m[1m[22m[2m │ gzip:   1.62 kB[22m
+2025-03-05T05:34:02.8762Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/6.Ce5PDI66.css                                        [39m[1m[2m    7.29 kB[22m[1m[22m[2m │ gzip:   1.65 kB[22m
+2025-03-05T05:34:02.876654Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/5.BQdpwo8H.css                                        [39m[1m[2m    7.88 kB[22m[1m[22m[2m │ gzip:   2.02 kB[22m
+2025-03-05T05:34:02.876756Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/4.9noRAutK.css                                        [39m[1m[2m    8.28 kB[22m[1m[22m[2m │ gzip:   1.91 kB[22m
+2025-03-05T05:34:02.876946Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/3.BIulsko7.css                                        [39m[1m[2m    8.35 kB[22m[1m[22m[2m │ gzip:   2.21 kB[22m
+2025-03-05T05:34:02.877073Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/SkoolGroup.Px3nw6nP.css                               [39m[1m[2m    8.50 kB[22m[1m[22m[2m │ gzip:   1.65 kB[22m
+2025-03-05T05:34:02.877333Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/2.C3Ej-UZI.css                                        [39m[1m[2m   12.19 kB[22m[1m[22m[2m │ gzip:   2.55 kB[22m
+2025-03-05T05:34:02.877476Z	[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/0.DerNkqn4.css                                        [39m[1m[2m  173.75 kB[22m[1m[22m[2m │ gzip:  23.16 kB[22m
+2025-03-05T05:34:02.877646Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.Bt-Xh7oU.js                                     [39m[1m[2m    0.07 kB[22m[1m[22m[2m │ gzip:   0.09 kB[22m[2m │ map:     0.40 kB[22m
+2025-03-05T05:34:02.877826Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/darkMode.CJg4t_8p.js                                  [39m[1m[2m    0.11 kB[22m[1m[22m[2m │ gzip:   0.13 kB[22m[2m │ map:     0.39 kB[22m
+2025-03-05T05:34:02.878568Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/entry/start.c33IHefg.js                                      [39m[1m[2m    0.11 kB[22m[1m[22m[2m │ gzip:   0.12 kB[22m[2m │ map:     0.10 kB[22m
+2025-03-05T05:34:02.878761Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/globals.D0QH3NT1.js                                   [39m[1m[2m    0.13 kB[22m[1m[22m[2m │ gzip:   0.13 kB[22m[2m │ map:     0.49 kB[22m
+2025-03-05T05:34:02.880622Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/sts-welcome.BXCGg3PT.js                               [39m[1m[2m    0.14 kB[22m[1m[22m[2m │ gzip:   0.15 kB[22m[2m │ map:     0.26 kB[22m
+2025-03-05T05:34:02.883017Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Surviving-the-Singularity-Cover.nb6E0gbt.js           [39m[1m[2m    0.18 kB[22m[1m[22m[2m │ gzip:   0.16 kB[22m[2m │ map:     0.30 kB[22m
+2025-03-05T05:34:02.883277Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/31.BPhRMEjL.js                                         [39m[1m[2m    0.23 kB[22m[1m[22m[2m │ gzip:   0.20 kB[22m[2m │ map:     0.10 kB[22m
+2025-03-05T05:34:02.88345Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/stores.D-JzeJAo.js                                    [39m[1m[2m    0.28 kB[22m[1m[22m[2m │ gzip:   0.20 kB[22m[2m │ map:     3.93 kB[22m
+2025-03-05T05:34:02.883766Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/bookPage.B8PnvGYe.js                                  [39m[1m[2m    0.43 kB[22m[1m[22m[2m │ gzip:   0.26 kB[22m[2m │ map:     1.17 kB[22m
+2025-03-05T05:34:02.883896Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.DdPD2lSv.js                                     [39m[1m[2m    0.55 kB[22m[1m[22m[2m │ gzip:   0.37 kB[22m[2m │ map:     7.14 kB[22m
+2025-03-05T05:34:02.883974Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/tacticLibrary.SR-0EcI7.js                             [39m[1m[2m    0.60 kB[22m[1m[22m[2m │ gzip:   0.37 kB[22m[2m │ map:     1.93 kB[22m
+2025-03-05T05:34:02.88405Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/browser.Bdhvn36h.js                                   [39m[1m[2m    0.63 kB[22m[1m[22m[2m │ gzip:   0.44 kB[22m[2m │ map:     0.42 kB[22m
+2025-03-05T05:34:02.88413Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Spacer.D_eXWqO7.js                                    [39m[1m[2m    0.67 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m[2m │ map:     0.60 kB[22m
+2025-03-05T05:34:02.884238Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js                          [39m[1m[2m    0.75 kB[22m[1m[22m[2m │ gzip:   0.43 kB[22m[2m │ map:     0.11 kB[22m
+2025-03-05T05:34:02.884583Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/1.CcAGmgEA.js                                          [39m[1m[2m    0.88 kB[22m[1m[22m[2m │ gzip:   0.55 kB[22m[2m │ map:     0.70 kB[22m
+2025-03-05T05:34:02.88489Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/each.CYZ8BQP6.js                                      [39m[1m[2m    0.95 kB[22m[1m[22m[2m │ gzip:   0.59 kB[22m[2m │ map:     6.09 kB[22m
+2025-03-05T05:34:02.885159Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/29.-LS5Hydt.js                                        [39m[1m[2m    1.20 kB[22m[1m[22m[2m │ gzip:   0.74 kB[22m[2m │ map:     0.10 kB[22m
+2025-03-05T05:34:02.885332Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/16.ybiGBWKJ.js                                         [39m[1m[2m    1.39 kB[22m[1m[22m[2m │ gzip:   0.73 kB[22m[2m │ map:     2.06 kB[22m
+2025-03-05T05:34:02.885506Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/35.dphToCjo.js                                         [39m[1m[2m    1.52 kB[22m[1m[22m[2m │ gzip:   0.86 kB[22m[2m │ map:     1.26 kB[22m
+2025-03-05T05:34:02.885674Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/26.BynkuTOB.js                                         [39m[1m[2m    1.98 kB[22m[1m[22m[2m │ gzip:   0.94 kB[22m[2m │ map:     1.44 kB[22m
+2025-03-05T05:34:02.885786Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/13.tOe3neaZ.js                                         [39m[1m[2m    2.00 kB[22m[1m[22m[2m │ gzip:   0.98 kB[22m[2m │ map:     5.88 kB[22m
+2025-03-05T05:34:02.885945Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.DlXcp1Zy.js                                     [39m[1m[2m    2.26 kB[22m[1m[22m[2m │ gzip:   0.94 kB[22m[2m │ map:    20.92 kB[22m
+2025-03-05T05:34:02.886107Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/30.77sZzWrF.js                                         [39m[1m[2m    2.56 kB[22m[1m[22m[2m │ gzip:   1.13 kB[22m[2m │ map:     2.25 kB[22m
+2025-03-05T05:34:02.886419Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/24.Cqgxkai4.js                                         [39m[1m[2m    2.56 kB[22m[1m[22m[2m │ gzip:   1.35 kB[22m[2m │ map:     3.82 kB[22m
+2025-03-05T05:34:02.886579Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Icons.CkgWXAK9.js                                     [39m[1m[2m    2.64 kB[22m[1m[22m[2m │ gzip:   0.66 kB[22m[2m │ map:     4.92 kB[22m
+2025-03-05T05:34:02.886752Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/9.XcyihVvt.js                                          [39m[1m[2m    2.85 kB[22m[1m[22m[2m │ gzip:   1.33 kB[22m[2m │ map:     4.62 kB[22m
+2025-03-05T05:34:02.886873Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/8.BUsSDaEf.js                                          [39m[1m[2m    2.85 kB[22m[1m[22m[2m │ gzip:   1.33 kB[22m[2m │ map:     4.63 kB[22m
+2025-03-05T05:34:02.887087Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/15.iiMu7AC8.js                                         [39m[1m[2m    3.19 kB[22m[1m[22m[2m │ gzip:   1.50 kB[22m[2m │ map:     5.14 kB[22m
+2025-03-05T05:34:02.887209Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.CiaY_4YL.js                                     [39m[1m[2m    3.90 kB[22m[1m[22m[2m │ gzip:   1.73 kB[22m[2m │ map:     4.86 kB[22m
+2025-03-05T05:34:02.887468Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/33.BMNcucGv.js                                         [39m[1m[2m    3.93 kB[22m[1m[22m[2m │ gzip:   1.69 kB[22m[2m │ map:     7.07 kB[22m
+2025-03-05T05:34:02.887757Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Countdown.DHfc3Rrv.js                                 [39m[1m[2m    4.23 kB[22m[1m[22m[2m │ gzip:   1.86 kB[22m[2m │ map:     8.48 kB[22m
+2025-03-05T05:34:02.888041Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/19.CdeTqtgN.js                                         [39m[1m[2m    4.80 kB[22m[1m[22m[2m │ gzip:   2.25 kB[22m[2m │ map:     5.68 kB[22m
+2025-03-05T05:34:02.888311Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/P.4hEkGBHR.js                                         [39m[1m[2m    4.81 kB[22m[1m[22m[2m │ gzip:   2.14 kB[22m[2m │ map:     7.06 kB[22m
+2025-03-05T05:34:02.888478Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/5.BhkoQ55E.js                                          [39m[1m[2m    5.31 kB[22m[1m[22m[2m │ gzip:   2.19 kB[22m[2m │ map:    12.80 kB[22m
+2025-03-05T05:34:02.888645Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/14.B_szl5-k.js                                         [39m[1m[2m    5.74 kB[22m[1m[22m[2m │ gzip:   2.60 kB[22m[2m │ map:     7.69 kB[22m
+2025-03-05T05:34:02.888795Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.lJpIUxv5.js                                     [39m[1m[2m    5.78 kB[22m[1m[22m[2m │ gzip:   2.84 kB[22m[2m │ map:    44.21 kB[22m
+2025-03-05T05:34:02.888992Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/28.7ZZY5H92.js                                         [39m[1m[2m    5.87 kB[22m[1m[22m[2m │ gzip:   2.17 kB[22m[2m │ map:     2.72 kB[22m
+2025-03-05T05:34:02.889288Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/11.CZ47qeZ6.js                                         [39m[1m[2m    5.89 kB[22m[1m[22m[2m │ gzip:   2.68 kB[22m[2m │ map:     9.19 kB[22m
+2025-03-05T05:34:02.889593Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/18.DsQons_T.js                                         [39m[1m[2m    6.82 kB[22m[1m[22m[2m │ gzip:   2.94 kB[22m[2m │ map:     6.79 kB[22m
+2025-03-05T05:34:02.889888Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Frame.CGuQwYAu.js                                     [39m[1m[2m    7.94 kB[22m[1m[22m[2m │ gzip:   2.81 kB[22m[2m │ map:     8.42 kB[22m
+2025-03-05T05:34:02.890042Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/27.ClnpdR_9.js                                         [39m[1m[2m    7.99 kB[22m[1m[22m[2m │ gzip:   2.89 kB[22m[2m │ map:     8.99 kB[22m
+2025-03-05T05:34:02.890168Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/25.mVjjHu4m.js                                         [39m[1m[2m    8.08 kB[22m[1m[22m[2m │ gzip:   2.68 kB[22m[2m │ map:     9.42 kB[22m
+2025-03-05T05:34:02.890274Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/34.ChvIiE7z.js                                         [39m[1m[2m    8.18 kB[22m[1m[22m[2m │ gzip:   3.37 kB[22m[2m │ map:     5.29 kB[22m
+2025-03-05T05:34:02.890465Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Input.D8FynYaJ.js                                     [39m[1m[2m    8.21 kB[22m[1m[22m[2m │ gzip:   3.25 kB[22m[2m │ map:     7.34 kB[22m
+2025-03-05T05:34:02.890608Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/ContactForm.D-q6JUy4.js                               [39m[1m[2m    8.27 kB[22m[1m[22m[2m │ gzip:   3.20 kB[22m[2m │ map:    10.04 kB[22m
+2025-03-05T05:34:02.890762Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.B8wiMaLZ.js                                     [39m[1m[2m    8.65 kB[22m[1m[22m[2m │ gzip:   3.99 kB[22m[2m │ map:    10.06 kB[22m
+2025-03-05T05:34:02.89092Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/SkoolGroup._EdVeYDL.js                                [39m[1m[2m    8.85 kB[22m[1m[22m[2m │ gzip:   3.74 kB[22m[2m │ map:    16.59 kB[22m
+2025-03-05T05:34:02.891071Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.B22aD79P.js                                     [39m[1m[2m    9.02 kB[22m[1m[22m[2m │ gzip:   4.35 kB[22m[2m │ map:    10.15 kB[22m
+2025-03-05T05:34:02.891214Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/10.DUdW1Qdf.js                                         [39m[1m[2m    9.41 kB[22m[1m[22m[2m │ gzip:   3.58 kB[22m[2m │ map:    18.92 kB[22m
+2025-03-05T05:34:02.895312Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/7.Bty9rUbT.js                                          [39m[1m[2m    9.72 kB[22m[1m[22m[2m │ gzip:   3.78 kB[22m[2m │ map:    12.39 kB[22m
+2025-03-05T05:34:02.895899Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/scheduler.g3cCQKhv.js                                 [39m[1m[2m    9.88 kB[22m[1m[22m[2m │ gzip:   3.88 kB[22m[2m │ map:    70.16 kB[22m
+2025-03-05T05:34:02.896093Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/6.ByMwijBF.js                                          [39m[1m[2m   11.50 kB[22m[1m[22m[2m │ gzip:   4.27 kB[22m[2m │ map:    21.26 kB[22m
+2025-03-05T05:34:02.896197Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/17.LqbVJEVM.js                                         [39m[1m[2m   12.02 kB[22m[1m[22m[2m │ gzip:   4.47 kB[22m[2m │ map:    14.13 kB[22m
+2025-03-05T05:34:02.896262Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/21.BxgdTNxs.js                                         [39m[1m[2m   12.37 kB[22m[1m[22m[2m │ gzip:   4.11 kB[22m[2m │ map:     9.80 kB[22m
+2025-03-05T05:34:02.896372Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Badge.BQvfR9x2.js                                     [39m[1m[2m   12.48 kB[22m[1m[22m[2m │ gzip:   4.45 kB[22m[2m │ map:    11.71 kB[22m
+2025-03-05T05:34:02.896446Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.YI8fBH23.js                                     [39m[1m[2m   12.51 kB[22m[1m[22m[2m │ gzip:   5.51 kB[22m[2m │ map:    13.85 kB[22m
+2025-03-05T05:34:02.896506Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/23.CiLW7IzC.js                                         [39m[1m[2m   13.65 kB[22m[1m[22m[2m │ gzip:   5.58 kB[22m[2m │ map:    16.76 kB[22m
+2025-03-05T05:34:02.896572Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/entry/app.DOOUxNm7.js                                        [39m[1m[2m   14.21 kB[22m[1m[22m[2m │ gzip:   4.42 kB[22m[2m │ map:     8.08 kB[22m
+2025-03-05T05:34:02.89663Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Card.BF7eHiqQ.js                                      [39m[1m[2m   14.52 kB[22m[1m[22m[2m │ gzip:   4.44 kB[22m[2m │ map:    15.00 kB[22m
+2025-03-05T05:34:02.896688Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/NewsletterSignup.DZqG7Zhy.js                          [39m[1m[2m   15.85 kB[22m[1m[22m[2m │ gzip:   5.39 kB[22m[2m │ map:    16.88 kB[22m
+2025-03-05T05:34:02.896746Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/20.BZ9C_I9r.js                                         [39m[1m[2m   15.89 kB[22m[1m[22m[2m │ gzip:   5.82 kB[22m[2m │ map:    15.39 kB[22m
+2025-03-05T05:34:02.896804Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/BookSample.svelte_svelte_type_style_lang.CU3upJ4A.js  [39m[1m[2m   16.80 kB[22m[1m[22m[2m │ gzip:   5.48 kB[22m[2m │ map:    15.24 kB[22m
+2025-03-05T05:34:02.896865Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/12.C-nVZGrD.js                                         [39m[1m[2m   17.73 kB[22m[1m[22m[2m │ gzip:   6.72 kB[22m[2m │ map:    20.70 kB[22m
+2025-03-05T05:34:02.896935Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/papaparse.min.BvZeHQYi.js                             [39m[1m[2m   19.50 kB[22m[1m[22m[2m │ gzip:   7.16 kB[22m[2m │ map:    44.51 kB[22m
+2025-03-05T05:34:02.896998Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/bundle-mjs.DQUbyC3x.js                                [39m[1m[2m   20.75 kB[22m[1m[22m[2m │ gzip:   6.88 kB[22m[2m │ map:   107.28 kB[22m
+2025-03-05T05:34:02.89708Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/32.TE1hlMpO.js                                         [39m[1m[2m   21.53 kB[22m[1m[22m[2m │ gzip:   9.07 kB[22m[2m │ map:    29.74 kB[22m
+2025-03-05T05:34:02.897144Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/4.-uwjpKk1.js                                          [39m[1m[2m   21.79 kB[22m[1m[22m[2m │ gzip:   6.52 kB[22m[2m │ map:    32.34 kB[22m
+2025-03-05T05:34:02.897319Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/index.nemYDBIq.js                                     [39m[1m[2m   22.60 kB[22m[1m[22m[2m │ gzip:   9.38 kB[22m[2m │ map:    25.72 kB[22m
+2025-03-05T05:34:02.897619Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/NewsletterContent.BTXWdDzT.js                         [39m[1m[2m   24.42 kB[22m[1m[22m[2m │ gzip:   8.36 kB[22m[2m │ map:    31.10 kB[22m
+2025-03-05T05:34:02.897764Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/2.CgMlSumY.js                                          [39m[1m[2m   27.11 kB[22m[1m[22m[2m │ gzip:   9.24 kB[22m[2m │ map:    36.48 kB[22m
+2025-03-05T05:34:02.8979Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/entry.BaNLg1GZ.js                                     [39m[1m[2m   27.13 kB[22m[1m[22m[2m │ gzip:  10.72 kB[22m[2m │ map:   170.96 kB[22m
+2025-03-05T05:34:02.898017Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/0.wGAIIKF5.js                                          [39m[1m[2m   30.80 kB[22m[1m[22m[2m │ gzip:   8.92 kB[22m[2m │ map:    30.54 kB[22m
+2025-03-05T05:34:02.898136Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/marked.esm.h3Fb6tCS.js                                [39m[1m[2m   36.22 kB[22m[1m[22m[2m │ gzip:  11.26 kB[22m[2m │ map:   141.77 kB[22m
+2025-03-05T05:34:02.898243Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/3.aYH_aUEJ.js                                          [39m[1m[2m   61.44 kB[22m[1m[22m[2m │ gzip:  19.14 kB[22m[2m │ map:    92.32 kB[22m
+2025-03-05T05:34:02.898366Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/supabaseClient.Dz5kB-VV.js                            [39m[1m[2m  103.15 kB[22m[1m[22m[2m │ gzip:  27.73 kB[22m[2m │ map:   435.43 kB[22m
+2025-03-05T05:34:02.89848Z	[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/22.DqQ6jAxu.js                                         [39m[1m[2m  476.74 kB[22m[1m[22m[2m │ gzip: 120.47 kB[22m[2m │ map: 1,917.39 kB[22m
+2025-03-05T05:34:02.898684Z	[32m✓ built in 21.21s[39m
+2025-03-05T05:34:03.453538Z	[2m.svelte-kit/output/server/[22m[32m.vite/manifest.json                                                     [39m[1m[2m   33.12 kB[22m[1m[22m
+2025-03-05T05:34:03.453911Z	[2m.svelte-kit/output/server/[22m[32m_app/immutable/assets/default-blog-image.-LBrR5g2.png                   [39m[1m[2m   33.53 kB[22m[1m[22m
+2025-03-05T05:34:03.454125Z	[2m.svelte-kit/output/server/[22m[32m_app/immutable/assets/StSFreeGuide.BjbLHlIE.png                         [39m[1m[2m  283.10 kB[22m[1m[22m
+2025-03-05T05:34:03.454225Z	[2m.svelte-kit/output/server/[22m[32m_app/immutable/assets/Surviving-the-Singularity-Cover.DVSibteC.png      [39m[1m[2m  426.99 kB[22m[1m[22m
+2025-03-05T05:34:03.454435Z	[2m.svelte-kit/output/server/[22m[32m_app/immutable/assets/sts-welcome.BNDB7Aot.png                          [39m[1m[2m1,152.09 kB[22m[1m[22m
+2025-03-05T05:34:03.45452Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.DM9W5W0m.css                                [39m[1m[2m    0.03 kB[22m[1m[22m
+2025-03-05T05:34:03.454658Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.DpqAc0et.css                                [39m[1m[2m    0.06 kB[22m[1m[22m
+2025-03-05T05:34:03.454732Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.32nLFVw4.css                                [39m[1m[2m    0.07 kB[22m[1m[22m
+2025-03-05T05:34:03.454816Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.Bsht-HWY.css                                [39m[1m[2m    0.15 kB[22m[1m[22m
+2025-03-05T05:34:03.454983Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.BO3UJCN5.css                                [39m[1m[2m    0.24 kB[22m[1m[22m
+2025-03-05T05:34:03.455125Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.DMTlRC5k.css                                [39m[1m[2m    0.49 kB[22m[1m[22m
+2025-03-05T05:34:03.455247Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/Divider.DPHn9zud.css                              [39m[1m[2m    0.58 kB[22m[1m[22m
+2025-03-05T05:34:03.45536Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.BJNOiLTL.css                                [39m[1m[2m    0.77 kB[22m[1m[22m
+2025-03-05T05:34:03.455471Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/NewsletterSignup.DGC-jofv.css                     [39m[1m[2m    0.79 kB[22m[1m[22m
+2025-03-05T05:34:03.455566Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.DUmzRvir.css                                [39m[1m[2m    0.85 kB[22m[1m[22m
+2025-03-05T05:34:03.455677Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.CO3dR5MP.css                                [39m[1m[2m    0.89 kB[22m[1m[22m
+2025-03-05T05:34:03.455796Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.CkflPXE0.css                                [39m[1m[2m    1.72 kB[22m[1m[22m
+2025-03-05T05:34:03.455902Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.C48qChVj.css                                [39m[1m[2m    1.83 kB[22m[1m[22m
+2025-03-05T05:34:03.455996Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.kzF3xIoE.css                                [39m[1m[2m    2.40 kB[22m[1m[22m
+2025-03-05T05:34:03.456094Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/Countdown.CVpFi2T6.css                            [39m[1m[2m    2.48 kB[22m[1m[22m
+2025-03-05T05:34:03.456217Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.D3CsEVEt.css                                [39m[1m[2m    2.60 kB[22m[1m[22m
+2025-03-05T05:34:03.456361Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.CgHfiP4W.css                                [39m[1m[2m    3.29 kB[22m[1m[22m
+2025-03-05T05:34:03.456492Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/ContactForm.BC1jFbgk.css                          [39m[1m[2m    3.51 kB[22m[1m[22m
+2025-03-05T05:34:03.456569Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.4UCniQR_.css                                [39m[1m[2m    3.57 kB[22m[1m[22m
+2025-03-05T05:34:03.456664Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.Bz-UmWlV.css                                [39m[1m[2m    3.67 kB[22m[1m[22m
+2025-03-05T05:34:03.456769Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.CnS7mw19.css                                [39m[1m[2m    3.72 kB[22m[1m[22m
+2025-03-05T05:34:03.456883Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/BookSample.BXwBgBi7.css                           [39m[1m[2m    3.79 kB[22m[1m[22m
+2025-03-05T05:34:03.457046Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.CSIzms4U.css                                [39m[1m[2m    3.84 kB[22m[1m[22m
+2025-03-05T05:34:03.457122Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.Fu1Y4l-d.css                                [39m[1m[2m    4.42 kB[22m[1m[22m
+2025-03-05T05:34:03.457221Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/NewsletterContent.Cqk_uZ8A.css                    [39m[1m[2m    4.44 kB[22m[1m[22m
+2025-03-05T05:34:03.457381Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.C4bZ4NGd.css                                [39m[1m[2m    7.06 kB[22m[1m[22m
+2025-03-05T05:34:03.45748Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.Ce5PDI66.css                                [39m[1m[2m    7.29 kB[22m[1m[22m
+2025-03-05T05:34:03.457915Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.BQdpwo8H.css                                [39m[1m[2m    7.88 kB[22m[1m[22m
+2025-03-05T05:34:03.458009Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.9noRAutK.css                                [39m[1m[2m    8.28 kB[22m[1m[22m
+2025-03-05T05:34:03.458073Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.CM2YLrfD.css                                [39m[1m[2m    8.30 kB[22m[1m[22m
+2025-03-05T05:34:03.459963Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/SkoolGroup.Px3nw6nP.css                           [39m[1m[2m    8.50 kB[22m[1m[22m
+2025-03-05T05:34:03.460149Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_layout.DYTGY9NR.css                              [39m[1m[2m   12.16 kB[22m[1m[22m
+2025-03-05T05:34:03.460283Z	[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_layout.CMFt4-0c.css                              [39m[1m[2m  173.67 kB[22m[1m[22m
+2025-03-05T05:34:03.460499Z	[2m.svelte-kit/output/server/[22m[36mchunks/prod-ssr.js                                                      [39m[1m[2m    0.12 kB[22m[1m[22m[2m │ map:   0.25 kB[22m
+2025-03-05T05:34:03.460656Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/_slug_/_page.js                                      [39m[1m[2m    0.12 kB[22m[1m[22m[2m │ map:   0.34 kB[22m
+2025-03-05T05:34:03.460797Z	[2m.svelte-kit/output/server/[22m[36mchunks/index3.js                                                        [39m[1m[2m    0.13 kB[22m[1m[22m[2m │ map:   0.38 kB[22m
+2025-03-05T05:34:03.460926Z	[2m.svelte-kit/output/server/[22m[36mchunks/sts-welcome.js                                                   [39m[1m[2m    0.14 kB[22m[1m[22m[2m │ map:   0.20 kB[22m
+2025-03-05T05:34:03.461121Z	[2m.svelte-kit/output/server/[22m[36mchunks/darkMode.js                                                      [39m[1m[2m    0.14 kB[22m[1m[22m[2m │ map:   0.35 kB[22m
+2025-03-05T05:34:03.461219Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/book/_page.server.js                                      [39m[1m[2m    0.17 kB[22m[1m[22m[2m │ map:   0.29 kB[22m
+2025-03-05T05:34:03.461289Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/preorder/_page.server.js                                  [39m[1m[2m    0.17 kB[22m[1m[22m[2m │ map:   0.41 kB[22m
+2025-03-05T05:34:03.461429Z	[2m.svelte-kit/output/server/[22m[36mchunks/Surviving-the-Singularity-Cover.js                               [39m[1m[2m    0.18 kB[22m[1m[22m[2m │ map:   0.24 kB[22m
+2025-03-05T05:34:03.461496Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/resources/_page.svelte.js                                 [39m[1m[2m    0.23 kB[22m[1m[22m[2m │ map:   0.10 kB[22m
+2025-03-05T05:34:03.461579Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/_page.server.js                                           [39m[1m[2m    0.25 kB[22m[1m[22m[2m │ map:   0.46 kB[22m
+2025-03-05T05:34:03.461667Z	[2m.svelte-kit/output/server/[22m[36mchunks/supabaseClient.js                                                [39m[1m[2m    0.29 kB[22m[1m[22m[2m │ map:   0.56 kB[22m
+2025-03-05T05:34:03.461778Z	[2m.svelte-kit/output/server/[22m[36mentries/endpoints/api/create-checkout-session/_server.js                [39m[1m[2m    0.30 kB[22m[1m[22m[2m │ map:   1.54 kB[22m
+2025-03-05T05:34:03.46188Z	[2m.svelte-kit/output/server/[22m[36mchunks/client.js                                                        [39m[1m[2m    0.31 kB[22m[1m[22m[2m │ map:  85.07 kB[22m
+2025-03-05T05:34:03.461978Z	[2m.svelte-kit/output/server/[22m[36minternal.js                                                             [39m[1m[2m    0.34 kB[22m[1m[22m[2m │ map:   0.09 kB[22m
+2025-03-05T05:34:03.462072Z	[2m.svelte-kit/output/server/[22m[36mchunks/01-acknowledgements.js                                           [39m[1m[2m    0.38 kB[22m[1m[22m[2m │ map:   0.46 kB[22m
+2025-03-05T05:34:03.46244Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/profile/_page.server.ts.js                                [39m[1m[2m    0.38 kB[22m[1m[22m[2m │ map:   0.85 kB[22m
+2025-03-05T05:34:03.462577Z	[2m.svelte-kit/output/server/[22m[36mchunks/public.js                                                        [39m[1m[2m    0.42 kB[22m[1m[22m[2m │ map:   0.09 kB[22m
+2025-03-05T05:34:03.462691Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/tactics/_page.server.js                                   [39m[1m[2m    0.47 kB[22m[1m[22m[2m │ map:   0.90 kB[22m
+2025-03-05T05:34:03.462812Z	[2m.svelte-kit/output/server/[22m[36mentries/endpoints/data-warehouse/research-links/contribute/_server.js   [39m[1m[2m    0.51 kB[22m[1m[22m[2m │ map:   1.83 kB[22m
+2025-03-05T05:34:03.462937Z	[2m.svelte-kit/output/server/[22m[36mentries/fallbacks/error.svelte.js                                       [39m[1m[2m    0.51 kB[22m[1m[22m[2m │ map:   0.39 kB[22m
+2025-03-05T05:34:03.463053Z	[2m.svelte-kit/output/server/[22m[36mchunks/stores.js                                                        [39m[1m[2m    0.58 kB[22m[1m[22m[2m │ map:   3.96 kB[22m
+2025-03-05T05:34:03.463179Z	[2m.svelte-kit/output/server/[22m[36mchunks/Spacer.js                                                        [39m[1m[2m    0.60 kB[22m[1m[22m[2m │ map:   0.43 kB[22m
+2025-03-05T05:34:03.463281Z	[2m.svelte-kit/output/server/[22m[36mentries/endpoints/api/fetch-title/_server.js                            [39m[1m[2m    0.64 kB[22m[1m[22m[2m │ map:   1.17 kB[22m
+2025-03-05T05:34:03.463401Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/book/_sectionId_/_page.server.js                          [39m[1m[2m    0.73 kB[22m[1m[22m[2m │ map:   1.23 kB[22m
+2025-03-05T05:34:03.463536Z	[2m.svelte-kit/output/server/[22m[36mchunks/tacticLibrary.js                                                 [39m[1m[2m    0.88 kB[22m[1m[22m[2m │ map:   1.79 kB[22m
+2025-03-05T05:34:03.463653Z	[2m.svelte-kit/output/server/[22m[36mentries/endpoints/api/newsletter/_server.js                             [39m[1m[2m    1.09 kB[22m[1m[22m[2m │ map:   1.47 kB[22m
+2025-03-05T05:34:03.463759Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/profile/_username_/_page.svelte.js                        [39m[1m[2m    1.11 kB[22m[1m[22m[2m │ map:   1.31 kB[22m
+2025-03-05T05:34:03.463874Z	[2m.svelte-kit/output/server/[22m[36mentries/endpoints/api/newsletter/subscribe/_server.js                   [39m[1m[2m    1.21 kB[22m[1m[22m[2m │ map:   2.36 kB[22m
+2025-03-05T05:34:03.463976Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/_page.server.js                                      [39m[1m[2m    1.35 kB[22m[1m[22m[2m │ map:   2.56 kB[22m
+2025-03-05T05:34:03.464087Z	[2m.svelte-kit/output/server/[22m[36mchunks/18-index.js                                                      [39m[1m[2m    1.35 kB[22m[1m[22m[2m │ map:   1.50 kB[22m
+2025-03-05T05:34:03.464211Z	[2m.svelte-kit/output/server/[22m[36mchunks/index2.js                                                        [39m[1m[2m    1.37 kB[22m[1m[22m[2m │ map:   6.99 kB[22m
+2025-03-05T05:34:03.464333Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/newsletter/_slug_/_page.svelte.js                         [39m[1m[2m    1.43 kB[22m[1m[22m[2m │ map:   1.14 kB[22m
+2025-03-05T05:34:03.464659Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/tactics/_slug_/_page.svelte.js                            [39m[1m[2m    1.87 kB[22m[1m[22m[2m │ map:   0.84 kB[22m
+2025-03-05T05:34:03.464851Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/_slug_/_page.server.js                               [39m[1m[2m    1.95 kB[22m[1m[22m[2m │ map:   3.98 kB[22m
+2025-03-05T05:34:03.464991Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/data-warehouse/pdf-locker/_page.svelte.js                 [39m[1m[2m    2.05 kB[22m[1m[22m[2m │ map:   3.90 kB[22m
+2025-03-05T05:34:03.465102Z	[2m.svelte-kit/output/server/[22m[36mchunks/15-epilogue.js                                                   [39m[1m[2m    2.12 kB[22m[1m[22m[2m │ map:   2.49 kB[22m
+2025-03-05T05:34:03.465202Z	[2m.svelte-kit/output/server/[22m[36mchunks/README.js                                                        [39m[1m[2m    2.14 kB[22m[1m[22m[2m │ map:   2.32 kB[22m
+2025-03-05T05:34:03.465311Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/newsletter/_slug_/_page.server.js                         [39m[1m[2m    2.24 kB[22m[1m[22m[2m │ map:   3.30 kB[22m
+2025-03-05T05:34:03.465445Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/dashboard/_page.svelte.js                                 [39m[1m[2m    2.41 kB[22m[1m[22m[2m │ map:   0.11 kB[22m
+2025-03-05T05:34:03.46555Z	[2m.svelte-kit/output/server/[22m[36mchunks/index.js                                                         [39m[1m[2m    2.53 kB[22m[1m[22m[2m │ map:  12.85 kB[22m
+2025-03-05T05:34:03.465661Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/preorder/_page.svelte.js                                  [39m[1m[2m    2.84 kB[22m[1m[22m[2m │ map:   0.14 kB[22m
+2025-03-05T05:34:03.465771Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/tactics/_page.svelte.js                                   [39m[1m[2m    2.93 kB[22m[1m[22m[2m │ map:   3.27 kB[22m
+2025-03-05T05:34:03.465881Z	[2m.svelte-kit/output/server/[22m[36mchunks/markdownParser.js                                                [39m[1m[2m    3.06 kB[22m[1m[22m[2m │ map:   5.94 kB[22m
+2025-03-05T05:34:03.465987Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/newsletter/_page.server.js                                [39m[1m[2m    3.17 kB[22m[1m[22m[2m │ map:   5.22 kB[22m
+2025-03-05T05:34:03.466089Z	[2m.svelte-kit/output/server/[22m[36mchunks/WRITING_CHECKLIST.js                                             [39m[1m[2m    3.29 kB[22m[1m[22m[2m │ map:   3.60 kB[22m
+2025-03-05T05:34:03.466183Z	[2m.svelte-kit/output/server/[22m[36mchunks/02-introduction.js                                               [39m[1m[2m    3.33 kB[22m[1m[22m[2m │ map:   3.61 kB[22m
+2025-03-05T05:34:03.466294Z	[2m.svelte-kit/output/server/[22m[36mchunks/16-glossary.js                                                   [39m[1m[2m    3.33 kB[22m[1m[22m[2m │ map:   3.49 kB[22m
+2025-03-05T05:34:03.466415Z	[2m.svelte-kit/output/server/[22m[36mchunks/17-further-reading.js                                            [39m[1m[2m    3.43 kB[22m[1m[22m[2m │ map:   4.04 kB[22m
+2025-03-05T05:34:03.466529Z	[2m.svelte-kit/output/server/[22m[36mchunks/index4.js                                                        [39m[1m[2m    3.94 kB[22m[1m[22m[2m │ map:   4.85 kB[22m
+2025-03-05T05:34:03.466629Z	[2m.svelte-kit/output/server/[22m[36mchunks/00-table-of-contents.js                                          [39m[1m[2m    4.00 kB[22m[1m[22m[2m │ map:   4.13 kB[22m
+2025-03-05T05:34:03.466718Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/book/_layout.svelte.js                                    [39m[1m[2m    4.37 kB[22m[1m[22m[2m │ map:   0.11 kB[22m
+2025-03-05T05:34:03.466822Z	[2m.svelte-kit/output/server/[22m[36mchunks/markdown.js                                                      [39m[1m[2m    4.84 kB[22m[1m[22m[2m │ map:   9.50 kB[22m
+2025-03-05T05:34:03.466914Z	[2m.svelte-kit/output/server/[22m[36mchunks/bookContent.js                                                   [39m[1m[2m    5.13 kB[22m[1m[22m[2m │ map:   1.88 kB[22m
+2025-03-05T05:34:03.467025Z	[2m.svelte-kit/output/server/[22m[36mchunks/P.js                                                             [39m[1m[2m    5.63 kB[22m[1m[22m[2m │ map:   6.34 kB[22m
+2025-03-05T05:34:03.467133Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/download/_page.svelte.js                                  [39m[1m[2m    5.64 kB[22m[1m[22m[2m │ map:   2.79 kB[22m
+2025-03-05T05:34:03.467229Z	[2m.svelte-kit/output/server/[22m[36mchunks/newsletter-edition-001.js                                        [39m[1m[2m    5.82 kB[22m[1m[22m[2m │ map:   6.73 kB[22m
+2025-03-05T05:34:03.467353Z	[2m.svelte-kit/output/server/[22m[36mchunks/exports.js                                                       [39m[1m[2m    6.00 kB[22m[1m[22m[2m │ map:  12.50 kB[22m
+2025-03-05T05:34:03.467494Z	[2m.svelte-kit/output/server/[22m[36mchunks/12-chapter10.js                                                  [39m[1m[2m    6.28 kB[22m[1m[22m[2m │ map:   6.94 kB[22m
+2025-03-05T05:34:03.467601Z	[2m.svelte-kit/output/server/[22m[36mchunks/newsletter-edition-002.js                                        [39m[1m[2m    6.88 kB[22m[1m[22m[2m │ map:   7.94 kB[22m
+2025-03-05T05:34:03.467696Z	[2m.svelte-kit/output/server/[22m[36mchunks/Frame.js                                                         [39m[1m[2m    6.90 kB[22m[1m[22m[2m │ map:   9.69 kB[22m
+2025-03-05T05:34:03.467808Z	[2m.svelte-kit/output/server/[22m[36mchunks/internal.js                                                      [39m[1m[2m    7.06 kB[22m[1m[22m[2m │ map:   9.44 kB[22m
+2025-03-05T05:34:03.467918Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/data-warehouse/research-links/contribute/_page.svelte.js  [39m[1m[2m    7.36 kB[22m[1m[22m[2m │ map:   4.45 kB[22m
+2025-03-05T05:34:03.46799Z	[2m.svelte-kit/output/server/[22m[36mchunks/14-chapter12.js                                                  [39m[1m[2m    7.39 kB[22m[1m[22m[2m │ map:   7.96 kB[22m
+2025-03-05T05:34:03.468055Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/data-warehouse/future-projections/_page.svelte.js         [39m[1m[2m    7.58 kB[22m[1m[22m[2m │ map:   4.90 kB[22m
+2025-03-05T05:34:03.468167Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/cancel/_page.svelte.js                                    [39m[1m[2m    8.29 kB[22m[1m[22m[2m │ map:   5.56 kB[22m
+2025-03-05T05:34:03.468279Z	[2m.svelte-kit/output/server/[22m[36mchunks/ssr.js                                                           [39m[1m[2m    8.53 kB[22m[1m[22m[2m │ map:  65.20 kB[22m
+2025-03-05T05:34:03.468416Z	[2m.svelte-kit/output/server/[22m[36mchunks/index8.js                                                        [39m[1m[2m    8.69 kB[22m[1m[22m[2m │ map:  10.05 kB[22m
+2025-03-05T05:34:03.468502Z	[2m.svelte-kit/output/server/[22m[36mchunks/README2.js                                                       [39m[1m[2m    9.04 kB[22m[1m[22m[2m │ map:  11.25 kB[22m
+2025-03-05T05:34:03.468642Z	[2m.svelte-kit/output/server/[22m[36mchunks/index6.js                                                        [39m[1m[2m    9.06 kB[22m[1m[22m[2m │ map:  10.14 kB[22m
+2025-03-05T05:34:03.468792Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/robot-farm-bot/_page.svelte.js                       [39m[1m[2m    9.19 kB[22m[1m[22m[2m │ map:   4.19 kB[22m
+2025-03-05T05:34:03.468926Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/farm-bot-deep-dive/_page.svelte.js                   [39m[1m[2m    9.19 kB[22m[1m[22m[2m │ map:   4.19 kB[22m
+2025-03-05T05:34:03.469085Z	[2m.svelte-kit/output/server/[22m[36mchunks/Badge.js                                                         [39m[1m[2m    9.70 kB[22m[1m[22m[2m │ map:  20.80 kB[22m
+2025-03-05T05:34:03.469218Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/contact/_page.svelte.js                                   [39m[1m[2m   11.09 kB[22m[1m[22m[2m │ map:   4.43 kB[22m
+2025-03-05T05:34:03.469368Z	[2m.svelte-kit/output/server/[22m[36mchunks/13-chapter11.js                                                  [39m[1m[2m   11.19 kB[22m[1m[22m[2m │ map:  12.26 kB[22m
+2025-03-05T05:34:03.469484Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/coming-soon/_page.svelte.js                               [39m[1m[2m   12.05 kB[22m[1m[22m[2m │ map:   0.11 kB[22m
+2025-03-05T05:34:03.469596Z	[2m.svelte-kit/output/server/[22m[36mchunks/09-chapter7.js                                                   [39m[1m[2m   12.13 kB[22m[1m[22m[2m │ map:  13.35 kB[22m
+2025-03-05T05:34:03.469728Z	[2m.svelte-kit/output/server/[22m[36mchunks/11-chapter9.js                                                   [39m[1m[2m   12.32 kB[22m[1m[22m[2m │ map:  13.47 kB[22m
+2025-03-05T05:34:03.469846Z	[2m.svelte-kit/output/server/[22m[36mchunks/10-chapter8.js                                                   [39m[1m[2m   12.39 kB[22m[1m[22m[2m │ map:  13.58 kB[22m
+2025-03-05T05:34:03.469952Z	[2m.svelte-kit/output/server/[22m[36mchunks/index5.js                                                        [39m[1m[2m   12.59 kB[22m[1m[22m[2m │ map:  13.85 kB[22m
+2025-03-05T05:34:03.47006Z	[2m.svelte-kit/output/server/[22m[36mchunks/Card.js                                                          [39m[1m[2m   12.61 kB[22m[1m[22m[2m │ map:  14.10 kB[22m
+2025-03-05T05:34:03.470167Z	[2m.svelte-kit/output/server/[22m[36mchunks/03-chapter1.js                                                   [39m[1m[2m   13.75 kB[22m[1m[22m[2m │ map:  14.55 kB[22m
+2025-03-05T05:34:03.470278Z	[2m.svelte-kit/output/server/[22m[36mchunks/Countdown.js                                                     [39m[1m[2m   13.87 kB[22m[1m[22m[2m │ map:   6.71 kB[22m
+2025-03-05T05:34:03.470408Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/data-warehouse/_page.svelte.js                            [39m[1m[2m   14.49 kB[22m[1m[22m[2m │ map:  17.53 kB[22m
+2025-03-05T05:34:03.470603Z	[2m.svelte-kit/output/server/[22m[36mchunks/06-chapter4.js                                                   [39m[1m[2m   14.68 kB[22m[1m[22m[2m │ map:  16.04 kB[22m
+2025-03-05T05:34:03.470717Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/newsletter/_page.svelte.js                                [39m[1m[2m   14.76 kB[22m[1m[22m[2m │ map:   7.40 kB[22m
+2025-03-05T05:34:03.470811Z	[2m.svelte-kit/output/server/[22m[36mchunks/08-chapter6.js                                                   [39m[1m[2m   14.85 kB[22m[1m[22m[2m │ map:  16.26 kB[22m
+2025-03-05T05:34:03.470907Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/data-warehouse/youtube-resources/_page.svelte.js          [39m[1m[2m   15.13 kB[22m[1m[22m[2m │ map:  11.23 kB[22m
+2025-03-05T05:34:03.47103Z	[2m.svelte-kit/output/server/[22m[36mchunks/NewsletterSignup.js                                              [39m[1m[2m   16.55 kB[22m[1m[22m[2m │ map:  12.78 kB[22m
+2025-03-05T05:34:03.47114Z	[2m.svelte-kit/output/server/[22m[36mchunks/ContactForm.js                                                   [39m[1m[2m   17.47 kB[22m[1m[22m[2m │ map:   7.85 kB[22m
+2025-03-05T05:34:03.471235Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/data-warehouse/research-links/_page.svelte.js             [39m[1m[2m   18.39 kB[22m[1m[22m[2m │ map:  17.49 kB[22m
+2025-03-05T05:34:03.471354Z	[2m.svelte-kit/output/server/[22m[36mchunks/BookSample.svelte_svelte_type_style_lang.js                      [39m[1m[2m   18.47 kB[22m[1m[22m[2m │ map:   8.19 kB[22m
+2025-03-05T05:34:03.471466Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/policies/_page.svelte.js                                  [39m[1m[2m   18.63 kB[22m[1m[22m[2m │ map:   0.11 kB[22m
+2025-03-05T05:34:03.471571Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/book/_page.svelte.js                                      [39m[1m[2m   19.96 kB[22m[1m[22m[2m │ map:   8.79 kB[22m
+2025-03-05T05:34:03.471678Z	[2m.svelte-kit/output/server/[22m[36mentries/endpoints/api/timeline/_server.js                               [39m[1m[2m   22.62 kB[22m[1m[22m[2m │ map:   1.89 kB[22m
+2025-03-05T05:34:03.471849Z	[2m.svelte-kit/output/server/[22m[36mchunks/index7.js                                                        [39m[1m[2m   22.63 kB[22m[1m[22m[2m │ map:  25.71 kB[22m
+2025-03-05T05:34:03.471985Z	[2m.svelte-kit/output/server/[22m[36mchunks/07-chapter5.js                                                   [39m[1m[2m   22.79 kB[22m[1m[22m[2m │ map:  24.77 kB[22m
+2025-03-05T05:34:03.47215Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/claude-projects-weekend-project/_page.svelte.js      [39m[1m[2m   23.61 kB[22m[1m[22m[2m │ map:  10.81 kB[22m
+2025-03-05T05:34:03.472261Z	[2m.svelte-kit/output/server/[22m[36mchunks/04-chapter2.js                                                   [39m[1m[2m   26.23 kB[22m[1m[22m[2m │ map:  29.06 kB[22m
+2025-03-05T05:34:03.472402Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/_layout.svelte.js                                         [39m[1m[2m   26.30 kB[22m[1m[22m[2m │ map:  13.88 kB[22m
+2025-03-05T05:34:03.472509Z	[2m.svelte-kit/output/server/[22m[36mchunks/05-chapter3.js                                                   [39m[1m[2m   26.76 kB[22m[1m[22m[2m │ map:  28.78 kB[22m
+2025-03-05T05:34:03.47266Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/data-warehouse/robotics-companies/_page.svelte.js         [39m[1m[2m   27.31 kB[22m[1m[22m[2m │ map:   9.59 kB[22m
+2025-03-05T05:34:03.472793Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/book/_sectionId_/_page.svelte.js                          [39m[1m[2m   30.76 kB[22m[1m[22m[2m │ map:  16.57 kB[22m
+2025-03-05T05:34:03.47291Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/_page.svelte.js                                      [39m[1m[2m   32.84 kB[22m[1m[22m[2m │ map:  11.90 kB[22m
+2025-03-05T05:34:03.473086Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/singularity-express/_page.svelte.js                  [39m[1m[2m   35.43 kB[22m[1m[22m[2m │ map:  16.31 kB[22m
+2025-03-05T05:34:03.473195Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/blog/_slug_/_page.svelte.js                               [39m[1m[2m   37.46 kB[22m[1m[22m[2m │ map:  17.59 kB[22m
+2025-03-05T05:34:03.473635Z	[2m.svelte-kit/output/server/[22m[36mchunks/NewsletterContent.js                                             [39m[1m[2m   41.83 kB[22m[1m[22m[2m │ map:  22.88 kB[22m
+2025-03-05T05:34:03.473745Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/sample/_page.svelte.js                                    [39m[1m[2m   42.67 kB[22m[1m[22m[2m │ map:  28.38 kB[22m
+2025-03-05T05:34:03.473918Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/success/_page.svelte.js                                   [39m[1m[2m   54.42 kB[22m[1m[22m[2m │ map:  21.06 kB[22m
+2025-03-05T05:34:03.474101Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/about/_page.svelte.js                                     [39m[1m[2m   70.45 kB[22m[1m[22m[2m │ map:  30.84 kB[22m
+2025-03-05T05:34:03.474235Z	[2m.svelte-kit/output/server/[22m[36mindex.js                                                                [39m[1m[2m   90.33 kB[22m[1m[22m[2m │ map: 212.19 kB[22m
+2025-03-05T05:34:03.474376Z	[2m.svelte-kit/output/server/[22m[36mentries/pages/_page.svelte.js                                           [39m[1m[2m  101.18 kB[22m[1m[22m[2m │ map:  76.49 kB[22m
+2025-03-05T05:34:03.474496Z	[32m✓ built in 31.99s[39m
+2025-03-05T05:34:03.474585Z	
+2025-03-05T05:34:03.474682Z	Run npm run preview to preview your production build locally.
+2025-03-05T05:34:03.47478Z	
+2025-03-05T05:34:03.474871Z	> Using @sveltejs/adapter-auto
+2025-03-05T05:34:03.912867Z	Installing @sveltejs/adapter-cloudflare...
+2025-03-05T05:34:06.79473Z	
+2025-03-05T05:34:06.795287Z	added 6 packages, and audited 389 packages in 3s
+2025-03-05T05:34:06.795514Z	
+2025-03-05T05:34:06.795635Z	116 packages are looking for funding
+2025-03-05T05:34:06.795733Z	  run `npm fund` for details
+2025-03-05T05:34:06.820158Z	
+2025-03-05T05:34:06.820459Z	11 vulnerabilities (3 low, 6 moderate, 2 high)
+2025-03-05T05:34:06.820557Z	
+2025-03-05T05:34:06.820619Z	To address issues that do not require attention, run:
+2025-03-05T05:34:06.820679Z	  npm audit fix
+2025-03-05T05:34:06.820742Z	
+2025-03-05T05:34:06.820805Z	Some issues need review, and may require choosing
+2025-03-05T05:34:06.820861Z	a different dependency.
+2025-03-05T05:34:06.820918Z	
+2025-03-05T05:34:06.820981Z	Run `npm audit` for details.
+2025-03-05T05:34:06.852868Z	Successfully installed @sveltejs/adapter-cloudflare.
+2025-03-05T05:34:06.85337Z	
+2025-03-05T05:34:06.85359Z	If you plan on staying on this deployment platform, consider replacing @sveltejs/adapter-auto with @sveltejs/adapter-cloudflare. This will give you faster and more robust installs, and more control over deployment configuration.
+2025-03-05T05:34:06.853733Z	
+2025-03-05T05:34:07.534006Z	✘ [ERROR] Could not resolve "fs"
+2025-03-05T05:34:07.53476Z	
+2025-03-05T05:34:07.534868Z	    .svelte-kit/output/server/chunks/markdown.js:1:58:
+2025-03-05T05:34:07.534944Z	      1 │ import fs, { readdirSync, existsSync, readFileSync } from "fs";
+2025-03-05T05:34:07.535006Z	        ╵                                                           ~~~~
+2025-03-05T05:34:07.535132Z	
+2025-03-05T05:34:07.53563Z	  The package "fs" wasn't found on the file system but is built into node. Are you trying to bundle for node? You can use "platform: 'node'" to do that, which will remove this error.
+2025-03-05T05:34:07.535744Z	
+2025-03-05T05:34:07.551541Z	✘ [ERROR] Could not resolve "path"
+2025-03-05T05:34:07.552589Z	
+2025-03-05T05:34:07.55275Z	    .svelte-kit/output/server/chunks/markdown.js:2:36:
+2025-03-05T05:34:07.55309Z	      2 │ import path, { dirname, join } from "path";
+2025-03-05T05:34:07.553319Z	        ╵                                     ~~~~~~
+2025-03-05T05:34:07.553438Z	
+2025-03-05T05:34:07.55354Z	  The package "path" wasn't found on the file system but is built into node. Are you trying to bundle for node? You can use "platform: 'node'" to do that, which will remove this error.
+2025-03-05T05:34:07.553625Z	
+2025-03-05T05:34:07.557074Z	✘ [ERROR] Could not resolve "url"
+2025-03-05T05:34:07.557274Z	
+2025-03-05T05:34:07.557471Z	    .svelte-kit/output/server/chunks/markdown.js:3:30:
+2025-03-05T05:34:07.557894Z	      3 │ import { fileURLToPath } from "url";
+2025-03-05T05:34:07.558739Z	        ╵                               ~~~~~
+2025-03-05T05:34:07.558927Z	
+2025-03-05T05:34:07.559101Z	  The package "url" wasn't found on the file system but is built into node. Are you trying to bundle for node? You can use "platform: 'node'" to do that, which will remove this error.
+2025-03-05T05:34:07.559228Z	
+2025-03-05T05:34:07.610984Z	[31merror during build:
+2025-03-05T05:34:07.611308Z	Error: Build failed with 3 errors:
+2025-03-05T05:34:07.611518Z	.svelte-kit/output/server/chunks/markdown.js:1:58: ERROR: Could not resolve "fs"
+2025-03-05T05:34:07.6117Z	.svelte-kit/output/server/chunks/markdown.js:2:36: ERROR: Could not resolve "path"
+2025-03-05T05:34:07.611837Z	.svelte-kit/output/server/chunks/markdown.js:3:30: ERROR: Could not resolve "url"
+2025-03-05T05:34:07.612013Z	    at failureErrorWithLog (/opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:1651:15)
+2025-03-05T05:34:07.6121Z	    at /opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:1059:25
+2025-03-05T05:34:07.61221Z	    at /opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:1004:52
+2025-03-05T05:34:07.612414Z	    at buildResponseToResult (/opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:1057:7)
+2025-03-05T05:34:07.612526Z	    at /opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:1086:16
+2025-03-05T05:34:07.612659Z	    at responseCallbacks.<computed> (/opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:704:9)
+2025-03-05T05:34:07.612739Z	    at handleIncomingPacket (/opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:764:9)
+2025-03-05T05:34:07.612914Z	    at Socket.readFromStdout (/opt/buildhome/repo/node_modules/@sveltejs/adapter-cloudflare/node_modules/esbuild/lib/main.js:680:7)
+2025-03-05T05:34:07.613069Z	    at Socket.emit (node:events:514:28)
+2025-03-05T05:34:07.613199Z	    at addChunk (node:internal/streams/readable:324:12)[39m
+2025-03-05T05:34:07.685827Z	Failed: Error while executing user command. Exited with error code: 1
+2025-03-05T05:34:07.696424Z	Failed: build command exited with code: 1
+2025-03-05T05:34:08.839364Z	Failed: error occurred while running build command

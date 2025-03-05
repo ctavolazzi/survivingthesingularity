@@ -1,0 +1,21 @@
+# Wrangler configuration for Cloudflare Pages
+
+name = "survivingthesingularity"
+compatibility_date = "2023-10-30"
+
+# Use the vite-plugin-cloudflare compatibility flags
+compatibility_flags = ["nodejs_compat"]
+
+# Configure specific routes
+routes = [
+  { pattern = "/*", script = "index.js" }
+]
+
+# Configure build output
+[build]
+  command = "npm run build"
+  upload.format = "service-worker"
+
+# Specify Node.js compatibility
+[build.upload]
+  node_compat = true

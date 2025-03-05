@@ -159,7 +159,7 @@
                 title: "Artificial General Intelligence: Humanity's Last Invention",
                 creator: "Two Minute Papers",
                 description: "A concise explanation of AGI and its potential implications.",
-                youtubeId: "Yd1XTQ2Y0Ks"
+                youtubeId: "eD5GlCIS0sA"
             },
             {
                 title: "The Future of Intelligence: Human, Machine, and Extraterrestrial",

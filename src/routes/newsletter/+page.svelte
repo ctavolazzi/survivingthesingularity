@@ -2,8 +2,12 @@
   import NewsletterLayout from '$lib/components/NewsletterLayout.svelte';
   import NewsletterContent from '$lib/components/NewsletterContent.svelte';
   import { page } from '$app/stores';
+  import { getNewsletterComponent } from '$lib/utils/newsletterLoader';
 
   export let data;
+
+  // Get the component for the latest newsletter
+  const latestNewsletterComponent = getNewsletterComponent(data.latestNewsletter.slug);
 
   // Helper function for pagination links
   function getPaginationUrl(pageNum) {
@@ -18,7 +22,7 @@
 
 <NewsletterLayout newsletters={data.newsletters} currentSlug={data.latestNewsletter.slug} pagination={data.pagination}>
   <NewsletterContent
-    content={data.latestNewsletter.content}
+    component={latestNewsletterComponent}
     metadata={{
       title: data.latestNewsletter.title,
       date: data.latestNewsletter.date,

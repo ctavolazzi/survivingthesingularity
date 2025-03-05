@@ -64,29 +64,11 @@
       flex-direction: column;
     }
 
-    .newsletter-main {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding: 1rem;
-      background-color: white;
-      border-radius: 0.5rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-
-    :global(.dark) .newsletter-main {
-      background-color: #1f2937;
-    }
-
     /* Media query for responsive behavior */
     @media (min-width: 1024px) {
       .newsletter-container {
         max-width: 90%;
         padding: 0.75rem;
-      }
-
-      .newsletter-main {
-        padding: 1.25rem;
       }
     }
 </style>

@@ -1,59 +1,24 @@
 import { error } from '@sveltejs/kit';
-import { parseMarkdown } from '$lib/utils/markdownParser.js';
-
-const newsletterFiles = import.meta.glob('/src/lib/data/newsletters/*.md', { query: '?raw', import: 'default' });
+import { getNewsletterBySlug, getAllNewsletters } from '$lib/data/newsletterData.js';
 
 export async function load({ params }) {
   const { slug } = params;
 
   try {
-    const allNewsletters = await Promise.all(
-      Object.entries(newsletterFiles).map(async ([path, loader]) => {
-        const content = await loader();
-        const { metadata } = await parseMarkdown(content);
-        const file = path.split('/').pop();
+    // Get the newsletter by slug
+    const newsletter = getNewsletterBySlug(slug);
 
-        // Skip README.md file
-        if (file === 'README.md') {
-          return null;
-        }
-
-        const editionNumber = file.match(/\d+/)?.[0] || '0';
-
-        return {
-          slug: file.replace('.md', ''),
-          title: metadata.title,
-          date: metadata.date,
-          description: metadata.description,
-          editionNumber: parseInt(editionNumber, 10)
-        };
-      })
-    );
-
-    // Filter out null entries and sort
-    const validNewsletters = allNewsletters.filter(n => n !== null);
-    validNewsletters.sort((a, b) => b.editionNumber - a.editionNumber);
-
-    // Find the path that ends with the slug
-    const filePath = Object.keys(newsletterFiles).find(path => path.endsWith(`/${slug}.md`));
-
-    if (!filePath) {
-      console.error(`Newsletter file not found for slug: ${slug}`);
+    if (!newsletter) {
+      console.error(`Newsletter not found for slug: ${slug}`);
       throw error(404, 'Newsletter not found');
     }
 
-    const newsletterLoader = newsletterFiles[filePath];
-    const content = await newsletterLoader();
-    const { metadata, htmlContent } = await parseMarkdown(content);
+    // Get all newsletters for navigation
+    const allNewsletters = getAllNewsletters();
 
     return {
-      newsletter: {
-        slug,
-        title: metadata.title,
-        date: metadata.date,
-        content: htmlContent
-      },
-      allNewsletters: validNewsletters
+      newsletter,
+      allNewsletters
     };
   } catch (e) {
     console.error(`Error loading newsletter ${slug}:`, e);

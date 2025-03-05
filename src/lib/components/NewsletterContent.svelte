@@ -1,21 +1,17 @@
 <script>
   import { onMount } from 'svelte';
-  export let content = '';
+  import { generateTableOfContents } from '$lib/utils/newsletterLoader';
+
+  export let component = null; // The newsletter component to render
   export let showTableOfContents = true;
   export let metadata = { title: '', date: '' };
 
+  let contentElement;
   let toc = [];
 
   onMount(() => {
-    if (showTableOfContents) {
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = content;
-      const headers = tempDiv.querySelectorAll('h2, h3');
-      toc = Array.from(headers).map(header => ({
-        id: header.id || header.textContent.toLowerCase().replace(/\s+/g, '-'),
-        text: header.textContent,
-        level: parseInt(header.tagName.charAt(1))
-      }));
+    if (showTableOfContents && contentElement) {
+      toc = generateTableOfContents(contentElement);
     }
   });
 
@@ -49,8 +45,13 @@
       </ul>
     </div>
   {/if}
-  <div class="content">
-    {@html content}
+
+  <div class="content" bind:this={contentElement}>
+    {#if component}
+      <svelte:component this={component} />
+    {:else}
+      <p>No content available for this newsletter.</p>
+    {/if}
   </div>
 </div>
 
@@ -169,133 +170,6 @@
     border-bottom-color: #3498db;
   }
 
-  :global(.newsletter-content h2) {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 1.75rem;
-    margin-bottom: 0.75rem;
-    position: relative;
-  }
-
-  :global(.newsletter-content h2)::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #3498db;
-    margin-top: 0.3rem;
-  }
-
-  :global(.newsletter-content h3) {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 1.25rem;
-    margin-bottom: 0.6rem;
-  }
-
-  :global(.newsletter-content p) {
-    margin-bottom: 0.8rem;
-  }
-
-  :global(.newsletter-content blockquote) {
-    border-left: 3px solid #3498db;
-    padding-left: 0.8rem;
-    font-style: italic;
-    color: #555;
-    margin: 0.8rem 0;
-  }
-
-  :global(.newsletter-content a) {
-    color: #3498db;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-
-  :global(.newsletter-content a:hover) {
-    border-bottom-color: #3498db;
-  }
-
-  /* Enhanced list styling */
-  :global(.newsletter-content ul, .newsletter-content ol) {
-    margin-bottom: 0.8rem;
-    padding-left: 1.25rem;
-  }
-
-  :global(.newsletter-content ul) {
-    list-style-type: disc;
-  }
-
-  :global(.newsletter-content ul ul) {
-    list-style-type: circle;
-  }
-
-  :global(.newsletter-content ul ul ul) {
-    list-style-type: square;
-  }
-
-  :global(.newsletter-content ol) {
-    list-style-type: decimal;
-  }
-
-  :global(.newsletter-content ol ol) {
-    list-style-type: lower-alpha;
-  }
-
-  :global(.newsletter-content ol ol ol) {
-    list-style-type: lower-roman;
-  }
-
-  :global(.newsletter-content li) {
-    margin-bottom: 0.35rem;
-  }
-
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .newsletter-content {
-      padding: 0.5rem;
-    }
-
-    .newsletter-title {
-      font-size: 2rem;
-    }
-
-    .table-of-contents {
-      padding: 0.5rem 0.5rem;
-    }
-
-    :global(.newsletter-content h2) {
-      font-size: 1.75rem;
-    }
-
-    :global(.newsletter-content h3) {
-      font-size: 1.4rem;
-    }
-  }
-
-  :global(.newsletter-content li::marker) {
-    color: #3498db;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .publication-date {
-      background-color: rgba(52, 152, 219, 0.2);
-    }
-
-    :global(.newsletter-content blockquote) {
-      color: #bbb;
-    }
-
-    :global(.newsletter-content a) {
-      color: #5dade2;
-    }
-
-    :global(.newsletter-content a:hover) {
-      border-bottom-color: #5dade2;
-    }
-
-    :global(.newsletter-content li::marker) {
-      color: #5dade2;
-    }
-  }
+  /* Keep the global styles for the newsletter content */
+  /* These will apply to the content inside the svelte:component */
 </style>

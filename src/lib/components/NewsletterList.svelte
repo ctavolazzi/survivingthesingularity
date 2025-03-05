@@ -6,6 +6,7 @@
   export let newsletters = [];
   export let selectedSlug = '';
   export let pagination = null;
+  export let compact = false;
 
   const dispatch = createEventDispatcher();
 
@@ -254,26 +255,6 @@
 </div>
 
 <style lang="postcss">
-  /* Base Styles */
-  .newsletter-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Custom scrollbar */
-  .newsletter-list::-webkit-scrollbar {
-    width: 1px;
-  }
-
-  .newsletter-list::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .newsletter-list::-webkit-scrollbar-thumb {
-    background-color: rgba(156, 163, 175, 0.5);
-    border-radius: 20px;
-  }
-
   /* Newsletter card styles */
   .newsletter-card-large {
     @apply transition-all duration-200;

@@ -1,0 +1,152 @@
+/* Global styles for newsletter content */
+/* These styles will be imported by the newsletter components */
+
+.newsletter-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #3498db;
+}
+
+.newsletter-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.newsletter-content h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #3498db;
+  margin-top: 0.3rem;
+}
+
+.newsletter-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.newsletter-content h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-content p {
+  margin-bottom: 0.8rem;
+}
+
+.newsletter-content blockquote {
+  border-left: 3px solid #3498db;
+  padding-left: 0.8rem;
+  font-style: italic;
+  color: #555;
+  margin: 0.8rem 0;
+}
+
+.newsletter-content a {
+  color: #3498db;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-content a:hover {
+  border-bottom-color: #3498db;
+}
+
+/* Enhanced list styling */
+.newsletter-content ul,
+.newsletter-content ol {
+  margin-bottom: 0.8rem;
+  padding-left: 1.25rem;
+}
+
+.newsletter-content ul {
+  list-style-type: disc;
+}
+
+.newsletter-content ul ul {
+  list-style-type: circle;
+}
+
+.newsletter-content ul ul ul {
+  list-style-type: square;
+}
+
+.newsletter-content ol {
+  list-style-type: decimal;
+}
+
+.newsletter-content ol ol {
+  list-style-type: lower-alpha;
+}
+
+.newsletter-content ol ol ol {
+  list-style-type: lower-roman;
+}
+
+.newsletter-content li {
+  margin-bottom: 0.35rem;
+}
+
+.newsletter-content pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .newsletter-content h1 {
+    font-size: 2rem;
+  }
+
+  .newsletter-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .newsletter-content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .newsletter-content h1 {
+    color: #5dade2;
+  }
+
+  .newsletter-content h2::after {
+    background-color: #5dade2;
+  }
+
+  .newsletter-content blockquote {
+    color: #bbb;
+    border-left-color: #5dade2;
+  }
+
+  .newsletter-content a {
+    color: #5dade2;
+  }
+
+  .newsletter-content a:hover {
+    border-bottom-color: #5dade2;
+  }
+
+  .newsletter-content pre {
+    background-color: #2d3748;
+    color: #e2e8f0;
+  }
+}

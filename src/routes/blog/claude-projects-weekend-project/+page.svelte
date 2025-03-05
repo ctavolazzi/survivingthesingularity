@@ -4,6 +4,8 @@
     import { marked } from 'marked';
     import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
     import RecommendedContent from '$lib/components/RecommendedContent.svelte';
+    import { fade } from 'svelte/transition';
+    import { onMount } from 'svelte';
 
     const renderer = new marked.Renderer();
     renderer.link = (href, title, text) => {
@@ -38,6 +40,13 @@
         title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
       }
     ];
+
+    let isImageLoaded = false;
+    let mounted = false;
+
+    onMount(() => {
+      mounted = true;
+    });
 </script>
 
 <svelte:head>
@@ -59,7 +68,16 @@
       <button class="big-button" on:click={handleBackToBlog}>← Back to Blog List</button>
     </div>
 
-    <img src={post.imageUrl} alt="Blog post header" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
+    <div class="featured-image-container mb-8 rounded-lg overflow-hidden">
+      <img
+        src={post.imageUrl}
+        alt={post.title}
+        class="w-full h-auto transition-opacity duration-300"
+        class:opacity-0={!isImageLoaded}
+        class:opacity-100={isImageLoaded}
+        on:load={() => isImageLoaded = true}
+      />
+    </div>
 
     <div class="blog-content">
       {@html htmlContent}
@@ -229,5 +247,50 @@
       max-width: none;
       width: 100%;
     }
+  }
+
+  .featured-image-container {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .featured-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .content {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 1rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--color-text-secondary);
+  }
+
+  .newsletter-section {
+    max-width: 4xl;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Dark mode adjustments */
+  :global(.dark) .blog-post {
+    background-color: var(--color-bg-primary-dark);
+    color: var(--color-text-primary-dark);
   }
 </style>

@@ -1,8 +1,10 @@
 <script>
+  import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import { post } from '$lib/data/blog-posts/singularity-express/index.js';
   import { marked } from 'marked';
-  import { onMount } from 'svelte';
   import { browser } from '$app/environment';
 
   const defaultAvatar = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="%23718096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>';
@@ -12,6 +14,8 @@
   let scrollProgress = 0;
   let isProcessingClick = false;
   let lastClickTime = 0;
+  let isImageLoaded = false;
+  let mounted = false;
 
   function handleBackToBlog() {
     window.history.back();
@@ -90,6 +94,7 @@
   }
 
   onMount(() => {
+    mounted = true;
     // Don't run on the server
     if (typeof window === 'undefined') return;
 
@@ -109,79 +114,97 @@
 
 <div class="progress-bar" style="width: {scrollProgress}%"></div>
 
-<article class="main-content">
-  <header class="article-header">
-    <div class="content-container narrow">
-      <a href="/blog" class="back-link">
-        <span class="back-arrow">←</span> All articles
-      </a>
-      <h1 class="article-title">{post.title}</h1>
-
-      <div class="article-meta">
-        <div class="meta-item author">
-          {#if typeof window !== 'undefined' && browser}
-            <img src={getAvatarSrc(post)} alt="{post.author}" class="author-avatar" />
-          {:else}
-            <div class="author-avatar-placeholder"></div>
-          {/if}
-          <span>{post.author}</span>
-        </div>
-        <time datetime={post.date} class="meta-item date">{post.date}</time>
-        <div class="meta-item reading-time">{readingTime}</div>
+<div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>
+  <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4">{post.title}</h1>
+      <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+        <span class="mr-4">{post.date}</span>
+        <span class="mr-4">·</span>
+        <span class="mr-4">{readingTime}</span>
+        <span class="mr-4">·</span>
+        <span>By {post.author}</span>
       </div>
+    </header>
+
+    <div class="featured-image-container mb-8 rounded-lg overflow-hidden">
+      <img
+        src={post.imageUrl}
+        alt={post.title}
+        class="w-full h-auto transition-opacity duration-300"
+        class:opacity-0={!isImageLoaded}
+        class:opacity-100={isImageLoaded}
+        on:load={() => isImageLoaded = true}
+      />
     </div>
 
-    <div class="featured-image-container">
-      <img src={post.imageUrl} alt="{post.title}" class="featured-image" />
-      <div class="image-overlay"></div>
+    <div class="content">
+      <p class="lead">
+        The Singularity Express has pulled into the station, and it's bringing with it a new era of AI
+        that can think and reason. Get ready for Level 2 AI capabilities that will transform how we
+        interact with artificial intelligence.
+      </p>
+
+      <h2>Welcome to Level 2</h2>
+      <p>
+        We're witnessing a pivotal moment in AI development. The transition to Level 2 AI represents
+        a significant leap forward in machine intelligence, where AI systems can now demonstrate
+        genuine reasoning capabilities and understanding rather than just pattern matching.
+      </p>
+
+      <h2>What Makes Level 2 Different?</h2>
+      <ul>
+        <li>True reasoning capabilities beyond pattern recognition</li>
+        <li>Improved context understanding and retention</li>
+        <li>More sophisticated problem-solving abilities</li>
+        <li>Better handling of abstract concepts</li>
+        <li>Enhanced natural language understanding</li>
+      </ul>
+
+      <h2>Real-World Implications</h2>
+      <p>
+        The arrival of Level 2 AI capabilities brings with it profound implications for various sectors:
+      </p>
+      <ul>
+        <li>More sophisticated automated decision-making systems</li>
+        <li>Enhanced natural language processing and generation</li>
+        <li>Improved problem-solving in complex domains</li>
+        <li>More nuanced human-AI interactions</li>
+      </ul>
+
+      <blockquote>
+        "We're not just seeing incremental improvements anymore. This is a fundamental shift in how
+        AI systems process and understand information." - AI Research Lead
+      </blockquote>
+
+      <h2>Preparing for the Future</h2>
+      <p>
+        As we enter this new phase of AI development, it's crucial to understand both the opportunities
+        and challenges that lie ahead. Level 2 AI capabilities will require:
+      </p>
+      <ul>
+        <li>New frameworks for AI safety and ethics</li>
+        <li>Updated regulatory approaches</li>
+        <li>Enhanced security measures</li>
+        <li>Revised educational and training programs</li>
+      </ul>
+
+      <h2>The Road Ahead</h2>
+      <p>
+        The Singularity Express is just beginning its journey. As we move forward with Level 2 AI,
+        we're entering uncharted territory that promises to reshape our relationship with technology
+        and our understanding of intelligence itself. Stay tuned as we continue to explore this
+        exciting new frontier.
+      </p>
     </div>
-  </header>
+  </article>
 
-  <div class="content-container">
-    <div class="article-content-wrapper">
-      <div class="share-sidebar">
-        <button class="share-button" aria-label="Share on Twitter" on:click={shareOnTwitter}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-        </button>
-        <button class="share-button" aria-label="Share on LinkedIn" on:click={shareOnLinkedIn}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-        </button>
-        <button class="share-button" aria-label="Copy Link" on:click={copyLink}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-        </button>
-      </div>
+  <Spacer height="2rem" />
 
-      <div class="blog-content">
-        {@html htmlContent}
-      </div>
-    </div>
-
-    <div class="article-footer">
-      <div class="tags">
-        {#if post.tags}
-          {#each post.tags as tag}
-            <span class="tag">{tag}</span>
-          {/each}
-        {:else}
-          <span class="tag">AI</span>
-          <span class="tag">Singularity</span>
-          <span class="tag">Future</span>
-        {/if}
-      </div>
-
-      <div class="article-navigation">
-        <a href="/blog" class="nav-button">
-          <span class="nav-arrow">←</span>
-          <span class="nav-text">All articles</span>
-        </a>
-        <a href="/blog" class="nav-button next">
-          <span class="nav-text">Next article</span>
-          <span class="nav-arrow">→</span>
-        </a>
-      </div>
-    </div>
+  <div class="newsletter-section">
+    <NewsletterSignup />
   </div>
-</article>
+</div>
 
 <style>
   .progress-bar {
@@ -194,49 +217,58 @@
     transition: width 0.1s;
   }
 
-  .main-content {
-    padding-top: 0;
-    position: relative;
+  .blog-post {
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
   }
 
-  .article-header {
+  .featured-image-container {
     position: relative;
-    padding-top: 2rem;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .featured-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .content {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
     margin-bottom: 2rem;
   }
 
-  .content-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    width: 100%;
-    position: relative;
-  }
-
-  .content-container.narrow {
-    max-width: 700px;
-  }
-
-  .back-link {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0.95rem;
-    font-weight: 500;
+  blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 1rem;
+    margin: 2rem 0;
+    font-style: italic;
     color: var(--color-text-secondary);
-    margin-bottom: 1.5rem;
-    text-decoration: none;
-    transition: color 0.2s ease;
   }
 
-  .back-link:hover {
-    color: var(--color-primary);
+  .newsletter-section {
+    max-width: 4xl;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 
-  .back-arrow {
-    margin-right: 0.5rem;
-    font-size: 1.1rem;
+  /* Dark mode adjustments */
+  :global(.dark) .blog-post {
+    background-color: var(--color-bg-primary-dark);
+    color: var(--color-text-primary-dark);
   }
 
+  .progress-bar {
   .article-title {
     font-size: clamp(2.2rem, 5vw, 3.2rem);
     line-height: 1.2;

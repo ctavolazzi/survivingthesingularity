@@ -15,3 +15,5 @@ vite.config.ts.timestamp-*
 # Add these lines to ignore pnpm store
 .pnpm-store
 **/node_modules/.pnpm/
+
+cloudflare_logs/Discord.dmg

@@ -5,11 +5,11 @@
   import Spacer from '$lib/components/Spacer.svelte';
 
   const post = {
-    title: 'Robot Farm Bot - The Future of Residential Agriculture',
-    date: '2024-08-15',
+    title: 'DARPA Seeks Plans for Large Bio-Mechanical Space Structures',
+    date: '2024-03-04',
     author: 'Christopher Tavolazzi',
-    image: 'https://farm.bot/cdn/shop/files/FarmBot_Genesis_v1-3_c10ecd67-00ed-4ae1-a32e-111f11312655_2049x1365.jpg?v=1697756943',
-    readingTime: '7 min read'
+    image: 'https://futurism.com/_next/image?url=https%3A%2F%2Fwordpress-assets.futurism.com%2F2025%2F02%2Fdarpa-requests-plans-large-bio-mechanical-space-structures.jpg&w=2048&q=75',
+    readingTime: '5 min read'
   };
 
   let isImageLoaded = false;
@@ -46,64 +46,56 @@
 
     <div class="content">
       <p class="lead">
-        Imagine a world where your backyard vegetable garden is tended by an AI-powered robot,
-        ensuring a bountiful harvest with minimal effort. Welcome to the era of the Robot Farm Bot.
+        DARPA has issued a request for information on building massive biological structures in space,
+        exploring a sci-fi future where space infrastructure might be grown rather than assembled.
       </p>
 
-      <h2>Revolutionizing Home Gardening</h2>
+      <h2>The Future of Space Construction</h2>
       <p>
-        The Robot Farm Bot represents a groundbreaking advancement in residential agriculture,
-        combining precision farming techniques with artificial intelligence to create an
-        automated gardening system that anyone can use. This innovative technology is transforming
-        how we think about growing food at home.
+        In a move that seems straight out of science fiction, DARPA (Defense Advanced Research Projects Agency)
+        is exploring the possibility of growing large-scale structures in space using biological and
+        bio-mechanical processes. This groundbreaking initiative could revolutionize how we build and
+        maintain space infrastructure.
       </p>
 
-      <h2>Key Features</h2>
+      <h2>Key Points of the Initiative</h2>
       <ul>
-        <li>Automated planting, watering, and weeding</li>
-        <li>AI-powered plant monitoring and care</li>
-        <li>Precision nutrient delivery systems</li>
-        <li>Mobile app control and monitoring</li>
-        <li>Weather-adaptive scheduling</li>
+        <li>Bio-mechanical hybrid structures that can self-repair and adapt</li>
+        <li>Reduced launch costs by growing structures in space</li>
+        <li>Potential applications in space stations, satellites, and deep space missions</li>
+        <li>Integration of living materials with mechanical components</li>
       </ul>
 
-      <h2>How It Works</h2>
+      <h2>Implications for Space Exploration</h2>
       <p>
-        The Robot Farm Bot operates on a precision CNC system, moving along X, Y, and Z axes to
-        access every part of your garden. Using an array of sensors and tools, it can:
+        This innovative approach to space construction could solve many of the current challenges in space
+        exploration and colonization. By utilizing biological processes, we might be able to create
+        structures that are not only self-maintaining but also capable of adapting to changing conditions
+        in space.
       </p>
-      <ul>
-        <li>Plant seeds at optimal depth and spacing</li>
-        <li>Monitor soil moisture and nutrient levels</li>
-        <li>Identify and remove weeds</li>
-        <li>Water plants with precision</li>
-        <li>Track plant growth and health</li>
-      </ul>
 
       <blockquote>
-        "The Robot Farm Bot is not just a gardening tool; it's a complete agricultural
-        solution that brings commercial farming technology to your backyard."
-        - Agricultural Technology Review
+        "The integration of biological processes with space construction could be the key to sustainable
+        long-term presence in space." - DARPA spokesperson
       </blockquote>
 
-      <h2>Benefits for Home Gardeners</h2>
+      <h2>Technical Challenges</h2>
       <p>
-        This revolutionary system offers numerous advantages for home gardeners:
+        While the concept is promising, there are significant technical challenges to overcome:
       </p>
       <ul>
-        <li>Reduced time and effort in garden maintenance</li>
-        <li>Increased crop yields through precision care</li>
-        <li>Year-round growing capabilities</li>
-        <li>Data-driven plant care decisions</li>
-        <li>Sustainable water and resource usage</li>
+        <li>Maintaining biological processes in the harsh space environment</li>
+        <li>Ensuring structural integrity and stability</li>
+        <li>Controlling growth and development in zero gravity</li>
+        <li>Integration with existing space technologies</li>
       </ul>
 
-      <h2>The Future of Home Growing</h2>
+      <h2>Looking Ahead</h2>
       <p>
-        As we move towards a more sustainable future, technologies like the Robot Farm Bot
-        will play a crucial role in enabling people to grow their own food efficiently and
-        sustainably. This is just the beginning of a new era in residential agriculture,
-        where technology and nature work together to create abundant home gardens.
+        As we continue to push the boundaries of space exploration, innovations like bio-mechanical
+        structures could play a crucial role in establishing a permanent human presence beyond Earth.
+        The success of this initiative could mark the beginning of a new era in space construction
+        and exploration.
       </p>
     </div>
   </article>

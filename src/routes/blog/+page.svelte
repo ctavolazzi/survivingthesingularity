@@ -34,7 +34,7 @@
 
     <div class="post-grid">
       {#each posts as post}
-      <a href="/blog/{post.slug}" class="post-card-link">
+      <a href={post.route} class="post-card-link">
         <article class="post-card">
           <div class="post-image-container">
             <img src={post.image} alt={post.title} class="post-image" loading="lazy" />

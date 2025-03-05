@@ -1,149 +1,177 @@
 <script>
-    import Spacer from '$lib/components/Spacer.svelte';
-    import { post } from '$lib/data/blog-posts/farm-bot-deep-dive/index.js';
-    import { marked } from 'marked';
-  
-    let htmlContent = marked(post.content);
-  
-    function handleBackToBlog() {
-      window.history.back();
-    }
-  </script>
+  import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+  import Spacer from '$lib/components/Spacer.svelte';
 
-  
-  <div class="main-content">
-    <div class="content-container">
-      <h1 class="text-4xl font-bold mb-4 text-[var(--color-text-primary)]">{post.title}</h1>
-      <p class="text-[var(--color-text-secondary)] italic mb-6">{post.date} - {post.author}</p>
-      
-      <div class="button-container">
-        <button class="big-button" on:click={handleBackToBlog}>← Back to Blog List</button>
+  const post = {
+    title: 'Farm Bot Deep Dive - Exploring AI-Powered Precision Agriculture',
+    date: '2024-08-24',
+    author: 'Christopher Tavolazzi',
+    image: 'https://www.open-electronics.org/wp-content/uploads/2013/10/FarmBot-Genesis-Homepage-Image.jpg',
+    readingTime: '8 min read'
+  };
+
+  let isImageLoaded = false;
+  let mounted = false;
+
+  onMount(() => {
+    mounted = true;
+  });
+</script>
+
+<div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>
+  <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4">{post.title}</h1>
+      <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+        <span class="mr-4">{post.date}</span>
+        <span class="mr-4">·</span>
+        <span class="mr-4">{post.readingTime}</span>
+        <span class="mr-4">·</span>
+        <span>By {post.author}</span>
       </div>
-  
-      <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
-  
-      <div class="blog-content">
-        {@html htmlContent}
-      </div>
+    </header>
+
+    <div class="featured-image-container mb-8 rounded-lg overflow-hidden">
+      <img
+        src={post.image}
+        alt={post.title}
+        class="w-full h-auto transition-opacity duration-300"
+        class:opacity-0={!isImageLoaded}
+        class:opacity-100={isImageLoaded}
+        on:load={() => isImageLoaded = true}
+      />
     </div>
-  
-    <Spacer height="2rem"/>
-  
-    <div class="button-container">
-      <button class="big-button" on:click={handleBackToBlog}>← Back to Blog List</button>
+
+    <div class="content">
+      <p class="lead">
+        Dive deep into the world of FarmBot, a revolutionary CNC automated, AI-powered system that's
+        transforming backyard gardening and small-scale agriculture with precision and efficiency.
+      </p>
+
+      <h2>The Technology Behind FarmBot</h2>
+      <p>
+        FarmBot combines precision CNC machinery with sophisticated AI algorithms to create a
+        comprehensive automated farming solution. At its core, it's a robotic system that can
+        handle virtually every aspect of plant care with remarkable precision.
+      </p>
+
+      <h2>Core Components</h2>
+      <ul>
+        <li>CNC-guided positioning system for precise tool movement</li>
+        <li>Interchangeable tool heads for different tasks</li>
+        <li>AI-powered plant recognition and monitoring</li>
+        <li>Automated watering and nutrient delivery systems</li>
+        <li>Environmental sensors and weather monitoring</li>
+      </ul>
+
+      <h2>AI and Machine Learning Integration</h2>
+      <p>
+        The FarmBot system leverages advanced AI capabilities in several key areas:
+      </p>
+      <ul>
+        <li>Computer vision for plant identification and health monitoring</li>
+        <li>Machine learning for optimal growing conditions</li>
+        <li>Predictive analytics for harvest timing</li>
+        <li>Automated pest and disease detection</li>
+      </ul>
+
+      <blockquote>
+        "FarmBot represents the perfect fusion of traditional farming knowledge with cutting-edge
+        technology, making precision agriculture accessible to everyone." - Agricultural Innovation Review
+      </blockquote>
+
+      <h2>Precision Agriculture Features</h2>
+      <p>
+        The system's precision capabilities include:
+      </p>
+      <ul>
+        <li>Sub-millimeter positioning accuracy</li>
+        <li>Individual plant care customization</li>
+        <li>Optimized resource utilization</li>
+        <li>Real-time growth tracking and analysis</li>
+        <li>Automated crop rotation planning</li>
+      </ul>
+
+      <h2>Data-Driven Farming</h2>
+      <p>
+        FarmBot's approach to agriculture is fundamentally data-driven, collecting and analyzing
+        information about:
+      </p>
+      <ul>
+        <li>Soil conditions and nutrient levels</li>
+        <li>Plant growth rates and health metrics</li>
+        <li>Water usage and efficiency</li>
+        <li>Environmental conditions and their impact</li>
+      </ul>
+
+      <h2>Future Developments</h2>
+      <p>
+        As FarmBot technology continues to evolve, we can expect to see even more advanced features
+        and capabilities, including enhanced AI decision-making, improved efficiency, and greater
+        integration with other smart home and agricultural systems. This is truly just the beginning
+        of the precision agriculture revolution.
+      </p>
     </div>
-  
-    <Spacer height="1rem"/>
+  </article>
+
+  <Spacer height="2rem" />
+
+  <div class="newsletter-section">
+    <NewsletterSignup />
   </div>
-  
-  <style>
-    .main-content {
-      padding-top: 50px; /* Adjust this value if needed */
-    }
-  
-    .content-container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      width: 100%;
-    }
-  
-    .button-container {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1rem 0;
-    }
-  
-    .big-button {
-      flex: 1;
-      font-weight: 600;
-      font-size: 1.1rem;
-      background-color: #ffffff;
-      border: 1px solid #2c3e50;
-      border-radius: 6px;
-      color: #2c3e50;
-      padding: 0.75rem 1rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      max-width: 300px;
-    }
-  
-    .big-button:hover {
-      background-color: #f8f9fa;
-      border-color: #34495e;
-      color: #34495e;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transform: translateY(-2px);
-    }
-  
-    :global(.dark) .big-button {
-      background-color: #2c3e50;
-      color: #ffffff;
-      border-color: #34495e;
-    }
-  
-    :global(.dark) .big-button:hover {
-      background-color: #34495e;
-      border-color: #4a6785;
-      color: #ffffff;
-    }
-  
-    .blog-content :global(h1) {
-      font-size: 2.25rem;
-      font-weight: bold;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--color-text-primary);
-    }
-  
-    .blog-content :global(h2) {
-      font-size: 1.875rem;
-      font-weight: bold;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--color-text-primary);
-    }
-  
-    .blog-content :global(h3) {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--color-text-primary);
-    }
-  
-    .blog-content :global(p) {
-      margin-bottom: 1rem;
-      line-height: 1.625;
-      color: var(--color-text-secondary);
-    }
-  
-    .blog-content :global(ul), .blog-content :global(ol) {
-      margin-bottom: 1rem;
-      padding-left: 1.5rem;
-      color: var(--color-text-secondary);
-    }
-  
-    .blog-content :global(li) {
-      margin-bottom: 0.5rem;
-    }
-  
-    .blog-content :global(a) {
-      color: #3b82f6;
-      text-decoration: underline;
-    }
-  
-    .blog-content :global(a:hover) {
-      color: #2563eb;
-    }
-  
-    @media (max-width: 768px) {
-      .big-button {
-        max-width: none;
-        width: 100%;
-      }
-    }
-  </style>
+</div>
+
+<style>
+  .blog-post {
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+
+  .featured-image-container {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .featured-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .content {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 1rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--color-text-secondary);
+  }
+
+  .newsletter-section {
+    max-width: 4xl;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Dark mode adjustments */
+  :global(.dark) .blog-post {
+    background-color: var(--color-bg-primary-dark);
+    color: var(--color-text-primary-dark);
+  }
+</style>

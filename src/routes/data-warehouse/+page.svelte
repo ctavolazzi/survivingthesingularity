@@ -304,13 +304,11 @@
                     <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-white line-clamp-2">{book.title}</h3>
                     <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">by {book.author}</p>
                     <p class="text-sm text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">{book.description}</p>
-                    <a href={book.link} target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline text-sm">
-                        View Book
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                        </svg>
-                    </a>
+                    <div class="flex justify-center mb-10">
+                        <a href={book.link} class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center">
+                            Read a Sample
+                        </a>
+                    </div>
                 </div>
             {/each}
         </div>

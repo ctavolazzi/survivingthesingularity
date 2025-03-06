@@ -61,13 +61,13 @@
     /* Newsletter Container */
     .newsletter-container {
       width: 100%;
-      max-width: min(1100px, 100% - 2rem);
+      max-width: min(1400px, 100% - 1rem);
       margin: 0 auto;
-      padding: 1rem;
+      padding: 0.5rem;
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
-      gap: 1rem;
+      gap: 0.75rem;
     }
 
     /* Ensure all content stays within bounds */
@@ -80,21 +80,21 @@
     /* Media query for responsive behavior */
     @media (min-width: 1024px) {
       .newsletter-container {
-        max-width: min(90%, 1100px);
-        padding: 1.5rem;
+        max-width: min(95%, 1400px);
+        padding: 0.75rem;
       }
     }
 
     @media (max-width: 768px) {
       .newsletter-container {
-        padding: 1rem;
+        padding: 0.5rem;
         margin: 0 auto;
       }
     }
 
     @media (max-width: 480px) {
       .newsletter-container {
-        padding: 0.5rem;
+        padding: 0.25rem;
         margin: 0 auto;
       }
     }

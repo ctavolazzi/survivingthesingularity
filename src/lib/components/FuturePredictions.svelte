@@ -78,10 +78,15 @@
     {/if}
   </div>
 
-  <div class="future-footer mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-    <p class="text-center text-gray-700 dark:text-gray-300">
-      Want to explore these predictions in depth? <a href="/book" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">Check out the book</a> for a comprehensive analysis.
+  <div class="future-footer mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-center">
+    <p class="text-gray-700 dark:text-gray-300">
+      Want to explore these predictions in depth?
     </p>
+    <div class="text-center">
+      <a href="/book" class="inline-block mt-2 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg">
+        Read a Sample
+      </a>
+    </div>
   </div>
 </div>
 

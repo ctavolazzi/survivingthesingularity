@@ -62,10 +62,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, div {
 /* Container styles */
 .container {
   width: 100%;
-  max-width: min(var(--max-width), 100% - (2 * var(--safe-area-padding)));
+  max-width: min(var(--max-width), 100% - 1rem);
   margin: 0 auto;
-  padding-left: max(1rem, var(--safe-area-padding));
-  padding-right: max(1rem, var(--safe-area-padding));
+  padding-left: max(0.5rem, var(--safe-area-padding));
+  padding-right: max(0.5rem, var(--safe-area-padding));
   box-sizing: border-box;
 }
 
@@ -101,8 +101,8 @@ input, select, textarea {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
-    padding-left: max(0.5rem, var(--safe-area-padding));
-    padding-right: max(0.5rem, var(--safe-area-padding));
+    padding-left: max(0.25rem, var(--safe-area-padding));
+    padding-right: max(0.25rem, var(--safe-area-padding));
   }
 
   /* Adjust font sizes for better mobile display */

@@ -38,6 +38,11 @@
             <li>Tools for processing complex technological shifts</li>
           </ul>
           <p>The free sample provides initial thoughts on these topics as they continue to be developed.</p>
+          <div class="mt-4 text-center">
+            <a href="/book" class="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+              Read a Sample
+            </a>
+          </div>
         </div>
       </AccordionItem>
 

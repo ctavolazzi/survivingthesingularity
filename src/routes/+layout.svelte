@@ -62,10 +62,16 @@
   main {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      padding: 1.5rem 1rem;
+    }
   }
 </style>

@@ -2,7 +2,7 @@
   export let data;
   const { posts } = data;
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-  import Spacer from '$lib/components/Spacer.svelte';
+
 </script>
 
 <div class="main-content">

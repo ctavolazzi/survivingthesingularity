@@ -138,14 +138,39 @@
       --button-hover: #34495e;
       --disclaimer-color: #6c757d;
 
-      max-width: 500px;
+      width: 100%;
+      max-width: min(500px, 100% - 2rem);
       margin: 2rem auto;
-      padding: 2rem;
+      padding: min(2rem, 5vw);
       background-color: var(--bg-color);
       color: var(--text-color);
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    /* Ensure form elements stay within bounds */
+    .newsletter-signup form {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .newsletter-signup input,
+    .newsletter-signup button {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Ensure text content wraps properly */
+    .newsletter-signup h2,
+    .newsletter-signup p {
+      max-width: 100%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
     }
 
     :global(.dark) .newsletter-signup {
@@ -203,8 +228,15 @@
 
     @media (max-width: 768px) {
       .newsletter-signup {
-        padding: 1rem;
         margin: 1rem auto;
+        padding: min(1.5rem, 4vw);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .newsletter-signup {
+        margin: 0.5rem auto;
+        padding: min(1rem, 3vw);
       }
     }
   </style>

@@ -23,7 +23,7 @@
     <div class="flex flex-col gap-4">
       <!-- Tabbed Navigation Header -->
       <div class="w-full">
-        <div class="bg-gray-50 dark:bg-gray-900 shadow rounded-lg overflow-hidden">
+        <div class="bg-gray-50 dark:bg-gray-900 shadow rounded-lg">
           <NewsletterList
             {newsletters}
             on:select={handleSelectNewsletter}
@@ -36,7 +36,7 @@
 
       <!-- Main Content -->
       <div class="w-full">
-        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden p-2">
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-2">
           <slot></slot>
         </div>
       </div>
@@ -51,6 +51,7 @@
     /* Global body styles */
     :global(body) {
       background-color: #f9fafb;
+      width: 100%;
     }
 
     :global(body.dark) {
@@ -60,18 +61,58 @@
     /* Newsletter Container */
     .newsletter-container {
       width: 100%;
-      max-width: 1100px;
+      max-width: min(1100px, 100% - 2rem);
       margin: 0 auto;
-      padding: 0.5rem;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
+      box-sizing: border-box;
+      gap: 1rem;
+    }
+
+    /* Ensure all content stays within bounds */
+    :global(.newsletter-container *) {
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
     /* Media query for responsive behavior */
     @media (min-width: 1024px) {
       .newsletter-container {
-        max-width: 90%;
-        padding: 0.75rem;
+        max-width: min(90%, 1100px);
+        padding: 1.5rem;
       }
+    }
+
+    @media (max-width: 768px) {
+      .newsletter-container {
+        padding: 1rem;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .newsletter-container {
+        padding: 0.5rem;
+        margin: 0 auto;
+      }
+    }
+
+    /* Ensure images and media stay within bounds */
+    :global(.newsletter-container img),
+    :global(.newsletter-container video),
+    :global(.newsletter-container iframe) {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Ensure tables don't overflow */
+    :global(.newsletter-container table) {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 </style>

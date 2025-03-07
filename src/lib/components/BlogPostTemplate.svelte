@@ -5,6 +5,7 @@
   import SocialShare from './SocialShare.svelte';
   import Spacer from './Spacer.svelte';
   import RecommendedContent from './RecommendedContent.svelte';
+  import MysteryBoxAd from '$lib/components/ads/MysteryBoxAd.svelte';
 
   export let post = {
     title: '',
@@ -149,6 +150,22 @@
   <div class="blog-closing max-w-3xl mx-auto px-3 sm:px-4 py-4">
     <DiscordButton />
     <NewsletterSignup />
+
+    <div class="mystery-box-wrapper">
+      <a href="https://treasuretavernhq.myshopify.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds" class="mystery-box-link" aria-label="Subscribe to Mood Booster Mystery Box">
+        <MysteryBoxAd
+          title="Mood Booster Mystery Box"
+          subtitle="Monthly Surprises"
+          description="Discover curated indie treasures delivered monthly to your door. Each box contains 5-7 handpicked items designed to boost your mood and bring joy to your everyday life."
+          price="24.99"
+          frequency="month"
+          ctaText="Subscribe Now"
+          ctaUrl="https://treasuretavernhq.myshopify.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds"
+          badgeText="Most Popular"
+          itemCount="5-7 items"
+        />
+      </a>
+    </div>
   </div>
 </div>
 
@@ -161,5 +178,26 @@
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid var(--color-border, #e2e8f0);
+  }
+
+  .mystery-box-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  .mystery-box-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Ensure the link doesn't show the default purple outline when clicked */
+  .mystery-box-link:focus {
+    outline: none;
+  }
+
+  /* Add a subtle hover effect to indicate the whole component is clickable */
+  .mystery-box-link:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
   }
 </style>

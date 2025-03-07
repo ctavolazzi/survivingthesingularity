@@ -1,0 +1,396 @@
+<script>
+  // Props for the Treasure Tavern ad component
+  export let title = "Discover Unique Treasures";
+  export let subtitle = "The Treasure Tavern";
+  export let description = "Find rare collectibles, unique artifacts, and curated treasures from around the world. Each item has a story, each purchase is an adventure.";
+  export let ctaText = "Explore the Tavern";
+  export let ctaUrl = "#"; // Update with actual store URL
+  export let imagePath = "/images/treasure-tavern-square.png"; // Changed to square image
+  export let showBadge = true;
+  export let badgeText = "New Arrivals";
+
+  // Featured product props
+  export let featuredProduct = null; // { title, price, image, url }
+  export let showFeaturedProduct = false;
+
+  // Compute if we should show the featured product
+  $: canShowFeaturedProduct = showFeaturedProduct && featuredProduct;
+</script>
+
+<div class="treasure-tavern-ad">
+  <div class="treasure-shimmer"></div>
+  <div class="ad-content">
+    <div class="ad-image-container">
+      <img src={imagePath} alt="Treasure Tavern Store" class="ad-image" />
+      {#if showBadge}
+        <div class="treasure-badge">{badgeText}</div>
+      {/if}
+    </div>
+    <div class="ad-text">
+      <div class="ad-header">
+        <h3>{subtitle}</h3>
+        <h2>{title}</h2>
+      </div>
+      <p class="ad-description">{description}</p>
+
+      {#if canShowFeaturedProduct}
+        <div class="featured-product">
+          <div class="product-image-container">
+            <img src={featuredProduct.image} alt={featuredProduct.title} class="product-image" />
+            <div class="product-price">${featuredProduct.price}</div>
+          </div>
+          <div class="product-details">
+            <h4 class="product-title">{featuredProduct.title}</h4>
+            <a href={featuredProduct.url} class="product-link">View Item →</a>
+          </div>
+        </div>
+      {/if}
+
+      <div class="ad-footer">
+        <a href={ctaUrl} class="cta-button">
+          <span class="cta-text">{ctaText}</span>
+          <span class="cta-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="corner-decoration top-left"></div>
+  <div class="corner-decoration top-right"></div>
+  <div class="corner-decoration bottom-left"></div>
+  <div class="corner-decoration bottom-right"></div>
+</div>
+
+<style>
+  .treasure-tavern-ad {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 900px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(193, 154, 73, 0.3);
+    padding: 4px;
+  }
+
+  .treasure-shimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ddb86b, transparent);
+    animation: shimmer 3s infinite;
+    z-index: 1;
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .corner-decoration {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: #c19a49;
+    z-index: 2;
+  }
+
+  .top-left {
+    top: 8px;
+    left: 8px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-radius: 4px 0 0 0;
+  }
+
+  .top-right {
+    top: 8px;
+    right: 8px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0 4px 0 0;
+  }
+
+  .bottom-left {
+    bottom: 8px;
+    left: 8px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-radius: 0 0 0 4px;
+  }
+
+  .bottom-right {
+    bottom: 8px;
+    right: 8px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0 0 4px 0;
+  }
+
+  .treasure-tavern-ad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(193, 154, 73, 0.2);
+  }
+
+  .ad-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(22, 33, 62, 0.95) 100%);
+    border-radius: 8px;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .ad-image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: radial-gradient(circle at center, rgba(193, 154, 73, 0.1), transparent 70%);
+  }
+
+  .ad-image {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+    border: 2px solid rgba(193, 154, 73, 0.4);
+    transform: rotate(-3deg);
+  }
+
+  .treasure-tavern-ad:hover .ad-image {
+    transform: rotate(0deg) scale(1.05);
+  }
+
+  .treasure-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #c7593b 0%, #e27b58 100%);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    transform: rotate(5deg);
+    box-shadow: 0 3px 6px rgba(199, 89, 59, 0.5);
+    z-index: 3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ad-text {
+    flex: 1.5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.2), transparent);
+  }
+
+  .ad-header {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    margin: 0.3rem 0 0 0;
+    font-size: 2.2rem;
+    color: #f0f0f0;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ddb86b;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .ad-description {
+    margin: 0 0 2rem 0;
+    font-size: 1.15rem;
+    color: #adb5bd;
+    flex-grow: 1;
+    line-height: 1.7;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .ad-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #c19a49 0%, #ddb86b 100%);
+    color: #1a1a2e;
+    font-weight: bold;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(193, 154, 73, 0.4);
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.7s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(193, 154, 73, 0.5);
+    background: linear-gradient(135deg, #d4af61 0%, #e9ca83 100%);
+  }
+
+  .cta-button:hover::before {
+    left: 100%;
+  }
+
+  .cta-text {
+    margin-right: 8px;
+  }
+
+  .cta-icon {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+  }
+
+  .cta-button:hover .cta-icon {
+    transform: translateX(4px);
+  }
+
+  .featured-product {
+    margin: 0 0 1.5rem 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid rgba(193, 154, 73, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .featured-product:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-color: rgba(193, 154, 73, 0.5);
+  }
+
+  .product-image-container {
+    position: relative;
+    flex: 0 0 100px;
+  }
+
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid rgba(193, 154, 73, 0.5);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+  }
+
+  .product-price {
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    background: linear-gradient(135deg, #c19a49 0%, #ddb86b 100%);
+    color: #1a1a2e;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .product-details {
+    flex: 1;
+  }
+
+  .product-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    font-weight: bold;
+  }
+
+  .product-link {
+    color: #ddb86b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+
+  .product-link:hover {
+    color: #e9ca83;
+    text-decoration: underline;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .ad-image-container {
+      min-height: 200px;
+      padding: 1rem;
+    }
+
+    .ad-text {
+      padding: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .ad-description {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .treasure-badge {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.8rem;
+    }
+
+    .featured-product {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .product-image-container {
+      margin-bottom: 1rem;
+    }
+  }
+</style>

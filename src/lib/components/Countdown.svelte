@@ -97,12 +97,18 @@
     text-align: center;
     font-weight: bold;
     margin: 0.5rem 0 1.5rem 0;
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
     background: linear-gradient(to right, #FF9933, #FF8000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    white-space: nowrap !important;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.01em;
+    display: block;
   }
 
   .countdown-container {
@@ -211,6 +217,12 @@
 
     .countdown-header {
       margin-bottom: 1rem;
+      font-size: clamp(1.25rem, 4.5vw, 2.5rem);
+      letter-spacing: -0.02em;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap !important;
     }
 
     .countdown-box {
@@ -224,22 +236,39 @@
   }
 
   @media (max-width: 480px) {
+    .countdown-header {
+      font-size: clamp(1rem, 4vw, 1.75rem);
+      letter-spacing: -0.03em;
+      white-space: nowrap !important;
+      overflow: visible; /* Ensure text is visible */
+    }
+
     .countdown-container {
-      flex-wrap: wrap;
-      justify-content: space-around;
+      gap: 0.15rem;
+      padding: 0.75rem 0.25rem;
     }
 
     .countdown-item {
-      padding: 0.25rem;
-      min-width: 60px;
-      margin-bottom: 1rem;
+      padding: 0.25rem 0.1rem;
+      min-width: auto;
+    }
+
+    .countdown-box {
+      min-width: 40px;
+      padding: 0.5rem 0.25rem;
+    }
+
+    .countdown-value {
+      font-size: clamp(1.25rem, 3vw, 2rem);
     }
 
     .countdown-separator {
-      display: none;
+      font-size: clamp(1.25rem, 3vw, 2rem);
+      margin-top: -0.75rem;
     }
 
     .countdown-label {
+      font-size: clamp(0.5rem, 0.8vw, 0.75rem);
       margin-top: 0.25rem;
     }
   }

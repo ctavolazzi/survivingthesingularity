@@ -3,6 +3,7 @@
   import { tweened } from 'svelte/motion';
   import { cubicOut } from 'svelte/easing';
   import { darkMode } from '$lib/stores/darkMode';
+  import { goto } from '$app/navigation';
 
   let visible = false;
   let animationStarted = false;
@@ -10,7 +11,7 @@
   let sectionElement;
 
   const progress = tweened(0, {
-    duration: 2000,
+    duration: 800,
     easing: cubicOut
   });
 
@@ -22,7 +23,7 @@
         setTimeout(() => {
           animationStarted = true;
           startAnimation();
-        }, 100);
+        }, 50);
         observer.unobserve(sectionElement);
       }
     }, { threshold: 0.1 });
@@ -39,6 +40,11 @@
         setTimeout(startAnimation, 1000);
       }, 2000);
     }, 2000);
+  }
+
+  function handleStartHereClick() {
+    console.log("Start Here button clicked");
+    goto('/start-here');
   }
 </script>
 
@@ -77,6 +83,15 @@
         class="underline"
         style="transform: scaleX({$progress});"
       ></div>
+    </div>
+    <div class="button-container">
+      <a
+        href="/start-here"
+        class="start-here-button"
+        on:click|preventDefault={handleStartHereClick}
+      >
+        Start Here
+      </a>
     </div>
   {/if}
 </section>
@@ -245,6 +260,83 @@
 
     .underline-container {
       margin-top: 0.75rem;
+    }
+  }
+
+  .button-container {
+    margin-top: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.3s;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+  }
+
+  .start-here-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #4299e1, #667eea);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(66, 153, 225, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  .start-here-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(66, 153, 225, 0.5);
+  }
+
+  .start-here-button:active {
+    transform: translateY(-1px);
+  }
+
+  .start-here-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+
+  .start-here-button:hover::after {
+    transform: translateX(100%);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive styles for the button */
+  @media (max-width: 480px) {
+    .button-container {
+      margin-top: 1.25rem;
+    }
+
+    .start-here-button {
+      padding: 0.6rem 1.75rem;
+      font-size: 1rem;
     }
   }
 </style>

@@ -2,6 +2,13 @@
 
 export const newsletters = [
   {
+    slug: 'newsletter-edition-003',
+    title: 'AI Ethics and Governance: Finding Balance in the Age of Rapid Innovation',
+    date: 'March 6, 2025',
+    description: 'A brief summary of this newsletter edition.',
+    editionNumber: 3
+  },
+  {
     slug: 'newsletter-edition-002',
     title: 'Surviving the Singularity Newsletter 002',
     date: 'September 10, 2024',

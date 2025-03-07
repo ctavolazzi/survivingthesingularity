@@ -1,11 +1,13 @@
 // This file provides utilities to load newsletter content components dynamically
 
 // Import all newsletter components
+import NewsletterEdition003 from '$lib/components/newsletters/NewsletterEdition003.svelte';
 import NewsletterEdition001 from '$lib/components/newsletters/NewsletterEdition001.svelte';
 import NewsletterEdition002 from '$lib/components/newsletters/NewsletterEdition002.svelte';
 
 // Map of newsletter slugs to their component
 const newsletterComponents = {
+  'newsletter-edition-003': NewsletterEdition003,
   'newsletter-edition-001': NewsletterEdition001,
   'newsletter-edition-002': NewsletterEdition002
 };

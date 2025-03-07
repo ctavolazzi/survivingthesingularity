@@ -3,79 +3,131 @@
 /**
  * Newsletter Creation Script
  *
- * This script creates a new newsletter edition file with the correct naming
+ * This script creates a new newsletter edition component file with the correct naming
  * and populated with the newsletter template.
  *
  * Usage:
- *   node create-newsletter.js "My Newsletter Title"
+ *   node scripts/create-newsletter.js "My Newsletter Title"
  *
  */
 
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
+
+// Get the current file's directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Get title from command line argument
 const title = process.argv[2];
 
 if (!title) {
   console.error('Please provide a newsletter title.');
-  console.error('Usage: node create-newsletter.js "My Newsletter Title"');
+  console.error('Usage: node scripts/create-newsletter.js "My Newsletter Title"');
   process.exit(1);
 }
 
 // Constants
-const NEWSLETTERS_DIR = path.join(__dirname, '..', 'src', 'lib', 'data', 'newsletters');
-const TEMPLATE_PATH = path.join(__dirname, '..', 'src', 'lib', 'components', 'NewsletterTemplate.md');
+const COMPONENT_DIR = path.join(__dirname, '..', 'src', 'lib', 'components', 'newsletters');
+const DATA_FILE = path.join(__dirname, '..', 'src', 'lib', 'data', 'newsletterData.js');
+const TEMPLATE_PATH = path.join(__dirname, '..', 'src', 'lib', 'components', 'newsletters', 'NewsletterTemplate.svelte');
 
-// Create newsletters directory if it doesn't exist
-if (!fs.existsSync(NEWSLETTERS_DIR)) {
-  fs.mkdirSync(NEWSLETTERS_DIR, { recursive: true });
+// Create newsletter components directory if it doesn't exist
+if (!fs.existsSync(COMPONENT_DIR)) {
+  fs.mkdirSync(COMPONENT_DIR, { recursive: true });
 }
 
 // Get current date in YYYY-MM-DD format
-const today = new Date().toISOString().split('T')[0];
+const today = new Date();
+const formattedDate = today.toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric'
+});
 
-// Find the highest edition number
-const existingNewsletters = fs.readdirSync(NEWSLETTERS_DIR)
-  .filter(file => file.startsWith('newsletter-edition-') && file.endsWith('.md'));
-
+// Read the newsletter data file to find the highest edition number
+let newsletterData = fs.readFileSync(DATA_FILE, 'utf8');
+const editionMatch = newsletterData.match(/editionNumber: (\d+)/g);
 let highestEdition = 0;
-existingNewsletters.forEach(file => {
-  const match = file.match(/newsletter-edition-(\d+)\.md/);
-  if (match && match[1]) {
-    const edition = parseInt(match[1], 10);
+
+if (editionMatch) {
+  editionMatch.forEach(match => {
+    const edition = parseInt(match.replace('editionNumber: ', ''), 10);
     if (edition > highestEdition) {
       highestEdition = edition;
     }
-  }
-});
+  });
+}
 
 // New edition number with padding
 const newEdition = highestEdition + 1;
 const paddedEdition = String(newEdition).padStart(3, '0');
 
 // Create new filename
-const newFilename = `newsletter-edition-${paddedEdition}.md`;
-const newFilePath = path.join(NEWSLETTERS_DIR, newFilename);
+const slug = `newsletter-edition-${paddedEdition}`;
+const newFilename = `NewsletterEdition${paddedEdition}.svelte`;
+const newFilePath = path.join(COMPONENT_DIR, newFilename);
 
 // Read template and replace placeholders
 let template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
-template = template.replace('[Newsletter Title]', title);
-template = template.replace('Newsletter Title Here', title);
-template = template.replace('YYYY-MM-DD', today);
-template = template.replace(/XXX/g, paddedEdition);
+template = template.replace(/\[Newsletter Title\]/g, title);
+template = template.replace(/#XXX/g, `#${newEdition}`);
 
-// Write new file
+// Write new component file
 fs.writeFileSync(newFilePath, template);
 
+// Update the newsletterData.js file
+const newNewsletterEntry = `
+  {
+    slug: '${slug}',
+    title: '${title}',
+    date: '${formattedDate}',
+    description: 'A brief summary of this newsletter edition.',
+    editionNumber: ${newEdition}
+  },`;
+
+// Insert the new entry at the beginning of the newsletters array
+const updatedNewsletterData = newsletterData.replace(
+  /export const newsletters = \[/,
+  `export const newsletters = [${newNewsletterEntry}`
+);
+
+// Write the updated data back to the file
+fs.writeFileSync(DATA_FILE, updatedNewsletterData);
+
+// Update the newsletterLoader.js file to import the new component
+const loaderPath = path.join(__dirname, '..', 'src', 'lib', 'utils', 'newsletterLoader.js');
+let loaderContent = fs.readFileSync(loaderPath, 'utf8');
+
+// Add import statement
+const importStatement = `import NewsletterEdition${paddedEdition} from '$lib/components/newsletters/NewsletterEdition${paddedEdition}.svelte';`;
+loaderContent = loaderContent.replace(
+  /\/\/ Import all newsletter components/,
+  `// Import all newsletter components\n${importStatement}`
+);
+
+// Add component to mapping
+const componentMapping = `  '${slug}': NewsletterEdition${paddedEdition},`;
+loaderContent = loaderContent.replace(
+  /const newsletterComponents = {/,
+  `const newsletterComponents = {\n${componentMapping}`
+);
+
+// Write the updated loader back to the file
+fs.writeFileSync(loaderPath, loaderContent);
+
 console.log(`✅ Created new newsletter edition: ${newFilename}`);
-console.log(`📝 Path: ${newFilePath}`);
+console.log(`✅ Updated newsletter data in ${DATA_FILE}`);
+console.log(`✅ Updated newsletter loader in ${loaderPath}`);
+console.log(`📝 Component Path: ${newFilePath}`);
 console.log('');
 console.log('What\'s next?');
-console.log('1. Edit the file to add your content');
-console.log('2. Run your dev server to preview: npm run dev');
-console.log('3. Visit: http://localhost:5173/newsletter');
+console.log('1. Edit the component file to add your content');
+console.log('2. Update the description in the newsletterData.js file');
+console.log('3. Run your dev server to preview: npm run dev');
+console.log('4. Visit: http://localhost:5173/newsletter');
 console.log('');
 
 // Try to open the file in the default editor

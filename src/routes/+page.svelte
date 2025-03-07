@@ -103,7 +103,7 @@
 	<!-- Add News Ticker near the top for high visibility -->
 	<div class="news-ticker-container">
 		<NewsTicker
-			title="Latest From Our Blog"
+			title="Breaking News & Updates 🚨"
 			scrollSpeed={3500}
 			items={newsTickerItems}
 			backgroundColor="rgba(15, 23, 42, 0.7)"

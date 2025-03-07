@@ -13,7 +13,7 @@
   export let itemCount = "5-7 items";
 </script>
 
-<a href={ctaUrl} class="ad-wrapper">
+<a href={ctaUrl} class="ad-wrapper" target="_blank" rel="noopener noreferrer">
   <div class="mystery-box-ad">
     <div class="ad-content">
       <div class="ad-left">
@@ -23,10 +23,6 @@
             <div class="mystery-badge">{badgeText}</div>
           {/if}
           <div class="mystery-icon">?</div>
-          <div class="join-text">
-            <div class="join-line-1">JOIN THE</div>
-            <div class="join-line-2">FUN!</div>
-          </div>
         </div>
 
         <div class="price-tag">
@@ -233,30 +229,6 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .join-text {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    z-index: 3;
-    pointer-events: none;
-    line-height: 1;
-  }
-
-  .join-line-1 {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-  }
-
-  .join-line-2 {
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-  }
-
   .price-tag {
     display: inline-flex;
     align-items: baseline;
@@ -433,14 +405,6 @@
       margin-bottom: 1rem;
     }
 
-    .join-line-1 {
-      font-size: 1.2rem;
-    }
-
-    .join-line-2 {
-      font-size: 1.8rem;
-    }
-
     .ad-right {
       padding: 1.5rem;
     }
@@ -486,14 +450,6 @@
       width: 50px;
       height: 50px;
       font-size: 2rem;
-    }
-
-    .join-line-1 {
-      font-size: 1rem;
-    }
-
-    .join-line-2 {
-      font-size: 1.5rem;
     }
 
     .price-tag {

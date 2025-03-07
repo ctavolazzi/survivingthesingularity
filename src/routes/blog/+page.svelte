@@ -3,6 +3,8 @@
   const { posts } = data;
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
+  import NewsTicker from '$lib/components/NewsTicker.svelte';
 </script>
 
 <div class="main-content">
@@ -29,6 +31,27 @@
   </div>
 
   <div class="content-container">
+    <!-- News Ticker -->
+    <div class="news-ticker-wrapper">
+      <NewsTicker
+        title="AI & Tech Updates"
+        scrollSpeed={6000}
+        backgroundColor="rgba(15, 23, 42, 0.7)"
+        textColor="white"
+        accentColor="#3b82f6"
+      />
+    </div>
+
+    <!-- Featured Posts -->
+    <div class="featured-posts-wrapper">
+      <FeaturedPosts
+        title="Featured Insights"
+        subtitle="Must-read content to help you navigate the AI revolution"
+        maxPosts={3}
+        showImages={true}
+      />
+    </div>
+
     <h2 id="latest-posts" class="section-title">Latest Posts</h2>
     <div class="stylish-divider"></div>
 
@@ -388,6 +411,18 @@
     margin-left: 0.35rem;
   }
 
+  /* Component containers styling */
+  .news-ticker-wrapper {
+    margin-bottom: 3rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .featured-posts-wrapper {
+    margin: 0 0 3.5rem;
+  }
+
   /* Improved mobile optimization */
   @media (max-width: 768px) {
     .hero-section {
@@ -405,12 +440,28 @@
       padding: 0 1rem;
       margin: 1.5rem auto;
     }
+
+    .news-ticker-wrapper {
+      margin-bottom: 2rem;
+    }
+
+    .featured-posts-wrapper {
+      margin: 0 0 2.5rem;
+    }
   }
 
   @media (max-width: 480px) {
     .hero-section {
       min-height: 350px;
       padding: 2rem 1rem;
+    }
+
+    .news-ticker-wrapper {
+      margin-bottom: 1.5rem;
+    }
+
+    .featured-posts-wrapper {
+      margin: 0 0 2rem;
     }
   }
 </style>

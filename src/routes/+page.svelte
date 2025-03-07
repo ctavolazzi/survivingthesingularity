@@ -15,6 +15,54 @@
 	import timelineItems from '$lib/data/timelineItems.json';
 	import DiscordButton from '$lib/components/DiscordButton.svelte';
 	import MysteryBoxAd from '$lib/components/ads/MysteryBoxAd.svelte';
+	import NewsTicker from '$lib/components/NewsTicker.svelte';
+	import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
+
+	// Custom news items to bypass the API
+	const customNewsItems = [
+		{
+			date: '2025-03-06',
+			text: 'New synthetic biological intelligence breakthrough announced by Cortical Labs',
+			tag: 'Breaking',
+			link: '/blog/synthetic-biological-intelligence'
+		},
+		{
+			date: '2025-03-04',
+			text: 'DARPA seeks proposals for biological space structures - major implications for space industry',
+			tag: 'New',
+			link: '/blog/darpa-biomechanical-space-structures'
+		},
+		{
+			date: '2025-03-01',
+			text: 'Claude 4 Opus released with unprecedented reasoning capabilities',
+			tag: 'AI News',
+			link: '/blog/claude-projects-weekend-project'
+		},
+		{
+			date: '2024-02-28',
+			text: 'New regulatory framework for AGI proposed by international coalition',
+			tag: 'Policy',
+			link: '/blog/singularity-express'
+		},
+		{
+			date: '2024-02-25',
+			text: 'Preview our exclusive book "Surviving the Singularity" - first chapter now available',
+			tag: 'Book',
+			link: '/sample'
+		},
+		{
+			date: '2024-02-22',
+			text: 'Latest FarmBot update adds advanced computer vision capabilities',
+			tag: 'Tech',
+			link: '/blog/farm-bot-deep-dive'
+		},
+		{
+			date: '2024-02-20',
+			text: 'Our newsletter has reached 10,000 subscribers! Thank you for your support.',
+			tag: 'Milestone',
+			link: '/blog/robot-farm-bot'
+		}
+	];
 
 	// Direct load for fast loading components
 	export const data = {};
@@ -23,12 +71,22 @@
 	// We'll populate this later
 	let posts = [];
 	let latestPost = null;
+	// Create a store for news ticker items
+	let newsTickerItems = [];
 
 	// Load the blog posts when the component is created
 	onMount(async () => {
 		posts = await loadBlogPosts();
-		// Get the first post for the latest news section
-		latestPost = posts.length > 0 ? posts[0] : null;
+
+		// Format blog posts for the news ticker
+		newsTickerItems = posts.map(post => ({
+			date: new Date(post.date).toISOString().split('T')[0],
+			text: post.title,
+			tag: post.category || 'Blog',
+			link: `/blog/${post.slug}`
+		})).slice(0, 7);
+
+		console.log("Formatted blog posts for news ticker:", newsTickerItems);
 	});
 </script>
 
@@ -40,6 +98,18 @@
 <div class="main-content">
 	<div class="countdown-container">
 		<Countdown {targetDate} />
+	</div>
+
+	<!-- Add News Ticker near the top for high visibility -->
+	<div class="news-ticker-container">
+		<NewsTicker
+			title="Latest From Our Blog"
+			scrollSpeed={3500}
+			items={newsTickerItems}
+			backgroundColor="rgba(15, 23, 42, 0.7)"
+			textColor="white"
+			accentColor="#ef4444"
+		/>
 	</div>
 
 	<div class="timeline-section">
@@ -56,10 +126,20 @@
 		/>
 	</div>
 
-	<!-- Rest of the content -->
-	<FuturePredictions />
+	<!-- Add Featured Posts before the predictions section -->
+	<div class="featured-posts-container">
+		<FeaturedPosts
+			title="Editor's Picks"
+			subtitle="Essential reading for understanding the AI revolution"
+			maxPosts={2}
+			showImages={true}
+		/>
+	</div>
 
-	<FAQ />
+	<!-- Rest of the content -->
+	<FuturePredictions class="future-predictions-container" />
+
+	<FAQ class="faq-container" />
 
 	<div class="newsletter-container">
 		<NewsletterSignup />
@@ -67,7 +147,7 @@
 	</div>
 
 	<div class="recent-posts">
-		<LatestNews {latestPost} />
+		<LatestNews />
 	</div>
 
 	<!-- Treasure Tavern Promo -->
@@ -108,8 +188,8 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 1.2rem;
-		padding-top: 0.75rem;
+		gap: 0.4rem;
+		padding-top: 0.3rem;
 	}
 
 	.countdown-container {
@@ -117,17 +197,17 @@
 		max-width: 100%;
 		overflow-x: hidden;
 		padding: 0 1rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0;
 	}
 
 	.timeline-section {
-		margin: 0 0.75rem;
+		margin: 0 0.5rem;
 	}
 
 	.newsletter-container {
 		width: 100%;
 		max-width: 800px;
-		margin: 0 auto;
+		margin: -0.25rem auto 0;
 	}
 
 	h2 {
@@ -139,7 +219,7 @@
 		.main-content {
 			max-width: 768px;
 			margin: 0 auto;
-			gap: 1.5rem;
+			gap: 0.6rem;
 		}
 
 		.timeline-section {
@@ -153,19 +233,19 @@
 
 	@media (max-width: 480px) {
 		.main-content {
-			gap: 0.5rem;
-			padding-top: 0.5rem;
+			gap: 0.3rem;
+			padding-top: 0.2rem;
 		}
 
 		.countdown-container {
-			padding: 0 0.75rem;
+			padding: 0 0.5rem;
 		}
 	}
 
 	/* Improved styling for the BookCallout component - ULTRA MINIMAL FOR SPEED */
 	:global(.book-callout-wrapper) {
-		margin-top: 1rem;
-		margin-bottom: 2rem;
+		margin-top: 0.3rem;
+		margin-bottom: 0.75rem;
 	}
 
 	/* Remove all decorative elements that could delay rendering */
@@ -177,7 +257,7 @@
 	.discord-container {
 		width: 100%;
 		max-width: 800px;
-		margin: 2.5rem auto;
+		margin: 1rem auto;
 		padding: 0 1rem;
 		display: flex;
 		flex-direction: column;
@@ -247,7 +327,7 @@
 	.treasure-promo {
 		width: 100%;
 		max-width: 800px;
-		margin: 1.5rem auto 0.5rem;
+		margin: 0.5rem auto 0.5rem;
 		padding: 0 1.5rem;
 		text-align: center;
 		position: relative;
@@ -264,7 +344,7 @@
 	.treasure-content {
 		background: linear-gradient(180deg, rgba(23, 25, 35, 0.6) 0%, rgba(43, 9, 104, 0.3) 100%);
 		border-radius: 16px;
-		padding: 1.5rem;
+		padding: 1.25rem;
 		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 		border: 1px solid rgba(255, 255, 255, 0.08);
 		transition: all 0.3s ease;
@@ -335,8 +415,8 @@
 	}
 
 	.treasure-promo h2 {
-		font-size: 2rem;
-		margin-bottom: 0.5rem;
+		font-size: 1.8rem;
+		margin-bottom: 0.3rem;
 		background: linear-gradient(90deg, #a8f0d3 0%, #41c1ea 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -351,8 +431,8 @@
 
 	.treasure-promo p {
 		color: #e2e8f0;
-		font-size: 1.2rem;
-		margin-top: 0.5rem;
+		font-size: 1.1rem;
+		margin-top: 0.3rem;
 		margin-bottom: 0;
 		opacity: 0.9;
 		line-height: 1.5;
@@ -389,19 +469,19 @@
 
 	@media (max-width: 768px) {
 		.treasure-promo {
-			margin: 1rem auto 0.5rem;
+			margin: 0.5rem auto 0.25rem;
 		}
 
 		.treasure-content {
-			padding: 1.2rem;
+			padding: 1rem;
 		}
 
 		.treasure-promo h2 {
-			font-size: 1.7rem;
+			font-size: 1.5rem;
 		}
 
 		.treasure-promo p {
-			font-size: 1rem;
+			font-size: 0.95rem;
 		}
 	}
 
@@ -409,7 +489,7 @@
 	.mystery-box-container {
 		width: 100%;
 		max-width: 900px;
-		margin: 1.5rem auto 2rem;
+		margin: 0.75rem auto 1rem;
 		padding: 0 1rem;
 		position: relative;
 		z-index: 2;
@@ -449,6 +529,124 @@
 		.mystery-box-container {
 			max-width: 768px;
 		}
+	}
+
+	.news-ticker-container {
+		max-width: 1200px;
+		width: 95%;
+		margin: 0.5rem auto 0.25rem;
+		padding: 0 1rem;
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+
+	.featured-posts-container {
+		max-width: 1200px;
+		width: 95%;
+		margin: 0.75rem auto 0.5rem;
+		padding: 0 1rem;
+	}
+
+	.recent-posts {
+		margin-top: -1.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.news-ticker-container {
+			width: 92%;
+			margin: 0.3rem auto 0.2rem;
+		}
+
+		.featured-posts-container {
+			width: 92%;
+			margin: 0.5rem auto 0.25rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.news-ticker-container {
+			width: 90%;
+			margin: 0.25rem auto 0.1rem;
+			padding: 0 0.5rem;
+		}
+
+		.featured-posts-container {
+			width: 90%;
+			margin: 0.5rem auto 0.25rem;
+			padding: 0 0.5rem;
+		}
+	}
+
+	/* Add button styles */
+	.secondary-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.85rem 1.5rem;
+		background-color: rgba(59, 130, 246, 0.15);
+		color: #60a5fa;
+		font-size: 1rem;
+		font-weight: 600;
+		border-radius: 8px;
+		border: 1px solid rgba(59, 130, 246, 0.3);
+		text-decoration: none;
+		transition: all 0.3s ease;
+		margin-top: 1rem;
+		max-width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	}
+
+	.secondary-button:hover {
+		background-color: rgba(59, 130, 246, 0.25);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(59, 130, 246, 0.2);
+	}
+
+	.arrow-icon {
+		margin-left: 0.5rem;
+		transition: transform 0.2s ease;
+	}
+
+	.secondary-button:hover .arrow-icon {
+		transform: translateX(3px);
+	}
+
+	@media (max-width: 480px) {
+		.secondary-button {
+			font-size: 0.9rem;
+			padding: 0.75rem 1.25rem;
+			max-width: 180px;
+		}
+	}
+
+	/* Added specific styling for FuturePredictions */
+	:global(.future-predictions-container) {
+		margin-top: 0.25rem;
+	}
+
+	/* Added styling for FeaturedPosts component to make it more compact */
+	:global(.featured-posts-section) {
+		margin: 1rem 0 !important;
+	}
+
+	:global(.featured-header) {
+		margin-bottom: 1rem !important;
+	}
+
+	:global(.stylish-divider) {
+		margin: 0.75rem auto !important;
+	}
+
+	:global(.featured-grid) {
+		gap: 1.25rem !important;
+	}
+
+	/* Add consistent negative margins to pull elements closer */
+	:global(.faq-container) {
+		margin-top: -0.5rem;
 	}
 </style>
 

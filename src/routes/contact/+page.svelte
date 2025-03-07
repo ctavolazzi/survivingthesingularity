@@ -63,9 +63,8 @@
     </div>
   </div>
 
-  <div class="privacy-note">
-    <h3>Your Privacy Matters</h3>
-    <p>We respect your privacy and will only use your information to respond to your message. For more details, please see our Privacy Policy.</p>
+  <div class="privacy-notice" in:fade={{ duration: 300, delay: 800 }}>
+    By submitting, you agree to our <a href="/privacy" rel="noopener noreferrer">Privacy Policy</a> and <a href="/terms" rel="noopener noreferrer">Terms</a>.
   </div>
 </div>
 
@@ -75,6 +74,7 @@
     margin: 0 auto;
     padding: 2rem 1rem;
     transition: padding-top 0.3s ease-in-out;
+    position: relative;
   }
 
   h1 {
@@ -180,22 +180,25 @@
     color: var(--color-text-primary);
   }
 
-  .privacy-note {
+  .privacy-notice {
     text-align: center;
     margin-top: 2rem;
-    padding: 1rem;
-    background-color: var(--color-bg-accent);
-    border-radius: 8px;
-  }
-
-  .privacy-note h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: var(--color-text-primary);
-  }
-
-  .privacy-note p {
+    font-size: 0.7rem;
     color: var(--color-text-secondary);
+    opacity: 0.6;
+    letter-spacing: 0.02em;
+  }
+
+  .privacy-notice a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    opacity: 0.7;
+  }
+
+  .privacy-notice a:hover {
+    opacity: 1;
+    text-decoration: underline;
   }
 
   /* Dark mode styles */
@@ -210,14 +213,13 @@
 
   :global(.dark) h1,
   :global(.dark) h2,
-  :global(.dark) .response-time,
-  :global(.dark) .privacy-note h3 {
+  :global(.dark) .response-time {
     color: var(--color-text-primary-dark);
   }
 
   :global(.dark) .subheadline,
   :global(.dark) li,
-  :global(.dark) .privacy-note p {
+  :global(.dark) .privacy-notice {
     color: var(--color-text-secondary-dark);
   }
 
@@ -237,6 +239,11 @@
 
     h2 {
       font-size: 1.8rem;
+    }
+
+    .privacy-notice {
+      font-size: 0.65rem;
+      margin-top: 1.5rem;
     }
   }
 </style>

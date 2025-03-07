@@ -66,6 +66,16 @@
           <h3>Unpredictable Outcomes</h3>
           <p>A future that becomes increasingly difficult to predict as technology advances beyond our current understanding</p>
         </div>
+        <div class="explanation-card">
+          <div class="icon">⚠️</div>
+          <h3>Existential Risk</h3>
+          <p>The potential for advanced AI systems to pose fundamental challenges to human existence and civilization</p>
+        </div>
+        <div class="explanation-card">
+          <div class="icon">🔗</div>
+          <h3>Technological Convergence</h3>
+          <p>The merging of AI with other advanced technologies like biotech, nanotech, and quantum computing</p>
+        </div>
       </div>
 
       <p>The concept was popularized by mathematician and author Vernor Vinge and further developed by futurist Ray Kurzweil. While experts debate the timeline and exact nature of the Singularity, the rapid advancement of AI technologies has made these discussions increasingly relevant to our present reality.</p>
@@ -189,7 +199,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
     position: relative;
     z-index: 2;
   }
@@ -489,8 +499,8 @@
   }
 
   .singularity-explanation .lead {
-    line-height: 1.7;
-    margin-bottom: 2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
     color: rgba(229, 231, 235, 0.95);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
@@ -501,9 +511,23 @@
 
   .explanation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2.5rem 0;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    justify-content: center;
+  }
+
+  @media (min-width: 640px) {
+    .explanation-grid {
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .explanation-grid {
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
   }
 
   .explanation-card {
@@ -511,11 +535,14 @@
     background-image: linear-gradient(to bottom, rgba(30, 30, 60, 0.5), rgba(20, 20, 40, 0.5));
     border: 1px solid rgba(124, 58, 237, 0.2);
     border-radius: 12px;
-    padding: 1.75rem;
+    padding: 1.25rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .explanation-card:hover {
@@ -525,14 +552,14 @@
   }
 
   .icon {
-    font-size: 2.25rem;
-    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     opacity: 0.9;
   }
 
   .explanation-card h3 {
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: #a78bfa;
   }
 
@@ -549,18 +576,18 @@
   }
 
   .project-description {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     max-width: 900px;
   }
 
   .mission-list {
     list-style: none;
     padding: 0;
-    margin: 1.75rem 0;
+    margin: 1.25rem 0;
   }
 
   .mission-list li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     padding-left: 1.75rem;
     position: relative;
   }
@@ -580,7 +607,7 @@
   }
 
   .book-preview-section {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   /* Need to Know Section */
@@ -590,46 +617,12 @@
   }
 
   .key-insights {
-    margin: 2.5rem 0;
+    margin: 2rem 0;
   }
 
   .insight {
-    background-color: rgba(30, 30, 50, 0.5);
-    border-left: 3px solid #8b5cf6;
-    padding: 1.75rem;
-    border-radius: 0 12px 12px 0;
-    margin-bottom: 1.75rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .insight:hover {
-    transform: translateX(3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .insight h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    color: #a78bfa;
-  }
-
-  .insight p {
-    color: rgba(229, 231, 235, 0.85);
-    line-height: 1.7;
-  }
-
-  @media (max-width: 768px) {
-    .insight {
-      padding: 1.5rem;
-      border-left: none;
-      border-top: 3px solid #8b5cf6;
-      border-radius: 0 0 12px 12px;
-    }
-
-    .insight:hover {
-      transform: translateY(-3px);
-      transform: translateX(0);
-    }
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .faq-section {
@@ -645,14 +638,14 @@
   .support-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 2rem 0;
+    gap: 1rem;
+    margin: 1.5rem 0;
   }
 
   .support-card {
     background-color: rgba(30, 30, 50, 0.5);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -666,18 +659,18 @@
   }
 
   .support-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
   }
 
   .support-card h3 {
     font-size: 1.4rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: #a78bfa;
   }
 
   .support-card p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
   }
 
@@ -700,7 +693,7 @@
   }
 
   .newsletter-section {
-    margin-top: 3rem;
+    margin-top: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -708,7 +701,7 @@
 
   .newsletter-section h3 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
   }
 

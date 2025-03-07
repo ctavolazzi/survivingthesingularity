@@ -560,4 +560,57 @@
     background-color: var(--color-bg-primary-dark);
     color: var(--color-text-primary-dark);
   }
+
+  /* Add this media query for mobile screens */
+  @media (max-width: 768px) {
+    /* Make the metadata area wrap properly on small screens */
+    .flex.items-center.text-gray-600 {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* Ensure the share button gets its own row on small screens */
+    .flex.items-center.text-gray-600 button {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      width: 100%; /* Make it full width */
+      justify-content: center;
+      padding: 0.5rem;
+      background-color: var(--color-primary, #f97316);
+      color: white !important; /* Override any other text colors */
+      border-radius: 0.375rem;
+      font-weight: 500;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    /* Style for the button when in dark mode */
+    :global(.dark) .flex.items-center.text-gray-600 button {
+      background-color: var(--color-primary-dark, #f97316);
+    }
+
+    /* Hide the separator dots when items wrap */
+    .flex.items-center.text-gray-600 .mr-4:nth-child(even) {
+      display: none;
+    }
+  }
+
+  /* Even smaller screens might need more adjustments */
+  @media (max-width: 480px) {
+    .flex.items-center.text-gray-600 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .flex.items-center.text-gray-600 > span {
+      margin-right: 0;
+    }
+
+    /* Make the share button a bit more prominent on very small screens */
+    .flex.items-center.text-gray-600 button {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+  }
 </style>

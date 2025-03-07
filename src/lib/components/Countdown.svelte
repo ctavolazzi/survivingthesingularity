@@ -91,6 +91,7 @@
 <style>
   .countdown-wrapper {
     width: 100%;
+    margin-bottom: 0.5rem;
   }
 
   .countdown-header {
@@ -109,6 +110,21 @@
     text-overflow: ellipsis;
     letter-spacing: -0.01em;
     display: block;
+    text-shadow: 0 2px 10px rgba(255, 153, 51, 0.3);
+    position: relative;
+  }
+
+  .countdown-header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #FF9933, #FF8000);
+    border-radius: 2px;
+    opacity: 0.7;
   }
 
   .countdown-container {
@@ -143,11 +159,18 @@
     justify-content: center;
     align-items: center;
     box-shadow:
-      0 4px 6px rgba(0, 0, 0, 0.1),
+      0 4px 12px rgba(0, 0, 0, 0.2),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
     position: relative;
     overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .countdown-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   }
 
   .countdown-box::after {
@@ -216,7 +239,7 @@
     }
 
     .countdown-header {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       font-size: clamp(1.25rem, 4.5vw, 2.5rem);
       letter-spacing: -0.02em;
       width: 100%;
@@ -237,15 +260,16 @@
 
   @media (max-width: 480px) {
     .countdown-header {
-      font-size: clamp(1rem, 4vw, 1.75rem);
+      font-size: clamp(1.2rem, 4vw, 1.75rem);
       letter-spacing: -0.03em;
       white-space: nowrap !important;
       overflow: visible; /* Ensure text is visible */
+      margin-bottom: 1.8rem; /* Add more space below the header */
     }
 
     .countdown-container {
-      gap: 0.15rem;
-      padding: 0.75rem 0.25rem;
+      gap: 0.2rem;
+      padding: 0.5rem 0.25rem;
     }
 
     .countdown-item {
@@ -254,12 +278,13 @@
     }
 
     .countdown-box {
-      min-width: 40px;
-      padding: 0.5rem 0.25rem;
+      min-width: 42px;
+      padding: 0.6rem 0.25rem;
+      border-radius: 8px;
     }
 
     .countdown-value {
-      font-size: clamp(1.25rem, 3vw, 2rem);
+      font-size: clamp(1.4rem, 3vw, 2rem);
     }
 
     .countdown-separator {

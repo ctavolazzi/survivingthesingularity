@@ -92,7 +92,7 @@
     text-align: center;
     background: radial-gradient(circle at center, var(--bg-color), var(--bg-color-secondary));
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 0 15px rgba(66, 153, 225, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), inset 0 0 15px rgba(66, 153, 225, 0.4);
     position: relative;
     overflow: hidden;
     margin-bottom: 2rem;
@@ -119,6 +119,19 @@
       linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 20px 20px;
     z-index: 1;
+    animation: pulse-grid 15s infinite alternate;
+  }
+
+  @keyframes pulse-grid {
+    0% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0.3;
+    }
   }
 
   .title {
@@ -136,6 +149,13 @@
     white-space: nowrap;
   }
 
+  .path {
+    font-weight: 500;
+    color: rgba(var(--text-color-rgb, 255, 255, 255), 0.9);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+
   .char {
     display: inline-block;
     transition: opacity 0.5s, transform 0.5s;
@@ -145,6 +165,8 @@
     font-size: 3rem;
     font-weight: bold;
     color: var(--accent-color);
+    text-shadow: 0 0 15px rgba(66, 153, 225, 0.6);
+    position: relative;
   }
 
   .singularity-char {
@@ -153,9 +175,10 @@
 
   .underline-container {
     width: 100%;
-    height: 2px;
+    height: 3px;
     margin-top: 1rem;
     overflow: hidden;
+    position: relative;
   }
 
   .underline {
@@ -164,6 +187,27 @@
     background: linear-gradient(90deg, var(--accent-color), #667eea, #764ba2);
     transform-origin: left;
     box-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+  }
+
+  .underline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    filter: blur(5px);
+    animation: shine 3s infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+    100% {
+      left: 100%;
+    }
   }
 
   @media (min-width: 640px) {
@@ -177,6 +221,30 @@
 
     .singularity {
       font-size: 5.5rem;
+    }
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 480px) {
+    .singularity-path {
+      padding: 2rem 1.25rem;
+      margin: 0.5rem 0.75rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(66, 153, 225, 0.4);
+    }
+
+    .path {
+      font-size: 1.3rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .singularity {
+      font-size: 2.8rem;
+      letter-spacing: 0.02em;
+    }
+
+    .underline-container {
+      margin-top: 0.75rem;
     }
   }
 </style>

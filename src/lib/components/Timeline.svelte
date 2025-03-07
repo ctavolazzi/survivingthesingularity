@@ -245,9 +245,9 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="timeline-container p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg max-w-3xl mx-auto">
+<div class="timeline-container">
   <PathToSingularity />
-  <h1 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Timeline of Events</h1>
+  <h1 class="timeline-title">Timeline of Events</h1>
   <hr class="mb-8 border-gray-200 dark:border-gray-700" />
 
   {#if isLoading || isLoadingAll}
@@ -498,6 +498,38 @@
 <JumpToLatest targetSelector=".timeline-container" />
 
 <style>
+  .timeline-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .timeline-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #e2e8f0, #a0aec0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-title {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .timeline-title {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+  }
+
   /* Add styles for the share dropdown */
   .share-dropdown {
     right: 0;

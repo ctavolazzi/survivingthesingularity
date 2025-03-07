@@ -34,15 +34,10 @@
 		<Countdown {targetDate} />
 	</div>
 
-	<!-- <HeroSection /> -->
+	<div class="timeline-section">
+		<Timeline />
+	</div>
 
-  <!-- <section class="book-sample-section">
-		<div class="book-sample-container">
-			<BookSample />
-		</div>
-	</section> -->
-
-	<Timeline />
 	<!-- Removing KnowledgeMeter component -->
 	<div class="book-callout-wrapper">
 		<BookCallout
@@ -53,6 +48,7 @@
 		/>
 	</div>
 
+	<!-- Rest of the content -->
 	<FuturePredictions />
 
   <FAQ />
@@ -88,7 +84,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.2rem;
-		padding-top: 1rem;
+		padding-top: 0.75rem;
 	}
 
 	.countdown-container {
@@ -96,6 +92,11 @@
 		max-width: 100%;
 		overflow-x: hidden;
 		padding: 0 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.timeline-section {
+		margin: 0 0.75rem;
 	}
 
 	.book-container {
@@ -166,10 +167,23 @@
 		.main-content {
 			max-width: 768px;
 			margin: 0 auto;
+			gap: 1.5rem;
+		}
+
+		.timeline-section {
+			margin: 0;
 		}
 	}
 
-	@media (min-width: 640px) {
+	@media (max-width: 480px) {
+		.main-content {
+			gap: 0.5rem;
+			padding-top: 0.5rem;
+		}
+
+		.countdown-container {
+			padding: 0 0.75rem;
+		}
 	}
 
 	/* Improved styling for the BookCallout component */

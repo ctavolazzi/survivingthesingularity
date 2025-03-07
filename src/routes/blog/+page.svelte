@@ -5,6 +5,7 @@
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
   import NewsTicker from '$lib/components/NewsTicker.svelte';
+  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 </script>
 
 <div class="main-content">
@@ -35,7 +36,7 @@
     <div class="news-ticker-wrapper">
       <NewsTicker
         title="AI & Tech Updates"
-        scrollSpeed={6000}
+        scrollSpeed={1000}
         backgroundColor="rgba(15, 23, 42, 0.7)"
         textColor="white"
         accentColor="#3b82f6"
@@ -80,6 +81,24 @@
     <div class="stylish-divider"></div>
     <NewsletterSignup />
     <DiscordButton />
+
+    <!-- Add Treasure Tavern Ad -->
+    <div class="treasure-tavern-container">
+      <TreasureTavernAd
+        title="Discover Unique Treasures"
+        subtitle="The Treasure Tavern"
+        description="Curated gems from the far corners of the Internet."
+        bulletPoints={[
+          "Unique finds you won't see elsewhere",
+          "Support our work with every purchase",
+          "Each item has a story to tell",
+          "Fresh collections added monthly"
+        ]}
+        ctaText="Explore the Tavern"
+        ctaUrl="https://treasuretavernhq.myshopify.com/"
+        badgeText="Support Our Work"
+      />
+    </div>
   </div>
 </div>
 
@@ -423,6 +442,14 @@
     margin: 0 0 3.5rem;
   }
 
+  /* Styling for the Treasure Tavern container */
+  .treasure-tavern-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto 2rem;
+    padding: 0 1rem;
+  }
+
   /* Improved mobile optimization */
   @media (max-width: 768px) {
     .hero-section {
@@ -448,6 +475,10 @@
     .featured-posts-wrapper {
       margin: 0 0 2.5rem;
     }
+
+    .treasure-tavern-container {
+      margin: 2.5rem auto 1.5rem;
+    }
   }
 
   @media (max-width: 480px) {
@@ -462,6 +493,10 @@
 
     .featured-posts-wrapper {
       margin: 0 0 2rem;
+    }
+
+    .treasure-tavern-container {
+      margin: 2rem auto 1rem;
     }
   }
 </style>

@@ -8,6 +8,8 @@
   export let imagePath = "/images/treasure-tavern-square.png"; // Changed to square image
   export let showBadge = true;
   export let badgeText = "New Arrivals";
+  // New prop for bullet points
+  export let bulletPoints = [];
 
   // Featured product props
   export let featuredProduct = null; // { title, price, image, url }
@@ -15,6 +17,8 @@
 
   // Compute if we should show the featured product
   $: canShowFeaturedProduct = showFeaturedProduct && featuredProduct;
+  // Check if we have bullet points
+  $: hasBulletPoints = bulletPoints && bulletPoints.length > 0;
 </script>
 
 <div class="treasure-tavern-ad">
@@ -32,6 +36,17 @@
         <h2>{title}</h2>
       </div>
       <p class="ad-description">{description}</p>
+
+      {#if hasBulletPoints}
+        <ul class="feature-list">
+          {#each bulletPoints as point}
+            <li class="feature-item">
+              <span class="feature-icon">✦</span>
+              <span class="feature-text">{point}</span>
+            </li>
+          {/each}
+        </ul>
+      {/if}
 
       {#if canShowFeaturedProduct}
         <div class="featured-product">
@@ -221,10 +236,9 @@
   }
 
   .ad-description {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.5rem 0;
     font-size: 1.15rem;
     color: #adb5bd;
-    flex-grow: 1;
     line-height: 1.7;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
@@ -232,7 +246,7 @@
   .ad-footer {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: auto;
   }
 
@@ -286,6 +300,20 @@
 
   .cta-button:hover .cta-icon {
     transform: translateX(4px);
+  }
+
+  /* Mobile optimization for CTA button */
+  @media (max-width: 480px) {
+    .cta-button {
+      padding: 0.8rem 1.5rem;
+      width: 80%;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
+    .ad-footer {
+      margin-top: 1.5rem;
+    }
   }
 
   .featured-product {
@@ -392,5 +420,44 @@
     .product-image-container {
       margin-bottom: 1rem;
     }
+  }
+
+  /* New styles for bullet points */
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    transition: transform 0.2s ease;
+  }
+
+  .feature-item:hover {
+    transform: translateX(3px);
+  }
+
+  .feature-icon {
+    color: #ddb86b;
+    font-size: 1rem;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(193, 154, 73, 0.15);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(193, 154, 73, 0.2);
+  }
+
+  .feature-text {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 </style>

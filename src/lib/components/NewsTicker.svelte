@@ -32,10 +32,20 @@
   let transitionTimer;
 
   // Progress bar for current item display time
-  const progress = tweened(0, {
+  let progress = tweened(0, {
     duration: scrollSpeed,
     easing: cubicOut
   });
+
+  // Update the progress tweened settings when scrollSpeed changes
+  $: {
+    if (progress) {
+      progress = tweened(0, {
+        duration: scrollSpeed,
+        easing: cubicOut
+      });
+    }
+  }
 
   // Fetch news items from API or use provided items
   async function fetchNewsItems() {
@@ -109,6 +119,12 @@
         changeItem((currentIndex + 1) % newsItems.length);
       }
     }, scrollSpeed);
+  }
+
+  // Watch for changes to scrollSpeed to restart auto-scroll with new speed
+  $: if (isMounted && autoScroll && !isHovered && scrollSpeed) {
+    if (scrollTimer) clearTimeout(scrollTimer);
+    startAutoScroll();
   }
 
   // Smooth item change with consistent layout
@@ -207,13 +223,8 @@
   // Reactive statement to adjust ticker behavior based on viewport
   $: {
     if (viewportWidth && isMounted) {
-      // Adjust ticker behavior for mobile if needed
-      const isMobile = viewportWidth < 768;
-
-      // For example, maybe slow down scrolling on mobile
-      if (isMobile && autoScroll) {
-        scrollSpeed = 7000;
-      }
+      // We're removing the mobile slowdown to respect the requested speed
+      // No override needed - use the scrollSpeed as provided
     }
   }
 </script>

@@ -7,6 +7,7 @@
   import Divider from '$lib/components/Divider.svelte';
   import StSBookImage from '$lib/images/default-blog-image.png';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 
   let animatedSections = {};
   let isScrolled = false;
@@ -166,6 +167,26 @@
           <DiscordButton />
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Add Treasure Tavern Ad Section -->
+  <section id="treasure-tavern" class="mb-8 animate-on-scroll">
+    <div class="treasure-tavern-container">
+      <TreasureTavernAd
+        title="Discover Unique Treasures"
+        subtitle="The Treasure Tavern"
+        description="Curated gems from the far corners of the Internet."
+        bulletPoints={[
+          "Unique finds you won't see elsewhere",
+          "Support our work with every purchase",
+          "Each item has a story to tell",
+          "Fresh collections added monthly"
+        ]}
+        ctaText="Explore the Tavern"
+        ctaUrl="https://treasuretavernhq.myshopify.com/"
+        badgeText="Support Our Work"
+      />
     </div>
   </section>
 </main>
@@ -382,6 +403,20 @@
   @media (min-width: 1280px) {
     main {
       padding: 3rem 0.5rem;
+    }
+  }
+
+  /* Treasure Tavern Container */
+  .treasure-tavern-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .treasure-tavern-container {
+      margin: 0.5rem auto;
     }
   }
 </style>

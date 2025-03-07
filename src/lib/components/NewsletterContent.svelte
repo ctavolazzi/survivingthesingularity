@@ -15,7 +15,7 @@
     setTimeout(() => {
       if (contentElement) {
         tableOfContents = generateTableOfContents(contentElement);
-        showTableOfContents = tableOfContents.length > 1;
+        showTableOfContents = false;
       }
     }, 100);
   });
@@ -41,21 +41,6 @@
       {#if metadata.description}
         <p class="description">{metadata.description}</p>
       {/if}
-    </div>
-  {/if}
-
-  {#if showTableOfContents}
-    <div class="table-of-contents">
-      <h2>In this issue:</h2>
-      <ul>
-        {#each tableOfContents as item}
-          <li class="toc-item level-{item.level}">
-            <button on:click={() => scrollToSection(item.id)} class="toc-link">
-              {item.text}
-            </button>
-          </li>
-        {/each}
-      </ul>
     </div>
   {/if}
 

@@ -6,6 +6,7 @@
     import { onMount } from 'svelte';
     import JumpToLatest from './JumpToLatest.svelte';
     import DiscordButton from './DiscordButton.svelte';
+    import TreasureTavernAd from './ads/TreasureTavernAd.svelte';
 
     export let newsletters = [];
     export let currentSlug = '';
@@ -50,6 +51,24 @@
     <div class="newsletter-signup-container">
       <NewsletterSignup />
       <DiscordButton />
+
+      <!-- Add Treasure Tavern Ad -->
+      <div class="treasure-tavern-container">
+        <TreasureTavernAd
+          title="Discover Unique Treasures"
+          subtitle="The Treasure Tavern"
+          description="Curated gems from the far corners of the Internet."
+          bulletPoints={[
+            "Unique finds you won't see elsewhere",
+            "Support our work with every purchase",
+            "Each item has a story to tell",
+            "Fresh collections added monthly"
+          ]}
+          ctaText="Explore the Tavern"
+          ctaUrl="https://treasuretavernhq.myshopify.com/"
+          badgeText="Support Our Work"
+        />
+      </div>
     </div>
 </div>
 
@@ -120,5 +139,19 @@
       display: block;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+    }
+
+    /* Styles for the Treasure Tavern container */
+    .treasure-tavern-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 3rem auto 1rem;
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .treasure-tavern-container {
+        margin: 2rem auto 1rem;
+      }
     }
 </style>

@@ -14,9 +14,10 @@
 	import welcomeImage from '$lib/images/sts-welcome.png';
 	import timelineItems from '$lib/data/timelineItems.json';
 	import DiscordButton from '$lib/components/DiscordButton.svelte';
-	import MysteryBoxAd from '$lib/components/ads/MysteryBoxAd.svelte';
+	// Removing MysteryBoxAd import
 	import NewsTicker from '$lib/components/NewsTicker.svelte';
 	import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
+	import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 
 	// Custom news items to bypass the API
 	const customNewsItems = [
@@ -150,34 +151,24 @@
 		<LatestNews />
 	</div>
 
-	<!-- Treasure Tavern Promo -->
-	<div class="treasure-promo">
-		<a href="https://treasuretavernhq.myshopify.com/" class="treasure-link">
-			<div class="treasure-content">
-				<div class="sparkle-container">
-					<span class="sparkle sparkle-1">✨</span>
-					<span class="sparkle sparkle-2">✨</span>
-				</div>
-				<h2>Want to see the best treasures anywhere on the internet?</h2>
-				<p>Discover handpicked gems that will brighten your day!</p>
-			</div>
-		</a>
-	</div>
-
-	<!-- Mystery Box Ad -->
-	<div class="mystery-box-container">
-		<MysteryBoxAd
-			title="Mood Booster Mystery Box"
-			subtitle="Monthly Surprises"
-			description="Discover curated indie treasures delivered monthly to your door. Each box contains 5+ handpicked items designed to boost your mood and bring joy to your everyday life."
-			price="24.99"
-			frequency="month"
-			ctaText="Subscribe Now"
+	<!-- Replace Treasure Tavern Promo with enhanced component -->
+	<div class="treasure-tavern-container">
+		<TreasureTavernAd
+			title="Discover Unique Treasures"
+			subtitle="The Treasure Tavern"
+			description="Curated gems from the far corners of the Internet."
+			bulletPoints={[
+				"Unique finds you won't see elsewhere",
+				"Each item has a story to tell",
+				"Fresh collections added monthly"
+			]}
+			ctaText="Explore the Tavern"
 			ctaUrl="https://treasuretavernhq.myshopify.com/"
-			badgeText="Most Popular"
-			itemCount="5+ items"
+			badgeText="New Arrivals"
 		/>
 	</div>
+
+	<!-- Mystery Box Ad removed -->
 </div>
 
 <style>
@@ -224,10 +215,6 @@
 
 		.timeline-section {
 			margin: 0;
-		}
-
-		.mystery-box-container {
-			max-width: 768px;
 		}
 	}
 
@@ -323,213 +310,27 @@
 		font-size: 0.9rem;
 	}
 
-	/* Styles for Treasure Tavern Promo */
-	.treasure-promo {
+	/* Treasure Tavern Container */
+	.treasure-tavern-container {
 		width: 100%;
-		max-width: 800px;
-		margin: 0.5rem auto 0.5rem;
-		padding: 0 1.5rem;
-		text-align: center;
-		position: relative;
-		z-index: 3;
-	}
-
-	.treasure-link {
-		text-decoration: none;
-		display: block;
-		color: inherit;
-		position: relative;
-	}
-
-	.treasure-content {
-		background: linear-gradient(180deg, rgba(23, 25, 35, 0.6) 0%, rgba(43, 9, 104, 0.3) 100%);
-		border-radius: 16px;
-		padding: 1.25rem;
-		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-		border: 1px solid rgba(255, 255, 255, 0.08);
-		transition: all 0.3s ease;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.treasure-content::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: linear-gradient(120deg, rgba(168, 240, 211, 0.05) 0%, rgba(65, 193, 234, 0.05) 100%);
-		opacity: 0;
-		transition: opacity 0.5s ease;
-	}
-
-	.treasure-content:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 12px 30px rgba(65, 193, 234, 0.15);
-	}
-
-	.treasure-content:hover::before {
-		opacity: 1;
-	}
-
-	.sparkle-container {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		pointer-events: none;
-		overflow: hidden;
-	}
-
-	.sparkle {
-		position: absolute;
-		font-size: 1.4rem;
-		opacity: 0.7;
-		z-index: 1;
-		filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
-		animation: float 3s ease-in-out infinite;
-	}
-
-	.sparkle-1 {
-		top: 10%;
-		left: 15%;
-		animation-delay: 0s;
-	}
-
-	.sparkle-2 {
-		bottom: 15%;
-		right: 10%;
-		animation-delay: 1.5s;
-	}
-
-	@keyframes float {
-		0%, 100% {
-			transform: translateY(0) rotate(0deg);
-		}
-		50% {
-			transform: translateY(-10px) rotate(5deg);
-		}
-	}
-
-	.treasure-promo h2 {
-		font-size: 1.8rem;
-		margin-bottom: 0.3rem;
-		background: linear-gradient(90deg, #a8f0d3 0%, #41c1ea 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		text-fill-color: transparent;
-		font-weight: bold;
-		line-height: 1.2;
-		letter-spacing: -0.5px;
-		position: relative;
-		z-index: 2;
-	}
-
-	.treasure-promo p {
-		color: #e2e8f0;
-		font-size: 1.1rem;
-		margin-top: 0.3rem;
-		margin-bottom: 0;
-		opacity: 0.9;
-		line-height: 1.5;
-		position: relative;
-		z-index: 2;
-	}
-
-	.treasure-promo::after {
-		content: '';
-		position: absolute;
-		bottom: -20px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 40px;
-		height: 40px;
-		background: linear-gradient(135deg, #41c1ea 0%, #a8f0d3 100%);
-		border-radius: 50%;
-		opacity: 0.5;
-		filter: blur(15px);
-		z-index: -1;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	@keyframes pulse {
-		0%, 100% {
-			opacity: 0.5;
-			transform: translateX(-50%) scale(1);
-		}
-		50% {
-			opacity: 0.7;
-			transform: translateX(-50%) scale(1.1);
-		}
+		max-width: 900px;
+		margin: 3rem auto 2rem;
+		padding: 0 1rem;
 	}
 
 	@media (max-width: 768px) {
-		.treasure-promo {
-			margin: 0.5rem auto 0.25rem;
-		}
-
-		.treasure-content {
-			padding: 1rem;
-		}
-
-		.treasure-promo h2 {
-			font-size: 1.5rem;
-		}
-
-		.treasure-promo p {
-			font-size: 0.95rem;
+		.treasure-tavern-container {
+			margin: 2.5rem auto 1.5rem;
 		}
 	}
 
-	/* Styles for Mystery Box Ad container */
-	.mystery-box-container {
-		width: 100%;
-		max-width: 900px;
-		margin: 0.75rem auto 1rem;
-		padding: 0 1rem;
-		position: relative;
-		z-index: 2;
-		transition: transform 0.3s ease;
-	}
-
-	.mystery-box-container::before {
-		content: '';
-		position: absolute;
-		top: -15px;
-		left: 0;
-		right: 0;
-		height: 30px;
-		background: linear-gradient(to top, rgba(65, 193, 234, 0.1), transparent);
-		z-index: 1;
-	}
-
-	/* Add subtle shimmer effect to connect the sections */
-	.mystery-box-container::after {
-		content: '';
-		position: absolute;
-		top: -30px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 60%;
-		height: 2px;
-		background: linear-gradient(90deg,
-			transparent,
-			rgba(168, 240, 211, 0.3),
-			rgba(65, 193, 234, 0.5),
-			rgba(168, 240, 211, 0.3),
-			transparent);
-		z-index: 1;
-	}
-
-	@media (min-width: 768px) {
-		.mystery-box-container {
-			max-width: 768px;
+	@media (max-width: 480px) {
+		.treasure-tavern-container {
+			margin: 2rem auto 1rem;
 		}
 	}
+
+	/* Mystery Box styles removed */
 
 	.news-ticker-container {
 		max-width: 1200px;
@@ -634,19 +435,6 @@
 
 	:global(.featured-header) {
 		margin-bottom: 1rem !important;
-	}
-
-	:global(.stylish-divider) {
-		margin: 0.75rem auto !important;
-	}
-
-	:global(.featured-grid) {
-		gap: 1.25rem !important;
-	}
-
-	/* Add consistent negative margins to pull elements closer */
-	:global(.faq-container) {
-		margin-top: -0.5rem;
 	}
 </style>
 

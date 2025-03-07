@@ -30,29 +30,18 @@ export async function GET({ url, platform, request }) {
       featured: true
     },
     {
-      title: 'Farm Bot Deep Dive - Exploring AI-Powered Precision Agriculture',
-      date: '2024-08-24',
+      title: 'The Singularity Express Arrives at the Station',
+      date: '2024-08-08',
       author: 'Christopher Tavolazzi',
-      route: '/blog/farm-bot-deep-dive',
-      excerpt: 'Dive deep into the world of FarmBot, a revolutionary CNC automated, AI-powered system that\'s transforming backyard gardening and small-scale agriculture with precision and efficiency.',
-      image: 'https://www.open-electronics.org/wp-content/uploads/2013/10/FarmBot-Genesis-Homepage-Image.jpg',
-      featured: true
-    },
-    {
-      title: 'Weekend Project - Building with Claude AI',
-      date: '2024-08-30',
-      author: 'Christopher Tavolazzi',
-      route: '/blog/claude-projects-weekend-project',
-      excerpt: 'Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that\'s transforming how we interact with AI.',
-      image: 'https://i.ytimg.com/vi/nbG2DO6Xsek/maxresdefault.jpg',
+      route: '/blog/singularity-express',
+      excerpt: 'Choo Choo, Motherf**ker. The Singularity Express just pulled into the station, and it\'s one hell of a ride. Get ready for Level 2 - AI that can think and reason.',
+      image: 'https://cdn.midjourney.com/2cfb73bc-4072-40fa-aa86-8cf4f842b428/0_2.png',
       featured: true
     }
   ];
 
-  // Apply limit and sort by date (most recent first)
-  const sortedPosts = featuredPosts
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, limit);
+  // Keep them in the order defined above by not sorting them
+  const sortedPosts = featuredPosts.slice(0, limit);
 
   // Prepare the response object
   const responseData = {

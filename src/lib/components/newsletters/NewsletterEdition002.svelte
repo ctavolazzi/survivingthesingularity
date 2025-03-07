@@ -4,9 +4,6 @@
 </script>
 
 <div class="newsletter-content">
-  <h1>Surviving the Singularity Newsletter 002</h1>
-
-  <h2 id="issue">Issue #002</h2>
   <h4>Date: September 10, 2024</h4>
   <h4>Description: Navigating AI Advancements: Tools, Trends, and Strategies</h4>
 

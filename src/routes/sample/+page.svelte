@@ -6,6 +6,7 @@
   import ContactForm from '$lib/components/ContactForm.svelte';
   import Divider from '$lib/components/Divider.svelte';
   import StSBookImage from '$lib/images/default-blog-image.png';
+  import DiscordButton from '$lib/components/DiscordButton.svelte';
 
   let animatedSections = {};
   let isScrolled = false;
@@ -146,6 +147,23 @@
         <div class="max-w-md mx-auto bg-white/90 dark:bg-gray-800/60 p-6 rounded-xl shadow-lg backdrop-blur-sm border border-orange-100/50 dark:border-gray-700/50">
           <ContactForm on:submit={handleFormSubmit} />
           <p class="text-center text-xs text-gray-500 dark:text-gray-400 mt-3 italic">We respect your privacy and will never share your information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join-community" class="mb-8 animate-on-scroll">
+    <div class="bg-gradient-to-b from-indigo-100 via-indigo-50/90 to-white dark:from-gray-800 dark:via-gray-800/80 dark:to-gray-900/90 p-6 md:p-8 rounded-2xl shadow-xl relative overflow-hidden">
+      <!-- Background elements -->
+      <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-indigo-300 to-purple-400 rounded-full opacity-10 dark:opacity-5 blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-indigo-400 to-purple-300 rounded-full opacity-10 dark:opacity-5 blur-3xl"></div>
+
+      <div class="relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">Join Our Community</h2>
+        <p class="text-center mb-5 text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">Connect with others preparing for the singularity. Share insights and strategies in our exclusive Discord.</p>
+
+        <div class="max-w-md mx-auto">
+          <DiscordButton />
         </div>
       </div>
     </div>

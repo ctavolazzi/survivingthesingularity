@@ -2,7 +2,7 @@
   export let data;
   const { posts } = data;
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-
+  import DiscordButton from '$lib/components/DiscordButton.svelte';
 </script>
 
 <div class="main-content">
@@ -56,6 +56,7 @@
 
     <div class="stylish-divider"></div>
     <NewsletterSignup />
+    <DiscordButton />
   </div>
 </div>
 

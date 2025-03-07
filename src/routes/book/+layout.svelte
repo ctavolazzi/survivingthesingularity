@@ -4,6 +4,10 @@
     import Spacer from '$lib/components/Spacer.svelte';
     import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
     import SimpleBookCallout from '$lib/components/SimpleBookCallout.svelte';
+    import { page } from '$app/stores';
+    import Navbar from '$lib/components/Navbar.svelte';
+    import Footer from '$lib/components/Footer.svelte';
+    import DiscordButton from '$lib/components/DiscordButton.svelte';
 
     let showLowerSections = false;
 
@@ -31,9 +35,10 @@
                     buttonLink="/book"
                 />
 
-                <section class="newsletter">
+                <div class="newsletter-container">
                     <NewsletterSignup />
-                </section>
+                    <DiscordButton />
+                </div>
             {/if}
         </div>
     </div>

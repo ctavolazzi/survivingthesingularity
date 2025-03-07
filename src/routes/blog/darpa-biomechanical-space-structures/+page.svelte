@@ -2,6 +2,8 @@
   import { onMount } from 'svelte';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
+  import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import RecommendedContent from '$lib/components/RecommendedContent.svelte';
 
   const post = {
     title: 'DARPA Seeks Plans for Large Bio-Mechanical Space Structures',
@@ -10,6 +12,22 @@
     image: 'https://futurism.com/_next/image?url=https%3A%2F%2Fwordpress-assets.futurism.com%2F2025%2F02%2Fdarpa-requests-plans-large-bio-mechanical-space-structures.jpg&w=2048&q=75',
     readingTime: '5 min read'
   };
+
+  // Recommended videos related to space technology, AI, and future innovations
+  const recommendedVideos = [
+    {
+      id: "U1tQbD25dGY",
+      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
+    },
+    {
+      id: "PNqwvJCz_2w",
+      title: "Game Over? Voice Actors vs AI"
+    },
+    {
+      id: "GYBT66bPfu8",
+      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
+    }
+  ];
 </script>
 
 <div class="blog-post">
@@ -21,7 +39,30 @@
         <span class="mr-4">·</span>
         <span class="mr-4">{post.readingTime}</span>
         <span class="mr-4">·</span>
-        <span>By {post.author}</span>
+        <span class="mr-4">By {post.author}</span>
+        <button
+          class="inline-flex items-center text-primary dark:text-primary-dark text-sm hover:text-primary-dark dark:hover:text-primary-hover-dark transition-colors ml-auto"
+          on:click={() => {
+            if (navigator.share) {
+              navigator.share({
+                title: post.title,
+                text: "DARPA has issued a request for information on building massive biological structures in space, exploring a sci-fi future where space infrastructure might be grown rather than assembled.",
+                url: window.location.href,
+              }).catch(err => console.error('Error sharing:', err));
+            } else {
+              navigator.clipboard.writeText(window.location.href)
+                .then(() => alert('Link copied to clipboard!'))
+                .catch(err => console.error('Failed to copy:', err));
+            }
+          }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
+            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+            <polyline points="16 6 12 2 8 6"></polyline>
+            <line x1="12" y1="2" x2="12" y2="15"></line>
+          </svg>
+          Share
+        </button>
       </div>
     </header>
 
@@ -93,8 +134,19 @@
 
   <Spacer height="2rem" />
 
+  <div class="recommended-content-section">
+    <RecommendedContent
+      title="Explore More Content"
+      description="Check out these videos about AI, future tech, and innovation"
+      videos={recommendedVideos}
+    />
+  </div>
+
+  <Spacer height="2rem" />
+
   <div class="newsletter-section">
     <NewsletterSignup />
+    <DiscordButton />
   </div>
 </div>
 

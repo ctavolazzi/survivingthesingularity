@@ -3,6 +3,9 @@
     import NewsletterList from './NewsletterList.svelte';
     import NewsletterSignup from './NewsletterSignup.svelte';
     import Divider from './Divider.svelte';
+    import { onMount } from 'svelte';
+    import JumpToLatest from './JumpToLatest.svelte';
+    import DiscordButton from './DiscordButton.svelte';
 
     export let newsletters = [];
     export let currentSlug = '';
@@ -44,7 +47,10 @@
 
     <Divider />
 
-    <NewsletterSignup />
+    <div class="newsletter-signup-container">
+      <NewsletterSignup />
+      <DiscordButton />
+    </div>
 </div>
 
 <style>

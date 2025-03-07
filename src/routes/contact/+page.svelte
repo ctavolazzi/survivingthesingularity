@@ -64,7 +64,7 @@
   </div>
 
   <div class="privacy-notice" in:fade={{ duration: 300, delay: 800 }}>
-    By submitting, you agree to our <a href="/privacy" rel="noopener noreferrer">Privacy Policy</a> and <a href="/terms" rel="noopener noreferrer">Terms</a>.
+    We respect your privacy and only use your information to respond to your message.
   </div>
 </div>
 

@@ -1,5 +1,6 @@
 <script>
     import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+    import DiscordButton from '$lib/components/DiscordButton.svelte';
     import Spacer from '$lib/components/Spacer.svelte';
     import { post } from '$lib/data/blog-posts/claude-projects-weekend-project/index.js';
     import { marked } from 'marked';
@@ -92,8 +93,9 @@
 
   <Spacer height="2rem" />
 
-  <div class="newsletter-section">
+  <div class="newsletter-container">
     <NewsletterSignup />
+    <DiscordButton />
   </div>
 </div>
 
@@ -201,10 +203,13 @@
     color: var(--color-text-secondary);
   }
 
-  .newsletter-section, .recommended-content-section {
+  .newsletter-container {
     max-width: 4xl;
     margin: 0 auto;
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* Dark mode adjustments */

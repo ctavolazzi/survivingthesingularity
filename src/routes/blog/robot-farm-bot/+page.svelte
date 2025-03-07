@@ -3,6 +3,8 @@
   import { onMount } from 'svelte';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
+  import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import RecommendedContent from '$lib/components/RecommendedContent.svelte';
 
   const post = {
     title: 'Robot Farm Bot - The Future of Residential Agriculture',
@@ -11,6 +13,22 @@
     image: 'https://farm.bot/cdn/shop/files/FarmBot_Genesis_v1-3_c10ecd67-00ed-4ae1-a32e-111f11312655_2049x1365.jpg?v=1697756943',
     readingTime: '7 min read'
   };
+
+  // Recommended videos related to agriculture, robotics, and sustainability
+  const recommendedVideos = [
+    {
+      id: "YLo7EH2zsW0",
+      title: "AI Plays Minecraft: Voyager - An Open-Ended Embodied Agent with Large Language Models"
+    },
+    {
+      id: "U1tQbD25dGY",
+      title: "Futurist: How AI and Robotics Will Reshape Our Economy"
+    },
+    {
+      id: "GYBT66bPfu8",
+      title: "Is the Gaming Industry Doomed?: Google's AI Generates Playable DOOM in Real-Time"
+    }
+  ];
 
   let isImageLoaded = false;
   let mounted = false;
@@ -29,7 +47,30 @@
         <span class="mr-4">·</span>
         <span class="mr-4">{post.readingTime}</span>
         <span class="mr-4">·</span>
-        <span>By {post.author}</span>
+        <span class="mr-4">By {post.author}</span>
+        <button
+          class="inline-flex items-center text-primary dark:text-primary-dark text-sm hover:text-primary-dark dark:hover:text-primary-hover-dark transition-colors ml-auto"
+          on:click={() => {
+            if (navigator.share) {
+              navigator.share({
+                title: post.title,
+                text: "Imagine a world where your backyard vegetable garden is tended by an AI-powered robot, ensuring a bountiful harvest with minimal effort.",
+                url: window.location.href,
+              }).catch(err => console.error('Error sharing:', err));
+            } else {
+              navigator.clipboard.writeText(window.location.href)
+                .then(() => alert('Link copied to clipboard!'))
+                .catch(err => console.error('Failed to copy:', err));
+            }
+          }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
+            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+            <polyline points="16 6 12 2 8 6"></polyline>
+            <line x1="12" y1="2" x2="12" y2="15"></line>
+          </svg>
+          Share
+        </button>
       </div>
     </header>
 
@@ -110,8 +151,19 @@
 
   <Spacer height="2rem" />
 
+  <div class="recommended-content-section">
+    <RecommendedContent
+      title="Explore More Technology Content"
+      description="Check out these videos about AI, robotics, and future technologies"
+      videos={recommendedVideos}
+    />
+  </div>
+
+  <Spacer height="2rem" />
+
   <div class="newsletter-section">
     <NewsletterSignup />
+    <DiscordButton />
   </div>
 </div>
 

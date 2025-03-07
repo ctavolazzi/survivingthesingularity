@@ -38,8 +38,7 @@
   async function initializeCountdown() {
     updateCountdown(); // Set initial values
     await tick(); // Ensure DOM is updated
-    await new Promise(resolve => setTimeout(resolve, 500)); // Brief delay for effect
-    loading = false; // Trigger transition
+    loading = false; // Trigger transition immediately
     countdownInterval = setInterval(updateCountdown, 1000);
   }
 

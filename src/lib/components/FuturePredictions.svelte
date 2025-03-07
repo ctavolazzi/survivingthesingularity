@@ -38,14 +38,7 @@
     }
   ];
 
-  let visible = false;
-
-  onMount(() => {
-    // Simple animation delay
-    setTimeout(() => {
-      visible = true;
-    }, 500);
-  });
+  let visible = true;
 </script>
 
 <div class="future-predictions p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg max-w-3xl mx-auto mt-8">
@@ -59,7 +52,7 @@
     {#if visible}
       <ol class="relative border-l border-blue-300 dark:border-blue-700 pl-4">
         {#each predictions as prediction, index}
-          <li class="mb-10" in:fly={{ y: 20, delay: index * 150, duration: 400 }}>
+          <li class="mb-10" in:fly={{ y: 10, delay: 0, duration: 100 }}>
             <div class="absolute w-3 h-3 bg-blue-300 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-blue-700"></div>
             <time class="mb-1 text-sm font-normal leading-none text-blue-500 dark:text-blue-400">{prediction.year}</time>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{prediction.title}</h3>

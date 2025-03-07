@@ -15,8 +15,10 @@
 	import timelineItems from '$lib/data/timelineItems.json';
 	import DiscordButton from '$lib/components/DiscordButton.svelte';
 
+	// Direct load for fast loading components
 	export const data = {};
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
+
 	// We'll populate this later
 	let posts = [];
 	let latestPost = null;
@@ -28,6 +30,11 @@
 		latestPost = posts.length > 0 ? posts[0] : null;
 	});
 </script>
+
+<svelte:head>
+	<!-- Preload welcome image to ensure it loads immediately -->
+	<link rel="preload" href={welcomeImage} as="image" fetchpriority="high" />
+</svelte:head>
 
 <div class="main-content">
 	<div class="countdown-container">
@@ -51,21 +58,7 @@
 	<!-- Rest of the content -->
 	<FuturePredictions />
 
-  <FAQ />
-
-	<div class="book-container">
-		<a
-			href="/sample"
-			class="image-button"
-			aria-label="View book sample"
-		>
-			<img
-				src={welcomeImage}
-				alt="Surviving the Singularity welcome"
-				class="welcome-image"
-			/>
-		</a>
-	</div>
+	<FAQ />
 
 	<div class="newsletter-container">
 		<NewsletterSignup />
@@ -78,6 +71,8 @@
 </div>
 
 <style>
+	/* Styles removed for components using inline styles for maximum speed */
+
 	.main-content {
 		max-width: 100%;
 		width: 100%;
@@ -97,59 +92,6 @@
 
 	.timeline-section {
 		margin: 0 0.75rem;
-	}
-
-	.book-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 2rem 0;
-		width: 100%;
-		max-width: 300px;
-		margin: 0 auto;
-	}
-
-	.welcome-image {
-		max-width: 100%;
-		height: auto;
-		border-radius: 0.5rem;
-		box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06);
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
-	}
-
-	.welcome-image:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05);
-	}
-
-	.image-button {
-		background: none;
-		border: none;
-		padding: 0;
-		cursor: pointer;
-		max-width: 100%;
-		transition: filter 0.3s ease;
-		width: 100%;
-		display: block;
-	}
-
-	.image-button:focus {
-		outline: 2px solid #4299e1;
-		border-radius: 0.5rem;
-		outline-offset: 4px;
-	}
-
-	.image-button img {
-		width: 100%;
-		height: auto;
-		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-		transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-	}
-
-	.image-button:hover img {
-		transform: scale(1.05);
-		box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
 	}
 
 	.newsletter-container {
@@ -186,64 +128,15 @@
 		}
 	}
 
-	/* Improved styling for the BookCallout component */
+	/* Improved styling for the BookCallout component - ULTRA MINIMAL FOR SPEED */
 	:global(.book-callout-wrapper) {
 		margin-top: 1rem;
 		margin-bottom: 2rem;
-		position: relative;
-		z-index: 1;
-		transform: scale(1.03);
 	}
 
-	/* Add a more dramatic glow effect behind the BookCallout */
+	/* Remove all decorative elements that could delay rendering */
 	:global(.book-callout-wrapper::before) {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		height: 100%;
-		background: radial-gradient(ellipse, rgba(59, 130, 246, 0.2) 0%, rgba(17, 24, 39, 0) 70%);
-		filter: blur(60px);
-		z-index: -1;
-		animation: pulse-glow 8s ease-in-out infinite alternate;
-	}
-
-	@keyframes pulse-glow {
-		0% {
-			opacity: 0.5;
-			transform: translate(-50%, -50%) scale(0.9);
-		}
-		100% {
-			opacity: 0.8;
-			transform: translate(-50%, -50%) scale(1.1);
-		}
-	}
-
-	/* Add a subtle divider before and after the BookCallout */
-	:global(.book-callout-wrapper::after) {
-		content: "";
-		position: absolute;
-		bottom: -1.5rem;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 60%;
-		height: 1px;
-		background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
-		z-index: -1;
-	}
-
-	:global(.timeline-container + .book-callout-wrapper::before) {
-		content: "";
-		position: absolute;
-		top: -1.5rem;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 60%;
-		height: 1px;
-		background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
-		z-index: -1;
+		display: none;
 	}
 
 	/* Updated Discord Component Styles */

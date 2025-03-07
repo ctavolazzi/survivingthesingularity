@@ -246,7 +246,9 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="timeline-container">
-  <PathToSingularity />
+  <div class="path-to-singularity-wrapper">
+    <PathToSingularity />
+  </div>
   <h1 class="timeline-title">Timeline of Events</h1>
   <hr class="mb-8 border-gray-200 dark:border-gray-700" />
 
@@ -502,6 +504,12 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+  }
+
+  .path-to-singularity-wrapper {
+    position: relative;
+    z-index: 5;
+    pointer-events: auto;
   }
 
   .timeline-title {

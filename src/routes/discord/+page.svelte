@@ -166,6 +166,6 @@
   </div>
 
   <div class="privacy-notice" in:fade={{ duration: 300, delay: 800 }}>
-    We respect your privacy and value building a safe, supportive community.
+    By joining, you accept Discord's <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and our <a href="/terms" rel="noopener noreferrer">Terms</a>.
   </div>
 </div>

@@ -26,6 +26,9 @@ cloudflare_logs/Discord.dmg
 /scripts/
 /cursor/
 
+# Archive directory (for version checkpoints)
+/archive/
+
 # Logs and debugging
 npm-debug.log*
 yarn-debug.log*

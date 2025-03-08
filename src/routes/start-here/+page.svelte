@@ -3,6 +3,7 @@
   import { fade, fly, scale } from 'svelte/transition';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
   import bookCover from '$lib/images/Surviving-the-Singularity-Cover.png';
   import chessImage from '$lib/images/sts-chess.jpg';
 
@@ -15,6 +16,22 @@
     setTimeout(() => {
       heroVisible = true;
     }, 300);
+
+    // Add smooth scrolling for the explore step link
+    const scrollToExploreLinks = document.querySelectorAll('.scroll-to-explore');
+    scrollToExploreLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 50,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
   });
 </script>
 
@@ -215,100 +232,152 @@
           </div>
         </div>
 
-        <div class="next-step">
-          <div class="step-number">3</div>
-          <h3>Explore</h3>
-          <p>Dive into our most important resources</p>
+        <div class="next-step explore-step" id="explore-step">
+          <div class="step-number step-number-explore">3</div>
+          <h3 class="explore-step-title">Explore</h3>
+          <p>Dive into our resource library</p>
           <div class="action-container explore-links">
-            <a href="/blog" class="secondary-button">Blog</a>
-            <a href="/sample" class="secondary-button">Book Preview</a>
+            <a href="#resource-library" class="secondary-button explore-btn scroll-to-explore">
+              <span class="btn-text">View Resources</span>
+              <span class="btn-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+              </span>
+              <span class="btn-glow"></span>
+            </a>
+          </div>
+          <div class="explore-decoration">
+            <div class="explore-glow-circle"></div>
+            <div class="explore-particles">
+              <span class="particle"></span>
+              <span class="particle"></span>
+              <span class="particle"></span>
+              <span class="particle"></span>
+              <span class="particle"></span>
+            </div>
+            <div class="connection-line"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Enhanced Explore Content Section -->
-  <section class="content-section explore-content-section">
+  <!-- Resource Showcase Section -->
+  <section class="content-section resource-showcase-section" id="resource-library">
     <div class="container">
-      <div class="explore-header">
-        <h2>Explore Our Content</h2>
-        <p class="explore-subtitle">Dive deeper into our best resources with these previews</p>
+      <div class="section-header">
+        <div class="section-connector">
+          <div class="connector-line"></div>
+        </div>
+        <h2 class="section-title">Resource Library</h2>
+        <p class="section-subtitle">Essential content to help you navigate the AI revolution</p>
       </div>
 
-      <div class="explore-grid">
+      <div class="resource-grid">
         <!-- Blog Post Preview Card -->
-        <div class="explore-card blog-card">
-          <div class="card-overlay"></div>
-          <div class="card-badge">Latest Blog Post</div>
-          <div class="card-content">
-            <h3>DARPA Seeks Plans for 'Large Bio-Mechanical Space Structures'</h3>
-            <p class="card-excerpt">
-              DARPA has issued a request for information on building massive biological structures in space, exploring a sci-fi future where space infrastructure might be grown rather than assembled.
-            </p>
-            <div class="card-meta">
-              <span class="card-date">March 4, 2024</span>
-              <span class="card-author">Christopher Tavolazzi</span>
+        <div class="resource-card blog-card">
+          <div class="card-inner">
+            <div class="card-overlay"></div>
+            <div class="card-badge">Featured Blog Post</div>
+            <div class="card-content">
+              <h3>DARPA Seeks Plans for 'Large Bio-Mechanical Space Structures'</h3>
+              <p class="card-excerpt">
+                DARPA has issued a request for information on building massive biological structures in space, exploring a sci-fi future where space infrastructure might be grown rather than assembled.
+              </p>
+              <div class="card-meta">
+                <span class="card-date">March 4, 2024</span>
+                <span class="card-author">Christopher Tavolazzi</span>
+              </div>
+              <a href="/blog/darpa-biomechanical-space-structures" class="resource-button">
+                <span>Read Post</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="button-glow"></span>
+              </a>
             </div>
-            <a href="/blog/darpa-biomechanical-space-structures" class="explore-button">
-              <span>Read Post</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
           </div>
         </div>
 
         <!-- Newsletter Preview Card -->
-        <div class="explore-card newsletter-card">
-          <div class="card-overlay"></div>
-          <div class="card-badge">Latest Newsletter</div>
-          <div class="card-content">
-            <h3>Surviving the Singularity Newsletter</h3>
-            <p class="card-excerpt">
-              Welcome to the AI Revolution: Your guide to navigating the rapidly evolving world of artificial intelligence. Stay informed, prepared, and ahead of the curve.
-            </p>
-            <div class="newsletter-highlights">
-              <div class="highlight-item">
-                <span class="highlight-icon">🌟</span>
-                <span class="highlight-text">This Week in AI</span>
+        <div class="resource-card newsletter-card">
+          <div class="card-inner">
+            <div class="card-overlay"></div>
+            <div class="card-badge">Newsletter Insights</div>
+            <div class="card-content">
+              <h3>Surviving the Singularity Newsletter</h3>
+              <p class="card-excerpt">
+                Welcome to the AI Revolution: Your guide to navigating the rapidly evolving world of artificial intelligence. Stay informed, prepared, and ahead of the curve.
+              </p>
+              <div class="newsletter-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-icon">🌟</span>
+                  <span class="highlight-text">This Week in AI</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">📊</span>
+                  <span class="highlight-text">Tech Trends</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">🧠</span>
+                  <span class="highlight-text">AI Insights</span>
+                </div>
               </div>
-              <div class="highlight-item">
-                <span class="highlight-icon">📊</span>
-                <span class="highlight-text">Tech Trends</span>
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-icon">🧠</span>
-                <span class="highlight-text">AI Insights</span>
-              </div>
+              <a href="/newsletter" class="resource-button">
+                <span>Subscribe</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="button-glow"></span>
+              </a>
             </div>
-            <a href="/newsletter" class="explore-button">
-              <span>Subscribe</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
           </div>
         </div>
 
         <!-- Book Sample Preview Card -->
-        <div class="explore-card book-card">
-          <div class="card-overlay"></div>
-          <div class="book-cover-preview">
-            <img src={bookCover} alt="Surviving the Singularity book cover" />
-          </div>
-          <div class="card-badge">Book Preview</div>
-          <div class="card-content">
-            <h3>Surviving the Singularity</h3>
-            <p class="card-quote">
-              "The unfolding Singularity is a deeply personal process - the way you get your needs met is changing. You don't know what's about to happen; no one does."
-            </p>
-            <p class="card-excerpt">
-              A primer on understanding and navigating the double exponential shift in the way we get our needs met in the age of AI.
-            </p>
-            <a href="/sample" class="explore-button">
-              <span>Read Sample</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+        <div class="resource-card book-card">
+          <div class="card-inner">
+            <div class="card-overlay"></div>
+            <div class="book-cover-preview">
+              <img src={bookCover} alt="Surviving the Singularity book cover" />
+            </div>
+            <div class="card-badge">Book Preview</div>
+            <div class="card-content">
+              <h3>Surviving the Singularity</h3>
+              <p class="card-quote">
+                "The unfolding Singularity is a deeply personal process - the way you get your needs met is changing. You don't know what's about to happen; no one does."
+              </p>
+              <p class="card-excerpt">
+                A primer on understanding and navigating the double exponential shift in the way we get our needs met in the age of AI.
+              </p>
+              <a href="/sample" class="resource-button">
+                <span>Read Sample</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="button-glow"></span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="resource-cta">
+        <a href="/blog" class="primary-button resource-primary-button">
+          <span>View All Blog Posts</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/sample" class="primary-button resource-primary-button">
+          <span>Full Book Preview</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="resource-decoration">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-lines"></div>
+    </div>
+  </section>
+
+  <!-- Treasure Tavern Ad Section -->
+  <section class="content-section treasure-tavern-section">
+    <div class="container">
+      <TreasureTavernAd />
     </div>
   </section>
 </div>
@@ -866,9 +935,24 @@
 
   /* Next Steps Section */
   .next-steps-section {
-    background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+    background: linear-gradient(180deg, #111827 0%, #0c0e17 100%);
     position: relative;
     padding-bottom: 4rem;
+    position: relative;
+    z-index: 3;
+    overflow: visible;
+  }
+
+  .next-steps-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #0c0e17, transparent);
+    z-index: 1;
+    opacity: 0.7;
   }
 
   .next-steps-grid {
@@ -876,6 +960,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     margin-top: 1.5rem;
+    position: relative;
   }
 
   .next-step {
@@ -899,14 +984,14 @@
     position: absolute;
     top: -15px;
     left: -15px;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #4f46e5, #6366f1);
     border-radius: 50%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.3);
@@ -1095,15 +1180,99 @@
     }
   }
 
-  /* Enhanced Explore Content Section */
-  .explore-content-section {
+  /* Resource Showcase Section */
+  .resource-showcase-section {
     background: linear-gradient(135deg, #0c0e17 0%, #1a1d33 100%);
     position: relative;
-    padding: 4rem 0;
+    padding: 6rem 0;
+    padding-top: 4rem;
     overflow: hidden;
+    margin: 0;
+    margin-top: 0;
+    perspective: 1000px;
+    z-index: 4;
   }
 
-  .explore-content-section::before {
+  .section-connector {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    overflow: visible;
+    z-index: 6;
+  }
+
+  .connector-line {
+    width: 3px;
+    height: 30px;
+    background: linear-gradient(to top, rgba(167, 139, 250, 0), rgba(167, 139, 250, 0.9));
+    box-shadow: 0 0 15px rgba(167, 139, 250, 0.3);
+    animation: pulse-line-top 3s infinite alternate;
+  }
+
+  @keyframes pulse-line-top {
+    0%, 100% {
+      opacity: 0.7;
+      height: 30px;
+    }
+    50% {
+      opacity: 1;
+      height: 40px;
+    }
+  }
+
+  .section-header {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .section-title {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    background: linear-gradient(135deg, #a78bfa 0%, #6366f1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
+    text-transform: none;
+    animation: title-glow 3s infinite alternate;
+  }
+
+  @keyframes title-glow {
+    0%, 100% {
+      text-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
+    }
+    50% {
+      text-shadow: 0 0 25px rgba(167, 139, 250, 0.6);
+    }
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(99, 102, 241, 0.1), rgba(167, 139, 250, 0.8), rgba(99, 102, 241, 0.1));
+    border-radius: 2px;
+  }
+
+  /* Section transitions */
+  .resource-showcase-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1111,36 +1280,109 @@
     width: 100%;
     height: 100%;
     background-image:
-      radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 80% 70%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.25) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(124, 58, 237, 0.2) 0%, transparent 50%);
     z-index: 1;
   }
 
-  .explore-header {
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 3rem;
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    /* Add scrolling indicator animation */
+    .scroll-to-explore .btn-icon {
+      animation: pulse-down 2s ease-in-out infinite;
+      opacity: 1;
+      transform: rotate(90deg) translateY(0);
+    }
+
+    .explore-step {
+      transform: scale(1.05);
+      box-shadow:
+        0 10px 25px -5px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(167, 139, 250, 0.25);
+    }
+
+    .explore-step:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow:
+        0 20px 35px -5px rgba(0, 0, 0, 0.4),
+        0 0 25px rgba(167, 139, 250, 0.35);
+    }
   }
 
-  .explore-subtitle {
-    font-size: 1.1rem;
-    color: #a78bfa;
-    margin-top: 0.5rem;
-    opacity: 0.8;
+  @keyframes pulse-down {
+    0%, 100% {
+      transform: rotate(90deg) translateY(0);
+    }
+    50% {
+      transform: rotate(90deg) translateY(5px);
+    }
   }
 
-  .explore-grid {
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow:
+        0 0 10px rgba(99, 102, 241, 0.5),
+        0 0 20px rgba(167, 139, 250, 0.3);
+    }
+    50% {
+      box-shadow:
+        0 0 20px rgba(99, 102, 241, 0.7),
+        0 0 30px rgba(167, 139, 250, 0.5);
+    }
+  }
+
+  @keyframes rotate-border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse-button {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+
+  .resource-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 3rem;
     position: relative;
-    z-index: 2;
+    z-index: 5;
   }
 
-  .explore-card {
+  .resource-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(0px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .resource-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .resource-card:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  .resource-card:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+
+  .card-inner {
     background: rgba(20, 24, 42, 0.5);
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     position: relative;
     backdrop-filter: blur(10px);
@@ -1148,26 +1390,44 @@
       0 20px 25px -5px rgba(0, 0, 0, 0.5),
       0 10px 10px -5px rgba(0, 0, 0, 0.2),
       0 0 0 1px rgba(255, 255, 255, 0.1);
-    transform: translateY(0);
     transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    height: 100%;
+    z-index: 1;
   }
 
-  .explore-card:hover {
-    transform: translateY(-10px) scale(1.02);
+  .resource-card:hover {
+    transform: translateZ(10px) rotateX(2deg) rotateY(-2deg);
+  }
+
+  .resource-card:hover .card-inner {
     box-shadow:
       0 25px 50px -12px rgba(0, 0, 0, 0.6),
       0 0 0 1px rgba(255, 255, 255, 0.15),
-      0 0 20px 5px rgba(167, 139, 250, 0.2);
+      0 0 20px 5px rgba(167, 139, 250, 0.2),
+      0 0 40px rgba(99, 102, 241, 0.2);
   }
 
-  .explore-card::after {
+  .card-inner::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(167, 139, 250, 0.5), transparent);
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg,
+      rgba(167, 139, 250, 0.5),
+      rgba(99, 102, 241, 0.2),
+      rgba(167, 139, 250, 0),
+      rgba(99, 102, 241, 0.3));
+    border-radius: 16px;
+    z-index: -1;
+    animation: border-flow 6s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .resource-card:hover .card-inner::before {
+    opacity: 1;
   }
 
   .card-overlay {
@@ -1177,6 +1437,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
+    transition: all 0.5s ease;
   }
 
   .blog-card .card-overlay {
@@ -1201,40 +1462,60 @@
       linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(79, 70, 229, 0.1) 100%);
   }
 
+  .resource-card:hover .card-overlay {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
   .card-badge {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.25rem;
+    right: 1.25rem;
     background: linear-gradient(135deg, #4f46e5, #7c3aed);
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1.25rem;
     border-radius: 30px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: white;
     z-index: 2;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.3),
+      0 0 10px rgba(124, 58, 237, 0.5);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+
+  .resource-card:hover .card-badge {
+    transform: translateY(-5px);
+    box-shadow:
+      0 6px 10px -1px rgba(0, 0, 0, 0.4),
+      0 0 15px rgba(124, 58, 237, 0.6);
   }
 
   .card-content {
     position: relative;
     z-index: 1;
-    padding: 2rem;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 8rem;
+    padding: 2.5rem;
+    min-height: 350px;
   }
 
-  .explore-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  .resource-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
     line-height: 1.3;
     color: white;
     white-space: normal;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .resource-card:hover h3 {
+    color: #a78bfa;
+    text-shadow: 0 0 8px rgba(167, 139, 250, 0.3);
   }
 
   .card-excerpt {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.6;
     color: #d1d5db;
     margin-bottom: 1.5rem;
@@ -1242,10 +1523,10 @@
 
   .card-meta {
     display: flex;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #9ca3af;
     margin-bottom: 1.5rem;
-    gap: 1rem;
+    gap: 1.25rem;
   }
 
   .card-date::before {
@@ -1260,83 +1541,120 @@
 
   .card-quote {
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.6;
     color: #a78bfa;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.25rem;
     border-left: 3px solid #6366f1;
+    position: relative;
   }
 
-  .explore-button {
+  .card-quote::before, .card-quote::after {
+    font-family: 'Georgia', serif;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: rgba(167, 139, 250, 0.4);
+  }
+
+  .card-quote::before {
+    content: '"';
+    left: -5px;
+    top: -5px;
+  }
+
+  .card-quote::after {
+    content: '"';
+    right: 0;
+    bottom: -15px;
+  }
+
+  .resource-button {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.7rem 1.5rem;
+    gap: 0.75rem;
+    padding: 0.8rem 1.75rem;
     background: rgba(99, 102, 241, 0.2);
     color: #a78bfa;
     border: 1px solid #4f46e5;
     border-radius: 30px;
     font-weight: 600;
+    font-size: 1.05rem;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
     margin-top: auto;
     width: fit-content;
     position: relative;
     overflow: hidden;
+    z-index: 1;
   }
 
-  .explore-button::after {
-    content: '';
+  .button-glow {
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent);
-    transition: all 0.8s ease;
+    background: radial-gradient(circle at center, rgba(167, 139, 250, 0.4) 0%, transparent 70%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
   }
 
-  .explore-button:hover {
+  .resource-button:hover {
     background: rgba(99, 102, 241, 0.3);
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.5);
+    box-shadow:
+      0 6px 15px rgba(99, 102, 241, 0.4),
+      0 0 20px rgba(167, 139, 250, 0.2);
+    color: white;
   }
 
-  .explore-button:hover::after {
-    left: 100%;
+  .resource-button:hover .button-glow {
+    opacity: 1;
+    animation: pulse-button 1.5s infinite;
+  }
+
+  .resource-button:hover svg {
+    transform: translateX(5px);
   }
 
   .newsletter-highlights {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
   }
 
   .highlight-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.6rem 0.9rem;
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 6px;
-    font-size: 0.9rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .resource-card:hover .highlight-item {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-2px);
   }
 
   .highlight-icon {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .book-cover-preview {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 90px;
-    height: 120px;
+    top: 2.5rem;
+    right: 2.5rem;
+    width: 100px;
+    height: 130px;
     z-index: 2;
     transform: rotate(8deg);
     transition: all 0.5s ease;
@@ -1353,44 +1671,271 @@
   }
 
   .book-card:hover .book-cover-preview {
-    transform: rotate(0deg) scale(1.1);
+    transform: rotate(0deg) scale(1.15) translateY(-5px);
+    box-shadow:
+      0 20px 30px rgba(0, 0, 0, 0.6),
+      0 10px 15px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(167, 139, 250, 0.3);
   }
 
-  /* Add glowing effect to the cards */
-  @keyframes glow {
-    0%, 100% {
-      box-shadow:
-        0 20px 25px -5px rgba(0, 0, 0, 0.5),
-        0 10px 10px -5px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(255, 255, 255, 0.1);
-    }
-    50% {
-      box-shadow:
-        0 20px 25px -5px rgba(0, 0, 0, 0.5),
-        0 10px 10px -5px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(255, 255, 255, 0.1),
-        0 0 15px 2px rgba(167, 139, 250, 0.4);
-    }
+  /* Floating elements for main resource section */
+  .floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(167, 139, 250, 0.3) 0%, transparent 70%);
+    filter: blur(20px);
   }
 
-  .explore-card {
-    animation: glow 4s infinite alternate;
+  .shape-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: 10%;
+    animation: float-shape 15s ease-in-out infinite;
   }
 
-  .blog-card {
+  .shape-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    right: 15%;
+    animation: float-shape 12s ease-in-out infinite reverse;
+  }
+
+  .shape-3 {
+    width: 150px;
+    height: 150px;
+    top: 30%;
+    left: 5%;
+    animation: float-shape 10s ease-in-out infinite 2s;
+  }
+
+  .floating-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      linear-gradient(90deg, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+      linear-gradient(rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: move-grid 10s linear infinite;
+  }
+
+  /* CTA Buttons */
+  .resource-cta {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  .resource-primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 200px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .resource-primary-button svg {
+    transition: transform 0.3s ease;
+  }
+
+  .resource-primary-button:hover svg {
+    transform: translateX(5px);
+  }
+
+  /* Enhanced Explore Step within Next Steps */
+  .explore-step {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.7));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .explore-step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(167, 139, 250, 0.1) 0%, transparent 50%);
+    z-index: -1;
+  }
+
+  .step-number-explore {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, #6366f1, #a78bfa);
+    box-shadow:
+      0 0 10px rgba(99, 102, 241, 0.5),
+      0 0 20px rgba(167, 139, 250, 0.3);
+    animation: pulse-glow 3s infinite alternate;
+    position: relative;
+    z-index: 2;
+  }
+
+  .step-number-explore::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 2px solid rgba(167, 139, 250, 0.3);
+    animation: rotate-border 10s linear infinite;
+  }
+
+  .explore-step-title {
+    font-size: 1.75rem;
+    color: transparent;
+    background: linear-gradient(135deg, #a78bfa, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
+    position: relative;
+  }
+
+  .explore-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 0.65rem 1.5rem;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-text {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+
+  .explore-btn:hover {
+    background: rgba(99, 102, 241, 0.25);
+    transform: translateY(-3px);
+    box-shadow:
+      0 6px 15px rgba(99, 102, 241, 0.3),
+      0 0 20px rgba(167, 139, 250, 0.2);
+    color: white;
+  }
+
+  .explore-btn:hover .btn-glow {
+    opacity: 1;
+    animation: pulse-button 1.5s infinite;
+  }
+
+  .explore-btn:hover .btn-text {
+    transform: translateX(0);
+  }
+
+  .explore-glow-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(167, 139, 250, 0.1) 0%, transparent 70%);
+    bottom: -80px;
+    right: -50px;
+    filter: blur(20px);
+    animation: float-circle 8s ease-in-out infinite;
+  }
+
+  .explore-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(167, 139, 250, 0.5);
+    box-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
+    animation: float-particle 10s ease-in-out infinite;
+  }
+
+  .particle:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 12s;
     animation-delay: 0s;
   }
 
-  .newsletter-card {
+  .particle:nth-child(2) {
+    top: 50%;
+    right: 15%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 15s;
     animation-delay: 1s;
   }
 
-  .book-card {
+  .particle:nth-child(3) {
+    bottom: 30%;
+    left: 20%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 10s;
     animation-delay: 2s;
   }
 
+  .particle:nth-child(4) {
+    top: 35%;
+    right: 25%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 14s;
+    animation-delay: 3s;
+  }
+
+  .particle:nth-child(5) {
+    bottom: 10%;
+    left: 40%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 13s;
+    animation-delay: 4s;
+  }
+
+  /* Accessibility and responsive styles */
+  @media (prefers-reduced-motion: reduce) {
+    .step-number-explore,
+    .step-number-explore::after,
+    .explore-btn .btn-glow,
+    .button-glow,
+    .explore-glow-circle,
+    .particle,
+    .floating-shape,
+    .floating-lines,
+    .card-inner::before,
+    .resource-card {
+      animation: none !important;
+    }
+  }
+
+  /* Responsive adjustments */
   @media (min-width: 768px) {
-    .explore-grid {
+    .resource-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1398,46 +1943,474 @@
       grid-column: span 2;
     }
 
-    .card-content {
-      min-height: 350px;
+    .explore-step {
+      transform: scale(1.05);
+      box-shadow:
+        0 10px 25px -5px rgba(0, 0, 0, 0.3),
+        0 0 15px rgba(167, 139, 250, 0.2);
+    }
+
+    .explore-step:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow:
+        0 15px 35px -5px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(167, 139, 250, 0.3);
+    }
+
+    /* Add scrolling indicator animation */
+    .scroll-to-explore .btn-icon {
+      animation: pulse-down 2s ease-in-out infinite;
+      opacity: 1;
+      transform: rotate(90deg) translateY(0);
     }
   }
 
   @media (min-width: 1024px) {
-    .explore-grid {
+    .resource-grid {
       grid-template-columns: repeat(3, 1fr);
     }
 
     .book-card {
       grid-column: auto;
     }
-  }
 
-  /* Adjust hero content specifically for different screen sizes */
-  @media (max-width: 768px) {
-    .hero-title {
-      font-size: clamp(1.7rem, 3.5vw, 2.3rem);
-      hyphens: none;
-      -webkit-hyphens: none;
-      -ms-hyphens: none;
-      word-break: normal;
+    .resource-card:nth-child(1) {
+      transform: perspective(1000px) rotateY(2deg);
     }
 
-    .hero-content {
-      padding: 1rem;
-      width: 100%;
-      max-width: 100%;
+    .resource-card:nth-child(2) {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+
+    .resource-card:nth-child(3) {
+      transform: perspective(1000px) rotateY(-2deg);
+    }
+
+    .resource-card:hover {
+      transform: perspective(1000px) rotateY(0deg) translateZ(30px);
     }
   }
 
-  @media (max-width: 480px) {
-    .hero-title {
-      font-size: 1.6rem;
-      line-height: 1.4;
-      hyphens: none;
-      -webkit-hyphens: none;
-      -ms-hyphens: none;
-      word-break: normal;
+  @media (max-width: 767px) {
+    .section-title {
+      font-size: 2.2rem;
+    }
+
+    .card-content {
+      padding: 2rem;
+      padding-top: 8rem;
+      min-height: 300px;
+    }
+
+    .resource-card h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Create visual connection between sections */
+  .connection-line {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    width: 3px;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(167, 139, 250, 0.9), rgba(167, 139, 250, 0));
+    z-index: 6;
+    animation: pulse-line 3s infinite alternate;
+    box-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
+    margin-left: -1.5px;
+  }
+
+  @keyframes pulse-line {
+    0%, 100% {
+      opacity: 0.7;
+      height: 80px;
+    }
+    50% {
+      opacity: 1;
+      height: 100px;
+    }
+  }
+
+  .connector-line {
+    animation: pulse-line-top 3s infinite alternate;
+  }
+
+  @keyframes pulse-line-top {
+    0%, 100% {
+      opacity: 0.7;
+      height: 60px;
+    }
+    50% {
+      opacity: 1;
+      height: 70px;
+    }
+  }
+
+  @keyframes pulse-button {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes float-circle {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-10px) translateX(5px);
+    }
+  }
+
+  @keyframes float-particle {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-10px) translateX(5px);
+    }
+    50% {
+      transform: translateY(5px) translateX(10px);
+    }
+    75% {
+      transform: translateY(10px) translateX(-5px);
+    }
+  }
+
+  @keyframes float-shape {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-20px) translateX(10px);
+    }
+  }
+
+  @keyframes move-grid {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+
+  @keyframes border-flow {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 300% 0%;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-down {
+    0%, 100% {
+      transform: rotate(90deg) translateY(0);
+    }
+    50% {
+      transform: rotate(90deg) translateY(5px);
+    }
+  }
+
+  /* Resource decoration */
+  .resource-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  /* Treasure Tavern Ad Section */
+  .treasure-tavern-section {
+    background: linear-gradient(180deg, #1a1d33 0%, #0c0e17 100%);
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(167, 139, 250, 0.2);
+    border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+  }
+
+  .treasure-tavern-ad {
+    position: relative;
+    background: rgba(20, 24, 42, 0.5);
+    border-radius: 16px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.5),
+      0 10px 10px -5px rgba(0, 0, 0, 0.2),
+      0 0 0 1px rgba(255, 255, 255, 0.1),
+      0 0 30px rgba(167, 139, 250, 0.15);
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .treasure-tavern-ad:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 25px 50px -12px rgba(0, 0, 0, 0.6),
+      0 0 0 1px rgba(255, 255, 255, 0.15),
+      0 0 30px rgba(167, 139, 250, 0.3);
+  }
+
+  .treasure-tavern-ad::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg,
+      rgba(255, 215, 0, 0.5),
+      rgba(167, 139, 250, 0.2),
+      rgba(255, 215, 0, 0),
+      rgba(167, 139, 250, 0.3));
+    border-radius: 16px;
+    z-index: -1;
+    animation: treasure-border-flow 8s linear infinite;
+    opacity: 0.7;
+  }
+
+  .treasure-tavern-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(circle at 30% 40%, rgba(255, 215, 0, 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 70% 60%, rgba(167, 139, 250, 0.15) 0%, transparent 50%);
+    opacity: 0.6;
+    z-index: -1;
+    animation: treasure-glow-pulse 4s ease-in-out infinite alternate;
+  }
+
+  .treasure-tavern-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .treasure-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    background: linear-gradient(135deg, #FFD700, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+
+  .treasure-description {
+    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+    color: #e5e7eb;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .treasure-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .treasure-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    font-size: 1.05rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .treasure-tavern-ad:hover .treasure-feature {
+    background: rgba(255, 215, 0, 0.1);
+    border-color: rgba(255, 215, 0, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .treasure-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(167, 139, 250, 0.2) 100%);
+    color: #FFD700;
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .treasure-button-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+  }
+
+  .treasure-button:hover {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(167, 139, 250, 0.3) 100%);
+    transform: translateY(-3px);
+    box-shadow:
+      0 6px 15px rgba(255, 215, 0, 0.4),
+      0 0 20px rgba(167, 139, 250, 0.2);
+    color: white;
+  }
+
+  .treasure-button:hover .treasure-button-glow {
+    opacity: 1;
+    animation: treasure-pulse-button 1.5s infinite;
+  }
+
+  .treasure-button:hover svg {
+    transform: translateX(5px);
+  }
+
+  .treasure-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .treasure-sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: treasure-sparkle 4s ease-in-out infinite;
+  }
+
+  .treasure-sparkle-1 {
+    top: 25%;
+    left: 15%;
+    width: 8px;
+    height: 8px;
+    animation-delay: 0s;
+  }
+
+  .treasure-sparkle-2 {
+    top: 35%;
+    right: 10%;
+    width: 6px;
+    height: 6px;
+    animation-delay: 1s;
+  }
+
+  .treasure-sparkle-3 {
+    bottom: 20%;
+    left: 25%;
+    width: 4px;
+    height: 4px;
+    animation-delay: 1.5s;
+  }
+
+  .treasure-sparkle-4 {
+    bottom: 40%;
+    right: 20%;
+    width: 5px;
+    height: 5px;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes treasure-border-flow {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 300% 0%;
+    }
+  }
+
+  @keyframes treasure-glow-pulse {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes treasure-pulse-button {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes treasure-sparkle {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .treasure-tavern-section {
+      padding: 3rem 0;
+    }
+
+    .treasure-tavern-ad {
+      padding: 2rem 1.5rem;
+    }
+
+    .treasure-features {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
     }
   }
 </style>

@@ -3,6 +3,7 @@
   import { fade } from 'svelte/transition';
   import { tweened } from 'svelte/motion';
   import { cubicOut } from 'svelte/easing';
+  import { linear } from 'svelte/easing';
 
   // Props with default values
   export let title = "Latest Updates";
@@ -14,6 +15,7 @@
   export let textColor = "white";
   export let accentColor = "#3b82f6";
   export let items = null; // New prop to accept direct items
+  export let class_ = ''; // Using class_ to avoid conflicts with HTML class attribute
 
   // State
   let newsItems = [];
@@ -51,8 +53,6 @@
   async function fetchNewsItems() {
     try {
       loading = true;
-
-      console.log("Items prop received:", items); // Debugging log
 
       // If items are provided directly, use those instead of fetching
       if (items) {
@@ -133,6 +133,9 @@
       // Fade out
       isVisible = false;
 
+      // Clear any existing transition timer
+      if (transitionTimer) clearTimeout(transitionTimer);
+
       // Wait for fade out to complete before changing the index
       transitionTimer = setTimeout(() => {
         currentIndex = newIndex;
@@ -140,11 +143,11 @@
         // Fade back in
         isVisible = true;
 
-        // Restart auto-scroll
-        if (autoScroll && !isHovered) {
+        // Always restart auto-scroll on item change to ensure consistent timing
+        if (autoScroll) {
           startAutoScroll();
         }
-      }, 200); // Match the fade duration
+      }, 250); // Slightly longer fade for better readability
     }
   }
 
@@ -158,6 +161,13 @@
     }
 
     if (index !== currentIndex) {
+      // Stop current animation if any
+      if (scrollTimer) clearTimeout(scrollTimer);
+
+      // Reset progress
+      progress.set(0);
+
+      // Change item
       changeItem(index);
     }
   }
@@ -185,7 +195,6 @@
 
   // Reactive statement to watch for changes in the items prop
   $: if (isMounted && items) {
-    console.log("Items changed, re-fetching", items);
     fetchNewsItems();
   }
 
@@ -230,7 +239,7 @@
 </script>
 
 <div
-  class="news-ticker"
+  class="news-ticker {class_}"
   style="--ticker-bg: {backgroundColor}; --ticker-text: {textColor}; --ticker-accent: {accentColor};"
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
@@ -292,14 +301,18 @@
       <div class="ticker-item-container">
         <div class="ticker-item" class:visible={isVisible} aria-hidden={!isVisible}>
           <a href={newsItems[currentIndex].link || '#'} class="ticker-link">
-            <span class="ticker-timestamp">{newsItems[currentIndex].date}</span>
-            <span class="ticker-text">{newsItems[currentIndex].text}</span>
-            {#if newsItems[currentIndex].tag}
-              <span class="ticker-tag">{newsItems[currentIndex].tag}</span>
-            {/if}
-            {#if newsItems[currentIndex].link}
-              <span class="read-more">Read more →</span>
-            {/if}
+            <div class="ticker-meta">
+              <span class="ticker-timestamp">{newsItems[currentIndex].date}</span>
+              {#if newsItems[currentIndex].tag}
+                <span class="ticker-tag ticker-tag-{newsItems[currentIndex].tag.toLowerCase().replace(' ', '-')}">{newsItems[currentIndex].tag}</span>
+              {/if}
+            </div>
+            <div class="ticker-headline">
+              <h4 class="ticker-text">{newsItems[currentIndex].text}</h4>
+              {#if newsItems[currentIndex].link}
+                <span class="read-more">Read more</span>
+              {/if}
+            </div>
           </a>
         </div>
       </div>
@@ -321,7 +334,7 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
-    margin: 1.5rem 0;
+    margin: 0.25rem 0 0.75rem 0;
     color: var(--ticker-text);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: box-shadow 0.3s ease;
@@ -335,13 +348,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.85rem 1.25rem;
+    padding: 0.5rem 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     background-color: rgba(0, 0, 0, 0.2);
   }
 
   .ticker-title {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     margin: 0;
     display: flex;
@@ -352,18 +365,18 @@
   .ticker-title::before {
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background-color: var(--ticker-accent);
     border-radius: 50%;
-    margin-right: 0.6rem;
+    margin-right: 0.4rem;
     box-shadow: 0 0 8px var(--ticker-accent);
   }
 
   .ticker-controls {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
 
   .control-button {
@@ -372,7 +385,7 @@
     color: var(--ticker-text);
     opacity: 0.7;
     cursor: pointer;
-    padding: 0.35rem;
+    padding: 0.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -425,8 +438,8 @@
   }
 
   .ticker-content {
-    padding: 1.25rem 1.5rem;
-    min-height: 4.5rem;
+    padding: 0.5rem 0.75rem;
+    min-height: 3.5rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -437,70 +450,178 @@
     min-height: 1.5rem;
     position: relative;
     overflow: hidden;
+    height: auto;
   }
 
   .ticker-item {
     width: 100%;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.25s ease-in-out, transform 0.3s ease-out;
+    transform: translateY(8px);
     position: relative;
   }
 
   .ticker-item.visible {
     opacity: 1;
+    transform: translateY(0);
+    animation: subtle-highlight 2.5s ease-out;
+  }
+
+  @keyframes subtle-highlight {
+    0% { background-color: rgba(255, 255, 255, 0.05); }
+    100% { background-color: transparent; }
   }
 
   .ticker-link {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
     text-decoration: none;
     color: inherit;
+    overflow: hidden;
+    position: relative;
+    padding: 0.15rem 0;
+    transition: background-color 0.2s ease;
+    border-radius: 6px;
+  }
+
+  .ticker-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .ticker-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    min-width: 90px;
+    padding-left: 0.5rem;
+  }
+
+  .ticker-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    padding-right: 0.5rem;
+  }
+
+  .ticker-headline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0; /* Only show when hovering */
+    background: linear-gradient(90deg, var(--ticker-accent) 0%, transparent 100%);
+    opacity: 0.1;
+    transition: height 0.2s ease;
   }
 
   .ticker-timestamp {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     opacity: 0.75;
     white-space: nowrap;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.15rem 0.5rem;
+    padding: 0.1rem 0.4rem;
     border-radius: 4px;
+    flex-shrink: 0;
   }
 
   .ticker-text {
-    flex: 1;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.3;
     font-weight: 500;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    width: 100%;
+    color: #fff;
+    letter-spacing: 0.01em;
   }
 
   .ticker-tag {
-    background-color: var(--ticker-accent);
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: 600;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
     white-space: nowrap;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    flex-shrink: 0;
+    opacity: 0.9;
+    margin-top: 0.05rem;
+  }
+
+  /* Tag colors based on type */
+  .ticker-tag-opinion {
+    background-color: #8b5cf6; /* Purple */
+  }
+
+  .ticker-tag-breaking {
+    background-color: #ef4444; /* Red */
+    animation: pulse 2s infinite;
+  }
+
+  .ticker-tag-news {
+    background-color: #3b82f6; /* Blue */
+  }
+
+  .ticker-tag-update, .ticker-tag-ai-update {
+    background-color: #0ea5e9; /* Light blue */
+  }
+
+  .ticker-tag-tech {
+    background-color: #0d9488; /* Teal */
+  }
+
+  .ticker-tag-policy {
+    background-color: #6366f1; /* Indigo */
+  }
+
+  .ticker-tag-review {
+    background-color: #f59e0b; /* Amber */
+  }
+
+  /* Default color for any other tags */
+  .ticker-tag:not([class*="-"]) {
+    background-color: var(--ticker-accent);
+  }
+
+  @keyframes pulse {
+    0% { opacity: 0.9; }
+    50% { opacity: 1; box-shadow: 0 0 10px rgba(239, 68, 68, 0.5); }
+    100% { opacity: 0.9; }
   }
 
   .read-more {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0.85;
     white-space: nowrap;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     font-weight: 500;
-    margin-left: 0.5rem;
     color: var(--ticker-accent);
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
   }
 
-  .ticker-link:hover .read-more {
+  .read-more::after {
+    content: '→';
+    margin-left: 0.25rem;
+    transition: transform 0.3s ease;
+  }
+
+  .ticker-link:hover .read-more::after {
     transform: translateX(4px);
-    opacity: 1;
   }
 
   .ticker-message {
@@ -548,34 +669,66 @@
 
   @media (max-width: 640px) {
     .ticker-content {
-      padding: 1rem;
-      min-height: 5.5rem;
-    }
-
-    .ticker-link {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      min-height: 4.5rem;
     }
 
     .ticker-timestamp {
-      font-size: 0.75rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .ticker-header {
-      padding: 0.65rem 1rem;
+      font-size: 0.7rem;
+      padding: 0.1rem 0.35rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      opacity: 0.7;
     }
 
     .ticker-tag {
-      padding: 0.2rem 0.6rem;
-      font-size: 0.7rem;
-      margin-top: 0.25rem;
+      font-size: 0.6rem;
+      padding: 0.1rem 0.35rem;
+    }
+
+    .ticker-link {
+      grid-template-columns: 85px 1fr;
+      gap: 0.75rem;
+    }
+
+    .ticker-text {
+      font-size: 0.95rem;
+      line-height: 1.3;
+      -webkit-line-clamp: 2;
     }
 
     .read-more {
-      margin-top: 0.25rem;
-      display: inline-block;
+      font-size: 0.75rem;
+    }
+  }
+
+  /* Additional adjustments for very narrow screens */
+  @media (max-width: 380px) {
+    .ticker-link {
+      grid-template-columns: 70px 1fr;
+      gap: 0.5rem;
+    }
+
+    .ticker-meta {
+      min-width: 70px;
+    }
+
+    .ticker-title {
+      font-size: 0.8rem;
+    }
+
+    .ticker-text {
+      font-size: 0.85rem;
+      line-height: 1.25;
+    }
+
+    .ticker-timestamp {
+      font-size: 0.65rem;
+      padding: 0.1rem 0.25rem;
+    }
+
+    .ticker-tag {
+      font-size: 0.55rem;
+      padding: 0.1rem 0.25rem;
     }
   }
 

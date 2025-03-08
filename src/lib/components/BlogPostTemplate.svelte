@@ -45,7 +45,7 @@
 <div class="blog-post">
   <article class="prose prose-lg dark:prose-invert mx-auto px-3 sm:px-4 py-6 max-w-3xl">
     <header class="mb-6">
-      <h1 class="text-3xl sm:text-4xl font-bold mb-3">{post.title}</h1>
+      <h1 class="blog-post-title text-3xl sm:text-4xl font-bold mb-3">{post.title}</h1>
       <div class="flex flex-wrap items-center text-sm text-gray-600 dark:text-gray-400 mb-3">
         <span class="mr-3">{post.date}</span>
         <span class="mr-3">·</span>
@@ -172,6 +172,25 @@
 <style>
   .share-top-container {
     margin: 1.5rem 0;
+  }
+
+  .blog-post-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+  }
+
+  @media (max-width: 480px) {
+    .blog-post-title {
+      font-size: clamp(1.5rem, 3.5vw, 1.75rem);
+    }
+  }
+
+  @media (max-width: 350px) {
+    .blog-post-title {
+      font-size: clamp(1.35rem, 3vw, 1.5rem);
+    }
   }
 
   .blog-closing {

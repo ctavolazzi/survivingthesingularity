@@ -262,7 +262,7 @@
         <li class="mb-10">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{item.date}</time>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{item.title}</h3>
+          <h3 class="timeline-event-title text-lg font-semibold text-gray-900 dark:text-white">{item.title}</h3>
           <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{item.abstract}</p>
 
           <div class="flex flex-wrap gap-2">
@@ -390,7 +390,7 @@
                     <span aria-hidden="true">×</span>
                   </button>
 
-                  <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                  <h2 class="timeline-modal-title text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                     {item.title}
                   </h2>
 
@@ -506,14 +506,152 @@
     overflow: hidden;
   }
 
+  /* Call-to-action section styling */
+  .singularity-cta-container {
+    background-color: #1a2234;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    margin: 3rem auto;
+    max-width: 650px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .singularity-cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .singularity-cta-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+    max-width: 500px;
+  }
+
+  .singularity-cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+  }
+
+  .singularity-cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    min-width: 150px;
+    flex: 1;
+    white-space: nowrap; /* Prevent text wrapping */
+    text-align: center; /* Center text */
+    writing-mode: horizontal-tb; /* Explicitly set horizontal text */
+  }
+
+  .book-button {
+    background-color: #2563eb;
+    color: white;
+    width: auto; /* Ensure auto width */
+    flex-direction: row; /* Force horizontal layout */
+  }
+
+  .book-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+  }
+
+  .discord-button-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .discord-button {
+    background-color: #5865F2;
+    color: white;
+  }
+
+  .discord-button:hover {
+    background-color: #4752c4;
+    transform: translateY(-2px);
+  }
+
+  .discord-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+  }
+
+  .first-100-badge {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background-color: #ff3366;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    transform: rotate(5deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .singularity-cta-description {
+    color: #94a3b8;
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .singularity-cta-container {
+      padding: 1.5rem;
+      margin: 2rem auto;
+    }
+
+    .singularity-cta-title {
+      font-size: 1.5rem;
+    }
+
+    .singularity-cta-buttons {
+      gap: 0.75rem;
+    }
+
+    .singularity-cta-button {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      min-width: unset;
+      flex: 1;
+    }
+
+    .first-100-badge {
+      right: -10px;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+  }
+
   .path-to-singularity-wrapper {
     position: relative;
     z-index: 5;
     pointer-events: auto;
   }
 
+  /* Existing styles below */
   .timeline-title {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -522,19 +660,52 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .timeline-event-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(1.1rem, 3vw, 1.25rem);
+  }
+
+  .timeline-modal-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(1.35rem, 3.5vw, 2rem);
   }
 
   @media (max-width: 768px) {
     .timeline-title {
-      font-size: 2rem;
       margin-bottom: 1.25rem;
     }
   }
 
   @media (max-width: 480px) {
     .timeline-title {
-      font-size: 1.75rem;
       margin-bottom: 1rem;
+    }
+
+    .timeline-event-title {
+      font-size: clamp(1rem, 2.5vw, 1.1rem);
+    }
+  }
+
+  @media (max-width: 350px) {
+    .timeline-title {
+      font-size: clamp(1.5rem, 3.5vw, 1.75rem);
+    }
+
+    .timeline-event-title {
+      font-size: clamp(0.95rem, 2vw, 1rem);
+    }
+
+    .timeline-modal-title {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
     }
   }
 

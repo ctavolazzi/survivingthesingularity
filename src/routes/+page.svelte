@@ -108,8 +108,6 @@
 				link: `/blog/${post.slug}`
 			};
 		}).slice(0, 7);
-
-		console.log("Formatted blog posts for news ticker:", newsTickerItems);
 	});
 </script>
 
@@ -237,9 +235,6 @@
 
 	h2 {
 		color: #e2e8f0;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	/* Responsive styles */
@@ -372,7 +367,7 @@
 	.news-ticker-container {
 		max-width: 1200px;
 		width: 95%;
-		margin: 0.5rem auto 0.25rem;
+		margin: 0.25rem auto 0.25rem;
 		padding: 0 1rem;
 		border-radius: 12px;
 		overflow: hidden;
@@ -393,7 +388,7 @@
 	@media (max-width: 768px) {
 		.news-ticker-container {
 			width: 92%;
-			margin: 0.3rem auto 0.2rem;
+			margin: 0.15rem auto 0.2rem;
 		}
 
 		.featured-posts-container {
@@ -405,7 +400,7 @@
 	@media (max-width: 480px) {
 		.news-ticker-container {
 			width: 90%;
-			margin: 0.25rem auto 0.1rem;
+			margin: 0.1rem auto 0.1rem;
 			padding: 0 0.5rem;
 		}
 
@@ -477,9 +472,6 @@
 	/* Add responsive heading styles */
 	:global(.main-section-title) {
 		font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	:global(.main-subtitle) {

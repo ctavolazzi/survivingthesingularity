@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   export let data;
   const { posts } = data;
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
@@ -6,6 +7,45 @@
   import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
   import NewsTicker from '$lib/components/NewsTicker.svelte';
   import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+  import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts.js';
+
+  // Create news ticker items array
+  let newsTickerItems = [];
+
+  // Load blog posts and format for news ticker
+  onMount(async () => {
+    const blogPosts = await loadBlogPosts();
+
+    // Format blog posts for the news ticker with varied, appropriate tags
+    newsTickerItems = blogPosts.map(post => {
+      // Define tag based on post slug or title to create variety
+      let tag = 'Blog';
+
+      // Assign specific tags based on content type
+      if (post.slug === 'singularity-express') {
+        tag = 'Opinion';
+      } else if (post.slug === 'farm-bot-deep-dive') {
+        tag = 'Tech';
+      } else if (post.slug === 'darpa-biomechanical-space-structures') {
+        tag = 'News';
+      } else if (post.slug === 'claude-projects-weekend-project') {
+        tag = 'AI Update';
+      } else if (post.slug === 'robot-farm-bot') {
+        tag = 'Review';
+      } else if (post.title.toLowerCase().includes('regulatory')) {
+        tag = 'Policy';
+      } else if (post.title.toLowerCase().includes('breakthrough')) {
+        tag = 'Breaking';
+      }
+
+      return {
+        date: new Date(post.date).toISOString().split('T')[0],
+        text: post.title,
+        tag: tag,
+        link: `/blog/${post.slug}`
+      };
+    });
+  });
 </script>
 
 <div class="main-content">
@@ -36,7 +76,8 @@
     <div class="news-ticker-wrapper">
       <NewsTicker
         title="AI & Tech Updates"
-        scrollSpeed={1000}
+        scrollSpeed={2500}
+        items={newsTickerItems}
         backgroundColor="rgba(15, 23, 42, 0.7)"
         textColor="white"
         accentColor="#3b82f6"
@@ -117,7 +158,7 @@
     padding: 4rem 1.5rem;
     overflow: hidden;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .hero-overlay {
@@ -265,7 +306,7 @@
   /* Content styles */
   .content-container {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 0.5rem auto 2rem;
     padding: 0 1.5rem;
     width: 100%;
   }
@@ -398,10 +439,6 @@
     color: var(--color-text-primary);
     font-weight: 700;
     line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
   .post-excerpt {
@@ -432,7 +469,7 @@
 
   /* Component containers styling */
   .news-ticker-wrapper {
-    margin-bottom: 3rem;
+    margin: 0 0 2rem 0;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -455,6 +492,7 @@
     .hero-section {
       min-height: 400px;
       padding: 3rem 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .hero-cta {
@@ -465,11 +503,11 @@
 
     .content-container {
       padding: 0 1rem;
-      margin: 1.5rem auto;
+      margin: 0.5rem auto 1.5rem;
     }
 
     .news-ticker-wrapper {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .featured-posts-wrapper {
@@ -485,18 +523,34 @@
     .hero-section {
       min-height: 350px;
       padding: 2rem 1rem;
+      margin-bottom: 0.5rem;
     }
 
     .news-ticker-wrapper {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     .featured-posts-wrapper {
       margin: 0 0 2rem;
     }
 
+    .content-container {
+      margin: 0.25rem auto 1.5rem;
+    }
+
     .treasure-tavern-container {
       margin: 2rem auto 1rem;
+    }
+  }
+
+  /* Additional CSS for very small screens */
+  @media (max-width: 350px) {
+    .hero-title {
+      font-size: clamp(2.5rem, 7vw, 3rem);
+    }
+
+    .post-title, .section-title {
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
     }
   }
 </style>

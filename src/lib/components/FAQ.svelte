@@ -1,8 +1,11 @@
 <script>
   import { Accordion, AccordionItem } from 'flowbite-svelte';
+
+  // Accept class prop
+  export let class_ = ''; // Using class_ to avoid conflicts with HTML class attribute
 </script>
 
-<div class="content-container">
+<div class="content-container {class_}">
     <div class="faq-header">Frequently Asked Questions</div>
     <Accordion class="content-box">
       <AccordionItem>
@@ -78,10 +81,20 @@
 
 <style>
   .faq-header {
-    font-size: 1.75rem;
+    font-size: clamp(1.5rem, 3.5vw, 1.75rem);
     font-weight: bold;
     color: var(--color-text-primary);
     text-align: center;
     margin: 2rem 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Very small screen adjustment */
+  @media (max-width: 350px) {
+    .faq-header {
+      font-size: clamp(1.35rem, 3vw, 1.5rem);
+    }
   }
 </style>

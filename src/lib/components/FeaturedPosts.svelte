@@ -101,6 +101,9 @@
     margin-bottom: 0.5rem;
     color: white;
     line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .featured-subtitle {
@@ -202,6 +205,11 @@
     margin-bottom: 0.75rem;
     color: white;
     line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.6em;
   }
 
   .featured-excerpt {
@@ -307,6 +315,17 @@
     .featured-badge {
       font-size: 0.7rem;
       padding: 0.2rem 0.6rem;
+    }
+  }
+
+  /* Very small screen adjustments */
+  @media (max-width: 350px) {
+    .featured-title {
+      font-size: clamp(1.75rem, 3.5vw, 2rem);
+    }
+
+    .featured-post-title {
+      font-size: 1.05rem;
     }
   }
 

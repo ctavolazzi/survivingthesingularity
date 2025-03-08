@@ -97,6 +97,9 @@
     margin-bottom: 0.5rem;
     color: white;
     line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .latest-subtitle {
@@ -186,6 +189,9 @@
     margin-bottom: 0.75rem;
     color: white;
     line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .latest-excerpt {
@@ -308,6 +314,17 @@
     .new-tag {
       font-size: 0.7rem;
       padding: 0.2rem 0.6rem;
+    }
+  }
+
+  /* Very small screen adjustments */
+  @media (max-width: 350px) {
+    .latest-title {
+      font-size: clamp(1.5rem, 3.5vw, 1.75rem);
+    }
+
+    .latest-post-title {
+      font-size: 1.15rem;
     }
   }
 </style>

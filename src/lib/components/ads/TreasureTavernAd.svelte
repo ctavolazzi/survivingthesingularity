@@ -87,6 +87,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(193, 154, 73, 0.3);
     padding: 4px;
+    box-sizing: border-box;
   }
 
   .treasure-shimmer {
@@ -158,9 +159,42 @@
     background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(22, 33, 62, 0.95) 100%);
     border-radius: 8px;
     overflow: hidden;
+  }
 
-    @media (min-width: 768px) {
+  /* Desktop layout - larger screens */
+  @media (min-width: 768px) {
+    .ad-content {
       flex-direction: row;
+      min-height: 350px; /* Set minimum height for desktop */
+    }
+
+    .ad-image-container {
+      flex: 0 0 40%; /* Fixed width for image container on desktop */
+      max-width: 40%;
+    }
+
+    .ad-text {
+      flex: 0 0 60%; /* Fixed width for text container on desktop */
+      max-width: 60%;
+    }
+  }
+
+  /* Large desktop screens */
+  @media (min-width: 1200px) {
+    .treasure-tavern-ad {
+      max-width: 1000px; /* Slightly wider on very large screens */
+    }
+
+    .ad-content {
+      min-height: 380px;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    .ad-description {
+      font-size: 1.2rem;
     }
   }
 
@@ -172,16 +206,26 @@
     align-items: center;
     padding: 1.5rem;
     background: radial-gradient(circle at center, rgba(193, 154, 73, 0.1), transparent 70%);
+    overflow: hidden; /* Prevent image overflow */
   }
 
   .ad-image {
     max-width: 100%;
     height: auto;
+    max-height: 300px; /* Limit image height */
+    object-fit: contain; /* Maintain aspect ratio */
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
     transition: transform 0.5s ease;
     border-radius: 8px;
     border: 2px solid rgba(193, 154, 73, 0.4);
     transform: rotate(-3deg);
+  }
+
+  @media (min-width: 768px) {
+    .ad-image {
+      max-height: none; /* Allow natural height on desktop */
+      width: 90%; /* Slightly smaller than container for spacing */
+    }
   }
 
   .treasure-tavern-ad:hover .ad-image {
@@ -316,6 +360,18 @@
     }
   }
 
+  /* Desktop optimization for CTA button */
+  @media (min-width: 768px) {
+    .cta-button {
+      padding: 0.9rem 2.5rem;
+      margin: 0; /* Remove centering on desktop */
+    }
+
+    .ad-footer {
+      justify-content: flex-start; /* Align to left on desktop */
+    }
+  }
+
   .featured-product {
     margin: 0 0 1.5rem 0;
     padding: 1rem;
@@ -332,6 +388,14 @@
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-color: rgba(193, 154, 73, 0.5);
+  }
+
+  /* Desktop layout for featured product */
+  @media (min-width: 768px) {
+    .featured-product {
+      max-width: 85%; /* Limit width on desktop */
+      margin-bottom: 2rem;
+    }
   }
 
   .product-image-container {
@@ -415,10 +479,63 @@
     .featured-product {
       flex-direction: column;
       align-items: flex-start;
+      padding: 0.85rem;
     }
 
     .product-image-container {
       margin-bottom: 1rem;
+    }
+  }
+
+  /* Small mobile screens */
+  @media (max-width: 380px) {
+    .ad-text {
+      padding: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    .ad-description {
+      font-size: 0.95rem;
+    }
+
+    .treasure-badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.7rem;
+      top: 5px;
+      right: 5px;
+    }
+  }
+
+  /* Tablet-specific adjustments */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .treasure-tavern-ad {
+      max-width: 90%;
+    }
+
+    .ad-content {
+      min-height: 320px;
+    }
+
+    .ad-image-container {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    .ad-text {
+      flex: 0 0 55%;
+      max-width: 55%;
+      padding: 1.75rem;
+    }
+
+    h2 {
+      font-size: 2rem;
     }
   }
 
@@ -427,6 +544,13 @@
     list-style: none;
     padding: 0;
     margin: 0 0 1.5rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .feature-list {
+      margin: 0 0 2rem 0;
+      max-width: 90%; /* Limit width on desktop */
+    }
   }
 
   .feature-item {
@@ -459,5 +583,21 @@
     color: #e2e8f0;
     font-size: 0.95rem;
     line-height: 1.5;
+  }
+
+  /* Container responsive margins */
+  @media (max-width: 767px) {
+    .treasure-tavern-ad {
+      margin: 1.5rem auto;
+      max-width: 95%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .treasure-tavern-ad {
+      margin: 1rem auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
   }
 </style>

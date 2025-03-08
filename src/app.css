@@ -43,7 +43,17 @@ body {
 }
 
 /* Ensure all text elements wrap properly */
-h1, h2, h3, h4, h5, h6, p, a, span, div {
+h1, h2, h3, h4, h5, h6 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+}
+
+p, a, span, div {
   max-width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;

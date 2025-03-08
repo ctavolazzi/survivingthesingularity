@@ -175,9 +175,12 @@
   }
 
   .blog-post-title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
     font-size: clamp(1.75rem, 4vw, 2.5rem);
   }
 

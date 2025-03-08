@@ -354,17 +354,6 @@
           </div>
         </div>
       </div>
-
-      <div class="resource-cta">
-        <a href="/blog" class="primary-button resource-primary-button">
-          <span>View All Blog Posts</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="/sample" class="primary-button resource-primary-button">
-          <span>Full Book Preview</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
     </div>
     <div class="resource-decoration">
       <div class="floating-shape shape-1"></div>
@@ -937,10 +926,11 @@
   .next-steps-section {
     background: linear-gradient(180deg, #111827 0%, #0c0e17 100%);
     position: relative;
-    padding-bottom: 4rem;
+    padding-bottom: 0;
     position: relative;
     z-index: 3;
     overflow: visible;
+    margin-bottom: -250px; /* Increased negative margin to create more overlap */
   }
 
   .next-steps-section::after {
@@ -984,17 +974,34 @@
     position: absolute;
     top: -15px;
     left: -15px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #4f46e5, #6366f1);
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: white;
-    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.3);
+    box-shadow:
+      0 0 10px rgba(99, 102, 241, 0.5),
+      0 0 20px rgba(167, 139, 250, 0.3);
+    animation: pulse-glow 3s infinite alternate;
+    position: relative;
+    z-index: 2;
+  }
+
+  .step-number::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 2px solid rgba(167, 139, 250, 0.3);
+    animation: rotate-border 10s linear infinite;
   }
 
   .secondary-button {
@@ -1184,44 +1191,18 @@
   .resource-showcase-section {
     background: linear-gradient(135deg, #0c0e17 0%, #1a1d33 100%);
     position: relative;
-    padding: 6rem 0;
-    padding-top: 4rem;
+    padding: 250px 0 0 0;
+    padding-top: 250px;
     overflow: hidden;
     margin: 0;
     margin-top: 0;
+    margin-bottom: -6rem; /* Dramatically increased negative margin */
     perspective: 1000px;
-    z-index: 4;
+    z-index: 2;
   }
 
   .section-connector {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 30px;
-    overflow: visible;
-    z-index: 6;
-  }
-
-  .connector-line {
-    width: 3px;
-    height: 30px;
-    background: linear-gradient(to top, rgba(167, 139, 250, 0), rgba(167, 139, 250, 0.9));
-    box-shadow: 0 0 15px rgba(167, 139, 250, 0.3);
-    animation: pulse-line-top 3s infinite alternate;
-  }
-
-  @keyframes pulse-line-top {
-    0%, 100% {
-      opacity: 0.7;
-      height: 30px;
-    }
-    50% {
-      opacity: 1;
-      height: 40px;
-    }
+    display: none; /* Remove duplicate connector */
   }
 
   .section-header {
@@ -1229,11 +1210,12 @@
     position: relative;
     z-index: 10;
     margin-bottom: 4rem;
+    margin-top: -50px; /* Pull the text up to reduce spacing */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 0;
   }
 
   .section-title {
@@ -1725,7 +1707,8 @@
 
   /* CTA Buttons */
   .resource-cta {
-    margin-top: 4rem;
+    margin: 0; /* Completely removed all margins */
+    padding: 0; /* Added padding: 0 */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1757,7 +1740,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(99, 102, 241, 0.2);
     position: relative;
-    overflow: hidden;
+    overflow: visible; /* Changed from hidden to visible to allow connection line to extend */
     z-index: 5;
     transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   }
@@ -2009,31 +1992,29 @@
 
   /* Create visual connection between sections */
   .connection-line {
-    position: absolute;
-    bottom: -80px;
-    left: 50%;
-    width: 3px;
-    height: 80px;
-    background: linear-gradient(to bottom, rgba(167, 139, 250, 0.9), rgba(167, 139, 250, 0));
-    z-index: 6;
-    animation: pulse-line 3s infinite alternate;
-    box-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
-    margin-left: -1.5px;
+    display: none; /* Hide the connection line */
+  }
+
+  .connector-line {
+    display: none; /* Hide any connector line in the Resource Library section */
+  }
+
+  /* Also hide the section connector div completely */
+  .section-connector {
+    display: none;
   }
 
   @keyframes pulse-line {
     0%, 100% {
-      opacity: 0.7;
-      height: 80px;
+      opacity: 0.9;
+      height: 255px;
+      box-shadow: 0 0 15px rgba(167, 139, 250, 0.5);
     }
     50% {
       opacity: 1;
-      height: 100px;
+      height: 260px;
+      box-shadow: 0 0 25px rgba(167, 139, 250, 0.7);
     }
-  }
-
-  .connector-line {
-    animation: pulse-line-top 3s infinite alternate;
   }
 
   @keyframes pulse-line-top {
@@ -2144,11 +2125,17 @@
   /* Treasure Tavern Ad Section */
   .treasure-tavern-section {
     background: linear-gradient(180deg, #1a1d33 0%, #0c0e17 100%);
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
     position: relative;
     overflow: hidden;
     border-top: 1px solid rgba(167, 139, 250, 0.2);
     border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+    margin-top: -7rem; /* Dramatically increased negative margin */
+  }
+
+  /* Remove any padding from Treasure Tavern container */
+  .treasure-tavern-section .container {
+    padding-top: 0;
   }
 
   .treasure-tavern-ad {

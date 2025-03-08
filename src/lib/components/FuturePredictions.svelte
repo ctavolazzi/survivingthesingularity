@@ -1,8 +1,11 @@
 <script>
   import { onMount } from 'svelte';
-  import { fade, fly } from 'svelte/transition';
+  import { fade, slide } from 'svelte/transition';
 
-  // Future predictions data
+  // Accept class prop
+  export let class_ = ''; // Using class_ to avoid conflicts with HTML class attribute
+
+  // Future predictions data with essential fields
   const predictions = [
     {
       id: 1,
@@ -10,7 +13,8 @@
       title: "Artificial General Intelligence Milestone",
       description: "The first AI system demonstrating capabilities across multiple domains at human-level performance, marking a significant step toward AGI.",
       confidence: "Medium",
-      impact: "High"
+      impact: "High",
+      color: "#3b82f6" // Blue
     },
     {
       id: 2,
@@ -18,7 +22,8 @@
       title: "Brain-Computer Interface Revolution",
       description: "Widespread adoption of non-invasive BCIs for everyday use, enabling direct mental control of devices and preliminary thought-to-text communication.",
       confidence: "Medium",
-      impact: "Very High"
+      impact: "Very High",
+      color: "#8b5cf6" // Purple
     },
     {
       id: 3,
@@ -26,7 +31,8 @@
       title: "Quantum Computing Breakthrough",
       description: "Practical quantum computers solving previously intractable problems, revolutionizing fields from materials science to drug discovery and AI training.",
       confidence: "Medium-High",
-      impact: "Transformative"
+      impact: "Transformative",
+      color: "#ec4899" // Pink
     },
     {
       id: 4,
@@ -34,158 +40,449 @@
       title: "Technological Singularity Threshold",
       description: "The potential point at which technological growth becomes uncontrollable and irreversible, resulting in unforeseeable changes to human civilization.",
       confidence: "Speculative",
-      impact: "Civilization-Altering"
+      impact: "Civilization-Altering",
+      color: "#f59e0b" // Amber
     }
   ];
 
-  let visible = true;
+  let expandedItem = null;
+
+  function toggleExpand(id) {
+    expandedItem = expandedItem === id ? null : id;
+  }
+
+  // Calculate progress percentage toward singularity
+  function calculateProgress() {
+    const now = new Date();
+    const startYear = 2023;
+    const endYear = 2045;
+    const totalYears = endYear - startYear;
+    const yearsPassed = now.getFullYear() - startYear + (now.getMonth()/12);
+    return Math.min(Math.max((yearsPassed / totalYears) * 100, 0), 100);
+  }
+
+  const singularityProgress = calculateProgress();
 </script>
 
-<div class="future-predictions p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg max-w-3xl mx-auto mt-8">
-  <div class="future-header">
-    <h2 class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-2">Future Predictions</h2>
-    <p class="text-center text-gray-600 dark:text-gray-400 mb-6">Based on research from "Surviving the Singularity"</p>
-    <hr class="mb-8 border-gray-200 dark:border-gray-700" />
-  </div>
+<div class="future-predictions-wrapper {class_}">
+  <div class="future-predictions rounded-lg max-w-4xl mx-auto">
+    <div class="future-header">
+      <h2 class="future-title">
+        <span class="title-highlight">Future</span> Predictions
+        <div class="title-decoration"></div>
+      </h2>
 
-  <div class="predictions-container">
-    {#if visible}
-      <ol class="relative border-l border-blue-300 dark:border-blue-700 pl-4">
-        {#each predictions as prediction, index}
-          <li class="mb-10" in:fly={{ y: 10, delay: 0, duration: 100 }}>
-            <div class="absolute w-3 h-3 bg-blue-300 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-blue-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-blue-500 dark:text-blue-400">{prediction.year}</time>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{prediction.title}</h3>
-            <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">{prediction.description}</p>
-            <div class="flex gap-4 text-sm">
-              <span class="text-gray-600 dark:text-gray-400">
-                <strong>Confidence:</strong> {prediction.confidence}
-              </span>
-              <span class="text-gray-600 dark:text-gray-400">
-                <strong>Impact:</strong> {prediction.impact}
-              </span>
-            </div>
-          </li>
-        {/each}
-      </ol>
-    {/if}
-  </div>
+      <p class="subtitle">
+        Based on extensive research and analysis from "Surviving the Singularity"
+      </p>
 
-  <div class="future-footer mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-center">
-    <p class="text-gray-700 dark:text-gray-300 text-lg font-medium">
-      Want to explore these predictions in depth?
-    </p>
-    <div class="mt-4 flex flex-col md:flex-row gap-4 justify-center items-center">
-      <a href="/book" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-transform hover:scale-105">
-        Explore Book Preview
-      </a>
-      <a href="/discord" class="discord-button">
-        <div class="discord-icon-wrapper">
-          <svg class="discord-icon" viewBox="0 -28.5 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
-            <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z" fill="currentColor"></path>
-          </svg>
-        </div>
-        <span>Join the Discord</span>
-        <div class="first-100-badge">First 100 only</div>
-      </a>
+      <!-- Removing the entire singularity timeline section -->
     </div>
-    <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
-      Connect with others preparing for the singularity and get early access to insights.
-    </p>
+
+    <div class="predictions-container">
+      <div class="timeline-container">
+        {#each predictions as prediction}
+          <div class="timeline-item" class:expanded={expandedItem === prediction.id}>
+            <div class="timeline-connector">
+              <div class="timeline-line" style="background-color: {prediction.color}"></div>
+              <div class="timeline-dot" style="background-color: {prediction.color}"></div>
+            </div>
+
+            <div class="timeline-content">
+              <div class="year-badge" style="background-color: {prediction.color}">{prediction.year}</div>
+              <h3 class="prediction-title">{prediction.title}</h3>
+              <p class="prediction-desc">{prediction.description}</p>
+
+              <div class="prediction-meta">
+                <div class="meta-item">
+                  <span class="meta-label">Confidence:</span>
+                  <div class="confidence-value" style="color: {prediction.color}">
+                    {prediction.confidence}
+                  </div>
+                </div>
+
+                <div class="meta-item">
+                  <span class="meta-label">Impact:</span>
+                  <div class="impact-value" style="color: {prediction.color}">
+                    {prediction.impact}
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="learn-more"
+                style="color: {prediction.color}"
+                on:click={() => toggleExpand(prediction.id)}
+              >
+                {expandedItem === prediction.id ? 'Show Less' : 'Learn More'}
+              </button>
+
+              {#if expandedItem === prediction.id}
+                <div class="expanded-content" in:slide={{ duration: 300 }}>
+                  <div class="implications">
+                    <h4>Potential Implications:</h4>
+                    <ul>
+                      <li>Economic shifts in labor markets and wealth distribution</li>
+                      <li>New ethical and philosophical questions about consciousness and identity</li>
+                      <li>Geopolitical power realignment based on technology leadership</li>
+                      <li>Transformative impacts on healthcare, education, and governance</li>
+                    </ul>
+                  </div>
+                </div>
+              {/if}
+            </div>
+          </div>
+        {/each}
+      </div>
+    </div>
+    <!--
+    <div class="future-footer">
+      <a href="/book" class="cta-button">
+        <span>Explore Book Preview</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"></path>
+          <path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </a>
+
+      <a href="/discord" class="cta-button discord">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 127.14 96.36" fill="currentColor">
+          <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"></path>
+        </svg>
+        <span>Join the Discord</span>
+      </a>
+    </div> -->
   </div>
 </div>
 
 <style>
+  /* Main container */
+  .future-predictions-wrapper {
+    margin: 1rem 0 1rem;
+    overflow-x: hidden; /* Prevent horizontal overflow on small screens */
+  }
+
   .future-predictions {
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
+    background-color: #0c1424;
+    padding: 2.5rem 2rem 2rem;
+    color: #f1f5f9;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   }
 
-  :global(.dark) .future-predictions {
-    background-image: linear-gradient(to bottom, rgba(31,41,55,0.8), rgba(31,41,55,1));
+  /* Header section */
+  .future-header {
+    margin-bottom: 3rem;
+    text-align: center;
   }
 
-  .future-header h2 {
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-
-  .predictions-container {
-    position: relative;
-  }
-
-  /* Add subtle glow effect to timeline dots */
-  .predictions-container li div {
-    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
-  }
-
-  /* Discord button styling */
-  .discord-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5865F2;
+  .future-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
     color: white;
-    font-weight: bold;
-    padding: 0.75rem 2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.2s ease;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     position: relative;
-    box-shadow: 0 4px 12px rgba(88, 101, 242, 0.3);
-    overflow: visible;
+    display: inline-block;
+    padding: 0 0.5rem 0.5rem;
   }
 
-  .discord-button:hover {
-    background-color: #4752c4;
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 6px 16px rgba(88, 101, 242, 0.4);
+  .title-highlight {
+    background: linear-gradient(270deg, #3b82f6, #8b5cf6, #ec4899, #8b5cf6, #3b82f6);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    animation: gradientAnimation 8s ease infinite;
   }
 
-  .discord-icon-wrapper {
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+
+  .title-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #3b82f6, #8b5cf6, #ec4899, transparent);
+    border-radius: 3px;
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+    50% { box-shadow: 0 0 15px rgba(236, 72, 153, 0.7); }
+    100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Timeline items */
+  .timeline-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 12px;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
   }
 
-  .discord-icon {
+  .timeline-item {
+    display: flex;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+
+  .timeline-connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1.5rem;
+    flex-shrink: 0;
+    width: 40px;
+  }
+
+  .timeline-line {
+    width: 2px;
+    height: 100%;
+    margin-bottom: -10px;
+    opacity: 0.4;
+  }
+
+  .timeline-dot {
     width: 24px;
     height: 24px;
-  }
-
-  .first-100-badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #FF1F8E;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 12px;
-    transform: rotate(5deg);
-    box-shadow: 0 2px 6px rgba(255, 31, 142, 0.5);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #0f172a;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    position: relative;
     z-index: 2;
   }
 
-  /* Mobile optimization */
+  .timeline-content {
+    flex: 1;
+    background-color: #1a2234;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  .timeline-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .timeline-item.expanded .timeline-content {
+    background-color: #1a2336;
+  }
+
+  .year-badge {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.01em;
+  }
+
+  .prediction-title {
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .prediction-desc {
+    color: #cbd5e1;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
+  /* Confidence and impact */
+  .prediction-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.25rem;
+    background-color: rgba(15, 23, 42, 0.4);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .meta-label {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+
+  .confidence-value,
+  .impact-value {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  /* Learn more button */
+  .learn-more {
+    display: inline-flex;
+    background: none;
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.01em;
+  }
+
+  .learn-more:hover {
+    transform: translateX(3px);
+  }
+
+  /* Expanded content */
+  .expanded-content {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #334155;
+  }
+
+  .implications h4 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .implications ul {
+    color: #cbd5e1;
+    padding-left: 1.75rem;
+    list-style-type: disc;
+  }
+
+  .implications li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  /* Footer */
+  .future-footer {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.01em;
+  }
+
+  .cta-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .cta-button.discord {
+    background-color: #5865F2;
+  }
+
+  .cta-button.discord:hover {
+    background-color: #4752c4;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .future-predictions {
+      padding: 2rem 1.5rem;
+    }
+
+    .future-title {
+      font-size: 2rem;
+    }
+
+    .prediction-meta {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.75rem;
+    }
+
+    .timeline-content {
+      padding: 1.25rem;
+    }
+
+    .prediction-title {
+      font-size: 1.25rem;
+    }
+  }
+
   @media (max-width: 640px) {
     .future-predictions {
-      padding: 1rem;
+      padding: 1.5rem 1rem;
+    }
+
+    .future-title {
+      font-size: 1.75rem;
+    }
+
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+    }
+
+    .timeline-connector {
+      padding-right: 1rem;
+      width: 30px;
     }
 
     .future-footer {
-      padding: 1rem;
+      flex-direction: column;
+      align-items: stretch;
     }
 
-    .future-footer .flex {
-      flex-direction: column;
-      gap: 1rem;
+    .cta-button {
+      width: 100%;
+      justify-content: center;
     }
   }
 </style>

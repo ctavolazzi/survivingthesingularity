@@ -79,13 +79,35 @@
 	onMount(async () => {
 		posts = await loadBlogPosts();
 
-		// Format blog posts for the news ticker
-		newsTickerItems = posts.map(post => ({
-			date: new Date(post.date).toISOString().split('T')[0],
-			text: post.title,
-			tag: post.category || 'Blog',
-			link: `/blog/${post.slug}`
-		})).slice(0, 7);
+		// Format blog posts for the news ticker with varied, appropriate tags
+		newsTickerItems = posts.map(post => {
+			// Define tag based on post slug or title to create variety
+			let tag = 'Blog';
+
+			// Assign specific tags based on content type
+			if (post.slug === 'singularity-express') {
+				tag = 'Opinion';
+			} else if (post.slug === 'farm-bot-deep-dive') {
+				tag = 'Tech';
+			} else if (post.slug === 'darpa-biomechanical-space-structures') {
+				tag = 'News';
+			} else if (post.slug === 'claude-projects-weekend-project') {
+				tag = 'AI Update';
+			} else if (post.slug === 'robot-farm-bot') {
+				tag = 'Review';
+			} else if (post.title.toLowerCase().includes('regulatory')) {
+				tag = 'Policy';
+			} else if (post.title.toLowerCase().includes('breakthrough')) {
+				tag = 'Breaking';
+			}
+
+			return {
+				date: new Date(post.date).toISOString().split('T')[0],
+				text: post.title,
+				tag: tag,
+				link: `/blog/${post.slug}`
+			};
+		}).slice(0, 7);
 
 		console.log("Formatted blog posts for news ticker:", newsTickerItems);
 	});
@@ -105,7 +127,7 @@
 	<div class="news-ticker-container">
 		<NewsTicker
 			title="Breaking News & Updates 🚨"
-			scrollSpeed={3500}
+			scrollSpeed={2500}
 			items={newsTickerItems}
 			backgroundColor="rgba(15, 23, 42, 0.7)"
 			textColor="white"
@@ -121,7 +143,8 @@
 	<div class="book-callout-wrapper">
 		<BookCallout
 			title="Navigate the Path to Singularity"
-			description="Get the insights and strategies you need to prepare for the technological changes that will reshape our world."
+			subtitle="Want to know more?"
+			description="Read the book to learn how to survive and thrive in the AI future. Get the insights and strategies you need to prepare for the technological changes that will reshape our world."
 			buttonText="Explore the Book"
 			buttonLink="/sample"
 		/>
@@ -144,11 +167,14 @@
 
 	<div class="newsletter-container">
 		<NewsletterSignup />
-		<DiscordButton />
 	</div>
 
 	<div class="recent-posts">
 		<LatestNews />
+	</div>
+
+	<div class="discord-button-container">
+		<DiscordButton />
 	</div>
 
 	<!-- Replace Treasure Tavern Promo with enhanced component -->
@@ -201,8 +227,19 @@
 		margin: -0.25rem auto 0;
 	}
 
+	.discord-button-container {
+		width: 100%;
+		max-width: 800px;
+		margin: 0.5rem auto 0.5rem;
+		display: flex;
+		justify-content: center;
+	}
+
 	h2 {
 		color: #e2e8f0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	/* Responsive styles */
@@ -350,7 +387,7 @@
 	}
 
 	.recent-posts {
-		margin-top: -1.5rem;
+		margin-top: 2rem;
 	}
 
 	@media (max-width: 768px) {
@@ -435,6 +472,28 @@
 
 	:global(.featured-header) {
 		margin-bottom: 1rem !important;
+	}
+
+	/* Add responsive heading styles */
+	:global(.main-section-title) {
+		font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	:global(.main-subtitle) {
+		font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+	}
+
+	@media (max-width: 350px) {
+		:global(.main-section-title) {
+			font-size: clamp(1.5rem, 3vw, 1.75rem);
+		}
+
+		:global(.main-subtitle) {
+			font-size: clamp(1rem, 2vw, 1.1rem);
+		}
 	}
 </style>
 

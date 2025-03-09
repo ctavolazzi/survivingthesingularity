@@ -1,0 +1,381 @@
+{
+  "static/images/default-avatar.jpg": {
+    "original": {
+      "width": 400,
+      "height": 400,
+      "path": "static/images/default-avatar.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/default_avatar_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/default_avatar_400.jpg",
+        "webp": "static/images/optimized/default_avatar_400.webp"
+      }
+    }
+  },
+  "static/images/blog/singularity-express.jpg": {
+    "original": {
+      "path": "static/images/blog/singularity-express.jpg"
+    },
+    "skipped": true
+  },
+  "static/images/blog/robot-farm-bot.jpg": {
+    "original": {
+      "path": "static/images/blog/robot-farm-bot.jpg"
+    },
+    "skipped": true
+  },
+  "static/images/blog/farm-bot-deep-dive.jpg": {
+    "original": {
+      "path": "static/images/blog/farm-bot-deep-dive.jpg"
+    },
+    "skipped": true
+  },
+  "static/images/blog/darpa-biomechanical-space-structures.jpg": {
+    "original": {
+      "path": "static/images/blog/darpa-biomechanical-space-structures.jpg"
+    },
+    "skipped": true
+  },
+  "static/images/blog/claude-projects-weekend-project.jpg": {
+    "original": {
+      "path": "static/images/blog/claude-projects-weekend-project.jpg"
+    },
+    "skipped": true
+  },
+  "static/sts-welcome.png": {
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "path": "static/sts-welcome.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_welcome_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/sts_welcome_400.png",
+        "webp": "static/images/optimized/sts_welcome_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/sts_welcome_800.png",
+        "webp": "static/images/optimized/sts_welcome_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/sts_welcome_1200.png",
+        "webp": "static/images/optimized/sts_welcome_1200.webp"
+      }
+    }
+  },
+  "static/sts-header_1000.png": {
+    "original": {
+      "width": 1000,
+      "height": 220,
+      "path": "static/sts-header_1000.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_header_1000_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/sts_header_1000_400.png",
+        "webp": "static/images/optimized/sts_header_1000_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/sts_header_1000_800.png",
+        "webp": "static/images/optimized/sts_header_1000_800.webp"
+      }
+    }
+  },
+  "static/img-missing.png": {
+    "original": {
+      "width": 1024,
+      "height": 1024,
+      "path": "static/img-missing.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/img_missing_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/img_missing_400.png",
+        "webp": "static/images/optimized/img_missing_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/img_missing_800.png",
+        "webp": "static/images/optimized/img_missing_800.webp"
+      }
+    }
+  },
+  "static/favicon.png": {
+    "original": {
+      "width": 100,
+      "height": 100,
+      "path": "static/favicon.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/favicon_original.webp"
+    },
+    "variants": {}
+  },
+  "static/favicon-32x32.png": {
+    "original": {
+      "width": 32,
+      "height": 32,
+      "path": "static/favicon-32x32.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/favicon_32x32_original.webp"
+    },
+    "variants": {}
+  },
+  "static/favicon-16x16.png": {
+    "original": {
+      "width": 16,
+      "height": 16,
+      "path": "static/favicon-16x16.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/favicon_16x16_original.webp"
+    },
+    "variants": {}
+  },
+  "static/android-chrome-192x192.png": {
+    "original": {
+      "width": 192,
+      "height": 192,
+      "path": "static/android-chrome-192x192.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/android_chrome_192x192_original.webp"
+    },
+    "variants": {}
+  },
+  "static/images/treasure-tavern-square.png": {
+    "original": {
+      "width": 600,
+      "height": 621,
+      "path": "static/images/treasure-tavern-square.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/treasure_tavern_square_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/treasure_tavern_square_400.png",
+        "webp": "static/images/optimized/treasure_tavern_square_400.webp"
+      }
+    }
+  },
+  "static/images/treasure-tavern-logo-transparent.png": {
+    "original": {
+      "width": 500,
+      "height": 500,
+      "path": "static/images/treasure-tavern-logo-transparent.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/treasure_tavern_logo_transparent_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/treasure_tavern_logo_transparent_400.png",
+        "webp": "static/images/optimized/treasure_tavern_logo_transparent_400.webp"
+      }
+    }
+  },
+  "static/images/treasure-tavern-banner-600x800.png": {
+    "original": {
+      "width": 800,
+      "height": 600,
+      "path": "static/images/treasure-tavern-banner-600x800.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/treasure_tavern_banner_600x800_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/treasure_tavern_banner_600x800_400.png",
+        "webp": "static/images/optimized/treasure_tavern_banner_600x800_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/treasure_tavern_banner_600x800_800.png",
+        "webp": "static/images/optimized/treasure_tavern_banner_600x800_800.webp"
+      }
+    }
+  },
+  "static/future-projections/future-of-jobs.png": {
+    "original": {
+      "path": "static/future-projections/future-of-jobs.png"
+    },
+    "skipped": true
+  },
+  "src/lib/images/sts-chess.jpg": {
+    "original": {
+      "width": 1279,
+      "height": 854,
+      "path": "src/lib/images/sts-chess.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_chess_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/sts_chess_400.jpg",
+        "webp": "static/images/optimized/sts_chess_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/sts_chess_800.jpg",
+        "webp": "static/images/optimized/sts_chess_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/sts_chess_1200.jpg",
+        "webp": "static/images/optimized/sts_chess_1200.webp"
+      }
+    }
+  },
+  "src/lib/images/skool-class.jpg": {
+    "original": {
+      "width": 640,
+      "height": 427,
+      "path": "src/lib/images/skool-class.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/skool_class_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/skool_class_400.jpg",
+        "webp": "static/images/optimized/skool_class_400.webp"
+      }
+    }
+  },
+  "src/lib/images/svelte-welcome.png": {
+    "original": {
+      "width": 2048,
+      "height": 495,
+      "path": "src/lib/images/svelte-welcome.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/svelte_welcome_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/svelte_welcome_400.png",
+        "webp": "static/images/optimized/svelte_welcome_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/svelte_welcome_800.png",
+        "webp": "static/images/optimized/svelte_welcome_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/svelte_welcome_1200.png",
+        "webp": "static/images/optimized/svelte_welcome_1200.webp"
+      }
+    }
+  },
+  "src/lib/images/sts-welcome.png": {
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "path": "src/lib/images/sts-welcome.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/sts_welcome_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/sts_welcome_400.png",
+        "webp": "static/images/optimized/sts_welcome_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/sts_welcome_800.png",
+        "webp": "static/images/optimized/sts_welcome_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/sts_welcome_1200.png",
+        "webp": "static/images/optimized/sts_welcome_1200.webp"
+      }
+    }
+  },
+  "src/lib/images/default-blog-image.png": {
+    "original": {
+      "width": 348,
+      "height": 232,
+      "path": "src/lib/images/default-blog-image.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/default_blog_image_original.webp"
+    },
+    "variants": {}
+  },
+  "src/lib/images/ct_hero_image.png": {
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "path": "src/lib/images/ct_hero_image.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ct_hero_image_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ct_hero_image_400.png",
+        "webp": "static/images/optimized/ct_hero_image_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ct_hero_image_800.png",
+        "webp": "static/images/optimized/ct_hero_image_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ct_hero_image_1200.png",
+        "webp": "static/images/optimized/ct_hero_image_1200.webp"
+      }
+    }
+  },
+  "src/lib/images/Surviving-the-Singularity-Cover.png": {
+    "original": {
+      "width": 1410,
+      "height": 2250,
+      "path": "src/lib/images/Surviving-the-Singularity-Cover.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_400.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_800.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
+      }
+    }
+  },
+  "src/lib/images/StSFreeGuide.png": {
+    "original": {
+      "width": 1080,
+      "height": 1080,
+      "path": "src/lib/images/StSFreeGuide.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/stsfreeguide_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/stsfreeguide_400.png",
+        "webp": "static/images/optimized/stsfreeguide_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/stsfreeguide_800.png",
+        "webp": "static/images/optimized/stsfreeguide_800.webp"
+      }
+    }
+  }
+}

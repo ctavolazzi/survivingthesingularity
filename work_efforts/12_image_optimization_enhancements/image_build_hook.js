@@ -30,6 +30,13 @@ const IMAGE_DIRS = [
   path.join(rootDir, 'src/lib/images')
 ];
 
+// Directories to exclude
+const EXCLUDE_DIRS = [
+  path.join(rootDir, 'static/images/optimized'),
+  path.join(rootDir, 'node_modules'),
+  path.join(rootDir, '.svelte-kit')
+];
+
 // Output directory for optimized images
 const OUTPUT_DIR = path.join(rootDir, 'static/images/optimized');
 
@@ -38,6 +45,27 @@ const SIZES = [400, 800, 1200];
 
 // Image types to process
 const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png'];
+
+// Check if a path should be excluded
+function shouldExclude(filePath) {
+  // Exclude files in the optimization output directory and other special directories
+  for (const excludeDir of EXCLUDE_DIRS) {
+    if (filePath.startsWith(excludeDir)) {
+      return true;
+    }
+  }
+
+  // Exclude files that are already optimized
+  const filename = path.basename(filePath);
+  if (filename.includes('_original') ||
+      filename.includes('_400') ||
+      filename.includes('_800') ||
+      filename.includes('_1200')) {
+    return true;
+  }
+
+  return false;
+}
 
 // Initialize the process
 async function main() {
@@ -53,7 +81,10 @@ async function main() {
       for (const ext of IMAGE_EXTENSIONS) {
         try {
           const matches = await glob(`${dir}/**/*${ext}`);
-          imagePaths.push(...matches);
+
+          // Filter out optimized images and excluded directories
+          const filteredMatches = matches.filter(filePath => !shouldExclude(filePath));
+          imagePaths.push(...filteredMatches);
         } catch (error) {
           console.error(`Error finding images with extension ${ext} in ${dir}: ${error.message}`);
         }

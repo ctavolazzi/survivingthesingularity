@@ -1,12 +1,14 @@
 <script>
   import { marked } from 'marked';
   import { onMount } from 'svelte';
-  import { goto } from '$app/navigation';
+  import { safeGoto } from '$lib/utils/navigation';
   import { bookPage } from '$lib/stores/bookPage';
   import Pagination from '$lib/components/Pagination.svelte';
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import FloatingQuotePopup from '$lib/components/FloatingQuotePopup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
+  import Markdown from '$lib/components/Markdown.svelte';
+  import TableOfContents from '$lib/components/TableOfContents.svelte';
   export let data;
 
   let currentSection = 1;
@@ -33,7 +35,7 @@
     if (newIndex >= 0 && newIndex < totalSections) {
       const newSection = data.book.sections[newIndex];
       if (newSection) {
-        goto(`/book/${newSection.id}`);
+        safeGoto(`/book/${newSection.id}`);
       }
     }
   }
@@ -79,7 +81,7 @@
     </a>
   </div>
 
-  <Pagination 
+  <Pagination
     {currentSection}
     {totalSections}
     on:navigate={handleNavigation}

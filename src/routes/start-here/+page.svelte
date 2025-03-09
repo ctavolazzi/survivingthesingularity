@@ -1191,13 +1191,20 @@
   .resource-showcase-section {
     background: linear-gradient(135deg, #0c0e17 0%, #1a1d33 100%);
     position: relative;
-    padding: 250px 0 0 0;
-    padding-top: 250px;
+    padding: 220px 0 4rem 0; /* Added bottom padding instead of negative margin */
     overflow: hidden;
-    margin: 0;
-    margin-top: 0;
-    margin-bottom: -6rem; /* Dramatically increased negative margin */
+    margin: 0; /* Removed negative margin */
     perspective: 1000px;
+    z-index: 2;
+  }
+
+  /* Resource Showcase Section */
+  .resource-showcase-section .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 2rem 1.25rem; /* Added more bottom padding */
+    position: relative;
     z-index: 2;
   }
 
@@ -1209,13 +1216,13 @@
     text-align: center;
     position: relative;
     z-index: 10;
-    margin-bottom: 4rem;
-    margin-top: -50px; /* Pull the text up to reduce spacing */
+    margin-bottom: 2rem;
+    margin-top: 0; /* Changed from -50px to ensure title is not cut off */
+    padding-top: 2rem; /* Added padding to ensure consistent spacing */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 0;
   }
 
   .section-title {
@@ -1225,11 +1232,14 @@
     background-clip: text;
     color: transparent;
     margin-bottom: 0.5rem;
+    margin-top: 0; /* Ensure consistent top spacing */
     letter-spacing: 2px;
     position: relative;
     text-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
     text-transform: none;
     animation: title-glow 3s infinite alternate;
+    width: 100%; /* Ensure the title takes full width */
+    overflow-wrap: break-word; /* Ensure text wraps properly */
   }
 
   @keyframes title-glow {
@@ -1336,7 +1346,7 @@
   .resource-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 1.5rem; /* Further reduced from 2rem to 1.5rem */
     position: relative;
     z-index: 5;
   }
@@ -1439,9 +1449,8 @@
   }
 
   .book-card .card-overlay {
-    background:
-      linear-gradient(to bottom, rgba(20, 24, 42, 0) 0%, rgba(20, 24, 42, 0.7) 50%, rgba(20, 24, 42, 0.95) 100%),
-      linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(79, 70, 229, 0.1) 100%);
+    background: rgb(13, 17, 31); /* Solid background */
+    opacity: 1;
   }
 
   .resource-card:hover .card-overlay {
@@ -1451,40 +1460,142 @@
 
   .card-badge {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    background: linear-gradient(135deg, #4f46e5, #7c3aed);
-    padding: 0.5rem 1.25rem;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: white;
+    top: 0.7rem; /* Slightly lower position to give more breathing room */
+    left: 0;
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.18), rgba(124, 58, 237, 0.05));
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-right: none;
+    padding: 0.2rem 0.6rem 0.2rem 0.8rem;
+    border-radius: 0 18px 18px 0;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #a78bfa;
     z-index: 2;
-    box-shadow:
-      0 4px 6px -1px rgba(0, 0, 0, 0.3),
-      0 0 10px rgba(124, 58, 237, 0.5);
-    transform: translateY(0);
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Add a subtle decorative element before the text */
+  .card-badge::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 0.35rem; /* Smaller spacing */
+    font-size: 1.1em; /* Slightly smaller */
+    color: #7c3aed;
   }
 
   .resource-card:hover .card-badge {
-    transform: translateY(-5px);
-    box-shadow:
-      0 6px 10px -1px rgba(0, 0, 0, 0.4),
-      0 0 15px rgba(124, 58, 237, 0.6);
+    transform: none;
+    box-shadow: 3px 1px 5px rgba(124, 58, 237, 0.15); /* Subtle directional shadow on hover */
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.22), rgba(124, 58, 237, 0.08)); /* Slightly stronger gradient on hover */
   }
 
   .card-content {
     position: relative;
     z-index: 1;
-    padding: 2.5rem;
-    min-height: 350px;
+    padding: 1.5rem 1.75rem 1.75rem 1.75rem; /* Reduced padding, especially at top */
+    min-height: 300px; /* Further reduced from 330px */
+  }
+
+  /* Blog and newsletter cards need top padding adjustment to account for badge */
+  .blog-card .card-content, .newsletter-card .card-content {
+    padding-top: 2.25rem; /* Added a bit more space (from 2rem) */
+  }
+
+  /* Book card has different content layout */
+  .book-card .card-content {
+    position: relative;
+    padding: 1.5rem 1.75rem 1.75rem 1.75rem;
+    min-height: 300px;
+    background: rgba(13, 17, 31, 1); /* Fully opaque background */
+    z-index: 5; /* Ensure content is above other elements */
+    border-radius: 16px; /* Match the card border radius */
+    width: 100%; /* Ensure content takes full width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+
+  .book-cover-preview {
+    position: absolute;
+    top: 1rem; /* Position at top right */
+    right: -60px; /* Position it outside the content area */
+    width: 100px;
+    height: 130px;
+    z-index: 2; /* Lower z-index so it appears behind content */
+    transform: rotate(8deg);
+    transition: all 0.5s ease;
+    box-shadow:
+      0 15px 25px rgba(0, 0, 0, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .book-card .card-inner {
+    position: relative;
+    overflow: visible; /* Allow book cover to extend outside */
+  }
+
+  .book-card .card-overlay {
+    background: rgb(13, 17, 31); /* Solid background */
+    opacity: 1;
+  }
+
+  .card-quote {
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #e0d4ff; /* Bright color for better contrast */
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.25rem;
+    border-left: 3px solid #6366f1;
+    position: relative;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    background: rgba(20, 24, 42, 1); /* Fully opaque background */
+    border-radius: 0.25rem;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    z-index: 10; /* Ensure quote is above everything */
+  }
+
+  .book-card h3 {
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 10; /* Ensure title is above everything */
+  }
+
+  .book-card .card-excerpt {
+    color: #f0f4fa;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+    z-index: 10; /* Ensure excerpt is above everything */
+  }
+
+  .book-card .resource-button {
+    position: relative;
+    z-index: 10; /* Ensure button is above everything */
+  }
+
+  .book-card:hover .book-cover-preview {
+    transform: rotate(0deg) translateX(-20px);
+    box-shadow:
+      0 20px 30px rgba(0, 0, 0, 0.6),
+      0 10px 15px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(167, 139, 250, 0.3);
   }
 
   .resource-card h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1.25rem;
-    line-height: 1.3;
+    font-size: 1.65rem; /* Slightly smaller */
+    margin-top: 0.25rem; /* Add small top margin to separate from badge */
+    margin-bottom: 0.75rem; /* Reduced from 1rem */
+    line-height: 1.25; /* Tighter line height */
     color: white;
     white-space: normal;
     transition: all 0.3s ease;
@@ -1497,18 +1608,18 @@
   }
 
   .card-excerpt {
-    font-size: 1.05rem;
-    line-height: 1.6;
+    font-size: 1rem; /* Slightly smaller */
+    line-height: 1.4; /* Tighter line height */
     color: #d1d5db;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Reduced from 1.25rem */
   }
 
   .card-meta {
     display: flex;
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Smaller */
     color: #9ca3af;
-    margin-bottom: 1.5rem;
-    gap: 1.25rem;
+    margin-bottom: 1.25rem; /* Reduced from 1.5rem */
+    gap: 1rem; /* Reduced from 1.25rem */
   }
 
   .card-date::before {
@@ -1521,23 +1632,12 @@
     margin-right: 0.5rem;
   }
 
-  .card-quote {
-    font-style: italic;
-    font-size: 1.15rem;
-    line-height: 1.6;
-    color: #a78bfa;
-    margin-bottom: 1.25rem;
-    padding-left: 1.25rem;
-    border-left: 3px solid #6366f1;
-    position: relative;
-  }
-
   .card-quote::before, .card-quote::after {
     font-family: 'Georgia', serif;
     position: absolute;
     font-size: 1.75rem;
     line-height: 1;
-    color: rgba(167, 139, 250, 0.4);
+    color: rgba(212, 198, 255, 0.6); /* Match the new quote color */
   }
 
   .card-quote::before {
@@ -1633,11 +1733,11 @@
 
   .book-cover-preview {
     position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
     width: 100px;
     height: 130px;
-    z-index: 2;
+    z-index: 10; /* Ensure it's above all other elements */
     transform: rotate(8deg);
     transition: all 0.5s ease;
     box-shadow:
@@ -1649,55 +1749,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 4px;
-  }
-
-  .book-card:hover .book-cover-preview {
-    transform: rotate(0deg) scale(1.15) translateY(-5px);
-    box-shadow:
-      0 20px 30px rgba(0, 0, 0, 0.6),
-      0 10px 15px rgba(0, 0, 0, 0.4),
-      0 0 20px rgba(167, 139, 250, 0.3);
-  }
-
-  /* Floating elements for main resource section */
-  .floating-shape {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, rgba(167, 139, 250, 0.3) 0%, transparent 70%);
-    filter: blur(20px);
-  }
-
-  .shape-1 {
-    width: 300px;
-    height: 300px;
-    top: -100px;
-    left: 10%;
-    animation: float-shape 15s ease-in-out infinite;
-  }
-
-  .shape-2 {
-    width: 200px;
-    height: 200px;
-    bottom: 10%;
-    right: 15%;
-    animation: float-shape 12s ease-in-out infinite reverse;
-  }
-
-  .shape-3 {
-    width: 150px;
-    height: 150px;
-    top: 30%;
-    left: 5%;
-    animation: float-shape 10s ease-in-out infinite 2s;
-  }
-
-  .floating-lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image:
       linear-gradient(90deg, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
       linear-gradient(rgba(99, 102, 241, 0.05) 1px, transparent 1px);
@@ -1979,14 +2030,36 @@
       font-size: 2.2rem;
     }
 
+    .section-header {
+      padding-top: 1.5rem; /* Less padding on mobile */
+      margin-bottom: 1.5rem; /* Less bottom margin on mobile */
+    }
+
     .card-content {
-      padding: 2rem;
-      padding-top: 8rem;
-      min-height: 300px;
+      padding: 1.25rem;
+      padding-top: 2.75rem; /* Added a bit more space (from 2.5rem) */
+      min-height: 260px;
     }
 
     .resource-card h3 {
       font-size: 1.5rem;
+    }
+
+    .blog-card .card-content, .newsletter-card .card-content {
+        padding-top: 2rem; /* Added a bit more space (from 1.75rem) */
+    }
+  }
+
+  /* Adjustments for really small screens */
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.8rem; /* Even smaller on very small screens */
+      letter-spacing: 1px; /* Reduced letter spacing */
+    }
+
+    .section-header {
+      padding-top: 1.25rem;
+      margin-bottom: 1.25rem;
     }
   }
 
@@ -2125,12 +2198,12 @@
   /* Treasure Tavern Ad Section */
   .treasure-tavern-section {
     background: linear-gradient(180deg, #1a1d33 0%, #0c0e17 100%);
-    padding: 0 0 4rem 0;
+    padding: 4rem 0; /* Equal padding top and bottom */
     position: relative;
     overflow: hidden;
     border-top: 1px solid rgba(167, 139, 250, 0.2);
     border-bottom: 1px solid rgba(167, 139, 250, 0.2);
-    margin-top: -7rem; /* Dramatically increased negative margin */
+    margin-top: 0; /* Removed negative margin */
   }
 
   /* Remove any padding from Treasure Tavern container */

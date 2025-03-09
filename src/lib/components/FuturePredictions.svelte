@@ -185,6 +185,48 @@
     position: relative;
     display: inline-block;
     padding: 0 0.5rem 0.5rem;
+    z-index: 1; /* Ensure text is above the backlight */
+  }
+
+  .future-title::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: -20%;
+    width: 140%;
+    height: 150%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(59, 130, 246, 0.45) 0%,
+      rgba(139, 92, 246, 0.4) 40%,
+      rgba(236, 72, 153, 0.35) 70%,
+      rgba(15, 23, 42, 0) 100%
+    );
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(12px);
+    opacity: 0.9;
+    animation: backlight-pulse 5s ease-in-out infinite alternate;
+    pointer-events: none;
+    box-shadow:
+      0 0 20px rgba(59, 130, 246, 0.4),
+      0 0 40px rgba(139, 92, 246, 0.3),
+      0 0 60px rgba(236, 72, 153, 0.2);
+  }
+
+  @keyframes backlight-pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
   }
 
   .title-highlight {
@@ -441,6 +483,18 @@
       font-size: 2rem;
     }
 
+    .future-title::before {
+      top: -15%;
+      left: -10%;
+      width: 120%;
+      height: 130%;
+      filter: blur(10px);
+      box-shadow:
+        0 0 15px rgba(59, 130, 246, 0.4),
+        0 0 30px rgba(139, 92, 246, 0.3),
+        0 0 45px rgba(236, 72, 153, 0.2);
+    }
+
     .prediction-meta {
       flex-direction: column;
       gap: 1rem;
@@ -463,6 +517,18 @@
 
     .future-title {
       font-size: 1.75rem;
+    }
+
+    .future-title::before {
+      top: -10%;
+      left: -5%;
+      width: 110%;
+      height: 120%;
+      filter: blur(8px);
+      box-shadow:
+        0 0 10px rgba(59, 130, 246, 0.4),
+        0 0 20px rgba(139, 92, 246, 0.3),
+        0 0 30px rgba(236, 72, 153, 0.2);
     }
 
     .timeline-dot {

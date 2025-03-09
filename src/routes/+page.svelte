@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { safeGoto } from '$lib/utils/navigation';
 	import Countdown from '$lib/components/Countdown.svelte';
 	// import HeroSection from '$lib/components/HeroSection.svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
@@ -109,6 +110,11 @@
 			};
 		}).slice(0, 7);
 	});
+
+	// Replace the safeNavigate function with our imported one
+	function safeNavigate(path) {
+		safeGoto(path);
+	}
 </script>
 
 <svelte:head>

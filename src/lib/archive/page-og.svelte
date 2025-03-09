@@ -52,7 +52,7 @@
   <div class="blog-post-container">
     <h2 class="blog-post-title">{post.title}</h2>
     <div class="blog-post-image-container">
-      <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
+      <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto"  loading="lazy" \/\>
     </div>
     <p class="blog-post-description">{post.excerpt}</p>
     <button class="big-button" on:click={() => window.location.href = '/blog'}>Read the Blog</button>

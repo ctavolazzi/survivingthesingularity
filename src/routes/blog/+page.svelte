@@ -12,36 +12,77 @@
   // Create news ticker items array
   let newsTickerItems = [];
 
+  // Function to determine category tag based on post content
+  function getCategoryTag(post) {
+    // Define tag based on post slug or title to create variety
+    let tag = 'Blog';
+
+    // Assign specific tags based on content type
+    if (post.route && post.route.includes('singularity-express')) {
+      return 'Opinion';
+    } else if (post.route && post.route.includes('farm-bot-deep-dive')) {
+      return 'Tech';
+    } else if (post.route && post.route.includes('darpa-biomechanical-space-structures')) {
+      return 'News';
+    } else if (post.route && post.route.includes('claude-projects-weekend-project')) {
+      return 'AI Update';
+    } else if (post.route && post.route.includes('robot-farm-bot')) {
+      return 'Review';
+    } else if (post.route && post.route.includes('synthetic-biological-intelligence')) {
+      return 'Science';
+    } else if (post.title && post.title.toLowerCase().includes('regulatory')) {
+      return 'Policy';
+    } else if (post.title && post.title.toLowerCase().includes('breakthrough')) {
+      return 'Breaking';
+    } else if (post.title && post.title.toLowerCase().includes('future')) {
+      return 'Future';
+    } else if (post.title && post.title.toLowerCase().includes('review')) {
+      return 'Review';
+    } else if (post.title && post.title.toLowerCase().includes('guide')) {
+      return 'Guide';
+    }
+
+    return 'AI Insights';
+  }
+
+  // Function to get category color based on tag
+  function getCategoryColor(tag) {
+    switch(tag) {
+      case 'Opinion':
+        return '#FF7043'; // Orange
+      case 'Tech':
+        return '#26A69A'; // Teal
+      case 'News':
+        return '#42A5F5'; // Blue
+      case 'AI Update':
+        return '#7E57C2'; // Purple
+      case 'Review':
+        return '#66BB6A'; // Green
+      case 'Science':
+        return '#EC407A'; // Pink
+      case 'Policy':
+        return '#78909C'; // Blue Grey
+      case 'Breaking':
+        return '#EF5350'; // Red
+      case 'Future':
+        return '#5C6BC0'; // Indigo
+      case 'Guide':
+        return '#FFA726'; // Amber
+      default:
+        return '#3b82f6'; // Default blue (var(--color-primary))
+    }
+  }
+
   // Load blog posts and format for news ticker
   onMount(async () => {
     const blogPosts = await loadBlogPosts();
 
     // Format blog posts for the news ticker with varied, appropriate tags
     newsTickerItems = blogPosts.map(post => {
-      // Define tag based on post slug or title to create variety
-      let tag = 'Blog';
-
-      // Assign specific tags based on content type
-      if (post.slug === 'singularity-express') {
-        tag = 'Opinion';
-      } else if (post.slug === 'farm-bot-deep-dive') {
-        tag = 'Tech';
-      } else if (post.slug === 'darpa-biomechanical-space-structures') {
-        tag = 'News';
-      } else if (post.slug === 'claude-projects-weekend-project') {
-        tag = 'AI Update';
-      } else if (post.slug === 'robot-farm-bot') {
-        tag = 'Review';
-      } else if (post.title.toLowerCase().includes('regulatory')) {
-        tag = 'Policy';
-      } else if (post.title.toLowerCase().includes('breakthrough')) {
-        tag = 'Breaking';
-      }
-
       return {
         date: new Date(post.date).toISOString().split('T')[0],
         text: post.title,
-        tag: tag,
+        tag: getCategoryTag(post),
         link: `/blog/${post.slug}`
       };
     });
@@ -99,11 +140,13 @@
 
     <div class="post-grid">
       {#each posts as post}
+      {@const categoryTag = getCategoryTag(post)}
+      {@const categoryColor = getCategoryColor(categoryTag)}
       <a href={post.route} class="post-card-link">
         <article class="post-card">
           <div class="post-image-container">
             <img src={post.image} alt={post.title} class="post-image" loading="lazy" />
-            <div class="post-category">AI Insights</div>
+            <div class="post-category" style="background-color: {categoryColor};">{categoryTag}</div>
           </div>
           <div class="post-content">
             <div class="post-meta">
@@ -399,13 +442,23 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    padding: 0.35rem 0.75rem;
+    padding: 0.45rem 0.9rem;
     background-color: var(--color-primary);
     color: white;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 700;
     border-radius: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .post-card:hover .post-category {
+    transform: translateY(-3px);
   }
 
   .post-content {

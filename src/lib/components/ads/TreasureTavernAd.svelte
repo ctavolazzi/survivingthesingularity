@@ -25,7 +25,7 @@
   <div class="treasure-shimmer"></div>
   <div class="ad-content">
     <div class="ad-image-container">
-      <img src={imagePath} alt="Treasure Tavern Store" class="ad-image" />
+      <img src={imagePath} alt="Treasure Tavern Store" class="ad-image" loading="lazy" />
       {#if showBadge}
         <div class="treasure-badge">{badgeText}</div>
       {/if}
@@ -51,7 +51,7 @@
       {#if canShowFeaturedProduct}
         <div class="featured-product">
           <div class="product-image-container">
-            <img src={featuredProduct.image} alt={featuredProduct.title} class="product-image" />
+            <img src={featuredProduct.image} alt={featuredProduct.title} class="product-image"  loading="lazy" />
             <div class="product-price">${featuredProduct.price}</div>
           </div>
           <div class="product-details">

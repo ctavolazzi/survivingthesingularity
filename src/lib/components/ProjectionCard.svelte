@@ -17,7 +17,7 @@
             const domain = new URL(url).hostname;
             return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
         } catch {
-            return '/img-missing.png';
+            return '/img-missing.webp';
         }
     }
 
@@ -31,9 +31,9 @@
                 {#if customIcon}
                     <span class="text-2xl">{customIcon}</span>
                 {:else if imageUrl}
-                    <img src={imageUrl} alt={title} class="w-full h-full object-cover" />
+                    <img src={imageUrl} alt={title} class="w-full h-full object-cover"  loading="lazy" \/\>
                 {:else}
-                    <img src={faviconUrl} alt={organization} class="w-8 h-8" />
+                    <img src={faviconUrl} alt={organization} class="w-8 h-8"  loading="lazy" \/\>
                 {/if}
             </div>
             <div>

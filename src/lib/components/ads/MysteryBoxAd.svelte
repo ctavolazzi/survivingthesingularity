@@ -18,7 +18,7 @@
     <div class="ad-content">
       <div class="ad-left">
         <div class="mystery-image-container">
-          <img src={imagePath} alt="Mood Booster Mystery Box" class="mystery-image" />
+          <img src={imagePath} alt="Mood Booster Mystery Box" class="mystery-image"  loading="lazy" \/\>
           {#if showBadge}
             <div class="mystery-badge">{badgeText}</div>
           {/if}

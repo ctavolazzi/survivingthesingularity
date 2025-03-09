@@ -32,7 +32,7 @@
     <div class="card bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8">
       <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Download Singularity Checklist</h1>
       <p class="intro text-xl text-gray-700 dark:text-gray-300 mb-6">Prepare for the future with our comprehensive guide.</p>
-      <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" class="w-full mb-4 rounded-lg shadow-md">
+      <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" class="w-full mb-4 rounded-lg shadow-md" loading="lazy" \>
       <button on:click={downloadSamplePDF} 
         class="big-button bg-blue-500 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800 text-white w-full" 
         class:downloading={isDownloading} 

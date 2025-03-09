@@ -19,7 +19,7 @@
         <div class="book-preview">
             <div class="image-container">
                 <button class="book-image-button" on:click={handleReadSample} on:keydown={e => e.key === 'Enter' && handleReadSample()}>
-                    <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" />
+                    <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" loading="lazy" />
                 </button>
             </div>
             <div class="preview-highlights">

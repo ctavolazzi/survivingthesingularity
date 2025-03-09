@@ -33,7 +33,7 @@
     <!-- Example of how to add an image -->
     <!--
     <figure class="image-container">
-      <img src="/path/to/image.jpg" alt="Description of image" />
+      <img src="/path/to/image.jpg" alt="Description of image"  loading="lazy" \/\>
       <figcaption>Image caption goes here</figcaption>
     </figure>
     -->

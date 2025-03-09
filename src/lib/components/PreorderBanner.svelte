@@ -61,7 +61,7 @@
 
 <div class="banner" class:dark={$darkMode} in:fade="{{ duration: 500 }}">
     <div class="banner-content">
-        <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" />
+        <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image"  loading="lazy" \/\>
         <div class="banner-text">
             <h2>Surviving the Singularity: Workbook</h2>
             <p>Empowering you to empower yourself.</p>

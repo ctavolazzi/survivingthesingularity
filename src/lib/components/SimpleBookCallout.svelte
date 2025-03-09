@@ -37,7 +37,7 @@
     <!-- Book cover image -->
     <div class="flex-shrink-0 relative">
       <div class="absolute inset-0 bg-blue-500/30 opacity-30 blur-2xl rounded-full"></div>
-      <img src={imageSrc} alt="Book cover" class="w-40 md:w-48 h-auto rounded-md shadow-lg mx-auto md:mx-0 relative z-10" />
+      <img src={imageSrc} alt="Book cover" class="w-40 md:w-48 h-auto rounded-md shadow-lg mx-auto md:mx-0 relative z-10"  loading="lazy" \/\>
     </div>
 
     <!-- Content -->

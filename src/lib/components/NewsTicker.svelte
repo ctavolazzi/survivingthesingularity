@@ -15,12 +15,16 @@
   export let textColor = "white";
   export let accentColor = "#3b82f6";
   export let items = null; // New prop to accept direct items
-  export let class_ = ''; // Using class_ to avoid conflicts with HTML class attribute
+  export let newsItems = [];
+  export let speed = 30; // Speed in seconds for a complete cycle
+  export let autoplay = true;
+  export let pauseOnHover = true;
+
+  // Handle class properly - In Svelte, we use class directly
+  let cssClass = "";
+  export { cssClass as class };
 
   // State
-  let newsItems = [];
-  let loading = true;
-  let error = null;
   let currentIndex = 0;
   let scrollTimer;
   let refreshTimer;
@@ -28,6 +32,9 @@
   let isHovered = false;
   let tickerWidth;
   let viewportWidth;
+  let tickerContainer;
+  let loading = false;
+  let error = null;
 
   // Keep track of visibility to prevent flash during transition
   let isVisible = true;
@@ -239,7 +246,8 @@
 </script>
 
 <div
-  class="news-ticker {class_}"
+  bind:this={tickerContainer}
+  class="news-ticker {cssClass}"
   style="--ticker-bg: {backgroundColor}; --ticker-text: {textColor}; --ticker-accent: {accentColor};"
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}

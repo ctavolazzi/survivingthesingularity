@@ -59,7 +59,9 @@
   }
 
   function handleExplore(path) {
-    goto(path);
+    // Make sure path is a string before navigating
+    const pathString = typeof path === 'string' ? path : '/';
+    goto(pathString);
   }
 
   // Format the subject line

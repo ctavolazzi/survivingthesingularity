@@ -104,7 +104,7 @@
           </div>
         </div>
         <div class="image-container">
-          <img src={chessImage} alt="Strategic thinking about the singularity" class="section-image" />
+          <img src={chessImage} alt="Strategic thinking about the singularity" class="section-image"  loading="lazy" \/\>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
     <div class="container">
       <div class="book-preview">
         <div class="book-cover">
-          <img src={bookCover} alt="Surviving the Singularity book cover" />
+          <img src={bookCover} alt="Surviving the Singularity book cover"  loading="lazy" \/\>
         </div>
         <div class="book-content">
           <h2>The Definitive Guide</h2>
@@ -334,7 +334,7 @@
           <div class="card-inner">
             <div class="card-overlay"></div>
             <div class="book-cover-preview">
-              <img src={bookCover} alt="Surviving the Singularity book cover" />
+              <img src={bookCover} alt="Surviving the Singularity book cover"  loading="lazy" \/\>
             </div>
             <div class="card-badge">Book Preview</div>
             <div class="card-content">
@@ -2472,5 +2472,22 @@
       align-items: center;
       gap: 1rem;
     }
+  }
+
+  /* WebP versions */
+  .webp .newsletter-card .card-overlay {
+    background:
+      linear-gradient(to bottom, rgba(20, 24, 42, 0) 0%, rgba(20, 24, 42, 0.8) 60%, rgba(20, 24, 42, 0.95) 100%),
+      url('/sts-welcome.webp') no-repeat center;
+    background-size: cover;
+    opacity: 0.6;
+  }
+
+  .webp .blog-card .card-overlay {
+    background:
+      linear-gradient(to bottom, rgba(20, 24, 42, 0) 0%, rgba(20, 24, 42, 0.8) 60%, rgba(20, 24, 42, 0.95) 100%),
+      url('/lib/images/sts-chess.webp') no-repeat center top;
+    background-size: cover;
+    opacity: 0.8;
   }
 </style>

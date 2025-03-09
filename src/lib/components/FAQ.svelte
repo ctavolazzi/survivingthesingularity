@@ -1,11 +1,12 @@
 <script>
   import { Accordion, AccordionItem } from 'flowbite-svelte';
 
-  // Accept class prop
-  export let class_ = ''; // Using class_ to avoid conflicts with HTML class attribute
+  // Handle class properly - In Svelte, we use class directly
+  let cssClass = "";
+  export { cssClass as class };
 </script>
 
-<div class="content-container {class_}">
+<div class="content-container {cssClass}">
     <div class="faq-header">Frequently Asked Questions</div>
     <Accordion class="content-box">
       <AccordionItem>

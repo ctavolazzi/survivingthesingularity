@@ -2,8 +2,9 @@
   import { onMount } from 'svelte';
   import { fade, slide } from 'svelte/transition';
 
-  // Accept class prop
-  export let class_ = ''; // Using class_ to avoid conflicts with HTML class attribute
+  // Handle class properly - In Svelte, we use class directly
+  let cssClass = "";
+  export { cssClass as class };
 
   // Future predictions data with essential fields
   const predictions = [
@@ -64,7 +65,7 @@
   const singularityProgress = calculateProgress();
 </script>
 
-<div class="future-predictions-wrapper {class_}">
+<div class="future-predictions-wrapper {cssClass}">
   <div class="future-predictions rounded-lg max-w-4xl mx-auto">
     <div class="future-header">
       <h2 class="future-title">

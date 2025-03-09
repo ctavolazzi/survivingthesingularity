@@ -1,7 +1,7 @@
 <script>
   import { Navbar, NavBrand, NavUl, NavLi } from 'flowbite-svelte';
   import { darkMode } from '$lib/stores/darkMode';
-  import { goto } from '$app/navigation';
+  import { gotoAndScrollTop } from '$lib/utils/navigation';
   import { page } from '$app/stores';
   import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconData, IconNewsletter } from '$lib/assets/Icons.svelte';
   import { onMount } from 'svelte';
@@ -47,9 +47,7 @@
       if (isMenuOpen) closeMenu();
 
       // Navigate and scroll to top
-      goto(path).then(() => {
-        window.scrollTo(0, 0);
-      });
+      gotoAndScrollTop(path);
     }
 
     return false;
@@ -87,7 +85,7 @@
   class="bg-gray-800 transition-all duration-300 w-full sticky top-0 left-0 right-0 z-50 shadow-lg"
 >
   <NavBrand href="/" on:click={(e) => navigateTo('/', e)}>
-    <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
+    <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" loading="lazy">
     <span class="self-center whitespace-nowrap text-xl font-semibold text-white">
       Surviving the Singularity
     </span>
@@ -167,7 +165,7 @@
     <div class="container mx-auto px-4 py-6">
       <div class="flex justify-between items-center mb-6">
         <a href="/" class="flex items-center" on:click={(e) => navigateTo('/', e)}>
-          <img src="/android-chrome-192x192.png" class="mr-3 h-8" alt="Surviving the Singularity Logo" />
+          <img src="/android-chrome-192x192.png" class="mr-3 h-8" alt="Surviving the Singularity Logo" loading="lazy">
           <span class="self-center text-xl font-semibold text-white">Surviving the Singularity</span>
         </a>
         <button

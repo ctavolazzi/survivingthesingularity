@@ -51,8 +51,12 @@ async function main() {
     const imagePaths = [];
     for (const dir of IMAGE_DIRS) {
       for (const ext of IMAGE_EXTENSIONS) {
-        const matches = await glob(`${dir}/**/*${ext}`);
-        imagePaths.push(...matches);
+        try {
+          const matches = await glob(`${dir}/**/*${ext}`);
+          imagePaths.push(...matches);
+        } catch (error) {
+          console.error(`Error finding images with extension ${ext} in ${dir}: ${error.message}`);
+        }
       }
     }
 
@@ -61,8 +65,13 @@ async function main() {
     // Process each image
     const manifest = {};
     for (const imagePath of imagePaths) {
-      const { relativePath, sizes } = await processImage(imagePath);
-      manifest[relativePath] = sizes;
+      try {
+        const { relativePath, sizes } = await processImage(imagePath);
+        manifest[relativePath] = sizes;
+      } catch (error) {
+        console.error(`Failed to process image ${imagePath}: ${error.message}`);
+        // Continue with next image
+      }
     }
 
     // Write manifest file
@@ -80,57 +89,69 @@ async function main() {
 
 // Process a single image
 async function processImage(imagePath) {
-  const relativePath = path.relative(rootDir, imagePath);
-  console.log(`Processing: ${relativePath}`);
+  try {
+    const relativePath = path.relative(rootDir, imagePath);
+    console.log(`Processing: ${relativePath}`);
 
-  const parsedPath = path.parse(imagePath);
-  const fileName = parsedPath.name;
-  const outputBaseName = fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+    const parsedPath = path.parse(imagePath);
+    const fileName = parsedPath.name;
+    const outputBaseName = fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
 
-  // Load the image with sharp
-  const image = sharp(imagePath);
-  const metadata = await image.metadata();
+    // Load the image with sharp
+    const image = sharp(imagePath);
+    const metadata = await image.metadata();
 
-  // Create size variants in both original format and WebP
-  const sizes = {
-    original: {
-      width: metadata.width,
-      height: metadata.height,
-      path: relativePath
-    },
-    webp: {},
-    variants: {}
-  };
+    // Create size variants in both original format and WebP
+    const sizes = {
+      original: {
+        width: metadata.width,
+        height: metadata.height,
+        path: relativePath
+      },
+      webp: {},
+      variants: {}
+    };
 
-  // Generate WebP version at original size
-  const webpOutputPath = path.join(OUTPUT_DIR, `${outputBaseName}_original.webp`);
-  await image.webp({ quality: 80 }).toFile(webpOutputPath);
-  sizes.webp.original = path.relative(rootDir, webpOutputPath);
+    // Generate WebP version at original size
+    const webpOutputPath = path.join(OUTPUT_DIR, `${outputBaseName}_original.webp`);
+    await image.webp({ quality: 80 }).toFile(webpOutputPath);
+    sizes.webp.original = path.relative(rootDir, webpOutputPath);
 
-  // Generate variants for different sizes
-  for (const width of SIZES) {
-    // Skip if requested width is larger than original
-    if (width > metadata.width) continue;
+    // Generate variants for different sizes
+    for (const width of SIZES) {
+      // Skip if requested width is larger than original
+      if (width > metadata.width) continue;
 
-    const resized = image.resize(width);
+      const resized = image.resize(width);
 
-    // Original format variant
-    const outputPathOriginal = path.join(OUTPUT_DIR, `${outputBaseName}_${width}${parsedPath.ext}`);
-    await resized.toFile(outputPathOriginal);
+      // Original format variant
+      const outputPathOriginal = path.join(OUTPUT_DIR, `${outputBaseName}_${width}${parsedPath.ext}`);
+      await resized.toFile(outputPathOriginal);
 
-    // WebP variant
-    const outputPathWebP = path.join(OUTPUT_DIR, `${outputBaseName}_${width}.webp`);
-    await resized.webp({ quality: 80 }).toFile(outputPathWebP);
+      // WebP variant
+      const outputPathWebP = path.join(OUTPUT_DIR, `${outputBaseName}_${width}.webp`);
+      await resized.webp({ quality: 80 }).toFile(outputPathWebP);
 
-    // Add to manifest
-    if (!sizes.variants[width]) {
-      sizes.variants[width] = {};
+      // Add to manifest
+      if (!sizes.variants[width]) {
+        sizes.variants[width] = {};
+      }
+      sizes.variants[width].original = path.relative(rootDir, outputPathOriginal);
+      sizes.variants[width].webp = path.relative(rootDir, outputPathWebP);
     }
-    sizes.variants[width].original = path.relative(rootDir, outputPathOriginal);
-    sizes.variants[width].webp = path.relative(rootDir, outputPathWebP);
-  }
 
-  return { relativePath, sizes };
+    return { relativePath, sizes };
+  } catch (error) {
+    console.error(`Error processing image ${imagePath}: ${error.message}`);
+    // Return a minimal object that won't break the manifest
+    return {
+      relativePath: path.relative(rootDir, imagePath),
+      sizes: {
+        original: { path: path.relative(rootDir, imagePath) },
+        skipped: true
+      }
+    };
+  }
 }
 
 // Run the main function

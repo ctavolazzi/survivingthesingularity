@@ -42,6 +42,7 @@ The optimizations should yield significant performance improvements:
 - Initial typing issues with the ResponsiveImage component (resolved with proper TypeScript type definitions)
 - Compatibility issues with the latest glob package (resolved by using version 10)
 - Potential duplicate image generation with both manual conversion and automated tools (solution: use a unified approach for new images)
+- Corrupted default-avatar.jpg file causing build failures (resolved by removing the invalid image and adding error handling)
 
 ## ✅ Outcomes & Results
 - Created a reusable ResponsiveImage component to simplify future image optimizations
@@ -49,7 +50,10 @@ The optimizations should yield significant performance improvements:
 - Implemented srcset and sizes attributes for key images like the book cover
 - Setup automated build tools for ongoing image optimization
 - Added a dedicated npm script for image optimization (npm run optimize-images)
+- Enhanced error handling in the image build hook to gracefully skip problematic images instead of failing the entire build
+- Fixed deployment error by removing corrupted default-avatar.jpg file
 
 ## 📅 Timeline & Progress
 - **Started**: 2024-03-09
 - **Completed**: 2024-03-09
+- **Updated**: 2024-03-09 (Build error fix)

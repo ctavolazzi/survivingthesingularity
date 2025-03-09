@@ -3,12 +3,12 @@
     export let data;
     const { profile } = data;
   </script>
-  
+
   <div class="profile-container">
     <h1>{profile.full_name}</h1>
     <p>@{profile.username}</p>
     {#if profile.avatar_url}
-      <img src={profile.avatar_url} alt="Profile avatar"  loading="lazy" \/\>
+      <img src={profile.avatar_url} alt="Profile avatar" loading="lazy" />
     {/if}
     <p>{profile.bio}</p>
     <p>Location: {profile.location}</p>

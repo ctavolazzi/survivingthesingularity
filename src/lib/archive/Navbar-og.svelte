@@ -89,7 +89,7 @@
     class="bg-white dark:bg-gray-800 transition-all duration-300 w-full {isFloating ? 'fixed' : 'absolute'} top-0 left-0 right-0 z-50 shadow-lg"
   >
     <NavBrand href="/">
-      <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo"  loading="lazy" \/\>
+      <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo"  loading="lazy" \/>
       <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
         Surviving the Singularity
       </span>

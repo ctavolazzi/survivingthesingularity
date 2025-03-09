@@ -10,7 +10,7 @@
 <div class="tshirt-ad-container">
   <div class="ad-content">
     <div class="ad-image-container">
-      <img src={imagePath} alt="Surviving The Singularity T-Shirt" class="ad-image"  loading="lazy" \/\>
+      <img src={imagePath} alt="Surviving The Singularity T-Shirt" class="ad-image"  loading="lazy" \/>
       <div class="limited-badge">Limited Edition</div>
     </div>
     <div class="ad-text">

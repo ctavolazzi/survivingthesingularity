@@ -104,7 +104,7 @@
           </div>
         </div>
         <div class="image-container">
-          <img src={chessImage} alt="Strategic thinking about the singularity" class="section-image"  loading="lazy" \/\>
+          <img src={chessImage} alt="Strategic thinking about the singularity" class="section-image" loading="lazy" />
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
     <div class="container">
       <div class="book-preview">
         <div class="book-cover">
-          <img src={bookCover} alt="Surviving the Singularity book cover"  loading="lazy" \/\>
+          <img src={bookCover} alt="Surviving the Singularity book cover" loading="lazy" />
         </div>
         <div class="book-content">
           <h2>The Definitive Guide</h2>
@@ -334,7 +334,7 @@
           <div class="card-inner">
             <div class="card-overlay"></div>
             <div class="book-cover-preview">
-              <img src={bookCover} alt="Surviving the Singularity book cover"  loading="lazy" \/\>
+              <img src={bookCover} alt="Surviving the Singularity book cover" loading="lazy" />
             </div>
             <div class="card-badge">Book Preview</div>
             <div class="card-content">

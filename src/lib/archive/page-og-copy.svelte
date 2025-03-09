@@ -45,7 +45,7 @@
 
   <Divider />
 
-  <img src={StSBookImage} alt="Surviving the Singularity Book" class="StS-book-image"  loading="lazy" \/\>
+  <img src={StSBookImage} alt="Surviving the Singularity Book" class="StS-book-image"  loading="lazy" \/>
 
   <div class="quote-container">
     <p class="quote">"The future is already here — it's just not very evenly distributed."</p>

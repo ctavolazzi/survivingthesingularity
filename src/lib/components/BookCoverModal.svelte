@@ -79,7 +79,7 @@
     <div class="modal-content" bind:this={modalContent} on:click|stopPropagation>
       <div class="modal-inner">
         <div class="modal-image-container">
-          <img src={coverImage} alt="Surviving the Singularity Book Cover" class="modal-image"  loading="lazy" \/\>
+          <img src={coverImage} alt="Surviving the Singularity Book Cover" class="modal-image"  loading="lazy" \/>
         </div>
         <div class="modal-text">
           <h2 class="book-title">Surviving the Singularity</h2>

@@ -31,9 +31,9 @@
                 {#if customIcon}
                     <span class="text-2xl">{customIcon}</span>
                 {:else if imageUrl}
-                    <img src={imageUrl} alt={title} class="w-full h-full object-cover"  loading="lazy" \/\>
+                    <img src={imageUrl} alt={title} class="w-full h-full object-cover" loading="lazy" />
                 {:else}
-                    <img src={faviconUrl} alt={organization} class="w-8 h-8"  loading="lazy" \/\>
+                    <img src={faviconUrl} alt={organization} class="w-8 h-8" loading="lazy" />
                 {/if}
             </div>
             <div>

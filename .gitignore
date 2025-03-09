@@ -45,3 +45,4 @@ logs
 *.njsproj
 *.sln
 *.sw?
+*.bak

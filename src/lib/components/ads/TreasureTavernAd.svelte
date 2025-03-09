@@ -310,6 +310,9 @@
     font-size: 1.1rem;
     position: relative;
     overflow: hidden;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   .cta-button::before {

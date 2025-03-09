@@ -6,8 +6,15 @@
   import ContactForm from '$lib/components/ContactForm.svelte';
   import Divider from '$lib/components/Divider.svelte';
   import StSBookImage from '$lib/images/default-blog-image.png';
+  import StSBookImageWebP from '$lib/images/default-blog-image.webp';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+  import SafeResponsiveImage from '$lib/components/SafeResponsiveImage.svelte';
+
+  // Define responsive image sets - in production these would be generated at build time
+  const bookCoverSrcSet = `${StSBookImage} 500w, ${StSBookImage} 800w, ${StSBookImage} 1200w`;
+  const bookCoverSrcSetWebP = `${StSBookImageWebP} 500w, ${StSBookImageWebP} 800w, ${StSBookImageWebP} 1200w`;
+  const bookCoverSizes = "(max-width: 600px) 80vw, (max-width: 1000px) 60vw, 40vw";
 
   let animatedSections = {};
   let isScrolled = false;
@@ -77,7 +84,16 @@
 
   <div id="book-preview" class="animate-on-scroll flex flex-col md:flex-row items-center mb-10 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-2xl p-6 shadow-xl">
     <a href="/book" class="mb-8 md:mb-0 md:mr-10 transform transition-all duration-500 hover:scale-105 hover:rotate-1 focus:outline-none focus:ring-4 focus:ring-orange-200 dark:focus:ring-orange-900 rounded-xl">
-      <img src={StSBookImage} alt="Surviving the Singularity" class="StS-book-image rounded-xl shadow-2xl" />
+      <SafeResponsiveImage
+        src={StSBookImage}
+        srcWebp={StSBookImageWebP}
+        srcset={bookCoverSrcSet}
+        srcsetWebp={bookCoverSrcSetWebP}
+        sizes={bookCoverSizes}
+        alt="Surviving the Singularity"
+        class="StS-book-image rounded-xl shadow-2xl"
+        loading="lazy"
+      />
     </a>
     <div class="md:ml-4 w-full">
       <h3 class="text-2xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">What You'll Learn</h3>

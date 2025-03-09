@@ -1,9 +1,12 @@
 <script>
   import bookCoverImage from '$lib/images/Surviving-the-Singularity-Cover.png';
+  import bookCoverImageWebP from '$lib/images/Surviving-the-Singularity-Cover.webp';
+  import SafeResponsiveImage from './SafeResponsiveImage.svelte';
 
   // Props
   export let title = "Navigate the Path to Singularity";
   export let imageSrc = bookCoverImage; // Use the imported image
+  export let imageWebPSrc = bookCoverImageWebP; // WebP version
   export let subtitle = "Want to know more?";
   export let description = "Get the insights and strategies you need to prepare for the technological changes that will reshape our world.";
   export let buttonText = "Explore the Book";
@@ -26,7 +29,14 @@
       <div class="flex-shrink-0 relative">
         <div class="absolute inset-0 bg-blue-500/30 opacity-30 blur-2xl rounded-full"></div>
         <div class="book-glow-effect"></div>
-        <img src={imageSrc} alt="Book cover" class="w-40 md:w-48 h-auto rounded-md shadow-[0_10px_25px_rgba(59,130,246,0.3)] mx-auto relative z-10 transform hover:scale-105 transition-transform duration-300" />
+        <SafeResponsiveImage
+          src={imageSrc}
+          srcWebp={imageWebPSrc}
+          srcset=""
+          srcsetWebp=""
+          alt="Book cover"
+          class="w-40 md:w-48 h-auto rounded-md shadow-[0_10px_25px_rgba(59,130,246,0.3)] mx-auto relative z-10 transform hover:scale-105 transition-transform duration-300"
+        />
       </div>
     </div>
 

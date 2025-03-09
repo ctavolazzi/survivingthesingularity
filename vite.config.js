@@ -1,9 +1,21 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import { imagetools } from 'vite-imagetools';
 
 export default defineConfig({
 	plugins: [
-		sveltekit()
+		sveltekit(),
+		imagetools({
+			defaultDirectives: () => {
+				return new URLSearchParams([
+					['format', 'webp'],
+					['quality', '80'],
+					['as', 'picture']
+				]);
+			},
+			include: '**/*.{jpeg,jpg,png,webp}',
+			exclude: ['**/node_modules/**']
+		})
 	],
 	assetsInclude: ['**/*.md'],
 	build: {

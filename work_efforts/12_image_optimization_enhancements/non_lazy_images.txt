@@ -1,0 +1,86 @@
+Images without lazy loading (Sun Mar  9 11:00:10 PDT 2025)
+==================================
+File: src/lib/archive/page-og-copy.svelte
+Tag: <img src={StSBookImage} alt="Surviving the Singularity Book" class="StS-book-image" />
+-------------------
+File: src/lib/archive/page-og.svelte
+Tag: <img src={post.imageUrl} alt="Blog post header image" class="w-full max-w-2xl h-auto mb-6 rounded mx-auto" />
+-------------------
+File: src/lib/archive/Navbar-previous-working.svelte
+Tag: <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
+-------------------
+File: src/lib/archive/Navbar-og.svelte
+Tag: <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
+-------------------
+File: src/lib/archive/download-page-og-copy.svelte
+Tag: <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" class="w-full mb-4 rounded-lg shadow-md">
+-------------------
+File: src/lib/components/ads/MysteryBoxAd.svelte
+Tag: <img src={imagePath} alt="Mood Booster Mystery Box" class="mystery-image" />
+-------------------
+File: src/lib/components/ads/TShirtAd.svelte
+Tag: <img src={imagePath} alt="Surviving The Singularity T-Shirt" class="ad-image" />
+-------------------
+File: src/lib/components/ads/TreasureTavernAd.svelte
+Tag: <img src={imagePath} alt="Treasure Tavern Store" class="ad-image" />
+-------------------
+File: src/lib/components/ads/TreasureTavernAd.svelte
+Tag: <img src={featuredProduct.image} alt={featuredProduct.title} class="product-image" />
+-------------------
+File: src/lib/components/newsletters/NewsletterEdition003.svelte
+Tag: <img src="/path/to/image.jpg" alt="Description of image" />
+-------------------
+File: src/lib/components/newsletters/NewsletterTemplate.svelte
+Tag: <img src="/path/to/image.jpg" alt="Description of image" />
+-------------------
+File: src/lib/components/SimpleBookCallout.svelte
+Tag: <img src={imageSrc} alt="Book cover" class="w-40 md:w-48 h-auto rounded-md shadow-lg mx-auto md:mx-0 relative z-10" />
+-------------------
+File: src/lib/components/BookCallout.svelte
+Tag: <img src={imageSrc} alt="Book cover" class="w-40 md:w-48 h-auto rounded-md shadow-[0_10px_25px_rgba(59,130,246,0.3)] mx-auto relative z-10 transform hover:scale-105 transition-transform duration-300" />
+-------------------
+File: src/lib/components/ProjectionCard.svelte
+Tag: <img src={imageUrl} alt={title} class="w-full h-full object-cover" />
+-------------------
+File: src/lib/components/ProjectionCard.svelte
+Tag: <img src={faviconUrl} alt={organization} class="w-8 h-8" />
+-------------------
+File: src/lib/components/BookCoverModal.svelte
+Tag: <img src={coverImage} alt="Surviving the Singularity Book Cover" class="modal-image" />
+-------------------
+File: src/lib/components/BookSample.svelte
+Tag: <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" />
+-------------------
+File: src/lib/components/Navbar.svelte
+Tag: <img src="/android-chrome-192x192.png" class="mr-3 h-6 sm:h-9" alt="Surviving the Singularity Logo" />
+-------------------
+File: src/lib/components/Navbar.svelte
+Tag: <img src="/android-chrome-192x192.png" class="mr-3 h-8" alt="Surviving the Singularity Logo" />
+-------------------
+File: src/lib/components/PreorderBanner.svelte
+Tag: <img src={StSBookImage} alt="Surviving the Singularity Book Cover" class="book-image" />
+-------------------
+File: src/routes/start-here/+page.svelte
+Tag: <img src={chessImage} alt="Strategic thinking about the singularity" class="section-image" />
+-------------------
+File: src/routes/start-here/+page.svelte
+Tag: <img src={bookCover} alt="Surviving the Singularity book cover" />
+-------------------
+File: src/routes/start-here/+page.svelte
+Tag: <img src={bookCover} alt="Surviving the Singularity book cover" />
+-------------------
+File: src/routes/profile/[username]/+page.svelte
+Tag: <img src={profile.avatar_url} alt="Profile avatar" />
+-------------------
+File: src/routes/download/+page.svelte
+Tag: <img src={StSFreeGuideImage} alt="Surviving the Singularity Free Guide" class="w-full mb-4 rounded-lg shadow-md">
+-------------------
+File: src/routes/book/+page.svelte
+Tag: <img src={coverImage} alt="Surviving the Singularity Book Cover" loading="eager">
+-------------------
+File: src/routes/book/fixme_page.svelte
+Tag: <img src={coverImage} alt="Surviving the Singularity Book Cover" loading="eager">
+-------------------
+File: src/routes/sample/+page.svelte
+Tag: <img src={StSBookImage} alt="Surviving the Singularity" class="StS-book-image rounded-xl shadow-2xl" />
+-------------------

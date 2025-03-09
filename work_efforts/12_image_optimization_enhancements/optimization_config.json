@@ -1,0 +1,30 @@
+{
+  "priorityImages": [
+    {
+      "path": "src/lib/images/Surviving-the-Singularity-Cover.png",
+      "sizes": [300, 600, 900, 1200],
+      "quality": 85
+    },
+    {
+      "path": "static/sts-welcome.png",
+      "sizes": [400, 800, 1200],
+      "quality": 80
+    },
+    {
+      "path": "src/lib/images/default-blog-image.png",
+      "sizes": [400, 800],
+      "quality": 80
+    }
+  ],
+  "defaultSettings": {
+    "sizes": [400, 800, 1200],
+    "quality": 75,
+    "formats": ["webp", "original"]
+  },
+  "excludePatterns": [
+    "node_modules",
+    ".svelte-kit",
+    "favicon*.png",
+    "android-chrome*.png"
+  ]
+}

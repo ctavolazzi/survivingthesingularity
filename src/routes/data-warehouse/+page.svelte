@@ -1,12 +1,12 @@
 <script>
     import { dataResources } from '$lib/data/dataResources.js';
     import { Card, Button, Badge, Tooltip, Tabs, TabItem } from 'flowbite-svelte';
-    import { goto } from '$app/navigation';
+    import { safeGoto } from '$lib/utils/navigation';
     import { onMount } from 'svelte';
     import { IconData } from '$lib/assets/Icons.svelte';
 
     function handleViewDataset(link) {
-        goto(link);
+        safeGoto(link);
     }
 
     // Add state for reading tab selection

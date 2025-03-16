@@ -5,6 +5,11 @@ This log tracks our systematic improvements to the "Start-Here" page to make it 
 
 ## Work Efforts
 
+### [14. Build Script Fix](active/14_build_script_fix/README.md)
+- **Status:** 🟡 In Progress
+- **Started:** 2025-03-16
+- **Description:** Fixed build process failure by addressing missing image optimization script.
+
 ### [01. High-Impact Opening Statement](/work_efforts/01_high_impact_opening_statement/README.md)
 - **Status:** ✅ Complete
 - **Started:** [Current Date]

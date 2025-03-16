@@ -10,6 +10,8 @@
   let navbar;
   let isMenuOpen = false;
   let isLargeScreen = false;
+  // Define links that will only be shown in the hamburger menu
+  const hamburgerOnlyLinks = ['/sample', '/data-warehouse'];
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -92,16 +94,15 @@
   </NavBrand>
 
   <div class="flex items-center lg:order-2">
-    {#if !isLargeScreen}
-      <button
-        class="hamburger-button ml-2 text-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-600 rounded-lg text-sm p-2.5 inline-flex items-center"
-        on:click={toggleMenu}
-        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-        aria-expanded={isMenuOpen}
-      >
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button>
-    {/if}
+    <!-- Always show hamburger menu button regardless of screen size -->
+    <button
+      class="hamburger-button ml-2 text-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-600 rounded-lg text-sm p-2.5 inline-flex items-center"
+      on:click={toggleMenu}
+      aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+      aria-expanded={isMenuOpen}
+    >
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
   </div>
 
   {#if isLargeScreen}
@@ -118,18 +119,7 @@
           <span class="nav-icon ml-2">{@html IconBlog.svg}</span>
         </span>
       </NavLi>
-      <NavLi href="/sample" class="nav-item {currentPath === '/sample' ? 'active' : ''}" on:click={(e) => navigateTo('/sample', e)}>
-        <span class="nav-button flex items-center h-full w-full">
-          <span class="flex-grow text-left">Sample</span>
-          <span class="nav-icon ml-2">{@html IconSample.svg}</span>
-        </span>
-      </NavLi>
-      <NavLi href="/data-warehouse" class="nav-item {currentPath.startsWith('/data-warehouse') ? 'active' : ''}" on:click={(e) => navigateTo('/data-warehouse', e)}>
-        <span class="nav-button flex items-center h-full w-full">
-          <span class="flex-grow text-left">Data Warehouse</span>
-          <span class="nav-icon ml-2">{@html IconData.svg}</span>
-        </span>
-      </NavLi>
+      <!-- Data Warehouse and Sample links removed from desktop nav -->
       <NavLi href="/newsletter" class="nav-item {currentPath === '/newsletter' ? 'active' : ''}" on:click={(e) => navigateTo('/newsletter', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Newsletter</span>
@@ -146,7 +136,7 @@
   {/if}
 </Navbar>
 
-{#if !isLargeScreen && isMenuOpen}
+{#if isMenuOpen}
   <!-- Overlay background -->
   <div
     class="fixed inset-0 bg-black bg-opacity-50 z-30"

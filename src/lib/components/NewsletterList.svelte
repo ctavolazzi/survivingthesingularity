@@ -1,315 +1,156 @@
 <script>
-  import { createEventDispatcher, onMount } from 'svelte';
-  import { fade, slide, fly } from 'svelte/transition';
-  import { Button, Card, Input, Badge } from 'flowbite-svelte';
-
-  export let newsletters = [];
-  export let selectedSlug = '';
-  export let pagination = null;
-  export const compact = false;
+  import { createEventDispatcher } from 'svelte';
+  import { fade } from 'svelte/transition';
+  import { Input } from 'flowbite-svelte';
 
   const dispatch = createEventDispatcher();
 
-  let searchTerm = '';
-  let listContainer;
+  export let newsletters = [];
+  export let selectedSlug = null;
+  export let pagination = {
+    currentPage: 1,
+    totalPages: 1,
+    perPage: 10
+  };
+
+  let searchQuery = '';
   let activeTab = 'recent';
-  let searchVisible = false;
-  let isNavExpanded = false;
+  let listContainer;
 
-  $: filteredNewsletters = newsletters.filter(newsletter =>
-    newsletter.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    newsletter.date?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    newsletter.description?.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  $: filteredNewsletters = newsletters
+    .filter(newsletter =>
+      newsletter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      newsletter.description.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
-  $: totalEditions = pagination ? pagination.totalItems : newsletters.length;
-  $: newslettersByYear = groupByYear(filteredNewsletters);
-  $: years = Object.keys(newslettersByYear).sort((a, b) => b.localeCompare(a));
+  $: totalEditions = newsletters.length;
 
-  function groupByYear(newsletters) {
-    const groups = {};
-
-    newsletters.forEach(newsletter => {
-      const year = newsletter.date?.split('-')[0] || 'Unknown';
-      if (!groups[year]) {
-        groups[year] = [];
-      }
-      groups[year].push(newsletter);
-    });
-
-    Object.keys(groups).forEach(year => {
-      groups[year].sort((a, b) => b.editionNumber - a.editionNumber);
-    });
-
-    return groups;
+  function handleSelect(slug) {
+    dispatch('select', { slug });
   }
 
-  function selectNewsletter(slug) {
-    // Dispatch the selection event with the slug
-    dispatch('select', slug);
-
-    // Close the dropdown after selection
-    isNavExpanded = false;
-
-    // Hide search on mobile after selection
-    if (window.innerWidth < 768) {
-      searchVisible = false;
-    }
+  function handleSearch(event) {
+    searchQuery = event.detail.target.value;
   }
-
-  function scrollToTop() {
-    if (listContainer) {
-      listContainer.scrollTop = 0;
-    }
-  }
-
-  function setActiveTab(tab) {
-    activeTab = tab;
-    scrollToTop();
-  }
-
-  function toggleSearch() {
-    searchVisible = !searchVisible;
-    if (searchVisible) {
-      setTimeout(() => {
-        document.querySelector('.search-input')?.focus();
-      }, 100);
-    } else {
-      searchTerm = '';
-    }
-  }
-
-  onMount(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        searchVisible = true;
-      } else if (!searchVisible) {
-        searchVisible = false;
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      scrollToTop();
-    };
-  });
 </script>
 
-<div class="relative w-full max-w-full overflow-hidden">
-    <!-- Compact Modern Navigation for Newsletter Header -->
-  <div class="newsletter-header flex flex-col gap-2 px-1 py-2 border-b border-gray-200 dark:border-gray-700">
-    <!-- Top Row with Title and Controls -->
-    <div class="flex justify-between items-center">
-      <div class="flex items-center gap-2">
-        <h2 class="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Newsletters</h2>
-        <Badge color="blue" size="sm" class="font-medium">{totalEditions}</Badge>
-      </div>
-
-      <!-- Search and Nav Toggle for Mobile -->
-      <div class="flex items-center gap-1">
-        <button
-          class="md:hidden flex items-center justify-center w-7 h-7 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-          on:click={toggleSearch}
-          aria-label="Toggle search"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </button>
-
-        <!-- Search Input -->
-        {#if searchVisible}
-          <div class="search-container" transition:slide={{duration: 200, axis: 'y'}}>
-            <Input
-              type="text"
-              placeholder="Search newsletters..."
-              bind:value={searchTerm}
-              size="sm"
-              class="w-full md:w-40 search-input text-xs"
-            />
-          </div>
-        {/if}
-      </div>
+<div class="newsletter-container">
+  <div class="header">
+    <div class="title-row">
+      <h2>Newsletter Archive</h2>
+      <div class="edition-count">{totalEditions} editions</div>
     </div>
 
-    <!-- Newsletter Navigation Dropdown -->
-    <div class="newsletter-nav relative">
-        <button
-        class="w-full flex items-center justify-between px-3 py-2 text-sm bg-gray-50 dark:bg-gray-800 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-        on:click={() => isNavExpanded = !isNavExpanded}
-      >
-        <div class="flex items-center gap-2">
-          <span class="text-orange-600 dark:text-orange-400 font-medium">Currently Reading:</span>
-          <span class="font-medium truncate">
-            {#if selectedSlug && newsletters.length > 0}
-              {newsletters.find(n => n.slug === selectedSlug)?.title || 'Select a newsletter'}
-            {:else}
-              Latest Edition
-            {/if}
-          </span>
-        </div>
-        <svg
-          class="w-4 h-4 transition-transform {isNavExpanded ? 'rotate-180' : ''}"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-
-      {#if isNavExpanded}
-        <div
-          class="absolute top-full left-0 right-0 mt-1 max-h-[70vh] overflow-y-auto bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 z-50"
-          transition:slide={{duration: 200}}
-        >
-          <!-- Quick Navigation Tabs -->
-          <div class="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-2">
-            <div class="flex gap-1">
-              <button
-                class="px-2 py-1 text-xs rounded {activeTab === 'recent' ? 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300' : 'hover:bg-gray-100 dark:hover:bg-gray-700'}"
-                on:click={() => setActiveTab('recent')}
-              >
-                Recent
-              </button>
-              {#each years as year}
-                <button
-                  class="px-2 py-1 text-xs rounded {activeTab === year ? 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300' : 'hover:bg-gray-100 dark:hover:bg-gray-700'}"
-                  on:click={() => setActiveTab(year)}
-                >
-                  {year}
-                </button>
-              {/each}
-            </div>
-          </div>
-
-          <!-- Newsletter List -->
-          <div class="p-1">
-            {#if activeTab === 'recent'}
-              {#each newsletters.slice(0, 5) as newsletter}
-                <button
-                  class="w-full text-left p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded {newsletter.slug === selectedSlug ? 'bg-orange-50 dark:bg-orange-900/20' : ''}"
-                  on:click={() => selectNewsletter(newsletter.slug)}
-                >
-                  <div class="flex items-center justify-between">
-                    <div>
-                      <div class="font-medium">{newsletter.title}</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Edition #{newsletter.editionNumber}</div>
-                    </div>
-                    <div class="text-xs text-gray-500 dark:text-gray-400">{newsletter.date}</div>
-                  </div>
-                </button>
-              {/each}
-              <div class="px-2 py-1 border-t border-gray-200 dark:border-gray-700">
-                <button
-                  class="w-full text-center text-sm text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300"
-                  on:click={() => setActiveTab('all')}
-                >
-                  View All Editions
-                </button>
-              </div>
-            {:else}
-              {#each newslettersByYear[activeTab] || [] as newsletter}
-                <button
-                  class="w-full text-left p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded {newsletter.slug === selectedSlug ? 'bg-orange-50 dark:bg-orange-900/20' : ''}"
-                  on:click={() => selectNewsletter(newsletter.slug)}
-                >
-                  <div class="flex items-center justify-between">
-                    <div>
-                      <div class="font-medium">{newsletter.title}</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Edition #{newsletter.editionNumber}</div>
-                    </div>
-                    <div class="text-xs text-gray-500 dark:text-gray-400">{newsletter.date}</div>
-                  </div>
-                </button>
-              {/each}
-            {/if}
-          </div>
-        </div>
-      {/if}
+    <div class="search-bar">
+      <Input
+        type="search"
+        placeholder="Search newsletters..."
+        bind:value={searchQuery}
+        size="lg"
+        class="search-input"
+        on:input={handleSearch}
+      />
     </div>
   </div>
 
-  <!-- Currently Reading Content -->
-  <div class="newsletter-content mt-4">
-    {#if selectedSlug && newsletters.length > 0}
-      {#each filteredNewsletters.filter(n => n.slug === selectedSlug) as newsletter (newsletter.slug)}
-        <div
-          class="newsletter-card-large px-4 py-3 border-l-2 border-orange-500 bg-white dark:bg-gray-800 rounded-md shadow-sm"
-          transition:fade={{ duration: 150 }}
+  <div class="newsletter-list" bind:this={listContainer}>
+    <div class="newsletters">
+      {#each filteredNewsletters as newsletter}
+        <button
+          class="newsletter-item {newsletter.slug === selectedSlug ? 'selected' : ''}"
+          on:click={() => handleSelect(newsletter.slug)}
         >
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="text-sm font-semibold">#{newsletter.editionNumber}</h3>
-            <p class="text-xs text-gray-600 dark:text-gray-400">{newsletter.date}</p>
+          <div class="newsletter-content">
+            <div class="newsletter-title">{newsletter.title}</div>
+            <div class="newsletter-meta">
+              <span class="edition-number">Edition #{newsletter.editionNumber}</span>
+            </div>
           </div>
-          <h2 class="text-xl font-bold mb-2">{newsletter.title}</h2>
-          {#if newsletter.description}
-            <p class="text-gray-700 dark:text-gray-300 text-sm">{newsletter.description}</p>
-          {/if}
-        </div>
-      {:else}
-        <!-- No matching newsletter found -->
-        <div class="text-center py-8 text-gray-500 dark:text-gray-400">
-          <p>Newsletter not found. Selected slug: {selectedSlug}</p>
-        </div>
+        </button>
       {/each}
-    {:else}
-      <div class="text-center py-8 text-gray-500 dark:text-gray-400">
-        <p>Select a newsletter to start reading</p>
-      </div>
-    {/if}
+    </div>
   </div>
 </div>
 
 <style lang="postcss">
-  /* Newsletter card styles */
-  .newsletter-card-large {
-    @apply transition-all duration-200;
+  .newsletter-container {
+    @apply w-full max-w-3xl mx-auto bg-transparent;
   }
 
-  :global(.dark) .newsletter-card-large {
-    @apply border-opacity-15;
+  .header {
+    @apply p-4 sm:p-6 space-y-4;
   }
 
-  /* Container styles */
-  .newsletter-header {
-    @apply w-full box-border;
+  .title-row {
+    @apply flex items-center justify-between;
   }
 
-  .newsletter-nav {
-    @apply w-full box-border;
+  .title-row h2 {
+    @apply text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white;
   }
 
-  /* Search container */
-  .search-container {
-    @apply relative w-full md:w-40;
+  .edition-count {
+    @apply px-3 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400
+           bg-blue-50 dark:bg-blue-900/20 rounded-full;
   }
 
-  /* Mobile optimizations */
-  @media (max-width: 768px) {
-    .search-container {
-      @apply w-full;
-    }
-
-    .newsletter-header {
-      @apply px-2;
-    }
-
-    .newsletter-nav button {
-      @apply text-sm;
-    }
+  .search-bar {
+    @apply w-full;
   }
 
-  /* Ensure content stays within bounds */
+  :global(.search-input) {
+    @apply w-full bg-gray-100/50 dark:bg-gray-800/50
+           border-0 rounded-xl
+           text-base placeholder:text-gray-500
+           focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400
+           transition-shadow duration-200;
+  }
+
+  .newsletters {
+    @apply divide-y divide-gray-100 dark:divide-gray-800;
+  }
+
+  .newsletter-item {
+    @apply w-full text-left px-4 sm:px-6 py-5 transition-colors
+           hover:bg-gray-50 dark:hover:bg-gray-800/50
+           active:bg-gray-100 dark:active:bg-gray-800
+           touch-manipulation;
+  }
+
+  .newsletter-item.selected {
+    @apply bg-blue-50 dark:bg-blue-900/20;
+  }
+
   .newsletter-content {
-    @apply w-full box-border overflow-x-hidden;
+    @apply flex flex-col gap-2;
   }
 
-  /* Ensure dropdown stays within viewport */
-  .newsletter-nav .absolute {
-    @apply max-w-[calc(100vw-2rem)] box-border;
+  .newsletter-title {
+    @apply text-lg font-semibold text-gray-900 dark:text-white
+           leading-tight;
+  }
+
+  .newsletter-meta {
+    @apply flex flex-wrap items-center gap-2 text-sm text-gray-500 dark:text-gray-400;
+  }
+
+  .edition-number {
+    @apply font-medium;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Optimize touch targets for mobile */
+  @media (max-width: 640px) {
+    .newsletter-item {
+      @apply py-4;
+    }
   }
 </style>

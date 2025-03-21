@@ -1,239 +1,340 @@
 <script>
+  import { fade, fly } from 'svelte/transition';
+  import { elasticOut } from 'svelte/easing';
   import NewsletterSection from '../NewsletterSection.svelte';
+  import { darkMode } from '$lib/stores/darkMode';
+
+  export let metadata = {
+    title: '',
+    date: '',
+    edition: '',
+    description: ''
+  };
 </script>
 
 <!-- This is a template for creating newsletter editions using the modular component approach -->
 <!-- When creating a new newsletter, copy this file and customize the content -->
 
-<div class="newsletter">
+<div class="newsletter" class:dark={$darkMode}>
   <!-- Header Section -->
-  <header class="newsletter-header">
-    <h1>[Newsletter Title]</h1>
+  <header class="newsletter-header" in:fly={{ y: 20, duration: 500, easing: elasticOut }}>
+    <div class="edition-badge">Edition #{metadata.edition}</div>
+    <h1>{metadata.title}</h1>
+    <div class="metadata">
+      <time datetime={metadata.date}>{new Date(metadata.date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })}</time>
+      <div class="reading-time">~10 min read</div>
+    </div>
     <p class="intro">
-      Welcome to edition #XXX of the Surviving the Singularity newsletter.
+      {metadata.description || 'Welcome to this edition of the Surviving the Singularity newsletter.'}
     </p>
   </header>
 
-  <!-- Introduction Section -->
-  <NewsletterSection title="Introduction" type="default">
-    <p>
-      A brief introduction to this week's newsletter and the main themes covered.
-    </p>
-  </NewsletterSection>
-
-  <!-- Main Topic Section -->
-  <NewsletterSection title="Main Topic: [Topic Title]" type="featured">
-    <p>
-      Your main content goes here. This is where you write about the primary focus of this newsletter edition.
-    </p>
-
-    <h3>[Main Topic Subheading]</h3>
-    <p>Continue your main topic content here.</p>
-
-    <!-- Example of how to add an image -->
-    <!--
-    <figure class="image-container">
-      <img src="/path/to/image.jpg" alt="Description of image"  loading="lazy" \/>
-      <figcaption>Image caption goes here</figcaption>
-    </figure>
-    -->
-
-    <!-- Example of how to add a quote -->
-    <!--
-    <blockquote>
-      <p>"This is an important quote that emphasizes your point."</p>
-      <cite>— Source Name</cite>
-    </blockquote>
-    -->
-  </NewsletterSection>
-
-  <!-- News Section -->
-  <NewsletterSection title="This Week in AI" type="news">
-    <ul class="news-list">
-      <li>
-        <strong>[News Item 1]:</strong> Description or commentary about this news item
-      </li>
-      <li>
-        <strong>[News Item 2]:</strong> Description or commentary about this news item
-      </li>
-      <li>
-        <strong>[News Item 3]:</strong> Description or commentary about this news item
-      </li>
+  <!-- Table of Contents -->
+  <nav class="table-of-contents" in:fade={{ duration: 300, delay: 200 }}>
+    <h2>In This Edition</h2>
+    <ul>
+      <li><a href="#this-week">This Week in AI</a></li>
+      <li><a href="#main-topic">Main Topic</a></li>
+      <li><a href="#resources">Resources & Tools</a></li>
+      <li><a href="#community">Community Spotlight</a></li>
+      <li><a href="#tip">Practical Tip</a></li>
     </ul>
-  </NewsletterSection>
+  </nav>
 
-  <!-- Resources Section -->
-  <NewsletterSection title="Resources & Tools" type="resources">
-    <div class="resource">
-      <h3>[Resource Name 1]</h3>
-      <p>Brief description of this resource and why it's valuable.</p>
-      <a href="#" class="resource-link">Check it out →</a>
+  <!-- Main Content -->
+  <div class="content" in:fade={{ duration: 300, delay: 400 }}>
+    <slot></slot>
+  </div>
+
+  <!-- Social Share -->
+  <div class="social-share" in:fade={{ duration: 300, delay: 500 }}>
+    <h3>Share this newsletter</h3>
+    <div class="share-buttons">
+      <button class="share-button twitter">
+        <span class="icon">𝕏</span>
+        Share on X
+      </button>
+      <button class="share-button linkedin">
+        <span class="icon">in</span>
+        Share on LinkedIn
+      </button>
     </div>
+  </div>
 
-    <div class="resource">
-      <h3>[Resource Name 2]</h3>
-      <p>Brief description of this resource and why it's valuable.</p>
-      <a href="#" class="resource-link">Check it out →</a>
+  <!-- Footer -->
+  <footer class="newsletter-footer" in:fade={{ duration: 300, delay: 600 }}>
+    <div class="footer-content">
+      <div class="author">
+        <img src="/images/avatar.jpg" alt="Author" class="author-avatar" />
+        <div class="author-info">
+          <span class="author-name">Christopher Tavolazzi</span>
+          <span class="author-title">Chief Singularity Survivalist</span>
+        </div>
+      </div>
+      <div class="newsletter-cta">
+        <h3>Stay Updated</h3>
+        <p>Get weekly insights on thriving in the age of AI.</p>
+        <slot name="newsletter-signup"></slot>
+      </div>
     </div>
-  </NewsletterSection>
-
-  <!-- Community Section (Optional) -->
-  <NewsletterSection title="Community Spotlight" type="community">
-    <p>
-      Highlight community members, questions, or discussions here.
-    </p>
-  </NewsletterSection>
-
-  <!-- Practical Tip Section -->
-  <NewsletterSection title="Practical Tip" type="tip">
-    <p>
-      A concise, practical tip related to AI, technology, or surviving the singularity.
-    </p>
-  </NewsletterSection>
-
-  <!-- Footer Section -->
-  <footer class="newsletter-footer">
-    <hr />
-    <p>
-      That's all for this edition! Let me know what you think by replying to this email.
-    </p>
-    <p class="signature">
-      Stay curious,<br />
-      [Your Name]
-    </p>
   </footer>
 </div>
 
 <style>
   .newsletter {
-    max-width: 100%;
+    --primary-color: #3b82f6;
+    --secondary-color: #9333ea;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4b5563;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --border-color: #e5e7eb;
+
+    max-width: 800px;
     margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  .newsletter.dark {
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --border-color: #374151;
   }
 
   .newsletter-header {
-    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .edition-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
   h1 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
     margin: 0 0 1rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.025em;
+  }
+
+  .metadata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .reading-time {
+    display: flex;
+    align-items: center;
+  }
+
+  .reading-time::before {
+    content: "•";
+    margin-right: 1rem;
   }
 
   .intro {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 42rem;
+    margin: 0 auto;
   }
 
-  h3 {
+  .table-of-contents {
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .table-of-contents h2 {
     font-size: 1.25rem;
     font-weight: 600;
-    margin: 1.5rem 0 0.75rem 0;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
   }
 
-  p {
-    margin: 0 0 1rem 0;
-    line-height: 1.6;
-  }
-
-  /* News list styling */
-  .news-list {
-    list-style-type: none;
+  .table-of-contents ul {
+    list-style: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
   }
 
-  .news-list li {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-  }
-
-  .news-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #3b82f6;
-  }
-
-  /* Resources styling */
-  .resource {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .resource:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-
-  .resource-link {
-    display: inline-block;
-    color: #3b82f6;
-    font-weight: 500;
+  .table-of-contents a {
+    color: var(--text-secondary);
     text-decoration: none;
-    margin-top: 0.5rem;
-  }
-
-  .resource-link:hover {
-    text-decoration: underline;
-  }
-
-  /* Image container */
-  .image-container {
-    margin: 1.5rem 0;
-    width: 100%;
-  }
-
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-  }
-
-  figcaption {
-    margin-top: 0.5rem;
     font-size: 0.875rem;
-    color: #6b7280;
+    transition: all 0.2s ease;
+  }
+
+  .table-of-contents a:hover {
+    color: var(--primary-color);
+  }
+
+  .social-share {
+    margin: 3rem 0;
     text-align: center;
   }
 
-  /* Quote styling */
-  blockquote {
-    margin: 1.5rem 0;
-    padding: 1rem 1.5rem;
-    border-left: 4px solid #3b82f6;
-    background-color: #f9fafb;
-    font-style: italic;
+  .social-share h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
   }
 
-  blockquote p {
-    margin-bottom: 0.5rem;
+  .share-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
   }
 
-  blockquote cite {
-    font-size: 0.875rem;
-    font-style: normal;
-    color: #6b7280;
+  .share-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 9999px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
   }
 
-  /* Footer styling */
+  .share-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
   .newsletter-footer {
-    margin-top: 3rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
   }
 
-  hr {
-    border: none;
-    border-top: 1px solid #e5e7eb;
-    margin: 2rem 0;
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
   }
 
-  .signature {
-    margin-top: 1rem;
-    font-style: italic;
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
-  /* Dark mode adjustments are handled by the parent components */
+  .author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-name {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .author-title {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .newsletter-cta {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .newsletter-cta h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+
+  .newsletter-cta p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .newsletter {
+      padding: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .table-of-contents ul {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .newsletter {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    .metadata {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .reading-time::before {
+      display: none;
+    }
+
+    .share-buttons {
+      flex-direction: column;
+    }
+  }
 </style>

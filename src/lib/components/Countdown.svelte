@@ -98,32 +98,13 @@
     font-weight: bold;
     margin: 0.5rem 0 1.5rem 0;
     font-size: clamp(1.5rem, 5vw, 3rem);
-    background: linear-gradient(to right, #FF9933, #FF8000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #FF9933;
     white-space: nowrap !important;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     letter-spacing: -0.01em;
     display: block;
-    text-shadow: 0 2px 10px rgba(255, 153, 51, 0.3);
-    position: relative;
-  }
-
-  .countdown-header::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(to right, #FF9933, #FF8000);
-    border-radius: 2px;
-    opacity: 0.7;
   }
 
   .countdown-container {
@@ -157,29 +138,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow:
-      0 4px 12px rgba(0, 0, 0, 0.2),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(4px);
-    position: relative;
-    overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
   }
 
   .countdown-box:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  }
-
-  .countdown-box::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
   }
 
   .countdown-value {
@@ -189,13 +153,8 @@
     text-align: center;
     min-width: 1.2ch;
     color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.02em;
     line-height: 1;
-  }
-
-  .countdown-value:not(.placeholder) {
-    animation: pulse 1.5s infinite;
   }
 
   .countdown-separator {
@@ -203,18 +162,6 @@
     font-weight: bold;
     color: rgba(255, 255, 255, 0.5);
     margin-top: -1.5rem;
-  }
-
-  @keyframes pulse {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.8;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 
   .countdown-label {
@@ -241,10 +188,6 @@
       margin-bottom: 1.5rem;
       font-size: clamp(1.25rem, 4.5vw, 2.5rem);
       letter-spacing: -0.02em;
-      width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap !important;
     }
 
     .countdown-box {

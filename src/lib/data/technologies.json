@@ -1,0 +1,88 @@
+{
+  "technologies": [
+    {
+      "name": "EMBODIED AI",
+      "description": "The first commercial synthetic biological intelligence, the CL1 system, became available in March 2025. This hybrid wetware system represents a significant step forward in embodied AI, combining biological and artificial components to create more robust and adaptable intelligence.",
+      "faq": [
+        {
+          "question": "What is embodied AI?",
+          "answer": "Embodied AI refers to artificial intelligence systems that interact with the physical world through a body or physical form, allowing them to learn and operate in real-world environments. Recent examples include Figure's Helix VLA model for humanoid control, Unitree's G1 robot, and Cortical Labs' CL1 biological intelligence system."
+        },
+        {
+          "question": "How does natural language control work in embodied AI?",
+          "answer": "Advanced systems like Figure's Helix use Vision-Language-Action (VLA) models that translate natural language commands directly into physical actions. This allows robots to understand and execute complex tasks like picking up novel objects or collaborating with other robots, without requiring specific programming for each task."
+        },
+        {
+          "question": "What are the key components of modern humanoid robots?",
+          "answer": "Modern humanoid robots like the Unitree G1 feature multiple degrees of freedom (23-43 joints), force-controlled dexterous hands, advanced sensors (LiDAR, depth cameras), and sophisticated AI control systems. They typically include high-performance computing units, battery systems for autonomous operation, and continuous OTA update capabilities."
+        },
+        {
+          "question": "How do biological and artificial components work together?",
+          "answer": "Systems like the CL1 combine biological neural networks with artificial components to create hybrid intelligence. This approach leverages the adaptability and learning capabilities of biological systems while maintaining the precision and reliability of artificial components."
+        },
+        {
+          "question": "What are the main challenges in embodied AI?",
+          "answer": "Key challenges include achieving natural object manipulation, maintaining stable bipedal movement, managing power consumption, and developing general-purpose intelligence that can adapt to new situations. Recent breakthroughs like Helix's VLA model are addressing these by enabling zero-shot learning and natural language control."
+        }
+      ],
+      "articles": [
+        {
+          "title": "Cortical Labs Announces CL1: First Commercial Synthetic Biological Intelligence",
+          "url": "/blog/synthetic-biological-intelligence",
+          "date": "2025-03-06",
+          "thumbnail": "https://corticallabs.com/images/footer-device.jpg",
+          "excerpt": "Cortical Labs has announced the release of their CL1 system, marking the first commercial availability of synthetic biological intelligence. The system combines biological neural networks with advanced AI components to create a new class of embodied intelligence.",
+          "satisfactionLevel": 1.0
+        },
+        {
+          "title": "Unitree G1: Advanced Humanoid AI Avatar",
+          "url": "https://www.unitree.com/g1",
+          "date": "2024-03-15",
+          "thumbnail": "https://www.unitree.com/images/52688de58de044358e4792a5b7c1593d_2740x1720.jpg",
+          "excerpt": "The Unitree G1 represents a major advancement in humanoid robotics, featuring 23-43 degrees of freedom, force-controlled dexterous hands, and advanced AI capabilities. Starting at $16K, it offers industrial-grade components, 2-hour battery life, and comprehensive sensor suite including 3D LiDAR and depth cameras. The G1 combines flexibility, power, and intelligence with continuous OTA updates.",
+          "satisfactionLevel": 0.9
+        },
+        {
+          "title": "Figure Unveils Helix: Revolutionary Vision-Language-Action Model for Humanoid Control",
+          "url": "https://www.figure.ai/news/helix",
+          "date": "2025-02-20",
+          "thumbnail": "https://i.ytimg.com/vi/f6ChFc8eUuo/maxresdefault.jpg",
+          "excerpt": "Figure's Helix represents a breakthrough in humanoid robotics as the first Vision-Language-Action model to control entire upper body movements through natural language. The system demonstrates unprecedented capabilities in collaborative manipulation and object handling, able to interact with thousands of novel household items without prior training. This marks a transformative step toward scalable humanoid robotics for everyday home environments.",
+          "satisfactionLevel": 0.95
+        }
+      ]
+    },
+    {
+      "name": "BRAIN COMPUTER INTERFACE",
+      "description": "Various methods of interfacing human minds with machines are being developed, from lightweight augmented reality devices to more invasive neural interfaces. While the technology shows promise, significant ethical concerns and technical challenges remain to be addressed.",
+      "faq": [
+        {
+          "question": "What are the different types of brain-computer interfaces?",
+          "answer": "BCIs range from non-invasive methods like EEG and fNIRS to semi-invasive techniques like ECoG, and fully invasive approaches using implanted electrodes. Each has different trade-offs in terms of signal quality, safety, and usability."
+        },
+        {
+          "question": "What are the main ethical concerns?",
+          "answer": "Key concerns include privacy of brain data, potential for misuse, informed consent, long-term effects on brain function, and the need for robust security measures to protect neural data."
+        }
+      ],
+      "articles": [
+        {
+          "title": "Neuralink's Latest BCI Breakthrough: What It Means for Human-Machine Integration",
+          "url": "/blog/neuralink-latest-breakthrough",
+          "date": "2024-02-15",
+          "thumbnail": "/images/neuralink-bci.webp",
+          "excerpt": "Neuralink's latest BCI prototype shows improved signal quality and reduced invasiveness, but raises important questions about data privacy and ethical implications.",
+          "satisfactionLevel": 0.4
+        },
+        {
+          "title": "The Future of Neural Interfaces: A Comprehensive Review",
+          "url": "/blog/future-of-neural-interfaces",
+          "date": "2024-01-20",
+          "thumbnail": "/images/neural-interfaces-review.webp",
+          "excerpt": "A detailed analysis of current BCI technologies, their limitations, and potential future developments in the field of neural interfaces.",
+          "satisfactionLevel": 0.3
+        }
+      ]
+    }
+  ]
+}

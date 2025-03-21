@@ -1,0 +1,176 @@
+{
+  "technologies": [
+    {
+      "id": "embodied_ai",
+      "name": "EMBODIED AI",
+      "description": "We have several hybrid wetware systems that blend synthetic, digital, and biological life available on the market. The first commercial synthetic biological intelligence was the CL1 system which became available in March of 2025.",
+      "category": "robotics",
+      "status": "completed",
+      "estimatedDate": "2025-03",
+      "dependencies": [],
+      "faq": [
+        {
+          "question": "What is embodied AI?",
+          "answer": "Embodied AI refers to artificial intelligence systems that have physical bodies and can interact with the world through sensors and actuators."
+        },
+        {
+          "question": "Why does AGI need embodiment?",
+          "answer": "Physical embodiment allows AI to develop true understanding of the world through direct experience and interaction."
+        }
+      ],
+      "articles": [
+        {
+          "title": "CL1: First Commercial Synthetic Biological Intelligence",
+          "url": "https://example.com/cl1-launch",
+          "date": "2025-03-15",
+          "thumbnail": "/images/cl1-system.jpg",
+          "excerpt": "The CL1 system represents a breakthrough in synthetic biological intelligence, combining digital and biological components in a commercially available package.",
+          "satisfactionLevel": 0.9
+        }
+      ]
+    },
+    {
+      "id": "neural_interface",
+      "name": "BRAIN COMPUTER INTERFACE",
+      "description": "Humans have developed several ways to interface multiple conscious and unconscious minds together. Recently scientists developed a way for one \"sender\" to transmit motor signals to one \"receiver\" and other scientists discovered a manner of transmitting information through lucid dreams.\n\nNeuralink and similar devices are expected to provide significant gains in many fields such as neuroscience. However, significant ethical concerns as well as concerns surrounding inequality need careful discussion and consideration by the public and policy makers.\n\nLightweight Augmented Reality devices are being made with many years of AI-enhanced producitivity gains expected in the hardware and software of devices like Meta's smart glasses and other, similar headwear devices.\n\nMany of these devices use technology that has been patented and approved to receive brain wave data during use. The opportunities for scientific understanding, personal privacy invasion, and the creation of entierely unpredictable social disparities cannot be overstated.",
+      "category": "neuroscience",
+      "status": "in_progress",
+      "estimatedDate": "2024-2026",
+      "dependencies": [],
+      "faq": [
+        {
+          "question": "What is a neural interface?",
+          "answer": "A neural interface is a direct communication pathway between the human brain and external devices, allowing for bidirectional information transfer."
+        },
+        {
+          "question": "What are the ethical concerns?",
+          "answer": "Key concerns include privacy invasion, social inequality, and the potential for misuse of brain data. These issues require careful consideration and regulation."
+        }
+      ],
+      "articles": [
+        {
+          "title": "Breakthrough in Brain-to-Brain Communication",
+          "url": "https://example.com/brain-communication",
+          "date": "2024-02-15",
+          "thumbnail": "/images/brain-interface.jpg",
+          "excerpt": "Scientists have successfully demonstrated direct motor signal transmission between human brains, marking a significant step forward in neural interfaces.",
+          "satisfactionLevel": 0.6
+        },
+        {
+          "title": "Meta's Brain-Reading Smart Glasses",
+          "url": "https://example.com/meta-glasses",
+          "date": "2024-03-01",
+          "thumbnail": "/images/meta-glasses.jpg",
+          "excerpt": "Meta's latest smart glasses incorporate approved brain wave reading technology, raising concerns about privacy and data collection.",
+          "satisfactionLevel": 0.5
+        }
+      ]
+    },
+    {
+      "id": "quantum_computing",
+      "name": "Quantum Computing",
+      "description": "Practical quantum computing with sufficient qubits and error correction",
+      "category": "hardware",
+      "status": "in_progress",
+      "estimatedDate": "2024-2026",
+      "dependencies": [],
+      "impact": "Provides the computational power needed for complex AGI models and simulations",
+      "faq": [
+        {
+          "question": "What is quantum computing?",
+          "answer": "Quantum computing uses quantum-mechanical phenomena to perform calculations that would be impossible for classical computers."
+        },
+        {
+          "question": "How does it help with AGI?",
+          "answer": "Quantum computing provides the massive computational power needed to run complex AGI models and simulations of consciousness."
+        }
+      ],
+      "articles": [
+        {
+          "title": "IBM's 1000+ Qubit Processor",
+          "url": "https://www.ibm.com/quantum-computing/roadmap",
+          "date": "2023-12-15",
+          "satisfactionLevel": 0.7
+        }
+      ]
+    },
+    {
+      "id": "consciousness_model",
+      "name": "Consciousness Model",
+      "description": "Scientific understanding and model of human consciousness",
+      "category": "neuroscience",
+      "status": "pending",
+      "estimatedDate": "2026-2028",
+      "dependencies": ["neural_interface"],
+      "impact": "Enables creation of truly conscious AI systems by understanding the nature of consciousness",
+      "faq": [
+        {
+          "question": "What is consciousness?",
+          "answer": "Consciousness is the state of being aware of and able to think about oneself, one's surroundings, and one's experiences."
+        },
+        {
+          "question": "Why is it important for AGI?",
+          "answer": "Understanding consciousness is crucial for creating AI systems that are truly self-aware and capable of genuine understanding."
+        }
+      ],
+      "articles": [
+        {
+          "title": "New Consciousness Theory",
+          "url": "https://www.nature.com/articles/consciousness-theory",
+          "date": "2024-02-01",
+          "satisfactionLevel": 0.2
+        }
+      ]
+    },
+    {
+      "id": "self_improvement",
+      "name": "Self-Improvement System",
+      "description": "AI system capable of improving its own architecture and capabilities",
+      "category": "software",
+      "status": "pending",
+      "estimatedDate": "2026-2028",
+      "dependencies": ["quantum_computing", "consciousness_model"],
+      "impact": "Enables AI to evolve and improve beyond human capabilities",
+      "faq": [
+        {
+          "question": "What is self-improving AI?",
+          "answer": "Self-improving AI systems can modify their own architecture and capabilities to become more capable over time."
+        },
+        {
+          "question": "Is it safe?",
+          "answer": "Safety measures and alignment research are crucial to ensure self-improving AI remains aligned with human values."
+        }
+      ],
+      "articles": [
+        {
+          "title": "GPT-4's Self-Improvement Capabilities",
+          "url": "https://openai.com/blog/gpt-4",
+          "date": "2023-03-14",
+          "satisfactionLevel": 0.4
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "hardware": {
+      "icon": "💻",
+      "description": "Physical computing and hardware breakthroughs"
+    },
+    "software": {
+      "icon": "⚙️",
+      "description": "AI algorithms and software systems"
+    },
+    "neuroscience": {
+      "icon": "🧠",
+      "description": "Understanding of human brain and consciousness"
+    },
+    "robotics": {
+      "icon": "🤖",
+      "description": "Physical embodiment and interaction"
+    },
+    "other": {
+      "icon": "🔬",
+      "description": "Other technological breakthroughs"
+    }
+  }
+}

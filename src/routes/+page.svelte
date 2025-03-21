@@ -19,6 +19,7 @@
 	import NewsTicker from '$lib/components/NewsTicker.svelte';
 	import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
 	import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+	import AGIRoadmap from '$lib/components/AGIRoadmap.svelte';
 
 	// Custom news items to bypass the API
 	const customNewsItems = [
@@ -166,6 +167,10 @@
 
 	<!-- Rest of the content -->
 	<FuturePredictions class="future-predictions-container" />
+
+	<div class="agi-roadmap-container">
+		<AGIRoadmap />
+	</div>
 
 	<FAQ class="faq-container" />
 
@@ -492,6 +497,13 @@
 		:global(.main-subtitle) {
 			font-size: clamp(1rem, 2vw, 1.1rem);
 		}
+	}
+
+	.agi-roadmap-container {
+		width: 100%;
+		max-width: 800px;
+		margin: 2rem auto;
+		padding: 0 1rem;
 	}
 </style>
 

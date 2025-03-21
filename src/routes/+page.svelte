@@ -144,29 +144,10 @@
 		<Timeline />
 	</div>
 
-	<!-- Removing KnowledgeMeter component -->
-	<div class="book-callout-wrapper">
-		<BookCallout
-			title="Navigate the Path to Singularity"
-			subtitle="Want to know more?"
-			description="Read the book to learn how to survive and thrive in the AI future. Get the insights and strategies you need to prepare for the technological changes that will reshape our world."
-			buttonText="Explore the Book"
-			buttonLink="/sample"
-		/>
-	</div>
-
-	<!-- Add Featured Posts before the predictions section -->
-	<div class="featured-posts-container">
-		<FeaturedPosts
-			title="Editor's Picks"
-			subtitle="Essential reading for understanding the AI revolution"
-			maxPosts={2}
-			showImages={true}
-		/>
-	</div>
-
 	<!-- Rest of the content -->
 	<FuturePredictions class="future-predictions-container" />
+
+
 
 	<div class="agi-roadmap-container">
 		<AGIRoadmap />
@@ -178,12 +159,26 @@
 		<NewsletterSignup />
 	</div>
 
+	<div class="discord-button-container">
+		<DiscordButton />
+	</div>
+
 	<div class="recent-posts">
 		<LatestNews />
 	</div>
 
-	<div class="discord-button-container">
-		<DiscordButton />
+	<div class="book-callout-container">
+		<BookCallout />
+	</div>
+
+	<!-- Add Featured Posts before the predictions section -->
+	<div class="featured-posts-container">
+		<FeaturedPosts
+			title="Editor's Picks"
+			subtitle="Essential reading for understanding the AI revolution"
+			maxPosts={2}
+			showImages={true}
+		/>
 	</div>
 
 	<!-- Replace Treasure Tavern Promo with enhanced component -->

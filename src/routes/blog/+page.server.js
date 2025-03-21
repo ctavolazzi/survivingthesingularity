@@ -5,6 +5,14 @@ export async function load() {
   // Define blog posts directly with their routes
   const posts = [
     {
+      title: 'The Future of Neural Interfaces: A Comprehensive Guide',
+      date: '2024-03-09',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/future-of-neural-interfaces',
+      excerpt: 'Explore recent breakthroughs, future prospects, and ethical considerations in neural interfaces and brain-computer interfaces (BCIs).',
+      image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80'
+    },
+    {
       title: 'The Rise of Synthetic Biological Intelligence: A New Era in Computing',
       date: '2025-03-06',
       author: 'Christopher Tavolazzi',

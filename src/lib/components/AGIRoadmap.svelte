@@ -95,60 +95,47 @@
 
         <!-- Supporting Data -->
         <div class="supporting-data">
-          <h4 class="text-xl font-semibold mb-4 text-white">Supporting Data</h4>
+          <h4 class="text-xl font-semibold mb-3 text-white">Supporting Data</h4>
           <div class="space-y-3">
             {#each technology.articles as article}
-              <div class="article-accordion bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-gray-600 transition-all duration-300">
-                <button
-                  class="w-full flex items-center justify-between p-4 cursor-pointer"
-                  on:click={() => toggleArticle(article.url)}
-                >
-                  <div class="flex items-center gap-4">
-                    <!-- Article Thumbnail -->
-                    <div class="article-thumbnail w-24 h-24 bg-gray-700 rounded overflow-hidden flex-shrink-0">
-                      {#if article.thumbnail}
-                        <img
-                          src={article.thumbnail}
-                          alt={article.title}
-                          class="w-full h-full object-contain p-2"
-                        />
-                      {:else}
-                        <div class="w-full h-full flex items-center justify-center text-gray-400">
-                          📄
-                        </div>
-                      {/if}
-                    </div>
+              <a
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 overflow-hidden"
+              >
+                <div class="flex items-start p-4">
+                  <!-- Article Thumbnail -->
+                  <div class="article-thumbnail w-20 h-20 bg-gray-700/50 rounded-md overflow-hidden flex-shrink-0">
+                    {#if article.thumbnail}
+                      <img
+                        src={article.thumbnail}
+                        alt={article.title}
+                        class="w-full h-full object-cover"
+                      />
+                    {:else}
+                      <div class="w-full h-full flex items-center justify-center text-gray-400">
+                        📄
+                      </div>
+                    {/if}
+                  </div>
 
-                    <!-- Article Title and Date -->
-                    <div class="text-left">
-                      <p class="font-medium text-white text-lg">{article.title}</p>
+                  <div class="flex-grow px-4">
+                    <!-- Title and Date -->
+                    <div class="flex flex-col">
+                      <h3 class="text-lg font-medium text-white mb-1">{article.title}</h3>
                       <p class="text-sm text-gray-400">{formatDate(article.date)}</p>
                     </div>
                   </div>
 
-                  <!-- Expand/Collapse Icon -->
-                  <span class="text-gray-400 transform transition-transform duration-300" class:rotate-180={expandedArticles.has(article.url)}>
-                    ▼
-                  </span>
-                </button>
-
-                {#if expandedArticles.has(article.url)}
-                  <div class="p-4 border-t border-gray-700" transition:slide={{ duration: 300 }}>
-                    <p class="text-gray-300 mb-4">{article.excerpt}</p>
-                    <a
-                      href={article.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300"
-                    >
-                      Read more
-                      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </a>
+                  <!-- Chevron Icon -->
+                  <div class="text-gray-400 self-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
-                {/if}
-              </div>
+                </div>
+              </a>
             {/each}
           </div>
         </div>
@@ -217,5 +204,30 @@
 
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(75, 85, 99, 0.7);
+  }
+
+  .article-thumbnail img {
+    transition: transform 0.3s ease;
+  }
+
+  .article-thumbnail:hover img {
+    transform: scale(1.05);
+  }
+
+  .supporting-data {
+    margin-top: 1.5rem;
+  }
+
+  .supporting-data a {
+    transition: all 0.2s ease;
+  }
+
+  .supporting-data a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .supporting-data a:hover .text-gray-400 {
+    color: #ffffff;
   }
 </style>

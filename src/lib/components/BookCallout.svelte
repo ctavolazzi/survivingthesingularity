@@ -29,14 +29,16 @@
       <div class="flex-shrink-0 relative">
         <div class="absolute inset-0 bg-blue-500/30 opacity-30 blur-2xl rounded-full"></div>
         <div class="book-glow-effect"></div>
-        <SafeResponsiveImage
-          src={imageSrc}
-          srcWebp={imageWebPSrc}
-          srcset=""
-          srcsetWebp=""
-          alt="Book cover"
-          class="w-40 md:w-48 h-auto rounded-md shadow-[0_10px_25px_rgba(59,130,246,0.3)] mx-auto relative z-10 transform hover:scale-105 transition-transform duration-300"
-        />
+        <a href={buttonLink} class="block transform hover:scale-105 transition-transform duration-300">
+          <picture>
+            <source srcset="/images/Surviving-the-Singularity-Cover.webp" type="image/webp">
+            <img
+              src="/images/Surviving-the-Singularity-Cover.png"
+              alt="Surviving the Singularity Book Cover"
+              class="w-40 md:w-48 h-auto rounded-md shadow-[0_10px_25px_rgba(59,130,246,0.3)] mx-auto relative z-10"
+            />
+          </picture>
+        </a>
       </div>
     </div>
 

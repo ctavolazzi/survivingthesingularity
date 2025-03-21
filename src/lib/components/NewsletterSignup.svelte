@@ -3,7 +3,8 @@
     import Button from '$lib/components/ui/Button.svelte';
     import Input from '$lib/components/ui/Input.svelte';
     import Checkbox from '$lib/components/ui/Checkbox.svelte';
-    import { fade } from 'svelte/transition';
+    import { fade, fly } from 'svelte/transition';
+    import { elasticOut } from 'svelte/easing';
 
     let email = '';
     let marketingOptIn = true; // Default to checked for better conversion
@@ -63,141 +64,179 @@
     }
   </script>
 
-  <div class="newsletter-signup rounded-lg shadow-md p-6 bg-white dark:bg-gray-800" class:dark={$darkMode}>
+  <div class="newsletter-signup" class:dark={$darkMode}>
     {#if isSuccess}
-      <div class="success-message" in:fade={{ duration: 300 }}>
+      <div class="success-message" in:fly={{ y: 20, duration: 500, easing: elasticOut }}>
         <div class="checkmark-circle">
           <div class="checkmark"></div>
         </div>
-        <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Subscription Successful!</h2>
-        <p class="text-center text-green-600 dark:text-green-400 mb-4">{message}</p>
-        <p class="text-sm text-center text-gray-600 dark:text-gray-400">
-          We've added your email to our list. You'll be the first to know about new content and updates.
+        <h2 class="success-title">Welcome Aboard! 🚀</h2>
+        <p class="success-text">{message}</p>
+        <p class="success-subtext">
+          Get ready for insights that will help you thrive in the age of AI.
         </p>
       </div>
     {:else}
       <form on:submit={handleSubmit} id="newsletter-subscribe-form" name="newsletter-subscribe-form">
-        <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Subscribe to our newsletter</h2>
-        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-          Stay updated with the latest insights on AI, technology, and the future of humanity.
-        </p>
-
-        <Input
-          type="email"
-          id="newsletter-email"
-          name="email"
-          label="Email Address"
-          required={true}
-          value={email}
-          error={emailError}
-          on:input={handleEmailInput}
-          placeholder="your@email.com"
-          disabled={isLoading}
-        />
-
-        <Checkbox
-          id="marketing_opt_in"
-          label="I agree to receive marketing emails about Surviving the Singularity"
-          checked={marketingOptIn}
-          on:change={e => marketingOptIn = e.detail.checked}
-        />
-
-        <div class="mt-4">
-          <Button
-            type="submit"
-            variant="primary"
-            fullWidth={true}
-            loading={isLoading}
-            disabled={isLoading}
-          >
-            {isLoading ? 'Subscribing...' : 'Subscribe'}
-          </Button>
+        <div class="form-header">
+          <h2>Join Our Newsletter</h2>
+          <p class="subtitle">
+            Stay ahead of AI developments with curated insights and practical strategies.
+          </p>
         </div>
 
-        {#if message && !isSuccess}
-          <p class="mt-3 text-center font-medium text-red-600 dark:text-red-400">
-            {message}
-          </p>
-        {/if}
+        <div class="form-content">
+          <Input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            label="Email Address"
+            required={true}
+            value={email}
+            error={emailError}
+            on:input={handleEmailInput}
+            placeholder="your@email.com"
+            disabled={isLoading}
+          />
 
-        <p class="text-xs text-center mt-4 text-gray-500 dark:text-gray-400">
-          We respect your privacy. Unsubscribe at any time.
-        </p>
+          <div class="checkbox-wrapper">
+            <Checkbox
+              id="marketing_opt_in"
+              label="Send me updates about surviving the AI revolution"
+              checked={marketingOptIn}
+              on:change={e => marketingOptIn = e.detail.checked}
+            />
+          </div>
+
+          <div class="button-wrapper">
+            <Button
+              type="submit"
+              variant="primary"
+              fullWidth={true}
+              loading={isLoading}
+              disabled={isLoading}
+            >
+              {isLoading ? 'Joining...' : 'Join Newsletter'}
+            </Button>
+          </div>
+
+          {#if message && !isSuccess}
+            <p class="error-message" in:fade={{ duration: 200 }}>
+              {message}
+            </p>
+          {/if}
+
+          <p class="privacy-notice">
+            We value your privacy. Unsubscribe anytime with one click.
+          </p>
+        </div>
       </form>
     {/if}
   </div>
 
   <style>
     .newsletter-signup {
-      --bg-color: #ffffff;
-      --text-color: #2c3e50;
-      --input-bg: #f8f9fa;
-      --input-border: #ced4da;
-      --button-bg: #2c3e50;
-      --button-text: #ffffff;
-      --button-hover: #34495e;
-      --disclaimer-color: #6c757d;
+      --gradient-start: rgba(59, 130, 246, 0.1);
+      --gradient-end: rgba(147, 51, 234, 0.1);
+      --border-color: rgba(59, 130, 246, 0.2);
+      --text-primary: #1a1a1a;
+      --text-secondary: #4a5568;
+      --success-color: #4ade80;
+      --error-color: #ef4444;
 
       width: 100%;
       max-width: min(500px, 100% - 2rem);
       margin: 2rem auto;
-      padding: min(2rem, 5vw);
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
       transition: all 0.3s ease;
-      box-sizing: border-box;
     }
 
-    /* Ensure form elements stay within bounds */
-    .newsletter-signup form {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .newsletter-signup input,
-    .newsletter-signup button {
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-
-    /* Ensure text content wraps properly */
-    .newsletter-signup h2,
-    .newsletter-signup p {
-      max-width: 100%;
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      word-break: break-word;
-      hyphens: auto;
+    .newsletter-signup:hover {
+      box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
     }
 
     :global(.dark) .newsletter-signup {
-      --bg-color: #1f2937;
-      --text-color: #e5e7eb;
-      --input-bg: #374151;
-      --input-border: #4b5563;
-      --button-bg: #e5e7eb;
-      --button-text: #1f2937;
-      --button-hover: #d1d5db;
-      --disclaimer-color: #9ca3af;
+      --gradient-start: rgba(59, 130, 246, 0.05);
+      --gradient-end: rgba(147, 51, 234, 0.05);
+      --border-color: rgba(59, 130, 246, 0.1);
+      --text-primary: #e5e7eb;
+      --text-secondary: #9ca3af;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
     h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .form-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .checkbox-wrapper {
+      margin-top: -0.5rem;
+    }
+
+    .button-wrapper {
+      margin-top: 0.5rem;
+    }
+
+    .privacy-notice {
       text-align: center;
-      color: var(--text-color);
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-top: 1rem;
     }
 
     .success-message {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .success-title {
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    .success-text {
+      color: var(--text-primary);
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+
+    .success-subtext {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
     }
 
     .checkmark-circle {
@@ -207,36 +246,103 @@
       display: inline-block;
       vertical-align: top;
       margin-bottom: 1rem;
+      background: rgba(74, 222, 128, 0.1);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
     }
 
-    .checkmark-circle .checkmark {
+    .checkmark {
       border-radius: 5px;
+      height: 50%;
+      width: 25%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%) rotate(45deg);
+      transform-origin: center;
     }
 
-    .checkmark-circle .checkmark:after {
+    .checkmark:after {
       content: '';
       display: block;
-      width: 25px;
-      height: 50px;
-      border: solid #4ade80;
-      border-width: 0 4px 4px 0;
-      transform: rotate(45deg);
-      position: absolute;
-      top: 0;
-      left: 18px;
+      width: 100%;
+      height: 100%;
+      border: solid var(--success-color);
+      border-width: 0 2px 2px 0;
+      animation: checkmark 0.3s ease-in-out forwards;
+    }
+
+    .error-message {
+      text-align: center;
+      color: var(--error-color);
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.5rem;
+      border-radius: 6px;
+      background: rgba(239, 68, 68, 0.1);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+      }
+    }
+
+    @keyframes checkmark {
+      0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+      }
+      20% {
+        height: 0;
+        width: 100%;
+        opacity: 1;
+      }
+      40% {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+      }
     }
 
     @media (max-width: 768px) {
       .newsletter-signup {
-        margin: 1rem auto;
-        padding: min(1.5rem, 4vw);
+        margin: 1.5rem auto;
+        padding: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 0.875rem;
       }
     }
 
     @media (max-width: 480px) {
       .newsletter-signup {
-        margin: 0.5rem auto;
-        padding: min(1rem, 3vw);
+        margin: 1rem auto;
+        padding: 1.25rem;
+      }
+
+      .form-header {
+        margin-bottom: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      .form-content {
+        gap: 1rem;
       }
     }
   </style>

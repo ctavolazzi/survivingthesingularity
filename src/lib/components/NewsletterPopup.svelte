@@ -4,6 +4,7 @@
   import { elasticOut, cubicOut } from 'svelte/easing';
   import { supabase } from '$lib/utils/supabaseClient';
   import { newsletterSubmitted } from '$lib/stores/newsletterSubmitted';
+  import { darkMode } from '$lib/stores/darkMode';
 
   export let delayMs = 5000;
   export let scrollThreshold = 0.5;
@@ -17,26 +18,29 @@
   let isSuccess = false;
   let showOptIn = false;
   let subscriberCount = 0;
+  let scrollProgress = 0;
 
   $: isValid = email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   onMount(async () => {
     mounted = true;
-    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', handleScroll);
     setTimeout(showPopup, delayMs);
 
     // Fetch subscriber count
     const { count, error } = await supabase
       .from('newsletter_subscribers')
       .select('*', { count: 'exact' });
-    
+
     if (!error) {
       subscriberCount = count;
     }
   });
 
-  function checkScroll() {
+  function handleScroll() {
     const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    scrollProgress = Math.min(scrollPercentage * 100, 100);
+
     if (scrollPercentage > scrollThreshold) {
       showPopup();
     }
@@ -45,7 +49,7 @@
   function showPopup() {
     if (!$newsletterSubmitted) {
       isOpen = true;
-      window.removeEventListener('scroll', checkScroll);
+      window.removeEventListener('scroll', handleScroll);
     }
   }
 
@@ -67,9 +71,9 @@
     try {
       const { error } = await supabase
         .from('newsletter_subscribers')
-        .insert([{ 
-          email: email.trim(), 
-          marketing_opt_in: marketingOptIn 
+        .insert([{
+          email: email.trim(),
+          marketing_opt_in: marketingOptIn
         }]);
 
       if (error) throw error;
@@ -83,8 +87,8 @@
       setTimeout(() => closePopup(), 3000);
     } catch (error) {
       console.error('Subscription error:', error);
-      message = error.code === '23505' 
-        ? 'This email is already subscribed.' 
+      message = error.code === '23505'
+        ? 'This email is already subscribed.'
         : 'Error subscribing. Please try again.';
     } finally {
       isLoading = false;
@@ -104,68 +108,82 @@
 </script>
 
 {#if mounted && isOpen && !$newsletterSubmitted}
-  <div class="newsletter-popup-container" transition:fade="{{ duration: 300 }}">
-    <div class="newsletter-popup" 
-         in:fly="{{ y: 100, duration: 800, easing: elasticOut }}" 
+  <div class="newsletter-popup-container" class:dark={$darkMode} transition:fade={{ duration: 300 }}>
+    <div class="newsletter-popup"
+         in:fly="{{ y: 100, duration: 800, easing: elasticOut }}"
          out:scale="{{ duration: 300, start: 1, opacity: 0 }}">
       <button class="close-button" on:click={closePopup} aria-label="Close newsletter popup">×</button>
+
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: {scrollProgress}%"></div>
+      </div>
+
       <div class="popup-content">
         {#if isSuccess}
           <div class="success-message" in:scale="{{ duration: 300, easing: cubicOut }}">
-            <h2>Thank You For Subscribing!</h2>
-            <p>We appreciate your interest. You'll hear from us soon!</p>
+            <div class="checkmark-circle">
+              <div class="checkmark"></div>
+            </div>
+            <h2>Welcome to the Community! 🚀</h2>
+            <p class="success-text">You're now part of a growing movement preparing for the AI revolution.</p>
           </div>
         {:else}
           <div id="mc_embed_signup">
             <form on:submit={handleSubmit} id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
-              <div id="mc_embed_signup_scroll">
-                <h2>Get The Survival Newsletter</h2>
-                <p class="newsletter-description">Join {subscriberCount.toLocaleString()}+ forward-thinkers and receive our insights directly in your inbox.</p>
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+              <div class="form-header">
+                <h2>Join {subscriberCount.toLocaleString()}+ Forward-Thinkers</h2>
+                <p class="subtitle">Get weekly insights on thriving in the age of AI</p>
+              </div>
+
+              <div class="form-content">
+                <div class="input-group">
+                  <label for="mce-EMAIL">Email Address <span class="required">*</span></label>
                   <div class="input-wrapper">
-                    <input 
-                      type="email" 
-                      name="EMAIL" 
-                      class="required email" 
-                      id="mce-EMAIL" 
-                      required 
-                      placeholder="Your email address" 
+                    <input
+                      type="email"
+                      name="EMAIL"
+                      class="required email"
+                      id="mce-EMAIL"
+                      required
+                      placeholder="your@email.com"
                       bind:value={email}
                       on:input={validateEmail}
                     >
                     {#if isValid}
-                      <span class="valid-email" in:scale="{{ duration: 200 }}">✓</span>
+                      <span class="valid-indicator" in:scale="{{ duration: 200 }}">✓</span>
                     {/if}
                   </div>
                 </div>
+
                 {#if showOptIn}
-                  <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group" in:scale="{{ duration: 300, easing: cubicOut }}">
-                    <div class="content__gdpr">
-                      <label class="checkbox-container">
-                        <input type="checkbox" id="gdpr_122232" name="gdpr[122232]" value="Y" class="gdpr" bind:checked={marketingOptIn}>
-                        <span class="checkbox-custom"></span>
-                        <span class="checkbox-text">I agree to receive the newsletter via email. You can unsubscribe at any time.</span>
-                      </label>
-                    </div>
+                  <div class="opt-in-group" in:scale="{{ duration: 300, easing: cubicOut }}">
+                    <label class="checkbox-container">
+                      <input type="checkbox" id="gdpr_122232" name="gdpr[122232]" value="Y" bind:checked={marketingOptIn}>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Send me AI survival strategies and insights</span>
+                    </label>
                   </div>
                 {/if}
-                <div class="clear">
-                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" disabled={isLoading || !isValid}>
-                    {#if isLoading}
-                      <div class="spinner"></div>
-                    {:else}
-                      Prepare Me for the Singularity
-                    {/if}
-                  </button>
-                </div>
-                <p class="legal-text">You may opt out at any time. We will never sell your data without your consent.</p>
+
+                <button type="submit" class="submit-button" disabled={isLoading || !isValid}>
+                  {#if isLoading}
+                    <div class="spinner"></div>
+                  {:else}
+                    Join the Movement
+                  {/if}
+                </button>
+
+                {#if message}
+                  <p class="message" class:error={!isSuccess} in:scale="{{ duration: 300 }}">{message}</p>
+                {/if}
+
+                <p class="privacy-notice">
+                  Your privacy matters. Unsubscribe instantly at any time.
+                </p>
               </div>
             </form>
           </div>
-        {/if}
-        {#if message}
-          <p class="message" in:scale="{{ duration: 300 }}">{message}</p>
         {/if}
       </div>
     </div>
@@ -179,284 +197,343 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     z-index: 1000;
+    padding: 1rem;
   }
 
   .newsletter-popup {
-    background: var(--color-bg-primary);
-    color: var(--color-text-primary);
+    --gradient-start: rgba(59, 130, 246, 0.1);
+    --gradient-end: rgba(147, 51, 234, 0.1);
+    --border-color: rgba(59, 130, 246, 0.2);
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a5568;
+    --success-color: #4ade80;
+    --error-color: #ef4444;
+
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     position: relative;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    border-top: 3px solid black;
+    box-shadow:
+      0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 -2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
-  .popup-content {
-    background-color: var(--color-bg-primary);
-    margin: 0;
-    padding: 1.5rem;
+  :global(.dark) .newsletter-popup {
+    --gradient-start: rgba(59, 130, 246, 0.05);
+    --gradient-end: rgba(147, 51, 234, 0.05);
+    --border-color: rgba(59, 130, 246, 0.1);
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+  }
+
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    transition: width 0.3s ease;
   }
 
   .close-button {
     position: absolute;
-    top: 0.75rem;
+    top: 1rem;
     right: 1rem;
     background: none;
     border: none;
     font-size: 1.5rem;
+    color: var(--text-secondary);
     cursor: pointer;
-    color: var(--color-text-primary);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
   }
 
-  .success-message {
-    text-align: center;
-    padding: 2rem 0;
+  .close-button:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
   }
 
-  .message {
+  .popup-content {
+    padding: 2rem;
+  }
+
+  .form-header {
     text-align: center;
-    margin-top: 1rem;
-    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.025em;
+  }
+
+  .subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .input-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
   }
 
   .input-wrapper {
     position: relative;
   }
 
-  .valid-email {
-    color: var(--color-success);
+  input[type="email"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  input[type="email"]:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    outline: none;
+  }
+
+  .valid-indicator {
     position: absolute;
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
+    color: var(--success-color);
+    font-size: 1.25rem;
   }
 
-  .legal-text {
-    font-size: 0.75rem;
-    color: var(--color-text-secondary);
-    margin-top: 0.75rem;
-    text-align: center;
+  .opt-in-group {
+    margin-top: -0.5rem;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+  }
+
+  .checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked ~ .checkbox-custom {
+    background: #3b82f6;
+    border-color: #3b82f6;
+  }
+
+  input[type="checkbox"]:checked ~ .checkbox-custom:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .checkbox-text {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
     line-height: 1.4;
   }
 
+  .submit-button {
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.875rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .submit-button:not(:disabled):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  }
+
+  .submit-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
   .spinner {
-    border: 2px solid var(--color-bg-secondary);
-    border-top: 2px solid var(--color-primary);
-    border-radius: 50%;
     width: 20px;
     height: 20px;
-    animation: spin 1s linear infinite;
-    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s linear infinite;
+  }
+
+  .message {
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+  }
+
+  .message.error {
+    color: var(--error-color);
+    background: rgba(239, 68, 68, 0.1);
+  }
+
+  .privacy-notice {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+
+  .success-message {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .checkmark-circle {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1rem;
+    background: rgba(74, 222, 128, 0.1);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  .checkmark {
+    border-radius: 5px;
+    height: 50%;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(45deg);
+    transform-origin: center;
+  }
+
+  .checkmark:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: solid var(--success-color);
+    border-width: 0 2px 2px 0;
+    animation: checkmark 0.3s ease-in-out forwards;
+  }
+
+  .success-text {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    margin-top: 1rem;
   }
 
   @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    to { transform: rotate(360deg); }
   }
 
-  /* Responsive styles */
-  @media (max-width: 600px) {
-    .newsletter-popup {
-      width: 100%;
-      max-width: none;
-      border-radius: 0;
-      margin: 0;
-      padding: 0;
-      border-top: 3px solid black;
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+  }
+
+  @keyframes checkmark {
+    0% { height: 0; width: 0; opacity: 1; }
+    20% { height: 0; width: 100%; opacity: 1; }
+    40% { height: 100%; width: 100%; opacity: 1; }
+  }
+
+  @media (max-width: 768px) {
+    .newsletter-popup-container {
+      padding: 0.75rem;
     }
 
     .popup-content {
-      padding: 1rem;
-    }
-
-    :global(#mc_embed_signup h2) {
-      font-size: 1.3rem !important;
-    }
-
-    :global(#mc_embed_signup .newsletter-description) {
-      font-size: 0.8rem !important;
-    }
-
-    :global(#mc_embed_signup .mc-field-group input) {
-      padding: 0.6rem 0.8rem !important;
-      font-size: 0.9rem !important;
-    }
-
-    :global(#mc_embed_signup .button) {
-      padding: 0.8rem !important;
-      font-size: 0.8rem !important;
-      white-space: nowrap;
-    }
-
-    :global(#mc_embed_signup .checkbox-text) {
-      font-size: 0.7rem !important;
-    }
-  }
-
-  /* Override Mailchimp styles */
-  :global(#mc_embed_signup) {
-    background: transparent !important;
-    font-family: 'Arial', sans-serif !important;
-    width: 100% !important;
-    color: var(--color-text-primary) !important;
-  }
-
-  :global(#mc_embed_signup form) {
-    padding: 0 !important;
-  }
-
-  :global(#mc_embed_signup h2) {
-    font-size: 1.8rem !important;
-    margin-bottom: 0.5rem !important;
-    text-align: center !important;
-  }
-
-  :global(#mc_embed_signup .newsletter-description) {
-    font-size: 0.9rem !important;
-    text-align: center !important;
-    margin-bottom: 1rem !important;
-    line-height: 1.4 !important;
-  }
-
-  :global(#mc_embed_signup .mc-field-group) {
-    width: 100% !important;
-    padding-bottom: 1% !important;
-  }
-
-  :global(#mc_embed_signup .mc-field-group input) {
-    width: 100% !important;
-    max-width: none !important;
-    box-sizing: border-box !important;
-    padding: 0.8rem 1rem !important;
-    font-size: 1rem !important;
-    border: 2px solid var(--color-border) !important;
-    border-radius: 4px !important;
-    background-color: var(--color-bg-secondary) !important;
-    color: var(--color-text-primary) !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-container) {
-    display: flex !important;
-    align-items: flex-start !important;
-    position: relative !important;
-    padding-left: 35px !important;
-    margin-bottom: 12px !important;
-    cursor: pointer !important;
-    font-size: 14px !important;
-    user-select: none !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-container input) {
-    position: absolute !important;
-    opacity: 0 !important;
-    cursor: pointer !important;
-    height: 0 !important;
-    width: 0 !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-custom) {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    height: 25px !important;
-    width: 25px !important;
-    background-color: var(--color-bg-secondary) !important;
-    border: 1px solid var(--color-border) !important;
-    border-radius: 4px !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-container:hover input ~ .checkbox-custom) {
-    background-color: var(--color-bg-hover) !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-container input:checked ~ .checkbox-custom) {
-    background-color: var(--color-primary) !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-custom:after) {
-    content: "" !important;
-    position: absolute !important;
-    display: none !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-container input:checked ~ .checkbox-custom:after) {
-    display: block !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-container .checkbox-custom:after) {
-    left: 9px !important;
-    top: 5px !important;
-    width: 5px !important;
-    height: 10px !important;
-    border: solid white !important;
-    border-width: 0 3px 3px 0 !important;
-    transform: rotate(45deg) !important;
-  }
-
-  :global(#mc_embed_signup .checkbox-text) {
-    margin-left: 8px !important;
-  }
-
-  :global(#mc_embed_signup .button) {
-    background: linear-gradient(135deg, #ff8f00, #ff6b00) !important;
-    color: #ffffff !important;
-    border: none !important;
-    padding: 1rem !important;
-    font-size: 0.9rem !important;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
-    border-radius: 30px !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease !important;
-    width: 100% !important;
-    max-width: none !important;
-    height: auto !important;
-    margin: 1rem auto !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.3) !important;
-    text-align: center !important;
-    line-height: 1 !important;
-  }
-
-  :global(#mc_embed_signup .button:hover) {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.5) !important;
-    background: linear-gradient(135deg, #ffa000, #ff7900) !important;
-  }
-
-  @media (max-width: 600px) {
-    .newsletter-popup {
       padding: 1.5rem;
-      border-radius: 0;
-      max-width: 100%;
     }
 
-    :global(#mc_embed_signup h2) {
-      font-size: 1.5rem !important;
+    h2 {
+      font-size: 1.25rem;
     }
 
-    :global(#mc_embed_signup .newsletter-description) {
-      font-size: 0.8rem !important;
+    .subtitle {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .newsletter-popup-container {
+      padding: 0.5rem;
     }
 
-    :global(#mc_embed_signup .mc-field-group input) {
-      padding: 0.7rem 0.9rem !important;
-      font-size: 0.9rem !important;
+    .popup-content {
+      padding: 1.25rem;
     }
 
-    :global(#mc_embed_signup .button) {
-      padding: 0.8rem !important;
-      font-size: 0.9rem !important;
+    .form-content {
+      gap: 1rem;
     }
 
-    :global(#mc_embed_signup .checkbox-text) {
-      font-size: 0.75rem !important;
+    .submit-button {
+      font-size: 0.875rem;
+      padding: 0.75rem;
     }
   }
 </style>

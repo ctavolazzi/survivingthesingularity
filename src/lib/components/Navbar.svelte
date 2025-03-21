@@ -152,12 +152,8 @@
     class="mobile-menu w-full bg-gray-800 z-40 shadow-lg overflow-y-auto"
     transition:slide={{ duration: 300 }}
   >
-    <div class="container mx-auto px-4 py-6">
-      <div class="flex justify-between items-center mb-6">
-        <a href="/" class="flex items-center" on:click={(e) => navigateTo('/', e)}>
-          <img src="/android-chrome-192x192.png" class="mr-3 h-8" alt="Surviving the Singularity Logo" loading="lazy">
-          <span class="self-center text-xl font-semibold text-white">Surviving the Singularity</span>
-        </a>
+    <div class="container mx-auto px-4 py-2">
+      <div class="flex justify-end items-center">
         <button
           class="text-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-600 rounded-lg text-sm p-2.5"
           on:click={closeMenu}
@@ -169,7 +165,7 @@
         </button>
       </div>
 
-      <nav class="space-y-4">
+      <nav class="space-y-2">
         <a
           href="/about"
           class="mobile-nav-item {currentPath === '/about' ? 'active' : ''}"

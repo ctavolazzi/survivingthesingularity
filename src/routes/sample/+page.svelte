@@ -5,16 +5,14 @@
   import sampleContent from '$lib/data/sample.md?raw';
   import ContactForm from '$lib/components/ContactForm.svelte';
   import Divider from '$lib/components/Divider.svelte';
-  import StSBookImage from '$lib/images/default-blog-image.png';
-  import StSBookImageWebP from '$lib/images/default-blog-image.webp';
+  import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
+  import StSBookImageWebP from '$lib/images/Surviving-the-Singularity-Cover.webp';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
   import SafeResponsiveImage from '$lib/components/SafeResponsiveImage.svelte';
 
-  // Define responsive image sets - in production these would be generated at build time
-  const bookCoverSrcSet = `${StSBookImage} 500w, ${StSBookImage} 800w, ${StSBookImage} 1200w`;
-  const bookCoverSrcSetWebP = `${StSBookImageWebP} 500w, ${StSBookImageWebP} 800w, ${StSBookImageWebP} 1200w`;
-  const bookCoverSizes = "(max-width: 600px) 80vw, (max-width: 1000px) 60vw, 40vw";
+  // Define responsive image sizes - halved from original values
+  const bookCoverSizes = "(max-width: 600px) 40vw, (max-width: 1000px) 30vw, 20vw";
 
   let animatedSections = {};
   let isScrolled = false;
@@ -85,10 +83,10 @@
   <div id="book-preview" class="animate-on-scroll flex flex-col md:flex-row items-center mb-10 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-2xl p-6 shadow-xl">
     <a href="/book" class="mb-8 md:mb-0 md:mr-10 transform transition-all duration-500 hover:scale-105 hover:rotate-1 focus:outline-none focus:ring-4 focus:ring-orange-200 dark:focus:ring-orange-900 rounded-xl">
       <SafeResponsiveImage
-        src={StSBookImage}
-        srcWebp={StSBookImageWebP}
-        srcset={bookCoverSrcSet}
-        srcsetWebp={bookCoverSrcSetWebP}
+        src="/images/Surviving-the-Singularity-Cover.png"
+        srcWebp="/images/Surviving-the-Singularity-Cover.webp"
+        srcset="/images/Surviving-the-Singularity-Cover.png"
+        srcsetWebp="/images/Surviving-the-Singularity-Cover.webp"
         sizes={bookCoverSizes}
         alt="Surviving the Singularity"
         class="StS-book-image rounded-xl shadow-2xl"
@@ -217,11 +215,14 @@
   .StS-book-image {
     display: block;
     margin: 1rem auto;
-    max-width: 100%;
+    max-width: 100px;  /* Drastically reduced from 200px */
+    max-height: 150px;  /* Fixed height instead of viewport-based */
+    width: auto;
     height: auto;
-    border-radius: 16px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15),
-                0 5px 15px rgba(0, 0, 0, 0.08),
+    object-fit: contain;
+    border-radius: 8px;  /* Reduced border radius to match smaller size */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15),
+                0 3px 8px rgba(0, 0, 0, 0.08),
                 0 0 0 1px rgba(0, 0, 0, 0.05);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }

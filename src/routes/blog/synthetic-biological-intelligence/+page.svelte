@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
@@ -17,6 +18,7 @@
     description: 'Explore the groundbreaking field of Synthetic Biological Intelligence that combines living neurons with silicon chips to create a new era of computing systems.'
   };
 
+  let scrollProgress = 0;
   let audio;
 
   // Briefing Document controls
@@ -176,7 +178,14 @@
   ];
 
   onMount(() => {
-    // Add any audio initialization logic if needed
+    const updateScrollProgress = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight - windowHeight;
+      scrollProgress = (window.scrollY / documentHeight) * 100;
+    };
+
+    window.addEventListener('scroll', updateScrollProgress);
+    return () => window.removeEventListener('scroll', updateScrollProgress);
   });
 </script>
 
@@ -211,10 +220,11 @@
       <!-- Add SocialShare component -->
       <SocialShare
         title={post.title}
-        description={post.description}
+        description="Explore the emerging field of Synthetic Biological Intelligence and its implications for the future of computing and AI."
         image={post.image}
       />
 
+      <!-- Audio Player -->
       <div class="audio-player-container mb-6">
         <div class="flex items-center">
           <div class="audio-player-icon mr-3">

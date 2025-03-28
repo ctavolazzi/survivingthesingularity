@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { fade, slide } from 'svelte/transition';
+  import { Image } from '$lib/components/ui';
 
   // Props with default values
   export let title = "Featured Articles";
@@ -65,7 +66,13 @@
         >
           {#if showImages && post.image}
             <div class="featured-image-container">
-              <img src={post.image} alt={post.title} class="featured-image" loading="lazy" />
+              <Image
+                src={post.image}
+                alt={post.title}
+                loading="lazy"
+                hoverEffect={true}
+                class="featured-image"
+              />
               <div class="featured-badge">Featured</div>
             </div>
           {/if}
@@ -166,11 +173,6 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease;
-  }
-
-  .featured-card:hover .featured-image {
-    transform: scale(1.05);
   }
 
   .featured-badge {

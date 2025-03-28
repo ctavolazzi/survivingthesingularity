@@ -20,6 +20,9 @@
 	import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
 	import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 	import AGIRoadmap from '$lib/components/AGIRoadmap.svelte';
+	import PathToSingularity from '$lib/components/PathToSingularity.svelte';
+	// Import our new UI components
+	import { Button } from '$lib/components/ui';
 
 	// Custom news items to bypass the API
 	const customNewsItems = [
@@ -128,6 +131,25 @@
 		<Countdown {targetDate} />
 	</div>
 
+	<!-- Path to Singularity Component -->
+	<div class="path-to-singularity-container">
+		<PathToSingularity />
+	</div>
+
+	<!-- Welcome Blurb Section (more concise) -->
+	<div class="welcome-blurb">
+		<div class="welcome-content">
+			<h2 class="welcome-title">Navigate the Technological Revolution</h2>
+			<p class="welcome-text">
+				Prepare for a future where AI and emerging technologies transform society. Our platform provides educational resources, expert insights, and practical strategies to help you thrive in the post-Singularity world.
+			</p>
+			<div class="welcome-buttons">
+				<Button href="/start-here" variant="primary">Start Here</Button>
+				<Button href="/about" variant="outline">Learn More</Button>
+			</div>
+		</div>
+	</div>
+
 	<!-- Add News Ticker near the top for high visibility -->
 	<div class="news-ticker-container">
 		<NewsTicker
@@ -140,14 +162,13 @@
 		/>
 	</div>
 
+	<!-- Timeline section doesn't need PathToSingularity since we added it separately -->
 	<div class="timeline-section">
 		<Timeline />
 	</div>
 
 	<!-- Rest of the content -->
 	<FuturePredictions class="future-predictions-container" />
-
-
 
 	<div class="agi-roadmap-container">
 		<AGIRoadmap />
@@ -202,8 +223,6 @@
 </div>
 
 <style>
-	/* Styles removed for components using inline styles for maximum speed */
-
 	.main-content {
 		max-width: 100%;
 		width: 100%;
@@ -221,8 +240,71 @@
 		margin-bottom: 0;
 	}
 
+	.path-to-singularity-container {
+		width: 100%;
+		max-width: 900px;
+		margin: 1rem auto;
+		padding: 0 1rem;
+	}
+
+	.welcome-blurb {
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 12px;
+		margin: 0.75rem auto;
+		max-width: 900px;
+		padding: 1.5rem;
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.welcome-title {
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		background: linear-gradient(90deg, #3182ce, #805ad5);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.welcome-text {
+		margin-bottom: 1.25rem;
+		line-height: 1.6;
+		color: var(--text-color);
+	}
+
+	.welcome-buttons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.news-ticker-container {
+		max-width: 1200px;
+		width: 95%;
+		margin: 0.25rem auto 0.25rem;
+		padding: 0 1rem;
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+
 	.timeline-section {
 		margin: 0 0.5rem;
+	}
+
+	.agi-roadmap-container {
+		width: 100%;
+		max-width: 800px;
+		margin: 2rem auto;
+		padding: 0 1rem;
+	}
+
+	.faq-container {
+		margin: 2rem auto;
+		max-width: 800px;
+		width: 100%;
 	}
 
 	.newsletter-container {
@@ -239,20 +321,70 @@
 		justify-content: center;
 	}
 
-	h2 {
-		color: #e2e8f0;
+	.recent-posts,
+	.book-callout-container {
+		margin: 1.5rem auto;
+		max-width: 800px;
+		width: 100%;
+	}
+
+	.featured-posts-container {
+		max-width: 1200px;
+		width: 95%;
+		margin: 0.75rem auto 0.5rem;
+		padding: 0 1rem;
+	}
+
+	.future-predictions-container {
+		margin: 1rem auto;
+		max-width: 900px;
+		width: 100%;
+	}
+
+	.treasure-tavern-container {
+		width: 100%;
+		max-width: 900px;
+		margin: 2rem auto 1.5rem;
+		padding: 0 1rem;
 	}
 
 	/* Responsive styles */
 	@media (min-width: 768px) {
 		.main-content {
-			max-width: 768px;
+			max-width: 1200px;
 			margin: 0 auto;
 			gap: 0.6rem;
 		}
 
 		.timeline-section {
-			margin: 0;
+			margin: 0 auto;
+			max-width: 900px;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.welcome-buttons {
+			flex-direction: column;
+			gap: 0.75rem;
+		}
+
+		.welcome-title {
+			font-size: 1.5rem;
+		}
+
+		.news-ticker-container {
+			width: 92%;
+			margin: 0.15rem auto 0.2rem;
+		}
+
+		.featured-posts-container {
+			width: 92%;
+			margin: 0.5rem auto 0.25rem;
+		}
+
+		.treasure-tavern-container {
+			margin: 1.5rem auto 1rem;
 		}
 	}
 
@@ -265,145 +397,17 @@
 		.countdown-container {
 			padding: 0 0.5rem;
 		}
-	}
 
-	/* Improved styling for the BookCallout component - ULTRA MINIMAL FOR SPEED */
-	:global(.book-callout-wrapper) {
-		margin-top: 0.3rem;
-		margin-bottom: 0.75rem;
-	}
-
-	/* Remove all decorative elements that could delay rendering */
-	:global(.book-callout-wrapper::before) {
-		display: none;
-	}
-
-	/* Updated Discord Component Styles */
-	.discord-container {
-		width: 100%;
-		max-width: 800px;
-		margin: 1rem auto;
-		padding: 0 1rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-
-	.discord-button {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: #5865F2;
-		color: white;
-		font-weight: bold;
-		padding: 0.75rem 2rem;
-		border-radius: 8px;
-		text-decoration: none;
-		font-size: 1.1rem;
-		transition: all 0.2s ease;
-		max-width: 400px;
-		width: 100%;
-		box-shadow: 0 4px 12px rgba(88, 101, 242, 0.3);
-		overflow: visible;
-	}
-
-	.discord-button:hover {
-		background-color: #4752c4;
-		transform: translateY(-2px);
-		box-shadow: 0 6px 16px rgba(88, 101, 242, 0.4);
-	}
-
-	.discord-icon-wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-right: 12px;
-	}
-
-	.discord-icon {
-		width: 24px;
-		height: 24px;
-	}
-
-	.first-100-badge {
-		position: absolute;
-		top: -10px;
-		right: -10px;
-		background: #FF1F8E;
-		color: white;
-		font-size: 0.7rem;
-		font-weight: bold;
-		padding: 3px 8px;
-		border-radius: 12px;
-		transform: rotate(5deg);
-		box-shadow: 0 2px 6px rgba(255, 31, 142, 0.5);
-		z-index: 2;
-	}
-
-	.discord-tagline {
-		margin-top: 0.75rem;
-		color: #adb5bd;
-		font-size: 0.9rem;
-	}
-
-	/* Treasure Tavern Container */
-	.treasure-tavern-container {
-		width: 100%;
-		max-width: 900px;
-		margin: 3rem auto 2rem;
-		padding: 0 1rem;
-	}
-
-	@media (max-width: 768px) {
-		.treasure-tavern-container {
-			margin: 2.5rem auto 1.5rem;
-		}
-	}
-
-	@media (max-width: 480px) {
-		.treasure-tavern-container {
-			margin: 2rem auto 1rem;
-		}
-	}
-
-	/* Mystery Box styles removed */
-
-	.news-ticker-container {
-		max-width: 1200px;
-		width: 95%;
-		margin: 0.25rem auto 0.25rem;
-		padding: 0 1rem;
-		border-radius: 12px;
-		overflow: hidden;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-	}
-
-	.featured-posts-container {
-		max-width: 1200px;
-		width: 95%;
-		margin: 0.75rem auto 0.5rem;
-		padding: 0 1rem;
-	}
-
-	.recent-posts {
-		margin-top: 2rem;
-	}
-
-	@media (max-width: 768px) {
-		.news-ticker-container {
-			width: 92%;
-			margin: 0.15rem auto 0.2rem;
+		.path-to-singularity-container {
+			padding: 0 0.5rem;
+			margin: 0.5rem auto;
 		}
 
-		.featured-posts-container {
-			width: 92%;
-			margin: 0.5rem auto 0.25rem;
+		.welcome-blurb {
+			padding: 1.25rem;
+			margin: 0.5rem 0.75rem;
 		}
-	}
 
-	@media (max-width: 480px) {
 		.news-ticker-container {
 			width: 90%;
 			margin: 0.1rem auto 0.1rem;
@@ -415,90 +419,11 @@
 			margin: 0.5rem auto 0.25rem;
 			padding: 0 0.5rem;
 		}
-	}
 
-	/* Add button styles */
-	.secondary-button {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0.85rem 1.5rem;
-		background-color: rgba(59, 130, 246, 0.15);
-		color: #60a5fa;
-		font-size: 1rem;
-		font-weight: 600;
-		border-radius: 8px;
-		border: 1px solid rgba(59, 130, 246, 0.3);
-		text-decoration: none;
-		transition: all 0.3s ease;
-		margin-top: 1rem;
-		max-width: 200px;
-		margin-left: auto;
-		margin-right: auto;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	}
-
-	.secondary-button:hover {
-		background-color: rgba(59, 130, 246, 0.25);
-		transform: translateY(-2px);
-		box-shadow: 0 6px 16px rgba(59, 130, 246, 0.2);
-	}
-
-	.arrow-icon {
-		margin-left: 0.5rem;
-		transition: transform 0.2s ease;
-	}
-
-	.secondary-button:hover .arrow-icon {
-		transform: translateX(3px);
-	}
-
-	@media (max-width: 480px) {
-		.secondary-button {
-			font-size: 0.9rem;
-			padding: 0.75rem 1.25rem;
-			max-width: 180px;
+		.treasure-tavern-container {
+			margin: 1rem auto 0.75rem;
+			padding: 0 0.5rem;
 		}
-	}
-
-	/* Added specific styling for FuturePredictions */
-	:global(.future-predictions-container) {
-		margin-top: 0.25rem;
-	}
-
-	/* Added styling for FeaturedPosts component to make it more compact */
-	:global(.featured-posts-section) {
-		margin: 1rem 0 !important;
-	}
-
-	:global(.featured-header) {
-		margin-bottom: 1rem !important;
-	}
-
-	/* Add responsive heading styles */
-	:global(.main-section-title) {
-		font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-	}
-
-	:global(.main-subtitle) {
-		font-size: clamp(1.1rem, 2.5vw, 1.35rem);
-	}
-
-	@media (max-width: 350px) {
-		:global(.main-section-title) {
-			font-size: clamp(1.5rem, 3vw, 1.75rem);
-		}
-
-		:global(.main-subtitle) {
-			font-size: clamp(1rem, 2vw, 1.1rem);
-		}
-	}
-
-	.agi-roadmap-container {
-		width: 100%;
-		max-width: 800px;
-		margin: 2rem auto;
-		padding: 0 1rem;
 	}
 </style>
 

@@ -2,20 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-text-primary: #1a202c;
-  --color-text-secondary: #4a5568;
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #edf2f7;
-  --max-width: 1100px;
-  --safe-area-padding: env(safe-area-inset-right, 1rem);
-}
+/* Import centralized theme */
+@import './lib/styles/theme.css';
 
-.dark {
-  --color-text-primary: #f7fafc;
-  --color-text-secondary: #e2e8f0;
-  --color-bg-primary: #1a202c;
-  --color-bg-secondary: #2d3748;
+/* Additional variables specific to app.css */
+:root {
+  --safe-area-padding: env(safe-area-inset-right, 1rem);
 }
 
 /* Base styles to ensure content stays within viewport */

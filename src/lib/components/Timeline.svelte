@@ -246,11 +246,10 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="timeline-container">
-  <div class="path-to-singularity-wrapper">
-    <PathToSingularity />
+  <div class="timeline-header">
+    <h1 class="timeline-title">Timeline of Events</h1>
+    <hr class="mb-8 border-gray-200 dark:border-gray-700" />
   </div>
-  <h1 class="timeline-title">Timeline of Events</h1>
-  <hr class="mb-8 border-gray-200 dark:border-gray-700" />
 
   {#if isLoading || isLoadingAll}
     <div class="flex justify-center items-center py-12">

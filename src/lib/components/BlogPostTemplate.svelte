@@ -31,7 +31,8 @@
     showMysteryBox: false,
     showTreasureTavern: true,
     fadeInContent: true,
-    borderOnFeaturedImage: false
+    borderOnFeaturedImage: false,
+    showFaq: false
   };
 
   // Default recommended videos - can be overridden by the page using this template
@@ -50,6 +51,16 @@
     }
   ];
 
+  // FAQ data - can be provided by the page using this template
+  export let faqItems = [];
+  let expandedFaqs = [];
+
+  // Toggle FAQ item open/closed
+  function toggleFaq(index) {
+    expandedFaqs[index] = !expandedFaqs[index];
+    expandedFaqs = [...expandedFaqs]; // Trigger reactivity
+  }
+
   // Reading progress (optional)
   let readingProgress = 0;
   let audio;
@@ -61,6 +72,12 @@
 
   onMount(() => {
     mounted = true;
+
+    // Initialize expandedFaqs with the first item open if there are any FAQs
+    if (faqItems.length > 0) {
+      expandedFaqs = Array(faqItems.length).fill(false);
+      expandedFaqs[0] = true; // First one open by default
+    }
 
     if (options.showProgressBar && browser) {
       const updateReadingProgress = () => {
@@ -164,6 +181,36 @@
           loading="lazy"
           decoding="async"
         />
+      </div>
+    {/if}
+
+    <!-- FAQ Section -->
+    {#if options.showFaq && faqItems.length > 0}
+      <div class="faq-section mb-8">
+        <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+
+        <div class="space-y-3">
+          {#each faqItems as faq, index}
+            <div class="faq-item">
+              <button
+                class="faq-button"
+                class:expanded={expandedFaqs[index]}
+                on:click={() => toggleFaq(index)}
+                aria-expanded={expandedFaqs[index]}
+              >
+                <span class="question">{faq.question}</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              {#if expandedFaqs[index]}
+                <div class="faq-content" transition:fade={{ duration: 150 }}>
+                  <p>{faq.answer}</p>
+                </div>
+              {/if}
+            </div>
+          {/each}
+        </div>
       </div>
     {/if}
 
@@ -444,5 +491,74 @@
     margin: 2rem 0;
     font-style: italic;
     color: var(--color-text-secondary);
+  }
+
+  /* FAQ section styling */
+  .faq-section {
+    margin-bottom: 3rem;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(203, 213, 225, 0.3);
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--color-text-primary);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .faq-button:hover {
+    color: var(--color-primary, #3b82f6);
+  }
+
+  .question {
+    flex: 1;
+    padding-right: 1rem;
+    line-height: 1.4;
+  }
+
+  .chevron {
+    margin-top: 0.25rem;
+    min-width: 20px;
+    transition: transform 0.2s ease;
+    color: var(--color-primary, #3b82f6);
+  }
+
+  .faq-button.expanded .chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-content {
+    padding: 0 0 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary, #4b5563);
+  }
+
+  @media (max-width: 640px) {
+    .faq-button {
+      font-size: 1rem;
+      padding: 0.75rem 0;
+    }
+
+    .faq-content {
+      padding: 0 0 1rem;
+      font-size: 0.95rem;
+    }
   }
 </style>

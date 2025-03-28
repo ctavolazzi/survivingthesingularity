@@ -81,8 +81,12 @@
   <meta property="og:title" content={post.title} />
   <meta property="og:description" content={post.description} />
   <meta property="og:image" content={post.image} />
+  <meta property="og:url" content={`https://survivingthesingularity.com/blog/${post.slug || ''}`} />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={post.title} />
+  <meta name="twitter:description" content={post.description} />
+  <meta name="twitter:image" content={post.image} />
 </svelte:head>
 
 {#if options.showProgressBar}

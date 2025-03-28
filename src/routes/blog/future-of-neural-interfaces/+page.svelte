@@ -95,8 +95,12 @@
   <meta property="og:title" content={post.title} />
   <meta property="og:description" content="Explore recent breakthroughs, future prospects, and ethical considerations in neural interfaces and brain-computer interfaces (BCIs)." />
   <meta property="og:image" content={post.image} />
+  <meta property="og:url" content="https://survivingthesingularity.com/blog/future-of-neural-interfaces" />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={post.title} />
+  <meta name="twitter:description" content="Explore recent breakthroughs, future prospects, and ethical considerations in neural interfaces and brain-computer interfaces (BCIs)." />
+  <meta name="twitter:image" content={post.image} />
 </svelte:head>
 
 <!-- Reading Progress Bar -->

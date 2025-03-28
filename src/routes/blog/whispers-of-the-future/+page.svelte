@@ -63,6 +63,20 @@
   });
 </script>
 
+<svelte:head>
+  <title>{post.title} | Surviving the Singularity</title>
+  <meta name="description" content={post.excerpt || "Exploring the future of AI and technology"} />
+  <meta property="og:title" content={post.title} />
+  <meta property="og:description" content={post.excerpt || "Exploring the future of AI and technology"} />
+  <meta property="og:image" content={`https://survivingthesingularity.com/images/blog/whispers-ai-featured.png`} />
+  <meta property="og:url" content={`https://survivingthesingularity.com/blog/whispers-of-the-future`} />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={post.title} />
+  <meta name="twitter:description" content={post.excerpt || "Exploring the future of AI and technology"} />
+  <meta name="twitter:image" content={`https://survivingthesingularity.com/images/blog/whispers-ai-featured.png`} />
+</svelte:head>
+
 <div class="progress-bar" style="width: {scrollProgress}%"></div>
 
 <div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>

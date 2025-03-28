@@ -71,6 +71,20 @@
   }
 </style>
 
+<svelte:head>
+  <title>Synthetic Biological Computers: The Future of Living Technology | Surviving the Singularity</title>
+  <meta name="description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
+  <meta property="og:title" content="Synthetic Biological Computers: The Future of Living Technology" />
+  <meta property="og:description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/blog/synthetic-biological-computers.jpg" />
+  <meta property="og:url" content="https://survivingthesingularity.com/blog/synthetic-biological-computers" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Synthetic Biological Computers: The Future of Living Technology" />
+  <meta name="twitter:description" content="Explore the revolutionary technology of synthetic biological computers - a fusion of living cells and silicon." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/blog/synthetic-biological-computers.jpg" />
+</svelte:head>
+
 <BlogPostTemplate {post} {options} {recommendedVideos}>
   <h2>Dawn of the Biological Computer</h2>
   <p>

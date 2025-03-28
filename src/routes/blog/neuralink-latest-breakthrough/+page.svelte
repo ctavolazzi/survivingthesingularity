@@ -82,8 +82,12 @@
   <meta property="og:title" content={post.title} />
   <meta property="og:description" content="Explore Neuralink's latest breakthroughs in brain-computer interface technology, including human trials, FDA approvals, and future implications." />
   <meta property="og:image" content={post.image} />
+  <meta property="og:url" content="https://survivingthesingularity.com/blog/neuralink-latest-breakthrough" />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={post.title} />
+  <meta name="twitter:description" content="Explore Neuralink's latest breakthroughs in brain-computer interface technology, including human trials, FDA approvals, and future implications." />
+  <meta name="twitter:image" content={post.image} />
 </svelte:head>
 
 <!-- Reading Progress Bar -->

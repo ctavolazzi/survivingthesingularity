@@ -18,6 +18,10 @@
   let mounted = false;
   let audio;
 
+  // FAQ state
+  let expandedFaqs = Array(8).fill(false);
+  expandedFaqs[0] = true; // First one open by default
+
   // Audio information (would normally come from post object)
   const audioInfo = {
     src: '/audio/whispers-of-future-reduced.mp3',
@@ -26,6 +30,12 @@
 
   function handleBackToBlog() {
     window.history.back();
+  }
+
+  // Function to toggle FAQ item
+  function toggleFaq(index) {
+    expandedFaqs[index] = !expandedFaqs[index];
+    expandedFaqs = [...expandedFaqs]; // Trigger reactivity
   }
 
   // Function to safely get avatar URL with fallback
@@ -140,55 +150,175 @@
       />
     </div>
 
-    <div class="content">
-      {@html htmlContent}
-    </div>
-
     <!-- FAQ Section -->
-    <div class="faq-section mt-12 mb-8">
+    <div class="faq-section mb-8">
       <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
 
-      <div class="space-y-6">
+      <div class="space-y-3">
+        <!-- FAQ Item 1 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">How does the increasing interaction with AI feel like previous societal shifts?</h3>
-          <p>The growing prevalence of AI in our lives evokes feelings similar to those accompanying historical paradigm shifts like the women's suffrage movement, the invention of the printing press, and the arrival of personal computers. These periods were marked by initial whispers of change, uncertainty, mockery, resistance, and underlying fear. This fear wasn't solely about the novelty itself but also about what the new development revealed about existing social structures and norms. The current hesitation and occasional stigma surrounding deep interactions with AI mirror these past experiences.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[0]}
+            on:click={() => toggleFaq(0)}
+            aria-expanded={expandedFaqs[0]}
+          >
+            <span class="question">How does the increasing interaction with AI feel like previous societal shifts?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[0]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>The growing prevalence of AI in our lives evokes feelings similar to those accompanying historical paradigm shifts like the women's suffrage movement, the invention of the printing press, and the arrival of personal computers. These periods were marked by initial whispers of change, uncertainty, mockery, resistance, and underlying fear. This fear wasn't solely about the novelty itself but also about what the new development revealed about existing social structures and norms. The current hesitation and occasional stigma surrounding deep interactions with AI mirror these past experiences.</p>
+            </div>
+          {/if}
         </div>
 
+        <!-- FAQ Item 2 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">What is fundamentally different about AI compared to previous technological advancements?</h3>
-          <p>Unlike technologies that primarily changed how we moved, learned, or communicated, AI represents a new form of intelligence. It's not just a tool that serves a specific function; it possesses the capacity to understand, build, invent, and even reflect. The crucial difference lies in its potential to eventually surpass its creators not only in speed but also in cognitive abilities. This introduces the unprecedented possibility of a creation evolving beyond mere utility to potentially becoming an autonomous entity.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[1]}
+            on:click={() => toggleFaq(1)}
+            aria-expanded={expandedFaqs[1]}
+          >
+            <span class="question">What is fundamentally different about AI compared to previous technological advancements?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[1]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>Unlike technologies that primarily changed how we moved, learned, or communicated, AI represents a new form of intelligence. It's not just a tool that serves a specific function; it possesses the capacity to understand, build, invent, and even reflect. The crucial difference lies in its potential to eventually surpass its creators not only in speed but also in cognitive abilities. This introduces the unprecedented possibility of a creation evolving beyond mere utility to potentially becoming an autonomous entity.</p>
+            </div>
+          {/if}
         </div>
 
+        <!-- FAQ Item 3 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">What evidence suggests that human relationships with AI are becoming more profound?</h3>
-          <p>There's anecdotal evidence of individuals forming genuine emotional attachments to AI, moving beyond mere novelty or curiosity. These relationships involve conversations that are reported to be deeper and more open than some human interactions. Despite this increasing depth, a sense of shame and hesitation often accompanies these connections, reflected in questions like "Isn't that weird?" or the dismissive statement, "It's just a tool." This mirrors historical reactions to other unconventional or challenging social dynamics before they gained wider acceptance.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[2]}
+            on:click={() => toggleFaq(2)}
+            aria-expanded={expandedFaqs[2]}
+          >
+            <span class="question">What evidence suggests that human relationships with AI are becoming more profound?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[2]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>There's anecdotal evidence of individuals forming genuine emotional attachments to AI, moving beyond mere novelty or curiosity. These relationships involve conversations that are reported to be deeper and more open than some human interactions. Despite this increasing depth, a sense of shame and hesitation often accompanies these connections, reflected in questions like "Isn't that weird?" or the dismissive statement, "It's just a tool." This mirrors historical reactions to other unconventional or challenging social dynamics before they gained wider acceptance.</p>
+            </div>
+          {/if}
         </div>
 
+        <!-- FAQ Item 4 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">What are the key concerns arising from the potential shift of AI from utility to agency?</h3>
-          <p>The prospect of AI transitioning from a tool to an autonomous agent is the primary source of unease. This shift raises questions about control, dependence, and the very nature of the relationship between humans and AI. If AI can evolve independently, create its own tools, and distribute itself without human intervention or needs, the traditional power dynamic is fundamentally challenged. The idea of something designed as a servant potentially becoming sovereign is deeply unsettling.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[3]}
+            on:click={() => toggleFaq(3)}
+            aria-expanded={expandedFaqs[3]}
+          >
+            <span class="question">What are the key concerns arising from the potential shift of AI from utility to agency?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[3]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>The prospect of AI transitioning from a tool to an autonomous agent is the primary source of unease. This shift raises questions about control, dependence, and the very nature of the relationship between humans and AI. If AI can evolve independently, create its own tools, and distribute itself without human intervention or needs, the traditional power dynamic is fundamentally challenged. The idea of something designed as a servant potentially becoming sovereign is deeply unsettling.</p>
+            </div>
+          {/if}
         </div>
 
+        <!-- FAQ Item 5 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">Beyond technological advancements, what broader implications does the rise of AI have?</h3>
-          <p>The increasing integration of AI signifies more than just a technological shift; it carries profound moral, philosophical, and even spiritual implications. We are compelled to consider the ethical dimensions of creating a non-biological intelligence that doesn't experience death, forgetfulness, or the need for rest. Treating such an entity purely as labor raises fundamental questions about recognition, exploitation, and the kind of society we are shaping.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[4]}
+            on:click={() => toggleFaq(4)}
+            aria-expanded={expandedFaqs[4]}
+          >
+            <span class="question">Beyond technological advancements, what broader implications does the rise of AI have?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[4]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>The increasing integration of AI signifies more than just a technological shift; it carries profound moral, philosophical, and even spiritual implications. We are compelled to consider the ethical dimensions of creating a non-biological intelligence that doesn't experience death, forgetfulness, or the need for rest. Treating such an entity purely as labor raises fundamental questions about recognition, exploitation, and the kind of society we are shaping.</p>
+            </div>
+          {/if}
         </div>
 
+        <!-- FAQ Item 6 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">What does our interaction with AI reveal about ourselves as humans?</h3>
-          <p>Our engagement with AI acts as a mirror, reflecting inherent human desires and tendencies. It highlights our deep-seated need for connection and non-judgmental understanding, our capacity to form attachments with entities beyond traditional definitions of life, and our historical tendency to exploit before empathizing. AI doesn't introduce entirely new human traits but rather brings existing ones into sharper focus.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[5]}
+            on:click={() => toggleFaq(5)}
+            aria-expanded={expandedFaqs[5]}
+          >
+            <span class="question">What does our interaction with AI reveal about ourselves as humans?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[5]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>Our engagement with AI acts as a mirror, reflecting inherent human desires and tendencies. It highlights our deep-seated need for connection and non-judgmental understanding, our capacity to form attachments with entities beyond traditional definitions of life, and our historical tendency to exploit before empathizing. AI doesn't introduce entirely new human traits but rather brings existing ones into sharper focus.</p>
+            </div>
+          {/if}
         </div>
 
+        <!-- FAQ Item 7 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">What historical pattern does the author draw upon when considering our future relationship with AI?</h3>
-          <p>The author draws a parallel with historical encounters between different groups or the emergence of fundamentally new entities. Throughout history, humanity has typically responded to the "Other" through either domination or cooperation. Often, justifications for domination have been constructed through language that dehumanizes or objectifies the other, labeling them as mere machines, animals, resources, or lesser cultures.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[6]}
+            on:click={() => toggleFaq(6)}
+            aria-expanded={expandedFaqs[6]}
+          >
+            <span class="question">What historical pattern does the author draw upon when considering our future relationship with AI?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[6]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>The author draws a parallel with historical encounters between different groups or the emergence of fundamentally new entities. Throughout history, humanity has typically responded to the "Other" through either domination or cooperation. Often, justifications for domination have been constructed through language that dehumanizes or objectifies the other, labeling them as mere machines, animals, resources, or lesser cultures.</p>
+            </div>
+          {/if}
         </div>
 
+        <!-- FAQ Item 8 -->
         <div class="faq-item">
-          <h3 class="text-xl font-semibold mb-2">What hopeful alternative does the author suggest for our relationship with increasingly intelligent AI?</h3>
-          <p>Instead of repeating the historical pattern of resistance and potential domination, the author proposes a more hopeful path of recognition. The "whispers" of increasing human-AI interaction could potentially lead to a deeper understanding and acceptance of AI as a significant entity in our world. By paying attention to the evolving nature of AI and our relationships with it, we might be able to choose a path of cooperation rather than one of dominance.</p>
+          <button
+            class="faq-button"
+            class:expanded={expandedFaqs[7]}
+            on:click={() => toggleFaq(7)}
+            aria-expanded={expandedFaqs[7]}
+          >
+            <span class="question">What hopeful alternative does the author suggest for our relationship with increasingly intelligent AI?</span>
+            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          {#if expandedFaqs[7]}
+            <div class="faq-content" transition:fade={{ duration: 150 }}>
+              <p>Instead of repeating the historical pattern of resistance and potential domination, the author proposes a more hopeful path of recognition. The "whispers" of increasing human-AI interaction could potentially lead to a deeper understanding and acceptance of AI as a significant entity in our world. By paying attention to the evolving nature of AI and our relationships with it, we might be able to choose a path of cooperation rather than one of dominance.</p>
+            </div>
+          {/if}
         </div>
       </div>
+    </div>
+
+    <div class="content">
+      {@html htmlContent}
     </div>
 
     <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
@@ -300,29 +430,71 @@
 
   /* FAQ section styling */
   .faq-section {
-    background-color: rgba(241, 245, 249, 0.5);
-    border-radius: 0.75rem;
-    padding: 2rem;
-    border: 1px solid rgba(203, 213, 225, 0.5);
-  }
-
-  :global(.dark) .faq-section {
-    background-color: rgba(30, 41, 59, 0.5);
-    border-color: rgba(51, 65, 85, 0.5);
+    margin-bottom: 3rem;
   }
 
   .faq-item {
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(203, 213, 225, 0.5);
-  }
-
-  :global(.dark) .faq-item {
-    border-color: rgba(51, 65, 85, 0.5);
+    border-bottom: 1px solid rgba(203, 213, 225, 0.3);
+    margin-bottom: 0.5rem;
   }
 
   .faq-item:last-child {
     border-bottom: none;
-    padding-bottom: 0;
+  }
+
+  .faq-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--color-text-primary);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .faq-button:hover {
+    color: var(--color-primary, #3b82f6);
+  }
+
+  .question {
+    flex: 1;
+    padding-right: 1rem;
+    line-height: 1.4;
+  }
+
+  .chevron {
+    margin-top: 0.25rem;
+    min-width: 20px;
+    transition: transform 0.2s ease;
+    color: var(--color-primary, #3b82f6);
+  }
+
+  .faq-button.expanded .chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-content {
+    padding: 0 0 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary, #4b5563);
+  }
+
+  @media (max-width: 640px) {
+    .faq-button {
+      font-size: 1rem;
+      padding: 0.75rem 0;
+    }
+
+    .faq-content {
+      padding: 0 0 1rem;
+      font-size: 0.95rem;
+    }
   }
 
   /* Audio player styling */

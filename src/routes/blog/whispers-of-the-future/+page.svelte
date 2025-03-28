@@ -20,7 +20,7 @@
 
   // Audio information (would normally come from post object)
   const audioInfo = {
-    src: '/audio/whispers-of-the-future-podcast.mp3',
+    src: '/audio/whispers-of-future-reduced.mp3',
     title: 'Listen to the AI Audio Version: Whispers of the Future'
   };
 

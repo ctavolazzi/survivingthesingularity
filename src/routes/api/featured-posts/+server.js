@@ -12,21 +12,21 @@ export async function GET({ url, platform, request }) {
   // Define featured posts
   const featuredPosts = [
     {
+      title: 'Whispers of the Future: The Paradigm Shift of Human-AI Relations',
+      date: '2025-03-28',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/whispers-of-the-future',
+      excerpt: "There is something happening in the quiet corners of our lives. This is the beginning of something enormous, and we've seen it before. Every seismic societal shift starts in whispers.",
+      image: '/images/blog/whispers-ai-featured.png',
+      featured: true
+    },
+    {
       title: 'The Rise of Synthetic Biological Intelligence: A New Era in Computing',
       date: '2025-03-06',
       author: 'Christopher Tavolazzi',
       route: '/blog/synthetic-biological-intelligence',
       excerpt: 'Australian startup Cortical Labs has unveiled the CL1, the world\'s first commercial Synthetic Biological Intelligence system—a fusion of biology and tech with human neurons cultured directly onto silicon chips.',
       image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
-      featured: true
-    },
-    {
-      title: 'DARPA Seeks Plans for Large Bio-Mechanical Space Structures',
-      date: '2025-03-04',
-      author: 'Christopher Tavolazzi',
-      route: '/blog/darpa-biomechanical-space-structures',
-      excerpt: 'DARPA has issued a request for information on building massive biological structures in space, exploring a sci-fi future where space infrastructure might be grown rather than assembled.',
-      image: 'https://futurism.com/_next/image?url=https%3A%2F%2Fwordpress-assets.futurism.com%2F2025%2F02%2Fdarpa-requests-plans-large-bio-mechanical-space-structures.jpg&w=2048&q=75',
       featured: true
     },
     {

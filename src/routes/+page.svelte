@@ -193,7 +193,7 @@
 				"Fresh collections added monthly"
 			]}
 			ctaText="Explore the Tavern"
-			ctaUrl="https://treasuretavernhq.myshopify.com/"
+			ctaUrl="https://treasuretavernhq.com/"
 			badgeText="New Arrivals"
 		/>
 	</div>

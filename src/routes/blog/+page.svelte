@@ -179,7 +179,7 @@
           "Fresh collections added monthly"
         ]}
         ctaText="Explore the Tavern"
-        ctaUrl="https://treasuretavernhq.myshopify.com/"
+        ctaUrl="https://treasuretavernhq.com/"
         badgeText="Support Our Work"
       />
     </div>
@@ -428,27 +428,30 @@
 
   .post-image-container {
     position: relative;
-    aspect-ratio: 16 / 9;
     overflow: hidden;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.2);
   }
 
   .post-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .post-category {
     position: absolute;
-    top: 1rem;
+    bottom: 1rem;
     left: 1rem;
-    padding: 0.45rem 0.9rem;
+    padding: 0.25rem 0.6rem;
     background-color: var(--color-primary);
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    border-radius: 30px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     backdrop-filter: blur(4px);

@@ -7,6 +7,13 @@ export async function loadBlogPosts() {
   let posts = [];
 
   try {
+    const whispersOfFuture = await import('./whispers-of-the-future/index.js');
+    if (whispersOfFuture && whispersOfFuture.post) posts.push(whispersOfFuture.post);
+  } catch (error) {
+    console.error('Error importing whispers-of-the-future:', error.message);
+  }
+
+  try {
     const darpa = await import('./darpa-biomechanical-space-structures/index.js');
     if (darpa && darpa.post) posts.push(darpa.post);
   } catch (error) {

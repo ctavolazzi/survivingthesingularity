@@ -4,7 +4,7 @@
   export let subtitle = "The Treasure Tavern";
   export let description = "Find rare collectibles, unique artifacts, and curated treasures from around the world. Each item has a story, each purchase is an adventure.";
   export let ctaText = "Explore the Tavern";
-  export let ctaUrl = "#"; // Update with actual store URL
+  export let ctaUrl = "https://treasuretavernhq.com/"; // Update with actual store URL
   export let imagePath = "/images/treasure-tavern-square.png"; // Changed to square image
   export let showBadge = true;
   export let badgeText = "New Arrivals";

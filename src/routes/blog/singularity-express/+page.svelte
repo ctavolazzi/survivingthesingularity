@@ -7,6 +7,7 @@
   import { marked } from 'marked';
   import { browser } from '$app/environment';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import SocialShare from '$lib/components/SocialShare.svelte';
 
   const defaultAvatar = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="%23718096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>';
 
@@ -126,6 +127,13 @@
         <span class="mr-4">·</span>
         <span>By {post.author}</span>
       </div>
+
+      <!-- Add SocialShare component -->
+      <SocialShare
+        title={post.title}
+        description="The Singularity Express has pulled into the station, bringing with it a new era of AI that can think and reason."
+        image={post.imageUrl}
+      />
     </header>
 
     <div class="featured-image-container mb-8 rounded-lg overflow-hidden">
@@ -198,14 +206,31 @@
         exciting new frontier.
       </p>
     </div>
+
+    <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+      <div class="flex justify-between items-center mb-8">
+        <button
+          class="back-button flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+          on:click={handleBackToBlog}
+        >
+          <span class="inline-block mr-1">←</span> Back to Blog
+        </button>
+
+        <!-- Add SocialShare component at the bottom too -->
+        <div class="bottom-share">
+          <SocialShare
+            title={post.title}
+            description="The Singularity Express has pulled into the station, bringing with it a new era of AI that can think and reason."
+            image={post.imageUrl}
+          />
+        </div>
+      </div>
+
+      <NewsletterSignup />
+      <Spacer height="2rem" />
+      <DiscordButton />
+    </div>
   </article>
-
-  <Spacer height="2rem" />
-
-  <div class="newsletter-section">
-    <NewsletterSignup />
-    <DiscordButton />
-  </div>
 </div>
 
 <style>
@@ -228,14 +253,22 @@
   .featured-image-container {
     position: relative;
     width: 100%;
-    max-height: 500px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(15, 23, 42, 0.05);
+    margin-bottom: 2rem;
   }
 
   .featured-image-container img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    max-height: 80vh;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s;
   }
 
   .content {
@@ -626,5 +659,15 @@
     border-radius: 50%;
     margin-right: 0.75rem;
     background-color: #f0f0f0;
+  }
+
+  .bottom-share :global(.share-container) {
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .bottom-share {
+      display: none; /* Hide bottom share on mobile to save space */
+    }
   }
 </style>

@@ -3,6 +3,8 @@
   import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import SocialShare from '$lib/components/SocialShare.svelte';
+  import { fade } from 'svelte/transition';
 
   const post = {
     title: 'The Future of Neural Interfaces: A Comprehensive Guide',
@@ -14,25 +16,6 @@
 
   // Reading progress
   let readingProgress = 0;
-
-  // Share functionality
-  function sharePost() {
-    if (navigator.share) {
-      navigator.share({
-        title: post.title,
-        text: 'Check out this comprehensive guide on neural interfaces',
-        url: window.location.href
-      });
-    } else {
-      // Fallback to clipboard copy
-      navigator.clipboard.writeText(window.location.href);
-      showShareToast = true;
-      setTimeout(() => showShareToast = false, 2000);
-    }
-  }
-
-  // Toast notification
-  let showShareToast = false;
 
   // Image loading states
   let imageLoadingStates = new Map();
@@ -93,13 +76,17 @@
     }
   ];
 
-  // Move the fade transition function here
-  function fade(node, { duration = 300 }) {
-    return {
-      duration,
-      css: t => `opacity: ${t}`
+  // Update reading progress on scroll
+  onMount(() => {
+    const updateReadingProgress = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight - windowHeight;
+      readingProgress = (window.scrollY / documentHeight) * 100;
     };
-  }
+
+    window.addEventListener('scroll', updateReadingProgress);
+    return () => window.removeEventListener('scroll', updateReadingProgress);
+  });
 </script>
 
 <svelte:head>
@@ -121,35 +108,29 @@
 </div>
 
 <div class="blog-post">
-  <!-- Share Button -->
-  <button
-    class="fixed top-4 left-4 z-50 bg-white dark:bg-gray-800 p-2 rounded-lg shadow-lg"
-    on:click={sharePost}
-    aria-label="Share article">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-    </svg>
-  </button>
-
-  <!-- Share Toast -->
-  {#if showShareToast}
-    <div
-      class="fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg z-50"
-      transition:fade>
-      Link copied to clipboard!
-    </div>
-  {/if}
-
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
     <header class="mb-8">
+      <button
+        class="back-button mb-4 flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+        on:click={() => window.history.back()}
+      >
+        <span class="inline-block mr-1">←</span> Back to Blog
+      </button>
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">{post.title}</h1>
-      <div class="flex flex-wrap items-center text-sm md:text-base text-gray-600 dark:text-gray-400 gap-2">
+      <div class="flex flex-wrap items-center text-sm md:text-base text-gray-600 dark:text-gray-400 gap-2 mb-4">
         <span>{post.date}</span>
         <span class="hidden md:inline">·</span>
         <span>{post.readingTime}</span>
         <span class="hidden md:inline">·</span>
         <span>By {post.author}</span>
       </div>
+
+      <!-- Add SocialShare component -->
+      <SocialShare
+        title={post.title}
+        description="Explore recent breakthroughs, future prospects, and ethical considerations in neural interfaces and brain-computer interfaces (BCIs)."
+        image={post.image}
+      />
     </header>
 
     <div class="featured-image-container mb-8 rounded-lg overflow-hidden shadow-xl">
@@ -294,43 +275,31 @@
         </p>
       </section>
     </div>
-  </article>
 
-  <Spacer height="2rem" />
+    <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+      <div class="flex justify-between items-center mb-8">
+        <button
+          class="back-button flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+          on:click={() => window.history.back()}
+        >
+          <span class="inline-block mr-1">←</span> Back to Blog
+        </button>
 
-  <!-- Supporting Data Section -->
-  <div class="supporting-data px-4 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-bold mb-6">Supporting Data</h2>
-    <div class="space-y-4">
-      {#each recentNews as article}
-        <a
-          href={article.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="block p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors border border-gray-200 dark:border-gray-700">
-          <div class="flex justify-between items-start gap-4">
-            <h3 class="text-lg font-medium flex-grow">{article.title}</h3>
-            <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">{article.date}</span>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-300 mt-2 flex items-center">
-            <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-            {article.source}
-          </p>
-        </a>
-      {/each}
-    </div>
-  </div>
-
-  <Spacer height="2rem" />
-
-  <div class="newsletter-section px-4">
-    <div class="max-w-2xl mx-auto">
-      <NewsletterSignup />
-      <div class="mt-8">
-        <DiscordButton />
+        <!-- Add SocialShare component at the bottom too -->
+        <div class="bottom-share">
+          <SocialShare
+            title={post.title}
+            description="Explore recent breakthroughs, future prospects, and ethical considerations in neural interfaces and brain-computer interfaces (BCIs)."
+            image={post.image}
+          />
+        </div>
       </div>
+
+      <NewsletterSignup />
+      <Spacer height="2rem" />
+      <DiscordButton />
     </div>
-  </div>
+  </article>
 </div>
 
 <style>
@@ -369,24 +338,21 @@
   .featured-image-container {
     position: relative;
     width: 100%;
-    max-height: 500px;
     overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  }
-
-  .featured-image-container::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
-    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(15, 23, 42, 0.05);
+    margin-bottom: 2rem;
   }
 
   .featured-image-container img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    max-height: 80vh;
+    border-radius: 0.5rem;
     transition: transform 0.5s ease;
   }
 
@@ -542,5 +508,26 @@
   /* Reading progress bar enhancement */
   .fixed.top-0 {
     background: linear-gradient(to right, var(--color-accent), var(--color-accent-light));
+  }
+
+  .bottom-share :global(.share-container) {
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .bottom-share {
+      display: none; /* Hide bottom share on mobile to save space */
+    }
+  }
+
+  /* Progress bar styles */
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: #3b82f6;
+    z-index: 100;
+    transition: width 0.1s ease-out;
   }
 </style>

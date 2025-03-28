@@ -5,6 +5,7 @@
     import { post } from '$lib/data/blog-posts/claude-projects-weekend-project/index.js';
     import { marked } from 'marked';
     import RecommendedContent from '$lib/components/RecommendedContent.svelte';
+    import SocialShare from '$lib/components/SocialShare.svelte';
 
     const renderer = new marked.Renderer();
     renderer.link = (href, title, text) => {
@@ -50,6 +51,12 @@
 <div class="blog-post">
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
     <header class="mb-8">
+      <button
+        class="back-button mb-4 flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+        on:click={() => window.history.back()}
+      >
+        <span class="inline-block mr-1">←</span> Back to Blog
+      </button>
       <h1 class="text-4xl font-bold mb-4">{post.title}</h1>
       <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
         <span class="mr-4">{post.date}</span>
@@ -58,6 +65,12 @@
         <span class="mr-4">·</span>
         <span>By {post.author}</span>
       </div>
+
+      <SocialShare
+        title={post.title}
+        description="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI."
+        image={post.imageUrl}
+      />
     </header>
 
     <div class="featured-image-container mb-8 rounded-lg overflow-hidden">
@@ -81,20 +94,34 @@
     </div>
   </article>
 
-  <Spacer height="2rem" />
+  <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 max-w-4xl mx-auto px-4">
+    <div class="flex justify-between items-center mb-8">
+      <button
+        class="back-button flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+        on:click={() => window.history.back()}
+      >
+        <span class="inline-block mr-1">←</span> Back to Blog
+      </button>
 
-  <div class="recommended-content-section">
-    <RecommendedContent
-      title="View more content like this"
-      description="Here are some more videos that dive deeper into AI and gaming"
-      videos={recommendedVideos}
-    />
-  </div>
+      <div class="bottom-share">
+        <SocialShare
+          title={post.title}
+          description="Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that's transforming how we interact with AI."
+          image={post.imageUrl}
+        />
+      </div>
+    </div>
 
-  <Spacer height="2rem" />
+    <div class="recommended-content-section mb-8">
+      <RecommendedContent
+        title="View more content like this"
+        description="Here are some more videos that dive deeper into AI and gaming"
+        videos={recommendedVideos}
+      />
+    </div>
 
-  <div class="newsletter-container">
     <NewsletterSignup />
+    <Spacer height="2rem" />
     <DiscordButton />
   </div>
 </div>
@@ -113,13 +140,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(15, 23, 42, 0.05);
+    margin-bottom: 2rem;
   }
 
   .featured-image-container img {
     width: 100%;
     height: auto;
-    object-fit: contain;
-    max-height: 80vh; /* Limit height on large screens */
+    object-fit: cover;
+    max-height: 80vh;
+    border-radius: 0.5rem;
   }
 
   .content {
@@ -216,5 +247,25 @@
   :global(.dark) .blog-post {
     background-color: var(--color-bg-primary-dark);
     color: var(--color-text-primary-dark);
+  }
+
+  .bottom-share :global(.share-container) {
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .bottom-share {
+      display: none; /* Hide bottom share on mobile to save space */
+    }
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+
+  .back-button:hover {
+    transform: translateX(-2px);
   }
 </style>

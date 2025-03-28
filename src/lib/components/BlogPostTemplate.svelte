@@ -1,11 +1,14 @@
 <script>
   import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
+  import { browser } from '$app/environment';
   import NewsletterSignup from './NewsletterSignup.svelte';
   import DiscordButton from './DiscordButton.svelte';
   import SocialShare from './SocialShare.svelte';
   import Spacer from './Spacer.svelte';
   import RecommendedContent from './RecommendedContent.svelte';
   import MysteryBoxAd from '$lib/components/ads/MysteryBoxAd.svelte';
+  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 
   export let post = {
     title: '',
@@ -16,6 +19,19 @@
     description: '',
     audioSrc: '',
     audioTitle: ''
+  };
+
+  // Options to customize the template
+  export let options = {
+    showBackButton: true,
+    showProgressBar: false,
+    showAds: true,
+    showAuthorBio: true,
+    showShareBottom: true,
+    showMysteryBox: false,
+    showTreasureTavern: true,
+    fadeInContent: true,
+    borderOnFeaturedImage: false
   };
 
   // Default recommended videos - can be overridden by the page using this template
@@ -34,47 +50,70 @@
     }
   ];
 
+  // Reading progress (optional)
+  let readingProgress = 0;
   let audio;
+  let mounted = false;
+
+  function handleBackToBlog() {
+    window.history.back();
+  }
+
+  onMount(() => {
+    mounted = true;
+
+    if (options.showProgressBar && browser) {
+      const updateReadingProgress = () => {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight - windowHeight;
+        readingProgress = (window.scrollY / documentHeight) * 100;
+      };
+
+      window.addEventListener('scroll', updateReadingProgress);
+      return () => window.removeEventListener('scroll', updateReadingProgress);
+    }
+  });
 </script>
 
 <svelte:head>
   <title>{post.title} | Surviving the Singularity</title>
   <meta name="description" content={post.description} />
+  <meta property="og:title" content={post.title} />
+  <meta property="og:description" content={post.description} />
+  <meta property="og:image" content={post.image} />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="blog-post">
-  <article class="prose prose-lg dark:prose-invert mx-auto px-3 sm:px-4 py-6 max-w-3xl">
-    <header class="mb-6">
-      <h1 class="blog-post-title text-3xl sm:text-4xl font-bold mb-3">{post.title}</h1>
-      <div class="flex flex-wrap items-center text-sm text-gray-600 dark:text-gray-400 mb-3">
-        <span class="mr-3">{post.date}</span>
-        <span class="mr-3">·</span>
-        <span class="mr-3">{post.readingTime}</span>
-        <span class="mr-3">·</span>
-        <span class="mr-3">By {post.author}</span>
+{#if options.showProgressBar}
+  <!-- Reading Progress Bar -->
+  <div class="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 z-50">
+    <div
+      class="h-full bg-primary dark:bg-primary-dark transition-all duration-300"
+      style="width: {readingProgress}%">
+    </div>
+  </div>
+{/if}
+
+<div class="blog-post" in:fade|local={{ duration: 300, delay: 200 }}>
+  <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
+    <header class="mb-8">
+      {#if options.showBackButton}
         <button
-          class="inline-flex items-center text-primary dark:text-primary-dark text-sm hover:text-primary-dark dark:hover:text-primary-hover-dark transition-colors ml-auto"
-          on:click={() => {
-            if (navigator.share) {
-              navigator.share({
-                title: post.title,
-                text: post.description,
-                url: window.location.href,
-              }).catch(err => console.error('Error sharing:', err));
-            } else {
-              navigator.clipboard.writeText(window.location.href)
-                .then(() => alert('Link copied to clipboard!'))
-                .catch(err => console.error('Failed to copy:', err));
-            }
-          }}
+          class="back-button mb-4 flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+          on:click={handleBackToBlog}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
-            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-            <polyline points="16 6 12 2 8 6"></polyline>
-            <line x1="12" y1="2" x2="12" y2="15"></line>
-          </svg>
-          Share
+          <span class="inline-block mr-1">←</span> Back to Blog
         </button>
+      {/if}
+
+      <h1 class="blog-post-title text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{post.title}</h1>
+      <div class="flex flex-wrap items-center text-sm md:text-base text-gray-600 dark:text-gray-400 gap-2 mb-4">
+        <span>{post.date}</span>
+        <span class="hidden md:inline">·</span>
+        <span>{post.readingTime}</span>
+        <span class="hidden md:inline">·</span>
+        <span>By {post.author}</span>
       </div>
 
       <!-- Social Share at the top -->
@@ -113,11 +152,11 @@
     </header>
 
     {#if post.image}
-      <div class="featured-image-container mb-6 rounded-lg overflow-hidden">
+      <div class="featured-image-container mb-8 rounded-lg overflow-hidden" class:shadow-xl={options.borderOnFeaturedImage}>
         <img
           src={post.image}
           alt={post.title}
-          class="w-full h-auto"
+          class="w-full h-auto transform hover:scale-105 transition-transform duration-500"
           loading="lazy"
           decoding="async"
         />
@@ -125,53 +164,108 @@
     {/if}
 
     <!-- Post content -->
-    <slot></slot>
+    <div class="content">
+      <p class="lead">
+        {post.description || ""}
+      </p>
+
+      <slot></slot>
+    </div>
 
     <!-- Author bio or other info -->
-    <div class="author-bio mt-6 p-3 bg-gray-50 dark:bg-gray-800 rounded border-l-4 border-primary dark:border-primary-dark text-sm">
-      <p class="italic">
-        <em>{post.author} is the founder of AIECO, specializing in AI/ML and R&D. He is also the author of "Surviving the Singularity," a blog and book dedicated to navigating the future of artificial intelligence.</em>
-      </p>
-    </div>
+    {#if options.showAuthorBio}
+      <div class="author-bio mt-6 p-3 bg-gray-50 dark:bg-gray-800 rounded border-l-4 border-primary dark:border-primary-dark text-sm">
+        <p class="italic">
+          <em>{post.author} is the founder of AIECO, specializing in AI/ML and R&D. He is also the author of "Surviving the Singularity," a blog and book dedicated to navigating the future of artificial intelligence.</em>
+        </p>
+      </div>
+    {/if}
   </article>
 
-  <Spacer height="2rem" />
+  <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 max-w-4xl mx-auto px-4">
+    {#if options.showShareBottom}
+      <div class="flex justify-between items-center mb-8">
+        {#if options.showBackButton}
+          <button
+            class="back-button flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+            on:click={handleBackToBlog}
+          >
+            <span class="inline-block mr-1">←</span> Back to Blog
+          </button>
+        {/if}
 
-  <div class="recommended-content-section">
-    <RecommendedContent
-      title="Explore More AI Content"
-      description="Check out these videos about AI and the future of technology"
-      videos={recommendedVideos}
-    />
-  </div>
+        <!-- Bottom share section -->
+        <div class="bottom-share">
+          <SocialShare
+            title={post.title}
+            description={post.description}
+            image={post.image}
+          />
+        </div>
+      </div>
+    {/if}
 
-  <Spacer height="2rem" />
-
-  <div class="blog-closing max-w-3xl mx-auto px-3 sm:px-4 py-4">
-    <DiscordButton />
-    <NewsletterSignup />
-
-    <div class="mystery-box-wrapper">
-      <a href="https://treasuretavernhq.myshopify.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds" class="mystery-box-link" aria-label="Subscribe to Mood Booster Mystery Box">
-        <MysteryBoxAd
-          title="Mood Booster Mystery Box"
-          subtitle="Monthly Surprises"
-          description="Discover curated indie treasures delivered monthly to your door. Each box contains 5-7 handpicked items designed to boost your mood and bring joy to your everyday life."
-          price="24.99"
-          frequency="month"
-          ctaText="Subscribe Now"
-          ctaUrl="https://treasuretavernhq.myshopify.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds"
-          badgeText="Most Popular"
-          itemCount="5-7 items"
-        />
-      </a>
+    <!-- Recommended content section -->
+    <div class="recommended-content-section mb-8">
+      <RecommendedContent
+        title="Explore More AI Content"
+        description="Check out these videos about AI and the future of technology"
+        videos={recommendedVideos}
+      />
     </div>
+
+    <!-- Newsletter and Discord -->
+    <NewsletterSignup />
+    <Spacer height="2rem" />
+    <DiscordButton />
+
+    <!-- Ads section -->
+    {#if options.showAds}
+      <div class="ads-wrapper mt-8">
+        {#if options.showMysteryBox}
+          <a href="https://treasuretavernhq.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds" class="mystery-box-link" aria-label="Subscribe to Mood Booster Mystery Box">
+            <MysteryBoxAd
+              title="Mood Booster Mystery Box"
+              subtitle="Monthly Surprises"
+              description="Discover curated indie treasures delivered monthly to your door. Each box contains 5-7 handpicked items designed to boost your mood and bring joy to your everyday life."
+              price="24.99"
+              frequency="month"
+              ctaText="Subscribe Now"
+              ctaUrl="https://treasuretavernhq.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds"
+              badgeText="Most Popular"
+              itemCount="5-7 items"
+            />
+          </a>
+        {/if}
+
+        {#if options.showTreasureTavern}
+          <div class="mt-8">
+            <TreasureTavernAd
+              title="Discover Treasure Tavern"
+              subtitle="Curated Joy, Delivered Monthly"
+              description="Join thousands discovering unique, handpicked treasures every month. From self-care items to quirky finds, each box is designed to brighten your day."
+              bulletPoints={[
+                "5-7 Handpicked items monthly",
+                "Supports small & indie businesses",
+                "Flexible subscription options",
+                "Free shipping in the United States"
+              ]}
+              ctaText="Shop Now"
+              ctaUrl="https://treasuretavernhq.com/"
+              badgeText="Community Favorite"
+            />
+          </div>
+        {/if}
+      </div>
+    {/if}
   </div>
 </div>
 
 <style>
-  .share-top-container {
-    margin: 1.5rem 0;
+  .blog-post {
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
   }
 
   .blog-post-title {
@@ -196,13 +290,79 @@
     }
   }
 
-  .blog-closing {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--color-border, #e2e8f0);
+  .featured-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(15, 23, 42, 0.05);
+    margin-bottom: 2rem;
   }
 
-  .mystery-box-wrapper {
+  .featured-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 80vh; /* Limit height on large screens */
+    border-radius: 0.5rem;
+  }
+
+  .content {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  .share-top-container {
+    margin: 1.5rem 0;
+  }
+
+  .bottom-share :global(.share-container) {
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .bottom-share {
+      display: none; /* Hide bottom share on mobile to save space */
+    }
+  }
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+
+  .back-button:hover {
+    transform: translateX(-2px);
+  }
+
+  /* Audio player styling */
+  .audio-player-container {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-bg-secondary, #f3f4f6);
+    margin-bottom: 1rem;
+  }
+
+  :global(.dark) .audio-player-container {
+    background-color: var(--color-bg-secondary-dark, #374151);
+  }
+
+  .audio-player-icon {
+    color: var(--color-primary, #f97316);
+  }
+
+  .ads-wrapper {
     margin-top: 2.5rem;
   }
 
@@ -221,5 +381,64 @@
   .mystery-box-link:hover {
     transform: translateY(-2px);
     transition: transform 0.3s ease;
+  }
+
+  /* Global styles for content */
+  :global(.content h2) {
+    color: #ff7708;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.875rem;
+  }
+
+  :global(.content h3) {
+    color: #ff7708;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  :global(.content p) {
+    margin-bottom: 1rem;
+    line-height: 1.625;
+    color: var(--color-text-secondary);
+  }
+
+  :global(.content ul), :global(.content ol) {
+    padding-left: 1.5em;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.content li) {
+    margin-bottom: 0.5em;
+    color: var(--color-text-secondary);
+  }
+
+  :global(.content ul) {
+    list-style-type: disc;
+  }
+
+  :global(.content ol) {
+    list-style-type: decimal;
+  }
+
+  :global(.content a) {
+    color: #3b82f6;
+    text-decoration: underline;
+  }
+
+  :global(.content a:hover) {
+    color: #2563eb;
+  }
+
+  :global(.content blockquote) {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 1rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--color-text-secondary);
   }
 </style>

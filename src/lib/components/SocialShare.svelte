@@ -84,7 +84,7 @@
   <!-- Open Graph tags for rich sharing previews -->
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={image} />
+  <meta property="og:image" content={image.includes('?') ? image : `${image}?format=png`} />
   <meta property="og:url" content={currentUrl} />
   <meta property="og:type" content="article" />
 
@@ -92,7 +92,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={image} />
+  <meta name="twitter:image" content={image.includes('?') ? image : `${image}?format=png`} />
 </svelte:head>
 
 <div class="share-container">

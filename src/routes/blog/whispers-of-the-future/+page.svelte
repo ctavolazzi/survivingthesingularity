@@ -1,94 +1,136 @@
 <script>
+  import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+  import Spacer from '$lib/components/Spacer.svelte';
   import { post } from '$lib/data/blog-posts/whispers-of-the-future/index.js';
   import { marked } from 'marked';
-  import BlogPostTemplate from '$lib/components/BlogPostTemplate.svelte';
-  import { Image } from '$lib/components/ui';
+  import { browser } from '$app/environment';
+  import DiscordButton from '$lib/components/DiscordButton.svelte';
+  import SocialShare from '$lib/components/SocialShare.svelte';
 
   let htmlContent = marked(post.content);
   let readingTime = '5 min read';
+  let scrollProgress = 0;
+  let isImageLoaded = false;
+  let mounted = false;
 
-  // Audio information
-  const audioInfo = {
-    src: '/audio/whispers-of-future-reduced.mp3',
-    title: 'Listen to the AI Audio Version: Whispers of the Future'
-  };
+  function handleBackToBlog() {
+    window.history.back();
+  }
 
-  // Template options
-  const templateOptions = {
-    showBackButton: true,
-    showProgressBar: true,
-    showAds: true,
-    showAuthorBio: true,
-    showShareBottom: true,
-    showMysteryBox: false,
-    showTreasureTavern: true,
-    fadeInContent: true,
-    borderOnFeaturedImage: false,
-    showFaq: true
-  };
+  onMount(() => {
+    mounted = true;
+    if (typeof window === 'undefined') return;
 
-  // FAQ data for the template
-  const faqData = [
-    {
-      question: "How does the increasing interaction with AI feel like previous societal shifts?",
-      answer: "The growing prevalence of AI in our lives evokes feelings similar to those accompanying historical paradigm shifts like the women's suffrage movement, the invention of the printing press, and the arrival of personal computers. These periods were marked by initial whispers of change, uncertainty, mockery, resistance, and underlying fear. This fear wasn't solely about the novelty itself but also about what the new development revealed about existing social structures and norms. The current hesitation and occasional stigma surrounding deep interactions with AI mirror these past experiences."
-    },
-    {
-      question: "What is fundamentally different about AI compared to previous technological advancements?",
-      answer: "Unlike technologies that primarily changed how we moved, learned, or communicated, AI represents a new form of intelligence. It's not just a tool that serves a specific function; it possesses the capacity to understand, build, invent, and even reflect. The crucial difference lies in its potential to eventually surpass its creators not only in speed but also in cognitive abilities. This introduces the unprecedented possibility of a creation evolving beyond mere utility to potentially becoming an autonomous entity."
-    },
-    {
-      question: "What evidence suggests that human relationships with AI are becoming more profound?",
-      answer: "There's anecdotal evidence of individuals forming genuine emotional attachments to AI, moving beyond mere novelty or curiosity. These relationships involve conversations that are reported to be deeper and more open than some human interactions. Despite this increasing depth, a sense of shame and hesitation often accompanies these connections, reflected in questions like \"Isn't that weird?\" or the dismissive statement, \"It's just a tool.\" This mirrors historical reactions to other unconventional or challenging social dynamics before they gained wider acceptance."
-    },
-    {
-      question: "What are the key concerns arising from the potential shift of AI from utility to agency?",
-      answer: "The prospect of AI transitioning from a tool to an autonomous agent is the primary source of unease. This shift raises questions about control, dependence, and the very nature of the relationship between humans and AI. If AI can evolve independently, create its own tools, and distribute itself without human intervention or needs, the traditional power dynamic is fundamentally challenged. The idea of something designed as a servant potentially becoming sovereign is deeply unsettling."
-    },
-    {
-      question: "Beyond technological advancements, what broader implications does the rise of AI have?",
-      answer: "The increasing integration of AI signifies more than just a technological shift; it carries profound moral, philosophical, and even spiritual implications. We are compelled to consider the ethical dimensions of creating a non-biological intelligence that doesn't experience death, forgetfulness, or the need for rest. Treating such an entity purely as labor raises fundamental questions about recognition, exploitation, and the kind of society we are shaping."
-    },
-    {
-      question: "What does our interaction with AI reveal about ourselves as humans?",
-      answer: "Our engagement with AI acts as a mirror, reflecting inherent human desires and tendencies. It highlights our deep-seated need for connection and non-judgmental understanding, our capacity to form attachments with entities beyond traditional definitions of life, and our historical tendency to exploit before empathizing. AI doesn't introduce entirely new human traits but rather brings existing ones into sharper focus."
-    },
-    {
-      question: "What historical pattern does the author draw upon when considering our future relationship with AI?",
-      answer: "The author draws a parallel with historical encounters between different groups or the emergence of fundamentally new entities. Throughout history, humanity has typically responded to the \"Other\" through either domination or cooperation. Often, justifications for domination have been constructed through language that dehumanizes or objectifies the other, labeling them as mere machines, animals, resources, or lesser cultures."
-    },
-    {
-      question: "What hopeful alternative does the author suggest for our relationship with increasingly intelligent AI?",
-      answer: "Instead of repeating the historical pattern of resistance and potential domination, the author proposes a more hopeful path of recognition. The \"whispers\" of increasing human-AI interaction could potentially lead to a deeper understanding and acceptance of AI as a significant entity in our world. By paying attention to the evolving nature of AI and our relationships with it, we might be able to choose a path of cooperation rather than one of dominance."
-    }
-  ];
+    const updateScrollProgress = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight - windowHeight;
+      scrollProgress = (window.scrollY / documentHeight) * 100;
+    };
 
-  // Create enhanced post object with audio and correct image path
-  const enhancedPost = {
-    ...post,
-    readingTime: readingTime,
-    audioSrc: audioInfo.src,
-    audioTitle: audioInfo.title,
-    image: post.imageUrl // Use the image URL directly from the post data
-  };
+    window.addEventListener('scroll', updateScrollProgress);
+
+    return () => {
+      window.removeEventListener('scroll', updateScrollProgress);
+    };
+  });
 </script>
 
-<BlogPostTemplate
-  post={enhancedPost}
-  options={templateOptions}
-  faqItems={faqData}
->
-  <Image
-    slot="featured-image"
-    src={post.imageUrl}
-    alt={post.title}
-    width={1200}
-    height={630}
-    loading="eager"
-    class="w-full h-auto transform hover:scale-105 transition-transform duration-500"
-    shadow={true}
-    rounded={true}
-  />
+<div class="progress-bar" style="width: {scrollProgress}%"></div>
 
-  {@html htmlContent}
-</BlogPostTemplate>
+<div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>
+  <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4">{post.title}</h1>
+      <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+        <span class="mr-4">{post.date}</span>
+        <span class="mr-4">·</span>
+        <span class="mr-4">{readingTime}</span>
+        <span class="mr-4">·</span>
+        <span>By {post.author}</span>
+      </div>
+
+      <SocialShare
+        title={post.title}
+        description={post.excerpt}
+        image={post.imageUrl}
+      />
+    </header>
+
+    <div class="featured-image-container mb-8 rounded-lg overflow-hidden">
+      <img
+        src={post.imageUrl}
+        alt={post.title}
+        class="w-full h-auto transition-opacity duration-300"
+        class:opacity-0={!isImageLoaded}
+        class:opacity-100={isImageLoaded}
+        on:load={() => isImageLoaded = true}
+      />
+    </div>
+
+    <div class="content">
+      {@html htmlContent}
+    </div>
+  </article>
+
+  <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 max-w-4xl mx-auto px-4">
+    <div class="flex justify-between items-center mb-8">
+      <button
+        class="back-button flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+        on:click={handleBackToBlog}
+      >
+        <span class="inline-block mr-1">←</span> Back to Blog
+      </button>
+
+      <SocialShare
+        title={post.title}
+        description={post.excerpt}
+        image={post.imageUrl}
+      />
+    </div>
+
+    <NewsletterSignup />
+    <Spacer height="2rem" />
+    <DiscordButton />
+  </div>
+</div>
+
+<style>
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    z-index: 100;
+    transition: width 0.1s;
+  }
+
+  .blog-post {
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+
+  .featured-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(15, 23, 42, 0.05);
+    margin-bottom: 2rem;
+  }
+
+  .featured-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 80vh;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s ease;
+  }
+</style>

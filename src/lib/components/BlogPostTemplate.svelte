@@ -21,6 +21,9 @@
     audioTitle: ''
   };
 
+  // For debugging
+  console.log('BlogPostTemplate received image:', post.image);
+
   // Options to customize the template
   export let options = {
     showBackButton: true,
@@ -97,13 +100,13 @@
   <meta name="description" content={post.description} />
   <meta property="og:title" content={post.title} />
   <meta property="og:description" content={post.description} />
-  <meta property="og:image" content={post.image} />
+  <meta property="og:image" content={post.image.includes('?') ? post.image : `${post.image}?format=png`} />
   <meta property="og:url" content={`https://survivingthesingularity.com/blog/${post.slug || ''}`} />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={post.title} />
   <meta name="twitter:description" content={post.description} />
-  <meta name="twitter:image" content={post.image} />
+  <meta name="twitter:image" content={post.image.includes('?') ? post.image : `${post.image}?format=png`} />
 </svelte:head>
 
 {#if options.showProgressBar}
@@ -173,18 +176,15 @@
     </header>
 
     {#if post.image}
-      <div class="featured-image-container mb-8 rounded-lg overflow-hidden" class:shadow-xl={options.borderOnFeaturedImage}>
-        <!-- Check if custom image is provided through a slot -->
-        <slot name="featured-image">
-          <!-- Default image implementation -->
-          <img
-            src={post.image}
-            alt={post.title}
-            class="w-full h-auto transform hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            decoding="async"
-          />
-        </slot>
+      <!-- Simplified image container for maximum reliability -->
+      <div class="featured-image-container mb-8">
+        <img
+          src={post.image}
+          alt={post.title}
+          width="1200"
+          height="630"
+          loading="eager"
+        />
       </div>
     {/if}
 
@@ -348,21 +348,22 @@
   .featured-image-container {
     position: relative;
     width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: visible;
+    display: block;
     border-radius: 0.5rem;
     background-color: rgba(15, 23, 42, 0.05);
     margin-bottom: 2rem;
+    min-height: auto;
   }
 
   .featured-image-container img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    max-height: 80vh; /* Limit height on large screens */
+    object-fit: contain;
+    max-height: none;
     border-radius: 0.5rem;
+    position: static;
+    opacity: 1 !important;
   }
 
   .content {

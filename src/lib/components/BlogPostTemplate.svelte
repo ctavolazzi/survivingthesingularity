@@ -174,13 +174,17 @@
 
     {#if post.image}
       <div class="featured-image-container mb-8 rounded-lg overflow-hidden" class:shadow-xl={options.borderOnFeaturedImage}>
-        <img
-          src={post.image}
-          alt={post.title}
-          class="w-full h-auto transform hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          decoding="async"
-        />
+        <!-- Check if custom image is provided through a slot -->
+        <slot name="featured-image">
+          <!-- Default image implementation -->
+          <img
+            src={post.image}
+            alt={post.title}
+            class="w-full h-auto transform hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            decoding="async"
+          />
+        </slot>
       </div>
     {/if}
 

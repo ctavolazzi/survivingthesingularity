@@ -2,6 +2,7 @@
   import { post } from '$lib/data/blog-posts/whispers-of-the-future/index.js';
   import { marked } from 'marked';
   import BlogPostTemplate from '$lib/components/BlogPostTemplate.svelte';
+  import { Image } from '$lib/components/ui';
 
   let htmlContent = marked(post.content);
   let readingTime = '5 min read';
@@ -68,7 +69,7 @@
     readingTime: readingTime,
     audioSrc: audioInfo.src,
     audioTitle: audioInfo.title,
-    image: "/images/blog/whispers-ai-featured.png"
+    image: post.imageUrl // Use the image URL directly from the post data
   };
 </script>
 
@@ -77,5 +78,17 @@
   options={templateOptions}
   faqItems={faqData}
 >
+  <Image
+    slot="featured-image"
+    src={post.imageUrl}
+    alt={post.title}
+    width={1200}
+    height={630}
+    loading="eager"
+    class="w-full h-auto transform hover:scale-105 transition-transform duration-500"
+    shadow={true}
+    rounded={true}
+  />
+
   {@html htmlContent}
 </BlogPostTemplate>

@@ -5,8 +5,8 @@
 
   // Props
   export let title = "Navigate the Path to Singularity";
-  export let imageSrc = bookCoverImage; // Use the imported image
-  export let imageWebPSrc = bookCoverImageWebP; // WebP version
+  export const imageSrc = bookCoverImage; // Use the imported image
+  export const imageWebPSrc = bookCoverImageWebP; // WebP version
   export let subtitle = "Want to know more?";
   export let description = "Get the insights and strategies you need to prepare for the technological changes that will reshape our world.";
   export let buttonText = "Explore the Book";

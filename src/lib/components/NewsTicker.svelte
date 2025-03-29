@@ -16,9 +16,9 @@
   export let accentColor = "#3b82f6";
   export let items = null; // New prop to accept direct items
   export let newsItems = [];
-  export let speed = 30; // Speed in seconds for a complete cycle
-  export let autoplay = true;
-  export let pauseOnHover = true;
+  export const speed = 30; // Speed in seconds for a complete cycle
+  export const autoplay = true;
+  export const pauseOnHover = true;
 
   // Handle class properly - In Svelte, we use class directly
   let cssClass = "";
@@ -252,6 +252,8 @@
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
   bind:clientWidth={tickerWidth}
+  role="region"
+  aria-label="News Ticker"
 >
   <div class="ticker-header">
     <h3 class="ticker-title">{title}</h3>

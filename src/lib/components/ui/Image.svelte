@@ -35,31 +35,8 @@
   // Shadow options
   export let shadow = false;
 
-  // Automatically generate WebP path if not provided
+  // WebP version - DO NOT auto-generate to prevent 404 errors
   export let srcWebp = "";
-
-  // If no WebP path is provided, try to generate one
-  $: {
-    if (!srcWebp && src) {
-      // Check if src has one of these extensions
-      const extensions = ['.jpg', '.jpeg', '.png'];
-      let foundExt = false;
-
-      for (const ext of extensions) {
-        if (src.toLowerCase().endsWith(ext)) {
-          // Replace the extension with .webp
-          srcWebp = src.substring(0, src.length - ext.length) + '.webp';
-          foundExt = true;
-          break;
-        }
-      }
-
-      // If no known extension, just append .webp
-      if (!foundExt && !src.toLowerCase().endsWith('.webp')) {
-        srcWebp = src + '.webp';
-      }
-    }
-  }
 
   // Combine classes
   $: combinedClass = [
@@ -71,7 +48,7 @@
   ].filter(Boolean).join(' ');
 </script>
 
-<div class="image-container">
+<figure class="image-container">
   <SafeResponsiveImage
     {src}
     {srcWebp}
@@ -87,7 +64,7 @@
       {caption}
     </figcaption>
   {/if}
-</div>
+</figure>
 
 <style>
   .image-container {

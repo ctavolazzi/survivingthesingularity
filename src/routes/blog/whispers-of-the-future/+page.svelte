@@ -23,6 +23,9 @@
     mounted = true;
     if (typeof window === 'undefined') return;
 
+    // Debug: Log the image URL to console
+    console.log('Image URL:', post.imageUrl);
+
     const updateScrollProgress = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight - windowHeight;
@@ -65,7 +68,14 @@
         class="w-full h-auto transition-opacity duration-300"
         class:opacity-0={!isImageLoaded}
         class:opacity-100={isImageLoaded}
-        on:load={() => isImageLoaded = true}
+        on:load={() => {
+          console.log('Image loaded successfully');
+          isImageLoaded = true;
+        }}
+        on:error={(e) => {
+          console.error('Image failed to load:', e);
+          console.error('Image path:', post.imageUrl);
+        }}
       />
     </div>
 

@@ -1,9 +1,9 @@
+/* Import centralized theme */
+@import './lib/styles/theme.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Import centralized theme */
-@import './lib/styles/theme.css';
 
 /* Additional variables specific to app.css */
 :root {

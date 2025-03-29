@@ -71,7 +71,7 @@
                 alt={post.title}
                 loading="lazy"
                 hoverEffect={true}
-                class="featured-image"
+                class="w-full h-full object-cover block"
               />
               <div class="featured-badge">Featured</div>
             </div>
@@ -166,13 +166,6 @@
     aspect-ratio: 16 / 9;
     width: 100%;
     background-color: rgba(15, 23, 42, 0.2);
-  }
-
-  .featured-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
   }
 
   .featured-badge {

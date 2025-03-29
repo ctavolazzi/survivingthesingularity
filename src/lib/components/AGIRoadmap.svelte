@@ -74,6 +74,12 @@
               <div
                 class="faq-item bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-gray-600 transition-all duration-300"
                 on:click={() => toggleFAQ(`${technology.name}-${index}`)}
+                on:keydown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ(`${technology.name}-${index}`);
+                  }
+                }}
                 role="button"
                 tabindex="0"
               >
@@ -172,18 +178,18 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
 
-  .faq-item:hover, .article-accordion:hover {
+  .faq-item:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
 
   /* Ensure smooth transitions */
-  .faq-item, .article-accordion {
+  .faq-item {
     transition: all 0.3s ease;
   }
 
   /* Improve focus states for accessibility */
-  .faq-item:focus-visible, .article-accordion button:focus-visible {
+  .faq-item:focus-visible {
     outline: 2px solid #60A5FA;
     outline-offset: 2px;
   }

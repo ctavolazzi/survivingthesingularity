@@ -1,5 +1,44 @@
 # Development Log
-*Last Updated: 2025-03-28 13:05 UTC*
+*Last Updated: 2025-03-29 20:30 UTC*
+
+## 2025-03-29 20:55 UTC - Fixed Image Loading Issues
+- Identified the root cause of 404 errors related to blog images
+- The Image component was automatically generating WebP paths that didn't exist
+- Fixed by removing the automatic WebP path generation in src/lib/components/ui/Image.svelte
+- This resolved the 404 errors for images like whispers-ai-featured.webp
+- Updated the work effort documentation with the solution
+
+## 2025-03-29 20:45 UTC - Debugging Svelte Warnings
+- Created work effort #18 focused on debugging Svelte warnings
+- Taking a structured approach to address issues one at a time
+- Focus areas include unused CSS selectors, accessibility warnings, and unused exports
+- Documenting fixes to prevent similar issues in future
+- Setting up progress tracking system to methodically address all warnings
+
+### Fixes in progress:
+- Added keyboard event handlers in AGIRoadmap.svelte to fix accessibility issues
+- Added ARIA role and label in NewsTicker.svelte for better accessibility
+- Fixed nesting of figcaption within figure in Image.svelte
+- Moved @import statement to the top of app.css to fix CSS import issue
+- Removed unused CSS selectors in AGIRoadmap.svelte
+- Removed numerous unused CSS selectors in Timeline.svelte (21 selectors total)
+- Changed unused export properties to export const in NewsTicker.svelte
+- Changed unused export properties to export const in BookCallout.svelte
+- Fixed unused CSS class in FeaturedPosts.svelte by applying Tailwind classes directly
+- Removed a large number of unused CSS selectors in start-here/+page.svelte related to TreasureTavernAd
+
+### Technical limitations:
+- Large file size in start-here/+page.svelte is making comprehensive edits challenging
+- Breaking down changes into smaller, focused updates to improve reliability
+
+### Next steps:
+- Continue addressing remaining CSS selector issues
+- Implement final verification testing
+
+## 2025-03-29 20:30 UTC - Continuing Svelte Debugging
+- Made significant progress addressing various warnings
+- Fixed unused CSS selector issues in the home page
+- Working on addressing large components with many unused selectors
 
 ## 2025-03-28
 ### New Blog Post: Whispers of the Future

@@ -224,74 +224,66 @@
 
 <style>
 	.main-content {
-		max-width: 100%;
-		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 0.4rem;
-		padding-top: 0.3rem;
+		gap: 1rem;
+		padding-top: 0.5rem;
 	}
 
 	.countdown-container {
-		width: 100%;
-		max-width: 100%;
-		overflow-x: hidden;
 		padding: 0 1rem;
-		margin-bottom: 0;
 	}
 
 	.path-to-singularity-container {
-		width: 100%;
-		max-width: 900px;
-		margin: 1rem auto;
-		padding: 0 1rem;
+		width: 95%;
+		margin: 0.75rem auto;
+		max-width: 1000px;
 	}
 
 	.welcome-blurb {
-		background: rgba(255, 255, 255, 0.05);
-		border-radius: 12px;
-		margin: 0.75rem auto;
-		max-width: 900px;
+		background-color: rgba(17, 24, 39, 0.7);
+		border-radius: 0.5rem;
 		padding: 1.5rem;
-		backdrop-filter: blur(10px);
+		margin: 0.75rem 1rem;
 		border: 1px solid rgba(255, 255, 255, 0.1);
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+
+	.welcome-content {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
 	}
 
 	.welcome-title {
 		font-size: 1.75rem;
 		font-weight: 700;
-		margin-bottom: 1rem;
-		background: linear-gradient(90deg, #3182ce, #805ad5);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+		color: white;
+		margin: 0;
 	}
 
 	.welcome-text {
-		margin-bottom: 1.25rem;
-		line-height: 1.6;
-		color: var(--text-color);
+		color: #e5e7eb;
+		font-size: 1rem;
+		line-height: 1.5;
 	}
 
 	.welcome-buttons {
 		display: flex;
 		gap: 1rem;
-		margin-top: 1rem;
-	}
-
-	.news-ticker-container {
-		max-width: 1200px;
-		width: 95%;
-		margin: 0.25rem auto 0.25rem;
-		padding: 0 1rem;
-		border-radius: 12px;
-		overflow: hidden;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+		margin-top: 0.5rem;
 	}
 
 	.timeline-section {
-		margin: 0 0.5rem;
+		margin: 0 auto;
+		max-width: 900px;
+		width: 100%;
+	}
+
+	.news-ticker-container {
+		width: 95%;
+		margin: 0.2rem auto 0.25rem;
+		padding: 0 1rem;
 	}
 
 	.agi-roadmap-container {
@@ -299,12 +291,6 @@
 		max-width: 800px;
 		margin: 2rem auto;
 		padding: 0 1rem;
-	}
-
-	.faq-container {
-		margin: 2rem auto;
-		max-width: 800px;
-		width: 100%;
 	}
 
 	.newsletter-container {
@@ -333,12 +319,6 @@
 		width: 95%;
 		margin: 0.75rem auto 0.5rem;
 		padding: 0 1rem;
-	}
-
-	.future-predictions-container {
-		margin: 1rem auto;
-		max-width: 900px;
-		width: 100%;
 	}
 
 	.treasure-tavern-container {

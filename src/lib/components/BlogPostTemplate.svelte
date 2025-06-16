@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { browser } from '$app/environment';
-  import NewsletterSignup from './NewsletterSignup.svelte';
   import DiscordButton from './DiscordButton.svelte';
   import SocialShare from './SocialShare.svelte';
   import Spacer from './Spacer.svelte';
@@ -269,9 +268,7 @@
       />
     </div>
 
-    <!-- Newsletter and Discord -->
-    <NewsletterSignup />
-    <Spacer height="2rem" />
+    <!-- Discord -->
     <DiscordButton />
 
     <!-- Ads section -->

@@ -7,7 +7,6 @@
 	// Removing KnowledgeMeter import
 	import BookCallout from '$lib/components/BookCallout.svelte';
 	import FuturePredictions from '$lib/components/FuturePredictions.svelte';
-	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
 	import { loadBlogPosts, blogPosts } from '$lib/data/blog-posts/blogPosts.js';
 	import FAQ from '$lib/components/FAQ.svelte';
 	import LatestNews from '$lib/components/LatestNews.svelte';
@@ -176,9 +175,6 @@
 
 	<FAQ class="faq-container" />
 
-	<div class="newsletter-container">
-		<NewsletterSignup />
-	</div>
 
 	<div class="discord-button-container">
 		<DiscordButton />

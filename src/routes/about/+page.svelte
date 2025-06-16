@@ -1,6 +1,5 @@
 <script>
   import FAQ from '$lib/components/FAQ.svelte';
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import BookSample from '$lib/components/BookSample.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
@@ -174,8 +173,6 @@
       </div>
 
       <div class="newsletter-section">
-        <h3><span class="newsletter-icon">✉️</span> Join the Newsletter</h3>
-        <NewsletterSignup />
         <DiscordButton />
       </div>
     </div>

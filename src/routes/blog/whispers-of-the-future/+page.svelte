@@ -1,12 +1,10 @@
 <script>
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import { post } from '$lib/data/blog-posts/whispers-of-the-future/index.js';
   import { marked } from 'marked';
   import { browser } from '$app/environment';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
   import SocialShare from '$lib/components/SocialShare.svelte';
 
   let htmlContent = marked(post.content);
@@ -100,9 +98,7 @@
       />
     </div>
 
-    <NewsletterSignup />
     <Spacer height="2rem" />
-    <DiscordButton />
   </div>
 </div>
 

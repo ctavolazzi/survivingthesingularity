@@ -85,6 +85,7 @@
       {/if}
     {/each}
   </div>
+  <p class="estimate-note">Estimate based on predictions from industry leaders</p>
 </div>
 
 <style>
@@ -176,6 +177,13 @@
 
   .countdown-value.placeholder {
     opacity: 0.5;
+  }
+
+  .estimate-note {
+    font-size: 0.65rem;
+    text-align: center;
+    color: #9ca3af;
+    margin-top: -0.25rem;
   }
 
   /* Media queries for responsive design */

@@ -11,7 +11,7 @@
   let isMenuOpen = false;
   let isLargeScreen = false;
   // Define links that will only be shown in the hamburger menu
-  const hamburgerOnlyLinks = ['/sample', '/data-warehouse'];
+  const hamburgerOnlyLinks = ['/sample'];
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -120,12 +120,6 @@
         </span>
       </NavLi>
       <!-- Data Warehouse and Sample links removed from desktop nav -->
-      <NavLi href="/newsletter" class="nav-item {currentPath === '/newsletter' ? 'active' : ''}" on:click={(e) => navigateTo('/newsletter', e)}>
-        <span class="nav-button flex items-center h-full w-full">
-          <span class="flex-grow text-left">Newsletter</span>
-          <span class="nav-icon ml-2">{@html IconNewsletter.svg}</span>
-        </span>
-      </NavLi>
       <NavLi href="/contact" class="nav-item {currentPath === '/contact' ? 'active' : ''}" on:click={(e) => navigateTo('/contact', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Contact</span>
@@ -194,26 +188,6 @@
           <span class="flex items-center">
             <span class="mr-3">{@html IconSample.svg}</span>
             <span>Sample</span>
-          </span>
-        </a>
-        <a
-          href="/data-warehouse"
-          class="mobile-nav-item {currentPath.startsWith('/data-warehouse') ? 'active' : ''}"
-          on:click={(e) => navigateTo('/data-warehouse', e)}
-        >
-          <span class="flex items-center">
-            <span class="mr-3">{@html IconData.svg}</span>
-            <span>Data Warehouse</span>
-          </span>
-        </a>
-        <a
-          href="/newsletter"
-          class="mobile-nav-item {currentPath === '/newsletter' ? 'active' : ''}"
-          on:click={(e) => navigateTo('/newsletter', e)}
-        >
-          <span class="flex items-center">
-            <span class="mr-3">{@html IconNewsletter.svg}</span>
-            <span>Newsletter</span>
           </span>
         </a>
         <a

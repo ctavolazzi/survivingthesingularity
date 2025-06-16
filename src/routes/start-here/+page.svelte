@@ -1,9 +1,6 @@
 <script>
   import { onMount } from 'svelte';
   import { fade, fly, scale } from 'svelte/transition';
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
-  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
   import bookCover from '$lib/images/Surviving-the-Singularity-Cover.png';
   import chessImage from '$lib/images/sts-chess.jpg';
 
@@ -180,8 +177,7 @@
             <h3>Join the Community</h3>
             <p>Connect with others navigating these changes</p>
             <div class="community-links">
-              <a href="/newsletter" class="resource-link">Newsletter</a>
-              <a href="/discord" class="resource-link">Discord</a>
+              <a href="/blog" class="resource-link">Blog</a>
             </div>
           </div>
         </div>
@@ -216,10 +212,10 @@
       <div class="next-steps-grid">
         <div class="next-step">
           <div class="step-number">1</div>
-          <h3>Sign Up</h3>
-          <p>Join our newsletter for regular insights</p>
+          <h3>Explore</h3>
+          <p>Check out the latest posts on our blog</p>
           <div class="action-container">
-            <NewsletterSignup />
+            <a href="/blog" class="btn">Visit Blog</a>
           </div>
         </div>
 
@@ -227,9 +223,7 @@
           <div class="step-number">2</div>
           <h3>Connect</h3>
           <p>Join our community of forward-thinking individuals</p>
-          <div class="action-container">
-            <DiscordButton />
-          </div>
+          <div class="action-container"></div>
         </div>
 
         <div class="next-step explore-step" id="explore-step">
@@ -360,13 +354,6 @@
       <div class="floating-shape shape-2"></div>
       <div class="floating-shape shape-3"></div>
       <div class="floating-lines"></div>
-    </div>
-  </section>
-
-  <!-- Treasure Tavern Ad Section -->
-  <section class="content-section">
-    <div class="container">
-      <TreasureTavernAd />
     </div>
   </section>
 </div>
@@ -1037,14 +1024,6 @@
     padding-top: 1.5rem;
   }
 
-  /* Adjust DiscordButton styling within this section */
-  :global(.next-step .discord-button) {
-    width: 100%;
-    max-width: 100%;
-    padding: 0.6rem 0.75rem;
-    justify-content: center;
-    height: 40px;
-  }
 
   /* Adjust newsletter form styling within this section */
   :global(.next-step .newsletter-form) {

@@ -1,12 +1,10 @@
 <script>
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import { post } from '$lib/data/blog-posts/singularity-express/index.js';
   import { marked } from 'marked';
   import { browser } from '$app/environment';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
   import SocialShare from '$lib/components/SocialShare.svelte';
 
   const defaultAvatar = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="%23718096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>';
@@ -226,9 +224,7 @@
         </div>
       </div>
 
-      <NewsletterSignup />
       <Spacer height="2rem" />
-      <DiscordButton />
     </div>
   </article>
 </div>

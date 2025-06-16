@@ -1,6 +1,4 @@
 <script>
-    import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-    import DiscordButton from '$lib/components/DiscordButton.svelte';
     import Spacer from '$lib/components/Spacer.svelte';
     import { post } from '$lib/data/blog-posts/claude-projects-weekend-project/index.js';
     import { marked } from 'marked';
@@ -120,9 +118,7 @@
       />
     </div>
 
-    <NewsletterSignup />
     <Spacer height="2rem" />
-    <DiscordButton />
   </div>
 </div>
 

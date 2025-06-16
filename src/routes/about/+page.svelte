@@ -1,9 +1,6 @@
 <script>
   import FAQ from '$lib/components/FAQ.svelte';
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import BookSample from '$lib/components/BookSample.svelte';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
-  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 </script>
 
 <svelte:head>
@@ -173,11 +170,6 @@
         </div>
       </div>
 
-      <div class="newsletter-section">
-        <h3><span class="newsletter-icon">✉️</span> Join the Newsletter</h3>
-        <NewsletterSignup />
-        <DiscordButton />
-      </div>
     </div>
   </section>
 
@@ -188,24 +180,6 @@
     </div>
   </section>
 
-  <!-- Treasure Tavern Ad -->
-  <section class="treasure-tavern-section">
-    <div class="container">
-      <TreasureTavernAd
-        title="Discover Unique Treasures"
-        subtitle="The Treasure Tavern"
-        description="Curated gems from the far corners of the Internet."
-        bulletPoints={[
-          "Unique finds you won't see elsewhere",
-          "Each item has a story to tell",
-          "Fresh collections added monthly"
-        ]}
-        ctaText="Explore the Tavern"
-        ctaUrl="https://treasuretavernhq.com/"
-        badgeText="New Arrivals"
-      />
-    </div>
-  </section>
 </div>
 
 <style>

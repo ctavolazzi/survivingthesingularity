@@ -2,12 +2,10 @@
     import { onMount } from 'svelte';
     import { fade } from 'svelte/transition';
     import Spacer from '$lib/components/Spacer.svelte';
-    import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
     import SimpleBookCallout from '$lib/components/SimpleBookCallout.svelte';
     import { page } from '$app/stores';
     import Navbar from '$lib/components/Navbar.svelte';
     import Footer from '$lib/components/Footer.svelte';
-    import DiscordButton from '$lib/components/DiscordButton.svelte';
 
     let showLowerSections = false;
 
@@ -35,10 +33,6 @@
                     buttonLink="/book"
                 />
 
-                <div class="newsletter-container">
-                    <NewsletterSignup />
-                    <DiscordButton />
-                </div>
             {/if}
         </div>
     </div>

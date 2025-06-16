@@ -7,18 +7,15 @@
 	// Removing KnowledgeMeter import
 	import BookCallout from '$lib/components/BookCallout.svelte';
 	import FuturePredictions from '$lib/components/FuturePredictions.svelte';
-	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
 	import { loadBlogPosts, blogPosts } from '$lib/data/blog-posts/blogPosts.js';
 	import FAQ from '$lib/components/FAQ.svelte';
 	import LatestNews from '$lib/components/LatestNews.svelte';
 	import BookSample from '$lib/components/BookSample.svelte';
 	import welcomeImage from '$lib/images/sts-welcome.png';
 	import timelineItems from '$lib/data/timelineItems.json';
-	import DiscordButton from '$lib/components/DiscordButton.svelte';
 	// Removing MysteryBoxAd import
 	import NewsTicker from '$lib/components/NewsTicker.svelte';
 	import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
-	import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 	import AGIRoadmap from '$lib/components/AGIRoadmap.svelte';
 	import PathToSingularity from '$lib/components/PathToSingularity.svelte';
 	// Import our new UI components
@@ -122,8 +119,9 @@
 </script>
 
 <svelte:head>
-	<!-- Preload welcome image to ensure it loads immediately -->
-	<link rel="preload" href={welcomeImage} as="image" fetchpriority="high" />
+        <title>Surviving the Singularity</title>
+        <!-- Preload welcome image to ensure it loads immediately -->
+        <link rel="preload" href={welcomeImage} as="image" fetchpriority="high" />
 </svelte:head>
 
 <div class="main-content">
@@ -176,13 +174,7 @@
 
 	<FAQ class="faq-container" />
 
-	<div class="newsletter-container">
-		<NewsletterSignup />
-	</div>
 
-	<div class="discord-button-container">
-		<DiscordButton />
-	</div>
 
 	<div class="recent-posts">
 		<LatestNews />
@@ -202,24 +194,7 @@
 		/>
 	</div>
 
-	<!-- Replace Treasure Tavern Promo with enhanced component -->
-	<div class="treasure-tavern-container">
-		<TreasureTavernAd
-			title="Discover Unique Treasures"
-			subtitle="The Treasure Tavern"
-			description="Curated gems from the far corners of the Internet."
-			bulletPoints={[
-				"Unique finds you won't see elsewhere",
-				"Each item has a story to tell",
-				"Fresh collections added monthly"
-			]}
-			ctaText="Explore the Tavern"
-			ctaUrl="https://treasuretavernhq.com/"
-			badgeText="New Arrivals"
-		/>
-	</div>
-
-	<!-- Mystery Box Ad removed -->
+        <!-- Promotional section removed -->
 </div>
 
 <style>
@@ -299,13 +274,6 @@
 		margin: -0.25rem auto 0;
 	}
 
-	.discord-button-container {
-		width: 100%;
-		max-width: 800px;
-		margin: 0.5rem auto 0.5rem;
-		display: flex;
-		justify-content: center;
-	}
 
 	.recent-posts,
 	.book-callout-container {

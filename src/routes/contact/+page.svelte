@@ -11,6 +11,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Contact | Surviving the Singularity</title>
+</svelte:head>
+
 <div class="main-content" style="padding-top: {navbarHeight}px">
   <h1 class="text-4xl font-bold mb-4 text-center" in:fly="{{ y: -50, duration: 1000 }}">Get in Touch</h1>
   <p class="subheadline" in:fade="{{ delay: 500, duration: 800 }}">We're here to listen, help, and connect</p>

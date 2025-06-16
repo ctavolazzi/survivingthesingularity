@@ -2,13 +2,9 @@
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { browser } from '$app/environment';
-  import NewsletterSignup from './NewsletterSignup.svelte';
-  import DiscordButton from './DiscordButton.svelte';
   import SocialShare from './SocialShare.svelte';
   import Spacer from './Spacer.svelte';
   import RecommendedContent from './RecommendedContent.svelte';
-  import MysteryBoxAd from '$lib/components/ads/MysteryBoxAd.svelte';
-  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
 
   export let post = {
     title: '',
@@ -269,50 +265,8 @@
       />
     </div>
 
-    <!-- Newsletter and Discord -->
-    <NewsletterSignup />
-    <Spacer height="2rem" />
-    <DiscordButton />
 
-    <!-- Ads section -->
-    {#if options.showAds}
-      <div class="ads-wrapper mt-8">
-        {#if options.showMysteryBox}
-          <a href="https://treasuretavernhq.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds" class="mystery-box-link" aria-label="Subscribe to Mood Booster Mystery Box">
-            <MysteryBoxAd
-              title="Mood Booster Mystery Box"
-              subtitle="Monthly Surprises"
-              description="Discover curated indie treasures delivered monthly to your door. Each box contains 5-7 handpicked items designed to boost your mood and bring joy to your everyday life."
-              price="24.99"
-              frequency="month"
-              ctaText="Subscribe Now"
-              ctaUrl="https://treasuretavernhq.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds"
-              badgeText="Most Popular"
-              itemCount="5-7 items"
-            />
-          </a>
-        {/if}
 
-        {#if options.showTreasureTavern}
-          <div class="mt-8">
-            <TreasureTavernAd
-              title="Discover Treasure Tavern"
-              subtitle="Curated Joy, Delivered Monthly"
-              description="Join thousands discovering unique, handpicked treasures every month. From self-care items to quirky finds, each box is designed to brighten your day."
-              bulletPoints={[
-                "5-7 Handpicked items monthly",
-                "Supports small & indie businesses",
-                "Flexible subscription options",
-                "Free shipping in the United States"
-              ]}
-              ctaText="Shop Now"
-              ctaUrl="https://treasuretavernhq.com/"
-              badgeText="Community Favorite"
-            />
-          </div>
-        {/if}
-      </div>
-    {/if}
   </div>
 </div>
 
@@ -418,26 +372,6 @@
     color: var(--color-primary, #f97316);
   }
 
-  .ads-wrapper {
-    margin-top: 2.5rem;
-  }
-
-  .mystery-box-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  /* Ensure the link doesn't show the default purple outline when clicked */
-  .mystery-box-link:focus {
-    outline: none;
-  }
-
-  /* Add a subtle hover effect to indicate the whole component is clickable */
-  .mystery-box-link:hover {
-    transform: translateY(-2px);
-    transition: transform 0.3s ease;
-  }
 
   /* Global styles for content */
   :global(.content h2) {

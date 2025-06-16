@@ -19,14 +19,11 @@
   - `Timeline.svelte` - Event timeline
   - `BookCallout.svelte` - Book promotion
   - `FuturePredictions.svelte` - Future predictions display
-  - `NewsletterSignup.svelte` - Newsletter subscription
   - `FAQ.svelte` - Frequently asked questions
   - `LatestNews.svelte` - Latest updates
   - `BookSample.svelte` - Book preview
-  - `DiscordButton.svelte` - Discord community link
   - `NewsTicker.svelte` - News updates
   - `FeaturedPosts.svelte` - Featured blog posts
-  - `TreasureTavernAd.svelte` - Advertisement component
 - Data Sources:
   - Blog posts from `$lib/data/blog-posts/blogPosts.js`
   - Timeline items from `$lib/data/timelineItems.json`
@@ -34,24 +31,12 @@
 
 ### Blog (`/blog`)
 - Components:
-  - `NewsletterSignup.svelte`
-  - `DiscordButton.svelte`
   - `FeaturedPosts.svelte`
   - `NewsTicker.svelte`
-  - `TreasureTavernAd.svelte`
 - Data Flow:
   - Blog posts loaded via `loadBlogPosts()`
   - Posts categorized and tagged dynamically
 
-### Newsletter (`/newsletter`)
-- Components:
-  - `NewsletterLayout.svelte`
-  - `NewsletterContent.svelte`
-  - `NewsletterList.svelte`
-- Data Flow:
-  - Newsletter data from `$lib/data/newsletterData.js`
-  - Pagination handled server-side
-  - Dynamic component loading via `getNewsletterComponent`
 
 ### Book Section (`/book/[sectionId]`)
 - Components:
@@ -98,7 +83,6 @@
 
 2. **Static Data**
    - Blog posts (`$lib/data/blog-posts/`)
-   - Newsletter content (`$lib/data/newsletterData.js`)
    - Book content (`$lib/bookContent.js`)
    - Timeline items (`$lib/data/timelineItems.json`)
 
@@ -111,9 +95,6 @@
    - Paginated timeline data
    - Returns JSON with items and pagination info
 
-2. `/api/newsletter/subscribe`
-   - Newsletter subscription handling
-   - Email service integration
 
 ## 4. State Management
 
@@ -150,16 +131,13 @@
 - `Countdown.svelte` - Detailed countdown
 
 ### Interactive Components
-- `NewsletterSignup.svelte` - Newsletter subscription
-- `ContactForm.svelte` - Contact form
-- `SocialShare.svelte` - Social sharing
-- `Auth.svelte` - Authentication
+`ContactForm.svelte` - Contact form
+`SocialShare.svelte` - Social sharing
+`Auth.svelte` - Authentication
 
 ### Data Display Components
-- `NewsletterList.svelte` - Newsletter listing
-- `NewsletterContent.svelte` - Newsletter content
-- `RoboticsCompanies.svelte` - Company data
-- `Avatar.svelte` - User avatars
+`RoboticsCompanies.svelte` - Company data
+`Avatar.svelte` - User avatars
 
 ### Utility Components
 - `JumpToLatest.svelte` - Scroll to latest content

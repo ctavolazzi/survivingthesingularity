@@ -139,7 +139,7 @@
               <p>Thank you for joining us on this exciting journey into the future. Here's what you can expect:</p>
               <ul>
                 <li><span class="icon">📧</span> A welcome email within the next 24 hours with important information</li>
-                <li><span class="icon">📊</span> Weekly newsletters with cutting-edge insights and survival tips</li>
+                <li><span class="icon">📊</span> Regular updates with cutting-edge insights and survival tips</li>
                 <li><span class="icon">🎟️</span> Exclusive access to our member-only webinars and events</li>
               </ul>
               <h3>Next steps:</h3>
@@ -204,7 +204,7 @@
               {:else if currentStep === 2}
                 <h2>What You'll Receive</h2>
                 <ul class="benefits-list">
-                  {#each ['Weekly newsletters with exclusive content', 'Invitations to members-only webinars and events', 'Access to our private online community', 'Early access to AI-related tools and resources', 'Personalized survival readiness assessments'] as benefit}
+                  {#each ['Exclusive content and updates', 'Invitations to members-only webinars and events', 'Access to our private online community', 'Early access to AI-related tools and resources', 'Personalized survival readiness assessments'] as benefit}
                     <li transition:slide|local="{{ duration: 200, easing: quintOut }}">{benefit}</li>
                   {/each}
                 </ul>

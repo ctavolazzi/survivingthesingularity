@@ -3,7 +3,7 @@
   import { fade } from 'svelte/transition';
   import { createEventDispatcher } from 'svelte';
 
-  export let text = "Ready to face the future? Join our newsletter to begin your journey!";
+  export let text = "Ready to face the future? Explore our resources to begin your journey!";
   export let buttonText = "Start Now";
   export let useFade = true;
   export let buttonClass = "cta-button";

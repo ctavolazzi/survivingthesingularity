@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import RecommendedContent from '$lib/components/RecommendedContent.svelte';
@@ -177,7 +176,6 @@
       />
     </div>
 
-    <NewsletterSignup />
     <Spacer height="2rem" />
     <DiscordButton />
   </div>

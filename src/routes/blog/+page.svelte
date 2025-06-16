@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   export let data;
   const { posts } = data;
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
   import NewsTicker from '$lib/components/NewsTicker.svelte';
@@ -163,7 +162,6 @@
     </div>
 
     <div class="stylish-divider"></div>
-    <NewsletterSignup />
     <DiscordButton />
 
     <!-- Add Treasure Tavern Ad -->

@@ -1,7 +1,6 @@
 <script>
   import { onMount } from 'svelte';
   import { fade, fly, scale } from 'svelte/transition';
-  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
   import DiscordButton from '$lib/components/DiscordButton.svelte';
   import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
   import bookCover from '$lib/images/Surviving-the-Singularity-Cover.png';
@@ -216,10 +215,10 @@
       <div class="next-steps-grid">
         <div class="next-step">
           <div class="step-number">1</div>
-          <h3>Sign Up</h3>
-          <p>Join our newsletter for regular insights</p>
+          <h3>Explore</h3>
+          <p>Check out the latest posts on our blog</p>
           <div class="action-container">
-            <NewsletterSignup />
+            <a href="/blog" class="btn">Visit Blog</a>
           </div>
         </div>
 

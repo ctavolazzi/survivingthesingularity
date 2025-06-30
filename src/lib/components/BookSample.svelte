@@ -1,7 +1,8 @@
 <script>
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
-    import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
+    // Using static image path for better compatibility
+const StSBookImage = '/images/optimized/surviving_the_singularity_cover_800.webp';
     import { goto } from '$app/navigation';
     import { darkMode } from '$lib/stores/darkMode';
 

@@ -431,6 +431,114 @@
         "main": "https://www.nature.com/articles/d41586-023-02094-7",
         "wikipedia": "https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence"
       }
+    },
+    {
+      "id": 37,
+      "title": "NVIDIA RTX 50 Series Launch",
+      "abstract": "NVIDIA debuts its GeForce RTX 5080 and 5090 GPUs at CES 2025, launching the Blackwell-architecture RTX 50 Series and bringing massive AI inference power to consumer PCs.",
+      "description": "The RTX 50 Series represents a major leap in consumer GPU technology, featuring NVIDIA's Blackwell architecture with significantly enhanced AI inference capabilities. These GPUs bring enterprise-level AI processing power to consumer desktops, enabling advanced AI workloads, real-time ray tracing, and machine learning applications for individual users and creators.",
+      "date": "2025-01-30",
+      "significance": "Major advancement in consumer AI computing hardware",
+      "urls": {
+        "main": "https://en.wikipedia.org/wiki/GeForce_RTX_50_series",
+        "wikipedia": "https://en.wikipedia.org/wiki/GeForce_RTX_50_series"
+      }
+    },
+    {
+      "id": 38,
+      "title": "Figure AI Unveils Helix VLA Model",
+      "abstract": "Figure AI unveils Helix, a generalist Vision-Language-Action model that runs onboard embedded GPUs, powering dual-robot grocery-storage demos and open-ended household tasks without any task-specific fine-tuning.",
+      "description": "Helix represents a breakthrough in generalist humanoid robotics, combining vision, language understanding, and physical action in a unified model that runs entirely on embedded GPUs. The system demonstrates remarkable versatility in dual-robot grocery storage scenarios and can handle open-ended household tasks without requiring task-specific fine-tuning, marking a significant step toward truly general-purpose humanoid robots.",
+      "date": "2025-02-20",
+      "significance": "First generalist VLA model for humanoid robots running on embedded hardware",
+      "urls": {
+        "main": "https://www.figure.ai/news/helix",
+        "wikipedia": "https://en.wikipedia.org/wiki/Figure_AI"
+      }
+    },
+    {
+      "id": 39,
+      "title": "Figure AI Alpha-Home Trials Begin",
+      "abstract": "Figure AI confirms alpha-home trials, sending Helix-driven Figure 02 humanoids into real residences for end-to-end testing of dynamic grasping and coordination in unstructured environments.",
+      "description": "Figure AI takes the bold step of deploying Helix-powered Figure 02 humanoid robots into actual homes for comprehensive alpha testing. These trials represent the first real-world deployment of humanoid robots in unstructured residential environments, testing dynamic grasping, spatial coordination, and adaptation to the unpredictable nature of human living spaces.",
+      "date": "2025-02-27",
+      "significance": "First real-world home deployment of humanoid robots for general tasks",
+      "urls": {
+        "main": "https://techcrunch.com/2025/02/27/figure-will-start-alpha-testing-its-humanoid-robot-in-the-home-in-2025/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Figure_AI"
+      }
+    },
+    {
+      "id": 40,
+      "title": "CL1 Wetware Computer Debuts",
+      "abstract": "Cortical Labs debuts CL1, a shoebox-sized 'wetware' computer embedding 200,000 living human neurons on silicon, at Mobile World Congress Barcelona—the first commercial biological computer.",
+      "description": "The CL1 represents the world's first commercial 'wetware' computing system, combining 200,000 living human neurons with silicon-based processing in a compact shoebox-sized device. This revolutionary hybrid biocomputer demonstrates real-time learning capabilities that traditional silicon computers cannot match, opening new possibilities for adaptive AI systems, brain-computer interfaces, and neuromorphic computing applications.",
+      "date": "2025-03-02",
+      "significance": "First commercial wetware computer with living human neurons",
+      "urls": {
+        "main": "https://newatlas.com/brain/cortical-bioengineered-intelligence/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cortical_Labs"
+      }
+    },
+    {
+      "id": 41,
+      "title": "Google DeepMind Releases Veo 3 with Flow",
+      "abstract": "Google DeepMind releases Veo 3 alongside Flow, adding synchronized audio generation (dialogue, SFX, ambience) to 1080p video—igniting viral 'AI Bigfoot' vlogs—and opens early access on Gemini (US launch).",
+      "description": "Veo 3 represents a breakthrough in multimodal AI, combining high-quality 1080p video generation with synchronized audio creation including dialogue, sound effects, and ambient audio. Paired with Flow, the system enables complete audiovisual content creation from text prompts alone, sparking viral phenomena like AI-generated Bigfoot documentaries and democratizing professional-quality video production.",
+      "date": "2025-05-20",
+      "significance": "First integrated video + audio generation system for complete content creation",
+      "urls": {
+        "main": "https://techcrunch.com/2025/05/20/googles-veo-3-can-generate-videos-and-soundtracks-to-go-along-with-them/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Veo_%28text-to-video_model%29"
+      }
+    },
+    {
+      "id": 42,
+      "title": "Veo 3 Global Mobile Rollout",
+      "abstract": "Veo 3 rolls out globally on the Gemini mobile app in 30+ countries, bringing on-device video + audio creation to international users.",
+      "description": "Google expands Veo 3 accessibility by launching it globally on the Gemini mobile app across more than 30 countries. This rollout brings sophisticated video and audio generation capabilities directly to mobile devices, enabling users worldwide to create professional-quality content from their smartphones and democratizing access to advanced AI-powered content creation tools.",
+      "date": "2025-05-30",
+      "significance": "Global democratization of AI video creation through mobile accessibility",
+      "urls": {
+        "main": "https://blog.google/products/gemini/veo-3-expansion-mobile/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Veo_%28text-to-video_model%29"
+      }
+    },
+    {
+      "id": 43,
+      "title": "ByteDance SeeDance Emerges",
+      "abstract": "ByteDance's SeeDance emerges as a new text-to-video powerhouse, outperforming Veo 3 on motion choreography benchmarks and driving buzz in generative-video communities.",
+      "description": "ByteDance unveils SeeDance, a competitive text-to-video model that demonstrates superior performance on motion choreography benchmarks compared to Google's Veo 3. The model excels at generating complex dance sequences and fluid motion, creating significant excitement in generative video communities and intensifying competition in the AI video generation space.",
+      "date": "2025-06-05",
+      "significance": "Competitive breakthrough in AI video generation with superior motion capabilities",
+      "urls": {
+        "main": "https://medium.com/data-science-in-your-pocket/seedance-the-new-ai-video-generation-king-beats-veo3-openai-sora-9492a5a51f72",
+        "wikipedia": "https://en.wikipedia.org/wiki/ByteDance"
+      }
+    },
+    {
+      "id": 44,
+      "title": "CL1 Wetware-as-a-Service Launch",
+      "abstract": "Cortical Labs launches CL1 Wetware-as-a-Service, letting researchers rent live-neuron compute racks for $300/week—making biological AI experiments affordable and on-demand.",
+      "description": "Cortical Labs revolutionizes access to biological computing by launching Wetware-as-a-Service, offering researchers the ability to rent live-neuron compute racks for just $300 per week. This cloud-based service makes biological AI experiments accessible and affordable for researchers worldwide, democratizing access to cutting-edge wetware computing technology and accelerating research in biological AI systems.",
+      "date": "2025-06-10",
+      "significance": "Democratization of biological computing through affordable cloud services",
+      "urls": {
+        "main": "https://www.techradar.com/pro/what-a-deal-you-can-now-rent-human-brain-cells-on-a-silicon-chip-for-7-days-for-less-than-a-nintendo-switch-2",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cortical_Labs"
+      }
+    },
+    {
+      "id": 45,
+      "title": "Tesla's First Fully Autonomous Delivery",
+      "abstract": "Tesla completes its first fully autonomous delivery: a Model Y drives itself from Giga Texas to a customer's home—navigating highways, city streets, and parking lots with no human or remote operator on board.",
+      "description": "Tesla achieves a historic milestone in autonomous vehicle technology by completing the world's first fully autonomous commercial delivery. A Model Y successfully navigated the complete journey from Tesla's Gigafactory Texas to a customer's residence, handling complex real-world scenarios including highway driving, urban navigation, and precise parking—all without any human intervention or remote operation. This demonstration proves the viability of fully autonomous vehicle operations in commercial applications.",
+      "date": "2025-06-27",
+      "significance": "First fully autonomous commercial vehicle delivery without human oversight",
+      "urls": {
+        "main": "https://electrek.co",
+        "wikipedia": "https://en.wikipedia.org/wiki/Tesla_Autopilot"
+      }
     }
   ]
 }

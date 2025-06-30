@@ -3,8 +3,9 @@
   import { fade, fly, scale } from 'svelte/transition';
 
 
-  import bookCover from '$lib/images/Surviving-the-Singularity-Cover.png';
-  import chessImage from '$lib/images/sts-chess.jpg';
+  // Using static image paths for better compatibility
+  const bookCover = '/images/optimized/surviving_the_singularity_cover_800.webp';
+  const chessImage = '/images/optimized/sts_chess_800.webp';
 
   let showNextSteps = true;
   let activeSection = 0;
@@ -36,7 +37,7 @@
 
 <svelte:head>
   <title>Start Here | Surviving the Singularity</title>
-  <meta name="description" content="Begin your journey to understanding and preparing for the technological singularity with this introduction to the key concepts and resources." />
+  <meta name="description" content="Begin your journey of discovery into the fascinating world of AI and technological possibilities with this introduction to key concepts and inspiring resources." />
 </svelte:head>
 
 <div class="start-here-page">
@@ -46,9 +47,9 @@
     <div class="hero-content">
       {#if heroVisible}
         <div class="hero-badge" in:fly={{y: -20, duration: 600, delay: 100}}>Welcome</div>
-        <h1 class="hero-title" in:fly={{y: 20, duration: 700, delay: 400}}>AI is already reshaping careers. Will yours survive the next 5 years?</h1>
+        <h1 class="hero-title" in:fly={{y: 20, duration: 700, delay: 400}}>What extraordinary possibilities await in the age of AI?</h1>
         <p class="hero-description" in:fade={{duration: 600, delay: 700}}>
-          Learn the critical skills and mindsets that will keep you relevant in the AI revolution. Our resources help you prepare for what's coming.
+          Discover the fascinating world of artificial intelligence and explore how technology is opening new frontiers of human potential and creativity.
         </p>
         <div class="hero-scroll" in:fade={{duration: 500, delay: 1000}}>
           <a href="#singularity-intro" class="scroll-btn">
@@ -65,40 +66,29 @@
     </div>
   </header>
 
-  <!-- Social Proof Banner -->
-  <div class="social-proof-banner">
-    <div class="container">
-      <div class="social-proof-content">
-        {#if heroVisible}
-          <p class="social-proof-text" in:fly={{y: 10, duration: 600, delay: 1200}}>
-            Join our growing community of forward-thinkers preparing for the AI revolution. Connect with professionals from various tech industries and backgrounds.
-          </p>
-        {/if}
-      </div>
-    </div>
-  </div>
+
 
   <!-- Section 1: Introduction to the Singularity -->
   <section id="singularity-intro" class="content-section singularity-intro">
     <div class="container">
-      <h2>Understanding the Singularity</h2>
+      <h2>Exploring the Singularity</h2>
       <div class="section-content">
         <div class="text-content">
           <p class="lead">
-            The technological singularity represents a point when artificial intelligence surpasses human intelligence, leading to unprecedented and potentially rapid technological advancement.
+            The technological singularity represents a fascinating concept: a future where artificial intelligence could unlock extraordinary possibilities for human flourishing, creativity, and understanding.
           </p>
           <div class="key-points">
             <div class="point">
               <span class="point-icon">🧠</span>
-              <span class="point-text">AI systems developing capabilities that match or exceed human intelligence</span>
+              <span class="point-text">AI systems that complement and enhance human intelligence in remarkable ways</span>
             </div>
             <div class="point">
-              <span class="point-icon">⚙️</span>
-              <span class="point-text">Self-improving AI leading to recursive technological development</span>
+              <span class="point-icon">✨</span>
+              <span class="point-text">Self-improving AI opening pathways to discoveries we can barely imagine</span>
             </div>
             <div class="point">
-              <span class="point-icon">📈</span>
-              <span class="point-text">Acceleration of progress beyond what we can currently predict</span>
+              <span class="point-icon">🌟</span>
+              <span class="point-text">Acceleration of progress that could solve longstanding challenges</span>
             </div>
           </div>
         </div>
@@ -112,30 +102,30 @@
   <!-- Section 2: Why Preparation Matters -->
   <section class="content-section preparation-section">
     <div class="container">
-      <h2>Why Preparation Matters</h2>
+      <h2>Why This Moment is Extraordinary</h2>
       <div class="preparation-grid">
         <div class="prep-card">
           <div class="prep-icon">🔍</div>
-          <h3>Awareness</h3>
-          <p>Recognizing patterns and trajectories of technological advancement</p>
+          <h3>Wonder</h3>
+          <p>Appreciating the remarkable patterns and possibilities of technological advancement</p>
         </div>
 
         <div class="prep-card">
-          <div class="prep-icon">🛠️</div>
-          <h3>Adaptation</h3>
-          <p>Developing skills that remain valuable in a rapidly changing world</p>
+          <div class="prep-icon">🎨</div>
+          <h3>Creativity</h3>
+          <p>Discovering new ways to express ideas and solve problems with AI as a partner</p>
         </div>
 
         <div class="prep-card">
-          <div class="prep-icon">🔄</div>
-          <h3>Resilience</h3>
-          <p>Building systems that can withstand and thrive amid disruption</p>
+          <div class="prep-icon">🌈</div>
+          <h3>Exploration</h3>
+          <p>Embracing curiosity and openness to new ways of thinking and being</p>
         </div>
 
         <div class="prep-card">
-          <div class="prep-icon">🌱</div>
-          <h3>Opportunity</h3>
-          <p>Positioning yourself to benefit from emerging possibilities</p>
+          <div class="prep-icon">🌟</div>
+          <h3>Possibility</h3>
+          <p>Recognizing the extraordinary potential emerging from technological convergence</p>
         </div>
       </div>
     </div>
@@ -144,13 +134,13 @@
   <!-- Section 3: Resource Guide -->
   <section class="content-section resources-section">
     <div class="container">
-      <h2>Essential Resources</h2>
+      <h2>Inspiring Resources</h2>
       <div class="resources-timeline">
         <div class="resource-item">
           <div class="resource-number">1</div>
           <div class="resource-content">
-            <h3>Explore the Timeline</h3>
-            <p>Understand the history and future trajectory of technological development</p>
+            <h3>Discover the Timeline</h3>
+            <p>Explore the fascinating journey of technological evolution and future possibilities</p>
             <a href="/" class="resource-link">View Timeline</a>
           </div>
         </div>
@@ -158,8 +148,8 @@
         <div class="resource-item">
           <div class="resource-number">2</div>
           <div class="resource-content">
-            <h3>Read Latest Articles</h3>
-            <p>Stay current with emerging technologies and their implications</p>
+            <h3>Read Inspiring Articles</h3>
+            <p>Explore thought-provoking perspectives on emerging technologies and their potential</p>
             <a href="/blog" class="resource-link">Visit Blog</a>
           </div>
         </div>
@@ -167,8 +157,8 @@
         <div class="resource-item">
           <div class="resource-number">3</div>
           <div class="resource-content">
-            <h3>Get the Book</h3>
-            <p>Dive deeper with our comprehensive guide to the singularity</p>
+            <h3>Explore the Book</h3>
+            <p>Discover deeper insights into the fascinating world of technological transformation</p>
             <a href="/sample" class="resource-link">Read a Sample</a>
           </div>
         </div>
@@ -176,10 +166,10 @@
         <div class="resource-item">
           <div class="resource-number">4</div>
           <div class="resource-content">
-            <h3>Join the Community</h3>
-            <p>Connect with others navigating these changes</p>
+            <h3>Stay Curious</h3>
+            <p>Keep exploring new developments and expanding your perspective on what's possible</p>
             <div class="community-links">
-              <!-- Newsletter and Discord links removed -->
+              <a href="/blog" class="resource-link">Discover Latest Insights</a>
             </div>
           </div>
         </div>
@@ -195,9 +185,9 @@
           <img src={bookCover} alt="Surviving the Singularity book cover" loading="lazy" />
         </div>
         <div class="book-content">
-          <h2>The Definitive Guide</h2>
+          <h2>A Journey of Discovery</h2>
           <p>
-            "Surviving the Singularity" equips you with the mental models and actionable knowledge to navigate this period of unprecedented change.
+            "Surviving the Singularity" invites you to explore new perspectives and expand your understanding of this extraordinary period of technological transformation.
           </p>
           <div class="book-cta">
             <a href="/sample" class="primary-button">Read a Sample</a>
@@ -223,10 +213,10 @@
 
         <div class="next-step">
           <div class="step-number">2</div>
-          <h3>Connect</h3>
-          <p>Join our community of forward-thinking individuals</p>
+          <h3>Learn</h3>
+          <p>Dive deeper into understanding the singularity</p>
           <div class="action-container">
-            <!-- Discord removed -->
+            <a href="/sample" class="btn">Read Book Sample</a>
           </div>
         </div>
 
@@ -267,7 +257,7 @@
           <div class="connector-line"></div>
         </div>
         <h2 class="section-title">Resource Library</h2>
-        <p class="section-subtitle">Essential content to help you navigate the AI revolution</p>
+        <p class="section-subtitle">Inspiring content to expand your understanding of AI and technological possibilities</p>
       </div>
 
       <div class="resource-grid">
@@ -310,7 +300,7 @@
                 "The unfolding Singularity is a deeply personal process - the way you get your needs met is changing. You don't know what's about to happen; no one does."
               </p>
               <p class="card-excerpt">
-                A primer on understanding and navigating the double exponential shift in the way we get our needs met in the age of AI.
+                A thoughtful exploration of the extraordinary transformation happening in how we understand and interact with technology in the age of AI.
               </p>
               <a href="/sample" class="resource-button">
                 <span>Read Sample</span>
@@ -999,14 +989,7 @@
     padding-top: 1.5rem;
   }
 
-  /* Adjust DiscordButton styling within this section */
-  :global(.next-step .discord-button) {
-    width: 100%;
-    max-width: 100%;
-    padding: 0.6rem 0.75rem;
-    justify-content: center;
-    height: 40px;
-  }
+
 
   /* Adjust newsletter form styling within this section */
   :global(.next-step .newsletter-form) {
@@ -2157,12 +2140,7 @@
     overflow: hidden;
   }
 
-  /* Discord Section Responsive Adjustments */
-  @media (max-width: 480px) {
-    .discord-section {
-      padding: 3rem 0;
-    }
-  }
+
 
   /* Removed all TreasureTavern related styles as they conflict with the component's own styles */
 

@@ -22,7 +22,7 @@
     // New variants
     accent: 'bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white border-transparent',
     cta: 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white border-transparent shadow-md hover:shadow-lg',
-    discord: 'bg-[#5865F2] hover:bg-[#4752c4] text-white border-transparent',
+
     danger: 'bg-red-600 hover:bg-red-700 text-white border-transparent'
   };
 

@@ -289,11 +289,7 @@
     color: var(--color-text-secondary);
   }
 
-  .newsletter-section {
-    max-width: 4xl;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
+
 
   /* Dark mode adjustments */
   :global(.dark) .blog-post {

@@ -11,7 +11,8 @@
 	import FAQ from '$lib/components/FAQ.svelte';
 	import LatestNews from '$lib/components/LatestNews.svelte';
 	import BookSample from '$lib/components/BookSample.svelte';
-	import welcomeImage from '$lib/images/sts-welcome.png';
+	// Using static image path for better compatibility
+const welcomeImage = '/images/optimized/sts_welcome_1200.webp';
 	import timelineItems from '$lib/data/timelineItems.json';
 
 	// Removing MysteryBoxAd import
@@ -63,8 +64,8 @@
 		},
 		{
 			date: '2024-02-20',
-			text: 'Our newsletter has reached 10,000 subscribers! Thank you for your support.',
-			tag: 'Milestone',
+			text: 'New insights on preparing for technological transformation',
+			tag: 'Analysis',
 			link: '/blog/robot-farm-bot'
 		}
 	];
@@ -135,19 +136,7 @@
 		<PathToSingularity />
 	</div>
 
-	<!-- Welcome Blurb Section (more concise) -->
-	<div class="welcome-blurb">
-		<div class="welcome-content">
-			<h2 class="welcome-title">Navigate the Technological Revolution</h2>
-			<p class="welcome-text">
-				Prepare for a future where AI and emerging technologies transform society. Our platform provides educational resources, expert insights, and practical strategies to help you thrive in the post-Singularity world.
-			</p>
-			<div class="welcome-buttons">
-				<Button href="/start-here" variant="primary">Start Here</Button>
-				<Button href="/about" variant="outline">Learn More</Button>
-			</div>
-		</div>
-	</div>
+
 
 	<!-- Add News Ticker near the top for high visibility -->
 	<div class="news-ticker-container">
@@ -220,39 +209,7 @@
 		max-width: 1000px;
 	}
 
-	.welcome-blurb {
-		background-color: rgba(17, 24, 39, 0.7);
-		border-radius: 0.5rem;
-		padding: 1.5rem;
-		margin: 0.75rem 1rem;
-		border: 1px solid rgba(255, 255, 255, 0.1);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-	}
 
-	.welcome-content {
-		display: flex;
-		flex-direction: column;
-		gap: 0.75rem;
-	}
-
-	.welcome-title {
-		font-size: 1.75rem;
-		font-weight: 700;
-		color: white;
-		margin: 0;
-	}
-
-	.welcome-text {
-		color: #e5e7eb;
-		font-size: 1rem;
-		line-height: 1.5;
-	}
-
-	.welcome-buttons {
-		display: flex;
-		gap: 1rem;
-		margin-top: 0.5rem;
-	}
 
 	.timeline-section {
 		margin: 0 auto;
@@ -273,19 +230,9 @@
 		padding: 0 1rem;
 	}
 
-	.newsletter-container {
-		width: 100%;
-		max-width: 800px;
-		margin: -0.25rem auto 0;
-	}
 
-	.discord-button-container {
-		width: 100%;
-		max-width: 800px;
-		margin: 0.5rem auto 0.5rem;
-		display: flex;
-		justify-content: center;
-	}
+
+
 
 	.recent-posts,
 	.book-callout-container {
@@ -301,12 +248,7 @@
 		padding: 0 1rem;
 	}
 
-	.treasure-tavern-container {
-		width: 100%;
-		max-width: 900px;
-		margin: 2rem auto 1.5rem;
-		padding: 0 1rem;
-	}
+
 
 	/* Responsive styles */
 	@media (min-width: 768px) {
@@ -324,14 +266,7 @@
 	}
 
 	@media (max-width: 768px) {
-		.welcome-buttons {
-			flex-direction: column;
-			gap: 0.75rem;
-		}
 
-		.welcome-title {
-			font-size: 1.5rem;
-		}
 
 		.news-ticker-container {
 			width: 92%;
@@ -343,9 +278,7 @@
 			margin: 0.5rem auto 0.25rem;
 		}
 
-		.treasure-tavern-container {
-			margin: 1.5rem auto 1rem;
-		}
+
 	}
 
 	@media (max-width: 480px) {
@@ -363,10 +296,7 @@
 			margin: 0.5rem auto;
 		}
 
-		.welcome-blurb {
-			padding: 1.25rem;
-			margin: 0.5rem 0.75rem;
-		}
+
 
 		.news-ticker-container {
 			width: 90%;
@@ -380,10 +310,7 @@
 			padding: 0 0.5rem;
 		}
 
-		.treasure-tavern-container {
-			margin: 1rem auto 0.75rem;
-			padding: 0 0.5rem;
-		}
+
 	}
 </style>
 

@@ -516,12 +516,7 @@
   }
 
   /* Styling for the Treasure Tavern container */
-  .treasure-tavern-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 3rem auto 2rem;
-    padding: 0 1rem;
-  }
+
 
   /* Improved mobile optimization */
   @media (max-width: 768px) {
@@ -550,9 +545,7 @@
       margin: 0 0 2.5rem;
     }
 
-    .treasure-tavern-container {
-      margin: 2.5rem auto 1.5rem;
-    }
+
   }
 
   @media (max-width: 480px) {
@@ -574,9 +567,7 @@
       margin: 0.25rem auto 1.5rem;
     }
 
-    .treasure-tavern-container {
-      margin: 2rem auto 1rem;
-    }
+
   }
 
   /* Additional CSS for very small screens */

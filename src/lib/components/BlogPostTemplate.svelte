@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { browser } from '$app/environment';
-  import DiscordButton from './DiscordButton.svelte';
+
   import SocialShare from './SocialShare.svelte';
   import Spacer from './Spacer.svelte';
   import RecommendedContent from './RecommendedContent.svelte';

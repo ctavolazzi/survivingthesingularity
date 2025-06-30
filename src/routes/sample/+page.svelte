@@ -5,8 +5,9 @@
   import sampleContent from '$lib/data/sample.md?raw';
   import ContactForm from '$lib/components/ContactForm.svelte';
   import Divider from '$lib/components/Divider.svelte';
-  import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
-  import StSBookImageWebP from '$lib/images/Surviving-the-Singularity-Cover.webp';
+  // Using static image paths for better compatibility
+  const StSBookImage = '/images/optimized/surviving_the_singularity_cover_800.png';
+  const StSBookImageWebP = '/images/optimized/surviving_the_singularity_cover_800.webp';
 
 
   import SafeResponsiveImage from '$lib/components/SafeResponsiveImage.svelte';
@@ -167,18 +168,23 @@
     </div>
   </section>
 
-  <section id="join-community" class="mb-8 animate-on-scroll">
+  <section id="continue-reading" class="mb-8 animate-on-scroll">
     <div class="bg-gradient-to-b from-indigo-100 via-indigo-50/90 to-white dark:from-gray-800 dark:via-gray-800/80 dark:to-gray-900/90 p-6 md:p-8 rounded-2xl shadow-xl relative overflow-hidden">
       <!-- Background elements -->
       <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-indigo-300 to-purple-400 rounded-full opacity-10 dark:opacity-5 blur-3xl"></div>
       <div class="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-indigo-400 to-purple-300 rounded-full opacity-10 dark:opacity-5 blur-3xl"></div>
 
       <div class="relative z-10">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">Join Our Community</h2>
-        <p class="text-center mb-5 text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">Connect with others preparing for the singularity. Share insights and strategies in our exclusive Discord.</p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">Continue Your Journey</h2>
+        <p class="text-center mb-5 text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">Ready to dive deeper? Explore our comprehensive resources and prepare for the technological transformation ahead.</p>
 
-        <div class="max-w-md mx-auto">
-          <!-- Discord removed -->
+        <div class="max-w-md mx-auto text-center">
+          <a href="/blog" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+            Explore Our Articles
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -406,16 +412,5 @@
   }
 
   /* Treasure Tavern Container */
-  .treasure-tavern-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 1rem auto;
-    padding: 0 1rem;
-  }
 
-  @media (max-width: 768px) {
-    .treasure-tavern-container {
-      margin: 0.5rem auto;
-    }
-  }
 </style>

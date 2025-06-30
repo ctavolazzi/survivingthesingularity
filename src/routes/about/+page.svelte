@@ -7,7 +7,7 @@
 
 <svelte:head>
   <title>About | Surviving the Singularity</title>
-  <meta name="description" content="Navigate and thrive in the AI revolution with Surviving the Singularity - a companion for making sense of our rapidly changing world." />
+  <meta name="description" content="Explore the exciting possibilities of AI and technological advancement with Surviving the Singularity - opening minds to the transformative potential ahead." />
 </svelte:head>
 
 <div class="about-page">
@@ -16,12 +16,12 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-badge">Surviving the Singularity</div>
-      <h1 class="hero-title">Navigate and Thrive in the AI Revolution</h1>
+      <h1 class="hero-title">Embrace the Age of Possibility</h1>
       <div class="hero-tagline">
-        <p class="hero-description">Expert insights to help you navigate the rapidly evolving world of artificial intelligence and technology.</p>
+        <p class="hero-description">Thoughtful perspectives on the extraordinary technological transformation unfolding around us.</p>
         <div class="hero-cta">
-          <span class="rocket">🚀</span>
-          <span class="cta-text">Prepare for the future. Gain valuable insights. Stay ahead of the curve.</span>
+          <span class="rocket">✨</span>
+          <span class="cta-text">Discover new perspectives. Explore possibilities. Expand your understanding.</span>
         </div>
       </div>
       <div class="hero-scroll">
@@ -43,63 +43,63 @@
   <section id="singularity" class="singularity-explanation">
     <div class="container">
       <h2>What is the Singularity?</h2>
-      <p class="lead">The Technological Singularity refers to a hypothetical future point when artificial intelligence surpasses human intelligence, potentially leading to rapid and unpredictable technological growth.</p>
+      <p class="lead">The Technological Singularity represents a fascinating concept: a future point where artificial intelligence could unlock unprecedented possibilities for human flourishing and understanding.</p>
 
       <div class="explanation-grid">
         <div class="explanation-card">
           <div class="icon">🧠</div>
-          <h3>Beyond Human Intelligence</h3>
-          <p>The moment when AI capabilities exceed human cognitive abilities across virtually all domains</p>
+          <h3>Enhanced Intelligence</h3>
+          <p>AI capabilities that complement and amplify human intelligence, opening new frontiers of knowledge and creativity</p>
         </div>
         <div class="explanation-card">
           <div class="icon">📈</div>
-          <h3>Accelerating Change</h3>
-          <p>A period of exponential technological advancement that could fundamentally transform society</p>
+          <h3>Accelerating Progress</h3>
+          <p>A period of rapid technological advancement that could solve longstanding challenges and unlock new opportunities</p>
         </div>
         <div class="explanation-card">
           <div class="icon">🔄</div>
           <h3>Self-Improving Systems</h3>
-          <p>AI systems capable of redesigning themselves, creating a feedback loop of rapid enhancement</p>
+          <p>AI systems that learn and evolve, potentially leading to breakthroughs we can barely imagine today</p>
         </div>
         <div class="explanation-card">
-          <div class="icon">❓</div>
-          <h3>Unpredictable Outcomes</h3>
-          <p>A future that becomes increasingly difficult to predict as technology advances beyond our current understanding</p>
+          <div class="icon">🌟</div>
+          <h3>Emerging Possibilities</h3>
+          <p>A future rich with potential discoveries, innovations, and ways of understanding our world</p>
         </div>
         <div class="explanation-card">
-          <div class="icon">⚠️</div>
-          <h3>Existential Risk</h3>
-          <p>The potential for advanced AI systems to pose fundamental challenges to human existence and civilization</p>
+          <div class="icon">🤝</div>
+          <h3>Human-AI Partnership</h3>
+          <p>The opportunity for meaningful collaboration between human creativity and artificial intelligence</p>
         </div>
         <div class="explanation-card">
           <div class="icon">🔗</div>
           <h3>Technological Convergence</h3>
-          <p>The merging of AI with other advanced technologies like biotech, nanotech, and quantum computing</p>
+          <p>The beautiful intersection of AI with biotech, nanotech, and quantum computing, creating new possibilities</p>
         </div>
       </div>
 
-      <p>The concept was popularized by mathematician and author Vernor Vinge and further developed by futurist Ray Kurzweil. While experts debate the timeline and exact nature of the Singularity, the rapid advancement of AI technologies has made these discussions increasingly relevant to our present reality.</p>
+      <p>First described by mathematician Vernor Vinge and explored by futurist Ray Kurzweil, the Singularity invites us to consider how technology might transform human potential. While we can't predict exactly how this will unfold, we can approach these changes with curiosity and thoughtful consideration.</p>
     </div>
   </section>
 
-  <!-- Section 2: What is this page all about? -->
+  <!-- Section 2: What is this project all about? -->
   <section class="about-project">
     <div class="container">
       <h2>What is this project all about?</h2>
-      <p class="lead">Surviving the Singularity is a resource hub designed to help you navigate the AI revolution that's already underway.</p>
+      <p class="lead">Surviving the Singularity is a space for curious minds to explore the fascinating world of AI and technological possibility.</p>
 
       <div class="project-description">
-        <p>This project emerged from a simple observation: we are living through an unprecedented technological transformation, yet most of us lack the frameworks and tools to process these changes meaningfully.</p>
+        <p>This project began with a sense of wonder: we're living through an extraordinary moment in human history, where technology is opening doors we never knew existed. Rather than feeling overwhelmed, we can approach these changes with curiosity and openness.</p>
 
-        <p>Our mission is to provide:</p>
+        <p>Our approach focuses on:</p>
         <ul class="mission-list">
-          <li><span class="highlight">Clarity</span> — Cutting through the noise and hype around AI</li>
-          <li><span class="highlight">Context</span> — Historical and philosophical perspectives on technological change</li>
-          <li><span class="highlight">Frameworks</span> — Mental models to help you think about complex AI developments</li>
-          <li><span class="highlight">Practical Tools</span> — Resources to help you adapt and thrive amid rapid change</li>
+          <li><span class="highlight">Wonder</span> — Appreciating the remarkable nature of current technological developments</li>
+          <li><span class="highlight">Understanding</span> — Exploring the broader context and meaning of these changes</li>
+          <li><span class="highlight">Perspective</span> — Offering thoughtful viewpoints on what these developments might mean</li>
+          <li><span class="highlight">Inspiration</span> — Highlighting the positive potential and exciting possibilities ahead</li>
         </ul>
 
-        <p>Whether you're a technologist, business leader, educator, parent, or simply a curious human, this project aims to be your companion through this transformative period.</p>
+        <p>Whether you're fascinated by technology, curious about the future, or simply interested in new ideas, this project invites you to explore these topics with an open mind and a sense of possibility.</p>
       </div>
 
       <!-- Book Preview -->
@@ -109,31 +109,31 @@
     </div>
   </section>
 
-  <!-- Section 3: What do I need to know right now? -->
+  <!-- Section 3: What makes this moment special? -->
   <section class="need-to-know">
     <div class="container">
-      <h2>What do I need to know right now?</h2>
-      <p class="lead">The AI revolution isn't coming—it's already here, and it's accelerating rapidly.</p>
+      <h2>What makes this moment special?</h2>
+      <p class="lead">We're witnessing something remarkable: technology that's expanding what it means to be human and creative.</p>
 
       <div class="key-insights">
         <div class="insight">
-          <h3>AI is transforming every industry</h3>
-          <p>From healthcare to education, finance to creative arts, AI is reshaping how we work, learn, and create. Understanding these changes is no longer optional—it's essential for navigating the future.</p>
+          <h3>AI is unlocking human potential</h3>
+          <p>Across every field—from healthcare to education, science to the arts—AI is becoming a powerful tool that amplifies human creativity and problem-solving. It's fascinating to see how this partnership is evolving.</p>
         </div>
 
         <div class="insight">
-          <h3>The pace of change is unprecedented</h3>
-          <p>Unlike previous technological revolutions that unfolded over decades, AI capabilities are doubling every few months. This compressed timeline means we need new approaches to adaptation.</p>
+          <h3>We're experiencing accelerated discovery</h3>
+          <p>The pace of innovation is breathtaking. What once took years to develop now happens in months. This acceleration means we get to witness and participate in unprecedented breakthroughs.</p>
         </div>
 
         <div class="insight">
-          <h3>Critical thinking is more important than ever</h3>
-          <p>As AI systems become more powerful and pervasive, developing your own frameworks for evaluating claims, assessing risks, and making decisions becomes increasingly valuable.</p>
+          <h3>Curiosity and openness matter more than ever</h3>
+          <p>In a world of rapid change, the most valuable qualities are curiosity, adaptability, and the willingness to learn. These human traits become even more precious as technology advances.</p>
         </div>
 
         <div class="insight">
-          <h3>There are practical steps you can take</h3>
-          <p>From understanding AI capabilities to developing complementary skills, there are concrete ways to position yourself advantageously amid these changes.</p>
+          <h3>There are endless opportunities to explore</h3>
+          <p>From learning about AI capabilities to discovering new ways of thinking and creating, there are countless paths to explore and ways to engage with these emerging possibilities.</p>
         </div>
       </div>
 
@@ -144,35 +144,31 @@
     </div>
   </section>
 
-  <!-- Section 4: How can I support this project? -->
+  <!-- Section 4: How can you explore further? -->
   <section class="support-section">
     <div class="container">
-      <h2>How can I support this project?</h2>
+      <h2>How can you explore further?</h2>
 
       <div class="support-grid">
         <div class="support-card">
           <div class="support-icon">📚</div>
-          <h3>Read and Share</h3>
-          <p>Explore our free resources and share them with others who might benefit.</p>
+          <h3>Dive into the Content</h3>
+          <p>Explore our articles and resources at your own pace. Share what resonates with others who might find it interesting.</p>
         </div>
 
         <div class="support-card">
-          <div class="support-icon">💬</div>
-          <h3>Provide Feedback</h3>
-          <p>Share your thoughts and suggestions to help shape future content.</p>
-          <!-- Contact link removed -->
+          <div class="support-icon">💭</div>
+          <h3>Reflect and Consider</h3>
+          <p>Take time to think about these ideas and how they might relate to your own interests and experiences.</p>
         </div>
 
         <div class="support-card">
-          <div class="support-icon">🤝</div>
-          <h3>Collaborate</h3>
-          <p>If you have expertise that could contribute to this project, reach out to discuss collaboration.</p>
+          <div class="support-icon">🌱</div>
+          <h3>Stay Curious</h3>
+          <p>Keep an open mind about technological developments and their potential to enhance human creativity and understanding.</p>
         </div>
       </div>
 
-      <div class="newsletter-section">
-        <!-- Discord removed -->
-      </div>
     </div>
   </section>
 
@@ -672,43 +668,7 @@
     line-height: 1.5;
   }
 
-  .contact-button {
-    display: inline-block;
-    background-color: rgba(124, 58, 237, 0.2);
-    color: #a78bfa;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    text-align: center;
-    width: 100%;
-  }
 
-  .contact-button:hover {
-    background-color: rgba(124, 58, 237, 0.3);
-    transform: translateY(-2px);
-  }
-
-  .newsletter-section {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .newsletter-section h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .newsletter-icon {
-    font-size: 1.2em;
-    vertical-align: middle;
-    margin-right: 0.5rem;
-  }
 
   /* Responsive adjustments */
   @media (min-width: 768px) {
@@ -716,9 +676,7 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .contact-button {
-      width: auto;
-    }
+
 
     .support-card {
       padding: 2rem;
@@ -775,23 +733,5 @@
     }
   }
 
-  /* Treasure Tavern Section */
-  .treasure-tavern-section {
-    background-color: #0f0f23;
-    padding-bottom: 3rem;
-    margin-top: -4rem;
-  }
 
-  @media (max-width: 768px) {
-    .treasure-tavern-section {
-      padding-bottom: 2rem;
-      margin-top: -3rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .treasure-tavern-section {
-      margin-top: -2.5rem;
-    }
-  }
 </style>

@@ -16,7 +16,6 @@
     { title: 'Explore Our Blog', path: '/blog' },
     { title: 'Read a Book Sample', path: '/sample' },
     { title: 'Download the Free Guide', path: '/download' },
-    { title: 'Join Our Newsletter', path: '/newsletter' }
   ];
 
   async function handleSubmit(event) {

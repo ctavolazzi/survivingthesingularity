@@ -198,16 +198,6 @@
         </a>
 
         <a
-          href="/newsletter"
-          class="mobile-nav-item {currentPath === '/newsletter' ? 'active' : ''}"
-          on:click={(e) => navigateTo('/newsletter', e)}
-        >
-          <span class="flex items-center">
-            <span class="mr-3">{@html IconNewsletter.svg}</span>
-            <span>Newsletter</span>
-          </span>
-        </a>
-        <a
           href="/contact"
           class="mobile-nav-item {currentPath === '/contact' ? 'active' : ''}"
           on:click={(e) => navigateTo('/contact', e)}

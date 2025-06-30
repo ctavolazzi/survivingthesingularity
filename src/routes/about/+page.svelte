@@ -1,8 +1,8 @@
 <script>
   import FAQ from '$lib/components/FAQ.svelte';
   import BookSample from '$lib/components/BookSample.svelte';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
-  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+
+
 </script>
 
 <svelte:head>
@@ -160,9 +160,7 @@
           <div class="support-icon">💬</div>
           <h3>Provide Feedback</h3>
           <p>Share your thoughts and suggestions to help shape future content.</p>
-          <a href="/contact" class="contact-button" data-sveltekit-preload-data="hover">
-            Contact Us
-          </a>
+          <!-- Contact link removed -->
         </div>
 
         <div class="support-card">
@@ -173,7 +171,7 @@
       </div>
 
       <div class="newsletter-section">
-        <DiscordButton />
+        <!-- Discord removed -->
       </div>
     </div>
   </section>
@@ -185,24 +183,7 @@
     </div>
   </section>
 
-  <!-- Treasure Tavern Ad -->
-  <section class="treasure-tavern-section">
-    <div class="container">
-      <TreasureTavernAd
-        title="Discover Unique Treasures"
-        subtitle="The Treasure Tavern"
-        description="Curated gems from the far corners of the Internet."
-        bulletPoints={[
-          "Unique finds you won't see elsewhere",
-          "Each item has a story to tell",
-          "Fresh collections added monthly"
-        ]}
-        ctaText="Explore the Tavern"
-        ctaUrl="https://treasuretavernhq.com/"
-        badgeText="New Arrivals"
-      />
-    </div>
-  </section>
+  <!-- Treasure Tavern Ad removed -->
 </div>
 
 <style>

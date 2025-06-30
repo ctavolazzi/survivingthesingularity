@@ -2,10 +2,10 @@
   import { onMount } from 'svelte';
   export let data;
   const { posts } = data;
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
+
   import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
   import NewsTicker from '$lib/components/NewsTicker.svelte';
-  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+
   import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts.js';
 
   // Create news ticker items array
@@ -162,25 +162,7 @@
     </div>
 
     <div class="stylish-divider"></div>
-    <DiscordButton />
-
-    <!-- Add Treasure Tavern Ad -->
-    <div class="treasure-tavern-container">
-      <TreasureTavernAd
-        title="Discover Unique Treasures"
-        subtitle="The Treasure Tavern"
-        description="Curated gems from the far corners of the Internet."
-        bulletPoints={[
-          "Unique finds you won't see elsewhere",
-          "Support our work with every purchase",
-          "Each item has a story to tell",
-          "Fresh collections added monthly"
-        ]}
-        ctaText="Explore the Tavern"
-        ctaUrl="https://treasuretavernhq.com/"
-        badgeText="Support Our Work"
-      />
-    </div>
+    <!-- Discord and Treasure Tavern removed -->
   </div>
 </div>
 

@@ -268,8 +268,7 @@
       />
     </div>
 
-    <!-- Discord -->
-    <DiscordButton />
+    <!-- Discord removed -->
 
     <!-- Ads section -->
     {#if options.showAds}

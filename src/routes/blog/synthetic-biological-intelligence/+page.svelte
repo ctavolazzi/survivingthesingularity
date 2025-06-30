@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
+
   import Spacer from '$lib/components/Spacer.svelte';
   import SocialShare from '$lib/components/SocialShare.svelte';
   import RecommendedContent from '$lib/components/RecommendedContent.svelte';
@@ -406,7 +406,7 @@
 
     <Spacer height="2rem" />
 
-    <DiscordButton />
+    <!-- Discord removed -->
   </div>
 </div>
 

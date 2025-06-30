@@ -3,7 +3,7 @@
   import { darkMode } from '$lib/stores/darkMode';
   import { gotoAndScrollTop } from '$lib/utils/navigation';
   import { page } from '$app/stores';
-  import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconNewsletter } from '$lib/assets/Icons.svelte';
+  import { IconHome, IconAbout, IconBlog, IconSample } from '$lib/assets/Icons.svelte';
   import { onMount } from 'svelte';
   import { slide, fade } from 'svelte/transition';
 
@@ -120,18 +120,8 @@
         </span>
       </NavLi>
       <!-- Sample link removed from desktop nav -->
-      <NavLi href="/newsletter" class="nav-item {currentPath === '/newsletter' ? 'active' : ''}" on:click={(e) => navigateTo('/newsletter', e)}>
-        <span class="nav-button flex items-center h-full w-full">
-          <span class="flex-grow text-left">Newsletter</span>
-          <span class="nav-icon ml-2">{@html IconNewsletter.svg}</span>
-        </span>
-      </NavLi>
-      <NavLi href="/contact" class="nav-item {currentPath === '/contact' ? 'active' : ''}" on:click={(e) => navigateTo('/contact', e)}>
-        <span class="nav-button flex items-center h-full w-full">
-          <span class="flex-grow text-left">Contact</span>
-          <span class="nav-icon ml-2">{@html IconContact.svg}</span>
-        </span>
-      </NavLi>
+
+
     </NavUl>
   {/if}
 </Navbar>
@@ -197,16 +187,7 @@
           </span>
         </a>
 
-        <a
-          href="/contact"
-          class="mobile-nav-item {currentPath === '/contact' ? 'active' : ''}"
-          on:click={(e) => navigateTo('/contact', e)}
-        >
-          <span class="flex items-center">
-            <span class="mr-3">{@html IconContact.svg}</span>
-            <span>Contact</span>
-          </span>
-        </a>
+
       </nav>
     </div>
   </div>

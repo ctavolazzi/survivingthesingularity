@@ -5,7 +5,7 @@
   import { post } from '$lib/data/blog-posts/whispers-of-the-future/index.js';
   import { marked } from 'marked';
   import { browser } from '$app/environment';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
+
   import SocialShare from '$lib/components/SocialShare.svelte';
 
   let htmlContent = marked(post.content);
@@ -100,7 +100,7 @@
     </div>
 
     <Spacer height="2rem" />
-    <DiscordButton />
+    <!-- Discord removed -->
   </div>
 </div>
 

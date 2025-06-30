@@ -1,5 +1,5 @@
 <script>
-    import DiscordButton from '$lib/components/DiscordButton.svelte';
+
     import Spacer from '$lib/components/Spacer.svelte';
     import { post } from '$lib/data/blog-posts/claude-projects-weekend-project/index.js';
     import { marked } from 'marked';
@@ -120,7 +120,7 @@
     </div>
 
     <Spacer height="2rem" />
-    <DiscordButton />
+    <!-- Discord removed -->
   </div>
 </div>
 

@@ -1,8 +1,8 @@
 <script>
   import { onMount } from 'svelte';
   import { fade, fly, scale } from 'svelte/transition';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
-  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+
+
   import bookCover from '$lib/images/Surviving-the-Singularity-Cover.png';
   import chessImage from '$lib/images/sts-chess.jpg';
 
@@ -179,8 +179,7 @@
             <h3>Join the Community</h3>
             <p>Connect with others navigating these changes</p>
             <div class="community-links">
-              <a href="/newsletter" class="resource-link">Newsletter</a>
-              <a href="/discord" class="resource-link">Discord</a>
+              <!-- Newsletter and Discord links removed -->
             </div>
           </div>
         </div>
@@ -227,7 +226,7 @@
           <h3>Connect</h3>
           <p>Join our community of forward-thinking individuals</p>
           <div class="action-container">
-            <DiscordButton />
+            <!-- Discord removed -->
           </div>
         </div>
 
@@ -295,38 +294,7 @@
           </div>
         </div>
 
-        <!-- Newsletter Preview Card -->
-        <div class="resource-card newsletter-card">
-          <div class="card-inner">
-            <div class="card-overlay"></div>
-            <div class="card-badge">Newsletter Insights</div>
-            <div class="card-content">
-              <h3>Surviving the Singularity Newsletter</h3>
-              <p class="card-excerpt">
-                Welcome to the AI Revolution: Your guide to navigating the rapidly evolving world of artificial intelligence. Stay informed, prepared, and ahead of the curve.
-              </p>
-              <div class="newsletter-highlights">
-                <div class="highlight-item">
-                  <span class="highlight-icon">🌟</span>
-                  <span class="highlight-text">This Week in AI</span>
-                </div>
-                <div class="highlight-item">
-                  <span class="highlight-icon">📊</span>
-                  <span class="highlight-text">Tech Trends</span>
-                </div>
-                <div class="highlight-item">
-                  <span class="highlight-icon">🧠</span>
-                  <span class="highlight-text">AI Insights</span>
-                </div>
-              </div>
-              <a href="/newsletter" class="resource-button">
-                <span>Subscribe</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                <span class="button-glow"></span>
-              </a>
-            </div>
-          </div>
-        </div>
+        <!-- Newsletter Preview Card removed -->
 
         <!-- Book Sample Preview Card -->
         <div class="resource-card book-card">
@@ -362,12 +330,7 @@
     </div>
   </section>
 
-  <!-- Treasure Tavern Ad Section -->
-  <section class="content-section">
-    <div class="container">
-      <TreasureTavernAd />
-    </div>
-  </section>
+  <!-- Treasure Tavern Ad Section removed -->
 </div>
 
 <style>

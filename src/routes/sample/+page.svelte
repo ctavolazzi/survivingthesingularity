@@ -7,8 +7,8 @@
   import Divider from '$lib/components/Divider.svelte';
   import StSBookImage from '$lib/images/Surviving-the-Singularity-Cover.png';
   import StSBookImageWebP from '$lib/images/Surviving-the-Singularity-Cover.webp';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
-  import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+
+
   import SafeResponsiveImage from '$lib/components/SafeResponsiveImage.svelte';
 
   // Define responsive image sizes - halved from original values
@@ -178,31 +178,13 @@
         <p class="text-center mb-5 text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">Connect with others preparing for the singularity. Share insights and strategies in our exclusive Discord.</p>
 
         <div class="max-w-md mx-auto">
-          <DiscordButton />
+          <!-- Discord removed -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Add Treasure Tavern Ad Section -->
-  <section id="treasure-tavern" class="mb-8 animate-on-scroll">
-    <div class="treasure-tavern-container">
-      <TreasureTavernAd
-        title="Discover Unique Treasures"
-        subtitle="The Treasure Tavern"
-        description="Curated gems from the far corners of the Internet."
-        bulletPoints={[
-          "Unique finds you won't see elsewhere",
-          "Support our work with every purchase",
-          "Each item has a story to tell",
-          "Fresh collections added monthly"
-        ]}
-        ctaText="Explore the Tavern"
-        ctaUrl="https://treasuretavernhq.com/"
-        badgeText="Support Our Work"
-      />
-    </div>
-  </section>
+  <!-- Treasure Tavern Ad Section removed -->
 </main>
 
 <style>

@@ -13,11 +13,11 @@
 	import BookSample from '$lib/components/BookSample.svelte';
 	import welcomeImage from '$lib/images/sts-welcome.png';
 	import timelineItems from '$lib/data/timelineItems.json';
-	import DiscordButton from '$lib/components/DiscordButton.svelte';
+
 	// Removing MysteryBoxAd import
 	import NewsTicker from '$lib/components/NewsTicker.svelte';
 	import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
-	import TreasureTavernAd from '$lib/components/ads/TreasureTavernAd.svelte';
+
 	import AGIRoadmap from '$lib/components/AGIRoadmap.svelte';
 	import PathToSingularity from '$lib/components/PathToSingularity.svelte';
 	// Import our new UI components
@@ -176,9 +176,7 @@
 	<FAQ class="faq-container" />
 
 
-	<div class="discord-button-container">
-		<DiscordButton />
-	</div>
+
 
 	<div class="recent-posts">
 		<LatestNews />
@@ -199,21 +197,7 @@
 	</div>
 
 	<!-- Replace Treasure Tavern Promo with enhanced component -->
-	<div class="treasure-tavern-container">
-		<TreasureTavernAd
-			title="Discover Unique Treasures"
-			subtitle="The Treasure Tavern"
-			description="Curated gems from the far corners of the Internet."
-			bulletPoints={[
-				"Unique finds you won't see elsewhere",
-				"Each item has a story to tell",
-				"Fresh collections added monthly"
-			]}
-			ctaText="Explore the Tavern"
-			ctaUrl="https://treasuretavernhq.com/"
-			badgeText="New Arrivals"
-		/>
-	</div>
+
 
 	<!-- Mystery Box Ad removed -->
 </div>

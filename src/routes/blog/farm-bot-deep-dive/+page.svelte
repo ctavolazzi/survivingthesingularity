@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import Spacer from '$lib/components/Spacer.svelte';
-  import DiscordButton from '$lib/components/DiscordButton.svelte';
+
   import RecommendedContent from '$lib/components/RecommendedContent.svelte';
   import SocialShare from '$lib/components/SocialShare.svelte';
 
@@ -177,7 +177,7 @@
     </div>
 
     <Spacer height="2rem" />
-    <DiscordButton />
+          <!-- Discord removed -->
   </div>
 </div>
 

@@ -13,13 +13,8 @@
         <ul class="list-none">
           <li class="mb-1"><a href="/" class="text-gray-400 hover:text-gray-200">Home</a></li>
           <li class="mb-1"><a href="/about" class="text-gray-400 hover:text-gray-200">About Us</a></li>
-          <li class="mb-1"><a href="/contact" class="text-gray-400 hover:text-gray-200">Contact</a></li>
-          <li class="mb-1">
-            <a href="/discord" class="text-cyan-400 hover:text-cyan-300 transition-colors">
-              Join Our Discord
-              <span class="inline-block ml-1 animate-pulse">•</span>
-            </a>
-          </li>
+
+
         </ul>
       </div>
       <div class="w-full md:w-auto text-center md:text-left">

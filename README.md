@@ -7,7 +7,7 @@ A resource platform providing educational content to help people prepare for the
 Surviving the Singularity is a web application built with SvelteKit that offers:
 
 - Educational resources about AI and the technological Singularity
-- A data warehouse with curated information on AI developments, robotics, and future projections
+
 - Book samples and resources from "Surviving the Singularity"
 - Blog posts and news related to AI advancements
 - Newsletters to keep users updated on significant technological changes
@@ -121,7 +121,7 @@ This project has transitioned from a community-contributed platform to a curated
 
 ## Contributing
 
-While we no longer accept direct contributions to the data warehouse, we welcome code improvements and bug fixes. Please see our [contributing guidelines](./docs/contributing/CONTRIBUTING.md) for detailed information on how to contribute to this project.
+We welcome code improvements and bug fixes. Please see our [contributing guidelines](./docs/contributing/CONTRIBUTING.md) for detailed information on how to contribute to this project.
 
 Our contributing documentation includes:
 - [Style Guide](./docs/contributing/STYLE_GUIDE.md) - Code style and formatting guidelines

@@ -3,7 +3,7 @@
   import { darkMode } from '$lib/stores/darkMode';
   import { gotoAndScrollTop } from '$lib/utils/navigation';
   import { page } from '$app/stores';
-  import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconData, IconNewsletter } from '$lib/assets/Icons.svelte';
+  import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconNewsletter } from '$lib/assets/Icons.svelte';
   import { onMount } from 'svelte';
   import { slide, fade } from 'svelte/transition';
 
@@ -11,7 +11,7 @@
   let isMenuOpen = false;
   let isLargeScreen = false;
   // Define links that will only be shown in the hamburger menu
-  const hamburgerOnlyLinks = ['/sample', '/data-warehouse'];
+  const hamburgerOnlyLinks = ['/sample'];
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -119,7 +119,7 @@
           <span class="nav-icon ml-2">{@html IconBlog.svg}</span>
         </span>
       </NavLi>
-      <!-- Data Warehouse and Sample links removed from desktop nav -->
+      <!-- Sample link removed from desktop nav -->
       <NavLi href="/newsletter" class="nav-item {currentPath === '/newsletter' ? 'active' : ''}" on:click={(e) => navigateTo('/newsletter', e)}>
         <span class="nav-button flex items-center h-full w-full">
           <span class="flex-grow text-left">Newsletter</span>
@@ -196,16 +196,7 @@
             <span>Sample</span>
           </span>
         </a>
-        <a
-          href="/data-warehouse"
-          class="mobile-nav-item {currentPath.startsWith('/data-warehouse') ? 'active' : ''}"
-          on:click={(e) => navigateTo('/data-warehouse', e)}
-        >
-          <span class="flex items-center">
-            <span class="mr-3">{@html IconData.svg}</span>
-            <span>Data Warehouse</span>
-          </span>
-        </a>
+
         <a
           href="/newsletter"
           class="mobile-nav-item {currentPath === '/newsletter' ? 'active' : ''}"

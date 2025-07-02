@@ -35,7 +35,7 @@ For authors and editors with access to this repository:
 
 The content of this book is © [Current Year] [Author Name]. All rights reserved. The text is made available online for free reading, but may not be reproduced or distributed without permission.
 
-For questions or permissions, please contact [contact@survivingthesingularity.com](mailto:contact@survivingthesingularity.com).
+This content is provided for educational and informational purposes.
 
 # Guidelines for Writing in the Dynamic Satirical Style of Christopher Tavolazzi
 

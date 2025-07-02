@@ -205,11 +205,59 @@
       }
     }
   },
+  "static/images/Surviving-the-Singularity-Cover.png": {
+    "original": {
+      "width": 1410,
+      "height": 2250,
+      "path": "static/images/Surviving-the-Singularity-Cover.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_400.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_800.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
+      }
+    }
+  },
   "static/future-projections/future-of-jobs.png": {
     "original": {
       "path": "static/future-projections/future-of-jobs.png"
     },
     "skipped": true
+  },
+  "static/images/blog/whispers-ai-featured.png": {
+    "original": {
+      "width": 1536,
+      "height": 1024,
+      "path": "static/images/blog/whispers-ai-featured.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/whispers_ai_featured_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/whispers_ai_featured_400.png",
+        "webp": "static/images/optimized/whispers_ai_featured_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/whispers_ai_featured_800.png",
+        "webp": "static/images/optimized/whispers_ai_featured_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/whispers_ai_featured_1200.png",
+        "webp": "static/images/optimized/whispers_ai_featured_1200.webp"
+      }
+    }
   },
   "src/lib/images/sts-chess.jpg": {
     "original": {

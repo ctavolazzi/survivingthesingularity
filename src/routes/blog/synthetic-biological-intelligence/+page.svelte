@@ -453,13 +453,7 @@
     font-size: 1.875rem;
   }
 
-  .blog-content h3 {
-    color: #ff7708;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+
 
   .blog-content p {
     margin-bottom: 1rem;
@@ -482,18 +476,9 @@
     list-style-type: disc;
   }
 
-  .blog-content ol {
-    list-style-type: decimal;
-  }
 
-  .blog-content a {
-    color: #3b82f6;
-    text-decoration: underline;
-  }
 
-  .blog-content a:hover {
-    color: #2563eb;
-  }
+
 
   .audio-player-container {
     padding: 1rem;

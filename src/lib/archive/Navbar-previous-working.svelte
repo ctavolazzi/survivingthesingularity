@@ -3,75 +3,75 @@
     import { darkMode } from '$lib/stores/darkMode';
     import { goto } from '$app/navigation';
     import { page } from '$app/stores';
-    import { IconHome, IconAbout, IconBlog, IconContact, IconSample, IconPreorder, IconResources, IconData } from '$lib/assets/Icons.svelte';
+    import { IconHome, IconAbout, IconBlog, IconSample, IconPreorder, IconResources, IconData } from '$lib/assets/Icons.svelte';
     import { onMount } from 'svelte';
-  
+
     let navbar;
     let isMenuOpen = false;
     let isDropdownOpen = false;
     let isMobileMoreOpen = false;
-  
+
     function toggleMenu() {
       isMenuOpen = !isMenuOpen;
     }
-  
+
     function closeMenu() {
       isMenuOpen = false;
       isDropdownOpen = false;
       isMobileMoreOpen = false;
     }
-  
+
     function toggleDropdown(event) {
       event.stopPropagation();
       isDropdownOpen = !isDropdownOpen;
     }
-  
+
     function toggleMobileMore(event) {
       event.stopPropagation();
       isMobileMoreOpen = !isMobileMoreOpen;
     }
-  
+
     function toggleDarkMode() {
       console.log("Toggling dark mode");
       darkMode.update(d => !d);
     }
-  
+
     function handleBackBook() {
       window.open('https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook', '_blank');
     }
-  
+
     function handleJoinSkool() {
       window.open('https://www.skool.com/surviving-the-singularity-9297', '_blank');
     }
-  
+
     function handleDataWarehouseClick() {
       goto('/data-warehouse');
       closeMenu();
     }
-  
+
     function handleNewsletterClick() {
       goto('/newsletter');
       closeMenu();
     }
-  
+
     onMount(() => {
       const closeDropdown = (event) => {
         if (isDropdownOpen && !event.target.closest('.nav-item')) {
           isDropdownOpen = false;
         }
       };
-  
+
       document.addEventListener('click', closeDropdown);
-  
+
       return () => {
         document.removeEventListener('click', closeDropdown);
       };
     });
-  
+
     let currentPath;
     $: currentPath = $page.url.pathname;
   </script>
-  
+
   <div class="navbar-container" bind:this={navbar}>
     <Navbar
       class="bg-white dark:bg-gray-800 transition-all duration-300 w-full fixed top-0 left-0 right-0 z-50 shadow-lg"
@@ -107,12 +107,7 @@
             <span class="nav-icon ml-2">{@html IconBlog.svg}</span>
           </span>
         </NavLi>
-        <NavLi href="/contact" class="nav-item">
-          <span class="nav-button flex items-center h-full w-full">
-            <span class="flex-grow text-left">Contact</span>
-            <span class="nav-icon ml-2">{@html IconContact.svg}</span>
-          </span>
-        </NavLi>
+
         <NavLi href="/sample" class="nav-item">
           <span class="nav-button flex items-center h-full w-full">
             <span class="flex-grow text-left">Sample</span>
@@ -147,7 +142,7 @@
       </NavUl>
     </Navbar>
   </div>
-  
+
   {#if isMenuOpen}
     <div class="mobile-menu md:hidden w-full bg-white dark:bg-gray-800 fixed top-[64px] left-0 right-0 z-40">
       <ul class="flex flex-col items-end p-6">
@@ -169,12 +164,7 @@
             <span class="nav-icon">{@html IconBlog.svg}</span>
           </a>
         </li>
-        <li class="w-full border-b border-gray-200 dark:border-gray-700">
-          <a href="/contact" class="mobile-menu-link {currentPath === '/contact' ? 'active' : ''}" on:click={closeMenu} aria-label="Contact" data-tracking="nav-contact">
-            Contact
-            <span class="nav-icon">{@html IconContact.svg}</span>
-          </a>
-        </li>
+
         <li class="w-full border-b border-gray-200 dark:border-gray-700">
           <a href="/sample" class="mobile-menu-link {currentPath === '/sample' ? 'active' : ''}" on:click={closeMenu} aria-label="Sample" data-tracking="nav-sample">
             Sample
@@ -225,23 +215,23 @@
       </ul>
     </div>
   {/if}
-  
+
   <style>
     :global(body) {
       padding-top: 30px; /* Adjust this value based on your navbar height */
       overflow-x: hidden;
     }
-  
+
     .mobile-menu {
       transition: none;
       opacity: 1;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
-  
+
     :global(.dark) .mobile-menu {
       box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06);
     }
-  
+
     .mobile-menu-link,
     .mobile-menu-sublink,
     .mobile-menu-button {
@@ -257,44 +247,44 @@
       position: relative;
       right: 0;
     }
-  
+
     .mobile-menu-sublink {
       font-size: 1rem;
       padding: 0.5rem 0;
     }
-  
+
     .icon {
       width: 1.5em;
       height: 1.5em;
       margin-left: 0.5em;
     }
-  
+
     :global(.dark) .mobile-menu-link {
       color: #e2e8f0;
     }
-  
+
     .mobile-menu-link:hover,
     .mobile-menu-sublink:hover {
       color: #2d3748;
       right: 5px;
     }
-  
+
     :global(.dark) .mobile-menu-link:hover {
       color: #fff;
     }
-  
+
     :global(.dark) .mobile-menu-sublink {
       color: #a0aec0;
     }
-  
+
     .mobile-menu-sublink:hover {
       color: #4a5568;
     }
-  
+
     :global(.dark) .mobile-menu-sublink:hover {
       color: #e2e8f0;
     }
-  
+
     .mobile-menu-button {
       display: block;
       width: 100%;
@@ -307,65 +297,65 @@
       border-radius: 0.375rem;
       transition: all 0.2s ease-in-out;
     }
-  
+
     :global(.dark) .mobile-menu-button {
       background-color: #2d3748;
     }
-  
+
     .mobile-menu-button:hover {
       background-color: #2d3748;
     }
-  
+
     :global(.dark) .mobile-menu-button:hover {
       background-color: #4a5568;
     }
-  
+
     .icon {
       display: inline-block;
       width: 1.5em;
       text-align: center;
       margin-right: 0.5em;
     }
-  
+
     .active {
       font-weight: bold;
       color: #2b6cb0;
     }
-  
+
     :global(.dark) .active {
       color: #63b3ed;
     }
-  
+
     .highlight {
       font-weight: bold;
       color: #4299e1;
     }
-  
+
     :global(.dark) .highlight {
       color: #63b3ed;
     }
-  
+
     .download-link {
       color: #2f855a;
     }
-  
+
     :global(.dark) .download-link {
       color: #48bb78;
     }
-  
+
     .external-link {
       color: #805ad5;
     }
-  
+
     :global(.dark) .external-link {
       color: #b794f4;
     }
-  
+
     .nav-item {
       display: flex;
       align-items: stretch; /* Ensures child elements stretch to full height */
     }
-  
+
     .dropdown-toggle {
       background: none;
       border: none;
@@ -374,7 +364,7 @@
       font: inherit;
       outline: inherit;
     }
-  
+
     .dropdown-menu {
       display: block;
       position: absolute;
@@ -389,7 +379,7 @@
       border-radius: 0.5rem;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
     }
-  
+
     .dropdown-item {
       display: block;
       width: 100%;
@@ -403,53 +393,53 @@
       border: 0;
       transition: all 0.2s ease-in-out;
     }
-  
+
     .dropdown-item:hover, .dropdown-item:focus {
       color: #2b6cb0;
       text-decoration: none;
       background-color: #ebf8ff;
     }
-  
+
     :global(.dark) .dropdown-menu {
       background-color: #2d3748;
       border-color: rgba(255,255,255,0.1);
     }
-  
+
     :global(.dark) .dropdown-item {
       color: #e2e8f0;
     }
-  
+
     :global(.dark) .dropdown-item:hover, :global(.dark) .dropdown-item:focus {
       color: #90cdf4;
       background-color: #4a5568;
     }
-  
+
     .mobile-menu-link:hover,
     .mobile-menu-sublink:hover,
     .dropdown-item:hover {
       background-color: #f7fafc;
       right: 5px;
     }
-  
+
     :global(.dark) .mobile-menu-link:hover,
     :global(.dark) .mobile-menu-sublink:hover,
     :global(.dark) .dropdown-item:hover {
       background-color: #2d3748;
     }
-  
+
     .mobile-menu-link:focus,
     .mobile-menu-sublink:focus,
     .dropdown-item:focus {
       outline: 2px solid #4299e1;
       outline-offset: 2px;
     }
-  
+
     :global(.dark) .mobile-menu-link:focus,
     :global(.dark) .mobile-menu-sublink:focus,
     :global(.dark) .dropdown-item:focus {
       outline-color: #63b3ed;
     }
-  
+
     .nav-icon {
       display: inline-flex;
       align-items: center;
@@ -457,17 +447,17 @@
       width: 1.5rem;
       height: 1.5rem;
     }
-  
+
     .nav-icon :global(svg) {
       width: 100%;
       height: 100%;
     }
-  
+
     .nav-item {
       display: flex;
       align-items: stretch;
     }
-  
+
     .nav-button,
     .preorder-button {
       position: relative;
@@ -483,7 +473,7 @@
       height: 100%;
       width: 100%;
     }
-  
+
     .nav-button::before,
     .preorder-button::before {
       content: '';
@@ -496,19 +486,19 @@
       opacity: 0;
       transition: opacity 0.2s ease-in-out;
     }
-  
+
     .nav-button:hover::before {
       opacity: 0.1;
     }
-  
+
     .preorder-button::before {
       opacity: 0.1;
     }
-  
+
     .preorder-button:hover::before {
       opacity: 0.2;
     }
-  
+
     .nav-icon {
       display: flex;
       align-items: center;
@@ -516,12 +506,12 @@
       width: 1.5rem;
       height: 1.5rem;
     }
-  
+
     .nav-icon :global(svg) {
       width: 100%;
       height: 100%;
     }
-  
+
     /* Pulsing animation only for preorder button */
     @keyframes pulse {
       0% {
@@ -534,15 +524,15 @@
         box-shadow: 0 0 0 0 rgba(66, 153, 225, 0);
       }
     }
-  
+
     .preorder-button {
       animation: pulse 2s infinite;
     }
-  
+
     :global(.dark) .preorder-button {
       animation: pulse-dark 2s infinite;
     }
-  
+
     @keyframes pulse-dark {
       0% {
         box-shadow: 0 0 0 0 rgba(99, 179, 237, 0.4);

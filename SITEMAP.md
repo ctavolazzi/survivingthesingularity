@@ -55,12 +55,7 @@
   - Section content loaded dynamically
   - Progress tracking via `bookPage` store
 
-### Contact Page (`/contact`)
-- Components:
-  - `ContactForm.svelte`
-- Data Flow:
-  - Form submission handled client-side
-  - Email service integration
+
 
 ### Profile Pages (`/profile/[username]`)
 - Components:
@@ -135,7 +130,7 @@
 - `Countdown.svelte` - Detailed countdown
 
 ### Interactive Components
-`ContactForm.svelte` - Contact form
+
 `SocialShare.svelte` - Social sharing
 `Auth.svelte` - Authentication
 

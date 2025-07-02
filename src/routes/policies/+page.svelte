@@ -56,8 +56,12 @@
       <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Changes to This Policy</h3>
       <p class="mb-6">We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make material changes to this Privacy Policy, we will notify you by posting the updated policy on this page with a "Last Updated" date.</p>
 
-      <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Questions</h3>
-      <p class="mb-6">If you have any questions about this Privacy Policy or our data practices, you may reach out to us via email.</p>
+      <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Contact Information</h3>
+      <p class="mb-4">We do not collect personal data nor do we use cookies. However, if you have previously submitted a request for an advance copy of the book, you may contact us at <a href="mailto:info@survivingthesingularity.com" class="text-blue-600 dark:text-blue-400 hover:underline">info@survivingthesingularity.com</a>.</p>
+
+      <p class="mb-4">The book is still in development and the advance copy will be distributed once it is complete. Alternatively, if you would like a refund or have any other book-related requests, please email <a href="mailto:info@survivingthesingularity.com" class="text-blue-600 dark:text-blue-400 hover:underline">info@survivingthesingularity.com</a>.</p>
+
+      <p class="mb-6">If you have any questions about this Privacy Policy or our data practices, you may reach out to us at the same email address.</p>
     </div>
   </section>
 
@@ -132,9 +136,9 @@
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Last Updated: January 27, 2025</p>
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
-      <p class="mb-4">While we've made our best effort to comply with relevant privacy laws and regulations, the policies on this page are not legal advice. These policies are provided for transparency and to inform you about our practices.</p>
+            <p class="mb-4">While we've made our best effort to comply with relevant privacy laws and regulations, the policies on this page are not legal advice. These policies are provided for transparency and to inform you about our practices.</p>
 
-      <p class="mb-6">This website is owned and operated by Surviving the Singularity. If you have any questions about these policies or our practices, you may reach out to us via email.</p>
+      <p class="mb-6">This website is owned and operated by Surviving the Singularity. If you have any questions about these policies or our practices, you may reach out to us at <a href="mailto:info@survivingthesingularity.com" class="text-blue-600 dark:text-blue-400 hover:underline">info@survivingthesingularity.com</a>.</p>
     </div>
   </section>
 </div>

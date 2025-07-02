@@ -25,3 +25,10 @@
 - **Completion Date:** January 27, 2025
 - **Description:** Successfully removed all contact functionality from the website including contact forms, pages, routes, and API endpoints. Deleted ContactForm.svelte, contact page, contact API endpoint, and cleaned up all references. Website now has zero ways for users to contact us or send data. Build tested successfully with no breaking changes.
 - **Link:** [00.04_complete_contact_removal.md](10_development/00.04_complete_contact_removal.md)
+
+### [Superfluous Routes Removal](/work_efforts/10_development/00.05_superfluous_routes_removal.md)
+- **Status:** Completed ✅
+- **Start Date:** January 27, 2025
+- **Completion Date:** January 27, 2025
+- **Description:** Successfully removed 8 superfluous routes (/download, /discord, /code-conductor, /tactics, /resources, /profile, /dashboard, /contact) and recreated /policies with complete legal content (Privacy Policy, Cookie Policy, Usage Guidelines, Disclaimers). Also cleaned up unused CSS selectors. Site now has a much cleaner structure.
+- **Link:** [00.05_superfluous_routes_removal.md](10_development/00.05_superfluous_routes_removal.md)

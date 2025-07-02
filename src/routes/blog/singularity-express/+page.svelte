@@ -307,29 +307,7 @@
     transition: width 0.1s;
   }
 
-  .article-title {
-    font-size: clamp(2.2rem, 5vw, 3.2rem);
-    line-height: 1.2;
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-    color: var(--color-text-primary);
-    letter-spacing: -0.5px;
-  }
 
-  .article-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 2rem;
-    font-size: 0.95rem;
-    color: var(--color-text-secondary);
-  }
-
-  .meta-item {
-    display: flex;
-    align-items: center;
-  }
 
   .author {
     font-weight: 500;

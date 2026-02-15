@@ -41,8 +41,8 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 4px;
-      background-color: rgba(255, 255, 255, 0.2);
+      height: 2px;
+      background-color: rgba(148, 163, 184, 0.1);
       z-index: 1000;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
@@ -54,11 +54,8 @@
 
     .floating-progress-bar {
       height: 100%;
-      background-color: #ff7708;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
       transition: width 0.1s ease-out;
-    }
-
-    :global(.dark) .floating-progress-bar {
-      background-color: #ff9933;
+      box-shadow: 0 0 8px rgba(99, 179, 237, 0.4);
     }
 </style>

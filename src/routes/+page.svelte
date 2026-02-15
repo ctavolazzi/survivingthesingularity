@@ -2,109 +2,34 @@
 	import { onMount } from 'svelte';
 	import { safeGoto } from '$lib/utils/navigation';
 	import Countdown from '$lib/components/Countdown.svelte';
-	// import HeroSection from '$lib/components/HeroSection.svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
-	// Removing KnowledgeMeter import
 	import BookCallout from '$lib/components/BookCallout.svelte';
 	import FuturePredictions from '$lib/components/FuturePredictions.svelte';
-	import { loadBlogPosts, blogPosts } from '$lib/data/blog-posts/blogPosts.js';
+	import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts.js';
 	import FAQ from '$lib/components/FAQ.svelte';
 	import LatestNews from '$lib/components/LatestNews.svelte';
-	import BookSample from '$lib/components/BookSample.svelte';
-	// Using static image path for better compatibility
-const welcomeImage = '/images/optimized/sts_welcome_1200.webp';
-	import timelineItems from '$lib/data/timelineItems.json';
-
-	// Removing MysteryBoxAd import
 	import NewsTicker from '$lib/components/NewsTicker.svelte';
 	import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
-
 	import AGIRoadmap from '$lib/components/AGIRoadmap.svelte';
-	import PathToSingularity from '$lib/components/PathToSingularity.svelte';
-	// Import our new UI components
-	import { Button } from '$lib/components/ui';
+	import { fade } from 'svelte/transition';
 
-	// Custom news items to bypass the API
-	const customNewsItems = [
-		{
-			date: '2025-03-06',
-			text: 'New synthetic biological intelligence breakthrough announced by Cortical Labs',
-			tag: 'Breaking',
-			link: '/blog/synthetic-biological-intelligence'
-		},
-		{
-			date: '2025-03-04',
-			text: 'DARPA seeks proposals for biological space structures - major implications for space industry',
-			tag: 'New',
-			link: '/blog/darpa-biomechanical-space-structures'
-		},
-		{
-			date: '2025-03-01',
-			text: 'Claude 4 Opus released with unprecedented reasoning capabilities',
-			tag: 'AI News',
-			link: '/blog/claude-projects-weekend-project'
-		},
-		{
-			date: '2024-02-28',
-			text: 'New regulatory framework for AGI proposed by international coalition',
-			tag: 'Policy',
-			link: '/blog/singularity-express'
-		},
-		{
-			date: '2024-02-25',
-			text: 'Preview our exclusive book "Surviving the Singularity" - first chapter now available',
-			tag: 'Book',
-			link: '/sample'
-		},
-		{
-			date: '2024-02-22',
-			text: 'Latest FarmBot update adds advanced computer vision capabilities',
-			tag: 'Tech',
-			link: '/blog/farm-bot-deep-dive'
-		},
-		{
-			date: '2024-02-20',
-			text: 'New insights on preparing for technological transformation',
-			tag: 'Analysis',
-			link: '/blog/robot-farm-bot'
-		}
-	];
-
-	// Direct load for fast loading components
-	export const data = {};
 	const targetDate = new Date("2027-11-20T23:59:59").getTime();
 
-	// We'll populate this later
 	let posts = [];
-	let latestPost = null;
-	// Create a store for news ticker items
 	let newsTickerItems = [];
+	let heroVisible = false;
 
-	// Load the blog posts when the component is created
 	onMount(async () => {
+		heroVisible = true;
 		posts = await loadBlogPosts();
 
-		// Format blog posts for the news ticker with varied, appropriate tags
 		newsTickerItems = posts.map(post => {
-			// Define tag based on post slug or title to create variety
 			let tag = 'Blog';
-
-			// Assign specific tags based on content type
-			if (post.slug === 'singularity-express') {
-				tag = 'Opinion';
-			} else if (post.slug === 'farm-bot-deep-dive') {
-				tag = 'Tech';
-			} else if (post.slug === 'darpa-biomechanical-space-structures') {
-				tag = 'News';
-			} else if (post.slug === 'claude-projects-weekend-project') {
-				tag = 'AI Update';
-			} else if (post.slug === 'robot-farm-bot') {
-				tag = 'Review';
-			} else if (post.title.toLowerCase().includes('regulatory')) {
-				tag = 'Policy';
-			} else if (post.title.toLowerCase().includes('breakthrough')) {
-				tag = 'Breaking';
-			}
+			if (post.slug === 'singularity-express') tag = 'Opinion';
+			else if (post.slug === 'farm-bot-deep-dive') tag = 'Tech';
+			else if (post.slug === 'darpa-biomechanical-space-structures') tag = 'News';
+			else if (post.slug === 'claude-projects-weekend-project') tag = 'AI Update';
+			else if (post.slug === 'robot-farm-bot') tag = 'Review';
 
 			return {
 				date: new Date(post.date).toISOString().split('T')[0],
@@ -114,203 +39,485 @@ const welcomeImage = '/images/optimized/sts_welcome_1200.webp';
 			};
 		}).slice(0, 7);
 	});
-
-	// Replace the safeNavigate function with our imported one
-	function safeNavigate(path) {
-		safeGoto(path);
-	}
 </script>
 
 <svelte:head>
-	<!-- Preload welcome image to ensure it loads immediately -->
-	<link rel="preload" href={welcomeImage} as="image" fetchpriority="high" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <div class="main-content">
-	<div class="countdown-container">
+
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- HERO SECTION — The New Era                          -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="hero">
+		<div class="hero-bg">
+			<div class="hero-grid"></div>
+			<div class="hero-glow hero-glow-1"></div>
+			<div class="hero-glow hero-glow-2"></div>
+			<div class="hero-orb"></div>
+		</div>
+
+		{#if heroVisible}
+			<div class="hero-content" in:fade={{ duration: 800 }}>
+				<p class="hero-eyebrow">Est. 2024 &mdash; Rethinking what comes next</p>
+				<h1 class="hero-title">
+					<span class="hero-title-line">Surviving</span>
+					<span class="hero-title-line hero-title-accent">the Singularity</span>
+				</h1>
+				<p class="hero-subtitle">
+					A guide to understanding, preparing for, and thriving through the most transformative period in human history.
+				</p>
+				<div class="hero-actions">
+					<a href="/start-here" class="hero-btn hero-btn-primary">
+						Start Here
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="/blog" class="hero-btn hero-btn-secondary">
+						Read the Blog
+					</a>
+				</div>
+			</div>
+		{/if}
+	</section>
+
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- COUNTDOWN                                           -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container">
 		<Countdown {targetDate} />
-	</div>
+	</section>
 
-	<!-- Path to Singularity Component -->
-	<div class="path-to-singularity-container">
-		<PathToSingularity />
-	</div>
-
-
-
-	<!-- Add News Ticker near the top for high visibility -->
-	<div class="news-ticker-container">
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- NEWS TICKER                                         -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container section-narrow">
 		<NewsTicker
-			title="Breaking News & Updates 🚨"
+			title="Latest Updates"
 			scrollSpeed={2500}
 			items={newsTickerItems}
-			backgroundColor="rgba(15, 23, 42, 0.7)"
+			backgroundColor="rgba(15, 23, 42, 0.5)"
 			textColor="white"
-			accentColor="#ef4444"
+			accentColor="#63b3ed"
 		/>
-	</div>
+	</section>
 
-	<!-- Timeline section doesn't need PathToSingularity since we added it separately -->
-	<div class="timeline-section">
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- WHAT'S COMING — Teaser Section                      -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="whats-coming">
+		<div class="whats-coming-inner">
+			<h2 class="section-heading">What We're Building</h2>
+			<p class="section-subheading">This site is evolving. Here's what's on the horizon.</p>
+			<div class="roadmap-grid">
+				<div class="roadmap-card">
+					<div class="roadmap-icon">01</div>
+					<h3>Deep Dives</h3>
+					<p>Long-form explorations of AI breakthroughs, from synthetic biology to neural interfaces.</p>
+					<span class="roadmap-status">In Progress</span>
+				</div>
+				<div class="roadmap-card">
+					<div class="roadmap-icon">02</div>
+					<h3>The Workbook</h3>
+					<p>Practical frameworks and exercises for navigating technological disruption in your life and career.</p>
+					<span class="roadmap-status">Coming Soon</span>
+				</div>
+				<div class="roadmap-card">
+					<div class="roadmap-icon">03</div>
+					<h3>Community</h3>
+					<p>A space for thinkers, builders, and the curious to connect and share survival strategies.</p>
+					<span class="roadmap-status">Planned</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- TIMELINE                                            -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container">
 		<Timeline />
-	</div>
+	</section>
 
-	<!-- Rest of the content -->
-	<FuturePredictions class="future-predictions-container" />
-
-	<div class="agi-roadmap-container">
-		<AGIRoadmap />
-	</div>
-
-	<FAQ class="faq-container" />
-
-
-
-
-	<div class="recent-posts">
-		<LatestNews />
-	</div>
-
-	<div class="book-callout-container">
-		<BookCallout />
-	</div>
-
-	<!-- Add Featured Posts before the predictions section -->
-	<div class="featured-posts-container">
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- FEATURED POSTS                                      -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container section-wide">
 		<FeaturedPosts
 			title="Editor's Picks"
 			subtitle="Essential reading for understanding the AI revolution"
 			maxPosts={2}
 			showImages={true}
 		/>
-	</div>
+	</section>
 
-	<!-- Replace Treasure Tavern Promo with enhanced component -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- FUTURE PREDICTIONS                                  -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container">
+		<FuturePredictions />
+	</section>
 
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- AGI ROADMAP                                         -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container section-narrow">
+		<AGIRoadmap />
+	</section>
 
-	<!-- Mystery Box Ad removed -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- FAQ                                                 -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container section-narrow">
+		<FAQ />
+	</section>
+
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- LATEST NEWS                                         -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container section-narrow">
+		<LatestNews />
+	</section>
+
+	<!-- ═══════════════════════════════════════════════════ -->
+	<!-- BOOK CALLOUT                                        -->
+	<!-- ═══════════════════════════════════════════════════ -->
+	<section class="section-container section-narrow">
+		<BookCallout />
+	</section>
+
 </div>
 
 <style>
+	/* ──────────────────────────────────── */
+	/* LAYOUT                               */
+	/* ──────────────────────────────────── */
 	.main-content {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
-		padding-top: 0.5rem;
+		gap: 0;
 	}
 
-	.countdown-container {
-		padding: 0 1rem;
-	}
-
-	.path-to-singularity-container {
-		width: 95%;
-		margin: 0.75rem auto;
-		max-width: 1000px;
-	}
-
-
-
-	.timeline-section {
-		margin: 0 auto;
+	.section-container {
+		width: 100%;
 		max-width: 900px;
-		width: 100%;
-	}
-
-	.news-ticker-container {
-		width: 95%;
-		margin: 0.2rem auto 0.25rem;
-		padding: 0 1rem;
-	}
-
-	.agi-roadmap-container {
-		width: 100%;
-		max-width: 800px;
 		margin: 2rem auto;
-		padding: 0 1rem;
+		padding: 0 1.5rem;
 	}
 
-
-
-
-
-	.recent-posts,
-	.book-callout-container {
-		margin: 1.5rem auto;
+	.section-narrow {
 		max-width: 800px;
-		width: 100%;
 	}
 
-	.featured-posts-container {
-		max-width: 1200px;
-		width: 95%;
-		margin: 0.75rem auto 0.5rem;
-		padding: 0 1rem;
+	.section-wide {
+		max-width: 1100px;
 	}
 
+	/* ──────────────────────────────────── */
+	/* HERO                                 */
+	/* ──────────────────────────────────── */
+	.hero {
+		position: relative;
+		min-height: 85vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 4rem 2rem;
+		overflow: hidden;
+	}
 
+	.hero-bg {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(160deg, #020617 0%, #0f172a 40%, #1e1b4b 70%, #0f172a 100%);
+	}
 
-	/* Responsive styles */
+	.hero-grid {
+		position: absolute;
+		inset: 0;
+		background-image:
+			linear-gradient(rgba(99, 179, 237, 0.04) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(99, 179, 237, 0.04) 1px, transparent 1px);
+		background-size: 60px 60px;
+	}
+
+	.hero-glow {
+		position: absolute;
+		border-radius: 50%;
+		filter: blur(80px);
+		opacity: 0.3;
+	}
+
+	.hero-glow-1 {
+		width: 500px;
+		height: 500px;
+		background: radial-gradient(circle, #3b82f6, transparent 70%);
+		top: -150px;
+		right: -100px;
+		animation: float-glow 15s ease-in-out infinite;
+	}
+
+	.hero-glow-2 {
+		width: 400px;
+		height: 400px;
+		background: radial-gradient(circle, #8b5cf6, transparent 70%);
+		bottom: -100px;
+		left: -100px;
+		animation: float-glow 18s ease-in-out infinite reverse;
+	}
+
+	.hero-orb {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: radial-gradient(circle, rgba(99, 179, 237, 0.08), transparent 60%);
+		border-radius: 50%;
+		animation: pulse-orb 6s ease-in-out infinite;
+	}
+
+	@keyframes float-glow {
+		0%, 100% { transform: translate(0, 0); }
+		33% { transform: translate(30px, -20px); }
+		66% { transform: translate(-20px, 15px); }
+	}
+
+	@keyframes pulse-orb {
+		0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+		50% { transform: translate(-50%, -50%) scale(1.3); opacity: 0.8; }
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		max-width: 750px;
+	}
+
+	.hero-eyebrow {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #64748b;
+		margin-bottom: 1.5rem;
+		font-weight: 500;
+	}
+
+	.hero-title {
+		font-size: clamp(2.5rem, 8vw, 5rem);
+		font-weight: 800;
+		line-height: 1.05;
+		margin: 0 0 1.5rem 0;
+		letter-spacing: -0.03em;
+	}
+
+	.hero-title-line {
+		display: block;
+		color: #f1f5f9;
+	}
+
+	.hero-title-accent {
+		background: linear-gradient(135deg, #63b3ed 0%, #a78bfa 50%, #f472b6 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		font-size: clamp(1rem, 2.5vw, 1.25rem);
+		color: #94a3b8;
+		line-height: 1.7;
+		margin-bottom: 2.5rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.hero-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.85rem 2rem;
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 0.95rem;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
+
+	.hero-btn-primary {
+		background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+		color: white;
+		box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+	}
+
+	.hero-btn-primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+	}
+
+	.hero-btn-secondary {
+		background: rgba(255, 255, 255, 0.05);
+		color: #cbd5e1;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.hero-btn-secondary:hover {
+		background: rgba(255, 255, 255, 0.1);
+		border-color: rgba(255, 255, 255, 0.2);
+		transform: translateY(-2px);
+	}
+
+	/* ──────────────────────────────────── */
+	/* WHAT'S COMING SECTION                */
+	/* ──────────────────────────────────── */
+	.whats-coming {
+		padding: 4rem 1.5rem;
+		background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.5) 20%, rgba(15, 23, 42, 0.5) 80%, transparent 100%);
+	}
+
+	.whats-coming-inner {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.section-heading {
+		text-align: center;
+		font-size: clamp(1.5rem, 4vw, 2.25rem);
+		font-weight: 700;
+		color: #f1f5f9;
+		margin: 0 0 0.5rem 0;
+		letter-spacing: -0.02em;
+	}
+
+	.section-subheading {
+		text-align: center;
+		color: #64748b;
+		font-size: 1rem;
+		margin: 0 0 3rem 0;
+	}
+
+	.roadmap-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.roadmap-card {
+		background: rgba(30, 41, 59, 0.5);
+		border: 1px solid rgba(148, 163, 184, 0.1);
+		border-radius: 16px;
+		padding: 2rem;
+		transition: all 0.3s ease;
+	}
+
+	.roadmap-card:hover {
+		border-color: rgba(99, 179, 237, 0.3);
+		transform: translateY(-4px);
+		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+	}
+
+	.roadmap-icon {
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: #63b3ed;
+		letter-spacing: 0.1em;
+		margin-bottom: 1rem;
+		font-family: 'JetBrains Mono', 'Courier New', monospace;
+	}
+
+	.roadmap-card h3 {
+		font-size: 1.15rem;
+		font-weight: 600;
+		color: #e2e8f0;
+		margin: 0 0 0.75rem 0;
+	}
+
+	.roadmap-card p {
+		font-size: 0.9rem;
+		color: #94a3b8;
+		line-height: 1.6;
+		margin: 0 0 1.25rem 0;
+	}
+
+	.roadmap-status {
+		display: inline-block;
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		padding: 0.3rem 0.8rem;
+		border-radius: 20px;
+		background: rgba(99, 179, 237, 0.1);
+		color: #63b3ed;
+		border: 1px solid rgba(99, 179, 237, 0.2);
+	}
+
+	/* ──────────────────────────────────── */
+	/* RESPONSIVE                           */
+	/* ──────────────────────────────────── */
 	@media (min-width: 768px) {
 		.main-content {
-			max-width: 1200px;
+			max-width: 100%;
 			margin: 0 auto;
-			gap: 0.6rem;
-		}
-
-		.timeline-section {
-			margin: 0 auto;
-			max-width: 900px;
-			width: 100%;
 		}
 	}
 
 	@media (max-width: 768px) {
-
-
-		.news-ticker-container {
-			width: 92%;
-			margin: 0.15rem auto 0.2rem;
+		.hero {
+			min-height: 70vh;
+			padding: 3rem 1.5rem;
 		}
 
-		.featured-posts-container {
-			width: 92%;
-			margin: 0.5rem auto 0.25rem;
+		.hero-actions {
+			flex-direction: column;
+			align-items: center;
 		}
 
+		.hero-btn {
+			width: 100%;
+			max-width: 280px;
+			justify-content: center;
+		}
 
+		.section-container {
+			padding: 0 1rem;
+			margin: 1.5rem auto;
+		}
+
+		.whats-coming {
+			padding: 3rem 1rem;
+		}
 	}
 
 	@media (max-width: 480px) {
-		.main-content {
-			gap: 0.3rem;
-			padding-top: 0.2rem;
+		.hero {
+			min-height: 65vh;
+			padding: 2.5rem 1rem;
 		}
 
-		.countdown-container {
-			padding: 0 0.5rem;
+		.hero-eyebrow {
+			font-size: 0.7rem;
 		}
 
-		.path-to-singularity-container {
-			padding: 0 0.5rem;
-			margin: 0.5rem auto;
+		.section-container {
+			padding: 0 0.75rem;
+			margin: 1rem auto;
 		}
-
-
-
-		.news-ticker-container {
-			width: 90%;
-			margin: 0.1rem auto 0.1rem;
-			padding: 0 0.5rem;
-		}
-
-		.featured-posts-container {
-			width: 90%;
-			margin: 0.5rem auto 0.25rem;
-			padding: 0 0.5rem;
-		}
-
-
 	}
 </style>
 

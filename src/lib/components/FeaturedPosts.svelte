@@ -4,8 +4,8 @@
   import { Image } from '$lib/components/ui';
 
   // Props with default values
-  export let title = "Featured Articles";
-  export let subtitle = "Our most impactful insights for the AI age";
+  export let title = "Builder's Essentials";
+  export let subtitle = "Practical knowledge for material independence and technological sovereignty";
   export let maxPosts = 3;
   export let showImages = true;
 

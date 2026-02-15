@@ -27,45 +27,45 @@ const welcomeImage = '/images/optimized/sts_welcome_1200.webp';
 	// Custom news items to bypass the API
 	const customNewsItems = [
 		{
-			date: '2025-03-06',
-			text: 'New synthetic biological intelligence breakthrough announced by Cortical Labs',
-			tag: 'Breaking',
-			link: '/blog/synthetic-biological-intelligence'
-		},
-		{
-			date: '2025-03-04',
-			text: 'DARPA seeks proposals for biological space structures - major implications for space industry',
-			tag: 'New',
-			link: '/blog/darpa-biomechanical-space-structures'
-		},
-		{
-			date: '2025-03-01',
-			text: 'Claude 4 Opus released with unprecedented reasoning capabilities',
-			tag: 'AI News',
+			date: '2026-02-15',
+			text: 'Local AI sovereignty: Run Llama 4 70B models on a single RTX 5090 with 32GB VRAM',
+			tag: 'Local AI',
 			link: '/blog/claude-projects-weekend-project'
 		},
 		{
-			date: '2024-02-28',
-			text: 'New regulatory framework for AGI proposed by international coalition',
-			tag: 'Policy',
+			date: '2026-02-10',
+			text: 'FarmBot Genesis XL delivers 540 cups of vegetables per month from 18 square meters',
+			tag: 'Food Security',
+			link: '/blog/farm-bot-deep-dive'
+		},
+		{
+			date: '2026-02-05',
+			text: 'Mobile ALOHA: Build a DIY bimanual robot for workshop automation under $2,000',
+			tag: 'Robotics',
+			link: '/blog/robot-farm-bot'
+		},
+		{
+			date: '2026-01-28',
+			text: 'Dollar purchasing power down 25% since 2020 - material independence is the only hedge',
+			tag: 'Economics',
 			link: '/blog/singularity-express'
 		},
 		{
-			date: '2024-02-25',
-			text: 'Preview our exclusive book "Surviving the Singularity" - first chapter now available',
-			tag: 'Book',
+			date: '2026-01-20',
+			text: 'Title 25 owner-built rural dwellings: The legal path to affordable housing sovereignty',
+			tag: 'Building',
 			link: '/sample'
 		},
 		{
-			date: '2024-02-22',
-			text: 'Latest FarmBot update adds advanced computer vision capabilities',
+			date: '2026-01-15',
+			text: 'Open-source robotics for homesteaders: FarmBot deep dive and ROI analysis',
 			tag: 'Tech',
 			link: '/blog/farm-bot-deep-dive'
 		},
 		{
-			date: '2024-02-20',
-			text: 'New insights on preparing for technological transformation',
-			tag: 'Analysis',
+			date: '2026-01-10',
+			text: 'The Millennial Builder framework: Crush overhead, build the shop, reclaim your time',
+			tag: 'Blueprint',
 			link: '/blog/robot-farm-bot'
 		}
 	];
@@ -87,23 +87,23 @@ const welcomeImage = '/images/optimized/sts_welcome_1200.webp';
 		// Format blog posts for the news ticker with varied, appropriate tags
 		newsTickerItems = posts.map(post => {
 			// Define tag based on post slug or title to create variety
-			let tag = 'Blog';
+			let tag = 'Builder';
 
 			// Assign specific tags based on content type
 			if (post.slug === 'singularity-express') {
-				tag = 'Opinion';
+				tag = 'Analysis';
 			} else if (post.slug === 'farm-bot-deep-dive') {
-				tag = 'Tech';
+				tag = 'Robotics';
 			} else if (post.slug === 'darpa-biomechanical-space-structures') {
-				tag = 'News';
+				tag = 'Research';
 			} else if (post.slug === 'claude-projects-weekend-project') {
-				tag = 'AI Update';
+				tag = 'Local AI';
 			} else if (post.slug === 'robot-farm-bot') {
-				tag = 'Review';
-			} else if (post.title.toLowerCase().includes('regulatory')) {
-				tag = 'Policy';
-			} else if (post.title.toLowerCase().includes('breakthrough')) {
-				tag = 'Breaking';
+				tag = 'Food Security';
+			} else if (post.title.toLowerCase().includes('independence')) {
+				tag = 'Blueprint';
+			} else if (post.title.toLowerCase().includes('farm') || post.title.toLowerCase().includes('robot')) {
+				tag = 'Tech';
 			}
 
 			return {
@@ -141,7 +141,7 @@ const welcomeImage = '/images/optimized/sts_welcome_1200.webp';
 	<!-- Add News Ticker near the top for high visibility -->
 	<div class="news-ticker-container">
 		<NewsTicker
-			title="Breaking News & Updates 🚨"
+			title="Builder Updates & Resources"
 			scrollSpeed={2500}
 			items={newsTickerItems}
 			backgroundColor="rgba(15, 23, 42, 0.7)"
@@ -178,8 +178,8 @@ const welcomeImage = '/images/optimized/sts_welcome_1200.webp';
 	<!-- Add Featured Posts before the predictions section -->
 	<div class="featured-posts-container">
 		<FeaturedPosts
-			title="Editor's Picks"
-			subtitle="Essential reading for understanding the AI revolution"
+			title="Builder's Essentials"
+			subtitle="Practical knowledge for material independence and technological sovereignty"
 			maxPosts={2}
 			showImages={true}
 		/>

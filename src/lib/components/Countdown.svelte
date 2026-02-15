@@ -5,7 +5,7 @@
   let years = 0, days = 0, hours = 0, minutes = 0, seconds = 0;
   let countdownInterval;
   let loading = true;
-  export let headerText = "Time Left Until the Singularity";
+  export let headerText = "Time to Build Independence";
   export let targetDate = new Date("2027-11-20T23:59:59").getTime();
 
   function calculateTimeLeft() {

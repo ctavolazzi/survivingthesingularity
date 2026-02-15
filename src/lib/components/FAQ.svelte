@@ -10,71 +10,77 @@
     <div class="faq-header">Frequently Asked Questions</div>
     <Accordion class="content-box">
       <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What is the Singularity?</span>
-        <p class="text-[var(--color-text-secondary)]">
-          The Technological Singularity refers to a hypothetical future point when artificial intelligence surpasses human intelligence, potentially leading to rapid and unpredictable technological growth. This concept is central to our book, as we explore its implications and how to navigate this transformative period.
-        </p>
-      </AccordionItem>
-
-      <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">How can I think about preparing for these changes?</span>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What is material independence?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>Navigating the AI revolution involves considering several approaches:</p>
+          <p>Material independence is the ability to meet your basic survival needs — food, shelter, energy, and income — without depending on extractive corporate or financial systems. It means:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>Staying informed about AI developments and their potential impacts</li>
-            <li>Developing frameworks for thinking about the relationship between humans and AI</li>
-            <li>Exploring ethical considerations surrounding emerging technologies</li>
-            <li>Considering how AI might affect different aspects of society and personal life</li>
+            <li>Owning land and shelter outright, bypassing the 30-year mortgage trap</li>
+            <li>Growing a significant portion of your own food using open-source robotics like FarmBot</li>
+            <li>Running your own AI tools locally instead of paying for cloud subscriptions</li>
+            <li>Generating income through direct-to-consumer digital products rather than corporate employment</li>
           </ul>
-          <p>The book explores these topics as they continue to evolve.</p>
+          <p>As purchasing power erodes and AI transforms the labor market, material independence is becoming the primary survival strategy for those without inherited wealth.</p>
         </div>
       </AccordionItem>
 
       <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">Is there something I can read now to help me understand what's going on?</span>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What is a "shouse" and why does it matter?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>"Surviving the Singularity" is examining a range of crucial topics, including:</p>
+          <p>A shouse (shop-house) is a hybrid structure that prioritizes production space over living space. Instead of a traditional suburban home designed for consumption and leisure, the shouse model:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>The potential impact of AI on various industries and social structures</li>
-            <li>Approaches for adapting to rapid technological changes</li>
-            <li>Ethical considerations in AI development and implementation</li>
-            <li>The evolving relationship between humans and technology</li>
-            <li>Tools for processing complex technological shifts</li>
+            <li>Puts the workshop first — your engine of production and income</li>
+            <li>Keeps living quarters minimal and efficient (often under $8,000)</li>
+            <li>Can be built on rural land using steel construction at $25-45 per square foot</li>
+            <li>Drops monthly overhead to the bare minimum, buying back decades of your life</li>
           </ul>
-          <p>The free sample provides initial thoughts on these topics as they continue to be developed.</p>
+          <p>The shouse is the physical foundation of the Millennial Builder framework — a way to escape the debt cycle and reclaim time for meaningful work.</p>
+        </div>
+      </AccordionItem>
+
+      <AccordionItem>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What tools do I need to get started?</span>
+        <div class="text-[var(--color-text-secondary)]">
+          <p>The Millennial Builder stack has both a digital and physical layer:</p>
+          <ul class="list-disc pl-5 mt-2">
+            <li><strong>Local AI:</strong> A machine with 32GB+ RAM and a high-VRAM GPU (RTX 3090/4090/5090) running Ollama or LM Studio</li>
+            <li><strong>Food production:</strong> FarmBot Genesis or similar open-source CNC garden robots for automated growing</li>
+            <li><strong>Workshop automation:</strong> Mobile ALOHA or similar bimanual robots for physical task assistance</li>
+            <li><strong>Digital income:</strong> YouTube channel documenting your build process, plus direct-to-consumer solutions via platforms like Lemon Squeezy</li>
+          </ul>
+          <p>Start with what you have. The most important first step is documenting your journey — even a three-minute phone video has value.</p>
           <div class="mt-4 text-center">
-            <a href="/book" class="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-              Read a Sample
+            <a href="/blog" class="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+              Read Our Guides
             </a>
           </div>
         </div>
       </AccordionItem>
 
       <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">Is "Surviving the Singularity" suitable for non-technical readers?</span>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">Why is local AI sovereignty important?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>Absolutely! "Surviving the Singularity" is being written for a broad audience, including:</p>
+          <p>Running AI models locally on your own hardware ensures that your intelligence layer is as secure as your most sensitive data. Local AI sovereignty means:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>People from all backgrounds interested in understanding technological change</li>
-            <li>Anyone trying to make sense of how AI might affect society</li>
-            <li>Those feeling overwhelmed by the pace of technological advancement</li>
-            <li>People curious about developing clearer thinking about the future</li>
+            <li>Your research and proprietary data never leaves your machine — no cloud exposure</li>
+            <li>No subscription fees or API costs eating into your margins</li>
+            <li>No corporate alignment filters restricting what you can research or synthesize</li>
+            <li>Full control over your tools, even if external services go down or change terms</li>
           </ul>
-          <p>The book approaches complex concepts in an accessible manner, making it valuable for both technical and non-technical readers.</p>
+          <p>With hardware like the RTX 5090 (32GB VRAM) and open-weight models like Llama 4, running 70B-parameter models locally is now practical for individual builders.</p>
         </div>
       </AccordionItem>
 
       <AccordionItem>
-        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">What's this I hear about a Skool community? Is it any good?</span>
+        <span slot="header" class="text-lg font-semibold text-[var(--color-text-primary)]">Do I need to be technical to follow this path?</span>
         <div class="text-[var(--color-text-secondary)]">
-          <p>"Surviving the Singularity" connects with the Skool community's focus on learning and adaptation:</p>
+          <p>No. The entire framework is built on the principle that if something took you more than an hour to learn, you can teach it to someone else. The path is designed to be learned by doing:</p>
           <ul class="list-disc pl-5 mt-2">
-            <li>It explores AI's potential impacts, complementing Skool's tech-focused discussions</li>
-            <li>The book's frameworks for thinking about change resonate with Skool's emphasis on development</li>
-            <li>It encourages critical thinking about future scenarios, supporting the kind of forward-thinking mindset valued in the Skool community</li>
-            <li>The evolving content can spark meaningful discussions among those interested in AI and future technologies</li>
+            <li>Start by documenting what you already know — everyone has at least one teachable skill</li>
+            <li>Use AI tools to accelerate your learning curve on technical topics</li>
+            <li>Follow open-source project documentation — FarmBot and Mobile ALOHA have step-by-step guides</li>
+            <li>The community of builders shares blueprints, costs, and real results openly</li>
           </ul>
-          <p>The Skool community provides a space for readers to discuss these topics as the book develops.</p>
+          <p>The goal is not to become a software engineer. It is to become competent enough with modern tools to secure your own resources independently.</p>
         </div>
       </AccordionItem>
     </Accordion>

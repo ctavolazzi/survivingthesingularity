@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Educational web platform about AI and the technological Singularity. Built with SvelteKit, it provides blog content, book samples, AI timelines, and interactive features. The site has transitioned from a community platform to a curated educational resource — newsletter, Discord, and commercial community features have been removed.
+Educational web platform focused on material independence, local AI sovereignty, open-source robotics, and the "Millennial Builder" framework. Built with SvelteKit, the site provides practical guides on building independence through technology — local LLMs, FarmBot, Mobile ALOHA, rural land acquisition, and the YouTube Shouse lifestyle. The site has transitioned from abstract AI speculation to an actionable builder-focused resource.
 
 ## Tech Stack
 
@@ -211,6 +211,19 @@ Client-side env vars: `$env/static/public` (must be prefixed with `PUBLIC_`)
 - Run `npm run check` to validate Svelte component types and catch errors
 - **No CI/CD pipelines** — no `.github/workflows/` present
 
+## Content Direction (2026)
+
+The site is pivoting from abstract AI education to a practical builder-focused resource. Key themes:
+
+- **Material Independence**: Owning land, shelter, food production, and energy systems outside extractive corporate frameworks
+- **Local AI Sovereignty**: Running LLMs locally (Ollama, Llama 4, RTX 5090) instead of depending on cloud APIs
+- **Open-Source Robotics**: FarmBot for food production, Mobile ALOHA for workshop automation
+- **The Shouse Lifestyle**: Shop-houses on rural land as the primary path to ownership for builders
+- **Digital Cash Engine**: YouTube content creation + direct-to-consumer products (Lemon Squeezy) as income
+- **Generational Wealth Analysis**: Purchasing power erosion, housing affordability crisis, intergenerational wealth transfer
+
+All new content should be practical, data-driven, and actionable. Avoid abstract speculation about AGI timelines or transhumanist futures. Frame AI as a sovereign tool for individual builders, not as a partner or savior.
+
 ## Things to Avoid
 
 - Do not re-add removed community features (newsletter signup, Discord integration, Treasure Tavern)
@@ -218,3 +231,5 @@ Client-side env vars: `$env/static/public` (must be prefixed with `PUBLIC_`)
 - Do not change dark mode to be toggleable — it is intentionally always on
 - Do not add TypeScript — the project uses plain JavaScript with JSConfig
 - Do not use `goto()` directly — use `gotoAndScrollTop()` from `$lib/utils/navigation`
+- Do not write content that frames AI as abstract/speculative — keep it practical and builder-focused
+- Do not reference Skool, Discord, or other removed community platforms

@@ -1,583 +1,372 @@
 <script>
   import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
   export let data;
   const { posts } = data;
 
-  import FeaturedPosts from '$lib/components/FeaturedPosts.svelte';
-  import NewsTicker from '$lib/components/NewsTicker.svelte';
+  let visible = false;
+  onMount(() => { visible = true; });
 
-  import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts.js';
+  function formatDate(dateStr) {
+    return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
 
-  // Create news ticker items array
-  let newsTickerItems = [];
+  function estimateReadTime(excerpt) {
+    // Rough estimate: excerpt length as proxy
+    const words = excerpt ? excerpt.split(/\s+/).length : 0;
+    return Math.max(3, Math.round(words / 30) + 3);
+  }
 
-  // Function to determine category tag based on post content
   function getCategoryTag(post) {
-    // Define tag based on post slug or title to create variety
-    let tag = 'Blog';
-
-    // Assign specific tags based on content type
-    if (post.route && post.route.includes('singularity-express')) {
-      return 'Opinion';
-    } else if (post.route && post.route.includes('farm-bot-deep-dive')) {
-      return 'Tech';
-    } else if (post.route && post.route.includes('darpa-biomechanical-space-structures')) {
-      return 'News';
-    } else if (post.route && post.route.includes('claude-projects-weekend-project')) {
-      return 'AI Update';
-    } else if (post.route && post.route.includes('robot-farm-bot')) {
-      return 'Review';
-    } else if (post.route && post.route.includes('synthetic-biological-intelligence')) {
-      return 'Science';
-    } else if (post.title && post.title.toLowerCase().includes('regulatory')) {
-      return 'Policy';
-    } else if (post.title && post.title.toLowerCase().includes('breakthrough')) {
-      return 'Breaking';
-    } else if (post.title && post.title.toLowerCase().includes('future')) {
-      return 'Future';
-    } else if (post.title && post.title.toLowerCase().includes('review')) {
-      return 'Review';
-    } else if (post.title && post.title.toLowerCase().includes('guide')) {
-      return 'Guide';
-    }
-
-    return 'AI Insights';
+    if (post.route?.includes('singularity-express')) return 'Opinion';
+    if (post.route?.includes('farm-bot-deep-dive')) return 'Deep Dive';
+    if (post.route?.includes('darpa')) return 'Research';
+    if (post.route?.includes('claude-projects')) return 'AI Build';
+    if (post.route?.includes('robot-farm-bot')) return 'Robotics';
+    if (post.route?.includes('synthetic-biological')) return 'Biotech';
+    if (post.route?.includes('neural-interfaces')) return 'Neurotech';
+    if (post.route?.includes('whispers')) return 'Essay';
+    return 'Insight';
   }
-
-  // Function to get category color based on tag
-  function getCategoryColor(tag) {
-    switch(tag) {
-      case 'Opinion':
-        return '#FF7043'; // Orange
-      case 'Tech':
-        return '#26A69A'; // Teal
-      case 'News':
-        return '#42A5F5'; // Blue
-      case 'AI Update':
-        return '#7E57C2'; // Purple
-      case 'Review':
-        return '#66BB6A'; // Green
-      case 'Science':
-        return '#EC407A'; // Pink
-      case 'Policy':
-        return '#78909C'; // Blue Grey
-      case 'Breaking':
-        return '#EF5350'; // Red
-      case 'Future':
-        return '#5C6BC0'; // Indigo
-      case 'Guide':
-        return '#FFA726'; // Amber
-      default:
-        return '#3b82f6'; // Default blue (var(--color-primary))
-    }
-  }
-
-  // Load blog posts and format for news ticker
-  onMount(async () => {
-    const blogPosts = await loadBlogPosts();
-
-    // Format blog posts for the news ticker with varied, appropriate tags
-    newsTickerItems = blogPosts.map(post => {
-      return {
-        date: new Date(post.date).toISOString().split('T')[0],
-        text: post.title,
-        tag: getCategoryTag(post),
-        link: `/blog/${post.slug}`
-      };
-    });
-  });
 </script>
 
-<div class="main-content">
-  <!-- Enhanced Hero Section -->
-  <div class="hero-section">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Surviving the Singularity</div>
-      <h1 class="hero-title">Insights for the AI Age</h1>
-      <div class="hero-tagline">
-        <p class="hero-description">Expert insights to help you navigate the rapidly evolving world of artificial intelligence and technology.</p>
-        <div class="hero-cta">
-          <span class="rocket">🚀</span>
-          <span class="cta-text">Prepare for the future. Gain valuable insights. Stay ahead of the curve.</span>
+<svelte:head>
+  <title>Blog — Surviving the Singularity</title>
+  <meta name="description" content="Deep dives into AI, robotics, synthetic biology, and the technologies reshaping material independence." />
+</svelte:head>
+
+{#if visible}
+  <div class="blog-page" in:fade={{ duration: 400 }}>
+    <header class="blog-header">
+      <p class="blog-label">The Blog</p>
+      <h1 class="blog-title">Dispatches from the Build</h1>
+      <p class="blog-subtitle">
+        Deep dives into AI breakthroughs, robotics, synthetic biology, and the technologies reshaping the path to material independence.
+      </p>
+    </header>
+
+    <!-- Featured post (first one) -->
+    {#if posts.length > 0}
+      {@const featured = posts[0]}
+      <a href={featured.route} class="featured-card">
+        <div class="featured-image-wrap">
+          <img src={featured.image} alt={featured.title} class="featured-image" loading="lazy" />
+          <div class="featured-overlay"></div>
+          <span class="featured-badge">Latest</span>
         </div>
-      </div>
-    </div>
-    <div class="hero-decoration">
-      <div class="circle circle-1"></div>
-      <div class="circle circle-2"></div>
-      <div class="circle circle-3"></div>
-      <div class="grid-pattern"></div>
-    </div>
-  </div>
-
-  <div class="content-container">
-    <!-- News Ticker -->
-    <div class="news-ticker-wrapper">
-      <NewsTicker
-        title="AI & Tech Updates"
-        scrollSpeed={2500}
-        items={newsTickerItems}
-        backgroundColor="rgba(15, 23, 42, 0.7)"
-        textColor="white"
-        accentColor="#3b82f6"
-      />
-    </div>
-
-    <!-- Featured Posts -->
-    <div class="featured-posts-wrapper">
-      <FeaturedPosts
-        title="Featured Insights"
-        subtitle="Must-read content to help you navigate the AI revolution"
-        maxPosts={3}
-        showImages={true}
-      />
-    </div>
-
-    <h2 id="latest-posts" class="section-title">Latest Posts</h2>
-    <div class="stylish-divider"></div>
-
-    <div class="post-grid">
-      {#each posts as post}
-      {@const categoryTag = getCategoryTag(post)}
-      {@const categoryColor = getCategoryColor(categoryTag)}
-      <a href={post.route} class="post-card-link">
-        <article class="post-card">
-          <div class="post-image-container">
-            <img src={post.image} alt={post.title} class="post-image" loading="lazy" />
-            <div class="post-category" style="background-color: {categoryColor};">{categoryTag}</div>
+        <div class="featured-content">
+          <div class="featured-meta">
+            <span class="post-tag">{getCategoryTag(featured)}</span>
+            <time>{formatDate(featured.date)}</time>
+            <span>{estimateReadTime(featured.excerpt)} min read</span>
           </div>
-          <div class="post-content">
-            <div class="post-meta">
-              <time datetime={post.date} class="post-date">{post.date}</time>
-              <span class="post-author">By {post.author}</span>
-            </div>
-            <h2 class="post-title">{post.title}</h2>
-            <p class="post-excerpt">{post.excerpt}</p>
-            <span class="read-more">Read article <span class="arrow">→</span></span>
-          </div>
-        </article>
+          <h2 class="featured-title">{featured.title}</h2>
+          <p class="featured-excerpt">{featured.excerpt}</p>
+          <span class="read-link">Read article <span class="arrow">&rarr;</span></span>
+        </div>
       </a>
-      {/each}
-    </div>
+    {/if}
 
-    <div class="stylish-divider"></div>
-    <!-- Discord and Treasure Tavern removed -->
+    <!-- Post grid -->
+    {#if posts.length > 1}
+      <div class="posts-grid">
+        {#each posts.slice(1) as post, i}
+          <a href={post.route} class="post-card" style="animation-delay: {(i + 1) * 60}ms">
+            <div class="post-image-wrap">
+              <img src={post.image} alt={post.title} class="post-image" loading="lazy" />
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-tag">{getCategoryTag(post)}</span>
+                <time>{formatDate(post.date)}</time>
+              </div>
+              <h3 class="post-title">{post.title}</h3>
+              <p class="post-excerpt">{post.excerpt}</p>
+              <div class="post-footer">
+                <span class="post-read-time">{estimateReadTime(post.excerpt)} min read</span>
+                <span class="read-link">Read <span class="arrow">&rarr;</span></span>
+              </div>
+            </div>
+          </a>
+        {/each}
+      </div>
+    {/if}
   </div>
-</div>
+{/if}
 
 <style>
-  .main-content {
-    padding-top: 0; /* Removed padding to accommodate hero */
-  }
-
-  /* Hero Section Styles */
-  .hero-section {
-    position: relative;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1.5rem;
-    overflow: hidden;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    margin-bottom: 1rem;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.15), transparent 50%);
-    z-index: 1;
-  }
-
-  .hero-content {
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    text-align: center;
-    z-index: 2;
-  }
-
-  .hero-decoration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .circle {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.1;
-  }
-
-  .circle-1 {
-    width: 400px;
-    height: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    top: -120px;
-    right: -100px;
-  }
-
-  .circle-2 {
-    width: 300px;
-    height: 300px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    bottom: -80px;
-    left: -80px;
-  }
-
-  .circle-3 {
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.1), transparent);
-    top: 20%;
-    left: 10%;
-  }
-
-  .grid-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 20px 20px;
-    z-index: -1;
-  }
-
-  .hero-badge {
-    display: inline-block;
-    background: rgba(59, 130, 246, 0.15);
-    color: #60a5fa;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    margin-bottom: 1.5rem;
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
-  .hero-title {
-    font-size: clamp(3rem, 8vw, 4.5rem);
-    margin-bottom: 1.5rem;
-    color: white;
-    font-weight: 800;
-    letter-spacing: -1px;
-    line-height: 1.1;
-    background: linear-gradient(120deg, #f0f9ff, #e0f2fe, #bae6fd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-
-  .hero-tagline {
-    max-width: 700px;
+  .blog-page {
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
   }
 
-  .hero-tagline p {
-    font-size: clamp(1.1rem, 2vw, 1.25rem);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    color: #e2e8f0;
+  .blog-header {
+    margin-bottom: 3rem;
   }
 
-  .hero-description {
-    color: #cbd5e1 !important;
-    font-size: clamp(1rem, 2vw, 1.15rem) !important;
-    max-width: 90%;
-    margin: 0 auto 2rem !important;
+  .blog-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #f59e0b;
+    margin: 0 0 0.75rem 0;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
   }
 
-  .hero-cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem auto;
-    padding: 1rem 1.5rem;
-    background: rgba(30, 41, 59, 0.6);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    max-width: max-content;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  .blog-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    color: #f1f5f9;
+    margin: 0 0 0.75rem 0;
+    letter-spacing: -0.03em;
   }
 
-  .rocket {
-    font-size: 1.8rem;
-    display: inline-block;
+  .blog-subtitle {
+    font-size: 1.05rem;
+    color: #94a3b8;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 640px;
   }
 
-  .cta-text {
-    font-size: clamp(0.95rem, 2vw, 1.05rem);
-    font-weight: 500;
-    color: #f8fafc;
-    font-style: italic;
-  }
-
-  /* Content styles */
-  .content-container {
-    max-width: 1200px;
-    margin: 0.5rem auto 2rem;
-    padding: 0 1.5rem;
-    width: 100%;
-  }
-
-  .section-title {
-    font-size: clamp(2rem, 4vw, 2.75rem);
-    margin: 3rem 0 1.5rem;
-    text-align: center;
-    color: var(--color-text-primary);
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 1rem;
-  }
-
-  .section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #3b82f6, #60a5fa);
-    border-radius: 2px;
-  }
-
-  .stylish-divider {
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    margin: 2rem auto;
-    max-width: 80%;
-  }
-
-  :global(.dark) .stylish-divider {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-  }
-
-  .post-grid {
+  /* Featured card */
+  .featured-card {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
-    gap: 2.5rem;
-  }
-
-  .post-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    height: 100%;
-    transition: transform 0.2s ease-out;
-  }
-
-  .post-card-link:hover {
-    transform: translateY(-3px);
-  }
-
-  .post-card-link:focus {
-    outline: 3px solid var(--color-primary);
-    outline-offset: 5px;
-    border-radius: 12px;
-  }
-
-  .post-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: var(--color-background-secondary);
-    border-radius: 12px;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(30, 41, 59, 0.3);
+    border: 1px solid rgba(148, 163, 184, 0.06);
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.2s ease;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 3rem;
   }
 
-  .post-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  .featured-card:hover {
+    border-color: rgba(245, 158, 11, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
 
-  .post-image-container {
+  .featured-image-wrap {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    background-color: rgba(15, 23, 42, 0.2);
+    min-height: 300px;
   }
 
-  .post-image {
+  .featured-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    transition: transform 0.4s ease;
   }
 
-  .post-category {
+  .featured-card:hover .featured-image {
+    transform: scale(1.05);
+  }
+
+  .featured-overlay {
     position: absolute;
-    bottom: 1rem;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(2, 6, 23, 0.3), transparent);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: 1rem;
     left: 1rem;
-    padding: 0.25rem 0.6rem;
-    background-color: var(--color-primary);
-    color: white;
+    padding: 0.3rem 0.7rem;
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: #0f172a;
     font-size: 0.7rem;
     font-weight: 700;
-    border-radius: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
+    letter-spacing: 0.05em;
   }
 
-  .post-card:hover .post-category {
-    transform: translateY(-3px);
-  }
-
-  .post-content {
-    padding: 1.75rem;
+  .featured-content {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    justify-content: center;
   }
 
-  .post-meta {
+  .featured-meta {
     display: flex;
     gap: 0.75rem;
     align-items: center;
-    font-size: 0.85rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 0.75rem;
-    flex-wrap: wrap;
-  }
-
-  .post-date {
-    font-weight: 500;
-  }
-
-  .post-author {
-    font-style: italic;
-  }
-
-  .post-title {
-    font-size: clamp(1.35rem, 3vw, 1.65rem);
+    font-size: 0.78rem;
+    color: #64748b;
     margin-bottom: 1rem;
-    color: var(--color-text-primary);
-    font-weight: 700;
-    line-height: 1.3;
   }
 
-  .post-excerpt {
-    font-size: clamp(0.95rem, 2vw, 1rem);
+  .post-tag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.15);
+    border-radius: 4px;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .featured-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+
+  .featured-excerpt {
+    font-size: 0.92rem;
+    color: #94a3b8;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: var(--color-text-secondary);
-    flex-grow: 1;
+    margin: 0 0 1.25rem 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  .read-more {
+  .read-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #f59e0b;
     display: inline-flex;
     align-items: center;
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--color-primary);
-    margin-top: auto;
+    gap: 0.3rem;
   }
 
   .arrow {
-    display: inline-block;
-    margin-left: 0.35rem;
+    transition: transform 0.2s;
   }
 
-  /* Component containers styling */
-  .news-ticker-wrapper {
-    margin: 0 0 2rem 0;
-    border-radius: 12px;
+  .featured-card:hover .arrow,
+  .post-card:hover .arrow {
+    transform: translateX(3px);
+  }
+
+  /* Posts grid */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 1.5rem;
+  }
+
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(30, 41, 59, 0.25);
+    border: 1px solid rgba(148, 163, 184, 0.06);
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: fadeUp 0.5s ease forwards;
+    opacity: 0;
   }
 
-  .featured-posts-wrapper {
-    margin: 0 0 3.5rem;
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Styling for the Treasure Tavern container */
+  .post-card:hover {
+    border-color: rgba(245, 158, 11, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  }
 
+  .post-image-wrap {
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: rgba(15, 23, 42, 0.5);
+  }
 
-  /* Improved mobile optimization */
+  .post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .post-card:hover .post-image {
+    transform: scale(1.05);
+  }
+
+  .post-content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .post-meta {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #475569;
+    margin-bottom: 0.75rem;
+  }
+
+  .post-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .post-excerpt {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .post-read-time {
+    font-size: 0.72rem;
+    color: #475569;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
   @media (max-width: 768px) {
-    .hero-section {
-      min-height: 400px;
-      padding: 3rem 1rem;
-      margin-bottom: 0.75rem;
+    .featured-card {
+      grid-template-columns: 1fr;
     }
 
-    .hero-cta {
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 1rem;
+    .featured-image-wrap {
+      min-height: 200px;
     }
 
-    .content-container {
-      padding: 0 1rem;
-      margin: 0.5rem auto 1.5rem;
+    .blog-page {
+      padding: 2rem 1rem 4rem;
     }
-
-    .news-ticker-wrapper {
-      margin-bottom: 1.5rem;
-    }
-
-    .featured-posts-wrapper {
-      margin: 0 0 2.5rem;
-    }
-
-
   }
 
   @media (max-width: 480px) {
-    .hero-section {
-      min-height: 350px;
-      padding: 2rem 1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .news-ticker-wrapper {
-      margin-bottom: 1rem;
-    }
-
-    .featured-posts-wrapper {
-      margin: 0 0 2rem;
-    }
-
-    .content-container {
-      margin: 0.25rem auto 1.5rem;
-    }
-
-
-  }
-
-  /* Additional CSS for very small screens */
-  @media (max-width: 350px) {
-    .hero-title {
-      font-size: clamp(2.5rem, 7vw, 3rem);
-    }
-
-    .post-title, .section-title {
-      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    .posts-grid {
+      gap: 1rem;
     }
   }
 </style>

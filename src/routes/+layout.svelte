@@ -2,54 +2,73 @@
   import '../app.css';
   import Navbar from '$lib/components/Navbar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import FloatingProgressBar from '$lib/components/FloatingProgressBar.svelte';
-  import { darkMode } from '$lib/stores/darkMode';
+  import CookieConsent from '$lib/components/CookieConsent.svelte';
+  import ToastContainer from '$lib/components/ToastContainer.svelte';
+  import CommandPalette from '$lib/components/CommandPalette.svelte';
+  import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
+  import { createRabbit } from '$lib/debug/white-rabbit.js';
   import { browser } from '$app/environment';
-  import { afterNavigate } from '$app/navigation';
+  import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
 
-  // Force dark mode on the document
+  // Release the session rabbit — tracks the entire user session
+  let sessionRabbit = null;
+
+  export let data;
+
+  let commandPaletteOpen = false;
+  let navigating = false;
+
+  // Force dark mode
   $: if (browser) {
     document.documentElement.classList.add('dark');
   }
 
-  // Scroll to top after navigation - more forceful approach
+  beforeNavigate(() => {
+    navigating = true;
+  });
+
   afterNavigate(({ from, to }) => {
+    navigating = false;
     if (browser && from && to && from.url.pathname !== to.url.pathname) {
-      // Use setTimeout to ensure this runs after the DOM is updated
+      if (sessionRabbit) {
+        sessionRabbit.watchNavigation(from.url.pathname, to.url.pathname);
+      }
       setTimeout(() => {
         window.scrollTo(0, 0);
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
       }, 0);
     }
   });
 
-  // Also handle initial page load
   onMount(() => {
     if (browser) {
+      sessionRabbit = createRabbit('session', { userAgent: navigator.userAgent });
+      sessionRabbit.mark('app-mounted');
+      sessionRabbit.info('Session started', { path: window.location.pathname });
       window.scrollTo(0, 0);
     }
   });
 </script>
 
 <div class="app">
-  <!-- Under Construction Banner -->
-  <div class="construction-banner">
-    <div class="banner-content">
-      <span class="banner-pulse"></span>
-      <span class="banner-text">
-        We're rebuilding for the future. New content, new look — more coming soon.
-      </span>
-      <span class="banner-pulse"></span>
+  <Navbar user={data?.user} />
+
+  <!-- Page transition loading bar -->
+  {#if navigating}
+    <div class="page-loading-bar" in:fade={{ duration: 100 }}>
+      <div class="page-loading-fill"></div>
     </div>
-  </div>
-  <Navbar />
+  {/if}
+
   <main>
     <slot />
   </main>
   <Footer />
-  <FloatingProgressBar />
+  <CookieConsent />
+  <ToastContainer />
+  <CommandPalette bind:open={commandPaletteOpen} />
+  <WhiteRabbitPanel />
 </div>
 
 <style>
@@ -66,81 +85,134 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .construction-banner {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-    border-bottom: 1px solid rgba(99, 179, 237, 0.3);
-    padding: 0.6rem 1rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 60;
-  }
-
-  .construction-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(99, 179, 237, 0.05), transparent);
-    animation: banner-shimmer 8s infinite linear;
-  }
-
-  @keyframes banner-shimmer {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(50%); }
-  }
-
-  .banner-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .banner-pulse {
-    width: 8px;
-    height: 8px;
-    background: #63b3ed;
-    border-radius: 50%;
-    animation: pulse-dot 2s ease-in-out infinite;
-    flex-shrink: 0;
-  }
-
-  @keyframes pulse-dot {
-    0%, 100% { opacity: 0.4; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.2); }
-  }
-
-  .banner-text {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    letter-spacing: 0.03em;
-    font-weight: 400;
-  }
-
   .app {
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
   }
 
   main {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0.5rem;
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
     box-sizing: border-box;
   }
 
-  @media (min-width: 768px) {
-    main {
-      padding: 1.5rem 1rem;
-    }
+  /* Page loading bar */
+  .page-loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 9999;
+    background: transparent;
+  }
+
+  .page-loading-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #f59e0b, #f97316, #f59e0b);
+    background-size: 200% 100%;
+    animation: loading-shimmer 1s ease-in-out infinite, loading-grow 2s ease forwards;
+    border-radius: 0 1px 1px 0;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+  }
+
+  @keyframes loading-grow {
+    0% { width: 0%; }
+    20% { width: 30%; }
+    50% { width: 60%; }
+    80% { width: 85%; }
+    100% { width: 95%; }
+  }
+
+  @keyframes loading-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Global micro-interaction utilities */
+  :global(.magnetic-hover) {
+    transition: transform 0.2s ease;
+  }
+
+  :global(.magnetic-hover:hover) {
+    transform: translateY(-2px);
+  }
+
+  /* Global button ripple effect */
+  :global(.ripple) {
+    position: relative;
+    overflow: hidden;
+  }
+
+  :global(.ripple::after) {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--ripple-x, 50%) var(--ripple-y, 50%), rgba(255,255,255,0.15) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  :global(.ripple:active::after) {
+    opacity: 1;
+  }
+
+  /* Smooth link underline animation */
+  :global(.link-fancy) {
+    text-decoration: none;
+    background-image: linear-gradient(#f59e0b, #f59e0b);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 0.3s ease;
+  }
+
+  :global(.link-fancy:hover) {
+    background-size: 100% 1px;
+  }
+
+  /* Card tilt effect */
+  :global(.tilt-card) {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 800px;
+  }
+
+  :global(.tilt-card:hover) {
+    transform: perspective(800px) rotateX(2deg) rotateY(-2deg) translateY(-4px);
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Focus ring */
+  :global(*:focus-visible) {
+    outline: 2px solid rgba(245, 158, 11, 0.5);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Selection color */
+  :global(::selection) {
+    background: rgba(245, 158, 11, 0.25);
+    color: #f1f5f9;
+  }
+
+  /* Scrollbar styling */
+  :global(::-webkit-scrollbar) {
+    width: 6px;
+  }
+
+  :global(::-webkit-scrollbar-track) {
+    background: transparent;
+  }
+
+  :global(::-webkit-scrollbar-thumb) {
+    background: rgba(148, 163, 184, 0.1);
+    border-radius: 3px;
+  }
+
+  :global(::-webkit-scrollbar-thumb:hover) {
+    background: rgba(148, 163, 184, 0.2);
   }
 </style>

@@ -5,12 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Additional variables specific to app.css */
-:root {
-  --safe-area-padding: env(safe-area-inset-right, 1rem);
-}
-
-/* Base styles to ensure content stays within viewport */
+/* Base */
 html {
   scroll-behavior: smooth;
   width: 100%;
@@ -18,71 +13,35 @@ html {
 }
 
 body {
-  background-color: #020617;
-  color: #e2e8f0;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
   width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  position: relative;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Ensure text content wraps properly */
 *, *::before, *::after {
   box-sizing: border-box;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  min-width: 0; /* Prevents flex items from overflowing */
+  min-width: 0;
 }
 
-/* Ensure all text elements wrap properly */
 h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: normal;
-  hyphens: none;
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
 }
 
-p, a, span, div {
-  max-width: 100%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  hyphens: auto;
-}
-
-.content-box {
-  @apply bg-[var(--color-surface)] rounded-lg p-4;
-}
-
-.btn {
-  @apply bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-600 transition-colors;
-}
-
-/* Container styles */
-.container {
-  width: 100%;
-  max-width: min(var(--max-width), 100% - 1rem);
-  margin: 0 auto;
-  padding-left: max(0.5rem, var(--safe-area-padding));
-  padding-right: max(0.5rem, var(--safe-area-padding));
-  box-sizing: border-box;
-}
-
-/* Responsive media */
 img, video, iframe {
   max-width: 100%;
   height: auto;
-  display: block; /* Prevents inline spacing issues */
+  display: block;
 }
 
-/* Ensure tables don't overflow */
 table {
   width: 100%;
   max-width: 100%;
@@ -91,90 +50,6 @@ table {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Ensure form elements stay within bounds */
 input, select, textarea {
   max-width: 100%;
-  width: 100%;
-}
-
-/* Ensure fixed/absolute positioned elements stay within viewport */
-.fixed, .absolute {
-  max-width: 100vw;
-  width: max-content;
-  max-height: 100vh;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .container {
-    padding-left: max(0.25rem, var(--safe-area-padding));
-    padding-right: max(0.25rem, var(--safe-area-padding));
-  }
-
-  /* Adjust font sizes for better mobile display */
-  h1 { font-size: clamp(1.5rem, 5vw, 2.5rem); }
-  h2 { font-size: clamp(1.25rem, 4vw, 2rem); }
-  h3 { font-size: clamp(1.1rem, 3vw, 1.75rem); }
-
-  /* Blog post share button fix - make the metadata area wrap properly on mobile */
-  .blog-post .flex.items-center.text-gray-600,
-  .blog-post .flex.items-center.text-gray-400 {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  /* Style the share button as a full-width button on mobile */
-  .blog-post .flex.items-center button.ml-auto {
-    margin-left: 0;
-    margin-top: 0.5rem;
-    width: 100%; /* Full width */
-    justify-content: center;
-    padding: 0.5rem;
-    background-color: var(--color-primary, #f97316);
-    color: white !important; /* Force white text */
-    border-radius: 0.375rem;
-    font-weight: 500;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease;
-  }
-
-  /* Dark mode styles for the share button */
-  .dark .blog-post .flex.items-center button.ml-auto {
-    background-color: var(--color-primary-dark, #f97316);
-  }
-
-  /* Hide the separator dots when items wrap */
-  .blog-post .flex.items-center.text-gray-600 .mr-4:nth-child(even),
-  .blog-post .flex.items-center.text-gray-400 .mr-4:nth-child(even) {
-    display: none;
-  }
-}
-
-/* Even smaller screens for better mobile experience */
-@media (max-width: 480px) {
-  /* For very small screens, stack elements vertically */
-  .blog-post .flex.items-center.text-gray-600,
-  .blog-post .flex.items-center.text-gray-400 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .blog-post .flex.items-center > span {
-    margin-right: 0;
-  }
-
-  /* Make the share button more prominent */
-  .blog-post .flex.items-center button.ml-auto {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    font-size: 1rem;
-  }
-}
-
-/* Ensure dropdowns and modals stay within viewport */
-.dropdown-content, .modal-content {
-  max-width: min(100vw - 2rem, 40rem);
-  max-height: min(100vh - 4rem, 40rem);
-  width: max-content;
-  position: relative;
 }

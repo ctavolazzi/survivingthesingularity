@@ -1,6 +1,4 @@
 <script>
-  import YouTubeVidBox from './YouTubeVidBox.svelte';
-
   export let title = "View more content like this";
   export let description = "Here are some more videos that dive deeper into AI and gaming";
   export let videos = [];
@@ -11,7 +9,18 @@
   <p class="recommended-description">{description}</p>
   <div class="video-container">
     {#each videos as video}
-      <YouTubeVidBox videoId={video.id} title={video.title} />
+      <div class="video-box">
+        <iframe
+          src="https://www.youtube.com/embed/{video.id}"
+          title={video.title}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        {#if video.title}
+          <p class="video-title">{video.title}</p>
+        {/if}
+      </div>
     {/each}
   </div>
 </div>
@@ -42,6 +51,26 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+  }
+
+  .video-box {
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.2);
+  }
+
+  .video-box iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+  }
+
+  .video-title {
+    padding: 0.75rem;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+    font-weight: 500;
   }
 
   @media (max-width: 768px) {

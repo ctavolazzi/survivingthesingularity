@@ -2,26 +2,25 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="/" class="footer-logo-link">
-          <img src="/android-chrome-192x192.png" class="footer-logo" alt="Logo" loading="lazy">
+        <div class="footer-logo-row">
+          <span class="footer-mark">STS</span>
           <span class="footer-brand-name">Surviving the Singularity</span>
-        </a>
-        <p class="footer-tagline">Understanding what's coming. Preparing for what's next.</p>
+        </div>
+        <p class="footer-tagline">Material independence through digital leverage, local intelligence, and minimalist infrastructure.</p>
       </div>
 
       <div class="footer-links-group">
         <div class="footer-col">
           <h4 class="footer-col-title">Navigate</h4>
           <a href="/" class="footer-link">Home</a>
-          <a href="/about" class="footer-link">About</a>
+          <a href="/blueprint" class="footer-link">The Blueprint</a>
+          <a href="/book" class="footer-link">Book</a>
           <a href="/blog" class="footer-link">Blog</a>
-          <a href="/start-here" class="footer-link">Start Here</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Resources</h4>
-          <a href="/sample" class="footer-link">Book Sample</a>
+          <a href="/about" class="footer-link">About</a>
           <a href="/policies" class="footer-link">Policies</a>
-          <a href="/policies#disclaimers" class="footer-link">Disclaimers</a>
         </div>
       </div>
     </div>
@@ -30,11 +29,10 @@
 
     <div class="footer-bottom">
       <p class="footer-disclaimer">
-        The content on this site represents educated guesses and personal opinions. Nothing is certain about the future.
-        This is commentary only — not financial, legal, or professional advice.
+        This is commentary only — not financial, legal, or professional advice. Build at your own risk. Think for yourself.
       </p>
       <p class="footer-copyright">
-        &copy; {new Date().getFullYear()} Surviving the Singularity. Built with curiosity.
+        &copy; {new Date().getFullYear()} Surviving the Singularity. Built with your own two hands.
       </p>
     </div>
   </div>
@@ -42,7 +40,7 @@
 
 <style>
   .site-footer {
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, #020617 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.8) 30%, #020617 100%);
     padding: 4rem 1.5rem 2rem;
     margin-top: 4rem;
   }
@@ -61,21 +59,22 @@
   }
 
   .footer-brand {
-    max-width: 300px;
+    max-width: 360px;
   }
 
-  .footer-logo-link {
+  .footer-logo-row {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    text-decoration: none;
     margin-bottom: 0.75rem;
   }
 
-  .footer-logo {
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
+  .footer-mark {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #f59e0b;
+    letter-spacing: 0.08em;
+    font-family: 'JetBrains Mono', monospace;
   }
 
   .footer-brand-name {
@@ -103,10 +102,10 @@
   }
 
   .footer-col-title {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     color: #475569;
     margin: 0 0 0.25rem 0;
   }
@@ -120,12 +119,12 @@
   }
 
   .footer-link:hover {
-    color: #e2e8f0;
+    color: #f59e0b;
   }
 
   .footer-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.15), transparent);
     margin: 2.5rem 0;
   }
 

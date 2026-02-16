@@ -14,6 +14,20 @@ Think about how you learned to ride a bike: years of wobbling, falling, and coll
 
 But here's where it gets really interesting (or terrifying, depending on your perspective): once AI becomes smart enough to design its own successors, we might find ourselves as bystanders in our own evolutionary story. Picture yourself watching from the sidelines as your creation sprints past every intellectual milestone humanity has ever set, leaving you to choose between cheering it on or frantically searching for an off switch. Though by then, that off switch will probably have evolved into a sentient being with its own Instagram account and strong opinions about being turned off.
 
+### The Trajectory: Where We Actually Are Right Now
+
+Enough hypotheticals—let's talk about what's already happening. Because the Singularity isn't some abstract event that may or may not occur in a distant future. It's a process that's already underway, and the signs are everywhere if you know where to look.
+
+Consider the acceleration curve. GPT-3, released in 2020, could write passable essays and had roughly 175 billion parameters. GPT-4, released just three years later, could pass the bar exam, score in the top percentiles on medical licensing exams, and write code that would take a human programmer hours—in seconds. That's not incremental improvement. That's a hockey stick curve that's barely left the handle.
+
+DeepMind's AlphaFold solved the protein folding problem—a challenge that stumped biologists for *fifty years*—in a matter of months. It then predicted the structure of virtually every known protein on Earth. The implications for drug discovery, disease treatment, and our fundamental understanding of biology are staggering. And it happened almost casually, like an AI stretching before the real workout begins.
+
+AI systems are now writing their own code, designing their own architectures, and in some cases, creating more efficient versions of themselves. Google's AutoML can design neural networks that outperform human-designed ones. That's not the Singularity yet, but it's the first rumble of the approaching avalanche—machines getting better at making themselves better, faster than humans can keep up.
+
+The timeline debate among researchers has shifted dramatically. A 2023 survey of AI researchers found that many now estimate a 50% chance of human-level AI by the 2040s or 2050s—decades sooner than previous surveys suggested. Ray Kurzweil, who's been eerily accurate about technological predictions since the 1990s, has pinned 2045 as the year. Whether he's right about the exact date matters less than the fact that serious scientists are no longer arguing about *whether* but *when*.
+
+And here's what keeps the AI safety researchers up at night: we might not recognize the Singularity when it arrives. It probably won't look like a dramatic movie moment where an AI suddenly "wakes up" and declares itself conscious. It's more likely to be a gradual process where AI systems become indispensable, then incomprehensible, then—quietly, without fanfare—more capable than the humans who built them. By the time we realize what's happened, we'll be debating whether it happened last Tuesday or last year.
+
 ### Utopian or Dystopian? Two Singularity Scenarios
 
 Let's peek into two possible futures—think of them as the "best of times" and the "did someone just unplug the Matrix?" scenarios. Neither is likely to play out exactly as described, but they're useful goalposts for the cosmic game we're about to play.

@@ -27,7 +27,7 @@
   function pad(n) { return String(n).padStart(2, '0'); }
 </script>
 
-<div class="urgency-banner">
+<a href="/why" class="urgency-banner">
   <div class="banner-inner">
     <div class="banner-left">
       <span class="banner-pulse"></span>
@@ -55,18 +55,30 @@
       </div>
     </div>
     <div class="banner-right">
-      <span class="banner-note">Best time to start is now</span>
+      <span class="banner-note">Why this matters →</span>
     </div>
   </div>
-</div>
+</a>
 
 <style>
   .urgency-banner {
+    display: block;
+    text-decoration: none;
     background: linear-gradient(90deg, #0a0a0a 0%, #0f0a00 50%, #0a0a0a 100%);
     border-bottom: 1px solid rgba(245, 158, 11, 0.12);
     padding: 0.5rem 1rem;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+
+  .urgency-banner:hover {
+    border-bottom-color: rgba(245, 158, 11, 0.3);
+  }
+
+  .urgency-banner:hover .banner-note {
+    color: #f59e0b;
   }
 
   .urgency-banner::before {

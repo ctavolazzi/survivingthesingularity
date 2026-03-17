@@ -24,7 +24,7 @@
   console.log('BlogPostTemplate received image:', post.image);
 
   // Options to customize the template
-  export let options = {
+  const defaultOptions = {
     showBackButton: true,
     showProgressBar: false,
     showAds: true,
@@ -36,6 +36,8 @@
     borderOnFeaturedImage: false,
     showFaq: false
   };
+  export let options = {};
+  $: options = { ...defaultOptions, ...options };
 
   // Default recommended videos - can be overridden by the page using this template
   export let recommendedVideos = [

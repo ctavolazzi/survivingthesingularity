@@ -153,12 +153,6 @@
     },
     "variants": {}
   },
-  "static/future-projections/future-of-jobs.png": {
-    "original": {
-      "path": "static/future-projections/future-of-jobs.png"
-    },
-    "skipped": true
-  },
   "static/images/treasure-tavern-square.png": {
     "original": {
       "width": 600,
@@ -234,6 +228,12 @@
         "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
       }
     }
+  },
+  "static/future-projections/future-of-jobs.png": {
+    "original": {
+      "path": "static/future-projections/future-of-jobs.png"
+    },
+    "skipped": true
   },
   "static/images/blog/whispers-ai-featured.png": {
     "original": {

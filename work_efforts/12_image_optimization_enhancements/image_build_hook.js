@@ -128,6 +128,16 @@ async function processImage(imagePath) {
     const fileName = parsedPath.name;
     const outputBaseName = fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
 
+    // Skip empty files
+    const stat = await fs.stat(imagePath);
+    if (stat.size === 0) {
+      console.log(`Skipping empty file: ${relativePath}`);
+      return {
+        relativePath,
+        sizes: { original: { path: relativePath }, skipped: true }
+      };
+    }
+
     // Load the image with sharp
     const image = sharp(imagePath);
     const metadata = await image.metadata();

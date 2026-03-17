@@ -49,7 +49,7 @@ src/
 │   ├── +page.server.js        # Home page server-side data loading
 │   ├── about/                 # About page
 │   ├── blog/                  # Blog listing + individual post routes
-│   ├── book/                  # Book content pages
+│   ├── book/[sectionId]       # Book reader with pagination & progress
 │   ├── sample/                # Book sample pages
 │   ├── start-here/            # Getting started guide
 │   ├── policies/              # Privacy policy, terms
@@ -61,6 +61,9 @@ src/
 │   │   └── *.svelte           # Feature components (Navbar, Footer, BlogPostTemplate, etc.)
 │   ├── data/
 │   │   ├── blog-posts/        # Blog content (see Blog System below)
+│   │   ├── book-draft-v2/     # Full book content (19 markdown files, 12 chapters)
+│   │   ├── quotes.json        # Featured quotes
+│   │   ├── technologies.json  # Technology data
 │   │   └── timelineItems.json # Timeline event data
 │   ├── stores/                # Svelte stores for global state
 │   ├── utils/                 # Client-side utilities
@@ -114,6 +117,10 @@ To create a new post: `npm run create-blog "Post Title"`
 
 Blog routes use `+page.server.js` load functions for server-side data fetching. The `blogPosts.js` module dynamically imports all posts and caches them.
 
+## Book Content
+
+The book has 12 chapters + intro, epilogue, glossary, and further reading, stored in `src/lib/data/book-draft-v2/`. Writing voice: Conversational, witty, direct address ("you"), pop culture references, satirical commentary balanced with genuine optimism. Practical and empowering, NOT doom-and-gloom.
+
 ## Architecture & Patterns
 
 ### Component Conventions
@@ -123,16 +130,21 @@ Blog routes use `+page.server.js` load functions for server-side data fetching. 
 - Component structure order: `<script>` → markup → `<style>`
 - Props declared with `export let propName`
 - Reactive declarations with `$:` syntax
+- Uses Svelte 4 reactive syntax — NOT Svelte 5 runes
+
+### Design System
+- **Theme**: Dark-first (forced dark mode via `document.documentElement.classList.add('dark')`)
+- **Primary accent**: Blue gradient (`#63b3ed` / `#3b82f6` / `#8b5cf6`)
+- **Background**: Deep navy (`#020617` / `#0f172a`)
+- **Text**: Light slate (`#e2e8f0` primary, `#94a3b8` secondary)
+- **Fonts**: Inter (body), JetBrains Mono (code/accents), Orbitron (special headings)
+- **Feel**: Futuristic, clean, editorial
 
 ### Styling
 - **Tailwind CSS** for layout and utilities
 - **Component `<style>` blocks** for animations and component-specific styles
 - **Dark mode is always on** — enforced in root layout, class-based (`darkMode: 'class'` in Tailwind config)
-- CSS custom properties defined in `src/lib/styles/theme.css`:
-  - Primary: `#3b82f6` (blue)
-  - Accent: `#ff7708` (orange, used for headings and links in prose)
-  - Heading font: `Orbitron` (secondary/display font)
-  - Body font: system font stack
+- CSS custom properties defined in `src/lib/styles/theme.css`
 - Responsive breakpoints: 768px (tablet), 480px (mobile), 350px (extra small)
 - Use `:global()` selector for overriding child component styles
 
@@ -158,6 +170,7 @@ Blog routes use `+page.server.js` load functions for server-side data fetching. 
 - `vite-imagetools` converts images to WebP at quality 80 during build
 - `ResponsiveImage.svelte` and `SafeResponsiveImage.svelte` for optimized rendering
 - `prebuild` script copies blog post assets and runs `image_build_hook.js`
+- Book cover image: `/images/Surviving-the-Singularity-Cover.png` (+ `.webp` variant)
 
 ## Environment Variables
 

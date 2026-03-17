@@ -1,25 +1,29 @@
 /* theme.css - Central theme variables for Surviving the Singularity */
+/* Refreshed: February 2026 */
 
 :root {
-  /* Primary colors */
+  /* Primary colors — cooler, more sophisticated palette */
   --color-primary: #3b82f6;
   --color-primary-dark: #2563eb;
   --color-primary-light: #60a5fa;
 
   /* Text colors */
-  --color-text-primary: #1a202c;
-  --color-text-secondary: #4a5568;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
 
   /* Background colors */
   --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f3f4f6;
+  --color-bg-secondary: #f8fafc;
 
-  /* Accent colors */
-  --color-accent: #ff7708;
-  --color-accent-hover: #ff8000;
+  /* Accent colors — shifted from orange to blue-violet spectrum */
+  --color-accent: #63b3ed;
+  --color-accent-hover: #90cdf4;
+
+  /* Surface colors */
+  --color-surface: rgba(241, 245, 249, 0.8);
 
   /* Border colors */
-  --color-border: #e5e7eb;
+  --color-border: #e2e8f0;
 
   /* UI feedback colors */
   --color-success: #10b981;
@@ -29,20 +33,22 @@
 
   /* Layout */
   --max-width: 1100px;
-  --container-padding: 1rem;
+  --container-padding: 1.5rem;
 
   /* Typography */
-  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-secondary: 'Orbitron', sans-serif;
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-secondary: 'JetBrains Mono', 'Courier New', monospace;
+  --font-display: 'Inter', system-ui, sans-serif;
 }
 
 /* Dark mode variants */
 .dark {
-  --color-text-primary: #f7fafc;
-  --color-text-secondary: #e2e8f0;
-  --color-bg-primary: #1a202c;
-  --color-bg-secondary: #2d3748;
-  --color-border: #4a5568;
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-bg-primary: #020617;
+  --color-bg-secondary: #0f172a;
+  --color-surface: rgba(30, 41, 59, 0.5);
+  --color-border: rgba(148, 163, 184, 0.1);
 }
 
 /* Utility classes */
@@ -53,6 +59,3 @@
 .bg-primary {
   background-color: var(--color-primary);
 }
-
-/* This file only contains the most common variables.
-   Existing component-specific variables are maintained for now. */

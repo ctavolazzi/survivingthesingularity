@@ -6,42 +6,42 @@
   let cssClass = "";
   export { cssClass as class };
 
-  // Future predictions data with essential fields
+  // Builder milestones — practical technology adoption timeline
   const predictions = [
     {
       id: 1,
-      year: "2025-2027",
-      title: "Artificial General Intelligence Milestone",
-      description: "The first AI system demonstrating capabilities across multiple domains at human-level performance, marking a significant step toward AGI.",
-      confidence: "Medium",
+      year: "2025-2026",
+      title: "Local AI Sovereignty Becomes Practical",
+      description: "Open-weight models like Llama 4 (70B parameters) run on consumer hardware. The RTX 5090 with 32GB VRAM enables individual builders to run coding assistants and research tools without cloud dependency.",
+      confidence: "Confirmed",
       impact: "High",
       color: "#3b82f6" // Blue
     },
     {
       id: 2,
-      year: "2028-2030",
-      title: "Brain-Computer Interface Revolution",
-      description: "Widespread adoption of non-invasive BCIs for everyday use, enabling direct mental control of devices and preliminary thought-to-text communication.",
-      confidence: "Medium",
+      year: "2026-2027",
+      title: "Open-Source Robotics for Homesteaders",
+      description: "FarmBot Genesis XL automates food production on 18 square meters. Mobile ALOHA enables workshop automation for under $2,000. The cost of food sovereignty drops below the cost of a year of groceries.",
+      confidence: "High",
       impact: "Very High",
       color: "#8b5cf6" // Purple
     },
     {
       id: 3,
-      year: "2032-2035",
-      title: "Quantum Computing Breakthrough",
-      description: "Practical quantum computers solving previously intractable problems, revolutionizing fields from materials science to drug discovery and AI training.",
-      confidence: "Medium-High",
+      year: "2027-2029",
+      title: "The Shouse Economy Takes Root",
+      description: "As housing costs exceed 7x median income, the shouse model — shop-houses on rural land built for $25-45 per square foot — becomes the primary path to ownership for builders without inherited wealth.",
+      confidence: "High",
       impact: "Transformative",
       color: "#ec4899" // Pink
     },
     {
       id: 4,
-      year: "2040-2045",
-      title: "Technological Singularity Threshold",
-      description: "The potential point at which technological growth becomes uncontrollable and irreversible, resulting in unforeseeable changes to human civilization.",
-      confidence: "Speculative",
-      impact: "Civilization-Altering",
+      year: "2029-2032",
+      title: "Decentralized Production Networks",
+      description: "Networks of independent builders sharing blueprints, surplus resources, and open-source tools create local economies that operate outside centralized corporate systems. Material independence becomes a community practice.",
+      confidence: "Medium",
+      impact: "Civilization-Shifting",
       color: "#f59e0b" // Amber
     }
   ];
@@ -52,11 +52,11 @@
     expandedItem = expandedItem === id ? null : id;
   }
 
-  // Calculate progress percentage toward singularity
+  // Calculate progress percentage toward builder independence
   function calculateProgress() {
     const now = new Date();
     const startYear = 2023;
-    const endYear = 2045;
+    const endYear = 2032;
     const totalYears = endYear - startYear;
     const yearsPassed = now.getFullYear() - startYear + (now.getMonth()/12);
     return Math.min(Math.max((yearsPassed / totalYears) * 100, 0), 100);
@@ -69,15 +69,13 @@
   <div class="future-predictions rounded-lg max-w-4xl mx-auto">
     <div class="future-header">
       <h2 class="future-title">
-        <span class="title-highlight">Future</span> Predictions
+        <span class="title-highlight">Builder</span> Milestones
         <div class="title-decoration"></div>
       </h2>
 
       <p class="subtitle">
-        Based on extensive research and analysis from "Surviving the Singularity"
+        The practical technology adoption timeline for material independence
       </p>
-
-      <!-- Removing the entire singularity timeline section -->
     </div>
 
     <div class="predictions-container">
@@ -121,12 +119,12 @@
               {#if expandedItem === prediction.id}
                 <div class="expanded-content" in:slide={{ duration: 300 }}>
                   <div class="implications">
-                    <h4>Potential Implications:</h4>
+                    <h4>What This Means for Builders:</h4>
                     <ul>
-                      <li>Economic shifts in labor markets and wealth distribution</li>
-                      <li>New ethical and philosophical questions about consciousness and identity</li>
-                      <li>Geopolitical power realignment based on technology leadership</li>
-                      <li>Transformative impacts on healthcare, education, and governance</li>
+                      <li>Reduced dependency on corporate employment and cloud services</li>
+                      <li>Lower barriers to food production, shelter construction, and energy independence</li>
+                      <li>New income streams through digital content creation and direct-to-consumer products</li>
+                      <li>Community-scale resilience through shared open-source blueprints and tools</li>
                     </ul>
                   </div>
                 </div>

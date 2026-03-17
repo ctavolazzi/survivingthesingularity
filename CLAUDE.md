@@ -1,128 +1,248 @@
-# Surviving the Singularity
+# CLAUDE.md — Surviving the Singularity
 
 ## Project Overview
 
-**Surviving the Singularity** is a book + website by Christopher Tavolazzi about understanding, preparing for, and thriving through the most transformative period in human history — the technological singularity.
-
-The site serves as the book's home base: marketing, blog, book reader, and community hub.
+Educational web platform focused on material independence, local AI sovereignty, open-source robotics, and the "Millennial Builder" framework. Built with SvelteKit, the site provides practical guides on building independence through technology — local LLMs, FarmBot, Mobile ALOHA, rural land acquisition, and the YouTube Shouse lifestyle. The site has transitioned from abstract AI speculation to an actionable builder-focused resource.
 
 ## Tech Stack
 
-- **Framework:** SvelteKit 2.0 + Vite 5
-- **Styling:** Tailwind CSS 3.4 + custom CSS (dark-first design)
-- **UI Library:** Flowbite Svelte
-- **Markdown:** mdsvex for `.md`/`.svx` files
-- **Backend:** Supabase (auth, storage)
-- **Payments:** Stripe
-- **Images:** Sharp + vite-imagetools (auto WebP)
-- **Deployment:** adapter-auto
+| Layer | Technology |
+|-------|-----------|
+| Framework | SvelteKit 2 + Svelte 4 |
+| Build Tool | Vite 5 |
+| Styling | Tailwind CSS 3 + Flowbite Svelte + Tailwind Typography |
+| Content | MDSvex (Markdown in Svelte), marked, remark |
+| Backend | Supabase (auth, database) |
+| Payments | Stripe |
+| Language | JavaScript (ES modules, JSConfig — not TypeScript) |
+| Image Processing | Sharp + vite-imagetools (WebP conversion) |
+| Other | Three.js, Chart.js, date-fns, PapaParse, PDF.js |
 
-## Key Commands
+## Quick Start
 
 ```bash
-npm run dev          # Start dev server
-npm run build        # Production build
-npm run preview      # Preview production build
-npm run optimize-images  # Optimize images
-npm run create-blog  # Scaffold a new blog post
+npm install
+cp .env.example .env   # Fill in Supabase + Stripe credentials
+npm run dev             # Starts dev server at localhost:5173
 ```
+
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| `npm run dev` | Start development server |
+| `npm run build` | Production build (runs prebuild image optimization first) |
+| `npm run preview` | Preview production build locally |
+| `npm run check` | Run svelte-check for type/lint diagnostics |
+| `npm run check:watch` | Watch mode for svelte-check |
+| `npm run create-blog "Title"` | Scaffold a new blog post |
+| `npm run migrate-blog` | Migrate old-format blog posts to new structure |
+| `npm run optimize-images` | Run image optimization manually |
 
 ## Project Structure
 
 ```
 src/
-├── routes/              # SvelteKit pages
-│   ├── +page.svelte     # Homepage (hero, countdown, timeline, features, FAQ)
-│   ├── +layout.svelte   # Root layout (banner, navbar, footer)
-│   ├── blog/            # Blog listing + individual posts
-│   ├── book/[sectionId] # Book reader with pagination & progress
-│   ├── about/           # Mission / about page
-│   ├── sample/          # Book sample / preview
-│   ├── start-here/      # Onboarding page
-│   └── api/             # API endpoints
+├── routes/                    # SvelteKit file-based routing
+│   ├── +layout.svelte         # Root layout (dark mode enforced)
+│   ├── +page.svelte           # Home page
+│   ├── +page.server.js        # Home page server-side data loading
+│   ├── about/                 # About page
+│   ├── blog/                  # Blog listing + individual post routes
+│   ├── book/[sectionId]       # Book reader with pagination & progress
+│   ├── sample/                # Book sample pages
+│   ├── start-here/            # Getting started guide
+│   ├── policies/              # Privacy policy, terms
+│   └── api/                   # API endpoints (see below)
 ├── lib/
-│   ├── components/      # 64+ Svelte components
+│   ├── components/            # ~60 Svelte components
+│   │   ├── ui/                # Reusable UI primitives (Button, Card, Input, etc.)
+│   │   ├── ads/               # Ad-related components
+│   │   └── *.svelte           # Feature components (Navbar, Footer, BlogPostTemplate, etc.)
 │   ├── data/
-│   │   ├── book-draft-v2/   # Full book content (19 markdown files, 12 chapters)
-│   │   ├── blog-posts/      # Blog posts (content.md + index.js each)
-│   │   ├── quotes.json      # Featured quotes
-│   │   ├── timelineItems.json
-│   │   └── technologies.json
-│   ├── stores/          # Svelte stores (darkMode, bookPage, etc.)
-│   ├── utils/           # Helpers (navigation, etc.)
-│   └── styles/          # Global styles
-static/
-├── images/              # Static assets, book cover, blog images
-work_efforts/            # Johnny Decimal project management system
-docs/contributing/       # CONTRIBUTING.md, STYLE_GUIDE.md
+│   │   ├── blog-posts/        # Blog content (see Blog System below)
+│   │   ├── book-draft-v2/     # Full book content (19 markdown files, 12 chapters)
+│   │   ├── quotes.json        # Featured quotes
+│   │   ├── technologies.json  # Technology data
+│   │   └── timelineItems.json # Timeline event data
+│   ├── stores/                # Svelte stores for global state
+│   ├── utils/                 # Client-side utilities
+│   │   ├── navigation.js      # gotoAndScrollTop helper
+│   │   ├── supabaseClient.js  # Supabase client setup
+│   │   ├── markdownParser.js  # Markdown processing
+│   │   └── eventBus.js        # Event bus for cross-component communication
+│   ├── server/                # Server-only code
+│   │   └── supabaseAdmin.js   # Supabase admin client
+│   ├── styles/
+│   │   └── theme.css          # CSS custom properties (color tokens, layout vars)
+│   └── assets/                # Importable static assets
+├── app.css                    # Global styles and Tailwind directives
+└── hooks.server.js            # Server hooks (navigation error handling)
+
+static/                        # Public static assets (images, fonts)
+docs/contributing/             # Contributing, style guide, security docs
+work_efforts/                  # Task tracking (Johnny Decimal organized)
 ```
 
-## Book Content
+## API Endpoints
 
-The book has 12 chapters + intro, epilogue, glossary, and further reading:
+All under `src/routes/api/`:
 
-1. AI & the Singularity overview
-2. AI's impact on jobs and economy
-3. AI in everyday life
-4. AI in healthcare
-5. AI in education
-6. AI in art, creativity, entertainment
-7. AI in relationships
-8. AI in politics
-9. AI in finance
-10. Surviving the age of AI
-11. Thriving in the age of AI
-12. Looking forward
-
-**Writing voice:** Conversational, witty, direct address ("you"), pop culture references, satirical commentary balanced with genuine optimism. NOT doom-and-gloom — practical and empowering.
-
-## Design System
-
-- **Theme:** Dark-first (forced dark mode via `document.documentElement.classList.add('dark')`)
-- **Primary accent:** Blue gradient (#63b3ed / #3b82f6 / #8b5cf6)
-- **Background:** Deep navy (#020617 / #0f172a)
-- **Text:** Light slate (#e2e8f0 primary, #94a3b8 secondary)
-- **Fonts:** Inter (body), JetBrains Mono (code/accents), Orbitron (special headings)
-- **Feel:** Futuristic, clean, editorial — like a tech magazine from 2030
-
-## Current Status: Book Revival Phase
-
-The site was rebuilt with a fresh v2 design (new hero, navbar, footer, theme). We are now entering the **book revival phase** — shifting from "under construction" to actively promoting and hyping the book.
-
-### Revival Goals
-- Transform the site from "coming soon" energy to "the book is HERE" energy
-- Drive readers to explore the book content
-- Build excitement and shareability
-- Position the book as essential reading for the AI age
-- Encourage word-of-mouth sharing
-
-### Key Pages for Book Promotion
-- `/sample` — Book sample/preview (primary conversion page)
-- `/book/[sectionId]` — Full book reader
-- `/start-here` — Onboarding funnel
-- `/blog` — Supporting content that builds authority
-
-## Environment Variables
-
-```
-SUPABASE_URL, SUPABASE_SERVICE_KEY
-PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY
-STRIPE_SECRET_KEY, STRIPE_PRICE_ID
-PUBLIC_BASE_URL
-```
+| Endpoint | Purpose |
+|----------|---------|
+| `/api/featured-posts` | Featured blog posts (uses Cloudflare caching) |
+| `/api/latest-post` | Most recent blog post |
+| `/api/timeline` | Timeline events data |
+| `/api/news-ticker` | News ticker content |
+| `/api/fetch-title` | Fetch page title from URL |
+| `/api/create-checkout-session` | Stripe checkout session |
 
 ## Blog System
 
-Blog posts live in `src/lib/data/blog-posts/<slug>/`:
-- `content.md` — Post body in markdown
-- `index.js` — Metadata (title, date, author, excerpt, featured image, slug)
+Blog posts live in `src/lib/data/blog-posts/[post-slug]/` with this structure:
 
-Use `npm run create-blog` to scaffold new posts.
+```
+src/lib/data/blog-posts/
+├── blogPosts.js              # loadBlogPosts() — imports and caches all posts
+├── whispers-of-the-future/
+│   ├── content.md            # Markdown content
+│   └── index.js              # Metadata: title, date, author, excerpt, slug
+├── singularity-express/
+│   ├── content.md
+│   └── index.js
+└── ...
+```
 
-## Important Notes
+To create a new post: `npm run create-blog "Post Title"`
 
-- The site uses Svelte 4 reactive syntax (`$:`, `export let`, etc.) — not Svelte 5 runes
-- Dark mode is force-enabled globally; no light mode toggle needed
-- Image optimization runs at build time; use `/images/` path for static assets
-- The construction banner in `+layout.svelte` should reflect current project phase
+Blog routes use `+page.server.js` load functions for server-side data fetching. The `blogPosts.js` module dynamically imports all posts and caches them.
+
+## Book Content
+
+The book has 12 chapters + intro, epilogue, glossary, and further reading, stored in `src/lib/data/book-draft-v2/`. Writing voice: Conversational, witty, direct address ("you"), pop culture references, satirical commentary balanced with genuine optimism. Practical and empowering, NOT doom-and-gloom.
+
+## Architecture & Patterns
+
+### Component Conventions
+- Component files use **PascalCase**: `BlogPostTemplate.svelte`
+- Non-component files use **kebab-case**: `timeline-items.json`
+- Functions use **camelCase**: `handleSubmit`, `loadBlogPosts`
+- Component structure order: `<script>` → markup → `<style>`
+- Props declared with `export let propName`
+- Reactive declarations with `$:` syntax
+- Uses Svelte 4 reactive syntax — NOT Svelte 5 runes
+
+### Design System
+- **Theme**: Dark-first (forced dark mode via `document.documentElement.classList.add('dark')`)
+- **Primary accent**: Blue gradient (`#63b3ed` / `#3b82f6` / `#8b5cf6`)
+- **Background**: Deep navy (`#020617` / `#0f172a`)
+- **Text**: Light slate (`#e2e8f0` primary, `#94a3b8` secondary)
+- **Fonts**: Inter (body), JetBrains Mono (code/accents), Orbitron (special headings)
+- **Feel**: Futuristic, clean, editorial
+
+### Styling
+- **Tailwind CSS** for layout and utilities
+- **Component `<style>` blocks** for animations and component-specific styles
+- **Dark mode is always on** — enforced in root layout, class-based (`darkMode: 'class'` in Tailwind config)
+- CSS custom properties defined in `src/lib/styles/theme.css`
+- Responsive breakpoints: 768px (tablet), 480px (mobile), 350px (extra small)
+- Use `:global()` selector for overriding child component styles
+
+### State Management
+- **Svelte stores** in `src/lib/stores/` — no external state management library
+- `darkMode.js` — readable store, always returns `true`
+- `tacticLibrary.js` — tactics/strategies data
+- `downloadStats.js` — download tracking
+- `bookPage.js` — book reading progress
+- `userStore.js` — user state
+- `researchLinksStore.js` — research links
+
+### Data Fetching
+- Server-side: `+page.server.js` load functions (preferred)
+- Client-side: `onMount` fetch calls when needed
+- API responses use Cloudflare Cache API headers where applicable
+
+### Navigation
+- Use `gotoAndScrollTop()` from `$lib/utils/navigation` instead of raw `goto()`
+- Server hooks redirect malformed URLs (e.g., `[object Object]` in path) to home
+
+### Image Handling
+- `vite-imagetools` converts images to WebP at quality 80 during build
+- `ResponsiveImage.svelte` and `SafeResponsiveImage.svelte` for optimized rendering
+- `prebuild` script copies blog post assets and runs `image_build_hook.js`
 - Book cover image: `/images/Surviving-the-Singularity-Cover.png` (+ `.webp` variant)
+
+## Environment Variables
+
+Required in `.env` (see `.env.example`):
+
+```
+SUPABASE_URL=             # Server-side Supabase URL
+SUPABASE_SERVICE_KEY=     # Server-side Supabase service key
+PUBLIC_SUPABASE_URL=      # Client-side Supabase URL
+PUBLIC_SUPABASE_ANON_KEY= # Client-side Supabase anon key
+STRIPE_SECRET_KEY=        # Stripe secret key
+STRIPE_PRICE_ID=          # Stripe price ID
+PUBLIC_BASE_URL=          # Base URL (http://localhost:5173 for dev)
+```
+
+Server-side env vars: `$env/static/private`
+Client-side env vars: `$env/static/public` (must be prefixed with `PUBLIC_`)
+
+## Security Rules
+
+- Never expose API keys or secrets in client-side code
+- Sensitive values go in `.env` (gitignored)
+- All data mutations must go through server endpoints
+- Validate user input on both client and server
+- `scripts/` and `supabase/` directories are gitignored for security
+- See `docs/contributing/SUPABASE_SECURITY.md` for database security guidelines
+
+## Configuration Files
+
+| File | Purpose |
+|------|---------|
+| `svelte.config.js` | SvelteKit config: adapter-auto, mdsvex preprocessing, `.md`/`.svx` extensions |
+| `vite.config.js` | Vite config: imagetools plugin, sourcemaps, markdown asset handling |
+| `tailwind.config.js` | Tailwind: Flowbite plugin, typography plugin, custom colors, dark mode class |
+| `postcss.config.js` | PostCSS: Tailwind + Autoprefixer |
+| `jsconfig.json` | JavaScript project config (path aliases via `$lib`) |
+| `.npmrc` | `engine-strict=true` |
+
+## SvelteKit-Specific Notes
+
+- **Adapter**: `adapter-auto` — auto-detects deployment platform (Vercel, Netlify, Cloudflare, etc.)
+- **File extensions**: `.svelte`, `.md`, `.svx` are all valid page/component extensions
+- **Prerender errors**: 404s on `/newsletter` and `/blog` paths are ignored during build; other HTTP errors fail the build
+- **Missing IDs**: `handleMissingId: 'ignore'` in prerender config
+- **Path alias**: `$lib` maps to `src/lib/`
+
+## Testing & Linting
+
+- **No test framework** is configured (no Jest, Vitest, Cypress, etc.)
+- **No ESLint or Prettier** config — code quality relies on `svelte-check`
+- Run `npm run check` to validate Svelte component types and catch errors
+- **No CI/CD pipelines** — no `.github/workflows/` present
+
+## Content Direction (2026)
+
+The site is pivoting from abstract AI education to a practical builder-focused resource. Key themes:
+
+- **Material Independence**: Owning land, shelter, food production, and energy systems outside extractive corporate frameworks
+- **Local AI Sovereignty**: Running LLMs locally (Ollama, Llama 4, RTX 5090) instead of depending on cloud APIs
+- **Open-Source Robotics**: FarmBot for food production, Mobile ALOHA for workshop automation
+- **The Shouse Lifestyle**: Shop-houses on rural land as the primary path to ownership for builders
+- **Digital Cash Engine**: YouTube content creation + direct-to-consumer products (Lemon Squeezy) as income
+- **Generational Wealth Analysis**: Purchasing power erosion, housing affordability crisis, intergenerational wealth transfer
+
+All new content should be practical, data-driven, and actionable. Avoid abstract speculation about AGI timelines or transhumanist futures. Frame AI as a sovereign tool for individual builders, not as a partner or savior.
+
+## Things to Avoid
+
+- Do not re-add removed community features (newsletter signup, Discord integration, Treasure Tavern)
+- Do not commit `.env` files, SQL files, or anything in `scripts/`, `cursor/`, `supabase/`
+- Do not change dark mode to be toggleable — it is intentionally always on
+- Do not add TypeScript — the project uses plain JavaScript with JSConfig
+- Do not use `goto()` directly — use `gotoAndScrollTop()` from `$lib/utils/navigation`
+- Do not write content that frames AI as abstract/speculative — keep it practical and builder-focused
+- Do not reference Skool, Discord, or other removed community platforms

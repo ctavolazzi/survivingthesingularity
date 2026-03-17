@@ -53,7 +53,7 @@
   {#if visible}
     <h2 class="title">
       <span class="path">
-        {#each 'The Path to the'.split('') as char, i}
+        {#each 'Your Path to'.split('') as char, i}
           <span
             class="char"
             style="transition-delay: {i * 50}ms; opacity: 1; transform: translateY(0);"
@@ -63,7 +63,7 @@
         {/each}
       </span>
       <span class="singularity">
-        {#each 'Singularity'.split('') as char, i}
+        {#each 'Independence'.split('') as char, i}
           <span
             class="char singularity-char"
             style="
@@ -90,7 +90,7 @@
         class="start-here-button"
         on:click|preventDefault={handleStartHereClick}
       >
-        Start Here
+        Start Building
       </a>
     </div>
   {/if}

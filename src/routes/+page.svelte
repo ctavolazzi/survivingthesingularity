@@ -24,12 +24,23 @@
 		posts = await loadBlogPosts();
 
 		newsTickerItems = posts.map(post => {
-			let tag = 'Blog';
-			if (post.slug === 'singularity-express') tag = 'Opinion';
-			else if (post.slug === 'farm-bot-deep-dive') tag = 'Tech';
-			else if (post.slug === 'darpa-biomechanical-space-structures') tag = 'News';
-			else if (post.slug === 'claude-projects-weekend-project') tag = 'AI Update';
-			else if (post.slug === 'robot-farm-bot') tag = 'Review';
+			let tag = 'Builder';
+
+			if (post.slug === 'singularity-express') {
+				tag = 'Analysis';
+			} else if (post.slug === 'farm-bot-deep-dive') {
+				tag = 'Robotics';
+			} else if (post.slug === 'darpa-biomechanical-space-structures') {
+				tag = 'Research';
+			} else if (post.slug === 'claude-projects-weekend-project') {
+				tag = 'Local AI';
+			} else if (post.slug === 'robot-farm-bot') {
+				tag = 'Food Security';
+			} else if (post.title.toLowerCase().includes('independence')) {
+				tag = 'Blueprint';
+			} else if (post.title.toLowerCase().includes('farm') || post.title.toLowerCase().includes('robot')) {
+				tag = 'Tech';
+			}
 
 			return {
 				date: new Date(post.date).toISOString().split('T')[0],
@@ -62,13 +73,13 @@
 
 		{#if heroVisible}
 			<div class="hero-content" in:fade={{ duration: 800 }}>
-				<p class="hero-eyebrow">The book on AI the world needs right now</p>
+				<p class="hero-eyebrow">Material independence through technology</p>
 				<h1 class="hero-title">
 					<span class="hero-title-line">Surviving</span>
 					<span class="hero-title-line hero-title-accent">the Singularity</span>
 				</h1>
 				<p class="hero-subtitle">
-					The AI revolution isn't coming — it's here. This is your guide to understanding it, preparing for it, and thriving through it.
+					The AI revolution isn't coming — it's here. Build your independence with local AI, open-source robotics, and sovereign tools before the window closes.
 				</p>
 				<div class="hero-actions">
 					<a href="/sample" class="hero-btn hero-btn-primary">
@@ -78,7 +89,7 @@
 						</svg>
 					</a>
 					<a href="/start-here" class="hero-btn hero-btn-secondary">
-						Start Here
+						Start Building
 					</a>
 				</div>
 			</div>
@@ -97,7 +108,7 @@
 	<!-- ═══════════════════════════════════════════════════ -->
 	<section class="section-container section-narrow">
 		<NewsTicker
-			title="Latest Updates"
+			title="Builder Updates & Resources"
 			scrollSpeed={2500}
 			items={newsTickerItems}
 			backgroundColor="rgba(15, 23, 42, 0.5)"
@@ -107,30 +118,30 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════════ -->
-	<!-- WHAT'S COMING — Teaser Section                      -->
+	<!-- WHAT'S COMING — Builder Pillars                     -->
 	<!-- ═══════════════════════════════════════════════════ -->
 	<section class="whats-coming">
 		<div class="whats-coming-inner">
-			<h2 class="section-heading">Why This Book Matters Now</h2>
-			<p class="section-subheading">AI is reshaping everything. Here's what you'll find inside.</p>
+			<h2 class="section-heading">The Millennial Builder Framework</h2>
+			<p class="section-subheading">Practical tools for material independence in the age of AI.</p>
 			<div class="roadmap-grid">
 				<div class="roadmap-card">
 					<div class="roadmap-icon">01</div>
-					<h3>Understand the Shift</h3>
-					<p>Cut through the hype and fear. Get a clear-eyed look at what AI actually means for your life, career, and future.</p>
-					<span class="roadmap-status">12 Chapters</span>
+					<h3>Local AI Sovereignty</h3>
+					<p>Run your own LLMs locally. No cloud dependency, no subscription fees, no corporate filters on your research and synthesis.</p>
+					<span class="roadmap-status">RTX 5090 + Llama 4</span>
 				</div>
 				<div class="roadmap-card">
 					<div class="roadmap-icon">02</div>
-					<h3>Practical Strategies</h3>
-					<p>Not just theory — actionable frameworks for thriving when the world changes faster than you can refresh your feed.</p>
-					<span class="roadmap-status">Battle-Tested</span>
+					<h3>Open-Source Robotics</h3>
+					<p>Automate food production with FarmBot and workshop tasks with Mobile ALOHA. Secure your own calories and labor.</p>
+					<span class="roadmap-status">Build Now</span>
 				</div>
 				<div class="roadmap-card">
 					<div class="roadmap-icon">03</div>
-					<h3>Stay Human</h3>
-					<p>The singularity doesn't have to be scary. Learn how to keep what makes us human while embracing what makes us powerful.</p>
-					<span class="roadmap-status">Essential Reading</span>
+					<h3>The Physical Exit</h3>
+					<p>Rural land, a shouse workshop, and a digital cash engine. Crush overhead and buy back decades of your life.</p>
+					<span class="roadmap-status">Essential Strategy</span>
 				</div>
 			</div>
 		</div>
@@ -148,8 +159,8 @@
 	<!-- ═══════════════════════════════════════════════════ -->
 	<section class="section-container section-wide">
 		<FeaturedPosts
-			title="Editor's Picks"
-			subtitle="Essential reading for understanding the AI revolution"
+			title="Builder's Essentials"
+			subtitle="Practical knowledge for material independence and technological sovereignty"
 			maxPosts={2}
 			showImages={true}
 		/>
@@ -520,4 +531,3 @@
 		}
 	}
 </style>
-

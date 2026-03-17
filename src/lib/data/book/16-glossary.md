@@ -1,75 +1,128 @@
 # Glossary
 
-## A
+Because every AI revolution needs a cheat sheet, here's a quick refresher on the buzzwords you've been dodging throughout this book. Impress dinner party guests, or at least fake it till you make it.
 
-**Artificial Intelligence (AI)**: The simulation of human intelligence processes by machines, especially computer systems.
+---
 
-**Algorithm**: A set of rules or instructions given to an AI, neural network, or other machine to help it learn on its own.
+### A
 
-**Artificial General Intelligence (AGI)**: A hypothetical type of AI that would have the ability to understand, learn, and apply its intelligence to solve any problem, much like a human.
+**Artificial Intelligence (AI)**
+The simulation of human intelligence by machines, usually through computer systems. Think of it as software that tries to think like a person—but rarely asks for a coffee break.
 
-**Artificial Narrow Intelligence (ANI)**: AI that specializes in one area or task. Also known as Narrow AI or Weak AI.
+**Algorithm**
+A set of step-by-step instructions that an AI or other software uses to learn, solve problems, or just keep your fridge from ordering way too much milk.
 
-**Artificial Superintelligence (ASI)**: A form of AI that surpasses human intelligence and ability in virtually all domains.
+**Artificial General Intelligence (AGI)**
+The hypothetical holy grail of AI—a system with the ability to learn, understand, and apply intelligence to solve practically any problem, similar to a human (minus the emotional baggage).
 
-## B
+**Artificial Narrow Intelligence (ANI)**
+AI that's brilliant at one thing—like beating you at chess or recommending cat videos—but clueless about everything else. Also called Narrow AI or Weak AI.
 
-**Big Data**: Extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations.
+**Artificial Superintelligence (ASI)**
+A form of AI that surpasses human intelligence in virtually all domains. Picture a digital overlord that masters everything we ever learned—and a bunch of stuff we haven't.
 
-**Blockchain**: A decentralized, distributed ledger technology that records transactions across many computers.
+---
 
-## C
+### B
 
-**ChatGPT**: An AI language model developed by OpenAI, capable of generating human-like text based on the input it receives.
+**Big Data**
+Extremely large datasets that can be analyzed computationally to reveal patterns, trends, and associations. It's like a digital goldmine—if you have the right tools to dig.
 
-**Computer Vision**: A field of AI that trains computers to interpret and understand the visual world.
+**Blockchain**
+A decentralized, distributed ledger technology that records transactions across many computers. Trusty, transparent, and surprisingly hip—like the cool cousin of record-keeping.
 
-## D
+---
 
-**Deep Learning**: A subset of machine learning based on artificial neural networks with multiple layers.
+### C
 
-**Data Mining**: The process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.
+**ChatGPT**
+An AI language model developed by OpenAI, known for generating human-like text responses and occasionally spouting eerie existential monologues.
 
-## E
+**Computer Vision**
+A field of AI that trains computers to interpret and understand the visual world—analyzing images, detecting objects, and definitely judging your questionable selfie angles.
 
-**Expert System**: An AI system that emulates the decision-making ability of a human expert.
+---
 
-## F
+### D
 
-**Facial Recognition**: A technology capable of identifying or verifying a person from a digital image or video frame.
+**Deep Learning**
+A subset of machine learning based on multi-layered neural networks. It's like a brain-inspired onion—peel back each layer to get more sophisticated pattern recognition.
 
-## G
+**Data Mining**
+The process of discovering patterns in large data sets using machine learning, statistics, and database wizardry. Think of it as panning for digital gold.
 
-**GPT (Generative Pre-trained Transformer)**: A type of large language model using deep learning to produce human-like text.
+---
 
-## M
+### E
 
-**Machine Learning**: A subset of AI that provides systems the ability to automatically learn and improve from experience without being explicitly programmed.
+**Expert System**
+An AI that replicates the decision-making ability of a human expert in a specific domain—minus the caffeine cravings and conference calls.
 
-## N
+---
 
-**Natural Language Processing (NLP)**: The ability of a computer program to understand human language as it is spoken or written.
+### F
 
-**Neural Network**: A series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates.
+**Facial Recognition**
+Technology that identifies or verifies people from images or video frames. It's convenient for unlocking phones but unnerving when used to track your every move.
 
-## R
+---
 
-**Robotics**: The branch of technology that deals with the design, construction, operation, and use of robots.
+### G
 
-## S
+**GPT (Generative Pre-trained Transformer)**
+A type of large language model using deep learning to produce human-like text. It can draft emails, code websites, or even pen mildly concerning poetry at 3 a.m.
 
-**Singularity**: A hypothetical future point in time when artificial intelligence becomes so advanced that it triggers runaway technological growth, resulting in unfathomable changes to human civilization.
+---
 
-**Supervised Learning**: A type of machine learning where the algorithm is trained on a labeled dataset.
+### M
 
-## T
+**Machine Learning**
+A subset of AI that allows systems to learn from experience without explicit programming. It's how your spam filter evolves from "maybe spam?" to "definitely spam."
 
-**Turing Test**: A test of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.
+---
 
-## U
+### N
 
-**Unsupervised Learning**: A type of machine learning where the algorithm is trained on an unlabeled dataset and left to find patterns on its own.
+**Natural Language Processing (NLP)**
+The part of AI that deals with understanding and generating human language. It's why chatbots can almost keep up with your snark.
 
-## V
+**Neural Network**
+A series of interconnected algorithms inspired by the human brain's structure. They might not be actual brain cells, but they do a decent impression of learning.
 
-**Virtual Reality (VR)**: A simulated experience that can be similar to or completely different from the real world.
+---
+
+### R
+
+**Robotics**
+The branch of technology devoted to designing, building, and using robots. From assembly lines to Mars rovers, it's the metal muscle of AI's body.
+
+---
+
+### S
+
+**Singularity**
+A hypothetical future point where AI becomes so advanced it triggers runaway technological growth and changes civilization in ways we can't even fathom. Keep your tinfoil hats handy.
+
+**Supervised Learning**
+A machine learning method where you train the model on a labeled dataset. Think of it as giving AI the answers first, then letting it figure out the rules.
+
+---
+
+### T
+
+**Turing Test**
+A measure of a machine's ability to exhibit human-like intelligence. If you can't tell whether you're talking to a person or a bot, the AI's doing its job—at least superficially.
+
+---
+
+### U
+
+**Unsupervised Learning**
+Machine learning on unlabeled data, leaving the AI to find hidden patterns all on its own. It's like letting a toddler loose in a store to organize items by color—surprising, messy, and potentially brilliant.
+
+---
+
+### V
+
+**Virtual Reality (VR)**
+A computer-generated environment that simulates the real world—or conjures entirely new ones. Perfect for immersive gaming, training, or avoiding reality for just a little while longer.

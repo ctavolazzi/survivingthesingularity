@@ -53,3 +53,9 @@
 
 18. **Index**
     Because some of us still prefer old-school alphabetical order—makes it easier to find exactly where you left off in this swirling tech madness.
+
+19. **Comprehensive Glossary: AI Terms with Full Definitions**
+    The extended cut—every buzzword you'll ever need, complete with definitions detailed enough to survive any dinner party interrogation.
+
+20. **Back Cover**
+    Welcome to the Future. Hope You Brought Snacks.

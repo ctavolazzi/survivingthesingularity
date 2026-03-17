@@ -1,71 +1,123 @@
 # Index
 
-A
-- Artificial General Intelligence (AGI), 45, 112-115, 203
+### A
+- Adaptive Learning
+- AI Art
+- AI Chatbots
+- AI Companion
+- AI Ethics
+- AI Governance
+- AI Healthcare
+- AI in Daily Life
+- AI Revolution
+- AI Singularity
+- AI Tools
+- Alexa
+- Algorithmic Bias
+- Algorithmic Trading
+- Artificial General Intelligence (AGI)
 - Artificial Intelligence (AI)
-  - definition, 3-5
-  - history, 7-12
-  - types, 13-18
-- Artificial Narrow Intelligence (ANI), 14, 46-48
-- Artificial Superintelligence (ASI), 115-120, 205-210
-- Automation, 67-72, 158-162
+- Artificial Narrow Intelligence (ANI)
+- Artificial Superintelligence (ASI)
+- Automation
+- Autonomous Surgery
 
-B
-- Big Data, 23-28, 82-85
-- Bias in AI, 95-100, 173-178
+### B
+- Big Data
+- Blockchain
+- Bumble
 
-C
-- ChatGPT, 52-56, 188-190
-- Computer Vision, 33-38, 142-145
+### C
+- ChatGPT
+- Computer Vision
+- Creativity & AI
+- Cryptocurrency
 
-D
-- Deep Learning, 29-32, 86-90
-- Deepfakes, 146-150
+### D
+- DALL-E
+- da Vinci Surgical System
+- Data Mining
+- Data Privacy
+- Deep Learning
+- Deepfakes
+- Digital Influencers
+- Driverless Cars
 
-E
-- Ethics in AI, 91-94, 168-172, 215-220
-- Expert Systems, 15, 49-51
+### E
+- Empathy & AI
+- Ethics & Policy
+- Expert Systems
 
-F
-- Facial Recognition, 39-43, 151-155
+### F
+- Facial Recognition
+- Fintech
+- Frankenstein (Mary Shelley's)
+- Future of Work
 
-G
-- GPT (Generative Pre-trained Transformer), 57-60
+### G
+- Gig Economy
+- Golem (Jewish Folklore)
+- Google Assistant
+- Governance & AI
+- GPT (Generative Pre-trained Transformer)
 
-H
-- Healthcare and AI, 101-106, 179-183
+### H
+- Health Tracking
+- High-Frequency Trading (HFT)
+- Hinge
 
-I
-- Internet of Things (IoT), 73-77
+### J
+- Jordan, Michael I.
 
-J
-- Job Displacement, 163-167
+### K
+- Kurzweil, Ray
 
-L
-- Language Models, 61-66
+### M
+- Machine Learning
+- The Matrix
+- Midjourney
 
-M
-- Machine Learning, 19-22, 78-81
-- Military Applications of AI, 191-196
+### N
+- Natural Language Processing (NLP)
+- Neural Networks
 
-N
-- Natural Language Processing (NLP), 61-66, 184-187
-- Neural Networks, 29-32, 86-90
+### P
+- Predictive Policing
 
-P
-- Privacy Concerns, 156-157, 197-202
+### R
+- Replika (Chatbot)
+- Robo-Advisors
+- Robot Vacuum
+- Robotic Surgeons
+- Robotics
 
-R
-- Robotics, 107-111, 197-202
+### S
+- Self-Driving Cars
+- Singularity
+- Siri
+- Smart Fridge
+- Smart Homes
+- Stable Diffusion
+- Supervised Learning
+- Survival Strategies
+- Surviving the Singularity
 
-S
-- Singularity, 203-210
-- Smart Cities, 211-214
-- Superintelligence, 115-120, 205-210
+### T
+- Tegmark, Max
+- The Terminator
+- Tim Urban
+- Tinder
+- Turing Test
 
-T
-- Technological Unemployment, 163-167
-- Turing Test, 8-9, 44
+### U
+- Universal Basic Income (UBI)
+- Unsupervised Learning
 
-V
-- Virtual Reality (VR), 121-125
+### V
+- Virtual Assistants
+- Virtual Lovers
+- Virtual Reality (VR)
+
+### W
+- Wait But Why
+- Wealth Redistribution

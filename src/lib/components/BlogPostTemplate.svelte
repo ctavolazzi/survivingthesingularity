@@ -20,11 +20,9 @@
     audioTitle: ''
   };
 
-  // For debugging
-  console.log('BlogPostTemplate received image:', post.image);
 
   // Options to customize the template
-  export let options = {
+  const defaultOptions = {
     showBackButton: true,
     showProgressBar: false,
     showAds: true,
@@ -36,6 +34,8 @@
     borderOnFeaturedImage: false,
     showFaq: false
   };
+  export let options = {};
+  $: mergedOptions = { ...defaultOptions, ...options };
 
   // Default recommended videos - can be overridden by the page using this template
   export let recommendedVideos = [
@@ -81,7 +81,7 @@
       expandedFaqs[0] = true; // First one open by default
     }
 
-    if (options.showProgressBar && browser) {
+    if (mergedOptions.showProgressBar && browser) {
       const updateReadingProgress = () => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight - windowHeight;
@@ -108,7 +108,7 @@
   <meta name="twitter:image" content={post.image.includes('?') ? post.image : `${post.image}?format=png`} />
 </svelte:head>
 
-{#if options.showProgressBar}
+{#if mergedOptions.showProgressBar}
   <!-- Reading Progress Bar -->
   <div class="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 z-50">
     <div
@@ -121,7 +121,7 @@
 <div class="blog-post" in:fade|local={{ duration: 300, delay: 200 }}>
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
     <header class="mb-8">
-      {#if options.showBackButton}
+      {#if mergedOptions.showBackButton}
         <button
           class="back-button mb-4 flex items-center text-blue-600 dark:text-blue-400 hover:underline"
           on:click={handleBackToBlog}
@@ -188,7 +188,7 @@
     {/if}
 
     <!-- FAQ Section -->
-    {#if options.showFaq && faqItems.length > 0}
+    {#if mergedOptions.showFaq && faqItems.length > 0}
       <div class="faq-section mb-8">
         <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
 
@@ -227,7 +227,7 @@
     </div>
 
     <!-- Author bio or other info -->
-    {#if options.showAuthorBio}
+    {#if mergedOptions.showAuthorBio}
       <div class="author-bio mt-6 p-3 bg-gray-50 dark:bg-gray-800 rounded border-l-4 border-primary dark:border-primary-dark text-sm">
         <p class="italic">
           <em>{post.author} is the founder of AIECO, specializing in AI/ML and R&D. He is also the author of "Surviving the Singularity," a blog and book dedicated to navigating the future of artificial intelligence.</em>
@@ -237,9 +237,9 @@
   </article>
 
   <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 max-w-4xl mx-auto px-4">
-    {#if options.showShareBottom}
+    {#if mergedOptions.showShareBottom}
       <div class="flex justify-between items-center mb-8">
-        {#if options.showBackButton}
+        {#if mergedOptions.showBackButton}
           <button
             class="back-button flex items-center text-blue-600 dark:text-blue-400 hover:underline"
             on:click={handleBackToBlog}
@@ -271,9 +271,9 @@
     <!-- Discord removed -->
 
     <!-- Ads section -->
-    {#if options.showAds}
+    {#if mergedOptions.showAds}
       <div class="ads-wrapper mt-8">
-        {#if options.showMysteryBox}
+        {#if mergedOptions.showMysteryBox}
           <a href="https://treasuretavernhq.com/products/%F0%9F%91%89-mood-booster-mystery-box-classic-monthly-surprises-indie-finds" class="mystery-box-link" aria-label="Subscribe to Mood Booster Mystery Box">
             <MysteryBoxAd
               title="Mood Booster Mystery Box"
@@ -289,7 +289,7 @@
           </a>
         {/if}
 
-        {#if options.showTreasureTavern}
+        {#if mergedOptions.showTreasureTavern}
           <div class="mt-8">
             <TreasureTavernAd
               title="Discover Treasure Tavern"

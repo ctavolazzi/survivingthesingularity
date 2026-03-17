@@ -1,8 +1,8 @@
 {
   "title": "Surviving the Singularity",
   "author": "Christopher Tavolazzi",
-  "version": "0.1.0",
-  "lastUpdated": "2023-09-02",
+  "version": "0.2.0",
+  "lastUpdated": "2026-02-16",
   "sections": [
     {
       "id": "acknowledgements",
@@ -93,6 +93,16 @@
       "id": "index",
       "title": "Index",
       "file": "18-index.md"
+    },
+    {
+      "id": "glossary-detailed",
+      "title": "Comprehensive Glossary: AI Terms with Full Definitions",
+      "file": "19-glossary-with-definitions.md"
+    },
+    {
+      "id": "back-cover",
+      "title": "Back Cover",
+      "file": "20-back-cover.md"
     }
   ]
 }

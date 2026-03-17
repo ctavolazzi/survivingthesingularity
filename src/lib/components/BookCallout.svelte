@@ -4,12 +4,12 @@
   import SafeResponsiveImage from './SafeResponsiveImage.svelte';
 
   // Props
-  export let title = "Navigate the Path to Singularity";
+  export let title = "The Book That Prepares You for What's Next";
   export const imageSrc = bookCoverImage; // Use the imported image
   export const imageWebPSrc = bookCoverImageWebP; // WebP version
-  export let subtitle = "Want to know more?";
-  export let description = "Get the insights and strategies you need to prepare for the technological changes that will reshape our world.";
-  export let buttonText = "Explore the Book";
+  export let subtitle = "Read it. Share it. Survive it.";
+  export let description = "AI is rewriting the rules of work, creativity, relationships, and what it means to be human. This book gives you the map.";
+  export let buttonText = "Read the Free Sample";
   export let buttonLink = "/sample"; // Default to sample page
   export let shareLink = "https://survivingthesingularity.com"; // Default share link
   export let showShareButton = true; // Whether to show the share button
@@ -55,15 +55,15 @@
       <div class="grid grid-cols-1 gap-3 mb-6 max-w-2xl mx-auto text-left">
         <div class="flex items-center">
           <svg class="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-          <span class="text-gray-300">Learn to navigate rapid technological changes</span>
+          <span class="text-gray-300">12 chapters covering AI's impact on every part of life</span>
         </div>
         <div class="flex items-center">
           <svg class="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-          <span class="text-gray-300">Understand AI's impact on your career & future</span>
+          <span class="text-gray-300">Written for humans, not technologists — no jargon required</span>
         </div>
         <div class="flex items-center">
           <svg class="w-4 h-4 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-          <span class="text-gray-300">Actionable strategies to thrive in the new era</span>
+          <span class="text-gray-300">Practical strategies you can use today, not someday</span>
         </div>
       </div>
     </div>

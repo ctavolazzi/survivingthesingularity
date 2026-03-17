@@ -62,23 +62,23 @@
 
 		{#if heroVisible}
 			<div class="hero-content" in:fade={{ duration: 800 }}>
-				<p class="hero-eyebrow">Est. 2024 &mdash; Rethinking what comes next</p>
+				<p class="hero-eyebrow">The book on AI the world needs right now</p>
 				<h1 class="hero-title">
 					<span class="hero-title-line">Surviving</span>
 					<span class="hero-title-line hero-title-accent">the Singularity</span>
 				</h1>
 				<p class="hero-subtitle">
-					A guide to understanding, preparing for, and thriving through the most transformative period in human history.
+					The AI revolution isn't coming — it's here. This is your guide to understanding it, preparing for it, and thriving through it.
 				</p>
 				<div class="hero-actions">
-					<a href="/start-here" class="hero-btn hero-btn-primary">
-						Start Here
+					<a href="/sample" class="hero-btn hero-btn-primary">
+						Read the Free Sample
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</a>
-					<a href="/blog" class="hero-btn hero-btn-secondary">
-						Read the Blog
+					<a href="/start-here" class="hero-btn hero-btn-secondary">
+						Start Here
 					</a>
 				</div>
 			</div>
@@ -111,26 +111,26 @@
 	<!-- ═══════════════════════════════════════════════════ -->
 	<section class="whats-coming">
 		<div class="whats-coming-inner">
-			<h2 class="section-heading">What We're Building</h2>
-			<p class="section-subheading">This site is evolving. Here's what's on the horizon.</p>
+			<h2 class="section-heading">Why This Book Matters Now</h2>
+			<p class="section-subheading">AI is reshaping everything. Here's what you'll find inside.</p>
 			<div class="roadmap-grid">
 				<div class="roadmap-card">
 					<div class="roadmap-icon">01</div>
-					<h3>Deep Dives</h3>
-					<p>Long-form explorations of AI breakthroughs, from synthetic biology to neural interfaces.</p>
-					<span class="roadmap-status">In Progress</span>
+					<h3>Understand the Shift</h3>
+					<p>Cut through the hype and fear. Get a clear-eyed look at what AI actually means for your life, career, and future.</p>
+					<span class="roadmap-status">12 Chapters</span>
 				</div>
 				<div class="roadmap-card">
 					<div class="roadmap-icon">02</div>
-					<h3>The Workbook</h3>
-					<p>Practical frameworks and exercises for navigating technological disruption in your life and career.</p>
-					<span class="roadmap-status">Coming Soon</span>
+					<h3>Practical Strategies</h3>
+					<p>Not just theory — actionable frameworks for thriving when the world changes faster than you can refresh your feed.</p>
+					<span class="roadmap-status">Battle-Tested</span>
 				</div>
 				<div class="roadmap-card">
 					<div class="roadmap-icon">03</div>
-					<h3>Community</h3>
-					<p>A space for thinkers, builders, and the curious to connect and share survival strategies.</p>
-					<span class="roadmap-status">Planned</span>
+					<h3>Stay Human</h3>
+					<p>The singularity doesn't have to be scary. Learn how to keep what makes us human while embracing what makes us powerful.</p>
+					<span class="roadmap-status">Essential Reading</span>
 				</div>
 			</div>
 		</div>

@@ -57,8 +57,9 @@
   $: currentPath = $page.url.pathname;
 
   const navLinks = [
-    { href: '/about', label: 'About' },
+    { href: '/sample', label: 'The Book' },
     { href: '/blog', label: 'Blog' },
+    { href: '/about', label: 'About' },
     { href: '/start-here', label: 'Start Here' },
   ];
 </script>
@@ -123,18 +124,6 @@
           </svg>
         </a>
       {/each}
-      <a
-        href="/sample"
-        class="mobile-link"
-        class:active={currentPath === '/sample'}
-        on:click={(e) => navigateTo('/sample', e)}
-        style="animation-delay: {navLinks.length * 50}ms"
-      >
-        <span class="mobile-link-text">Book Sample</span>
-        <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
     </div>
   </div>
 {/if}

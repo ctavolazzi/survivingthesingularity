@@ -34,12 +34,12 @@
 </script>
 
 <div class="app">
-  <!-- Under Construction Banner -->
+  <!-- Book Revival Banner -->
   <div class="construction-banner">
     <div class="banner-content">
       <span class="banner-pulse"></span>
       <span class="banner-text">
-        We're rebuilding for the future. New content, new look — more coming soon.
+        The book is back. <a href="/sample" class="banner-link">Read the free sample</a> and prepare for what's next.
       </span>
       <span class="banner-pulse"></span>
     </div>
@@ -120,6 +120,18 @@
     color: #94a3b8;
     letter-spacing: 0.03em;
     font-weight: 400;
+  }
+
+  .banner-text :global(.banner-link) {
+    color: #63b3ed;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .banner-text :global(.banner-link:hover) {
+    color: #93c5fd;
   }
 
   .app {

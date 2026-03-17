@@ -53,9 +53,8 @@ src/
 │   └── styles/          # Global styles
 static/
 ├── images/              # Static assets, book cover, blog images
-work_efforts/            # Johnny Decimal project management system (see below)
-docs/contributing/       # CONTRIBUTING.md, STYLE_GUIDE.md, SECURITY.md
-.AI-Setup/               # AI session context docs (autoseeded to Claude)
+work_efforts/            # Johnny Decimal project management system
+docs/contributing/       # CONTRIBUTING.md, STYLE_GUIDE.md
 ```
 
 ## Book Content
@@ -120,47 +119,6 @@ Blog posts live in `src/lib/data/blog-posts/<slug>/`:
 
 Use `npm run create-blog` to scaffold new posts.
 
-## Work Efforts (Johnny Decimal System)
-
-Tasks and project history live in `work_efforts/` using a Johnny Decimal numbering scheme:
-
-| Folder | Domain |
-|--------|--------|
-| `00_project_management/` | Roadmaps, indices, meta |
-| `10_development/` | Features, bug fixes, refactors |
-| `12_image_optimization_enhancements/` | Image pipeline work |
-| `20_content/` | Blog posts, book content, copy |
-| `30_design_ui/` | Visual design, UI changes |
-| `40_infrastructure/` | Hosting, CI, env config |
-| `50_maintenance/` | Deps, security, cleanup |
-| `60_testing/` | QA, test suites |
-| `70_documentation/` | Docs, guides, changelogs |
-| `80_deployment/` | Release, deploy tasks |
-| `90_archive/` | Completed / abandoned work |
-
-Each work effort is a markdown file named `<id>_<slug>.md` with frontmatter: `title`, `status`, `priority`, `assignee`, `created`, `last_updated`, `due_date`, `tags`.
-
-Active project log: `work_efforts/devlog.md`
-
-## AI Session Docs (Autoseed)
-
-The `.AI-Setup/` directory contains context documents that are automatically available to AI assistants:
-
-- `INSTRUCTIONS.md` — Quick reference and command overview
-- `AI-setup-instructions.md` — How the ai-setup tooling works
-- `AI-work-effort-system.md` — Work effort format and conventions
-- `AI-setup-validation-instructions.md` — Validation checklist
-
-These docs supplement `CLAUDE.md`. `CLAUDE.md` is the authoritative project context; `.AI-Setup/` docs cover tooling conventions.
-
-## Contributing & Style
-
-See `docs/contributing/` for:
-- `CONTRIBUTING.md` — PR workflow, branching, commit style
-- `STYLE_GUIDE.md` — Component structure, naming, CSS conventions
-- `SECURITY.md` — Security policy
-- `SUPABASE_SECURITY.md` — Database/auth security rules
-
 ## Important Notes
 
 - The site uses Svelte 4 reactive syntax (`$:`, `export let`, etc.) — not Svelte 5 runes
@@ -168,4 +126,3 @@ See `docs/contributing/` for:
 - Image optimization runs at build time; use `/images/` path for static assets
 - The construction banner in `+layout.svelte` should reflect current project phase
 - Book cover image: `/images/Surviving-the-Singularity-Cover.png` (+ `.webp` variant)
-- Supabase and Stripe integrations are currently **disabled** (both return stubs); env vars are defined but not active

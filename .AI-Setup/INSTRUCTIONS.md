@@ -1,25 +1,33 @@
 # AI-Setup Instructions
 
-This directory contains setup files for AI-assisted development.
+This directory contains context documents that are automatically available to AI assistants (autoseeded) at the start of each session.
 
-## Usage
+## Document Map
 
-This setup enables your AI assistants to better understand your project structure
-and provide more contextual help and recommendations.
+| File | Purpose |
+|------|---------|
+| `INSTRUCTIONS.md` | This file — quick orientation |
+| `AI-work-effort-system.md` | Work effort format and Johnny Decimal folder structure |
+| `AI-setup-instructions.md` | `ai-setup` pip tooling reference (optional, not required) |
+| `AI-setup-validation-instructions.md` | Validation checklist for AI setup |
 
-### Commands
+## Authoritative Project Context
 
-The AI-Setup package provides two main commands:
+The root `CLAUDE.md` is the **primary** project context file. Read it first. The files in this directory supplement it with tooling and convention details.
 
-1. `ai-setup` - Main command for setting up AI assistance and basic work efforts
-   - `ai-setup help` - Show help information
-   - `ai-setup setup` - Set up AI assistance in the current directory
-   - `ai-setup work_effort` - Create a new work effort
-   - `ai-setup list` - List all work efforts
+## Work Efforts
 
-2. `ai-work-effort` - Enhanced work effort creator with AI content generation capabilities
-   - `ai-work-effort -i` - Create a work effort interactively
-   - `ai-work-effort --use-ai --description "Your description"` - Use AI to generate content
-   - `ai-work-effort --help` - Show help information
+This project uses a **Johnny Decimal** system in `work_efforts/` — not generic `active/completed/archived` folders. See `AI-work-effort-system.md` for the full structure and file format.
 
-No action is required from you - the AI tools will automatically utilize these files.
+## Optional Tooling (`ai-setup` pip package)
+
+If the `ai-setup` package is installed (`pip3 install ai-setup`), these commands are available:
+
+```bash
+ai-setup work_effort --title "Feature Name" --priority high
+ai-work-effort -i                          # interactive mode
+ai-work-effort --use-ai --description "…"  # AI-generated content (requires Ollama)
+ai-setup list                              # list work efforts
+```
+
+The tooling is optional. Work efforts can be created manually as markdown files.

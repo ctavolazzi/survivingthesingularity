@@ -1,11 +1,34 @@
 # AI Work Effort System
 
 This file describes the work effort system used in this project.
-It helps AI assistants understand how to manage and track work efforts.
 
-## Work Effort Structure
+## Directory Structure (Johnny Decimal)
 
-Each work effort is a markdown file that contains structured information about a task, feature, bug fix, or any other unit of work. The file follows this format:
+Work efforts live in `work_efforts/` using a **Johnny Decimal** numbering scheme:
+
+```
+work_efforts/
+├── devlog.md                           # Running project log
+├── 00_project_management/              # Roadmaps, indices, meta
+├── 10_development/                     # Features, bug fixes, refactors
+├── 12_image_optimization_enhancements/ # Image pipeline work
+├── 20_content/                         # Blog posts, book content, copy
+├── 30_design_ui/                       # Visual design, UI changes
+├── 40_infrastructure/                  # Hosting, CI, env config
+├── 50_maintenance/                     # Deps, security, cleanup
+├── 60_testing/                         # QA, test suites
+├── 70_documentation/                   # Docs, guides, changelogs
+├── 80_deployment/                      # Release, deploy tasks
+└── 90_archive/                         # Completed / abandoned work
+```
+
+Files are named `<decimal-id>_<slug>.md` — e.g., `10_development/10.03_blog-refactor.md`.
+
+> **Note:** This project does NOT use `active/`, `completed/`, or `archived/` subdirectories. Use the Johnny Decimal folders above.
+
+## Work Effort Format
+
+Each work effort is a markdown file with structured frontmatter and sections:
 
 ```markdown
 ---
@@ -66,7 +89,6 @@ ai-setup list
 
 ## Work Effort Locations
 
-Work efforts are organized into directories:
-- `work_efforts/active/` - Current, in-progress work
-- `work_efforts/completed/` - Successfully finished work
-- `work_efforts/archived/` - Deprecated or abandoned work
+Work efforts are organized by domain using Johnny Decimal folders (see Directory Structure above). When a task is complete, move or note it in `work_efforts/90_archive/` or update its `status` field to `completed`.
+
+Update `work_efforts/devlog.md` when closing significant work efforts.

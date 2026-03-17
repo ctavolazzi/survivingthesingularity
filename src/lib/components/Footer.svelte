@@ -1,60 +1,165 @@
-<script>
-  function handleBackBook() {
-    window.location.href = 'https://www.kickstarter.com/projects/ctavolazzi/surviving-the-singularity-workbook';
-  }
-</script>
-
-<!-- Footer Component -->
-<footer class="bg-gray-900 text-white py-6 mt-8">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row justify-center items-start text-left space-y-4 md:space-y-0 md:space-x-8">
-      <div class="w-full md:w-auto text-center md:text-left">
-        <h5 class="font-bold text-lg mb-2">Quick Links</h5>
-        <ul class="list-none">
-          <li class="mb-1"><a href="/" class="text-gray-400 hover:text-gray-200">Home</a></li>
-          <li class="mb-1"><a href="/about" class="text-gray-400 hover:text-gray-200">About Us</a></li>
-
-
-        </ul>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo-link">
+          <img src="/android-chrome-192x192.png" class="footer-logo" alt="Logo" loading="lazy">
+          <span class="footer-brand-name">Surviving the Singularity</span>
+        </a>
+        <p class="footer-tagline">Understanding what's coming. Preparing for what's next.</p>
       </div>
-      <div class="w-full md:w-auto text-center md:text-left">
-        <h5 class="font-bold text-lg mb-2">Policies</h5>
-        <ul class="list-none">
-          <li class="mb-1"><a href="/policies" class="text-gray-400 hover:text-gray-200">All Policies</a></li>
-          <li class="mb-1"><a href="/policies#disclaimers" class="text-gray-400 hover:text-gray-200">Disclaimers</a></li>
-        </ul>
+
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <a href="/" class="footer-link">Home</a>
+          <a href="/about" class="footer-link">About</a>
+          <a href="/blog" class="footer-link">Blog</a>
+          <a href="/start-here" class="footer-link">Start Here</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Resources</h4>
+          <a href="/sample" class="footer-link">Book Sample</a>
+          <a href="/policies" class="footer-link">Policies</a>
+          <a href="/policies#disclaimers" class="footer-link">Disclaimers</a>
+        </div>
       </div>
     </div>
-    <!-- <div class="text-center mt-4">
-      <button class="buy-button w-full md:w-auto px-6 py-2" on:click={handleBackBook}>Back the Book on Kickstarter</button>
-    </div> -->
 
-    <div class="disclaimer-section mt-6 pt-4 border-t border-gray-800 text-center">
-      <p class="text-gray-500 text-sm">
-        <strong>Disclaimer:</strong> The content on this site represents educated guesses and personal opinions. Nothing is certain about the future.
-        Always do your own research and consult appropriate professionals before making decisions.
-        This is commentary and opinion only and should not be taken as financial, legal, or professional advice.
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <p class="footer-disclaimer">
+        The content on this site represents educated guesses and personal opinions. Nothing is certain about the future.
+        This is commentary only — not financial, legal, or professional advice.
       </p>
-      <p class="text-gray-500 text-xs mt-2">
-        <a href="/policies#disclaimers" class="text-gray-400 hover:text-gray-200">Read our full disclaimers</a>
+      <p class="footer-copyright">
+        &copy; {new Date().getFullYear()} Surviving the Singularity. Built with curiosity.
       </p>
     </div>
   </div>
 </footer>
 
 <style>
-  /* Removed unused buy-button selectors */
-
-  footer ul {
-    padding: 0;
+  .site-footer {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, #020617 100%);
+    padding: 4rem 1.5rem 2rem;
+    margin-top: 4rem;
   }
 
-  footer ul li {
-    list-style: none;
-  }
-
-  .disclaimer-section {
-    max-width: 800px;
+  .footer-inner {
+    max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    max-width: 300px;
+  }
+
+  .footer-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+  }
+
+  .footer-brand-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .footer-links-group {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-col-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #475569;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .footer-link {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+    padding: 0.15rem 0;
+  }
+
+  .footer-link:hover {
+    color: #e2e8f0;
+  }
+
+  .footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.1), transparent);
+    margin: 2.5rem 0;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-disclaimer {
+    font-size: 0.75rem;
+    color: #475569;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.7rem;
+    color: #334155;
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .footer-top {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .footer-brand {
+      max-width: 100%;
+    }
+
+    .footer-links-group {
+      width: 100%;
+      gap: 2rem;
+    }
   }
 </style>

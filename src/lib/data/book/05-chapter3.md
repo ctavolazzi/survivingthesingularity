@@ -1,8 +1,8 @@
 # Chapter 3: Your AI BFF (Best Fridge Forever)
 
-Remember when the pinnacle of home technology was a calculator watch that could play a tinny rendition of "Happy Birthday"? Ah, simpler times, when the most intelligent thing in your house was the family dog who could fetch the newspaper (remember those?). Well, strap in, fellow humans, because we're about to dive headfirst into a world where your refrigerator has an Ivy League education, your toaster is crafting five-course meals, and your vacuum cleaner might just be plotting world domination—one dust bunny at a time.
+Remember when the pinnacle of home technology was a calculator watch that could play a tinny rendition of "Happy Birthday"? Ah, simpler times, when the most intelligent thing in your house was the family dog who could fetch the newspaper (remember those?). Well, strap in, fellow humans, because we're about to dive headfirst into a world where your refrigerator has an Ivy League education, your toaster is crafting five-course meals, and your vacuum cleaner might just be plotting world domination, one dust bunny at a time.
 
-Welcome to the brave new world of personal AI, where your home isn't just smart—it's smarter than you on a good day, and definitely smarter than you after that third glass of wine. (No judgment here; we've all been there.)
+Welcome to the brave new world of personal AI, where your home isn't just smart, it's smarter than you on a good day, and definitely smarter than you after that third glass of wine. (No judgment here; we've all been there.)
 
 ## Home, Sweet Sentient Home
 
@@ -26,7 +26,7 @@ Let's take a guided tour of the modern AI-enhanced home, shall we? Don't worry, 
 
 ### The Rise of Humanoid Helpers
 
-But wait, there's more! The latest additions to your AI family are humanoid robots like Tesla's Optimus and Figure 02. These aren't your grandma's clunky robot toys—they're sophisticated machines designed to revolutionize home assistance.
+But wait, there's more! The latest additions to your AI family are humanoid robots like Tesla's Optimus and Figure 02. These aren't your grandma's clunky robot toys, they're sophisticated machines designed to revolutionize home assistance.
 
 - **Tesla Optimus**: Unveiled by Elon Musk, this 5'8", 125 lb robot is designed to handle dangerous, repetitive, or boring tasks[^7]. It's like having a tireless teenager who actually wants to do chores. (Parents, feel free to dream.)
 
@@ -38,13 +38,13 @@ These robots aren't just cool gadgets; they're potential game-changers for indiv
 
 Now, I know what you're thinking: "Are these robots going to steal our jobs and eventually overthrow humanity?" Well, maybe not in those exact words, but the concern is valid.
 
-While robots can handle mundane or physically demanding tasks, people will always crave human interaction for certain services—especially those involving empathy, creativity, and complex decision-making. Think healthcare, therapy, and yes, even barista artistry (because let's face it, a robot just can't replicate that judgmental look when you order a quad-shot, sugar-free, non-fat, extra-hot latte with caramel drizzle).
+While robots can handle mundane or physically demanding tasks, people will always crave human interaction for certain services, especially those involving empathy, creativity, and complex decision-making. Think healthcare, therapy, and yes, even barista artistry (because let's face it, a robot just can't replicate that judgmental look when you order a quad-shot, sugar-free, non-fat, extra-hot latte with caramel drizzle).
 
 But here's the exciting part: robots could bridge gaps where human help is unavailable or insufficient. In regions facing caregiver shortages, robots could provide essential support to the elderly or disabled. Plus, robots don't need lunch breaks, don't call in sick, and definitely won't judge your questionable life choices (looking at you, person who puts pineapple on pizza).
 
 ## Alexa, Are You My New BFF?
 
-Virtual assistants like Alexa, Siri, and Google Assistant are becoming our new best friends—minus the drama and the need to remember birthdays. They're always there for us, never tire of our questions (no matter how inane), and don't judge us for asking them to set a timer for a 3-minute power nap. At least, they don't judge us out loud. Yet.
+Virtual assistants like Alexa, Siri, and Google Assistant are becoming our new best friends, minus the drama and the need to remember birthdays. They're always there for us, never tire of our questions (no matter how inane), and don't judge us for asking them to set a timer for a 3-minute power nap. At least, they don't judge us out loud. Yet.
 
 ### The Complicated Relationship Status
 
@@ -125,7 +125,7 @@ It's using machine learning to:
 
 Remember when the pinnacle of home technology was a calculator watch that could play a tinny rendition of "Happy Birthday"? Strap in, fellow humans, because we're about to dive headfirst into a world where your refrigerator has an Ivy League education and your toaster is probably writing a dissertation on the perfect crisp-to-soft ratio in bread.
 
-Welcome to the brave new world of personal AI, where your home isn't just smart—it's smarter than you on a good day, and definitely smarter than you after that third glass of wine.
+Welcome to the brave new world of personal AI, where your home isn't just smart, it's smarter than you on a good day, and definitely smarter than you after that third glass of wine.
 
 ## Home, Sweet Sentient Home
 
@@ -194,27 +194,27 @@ The real question is: how much of your privacy are you willing to trade for conv
 
 1. List all the AI-powered devices or services you use in a typical day. Were you aware that all of these used AI? How does this realization make you feel? Excited? Terrified? Like you're living in a Philip K. Dick novel?
 
-   ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 2. Describe a time when an AI system (like a virtual assistant or recommendation algorithm) was incredibly helpful. Now describe a time when it was frustrating or intrusive. How do these experiences shape your view of AI in your personal life? Are you ready to welcome our new robot overlords, or are you stockpiling tin foil hats and learning to live off the grid?
 
-   ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 3. If you could design an AI system for your home, what would it do? What tasks would you want it to handle, and what areas of your life would you want to keep AI-free? Remember, "AI girlfriend" is not an appropriate answer. We're looking at you, Steve.
 
-   ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 4. Consider your relationship with your smartphone. In what ways does it enhance your life? In what ways might it be detracting from your life experiences? How do you strike a balance? Or are you too busy checking Instagram to answer this question? Be honest.
 
-   ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 5. Imagine explaining today's AI-powered personal devices to someone from 50 years ago. What do you think they would find most surprising or concerning? What does this tell you about how our relationship with technology has changed? Bonus points if you can explain TikTok without sounding like you've lost your marbles.
 
-   ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 6. Reflect on your personal data and privacy. What information are you comfortable sharing with AI systems, and where do you draw the line? Has this boundary changed over time? Or did you give up and just accept that the internet knows you better than you know yourself? There's no shame in admitting defeat to our digital overlords.
 
-   ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ## Dive Deeper (or, "How to Become Even More Paranoid About AI")
 

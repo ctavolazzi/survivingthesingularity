@@ -48,6 +48,6 @@ If successful, this bio-mechanical approach could transform how we build in spac
 
 This approach aligns with broader efforts to utilize in-situ resources and minimize the materials that need to be launched from Earth, which remains one of the most significant cost factors in space development.
 
-The concept of biological space structures may seem far-fetched today, but it's worth remembering that many technologies we now take for granted—including the internet and GPS—began as DARPA projects that seemed equally speculative at the time.
+The concept of biological space structures may seem far-fetched today, but it's worth remembering that many technologies we now take for granted-including the internet and GPS-began as DARPA projects that seemed equally speculative at the time.
 
 As we continue to expand our presence in space, innovative approaches like bio-mechanical structures may prove essential for creating the large-scale infrastructure needed for a sustainable human presence beyond Earth.

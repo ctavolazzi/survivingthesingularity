@@ -142,6 +142,22 @@
     },
     "variants": {}
   },
+  "static/author-headshot.png": {
+    "original": {
+      "width": 480,
+      "height": 480,
+      "path": "static/author-headshot.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/author_headshot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/author_headshot_400.png",
+        "webp": "static/images/optimized/author_headshot_400.webp"
+      }
+    }
+  },
   "static/android-chrome-192x192.png": {
     "original": {
       "width": 192,
@@ -152,6 +168,30 @@
       "original": "static/images/optimized/android_chrome_192x192_original.webp"
     },
     "variants": {}
+  },
+  "static/Surviving-the-Singularity-Cover.png": {
+    "original": {
+      "width": 1410,
+      "height": 2250,
+      "path": "static/Surviving-the-Singularity-Cover.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/surviving_the_singularity_cover_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_400.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_800.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
+        "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
+      }
+    }
   },
   "static/images/treasure-tavern-square.png": {
     "original": {

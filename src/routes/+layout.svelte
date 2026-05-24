@@ -7,12 +7,13 @@
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
   import { createRabbit } from '$lib/debug/white-rabbit.js';
-  import { browser } from '$app/environment';
+  import { browser, dev } from '$app/environment';
   import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
 
-  // Release the session rabbit — tracks the entire user session
+  // White-rabbit is a debug instrumentation system - only enabled in dev so we
+  // don't ship behavioral tracking or expose internals to production visitors.
   let sessionRabbit = null;
 
   export let data;
@@ -32,7 +33,7 @@
   afterNavigate(({ from, to }) => {
     navigating = false;
     if (browser && from && to && from.url.pathname !== to.url.pathname) {
-      if (sessionRabbit) {
+      if (dev && sessionRabbit) {
         sessionRabbit.watchNavigation(from.url.pathname, to.url.pathname);
       }
       setTimeout(() => {
@@ -43,9 +44,11 @@
 
   onMount(() => {
     if (browser) {
-      sessionRabbit = createRabbit('session', { userAgent: navigator.userAgent });
-      sessionRabbit.mark('app-mounted');
-      sessionRabbit.info('Session started', { path: window.location.pathname });
+      if (dev) {
+        sessionRabbit = createRabbit('session', { userAgent: navigator.userAgent });
+        sessionRabbit.mark('app-mounted');
+        sessionRabbit.info('Session started', { path: window.location.pathname });
+      }
       window.scrollTo(0, 0);
     }
   });
@@ -68,7 +71,9 @@
   <CookieConsent />
   <ToastContainer />
   <CommandPalette bind:open={commandPaletteOpen} />
-  <WhiteRabbitPanel />
+  {#if dev}
+    <WhiteRabbitPanel />
+  {/if}
 </div>
 
 <style>

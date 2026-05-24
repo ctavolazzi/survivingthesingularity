@@ -1,5 +1,5 @@
 /**
- * Supabase Client Factory — SSR-compatible
+ * Supabase Client Factory - SSR-compatible
  * Uses @supabase/ssr for proper cookie-based auth in SvelteKit
  */
 import { createBrowserClient, createServerClient, isBrowser } from '@supabase/ssr';

@@ -1,6 +1,16 @@
 <script>
   import { toasts } from '$lib/stores/toasts.js';
 
+  // Optional props for reusing this component in multiple contexts (e.g. /book preorder).
+  // Defaults preserve original behavior so existing usages don't break.
+  export let source = 'general';
+  export let cta = 'Join the Build';
+  export let loadingCta = 'Joining...';
+  export let placeholder = 'builder@example.com';
+  export let successMessage = "You're in! We'll keep you posted.";
+  export let alreadyMessage = "You're already signed up!";
+  export let note = 'No spam. Unsubscribe anytime. We respect your sovereignty.';
+
   let email = '';
   let loading = false;
 
@@ -12,26 +22,33 @@
 
     loading = true;
     try {
-      // Store in localStorage as fallback (works without Supabase)
-      const stored = JSON.parse(localStorage.getItem('sts-newsletter-signups') || '[]');
+      // Store in localStorage as fallback (works without Supabase). Key includes
+      // source so a user signed up to one CTA can still sign up to another.
+      const storageKey = source === 'general' ? 'sts-newsletter-signups' : `sts-newsletter-signups-${source}`;
+      const stored = JSON.parse(localStorage.getItem(storageKey) || '[]');
       if (stored.includes(email)) {
-        toasts.info('You\'re already signed up!');
+        toasts.info(alreadyMessage);
         loading = false;
         return;
       }
       stored.push(email);
-      localStorage.setItem('sts-newsletter-signups', JSON.stringify(stored));
+      localStorage.setItem(storageKey, JSON.stringify(stored));
 
-      // Try Supabase if available
+      // Try Supabase if available. Insert with source for filtering;
+      // if the column doesn't exist, the call falls back to {email} only.
       try {
         const { createSupabaseBrowserClient } = await import('$lib/supabase.js');
         const supabase = createSupabaseBrowserClient();
-        await supabase.from('newsletter_signups').insert({ email });
+        const { error } = await supabase.from('newsletter_signups').insert({ email, source });
+        if (error && error.message && /column.*source/i.test(error.message)) {
+          // Column missing - retry without source so signups still land.
+          await supabase.from('newsletter_signups').insert({ email });
+        }
       } catch {
-        // Supabase not available or table doesn't exist — localStorage fallback is fine
+        // Supabase not available - localStorage fallback is fine
       }
 
-      toasts.success('You\'re in! We\'ll keep you posted.');
+      toasts.success(successMessage);
       email = '';
     } catch (err) {
       toasts.error('Something went wrong. Try again.');
@@ -46,15 +63,17 @@
     <input
       type="email"
       bind:value={email}
-      placeholder="builder@example.com"
+      {placeholder}
       class="newsletter-input"
       disabled={loading}
     />
     <button type="submit" class="newsletter-btn" disabled={loading}>
-      {loading ? 'Joining...' : 'Join the Build'}
+      {loading ? loadingCta : cta}
     </button>
   </div>
-  <p class="newsletter-note">No spam. Unsubscribe anytime. We respect your sovereignty.</p>
+  {#if note}
+    <p class="newsletter-note">{note}</p>
+  {/if}
 </form>
 
 <style>

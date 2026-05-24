@@ -31,7 +31,7 @@
         <path d="{typeIcons[type] || typeIcons.photo}"/>
       </svg>
       <span class="placeholder-text">{alt}</span>
-      <span class="placeholder-type">{type.toUpperCase()} — {aspect}</span>
+      <span class="placeholder-type">{type.toUpperCase()} - {aspect}</span>
     </div>
   </div>
   {#if caption}

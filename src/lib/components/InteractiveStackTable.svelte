@@ -34,7 +34,7 @@
       old: 'Walled-garden APIs',
       new: 'Local, private, uncensored AI',
       tool: 'RTX 5090 / Llama 4 Scout',
-      detail: 'Cloud AI providers can change pricing, censor outputs, or shut down access anytime. A $2,000 GPU running Llama 4 Scout locally gives you uncensored, private AI that works offline — forever.',
+      detail: 'Cloud AI providers can change pricing, censor outputs, or shut down access anytime. A $2,000 GPU running Llama 4 Scout locally gives you uncensored, private AI that works offline - forever.',
       icon: 'I',
       color: '#8b5cf6'
     },

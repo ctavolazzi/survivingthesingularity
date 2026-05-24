@@ -1,10 +1,10 @@
 # Chapter 7: Love in the Time of Algorithms
 
-Remember when finding love meant putting on actual pants, going to an actual bar, and hoping you didn't have spinach in your teeth? We've watched AI transform our jobs, homes, healthcare, education, and even art—now it's infiltrating our hearts. Just as your smart fridge judges your eating habits and AI doctors analyze your health patterns, dating algorithms are ready to critique your romantic choices. Now, you can swipe right on your couch while an algorithm decides who's most compatible with your questionable sense of humor. Welcome to romance in the AI era, where your matchmaker might be coded, your confidant might be a chatbot, and your ex might actually be a line of defective script.
+Remember when finding love meant putting on actual pants, going to an actual bar, and hoping you didn't have spinach in your teeth? We've watched AI transform our jobs, homes, healthcare, education, and even art-now it's infiltrating our hearts. Just as your smart fridge judges your eating habits and AI doctors analyze your health patterns, dating algorithms are ready to critique your romantic choices. Now, you can swipe right on your couch while an algorithm decides who's most compatible with your questionable sense of humor. Welcome to romance in the AI era, where your matchmaker might be coded, your confidant might be a chatbot, and your ex might actually be a line of defective script.
 
 ### Swipe Right on AI: The New Matchmakers
 
-Tinder, Bumble, Hinge—these apps use basic algorithms to sort through potential dates. But increasingly, platforms are harnessing AI to predict who'll make your heart flutter. They assess your profile, your swiping history, your cringe-worthy holiday photos—then say, "We've got the perfect match for you."
+Tinder, Bumble, Hinge-these apps use basic algorithms to sort through potential dates. But increasingly, platforms are harnessing AI to predict who'll make your heart flutter. They assess your profile, your swiping history, your cringe-worthy holiday photos-then say, "We've got the perfect match for you."
 
 - **Data Overload**: An AI might analyze thousands of attributes (music tastes, late-night browsing habits, brand loyalties) to create eerily specific matches.
 - **The Good News**: Fewer random swipes, more curated suggestions. Maybe you'll actually find someone who loves your niche anime fandom.
@@ -20,9 +20,9 @@ If the dating pool isn't weird enough, AI companions are on the rise. Meet Repli
 
 ### AI Relationship Coaches & Robo-Therapists
 
-Move over Dr. Phil—a new wave of AI-based relationship counselors is here, analyzing your texts, tone of voice, and even biometrics to offer "objective" feedback on your love life. Some apps claim to predict relationship conflicts before they happen or nudge you to send sweet texts to your partner at just the right time.
+Move over Dr. Phil-a new wave of AI-based relationship counselors is here, analyzing your texts, tone of voice, and even biometrics to offer "objective" feedback on your love life. Some apps claim to predict relationship conflicts before they happen or nudge you to send sweet texts to your partner at just the right time.
 
-- **Proactive Problem-Solving**: AI can spot patterns—like those cyclical arguments about dishes—and recommend ways to break the loop.
+- **Proactive Problem-Solving**: AI can spot patterns-like those cyclical arguments about dishes-and recommend ways to break the loop.
 - **Privacy Red Flags**: Are you comfortable letting an app analyze your fights and bedroom banter to glean advice? Data leaks could turn your arguments into trending tweets.
 - **Human Touch Still Matters**: A robot might identify friction, but true empathy, understanding, and compassion come from genuine human insight.
 
@@ -37,9 +37,9 @@ In some corners of the world, people marry digital avatars or maintain relations
 ### Ethical & Emotional Quandaries
 
 1. **Consent & Manipulation**
-   - If an AI is tailored to your every desire, does it cross lines of emotional manipulation or codependency? This mirrors our earlier discussions about AI's role in education and healthcare—when does personalization become problematic?
+   - If an AI is tailored to your every desire, does it cross lines of emotional manipulation or codependency? This mirrors our earlier discussions about AI's role in education and healthcare-when does personalization become problematic?
 2. **Data Privacy**
-   - Relationship data is intimate—AI matchmakers and chatbots store everything from your flirty jokes to heartbreak confessions. Who's protecting it? Just as we worried about medical records and smart home data, our romantic lives are now part of the digital footprint.
+   - Relationship data is intimate-AI matchmakers and chatbots store everything from your flirty jokes to heartbreak confessions. Who's protecting it? Just as we worried about medical records and smart home data, our romantic lives are now part of the digital footprint.
 3. **Societal Impact**
    - Could widespread reliance on AI companions erode human empathy? Are we fostering a generation that prefers digital romance to the messy real thing? Like the concerns we explored with AI in creative arts and education, we risk losing essential human elements in pursuit of convenience.
 

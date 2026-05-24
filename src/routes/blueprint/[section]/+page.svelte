@@ -125,14 +125,14 @@
 
 <svelte:head>
   {#if section}
-    <title>{section.title} — The Blueprint — Surviving the Singularity</title>
+    <title>{section.title} - The Blueprint - Surviving the Singularity</title>
     <meta name="description" content={section.subtitle} />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="{section.title} — The Blueprint" />
+    <meta property="og:title" content="{section.title} - The Blueprint" />
     <meta property="og:description" content={section.subtitle} />
     <meta property="og:url" content="https://survivingthesingularity.com/blueprint/{slug}" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{section.title} — The Blueprint" />
+    <meta name="twitter:title" content="{section.title} - The Blueprint" />
     <meta name="twitter:description" content={section.subtitle} />
     {@html `<script type="application/ld+json">${JSON.stringify({
       "@context": "https://schema.org",

@@ -31,7 +31,7 @@
 </script>
 
 <svelte:head>
-  <title>Blog — Surviving the Singularity</title>
+  <title>Blog - Surviving the Singularity</title>
   <meta name="description" content="Deep dives into AI, robotics, synthetic biology, and the technologies reshaping material independence." />
 </svelte:head>
 

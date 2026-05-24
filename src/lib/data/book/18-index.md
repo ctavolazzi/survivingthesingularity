@@ -3,9 +3,9 @@
 A
 - Artificial General Intelligence (AGI), 45, 112-115, 203
 - Artificial Intelligence (AI)
-  - definition, 3-5
-  - history, 7-12
-  - types, 13-18
+ - definition, 3-5
+ - history, 7-12
+ - types, 13-18
 - Artificial Narrow Intelligence (ANI), 14, 46-48
 - Artificial Superintelligence (ASI), 115-120, 205-210
 - Automation, 67-72, 158-162

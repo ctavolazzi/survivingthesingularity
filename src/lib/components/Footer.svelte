@@ -29,7 +29,7 @@
 
     <div class="footer-bottom">
       <p class="footer-disclaimer">
-        This is commentary only — not financial, legal, or professional advice. Build at your own risk. Think for yourself.
+        This is commentary only - not financial, legal, or professional advice. Build at your own risk. Think for yourself.
       </p>
       <p class="footer-copyright">
         &copy; {new Date().getFullYear()} Surviving the Singularity. Built with your own two hands.

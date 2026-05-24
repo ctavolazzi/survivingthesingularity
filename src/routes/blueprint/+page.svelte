@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-  <title>The Blueprint — Surviving the Singularity</title>
+  <title>The Blueprint - Surviving the Singularity</title>
   <meta name="description" content="The YouTube Shouse Blueprint: Eight chapters on material independence through digital leverage, local AI, and minimalist infrastructure." />
 </svelte:head>
 
@@ -34,7 +34,7 @@
       <p class="bp-label">The YouTube Shouse Blueprint</p>
       <h1 class="bp-title">The Complete Blueprint</h1>
       <p class="bp-subtitle">
-        Eight chapters covering every layer of the exit strategy — from economic analysis to immediate execution. This is the full tactical breakdown.
+        Eight chapters covering every layer of the exit strategy - from economic analysis to immediate execution. This is the full tactical breakdown.
       </p>
 
       {#if completedCount > 0}
@@ -45,7 +45,7 @@
           <span class="bp-progress-text">
             {completedCount}/{sections.length} chapters complete
             {#if completedCount === sections.length}
-              — Blueprint mastered
+              - Blueprint mastered
             {/if}
           </span>
         </div>

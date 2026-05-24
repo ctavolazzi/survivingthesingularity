@@ -11,13 +11,13 @@ AI-driven education that tailors lessons to each student's pace and performance.
 Artwork generated (or co-created) by algorithms. Imagine if Van Gogh and a computer had a neon-splashed baby.
 
 **AI Chatbots**
-Bots that simulate human conversation. Great for quick customer support—less great for empathizing with heartbreak.
+Bots that simulate human conversation. Great for quick customer support-less great for empathizing with heartbreak.
 
 **AI Companion**
 A digital buddy (or "soulmate") that chats, flirts, and occasionally freaks you out with how well it knows your music preferences.
 
 **AI Ethics**
-Moral frameworks for guiding AI's development and deployment—so your robo-vac doesn't decide crumbs are a lesser species that must be exterminated entirely.
+Moral frameworks for guiding AI's development and deployment-so your robo-vac doesn't decide crumbs are a lesser species that must be exterminated entirely.
 
 **AI Governance**
 The policies, laws, and guidelines controlling AI systems. Think "political wrangling meets futuristic code," hopefully minus the doomsday.
@@ -26,7 +26,7 @@ The policies, laws, and guidelines controlling AI systems. Think "political wran
 Algorithms diagnosing diseases, robot surgeons wielding scalpels, and health apps nudging you to hydrate. It's medicine meets sci-fi.
 
 **AI in Daily Life**
-Smart speakers, predictive text, algorithmic recommendation—basically everything from your fridge to your phone, politely bossing you around.
+Smart speakers, predictive text, algorithmic recommendation-basically everything from your fridge to your phone, politely bossing you around.
 
 **AI Revolution**
 The transformative surge in AI capabilities, from self-driving cars to job automation. Some say it's liberating; others keep a bunker stocked with canned beans.
@@ -41,19 +41,19 @@ Software or platforms (like TensorFlow or PyTorch) that help create AI models. N
 Amazon's voice assistant. She'll order cat food at 2 a.m. if you mumble it in your sleep.
 
 **Algorithmic Bias**
-When AI inherits skewed data or prejudiced assumptions, often replicating or worsening social inequalities. It's the "bad breath" of algorithms—no one wants to admit it, but it lingers.
+When AI inherits skewed data or prejudiced assumptions, often replicating or worsening social inequalities. It's the "bad breath" of algorithms-no one wants to admit it, but it lingers.
 
 **Algorithmic Trading**
 High-speed financial trades done by bots, capitalizing on tiny price discrepancies in microseconds. Humans can't blink that fast.
 
 **Artificial General Intelligence (AGI)**
-A yet-to-exist (we think) AI that can handle any intellectual task humans can—and possibly more. Human-level smarts without the existential crises.
+A yet-to-exist (we think) AI that can handle any intellectual task humans can-and possibly more. Human-level smarts without the existential crises.
 
 **Artificial Intelligence (AI)**
 Machines or software emulating human intelligence. Sometimes they're brilliant, sometimes they can't tell a muffin from a chihuahua.
 
 **Artificial Narrow Intelligence (ANI)**
-AI that's extremely good at one thing—like recommending memes—but clueless about everything else. Also called Weak AI.
+AI that's extremely good at one thing-like recommending memes-but clueless about everything else. Also called Weak AI.
 
 **Artificial Superintelligence (ASI)**
 A theoretical AI that outperforms human intellect in every domain. Possibly friendly, possibly deciding we're best off as cosmic pets.
@@ -70,7 +70,7 @@ Robotic or AI-driven procedures with minimal human help. Scalpel steady as a roc
 Gargantuan datasets that reveal patterns if you can handle the sheer volume. Think of it as rummaging through the biggest digital attic ever.
 
 **Blockchain**
-A decentralized ledger for secure transactions. Often linked to crypto but has broader uses—like tracking supply chains or winning arguments at the dinner table about trustless tech.
+A decentralized ledger for secure transactions. Often linked to crypto but has broader uses-like tracking supply chains or winning arguments at the dinner table about trustless tech.
 
 **Bumble**
 A dating app that puts women in control of the first message, occasionally overshadowed by a swarm of "hi?" texts from other corners of the net.
@@ -78,7 +78,7 @@ A dating app that puts women in control of the first message, occasionally overs
 ### C
 
 **ChatGPT**
-An AI model by OpenAI that writes convincingly human-like text—sometimes too human, sometimes hilariously off-base.
+An AI model by OpenAI that writes convincingly human-like text-sometimes too human, sometimes hilariously off-base.
 
 **Computer Vision**
 Tech that lets computers "see" and interpret images or video. Used for facial recognition, self-driving cars, and verifying if you're a cat or a toaster.
@@ -87,7 +87,7 @@ Tech that lets computers "see" and interpret images or video. Used for facial re
 The interplay where AI helps compose music, paint pictures, or pen short stories, leaving humans to wonder who's the real artist behind the curtain.
 
 **Cryptocurrency**
-Digital coins (like Bitcoin) that you can buy, sell, or lose sleep over. AI often trades these at superhuman speeds—so good luck keeping up manually.
+Digital coins (like Bitcoin) that you can buy, sell, or lose sleep over. AI often trades these at superhuman speeds-so good luck keeping up manually.
 
 ### D
 
@@ -107,7 +107,7 @@ Safeguarding personal info from misuse. Typically overshadowed by our casual acc
 A machine learning approach using layers of neural networks. Picture a multi-layered cake that gets smarter with each bite.
 
 **Deepfakes**
-AI-generated media that swaps faces or manipulates speech, often indistinguishable from the real deal. Useful for comedic parodies—or terrifying propaganda.
+AI-generated media that swaps faces or manipulates speech, often indistinguishable from the real deal. Useful for comedic parodies-or terrifying propaganda.
 
 **Digital Influencers**
 Online personalities created by AI or managed by algorithms. They never age, rarely have scandals, and can't storm off set over contract disputes.
@@ -124,7 +124,7 @@ The elusive trait bots try to mimic. True empathy still belongs in the realm of 
 The moral and regulatory frameworks for AI usage, aiming to keep the future from devolving into a sci-fi dystopia.
 
 **Expert Systems**
-Early AI programs that mimic decisions of human specialists in narrow fields—like diagnosing diseases or advising you on taxes.
+Early AI programs that mimic decisions of human specialists in narrow fields-like diagnosing diseases or advising you on taxes.
 
 ### F
 
@@ -146,7 +146,7 @@ Where humans and AI rearrange the job market. Some roles vanish, new ones emerge
 A labor market defined by short-term contracts or freelance work. AI speeds it up by matching tasks to workers, but also intensifies job insecurity.
 
 **Golem (Jewish Folklore)**
-A mythical creature animated from clay—a parallel to modern AI stories where the creation might outgrow its maker's intentions.
+A mythical creature animated from clay-a parallel to modern AI stories where the creation might outgrow its maker's intentions.
 
 **Google Assistant**
 Voice-activated helper from Google. Handy for scheduling alarms, or inadvertently adding "llama grooming kit" to your shopping list.
@@ -155,7 +155,7 @@ Voice-activated helper from Google. Handy for scheduling alarms, or inadvertentl
 The realm of politicians and laws grappling with unstoppable algorithms. Picture them chasing a bullet train on a tricycle.
 
 **GPT (Generative Pre-trained Transformer)**
-An AI architecture enabling advanced text generation—ChatGPT's underlying concept. Think of it as a language wizard behind the curtain.
+An AI architecture enabling advanced text generation-ChatGPT's underlying concept. Think of it as a language wizard behind the curtain.
 
 ### H
 
@@ -195,7 +195,7 @@ An AI art generator that conjures images based on text prompts, often breathtaki
 How AI interprets, generates, and occasionally butchers human language. Great for chatbots, comedic for autocorrect fails.
 
 **Neural Networks**
-Layers of interconnected nodes (like brain neurons) that power advanced AI. If your code has a "brain," this is it—just with fewer existential crises.
+Layers of interconnected nodes (like brain neurons) that power advanced AI. If your code has a "brain," this is it-just with fewer existential crises.
 
 ### P
 
@@ -222,7 +222,7 @@ The engineering and operation of robots. Think mechanical arms in factories, or 
 ### S
 
 **Self-Driving Cars**
-Vehicles guided by AI sensors. Convenient when you want to scroll your phone—risky if the AI thinks a truck is an overcast sky.
+Vehicles guided by AI sensors. Convenient when you want to scroll your phone-risky if the AI thinks a truck is an overcast sky.
 
 **Singularity**
 The point at which AI surpasses human intelligence, potentially rewriting civilization (or turning us into cosmic pets).
@@ -231,7 +231,7 @@ The point at which AI surpasses human intelligence, potentially rewriting civili
 Apple's voice assistant. Perfect for random trivia at 2 a.m., less perfect for complex emotional support.
 
 **Smart Fridge**
-A refrigerator that orders groceries before you realize you're out—and judges your midnight ice cream binges.
+A refrigerator that orders groceries before you realize you're out-and judges your midnight ice cream binges.
 
 **Smart Homes**
 Residences equipped with interconnected gadgets. Fun until your lights have a meltdown because your router hiccups.
@@ -243,7 +243,7 @@ Another AI art generator that can produce mesmerizing (or terrifying) images fro
 ML approach with labeled data. If you show a model "cat pictures" labeled "cat," it eventually learns "all hail the cat?"
 
 **Survival Strategies**
-Practical tips scattered through the book on coping with AI upheaval—like learning new skills, preserving emotional resilience, and not angering your toaster.
+Practical tips scattered through the book on coping with AI upheaval-like learning new skills, preserving emotional resilience, and not angering your toaster.
 
 **Surviving the Singularity**
 Our central theme: a comedic but earnest guide to riding out AI's unstoppable rise and hopefully not dying in the process.
@@ -268,7 +268,7 @@ Proposed by Alan Turing. If you can't tell whether you're talking to a human or 
 ### U
 
 **Universal Basic Income (UBI)**
-A system where all citizens receive a set income—no strings attached. It's either utopia or free money for Netflix binges, depending on your angle.
+A system where all citizens receive a set income-no strings attached. It's either utopia or free money for Netflix binges, depending on your angle.
 
 **Unsupervised Learning**
 ML approach with unlabeled data. AI hunts for hidden structures, patterns, or the meaning of life, possibly.
@@ -301,24 +301,24 @@ The art of crafting precise instructions for AI models. Like being a digital whi
 The marriage of quantum mechanics and artificial intelligence. Imagine traditional computing on steroids, where calculations happen in parallel universes (sort of). Could either solve humanity's greatest challenges or create problems we can't even comprehend yet. *See also: Machine Learning*
 
 **Reinforcement Learning**
-How AI learns through trial, error, and rewards—like training a digital puppy that can process a billion treats per second. Used in everything from game-playing AIs to robotic control systems. *See also: Machine Learning, Neural Networks*
+How AI learns through trial, error, and rewards-like training a digital puppy that can process a billion treats per second. Used in everything from game-playing AIs to robotic control systems. *See also: Machine Learning, Neural Networks*
 
 **Transfer Learning**
 When AI applies knowledge from one task to another, like a student realizing math skills help in cooking (measuring is just edible algebra). Makes AI development more efficient and slightly less data-hungry. *See also: Deep Learning, Machine Learning*
 
 **Zero-Shot Learning**
-AI understanding new concepts without explicit training, like guessing what a "flibbertigibbet" is based on context. The closest machines have come to human-like intuition—so far. *See also: Few-Shot Learning, Transfer Learning*
+AI understanding new concepts without explicit training, like guessing what a "flibbertigibbet" is based on context. The closest machines have come to human-like intuition-so far. *See also: Few-Shot Learning, Transfer Learning*
 
 [Enhanced Technical Definitions]
 
 **Deep Learning** *(Enhanced)*
-A subset of machine learning using multi-layered neural networks, inspired by the human brain's structure. Picture a digital brain that processes information in layers, each layer extracting more complex features. Used in everything from facial recognition to predicting your next Netflix binge. Unlike human learning, it requires massive amounts of data and can't learn from a single example—yet. *See also: Neural Networks, Machine Learning*
+A subset of machine learning using multi-layered neural networks, inspired by the human brain's structure. Picture a digital brain that processes information in layers, each layer extracting more complex features. Used in everything from facial recognition to predicting your next Netflix binge. Unlike human learning, it requires massive amounts of data and can't learn from a single example-yet. *See also: Neural Networks, Machine Learning*
 
 **Neural Networks** *(Enhanced)*
 The backbone of modern AI, inspired by biological brains but with fewer existential crises. These interconnected layers of artificial neurons process information, learn patterns, and occasionally produce results that make their creators go "Wait, how did it do that?" Think of it as a digital brain that never needs sleep or coffee. *See also: Deep Learning, Machine Learning*
 
 **Machine Learning** *(Enhanced)*
-The art of teaching computers to learn from data without explicit programming. Instead of telling a computer exactly what to do, you feed it examples and let it figure out the patterns—like raising a digital child that grows up really, really fast. Powers everything from spam filters to self-driving cars. *See also: Deep Learning, Neural Networks*
+The art of teaching computers to learn from data without explicit programming. Instead of telling a computer exactly what to do, you feed it examples and let it figure out the patterns-like raising a digital child that grows up really, really fast. Powers everything from spam filters to self-driving cars. *See also: Deep Learning, Neural Networks*
 
 **GPT (Generative Pre-trained Transformer)** *(Enhanced)*
 The technological wizard behind modern language AI, capable of understanding and generating human-like text. It's like having a library of human knowledge that can not only recall information but also riff on it creatively. Sometimes brilliantly insightful, sometimes hilariously wrong, always entertaining. *See also: ChatGPT, Natural Language Processing*

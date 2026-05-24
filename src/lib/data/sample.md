@@ -32,11 +32,11 @@ What the fuck is going on?
 
 No, seriously.
 
-You're afraid. I get it. Who wouldn't be? The idea of a world where machines outsmart us, outpace us, and even outkill us is enough to send anyone into a spiral of existential dread. But here's the thing—that fear you feel is good. It means you're paying attention. You're not like all these other folks still committed to the status quo, driving their heads further and further down into the sand to ignore the blaring alarms that are screaming all around us.
+You're afraid. I get it. Who wouldn't be? The idea of a world where machines outsmart us, outpace us, and even outkill us is enough to send anyone into a spiral of existential dread. But here's the thing-that fear you feel is good. It means you're paying attention. You're not like all these other folks still committed to the status quo, driving their heads further and further down into the sand to ignore the blaring alarms that are screaming all around us.
 
 For centuries, we've been grappling with the idea of artificial intelligence and the inevitable consequences of playing God. The most famous old-world example would be Mary Shelley's *Frankenstein*. This tale of a scientist creating life only to discover he has unleashed a force beyond his control mirrors our current trajectory with AI. Just like Victor's creation, AI began as a controlled experiment, something we could manage and understand. However, as it evolves, we find ourselves in a reality where our creations may not be so manageable after all.
 
-Echoes of this narrative can be found in the Golem of Jewish folklore, *The Terminator*, and *The Matrix*—stories about artificially constructed intelligences that become more than their creators anticipated. These narratives, once confined to the realm of fiction, are now becoming our reality. We are entering an age where AI is rapidly unraveling our preconceived notions about how things "should be."
+Echoes of this narrative can be found in the Golem of Jewish folklore, *The Terminator*, and *The Matrix*-stories about artificially constructed intelligences that become more than their creators anticipated. These narratives, once confined to the realm of fiction, are now becoming our reality. We are entering an age where AI is rapidly unraveling our preconceived notions about how things "should be."
 
 From Siri to self-driving cars, we're beginning to entrust our very lives and livelihoods to machines that can think on their own, learn, and make decisions. Not just respond to stimuli, but proactively make choices.
 
@@ -46,7 +46,7 @@ With each passing day, the line between human and machine grows increasingly blu
 
 What do we do with this fear that gnaws at us? Do we run and hide, hoping the Singularity will somehow not come to pass? Do we rage against the machines, trying to halt the inexorable tide of progress? Or do we face our fears head-on, armed with the knowledge in this book and other sources, with curiosity and maybe a healthy dose of dark humor?
 
-I vote for the latter, because here's the thing—the Singularity isn't just coming, it's here. And whether we like it or not, it's knocking on our doorstep and we are all along for the ride.
+I vote for the latter, because here's the thing-the Singularity isn't just coming, it's here. And whether we like it or not, it's knocking on our doorstep and we are all along for the ride.
 
 There is nothing you can do as an individual to stop it or change its course. You can simply strap in and start figuring out how to navigate this brave new world that we are all collectively being dragged into, kicking and screaming by those who are forging the path running ahead full speed.
 

@@ -471,7 +471,7 @@
     {
       "id": 40,
       "title": "CL1 Wetware Computer Debuts",
-      "abstract": "Cortical Labs debuts CL1, a shoebox-sized 'wetware' computer embedding 200,000 living human neurons on silicon, at Mobile World Congress Barcelona—the first commercial biological computer.",
+      "abstract": "Cortical Labs debuts CL1, a shoebox-sized 'wetware' computer embedding 200,000 living human neurons on silicon, at Mobile World Congress Barcelona-the first commercial biological computer.",
       "description": "The CL1 represents the world's first commercial 'wetware' computing system, combining 200,000 living human neurons with silicon-based processing in a compact shoebox-sized device. This revolutionary hybrid biocomputer demonstrates real-time learning capabilities that traditional silicon computers cannot match, opening new possibilities for adaptive AI systems, brain-computer interfaces, and neuromorphic computing applications.",
       "date": "2025-03-02",
       "significance": "First commercial wetware computer with living human neurons",
@@ -483,7 +483,7 @@
     {
       "id": 41,
       "title": "Google DeepMind Releases Veo 3 with Flow",
-      "abstract": "Google DeepMind releases Veo 3 alongside Flow, adding synchronized audio generation (dialogue, SFX, ambience) to 1080p video—igniting viral 'AI Bigfoot' vlogs—and opens early access on Gemini (US launch).",
+      "abstract": "Google DeepMind releases Veo 3 alongside Flow, adding synchronized audio generation (dialogue, SFX, ambience) to 1080p video-igniting viral 'AI Bigfoot' vlogs-and opens early access on Gemini (US launch).",
       "description": "Veo 3 represents a breakthrough in multimodal AI, combining high-quality 1080p video generation with synchronized audio creation including dialogue, sound effects, and ambient audio. Paired with Flow, the system enables complete audiovisual content creation from text prompts alone, sparking viral phenomena like AI-generated Bigfoot documentaries and democratizing professional-quality video production.",
       "date": "2025-05-20",
       "significance": "First integrated video + audio generation system for complete content creation",
@@ -519,7 +519,7 @@
     {
       "id": 44,
       "title": "CL1 Wetware-as-a-Service Launch",
-      "abstract": "Cortical Labs launches CL1 Wetware-as-a-Service, letting researchers rent live-neuron compute racks for $300/week—making biological AI experiments affordable and on-demand.",
+      "abstract": "Cortical Labs launches CL1 Wetware-as-a-Service, letting researchers rent live-neuron compute racks for $300/week-making biological AI experiments affordable and on-demand.",
       "description": "Cortical Labs revolutionizes access to biological computing by launching Wetware-as-a-Service, offering researchers the ability to rent live-neuron compute racks for just $300 per week. This cloud-based service makes biological AI experiments accessible and affordable for researchers worldwide, democratizing access to cutting-edge wetware computing technology and accelerating research in biological AI systems.",
       "date": "2025-06-10",
       "significance": "Democratization of biological computing through affordable cloud services",
@@ -531,8 +531,8 @@
     {
       "id": 45,
       "title": "Tesla's First Fully Autonomous Delivery",
-      "abstract": "Tesla completes its first fully autonomous delivery: a Model Y drives itself from Giga Texas to a customer's home—navigating highways, city streets, and parking lots with no human or remote operator on board.",
-      "description": "Tesla achieves a historic milestone in autonomous vehicle technology by completing the world's first fully autonomous commercial delivery. A Model Y successfully navigated the complete journey from Tesla's Gigafactory Texas to a customer's residence, handling complex real-world scenarios including highway driving, urban navigation, and precise parking—all without any human intervention or remote operation. This demonstration proves the viability of fully autonomous vehicle operations in commercial applications.",
+      "abstract": "Tesla completes its first fully autonomous delivery: a Model Y drives itself from Giga Texas to a customer's home-navigating highways, city streets, and parking lots with no human or remote operator on board.",
+      "description": "Tesla achieves a historic milestone in autonomous vehicle technology by completing the world's first fully autonomous commercial delivery. A Model Y successfully navigated the complete journey from Tesla's Gigafactory Texas to a customer's residence, handling complex real-world scenarios including highway driving, urban navigation, and precise parking-all without any human intervention or remote operation. This demonstration proves the viability of fully autonomous vehicle operations in commercial applications.",
       "date": "2025-06-27",
       "significance": "First fully autonomous commercial vehicle delivery without human oversight",
       "urls": {

@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>About — Surviving the Singularity</title>
+  <title>About - Surviving the Singularity</title>
   <meta name="description" content="Material independence through digital leverage, local AI, and minimalist infrastructure. We build the blueprint for sovereign living." />
 </svelte:head>
 
@@ -24,7 +24,7 @@
     <section class="about-section">
       <h2>The Thesis</h2>
       <p>
-        The traditional path to stability — 30-year mortgage, corporate career, retirement — is mathematically inaccessible for the maker class. The cost of housing has outpaced wages by orders of magnitude, and the social contract that once guaranteed security in exchange for compliance has collapsed.
+        The traditional path to stability - 30-year mortgage, corporate career, retirement - is mathematically inaccessible for the maker class. The cost of housing has outpaced wages by orders of magnitude, and the social contract that once guaranteed security in exchange for compliance has collapsed.
       </p>
       <p>
         Our answer is the <strong>YouTube Shouse Blueprint</strong>: a comprehensive strategy that combines minimalist infrastructure (the shouse), digital leverage (YouTube and direct-to-consumer products), local AI sovereignty, and open-source robotics to create a life of genuine independence.
@@ -56,10 +56,10 @@
     <section class="about-section">
       <h2>The Philosophy</h2>
       <p>
-        We believe individuals are not consumables for the rich — they are self-determining entities with the right to autonomy. Material independence is not about isolation; it's about building from a position of strength. When your overhead is crushed, your time is reclaimed, and your tools are sovereign, you can finally contribute to a community from abundance rather than scarcity.
+        We believe individuals are not consumables for the rich - they are self-determining entities with the right to autonomy. Material independence is not about isolation; it's about building from a position of strength. When your overhead is crushed, your time is reclaimed, and your tools are sovereign, you can finally contribute to a community from abundance rather than scarcity.
       </p>
       <p>
-        This project is commentary, not financial advice. Build at your own risk. Think for yourself. The math proof exists — material independence is becoming more possible with every passing day as technology becomes cheaper, better, and faster.
+        This project is commentary, not financial advice. Build at your own risk. Think for yourself. The math proof exists - material independence is becoming more possible with every passing day as technology becomes cheaper, better, and faster.
       </p>
     </section>
 

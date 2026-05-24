@@ -1,6 +1,6 @@
 # Epilogue: The Next Chapter
 
-As we close the pages of this book, we stand on the precipice of a new era. The story of AI and humanity is far from over—in fact, it's only just beginning. 
+As we close the pages of this book, we stand on the precipice of a new era. The story of AI and humanity is far from over, in fact, it's only just beginning. 
 
 ## Looking Back, Moving Forward
 

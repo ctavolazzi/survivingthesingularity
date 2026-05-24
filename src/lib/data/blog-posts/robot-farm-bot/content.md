@@ -6,7 +6,7 @@ In an era where technology is reshaping every facet of our lives, the evolution 
 
 ## The Tesla Optimus of Agriculture
 
-FarmBot is often compared to Tesla’s Optimus bot because it shares a similar vision—revolutionizing tasks that traditionally required significant manual effort. FarmBot is designed with accessibility in mind, offering an open-source platform that empowers users to take full control of their food production. Whether you’re a seasoned gardener or a complete novice, FarmBot’s modular design and advanced technology make it an indispensable tool for the future of residential agriculture.
+FarmBot is often compared to Tesla’s Optimus bot because it shares a similar vision-revolutionizing tasks that traditionally required significant manual effort. FarmBot is designed with accessibility in mind, offering an open-source platform that empowers users to take full control of their food production. Whether you’re a seasoned gardener or a complete novice, FarmBot’s modular design and advanced technology make it an indispensable tool for the future of residential agriculture.
 
 ![FarmBot Product Image](https://farm.bot/cdn/shop/files/high_res_2544835d-d68d-474c-be32-20b51fa2aa77_960x540.jpg?v=1697756943)
 
@@ -14,7 +14,7 @@ FarmBot is often compared to Tesla’s Optimus bot because it shares a similar v
 
 ### CNC Precision: A New Era of Gardening
 
-FarmBot operates like a CNC machine for your garden, ensuring that every action—from planting seeds to harvesting crops—is executed with pinpoint accuracy. This level of precision means that your garden's layout, spacing, and timing are all optimized to maximize yield and efficiency.
+FarmBot operates like a CNC machine for your garden, ensuring that every action-from planting seeds to harvesting crops-is executed with pinpoint accuracy. This level of precision means that your garden's layout, spacing, and timing are all optimized to maximize yield and efficiency.
 
 ![FarmBot Explainer Graphic](https://farm.bot/cdn/shop/files/ScreenShot2021-04-09at9.54.40AM_1f2ba90d-e5fb-4735-bd5d-2241e26e644e_1828x1344.png?v=1697756944)
 
@@ -57,7 +57,7 @@ One of the standout features of FarmBot is its ability to provide detailed data 
 
 - **Real-Time Monitoring:** The bot’s sensors continuously collect data on plant health, soil conditions, and weather. This data is displayed on the FarmBot web app, giving you a real-time overview of your garden’s status.
 - **Historical Data Analysis:** FarmBot logs all activities and sensor data, allowing you to analyze trends over time. This feature is useful for improving garden practices, predicting harvest times, and optimizing crop rotation strategies.
-- **Educational Insights:** FarmBot is not just a tool—it’s a learning platform. The data collected by FarmBot can be used to teach kids and adults alike about the science of gardening, making it an excellent addition to educational settings.
+- **Educational Insights:** FarmBot is not just a tool-it’s a learning platform. The data collected by FarmBot can be used to teach kids and adults alike about the science of gardening, making it an excellent addition to educational settings.
 
 ## The Benefits
 
@@ -114,7 +114,7 @@ These timelines could be even shorter if your FarmBot setup increases your garde
 
 ## The Future of Food
 
-As global challenges like climate change and urbanization continue to strain our food systems, innovative solutions like FarmBot offer a glimpse into a future where fresh, locally-grown produce is accessible to everyone. By integrating AI and robotics into our gardens, we’re not just growing vegetables; we’re fostering a new way of life—one that’s sustainable, efficient, and deeply connected to the natural world.
+As global challenges like climate change and urbanization continue to strain our food systems, innovative solutions like FarmBot offer a glimpse into a future where fresh, locally-grown produce is accessible to everyone. By integrating AI and robotics into our gardens, we’re not just growing vegetables; we’re fostering a new way of life-one that’s sustainable, efficient, and deeply connected to the natural world.
 
 FarmBot is more than just a gadget; it’s a movement toward a future where technology and nature work together to ensure that everyone has access to fresh, healthy food, right in their own backyard. Whether you’re looking to reduce your carbon footprint, improve your food security, or simply enjoy the process of growing your own food, FarmBot is a powerful tool that can help you achieve your goals.
 

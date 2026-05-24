@@ -1,8 +1,8 @@
 /**
- * White Rabbit — Diagnostic Trace System
+ * White Rabbit - Diagnostic Trace System
  *
  * "Follow the rabbit." A passable trace object that records execution flow.
- * Drop a rabbit into any component, route, or server hook — it hops through
+ * Drop a rabbit into any component, route, or server hook - it hops through
  * your code and records everything it sees. Pass it around. Follow it later.
  *
  * Usage:
@@ -17,7 +17,7 @@
  *   rabbit.error('API call failed', { status: 500 });
  *   rabbit.mark('hero-visible');  // Performance checkpoint
  *
- *   // Pass it to child components — follow the rabbit
+ *   // Pass it to child components - follow the rabbit
  *   childComponent.init(rabbit);
  *
  *   // When you're ready, read the rabbit's journal
@@ -30,7 +30,7 @@
 import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
-// The Warren — global registry of all rabbits
+// The Warren - global registry of all rabbits
 const warren = new Map();
 
 // Store for reactive UI access
@@ -113,7 +113,7 @@ class WhiteRabbit {
     this.name = name;
     this.metadata = metadata;
     this.journal = [];       // The rabbit's log of everything it saw
-    this.checkpoints = {};   // Performance marks — places the rabbit stopped
+    this.checkpoints = {};   // Performance marks - places the rabbit stopped
     this.startTime = Date.now();
     this.endTime = null;
     this.returned = false;   // Has the rabbit come back from its journey?
@@ -142,7 +142,7 @@ class WhiteRabbit {
   error(message, data) { this._record('error', message, data); }
 
   /**
-   * Drop a checkpoint — the rabbit pauses here and notes the time
+   * Drop a checkpoint - the rabbit pauses here and notes the time
    */
   mark(label) {
     const now = Date.now();
@@ -168,7 +168,7 @@ class WhiteRabbit {
   }
 
   /**
-   * Time an async operation — the rabbit watches and waits
+   * Time an async operation - the rabbit watches and waits
    */
   async time(label, fn) {
     this.mark(`${label}-start`);
@@ -221,7 +221,7 @@ class WhiteRabbit {
   }
 
   /**
-   * The rabbit returns — trace complete
+   * The rabbit returns - trace complete
    */
   returned_home(summary) {
     this.endTime = Date.now();
@@ -258,7 +258,7 @@ class WhiteRabbit {
   }
 
   /**
-   * Full report — the rabbit's complete journal
+   * Full report - the rabbit's complete journal
    */
   report() {
     return {
@@ -278,7 +278,7 @@ class WhiteRabbit {
   }
 
   /**
-   * Internal — the rabbit writes in its journal
+   * Internal - the rabbit writes in its journal
    */
   _record(level, message, data) {
     if (!CONFIG.enabled) return;
@@ -323,7 +323,7 @@ class WhiteRabbit {
       const trimmed = existing.slice(-50);
       localStorage.setItem(CONFIG.storageKey, JSON.stringify(trimmed));
     } catch {
-      // Storage full or unavailable — the rabbit drops its journal
+      // Storage full or unavailable - the rabbit drops its journal
     }
   }
 }
@@ -349,7 +349,7 @@ export function clearJournals() {
 }
 
 /**
- * Server-side rabbit — for hooks.server.js and +server.js
+ * Server-side rabbit - for hooks.server.js and +server.js
  */
 export function createServerRabbit(name, metadata = {}) {
   const rabbit = new WhiteRabbit(name, { ...metadata, environment: 'server' });

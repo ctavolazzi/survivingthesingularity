@@ -4,7 +4,11 @@
   import { onMount } from 'svelte';
   import { slide, fade } from 'svelte/transition';
 
+  // Auth removed by design. Site is read-only - no user accounts, no sessions.
+  // The `user` prop is kept as a no-op so existing call sites don't break;
+  // it's never rendered or branched on anywhere in this component.
   export let user = null;
+  void user;
 
   let isMenuOpen = false;
   let scrolled = false;
@@ -46,8 +50,9 @@
   $: currentPath = $page.url.pathname;
 
   const navLinks = [
-    { href: '/blueprint', label: 'The Blueprint' },
+    { href: '/why', label: 'Why' },
     { href: '/book', label: 'Book' },
+    { href: '/blueprint', label: 'Blueprint' },
     { href: '/blog', label: 'Blog' },
   ];
 </script>
@@ -78,15 +83,6 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <span class="cmd-k-keys"><kbd>&#8984;</kbd><kbd>K</kbd></span>
       </button>
-      <div class="nav-auth-desktop">
-        {#if user}
-          <a href="/profile" class="auth-avatar" on:click={(e) => navigateTo('/profile', e)}>
-            <span class="avatar-letter">{(user.email || 'U')[0].toUpperCase()}</span>
-          </a>
-        {:else}
-          <a href="/login" class="auth-link" on:click={(e) => navigateTo('/login', e)}>Sign In</a>
-        {/if}
-      </div>
       <button
         class="hamburger-button"
         on:click={toggleMenu}
@@ -128,31 +124,6 @@
           </svg>
         </a>
       {/each}
-      <div class="mobile-divider"></div>
-      {#if user}
-        <a
-          href="/profile"
-          class="mobile-link"
-          class:active={currentPath === '/profile'}
-          on:click={(e) => navigateTo('/profile', e)}
-        >
-          <span class="mobile-link-text">My Profile</span>
-          <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      {:else}
-        <a
-          href="/login"
-          class="mobile-link mobile-link-auth"
-          on:click={(e) => navigateTo('/login', e)}
-        >
-          <span class="mobile-link-text">Sign In</span>
-          <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      {/if}
     </div>
   </div>
 {/if}

@@ -154,4 +154,4 @@ Before publishing, confirm:
 [ ] Call to action included
 ```
 
-Keep this checklist handy when writing to maintain the book's signature blend of humor, insight, and practical guidance. Remember: we're not just explaining the future—we're helping readers navigate it with a smile, even as they wonder if their smart fridge is plotting a coup.
+Keep this checklist handy when writing to maintain the book's signature blend of humor, insight, and practical guidance. Remember: we're not just explaining the future-we're helping readers navigate it with a smile, even as they wonder if their smart fridge is plotting a coup.

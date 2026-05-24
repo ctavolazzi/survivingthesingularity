@@ -1,14 +1,14 @@
 # Chapter 2: Show Me the Money (While It Still Exists)
 
-Alright, fellow denizens of the 2024 technosphere, we've established that AI isn't just the new kid on the block—it's the kid who brought fireworks, a boom box, and a questionable disregard for authority. But let's get down to the nitty-gritty: How's this all going to affect your wallet, your job, and that college fund you've been meaning to start for your kid (but haven't because, well, avocado toast isn't going to eat itself)?
+Alright, fellow denizens of the 2024 technosphere, we've established that AI isn't just the new kid on the block-it's the kid who brought fireworks, a boom box, and a questionable disregard for authority. But let's get down to the nitty-gritty: How's this all going to affect your wallet, your job, and that college fund you've been meaning to start for your kid (but haven't because, well, avocado toast isn't going to eat itself)?
 
-You're probably thinking, "I love the idea of self-driving cars and robot vacuums, but will I still be able to afford my oat milk latte—the only thing that keeps me sane in this chaotic world?" Buckle up (in your manually driven car, for now), because we're about to take a wild ride through the future of money, work, and why your grandchildren might ask, "Wait, you used to **drive** cars? Like, with your **hands**?"
+You're probably thinking, "I love the idea of self-driving cars and robot vacuums, but will I still be able to afford my oat milk latte-the only thing that keeps me sane in this chaotic world?" Buckle up (in your manually driven car, for now), because we're about to take a wild ride through the future of money, work, and why your grandchildren might ask, "Wait, you used to **drive** cars? Like, with your **hands**?"
 
 ## The Great Job Shuffle (or How I Learned to Stop Worrying and Love the Bot)
 
 ### Picture This
 
-It's a typical Monday morning in 2024. Sarah, a 35-year-old marketing manager and mom of two, sips her coffee as she logs into her first virtual meeting of the day. But instead of her usual team, she's greeted by an AI interface named Aiden, who cheerfully announces, "Good morning, Sarah! I'll be handling your campaigns from now on. Corporate thinks your talents could be better utilized elsewhere." Sarah nearly spits out her coffee. "Excuse me?" she stammers. Aiden smiles (as much as a digital avatar can). "Don't worry, Sarah. Your skills are highly valued—in other sectors."
+It's a typical Monday morning in 2024. Sarah, a 35-year-old marketing manager and mom of two, sips her coffee as she logs into her first virtual meeting of the day. But instead of her usual team, she's greeted by an AI interface named Aiden, who cheerfully announces, "Good morning, Sarah! I'll be handling your campaigns from now on. Corporate thinks your talents could be better utilized elsewhere." Sarah nearly spits out her coffee. "Excuse me?" she stammers. Aiden smiles (as much as a digital avatar can). "Don't worry, Sarah. Your skills are highly valued-in other sectors."
 
 First things first: Yes, AI is coming for jobs. Lots of them. But before you panic-start that alpaca farm you've always dreamed of, let's take a deep breath and look at the bigger picture.
 
@@ -39,7 +39,7 @@ _If you're contemplating a career change, now might be a good time to consider "
 
 Let's crunch some numbers to see where we're headed:
 
-- **World Economic Forum's 2023 Report:** Predicts that by 2025, **85 million jobs** may be displaced by AI—but **97 million new roles** may emerge[^1].
+- **World Economic Forum's 2023 Report:** Predicts that by 2025, **85 million jobs** may be displaced by AI-but **97 million new roles** may emerge[^1].
 - **McKinsey Global Institute (2023 Update):** Estimates that by 2030, **375 million workers** (about 14% of the global workforce) will need to switch occupational categories due to automation[^11].
 - **Goldman Sachs Report:** AI could replace the equivalent of **300 million full-time jobs** and potentially increase the total annual value of goods and services produced globally by **7%**[^6].
 - **MIT and Boston University Report:** AI will replace as many as **2 million manufacturing workers** by 2025[^6].
@@ -67,7 +67,7 @@ The adoption of AI is expected to significantly impact various industries:
 - **A century ago:** Could anyone have predicted careers like "App Developer" or "Social Media Influencer"? They were too busy marveling at sliced bread!
 - **Today:** Jobs like "Space Tour Guide" or "Genetic Modification Specialist" might sound like sci-fi, but they could be as common as baristas soon.
 
-**Pause and Reflect:** What new industries or roles do you think could emerge in the next decade? How can you position yourself—or your kids—to be pioneers in these fields?
+**Pause and Reflect:** What new industries or roles do you think could emerge in the next decade? How can you position yourself-or your kids-to be pioneers in these fields?
 
 **Journal Prompt:** Imagine a futuristic job that doesn't exist today. Describe it in detail. What skills would it require? What impact would it have on society?
 
@@ -146,7 +146,7 @@ As AI reshapes economies, we need to rethink our notions of wealth and ownership
 
 ### What About the Billionaires?
 
-In an AI-driven economy, extreme wealth accumulation might not just be unethical—it could be obsolete.
+In an AI-driven economy, extreme wealth accumulation might not just be unethical-it could be obsolete.
 
 - **Wealth Taxes:** Proposals to redistribute excessive wealth and fund public services.
 - **Philanthrocapitalism:** Billionaires funding social causes (though systemic change might require more than charitable donations).

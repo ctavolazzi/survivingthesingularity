@@ -2,8 +2,10 @@
   import { onMount, onDestroy } from 'svelte';
   import { browser } from '$app/environment';
 
-  // Target: The window of maximum leverage — before AI fully commoditizes content creation
-  const TARGET_DATE = new Date('2030-01-01T00:00:00Z');
+  // Predicted Time to AGI - author's working forecast.
+  // Counter renders this as a live ticker; if AGI lands earlier or later,
+  // update this constant (single source of truth) and the prediction updates everywhere.
+  const TARGET_DATE = new Date('2027-11-19T00:00:00Z');
 
   let now = new Date();
   let interval;
@@ -31,7 +33,7 @@
   <div class="banner-inner">
     <div class="banner-left">
       <span class="banner-pulse"></span>
-      <span class="banner-label">Opportunity Window</span>
+      <span class="banner-label">Time to AGI (predicted)</span>
     </div>
     <div class="banner-countdown">
       <div class="count-block">

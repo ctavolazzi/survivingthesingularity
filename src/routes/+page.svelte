@@ -104,31 +104,30 @@
 	$: progressPercent = Math.round((completedCount / chapters.length) * 100);
 </script>
 
-<svelte:head>
-	<title>Surviving the Singularity — The Blueprint</title>
-	<meta name="description" content="A practical blueprint for building real independence. 4 steps, under $150K. Land, shelter, digital income, and local AI — a better path forward." />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Surviving the Singularity — The Blueprint" />
-	<meta property="og:description" content="A practical blueprint for material independence. 4 steps. Under $150K. There's a better way to build your future." />
-	<meta name="twitter:card" content="summary_large_image" />
-	{@html `<script type="application/ld+json">${JSON.stringify({
-		"@context": "https://schema.org",
-		"@type": "WebSite",
-		"name": "Surviving the Singularity",
-		"url": "https://survivingthesingularity.com",
-		"description": "A technical blueprint for material independence before AI changes everything."
-	})}</script>`}
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-</svelte:head>
+	<svelte:head>
+		<title>Surviving the Singularity</title>
+		<meta name="description" content="A field manual for staying agentic as AI rewrites work, money, medicine, and meaning. Open-draft book, full blueprint, and dispatches from the curve." />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Surviving the Singularity" />
+		<meta property="og:description" content="A field manual for staying agentic as AI rewrites work, money, medicine, and meaning." />
+		<meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content="/Surviving-the-Singularity-Cover.png" />
+		{@html `<script type="application/ld+json">${JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Surviving the Singularity",
+			"url": "https://survivingthesingularity.com",
+			"description": "A field manual for staying agentic as AI rewrites the way we get our needs met."
+		})}</script>`}
+	</svelte:head>
 
 <div class="page">
 	<FloatingNav sections={homeSections} />
 	<UrgencyBanner />
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE BRIEF — This is not a sales page.          -->
+	<!-- THE BRIEF - This is not a sales page.          -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="hero" id="brief">
 		<div class="hero-bg">
@@ -148,7 +147,7 @@
 				</h1>
 
 				<p class="hero-subtitle">
-					The old playbook — mortgage, career ladder, retire at 65 — was designed for a world that no longer
+					The old playbook (mortgage, career ladder, retire at 65) was designed for a world that no longer
 					exists. AI is rewriting every industry. Housing costs are out of control. But inside that disruption
 					is an opportunity most people haven't seen yet.
 				</p>
@@ -161,9 +160,7 @@
 					<div class="answer-bar"></div>
 					<div class="answer-content">
 						<p class="answer-text">
-							Buy land. Build a shop. Start a YouTube channel and film everything you make.
-							Run your own AI locally. Grow food. Teach your kids to be
-							<strong>builders</strong> — not just employees. This is the blueprint.
+							Secure land. Build a shop. Live like your ancestors, but with all the tools of the modern world. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is our blueprint. Are you ready?
 						</p>
 						<p class="answer-cost">
 							Total cost: <strong>under $150K</strong>. In some cases, <strong>under $30K</strong>.
@@ -194,7 +191,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- SITUATION REPORT — The numbers.                -->
+	<!-- SITUATION REPORT - The numbers.                -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section" id="situation" use:observe>
 		<div class="section-inner">
@@ -202,7 +199,7 @@
 				<span class="section-number">01</span>
 				<div>
 					<h2 class="section-title">The Reality Check</h2>
-					<p class="section-desc">The numbers that explain why the old path doesn't work — and why a new one is possible.</p>
+					<p class="section-desc">The numbers that explain why the old path doesn't work - and why a new one is possible.</p>
 				</div>
 			</div>
 
@@ -237,7 +234,7 @@
 					$2K GPU. The tools for independence have never been more accessible.
 				</p>
 				<p class="situation-punchline">
-					The old path is broken. But a better one exists — and it's cheaper than you think.
+					The old path is broken. But a better one exists - and it's cheaper than you think.
 				</p>
 			</div>
 
@@ -246,7 +243,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE PLAN — 4 steps. That's it.                 -->
+	<!-- THE PLAN - 4 steps. That's it.                 -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section section-emphasis" id="plan" use:observe>
 		<div class="section-inner">
@@ -266,7 +263,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE 4 STEPS — The core of everything.          -->
+	<!-- THE 4 STEPS - The core of everything.          -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section" id="steps" use:observe>
 		<div class="section-inner">
@@ -306,7 +303,7 @@
 					<p class="step-body">
 						Rural land in the U.S. can be acquired for <strong>$5,000–$30,000</strong> per acre in
 						areas with minimal building restrictions. Title 25 "Owner-Built Housing" provisions let
-						you build without a general contractor. Butte County, CA — 1-acre parcels for under $15K.
+						you build without a general contractor. Butte County, CA - 1-acre parcels for under $15K.
 						This is your sovereignty. The foundation of everything else.
 					</p>
 					<div class="step-tags">
@@ -326,7 +323,7 @@
 					</div>
 					<h3 class="step-title">Build a Shop</h3>
 					<p class="step-body">
-						Not a house — a <strong>shouse</strong>. Shop first, shelter second. A 40×60 red iron
+						Not a house - a <strong>shouse</strong>. Shop first, shelter second. A 40×60 red iron
 						steel building costs $25–$43/sq ft. The living space inside is a $8,000 partition. Compare
 						that to a $500K mortgage. Your shop is your production facility. Your living quarters are
 						an efficient afterthought. Flip the domestic hierarchy.
@@ -376,7 +373,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE STACK — What replaces what.                -->
+	<!-- THE STACK - What replaces what.                -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section" id="stack" use:observe>
 		<div class="section-inner">
@@ -384,7 +381,7 @@
 				<span class="section-number">03</span>
 				<div>
 					<h2 class="section-title">The Replacement Stack</h2>
-					<p class="section-desc">Every layer of the system that extracts from you — replaced with something you own. Click any row for details.</p>
+					<p class="section-desc">Every layer of the system that extracts from you - replaced with something you own. Click any row for details.</p>
 				</div>
 			</div>
 
@@ -393,7 +390,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- CALCULATOR — Run your numbers.                 -->
+	<!-- CALCULATOR - Run your numbers.                 -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section section-dark" id="calculator" use:observe>
 		<div class="section-inner">
@@ -409,7 +406,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- YOUR PATH — Personalized configurator.         -->
+	<!-- YOUR PATH - Personalized configurator.         -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section" id="path" use:observe>
 		<div class="section-inner">
@@ -425,7 +422,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- TIMELINE — When do you hit independence?        -->
+	<!-- TIMELINE - When do you hit independence?        -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section section-dark" id="timeline" use:observe>
 		<div class="section-inner">
@@ -433,7 +430,7 @@
 				<span class="section-number">06</span>
 				<div>
 					<h2 class="section-title">Your Timeline</h2>
-					<p class="section-desc">Input your numbers. See when you reach independence — and how much faster the shouse strategy gets you there.</p>
+					<p class="section-desc">Input your numbers. See when you reach independence - and how much faster the shouse strategy gets you there.</p>
 				</div>
 			</div>
 			<IndependenceCountdown />
@@ -441,7 +438,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE FULL BLUEPRINT — 8 chapters.               -->
+	<!-- THE FULL BLUEPRINT - 8 chapters.               -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section" id="chapters" use:observe>
 		<div class="section-inner">
@@ -486,7 +483,7 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- ACT NOW — This is not optional.                -->
+	<!-- ACT NOW - This is not optional.                -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section section-cta" id="act" use:observe>
 		<div class="section-inner cta-inner">

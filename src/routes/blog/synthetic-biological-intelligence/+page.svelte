@@ -317,7 +317,7 @@
       <div class="blog-content">
         <h2>Introduction: A Paradigm Shift on the Horizon</h2>
         <p>
-          Hold onto your neural implants, friends, because computing just made a quantum leap into the bioengineered unknown. Australian startup Cortical Labs has unveiled something wild: the CL1, the world's first commercial Synthetic Biological Intelligence (SBI) system. This isn't your average silicon-and-code setup. It's a genuine fusion of biology and tech—human neurons cultured directly onto silicon chips—ushering in a mind-bending new era in artificial intelligence.
+          Hold onto your neural implants, friends, because computing just made a quantum leap into the bioengineered unknown. Australian startup Cortical Labs has unveiled something wild: the CL1, the world's first commercial Synthetic Biological Intelligence (SBI) system. This isn't your average silicon-and-code setup. It's a genuine fusion of biology and tech-human neurons cultured directly onto silicon chips-ushering in a mind-bending new era in artificial intelligence.
         </p>
         <p>
           Launched at the Mobile World Congress in Barcelona, the CL1 represents not just another incremental upgrade, but a radical departure from traditional computing methods.
@@ -328,7 +328,7 @@
           Synthetic Biological Intelligence (SBI) combines the best of biology and silicon, creating computing systems that leverage the unique strengths of living brain tissue. At Cortical Labs, human neurons derived from induced pluripotent stem cells are grown into functioning neural networks. These neurons interface directly with specialized silicon microelectrode arrays (MEAs), which facilitate two-way electrical communication.
         </p>
         <p>
-          Unlike traditional AI, which relies on pre-programmed algorithms, SBI learns organically. Neurons adapt, adjust, and respond dynamically, much like the human brain. Previous experiments demonstrated that neuron-based systems could learn simple tasks—such as playing Pong—in mere minutes, showcasing rapid adaptability far beyond current AI capabilities.
+          Unlike traditional AI, which relies on pre-programmed algorithms, SBI learns organically. Neurons adapt, adjust, and respond dynamically, much like the human brain. Previous experiments demonstrated that neuron-based systems could learn simple tasks-such as playing Pong-in mere minutes, showcasing rapid adaptability far beyond current AI capabilities.
         </p>
 
         <h2>Why Should We Care?</h2>
@@ -336,7 +336,7 @@
           The potential here is staggering. SBI could revolutionize multiple fields, starting with medicine. With real human neurons performing computations, researchers gain unprecedented insights into neurological diseases, accelerating drug discovery and medical innovation.
         </p>
         <p>
-          But it doesn't stop there. The CL1's energy efficiency stands out starkly against traditional AI. While training a large AI model like GPT-3 consumes roughly 1,300 megawatt-hours—comparable to hundreds of homes annually—a full rack of 30 CL1 units sips only about 1,000 watts. In an era increasingly conscious of environmental sustainability, SBI could significantly cut the carbon footprint of data centers, aligning AI progress with ecological responsibility.
+          But it doesn't stop there. The CL1's energy efficiency stands out starkly against traditional AI. While training a large AI model like GPT-3 consumes roughly 1,300 megawatt-hours-comparable to hundreds of homes annually-a full rack of 30 CL1 units sips only about 1,000 watts. In an era increasingly conscious of environmental sustainability, SBI could significantly cut the carbon footprint of data centers, aligning AI progress with ecological responsibility.
         </p>
 
         <h2>Transformative Impacts</h2>

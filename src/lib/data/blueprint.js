@@ -1,5 +1,5 @@
 /**
- * Blueprint content data — The YouTube Shouse Blueprint
+ * Blueprint content data - The YouTube Shouse Blueprint
  * Each section maps to /blueprint/[section]
  */
 
@@ -12,7 +12,7 @@ export const sections = [
     content: [
       {
         type: 'prose',
-        text: `The 20th-century American Dream — characterized by a 30-year mortgage, corporate compliance, and status-seeking — is officially dead. The contemporary era is defined by a collapse in these traditional frameworks. The macro-economic landscape of 2026 is defined by a permanent reset of global purchasing power and a fundamental collapse of the post-war social contract.`
+        text: `The 20th-century American Dream - characterized by a 30-year mortgage, corporate compliance, and status-seeking - is officially dead. The contemporary era is defined by a collapse in these traditional frameworks. The macro-economic landscape of 2026 is defined by a permanent reset of global purchasing power and a fundamental collapse of the post-war social contract.`
       },
       {
         type: 'prose',
@@ -43,7 +43,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `This concentration is the result of liquidating the infrastructure — land and housing — that should have been the foundation for their descendants. Baby Boomers currently own 41% of all real estate in the United States, while Millennials hold only 21%, despite the latter cohort representing 34% of the home-owning aged population. Furthermore, one-third of Baby Boomers who own their homes report they will never sell.`
+        text: `This concentration is the result of liquidating the infrastructure - land and housing - that should have been the foundation for their descendants. Baby Boomers currently own 41% of all real estate in the United States, while Millennials hold only 21%, despite the latter cohort representing 34% of the home-owning aged population. Furthermore, one-third of Baby Boomers who own their homes report they will never sell.`
       },
       {
         type: 'prose',
@@ -51,7 +51,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `The traditional path — mortgage, career ladder, retirement — is mathematically inaccessible. The new path requires building something different.`
+        text: `The traditional path - mortgage, career ladder, retirement - is mathematically inaccessible. The new path requires building something different.`
       }
     ]
   },
@@ -63,7 +63,7 @@ export const sections = [
     content: [
       {
         type: 'prose',
-        text: `The architectural manifestation of the shift away from traditional housing is the shouse — a portmanteau of "shop" and "house." Unlike the traditional suburban home, which prioritizes leisure and sleeping quarters, the shouse model flips the domestic hierarchy. It prioritizes the production space (the shop) as the primary engine of the property, with the living quarters reduced to a secondary, highly efficient partition.`
+        text: `The architectural manifestation of the shift away from traditional housing is the shouse - a portmanteau of "shop" and "house." Unlike the traditional suburban home, which prioritizes leisure and sleeping quarters, the shouse model flips the domestic hierarchy. It prioritizes the production space (the shop) as the primary engine of the property, with the living quarters reduced to a secondary, highly efficient partition.`
       },
       {
         type: 'table',
@@ -120,6 +120,54 @@ export const sections = [
       {
         type: 'prose',
         text: `If choosing the travel trailer option, a used trailer can be purchased for under $5,000, leaving $3,000 for site preparation, a gravel pad, and a basic electrical hookup. The "pre-built" nature of the trailer handles most of the budget's requirements.`
+      },
+      {
+        type: 'heading',
+        text: 'The Community Shouse: Collective Property Ownership'
+      },
+      {
+        type: 'prose',
+        text: `The shouse model scales beyond the individual. A community shouse - sometimes called a "maker commons" or "cooperative homestead" - applies the same low-overhead industrial architecture to collective land ownership. Three to eight households pooling capital can acquire substantially more land per dollar and share the fixed costs of infrastructure: water well, solar array, septic system, and broadband. The individual unit cost drops by 40–60% while the total productive capacity multiplies.`
+      },
+      {
+        type: 'table',
+        title: 'Individual vs. Community Shouse Economics',
+        headers: ['Variable', 'Solo Shouse (5 acres)', 'Community Shouse (30 acres / 6 units)'],
+        rows: [
+          ['Land acquisition', '~$30,000', '~$90,000 (~$15,000/unit)'],
+          ['Infrastructure (well, septic, solar)', '~$35,000', '~$60,000 (~$10,000/unit)'],
+          ['Per-unit steel shell build', '~$40,000', '~$35,000 (bulk material discount)'],
+          ['All-in per household cost', '~$105,000', '~$60,000'],
+          ['Productive food area (shared)', '0.25 acres', '4+ acres (~0.67 acres/unit)'],
+          ['Monthly overhead per household', '~$600 - $900', '~$250 - $400'],
+        ]
+      },
+      {
+        type: 'heading',
+        text: 'Legal Structures for Collective Ownership'
+      },
+      {
+        type: 'prose',
+        text: `Three structures dominate community land ownership in the current regulatory environment. Each trades governance complexity for different degrees of individual control and tax advantage.`
+      },
+      {
+        type: 'table',
+        title: 'Collective Ownership Structures',
+        headers: ['Structure', 'Ownership Model', 'Exit Mechanism', 'Best For'],
+        rows: [
+          ['Tenancy in Common (TIC)', 'Fractional undivided interest', 'Sell individual share; buy-out required', 'Small groups (2-4), high trust'],
+          ['LLC (Member-Managed)', 'Membership units = land rights', 'Operating agreement governs buyout', 'Flexibility; limits personal liability'],
+          ['Community Land Trust (CLT)', 'Trust holds land; residents own improvements', 'Resale formula limits equity gain', 'Long-term affordability; mission-driven'],
+          ['Agricultural Co-op', 'Member equity; patronage dividends', 'Share redemption per bylaws', 'Production-first; IRS 521 tax benefits'],
+        ]
+      },
+      {
+        type: 'prose',
+        text: `The LLC model is the most common entry point for small groups. Draft an operating agreement that specifies: (1) decision rights by membership unit, (2) a right of first refusal if any member exits, (3) a formula for capital contributions and sweat equity conversion, and (4) minimum residency obligations to prevent absentee ownership drift. The Community Land Trust model is optimal when the primary goal is permanent affordability across generations - the trust retains ownership of the underlying land, permanently decoupling it from speculative markets.`
+      },
+      {
+        type: 'callout',
+        text: `The community shouse is not a commune. Each unit maintains a private living envelope and independent income streams. The shared layer is infrastructure and land - the most expensive and least movable assets. This is cooperative economics applied surgically to the parts of life where individual ownership is financially irrational.`
       }
     ]
   },
@@ -260,6 +308,50 @@ export const sections = [
       {
         type: 'callout',
         text: `Recommended models: dolphin-3.0-llama-4-8b for instruction accuracy without refusal; qwen-2.5-coder-32b for superior coding performance.`
+      },
+      {
+        type: 'heading',
+        text: 'Offline AI for Healthcare'
+      },
+      {
+        type: 'prose',
+        text: `Healthcare is the most acute dependency most households have on corporate infrastructure. A single emergency room visit averages $2,200 out-of-pocket. Primary care is gated behind insurance, referral queues, and geographic access. Offline AI does not replace emergency medicine - it addresses the 80% of healthcare interactions that are informational: symptom triage, medication interactions, dosage guidance, chronic condition management, and mental health support.`
+      },
+      {
+        type: 'prose',
+        text: `A local medical RAG system combines a quantized LLM with a curated corpus of peer-reviewed literature (PubMed Open Access, Merck Manual, CDC guidelines) indexed into a local vector database. Queries never leave the hardware. The model has no financial incentive to upsell pharmaceuticals or procedures. For a rural shouse community 45 minutes from the nearest urgent care, this is the difference between a 3 AM panic spiral and a calibrated first-response decision.`
+      },
+      {
+        type: 'table',
+        title: 'Offline Healthcare AI Stack',
+        headers: ['Layer', 'Tool', 'Purpose', 'Hardware Req.'],
+        rows: [
+          ['Inference engine', 'Ollama / llama.cpp', 'Run quantized medical LLM', 'RTX 3090 or M2 Pro+'],
+          ['Medical knowledge base', 'PubMed OA + Merck Manual + UpToDate (offline export)', 'RAG source corpus', '~50GB SSD'],
+          ['Vector database', 'ChromaDB or Qdrant (self-hosted)', 'Semantic search over corpus', '8GB RAM minimum'],
+          ['RAG orchestration', 'Anything-LLM or Open WebUI (RAG mode)', 'Query routing + context injection', 'Same machine'],
+          ['Wearable telemetry', 'Withings / Garmin local sync', 'Vital trends without cloud upload', 'Local WiFi only'],
+          ['Emergency reference', 'Where There Is No Doctor (offline PDF + embedded)', 'Field-level triage guide', 'Offline-first'],
+        ]
+      },
+      {
+        type: 'table',
+        title: 'Recommended Models for Medical Use Cases',
+        headers: ['Model', 'Parameters', 'Strength', 'Use Case'],
+        rows: [
+          ['Med42-v2 (M42 Health)', '70B (Q4)', 'Clinical reasoning; trained on medical text', 'Symptom triage, DDx support'],
+          ['BioMistral-7B', '7B (Q4)', 'Biomedical literature comprehension', 'Research summaries, drug interactions'],
+          ['Llama 3.1-70B (uncensored)', '70B (Q4)', 'General reasoning; no refusals', 'Mental health support, frank discussion'],
+          ['OpenBioLLM-70B', '70B (Q4)', 'USMLE-level medical knowledge', 'Detailed clinical questions'],
+        ]
+      },
+      {
+        type: 'prose',
+        text: `Critical implementation notes: (1) All medical AI outputs are informational, not diagnostic. The stack must surface this disclaimer in the UI at every response. (2) The corpus must be version-controlled and updated quarterly - stale medical literature is worse than no literature. (3) For community deployments, run the stack on a dedicated machine accessible over local LAN - members can query from any device without internet. (4) Pair with a physical medical kit: tourniquets, wound closure strips, SAM splints, and a printed copy of "Where There Is No Doctor" - analog backup for power-out scenarios.`
+      },
+      {
+        type: 'callout',
+        text: `Medical sovereignty is not about avoiding doctors. It is about removing the information asymmetry between patient and system. When you can query 40 million peer-reviewed papers in 3 seconds on your own hardware, you walk into any clinical encounter as an equal.`
       }
     ]
   },
@@ -314,7 +406,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `Title 25 empowers homeowners to construct homes using non-industrial methods. This is the literal cure — using one's own hands to build a home and workshop outside the permission of megalithic corporations.`
+        text: `Title 25 empowers homeowners to construct homes using non-industrial methods. This is the literal cure - using one's own hands to build a home and workshop outside the permission of megalithic corporations.`
       }
     ]
   },
@@ -373,6 +465,46 @@ export const sections = [
       {
         type: 'prose',
         text: `Other open-source platforms include OpenMower (RTK GPS-guided lawn mowing via Raspberry Pi) and Acorn by Twisted Fields (autonomous solar-powered rover for farming at scale).`
+      },
+      {
+        type: 'heading',
+        text: 'Semi-Autonomous Community Supported Agriculture (CSA)'
+      },
+      {
+        type: 'prose',
+        text: `Community Supported Agriculture is a pre-purchase food subscription model: members pay upfront for a season's share of a farm's harvest, shifting financial risk from farmer to community. The conventional CSA relies on hand labor. The semi-autonomous CSA layers open-source robotics (FarmBot, Acorn, OpenMower) with a scheduling software layer so that most routine operations - seeding, watering, weeding, soil monitoring - run without daily human intervention. Labor input shifts from daily maintenance to weekly harvesting and equipment checks.`
+      },
+      {
+        type: 'table',
+        title: 'Semi-Autonomous CSA Configuration (20 Shares)',
+        headers: ['Component', 'Role', 'Est. Cost', 'Automation Level'],
+        rows: [
+          ['FarmBot Genesis MAX (×2)', 'Precision planting, watering, weeding', '~$14,000', 'Full (seeding, irrigation, weeding)'],
+          ['Acorn Rover (Twisted Fields)', 'Row cultivation, soil monitoring', '~$12,000', 'Supervised autonomous'],
+          ['Raspberry Pi sensor network', 'Soil moisture, pH, temperature telemetry', '~$600', 'Continuous passive'],
+          ['n8n self-hosted workflow', 'Schedule coordination + alert routing', '~$0 (self-hosted)', 'Automated'],
+          ['Walk-in cold storage (DIY)', 'Post-harvest preservation', '~$3,000 - $5,000', 'Thermostat-controlled'],
+          ['Share distribution app (Farmigo fork)', 'Member management + pickup scheduling', '~$0 (open-source)', 'Self-service'],
+        ]
+      },
+      {
+        type: 'prose',
+        text: `A 20-share CSA at $600/share/season generates $12,000 in guaranteed pre-season revenue. With automated production reducing labor costs, a two-person operation managing the above stack can sustain 20–30 shares while holding day jobs. At 50 shares the operation becomes a primary income source. The cooperative overlay - where share members collectively own the land and equipment via an LLC or CLT - eliminates the single largest failure mode of traditional CSAs: land tenure insecurity.`
+      },
+      {
+        type: 'table',
+        title: 'CSA Scale Economics',
+        headers: ['Scale', 'Shares', 'Annual Revenue', 'Robot Coverage', 'Human Hours/Week'],
+        rows: [
+          ['Starter', '10-15', '$6,000 - $9,000', '60%', '8-12 hrs'],
+          ['Sustainable', '20-35', '$12,000 - $21,000', '75%', '12-18 hrs'],
+          ['Livelihood', '50-80', '$30,000 - $48,000', '85%', '20-30 hrs'],
+          ['Community Enterprise', '100+', '$60,000+', '90%+', 'Hired crew justified'],
+        ]
+      },
+      {
+        type: 'callout',
+        text: `The semi-autonomous CSA is the agricultural equivalent of the content engine: build the machine once, then operate it at low marginal cost. The land trust provides the stable base. The automation stack handles the daily labor. The community provides the capital and the market simultaneously.`
       }
     ]
   },
@@ -400,7 +532,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Every digital product follows a hyper-efficient five-part structure: A) What is happening — raw data and diagnostic breakdown. B) What is happening next — projections and evidence-based forecasts. C) Why — underlying mechanisms and causal relationships. D) What important people are saying — expert insights. E) Speculation — original interpretations and second-order insights.`
+        text: `Every digital product follows a hyper-efficient five-part structure: A) What is happening - raw data and diagnostic breakdown. B) What is happening next - projections and evidence-based forecasts. C) Why - underlying mechanisms and causal relationships. D) What important people are saying - expert insights. E) Speculation - original interpretations and second-order insights.`
       },
       {
         type: 'heading',
@@ -420,7 +552,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `The 2026 YouTube algorithm rewards high-frequency, unpolished, authentic content. Consistent output — making three videos to beat the 99% who never make more than two — is the key to establishing a digital flag.`
+        text: `The 2026 YouTube algorithm rewards high-frequency, unpolished, authentic content. Consistent output - making three videos to beat the 99% who never make more than two - is the key to establishing a digital flag.`
       }
     ]
   },

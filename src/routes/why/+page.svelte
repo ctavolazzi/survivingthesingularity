@@ -41,12 +41,12 @@
 	}
 
 	const timeline = [
-		{ year: '2017', event: 'Transformer architecture invented at Google', impact: 'The architecture behind every modern AI', source: 'Attention Is All You Need — Vaswani et al.' },
+		{ year: '2017', event: 'Transformer architecture invented at Google', impact: 'The architecture behind every modern AI', source: 'Attention Is All You Need - Vaswani et al.' },
 		{ year: '2020', event: 'GPT-3 demonstrates emergent reasoning', impact: '175B parameters. Few-shot learning surprises researchers.', source: 'OpenAI' },
 		{ year: '2022', event: 'ChatGPT reaches 100M users in 2 months', impact: 'Fastest-growing consumer application in history', source: 'Reuters' },
 		{ year: '2023', event: 'GPT-4 passes bar exam, medical boards, CPA exam', impact: 'AI outperforms 90th percentile of human professionals', source: 'OpenAI Technical Report' },
 		{ year: '2024', event: 'Claude, Gemini, and open-source models reach near-expert level', impact: 'AI coding, writing, and analysis becomes routine', source: 'Multiple benchmarks' },
-		{ year: '2025', event: 'AI agents begin automating multi-step workflows', impact: 'AI doesn\'t just answer — it acts', source: 'Anthropic, OpenAI, Google' },
+		{ year: '2025', event: 'AI agents begin automating multi-step workflows', impact: 'AI doesn\'t just answer - it acts', source: 'Anthropic, OpenAI, Google' },
 		{ year: '2027', event: 'Projected: AI matches median human performance broadly', impact: 'Leopold Aschenbrenner\'s "Situational Awareness" timeline', source: 'situational-awareness.ai' },
 		{ year: '2030', event: 'Projected: Artificial General Intelligence', impact: 'Multiple credible researchers predict AGI by this date', source: 'Metaculus, Kurzweil, Hinton' },
 	];
@@ -55,7 +55,7 @@
 		{
 			name: 'Leopold Aschenbrenner',
 			role: 'Former OpenAI researcher',
-			quote: 'We are on the cusp of the most significant technological transformation in human history. By 2027, AI systems will likely be able to do the work of an AI researcher — and then the intelligence explosion begins.',
+			quote: 'We are on the cusp of the most significant technological transformation in human history. By 2027, AI systems will likely be able to do the work of an AI researcher - and then the intelligence explosion begins.',
 			source: 'Situational Awareness (2024)',
 			url: 'https://situational-awareness.ai/',
 			key: true
@@ -71,7 +71,7 @@
 		{
 			name: 'Ray Kurzweil',
 			role: 'Inventor, futurist, Google Director of Engineering',
-			quote: 'By 2029, computers will have human-level intelligence... The singularity — the moment when AI surpasses human intelligence — will happen by 2045.',
+			quote: 'By 2029, computers will have human-level intelligence... The singularity - the moment when AI surpasses human intelligence - will happen by 2045.',
 			source: 'The Singularity Is Nearer (2024)',
 			url: 'https://en.wikipedia.org/wiki/The_Singularity_Is_Nearer',
 			key: false
@@ -115,9 +115,9 @@
 </script>
 
 <svelte:head>
-	<title>Why This Matters — The Singularity, Explained | Surviving the Singularity</title>
-	<meta name="description" content="The evidence for artificial superintelligence is overwhelming. Here's what the top researchers are saying — and what you can do about it." />
-	<meta property="og:title" content="Why This Matters — The Singularity, Explained" />
+	<title>Why This Matters - The Singularity, Explained | Surviving the Singularity</title>
+	<meta name="description" content="The evidence for artificial superintelligence is overwhelming. Here's what the top researchers are saying - and what you can do about it." />
+	<meta property="og:title" content="Why This Matters - The Singularity, Explained" />
 	<meta property="og:description" content="The evidence for artificial superintelligence is overwhelming. Here's what you can do about it." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
@@ -146,7 +146,7 @@
 				</h1>
 
 				<p class="hero-sub">
-					The world's top AI researchers — the people actually building these systems — agree:
+					The world's top AI researchers - the people actually building these systems - agree:
 					artificial intelligence will match and then exceed human-level capability across every domain
 					within the next 3-10 years. Here's the evidence, in their own words.
 				</p>
@@ -164,11 +164,11 @@
 	<!-- SECTION 1: THE TIMELINE -->
 	<section class="section" use:observe>
 		<div class="section-inner">
-			<div class="section-label">01 — THE EVIDENCE</div>
+			<div class="section-label">01 - THE EVIDENCE</div>
 			<h2 class="section-title">The acceleration is measurable.</h2>
 			<p class="section-desc">
 				Each year, AI capabilities that experts predicted were decades away arrive months later.
-				This isn't hype — it's published research with reproducible results.
+				This isn't hype - it's published research with reproducible results.
 			</p>
 
 			<div class="timeline" use:stagger={{ delay: 100 }}>
@@ -192,11 +192,11 @@
 	<!-- SECTION 2: THE VOICES -->
 	<section class="section section-dark" use:observe>
 		<div class="section-inner">
-			<div class="section-label">02 — THE VOICES</div>
+			<div class="section-label">02 - THE VOICES</div>
 			<h2 class="section-title">What the builders themselves are saying.</h2>
 			<p class="section-desc">
 				These aren't journalists or pundits. These are the people building the most powerful AI systems
-				on Earth — and they're all saying the same thing.
+				on Earth - and they're all saying the same thing.
 			</p>
 
 			<div class="quotes-grid" use:stagger={{ delay: 120 }}>
@@ -226,7 +226,7 @@
 					<p class="callout-text">
 						<strong><a href="https://situational-awareness.ai/" target="_blank" rel="noopener noreferrer">Situational Awareness</a></strong>
 						by Leopold Aschenbrenner is the single most important document written about AI in 2024.
-						A former OpenAI superalignment researcher lays out — with receipts — exactly why AGI is likely
+						A former OpenAI superalignment researcher lays out - with receipts - exactly why AGI is likely
 						by 2027, what that means for the world, and why almost nobody is prepared.
 					</p>
 					<p class="callout-read-time">~2 hour read. Worth every minute.</p>
@@ -238,7 +238,7 @@
 	<!-- SECTION 3: CAPABILITY COMPARISON -->
 	<section class="section" use:observe>
 		<div class="section-inner">
-			<div class="section-label">03 — THE BENCHMARKS</div>
+			<div class="section-label">03 - THE BENCHMARKS</div>
 			<h2 class="section-title">AI vs. Human Performance</h2>
 			<p class="section-desc">
 				In 2020, AI couldn't reliably write a paragraph. Today it passes professional licensing exams.
@@ -272,7 +272,7 @@
 	<!-- SECTION 4: THE KEY QUESTION -->
 	<section class="section section-pivot" use:observe>
 		<div class="section-inner">
-			<div class="section-label">04 — THE QUESTION</div>
+			<div class="section-label">04 - THE QUESTION</div>
 			<h2 class="section-title-large">
 				So what do you <em>do</em> with this information?
 			</h2>
@@ -282,7 +282,7 @@
 			</p>
 			<p class="pivot-text">
 				Instead of competing with AI for jobs, <strong>use AI as a force multiplier</strong>
-				to build something real — physical, owned, and independent.
+				to build something real - physical, owned, and independent.
 			</p>
 
 			<div class="pivot-insight">
@@ -297,7 +297,7 @@
 	<!-- SECTION 5: THE BOOK FUNNEL BEGINS -->
 	<section class="section section-book" use:observe>
 		<div class="section-inner">
-			<div class="section-label">05 — THE BLUEPRINT</div>
+			<div class="section-label">05 - THE BLUEPRINT</div>
 			<h2 class="section-title">We wrote the playbook.</h2>
 			<p class="section-desc">
 				"Surviving the Singularity" isn't about predictions. It's about <strong>what to do</strong>.
@@ -325,35 +325,35 @@
 					<ul class="book-toc">
 						<li class="book-toc-item">
 							<span class="toc-num">01</span>
-							<span class="toc-text">The economic trap — why the old path is broken (with math)</span>
+							<span class="toc-text">The economic trap - why the old path is broken (with math)</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">02</span>
-							<span class="toc-text">The Shouse model — $8K living space vs. $500K mortgage</span>
+							<span class="toc-text">The Shouse model - $8K living space vs. $500K mortgage</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">03</span>
-							<span class="toc-text">The YouTube content engine — how to fund your build</span>
+							<span class="toc-text">The YouTube content engine - how to fund your build</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">04</span>
-							<span class="toc-text">Digital sovereignty — running your own AI, offline, forever</span>
+							<span class="toc-text">Digital sovereignty - running your own AI, offline, forever</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">05</span>
-							<span class="toc-text">The physical exit — land, building codes, and rural strategy</span>
+							<span class="toc-text">The physical exit - land, building codes, and rural strategy</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">06</span>
-							<span class="toc-text">Open-source robotics — FarmBot, Mobile Aloha, automation</span>
+							<span class="toc-text">Open-source robotics - FarmBot, Mobile Aloha, automation</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">07</span>
-							<span class="toc-text">The cash engine — digital products, passive income, escape velocity</span>
+							<span class="toc-text">The cash engine - digital products, passive income, escape velocity</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">08</span>
-							<span class="toc-text">Execute — immediate action steps, no excuses</span>
+							<span class="toc-text">Execute - immediate action steps, no excuses</span>
 						</li>
 					</ul>
 
@@ -379,7 +379,7 @@
 	<!-- SECTION 6: SOCIAL PROOF / TESTIMONIALS PLACEHOLDER -->
 	<section class="section section-dark" use:observe>
 		<div class="section-inner">
-			<div class="section-label">06 — THE COMMUNITY</div>
+			<div class="section-label">06 - THE COMMUNITY</div>
 			<h2 class="section-title">People are already building.</h2>
 
 			<div class="proof-grid" use:stagger={{ delay: 100 }}>

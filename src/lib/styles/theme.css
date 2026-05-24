@@ -1,13 +1,13 @@
 /* theme.css - Central theme variables for Surviving the Singularity */
-/* Rebuilt: February 2026 — Material Independence Edition */
+/* Rebuilt: February 2026 - Material Independence Edition */
 
 :root {
-  /* Primary — Amber/Builder energy */
+  /* Primary - Amber/Builder energy */
   --color-primary: #f59e0b;
   --color-primary-dark: #d97706;
   --color-primary-light: #fbbf24;
 
-  /* Secondary — Cool blue for contrast */
+  /* Secondary - Cool blue for contrast */
   --color-secondary: #3b82f6;
   --color-secondary-dark: #2563eb;
   --color-secondary-light: #60a5fa;

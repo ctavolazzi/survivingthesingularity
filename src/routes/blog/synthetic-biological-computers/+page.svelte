@@ -106,7 +106,7 @@
       a mechanical and engineering approach to intelligence. We're using the substrate of intelligence,
       which is biological neurons, but we're assembling them in a new way."
     </p>
-    <p class="mt-2 text-right text-sm">— Brett Kagan, Chief Scientific Officer</p>
+    <p class="mt-2 text-right text-sm">- Brett Kagan, Chief Scientific Officer</p>
   </div>
 
   <h2>How Synthetic Biological Intelligence Works</h2>

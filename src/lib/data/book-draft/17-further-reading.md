@@ -36,7 +36,7 @@ To continue your journey into the world of AI, here are some recommended books, 
 1. [The AI Revolution: The Road to Superintelligence](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html) by Tim Urban
    - A long-form article providing an accessible introduction to the concept of superintelligent AI.
 
-2. [Artificial Intelligence — The Revolution Hasn't Happened Yet](https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7) by Michael Jordan
+2. [Artificial Intelligence - The Revolution Hasn't Happened Yet](https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7) by Michael Jordan
    - A perspective on the current state and future directions of AI research.
 
 3. [The Ethics of Artificial Intelligence](https://nickbostrom.com/ethics/artificial-intelligence.pdf) by Nick Bostrom and Eliezer Yudkowsky

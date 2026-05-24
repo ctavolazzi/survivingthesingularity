@@ -3,7 +3,7 @@
 
   let mounted = false;
 
-  // Simulated "live" data points — these animate/tick on mount
+  // Simulated "live" data points - these animate/tick on mount
   let metrics = [
     { label: 'Dollar Purchasing Power', value: 0.798, display: '$0.80', unit: 'per 2020 dollar', trend: 'down', color: '#ef4444', sparkline: [1.0, 0.97, 0.93, 0.88, 0.85, 0.82, 0.80] },
     { label: 'Median Home Price', value: 500000, display: '$500K', unit: 'United States', trend: 'up', color: '#ef4444', sparkline: [290, 320, 350, 400, 430, 475, 500] },
@@ -17,7 +17,7 @@
 
   onMount(() => {
     mounted = true;
-    // Subtle tick animation — randomly update sparkline tails
+    // Subtle tick animation - randomly update sparkline tails
     tickInterval = setInterval(() => {
       metrics = metrics.map(m => {
         const last = m.sparkline[m.sparkline.length - 1];

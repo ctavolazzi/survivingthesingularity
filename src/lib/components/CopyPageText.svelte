@@ -58,7 +58,7 @@
         copied = false;
       }, 3000);
     } catch (err) {
-      addToast('Failed to copy — try selecting text manually', 'error');
+      addToast('Failed to copy - try selecting text manually', 'error');
     }
 
     copying = false;
@@ -69,7 +69,7 @@
   class="copy-page-btn"
   class:copy-page-copied={copied}
   on:click={copyPageText}
-  title="Copy page text to clipboard — paste into your AI chatbot"
+  title="Copy page text to clipboard - paste into your AI chatbot"
   aria-label="Copy page text to clipboard"
 >
   {#if copied}

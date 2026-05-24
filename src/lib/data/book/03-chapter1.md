@@ -4,11 +4,11 @@
 
 No, seriously.
 
-You're afraid. I get it. Who wouldn't be? The idea of a world where machines outsmart us, outpace us, and even outkill us is enough to send anyone into a spiral of existential dread. But here's the thing—that fear you feel is good. It means you're paying attention. You're not like all these other folks still committed to the status quo, driving their heads further and further down into the sand to ignore the blaring alarms that are screaming all around us.
+You're afraid. I get it. Who wouldn't be? The idea of a world where machines outsmart us, outpace us, and even outkill us is enough to send anyone into a spiral of existential dread. But here's the thing, that fear you feel is good. It means you're paying attention. You're not like all these other folks still committed to the status quo, driving their heads further and further down into the sand to ignore the blaring alarms that are screaming all around us.
 
 For centuries, we've been grappling with the idea of artificial intelligence and the inevitable consequences of playing God. The most famous old-world example would be Mary Shelley's *Frankenstein*. This tale of a scientist creating life only to discover he has unleashed a force beyond his control mirrors our current trajectory with AI. Just like Victor's creation, AI began as a controlled experiment, something we could manage and understand. However, as it evolves, we find ourselves in a reality where our creations may not be so manageable after all.
 
-Echoes of this narrative can be found in the Golem of Jewish folklore, *The Terminator*, and *The Matrix*—stories about artificially constructed intelligences that become more than their creators anticipated. These narratives, once confined to the realm of fiction, are now becoming our reality. We are entering an age where AI is rapidly unraveling our preconceived notions about how things "should be."
+Echoes of this narrative can be found in the Golem of Jewish folklore, *The Terminator*, and *The Matrix*, stories about artificially constructed intelligences that become more than their creators anticipated. These narratives, once confined to the realm of fiction, are now becoming our reality. We are entering an age where AI is rapidly unraveling our preconceived notions about how things "should be."
 
 From Siri to self-driving cars, we're beginning to entrust our very lives and livelihoods to machines that can think on their own, learn, and make decisions. Not just respond to stimuli, but proactively make choices. 
 
@@ -24,23 +24,23 @@ And here's the kicker: this is just the beginning. The pace of AI development is
 
 What do we do with this fear that gnaws at us? Do we run and hide, hoping the Singularity will somehow not come to pass? Do we rage against the machines, trying to halt the inexorable tide of progress? Or do we face our fears head-on, armed with knowledge and maybe a healthy dose of dark humor?
 
-I vote for the latter, because here's the thing—the Singularity isn't just coming, it's here. And whether we like it or not, it's knocking on our doorstep and we are all along for the ride. 
+I vote for the latter, because here's the thing, the Singularity isn't just coming, it's here. And whether we like it or not, it's knocking on our doorstep and we are all along for the ride. 
 
 There is nothing you can do as an individual to stop it or change its course. You can simply strap in and start figuring out how to navigate this brave new world that we are all collectively being dragged into, kicking and screaming by those who are forging the path running ahead full speed.
 
 Never in history has society been more fractured, more divided, and more lonely. We're more connected than ever, and yet we've never felt so lost. And now, with the rise of AI and the impending Singularity, we face a threat that could either unite us in our shared humanity or tear us apart completely. It all depends on how we choose to confront our fears and navigate this uncharted territory together.
 
-But here's the silver lining: knowledge is power. Understanding the changes happening around us is the first step to not just surviving, but thriving in this new world. AI isn't inherently good or evil—it's a tool, arguably the most powerful one humanity has ever created. And like any tool, its impact depends on how we choose to use it.
+But here's the silver lining: knowledge is power. Understanding the changes happening around us is the first step to not just surviving, but thriving in this new world. AI isn't inherently good or evil, it's a tool, arguably the most powerful one humanity has ever created. And like any tool, its impact depends on how we choose to use it.
 
 Let's break it down. What exactly are we dealing with here? At its core, AI is about creating systems that can perform tasks that typically require human intelligence. This includes things like visual perception, speech recognition, decision-making, and language translation. But modern AI goes far beyond these basic tasks.
 
 We're now in the realm of machine learning and deep learning, where AI systems can improve their performance on a task over time without being explicitly programmed to do so. They can recognize patterns, make predictions, and even generate new content based on what they've learned.
 
-Take, for example, GPT-3, one of the most advanced language models out there. It can write essays, answer questions, and even code websites with a level of coherence and creativity that's frankly unsettling. Or consider DeepMind's AlphaFold, which has essentially solved the protein folding problem, a challenge that's stumped biologists for decades. These aren't just incremental improvements—they're quantum leaps in capability that are reshaping entire fields of study and industry.
+Take, for example, GPT-3, one of the most advanced language models out there. It can write essays, answer questions, and even code websites with a level of coherence and creativity that's frankly unsettling. Or consider DeepMind's AlphaFold, which has essentially solved the protein folding problem, a challenge that's stumped biologists for decades. These aren't just incremental improvements, they're quantum leaps in capability that are reshaping entire fields of study and industry.
 
 But it's not all doom and gloom. AI is also being used to tackle some of humanity's biggest challenges. It's helping us develop new medicines, combat climate change, and make our cities smarter and more sustainable. AI-powered robots are exploring the depths of our oceans and the far reaches of our solar system, expanding the boundaries of human knowledge.
 
-So, what's a poor, squishy human to do in the face of this impending digital doom (or salvation, depending on your perspective)? That's where this book comes in. We're going to explore the weird, wild world of AI and figure out how to survive—maybe even thrive—in a world where our silicon siblings start calling the shots.
+So, what's a poor, squishy human to do in the face of this impending digital doom (or salvation, depending on your perspective)? That's where this book comes in. We're going to explore the weird, wild world of AI and figure out how to survive, maybe even thrive, in a world where our silicon siblings start calling the shots.
 
 Throughout this book, we'll delve deeper into the roots of our fears, including the root of that loneliness, the cultural narrative surrounding AI and the singularity, as well as what you can do to prepare yourself and your loved ones for what is about to happen. We'll explore the cultural and psychological factors that shape our anxieties and examine how these fears have evolved over time. We will identify which ones are based in reality and which ones are based in ego, and we will also identify some fears that you don't have yet, but you should.
 
@@ -54,7 +54,7 @@ But let's be clear: this isn't about becoming a tech guru or a coding wizard. It
 
 Think about it this way: every major technological revolution in history has brought with it both challenges and opportunities. The industrial revolution displaced many workers but also created entirely new industries and job categories. The digital revolution transformed the way we communicate and do business, rendering some skills obsolete while making others invaluable.
 
-The AI revolution will be no different. Yes, it will disrupt many traditional jobs and industries. But it will also create new ones we can't even imagine yet. The key is to stay adaptable, to keep learning, and to focus on developing the skills that make us uniquely human—creativity, empathy, critical thinking, and complex problem-solving.
+The AI revolution will be no different. Yes, it will disrupt many traditional jobs and industries. But it will also create new ones we can't even imagine yet. The key is to stay adaptable, to keep learning, and to focus on developing the skills that make us uniquely human, creativity, empathy, critical thinking, and complex problem-solving.
 
 Moreover, as AI systems become more prevalent and powerful, there's an increasing need for people who can act as bridges between the world of AI and the world of human needs and values. We need ethicists who can grapple with the moral implications of AI decisions, policymakers who can create frameworks for responsible AI development, and educators who can prepare the next generation for this AI-driven world.
 

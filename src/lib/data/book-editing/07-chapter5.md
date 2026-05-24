@@ -1,6 +1,6 @@
 # Chapter 5: School of the Future (No Hoverboards, Just Smart Blackboards)
 
-Remember when classroom technology meant a squeaky overhead projector and chalk-dusted erasers? We've already explored how AI is transforming our workplaces, homes, and healthcare—now it's revolutionizing education too. Just as your smart fridge might judge your midnight snacks and AI doctors analyze your health patterns, the classroom is becoming an intelligent ecosystem that adapts to each student's needs. Fasten your seat belts—your next learning experience might look more like a sci-fi film set, minus the dystopia (hopefully). In this new era, your teacher might have a digital sidekick that never tires, never gets bored, and never leaves your homework ungraded in a forgotten pile.
+Remember when classroom technology meant a squeaky overhead projector and chalk-dusted erasers? We've already explored how AI is transforming our workplaces, homes, and healthcare-now it's revolutionizing education too. Just as your smart fridge might judge your midnight snacks and AI doctors analyze your health patterns, the classroom is becoming an intelligent ecosystem that adapts to each student's needs. Fasten your seat belts-your next learning experience might look more like a sci-fi film set, minus the dystopia (hopefully). In this new era, your teacher might have a digital sidekick that never tires, never gets bored, and never leaves your homework ungraded in a forgotten pile.
 
 ### A Day in the AI-Enhanced Classroom
 
@@ -20,7 +20,7 @@ Say goodbye to 20-pound backpacks. Digital textbooks can now update overnight wi
 
 ### AI Teachers: Assistants, Not Replacements
 
-Relax—no one's banishing human teachers to the unemployment line just yet. AI is more like a hyper-efficient teacher's aide, handling the repetitive grunt work: grading standardized tests, prepping routine quizzes, or fielding basic questions at 2 a.m. The magic still lies in human interaction, empathy, and those spontaneous "teachable moments" algorithms can't replicate.
+Relax-no one's banishing human teachers to the unemployment line just yet. AI is more like a hyper-efficient teacher's aide, handling the repetitive grunt work: grading standardized tests, prepping routine quizzes, or fielding basic questions at 2 a.m. The magic still lies in human interaction, empathy, and those spontaneous "teachable moments" algorithms can't replicate.
 
 - **Personalized Attention**: Freed from tedious tasks, teachers have more time to address complex questions, spark creativity, and foster social-emotional skills.
 - **Continuous Coaching**: AI can point out where a student struggles, but a human educator knows how to interpret that data, offering real-world context and a supportive pat on the back.
@@ -36,7 +36,7 @@ Of course, with AI tutors on the rise, the line between "studying smart" and out
 ### Ethical and Social Considerations
 
 - **Data Privacy**: AI needs tons of student data to personalize lessons. Are we comfortable handing over analytics on every quiz and keystroke? This echoes the privacy concerns we discussed with smart homes and medical records, but now we're dealing with our children's developmental data.
-- **Tech Access**: What about schools without stable internet or funds for fancy hardware? If AI-based education becomes standard, it risks widening the digital divide—a concern that parallels our earlier discussion about job displacement and economic inequality.
+- **Tech Access**: What about schools without stable internet or funds for fancy hardware? If AI-based education becomes standard, it risks widening the digital divide-a concern that parallels our earlier discussion about job displacement and economic inequality.
 - **Screen Time Overload**: When lessons, homework, and extracurricular activities all require screens, is there a risk of burnout or decreased face-to-face social development? Just as we saw with AI in healthcare, maintaining the human element is crucial.
 
 Educators, parents, and policymakers must navigate these challenges carefully, balancing innovation with equity and mental well-being.
@@ -46,7 +46,7 @@ Educators, parents, and policymakers must navigate these challenges carefully, b
 1. **Stay Curious**
    - Experiment with new tech resources, from VR tours to AI language tutors. Approach them as tools that can spark inspiration.
 2. **Teach Human Skills**
-   - Creativity, collaboration, and empathy never go out of style—especially when the robots handle rote memorization.
+   - Creativity, collaboration, and empathy never go out of style-especially when the robots handle rote memorization.
 3. **Promote Digital Literacy**
    - Encourage kids (and parents) to understand how AI tools work, how to vet sources, and how to spot misinformation.
 4. **Engage in Policy Discussions**
@@ -60,7 +60,7 @@ Educators, parents, and policymakers must navigate these challenges carefully, b
 
 ### Looking Ahead
 
-Tomorrow's classroom is bigger than four walls. It could be a VR environment in your living room or a global network of students and teachers collaborating through AI platforms. But the heartbeat of education remains profoundly human—community, curiosity, and the shared thrill of discovery.
+Tomorrow's classroom is bigger than four walls. It could be a VR environment in your living room or a global network of students and teachers collaborating through AI platforms. But the heartbeat of education remains profoundly human-community, curiosity, and the shared thrill of discovery.
 
 **So yes,** AI-powered education can be a game-changer. Just remember: sometimes the best lessons still come from a passionate teacher who sees your puzzled face, cracks a joke, and helps you connect the dots in a way no algorithm can.
 

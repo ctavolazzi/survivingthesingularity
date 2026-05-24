@@ -68,7 +68,7 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<!-- The Rabbit Hole — floating trigger -->
+<!-- The Rabbit Hole - floating trigger -->
 <button class="rabbit-trigger" on:click={togglePanel} class:rabbit-trigger-active={open} title="White Rabbit Traces (Ctrl+Shift+D)">
   <span class="rabbit-icon">🐇</span>
   {#if $activeRabbits.some(r => r.errors > 0)}
@@ -169,7 +169,7 @@
                 <span class="trace-name">{trace.name}</span>
                 <span class="trace-duration">{formatTime(trace.duration)}</span>
               </div>
-              <div class="trace-id">{trace.id} — {trace.startTime}</div>
+              <div class="trace-id">{trace.id} - {trace.startTime}</div>
 
               {#if expandedTrace === trace.id}
                 <div class="trace-entries" transition:fly={{ y: -5, duration: 150 }}>

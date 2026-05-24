@@ -25,7 +25,7 @@ export async function GET({ url, platform, request }) {
       date: '2025-03-06',
       author: 'Christopher Tavolazzi',
       route: '/blog/synthetic-biological-intelligence',
-      excerpt: 'Australian startup Cortical Labs has unveiled the CL1, the world\'s first commercial Synthetic Biological Intelligence system—a fusion of biology and tech with human neurons cultured directly onto silicon chips.',
+      excerpt: 'Australian startup Cortical Labs has unveiled the CL1, the world\'s first commercial Synthetic Biological Intelligence system-a fusion of biology and tech with human neurons cultured directly onto silicon chips.',
       image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
       featured: true
     },

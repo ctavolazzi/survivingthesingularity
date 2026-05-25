@@ -23,8 +23,11 @@
           <a href="/policies" class="footer-link">Policies</a>
         </div>
         <div class="footer-col">
-          <h4 class="footer-col-title">Support</h4>
-          <a href="https://ko-fi.com/thecoffeejesus" target="_blank" rel="noopener noreferrer" class="footer-link footer-link-accent">
+          <h4 class="footer-col-title">Subscribe</h4>
+          <a href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer" class="footer-link footer-link-accent">
+            Substack
+          </a>
+          <a href="https://ko-fi.com/thecoffeejesus" target="_blank" rel="noopener noreferrer" class="footer-link">
             Buy me a coffee
           </a>
         </div>

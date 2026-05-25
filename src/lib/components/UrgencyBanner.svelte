@@ -21,6 +21,7 @@
   });
 
   $: diff = TARGET_DATE.getTime() - now.getTime();
+  $: expired = diff <= 0;
   $: days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
   $: hours = Math.max(0, Math.floor((diff / (1000 * 60 * 60)) % 24));
   $: minutes = Math.max(0, Math.floor((diff / (1000 * 60)) % 60));
@@ -33,31 +34,38 @@
   <div class="banner-inner">
     <div class="banner-left">
       <span class="banner-pulse"></span>
-      <span class="banner-label">Time to AGI (predicted)</span>
+      <span class="banner-label">{expired ? 'AGI window arrived' : 'Time to AGI (predicted)'}</span>
     </div>
-    <div class="banner-countdown">
-      <div class="count-block">
-        <span class="count-num">{days}</span>
-        <span class="count-unit">days</span>
+    {#if !expired}
+      <div class="banner-countdown">
+        <div class="count-block">
+          <span class="count-num">{days}</span>
+          <span class="count-unit">days</span>
+        </div>
+        <span class="count-sep">:</span>
+        <div class="count-block">
+          <span class="count-num">{pad(hours)}</span>
+          <span class="count-unit">hrs</span>
+        </div>
+        <span class="count-sep">:</span>
+        <div class="count-block">
+          <span class="count-num">{pad(minutes)}</span>
+          <span class="count-unit">min</span>
+        </div>
+        <span class="count-sep">:</span>
+        <div class="count-block">
+          <span class="count-num count-seconds">{pad(seconds)}</span>
+          <span class="count-unit">sec</span>
+        </div>
       </div>
-      <span class="count-sep">:</span>
-      <div class="count-block">
-        <span class="count-num">{pad(hours)}</span>
-        <span class="count-unit">hrs</span>
-      </div>
-      <span class="count-sep">:</span>
-      <div class="count-block">
-        <span class="count-num">{pad(minutes)}</span>
-        <span class="count-unit">min</span>
-      </div>
-      <span class="count-sep">:</span>
-      <div class="count-block">
-        <span class="count-num count-seconds">{pad(seconds)}</span>
-        <span class="count-unit">sec</span>
-      </div>
-    </div>
+    {:else}
+      <div class="banner-expired">Read the briefing</div>
+    {/if}
     <div class="banner-right">
-      <span class="banner-note">Why this matters →</span>
+      <span class="banner-note">Why this matters</span>
+      <svg class="banner-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+        <path d="M3 6H9M9 6L6 3M9 6L6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
   </div>
 </a>
@@ -180,6 +188,7 @@
   .banner-right {
     display: flex;
     align-items: center;
+    gap: 0.3rem;
   }
 
   .banner-note {
@@ -189,13 +198,38 @@
     white-space: nowrap;
   }
 
+  .banner-arrow {
+    color: #525252;
+    flex-shrink: 0;
+    transition: transform 0.2s, color 0.2s;
+  }
+
+  .urgency-banner:hover .banner-arrow {
+    color: #f59e0b;
+    transform: translateX(2px);
+  }
+
+  .banner-expired {
+    font-size: 0.7rem;
+    color: #f59e0b;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.04em;
+  }
+
   @media (max-width: 640px) {
-    .banner-left, .banner-right {
+    .banner-inner {
+      gap: 0.6rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .banner-note {
       display: none;
     }
 
-    .banner-inner {
-      gap: 0.5rem;
+    .count-block {
+      min-width: 30px;
     }
   }
 </style>

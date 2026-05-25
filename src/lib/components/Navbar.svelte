@@ -79,10 +79,6 @@
     </div>
 
     <div class="nav-right">
-      <button class="cmd-k-hint" on:click={() => { if (typeof window !== 'undefined') window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true })); }} title="Search (Cmd+K)">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <span class="cmd-k-keys"><kbd>&#8984;</kbd><kbd>K</kbd></span>
-      </button>
       <button
         class="hamburger-button"
         on:click={toggleMenu}
@@ -324,100 +320,10 @@
     color: #f59e0b;
   }
 
-  /* Auth elements */
   .nav-right {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-
-  .nav-auth-desktop {
-    display: none;
-  }
-
-  .auth-link {
-    padding: 0.45rem 1rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #0f172a;
-    background: #f59e0b;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .auth-link:hover {
-    background: #fbbf24;
-  }
-
-  .auth-avatar {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: rgba(245, 158, 11, 0.15);
-    border: 2px solid rgba(245, 158, 11, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .auth-avatar:hover {
-    border-color: #f59e0b;
-    background: rgba(245, 158, 11, 0.25);
-  }
-
-  .avatar-letter {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #f59e0b;
-  }
-
-  .mobile-divider {
-    height: 1px;
-    background: rgba(148, 163, 184, 0.08);
-    margin: 0.5rem 0;
-  }
-
-  .mobile-link-auth {
-    color: #f59e0b;
-  }
-
-  /* Cmd+K hint */
-  .cmd-k-hint {
-    display: none;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.35rem 0.65rem;
-    background: rgba(30, 41, 59, 0.5);
-    border: 1px solid rgba(148, 163, 184, 0.08);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s;
-    color: #475569;
-  }
-
-  .cmd-k-hint:hover {
-    border-color: rgba(245, 158, 11, 0.2);
-    color: #94a3b8;
-    background: rgba(30, 41, 59, 0.8);
-  }
-
-  .cmd-k-keys {
-    display: flex;
-    gap: 2px;
-  }
-
-  .cmd-k-keys kbd {
-    font-size: 0.6rem;
-    padding: 0.1rem 0.3rem;
-    border: 1px solid rgba(148, 163, 184, 0.1);
-    border-radius: 3px;
-    background: rgba(15, 23, 42, 0.5);
-    color: #64748b;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 600;
   }
 
   @media (min-width: 768px) {
@@ -425,16 +331,8 @@
       display: flex;
     }
 
-    .nav-auth-desktop {
-      display: flex;
-    }
-
     .hamburger-button {
       display: none;
-    }
-
-    .cmd-k-hint {
-      display: flex;
     }
   }
 

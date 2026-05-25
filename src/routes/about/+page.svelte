@@ -15,9 +15,9 @@
   <div class="about-page" in:fade={{ duration: 400 }}>
     <header class="about-header">
       <p class="about-label">About This Project</p>
-      <h1 class="about-title">We're Building the Exit Strategy</h1>
+      <h1 class="about-title">I'm Building the Exit Strategy</h1>
       <p class="about-subtitle">
-        Surviving the Singularity is a research project, a blueprint, and a call to action. We document the path to material independence for makers, builders, and anyone tired of the broken math of modern life.
+        Surviving the Singularity is a research project, a blueprint, and a call to action. I document the path to material independence for makers, builders, and anyone tired of the broken math of modern life.
       </p>
     </header>
 
@@ -27,12 +27,12 @@
         The traditional path to stability - 30-year mortgage, corporate career, retirement - is mathematically inaccessible for the maker class. The cost of housing has outpaced wages by orders of magnitude, and the social contract that once guaranteed security in exchange for compliance has collapsed.
       </p>
       <p>
-        Our answer is the <strong>YouTube Shouse Blueprint</strong>: a comprehensive strategy that combines minimalist infrastructure (the shouse), digital leverage (YouTube and direct-to-consumer products), local AI sovereignty, and open-source robotics to create a life of genuine independence.
+        My answer is the <strong>YouTube Shouse Blueprint</strong>: a comprehensive strategy that combines minimalist infrastructure (the shouse), digital leverage (YouTube and direct-to-consumer products), local AI sovereignty, and open-source robotics to create a life of genuine independence.
       </p>
     </section>
 
     <section class="about-section">
-      <h2>What We Provide</h2>
+      <h2>What's Here</h2>
       <div class="provides-grid">
         <div class="provide-item">
           <h3>The Blueprint</h3>
@@ -56,7 +56,7 @@
     <section class="about-section">
       <h2>The Philosophy</h2>
       <p>
-        We believe individuals are not consumables for the rich - they are self-determining entities with the right to autonomy. Material independence is not about isolation; it's about building from a position of strength. When your overhead is crushed, your time is reclaimed, and your tools are sovereign, you can finally contribute to a community from abundance rather than scarcity.
+        I believe individuals are not consumables for the rich - they are self-determining entities with the right to autonomy. Material independence is not about isolation; it's about building from a position of strength. When your overhead is crushed, your time is reclaimed, and your tools are sovereign, you can finally contribute to a community from abundance rather than scarcity.
       </p>
       <p>
         This project is commentary, not financial advice. Build at your own risk. Think for yourself. The math proof exists - material independence is becoming more possible with every passing day as technology becomes cheaper, better, and faster.

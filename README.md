@@ -1,132 +1,133 @@
 # Surviving the Singularity
 
-A resource platform providing educational content to help people prepare for the technological Singularity.
+> A field manual for staying agentic as AI rewrites work, money, medicine, and meaning.
 
-## Project Overview
+**Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
+**Status:** Open draft. Book ships when it ships. Site updates as the world does.
 
-Surviving the Singularity is a web application built with SvelteKit that offers:
+---
 
-- Educational resources about AI and the technological Singularity
+## What this is
 
-- Book samples and resources from "Surviving the Singularity"
-- Blog posts and news related to AI advancements
-- Newsletters to keep users updated on significant technological changes
+A SvelteKit site built around one question:
 
-## Tech Stack
+> What does it look like to build a life that doesn't depend on the things AI is about to dissolve?
 
-- **Frontend**: SvelteKit, Tailwind CSS, Flowbite components
-- **Backend**: Supabase
-- **Data Processing**: Markdown processing with marked/remark
-- **Deployment**: Adapts to various hosting environments
+It is not a sales page. It is not a course. It is a working draft of a book, a long blueprint of practical answers, and a blog of dispatches from the curve. Free to read. No login. No paywall. No email required.
 
-## Development
+## Who this is for
 
-### Getting Started
+- People who have read Kurzweil, Hinton, Aschenbrenner, Amodei and want to take the timeline seriously.
+- People who can feel the economic ground shifting under their feet and want a practical move, not another think piece.
+- Makers, builders, parents, teachers, anyone who would rather stay agentic than be passive cargo.
 
-1. Clone the repository:
+If you came here because someone you trust sent you the link, start at [**Why**](https://survivingthesingularity.com/why). It is the shortest case for why any of this matters.
+
+## What is on the site
+
+| Route | What it is |
+|-------|-----------|
+| [`/`](https://survivingthesingularity.com/) | Landing page. Thesis, four steps, the stack, a savings calculator, the chapter index. |
+| [`/why`](https://survivingthesingularity.com/why) | The case. AGI timeline, expert voices, benchmarks. Start here if you are new. |
+| [`/book`](https://survivingthesingularity.com/book) | Open draft of *Surviving the Singularity*. Free to read. Chapter previews. |
+| [`/blueprint`](https://survivingthesingularity.com/blueprint) | Eight chapter blueprint. Shouse construction, collective ownership, semi-autonomous CSA, local AI, offline healthcare AI, and more. |
+| [`/blog`](https://survivingthesingularity.com/blog) | Dispatches. Some philosophical, some profane. |
+| [`/about`](https://survivingthesingularity.com/about) | What this project is and is not. |
+
+## Stay in touch
+
+There is one channel: [thecoffeejesus.substack.com](https://thecoffeejesus.substack.com). Subscribe if you want chapter drops and launch alerts. Otherwise the site is here, always, and you can read it whenever.
+
+---
+
+## For developers
+
+This project is open source. If you want to fork it, remix it, or contribute fixes, here is what you need to know.
+
+### Stack
+
+- **Framework:** SvelteKit v2 + Vite v5
+- **Styling:** Tailwind CSS v3 + scoped component CSS, dark-only theme
+- **Auth/Database:** Supabase (newsletter signup fallback only, gracefully degrades without credentials)
+- **Fonts:** Inter (UI) + JetBrains Mono (numbers, code)
+- **Deployment:** adapter-auto (Cloudflare Pages target)
+
+### Design tokens
+
+- Background: `#020617` (deep navy-black)
+- Primary accent: `#f59e0b` (amber)
+- Secondary accent: `#3b82f6` (blue)
+- Tokens: [`src/lib/styles/theme.css`](src/lib/styles/theme.css)
+
+### Local development
+
 ```bash
-git clone [repository-url]
+git clone https://github.com/ctavolazzi/survivingthesingularity.git
 cd survivingthesingularity
-```
-
-2. Install dependencies:
-```bash
 npm install
-```
-
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your Supabase credentials
-```
-
-4. Start the development server:
-```bash
 npm run dev -- --open
 ```
 
-### Building for Production
+Without Supabase credentials in `.env`, newsletter signup falls back to localStorage. Everything else works.
+
+### Building
 
 ```bash
 npm run build
-```
-
-Preview the production build with:
-```bash
 npm run preview
 ```
 
-## Project Structure
+### Project layout
 
-- `src/routes/` - Application pages and API endpoints
-- `src/lib/components/` - Reusable UI components
-- `src/lib/data/` - Content and data resources
-- `src/lib/content/` - Blog posts and other content in markdown format
-- `src/lib/utils/` - Utility functions and helpers
-- `src/lib/server/` - Server-side utilities
-- `static/` - Static assets
-- `cursor/` - Development logs and documentation
-
-## Blog System
-
-The blog system follows SvelteKit conventions:
-
-- **Blog posts** are stored as markdown files with frontmatter in `src/lib/content/blog/`
-- Each post has its own markdown file with metadata in the frontmatter section
-- Server-side loading is handled through `+page.server.js` files
-- Blog images are stored in `static/images/blog/`
-
-For detailed instructions on adding new blog posts, see the [Blog Content Guide](src/lib/content/README.md).
-
-## Working with Blog Posts
-
-Blog posts are stored in the `src/lib/data/blog-posts` directory, with each post in its own subdirectory containing:
-
-- `content.md`: The main content of the blog post in Markdown format
-- `index.js`: Metadata and exports for the blog post
-
-### Adding a New Blog Post
-
-To create a new blog post:
-
-```bash
-# Using npm
-npm run create-blog "Your Blog Post Title"
-
-# Using the script directly
-node scripts/create-blog-post.js "Your Blog Post Title"
+```text
+src/
+  routes/                Pages and API endpoints
+    +page.svelte         Landing
+    why/                 The case
+    book/                Open draft book
+    blueprint/           Eight chapter blueprint
+      [section]/         Dynamic chapter pages
+    blog/                Posts
+    about/               Project framing
+  lib/
+    components/          Reusable Svelte components (41+)
+    data/
+      blueprint.js       All blueprint content (single source)
+      blog-posts/        Markdown blog posts (per-slug directories)
+      book-draft-v2/     Book chapter markdown
+    styles/theme.css     Design tokens
+static/                  Static assets
 ```
 
-This will:
-1. Create a new directory in `src/lib/data/blog-posts` with a slug based on the title
-2. Add a template `content.md` and `index.js` file
-3. Pre-fill some metadata fields with the current date
+### Blueprint content
 
-### Migrating Blog Posts
+The eight chapter blueprint lives entirely in [`src/lib/data/blueprint.js`](src/lib/data/blueprint.js) as a single structured array. Each section is a sequence of blocks (`prose`, `heading`, `table`, `callout`, `directive`). Edit content there, not in component files.
 
-If you have blog posts in the old format (`.md` files in `src/content/blog`), you can migrate them to the new format:
+### Blog posts
 
 ```bash
-npm run migrate-blog
+npm run create-blog "Your Post Title"
 ```
 
-This will:
-1. Find all `.md` files in the old location
-2. Create a directory structure in `src/lib/data/blog-posts` for each post
-3. Generate the necessary `content.md` and `index.js` files
+Creates a new directory in `src/lib/data/blog-posts/` with `content.md` and `index.js`.
 
-## Development Approach
+### Conventions
 
-This project has transitioned from a community-contributed platform to a curated educational resource. For details on this transition, see [the development log](./cursor/devlog.md).
+- Dark mode only (class-forced)
+- Component-scoped CSS preferred over Tailwind for page-level styling
+- JetBrains Mono for numbers, labels, and code
+- Amber (`#f59e0b`) for primary actions
+- Tables follow the `data-table` pattern used in blueprint sections
+- No em-dashes anywhere in copy. Hyphens, commas, periods, or parentheticals only.
 
-## Contributing
+### Contributing
 
-We welcome code improvements and bug fixes. Please see our [contributing guidelines](./docs/contributing/CONTRIBUTING.md) for detailed information on how to contribute to this project.
-
-Our contributing documentation includes:
-- [Style Guide](./docs/contributing/STYLE_GUIDE.md) - Code style and formatting guidelines
-- [Supabase Security Guidelines](./docs/contributing/SUPABASE_SECURITY.md) - Security best practices for database work
+PRs welcome for bug fixes, accessibility improvements, and performance. Content edits live in `src/lib/data/`. See [docs/contributing/CONTRIBUTING.md](docs/contributing/CONTRIBUTING.md) for details.
 
 ## License
 
-This project is private and not licensed for public use or distribution.
+Code: open source. Book content: all rights reserved, free to read on the live site.
+
+## Author
+
+Christopher Tavolazzi. Writes as [The Coffee Jesus](https://thecoffeejesus.substack.com).

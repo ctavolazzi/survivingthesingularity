@@ -284,6 +284,9 @@
 						worth a video. Faceless channels work. Sponsorships fund your build. Donations replace
 						your need for venture capital. Your phone is the only equipment you need to start.
 					</p>
+					<p class="step-body">
+						Or any other platform you like. Substack, Threads, Instagram, whatever works for you. Make content, find your people, stay cautious, but allow the world to see who you are. Find your people. Thrive.
+					</p>
 					<div class="step-tags">
 						<span class="step-tag">Revenue: $2K–$20K/mo at scale</span>
 						<span class="step-tag">Faceless channels viable</span>

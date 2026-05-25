@@ -77,7 +77,7 @@
 
   <div class="dash-footer">
     <div class="dash-dot-pulse"></div>
-    <span class="dash-live">Live economic indicators</span>
+    <span class="dash-live">Reference indicators (2020 to 2026)</span>
   </div>
 </div>
 

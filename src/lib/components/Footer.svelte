@@ -22,6 +22,12 @@
           <a href="/about" class="footer-link">About</a>
           <a href="/policies" class="footer-link">Policies</a>
         </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Support</h4>
+          <a href="https://ko-fi.com/thecoffeejesus" target="_blank" rel="noopener noreferrer" class="footer-link footer-link-accent">
+            Buy me a coffee
+          </a>
+        </div>
       </div>
     </div>
 
@@ -120,6 +126,15 @@
 
   .footer-link:hover {
     color: #f59e0b;
+  }
+
+  .footer-link-accent {
+    color: #f59e0b;
+    font-weight: 600;
+  }
+
+  .footer-link-accent:hover {
+    color: #fbbf24;
   }
 
   .footer-divider {

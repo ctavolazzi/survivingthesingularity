@@ -5,7 +5,6 @@
 	import { blueprintProgress } from '$lib/stores/progress.js';
 	import SavingsCalculator from '$lib/components/SavingsCalculator.svelte';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
-	import StackConfigurator from '$lib/components/StackConfigurator.svelte';
 	import IndependenceCountdown from '$lib/components/IndependenceCountdown.svelte';
 	import FloatingNav from '$lib/components/FloatingNav.svelte';
 	import LiveDashboard from '$lib/components/LiveDashboard.svelte';
@@ -216,9 +215,9 @@
 					<span class="stat-number" use:countUp={{ target: '30', suffix: ' years' }}>0 years</span>
 					<span class="stat-label">Standard mortgage commitment</span>
 				</div>
-				<div class="stat-card stagger-item stat-warning">
-					<span class="stat-number" use:countUp={{ target: '51', suffix: '%' }}>0%</span>
-					<span class="stat-label">Of all U.S. wealth held by Boomers. You have 10.7%.</span>
+				<div class="stat-card stagger-item stat-success">
+					<span class="stat-number" use:countUp={{ target: '5', prefix: '$', suffix: 'K' }}>$0K</span>
+					<span class="stat-label">Starting price for rural acreage in target counties.</span>
 				</div>
 			</div>
 
@@ -409,28 +408,12 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- YOUR PATH - Personalized configurator.         -->
-	<!-- ═══════════════════════════════════════════════ -->
-	<section class="section" id="path" use:observe>
-		<div class="section-inner">
-			<div class="section-header-row">
-				<span class="section-number">05</span>
-				<div>
-					<h2 class="section-title">Your Path</h2>
-					<p class="section-desc">Answer four questions. Get a personalized reading order based on your situation, skills, and goals.</p>
-				</div>
-			</div>
-			<StackConfigurator />
-		</div>
-	</section>
-
-	<!-- ═══════════════════════════════════════════════ -->
 	<!-- TIMELINE - When do you hit independence?        -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section section-dark" id="timeline" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">06</span>
+				<span class="section-number">05</span>
 				<div>
 					<h2 class="section-title">Your Timeline</h2>
 					<p class="section-desc">Input your numbers. See when you reach independence - and how much faster the shouse strategy gets you there.</p>
@@ -446,7 +429,7 @@
 	<section class="section" id="chapters" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">07</span>
+				<span class="section-number">06</span>
 				<div>
 					<h2 class="section-title">The Full Blueprint</h2>
 					<p class="section-desc">Eight chapters. Every layer of the exit strategy. From the economic analysis to your first week of action.</p>
@@ -858,6 +841,10 @@
 		border-color: rgba(245, 158, 11, 0.1);
 	}
 
+	.stat-success {
+		border-color: rgba(16, 185, 129, 0.12);
+	}
+
 	.stat-number {
 		font-size: 1.8rem;
 		font-weight: 800;
@@ -867,6 +854,7 @@
 
 	.stat-danger .stat-number { color: #ef4444; }
 	.stat-warning .stat-number { color: #f59e0b; }
+	.stat-success .stat-number { color: #10b981; }
 
 	.stat-label {
 		font-size: 0.78rem;

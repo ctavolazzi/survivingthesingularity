@@ -2,7 +2,6 @@
   import '../app.css';
   import Navbar from '$lib/components/Navbar.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import CookieConsent from '$lib/components/CookieConsent.svelte';
   import ToastContainer from '$lib/components/ToastContainer.svelte';
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
@@ -68,7 +67,6 @@
     <slot />
   </main>
   <Footer />
-  <CookieConsent />
   <ToastContainer />
   <CommandPalette bind:open={commandPaletteOpen} />
   {#if dev}

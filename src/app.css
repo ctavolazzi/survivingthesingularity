@@ -53,3 +53,32 @@ table {
 input, select, textarea {
   max-width: 100%;
 }
+
+/* Shared arrow shimmer used on primary CTAs across components. */
+.shimmer-arrow {
+  transition: transform 0.2s ease;
+  animation: arrow-idle 2.6s ease-in-out infinite;
+}
+
+@keyframes arrow-idle {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(2px); }
+}
+
+a:hover > .shimmer-arrow,
+button:hover > .shimmer-arrow {
+  transform: translateX(4px);
+  animation: none;
+}
+
+/* Respect user motion preferences. Decorative animations halt; functional
+   transitions still complete in a single frame so layout-dependent state
+   stays consistent. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -137,7 +137,11 @@
 		{#if heroVisible}
 			<div class="hero-content" in:fade={{ duration: 600, delay: 100 }}>
 				<div class="hero-classification">
-					<span class="classification-dot"></span>
+					<svg class="classification-radar" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+						<circle class="radar-ring radar-ring-1" cx="7" cy="7" r="2" fill="none" stroke="#ef4444" stroke-width="1"/>
+						<circle class="radar-ring radar-ring-2" cx="7" cy="7" r="2" fill="none" stroke="#ef4444" stroke-width="1"/>
+						<circle class="radar-core" cx="7" cy="7" r="2.2" fill="#ef4444"/>
+					</svg>
 					A PRACTICAL BLUEPRINT FOR WHAT COMES NEXT
 				</div>
 
@@ -170,7 +174,7 @@
 				<div class="hero-actions">
 					<a href="/blueprint" class="btn-primary">
 						Read the Full Blueprint
-						<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 					</a>
 					<a href="#plan" class="btn-secondary">
 						See the 4 Steps
@@ -204,18 +208,22 @@
 
 			<div class="stats-grid" use:stagger>
 				<div class="stat-card stagger-item stat-danger">
+					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '25', suffix: '%' }}>0%</span>
 					<span class="stat-label">Dollar purchasing power lost since 2020</span>
 				</div>
 				<div class="stat-card stagger-item stat-danger">
+					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '500', prefix: '$', suffix: 'K' }}>$0K</span>
 					<span class="stat-label">Median U.S. home price</span>
 				</div>
 				<div class="stat-card stagger-item stat-danger">
+					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '30', suffix: ' years' }}>0 years</span>
 					<span class="stat-label">Standard mortgage commitment</span>
 				</div>
 				<div class="stat-card stagger-item stat-success">
+					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '5', prefix: '$', suffix: 'K' }}>$0K</span>
 					<span class="stat-label">Starting price for rural acreage in target counties.</span>
 				</div>
@@ -488,7 +496,7 @@
 			<div class="cta-actions">
 				<a href="/blueprint" class="btn-primary btn-large">
 					Read the Full Blueprint
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 				</a>
 				<a href="/book" class="btn-secondary">Read the Book</a>
 			</div>
@@ -564,6 +572,12 @@
 		top: -300px;
 		right: -200px;
 		filter: blur(80px);
+		animation: hero-glow-breath 9s ease-in-out infinite;
+	}
+
+	@keyframes hero-glow-breath {
+		0%, 100% { transform: scale(1); opacity: 0.85; }
+		50% { transform: scale(1.08); opacity: 1; }
 	}
 
 	.hero-content {
@@ -589,17 +603,37 @@
 		border-radius: 6px;
 	}
 
-	.classification-dot {
-		width: 5px;
-		height: 5px;
-		border-radius: 50%;
-		background: #ef4444;
-		animation: blink 2s ease-in-out infinite;
+	.classification-radar {
+		flex-shrink: 0;
+		overflow: visible;
 	}
 
-	@keyframes blink {
-		0%, 100% { opacity: 0.3; }
+	.radar-core {
+		transform-origin: 7px 7px;
+		animation: radar-core-pulse 2s ease-in-out infinite;
+	}
+
+	@keyframes radar-core-pulse {
+		0%, 100% { opacity: 0.55; }
 		50% { opacity: 1; }
+	}
+
+	.radar-ring {
+		transform-origin: 7px 7px;
+		opacity: 0;
+	}
+
+	.radar-ring-1 {
+		animation: radar-ping 2.4s ease-out infinite;
+	}
+
+	.radar-ring-2 {
+		animation: radar-ping 2.4s ease-out 1.2s infinite;
+	}
+
+	@keyframes radar-ping {
+		0% { transform: scale(1); opacity: 0.7; }
+		100% { transform: scale(2.6); opacity: 0; }
 	}
 
 	.hero-title {
@@ -824,6 +858,7 @@
 	}
 
 	.stat-card {
+		position: relative;
 		padding: 1.5rem;
 		border-radius: 10px;
 		display: flex;
@@ -833,12 +868,29 @@
 		background: rgba(255, 255, 255, 0.02);
 	}
 
-	.stat-danger {
-		border-color: rgba(239, 68, 68, 0.1);
+	.card-corner {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		opacity: 0;
+		transition: opacity 0.5s ease 0.25s;
+		color: rgba(255, 255, 255, 0.4);
 	}
 
-	.stat-warning {
-		border-color: rgba(245, 158, 11, 0.1);
+	.card-corner path {
+		stroke-dasharray: 24;
+		stroke-dashoffset: 24;
+		transition: stroke-dashoffset 0.8s ease 0.4s;
+	}
+
+	.stat-card:global(.stagger-in) .card-corner { opacity: 0.7; }
+	.stat-card:global(.stagger-in) .card-corner path { stroke-dashoffset: 0; }
+
+	.stat-danger .card-corner { color: #ef4444; }
+	.stat-success .card-corner { color: #10b981; }
+
+	.stat-danger {
+		border-color: rgba(239, 68, 68, 0.1);
 	}
 
 	.stat-success {
@@ -853,7 +905,6 @@
 	}
 
 	.stat-danger .stat-number { color: #ef4444; }
-	.stat-warning .stat-number { color: #f59e0b; }
 	.stat-success .stat-number { color: #10b981; }
 
 	.stat-label {

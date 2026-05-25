@@ -4,41 +4,11 @@
 
 	let visible = false;
 
-	function observe(node) {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('revealed');
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{ threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
-		);
-		observer.observe(node);
-		return { destroy: () => observer.disconnect() };
-	}
-
-	function stagger(node, { delay = 80 } = {}) {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						const children = node.children;
-						for (let i = 0; i < children.length; i++) {
-							children[i].style.transitionDelay = `${i * delay}ms`;
-							children[i].classList.add('stagger-in');
-						}
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{ threshold: 0.05 }
-		);
-		observer.observe(node);
-		return { destroy: () => observer.disconnect() };
-	}
+	// Scroll-reveal removed: sections are always visible. The use:observe
+	// and use:stagger directives below are kept as no-op stubs so existing
+	// markup compiles, but content no longer waits on IntersectionObserver.
+	function observe() { return { destroy: () => {} }; }
+	function stagger() { return { destroy: () => {} }; }
 
 	const timeline = [
 		{ year: '2017', event: 'Transformer architecture invented at Google', impact: 'The architecture behind every modern AI', source: 'Attention Is All You Need - Vaswani et al.' },
@@ -583,14 +553,6 @@
 	/* ═══ SECTIONS ═══ */
 	.section {
 		padding: 6rem 2rem;
-		opacity: 0;
-		transform: translateY(20px);
-		transition: opacity 0.6s ease, transform 0.6s ease;
-	}
-
-	:global(.section.revealed) {
-		opacity: 1;
-		transform: translateY(0);
 	}
 
 	.section-dark {
@@ -649,21 +611,9 @@
 		gap: 1.5rem;
 		padding: 1.25rem 0;
 		position: relative;
-		opacity: 0;
-		transform: translateX(-10px);
-		transition: opacity 0.4s ease, transform 0.4s ease;
-	}
-
-	:global(.timeline-item.stagger-in) {
-		opacity: 1;
-		transform: translateX(0);
 	}
 
 	.timeline-future {
-		opacity: 0.6;
-	}
-
-	:global(.timeline-future.stagger-in) {
 		opacity: 0.6;
 	}
 
@@ -746,14 +696,6 @@
 		border: 1px solid rgba(148, 163, 184, 0.06);
 		border-radius: 12px;
 		padding: 1.5rem;
-		opacity: 0;
-		transform: translateY(10px);
-		transition: opacity 0.4s ease, transform 0.4s ease;
-	}
-
-	:global(.quote-card.stagger-in) {
-		opacity: 1;
-		transform: translateY(0);
 	}
 
 	.quote-key {
@@ -812,14 +754,6 @@
 		border: 1px solid rgba(245, 158, 11, 0.12);
 		border-radius: 12px;
 		padding: 1.5rem;
-		opacity: 0;
-		transform: translateY(10px);
-		transition: opacity 0.6s ease, transform 0.6s ease;
-	}
-
-	:global(.callout-box.revealed) {
-		opacity: 1;
-		transform: translateY(0);
 	}
 
 	.callout-icon {
@@ -989,14 +923,6 @@
 		gap: 3rem;
 		align-items: start;
 		margin-top: 2rem;
-		opacity: 0;
-		transform: translateY(15px);
-		transition: opacity 0.6s ease, transform 0.6s ease;
-	}
-
-	:global(.book-hero.revealed) {
-		opacity: 1;
-		transform: translateY(0);
 	}
 
 	.book-visual {
@@ -1183,14 +1109,6 @@
 		border-radius: 10px;
 		padding: 1.25rem;
 		text-align: center;
-		opacity: 0;
-		transform: translateY(10px);
-		transition: opacity 0.4s ease, transform 0.4s ease;
-	}
-
-	:global(.proof-card.stagger-in) {
-		opacity: 1;
-		transform: translateY(0);
 	}
 
 	.proof-stat {
@@ -1213,16 +1131,6 @@
 		color: #475569;
 	}
 
-	.proof-comparison {
-		opacity: 0;
-		transform: translateY(10px);
-		transition: opacity 0.6s ease, transform 0.6s ease;
-	}
-
-	:global(.proof-comparison.revealed) {
-		opacity: 1;
-		transform: translateY(0);
-	}
 
 	.comparison-title {
 		font-size: 1.1rem;
@@ -1369,16 +1277,7 @@
 	}
 
 	/* ═══ STAGGER ANIMATIONS ═══ */
-	.stagger-item {
-		opacity: 0;
-		transform: translateY(10px);
-		transition: opacity 0.4s ease, transform 0.4s ease;
-	}
-
-	:global(.stagger-item.stagger-in) {
-		opacity: 1;
-		transform: translateY(0);
-	}
+	/* Stagger animations removed: items always visible. */
 
 	/* ═══ RESPONSIVE ═══ */
 	@media (max-width: 768px) {

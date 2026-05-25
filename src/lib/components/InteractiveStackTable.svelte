@@ -98,7 +98,25 @@
   {/each}
 </div>
 
+<p class="stack-disclaimer">
+  Costs, tools, and timelines are illustrative estimates. Real numbers vary by region, regulation, vendor, and individual circumstance. Mentions of specific products are references, not endorsements or recommendations. <a href="/disclaimer">See full disclaimer</a>.
+</p>
+
 <style>
+  .stack-disclaimer {
+    margin-top: 1rem;
+    font-size: 0.72rem;
+    color: #64748b;
+    line-height: 1.55;
+    font-style: italic;
+    max-width: 720px;
+  }
+  .stack-disclaimer a {
+    color: #94a3b8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .stack-disclaimer a:hover { color: #f59e0b; }
   .stack-interactive {
     margin-top: 2rem;
     border: 1px solid rgba(148, 163, 184, 0.06);

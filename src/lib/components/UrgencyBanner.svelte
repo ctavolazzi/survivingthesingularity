@@ -34,7 +34,7 @@
   <div class="banner-inner">
     <div class="banner-left">
       <span class="banner-pulse"></span>
-      <span class="banner-label">{expired ? 'AGI window arrived' : 'Time to AGI (predicted)'}</span>
+      <span class="banner-label">{expired ? "Author's AGI date arrived (speculation)" : "Author's AGI guess (speculation)"}</span>
     </div>
     {#if !expired}
       <div class="banner-countdown">

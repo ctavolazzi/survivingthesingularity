@@ -79,11 +79,34 @@
     <div class="dash-dot-pulse"></div>
     <span class="dash-live">Reference indicators (2020 to 2026)</span>
   </div>
+
+  <p class="dash-disclaimer">
+    Illustrative reference figures. Sparkline animations are decorative, not real-time market data. Cost and savings figures are rough estimates that vary widely by region and individual circumstance. Not financial or economic advice. <a href="/disclaimer">See full disclaimer</a>.
+  </p>
 </div>
 
 <style>
   .dashboard {
     margin-top: 2rem;
+  }
+
+  .dash-disclaimer {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    color: #475569;
+    line-height: 1.55;
+    font-style: italic;
+    max-width: 720px;
+  }
+
+  .dash-disclaimer a {
+    color: #64748b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .dash-disclaimer a:hover {
+    color: #f59e0b;
   }
 
   .dash-grid {

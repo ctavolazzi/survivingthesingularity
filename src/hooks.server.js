@@ -26,6 +26,10 @@ export async function handle({ event, resolve }) {
   response.headers.set('X-Frame-Options', 'SAMEORIGIN');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set('Permissions-Policy', 'geolocation=(), microphone=(), camera=(), payment=()');
+  response.headers.set('Cross-Origin-Opener-Policy', 'same-origin');
+  // HSTS - only applies on https. Browsers ignore over http, so safe to set.
+  // 1 year, include subdomains. Add 'preload' later once you're sure.
+  response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
 
   // Content Security Policy - covers Supabase (newsletter), self-hosted assets.
   // Allowlist additions: add domains to the matching directive (script-src, frame-src, etc.).
@@ -34,7 +38,7 @@ export async function handle({ event, resolve }) {
     "script-src 'self' 'unsafe-inline'",
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "font-src 'self' https://fonts.gstatic.com data:",
-    "img-src 'self' data: blob:",
+    "img-src 'self' data: blob: https://cdn.midjourney.com https://images.unsplash.com https://farm.bot https://*.futurism.com https://wordpress-assets.futurism.com https://i.ytimg.com https://*.ytimg.com https://www.open-electronics.org",
     "media-src 'self'",
     "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
     "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://open.spotify.com https://*.substack.com",

@@ -23,7 +23,7 @@
   <!-- Privacy & Contact -->
   <section id="privacy-policy" class="mb-12">
     <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">Privacy & Contact</h2>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Last Updated: July 2, 2025</p>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Last Updated: May 25, 2026</p>
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="mb-4"><strong>Website Usage:</strong> This website does not collect personal data through cookies or tracking. You can browse and read content without providing any personal information.</p>

@@ -161,6 +161,10 @@
       <span class="compare-time">{optimizedMonths === Infinity ? '--' : (optimizedMonths / 12).toFixed(1) + ' yrs'}</span>
     </div>
   </div>
+
+  <p class="countdown-disclaimer">
+    Rough projection. Assumes flat returns, ignores inflation, taxes, lifestyle changes, and your actual circumstances. Not financial advice. <a href="/disclaimer">See full disclaimer</a>.
+  </p>
 </div>
 
 <style>
@@ -170,6 +174,26 @@
     border-radius: 20px;
     padding: 2rem;
     margin-top: 2rem;
+  }
+
+  .countdown-disclaimer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.08);
+    font-size: 0.72rem;
+    color: #64748b;
+    line-height: 1.55;
+    font-style: italic;
+  }
+
+  .countdown-disclaimer a {
+    color: #94a3b8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .countdown-disclaimer a:hover {
+    color: #f59e0b;
   }
 
   .countdown-top {

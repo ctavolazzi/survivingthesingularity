@@ -108,6 +108,10 @@
       <p class="results-cta">
         That's <strong>{formatMoney(thirtyYearSavings)}</strong> you keep. Read the blueprint to see how.
       </p>
+
+      <p class="calc-disclaimer">
+        Illustrative estimate only. Ignores taxes, insurance, maintenance, opportunity cost, land/build variability, and your specific situation. Not financial, real-estate, or investment advice. <a href="/disclaimer">See full disclaimer</a>.
+      </p>
     </div>
   {/if}
 </div>
@@ -353,6 +357,26 @@
     font-family: 'JetBrains Mono', monospace;
     min-width: 60px;
     text-align: right;
+  }
+
+  .calc-disclaimer {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.08);
+    font-size: 0.72rem;
+    color: #64748b;
+    line-height: 1.55;
+    font-style: italic;
+  }
+
+  .calc-disclaimer a {
+    color: #94a3b8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .calc-disclaimer a:hover {
+    color: #f59e0b;
   }
 
   .results-cta {

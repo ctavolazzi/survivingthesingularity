@@ -143,7 +143,7 @@
 				</div>
 
 				<h1 class="hero-title">
-					There's a better way<br/>to build your future.
+					Live like your ancestors.<br/>With all the tools of the modern world.
 				</h1>
 
 				<p class="hero-subtitle">
@@ -160,7 +160,7 @@
 					<div class="answer-bar"></div>
 					<div class="answer-content">
 						<p class="answer-text">
-							Secure land. Build a shop. Live like your ancestors, but with all the tools of the modern world. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is our blueprint. Are you ready?
+							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is our blueprint. Are you ready?
 						</p>
 						<p class="answer-cost">
 							Total cost: <strong>under $150K</strong>. In some cases, <strong>under $30K</strong>.
@@ -735,16 +735,18 @@
 		font-weight: 700;
 		font-size: 0.9rem;
 		text-decoration: none;
-		background: #fafafa;
-		color: #09090b;
+		background: rgba(245, 158, 11, 0.08);
+		color: #f59e0b;
+		border: 1px solid rgba(245, 158, 11, 0.35);
 		transition: all 0.2s ease;
 		cursor: pointer;
 	}
 
 	.btn-primary:hover {
-		background: #f59e0b;
+		background: rgba(245, 158, 11, 0.15);
+		border-color: rgba(245, 158, 11, 0.6);
 		transform: translateY(-1px);
-		box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
+		box-shadow: 0 4px 20px rgba(245, 158, 11, 0.18);
 	}
 
 	.btn-secondary {

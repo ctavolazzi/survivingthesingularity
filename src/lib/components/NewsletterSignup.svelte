@@ -1,34 +1,50 @@
 <div class="substack-wrap">
-  <iframe
-    src="https://thecoffeejesus.substack.com/embed?transparent=1&light=1"
-    title="Subscribe to The Coffee Jesus on Substack"
-    width="480"
-    height="320"
-    frameborder="0"
-    scrolling="no"
-  ></iframe>
+  <a
+    class="substack-btn"
+    href="https://thecoffeejesus.substack.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Subscribe on Substack
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <p class="substack-meta">Subscriber-only chapter drops · launch alerts · zero spam</p>
 </div>
 
 <style>
   .substack-wrap {
-    width: 100%;
-    max-width: 480px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
   }
 
-  iframe {
-    width: 100%;
-    max-width: 480px;
-    height: 320px;
-    border: 0;
-    background: transparent;
-    border-radius: 12px;
+  .substack-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 0.92rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
   }
 
-  @media (max-width: 480px) {
-    iframe {
-      height: 360px;
-    }
+  .substack-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(245, 158, 11, 0.3);
+  }
+
+  .substack-meta {
+    font-size: 0.72rem;
+    color: #52525b;
+    margin: 0;
+    text-align: center;
   }
 </style>

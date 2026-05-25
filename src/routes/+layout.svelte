@@ -6,7 +6,6 @@
   import ToastContainer from '$lib/components/ToastContainer.svelte';
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
-  import KofiFloater from '$lib/components/KofiFloater.svelte';
   import { createRabbit } from '$lib/debug/white-rabbit.js';
   import { browser, dev } from '$app/environment';
   import { afterNavigate, beforeNavigate } from '$app/navigation';
@@ -72,7 +71,6 @@
   <CookieConsent />
   <ToastContainer />
   <CommandPalette bind:open={commandPaletteOpen} />
-  <KofiFloater />
   {#if dev}
     <WhiteRabbitPanel />
   {/if}

@@ -37,7 +37,7 @@ export async function handle({ event, resolve }) {
     "img-src 'self' data: blob:",
     "media-src 'self'",
     "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
-    "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://open.spotify.com",
+    "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://open.spotify.com https://*.substack.com",
     "base-uri 'self'",
     "form-action 'self'",
     "frame-ancestors 'self'"

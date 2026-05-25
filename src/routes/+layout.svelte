@@ -2,6 +2,7 @@
   import '../app.css';
   import Navbar from '$lib/components/Navbar.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
   import ToastContainer from '$lib/components/ToastContainer.svelte';
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
@@ -54,6 +55,7 @@
 </script>
 
 <div class="app">
+  <DisclaimerBanner />
   <Navbar user={data?.user} />
 
   <!-- Page transition loading bar -->

@@ -21,6 +21,7 @@
           <h4 class="footer-col-title">Resources</h4>
           <a href="/about" class="footer-link">About</a>
           <a href="/policies" class="footer-link">Policies</a>
+          <a href="/disclaimer" class="footer-link">Disclaimer</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Subscribe</h4>
@@ -37,9 +38,18 @@
     <div class="footer-divider"></div>
 
     <div class="footer-bottom">
-      <p class="footer-disclaimer">
-        This is commentary only - not financial, legal, or professional advice. Build at your own risk. Think for yourself.
-      </p>
+      <div class="footer-disclaimer-box">
+        <p class="footer-disclaimer-title">
+          ⚠ Research &amp; entertainment only · not professional advice
+        </p>
+        <p class="footer-disclaimer">
+          Everything on this site is the author's commentary, speculation, and supposition.
+          Nothing here is financial, legal, tax, medical, real-estate, or professional advice
+          of any kind. Always consult a qualified professional in the relevant jurisdiction
+          before making any decision. You assume all risk and liability for actions you take
+          based on this content. <a href="/disclaimer" class="footer-disclaimer-link">Read the full disclaimer →</a>
+        </p>
+      </div>
       <p class="footer-copyright">
         &copy; {new Date().getFullYear()} Surviving the Singularity. Built with your own two hands.
       </p>
@@ -150,12 +160,43 @@
     text-align: center;
   }
 
-  .footer-disclaimer {
+  .footer-disclaimer-box {
+    max-width: 720px;
+    margin: 0 auto 1.25rem;
+    padding: 1rem 1.25rem;
+    background: rgba(127, 29, 29, 0.12);
+    border: 1px solid rgba(248, 113, 113, 0.25);
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .footer-disclaimer-title {
     font-size: 0.75rem;
-    color: #475569;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto 1rem;
+    font-weight: 700;
+    color: #fca5a5;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.5rem 0;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .footer-disclaimer {
+    font-size: 0.78rem;
+    color: #cbd5e1;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .footer-disclaimer-link {
+    color: #f59e0b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .footer-disclaimer-link:hover {
+    color: #fbbf24;
   }
 
   .footer-copyright {

@@ -14,45 +14,39 @@ export async function GET({ url, platform, request }) {
   const newsItems = [
     {
       date: '2025-03-06',
-      text: 'New synthetic biological intelligence breakthrough announced by Cortical Labs',
-      tag: 'Breaking',
+      text: 'Cortical Labs unveils CL1, a commercial Synthetic Biological Intelligence platform',
+      tag: 'Reported',
       link: '/blog/synthetic-biological-intelligence'
     },
     {
       date: '2025-03-04',
-      text: 'DARPA seeks proposals for biological space structures - major implications for space industry',
-      tag: 'New',
+      text: 'DARPA issues RFI on large bio-mechanical space structures',
+      tag: 'Reported',
       link: '/blog/darpa-biomechanical-space-structures'
     },
     {
-      date: '2025-03-01',
-      text: 'Claude 4 Opus released with unprecedented reasoning capabilities',
-      tag: 'AI News',
-      link: '/blog/claude-projects-weekend-project'
+      date: '2025-03-28',
+      text: 'Essay: Whispers of the Future - the paradigm shift in human-AI relations',
+      tag: 'Commentary',
+      link: '/blog/whispers-of-the-future'
     },
     {
-      date: '2024-02-28',
-      text: 'New regulatory framework for AGI proposed by international coalition',
-      tag: 'Policy',
+      date: '2024-08-08',
+      text: 'Commentary: what "Level 2" reasoning AI implies for the road to AGI',
+      tag: 'Commentary',
       link: '/blog/singularity-express'
     },
     {
-      date: '2024-02-25',
-      text: 'Preview our exclusive book "Surviving the Singularity" - first chapter now available',
-      tag: 'Book',
-      link: '/sample'
-    },
-    {
-      date: '2024-02-22',
-      text: 'Latest FarmBot update adds advanced computer vision capabilities',
-      tag: 'Tech',
+      date: '2024-08-24',
+      text: 'Field notes: FarmBot deep-dive on AI-assisted precision agriculture',
+      tag: 'Field Notes',
       link: '/blog/farm-bot-deep-dive'
     },
     {
-      date: '2024-02-20',
-      text: 'Our newsletter has reached 10,000 subscribers! Thank you for your support.',
-      tag: 'Milestone',
-      link: '/blog/robot-farm-bot'
+      date: '2026-05-25',
+      text: 'Reminder: site content is research and commentary - see disclaimer',
+      tag: 'Notice',
+      link: '/disclaimer'
     }
   ];
 

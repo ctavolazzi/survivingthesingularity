@@ -315,11 +315,11 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Healthcare is the most acute dependency most households have on corporate infrastructure. A single emergency room visit averages $2,200 out-of-pocket. Primary care is gated behind insurance, referral queues, and geographic access. Offline AI does not replace emergency medicine - it addresses the 80% of healthcare interactions that are informational: symptom triage, medication interactions, dosage guidance, chronic condition management, and mental health support.`
+        text: `IMPORTANT: This section discusses general informational uses of local AI tools alongside, not in place of, professional medical care. Nothing here is medical advice. Always consult a qualified licensed clinician for any medical decision. If you may have a medical emergency, call your doctor or your local emergency number immediately. Healthcare costs vary widely; figures cited are illustrative. Local AI tools, where appropriate and used responsibly, may help with general health literacy, but they do not diagnose, treat, cure, or prevent any disease.`
       },
       {
         type: 'prose',
-        text: `A local medical RAG system combines a quantized LLM with a curated corpus of peer-reviewed literature (PubMed Open Access, Merck Manual, CDC guidelines) indexed into a local vector database. Queries never leave the hardware. The model has no financial incentive to upsell pharmaceuticals or procedures. For a rural shouse community 45 minutes from the nearest urgent care, this is the difference between a 3 AM panic spiral and a calibrated first-response decision.`
+        text: `A local retrieval-augmented system over published medical literature can, in principle, support general health literacy and patient self-education. This is a description of an architecture, not a clinical recommendation. Such a system is not a medical device, has not been evaluated by any regulatory authority, and must never be used in place of a licensed clinician. In a medical emergency, contact emergency services.`
       },
       {
         type: 'table',

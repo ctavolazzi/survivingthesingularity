@@ -20,6 +20,13 @@
 <main class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="max-w-4xl mx-auto" in:fade="{{ duration: 800 }}">
+            <aside class="book-info-only-banner not-prose">
+                <p class="bb-title">INFORMATIONAL PURPOSES ONLY</p>
+                <p class="bb-body">
+                    Always consult the relevant licensed professionals before making any decision based on content in this book. Material here is the author's commentary, speculation, and supposition - not financial, legal, tax, medical, real-estate, construction, or any other professional advice. References to specific products or individuals are editorial and do not imply endorsement.
+                    <a href="/disclaimer" class="bb-link">Full disclaimer →</a>
+                </p>
+            </aside>
             <div class="prose prose-lg dark:prose-invert mx-auto text-justify">
                 <slot></slot>
             </div>
@@ -47,6 +54,36 @@
         width: 100%;
         max-width: 1280px;
     }
+    .book-info-only-banner {
+        margin: 0 auto 2rem;
+        max-width: 720px;
+        padding: 1rem 1.25rem;
+        background: rgba(127, 29, 29, 0.18);
+        border: 1px solid rgba(248, 113, 113, 0.35);
+        border-radius: 10px;
+    }
+    .bb-title {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: #fca5a5;
+        letter-spacing: 0.08em;
+        margin: 0 0 0.5rem 0;
+    }
+    .bb-body {
+        font-size: 0.85rem;
+        color: #fecaca;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .bb-link {
+        color: #fca5a5;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .bb-link:hover { color: #fef2f2; }
     :global(.prose) {
         max-width: none;
     }

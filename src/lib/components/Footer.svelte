@@ -20,8 +20,10 @@
         <div class="footer-col">
           <h4 class="footer-col-title">Resources</h4>
           <a href="/about" class="footer-link">About</a>
-          <a href="/policies" class="footer-link">Policies</a>
+          <a href="/policies" class="footer-link">Privacy</a>
+          <a href="/terms" class="footer-link">Terms</a>
           <a href="/disclaimer" class="footer-link">Disclaimer</a>
+          <a href="/accessibility" class="footer-link">Accessibility</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Subscribe</h4>

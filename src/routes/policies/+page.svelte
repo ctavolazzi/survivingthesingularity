@@ -26,15 +26,19 @@
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Last Updated: May 25, 2026</p>
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
-            <p class="mb-4"><strong>Website Usage:</strong> This website does not collect personal data through cookies or tracking. You can browse and read content without providing any personal information.</p>
+            <p class="mb-4"><strong>Website Usage:</strong> This site itself does not set first-party tracking cookies and does not run third-party analytics or advertising tags as of the last-updated date above. The site may set a small number of strictly-functional values in browser localStorage (for example, to remember whether you have dismissed the disclaimer banner). Outbound links to third-party services such as Substack, Ko-fi, YouTube, and Spotify will be subject to those services' own privacy practices once you click through. You should review their policies separately.</p>
 
-      <p class="mb-4"><strong>Book Preorders & Email Collection:</strong> We have collected email addresses and payment information from people who preordered the book or requested advance copies. This information is used solely for book fulfillment and communication about the book's progress.</p>
+            <p class="mb-4"><strong>Children:</strong> This site is not directed to children under 13. Personal information from children under 13 is not knowingly collected. If you believe a child has provided personal information, you may contact <a href="mailto:info@survivingthesingularity.com" class="text-blue-600 dark:text-blue-400 hover:underline">info@survivingthesingularity.com</a>; review on a best-available-basis with no guaranteed action is contemplated.</p>
 
-      <p class="mb-4"><strong>Data Usage:</strong> Email addresses are used only to send book updates and delivery notifications. Payment information was processed through secure payment processors for preorders. We do not sell, share, or use this information for any other purpose.</p>
+      <p class="mb-4"><strong>Book Preorders &amp; Email Collection:</strong> Email addresses and payment information have been collected from people who preordered the book or requested advance copies. This information is used only for book fulfillment and communication about the book's progress.</p>
 
-      <p class="mb-4"><strong>Contact Us:</strong> If you have questions about your preorder, need a refund, or want to update your information, email <a href="mailto:info@survivingthesingularity.com" class="text-blue-600 dark:text-blue-400 hover:underline">info@survivingthesingularity.com</a>.</p>
+      <p class="mb-4"><strong>Data Usage:</strong> Email addresses collected for preorder purposes are used in connection with book fulfillment and related communications. Payment information was processed through third-party payment processors for preorders. Personal information is not sold to third parties for marketing.</p>
 
-      <p class="mb-6"><strong>Book Status:</strong> The book is still in development. Advance copies and final versions will be distributed to preorder customers when complete.</p>
+      <p class="mb-4"><strong>Book Status:</strong> The book is in active development. As of May 2026, no firm shipping date has been set. Periodic progress updates may be sent by email. No specific delivery date is guaranteed.</p>
+
+      <p class="mb-4"><strong>Preorder Refund Eligibility:</strong> Preorder customers may request a full refund at any time prior to shipment, for any reason or no reason, by emailing <a href="mailto:info@survivingthesingularity.com" class="text-blue-600 dark:text-blue-400 hover:underline">info@survivingthesingularity.com</a> from the email address used to place the order with the subject line "Refund request". Refunds, where eligible, are processed to the original payment method in accordance with applicable law and the policies of the relevant payment processor. No specific timeline for refund processing is guaranteed beyond what applicable law requires. The U.S. FTC Mail, Internet, or Telephone Order Merchandise Rule and any other applicable consumer-protection laws govern over anything stated on this page.</p>
+
+      <p class="mb-4"><strong>Contact:</strong> Preorder questions and refund requests may be sent to <a href="mailto:info@survivingthesingularity.com" class="text-blue-600 dark:text-blue-400 hover:underline">info@survivingthesingularity.com</a>. No specific response time is promised; reasonable effort, when made, is informational and creates no obligation.</p>
     </div>
   </section>
 

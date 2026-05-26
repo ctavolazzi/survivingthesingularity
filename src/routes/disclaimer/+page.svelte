@@ -131,6 +131,46 @@
     </section>
 
     <section class="dpg-section">
+      <h2>Trademarks, product names, and named individuals</h2>
+      <p>
+        Product names, company names, service names, and logos referenced on
+        this site - including but not limited to FarmBot, Mobile Aloha, Tesla
+        Optimus, Neuralink, NVIDIA RTX, Llama, Claude, Anthropic, OpenAI, GPT,
+        ChatGPT, Substack, Ko-fi, Stripe, Supabase, Lemon Squeezy, YouTube,
+        Spotify, and others - are trademarks or registered trademarks of their
+        respective owners. References are editorial and informational. No
+        affiliation, sponsorship, partnership, or endorsement is claimed or
+        implied.
+      </p>
+      <p>
+        Where this site refers to named individuals (researchers, founders,
+        authors, public figures), it does so in the context of their public
+        statements and publicly-reported work. Any descriptions of their views
+        on this site are <strong>paraphrased summaries with links to primary
+        sources</strong> unless explicitly marked as a verbatim quotation. No
+        endorsement of this site or its content by any named individual is
+        claimed or implied. If you are a named party and wish a reference
+        corrected or removed, please contact
+        <a href="mailto:info@survivingthesingularity.com">info@survivingthesingularity.com</a>.
+      </p>
+    </section>
+
+    <section class="dpg-section">
+      <h2>Clinical and medical references</h2>
+      <p>
+        Any discussion on this site of medical topics, local research tools,
+        retrieval-augmented systems over medical literature, biomarker tracking,
+        or related subjects is for general informational and educational purposes
+        only. It is <strong>not intended to diagnose, treat, cure, or prevent
+        any disease</strong>, and it is not a substitute for professional medical
+        advice, diagnosis, or treatment from a qualified licensed clinician.
+        Never disregard professional medical advice or delay seeking it because
+        of something you read on this site. If you think you may have a medical
+        emergency, call your doctor or your local emergency number immediately.
+      </p>
+    </section>
+
+    <section class="dpg-section">
       <h2>Affiliate and commercial disclosures</h2>
       <p>
         Some links on this site may be affiliate links or otherwise commercial.

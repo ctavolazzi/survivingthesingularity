@@ -21,27 +21,29 @@
 		{ year: '2030', event: 'Projected: Artificial General Intelligence', impact: 'Multiple credible researchers predict AGI by this date', source: 'Metaculus, Kurzweil, Hinton' },
 	];
 
+	// Paraphrased summaries of publicly-stated positions, NOT direct quotes.
+	// Readers should follow the source link to read the original wording.
 	const voices = [
 		{
 			name: 'Leopold Aschenbrenner',
 			role: 'Former OpenAI researcher',
-			quote: 'We are on the cusp of the most significant technological transformation in human history. By 2027, AI systems will likely be able to do the work of an AI researcher - and then the intelligence explosion begins.',
+			paraphrase: 'Has publicly argued that AI capability is accelerating quickly enough that AI-capable AI research could plausibly arrive within a few years, with significant downstream implications.',
 			source: 'Situational Awareness (2024)',
 			url: 'https://situational-awareness.ai/',
 			key: true
 		},
 		{
 			name: 'Geoffrey Hinton',
-			role: 'Turing Award winner, "Godfather of AI"',
-			quote: 'These things will be more intelligent than us. We need to think about how to deal with that.',
-			source: 'Interview after leaving Google (2023)',
+			role: 'Turing Award winner, often referred to as a "godfather of deep learning"',
+			paraphrase: 'Has publicly raised concerns about the long-term safety of systems that may eventually exceed human cognitive capability and argued the topic deserves serious attention.',
+			source: 'Public interviews following his 2023 departure from Google',
 			url: 'https://www.bbc.com/news/world-us-canada-65452940',
 			key: true
 		},
 		{
 			name: 'Ray Kurzweil',
-			role: 'Inventor, futurist, Google Director of Engineering',
-			quote: 'By 2029, computers will have human-level intelligence... The singularity - the moment when AI surpasses human intelligence - will happen by 2045.',
+			role: 'Author and futurist',
+			paraphrase: 'Has long argued for specific predictions about when computers may reach human-level intelligence and what he terms the singularity.',
 			source: 'The Singularity Is Nearer (2024)',
 			url: 'https://en.wikipedia.org/wiki/The_Singularity_Is_Nearer',
 			key: false
@@ -49,7 +51,7 @@
 		{
 			name: 'Dario Amodei',
 			role: 'CEO of Anthropic',
-			quote: 'I think it is quite likely that we\'ll have systems that are broadly as capable as humans at intellectual work within 2-3 years.',
+			paraphrase: 'Has publicly suggested that broadly human-capable AI for intellectual work may arrive on a relatively short timeline, while emphasizing safety work.',
 			source: 'Public statements (2024)',
 			url: 'https://www.anthropic.com',
 			key: false
@@ -57,16 +59,16 @@
 		{
 			name: 'Sam Altman',
 			role: 'CEO of OpenAI',
-			quote: 'The intelligence age will be the most transformative and potentially dangerous era in human history. It will also be the most wonderful.',
-			source: 'Blog post (2024)',
+			paraphrase: 'Has publicly described the emerging period as one of potentially historic technological transformation, with both upside and risk.',
+			source: 'Public blog posts (2024)',
 			url: 'https://blog.samaltman.com/',
 			key: false
 		},
 		{
 			name: 'Ilya Sutskever',
-			role: 'Co-founder of OpenAI, founder of Safe Superintelligence Inc.',
-			quote: 'The things we are building are going to be incredibly powerful. We need to take the issue of safety seriously.',
-			source: 'NeurIPS keynote',
+			role: 'Co-founder of OpenAI; founder of Safe Superintelligence Inc.',
+			paraphrase: 'Has publicly emphasized that very powerful AI systems are being built and that safety should be taken seriously.',
+			source: 'Public talks',
 			url: 'https://www.ssi.inc',
 			key: false
 		}
@@ -86,9 +88,9 @@
 
 <svelte:head>
 	<title>Why This Matters - The Singularity, Explained | Surviving the Singularity</title>
-	<meta name="description" content="The evidence for artificial superintelligence is overwhelming. Here's what the top researchers are saying - and what you can do about it." />
+	<meta name="description" content="An argument that AI's trajectory deserves serious attention, based on publicly-available statements from researchers in the field. Informational only — not advice." />
 	<meta property="og:title" content="Why This Matters - The Singularity, Explained" />
-	<meta property="og:description" content="The evidence for artificial superintelligence is overwhelming. Here's what you can do about it." />
+	<meta property="og:description" content="An argument that AI's trajectory deserves serious attention. Informational only." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -116,9 +118,7 @@
 				</h1>
 
 				<p class="hero-sub">
-					The world's top AI researchers - the people actually building these systems - agree:
-					artificial intelligence will match and then exceed human-level capability across every domain
-					within the next 3-10 years. Here's the evidence, in their own words.
+					A number of prominent AI researchers have publicly suggested that AI capability is accelerating quickly, with potentially significant implications. Their views are not unanimous, and timelines are contested. Below are paraphrased summaries of publicly-stated positions, with links to primary sources so you can evaluate the arguments yourself.
 				</p>
 
 				<div class="hero-scroll">
@@ -134,11 +134,11 @@
 	<!-- SECTION 1: THE TIMELINE -->
 	<section class="section" use:observe>
 		<div class="section-inner">
-			<div class="section-label">01 - THE EVIDENCE</div>
-			<h2 class="section-title">The acceleration is measurable.</h2>
+			<div class="section-label">01 - PUBLIC MILESTONES</div>
+			<h2 class="section-title">Some widely-reported milestones.</h2>
 			<p class="section-desc">
 				Each year, AI capabilities that experts predicted were decades away arrive months later.
-				This isn't hype - it's published research with reproducible results.
+				These are widely-reported milestones. Whether they imply what some commentators claim is a separate question.
 			</p>
 
 			<div class="timeline" use:stagger={{ delay: 100 }}>
@@ -162,23 +162,26 @@
 	<!-- SECTION 2: THE VOICES -->
 	<section class="section section-dark" use:observe>
 		<div class="section-inner">
-			<div class="section-label">02 - THE VOICES</div>
-			<h2 class="section-title">What the builders themselves are saying.</h2>
+			<div class="section-label">02 - PARAPHRASED POSITIONS</div>
+			<h2 class="section-title">What some prominent researchers have publicly said.</h2>
 			<p class="section-desc">
-				These aren't journalists or pundits. These are the people building the most powerful AI systems
-				on Earth - and they're all saying the same thing.
+				Paraphrased summaries below, not direct quotes. Views shown are not unanimous across the field — they are a sample of public statements that have been influential in the discourse.
+			</p>
+
+			<p class="quotes-disclaimer">
+				The cards below are <strong>paraphrased summaries</strong> of publicly-stated positions, not direct quotes. Follow each source link to read the original wording in context.
 			</p>
 
 			<div class="quotes-grid" use:stagger={{ delay: 120 }}>
 				{#each voices as person}
 					<div class="quote-card stagger-item" class:quote-key={person.key}>
-						<blockquote class="quote-text">"{person.quote}"</blockquote>
+						<p class="quote-text">{person.paraphrase}</p>
 						<div class="quote-attribution">
 							<div class="quote-name">{person.name}</div>
 							<div class="quote-role">{person.role}</div>
 							<div class="quote-source">
 								{person.source}
-								<a href={person.url} target="_blank" rel="noopener noreferrer" class="quote-link">Read →</a>
+								<a href={person.url} target="_blank" rel="noopener noreferrer" class="quote-link">Read primary source →</a>
 							</div>
 						</div>
 					</div>
@@ -195,9 +198,7 @@
 					<h3 class="callout-title">Recommended Reading</h3>
 					<p class="callout-text">
 						<strong><a href="https://situational-awareness.ai/" target="_blank" rel="noopener noreferrer">Situational Awareness</a></strong>
-						by Leopold Aschenbrenner is the single most important document written about AI in 2024.
-						A former OpenAI superalignment researcher lays out - with receipts - exactly why AGI is likely
-						by 2027, what that means for the world, and why almost nobody is prepared.
+						by Leopold Aschenbrenner has been influential in the discourse around AI timelines. A former OpenAI researcher's argument for why he thinks rapid AI progress is likely. Read it and form your own view — it is one author's argument, not a settled forecast.
 					</p>
 					<p class="callout-read-time">~2 hour read. Worth every minute.</p>
 				</div>
@@ -208,11 +209,10 @@
 	<!-- SECTION 3: CAPABILITY COMPARISON -->
 	<section class="section" use:observe>
 		<div class="section-inner">
-			<div class="section-label">03 - THE BENCHMARKS</div>
-			<h2 class="section-title">AI vs. Human Performance</h2>
+			<div class="section-label">03 - BENCHMARK NOTES</div>
+			<h2 class="section-title">Illustrative benchmark figures</h2>
 			<p class="section-desc">
-				In 2020, AI couldn't reliably write a paragraph. Today it passes professional licensing exams.
-				Here's where things stand.
+				AI performance on various benchmarks has improved substantially over recent years. The numbers below are illustrative reference figures, not a settled comparison — benchmarks have known limitations and results vary by methodology.
 			</p>
 
 			<div class="benchmark-table">
@@ -233,8 +233,7 @@
 			</div>
 
 			<p class="bench-note">
-				Sources: OpenAI technical reports, Anthropic, Google DeepMind, GPQA benchmark, HumanEval.
-				Human scores represent expert-level performance (e.g., licensed professionals for bar/medical exams).
+				Figures shown are illustrative and drawn from public reporting by labs and benchmark authors. Benchmark results vary by version, methodology, prompting, and which "human" baseline is used. Treat all numbers as rough indicators, not authoritative measurements. Verify any figure you intend to rely on against the original source.
 			</p>
 		</div>
 	</section>
@@ -242,24 +241,17 @@
 	<!-- SECTION 4: THE KEY QUESTION -->
 	<section class="section section-pivot" use:observe>
 		<div class="section-inner">
-			<div class="section-label">04 - THE QUESTION</div>
+			<div class="section-label">04 - ONE WAY TO THINK ABOUT IT</div>
 			<h2 class="section-title-large">
-				So what do you <em>do</em> with this information?
+				So what might one <em>do</em> with this?
 			</h2>
 			<p class="pivot-text">
-				Most people respond to this with anxiety, denial, or paralysis.
-				But there's a third option that almost nobody is talking about.
-			</p>
-			<p class="pivot-text">
-				Instead of competing with AI for jobs, <strong>use AI as a force multiplier</strong>
-				to build something real - physical, owned, and independent.
+				One possible response: rather than only competing with AI for cognitive work, consider using AI as a tool while also investing in tangible capabilities. This is the author's framing, not a recommendation.
 			</p>
 
 			<div class="pivot-insight">
-				<span class="pivot-marker">THE INSIGHT</span>
-				<p>The same technologies displacing office workers are <em>empowering</em> builders.
-				A solo creator with AI tools can now produce what took a team of 20 in 2019.
-				Land is still real. Tools still work. YouTube pays for the journey.</p>
+				<span class="pivot-marker">AUTHOR'S FRAMING</span>
+				<p>The same technologies changing knowledge work also lower the cost of building, learning, and producing. Whether that matters for any specific person depends on their situation. Not advice.</p>
 			</div>
 		</div>
 	</section>
@@ -267,11 +259,10 @@
 	<!-- SECTION 5: THE BOOK FUNNEL BEGINS -->
 	<section class="section section-book" use:observe>
 		<div class="section-inner">
-			<div class="section-label">05 - THE BLUEPRINT</div>
-			<h2 class="section-title">We wrote the playbook.</h2>
+			<div class="section-label">05 - ABOUT THE BOOK</div>
+			<h2 class="section-title">About this project's book</h2>
 			<p class="section-desc">
-				"Surviving the Singularity" isn't about predictions. It's about <strong>what to do</strong>.
-				A step-by-step guide for building material independence before the window closes.
+				<strong>Note:</strong> The paraphrased positions above are from independent third parties and do not constitute endorsements of this project or its book. This section is about the author's own work, separate from the views shown above.
 			</p>
 
 			<div class="book-hero" use:observe>
@@ -295,35 +286,35 @@
 					<ul class="book-toc">
 						<li class="book-toc-item">
 							<span class="toc-num">01</span>
-							<span class="toc-text">The economic trap - why the old path is broken (with math)</span>
+							<span class="toc-text">Economic analysis - the author's reading of recent cost trends</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">02</span>
-							<span class="toc-text">The Shouse model - $8K living space vs. $500K mortgage</span>
+							<span class="toc-text">The Shouse model - one approach to lowering housing overhead</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">03</span>
-							<span class="toc-text">The YouTube content engine - how to fund your build</span>
+							<span class="toc-text">Creator work as a possible income channel (outcomes vary)</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">04</span>
-							<span class="toc-text">Digital sovereignty - running your own AI, offline, forever</span>
+							<span class="toc-text">Local AI tools and the case for running them yourself</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">05</span>
-							<span class="toc-text">The physical exit - land, building codes, and rural strategy</span>
+							<span class="toc-text">Land and construction notes (consult your local attorney and contractor)</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">06</span>
-							<span class="toc-text">Open-source robotics - FarmBot, Mobile Aloha, automation</span>
+							<span class="toc-text">Open-source automation projects worth knowing about</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">07</span>
-							<span class="toc-text">The cash engine - digital products, passive income, escape velocity</span>
+							<span class="toc-text">Small-product business notes (not a guaranteed income model)</span>
 						</li>
 						<li class="book-toc-item">
 							<span class="toc-num">08</span>
-							<span class="toc-text">Execute - immediate action steps, no excuses</span>
+							<span class="toc-text">A suggested sequence the author has been thinking about</span>
 						</li>
 					</ul>
 
@@ -338,8 +329,7 @@
 					</div>
 
 					<p class="book-free-note">
-						The core blueprint is <strong>free to read online</strong>. The book goes deeper
-						with case studies, calculators, vendor lists, and a 90-day action plan.
+						The core blueprint is <strong>free to read online</strong>. The book is an extended treatment of the same material - informational only, not advice. <a href="/disclaimer" style="color:inherit;text-decoration:underline;">See full disclaimer</a>.
 					</p>
 				</div>
 			</div>
@@ -684,6 +674,19 @@
 	}
 
 	/* ═══ QUOTES ═══ */
+	.quotes-disclaimer {
+		max-width: 720px;
+		margin: 0 0 1.5rem 0;
+		padding: 0.85rem 1rem;
+		background: rgba(127, 29, 29, 0.18);
+		border: 1px solid rgba(248, 113, 113, 0.3);
+		border-radius: 8px;
+		font-size: 0.85rem;
+		color: #fecaca;
+		line-height: 1.6;
+	}
+	.quotes-disclaimer strong { color: #fef2f2; }
+
 	.quotes-grid {
 		display: grid;
 		grid-template-columns: 1fr;

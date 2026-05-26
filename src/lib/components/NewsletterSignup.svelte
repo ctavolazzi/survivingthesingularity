@@ -10,7 +10,7 @@
       <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </a>
-  <p class="substack-meta">Subscriber-only chapter drops · launch alerts · zero spam</p>
+  <p class="substack-meta">Substack subscription. Frequency and content not promised. Subscribe and unsubscribe entirely at your option.</p>
 </div>
 
 <style>

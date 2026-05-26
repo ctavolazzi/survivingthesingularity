@@ -42,17 +42,25 @@
     <div class="footer-bottom">
       <div class="footer-disclaimer-box">
         <p class="footer-disclaimer-title">
-          ⚠ INFORMATIONAL PURPOSES ONLY
+          ⚠ Informational &amp; educational use only · offered AS-IS
         </p>
         <p class="footer-disclaimer">
-          <strong>ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.</strong>
-          Nothing on this site is financial, legal, tax, medical, real-estate, or
-          professional advice. You assume all risk for actions you take.
+          <strong>This site is for informational and educational purposes only. It is not professional advice and should not be used in place of professional advice. Please consult all relevant professionals before making any decisions.</strong>
+          The site is offered AS-IS with no warranties of any kind and no obligation to update, correct, support, or maintain it. You assume all risk for any action you take or fail to take based on anything you read here.
           <a href="/disclaimer" class="footer-disclaimer-link">Full disclaimer →</a>
         </p>
       </div>
+
+      <p class="footer-consent">
+        <strong>By accessing or using this site, you acknowledge that you have read, understood, and agree to be bound by the</strong>
+        <a href="/terms" class="footer-disclaimer-link">Terms of Use</a>,
+        <a href="/disclaimer" class="footer-disclaimer-link">Disclaimer</a>, and
+        <a href="/policies" class="footer-disclaimer-link">Privacy &amp; Policies</a>.
+        If you do not agree, do not use this site.
+      </p>
+
       <p class="footer-copyright">
-        &copy; {new Date().getFullYear()} Surviving the Singularity. Built with your own two hands.
+        &copy; {new Date().getFullYear()} Surviving the Singularity. All rights reserved where applicable.
       </p>
     </div>
   </div>
@@ -198,6 +206,23 @@
 
   .footer-disclaimer-link:hover {
     color: #fbbf24;
+  }
+
+  .footer-consent {
+    max-width: 720px;
+    margin: 0 auto 1rem;
+    padding: 0.85rem 1.1rem;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 8px;
+    font-size: 0.74rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .footer-consent strong {
+    color: #e2e8f0;
+    font-weight: 600;
   }
 
   .footer-copyright {

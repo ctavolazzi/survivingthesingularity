@@ -21,7 +21,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="max-w-4xl mx-auto" in:fade="{{ duration: 800 }}">
             <aside class="book-info-only-banner not-prose">
-                <p class="bb-title">INFORMATIONAL PURPOSES ONLY</p>
+                <p class="bb-title">Informational & educational use only</p>
                 <p class="bb-body">
                     Always consult the relevant licensed professionals before making any decision based on content in this book. Material here is the author's commentary, speculation, and supposition - not financial, legal, tax, medical, real-estate, construction, or any other professional advice. References to specific products or individuals are editorial and do not imply endorsement.
                     <a href="/disclaimer" class="bb-link">Full disclaimer →</a>

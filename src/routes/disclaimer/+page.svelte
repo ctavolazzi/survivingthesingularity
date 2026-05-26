@@ -24,15 +24,17 @@
     </header>
 
     <section class="dpg-callout dpg-callout-major">
-      <h2>INFORMATIONAL PURPOSES ONLY</h2>
+      <h2>Informational and educational use only</h2>
       <p>
-        <strong>ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY
-        DECISIONS.</strong> Everything on this site is published for informational,
-        research, commentary, and entertainment purposes only. Nothing here is
-        meant to be taken literally, prescriptively, or as a statement of fact
-        about your situation. It is one person's conjecture, supposition, and
-        synthesis of publicly available information. It may be wrong. It is
-        almost certainly incomplete. It will go out of date.
+        <strong>This site is for informational and educational purposes only.
+        It is not professional advice and should not be used in place of
+        professional advice. Please consult all relevant professionals before
+        making any decisions.</strong> Everything published here is the
+        author's commentary, supposition, and synthesis of publicly available
+        information. It may be wrong. It is almost certainly incomplete. It
+        will go out of date. The site is offered <strong>AS-IS</strong>, with
+        no warranties of any kind and no obligation to update, correct, support,
+        or maintain it.
       </p>
     </section>
 

@@ -34,7 +34,7 @@
 
 <div class="dashboard" class:mounted>
   <p class="dash-info-only">
-    INFORMATIONAL PURPOSES ONLY — ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.
+    This site is for informational and educational purposes only. Not professional advice. Consult all relevant professionals before making any decisions. Offered AS-IS.
   </p>
 
   <div class="dash-grid">

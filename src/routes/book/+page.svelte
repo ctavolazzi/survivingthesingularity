@@ -59,11 +59,11 @@
            When a direct book-purchase link goes live, swap this block for
            <a class="cta-primary" href="<purchase-url>">Buy the book →</a>. -->
       <div class="hero-preorder">
-        <div class="preorder-label">📬 Want updates when chapters drop or the book ships?</div>
+        <div class="preorder-label">Updates are posted to Substack when posted at all.</div>
         <a class="cta-primary subscribe-cta" href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer">
           Subscribe on Substack →
         </a>
-        <p class="preorder-meta">Subscriber-only chapter drops · launch alerts · zero spam</p>
+        <p class="preorder-meta">Substack subscription. No content frequency, ship date, or completion guarantee. Subject to Substack's own terms.</p>
       </div>
     </div>
   </section>

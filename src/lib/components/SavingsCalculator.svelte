@@ -61,7 +61,7 @@
   {#if showResults}
     <div class="calc-results" in:fly={{ y: 20, duration: 400 }}>
       <p class="calc-info-only">
-        INFORMATIONAL PURPOSES ONLY — ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.
+        This site is for informational and educational purposes only. Not professional advice. Consult all relevant professionals before making any decisions. Offered AS-IS.
       </p>
 
       <div class="results-header">

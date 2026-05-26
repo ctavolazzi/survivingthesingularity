@@ -53,6 +53,10 @@
 </script>
 
 <div class="countdown" class:animated>
+  <p class="countdown-info-only">
+    INFORMATIONAL PURPOSES ONLY — ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.
+  </p>
+
   <div class="countdown-top">
     <!-- Progress ring -->
     <div class="ring-wrap">
@@ -80,19 +84,17 @@
 
     <!-- Target info -->
     <div class="target-info">
-      <div class="target-date-label">Estimated independence date</div>
+      <div class="target-date-label">Directional indicator only</div>
       <div class="target-date">
         {#if monthsToTarget === Infinity}
-          <span class="target-never">Increase savings to calculate</span>
+          <span class="target-never">Increase savings to see indicator</span>
         {:else}
-          {formatDate(targetDate)}
+          <span class="target-direction">Trending toward target</span>
         {/if}
       </div>
-      {#if monthsSaved > 0}
-        <div class="shouse-boost">
-          With shouse strategy: <strong>{yearsSaved} years sooner</strong>
-        </div>
-      {/if}
+      <div class="shouse-boost">
+        This is a toy model, not a forecast.
+      </div>
     </div>
   </div>
 
@@ -163,7 +165,7 @@
   </div>
 
   <p class="countdown-disclaimer">
-    Rough projection. Assumes flat returns, ignores inflation, taxes, lifestyle changes, and your actual circumstances. Not financial advice. <a href="/disclaimer">See full disclaimer</a>.
+    Toy model. Not a forecast. Ignores inflation, taxes, lifestyle, market conditions, and your actual circumstances. Numbers shown are illustrative only and should not inform any decision. Not financial advice. <a href="/disclaimer">Full disclaimer</a>.
   </p>
 </div>
 
@@ -174,6 +176,21 @@
     border-radius: 20px;
     padding: 2rem;
     margin-top: 2rem;
+  }
+
+  .countdown-info-only {
+    margin: 0 0 1.25rem 0;
+    padding: 0.75rem 1rem;
+    background: rgba(127, 29, 29, 0.18);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: #fecaca;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    text-align: center;
   }
 
   .countdown-disclaimer {

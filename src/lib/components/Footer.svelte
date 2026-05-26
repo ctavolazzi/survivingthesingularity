@@ -40,14 +40,13 @@
     <div class="footer-bottom">
       <div class="footer-disclaimer-box">
         <p class="footer-disclaimer-title">
-          ⚠ Research &amp; entertainment only · not professional advice
+          ⚠ INFORMATIONAL PURPOSES ONLY
         </p>
         <p class="footer-disclaimer">
-          Everything on this site is the author's commentary, speculation, and supposition.
-          Nothing here is financial, legal, tax, medical, real-estate, or professional advice
-          of any kind. Always consult a qualified professional in the relevant jurisdiction
-          before making any decision. You assume all risk and liability for actions you take
-          based on this content. <a href="/disclaimer" class="footer-disclaimer-link">Read the full disclaimer →</a>
+          <strong>ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.</strong>
+          Nothing on this site is financial, legal, tax, medical, real-estate, or
+          professional advice. You assume all risk for actions you take.
+          <a href="/disclaimer" class="footer-disclaimer-link">Full disclaimer →</a>
         </p>
       </div>
       <p class="footer-copyright">

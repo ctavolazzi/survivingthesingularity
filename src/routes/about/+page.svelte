@@ -17,17 +17,17 @@
       <p class="about-label">About This Project</p>
       <h1 class="about-title">I'm Building the Exit Strategy</h1>
       <p class="about-subtitle">
-        Surviving the Singularity is a research project, a blueprint, and a call to action. I document the path to material independence for makers, builders, and anyone tired of the broken math of modern life.
+        Surviving the Singularity is a research project and an open notebook. Material here is the author's commentary and supposition - not advice. Anything you might consider acting on should be evaluated with the relevant licensed professionals.
       </p>
     </header>
 
     <section class="about-section">
       <h2>The Thesis</h2>
       <p>
-        The traditional path to stability - 30-year mortgage, corporate career, retirement - is mathematically inaccessible for the maker class. The cost of housing has outpaced wages by orders of magnitude, and the social contract that once guaranteed security in exchange for compliance has collapsed.
+        For many people in many places, the costs of housing relative to wages have shifted significantly over recent decades. Whether the old playbook still works for any individual depends on geography, profession, family situation, and dozens of other factors. None of this is meant as a universal claim.
       </p>
       <p>
-        My answer is the <strong>YouTube Shouse Blueprint</strong>: a comprehensive strategy that combines minimalist infrastructure (the shouse), digital leverage (YouTube and direct-to-consumer products), local AI sovereignty, and open-source robotics to create a life of genuine independence.
+        One direction the author has been exploring is the <strong>YouTube Shouse Blueprint</strong>: a thought experiment combining minimalist infrastructure, public-facing creator work, local AI tools, and open-source automation. It is a hypothesis to think with, not a plan to follow.
       </p>
     </section>
 
@@ -48,7 +48,7 @@
         </div>
         <div class="provide-item">
           <h3>The Data</h3>
-          <p>Real numbers: purchasing power charts, construction cost tables, GPU benchmarks, crop yields, and ROI calculations.</p>
+          <p>Reference figures from public sources: purchasing-power indicators, construction cost ranges, GPU benchmarks, illustrative yield and ROI examples. Verify any number you intend to rely on.</p>
         </div>
       </div>
     </section>
@@ -56,16 +56,16 @@
     <section class="about-section">
       <h2>The Philosophy</h2>
       <p>
-        I believe individuals are not consumables for the rich - they are self-determining entities with the right to autonomy. Material independence is not about isolation; it's about building from a position of strength. When your overhead is crushed, your time is reclaimed, and your tools are sovereign, you can finally contribute to a community from abundance rather than scarcity.
+        The author values personal autonomy and lower fixed costs as a starting point for stronger civic and community participation. Whether any specific tactic discussed on this site is appropriate for you is a question for you and your professional advisors.
       </p>
       <p>
-        This project is commentary, not financial advice. Build at your own risk. Think for yourself. The math proof exists - material independence is becoming more possible with every passing day as technology becomes cheaper, better, and faster.
+        This project is commentary and informational only. Not financial, legal, real-estate, medical, or any other professional advice. Always consult the relevant licensed professionals before making any decision based on anything published here.
       </p>
     </section>
 
     <section class="about-section about-cta">
       <h2>Start Here</h2>
-      <p>Read the blueprint. Build your exit strategy. Hit record and speak with your full chest.</p>
+      <p>Read the material as one author's commentary. Take what's useful for your own thinking. Always consult the relevant licensed professionals before acting.</p>
       <div class="about-actions">
         <a href="/blueprint" class="btn-primary">Read the Blueprint</a>
         <a href="/blog" class="btn-secondary">Read the Blog</a>

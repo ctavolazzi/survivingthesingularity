@@ -28,10 +28,7 @@
         </svg>
       </div>
       <p class="dbnr-text">
-        <strong>Research &amp; entertainment only.</strong>
-        Nothing on this site is financial, legal, medical, tax, or professional advice.
-        This is one person's conjecture and supposition. Consult qualified professionals
-        before making any decisions. You assume all risk and liability for actions you take.
+        <strong>INFORMATIONAL PURPOSES ONLY — ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.</strong>
         <a href="/disclaimer" class="dbnr-link">Full disclaimer →</a>
       </p>
       <button type="button" class="dbnr-dismiss" on:click={dismiss} aria-label="Dismiss disclaimer">×</button>

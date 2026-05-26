@@ -17,21 +17,22 @@
       </div>
       <h1>Disclaimer</h1>
       <p class="dpg-sub">
-        Last updated: 25 May 2026. This page governs everything published at
+        Last updated: 26 May 2026. This page governs everything published at
         survivingthesingularity.com - including the book, the blueprint, blog posts,
         calculators, dashboards, and any linked resources.
       </p>
     </header>
 
     <section class="dpg-callout dpg-callout-major">
-      <h2>Research and entertainment only</h2>
+      <h2>INFORMATIONAL PURPOSES ONLY</h2>
       <p>
-        Everything on this site is published for <strong>research, commentary,
-        speculation, and entertainment purposes only</strong>. Nothing here is meant
-        to be taken literally, prescriptively, or as a statement of fact about your
-        situation. It is one person's conjecture, supposition, and synthesis of
-        publicly available information. It may be wrong. It is almost certainly
-        incomplete. It will go out of date.
+        <strong>ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY
+        DECISIONS.</strong> Everything on this site is published for informational,
+        research, commentary, and entertainment purposes only. Nothing here is
+        meant to be taken literally, prescriptively, or as a statement of fact
+        about your situation. It is one person's conjecture, supposition, and
+        synthesis of publicly available information. It may be wrong. It is
+        almost certainly incomplete. It will go out of date.
       </p>
     </section>
 

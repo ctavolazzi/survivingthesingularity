@@ -156,17 +156,17 @@
 				</p>
 
 				<p class="hero-question">
-					What if you could build <em>real independence</em> for under $150K?
+					What might <em>real independence</em> look like at a fraction of the usual cost?
 				</p>
 
 				<div class="hero-answer">
 					<div class="answer-bar"></div>
 					<div class="answer-content">
 						<p class="answer-text">
-							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is our blueprint. Are you ready?
+							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint — for thinking about, not acting on without professional guidance.
 						</p>
 						<p class="answer-cost">
-							Total cost: <strong>under $150K</strong>. In some cases, <strong>under $30K</strong>.
+							Some scenarios in this thought experiment model costs well below a traditional mortgage. <strong>Your real numbers will differ.</strong>
 						</p>
 					</div>
 				</div>
@@ -210,30 +210,28 @@
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '25', suffix: '%' }}>0%</span>
-					<span class="stat-label">Dollar purchasing power lost since 2020</span>
+					<span class="stat-label">Dollar purchasing power (illustrative)</span>
 				</div>
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '500', prefix: '$', suffix: 'K' }}>$0K</span>
-					<span class="stat-label">Median U.S. home price</span>
+					<span class="stat-label">Median U.S. home price (rough)</span>
 				</div>
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '30', suffix: ' years' }}>0 years</span>
-					<span class="stat-label">Standard mortgage commitment</span>
+					<span class="stat-label">Standard mortgage commitment (typical)</span>
 				</div>
 				<div class="stat-card stagger-item stat-success">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '5', prefix: '$', suffix: 'K' }}>$0K</span>
-					<span class="stat-label">Starting price for rural acreage in target counties.</span>
+					<span class="stat-label">Rural acreage starting prices vary widely.</span>
 				</div>
 			</div>
 
 			<div class="situation-block">
 				<p>
-					A 30-year mortgage on a $500K house means you pay <strong>$1.1 million</strong> total.
-					For a structure you leave empty 10 hours a day. Meanwhile, your dollar buys 25% less than
-					it did six years ago, and housing inventory is at historic lows.
+					A standard 30-year mortgage compounds total payments well above the sticker price — exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. None of these statements should be relied on without checking current data.
 				</p>
 				<p>
 					But the same technology disrupting old industries is also creating new leverage.
@@ -258,13 +256,13 @@
 				<span class="section-number">02</span>
 				<div>
 					<h2 class="section-title">The Plan</h2>
-					<p class="section-desc">Four steps. No fluff. No course to buy. This is a technical specification for a different life.</p>
+					<p class="section-desc">Four steps the author has been thinking about. Not a prescription. Not a recommendation. Material for your own evaluation with qualified professionals.</p>
 				</div>
 			</div>
 
 			<div class="plan-statement">
-				<p class="plan-headline">Adaptability is the new currency.</p>
-				<p class="plan-sub">The people who thrive in what's coming won't be the ones with the best degrees or biggest 401Ks. They'll be the ones who can <em>build things</em>, <em>learn fast</em>, and <em>teach others</em>. This blueprint shows you how.</p>
+				<p class="plan-headline">Adaptability matters more, the faster things change.</p>
+					<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change. Hypothesis, not advice.</p>
 			</div>
 		</div>
 	</section>
@@ -295,8 +293,8 @@
 						Or any other platform you like. Substack, Threads, Instagram, whatever works for you. Make content, find your people, stay cautious, but allow the world to see who you are. Find your people. Thrive.
 					</p>
 					<div class="step-tags">
-						<span class="step-tag">Revenue: $2K–$20K/mo at scale</span>
-						<span class="step-tag">Faceless channels viable</span>
+						<span class="step-tag">Outcomes vary widely</span>
+						<span class="step-tag">No income claim</span>
 					</div>
 					<a href="/blueprint/content-engine" class="step-link">Read the full chapter &rarr;</a>
 				</div>
@@ -311,10 +309,7 @@
 					</div>
 					<h3 class="step-title">Buy Land</h3>
 					<p class="step-body">
-						Rural land in the U.S. can be acquired for <strong>$5,000–$30,000</strong> per acre in
-						areas with minimal building restrictions. Title 25 "Owner-Built Housing" provisions let
-						you build without a general contractor. Butte County, CA - 1-acre parcels for under $15K.
-						This is your sovereignty. The foundation of everything else.
+						In some rural U.S. counties, parcels in this price range exist - but prices, zoning, water rights, road access, and tax burden vary enormously. Title 25 provisions in California are commonly cited; rules in your jurisdiction may differ. Consult a local real-estate attorney and licensed contractor before assuming any specific number applies to you.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Title 25 Owner-Built</span>
@@ -333,14 +328,11 @@
 					</div>
 					<h3 class="step-title">Build a Shop</h3>
 					<p class="step-body">
-						Not a house - a <strong>shouse</strong>. Shop first, shelter second. A 40×60 red iron
-						steel building costs $25–$43/sq ft. The living space inside is a $8,000 partition. Compare
-						that to a $500K mortgage. Your shop is your production facility. Your living quarters are
-						an efficient afterthought. Flip the domestic hierarchy.
+						Not a house - a <strong>shouse</strong>. Shop first, shelter second. Steel building kit prices fluctuate with commodity markets. Habitability conversions are subject to local building codes, occupancy permits, and inspection regimes that vary by county. Consult a licensed contractor and your local permitting authority before estimating any cost.
 					</p>
 					<div class="step-tags">
-						<span class="step-tag">$8K living space inside</span>
-						<span class="step-tag">Steel > wood frame</span>
+						<span class="step-tag">Code varies by county</span>
+							<span class="step-tag">Consult a contractor</span>
 					</div>
 					<a href="/blueprint/the-shouse" class="step-link">Read the full chapter &rarr;</a>
 				</div>
@@ -373,9 +365,9 @@
 			<div class="steps-total">
 				<div class="total-line"></div>
 				<div class="total-content">
-					<span class="total-label">Total estimated cost</span>
-					<span class="total-range">$30,000 – $150,000</span>
-					<span class="total-compare">vs. $1.1M for a traditional mortgage</span>
+					<span class="total-label">Illustrative range</span>
+					<span class="total-range">Highly variable</span>
+					<span class="total-compare">Your real costs will differ — consult professionals</span>
 				</div>
 				<div class="total-line"></div>
 			</div>
@@ -482,16 +474,12 @@
 	<section class="section section-cta" id="act" use:observe>
 		<div class="section-inner cta-inner">
 			<div class="cta-border"></div>
-			<p class="cta-eyebrow">Final directive</p>
+			<p class="cta-eyebrow">Closing thought</p>
 			<h2 class="cta-title">
-				Real security is not found in status.<br/>
-				It is found in solar panels, seeds in the soil,<br/>
-				and a human voice on a digital network.
+				A thesis worth considering:<br/>that real security may come from tangible things you understand,<br/>not from status, debt, or systems you don't.
 			</h2>
 			<p class="cta-body">
-				Put yourself through life with your own two hands. Teach your kids the same.
-				The window for preparation is measured in years, not decades.
-				This blueprint is free. The only cost is action.
+				Material from this site is for thinking with, not acting on. Anything you might attempt — land purchases, construction, career changes, financial moves — should be evaluated with the relevant licensed professionals in your jurisdiction.
 			</p>
 			<div class="cta-actions">
 				<a href="/blueprint" class="btn-primary btn-large">

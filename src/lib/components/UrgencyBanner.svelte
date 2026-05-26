@@ -1,68 +1,11 @@
-<script>
-  import { onMount, onDestroy } from 'svelte';
-  import { browser } from '$app/environment';
-
-  // Predicted Time to AGI - author's working forecast.
-  // Counter renders this as a live ticker; if AGI lands earlier or later,
-  // update this constant (single source of truth) and the prediction updates everywhere.
-  const TARGET_DATE = new Date('2027-11-19T00:00:00Z');
-
-  let now = new Date();
-  let interval;
-
-  onMount(() => {
-    interval = setInterval(() => {
-      now = new Date();
-    }, 1000);
-  });
-
-  onDestroy(() => {
-    if (interval) clearInterval(interval);
-  });
-
-  $: diff = TARGET_DATE.getTime() - now.getTime();
-  $: expired = diff <= 0;
-  $: days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
-  $: hours = Math.max(0, Math.floor((diff / (1000 * 60 * 60)) % 24));
-  $: minutes = Math.max(0, Math.floor((diff / (1000 * 60)) % 60));
-  $: seconds = Math.max(0, Math.floor((diff / 1000) % 60));
-
-  function pad(n) { return String(n).padStart(2, '0'); }
-</script>
-
 <a href="/why" class="urgency-banner">
   <div class="banner-inner">
     <div class="banner-left">
       <span class="banner-pulse"></span>
-      <span class="banner-label">{expired ? "Author's AGI date arrived (speculation)" : "Author's AGI guess (speculation)"}</span>
+      <span class="banner-label">Why the author thinks this matters (speculation)</span>
     </div>
-    {#if !expired}
-      <div class="banner-countdown">
-        <div class="count-block">
-          <span class="count-num">{days}</span>
-          <span class="count-unit">days</span>
-        </div>
-        <span class="count-sep">:</span>
-        <div class="count-block">
-          <span class="count-num">{pad(hours)}</span>
-          <span class="count-unit">hrs</span>
-        </div>
-        <span class="count-sep">:</span>
-        <div class="count-block">
-          <span class="count-num">{pad(minutes)}</span>
-          <span class="count-unit">min</span>
-        </div>
-        <span class="count-sep">:</span>
-        <div class="count-block">
-          <span class="count-num count-seconds">{pad(seconds)}</span>
-          <span class="count-unit">sec</span>
-        </div>
-      </div>
-    {:else}
-      <div class="banner-expired">Read the briefing</div>
-    {/if}
     <div class="banner-right">
-      <span class="banner-note">Why this matters</span>
+      <span class="banner-note">Read the reasoning</span>
       <svg class="banner-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
         <path d="M3 6H9M9 6L6 3M9 6L6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>

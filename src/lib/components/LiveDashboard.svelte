@@ -1,37 +1,21 @@
 <script>
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount } from 'svelte';
 
   let mounted = false;
 
-  // Simulated "live" data points - these animate/tick on mount
+  // Static reference figures. Not market data, not a forecast. Sparklines
+  // illustrate the shape of the indicator across a stylized 2020-2026 window.
   let metrics = [
-    { label: 'Dollar Purchasing Power', value: 0.798, display: '$0.80', unit: 'per 2020 dollar', trend: 'down', color: '#ef4444', sparkline: [1.0, 0.97, 0.93, 0.88, 0.85, 0.82, 0.80] },
-    { label: 'Median Home Price', value: 500000, display: '$500K', unit: 'United States', trend: 'up', color: '#ef4444', sparkline: [290, 320, 350, 400, 430, 475, 500] },
-    { label: 'Shouse Build Cost', value: 100000, display: '$100K', unit: 'all-in estimate', trend: 'stable', color: '#10b981', sparkline: [95, 97, 98, 100, 100, 100, 100] },
-    { label: 'Monthly Overhead Savings', value: 1450, display: '$1,450', unit: 'vs traditional mortgage', trend: 'up', color: '#10b981', sparkline: [800, 950, 1050, 1200, 1300, 1400, 1450] },
-    { label: 'YouTube Channels Created', value: 114000000, display: '114M+', unit: 'global creator economy', trend: 'up', color: '#3b82f6', sparkline: [51, 65, 78, 89, 95, 105, 114] },
-    { label: 'Llama 4 VRAM Req.', value: 48, display: '48 GB', unit: 'consumer hardware', trend: 'down', color: '#10b981', sparkline: [128, 96, 80, 64, 56, 52, 48] },
+    { label: 'Dollar Purchasing Power', display: '~$0.80', unit: 'per 2020 dollar (illustrative)', trend: 'down', color: '#ef4444', sparkline: [1.0, 0.97, 0.93, 0.88, 0.85, 0.82, 0.80] },
+    { label: 'Median Home Price', display: '~$500K', unit: 'United States (illustrative)', trend: 'up', color: '#ef4444', sparkline: [290, 320, 350, 400, 430, 475, 500] },
+    { label: 'Shouse Build Cost', display: 'varies', unit: 'highly region-dependent', trend: 'stable', color: '#10b981', sparkline: [95, 97, 98, 100, 100, 100, 100] },
+    { label: 'Monthly Overhead Delta', display: 'varies', unit: 'depends on your situation', trend: 'up', color: '#10b981', sparkline: [800, 950, 1050, 1200, 1300, 1400, 1450] },
+    { label: 'Creator Channels', display: '100M+', unit: 'global, order of magnitude', trend: 'up', color: '#3b82f6', sparkline: [51, 65, 78, 89, 95, 105, 114] },
+    { label: 'Local LLM VRAM Req.', display: 'tens of GB', unit: 'consumer hardware', trend: 'down', color: '#10b981', sparkline: [128, 96, 80, 64, 56, 52, 48] },
   ];
-
-  let tickInterval;
 
   onMount(() => {
     mounted = true;
-    // Subtle tick animation - randomly update sparkline tails
-    tickInterval = setInterval(() => {
-      metrics = metrics.map(m => {
-        const last = m.sparkline[m.sparkline.length - 1];
-        const jitter = last * (0.98 + Math.random() * 0.04);
-        return {
-          ...m,
-          sparkline: [...m.sparkline.slice(1), jitter]
-        };
-      });
-    }, 2000);
-  });
-
-  onDestroy(() => {
-    if (tickInterval) clearInterval(tickInterval);
   });
 
   function sparklinePath(data, width = 80, height = 24) {
@@ -49,6 +33,10 @@
 </script>
 
 <div class="dashboard" class:mounted>
+  <p class="dash-info-only">
+    INFORMATIONAL PURPOSES ONLY — ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.
+  </p>
+
   <div class="dash-grid">
     {#each metrics as metric, i}
       <div class="dash-card" style="animation-delay: {i * 80}ms">
@@ -76,18 +64,32 @@
   </div>
 
   <div class="dash-footer">
-    <div class="dash-dot-pulse"></div>
-    <span class="dash-live">Reference indicators (2020 to 2026)</span>
+    <span class="dash-live">Reference indicators only — verify all figures yourself.</span>
   </div>
 
   <p class="dash-disclaimer">
-    Illustrative reference figures. Sparkline animations are decorative, not real-time market data. Cost and savings figures are rough estimates that vary widely by region and individual circumstance. Not financial or economic advice. <a href="/disclaimer">See full disclaimer</a>.
+    Illustrative reference figures, not market data. Cost and savings figures vary widely by region, regulation, and individual circumstance. Numbers shown should not inform any decision. Not financial or economic advice. <a href="/disclaimer">Full disclaimer</a>.
   </p>
 </div>
 
 <style>
   .dashboard {
     margin-top: 2rem;
+  }
+
+  .dash-info-only {
+    margin: 0 0 1.25rem 0;
+    padding: 0.75rem 1rem;
+    background: rgba(127, 29, 29, 0.18);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: #fecaca;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    text-align: center;
   }
 
   .dash-disclaimer {

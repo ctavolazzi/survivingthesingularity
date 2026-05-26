@@ -60,57 +60,32 @@
 
   {#if showResults}
     <div class="calc-results" in:fly={{ y: 20, duration: 400 }}>
-      <div class="results-header">
-        <h3 class="results-title">Your Exit Strategy Numbers</h3>
-        <p class="results-subtitle">Based on ${monthlyPayment.toLocaleString()}/mo vs. the Shouse at ~${SHOUSE_MONTHLY}/mo</p>
-      </div>
+      <p class="calc-info-only">
+        INFORMATIONAL PURPOSES ONLY — ALWAYS CONSULT THE RELEVANT PROFESSIONALS BEFORE MAKING ANY DECISIONS.
+      </p>
 
-      <div class="results-grid">
-        <div class="result-card result-highlight">
-          <span class="result-label">30-Year Savings</span>
-          <span class="result-value" class:animate={animateNumbers}>{formatMoney(thirtyYearSavings)}</span>
-          <span class="result-detail">That's {percentSaved}% less spent on housing</span>
-        </div>
-        <div class="result-card">
-          <span class="result-label">Monthly Freed Up</span>
-          <span class="result-value" class:animate={animateNumbers}>{formatMoney(monthlySavings)}</span>
-          <span class="result-detail">Redirected to building your engine</span>
-        </div>
-        <div class="result-card">
-          <span class="result-label">5-Year Total Saved</span>
-          <span class="result-value" class:animate={animateNumbers}>{formatMoney(fiveYearSavings)}</span>
-          <span class="result-detail">Enough to fund a business</span>
-        </div>
-        <div class="result-card">
-          <span class="result-label">Years Reclaimed</span>
-          <span class="result-value" class:animate={animateNumbers}>~{yearsReclaimed}</span>
-          <span class="result-detail">Of not working to pay a mortgage</span>
-        </div>
+      <div class="results-header">
+        <h3 class="results-title">Directional Comparison</h3>
+        <p class="results-subtitle">A toy model. Your real numbers will differ.</p>
       </div>
 
       <div class="comparison-bar">
         <div class="bar-row">
-          <span class="bar-label">Traditional ({monthlyPayment.toLocaleString()}/mo x 30 yrs)</span>
+          <span class="bar-label">Traditional path (illustrative)</span>
           <div class="bar-track">
             <div class="bar-fill bar-old" style="width: 100%"></div>
           </div>
-          <span class="bar-amount">{formatMoney(thirtyYearTraditional)}</span>
         </div>
         <div class="bar-row">
-          <span class="bar-label">Shouse Strategy</span>
+          <span class="bar-label">Modeled alternative (illustrative)</span>
           <div class="bar-track">
             <div class="bar-fill bar-new" style="width: {Math.round((thirtyYearShouse / thirtyYearTraditional) * 100)}%"></div>
           </div>
-          <span class="bar-amount">{formatMoney(thirtyYearShouse)}</span>
         </div>
       </div>
 
-      <p class="results-cta">
-        That's <strong>{formatMoney(thirtyYearSavings)}</strong> you keep. Read the blueprint to see how.
-      </p>
-
       <p class="calc-disclaimer">
-        Illustrative estimate only. Ignores taxes, insurance, maintenance, opportunity cost, land/build variability, and your specific situation. Not financial, real-estate, or investment advice. <a href="/disclaimer">See full disclaimer</a>.
+        Toy model. Ignores taxes, insurance, maintenance, opportunity cost, land/build variability, market conditions, and your situation. Not financial, real-estate, investment, or any other advice. Numbers shown are illustrative only and should not inform any decision. <a href="/disclaimer">Full disclaimer</a>.
       </p>
     </div>
   {/if}
@@ -357,6 +332,21 @@
     font-family: 'JetBrains Mono', monospace;
     min-width: 60px;
     text-align: right;
+  }
+
+  .calc-info-only {
+    margin: 0 0 1.5rem 0;
+    padding: 0.75rem 1rem;
+    background: rgba(127, 29, 29, 0.18);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: #fecaca;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    text-align: center;
   }
 
   .calc-disclaimer {

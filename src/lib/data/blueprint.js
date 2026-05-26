@@ -12,7 +12,7 @@ export const sections = [
     content: [
       {
         type: 'prose',
-        text: `The 20th-century American Dream - characterized by a 30-year mortgage, corporate compliance, and status-seeking - is officially dead. The contemporary era is defined by a collapse in these traditional frameworks. The macro-economic landscape of 2026 is defined by a permanent reset of global purchasing power and a fundamental collapse of the post-war social contract.`
+        text: `Many of the assumptions behind the 20th-century middle-class playbook - 30-year mortgages, lifelong corporate employment, status-driven consumption - look increasingly fragile under current macro-economic conditions. Some commentators argue we are seeing a structural reset; others disagree. This is contested terrain and not a settled forecast.`
       },
       {
         type: 'prose',
@@ -254,7 +254,7 @@ export const sections = [
     content: [
       {
         type: 'prose',
-        text: `Running Large Language Models locally is the ultimate privacy power move. By avoiding third-party APIs, individuals bypass the risk of their proprietary data being used for training or being subject to government subpoena. Local AI ensures that an individual's intelligence layer is as secure as their most sensitive database.`
+        text: `Running language models locally can reduce exposure to third-party data retention and subpoena risk in some scenarios. Actual privacy posture depends on configuration, hardware, network setup, and threat model. Not security or legal advice.`
       },
       {
         type: 'table',
@@ -351,7 +351,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `Medical sovereignty is not about avoiding doctors. It is about removing the information asymmetry between patient and system. When you can query 40 million peer-reviewed papers in 3 seconds on your own hardware, you walk into any clinical encounter as an equal.`
+        text: `Local research tools can reduce information asymmetry, but they are not a substitute for a licensed medical professional. Always work with a qualified clinician for any medical decision.`
       }
     ]
   },
@@ -363,7 +363,7 @@ export const sections = [
     content: [
       {
         type: 'prose',
-        text: `The goal of the digital cash engine is to fund an immediate physical exit from society's extractive grid. This involves purchasing marginal land, parking an RV, and dropping expenses to the bare minimum for survival.`
+        text: `The goal of the digital cash engine is to fund a possible reduction in fixed costs and increased optionality, where legally and practically feasible for the individual. This involves purchasing marginal land, parking an RV, and dropping expenses to the bare minimum for survival.`
       },
       {
         type: 'heading',
@@ -406,7 +406,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `Title 25 empowers homeowners to construct homes using non-industrial methods. This is the literal cure - using one's own hands to build a home and workshop outside the permission of megalithic corporations.`
+        text: `Title 25 empowers homeowners to construct homes using non-industrial methods. Owner-builder routes exist in some jurisdictions. Whether any are appropriate for you depends on your local code, financing, insurance, and skills - consult a licensed professional.`
       }
     ]
   },
@@ -489,7 +489,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `A 20-share CSA at $600/share/season generates $12,000 in guaranteed pre-season revenue. With automated production reducing labor costs, a two-person operation managing the above stack can sustain 20–30 shares while holding day jobs. At 50 shares the operation becomes a primary income source. The cooperative overlay - where share members collectively own the land and equipment via an LLC or CLT - eliminates the single largest failure mode of traditional CSAs: land tenure insecurity.`
+        text: `A 20-share CSA at $600/share/season could, if every share sold and held, generate roughly $12,000 in pre-season revenue. Real CSAs see drop-offs, refunds, weather losses, and member churn; nothing is guaranteed. With automated production reducing labor costs, a two-person operation managing the above stack can sustain 20–30 shares while holding day jobs. At 50 shares the model could, in theory, approach primary-income territory for some operators. Outcomes vary and are not guaranteed. The cooperative overlay - where share members collectively own the land and equipment via an LLC or CLT - eliminates the single largest failure mode of traditional CSAs: land tenure insecurity.`
       },
       {
         type: 'table',
@@ -524,7 +524,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Identify a high-value problem. Provide a custom video solution for a flat $20 fee. Deliver via processors like Lemon Squeezy to maintain digital sovereignty. The FogSift model utilizes a direct payment queue to deliver custom, unlisted video solutions.`
+        text: `One model the author has explored: small-ticket custom video deliverables priced flat. Pricing, payment processing, and tax treatment vary - consult an accountant before treating any of this as a business plan.`
       },
       {
         type: 'heading',
@@ -564,7 +564,7 @@ export const sections = [
     content: [
       {
         type: 'prose',
-        text: `Stop waiting for the perfect situation. Participate before the window closes. The opportunity exists to harvest one's own crops and build with one's own hands, outside the pleasure or permission of megalithic corporations. The time to act is now.`
+        text: `The author's view is that opportunity exists in this direction. Whether to act on any of this - and how - is a personal decision that should be made with the relevant licensed professionals. This is not a directive.`
       },
       {
         type: 'heading',
@@ -598,7 +598,7 @@ export const sections = [
         type: 'directive',
         number: '5',
         title: 'The Shop Build',
-        text: 'Commit to a living space under $8,000 to escape the debt cycle. Steel shell. Thermal envelope. Wet wall. Done.'
+        text: 'Some builds in this price range have been documented. Habitability standards, financing, and insurance considerations vary by jurisdiction and individual circumstance. Not advice.'
       },
       {
         type: 'callout',

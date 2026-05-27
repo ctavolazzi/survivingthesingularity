@@ -4,6 +4,7 @@
 	import { sections } from '$lib/data/blueprint.js';
 	import { blueprintProgress } from '$lib/stores/progress.js';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+	import BookStatusBanner from '$lib/components/BookStatusBanner.svelte';
 	import IndependenceCountdown from '$lib/components/IndependenceCountdown.svelte';
 	import FloatingNav from '$lib/components/FloatingNav.svelte';
 	import LiveDashboard from '$lib/components/LiveDashboard.svelte';
@@ -15,8 +16,7 @@
 		{ id: 'situation', label: 'Situation' },
 		{ id: 'plan', label: 'The Plan' },
 		{ id: 'steps', label: '4 Steps' },
-		{ id: 'costs', label: 'Costs' },
-		{ id: 'stack', label: 'The Stack' },
+		{ id: 'stack', label: 'Alternatives' },
 		{ id: 'timeline', label: 'Timeline' },
 		{ id: 'chapters', label: 'Blueprint' },
 		{ id: 'act', label: 'Act Now' },
@@ -124,6 +124,13 @@
 	<UrgencyBanner />
 
 	<!-- ═══════════════════════════════════════════════ -->
+	<!-- BOOK STATUS BANNER                              -->
+	<!-- ═══════════════════════════════════════════════ -->
+	<div class="book-banner-wrap">
+		<BookStatusBanner />
+	</div>
+
+	<!-- ═══════════════════════════════════════════════ -->
 	<!-- THE BRIEF - This is not a sales page.          -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="hero" id="brief">
@@ -154,7 +161,7 @@
 				</p>
 
 				<p class="hero-question">
-					What might <em>real independence</em> look like at a fraction of the usual cost?
+					What might <em>a new way of getting our needs met</em> look like at a fraction of the traditional cost?
 				</p>
 
 				<div class="hero-answer">
@@ -315,7 +322,7 @@
 						<span class="step-tag">Outcomes vary widely</span>
 						<span class="step-tag">No income claim</span>
 					</div>
-					<a href="/blueprint/content-engine" class="step-link">Read the full chapter &rarr;</a>
+					<a href="/blueprint/content-engine" class="step-link">Read more &rarr;</a>
 				</div>
 
 				<div class="step-card stagger-item">
@@ -326,7 +333,7 @@
 							<span class="cost-value">$5K-$30K</span>
 						</div>
 					</div>
-					<h3 class="step-title">Find land or space, responsibly</h3>
+					<h3 class="step-title">Find land or space</h3>
 					<p class="step-body">
 						Land prices vary enormously by country, region, and parcel. Some rural areas remain affordable; others do not. Owner-builder, reclaimed, refurbished, and adaptive-reuse pathways exist in many jurisdictions worldwide, each with very different legal and code regimes. Before considering any purchase, lease, or build, work with <strong>licensed local professionals</strong> - real-estate attorney, surveyor, contractor, and tax advisor - who actually know your jurisdiction.
 					</p>
@@ -337,7 +344,7 @@
 						<span class="step-tag">Local laws vary widely</span>
 						<span class="step-tag">Consult licensed professionals</span>
 					</div>
-					<a href="/blueprint/physical-exit" class="step-link">Read the full chapter &rarr;</a>
+					<a href="/blueprint/physical-exit" class="step-link">Read more &rarr;</a>
 				</div>
 
 				<div class="step-card stagger-item">
@@ -356,7 +363,7 @@
 						<span class="step-tag">Code varies by county</span>
 							<span class="step-tag">Consult a contractor</span>
 					</div>
-					<a href="/blueprint/the-shouse" class="step-link">Read the full chapter &rarr;</a>
+					<a href="/blueprint/the-shouse" class="step-link">Read more &rarr;</a>
 				</div>
 
 				<div class="step-card stagger-item">
@@ -375,7 +382,7 @@
 						<span class="step-tag">Open-source projects, varies</span>
 						<span class="step-tag">Verify for your context</span>
 					</div>
-					<a href="/blueprint/robotics" class="step-link">Read the full chapter &rarr;</a>
+					<a href="/blueprint/robotics" class="step-link">Read more &rarr;</a>
 				</div>
 
 			</div>
@@ -400,8 +407,8 @@
 			<div class="section-header-row">
 				<span class="section-number">03</span>
 				<div>
-					<h2 class="section-title">The Replacement Stack</h2>
-					<p class="section-desc">Every layer of the system that extracts from you - replaced with something you own. Click any row for details.</p>
+					<h2 class="section-title">Alternatives to Consider</h2>
+					<p class="section-desc">Some systems worth thinking about differently. Each item is a starting point for your own research — not a recommendation. Click any item to read more context.</p>
 				</div>
 			</div>
 
@@ -410,15 +417,15 @@
 	</section>
 
 	<!-- ═══════════════════════════════════════════════ -->
-	<!-- TIMELINE - When do you hit independence?        -->
+	<!-- TIMELINE - Illustrative scenario explorer.      -->
 	<!-- ═══════════════════════════════════════════════ -->
 	<section class="section section-dark" id="timeline" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">05</span>
+				<span class="section-number">04</span>
 				<div>
 					<h2 class="section-title">Your Timeline</h2>
-					<p class="section-desc">Input your numbers. See when you reach independence - and how much faster the shouse strategy gets you there.</p>
+					<p class="section-desc">Pick your numbers. Rough illustrative arithmetic — not a forecast. For a deeper breakdown with tech products and cost details, explore the full timeline.</p>
 				</div>
 			</div>
 			<IndependenceCountdown />
@@ -431,10 +438,10 @@
 	<section class="section" id="chapters" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">06</span>
+				<span class="section-number">05</span>
 				<div>
 					<h2 class="section-title">The Full Blueprint</h2>
-					<p class="section-desc">Eight chapters. Every layer of the exit strategy. From the economic analysis to your first week of action.</p>
+					<p class="section-desc">Eight chapters of conjecture and supposition based on one author's research. Not a roadmap. Not a guarantee. A way of thinking about what <em>might</em> be possible — for you to evaluate with qualified professionals in your own situation.</p>
 				</div>
 			</div>
 
@@ -446,6 +453,11 @@
 					<span class="cp-text">{completedCount} of {chapters.length} complete</span>
 				</div>
 			{/if}
+
+			<div class="blueprint-conjecture-notice">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#94a3b8" stroke-width="1.2"/><path d="M7 4v3.5M7 9.5v.5" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/></svg>
+				<p>Everything in this blueprint is <strong>conjecture and supposition</strong> based on one person's research and thinking. It does not represent professional advice of any kind. No outcome is promised, projected, or guaranteed. Treat it as material for your own independent evaluation.</p>
+			</div>
 
 			<div class="chapters-list" use:stagger={{ delay: 60 }}>
 				{#each chapters as chapter}
@@ -523,6 +535,15 @@
 	:global(.stagger-in) {
 		opacity: 1 !important;
 		transform: translateY(0) !important;
+	}
+
+	/* ═══════════════════════════ */
+	/* BOOK BANNER WRAPPER        */
+	/* ═══════════════════════════ */
+	.book-banner-wrap {
+		padding: 2rem 1.5rem 0;
+		max-width: 960px;
+		margin: 0 auto;
 	}
 
 	/* ═══════════════════════════ */
@@ -736,7 +757,7 @@
 
 	.progress-label {
 		font-size: 0.72rem;
-		color: #52525b;
+		color: #94a3b8;
 		font-family: 'JetBrains Mono', monospace;
 	}
 
@@ -909,7 +930,7 @@
 
 	.stat-label {
 		font-size: 0.78rem;
-		color: #52525b;
+		color: #94a3b8;
 		line-height: 1.4;
 	}
 
@@ -917,7 +938,7 @@
 		display: inline-block;
 		margin-top: 0.4rem;
 		font-size: 0.62rem;
-		color: #475569;
+		color: #94a3b8;
 		text-decoration: underline;
 		text-underline-offset: 2px;
 		font-family: 'JetBrains Mono', monospace;
@@ -1059,7 +1080,7 @@
 	.cost-label {
 		display: block;
 		font-size: 0.6rem;
-		color: #52525b;
+		color: #94a3b8;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		font-weight: 600;
@@ -1144,7 +1165,7 @@
 	.total-label {
 		display: block;
 		font-size: 0.6rem;
-		color: #52525b;
+		color: #94a3b8;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
 		font-weight: 600;
@@ -1163,8 +1184,36 @@
 	.total-compare {
 		display: block;
 		font-size: 0.72rem;
-		color: #52525b;
+		color: #94a3b8;
 		margin-top: 0.2rem;
+	}
+
+	/* ═══════════════════════════ */
+	/* BLUEPRINT CONJECTURE       */
+	/* ═══════════════════════════ */
+	.blueprint-conjecture-notice {
+		display: flex;
+		gap: 0.75rem;
+		align-items: flex-start;
+		padding: 0.9rem 1.1rem;
+		background: rgba(148, 163, 184, 0.04);
+		border: 1px solid rgba(148, 163, 184, 0.1);
+		border-radius: 8px;
+		margin-bottom: 1.25rem;
+	}
+	.blueprint-conjecture-notice svg {
+		flex-shrink: 0;
+		margin-top: 0.15rem;
+	}
+	.blueprint-conjecture-notice p {
+		font-size: 0.78rem;
+		color: #64748b;
+		line-height: 1.6;
+		margin: 0;
+	}
+	.blueprint-conjecture-notice strong {
+		color: #94a3b8;
+		font-weight: 600;
 	}
 
 	/* ═══════════════════════════ */
@@ -1195,7 +1244,7 @@
 
 	.cp-text {
 		font-size: 0.72rem;
-		color: #52525b;
+		color: #94a3b8;
 		font-family: 'JetBrains Mono', monospace;
 	}
 
@@ -1237,7 +1286,7 @@
 		border: 1px solid rgba(255, 255, 255, 0.05);
 		font-size: 0.72rem;
 		font-weight: 700;
-		color: #52525b;
+		color: #94a3b8;
 		font-family: 'JetBrains Mono', monospace;
 		flex-shrink: 0;
 	}
@@ -1262,7 +1311,7 @@
 
 	.chapter-desc {
 		font-size: 0.78rem;
-		color: #52525b;
+		color: #94a3b8;
 		margin: 0;
 		line-height: 1.3;
 		white-space: nowrap;
@@ -1322,7 +1371,7 @@
 	}
 
 	.cta-body {
-		color: #52525b;
+		color: #94a3b8;
 		font-size: 0.95rem;
 		line-height: 1.7;
 		margin: 0 0 2.5rem 0;
@@ -1344,7 +1393,7 @@
 
 	.cta-newsletter-label {
 		font-size: 0.8rem;
-		color: #52525b;
+		color: #94a3b8;
 		margin: 0 0 0.75rem 0;
 	}
 

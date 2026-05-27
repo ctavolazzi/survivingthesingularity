@@ -127,7 +127,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `The shouse model scales beyond the individual. A community shouse - sometimes called a "maker commons" or "cooperative homestead" - applies the same low-overhead industrial architecture to collective land ownership. Three to eight households pooling capital can acquire substantially more land per dollar and share the fixed costs of infrastructure: water well, solar array, septic system, and broadband. The individual unit cost drops by 40–60% while the total productive capacity multiplies.`
+        text: `The shouse model scales beyond the individual. A community shouse - sometimes called a "maker commons" or "cooperative homestead" - applies the same low-overhead industrial architecture to collective land ownership. Three to eight households pooling capital can acquire substantially more land per dollar and share the fixed costs of infrastructure: water well, solar array, septic system, and broadband. The individual unit cost drops by 40-60% while the total productive capacity multiplies.`
       },
       {
         type: 'table',
@@ -303,7 +303,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Engine Layer: Ollama or Llama.cpp for managing GGUF-quantized models. Interface Layer: Open WebUI or LM Studio for ChatGPT-like front-end. Workflow Builder: n8n for self-hosted RAG pipelines. Character Framework: WAFT for interactive world models and dynamic AI characters.`
+        text: `Engine Layer: <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">Ollama</a> or Llama.cpp for managing GGUF-quantized models. Interface Layer: <a href="https://openwebui.com/" target="_blank" rel="noopener noreferrer">Open WebUI</a> or <a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">LM Studio</a> for ChatGPT-like front-end. Workflow Builder: <a href="https://n8n.io/" target="_blank" rel="noopener noreferrer">n8n</a> for self-hosted RAG pipelines. Character Framework: WAFT for interactive world models and dynamic AI characters.`
       },
       {
         type: 'callout',
@@ -359,7 +359,7 @@ export const sections = [
     slug: 'physical-exit',
     number: '05',
     title: 'The Physical Exit',
-    subtitle: 'Rural Land Acquisition, Butte County Zoning, Title 25, and RV Living',
+    subtitle: 'Land acquisition, local zoning, owner-builder pathways, and the importance of local professional guidance',
     content: [
       {
         type: 'prose',
@@ -367,15 +367,15 @@ export const sections = [
       },
       {
         type: 'heading',
-        text: 'Land Acquisition in Butte County'
+        text: 'Land Acquisition (general patterns)'
       },
       {
         type: 'prose',
-        text: `Butte County, California, serves as a case study for strategic relocation. Median list prices for rural land sit around $199,000, but low-end farmland can be found for as little as $1,475 per acre. The primary driver for selection should be zoning accessibility and the ability to build independent structures.`
+        text: `Some rural U.S. counties offer relatively affordable land. Prices, parcel access, water rights, road frontage, tax burden, and applicable codes vary enormously by jurisdiction and over time. Any specific number cited here is illustrative and should be verified against current local sources with a licensed local professional (real-estate attorney, surveyor, contractor) who knows your area.`
       },
       {
         type: 'table',
-        title: 'Butte County Zoning Districts',
+        title: 'Example zoning categories (varies widely by jurisdiction)',
         headers: ['Zone', 'Primary Purpose', 'Key Provisions for Autonomy'],
         rows: [
           ['Agriculture (AG)', 'Support family farms', 'Min 20 acres; allows agritourism and farmstays'],
@@ -386,16 +386,16 @@ export const sections = [
       },
       {
         type: 'heading',
-        text: 'Title 25: The Blueprint for Sovereign Dwellings'
+        text: 'Owner-builder pathways (where they exist)'
       },
       {
         type: 'prose',
-        text: `Butte County has adopted Title 25 (Limited Density Owner-Built Rural Dwellings), which provides an alternative building code pathway. This code substantially relaxes standard requirements, facilitating affordable shouse construction.`
+        text: `Some U.S. states and counties offer owner-builder code pathways with relaxed requirements relative to standard residential code. California's Title 25 (Limited Density Owner-Built Rural Dwellings) is one example, applicable only in adopting jurisdictions and only to specific structure types. Many other countries have their own owner-builder, self-build, or adaptive-reuse routes - all distinct. Before counting on any particular regime, work with a licensed local professional who has actually built under it.`
       },
       {
         type: 'table',
-        title: 'Title 24 vs. Title 25',
-        headers: ['Requirement', 'Title 24 (Standard)', 'Title 25 (Owner-Built)'],
+        title: 'Standard code vs. owner-builder pathways (illustrative)',
+        headers: ['Requirement', 'Standard residential code (typical)', 'Owner-builder pathway (where available)'],
         rows: [
           ['Permit Duration', '1 Year', '3 Years'],
           ['Heating Source', 'Code-mandated capacity', 'Woodstove or pellet stove allowed'],
@@ -406,7 +406,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `Title 25 empowers homeowners to construct homes using non-industrial methods. Owner-builder routes exist in some jurisdictions. Whether any are appropriate for you depends on your local code, financing, insurance, and skills - consult a licensed professional.`
+        text: `Owner-builder routes exist in some jurisdictions. Whether any are appropriate for you depends on your local code, financing, insurance, climate, and skills. Reused, reclaimed, and adaptive-reuse pathways may also be options depending on local rules. Consult a licensed local professional before assuming any pathway is available to you.`
       }
     ]
   },
@@ -426,7 +426,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Open-source robotics like FarmBot allow for the precise cultivation of food. The FarmBot Genesis XL (18 m²) is designed to grow enough vegetables to meet daily nutritional requirements. By using hexagonal packing, the bot can increase harvest volume by approximately 12% over traditional methods.`
+        text: `Open-source robotics like <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> allow for the precise cultivation of food. The FarmBot Genesis XL (18 m²) is designed to grow enough vegetables to meet daily nutritional requirements. By using hexagonal packing, the bot can increase harvest volume by approximately 12% over traditional methods.`
       },
       {
         type: 'table',
@@ -456,7 +456,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `The Mobile Aloha platform is a low-cost whole-body teleoperation system. A DIY version can be built for approximately $1,800, using four robotic arms and an AgileX Tracer base. It excels at tasks requiring mobility and dexterity.`
+        text: `The <a href="https://mobile-aloha.github.io/" target="_blank" rel="noopener noreferrer">Mobile Aloha</a> platform is a low-cost whole-body teleoperation system. A DIY version can be built for approximately $1,800, using four robotic arms and an <a href="https://global.agilex.ai/" target="_blank" rel="noopener noreferrer">AgileX Tracer</a> base. It excels at tasks requiring mobility and dexterity.`
       },
       {
         type: 'prose',
@@ -464,7 +464,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Other open-source platforms include OpenMower (RTK GPS-guided lawn mowing via Raspberry Pi) and Acorn by Twisted Fields (autonomous solar-powered rover for farming at scale).`
+        text: `Other open-source platforms include <a href="https://github.com/ClemensElflein/OpenMower" target="_blank" rel="noopener noreferrer">OpenMower</a> (RTK GPS-guided lawn mowing via Raspberry Pi) and <a href="https://twistedfields.com/acorn/" target="_blank" rel="noopener noreferrer">Acorn</a> by <a href="https://twistedfields.com/" target="_blank" rel="noopener noreferrer">Twisted Fields</a> (autonomous solar-powered rover for farming at scale).`
       },
       {
         type: 'heading',
@@ -472,7 +472,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Community Supported Agriculture is a pre-purchase food subscription model: members pay upfront for a season's share of a farm's harvest, shifting financial risk from farmer to community. The conventional CSA relies on hand labor. The semi-autonomous CSA layers open-source robotics (FarmBot, Acorn, OpenMower) with a scheduling software layer so that most routine operations - seeding, watering, weeding, soil monitoring - run without daily human intervention. Labor input shifts from daily maintenance to weekly harvesting and equipment checks.`
+        text: `Community Supported Agriculture is a pre-purchase food subscription model: members pay upfront for a season's share of a farm's harvest, shifting financial risk from farmer to community. The conventional CSA relies on hand labor. The semi-autonomous CSA layers open-source robotics (<a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a>, <a href="https://twistedfields.com/acorn/" target="_blank" rel="noopener noreferrer">Acorn</a>, <a href="https://github.com/ClemensElflein/OpenMower" target="_blank" rel="noopener noreferrer">OpenMower</a>) with a scheduling software layer so that most routine operations - seeding, watering, weeding, soil monitoring - run without daily human intervention. Labor input shifts from daily maintenance to weekly harvesting and equipment checks.`
       },
       {
         type: 'table',
@@ -489,7 +489,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `A 20-share CSA at $600/share/season could, if every share sold and held, generate roughly $12,000 in pre-season revenue. Real CSAs see drop-offs, refunds, weather losses, and member churn; nothing is guaranteed. With automated production reducing labor costs, a two-person operation managing the above stack can sustain 20–30 shares while holding day jobs. At 50 shares the model could, in theory, approach primary-income territory for some operators. Outcomes vary and are not guaranteed. The cooperative overlay - where share members collectively own the land and equipment via an LLC or CLT - eliminates the single largest failure mode of traditional CSAs: land tenure insecurity.`
+        text: `A 20-share CSA at $600/share/season could, if every share sold and held, generate roughly $12,000 in pre-season revenue. Real CSAs see drop-offs, refunds, weather losses, and member churn; nothing is guaranteed. With automated production reducing labor costs, a two-person operation managing the above stack can sustain 20-30 shares while holding day jobs. At 50 shares the model could, in theory, approach primary-income territory for some operators. Outcomes vary and are not guaranteed. The cooperative overlay - where share members collectively own the land and equipment via an LLC or CLT - eliminates the single largest failure mode of traditional CSAs: land tenure insecurity.`
       },
       {
         type: 'table',
@@ -512,7 +512,7 @@ export const sections = [
     slug: 'cash-engine',
     number: '07',
     title: 'The Cash Engine',
-    subtitle: 'FogSift $20 Offers, Lemon Squeezy, and Content Automation Workflows',
+    subtitle: 'Small-product business notes and content automation references',
     content: [
       {
         type: 'prose',
@@ -520,7 +520,7 @@ export const sections = [
       },
       {
         type: 'heading',
-        text: 'The FogSift $20 Offer'
+        text: 'Small-ticket productized offers'
       },
       {
         type: 'prose',
@@ -540,7 +540,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Lemon Squeezy acts as the "Merchant of Record," handling global sales tax and VAT compliance. They charge a fee of typically 5% + 50c per transaction. Key features include no-code checkout, AI fraud prevention, and unlisted video delivery via Make.com or Zapier.`
+        text: `<a href="https://www.lemonsqueezy.com/" target="_blank" rel="noopener noreferrer">Lemon Squeezy</a> acts as the "Merchant of Record," handling global sales tax and VAT compliance. They charge a fee of typically 5% + 50c per transaction. Key features include no-code checkout, AI fraud prevention, and unlisted video delivery via Make.com or Zapier.`
       },
       {
         type: 'heading',
@@ -548,7 +548,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `Scripting and Research: Use deep research tools or Perplexity for niche data. Synthesis: Feed brain-dumps into n8n workflows for structured output. Video Production: Use InVideo or Pictory for stock-asset visuals. Automation: Set up Zaps to auto-post to social, notify subscribers, and log performance.`
+        text: `Scripting and Research: Use deep research tools or Perplexity for niche data. Synthesis: Feed brain-dumps into <a href="https://n8n.io/" target="_blank" rel="noopener noreferrer">n8n</a> workflows for structured output. Video Production: Use InVideo or Pictory for stock-asset visuals. Automation: Set up Zaps to auto-post to social, notify subscribers, and log performance.`
       },
       {
         type: 'callout',
@@ -592,7 +592,7 @@ export const sections = [
         type: 'directive',
         number: '4',
         title: 'Physical Search',
-        text: 'Filter for land parcels under $40K. Map out your exit. Look at Butte County, Lake County, Mendocino County.'
+        text: 'Research land prices in regions you would actually consider living in. Verify with a local real-estate attorney before drawing conclusions.'
       },
       {
         type: 'directive',

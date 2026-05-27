@@ -273,7 +273,7 @@ The upside? More flexibility, diverse experiences, and the chance to wear sevent
 
 Now, here's where things get really interesting. As AI and robotics advance, they're likely to create something economists have been dreaming about (or having nightmares about, depending on who you ask) for centuries: abundance.
 
-Imagine a world where robots and AI can produce most of the goods and services we need. Food, energy, manufacturing – all handled by tireless machines that don't need sleep, vacations, or motivational posters with cats hanging from tree branches.
+Imagine a world where robots and AI can produce most of the goods and services we need. Food, energy, manufacturing - all handled by tireless machines that don't need sleep, vacations, or motivational posters with cats hanging from tree branches.
 
 In this world of abundance, the idea of "earning a living" starts to sound as quaint as churning your own butter or hunting your own mammoths. Enter the concept of Universal Basic Income (UBI).
 
@@ -359,6 +359,6 @@ Want to explore more about the future of work and economics in the age of AI? Sc
 [QR Code] - Try: An AI-powered career prediction tool (Warning: May cause existential crisis)
 [QR Code] - Explore: "The Ethics of AI in the Workplace"
 
-Remember, the future of work and economics is like a box of AI-generated chocolates – you never know what you're gonna get, but it's probably going to be more complex, possibly more equitable, and definitely more automated than we can imagine. And who knows? Maybe one day, "making money" will be replaced with "optimizing your abundance algorithm."
+Remember, the future of work and economics is like a box of AI-generated chocolates - you never know what you're gonna get, but it's probably going to be more complex, possibly more equitable, and definitely more automated than we can imagine. And who knows? Maybe one day, "making money" will be replaced with "optimizing your abundance algorithm."
 
 Next up in Chapter 3, we'll dive into the world of AI in our personal lives. Spoiler alert: Your next best friend might be an algorithm that definitely won't forget your birthday or eat the last slice of pizza!

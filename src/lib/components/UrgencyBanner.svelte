@@ -2,7 +2,7 @@
   <div class="banner-inner">
     <div class="banner-left">
       <span class="banner-pulse"></span>
-      <span class="banner-label">Why the author thinks this matters (speculation)</span>
+      <span class="banner-label">View the Timeline to the Singularity (speculative)</span>
     </div>
     <div class="banner-right">
       <span class="banner-note">Read the reasoning</span>

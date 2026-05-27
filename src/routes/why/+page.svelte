@@ -88,7 +88,7 @@
 
 <svelte:head>
 	<title>Why This Matters - The Singularity, Explained | Surviving the Singularity</title>
-	<meta name="description" content="An argument that AI's trajectory deserves serious attention, based on publicly-available statements from researchers in the field. Informational only — not advice." />
+	<meta name="description" content="An argument that AI's trajectory deserves serious attention, based on publicly-available statements from researchers in the field. Informational only - not advice." />
 	<meta property="og:title" content="Why This Matters - The Singularity, Explained" />
 	<meta property="og:description" content="An argument that AI's trajectory deserves serious attention. Informational only." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -165,7 +165,7 @@
 			<div class="section-label">02 - PARAPHRASED POSITIONS</div>
 			<h2 class="section-title">What some prominent researchers have publicly said.</h2>
 			<p class="section-desc">
-				Paraphrased summaries below, not direct quotes. Views shown are not unanimous across the field — they are a sample of public statements that have been influential in the discourse.
+				Paraphrased summaries below, not direct quotes. Views shown are not unanimous across the field - they are a sample of public statements that have been influential in the discourse.
 			</p>
 
 			<p class="quotes-disclaimer">
@@ -198,7 +198,7 @@
 					<h3 class="callout-title">Recommended Reading</h3>
 					<p class="callout-text">
 						<strong><a href="https://situational-awareness.ai/" target="_blank" rel="noopener noreferrer">Situational Awareness</a></strong>
-						by Leopold Aschenbrenner has been influential in the discourse around AI timelines. A former OpenAI researcher's argument for why he thinks rapid AI progress is likely. Read it and form your own view — it is one author's argument, not a settled forecast.
+						by Leopold Aschenbrenner has been influential in the discourse around AI timelines. A former OpenAI researcher's argument for why he thinks rapid AI progress is likely. Read it and form your own view - it is one author's argument, not a settled forecast.
 					</p>
 					<p class="callout-read-time">~2 hour read. Worth every minute.</p>
 				</div>
@@ -212,7 +212,7 @@
 			<div class="section-label">03 - BENCHMARK NOTES</div>
 			<h2 class="section-title">Illustrative benchmark figures</h2>
 			<p class="section-desc">
-				AI performance on various benchmarks has improved substantially over recent years. The numbers below are illustrative reference figures, not a settled comparison — benchmarks have known limitations and results vary by methodology.
+				AI performance on various benchmarks has improved substantially over recent years. The numbers below are illustrative reference figures, not a settled comparison - benchmarks have known limitations and results vary by methodology.
 			</p>
 
 			<div class="benchmark-table">
@@ -356,7 +356,7 @@
 				<div class="proof-card stagger-item">
 					<div class="proof-stat">$2K</div>
 					<div class="proof-label">GPU for local AI</div>
-					<div class="proof-detail">RTX 4090 runs Llama locally, forever</div>
+					<div class="proof-detail">Consumer GPUs can run open-weights models locally (capability varies)</div>
 				</div>
 				<div class="proof-card stagger-item">
 					<div class="proof-stat">114M+</div>

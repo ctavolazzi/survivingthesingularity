@@ -69,5 +69,5 @@ AI is rewriting the script on how we meet, date, and even define love. We're par
 [QR Code 1]: Explore: "AI Dating Apps Reviewed"
 [QR Code 2]: Watch: "How Chatbot Companions Evolve"
 [QR Code 3]: Read: "Ethical Concerns in Virtual Relationships"
-[QR Code 4]: Interactive: "Relationship Coach – AI vs. Human"
+[QR Code 4]: Interactive: "Relationship Coach - AI vs. Human"
 [QR Code 5]: Listen: "Experts Debate: Can AI Simulate True Love?"

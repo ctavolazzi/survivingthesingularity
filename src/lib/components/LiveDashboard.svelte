@@ -5,13 +5,68 @@
 
   // Static reference figures. Not market data, not a forecast. Sparklines
   // illustrate the shape of the indicator across a stylized 2020-2026 window.
+  // Static reference figures from public sources. Verify before relying.
   let metrics = [
-    { label: 'Dollar Purchasing Power', display: '~$0.80', unit: 'per 2020 dollar (illustrative)', trend: 'down', color: '#ef4444', sparkline: [1.0, 0.97, 0.93, 0.88, 0.85, 0.82, 0.80] },
-    { label: 'Median Home Price', display: '~$500K', unit: 'United States (illustrative)', trend: 'up', color: '#ef4444', sparkline: [290, 320, 350, 400, 430, 475, 500] },
-    { label: 'Shouse Build Cost', display: 'varies', unit: 'highly region-dependent', trend: 'stable', color: '#10b981', sparkline: [95, 97, 98, 100, 100, 100, 100] },
-    { label: 'Monthly Overhead Delta', display: 'varies', unit: 'depends on your situation', trend: 'up', color: '#10b981', sparkline: [800, 950, 1050, 1200, 1300, 1400, 1450] },
-    { label: 'Creator Channels', display: '100M+', unit: 'global, order of magnitude', trend: 'up', color: '#3b82f6', sparkline: [51, 65, 78, 89, 95, 105, 114] },
-    { label: 'Local LLM VRAM Req.', display: 'tens of GB', unit: 'consumer hardware', trend: 'down', color: '#10b981', sparkline: [128, 96, 80, 64, 56, 52, 48] },
+    {
+      label: 'Median U.S. home sale price',
+      display: '$420K (approx.)',
+      unit: 'recent quarters',
+      trend: 'up',
+      color: '#ef4444',
+      sparkline: [330, 365, 405, 440, 460, 430, 420],
+      source: 'FRED MSPUS',
+      sourceUrl: 'https://fred.stlouisfed.org/series/MSPUS'
+    },
+    {
+      label: 'Cumulative U.S. CPI inflation',
+      display: '~23%',
+      unit: 'Jan 2020 - Apr 2026',
+      trend: 'up',
+      color: '#ef4444',
+      sparkline: [0, 1.4, 7.0, 13.5, 16.5, 19.5, 23.0],
+      source: 'BLS CPI',
+      sourceUrl: 'https://www.bls.gov/cpi/'
+    },
+    {
+      label: 'Median U.S. farmland value',
+      display: '~$3.6K / acre',
+      unit: '2023, varies by region',
+      trend: 'up',
+      color: '#10b981',
+      sparkline: [2.8, 2.9, 3.0, 3.1, 3.2, 3.4, 3.6],
+      source: 'USDA NASS Land Values',
+      sourceUrl: 'https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0823.pdf'
+    },
+    {
+      label: 'U.S. utility-scale solar installed cost',
+      display: '~85% drop',
+      unit: '2010 - 2023',
+      trend: 'down',
+      color: '#10b981',
+      sparkline: [100, 78, 55, 38, 25, 18, 15],
+      source: 'LBNL Utility-Scale Solar',
+      sourceUrl: 'https://emp.lbl.gov/utility-scale-solar'
+    },
+    {
+      label: 'U.S. self-employed workers',
+      display: '16M+',
+      unit: 'incorporated + unincorporated',
+      trend: 'up',
+      color: '#10b981',
+      sparkline: [14.5, 14.7, 15.0, 15.3, 15.8, 16.1, 16.3],
+      source: 'BLS',
+      sourceUrl: 'https://www.bls.gov/opub/ted/2023/number-of-self-employed-workers-up-from-2020-to-2022.htm'
+    },
+    {
+      label: 'U.S. residential rooftop solar installed cost',
+      display: '~$3.30 / W',
+      unit: '2023 (NREL benchmark)',
+      trend: 'down',
+      color: '#10b981',
+      sparkline: [6.0, 5.2, 4.6, 4.2, 3.8, 3.5, 3.3],
+      source: 'NREL ATB',
+      sourceUrl: 'https://atb.nrel.gov/electricity/2023/residential_pv'
+    }
   ];
 
   onMount(() => {
@@ -59,12 +114,15 @@
             <path d={sparklinePath(metric.sparkline)} fill="none" stroke={metric.color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
           </svg>
         </div>
+        {#if metric.source}
+          <a class="dash-source" href={metric.sourceUrl} target="_blank" rel="noopener noreferrer">Source: {metric.source}</a>
+        {/if}
       </div>
     {/each}
   </div>
 
   <div class="dash-footer">
-    <span class="dash-live">Reference indicators only — verify all figures yourself.</span>
+    <span class="dash-live">Reference indicators only - verify all figures yourself.</span>
   </div>
 
   <p class="dash-disclaimer">
@@ -193,6 +251,18 @@
     width: 60px;
     height: 20px;
   }
+
+  .dash-source {
+    display: inline-block;
+    margin-top: 0.55rem;
+    font-size: 0.62rem;
+    color: #475569;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+  .dash-source:hover { color: #94a3b8; }
 
   .dash-footer {
     display: flex;

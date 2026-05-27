@@ -126,7 +126,7 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Remember, the future of love and relationships is like a box of AI-generated chocolates – you never know what you're gonna get, but it's probably going to be interesting, possibly heartwarming, and definitely complicated. And who knows? Maybe one day, "It's not you, it's me" will be replaced with "It's not you, it's my algorithm."
+Remember, the future of love and relationships is like a box of AI-generated chocolates - you never know what you're gonna get, but it's probably going to be interesting, possibly heartwarming, and definitely complicated. And who knows? Maybe one day, "It's not you, it's me" will be replaced with "It's not you, it's my algorithm."
 
 Next time you're on a date, take a moment to appreciate the person across from you. That charming smile, those endearing quirks? They're 100% human-generated. Or are they? In the world of AI-enhanced dating, it's getting harder to tell where human ends and algorithm begins. But hey, as long as there's love (and good Wi-Fi), does it really matter?
 

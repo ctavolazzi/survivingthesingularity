@@ -60,7 +60,7 @@ It boils down to **this**: as technology self-improves-designing hardware, build
 
 ### Rise of the Interplanetary AI
 
-Meanwhile, as we creep along the next 50–100 years, humans will likely become interplanetary (Mars, anyone?), forging alliances with AI that can manage logistics, terraforming, and all the fiddly details required to not die in space. We'll adapt. Some of us may even choose to merge with tech-cyborg implants, neural links, or the sweet relief of never having to worry about cholesterol again.
+Meanwhile, as we creep along the next 50-100 years, humans will likely become interplanetary (Mars, anyone?), forging alliances with AI that can manage logistics, terraforming, and all the fiddly details required to not die in space. We'll adapt. Some of us may even choose to merge with tech-cyborg implants, neural links, or the sweet relief of never having to worry about cholesterol again.
 
 All of these leaps will feel cosmic and mind-boggling, but from the vantage point of super-advanced AI, it's just Tuesday. Our future AI might simply shrug, gather a chunk of resources, and "peace out" to orchestrate cosmic-level engineering. We become background chatter. As long as we're not actively sabotaging it, we're just not interesting enough to bother with. Like cats purring on the windowsill, playing out dramas that humans occasionally find cute but never truly threatening.
 
@@ -115,5 +115,5 @@ We're witnessing the dawn of algorithmic governance, where data might become the
 [QR Code 1]: Explore: "AI Campaign Management Tools"
 [QR Code 2]: Watch: "How Predictive Policing Works"
 [QR Code 3]: Read: "Ethical Concerns of Algorithmic Governance"
-[QR Code 4]: Interactive: "Policy Simulator – Try Crafting a Law with AI!"
+[QR Code 4]: Interactive: "Policy Simulator - Try Crafting a Law with AI!"
 [QR Code 5]: Listen: "Experts Debate: Could an AI Be Elected One Day?"

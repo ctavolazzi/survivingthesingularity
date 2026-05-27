@@ -25,6 +25,9 @@
   onMount(() => {
     visible = true;
     if (browser) {
+      // Force top-of-page on navigation in - SvelteKit's scroll restore
+      // can land on stale offsets when arriving from a long landing page.
+      window.scrollTo(0, 0);
       window.addEventListener('scroll', handleScroll);
       window.addEventListener('keydown', handleKeydown);
     }

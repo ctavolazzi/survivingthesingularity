@@ -2,7 +2,7 @@
 
 Remember when the height of classroom technology was a calculator that could spell 'BOOBIES' upside down? Well, strap in, future scholars, because education is getting a high-tech makeover that would make even Ms. Frizzle's Magic School Bus look like a horse and buggy.
 
-Welcome to the AI-powered classroom, where the teachers sometimes have more silicon than a Hollywood red carpet, the textbooks update themselves faster than your Instagram feed, and passing notes has been replaced by neural network nudges. Don't worry, though – school picture day is still awkward. Some things are sacred.
+Welcome to the AI-powered classroom, where the teachers sometimes have more silicon than a Hollywood red carpet, the textbooks update themselves faster than your Instagram feed, and passing notes has been replaced by neural network nudges. Don't worry, though - school picture day is still awkward. Some things are sacred.
 
 ## A Day in the Life of Future School
 
@@ -188,7 +188,7 @@ You're a school principal. You have the budget to either hire three new teachers
 
 ## The Future of Learning: More Than Just Downloading Knowledge into Your Brain (We Hope)
 
-As we wrap up our tour of the AI-powered classroom of tomorrow, let's take a moment to consider where all this is heading. The future of education isn't just about cramming more facts into our brains faster – at least, we hope not.
+As we wrap up our tour of the AI-powered classroom of tomorrow, let's take a moment to consider where all this is heading. The future of education isn't just about cramming more facts into our brains faster - at least, we hope not.
 
 Here's the thing: AI isn't here to replace human learning entirely (we hope). It's here to augment it, to help us learn more effectively and efficiently, to be a tool in the modern learner's toolkit.
 
@@ -226,7 +226,7 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Remember, the future of education is like a box of digital chocolates – you never know what you're gonna get, but it's probably going to involve a lot of ones and zeros, and hopefully fewer pop quizzes. And who knows? Maybe one day, "the dog ate my homework" will be replaced with "the AI crashed my homework."
+Remember, the future of education is like a box of digital chocolates - you never know what you're gonna get, but it's probably going to involve a lot of ones and zeros, and hopefully fewer pop quizzes. And who knows? Maybe one day, "the dog ate my homework" will be replaced with "the AI crashed my homework."
 
 Class dismissed! But don't worry, your AI tutor will be available 24/7 if you need any clarification on today's lesson. Just don't ask it to help you cheat on your digital ethics exam. It's programmed to have a conscience, unlike that kid who always tried to peek at your test paper.
 

@@ -67,5 +67,5 @@ Tomorrow's classroom is bigger than four walls. It could be a VR environment in 
 [QR Code 1]: Explore: "Best AI Education Tools"
 [QR Code 2]: Watch: "VR Field Trips in Action"
 [QR Code 3]: Read: "Balancing Tech & Privacy in Schools"
-[QR Code 4]: Interactive: "Student Skill Assessment – AI vs. Human"
+[QR Code 4]: Interactive: "Student Skill Assessment - AI vs. Human"
 [QR Code 5]: Listen: "Experts Debate: The Future of Classrooms"

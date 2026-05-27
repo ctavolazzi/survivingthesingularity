@@ -127,7 +127,7 @@ This technology has fascinating applications beyond just making cool profile pic
 
 But it also raises intriguing questions. If an AI can perfectly mimic the style of any artist, what does that mean for the value of artistic style? Is style transfer a form of artistic expression in itself, or just high-tech copying?
 
-As usual with AI, the answers are about as clear as a Monet painting viewed up close. But one thing's for sure – the art world is never going to be the same.
+As usual with AI, the answers are about as clear as a Monet painting viewed up close. But one thing's for sure - the art world is never going to be the same.
 
 ## Food for Thought
 
@@ -153,7 +153,7 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Remember, the future of art and creativity is like a box of AI-generated chocolates – you never know what you're gonna get, but it's probably going to be interesting, possibly delicious, and definitely weird. And who knows? Maybe one day, "I could have painted that" will be replaced with "My AI could have painted that."
+Remember, the future of art and creativity is like a box of AI-generated chocolates - you never know what you're gonna get, but it's probably going to be interesting, possibly delicious, and definitely weird. And who knows? Maybe one day, "I could have painted that" will be replaced with "My AI could have painted that."
 
 Next time you're in a modern art museum, take a moment to appreciate the works around you. That abstract expressionist masterpiece you're looking at? It might have been painted by a robot. Or it might be a toddler's finger painting that got mixed up with the exhibits. In the world of AI-generated art, it's getting harder to tell the difference.
 

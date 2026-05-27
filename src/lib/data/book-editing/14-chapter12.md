@@ -81,5 +81,5 @@ And remember, in a world where machines can learn anything, the most valuable up
 [QR Code 1]: Explore: "AI & Society: Balancing Progress & Ethics"
 [QR Code 2]: Watch: "Case Studies in Successful AI Collaboration"
 [QR Code 3]: Read: "Privacy Laws & AI Accountability"
-[QR Code 4]: Interactive: "Skill Finder – Next Steps for Your AI Education"
+[QR Code 4]: Interactive: "Skill Finder - Next Steps for Your AI Education"
 [QR Code 5]: Listen: "Leaders Weigh In: Our Shared Tech Future"

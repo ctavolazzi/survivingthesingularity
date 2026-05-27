@@ -70,6 +70,6 @@ Finance has always been a game of information, speed, and guts. With AI, the pla
 
 [QR Code 1]: Explore: "High-Frequency Trading Explained"
 [QR Code 2]: Watch: "Robo-Advisors vs. Human Advisors"
-[QR Code 3]: Read: "AI in Crypto Markets – Risks & Rewards"
+[QR Code 3]: Read: "AI in Crypto Markets - Risks & Rewards"
 [QR Code 4]: Interactive: "Build Your Own Trading Bot (Sandbox)"
 [QR Code 5]: Listen: "Experts Debate: The Future of Algorithmic Finance"

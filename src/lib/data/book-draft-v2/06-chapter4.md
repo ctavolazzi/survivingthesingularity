@@ -96,5 +96,5 @@ AI in healthcare can feel like a godsend-cutting costs, accelerating diagnoses, 
 [QR Code 1]: Explore: "AI in Diagnostics: Latest Studies"
 [QR Code 2]: Watch: "Robotic Surgery in Action"
 [QR Code 3]: Read: "Ethical Considerations of Medical AI"
-[QR Code 4]: Interactive: "Symptom Checker – AI vs. Human"
+[QR Code 4]: Interactive: "Symptom Checker - AI vs. Human"
 [QR Code 5]: Listen: "Experts on the Future of Healthcare Automation"

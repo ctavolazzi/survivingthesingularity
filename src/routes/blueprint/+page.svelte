@@ -58,7 +58,7 @@
       {@const isRead = !!progress[section.slug]?.readAt}
       {@const scrollPct = progress[section.slug]?.scrollPercent || 0}
       {@const readTime = estimateReadingTime(section.content)}
-      <a href="/blueprint/{section.slug}" class="toc-card" class:toc-read={isRead} style="animation-delay: {(i + 1) * 80}ms">
+      <a href="/blueprint/{section.slug}" data-sveltekit-noscroll class="toc-card" class:toc-read={isRead} style="animation-delay: {(i + 1) * 80}ms">
         <div class="toc-left">
           <div class="toc-num-wrap" class:toc-num-done={isRead}>
             {#if isRead}

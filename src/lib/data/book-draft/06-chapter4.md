@@ -32,7 +32,7 @@ Let's slice into some facts:
 - Robotic surgery often results in smaller incisions, less pain, and faster recovery times for patients.
 - In 2022, a robot performed the first autonomous laparoscopic surgery without human intervention.
 
-But don't panic – there's still a human surgeon at the controls (for now). Think of it less like Skynet taking over, and more like your surgeon got really, really good at the world's most high-stakes video game. And this game just happens to be called "Fix the Human: Extreme Edition."
+But don't panic - there's still a human surgeon at the controls (for now). Think of it less like Skynet taking over, and more like your surgeon got really, really good at the world's most high-stakes video game. And this game just happens to be called "Fix the Human: Extreme Edition."
 
 The downside? If the robot surgeon crashes, you can't just blow on the cartridge and stick it back in. Also, good luck trying to sue a robot for malpractice. "Your Honor, I'd like to call HAL 9000 to the stand." On second thought, maybe don't antagonize the AI that's about to cut you open.
 
@@ -99,7 +99,7 @@ First off, relax. We're not quite at "The Matrix" level yet. But you're right to
 
 Key ethical considerations:
 
-1. **Data Privacy:** Your AI health assistant knows everything about you – your diet, your exercise habits, your vitals, that weird mole on your back that you're pretty sure is just a freckle but might be sentient. How do we ensure this intimate data stays private?
+1. **Data Privacy:** Your AI health assistant knows everything about you - your diet, your exercise habits, your vitals, that weird mole on your back that you're pretty sure is just a freckle but might be sentient. How do we ensure this intimate data stays private?
 
 2. **AI Bias:** A 2019 study published in "Science" revealed significant racial bias in a widely used healthcare algorithm. How do we ensure AI doesn't perpetuate or exacerbate existing healthcare disparities?
 
@@ -148,7 +148,7 @@ Just remember, with great power comes great responsibility. And possibly a reall
 
 6. **Advocate for Ethical AI:** Stay engaged in discussions about AI in healthcare. Your voice matters in shaping how this technology is developed and implemented.
 
-Remember, the future of healthcare is like a box of chocolates – you never know what you're gonna get, but it's probably going to involve a lot of ones and zeros. And who knows? Maybe one day, "an apple a day keeps the doctor away" will be replaced with "a daily system update keeps the doctor away."
+Remember, the future of healthcare is like a box of chocolates - you never know what you're gonna get, but it's probably going to involve a lot of ones and zeros. And who knows? Maybe one day, "an apple a day keeps the doctor away" will be replaced with "a daily system update keeps the doctor away."
 
 ## Dive Deeper (Into the Rabbit Hole of Health AI)
 

@@ -3,7 +3,6 @@
 	import { fade } from 'svelte/transition';
 	import { sections } from '$lib/data/blueprint.js';
 	import { blueprintProgress } from '$lib/stores/progress.js';
-	import SavingsCalculator from '$lib/components/SavingsCalculator.svelte';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
 	import IndependenceCountdown from '$lib/components/IndependenceCountdown.svelte';
 	import FloatingNav from '$lib/components/FloatingNav.svelte';
@@ -18,7 +17,6 @@
 		{ id: 'steps', label: '4 Steps' },
 		{ id: 'costs', label: 'Costs' },
 		{ id: 'stack', label: 'The Stack' },
-		{ id: 'calculator', label: 'Calculator' },
 		{ id: 'timeline', label: 'Timeline' },
 		{ id: 'chapters', label: 'Blueprint' },
 		{ id: 'act', label: 'Act Now' },
@@ -146,7 +144,7 @@
 				</div>
 
 				<h1 class="hero-title">
-					Live like your ancestors.<br/>With all the tools of the modern world.
+					There are better ways<br/>to build the future.
 				</h1>
 
 				<p class="hero-subtitle">
@@ -162,8 +160,9 @@
 				<div class="hero-answer">
 					<div class="answer-bar"></div>
 					<div class="answer-content">
+						<p class="answer-tagline"><em>Live like your ancestors, with the tools of the modern world.</em></p>
 						<p class="answer-text">
-							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint — for thinking about, not acting on without professional guidance.
+							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint - for thinking about, not acting on without professional guidance.
 						</p>
 						<p class="answer-cost">
 							Some scenarios in this thought experiment model costs well below a traditional mortgage. <strong>Your real numbers will differ.</strong>
@@ -209,37 +208,51 @@
 			<div class="stats-grid" use:stagger>
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number" use:countUp={{ target: '25', suffix: '%' }}>0%</span>
-					<span class="stat-label">Dollar purchasing power (illustrative)</span>
+					<span class="stat-number" use:countUp={{ target: '23', suffix: '%' }}>0%</span>
+					<span class="stat-label">Cumulative U.S. CPI inflation, Jan 2020-Apr 2026 (approx.)</span>
+					<a class="stat-source" href="https://www.bls.gov/cpi/" target="_blank" rel="noopener noreferrer">Source: BLS CPI</a>
 				</div>
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number" use:countUp={{ target: '500', prefix: '$', suffix: 'K' }}>$0K</span>
-					<span class="stat-label">Median U.S. home price (rough)</span>
+					<span class="stat-number" use:countUp={{ target: '420', prefix: '$', suffix: 'K' }}>$0K</span>
+					<span class="stat-label">Median U.S. home sale price, recent quarters (approx., varies)</span>
+					<a class="stat-source" href="https://fred.stlouisfed.org/series/MSPUS" target="_blank" rel="noopener noreferrer">Source: FRED MSPUS</a>
 				</div>
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '30', suffix: ' years' }}>0 years</span>
-					<span class="stat-label">Standard mortgage commitment (typical)</span>
+					<span class="stat-label">Standard U.S. fixed-rate mortgage term (typical)</span>
+					<a class="stat-source" href="https://www.consumerfinance.gov/owning-a-home/loan-options/" target="_blank" rel="noopener noreferrer">Source: CFPB</a>
 				</div>
 				<div class="stat-card stagger-item stat-success">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number" use:countUp={{ target: '5', prefix: '$', suffix: 'K' }}>$0K</span>
-					<span class="stat-label">Rural acreage starting prices vary widely.</span>
+					<span class="stat-number">~85%</span>
+					<span class="stat-label">Drop in U.S. utility-scale solar installed cost, 2010-2023</span>
+					<a class="stat-source" href="https://emp.lbl.gov/utility-scale-solar" target="_blank" rel="noopener noreferrer">Source: LBNL / NREL</a>
+				</div>
+				<div class="stat-card stagger-item stat-success">
+					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+					<span class="stat-number">16M+</span>
+					<span class="stat-label">U.S. self-employed workers (incorporated + unincorporated, recent BLS)</span>
+					<a class="stat-source" href="https://www.bls.gov/opub/ted/2023/number-of-self-employed-workers-up-from-2020-to-2022.htm" target="_blank" rel="noopener noreferrer">Source: BLS</a>
+				</div>
+				<div class="stat-card stagger-item stat-success">
+					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+					<span class="stat-number">~$3.6K</span>
+					<span class="stat-label">Median U.S. farmland value per acre, 2023 (varies widely by region)</span>
+					<a class="stat-source" href="https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0823.pdf" target="_blank" rel="noopener noreferrer">Source: USDA NASS</a>
 				</div>
 			</div>
 
 			<div class="situation-block">
 				<p>
-					A standard 30-year mortgage compounds total payments well above the sticker price — exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. None of these statements should be relied on without checking current data.
+					A standard 30-year mortgage compounds total payments well above the sticker price - exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. None of these statements should be relied on without checking current data.
 				</p>
 				<p>
-					But the same technology disrupting old industries is also creating new leverage.
-					A YouTube channel costs $0 to start. Rural land is $5K-$30K. Open-source AI runs on a
-					$2K GPU. The tools for independence have never been more accessible.
+					At the same time, some inputs that matter for a different kind of life have gotten dramatically cheaper or more accessible: utility-scale solar costs, consumer-grade GPUs capable of running local AI models, open-source automation projects, and free creator platforms. Whether any of this is useful for any specific person depends on their situation, and on local laws, codes, and professional advice in their jurisdiction.
 				</p>
 				<p class="situation-punchline">
-					The old path is broken. But a better one exists - and it's cheaper than you think.
+					Before acting on any of this, talk to qualified professionals where you live.
 				</p>
 			</div>
 
@@ -260,9 +273,16 @@
 				</div>
 			</div>
 
+			<div class="plan-preflight">
+				<p class="plan-preflight-title">⚠ Before anything else: talk to local professionals.</p>
+				<p class="plan-preflight-body">
+					Every step below depends on jurisdiction, zoning, building code, financing, tax, and personal situation. Before considering any action, talk to <strong>licensed professionals where you live</strong> - a local real-estate attorney, a licensed contractor, an accountant, a financial advisor, and a doctor as relevant. They can tell you what is actually possible, legal, safe, and sensible in your area. Reading this site is not a substitute for any of that. This is informational only.
+				</p>
+			</div>
+
 			<div class="plan-statement">
 				<p class="plan-headline">Adaptability matters more, the faster things change.</p>
-					<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change. Hypothesis, not advice.</p>
+					<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change. Hypothesis, not advice. The plan below is good material for thinking - if and how you apply any of it is a question for you and your professional advisors.</p>
 			</div>
 		</div>
 	</section>
@@ -282,15 +302,14 @@
 							<span class="cost-value">$0</span>
 						</div>
 					</div>
-					<h3 class="step-title">Start a YouTube Channel</h3>
+					<h3 class="step-title">Start making content (responsibly)</h3>
 					<p class="step-body">
-						This is your economic engine. Film everything you learn, build, and figure out. The
-						<strong>One-Hour Rule</strong>: anything that took you more than an hour to learn is
-						worth a video. Faceless channels work. Sponsorships fund your build. Donations replace
-						your need for venture capital. Your phone is the only equipment you need to start.
+						Public-facing creator work as one possible economic channel. Film what you learn, build, and figure out. The
+						<strong>One-Hour Rule</strong>: anything that took you more than an hour to learn could be
+						worth a video. <strong>Be responsible:</strong> don't share location, family, financial, or safety-sensitive details you wouldn't want public; mind copyright and platform terms; respect the privacy of others. Most creators earn little or nothing - this is not a business plan.
 					</p>
 					<p class="step-body">
-						Or any other platform you like. Substack, Threads, Instagram, whatever works for you. Make content, find your people, stay cautious, but allow the world to see who you are. Find your people. Thrive.
+						Or any platform: <a href="https://substack.com" target="_blank" rel="noopener noreferrer">Substack</a>, Instagram, your own site. Stay cautious. Find your people.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Outcomes vary widely</span>
@@ -304,16 +323,19 @@
 						<span class="step-num">02</span>
 						<div class="step-cost">
 							<span class="cost-label">Est. cost</span>
-							<span class="cost-value">$5K–$30K</span>
+							<span class="cost-value">$5K-$30K</span>
 						</div>
 					</div>
-					<h3 class="step-title">Buy Land</h3>
+					<h3 class="step-title">Find land or space, responsibly</h3>
 					<p class="step-body">
-						In some rural U.S. counties, parcels in this price range exist - but prices, zoning, water rights, road access, and tax burden vary enormously. Title 25 provisions in California are commonly cited; rules in your jurisdiction may differ. Consult a local real-estate attorney and licensed contractor before assuming any specific number applies to you.
+						Land prices vary enormously by country, region, and parcel. Some rural areas remain affordable; others do not. Owner-builder, reclaimed, refurbished, and adaptive-reuse pathways exist in many jurisdictions worldwide, each with very different legal and code regimes. Before considering any purchase, lease, or build, work with <strong>licensed local professionals</strong> - real-estate attorney, surveyor, contractor, and tax advisor - who actually know your jurisdiction.
+					</p>
+					<p class="step-body">
+						Where possible, consider <strong>reusing or reclaiming existing structures and materials</strong> before new construction. Local builders, salvage yards, and community groups often know what's possible in your area.
 					</p>
 					<div class="step-tags">
-						<span class="step-tag">Title 25 Owner-Built</span>
-						<span class="step-tag">No contractor required</span>
+						<span class="step-tag">Local laws vary widely</span>
+						<span class="step-tag">Consult licensed professionals</span>
 					</div>
 					<a href="/blueprint/physical-exit" class="step-link">Read the full chapter &rarr;</a>
 				</div>
@@ -323,7 +345,7 @@
 						<span class="step-num">03</span>
 						<div class="step-cost">
 							<span class="cost-label">Est. cost</span>
-							<span class="cost-value">$25K–$100K</span>
+							<span class="cost-value">$25K-$100K</span>
 						</div>
 					</div>
 					<h3 class="step-title">Build a Shop</h3>
@@ -342,20 +364,16 @@
 						<span class="step-num">04</span>
 						<div class="step-cost">
 							<span class="cost-label">Est. cost</span>
-							<span class="cost-value">$2K–$15K</span>
+							<span class="cost-value">$2K-$15K</span>
 						</div>
 					</div>
 					<h3 class="step-title">Build, Film, Automate, Teach</h3>
 					<p class="step-body">
-						Now use the shop. Film your builds for YouTube. Buy tools that make you more autonomous:
-						<strong>FarmBot</strong> grows your food. A <strong>$2K GPU</strong> runs local AI that
-						nobody controls but you. <strong>Mobile Aloha</strong> automates physical tasks. Do science
-						at home. Discover things. Make a living being curious.
-						Then teach your kids to do all of it.
+						Use the space. Document what you build. Open-source projects worth knowing about include <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (open-source CNC food-growing), <a href="https://mobile-aloha.github.io/" target="_blank" rel="noopener noreferrer">Mobile Aloha</a> (research bimanual robot), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weights language models, and many community automation projects. Consumer GPUs can run capable local models, though specific hardware capability changes constantly. None of this is an endorsement - evaluate fit, safety, and legality for your situation.
 					</p>
 					<div class="step-tags">
-						<span class="step-tag">FarmBot XL: food autonomy</span>
-						<span class="step-tag">RTX 5090 + Llama 4: AI sovereignty</span>
+						<span class="step-tag">Open-source projects, varies</span>
+						<span class="step-tag">Verify for your context</span>
 					</div>
 					<a href="/blueprint/robotics" class="step-link">Read the full chapter &rarr;</a>
 				</div>
@@ -367,7 +385,7 @@
 				<div class="total-content">
 					<span class="total-label">Illustrative range</span>
 					<span class="total-range">Highly variable</span>
-					<span class="total-compare">Your real costs will differ — consult professionals</span>
+					<span class="total-compare">Your real costs will differ - consult professionals</span>
 				</div>
 				<div class="total-line"></div>
 			</div>
@@ -388,22 +406,6 @@
 			</div>
 
 			<InteractiveStackTable />
-		</div>
-	</section>
-
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- CALCULATOR - Run your numbers.                 -->
-	<!-- ═══════════════════════════════════════════════ -->
-	<section class="section section-dark" id="calculator" use:observe>
-		<div class="section-inner">
-			<div class="section-header-row">
-				<span class="section-number">04</span>
-				<div>
-					<h2 class="section-title">Run Your Numbers</h2>
-					<p class="section-desc">Input your current housing cost. See what you save with the shouse strategy. This is not theoretical.</p>
-				</div>
-			</div>
-			<SavingsCalculator />
 		</div>
 	</section>
 
@@ -479,7 +481,7 @@
 				A thesis worth considering:<br/>that real security may come from tangible things you understand,<br/>not from status, debt, or systems you don't.
 			</h2>
 			<p class="cta-body">
-				Material from this site is for thinking with, not acting on. Anything you might attempt — land purchases, construction, career changes, financial moves — should be evaluated with the relevant licensed professionals in your jurisdiction.
+				Material from this site is for thinking with, not acting on. Anything you might attempt - land purchases, construction, career changes, financial moves - should be evaluated with the relevant licensed professionals in your jurisdiction.
 			</p>
 			<div class="cta-actions">
 				<a href="/blueprint" class="btn-primary btn-large">
@@ -669,6 +671,16 @@
 		border-radius: 2px;
 		flex-shrink: 0;
 	}
+
+	.answer-tagline {
+		font-size: 1rem;
+		font-style: italic;
+		color: #fbbf24;
+		margin: 0 0 0.85rem 0;
+		line-height: 1.5;
+		letter-spacing: -0.005em;
+	}
+	.answer-tagline em { font-style: italic; }
 
 	.answer-text {
 		font-size: 1rem;
@@ -901,6 +913,18 @@
 		line-height: 1.4;
 	}
 
+	.stat-source {
+		display: inline-block;
+		margin-top: 0.4rem;
+		font-size: 0.62rem;
+		color: #475569;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		font-family: 'JetBrains Mono', monospace;
+		letter-spacing: 0.02em;
+	}
+	.stat-source:hover { color: #94a3b8; }
+
 	/* ═══════════════════════════ */
 	/* SITUATION                  */
 	/* ═══════════════════════════ */
@@ -936,6 +960,30 @@
 	/* ═══════════════════════════ */
 	/* THE PLAN STATEMENT         */
 	/* ═══════════════════════════ */
+	.plan-preflight {
+		max-width: 720px;
+		margin: 0 0 2rem 0;
+		padding: 1.1rem 1.25rem;
+		background: rgba(127, 29, 29, 0.18);
+		border: 1px solid rgba(248, 113, 113, 0.35);
+		border-radius: 10px;
+	}
+	.plan-preflight-title {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.78rem;
+		font-weight: 700;
+		color: #fecaca;
+		margin: 0 0 0.55rem 0;
+		letter-spacing: 0.04em;
+	}
+	.plan-preflight-body {
+		font-size: 0.9rem;
+		color: #fecaca;
+		line-height: 1.7;
+		margin: 0;
+	}
+	.plan-preflight-body strong { color: #fef2f2; }
+
 	.plan-statement {
 		max-width: 700px;
 	}

@@ -5,7 +5,10 @@
   import { onMount } from 'svelte';
 
   let visible = false;
-  onMount(() => { visible = true; });
+  onMount(() => {
+    visible = true;
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  });
 
   $: progress = $blueprintProgress;
   $: completedCount = Object.values(progress).filter((v) => v.readAt).length;
@@ -34,7 +37,7 @@
       <p class="bp-label">The YouTube Shouse Blueprint</p>
       <h1 class="bp-title">The Complete Blueprint</h1>
       <p class="bp-subtitle">
-        Eight chapters covering every layer of the exit strategy - from economic analysis to immediate execution. This is the full tactical breakdown.
+        Eight chapters of conjecture and research-based thinking — one author's framework for what material independence might look like. Not a plan. Not a guarantee. Starting material for your own evaluation.
       </p>
 
       {#if completedCount > 0}
@@ -45,7 +48,7 @@
           <span class="bp-progress-text">
             {completedCount}/{sections.length} chapters complete
             {#if completedCount === sections.length}
-              - Blueprint mastered
+              - all chapters read
             {/if}
           </span>
         </div>
@@ -95,7 +98,11 @@
   .blueprint-page {
     max-width: 860px;
     margin: 0 auto;
-    padding: 3rem 1.5rem 5rem;
+    padding: 2rem 1rem 3rem;
+  }
+
+  @media (min-width: 640px) {
+    .blueprint-page { padding: 3rem 1.5rem 5rem; }
   }
 
   .bp-header {
@@ -168,7 +175,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.25rem;
     background: rgba(30, 41, 59, 0.3);
     border: 1px solid rgba(148, 163, 184, 0.06);
     border-radius: 14px;
@@ -254,7 +261,7 @@
 
   .toc-read-time {
     font-size: 0.7rem;
-    color: #475569;
+    color: #94a3b8;
     font-family: 'JetBrains Mono', monospace;
   }
 
@@ -280,7 +287,7 @@
   }
 
   .toc-arrow {
-    color: #475569;
+    color: #94a3b8;
     flex-shrink: 0;
     transition: all 0.2s;
   }
@@ -290,17 +297,12 @@
     transform: translateX(4px);
   }
 
-  @media (max-width: 640px) {
-    .blueprint-page {
-      padding: 2rem 1rem 4rem;
-    }
+  /* Base: toc-card mobile padding, arrow hidden on small */
+  .toc-card { padding: 1.25rem; }
+  .toc-arrow { display: none; }
 
-    .toc-card {
-      padding: 1.25rem;
-    }
-
-    .toc-arrow {
-      display: none;
-    }
+  @media (min-width: 640px) {
+    .toc-card { padding: 1.5rem; }
+    .toc-arrow { display: block; }
   }
 </style>

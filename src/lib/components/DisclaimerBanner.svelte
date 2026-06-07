@@ -1,6 +1,8 @@
 <script>
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+  import { fly } from 'svelte/transition';
+  import { cubicOut } from 'svelte/easing';
 
   // Hybrid clickwrap consent. "I Agree" stores a versioned consent record
   // (timestamp + version) in localStorage. Banner re-shows if the version
@@ -39,7 +41,12 @@
 </script>
 
 {#if !agreed}
-  <aside class="disclaimer-banner" role="region" aria-label="Site disclaimer and acceptance">
+  <aside
+    class="disclaimer-popup"
+    role="region"
+    aria-label="Site disclaimer and acceptance"
+    transition:fly={{ y: 80, duration: 300, easing: cubicOut }}
+  >
     <div class="dbnr-inner">
       <div class="dbnr-icon" aria-hidden="true">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -49,38 +56,38 @@
         </svg>
       </div>
       <p class="dbnr-text">
-        <strong>This site is for informational and educational purposes only.</strong>
-        It is not professional advice and should not be used in place of professional advice. Please consult all relevant professionals before making any decisions. Site is offered AS-IS with no warranties of any kind. By using this site, you agree to the
+        <strong>For informational and educational purposes only.</strong>
+        Not professional advice. By using this site you agree to the
         <a href="/terms" class="dbnr-link-inline">Terms</a>,
         <a href="/disclaimer" class="dbnr-link-inline">Disclaimer</a>, and
-        <a href="/policies" class="dbnr-link-inline">Privacy</a>.
+        <a href="/policies" class="dbnr-link-inline">Privacy Policy</a>.
       </p>
       <button type="button" class="dbnr-agree" on:click={agree} aria-label="I have read and agree to the Terms, Disclaimer, and Privacy">
         I Agree
       </button>
     </div>
   </aside>
-{:else if agreedAt}
-  <div class="consent-stamp" aria-hidden="true">
-    Acceptance recorded · {agreedAt.slice(0, 10)} · <a href="/terms">Terms</a> · <a href="/disclaimer">Disclaimer</a>
-  </div>
 {/if}
 
 <style>
-  .disclaimer-banner {
-    position: sticky;
-    top: 0;
+  .disclaimer-popup {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 9998;
-    background: linear-gradient(180deg, rgba(127, 29, 29, 0.95) 0%, rgba(91, 16, 16, 0.95) 100%);
-    border-bottom: 1px solid rgba(248, 113, 113, 0.4);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    width: calc(100% - 2rem);
+    max-width: 780px;
+    background: rgba(40, 10, 10, 0.97);
+    border: 1px solid rgba(248, 113, 113, 0.35);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(248, 113, 113, 0.1);
   }
 
   .dbnr-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.7rem 1rem;
+    padding: 0.85rem 1rem;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -120,8 +127,8 @@
     background: #fee2e2;
     color: #7f1d1d;
     border: 1px solid #fecaca;
-    padding: 0.45rem 0.85rem;
-    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
     font-size: 0.78rem;
     font-weight: 700;
     line-height: 1;
@@ -140,30 +147,23 @@
     outline-offset: 2px;
   }
 
-  .consent-stamp {
-    background: rgba(15, 23, 42, 0.85);
-    border-bottom: 1px solid rgba(148, 163, 184, 0.08);
-    font-size: 0.66rem;
-    color: #64748b;
-    text-align: center;
-    padding: 0.35rem 1rem;
-    font-family: 'JetBrains Mono', monospace;
-    letter-spacing: 0.04em;
-  }
-
-  .consent-stamp a {
-    color: #94a3b8;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-
-  .consent-stamp a:hover {
-    color: #f59e0b;
-  }
-
   @media (max-width: 640px) {
-    .dbnr-text { font-size: 0.72rem; }
-    .dbnr-inner { padding: 0.6rem 0.75rem; gap: 0.5rem; flex-wrap: wrap; }
-    .dbnr-agree { width: 100%; padding: 0.55rem 0.85rem; }
+    .disclaimer-popup {
+      bottom: 0.6rem;
+      width: calc(100% - 1rem);
+      border-radius: 10px;
+    }
+    /* Keep a single compact row on mobile: short text + inline button.
+       No wrap, no full-width button — that was doubling the banner height. */
+    .dbnr-inner { padding: 0.6rem 0.7rem; gap: 0.6rem; align-items: center; }
+    .dbnr-icon { display: none; }
+    .dbnr-text { font-size: 0.68rem; line-height: 1.4; }
+    .dbnr-agree {
+      padding: 0.55rem 0.85rem;
+      font-size: 0.72rem;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+    }
   }
 </style>

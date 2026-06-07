@@ -78,7 +78,11 @@
   .about-page {
     max-width: 760px;
     margin: 0 auto;
-    padding: 3rem 1.5rem 5rem;
+    padding: 2rem 1rem 3rem;
+  }
+
+  @media (min-width: 640px) {
+    .about-page { padding: 3rem 1.5rem 5rem; }
   }
 
   .about-header {
@@ -213,13 +217,15 @@
     transform: translateY(-2px);
   }
 
-  @media (max-width: 640px) {
-    .about-page {
-      padding: 2rem 1rem 4rem;
-    }
+  /* Base: stack actions on mobile */
+  .about-actions {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  @media (min-width: 640px) {
     .about-actions {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
   }

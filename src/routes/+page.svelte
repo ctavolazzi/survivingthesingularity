@@ -5,21 +5,21 @@
 	import { blueprintProgress } from '$lib/stores/progress.js';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
 	import BookStatusBanner from '$lib/components/BookStatusBanner.svelte';
-	import IndependenceCountdown from '$lib/components/IndependenceCountdown.svelte';
 	import FloatingNav from '$lib/components/FloatingNav.svelte';
 	import LiveDashboard from '$lib/components/LiveDashboard.svelte';
 	import InteractiveStackTable from '$lib/components/InteractiveStackTable.svelte';
 	import UrgencyBanner from '$lib/components/UrgencyBanner.svelte';
+	import AGICountdown from '$lib/components/AGICountdown.svelte';
 
 	const homeSections = [
-		{ id: 'brief', label: 'The Brief' },
-		{ id: 'situation', label: 'Situation' },
-		{ id: 'plan', label: 'The Plan' },
-		{ id: 'steps', label: '4 Steps' },
-		{ id: 'stack', label: 'Alternatives' },
+		{ id: 'brief', label: 'Brief' },
+		{ id: 'pillars', label: 'Pillars' },
+		{ id: 'situation', label: 'Data' },
+		{ id: 'plan', label: 'Plan' },
+		{ id: 'steps', label: 'Steps' },
 		{ id: 'timeline', label: 'Timeline' },
 		{ id: 'chapters', label: 'Blueprint' },
-		{ id: 'act', label: 'Act Now' },
+		{ id: 'act', label: 'Act' },
 	];
 
 	let heroVisible = false;
@@ -94,6 +94,37 @@
 		slug: s.slug,
 	}));
 
+	const pillars = [
+		{
+			num: '01',
+			label: 'Learn the Tools',
+			body: 'Teach yourself to use modern AI. The real leverage is not a subscription — it is understanding these tools well enough to build new ways of getting your needs met.',
+			href: '/blueprint/local-ai',
+			color: 'amber',
+		},
+		{
+			num: '02',
+			label: 'Open-Source Robotics',
+			body: 'Automate food production with FarmBot and workshop tasks with open-source robots. Secure your own calories and labor.',
+			href: '/blueprint/robotics',
+			color: 'blue',
+		},
+		{
+			num: '03',
+			label: 'The Physical Exit',
+			body: 'Rural land, a shouse workshop, and a digital cash engine. Crush overhead and buy back decades of your life.',
+			href: '/blueprint/physical-exit',
+			color: 'green',
+		},
+	];
+
+	const timeline = [
+		{ period: '2025–2026', label: 'Learn the Tools', desc: 'Modern AI becomes learnable by anyone. Consumer hardware and open models put real capability within reach of self-taught builders.' },
+		{ period: '2026–2027', label: 'Open-Source Robotics', desc: 'Homestead automation becomes accessible. FarmBot, open bimanual arms, and low-cost actuators reach the maker community.' },
+		{ period: '2027–2029', label: 'Shouse Economy', desc: 'Housing affordability crisis accelerates the owner-builder and shouse path for families priced out of suburban real estate.' },
+		{ period: '2029–2032', label: 'Decentralized Production', desc: 'Networked independent producers coordinate without dependence on fragile global supply chains.' },
+	];
+
 	onMount(() => { heroVisible = true; });
 
 	$: progress = $blueprintProgress;
@@ -101,38 +132,36 @@
 	$: progressPercent = Math.round((completedCount / chapters.length) * 100);
 </script>
 
-	<svelte:head>
-		<title>Surviving the Singularity</title>
-		<meta name="description" content="A field manual for staying agentic as AI rewrites work, money, medicine, and meaning. Open-draft book, full blueprint, and dispatches from the curve." />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Surviving the Singularity" />
-		<meta property="og:description" content="A field manual for staying agentic as AI rewrites work, money, medicine, and meaning." />
-		<meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:image" content="/Surviving-the-Singularity-Cover.png" />
-		{@html `<script type="application/ld+json">${JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "WebSite",
-			"name": "Surviving the Singularity",
-			"url": "https://survivingthesingularity.com",
-			"description": "A field manual for staying agentic as AI rewrites the way we get our needs met."
-		})}</script>`}
-	</svelte:head>
+<svelte:head>
+	<title>Surviving the Singularity</title>
+	<meta name="description" content="Practical tools for material independence in the age of AI. Learn the tools, automate with open-source robotics, and build the physical exit — a field manual for what comes next." />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Surviving the Singularity" />
+	<meta property="og:description" content="Practical tools for material independence in the age of AI." />
+	<meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="/Surviving-the-Singularity-Cover.png" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "Surviving the Singularity",
+		"url": "https://survivingthesingularity.com",
+		"description": "Practical tools for material independence in the age of AI."
+	})}</script>`}
+</svelte:head>
 
 <div class="page">
 	<FloatingNav sections={homeSections} />
 	<UrgencyBanner />
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- BOOK STATUS BANNER                              -->
-	<!-- ═══════════════════════════════════════════════ -->
-	<div class="book-banner-wrap">
-		<BookStatusBanner />
-	</div>
+	<!-- AGI COUNTDOWN -->
+	<section class="section section-countdown" use:observe>
+		<div class="section-inner">
+			<AGICountdown compact />
+		</div>
+	</section>
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE BRIEF - This is not a sales page.          -->
-	<!-- ═══════════════════════════════════════════════ -->
+	<!-- HERO -->
 	<section class="hero" id="brief">
 		<div class="hero-bg">
 			<div class="hero-grid"></div>
@@ -147,7 +176,7 @@
 						<circle class="radar-ring radar-ring-2" cx="7" cy="7" r="2" fill="none" stroke="#ef4444" stroke-width="1"/>
 						<circle class="radar-core" cx="7" cy="7" r="2.2" fill="#ef4444"/>
 					</svg>
-					A PRACTICAL BLUEPRINT FOR WHAT COMES NEXT
+					Practical tools for material independence
 				</div>
 
 				<h1 class="hero-title">
@@ -155,9 +184,9 @@
 				</h1>
 
 				<p class="hero-subtitle">
-					The old playbook (mortgage, career ladder, retire at 65) was designed for a world that no longer
-					exists. AI is rewriting every industry. Housing costs are out of control. But inside that disruption
-					is an opportunity most people haven't seen yet.
+					The old playbook — mortgage, career ladder, retire at 65 — was designed for a world
+					that no longer exists. AI is rewriting every industry. Housing costs are out of control.
+					But inside that disruption is an opportunity most people haven't seen yet.
 				</p>
 
 				<p class="hero-question">
@@ -169,10 +198,10 @@
 					<div class="answer-content">
 						<p class="answer-tagline"><em>Live like your ancestors, with the tools of the modern world.</em></p>
 						<p class="answer-text">
-							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint - for thinking about, not acting on without professional guidance.
+							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint — for thinking about, not acting on without professional guidance.
 						</p>
 						<p class="answer-cost">
-							Some scenarios in this thought experiment model costs well below a traditional mortgage. <strong>Your real numbers will differ.</strong>
+							Some scenarios model costs well below a traditional mortgage. <strong>Your real numbers will differ.</strong>
 						</p>
 					</div>
 				</div>
@@ -180,10 +209,10 @@
 				<div class="hero-actions">
 					<a href="/blueprint" class="btn-primary">
 						Read the Full Blueprint
-						<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 					</a>
-					<a href="#plan" class="btn-secondary">
-						See the 4 Steps
+					<a href="#pillars" class="btn-secondary">
+						See the 3 Pillars
 					</a>
 				</div>
 
@@ -199,16 +228,41 @@
 		{/if}
 	</section>
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- SITUATION REPORT - The numbers.                -->
-	<!-- ═══════════════════════════════════════════════ -->
+	<!-- THREE PILLARS -->
+	<section class="section" id="pillars" use:observe>
+		<div class="section-inner">
+			<div class="section-header-row">
+				<span class="section-number">00</span>
+				<div>
+					<h2 class="section-title">Three Pillars</h2>
+					<p class="section-desc">The framework for material independence in the age of AI. Each pillar reinforces the others.</p>
+				</div>
+			</div>
+
+			<div class="pillars-grid" use:stagger={{ delay: 120 }}>
+				{#each pillars as pillar}
+					<a href={pillar.href} class="pillar-card stagger-item pillar-{pillar.color}">
+						<div class="pillar-num">{pillar.num}</div>
+						<h3 class="pillar-label">{pillar.label}</h3>
+						<p class="pillar-body">{pillar.body}</p>
+						<span class="pillar-link">
+							Explore
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7H11M11 7L8 4M11 7L8 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						</span>
+					</a>
+				{/each}
+			</div>
+		</div>
+	</section>
+
+	<!-- SITUATION REPORT -->
 	<section class="section" id="situation" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
 				<span class="section-number">01</span>
 				<div>
 					<h2 class="section-title">The Reality Check</h2>
-					<p class="section-desc">The numbers that explain why the old path doesn't work - and why a new one is possible.</p>
+					<p class="section-desc">The numbers that explain why the old path doesn't work — and why a new one is possible.</p>
 				</div>
 			</div>
 
@@ -216,7 +270,7 @@
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number" use:countUp={{ target: '23', suffix: '%' }}>0%</span>
-					<span class="stat-label">Cumulative U.S. CPI inflation, Jan 2020-Apr 2026 (approx.)</span>
+					<span class="stat-label">Cumulative U.S. CPI inflation, Jan 2020–Apr 2026 (approx.)</span>
 					<a class="stat-source" href="https://www.bls.gov/cpi/" target="_blank" rel="noopener noreferrer">Source: BLS CPI</a>
 				</div>
 				<div class="stat-card stagger-item stat-danger">
@@ -227,14 +281,14 @@
 				</div>
 				<div class="stat-card stagger-item stat-danger">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number" use:countUp={{ target: '30', suffix: ' years' }}>0 years</span>
+					<span class="stat-number" use:countUp={{ target: '30', suffix: ' yrs' }}>0 yrs</span>
 					<span class="stat-label">Standard U.S. fixed-rate mortgage term (typical)</span>
 					<a class="stat-source" href="https://www.consumerfinance.gov/owning-a-home/loan-options/" target="_blank" rel="noopener noreferrer">Source: CFPB</a>
 				</div>
 				<div class="stat-card stagger-item stat-success">
 					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
 					<span class="stat-number">~85%</span>
-					<span class="stat-label">Drop in U.S. utility-scale solar installed cost, 2010-2023</span>
+					<span class="stat-label">Drop in U.S. utility-scale solar installed cost, 2010–2023</span>
 					<a class="stat-source" href="https://emp.lbl.gov/utility-scale-solar" target="_blank" rel="noopener noreferrer">Source: LBNL / NREL</a>
 				</div>
 				<div class="stat-card stagger-item stat-success">
@@ -253,10 +307,10 @@
 
 			<div class="situation-block">
 				<p>
-					A standard 30-year mortgage compounds total payments well above the sticker price - exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. None of these statements should be relied on without checking current data.
+					A standard 30-year mortgage compounds total payments well above the sticker price — exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. <strong>None of these statements should be relied on without checking current data.</strong>
 				</p>
 				<p>
-					At the same time, some inputs that matter for a different kind of life have gotten dramatically cheaper or more accessible: utility-scale solar costs, consumer-grade GPUs capable of running local AI models, open-source automation projects, and free creator platforms. Whether any of this is useful for any specific person depends on their situation, and on local laws, codes, and professional advice in their jurisdiction.
+					At the same time, some inputs that matter for a different kind of life have gotten dramatically cheaper or more accessible: utility-scale solar costs, consumer-grade GPUs capable of running local AI models, open-source automation projects, and free creator platforms.
 				</p>
 				<p class="situation-punchline">
 					Before acting on any of this, talk to qualified professionals where you live.
@@ -267,36 +321,32 @@
 		</div>
 	</section>
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE PLAN - 4 steps. That's it.                 -->
-	<!-- ═══════════════════════════════════════════════ -->
+	<!-- THE PLAN -->
 	<section class="section section-emphasis" id="plan" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
 				<span class="section-number">02</span>
 				<div>
 					<h2 class="section-title">The Plan</h2>
-					<p class="section-desc">Four steps the author has been thinking about. Not a prescription. Not a recommendation. Material for your own evaluation with qualified professionals.</p>
+					<p class="section-desc">Four steps the author has been thinking about. Not a prescription. Material for your own evaluation with qualified professionals.</p>
 				</div>
 			</div>
 
 			<div class="plan-preflight">
 				<p class="plan-preflight-title">⚠ Before anything else: talk to local professionals.</p>
 				<p class="plan-preflight-body">
-					Every step below depends on jurisdiction, zoning, building code, financing, tax, and personal situation. Before considering any action, talk to <strong>licensed professionals where you live</strong> - a local real-estate attorney, a licensed contractor, an accountant, a financial advisor, and a doctor as relevant. They can tell you what is actually possible, legal, safe, and sensible in your area. Reading this site is not a substitute for any of that. This is informational only.
+					Every step below depends on jurisdiction, zoning, building code, financing, tax, and personal situation. Before considering any action, talk to <strong>licensed professionals where you live</strong> — a local real-estate attorney, a licensed contractor, an accountant, a financial advisor. They can tell you what is actually possible, legal, safe, and sensible in your area. Reading this site is not a substitute for any of that.
 				</p>
 			</div>
 
 			<div class="plan-statement">
 				<p class="plan-headline">Adaptability matters more, the faster things change.</p>
-					<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change. Hypothesis, not advice. The plan below is good material for thinking - if and how you apply any of it is a question for you and your professional advisors.</p>
+				<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change. Hypothesis, not advice.</p>
 			</div>
 		</div>
 	</section>
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE 4 STEPS - The core of everything.          -->
-	<!-- ═══════════════════════════════════════════════ -->
+	<!-- THE 4 STEPS -->
 	<section class="section" id="steps" use:observe>
 		<div class="section-inner">
 			<div class="steps-grid" use:stagger={{ delay: 150 }}>
@@ -311,12 +361,7 @@
 					</div>
 					<h3 class="step-title">Start making content (responsibly)</h3>
 					<p class="step-body">
-						Public-facing creator work as one possible economic channel. Film what you learn, build, and figure out. The
-						<strong>One-Hour Rule</strong>: anything that took you more than an hour to learn could be
-						worth a video. <strong>Be responsible:</strong> don't share location, family, financial, or safety-sensitive details you wouldn't want public; mind copyright and platform terms; respect the privacy of others. Most creators earn little or nothing - this is not a business plan.
-					</p>
-					<p class="step-body">
-						Or any platform: <a href="https://substack.com" target="_blank" rel="noopener noreferrer">Substack</a>, Instagram, your own site. Stay cautious. Find your people.
+						Public-facing creator work as one possible economic channel. Film what you learn, build, and figure out. The <strong>One-Hour Rule</strong>: anything that took you more than an hour to learn could be worth a video. <strong>Be responsible:</strong> don't share location, family, financial, or safety-sensitive details publicly.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Outcomes vary widely</span>
@@ -330,15 +375,12 @@
 						<span class="step-num">02</span>
 						<div class="step-cost">
 							<span class="cost-label">Est. cost</span>
-							<span class="cost-value">$5K-$30K</span>
+							<span class="cost-value">$5K–$30K</span>
 						</div>
 					</div>
 					<h3 class="step-title">Find land or space</h3>
 					<p class="step-body">
-						Land prices vary enormously by country, region, and parcel. Some rural areas remain affordable; others do not. Owner-builder, reclaimed, refurbished, and adaptive-reuse pathways exist in many jurisdictions worldwide, each with very different legal and code regimes. Before considering any purchase, lease, or build, work with <strong>licensed local professionals</strong> - real-estate attorney, surveyor, contractor, and tax advisor - who actually know your jurisdiction.
-					</p>
-					<p class="step-body">
-						Where possible, consider <strong>reusing or reclaiming existing structures and materials</strong> before new construction. Local builders, salvage yards, and community groups often know what's possible in your area.
+						Land prices vary enormously by country, region, and parcel. Owner-builder, reclaimed, refurbished, and adaptive-reuse pathways exist in many jurisdictions, each with very different legal and code regimes. Work with <strong>licensed local professionals</strong> before considering any purchase or build.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Local laws vary widely</span>
@@ -352,16 +394,16 @@
 						<span class="step-num">03</span>
 						<div class="step-cost">
 							<span class="cost-label">Est. cost</span>
-							<span class="cost-value">$25K-$100K</span>
+							<span class="cost-value">$25K–$100K</span>
 						</div>
 					</div>
 					<h3 class="step-title">Build a Shop</h3>
 					<p class="step-body">
-						Not a house - a <strong>shouse</strong>. Shop first, shelter second. Steel building kit prices fluctuate with commodity markets. Habitability conversions are subject to local building codes, occupancy permits, and inspection regimes that vary by county. Consult a licensed contractor and your local permitting authority before estimating any cost.
+						Not a house — a <strong>shouse</strong>. Shop first, shelter second. Steel building kit prices fluctuate with commodity markets. Habitability conversions are subject to local building codes and inspection regimes that vary by county. Consult a licensed contractor and your local permitting authority first.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Code varies by county</span>
-							<span class="step-tag">Consult a contractor</span>
+						<span class="step-tag">Consult a contractor</span>
 					</div>
 					<a href="/blueprint/the-shouse" class="step-link">Read more &rarr;</a>
 				</div>
@@ -371,12 +413,12 @@
 						<span class="step-num">04</span>
 						<div class="step-cost">
 							<span class="cost-label">Est. cost</span>
-							<span class="cost-value">$2K-$15K</span>
+							<span class="cost-value">$2K–$15K</span>
 						</div>
 					</div>
 					<h3 class="step-title">Build, Film, Automate, Teach</h3>
 					<p class="step-body">
-						Use the space. Document what you build. Open-source projects worth knowing about include <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (open-source CNC food-growing), <a href="https://mobile-aloha.github.io/" target="_blank" rel="noopener noreferrer">Mobile Aloha</a> (research bimanual robot), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weights language models, and many community automation projects. Consumer GPUs can run capable local models, though specific hardware capability changes constantly. None of this is an endorsement - evaluate fit, safety, and legality for your situation.
+						Use the space. Document what you build. Open-source projects worth knowing about include <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (open-source CNC food-growing), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weights language models. None of this is an endorsement — evaluate fit, safety, and legality for your situation.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Open-source projects, varies</span>
@@ -392,23 +434,52 @@
 				<div class="total-content">
 					<span class="total-label">Illustrative range</span>
 					<span class="total-range">Highly variable</span>
-					<span class="total-compare">Your real costs will differ - consult professionals</span>
+					<span class="total-compare">Your real costs will differ — consult professionals</span>
 				</div>
 				<div class="total-line"></div>
 			</div>
 		</div>
 	</section>
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE STACK - What replaces what.                -->
-	<!-- ═══════════════════════════════════════════════ -->
-	<section class="section" id="stack" use:observe>
+	<!-- TIMELINE -->
+	<section class="section section-timeline" id="timeline" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
 				<span class="section-number">03</span>
 				<div>
+					<h2 class="section-title">The Window</h2>
+					<p class="section-desc">One author's hypothesis about how this unfolds. Educated guesses, not forecasts. The window to act is before these become mainstream — not after.</p>
+				</div>
+			</div>
+
+			<div class="timeline-track" use:stagger={{ delay: 100 }}>
+				{#each timeline as item, i}
+					<div class="timeline-item stagger-item">
+						<div class="timeline-connector">
+							<div class="timeline-dot"></div>
+							{#if i < timeline.length - 1}
+								<div class="timeline-line"></div>
+							{/if}
+						</div>
+						<div class="timeline-body">
+							<span class="timeline-period">{item.period}</span>
+							<h3 class="timeline-label">{item.label}</h3>
+							<p class="timeline-desc">{item.desc}</p>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</section>
+
+	<!-- ALTERNATIVES TO CONSIDER -->
+	<section class="section" id="stack" use:observe>
+		<div class="section-inner">
+			<div class="section-header-row">
+				<span class="section-number">04</span>
+				<div>
 					<h2 class="section-title">Alternatives to Consider</h2>
-					<p class="section-desc">Some systems worth thinking about differently. Each item is a starting point for your own research — not a recommendation. Click any item to read more context.</p>
+					<p class="section-desc">Some systems worth thinking about differently. Each item is a starting point for your own research — not a recommendation.</p>
 				</div>
 			</div>
 
@@ -416,32 +487,14 @@
 		</div>
 	</section>
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- TIMELINE - Illustrative scenario explorer.      -->
-	<!-- ═══════════════════════════════════════════════ -->
-	<section class="section section-dark" id="timeline" use:observe>
-		<div class="section-inner">
-			<div class="section-header-row">
-				<span class="section-number">04</span>
-				<div>
-					<h2 class="section-title">Your Timeline</h2>
-					<p class="section-desc">Pick your numbers. Rough illustrative arithmetic — not a forecast. For a deeper breakdown with tech products and cost details, explore the full timeline.</p>
-				</div>
-			</div>
-			<IndependenceCountdown />
-		</div>
-	</section>
-
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- THE FULL BLUEPRINT - 8 chapters.               -->
-	<!-- ═══════════════════════════════════════════════ -->
+	<!-- THE FULL BLUEPRINT -->
 	<section class="section" id="chapters" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
 				<span class="section-number">05</span>
 				<div>
 					<h2 class="section-title">The Full Blueprint</h2>
-					<p class="section-desc">Eight chapters of conjecture and supposition based on one author's research. Not a roadmap. Not a guarantee. A way of thinking about what <em>might</em> be possible — for you to evaluate with qualified professionals in your own situation.</p>
+					<p class="section-desc">Eight chapters of conjecture and supposition based on one author's research. Not a roadmap. A way of thinking about what <em>might</em> be possible.</p>
 				</div>
 			</div>
 
@@ -456,7 +509,7 @@
 
 			<div class="blueprint-conjecture-notice">
 				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#94a3b8" stroke-width="1.2"/><path d="M7 4v3.5M7 9.5v.5" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/></svg>
-				<p>Everything in this blueprint is <strong>conjecture and supposition</strong> based on one person's research and thinking. It does not represent professional advice of any kind. No outcome is promised, projected, or guaranteed. Treat it as material for your own independent evaluation.</p>
+				<p>Everything in this blueprint is <strong>conjecture and supposition</strong> based on one person's research. No outcome is promised, projected, or guaranteed. Treat it as material for your own independent evaluation.</p>
 			</div>
 
 			<div class="chapters-list" use:stagger={{ delay: 60 }}>
@@ -464,7 +517,7 @@
 					<a href="/blueprint/{chapter.slug}" class="chapter-row stagger-item" class:chapter-done={progress[chapter.slug]?.readAt}>
 						<span class="chapter-num-box" class:chapter-num-done={progress[chapter.slug]?.readAt}>
 							{#if progress[chapter.slug]?.readAt}
-								<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7L5.5 10.5L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							{:else}
 								{chapter.num}
 							{/if}
@@ -473,7 +526,7 @@
 							<h3 class="chapter-title">{chapter.title}</h3>
 							<p class="chapter-desc">{chapter.desc}</p>
 						</div>
-						<svg class="chapter-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
+						<svg class="chapter-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
 							<path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</a>
@@ -482,23 +535,26 @@
 		</div>
 	</section>
 
-	<!-- ═══════════════════════════════════════════════ -->
-	<!-- ACT NOW - This is not optional.                -->
-	<!-- ═══════════════════════════════════════════════ -->
+	<!-- BOOK STATUS BANNER -->
+	<div class="book-banner-wrap">
+		<BookStatusBanner />
+	</div>
+
+	<!-- CTA -->
 	<section class="section section-cta" id="act" use:observe>
 		<div class="section-inner cta-inner">
 			<div class="cta-border"></div>
 			<p class="cta-eyebrow">Closing thought</p>
 			<h2 class="cta-title">
-				A thesis worth considering:<br/>that real security may come from tangible things you understand,<br/>not from status, debt, or systems you don't.
+				Real security may come from tangible things you understand,<br class="cta-break" /> not from status, debt, or systems you don't.
 			</h2>
 			<p class="cta-body">
-				Material from this site is for thinking with, not acting on. Anything you might attempt - land purchases, construction, career changes, financial moves - should be evaluated with the relevant licensed professionals in your jurisdiction.
+				Material from this site is for thinking with, not acting on. Anything you might attempt — land purchases, construction, career changes, financial moves — should be evaluated with the relevant licensed professionals in your jurisdiction.
 			</p>
 			<div class="cta-actions">
 				<a href="/blueprint" class="btn-primary btn-large">
 					Read the Full Blueprint
-					<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 				</a>
 				<a href="/book" class="btn-secondary">Read the Book</a>
 			</div>
@@ -512,50 +568,52 @@
 </div>
 
 <style>
-	/* ═══════════════════════════ */
-	/* PAGE & GLOBAL              */
-	/* ═══════════════════════════ */
+	/* ═══════════════════════════════════════════════════
+	   MOBILE-FIRST: base styles target 320px viewports.
+	   Expand up with min-width breakpoints only.
+	   Breakpoints: 480px | 640px | 768px | 1024px
+	   ═══════════════════════════════════════════════════ */
+
+	/* ── PAGE ── */
 	.page { display: flex; flex-direction: column; }
 
+	/* ── REVEAL ANIMATIONS ── */
 	.section > .section-inner {
 		opacity: 0;
 		transform: translateY(24px);
 		transition: opacity 0.6s ease, transform 0.6s ease;
 	}
-	.section.revealed > .section-inner,
 	.section:global(.revealed) > .section-inner {
 		opacity: 1;
 		transform: translateY(0);
 	}
-	.stagger-item {
+	:global(.stagger-item) {
 		opacity: 0;
 		transform: translateY(12px);
 		transition: opacity 0.4s ease, transform 0.4s ease;
 	}
 	:global(.stagger-in) {
-		opacity: 1 !important;
-		transform: translateY(0) !important;
+		opacity: 1;
+		transform: translateY(0);
 	}
 
-	/* ═══════════════════════════ */
-	/* BOOK BANNER WRAPPER        */
-	/* ═══════════════════════════ */
+	/* ── BOOK BANNER ── */
 	.book-banner-wrap {
-		padding: 2rem 1.5rem 0;
+		padding: 2rem 1rem 0;
 		max-width: 960px;
 		margin: 0 auto;
+		width: 100%;
+		box-sizing: border-box;
 	}
 
-	/* ═══════════════════════════ */
-	/* HERO                       */
-	/* ═══════════════════════════ */
+	/* ── HERO ── */
 	.hero {
 		position: relative;
-		min-height: 90vh;
+		min-height: 80vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 6rem 2rem 4rem;
+		padding: 3.5rem 1rem 3rem;
 		overflow: hidden;
 	}
 
@@ -571,18 +629,18 @@
 		background-image:
 			linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
 			linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
-		background-size: 80px 80px;
+		background-size: 60px 60px;
 	}
 
 	.hero-glow {
 		position: absolute;
-		width: 800px;
-		height: 800px;
+		width: 600px;
+		height: 600px;
 		border-radius: 50%;
 		background: radial-gradient(circle, rgba(239, 68, 68, 0.06), transparent 70%);
-		top: -300px;
-		right: -200px;
-		filter: blur(80px);
+		top: -200px;
+		right: -150px;
+		filter: blur(60px);
 		animation: hero-glow-breath 9s ease-in-out infinite;
 	}
 
@@ -594,6 +652,7 @@
 	.hero-content {
 		position: relative;
 		z-index: 2;
+		width: 100%;
 		max-width: 860px;
 	}
 
@@ -601,147 +660,121 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.5rem;
-		font-size: 0.65rem;
+		font-size: 0.6rem;
 		font-weight: 700;
 		color: #ef4444;
 		text-transform: uppercase;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.12em;
 		font-family: 'JetBrains Mono', monospace;
-		margin-bottom: 2rem;
-		padding: 0.4rem 0.8rem;
+		margin-bottom: 1.5rem;
+		padding: 0.4rem 0.75rem;
 		background: rgba(239, 68, 68, 0.06);
 		border: 1px solid rgba(239, 68, 68, 0.12);
 		border-radius: 6px;
 	}
 
-	.classification-radar {
-		flex-shrink: 0;
-		overflow: visible;
-	}
+	.classification-radar { flex-shrink: 0; overflow: visible; }
 
 	.radar-core {
 		transform-origin: 7px 7px;
 		animation: radar-core-pulse 2s ease-in-out infinite;
 	}
-
 	@keyframes radar-core-pulse {
 		0%, 100% { opacity: 0.55; }
 		50% { opacity: 1; }
 	}
 
-	.radar-ring {
-		transform-origin: 7px 7px;
-		opacity: 0;
-	}
-
-	.radar-ring-1 {
-		animation: radar-ping 2.4s ease-out infinite;
-	}
-
-	.radar-ring-2 {
-		animation: radar-ping 2.4s ease-out 1.2s infinite;
-	}
-
+	.radar-ring { transform-origin: 7px 7px; opacity: 0; }
+	.radar-ring-1 { animation: radar-ping 2.4s ease-out infinite; }
+	.radar-ring-2 { animation: radar-ping 2.4s ease-out 1.2s infinite; }
 	@keyframes radar-ping {
 		0% { transform: scale(1); opacity: 0.7; }
 		100% { transform: scale(2.6); opacity: 0; }
 	}
 
 	.hero-title {
-		font-size: clamp(2rem, 5.5vw, 3.5rem);
+		font-size: clamp(1.8rem, 7vw, 3.5rem);
 		font-weight: 900;
 		color: #fafafa;
 		line-height: 1.15;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 1.25rem;
 		letter-spacing: -0.04em;
 	}
 
 	.hero-subtitle {
-		font-size: 1.05rem;
+		font-size: clamp(0.9rem, 3vw, 1.05rem);
 		color: #71717a;
 		line-height: 1.75;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 1.25rem;
 		max-width: 700px;
 	}
 
 	.hero-question {
-		font-size: 1.4rem;
+		font-size: clamp(1rem, 3.5vw, 1.4rem);
 		font-weight: 700;
 		color: #fafafa;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 1.25rem;
 	}
-
-	.hero-question em {
-		color: #f59e0b;
-		font-style: italic;
-	}
+	.hero-question em { color: #f59e0b; font-style: italic; }
 
 	.hero-answer {
 		display: flex;
-		gap: 1rem;
-		margin-bottom: 2.5rem;
-		padding: 1.5rem;
+		flex-direction: column;
+		gap: 0.75rem;
+		margin-bottom: 2rem;
+		padding: 1.25rem;
 		background: rgba(245, 158, 11, 0.04);
 		border: 1px solid rgba(245, 158, 11, 0.1);
 		border-radius: 12px;
 	}
 
 	.answer-bar {
-		width: 3px;
-		background: linear-gradient(180deg, #f59e0b, #f97316);
+		width: 40px;
+		height: 3px;
+		background: linear-gradient(90deg, #f59e0b, #f97316);
 		border-radius: 2px;
 		flex-shrink: 0;
 	}
 
 	.answer-tagline {
-		font-size: 1rem;
+		font-size: 0.95rem;
 		font-style: italic;
 		color: #fbbf24;
-		margin: 0 0 0.85rem 0;
+		margin: 0 0 0.75rem;
 		line-height: 1.5;
-		letter-spacing: -0.005em;
 	}
-	.answer-tagline em { font-style: italic; }
 
 	.answer-text {
-		font-size: 1rem;
+		font-size: 0.95rem;
 		color: #d4d4d8;
 		line-height: 1.7;
-		margin: 0 0 0.75rem 0;
+		margin: 0 0 0.65rem;
 	}
-
-	.answer-text strong {
-		color: #fafafa;
-		font-weight: 700;
-	}
+	.answer-text strong { color: #fafafa; font-weight: 700; }
 
 	.answer-cost {
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 		color: #a1a1aa;
 		margin: 0;
 		font-family: 'JetBrains Mono', monospace;
 	}
-
-	.answer-cost strong {
-		color: #10b981;
-		font-weight: 700;
-	}
+	.answer-cost strong { color: #10b981; font-weight: 700; }
 
 	.hero-actions {
 		display: flex;
-		gap: 1rem;
-		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 0.75rem;
 	}
 
 	.hero-progress {
 		display: flex;
 		align-items: center;
 		gap: 0.75rem;
-		margin-top: 2rem;
+		margin-top: 1.5rem;
 	}
 
 	.progress-bar-bg {
-		width: 120px;
+		width: 100px;
 		height: 4px;
 		background: rgba(255, 255, 255, 0.08);
 		border-radius: 2px;
@@ -756,19 +789,19 @@
 	}
 
 	.progress-label {
-		font-size: 0.72rem;
+		font-size: 0.7rem;
 		color: #94a3b8;
 		font-family: 'JetBrains Mono', monospace;
 	}
 
-	/* ═══════════════════════════ */
-	/* BUTTONS                    */
-	/* ═══════════════════════════ */
+	/* ── BUTTONS ── */
 	.btn-primary {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 0.5rem;
-		padding: 0.85rem 2rem;
+		padding: 0.9rem 1.5rem;
+		min-height: 48px;
 		border-radius: 8px;
 		font-weight: 700;
 		font-size: 0.9rem;
@@ -776,7 +809,7 @@
 		background: rgba(245, 158, 11, 0.08);
 		color: #f59e0b;
 		border: 1px solid rgba(245, 158, 11, 0.35);
-		transition: all 0.2s ease;
+		transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 		cursor: pointer;
 	}
 
@@ -788,10 +821,12 @@
 	}
 
 	.btn-secondary {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 0.5rem;
-		padding: 0.85rem 2rem;
+		padding: 0.9rem 1.5rem;
+		min-height: 48px;
 		border-radius: 8px;
 		font-weight: 600;
 		font-size: 0.9rem;
@@ -799,7 +834,7 @@
 		background: transparent;
 		color: #a1a1aa;
 		border: 1px solid rgba(255, 255, 255, 0.08);
-		transition: all 0.2s ease;
+		transition: color 0.2s ease, border-color 0.2s ease;
 		cursor: pointer;
 	}
 
@@ -808,21 +843,12 @@
 		border-color: rgba(255, 255, 255, 0.2);
 	}
 
-	.btn-large {
-		padding: 1rem 2.5rem;
-		font-size: 1rem;
-	}
+	.btn-large { padding: 1rem 2rem; font-size: 1rem; min-height: 52px; }
 
-	/* ═══════════════════════════ */
-	/* SECTIONS                   */
-	/* ═══════════════════════════ */
+	/* ── SECTIONS ── */
 	.section {
-		padding: 5rem 1.5rem;
+		padding: 2.5rem 1rem;
 		border-top: 1px solid rgba(255, 255, 255, 0.03);
-	}
-
-	.section-dark {
-		background: rgba(255, 255, 255, 0.01);
 	}
 
 	.section-emphasis {
@@ -830,61 +856,143 @@
 		border-top: 1px solid rgba(245, 158, 11, 0.08);
 	}
 
+	.section-timeline {
+		background: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, transparent 100%);
+		border-top: 1px solid rgba(59, 130, 246, 0.06);
+	}
+
+	.section-cta {
+		padding: 3rem 1rem;
+		border-top: 1px solid rgba(239, 68, 68, 0.08);
+	}
+
 	.section-inner {
 		max-width: 960px;
 		margin: 0 auto;
+		width: 100%;
 	}
 
 	.section-header-row {
 		display: flex;
-		gap: 1.25rem;
-		align-items: flex-start;
-		margin-bottom: 2.5rem;
+		flex-direction: column;
+		gap: 0.25rem;
+		margin-bottom: 2rem;
 	}
 
 	.section-number {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 		font-weight: 800;
 		color: #f59e0b;
 		font-family: 'JetBrains Mono', monospace;
-		min-width: 30px;
-		padding-top: 0.15rem;
 		opacity: 0.7;
+		margin-bottom: 0.25rem;
 	}
 
 	.section-title {
-		font-size: clamp(1.4rem, 3.5vw, 2rem);
+		font-size: clamp(1.3rem, 4vw, 2rem);
 		font-weight: 800;
 		color: #fafafa;
-		margin: 0 0 0.4rem 0;
+		margin: 0 0 0.35rem;
 		letter-spacing: -0.03em;
 	}
 
 	.section-desc {
 		color: #71717a;
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 		line-height: 1.6;
 		margin: 0;
 		max-width: 600px;
 	}
 
-	/* ═══════════════════════════ */
-	/* STATS                      */
-	/* ═══════════════════════════ */
+	/* ── THREE PILLARS ── */
+	.pillars-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+	}
+
+	.pillar-card {
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+		padding: 1.5rem;
+		border-radius: 12px;
+		text-decoration: none;
+		border: 1px solid rgba(255, 255, 255, 0.05);
+		background: rgba(255, 255, 255, 0.02);
+		transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+		min-height: 44px;
+	}
+
+	.pillar-card:hover {
+		transform: translateY(-2px);
+	}
+
+	.pillar-amber { border-color: rgba(245, 158, 11, 0.12); }
+	.pillar-amber:hover { border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.03); }
+
+	.pillar-blue { border-color: rgba(59, 130, 246, 0.12); }
+	.pillar-blue:hover { border-color: rgba(59, 130, 246, 0.3); background: rgba(59, 130, 246, 0.03); }
+
+	.pillar-green { border-color: rgba(16, 185, 129, 0.12); }
+	.pillar-green:hover { border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.03); }
+
+	.pillar-num {
+		font-size: 0.65rem;
+		font-weight: 800;
+		font-family: 'JetBrains Mono', monospace;
+		letter-spacing: 0.1em;
+		opacity: 0.5;
+	}
+
+	.pillar-amber .pillar-num { color: #f59e0b; }
+	.pillar-blue .pillar-num { color: #3b82f6; }
+	.pillar-green .pillar-num { color: #10b981; }
+
+	.pillar-label {
+		font-size: 1rem;
+		font-weight: 700;
+		color: #fafafa;
+		margin: 0;
+		letter-spacing: -0.01em;
+	}
+
+	.pillar-body {
+		font-size: 0.88rem;
+		color: #71717a;
+		line-height: 1.65;
+		margin: 0;
+		flex: 1;
+	}
+
+	.pillar-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		font-size: 0.78rem;
+		font-weight: 600;
+		margin-top: 0.25rem;
+	}
+
+	.pillar-amber .pillar-link { color: #f59e0b; }
+	.pillar-blue .pillar-link { color: #3b82f6; }
+	.pillar-green .pillar-link { color: #10b981; }
+
+	/* ── STATS ── */
 	.stats-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 0.75rem;
-		margin-bottom: 2.5rem;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.6rem;
+		margin-bottom: 2rem;
 	}
 
 	.stat-card {
 		position: relative;
-		padding: 1.5rem;
+		padding: 1.25rem;
 		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
-		gap: 0.4rem;
+		gap: 0.35rem;
 		border: 1px solid rgba(255, 255, 255, 0.04);
 		background: rgba(255, 255, 255, 0.02);
 	}
@@ -897,156 +1005,123 @@
 		transition: opacity 0.5s ease 0.25s;
 		color: rgba(255, 255, 255, 0.4);
 	}
-
 	.card-corner path {
 		stroke-dasharray: 24;
 		stroke-dashoffset: 24;
 		transition: stroke-dashoffset 0.8s ease 0.4s;
 	}
-
 	.stat-card:global(.stagger-in) .card-corner { opacity: 0.7; }
 	.stat-card:global(.stagger-in) .card-corner path { stroke-dashoffset: 0; }
 
 	.stat-danger .card-corner { color: #ef4444; }
 	.stat-success .card-corner { color: #10b981; }
-
-	.stat-danger {
-		border-color: rgba(239, 68, 68, 0.1);
-	}
-
-	.stat-success {
-		border-color: rgba(16, 185, 129, 0.12);
-	}
+	.stat-danger { border-color: rgba(239, 68, 68, 0.1); }
+	.stat-success { border-color: rgba(16, 185, 129, 0.12); }
 
 	.stat-number {
-		font-size: 1.8rem;
+		font-size: clamp(1.3rem, 4vw, 1.8rem);
 		font-weight: 800;
 		font-family: 'JetBrains Mono', monospace;
 		letter-spacing: -0.02em;
 	}
-
 	.stat-danger .stat-number { color: #ef4444; }
 	.stat-success .stat-number { color: #10b981; }
 
 	.stat-label {
-		font-size: 0.78rem;
+		font-size: 0.72rem;
 		color: #94a3b8;
 		line-height: 1.4;
 	}
 
 	.stat-source {
 		display: inline-block;
-		margin-top: 0.4rem;
-		font-size: 0.62rem;
-		color: #94a3b8;
+		margin-top: 0.3rem;
+		font-size: 0.6rem;
+		color: #64748b;
 		text-decoration: underline;
 		text-underline-offset: 2px;
 		font-family: 'JetBrains Mono', monospace;
-		letter-spacing: 0.02em;
 	}
-	.stat-source:hover { color: #94a3b8; }
 
-	/* ═══════════════════════════ */
-	/* SITUATION                  */
-	/* ═══════════════════════════ */
-	.situation-block {
-		max-width: 700px;
-		margin-bottom: 2rem;
-	}
+	/* ── SITUATION ── */
+	.situation-block { max-width: 700px; margin-bottom: 2rem; }
 
 	.situation-block p {
 		color: #a1a1aa;
-		font-size: 1rem;
+		font-size: 0.95rem;
 		line-height: 1.8;
-		margin: 0 0 1rem 0;
+		margin: 0 0 1rem;
 	}
 
-	.situation-block strong {
-		color: #fafafa;
-		font-weight: 600;
-	}
-
-	.situation-block em {
-		color: #ef4444;
-		font-style: italic;
-	}
+	.situation-block strong { color: #fafafa; font-weight: 600; }
 
 	.situation-punchline {
-		font-size: 1.15rem !important;
-		font-weight: 700 !important;
-		color: #fafafa !important;
-		margin-top: 1.5rem !important;
+		font-size: 1.05rem;
+		font-weight: 700;
+		color: #fafafa;
+		margin-top: 1.25rem;
 	}
 
-	/* ═══════════════════════════ */
-	/* THE PLAN STATEMENT         */
-	/* ═══════════════════════════ */
+	/* ── PLAN STATEMENT ── */
 	.plan-preflight {
 		max-width: 720px;
-		margin: 0 0 2rem 0;
-		padding: 1.1rem 1.25rem;
+		margin: 0 0 1.75rem;
+		padding: 1rem;
 		background: rgba(127, 29, 29, 0.18);
 		border: 1px solid rgba(248, 113, 113, 0.35);
 		border-radius: 10px;
 	}
+
 	.plan-preflight-title {
 		font-family: 'JetBrains Mono', monospace;
-		font-size: 0.78rem;
+		font-size: 0.75rem;
 		font-weight: 700;
 		color: #fecaca;
-		margin: 0 0 0.55rem 0;
+		margin: 0 0 0.5rem;
 		letter-spacing: 0.04em;
 	}
+
 	.plan-preflight-body {
-		font-size: 0.9rem;
+		font-size: 0.88rem;
 		color: #fecaca;
 		line-height: 1.7;
 		margin: 0;
 	}
 	.plan-preflight-body strong { color: #fef2f2; }
 
-	.plan-statement {
-		max-width: 700px;
-	}
+	.plan-statement { max-width: 700px; }
 
 	.plan-headline {
-		font-size: clamp(1.5rem, 4vw, 2.2rem);
+		font-size: clamp(1.3rem, 4vw, 2.2rem);
 		font-weight: 900;
 		color: #fafafa;
-		margin: 0 0 1rem 0;
+		margin: 0 0 0.75rem;
 		letter-spacing: -0.03em;
 		line-height: 1.2;
 	}
 
 	.plan-sub {
-		font-size: 1.05rem;
+		font-size: 1rem;
 		color: #71717a;
 		line-height: 1.75;
 		margin: 0;
 	}
+	.plan-sub em { color: #f59e0b; font-style: italic; font-weight: 600; }
 
-	.plan-sub em {
-		color: #f59e0b;
-		font-style: italic;
-		font-weight: 600;
-	}
-
-	/* ═══════════════════════════ */
-	/* 4 STEPS                    */
-	/* ═══════════════════════════ */
+	/* ── 4 STEPS ── */
 	.steps-grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
-		margin-bottom: 3rem;
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+		margin-bottom: 2.5rem;
 	}
 
 	.step-card {
-		padding: 2rem;
+		padding: 1.5rem;
 		background: rgba(255, 255, 255, 0.02);
 		border: 1px solid rgba(255, 255, 255, 0.04);
 		border-radius: 12px;
-		transition: all 0.25s ease;
+		transition: border-color 0.25s ease, background 0.25s ease;
 	}
 
 	.step-card:hover {
@@ -1058,28 +1133,24 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin-bottom: 1rem;
+		margin-bottom: 0.85rem;
 	}
 
 	.step-num {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-weight: 900;
-		color: #27272a;
+		color: rgba(245, 158, 11, 0.5);
 		font-family: 'JetBrains Mono', monospace;
 		line-height: 1;
+		transition: color 0.2s ease;
 	}
+	.step-card:hover .step-num { color: #f59e0b; }
 
-	.step-card:hover .step-num {
-		color: rgba(245, 158, 11, 0.2);
-	}
-
-	.step-cost {
-		text-align: right;
-	}
+	.step-cost { text-align: right; }
 
 	.cost-label {
 		display: block;
-		font-size: 0.6rem;
+		font-size: 0.58rem;
 		color: #94a3b8;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
@@ -1088,43 +1159,39 @@
 
 	.cost-value {
 		display: block;
-		font-size: 0.9rem;
+		font-size: 0.88rem;
 		font-weight: 700;
 		color: #10b981;
 		font-family: 'JetBrains Mono', monospace;
 	}
 
 	.step-title {
-		font-size: 1.15rem;
+		font-size: 1.05rem;
 		font-weight: 700;
 		color: #fafafa;
-		margin: 0 0 0.75rem 0;
+		margin: 0 0 0.65rem;
 		letter-spacing: -0.01em;
 	}
 
 	.step-body {
-		font-size: 0.88rem;
+		font-size: 0.85rem;
 		color: #71717a;
 		line-height: 1.7;
-		margin: 0 0 1rem 0;
+		margin: 0 0 0.85rem;
 	}
-
-	.step-body strong {
-		color: #d4d4d8;
-		font-weight: 600;
-	}
+	.step-body strong { color: #d4d4d8; font-weight: 600; }
 
 	.step-tags {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.4rem;
-		margin-bottom: 1rem;
+		gap: 0.35rem;
+		margin-bottom: 0.85rem;
 	}
 
 	.step-tag {
-		font-size: 0.65rem;
+		font-size: 0.62rem;
 		font-weight: 600;
-		padding: 0.2rem 0.5rem;
+		padding: 0.2rem 0.45rem;
 		border-radius: 4px;
 		background: rgba(245, 158, 11, 0.06);
 		color: #a1a1aa;
@@ -1133,48 +1200,42 @@
 	}
 
 	.step-link {
-		font-size: 0.82rem;
+		font-size: 0.8rem;
 		font-weight: 600;
 		color: #f59e0b;
 		text-decoration: none;
 		transition: opacity 0.2s;
 	}
+	.step-link:hover { opacity: 0.8; }
 
-	.step-link:hover {
-		opacity: 0.8;
-	}
-
-	/* Steps total */
 	.steps-total {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 1.5rem;
+		gap: 0.75rem;
 	}
 
 	.total-line {
-		flex: 1;
+		width: 60px;
 		height: 1px;
 		background: rgba(255, 255, 255, 0.06);
 	}
 
-	.total-content {
-		text-align: center;
-		flex-shrink: 0;
-	}
+	.total-content { text-align: center; }
 
 	.total-label {
 		display: block;
-		font-size: 0.6rem;
+		font-size: 0.58rem;
 		color: #94a3b8;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
 		font-weight: 600;
-		margin-bottom: 0.3rem;
+		margin-bottom: 0.25rem;
 	}
 
 	.total-range {
 		display: block;
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		font-weight: 900;
 		color: #10b981;
 		font-family: 'JetBrains Mono', monospace;
@@ -1183,52 +1244,114 @@
 
 	.total-compare {
 		display: block;
-		font-size: 0.72rem;
+		font-size: 0.7rem;
 		color: #94a3b8;
 		margin-top: 0.2rem;
 	}
 
-	/* ═══════════════════════════ */
-	/* BLUEPRINT CONJECTURE       */
-	/* ═══════════════════════════ */
+	/* ── TIMELINE ── */
+	.timeline-track {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.timeline-item {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.timeline-connector {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-shrink: 0;
+		padding-top: 0.2rem;
+	}
+
+	.timeline-dot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #3b82f6;
+		border: 2px solid rgba(59, 130, 246, 0.3);
+		flex-shrink: 0;
+		box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+	}
+
+	.timeline-line {
+		width: 1px;
+		flex: 1;
+		background: rgba(59, 130, 246, 0.15);
+		margin-top: 4px;
+		min-height: 2rem;
+	}
+
+	.timeline-body {
+		padding-bottom: 2rem;
+		flex: 1;
+	}
+
+	.timeline-period {
+		display: inline-block;
+		font-size: 0.65rem;
+		font-weight: 700;
+		font-family: 'JetBrains Mono', monospace;
+		color: #3b82f6;
+		letter-spacing: 0.06em;
+		margin-bottom: 0.35rem;
+		padding: 0.15rem 0.5rem;
+		background: rgba(59, 130, 246, 0.08);
+		border: 1px solid rgba(59, 130, 246, 0.15);
+		border-radius: 4px;
+	}
+
+	.timeline-label {
+		font-size: 1rem;
+		font-weight: 700;
+		color: #fafafa;
+		margin: 0 0 0.4rem;
+		letter-spacing: -0.01em;
+	}
+
+	.timeline-desc {
+		font-size: 0.85rem;
+		color: #71717a;
+		line-height: 1.65;
+		margin: 0;
+	}
+
+	/* ── BLUEPRINT CONJECTURE ── */
 	.blueprint-conjecture-notice {
 		display: flex;
 		gap: 0.75rem;
 		align-items: flex-start;
-		padding: 0.9rem 1.1rem;
+		padding: 0.85rem 1rem;
 		background: rgba(148, 163, 184, 0.04);
 		border: 1px solid rgba(148, 163, 184, 0.1);
 		border-radius: 8px;
 		margin-bottom: 1.25rem;
 	}
-	.blueprint-conjecture-notice svg {
-		flex-shrink: 0;
-		margin-top: 0.15rem;
-	}
+	.blueprint-conjecture-notice svg { flex-shrink: 0; margin-top: 0.15rem; }
 	.blueprint-conjecture-notice p {
-		font-size: 0.78rem;
+		font-size: 0.75rem;
 		color: #64748b;
 		line-height: 1.6;
 		margin: 0;
 	}
-	.blueprint-conjecture-notice strong {
-		color: #94a3b8;
-		font-weight: 600;
-	}
+	.blueprint-conjecture-notice strong { color: #94a3b8; font-weight: 600; }
 
-	/* ═══════════════════════════ */
-	/* CHAPTERS LIST              */
-	/* ═══════════════════════════ */
+	/* ── CHAPTERS PROGRESS ── */
 	.chapters-progress {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1.25rem;
 	}
 
 	.cp-bar-bg {
 		flex: 1;
-		max-width: 200px;
+		max-width: 160px;
 		height: 3px;
 		background: rgba(255, 255, 255, 0.06);
 		border-radius: 2px;
@@ -1243,27 +1366,28 @@
 	}
 
 	.cp-text {
-		font-size: 0.72rem;
+		font-size: 0.7rem;
 		color: #94a3b8;
 		font-family: 'JetBrains Mono', monospace;
 	}
 
+	/* ── CHAPTERS LIST ── */
 	.chapters-list {
 		display: flex;
 		flex-direction: column;
-		gap: 0.4rem;
+		gap: 0.35rem;
 	}
 
 	.chapter-row {
 		display: flex;
 		align-items: center;
-		gap: 1rem;
-		padding: 1rem 1.25rem;
+		gap: 0.85rem;
+		padding: 0.85rem 1rem;
+		min-height: 52px;
 		border: 1px solid rgba(255, 255, 255, 0.03);
 		border-radius: 10px;
 		text-decoration: none;
-		transition: all 0.2s ease;
-		background: transparent;
+		transition: border-color 0.2s ease, background 0.2s ease;
 	}
 
 	.chapter-row:hover {
@@ -1271,9 +1395,7 @@
 		background: rgba(255, 255, 255, 0.015);
 	}
 
-	.chapter-done {
-		border-color: rgba(16, 185, 129, 0.1);
-	}
+	.chapter-done { border-color: rgba(16, 185, 129, 0.1); }
 
 	.chapter-num-box {
 		width: 32px;
@@ -1284,7 +1406,7 @@
 		border-radius: 8px;
 		background: rgba(255, 255, 255, 0.03);
 		border: 1px solid rgba(255, 255, 255, 0.05);
-		font-size: 0.72rem;
+		font-size: 0.7rem;
 		font-weight: 700;
 		color: #94a3b8;
 		font-family: 'JetBrains Mono', monospace;
@@ -1297,168 +1419,172 @@
 		color: #10b981;
 	}
 
-	.chapter-info {
-		flex: 1;
-		min-width: 0;
-	}
+	.chapter-info { flex: 1; min-width: 0; }
 
 	.chapter-title {
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 		font-weight: 600;
 		color: #d4d4d8;
-		margin: 0 0 0.15rem 0;
+		margin: 0 0 0.1rem;
 	}
 
 	.chapter-desc {
-		font-size: 0.78rem;
+		font-size: 0.75rem;
 		color: #94a3b8;
 		margin: 0;
 		line-height: 1.3;
-		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	.chapter-arrow {
-		color: #27272a;
+		color: #94a3b8;
 		flex-shrink: 0;
-		transition: all 0.2s;
+		transition: color 0.2s ease, transform 0.2s ease;
 	}
+	.chapter-row:hover .chapter-arrow { color: #f59e0b; transform: translateX(3px); }
 
-	.chapter-row:hover .chapter-arrow {
-		color: #f59e0b;
-		transform: translateX(3px);
-	}
-
-	/* ═══════════════════════════ */
-	/* CTA                        */
-	/* ═══════════════════════════ */
-	.section-cta {
-		padding: 6rem 1.5rem;
-		border-top: 1px solid rgba(239, 68, 68, 0.08);
-	}
-
+	/* ── CTA ── */
 	.cta-inner {
 		text-align: center;
 		max-width: 700px;
+		margin: 0 auto;
 		position: relative;
 	}
 
 	.cta-border {
-		width: 40px;
+		width: 36px;
 		height: 2px;
 		background: #ef4444;
-		margin: 0 auto 1.5rem;
+		margin: 0 auto 1.25rem;
 	}
 
 	.cta-eyebrow {
-		font-size: 0.65rem;
+		font-size: 0.62rem;
 		font-weight: 700;
 		color: #ef4444;
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
 		font-family: 'JetBrains Mono', monospace;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 1.25rem;
 	}
 
 	.cta-title {
-		font-size: clamp(1.3rem, 3vw, 1.8rem);
+		font-size: clamp(1.15rem, 3.5vw, 1.75rem);
 		font-weight: 700;
 		color: #d4d4d8;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 1.25rem;
 		letter-spacing: -0.02em;
 		line-height: 1.5;
 	}
 
+	.cta-break { display: none; }
+
 	.cta-body {
 		color: #94a3b8;
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 		line-height: 1.7;
-		margin: 0 0 2.5rem 0;
+		margin: 0 0 2rem;
 	}
 
 	.cta-actions {
 		display: flex;
-		gap: 1rem;
-		justify-content: center;
-		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 0.75rem;
+		align-items: stretch;
 	}
 
 	.cta-newsletter {
-		margin-top: 3rem;
+		margin-top: 2.5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
 	.cta-newsletter-label {
-		font-size: 0.8rem;
+		font-size: 0.78rem;
 		color: #94a3b8;
-		margin: 0 0 0.75rem 0;
+		margin: 0 0 0.75rem;
 	}
 
-	/* ═══════════════════════════ */
-	/* RESPONSIVE                 */
-	/* ═══════════════════════════ */
-	@media (max-width: 768px) {
-		.hero {
-			min-height: auto;
-			padding: 4rem 1.25rem 3rem;
-		}
+	/* ══════════════════════════════════════════════════════
+	   TABLET — 480px+
+	   ══════════════════════════════════════════════════════ */
+	@media (min-width: 480px) {
+		.hero { padding: 4rem 1.25rem 3rem; }
+		.section { padding: 3rem 1.25rem; }
+		.section-cta { padding: 3.5rem 1.25rem; }
 
-		.hero-actions,
-		.cta-actions {
-			flex-direction: column;
-			align-items: stretch;
-		}
+		.hero-answer { flex-direction: row; gap: 1rem; }
+		.answer-bar { width: 3px; height: auto; }
 
-		.btn-primary, .btn-secondary {
-			justify-content: center;
+		.hero-actions {
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
+		.btn-primary, .btn-secondary { flex: 1; min-width: 0; }
 
-		.section {
-			padding: 3.5rem 1rem;
-		}
+		.steps-grid { grid-template-columns: 1fr; }
+		.steps-total { flex-direction: row; }
+		.total-line { flex: 1; width: auto; }
+	}
+
+	/* ══════════════════════════════════════════════════════
+	   TABLET — 640px+
+	   ══════════════════════════════════════════════════════ */
+	@media (min-width: 640px) {
+		.hero { padding: 5rem 1.5rem 3.5rem; }
+		.section { padding: 3.5rem 1.5rem; }
+		.section-cta { padding: 4.5rem 1.5rem; }
 
 		.section-header-row {
-			flex-direction: column;
-			gap: 0;
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 1.25rem;
 		}
 
-		.section-number {
-			margin-bottom: 0.5rem;
-		}
+		.section-number { padding-top: 0.15rem; min-width: 30px; }
 
-		.steps-grid {
-			grid-template-columns: 1fr;
-		}
+		.hero-actions { flex-direction: row; flex-wrap: wrap; }
+		.btn-primary, .btn-secondary { flex: 0 1 auto; }
 
-		.step-card {
-			padding: 1.5rem;
-		}
+		.pillars-grid { grid-template-columns: 1fr; }
+
+		.stats-grid { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+
+		.steps-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+		.steps-total { flex-direction: row; }
+		.total-line { flex: 1; width: auto; }
+
+		.cta-break { display: inline; }
+		.cta-actions { flex-direction: row; justify-content: center; align-items: center; }
+		.book-banner-wrap { padding: 2rem 1.5rem 0; }
 	}
 
-	@media (max-width: 480px) {
-		.hero {
-			padding: 3rem 1rem 2.5rem;
-		}
+	/* ══════════════════════════════════════════════════════
+	   DESKTOP — 1024px+
+	   ══════════════════════════════════════════════════════ */
+	@media (min-width: 1024px) {
+		.hero { padding: 7rem 2rem 5rem; min-height: 90vh; }
+		.hero-grid { background-size: 80px 80px; }
+		.hero-glow { width: 800px; height: 800px; top: -300px; right: -200px; }
 
-		.stats-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
+		.section { padding: 5rem 1.5rem; }
+		.section-cta { padding: 6rem 1.5rem; }
 
-		.section {
-			padding: 3rem 0.75rem;
-		}
+		.pillars-grid { grid-template-columns: repeat(3, 1fr); }
 
-		.steps-total {
-			flex-direction: column;
-			gap: 0.75rem;
-		}
+		.stats-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
-		.total-line {
-			width: 60px;
-			height: 1px;
-		}
+		.chapter-desc { white-space: nowrap; }
+	}
+
+	/* ── REDUCED MOTION ── */
+	@media (prefers-reduced-motion: reduce) {
+		.hero-glow,
+		.radar-core,
+		.radar-ring-1,
+		.radar-ring-2 { animation: none; }
 	}
 </style>

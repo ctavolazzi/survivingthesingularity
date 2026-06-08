@@ -321,12 +321,7 @@
 				</div>
 			</div>
 
-			<div class="plan-preflight">
-				<p class="plan-preflight-title">⚠ Before anything else: talk to local professionals.</p>
-				<p class="plan-preflight-body">
-					Every step below depends on jurisdiction, zoning, building code, financing, tax, and personal situation. Before considering any action, talk to <strong>licensed professionals where you live</strong>: a local real-estate attorney, a licensed contractor, an accountant, a financial advisor. They can tell you what is actually possible, legal, safe, and sensible in your area. Reading this site is not a substitute for any of that.
-				</p>
-			</div>
+			<p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
 			<div class="plan-statement">
 				<p class="plan-headline">Adaptability matters more, the faster things change.</p>
@@ -496,10 +491,7 @@
 				</div>
 			{/if}
 
-			<div class="blueprint-conjecture-notice">
-				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#dde4ef" stroke-width="1.2"/><path d="M7 4v3.5M7 9.5v.5" stroke="#dde4ef" stroke-width="1.5" stroke-linecap="round"/></svg>
-				<p>Everything in this blueprint is <strong>conjecture and supposition</strong> based on one person's research. No outcome is promised, projected, or guaranteed. Treat it as material for your own independent evaluation.</p>
-			</div>
+			<p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
 			<div class="chapters-list" use:stagger={{ delay: 60 }}>
 				{#each chapters as chapter}

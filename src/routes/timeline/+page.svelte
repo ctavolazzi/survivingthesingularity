@@ -251,14 +251,7 @@
     </div>
   </div>
 
-  <!-- MASTER DISCLAIMER -->
-  <div class="master-disclaimer">
-    <div class="md-icon">⚠</div>
-    <div class="md-body">
-      <p class="md-title">Read this before proceeding</p>
-      <p>Everything on this page is <strong>conjecture and supposition</strong> based on publicly available research as of mid-2025. Costs, timelines, technology capabilities, and product availability change rapidly and unpredictably. This page does not constitute financial, legal, construction, medical, or professional advice of any kind. No outcome is guaranteed, projected, or implied. All numbers are <strong>illustrative placeholders only</strong>. Consult licensed professionals in your jurisdiction before making any decision. <a href="/disclaimer">Full disclaimer →</a></p>
-    </div>
-  </div>
+  <p class="page-note">All numbers are illustrative. Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
   <!-- SCENARIO BUILDER -->
   <section class="section" id="scenario">
@@ -455,10 +448,7 @@
     </div>
   </section>
 
-  <!-- BOTTOM DISCLAIMER -->
-  <div class="bottom-disclaimer">
-    <p><strong>Remember:</strong> This entire page is one person's conjecture and research synthesis. Not a roadmap. Not a projection. Not advice. Every number is illustrative. Every timeline is a rough thought experiment. Before acting on any of this in the real world, consult licensed professionals (a real-estate attorney, a licensed contractor, an accountant, a financial advisor, a doctor as relevant) who actually know your situation and jurisdiction. <a href="/disclaimer">Full disclaimer →</a></p>
-  </div>
+  <p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
 </div>
 

@@ -252,6 +252,7 @@
 
   .blog-post {
     min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
   }

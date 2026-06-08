@@ -21,8 +21,10 @@ body {
   color: var(--color-text-primary);
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   margin: 0;
   padding: 0;
+  padding-bottom: env(safe-area-inset-bottom);
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -57,6 +59,20 @@ table {
 input, select, textarea {
   max-width: 100%;
 }
+
+/* Small inline disclaimer note — replaces large warning blocks site-wide. */
+.page-note {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+.page-note a {
+  color: #f59e0b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.page-note a:hover { color: #fbbf24; }
 
 /* Shared arrow shimmer used on primary CTAs across components. */
 .shimmer-arrow {

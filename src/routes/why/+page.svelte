@@ -168,9 +168,7 @@
 				Paraphrased summaries below, not direct quotes. Views shown are not unanimous across the field - they are a sample of public statements that have been influential in the discourse.
 			</p>
 
-			<p class="quotes-disclaimer">
-				The cards below are <strong>paraphrased summaries</strong> of publicly-stated positions, not direct quotes. Follow each source link to read the original wording in context.
-			</p>
+			<p class="page-note">Paraphrased from public statements — not direct quotes. Follow source links to read originals. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
 			<div class="quotes-grid" use:stagger={{ delay: 120 }}>
 				{#each voices as person}

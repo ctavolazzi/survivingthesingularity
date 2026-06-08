@@ -182,11 +182,7 @@
     {/if}
   </section>
 
-  <!-- Conjecture / not-advice notice -->
-  <div class="page-disclaimer">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#dde4ef" stroke-width="1.2"/><path d="M7 4v3.5M7 9.5v.5" stroke="#dde4ef" stroke-width="1.5" stroke-linecap="round"/></svg>
-    <p>This page is <strong>commentary and conjecture</strong> synthesized from publicly available information. It is <strong>not financial, career, legal, medical, or preparedness advice</strong>, and nothing here is promised, projected, or guaranteed. Timelines and capabilities are uncertain and contested. Evaluate everything independently and consult qualified professionals before acting. <a href="/disclaimer">Full disclaimer →</a></p>
-  </div>
+  <p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
   <!-- ─── SECTION 1: What is AGI ─── -->
   <section class="section" id="what" use:observe>
@@ -243,7 +239,7 @@
             </div>
           {/each}
         </div>
-        <p class="forecasts-caveat">Paraphrased characterizations as of 2025, not verbatim quotes or endorsements by the named individuals. They are subjective estimates, not forecasts or professional advice, and may misrepresent any person's current view. Verify against primary sources before relying on anything here. <a href="/disclaimer">Full disclaimer →</a></p>
+        <p class="page-note">Paraphrased from public statements — not direct quotes. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
       </div>
     </div>
   </section>
@@ -312,7 +308,7 @@
           <span class="urgency-label">The time to build structural resilience, not after the inflection</span>
         </div>
       </div>
-      <p class="urgency-caveat">Illustrative figures drawn from public statements and reporting as of 2025, rounded and approximate. Not verified totals, forecasts, or advice. <a href="/disclaimer">Full disclaimer →</a></p>
+      <p class="page-note">Illustrative figures only. Do your own research. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
       <!-- Why the timing matters -->
       <div class="timing-prose" use:observe>
@@ -353,10 +349,7 @@
     </div>
   </section>
 
-  <!-- Bottom disclaimer -->
-  <div class="bottom-disclaimer">
-    <p><strong>Remember:</strong> everything above is one author's synthesis and conjecture about an uncertain future. Not a forecast. Not advice of any kind. Expert timelines are contested and frequently wrong. Before making any financial, career, or life decision based on these ideas, consult qualified professionals who know your situation. <a href="/disclaimer">Read the full disclaimer →</a></p>
-  </div>
+  <p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
 </div>
 

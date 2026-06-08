@@ -91,6 +91,7 @@
     background: #020617;
     color: #e2e8f0;
     min-height: 100vh;
+    min-height: 100dvh;
   }
   .policies-inner {
     max-width: 760px;

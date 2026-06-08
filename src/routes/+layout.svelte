@@ -112,6 +112,7 @@
        viewport and lets content reflow. */
     grid-template-columns: minmax(0, 1fr);
     min-height: 100vh;
+    min-height: 100dvh;
   }
 
   /* DisclaimerBanner is fixed-position popup - no grid row needed */

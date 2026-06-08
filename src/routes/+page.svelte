@@ -590,9 +590,8 @@
 	/* ── HERO ── */
 	.hero {
 		position: relative;
-		min-height: 80vh;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		padding: 2rem 1rem 1.5rem;
 		overflow: hidden;
@@ -1504,9 +1503,9 @@
 	   TABLET - 480px+
 	   ══════════════════════════════════════════════════════ */
 	@media (min-width: 480px) {
-		.hero { padding: 4rem 1.25rem 3rem; }
-		.section { padding: 3rem 1.25rem; }
-		.section-cta { padding: 3.5rem 1.25rem; }
+		.hero { padding: 3rem 1.25rem 2rem; }
+		.section { padding: 2.5rem 1.25rem; }
+		.section-cta { padding: 3rem 1.25rem; }
 
 		.hero-answer { flex-direction: row; gap: 1rem; }
 		.answer-bar { width: 3px; height: auto; }
@@ -1526,9 +1525,9 @@
 	   TABLET - 640px+
 	   ══════════════════════════════════════════════════════ */
 	@media (min-width: 640px) {
-		.hero { padding: 5rem 1.5rem 3.5rem; }
-		.section { padding: 3.5rem 1.5rem; }
-		.section-cta { padding: 4.5rem 1.5rem; }
+		.hero { padding: 4rem 1.5rem 3rem; }
+		.section { padding: 3rem 1.5rem; }
+		.section-cta { padding: 4rem 1.5rem; }
 
 		.section-header-row {
 			flex-direction: row;
@@ -1558,18 +1557,31 @@
 	   DESKTOP - 1024px+
 	   ══════════════════════════════════════════════════════ */
 	@media (min-width: 1024px) {
-		.hero { padding: 7rem 2rem 5rem; min-height: 90vh; }
+		.hero { padding: 5rem 2rem 4rem; }
 		.hero-grid { background-size: 80px 80px; }
 		.hero-glow { width: 800px; height: 800px; top: -300px; right: -200px; }
 
-		.section { padding: 5rem 1.5rem; }
-		.section-cta { padding: 6rem 1.5rem; }
+		.section { padding: 4rem 2rem; }
+		.section-countdown { padding: 2rem 2rem 1rem; }
+		.section-cta { padding: 5rem 2rem; }
+
+		.section-inner { max-width: 1100px; }
 
 		.pillars-grid { grid-template-columns: repeat(3, 1fr); }
 
 		.stats-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
+		.steps-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+
 		.chapter-desc { white-space: nowrap; }
+	}
+
+	@media (min-width: 1280px) {
+		.hero { padding: 6rem 3rem 5rem; }
+		.section { padding: 5rem 3rem; }
+		.section-countdown { padding: 2.5rem 3rem 1rem; }
+		.section-cta { padding: 6rem 3rem; }
+		.section-inner { max-width: 1200px; }
 	}
 
 	/* ══════════════════════════════════════════════════════

@@ -99,7 +99,7 @@
     letter-spacing: -0.03em;
   }
   .a-sub {
-    color: #94a3b8;
+    color: #dde4ef;
     margin: 0;
   }
   .a-section { margin-bottom: 2.25rem; }
@@ -110,14 +110,14 @@
     margin: 0 0 0.85rem 0;
   }
   .a-section p {
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.75;
     margin: 0 0 0.9rem 0;
     font-size: 0.94rem;
   }
   .a-section ul { margin: 0 0 1rem 0; padding-left: 1.2rem; }
   .a-section li {
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.7;
     margin-bottom: 0.35rem;
     font-size: 0.94rem;

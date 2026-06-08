@@ -42,8 +42,8 @@
   }
 
   .substack-meta {
-    font-size: 0.72rem;
-    color: #52525b;
+    font-size: 0.82rem;
+    color: #dde4ef;
     margin: 0;
     text-align: center;
   }

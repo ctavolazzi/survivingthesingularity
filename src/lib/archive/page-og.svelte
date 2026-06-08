@@ -219,7 +219,7 @@
     }
 
     :global(.dark) .attribution {
-      color: #9ca3af;
+      color: #e9eef5;
     }
 
     .sample-button-container {

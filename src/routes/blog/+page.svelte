@@ -106,13 +106,13 @@
   }
 
   .blog-label {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #f59e0b;
     margin: 0 0 0.75rem 0;
     font-weight: 600;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .blog-title {
@@ -121,11 +121,12 @@
     color: #f1f5f9;
     margin: 0 0 0.75rem 0;
     letter-spacing: -0.03em;
+    text-wrap: balance;
   }
 
   .blog-subtitle {
     font-size: 1.05rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.7;
     margin: 0;
     max-width: 640px;
@@ -180,7 +181,7 @@
     padding: 0.3rem 0.7rem;
     background: linear-gradient(135deg, #f59e0b, #f97316);
     color: #0f172a;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
     border-radius: 6px;
     text-transform: uppercase;
@@ -198,13 +199,13 @@
     display: flex;
     gap: 0.75rem;
     align-items: center;
-    font-size: 0.78rem;
-    color: #64748b;
+    font-size: 0.86rem;
+    color: #dde4ef;
     margin-bottom: 1rem;
   }
 
   .post-tag {
-    font-size: 0.68rem;
+    font-size: 0.86rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -222,11 +223,12 @@
     margin: 0 0 0.75rem 0;
     line-height: 1.3;
     letter-spacing: -0.02em;
+    text-wrap: balance;
   }
 
   .featured-excerpt {
     font-size: 0.92rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.6;
     margin: 0 0 1.25rem 0;
     display: -webkit-box;
@@ -312,8 +314,8 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    font-size: 0.75rem;
-    color: #94a3b8;
+    font-size: 0.85rem;
+    color: #dde4ef;
     margin-bottom: 0.75rem;
   }
 
@@ -328,7 +330,7 @@
 
   .post-excerpt {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #dde4ef;
     line-height: 1.5;
     margin: 0 0 1rem 0;
     display: -webkit-box;
@@ -345,9 +347,9 @@
   }
 
   .post-read-time {
-    font-size: 0.72rem;
-    color: #94a3b8;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
   }
 
   /* Base: mobile padding */

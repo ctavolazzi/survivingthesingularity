@@ -20,9 +20,6 @@
     audioTitle: ''
   };
 
-  // For debugging
-  console.log('BlogPostTemplate received image:', post.image);
-
   // Options to customize the template
   export let options = {
     showBackButton: true,
@@ -437,7 +434,7 @@
 
   /* Global styles for content */
   :global(.content h2) {
-    color: #ff7708;
+    color: #f59e0b;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -445,7 +442,7 @@
   }
 
   :global(.content h3) {
-    color: #ff7708;
+    color: #f59e0b;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;

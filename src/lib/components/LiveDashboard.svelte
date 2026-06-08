@@ -12,7 +12,7 @@
       display: '$420K (approx.)',
       unit: 'recent quarters',
       trend: 'up',
-      color: '#ef4444',
+      color: '#fb923c',
       sparkline: [330, 365, 405, 440, 460, 430, 420],
       source: 'FRED MSPUS',
       sourceUrl: 'https://fred.stlouisfed.org/series/MSPUS'
@@ -22,7 +22,7 @@
       display: '~23%',
       unit: 'Jan 2020 - Apr 2026',
       trend: 'up',
-      color: '#ef4444',
+      color: '#fb923c',
       sparkline: [0, 1.4, 7.0, 13.5, 16.5, 19.5, 23.0],
       source: 'BLS CPI',
       sourceUrl: 'https://www.bls.gov/cpi/'
@@ -138,29 +138,29 @@
   .dash-info-only {
     margin: 0 0 1.25rem 0;
     padding: 0.75rem 1rem;
-    background: rgba(127, 29, 29, 0.18);
-    border: 1px solid rgba(248, 113, 113, 0.3);
+    background: rgba(120, 53, 15, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.3);
     border-radius: 8px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    color: #fecaca;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
+    /* Proportional + left-aligned: mono centered prose was the least
+       readable block on the page (ragged left edge, fixed-width rhythm). */
+    font-size: 0.8rem;
+    color: #fde9c8;
+    line-height: 1.6;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
   }
 
   .dash-disclaimer {
     margin-top: 1rem;
-    font-size: 0.7rem;
-    color: #475569;
+    font-size: 0.8rem;
+    color: #dde4ef;
     line-height: 1.55;
     font-style: italic;
     max-width: 720px;
   }
 
   .dash-disclaimer a {
-    color: #64748b;
+    color: #dde4ef;
     text-decoration: underline;
     text-underline-offset: 2px;
   }
@@ -204,8 +204,8 @@
   }
 
   .dash-label {
-    font-size: 0.7rem;
-    color: #64748b;
+    font-size: 0.8rem;
+    color: #dde4ef;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -220,17 +220,17 @@
     border-radius: 6px;
   }
 
-  .dash-trend-up { color: #ef4444; background: rgba(239, 68, 68, 0.1); }
+  .dash-trend-up { color: #fb923c; background: rgba(245, 158, 11, 0.1); }
   .dash-trend-down { color: #10b981; background: rgba(16, 185, 129, 0.1); }
-  .dash-trend-stable { color: #64748b; background: rgba(100, 116, 139, 0.1); }
+  .dash-trend-stable { color: #dde4ef; background: rgba(100, 116, 139, 0.1); }
 
   /* Override: for metrics where down is bad (purchasing power) */
-  .dash-card:first-child .dash-trend-down { color: #ef4444; background: rgba(239, 68, 68, 0.1); }
+  .dash-card:first-child .dash-trend-down { color: #fb923c; background: rgba(245, 158, 11, 0.1); }
 
   .dash-value {
     font-size: 1.5rem;
     font-weight: 800;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
   }
@@ -242,8 +242,8 @@
   }
 
   .dash-unit {
-    font-size: 0.62rem;
-    color: #475569;
+    font-size: 0.82rem;
+    color: #dde4ef;
     font-weight: 500;
   }
 
@@ -255,14 +255,14 @@
   .dash-source {
     display: inline-block;
     margin-top: 0.55rem;
-    font-size: 0.62rem;
-    color: #475569;
+    font-size: 0.82rem;
+    color: #dde4ef;
     text-decoration: underline;
     text-underline-offset: 2px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     letter-spacing: 0.02em;
   }
-  .dash-source:hover { color: #94a3b8; }
+  .dash-source:hover { color: #dde4ef; }
 
   .dash-footer {
     display: flex;
@@ -286,12 +286,12 @@
   }
 
   .dash-live {
-    font-size: 0.65rem;
-    color: #334155;
+    font-size: 0.76rem;
+    color: #dde4ef;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 600;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   @media (max-width: 768px) {

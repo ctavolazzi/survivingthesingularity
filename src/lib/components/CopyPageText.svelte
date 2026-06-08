@@ -97,10 +97,10 @@
     background: rgba(15, 23, 42, 0.92);
     border: 1px solid rgba(148, 163, 184, 0.12);
     border-radius: 10px;
-    color: #64748b;
+    color: #dde4ef;
     cursor: pointer;
     font-family: 'JetBrains Mono', 'SF Mono', monospace;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     font-weight: 600;
     z-index: 90;
     transition: all 0.2s;

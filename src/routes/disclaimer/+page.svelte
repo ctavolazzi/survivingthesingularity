@@ -234,23 +234,23 @@
   .dpg-header {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(248, 113, 113, 0.15);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.15);
   }
 
   .dpg-classification {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     font-weight: 700;
-    color: #f87171;
+    color: #fbbf24;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     margin-bottom: 1.5rem;
     padding: 0.4rem 0.8rem;
-    background: rgba(248, 113, 113, 0.06);
-    border: 1px solid rgba(248, 113, 113, 0.18);
+    background: rgba(245, 158, 11, 0.06);
+    border: 1px solid rgba(245, 158, 11, 0.18);
     border-radius: 6px;
   }
 
@@ -265,7 +265,7 @@
 
   .dpg-sub {
     font-size: 0.95rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.7;
     margin: 0;
   }
@@ -274,26 +274,26 @@
     padding: 1.5rem 1.75rem;
     border-radius: 12px;
     margin-bottom: 2.5rem;
-    background: rgba(127, 29, 29, 0.18);
-    border: 1px solid rgba(248, 113, 113, 0.35);
+    background: rgba(120, 53, 15, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.35);
   }
 
   .dpg-callout-major h2 {
-    color: #fef2f2;
+    color: #fdf6ec;
     font-size: 1.25rem;
     margin: 0 0 0.75rem 0;
     letter-spacing: -0.02em;
   }
 
   .dpg-callout-major p {
-    color: #fecaca;
+    color: #fde9c8;
     margin: 0;
     font-size: 0.98rem;
     line-height: 1.75;
   }
 
   .dpg-callout-major strong {
-    color: #fef2f2;
+    color: #fdf6ec;
   }
 
   .dpg-section {
@@ -309,7 +309,7 @@
   }
 
   .dpg-section p {
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.8;
     margin: 0 0 1rem 0;
     font-size: 0.95rem;
@@ -321,7 +321,7 @@
   }
 
   .dpg-section li {
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.75;
     margin-bottom: 0.35rem;
     font-size: 0.95rem;
@@ -360,7 +360,7 @@
 
   .dpg-foot-meta {
     font-size: 0.82rem !important;
-    color: #94a3b8 !important;
+    color: #dde4ef !important;
   }
 
   .dpg-foot-meta a {

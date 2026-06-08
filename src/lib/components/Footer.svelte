@@ -102,7 +102,7 @@
     font-weight: 800;
     color: #f59e0b;
     letter-spacing: 0.08em;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .footer-brand-name {
@@ -113,7 +113,7 @@
 
   .footer-tagline {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #dde4ef;
     line-height: 1.6;
     margin: 0;
   }
@@ -130,17 +130,17 @@
   }
 
   .footer-col-title {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #475569;
+    color: #dde4ef;
     margin: 0 0 0.25rem 0;
   }
 
   .footer-link {
     font-size: 0.85rem;
-    color: #94a3b8;
+    color: #dde4ef;
     text-decoration: none;
     transition: color 0.2s;
     padding: 0.15rem 0;
@@ -173,25 +173,25 @@
     max-width: 720px;
     margin: 0 auto 1.25rem;
     padding: 1rem 1.25rem;
-    background: rgba(127, 29, 29, 0.12);
-    border: 1px solid rgba(248, 113, 113, 0.25);
+    background: rgba(120, 53, 15, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.25);
     border-radius: 10px;
     text-align: left;
   }
 
   .footer-disclaimer-title {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 700;
-    color: #fca5a5;
+    color: #fcd34d;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin: 0 0 0.5rem 0;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .footer-disclaimer {
-    font-size: 0.78rem;
-    color: #cbd5e1;
+    font-size: 0.86rem;
+    color: #e9eef5;
     line-height: 1.65;
     margin: 0;
   }
@@ -215,8 +215,8 @@
     background: rgba(15, 23, 42, 0.5);
     border: 1px solid rgba(148, 163, 184, 0.12);
     border-radius: 8px;
-    font-size: 0.74rem;
-    color: #94a3b8;
+    font-size: 0.82rem;
+    color: #dde4ef;
     line-height: 1.6;
     text-align: left;
   }
@@ -226,8 +226,8 @@
   }
 
   .footer-copyright {
-    font-size: 0.7rem;
-    color: #334155;
+    font-size: 0.8rem;
+    color: #dde4ef;
     margin: 0;
   }
 

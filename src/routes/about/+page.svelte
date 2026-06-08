@@ -90,13 +90,13 @@
   }
 
   .about-label {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #f59e0b;
     margin: 0 0 0.75rem 0;
     font-weight: 600;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .about-title {
@@ -105,11 +105,12 @@
     color: #f1f5f9;
     margin: 0 0 1rem 0;
     letter-spacing: -0.03em;
+    text-wrap: balance;
   }
 
   .about-subtitle {
     font-size: 1.1rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.7;
     margin: 0;
   }
@@ -128,7 +129,7 @@
 
   .about-section p {
     font-size: 1.02rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.8;
     margin: 0 0 1rem 0;
   }
@@ -161,7 +162,7 @@
 
   .provide-item p {
     font-size: 0.88rem;
-    color: #64748b;
+    color: #dde4ef;
     line-height: 1.5;
     margin: 0;
   }
@@ -203,7 +204,7 @@
     align-items: center;
     padding: 0.75rem 1.75rem;
     background: rgba(255, 255, 255, 0.05);
-    color: #cbd5e1;
+    color: #e9eef5;
     font-weight: 600;
     font-size: 0.9rem;
     border-radius: 10px;

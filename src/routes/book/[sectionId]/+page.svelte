@@ -94,8 +94,8 @@
   }
 
   :global(.prose h1) {
-    font-family: 'Orbitron', sans-serif;
-    color: #ff7708;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #f59e0b;
     font-size: 2.25rem; /* Equivalent to text-4xl */
     line-height: 1.2;
     word-wrap: break-word;
@@ -122,7 +122,7 @@
   }
 
   :global(.dark .prose h1) {
-    color: #ff9933;
+    color: #fbbf24;
     text-align: left; /* Add this line to ensure left justification in dark mode */
   }
 
@@ -147,22 +147,22 @@
   }
 
   :global(.prose a) {
-    color: #ff7708;
+    color: #f59e0b;
     text-decoration: none;
     transition: all 0.3s ease;
   }
 
   :global(.prose a:hover) {
-    color: #ff9933;
+    color: #fbbf24;
     text-decoration: underline;
   }
 
   :global(.dark .prose a) {
-    color: #ff9933;
+    color: #fbbf24;
   }
 
   :global(.dark .prose a:hover) {
-    color: #ffb366;
+    color: #fcd34d;
   }
 
   :global(.prose a[href="/book"]) {
@@ -191,18 +191,18 @@
   }
 
   :global(.dark a[href="/book"]) {
-    color: #ff9933;
+    color: #fbbf24;
   }
 
   :global(.dark a[href="/book"]:hover) {
-    color: #ffb366;
+    color: #fcd34d;
   }
 
   .toc-link {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #ff7708;
+    color: #f59e0b;
     text-decoration: none;
     transition: all 0.3s ease;
     padding: 0.5rem 1rem;
@@ -212,8 +212,8 @@
   }
 
   .toc-link:hover {
-    color: #ff9933;
-    background-color: rgba(255, 119, 8, 0.1);
+    color: #fbbf24;
+    background-color: rgba(245, 158, 11, 0.1);
   }
 
   .icon {
@@ -222,12 +222,12 @@
   }
 
   :global(.dark) .toc-link {
-    color: #ff9933;
+    color: #fbbf24;
   }
 
   :global(.dark) .toc-link:hover {
-    color: #ffb366;
-    background-color: rgba(255, 153, 51, 0.1);
+    color: #fcd34d;
+    background-color: rgba(251, 191, 36, 0.1);
   }
 
   .content-wrapper {

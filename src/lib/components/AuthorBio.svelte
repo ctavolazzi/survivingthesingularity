@@ -45,8 +45,8 @@
 
   .eyebrow {
     display: inline-block;
-    font-family: var(--font-mono, 'JetBrains Mono', monospace);
-    font-size: 0.75rem;
+    font-family: var(--font-mono, var(--font-primary));
+    font-size: 0.85rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--color-primary, #f59e0b);
@@ -99,16 +99,16 @@
   .alias {
     font-size: 0.9rem;
     margin: 0 0 1rem;
-    color: var(--color-text-muted, #64748b);
+    color: var(--color-text-muted, #dde4ef);
   }
 
   .alias .mono {
-    font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    font-family: var(--font-mono, var(--font-primary));
     color: var(--color-primary, #f59e0b);
   }
 
   .bio-text p {
-    color: var(--color-text-secondary, #94a3b8);
+    color: var(--color-text-secondary, #dde4ef);
     line-height: 1.7;
     margin: 0 0 1rem;
   }

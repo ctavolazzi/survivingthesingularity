@@ -109,7 +109,7 @@
     letter-spacing: -0.03em;
   }
   .p-sub {
-    color: #94a3b8;
+    color: #dde4ef;
     margin: 0;
   }
   .p-section {
@@ -123,7 +123,7 @@
     letter-spacing: -0.02em;
   }
   .p-section p {
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.75;
     margin: 0 0 0.9rem 0;
     font-size: 0.94rem;

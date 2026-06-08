@@ -68,6 +68,12 @@
   function handleKeydown(e) {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
+    // When the share modal is open, Escape closes it instead of navigating.
+    if (showShareModal && e.key === 'Escape') {
+      dismissShare();
+      return;
+    }
+
     if (e.key === 'ArrowRight' || e.key === 'j') {
       if (next) goto(`/blueprint/${next.slug}`);
     } else if (e.key === 'ArrowLeft' || e.key === 'k') {
@@ -85,7 +91,7 @@
 
   function shareToTwitter() {
     if (!section) return;
-    const text = encodeURIComponent(`Just read "${section.title}" from the YouTube Shouse Blueprint. Building my exit strategy. #SurvivingTheSingularity`);
+    const text = encodeURIComponent(`Just read "${section.title}" from the Surviving the Singularity blueprint. Interesting framework for thinking about material independence. #SurvivingTheSingularity`);
     window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
     showShareModal = false;
   }
@@ -275,6 +281,10 @@
       {/if}
     </nav>
 
+    <p class="endorsement-note">
+      <strong>Figures are approximate and illustrative.</strong> Any statistics, costs, or percentages in this chapter are one author's rough estimates drawn from public reporting and may be out of date or wrong; verify against current primary sources before relying on any of them. Any products, vendors, projects, or services named are referenced for information only: mentioning them is <strong>not an endorsement, recommendation, or affiliation</strong>, and this site receives no compensation for any link. Evaluate fit, safety, cost, and legality for your own situation, and consult qualified licensed professionals before acting.
+    </p>
+
     <div class="keyboard-hint">
       <span><kbd>&larr;</kbd><kbd>&rarr;</kbd> navigate</span>
       <span><kbd>b</kbd> all chapters</span>
@@ -291,8 +301,14 @@
 
 <!-- Share modal -->
 {#if showShareModal}
-  <div class="share-overlay" on:click={dismissShare} transition:fade={{ duration: 200 }}>
-    <div class="share-modal" on:click|stopPropagation in:fly={{ y: 20, duration: 300 }}>
+  <button
+    type="button"
+    class="share-overlay"
+    on:click={dismissShare}
+    aria-label="Close dialog"
+    transition:fade={{ duration: 200 }}
+  ></button>
+  <div class="share-modal" role="dialog" aria-modal="true" aria-label="Share your progress" in:fly={{ y: 20, duration: 300 }}>
       <div class="share-header">
         <span class="share-celebration">Chapter complete!</span>
         <h3 class="share-title">Share Your Progress</h3>
@@ -310,10 +326,21 @@
       </div>
       <button class="share-dismiss" on:click={dismissShare}>Continue reading</button>
     </div>
-  </div>
 {/if}
 
 <style>
+  .endorsement-note {
+    margin: 2.5rem 0 0;
+    padding: 0.85rem 1rem;
+    background: rgba(148, 163, 184, 0.04);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 8px;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: #dde4ef;
+  }
+  .endorsement-note strong { color: #dde4ef; font-weight: 600; }
+
   /* Progress bar */
   .progress-bar-fixed {
     position: fixed;
@@ -348,7 +375,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #64748b;
+    color: #dde4ef;
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 500;
@@ -366,16 +393,16 @@
   }
 
   .reading-time {
-    font-size: 0.75rem;
-    color: #475569;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
   }
 
   .read-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #10b981;
     background: rgba(16, 185, 129, 0.1);
@@ -398,7 +425,7 @@
     border-radius: 8px;
     background: rgba(30, 41, 59, 0.5);
     border: 1px solid rgba(148, 163, 184, 0.08);
-    color: #475569;
+    color: #dde4ef;
     cursor: pointer;
     transition: all 0.2s;
   }
@@ -460,10 +487,10 @@
 
   .section-num {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 700;
     color: #f59e0b;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     letter-spacing: 0.12em;
     text-transform: uppercase;
     margin-bottom: 0.75rem;
@@ -479,7 +506,7 @@
 
   .section-subtitle {
     font-size: 1.1rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.6;
     margin: 0;
   }
@@ -492,7 +519,7 @@
   }
 
   .prose-text {
-    color: #cbd5e1;
+    color: #e9eef5;
     font-size: 1.05rem;
     line-height: 1.85;
     margin: 0;
@@ -552,7 +579,7 @@
     font-size: 1.5rem;
     font-weight: 900;
     color: #f59e0b;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     flex-shrink: 0;
     width: 2.5rem;
     height: 2.5rem;
@@ -572,7 +599,7 @@
 
   .directive-text {
     font-size: 0.95rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.6;
     margin: 0;
   }
@@ -584,7 +611,7 @@
   .table-title {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #94a3b8;
+    color: #dde4ef;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     margin: 0 0 0.75rem 0;
@@ -611,8 +638,8 @@
     padding: 0.85rem 1rem;
     text-align: left;
     font-weight: 600;
-    color: #94a3b8;
-    font-size: 0.72rem;
+    color: #dde4ef;
+    font-size: 0.82rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     border-bottom: 1px solid rgba(148, 163, 184, 0.1);
@@ -622,7 +649,7 @@
   .data-table td {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid rgba(148, 163, 184, 0.04);
-    color: #cbd5e1;
+    color: #e9eef5;
     vertical-align: top;
   }
 
@@ -671,10 +698,10 @@
 
   .nav-label {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #64748b;
+    color: #dde4ef;
     font-weight: 600;
   }
 
@@ -686,7 +713,7 @@
   }
 
   .nav-prev svg, .nav-next svg {
-    color: #475569;
+    color: #dde4ef;
     flex-shrink: 0;
   }
 
@@ -701,8 +728,8 @@
   }
 
   .keyboard-hint span {
-    font-size: 0.7rem;
-    color: #334155;
+    font-size: 0.8rem;
+    color: #dde4ef;
     display: flex;
     align-items: center;
     gap: 0.35rem;
@@ -718,41 +745,48 @@
     border: 1px solid rgba(148, 163, 184, 0.1);
     border-radius: 4px;
     background: rgba(30, 41, 59, 0.3);
-    color: #475569;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.6rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
+    font-size: 0.82rem;
   }
 
   /* Share modal */
   .share-overlay {
     position: fixed;
     inset: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
   }
 
   .share-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
     background: #0f172a;
     border: 1px solid rgba(148, 163, 184, 0.12);
     border-radius: 20px;
     padding: 2rem;
     max-width: 400px;
-    width: 100%;
+    width: calc(100% - 2rem);
     text-align: center;
   }
 
   .share-celebration {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #10b981;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .share-title {
@@ -764,7 +798,7 @@
 
   .share-desc {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #dde4ef;
     margin: 0 0 1.5rem 0;
   }
 
@@ -811,7 +845,7 @@
   .share-dismiss {
     background: none;
     border: none;
-    color: #475569;
+    color: #dde4ef;
     font-size: 0.8rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -820,7 +854,7 @@
   }
 
   .share-dismiss:hover {
-    color: #94a3b8;
+    color: #dde4ef;
   }
 
   /* 404 */
@@ -835,7 +869,7 @@
   }
 
   .not-found p {
-    color: #64748b;
+    color: #dde4ef;
     margin-bottom: 2rem;
   }
 

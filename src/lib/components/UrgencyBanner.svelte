@@ -78,12 +78,12 @@
   }
 
   .banner-label {
-    font-size: 0.65rem;
+    font-size: 0.86rem;
     font-weight: 700;
     color: #f59e0b;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.06em;
+    font-family: var(--font-primary);
   }
 
   .banner-countdown {
@@ -103,7 +103,7 @@
     font-size: 1.1rem;
     font-weight: 800;
     color: #fafafa;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     letter-spacing: -0.02em;
     line-height: 1;
   }
@@ -113,8 +113,8 @@
   }
 
   .count-unit {
-    font-size: 0.5rem;
-    color: #525252;
+    font-size: 0.82rem;
+    color: #dde4ef;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 600;
@@ -124,7 +124,7 @@
     color: #404040;
     font-size: 1rem;
     font-weight: 700;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     margin-top: -0.6rem;
   }
 
@@ -135,14 +135,14 @@
   }
 
   .banner-note {
-    font-size: 0.6rem;
-    color: #525252;
+    font-size: 0.82rem;
+    color: #dde4ef;
     font-weight: 500;
     white-space: nowrap;
   }
 
   .banner-arrow {
-    color: #525252;
+    color: #dde4ef;
     flex-shrink: 0;
     transition: transform 0.2s, color 0.2s;
   }
@@ -153,10 +153,10 @@
   }
 
   .banner-expired {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #f59e0b;
     font-weight: 700;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     letter-spacing: 0.04em;
   }
 

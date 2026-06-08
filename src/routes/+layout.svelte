@@ -9,8 +9,15 @@
   import { createRabbit } from '$lib/debug/white-rabbit.js';
   import { browser, dev } from '$app/environment';
   import { afterNavigate, beforeNavigate } from '$app/navigation';
+  import { page } from '$app/stores';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
+
+  // Self-referential canonical URL for every page. Strips query/hash and any
+  // trailing slash so duplicate-content variants resolve to one canonical.
+  const SITE = 'https://survivingthesingularity.com';
+  $: canonicalPath = $page.url.pathname.replace(/\/+$/, '') || '/';
+  $: canonical = SITE + canonicalPath;
 
   // White-rabbit is a debug instrumentation system - only enabled in dev so we
   // don't ship behavioral tracking or expose internals to production visitors.
@@ -37,8 +44,8 @@
         sessionRabbit.watchNavigation(from.url.pathname, to.url.pathname);
       }
       setTimeout(() => {
-        window.scrollTo(0, 0);
-      }, 0);
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }, 50);
     }
   });
 
@@ -54,6 +61,12 @@
   });
 </script>
 
+<svelte:head>
+  <link rel="canonical" href={canonical} />
+</svelte:head>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <div class="app">
   <DisclaimerBanner />
   <Navbar user={data?.user} />
@@ -65,7 +78,7 @@
     </div>
   {/if}
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <slot />
   </main>
   <Footer />
@@ -93,13 +106,21 @@
   .app {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    /* Without an explicit column the implicit grid column is sized to
+       max-content, so wide content expands the page past the viewport and
+       gets clipped by overflow-x:hidden. minmax(0,1fr) clamps it to the
+       viewport and lets content reflow. */
+    grid-template-columns: minmax(0, 1fr);
     min-height: 100vh;
   }
+
+  /* DisclaimerBanner is fixed-position popup - no grid row needed */
 
   main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
   }
 
@@ -201,6 +222,28 @@
   :global(::selection) {
     background: rgba(245, 158, 11, 0.25);
     color: #f1f5f9;
+  }
+
+  /* Skip-to-content link (a11y) */
+  :global(.skip-link) {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    transform: translateY(-200%);
+    z-index: 10000;
+    padding: 0.6rem 1rem;
+    background: #f59e0b;
+    color: #1a0f00;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  :global(.skip-link:focus) {
+    transform: translateY(0);
+  }
+  :global(main:focus) {
+    outline: none;
   }
 
   /* Scrollbar styling */

@@ -256,7 +256,7 @@
   }
   .t-sub {
     font-size: 0.95rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.7;
     margin: 0;
   }
@@ -271,7 +271,7 @@
     letter-spacing: -0.02em;
   }
   .t-section p {
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.75;
     margin: 0 0 0.9rem 0;
     font-size: 0.94rem;
@@ -281,7 +281,7 @@
     padding-left: 1.2rem;
   }
   .t-section li {
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.7;
     margin-bottom: 0.35rem;
     font-size: 0.94rem;

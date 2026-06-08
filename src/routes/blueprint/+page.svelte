@@ -37,7 +37,7 @@
       <p class="bp-label">The YouTube Shouse Blueprint</p>
       <h1 class="bp-title">The Complete Blueprint</h1>
       <p class="bp-subtitle">
-        Eight chapters of conjecture and research-based thinking — one author's framework for what material independence might look like. Not a plan. Not a guarantee. Starting material for your own evaluation.
+        Eight chapters of conjecture and research-based thinking, one author's framework for what material independence might look like. Not a plan. Not a guarantee. Starting material for your own evaluation.
       </p>
 
       {#if completedCount > 0}
@@ -110,13 +110,13 @@
   }
 
   .bp-label {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #f59e0b;
     margin: 0 0 0.75rem 0;
     font-weight: 600;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .bp-title {
@@ -129,7 +129,7 @@
 
   .bp-subtitle {
     font-size: 1.1rem;
-    color: #94a3b8;
+    color: #dde4ef;
     line-height: 1.7;
     margin: 0;
     max-width: 640px;
@@ -161,8 +161,8 @@
 
   .bp-progress-text {
     font-size: 0.8rem;
-    color: #64748b;
-    font-family: 'JetBrains Mono', monospace;
+    color: #dde4ef;
+    font-family: var(--font-primary);
   }
 
   .bp-toc {
@@ -235,7 +235,7 @@
   .toc-num {
     font-size: 0.8rem;
     font-weight: 700;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     letter-spacing: 0.1em;
   }
 
@@ -248,7 +248,7 @@
 
   .toc-subtitle {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #dde4ef;
     margin: 0;
     line-height: 1.4;
   }
@@ -260,15 +260,15 @@
   }
 
   .toc-read-time {
-    font-size: 0.7rem;
-    color: #94a3b8;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
   }
 
   .toc-in-progress {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #f59e0b;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .toc-scroll-bar-bg {
@@ -287,7 +287,7 @@
   }
 
   .toc-arrow {
-    color: #94a3b8;
+    color: #dde4ef;
     flex-shrink: 0;
     transition: all 0.2s;
   }

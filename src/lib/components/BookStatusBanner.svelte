@@ -11,7 +11,7 @@
       <div class="cover-glow" aria-hidden="true"></div>
       <img
         src="/images/surviving_the_singularity_cover_1200.png"
-        alt="Surviving the Singularity — book cover"
+        alt="Surviving the Singularity book cover"
         class="cover-img"
         width="300"
         height="450"
@@ -26,11 +26,11 @@
       <h2 class="title">Surviving the Singularity</h2>
       <p class="status-line">
         <span class="status-dot" aria-hidden="true"></span>
-        Currently in editing — releasing when it's ready
+        Currently in editing - releasing when it's ready.
       </p>
 
       <p class="body">
-        The book is being carefully edited and refined. No arbitrary release date —
+        The book is being carefully edited and refined. No arbitrary release date.
         it ships when it's genuinely ready. Subscribe free to get notified the moment it launches.
       </p>
 
@@ -70,8 +70,11 @@
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
     border: 1px solid rgba(245, 158, 11, 0.2);
     border-radius: 1.25rem;
-    padding: 3rem 2rem;
+    padding: 2rem 1.25rem;
     margin: 3rem auto;
+    /* width:100% so the auto side-margins center it without letting it size
+       to max-content (auto cross-margins disable flex stretch). */
+    width: 100%;
     max-width: 900px;
     box-shadow:
       0 0 0 1px rgba(245, 158, 11, 0.08),
@@ -110,7 +113,7 @@
   }
 
   .cover-img {
-    width: 200px;
+    width: min(200px, 45vw);
     height: auto;
     border-radius: 0.5rem;
     box-shadow:
@@ -135,7 +138,7 @@
     z-index: 2;
     background: linear-gradient(135deg, #f59e0b, #f97316);
     color: #0f172a;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     font-weight: 800;
     letter-spacing: 0.1em;
     padding: 0.3rem 0.6rem;
@@ -147,10 +150,13 @@
   .content {
     flex: 1;
     min-width: 0;
+    /* Cap to container: .inner centers items, so without this the text
+       column takes max-content width and overflows on narrow screens. */
+    max-width: 100%;
   }
 
   .eyebrow {
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -172,9 +178,9 @@
     gap: 0.5rem;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #94a3b8;
+    color: #dde4ef;
     margin: 0 0 1.25rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .status-dot {
@@ -194,7 +200,7 @@
 
   .body {
     font-size: 1rem;
-    color: #cbd5e1;
+    color: #e9eef5;
     line-height: 1.7;
     margin: 0 0 1.75rem;
   }
@@ -203,8 +209,9 @@
   .btn-subscribe {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.6rem;
-    padding: 0.9rem 1.75rem;
+    padding: 0.9rem 1.5rem;
     background: linear-gradient(135deg, #f59e0b, #f97316);
     color: #0f172a;
     font-weight: 800;
@@ -212,7 +219,8 @@
     border-radius: 10px;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    white-space: nowrap;
+    max-width: 100%;
+    text-align: center;
     margin-bottom: 0.5rem;
   }
 
@@ -222,8 +230,8 @@
   }
 
   .sub-meta {
-    font-size: 0.72rem;
-    color: #64748b;
+    font-size: 0.82rem;
+    color: #dde4ef;
     margin: 0 0 1.75rem;
   }
 
@@ -246,7 +254,7 @@
 
   .preorder-notice p {
     font-size: 0.875rem;
-    color: #94a3b8;
+    color: #dde4ef;
     margin: 0;
     line-height: 1.6;
   }

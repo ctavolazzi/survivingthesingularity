@@ -17,13 +17,13 @@
   .stylish-divider.gradient {
     background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(255, 153, 51, 0.7),
+      rgba(251, 191, 36, 0.7),
       rgba(0, 0, 0, 0)
     );
   }
 
   .stylish-divider.orange {
-    background-color: rgba(255, 153, 51, 0.4);
+    background-color: rgba(251, 191, 36, 0.4);
   }
 
   .stylish-divider.light {
@@ -33,13 +33,13 @@
   :global(.dark) .stylish-divider.gradient {
     background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(255, 153, 51, 0.7),
+      rgba(251, 191, 36, 0.7),
       rgba(0, 0, 0, 0)
     );
   }
 
   :global(.dark) .stylish-divider.orange {
-    background-color: rgba(255, 153, 51, 0.3);
+    background-color: rgba(251, 191, 36, 0.3);
   }
 
   :global(.dark) .stylish-divider.light {

@@ -113,6 +113,14 @@
   });
 </script>
 
+<svelte:head>
+  <title>{post.title} | Surviving the Singularity</title>
+  <meta name="description" content={post.excerpt} />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={post.title} />
+  <meta property="og:description" content={post.excerpt} />
+</svelte:head>
+
 <div class="progress-bar" style="width: {scrollProgress}%"></div>
 
 <div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>

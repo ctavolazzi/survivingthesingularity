@@ -1,295 +1,269 @@
 <script>
-  import { createEventDispatcher, onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
+  import { browser } from '$app/environment';
   import coverImage from '$lib/images/Surviving-the-Singularity-Cover.png';
-  import PreorderButton from './PreorderButton.svelte';
 
   export let isOpen = false;
 
   let modalContent;
-  let imageElement;
+  let triggerEl;
+  let closeBtn;
 
-  function toggleModal() {
-    isOpen = !isOpen;
+  function openModal() {
+    isOpen = true;
   }
 
-  onMount(() => {
-    if (imageElement) {
-      imageElement.onload = adjustModalSize;
+  function closeModal() {
+    isOpen = false;
+    if (triggerEl) triggerEl.focus();
+  }
+
+  function handleTriggerKeydown(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openModal();
     }
-    window.addEventListener('resize', adjustModalSize);
-    return () => window.removeEventListener('resize', adjustModalSize);
-  });
+  }
+
+  // Escape-to-close is handled at the window level (below) so the keydown
+  // listener doesn't sit on the non-interactive dialog element.
+  function handleWindowKeydown(e) {
+    if (isOpen && e.key === 'Escape') {
+      e.preventDefault();
+      closeModal();
+    }
+  }
 
   function adjustModalSize() {
     if (modalContent) {
-      const viewportHeight = window.innerHeight;
-      const viewportWidth = window.innerWidth;
-      
-      let modalHeight = viewportHeight * 0.9; // 90% of viewport height
-      let modalWidth = viewportWidth * 0.9; // 90% of viewport width
-      
-      modalContent.style.height = `${modalHeight}px`;
-      modalContent.style.width = `${modalWidth}px`;
-    }
-  }
-
-  // Set the target date for the offer (adjust as needed)
-  const offerEndDate = new Date('2024-11-08T23:59:59');
-
-  // Add countdown timer logic
-  let timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
-
-  function updateCountdown() {
-    const now = new Date();
-    const difference = offerEndDate.getTime() - now.getTime();
-
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
-      };
+      modalContent.style.height = `${window.innerHeight * 0.9}px`;
+      modalContent.style.width = `${window.innerWidth * 0.9}px`;
     }
   }
 
   onMount(() => {
-    if (imageElement) {
-      imageElement.onload = adjustModalSize;
-    }
+    if (!browser) return;
     window.addEventListener('resize', adjustModalSize);
-    const timer = setInterval(updateCountdown, 1000);
-    return () => {
-      clearInterval(timer);
-      window.removeEventListener('resize', adjustModalSize);
-    };
+    window.addEventListener('keydown', handleWindowKeydown);
   });
 
+  onDestroy(() => {
+    if (browser) {
+      window.removeEventListener('resize', adjustModalSize);
+      window.removeEventListener('keydown', handleWindowKeydown);
+    }
+  });
+
+  $: if (browser && isOpen) {
+    // Move focus into the modal once it's open
+    setTimeout(() => closeBtn?.focus(), 50);
+    adjustModalSize();
+  }
 </script>
 
-<img 
-  src={coverImage} 
-  alt="Surviving the Singularity Book Cover" 
-  class="book-cover" 
-  on:click={toggleModal} 
-/>
+<button
+  class="cover-trigger"
+  bind:this={triggerEl}
+  on:click={openModal}
+  on:keydown={handleTriggerKeydown}
+  aria-label="Open larger view of the Surviving the Singularity book cover"
+  aria-haspopup="dialog"
+>
+  <img
+    src={coverImage}
+    alt="Surviving the Singularity book cover"
+    class="book-cover"
+    loading="lazy"
+  />
+</button>
 
 {#if isOpen}
-  <div class="modal-overlay" on:click={toggleModal}>
-    <div class="modal-content" bind:this={modalContent} on:click|stopPropagation>
+  <button
+    type="button"
+    class="modal-backdrop"
+    on:click={closeModal}
+    aria-label="Close book cover view"
+  ></button>
+  <div
+    class="modal-content"
+    bind:this={modalContent}
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="book-cover-title"
+    tabindex="-1"
+  >
       <div class="modal-inner">
         <div class="modal-image-container">
-          <img src={coverImage} alt="Surviving the Singularity Book Cover" class="modal-image"  loading="lazy" \/>
+          <img src={coverImage} alt="" class="modal-image" loading="lazy" />
         </div>
         <div class="modal-text">
-          <h2 class="book-title">Surviving the Singularity</h2>
-          <div class="book-subtitle">A Guide to Thriving in the AI Revolution</div>
+          <h2 id="book-cover-title" class="book-title">Surviving the Singularity</h2>
+          <div class="book-subtitle">A field manual for staying agentic as AI rewrites the world.</div>
           <div class="book-description">
             <p>
-              Surviving the Singularity isn't just about fending off hordes of Terminator bots or finding food in the era of economic collapse and climate famines. It's about <span class="highlight">navigating a world where technology changes faster than we can keep up with</span>.
+              The Singularity isn't just about fending off Terminator bots or finding food in the era of economic collapse and climate famines. It's about navigating a world where technology changes faster than we can keep up with.
             </p>
             <p>
-              This book is a primer on understanding and navigating the <span class="highlight">double exponential shift</span> in the way we get our needs met. From autonomous drone swarms to the possibility of robots doing <span class="highlight">all labor in the world</span>, we explore the potential realities of our rapidly changing world.
+              This book is a primer on understanding and navigating the <strong>double exponential shift</strong> in the way we get our needs met &mdash; from autonomous drone swarms to the possibility of robots doing all labor in the world.
             </p>
             <p>
-              Before you resign yourself to your new overlords, pause for a moment, breathe, and know it's already over. Now you just have to learn how to survive the Singularity. <span class="highlight">This book will teach you</span>.
+              Before you resign yourself to your new overlords, pause for a moment, breathe, and know it's already over. Now you just have to learn how to survive the Singularity. <strong>This book will teach you.</strong>
             </p>
           </div>
           <div class="cta-container">
-            <PreorderButton buttonText="Pre-order Now" />
-          </div>
-          <div class="lto-container">
-            <div class="countdown-timer">
-              <p>Limited Time Offer Ends In:</p>
-              <div class="timer">
-                <span>{timeLeft.days}d</span>
-                <span>{timeLeft.hours}h</span>
-                <span>{timeLeft.minutes}m</span>
-                <span>{timeLeft.seconds}s</span>
-              </div>
-            </div>
+            <a class="cta-substack" href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer">
+              Subscribe on Substack &rarr;
+            </a>
           </div>
         </div>
       </div>
-      <button class="close-button" on:click={toggleModal}>Close</button>
-    </div>
+      <button
+        class="close-button"
+        bind:this={closeBtn}
+        on:click={closeModal}
+        aria-label="Close book cover dialog"
+      >
+        Close
+      </button>
   </div>
 {/if}
 
 <style>
+  .cover-trigger {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto;
+  }
   .book-cover {
     max-width: 300px;
     width: 100%;
     height: auto;
-    margin: 2rem auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    cursor: pointer;
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(148, 163, 184, 0.1);
+    border-radius: 8px;
     transition: transform 0.2s ease-in-out;
   }
-
-  .book-cover:hover {
-    transform: scale(1.05);
+  .cover-trigger:hover .book-cover,
+  .cover-trigger:focus-visible .book-cover {
+    transform: scale(1.04);
   }
 
-  .modal-overlay {
+  .modal-backdrop {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
     z-index: 1000;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
   }
 
   .modal-content {
-    background-color: white;
-    border-radius: 8px;
-    overflow-y: auto;
-    max-width: 90vw;
-    max-height: 90vh;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    background: #0f172a;
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 16px;
+    color: #e2e8f0;
+    overflow: auto;
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 2rem);
+    padding: 1.5rem;
   }
 
   .modal-inner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    gap: 2rem;
+    align-items: start;
   }
 
   .modal-image-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: white;
-    padding: 1rem;
+    justify-content: center;
   }
 
   .modal-image {
-    max-width: 100%;
-    max-height: 50vh;
-    object-fit: contain;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7);
   }
 
-  .modal-text {
-    padding: 2rem;
-    text-align: left;
-    background: linear-gradient(135deg, #1a202c, #2d3748);
-    color: #e2e8f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .book-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: #fafafa;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: -0.02em;
+  }
+
+  .book-subtitle {
+    font-size: 1rem;
+    color: #dde4ef;
+    margin-bottom: 1.25rem;
+  }
+
+  .book-description p {
+    color: #e9eef5;
+    line-height: 1.7;
+    margin: 0 0 0.9rem 0;
+    font-size: 0.95rem;
+  }
+  .book-description strong {
+    color: #fafafa;
+  }
+
+  .cta-container {
+    margin-top: 1.25rem;
+  }
+
+  .cta-substack {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: #1a0f00;
+    font-weight: 700;
+    font-size: 0.92rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  .cta-substack:hover {
+    transform: translateY(-2px);
   }
 
   .close-button {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--text-accent);
-    color: white;
-    border: none;
-    border-radius: 4px;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: rgba(2, 6, 23, 0.6);
+    color: #e2e8f0;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    padding: 0.4rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 10;
   }
-
   .close-button:hover {
-    background-color: #4a5568;
-  }
-
-  .book-title {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #fbd38d;
-  }
-
-  .book-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #63b3ed;
-  }
-
-  .book-description {
-    margin-bottom: 1rem;
-  }
-
-  .cta-container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .lto-container {
-    margin-top: 1rem;
-  }
-
-  /* Scrollbar styling */
-  .modal-text::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .modal-text::-webkit-scrollbar-track {
-    background: #2d3748;
-  }
-
-  .modal-text::-webkit-scrollbar-thumb {
-    background-color: #63b3ed;
-    border-radius: 4px;
-  }
-
-  :global(.dark) .modal-content {
-    background-color: #2d3748;
-    color: var(--text-primary);
+    background: rgba(2, 6, 23, 0.85);
+    color: #fafafa;
   }
 
   @media (max-width: 768px) {
-    .book-title {
-      font-size: 1.8rem;
-    }
-
-    .book-subtitle {
-      font-size: 1rem;
-    }
-  }
-
-  @media (min-width: 768px) {
     .modal-inner {
-      flex-direction: row;
+      grid-template-columns: 1fr;
     }
-
-    .modal-image-container,
-    .modal-text {
-      width: 50%;
-    }
-
-    .modal-image {
-      max-height: 80vh;
-    }
-  }
-
-  .countdown-timer {
-    color: #ffffff;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-
-  .countdown-timer p {
-    margin-bottom: 0.5rem;
-  }
-
-  .timer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .timer span {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.5rem;
-    border-radius: 4px;
-    min-width: 2.5rem;
   }
 </style>

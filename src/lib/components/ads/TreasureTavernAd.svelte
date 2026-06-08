@@ -509,7 +509,7 @@
     }
 
     .treasure-badge {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       padding: 0.25rem 0.7rem;
       top: 5px;
       right: 5px;

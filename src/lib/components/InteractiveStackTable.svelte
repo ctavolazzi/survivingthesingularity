@@ -1,292 +1,252 @@
 <script>
-  import { fly, fade } from 'svelte/transition';
+  import { slide } from 'svelte/transition';
 
-  const rows = [
+  const items = [
     {
-      layer: 'Labor',
-      old: 'Sedentary office toil',
-      new: 'Biology-matched physical utility',
-      tool: 'Mobile Aloha / DIY Robotics',
-      detail: 'Instead of sitting at a desk 8 hours a day destroying your body, build things with your hands. Open-source robotics (Mobile Aloha, $32K) let you automate the repetitive physical tasks while you focus on creative work.',
-      icon: 'L',
-      color: '#f59e0b'
+      q: 'What might replace wage-only income dependence?',
+      category: 'Labor & Time',
+      color: '#f59e0b',
+      a: `One framework the author has explored: matching physical labor to biology rather than desk hours. Open-source robotics projects (like Mobile Aloha, FarmBot, and others) aim to automate repetitive physical tasks, though at research or early-commercial stage, costs and capabilities vary enormously. None of this is a prescription; it's a domain worth watching.`,
+      tags: ['Research stage', 'Costs vary widely', 'Not a recommendation'],
+      link: null,
     },
     {
-      layer: 'Capital',
-      old: 'Inflationary fiat currency',
-      new: 'Hard assets & cash flow products',
-      tool: 'Lemon Squeezy / Digital Solutions',
-      detail: 'Your money loses 5%+ per year sitting in a bank. Hard assets (land, buildings, tools) hold value. Digital products ($20 FogSift offers) create recurring cash flow that compounds instead of eroding.',
-      icon: 'C',
-      color: '#3b82f6'
+      q: 'What are some alternatives to fiat savings accounts?',
+      category: 'Capital Preservation',
+      color: '#3b82f6',
+      a: `Inflation erodes purchasing power in savings accounts; that much is well-documented. Some people explore hard assets (land, tools, equipment), productive assets (small businesses, digital products), or inflation-hedged instruments. Each carries its own risks and legal/tax considerations. This is not financial advice; talk to a licensed financial advisor before making any changes to how you hold capital.`,
+      tags: ['Not financial advice', 'Consult a licensed advisor', 'Individual situation varies'],
+      link: null,
     },
     {
-      layer: 'Safety Net',
-      old: 'Bismarckian PAYGO system',
-      new: 'Reciprocal survival blueprints',
-      tool: 'Title 25 Owner-Built Housing',
-      detail: 'Social Security was designed when life expectancy was 63. The new safety net is a paid-off structure on owned land, food production capacity, and a community of builders who share knowledge freely.',
-      icon: 'S',
-      color: '#10b981'
+      q: 'What might replace reliance on centralized safety nets?',
+      category: 'Resilience Planning',
+      color: '#10b981',
+      a: `Social safety nets have structural funding challenges in many countries. Some people find it useful to think about layered personal resilience: paid-off shelter, food production capacity, community relationships, and diversified income. None of this replaces professional insurance, legal, or financial planning; it's a complement, not a substitute. Local laws and codes vary enormously.`,
+      tags: ['Not a substitute for insurance', 'Local laws vary', 'Consult professionals'],
+      link: null,
     },
     {
-      layer: 'Intelligence',
-      old: 'Walled-garden APIs',
-      new: 'Local, private, uncensored AI',
-      tool: 'RTX 5090 / Llama 4 Scout',
-      detail: 'Cloud AI providers can change pricing, terms, or availability. Running open-weights models locally on consumer hardware is one option that some find useful for privacy and continuity. No guarantee of any specific lifespan, capability, or compatibility is implied.',
-      icon: 'I',
-      color: '#8b5cf6'
+      q: 'What are the trade-offs of local vs. cloud AI?',
+      category: 'Intelligence Tools',
+      color: '#8b5cf6',
+      a: `Cloud AI is convenient but carries dependency risks: pricing changes, terms changes, availability gaps. Running open-weight models locally on consumer hardware (e.g., Llama, Mistral) is an option some find useful for privacy and continuity. Hardware capability and model quality change rapidly; any specific claim about what hardware can run what model today may be outdated within months. Evaluate for your own use case.`,
+      tags: ['Landscape changes rapidly', 'No specific endorsement', 'Verify for your context'],
+      link: null,
     },
     {
-      layer: 'Reality',
-      old: 'Algorithmic consumption',
-      new: 'Evidence-based production',
-      tool: 'YouTube / n8n Manifesto',
-      detail: 'Stop consuming content designed to keep you scrolling. Start producing content that teaches what you know. The One-Hour Rule: anything that took you more than an hour to learn is worth a video.',
-      icon: 'R',
-      color: '#f97316'
+      q: 'How might content creation factor into a resilience plan?',
+      category: 'Information & Reach',
+      color: '#f97316',
+      a: `Creator platforms offer one possible avenue for sharing knowledge and building an audience, which can eventually support other economic activity. Most creators earn little or nothing, especially early on. The author's "One-Hour Rule" is a heuristic, not a guarantee: if something took you more than an hour to learn, it might be worth teaching. Results vary widely and most depend on factors outside your control. Not a business plan.`,
+      tags: ['Most creators earn little', 'Results vary widely', 'Not income advice'],
+      link: null,
     },
   ];
 
-  let expandedIndex = -1;
-  let hoveredIndex = -1;
+  let openIndex = -1;
 
-  function toggleRow(i) {
-    expandedIndex = expandedIndex === i ? -1 : i;
+  function toggle(i) {
+    openIndex = openIndex === i ? -1 : i;
   }
 </script>
 
-<div class="stack-interactive">
-  <div class="stack-header-row">
-    <span class="sh-layer">Layer</span>
-    <span class="sh-col">Old System</span>
-    <span class="sh-col">New System</span>
-    <span class="sh-col sh-tool">Sovereign Tool</span>
-  </div>
-
-  {#each rows as row, i}
-    <button
-      class="stack-row"
-      class:stack-row-expanded={expandedIndex === i}
-      class:stack-row-hovered={hoveredIndex === i}
-      on:click={() => toggleRow(i)}
-      on:mouseenter={() => hoveredIndex = i}
-      on:mouseleave={() => hoveredIndex = -1}
-      style="animation-delay: {i * 60}ms"
-    >
-      <div class="stack-row-main">
-        <div class="stack-layer">
-          <span class="layer-icon" style="background: {row.color}15; color: {row.color}; border-color: {row.color}30">{row.icon}</span>
-          <span class="layer-name" style="color: {row.color}">{row.layer}</span>
+<div class="faq-wrap">
+  {#each items as item, i}
+    <div class="faq-item" class:faq-open={openIndex === i}>
+      <button
+        class="faq-trigger"
+        on:click={() => toggle(i)}
+        aria-expanded={openIndex === i}
+      >
+        <div class="faq-trigger-left">
+          <span class="faq-category" style="color: {item.color}; border-color: {item.color}30; background: {item.color}10">{item.category}</span>
+          <span class="faq-question">{item.q}</span>
         </div>
-        <span class="stack-old">{row.old}</span>
-        <span class="stack-new">{row.new}</span>
-        <span class="stack-tool">{row.tool}</span>
-        <svg class="stack-chevron" class:stack-chevron-open={expandedIndex === i} width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
+        <span class="faq-icon" class:faq-icon-open={openIndex === i} aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
 
-      {#if expandedIndex === i}
-        <div class="stack-detail" transition:fly={{ y: -8, duration: 200 }}>
-          <div class="detail-bar" style="background: {row.color}"></div>
-          <p class="detail-text">{row.detail}</p>
+      {#if openIndex === i}
+        <div class="faq-body" transition:slide={{ duration: 220 }}>
+          <div class="faq-accent" style="background: {item.color}"></div>
+          <div class="faq-content">
+            <p class="faq-answer">{item.a}</p>
+            <div class="faq-tags">
+              {#each item.tags as tag}
+                <span class="faq-tag">{tag}</span>
+              {/each}
+            </div>
+          </div>
         </div>
       {/if}
-    </button>
+    </div>
   {/each}
 </div>
 
-<p class="stack-disclaimer">
-  Costs, tools, and timelines are illustrative estimates. Real numbers vary by region, regulation, vendor, and individual circumstance. Mentions of specific products are references, not endorsements or recommendations. <a href="/disclaimer">See full disclaimer</a>.
+<p class="faq-footer-note">
+  Everything above is conjecture based on one author's research. No outcome is guaranteed or promised. Mentions of specific products or approaches are illustrative, not endorsements. Consult licensed professionals before making any decisions. <a href="/disclaimer">Full disclaimer →</a>
 </p>
 
 <style>
-  .stack-disclaimer {
-    margin-top: 1rem;
-    font-size: 0.72rem;
-    color: #64748b;
-    line-height: 1.55;
-    font-style: italic;
-    max-width: 720px;
+  .faq-wrap {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  .stack-disclaimer a {
-    color: #94a3b8;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .stack-disclaimer a:hover { color: #f59e0b; }
-  .stack-interactive {
-    margin-top: 2rem;
-    border: 1px solid rgba(148, 163, 184, 0.06);
-    border-radius: 16px;
+
+  .faq-item {
+    border: 1px solid rgba(148, 163, 184, 0.07);
+    border-radius: 12px;
     overflow: hidden;
+    transition: border-color 0.2s ease;
+    background: rgba(15, 23, 42, 0.4);
   }
 
-  .stack-header-row {
-    display: grid;
-    grid-template-columns: 180px 1fr 1fr 1fr 24px;
-    gap: 1rem;
-    padding: 0.85rem 1.25rem;
-    background: rgba(30, 41, 59, 0.6);
-    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  .faq-item:hover {
+    border-color: rgba(148, 163, 184, 0.14);
   }
 
-  .sh-layer, .sh-col {
-    font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #64748b;
+  .faq-open {
+    border-color: rgba(148, 163, 184, 0.18) !important;
+    background: rgba(30, 41, 59, 0.5);
   }
 
-  .stack-row {
-    display: block;
+  .faq-trigger {
     width: 100%;
     background: none;
     border: none;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.04);
     cursor: pointer;
-    text-align: left;
     font-family: inherit;
-    transition: all 0.2s ease;
-    animation: rowFade 0.4s ease forwards;
-    opacity: 0;
-    padding: 0;
-  }
-
-  @keyframes rowFade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  .stack-row:hover, .stack-row-hovered {
-    background: rgba(245, 158, 11, 0.02);
-  }
-
-  .stack-row-expanded {
-    background: rgba(30, 41, 59, 0.3);
-  }
-
-  .stack-row-main {
-    display: grid;
-    grid-template-columns: 180px 1fr 1fr 1fr 24px;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
-    padding: 1rem 1.25rem;
-    align-items: center;
+    text-align: left;
   }
 
-  .stack-layer {
+  .faq-trigger:focus-visible {
+    outline: 2px solid #f59e0b;
+    outline-offset: -2px;
+    border-radius: 11px;
+  }
+
+  .faq-trigger-left {
     display: flex;
-    align-items: center;
-    gap: 0.6rem;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
   }
 
-  .layer-icon {
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7px;
-    font-size: 0.7rem;
-    font-weight: 800;
-    font-family: 'JetBrains Mono', monospace;
-    border: 1px solid;
-    flex-shrink: 0;
-  }
-
-  .layer-name {
-    font-size: 0.85rem;
+  .faq-category {
+    display: inline-block;
+    font-size: 0.82rem;
     font-weight: 700;
-    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.18rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid;
+    font-family: var(--font-primary);
+    width: fit-content;
   }
 
-  .stack-old {
-    font-size: 0.85rem;
-    color: #64748b;
-  }
-
-  .stack-new {
-    font-size: 0.85rem;
+  .faq-question {
+    font-size: 0.95rem;
+    font-weight: 600;
     color: #e2e8f0;
-    font-weight: 500;
+    line-height: 1.4;
   }
 
-  .stack-tool {
-    font-size: 0.8rem;
-    color: #fbbf24;
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  .stack-chevron {
-    color: #334155;
-    transition: transform 0.2s ease;
+  .faq-icon {
     flex-shrink: 0;
+    color: #334155;
+    transition: transform 0.25s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
   }
 
-  .stack-chevron-open {
+  .faq-trigger:hover .faq-icon {
+    color: #dde4ef;
+  }
+
+  .faq-icon-open {
     transform: rotate(180deg);
     color: #f59e0b;
   }
 
-  .stack-detail {
+  .faq-body {
     display: flex;
-    gap: 1rem;
-    padding: 0 1.25rem 1.25rem 1.25rem;
-    margin-left: 180px;
+    gap: 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.06);
   }
 
-  .detail-bar {
+  .faq-accent {
     width: 3px;
-    border-radius: 2px;
     flex-shrink: 0;
+    opacity: 0.6;
   }
 
-  .detail-text {
+  .faq-content {
+    padding: 1.1rem 1.25rem;
+    flex: 1;
+  }
+
+  .faq-answer {
     font-size: 0.88rem;
-    color: #94a3b8;
-    line-height: 1.65;
-    margin: 0;
+    color: #dde4ef;
+    line-height: 1.75;
+    margin: 0 0 1rem 0;
   }
 
-  @media (max-width: 768px) {
-    .stack-header-row {
-      display: none;
-    }
+  .faq-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
 
-    .stack-row-main {
-      grid-template-columns: 1fr;
-      gap: 0.4rem;
-    }
+  .faq-tag {
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    background: rgba(148, 163, 184, 0.06);
+    color: #dde4ef;
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    font-family: var(--font-primary);
+    letter-spacing: 0.03em;
+  }
 
-    .stack-old, .stack-tool {
-      display: none;
-    }
+  .faq-footer-note {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: #dde4ef;
+    line-height: 1.6;
+    font-style: italic;
+    max-width: 720px;
+  }
 
-    .sh-tool {
-      display: none;
-    }
+  .faq-footer-note a {
+    color: #dde4ef;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 
-    .stack-detail {
-      margin-left: 0;
-    }
+  .faq-footer-note a:hover {
+    color: #f59e0b;
+  }
 
-    .stack-chevron {
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
+  @media (max-width: 640px) {
+    .faq-trigger {
+      padding: 1rem;
     }
-
-    .stack-chevron-open {
-      transform: translateY(-50%) rotate(180deg);
-    }
-
-    .stack-row-main {
-      position: relative;
-      padding-right: 2.5rem;
+    .faq-content {
+      padding: 1rem;
     }
   }
 </style>

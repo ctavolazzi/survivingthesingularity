@@ -242,12 +242,12 @@
   }
 
   .step-counter {
-    font-size: 0.7rem;
-    color: #475569;
+    font-size: 0.8rem;
+    color: #dde4ef;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-weight: 600;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     margin-bottom: 0.75rem;
   }
 
@@ -303,7 +303,7 @@
     color: #f59e0b;
     font-weight: 800;
     font-size: 0.85rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     flex-shrink: 0;
   }
 
@@ -314,7 +314,7 @@
   .config-option-label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #cbd5e1;
+    color: #e9eef5;
   }
 
   .config-option-selected .config-option-label {
@@ -358,14 +358,14 @@
     padding: 0.5rem 1rem;
     background: none;
     border: none;
-    color: #475569;
+    color: #dde4ef;
     font-size: 0.8rem;
     cursor: pointer;
     font-family: inherit;
     transition: color 0.2s;
   }
 
-  .config-back:hover { color: #94a3b8; }
+  .config-back:hover { color: #dde4ef; }
 
   /* Results */
   .results-header {
@@ -380,7 +380,7 @@
   }
 
   .results-subtitle {
-    color: #64748b;
+    color: #dde4ef;
     font-size: 0.9rem;
     margin: 0;
   }
@@ -427,7 +427,7 @@
     color: #f59e0b;
     font-weight: 800;
     font-size: 0.85rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     flex-shrink: 0;
   }
 
@@ -444,16 +444,16 @@
   }
 
   .result-chapter {
-    font-size: 0.65rem;
-    color: #475569;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.76rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
 
   .result-urgency {
-    font-size: 0.55rem;
+    font-size: 0.82rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -462,7 +462,7 @@
   }
 
   .urgency-essential { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
-  .urgency-critical { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+  .urgency-critical { background: rgba(245, 158, 11, 0.12); color: #fb923c; }
   .urgency-high { background: rgba(59, 130, 246, 0.12); color: #3b82f6; }
   .urgency-medium { background: rgba(16, 185, 129, 0.12); color: #10b981; }
 
@@ -474,14 +474,14 @@
   }
 
   .result-reason {
-    font-size: 0.78rem;
-    color: #64748b;
+    font-size: 0.86rem;
+    color: #dde4ef;
     margin: 0;
     line-height: 1.4;
   }
 
   .result-arrow {
-    color: #334155;
+    color: #dde4ef;
     flex-shrink: 0;
     transition: all 0.2s;
   }
@@ -500,7 +500,7 @@
     background: rgba(30, 41, 59, 0.3);
     border: 1px solid rgba(148, 163, 184, 0.08);
     border-radius: 10px;
-    color: #64748b;
+    color: #dde4ef;
     font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
@@ -510,7 +510,7 @@
 
   .config-restart:hover {
     border-color: rgba(148, 163, 184, 0.15);
-    color: #94a3b8;
+    color: #dde4ef;
   }
 
   @media (max-width: 640px) {

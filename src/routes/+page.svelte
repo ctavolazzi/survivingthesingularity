@@ -8,7 +8,6 @@
 	import FloatingNav from '$lib/components/FloatingNav.svelte';
 	import LiveDashboard from '$lib/components/LiveDashboard.svelte';
 	import InteractiveStackTable from '$lib/components/InteractiveStackTable.svelte';
-	import UrgencyBanner from '$lib/components/UrgencyBanner.svelte';
 	import AGICountdown from '$lib/components/AGICountdown.svelte';
 
 	const homeSections = [
@@ -98,7 +97,7 @@
 		{
 			num: '01',
 			label: 'Learn the Tools',
-			body: 'Teach yourself to use modern AI. The real leverage is not a subscription — it is understanding these tools well enough to build new ways of getting your needs met.',
+			body: 'Teach yourself to use modern AI. The real leverage is not a subscription. It is understanding these tools well enough to build new ways of getting your needs met.',
 			href: '/blueprint/local-ai',
 			color: 'amber',
 		},
@@ -134,7 +133,7 @@
 
 <svelte:head>
 	<title>Surviving the Singularity</title>
-	<meta name="description" content="Practical tools for material independence in the age of AI. Learn the tools, automate with open-source robotics, and build the physical exit — a field manual for what comes next." />
+	<meta name="description" content="Practical tools for material independence in the age of AI. Learn the tools, automate with open-source robotics, and build the physical exit: a field manual for what comes next." />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Surviving the Singularity" />
 	<meta property="og:description" content="Practical tools for material independence in the age of AI." />
@@ -152,7 +151,6 @@
 
 <div class="page">
 	<FloatingNav sections={homeSections} />
-	<UrgencyBanner />
 
 	<!-- AGI COUNTDOWN -->
 	<section class="section section-countdown" use:observe>
@@ -170,21 +168,12 @@
 
 		{#if heroVisible}
 			<div class="hero-content" in:fade={{ duration: 600, delay: 100 }}>
-				<div class="hero-classification">
-					<svg class="classification-radar" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
-						<circle class="radar-ring radar-ring-1" cx="7" cy="7" r="2" fill="none" stroke="#ef4444" stroke-width="1"/>
-						<circle class="radar-ring radar-ring-2" cx="7" cy="7" r="2" fill="none" stroke="#ef4444" stroke-width="1"/>
-						<circle class="radar-core" cx="7" cy="7" r="2.2" fill="#ef4444"/>
-					</svg>
-					Practical tools for material independence
-				</div>
-
 				<h1 class="hero-title">
-					There are better ways<br/>to build the future.
+					There are better ways to build the future.
 				</h1>
 
 				<p class="hero-subtitle">
-					The old playbook — mortgage, career ladder, retire at 65 — was designed for a world
+					The old playbook (mortgage, career ladder, retire at 65) was designed for a world
 					that no longer exists. AI is rewriting every industry. Housing costs are out of control.
 					But inside that disruption is an opportunity most people haven't seen yet.
 				</p>
@@ -198,7 +187,7 @@
 					<div class="answer-content">
 						<p class="answer-tagline"><em>Live like your ancestors, with the tools of the modern world.</em></p>
 						<p class="answer-text">
-							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint — for thinking about, not acting on without professional guidance.
+							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint, for thinking about, not acting on without professional guidance.
 						</p>
 						<p class="answer-cost">
 							Some scenarios model costs well below a traditional mortgage. <strong>Your real numbers will differ.</strong>
@@ -262,7 +251,7 @@
 				<span class="section-number">01</span>
 				<div>
 					<h2 class="section-title">The Reality Check</h2>
-					<p class="section-desc">The numbers that explain why the old path doesn't work — and why a new one is possible.</p>
+					<p class="section-desc">The numbers that explain why the old path doesn't work, and why a new one is possible.</p>
 				</div>
 			</div>
 
@@ -307,7 +296,7 @@
 
 			<div class="situation-block">
 				<p>
-					A standard 30-year mortgage compounds total payments well above the sticker price — exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. <strong>None of these statements should be relied on without checking current data.</strong>
+					A standard 30-year mortgage compounds total payments well above the sticker price; exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. <strong>None of these statements should be relied on without checking current data.</strong>
 				</p>
 				<p>
 					At the same time, some inputs that matter for a different kind of life have gotten dramatically cheaper or more accessible: utility-scale solar costs, consumer-grade GPUs capable of running local AI models, open-source automation projects, and free creator platforms.
@@ -335,7 +324,7 @@
 			<div class="plan-preflight">
 				<p class="plan-preflight-title">⚠ Before anything else: talk to local professionals.</p>
 				<p class="plan-preflight-body">
-					Every step below depends on jurisdiction, zoning, building code, financing, tax, and personal situation. Before considering any action, talk to <strong>licensed professionals where you live</strong> — a local real-estate attorney, a licensed contractor, an accountant, a financial advisor. They can tell you what is actually possible, legal, safe, and sensible in your area. Reading this site is not a substitute for any of that.
+					Every step below depends on jurisdiction, zoning, building code, financing, tax, and personal situation. Before considering any action, talk to <strong>licensed professionals where you live</strong>: a local real-estate attorney, a licensed contractor, an accountant, a financial advisor. They can tell you what is actually possible, legal, safe, and sensible in your area. Reading this site is not a substitute for any of that.
 				</p>
 			</div>
 
@@ -399,7 +388,7 @@
 					</div>
 					<h3 class="step-title">Build a Shop</h3>
 					<p class="step-body">
-						Not a house — a <strong>shouse</strong>. Shop first, shelter second. Steel building kit prices fluctuate with commodity markets. Habitability conversions are subject to local building codes and inspection regimes that vary by county. Consult a licensed contractor and your local permitting authority first.
+						Not a house. A <strong>shouse</strong>. Shop first, shelter second. Steel building kit prices fluctuate with commodity markets. Habitability conversions are subject to local building codes and inspection regimes that vary by county. Consult a licensed contractor and your local permitting authority first.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Code varies by county</span>
@@ -418,7 +407,7 @@
 					</div>
 					<h3 class="step-title">Build, Film, Automate, Teach</h3>
 					<p class="step-body">
-						Use the space. Document what you build. Open-source projects worth knowing about include <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (open-source CNC food-growing), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weights language models. None of this is an endorsement — evaluate fit, safety, and legality for your situation.
+						Use the space. Document what you build. Open-source projects worth knowing about include <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (open-source CNC food-growing), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weights language models. None of this is an endorsement; evaluate fit, safety, and legality for your situation.
 					</p>
 					<div class="step-tags">
 						<span class="step-tag">Open-source projects, varies</span>
@@ -434,7 +423,7 @@
 				<div class="total-content">
 					<span class="total-label">Illustrative range</span>
 					<span class="total-range">Highly variable</span>
-					<span class="total-compare">Your real costs will differ — consult professionals</span>
+					<span class="total-compare">Your real costs will differ; consult professionals</span>
 				</div>
 				<div class="total-line"></div>
 			</div>
@@ -448,7 +437,7 @@
 				<span class="section-number">03</span>
 				<div>
 					<h2 class="section-title">The Window</h2>
-					<p class="section-desc">One author's hypothesis about how this unfolds. Educated guesses, not forecasts. The window to act is before these become mainstream — not after.</p>
+					<p class="section-desc">One author's hypothesis about how this unfolds. Educated guesses, not forecasts. The window to act is before these become mainstream, not after.</p>
 				</div>
 			</div>
 
@@ -479,7 +468,7 @@
 				<span class="section-number">04</span>
 				<div>
 					<h2 class="section-title">Alternatives to Consider</h2>
-					<p class="section-desc">Some systems worth thinking about differently. Each item is a starting point for your own research — not a recommendation.</p>
+					<p class="section-desc">Some systems worth thinking about differently. Each item is a starting point for your own research, not a recommendation.</p>
 				</div>
 			</div>
 
@@ -508,7 +497,7 @@
 			{/if}
 
 			<div class="blueprint-conjecture-notice">
-				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#94a3b8" stroke-width="1.2"/><path d="M7 4v3.5M7 9.5v.5" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/></svg>
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="#dde4ef" stroke-width="1.2"/><path d="M7 4v3.5M7 9.5v.5" stroke="#dde4ef" stroke-width="1.5" stroke-linecap="round"/></svg>
 				<p>Everything in this blueprint is <strong>conjecture and supposition</strong> based on one person's research. No outcome is promised, projected, or guaranteed. Treat it as material for your own independent evaluation.</p>
 			</div>
 
@@ -549,7 +538,7 @@
 				Real security may come from tangible things you understand,<br class="cta-break" /> not from status, debt, or systems you don't.
 			</h2>
 			<p class="cta-body">
-				Material from this site is for thinking with, not acting on. Anything you might attempt — land purchases, construction, career changes, financial moves — should be evaluated with the relevant licensed professionals in your jurisdiction.
+				Material from this site is for thinking with, not acting on. Anything you might attempt (land purchases, construction, career changes, financial moves) should be evaluated with the relevant licensed professionals in your jurisdiction.
 			</p>
 			<div class="cta-actions">
 				<a href="/blueprint" class="btn-primary btn-large">
@@ -613,7 +602,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 3.5rem 1rem 3rem;
+		padding: 2rem 1rem 1.5rem;
 		overflow: hidden;
 	}
 
@@ -637,7 +626,7 @@
 		width: 600px;
 		height: 600px;
 		border-radius: 50%;
-		background: radial-gradient(circle, rgba(239, 68, 68, 0.06), transparent 70%);
+		background: radial-gradient(circle, rgba(245, 158, 11, 0.06), transparent 70%);
 		top: -200px;
 		right: -150px;
 		filter: blur(60px);
@@ -660,17 +649,17 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.5rem;
-		font-size: 0.6rem;
+		font-size: 0.82rem;
 		font-weight: 700;
-		color: #ef4444;
+		color: #fbbf24;
 		text-transform: uppercase;
-		letter-spacing: 0.12em;
-		font-family: 'JetBrains Mono', monospace;
+		letter-spacing: 0.08em;
+		font-family: var(--font-primary);
 		margin-bottom: 1.5rem;
-		padding: 0.4rem 0.75rem;
-		background: rgba(239, 68, 68, 0.06);
-		border: 1px solid rgba(239, 68, 68, 0.12);
-		border-radius: 6px;
+		padding: 0.45rem 0.85rem;
+		background: linear-gradient(135deg, rgba(245, 158, 11, 0.14) 0%, rgba(245, 158, 11, 0.04) 100%);
+		border: 1px solid rgba(245, 158, 11, 0.3);
+		border-radius: 999px;
 	}
 
 	.classification-radar { flex-shrink: 0; overflow: visible; }
@@ -698,12 +687,13 @@
 		color: #fafafa;
 		line-height: 1.15;
 		margin: 0 0 1.25rem;
+		text-wrap: balance;
 		letter-spacing: -0.04em;
 	}
 
 	.hero-subtitle {
 		font-size: clamp(0.9rem, 3vw, 1.05rem);
-		color: #71717a;
+		color: #e9eef5;
 		line-height: 1.75;
 		margin: 0 0 1.25rem;
 		max-width: 700px;
@@ -754,9 +744,9 @@
 
 	.answer-cost {
 		font-size: 0.85rem;
-		color: #a1a1aa;
+		color: #e9eef5;
 		margin: 0;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 	}
 	.answer-cost strong { color: #10b981; font-weight: 700; }
 
@@ -789,9 +779,9 @@
 	}
 
 	.progress-label {
-		font-size: 0.7rem;
-		color: #94a3b8;
-		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.8rem;
+		color: #dde4ef;
+		font-family: var(--font-primary);
 	}
 
 	/* ── BUTTONS ── */
@@ -806,18 +796,18 @@
 		font-weight: 700;
 		font-size: 0.9rem;
 		text-decoration: none;
-		background: rgba(245, 158, 11, 0.08);
-		color: #f59e0b;
-		border: 1px solid rgba(245, 158, 11, 0.35);
-		transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+		background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+		color: #0a0a0a;
+		border: 1px solid #f59e0b;
+		box-shadow: 0 4px 16px rgba(245, 158, 11, 0.28);
+		transition: filter 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 		cursor: pointer;
 	}
 
 	.btn-primary:hover {
-		background: rgba(245, 158, 11, 0.15);
-		border-color: rgba(245, 158, 11, 0.6);
-		transform: translateY(-1px);
-		box-shadow: 0 4px 20px rgba(245, 158, 11, 0.18);
+		filter: brightness(1.08);
+		transform: translateY(-2px);
+		box-shadow: 0 10px 30px rgba(245, 158, 11, 0.42);
 	}
 
 	.btn-secondary {
@@ -832,7 +822,7 @@
 		font-size: 0.9rem;
 		text-decoration: none;
 		background: transparent;
-		color: #a1a1aa;
+		color: #e9eef5;
 		border: 1px solid rgba(255, 255, 255, 0.08);
 		transition: color 0.2s ease, border-color 0.2s ease;
 		cursor: pointer;
@@ -847,7 +837,7 @@
 
 	/* ── SECTIONS ── */
 	.section {
-		padding: 2.5rem 1rem;
+		padding: 1.5rem 1rem;
 		border-top: 1px solid rgba(255, 255, 255, 0.03);
 	}
 
@@ -862,8 +852,8 @@
 	}
 
 	.section-cta {
-		padding: 3rem 1rem;
-		border-top: 1px solid rgba(239, 68, 68, 0.08);
+		padding: 2rem 1rem;
+		border-top: 1px solid rgba(245, 158, 11, 0.08);
 	}
 
 	.section-inner {
@@ -880,12 +870,15 @@
 	}
 
 	.section-number {
-		font-size: 0.75rem;
-		font-weight: 800;
-		color: #f59e0b;
-		font-family: 'JetBrains Mono', monospace;
-		opacity: 0.7;
-		margin-bottom: 0.25rem;
+		font-size: 1.5rem;
+		font-weight: 900;
+		font-family: var(--font-primary);
+		background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		letter-spacing: 0.02em;
+		margin-bottom: 0.4rem;
 	}
 
 	.section-title {
@@ -894,10 +887,11 @@
 		color: #fafafa;
 		margin: 0 0 0.35rem;
 		letter-spacing: -0.03em;
+		text-wrap: balance;
 	}
 
 	.section-desc {
-		color: #71717a;
+		color: #e9eef5;
 		font-size: 0.9rem;
 		line-height: 1.6;
 		margin: 0;
@@ -916,33 +910,29 @@
 		flex-direction: column;
 		gap: 0.6rem;
 		padding: 1.5rem;
-		border-radius: 12px;
+		border-radius: 14px;
 		text-decoration: none;
-		border: 1px solid rgba(255, 255, 255, 0.05);
-		background: rgba(255, 255, 255, 0.02);
-		transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+		border: 1px solid rgba(148, 163, 184, 0.14);
+		background: linear-gradient(160deg, rgba(30, 41, 59, 0.55) 0%, rgba(15, 23, 42, 0.32) 100%);
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 		min-height: 44px;
 	}
 
 	.pillar-card:hover {
-		transform: translateY(-2px);
+		transform: translateY(-3px);
 	}
 
-	.pillar-amber { border-color: rgba(245, 158, 11, 0.12); }
-	.pillar-amber:hover { border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.03); }
-
-	.pillar-blue { border-color: rgba(59, 130, 246, 0.12); }
-	.pillar-blue:hover { border-color: rgba(59, 130, 246, 0.3); background: rgba(59, 130, 246, 0.03); }
-
-	.pillar-green { border-color: rgba(16, 185, 129, 0.12); }
-	.pillar-green:hover { border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.03); }
+	.pillar-amber:hover { border-color: rgba(245, 158, 11, 0.5); box-shadow: 0 12px 32px rgba(245, 158, 11, 0.14); }
+	.pillar-blue:hover { border-color: rgba(59, 130, 246, 0.5); box-shadow: 0 12px 32px rgba(59, 130, 246, 0.14); }
+	.pillar-green:hover { border-color: rgba(16, 185, 129, 0.5); box-shadow: 0 12px 32px rgba(16, 185, 129, 0.14); }
 
 	.pillar-num {
-		font-size: 0.65rem;
+		font-size: 0.9rem;
 		font-weight: 800;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 		letter-spacing: 0.1em;
-		opacity: 0.5;
+		opacity: 0.9;
 	}
 
 	.pillar-amber .pillar-num { color: #f59e0b; }
@@ -959,7 +949,7 @@
 
 	.pillar-body {
 		font-size: 0.88rem;
-		color: #71717a;
+		color: #e9eef5;
 		line-height: 1.65;
 		margin: 0;
 		flex: 1;
@@ -969,7 +959,7 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.35rem;
-		font-size: 0.78rem;
+		font-size: 0.86rem;
 		font-weight: 600;
 		margin-top: 0.25rem;
 	}
@@ -993,9 +983,15 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.35rem;
-		border: 1px solid rgba(255, 255, 255, 0.04);
-		background: rgba(255, 255, 255, 0.02);
+		border: 1px solid rgba(148, 163, 184, 0.12);
+		background: linear-gradient(160deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.28) 100%);
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+		transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 	}
+
+	.stat-card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35); }
+	.stat-danger:hover { border-color: rgba(245, 158, 11, 0.4); }
+	.stat-success:hover { border-color: rgba(16, 185, 129, 0.4); }
 
 	.card-corner {
 		position: absolute;
@@ -1013,41 +1009,41 @@
 	.stat-card:global(.stagger-in) .card-corner { opacity: 0.7; }
 	.stat-card:global(.stagger-in) .card-corner path { stroke-dashoffset: 0; }
 
-	.stat-danger .card-corner { color: #ef4444; }
+	.stat-danger .card-corner { color: #fb923c; }
 	.stat-success .card-corner { color: #10b981; }
-	.stat-danger { border-color: rgba(239, 68, 68, 0.1); }
+	.stat-danger { border-color: rgba(245, 158, 11, 0.1); }
 	.stat-success { border-color: rgba(16, 185, 129, 0.12); }
 
 	.stat-number {
 		font-size: clamp(1.3rem, 4vw, 1.8rem);
 		font-weight: 800;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 		letter-spacing: -0.02em;
 	}
-	.stat-danger .stat-number { color: #ef4444; }
+	.stat-danger .stat-number { color: #fb923c; }
 	.stat-success .stat-number { color: #10b981; }
 
 	.stat-label {
-		font-size: 0.72rem;
-		color: #94a3b8;
+		font-size: 0.82rem;
+		color: #dde4ef;
 		line-height: 1.4;
 	}
 
 	.stat-source {
 		display: inline-block;
 		margin-top: 0.3rem;
-		font-size: 0.6rem;
-		color: #64748b;
+		font-size: 0.82rem;
+		color: #dde4ef;
 		text-decoration: underline;
 		text-underline-offset: 2px;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 	}
 
 	/* ── SITUATION ── */
 	.situation-block { max-width: 700px; margin-bottom: 2rem; }
 
 	.situation-block p {
-		color: #a1a1aa;
+		color: #e9eef5;
 		font-size: 0.95rem;
 		line-height: 1.8;
 		margin: 0 0 1rem;
@@ -1067,27 +1063,27 @@
 		max-width: 720px;
 		margin: 0 0 1.75rem;
 		padding: 1rem;
-		background: rgba(127, 29, 29, 0.18);
-		border: 1px solid rgba(248, 113, 113, 0.35);
+		background: rgba(120, 53, 15, 0.18);
+		border: 1px solid rgba(245, 158, 11, 0.35);
 		border-radius: 10px;
 	}
 
 	.plan-preflight-title {
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 0.75rem;
+		font-family: var(--font-primary);
+		font-size: 0.85rem;
 		font-weight: 700;
-		color: #fecaca;
+		color: #fde9c8;
 		margin: 0 0 0.5rem;
 		letter-spacing: 0.04em;
 	}
 
 	.plan-preflight-body {
 		font-size: 0.88rem;
-		color: #fecaca;
+		color: #fde9c8;
 		line-height: 1.7;
 		margin: 0;
 	}
-	.plan-preflight-body strong { color: #fef2f2; }
+	.plan-preflight-body strong { color: #fdf6ec; }
 
 	.plan-statement { max-width: 700px; }
 
@@ -1102,7 +1098,7 @@
 
 	.plan-sub {
 		font-size: 1rem;
-		color: #71717a;
+		color: #e9eef5;
 		line-height: 1.75;
 		margin: 0;
 	}
@@ -1118,15 +1114,17 @@
 
 	.step-card {
 		padding: 1.5rem;
-		background: rgba(255, 255, 255, 0.02);
-		border: 1px solid rgba(255, 255, 255, 0.04);
-		border-radius: 12px;
-		transition: border-color 0.25s ease, background 0.25s ease;
+		background: linear-gradient(160deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.28) 100%);
+		border: 1px solid rgba(148, 163, 184, 0.12);
+		border-radius: 14px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+		transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 	}
 
 	.step-card:hover {
-		border-color: rgba(245, 158, 11, 0.15);
-		background: rgba(255, 255, 255, 0.03);
+		border-color: rgba(245, 158, 11, 0.4);
+		transform: translateY(-3px);
+		box-shadow: 0 12px 32px rgba(245, 158, 11, 0.12);
 	}
 
 	.step-header {
@@ -1139,8 +1137,8 @@
 	.step-num {
 		font-size: 1.8rem;
 		font-weight: 900;
-		color: rgba(245, 158, 11, 0.5);
-		font-family: 'JetBrains Mono', monospace;
+		color: rgba(245, 158, 11, 0.85);
+		font-family: var(--font-primary);
 		line-height: 1;
 		transition: color 0.2s ease;
 	}
@@ -1150,8 +1148,8 @@
 
 	.cost-label {
 		display: block;
-		font-size: 0.58rem;
-		color: #94a3b8;
+		font-size: 0.82rem;
+		color: #dde4ef;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		font-weight: 600;
@@ -1162,7 +1160,7 @@
 		font-size: 0.88rem;
 		font-weight: 700;
 		color: #10b981;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 	}
 
 	.step-title {
@@ -1175,7 +1173,7 @@
 
 	.step-body {
 		font-size: 0.85rem;
-		color: #71717a;
+		color: #e9eef5;
 		line-height: 1.7;
 		margin: 0 0 0.85rem;
 	}
@@ -1189,14 +1187,14 @@
 	}
 
 	.step-tag {
-		font-size: 0.62rem;
+		font-size: 0.82rem;
 		font-weight: 600;
 		padding: 0.2rem 0.45rem;
 		border-radius: 4px;
 		background: rgba(245, 158, 11, 0.06);
-		color: #a1a1aa;
+		color: #e9eef5;
 		border: 1px solid rgba(245, 158, 11, 0.08);
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 	}
 
 	.step-link {
@@ -1225,8 +1223,8 @@
 
 	.total-label {
 		display: block;
-		font-size: 0.58rem;
-		color: #94a3b8;
+		font-size: 0.82rem;
+		color: #dde4ef;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
 		font-weight: 600;
@@ -1238,14 +1236,14 @@
 		font-size: 1.5rem;
 		font-weight: 900;
 		color: #10b981;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 		letter-spacing: -0.03em;
 	}
 
 	.total-compare {
 		display: block;
-		font-size: 0.7rem;
-		color: #94a3b8;
+		font-size: 0.8rem;
+		color: #dde4ef;
 		margin-top: 0.2rem;
 	}
 
@@ -1294,9 +1292,9 @@
 
 	.timeline-period {
 		display: inline-block;
-		font-size: 0.65rem;
+		font-size: 0.76rem;
 		font-weight: 700;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 		color: #3b82f6;
 		letter-spacing: 0.06em;
 		margin-bottom: 0.35rem;
@@ -1316,7 +1314,7 @@
 
 	.timeline-desc {
 		font-size: 0.85rem;
-		color: #71717a;
+		color: #e9eef5;
 		line-height: 1.65;
 		margin: 0;
 	}
@@ -1334,12 +1332,12 @@
 	}
 	.blueprint-conjecture-notice svg { flex-shrink: 0; margin-top: 0.15rem; }
 	.blueprint-conjecture-notice p {
-		font-size: 0.75rem;
-		color: #64748b;
+		font-size: 0.85rem;
+		color: #dde4ef;
 		line-height: 1.6;
 		margin: 0;
 	}
-	.blueprint-conjecture-notice strong { color: #94a3b8; font-weight: 600; }
+	.blueprint-conjecture-notice strong { color: #dde4ef; font-weight: 600; }
 
 	/* ── CHAPTERS PROGRESS ── */
 	.chapters-progress {
@@ -1366,9 +1364,9 @@
 	}
 
 	.cp-text {
-		font-size: 0.7rem;
-		color: #94a3b8;
-		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.8rem;
+		color: #dde4ef;
+		font-family: var(--font-primary);
 	}
 
 	/* ── CHAPTERS LIST ── */
@@ -1384,15 +1382,16 @@
 		gap: 0.85rem;
 		padding: 0.85rem 1rem;
 		min-height: 52px;
-		border: 1px solid rgba(255, 255, 255, 0.03);
-		border-radius: 10px;
+		border: 1px solid rgba(148, 163, 184, 0.1);
+		border-radius: 12px;
 		text-decoration: none;
-		transition: border-color 0.2s ease, background 0.2s ease;
+		background: linear-gradient(160deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.2) 100%);
+		transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 	}
 
 	.chapter-row:hover {
-		border-color: rgba(245, 158, 11, 0.12);
-		background: rgba(255, 255, 255, 0.015);
+		border-color: rgba(245, 158, 11, 0.4);
+		transform: translateX(3px);
 	}
 
 	.chapter-done { border-color: rgba(16, 185, 129, 0.1); }
@@ -1406,10 +1405,10 @@
 		border-radius: 8px;
 		background: rgba(255, 255, 255, 0.03);
 		border: 1px solid rgba(255, 255, 255, 0.05);
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		font-weight: 700;
-		color: #94a3b8;
-		font-family: 'JetBrains Mono', monospace;
+		color: #dde4ef;
+		font-family: var(--font-primary);
 		flex-shrink: 0;
 	}
 
@@ -1429,8 +1428,8 @@
 	}
 
 	.chapter-desc {
-		font-size: 0.75rem;
-		color: #94a3b8;
+		font-size: 0.85rem;
+		color: #dde4ef;
 		margin: 0;
 		line-height: 1.3;
 		overflow: hidden;
@@ -1439,7 +1438,7 @@
 	}
 
 	.chapter-arrow {
-		color: #94a3b8;
+		color: #dde4ef;
 		flex-shrink: 0;
 		transition: color 0.2s ease, transform 0.2s ease;
 	}
@@ -1456,17 +1455,17 @@
 	.cta-border {
 		width: 36px;
 		height: 2px;
-		background: #ef4444;
+		background: #fb923c;
 		margin: 0 auto 1.25rem;
 	}
 
 	.cta-eyebrow {
-		font-size: 0.62rem;
+		font-size: 0.82rem;
 		font-weight: 700;
-		color: #ef4444;
+		color: #fb923c;
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-primary);
 		margin: 0 0 1.25rem;
 	}
 
@@ -1477,12 +1476,13 @@
 		margin: 0 0 1.25rem;
 		letter-spacing: -0.02em;
 		line-height: 1.5;
+		text-wrap: balance;
 	}
 
 	.cta-break { display: none; }
 
 	.cta-body {
-		color: #94a3b8;
+		color: #dde4ef;
 		font-size: 0.9rem;
 		line-height: 1.7;
 		margin: 0 0 2rem;
@@ -1503,13 +1503,13 @@
 	}
 
 	.cta-newsletter-label {
-		font-size: 0.78rem;
-		color: #94a3b8;
+		font-size: 0.86rem;
+		color: #dde4ef;
 		margin: 0 0 0.75rem;
 	}
 
 	/* ══════════════════════════════════════════════════════
-	   TABLET — 480px+
+	   TABLET - 480px+
 	   ══════════════════════════════════════════════════════ */
 	@media (min-width: 480px) {
 		.hero { padding: 4rem 1.25rem 3rem; }
@@ -1531,7 +1531,7 @@
 	}
 
 	/* ══════════════════════════════════════════════════════
-	   TABLET — 640px+
+	   TABLET - 640px+
 	   ══════════════════════════════════════════════════════ */
 	@media (min-width: 640px) {
 		.hero { padding: 5rem 1.5rem 3.5rem; }
@@ -1563,7 +1563,7 @@
 	}
 
 	/* ══════════════════════════════════════════════════════
-	   DESKTOP — 1024px+
+	   DESKTOP - 1024px+
 	   ══════════════════════════════════════════════════════ */
 	@media (min-width: 1024px) {
 		.hero { padding: 7rem 2rem 5rem; min-height: 90vh; }
@@ -1578,6 +1578,26 @@
 		.stats-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
 		.chapter-desc { white-space: nowrap; }
+	}
+
+	/* ══════════════════════════════════════════════════════
+	   PHONE - tighten vertical rhythm (<480px only; larger
+	   screens keep their roomier spacing via min-width blocks)
+	   ══════════════════════════════════════════════════════ */
+	@media (max-width: 479px) {
+		.hero-title { margin: 0 0 0.85rem; }
+		.hero-subtitle { margin: 0 0 0.85rem; }
+		.hero-question { margin: 0 0 0.85rem; }
+		.hero-answer { margin-bottom: 1.25rem; }
+
+		.section-header-row { margin-bottom: 1.1rem; }
+		.situation-block { margin-bottom: 1.25rem; }
+
+		.pillars-grid, .steps-grid, .stats-grid { gap: 0.6rem; }
+		.pillar-card, .step-card { padding: 1rem; }
+		.stat-card { padding: 1rem; }
+		.chapter-row { padding: 0.85rem 1rem; }
+		.timeline-item { margin-bottom: 1rem; }
 	}
 
 	/* ── REDUCED MOTION ── */

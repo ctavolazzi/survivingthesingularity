@@ -41,8 +41,8 @@
     }
   
     .pagination-info {
-      font-family: 'Orbitron', sans-serif;
-      color: #ff7708;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #f59e0b;
       flex: 0 0 auto;
     }
   

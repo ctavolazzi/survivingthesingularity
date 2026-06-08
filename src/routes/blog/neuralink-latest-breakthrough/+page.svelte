@@ -260,7 +260,7 @@
     --color-bg-primary: #111827;
     --color-bg-secondary: #1f2937;
     --color-text-primary: #f9fafb;
-    --color-text-secondary: #9ca3af;
+    --color-text-secondary: #e9eef5;
     --color-accent: #60a5fa;
     --color-accent-light: #93c5fd;
   }

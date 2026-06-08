@@ -17,44 +17,43 @@ export default {
             maxWidth: '65ch',
             color: 'inherit',
             a: {
-              color: '#ff7708',
+              color: '#f59e0b',
               '&:hover': {
-                color: '#ff9933',
+                color: '#fbbf24',
               },
             },
             h1: {
-              color: '#ff7708',
-              fontFamily: 'Orbitron, sans-serif',
+              color: '#f1f5f9',
+              fontFamily: 'Inter, system-ui, sans-serif',
             },
             h2: {
-              color: '#ff7708',
-              fontFamily: 'Orbitron, sans-serif',
+              color: '#f1f5f9',
+              fontFamily: 'Inter, system-ui, sans-serif',
             },
             h3: {
-              color: '#ff7708',
-              fontFamily: 'Orbitron, sans-serif',
+              color: '#e2e8f0',
+              fontFamily: 'Inter, system-ui, sans-serif',
             },
             h4: {
-              color: '#ff7708',
-              fontFamily: 'Orbitron, sans-serif',
+              color: '#e2e8f0',
+              fontFamily: 'Inter, system-ui, sans-serif',
             },
-            // ... you can add more specific styles here
           },
         },
       },
       colors: {
-        // flowbite-svelte
+        // Aligned with theme.css amber palette
         primary: {
-          50: '#FFF5F2',
-          100: '#FFF1EE',
-          200: '#FFE4DE',
-          300: '#FFD5CC',
-          400: '#FFBCAD',
-          500: '#FE795D',
-          600: '#EF562F',
-          700: '#EB4F27',
-          800: '#CC4522',
-          900: '#A5371B'
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f'
         }
       }
     }

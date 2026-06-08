@@ -109,7 +109,7 @@
     border-radius: 10px;
     background: rgba(15, 23, 42, 0.9);
     border: 1px solid rgba(148, 163, 184, 0.1);
-    color: #64748b;
+    color: #dde4ef;
     cursor: pointer;
     transition: all 0.2s;
     backdrop-filter: blur(8px);
@@ -134,9 +134,9 @@
   }
 
   .toc-title {
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     font-weight: 700;
-    color: #475569;
+    color: #dde4ef;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 0.25rem 0.5rem;
@@ -154,8 +154,8 @@
     width: 100%;
     text-align: left;
     padding: 0.4rem 0.5rem;
-    font-size: 0.78rem;
-    color: #64748b;
+    font-size: 0.86rem;
+    color: #dde4ef;
     background: none;
     border: none;
     border-radius: 6px;

@@ -151,9 +151,9 @@
     background: #0f172a;
     border: 1px solid rgba(148, 163, 184, 0.12);
     border-radius: 6px;
-    font-size: 0.68rem;
+    font-size: 0.86rem;
     font-weight: 600;
-    color: #cbd5e1;
+    color: #e9eef5;
     opacity: 0;
     pointer-events: none;
     transform: translateX(4px);
@@ -167,9 +167,9 @@
   }
 
   .fnav-pct {
-    font-size: 0.55rem;
-    color: #334155;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
     font-weight: 600;
     margin-top: 0.5rem;
   }

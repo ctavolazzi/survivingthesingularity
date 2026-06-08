@@ -58,32 +58,32 @@
         margin: 0 auto 2rem;
         max-width: 720px;
         padding: 1rem 1.25rem;
-        background: rgba(127, 29, 29, 0.18);
-        border: 1px solid rgba(248, 113, 113, 0.35);
+        background: rgba(120, 53, 15, 0.18);
+        border: 1px solid rgba(245, 158, 11, 0.35);
         border-radius: 10px;
     }
     .bb-title {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.72rem;
+        font-family: var(--font-primary);
+        font-size: 0.82rem;
         font-weight: 700;
-        color: #fca5a5;
+        color: #fcd34d;
         letter-spacing: 0.08em;
         margin: 0 0 0.5rem 0;
     }
     .bb-body {
         font-size: 0.85rem;
-        color: #fecaca;
+        color: #fde9c8;
         line-height: 1.6;
         margin: 0;
     }
     .bb-link {
-        color: #fca5a5;
+        color: #fcd34d;
         text-decoration: underline;
         text-underline-offset: 2px;
         font-weight: 600;
         white-space: nowrap;
     }
-    .bb-link:hover { color: #fef2f2; }
+    .bb-link:hover { color: #fdf6ec; }
     :global(.prose) {
         max-width: none;
     }

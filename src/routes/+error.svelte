@@ -45,7 +45,7 @@
     text-align: center;
   }
   .err-code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     font-size: 0.8rem;
     color: #f59e0b;
     letter-spacing: 0.15em;
@@ -61,7 +61,7 @@
     letter-spacing: -0.03em;
   }
   .err-msg {
-    color: #94a3b8;
+    color: #dde4ef;
     font-size: 1rem;
     line-height: 1.7;
     margin: 0 0 2rem 0;
@@ -78,7 +78,7 @@
     font-weight: 600;
     font-size: 0.88rem;
     text-decoration: none;
-    color: #a1a1aa;
+    color: #e9eef5;
     border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.15s ease;
   }

@@ -38,6 +38,14 @@
   });
 </script>
 
+<svelte:head>
+  <title>{post.title} | Surviving the Singularity</title>
+  <meta name="description" content={post.excerpt} />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={post.title} />
+  <meta property="og:description" content={post.excerpt} />
+</svelte:head>
+
 <div class="blog-post" in:fade={{ duration: 300, delay: 200 }}>
   <article class="prose prose-lg dark:prose-invert mx-auto px-4 py-8 max-w-4xl">
     <header class="mb-8">

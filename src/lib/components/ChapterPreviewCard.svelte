@@ -74,8 +74,8 @@
   }
 
   .ch-num {
-    font-family: var(--font-mono, 'JetBrains Mono', monospace);
-    font-size: 0.78rem;
+    font-family: var(--font-mono, var(--font-primary));
+    font-size: 0.86rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--color-primary, #f59e0b);
@@ -83,9 +83,9 @@
   }
 
   .read-time {
-    font-family: var(--font-mono, 'JetBrains Mono', monospace);
-    font-size: 0.72rem;
-    color: var(--color-text-muted, #64748b);
+    font-family: var(--font-mono, var(--font-primary));
+    font-size: 0.82rem;
+    color: var(--color-text-muted, #dde4ef);
   }
 
   .card-title {
@@ -99,7 +99,7 @@
 
   .card-teaser {
     font-size: 0.88rem;
-    color: var(--color-text-secondary, #94a3b8);
+    color: var(--color-text-secondary, #dde4ef);
     line-height: 1.55;
     margin: 0 0 1rem;
     /* Clamp teaser to 4 lines for consistent card heights */
@@ -111,7 +111,7 @@
   }
 
   .card-cta {
-    font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    font-family: var(--font-mono, var(--font-primary));
     font-size: 0.8rem;
     color: var(--color-primary, #f59e0b);
     margin-top: auto;

@@ -1,17 +1,20 @@
 <script>
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
-  import { fly } from 'svelte/transition';
+  import { fly, fade } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
 
   // Hybrid clickwrap consent. "I Agree" stores a versioned consent record
   // (timestamp + version) in localStorage. Banner re-shows if the version
   // string is bumped (e.g. when terms materially change).
-  const CONSENT_VERSION = 'v1-2026-05-26';
+  const CONSENT_VERSION = 'v2-2026-06-07';
   const CONSENT_KEY = 'sts:consent';
 
   let agreed = false;
   let agreedAt = '';
+  // "Disagree" does NOT persist - it locks the current page session. A refresh
+  // clears it and re-presents the banner so the user can accept.
+  let disagreed = false;
 
   onMount(() => {
     if (!browser) return;
@@ -27,6 +30,11 @@
     } catch {}
   });
 
+  // Lock page scroll while the lockout overlay is up.
+  $: if (browser) {
+    document.body.style.overflow = disagreed ? 'hidden' : '';
+  }
+
   function agree() {
     const at = new Date().toISOString();
     try {
@@ -37,10 +45,40 @@
     } catch {}
     agreedAt = at;
     agreed = true;
+    disagreed = false;
+  }
+
+  function disagree() {
+    disagreed = true;
+  }
+
+  function refresh() {
+    if (browser) location.reload();
   }
 </script>
 
-{#if !agreed}
+{#if disagreed}
+  <!-- Full-screen lockout. Covers everything; the only way forward is to
+       refresh and accept. -->
+  <div class="lockout" role="alertdialog" aria-modal="true" aria-label="Site locked" transition:fade={{ duration: 200 }}>
+    <div class="lockout-card">
+      <div class="lockout-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+          <rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2 class="lockout-title">Site locked</h2>
+      <p class="lockout-text">
+        You declined the terms. The site can't be used without agreeing.
+        Refresh and accept to continue.
+      </p>
+      <button type="button" class="lockout-btn" on:click={refresh}>
+        Refresh &amp; review terms
+      </button>
+    </div>
+  </div>
+{:else if !agreed}
   <aside
     class="disclaimer-popup"
     role="region"
@@ -56,15 +94,19 @@
         </svg>
       </div>
       <p class="dbnr-text">
-        <strong>For informational and educational purposes only.</strong>
-        Not professional advice. By using this site you agree to the
+        By using this site you agree to the
         <a href="/terms" class="dbnr-link-inline">Terms</a>,
         <a href="/disclaimer" class="dbnr-link-inline">Disclaimer</a>, and
         <a href="/policies" class="dbnr-link-inline">Privacy Policy</a>.
       </p>
-      <button type="button" class="dbnr-agree" on:click={agree} aria-label="I have read and agree to the Terms, Disclaimer, and Privacy">
-        I Agree
-      </button>
+      <div class="dbnr-actions">
+        <button type="button" class="dbnr-agree" on:click={agree} aria-label="I have read and agree to the Terms, Disclaimer, and Privacy">
+          I Agree
+        </button>
+        <button type="button" class="dbnr-disagree" on:click={disagree} aria-label="I do not agree to the terms">
+          Disagree
+        </button>
+      </div>
     </div>
   </aside>
 {/if}
@@ -75,15 +117,19 @@
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 9998;
+    /* Must outrank the White Rabbit debug trigger (z-index 9999), which
+       otherwise overlaps the buttons and swallows the tap, leaving
+       the banner undismissable and permanently covering page content. */
+    z-index: 10000;
     width: calc(100% - 2rem);
     max-width: 780px;
-    background: rgba(40, 10, 10, 0.97);
-    border: 1px solid rgba(248, 113, 113, 0.35);
+    /* Neutral slate surface with a subtle on-brand amber edge - no red. */
+    background: rgba(15, 23, 42, 0.97);
+    border: 1px solid rgba(245, 158, 11, 0.22);
     border-radius: 12px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(248, 113, 113, 0.1);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(148, 163, 184, 0.06);
   }
 
   .dbnr-inner {
@@ -91,45 +137,51 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: #fee2e2;
+    color: #e2e8f0;
   }
 
   .dbnr-icon {
     flex-shrink: 0;
-    color: #fca5a5;
+    color: #f59e0b;
   }
 
   .dbnr-text {
     margin: 0;
-    font-size: 0.78rem;
+    font-size: 0.86rem;
     line-height: 1.5;
     flex: 1;
   }
 
   .dbnr-text strong {
-    color: #fef2f2;
+    color: #f8fafc;
     font-weight: 700;
   }
 
   .dbnr-link-inline {
-    color: #fca5a5;
+    color: #f59e0b;
     text-decoration: underline;
     text-underline-offset: 2px;
     font-weight: 600;
   }
 
   .dbnr-link-inline:hover {
-    color: #fef2f2;
+    color: #fbbf24;
+  }
+
+  .dbnr-actions {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .dbnr-agree {
-    flex-shrink: 0;
-    background: #fee2e2;
-    color: #7f1d1d;
-    border: 1px solid #fecaca;
+    background: #f59e0b;
+    color: #0a0a0a;
+    border: 1px solid #f59e0b;
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    font-size: 0.78rem;
+    font-size: 0.86rem;
     font-weight: 700;
     line-height: 1;
     cursor: pointer;
@@ -138,14 +190,93 @@
   }
 
   .dbnr-agree:hover {
-    background: #fef2f2;
-    color: #450a0a;
+    background: #fbbf24;
+    border-color: #fbbf24;
   }
 
-  .dbnr-agree:focus-visible {
-    outline: 2px solid #fef2f2;
+  .dbnr-disagree {
+    background: transparent;
+    color: #cbd5e1;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .dbnr-disagree:hover {
+    border-color: rgba(148, 163, 184, 0.7);
+    color: #f8fafc;
+  }
+
+  .dbnr-agree:focus-visible,
+  .dbnr-disagree:focus-visible,
+  .lockout-btn:focus-visible {
+    outline: 2px solid #f59e0b;
     outline-offset: 2px;
   }
+
+  /* ── Lockout overlay ── */
+  .lockout {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: rgba(2, 6, 23, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .lockout-card {
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  }
+
+  .lockout-icon {
+    color: #f59e0b;
+    margin-bottom: 0.75rem;
+  }
+
+  .lockout-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #f8fafc;
+  }
+
+  .lockout-text {
+    margin: 0 0 1.5rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #dde4ef;
+  }
+
+  .lockout-btn {
+    background: #f59e0b;
+    color: #0a0a0a;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  .lockout-btn:hover { background: #fbbf24; }
 
   @media (max-width: 640px) {
     .disclaimer-popup {
@@ -153,17 +284,17 @@
       width: calc(100% - 1rem);
       border-radius: 10px;
     }
-    /* Keep a single compact row on mobile: short text + inline button.
-       No wrap, no full-width button — that was doubling the banner height. */
-    .dbnr-inner { padding: 0.6rem 0.7rem; gap: 0.6rem; align-items: center; }
+    /* Compact: short text + inline buttons side by side to save height. */
+    .dbnr-inner { padding: 0.5rem 0.65rem; gap: 0.5rem; align-items: center; }
     .dbnr-icon { display: none; }
-    .dbnr-text { font-size: 0.68rem; line-height: 1.4; }
-    .dbnr-agree {
-      padding: 0.55rem 0.85rem;
-      font-size: 0.72rem;
-      align-self: stretch;
+    .dbnr-text { font-size: 0.76rem; line-height: 1.35; }
+    .dbnr-actions { flex-direction: row; gap: 0.35rem; }
+    .dbnr-agree, .dbnr-disagree {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.76rem;
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 </style>

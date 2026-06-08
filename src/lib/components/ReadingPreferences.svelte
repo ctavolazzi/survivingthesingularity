@@ -170,14 +170,14 @@
   .prefs-close {
     background: none;
     border: none;
-    color: #475569;
+    color: #dde4ef;
     cursor: pointer;
     padding: 0.25rem;
     border-radius: 4px;
     transition: color 0.2s;
   }
 
-  .prefs-close:hover { color: #94a3b8; }
+  .prefs-close:hover { color: #dde4ef; }
 
   .prefs-group {
     margin-bottom: 0.85rem;
@@ -185,8 +185,8 @@
 
   .prefs-label {
     display: block;
-    font-size: 0.7rem;
-    color: #64748b;
+    font-size: 0.8rem;
+    color: #dde4ef;
     margin-bottom: 0.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -204,7 +204,7 @@
     background: rgba(30, 41, 59, 0.5);
     border: 1px solid rgba(148, 163, 184, 0.08);
     border-radius: 8px;
-    color: #94a3b8;
+    color: #dde4ef;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.15s;
@@ -224,7 +224,7 @@
   }
 
   .prefs-opt-text {
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     font-weight: 600;
   }
 
@@ -234,8 +234,8 @@
     background: none;
     border: 1px solid rgba(148, 163, 184, 0.06);
     border-radius: 8px;
-    color: #475569;
-    font-size: 0.72rem;
+    color: #dde4ef;
+    font-size: 0.82rem;
     cursor: pointer;
     font-family: inherit;
     transition: all 0.15s;
@@ -243,7 +243,7 @@
   }
 
   .prefs-reset:hover {
-    color: #94a3b8;
+    color: #dde4ef;
     border-color: rgba(148, 163, 184, 0.12);
   }
 </style>

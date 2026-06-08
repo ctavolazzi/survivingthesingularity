@@ -80,7 +80,7 @@
   
     .circle {
       fill: none;
-      stroke: #ff7708;
+      stroke: #f59e0b;
       stroke-width: 2.8;
       stroke-linecap: round;
       transition: stroke-dasharray 0.1s ease-out;
@@ -94,7 +94,7 @@
     }
   
     :global(.dark) .circle {
-      stroke: #ff9933;
+      stroke: #fbbf24;
     }
   
     :global(.dark) .floating-progress-indicator {

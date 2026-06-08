@@ -98,7 +98,7 @@
   }
 
   .section-number {
-    font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    font-family: var(--font-mono, var(--font-primary));
     font-weight: 700;
     color: var(--color-primary, #f59e0b);
     font-size: 0.85rem;
@@ -112,7 +112,7 @@
   }
 
   .arrow {
-    color: var(--color-text-muted, #64748b);
+    color: var(--color-text-muted, #dde4ef);
     opacity: 0;
     transform: translateX(-4px);
     transition: opacity 150ms ease, transform 150ms ease, color 150ms ease;

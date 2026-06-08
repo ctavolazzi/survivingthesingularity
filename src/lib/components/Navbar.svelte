@@ -235,7 +235,7 @@
   <div class="navbar-inner">
 
     <!-- Brand -->
-    <a href="/" class="nav-brand" on:click={(e) => navigateTo('/', e)} aria-label="Surviving the Singularity — home">
+    <a href="/" class="nav-brand" on:click={(e) => navigateTo('/', e)} aria-label="Surviving the Singularity, home">
       <span class="nav-brand-mark">STS</span>
       <span class="nav-brand-divider" aria-hidden="true"></span>
       <span class="nav-brand-text">Surviving the Singularity</span>
@@ -394,7 +394,7 @@
     font-weight: 800;
     color: #f59e0b;
     letter-spacing: 0.1em;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     flex-shrink: 0;
   }
 
@@ -432,7 +432,7 @@
 
   .nav-link {
     padding: 0.45rem 0.85rem;
-    color: #94a3b8;
+    color: #dde4ef;
     text-decoration: none;
     font-size: 0.88rem;
     font-weight: 500;
@@ -481,7 +481,7 @@
     border: none;
     border-radius: 10px;
     background: transparent;
-    color: #94a3b8;
+    color: #dde4ef;
     cursor: pointer;
     flex-shrink: 0;
     -webkit-tap-highlight-color: transparent;
@@ -560,12 +560,12 @@
   }
 
   .drawer-head-title {
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     font-weight: 800;
     color: rgba(245, 158, 11, 0.7);
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .drawer-close {
@@ -577,7 +577,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.03);
-    color: #94a3b8;
+    color: #dde4ef;
     cursor: pointer;
     transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
     box-shadow: 2px 2px 0 rgba(245, 158, 11, 0.08);
@@ -601,14 +601,14 @@
   .drawer-section { margin-bottom: 16px; }
 
   .drawer-section-label {
-    font-size: 0.6rem;
+    font-size: 0.82rem;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: rgba(245, 158, 11, 0.55);
     padding: 0 8px;
     margin-bottom: 4px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
     /* stagger animation */
     animation: drawerItemIn 0.44s cubic-bezier(0.16, 1, 0.3, 1) backwards;
     animation-delay: calc(var(--i, 0) * 0.03s + 0.08s);
@@ -634,7 +634,7 @@
     gap: 10px;
     padding: 10px 10px;
     text-decoration: none;
-    color: #cbd5e1;
+    color: #e9eef5;
     font-size: 0.95rem;
     font-weight: 600;
     border: 1px solid transparent;
@@ -671,7 +671,7 @@
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 9px;
-    color: #94a3b8;
+    color: #dde4ef;
     transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease, transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   .drawer-link-icon :global(svg) { width: 15px; height: 15px; }
@@ -698,9 +698,9 @@
   .drawer-link-label { font-weight: 700; color: inherit; line-height: 1.2; }
 
   .drawer-link-sub {
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     font-weight: 500;
-    color: #64748b;
+    color: #dde4ef;
     line-height: 1.3;
   }
   .drawer-link.is-current .drawer-link-sub { color: rgba(245, 158, 11, 0.55); }

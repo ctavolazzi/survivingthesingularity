@@ -465,7 +465,7 @@
     }
 
     .item-count {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       padding: 0.2rem 0.6rem;
     }
 

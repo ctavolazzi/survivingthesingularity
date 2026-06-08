@@ -123,8 +123,14 @@
 </script>
 
 {#if open}
-  <div class="palette-overlay" on:click={handleClose} transition:fade={{ duration: 150 }}>
-    <div class="palette" on:click|stopPropagation in:fly={{ y: -20, duration: 200 }}>
+  <button
+    type="button"
+    class="palette-overlay"
+    on:click={handleClose}
+    aria-label="Close command palette"
+    transition:fade={{ duration: 150 }}
+  ></button>
+  <div class="palette" role="dialog" aria-modal="true" aria-label="Command palette" in:fly={{ y: -20, duration: 200 }}>
       <div class="palette-input-wrap">
         <svg class="palette-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -178,24 +184,30 @@
         <span><kbd>esc</kbd> close</span>
       </div>
     </div>
-  </div>
 {/if}
 
 <style>
   .palette-overlay {
     position: fixed;
     inset: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
     z-index: 9999;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 15vh 1rem 2rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
   }
 
   .palette {
-    width: 100%;
+    position: fixed;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    width: calc(100% - 2rem);
     max-width: 580px;
     background: #0f172a;
     border: 1px solid rgba(148, 163, 184, 0.15);
@@ -213,7 +225,7 @@
   }
 
   .palette-search-icon {
-    color: #475569;
+    color: #dde4ef;
     flex-shrink: 0;
   }
 
@@ -229,16 +241,16 @@
   }
 
   .palette-input::placeholder {
-    color: #475569;
+    color: #dde4ef;
   }
 
   .palette-esc {
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     padding: 0.15rem 0.4rem;
     border: 1px solid rgba(148, 163, 184, 0.15);
     border-radius: 4px;
-    color: #475569;
-    font-family: 'JetBrains Mono', monospace;
+    color: #dde4ef;
+    font-family: var(--font-primary);
     background: rgba(30, 41, 59, 0.5);
   }
 
@@ -260,7 +272,7 @@
   .palette-empty {
     padding: 2rem;
     text-align: center;
-    color: #475569;
+    color: #dde4ef;
     font-size: 0.9rem;
   }
 
@@ -285,7 +297,7 @@
   }
 
   .palette-item-icon {
-    color: #475569;
+    color: #dde4ef;
     flex-shrink: 0;
   }
 
@@ -310,7 +322,7 @@
   }
 
   .palette-read-badge {
-    font-size: 0.6rem;
+    font-size: 0.82rem;
     padding: 0.1rem 0.35rem;
     background: rgba(16, 185, 129, 0.1);
     color: #10b981;
@@ -321,21 +333,21 @@
   }
 
   .palette-item-desc {
-    font-size: 0.75rem;
-    color: #475569;
+    font-size: 0.85rem;
+    color: #dde4ef;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   .palette-item-type {
-    font-size: 0.65rem;
-    color: #334155;
+    font-size: 0.76rem;
+    color: #dde4ef;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 600;
     flex-shrink: 0;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-primary);
   }
 
   .palette-footer {
@@ -347,8 +359,8 @@
   }
 
   .palette-footer span {
-    font-size: 0.65rem;
-    color: #334155;
+    font-size: 0.76rem;
+    color: #dde4ef;
     display: flex;
     align-items: center;
     gap: 0.3rem;
@@ -364,14 +376,15 @@
     border: 1px solid rgba(148, 163, 184, 0.1);
     border-radius: 3px;
     background: rgba(30, 41, 59, 0.3);
-    color: #475569;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.55rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
+    font-size: 0.82rem;
   }
 
   @media (max-width: 640px) {
-    .palette-overlay {
-      padding: 5vh 0.75rem;
+    .palette {
+      top: 5vh;
+      width: calc(100% - 1.5rem);
     }
 
     .palette-footer {

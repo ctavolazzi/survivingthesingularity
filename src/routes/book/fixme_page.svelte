@@ -48,7 +48,7 @@
 
   .disclaimer {
     background-color: #ffffff;
-    border-left: 4px solid #ff7708;
+    border-left: 4px solid #f59e0b;
     padding: 1.5rem;
     margin-bottom: 3rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -56,8 +56,8 @@
   }
 
   .disclaimer h1 {
-    font-family: 'Orbitron', sans-serif;
-    color: #ff7708;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #f59e0b;
     margin-bottom: 1rem;
     font-size: 1.5rem;
   }
@@ -68,20 +68,20 @@
   }
 
   .disclaimer a {
-    color: #ff7708;
+    color: #f59e0b;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
   }
 
   .disclaimer a:hover {
-    color: #ff9933;
+    color: #fbbf24;
     text-decoration: underline;
   }
 
   h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: #ff7708;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #f59e0b;
     margin-bottom: 1rem;
     font-size: 1.3rem;
   }
@@ -89,19 +89,19 @@
   /* Dark mode styles */
   :global(.dark) .disclaimer {
     background-color: #2d3748;
-    border-left-color: #ff9933;
+    border-left-color: #fbbf24;
   }
 
   :global(.dark) .disclaimer h1,
   :global(.dark) h2 {
-    color: #ff9933;
+    color: #fbbf24;
   }
 
   :global(.dark) .disclaimer a {
-    color: #ff9933;
+    color: #fbbf24;
   }
 
   :global(.dark) .disclaimer a:hover {
-    color: #ffb366;
+    color: #fcd34d;
   }
 </style>

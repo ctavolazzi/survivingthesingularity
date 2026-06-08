@@ -7,6 +7,10 @@
 
 /* Base */
 html {
+  /* Root size lifted to 125% so every rem-based size scales up for
+     readability (default browsers = 16px). Bump this one value to make
+     the whole site bigger or smaller. */
+  font-size: 125%;
   scroll-behavior: smooth;
   width: 100%;
   -webkit-text-size-adjust: 100%;

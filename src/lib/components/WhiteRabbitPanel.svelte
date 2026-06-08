@@ -49,11 +49,11 @@
 
   function getLevelColor(level) {
     return {
-      debug: '#64748b',
+      debug: '#dde4ef',
       info: '#3b82f6',
       warn: '#f59e0b',
-      error: '#ef4444'
-    }[level] || '#64748b';
+      error: '#fb923c'
+    }[level] || '#dde4ef';
   }
 
   $: liveTraces = getAllRabbits().map(r => r.report());
@@ -236,7 +236,7 @@
     border-radius: 8px;
     background: #3b82f6;
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.82rem;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -245,7 +245,7 @@
   }
 
   .rabbit-badge.error {
-    background: #ef4444;
+    background: #fb923c;
   }
 
   .rabbit-panel {
@@ -263,7 +263,7 @@
     flex-direction: column;
     backdrop-filter: blur(16px);
     font-family: 'JetBrains Mono', 'SF Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   .rabbit-header {
@@ -325,12 +325,12 @@
     color: #475569;
     cursor: pointer;
     font-family: inherit;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     transition: all 0.15s;
   }
 
-  .rabbit-tab:hover { color: #94a3b8; }
+  .rabbit-tab:hover { color: #dde4ef; }
 
   .rabbit-tab-active {
     color: #3b82f6;
@@ -352,7 +352,7 @@
     color: #475569;
     cursor: pointer;
     font-family: inherit;
-    font-size: 0.6rem;
+    font-size: 0.82rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: all 0.15s;
@@ -430,16 +430,16 @@
     color: #e2e8f0;
     font-weight: 600;
     flex: 1;
-    font-size: 0.72rem;
+    font-size: 0.82rem;
   }
 
   .trace-duration {
     color: #475569;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
   }
 
   .trace-badge {
-    font-size: 0.55rem;
+    font-size: 0.82rem;
     padding: 0.1rem 0.35rem;
     border-radius: 3px;
     font-weight: 700;
@@ -447,8 +447,8 @@
   }
 
   .trace-badge.error {
-    color: #ef4444;
-    background: rgba(239, 68, 68, 0.1);
+    color: #fb923c;
+    background: rgba(245, 158, 11, 0.1);
   }
 
   .trace-badge.warn {
@@ -458,7 +458,7 @@
 
   .trace-id {
     color: #334155;
-    font-size: 0.6rem;
+    font-size: 0.82rem;
     margin-top: 0.2rem;
   }
 
@@ -482,13 +482,13 @@
 
   .entry-time {
     color: #334155;
-    font-size: 0.6rem;
+    font-size: 0.82rem;
     min-width: 55px;
     flex-shrink: 0;
   }
 
   .entry-level {
-    font-size: 0.55rem;
+    font-size: 0.82rem;
     color: var(--entry-color);
     text-transform: uppercase;
     font-weight: 700;
@@ -497,14 +497,14 @@
   }
 
   .entry-msg {
-    color: #94a3b8;
-    font-size: 0.65rem;
+    color: #dde4ef;
+    font-size: 0.76rem;
     flex: 1;
   }
 
   .entry-data {
     color: #475569;
-    font-size: 0.58rem;
+    font-size: 0.82rem;
     max-width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -515,19 +515,19 @@
     display: block;
     width: 100%;
     padding: 0.4rem;
-    background: rgba(239, 68, 68, 0.05);
-    border: 1px solid rgba(239, 68, 68, 0.1);
+    background: rgba(245, 158, 11, 0.05);
+    border: 1px solid rgba(245, 158, 11, 0.1);
     border-radius: 6px;
-    color: #ef4444;
+    color: #fb923c;
     cursor: pointer;
     font-family: inherit;
-    font-size: 0.65rem;
+    font-size: 0.76rem;
     margin-bottom: 0.5rem;
     transition: all 0.15s;
   }
 
   .clear-btn:hover {
-    background: rgba(239, 68, 68, 0.1);
+    background: rgba(245, 158, 11, 0.1);
   }
 
   @media (max-width: 640px) {

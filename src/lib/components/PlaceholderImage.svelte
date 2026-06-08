@@ -94,24 +94,24 @@
   }
 
   .placeholder-text {
-    font-size: 0.78rem;
-    color: #475569;
+    font-size: 0.86rem;
+    color: #dde4ef;
     max-width: 300px;
     line-height: 1.4;
   }
 
   .placeholder-type {
-    font-size: 0.55rem;
-    color: #334155;
-    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    color: #dde4ef;
+    font-family: var(--font-primary);
     letter-spacing: 0.08em;
     font-weight: 600;
   }
 
   .placeholder-caption {
     margin-top: 0.5rem;
-    font-size: 0.75rem;
-    color: #475569;
+    font-size: 0.85rem;
+    color: #dde4ef;
     text-align: center;
     font-style: italic;
   }

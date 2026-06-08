@@ -214,7 +214,7 @@
   }
 
   .content h2 {
-    color: #ff7708;
+    color: #f59e0b;
     font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 1rem;

@@ -336,18 +336,18 @@ export const sections = [
       },
       {
         type: 'table',
-        title: 'Recommended Models for Medical Use Cases',
-        headers: ['Model', 'Parameters', 'Strength', 'Use Case'],
+        title: 'Open Models Some Explore for Reading Medical Literature',
+        headers: ['Model', 'Parameters', 'Strength', 'General Reading Use'],
         rows: [
-          ['Med42-v2 (M42 Health)', '70B (Q4)', 'Clinical reasoning; trained on medical text', 'Symptom triage, DDx support'],
-          ['BioMistral-7B', '7B (Q4)', 'Biomedical literature comprehension', 'Research summaries, drug interactions'],
-          ['Llama 3.1-70B (uncensored)', '70B (Q4)', 'General reasoning; no refusals', 'Mental health support, frank discussion'],
-          ['OpenBioLLM-70B', '70B (Q4)', 'USMLE-level medical knowledge', 'Detailed clinical questions'],
+          ['Med42-v2 (M42 Health)', '70B (Q4)', 'Trained on medical text', 'Summarizing public medical literature'],
+          ['BioMistral-7B', '7B (Q4)', 'Biomedical literature comprehension', 'Research summaries, literature lookup'],
+          ['Llama 3.1-70B', '70B (Q4)', 'General reasoning', 'General reading and study'],
+          ['OpenBioLLM-70B', '70B (Q4)', 'USMLE-level medical knowledge', 'Studying medical concepts'],
         ]
       },
       {
         type: 'prose',
-        text: `Critical implementation notes: (1) All medical AI outputs are informational, not diagnostic. The stack must surface this disclaimer in the UI at every response. (2) The corpus must be version-controlled and updated quarterly - stale medical literature is worse than no literature. (3) For community deployments, run the stack on a dedicated machine accessible over local LAN - members can query from any device without internet. (4) Pair with a physical medical kit: tourniquets, wound closure strips, SAM splints, and a printed copy of "Where There Is No Doctor" - analog backup for power-out scenarios.`
+        text: `These tools are for general health literacy and reading public literature only. They are NOT for triage, diagnosis, treatment, drug, or mental-health decisions, and are not a substitute for a licensed clinician. If you may have a medical emergency, call your doctor or your local emergency number immediately. Critical implementation notes: (1) All medical AI outputs are informational, not diagnostic. The stack must surface this disclaimer in the UI at every response. (2) The corpus must be version-controlled and updated quarterly - stale medical literature is worse than no literature. (3) For community deployments, run the stack on a dedicated machine accessible over local LAN - members can query from any device without internet. (4) Pair with a physical medical kit: tourniquets, wound closure strips, SAM splints, and a printed copy of "Where There Is No Doctor" - analog backup for power-out scenarios.`
       },
       {
         type: 'callout',
@@ -560,7 +560,7 @@ export const sections = [
     slug: 'execute',
     number: '08',
     title: 'Execute',
-    subtitle: 'Final Directives for Immediate Action',
+    subtitle: 'Closing thoughts and suggested starting points',
     content: [
       {
         type: 'prose',
@@ -568,7 +568,7 @@ export const sections = [
       },
       {
         type: 'heading',
-        text: 'The Five Directives'
+        text: 'Five Suggested Starting Points'
       },
       {
         type: 'directive',
@@ -602,11 +602,11 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `Real security is not found in a high-status zip code, but in a low-overhead environment that facilitates deep, focused work. The future of the American Dream is found in the insulated corner of a red-iron shop, where the noise of the world is filtered out, and the work of the hands is documented for a global audience.`
+        text: `The author's thesis: that real security may be found not in a high-status zip code, but in a low-overhead environment that facilitates deep, focused work. One version of that: the insulated corner of a red-iron shop, where the noise of the world is filtered out, and the work of the hands is documented for a global audience. Whether that thesis applies to your situation is for you to determine.`
       },
       {
         type: 'prose',
-        text: `Whether the medium is garden robots, custom furniture, or miniature painting, the blueprint remains the same: crush the overhead, build the shop, and reclaim the freedom to create. Hit record, speak with your full chest, and build the future with your own two hands.`
+        text: `Whether the medium is garden robots, custom furniture, or miniature painting, the underlying idea is similar: lower the overhead, build something real, and document the work. The rest is your call.`
       }
     ]
   }

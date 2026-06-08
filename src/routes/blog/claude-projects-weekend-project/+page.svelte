@@ -164,7 +164,7 @@
   }
 
   .blog-content :global(h1), .blog-content :global(h2), .blog-content :global(h3) {
-    color: #ff7708;
+    color: #f59e0b;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;

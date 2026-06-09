@@ -60,10 +60,6 @@
 
   {#if showResults}
     <div class="calc-results" in:fly={{ y: 20, duration: 400 }}>
-      <p class="calc-info-only">
-        This site is for informational and educational purposes only. Not professional advice. Consult all relevant professionals before making any decisions. Offered AS-IS.
-      </p>
-
       <div class="results-header">
         <h3 class="results-title">Directional Comparison</h3>
         <p class="results-subtitle">A toy model. Your real numbers will differ.</p>
@@ -85,7 +81,7 @@
       </div>
 
       <p class="calc-disclaimer">
-        Toy model. Ignores taxes, insurance, maintenance, opportunity cost, land/build variability, market conditions, and your situation. Not financial, real-estate, investment, or any other advice. Numbers shown are illustrative only and should not inform any decision. <a href="/disclaimer">Full disclaimer</a>.
+        The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
       </p>
     </div>
   {/if}

@@ -406,7 +406,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `Owner-builder routes exist in some jurisdictions. Whether any are appropriate for you depends on your local code, financing, insurance, climate, and skills. Reused, reclaimed, and adaptive-reuse pathways may also be options depending on local rules. Consult a licensed local professional before assuming any pathway is available to you.`
+        text: `Owner-builder routes exist in some jurisdictions. Whether any are appropriate for you depends on your local code, financing, insurance, climate, and skills. Reused, reclaimed, and adaptive-reuse pathways may also be options depending on local rules.`
       }
     ]
   },
@@ -524,7 +524,7 @@ export const sections = [
       },
       {
         type: 'prose',
-        text: `One model the author has explored: small-ticket custom video deliverables priced flat. Pricing, payment processing, and tax treatment vary - consult an accountant before treating any of this as a business plan.`
+        text: `One model the author has explored: small-ticket custom video deliverables priced flat. Pricing, payment processing, and tax treatment vary.`
       },
       {
         type: 'heading',
@@ -598,7 +598,7 @@ export const sections = [
         type: 'directive',
         number: '5',
         title: 'The Shop Build',
-        text: 'Some builds in this price range have been documented. Habitability standards, financing, and insurance considerations vary by jurisdiction and individual circumstance. Not advice.'
+        text: 'Some builds in this price range have been documented. Habitability standards, financing, and insurance considerations vary by jurisdiction and individual circumstance.'
       },
       {
         type: 'callout',

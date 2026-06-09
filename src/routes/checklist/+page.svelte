@@ -127,8 +127,8 @@
   </EmailGate>
 
   <p class="cl-disclaimer">
-    Informational and educational only. Not financial, legal, or professional advice.
-    <a href="/disclaimer">Read our disclaimers</a>.
+    The information here is a starting point for your own research, not a professional recommendation.
+    <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
   </p>
 </div>
 

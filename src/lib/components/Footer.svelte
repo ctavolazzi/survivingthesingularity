@@ -45,9 +45,9 @@
           ⚠ Informational &amp; educational use only
         </p>
         <p class="footer-disclaimer">
-          <strong>This site is for informational and educational purposes only. It is not professional advice and should not be used in place of professional advice. Please consult all relevant professionals before making any decisions.</strong>
-          You assume all risk for any action you take or fail to take based on anything you read here. See our <a href="/terms" class="footer-disclaimer-link">terms</a> and <a href="/policies" class="footer-disclaimer-link">privacy policy</a> for details.
-          <a href="/disclaimer" class="footer-disclaimer-link">Full disclaimer →</a>
+          <strong>The information here is a starting point for your own research, not a professional recommendation.</strong>
+          You assume all risk for any action you take or fail to take based on anything you read here.
+          <a href="/disclaimer" class="footer-disclaimer-link">Read our terms &amp; disclaimers</a>.
         </p>
       </div>
 

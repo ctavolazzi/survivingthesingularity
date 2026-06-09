@@ -14,7 +14,7 @@
       q: 'What are some alternatives to fiat savings accounts?',
       category: 'Capital Preservation',
       color: '#3b82f6',
-      a: `Inflation erodes purchasing power in savings accounts; that much is well-documented. Some people explore hard assets (land, tools, equipment), productive assets (small businesses, digital products), or inflation-hedged instruments. Each carries its own risks and legal/tax considerations. This is not financial advice; talk to a licensed financial advisor before making any changes to how you hold capital.`,
+      a: `Inflation erodes purchasing power in savings accounts; that much is well-documented. Some people explore hard assets (land, tools, equipment), productive assets (small businesses, digital products), or inflation-hedged instruments. Each carries its own risks and legal/tax considerations.`,
       tags: ['Not financial advice', 'Consult a licensed advisor', 'Individual situation varies'],
       link: null,
     },
@@ -22,7 +22,7 @@
       q: 'What might replace reliance on centralized safety nets?',
       category: 'Resilience Planning',
       color: '#10b981',
-      a: `Social safety nets have structural funding challenges in many countries. Some people find it useful to think about layered personal resilience: paid-off shelter, food production capacity, community relationships, and diversified income. None of this replaces professional insurance, legal, or financial planning; it's a complement, not a substitute. Local laws and codes vary enormously.`,
+      a: `Social safety nets have structural funding challenges in many countries. Some people find it useful to think about layered personal resilience: paid-off shelter, food production capacity, community relationships, and diversified income. Local laws and codes vary enormously.`,
       tags: ['Not a substitute for insurance', 'Local laws vary', 'Consult professionals'],
       link: null,
     },
@@ -88,7 +88,7 @@
 </div>
 
 <p class="faq-footer-note">
-  Everything above is conjecture based on one author's research. No outcome is guaranteed or promised. Mentions of specific products or approaches are illustrative, not endorsements. Consult licensed professionals before making any decisions. <a href="/disclaimer">Full disclaimer →</a>
+  The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
 </p>
 
 <style>

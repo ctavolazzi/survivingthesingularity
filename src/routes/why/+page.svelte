@@ -231,7 +231,7 @@
 			</div>
 
 			<p class="bench-note">
-				Figures shown are illustrative and drawn from public reporting by labs and benchmark authors. Benchmark results vary by version, methodology, prompting, and which "human" baseline is used. Treat all numbers as rough indicators, not authoritative measurements. Verify any figure you intend to rely on against the original source.
+				The information here is a starting point for your own research, not a professional recommendation. Figures are rough indicators drawn from public reporting; verify against the original source. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
 			</p>
 		</div>
 	</section>

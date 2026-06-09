@@ -81,7 +81,7 @@
 
   <div class="cd-warning">
     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="#fbbf24" stroke-width="1.1"/><path d="M6.5 3.5v3M6.5 8.5v.5" stroke="#fbbf24" stroke-width="1.4" stroke-linecap="round"/></svg>
-    <span>Toy model only. Not a forecast. Not financial advice. Illustrative arithmetic; ignores inflation, taxes, market conditions, life circumstances. Consult professionals before acting on anything.</span>
+    <span>The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.</span>
   </div>
 
   <!-- Top: ring + quick read -->
@@ -118,7 +118,6 @@
         <span class="readout-label">Illustrative time to $100K target</span>
         <span class="readout-val readout-highlight">{formatYears(yearsToTarget)}</span>
       </div>
-      <p class="readout-note">$100K is one rough illustrative target. Your real number could be higher or lower by a large margin depending on land, location, scope, and many other factors.</p>
     </div>
   </div>
 
@@ -229,6 +228,8 @@
     font-weight: 500;
     letter-spacing: 0.02em;
   }
+  .cd-warning a { color: #fde9b8; text-underline-offset: 2px; }
+  .cd-warning a:hover { color: #fff; }
 
   /* Top: ring + readout */
   .cd-top {

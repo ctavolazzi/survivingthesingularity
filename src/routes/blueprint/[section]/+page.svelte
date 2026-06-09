@@ -283,7 +283,7 @@
     </nav>
 
     <p class="endorsement-note">
-      <strong>Figures are approximate and illustrative.</strong> Any statistics, costs, or percentages in this chapter are one author's rough estimates drawn from public reporting and may be out of date or wrong; verify against current primary sources before relying on any of them. Any products, vendors, projects, or services named are referenced for information only: mentioning them is <strong>not an endorsement, recommendation, or affiliation</strong>, and this site receives no compensation for any link. Evaluate fit, safety, cost, and legality for your own situation, and consult qualified licensed professionals before acting.
+      <strong>The information here is a starting point for your own research, not a professional recommendation.</strong> Figures are rough estimates and any products named are referenced for information only, not endorsements. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
     </p>
 
     <div class="keyboard-hint">

@@ -88,10 +88,6 @@
 </script>
 
 <div class="dashboard" class:mounted>
-  <p class="dash-info-only">
-    This site is for informational and educational purposes only. Not professional advice. Consult all relevant professionals before making any decisions. Offered AS-IS.
-  </p>
-
   <div class="dash-grid">
     {#each metrics as metric, i}
       <div class="dash-card" style="animation-delay: {i * 80}ms">
@@ -126,7 +122,7 @@
   </div>
 
   <p class="dash-disclaimer">
-    Illustrative reference figures, not market data. Cost and savings figures vary widely by region, regulation, and individual circumstance. Numbers shown should not inform any decision. Not financial or economic advice. <a href="/disclaimer">Full disclaimer</a>.
+    The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
   </p>
 </div>
 

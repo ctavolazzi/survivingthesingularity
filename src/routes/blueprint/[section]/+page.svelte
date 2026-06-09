@@ -3,6 +3,7 @@
   import { goto } from '$app/navigation';
   import { getSection, getNextSection, getPrevSection, sections } from '$lib/data/blueprint.js';
   import { blueprintProgress } from '$lib/stores/progress.js';
+  import { jsonLd } from '$lib/utils/jsonld.js';
   import { toasts } from '$lib/stores/toasts.js';
   import ReadingPreferences from '$lib/components/ReadingPreferences.svelte';
   import BlueprintTOC from '$lib/components/BlueprintTOC.svelte';
@@ -143,7 +144,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{section.title} - The Blueprint" />
     <meta name="twitter:description" content={section.subtitle} />
-    {@html `<script type="application/ld+json">${JSON.stringify({
+    {@html `<script type="application/ld+json">${jsonLd({
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": section.title,

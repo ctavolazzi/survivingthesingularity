@@ -1,5 +1,6 @@
 import { marked } from 'marked';
 import matter from 'gray-matter';
+import DOMPurify from 'isomorphic-dompurify';
 
 /**
  * Parse markdown content and extract metadata, table of contents, and HTML content
@@ -54,8 +55,10 @@ export async function parseMarkdown(content) {
     (_, componentName) => `<svelte:component this={${componentName}} />`
   );
 
-  // Convert markdown to HTML
-  const htmlContent = marked.parse(processedContent);
+  // Convert markdown to HTML, then sanitize. Output is rendered via {@html}
+  // on blog/book pages, so we strip any script/handler payloads here to keep
+  // those render paths safe even if content ever becomes user-supplied.
+  const htmlContent = DOMPurify.sanitize(marked.parse(processedContent));
 
   return {
     metadata,

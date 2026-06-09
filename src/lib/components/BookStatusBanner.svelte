@@ -1,4 +1,6 @@
 <script>
+  import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
+
   const SUBSTACK_URL = 'https://thecoffeejesus.substack.com';
   const CONTACT_EMAIL = 'info@thecoffeejesus.com';
 </script>
@@ -31,22 +33,23 @@
 
       <p class="body">
         The book is being carefully edited and refined. No arbitrary release date.
-        it ships when it's genuinely ready. Subscribe free to get notified the moment it launches.
+        It ships when it's genuinely ready. Drop your email and you'll be the first to know the moment it launches.
       </p>
 
-      <!-- Substack CTA -->
-      <a
-        href={SUBSTACK_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-subscribe"
-      >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 4h16v4H4z"/><path d="M4 12h16"/><path d="M4 20h16"/>
-        </svg>
-        Subscribe Free on Substack
-      </a>
-      <p class="sub-meta">Free subscription · unsubscribe anytime</p>
+      <!-- Email capture (book release) -->
+      <div class="banner-signup">
+        <NewsletterSignup
+          source="book-banner"
+          label=""
+          placeholder="your@email.com"
+          buttonText="Notify Me at Launch"
+        />
+      </div>
+
+      <p class="sub-meta">
+        Prefer the long-form essays?
+        <a href={SUBSTACK_URL} target="_blank" rel="noopener noreferrer" class="email-link">Follow on Substack</a>.
+      </p>
 
       <!-- Preorder notice -->
       <div class="preorder-notice" role="note">
@@ -205,28 +208,9 @@
     margin: 0 0 1.75rem;
   }
 
-  /* Subscribe button */
-  .btn-subscribe {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    padding: 0.9rem 1.5rem;
-    background: linear-gradient(135deg, #f59e0b, #f97316);
-    color: #0f172a;
-    font-weight: 800;
-    font-size: 0.95rem;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-
-  .btn-subscribe:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 28px rgba(245, 158, 11, 0.35);
+  /* Email capture */
+  .banner-signup {
+    margin-bottom: 0.85rem;
   }
 
   .sub-meta {

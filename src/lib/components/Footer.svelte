@@ -42,11 +42,11 @@
     <div class="footer-bottom">
       <div class="footer-disclaimer-box">
         <p class="footer-disclaimer-title">
-          ⚠ Informational &amp; educational use only · offered AS-IS
+          ⚠ Informational &amp; educational use only
         </p>
         <p class="footer-disclaimer">
           <strong>This site is for informational and educational purposes only. It is not professional advice and should not be used in place of professional advice. Please consult all relevant professionals before making any decisions.</strong>
-          The site is offered AS-IS with no warranties of any kind and no obligation to update, correct, support, or maintain it. You assume all risk for any action you take or fail to take based on anything you read here.
+          You assume all risk for any action you take or fail to take based on anything you read here. See our <a href="/terms" class="footer-disclaimer-link">terms</a> and <a href="/policies" class="footer-disclaimer-link">privacy policy</a> for details.
           <a href="/disclaimer" class="footer-disclaimer-link">Full disclaimer →</a>
         </p>
       </div>

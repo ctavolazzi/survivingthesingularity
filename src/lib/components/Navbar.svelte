@@ -17,10 +17,12 @@
 
   // Nav structure: flat links for desktop, grouped for drawer
   const desktopLinks = [
+    { href: '/agi',       label: 'What is AGI' },
     { href: '/why',       label: 'Why' },
     { href: '/blueprint', label: 'Blueprint' },
     { href: '/book',      label: 'Book' },
     { href: '/blog',      label: 'Blog' },
+    { href: '/checklist', label: 'Free Checklist', accent: true },
   ];
 
   const drawerGroups = [
@@ -28,10 +30,16 @@
       label: 'Start here',
       links: [
         {
-          href: '/',
-          label: 'Home',
-          sub: 'The full picture',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+          href: '/checklist',
+          label: 'Free Readiness Checklist',
+          sub: '12 moves to make before AGI',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>`,
+        },
+        {
+          href: '/agi',
+          label: 'What is AGI?',
+          sub: 'The singularity, explained',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
         },
         {
           href: '/why',
@@ -249,6 +257,7 @@
             href={link.href}
             class="nav-link"
             class:active={isActive(link.href)}
+            class:nav-link-accent={link.accent}
             aria-current={isActive(link.href) ? 'page' : undefined}
             on:click={(e) => navigateTo(link.href, e)}
           >{link.label}</a>
@@ -444,6 +453,11 @@
   }
   .nav-link:hover { color: #e2e8f0; background: rgba(255, 255, 255, 0.04); }
   .nav-link.active { color: #f59e0b; background: rgba(245, 158, 11, 0.08); }
+  .nav-link-accent {
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+  .nav-link-accent:hover { background: rgba(245, 158, 11, 0.1); color: #fbbf24; }
 
   /* ── DESKTOP CTA ── */
   .nav-cta {

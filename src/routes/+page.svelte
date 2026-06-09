@@ -3,12 +3,15 @@
 	import { fade } from 'svelte/transition';
 	import { sections } from '$lib/data/blueprint.js';
 	import { blueprintProgress } from '$lib/stores/progress.js';
+	import { jsonLd } from '$lib/utils/jsonld.js';
 	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte';
 	import BookStatusBanner from '$lib/components/BookStatusBanner.svelte';
 	import FloatingNav from '$lib/components/FloatingNav.svelte';
 	import LiveDashboard from '$lib/components/LiveDashboard.svelte';
 	import InteractiveStackTable from '$lib/components/InteractiveStackTable.svelte';
 	import AGICountdown from '$lib/components/AGICountdown.svelte';
+
+	export let data;
 
 	const homeSections = [
 		{ id: 'brief', label: 'Brief' },
@@ -140,7 +143,7 @@
 	<meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image" content="/Surviving-the-Singularity-Cover.png" />
-	{@html `<script type="application/ld+json">${JSON.stringify({
+	{@html `<script type="application/ld+json">${jsonLd({
 		"@context": "https://schema.org",
 		"@type": "WebSite",
 		"name": "Surviving the Singularity",
@@ -174,23 +177,26 @@
 
 				<p class="hero-subtitle">
 					The old playbook (mortgage, career ladder, retire at 65) was designed for a world
-					that no longer exists. AI is rewriting every industry. Housing costs are out of control.
+					that no longer exists. AI is rewriting every industry. Costs are out of control.
 					But inside that disruption is an opportunity most people haven't seen yet.
 				</p>
 
 				<p class="hero-question">
-					What might <em>a new way of getting our needs met</em> look like at a fraction of the traditional cost?
+					What might <em>a new way of getting our needs met</em> look like at a <mark>fraction</mark> of the traditional cost?
 				</p>
 
 				<div class="hero-answer">
 					<div class="answer-bar"></div>
 					<div class="answer-content">
-						<p class="answer-tagline"><em>Live like your ancestors, with the tools of the modern world.</em></p>
-						<p class="answer-text">
-							Secure land. Build a shop. Grow food. Learn everything. Teach your kids to be <strong>curious</strong>, not just employees. This is one author's blueprint, for thinking about, not acting on without professional guidance.
-						</p>
+						<p class="answer-tagline"><em>Live like your ancestors, empowered by the tools and tech of our time.</em></p>
+						<ul class="answer-list">
+							<li>Gain back your autonomy</li>
+							<li>Build better systems</li>
+							<li>Grow your own food</li>
+							<li>Make robots labor for <em>you</em> — not some giant corporation</li>
+						</ul>
 						<p class="answer-cost">
-							Some scenarios model costs well below a traditional mortgage. <strong>Your real numbers will differ.</strong>
+							There is a new way of life emerging...are you ready?
 						</p>
 					</div>
 				</div>
@@ -203,6 +209,15 @@
 					<a href="#pillars" class="btn-secondary">
 						See the 3 Pillars
 					</a>
+				</div>
+
+				<div class="hero-signup">
+					<p class="hero-signup-lead">Be first when the book launches. Get the field notes I publish along the way.</p>
+					<NewsletterSignup source="hero" label="" placeholder="your@email.com" buttonText="Get Early Access" />
+					{#if data?.signupCount}
+						<p class="hero-social-proof">Join <strong>{data.signupCount.toLocaleString()}</strong> readers getting ready.</p>
+					{/if}
+					<a href="/checklist" class="hero-magnet-link">Or get the free Readiness Checklist →</a>
 				</div>
 
 				{#if completedCount > 0}
@@ -255,42 +270,57 @@
 				</div>
 			</div>
 
-			<div class="stats-grid" use:stagger>
-				<div class="stat-card stagger-item stat-danger">
-					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number" use:countUp={{ target: '23', suffix: '%' }}>0%</span>
-					<span class="stat-label">Cumulative U.S. CPI inflation, Jan 2020–Apr 2026 (approx.)</span>
-					<a class="stat-source" href="https://www.bls.gov/cpi/" target="_blank" rel="noopener noreferrer">Source: BLS CPI</a>
+			<div class="stats-section" use:stagger>
+				<div class="stats-row-label stats-row-label--danger">
+					<span class="row-label-line"></span>
+					<span class="row-label-text">The Problem</span>
+					<span class="row-label-line"></span>
 				</div>
-				<div class="stat-card stagger-item stat-danger">
-					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number" use:countUp={{ target: '420', prefix: '$', suffix: 'K' }}>$0K</span>
-					<span class="stat-label">Median U.S. home sale price, recent quarters (approx., varies)</span>
-					<a class="stat-source" href="https://fred.stlouisfed.org/series/MSPUS" target="_blank" rel="noopener noreferrer">Source: FRED MSPUS</a>
+				<div class="stats-row stats-row--danger">
+					<div class="stat-card stat-danger">
+						<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+						<span class="stat-number" use:countUp={{ target: '23', suffix: '%' }}>0%</span>
+						<span class="stat-label">Cumulative U.S. CPI inflation, Jan 2020–Apr 2026 (approx.)</span>
+						<a class="stat-source" href="https://www.bls.gov/cpi/" target="_blank" rel="noopener noreferrer">Source: BLS CPI</a>
+					</div>
+					<div class="stat-card stat-danger">
+						<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+						<span class="stat-number" use:countUp={{ target: '420', prefix: '$', suffix: 'K' }}>$0K</span>
+						<span class="stat-label">Median U.S. home sale price, recent quarters (approx., varies)</span>
+						<a class="stat-source" href="https://fred.stlouisfed.org/series/MSPUS" target="_blank" rel="noopener noreferrer">Source: FRED MSPUS</a>
+					</div>
+					<div class="stat-card stat-danger">
+						<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+						<span class="stat-number" use:countUp={{ target: '30', suffix: ' yrs' }}>0 yrs</span>
+						<span class="stat-label">Standard U.S. fixed-rate mortgage term (typical)</span>
+						<a class="stat-source" href="https://www.consumerfinance.gov/owning-a-home/loan-options/" target="_blank" rel="noopener noreferrer">Source: CFPB</a>
+					</div>
 				</div>
-				<div class="stat-card stagger-item stat-danger">
-					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number" use:countUp={{ target: '30', suffix: ' yrs' }}>0 yrs</span>
-					<span class="stat-label">Standard U.S. fixed-rate mortgage term (typical)</span>
-					<a class="stat-source" href="https://www.consumerfinance.gov/owning-a-home/loan-options/" target="_blank" rel="noopener noreferrer">Source: CFPB</a>
+
+				<div class="stats-row-label stats-row-label--success">
+					<span class="row-label-line"></span>
+					<span class="row-label-text">The Opportunity</span>
+					<span class="row-label-line"></span>
 				</div>
-				<div class="stat-card stagger-item stat-success">
-					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number">~85%</span>
-					<span class="stat-label">Drop in U.S. utility-scale solar installed cost, 2010–2023</span>
-					<a class="stat-source" href="https://emp.lbl.gov/utility-scale-solar" target="_blank" rel="noopener noreferrer">Source: LBNL / NREL</a>
-				</div>
-				<div class="stat-card stagger-item stat-success">
-					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number">16M+</span>
-					<span class="stat-label">U.S. self-employed workers (incorporated + unincorporated, recent BLS)</span>
-					<a class="stat-source" href="https://www.bls.gov/opub/ted/2023/number-of-self-employed-workers-up-from-2020-to-2022.htm" target="_blank" rel="noopener noreferrer">Source: BLS</a>
-				</div>
-				<div class="stat-card stagger-item stat-success">
-					<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-					<span class="stat-number">~$3.6K</span>
-					<span class="stat-label">Median U.S. farmland value per acre, 2023 (varies widely by region)</span>
-					<a class="stat-source" href="https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0823.pdf" target="_blank" rel="noopener noreferrer">Source: USDA NASS</a>
+				<div class="stats-row stats-row--success">
+					<div class="stat-card stat-success">
+						<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+						<span class="stat-number">~85%</span>
+						<span class="stat-label">Drop in U.S. utility-scale solar installed cost, 2010–2023</span>
+						<a class="stat-source" href="https://emp.lbl.gov/utility-scale-solar" target="_blank" rel="noopener noreferrer">Source: LBNL / NREL</a>
+					</div>
+					<div class="stat-card stat-success">
+						<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+						<span class="stat-number">16M+</span>
+						<span class="stat-label">U.S. self-employed workers (incorporated + unincorporated, recent BLS)</span>
+						<a class="stat-source" href="https://www.bls.gov/opub/ted/2023/number-of-self-employed-workers-up-from-2020-to-2022.htm" target="_blank" rel="noopener noreferrer">Source: BLS</a>
+					</div>
+					<div class="stat-card stat-success">
+						<svg class="card-corner" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M0 12 L0 1 L12 1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+						<span class="stat-number">~$3.6K</span>
+						<span class="stat-label">Median U.S. farmland value per acre, 2023 (varies widely by region)</span>
+						<a class="stat-source" href="https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0823.pdf" target="_blank" rel="noopener noreferrer">Source: USDA NASS</a>
+					</div>
 				</div>
 			</div>
 
@@ -298,15 +328,36 @@
 				<p>
 					A standard 30-year mortgage compounds total payments well above the sticker price; exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. <strong>None of these statements should be relied on without checking current data.</strong>
 				</p>
-				<p>
-					At the same time, some inputs that matter for a different kind of life have gotten dramatically cheaper or more accessible: utility-scale solar costs, consumer-grade GPUs capable of running local AI models, open-source automation projects, and free creator platforms.
-				</p>
+				<p>At the same time, some inputs for a different kind of life have gotten dramatically cheaper or more accessible:</p>
+				<ul class="answer-list situation-list">
+					<li>Utility-scale solar</li>
+					<li>Consumer GPUs that run local AI</li>
+					<li>Open-source automation projects</li>
+					<li>Free creator platforms</li>
+				</ul>
 				<p class="situation-punchline">
 					Before acting on any of this, talk to qualified professionals where you live.
 				</p>
 			</div>
 
 			<LiveDashboard />
+		</div>
+	</section>
+
+	<!-- LEAD MAGNET BAND -->
+	<section class="section" use:observe>
+		<div class="section-inner">
+			<a href="/checklist" class="magnet-band">
+				<div class="magnet-text">
+					<p class="magnet-eyebrow">Free · Start today</p>
+					<h2 class="magnet-title">The Singularity Readiness Checklist</h2>
+					<p class="magnet-sub">Twelve concrete moves to build independence before AGI reprices everything. See the first three free.</p>
+				</div>
+				<span class="magnet-cta">
+					Get the Checklist
+					<svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</span>
+			</a>
 		</div>
 	</section>
 
@@ -345,8 +396,9 @@
 					</div>
 					<h3 class="step-title">Start making content (responsibly)</h3>
 					<p class="step-body">
-						Public-facing creator work as one possible economic channel. Film what you learn, build, and figure out. The <strong>One-Hour Rule</strong>: anything that took you more than an hour to learn could be worth a video. <strong>Be responsible:</strong> don't share location, family, financial, or safety-sensitive details publicly.
+						One possible economic channel: film what you learn, build, and figure out. The <strong>One-Hour Rule</strong> — if it took you more than an hour to learn, it could be a video.
 					</p>
+					<p class="step-caveat">Be responsible: don't share location, family, financial, or safety-sensitive details publicly.</p>
 					<div class="step-tags">
 						<span class="step-tag">Outcomes vary widely</span>
 						<span class="step-tag">No income claim</span>
@@ -364,8 +416,9 @@
 					</div>
 					<h3 class="step-title">Find land or space</h3>
 					<p class="step-body">
-						Land prices vary enormously by country, region, and parcel. Owner-builder, reclaimed, refurbished, and adaptive-reuse pathways exist in many jurisdictions, each with very different legal and code regimes. Work with <strong>licensed local professionals</strong> before considering any purchase or build.
+						Land prices vary enormously by region and parcel. Owner-builder, reclaimed, refurbished, and adaptive-reuse pathways exist in many places.
 					</p>
+					<p class="step-caveat">Each carries very different legal and code regimes. Work with licensed local professionals before any purchase or build.</p>
 					<div class="step-tags">
 						<span class="step-tag">Local laws vary widely</span>
 						<span class="step-tag">Consult licensed professionals</span>
@@ -383,8 +436,9 @@
 					</div>
 					<h3 class="step-title">Build a Shop</h3>
 					<p class="step-body">
-						Not a house. A <strong>shouse</strong>. Shop first, shelter second. Steel building kit prices fluctuate with commodity markets. Habitability conversions are subject to local building codes and inspection regimes that vary by county. Consult a licensed contractor and your local permitting authority first.
+						Not a house. A <strong>shouse</strong> — shop first, shelter second. Steel kit prices swing with commodity markets.
 					</p>
+					<p class="step-caveat">Habitability conversions face local codes and inspections that vary by county. Consult a licensed contractor and your permitting authority first.</p>
 					<div class="step-tags">
 						<span class="step-tag">Code varies by county</span>
 						<span class="step-tag">Consult a contractor</span>
@@ -402,8 +456,9 @@
 					</div>
 					<h3 class="step-title">Build, Film, Automate, Teach</h3>
 					<p class="step-body">
-						Use the space. Document what you build. Open-source projects worth knowing about include <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (open-source CNC food-growing), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weights language models. None of this is an endorsement; evaluate fit, safety, and legality for your situation.
+						Use the space. Document what you build. Open-source projects worth knowing: <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (CNC food-growing), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weight models.
 					</p>
+					<p class="step-caveat">Not an endorsement — evaluate fit, safety, and legality for your situation.</p>
 					<div class="step-tags">
 						<span class="step-tag">Open-source projects, varies</span>
 						<span class="step-tag">Verify for your context</span>
@@ -541,8 +596,8 @@
 			</div>
 
 			<div class="cta-newsletter">
-				<p class="cta-newsletter-label">Get notified when new chapters drop</p>
-				<NewsletterSignup />
+				<p class="cta-newsletter-label">Get notified when the book drops. No spam, no noise.</p>
+				<NewsletterSignup source="footer-cta" label="" buttonText="Get Early Access" />
 			</div>
 		</div>
 	</section>
@@ -557,6 +612,15 @@
 
 	/* ── PAGE ── */
 	.page { display: flex; flex-direction: column; }
+
+	/* ── MARK EMPHASIS ── */
+	/* Light amber emphasis — no box, no underline (both read as link/button). */
+	mark {
+		background: none;
+		color: #fbbf24;
+		font-weight: 700;
+		text-decoration: none;
+	}
 
 	/* ── REVEAL ANIMATIONS ── */
 	.section > .section-inner {
@@ -725,13 +789,37 @@
 		line-height: 1.5;
 	}
 
-	.answer-text {
-		font-size: 0.95rem;
-		color: #d4d4d8;
-		line-height: 1.7;
-		margin: 0 0 0.65rem;
+	.answer-list {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 0.9rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.55rem;
 	}
-	.answer-text strong { color: #fafafa; font-weight: 700; }
+	.answer-list li {
+		position: relative;
+		padding-left: 1.35rem;
+		font-size: 0.95rem;
+		color: #e2e8f0;
+		line-height: 1.45;
+	}
+	.answer-list li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.55em;
+		width: 6px;
+		height: 6px;
+		border-radius: 1px;
+		background: #f59e0b;
+		transform: rotate(45deg);
+	}
+	.answer-list li :global(em) {
+		color: #fbbf24;
+		font-style: normal;
+		font-weight: 700;
+	}
 
 	.answer-cost {
 		font-size: 0.85rem;
@@ -746,6 +834,104 @@
 		flex-direction: column;
 		gap: 0.75rem;
 	}
+
+	.hero-signup {
+		margin-top: 1.75rem;
+		width: 100%;
+		max-width: 460px;
+		padding-top: 1.5rem;
+		border-top: 1px solid rgba(148, 163, 184, 0.1);
+	}
+
+	.hero-signup-lead {
+		font-size: 0.92rem;
+		font-weight: 600;
+		color: #cbd5e1;
+		margin: 0 0 0.85rem;
+		line-height: 1.45;
+	}
+
+	.hero-social-proof {
+		font-size: 0.84rem;
+		color: #94a3b8;
+		margin: 0.75rem 0 0;
+	}
+	.hero-social-proof strong { color: #f59e0b; font-weight: 700; }
+
+	.hero-magnet-link {
+		display: inline-block;
+		margin-top: 0.85rem;
+		font-size: 0.86rem;
+		font-weight: 600;
+		color: #f59e0b;
+		text-decoration: none;
+		transition: opacity 0.15s ease;
+	}
+	.hero-magnet-link:hover { opacity: 0.8; text-decoration: underline; text-underline-offset: 3px; }
+
+	/* ── LEAD MAGNET BAND ── */
+	.magnet-band {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+		padding: 1.75rem 2rem;
+		background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(249, 115, 22, 0.05));
+		border: 1px solid rgba(245, 158, 11, 0.3);
+		border-radius: 16px;
+		text-decoration: none;
+		transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+	}
+	.magnet-band:hover {
+		border-color: rgba(245, 158, 11, 0.55);
+		transform: translateY(-2px);
+		box-shadow: 0 12px 40px rgba(245, 158, 11, 0.12);
+	}
+
+	.magnet-text { flex: 1 1 320px; }
+
+	.magnet-eyebrow {
+		font-family: var(--font-primary, 'JetBrains Mono', monospace);
+		font-size: 0.74rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: #f59e0b;
+		margin: 0 0 0.5rem;
+	}
+
+	.magnet-title {
+		font-size: clamp(1.25rem, 3vw, 1.6rem);
+		font-weight: 800;
+		color: #f1f5f9;
+		letter-spacing: -0.02em;
+		margin: 0 0 0.5rem;
+		line-height: 1.2;
+	}
+
+	.magnet-sub {
+		font-size: 0.94rem;
+		color: #94a3b8;
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	.magnet-cta {
+		flex-shrink: 0;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.8rem 1.5rem;
+		background: linear-gradient(135deg, #f59e0b, #f97316);
+		color: #0f172a;
+		font-weight: 800;
+		font-size: 0.92rem;
+		border-radius: 10px;
+		white-space: nowrap;
+		transition: transform 0.2s ease;
+	}
+	.magnet-band:hover .magnet-cta { transform: translateX(3px); }
 
 	.hero-progress {
 		display: flex;
@@ -960,12 +1146,43 @@
 	.pillar-green .pillar-link { color: #10b981; }
 
 	/* ── STATS ── */
-	.stats-grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 0.6rem;
+	.stats-section {
 		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
+
+	.stats-row {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0.6rem;
+	}
+
+	.stats-row-label {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-top: 0.5rem;
+	}
+
+	.row-label-line {
+		flex: 1;
+		height: 1px;
+	}
+
+	.row-label-text {
+		font-size: 0.7rem;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.stats-row-label--danger .row-label-line { background: rgba(251, 146, 60, 0.25); }
+	.stats-row-label--danger .row-label-text { color: #fb923c; }
+	.stats-row-label--success .row-label-line { background: rgba(16, 185, 129, 0.25); }
+	.stats-row-label--success .row-label-text { color: #10b981; }
 
 	.stat-card {
 		position: relative;
@@ -1166,9 +1383,19 @@
 		font-size: 0.85rem;
 		color: #e9eef5;
 		line-height: 1.7;
-		margin: 0 0 0.85rem;
+		margin: 0 0 0.6rem;
 	}
 	.step-body strong { color: #d4d4d8; font-weight: 600; }
+
+	.step-caveat {
+		font-size: 0.74rem;
+		color: #8a96a6;
+		line-height: 1.55;
+		margin: 0 0 0.85rem;
+		padding-left: 0.65rem;
+		border-left: 2px solid rgba(148, 163, 184, 0.18);
+	}
+	.step-caveat :global(a) { color: inherit; text-decoration: underline; }
 
 	.step-tags {
 		display: flex;
@@ -1542,7 +1769,7 @@
 
 		.pillars-grid { grid-template-columns: 1fr; }
 
-		.stats-grid { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+		.stats-row { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
 
 		.steps-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 		.steps-total { flex-direction: row; }
@@ -1569,7 +1796,7 @@
 
 		.pillars-grid { grid-template-columns: repeat(3, 1fr); }
 
-		.stats-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+		.stats-row { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
 		.steps-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 
@@ -1597,7 +1824,7 @@
 		.section-header-row { margin-bottom: 1.1rem; }
 		.situation-block { margin-bottom: 1.25rem; }
 
-		.pillars-grid, .steps-grid, .stats-grid { gap: 0.6rem; }
+		.pillars-grid, .steps-grid, .stats-row { gap: 0.6rem; }
 		.pillar-card, .step-card { padding: 1rem; }
 		.stat-card { padding: 1rem; }
 		.chapter-row { padding: 0.85rem 1rem; }

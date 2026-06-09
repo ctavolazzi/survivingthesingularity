@@ -100,7 +100,7 @@
   {#if compact}
     <div class="ac-compact-links">
       <a class="ac-learn" href="/agi">What is AGI? Read the breakdown →</a>
-      <a class="ac-learn ac-learn-timeline" href="/timeline">Explore your personal timeline →</a>
+      <a class="ac-learn ac-learn-timeline" href="/agi#scenario">Explore your personal scenario →</a>
     </div>
     <p class="ac-disclaimer ac-disclaimer-mini">
       <a href="/disclaimer">Disclaimer</a>

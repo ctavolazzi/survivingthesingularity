@@ -4,6 +4,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
   import ToastContainer from '$lib/components/ToastContainer.svelte';
+  import StickyCaptureBar from '$lib/components/StickyCaptureBar.svelte';
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
   import { createRabbit } from '$lib/debug/white-rabbit.js';
@@ -83,6 +84,7 @@
   </main>
   <Footer />
   <ToastContainer />
+  <StickyCaptureBar />
   <CommandPalette bind:open={commandPaletteOpen} />
   {#if dev}
     <WhiteRabbitPanel />

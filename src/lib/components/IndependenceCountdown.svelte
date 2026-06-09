@@ -190,7 +190,7 @@
       <p class="deepdive-title">Want the full breakdown?</p>
       <p class="deepdive-sub">Anticipated tech products, real cost ranges, emerging robotics (Unitree, Figure AI, FarmBot, Asimov), and a more comprehensive scenario tool.</p>
     </div>
-    <a href="/timeline" class="deepdive-btn">
+    <a href="/agi#scenario" class="deepdive-btn">
       Explore the deep dive
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>

@@ -32,9 +32,7 @@
         making any decisions.</strong> Everything published here is the
         author's commentary, supposition, and synthesis of publicly available
         information. It may be wrong. It is almost certainly incomplete. It
-        will go out of date. The site is offered <strong>AS-IS</strong>, with
-        no warranties of any kind and no obligation to update, correct, support,
-        or maintain it.
+        will go out of date. See our <a href="/policies">privacy policy</a> and <a href="/terms">terms of use</a> for details on how this site operates and what you agree to by using it.
       </p>
     </section>
 
@@ -115,9 +113,7 @@
         operators of this site disclaim all liability for any loss, damage,
         injury, cost, or adverse outcome - direct, indirect, incidental,
         consequential, or otherwise - arising from your use of, reliance on, or
-        inability to use this site or its content. This site is provided
-        <strong>"as is" and "as available"</strong> with no warranties of any
-        kind, express or implied.
+        inability to use this site or its content. See our <a href="/terms">terms of use</a> and <a href="/policies">privacy policy</a> for the full scope of liability limitations and your rights.
       </p>
     </section>
 

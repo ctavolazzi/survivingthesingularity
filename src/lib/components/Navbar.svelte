@@ -20,6 +20,7 @@
     { href: '/agi',       label: 'What is AGI' },
     { href: '/why',       label: 'Why' },
     { href: '/blueprint', label: 'Blueprint' },
+    { href: '/shouse',    label: 'Game' },
     { href: '/book',      label: 'Book' },
     { href: '/blog',      label: 'Blog' },
     { href: '/checklist', label: 'Free Checklist', accent: true },
@@ -57,6 +58,12 @@
           label: 'Blueprint',
           sub: '8-chapter strategy guide',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`,
+        },
+        {
+          href: '/shouse',
+          label: 'Shouse Builder',
+          sub: 'Build the $25k shouse — a 3D strategy game',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 12 2 21 11 21 22 3 22"/><path d="M9 22v-6h6v6"/><path d="M12 8v3"/></svg>`,
         },
         {
           href: '/book',

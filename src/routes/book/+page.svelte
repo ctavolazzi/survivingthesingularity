@@ -8,6 +8,10 @@
 
   export let data;
 
+  // Set to the Gumroad URL on launch day — the Buy CTA below renders
+  // automatically when this is non-empty. Empty string = no change to site.
+  const PURCHASE_URL = '';
+
   const pillars = [
     {
       icon: '🧭',
@@ -55,9 +59,16 @@
         <a class="cta-primary" href="#chapter-previews">Read free chapters &rarr;</a>
         <a class="cta-secondary" href="/StS-free-sample.pdf" download>Download free sample (PDF)</a>
       </div>
-      <!-- Substack-first funnel: all "stay in touch" paths route to Substack.
-           When a direct book-purchase link goes live, swap this block for
-           <a class="cta-primary" href="<purchase-url>">Buy the book →</a>. -->
+      {#if PURCHASE_URL}
+        <div class="hero-preorder">
+          <div class="preorder-label">Part I: A Manual for the Cracks — available now.</div>
+          <a class="cta-primary subscribe-cta" href={PURCHASE_URL} target="_blank" rel="noopener noreferrer">
+            Buy the book → $7.99 launch week
+          </a>
+          <p class="preorder-meta">Instant EPUB download. Updates included forever.</p>
+        </div>
+      {/if}
+      <!-- Substack funnel stays as secondary path once PURCHASE_URL is live. -->
       <div class="hero-preorder">
         <div class="preorder-label">Updates are posted to Substack when posted at all.</div>
         <a class="cta-primary subscribe-cta" href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer">

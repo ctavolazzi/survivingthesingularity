@@ -10,6 +10,9 @@
 	import LiveDashboard from '$lib/components/LiveDashboard.svelte';
 	import InteractiveStackTable from '$lib/components/InteractiveStackTable.svelte';
 	import AGICountdown from '$lib/components/AGICountdown.svelte';
+	import PillarsLoopDiagram from '$lib/components/PillarsLoopDiagram.svelte';
+	import DivergenceDiagram from '$lib/components/DivergenceDiagram.svelte';
+	import WindowSim from '$lib/components/WindowSim.svelte';
 
 	export let data;
 
@@ -236,7 +239,6 @@
 	<section class="section" id="pillars" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">00</span>
 				<div>
 					<h2 class="section-title">Three Pillars</h2>
 					<p class="section-desc">The framework for material independence in the age of AI. Each pillar reinforces the others.</p>
@@ -256,6 +258,8 @@
 					</a>
 				{/each}
 			</div>
+
+			<PillarsLoopDiagram />
 		</div>
 	</section>
 
@@ -263,7 +267,6 @@
 	<section class="section" id="situation" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">01</span>
 				<div>
 					<h2 class="section-title">The Reality Check</h2>
 					<p class="section-desc">The numbers that explain why the old path doesn't work, and why a new one is possible.</p>
@@ -324,6 +327,8 @@
 				</div>
 			</div>
 
+			<DivergenceDiagram />
+
 			<div class="situation-block">
 				<p>
 					A standard 30-year mortgage compounds total payments well above the sticker price; exact figures depend on rate, taxes, insurance, and PMI. Dollar purchasing power has eroded materially since 2020 by most reasonable measures. <strong>None of these statements should be relied on without checking current data.</strong>
@@ -365,7 +370,6 @@
 	<section class="section section-emphasis" id="plan" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">02</span>
 				<div>
 					<h2 class="section-title">The Plan</h2>
 					<p class="section-desc">Four steps the author has been thinking about. Not a prescription. Material for your own evaluation with qualified professionals.</p>
@@ -484,7 +488,6 @@
 	<section class="section section-timeline" id="timeline" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">03</span>
 				<div>
 					<h2 class="section-title">The Window</h2>
 					<p class="section-desc">One author's hypothesis about how this unfolds. Educated guesses, not forecasts. The window to act is before these become mainstream, not after.</p>
@@ -508,6 +511,8 @@
 					</div>
 				{/each}
 			</div>
+
+			<WindowSim />
 		</div>
 	</section>
 
@@ -515,7 +520,6 @@
 	<section class="section" id="stack" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">04</span>
 				<div>
 					<h2 class="section-title">Alternatives to Consider</h2>
 					<p class="section-desc">Some systems worth thinking about differently. Each item is a starting point for your own research, not a recommendation.</p>
@@ -530,7 +534,6 @@
 	<section class="section" id="chapters" use:observe>
 		<div class="section-inner">
 			<div class="section-header-row">
-				<span class="section-number">05</span>
 				<div>
 					<h2 class="section-title">The Full Blueprint</h2>
 					<p class="section-desc">Eight chapters of conjecture and supposition based on one author's research. Not a roadmap. A way of thinking about what <em>might</em> be possible.</p>
@@ -1044,18 +1047,6 @@
 		flex-direction: column;
 		gap: 0.25rem;
 		margin-bottom: 2rem;
-	}
-
-	.section-number {
-		font-size: 1.5rem;
-		font-weight: 900;
-		font-family: var(--font-primary);
-		background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		letter-spacing: 0.02em;
-		margin-bottom: 0.4rem;
 	}
 
 	.section-title {
@@ -1762,7 +1753,6 @@
 			gap: 1.25rem;
 		}
 
-		.section-number { padding-top: 0.15rem; min-width: 30px; }
 
 		.hero-actions { flex-direction: row; flex-wrap: wrap; }
 		.btn-primary, .btn-secondary { flex: 0 1 auto; }

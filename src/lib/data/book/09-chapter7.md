@@ -1,5 +1,7 @@
 # Chapter 7: Love in the Time of Algorithms
 
+![Pepper, SoftBank's emotion-reading robot, working the room. It has never once ghosted anyone.](/book-images/ch07-pepper.jpg)
+
 Remember when finding a date meant putting on your best outfit, heading to a bar, and hoping you didn't have spinach in your teeth? Well, polish up your profile pic and update your status to "Single and ready to mingle with machines," because the world of romance is getting a digital makeover that would make even Cupid trade in his bow for a smartphone.
 
 Welcome to the brave new world of AI-powered relationships, where your perfect match is just an algorithm away, your dating coach lives in your phone, and your romantic rival might just be a very sophisticated chatbot.
@@ -132,12 +134,12 @@ Next time you're on a date, take a moment to appreciate the person across from y
 
 ## Dive Deeper
 
-Want to explore more about AI in relationships and dating? Scan these QR codes:
+Want to explore more about AI in relationships and dating? Here's where to start:
 
-[QR Code] - Watch: "The Future of Love: AI in Relationships"
+- Watch: "The Future of Love: AI in Relationships"
 
-[QR Code] - Read: "The Ethics of AI Companions"
+- Read: "The Ethics of AI Companions"
 
-[QR Code] - Try: An AI-powered compatibility test (But maybe don't base your entire love life on the results)
+- Try: An AI-powered compatibility test (But maybe don't base your entire love life on the results)
 
-[QR Code] - Explore: "The Psychology of Human-AI Relationships"
+- Explore: "The Psychology of Human-AI Relationships"

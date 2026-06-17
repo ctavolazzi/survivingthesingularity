@@ -1,5 +1,7 @@
 # Chapter 4: Dr. AI Will See You Now (No Lollipops, Just Binary Code)
 
+![The da Vinci Xi surgical system. Hands steadier than any surgeon who skipped lunch.](/book-images/ch04-da-vinci.jpg)
+
 Remember when visiting the doctor meant leafing through tattered magazines in a waiting room that reeked of disinfectant and despair? Buckle up, health nuts and hypochondriacs alike, because we're about to explore a brave new world where your physician might have more silicon than a Beverly Hills plastic surgeon's office.
 
 Welcome to the era of AI-powered healthcare, where your doctor could be an algorithm, your nurse might run on batteries, and your medical records are theoretically more secure than Fort Knox (fingers crossed, everyone).
@@ -152,14 +154,14 @@ Remember, the future of healthcare is like a box of chocolates - you never know 
 
 ## Dive Deeper (Into the Rabbit Hole of Health AI)
 
-Want to explore more about AI in healthcare? Of course you do, you hypochondriac in training. Scan these QR codes:
+Want to explore more about AI in healthcare? Of course you do, you hypochondriac in training. Here's where to start:
 
-[QR Code] - Watch: "The AI Revolution in Medicine" (Warning: May cause sudden urge to enroll in medical school or computer science program)
+- Watch: "The AI Revolution in Medicine" (Warning: May cause sudden urge to enroll in medical school or computer science program)
 
-[QR Code] - Read: "Ethical Considerations of AI in Healthcare" (Subtitle: "No, Your Roomba Can't Perform Surgery... Yet")
+- Read: "Ethical Considerations of AI in Healthcare" (Subtitle: "No, Your Roomba Can't Perform Surgery... Yet")
 
-[QR Code] - Try: An AI-powered symptom checker (But maybe don't use it to self-diagnose that weird rash. Seriously, just call a doctor.)
+- Try: An AI-powered symptom checker (But maybe don't use it to self-diagnose that weird rash. Seriously, just call a doctor.)
 
-[QR Code] - Explore: "The Future of Personalized Medicine" (Spoiler: Your DNA is about to become your doctor's favorite bedtime reading)
+- Explore: "The Future of Personalized Medicine" (Spoiler: Your DNA is about to become your doctor's favorite bedtime reading)
 
 Next up in Chapter 5, we'll dive into the world of AI in education. Spoiler alert: Your next pop quiz might be given by a robot who definitely won't accept "the dog ate my homework" as an excuse! Get ready for "School of the Future: No Hoverboards, Just Smart Blackboards." Will AI finally make algebra interesting? Will it be able to decipher teenagers' handwriting? Stay tuned to find out!

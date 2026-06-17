@@ -1,5 +1,7 @@
 # Chapter 10: Money Never Sleeps, and Neither Do the AIs
 
+![The New York Stock Exchange trading floor: humans posing for cameras while the algorithms do the actual trading.](/book-images/ch10-nyse.jpg)
+
 Remember when Wall Street hotshots were the epitome of "money never sleeps"? Well, move over, Gordon Gekko. AI doesn't just skip sleep, it runs 24/7, hunts market inefficiencies in microseconds, and never complains about a caffeine shortage. From algorithmic trading bots to robo-advisors, get ready for a finance sector that's more code than cocaine.
 
 ### High-Frequency Trading: The Flash Boys Are Robots
@@ -68,8 +70,8 @@ Banks, insurers, and credit card companies love data even more than your nosy re
 
 Finance has always been a game of information, speed, and guts. With AI, the playing field turns into a lightning-fast labyrinth of data streams and instant decisions. That might democratize investing by giving average folks advanced tools, or it might widen the gap between AI haves and have-nots. Either way, your wallet's new BFF might just be a chunk of code that never blinks, so keep your eyes open, your wits sharp, and your sense of humor ready for the next market meltdown.
 
-[QR Code 1]: Explore: "High-Frequency Trading Explained"
-[QR Code 2]: Watch: "Robo-Advisors vs. Human Advisors"
-[QR Code 3]: Read: "AI in Crypto Markets - Risks & Rewards"
-[QR Code 4]: Interactive: "Build Your Own Trading Bot (Sandbox)"
-[QR Code 5]: Listen: "Experts Debate: The Future of Algorithmic Finance"
+- Explore: "High-Frequency Trading Explained"
+- Watch: "Robo-Advisors vs. Human Advisors"
+- Read: "AI in Crypto Markets - Risks & Rewards"
+- Interactive: "Build Your Own Trading Bot (Sandbox)"
+- Listen: "Experts Debate: The Future of Algorithmic Finance"

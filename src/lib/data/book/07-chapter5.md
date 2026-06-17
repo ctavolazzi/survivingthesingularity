@@ -1,5 +1,7 @@
 # Chapter 5: School of the Future (No Hoverboards, Just Smart Blackboards)
 
+![A NAO robot in a university robotics lab. It will explain fractions for the fourteenth time without sighing.](/book-images/ch05-nao.jpg)
+
 Remember when the height of classroom technology was a calculator that could spell 'BOOBIES' upside down? Well, strap in, future scholars, because education is getting a high-tech makeover that would make even Ms. Frizzle's Magic School Bus look like a horse and buggy.
 
 Welcome to the AI-powered classroom, where the teachers sometimes have more silicon than a Hollywood red carpet, the textbooks update themselves faster than your Instagram feed, and passing notes has been replaced by neural network nudges. Don't worry, though - school picture day is still awkward. Some things are sacred.
@@ -232,12 +234,12 @@ Class dismissed! But don't worry, your AI tutor will be available 24/7 if you ne
 
 ## Dive Deeper
 
-Want to explore more about AI in education? Scan these QR codes:
+Want to explore more about AI in education? Here's where to start:
 
-[QR Code] - Watch: "The Classroom of Tomorrow: AI in Education"
+- Watch: "The Classroom of Tomorrow: AI in Education"
 
-[QR Code] - Read: "Ethical Considerations of AI-Powered Learning"
+- Read: "Ethical Considerations of AI-Powered Learning"
 
-[QR Code] - Try: An AI-powered tutoring session (but maybe don't ask it to do your homework for you)
+- Try: An AI-powered tutoring session (but maybe don't ask it to do your homework for you)
 
-[QR Code] - Explore: "The Global Impact of AI on Educational Access"
+- Explore: "The Global Impact of AI on Educational Access"

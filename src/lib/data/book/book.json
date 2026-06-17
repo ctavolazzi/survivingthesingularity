@@ -15,6 +15,11 @@
       "file": "02-introduction.md"
     },
     {
+      "id": "part-1",
+      "title": "Part I: The Wave",
+      "file": "part1-divider.md"
+    },
+    {
       "id": "chapter1",
       "title": "Chapter 1: What the Hell is Going On?: An Overview of AI and the Singularity",
       "file": "03-chapter1.md"
@@ -75,6 +80,66 @@
       "file": "14-chapter12.md"
     },
     {
+      "id": "part-2",
+      "title": "Part II: Build a Better Tomorrow",
+      "file": "part2-divider.md"
+    },
+    {
+      "id": "ch13",
+      "title": "Chapter 13: The Thermodynamics of Survival",
+      "file": "p2-01-chapter13.md"
+    },
+    {
+      "id": "ch14",
+      "title": "Chapter 14: The Collapse of the Long Tail",
+      "file": "p2-02-chapter14.md"
+    },
+    {
+      "id": "ch15",
+      "title": "Chapter 15: Cognitive Firewalls and Semantic Hygiene",
+      "file": "p2-03-chapter15.md"
+    },
+    {
+      "id": "ch16",
+      "title": "Chapter 16: The Great Slop-ocalypse and Algorithmic Judo",
+      "file": "p2-04-chapter16.md"
+    },
+    {
+      "id": "ch17",
+      "title": "Chapter 17: The Sovereign Shell ($25,000 Exit Strategy)",
+      "file": "p2-05-chapter17.md"
+    },
+    {
+      "id": "ch18",
+      "title": "Chapter 18: DC-Native Solar and Recycled Storage",
+      "file": "p2-06-chapter18.md"
+    },
+    {
+      "id": "ch19",
+      "title": "Chapter 19: The Crucible (Local Servers and Air-Gapped Sandboxes)",
+      "file": "p2-07-chapter19.md"
+    },
+    {
+      "id": "ch20",
+      "title": "Chapter 20: The Robot in the Soil (FarmBot and Biological Refineries)",
+      "file": "p2-08-chapter20.md"
+    },
+    {
+      "id": "ch21",
+      "title": "Chapter 21: The Philosophy of the Commons",
+      "file": "p2-09-chapter21.md"
+    },
+    {
+      "id": "ch22",
+      "title": "Chapter 22: The Sovereign Protocol (Mesh Networks, LoRa, and Offline Communication)",
+      "file": "p2-10-chapter22.md"
+    },
+    {
+      "id": "ch23",
+      "title": "Chapter 23: The Sovereign Horizon (The Semi-Autonomous CSA and the Shouse Grid)",
+      "file": "p2-11-chapter23.md"
+    },
+    {
       "id": "epilogue",
       "title": "Epilogue: The Future is Unwritten (But Probably Typed by an AI)",
       "file": "15-epilogue.md"
@@ -90,9 +155,9 @@
       "file": "17-further-reading.md"
     },
     {
-      "id": "index",
-      "title": "Index",
-      "file": "18-index.md"
+      "id": "image-credits",
+      "title": "Image Credits",
+      "file": "19-image-credits.md"
     }
   ]
 }

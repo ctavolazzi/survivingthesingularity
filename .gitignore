@@ -46,3 +46,4 @@ logs
 *.sln
 *.sw?
 *.bak
+book-build/

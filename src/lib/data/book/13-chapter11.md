@@ -1,5 +1,7 @@
 # Chapter 11: The Singularity: When AI Becomes SMARTer Than U
 
+![Spot, Boston Dynamics' robot dog, out for a stroll. The future does not knock. It opens the door by itself.](/book-images/ch11-spot.jpg)
+
 Buckle up, buttercup. We're about to take a ride on the wildest roller coaster in the tech park: The Singularity Spinner. It's got more twists than a pretzel factory and enough G-force to make your brain question its life choices. But here's the kicker - we're still building this bad boy as we ride it.
 
 Welcome to the mind-bending world of the Technological Singularity, where the future is so bright, you're gonna need shades... and possibly a new definition of what it means to be human.
@@ -120,12 +122,12 @@ As we stand on the brink of this technological revolution, remember that the fut
 
 ## Dive Deeper
 
-Want to explore more about the Singularity and future AI projections? Scan these QR codes:
+Want to explore more about the Singularity and future AI projections? Here's where to start:
 
-[QR Code] - Watch: "The Road to Superintelligence"
+- Watch: "The Road to Superintelligence"
 
-[QR Code] - Read: "Ethical Considerations of Superintelligent AI"
+- Read: "Ethical Considerations of Superintelligent AI"
 
-[QR Code] - Try: Participate in a Singularity prediction market
+- Try: Participate in a Singularity prediction market
 
-[QR Code] - Explore: "Transhumanism and the Future of Humanity"
+- Explore: "Transhumanism and the Future of Humanity"

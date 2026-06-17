@@ -1,5 +1,7 @@
 # Chapter 6: When Robots Get Creative (Spoiler: It's Weird)
 
+![Portrait of Edmond de Belamy, painted by an algorithm and sold at Christie's for $432,500. The AI did not get a cut.](/book-images/ch06-edmond-de-belamy.png)
+
 Remember when art class meant splattering paint on a canvas and calling it "abstract expressionism"? Well, hold onto your berets, because the world of art and creativity is getting a silicon-based makeover that would make even Picasso's cubist paintings look conventional.
 
 Welcome to the brave new world of AI-generated art, where the painters are algorithms, the musicians are neural networks, and the writers... well, they're still suffering from crippling self-doubt and caffeine addiction, but now they're competing with machines that never get writer's block.
@@ -159,12 +161,12 @@ Next time you're in a modern art museum, take a moment to appreciate the works a
 
 ## Dive Deeper
 
-Want to explore more about AI in art and creativity? Scan these QR codes:
+Want to explore more about AI in art and creativity? Here's where to start:
 
-[QR Code] - Watch: "The Rise of AI Artists"
+- Watch: "The Rise of AI Artists"
 
-[QR Code] - Read: "The Ethics of AI-Generated Art"
+- Read: "The Ethics of AI-Generated Art"
 
-[QR Code] - Try: Generate your own AI art (but maybe don't quit your day job just yet)
+- Try: Generate your own AI art (but maybe don't quit your day job just yet)
 
-[QR Code] - Explore: "The Future of Human-AI Creative Collaboration"
+- Explore: "The Future of Human-AI Creative Collaboration"

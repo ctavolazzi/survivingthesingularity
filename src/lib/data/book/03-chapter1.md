@@ -1,5 +1,7 @@
 # Chapter 1: Confronting Our Fears Head On
 
+![Atlas, Boston Dynamics' humanoid robot, during DARPA testing. It does backflips now. When was your last backflip?](/book-images/ch01-atlas.jpg)
+
 ## What the fuck is going on?
 
 No, seriously.
@@ -92,8 +94,8 @@ Remember, the future isn't set in stone. It's being written right now, by us and
 
 7. Reflect on your daily interactions with AI (like smartphone assistants, recommendation algorithms, etc.). How aware are you of these interactions? How do they impact your decisions?
 
-[QR Code 1]: Explore: "AI Basics Explained"
-[QR Code 2]: Watch: "The History and Future of AI"
-[QR Code 3]: Read: "Ethical Considerations in AI Development"
-[QR Code 4]: Interactive: "AI in Your Daily Life: A Guided Tour"
-[QR Code 5]: Listen: "Experts Discuss: Thriving in the Age of AI"
+- Explore: "AI Basics Explained"
+- Watch: "The History and Future of AI"
+- Read: "Ethical Considerations in AI Development"
+- Interactive: "AI in Your Daily Life: A Guided Tour"
+- Listen: "Experts Discuss: Thriving in the Age of AI"

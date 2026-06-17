@@ -1,5 +1,7 @@
 # Chapter 12: So Long, and Thanks for All the Data
 
+![FarmBot Genesis: an open-source farming robot quietly growing dinner in a backyard near you.](/book-images/ch12-farmbot.jpg)
+
 Well, dear reader, you've made it. You've survived our whirlwind tour of the AI landscape, from the mundane to the mind-bending, from digital assistants to potential digital overlords. If your brain feels like it's been through a mental marathon, don't worry - that's just the sensation of your neurons frantically trying to process the future shock. Take a deep breath. Have a cookie. Maybe ask your AI assistant to order you a comfy tinfoil hat.
 
 As we wrap up this wild ride, let's take a moment to reflect on our journey and ponder what it all means for us mere mortals trying to survive (and thrive) in the age of AI.

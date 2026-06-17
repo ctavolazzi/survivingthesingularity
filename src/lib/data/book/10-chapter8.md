@@ -1,5 +1,7 @@
 # Chapter 8: Lights, Camera, Algorithm!
 
+![Sophia the robot: more media credits than most working actors, and a more consistent skincare routine than you.](/book-images/ch08-sophia.jpg)
+
 Remember when "binge-watching" meant sitting through a Friends marathon on TV, and the most advanced thing about your media consumption was remembering to rewind the VHS tape? Well, grab your popcorn and settle into your ergonomic viewing chair, because the world of entertainment is getting a high-tech makeover that would make even the Jetsons' TV setup look quaint.
 
 Welcome to the brave new world of AI-powered entertainment, where the scripts are written by algorithms, the actors never age (or demand a bigger trailer), and your viewing experience is more personalized than your coffee order.
@@ -134,12 +136,12 @@ Next time you're watching a movie, listening to a song, or scrolling through soc
 
 ## Dive Deeper
 
-Want to explore more about AI in entertainment and media? Scan these QR codes:
+Want to explore more about AI in entertainment and media? Here's where to start:
 
-[QR Code] - Watch: "The Future of Film: AI in Hollywood"
+- Watch: "The Future of Film: AI in Hollywood"
 
-[QR Code] - Read: "The Ethics of AI-Generated Content"
+- Read: "The Ethics of AI-Generated Content"
 
-[QR Code] - Try: Generate your own AI-written short story (But maybe don't quit your day job to become an AI novelist just yet)
+- Try: Generate your own AI-written short story (But maybe don't quit your day job to become an AI novelist just yet)
 
-[QR Code] - Explore: "The Future of Interactive Entertainment"
+- Explore: "The Future of Interactive Entertainment"

@@ -298,8 +298,11 @@
 		<div class="section-inner">
 			<div class="signup-band">
 				<div class="signup-text">
-					<p class="signup-lead">Be first when the book launches.</p>
-					<p class="signup-sub">Get the field notes published along the way.</p>
+					<img src="/Surviving-the-Singularity-Cover.png" alt="Surviving the Singularity" class="signup-cover" aria-hidden="true" loading="lazy" />
+					<div class="signup-text-body">
+						<p class="signup-lead">Be first when the book launches.</p>
+						<p class="signup-sub">Get the field notes published along the way.</p>
+					</div>
 				</div>
 				<div class="signup-form">
 					<NewsletterSignup source="hero" label="" placeholder="your@email.com" buttonText="Get Early Access" />
@@ -968,7 +971,22 @@
 		border-radius: 0 0 18px 18px;
 	}
 
-	.signup-text { display: flex; flex-direction: column; gap: 0.2rem; }
+	.signup-text {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.85rem;
+	}
+
+	.signup-cover {
+		width: 56px;
+		flex-shrink: 0;
+		height: auto;
+		border-radius: 4px;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.5), 2px 2px 0 rgba(245,158,11,0.1);
+	}
+
+	.signup-text-body { display: flex; flex-direction: column; gap: 0.2rem; }
 
 	.signup-lead {
 		font-size: 1rem;

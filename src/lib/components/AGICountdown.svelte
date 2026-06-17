@@ -9,7 +9,7 @@
   // ────────────────────────────────────────────────────────────────────────────
 
   // Illustrative "commonly predicted" horizon. Override via prop.
-  export let targetDate = new Date('2028-11-20T00:00:00Z');
+  export let targetDate = new Date('2027-11-25T00:00:00Z');
   export let label = 'The AGI horizon';
   // compact = slim variant for the home page
   export let compact = false;

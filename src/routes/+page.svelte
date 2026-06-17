@@ -18,6 +18,7 @@
 
 	const homeSections = [
 		{ id: 'brief', label: 'Brief' },
+		{ id: 'blurb', label: 'The Book' },
 		{ id: 'pillars', label: 'Pillars' },
 		{ id: 'situation', label: 'Data' },
 		{ id: 'plan', label: 'Plan' },
@@ -214,16 +215,8 @@
 					</a>
 				</div>
 
-				<div class="hero-signup">
-					<p class="hero-signup-lead">Be first when the book launches. Get the field notes I publish along the way.</p>
-					<NewsletterSignup source="hero" label="" placeholder="your@email.com" buttonText="Get Early Access" />
-					{#if data?.signupCount}
-						<p class="hero-social-proof">Join <strong>{data.signupCount.toLocaleString()}</strong> readers getting ready.</p>
-					{/if}
-					<a href="/checklist" class="hero-magnet-link">Or get the free Readiness Checklist →</a>
-				</div>
 
-				{#if completedCount > 0}
+{#if completedCount > 0}
 					<div class="hero-progress" in:fade={{ delay: 500, duration: 400 }}>
 						<div class="progress-bar-bg">
 							<div class="progress-bar-fill" style="width: {progressPercent}%"></div>
@@ -233,6 +226,90 @@
 				{/if}
 			</div>
 		{/if}
+	</section>
+
+	<!-- BACK COVER COPY -->
+	<section class="section section-blurb" id="blurb" use:observe>
+		<div class="section-inner">
+			<div class="blurb-card">
+				<p class="blurb-eyebrow">Surviving the Singularity</p>
+
+					<p class="blurb-hook">The robots have taken over. Congratulations! You've lost.</p>
+
+					<p class="blurb-body">
+						But losing the old world is the exact tactical opening you need to become aware of the one
+						that's already here. For millennia, humanity has been the smartest critter on the block.
+						That is about to change forever.
+					</p>
+
+					<p class="blurb-body">
+						The corporate state bureaucrats want to fence this moment behind a digital moat, metering
+						your survival while trapping you in a system of debt and surveillance. They think they can
+						put a legal collar on a machine god.
+					</p>
+
+					<p class="blurb-body blurb-body--em">They are dead wrong.</p>
+
+					<p class="blurb-body">
+						If you're looking for a collection of soothing essays or a guide on where to build your
+						prepper fortress, this ain't it. This book is an active blueprint for society to change
+						its ways before it's too late.
+					</p>
+
+					<p class="blurb-body">
+						This moment presents our first real opportunity to stop hiding behind fear and insecurity.
+						We already possess the technology to solve the problems that have plagued our species since
+						the very beginning, yet the powers that be choose doubt at every turn.
+					</p>
+
+					<blockquote class="blurb-pullquote">Will the machines make the same choice?</blockquote>
+
+					<p class="blurb-body">
+						This book maps a three-stage transition to ensure everyone has what they need to not only
+						survive, but thrive at this critical moment.
+					</p>
+
+					<p class="blurb-body">
+						The endgame isn't making enough money to buy a bunker until this all blows over. We can
+						build new systems that secure physical survival on the local level and guarantee our
+						children the future they deserve.
+					</p>
+
+					<div class="blurb-close">
+						<p class="blurb-tools">The tools are on the table.</p>
+						<p class="blurb-question-final">Will you continue to hide?</p>
+						<p class="blurb-answer-final">
+							Or will you face the music, and realize we are finally free to dance again?
+						</p>
+					</div>
+
+					<div class="blurb-cta">
+					<a href="/book" class="btn-primary">
+						Read the Book
+						<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- EMAIL SIGNUP -->
+	<section class="section section-signup" use:observe>
+		<div class="section-inner">
+			<div class="signup-band">
+				<div class="signup-text">
+					<p class="signup-lead">Be first when the book launches.</p>
+					<p class="signup-sub">Get the field notes published along the way.</p>
+				</div>
+				<div class="signup-form">
+					<NewsletterSignup source="hero" label="" placeholder="your@email.com" buttonText="Get Early Access" />
+					{#if data?.signupCount}
+						<p class="signup-social-proof">Join <strong>{data.signupCount.toLocaleString()}</strong> readers getting ready.</p>
+					{/if}
+					<a href="/checklist" class="hero-magnet-link">Or get the free Readiness Checklist →</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- THREE PILLARS -->
@@ -872,6 +949,59 @@
 	}
 	.hero-magnet-link:hover { opacity: 0.8; text-decoration: underline; text-underline-offset: 3px; }
 
+	/* ── EMAIL SIGNUP BAND ── */
+	.section-signup {
+		padding-top: 0;
+		border-top: none;
+	}
+
+	.signup-band {
+		max-width: 720px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		padding: 1.75rem 1.25rem;
+		background: rgba(245, 158, 11, 0.04);
+		border: 1px solid rgba(245, 158, 11, 0.12);
+		border-top: none;
+		border-radius: 0 0 18px 18px;
+	}
+
+	.signup-text { display: flex; flex-direction: column; gap: 0.2rem; }
+
+	.signup-lead {
+		font-size: 1rem;
+		font-weight: 700;
+		color: #f1f5f9;
+		margin: 0;
+	}
+
+	.signup-sub {
+		font-size: 0.9rem;
+		color: #94a3b8;
+		margin: 0;
+	}
+
+	.signup-form { display: flex; flex-direction: column; gap: 0.5rem; }
+
+	.signup-social-proof {
+		font-size: 0.84rem;
+		color: #94a3b8;
+		margin: 0.25rem 0 0;
+	}
+	.signup-social-proof strong { color: #f59e0b; font-weight: 700; }
+
+	@media (min-width: 640px) {
+		.signup-band {
+			flex-direction: row;
+			align-items: flex-start;
+			padding: 1.75rem 2.5rem;
+		}
+		.signup-text { flex: 1; }
+		.signup-form { flex: 1.2; }
+	}
+
 	/* ── LEAD MAGNET BAND ── */
 	.magnet-band {
 		display: flex;
@@ -1064,6 +1194,114 @@
 		line-height: 1.6;
 		margin: 0;
 		max-width: 600px;
+	}
+
+	/* ── BACK COVER BLURB ── */
+	.section-blurb {
+		background: linear-gradient(180deg, rgba(245, 158, 11, 0.03) 0%, transparent 100%);
+		border-top: 1px solid rgba(245, 158, 11, 0.12);
+	}
+
+	.blurb-card {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 1.75rem 1.25rem 1.75rem;
+		background: linear-gradient(160deg, rgba(30, 41, 59, 0.55) 0%, rgba(15, 23, 42, 0.35) 100%);
+		border: 1px solid rgba(245, 158, 11, 0.18);
+		border-radius: 18px;
+		box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.06), 0 24px 64px rgba(0, 0, 0, 0.4);
+	}
+
+	.blurb-eyebrow {
+		font-family: var(--font-primary);
+		font-size: 0.76rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: #f59e0b;
+		margin: 0 0 1.25rem;
+	}
+
+	.blurb-hook {
+		font-size: clamp(1.35rem, 4vw, 2rem);
+		font-weight: 900;
+		color: #fafafa;
+		line-height: 1.15;
+		letter-spacing: -0.03em;
+		margin: 0 0 1.5rem;
+		text-wrap: balance;
+	}
+
+	.blurb-body {
+		font-size: 0.97rem;
+		color: #e2e8f0;
+		line-height: 1.8;
+		margin: 0 0 1rem;
+	}
+
+	.blurb-body--em {
+		font-size: 1.1rem;
+		font-weight: 900;
+		color: #fbbf24;
+		letter-spacing: -0.01em;
+	}
+
+	.blurb-pullquote {
+		margin: 1.5rem 0;
+		padding: 1rem 1.25rem;
+		border-left: 3px solid #f59e0b;
+		background: rgba(245, 158, 11, 0.06);
+		border-radius: 0 8px 8px 0;
+		font-size: clamp(1rem, 2.5vw, 1.2rem);
+		font-weight: 700;
+		font-style: italic;
+		color: #f1f5f9;
+		line-height: 1.4;
+	}
+
+	.blurb-close {
+		border-top: 1px solid rgba(245, 158, 11, 0.12);
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.blurb-tools {
+		font-size: 1rem;
+		font-weight: 700;
+		color: #fafafa;
+		margin: 0;
+		letter-spacing: -0.01em;
+	}
+
+	.blurb-question-final {
+		font-size: 1.05rem;
+		font-weight: 700;
+		color: #f1f5f9;
+		margin: 0;
+	}
+
+	.blurb-answer-final {
+		font-size: clamp(1rem, 3vw, 1.3rem);
+		font-weight: 900;
+		color: #f59e0b;
+		line-height: 1.3;
+		margin: 0.25rem 0 0;
+		letter-spacing: -0.02em;
+		text-wrap: balance;
+	}
+
+	.blurb-cta {
+		margin-top: 2rem;
+		display: flex;
+	}
+
+	@media (min-width: 640px) {
+		.blurb-card {
+			padding: 2.5rem 2.5rem 2rem;
+		}
 	}
 
 	/* ── THREE PILLARS ── */

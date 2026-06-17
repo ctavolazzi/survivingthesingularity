@@ -146,7 +146,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.75rem;
     width: 100%;
   }
 
@@ -161,7 +161,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   /* Honeypot — must be visually gone but not display:none (some bots check) */
@@ -176,11 +176,12 @@
 
   .waitlist-input-row {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
   }
 
   .waitlist-input {
-    flex: 1;
+    width: 100%;
     min-width: 0;
     padding: 0.65rem 0.9rem;
     background: rgba(15, 23, 42, 0.8);
@@ -200,12 +201,12 @@
   .waitlist-input:disabled { opacity: 0.6; cursor: not-allowed; }
 
   .waitlist-btn {
-    flex-shrink: 0;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
-    padding: 0.65rem 1.25rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
     background: linear-gradient(135deg, #f59e0b, #f97316);
     color: #0f172a;
     font-weight: 700;
@@ -213,7 +214,6 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    white-space: nowrap;
     transition: opacity 0.15s ease, transform 0.15s ease;
   }
   .waitlist-btn:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }

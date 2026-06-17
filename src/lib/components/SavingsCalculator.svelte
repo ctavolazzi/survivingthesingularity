@@ -80,9 +80,6 @@
         </div>
       </div>
 
-      <p class="calc-disclaimer">
-        The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
-      </p>
     </div>
   {/if}
 </div>

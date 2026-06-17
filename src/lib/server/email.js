@@ -34,14 +34,17 @@ function buildWelcome(source) {
   };
 }
 
-function renderHtml({ heading, body, cta }) {
+function renderHtml({ heading, body, cta, unsubscribeUrl }) {
+  const footerUnsubscribe = unsubscribeUrl
+    ? `<a href="${unsubscribeUrl}" style="color:#475569;text-decoration:underline;">Unsubscribe</a>`
+    : 'Reply to unsubscribe';
   return `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${cta.url}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:12px 22px;border-radius:8px;">${cta.label}</a>
-    <p style="font-size:12px;color:#475569;margin:36px 0 0;">You received this because you signed up at survivingthesingularity.com. Reply to unsubscribe.</p>
+    <p style="font-size:12px;color:#475569;margin:36px 0 0;">You received this because you signed up at survivingthesingularity.com. ${footerUnsubscribe}.</p>
   </div></body></html>`;
 }
 
@@ -50,19 +53,23 @@ function renderHtml({ heading, body, cta }) {
  * - no API key  -> logs a warning, returns { skipped: true }
  * - send errors -> caught by caller; must never block signup.
  *
- * @param {{ to: string, source?: string }} args
+ * @param {{ to: string, source?: string, unsubscribeToken?: string }} args
  */
-export async function sendWelcomeEmail({ to, source = 'homepage' }) {
+export async function sendWelcomeEmail({ to, source = 'homepage', unsubscribeToken }) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset — skipping welcome email to', to);
     return { skipped: true };
   }
+  const baseUrl = env.PUBLIC_BASE_URL || 'https://survivingthesingularity.com';
+  const unsubscribeUrl = unsubscribeToken
+    ? `${baseUrl}/unsubscribe?token=${unsubscribeToken}`
+    : null;
   const copy = buildWelcome(source);
   const { error } = await resend.emails.send({
     from,
     to,
     subject: copy.subject,
-    html: renderHtml(copy),
+    html: renderHtml({ ...copy, unsubscribeUrl }),
   });
   if (error) {
     console.error('[email] welcome send failed:', error.message ?? error);

@@ -79,11 +79,6 @@
 
 <div class="cd" class:animated>
 
-  <div class="cd-warning">
-    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="#fbbf24" stroke-width="1.1"/><path d="M6.5 3.5v3M6.5 8.5v.5" stroke="#fbbf24" stroke-width="1.4" stroke-linecap="round"/></svg>
-    <span>The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.</span>
-  </div>
-
   <!-- Top: ring + quick read -->
   <div class="cd-top">
     <div class="ring-wrap">

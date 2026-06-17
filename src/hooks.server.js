@@ -35,12 +35,12 @@ export async function handle({ event, resolve }) {
   // Allowlist additions: add domains to the matching directive (script-src, frame-src, etc.).
   const csp = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline'",
+    "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com",
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "font-src 'self' https://fonts.gstatic.com data:",
     "img-src 'self' data: blob: https://cdn.midjourney.com https://images.unsplash.com https://farm.bot https://*.futurism.com https://wordpress-assets.futurism.com https://i.ytimg.com https://*.ytimg.com https://www.open-electronics.org",
     "media-src 'self'",
-    "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://cloudflareinsights.com",
     "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://open.spotify.com https://*.substack.com",
     "base-uri 'self'",
     "form-action 'self'",

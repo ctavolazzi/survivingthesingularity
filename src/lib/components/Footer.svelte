@@ -60,7 +60,7 @@
       </p>
 
       <p class="footer-copyright">
-        &copy; {new Date().getFullYear()} Surviving the Singularity. All rights reserved where applicable.
+        &copy; {new Date().getFullYear()} <a href="https://johnnyautoseed.com" target="_blank" rel="noopener noreferrer" class="footer-copyright-link">Johnny Autoseed LLC</a>. All rights reserved where applicable.
       </p>
     </div>
   </div>
@@ -119,8 +119,9 @@
   }
 
   .footer-links-group {
-    display: flex;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 
   .footer-col {
@@ -231,7 +232,18 @@
     margin: 0;
   }
 
+  .footer-copyright-link {
+    color: #f59e0b;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .footer-copyright-link:hover { color: #fbbf24; text-decoration: underline; }
+
   @media (max-width: 640px) {
+    .site-footer {
+      padding: 3rem 1.25rem 2rem;
+    }
+
     .footer-top {
       flex-direction: column;
       gap: 2rem;
@@ -241,9 +253,29 @@
       max-width: 100%;
     }
 
+    /* Three equal columns — grid keeps them from word-wrapping on narrow screens */
     .footer-links-group {
       width: 100%;
-      gap: 2rem;
+      gap: 1rem;
+    }
+
+    .footer-col-title {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+    }
+
+    .footer-link {
+      font-size: 0.8rem;
+    }
+
+    .footer-disclaimer-box,
+    .footer-consent {
+      padding: 0.85rem 1rem;
+    }
+
+    .footer-disclaimer,
+    .footer-consent {
+      font-size: 0.8rem;
     }
   }
 </style>

@@ -87,10 +87,6 @@
   {/each}
 </div>
 
-<p class="faq-footer-note">
-  The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
-</p>
-
 <style>
   .faq-wrap {
     margin-top: 1.5rem;

@@ -175,7 +175,7 @@
 
 <style>
 	.div-figure {
-		margin: 3rem 0 0;
+		margin: 3rem 0 2.5rem;
 		padding: 2rem 1.5rem 1.25rem;
 		background: var(--color-surface);
 		border: 1px solid var(--color-border);

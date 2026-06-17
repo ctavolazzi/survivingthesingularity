@@ -121,9 +121,6 @@
     <span class="dash-live">Reference indicators only - verify all figures yourself.</span>
   </div>
 
-  <p class="dash-disclaimer">
-    The information here is a starting point for your own research, not a professional recommendation. <a href="/disclaimer">Read our terms &amp; disclaimers</a>.
-  </p>
 </div>
 
 <style>

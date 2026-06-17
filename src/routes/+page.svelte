@@ -181,8 +181,9 @@
 
 				<p class="hero-subtitle">
 					The old playbook (mortgage, career ladder, retire at 65) was designed for a world
-					that no longer exists. AI is rewriting every industry. Costs are out of control.
-					But inside that disruption is an opportunity most people haven't seen yet.
+					that no longer exists.
+					<span class="hero-subtitle-break">AI is rewriting every industry. Costs are out of control.
+					But inside that disruption is an opportunity most people haven't seen yet.</span>
 				</p>
 
 				<p class="hero-question">
@@ -214,6 +215,10 @@
 						See the 3 Pillars
 					</a>
 				</div>
+
+				<p class="hero-site-disclaimer">
+					For informational and educational purposes only. Not legal, financial, or professional advice. <a href="/disclaimer">Full disclaimer</a>.
+				</p>
 
 
 {#if completedCount > 0}
@@ -420,10 +425,7 @@
 					<li>Open-source automation projects</li>
 					<li>Free creator platforms</li>
 				</ul>
-				<p class="situation-punchline">
-					Before acting on any of this, talk to qualified professionals where you live.
-				</p>
-			</div>
+				</div>
 
 			<LiveDashboard />
 		</div>
@@ -452,15 +454,13 @@
 			<div class="section-header-row">
 				<div>
 					<h2 class="section-title">The Plan</h2>
-					<p class="section-desc">Four steps the author has been thinking about. Not a prescription. Material for your own evaluation with qualified professionals.</p>
+					<p class="section-desc">Four steps the author has been thinking about.</p>
 				</div>
 			</div>
 
-			<p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
-
 			<div class="plan-statement">
 				<p class="plan-headline">Adaptability matters more, the faster things change.</p>
-				<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change. Hypothesis, not advice.</p>
+				<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change.</p>
 			</div>
 		</div>
 	</section>
@@ -602,7 +602,7 @@
 			<div class="section-header-row">
 				<div>
 					<h2 class="section-title">Alternatives to Consider</h2>
-					<p class="section-desc">Some systems worth thinking about differently. Each item is a starting point for your own research, not a recommendation.</p>
+					<p class="section-desc">Some systems worth thinking about differently.</p>
 				</div>
 			</div>
 
@@ -628,8 +628,6 @@
 					<span class="cp-text">{completedCount} of {chapters.length} complete</span>
 				</div>
 			{/if}
-
-			<p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
 			<div class="chapters-list" use:stagger={{ delay: 60 }}>
 				{#each chapters as chapter}
@@ -740,7 +738,7 @@
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
-		padding: 2rem 1rem 1.5rem;
+		padding: 1.25rem 1rem 1.5rem;
 		overflow: hidden;
 	}
 
@@ -835,6 +833,11 @@
 		line-height: 1.75;
 		margin: 0 0 1.25rem;
 		max-width: 700px;
+	}
+
+	.hero-subtitle-break {
+		display: block;
+		margin-top: 0.6rem;
 	}
 
 	.hero-question {
@@ -1084,6 +1087,19 @@
 	}
 	.magnet-band:hover .magnet-cta { transform: translateX(3px); }
 
+	.hero-site-disclaimer {
+		margin: 1.25rem 0 0;
+		font-size: 0.8rem;
+		color: #64748b;
+		line-height: 1.5;
+	}
+	.hero-site-disclaimer a {
+		color: #94a3b8;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+	.hero-site-disclaimer a:hover { color: #f59e0b; }
+
 	.hero-progress {
 		display: flex;
 		align-items: center;
@@ -1165,7 +1181,7 @@
 
 	/* ── SECTIONS ── */
 	.section {
-		padding: 1.5rem 1rem;
+		padding: 2.5rem 1.25rem;
 		border-top: 1px solid rgba(255, 255, 255, 0.03);
 	}
 
@@ -1184,6 +1200,11 @@
 		border-top: 1px solid rgba(245, 158, 11, 0.08);
 	}
 
+	.section-countdown {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
 	.section-inner {
 		max-width: 960px;
 		margin: 0 auto;
@@ -1193,8 +1214,8 @@
 	.section-header-row {
 		display: flex;
 		flex-direction: column;
-		gap: 0.25rem;
-		margin-bottom: 2rem;
+		gap: 0.5rem;
+		margin-bottom: 2.5rem;
 	}
 
 	.section-title {

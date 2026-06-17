@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
 import { createSupabaseServerClient } from '$lib/supabase.js';
+import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { rateLimit } from '$lib/server/rateLimit.js';
 import { sendWelcomeEmail } from '$lib/server/email.js';
 
@@ -87,10 +88,22 @@ export async function POST(event) {
     return json({ error: 'Something went wrong. Try again.' }, { status: 500 });
   }
 
+  // Fetch the generated unsubscribe token so we can include a real link in the
+  // welcome email. Use the admin client since anon SELECT is blocked by RLS.
+  let unsubscribeToken;
+  if (supabaseAdmin) {
+    const { data: tokenRow } = await supabaseAdmin
+      .from('waitlist')
+      .select('unsubscribe_token')
+      .eq('email', email)
+      .single();
+    unsubscribeToken = tokenRow?.unsubscribe_token;
+  }
+
   // Welcome/confirmation email. Non-blocking: a send failure must never turn a
   // successful signup into an error for the visitor.
   try {
-    await sendWelcomeEmail({ to: email, source });
+    await sendWelcomeEmail({ to: email, source, unsubscribeToken });
   } catch (e) {
     console.error('[waitlist] welcome email threw:', e?.message ?? e);
   }

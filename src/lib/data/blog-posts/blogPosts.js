@@ -48,6 +48,13 @@ export async function loadBlogPosts() {
     console.error('Error importing claude-projects-weekend-project:', error.message);
   }
 
+  try {
+    const algaeSavesUs = await import('./algae-saves-us/index.js');
+    if (algaeSavesUs && algaeSavesUs.post) posts.push(algaeSavesUs.post);
+  } catch (error) {
+    console.error('Error importing algae-saves-us:', error.message);
+  }
+
   return posts;
 }
 

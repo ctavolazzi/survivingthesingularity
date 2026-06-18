@@ -3,6 +3,7 @@
   export let label = 'Stay in the loop';
   export let placeholder = 'your@email.com';
   export let buttonText = 'Sign Up';
+  export let bookUrl = '';
 
   let email = '';
   let newsletterConsent = false; // opt-in: unchecked by default (GDPR)
@@ -128,7 +129,7 @@
         </label>
         <label class="consent-label">
           <input type="checkbox" bind:checked={bookReleaseConsent} />
-          <span>Notify me when the book drops</span>
+          <span>Notify me when {#if bookUrl}<a href={bookUrl} class="book-link">the book</a>{:else}the book{/if} drops</span>
         </label>
       </div>
 
@@ -274,6 +275,13 @@
     color: #475569;
     margin: 0;
   }
+  .book-link {
+    color: #f59e0b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .book-link:hover { opacity: 0.8; }
+
   .meta-link {
     color: #64748b;
     text-decoration: underline;

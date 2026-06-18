@@ -38,7 +38,7 @@ export async function handle({ event, resolve }) {
     "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com",
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "font-src 'self' https://fonts.gstatic.com data:",
-    "img-src 'self' data: blob: https://cdn.midjourney.com https://images.unsplash.com https://farm.bot https://*.futurism.com https://wordpress-assets.futurism.com https://i.ytimg.com https://*.ytimg.com https://www.open-electronics.org",
+    "img-src 'self' data: blob: https://cdn.midjourney.com https://images.unsplash.com https://plus.unsplash.com https://farm.bot https://*.futurism.com https://wordpress-assets.futurism.com https://i.ytimg.com https://*.ytimg.com https://www.open-electronics.org https://i.cbc.ca https://content.api.news",
     "media-src 'self'",
     "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://cloudflareinsights.com",
     "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://open.spotify.com https://*.substack.com",

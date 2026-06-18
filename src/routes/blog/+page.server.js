@@ -5,6 +5,22 @@ export async function load() {
   // Define blog posts directly with their routes
   const posts = [
     {
+      title: 'The Algal Biorefinery Blueprint: Engineering the Post-Petrochemical Stack',
+      date: '2026-06-17',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/algal-biorefinery-blueprint',
+      excerpt: "Carbon credits alone can't fund a gigaton-scale algae operation. The companies winning this space produce bioplastics, medical oxygen, cement replacement, and closed-loop fuel from the same tank. Here's the full architecture.",
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070&auto=format&fit=crop'
+    },
+    {
+      title: 'Algae Can Save Us. Here\'s Why Nobody\'s Talking About It.',
+      date: '2026-06-17',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/algae-saves-us',
+      excerpt: "It grows in the White House pool. It makes flip-flops. It can produce fuel, medicine, and bioplastics. Algae is the most underrated survival technology on Earth. The only thing holding it back is a production bottleneck we can solve.",
+      image: 'https://plus.unsplash.com/premium_photo-1661391815480-207c5853539c?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
       title: 'Whispers of the Future: The Paradigm Shift of Human-AI Relations',
       date: '2025-03-28',
       author: 'Christopher Tavolazzi',

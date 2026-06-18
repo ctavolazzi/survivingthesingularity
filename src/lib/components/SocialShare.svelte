@@ -45,11 +45,6 @@
   }
 
   // Social media share functions
-  function shareOnTwitter() {
-    const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(currentUrl)}`;
-    window.open(shareUrl, '_blank', 'noopener,noreferrer');
-  }
-
   function shareOnFacebook() {
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
     window.open(shareUrl, '_blank', 'noopener,noreferrer');
@@ -57,13 +52,6 @@
 
   function shareOnLinkedIn() {
     const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`;
-    window.open(shareUrl, '_blank', 'noopener,noreferrer');
-  }
-
-  function shareOnBluesky() {
-    // Bluesky doesn't have a direct sharing API yet, so we'll use a workaround
-    // This creates a new post with the link pre-filled
-    const shareUrl = `https://bsky.app/intent/compose?text=${encodeURIComponent(title + ' ' + currentUrl)}`;
     window.open(shareUrl, '_blank', 'noopener,noreferrer');
   }
 
@@ -108,13 +96,6 @@
 
   <!-- Social Media Share Buttons -->
   <div class="social-buttons">
-    <!-- Twitter/X -->
-    <button class="social-button twitter" on:click={shareOnTwitter} aria-label="Share on X/Twitter">
-      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-      </svg>
-    </button>
-
     <!-- Facebook -->
     <button class="social-button facebook" on:click={shareOnFacebook} aria-label="Share on Facebook">
       <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -126,13 +107,6 @@
     <button class="social-button linkedin" on:click={shareOnLinkedIn} aria-label="Share on LinkedIn">
       <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-      </svg>
-    </button>
-
-    <!-- Bluesky -->
-    <button class="social-button bluesky" on:click={shareOnBluesky} aria-label="Share on Bluesky">
-      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25zm2.259 13.448H9.622a4.372 4.372 0 0 1-2.25-4.146v-1.28l3.214 2.293 1.415-1.414-3.449-3.448 1.414-1.414 4.863 3.449 1.414-1.414-3.448-3.448 1.414-1.414 6.277 6.276-1.415 1.414-4.862-3.449-1.414 1.414 3.448 3.449-1.414 1.414-3.448-3.448-1.414 1.414 2.293 3.214h3.097v2.018z"/>
       </svg>
     </button>
 
@@ -163,118 +137,64 @@
 <style>
   .share-container {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 1rem 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0.75rem 0;
   }
 
   .share-button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    background-color: var(--color-primary, #f97316);
-    color: white;
+    gap: 0.35rem;
+    background: transparent;
+    color: #64748b;
+    font-size: 0.8rem;
     font-weight: 500;
-    padding: 0.5rem 1.25rem;
-    border-radius: 0.375rem;
-    border: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
     cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-    font-size: 0.95rem;
-    max-width: fit-content;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
   }
 
   .share-button:hover {
-    background-color: var(--color-primary-dark, #ea580c);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #f59e0b;
+    border-color: rgba(245, 158, 11, 0.35);
   }
 
   .social-buttons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
   }
 
   .social-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    background: transparent;
+    color: #475569;
     cursor: pointer;
-    transition: all 0.2s ease;
-    color: white;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
   }
 
   .social-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #94a3b8;
+    border-color: rgba(148, 163, 184, 0.35);
+    background: rgba(148, 163, 184, 0.06);
   }
 
-  .twitter {
-    background-color: #1DA1F2;
-  }
-
-  .facebook {
-    background-color: #1877F2;
-  }
-
-  .linkedin {
-    background-color: #0A66C2;
-  }
-
-  .bluesky {
-    background-color: #1185FE;
-  }
-
-  .instagram {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  }
-
-  .pinterest {
-    background-color: #E60023;
-  }
-
-  .copy {
-    background-color: #6B7280;
-  }
-
-  /* Dark mode adjustment */
-  :global(.dark) .share-button {
-    background-color: var(--color-primary-dark, #f97316);
-  }
-
-  :global(.dark) .share-button:hover {
-    background-color: var(--color-primary-hover-dark, #ea580c);
-  }
-
-  /* Responsive design */
-  @media (min-width: 640px) {
-    .share-container {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .social-buttons {
-      justify-content: flex-end;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .share-button {
-      width: 100%;
-      max-width: 100%;
-      justify-content: center;
-    }
-
-    .social-buttons {
-      justify-content: center;
-    }
-  }
+  .facebook:hover  { color: #1877F2; border-color: rgba(24, 119, 242, 0.4); }
+  .linkedin:hover  { color: #0A66C2; border-color: rgba(10, 102, 194, 0.4); }
+  .instagram:hover { color: #e6683c; border-color: rgba(230, 104, 60, 0.4); }
+  .pinterest:hover { color: #E60023; border-color: rgba(230, 0, 35, 0.4); }
+  .copy:hover      { color: #94a3b8; border-color: rgba(148, 163, 184, 0.4); }
 </style>

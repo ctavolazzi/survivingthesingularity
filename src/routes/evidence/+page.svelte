@@ -257,6 +257,11 @@
 			<a href="/why" class="ev-btn ev-btn-primary">Why this matters now</a>
 			<a href="/blueprint" class="ev-btn ev-btn-secondary">What to do about it</a>
 		</div>
+
+		<p class="ev-media-note">
+			All videos and images are the property of their respective creators and rights holders. Included for educational and illustrative purposes only. No affiliation with, endorsement by, or partnership with any company or individual depicted is claimed or implied. All trademarks belong to their respective owners.
+			<a href="/disclaimer#media">Full media disclaimer.</a>
+		</p>
 	</section>
 </article>
 
@@ -693,6 +698,19 @@
 		background: transparent;
 		color: var(--color-text-primary);
 		border: 1px solid var(--color-border-hover);
+	}
+
+	.ev-media-note {
+		margin-top: 2rem;
+		font-size: 0.78rem;
+		line-height: 1.6;
+		color: #475569;
+		text-align: center;
+	}
+
+	.ev-media-note a {
+		color: #64748b;
+		text-decoration: underline;
 	}
 
 	@media (max-width: 540px) {

@@ -135,10 +135,10 @@
         this site - including but not limited to FarmBot, Mobile Aloha, Tesla
         Optimus, Neuralink, NVIDIA RTX, Llama, Claude, Anthropic, OpenAI, GPT,
         ChatGPT, Substack, Ko-fi, Stripe, Supabase, Lemon Squeezy, YouTube,
-        Spotify, and others - are trademarks or registered trademarks of their
-        respective owners. References are editorial and informational. No
-        affiliation, sponsorship, partnership, or endorsement is claimed or
-        implied.
+        Spotify, Figure, Google DeepMind, Microsoft, Cortical Labs, and others -
+        are trademarks or registered trademarks of their respective owners.
+        References are editorial and informational. No affiliation, sponsorship,
+        partnership, or endorsement is claimed or implied.
       </p>
       <p>
         Where this site refers to named individuals (researchers, founders,
@@ -150,6 +150,39 @@
         claimed or implied. If you are a named party and wish a reference
         corrected or removed, please contact
         <a href="mailto:info@survivingthesingularity.com">info@survivingthesingularity.com</a>.
+      </p>
+    </section>
+
+    <section class="dpg-section" id="media">
+      <h2>Embedded videos, images, and third-party media</h2>
+      <p>
+        This site embeds publicly available videos from YouTube and may display
+        thumbnail images sourced from those videos. All embedded content remains
+        the property of its respective creators and rights holders. This site
+        does not claim ownership of, or any rights to, any embedded or linked
+        third-party media.
+      </p>
+      <p>
+        Videos, images, and other media from companies including but not limited
+        to Figure, Google DeepMind, Microsoft, Cortical Labs, and others are
+        included for <strong>illustrative and educational purposes only</strong>.
+        Their inclusion does not imply any affiliation with, sponsorship by,
+        partnership with, or endorsement from those companies or any individuals
+        appearing in the media. All trademarks, logos, and brand identities
+        visible in embedded content belong to their respective owners.
+      </p>
+      <p>
+        Embedded YouTube videos are subject to YouTube's Terms of Service and
+        Google's Privacy Policy. By clicking to play an embedded video, you
+        interact directly with YouTube's platform. This site uses
+        <code>youtube-nocookie.com</code> embeds to minimize data collection
+        prior to playback.
+      </p>
+      <p>
+        If you are a rights holder and believe any content on this site
+        infringes your rights or has been included without authorization, please
+        contact <a href="mailto:info@survivingthesingularity.com">info@survivingthesingularity.com</a>
+        and we will respond promptly.
       </p>
     </section>
 

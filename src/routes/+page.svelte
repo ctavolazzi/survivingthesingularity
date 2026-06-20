@@ -503,6 +503,7 @@
 
 			<div class="watch-footer">
 				<p class="watch-note">Real demos from 2024–2026, not concept renders. Quantum isn't here yet, but the curve is bending fast.</p>
+				<p class="watch-media-note">Videos are the property of their respective creators. Included for educational purposes only. No affiliation or endorsement implied. <a href="/disclaimer#media">Full media disclaimer.</a></p>
 				<a href="/evidence" class="watch-cta">
 					See all the evidence: videos plus the papers behind them
 					<svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -1350,6 +1351,19 @@
 		font-family: var(--font-mono);
 		text-align: center;
 		margin: 0;
+	}
+
+	.watch-media-note {
+		font-size: 0.75rem;
+		color: #475569;
+		text-align: center;
+		margin: 0;
+		line-height: 1.5;
+	}
+
+	.watch-media-note a {
+		color: #64748b;
+		text-decoration: underline;
 	}
 
 	.watch-cta {

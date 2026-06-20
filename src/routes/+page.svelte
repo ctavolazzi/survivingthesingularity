@@ -13,6 +13,8 @@
 	import PillarsLoopDiagram from '$lib/components/PillarsLoopDiagram.svelte';
 	import DivergenceDiagram from '$lib/components/DivergenceDiagram.svelte';
 	import WindowSim from '$lib/components/WindowSim.svelte';
+	import YouTubeEmbed from '$lib/components/YouTubeEmbed.svelte';
+	import { homepageVideos, sources as evidenceSources } from '$lib/data/evidence.js';
 
 	export let data;
 
@@ -21,6 +23,7 @@
 		{ id: 'blurb', label: 'The Book' },
 		{ id: 'pillars', label: 'Pillars' },
 		{ id: 'situation', label: 'Data' },
+		{ id: 'watch', label: 'Watch' },
 		{ id: 'plan', label: 'Plan' },
 		{ id: 'steps', label: 'Steps' },
 		{ id: 'timeline', label: 'Timeline' },
@@ -175,8 +178,18 @@
 
 		{#if heroVisible}
 			<div class="hero-content" in:fade={{ duration: 600, delay: 100 }}>
+				<div class="hero-video">
+					<YouTubeEmbed
+						videoId="YZH1csMhnDo"
+						title="BotQ: ramping F.03 production"
+						caption="This is happening now: a factory full of robots, building more robots."
+						credit="Figure"
+					/>
+					<a href="#watch" class="hero-video-more">More footage and the papers behind it →</a>
+				</div>
+
 				<h1 class="hero-title">
-					There are better ways to build the future.
+					The future isn't coming...it's here.
 				</h1>
 
 				<p class="hero-subtitle">
@@ -231,6 +244,18 @@
 				{/if}
 			</div>
 		{/if}
+	</section>
+
+	<!-- BETWEEN-HERO VIDEO -->
+	<section class="section section-between-video" use:observe>
+		<div class="section-inner">
+			<YouTubeEmbed
+				videoId="WlUFoZstcWg"
+				title="Figure status update: BMW use case"
+				caption="Humanoid robots working a real automotive production line. Not a stage demo. A factory."
+				credit="Figure"
+			/>
+		</div>
 	</section>
 
 	<!-- BACK COVER COPY -->
@@ -317,6 +342,18 @@
 					<a href="/checklist" class="hero-magnet-link">Or get the free Readiness Checklist →</a>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- BETWEEN EMAIL+PILLARS VIDEO -->
+	<section class="section section-between-video" use:observe>
+		<div class="section-inner">
+			<YouTubeEmbed
+				videoId="8xEuFQz4E4A"
+				title="Helix: tidying a bedroom"
+				caption="It's not just factories. A humanoid is already handling the chores at home."
+				credit="Figure"
+			/>
 		</div>
 	</section>
 
@@ -431,6 +468,49 @@
 		</div>
 	</section>
 
+	<!-- BETWEEN REALITY CHECK + SEE IT HAPPEN VIDEO -->
+	<section class="section section-between-video" use:observe>
+		<div class="section-inner">
+			<YouTubeEmbed
+				videoId="yRV8fSw6HaE"
+				title="Living human brain cells play DOOM on a CL1"
+				caption="Lab-grown neurons wired into silicon, learning to play a video game. Computation on a living substrate."
+				credit="Cortical Labs"
+			/>
+		</div>
+	</section>
+
+	<!-- SEE IT HAPPEN -->
+	<section class="section section-watch" id="watch" use:observe>
+		<div class="section-inner">
+			<div class="section-header-row">
+				<div>
+					<h2 class="section-title">See It Happen</h2>
+					<p class="section-desc">This isn't a forecast. It's footage. It started with one 2017 paper, <a href={evidenceSources.attention.url} target="_blank" rel="noopener noreferrer">Attention Is All You Need</a>, and in under a decade it has spilled out into world-modeling AI, humanoid robots on factory floors, living cells doing computation, and quantum chips. Watch it happen first-hand, then decide how much time you think the old path has left.</p>
+				</div>
+			</div>
+
+			<div class="watch-grid" use:stagger>
+				{#each homepageVideos as v}
+					<YouTubeEmbed
+						videoId={v.id}
+						title={v.title}
+						caption={v.blurb}
+						credit={v.channel}
+					/>
+				{/each}
+			</div>
+
+			<div class="watch-footer">
+				<p class="watch-note">Real demos from 2024–2026, not concept renders. Quantum isn't here yet, but the curve is bending fast.</p>
+				<a href="/evidence" class="watch-cta">
+					See all the evidence: videos plus the papers behind them
+					<svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</a>
+			</div>
+		</div>
+	</section>
+
 	<!-- LEAD MAGNET BAND -->
 	<section class="section" use:observe>
 		<div class="section-inner">
@@ -462,6 +542,18 @@
 				<p class="plan-headline">Adaptability matters more, the faster things change.</p>
 				<p class="plan-sub">An author's working hypothesis: that the ability to <em>build</em>, <em>learn</em>, and <em>teach</em> may matter more under accelerating change.</p>
 			</div>
+		</div>
+	</section>
+
+	<!-- BETWEEN PLAN + STEPS VIDEO -->
+	<section class="section section-between-video" use:observe>
+		<div class="section-inner">
+			<YouTubeEmbed
+				videoId="wSHmygPQukQ"
+				title="Majorana 1 explained: the path to a million qubits"
+				caption="The clearest breakdown of why a stable qubit changes the ceiling on what's computable."
+				credit="Microsoft"
+			/>
 		</div>
 	</section>
 
@@ -571,6 +663,7 @@
 				<div>
 					<h2 class="section-title">The Window</h2>
 					<p class="section-desc">One author's hypothesis about how this unfolds. Educated guesses, not forecasts. The window to act is before these become mainstream, not after.</p>
+					<p class="section-cite">This isn't a fringe view. The short-timeline case is laid out in <a href={evidenceSources.situational.url} target="_blank" rel="noopener noreferrer">Situational Awareness: The Decade Ahead</a> (2024), and DeepMind's own researchers reason through what comes next in <a href={evidenceSources.agiToAsi.url} target="_blank" rel="noopener noreferrer">From AGI to ASI</a> (2026). <a href="/evidence">See the full evidence →</a></p>
 				</div>
 			</div>
 
@@ -593,6 +686,18 @@
 			</div>
 
 			<WindowSim />
+		</div>
+	</section>
+
+	<!-- BETWEEN TIMELINE + ALTERNATIVES VIDEO -->
+	<section class="section section-between-video" use:observe>
+		<div class="section-inner">
+			<YouTubeEmbed
+				videoId="PDKhUknuQDg"
+				title="Genie 3: dynamic worlds you can navigate in real time"
+				caption="AI isn't just answering questions anymore. It's building entire worlds you can walk around in."
+				credit="Google DeepMind"
+			/>
 		</div>
 	</section>
 
@@ -738,7 +843,7 @@
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
-		padding: 1.25rem 1rem 1.5rem;
+		padding: 0.25rem 1rem 1.5rem;
 		overflow: hidden;
 	}
 
@@ -919,6 +1024,25 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
+	}
+
+	.hero-video {
+		margin-top: 0;
+		width: 100%;
+		max-width: 620px;
+	}
+
+	.hero-video-more {
+		display: inline-block;
+		margin-top: 0.75rem;
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: var(--color-primary);
+		text-decoration: none;
+	}
+
+	.hero-video-more:hover {
+		text-decoration: underline;
 	}
 
 	.hero-signup {
@@ -1193,6 +1317,75 @@
 	.section-timeline {
 		background: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, transparent 100%);
 		border-top: 1px solid rgba(59, 130, 246, 0.06);
+	}
+
+	.section-watch {
+		background: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, transparent 100%);
+		border-top: 1px solid rgba(148, 163, 184, 0.08);
+	}
+
+	.section-between-video {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.watch-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.watch-footer {
+		margin-top: 1.75rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.watch-note {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		font-family: var(--font-mono);
+		text-align: center;
+		margin: 0;
+	}
+
+	.watch-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-weight: 700;
+		font-size: 0.95rem;
+		color: var(--color-primary);
+		text-decoration: none;
+		border: 1px solid rgba(245, 158, 11, 0.3);
+		border-radius: var(--radius-sm);
+		padding: 0.7rem 1.25rem;
+		transition: background 0.2s ease, transform 0.15s ease;
+	}
+
+	.watch-cta:hover {
+		background: rgba(245, 158, 11, 0.08);
+		transform: translateY(-2px);
+	}
+
+	.section-cite {
+		margin-top: 0.85rem;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--color-text-muted);
+		max-width: 70ch;
+	}
+
+	.section-cite a {
+		color: var(--color-primary);
+		text-decoration: none;
+	}
+
+	.section-cite a:hover {
+		text-decoration: underline;
 	}
 
 	.section-cta {

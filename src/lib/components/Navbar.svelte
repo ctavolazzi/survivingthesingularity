@@ -18,6 +18,7 @@
   // Nav structure: flat links for desktop, grouped for drawer
   const desktopLinks = [
     { href: '/agi',       label: 'What is AGI' },
+    { href: '/evidence',  label: 'Evidence' },
     { href: '/why',       label: 'Why' },
     { href: '/blueprint', label: 'Blueprint' },
     { href: '/shouse',    label: 'Game' },
@@ -41,6 +42,12 @@
           label: 'What is AGI?',
           sub: 'The singularity, explained',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
+        },
+        {
+          href: '/evidence',
+          label: 'The Evidence',
+          sub: 'See it happen: footage + papers',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
         },
         {
           href: '/why',

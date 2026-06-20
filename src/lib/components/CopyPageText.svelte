@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/environment';
-  import { addToast } from '$lib/stores/toasts.js';
+  import { toasts } from '$lib/stores/toasts.js';
 
   let copied = false;
   let copying = false;
@@ -13,7 +13,7 @@
       // Get main content, excluding nav, footer, and utility components
       const main = document.querySelector('main');
       if (!main) {
-        addToast('No content found to copy', 'error');
+        toasts.error('No content found to copy');
         copying = false;
         return;
       }
@@ -52,13 +52,13 @@
       await navigator.clipboard.writeText(text);
 
       copied = true;
-      addToast('Page text copied to clipboard', 'success');
+      toasts.success('Page text copied to clipboard');
 
       setTimeout(() => {
         copied = false;
       }, 3000);
     } catch (err) {
-      addToast('Failed to copy - try selecting text manually', 'error');
+      toasts.error('Failed to copy - try selecting text manually');
     }
 
     copying = false;

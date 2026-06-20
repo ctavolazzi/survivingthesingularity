@@ -100,6 +100,12 @@
 		property="og:description"
 		content="No forecasts you have to take on faith. Real footage and primary sources you can scrutinize, share, or drop into any AI chat."
 	/>
+	<meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
+	<meta property="og:type" content="article" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="/Surviving-the-Singularity-Cover.png" />
+	<meta name="twitter:title" content="The Evidence | Surviving the Singularity" />
+	<meta name="twitter:description" content="Footage and primary sources behind Surviving the Singularity. Watch it, read it, pull it apart." />
 </svelte:head>
 
 <article class="evidence">

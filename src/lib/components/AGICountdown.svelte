@@ -98,7 +98,9 @@
   {/if}
 
   {#if compact}
-    <div class="ac-compact-links"></div>
+    <div class="ac-compact-links">
+      <a class="ac-learn" href="/why">Read the reasoning →</a>
+    </div>
   {/if}
 </div>
 

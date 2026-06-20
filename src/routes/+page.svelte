@@ -512,6 +512,27 @@
 		</div>
 	</section>
 
+	<!-- TAKEOFF CALLOUT -->
+	<section class="section section-takeoff" use:observe>
+		<div class="section-inner">
+			<div class="takeoff-block">
+				<p class="takeoff-question">The question isn't <em>if</em> the machines start improving themselves faster than we can.</p>
+				<p class="takeoff-statement">It's <strong>when</strong>, and how fast.</p>
+				<div class="takeoff-scenarios">
+					<div class="takeoff-scenario takeoff-soft">
+						<span class="takeoff-label">Soft takeoff</span>
+						<p>Years of gradual compounding. Institutions adapt. You have time to watch and adjust.</p>
+					</div>
+					<div class="takeoff-scenario takeoff-hard">
+						<span class="takeoff-label">Hard takeoff</span>
+						<p>Months, maybe weeks once the loop closes. Most people notice after the world has already changed.</p>
+					</div>
+				</div>
+				<p class="takeoff-note">The evidence keeps pointing the same direction. <a href="/evidence">See it for yourself.</a></p>
+			</div>
+		</div>
+	</section>
+
 	<!-- LEAD MAGNET BAND -->
 	<section class="section" use:observe>
 		<div class="section-inner">
@@ -1328,6 +1349,98 @@
 	.section-between-video {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	.section-takeoff {
+		background: linear-gradient(180deg, rgba(245, 158, 11, 0.04) 0%, transparent 100%);
+		border-top: 1px solid rgba(245, 158, 11, 0.1);
+		border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+	}
+
+	.takeoff-block {
+		max-width: 680px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.takeoff-question {
+		font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+		line-height: 1.45;
+		color: var(--color-text-secondary);
+		margin: 0 0 0.4rem;
+	}
+
+	.takeoff-question em {
+		color: var(--color-text-primary);
+		font-style: normal;
+		font-weight: 700;
+	}
+
+	.takeoff-statement {
+		font-size: clamp(1.6rem, 4vw, 2.4rem);
+		font-weight: 800;
+		line-height: 1.2;
+		color: var(--color-text-primary);
+		margin: 0 0 2rem;
+		letter-spacing: -0.02em;
+	}
+
+	.takeoff-statement strong {
+		color: var(--color-primary);
+	}
+
+	.takeoff-scenarios {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		margin-bottom: 1.75rem;
+		text-align: left;
+	}
+
+	.takeoff-scenario {
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		padding: 1.25rem;
+	}
+
+	.takeoff-soft { border-top: 3px solid var(--color-secondary); }
+	.takeoff-hard { border-top: 3px solid var(--color-primary); }
+
+	.takeoff-label {
+		display: block;
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--color-text-muted);
+		margin-bottom: 0.5rem;
+	}
+
+	.takeoff-scenario p {
+		font-size: 0.92rem;
+		line-height: 1.55;
+		color: var(--color-text-secondary);
+		margin: 0;
+	}
+
+	.takeoff-note {
+		font-size: 0.92rem;
+		color: var(--color-text-muted);
+		margin: 0;
+	}
+
+	.takeoff-note a {
+		color: var(--color-primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.takeoff-note a:hover { text-decoration: underline; }
+
+	@media (max-width: 500px) {
+		.takeoff-scenarios { grid-template-columns: 1fr; }
 	}
 
 	.watch-grid {

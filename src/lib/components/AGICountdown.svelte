@@ -87,19 +87,15 @@
       {/each}
     </div>
 
-    <p class="ac-target">
-      Counting down to <strong>{targetYear}</strong>{#if !compact}: {label}{/if}
-    </p>
+    {#if compact}
+      <a class="ac-learn" href="/why">Read why {targetYear} →</a>
+    {:else}
+      <p class="ac-target">Counting down to <strong>{targetYear}</strong>: {label}</p>
+    {/if}
   {:else}
     <div class="ac-elapsed">
       <span class="ac-value">0</span>
       <p>The horizon has passed.</p>
-    </div>
-  {/if}
-
-  {#if compact}
-    <div class="ac-compact-links">
-      <a class="ac-learn" href="/why">Read the reasoning →</a>
     </div>
   {/if}
 </div>

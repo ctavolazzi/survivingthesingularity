@@ -23,7 +23,7 @@
 		{ id: 'blurb', label: 'The Book' },
 		{ id: 'pillars', label: 'Pillars' },
 		{ id: 'situation', label: 'Data' },
-		{ id: 'watch', label: 'Watch' },
+		{ id: 'watch', label: 'Tools' },
 		{ id: 'plan', label: 'Plan' },
 		{ id: 'steps', label: 'Steps' },
 		{ id: 'timeline', label: 'Timeline' },
@@ -485,8 +485,8 @@
 		<div class="section-inner">
 			<div class="section-header-row">
 				<div>
-					<h2 class="section-title">See It Happen</h2>
-					<p class="section-desc">This isn't a forecast. It's footage. It started with one 2017 paper, <a href={evidenceSources.attention.url} target="_blank" rel="noopener noreferrer">Attention Is All You Need</a>, and in under a decade it has spilled out into world-modeling AI, humanoid robots on factory floors, living cells doing computation, and quantum chips. Watch it happen first-hand, then decide how much time you think the old path has left.</p>
+					<h2 class="section-title">The Tools Are Already Here</h2>
+					<p class="section-desc">Industrial-grade robot arms that fit on a desktop. Quantum chips stable enough to run real computations. The capability isn't locked inside big labs anymore. It's landing on individual workbenches and in research budgets anyone can read. Two more things to watch before you scroll past.</p>
 				</div>
 			</div>
 

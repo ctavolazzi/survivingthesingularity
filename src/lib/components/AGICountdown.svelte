@@ -62,7 +62,7 @@
   ];
 </script>
 
-<div class="agi-countdown" class:compact>
+<a href={compact ? '/why' : undefined} class="agi-countdown" class:compact class:ac-clickable={compact}>
   <div class="ac-glow"></div>
 
   <div class="ac-eyebrow">
@@ -87,9 +87,7 @@
       {/each}
     </div>
 
-    {#if compact}
-      <a class="ac-learn" href="/why">Read why {targetYear} →</a>
-    {:else}
+    {#if !compact}
       <p class="ac-target">Counting down to <strong>{targetYear}</strong>: {label}</p>
     {/if}
   {:else}
@@ -98,7 +96,7 @@
       <p>The horizon has passed.</p>
     </div>
   {/if}
-</div>
+</a>
 
 <style>
   .agi-countdown {
@@ -109,7 +107,11 @@
     border-radius: 20px;
     padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1rem, 3vw, 2rem);
     text-align: center;
+    text-decoration: none;
+    display: block;
   }
+  .ac-clickable { cursor: pointer; }
+  .ac-clickable:hover { border-color: rgba(245, 158, 11, 0.5); }
 
   .ac-glow {
     position: absolute;
@@ -261,7 +263,7 @@
     display: inline-block;
     font-size: 0.86rem;
     font-weight: 700;
-    color: #fbbf24;
+    color: #94a3b8;
     text-decoration: none;
     font-family: var(--font-primary);
     margin-bottom: 0;

@@ -8,17 +8,32 @@
 	// and use:stagger directives below are kept as no-op stubs so existing
 	// markup compiles, but content no longer waits on IntersectionObserver.
 	function observe() { return { destroy: () => {} }; }
-	function stagger() { return { destroy: () => {} }; }
+	function stagger(node) {
+		node.querySelectorAll('.stagger-item').forEach(el => el.classList.add('stagger-in'));
+		return { destroy: () => {} };
+	}
 
 	const timeline = [
-		{ year: '2017', event: 'Transformer architecture invented at Google', impact: 'The architecture behind every modern AI', source: 'Attention Is All You Need - Vaswani et al.' },
-		{ year: '2020', event: 'GPT-3 demonstrates emergent reasoning', impact: '175B parameters. Few-shot learning surprises researchers.', source: 'OpenAI' },
-		{ year: '2022', event: 'ChatGPT reaches 100M users in 2 months', impact: 'Fastest-growing consumer application in history', source: 'Reuters' },
-		{ year: '2023', event: 'GPT-4 passes bar exam, medical boards, CPA exam', impact: 'AI outperforms 90th percentile of human professionals', source: 'OpenAI Technical Report' },
-		{ year: '2024', event: 'Claude, Gemini, and open-source models reach near-expert level', impact: 'AI coding, writing, and analysis becomes routine', source: 'Multiple benchmarks' },
-		{ year: '2025', event: 'AI agents begin automating multi-step workflows', impact: 'AI doesn\'t just answer - it acts', source: 'Anthropic, OpenAI, Google' },
-		{ year: '2027', event: 'Projected: AI matches median human performance broadly', impact: 'Leopold Aschenbrenner\'s "Situational Awareness" timeline', source: 'situational-awareness.ai' },
-		{ year: '2030', event: 'Projected: Artificial General Intelligence', impact: 'Multiple credible researchers predict AGI by this date', source: 'Metaculus, Kurzweil, Hinton' },
+		{ year: '2012', event: 'AlexNet wins ImageNet by a record margin', impact: 'Deep learning goes from academic curiosity to dominant paradigm overnight. Every major tech lab pivots to neural networks.', source: 'Krizhevsky, Sutskever, Hinton - NeurIPS 2012', sourceUrl: 'https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html' },
+		{ year: '2016', event: 'AlphaGo defeats world champion Lee Sedol 4-1', impact: 'Go was considered a decade away from being solved. The win signals that pattern recognition at superhuman level is here.', source: 'DeepMind / Nature', sourceUrl: 'https://www.nature.com/articles/nature16961' },
+		{ year: '2017', event: 'Transformer architecture published at Google', impact: '"Attention Is All You Need" replaces recurrent networks. Every major model since - GPT, BERT, Claude, Gemini - runs on this foundation.', source: 'Vaswani et al. - NeurIPS 2017', sourceUrl: 'https://arxiv.org/abs/1706.03762' },
+		{ year: '2019', event: 'GPT-2 withheld for being "too dangerous to release"', impact: 'OpenAI self-censors a text model. Within 18 months, models 100x more capable are freely available.', source: 'OpenAI', sourceUrl: 'https://openai.com/index/gpt-2-1-5b-released/' },
+		{ year: '2020', event: 'GPT-3: few-shot learning at 175B parameters', impact: 'Researchers discover emergent abilities not present in smaller models. The scaling hypothesis becomes mainstream.', source: 'Brown et al. - OpenAI', sourceUrl: 'https://arxiv.org/abs/2005.14165' },
+		{ year: '2021', event: 'AlphaFold 2 solves the protein folding problem', impact: '50 years of unsolved biology in one model. DeepMind releases structures for nearly every known protein.', source: 'Jumper et al. - Nature 2021', sourceUrl: 'https://www.nature.com/articles/s41586-021-03819-2' },
+		{ year: '2022', event: 'Stable Diffusion, DALL-E 2, and Midjourney go public', impact: 'Image generation shifts from research demo to consumer product in months. Visual creative work is never the same.', source: 'Stability AI / OpenAI / Midjourney', sourceUrl: 'https://openai.com/index/dall-e-2/' },
+		{ year: '2022', event: 'ChatGPT reaches 100 million users in 2 months', impact: 'Fastest consumer product adoption in history. Faster than TikTok (9 months), Instagram (2.5 years), Netflix (10 years).', source: 'Reuters / UBS', sourceUrl: 'https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/' },
+		{ year: '2023', event: 'GPT-4 passes bar exam, medical boards, and CPA exam', impact: 'AI scores in the 90th percentile of human professionals across multiple licensed fields simultaneously.', source: 'OpenAI Technical Report', sourceUrl: 'https://arxiv.org/abs/2303.08774' },
+		{ year: '2023', event: 'Geoffrey Hinton leaves Google and warns of existential risk', impact: 'One of the three "godfathers of deep learning" publicly says he regrets his life\'s work and fears loss of human control.', source: 'BBC News', sourceUrl: 'https://www.bbc.com/news/world-us-canada-65452940' },
+		{ year: '2024', event: 'OpenAI o1 introduces chain-of-thought reasoning at scale', impact: 'Models that "think before answering" beat PhD-level humans on physics and chemistry benchmarks.', source: 'OpenAI', sourceUrl: 'https://openai.com/o1/' },
+		{ year: '2024', event: 'Sora generates minute-long photorealistic video from text', impact: 'Video generation reaches cinematic quality. Hollywood studios begin negotiating with AI companies.', source: 'OpenAI', sourceUrl: 'https://openai.com/sora/' },
+		{ year: '2024', event: 'Claude 3 Opus and Gemini Ultra match or exceed GPT-4', impact: 'Multiple frontier models from competing labs. The AI race goes from one-horse to multi-horse in a single year.', source: 'Anthropic / Google', sourceUrl: 'https://www.anthropic.com/news/claude-3-family' },
+		{ year: '2025', event: 'Claude 3.7 Sonnet demonstrates extended autonomous reasoning', impact: 'Models hold coherent thought across thousands of steps. Multi-hour agentic tasks become routine.', source: 'Anthropic', sourceUrl: 'https://www.anthropic.com/news/claude-3-7-sonnet' },
+		{ year: '2025', event: 'AI coding agents write and ship production software', impact: 'GitHub Copilot, Cursor, and Claude Code handle entire features end-to-end. Software engineers\' role shifts to review and direction.', source: 'GitHub / Anthropic', sourceUrl: 'https://github.com/features/copilot' },
+		{ year: '2025', event: 'Humanoid robots begin factory deployment at scale', impact: 'Figure, Tesla Optimus, and 1X begin measured production runs. The physical world becomes the next AI frontier.', source: 'Figure AI / Tesla / 1X Technologies', sourceUrl: 'https://www.figure.ai/' },
+		{ year: '2026', event: 'Projected: AI outperforms experts in most white-collar tasks', impact: 'Economic displacement begins in knowledge work. Legal, financial analysis, and radiology see major workforce restructuring.', source: 'McKinsey Global Institute', sourceUrl: 'https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai' },
+		{ year: '2027', event: 'Projected: AI matches median human performance broadly', impact: 'Leopold Aschenbrenner\'s "Situational Awareness" timeline. The window for building independent skills and infrastructure closes.', source: 'situational-awareness.ai', sourceUrl: 'https://situational-awareness.ai/' },
+		{ year: '2028', event: 'Projected: Autonomous AI research accelerates discovery', impact: 'AI systems begin meaningfully contributing to their own improvement. Human-paced science is no longer the bottleneck.', source: 'Metaculus community forecast', sourceUrl: 'https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/' },
+		{ year: '2030', event: 'Projected: Artificial General Intelligence', impact: 'Median forecast from Metaculus aggregation (~2030). Kurzweil: 2029. Hinton: 20% chance before 2030.', source: 'Metaculus / Kurzweil / Hinton', sourceUrl: 'https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/' },
 	];
 
 	// Paraphrased summaries of publicly-stated positions, NOT direct quotes.
@@ -105,7 +120,7 @@
 		</div>
 		{#if visible}
 			<div class="hero-content" in:fade={{ duration: 600 }}>
-				<a href="/" class="back-link">← Back to Blueprint</a>
+				<a href="/" class="back-link">← Back to Home</a>
 
 				<div class="hero-badge">
 					<span class="badge-dot"></span>
@@ -146,13 +161,15 @@
 					<div class="timeline-item stagger-item" class:timeline-future={parseInt(item.year) > 2025}>
 						<div class="timeline-year">{item.year}</div>
 						<div class="timeline-body">
-							<h3 class="timeline-event">{item.event}</h3>
+							<div class="timeline-event-row">
+								<h3 class="timeline-event">{item.event}</h3>
+								{#if parseInt(item.year) > 2025}
+									<span class="projected-badge">PROJECTED</span>
+								{/if}
+							</div>
 							<p class="timeline-impact">{item.impact}</p>
-							<span class="timeline-source">{item.source}</span>
+							<a class="timeline-source" href={item.sourceUrl} target="_blank" rel="noopener noreferrer">{item.source}</a>
 						</div>
-						{#if parseInt(item.year) > 2025}
-							<span class="projected-badge">PROJECTED</span>
-						{/if}
 					</div>
 				{/each}
 			</div>
@@ -586,13 +603,14 @@
 	/* ═══ TIMELINE ═══ */
 	.timeline {
 		position: relative;
-		padding-left: 1rem;
+		padding-left: 0;
 	}
 
+	/* Vertical track */
 	.timeline::before {
 		content: '';
 		position: absolute;
-		left: 40px;
+		left: calc(68px + 1rem - 2px);
 		top: 0;
 		bottom: 0;
 		width: 2px;
@@ -600,8 +618,9 @@
 	}
 
 	.timeline-item {
-		display: flex;
-		gap: 1.5rem;
+		display: grid;
+		grid-template-columns: 68px 1fr;
+		gap: 0 1rem;
 		padding: 1.25rem 0;
 		position: relative;
 	}
@@ -611,43 +630,48 @@
 	}
 
 	.timeline-year {
-		min-width: 52px;
 		font-size: 0.85rem;
 		font-weight: 800;
 		color: #f59e0b;
 		font-family: var(--font-primary);
 		position: relative;
 		z-index: 1;
+		white-space: nowrap;
+		text-align: center;
+		background: #1c1406;
+		border: 1px solid rgba(245, 158, 11, 0.5);
+		border-radius: 999px;
+		padding: 0.2rem 0.6rem;
+		height: fit-content;
+		align-self: start;
+		margin-top: 0.1rem;
 	}
 
-	.timeline-year::after {
-		content: '';
-		position: absolute;
-		right: -21px;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		background: #f59e0b;
-		border: 2px solid #020617;
+	.timeline-future .timeline-year {
+		color: #94a3b8;
+		background: #0d1117;
+		border-color: rgba(100, 116, 139, 0.4);
 	}
 
-	.timeline-future .timeline-year::after {
-		background: #475569;
-		border-color: #1e293b;
-	}
 
 	.timeline-body {
-		flex: 1;
-		padding-left: 0.5rem;
+		min-width: 0;
+		padding-left: 1rem;
+	}
+
+	.timeline-event-row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.5rem;
+		margin-bottom: 0.35rem;
 	}
 
 	.timeline-event {
 		font-size: 0.95rem;
 		font-weight: 700;
 		color: #e2e8f0;
-		margin-bottom: 0.25rem;
+		margin: 0;
 	}
 
 	.timeline-impact {
@@ -657,23 +681,28 @@
 	}
 
 	.timeline-source {
-		font-size: 0.8rem;
-		color: #dde4ef;
+		font-size: 0.78rem;
+		color: #64748b;
 		font-family: var(--font-primary);
+		text-decoration: none;
+		display: inline-block;
+		margin-top: 0.1rem;
+		transition: color 0.15s;
 	}
+	.timeline-source:hover { color: #f59e0b; }
 
 	.projected-badge {
-		font-size: 0.82rem;
+		font-size: 0.72rem;
 		font-weight: 700;
-		color: #dde4ef;
-		background: rgba(100, 116, 139, 0.1);
-		border: 1px solid rgba(100, 116, 139, 0.15);
-		padding: 0.2rem 0.5rem;
-		border-radius: 4px;
+		color: #94a3b8;
+		background: rgba(100, 116, 139, 0.12);
+		border: 1px solid rgba(100, 116, 139, 0.2);
+		padding: 0.15rem 0.4rem;
+		border-radius: 3px;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
-		height: fit-content;
-		margin-top: 0.3rem;
+		white-space: nowrap;
+		flex-shrink: 0;
 	}
 
 	/* ═══ QUOTES ═══ */

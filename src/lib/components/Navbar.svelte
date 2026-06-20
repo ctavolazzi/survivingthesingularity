@@ -69,7 +69,7 @@
         {
           href: '/shouse',
           label: 'Shouse Builder',
-          sub: 'Build the $25k shouse — a 3D strategy game',
+          sub: 'Build the $25k shouse, a 3D strategy game',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 12 2 21 11 21 22 3 22"/><path d="M9 22v-6h6v6"/><path d="M12 8v3"/></svg>`,
         },
         {

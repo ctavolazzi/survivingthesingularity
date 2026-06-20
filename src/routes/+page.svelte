@@ -182,10 +182,7 @@
 					<YouTubeEmbed
 						videoId="YZH1csMhnDo"
 						title="BotQ: ramping F.03 production"
-						caption="This is happening now: a factory full of robots, building more robots."
-						credit="Figure"
 					/>
-					<a href="#watch" class="hero-video-more">More footage and the papers behind it →</a>
 				</div>
 
 				<h1 class="hero-title">
@@ -199,6 +196,8 @@
 					But inside that disruption is an opportunity most people haven't seen yet.</span>
 				</p>
 
+				<a href="/evidence" class="hero-video-more">More footage and the papers behind it →</a>
+
 				<p class="hero-question">
 					What might <em>a new way of getting our needs met</em> look like at a <mark>fraction</mark> of the traditional cost?
 				</p>
@@ -211,7 +210,7 @@
 							<li>Gain back your autonomy</li>
 							<li>Build better systems</li>
 							<li>Grow your own food</li>
-							<li>Make robots labor for <em>you</em> — not some giant corporation</li>
+							<li>Make robots labor for <em>you</em>, not some giant corporation</li>
 						</ul>
 						<p class="answer-cost">
 							There is a new way of life emerging...are you ready?
@@ -594,7 +593,7 @@
 					</div>
 					<h3 class="step-title">Start making content (responsibly)</h3>
 					<p class="step-body">
-						One possible economic channel: film what you learn, build, and figure out. The <strong>One-Hour Rule</strong> — if it took you more than an hour to learn, it could be a video.
+						One possible economic channel: film what you learn, build, and figure out. The <strong>One-Hour Rule</strong>: if it took you more than an hour to learn, it could be a video.
 					</p>
 					<p class="step-caveat">Be responsible: don't share location, family, financial, or safety-sensitive details publicly.</p>
 					<div class="step-tags">
@@ -634,7 +633,7 @@
 					</div>
 					<h3 class="step-title">Build a Shop</h3>
 					<p class="step-body">
-						Not a house. A <strong>shouse</strong> — shop first, shelter second. Steel kit prices swing with commodity markets.
+						Not a house. A <strong>shouse</strong>: shop first, shelter second. Steel kit prices swing with commodity markets.
 					</p>
 					<p class="step-caveat">Habitability conversions face local codes and inspections that vary by county. Consult a licensed contractor and your permitting authority first.</p>
 					<div class="step-tags">
@@ -656,7 +655,7 @@
 					<p class="step-body">
 						Use the space. Document what you build. Open-source projects worth knowing: <a href="https://farm.bot/" target="_blank" rel="noopener noreferrer">FarmBot</a> (CNC food-growing), <a href="https://www.llama.com/" target="_blank" rel="noopener noreferrer">Llama</a> and other open-weight models.
 					</p>
-					<p class="step-caveat">Not an endorsement — evaluate fit, safety, and legality for your situation.</p>
+					<p class="step-caveat">Not an endorsement. Evaluate fit, safety, and legality for your situation.</p>
 					<div class="step-tags">
 						<span class="step-tag">Open-source projects, varies</span>
 						<span class="step-tag">Verify for your context</span>
@@ -865,7 +864,7 @@
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
-		padding: 0.25rem 1rem 1.5rem;
+		padding: 0 1rem 1.5rem;
 		overflow: hidden;
 	}
 
@@ -949,7 +948,7 @@
 		font-weight: 900;
 		color: #fafafa;
 		line-height: 1.15;
-		margin: 0 0 1.25rem;
+		margin: 3.5rem 0 1rem;
 		text-wrap: balance;
 		letter-spacing: -0.04em;
 	}
@@ -1056,11 +1055,13 @@
 
 	.hero-video-more {
 		display: inline-block;
-		margin-top: 0.75rem;
-		font-size: 0.9rem;
+		margin-top: 0.5rem;
+		margin-bottom: 1.25rem;
+		font-size: 0.75rem;
 		font-weight: 600;
 		color: var(--color-primary);
 		text-decoration: none;
+		opacity: 0.75;
 	}
 
 	.hero-video-more:hover {
@@ -1522,7 +1523,7 @@
 
 	.section-countdown {
 		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding-bottom: 0.25rem;
 	}
 
 	.section-inner {
@@ -2403,7 +2404,7 @@
 	   screens keep their roomier spacing via min-width blocks)
 	   ══════════════════════════════════════════════════════ */
 	@media (max-width: 479px) {
-		.hero-title { margin: 0 0 0.85rem; }
+		.hero-title { margin: 3.5rem 0 0.85rem; }
 		.hero-subtitle { margin: 0 0 0.85rem; }
 		.hero-question { margin: 0 0 0.85rem; }
 		.hero-answer { margin-bottom: 1.25rem; }

@@ -23,7 +23,7 @@
   <div class="end-backdrop">
     <div class="end-card" role="dialog" aria-label="Game over">
       {#if s.won}
-        <div class="end-eyebrow">Shouse complete — day {s.day} of {s.maxDay}</div>
+        <div class="end-eyebrow">Shouse complete, day {s.day} of {s.maxDay}</div>
         <div class="grade grade-{grade.toLowerCase()}">{grade}</div>
         <h2 class="end-title">
           {GRADE_LABELS[grade]}
@@ -61,7 +61,7 @@
 
       {#if builtStages.length > 0}
         <div class="built-list">
-          <h3 class="built-title">What you built — and the real-world chapters behind it</h3>
+          <h3 class="built-title">What you built, and the real-world chapters behind it</h3>
           {#each builtStages as st (st.id)}
             <a class="built-row" href="/blueprint/{st.blueprintSlug}" target="_blank" rel="noopener">
               <span class="built-name">{st.shortName}</span>

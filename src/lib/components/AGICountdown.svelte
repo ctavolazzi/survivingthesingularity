@@ -98,9 +98,7 @@
   {/if}
 
   {#if compact}
-    <div class="ac-compact-links">
-      <a class="ac-learn" href="/agi">What is AGI? Read the breakdown →</a>
-    </div>
+    <div class="ac-compact-links"></div>
   {/if}
 </div>
 

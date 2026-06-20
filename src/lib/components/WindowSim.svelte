@@ -244,7 +244,7 @@
 
 <div class="window-sim" bind:this={wrap} class:revealed>
 	<div class="sim-top">
-		<span class="sim-title">THE RACE — A TOY MODEL</span>
+		<span class="sim-title">THE RACE: A TOY MODEL</span>
 		<div class="sim-top-actions">
 			<button class="sim-replay" on:click={() => (showInfo = true)} aria-label="How this simulation works">ⓘ How it works</button>
 			<button class="sim-replay" on:click={replay}>↻ Replay</button>
@@ -282,16 +282,16 @@
 	</div>
 
 	<p class="sim-caption">
-		A deliberately simple model with made-up math: it illustrates the author's framing — the
-		usefulness of preparation depends on starting before capability goes mainstream — and
+		A deliberately simple model with made-up math: it illustrates the author's framing. The
+		usefulness of preparation depends on starting before capability goes mainstream. It
 		predicts nothing. Not a forecast, not advice.
 	</p>
 </div>
 
 <InfoModal open={showInfo} title="How this race works" on:close={() => (showInfo = false)}>
-	<p><strong style="color:#60a5fa">Blue curve — AI adoption.</strong> An S-curve: slow, then sudden, then saturated. The "AI takeoff speed" slider moves the midpoint. When it crosses the <em>mainstream</em> line, the window closes: whatever advantage early skills gave is priced in.</p>
-	<p><strong style="color:#fbbf24">Amber curve — your build.</strong> Compounding skill and infrastructure. The "build pace" slider sets how many hours a week you put in. It crosses the <em>independent</em> line when the model says your setup covers your needs.</p>
-	<p>The verdict compares the two crossing points. That's the whole model — two curves and a race. The math is invented for illustration; the framing is the author's hypothesis, not a forecast.</p>
+	<p><strong style="color:#60a5fa">Blue curve: AI adoption.</strong> An S-curve: slow, then sudden, then saturated. The "AI takeoff speed" slider moves the midpoint. When it crosses the <em>mainstream</em> line, the window closes: whatever advantage early skills gave is priced in.</p>
+	<p><strong style="color:#fbbf24">Amber curve: your build.</strong> Compounding skill and infrastructure. The "build pace" slider sets how many hours a week you put in. It crosses the <em>independent</em> line when the model says your setup covers your needs.</p>
+	<p>The verdict compares the two crossing points. That's the whole model: two curves and a race. The math is invented for illustration; the framing is the author's hypothesis, not a forecast.</p>
 </InfoModal>
 
 <style>

@@ -8,7 +8,7 @@
 
 	const curveInfo = {
 		old: {
-			title: 'The Old Path — costs keep climbing',
+			title: 'The Old Path: costs keep climbing',
 			body: 'Housing, tuition, insurance, and general cost of living have outpaced wage growth for decades. The sourced stats above this chart (CPI, median home price) are the real-world anchors for this line.',
 			links: [
 				{ label: 'BLS Consumer Price Index', href: 'https://www.bls.gov/cpi/' },
@@ -16,14 +16,14 @@
 			],
 		},
 		tools: {
-			title: 'Capable Tools — costs keep collapsing',
+			title: 'Capable Tools: costs keep collapsing',
 			body: 'Utility-scale solar dropped roughly 85% from 2010 to 2023. Consumer GPUs now run serious local AI. Open-source robotics keeps getting cheaper. The inputs for an independent setup cost a fraction of what they did a decade ago.',
 			links: [
 				{ label: 'LBNL Utility-Scale Solar Report', href: 'https://emp.lbl.gov/utility-scale-solar' },
 			],
 		},
 		gap: {
-			title: 'The Gap — why timing matters',
+			title: 'The Gap: why timing matters',
 			body: 'The vertical distance between the two lines is the opportunity: capable tools getting cheap while the conventional path gets expensive. The wider the gap, the more life you can buy back per dollar. Verify every number against current data before acting on any of it.',
 			links: [],
 		},

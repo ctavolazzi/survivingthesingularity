@@ -61,7 +61,7 @@
       </div>
       {#if PURCHASE_URL}
         <div class="hero-preorder">
-          <div class="preorder-label">Part I: A Manual for the Cracks — available now.</div>
+          <div class="preorder-label">Part I: A Manual for the Cracks, available now.</div>
           <a class="cta-primary subscribe-cta" href={PURCHASE_URL} target="_blank" rel="noopener noreferrer">
             Buy the book → $7.99 launch week
           </a>

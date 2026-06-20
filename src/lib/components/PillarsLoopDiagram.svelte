@@ -8,21 +8,21 @@
 
 	const pillarInfo = {
 		tools: {
-			title: '01 — Learn the Tools',
+			title: '01: Learn the Tools',
 			color: '#f59e0b',
 			body: 'Teach yourself to use modern AI. The real leverage is not a subscription. It is understanding these tools well enough to build new ways of getting your needs met.',
 			feeds: 'Feeds the loop: the AI skills you build here are what run the machines in pillar 02.',
 			href: '/blueprint/local-ai',
 		},
 		robotics: {
-			title: '02 — Open-Source Robotics',
+			title: '02: Open-Source Robotics',
 			color: '#3b82f6',
 			body: 'Automate food production with FarmBot and workshop tasks with open-source robots. Secure your own calories and labor.',
 			feeds: 'Feeds the loop: automated production is what makes the low-overhead homestead in pillar 03 viable.',
 			href: '/blueprint/robotics',
 		},
 		exit: {
-			title: '03 — The Physical Exit',
+			title: '03: The Physical Exit',
 			color: '#10b981',
 			body: 'Rural land, a shouse workshop, and a digital cash engine. Crush overhead and buy back decades of your life.',
 			feeds: 'Feeds the loop: crushed overhead buys back the time you need to keep learning in pillar 01.',

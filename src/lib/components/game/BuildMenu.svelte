@@ -19,7 +19,7 @@
   {#if s.pendingUpgrade}
     <div class="modal-backdrop">
       <div class="modal" role="dialog" aria-label="Choose an upgrade">
-        <h3 class="modal-title">{s.pendingUpgrade.label} — pick one</h3>
+        <h3 class="modal-title">{s.pendingUpgrade.label}: pick one</h3>
         <div class="upgrade-options">
           {#each s.pendingUpgrade.options as opt (opt.id)}
             <button class="upgrade-card" on:click={() => game.selectUpgrade(opt.id)}>
@@ -118,7 +118,7 @@
           disabled={!buildCheck?.ok}
           on:click={() => game.buildNextStage()}
         >
-          {buildCheck?.ok ? `Build — $${cost.toLocaleString()}` : buildCheck?.reason || '...'}
+          {buildCheck?.ok ? `Build: $${cost.toLocaleString()}` : buildCheck?.reason || '...'}
         </button>
 
         <a class="blueprint-link" href="/blueprint/{nextStage.blueprintSlug}" target="_blank" rel="noopener">

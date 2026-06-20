@@ -36,7 +36,7 @@
 </script>
 
 <svelte:head>
-  <title>Unsubscribe — Surviving the Singularity</title>
+  <title>Unsubscribe | Surviving the Singularity</title>
   <meta name="robots" content="noindex" />
 </svelte:head>
 

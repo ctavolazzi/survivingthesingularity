@@ -98,14 +98,14 @@
       <h1 class="start-title">Shouse Builder</h1>
       <p class="start-sub">
         Raw land. <span class="mono amber">${(25000).toLocaleString()}</span>. One season.
-        Build the ultimate shouse — container shell, 200A utilities, RV living quarters,
-        a local-AI server rack, solar, and a FarmBot bed — before the deadline.
+        Build the ultimate shouse: container shell, 200A utilities, RV living quarters,
+        a local-AI server rack, solar, and a FarmBot bed. Complete it before the deadline.
         Total bill: <span class="mono">${TOTAL_BUILD_COST.toLocaleString()}</span>.
         The gap is yours to close.
       </p>
 
       <div class="how-to">
-        <div class="how-item"><span class="how-key">Build</span> stages in order — each takes days and dollars</div>
+        <div class="how-item"><span class="how-key">Build</span> stages in order: each takes days and dollars</div>
         <div class="how-item"><span class="how-key">Watch</span> water + power once utilities go live</div>
         <div class="how-item"><span class="how-key">Earn</span> rent savings, content income, produce sales</div>
         <div class="how-item"><span class="how-key">Survive</span> heat waves, outages, inspections, GPU spikes</div>

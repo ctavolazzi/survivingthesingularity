@@ -73,7 +73,7 @@
       <span class="success-icon" aria-hidden="true">✓</span>
       <div>
         <p class="success-title">Already signed up.</p>
-        <p class="success-sub">We have your email — we'll be in touch.</p>
+        <p class="success-sub">We have your email. We'll be in touch.</p>
       </div>
     </div>
 

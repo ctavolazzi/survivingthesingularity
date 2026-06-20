@@ -317,7 +317,7 @@
           View the full timeline &amp; reasoning
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M3 6.5H10M10 6.5L7 3.5M10 6.5L7 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <p class="page-note">Paraphrased from public statements — not direct quotes. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
+        <p class="page-note">Paraphrased from public statements, not direct quotes. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
       </div>
     </div>
   </section>

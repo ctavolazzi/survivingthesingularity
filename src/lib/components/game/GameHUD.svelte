@@ -58,7 +58,7 @@
             style="width: {Math.min(100, (s.water / s.waterCap) * 100)}%"
           ></div>
         </div>
-        <span class="meter-num">{s.stage >= 3 ? s.water : '—'}</span>
+        <span class="meter-num">{s.stage >= 3 ? s.water : '--'}</span>
       </div>
       <div class="meter">
         <span class="meter-label">Power</span>
@@ -69,10 +69,10 @@
             style="width: {Math.min(100, (s.power / s.powerCap) * 100)}%"
           ></div>
         </div>
-        <span class="meter-num">{s.stage >= 3 ? s.power : '—'}</span>
+        <span class="meter-num">{s.stage >= 3 ? s.power : '--'}</span>
       </div>
       {#if s.stressFrames > 0}
-        <div class="stress-warn">SYSTEM STRESS — refill now or safeties trip</div>
+        <div class="stress-warn">SYSTEM STRESS: refill now or safeties trip</div>
       {/if}
     </div>
 

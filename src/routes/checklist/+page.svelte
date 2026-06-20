@@ -6,7 +6,7 @@
     {
       n: '01',
       title: 'Audit your single points of failure',
-      body: 'List every essential — food, water, power, income, shelter — that depends on one provider you do not control. That list is your real risk map.'
+      body: 'List every essential (food, water, power, income, shelter) that depends on one provider you do not control. That list is your real risk map.'
     },
     {
       n: '02',
@@ -24,7 +24,7 @@
     {
       n: '04',
       title: 'Start a skill that compounds',
-      body: 'Pick one high-leverage skill — AI tooling, fabrication, growing food — and commit 30 minutes a day. Compounding beats intensity.'
+      body: 'Pick one high-leverage skill (AI tooling, fabrication, growing food) and commit 30 minutes a day. Compounding beats intensity.'
     },
     {
       n: '05',
@@ -34,7 +34,7 @@
     {
       n: '06',
       title: 'Open a second income that needs no permission',
-      body: 'A digital product, a service, content you own. The first dollar matters more than the amount — it proves the channel exists.'
+      body: 'A digital product, a service, content you own. The first dollar matters more than the amount: it proves the channel exists.'
     },
     {
       n: '07',
@@ -54,7 +54,7 @@
     {
       n: '10',
       title: 'Automate one recurring task with AI',
-      body: 'Reclaim the hours and build the muscle of delegating to machines you control — before you are forced to rent ones you do not.'
+      body: 'Reclaim the hours and build the muscle of delegating to machines you control, before you are forced to rent ones you do not.'
     },
     {
       n: '11',

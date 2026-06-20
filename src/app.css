@@ -74,6 +74,19 @@ input, select, textarea {
 }
 .page-note a:hover { color: #fbbf24; }
 
+.page-evidence-link {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0.5rem 0 1.5rem;
+  line-height: 1.5;
+}
+.page-evidence-link a {
+  color: #f59e0b;
+  text-decoration: none;
+  font-weight: 600;
+}
+.page-evidence-link a:hover { text-decoration: underline; }
+
 /* Shared arrow shimmer used on primary CTAs across components. */
 .shimmer-arrow {
   transition: transform 0.2s ease;

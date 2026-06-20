@@ -420,6 +420,10 @@
 			<p class="final-note">
 				The blueprint is free. Always will be. The book is for people who want to go deeper.
 			</p>
+
+			<p class="final-evidence-link">
+				Still skeptical? <a href="/evidence">See the primary sources: footage and papers you can check yourself.</a>
+			</p>
 		</div>
 	</section>
 </div>
@@ -1278,6 +1282,21 @@
 	.final-note {
 		font-size: 0.86rem;
 		color: #dde4ef;
+	}
+
+	.final-evidence-link {
+		margin-top: 1.25rem;
+		font-size: 0.9rem;
+		color: #94a3b8;
+	}
+
+	.final-evidence-link a {
+		color: #f59e0b;
+		text-decoration: none;
+	}
+
+	.final-evidence-link a:hover {
+		text-decoration: underline;
 	}
 
 	/* ═══ STAGGER ANIMATIONS ═══ */

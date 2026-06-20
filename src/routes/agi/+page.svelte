@@ -595,6 +595,8 @@
 
   <p class="page-note">Do your own research. Not legal or financial advice. <a href="/disclaimer">Read our disclaimers and terms.</a></p>
 
+  <p class="page-evidence-link">Want the primary sources? <a href="/evidence">The Evidence page has the footage and papers behind every claim on this site.</a></p>
+
 </div>
 
 <style>

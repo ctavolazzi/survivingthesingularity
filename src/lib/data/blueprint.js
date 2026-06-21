@@ -51,7 +51,7 @@ export const sections = [
       },
       {
         type: 'callout',
-        text: `The traditional path - mortgage, career ladder, retirement - is mathematically inaccessible. The new path requires building something different.`
+        text: `The structural conditions that made the 20th-century playbook work have changed materially. What resilience requires now looks different from what most plans assume.`
       }
     ]
   },

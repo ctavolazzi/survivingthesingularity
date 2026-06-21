@@ -15,9 +15,9 @@
   <div class="about-page" in:fade={{ duration: 400 }}>
     <header class="about-header">
       <p class="about-label">About This Project</p>
-      <h1 class="about-title">I'm Building the Exit Strategy</h1>
+      <h1 class="about-title">A Research Notebook on What Comes Next</h1>
       <p class="about-subtitle">
-        Surviving the Singularity is a research project and an open notebook. Material here is the author's commentary and supposition - not advice. Anything you might consider acting on should be evaluated with the relevant licensed professionals.
+        This project began as personal research into what material resilience looks like in a period of rapid AI deployment. It has grown into a reference for anyone (individuals, planners, or organizations) trying to update their frameworks before the window narrows. Material here is the author's commentary and supposition, not advice. Anything you might consider acting on should be evaluated with the relevant licensed professionals.
       </p>
     </header>
 
@@ -36,7 +36,7 @@
       <div class="provides-grid">
         <div class="provide-item">
           <h3>The Blueprint</h3>
-          <p>Eight chapters of tactical analysis covering everything from construction costs to GPU benchmarks for local LLMs.</p>
+          <p>Eight chapters of tactical analysis covering everything from construction costs to GPU benchmarks for local LLMs. Organized to be useful at different scales: whether you're making decisions for yourself, your organization, or your community.</p>
         </div>
         <div class="provide-item">
           <h3>The Blog</h3>

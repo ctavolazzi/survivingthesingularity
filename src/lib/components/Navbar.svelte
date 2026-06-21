@@ -3,6 +3,7 @@
   import { goto } from '$app/navigation';
   import { onMount, onDestroy, tick } from 'svelte';
   import { browser } from '$app/environment';
+  import AudienceSwitcher from '$lib/components/AudienceSwitcher.svelte';
 
   export let user = null;
   void user;
@@ -277,6 +278,11 @@
           >{link.label}</a>
         {/each}
       </nav>
+
+      <!-- Audience Switcher -->
+      <div class="nav-audience-switcher">
+        <AudienceSwitcher />
+      </div>
 
       <!-- Desktop CTA -->
       <a href="/blueprint" class="nav-cta" on:click={(e) => navigateTo('/blueprint', e)}>
@@ -778,6 +784,12 @@
   @media (min-width: 640px) {
     .navbar-inner { padding: 0 1.5rem; height: 64px; }
     .drawer-head { height: 64px; }
+  }
+
+  .nav-audience-switcher {
+    display: flex;
+    align-items: center;
+    margin-right: 0.25rem;
   }
 
   @media (min-width: 768px) {

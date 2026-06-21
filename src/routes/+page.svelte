@@ -15,8 +15,111 @@
 	import WindowSim from '$lib/components/WindowSim.svelte';
 	import YouTubeEmbed from '$lib/components/YouTubeEmbed.svelte';
 	import { homepageVideos, sources as evidenceSources } from '$lib/data/evidence.js';
+	import { audience } from '$lib/stores/audienceStore.js';
 
 	export let data;
+
+	// Audience-adaptive copy variants
+	const copy = {
+		heroSubtitle: {
+			individual: `The old playbook (mortgage, career ladder, retire at 65) was designed for a world that looks very different from this one. AI is rewriting every industry. Costs are out of control. But inside that disruption is an opportunity most people haven't seen yet.`,
+			policy: `The assumptions behind most long-range plans haven't caught up to the evidence. AI capability is accelerating faster than most institutional models account for. The gap between what's being planned for and what's already deployed is large, and growing.`,
+			leader: `The workforce, cost, and capability assumptions behind most organizational strategies are shifting faster than most planning cycles account for. What AI can do today would have been implausible eighteen months ago. What it will do in three years is being actively built right now.`,
+		},
+		heroAnswerTagline: {
+			individual: `Live like your ancestors, empowered by the tools and tech of our time.`,
+			policy: `Evidence-based frameworks for planning in a period of rapid AI deployment.`,
+			leader: `Practical analysis of what AI and economic disruption mean for the decisions you're making now.`,
+		},
+		heroAnswerBullets: {
+			individual: [
+				`Gain back your autonomy`,
+				`Build better systems`,
+				`Grow your own food`,
+				`Make robots labor for <em>you</em>`,
+			],
+			policy: [
+				`Understand what's already deployed and what it means for your constituents`,
+				`Identify which planning assumptions need updating, and on what timeline`,
+				`Learn which tools are accessible now at a fraction of legacy costs`,
+				`Build resilience into the systems you're responsible for`,
+			],
+			leader: [
+				`Understand capability benchmarks that matter for workforce planning`,
+				`Identify which cost structures are about to shift materially`,
+				`Learn which open tools are crossing institutional viability thresholds`,
+				`Build organizational resilience before the window narrows`,
+			],
+		},
+		heroCTA: {
+			individual: `Read the Full Blueprint`,
+			policy: `Explore the Framework`,
+			leader: `Explore the Framework`,
+		},
+		blurb: {
+			individual: {
+				hook: `The robots have taken over. Congratulations! You've lost.`,
+				body: [
+					`But losing the old world is the exact tactical opening you need to become aware of the one that's already here. For millennia, humanity has been the smartest critter on the block. That is about to change forever.`,
+					`If you're looking for a collection of soothing essays or a guide on where to build your prepper fortress, this ain't it. This book is an active blueprint for society to change its ways before it's too late.`,
+					`This moment presents our first real opportunity to stop hiding behind fear and insecurity. We already possess the technology to solve the problems that have plagued our species since the very beginning.`,
+					`This book maps a three-stage transition to ensure everyone has what they need to not only survive, but thrive at this critical moment.`,
+					`The endgame isn't making enough money to buy a bunker until this all blows over. We can build new systems that secure physical survival on the local level and guarantee our children the future they deserve.`,
+				],
+				pullquote: `Will the machines make the same choice?`,
+				close: `The tools are on the table. Are you ready to use them?`,
+			},
+			policy: {
+				hook: `For most of recorded history, humans were the most cognitively capable agents on the planet. That is changing.`,
+				body: [
+					`The pace of change is faster than most planning horizons account for. The evidence is already visible in economic data, capability benchmarks, and workforce restructuring patterns.`,
+					`Purchasing power has declined materially since 2020. Housing costs relative to wages have shifted significantly across generations. AI capability benchmarks are crossing thresholds that matter for knowledge-work employment on timelines of years, not decades.`,
+					`This project maps what that transition looks like in practical terms. Not as a prediction, but as a framework for thinking through what resilience requires: for individuals, for organizations, and for communities.`,
+					`The tools to navigate this moment already exist. The question is whether our planning frameworks are catching up to what the evidence shows.`,
+				],
+				pullquote: `The expert disagreement is mostly about speed, not direction.`,
+				close: `This book is one author's attempt to make that case. Clearly, with sources, and with enough specificity to be useful.`,
+			},
+			leader: {
+				hook: `Every major AI lab is projecting that the systems being built today will outperform experts in most knowledge-work domains within this decade.`,
+				body: [
+					`That's not a fringe view. It's the working assumption of researchers at DeepMind, Anthropic, OpenAI, and most serious academic forecasters. The disagreement is about speed, not direction.`,
+					`The economic implications are already visible: cost structures that were stable for decades are shifting, the skills gap between what organizations need and what's available is widening, and the tools available to small teams are crossing thresholds previously reserved for large enterprises.`,
+					`This project maps the transition in practical terms, organized around what individuals, organizations, and communities can actually do with the tools that exist now, at costs that are accessible now.`,
+					`It's structured as a blueprint, not a prediction. The goal is to give you a framework for thinking through which assumptions need updating and what resilience requires at the scale you're responsible for.`,
+				],
+				pullquote: `The window to prepare is before these shifts become mainstream, not after.`,
+				close: `This book is one author's attempt to make that case. With sources, with data, and with enough specificity to be useful at the scale you operate.`,
+			},
+		},
+		pillarBodies: {
+			individual: [
+				`Teach yourself to use modern AI. The real leverage is not a subscription. It is understanding these tools well enough to build new ways of getting your needs met.`,
+				`Automate food production with FarmBot and workshop tasks with open-source robots. Secure your own calories and labor.`,
+				`Lower fixed costs and build local production capacity. Rural land, a shouse workshop, and a digital income channel. Buy back decades of your life.`,
+			],
+			policy: [
+				`Understanding modern AI tools is no longer optional for anyone making consequential decisions. The real leverage is building enough fluency to evaluate what these systems can and can't do, and what they mean for your constituents.`,
+				`Physical automation is crossing into affordability ranges relevant for small institutions, farms, and community infrastructure. Not just large manufacturers. Understanding the trajectory matters for planning.`,
+				`Lower fixed costs and local production capacity aren't just personal finance tactics. They're the structural basis for community resilience at any scale: household, organization, or municipality.`,
+			],
+			leader: [
+				`AI fluency is now a leadership competency. The organizations building advantage are those where decision-makers understand these tools well enough to evaluate claims, spot hype, and identify genuine leverage.`,
+				`Open-source robotics is crossing into ranges relevant for operations, logistics, and facilities. Not just manufacturing giants. The cost curves matter for your planning horizon.`,
+				`Distributed production capacity and lower fixed overhead aren't just survival tactics. They're structural resilience: the kind that matters when supply chains break and cost structures shift.`,
+			],
+		},
+		ctaClose: {
+			individual: `Real security may come from tangible things you understand, not from status, debt, or systems you don't.`,
+			policy: `The most useful planning frameworks are built before the disruption becomes obvious. Not after.`,
+			leader: `The organizations that adapt earliest tend to define the terms for those that follow.`,
+		},
+		magnetSub: {
+			individual: `Twelve concrete moves to build independence before AGI reprices everything. See the first three free.`,
+			policy: `Twelve concrete starting points for building resilience as AI capability expands. See the first three free.`,
+			leader: `Twelve concrete starting points for building organizational resilience as AI capability expands. See the first three free.`,
+		},
+	};
 
 	const homeSections = [
 		{ id: 'brief', label: 'Brief' },
@@ -107,21 +210,21 @@
 		{
 			num: '01',
 			label: 'Learn the Tools',
-			body: 'Teach yourself to use modern AI. The real leverage is not a subscription. It is understanding these tools well enough to build new ways of getting your needs met.',
+			bodyKey: 0,
 			href: '/blueprint/local-ai',
 			color: 'amber',
 		},
 		{
 			num: '02',
 			label: 'Open-Source Robotics',
-			body: 'Automate food production with FarmBot and workshop tasks with open-source robots. Secure your own calories and labor.',
+			bodyKey: 1,
 			href: '/blueprint/robotics',
 			color: 'blue',
 		},
 		{
 			num: '03',
-			label: 'The Physical Exit',
-			body: 'Rural land, a shouse workshop, and a digital cash engine. Crush overhead and buy back decades of your life.',
+			label: 'Material Independence',
+			bodyKey: 2,
 			href: '/blueprint/physical-exit',
 			color: 'green',
 		},
@@ -190,10 +293,7 @@
 				</h1>
 
 				<p class="hero-subtitle">
-					The old playbook (mortgage, career ladder, retire at 65) was designed for a world
-					that no longer exists.
-					<span class="hero-subtitle-break">AI is rewriting every industry. Costs are out of control.
-					But inside that disruption is an opportunity most people haven't seen yet.</span>
+					{copy.heroSubtitle[$audience]}
 				</p>
 
 				<a href="/evidence" class="hero-video-more">More footage and the papers behind it →</a>
@@ -205,22 +305,18 @@
 				<div class="hero-answer">
 					<div class="answer-bar"></div>
 					<div class="answer-content">
-						<p class="answer-tagline"><em>Live like your ancestors, empowered by the tools and tech of our time.</em></p>
+						<p class="answer-tagline"><em>{copy.heroAnswerTagline[$audience]}</em></p>
 						<ul class="answer-list">
-							<li>Gain back your autonomy</li>
-							<li>Build better systems</li>
-							<li>Grow your own food</li>
-							<li>Make robots labor for <em>you</em>, not some giant corporation</li>
+							{#each copy.heroAnswerBullets[$audience] as bullet}
+								<li>{@html bullet}</li>
+							{/each}
 						</ul>
-						<p class="answer-cost">
-							There is a new way of life emerging...are you ready?
-						</p>
 					</div>
 				</div>
 
 				<div class="hero-actions">
 					<a href="/blueprint" class="btn-primary">
-						Read the Full Blueprint
+						{copy.heroCTA[$audience]}
 						<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 					</a>
 					<a href="#pillars" class="btn-secondary">
@@ -263,54 +359,17 @@
 			<div class="blurb-card">
 				<p class="blurb-eyebrow">Surviving the Singularity</p>
 
-					<p class="blurb-hook">The robots have taken over. Congratulations! You've lost.</p>
+				<p class="blurb-hook">{copy.blurb[$audience].hook}</p>
 
-					<p class="blurb-body">
-						But losing the old world is the exact tactical opening you need to become aware of the one
-						that's already here. For millennia, humanity has been the smartest critter on the block.
-						That is about to change forever.
-					</p>
+				{#each copy.blurb[$audience].body as para}
+					<p class="blurb-body">{para}</p>
+				{/each}
 
-					<p class="blurb-body">
-						The corporate state bureaucrats want to fence this moment behind a digital moat, metering
-						your survival while trapping you in a system of debt and surveillance. They think they can
-						put a legal collar on a machine god.
-					</p>
+				<blockquote class="blurb-pullquote">{copy.blurb[$audience].pullquote}</blockquote>
 
-					<p class="blurb-body blurb-body--em">They are dead wrong.</p>
-
-					<p class="blurb-body">
-						If you're looking for a collection of soothing essays or a guide on where to build your
-						prepper fortress, this ain't it. This book is an active blueprint for society to change
-						its ways before it's too late.
-					</p>
-
-					<p class="blurb-body">
-						This moment presents our first real opportunity to stop hiding behind fear and insecurity.
-						We already possess the technology to solve the problems that have plagued our species since
-						the very beginning, yet the powers that be choose doubt at every turn.
-					</p>
-
-					<blockquote class="blurb-pullquote">Will the machines make the same choice?</blockquote>
-
-					<p class="blurb-body">
-						This book maps a three-stage transition to ensure everyone has what they need to not only
-						survive, but thrive at this critical moment.
-					</p>
-
-					<p class="blurb-body">
-						The endgame isn't making enough money to buy a bunker until this all blows over. We can
-						build new systems that secure physical survival on the local level and guarantee our
-						children the future they deserve.
-					</p>
-
-					<div class="blurb-close">
-						<p class="blurb-tools">The tools are on the table.</p>
-						<p class="blurb-question-final">Will you continue to hide?</p>
-						<p class="blurb-answer-final">
-							Or will you face the music, and realize we are finally free to dance again?
-						</p>
-					</div>
+				<div class="blurb-close">
+					<p class="blurb-answer-final">{copy.blurb[$audience].close}</p>
+				</div>
 
 					<div class="blurb-cta">
 					<a href="/book" class="btn-primary">
@@ -371,7 +430,7 @@
 					<a href={pillar.href} class="pillar-card stagger-item pillar-{pillar.color}">
 						<div class="pillar-num">{pillar.num}</div>
 						<h3 class="pillar-label">{pillar.label}</h3>
-						<p class="pillar-body">{pillar.body}</p>
+						<p class="pillar-body">{copy.pillarBodies[$audience][pillar.bodyKey]}</p>
 						<span class="pillar-link">
 							Explore
 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7H11M11 7L8 4M11 7L8 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -515,8 +574,8 @@
 	<section class="section section-takeoff" use:observe>
 		<div class="section-inner">
 			<div class="takeoff-block">
-				<p class="takeoff-question">The question isn't <em>if</em> the machines start improving themselves faster than we can.</p>
-				<p class="takeoff-statement">It's <strong>when</strong>, and how fast.</p>
+				<p class="takeoff-question">The relevant question for planning purposes isn't <em>whether</em> AI capability continues to compound. The evidence strongly suggests it will.</p>
+				<p class="takeoff-statement">It's <strong>how fast</strong>, and what that means for decisions being made now.</p>
 				<div class="takeoff-scenarios">
 					<div class="takeoff-scenario takeoff-soft">
 						<span class="takeoff-label">Soft takeoff</span>
@@ -539,7 +598,7 @@
 				<div class="magnet-text">
 					<p class="magnet-eyebrow">Free · Start today</p>
 					<h2 class="magnet-title">The Singularity Readiness Checklist</h2>
-					<p class="magnet-sub">Twelve concrete moves to build independence before AGI reprices everything. See the first three free.</p>
+					<p class="magnet-sub">{copy.magnetSub[$audience]}</p>
 				</div>
 				<span class="magnet-cta">
 					Get the Checklist
@@ -742,7 +801,7 @@
 			<div class="section-header-row">
 				<div>
 					<h2 class="section-title">The Full Blueprint</h2>
-					<p class="section-desc">Eight chapters of conjecture and supposition based on one author's research. Not a roadmap. A way of thinking about what <em>might</em> be possible.</p>
+					<p class="section-desc">Eight chapters of structured analysis based on one author's research. Not a roadmap. A framework for thinking through what might be possible at this moment.</p>
 				</div>
 			</div>
 
@@ -789,7 +848,7 @@
 			<div class="cta-border"></div>
 			<p class="cta-eyebrow">Closing thought</p>
 			<h2 class="cta-title">
-				Real security may come from tangible things you understand,<br class="cta-break" /> not from status, debt, or systems you don't.
+				{copy.ctaClose[$audience]}
 			</h2>
 			<p class="cta-body">
 				Material from this site is for thinking with, not acting on. Anything you might attempt (land purchases, construction, career changes, financial moves) should be evaluated with the relevant licensed professionals in your jurisdiction.

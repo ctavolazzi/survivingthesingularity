@@ -146,6 +146,16 @@
 		{/if}
 	</section>
 
+	<!-- INSTITUTIONAL READER INTRO -->
+	<section class="section" use:observe>
+		<div class="section-inner">
+			<div class="institutional-callout">
+				<p class="institutional-lead">If you're a policy maker, organizational planner, or decision maker:</p>
+				<p class="institutional-body">This page is particularly for you. The timeline below is not a forecast. It's a map of what has already happened and what researchers who study this professionally believe is coming. The goal isn't to alarm. It's to give you enough grounding in the actual evidence to make your own assessment of what your planning horizon should assume.</p>
+			</div>
+		</div>
+	</section>
+
 	<!-- SECTION 1: THE TIMELINE -->
 	<section class="section" use:observe>
 		<div class="section-inner">
@@ -217,6 +227,16 @@
 					</p>
 					<p class="callout-read-time">~2 hour read. Worth every minute.</p>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- PLANNING IMPLICATIONS CALLOUT -->
+	<section class="section" use:observe>
+		<div class="section-inner">
+			<div class="planning-callout">
+				<h3 class="planning-callout-title">What this means for planning</h3>
+				<p class="planning-callout-body">The expert disagreement here is mostly about <em>speed</em>, not <em>direction</em>. Nearly everyone studying this professionally agrees that AI capability will continue to grow significantly. The relevant planning question isn't whether to account for AI disruption. It's what timelines your decisions should assume, and how much lead time you have to adapt the systems and institutions you're responsible for.</p>
 			</div>
 		</div>
 	</section>
@@ -448,6 +468,59 @@
 <style>
 	.page {
 		width: 100%;
+	}
+
+	/* ═══ INSTITUTIONAL CALLOUTS ═══ */
+	.institutional-callout {
+		border-left: 3px solid #3b82f6;
+		padding: 1.25rem 1.5rem;
+		background: rgba(59, 130, 246, 0.06);
+		border-radius: 0 8px 8px 0;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.institutional-lead {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: #3b82f6;
+		font-weight: 700;
+		margin: 0 0 0.5rem 0;
+		font-family: var(--font-mono, 'JetBrains Mono', monospace);
+	}
+
+	.institutional-body {
+		color: #cbd5e1;
+		font-size: 0.95rem;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.planning-callout {
+		border-left: 3px solid #f59e0b;
+		padding: 1.25rem 1.5rem;
+		background: rgba(245, 158, 11, 0.06);
+		border-radius: 0 8px 8px 0;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.planning-callout-title {
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: #f59e0b;
+		font-weight: 700;
+		margin: 0 0 0.5rem 0;
+		font-family: var(--font-mono, 'JetBrains Mono', monospace);
+	}
+
+	.planning-callout-body {
+		color: #cbd5e1;
+		font-size: 0.95rem;
+		line-height: 1.7;
+		margin: 0;
 	}
 
 	/* ═══ HERO ═══ */

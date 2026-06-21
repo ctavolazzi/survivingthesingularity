@@ -71,7 +71,7 @@
 
 <svelte:head>
   <title>The Singularity Readiness Checklist - Surviving the Singularity</title>
-  <meta name="description" content="12 concrete moves to build material independence before AGI. A free, actionable checklist." />
+  <meta name="description" content="12 concrete moves to build real independence before the window closes. Free, actionable, start this week." />
 </svelte:head>
 
 <div class="checklist-page">
@@ -79,8 +79,8 @@
     <p class="cl-eyebrow">Free · Actionable</p>
     <h1 class="cl-title">The Singularity Readiness Checklist</h1>
     <p class="cl-lede">
-      Twelve concrete moves to build real independence before AGI reprices everything.
-      No theory. No fluff. Things you can start this week.
+      Twelve concrete moves to build real independence before the window closes.
+      No theory. Straight to the point. Things you can start this week.
     </p>
   </header>
 

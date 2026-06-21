@@ -246,10 +246,10 @@
 
 <svelte:head>
 	<title>Surviving the Singularity</title>
-	<meta name="description" content="Practical tools for material independence in the age of AI. Learn the tools, automate with open-source robotics, and build the physical exit: a field manual for what comes next." />
+	<meta name="description" content="The future isn't coming. It's here. A practical framework for understanding what AI disruption means and how to prepare before the window closes." />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Surviving the Singularity" />
-	<meta property="og:description" content="Practical tools for material independence in the age of AI." />
+	<meta property="og:description" content="The future isn't coming. It's here. A practical framework for navigating the age of AI." />
 	<meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image" content="/Surviving-the-Singularity-Cover.png" />
@@ -1685,21 +1685,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
-	}
-
-	.blurb-tools {
-		font-size: 1rem;
-		font-weight: 700;
-		color: #fafafa;
-		margin: 0;
-		letter-spacing: -0.01em;
-	}
-
-	.blurb-question-final {
-		font-size: 1.05rem;
-		font-weight: 700;
-		color: #f1f5f9;
-		margin: 0;
 	}
 
 	.blurb-answer-final {

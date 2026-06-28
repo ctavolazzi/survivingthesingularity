@@ -16,6 +16,8 @@
 	import YouTubeEmbed from '$lib/components/YouTubeEmbed.svelte';
 	import { homepageVideos, sources as evidenceSources } from '$lib/data/evidence.js';
 	import { audience } from '$lib/stores/audienceStore.js';
+	import LaunchPlanCard from '$lib/components/LaunchPlanCard.svelte';
+	import SignalsTicker from '$lib/components/SignalsTicker.svelte';
 
 	export let data;
 
@@ -95,18 +97,18 @@
 		pillarBodies: {
 			individual: [
 				`Teach yourself to use modern AI. The real leverage is not a subscription. It is understanding these tools well enough to build new ways of getting your needs met.`,
-				`Automate food production with FarmBot and workshop tasks with open-source robots. Secure your own calories and labor.`,
+				`Localized edge robotics — CNC farming gantries, autonomous soil rovers, sensor mesh — decouple your baseline caloric and shelter needs from macroeconomic cycles. The same machines taking over the workplace can secure your kitchen table. Use them first.`,
 				`Lower fixed costs and build local production capacity. Rural land, a shouse workshop, and a digital income channel. Buy back decades of your life.`,
 			],
 			policy: [
 				`Understanding modern AI tools is no longer optional for anyone making consequential decisions. The real leverage is building enough fluency to evaluate what these systems can and can't do, and what they mean for your constituents.`,
-				`Physical automation is crossing into affordability ranges relevant for small institutions, farms, and community infrastructure. Not just large manufacturers. Understanding the trajectory matters for planning.`,
+				`Food and shelter automation is crossing into affordability ranges relevant for small institutions, farms, and community infrastructure. Semi-autonomous agriculture can sustain community food supply without daily human intervention. Understanding the trajectory matters for planning.`,
 				`Lower fixed costs and local production capacity aren't just personal finance tactics. They're the structural basis for community resilience at any scale: household, organization, or municipality.`,
 			],
 			leader: [
 				`AI fluency is now a leadership competency. The organizations building advantage are those where decision-makers understand these tools well enough to evaluate claims, spot hype, and identify genuine leverage.`,
-				`Open-source robotics is crossing into ranges relevant for operations, logistics, and facilities. Not just manufacturing giants. The cost curves matter for your planning horizon.`,
-				`Distributed production capacity and lower fixed overhead aren't just survival tactics. They're structural resilience: the kind that matters when supply chains break and cost structures shift.`,
+				`Food and shelter automation is crossing into ranges relevant for operations, logistics, and community resilience. Semi-autonomous agriculture that runs without daily human intervention is no longer theoretical. The cost curves matter for your planning horizon.`,
+				`Networked local production capacity and lower fixed overhead aren't just survival tactics. They're structural resilience: the kind that matters when supply chains break and cost structures shift.`,
 			],
 		},
 		ctaClose: {
@@ -234,7 +236,7 @@
 		{ period: '2025–2026', label: 'Learn the Tools', desc: 'Modern AI becomes learnable by anyone. Consumer hardware and open models put real capability within reach of self-taught builders.' },
 		{ period: '2026–2027', label: 'Open-Source Robotics', desc: 'Homestead automation becomes accessible. FarmBot, open bimanual arms, and low-cost actuators reach the maker community.' },
 		{ period: '2027–2029', label: 'Shouse Economy', desc: 'Housing affordability crisis accelerates the owner-builder and shouse path for families priced out of suburban real estate.' },
-		{ period: '2029–2032', label: 'Decentralized Production', desc: 'Networked independent producers coordinate without dependence on fragile global supply chains.' },
+		{ period: '2029–2032', label: 'Networked Production', desc: 'Networked independent producers coordinate without dependence on fragile global supply chains.' },
 	];
 
 	onMount(() => { heroVisible = true; });
@@ -353,6 +355,9 @@
 		</div>
 	</section>
 
+	<!-- RESEARCH SIGNALS -->
+	<SignalsTicker />
+
 	<!-- BACK COVER COPY -->
 	<section class="section section-blurb" id="blurb" use:observe>
 		<div class="section-inner">
@@ -393,11 +398,14 @@
 					</div>
 				</div>
 				<div class="signup-form">
-					<NewsletterSignup source="hero" label="" placeholder="your@email.com" buttonText="Get Early Access" />
+					<a href="/early-access" class="btn-primary signup-cta">
+						Get Early Access
+						<svg class="shimmer-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</a>
+					<p class="signup-cta-detail">The full checklist, all eight chapters, and the research feed. One email, instant access.</p>
 					{#if data?.signupCount}
 						<p class="signup-social-proof">Join <strong>{data.signupCount.toLocaleString()}</strong> readers getting ready.</p>
 					{/if}
-					<a href="/checklist" class="hero-magnet-link">Or get the free Readiness Checklist →</a>
 				</div>
 			</div>
 		</div>
@@ -842,6 +850,20 @@
 		<BookStatusBanner />
 	</div>
 
+	<!-- LAUNCH PLAN CARD -->
+	<section class="section" id="launch-plan" use:observe>
+		<div class="section-inner">
+			<div class="section-header-row">
+				<div>
+					<h2 class="section-title">Book Launch &amp; Mission</h2>
+					<p class="section-desc">Where the book is going, what happens with the proceeds, and the case for training people to pilot robots.</p>
+				</div>
+				<a href="/launch" class="section-header-link">See the full plan →</a>
+			</div>
+			<LaunchPlanCard />
+		</div>
+	</section>
+
 	<!-- CTA -->
 	<section class="section section-cta" id="act" use:observe>
 		<div class="section-inner cta-inner">
@@ -863,7 +885,7 @@
 
 			<div class="cta-newsletter">
 				<p class="cta-newsletter-label">Get notified when the book drops. No spam, no noise.</p>
-				<NewsletterSignup source="footer-cta" label="" buttonText="Get Early Access" />
+				<NewsletterSignup source="footer-cta" label="" buttonText="Notify Me" />
 			</div>
 		</div>
 	</section>
@@ -1210,7 +1232,15 @@
 		margin: 0;
 	}
 
-	.signup-form { display: flex; flex-direction: column; gap: 0.5rem; }
+	.signup-form { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+
+	.signup-cta { align-self: stretch; }
+	.signup-cta-detail {
+		font-size: 0.84rem;
+		color: #94a3b8;
+		line-height: 1.45;
+		margin: 0.15rem 0 0;
+	}
 
 	.signup-social-proof {
 		font-size: 0.84rem;
@@ -1614,6 +1644,18 @@
 		margin: 0;
 		max-width: 600px;
 	}
+
+	.section-header-link {
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: #f59e0b;
+		text-decoration: none;
+		flex-shrink: 0;
+		transition: color 0.15s ease;
+		align-self: flex-start;
+	}
+
+	.section-header-link:hover { color: #fbbf24; }
 
 	/* ── BACK COVER BLURB ── */
 	.section-blurb {

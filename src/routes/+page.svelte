@@ -382,6 +382,39 @@
     </div>
   </section>
 
+  <!-- FREE PATH: Community for people who aren't buying yet -->
+  <section class="free-path" aria-label="Get started for free">
+    <div class="free-path-inner">
+      <p class="free-path-eyebrow">Not ready to buy? That's fine.</p>
+      <h2 class="free-path-heading">Get started for free.</h2>
+      <p class="free-path-sub">The checklist is free. The Discord community is free. You don't need to spend a dollar to start preparing.</p>
+
+      <div class="free-path-grid">
+        <a href="/checklist" class="free-path-card">
+          <div class="free-path-card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="free-path-card-body">
+            <div class="free-path-card-title">Free Readiness Checklist</div>
+            <div class="free-path-card-desc">7 moves. Start where you are. No payment, no signup for the first three steps.</div>
+            <span class="free-path-card-cta">Start the checklist</span>
+          </div>
+        </a>
+
+        <a href="https://discord.gg/DVKhj6Vxge" target="_blank" rel="noopener noreferrer" class="free-path-card free-path-card-discord">
+          <div class="free-path-card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="free-path-card-body">
+            <div class="free-path-card-title">Join the Discord</div>
+            <div class="free-path-card-desc">Preview the community for free. Permanent access requires submitting the checklist for review.</div>
+            <span class="free-path-card-cta">Preview the Discord</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <div class="thanks-wrap">
     <p class="thanks-text">Thank you for being here ❣️</p>
   </div>
@@ -1176,6 +1209,114 @@
 
   .thanks-wrap { text-align: center; padding: clamp(32px, 5vw, 56px) clamp(20px, 5vw, 60px); }
   .thanks-text { font-size: clamp(1.1rem, 3vw, 1.5rem); color: var(--text-3); margin: 0; }
+
+  /* FREE PATH */
+  .free-path {
+    border-top: 1px solid var(--border);
+    padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 60px);
+  }
+  .free-path-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .free-path-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-3);
+    margin: 0 0 0.75rem;
+    font-family: var(--font-mono);
+  }
+  .free-path-heading {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 900;
+    color: var(--text-1);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+  .free-path-sub {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 0 0 2.5rem;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .free-path-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    text-align: left;
+  }
+  @media (max-width: 600px) {
+    .free-path-grid { grid-template-columns: 1fr; }
+  }
+  .free-path-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--border-mid);
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+  .free-path-card:hover {
+    border-color: rgba(245, 158, 11, 0.3);
+    border-left-color: rgba(245, 158, 11, 0.6);
+    background: rgba(245, 158, 11, 0.03);
+  }
+  .free-path-card-discord {
+    border-left-color: rgba(88, 101, 242, 0.5);
+  }
+  .free-path-card-discord:hover {
+    border-color: rgba(88, 101, 242, 0.4);
+    border-left-color: rgba(88, 101, 242, 0.8);
+    background: rgba(88, 101, 242, 0.04);
+  }
+  .free-path-card-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-mid);
+    color: var(--text-2);
+  }
+  .free-path-card-discord .free-path-card-icon {
+    color: rgba(88, 101, 242, 0.9);
+    background: rgba(88, 101, 242, 0.08);
+    border-color: rgba(88, 101, 242, 0.2);
+  }
+  .free-path-card-body { flex: 1; min-width: 0; }
+  .free-path-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-1);
+    margin: 0 0 0.35rem;
+  }
+  .free-path-card-desc {
+    font-size: 0.875rem;
+    color: var(--text-2);
+    line-height: 1.5;
+    margin: 0 0 0.85rem;
+  }
+  .free-path-card-cta {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--amber);
+    letter-spacing: 0.02em;
+  }
+  .free-path-card-discord .free-path-card-cta {
+    color: rgba(148, 154, 255, 0.9);
+  }
 
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 

@@ -36,7 +36,7 @@
       <div class="provides-grid">
         <div class="provide-item">
           <h3>The Blueprint</h3>
-          <p>Eight chapters of tactical analysis covering everything from construction costs to GPU benchmarks for local LLMs. Organized to be useful at different scales: whether you're making decisions for yourself, your organization, or your community.</p>
+          <p>Tactical analysis covering everything from construction costs to GPU benchmarks for local LLMs. Organized to be useful at different scales: whether you're making decisions for yourself, your organization, or your community.</p>
         </div>
         <div class="provide-item">
           <h3>The Blog</h3>

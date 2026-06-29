@@ -199,7 +199,7 @@
             <a href="/blueprint">The Blueprint</a>
             <span class="pub-live-badge">Live now</span>
           </h3>
-          <p>Eight chapters of the core framework, published free on this site. No paywall, no email required. This is not a teaser. It is the substance. The book goes deeper, but the Blueprint stands alone.</p>
+          <p>The core framework, published free on this site. No paywall, no email required. This is not a teaser. It is the substance. The book goes deeper, but the Blueprint stands alone.</p>
         </div>
       </div>
       <div class="pub-step pub-step--active">

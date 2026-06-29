@@ -179,7 +179,7 @@
           </svg>
         </div>
         <div class="ea-item-body">
-          <div class="ea-item-name">Full Blueprint, All 8 Chapters</div>
+          <div class="ea-item-name">Full Blueprint, All Chapters</div>
           <div class="ea-item-desc">Local AI, physical automation, food security, energy, digital leverage. Deep and specific, not motivational.</div>
           <span class="ea-tag ea-tag-live">Live now</span>
         </div>

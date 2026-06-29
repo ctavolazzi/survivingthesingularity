@@ -28,7 +28,7 @@
 
 <svelte:head>
   <title>The Blueprint - Surviving the Singularity</title>
-  <meta name="description" content="The YouTube Shouse Blueprint: Eight chapters on material independence through digital leverage, local AI, and minimalist infrastructure." />
+  <meta name="description" content="The YouTube Shouse Blueprint: A framework for material independence through digital leverage, local AI, and minimalist infrastructure." />
 </svelte:head>
 
 <div class="blueprint-page">
@@ -37,7 +37,7 @@
       <p class="bp-label">The YouTube Shouse Blueprint</p>
       <h1 class="bp-title">The Complete Blueprint</h1>
       <p class="bp-subtitle">
-        Eight chapters of conjecture and research-based thinking, one author's framework for what material independence might look like. Not a plan. Not a guarantee. Starting material for your own evaluation.
+        Conjecture and research-based thinking, one author's framework for what material independence might look like. Not a plan. Not a guarantee. Starting material for your own evaluation.
       </p>
 
       {#if completedCount > 0}

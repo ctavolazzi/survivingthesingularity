@@ -42,7 +42,7 @@
     {
       n: '05', cat: 'infrastructure',
       title: 'Use AI to cut something you currently pay for',
-      body: 'Every tool in this era can eliminate a dependency if you know how to use it. Legal questions, design work, research, writing — things that used to cost money or time can now cost neither.',
+      body: 'Every tool in this era can eliminate a dependency if you know how to use it. Legal questions, design work, research, writing: things that used to cost money or time can now cost neither.',
       action: 'Pick one thing you pay for or avoid because it\'s too expensive. Spend 20 minutes seeing how far a free AI tool gets you.',
       cost: '$0', effort: 'low', free: false,
     },
@@ -368,7 +368,7 @@
       </ul>
 
       <a href="/early-access" class="cl-book-sales-btn">
-        Get Early Access — $5
+        Get Early Access. $5.
         <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <p class="cl-book-sales-fine">One payment. Instant access. Price goes up at launch.</p>

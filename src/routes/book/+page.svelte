@@ -1,559 +1,794 @@
 <script>
-  import { fade, fly } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
   import AuthorBio from '$lib/components/AuthorBio.svelte';
-  import coverImage from '$lib/images/Surviving-the-Singularity-Cover.png?url';
-  import { parts } from '$lib/data/stages.js';
+  import { bookParts, mathematicalMap } from '$lib/data/stages.js';
 
   export let data;
 
-  const PURCHASE_URL = '';
+  let visible = false;
+  onMount(() => {
+    visible = true;
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  });
 </script>
 
 <svelte:head>
-  <title>Surviving the Singularity - The Book</title>
-  <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. A field manual for the people who refuse to be passive cargo when AI rewrites the world." />
-  <meta property="og:title" content="Surviving the Singularity - The Book" />
-  <meta property="og:description" content="A field manual for the people who refuse to be passive cargo when AI rewrites the world." />
-  <meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
+  <title>Surviving the Singularity. The Book.</title>
+  <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. Three parts: What is the Singularity, How Humans React, How to Survive the Transition. Open draft. Read free." />
+  <meta property="og:title" content="Surviving the Singularity. The Book." />
+  <meta property="og:description" content="What is the Singularity. How humans react. How to survive the transition. Open draft by Christopher Tavolazzi." />
+  <meta property="og:image" content="/images/surviving_the_singularity_cover_1200.png" />
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="not-prose book-page">
+<div class="book-page">
 
-  <!-- HERO -->
-  <section class="hero" in:fade={{ duration: 600 }}>
-    <div class="hero-cover">
-      <img src={coverImage} alt="Surviving the Singularity book cover" loading="eager" />
-    </div>
-    <div class="hero-text">
-      <div class="hero-eyebrow">Open Draft · v0.1 · Reader Edition</div>
-      <h1>Surviving the Singularity</h1>
-      <p class="hero-subtitle">
-        A field manual for the people who refuse to be passive cargo when AI rewrites the world.
-      </p>
-      <p class="hero-byline">By <strong>Christopher Tavolazzi</strong> &middot; <span class="mono">a.k.a. Coffee Jesus</span></p>
-      <div class="hero-ctas">
-        <a class="cta-primary" href="#roadmap">Read the roadmap &rarr;</a>
-        <a class="cta-secondary" href="/StS-free-sample.pdf" download>Download free sample (PDF)</a>
+  {#if visible}
+
+  <!-- ── HERO ── -->
+  <section class="bk-hero" in:fade={{ duration: 500 }}>
+    <div class="bk-hero-inner">
+      <div class="bk-cover-col">
+        <img
+          src="/images/surviving_the_singularity_cover_1200.png"
+          alt="Surviving the Singularity book cover"
+          class="bk-cover"
+          width="600"
+          height="800"
+        />
       </div>
-      {#if PURCHASE_URL}
-        <div class="hero-preorder">
-          <div class="preorder-label">Part I: A Manual for the Cracks, available now.</div>
-          <a class="cta-primary subscribe-cta" href={PURCHASE_URL} target="_blank" rel="noopener noreferrer">
-            Buy the book → $7.99 launch week
+      <div class="bk-hero-copy">
+        <p class="bk-eyebrow">Open Draft · v0.1 · Reader Edition</p>
+        <h1 class="bk-title">Surviving the Singularity</h1>
+        <p class="bk-byline">By Christopher Tavolazzi</p>
+        <p class="bk-hook">The singularity is not a future event. It is an active, structural condition. Intelligence now has a marginal cost of zero. The old systems haven't caught up yet. This book is about what to do in the gap.</p>
+        <div class="bk-hero-actions">
+          <a href="/StS-free-sample.pdf" class="bk-btn-primary" target="_blank" rel="noopener noreferrer">
+            Download free sample (PDF)
           </a>
-          <p class="preorder-meta">Instant EPUB download. Updates included forever.</p>
+          <a href="/early-access" class="bk-btn-secondary">Get Early Access. $5.</a>
         </div>
-      {/if}
-      <div class="hero-preorder">
-        <div class="preorder-label">Updates are posted to Substack when posted at all.</div>
-        <a class="cta-primary subscribe-cta" href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer">
-          Subscribe on Substack →
-        </a>
-        <p class="preorder-meta">No content frequency, ship date, or completion guarantee.</p>
+        <p class="bk-hero-note">No content frequency, ship date, or completion guarantee. Read it as it gets built.</p>
       </div>
     </div>
   </section>
 
-  <!-- THESIS -->
-  <section class="thesis" in:fly={{ y: 20, duration: 600, delay: 200 }}>
-    <div class="eyebrow">The Thesis</div>
-    <h2>The shovel is digging its own hole.</h2>
-    <p>
-      The Singularity isn't a future event. It's a current condition.
-      Tools are leaping from <em>reacting to our input</em> to <em>acting on their own</em>,
-      and the pace is doubling on a curve nobody is steering.
-    </p>
-    <p>
-      This book is a primer on the double-exponential shift in <strong>how we get our needs met</strong>.
-      Work, food, health, money, relationships, governance — all of it is being renegotiated
-      in real time by systems that don't need your permission to participate.
-    </p>
-    <p class="thesis-kicker">
-      You don't need to stop the wave. You need to learn to surf it.
-    </p>
-  </section>
+  <!-- ── INTRODUCTION: THE EVENT HORIZON ── -->
+  <section class="bk-section">
+    <div class="bk-section-inner">
+      <p class="bk-label">Introduction</p>
+      <h2 class="bk-section-heading">The Event Horizon</h2>
 
-  <!-- ROADMAP: 3 PARTS / 9 STAGES -->
-  <section id="roadmap" class="roadmap" in:fly={{ y: 20, duration: 600, delay: 300 }}>
-    <div class="eyebrow">The Roadmap</div>
-    <h2>This isn't random. It's a predictable sequence.</h2>
-    <p class="roadmap-lede">AI is moving through stages. Here's the map — where we've been, where we are, and where it goes from here.</p>
-
-    <div class="stage-grid">
-      {#each parts as part}
-        <div class="part-block">
-          <div class="part-heading">
-            <span class="part-num">{part.num}</span>
-            <span class="part-title">{part.title}</span>
-            <span class="part-line" aria-hidden="true"></span>
-          </div>
-          <div class="stages">
-            {#each part.stages as stage}
-              <div class="stage" class:current={stage.current}>
-                <span class="stage-n">{stage.num}</span>
-                <span class="stage-t">{stage.title}</span>
-                {#if stage.current}
-                  <span class="stage-pill">we are here</span>
-                {/if}
-              </div>
-            {/each}
+      <div class="bk-intro-blocks">
+        <div class="bk-intro-block">
+          <div class="bk-intro-num">01</div>
+          <div class="bk-intro-body">
+            <p class="bk-intro-title">The Premise</p>
+            <p class="bk-intro-text">The singularity is an active, structural reality. The 2017 Transformer architecture crossed the event horizon by introducing parallel self-attention: a mechanism that allows a model to process its own architecture. This made recursive self-improvement not just possible but inevitable given sufficient compute.</p>
           </div>
         </div>
-      {/each}
-    </div>
-  </section>
-
-  <!-- STAGE 4: TELEOPERATION -->
-  <section class="teleop" in:fly={{ y: 20, duration: 600, delay: 350 }}>
-    <div class="teleop-pill">Stage 04 · The Transitional Economy</div>
-    <h2>What if your job was piloting a robot?</h2>
-    <p class="teleop-intro">
-      A human in the loop is necessary right now — for safety, for quality, for accountability.
-      But the human doesn't have to be <em>there</em>.
-      Instead of breaking your body on-site, you pilot the machine from home.
-      You could do it from the beach.
-    </p>
-
-    <ol class="story-list">
-      <li class="story-item">
-        <span class="story-n" aria-hidden="true">01</span>
-        <div>
-          <div class="story-label">Real example</div>
-          <p class="story-body">Custom robotic arms, fixed to the sides of a kitchen range in a care facility. A remote worker pilots them from home to cook breakfast for residents with physical disabilities. High-quality meal. No commute. No broken back.</p>
+        <div class="bk-intro-block">
+          <div class="bk-intro-num">02</div>
+          <div class="bk-intro-body">
+            <p class="bk-intro-title">The Core Conflict</p>
+            <p class="bk-intro-text">Intelligence is now a resource with a marginal cost of zero. Current systems meter this resource anyway, creating artificial scarcity. The conflict between zero-cost intelligence and metered access is the defining economic tension of the next decade.</p>
+          </div>
         </div>
-      </li>
-      <li class="story-item">
-        <span class="story-n" aria-hidden="true">02</span>
-        <div>
-          <div class="story-label">Built for dignity</div>
-          <p class="story-body">Each setup is engineered custom for the resident's specific disability — not a generic bolt-on. Maximum dignity. Maximum quality of life. For resident and worker alike.</p>
+        <div class="bk-intro-block">
+          <div class="bk-intro-num">03</div>
+          <div class="bk-intro-body">
+            <p class="bk-intro-title">The Ultimatum</p>
+            <p class="bk-intro-text">We must secure local survival and establish a new social contract to align our infrastructure with the reality of this transition. Not as an ideological position. As an engineering problem.</p>
+          </div>
         </div>
-      </li>
-    </ol>
-
-    <div class="lockout-block">
-      <div class="lockout-label">Local Control — Absolute Safety Lockout</div>
-      <p class="lockout-body">
-        When the shift ends, the resident <strong>manually locks the robot and unplugs it</strong>.
-        No algorithm decides when the machine comes back on.
-        The resident controls the switch. Complete local <strong>Autonomy</strong>.
-      </p>
-    </div>
-  </section>
-
-  <!-- SAMPLE EXCERPT -->
-  <section class="sample" in:fly={{ y: 20, duration: 600, delay: 400 }}>
-    <div class="eyebrow">A Sample</div>
-    <blockquote>
-      <p>
-        "So the robots have taken over. Congratulations — you've lost.
-        Surviving the Singularity isn't just about fending off Terminator bots or finding
-        food in the era of economic collapse and climate famines. It's about staying hidden
-        from autonomous drone swarms and filtering nanobots out of the water.
-      </p>
-      <p>
-        Ah, who am I kidding? You don't need to worry about the nanobots.
-        You're just a disembodied brain in a jar.
-        Every sensation you've ever had, every person you've ever known
-        is a hallucination produced by neural-link electrodes."
-      </p>
-      <footer>&mdash; from the <a href="/book/introduction">Introduction</a></footer>
-    </blockquote>
-  </section>
-
-  <!-- AUTHOR BIO -->
-  <div in:fly={{ y: 20, duration: 600, delay: 420 }}>
-    <AuthorBio />
-  </div>
-
-  <!-- OPEN DRAFT -->
-  <section class="open-draft" in:fly={{ y: 20, duration: 600, delay: 440 }}>
-    <div class="eyebrow">How This Book Works</div>
-    <h2>Built in public. Revised by readers.</h2>
-    <p>
-      This is the <strong>open draft</strong> of <em>Surviving the Singularity</em>.
-      Chapters land as they're written. Typos, edges, and works-in-progress are part of the deal —
-      and so is your input. Spot a glitch? A passage that lands wrong?
-      A topic you want covered? <a href="/about">Reach out</a> and it goes into the next revision.
-    </p>
-    <p class="text-muted">
-      Final print/e-book editions will be released on Amazon. Open-draft readers get early access, signed credit, and first crack at the launch.
-    </p>
-  </section>
-
-  <!-- AUTHOR'S EDITION CALLOUT -->
-  <section class="authors-callout" in:fly={{ y: 20, duration: 600, delay: 460 }}>
-    <div class="authors-callout-inner">
-      <div class="authors-callout-badge">
-        <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1l1.88 3.82L14 5.64l-3 2.93.71 4.12L8 10.77l-3.71 1.92L5 8.57 2 5.64l4.12-.82L8 1z"/></svg>
-        Author's Edition
       </div>
-      <div class="authors-callout-body">
-        <p class="authors-callout-headline">Want a hand-bound, signed copy numbered 1 through 100?</p>
-        <p class="authors-callout-sub">100 copies. Each one bound and signed by the author, individually numbered, with exclusive content not in the standard edition. Payment collected at launch in August 2026.</p>
+    </div>
+  </section>
+
+  <!-- ── THREE PARTS ── -->
+  <section class="bk-section bk-section-alt">
+    <div class="bk-section-inner">
+      <p class="bk-label">The Book</p>
+      <h2 class="bk-section-heading">Three parts. The complete picture.</h2>
+
+      <div class="bk-parts">
+        {#each bookParts as part, i}
+          <div class="bk-part bk-part-{i + 1}">
+            <span class="bk-part-num">{part.num}</span>
+            <h3 class="bk-part-title">{part.title}</h3>
+            <p class="bk-part-sub">{part.subtitle}</p>
+            <p class="bk-part-desc">{part.desc}</p>
+          </div>
+        {/each}
       </div>
-      <a href="/launch#authors-edition" class="authors-callout-cta">Reserve yours →</a>
     </div>
   </section>
 
-  <!-- FREE SAMPLE DOWNLOAD -->
-  <section class="sample-dl" in:fly={{ y: 20, duration: 600, delay: 470 }}>
-    <div class="sample-dl-inner">
-      <div class="eyebrow">Try Before You Commit</div>
-      <h2>Free PDF Sample</h2>
-      <p>Introduction + Chapter 1. No email, no signup. Just open it and read.</p>
-      <a class="cta-primary" href="/StS-free-sample.pdf" download>Download (PDF)</a>
-      <p class="sample-dl-meta">~10-min read · plain PDF · sharable</p>
+  <!-- ── PART I: MATHEMATICAL MAP ── -->
+  <section class="bk-section">
+    <div class="bk-section-inner">
+      <p class="bk-label">Part I. The Mathematical Map</p>
+      <h2 class="bk-section-heading">Nine stages. A predictable sequence.</h2>
+      <p class="bk-section-sub">AI is moving through stages. Here is the map: where we have been, where we are, and where it goes from here. Stage 04 is where we are now.</p>
+
+      <div class="bk-map">
+        {#each mathematicalMap as group}
+          <div class="bk-era">
+            <div class="bk-era-header">
+              <span class="bk-era-label">{group.era}</span>
+              <span class="bk-era-nums">{group.eraNum}</span>
+            </div>
+            <div class="bk-stages">
+              {#each group.stages as stage}
+                <div class="bk-stage" class:bk-stage-current={stage.current}>
+                  <span class="bk-stage-n">{stage.num}</span>
+                  <span class="bk-stage-t">{stage.title}</span>
+                  {#if stage.current}
+                    <span class="bk-stage-pill">we are here</span>
+                  {/if}
+                </div>
+              {/each}
+            </div>
+          </div>
+        {/each}
+      </div>
+
+      <div class="bk-thermo">
+        <p class="bk-thermo-label">The Thermodynamic Reality</p>
+        <p class="bk-thermo-text">The machine is a massive heat engine bound by physical limits. It requires either high-grade energy or the reduction of energy costs to maintain AGI. This constraint shapes everything in Part III.</p>
+      </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
-  <section id="stay-in-loop" class="newsletter" in:fly={{ y: 20, duration: 600, delay: 490 }}>
-    <div class="eyebrow">Stay In The Loop</div>
-    <h2>Get the next chapter in your inbox.</h2>
-    <p>Published on Substack. Subscribe once, get everything.</p>
-    <a class="cta-primary subscribe-cta-large" href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer">
-      Subscribe on Substack →
-    </a>
-    <p class="subscribe-meta">Free tier covers chapters + launch alerts. Founding-tier readers get bonus drops + name in book acknowledgements.</p>
+  <!-- ── PART II ── -->
+  <section class="bk-section bk-section-alt">
+    <div class="bk-section-inner">
+      <p class="bk-label">Part II</p>
+      <h2 class="bk-section-heading">How Humans React: Cooperative Transition</h2>
+
+      <div class="bk-reaction-grid">
+        <div class="bk-reaction-card">
+          <p class="bk-reaction-title">Transition Dynamics</p>
+          <p class="bk-reaction-text">The shift from fear-based systems to the observer status required for high-level problem solving. Most people start in fear. The ones who move to observer status first gain the most time to act.</p>
+        </div>
+        <div class="bk-reaction-card">
+          <p class="bk-reaction-title">Behavioral Analysis</p>
+          <p class="bk-reaction-text">The tendency toward rigid hierarchical behavior under threat. The transition requires a deliberate shift toward openness and nuance. Not because it is morally better. Because it is functionally necessary.</p>
+        </div>
+        <div class="bk-reaction-card">
+          <p class="bk-reaction-title">The Egalitarian Pivot</p>
+          <p class="bk-reaction-text">Moving toward collective self-actualization through egalitarian participation. The zero-marginal-cost of intelligence means hoarding it is inefficient. Sharing it is the optimal strategy.</p>
+        </div>
+        <div class="bk-reaction-card">
+          <p class="bk-reaction-title">Relational Autonomy</p>
+          <p class="bk-reaction-text">The framework for operating on openness. The inevitable shift toward collective problem-solving is not ideological. It is what the economics of intelligence demand.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- ── PART III ── -->
+  <section class="bk-section">
+    <div class="bk-section-inner">
+      <p class="bk-label">Part III</p>
+      <h2 class="bk-section-heading">How to Survive the Transition</h2>
+
+      <div class="bk-survival-list">
+        <div class="bk-survival-item">
+          <span class="bk-survival-n">01</span>
+          <div class="bk-survival-body">
+            <p class="bk-survival-title">The Horizon</p>
+            <p class="bk-survival-text">Globalized logistics networks have created a structural liability. Dependency on monolithic systems leads to failure when the power is severed. The answer is not panic. It is local infrastructure built before it is needed.</p>
+          </div>
+        </div>
+        <div class="bk-survival-item">
+          <span class="bk-survival-n">02</span>
+          <div class="bk-survival-body">
+            <p class="bk-survival-title">Hyper-Local Systems</p>
+            <p class="bk-survival-text">The necessity of moving toward self-sustaining local energy and resource grids. Not off-grid survivalism. Cooperative, community-managed infrastructure designed to stay online when the macro systems fail.</p>
+          </div>
+        </div>
+        <div class="bk-survival-item">
+          <span class="bk-survival-n">03</span>
+          <div class="bk-survival-body">
+            <p class="bk-survival-title">The Shouse Grid</p>
+            <p class="bk-survival-text">Engineering semi-independent local microgrids and air-gapped infrastructure that integrate local compute capacity, cooperatively managed at the community level. The physical form of resilience.</p>
+          </div>
+        </div>
+        <div class="bk-survival-item">
+          <span class="bk-survival-n">04</span>
+          <div class="bk-survival-body">
+            <p class="bk-survival-title">The Local Biological Hub</p>
+            <p class="bk-survival-text">Engineering regenerative circular production of food, shelter, and medicine. A mechanical transducer system refines local waste into high-quality materials for production. This decouples individual survival from globalized supply chains.</p>
+          </div>
+        </div>
+        <div class="bk-survival-item">
+          <span class="bk-survival-n">05</span>
+          <div class="bk-survival-body">
+            <p class="bk-survival-title">The Protocol</p>
+            <p class="bk-survival-text">Coordinating community activities through transparent, face-to-face trust circles. Resilience that does not depend on external networks or algorithms. The oldest technology is also the most robust.</p>
+          </div>
+        </div>
+        <div class="bk-survival-item">
+          <span class="bk-survival-n">06</span>
+          <div class="bk-survival-body">
+            <p class="bk-survival-title">The New Social Contract</p>
+            <p class="bk-survival-text">Implementing the Abundance Quotient and Adequate Level of Care. Replacing labor-for-survival models with egalitarian, cooperative participation. Food, shelter, and care as locally-secured human rights. Not a utopia. An engineering target.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONCLUSION ── -->
+  <section class="bk-section bk-section-alt">
+    <div class="bk-section-inner">
+      <p class="bk-label">Conclusion</p>
+      <h2 class="bk-section-heading">The 2027 Tipping Point</h2>
+      <div class="bk-conclusion-blocks">
+        <div class="bk-conclusion-block">
+          <p class="bk-conclusion-title">The Ignition Point</p>
+          <p class="bk-conclusion-text">2027 serves as the analytical anchor for unassisted recursive self-improvement, enabled by the rapid scaling of human-level intellectual and physical labor. This is not a deadline. It is a waypoint. The preparation happens before it, not after.</p>
+        </div>
+        <div class="bk-conclusion-block">
+          <p class="bk-conclusion-title">The Call to Action</p>
+          <p class="bk-conclusion-text">The tools are on the table. The old world is gone. The transition is the current reality. The move is to cooperate as peers and build the future together, starting with the infrastructure you can touch right now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SAMPLE ── -->
+  <section class="bk-section">
+    <div class="bk-section-inner bk-sample-inner">
+      <p class="bk-label">Free Sample</p>
+      <h2 class="bk-section-heading">Introduction + Chapter 1. No signup.</h2>
+      <p class="bk-sample-sub">Read the opening of the book before you commit to anything. Plain PDF. About 10 minutes.</p>
+      <a href="/StS-free-sample.pdf" class="bk-btn-primary" target="_blank" rel="noopener noreferrer">
+        Download the free sample
+      </a>
+      <p class="bk-sample-note">No email. No paywall. Just open it and read.</p>
+    </div>
+  </section>
+
+  <!-- ── AUTHOR'S EDITION CALLOUT ── -->
+  <section class="bk-section bk-section-alt">
+    <div class="bk-section-inner">
+      <div class="bk-ae-card">
+        <div class="bk-ae-badge">
+          <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1l1.88 3.82L14 5.64l-3 2.93.71 4.12L8 10.77l-3.71 1.92L5 8.57 2 5.64l4.12-.82L8 1z"/></svg>
+          Author's Edition
+        </div>
+        <h3 class="bk-ae-title">Want the hand-bound, signed, annotated copy?</h3>
+        <p class="bk-ae-text">100 copies. Each one bound and signed by the author, individually numbered, with exclusive content not in the standard edition: findings, observations, margin notes in my own hand. Payment collected at launch in August 2026.</p>
+        <a href="/launch#authors-edition" class="bk-btn-secondary">Reserve your copy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AUTHOR BIO ── -->
+  <section class="bk-section">
+    <div class="bk-section-inner">
+      <AuthorBio />
+    </div>
+  </section>
+
+  <!-- ── SUBSCRIBE ── -->
+  <section class="bk-section bk-section-alt bk-subscribe">
+    <div class="bk-section-inner bk-subscribe-inner">
+      <p class="bk-label">Stay in the loop</p>
+      <h2 class="bk-subscribe-heading">Get the next chapter when it ships.</h2>
+      <p class="bk-subscribe-sub">Published on Substack. Subscribe once, get everything. Free tier covers chapters and launch alerts.</p>
+      <a href="https://thecoffeejesus.substack.com" class="bk-btn-primary" target="_blank" rel="noopener noreferrer">
+        Subscribe on Substack
+      </a>
+    </div>
+  </section>
+
+  {/if}
 </div>
 
 <style>
   .book-page {
-    color: var(--color-text-primary, #f1f5f9);
-    font-family: var(--font-primary, 'Inter', sans-serif);
-    max-width: 1100px;
+    font-family: 'Outfit', system-ui, sans-serif;
+    --amber: #f59e0b;
+    --amber-dim: rgba(245,158,11,0.1);
+    --surface: #0f172a;
+    --border: rgba(255,255,255,0.06);
+    --border-mid: rgba(255,255,255,0.1);
+    --text-1: #f8fafc;
+    --text-2: #cbd5e1;
+    --text-3: #64748b;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  /* ── SHARED ── */
+  .bk-section {
+    padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 60px);
+    border-top: 1px solid var(--border);
+  }
+  .bk-section-alt {
+    background: rgba(15, 23, 42, 0.35);
+  }
+  .bk-section-inner {
+    max-width: 900px;
     margin: 0 auto;
   }
-
-  .eyebrow,
-  .hero-eyebrow {
-    display: inline-block;
-    font-family: var(--font-mono, var(--font-primary));
-    font-size: 0.85rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--color-primary, #f59e0b);
-    margin-bottom: 0.75rem;
-  }
-
-  h1, h2, h3 {
-    font-family: var(--font-primary, 'Inter', sans-serif);
-    color: var(--color-text-primary, #f1f5f9);
-    line-height: 1.15;
-    margin: 0 0 1rem;
-  }
-
-  p { line-height: 1.7; margin: 0 0 1rem; color: var(--color-text-secondary, #dde4ef); }
-  .mono { font-family: var(--font-mono, monospace); color: var(--color-text-secondary); }
-  .text-muted { color: var(--color-text-muted, #94a3b8); font-size: 0.9rem; }
-
-  /* === HERO === */
-  .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-    gap: 3rem;
-    align-items: center;
-    margin: 2rem 0 5rem;
-  }
-  .hero-cover img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    border: 1px solid var(--color-border, rgba(148,163,184,0.1));
-    display: block;
-    margin: 0 auto;
-  }
-  .hero h1 {
-    font-size: clamp(2.25rem, 5vw, 3.75rem);
+  .bk-label {
+    font-size: 0.72rem;
     font-weight: 800;
-    color: var(--color-text-primary, #f1f5f9);
-  }
-  .hero-subtitle { font-size: 1.2rem; color: var(--color-text-primary); margin: 1rem 0; }
-  .hero-byline { font-size: 0.95rem; }
-  .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
-
-  .cta-primary, .cta-secondary {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
-  }
-  .cta-primary {
-    background: var(--color-primary, #f59e0b);
-    color: #1a0f00;
-  }
-  .cta-primary:hover { background: var(--color-primary-light, #fbbf24); box-shadow: var(--shadow-hard, 4px 4px 0 #f59e0b); }
-  .cta-secondary {
-    background: transparent;
-    color: var(--color-text-primary);
-    border: 1px solid rgba(148,163,184,0.25);
-  }
-  .cta-secondary:hover { background: var(--color-surface, rgba(30,41,59,0.5)); }
-
-  .hero-preorder {
-    margin-top: 1.75rem;
-    padding-top: 1.5rem;
-    border-top: 1px dashed rgba(148,163,184,0.15);
-  }
-  .preorder-label { font-size: 0.85rem; color: var(--color-text-muted, #94a3b8); margin-bottom: 0.65rem; font-family: var(--font-mono); }
-  .preorder-meta { margin-top: 0.65rem !important; font-size: 0.86rem; color: var(--color-text-muted); font-family: var(--font-mono); }
-  .subscribe-cta { display: inline-block; }
-  .subscribe-cta-large { display: inline-block; font-size: 1.05rem; padding: 0.85rem 1.75rem; margin-top: 0.5rem; }
-  .subscribe-meta { margin-top: 1rem !important; font-size: 0.82rem; color: var(--color-text-muted); max-width: 520px; margin-left: auto !important; margin-right: auto !important; }
-
-  /* === SECTION CARDS === */
-  .thesis, .sample, .open-draft, .newsletter, .sample-dl, .roadmap, .teleop {
-    background: var(--color-surface, rgba(30,41,59,0.5));
-    border: 1px solid rgba(148,163,184,0.1);
-    padding: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  .thesis h2, .roadmap h2, .teleop h2, .open-draft h2, .newsletter h2, .sample-dl h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 700;
-  }
-  .thesis-kicker { font-size: 1.15rem; color: var(--color-primary, #f59e0b); font-weight: 600; margin-top: 1.5rem; }
-
-  /* === ROADMAP === */
-  .roadmap-lede { color: var(--color-text-muted, #94a3b8); margin: 0 0 2.5rem; }
-
-  .stage-grid { display: flex; flex-direction: column; gap: 2.5rem; }
-
-  .part-block {}
-  .part-heading {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.875rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid var(--color-primary, #f59e0b);
-  }
-  .part-num {
-    font-family: var(--font-mono, monospace);
-    font-size: 0.62rem;
-    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--color-text-muted, #94a3b8);
-    white-space: nowrap;
+    letter-spacing: 0.16em;
+    color: var(--amber);
+    margin: 0 0 0.6rem;
+    font-family: var(--mono);
   }
-  .part-title {
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: var(--color-text-primary, #f1f5f9);
+  .bk-section-heading {
+    font-size: clamp(1.6rem, 4.5vw, 2.5rem);
+    font-weight: 900;
+    color: var(--text-1);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
   }
-  .part-line { flex: 1; height: 1px; background: rgba(241,245,249,0.06); }
+  .bk-section-sub {
+    font-size: 1rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 0 0 2.5rem;
+    max-width: 620px;
+  }
+  .bk-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--text-3);
+    margin: 0 0 0.75rem;
+    font-family: var(--mono);
+  }
 
-  .stages { display: flex; flex-direction: column; }
-  .stage {
+  /* ── BUTTONS ── */
+  .bk-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.8rem 1.6rem;
+    background: var(--amber);
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.92rem;
+    text-decoration: none;
+    border: none;
+    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
+    transition: opacity 0.15s ease;
+    white-space: nowrap;
+    font-family: inherit;
+  }
+  .bk-btn-primary:hover { opacity: 0.88; }
+
+  .bk-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.6rem;
+    background: transparent;
+    color: var(--text-2);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: 1px solid var(--border-mid);
+    transition: border-color 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
+    font-family: inherit;
+  }
+  .bk-btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
+
+  /* ── HERO ── */
+  .bk-hero {
+    padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 60px) clamp(56px, 8vw, 80px);
+    background: linear-gradient(180deg, rgba(245,158,11,0.04) 0%, transparent 60%);
+  }
+  .bk-hero-inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: clamp(32px, 6vw, 72px);
+    align-items: center;
+  }
+  @media (max-width: 680px) {
+    .bk-hero-inner { grid-template-columns: 1fr; }
+    .bk-cover-col { display: flex; justify-content: center; }
+  }
+  .bk-cover {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 32px 72px rgba(0,0,0,0.6), 0 0 0 1px rgba(245,158,11,0.12);
+  }
+  .bk-title {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    font-weight: 900;
+    color: var(--text-1);
+    margin: 0 0 0.35rem;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+  }
+  .bk-byline {
+    font-size: 0.95rem;
+    color: var(--text-3);
+    margin: 0 0 1.25rem;
+    font-family: var(--mono);
+  }
+  .bk-hook {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    color: var(--text-2);
+    line-height: 1.65;
+    margin: 0 0 1.75rem;
+    max-width: 560px;
+  }
+  .bk-hero-actions {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(241,245,249,0.07);
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
   }
-  .stage:last-child { border-bottom: none; }
-  .stage-n {
-    font-family: var(--font-mono, monospace);
-    font-size: 0.68rem;
-    color: var(--color-text-muted, #94a3b8);
-    min-width: 1.75rem;
-    flex-shrink: 0;
-  }
-  .stage-t { font-size: 0.97rem; color: var(--color-text-primary, #f1f5f9); }
-
-  .stage.current {
-    background: rgba(245,158,11,0.07);
-    margin: 0 -2.5rem;
-    padding: 0.875rem 2.5rem;
-    border-left: 3px solid var(--color-primary, #f59e0b);
-  }
-  .stage.current .stage-n { color: var(--color-primary, #f59e0b); }
-  .stage.current .stage-t { color: var(--color-primary-light, #fbbf24); font-weight: 600; }
-  .stage-pill {
-    margin-left: auto;
-    font-family: var(--font-mono, monospace);
-    font-size: 0.56rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--color-primary, #f59e0b);
-    border: 1px solid rgba(245,158,11,0.45);
-    padding: 0.15rem 0.45rem;
-    white-space: nowrap;
-    flex-shrink: 0;
+  .bk-hero-note {
+    font-size: 0.78rem;
+    color: var(--text-3);
+    margin: 0;
+    line-height: 1.5;
   }
 
-  /* === TELEOP === */
-  .teleop { border-left: 3px solid var(--color-primary, #f59e0b); }
-  .teleop-pill {
-    display: inline-block;
-    font-family: var(--font-mono, monospace);
-    font-size: 0.6rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    background: var(--color-primary, #f59e0b);
-    color: #020617;
-    padding: 0.22rem 0.6rem;
-    font-weight: 700;
-    margin-bottom: 1.25rem;
+  /* ── INTRODUCTION BLOCKS ── */
+  .bk-intro-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2rem;
   }
-  .teleop h2 { color: var(--color-primary-light, #fbbf24); }
-  .teleop-intro {
-    border-left: 3px solid var(--color-primary, #f59e0b);
-    padding-left: 1rem;
-    margin: 0 0 2rem;
-    font-size: 1rem;
-    line-height: 1.75;
+  .bk-intro-block {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
   }
-  .story-list { list-style: none; margin: 0 0 2rem; padding: 0; display: flex; flex-direction: column; gap: 1.75rem; }
-  .story-item { display: flex; gap: 1.25rem; align-items: flex-start; }
-  .story-n {
-    font-family: var(--font-mono, monospace);
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--color-primary, #f59e0b);
-    min-width: 1.5rem;
-    flex-shrink: 0;
+  .bk-intro-block:first-child { border-top: 1px solid var(--border); }
+  .bk-intro-num {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--amber);
+    font-family: var(--mono);
+    letter-spacing: 0.06em;
     padding-top: 0.15rem;
   }
-  .story-label {
-    font-family: var(--font-mono, monospace);
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--color-text-muted, #94a3b8);
-    margin-bottom: 0.3rem;
+  .bk-intro-title {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0 0 0.5rem;
   }
-  .story-body { font-size: 0.95rem; line-height: 1.7; margin: 0; }
+  .bk-intro-text {
+    font-size: 0.92rem;
+    color: var(--text-2);
+    line-height: 1.65;
+    margin: 0;
+  }
 
-  .lockout-block {
-    border: 1px solid rgba(239,68,68,0.35);
-    border-left: 3px solid #ef4444;
-    background: rgba(239,68,68,0.04);
-    padding: 1.25rem 1.5rem;
+  /* ── THREE PARTS ── */
+  .bk-parts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
   }
-  .lockout-label {
-    font-family: var(--font-mono, monospace);
-    font-size: 0.6rem;
-    letter-spacing: 0.18em;
+  @media (max-width: 720px) {
+    .bk-parts { grid-template-columns: 1fr; }
+  }
+  .bk-part {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--border-mid);
+  }
+  .bk-part-1 { border-top-color: var(--amber); }
+  .bk-part-2 { border-top-color: #3b82f6; }
+  .bk-part-3 { border-top-color: #10b981; }
+  .bk-part-num {
+    font-size: 0.65rem;
+    font-weight: 800;
     text-transform: uppercase;
-    color: #ef4444;
+    letter-spacing: 0.14em;
+    color: var(--text-3);
+    font-family: var(--mono);
+    display: block;
     margin-bottom: 0.5rem;
   }
-  .lockout-body { font-size: 0.93rem; line-height: 1.7; margin: 0; }
-  .lockout-body strong { color: var(--color-primary-light, #fbbf24); }
-
-  /* === SAMPLE === */
-  .sample blockquote {
-    margin: 1rem 0 0;
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
-    border-left: 3px solid var(--color-primary, #f59e0b);
-    background: var(--color-bg-secondary, #0f172a);
-    font-style: italic;
+  .bk-part-title {
     font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0 0 0.35rem;
+    line-height: 1.2;
   }
-  .sample blockquote p { color: var(--color-text-primary); }
-  .sample blockquote footer { font-style: normal; font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.75rem; }
-  .sample blockquote footer a { color: var(--color-primary, #f59e0b); text-decoration: none; border-bottom: 1px dashed currentColor; }
-  .sample blockquote footer a:hover { color: var(--color-primary-light, #fbbf24); }
+  .bk-part-sub {
+    font-size: 0.78rem;
+    color: var(--amber);
+    font-weight: 600;
+    margin: 0 0 0.6rem;
+    line-height: 1.4;
+  }
+  .bk-part-2 .bk-part-sub { color: #60a5fa; }
+  .bk-part-3 .bk-part-sub { color: #34d399; }
+  .bk-part-desc {
+    font-size: 0.85rem;
+    color: var(--text-2);
+    line-height: 1.55;
+    margin: 0;
+  }
 
-  /* === OPEN DRAFT === */
-  .open-draft a { color: var(--color-primary, #f59e0b); text-decoration: none; border-bottom: 1px solid currentColor; }
-  .open-draft a:hover { color: var(--color-primary-light, #fbbf24); }
-
-  /* === FREE SAMPLE DL === */
-  .sample-dl { text-align: center; border-color: rgba(245,158,11,0.2); }
-  .sample-dl-inner { max-width: 540px; margin: 0 auto; }
-  .sample-dl h2 { margin-top: 0; }
-  .sample-dl p { color: var(--color-text-secondary); margin: 0 0 1.5rem; }
-  .sample-dl .cta-primary { font-size: 1.05rem; padding: 0.85rem 1.75rem; }
-  .sample-dl-meta { margin-top: 1rem !important; font-size: 0.86rem; color: var(--color-text-muted); font-family: var(--font-mono); }
-
-  /* === NEWSLETTER === */
-  .newsletter { text-align: center; }
-  .newsletter h2, .newsletter p { text-align: center; }
-  .newsletter p { max-width: 500px; margin: 0 auto 1.5rem; }
-
-  /* === AUTHOR'S EDITION === */
-  .authors-callout { padding: 2rem 1.5rem; }
-  .authors-callout-inner {
-    max-width: 760px;
-    margin: 0 auto;
+  /* ── MATHEMATICAL MAP ── */
+  .bk-map {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: flex-start;
-    background: rgba(15, 23, 42, 0.9);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    padding: 1.5rem 1.75rem;
-    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .bk-era {
+    border: 1px solid var(--border);
     overflow: hidden;
   }
-  .authors-callout-inner::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+  .bk-era-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--border);
   }
-  @media (min-width: 600px) {
-    .authors-callout-inner { flex-direction: row; align-items: center; gap: 1.5rem; }
+  .bk-era-label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-2);
+    font-family: var(--mono);
   }
-  .authors-callout-badge {
+  .bk-era-nums {
+    font-size: 0.65rem;
+    color: var(--text-3);
+    font-family: var(--mono);
+  }
+  .bk-stages {
+    display: flex;
+    flex-direction: column;
+  }
+  .bk-stage {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s ease;
+  }
+  .bk-stage:last-child { border-bottom: none; }
+  .bk-stage:hover { background: rgba(255,255,255,0.02); }
+  .bk-stage-current {
+    background: rgba(245, 158, 11, 0.06);
+    border-left: 3px solid var(--amber);
+  }
+  .bk-stage-n {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--text-3);
+    font-family: var(--mono);
+    flex-shrink: 0;
+    width: 22px;
+  }
+  .bk-stage-current .bk-stage-n { color: var(--amber); }
+  .bk-stage-t {
+    font-size: 0.88rem;
+    color: var(--text-2);
+    flex: 1;
+  }
+  .bk-stage-current .bk-stage-t { color: var(--text-1); font-weight: 600; }
+  .bk-stage-pill {
+    font-size: 0.63rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #0f172a;
+    background: var(--amber);
+    padding: 0.2rem 0.55rem;
+    white-space: nowrap;
+    font-family: var(--mono);
+  }
+  .bk-thermo {
+    padding: 1.25rem;
+    background: rgba(245, 158, 11, 0.04);
+    border: 1px solid rgba(245, 158, 11, 0.18);
+    border-left: 3px solid rgba(245, 158, 11, 0.5);
+  }
+  .bk-thermo-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--amber);
+    margin: 0 0 0.4rem;
+    font-family: var(--mono);
+  }
+  .bk-thermo-text {
+    font-size: 0.88rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── PART II: REACTION GRID ── */
+  .bk-reaction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    .bk-reaction-grid { grid-template-columns: 1fr; }
+  }
+  .bk-reaction-card {
+    padding: 1.25rem;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--border);
+    border-left: 3px solid rgba(59, 130, 246, 0.4);
+  }
+  .bk-reaction-title {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0 0 0.45rem;
+  }
+  .bk-reaction-text {
+    font-size: 0.85rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── PART III: SURVIVAL LIST ── */
+  .bk-survival-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2rem;
+  }
+  .bk-survival-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .bk-survival-item:first-child { border-top: 1px solid var(--border); }
+  .bk-survival-n {
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: #10b981;
+    font-family: var(--mono);
+    padding-top: 0.15rem;
+  }
+  .bk-survival-title {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0 0 0.4rem;
+  }
+  .bk-survival-text {
+    font-size: 0.88rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── CONCLUSION ── */
+  .bk-conclusion-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    .bk-conclusion-blocks { grid-template-columns: 1fr; }
+  }
+  .bk-conclusion-block {
+    padding: 1.5rem;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--border);
+  }
+  .bk-conclusion-title {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0 0 0.5rem;
+  }
+  .bk-conclusion-text {
+    font-size: 0.88rem;
+    color: var(--text-2);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── SAMPLE ── */
+  .bk-sample-inner {
+    text-align: center;
+  }
+  .bk-sample-sub {
+    font-size: 0.95rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 0 auto 1.5rem;
+    max-width: 480px;
+  }
+  .bk-sample-note {
+    font-size: 0.78rem;
+    color: var(--text-3);
+    margin: 0.75rem 0 0;
+  }
+
+  /* ── AUTHOR'S EDITION CALLOUT ── */
+  .bk-ae-card {
+    padding: 2rem;
+    background: rgba(245, 158, 11, 0.04);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-left: 3px solid rgba(245, 158, 11, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 640px;
+  }
+  .bk-ae-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    padding: 0.25rem 0.65rem;
-    background: rgba(245, 158, 11, 0.12);
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    gap: 0.4rem;
     font-size: 0.68rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #f59e0b;
-    white-space: nowrap;
-    flex-shrink: 0;
+    color: var(--amber);
+    font-family: var(--mono);
   }
-  .authors-callout-body { flex: 1; min-width: 0; }
-  .authors-callout-headline { font-size: 0.97rem; font-weight: 700; color: #f1f5f9; margin: 0 0 0.3rem; line-height: 1.3; }
-  .authors-callout-sub { font-size: 0.82rem; color: #64748b; margin: 0; line-height: 1.55; }
-  .authors-callout-cta {
-    font-size: 0.87rem;
-    font-weight: 700;
-    color: #f59e0b;
-    text-decoration: none;
-    white-space: nowrap;
-    flex-shrink: 0;
-    padding: 0.55rem 1.1rem;
-    border: 1px solid rgba(245, 158, 11, 0.35);
-    transition: background 0.15s ease, color 0.15s ease;
+  .bk-ae-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0;
+    line-height: 1.3;
   }
-  .authors-callout-cta:hover { background: rgba(245, 158, 11, 0.1); color: #fbbf24; }
+  .bk-ae-text {
+    font-size: 0.88rem;
+    color: var(--text-2);
+    line-height: 1.65;
+    margin: 0;
+  }
 
-  /* === RESPONSIVE === */
-  @media (max-width: 960px) {
-    .hero { gap: 2rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); }
-    .hero-cover img { max-width: 260px; }
+  /* ── SUBSCRIBE ── */
+  .bk-subscribe { text-align: center; }
+  .bk-subscribe-inner { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+  .bk-subscribe-heading {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 900;
+    color: var(--text-1);
+    margin: 0;
+    letter-spacing: -0.025em;
   }
-  @media (max-width: 768px) {
-    .hero { grid-template-columns: 1fr; gap: 1.75rem; text-align: center; margin: 1rem 0 3rem; }
-    .hero-cover img { max-width: 240px; }
-    .hero-ctas { justify-content: center; }
-    .hero-preorder { text-align: left; }
-    .thesis, .sample, .open-draft, .newsletter, .sample-dl, .roadmap, .teleop { padding: 1.5rem; }
-    .stage.current { margin: 0 -1.5rem; padding: 0.875rem 1.5rem; }
-  }
-  @media (max-width: 480px) {
-    .hero { gap: 1.25rem; margin: 0.5rem 0 2rem; }
-    .hero-cover img { max-width: 200px; }
-    .hero-ctas { flex-direction: column; align-items: stretch; }
-    .cta-primary, .cta-secondary { text-align: center; }
-    .thesis, .sample, .open-draft, .newsletter, .sample-dl, .roadmap, .teleop { padding: 1.25rem; }
-    .stage.current { margin: 0 -1.25rem; padding: 0.875rem 1.25rem; }
+  .bk-subscribe-sub {
+    font-size: 0.92rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 460px;
   }
 </style>

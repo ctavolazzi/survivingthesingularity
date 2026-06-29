@@ -54,7 +54,7 @@
 </script>
 
 <svelte:head>
-  <title>Research Signals — Surviving the Singularity</title>
+  <title>Research Signals: Surviving the Singularity</title>
   <meta name="description" content="Algorithmically swept arXiv research ranked by singularity relevance. Auto-updated daily. Not hand-curated." />
   <link rel="alternate" type="application/rss+xml" title="Research Signals RSS" href="/signals.xml" />
 </svelte:head>

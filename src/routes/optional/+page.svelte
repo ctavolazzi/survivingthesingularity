@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Optional Content Review — Surviving the Singularity</title>
+  <title>Optional Content Review: Surviving the Singularity</title>
   <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 

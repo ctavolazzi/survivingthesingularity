@@ -175,7 +175,7 @@
       <div class="ss-grid reveal">
         <div class="ss-item">
           <span class="ss-num">300M</span>
-          <span class="ss-desc">full-time jobs globally at risk from AI</span>
+          <span class="ss-desc">jobs rendered obsolete by AI globally</span>
           <a href="https://www.google.com/search?q=Goldman+Sachs+300+million+jobs+AI+generative" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs</a>
         </div>
         <div class="ss-item">
@@ -288,7 +288,7 @@
         <div class="timeline-item">
           <div class="timeline-dot-row">
             <div class="timeline-dot now"></div>
-            <span class="timeline-period">2026 — Now</span>
+            <span class="timeline-period">2026. Now.</span>
           </div>
           <p class="timeline-label">Physical AI Arrives</p>
           <p class="timeline-desc">Humanoid robots are entering workplaces. The social contract is being dismantled. Most people still think this is someone else's problem.</p>
@@ -311,7 +311,7 @@
       <div class="video-ratio">
         <iframe
           src="https://www.youtube.com/embed/6K_bGH54ltI"
-          title="AI capabilities — Surviving the Singularity"
+          title="AI capabilities: Surviving the Singularity"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
@@ -330,21 +330,21 @@
       <div class="book-parts reveal reveal-d1">
         <div class="book-part book-part-1">
           <span class="book-part-num">Part I</span>
-          <h3 class="book-part-title">What's Happening</h3>
-          <p class="book-part-sub">The Nine Stages of Intelligence Scaling</p>
-          <p class="book-part-desc">From the AI tools you're using today to systems that outperform humans at everything. Stage by stage. So you understand exactly what you're looking at before it lands on you.</p>
+          <h3 class="book-part-title">What is the Singularity?</h3>
+          <p class="book-part-sub">Defining the inflection. The mathematical map. The thermodynamic reality.</p>
+          <p class="book-part-desc">Why the 2017 Transformer crossed the event horizon. Nine stages from current AI to the apex. The machine is a heat engine bound by physics.</p>
         </div>
         <div class="book-part book-part-2">
           <span class="book-part-num">Part II</span>
-          <h3 class="book-part-title">How People Will React</h3>
-          <p class="book-part-sub">Denial. Panic. Opportunism.</p>
-          <p class="book-part-desc">Most people follow predictable patterns when disruption hits. Understanding those patterns puts you ahead of the reaction before it happens. You don't have to be one of the ones who panics.</p>
+          <h3 class="book-part-title">How Humans React</h3>
+          <p class="book-part-sub">Transition dynamics. Behavioral patterns. The egalitarian pivot.</p>
+          <p class="book-part-desc">Most people follow predictable patterns when disruption hits. Understanding those patterns puts you ahead of the reaction before it happens.</p>
         </div>
         <div class="book-part book-part-3">
           <span class="book-part-num">Part III</span>
-          <h3 class="book-part-title">What You Can Do</h3>
-          <p class="book-part-sub">Concrete Moves. Actual Steps.</p>
-          <p class="book-part-desc">Not abstract advice. The specific moves to build leverage, protect your position, and come out ahead while everyone else is still figuring out what happened.</p>
+          <h3 class="book-part-title">How to Survive the Transition</h3>
+          <p class="book-part-sub">Hyper-local systems. The Shouse Grid. The new social contract.</p>
+          <p class="book-part-desc">Concrete moves, not abstract advice. Local energy, local food, local compute, community coordination. The specific steps to build before the window closes.</p>
         </div>
       </div>
     </div>

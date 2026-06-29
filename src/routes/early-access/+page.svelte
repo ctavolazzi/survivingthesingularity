@@ -128,7 +128,7 @@
 
     <div class="ea-image-grid">
       <div class="ea-img-cell ea-img-large">
-        <img src="/book-images/ch02-factory-robots.jpg" alt="Factory automation robots — Chapter 2" loading="lazy" />
+        <img src="/book-images/ch02-factory-robots.jpg" alt="Factory automation robots. Chapter 2." loading="lazy" />
         <div class="ea-img-cap">Physical Automation</div>
       </div>
       <div class="ea-img-cell">
@@ -747,7 +747,7 @@
     line-height: 1.4;
   }
   .ea-ed-features li::before {
-    content: '—';
+    content: '›';
     position: absolute;
     left: 0;
     color: var(--text-3);

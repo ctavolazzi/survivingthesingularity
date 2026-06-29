@@ -49,7 +49,7 @@
           </a>
           <a href="/early-access" class="bk-btn-secondary">Get Early Access. $5.</a>
         </div>
-        <p class="bk-hero-note">No content frequency, ship date, or completion guarantee. Read it as it gets built.</p>
+        <p class="bk-hero-note">For informational and educational purposes only. Not financial, legal, or professional advice. <a href="/disclaimer">Full disclaimer.</a></p>
       </div>
     </div>
   </section>
@@ -361,12 +361,14 @@
     font-size: 0.92rem;
     text-decoration: none;
     border: none;
-    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
-    transition: opacity 0.15s ease;
+    border-radius: 999px;
+    box-shadow: 0 4px 20px rgba(245,158,11,0.28);
+    transition: filter 0.2s ease, transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
     white-space: nowrap;
     font-family: inherit;
   }
-  .bk-btn-primary:hover { opacity: 0.88; }
+  .bk-btn-primary:hover { filter: brightness(1.08); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(245,158,11,0.42); }
+  .bk-btn-primary:active { transform: scale(0.98); }
 
   .bk-btn-secondary {
     display: inline-flex;
@@ -378,16 +380,18 @@
     font-size: 0.9rem;
     text-decoration: none;
     border: 1px solid var(--border-mid);
-    transition: border-color 0.15s ease, color 0.15s ease;
+    border-radius: 999px;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
     white-space: nowrap;
     font-family: inherit;
   }
-  .bk-btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
+  .bk-btn-secondary:hover { color: var(--text-1); border-color: rgba(255,255,255,0.14); background: rgba(255,255,255,0.04); }
 
   /* ── HERO ── */
   .bk-hero {
     padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 60px) clamp(56px, 8vw, 80px);
-    background: linear-gradient(180deg, rgba(245,158,11,0.04) 0%, transparent 60%);
+    background: linear-gradient(180deg, rgba(245,158,11,0.06) 0%, transparent 70%);
+    position: relative;
   }
   .bk-hero-inner {
     max-width: 1040px;
@@ -437,11 +441,18 @@
     margin-bottom: 1rem;
   }
   .bk-hero-note {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     color: var(--text-3);
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.6;
+    max-width: 52ch;
   }
+  .bk-hero-note a {
+    color: var(--text-2);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .bk-hero-note a:hover { color: var(--amber); }
 
   /* ── INTRODUCTION BLOCKS ── */
   .bk-intro-blocks {
@@ -493,6 +504,7 @@
     padding: 1.5rem;
     border: 1px solid var(--border);
     border-top: 3px solid var(--border-mid);
+    border-radius: 14px;
   }
   .bk-part-1 { border-top-color: var(--amber); }
   .bk-part-2 { border-top-color: #3b82f6; }
@@ -540,6 +552,7 @@
   }
   .bk-era {
     border: 1px solid var(--border);
+    border-radius: 10px;
     overflow: hidden;
   }
   .bk-era-header {
@@ -612,6 +625,7 @@
     background: rgba(245, 158, 11, 0.04);
     border: 1px solid rgba(245, 158, 11, 0.18);
     border-left: 3px solid rgba(245, 158, 11, 0.5);
+    border-radius: 8px;
   }
   .bk-thermo-label {
     font-size: 0.75rem;
@@ -644,6 +658,7 @@
     background: rgba(15, 23, 42, 0.5);
     border: 1px solid var(--border);
     border-left: 3px solid rgba(59, 130, 246, 0.4);
+    border-radius: 12px;
   }
   .bk-reaction-title {
     font-size: 0.88rem;
@@ -707,6 +722,7 @@
     padding: 1.5rem;
     background: rgba(15, 23, 42, 0.5);
     border: 1px solid var(--border);
+    border-radius: 12px;
   }
   .bk-conclusion-title {
     font-size: 0.88rem;
@@ -744,6 +760,7 @@
     background: rgba(245, 158, 11, 0.04);
     border: 1px solid rgba(245, 158, 11, 0.25);
     border-left: 3px solid rgba(245, 158, 11, 0.6);
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;

@@ -415,10 +415,6 @@
     </div>
   </section>
 
-  <div class="thanks-wrap">
-    <p class="thanks-text">Thank you for being here ❣️</p>
-  </div>
-
 </div>
 
 <style>
@@ -1207,8 +1203,6 @@
   .email-submit:active { transform: scale(0.98); }
   @media (max-width: 420px) { .email-form { flex-direction: column; } .email-submit { width: 100%; } }
 
-  .thanks-wrap { text-align: center; padding: clamp(32px, 5vw, 56px) clamp(20px, 5vw, 60px); }
-  .thanks-text { font-size: clamp(1.1rem, 3vw, 1.5rem); color: var(--text-3); margin: 0; }
 
   /* FREE PATH */
   .free-path {

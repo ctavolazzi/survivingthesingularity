@@ -139,6 +139,10 @@
         <img src="/book-images/ch12-farmbot.jpg" alt="FarmBot garden automation, Chapter 12" loading="lazy" />
         <div class="ea-img-cap">Food Autonomy</div>
       </div>
+      <div class="ea-img-cell">
+        <img src="/book-images/ch02-waymo.jpg" alt="Waymo autonomous vehicle" loading="lazy" />
+        <div class="ea-img-cap">Autonomous Transport</div>
+      </div>
       <div class="ea-img-cell ea-img-wide">
         <img src="/book-images/ch01-atlas.jpg" alt="Boston Dynamics Atlas, Chapter 1" loading="lazy" />
         <div class="ea-img-cap">The New Era</div>
@@ -232,9 +236,28 @@
     </div>
     <div class="ea-author-copy">
       <p class="ea-label">Who's building this</p>
+      <p class="ea-author-name"><a href="https://www.linkedin.com/in/christopher-tavolazzi/" target="_blank" rel="noopener noreferrer" class="ea-author-link">Christopher Tavolazzi</a></p>
       <p class="ea-author-text">
-        I'm writing this book and building these tools in public, because I think the window to prepare is shorter than most people expect. The $5 gets you everything I've made so far and everything I make next. No gatekeeping, no upsells.
+        $5 gets you everything I've made so far and early access to everything I make next.<br><br>
+        I'll hold onto your email and send you updates only when it's relevant. No spam, no daily marketing emails, no BS.<br><br>
+        Just clear, actionable intelligence you can use to upgrade your life.
       </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── WELCOME VIDEO ── -->
+<section class="ea-video-section">
+  <div class="ea-video-inner">
+    <div class="ea-video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/NKENM_J-rEg"
+        title="Welcome to the Singularity Community"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
     </div>
   </div>
 </section>
@@ -283,7 +306,7 @@
 
   /* ── HERO ── */
   .ea-hero {
-    padding-top: clamp(80px, 12vw, 120px);
+    padding-top: clamp(24px, 4vw, 48px);
     padding-bottom: clamp(48px, 7vw, 80px);
     background: linear-gradient(180deg, rgba(245,158,11,0.04) 0%, transparent 60%);
   }
@@ -570,6 +593,24 @@
   .ea-tag-draft { background: var(--amber-dim); color: var(--amber); }
   .ea-tag-soon { background: rgba(148,163,184,0.08); color: var(--text-3); }
 
+  /* ── WELCOME VIDEO ── */
+  .ea-video-section {
+    border-top: 1px solid var(--border);
+    padding: clamp(40px, 6vw, 72px) 0;
+  }
+  .ea-video-inner {
+    max-width: 800px; margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 48px);
+  }
+  .ea-video-wrap {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+    border-radius: 8px; background: #000;
+  }
+  .ea-video-wrap iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    border: none;
+  }
+
   /* ── AUTHOR ── */
   .ea-author {
     border-top: 1px solid var(--border);
@@ -590,6 +631,15 @@
     border: 2px solid rgba(245,158,11,0.3);
     box-shadow: 0 0 0 4px rgba(245,158,11,0.08);
   }
+  .ea-author-name {
+    font-size: 1.05rem; font-weight: 700; color: var(--text-1); margin: 4px 0 0;
+  }
+  .ea-author-link {
+    color: #f59e0b; text-decoration: none;
+    border-bottom: 1px solid rgba(245,158,11,0.4);
+    transition: border-color 0.15s ease;
+  }
+  .ea-author-link:hover { border-color: #f59e0b; }
   .ea-author-text {
     font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2);
     line-height: 1.7; max-width: 600px; margin-top: 8px;

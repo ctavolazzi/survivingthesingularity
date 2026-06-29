@@ -20,6 +20,7 @@
   export let headline = 'Unlock the rest';
   export let sub = 'Enter your email and the full version opens right here.';
   export let buttonText = 'Unlock Free';
+  export let forceUnlock = false;        // bypass gate without email (e.g. Discord click)
 
   const LS_KEY = `sts_unlock_${storageKey}`;
 
@@ -77,7 +78,7 @@
 <!-- Always-visible teaser -->
 <slot />
 
-{#if unlocked}
+{#if unlocked || forceUnlock}
   <div class="gate-reveal">
     <slot name="gated" />
   </div>

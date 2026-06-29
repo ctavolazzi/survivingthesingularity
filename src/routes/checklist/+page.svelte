@@ -13,85 +13,50 @@
   const allItems = [
     {
       n: '01', cat: 'foundation',
-      title: 'Audit your single points of failure',
-      body: 'List every essential (food, water, power, income, shelter) that depends on one provider you do not control. That list is your real risk map. Not a hypothetical one.',
-      action: 'Write down 5 things that would stop working if one company or provider disappeared.',
+      title: 'Understand what is actually happening',
+      body: 'AI is not a future problem. It is reshaping industries, displacing roles, and creating new power gaps right now. Most people are still treating it as a news story.',
+      action: 'Search your job title + "AI automation 2026" and spend a few minutes absorbing what you find. Be honest about it.',
       cost: '$0', effort: 'low', free: true,
     },
     {
       n: '02', cat: 'foundation',
-      title: 'Run one local AI model this week',
-      body: 'Install Ollama, pull a small model (llama3, mistral, or phi3), and prove you can get useful answers with no cloud, no subscription, no permission. The tools are already free and run on most laptops.',
-      action: 'Install Ollama from ollama.com and run: ollama pull llama3 && ollama run llama3',
+      title: 'Calculate your freedom number',
+      body: 'The monthly cost to cover your essentials if your income stopped tomorrow. Know this number. Everything you do from here is a campaign to lower it or replace it.',
+      action: "Add up last month's fixed costs: rent, food, utilities, insurance, debt minimums. Write that number down.",
       cost: '$0', effort: 'low', free: true,
     },
     {
       n: '03', cat: 'foundation',
-      title: 'Calculate your freedom number',
-      body: 'The monthly cost to cover your essentials if your income vanished tomorrow. Rent, food, utilities, insurance, debt minimums. Write it down. Everything else you do is a campaign to lower that number or cover it differently.',
-      action: "Add up last month's fixed costs. That number is what you're working against.",
+      title: 'Turn your biggest threat into your next advantage',
+      body: 'Every technology that wiped out one group of workers created a new group of winners. The difference was always who picked up the tool first. You are reading this because you already sense that.',
+      action: 'Write down one specific thing AI could do for you that you currently struggle with, pay someone else for, or just avoid entirely.',
       cost: '$0', effort: 'low', free: true,
     },
     {
       n: '04', cat: 'infrastructure',
       title: 'Start a skill that compounds',
-      body: 'Pick one high-leverage skill (AI tooling, electronics repair, fabrication, growing food, video editing) and commit 30 minutes a day. Compounding beats intensity. The person who does 30 minutes daily outperforms the weekend warrior in 6 months.',
+      body: '30 minutes a day in one high-leverage skill beats every weekend warrior in 6 months. Compounding is the only shortcut that actually works.',
       action: 'Name the skill. Schedule the first 30 minutes on your calendar for today.',
       cost: '$0-50', effort: 'medium', free: false,
     },
     {
       n: '05', cat: 'infrastructure',
-      title: 'Build a 30-day food buffer',
-      body: "This is not prepping. It's decoupling. A month of staples (rice, lentils, oats, canned goods) removes the weekly grocery dependency and the anxiety that rides with it. Cost is about $150-250 for one person.",
-      action: 'Buy 10 lbs of rice, 5 lbs of lentils, and a case of canned beans this week.',
-      cost: '$150-250', effort: 'low', free: false,
-    },
-    {
-      n: '06', cat: 'infrastructure',
-      title: 'Open a second income that needs no permission',
-      body: "A digital product, a service, content you own: anything that can generate $1 without requiring an employer's approval. The first dollar matters more than the amount. It proves the channel exists and that you control it.",
-      action: 'Identify one thing you know that other people would pay to learn. Price it at $10.',
-      cost: '$0-20', effort: 'medium', free: false,
-    },
-    {
-      n: '07', cat: 'infrastructure',
-      title: 'Map your water and power',
-      body: 'Know where they come from and what a 72-hour interruption actually looks like for your household. A $40 water filter and a $200 power station covers most scenarios. You cannot harden what you have not mapped.',
-      action: 'Google your utility provider and find the outage history for your area in the last 2 years.',
-      cost: '$50-250', effort: 'low', free: false,
-    },
-    {
-      n: '08', cat: 'autonomy',
-      title: 'Learn to grow one thing you eat',
-      body: 'A single pot of something edible is a proof of concept for food autonomy. Cherry tomatoes on a windowsill. Herbs on a counter. Start absurdly small. The skill transfers. Once you understand one plant, the rest get easier fast.',
-      action: 'Buy one packet of seeds for something you actually eat. Plant it today.',
-      cost: '$5-15', effort: 'low', free: false,
-    },
-    {
-      n: '09', cat: 'autonomy',
-      title: 'Price out a physical exit',
-      body: 'Land cost per acre in three regions you would actually move to. Not fantasize about. Actually move to. Turn a vague "someday" into three real numbers. This converts an idea into a plan with a price tag.',
-      action: 'Search land prices in 3 rural counties within 200 miles of where you are. Write the numbers down.',
+      title: 'Use AI to cut something you currently pay for',
+      body: 'Every tool in this era can eliminate a dependency if you know how to use it. Legal questions, design work, research, writing — things that used to cost money or time can now cost neither.',
+      action: 'Pick one thing you pay for or avoid because it\'s too expensive. Spend 20 minutes seeing how far a free AI tool gets you.',
       cost: '$0', effort: 'low', free: false,
     },
     {
-      n: '10', cat: 'autonomy',
+      n: '06', cat: 'autonomy',
       title: 'Automate one recurring task with AI',
-      body: "Pick something you do every week that's repetitive and mechanical. Summarizing reports, drafting emails, categorizing data, generating outlines. Reclaim the hours and build the muscle of delegating to machines you control.",
+      body: 'Pick one weekly task that is mechanical and spend 20 minutes building a prompt that handles 80% of it. Reclaim those hours. Build the habit of automating your own work.',
       action: 'Pick one weekly task. Spend 20 minutes building a prompt that handles 80% of it.',
       cost: '$0-20/mo', effort: 'medium', free: false,
     },
     {
-      n: '11', cat: 'network',
-      title: 'Cut fixed monthly obligations by 10%',
-      body: 'Every dollar of recurring cost you remove permanently lowers your freedom number. Subscriptions, memberships, fees you forgot about. Audit them. Fixed costs are the enemy of optionality.',
-      action: 'Pull up your bank statement. Find every recurring charge. Cancel one this week.',
-      cost: '$0', effort: 'low', free: false,
-    },
-    {
-      n: '12', cat: 'network',
+      n: '07', cat: 'network',
       title: 'Find three people building the same way',
-      body: "Independence is not isolation. A small group going the same direction is the difference between a phase and a life. You don't need a community of thousands. You need three people who are actually doing the work.",
+      body: 'You do not need thousands. You need three people who are actually doing the work. That is the difference between a phase and a life.',
       action: 'Message one person today who you think is building toward real independence. Tell them what you\'re doing.',
       cost: '$0', effort: 'low', free: false,
     },
@@ -143,6 +108,24 @@
     resize();
     node.addEventListener('input', resize);
     return { destroy() { node.removeEventListener('input', resize); } };
+  }
+
+  // ── Discord gate ───────────────────────────────────────────────────────────
+  const DISCORD_KEY = 'sts_discord_previewed';
+  let discordPreviewed = false;
+
+  onMount(() => {
+    if (!browser) return;
+    if (localStorage.getItem(DISCORD_KEY)) discordPreviewed = true;
+  });
+
+  function previewDiscord() {
+    if (browser) {
+      localStorage.setItem(DISCORD_KEY, '1');
+      localStorage.setItem('sts_unlock_checklist', '1');
+    }
+    discordPreviewed = true;
+    window.open('https://discord.gg/DVKhj6Vxge', '_blank', 'noopener,noreferrer');
   }
 
   // ── Send form ──────────────────────────────────────────────────────────────
@@ -205,13 +188,15 @@
   <!-- ── HERO ── -->
   <header class="cl-hero">
     <h1 class="cl-title">The Singularity<br>Readiness Checklist</h1>
-    <p class="cl-lede">
-      12 concrete moves to build real independence before the window closes.<br>Check off steps, add your own notes, and email yourself everything you filled in.
-    </p>
+    <div class="cl-lede-stack">
+      <p class="cl-lede-line">Most people won't see it coming.</p>
+      <p class="cl-lede-line cl-lede-punch">You will.</p>
+      <p class="cl-lede-line">7 moves. Real actions. Start now.</p>
+    </div>
 
     <div class="cl-stats">
       <div class="cl-stat">
-        <span class="cl-stat-n">12</span>
+        <span class="cl-stat-n">7</span>
         <span class="cl-stat-l">steps</span>
       </div>
       <div class="cl-stat-sep" aria-hidden="true"></div>
@@ -226,7 +211,7 @@
       </div>
       <div class="cl-stat-sep" aria-hidden="true"></div>
       <div class="cl-stat">
-        <span class="cl-stat-n cl-stat-progress" aria-live="polite">{checkedCount}/12</span>
+        <span class="cl-stat-n cl-stat-progress" aria-live="polite">{checkedCount}/7</span>
         <span class="cl-stat-l">completed</span>
       </div>
     </div>
@@ -257,27 +242,16 @@
   </div>
 
   <!-- ── PRIMER ── -->
-  <div class="cl-primer">
-    <div class="cl-primer-body">
-      <p class="cl-primer-quote">
-        12 steps toward real independence. Each one has a concrete action you can take this week.
-      </p>
-      <ol class="cl-primer-how">
-        <li>Check each step off after you've done the action</li>
-        <li>Add your notes as you go</li>
-        <li>Email yourself the results at the end</li>
-      </ol>
-      <p class="cl-primer-cta">Start with step 01.</p>
-    </div>
-  </div>
+  <p class="cl-primer-single">Each step has one action you can take this week. Check it off when you've done it. Start with 01.</p>
 
   <!-- ── CHECKLIST with EmailGate ── -->
   <EmailGate
     storageKey="checklist"
     source="checklist"
-    headline="Unlock all 12 steps"
-    sub="You've seen the first three. Enter your email and the rest open right here, plus you can email yourself your notes when you're done."
-    buttonText="Unlock the Full Checklist"
+    headline="Preview the Discord first. Then submit."
+    sub={discordPreviewed ? "Fill in your thinking above, then submit your email. We review every submission. This is how we keep the quality high." : "Click 'Preview the Discord' above before submitting. That's step one."}
+    buttonText="Submit My Checklist"
+    forceUnlock={discordPreviewed}
     on:unlock={onUnlock}
   >
     <!-- Free teaser items — always interactive -->
@@ -329,25 +303,80 @@
       {/each}
     </ol>
 
-    <!-- Book preview inside the gate card, below the email form -->
-    <div slot="gate-extra" class="cl-book-callout">
+    <!-- Locked preview of item 04 -->
+    <div class="cl-locked-preview" aria-hidden="true">
+      <div class="cl-item cl-item-locked" style="--cat-color: {categories[gated[0].cat].color}">
+        <div class="cl-item-head">
+          <span class="cl-checkbox cl-checkbox-locked" aria-hidden="true"></span>
+          <span class="cl-num">{gated[0].n}</span>
+          <span class="cl-cat-tag" style="color: {categories[gated[0].cat].color}; background: color-mix(in srgb, {categories[gated[0].cat].color} 12%, transparent)">
+            {categories[gated[0].cat].label}
+          </span>
+        </div>
+        <h2 class="cl-item-title">{gated[0].title}</h2>
+        <p class="cl-item-text">{gated[0].body}</p>
+        <div class="cl-action cl-action-blurred">
+          <span class="cl-action-label">First action</span>
+          <p class="cl-action-text">{gated[0].action}</p>
+        </div>
+      </div>
+      <div class="cl-locked-fade" aria-hidden="true"></div>
+      <div class="cl-locked-more" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        3 more steps locked
+      </div>
+    </div>
+
+    <!-- Discord: the reward for completing the checklist -->
+    <div class="cl-discord">
+      <div class="cl-discord-icon" aria-hidden="true">
+        <svg width="22" height="16" viewBox="0 0 24 18" fill="currentColor" aria-hidden="true">
+          <path d="M20.317 1.492A19.825 19.825 0 0 0 15.964.196a.074.074 0 0 0-.079.037c-.34.607-.719 1.396-.984 2.018a18.304 18.304 0 0 0-5.8 0 12.757 12.757 0 0 0-.998-2.018.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 1.492a.07.07 0 0 0-.032.027C.533 6.093-.32 10.555.099 14.961a.083.083 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.442a.061.061 0 0 0-.031-.028zM8.02 12.278c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+        </svg>
+      </div>
+      <div class="cl-discord-copy">
+        <p class="cl-discord-headline">The reward: community access.</p>
+        <p class="cl-discord-sub">Submit the checklist below. We review every submission. Accepted members get permanent access to the Surviving the Singularity Discord. Quality people only.</p>
+      </div>
+      <button class="cl-discord-btn" class:cl-discord-btn-done={discordPreviewed} on:click={previewDiscord} type="button">
+        {#if discordPreviewed}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          Previewed
+        {:else}
+          Preview the Discord
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        {/if}
+      </button>
+    </div>
+
+    <!-- Book sales pitch — inside the gate card, below the email form -->
+    <div slot="gate-extra" class="cl-book-sales">
+      <p class="cl-book-sales-eyebrow">The book behind this checklist</p>
+      <h3 class="cl-book-sales-title">Surviving the Singularity</h3>
+
       <img
         src="/images/surviving_the_singularity_cover_1200.png"
         alt="Surviving the Singularity book cover"
-        class="cl-book-cover"
+        class="cl-book-sales-cover"
         loading="lazy"
       />
-      <div class="cl-book-info">
-        <p class="cl-book-eyebrow">The Book</p>
-        <h3 class="cl-book-title">Surviving the Singularity</h3>
-        <p class="cl-book-desc">A field guide to building real independence before AGI reshapes work, income, and daily life. The checklist above is drawn directly from it.</p>
-        <p class="cl-book-release">Coming August 2026 · <a href="/launch" class="cl-book-link">See the launch plan</a></p>
-      </div>
+
+      <ul class="cl-book-sales-parts">
+        <li><span class="cl-book-part-label">Part I</span> What's happening. The nine stages of AI scaling.</li>
+        <li><span class="cl-book-part-label">Part II</span> How people will react. And why most will get it wrong.</li>
+        <li><span class="cl-book-part-label">Part III</span> What you can do. Right now. Starting today.</li>
+      </ul>
+
+      <a href="/early-access" class="cl-book-sales-btn">
+        Get Early Access — $5
+        <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p class="cl-book-sales-fine">One payment. Instant access. Price goes up at launch.</p>
     </div>
 
     <!-- Gated: items 4-12 + send section + deeper content -->
     <div slot="gated">
-      <ol class="cl-list cl-list-gated" start="4" aria-label="Remaining nine checklist items">
+      <ol class="cl-list cl-list-gated" start="4" aria-label="Remaining four checklist items">
         {#each gated as item}
           <li class="cl-item" class:is-checked={answers[item.n].checked} style="--cat-color: {categories[item.cat].color}">
             <div class="cl-item-head">
@@ -414,7 +443,7 @@
             </div>
           </div>
           <p class="cl-send-sub">
-            We'll send everything you checked and wrote, plus the complete 12 steps, formatted for your inbox. Nothing is stored on our end beyond the send.
+            We'll send everything you checked and wrote, plus the complete 7 steps, formatted for your inbox. Nothing is stored on our end beyond the send.
           </p>
 
           {#if sent}
@@ -422,7 +451,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
-              Sent! Check your inbox. ({checkedCount}/12 steps in the email.)
+              Sent! Check your inbox. ({checkedCount}/7 steps in the email.)
             </div>
           {:else}
             <form class="cl-send-form" on:submit={handleSend} novalidate>
@@ -471,7 +500,7 @@
           {/if}
 
           <p class="cl-send-meta">
-            {checkedCount} of 12 steps checked · {allItems.filter(i => answers[i.n].notes.trim()).length} with notes · Zero spam, reply to unsubscribe.
+            {checkedCount} of 7 steps checked · {allItems.filter(i => answers[i.n].notes.trim()).length} with notes · Zero spam, reply to unsubscribe.
           </p>
         </div>
       </section>
@@ -503,7 +532,7 @@
           <div class="cl-upgrade-text">
             <p class="cl-section-label">Want everything</p>
             <h2 class="cl-upgrade-heading">The full kit is $5.</h2>
-            <p class="cl-upgrade-sub">Unlock all 8 blueprint chapters, the live research signal feed, the book draft, and every tool I build next. One payment, instant access.</p>
+            <p class="cl-upgrade-sub">All chapters, the book draft, the research bundle, and every tool I build next. One payment. Instant access.</p>
           </div>
           <a href="/early-access" class="cl-upgrade-btn">
             Get Early Access
@@ -545,10 +574,17 @@
     margin: 0 0 16px;
   }
 
-  .cl-lede {
-    font-size: clamp(0.95rem, 2.5vw, 1.05rem);
-    color: #cbd5e1; line-height: 1.65;
-    margin: 0 auto 28px; max-width: 560px;
+  .cl-lede-stack {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 4px; margin: 0 auto 28px; max-width: 560px;
+  }
+  .cl-lede-line {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    color: #94a3b8; line-height: 1.5; margin: 0;
+  }
+  .cl-lede-punch {
+    font-size: clamp(1.1rem, 3vw, 1.35rem);
+    font-weight: 800; color: #f1f5f9;
   }
 
   .cl-stats {
@@ -590,6 +626,81 @@
   }
   .cl-cat-dot {
     width: 5px; height: 5px; border-radius: 50%; background: currentColor;
+  }
+
+  /* ── LOCKED PREVIEW ── */
+  .cl-locked-preview {
+    position: relative; margin: 0 0 16px; user-select: none;
+  }
+  .cl-item-locked {
+    opacity: 0.35; pointer-events: none;
+    filter: blur(0.4px);
+  }
+  .cl-checkbox-locked {
+    width: 20px; height: 20px;
+    border: 1.5px solid rgba(255,255,255,0.15);
+    border-radius: 6px; background: rgba(255,255,255,0.03);
+    display: inline-flex; flex-shrink: 0;
+  }
+  .cl-action-blurred { filter: blur(3px); }
+  .cl-locked-fade {
+    position: absolute; bottom: 28px; left: 0; right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, #020617);
+    pointer-events: none;
+  }
+  .cl-locked-more {
+    display: flex; align-items: center; gap: 7px;
+    justify-content: center;
+    padding: 10px 0 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #475569;
+  }
+
+  /* ── DISCORD ── */
+  .cl-discord {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    margin: 0 0 2rem;
+    padding: 18px 20px;
+    background: rgba(88, 101, 242, 0.07);
+    border: 1px solid rgba(88, 101, 242, 0.25);
+    border-radius: 14px;
+  }
+  .cl-discord-icon {
+    display: flex; align-items: center; justify-content: center;
+    width: 42px; height: 42px; flex-shrink: 0;
+    background: rgba(88, 101, 242, 0.12);
+    border-radius: 10px; color: #7289da;
+  }
+  .cl-discord-copy { flex: 1; min-width: 180px; }
+  .cl-discord-headline {
+    font-size: 0.95rem; font-weight: 800; color: #f1f5f9;
+    margin: 0 0 4px;
+  }
+  .cl-discord-sub {
+    font-size: 0.82rem; color: #94a3b8; line-height: 1.55; margin: 0;
+  }
+  .cl-discord-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 16px; flex-shrink: 0;
+    background: #5865f2; color: #fff;
+    font-size: 0.85rem; font-weight: 700;
+    border: none; border-radius: 8px; text-decoration: none; white-space: nowrap;
+    cursor: pointer; transition: filter 0.15s ease;
+  }
+  .cl-discord-btn:hover { filter: brightness(1.1); }
+  .cl-discord-btn-done {
+    background: rgba(16,185,129,0.15);
+    color: #10b981;
+    border: 1px solid rgba(16,185,129,0.3);
+    cursor: default;
+  }
+  .cl-discord-btn-done:hover { filter: none; }
+  @media (max-width: 500px) {
+    .cl-discord { flex-direction: column; align-items: flex-start; }
+    .cl-discord-btn { width: 100%; justify-content: center; }
   }
 
   /* ── CHECKLIST ITEMS ── */
@@ -889,102 +1000,70 @@
   }
   .cl-upgrade-btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
 
-  /* ── BOOK CALLOUT ── */
-  .cl-book-callout {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-top: 20px;
-    padding-top: 20px;
+  /* ── BOOK SALES ── */
+  .cl-book-sales {
+    margin-top: 24px;
+    padding-top: 24px;
     border-top: 1px solid rgba(255,255,255,0.07);
+    display: flex; flex-direction: column; gap: 14px;
+    text-align: center;
   }
-  .cl-book-cover {
-    width: 72px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-  }
-  .cl-book-info { flex: 1; min-width: 0; }
-  .cl-book-eyebrow {
+  .cl-book-sales-eyebrow {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.65rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.14em;
-    color: #f59e0b; margin: 0 0 4px;
+    color: #f59e0b; margin: 0;
   }
-  .cl-book-title {
-    font-size: 1rem; font-weight: 800;
-    color: #f8fafc; margin: 0 0 6px; line-height: 1.2;
+  .cl-book-sales-cover {
+    display: block;
+    width: min(200px, 55%);
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 20px 48px rgba(0,0,0,0.7), 0 4px 12px rgba(0,0,0,0.4);
   }
-  .cl-book-desc {
-    font-size: 0.84rem; color: #cbd5e1;
-    line-height: 1.6; margin: 0 0 8px;
+  .cl-book-sales-title {
+    font-size: clamp(1.2rem, 3vw, 1.6rem); font-weight: 900;
+    color: #f8fafc; margin: 0; line-height: 1.1;
+    letter-spacing: -0.02em;
   }
-  .cl-book-release {
-    font-size: 0.78rem; color: #94a3b8; margin: 0;
+  .cl-book-sales-parts {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 8px;
   }
-  .cl-book-link {
-    color: #f59e0b; text-decoration: none;
-    font-weight: 600;
+  .cl-book-sales-parts li {
+    font-size: 0.85rem; color: #cbd5e1; line-height: 1.5;
   }
-  .cl-book-link:hover { text-decoration: underline; }
-
+  .cl-book-part-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem; font-weight: 700;
+    color: #f59e0b; margin-right: 8px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .cl-book-sales-btn {
+    display: flex; align-items: center; justify-content: center; gap: 7px;
+    width: 100%;
+    padding: 13px 20px;
+    background: #f59e0b; color: #0a0a0a;
+    font-size: 0.95rem; font-weight: 800;
+    border-radius: 8px; text-decoration: none;
+    box-shadow: 0 4px 16px rgba(245,158,11,0.3);
+    transition: filter 0.15s ease, transform 0.15s ease;
+  }
+  .cl-book-sales-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  .cl-book-sales-fine {
+    font-size: 0.75rem; color: #64748b; margin: 0; text-align: center;
+  }
   @media (max-width: 480px) {
-    .cl-book-callout { flex-direction: column; align-items: flex-start; }
-    .cl-book-cover { width: 56px; }
+    .cl-book-sales-inner { flex-direction: column; }
+    .cl-book-sales-cover { width: 80px; }
+    .cl-book-sales-btn { width: 100%; justify-content: center; }
   }
 
   /* ── PRIMER ── */
-  .cl-primer {
-    margin-bottom: 2rem;
-    background: rgba(245, 158, 11, 0.04);
-    border: 1px solid rgba(245, 158, 11, 0.14);
-    border-left: 3px solid rgba(245, 158, 11, 0.6);
-    border-radius: 14px;
-    overflow: hidden;
-  }
-  .cl-primer-body {
-    padding: 22px 24px 18px;
-  }
-  .cl-primer-quote {
-    font-size: clamp(1rem, 2.5vw, 1.15rem);
-    font-weight: 600;
-    color: #e2e8f0;
-    line-height: 1.55;
-    margin: 0 0 10px;
-  }
-  .cl-primer-quote strong { color: #f8fafc; font-weight: 800; }
-  .cl-primer-how {
-    list-style: none;
-    counter-reset: step;
-    margin: 0 0 12px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .cl-primer-how li {
-    counter-increment: step;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    font-size: 0.88rem;
-    color: #cbd5e1;
-    line-height: 1.5;
-  }
-  .cl-primer-how li::before {
-    content: counter(step);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: #f59e0b;
-    flex-shrink: 0;
-    min-width: 14px;
-  }
-  .cl-primer-cta {
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: #f59e0b;
-    margin: 0;
+  .cl-primer-single {
+    font-size: 0.9rem; color: #64748b;
+    text-align: center; margin: 0 auto 2rem;
+    max-width: 480px; line-height: 1.5;
   }
 
   /* ── WELCOME VIDEO ── */

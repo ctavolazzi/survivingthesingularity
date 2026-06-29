@@ -67,7 +67,7 @@
       <h2>Start Here</h2>
       <p>Read the material as one author's commentary. Take what's useful for your own thinking. Always consult the relevant licensed professionals before acting.</p>
       <div class="about-actions">
-        <a href="/blueprint" class="btn-primary">Read the Blueprint</a>
+        <a href="/book" class="btn-primary">Read the Book</a>
         <a href="/blog" class="btn-secondary">Read the Blog</a>
       </div>
     </section>

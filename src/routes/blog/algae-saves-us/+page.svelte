@@ -225,7 +225,7 @@
         <div class="cta-signup" id="signup">
           <NewsletterSignup source="blog-algae" label="" buttonText="Get Updates" bookUrl="/book" />
         </div>
-        <a href="/blueprint" class="cta-link">Read the Blueprint to see how this fits in →</a>
+        <a href="/book" class="cta-link">Read the book to see how this fits in →</a>
       </div>
 
     </div>

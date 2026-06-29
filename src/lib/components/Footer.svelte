@@ -6,17 +6,17 @@
           <span class="footer-mark">STS</span>
           <span class="footer-brand-name">Surviving the Singularity</span>
         </div>
-        <p class="footer-tagline">Material independence through digital leverage, local intelligence, and minimalist infrastructure.</p>
+        <p class="footer-tagline">Preparing for the singularity. One move at a time.</p>
       </div>
 
       <div class="footer-links-group">
         <div class="footer-col">
           <h4 class="footer-col-title">Navigate</h4>
           <a href="/" class="footer-link">Home</a>
-          <a href="/blueprint" class="footer-link">The Blueprint</a>
-          <a href="/book" class="footer-link">Book</a>
+          <a href="/checklist" class="footer-link">Free Checklist</a>
+          <a href="/book" class="footer-link">The Book</a>
+          <a href="/early-access" class="footer-link">Early Access</a>
           <a href="/blog" class="footer-link">Blog</a>
-          <a href="/signals" class="footer-link">Research Signals</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Resources</h4>

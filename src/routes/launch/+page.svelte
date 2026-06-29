@@ -196,10 +196,10 @@
         <div class="pub-step-num">1</div>
         <div class="pub-step-body">
           <h3>
-            <a href="/blueprint">The Blueprint</a>
+            <a href="/book">The Book</a>
             <span class="pub-live-badge">Live now</span>
           </h3>
-          <p>The core framework, published free on this site. No paywall, no email required. This is not a teaser. It is the substance. The book goes deeper, but the Blueprint stands alone.</p>
+          <p>The core framework, published free on this site. No paywall, no email required. This is not a teaser. It is the substance.</p>
         </div>
       </div>
       <div class="pub-step pub-step--active">

@@ -26,7 +26,7 @@
     </p>
     <div class="err-actions">
       <a class="err-btn err-btn-primary" href="/">Home</a>
-      <a class="err-btn" href="/blueprint">The Blueprint</a>
+      <a class="err-btn" href="/book">The Book</a>
       <a class="err-btn" href="/disclaimer">Disclaimer</a>
     </div>
   </div>

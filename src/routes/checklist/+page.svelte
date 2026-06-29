@@ -512,7 +512,7 @@
         <p class="cl-deeper-sub">The Blueprint expands every area of this checklist into a full strategy. Start with the chapter that matches where you are right now.</p>
         <div class="cl-chapters">
           {#each relatedChapters as ch}
-            <a href="/blueprint/{ch.slug}" class="cl-chapter-card">
+            <a href="/book" class="cl-chapter-card">
               <span class="cl-chapter-n" style="color: {ch.color}">{ch.n}</span>
               <div class="cl-chapter-body">
                 <span class="cl-chapter-tag" style="color: {ch.color}">{ch.tag}</span>

@@ -76,8 +76,8 @@
           Every item links directly to its source. Read the <a href="/disclaimer#signals">full disclaimer</a>.
         </p>
         <div class="how-links">
-          <a href="/why" class="how-link">Curated evidence →</a>
-          <a href="/evidence" class="how-link">Evidence timeline →</a>
+          <a href="/book" class="how-link">The book →</a>
+          <a href="/checklist" class="how-link">Readiness checklist →</a>
           <a href="/signals.xml" class="how-link rss-link">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <circle cx="6.18" cy="17.82" r="2.18"/>
@@ -158,9 +158,9 @@
       <p>
         <a href="/signals.xml" class="rss-link-foot">Subscribe via RSS</a>
         &middot;
-        <a href="/why">Curated evidence</a>
+        <a href="/book">The book</a>
         &middot;
-        <a href="/evidence">Evidence timeline</a>
+        <a href="/checklist">Readiness checklist</a>
       </p>
     </footer>
 

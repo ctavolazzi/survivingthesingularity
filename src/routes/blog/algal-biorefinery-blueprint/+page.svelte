@@ -312,7 +312,7 @@
         <div class="cta-signup" id="signup">
           <NewsletterSignup source="blog-biorefinery" label="" buttonText="Join the List" />
         </div>
-        <a href="/blueprint" class="cta-link">Read the full Blueprint →</a>
+        <a href="/book" class="cta-link">Read the full book →</a>
       </div>
 
     </div>

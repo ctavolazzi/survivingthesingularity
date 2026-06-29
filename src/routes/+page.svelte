@@ -89,7 +89,7 @@
   <!-- AGI COUNTDOWN -->
   <section class="agi-section" aria-label="AGI Countdown">
     <div class="section-inner">
-      <a href="/agi" class="agi-countdown ac-clickable" aria-label="Countdown to AGI: tap to learn why 2027">
+      <a href="/book" class="agi-countdown ac-clickable" aria-label="Countdown to AGI: tap to learn why 2027">
         <div class="ac-eyebrow">
           <span class="ac-dot"></span>
           <span>The Clock Is Running</span>
@@ -158,7 +158,7 @@
               <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </a>
-          <a href="/blueprint" class="btn-ghost">Read the Blueprint</a>
+          <a href="/book" class="btn-ghost">Read the Book</a>
         </div>
         <p class="hero-disclaimer">
           For informational and educational purposes only. Not legal, financial, or professional advice.

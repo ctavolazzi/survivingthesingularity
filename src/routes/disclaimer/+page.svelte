@@ -255,9 +255,7 @@
         a pointer to a source you should evaluate yourself, not as a vetted recommendation.
       </p>
       <p>
-        For hand-selected evidence used in the site's argument, see the <a href="/why">Why page</a> and
-        the <a href="/evidence">Evidence timeline</a>. Those are curated by the author and held to a
-        higher standard than the automated feed.
+        For the book's sourced argument, see <a href="/book">the book page</a>. Claims there are curated by the author and held to a higher standard than the automated feed.
       </p>
     </section>
 

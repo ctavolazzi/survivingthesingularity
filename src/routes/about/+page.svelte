@@ -1,74 +1,77 @@
 <script>
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
+  import AuthorBio from '$lib/components/AuthorBio.svelte';
 
   let visible = false;
   onMount(() => { visible = true; });
 </script>
 
 <svelte:head>
-  <title>About - Surviving the Singularity</title>
-  <meta name="description" content="Material independence through digital leverage, local AI, and minimalist infrastructure. We build the blueprint for independent living." />
+  <title>About: Surviving the Singularity</title>
+  <meta name="description" content="Christopher Tavolazzi (The Coffee Jesus) is a developer, futurist, and founder of Johnny Autoseed. Surviving the Singularity is a living field guide written in real time as the world changes." />
 </svelte:head>
 
 {#if visible}
   <div class="about-page" in:fade={{ duration: 400 }}>
     <header class="about-header">
-      <p class="about-label">About This Project</p>
-      <h1 class="about-title">A Research Notebook on What Comes Next</h1>
+      <p class="about-label">About</p>
+      <h1 class="about-title">I'm writing this in real time.</h1>
       <p class="about-subtitle">
-        This project began as personal research into what material resilience looks like in a period of rapid AI deployment. It has grown into a reference for anyone (individuals, planners, or organizations) trying to update their frameworks before the window narrows. Material here is the author's commentary and supposition, not advice. Anything you might consider acting on should be evaluated with the relevant licensed professionals.
+        Developer, futurist, founder of Johnny Autoseed. I write to make sense of the AI shift as it happens. This book updates as the world does.
       </p>
     </header>
 
+    <AuthorBio />
+
     <section class="about-section">
-      <h2>The Thesis</h2>
+      <h2>Why this exists</h2>
       <p>
-        For many people in many places, the costs of housing relative to wages have shifted significantly over recent decades. Whether the old playbook still works for any individual depends on geography, profession, family situation, and dozens of other factors. None of this is meant as a universal claim.
+        The 2017 Transformer architecture crossed an event horizon most people missed. Intelligence now has a marginal cost near zero. The gap between people who understand that and people who don't is widening every quarter.
       </p>
       <p>
-        One direction the author has been exploring is the <strong>YouTube Shouse Blueprint</strong>: a thought experiment combining minimalist infrastructure, public-facing creator work, local AI tools, and open-source automation. It is a hypothesis to think with, not a plan to follow.
+        I started writing this to work it out for myself. It became something I could share. The book grows as the situation develops. Nothing here is finished. Neither is the world.
       </p>
     </section>
 
     <section class="about-section">
-      <h2>What's Here</h2>
+      <h2>What's here</h2>
       <div class="provides-grid">
         <div class="provide-item">
-          <h3>The Blueprint</h3>
-          <p>Tactical analysis covering everything from construction costs to GPU benchmarks for local LLMs. Organized to be useful at different scales: whether you're making decisions for yourself, your organization, or your community.</p>
+          <h3>The Book</h3>
+          <p>Three parts: what the singularity is, how people react, and what you can do. Updated as it's written.</p>
+          <a href="/book" class="provide-link">Read the book</a>
+        </div>
+        <div class="provide-item">
+          <h3>The Checklist</h3>
+          <p>Seven moves to start where you are. Free, no signup required for the first three steps.</p>
+          <a href="/checklist" class="provide-link">Start the checklist</a>
+        </div>
+        <div class="provide-item">
+          <h3>Early Access</h3>
+          <p>$5 gets you the full draft, the research bundle, and the Standard Edition when it ships. A hand-bound Author's Edition is also available.</p>
+          <a href="/early-access" class="provide-link">Get early access</a>
         </div>
         <div class="provide-item">
           <h3>The Blog</h3>
-          <p>Deep dives into AI breakthroughs, robotics, synthetic biology, and the technologies reshaping the landscape.</p>
-        </div>
-        <div class="provide-item">
-          <h3>The Book</h3>
-          <p>A longer-form exploration of the singularity, its implications, and practical frameworks for navigating it.</p>
-        </div>
-        <div class="provide-item">
-          <h3>The Data</h3>
-          <p>Reference figures from public sources: purchasing-power indicators, construction cost ranges, GPU benchmarks, illustrative yield and ROI examples. Verify any number you intend to rely on.</p>
+          <p>Dispatches on AI breakthroughs, robotics, synthetic biology, and what's shifting week to week.</p>
+          <a href="/blog" class="provide-link">Read the blog</a>
         </div>
       </div>
     </section>
 
-    <section class="about-section">
-      <h2>The Philosophy</h2>
+    <section class="about-section about-note">
       <p>
-        The author values personal autonomy and lower fixed costs as a starting point for stronger civic and community participation. Whether any specific tactic discussed on this site is appropriate for you is a question for you and your professional advisors.
-      </p>
-      <p>
-        This project is commentary and informational only. Not financial, legal, real-estate, medical, or any other professional advice. Always consult the relevant licensed professionals before making any decision based on anything published here.
+        Everything here is commentary and informational only. Not financial, legal, medical, or any other professional advice. Verify anything you intend to rely on and consult the relevant licensed professionals before acting.
       </p>
     </section>
 
     <section class="about-section about-cta">
-      <h2>Start Here</h2>
-      <p>Read the material as one author's commentary. Take what's useful for your own thinking. Always consult the relevant licensed professionals before acting.</p>
+      <h2>Start here</h2>
+      <p>Read the book as it's being written. Or start free with the checklist.</p>
       <div class="about-actions">
         <a href="/book" class="btn-primary">Read the Book</a>
-        <a href="/blog" class="btn-secondary">Read the Blog</a>
+        <a href="/checklist" class="btn-secondary">Start the Checklist</a>
       </div>
     </section>
   </div>
@@ -86,7 +89,7 @@
   }
 
   .about-header {
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
   }
 
   .about-label {
@@ -134,11 +137,6 @@
     margin: 0 0 1rem 0;
   }
 
-  .about-section strong {
-    color: #f59e0b;
-    font-weight: 600;
-  }
-
   .provides-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -151,19 +149,46 @@
     border: 1px solid rgba(148, 163, 184, 0.06);
     border-radius: 14px;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .provide-item h3 {
     font-size: 1rem;
     font-weight: 600;
     color: #e2e8f0;
-    margin: 0 0 0.5rem 0;
+    margin: 0;
   }
 
   .provide-item p {
     font-size: 0.88rem;
     color: #dde4ef;
     line-height: 1.5;
+    margin: 0;
+    flex: 1;
+  }
+
+  .provide-link {
+    font-size: 0.85rem;
+    color: #f59e0b;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.25rem;
+  }
+
+  .provide-link:hover { color: #fbbf24; text-decoration: underline; }
+
+  .about-note {
+    border-top: 1px solid rgba(148, 163, 184, 0.08);
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-note p {
+    font-size: 0.88rem;
+    color: #94a3b8;
+    line-height: 1.7;
     margin: 0;
   }
 
@@ -179,6 +204,15 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 640px) {
+    .about-actions {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   .btn-primary {
@@ -216,18 +250,5 @@
   .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
-  }
-
-  /* Base: stack actions on mobile */
-  .about-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media (min-width: 640px) {
-    .about-actions {
-      flex-direction: row;
-      align-items: center;
-    }
   }
 </style>

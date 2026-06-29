@@ -51,7 +51,7 @@
       options: [
         { label: 'Slash housing costs NOW', value: 'housing', icon: 'H' },
         { label: 'Build income streams', value: 'income', icon: 'I' },
-        { label: 'Digital sovereignty', value: 'digital', icon: 'D' },
+        { label: 'Digital Autonomy', value: 'digital', icon: 'D' },
         { label: 'Full independence roadmap', value: 'full', icon: 'F' },
       ]
     }
@@ -107,7 +107,7 @@
     }
 
     if (answers.goal === 'digital' || answers.goal === 'full' || answers.skills?.includes('tech')) {
-      priority.push({ slug: 'digital-sovereignty', reason: 'Run local AI and decouple from cloud providers', urgency: answers.goal === 'digital' ? 'critical' : 'high' });
+      priority.push({ slug: 'digital-autonomy', reason: 'Run local AI and decouple from cloud providers', urgency: answers.goal === 'digital' ? 'critical' : 'high' });
     }
 
     if (answers.skills?.includes('trades') || answers.goal === 'full') {

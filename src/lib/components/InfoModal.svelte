@@ -48,9 +48,7 @@
 		position: fixed;
 		inset: 0;
 		z-index: 200;
-		background: rgba(2, 6, 23, 0.78);
-		backdrop-filter: blur(6px);
-		-webkit-backdrop-filter: blur(6px);
+		background: rgba(2, 6, 23, 0.88);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -61,10 +59,11 @@
 		max-width: 480px;
 		max-height: min(80vh, 640px);
 		overflow-y: auto;
-		background: #0f172a;
-		border: 1px solid rgba(148, 163, 184, 0.25);
-		border-radius: var(--radius-lg);
-		box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+		background: #0a0f23;
+		border: 1px solid rgba(245, 158, 11, 0.2);
+		border-left: 3px solid rgba(245, 158, 11, 0.4);
+		border-radius: 0;
+		box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.08);
 	}
 	header {
 		position: sticky;

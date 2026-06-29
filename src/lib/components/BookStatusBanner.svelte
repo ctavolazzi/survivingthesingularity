@@ -70,18 +70,15 @@
 
 <style>
   .book-banner {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    background: #0f172a;
     border: 1px solid rgba(245, 158, 11, 0.2);
-    border-radius: 1.25rem;
+    border-left: 3px solid rgba(245, 158, 11, 0.5);
+    border-radius: 0;
     padding: 2rem 1.25rem;
     margin: 3rem auto;
-    /* width:100% so the auto side-margins center it without letting it size
-       to max-content (auto cross-margins disable flex stretch). */
     width: 100%;
     max-width: 900px;
-    box-shadow:
-      0 0 0 1px rgba(245, 158, 11, 0.08),
-      0 24px 64px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.1);
   }
 
   .inner {
@@ -107,22 +104,14 @@
   }
 
   .cover-glow {
-    position: absolute;
-    inset: -20px;
-    background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.25) 0%, transparent 70%);
-    border-radius: 50%;
-    filter: blur(20px);
-    pointer-events: none;
+    display: none;
   }
 
   .cover-img {
     width: min(200px, 45vw);
     height: auto;
-    border-radius: 0.5rem;
-    box-shadow:
-      0 4px 6px rgba(0,0,0,0.3),
-      0 20px 40px rgba(0,0,0,0.5),
-      4px 4px 0 rgba(245, 158, 11, 0.15);
+    border-radius: 0;
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.25);
     position: relative;
     z-index: 1;
     display: block;
@@ -139,14 +128,15 @@
     top: -10px;
     right: -10px;
     z-index: 2;
-    background: linear-gradient(135deg, #f59e0b, #f97316);
+    background: #f59e0b;
     color: #0f172a;
     font-size: 0.76rem;
     font-weight: 800;
     letter-spacing: 0.1em;
+    font-family: 'JetBrains Mono', monospace;
     padding: 0.3rem 0.6rem;
-    border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+    border-radius: 0;
+    box-shadow: 2px 2px 0 rgba(120, 53, 15, 0.5);
   }
 
   /* Content */
@@ -226,7 +216,8 @@
     align-items: flex-start;
     background: rgba(245, 158, 11, 0.07);
     border: 1px solid rgba(245, 158, 11, 0.2);
-    border-radius: 0.75rem;
+    border-left: 3px solid rgba(245, 158, 11, 0.5);
+    border-radius: 0;
     padding: 1rem 1.1rem;
   }
 

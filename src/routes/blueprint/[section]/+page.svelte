@@ -361,8 +361,10 @@
 
   .section-page {
     max-width: 780px;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
-    padding: 2rem 1.5rem 5rem;
+    padding: 2rem clamp(1rem, 4vw, 1.5rem) 5rem;
   }
 
   .header-top {
@@ -506,7 +508,7 @@
   }
 
   .section-subtitle {
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     color: #dde4ef;
     line-height: 1.6;
     margin: 0;
@@ -521,9 +523,10 @@
 
   .prose-text {
     color: #e9eef5;
-    font-size: 1.05rem;
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
     line-height: 1.85;
     margin: 0;
+    overflow-wrap: break-word;
   }
 
   :global(.prose-text strong) {
@@ -644,7 +647,10 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     border-bottom: 1px solid rgba(148, 163, 184, 0.1);
-    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    .data-table th { white-space: normal; word-break: break-word; }
   }
 
   .data-table td {

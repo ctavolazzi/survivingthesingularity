@@ -398,7 +398,7 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.88rem;
     font-weight: 700;
-    color: #f59e0b;
+    color: #f8fafc;
     letter-spacing: 0.08em;
     text-decoration: none;
     white-space: nowrap;
@@ -440,7 +440,7 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 9px 9px 9px 16px;
+    padding: 6px 6px 6px 14px;
     background: #f59e0b;
     color: #0a0a0a;
     font-size: 0.95rem;
@@ -465,14 +465,14 @@
   }
   .nav-cta:hover .nav-cta-icon { transform: translate(1px, -1px); }
 
-  /* ── HAMBURGER — sized to sit inside the pill ── */
+  /* ── HAMBURGER — sized to balance STS on the opposite end ── */
   .hamburger {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border: none;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.07);
@@ -489,16 +489,16 @@
   .h-bar {
     position: absolute;
     left: 50%; top: 50%;
-    width: 13px; height: 1.5px;
+    width: 15px; height: 1.5px;
     border-radius: 1px;
     background: currentColor;
     transform-origin: center;
     transform: translate(-50%, -50%);
     transition: transform 0.3s cubic-bezier(0.68, -0.25, 0.27, 1.25), opacity 0.18s ease;
   }
-  .h-bar:nth-child(1) { transform: translate(-50%, -4px); }
+  .h-bar:nth-child(1) { transform: translate(-50%, -5px); }
   .h-bar:nth-child(2) { transform: translate(-50%, 0); }
-  .h-bar:nth-child(3) { transform: translate(-50%, 4px); }
+  .h-bar:nth-child(3) { transform: translate(-50%, 5px); }
   .hamburger.is-open .h-bar:nth-child(1) { transform: translate(-50%, 0) rotate(45deg); }
   .hamburger.is-open .h-bar:nth-child(2) { opacity: 0; transform: translate(-50%, 0) scaleX(0); }
   .hamburger.is-open .h-bar:nth-child(3) { transform: translate(-50%, 0) rotate(-45deg); }
@@ -640,16 +640,16 @@
   .drawer-secondary-cta:hover { color: #94a3b8; }
 
   /* ── RESPONSIVE ── */
-  /* CTA is always visible. Links and sep hide on mobile. Hamburger always visible. */
-  @media (min-width: 680px) {
+  /* CTA is always visible. Links and sep hide below 960px. Hamburger always visible. */
+  @media (min-width: 960px) {
     .nav-links { display: flex; }
     .nav-sep { display: block; }
   }
 
-  @media (max-width: 679px) {
+  @media (max-width: 959px) {
     .nav-pill { padding: 5px 5px 5px 12px; gap: 2px; }
     .nav-sep { display: none; }
-    .nav-cta { font-size: 0.82rem; padding: 8px 8px 8px 12px; }
+    .nav-cta { font-size: 0.82rem; padding: 5px 5px 5px 11px; }
     .nav-cta-icon { width: 20px; height: 20px; }
   }
 

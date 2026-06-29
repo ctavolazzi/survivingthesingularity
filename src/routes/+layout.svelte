@@ -40,13 +40,16 @@
 
   afterNavigate(({ from, to }) => {
     navigating = false;
-    if (browser && from && to && from.url.pathname !== to.url.pathname) {
-      if (dev && sessionRabbit) {
+    if (browser) {
+      if (dev && sessionRabbit && from && to && from.url.pathname !== to.url.pathname) {
         sessionRabbit.watchNavigation(from.url.pathname, to.url.pathname);
       }
-      setTimeout(() => {
+      const fromPath = from?.url.pathname;
+      const toPath = to?.url.pathname;
+      const toHash = to?.url.hash;
+      if ((!fromPath || fromPath !== toPath) && !toHash) {
         window.scrollTo({ top: 0, behavior: 'instant' });
-      }, 50);
+      }
     }
   });
 
@@ -57,7 +60,7 @@
         sessionRabbit.mark('app-mounted');
         sessionRabbit.info('Session started', { path: window.location.pathname });
       }
-      window.scrollTo(0, 0);
+      if (!window.location.hash) window.scrollTo(0, 0);
     }
   });
 </script>

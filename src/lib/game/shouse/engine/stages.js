@@ -76,8 +76,8 @@ export const STAGES = [
 		incomePerDay: 140,
 		incomeLabel: 'content engine',
 		needsResources: true,
-		blueprintSlug: 'digital-sovereignty',
-		blueprintTitle: 'Digital Sovereignty',
+		blueprintSlug: 'digital-autonomy',
+		blueprintTitle: 'Digital Autonomy',
 		desc: '48U rack: surplus GPU server, UPS, switch, NAS, mesh antenna. Local AI comes online.',
 		lesson: 'Surplus Xeons + a used RTX card run 70B-class models for under $2k. The rack powers the content engine: +$140/day.'
 	},

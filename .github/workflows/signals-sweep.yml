@@ -1,0 +1,59 @@
+name: Signals Sweep
+
+on:
+  schedule:
+    # Daily at 13:00 UTC (6am PT / 9am ET)
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Lookback window in days'
+        required: false
+        default: '7'
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    name: Sweep arXiv and commit signals
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run sweep
+        run: |
+          DAYS="${{ github.event.inputs.days || '7' }}"
+          python scripts/sweep_signals.py --days "$DAYS"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet -- \
+            src/lib/data/signals.json \
+            static/signals.json \
+            static/signals.xml \
+            && echo "changed=false" >> "$GITHUB_OUTPUT" \
+            || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push if changed
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            src/lib/data/signals.json \
+            static/signals.json \
+            static/signals.xml
+          git commit -m "chore: daily signals sweep $(date -u +%Y-%m-%d)"
+          git push

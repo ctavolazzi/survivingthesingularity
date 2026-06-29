@@ -102,9 +102,9 @@
   .agi-countdown {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(245, 158, 11, 0.06) 0%, rgba(15, 23, 42, 0.85) 55%, rgba(2, 6, 23, 0.95) 100%);
+    background: rgba(2, 6, 23, 0.95);
     border: 1px solid rgba(245, 158, 11, 0.25);
-    border-radius: 20px;
+    border-radius: 0;
     padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1rem, 3vw, 2rem);
     text-align: center;
     text-decoration: none;
@@ -114,16 +114,7 @@
   .ac-clickable:hover { border-color: rgba(245, 158, 11, 0.5); }
 
   .ac-glow {
-    position: absolute;
-    top: -40%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 700px;
-    max-width: 130%;
-    height: 400px;
-    background: radial-gradient(ellipse, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
+    display: none;
   }
 
   .agi-countdown > :not(.ac-glow) { position: relative; z-index: 1; }
@@ -199,11 +190,10 @@
     font-size: clamp(1.1rem, 7vw, 4rem);
     font-weight: 900;
     color: #fbbf24;
-    font-family: var(--font-primary);
+    font-family: var(--font-mono);
     line-height: 0.95;
     letter-spacing: -0.04em;
     font-variant-numeric: tabular-nums;
-    text-shadow: 0 0 30px rgba(245, 158, 11, 0.25);
     white-space: nowrap;
   }
 
@@ -327,16 +317,16 @@
     height: clamp(46px, 13vw, 84px);
     background: rgba(30, 41, 59, 0.5);
     border: 1px solid rgba(148, 163, 184, 0.1);
-    border-radius: clamp(10px, 2.5vw, 16px);
+    border-radius: 0;
     font-size: clamp(1.2rem, 5vw, 2.3rem);
     color: #f1f5f9;
-    text-shadow: none;
   }
   .compact .ac-block-accent .ac-value {
     font-size: clamp(1.2rem, 5vw, 2.3rem);
     color: #f59e0b;
-    border-color: rgba(245, 158, 11, 0.25);
+    border-color: rgba(245, 158, 11, 0.3);
     background: rgba(245, 158, 11, 0.06);
+    box-shadow: 2px 2px 0 rgba(245, 158, 11, 0.15);
   }
   .compact .ac-block-sec .ac-value { color: #f1f5f9; opacity: 1; }
   .compact .ac-sep {

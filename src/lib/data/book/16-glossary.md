@@ -16,7 +16,7 @@
 
 **Big Data**: Extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations.
 
-**Blockchain**: A decentralized, distributed ledger technology that records transactions across many computers.
+**Blockchain**: A distributed ledger technology that records transactions across many computers.
 
 ## C
 

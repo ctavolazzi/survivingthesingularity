@@ -52,9 +52,17 @@
   --space-xl: 4rem;
   --space-2xl: 6rem;
 
-  /* Border radius */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  /* Border radius — Technical Brutalist: hard edges everywhere */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+
+  /* Brutalist border system */
+  --border-hard: 1px solid rgba(241,245,249,0.15);
+  --border-accent: 1px solid var(--color-primary);
+  --border-blue: 1px solid var(--color-secondary);
+  --shadow-hard: 4px 4px 0 var(--color-primary);
+  --shadow-hard-blue: 4px 4px 0 var(--color-secondary);
+  --shadow-hard-dim: 3px 3px 0 rgba(241,245,249,0.12);
 }

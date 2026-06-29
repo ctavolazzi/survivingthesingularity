@@ -187,7 +187,7 @@
     padding: 0.65rem 0.9rem;
     background: rgba(15, 23, 42, 0.8);
     border: 1px solid rgba(148, 163, 184, 0.2);
-    border-radius: 8px;
+    border-radius: 0;
     color: #f1f5f9;
     font-size: 0.9rem;
     outline: none;
@@ -208,14 +208,14 @@
     gap: 0.4rem;
     width: 100%;
     padding: 0.75rem 1.25rem;
-    background: linear-gradient(135deg, #f59e0b, #f97316);
+    background: #f59e0b;
     color: #0f172a;
     font-weight: 700;
     font-size: 0.88rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0;
     cursor: pointer;
-    transition: opacity 0.15s ease, transform 0.15s ease;
+    transition: opacity 0.15s ease;
   }
   .waitlist-btn:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
   .waitlist-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
@@ -297,7 +297,7 @@
     padding: 0.85rem 1.1rem;
     background: rgba(16, 185, 129, 0.08);
     border: 1px solid rgba(16, 185, 129, 0.25);
-    border-radius: 10px;
+    border-radius: 0;
     width: 100%;
   }
   .waitlist-duplicate {

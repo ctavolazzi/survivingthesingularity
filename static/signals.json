@@ -1,0 +1,1347 @@
+{
+  "generated_at": "2026-06-27T21:39:22Z",
+  "source": "arxiv",
+  "item_count": 59,
+  "items": [
+    {
+      "id": "2606.25532",
+      "source": "arxiv",
+      "title": "Agentic evolution of physically constrained foundation models",
+      "url": "https://arxiv.org/abs/2606.25532",
+      "authors": [
+        "Jiangwei Zhang",
+        "Wen Sun",
+        "Chong Wang",
+        "Shiyao Li"
+      ],
+      "summary": "Artificial intelligence increasingly drives automated scientific discovery, yet contemporary generalist agents lack physical grounding, frequently hallucinating hardware-incompatible designs. Here, we present a physically grounded, multi-agent discovery engine that autonomously architects hardware-compliant computing systems. Anchored by an Evolutionary Knowledge Graph structuring past scientific innovations, the framework extracts an \"algorithmic Chain-of-Thought\" to transform blind stochastic search into directed structural evolution. Applied to the extreme testbed of foundation model deploy",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomous",
+        "chain-of-thought"
+      ]
+    },
+    {
+      "id": "2606.27154",
+      "source": "arxiv",
+      "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+      "url": "https://arxiv.org/abs/2606.27154",
+      "authors": [
+        "Aoyang Fang",
+        "Yifan Yang",
+        "Jin'ao Shang",
+        "Qisheng Lu"
+      ],
+      "summary": "Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from caus",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
+        "reasoning",
+        "llm",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.26575",
+      "source": "arxiv",
+      "title": "IDEA: Insensitive to Dynamics Mismatch via Effect Alignment for Sim-to-Real Transfer in Multi-Agent Control",
+      "url": "https://arxiv.org/abs/2606.26575",
+      "authors": [
+        "Chenlong Liu",
+        "Zhuohui Zhang",
+        "Xinyan Chen",
+        "Zhipeng Wang"
+      ],
+      "summary": "Complex multi-agent control tasks remain challenging for traditional rule-based and model-based approaches, motivating the adoption of learning-based methods. However, learning-based methods often struggle with sim-to-real transfer because they rely on accurate dynamics modeling or system identification and learn policies in low-level control spaces that are highly sensitive to dynamics mismatch, making them costly and fragile in complex environments. To address this issue, we propose a sim-to-real method for multi-agent control, which is insensitive to dynamics mismatch via effect alignment. ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-06-25",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "alignment",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.25358",
+      "source": "arxiv",
+      "title": "Agentic Knowledge Tracing: A Multi-Agent LLM Architecture for Stealth Assessment of Financial Literacy in Serious Games",
+      "url": "https://arxiv.org/abs/2606.25358",
+      "authors": [
+        "Gabriel Santos",
+        "Rita Julia",
+        "Marcelo Nascimento"
+      ],
+      "summary": "Assessing financial literacy during gameplay without disrupting the learning experience remains a key challenge in serious games for education. We present the Agentic BKT pipeline, a multi-agent large language model architecture for stealth assessment of financial competencies from open-ended gameplay events. The pipeline processes events from a 2D platformer serious game aligned with the OECD/INFE financial literacy framework through four phases: (1) the game captures every player decision as a structured event log; (2) an LLM event classifier labels each action on a four-point rubric validat",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26294",
+      "source": "arxiv",
+      "title": "The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators",
+      "url": "https://arxiv.org/abs/2606.26294",
+      "authors": [
+        "Alex Iacob",
+        "Andrej Jovanović",
+        "William F. Shen",
+        "Daniel Burkhardt"
+      ],
+      "summary": "Self-improving agents are state-of-the-art (SOTA) on agentic coding benchmarks and have recently been extended to general domains. However, their search methods generally assume a stationary evaluation criterion: a fixed verifier, benchmark, or labeled dataset that remains valid as the agent improves. This ignores a central feature of evolution: species adapt as their environments change with them. We aim to bring the same principle to recursive self-improvement, making evaluation part of the improvement loop and opening search to evolving evaluators, adversarial objectives, and dynamic utilit",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "self-improving",
+        "agent",
+        "agentic"
+      ]
+    },
+    {
+      "id": "2606.25899",
+      "source": "arxiv",
+      "title": "Manipulation Is Task-Dependent: A Multi-Axis, Multi-Environment Evaluation of Frontier LLMs",
+      "url": "https://arxiv.org/abs/2606.25899",
+      "authors": [
+        "Adeeb Zaman",
+        "Erik Nordby",
+        "Fred Heiding"
+      ],
+      "summary": "We evaluate manipulative behavior in six frontier language models across six environments, ranging from negotiation tasks to agentic workflows, resulting in 13{,}590 individual scenarios. Manipulation rates are measured across three axes: framing (mandate honesty or permit manipulation), incentive structure (from no incentives to substantial ones), and task difficulty. Existing benchmarks typically vary a single axis within a single environment, an approach our results show is insufficient. We rank models by manipulation rate and find Spearman rank correlations across environments average $ρ= ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.23991",
+      "source": "arxiv",
+      "title": "Critique of Agent Model",
+      "url": "https://arxiv.org/abs/2606.23991",
+      "authors": [
+        "Eric Xing",
+        "Mingkai Deng",
+        "Jinyu Hou"
+      ],
+      "summary": "What is an agent? What constitutes agency? With the rise of Large Language Model (LLM) systems marketed as ``coding agents'', ``AI co-scientists'', and other ``agentic\" tools that promise to drive up productivity, and at the same time, ``existential\" concerns such as AI escaping human control with destructive power under a speculative ``machine agency\" against humans, it has become essential to clarify where automation ends and agency begins, both for building capable systems and for understanding whether and what to fear. Drawing on Descartes' grounding of agency in independent thought, and o",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model",
+        "automation"
+      ]
+    },
+    {
+      "id": "2606.23664",
+      "source": "arxiv",
+      "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+      "url": "https://arxiv.org/abs/2606.23664",
+      "authors": [
+        "Juyang Bai",
+        "Laixi Shi"
+      ],
+      "summary": "Multi-agent systems (MAS) offer a scalable path forward for agentic AI, comprising multiple LLM-based agents, each assigned a system prompt and a position within a workflow that governs inter-agent coordination and output aggregation. System prompts thus form a critical and accessible optimization surface: they specify agents' roles and behaviors, enabling system-level improvements without model finetuning. Although prompt optimization has shown substantial potential for single LLMs, extending it to MAS poses distinct challenges, notably an exponentially growing search space. It remains unclea",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "llm"
+      ]
+    },
+    {
+      "id": "2606.22844",
+      "source": "arxiv",
+      "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+      "url": "https://arxiv.org/abs/2606.22844",
+      "authors": [
+        "Wei Yang",
+        "Bryce Kan",
+        "Shixuan Li",
+        "Li Li"
+      ],
+      "summary": "Long-term memory has become increasingly important for LLM agents that operate across extended interactions and evolving task contexts. Recent memory systems have made past experiences more persistent, compact, and retrievable, but retrieval alone does not ensure that a memory provides valid evidence for the current query. When experiences are compressed into reusable fragments, memories from different situations may appear equally relevant if they involve recurring entities or user states. We refer to this failure as context collapse: memories lose the surrounding context needed to judge whet",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.27233",
+      "source": "arxiv",
+      "title": "Bridging Talk and Thought: Understanding Dialogue Dynamics Across Collaborative Problem-Solving Contexts",
+      "url": "https://arxiv.org/abs/2606.27233",
+      "authors": [
+        "Zhengyuan Liu",
+        "Stella Xin Yin",
+        "Min-Yen Kan",
+        "Nancy F. Chen"
+      ],
+      "summary": "We present a conceptual framework for analyzing dialogue in collaborative problem-solving contexts, with an emphasis on the emerging dynamics of human-AI and multi-agent collaboration. As intelligent systems become active agents capable of autonomous reasoning and strategic cooperation, understanding the dialogic interaction during collaborative problem solving is increasingly important for optimizing and evaluating such partnerships. Our framework addresses key limitations in current analytical approaches through a hierarchical two-layer coding scheme that integrates cognitive and non-cogniti",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "2606.27009",
+      "source": "arxiv",
+      "title": "Semantic Early-Stopping for Iterative LLM Agent Loops",
+      "url": "https://arxiv.org/abs/2606.27009",
+      "authors": [
+        "Sahil Shrivastava"
+      ],
+      "summary": "Multi-agent large language model (LLM) loops, for example a Writer that drafts and a Critic that revises, are almost always terminated by a fixed iteration cap (max_iterations). This is a syntactic kill-switch: it is blind to whether the answer is still improving, so it over-spends tokens on easy inputs and truncates hard ones. We study semantic early-stopping: the loop halts when consecutive draft embeddings stop changing in meaning (cosine distance with a patience window) and the answer's measured quality stops improving. Our work makes three contributions. First, an honest theoretical footi",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.23797",
+      "source": "arxiv",
+      "title": "From Task-Guided Conversational Graphs to Goal-Oriented Dialogue Runtimes",
+      "url": "https://arxiv.org/abs/2606.23797",
+      "authors": [
+        "Mariano Garralda-Barrio"
+      ],
+      "summary": "Graph and multi-agent orchestration frameworks make production large language model (LLM) workflows practical, but they do not by themselves solve conversational continuity when users maintain several interdependent objectives. This conceptual systems paper focuses on the high-complexity end of that design space, where goals can be suspended, resumed, revised, and invalidated by actions in other goals. We introduce the Goal-Oriented Dialogue Runtime (GODR), a framework-neutral design pattern that treats goals, task frames, lifecycle state, invalidation rules, and resumption contracts as first-",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.27251",
+      "source": "arxiv",
+      "title": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+      "url": "https://arxiv.org/abs/2606.27251",
+      "authors": [
+        "Junhao Shi",
+        "Zezheng Huai",
+        "Siyin Wang",
+        "Jia Chen"
+      ],
+      "summary": "Building persistent embodied agents in unstructured environments demands unified orchestration of heterogeneous tools spanning both cyber (APIs, IoT) and physical (manipulation, navigation) domains, coupled with autonomous recovery from physical failures that inevitably arise over extended operation. Existing systems treat these as separate problems: VLM-based planners lack a unified cyber-physical action space, agent frameworks accumulate unbounded context that degrades temporal coherence, and VLA policies execute open-loop without detecting their own failures. We argue that persistent autono",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "autonomy",
+        "embodied"
+      ]
+    },
+    {
+      "id": "2606.27128",
+      "source": "arxiv",
+      "title": "FlameVQA: A Physically-Grounded UAV Wildfire VQA Benchmark with Radiometric Thermal Supervision",
+      "url": "https://arxiv.org/abs/2606.27128",
+      "authors": [
+        "Mobin Habibpour",
+        "John Spodnik",
+        "Niloufar Alipour Talemi",
+        "Fatemeh Afghah"
+      ],
+      "summary": "Wildfire monitoring from UAVs requires reliable reasoning over complex aerial scenes, where smoke, scale variation, and occlusions often limit RGB-only interpretation. We introduce FlameVQA, a multiple-choice visual question answering benchmark for UAV-based wildfire intelligence built on FLAME 3, leveraging paired RGB imagery and radiometric thermal TIFFs for temperature-grounded, safety-critical reasoning. FlameVQA includes 34 multiple-choice questions per image spanning six operational capability groups, covering tasks such as detection, localization, distribution/coverage estimation, cross",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-06-25",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "interpret",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.27123",
+      "source": "arxiv",
+      "title": "Proposal-Conditioned Latent Diffusion for Closed-Loop Traffic Scenario Generation",
+      "url": "https://arxiv.org/abs/2606.27123",
+      "authors": [
+        "Shubham Vaijanath Phoolari",
+        "Aleyna Kara",
+        "Christoph Lauer",
+        "Steven Peters"
+      ],
+      "summary": "Closed-loop traffic simulation remains challenging because it must generate interactive multi-agent behaviors that are scene-consistent and controllable throughout rollout. Prior diffusion-based approaches achieve strong realism, but their computational cost can hinder deployment in time-constrained replanning loops for autonomous vehicle planning and simulation. We present a diffusion-based scenario generation framework conditioned on instance-centric scene context and multimodal proposal priors, with optional test-time guidance for shaping safety-critical behaviors. A compact action-latent r",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-06-25",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "planning"
+      ]
+    },
+    {
+      "id": "2606.25334",
+      "source": "arxiv",
+      "title": "Bridging the Post-discharge Gap: A Traceable Multi-agent Framework for Safe and Continuous Care",
+      "url": "https://arxiv.org/abs/2606.25334",
+      "authors": [
+        "Runwei Guan",
+        "Yi Zhou",
+        "Heyi Lin",
+        "Jinjing Zhu"
+      ],
+      "summary": "Post-discharge clinical follow-up is critical for maintaining continuity of care and mitigating long-term health risks. However, traditional follow-up paradigms suffer from shortage of health workforce, fragmented patient histories, and information silos across clinical departments. While large language models have demonstrated potential in medical question-answering, their deployment in continuous care is hindered by hallucination risks and a fundamental inability to reason over longitudinal, patient-specific constraints. Here we present Healink, a memory-enhanced multi-agent framework to sup",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.23585",
+      "source": "arxiv",
+      "title": "Decentralized Autonomous Traffic Management through Corridor Networks",
+      "url": "https://arxiv.org/abs/2606.23585",
+      "authors": [
+        "Jasmine Jerry Aloor",
+        "Aadarsh Govada",
+        "Hamsa Balakrishnan"
+      ],
+      "summary": "As autonomous aircraft are introduced at scale and traffic density increases, centralized management becomes insufficient to coordinate the large numbers of crewed and uncrewed aircraft. Dedicated Advanced Air Mobility (AAM) corridors have therefore been proposed for organizing high-density autonomous traffic flows. The desire to scalably provide autonomous aircraft flexibility in trajectory planning motivates the development of decentralized approaches to traffic management in AAM corridors.\n  In this work, we extend a multi-agent reinforcement learning (MARL) approach to address the challeng",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "planning"
+      ]
+    },
+    {
+      "id": "2606.23764",
+      "source": "arxiv",
+      "title": "Emergent Relational Order in LLM Agent Societies: From Collective Affect to Authority Stratification",
+      "url": "https://arxiv.org/abs/2606.23764",
+      "authors": [
+        "Zhiyuan Ji",
+        "Xinyu Chen",
+        "Ziqi Dai",
+        "Shiyun Tang"
+      ],
+      "summary": "Fei Xiaotong's Differential Order Pattern characterizes rural society as egocentric and relationally graded, with cooperation attenuating over social distance. Although often treated as culturally specific, its mechanistic basis remains under-operationalized, and prior LLM-based simulations have mainly addressed short-term coordination rather than long-horizon social structure. We propose CAREB-MAS, a multi-agent framework grounded in Affect Control Theory, Social Identity Theory, and Durkheimian collective affect. Agents reason through an emotion-ethics-belief chain and maintain dynamically e",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "emergent"
+      ]
+    },
+    {
+      "id": "2606.27330",
+      "source": "arxiv",
+      "title": "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning",
+      "url": "https://arxiv.org/abs/2606.27330",
+      "authors": [
+        "Tianyi Men",
+        "Zhuoran Jin",
+        "Pengfei Cao",
+        "Yubo Chen"
+      ],
+      "summary": "Multimodal web agents can assist humans in operating repetitive GUI tasks, where effective task planning is essential for decomposing complex tasks into executable actions. While small open source MLLMs are cost efficient and privacy preserving compared with commercial large models, they suffer from weak planning and limited cross website generalization. To address these limitations, we introduce the planning experience exploration and utilization (PEEU) method, which autonomously explores environments to discover experiences and utilizes hindsight experience to synthesize strictly aligned, hi",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "planning",
+        "llm"
+      ]
+    },
+    {
+      "id": "2606.27288",
+      "source": "arxiv",
+      "title": "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
+      "url": "https://arxiv.org/abs/2606.27288",
+      "authors": [
+        "Josef Chen"
+      ],
+      "summary": "Multi-model LLM systems such as routing, voting, cascades, fusion, and mixture-of-agents are used to beat single-model accuracy. We show that their gain is capped by a quantity the field rarely reports. For any policy whose output is one member model answer, accuracy cannot exceed one minus beta, where beta is the rate at which every model is wrong on the same query. In contrast, the usual diagnostic, average pairwise error correlation rho, cannot identify beta: error laws with identical marginals and pairwise correlations can have different all-wrong rates. A Clopper-Pearson bound on beta giv",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "agent",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.27136",
+      "source": "arxiv",
+      "title": "Joint Learning of Experiential Rules and Policies for Large Language Model Agents",
+      "url": "https://arxiv.org/abs/2606.27136",
+      "authors": [
+        "Shicheng Ye",
+        "Chao Yu"
+      ],
+      "summary": "For LLM agents in multi-step interactive environments, a key challenge is to make effective use of accumulated interaction experience. Existing work has typically separated two uses of such experience: keeping it outside the model as natural-language rules for later prompting, or using trajectories and feedback to update the model parameters. The former is easy to interpret but can fall out of sync with the evolving policy; the latter improves the policy more broadly but provides only limited correction for local mistakes in sparse-reward settings. We present Joint Learning of Experiential Rul",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "agent",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26964",
+      "source": "arxiv",
+      "title": "Look-Before-Move: Narrative-Grounded World Visual Attention in Dynamic 3D Story Worlds",
+      "url": "https://arxiv.org/abs/2606.26964",
+      "authors": [
+        "Jiaming Bian",
+        "Bingliang Li",
+        "Yuehao Wu",
+        "Pichao Wang"
+      ],
+      "summary": "As embodied AI and world models increasingly operate in dynamic 3D environments, visual perception must move beyond passively interpreting given observations toward actively deciding what to observe. We study this problem through camera planning in dynamic 3D story worlds, where the camera must not only generate smooth motion, but also decide what visual evidence should be acquired before it moves. We formulate this capability as Narrative-Grounded World Visual Attention, where the camera acts as an embodied observer that determines what to observe, how to compose the observation, and how to s",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "world model",
+        "planning",
+        "interpret",
+        "embodied"
+      ]
+    },
+    {
+      "id": "2606.27103",
+      "source": "arxiv",
+      "title": "The Riddle Riddle: Testing Flexible Reasoning in Large Language Models and Humans",
+      "url": "https://arxiv.org/abs/2606.27103",
+      "authors": [
+        "Bella Fascendini",
+        "Kathryn McGregor",
+        "Max D. Gupta",
+        "Thomas L. Griffiths"
+      ],
+      "summary": "Humans flexibly adapt their reasoning strategies to the requirements of a given problem. Large language models (LLMs) have performed well on many cognitive tasks, however, it is unclear whether this accuracy is a result of pattern matching from training data or flexible reasoning. Here, we introduce a novel paradigm to test this question: the riddle riddle paradigm. Riddle riddles are word problems written to mimic popular riddles, but altered so their answers only require literal interpretations. Identifying correct answers requires looking past the structure of each question and flexibly app",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "reasoning",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.25978",
+      "source": "arxiv",
+      "title": "Multi-Agent Goal Recognition with Team- and Goal-Conditioned Reinforcement Learning and Factorized Branch-and-Bound",
+      "url": "https://arxiv.org/abs/2606.25978",
+      "authors": [
+        "Thiago Thomas",
+        "Gabriel de Oliveira Ramos",
+        "Felipe Meneguzzi"
+      ],
+      "summary": "Multi-agent goal recognition asks an observer to jointly infer which agents act together and what each team is trying to achieve, so the hypothesis space grows combinatorially with the number of team partitions and goals per team. Real applications such as drone surveillance and collaborative robotics expose only the agents' trajectory, which forces the observer to rank team-goal hypotheses from behavior alone. Multi-Agent Goal Recognition with Branch-and-Bound (MAGR-BB) addresses this setting with a shared team- and goal-conditioned policy used as the scoring model inside a factorized branch-",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "robot",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2606.25073",
+      "source": "arxiv",
+      "title": "GCT-MARL: Graph-Based Contrastive Transfer for Sample-Efficient Cooperative Multi-Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2606.25073",
+      "authors": [
+        "Animesh Animesh",
+        "Satheesh K Perepu",
+        "Kaushik Dey"
+      ],
+      "summary": "In cooperative multi-agent reinforcement learning (MARL), from a deployment perspective, it is challenging and expensive to train agents from scratch for each new environment or task. In this work, we propose GCT-MARL, a transfer learning framework that builds on the multi-view graph contrastive backbone of MAIL and augments it with a per-view, adaptively weighted alignment loss and a two-phase training protocol specifically designed for transfer across populations of varying sizes and compositions. We empirically demonstrate that the proposed framework markedly accelerates convergence on the ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-23",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "alignment"
+      ]
+    },
+    {
+      "id": "2606.23760",
+      "source": "arxiv",
+      "title": "Engineering Reliable Autonomous Systems: Challenges and Solutions",
+      "url": "https://arxiv.org/abs/2606.23760",
+      "authors": [
+        "Marie Farrell",
+        "Matt Luckcuck",
+        "Angelo Ferrando",
+        "Rafael C. Cardoso"
+      ],
+      "summary": "Engineering reliable autonomous systems is an important and growing topic in computer science. As autonomous systems become more prevalent, easy-to-use techniques for building them reliably are increasingly important.\n  This workshop report captures and expands on the discussions at the Lorentz Center Workshop \"Engineering Reliable Autonomous Systems\" (ERAS), held from 10 to 14 June 2024. The workshop was co-organised by the organisers of the Workshop on Formal Methods for Autonomous Systems (FMAS) and the Workshop on Agents and Robots for reliable Engineered Autonomy (AREA). It brought togeth",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 5.5,
+      "raw_score": 11,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "autonomy",
+        "robot"
+      ]
+    },
+    {
+      "id": "2606.27268",
+      "source": "arxiv",
+      "title": "E-TTS: A New Embodied Test-Time Scaling Framework for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2606.27268",
+      "authors": [
+        "Wen Ye",
+        "Peiyan Li",
+        "Tingyu Yuan",
+        "Yuan Xu"
+      ],
+      "summary": "Recently, a few works have made early attempts to study test-time scaling for embodied tasks. However, two major challenges remain unsolved: (1) reasoning can effectively improve the performance of the policy, but its scaling mechanism has seldom been studied; (2) historical information is essential, as embodied tasks are inherently long-horizon and sequential, making sole reliance on current observations for action scaling inadequate due to the lack of historical context utilization. To address these challenges, we introduce E-TTS, a modular and plug-and-play Embodied Test-Time Scaling framew",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "reasoning",
+        "embodied",
+        "robot",
+        "scaling"
+      ]
+    },
+    {
+      "id": "2606.27188",
+      "source": "arxiv",
+      "title": "A Process Harness for Uplifting Legacy Workflows to Agentic BPM: Design and Realization in CUGA FLO",
+      "url": "https://arxiv.org/abs/2606.27188",
+      "authors": [
+        "Fabiana Fournier",
+        "Lior Limonad"
+      ],
+      "summary": "We introduce the process harness, a new mechanism for uplifting legacy workflows into Agentic Business Process Management (Agentic BPM) without replacing the underlying workflow engine. A process harness places a policy-governed agentic layer around a deterministic workflow engine, intercepting designated control points to contribute reasoning, adaptation, and oversight while the engine retains structural authority over the process. To define the process harness rigorously, we develop the Task-Decision-Flow (TDF) model, specifying both its data schema and its execution semantics. TDF decompose",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "2606.26969",
+      "source": "arxiv",
+      "title": "Einstein World Models",
+      "url": "https://arxiv.org/abs/2606.26969",
+      "authors": [
+        "Munachiso Samuel Nwadike",
+        "Zangir Iklassov",
+        "Ali Mekky",
+        "Zayd M. Kawakibi Zuhri"
+      ],
+      "summary": "Does intelligence require the ability to reason about phenomena beyond direct experience? It is natural to suspect that some complex thought cannot be captured through language alone. However, of particular concern to this work, is whether visualising counterfactual events can complement language as a mechanism for complex thought. We ask whether LLMs can be trained to utilise such visualisation mechanisms, in a way that benefits their reasoning abilities. Motivated by this question, we propose Einstein World Models. EWMs are a blueprint for LLM-based reasoning systems that place visual-tempor",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "world model",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
+      "id": "2606.27025",
+      "source": "arxiv",
+      "title": "Improving General Role-Playing Agents via Psychology-Grounded Reasoning and Role-Aware Policy Optimization",
+      "url": "https://arxiv.org/abs/2606.27025",
+      "authors": [
+        "Zhenhua Xu",
+        "Dongsheng Chen",
+        "Jian Li",
+        "Yitong Lin"
+      ],
+      "summary": "Building general-purpose role-playing agents that faithfully portray any character from a natural-language profile remains challenging. The dominant paradigm -- supervised fine-tuning -- encourages behavioral mimicry without deep, human-like internal thought processes, resulting in poor out-of-distribution generalization. Therefore, we propose \\textbf{Psy-CoT}, a psychology-grounded chain-of-thought framework that decomposes pre-response reasoning into three role-specific steps -- \\emph{Interaction Perception}, \\emph{Psychological Empathy}, and \\emph{Logical Construction} -- so that the model ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "chain-of-thought",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.26686",
+      "source": "arxiv",
+      "title": "Do Safety Guardrails Need to Reason? LeanGuard: A Fast and Light Approach for Robust Moderation",
+      "url": "https://arxiv.org/abs/2606.26686",
+      "authors": [
+        "Dongbin Na"
+      ],
+      "summary": "In order to screen a prompt or a response, the recent guardrail methods generate a chain-of-thought (CoT) before they issue a verdict. This design follows a common belief that step-by-step reasoning improves a decision. However, CoT also makes the guard heavy and slow, because the model must generate many tokens before it decides. This may not match how guardrails are actually deployed. A guardrail sometimes should not be heavy and slow, and it often runs on-device, for example on an embodied robot. In this paper, we pose a question whether a safety guardrail really needs to reason. To answer ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "reasoning",
+        "chain-of-thought",
+        "embodied",
+        "robot"
+      ]
+    },
+    {
+      "id": "2606.27348",
+      "source": "arxiv",
+      "title": "Bridging Performance and Generalization in Reinforcement Learning for Agile Flight",
+      "url": "https://arxiv.org/abs/2606.27348",
+      "authors": [
+        "Jonathan Green",
+        "Jiaxu Xing",
+        "Nico Messikommer",
+        "Angel Romero"
+      ],
+      "summary": "Autonomous drone racing is a fundamentally challenging regime for autonomous aerial robots, requiring time-optimal control while operating under persistent actuation saturation. While reinforcement learning (RL) has achieved human-level performance in this domain, current methods fail to generalize; policies trained on specific environments often crash immediately in unseen configurations. This failure reflects the intrinsic difficulty of zero-shot generalization in agile flight, arising from high-dimensional task variation and the tight coupling between safety and performance at high speeds. ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-06-25",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "agi",
+        "autonomous",
+        "robot"
+      ]
+    },
+    {
+      "id": "2606.26858",
+      "source": "arxiv",
+      "title": "PlanRL: A Trajectory Planning Architecture for Reinforcement Learning-based Driving Experts",
+      "url": "https://arxiv.org/abs/2606.26858",
+      "authors": [
+        "Joonhee Lim",
+        "Yongjae Lee",
+        "Jangho Shin",
+        "Dongsuk Kum"
+      ],
+      "summary": "Reinforcement learning (RL) has become a prominent framework for developing driving experts in autonomous vehicles. However, most existing RL-based experts are designed to output direct control commands (e.g., throttle, steering), which suffer from a lack of interpretability, high spatial complexity in learning road geometries, and poor compatibility with modern end-to-end planning architectures. To address these limitations, we propose a novel trajectory planning architecture for RL driving experts that integrates an RL policy with a polynomial-based trajectory planner. By employing a Frenet-",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-06-25",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "autonomous",
+        "planning",
+        "interpretability",
+        "interpret"
+      ]
+    },
+    {
+      "id": "2606.26203",
+      "source": "arxiv",
+      "title": "Agentic Analysis for Agentic Infrastructure: An LLM-Powered Pipeline for Comparative Governance of DAO and Corporate AI Protocols",
+      "url": "https://arxiv.org/abs/2606.26203",
+      "authors": [
+        "Yutian Wang",
+        "Luyao Zhang"
+      ],
+      "summary": "As AI agent protocols proliferate, the governance structures shaping their interoperability standards remain empirically underexamined. We introduce an LLM-powered comparative pipeline for large-scale governance discourse analysis, integrating automated annotation, neural topic modeling, and multi-layer network analysis to study socio-technical power structures at scale. We validate it on two contrasting standards for agent interoperability: ERC-8004 (permissionless, on-chain) and Google A2A (corporate-led). Analyzing 4,323 governance participation records, we combine LLM-assisted coding, topi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm"
+      ]
+    },
+    {
+      "id": "2606.22263",
+      "source": "arxiv",
+      "title": "Revelio: Cost-Efficient Agentic Memory Safety Vulnerability Detection For Repository-Scale Codebases",
+      "url": "https://arxiv.org/abs/2606.22263",
+      "authors": [
+        "Yiwei Hou",
+        "Hao Wang",
+        "Muxi Lyu",
+        "Marius Momeu"
+      ],
+      "summary": "Memory safety vulnerabilities remain a significant threat even for projects with extensive fuzzing and manual auditing. Recent results suggest that large language models hold great promise for detecting such vulnerabilities, but they are unreliable, at risk of hallucination, and challenging to scale to repository-size codebases. This paper presents Revelio, a cost-efficient end-to-end agentic framework for memory-safety vulnerability discovery. Revelio addresses the problem of hallucination by generating an executable Proof-of-Vulnerability, which is checked with a deterministic sanitizer. It ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-20",
+      "score": 5.0,
+      "raw_score": 10,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.27180",
+      "source": "arxiv",
+      "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
+      "url": "https://arxiv.org/abs/2606.27180",
+      "authors": [
+        "Henrik Müller",
+        "Daniel Kudenko"
+      ],
+      "summary": "Sparse rewards are inherently challenging for reinforcement learning agents as they lack intermediate feedback to guide exploration and to correctly attribute the sparse success rewards to relevant parts of the trajectory. Naive reward shaping can induce reward hacking, yielding policies that exploit auxiliary signals instead of solving the intended task. Potential-based reward shaping (PBRS) guarantees preservation of the optimal policy set, but requires the definition of a heuristic potential function over the state space. In this work, we introduce the VLM-guided PBRS framework VLM-PBRS tha",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "agent",
+        "reward hacking",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.27161",
+      "source": "arxiv",
+      "title": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference",
+      "url": "https://arxiv.org/abs/2606.27161",
+      "authors": [
+        "Tinghao Wang",
+        "Yichen Guo",
+        "Rui Huang",
+        "Zheng Lu"
+      ],
+      "summary": "Multimodal large language models (MLLMs) have achieved strong multimodal reasoning capabilities, but their efficiency is limited by the large number of visual tokens, which introduces substantial computational overhead. Visual token pruning offers a natural solution, yet existing methods are imperfect: attention-based criteria tend to retain redundant tokens, while diversity-based criteria are often agnostic to user instructions. Even methods that combine multiple criteria still lack a principled formulation of the intrinsic objective of token pruning. In this paper, we revisit visual token pr",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.27047",
+      "source": "arxiv",
+      "title": "NuclearQAv2: A Structured Benchmark for Evaluating Domain-Science Competence in Large Language Models",
+      "url": "https://arxiv.org/abs/2606.27047",
+      "authors": [
+        "Henry Shaowu Yuchi",
+        "Michal Kucer",
+        "Benjamin H. Sims",
+        "Selma Peterson"
+      ],
+      "summary": "Large language models (LLMs) have demonstrated strong performance across a wide range of tasks, but ensuring their reliability in highly technical domains remains a significant challenge. In nuclear engineering, problem solving often requires not only factual knowledge but also quantitative reasoning and conceptual understanding. To address the need for systematic evaluation in this domain, we introduce NuclearQAv2, a benchmark for assessing LLMs on nuclear engineering knowledge. The benchmark comprises approximately 1,240 question-answer pairs spanning three categories: boolean, numeric, and ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26986",
+      "source": "arxiv",
+      "title": "ReaORE: Reasoning-Guided Progressive Open Relation Extraction Empowered by Large Reasoning Models",
+      "url": "https://arxiv.org/abs/2606.26986",
+      "authors": [
+        "Xin Lin",
+        "Liang Zhang",
+        "Guoqi Ma",
+        "Hongyao Tu"
+      ],
+      "summary": "Open Relation Extraction (OpenRE) requires a model to extract unseen relations between head and tail entities from unstructured text for real-world applications. The core challenge of OpenRE lies in achieving reliable generalization to unseen relation types. Current OpenRE approaches either employ clustering techniques, which cannot generate relation labels and suffer from poor generalization, or rely on direct relation label generation via Large Language Models (LLMs), which lack sufficient discriminative capacity to distinguish easily confused relations. To address these limitations, we prop",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26997",
+      "source": "arxiv",
+      "title": "RolloutPipe: Overlapping Pipelined Rollout and Training in Disaggregated On-Policy LLM Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2606.26997",
+      "authors": [
+        "Rongjian Chen",
+        "Jianmin Hu",
+        "Kejiang Ye",
+        "Minxian Xu"
+      ],
+      "summary": "Large language model (LLM) post-training for reasoning increasingly relies on reinforcement learning with verifiable rewards (RLVR), where models learn from ground-truth feedback on mathematical, logical, and scientific tasks. To enable flexible resource allocation and support heterogeneous training setups, modern RLVR systems adopt disaggregated architectures that decouple rollout generation and policy training across independent GPU pools. However, existing synchronous on-policy GRPO (Group Relative Policy Optimization) RLVR systems finish an entire rollout before starting training, leaving ",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26875",
+      "source": "arxiv",
+      "title": "Information-Aware KV Cache Compression for Long Reasoning",
+      "url": "https://arxiv.org/abs/2606.26875",
+      "authors": [
+        "Jushi Kai",
+        "Zhuiri Xiao",
+        "Alexandra Birch",
+        "Zhouhan Lin"
+      ],
+      "summary": "Reasoning capability has advanced rapidly in large language models (LLMs), leading to an increasing size of key-value (KV) cache in both prefilling and decoding stages. Existing KV cache compression methods mainly rely on attention weights to estimate token importance. While attention effectively captures contextual relevance, it overlooks complementary information-theoretic signals related to predictive uncertainty and token informativeness. In this paper, we revisit token importance from a forward-looking perspective and introduce \\textit{Forward Influence}, a metric that measures how compre",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26698",
+      "source": "arxiv",
+      "title": "Beyond Logical Forms: LLM-Extracted Patterns for Fallacy Classification",
+      "url": "https://arxiv.org/abs/2606.26698",
+      "authors": [
+        "Eleni Papadopulos",
+        "Firoj Alam",
+        "Giovanni Da San Martino"
+      ],
+      "summary": "In today's fast-paced information era, logical fallacies, defined as defective patterns of reasoning, inevitably contribute to the growth of information disorder. However, often fallacies appear in nuanced forms that complicate automated classification. In this study, we investigate whether merging abstract logical structures with context-level linguistic cues proves beneficial for fallacy classification, developing a framework that inductively extracts such patterns from fallacious examples and their explanations using Large Language Models (LLMs). We evaluate the impact of these patterns acr",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26382",
+      "source": "arxiv",
+      "title": "Charting the Growth of Social-Physical HRI (spHRI): A Systematic Review Pipeline Augmented by Small Language Models",
+      "url": "https://arxiv.org/abs/2606.26382",
+      "authors": [
+        "Mayumi Mohan",
+        "Ju-Hung Chen",
+        "Alexis E. Block"
+      ],
+      "summary": "Social-physical human-robot interaction (spHRI) has grown rapidly across robotics, human-computer interaction, human-robot interaction, and haptics. Yet, fragmented terminology and inconsistent methodologies make systematic synthesis difficult. To support scalable review practices, we evaluated the extent to which small language models (SLMs; < 1.5B parameters) can assist with title and abstract screening for a large spHRI systematic review. While no SLMs matched human reviewers' performance, the models operated locally and screened papers orders of magnitude faster. The combined SLM ensemble ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-06-24",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "robot",
+        "robotics",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.24391",
+      "source": "arxiv",
+      "title": "Age of LLM: A Strategic 1v1 Benchmark for Reasoning, Diplomacy and Reliability of Large Language Models under Fog of War",
+      "url": "https://arxiv.org/abs/2606.24391",
+      "authors": [
+        "Arnaud Ricci"
+      ],
+      "summary": "We introduce Age of LLM, a turn-based 1v1 benchmark in which two LLMs face off on a 13x7 grid to destroy the enemy base. Three stressors are deliberate: fog of war, full diplomacy (messages, ceasefires, ultimatums; uranium kept secret), and a reliability dimension where every turn must follow a strict JSON schema and an illegal action is silently discarded. The engine is private and each match uses a fresh random map seed and opponent, mitigating the data contamination that affects public benchmarks. Models receive a (near) rule-only prompt with no build-order advice (two tactical seed phrases",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-23",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.23931",
+      "source": "arxiv",
+      "title": "Welfarist Control Design -- How to fulfill the societal mandate in multi-agent control?",
+      "url": "https://arxiv.org/abs/2606.23931",
+      "authors": [
+        "Sophie Hall",
+        "Kai Zhang",
+        "Ilia Shilov",
+        "Heinrich H. Nax"
+      ],
+      "summary": "At the core of most socio-technical systems lies a scarce resource that is allocated among agents: highway lanes, public transit, road space, water rights, energy access, grid capacity, user attention, pollution rights, etc. With further automation of the underlying allocation processes, control engineers are increasingly tasked to make decisive assumptions regarding what society wants. In practice to date, design choices are largely driven by industry norms and conventions rather than a result of conscientiously responsible and ethical design. In this paper, we look at tools available to cont",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "automation"
+      ]
+    },
+    {
+      "id": "2606.23158",
+      "source": "arxiv",
+      "title": "Decomposing Financial Market Dynamics via Mechanism Analysis in an Evolutionary Multi-Agent Simulation",
+      "url": "https://arxiv.org/abs/2606.23158",
+      "authors": [
+        "Zhibao Chen"
+      ],
+      "summary": "Evolutionary agent-based markets (ABMs) couple several mechanisms -- who reproduces, how price forms, how biased the agents are, how consensus propagates -- yet these are usually fixed by convention, so it is unclear which mechanism controls which emergent property. In a coevolving, endogenous-price simulator with 120 heterogeneous behavioral agents, we make four mechanisms pluggable and run matched 3x20-seed interventions. We find the levers are largely separable. (1) Selection -> diversity: a Quality-Diversity (QD/MAP-Elites) operator robustly raises strategy-mix entropy over truncation top-",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-22",
+      "score": 4.5,
+      "raw_score": 9,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "emergent"
+      ]
+    },
+    {
+      "id": "2606.27334",
+      "source": "arxiv",
+      "title": "Language-Based Digital Twins for Elderly Cognitive Assistance",
+      "url": "https://arxiv.org/abs/2606.27334",
+      "authors": [
+        "Mohammad Mehdi Hosseini",
+        "Mohammad H. Mahoor",
+        "Hiroko H. Dodge"
+      ],
+      "summary": "Digital twins have emerged as a promising paradigm for personalized healthcare, enabling modeling of individual behavior and health trajectories. In cognitive health, early detection of Mild Cognitive Impairment (MCI) remains challenging, where language and conversational patterns serve as non-invasive biomarkers. In this work, we propose a language-based digital twin framework that leverages large language models (LLMs) to mimic the conversational behavior of elderly individuals by incorporating stylometric cues and contextual metadata. To evaluate fidelity and cognitive consistency, we intro",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.0,
+      "raw_score": 8,
+      "matched_keywords": [
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.27018",
+      "source": "arxiv",
+      "title": "On-board Remote-Sensing Foundation Models for Unsupervised Change Detection of Disaster Events",
+      "url": "https://arxiv.org/abs/2606.27018",
+      "authors": [
+        "S. Ramírez-Gallego"
+      ],
+      "summary": "Remote Sensing Foundation Models (RSFMs) have emerged as a powerful alternative to supervised models for Earth Observation, allowing satellites to autonomously trigger high-resolution captures or adjust tasking parameters upon detecting an anomaly, thereby maximizing the utility of the mission's limited power and computational resources. RSFMs are versatile, unified encoders that optimize onboard storage for multiple orbital applications while ensuring high-fidelity feature extraction. In particular, unsupervised change detection with RSFMs offers a well-informed and transformative path for di",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.0,
+      "raw_score": 8,
+      "matched_keywords": [
+        "foundation model",
+        "autonomous",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.26981",
+      "source": "arxiv",
+      "title": "In-Context Model Predictive Generation: Open-Vocabulary Motion Synthesis from Language Models to Physics",
+      "url": "https://arxiv.org/abs/2606.26981",
+      "authors": [
+        "Xiaomeng Fu",
+        "Junfan Lin",
+        "Yang Liu",
+        "Yaowei Wang"
+      ],
+      "summary": "Synthesizing human motion from textual descriptions is essential for immersive digital applications, yet existing methods face a persistent trade-off between semantic fidelity and physical realism. Large language model (LLM)-based approaches can interpret diverse open-vocabulary instructions and compose high-level action plans, but they often generate motions that violate physical constraints. Physics-aware models improve realism through simulation or control, but they struggle with semantic complexity, fine-grained instructions, and novel concepts. To address this gap, we propose In-Context M",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.0,
+      "raw_score": 8,
+      "matched_keywords": [
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.27237",
+      "source": "arxiv",
+      "title": "LMs as Task-Specific Knowledge Bases: An Interpretability Analysis",
+      "url": "https://arxiv.org/abs/2606.27237",
+      "authors": [
+        "Amit Elhelo",
+        "Amir Globerson",
+        "Mor Geva"
+      ],
+      "summary": "Language models (LMs) capture large amounts of factual knowledge applicable to a wide range of tasks, motivating the view of their parameters as a knowledge base. An important property of knowledge bases is that different queries for the same fact return consistent results, drawing on a single source of truth. We investigate whether LMs satisfy this property through behavioral and mechanistic analyses. Our results suggest that they encode knowledge in a task-specific manner. Behaviorally, facts acquired on one task frequently fail to co-emerge on others during training. Parameter localization ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.0,
+      "raw_score": 8,
+      "matched_keywords": [
+        "interpretability",
+        "interpret",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26807",
+      "source": "arxiv",
+      "title": "KARLA: Knowledge-base Augmented Retrieval for Language Models",
+      "url": "https://arxiv.org/abs/2606.26807",
+      "authors": [
+        "Francois Crespin",
+        "Fabian M. Suchanek",
+        "Nils Holzenberger"
+      ],
+      "summary": "We propose a new method that allows an LLM to automatically pull in factual knowledge from a knowledge base during token generation. This means that (1)~factual knowledge in the LLM output can be updated without retraining the LLM, (2)~facts in the LLM output can be traced to the knowledge base for transparency and explainability, and (3)~smaller models can achieve the same factual accuracy as larger models. Our core idea is to train the model to produce special tokens that trigger a query to the knowledge base. Our experiments show that our method improves factual grounding in both short and ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 4.0,
+      "raw_score": 8,
+      "matched_keywords": [
+        "llm",
+        "language model",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "2606.26356",
+      "source": "arxiv",
+      "title": "Instruction Bleed: Cross-Module Interference in Prompt-Composed Agentic Systems",
+      "url": "https://arxiv.org/abs/2606.26356",
+      "authors": [
+        "Ching-Yu Lin",
+        "Yifan Liu"
+      ],
+      "summary": "Practitioners of prompt-composed agentic systems report a recurring failure mode: editing one prompt module silently shifts the behavior of others despite no shared variable or executable dependency. We formalize this as compositional behavioral leakage (CBL): interference between modules sharing a context window. CBL is enabled by architectural non-isolation: transformer self-attention provides no formal boundary between concatenated modules. We probe CBL on a deployed job-evaluation agent (Claude Sonnet 4.6, 144 trials) through a reusable three-channel protocol that perturbs non-focal module",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-24",
+      "score": 4.0,
+      "raw_score": 8,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "job"
+      ]
+    },
+    {
+      "id": "2606.22203",
+      "source": "arxiv",
+      "title": "When Is Emergent Consensus Real? A Measured Coupling Gain and a Validity Diagnostic for LLM Agent Societies",
+      "url": "https://arxiv.org/abs/2606.22203",
+      "authors": [
+        "Dongxu Yang"
+      ],
+      "summary": "LLM \"agent societies\" are studied via demonstrations of emergent consensus or polarization -- with no measurable control parameter, no theory of when each regime appears, and no test of whether an outcome is a genuine social dynamic or a model artifact. We introduce the coupling gain gamma, measured per-agent by counterfactually perturbing a neighbour's stated opinion. (i) gamma is stable and model-distinguishing -- across five frontier models it spans 0.15-0.43 (n=20, 95% CIs <= 0.025), paraphrase-invariant; social-neighbour gamma roughly equals numeric-anchor gamma, so gamma is evidence-coup",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-06-20",
+      "score": 4.0,
+      "raw_score": 8,
+      "matched_keywords": [
+        "agent",
+        "llm",
+        "emergent"
+      ]
+    },
+    {
+      "id": "2606.27287",
+      "source": "arxiv",
+      "title": "Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings",
+      "url": "https://arxiv.org/abs/2606.27287",
+      "authors": [
+        "Preet Baxi",
+        "Jiannan Xu",
+        "Jane Yi Jiang",
+        "Stefanus Jasin"
+      ],
+      "summary": "Large language models (LLMs) are increasingly used to screen and rank job applicants, creating incentives for candidates to strategically manipulate algorithmic hiring systems. We study prompt injection in automated résumé screening, defined as subtle self-promotional text that introduces no new qualifications but is designed to influence LLM evaluations. Using controlled experiments, we show that prompt injection reliably improves applicant rankings when résumé quality is homogeneous and few candidates inject. However, its effectiveness rapidly diminishes as more candidates inject, collapsing",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 3.5,
+      "raw_score": 7,
+      "matched_keywords": [
+        "llm",
+        "language model",
+        "job"
+      ]
+    },
+    {
+      "id": "2606.27282",
+      "source": "arxiv",
+      "title": "How Good Can Linear Models Be for Time-Series Forecasting?",
+      "url": "https://arxiv.org/abs/2606.27282",
+      "authors": [
+        "Lang Huang",
+        "Jinglue Xu",
+        "Luke Darlow"
+      ],
+      "summary": "Time-series forecasting research has been moving steadily toward larger architectures, from specialized transformers to general-purpose foundation models, on the assumption that capacity is what unlocks accuracy. We take the opposite position: most of the gap can be closed at far lower cost by tuning preprocessing rather than scaling models. We use Ridge regression as the testbed, since it has a closed-form solution and interpretable weights, which let the optimal hyperparameters be read off the search directly. We search over context length, local normalization, regularization, and augmentati",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 3.5,
+      "raw_score": 7,
+      "matched_keywords": [
+        "foundation model",
+        "interpret",
+        "scaling"
+      ]
+    },
+    {
+      "id": "2606.27242",
+      "source": "arxiv",
+      "title": "The Geometry of Updates: Fisher Alignment at Vocabulary Scale",
+      "url": "https://arxiv.org/abs/2606.27242",
+      "authors": [
+        "John Sweeney"
+      ],
+      "summary": "Training-free source selection for LLM families with shared vocabularies arises in scientific string domains such as SMILES, protein, and genomic sequences, where candidate corpora share a tokenizer but differ in prediction targets. This creates an activation-dark regime: representation-similarity metrics can be uninformative without assumptions about label-conditioned error geometry, while classical update-geometry metrics are computationally prohibitive at vocabulary scale. We show that, in a shared-output head setting, representation metrics (e.g., CKA) are non-identifiable for transfer; mo",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 3.5,
+      "raw_score": 7,
+      "matched_keywords": [
+        "alignment",
+        "llm"
+      ]
+    },
+    {
+      "id": "2606.27114",
+      "source": "arxiv",
+      "title": "Cross-Head Attention Uplift Network with Inverse Propensity Score under Unobserved Confounding",
+      "url": "https://arxiv.org/abs/2606.27114",
+      "authors": [
+        "Haoran Zhang",
+        "Chuanpu Li",
+        "Yuxin Fu",
+        "Bin Tong"
+      ],
+      "summary": "Uplift modeling, crucial for estimating individual treatment effects (ITE), faces dual challenges: flexibly leveraging inter-group similarity to enhance discriminative power and debiasing under unobserved confounding scenarios. In this paper, we propose the Cross-Head Attention Uplift Network (CHAUN) and Robust Adversarial Inverse Propensity Score (RA-IPS) method to address these limitations. CHAUN employs shared feature embeddings and cross-head attention mechanisms to dynamically integrate treatment-specific and control-specific representations, enhancing inter-group correlation modeling. Th",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 3.5,
+      "raw_score": 7,
+      "matched_keywords": [
+        "agi",
+        "rag"
+      ]
+    },
+    {
+      "id": "2606.26923",
+      "source": "arxiv",
+      "title": "GAVEL: Grounded Caption Error Verification and Localization",
+      "url": "https://arxiv.org/abs/2606.26923",
+      "authors": [
+        "Zixian Gao",
+        "Atsushi Hashimoto",
+        "Kuniaki Saito"
+      ],
+      "summary": "Vision-language models (VLMs) often produce hallucinated or inconsistent outputs, where text and images are not properly aligned. Addressing this issue requires not only detecting misalignment but also explaining the discrepancy and localizing its visual evidence. We introduce GAVEL (Grounded Caption Error Verification and Localization), a task that jointly addresses verification, explanation, and localization for image-text pairs. To support systematic evaluation, we also present a corresponding dataset and benchmark. We further train a supervised baseline on the human-annotated training spli",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 3.5,
+      "raw_score": 7,
+      "matched_keywords": [
+        "alignment",
+        "language model"
+      ]
+    },
+    {
+      "id": "2606.26859",
+      "source": "arxiv",
+      "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+      "url": "https://arxiv.org/abs/2606.26859",
+      "authors": [
+        "Changxin Lao",
+        "Fei Pan",
+        "Guozhuang Ma",
+        "Han Li"
+      ],
+      "summary": "Recommendation algorithm iteration is moving from an artisanal, engineer-bound process toward an industrialized research loop, but this transition remains blocked by a structural execution bottleneck: the idea-to-launch cycle still depends on human engineers to generate hypotheses, modify production code, launch A/B experiments, and attribute online results. Innovation therefore scales linearly with headcount rather than compounding with evidence, compute, and accumulated experimental knowledge. We present AgentX, a production-deployed multi-agent system that fundamentally restructures this pr",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-06-25",
+      "score": 3.5,
+      "raw_score": 7,
+      "matched_keywords": [
+        "agent",
+        "multi-agent"
+      ]
+    }
+  ]
+}

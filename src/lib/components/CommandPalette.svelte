@@ -192,8 +192,7 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.82);
     z-index: 9999;
     border: none;
     margin: 0;
@@ -209,11 +208,12 @@
     z-index: 10000;
     width: calc(100% - 2rem);
     max-width: 580px;
-    background: #0f172a;
-    border: 1px solid rgba(148, 163, 184, 0.15);
-    border-radius: 16px;
+    background: #0a0f23;
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-left: 3px solid rgba(245, 158, 11, 0.4);
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(245, 158, 11, 0.08);
+    box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.08);
   }
 
   .palette-input-wrap {
@@ -248,7 +248,7 @@
     font-size: 0.76rem;
     padding: 0.15rem 0.4rem;
     border: 1px solid rgba(148, 163, 184, 0.15);
-    border-radius: 4px;
+    border-radius: 0;
     color: #dde4ef;
     font-family: var(--font-primary);
     background: rgba(30, 41, 59, 0.5);
@@ -285,7 +285,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 0;
     transition: all 0.1s;
     text-align: left;
     font-family: inherit;
@@ -326,7 +326,7 @@
     padding: 0.1rem 0.35rem;
     background: rgba(16, 185, 129, 0.1);
     color: #10b981;
-    border-radius: 4px;
+    border-radius: 0;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;

@@ -33,7 +33,8 @@
   onMount(() => {
     if (browser && localStorage.getItem(LS_KEY)) {
       unlocked = true;
-      dispatch('unlock');
+      const storedEmail = localStorage.getItem(LS_KEY + '_email') || '';
+      dispatch('unlock', { email: storedEmail });
     }
   });
 
@@ -56,9 +57,12 @@
       });
       const data = await res.json().catch(() => ({}));
       if (res.status === 201 || res.status === 409) {
-        if (browser) localStorage.setItem(LS_KEY, '1');
+        if (browser) {
+          localStorage.setItem(LS_KEY, '1');
+          localStorage.setItem(LS_KEY + '_email', email);
+        }
         unlocked = true; // reveal
-        dispatch('unlock');
+        dispatch('unlock', { email });
       } else {
         state = 'error';
         errorMsg = data.error || 'Something went wrong. Try again.';
@@ -123,6 +127,7 @@
         <p class="gate-err" role="alert">{errorMsg}</p>
       {/if}
       <p class="gate-meta">Instant access to the checklist. Unsubscribe anytime. <a href="/policies">Privacy</a>.</p>
+      <slot name="gate-extra" />
     </div>
   </div>
 {/if}

@@ -511,11 +511,7 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #e2e8f0, #a0aec0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #f1f5f9;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -43,5 +43,5 @@ Thanks for reading, for thinking, and for venturing this far. Together, we stand
 [QR Code 1]: Explore: "AI Communities & Ethical Organizations"
 [QR Code 2]: Watch: "Voices in AI: Hope & Warning"
 [QR Code 3]: Read: "Art, Empathy, & the Human Edge"
-[QR Code 4]: Interactive: "Build Your AI Manifesto"
+[QR Code 4]: Interactive: "Build Your AI Playbook"
 [QR Code 5]: Listen: "Reflections from Leaders on AI's Next Decade"

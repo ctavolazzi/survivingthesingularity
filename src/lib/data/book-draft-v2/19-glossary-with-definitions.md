@@ -70,7 +70,7 @@ Robotic or AI-driven procedures with minimal human help. Scalpel steady as a roc
 Gargantuan datasets that reveal patterns if you can handle the sheer volume. Think of it as rummaging through the biggest digital attic ever.
 
 **Blockchain**
-A decentralized ledger for secure transactions. Often linked to crypto but has broader uses-like tracking supply chains or winning arguments at the dinner table about trustless tech.
+A distributed ledger for secure transactions. Often linked to crypto but has broader uses-like tracking supply chains or winning arguments at the dinner table about trustless tech.
 
 **Bumble**
 A dating app that puts women in control of the first message, occasionally overshadowed by a swarm of "hi?" texts from other corners of the net.

@@ -1,10 +1,29 @@
 <script>
-  // Wire this to your Stripe payment link when ready
-  const STRIPE_LINK = '#';
+  let loading = false;
+  let error = '';
+
+  async function startCheckout() {
+    if (loading) return;
+    loading = true;
+    error = '';
+    try {
+      const res = await fetch('/api/stripe-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      if (!res.ok) throw new Error('Checkout unavailable. Please try again.');
+      const { url, error: apiError } = await res.json();
+      if (apiError) throw new Error(apiError);
+      window.location.href = url;
+    } catch (err) {
+      error = err.message ?? 'Something went wrong. Please try again.';
+      loading = false;
+    }
+  }
 </script>
 
 <svelte:head>
-  <title>Early Access — Surviving the Singularity</title>
+  <title>Early Access. Surviving the Singularity</title>
   <meta name="description" content="$5 gets you instant access to the full blueprint, checklist, live research feed, book draft, and everything I ship next. Limited time pricing." />
 </svelte:head>
 
@@ -56,12 +75,20 @@
           </div>
         </div>
 
-        <a href={STRIPE_LINK} class="ea-buy-btn">
-          Get Early Access Now
-          <span class="ea-buy-icon" aria-hidden="true">
-            <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </a>
+        <button class="ea-buy-btn" on:click={startCheckout} disabled={loading}>
+          {#if loading}
+            Getting your access...
+          {:else}
+            Get Early Access Now
+            <span class="ea-buy-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          {/if}
+        </button>
+
+        {#if error}
+          <p class="ea-checkout-error">{error}</p>
+        {/if}
 
         <ul class="ea-quick-list">
           <li>
@@ -70,11 +97,11 @@
           </li>
           <li>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Full blueprint &mdash; all 8 chapters
+            Full blueprint, all 8 chapters
           </li>
           <li>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Live research signal feed
+            Research bundle: PDFs, papers, source docs
           </li>
           <li>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
@@ -105,15 +132,15 @@
         <div class="ea-img-cap">Physical Automation</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch11-spot.jpg" alt="Boston Dynamics Spot — Chapter 11" loading="lazy" />
+        <img src="/book-images/ch11-spot.jpg" alt="Boston Dynamics Spot, Chapter 11" loading="lazy" />
         <div class="ea-img-cap">Field Robotics</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch12-farmbot.jpg" alt="FarmBot garden automation — Chapter 12" loading="lazy" />
+        <img src="/book-images/ch12-farmbot.jpg" alt="FarmBot garden automation, Chapter 12" loading="lazy" />
         <div class="ea-img-cap">Food Autonomy</div>
       </div>
       <div class="ea-img-cell ea-img-wide">
-        <img src="/book-images/ch01-atlas.jpg" alt="Boston Dynamics Atlas — Chapter 1" loading="lazy" />
+        <img src="/book-images/ch01-atlas.jpg" alt="Boston Dynamics Atlas, Chapter 1" loading="lazy" />
         <div class="ea-img-cap">The New Era</div>
       </div>
     </div>
@@ -157,19 +184,6 @@
       <div class="ea-item">
         <div class="ea-item-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-        </div>
-        <div class="ea-item-body">
-          <div class="ea-item-name">Research Signal Feed</div>
-          <div class="ea-item-desc">Curated arXiv papers, robotics breakthroughs, AI policy signals. Updated automatically as the field moves.</div>
-          <span class="ea-tag ea-tag-live">Live now</span>
-        </div>
-      </div>
-
-      <div class="ea-item">
-        <div class="ea-item-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/>
           </svg>
         </div>
@@ -177,6 +191,19 @@
           <div class="ea-item-name">Book Draft</div>
           <div class="ea-item-desc">Read <em>Surviving the Singularity</em> as it's being written. See the thinking before it's polished.</div>
           <span class="ea-tag ea-tag-draft">In progress</span>
+        </div>
+      </div>
+
+      <div class="ea-item">
+        <div class="ea-item-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </div>
+        <div class="ea-item-body">
+          <div class="ea-item-name">Research Bundle</div>
+          <div class="ea-item-desc">The PDFs, papers, images, and source documents behind the book. Delivered to your email at purchase.</div>
+          <span class="ea-tag ea-tag-live">Included</span>
         </div>
       </div>
 
@@ -221,10 +248,15 @@
     </p>
     <h2 class="ea-bottom-heading">Five dollars.<br>Don't wait.</h2>
     <p class="ea-bottom-sub">This is the lowest the price will ever be. Everything I'm building, open to you now.</p>
-    <a href={STRIPE_LINK} class="ea-bottom-btn">
-      Get Early Access - $5
-      <svg width="16" height="16" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
+    <button class="ea-bottom-btn" on:click={startCheckout} disabled={loading}>
+      {loading ? 'Getting your access...' : 'Get Early Access - $5'}
+      {#if !loading}
+        <svg width="16" height="16" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {/if}
+    </button>
+    {#if error}
+      <p class="ea-checkout-error ea-checkout-error-center">{error}</p>
+    {/if}
     <p class="ea-bottom-fine">Secure checkout via Stripe. Instant access. <a href="/policies">Privacy</a>.</p>
   </div>
 </section>
@@ -265,6 +297,8 @@
   }
   @media (max-width: 768px) {
     .ea-hero-inner { grid-template-columns: 1fr; }
+    .ea-cover-col { order: 2; }
+    .ea-offer-col { order: 1; }
   }
 
   /* Book cover */
@@ -370,11 +404,21 @@
     transition: filter 0.2s ease, transform 0.2s var(--ease-spring), box-shadow 0.2s ease;
     margin-bottom: 16px;
   }
-  .ea-buy-btn:hover {
+  .ea-buy-btn:hover:not(:disabled) {
     filter: brightness(1.08); transform: translateY(-2px);
     box-shadow: 0 8px 32px rgba(245,158,11,0.45);
   }
-  .ea-buy-btn:active { transform: scale(0.98); }
+  .ea-buy-btn:active:not(:disabled) { transform: scale(0.98); }
+  .ea-buy-btn:disabled { opacity: 0.7; cursor: wait; }
+
+  .ea-checkout-error {
+    font-size: 0.82rem; color: #f87171;
+    background: rgba(239,68,68,0.08);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 8px; padding: 8px 12px;
+    margin: 0 0 12px;
+  }
+  .ea-checkout-error-center { text-align: center; }
   .ea-buy-icon {
     width: 26px; height: 26px; background: rgba(0,0,0,0.15);
     border-radius: 50%; display: flex; align-items: center; justify-content: center;
@@ -580,13 +624,15 @@
     padding: 17px 36px;
     background: var(--amber); color: #0a0a0a;
     font-size: 1.05rem; font-weight: 800;
-    border-radius: var(--r-pill); text-decoration: none;
+    border: none; border-radius: var(--r-pill); cursor: pointer;
+    text-decoration: none;
     box-shadow: 0 4px 20px rgba(245,158,11,0.4);
     transition: filter 0.2s ease, transform 0.2s var(--ease-spring);
     margin-bottom: 16px;
   }
-  .ea-bottom-btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
-  .ea-bottom-btn:active { transform: scale(0.98); }
+  .ea-bottom-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-2px); }
+  .ea-bottom-btn:active:not(:disabled) { transform: scale(0.98); }
+  .ea-bottom-btn:disabled { opacity: 0.7; cursor: wait; }
   .ea-bottom-fine {
     font-size: 0.8rem; color: var(--text-3);
   }

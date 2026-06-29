@@ -247,10 +247,10 @@ export const sections = [
     ]
   },
   {
-    slug: 'digital-sovereignty',
+    slug: 'digital-autonomy',
     number: '04',
-    title: 'Digital Sovereignty',
-    subtitle: 'Local LLMs, VRAM Optimization, Llama 4, and the Sovereign Software Stack',
+    title: 'Digital Autonomy',
+    subtitle: 'Local LLMs, VRAM Optimization, Llama 4, and the Independent Software Stack',
     content: [
       {
         type: 'prose',
@@ -299,7 +299,7 @@ export const sections = [
       },
       {
         type: 'heading',
-        text: 'The Sovereign Software Stack'
+        text: 'The Independent Software Stack'
       },
       {
         type: 'prose',

@@ -29,7 +29,7 @@ A form of AI that surpasses human intelligence in virtually all domains. Picture
 Extremely large datasets that can be analyzed computationally to reveal patterns, trends, and associations. It's like a digital goldmine-if you have the right tools to dig.
 
 **Blockchain**
-A decentralized, distributed ledger technology that records transactions across many computers. Trusty, transparent, and surprisingly hip-like the cool cousin of record-keeping.
+A distributed ledger technology that records transactions across many computers. Trusty, transparent, and surprisingly hip-like the cool cousin of record-keeping.
 
 ---
 

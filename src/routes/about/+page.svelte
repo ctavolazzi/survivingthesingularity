@@ -8,7 +8,7 @@
 
 <svelte:head>
   <title>About - Surviving the Singularity</title>
-  <meta name="description" content="Material independence through digital leverage, local AI, and minimalist infrastructure. We build the blueprint for sovereign living." />
+  <meta name="description" content="Material independence through digital leverage, local AI, and minimalist infrastructure. We build the blueprint for independent living." />
 </svelte:head>
 
 {#if visible}

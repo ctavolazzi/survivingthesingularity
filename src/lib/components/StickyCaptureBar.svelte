@@ -100,11 +100,9 @@
     right: 0;
     bottom: 0;
     z-index: 120;
-    background: rgba(10, 15, 30, 0.97);
-    border-top: 1px solid rgba(245, 158, 11, 0.25);
-    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: #090e20;
+    border-top: 2px solid rgba(245, 158, 11, 0.35);
+    box-shadow: 0 -3px 0 rgba(245, 158, 11, 0.1);
     padding: 0.7rem 1rem;
     padding-bottom: max(0.7rem, env(safe-area-inset-bottom));
     animation: capture-up 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -121,6 +119,7 @@
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    padding-right: 44px;
   }
 
   .capture-copy {
@@ -143,7 +142,7 @@
     color: #0f172a;
     background: #f59e0b;
     padding: 0.1rem 0.45rem;
-    border-radius: 4px;
+    border-radius: 0;
   }
   .capture-copy strong { color: #f1f5f9; }
   .capture-copy-sub { color: #94a3b8; font-weight: 500; }
@@ -154,39 +153,48 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.6rem 1.2rem;
-    background: linear-gradient(135deg, #f59e0b, #f97316);
+    background: #f59e0b;
     color: #0f172a;
     font-weight: 700;
     font-size: 0.88rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0;
     cursor: pointer;
     white-space: nowrap;
     text-decoration: none;
-    transition: opacity 0.15s ease, transform 0.15s ease;
+    box-shadow: 3px 3px 0 rgba(245, 158, 11, 0.3);
+    transition: box-shadow 0.12s ease;
   }
-  .capture-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+  .capture-btn:hover { box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.4); }
 
   .capture-close {
+    position: absolute;
+    top: 10px;
+    right: 28px;
     flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
-    border: 1px solid rgba(148, 163, 184, 0.15);
-    border-radius: 7px;
-    color: #94a3b8;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #cbd5e1;
     cursor: pointer;
-    transition: color 0.15s ease, border-color 0.15s ease;
-    margin-left: auto;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    padding: 0;
   }
-  .capture-close:hover { color: #e2e8f0; border-color: rgba(148, 163, 184, 0.35); }
+  .capture-close:hover {
+    color: #f1f5f9;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.14);
+  }
 
   @media (max-width: 560px) {
+    .capture-inner { flex-direction: column; align-items: stretch; padding-right: 12px; gap: 0.6rem; }
     .capture-copy-sub { display: none; }
-    .capture-btn { flex: 1; justify-content: center; }
+    .capture-btn { width: 100%; justify-content: center; text-align: center; }
   }
 
   @media (prefers-reduced-motion: reduce) {

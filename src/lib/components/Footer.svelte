@@ -16,6 +16,7 @@
           <a href="/blueprint" class="footer-link">The Blueprint</a>
           <a href="/book" class="footer-link">Book</a>
           <a href="/blog" class="footer-link">Blog</a>
+          <a href="/signals" class="footer-link">Research Signals</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Resources</h4>
@@ -68,7 +69,8 @@
 
 <style>
   .site-footer {
-    background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.8) 30%, #020617 100%);
+    background: #020617;
+    border-top: 1px solid rgba(245, 158, 11, 0.12);
     padding: 4rem 1.5rem 2rem;
     margin-top: 4rem;
   }
@@ -162,7 +164,7 @@
 
   .footer-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.15), transparent);
+    background: rgba(245, 158, 11, 0.12);
     margin: 2.5rem 0;
   }
 
@@ -176,7 +178,8 @@
     padding: 1rem 1.25rem;
     background: rgba(120, 53, 15, 0.12);
     border: 1px solid rgba(245, 158, 11, 0.25);
-    border-radius: 10px;
+    border-left: 3px solid rgba(245, 158, 11, 0.6);
+    border-radius: 0;
     text-align: left;
   }
 
@@ -215,7 +218,7 @@
     padding: 0.85rem 1.1rem;
     background: rgba(15, 23, 42, 0.5);
     border: 1px solid rgba(148, 163, 184, 0.12);
-    border-radius: 8px;
+    border-radius: 0;
     font-size: 0.82rem;
     color: #dde4ef;
     line-height: 1.6;

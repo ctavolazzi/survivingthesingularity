@@ -15,10 +15,10 @@
 			href: '/blueprint/local-ai',
 		},
 		robotics: {
-			title: '02: Open-Source Robotics',
+			title: '02: Food & Shelter Automation',
 			color: '#3b82f6',
-			body: 'Automate food production with FarmBot and workshop tasks with open-source robots. Secure your own calories and labor.',
-			feeds: 'Feeds the loop: automated production is what makes the low-overhead homestead in pillar 03 viable.',
+			body: 'Localized edge robotics — CNC farming gantries, autonomous soil rovers, sensor mesh — decouple your baseline caloric and shelter needs from macroeconomic cycles. When the supply chain breaks, your food keeps growing.',
+			feeds: 'Feeds the loop: automated local food production is what makes the low-overhead homestead in Pillar 03 viable.',
 			href: '/blueprint/robotics',
 		},
 		exit: {

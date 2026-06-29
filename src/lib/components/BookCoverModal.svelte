@@ -141,9 +141,13 @@
     max-width: 300px;
     width: 100%;
     height: auto;
-    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(148, 163, 184, 0.1);
-    border-radius: 8px;
-    transition: transform 0.2s ease-in-out;
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.2);
+    border-radius: 0;
+    transition: box-shadow 0.2s ease;
+  }
+  .cover-trigger:hover .book-cover,
+  .cover-trigger:focus-visible .book-cover {
+    box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.3);
   }
   .cover-trigger:hover .book-cover,
   .cover-trigger:focus-visible .book-cover {
@@ -155,8 +159,7 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.82);
     z-index: 1000;
     border: none;
     margin: 0;
@@ -171,13 +174,15 @@
     transform: translate(-50%, -50%);
     z-index: 1001;
     background: #0f172a;
-    border: 1px solid rgba(148, 163, 184, 0.15);
-    border-radius: 16px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-left: 3px solid rgba(245, 158, 11, 0.4);
+    border-radius: 0;
     color: #e2e8f0;
     overflow: auto;
     max-width: calc(100vw - 2rem);
     max-height: calc(100vh - 2rem);
     padding: 1.5rem;
+    box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.1);
   }
 
   .modal-inner {
@@ -197,8 +202,8 @@
     width: 100%;
     max-width: 360px;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7);
+    border-radius: 0;
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.2);
   }
 
   .book-title {
@@ -232,16 +237,17 @@
   .cta-substack {
     display: inline-block;
     padding: 0.7rem 1.4rem;
-    background: linear-gradient(135deg, #f59e0b, #f97316);
-    color: #1a0f00;
+    background: #f59e0b;
+    color: #0f172a;
     font-weight: 700;
     font-size: 0.92rem;
-    border-radius: 10px;
+    border-radius: 0;
     text-decoration: none;
-    transition: transform 0.2s;
+    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
+    transition: box-shadow 0.15s ease;
   }
   .cta-substack:hover {
-    transform: translateY(-2px);
+    box-shadow: 4px 4px 0 rgba(120, 53, 15, 0.5);
   }
 
   .close-button {
@@ -252,7 +258,7 @@
     color: #e2e8f0;
     border: 1px solid rgba(148, 163, 184, 0.2);
     padding: 0.4rem 0.85rem;
-    border-radius: 8px;
+    border-radius: 0;
     font-size: 0.85rem;
     cursor: pointer;
   }

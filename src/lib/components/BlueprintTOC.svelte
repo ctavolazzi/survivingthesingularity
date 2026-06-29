@@ -106,13 +106,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 0;
     background: rgba(15, 23, 42, 0.9);
     border: 1px solid rgba(148, 163, 184, 0.1);
     color: #dde4ef;
     cursor: pointer;
     transition: all 0.2s;
-    backdrop-filter: blur(8px);
   }
 
   .toc-toggle:hover,
@@ -123,14 +122,13 @@
   }
 
   .toc-panel {
-    background: rgba(15, 23, 42, 0.95);
-    border: 1px solid rgba(148, 163, 184, 0.1);
-    border-radius: 12px;
+    background: #0a0f23;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: 0;
     padding: 0.75rem;
-    backdrop-filter: blur(16px);
     min-width: 200px;
     max-width: 260px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.1);
   }
 
   .toc-title {
@@ -158,7 +156,7 @@
     color: #dde4ef;
     background: none;
     border: none;
-    border-radius: 6px;
+    border-radius: 0;
     cursor: pointer;
     font-family: inherit;
     transition: all 0.15s;

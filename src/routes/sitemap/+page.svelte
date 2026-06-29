@@ -86,7 +86,7 @@
         <li>
           <a href="/blueprint" class="sm-link">
             <span class="sm-link-name">Blueprint Overview</span>
-            <span class="sm-link-desc">Table of contents for all 8 strategy chapters</span>
+            <span class="sm-link-desc">Table of contents for all strategy chapters</span>
             <span class="sm-link-path">/blueprint</span>
           </a>
         </li>

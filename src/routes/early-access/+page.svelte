@@ -228,6 +228,59 @@
   </div>
 </section>
 
+<!-- ── TWO EDITIONS ── -->
+<section class="ea-editions">
+  <div class="ea-editions-inner">
+    <p class="ea-label">Two editions</p>
+    <h2 class="ea-editions-heading">Your $5 gets you the Standard Edition.</h2>
+    <p class="ea-editions-sub">There is also an Author's Edition. Limited to 100 copies. A different kind of book.</p>
+
+    <div class="ea-editions-grid">
+
+      <!-- Standard Edition -->
+      <div class="ea-ed">
+        <div class="ea-ed-header">
+          <span class="ea-ed-tag">Standard Edition</span>
+          <span class="ea-ed-price-tag">$5</span>
+        </div>
+        <p class="ea-ed-desc">Digital. Full book delivered August 2026. Everything on this site, open to you now.</p>
+        <ul class="ea-ed-features">
+          <li>Full book: digital, delivered at launch</li>
+          <li>Blueprint, checklist, research bundle. Open now.</li>
+          <li>Everything I build before launch</li>
+          <li>Updates when something is worth sending</li>
+        </ul>
+        <button class="ea-ed-cta ea-ed-cta-std" on:click={startCheckout} disabled={loading}>
+          {loading ? 'Getting your access...' : 'Get Early Access. $5.'}
+        </button>
+      </div>
+
+      <!-- Author's Edition -->
+      <div class="ea-ed ea-ed-premium">
+        <div class="ea-ed-header">
+          <span class="ea-ed-tag ea-ed-tag-au">Author's Edition</span>
+          <span class="ea-ed-limited">100 copies. Period.</span>
+        </div>
+        <p class="ea-ed-desc">Hand-bound. Signed. Numbered. With the research, observations, and findings that didn't make the final cut.</p>
+        <ul class="ea-ed-features">
+          <li>Everything in the Standard Edition</li>
+          <li>Extra content not in the published book</li>
+          <li>My unfiltered findings, observations, references</li>
+          <li>Margin notes in my own hand</li>
+          <li>Hand-bound by me. Signed. Numbered #1 through #100.</li>
+          <li>Ships August 2026 directly from me</li>
+        </ul>
+        <a href="/launch#authors-edition" class="ea-ed-cta ea-ed-cta-au">
+          See the Author's Edition
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="ea-ed-note">No payment now. Price announced before launch.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ── AUTHOR ── -->
 <section class="ea-author">
   <div class="ea-author-inner">
@@ -592,6 +645,157 @@
   .ea-tag-live { background: rgba(16,185,129,0.12); color: var(--green); }
   .ea-tag-draft { background: var(--amber-dim); color: var(--amber); }
   .ea-tag-soon { background: rgba(148,163,184,0.08); color: var(--text-3); }
+
+  /* ── TWO EDITIONS ── */
+  .ea-editions {
+    border-top: 1px solid var(--border);
+    padding: clamp(48px, 7vw, 80px) 0;
+  }
+  .ea-editions-inner {
+    max-width: 1080px; margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 48px);
+  }
+  .ea-editions-heading {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0.25rem 0 0.5rem;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+  .ea-editions-sub {
+    font-size: 1rem;
+    color: var(--text-3);
+    margin: 0 0 2.5rem;
+    line-height: 1.5;
+  }
+  .ea-editions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  @media (max-width: 680px) {
+    .ea-editions-grid { grid-template-columns: 1fr; }
+  }
+  .ea-ed {
+    padding: 1.75rem;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ea-ed-premium {
+    border-color: rgba(245, 158, 11, 0.3);
+    border-left-color: rgba(245, 158, 11, 0.6);
+    background: rgba(245, 158, 11, 0.03);
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.08);
+  }
+  .ea-ed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .ea-ed-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-3);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .ea-ed-tag-au {
+    color: #f59e0b;
+  }
+  .ea-ed-price-tag {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-1);
+    letter-spacing: -0.03em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .ea-ed-limited {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #f59e0b;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .ea-ed-desc {
+    font-size: 0.9rem;
+    color: var(--text-2);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .ea-ed-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    flex: 1;
+  }
+  .ea-ed-features li {
+    font-size: 0.85rem;
+    color: var(--text-2);
+    padding-left: 1.1rem;
+    position: relative;
+    line-height: 1.4;
+  }
+  .ea-ed-features li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--text-3);
+    font-size: 0.7rem;
+    top: 0.1em;
+  }
+  .ea-ed-premium .ea-ed-features li::before {
+    content: '✓';
+    color: #f59e0b;
+    font-size: 0.75rem;
+  }
+  .ea-ed-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    font-weight: 800;
+    font-size: 0.88rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.01em;
+    transition: opacity 0.15s ease;
+    font-family: inherit;
+  }
+  .ea-ed-cta:hover:not(:disabled) { opacity: 0.88; }
+  .ea-ed-cta:disabled { opacity: 0.45; cursor: not-allowed; }
+  .ea-ed-cta-std {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+  }
+  .ea-ed-cta-au {
+    background: #f59e0b;
+    color: #0f172a;
+    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
+  }
+  .ea-ed-note {
+    font-size: 0.75rem;
+    color: var(--text-3);
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+  }
 
   /* ── WELCOME VIDEO ── */
   .ea-video-section {

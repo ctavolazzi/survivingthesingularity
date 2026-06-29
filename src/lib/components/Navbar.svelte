@@ -15,53 +15,21 @@
   let lastFocused = null;
   let scrolled = false;
 
-  // Desktop nav links — journey-ordered: awareness → depth → free value
+  // Desktop nav links — minimal: free value + depth
   const desktopLinks = [
-    { href: '/evidence',  label: 'Evidence' },
     { href: '/blueprint', label: 'Blueprint' },
-    { href: '/signals',   label: 'Signals' },
-    { href: '/book',      label: 'Book' },
     { href: '/checklist', label: 'Checklist' },
   ];
 
-  // Drawer — full journey map with subtexts
+  // Drawer — focused: free path and context only
   const drawerGroups = [
     {
-      label: 'Make the case',
-      links: [
-        {
-          href: '/agi',
-          label: 'What is AGI?',
-          sub: 'The singularity, explained plainly',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
-        },
-        {
-          href: '/evidence',
-          label: 'The Evidence',
-          sub: 'Footage, papers, and real deployment numbers',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
-        },
-        {
-          href: '/why',
-          label: 'Why Now',
-          sub: 'The case for acting before 2027',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-        },
-        {
-          href: '/timeline',
-          label: 'AGI Timeline',
-          sub: 'Key milestones and what they mean',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>`,
-        },
-      ],
-    },
-    {
-      label: 'The Plan',
+      label: 'Start here',
       links: [
         {
           href: '/checklist',
           label: 'Free Readiness Checklist',
-          sub: '12 moves to make before AGI — free',
+          sub: '7 moves. Free.',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>`,
         },
         {
@@ -71,33 +39,21 @@
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
         },
         {
-          href: '/signals',
-          label: 'Research Signals',
-          sub: 'Curated arXiv and robotics feed, updated daily',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`,
+          href: '/evidence',
+          label: 'The Evidence',
+          sub: 'Footage, papers, and real deployment numbers',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
         },
       ],
     },
     {
-      label: 'The Writing',
+      label: 'More',
       links: [
         {
           href: '/book',
           label: 'The Book',
-          sub: 'Full draft — read it as it\'s being written',
+          sub: 'Full draft, read it as it\'s being written',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
-        },
-        {
-          href: '/blog',
-          label: 'Blog',
-          sub: 'Field notes on what\'s changing right now',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>`,
-        },
-        {
-          href: '/launch',
-          label: 'Book Launch',
-          sub: 'What, why, and where the money goes',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>`,
         },
         {
           href: '/about',

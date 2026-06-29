@@ -16,10 +16,10 @@
     <div class="bio-text">
       <h3>{name}</h3>
       <p class="alias">a.k.a. <span class="mono">{alias}</span></p>
+      <p class="bio-roles">Developer, futurist, musician ☕</p>
+      <p class="bio-founder">Founder of <a href="https://johnnyautoseed.com" target="_blank" rel="noopener noreferrer">Johnny Autoseed</a>.</p>
       <p>
-        Developer, futurist, musician, poet. Founder of <a href="https://johnnyautoseed.com" target="_blank" rel="noopener noreferrer">Johnny Autoseed</a>
-        - an autonomous seed-to-table pipeline bridging kitchens and community gardens with AI-driven robotics.
-        <em>Surviving the Singularity</em> is your field guide for the road ahead.
+        Reskilling people to pilot robots and do real, meaningful work. An autonomous seed-to-table pipeline bridging kitchens and community gardens with AI-driven robotics.
       </p>
       <p>
         I write to make sense of the shift in real time. The book updates as the world does.
@@ -111,6 +111,15 @@
     color: var(--color-text-secondary, #dde4ef);
     line-height: 1.7;
     margin: 0 0 1rem;
+  }
+
+  .bio-roles {
+    font-size: 0.82rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 0.35rem;
+    color: var(--color-text-muted, #94a3b8);
   }
 
   .bio-text a {

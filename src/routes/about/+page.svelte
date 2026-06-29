@@ -27,12 +27,23 @@
     <section class="about-section">
       <h2>Why this exists</h2>
       <p>
-        The 2017 Transformer architecture crossed an event horizon most people missed. Intelligence now has a marginal cost near zero. The gap between people who understand that and people who don't is widening every quarter.
+        The 2017 Transformer architecture crossed an event horizon most people missed. Intelligence now has a marginal cost near zero. The gap between people who understand that and people who don't is widening every day.
       </p>
       <p>
-        I started writing this to work it out for myself. It became something I could share. The book grows as the situation develops. Nothing here is finished. Neither is the world.
+        I started writing this to work it out for myself.
+      </p>
+      <p>
+        It became something I could share with others, to find like-minded people. Now it's grown into a book you can use to help plan your future before it's too late.
       </p>
     </section>
+
+    <div class="scroll-prompt" aria-hidden="true">
+      <svg class="scroll-arrow" width="28" height="52" viewBox="0 0 28 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="arrow-1" d="M14 2 L14 18 M6 10 L14 18 L22 10" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="arrow-2" d="M14 18 L14 34 M6 26 L14 34 L22 26" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+        <path class="arrow-3" d="M14 34 L14 50 M6 42 L14 50 L22 42" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.25"/>
+      </svg>
+    </div>
 
     <section class="about-section">
       <h2>What's here</h2>
@@ -60,12 +71,6 @@
       </div>
     </section>
 
-    <section class="about-section about-note">
-      <p>
-        Everything here is commentary and informational only. Not financial, legal, medical, or any other professional advice. Verify anything you intend to rely on and consult the relevant licensed professionals before acting.
-      </p>
-    </section>
-
     <section class="about-section about-cta">
       <h2>Start here</h2>
       <p>Read the book as it's being written. Or start free with the checklist.</p>
@@ -73,6 +78,12 @@
         <a href="/book" class="btn-primary">Read the Book</a>
         <a href="/checklist" class="btn-secondary">Start the Checklist</a>
       </div>
+    </section>
+
+    <section class="about-section about-note">
+      <p>
+        This is commentary and informational only. Not professional advice of any kind. See the <a href="/disclaimer" class="note-link">Disclaimer</a>, <a href="/policies" class="note-link">Privacy Policy</a>, and <a href="/terms" class="note-link">Terms of Use</a> for the full picture.
+      </p>
     </section>
   </div>
 {/if}
@@ -179,18 +190,45 @@
 
   .provide-link:hover { color: #fbbf24; text-decoration: underline; }
 
+  .scroll-prompt {
+    display: flex;
+    justify-content: center;
+    margin: -1rem 0 2rem;
+  }
+
+  .scroll-arrow {
+    animation: arrow-flow 1.6s ease-in-out infinite;
+  }
+
+  .arrow-1 { animation: arrow-pulse 1.6s ease-in-out infinite 0s; }
+  .arrow-2 { animation: arrow-pulse 1.6s ease-in-out infinite 0.25s; }
+  .arrow-3 { animation: arrow-pulse 1.6s ease-in-out infinite 0.5s; }
+
+  @keyframes arrow-pulse {
+    0%, 100% { opacity: 0.15; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(4px); }
+  }
+
   .about-note {
     border-top: 1px solid rgba(148, 163, 184, 0.08);
     padding-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   .about-note p {
     font-size: 0.88rem;
     color: #94a3b8;
     line-height: 1.7;
-    margin: 0;
+    margin: 0 0 0.5rem;
   }
+
+  .note-link {
+    color: #94a3b8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .note-link:hover { color: #f59e0b; }
 
   .about-cta {
     text-align: center;

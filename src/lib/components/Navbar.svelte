@@ -200,13 +200,12 @@
     <div class="nav-sep" aria-hidden="true"></div>
 
     <!-- Desktop links -->
-    <div class="nav-links" role="list">
+    <div class="nav-links">
       {#each desktopLinks as link}
         <a
           href={link.href}
           class="nav-link"
           class:active={isActive(link.href)}
-          role="listitem"
           aria-current={isActive(link.href) ? 'page' : undefined}
           on:click={(e) => navigateTo(link.href, e)}
         >{link.label}</a>

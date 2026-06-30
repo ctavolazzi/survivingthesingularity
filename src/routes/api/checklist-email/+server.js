@@ -38,7 +38,19 @@ function isValidEmail(str) {
 // Known-good category keys from the checklist data
 const VALID_CATS = new Set(['foundation', 'infrastructure', 'autonomy', 'network']);
 
-export async function POST({ request, getClientAddress }) {
+export async function POST({ request, url, getClientAddress }) {
+  // Origin check — reject cross-site POSTs.
+  const origin = request.headers.get('origin');
+  if (origin && origin !== url.origin) {
+    return json({ error: 'Bad request.' }, { status: 403 });
+  }
+
+  // Content-type guard.
+  const contentType = request.headers.get('content-type') ?? '';
+  if (!contentType.includes('application/json')) {
+    return json({ error: 'Bad request.' }, { status: 400 });
+  }
+
   const ip = getClientAddress();
 
   if (!checkRate(ip)) {

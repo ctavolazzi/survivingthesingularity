@@ -1,4 +1,5 @@
 import { json } from '@sveltejs/kit';
+import { rateLimit } from '$lib/server/rateLimit.js';
 
 const ALLOWED_HOSTS = new Set([
   'arxiv.org',
@@ -26,7 +27,13 @@ function isHostAllowed(hostname) {
   return false;
 }
 
-export async function GET({ url }) {
+export async function GET({ url, getClientAddress }) {
+  const ip = getClientAddress();
+  const { allowed } = rateLimit(`fetch-title:${ip}`, 10, 60_000);
+  if (!allowed) {
+    return json({ error: 'Too many requests.' }, { status: 429 });
+  }
+
   const targetUrl = url.searchParams.get('url');
   if (!targetUrl) {
     return json({ error: 'URL parameter is required' }, { status: 400 });

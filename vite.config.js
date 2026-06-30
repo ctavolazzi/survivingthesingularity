@@ -19,7 +19,7 @@ export default defineConfig({
 	],
 	assetsInclude: ['**/*.md'],
 	build: {
-		sourcemap: true,
+		sourcemap: false,
 		rollupOptions: {
 			onwarn(warning, warn) {
 				// Ignore URL-related warnings that might be causing the build to fail

@@ -524,7 +524,6 @@
     border-radius: 8px; padding: 8px 12px;
     margin: 0 0 12px;
   }
-  .ea-checkout-error-center { text-align: center; }
   .ea-buy-icon {
     width: 26px; height: 26px; background: rgba(0,0,0,0.15);
     border-radius: 50%; display: flex; align-items: center; justify-content: center;

@@ -5,7 +5,7 @@
 
   // Routes where an interrupting bar is unwelcome: legal pages, long-form
   // reading views, and the checklist page itself (it IS the destination).
-  const SUPPRESS_PREFIXES = ['/policies', '/terms', '/disclaimer', '/accessibility', '/book', '/blueprint', '/checklist'];
+  const SUPPRESS_PREFIXES = ['/policies', '/terms', '/disclaimer', '/accessibility', '/book', '/checklist'];
 
   const STORAGE_KEY = 'sts_capture_v2'; // 'dismissed'
   const SCROLL_TRIGGER = 700; // px scrolled before it can appear

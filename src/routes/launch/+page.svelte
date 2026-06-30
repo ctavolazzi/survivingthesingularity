@@ -33,8 +33,8 @@
       pilotFooter2: 'The Johnny Autoseed initiative is part of the same thesis: put robotics in the hands of communities, not just corporations, and train the people who live there to operate them. Food production, home care, infrastructure maintenance: all of it can be done by a distributed workforce of robot pilots working from their own homes.',
       ctaTitle: 'Be Part of the Launch',
       ctaBody: 'Get chapter previews before public release, updates on the teleoperation retraining program, and early access to the full book when it drops.',
-      ctaSecondaryLabel: 'Read the Blueprint',
-      ctaSecondaryHref: '/blueprint',
+      ctaSecondaryLabel: 'Read the Book',
+      ctaSecondaryHref: '/book',
     },
     leader: {
       subtitle: 'What the AI transition means for your workforce, your organization, and the decisions that will look obvious in hindsight.',
@@ -52,8 +52,8 @@
       pilotFooter2: 'The Johnny Autoseed initiative demonstrates the workforce model at community scale: distributed robot pilots working from home, providing food production, elder care, and infrastructure services. The same model applies inside organizations. Remote operators. Flexible deployment. No relocation required.',
       ctaTitle: 'Stay Ahead of the Transition',
       ctaBody: 'Get early access to the book and field notes on how organizations are navigating the shift. No noise, only signal.',
-      ctaSecondaryLabel: 'See the Evidence',
-      ctaSecondaryHref: '/evidence',
+      ctaSecondaryLabel: 'See the Research',
+      ctaSecondaryHref: '/signals',
     },
     policy: {
       subtitle: 'A case for community-level preparation: the retraining infrastructure, the funding model, and the jobs that make distributed resilience possible.',
@@ -71,8 +71,8 @@
       pilotFooter2: 'The Johnny Autoseed initiative is the proof of concept: distributed robot pilots providing food production, elder care, and infrastructure maintenance within their own community. The model is replicable. The open-source playbook is part of the deliverable.',
       ctaTitle: 'Build the Infrastructure Now',
       ctaBody: 'Communities that prepare for the transition will have options the ones that don\'t won\'t. Get chapter previews and updates on the teleoperation retraining program.',
-      ctaSecondaryLabel: 'See the Evidence',
-      ctaSecondaryHref: '/evidence',
+      ctaSecondaryLabel: 'See the Research',
+      ctaSecondaryHref: '/signals',
     },
   };
 
@@ -790,40 +790,45 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.8rem 1.6rem;
     background: #f59e0b;
     color: #0f172a;
-    font-weight: 700;
-    font-size: 0.9rem;
-    border-radius: 9px;
+    font-weight: 800;
+    font-size: 0.92rem;
+    border-radius: 999px;
     text-decoration: none;
-    transition: background 0.15s ease, transform 0.15s ease;
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.28);
+    transition: filter 0.2s ease, transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
     letter-spacing: 0.01em;
+    white-space: nowrap;
   }
 
   .btn-primary:hover {
-    background: #fbbf24;
-    transform: translateY(-1px);
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(245, 158, 11, 0.42);
   }
+  .btn-primary:active { transform: scale(0.97); }
 
   .btn-secondary {
     display: inline-flex;
     align-items: center;
-    padding: 0.75rem 1.5rem;
-    background: rgba(245, 158, 11, 0.08);
-    color: #f59e0b;
-    border: 1px solid rgba(245, 158, 11, 0.25);
-    font-weight: 600;
-    font-size: 0.9rem;
-    border-radius: 9px;
+    padding: 0.8rem 1.6rem;
+    background: transparent;
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    font-weight: 700;
+    font-size: 0.92rem;
+    border-radius: 999px;
     text-decoration: none;
-    transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
   }
 
   .btn-secondary:hover {
-    background: rgba(245, 158, 11, 0.14);
-    border-color: rgba(245, 158, 11, 0.45);
-    transform: translateY(-1px);
+    color: #f1f5f9;
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.04);
   }
 
   @media (prefers-reduced-motion: reduce) {

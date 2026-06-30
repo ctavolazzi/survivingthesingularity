@@ -253,12 +253,11 @@
   .ae-card {
     background: #0a0f23;
     border: 1px solid rgba(245, 158, 11, 0.35);
-    border-left: 3px solid rgba(245, 158, 11, 0.55);
-    border-top: 2px solid rgba(245, 158, 11, 0.4);
-    border-radius: 0;
+    border-top: 2px solid rgba(245, 158, 11, 0.5);
+    border-radius: 18px;
     overflow: hidden;
     position: relative;
-    box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.1);
+    box-shadow: 0 0 60px rgba(245, 158, 11, 0.08), 0 24px 48px rgba(0,0,0,0.4);
   }
 
   .ae-card-inner {
@@ -288,10 +287,10 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.3rem 0.75rem;
-    background: rgba(245, 158, 11, 0.15);
+    background: rgba(245, 158, 11, 0.12);
     border: 1px solid rgba(245, 158, 11, 0.35);
-    border-radius: 0;
-    font-size: 0.72rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -438,7 +437,7 @@
     padding: 0.65rem 0.85rem;
     background: rgba(2, 6, 23, 0.8);
     border: 1px solid rgba(148, 163, 184, 0.15);
-    border-radius: 0;
+    border-radius: 8px;
     color: #f1f5f9;
     font-size: 0.9rem;
     transition: border-color 0.15s ease;
@@ -470,23 +469,26 @@
     justify-content: center;
     gap: 0.4rem;
     width: 100%;
-    padding: 0.8rem 1.25rem;
+    padding: 0.85rem 1.25rem;
     background: #f59e0b;
     color: #0f172a;
     font-weight: 800;
     font-size: 0.92rem;
     border: none;
-    border-radius: 0;
+    border-radius: 999px;
     cursor: pointer;
-    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
-    transition: box-shadow 0.15s ease;
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.35);
+    transition: filter 0.2s ease, transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
     letter-spacing: 0.01em;
     font-family: inherit;
   }
 
   .ae-submit:hover:not(:disabled) {
-    box-shadow: 4px 4px 0 rgba(120, 53, 15, 0.5);
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(245, 158, 11, 0.45);
   }
+  .ae-submit:active:not(:disabled) { transform: scale(0.97); }
 
   .ae-submit:disabled {
     opacity: 0.45;
@@ -510,7 +512,7 @@
     padding: 1.5rem;
     background: rgba(16, 185, 129, 0.06);
     border: 1px solid rgba(16, 185, 129, 0.2);
-    border-radius: 0;
+    border-radius: 12px;
   }
 
   .ae-success--soldout {
@@ -555,7 +557,7 @@
   .ae-regular {
     background: rgba(30, 41, 59, 0.3);
     border: 1px solid rgba(148, 163, 184, 0.08);
-    border-radius: 0;
+    border-radius: 12px;
     padding: 1rem 1.25rem;
   }
 

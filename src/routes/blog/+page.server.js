@@ -34,7 +34,7 @@ export async function load() {
       author: 'Christopher Tavolazzi',
       route: '/blog/synthetic-biological-intelligence',
       excerpt: 'Australian startup Cortical Labs has unveiled the CL1, the world\'s first commercial Synthetic Biological Intelligence system-a fusion of biology and tech with human neurons cultured directly onto silicon chips.',
-      image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80'
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80&auto=format&fit=crop'
     },
     {
       title: 'The Future of Neural Interfaces: A Comprehensive Guide',
@@ -42,7 +42,7 @@ export async function load() {
       author: 'Christopher Tavolazzi',
       route: '/blog/future-of-neural-interfaces',
       excerpt: 'Explore recent breakthroughs, future prospects, and ethical considerations in neural interfaces and brain-computer interfaces (BCIs).',
-      image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80'
+      image: 'https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=1200&q=80&auto=format&fit=crop'
     },
     {
       title: 'Robot Farm Bot - The Future of Residential Agriculture',

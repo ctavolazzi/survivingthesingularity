@@ -30,7 +30,7 @@ function buildWelcome(source) {
     body:
       "You'll be the first to know when the book launches, plus the field notes published " +
       'along the way. No spam, no noise. Unsubscribe anytime.',
-    cta: { label: 'Read the Blueprint', url: 'https://survivingthesingularity.com/blueprint' },
+    cta: { label: 'Read the Book', url: 'https://survivingthesingularity.com/book' },
   };
 }
 
@@ -203,8 +203,8 @@ export async function sendChecklistEmail({ to, answers }) {
   <p style="font-size:14px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${intro}</p>
   ${itemsHtml}
   <div style="margin:32px 0;padding:20px 24px;background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.2);border-radius:12px;">
-    <p style="font-size:13px;color:#94a3b8;margin:0 0 14px;line-height:1.5;">Want the full strategy behind each step? The Blueprint expands every area of this checklist.</p>
-    <a href="https://survivingthesingularity.com/blueprint" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:13px;text-decoration:none;padding:11px 20px;border-radius:8px;">Read the Blueprint →</a>
+    <p style="font-size:13px;color:#94a3b8;margin:0 0 14px;line-height:1.5;">Want the full strategy behind each step? The book expands every area of this checklist.</p>
+    <a href="https://survivingthesingularity.com/book" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:13px;text-decoration:none;padding:11px 20px;border-radius:8px;">Read the Book →</a>
   </div>
   <p style="font-size:11px;color:#334155;margin:32px 0 0;">You requested this at survivingthesingularity.com. Reply to unsubscribe.</p>
 </div>
@@ -248,7 +248,7 @@ export async function sendDownloadEmail({ to, downloadUrl, sessionId }) {
     <div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);border-radius:10px;padding:16px 20px;margin-top:8px;">
       <p style="font-size:13px;color:#64748b;margin:0 0 10px;">Also included in your early access:</p>
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">
-        Blueprint chapters: <a href="https://survivingthesingularity.com/blueprint" style="color:#f59e0b;">survivingthesingularity.com/blueprint</a><br>
+        The book: <a href="https://survivingthesingularity.com/book" style="color:#f59e0b;">survivingthesingularity.com/book</a><br>
         Readiness checklist: <a href="https://survivingthesingularity.com/checklist" style="color:#f59e0b;">survivingthesingularity.com/checklist</a><br>
         Research signals: <a href="https://survivingthesingularity.com/signals" style="color:#f59e0b;">survivingthesingularity.com/signals</a>
       </p>

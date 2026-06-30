@@ -1,7 +1,9 @@
-import { sections as blueprintSections } from '$lib/data/blueprint.js';
 import { book } from '$lib/bookContent.js';
 
 const SITE = 'https://survivingthesingularity.com';
+
+// Pages excluded from the public sitemap (internal/orphan pages).
+const EXCLUDE = new Set(['/optional']);
 
 // Discover every static page route at build time. Each key looks like
 // '/src/routes/about/+page.svelte'; we strip the wrapper to get the URL path.
@@ -21,11 +23,11 @@ function buildUrls() {
     // Skip dynamic routes ([param]) and private/group segments - dynamic
     // routes are expanded explicitly from their data below.
     if (p.includes('[') || p.includes('(')) continue;
+    if (EXCLUDE.has(p)) continue;
     paths.add(p);
   }
 
   // Expand dynamic routes from their data sources.
-  for (const s of blueprintSections) paths.add(`/blueprint/${s.slug}`);
   for (const s of book.sections) paths.add(`/book/${s.id}`);
 
   return [...paths].sort();

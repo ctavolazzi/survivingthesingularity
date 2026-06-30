@@ -3,6 +3,9 @@
   import { onMount } from 'svelte';
   import AuthorBio from '$lib/components/AuthorBio.svelte';
 
+  // Set by LAUNCH.sh when the Gumroad product is ready. Empty = no buy button shown.
+  const PURCHASE_URL = '';
+
   export let data;
 
   let visible = false;
@@ -45,7 +48,11 @@
         <p class="hook">Intelligence now has a marginal cost of zero. The old systems haven't caught up yet. This book is about what to do in the gap — before the window closes.</p>
 
         <div class="hero-ctas">
-          <a href="/early-access" class="btn-primary">Get Early Access · $5</a>
+          {#if PURCHASE_URL}
+            <a href={PURCHASE_URL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy the Book</a>
+          {:else}
+            <a href="/early-access" class="btn-primary">Reserve Early Access</a>
+          {/if}
           <a href="/StS-free-sample.pdf" class="btn-ghost" target="_blank" rel="noopener noreferrer">Read a free sample</a>
         </div>
 

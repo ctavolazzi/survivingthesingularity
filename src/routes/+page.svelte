@@ -76,6 +76,15 @@
 
 <svelte:head>
   <title>Surviving the Singularity: New Era, New Playbook</title>
+  <meta name="description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft — open to read now." />
+  <meta property="og:title" content="Surviving the Singularity" />
+  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft — open to read now." />
+  <meta property="og:image" content="/images/surviving_the_singularity_cover_1200.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Surviving the Singularity" />
+  <meta name="twitter:description" content="A practical field guide for staying human in the age of AI." />
+  <meta name="twitter:image" content="/images/surviving_the_singularity_cover_1200.png" />
 </svelte:head>
 
 <div class="home">

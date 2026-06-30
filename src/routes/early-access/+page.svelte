@@ -1,20 +1,25 @@
 <script>
   let loading = false;
   let error = '';
+  let email = '';
 
-  async function startCheckout() {
+  async function joinWaitlist() {
     if (loading) return;
+    const trimmed = email.trim().toLowerCase();
+    if (!trimmed) { error = 'Enter your email to continue.'; return; }
     loading = true;
     error = '';
     try {
-      const res = await fetch('/api/stripe-checkout', {
+      const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: trimmed, source: 'early-access', newsletter_consent: true, book_release_consent: true }),
       });
-      if (!res.ok) throw new Error('Checkout unavailable. Please try again.');
-      const { url, error: apiError } = await res.json();
-      if (apiError) throw new Error(apiError);
-      window.location.href = url;
+      const json = await res.json();
+      if (!res.ok && json.error !== 'already_subscribed') {
+        throw new Error(json.error ?? 'Something went wrong. Please try again.');
+      }
+      window.location.href = `/early-access/success?session_id=waitlist&email=${encodeURIComponent(trimmed)}`;
     } catch (err) {
       error = err.message ?? 'Something went wrong. Please try again.';
       loading = false;
@@ -24,7 +29,7 @@
 
 <svelte:head>
   <title>Early Access. Surviving the Singularity</title>
-  <meta name="description" content="$5 gets you instant access to the full blueprint, checklist, live research feed, book draft, and everything I ship next. Limited time pricing." />
+  <meta name="description" content="Reserve your early-access spot free. Get instant access to the checklist, live research feed, and book draft. $5 at launch." />
 </svelte:head>
 
 <!-- ── HERO ── -->
@@ -60,31 +65,42 @@
       </div>
 
       <h1 class="ea-heading">
-        Everything I'm<br>building.<br><span class="ea-amber">Five dollars.</span>
+        Everything I'm<br>building.<br><span class="ea-amber">Reserve your spot.</span>
       </h1>
       <p class="ea-sub">
-        One payment. Instant access to the full blueprint, every chapter, the live research feed, and everything I ship next. This price goes up.
+        Enter your email to lock in early-access pricing ($5 at launch). Get access to the checklist, research feed, and book draft now, free.
       </p>
 
       <div class="ea-price-card">
         <div class="ea-price-row">
-          <div class="ea-price-amount"><sup>$</sup>5</div>
+          <div class="ea-price-amount ea-price-free">Free</div>
           <div class="ea-price-meta-col">
-            <span class="ea-price-type">one-time payment</span>
-            <span class="ea-price-note">instant access &middot; keeps growing</span>
+            <span class="ea-price-type">reserve your spot now</span>
+            <span class="ea-price-note">$5 at launch &middot; early-access price locked in</span>
           </div>
         </div>
 
-        <button class="ea-buy-btn" on:click={startCheckout} disabled={loading}>
-          {#if loading}
-            Getting your access...
-          {:else}
-            Get Early Access Now
-            <span class="ea-buy-icon" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          {/if}
-        </button>
+        <form class="ea-email-form" on:submit|preventDefault={joinWaitlist}>
+          <input
+            type="email"
+            bind:value={email}
+            class="ea-email-input"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+            disabled={loading}
+          />
+          <button type="submit" class="ea-buy-btn" disabled={loading}>
+            {#if loading}
+              Reserving your spot...
+            {:else}
+              Reserve My Spot — Free
+              <span class="ea-buy-icon" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            {/if}
+          </button>
+        </form>
 
         {#if error}
           <p class="ea-checkout-error">{error}</p>
@@ -97,7 +113,7 @@
           </li>
           <li>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Full blueprint, all chapters
+            Full book, all chapters
           </li>
           <li>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
@@ -105,13 +121,13 @@
           </li>
           <li>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Book draft + everything I ship next
+            Everything I ship next
           </li>
         </ul>
 
         <p class="ea-secure-note">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Secure checkout via Stripe. <a href="/policies">Privacy policy</a>.
+          No spam. No credit card. <a href="/policies">Privacy policy</a>.
         </p>
       </div>
     </div>
@@ -232,7 +248,7 @@
 <section class="ea-editions">
   <div class="ea-editions-inner">
     <p class="ea-label">Two editions</p>
-    <h2 class="ea-editions-heading">Your $5 gets you the Standard Edition.</h2>
+    <h2 class="ea-editions-heading">Reserve your spot for the Standard Edition.</h2>
     <p class="ea-editions-sub">There is also an Author's Edition. Limited to 100 copies. A different kind of book.</p>
 
     <div class="ea-editions-grid">
@@ -250,8 +266,8 @@
           <li>Everything I build before launch</li>
           <li>Updates when something is worth sending</li>
         </ul>
-        <button class="ea-ed-cta ea-ed-cta-std" on:click={startCheckout} disabled={loading}>
-          {loading ? 'Getting your access...' : 'Get Early Access. $5.'}
+        <button class="ea-ed-cta ea-ed-cta-std" on:click={() => document.querySelector('.ea-email-input')?.focus()} type="button">
+          Reserve My Spot — Free
         </button>
       </div>
 
@@ -322,18 +338,13 @@
       <span class="ea-urgency-dot" aria-hidden="true"></span>
       Limited time offer
     </p>
-    <h2 class="ea-bottom-heading">Five dollars.<br>Don't wait.</h2>
-    <p class="ea-bottom-sub">This is the lowest the price will ever be. Everything I'm building, open to you now.</p>
-    <button class="ea-bottom-btn" on:click={startCheckout} disabled={loading}>
-      {loading ? 'Getting your access...' : 'Get Early Access - $5'}
-      {#if !loading}
-        <svg width="16" height="16" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      {/if}
+    <h2 class="ea-bottom-heading">Reserve your spot.<br>Don't wait.</h2>
+    <p class="ea-bottom-sub">$5 at launch. Everything I'm building, open to you now. Enter your email above.</p>
+    <button class="ea-bottom-btn" on:click={() => document.querySelector('.ea-email-input')?.focus()} type="button">
+      Reserve My Spot — Free
+      <svg width="16" height="16" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
-    {#if error}
-      <p class="ea-checkout-error ea-checkout-error-center">{error}</p>
-    {/if}
-    <p class="ea-bottom-fine">Secure checkout via Stripe. Instant access. <a href="/policies">Privacy</a>.</p>
+    <p class="ea-bottom-fine">No credit card. No spam. <a href="/policies">Privacy</a>.</p>
   </div>
 </section>
 
@@ -469,6 +480,25 @@
     font-size: 0.75rem; color: var(--text-3);
     font-family: 'JetBrains Mono', monospace;
   }
+  .ea-price-free {
+    color: var(--amber);
+    font-size: 2.4rem;
+  }
+  .ea-email-form {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-bottom: 4px;
+  }
+  .ea-email-input {
+    width: 100%; padding: 13px 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1.5px solid rgba(245,158,11,0.3);
+    border-radius: var(--r-pill);
+    color: var(--text-1); font-size: 1rem; font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  .ea-email-input::placeholder { color: var(--text-3); }
+  .ea-email-input:focus { border-color: var(--amber); }
   .ea-buy-btn {
     display: flex; align-items: center; justify-content: center; gap: 10px;
     width: 100%; padding: 15px 24px;

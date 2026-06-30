@@ -32,16 +32,16 @@
 
 <svelte:head>
   <title>Blog - Surviving the Singularity</title>
-  <meta name="description" content="Deep dives into AI, robotics, synthetic biology, and the technologies reshaping material independence." />
+  <meta name="description" content="Read about breakthroughs that might impact your life today or in the very near future." />
 </svelte:head>
 
 {#if visible}
   <div class="blog-page" in:fade={{ duration: 400 }}>
     <header class="blog-header">
       <p class="blog-label">The Blog</p>
-      <h1 class="blog-title">Dispatches from the Build</h1>
+      <h1 class="blog-title">Information You Can Use Today</h1>
       <p class="blog-subtitle">
-        Deep dives into AI breakthroughs, robotics, synthetic biology, and the technologies reshaping the path to material independence.
+        Read about breakthroughs that might impact your life today or in the very near future.
       </p>
     </header>
 
@@ -197,23 +197,27 @@
 
   .featured-meta {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.5rem 0.75rem;
     align-items: center;
-    font-size: 0.86rem;
-    color: #dde4ef;
+    flex-wrap: wrap;
+    font-size: 0.83rem;
+    color: #94a3b8;
     margin-bottom: 1rem;
   }
 
   .post-tag {
-    font-size: 0.86rem;
-    font-weight: 600;
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: #f59e0b;
     background: rgba(245, 158, 11, 0.1);
     border: 1px solid rgba(245, 158, 11, 0.15);
     border-radius: 4px;
-    padding: 0.15rem 0.5rem;
+    padding: 0.2rem 0.55rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    line-height: 1.4;
   }
 
   .featured-title {
@@ -312,11 +316,12 @@
 
   .post-meta {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.4rem 0.6rem;
     align-items: center;
-    font-size: 0.85rem;
-    color: #dde4ef;
-    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-bottom: 0.65rem;
   }
 
   .post-title {
@@ -352,13 +357,47 @@
     font-family: var(--font-primary);
   }
 
-  /* Base: mobile padding */
-  .blog-page { padding: 2rem 1rem 3rem; }
+  /* ── MOBILE FIRST ── */
+  .blog-page {
+    padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 1.5rem) clamp(3rem, 8vw, 5rem);
+  }
+
+  .blog-header {
+    margin-bottom: clamp(1.75rem, 5vw, 3rem);
+  }
+
   .featured-image-wrap { min-height: 200px; }
 
-  @media (min-width: 640px) {
-    .blog-page { padding: 3rem 1.5rem 5rem; }
+  .featured-content {
+    padding: clamp(1.25rem, 4vw, 2rem);
+  }
+
+  .post-content {
+    padding: clamp(1rem, 3vw, 1.25rem);
+  }
+
+  .post-title {
+    font-size: clamp(1rem, 3vw, 1.1rem);
+  }
+
+  .post-excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .posts-grid {
+    gap: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  @media (min-width: 600px) {
     .featured-card { grid-template-columns: 1fr 1fr; }
-    .featured-image-wrap { min-height: 300px; }
+    .featured-image-wrap { min-height: 280px; }
+    .post-excerpt { -webkit-line-clamp: 2; }
+  }
+
+  @media (min-width: 900px) {
+    .featured-image-wrap { min-height: 320px; }
   }
 </style>

@@ -9,7 +9,7 @@
     title: 'The Future of Neural Interfaces: A Comprehensive Guide',
     date: '2024-03-09',
     author: 'Christopher Tavolazzi',
-    image: 'https://img.decrypt.co/insecure/rs:fit:3840:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2024/05/brian-implant-ai-gID_7.png@webp',
+    image: 'https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=1200&q=80&auto=format&fit=crop',
     readingTime: '8 min read'
   };
 

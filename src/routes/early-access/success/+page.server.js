@@ -49,6 +49,19 @@ async function getBundleUrl() {
 export async function load({ url }) {
   const sessionId = url.searchParams.get('session_id') ?? '';
 
+  // ── WAITLIST MODE (email capture, Stripe not yet wired) ─────────────────────
+  if (sessionId === 'waitlist') {
+    const email = url.searchParams.get('email') ?? null;
+    const bundleUrl = await getBundleUrl();
+    return {
+      ok:        true,
+      mock:      false,
+      email,
+      bundleUrl: bundleUrl ?? null,
+      sessionId,
+    };
+  }
+
   // ── MOCK MODE ────────────────────────────────────────────────────────────────
   if (!stripe || sessionId === 'mock_session' || sessionId.startsWith('mock_')) {
     const bundleUrl = await getBundleUrl();

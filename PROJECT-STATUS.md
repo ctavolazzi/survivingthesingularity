@@ -22,26 +22,31 @@ The SvelteKit site is deployed on Cloudflare Pages and fully functional.
 
 | Route | Status |
 | ----- | ------ |
-| `/` | Live. Landing page with thesis, interactive diagrams, savings calculator, chapter index |
-| `/why` | Live. The case: AGI timeline, expert voices, benchmarks |
-| `/book` | Live. Open draft with chapter previews, Buy CTA wired (renders when purchase URL is set) |
-| `/blueprint` | Live. Eight-chapter independence blueprint with dynamic section pages |
+| `/` | Live. Landing page with thesis, interactive diagrams, chapter index |
+| `/book` | Live. Open draft with chapter previews. Buy CTA wired to `PURCHASE_URL` (renders when Gumroad URL is set via `LAUNCH.sh`) |
 | `/blog` | Live. Dispatches |
-| `/checklist` | Live. Email-gated content |
-| `/shouse` | Live. Shouse Builder 3D strategy game |
+| `/checklist` | Live. Email-gated readiness checklist |
+| `/signals` | Live. Automated arXiv research feed with daily updates and RSS |
+| `/early-access` | Live. Email capture waitlist; $5 price locks in at launch (Stripe deferred to Phase 2) |
+| `/launch` | Live. Author's Edition preorder + launch messaging |
 | `/about` | Live |
+| `/policies`, `/terms`, `/disclaimer`, `/accessibility` | Live. Legal/compliance pages |
+| `/unsubscribe` | Live. Email opt-out |
+| `/blueprint`, `/why`, `/agi`, `/shouse`, `/timeline`, `/evidence` | Retired (June 2026). Content folded into `/book` |
 | `/preorder` | Not built. Planned as Phase 2 (Stripe) |
 
-**Recent platform work (33 commits in 2026 so far):**
+**Recent platform work (homepage-redux-jun2026 branch, 13+ commits):**
 
-- Email capture funnel with Supabase waitlist, gated checklist, and nav overhaul
-- Free sample PDF (`StS-free-sample.pdf`) downloadable from the book page
-- Buy CTA on `/book` that activates the moment a purchase URL exists
-- `LAUNCH.sh`: a one-command deploy script waiting only on the Gumroad product URL
-- Mobile readability facelift, responsive audit, viewport fixes
-- Interactive pillar/divergence/window diagrams on the landing page
-- Shouse Builder 3D strategy game
-- Legal hygiene: clickwrap consent, canonical disclaimer, policy cleanup
+- Homepage reframe: selfish framing, 3-part book structure, updated stats
+- `/early-access` converted from mock Stripe to real email capture (Supabase waitlist)
+- `PURCHASE_URL` constant added to `/book` page — LAUNCH.sh sets this when Gumroad is ready
+- `/signals` route added: live arXiv AI research feed with daily auto-update
+- `/about` rewritten as author-forward first-person page
+- Navbar simplified to 2 links + CTA; command palette updated to live routes
+- Retired routes removed: `/blueprint`, `/why`, `/agi`, `/shouse`, `/timeline`, `/evidence`
+- Dead-link cleanup: email templates, sitemap, layout components updated
+- Homepage og:image and Twitter card added
+- Blog copy update: "Information You Can Use Today" framing
 
 **Translation: the storefront is built. It is waiting on the product.**
 

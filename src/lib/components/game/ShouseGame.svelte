@@ -1,8 +1,8 @@
 <script>
-  import { onDestroy } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
   import { createShouseGame } from '$lib/game/shouse/engine/createGame.js';
   import { DIFFICULTIES } from '$lib/game/shouse/engine/constants.js';
-  import { TOTAL_BUILD_COST } from '$lib/game/shouse/engine/stages.js';
+  import { STAGES, TOTAL_BUILD_COST } from '$lib/game/shouse/engine/stages.js';
   import { shouseGame } from '$lib/stores/shouseGame.js';
   import GameCanvas from './GameCanvas.svelte';
   import GameHUD from './GameHUD.svelte';
@@ -10,7 +10,16 @@
   import EventToast from './EventToast.svelte';
   import EndScreen from './EndScreen.svelte';
 
-  let phase = 'start'; // start | playing
+  // Ambient auto-sim: runs every stage, dwells on the finished shouse, loops.
+  // No player input — used as a living visualization of the build.
+  export let auto = false;
+  const AUTO_SPEED = 3; // run the day-clock at max speed
+  const AUTO_HOLD_MS = 12000; // dwell on the finished shouse before looping
+  const AUTO_TICK_MS = 350; // director cadence
+  let directorTimer = null;
+  let holdSince = 0;
+
+  let phase = auto ? 'playing' : 'start'; // start | playing
   let game = null;
   let canvasComp;
   let difficulty = 'builder';
@@ -88,7 +97,56 @@
     phase = 'start';
   }
 
+  // ── Auto-sim director ─────────────────────────────────────────────
+  // Drives the existing engine like an unbeatable optimal builder: tops up
+  // resources so it never stalls or loses, force-builds each stage in order,
+  // auto-picks every upgrade, then dwells on the finished shouse and loops.
+  function runDirector() {
+    if (!game) return;
+    const s = game.getState();
+
+    // This is a visualization, not a challenge: remove every fail/stall vector.
+    s.maxDay = 99999; // no deadline pressure
+    s.speed = AUTO_SPEED; // (re)applies after a loop restart spawns a fresh game
+    s.stressFrames = 0; // never lose to systems stress
+    s.buildLockUntilDay = 0; // ignore build-lock events
+    if (s.water < 35) s.water = s.waterCap;
+    if (s.power < 35) s.power = s.powerCap;
+
+    // A finished stage offers a free upgrade pick that blocks ticking — take it.
+    if (s.pendingUpgrade) {
+      game.selectUpgrade(s.pendingUpgrade.options[0].id);
+      return;
+    }
+
+    // Build the next stage the moment the crew is free.
+    if (s.stage < STAGES.length && !s.building) {
+      const cost = game.nextStageCost();
+      if (s.cash < cost) s.cash = cost + 1000;
+      game.buildNextStage();
+      return;
+    }
+
+    // All stages built: block the auto-win so the scene stays alive (FarmBot
+    // keeps harvesting), dwell, then loop back to raw land.
+    if (s.stage >= STAGES.length && !s.building) {
+      s.shakedownDays = 0;
+      if (holdSince === 0) holdSince = performance.now();
+      else if (performance.now() - holdSince >= AUTO_HOLD_MS) {
+        holdSince = 0;
+        replay(); // teardown + fresh game; {#key game} remounts the canvas
+      }
+    }
+  }
+
+  onMount(() => {
+    if (!auto) return;
+    start(difficulty);
+    directorTimer = setInterval(runDirector, AUTO_TICK_MS);
+  });
+
   onDestroy(teardown);
+  onDestroy(() => clearInterval(directorTimer));
 </script>
 
 {#if phase === 'start'}
@@ -136,17 +194,23 @@
     </div>
   </div>
 {:else if game}
-  <div class="game-stage">
-    <GameCanvas bind:this={canvasComp} {game} />
-    <GameHUD
-      {game}
-      on:rotate={(e) => canvasComp?.rotate(e.detail)}
-      on:cutaway={() => canvasComp?.toggleCutaway()}
-    />
-    <BuildMenu {game} />
-    <EventToast {toasts} />
-    <EndScreen {game} on:replay={replay} on:menu={backToMenu} />
-  </div>
+  {#key game}
+    <div class="game-stage">
+      <GameCanvas bind:this={canvasComp} {game} />
+      <GameHUD
+        {game}
+        on:rotate={(e) => canvasComp?.rotate(e.detail)}
+        on:cutaway={() => canvasComp?.toggleCutaway()}
+      />
+      {#if !auto}
+        <BuildMenu {game} />
+      {/if}
+      <EventToast {toasts} />
+      {#if !auto}
+        <EndScreen {game} on:replay={replay} on:menu={backToMenu} />
+      {/if}
+    </div>
+  {/key}
 {/if}
 
 <style>

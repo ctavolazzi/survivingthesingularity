@@ -47,3 +47,4 @@ logs
 *.sw?
 *.bak
 book-build/
+.AI-Setup/

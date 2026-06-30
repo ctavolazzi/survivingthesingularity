@@ -611,6 +611,30 @@
       }
     }
   },
+  "static/future-projections/future-of-jobs.png": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/future-projections/future-of-jobs.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/future_of_jobs_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/future_of_jobs_400.png",
+        "webp": "static/images/optimized/future_of_jobs_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/future_of_jobs_800.png",
+        "webp": "static/images/optimized/future_of_jobs_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/future_of_jobs_1200.png",
+        "webp": "static/images/optimized/future_of_jobs_1200.webp"
+      }
+    }
+  },
   "static/images/treasure-tavern-square.png": {
     "original": {
       "width": 600,
@@ -684,30 +708,6 @@
       "1200": {
         "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
         "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
-      }
-    }
-  },
-  "static/future-projections/future-of-jobs.png": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/future-projections/future-of-jobs.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/future_of_jobs_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/future_of_jobs_400.png",
-        "webp": "static/images/optimized/future_of_jobs_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/future_of_jobs_800.png",
-        "webp": "static/images/optimized/future_of_jobs_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/future_of_jobs_1200.png",
-        "webp": "static/images/optimized/future_of_jobs_1200.webp"
       }
     }
   },

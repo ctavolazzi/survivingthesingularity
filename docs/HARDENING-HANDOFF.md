@@ -4,7 +4,7 @@
 > your starting point. It captures what's done, what's verified, what remains (prioritized),
 > and the working method. Read `docs/ARCHITECTURE.md` first (the site + API map), then this.
 >
-> **Last updated:** 2026-06-30 · **Active branch:** `homepage-redux-jun2026`
+> **Last updated:** 2026-06-30 (session 2) · **Active branch:** `homepage-redux-jun2026`
 
 ---
 
@@ -22,6 +22,19 @@
 5. **Verify behavior, not just compilation.** The engine/sim code is DOM-free and can be
    driven headlessly in Node (see the auto-sim verification that proved the game loop). Use
    `curl` against the dev server for routes/headers; reserve a real browser for client render.
+
+---
+
+## What's done in session 2 (staged, not yet committed)
+
+- **P1.5** `vite.config.js` `sourcemap: false` — no `.map` files ship to CDN
+- **P1.6** `src/routes/api/fetch-title/+server.js` — `rateLimit('fetch-title:'+ip, 10, 60_000)` added
+- **P1.3** `src/routes/api/checklist-email/+server.js` — origin check + content-type guard match `waitlist/+server.js`
+- **P1.4** `src/lib/components/Navbar.svelte` — removed invalid `role="listitem"` from `<a>` and `role="list"` from container div; no more A11y build warning
+- **P1.2** `src/routes/blog/+page.server.js` — added 3 missing posts (darpa, neuralink, synthetic-biological-computers); removed unused `loadBlogPosts` import; blog index now covers all 12 real posts (example-template-post intentionally excluded)
+- **P1.1** `sql/005_preorders_copy_lock.sql` — new migration: `UNIQUE (edition_type, copy_number)` + `pg_advisory_xact_lock(hashtext('authors_copy'))` in trigger; endpoint already handles 23505/SOLD_OUT correctly
+
+All changes build green (`npm run build` ✓ 22.75s, ~65 prerendered routes, no A11y role warnings, zero .map files in client output). Awaiting commit.
 
 ---
 

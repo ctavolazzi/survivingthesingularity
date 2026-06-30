@@ -1,8 +1,5 @@
-import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts';
-
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
-  // Define blog posts directly with their routes
   const posts = [
     {
       title: 'The Algal Biorefinery Blueprint: Engineering the Post-Petrochemical Stack',
@@ -75,6 +72,30 @@ export async function load() {
       route: '/blog/claude-projects-weekend-project',
       excerpt: 'Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that\'s transforming how we interact with AI.',
       image: 'https://i.ytimg.com/vi/nbG2DO6Xsek/maxresdefault.jpg'
+    },
+    {
+      title: 'DARPA Seeks Plans for Large Bio-Mechanical Space Structures',
+      date: '2025-03-04',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/darpa-biomechanical-space-structures',
+      excerpt: 'DARPA has issued a request for information on building massive biological structures in space, exploring a sci-fi future where space infrastructure might be grown rather than assembled.',
+      image: 'https://futurism.com/_next/image?url=https%3A%2F%2Fwordpress-assets.futurism.com%2F2025%2F02%2Fdarpa-requests-plans-large-bio-mechanical-space-structures.jpg&w=2048&q=75'
+    },
+    {
+      title: "Neuralink's Latest Breakthrough: A New Era in Brain-Computer Interfaces",
+      date: '2024-03-09',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/neuralink-latest-breakthrough',
+      excerpt: "Neuralink's first human trial participants are controlling computers with their thoughts. A look at where brain-computer interface technology stands today and what comes next.",
+      image: 'https://www.digitaltrends.com/wp-content/uploads/2019/07/finalmente-sapremo-neuralink-progetto-segreto-elon-musk-v3-388343.jpg?resize=1200%2C630&p=1'
+    },
+    {
+      title: 'Synthetic Biological Intelligence: Living Human Cells Power Next-Gen Computing',
+      date: '2025-04-07',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/synthetic-biological-computers',
+      excerpt: "The world's first commercial \"biological computer\" fuses living human neurons with silicon hardware, potentially outpacing traditional AI systems while raising profound ethical questions.",
+      image: 'https://newatlas-brightspot.s3.amazonaws.com/47/f5/8b2b6d674ae78eb44e8a2d6b5494/wetware-chip.jpg'
     }
   ];
 

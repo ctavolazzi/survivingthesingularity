@@ -15,126 +15,6 @@
       }
     }
   },
-  "static/images/blog/singularity-express.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/singularity-express.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/singularity_express_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/singularity_express_400.jpg",
-        "webp": "static/images/optimized/singularity_express_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/singularity_express_800.jpg",
-        "webp": "static/images/optimized/singularity_express_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/singularity_express_1200.jpg",
-        "webp": "static/images/optimized/singularity_express_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/robot-farm-bot.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/robot-farm-bot.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/robot_farm_bot_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/robot_farm_bot_400.jpg",
-        "webp": "static/images/optimized/robot_farm_bot_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/robot_farm_bot_800.jpg",
-        "webp": "static/images/optimized/robot_farm_bot_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/robot_farm_bot_1200.jpg",
-        "webp": "static/images/optimized/robot_farm_bot_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/farm-bot-deep-dive.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/farm-bot-deep-dive.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/farm_bot_deep_dive_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/farm_bot_deep_dive_400.jpg",
-        "webp": "static/images/optimized/farm_bot_deep_dive_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/farm_bot_deep_dive_800.jpg",
-        "webp": "static/images/optimized/farm_bot_deep_dive_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/farm_bot_deep_dive_1200.jpg",
-        "webp": "static/images/optimized/farm_bot_deep_dive_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/darpa-biomechanical-space-structures.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/darpa-biomechanical-space-structures.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/darpa_biomechanical_space_structures_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/darpa_biomechanical_space_structures_400.jpg",
-        "webp": "static/images/optimized/darpa_biomechanical_space_structures_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/darpa_biomechanical_space_structures_800.jpg",
-        "webp": "static/images/optimized/darpa_biomechanical_space_structures_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/darpa_biomechanical_space_structures_1200.jpg",
-        "webp": "static/images/optimized/darpa_biomechanical_space_structures_1200.webp"
-      }
-    }
-  },
-  "static/images/blog/claude-projects-weekend-project.jpg": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/images/blog/claude-projects-weekend-project.jpg"
-    },
-    "webp": {
-      "original": "static/images/optimized/claude_projects_weekend_project_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/claude_projects_weekend_project_400.jpg",
-        "webp": "static/images/optimized/claude_projects_weekend_project_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/claude_projects_weekend_project_800.jpg",
-        "webp": "static/images/optimized/claude_projects_weekend_project_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/claude_projects_weekend_project_1200.jpg",
-        "webp": "static/images/optimized/claude_projects_weekend_project_1200.webp"
-      }
-    }
-  },
   "static/book-images/intro-asimo.jpg": {
     "original": {
       "width": 1280,
@@ -463,6 +343,126 @@
       }
     }
   },
+  "static/images/blog/singularity-express.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/singularity-express.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/singularity_express_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/singularity_express_400.jpg",
+        "webp": "static/images/optimized/singularity_express_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/singularity_express_800.jpg",
+        "webp": "static/images/optimized/singularity_express_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/singularity_express_1200.jpg",
+        "webp": "static/images/optimized/singularity_express_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/robot-farm-bot.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/robot-farm-bot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/robot_farm_bot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/robot_farm_bot_400.jpg",
+        "webp": "static/images/optimized/robot_farm_bot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/robot_farm_bot_800.jpg",
+        "webp": "static/images/optimized/robot_farm_bot_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/robot_farm_bot_1200.jpg",
+        "webp": "static/images/optimized/robot_farm_bot_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/farm-bot-deep-dive.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/farm-bot-deep-dive.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/farm_bot_deep_dive_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/farm_bot_deep_dive_400.jpg",
+        "webp": "static/images/optimized/farm_bot_deep_dive_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/farm_bot_deep_dive_800.jpg",
+        "webp": "static/images/optimized/farm_bot_deep_dive_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/farm_bot_deep_dive_1200.jpg",
+        "webp": "static/images/optimized/farm_bot_deep_dive_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/darpa-biomechanical-space-structures.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/darpa-biomechanical-space-structures.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/darpa_biomechanical_space_structures_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/darpa_biomechanical_space_structures_400.jpg",
+        "webp": "static/images/optimized/darpa_biomechanical_space_structures_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/darpa_biomechanical_space_structures_800.jpg",
+        "webp": "static/images/optimized/darpa_biomechanical_space_structures_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/darpa_biomechanical_space_structures_1200.jpg",
+        "webp": "static/images/optimized/darpa_biomechanical_space_structures_1200.webp"
+      }
+    }
+  },
+  "static/images/blog/claude-projects-weekend-project.jpg": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/images/blog/claude-projects-weekend-project.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/claude_projects_weekend_project_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/claude_projects_weekend_project_400.jpg",
+        "webp": "static/images/optimized/claude_projects_weekend_project_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/claude_projects_weekend_project_800.jpg",
+        "webp": "static/images/optimized/claude_projects_weekend_project_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/claude_projects_weekend_project_1200.jpg",
+        "webp": "static/images/optimized/claude_projects_weekend_project_1200.webp"
+      }
+    }
+  },
   "static/sts-welcome.png": {
     "original": {
       "width": 1280,
@@ -611,30 +611,6 @@
       }
     }
   },
-  "static/future-projections/future-of-jobs.png": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/future-projections/future-of-jobs.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/future_of_jobs_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/future_of_jobs_400.png",
-        "webp": "static/images/optimized/future_of_jobs_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/future_of_jobs_800.png",
-        "webp": "static/images/optimized/future_of_jobs_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/future_of_jobs_1200.png",
-        "webp": "static/images/optimized/future_of_jobs_1200.webp"
-      }
-    }
-  },
   "static/images/treasure-tavern-square.png": {
     "original": {
       "width": 600,
@@ -708,6 +684,30 @@
       "1200": {
         "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
         "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
+      }
+    }
+  },
+  "static/future-projections/future-of-jobs.png": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/future-projections/future-of-jobs.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/future_of_jobs_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/future_of_jobs_400.png",
+        "webp": "static/images/optimized/future_of_jobs_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/future_of_jobs_800.png",
+        "webp": "static/images/optimized/future_of_jobs_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/future_of_jobs_1200.png",
+        "webp": "static/images/optimized/future_of_jobs_1200.webp"
       }
     }
   },

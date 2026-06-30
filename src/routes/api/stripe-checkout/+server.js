@@ -1,6 +1,7 @@
 import { json, redirect } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import Stripe from 'stripe';
+import { rateLimit } from '$lib/server/rateLimit.js';
 
 const PRICE_ID      = env.STRIPE_PRICE_ID;
 const SECRET_KEY    = env.STRIPE_SECRET_KEY;
@@ -12,10 +13,21 @@ const isMockKey = !SECRET_KEY || SECRET_KEY === 'placeholder' || SECRET_KEY.star
 const stripe = isMockKey ? null : new Stripe(SECRET_KEY, { apiVersion: '2024-06-20' });
 
 /** @type {import('./$types').RequestHandler} */
-export async function POST({ request, url }) {
+export async function POST({ request, url, getClientAddress }) {
   const origin = request.headers.get('origin');
   if (origin && origin !== url.origin) {
     return json({ error: 'Bad request.' }, { status: 403 });
+  }
+
+  const contentType = request.headers.get('content-type') ?? '';
+  if (!contentType.includes('application/json')) {
+    return json({ error: 'Bad request.' }, { status: 400 });
+  }
+
+  const ip = getClientAddress();
+  const { allowed } = rateLimit(`stripe:${ip}`, 5, 10 * 60_000);
+  if (!allowed) {
+    return json({ error: 'Too many requests.' }, { status: 429 });
   }
 
   // MOCK MODE — no Stripe key configured yet. Use request origin so the

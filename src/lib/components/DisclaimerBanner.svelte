@@ -3,12 +3,7 @@
   import { browser } from '$app/environment';
   import { fly, fade } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
-
-  // Hybrid clickwrap consent. "I Agree" stores a versioned consent record
-  // (timestamp + version) in localStorage. Banner re-shows if the version
-  // string is bumped (e.g. when terms materially change).
-  const CONSENT_VERSION = 'v2-2026-06-07';
-  const CONSENT_KEY = 'sts:consent';
+  import { CONSENT_KEY, CONSENT_VERSION } from '$lib/consent.js';
 
   let agreed = false;
   let agreedAt = '';

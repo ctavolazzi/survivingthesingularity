@@ -50,7 +50,7 @@
       {@const featured = posts[0]}
       <a href={featured.route} class="featured-card">
         <div class="featured-image-wrap">
-          <img src={featured.image} alt={featured.title} class="featured-image" loading="lazy" />
+          <img src={featured.image} alt={featured.title} class="featured-image" loading="lazy" decoding="async" />
           <div class="featured-overlay"></div>
           <span class="featured-badge">Latest</span>
         </div>
@@ -73,7 +73,7 @@
         {#each posts.slice(1) as post, i}
           <a href={post.route} class="post-card" style="animation-delay: {(i + 1) * 60}ms">
             <div class="post-image-wrap">
-              <img src={post.image} alt={post.title} class="post-image" loading="lazy" />
+              <img src={post.image} alt={post.title} class="post-image" loading="lazy" decoding="async" />
             </div>
             <div class="post-content">
               <div class="post-meta">

@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
+import { rateLimit } from '$lib/server/rateLimit.js';
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST(event) {
@@ -13,10 +14,19 @@ export async function POST(event) {
     return json({ error: 'Bad request.' }, { status: 400 });
   }
 
+  const ip = event.getClientAddress();
+  const { allowed } = rateLimit(`unsubscribe:${ip}`, 5, 60_000);
+  if (!allowed) {
+    return json({ error: 'Too many requests.' }, { status: 429 });
+  }
+
   const body = await event.request.json().catch(() => null);
   if (!body || typeof body.token !== 'string') {
     return json({ error: 'Bad request.' }, { status: 400 });
   }
+
+  // Honeypot: bots fill this, humans don't.
+  if (body._hp) return json({ ok: true }, { status: 200 });
 
   const token = body.token.trim();
   // Basic UUID format check before hitting the DB.

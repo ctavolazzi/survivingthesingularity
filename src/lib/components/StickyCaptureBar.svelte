@@ -2,6 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/stores';
+  import { CONSENT_KEY, CONSENT_VERSION } from '$lib/consent.js';
 
   // Routes where an interrupting bar is unwelcome: legal pages, long-form
   // reading views, and the checklist page itself (it IS the destination).
@@ -9,11 +10,6 @@
 
   const STORAGE_KEY = 'sts_capture_v2'; // 'dismissed'
   const SCROLL_TRIGGER = 700; // px scrolled before it can appear
-
-  // Mirror of DisclaimerBanner's consent record. The bar must not appear until
-  // the bottom consent banner is accepted (both are bottom-fixed — would collide).
-  const CONSENT_KEY = 'sts:consent';
-  const CONSENT_VERSION = 'v2-2026-06-07';
 
   let visible = false;
   let resolved = false;  // dismissed this device

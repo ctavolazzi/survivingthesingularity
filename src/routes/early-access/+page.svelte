@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { page } from '$app/stores';
 
   let loading = false;
   let error = '';
@@ -69,8 +70,14 @@
 </script>
 
 <svelte:head>
-  <title>Early Access. Surviving the Singularity</title>
+  <title>Early Access | Surviving the Singularity</title>
   <meta name="description" content="Reserve your early-access spot free. Get instant access to the checklist, live research feed, and book draft. $5 at launch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Early Access | Surviving the Singularity" />
+  <meta property="og:description" content="Reserve your early-access spot free. Get instant access to the checklist, live research feed, and book draft. $5 at launch." />
+  <meta property="og:image" content="{$page.url.origin}/Surviving-the-Singularity-Cover.png" />
+  <meta property="og:url" content="{$page.url.href}" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <!-- ── HERO ── -->
@@ -185,23 +192,23 @@
 
     <div class="ea-image-grid">
       <div class="ea-img-cell ea-img-large">
-        <img src="/book-images/ch02-factory-robots.jpg" alt="Factory automation robots. Chapter 2." loading="lazy" />
+        <img src="/book-images/ch02-factory-robots.jpg" alt="Factory automation robots. Chapter 2." loading="lazy" decoding="async" />
         <div class="ea-img-cap">Physical Automation</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch11-spot.jpg" alt="Boston Dynamics Spot, Chapter 11" loading="lazy" />
+        <img src="/book-images/ch11-spot.jpg" alt="Boston Dynamics Spot, Chapter 11" loading="lazy" decoding="async" />
         <div class="ea-img-cap">Field Robotics</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch12-farmbot.jpg" alt="FarmBot garden automation, Chapter 12" loading="lazy" />
+        <img src="/book-images/ch12-farmbot.jpg" alt="FarmBot garden automation, Chapter 12" loading="lazy" decoding="async" />
         <div class="ea-img-cap">Food Autonomy</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch02-waymo.jpg" alt="Waymo autonomous vehicle" loading="lazy" />
+        <img src="/book-images/ch02-waymo.jpg" alt="Waymo autonomous vehicle" loading="lazy" decoding="async" />
         <div class="ea-img-cap">Autonomous Transport</div>
       </div>
       <div class="ea-img-cell ea-img-wide">
-        <img src="/book-images/ch01-atlas.jpg" alt="Boston Dynamics Atlas, Chapter 1" loading="lazy" />
+        <img src="/book-images/ch01-atlas.jpg" alt="Boston Dynamics Atlas, Chapter 1" loading="lazy" decoding="async" />
         <div class="ea-img-cap">The New Era</div>
       </div>
     </div>
@@ -342,7 +349,7 @@
 <section class="ea-author">
   <div class="ea-author-inner">
     <div class="ea-author-photo-wrap">
-      <img src="/author-headshot.png" alt="Author photo" class="ea-author-photo" width="120" height="120" loading="lazy" />
+      <img src="/author-headshot.png" alt="Author photo" class="ea-author-photo" width="120" height="120" loading="lazy" decoding="async" />
     </div>
     <div class="ea-author-copy">
       <p class="ea-label">Who's building this</p>

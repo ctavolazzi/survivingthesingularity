@@ -8,6 +8,15 @@ const from = env.EMAIL_FROM || 'Surviving the Singularity <onboarding@resend.dev
 
 const resend = apiKey ? new Resend(apiKey) : null;
 
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
 /**
  * Source-aware welcome copy. The checklist is delivered on-site (the email is
  * a confirmation + nudge back), so its copy differs from the book waitlist.
@@ -57,7 +66,8 @@ function renderHtml({ heading, body, cta, unsubscribeUrl }) {
 export async function sendPreorderConfirmation({ name, email, edition_type, copy_number }) {
   if (!resend) return { skipped: true };
   const isAuthors = edition_type === 'authors';
-  const greeting = name ? `Hi ${name},` : 'Hi,';
+  const safeName = name ? escapeHtml(name.slice(0, 120)) : '';
+  const greeting = safeName ? `Hi ${safeName},` : 'Hi,';
 
   const heading = isAuthors
     ? `You're copy #${copy_number} of 100.`

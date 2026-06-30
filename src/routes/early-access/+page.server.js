@@ -2,6 +2,10 @@ import { sections } from '$lib/data/blueprint.js';
 import signalsData from '$lib/data/signals.json';
 import { getWaitlistCount } from '$lib/server/supabaseAdmin.js';
 
+// Keep SSR: shows the live waitlist count and most-recent signals. Opting out
+// so the homepage-driven prerender crawl doesn't try to bake this page.
+export const prerender = false;
+
 // Only surface a signup count once it's genuinely impressive. Below this it
 // reads as "nobody signed up" and hurts conversion, so we hide it entirely.
 const SOCIAL_PROOF_THRESHOLD = 100;

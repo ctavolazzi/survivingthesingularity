@@ -4,6 +4,9 @@ import Stripe from 'stripe';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { sendDownloadEmail } from '$lib/server/email.js';
 
+// Per-request: reads session_id/email from the query string. Never prerender.
+export const prerender = false;
+
 const SECRET_KEY  = env.STRIPE_SECRET_KEY;
 const BUNDLE_PATH = env.DOWNLOAD_BUNDLE_PATH || 'research-bundle-v1.zip';
 const BUCKET      = env.DOWNLOAD_BUCKET      || 'downloads';

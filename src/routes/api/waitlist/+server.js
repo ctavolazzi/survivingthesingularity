@@ -100,12 +100,16 @@ export async function POST(event) {
     unsubscribeToken = tokenRow?.unsubscribe_token;
   }
 
-  // Welcome/confirmation email. Non-blocking: a send failure must never turn a
-  // successful signup into an error for the visitor.
-  try {
-    await sendWelcomeEmail({ to: email, source, unsubscribeToken });
-  } catch (e) {
-    console.error('[waitlist] welcome email threw:', e?.message ?? e);
+  // Welcome/confirmation email. Out of the signup critical path: the DB insert is
+  // the only thing the visitor waits on, so a slow/rate-limited Resend send during
+  // a traffic spike never becomes signup latency. On serverless we hand the send to
+  // waitUntil() so it survives after the response is returned (a bare promise can be
+  // killed when the isolate freezes); locally it just runs in the background.
+  const welcome = sendWelcomeEmail({ to: email, source, unsubscribeToken }).catch((e) =>
+    console.error('[waitlist] welcome email threw:', e?.message ?? e)
+  );
+  if (event.platform?.context?.waitUntil) {
+    event.platform.context.waitUntil(welcome);
   }
 
   return json({ ok: true }, { status: 201 });

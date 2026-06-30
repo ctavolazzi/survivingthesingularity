@@ -1,14 +1,4 @@
-import { getWaitlistCount } from '$lib/server/supabaseAdmin.js';
-
-// Only surface a signup count once it's genuinely impressive. Below this it
-// reads as "nobody signed up" and hurts conversion, so we hide it entirely.
-const SOCIAL_PROOF_THRESHOLD = 100;
-
-export async function load() {
-  const count = await getWaitlistCount();
-  return {
-    items: [],
-    // Display-ready: a number to show, or null to hide the proof entirely.
-    signupCount: typeof count === 'number' && count >= SOCIAL_PROOF_THRESHOLD ? count : null,
-  };
-}
+// The homepage is fully static content — prerender it so the launch spike is
+// absorbed by the CDN edge instead of invoking a serverless function per view.
+// (The previous server load fetched a waitlist count the page never rendered.)
+export const prerender = true;

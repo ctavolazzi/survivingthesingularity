@@ -83,5 +83,6 @@ export async function load() {
   };
 }
 
-// Disable prerendering since we're using async data fetching
-export const prerender = false;
+// The post list is static data — prerender the blog index (and, via crawl, each
+// linked post) so these read-only pages serve from the CDN edge.
+export const prerender = true;

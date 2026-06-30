@@ -1,6 +1,12 @@
 import { error } from '@sveltejs/kit';
 import { book, sections } from '$lib/bookContent';
 
+// The crawler can't discover every section link, so enumerate them explicitly
+// from the static book content. This lets each /book/<id> page prerender.
+export function entries() {
+  return book.sections.map((s) => ({ sectionId: s.id }));
+}
+
 export async function load({ params }) {
   try {
     const section = book.sections.find(s => s.id === params.sectionId);

@@ -1,7 +1,42 @@
 <script>
+  import { onMount } from 'svelte';
+
   let loading = false;
   let error = '';
   let email = '';
+
+  const BUFFER_KEY = 'sts_pending_signups';
+
+  function bufferLead(addr) {
+    try {
+      const pending = JSON.parse(localStorage.getItem(BUFFER_KEY) ?? '[]');
+      if (!pending.includes(addr)) pending.push(addr);
+      localStorage.setItem(BUFFER_KEY, JSON.stringify(pending));
+    } catch { /* localStorage unavailable — nothing more we can do */ }
+  }
+
+  async function postSignup(addr) {
+    return fetch('/api/waitlist', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: addr, source: 'early-access', newsletter_consent: true, book_release_consent: true }),
+    });
+  }
+
+  // On load, try to flush any leads buffered during a previous outage.
+  onMount(async () => {
+    let pending;
+    try { pending = JSON.parse(localStorage.getItem(BUFFER_KEY) ?? '[]'); } catch { return; }
+    if (!Array.isArray(pending) || pending.length === 0) return;
+    const stillPending = [];
+    for (const addr of pending) {
+      try {
+        const res = await postSignup(addr);
+        if (!res.ok && res.status >= 500) stillPending.push(addr); // retry server errors only
+      } catch { stillPending.push(addr); }
+    }
+    try { localStorage.setItem(BUFFER_KEY, JSON.stringify(stillPending)); } catch { /* ignore */ }
+  });
 
   async function joinWaitlist() {
     if (loading) return;
@@ -10,19 +45,25 @@
     loading = true;
     error = '';
     try {
-      const res = await fetch('/api/waitlist', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: trimmed, source: 'early-access', newsletter_consent: true, book_release_consent: true }),
-      });
-      const json = await res.json();
-      if (!res.ok && json.error !== 'already_subscribed') {
-        throw new Error(json.error ?? 'Something went wrong. Please try again.');
+      const res = await postSignup(trimmed);
+      // 400 = genuinely invalid email; surface it so the visitor can fix it.
+      if (res.status === 400) {
+        const json = await res.json().catch(() => ({}));
+        error = json.error ?? 'Enter a valid email address.';
+        loading = false;
+        return;
+      }
+      // Anything else that isn't a clean success (5xx outage, 429, network fail):
+      // buffer the lead locally and proceed. Losing a high-intent lead is worse
+      // than a delayed welcome email — the onMount flush retries it later.
+      if (!res.ok) {
+        const json = await res.json().catch(() => ({}));
+        if (json.error !== 'already_subscribed') bufferLead(trimmed);
       }
       window.location.href = `/early-access/success?session_id=waitlist&email=${encodeURIComponent(trimmed)}`;
     } catch (err) {
-      error = err.message ?? 'Something went wrong. Please try again.';
-      loading = false;
+      bufferLead(trimmed);
+      window.location.href = `/early-access/success?session_id=waitlist&email=${encodeURIComponent(trimmed)}`;
     }
   }
 </script>

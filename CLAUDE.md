@@ -21,18 +21,25 @@ A SvelteKit web platform for the **YouTube Shouse Blueprint** — a comprehensiv
 
 ## Routes
 ```
-/                    → Landing page (hero + thesis + 3 pillars + stack table + chapter preview)
-/blueprint           → Blueprint table of contents (8 chapters)
-/blueprint/[section] → Individual blueprint sections (data from src/lib/data/blueprint.js)
-/book                → Book preview (existing content preserved)
-/blog                → Blog listing (existing posts preserved)
+/                    → Landing page
+/book                → Book preview (password-gated draft access)
+/book/[sectionId]    → Individual book sections
+/blog                → Blog listing
 /blog/[slug]         → Individual blog posts
+/checklist           → Free readiness checklist (EmailGate + email-to-inbox)
+/signals             → Signals feed (arXiv sweep ticker)
+/early-access        → Email capture + Stripe checkout ($5 preorder)
+/early-access/success → Post-checkout fulfillment page
 /about               → About page
-/login               → Auth (login/signup/forgot password)
-/profile             → User profile (protected route)
-/auth/callback       → OAuth/email callback handler
-/policies            → Legal policies
+/launch              → Launch page
+/unsubscribe         → One-click unsubscribe
+/policies /terms /disclaimer /accessibility → Legal pages
+/api/*               → waitlist, checklist-email, stripe-checkout, timeline,
+                       featured-posts, verify-book-password, unsubscribe,
+                       fetch-title, discord-application
 ```
+(There are no /blueprint, /login, /profile, or /auth routes — removed in a past
+redesign; don't link to them.)
 
 ## Key Files
 - `src/hooks.server.js` — Supabase session management (gracefully degrades without credentials)

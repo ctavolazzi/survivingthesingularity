@@ -1,80 +1,40 @@
 <script>
-  import { onMount } from 'svelte';
   import { page } from '$app/stores';
 
-  let loading = false;
-  let error = '';
-  let email = '';
+  let checkoutLoading = false;
+  let checkoutError = '';
+  let selectedEdition = $page.url.searchParams.get('edition') === 'authors' ? 'authors' : 'standard';
 
-  const BUFFER_KEY = 'sts_pending_signups';
-
-  function bufferLead(addr) {
+  async function checkout() {
+    if (checkoutLoading) return;
+    checkoutLoading = true;
+    checkoutError = '';
     try {
-      const pending = JSON.parse(localStorage.getItem(BUFFER_KEY) ?? '[]');
-      if (!pending.includes(addr)) pending.push(addr);
-      localStorage.setItem(BUFFER_KEY, JSON.stringify(pending));
-    } catch { /* localStorage unavailable — nothing more we can do */ }
-  }
-
-  async function postSignup(addr) {
-    return fetch('/api/waitlist', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: addr, source: 'early-access', newsletter_consent: true, book_release_consent: true }),
-    });
-  }
-
-  // On load, try to flush any leads buffered during a previous outage.
-  onMount(async () => {
-    let pending;
-    try { pending = JSON.parse(localStorage.getItem(BUFFER_KEY) ?? '[]'); } catch { return; }
-    if (!Array.isArray(pending) || pending.length === 0) return;
-    const stillPending = [];
-    for (const addr of pending) {
-      try {
-        const res = await postSignup(addr);
-        if (!res.ok && res.status >= 500) stillPending.push(addr); // retry server errors only
-      } catch { stillPending.push(addr); }
-    }
-    try { localStorage.setItem(BUFFER_KEY, JSON.stringify(stillPending)); } catch { /* ignore */ }
-  });
-
-  async function joinWaitlist() {
-    if (loading) return;
-    const trimmed = email.trim().toLowerCase();
-    if (!trimmed) { error = 'Enter your email to continue.'; return; }
-    loading = true;
-    error = '';
-    try {
-      const res = await postSignup(trimmed);
-      // 400 = genuinely invalid email; surface it so the visitor can fix it.
-      if (res.status === 400) {
-        const json = await res.json().catch(() => ({}));
-        error = json.error ?? 'Enter a valid email address.';
-        loading = false;
-        return;
+      const res = await fetch('/api/stripe-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ edition_type: selectedEdition }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        checkoutError = data.error ?? 'Could not start checkout. Try again.';
+        checkoutLoading = false;
       }
-      // Anything else that isn't a clean success (5xx outage, 429, network fail):
-      // buffer the lead locally and proceed. Losing a high-intent lead is worse
-      // than a delayed welcome email — the onMount flush retries it later.
-      if (!res.ok) {
-        const json = await res.json().catch(() => ({}));
-        if (json.error !== 'already_subscribed') bufferLead(trimmed);
-      }
-      window.location.href = `/early-access/success?session_id=waitlist&email=${encodeURIComponent(trimmed)}`;
-    } catch (err) {
-      bufferLead(trimmed);
-      window.location.href = `/early-access/success?session_id=waitlist&email=${encodeURIComponent(trimmed)}`;
+    } catch {
+      checkoutError = 'Network error. Try again.';
+      checkoutLoading = false;
     }
   }
 </script>
 
 <svelte:head>
   <title>Early Access | Surviving the Singularity</title>
-  <meta name="description" content="Reserve your early-access spot free. Get instant access to the checklist, live research feed, and book draft. $5 at launch." />
+  <meta name="description" content="Preorder for $5. Get the current book draft, research bundle, and a locked-in spot before the general public. Expected launch 2026." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Early Access | Surviving the Singularity" />
-  <meta property="og:description" content="Reserve your early-access spot free. Get instant access to the checklist, live research feed, and book draft. $5 at launch." />
+  <meta property="og:description" content="Preorder for $5. Get the current book draft, research bundle, and a locked-in spot before the general public. Expected launch 2026." />
   <meta property="og:image" content="{$page.url.origin}/Surviving-the-Singularity-Cover.png" />
   <meta property="og:url" content="{$page.url.href}" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -88,13 +48,16 @@
     <div class="ea-cover-col">
       <div class="ea-cover-wrap">
         <div class="ea-cover-glow" aria-hidden="true"></div>
-        <img
-          src="/images/surviving_the_singularity_cover_1200.png"
-          alt="Surviving the Singularity book cover"
-          class="ea-cover-img"
-          width="600"
-          height="800"
-        />
+        <picture>
+          <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
+          <img
+            src="/images/surviving_the_singularity_cover_1200.png"
+            alt="Surviving the Singularity book cover"
+            class="ea-cover-img"
+            width="600"
+            height="800"
+          />
+        </picture>
         <div class="ea-cover-badge">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
             <circle cx="6" cy="6" r="6" fill="#f59e0b" opacity="0.2"/>
@@ -109,73 +72,66 @@
     <div class="ea-offer-col">
       <div class="ea-urgency-badge">
         <span class="ea-urgency-dot" aria-hidden="true"></span>
-        Limited time offer
+        Early access pricing
       </div>
 
       <h1 class="ea-heading">
-        Everything I'm<br>building.<br><span class="ea-amber">Reserve your spot.</span>
+        Preorder the book.<br><span class="ea-amber">Get the bundle now.</span>
       </h1>
       <p class="ea-sub">
-        Enter your email to lock in early-access pricing ($5 at launch). Get access to the checklist, research feed, and book draft now, free.
+        $5 gets you the current book draft, the research bundle, and a 50% discount at launch.
       </p>
+      <p class="ea-sub ea-sub-label">You get:</p>
+      <ul class="ea-hero-list">
+        <li>The research bundle delivered to your inbox today</li>
+        <li>The current book draft</li>
+        <li>Exclusive link to buy the finished book at 50% off at launch</li>
+        <li>First access to the Author's Edition before the general public</li>
+      </ul>
 
       <div class="ea-price-card">
         <div class="ea-price-row">
-          <div class="ea-price-amount ea-price-free">Free</div>
+          <div class="ea-price-amount"><sup>$</sup>5</div>
           <div class="ea-price-meta-col">
-            <span class="ea-price-type">reserve your spot now</span>
-            <span class="ea-price-note">$5 at launch &middot; early-access price locked in</span>
+            <span class="ea-price-type">one-time preorder</span>
           </div>
         </div>
 
-        <form class="ea-email-form" on:submit|preventDefault={joinWaitlist}>
-          <input
-            type="email"
-            bind:value={email}
-            class="ea-email-input"
-            placeholder="your@email.com"
-            required
-            autocomplete="email"
-            disabled={loading}
-          />
-          <button type="submit" class="ea-buy-btn" disabled={loading}>
-            {#if loading}
-              Reserving your spot...
-            {:else}
-              Reserve My Spot — Free
-              <span class="ea-buy-icon" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            {/if}
-          </button>
-        </form>
+        <p class="ea-edition-label">Choose your edition</p>
+        <!-- Edition selector (inline, compact) -->
+        <div class="ea-edition-toggle">
+          <button
+            class="ea-edition-opt"
+            class:ea-edition-opt-active={selectedEdition === 'standard'}
+            on:click={() => selectedEdition = 'standard'}
+            type="button"
+          >Standard Edition</button>
+          <button
+            class="ea-edition-opt"
+            class:ea-edition-opt-active={selectedEdition === 'authors'}
+            on:click={() => selectedEdition = 'authors'}
+            type="button"
+          >Author's Edition <span class="ea-edition-limit">100 copies</span></button>
+        </div>
 
-        {#if error}
-          <p class="ea-checkout-error">{error}</p>
+        <button class="ea-buy-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
+          {#if checkoutLoading}
+            Redirecting to checkout...
+          {:else if selectedEdition === 'authors'}
+            Reserve Author's Edition: $5
+          {:else}
+            Preorder Now: $5
+          {/if}
+        </button>
+
+        {#if checkoutError}
+          <p class="ea-checkout-error">{checkoutError}</p>
         {/if}
 
-        <ul class="ea-quick-list">
-          <li>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            12-step readiness checklist
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Full book, all chapters
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Research bundle: PDFs, papers, source docs
-          </li>
-          <li>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Everything I ship next
-          </li>
-        </ul>
 
         <p class="ea-secure-note">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          No spam. No credit card. <a href="/policies">Privacy policy</a>.
+          Secured by Stripe. <a href="/policies">Privacy policy</a>.
         </p>
       </div>
     </div>
@@ -192,34 +148,71 @@
 
     <div class="ea-image-grid">
       <div class="ea-img-cell ea-img-large">
-        <img src="/book-images/ch02-factory-robots.jpg" alt="Factory automation robots. Chapter 2." loading="lazy" decoding="async" />
+        <img src="/book-images/ch02-factory-robots.webp" alt="Factory automation robots. Chapter 2." loading="lazy" decoding="async" />
         <div class="ea-img-cap">Physical Automation</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch11-spot.jpg" alt="Boston Dynamics Spot, Chapter 11" loading="lazy" decoding="async" />
+        <img src="/book-images/ch11-spot.webp" alt="Boston Dynamics Spot, Chapter 11" loading="lazy" decoding="async" />
         <div class="ea-img-cap">Field Robotics</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch12-farmbot.jpg" alt="FarmBot garden automation, Chapter 12" loading="lazy" decoding="async" />
+        <img src="/book-images/ch12-farmbot.webp" alt="FarmBot garden automation, Chapter 12" loading="lazy" decoding="async" />
         <div class="ea-img-cap">Food Autonomy</div>
       </div>
       <div class="ea-img-cell">
-        <img src="/book-images/ch02-waymo.jpg" alt="Waymo autonomous vehicle" loading="lazy" decoding="async" />
+        <img src="/book-images/ch02-waymo.webp" alt="Waymo autonomous vehicle" loading="lazy" decoding="async" />
         <div class="ea-img-cap">Autonomous Transport</div>
       </div>
       <div class="ea-img-cell ea-img-wide">
-        <img src="/book-images/ch01-atlas.jpg" alt="Boston Dynamics Atlas, Chapter 1" loading="lazy" decoding="async" />
+        <img src="/book-images/ch01-atlas.webp" alt="Boston Dynamics Atlas, Chapter 1" loading="lazy" decoding="async" />
         <div class="ea-img-cap">The New Era</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ── WHAT'S ACTUALLY IN THE BOOK ── -->
+<section class="ea-parts">
+  <div class="ea-parts-inner">
+    <p class="ea-label">Inside the book</p>
+    <h2 class="ea-preview-heading">Three parts. Nine stages. One roadmap.</h2>
+    <p class="ea-preview-sub">Not a vibes-based prediction. A structural argument, built stage by stage, with a plan attached.</p>
+
+    <div class="ea-parts-grid">
+      <div class="ea-part-card">
+        <span class="ea-part-num">Part I</span>
+        <h3 class="ea-part-title">What Is the Singularity?</h3>
+        <p class="ea-part-desc">
+          The case that the 2017 Transformer architecture already crossed the event horizon: parallel self-attention let models start processing their own architecture, which is what makes unassisted recursive self-improvement possible. This part lays out the 9-stage map of the intelligence explosion, from the first cash grab to a machine that outgrows the planet, and the physical limits — energy, compute, thermodynamics — that even a superintelligence can't skip.
+        </p>
+      </div>
+      <div class="ea-part-card">
+        <span class="ea-part-num">Part II</span>
+        <h3 class="ea-part-title">How Humans React</h3>
+        <p class="ea-part-desc">
+          The hard part was never the machine. It's us. This part breaks down the predictable arc of the human response — the panic, the power grabs, the backlash — and the deliberate shift it takes to get past fear-based hierarchy into the kind of open, collective problem-solving that actually survives a transition like this.
+        </p>
+      </div>
+      <div class="ea-part-card">
+        <span class="ea-part-num">Part III</span>
+        <h3 class="ea-part-title">How to Survive the Transition</h3>
+        <p class="ea-part-desc">
+          The actionable core. Why dependence on global supply chains is a structural liability waiting to fail. The Shouse Grid: semi-independent local microgrids and air-gapped compute. The Local Biological Hub: closing the loop on food, shelter, and medicine at the neighborhood level. The Adequate Level of Care (ALC): a real replacement for GDP that measures whether your community can actually take care of its people if the global grid goes down.
+        </p>
+      </div>
+    </div>
+
+    <blockquote class="ea-pull-quote">
+      "2027 is the tipping point — the year the loop closes on unassisted recursive self-improvement. Once that starts, there's no pausing it, and there's no going back to the way things were."
+    </blockquote>
+  </div>
+</section>
+
 <!-- ── WHAT YOU GET ── -->
 <section class="ea-includes">
   <div class="ea-includes-inner">
-    <p class="ea-label">What's included</p>
-    <h2 class="ea-includes-heading">The full kit, right now.</h2>
+    <p class="ea-label">What your preorder includes</p>
+    <h2 class="ea-includes-heading">Everything you get for $5.</h2>
 
     <div class="ea-items">
 
@@ -231,7 +224,7 @@
         </div>
         <div class="ea-item-body">
           <div class="ea-item-name">Readiness Checklist</div>
-          <div class="ea-item-desc">12 concrete steps. Cost estimate per step. Ordered by impact. Starts where you are right now.</div>
+          <div class="ea-item-desc">7 concrete steps. Cost estimate per step. Ordered by impact. Starts where you are right now.</div>
           <span class="ea-tag ea-tag-live">Live now</span>
         </div>
       </div>
@@ -243,8 +236,8 @@
           </svg>
         </div>
         <div class="ea-item-body">
-          <div class="ea-item-name">Full Blueprint, All Chapters</div>
-          <div class="ea-item-desc">Local AI, physical automation, food security, energy, digital leverage. Deep and specific, not motivational.</div>
+          <div class="ea-item-name">Current Book Draft</div>
+          <div class="ea-item-desc">Read the book as it is being written. Local AI, physical automation, food security, energy, digital leverage. Deep and specific. The final version will be different.</div>
           <span class="ea-tag ea-tag-live">Live now</span>
         </div>
       </div>
@@ -256,8 +249,8 @@
           </svg>
         </div>
         <div class="ea-item-body">
-          <div class="ea-item-name">Book Draft</div>
-          <div class="ea-item-desc">Read <em>Surviving the Singularity</em> as it's being written. See the thinking before it's polished.</div>
+          <div class="ea-item-name">Spot in Line</div>
+          <div class="ea-item-desc">Preorder today and get 50% off the finished book at launch. When it's ready, I'll email you an exclusive link at your discounted price.</div>
           <span class="ea-tag ea-tag-draft">In progress</span>
         </div>
       </div>
@@ -270,7 +263,7 @@
         </div>
         <div class="ea-item-body">
           <div class="ea-item-name">Research Bundle</div>
-          <div class="ea-item-desc">The PDFs, papers, images, and source documents behind the book. Delivered to your email at purchase.</div>
+          <div class="ea-item-desc">The complete current book draft as a PDF, plus the papers, images, and source documents behind it. Delivered to your inbox the moment payment clears.</div>
           <span class="ea-tag ea-tag-live">Included</span>
         </div>
       </div>
@@ -282,8 +275,8 @@
           </svg>
         </div>
         <div class="ea-item-body">
-          <div class="ea-item-name">Everything I Ship Next</div>
-          <div class="ea-item-desc">New tools, frameworks, and resources as they come out. Early access price never goes up for you.</div>
+          <div class="ea-item-name">Author's Limited Edition Access</div>
+          <div class="ea-item-desc">100 numbered copies, and no two are alike. I hand-bind, number, and sign every single one myself — each copy is its own one-of-a-kind object. Includes a full bonus chapter not in the public book — the premortem: every reason this plan could fail, argued honestly, then answered. Once they're gone, they're gone.</div>
           <span class="ea-tag ea-tag-soon">Ongoing</span>
         </div>
       </div>
@@ -295,53 +288,93 @@
 <!-- ── TWO EDITIONS ── -->
 <section class="ea-editions">
   <div class="ea-editions-inner">
-    <p class="ea-label">Two editions</p>
-    <h2 class="ea-editions-heading">Reserve your spot for the Standard Edition.</h2>
-    <p class="ea-editions-sub">There is also an Author's Edition. Limited to 100 copies. A different kind of book.</p>
+    <p class="ea-label">Choose your edition</p>
+    <h2 class="ea-editions-heading">Preorder for $5. Pick your edition.</h2>
+    <p class="ea-editions-sub">Both include the research bundle delivered to your inbox today. Select one, then checkout.</p>
 
     <div class="ea-editions-grid">
 
       <!-- Standard Edition -->
-      <div class="ea-ed">
+      <button
+        class="ea-ed ea-ed-selectable"
+        class:ea-ed-selected={selectedEdition === 'standard'}
+        on:click={() => selectedEdition = 'standard'}
+        type="button"
+        aria-pressed={selectedEdition === 'standard'}
+      >
         <div class="ea-ed-header">
-          <span class="ea-ed-tag">Standard Edition</span>
-          <span class="ea-ed-price-tag">$5</span>
+          <div class="ea-ed-header-left">
+            <span class="ea-ed-tag">Standard Edition</span>
+            <span class="ea-ed-price-tag">$5</span>
+          </div>
+          <div class="ea-ed-check" aria-hidden="true">
+            {#if selectedEdition === 'standard'}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            {/if}
+          </div>
         </div>
-        <p class="ea-ed-desc">Digital. Full book delivered August 2026. Everything on this site, open to you now.</p>
+        <p class="ea-ed-desc">Research bundle in your inbox today. Current draft readable now. When the book launches on Amazon, I'll email you an exclusive link at 50% off.</p>
         <ul class="ea-ed-features">
-          <li>Full book: digital, delivered at launch</li>
-          <li>Blueprint, checklist, research bundle. Open now.</li>
-          <li>Everything I build before launch</li>
-          <li>Updates when something is worth sending</li>
+          <li>Research bundle: papers, source docs</li>
+          <li>Current book draft as a PDF, in the bundle</li>
+          <li>Finished book publishes on Amazon via KDP — paperback and Kindle</li>
+          <li>Exclusive link to buy the finished book at 50% off</li>
+          <li>First access to everything built before launch</li>
         </ul>
-        <button class="ea-ed-cta ea-ed-cta-std" on:click={() => document.querySelector('.ea-email-input')?.focus()} type="button">
-          Reserve My Spot — Free
-        </button>
-      </div>
+      </button>
 
       <!-- Author's Edition -->
-      <div class="ea-ed ea-ed-premium">
+      <button
+        class="ea-ed ea-ed-premium ea-ed-selectable"
+        class:ea-ed-selected={selectedEdition === 'authors'}
+        on:click={() => selectedEdition = 'authors'}
+        type="button"
+        aria-pressed={selectedEdition === 'authors'}
+      >
         <div class="ea-ed-header">
-          <span class="ea-ed-tag ea-ed-tag-au">Author's Edition</span>
-          <span class="ea-ed-limited">100 copies. Period.</span>
+          <div class="ea-ed-header-left">
+            <span class="ea-ed-tag ea-ed-tag-au">Author's Edition</span>
+            <span class="ea-ed-limited">100 copies only</span>
+          </div>
+          <div class="ea-ed-check ea-ed-check-au" aria-hidden="true">
+            {#if selectedEdition === 'authors'}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            {/if}
+          </div>
         </div>
-        <p class="ea-ed-desc">Hand-bound. Signed. Numbered. With the research, observations, and findings that didn't make the final cut.</p>
+        <p class="ea-ed-desc">Everything in Standard, plus one of 100 hand-bound, signed, numbered copies — and no two of them are alike. Ships 2026.</p>
         <ul class="ea-ed-features">
-          <li>Everything in the Standard Edition</li>
-          <li>Extra content not in the published book</li>
-          <li>My unfiltered findings, observations, references</li>
-          <li>Margin notes in my own hand</li>
-          <li>Hand-bound by me. Signed. Numbered #1 through #100.</li>
-          <li>Ships August 2026 directly from me</li>
+          <li>Everything in Standard Edition</li>
+          <li>All 100 copies are different — yours is a one-of-a-kind object</li>
+          <li>I hand-bind, number, and sign every copy myself — 1 through 100</li>
+          <li>Bonus chapter: the premortem on the book's own thesis</li>
+          <li>Margin notes in my own hand, plus findings cut from the public edition</li>
         </ul>
-        <a href="/launch#authors-edition" class="ea-ed-cta ea-ed-cta-au">
-          See the Author's Edition
-          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <p class="ea-ed-note">No payment now. Price announced before launch.</p>
-      </div>
+      </button>
 
     </div>
+
+    <!-- Single checkout CTA -->
+    <div class="ea-editions-cta">
+      <button class="ea-ed-checkout-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
+        {#if checkoutLoading}
+          Redirecting to checkout...
+        {:else if selectedEdition === 'authors'}
+          Reserve Author's Edition: $5
+        {:else}
+          Preorder Standard Edition: $5
+        {/if}
+      </button>
+      {#if checkoutError}
+        <p class="ea-checkout-error" style="margin-top:12px;">{checkoutError}</p>
+      {/if}
+      <p class="ea-ed-fine">
+        {selectedEdition === 'authors'
+          ? 'Your numbered copy is logged in our records the moment payment clears.'
+          : 'Research bundle delivered to your email immediately after payment.'}
+      </p>
+    </div>
+
   </div>
 </section>
 
@@ -349,7 +382,10 @@
 <section class="ea-author">
   <div class="ea-author-inner">
     <div class="ea-author-photo-wrap">
-      <img src="/author-headshot.png" alt="Author photo" class="ea-author-photo" width="120" height="120" loading="lazy" decoding="async" />
+      <picture>
+        <source srcset="/images/optimized/author_headshot_400.webp" type="image/webp" />
+        <img src="/author-headshot.png" alt="Author photo" class="ea-author-photo" width="120" height="120" loading="lazy" decoding="async" />
+      </picture>
     </div>
     <div class="ea-author-copy">
       <p class="ea-label">Who's building this</p>
@@ -384,15 +420,14 @@
   <div class="ea-bottom-inner">
     <p class="ea-urgency-inline">
       <span class="ea-urgency-dot" aria-hidden="true"></span>
-      Limited time offer
+      Early access pricing
     </p>
-    <h2 class="ea-bottom-heading">Reserve your spot.<br>Don't wait.</h2>
-    <p class="ea-bottom-sub">$5 at launch. Everything I'm building, open to you now. Enter your email above.</p>
-    <button class="ea-bottom-btn" on:click={() => document.querySelector('.ea-email-input')?.focus()} type="button">
-      Reserve My Spot — Free
-      <svg width="16" height="16" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h2 class="ea-bottom-heading">Preorder now.<br>Don't wait.</h2>
+    <p class="ea-bottom-sub">$5 today. Research bundle in your inbox now. When the book launches, I'll email you a exclusive link at 50% off.</p>
+    <button class="ea-bottom-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
+      {checkoutLoading ? 'Redirecting...' : 'Preorder Now: $5'}
     </button>
-    <p class="ea-bottom-fine">No credit card. No spam. <a href="/policies">Privacy</a>.</p>
+    <p class="ea-bottom-fine">Secured by Stripe. <a href="/policies">Privacy</a>.</p>
   </div>
 </section>
 
@@ -498,6 +533,29 @@
     margin-bottom: 28px; max-width: 480px;
   }
 
+  .ea-sub-label { margin-bottom: 8px; }
+  .ea-hero-list {
+    list-style: none; padding: 0;
+    display: flex; flex-direction: column; gap: 6px;
+    margin: 0 0 24px;
+  }
+  .ea-hero-list li {
+    font-size: clamp(0.88rem, 1.8vw, 0.98rem);
+    color: var(--text-2); line-height: 1.5;
+    padding-left: 1.25rem; position: relative;
+  }
+  .ea-hero-list li::before {
+    content: '›';
+    position: absolute; left: 0;
+    color: var(--amber); font-size: 1rem; line-height: 1.4;
+  }
+  .ea-edition-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--amber); margin: 0 0 8px;
+  }
+
   /* Price card */
   .ea-price-card {
     background: var(--surface);
@@ -532,28 +590,39 @@
     color: var(--amber);
     font-size: 2.4rem;
   }
-  .ea-email-form {
-    display: flex; flex-direction: column; gap: 10px;
-    margin-bottom: 4px;
+  .ea-edition-toggle {
+    display: flex; gap: 8px; margin-bottom: 16px;
   }
-  .ea-email-input {
-    width: 100%; padding: 13px 16px;
-    background: rgba(255,255,255,0.05);
-    border: 1.5px solid rgba(245,158,11,0.3);
-    border-radius: var(--r-pill);
-    color: var(--text-1); font-size: 1rem; font-family: inherit;
-    outline: none;
-    transition: border-color 0.2s ease;
+  .ea-edition-opt {
+    flex: 1; padding: 10px 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    color: var(--text-3); font-size: 0.82rem; font-weight: 600;
+    font-family: inherit; cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+    text-align: center; line-height: 1.3;
   }
-  .ea-email-input::placeholder { color: var(--text-3); }
-  .ea-email-input:focus { border-color: var(--amber); }
+  .ea-edition-opt:hover { border-color: rgba(245,158,11,0.3); color: var(--text-2); }
+  .ea-edition-opt-active {
+    border-color: var(--amber);
+    background: rgba(245,158,11,0.1);
+    color: var(--amber);
+  }
+  .ea-edition-limit {
+    display: block; font-size: 0.7rem; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    opacity: 0.8;
+  }
   .ea-buy-btn {
     display: flex; align-items: center; justify-content: center; gap: 10px;
-    width: 100%; padding: 15px 24px;
+    width: 100%; padding: 15px 20px;
     background: var(--amber); color: #0a0a0a;
     font-size: 1rem; font-weight: 800;
-    border: none; border-radius: var(--r-pill); cursor: pointer;
+    border: none; border-radius: 12px; cursor: pointer;
     text-decoration: none; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
     box-shadow: 0 4px 20px rgba(245,158,11,0.35);
     transition: filter 0.2s ease, transform 0.2s var(--ease-spring), box-shadow 0.2s ease;
     margin-bottom: 16px;
@@ -660,6 +729,56 @@
     }
     .ea-img-large { grid-row: auto; aspect-ratio: 4/3; }
     .ea-img-wide { grid-column: 1 / 3; }
+  }
+
+  /* ── WHAT'S IN THE BOOK ── */
+  .ea-parts {
+    border-top: 1px solid var(--border);
+    padding: clamp(48px, 7vw, 80px) 0;
+  }
+  .ea-parts-inner {
+    max-width: 1080px; margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 48px);
+  }
+  .ea-parts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: clamp(28px, 4vw, 44px);
+  }
+  @media (max-width: 860px) {
+    .ea-parts-grid { grid-template-columns: 1fr; }
+  }
+  .ea-part-card {
+    background: var(--surface);
+    border: 1px solid var(--border-mid);
+    border-radius: var(--r-card);
+    padding: 22px;
+  }
+  .ea-part-num {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--amber); margin-bottom: 10px;
+  }
+  .ea-part-title {
+    font-size: 1.1rem; font-weight: 800;
+    color: var(--text-1); margin: 0 0 10px;
+    letter-spacing: -0.01em; line-height: 1.25;
+  }
+  .ea-part-desc {
+    font-size: 0.88rem; color: var(--text-3);
+    line-height: 1.6; margin: 0;
+  }
+  .ea-pull-quote {
+    margin: clamp(28px, 4vw, 40px) 0 0;
+    padding: 20px 24px;
+    border-left: 3px solid var(--amber);
+    background: var(--amber-dim);
+    border-radius: 0 12px 12px 0;
+    font-size: 1rem; font-style: italic;
+    color: var(--text-1); line-height: 1.6;
   }
 
   /* ── INCLUDES ── */
@@ -772,10 +891,10 @@
   }
   .ea-ed-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 0.75rem;
-    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
   }
   .ea-ed-tag {
     font-size: 0.7rem;
@@ -872,6 +991,51 @@
     text-align: center;
     margin: 0;
     line-height: 1.4;
+  }
+
+  .ea-ed-selectable {
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+  }
+  .ea-ed-selectable:hover { transform: translateY(-2px); }
+  .ea-ed-selected {
+    border-color: rgba(245,158,11,0.6) !important;
+    box-shadow: 0 0 0 2px rgba(245,158,11,0.25), 0 8px 32px rgba(0,0,0,0.3);
+  }
+  .ea-ed-header-left {
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .ea-ed-check {
+    width: 24px; height: 24px; flex-shrink: 0;
+    background: var(--amber); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #0a0a0a;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+  .ea-ed-selected .ea-ed-check { opacity: 1; }
+  .ea-ed-check-au { background: var(--amber); }
+  .ea-editions-cta {
+    margin-top: 2rem;
+    display: flex; flex-direction: column; align-items: center; gap: 0;
+  }
+  .ea-ed-checkout-btn {
+    width: 100%; max-width: 420px;
+    padding: 17px 32px;
+    background: var(--amber); color: #0a0a0a;
+    font-size: 1.05rem; font-weight: 800;
+    border: none; border-radius: var(--r-pill); cursor: pointer;
+    font-family: inherit;
+    box-shadow: 0 4px 20px rgba(245,158,11,0.4);
+    transition: filter 0.2s ease, transform 0.2s var(--ease-spring);
+  }
+  .ea-ed-checkout-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-2px); }
+  .ea-ed-checkout-btn:disabled { opacity: 0.7; cursor: wait; }
+  .ea-ed-fine {
+    font-size: 0.78rem; color: var(--text-3);
+    text-align: center; margin-top: 12px; max-width: 380px;
   }
 
   /* ── WELCOME VIDEO ── */

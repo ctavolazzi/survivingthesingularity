@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
   import EmailGate from '$lib/components/EmailGate.svelte';
+  import DiscordApplication from '$lib/components/DiscordApplication.svelte';
 
   const categories = {
     foundation:     { label: 'Foundation',     color: '#f59e0b', desc: 'Understand your actual situation before you change anything.' },
@@ -110,7 +111,8 @@
     return { destroy() { node.removeEventListener('input', resize); } };
   }
 
-  // ── Discord gate ───────────────────────────────────────────────────────────
+  // ── Discord preview — free, no-commitment, temporary invite. Does NOT
+  // unlock the checklist; that's EmailGate's job, gated on a real email. ────
   const DISCORD_KEY = 'sts_discord_previewed';
   let discordPreviewed = false;
 
@@ -122,26 +124,35 @@
   function previewDiscord() {
     if (browser) {
       localStorage.setItem(DISCORD_KEY, '1');
-      localStorage.setItem('sts_unlock_checklist', '1');
     }
     discordPreviewed = true;
     window.open('https://discord.gg/DVKhj6Vxge', '_blank', 'noopener,noreferrer');
   }
 
-  // ── Send form ──────────────────────────────────────────────────────────────
+  // ── Send checklist email — fires automatically the moment the visitor
+  // unlocks with their email; also reusable as a manual resend after they
+  // update their notes. ────────────────────────────────────────────────────
   let emailToSend = '';
-  let honeypot = '';
   let sending = false;
   let sent = false;
   let sendError = '';
 
+  // EmailGate fires 'unlock' only on a brand-new submission (auto-send) and
+  // 'restore' on page load for already-unlocked visitors (capture the email
+  // for manual resends, never auto-send).
   function onUnlock(e) {
+    if (e.detail?.email) {
+      emailToSend = e.detail.email;
+      sendChecklist();
+    }
+  }
+
+  function onRestore(e) {
     if (e.detail?.email) emailToSend = e.detail.email;
   }
 
-  async function handleSend(e) {
-    e.preventDefault();
-    if (honeypot || sending || sent) return;
+  async function sendChecklist() {
+    if (sending || !emailToSend.trim()) return;
     sending = true;
     sendError = '';
     try {
@@ -150,7 +161,6 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email: emailToSend.trim(),
-          honeypot,
           answers: allItems.map(item => ({
             n:       item.n,
             title:   item.title,
@@ -248,11 +258,11 @@
   <EmailGate
     storageKey="checklist"
     source="checklist"
-    headline="Preview the Discord first. Then submit."
-    sub={discordPreviewed ? "Fill in your thinking above, then submit your email. We review every submission. This is how we keep the quality high." : "Click 'Preview the Discord' above before submitting. That's step one."}
-    buttonText="Submit My Checklist"
-    forceUnlock={discordPreviewed}
+    headline="Unlock the full checklist"
+    sub="Get all 7 steps, your notes emailed to you, and Signal Dispatches: a short, occasional email only when something actually changes your plan (new research, a new tool, a real timeline shift). Not a newsletter."
+    buttonText="Unlock Free"
     on:unlock={onUnlock}
+    on:restore={onRestore}
   >
     <!-- Free teaser items — always interactive -->
     <ol class="cl-list" aria-label="First three checklist items, free">
@@ -325,28 +335,6 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         3 more steps locked
       </div>
-    </div>
-
-    <!-- Discord: the reward for completing the checklist -->
-    <div class="cl-discord">
-      <div class="cl-discord-icon" aria-hidden="true">
-        <svg width="22" height="16" viewBox="0 0 24 18" fill="currentColor" aria-hidden="true">
-          <path d="M20.317 1.492A19.825 19.825 0 0 0 15.964.196a.074.074 0 0 0-.079.037c-.34.607-.719 1.396-.984 2.018a18.304 18.304 0 0 0-5.8 0 12.757 12.757 0 0 0-.998-2.018.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 1.492a.07.07 0 0 0-.032.027C.533 6.093-.32 10.555.099 14.961a.083.083 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.442a.061.061 0 0 0-.031-.028zM8.02 12.278c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-        </svg>
-      </div>
-      <div class="cl-discord-copy">
-        <p class="cl-discord-headline">The reward: community access.</p>
-        <p class="cl-discord-sub">Submit the checklist below. We review every submission. Accepted members get permanent access to the Surviving the Singularity Discord. Quality people only.</p>
-      </div>
-      <button class="cl-discord-btn" class:cl-discord-btn-done={discordPreviewed} on:click={previewDiscord} type="button">
-        {#if discordPreviewed}
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-          Previewed
-        {:else}
-          Preview the Discord
-          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        {/if}
-      </button>
     </div>
 
     <!-- Book sales pitch — inside the gate card, below the email form -->
@@ -428,8 +416,8 @@
         {/each}
       </ol>
 
-      <!-- ── EMAIL YOUR ANSWERS ── -->
-      <section class="cl-send" aria-label="Email your checklist">
+      <!-- ── YOUR CHECKLIST, SENT ── -->
+      <section class="cl-send" aria-label="Your checklist email">
         <div class="cl-send-inner">
           <div class="cl-send-header">
             <div class="cl-send-icon" aria-hidden="true">
@@ -438,69 +426,47 @@
               </svg>
             </div>
             <div>
-              <p class="cl-section-label">Save your progress</p>
-              <h2 class="cl-send-heading">Email yourself your answers + the full checklist.</h2>
+              <p class="cl-section-label">Sent to your inbox</p>
+              <h2 class="cl-send-heading">Your answers and the full checklist are on their way to {emailToSend}.</h2>
             </div>
           </div>
           <p class="cl-send-sub">
-            We'll send everything you checked and wrote, plus the complete 7 steps, formatted for your inbox. Nothing is stored on our end beyond the send.
+            Keep adding notes below. When you want an updated copy, resend it.
           </p>
 
           {#if sent}
+            <!-- A failed resend must not show "Sent!" and the error together;
+                 the error below takes over until the next successful send. -->
+            {#if !sendError}
             <div class="cl-send-success" role="status">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
               Sent! Check your inbox. ({checkedCount}/7 steps in the email.)
             </div>
+            {/if}
+            <button type="button" class="cl-send-resend" on:click={sendChecklist} disabled={sending}>
+              {sending ? 'Resending…' : 'Resend with my latest notes'}
+            </button>
           {:else}
-            <form class="cl-send-form" on:submit={handleSend} novalidate>
-              <!-- Honeypot — hidden from humans, visible to bots -->
-              <input
-                type="text"
-                name="website"
-                bind:value={honeypot}
-                tabindex="-1"
-                aria-hidden="true"
-                autocomplete="off"
-                style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;"
-              />
-              <div class="cl-send-row">
-                <input
-                  type="email"
-                  class="cl-send-input"
-                  bind:value={emailToSend}
-                  placeholder="your@email.com"
-                  required
-                  maxlength="254"
-                  autocomplete="email"
-                  disabled={sending}
-                  aria-label="Your email address"
-                />
-                <button
-                  type="submit"
-                  class="cl-send-btn"
-                  disabled={sending || !emailToSend.trim()}
-                >
-                  {#if sending}
-                    <span class="cl-send-spinner" aria-hidden="true"></span>
-                    Sending…
-                  {:else}
-                    Send my checklist
-                    <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  {/if}
-                </button>
-              </div>
-              {#if sendError}
-                <p class="cl-send-error" role="alert">{sendError}</p>
+            <button type="button" class="cl-send-btn" on:click={sendChecklist} disabled={sending || !emailToSend.trim()}>
+              {#if sending}
+                <span class="cl-send-spinner" aria-hidden="true"></span>
+                Sending…
+              {:else}
+                Send my checklist
+                <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               {/if}
-            </form>
+            </button>
+          {/if}
+          {#if sendError}
+            <p class="cl-send-error" role="alert">{sendError}</p>
           {/if}
 
           <p class="cl-send-meta">
-            {checkedCount} of 7 steps checked · {allItems.filter(i => answers[i.n].notes.trim()).length} with notes · Zero spam, reply to unsubscribe.
+            {checkedCount} of 7 steps checked, {allItems.filter(i => answers[i.n].notes.trim()).length} with notes. Zero spam, reply to unsubscribe.
           </p>
         </div>
       </section>
@@ -544,6 +510,36 @@
       </section>
     </div>
   </EmailGate>
+
+  <!-- ── DISCORD: separate community value add, not part of the checklist ── -->
+  <section class="cl-discord-block" aria-label="Community">
+    <p class="cl-section-label">A separate thing</p>
+    <h2 class="cl-discord-block-heading">Want to talk to people doing this too?</h2>
+    <p class="cl-discord-block-sub">Not part of the checklist. Just a community, if you want it.</p>
+
+    <div class="cl-discord">
+      <div class="cl-discord-icon" aria-hidden="true">
+        <svg width="22" height="16" viewBox="0 0 24 18" fill="currentColor" aria-hidden="true">
+          <path d="M20.317 1.492A19.825 19.825 0 0 0 15.964.196a.074.074 0 0 0-.079.037c-.34.607-.719 1.396-.984 2.018a18.304 18.304 0 0 0-5.8 0 12.757 12.757 0 0 0-.998-2.018.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 1.492a.07.07 0 0 0-.032.027C.533 6.093-.32 10.555.099 14.961a.083.083 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.442a.061.061 0 0 0-.031-.028zM8.02 12.278c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+        </svg>
+      </div>
+      <div class="cl-discord-copy">
+        <p class="cl-discord-headline">Come see what it's like.</p>
+        <p class="cl-discord-sub">Free preview, no commitment, no email required.</p>
+      </div>
+      <button class="cl-discord-btn" class:cl-discord-btn-done={discordPreviewed} on:click={previewDiscord} type="button">
+        {#if discordPreviewed}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          Previewed
+        {:else}
+          Preview the Discord
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        {/if}
+      </button>
+    </div>
+
+    <DiscordApplication />
+  </section>
 
   <p class="cl-disclaimer">
     This is a starting point for your own research, not professional advice.
@@ -593,10 +589,11 @@
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 12px; padding: 12px 24px;
     flex-wrap: wrap; justify-content: center; gap: 0;
+    row-gap: 16px;
   }
   .cl-stat {
     display: flex; flex-direction: column; align-items: center;
-    padding: 0 20px;
+    padding: 4px 20px;
   }
   .cl-stat-n {
     font-family: 'JetBrains Mono', monospace;
@@ -609,6 +606,11 @@
   }
   .cl-stat-sep {
     width: 1px; height: 28px; background: rgba(255,255,255,0.07); flex-shrink: 0;
+    align-self: center;
+  }
+  @media (max-width: 420px) {
+    .cl-stats { row-gap: 18px; }
+    .cl-stat-sep { display: none; }
   }
 
   /* ── CATEGORIES ── */
@@ -659,7 +661,21 @@
     color: #475569;
   }
 
-  /* ── DISCORD ── */
+  /* ── DISCORD: standalone section, separate from the checklist ── */
+  .cl-discord-block {
+    margin: 3rem 0 0;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .cl-discord-block-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 800;
+    color: #f8fafc; letter-spacing: -0.02em; margin: 0 0 8px;
+  }
+  .cl-discord-block-sub {
+    font-size: 0.9rem; color: #94a3b8; line-height: 1.6;
+    margin: 0 0 20px; max-width: 480px;
+  }
+
   .cl-discord {
     display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
     margin: 0 0 2rem;
@@ -873,24 +889,20 @@
     margin: 0 0 16px; max-width: 540px;
   }
 
-  .cl-send-form { display: flex; flex-direction: column; gap: 8px; }
-  .cl-send-row {
-    display: flex; gap: 8px; flex-wrap: wrap;
+  .cl-send-resend {
+    background: none;
+    border: none;
+    color: #f59e0b;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
-  .cl-send-input {
-    flex: 1; min-width: 0;
-    padding: 10px 14px;
-    background: rgba(2, 6, 23, 0.6);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 10px;
-    color: #f1f5f9;
-    font-size: 0.9rem;
-    transition: border-color 0.15s ease;
-    outline: none;
-  }
-  .cl-send-input::placeholder { color: #64748b; }
-  .cl-send-input:focus { border-color: rgba(245, 158, 11, 0.5); }
-  .cl-send-input:disabled { opacity: 0.5; }
+  .cl-send-resend:hover:not(:disabled) { color: #fbbf24; }
+  .cl-send-resend:disabled { opacity: 0.5; cursor: not-allowed; }
 
   .cl-send-btn {
     display: inline-flex; align-items: center; gap: 7px;
@@ -999,6 +1011,10 @@
     transition: filter 0.15s, transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
   }
   .cl-upgrade-btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
+  @media (max-width: 480px) {
+    .cl-upgrade-inner { flex-direction: column; align-items: stretch; text-align: center; }
+    .cl-upgrade-btn { justify-content: center; }
+  }
 
   /* ── BOOK SALES ── */
   .cl-book-sales {
@@ -1054,7 +1070,6 @@
     font-size: 0.75rem; color: #64748b; margin: 0; text-align: center;
   }
   @media (max-width: 480px) {
-    .cl-book-sales-inner { flex-direction: column; }
     .cl-book-sales-cover { width: 80px; }
     .cl-book-sales-btn { width: 100%; justify-content: center; }
   }
@@ -1094,8 +1109,6 @@
   .cl-disclaimer a { color: #64748b; text-decoration: underline; text-underline-offset: 2px; }
 
   @media (max-width: 500px) {
-    .cl-send-row { flex-direction: column; }
     .cl-send-btn { width: 100%; justify-content: center; }
-    .cl-send-input { width: 100%; }
   }
 </style>

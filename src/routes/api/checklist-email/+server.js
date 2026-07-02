@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
 import { sendChecklistEmail } from '$lib/server/email.js';
+import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 
 // In-memory rate limit: ip -> [timestamp, ...]
 // Resets on server restart — intentional; keeps it dependency-free.
@@ -75,6 +76,25 @@ export async function POST({ request, url, getClientAddress }) {
 
   if (!Array.isArray(answers) || answers.length === 0 || answers.length > 12) {
     return json({ error: 'Invalid data.' }, { status: 400 });
+  }
+
+  // Only send to addresses already on the waitlist — the checklist page can
+  // only obtain an email through EmailGate, which inserts it there first. A
+  // direct POST with a stranger's address (email-bombing that burns Resend
+  // quota and sender reputation) gets the same silent fake-success as the
+  // honeypot. Fails open on infra errors so a Supabase blip never blocks a
+  // real visitor's delivery.
+  if (supabaseAdmin) {
+    const { data: row, error: lookupErr } = await supabaseAdmin
+      .from('waitlist')
+      .select('email')
+      .eq('email', email.trim().toLowerCase())
+      .maybeSingle();
+    if (lookupErr) {
+      console.warn('[checklist-email] waitlist lookup failed, failing open:', lookupErr.message);
+    } else if (!row) {
+      return json({ ok: true });
+    }
   }
 
   const clean = answers.map(item => ({

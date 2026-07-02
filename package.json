@@ -3,12 +3,11 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"prebuild": "mkdir -p .svelte-kit/output/server/chunks/lib/data/blog-posts && cp -r src/lib/data/blog-posts/* .svelte-kit/output/server/chunks/lib/data/blog-posts/ && node work_efforts/12_image_optimization_enhancements/image_build_hook.js",
+		"prebuild": "node work_efforts/12_image_optimization_enhancements/image_build_hook.js",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"migrate-blog": "node scripts/migrate-blog-posts.js",
 		"create-blog": "node scripts/create-blog-post.js",
 		"optimize-images": "node work_efforts/12_image_optimization_enhancements/image_build_hook.js"
 	},

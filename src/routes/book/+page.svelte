@@ -32,17 +32,20 @@
     <div class="hero-inner">
 
       <div class="cover-wrap">
-        <img
-          src="/images/surviving_the_singularity_cover_1200.png"
-          alt="Surviving the Singularity book cover"
-          class="cover-img"
-          width="600"
-          height="800"
-        />
+        <picture>
+          <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
+          <img
+            src="/images/surviving_the_singularity_cover_1200.png"
+            alt="Surviving the Singularity book cover"
+            class="cover-img"
+            width="600"
+            height="800"
+          />
+        </picture>
       </div>
 
       <div class="hero-copy">
-        <p class="eyebrow">Open Draft · v0.1 · Reader Edition</p>
+        <p class="eyebrow">Open Draft · v0.2 · Reader Edition</p>
         <h1 class="book-title">Surviving the<br>Singularity</h1>
         <p class="byline">By Christopher Tavolazzi</p>
         <p class="hook">Intelligence now has a marginal cost of zero. The old systems haven't caught up yet. This book is about what to do in the gap — before the window closes.</p>
@@ -115,7 +118,7 @@
     <div class="inner">
       <p class="label">Choose Your Edition</p>
       <h2 class="heading">Two ways to own this book.</h2>
-      <p class="subhead">The standard edition ships everywhere at launch. Or reserve one of 100 copies that are hand-bound, signed, and filled with content you won't find anywhere else.</p>
+      <p class="subhead">The Standard Edition ships worldwide through Amazon. The Author's Limited Edition is 100 hand-bound, signed, and numbered copies — and no two of them are alike.</p>
 
       <div class="editions">
 
@@ -123,45 +126,48 @@
         <div class="edition edition-standard">
           <p class="ed-badge">Standard Edition</p>
           <h3 class="ed-title">Surviving the Singularity</h3>
-          <p class="ed-sub">The complete book. Available everywhere at launch.</p>
+          <p class="ed-sub">The complete book, in paperback and on Kindle. Published on Amazon via Kindle Direct Publishing.</p>
 
           <ul class="ed-list">
             <li>Full three-part book, all chapters</li>
-            <li>Digital and print editions</li>
-            <li>Available on Amazon and major retailers</li>
+            <li>Paperback and Kindle editions</li>
+            <li>Available worldwide on Amazon via KDP</li>
+            <li>Print-on-demand — never sold out, never out of stock</li>
             <li>Price announced at launch · August 2026</li>
           </ul>
 
           <a href="https://thecoffeejesus.substack.com" class="btn-ghost" target="_blank" rel="noopener noreferrer">Get notified at launch</a>
         </div>
 
-        <!-- Author's Edition -->
+        <!-- Author's Limited Edition -->
         <div class="edition edition-authors">
           <p class="ed-badge ed-badge-special">
             <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1l1.88 3.82L14 5.64l-3 2.93.71 4.12L8 10.77l-3.71 1.92L5 8.57 2 5.64l4.12-.82L8 1z"/></svg>
-            Author's Edition · 100 Copies Only
+            Author's Limited Edition · 100 Copies Only
           </p>
-          <h3 class="ed-title">The Hand-Bound Edition</h3>
-          <p class="ed-sub">Signed, numbered, and bound by the author. Exclusively for 100 people.</p>
+          <h3 class="ed-title">One of one hundred.<br>One of a kind.</h3>
+          <p class="ed-sub">100 numbered copies, and no two are the same. Every single one is hand-bound and signed by the author.</p>
 
           <ul class="ed-list ed-list-special">
             <li>Everything in the Standard Edition</li>
-            <li>Hand-bound and personally signed by Christopher Tavolazzi</li>
-            <li>Individually numbered 1–100</li>
-            <li>Exclusive margin notes written in the author's hand</li>
-            <li>Additional findings and observations not in any other edition</li>
-            <li>Payment collected at launch · August 2026</li>
+            <li>All 100 copies are different — each one is a unique, physical, one-of-a-kind object</li>
+            <li>Hand-bound by Christopher Tavolazzi, one copy at a time</li>
+            <li>Signed and numbered by hand — you own a specific number, 1 through 100, that exists nowhere else</li>
+            <li>Exclusive content and margin notes in the author's hand, different in every copy</li>
+            <li>$5 secures your number now · ships at launch, August 2026</li>
           </ul>
 
           <div class="ed-scarcity">
             <span class="ed-scarcity-num">100</span>
-            <span class="ed-scarcity-text">total copies · Reserve yours now before they're gone</span>
+            <span class="ed-scarcity-text">copies will ever exist · when they're gone, they're gone</span>
           </div>
 
-          <a href="/launch#authors-edition" class="btn-primary">Reserve your copy</a>
+          <a href="/early-access?edition=authors" class="btn-primary">Claim your number</a>
         </div>
 
       </div>
+
+      <p class="ed-footnote">Why is every copy different? Because they're made by hand, one at a time — the binding, the materials, and the handwritten notes vary from copy to copy. Mass production makes identical objects. Hands don't.</p>
     </div>
   </section>
 
@@ -578,5 +584,13 @@
     font-size: 0.82rem;
     color: var(--text-2);
     line-height: 1.45;
+  }
+
+  .ed-footnote {
+    font-size: 0.85rem;
+    color: var(--text-3);
+    line-height: 1.6;
+    margin: 1.5rem 0 0;
+    max-width: 62ch;
   }
 </style>

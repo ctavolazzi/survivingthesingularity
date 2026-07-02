@@ -21,12 +21,13 @@
   export let sub = 'Enter your email and the full version opens right here.';
   export let buttonText = 'Unlock Free';
   export let forceUnlock = false;        // bypass gate without email (e.g. Discord click)
+  export let consentDefault = true;      // opt-out: pre-checked. Warm visitor, easy unsubscribe already in place.
 
   const LS_KEY = `sts_unlock_${storageKey}`;
 
   let unlocked = false;
   let email = '';
-  let subscribe = false; // opt-in: unchecked. Email still captured to unlock.
+  let subscribe = consentDefault;
   let honeypot = '';
   let state = 'idle'; // idle | loading | error
   let errorMsg = '';
@@ -35,7 +36,10 @@
     if (browser && localStorage.getItem(LS_KEY)) {
       unlocked = true;
       const storedEmail = localStorage.getItem(LS_KEY + '_email') || '';
-      dispatch('unlock', { email: storedEmail });
+      // 'restore' (not 'unlock') so one-time side effects wired to 'unlock'
+      // (e.g. sending an email) can't refire on every page load for a
+      // visitor already unlocked on a previous visit.
+      dispatch('restore', { email: storedEmail });
     }
   });
 
@@ -63,6 +67,7 @@
           localStorage.setItem(LS_KEY + '_email', email);
         }
         unlocked = true; // reveal
+        // 'unlock' fires ONLY here, on a brand-new submission.
         dispatch('unlock', { email });
       } else {
         state = 'error';
@@ -121,13 +126,13 @@
 
       <label class="gate-consent">
         <input type="checkbox" bind:checked={subscribe} />
-        <span>Email me when the book drops + occasional updates</span>
+        <span>Send me Signal Dispatches, occasional emails only when something changes your plan</span>
       </label>
 
       {#if state === 'error'}
         <p class="gate-err" role="alert">{errorMsg}</p>
       {/if}
-      <p class="gate-meta">Instant access to the checklist. Unsubscribe anytime. <a href="/policies">Privacy</a>.</p>
+      <p class="gate-meta">Not a newsletter. Skip it anytime. <a href="/policies">Privacy</a>.</p>
       <slot name="gate-extra" />
     </div>
   </div>

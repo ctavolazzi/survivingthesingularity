@@ -41,23 +41,11 @@
     <div class="footer-divider"></div>
 
     <div class="footer-bottom">
-      <div class="footer-disclaimer-box">
-        <p class="footer-disclaimer-title">
-          ⚠ Informational &amp; educational use only
-        </p>
-        <p class="footer-disclaimer">
-          <strong>The information here is a starting point for your own research, not a professional recommendation.</strong>
-          You assume all risk for any action you take or fail to take based on anything you read here.
-          <a href="/disclaimer" class="footer-disclaimer-link">Read our terms &amp; disclaimers</a>.
-        </p>
-      </div>
-
       <p class="footer-consent">
-        <strong>By accessing or using this site, you acknowledge that you have read, understood, and agree to be bound by the</strong>
-        <a href="/terms" class="footer-disclaimer-link">Terms of Use</a>,
+        This site is for informational and educational purposes only, not professional advice. By using it, you agree to our
+        <a href="/terms" class="footer-disclaimer-link">Terms</a>,
         <a href="/disclaimer" class="footer-disclaimer-link">Disclaimer</a>, and
-        <a href="/policies" class="footer-disclaimer-link">Privacy &amp; Policies</a>.
-        If you do not agree, do not use this site.
+        <a href="/policies" class="footer-disclaimer-link">Privacy Policy</a>.
       </p>
 
       <p class="footer-copyright">
@@ -172,34 +160,6 @@
     text-align: center;
   }
 
-  .footer-disclaimer-box {
-    max-width: 720px;
-    margin: 0 auto 1.25rem;
-    padding: 1rem 1.25rem;
-    background: rgba(120, 53, 15, 0.12);
-    border: 1px solid rgba(245, 158, 11, 0.25);
-    border-left: 3px solid rgba(245, 158, 11, 0.6);
-    border-radius: 0;
-    text-align: left;
-  }
-
-  .footer-disclaimer-title {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #fcd34d;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin: 0 0 0.5rem 0;
-    font-family: var(--font-primary);
-  }
-
-  .footer-disclaimer {
-    font-size: 0.86rem;
-    color: #e9eef5;
-    line-height: 1.65;
-    margin: 0;
-  }
-
   .footer-disclaimer-link {
     color: #f59e0b;
     text-decoration: underline;
@@ -223,10 +183,6 @@
     color: #dde4ef;
     line-height: 1.6;
     text-align: left;
-  }
-  .footer-consent strong {
-    color: #e2e8f0;
-    font-weight: 600;
   }
 
   .footer-copyright {
@@ -271,13 +227,8 @@
       font-size: 0.8rem;
     }
 
-    .footer-disclaimer-box,
     .footer-consent {
       padding: 0.85rem 1rem;
-    }
-
-    .footer-disclaimer,
-    .footer-consent {
       font-size: 0.8rem;
     }
   }

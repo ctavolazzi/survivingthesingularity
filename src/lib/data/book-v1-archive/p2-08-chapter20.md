@@ -1,6 +1,6 @@
 # Chapter 20: The Robot in the Soil (FarmBot and Biological Refineries)
 
-![FarmBot watering its plot: solar-powered, open-source, and unbothered. Your move, scarecrow.](/book-images/ch12-farmbot-watering.jpg)
+![FarmBot watering its plot: solar-powered, open-source, and unbothered. Your move, scarecrow.](/book-images/ch12-farmbot-watering.webp)
 
 To depend on the industrial food system for your daily calories is to accept a collar.
 

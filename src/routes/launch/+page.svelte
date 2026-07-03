@@ -1,7 +1,6 @@
 <script>
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
-  import AuthorsEdition from '$lib/components/AuthorsEdition.svelte';
   import { audience } from '$lib/stores/audienceStore.js';
 
   let visible = false;
@@ -13,8 +12,8 @@
   });
 
   // Where/When are factual and constant across audiences.
-  const whereA = 'The book launches at <strong>survivingthesingularity.com</strong> and on Amazon in August 2026, with wide availability across major ebook platforms. A signed, hand-bound Author\'s Edition (limited to 100 copies) is available to preorder here now. The goal is wide, cheap access. No membership. No paywall.';
-  const whenA  = 'The full manuscript is in progress. A serialized preview (the Blueprint) is live now. The book launches August 2026 on Amazon and this site. Email subscribers get early access and chapter previews first. The limited Author\'s Edition is available to preorder now.';
+  const whereA = 'The book launches at <strong>survivingthesingularity.com</strong> and on Amazon in August 2026 — paperback and Kindle, published via Kindle Direct Publishing, with wide availability across major ebook platforms. A hand-bound, signed Author\'s Limited Edition (100 numbered copies, no two alike) is available to preorder here now. The goal is wide, cheap access. No membership. No paywall.';
+  const whenA  = 'The full manuscript is in progress. A serialized preview (the Blueprint) is live now. The book launches August 2026 on Amazon and this site. Email subscribers get early access and chapter previews first. The Author\'s Limited Edition is available to preorder now.';
 
   const audienceCopy = {
     individual: {
@@ -288,14 +287,22 @@
     </div>
   </section>
 
-  <!-- AUTHOR'S EDITION PREORDER -->
+  <!-- AUTHOR'S EDITION -->
   <section class="launch-section" id="authors-edition">
     <div class="section-eyebrow">Limited Edition</div>
-    <h2 class="section-title">The Author's Edition</h2>
+    <h2 class="section-title">The Author's Limited Edition</h2>
     <p class="section-lead">
-      100 copies. Hand-bound by the author, signed, individually numbered, and shipped with exclusive content not available anywhere else. If you want one, preorder now.
+      100 copies, and no two are alike. Each one is hand-bound by the author, signed, individually numbered, and filled with exclusive content not available anywhere else. Every copy is a unique, one-of-a-kind object.
     </p>
-    <AuthorsEdition />
+    <div class="ae-cta-card">
+      <p class="ae-cta-body">
+        Secure one now through early access — $5 gets you the current book draft, the research bundle, a 50% discount at launch, and one of the 100 numbered copies.
+      </p>
+      <a href="/early-access?edition=authors" class="btn-primary">
+        Claim your number
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
   </section>
 
   <!-- CLOSING CTA -->
@@ -315,10 +322,16 @@
 {/if}
 
 <style>
+  .launch-page :global(*) {
+    box-sizing: border-box;
+  }
+
   .launch-page {
+    width: 100%;
     max-width: 860px;
     margin: 0 auto;
     padding: 2rem 1rem 4rem;
+    overflow-x: hidden;
   }
 
   @media (min-width: 640px) {
@@ -588,10 +601,6 @@
     gap: 1.25rem;
   }
 
-  @media (min-width: 640px) {
-    .money-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-
   .money-card {
     background: rgba(2, 6, 23, 0.6);
     border: 1px solid rgba(148, 163, 184, 0.1);
@@ -669,12 +678,8 @@
     margin: 2rem 0;
   }
 
-  @media (min-width: 540px) {
+  @media (min-width: 900px) {
     .pilot-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-
-  @media (min-width: 720px) {
-    .pilot-grid { grid-template-columns: repeat(3, 1fr); }
   }
 
   .pilot-card {
@@ -809,6 +814,29 @@
     box-shadow: 0 8px 28px rgba(245, 158, 11, 0.42);
   }
   .btn-primary:active { transform: scale(0.97); }
+
+  /* ── AUTHOR'S EDITION CTA CARD ── */
+  .ae-cta-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: #0a0f23;
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-top: 2px solid rgba(245, 158, 11, 0.5);
+    border-radius: 18px;
+    box-shadow: 0 0 60px rgba(245, 158, 11, 0.08), 0 24px 48px rgba(0,0,0,0.4);
+  }
+
+  .ae-cta-body {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    max-width: 460px;
+    margin: 0;
+  }
 
   .btn-secondary {
     display: inline-flex;

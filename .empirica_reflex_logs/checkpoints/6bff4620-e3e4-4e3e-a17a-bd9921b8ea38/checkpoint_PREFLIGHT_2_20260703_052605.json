@@ -1,0 +1,159 @@
+{
+  "session_id": "6bff4620-e3e4-4e3e-a17a-bd9921b8ea38",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-07-03T05:26:02.656685+00:00",
+  "vectors": {
+    "know": 0.9,
+    "do": 0.9,
+    "context": 0.9,
+    "clarity": 0.9,
+    "coherence": 0.9,
+    "signal": 0.9,
+    "density": 0.85,
+    "state": 0.9,
+    "change": 0.1,
+    "completion": 0.05,
+    "impact": 0.75,
+    "engagement": 0.95,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.9,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "88760f70-13b1-4d37-8d7d-3e5d0168e8b7",
+    "git_commit_sha": "89646fd3561fa7f4778619cd4ffa1d22fafd8a26",
+    "git_notes_ref": "empirica/session/6bff4620-e3e4-4e3e-a17a-bd9921b8ea38/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "8eb3cf213fe5be78127f95f68a6a036abae02ab0",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        "sql/005_preorders_copy_lock.sql",
+        "src/lib/components/Footer.svelte",
+        "src/lib/components/Navbar.svelte",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/03-chapter1.md",
+        "src/lib/data/book/04-chapter2.md",
+        "src/lib/data/book/05-chapter3.md",
+        "src/lib/data/book/06-chapter4.md",
+        "src/lib/data/book/07-chapter5.md",
+        "src/lib/data/book/08-chapter6.md",
+        "src/lib/data/book/09-chapter7.md",
+        "src/lib/data/book/10-chapter8.md",
+        "src/lib/data/book/11-chapter9.md",
+        "src/lib/data/book/12-chapter10.md",
+        "src/lib/data/book/13-chapter11.md",
+        "src/lib/data/book/14-chapter12.md",
+        "src/lib/data/book/book.json",
+        "src/lib/data/book/part1-divider.md",
+        "src/lib/data/book/part2-divider.md",
+        "src/lib/server/email.js",
+        "src/routes/api/stripe-checkout/+server.js",
+        "src/routes/book/+layout.svelte",
+        "src/routes/book/[sectionId]/+page.server.js",
+        "src/routes/launch/+page.svelte",
+        "tests/results/.last-run.json"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        "src/lib/archive/Navbar-og.svelte",
+        "src/lib/archive/Navbar-previous-working.svelte",
+        "src/lib/components/AuthorsEdition.svelte",
+        "src/lib/data/book/00-table-of-contents.md",
+        "src/lib/data/book/01-acknowledgements.md",
+        "src/lib/data/book/15-epilogue.md",
+        "src/lib/data/book/16-glossary.md",
+        "src/lib/data/book/17-further-reading.md",
+        "src/lib/data/book/18-index.md",
+        "src/lib/data/book/19-image-credits.md",
+        "src/lib/data/book/p2-01-chapter13.md",
+        "src/lib/data/book/p2-02-chapter14.md",
+        "src/lib/data/book/p2-03-chapter15.md",
+        "src/lib/data/book/p2-04-chapter16.md",
+        "src/lib/data/book/p2-05-chapter17.md",
+        "src/lib/data/book/p2-06-chapter18.md",
+        "src/lib/data/book/p2-07-chapter19.md",
+        "src/lib/data/book/p2-08-chapter20.md",
+        "src/lib/data/book/p2-09-chapter21.md",
+        "src/lib/data/book/p2-10-chapter22.md",
+        "src/lib/data/book/p2-11-chapter23.md",
+        "src/routes/api/preorder-count/+server.js",
+        "src/routes/api/preorder/+server.js"
+      ],
+      "diff_stat": ".empirica/sessions/sessions.db                 | Bin 1077248 -> 1241088 bytes\n sql/005_preorders_copy_lock.sql                |  51 ++-\n src/lib/archive/Navbar-og.svelte               | 229 ----------\n src/lib/archive/Navbar-previous-working.svelte | 547 ----------------------\n src/lib/components/AuthorsEdition.svelte       | 601 -------------------------\n src/lib/components/Footer.svelte               |  55 +--\n src/lib/components/Navbar.svelte               |   3 -\n src/lib/data/book/00-table-of-contents.md      |  55 ---\n src/lib/data/book/01-acknowledgements.md       |  13 -\n src/lib/data/book/02-introduction.md           |  50 +-\n src/lib/data/book/03-chapter1.md               | 118 ++---\n src/lib/data/book/04-chapter2.md               | 274 +++--------\n src/lib/data/book/05-chapter3.md               | 176 +-------\n src/lib/data/book/06-chapter4.md               | 168 +------\n src/lib/data/book/07-chapter5.md               | 291 ++++--------\n src/lib/data/book/08-chapter6.md               | 174 +------\n src/lib/data/book/09-chapter7.md               | 152 +------\n src/lib/data/book/10-chapter8.md               | 187 ++++----\n src/lib/data/book/11-chapter9.md               | 148 +-----\n src/lib/data/book/12-chapter10.md              |  82 +---\n src/lib/data/book/13-chapter11.md              | 134 +-----\n src/lib/data/book/14-chapter12.md              |  71 +--\n src/lib/data/book/15-epilogue.md               |  42 --\n src/lib/data/book/16-glossary.md               |  75 ---\n src/lib/data/book/17-further-reading.md        |  70 ---\n src/lib/data/book/18-index.md                  |  71 ---\n src/lib/data/book/19-image-credits.md          |  21 -\n src/lib/data/book/book.json                    | 138 +++---\n src/lib/data/book/p2-01-chapter13.md           |  96 ----\n src/lib/data/book/p2-02-chapter14.md           | 104 -----\n src/lib/data/book/p2-03-chapter15.md           | 103 -----\n src/lib/data/book/p2-04-chapter16.md           | 114 -----\n src/lib/data/book/p2-05-chapter17.md           | 131 ------\n src/lib/data/book/p2-06-chapter18.md           | 115 -----\n src/lib/data/book/p2-07-chapter19.md           | 144 ------\n src/lib/data/book/p2-08-chapter20.md           | 127 ------\n src/lib/data/book/p2-09-chapter21.md           |  83 ----\n src/lib/data/book/p2-10-chapter22.md           | 134 ------\n src/lib/data/book/p2-11-chapter23.md           | 192 --------\n src/lib/data/book/part1-divider.md             |   4 +-\n src/lib/data/book/part2-divider.md             |   4 +-\n src/lib/server/email.js                        |  68 ++-\n src/routes/api/preorder-count/+server.js       |  37 --\n src/routes/api/preorder/+server.js             | 101 -----\n src/routes/api/stripe-checkout/+server.js      |  28 +-\n src/routes/book/+layout.svelte                 | 120 ++++-\n src/routes/book/[sectionId]/+page.server.js    |   6 -\n src/routes/launch/+page.svelte                 |  60 ++-\n tests/results/.last-run.json                   |  29 +-\n 49 files changed, 759 insertions(+), 5037 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.75,
+      "curr": 0.1,
+      "delta": -0.65
+    },
+    "completion": {
+      "prev": 0.95,
+      "curr": 0.05,
+      "delta": -0.9
+    },
+    "impact": {
+      "prev": 0.7,
+      "curr": 0.75,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.15,
+      "delta": 0.05
+    }
+  },
+  "token_count": 526
+}

@@ -5,7 +5,13 @@ import { rateLimit } from '$lib/server/rateLimit.js';
 
 const PRICE_ID      = env.STRIPE_PRICE_ID;
 const SECRET_KEY    = env.STRIPE_SECRET_KEY;
-const PUBLIC_BASE   = env.PUBLIC_BASE_URL || 'http://localhost:5173';
+
+// Per-edition Stripe prices. Falls back to the shared STRIPE_PRICE_ID so the
+// endpoint keeps working if the edition-specific vars aren't set.
+const EDITION_PRICE_IDS = {
+  standard: env.STRIPE_PRICE_ID_STANDARD || PRICE_ID,
+  authors:  env.STRIPE_PRICE_ID_AUTHORS  || PRICE_ID,
+};
 
 // Graceful: if no Stripe key, we run in mock mode so the rest of the UI
 // can be tested without credentials. Remove the mock branch before launch.
@@ -30,9 +36,12 @@ export async function POST({ request, url, getClientAddress }) {
     return json({ error: 'Too many requests.' }, { status: 429 });
   }
 
-  // MOCK MODE — no Stripe key configured yet. Use request origin so the
-  // redirect works on any dev port without touching PUBLIC_BASE_URL.
-  const isMockPrice = !PRICE_ID || PRICE_ID === 'placeholder' || PRICE_ID.startsWith('your_');
+  const body = await request.json().catch(() => ({}));
+  const editionType = body.edition_type === 'authors' ? 'authors' : 'standard';
+  const priceId = EDITION_PRICE_IDS[editionType];
+
+  // MOCK MODE — no Stripe key configured yet.
+  const isMockPrice = !priceId || priceId === 'placeholder' || priceId.startsWith('your_');
   if (!stripe || isMockPrice) {
     return json({
       url: `${url.origin}/early-access/success?session_id=mock_session`,
@@ -42,12 +51,11 @@ export async function POST({ request, url, getClientAddress }) {
   try {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
-      line_items: [{ price: PRICE_ID, quantity: 1 }],
-      success_url: `${PUBLIC_BASE}/early-access/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url:  `${PUBLIC_BASE}/early-access`,
-      // Collect email so we can send the download link.
-      customer_email: undefined, // Stripe will ask on checkout
-      metadata: { product: 'early-access-bundle-v1' },
+      line_items: [{ price: priceId, quantity: 1 }],
+      success_url: `${url.origin}/early-access/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url:  `${url.origin}/early-access`,
+      customer_email: undefined,
+      metadata: { product: 'early-access-bundle-v1', edition_type: editionType },
       allow_promotion_codes: true,
       billing_address_collection: 'auto',
     });

@@ -69,9 +69,6 @@
     if (currentPath.startsWith('/checklist')) {
       return { label: 'Unlock Everything', href: '/early-access' };
     }
-    if (currentPath.startsWith('/launch')) {
-      return { label: 'Back the Book', href: '/launch#authors-edition' };
-    }
     return { label: 'Get Early Access', href: '/early-access' };
   })();
 

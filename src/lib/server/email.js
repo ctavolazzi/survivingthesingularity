@@ -74,10 +74,11 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
     : "You're on the preorder list.";
 
   const body = isAuthors
-    ? `${greeting} Your Author's Edition preorder is confirmed. Copy #${copy_number} of 100 is reserved for you. ` +
-      `Each Author's Edition is hand-bound and signed. No payment is collected now. You'll hear from us before the book ships in August 2026.`
+    ? `${greeting} Your Author's Limited Edition preorder is confirmed. Copy #${copy_number} of 100 is reserved for you. ` +
+      `Every copy is hand-bound, signed, and numbered by the author — and no two are alike, so #${copy_number} is one of a kind. ` +
+      `No payment is collected now. You'll hear from us before the book ships in August 2026.`
     : `${greeting} Your preorder is confirmed. You'll get first access when the book launches in August 2026, ` +
-      `available here on the site and on Amazon. No payment collected now. We'll reach out when it's ready.`;
+      `available here on the site and on Amazon in paperback and Kindle. No payment collected now. We'll reach out when it's ready.`;
 
   const cta = isAuthors
     ? { label: 'See the launch plan', url: 'https://survivingthesingularity.com/launch' }
@@ -117,6 +118,48 @@ export async function sendAdminPreorderAlert({ name, email, edition_type, copy_n
     text: body,
   });
   if (error) console.error('[email] admin preorder alert failed:', error.message ?? error);
+  return error ? { error } : { ok: true };
+}
+
+/**
+ * Confirm a Discord membership application was received. Reviewed by hand,
+ * not automatic, so the copy sets that expectation.
+ *
+ * @param {{ name: string, email: string }} args
+ */
+export async function sendDiscordApplicationConfirmation({ name, email }) {
+  if (!resend) return { skipped: true };
+  const safeName = name ? escapeHtml(name.slice(0, 120)) : '';
+  const greeting = safeName ? `Hi ${safeName},` : 'Hi,';
+  const heading = 'Application received.';
+  const body = `${greeting} Your application to join the Surviving the Singularity Discord is in. We review every application by hand, so it may take a few days. You'll hear from us either way.`;
+  const cta = { label: 'Back to the checklist', url: 'https://survivingthesingularity.com/checklist' };
+  const { error } = await resend.emails.send({
+    from,
+    to: email,
+    subject: 'Your Discord application is in',
+    html: renderHtml({ heading, body, cta }),
+  });
+  if (error) console.error('[email] discord application confirmation failed:', error.message ?? error);
+  return error ? { error } : { ok: true };
+}
+
+/**
+ * Notify the admin inbox when a Discord membership application lands.
+ *
+ * @param {{ name: string, email: string, answer: string }} args
+ */
+export async function sendAdminDiscordApplicationAlert({ name, email, answer }) {
+  if (!resend) return { skipped: true };
+  const subject = `[STS] Discord application: ${name}`;
+  const body = `Name: ${name}\nEmail: ${email}\n\nAnswer:\n${answer}`;
+  const { error } = await resend.emails.send({
+    from,
+    to: 'admin@johnnyautoseed.com',
+    subject,
+    text: body,
+  });
+  if (error) console.error('[email] admin discord application alert failed:', error.message ?? error);
   return error ? { error } : { ok: true };
 }
 
@@ -235,17 +278,25 @@ export async function sendChecklistEmail({ to, answers }) {
  *
  * @param {{ to: string, downloadUrl: string, sessionId: string }} args
  */
-export async function sendDownloadEmail({ to, downloadUrl, sessionId }) {
+export async function sendDownloadEmail({ to, downloadUrl, sessionId, edition_type, copy_number }) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset — skipping download email to', to);
     return { skipped: true };
   }
 
-  const subject = 'Your research bundle is ready';
-  const heading = 'Your download is ready.';
+  const isAuthors = edition_type === 'authors';
+  const subject = isAuthors
+    ? `Your bundle is ready — Author's Edition copy #${copy_number}`
+    : 'Your bundle is ready — preorder confirmed';
+  const heading = isAuthors
+    ? `Your download is ready. You're copy #${copy_number} of 100.`
+    : "Your download is ready. You're on the list.";
+  const confirmLine = isAuthors
+    ? `Your Author's Limited Edition preorder is confirmed — copy #${copy_number} of 100 is reserved for you. Hand-bound, signed, and numbered by the author, and no two copies are alike. `
+    : 'Your preorder is confirmed. ';
   const body =
-    'Thank you for supporting Surviving the Singularity. ' +
-    'The research bundle includes the PDFs, papers, images, and source documents behind the book. ' +
+    `${confirmLine}Your spot in line is locked in at 50% off the finished book, and we will email you an exclusive link when it is ready. ` +
+    'The bundle below includes the complete current draft of the book as a PDF, plus the research PDFs, papers, images, and source documents behind it. ' +
     'The link below is valid for 7 days. After that, reply to this email and we will send a fresh one.';
   const cta = { label: 'Download your bundle', url: downloadUrl };
 
@@ -262,6 +313,7 @@ export async function sendDownloadEmail({ to, downloadUrl, sessionId }) {
         Readiness checklist: <a href="https://survivingthesingularity.com/checklist" style="color:#f59e0b;">survivingthesingularity.com/checklist</a><br>
         Research signals: <a href="https://survivingthesingularity.com/signals" style="color:#f59e0b;">survivingthesingularity.com/signals</a>
       </p>
+      ${env.BOOK_ACCESS_PASSWORD ? `<p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(env.BOOK_ACCESS_PASSWORD)}</strong></p>` : ''}
     </div>
     <p style="font-size:11px;color:#334155;margin:36px 0 0;">Order ref: ${sessionId.slice(0, 24)}... · survivingthesingularity.com · Reply to this email for support.</p>
   </div></body></html>`;

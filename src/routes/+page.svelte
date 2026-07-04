@@ -80,9 +80,9 @@
 
 <svelte:head>
   <title>Surviving the Singularity: New Era, New Playbook</title>
-  <meta name="description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft — open to read now." />
+  <meta name="description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft, open to read now." />
   <meta property="og:title" content="Surviving the Singularity" />
-  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft — open to read now." />
+  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft, open to read now." />
   <meta property="og:image" content="/images/surviving_the_singularity_cover_1200.png" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -160,9 +160,9 @@
         </h1>
         <div class="hero-sub-stack">
           <p class="hero-sub-line">AI is ending careers. Rewriting industries.</p>
-          <p class="hero-sub-line hero-sub-punch">Most people have no idea what's coming.</p>
-          <p class="hero-sub-line">You can be the one who does.</p>
-          <p class="hero-sub-line">Before the window closes.</p>
+          <p class="hero-sub-line hero-sub-punch">Doom-scrolling is not a plan.</p>
+          <p class="hero-sub-line">Waiting to be rescued is a failure condition.</p>
+          <p class="hero-sub-line">Here's the uncompromising reality check, and the way through.</p>
         </div>
         <div class="hero-actions">
           <a href="/early-access" class="btn-primary">
@@ -348,20 +348,20 @@
         <div class="book-part book-part-1">
           <span class="book-part-num">Part I</span>
           <h3 class="book-part-title">What is the Singularity?</h3>
-          <p class="book-part-sub">Defining the inflection. The mathematical map. The thermodynamic reality.</p>
-          <p class="book-part-desc">Why the 2017 Transformer crossed the event horizon. Nine stages from current AI to the apex. The machine is a heat engine bound by physics.</p>
+          <p class="book-part-sub">The data. The math. The thermodynamic reality.</p>
+          <p class="book-part-desc">Why the 2017 Transformer crossed the event horizon. The mathematical map of intelligence scaling: nine stages from current AI to the apex, run by a machine bound by physics.</p>
         </div>
         <div class="book-part book-part-2">
           <span class="book-part-num">Part II</span>
           <h3 class="book-part-title">How Humans React</h3>
-          <p class="book-part-sub">Transition dynamics. Behavioral patterns. The egalitarian pivot.</p>
-          <p class="book-part-desc">Most people follow predictable patterns when disruption hits. Understanding those patterns puts you ahead of the reaction before it happens.</p>
+          <p class="book-part-sub">Transition dynamics. Fear to footing. The egalitarian pivot.</p>
+          <p class="book-part-desc">Most people follow predictable patterns when disruption hits. Learn the psychology of the collapse, step out of the fear loop, and plug into the egalitarian, hyper-local cooperative networks already forming.</p>
         </div>
         <div class="book-part book-part-3">
           <span class="book-part-num">Part III</span>
           <h3 class="book-part-title">How to Survive the Transition</h3>
-          <p class="book-part-sub">Hyper-local systems. The Shouse Grid. The new social contract.</p>
-          <p class="book-part-desc">Concrete moves, not abstract advice. Local energy, local food, local compute, community coordination. The specific steps to build before the window closes.</p>
+          <p class="book-part-sub">Shouse Grids. DC-native microgrids. Hardware you own.</p>
+          <p class="book-part-desc">Actionable mechanics, not abstract advice: Shouse Grids, DC-native microgrids, and mechanical transducer systems that refine local waste into value. Johnny Autoseed, our boutique robotics project management and consultation service, helps you stand up the physical infrastructure.</p>
         </div>
       </div>
     </div>
@@ -373,7 +373,11 @@
       <div class="cta-inner reveal">
         <div class="cta-glow" aria-hidden="true"></div>
         <h2 class="cta-heading" id="act-heading">Get ready.<br><em>Five dollars.</em></h2>
-        <p class="cta-sub">The blueprint. The research bundle. The book draft. Get ahead of everyone else. One payment.<br><br>Limited time offer. Price goes up at launch.</p>
+        <p class="cta-sub">The blueprint. The research bundle. The book draft. Get ahead of everyone else. One payment.<br><br>Five dollars also locks in 50% off at digital launch, plus queue access to Author's Edition: exactly 100 hand-bound, signed, numbered copies. No two alike. When they're gone, they're gone.<br><br>Limited time offer. Price goes up at launch.</p>
+        <!-- Bookbinding authenticity video: when the binding process video is
+             filmed, embed it here (same .video-ratio pattern as the sections
+             above) to prove the hand-bound Author's Edition is real. -->
+
         <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
           Get Early Access: $5
           <span class="btn-icon" aria-hidden="true">
@@ -404,9 +408,20 @@
     <div class="free-path-inner">
       <p class="free-path-eyebrow">Not ready to buy? That's fine.</p>
       <h2 class="free-path-heading">Get started for free.</h2>
-      <p class="free-path-sub">The checklist is free. The Discord community is free. You don't need to spend a dollar to start preparing.</p>
+      <p class="free-path-sub">The checklist is free. The Discord community is free. Municipal Autonomy Code is free. You don't need to spend a dollar to start preparing.</p>
 
       <div class="free-path-grid">
+        <a href="/downloads/Municipal-Autonomy-Code.pdf" download class="free-path-card">
+          <div class="free-path-card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+          </div>
+          <div class="free-path-card-body">
+            <div class="free-path-card-title">Municipal Autonomy Code</div>
+            <div class="free-path-card-desc">The foundational legal layer for securing local infrastructure, straight from Appendix A. Instant download, no signup.</div>
+            <span class="free-path-card-cta">Download the code</span>
+          </div>
+        </a>
+
         <a href="/checklist" class="free-path-card">
           <div class="free-path-card-icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
@@ -1268,9 +1283,12 @@
   }
   .free-path-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
     text-align: left;
+  }
+  @media (max-width: 900px) {
+    .free-path-grid { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 600px) {
     .free-path-grid { grid-template-columns: 1fr; }

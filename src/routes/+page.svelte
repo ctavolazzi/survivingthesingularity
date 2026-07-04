@@ -46,7 +46,11 @@
         if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
       });
     }, { threshold: 0.07, rootMargin: '0px 0px -36px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+    }
 
     const countObs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -183,27 +187,31 @@
     <div class="section-inner">
       <div class="ss-grid reveal">
         <div class="ss-item">
-          <span class="ss-num">300M</span>
-          <span class="ss-desc">jobs rendered obsolete by AI globally</span>
+          <span class="ss-label">Scale</span>
+          <div class="ss-figure"><span class="ss-num">300M</span></div>
+          <span class="ss-desc">jobs rendered obsolete by AI, globally</span>
           <a href="https://www.google.com/search?q=Goldman+Sachs+300+million+jobs+AI+generative" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs</a>
         </div>
         <div class="ss-item">
-          <span class="ss-num">99%</span>
+          <span class="ss-label">Speed</span>
+          <div class="ss-figure"><span class="ss-num">99%</span></div>
           <span class="ss-desc">of business leaders plan AI-driven headcount cuts within 2 years</span>
           <a href="https://www.google.com/search?q=Mercer+2026+survey+AI+headcount+cuts+business+leaders" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Mercer, 2026</a>
         </div>
         <div class="ss-item">
-          <div class="ss-price-compare">
+          <span class="ss-label">Price collapse</span>
+          <div class="ss-figure ss-figure-price">
             <span class="ss-num ss-num-old">$100,000</span>
             <span class="ss-num">$1,000</span>
           </div>
-          <span class="ss-desc">Robot capability now available in your own home</span>
+          <span class="ss-desc">robot capability, now in your own home</span>
           <a href="https://www.google.com/search?q=open+source+robot+arm+$1000+home+2026+LeRobot+SO-100" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Open-source robotics</a>
         </div>
         <div class="ss-item">
-          <span class="ss-num">0</span>
-          <span class="ss-desc">years of preparation. The first government responses to AI displacement are appearing right now. They are nowhere near enough.</span>
-          <a href="https://www.google.com/search?q=government+AI+displacement+worker+protection+plan+2026" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">No one is coming to save you.</a>
+          <span class="ss-label">Safety net</span>
+          <div class="ss-figure"><span class="ss-num">0</span></div>
+          <span class="ss-desc">plans in place to catch displaced workers. <strong>No one is coming to save you.</strong></span>
+          <a href="https://www.google.com/search?q=government+AI+displacement+worker+protection+plan+2026" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">See for yourself</a>
         </div>
       </div>
     </div>
@@ -750,15 +758,19 @@
     .ss-item:nth-child(4) { border-right: none; }
   }
   @media (max-width: 420px) { .ss-item { border-right: none; border-bottom: 1px solid var(--border); } .ss-item:last-child { border-bottom: none; } }
-  .ss-price-compare { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .ss-num { font-family: var(--font-mono); font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 900; color: var(--amber); letter-spacing: -0.03em; line-height: 1; white-space: nowrap; }
-  .ss-num-old { color: var(--text-4); font-size: clamp(1.4rem, 3.5vw, 2.2rem); text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-thickness: 3px; }
-  /* Price column holds 6-8 mono digits; the base 3.8rem overflows the ~211px
+  .ss-label { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--amber); opacity: 0.75; }
+  /* Fixed-height figure row so all four descriptions start on the same line,
+     whether the column holds one number or the stacked price pair. */
+  .ss-figure { min-height: clamp(3.4rem, 7.5vw, 5.4rem); display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 2px; }
+  .ss-num { font-family: var(--font-mono); font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 900; color: var(--amber); letter-spacing: -0.03em; line-height: 1; white-space: nowrap; }
+  .ss-num-old { color: var(--text-4); font-size: clamp(1.3rem, 3vw, 1.9rem); text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-thickness: 3px; }
+  /* Price column holds 6-8 mono digits; the base size overflows the ~211px
      column at desktop and wraps mid-number ("$1,0/00"). Size to fit instead. */
-  .ss-price-compare .ss-num { font-size: clamp(2rem, 4.5vw, 2.9rem); }
-  .ss-price-compare .ss-num-old { font-size: clamp(1.3rem, 3vw, 2rem); }
-  .ss-desc { font-size: clamp(0.88rem, 1.8vw, 1rem); color: var(--text-2); line-height: 1.55; }
-  .ss-src { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-4); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+  .ss-figure-price .ss-num { font-size: clamp(2rem, 4.5vw, 2.9rem); }
+  .ss-figure-price .ss-num-old { font-size: clamp(1.3rem, 3vw, 1.9rem); }
+  .ss-desc { font-size: clamp(0.88rem, 1.8vw, 0.98rem); color: var(--text-2); line-height: 1.55; }
+  .ss-desc strong { color: var(--text-1); font-weight: 700; }
+  .ss-src { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-4); text-transform: uppercase; letter-spacing: 0.08em; margin-top: auto; padding-top: 14px; }
   .ss-src-link { color: var(--text-3); text-decoration: underline; text-underline-offset: 2px; transition: color 0.15s ease; }
   .ss-src-link:hover { color: var(--amber); }
 

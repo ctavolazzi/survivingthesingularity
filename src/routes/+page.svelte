@@ -751,8 +751,12 @@
   }
   @media (max-width: 420px) { .ss-item { border-right: none; border-bottom: 1px solid var(--border); } .ss-item:last-child { border-bottom: none; } }
   .ss-price-compare { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .ss-num { font-family: var(--font-mono); font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 900; color: var(--amber); letter-spacing: -0.03em; line-height: 1; }
+  .ss-num { font-family: var(--font-mono); font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 900; color: var(--amber); letter-spacing: -0.03em; line-height: 1; white-space: nowrap; }
   .ss-num-old { color: var(--text-4); font-size: clamp(1.4rem, 3.5vw, 2.2rem); text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-thickness: 3px; }
+  /* Price column holds 6-8 mono digits; the base 3.8rem overflows the ~211px
+     column at desktop and wraps mid-number ("$1,0/00"). Size to fit instead. */
+  .ss-price-compare .ss-num { font-size: clamp(2rem, 4.5vw, 2.9rem); }
+  .ss-price-compare .ss-num-old { font-size: clamp(1.3rem, 3vw, 2rem); }
   .ss-desc { font-size: clamp(0.88rem, 1.8vw, 1rem); color: var(--text-2); line-height: 1.55; }
   .ss-src { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-4); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
   .ss-src-link { color: var(--text-3); text-decoration: underline; text-underline-offset: 2px; transition: color 0.15s ease; }
@@ -1134,7 +1138,8 @@
   .middle-offer { display: flex; flex-direction: column; gap: 16px; }
   .middle-offer-label { font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--amber); display: block; margin-bottom: 4px; }
   .middle-offer-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
-  .middle-offer-list li { font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2); line-height: 1.5; display: flex; align-items: center; gap: 10px; }
+  .middle-offer-list li { font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2); line-height: 1.5; display: flex; align-items: flex-start; gap: 10px; }
+  .middle-offer-list li svg { flex-shrink: 0; margin-top: 0.33em; }
   .middle-btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: var(--amber); color: #0a0a0a; font-family: 'Outfit', system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; border-radius: var(--r-pill); text-decoration: none; transition: filter 0.2s ease, transform 0.2s var(--ease-spring); box-shadow: 0 4px 20px rgba(245,158,11,0.28); align-self: flex-start; }
   .middle-btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
   .middle-fine { font-size: 0.82rem; color: var(--text-4); margin: 0; }

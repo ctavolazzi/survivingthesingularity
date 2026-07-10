@@ -39,7 +39,8 @@ const config = {
 				'frame-src': [
 					"'self'",
 					'https://www.youtube.com', 'https://www.youtube-nocookie.com',
-					'https://open.spotify.com', 'https://*.substack.com'
+					'https://open.spotify.com', 'https://*.substack.com',
+					'https://luma.com'
 				],
 				'base-uri': ["'self'"],
 				'form-action': ["'self'"],

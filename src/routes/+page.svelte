@@ -182,6 +182,51 @@
     </div>
   </section>
 
+  <!-- WEEKLY EVENT: Luma Zoom community call -->
+  <section class="event-section" aria-labelledby="event-heading">
+    <div class="section-inner">
+      <div class="event-inner reveal">
+        <div class="event-text">
+          <div class="event-eyebrow">
+            <span class="event-dot"></span>
+            <span>Live &middot; Every Tuesday &middot; 4PM Pacific</span>
+          </div>
+          <h2 class="event-heading" id="event-heading">Your community awaits.</h2>
+          <p class="event-sub">
+            Tired of seeing the patterns with no one to talk to about them? Join our weekly
+            Zoom discussion: a support group for the transitional moment we're living through.
+          </p>
+          <ul class="event-list">
+            <li>Weekly community discussion, live on Zoom</li>
+            <li>Post-labor society, transhumanism, solarpunk, and everything in between</li>
+            <li>No old-world Luddism: we embrace reality as it is and map where it's going</li>
+            <li>Open-minded people who see what you're seeing. Free to join.</li>
+          </ul>
+          <div class="event-actions">
+            <a href="https://lu.ma/egus58y5" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              Register on Luma
+              <span class="btn-icon" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+          </div>
+          <p class="event-fine">Tuesdays, 4:00&ndash;5:00 PM Pacific &middot; Zoom link sent when you register.</p>
+        </div>
+        <div class="event-embed">
+          <iframe
+            src="https://luma.com/embed/event/evt-yQuYOJ1qhrnkvdw/simple"
+            title="Register: Surviving the Singularity weekly community call"
+            frameborder="0"
+            scrolling="no"
+            allow="fullscreen"
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- STATS -->
   <section class="stat-strip" aria-label="By the numbers">
     <div class="section-inner">
@@ -1245,6 +1290,42 @@
   @media (max-width: 420px) { .email-form { flex-direction: column; } .email-submit { width: 100%; } }
 
 
+  /* WEEKLY EVENT */
+  .event-section { border-top: 1px solid var(--border); padding: clamp(56px, 8vw, 96px) 0; }
+  .event-inner {
+    display: grid; grid-template-columns: 1fr minmax(360px, 480px);
+    gap: clamp(32px, 5vw, 56px); align-items: center;
+  }
+  @media (max-width: 900px) { .event-inner { grid-template-columns: 1fr; } }
+  .event-text { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+  .event-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: clamp(0.72rem, 1.8vw, 0.85rem);
+    font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--amber);
+  }
+  .event-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--amber); box-shadow: 0 0 8px var(--amber);
+    flex-shrink: 0; animation: ac-pulse 2s ease-in-out infinite;
+  }
+  .event-heading {
+    font-size: clamp(2rem, 5.5vw, 3.4rem); font-weight: 900;
+    line-height: 1.05; letter-spacing: -0.03em; color: var(--text-1); margin: 0;
+  }
+  .event-sub { font-size: clamp(1rem, 2.2vw, 1.15rem); color: var(--text-2); line-height: 1.7; margin: 0; max-width: 52ch; }
+  .event-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  .event-list li { font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2); line-height: 1.55; padding-left: 18px; position: relative; }
+  .event-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
+  .event-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
+  .event-fine { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-3); margin: 0; }
+  .event-embed {
+    border: 1px solid var(--border-mid); border-radius: 16px;
+    overflow: hidden; background: var(--surface); width: 100%;
+  }
+  .event-embed iframe { display: block; width: 100%; height: 700px; border: none; }
+  @media (max-width: 640px) { .event-embed iframe { height: 780px; } }
+
   /* FREE PATH */
   .free-path {
     border-top: 1px solid var(--border);
@@ -1359,6 +1440,6 @@
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
   @media (prefers-reduced-motion: reduce) {
-    .ambient-orb, .ac-dot, .timeline-dot.now, .chapter-here-dot { animation: none; }
+    .ambient-orb, .ac-dot, .event-dot, .timeline-dot.now, .chapter-here-dot { animation: none; }
   }
 </style>

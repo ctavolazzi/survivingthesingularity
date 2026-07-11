@@ -23,7 +23,6 @@ cloudflare_logs/Discord.dmg
 *.sql
 
 # Scripts and sensitive directories (for security reasons)
-/scripts/
 /cursor/
 
 # Archive directory (for version checkpoints)

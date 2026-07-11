@@ -14,6 +14,12 @@ The social contract is dead. The forced labor market is collapsing. The machine 
 
 Stop skimming the headlines. Stop parroting the cowards who want to keep you afraid so they can maintain control. Get your hands on the technology. Look at the data. Accept the reality of the trajectory we are on, because it affects every single living being on this planet.
 
+## The Moral Mandate
+
+We are building a better tomorrow because it is the only intelligent thing to do. We are not "destroying jobs"; we are automating the toil and the risk. We are not "weird" for using tools to solve our survival; we are human. The choice is ours: keep arguing over the scraps of a dying system, or build the machinery of our own freedom.
+
+Stop arguing. Stop waiting. Start building.
+
 The singularity is here. Survive it if you can.
 
 ---

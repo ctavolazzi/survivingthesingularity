@@ -3,7 +3,7 @@
   "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
   "author": "Christopher Tavolazzi",
   "version": "0.2.0",
-  "lastUpdated": "2026-07-01",
+  "lastUpdated": "2026-07-10",
   "sections": [
     {
       "id": "preface",
@@ -134,6 +134,11 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md"
+    },
+    {
+      "id": "appendix-c",
+      "title": "Appendix C: Executive Reference Guide",
+      "file": "24-appendix-c.md"
     }
   ]
 }

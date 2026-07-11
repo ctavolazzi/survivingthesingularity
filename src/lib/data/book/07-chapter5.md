@@ -1,5 +1,10 @@
 # Chapter 5: The Thermodynamics of Survival
 
+![The Sun imaged by NASA's Solar Dynamics Observatory](/book-images/ch05-sdo-sun.jpg)
+
+*The Sun, via NASA's Solar Dynamics Observatory. The only income the planet has. (NASA/SDO (AIA), Public domain, via Wikimedia Commons)*
+
+
 > *"If your theory is found to be against the Second Law of Thermodynamics I can give you no hope; there is nothing for it but to collapse in deepest humiliation."*
 > — Arthur Eddington, *The Nature of the Physical World* (1928)
 Let's talk about energy.

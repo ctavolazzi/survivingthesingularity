@@ -1,5 +1,10 @@
 # Chapter 10: The "Create Over Consume" Protocol
 
+![The New York Stock Exchange trading floor](/book-images/ch10-nyse.jpg)
+
+*The trading floor. The consumption engine you are stepping out of. (Scott Beale, CC BY-SA 4.0, via Wikimedia Commons)*
+
+
 > *"The best way to predict the future is to invent it."*
 > — Alan Kay, *remark at Xerox PARC* (1971)
 

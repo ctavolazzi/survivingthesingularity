@@ -1,5 +1,10 @@
 # Chapter 7: The Battle Lines — The Entitled vs. The Ready
 
+![Chess board set up in the opening position](/book-images/ch07-chess-battle-lines.jpg)
+
+*Opening position. The battle lines are drawn before most players notice the game started. (Bin im Garten, CC BY-SA 3.0, via Wikimedia Commons)*
+
+
 > *"Chance favors only the prepared mind."*
 > — Louis Pasteur, *lecture at the University of Lille* (1854)
 

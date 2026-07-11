@@ -1,107 +1,191 @@
 [
-  {
-    "file": "intro-asimo.jpg",
-    "source_title": "File:ASIMO-2001.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3AASIMO-2001.jpg",
-    "artist": "Liauzh",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "file": "ch01-atlas.jpg",
-    "source_title": "File:Atlas during testing.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg",
-    "artist": "DARPA",
-    "license": "Public domain"
-  },
-  {
-    "file": "ch02-factory-robots.jpg",
-    "source_title": "File:Making a Jaguar car - Thinktank Birmingham Science Museum - robotic arms at work (8613698407).jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3AMaking_a_Jaguar_car_-_Thinktank_Birmingham_Science_Museum_-_robotic_arms_at_work_%288613698407%29.jpg",
-    "artist": "ell brown",
-    "license": "CC BY-SA 2.0"
-  },
-  {
-    "file": "ch03-echo-dot.jpg",
-    "source_title": "File:Amazon Echo Dot (virtual digital assistant) with normal coffee mug as size comparison.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3AAmazon_Echo_Dot_%28virtual_digital_assistant%29_with_normal_coffee_mug_as_size_comparison.jpg",
-    "artist": "Pittigrilli",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "file": "ch03-waymo.jpg",
-    "source_title": "File:Waymo Jaguar I-Pace in San Francisco 2023 dllu.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3AWaymo_Jaguar_I-Pace_in_San_Francisco_2023_dllu.jpg",
-    "artist": "Dllu",
-    "license": "CC BY 4.0"
-  },
-  {
-    "file": "ch04-da-vinci.jpg",
-    "source_title": "File:New Da Vinci Xi.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3ANew_Da_Vinci_Xi.jpg",
-    "artist": "Alvarogarciamd",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "file": "ch05-nao.jpg",
-    "source_title": "File:NAO robot in the Robinlab.JPG",
-    "page": "https://commons.wikimedia.org/wiki/File%3ANAO_robot_in_the_Robinlab.JPG",
-    "artist": "Gustavo A. Casa\u00f1",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "file": "ch06-edmond-de-belamy.png",
-    "source_title": "File:Edmond de Belamy.png",
-    "page": "https://commons.wikimedia.org/wiki/File%3AEdmond_de_Belamy.png",
-    "artist": "Artificial intelligence software",
-    "license": "Public domain"
-  },
-  {
-    "file": "ch07-pepper.jpg",
-    "source_title": "File:Benjamin Arnulf with pepper from SoftBank at Oracle OpenWorld.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3ABenjamin_Arnulf_with_pepper_from_SoftBank_at_Oracle_OpenWorld.jpg",
-    "artist": "GeneralAB13",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "file": "ch08-sophia.jpg",
-    "source_title": "File:Sophia (robot).jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3ASophia_%28robot%29.jpg",
-    "artist": "ITU Pictures",
-    "license": "CC BY 2.0"
-  },
-  {
-    "file": "ch09-sophia-un.jpg",
-    "source_title": "File:Sophia at the AI for Good Global Summit 2018 (27254369347) (cropped).jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3ASophia_at_the_AI_for_Good_Global_Summit_2018_%2827254369347%29_%28cropped%29.jpg",
-    "artist": "ITU Pictures from Geneva, Switzerland",
-    "license": "CC BY 2.0"
-  },
-  {
-    "file": "ch10-nyse.jpg",
-    "source_title": "File:Trading Floor at the New York Stock Exchange.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3ATrading_Floor_at_the_New_York_Stock_Exchange.jpg",
-    "artist": "Scott Beale",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "file": "ch11-spot.jpg",
-    "source_title": "File:Spot by Boston Dynamics.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3ASpot_by_Boston_Dynamics.jpg",
-    "artist": "Jonte",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "file": "ch12-farmbot.jpg",
-    "source_title": "File:FarmBot Genesis.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3AFarmBot_Genesis.jpg",
-    "artist": "FarmBot",
-    "license": "CC BY 4.0"
-  },
-  {
-    "file": "ch12-farmbot-watering.jpg",
-    "source_title": "File:FarmBot Genesis Watering.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File%3AFarmBot_Genesis_Watering.jpg",
-    "artist": "FarmBot",
-    "license": "CC BY 4.0"
-  }
+ {
+  "file": "ch01-atlas.jpg",
+  "source_title": "File:Atlas during testing.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg",
+  "artist": "DARPA",
+  "license": "Public domain"
+ },
+ {
+  "file": "ch01-m87-black-hole.jpg",
+  "source_title": "File:Black hole - Messier 87 crop max res.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg",
+  "artist": "Event Horizon Telescope Collaboration",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "ch02-factory-robots.jpg",
+  "source_title": "File:Making a Jaguar car - Thinktank Birmingham Science Museum - robotic arms at work (8613698407).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMaking_a_Jaguar_car_-_Thinktank_Birmingham_Science_Museum_-_robotic_arms_at_work_%288613698407%29.jpg",
+  "artist": "ell brown",
+  "license": "CC BY-SA 2.0"
+ },
+ {
+  "file": "ch03-echo-dot.jpg",
+  "source_title": "File:Amazon Echo Dot (virtual digital assistant) with normal coffee mug as size comparison.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3AAmazon_Echo_Dot_%28virtual_digital_assistant%29_with_normal_coffee_mug_as_size_comparison.jpg",
+  "artist": "Pittigrilli",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "file": "ch03-falcon-heavy.jpg",
+  "source_title": "File:Falcon Heavy Demo Mission (40126461851).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Falcon_Heavy_Demo_Mission_(40126461851).jpg",
+  "artist": "SpaceX",
+  "license": "CC0"
+ },
+ {
+  "file": "ch03-waymo.jpg",
+  "source_title": "File:Waymo Jaguar I-Pace in San Francisco 2023 dllu.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3AWaymo_Jaguar_I-Pace_in_San_Francisco_2023_dllu.jpg",
+  "artist": "Dllu",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "ch04-da-vinci.jpg",
+  "source_title": "File:New Da Vinci Xi.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3ANew_Da_Vinci_Xi.jpg",
+  "artist": "Alvarogarciamd",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "file": "ch04-hubble-deep-field.jpg",
+  "source_title": "File:Hubble ultra deep field high rez edit1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field_high_rez_edit1.jpg",
+  "artist": "NASA/ESA",
+  "license": "Public domain"
+ },
+ {
+  "file": "ch05-nao.jpg",
+  "source_title": "File:NAO robot in the Robinlab.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File%3ANAO_robot_in_the_Robinlab.JPG",
+  "artist": "Gustavo A. Casañ",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "file": "ch05-sdo-sun.jpg",
+  "source_title": "File:The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+  "artist": "NASA/SDO (AIA)",
+  "license": "Public domain"
+ },
+ {
+  "file": "ch06-edmond-de-belamy.png",
+  "source_title": "File:Edmond de Belamy.png",
+  "page": "https://commons.wikimedia.org/wiki/File%3AEdmond_de_Belamy.png",
+  "artist": "Artificial intelligence software",
+  "license": "Public domain"
+ },
+ {
+  "file": "ch07-chess-battle-lines.jpg",
+  "source_title": "File:Chess board with chess set in opening position IMG 5994.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Chess_board_with_chess_set_in_opening_position_IMG_5994.JPG",
+  "artist": "Bin im Garten",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "file": "ch07-pepper.jpg",
+  "source_title": "File:Benjamin Arnulf with pepper from SoftBank at Oracle OpenWorld.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3ABenjamin_Arnulf_with_pepper_from_SoftBank_at_Oracle_OpenWorld.jpg",
+  "artist": "GeneralAB13",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "file": "ch08-sophia.jpg",
+  "source_title": "File:Sophia (robot).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3ASophia_%28robot%29.jpg",
+  "artist": "ITU Pictures",
+  "license": "CC BY 2.0"
+ },
+ {
+  "file": "ch09-3d-printer.jpg",
+  "source_title": "File:Prusa i3 - RepRap 3D printer printing.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Prusa_i3_-_RepRap_3D_printer_printing.jpg",
+  "artist": "John Abella",
+  "license": "CC BY 2.0"
+ },
+ {
+  "file": "ch09-sophia-un.jpg",
+  "source_title": "File:Sophia at the AI for Good Global Summit 2018 (27254369347) (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3ASophia_at_the_AI_for_Good_Global_Summit_2018_%2827254369347%29_%28cropped%29.jpg",
+  "artist": "ITU Pictures from Geneva, Switzerland",
+  "license": "CC BY 2.0"
+ },
+ {
+  "file": "ch10-nyse.jpg",
+  "source_title": "File:Trading Floor at the New York Stock Exchange.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3ATrading_Floor_at_the_New_York_Stock_Exchange.jpg",
+  "artist": "Scott Beale",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "file": "ch11-spot.jpg",
+  "source_title": "File:Spot by Boston Dynamics.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3ASpot_by_Boston_Dynamics.jpg",
+  "artist": "Jonte",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "file": "ch12-farmbot-watering.jpg",
+  "source_title": "File:FarmBot Genesis Watering.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3AFarmBot_Genesis_Watering.jpg",
+  "artist": "FarmBot",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "ch12-farmbot.jpg",
+  "source_title": "File:FarmBot Genesis.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3AFarmBot_Genesis.jpg",
+  "artist": "FarmBot",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "ch13-solar-barn.jpg",
+  "source_title": "File:Gutshof Nassanger Scheune-20220807-RM-161209.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gutshof_Nassanger_Scheune-20220807-RM-161209.jpg",
+  "artist": "Ermell",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "file": "ch14-dead-mall.jpg",
+  "source_title": "File:Israel Batch 3 (172).JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Israel_Batch_3_(172).JPG",
+  "artist": "User:Mattes",
+  "license": "Public domain"
+ },
+ {
+  "file": "ch16-servers.jpg",
+  "source_title": "File:Wikimedia Foundation Servers-8055 35.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_35.jpg",
+  "artist": "Victor Grigas",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "file": "ch17-workbench.jpg",
+  "source_title": "File:Various hand tools and hardware items scattered on an old green workbench in a workshop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Various_hand_tools_and_hardware_items_scattered_on_an_old_green_workbench_in_a_workshop.jpg",
+  "artist": "Shixart1985",
+  "license": "CC BY 2.0"
+ },
+ {
+  "file": "ch18-compass-map.jpg",
+  "source_title": "File:Topographical Map of Traditional Galloway.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Topographical_Map_of_Traditional_Galloway.png",
+  "artist": "SFC9394",
+  "license": "CC BY 2.5"
+ },
+ {
+  "file": "ch19-iss-sunrise.jpg",
+  "source_title": "File:An orbital sunrise crowns Earth's horizon (iss072e340644).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:An_orbital_sunrise_crowns_Earth%27s_horizon_(iss072e340644).jpg",
+  "artist": "NASA Johnson Space Center",
+  "license": "Public domain"
+ },
+ {
+  "file": "intro-asimo.jpg",
+  "source_title": "File:ASIMO-2001.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File%3AASIMO-2001.jpg",
+  "artist": "Liauzh",
+  "license": "CC BY-SA 4.0"
+ }
 ]

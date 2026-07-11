@@ -10,6 +10,7 @@ Commands:
     audit     Full site audit: routes, links, assets, meta, sitemap, placeholders
     book      Book manuscript stats: per-chapter word counts, thin chapters
     quotes    Inject chapter epigraphs from scripts/chapter_quotes.json
+    images    Fetch (Wikimedia Commons, license-gated) + inject chapter header images
     stripe    Stripe go-live readiness (masks all secrets)
     live      Probe production and compare against local routes (deploy drift)
     sitemap   Check sitemap.xml against real routes; --write regenerates it
@@ -355,6 +356,17 @@ def inject_epigraph(text: str, q: dict) -> tuple:
     j = i
     while j < len(lines) and lines[j].strip() == "":
         j += 1
+    # skip a chapter header image block (image + optional italic caption):
+    # the epigraph slot sits below it
+    if j < len(lines) and lines[j].lstrip().startswith("!["):
+        j += 1
+        while j < len(lines) and lines[j].strip() == "":
+            j += 1
+        if j < len(lines) and re.match(r"^\*[^*].*\*\s*$", lines[j].strip()):
+            j += 1
+            while j < len(lines) and lines[j].strip() == "":
+                j += 1
+        i = j  # if we insert, insert below the image block
     block = epigraph_block(q) + "\n"
     # an existing blockquote right under the title is the epigraph slot
     if j < len(lines) and lines[j].lstrip().startswith(">"):
@@ -368,8 +380,227 @@ def inject_epigraph(text: str, q: dict) -> tuple:
             return text, "unchanged"
         new = "".join(lines[:j]) + block + "".join(lines[k:])
         return new, "replaced"
-    new = "".join(lines[:i]) + "\n" + block + "".join(lines[i:])
+    new = "".join(lines[:i]) + "\n" + block + "\n" + "".join(lines[i:])
     return new, "inserted"
+
+
+def load_image_registry() -> list:
+    reg = json.loads((ROOT / "scripts" / "chapter_images.json").read_text(encoding="utf-8"))
+    return reg["images"]
+
+
+ALLOWED_LICENSES = re.compile(r"public domain|cc0|^cc.by(.sa)?", re.IGNORECASE)
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+IMAGES_DIR = STATIC_DIR / "book-images"
+
+
+UA = f"sts.py/{VERSION} (https://survivingthesingularity.com; book tooling; contact: site owner)"
+
+
+def _polite_open(url: str, timeout: float = 60.0, tries: int = 4):
+    """urlopen with backoff — Wikimedia 429s bursty anonymous clients."""
+    import time
+    delay = 3.0
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            return urllib.request.urlopen(req, timeout=timeout)
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < tries - 1:
+                time.sleep(delay)
+                delay *= 2
+                continue
+            raise
+
+
+def _commons_get(params: dict) -> dict:
+    import urllib.parse
+    qs = urllib.parse.urlencode({**params, "format": "json"})
+    with _polite_open(f"{COMMONS_API}?{qs}", timeout=30) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def _commons_imageinfo(title: str) -> dict:
+    data = _commons_get({
+        "action": "query", "titles": title, "prop": "imageinfo",
+        "iiprop": "url|extmetadata|size", "iiurlwidth": "1600",
+    })
+    pages = data.get("query", {}).get("pages", {})
+    for p in pages.values():
+        for ii in p.get("imageinfo", []):
+            meta = ii.get("extmetadata", {})
+            return {
+                "title": p.get("title", title),
+                "url": ii.get("thumburl") or ii.get("url"),
+                "width": ii.get("width", 0),
+                "license": meta.get("LicenseShortName", {}).get("value", ""),
+                "artist": re.sub(r"<[^>]+>", "", meta.get("Artist", {}).get("value", "")).strip(),
+                "page": ii.get("descriptionurl", ""),
+            }
+    return {}
+
+
+def _commons_search(term: str) -> dict:
+    data = _commons_get({
+        "action": "query", "generator": "search",
+        "gsrsearch": f"filetype:bitmap {term}", "gsrnamespace": "6", "gsrlimit": "8",
+        "prop": "imageinfo", "iiprop": "url|extmetadata|size", "iiurlwidth": "1600",
+    })
+    pages = data.get("query", {}).get("pages", {})
+    best = {}
+    for p in sorted(pages.values(), key=lambda x: x.get("index", 99)):
+        for ii in p.get("imageinfo", []):
+            meta = ii.get("extmetadata", {})
+            lic = meta.get("LicenseShortName", {}).get("value", "")
+            if not ALLOWED_LICENSES.search(lic):
+                continue
+            if ii.get("width", 0) < 1000:
+                continue
+            return {
+                "title": p.get("title", ""),
+                "url": ii.get("thumburl") or ii.get("url"),
+                "width": ii.get("width", 0),
+                "license": lic,
+                "artist": re.sub(r"<[^>]+>", "", meta.get("Artist", {}).get("value", "")).strip(),
+                "page": ii.get("descriptionurl", ""),
+            }
+    return best
+
+
+def fetch_chapter_images(only_missing=True) -> list:
+    """Download registry images that don't exist locally; update credits.json."""
+    credits_path = IMAGES_DIR / "credits.json"
+    credits = json.loads(credits_path.read_text(encoding="utf-8")) if credits_path.exists() else []
+    by_file = {c["file"]: c for c in credits}
+    report = []
+    for entry in load_image_registry():
+        dest = IMAGES_DIR / entry["file"]
+        if dest.exists() and only_missing:
+            report.append({"key": entry["key"], "file": entry["file"], "action": "exists"})
+            continue
+        info = {}
+        if entry.get("commons"):
+            info = _commons_imageinfo(entry["commons"])
+            if info and not ALLOWED_LICENSES.search(info.get("license", "")):
+                report.append({"key": entry["key"], "file": entry["file"],
+                               "action": f"license-blocked ({info.get('license')})"})
+                continue
+        if not info.get("url") and entry.get("search"):
+            info = _commons_search(entry["search"])
+        if not info.get("url"):
+            report.append({"key": entry["key"], "file": entry["file"], "action": "no-source"})
+            continue
+        import time
+        try:
+            with _polite_open(info["url"]) as resp:
+                dest.write_bytes(resp.read())
+        except Exception as e:
+            report.append({"key": entry["key"], "file": entry["file"],
+                           "action": f"download-failed ({e})"})
+            continue
+        time.sleep(1.5)  # stay under Wikimedia burst limits
+        by_file[entry["file"]] = {
+            "file": entry["file"], "source_title": info["title"],
+            "page": info["page"], "artist": info["artist"], "license": info["license"],
+        }
+        report.append({"key": entry["key"], "file": entry["file"],
+                       "action": f"downloaded ({info['license']})"})
+    credits_path.write_text(json.dumps(sorted(by_file.values(), key=lambda c: c["file"]),
+                                       indent=1) + "\n", encoding="utf-8")
+    return report
+
+
+def image_block(entry: dict, credits: dict) -> str:
+    c = credits.get(entry["file"], {})
+    credit = ""
+    if c:
+        artist = c.get("artist", "")
+        lic = c.get("license", "")
+        bits = ", ".join(b for b in (artist, lic) if b)
+        credit = f" ({bits}, via Wikimedia Commons)" if bits else ""
+    return f'![{entry["alt"]}](/book-images/{entry["file"]})\n\n*{entry["caption"]}{credit}*'
+
+
+def inject_image(text: str, entry: dict, credits: dict) -> tuple:
+    """Insert (or refresh) a header image directly under the chapter heading,
+    above the epigraph blockquote."""
+    heading_re = re.compile(entry["match"], re.IGNORECASE | re.MULTILINE)
+    m = heading_re.search(text)
+    if not m:
+        return text, "no-heading"
+    lines = text.splitlines(keepends=True)
+    i = text[:m.start()].count("\n") + 1
+    j = i
+    while j < len(lines) and lines[j].strip() == "":
+        j += 1
+    block = image_block(entry, credits) + "\n"
+    if j < len(lines) and lines[j].lstrip().startswith("!["):
+        k = j + 1
+        while k < len(lines) and lines[k].strip() == "":
+            k += 1
+        if k < len(lines) and re.match(r"^\*[^*].*\*\s*$", lines[k].strip()):
+            k += 1
+        existing = "".join(lines[j:k])
+        if existing.strip() == block.strip():
+            return text, "unchanged"
+        return "".join(lines[:j]) + block + "".join(lines[k:]), "replaced"
+    return "".join(lines[:i]) + "\n" + block + "\n" + "".join(lines[i:]), "inserted"
+
+
+def cmd_images(args) -> int:
+    if args.fetch:
+        report = fetch_chapter_images()
+        if args.json:
+            print(json.dumps(report, indent=2))
+        else:
+            print("sts images --fetch")
+            for r in report:
+                print(f"  {r['action']:<28} {r['key']:<14} {r['file']}")
+        bad = [r for r in report if r["action"] in ("no-source",) or r["action"].startswith("license-")]
+        return 1 if bad else 0
+
+    registry = load_image_registry()
+    credits_path = IMAGES_DIR / "credits.json"
+    credits = {c["file"]: c for c in json.loads(credits_path.read_text(encoding="utf-8"))} \
+        if credits_path.exists() else {}
+    results = []
+    missing = [e for e in registry if not (IMAGES_DIR / e["file"]).exists()]
+    if missing and args.apply:
+        sys.exit(f"sts images: {len(missing)} image files missing — run `sts.py images --fetch` first "
+                 f"({', '.join(e['file'] for e in missing[:4])}…)")
+    if args.file:
+        target = Path(args.file).expanduser()
+        text = target.read_text(encoding="utf-8")
+        for e in registry:
+            text, action = inject_image(text, e, credits)
+            results.append({"key": e["key"], "file": str(target), "action": action})
+        if args.apply:
+            target.write_text(text, encoding="utf-8")
+        elif args.stdout:
+            sys.stdout.write(text)
+            return 1 if any(r["action"] == "no-heading" for r in results) else 0
+    else:
+        meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+        files = {s["id"]: BOOK_DIR / s["file"] for s in meta["sections"]}
+        for e in registry:
+            f = files.get(e["key"])
+            if not f or not f.exists():
+                results.append({"key": e["key"], "file": None, "action": "no-file"})
+                continue
+            text = f.read_text(encoding="utf-8")
+            new, action = inject_image(text, e, credits)
+            if args.apply and action in ("inserted", "replaced"):
+                f.write_text(new, encoding="utf-8")
+            results.append({"key": e["key"], "file": str(f.relative_to(ROOT)), "action": action})
+    bad = [r for r in results if r["action"] in ("no-heading", "no-file")]
+    if args.json:
+        print(json.dumps({"applied": args.apply, "results": results}, indent=2))
+    else:
+        mode = "APPLIED" if args.apply else "dry-run (use --apply to write)"
+        print(f"sts images — {len(registry)} header images — {mode}")
+        for r in results:
+            print(f"  {r['action']:<10} {r['key']:<14} {r['file'] or '-'}")
+    return 1 if bad else 0
 
 
 def cmd_quotes(args) -> int:
@@ -565,6 +796,17 @@ def main():
     p.add_argument("--thin", type=int, default=1500,
                    help="flag chapters under this many words (default 1500)")
     p.set_defaults(fn=cmd_book)
+
+    p = sub.add_parser("images")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--fetch", action="store_true",
+                   help="download missing registry images from Wikimedia Commons (license-gated)")
+    p.add_argument("--apply", action="store_true",
+                   help="write changes (default is a dry run)")
+    p.add_argument("--file", help="operate on a compiled draft instead of the chapter files")
+    p.add_argument("--stdout", action="store_true",
+                   help="with --file: print the transformed draft instead of reporting")
+    p.set_defaults(fn=cmd_images)
 
     p = sub.add_parser("quotes")
     p.add_argument("--json", action="store_true")

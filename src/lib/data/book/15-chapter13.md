@@ -1,5 +1,10 @@
 # Chapter 13: The Shouse Protocol
 
+![Solar panels on a rural outbuilding roof](/book-images/ch13-solar-barn.jpg)
+
+*Solar on an outbuilding. The Shouse Grid starts with one roof. (Ermell, CC BY-SA 4.0, via Wikimedia Commons)*
+
+
 > *"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."*
 > — attributed to R. Buckminster Fuller
 

@@ -1,5 +1,10 @@
 # PREFACE: Welcome to the Weirdness
 
+![Honda ASIMO humanoid robot, 2001](/book-images/intro-asimo.jpg)
+
+*ASIMO, 2001. The weirdness arrived on schedule. (Liauzh, CC BY-SA 4.0, via Wikimedia Commons)*
+
+
 > *"Buy the ticket, take the ride."*
 > — Hunter S. Thompson, *Fear and Loathing in Las Vegas* (1971)
 So the robots have taken over. Congratulations! The Singularity is upon us.

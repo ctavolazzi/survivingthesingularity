@@ -1,5 +1,10 @@
 # Chapter 17: Tools of the Trade
 
+![Workbench with hand tools](/book-images/ch17-workbench.jpg)
+
+*The workbench. Own the tools, own the output. (Shixart1985, CC BY 2.0, via Wikimedia Commons)*
+
+
 > *"We are as gods and might as well get good at it."*
 > — Stewart Brand, *Whole Earth Catalog* (1968)
 We live in the golden age of high-tech dependency.

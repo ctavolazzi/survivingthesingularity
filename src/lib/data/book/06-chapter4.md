@@ -1,5 +1,10 @@
 # Chapter 4: Universal and Multiverse Apex (Stages 8–9)
 
+![Hubble Ultra-Deep Field showing thousands of galaxies](/book-images/ch04-hubble-deep-field.jpg)
+
+*The Hubble Ultra-Deep Field. The available real estate. (NASA/ESA, Public domain, via Wikimedia Commons)*
+
+
 > *"The universe is not only queerer than we suppose, but queerer than we can suppose."*
 > — J. B. S. Haldane, *Possible Worlds* (1927)
 

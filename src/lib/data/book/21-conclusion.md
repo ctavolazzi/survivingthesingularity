@@ -1,5 +1,10 @@
 # CONCLUSION: The 2027 Tipping Point
 
+![Sunrise seen from the International Space Station](/book-images/ch19-iss-sunrise.jpg)
+
+*Sunrise from orbit. The new era does not ask permission. (NASA Johnson Space Center, Public domain, via Wikimedia Commons)*
+
+
 > *"As for the future, your task is not to foresee it, but to enable it."*
 > — Antoine de Saint-Exupéry, *The Wisdom of the Sands* (1948)
 

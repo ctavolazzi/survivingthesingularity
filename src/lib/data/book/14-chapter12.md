@@ -1,5 +1,10 @@
 # Chapter 12: The Land Strategy
 
+![FarmBot automated gardening system over a raised bed](/book-images/ch12-farmbot.jpg)
+
+*FarmBot over a raised bed. Land plus automation is the position to hold. (FarmBot, CC BY 4.0, via Wikimedia Commons)*
+
+
 > *"Land is the only thing in the world that amounts to anything … 'tis the only thing in this world that lasts."*
 > — Margaret Mitchell, *Gone with the Wind* (1936)
 

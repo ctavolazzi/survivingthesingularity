@@ -1,5 +1,10 @@
 # Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)
 
+![Falcon Heavy lifting off from Kennedy Space Center](/book-images/ch03-falcon-heavy.jpg)
+
+*Falcon Heavy demo mission. The exodus hardware is already flying. (SpaceX, CC0, via Wikimedia Commons)*
+
+
 > *"Earth is the cradle of humanity, but one cannot live in a cradle forever."*
 > — Konstantin Tsiolkovsky, *letter* (1911)
 

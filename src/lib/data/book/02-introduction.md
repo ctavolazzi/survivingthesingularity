@@ -1,5 +1,10 @@
 # INTRODUCTION: The Uncompromising Truth
 
+![Boston Dynamics Atlas during DARPA testing](/book-images/ch01-atlas.jpg)
+
+*Atlas during testing. The data does not care how you feel about it. (DARPA, Public domain, via Wikimedia Commons)*
+
+
 > *"It is far better to grasp the universe as it really is than to persist in delusion, however satisfying and reassuring."*
 > — Carl Sagan, *The Demon-Haunted World* (1995)
 

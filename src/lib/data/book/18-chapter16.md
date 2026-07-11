@@ -1,5 +1,10 @@
 # Chapter 16: Digital Leverage and Media Autonomy
 
+![Racks of servers in a data center](/book-images/ch16-servers.jpg)
+
+*Server racks. Code and media scale while you sleep. (Victor Grigas, CC BY-SA 3.0, via Wikimedia Commons)*
+
+
 > *"Code and media are permissionless leverage. They're the leverage behind the newly rich."*
 > — Naval Ravikant, *How to Get Rich* (2018)
 At some point in the early twenty-first century, humanity fell for the greatest magic trick ever performed.

@@ -1,5 +1,10 @@
 # Chapter 8: The Psychology of the Collapse
 
+![Sophia, the humanoid robot by Hanson Robotics](/book-images/ch08-sophia.jpg)
+
+*Sophia. The mirror humans keep flinching at. (ITU Pictures, CC BY 2.0, via Wikimedia Commons)*
+
+
 > *"When we are no longer able to change a situation, we are challenged to change ourselves."*
 > — Viktor E. Frankl, *Man's Search for Meaning* (1946)
 Remember the Introduction?

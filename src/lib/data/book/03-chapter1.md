@@ -1,5 +1,10 @@
 # Chapter 1: The Event Horizon
 
+![Event Horizon Telescope image of the M87 supermassive black hole](/book-images/ch01-m87-black-hole.jpg)
+
+*The event horizon of M87. Past a certain line, there is no going back. (Event Horizon Telescope Collaboration, CC BY 4.0, via Wikimedia Commons)*
+
+
 > *"Within thirty years, we will have the technological means to create superhuman intelligence. Shortly after, the human era will be ended."*
 > — Vernor Vinge, *The Coming Technological Singularity* (1993)
 

@@ -1,5 +1,10 @@
 # Chapter 11: Using the Tech to Your Advantage
 
+![Boston Dynamics Spot quadruped robot](/book-images/ch11-spot.jpg)
+
+*Spot. The same machines ending careers will happily work for you. (Jonte, CC BY-SA 4.0, via Wikimedia Commons)*
+
+
 > *"Give me a place to stand, and I shall move the Earth."*
 > — attributed to Archimedes, *via Pappus of Alexandria* (c. 340 AD)
 

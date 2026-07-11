@@ -1,5 +1,10 @@
 # Chapter 9: Deglobalization and the Neighborhood Factory
 
+![Desktop 3D printer mid-print](/book-images/ch09-3d-printer.jpg)
+
+*A desktop 3D printer. The neighborhood factory fits on a workbench. (John Abella, CC BY 2.0, via Wikimedia Commons)*
+
+
 > *"Man is small, and, therefore, small is beautiful."*
 > — E. F. Schumacher, *Small Is Beautiful* (1973)
 

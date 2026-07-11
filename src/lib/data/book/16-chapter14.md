@@ -1,5 +1,10 @@
 # Chapter 14: The Collapse of the Long Tail
 
+![Interior of an abandoned shopping mall](/book-images/ch14-dead-mall.jpg)
+
+*A dead mall. Gradually, then suddenly. (User:Mattes, Public domain, via Wikimedia Commons)*
+
+
 > *"“How did you go bankrupt?” “Two ways. Gradually and then suddenly.”"*
 > — Ernest Hemingway, *The Sun Also Rises* (1926)
 If you were to walk into a supermarket in the early days of the twenty-first century, you would have witnessed a historical anomaly.

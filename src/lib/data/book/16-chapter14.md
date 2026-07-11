@@ -1,4 +1,7 @@
 # Chapter 14: The Collapse of the Long Tail
+
+> *"“How did you go bankrupt?” “Two ways. Gradually and then suddenly.”"*
+> — Ernest Hemingway, *The Sun Also Rises* (1926)
 If you were to walk into a supermarket in the early days of the twenty-first century, you would have witnessed a historical anomaly.
 
 You could buy avocados from Mexico, blueberries from Peru, and garlic from China, all nestled together under bright fluorescent lights, misted by automatic water sprayers, and priced at a fraction of an hour's minimum-wage labor.

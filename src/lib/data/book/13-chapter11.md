@@ -1,5 +1,8 @@
 # Chapter 11: Using the Tech to Your Advantage
 
+> *"Give me a place to stand, and I shall move the Earth."*
+> — attributed to Archimedes, *via Pappus of Alexandria* (c. 340 AD)
+
 You do not need to be an engineer to use the new machine-based tools. You need to be persistent. Treat these tools as an aggressive, infinite research assistant. If the answer you get is generic, argue with the machine. Push it to be specific. Demand the technical procedures you need to get the job done.
 
 ## 1. Skill Acquisition

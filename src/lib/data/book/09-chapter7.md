@@ -1,5 +1,8 @@
 # Chapter 7: The Battle Lines — The Entitled vs. The Ready
 
+> *"Chance favors only the prepared mind."*
+> — Louis Pasteur, *lecture at the University of Lille* (1854)
+
 The resistance to this inevitable transition is not universal. It is highly segregated along demographic lines of empathy, power, and structural privilege.
 
 | Category | The Resisters (The Entitled) | The Receivers (The Ready) |

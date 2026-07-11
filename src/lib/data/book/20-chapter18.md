@@ -1,5 +1,8 @@
 # Chapter 18: The Roadmap and the Premortem Pivot
 
+> *"Plans are worthless, but planning is everything."*
+> — Dwight D. Eisenhower, *remarks to the National Defense Executive Reserve Conference* (1957)
+
 If you've read this far, your brain is probably looking for an exit strategy. You are looking for a reason why this won't happen, a flaw in the logic, or some excuse to go back to sleep. You might run a "premortem" in your head, dreaming up all the ways this transition fails.
 
 You'll tell yourself that local Shouse grids will fail because we can't bootstrap the supply chains. You'll say that local warlords will take over the Biorefinery Hubs the second the global grid drops. You'll argue that people will lose their minds without the daily grind of their 9-to-5 jobs, collapsing into a psychological void. You'll say the corporate-state establishment will launch a scorched-earth campaign, weaponizing the masses to tear down any neighborhood factories we try to build.

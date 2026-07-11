@@ -1,4 +1,7 @@
 # PREFACE: Welcome to the Weirdness
+
+> *"Buy the ticket, take the ride."*
+> — Hunter S. Thompson, *Fear and Loathing in Las Vegas* (1971)
 So the robots have taken over. Congratulations! The Singularity is upon us.
 
 Surviving the Singularity isn't just about the fear of the unknown. Sure, popular media tells us we’ll be fending off hordes of Terminator bots or fighting for food in the era of societal collapse and climate famines, but that’s not the only way it can go. 

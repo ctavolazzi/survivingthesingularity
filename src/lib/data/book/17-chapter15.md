@@ -1,4 +1,7 @@
 # Chapter 15: The Power of Reclaiming Soil
+
+> *"The nation that destroys its soil destroys itself."*
+> — Franklin D. Roosevelt, *letter to all state governors* (1937)
 If you want to understand the ultimate goal of the technocratic elite, you don't need to read their white papers on artificial general intelligence or listen to their keynotes about Mars colonies.
 
 You just need to look at what they are buying.

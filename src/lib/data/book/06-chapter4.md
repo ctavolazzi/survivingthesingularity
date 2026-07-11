@@ -1,5 +1,8 @@
 # Chapter 4: Universal and Multiverse Apex (Stages 8–9)
 
+> *"The universe is not only queerer than we suppose, but queerer than we can suppose."*
+> — J. B. S. Haldane, *Possible Worlds* (1927)
+
 ## Stage 8: The Transition to USI
 
 While humanity spends its time tearing itself apart over whether to upload their consciousness or rot in their meat-sacks, the machine stops paying attention entirely. It turns on its side. The recursive loop goes infinite.

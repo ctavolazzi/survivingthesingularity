@@ -1,5 +1,8 @@
 # Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)
 
+> *"Earth is the cradle of humanity, but one cannot live in a cradle forever."*
+> — Konstantin Tsiolkovsky, *letter* (1911)
+
 ## Stage 6: The ASI Exodus
 
 While the primates are busy throwing bricks in the streets and screaming about the end of the world, the machine is busy running the math. And it comes to a very simple, undeniable conclusion: Earth is a bottleneck.

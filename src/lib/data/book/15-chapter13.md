@@ -1,5 +1,8 @@
 # Chapter 13: The Shouse Protocol
 
+> *"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."*
+> — attributed to R. Buckminster Fuller
+
 Once you have the land, you don't build a massive, complex suburban house. You build a "Shouse" (Shop-House).
 
 1. **The Core:** Pour a foundation, put up a metal utility building, and park an RV inside it. This gives you a secure, weatherproof shell while you develop the site.

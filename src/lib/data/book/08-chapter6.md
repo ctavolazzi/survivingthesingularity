@@ -1,5 +1,8 @@
 # Chapter 6: The Singularity Is a Done Deal
 
+> *"The ever accelerating progress of technology … gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue."*
+> — John von Neumann, as recalled by Stanisław Ulam, *Bulletin of the American Mathematical Society* (1958)
+
 ## The Premise
 
 The public discourse surrounding advanced technology is fundamentally broken. Mainstream media, academic institutions, and corporate-state bureaucrats treat the Technological Singularity as a hypothetical, distant debate. In reality, the event horizon has already been crossed.

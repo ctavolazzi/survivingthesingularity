@@ -1,5 +1,8 @@
 # INTRODUCTION: The Uncompromising Truth
 
+> *"It is far better to grasp the universe as it really is than to persist in delusion, however satisfying and reassuring."*
+> — Carl Sagan, *The Demon-Haunted World* (1995)
+
 It's time. It's finally time.
 
 For years, I've been talking about this, and for years, I've been labeled the local crackpot. I've lost relationships over this. I've watched people I love look me in the eye like I'd finally cracked, like I was spinning some paranoid fantasy. They'll tell you they stopped talking to me because I'm an asshole, and maybe they're right. Maybe I am an asshole. But I'm not wrong about the trajectory of the human race.

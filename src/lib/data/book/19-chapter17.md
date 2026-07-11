@@ -1,4 +1,7 @@
 # Chapter 17: Tools of the Trade
+
+> *"We are as gods and might as well get good at it."*
+> — Stewart Brand, *Whole Earth Catalog* (1968)
 We live in the golden age of high-tech dependency.
 
 In the late twenty-first century, your refrigerator has more processing power than the Apollo guidance computer. It can monitor your milk consumption, order groceries autonomously, and display recipes on a high-definition touch screen.

@@ -1,4 +1,7 @@
 # Chapter 8: The Psychology of the Collapse
+
+> *"When we are no longer able to change a situation, we are challenged to change ourselves."*
+> — Viktor E. Frankl, *Man's Search for Meaning* (1946)
 Remember the Introduction?
 
 The part where I joked that you might just be a disembodied brain in a jar, receiving simulated electrical impulses from neural link electrodes?

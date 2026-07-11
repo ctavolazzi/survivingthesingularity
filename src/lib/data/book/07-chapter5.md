@@ -1,4 +1,7 @@
 # Chapter 5: The Thermodynamics of Survival
+
+> *"If your theory is found to be against the Second Law of Thermodynamics I can give you no hope; there is nothing for it but to collapse in deepest humiliation."*
+> — Arthur Eddington, *The Nature of the Physical World* (1928)
 Let's talk about energy.
 
 And no, I don't mean the spiritual, "I'm really vibing with your aura" kind of energy. If you try to align your chakras to stay warm during a nuclear winter, you are going to freeze to death with very well-aligned, highly aesthetic ice crystals in your lungs.

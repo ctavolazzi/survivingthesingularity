@@ -9,6 +9,7 @@ Commands:
     status    One-screen dashboard: git, book, audit errors, stripe, live drift
     audit     Full site audit: routes, links, assets, meta, sitemap, placeholders
     book      Book manuscript stats: per-chapter word counts, thin chapters
+    quotes    Inject chapter epigraphs from scripts/chapter_quotes.json
     stripe    Stripe go-live readiness (masks all secrets)
     live      Probe production and compare against local routes (deploy drift)
     sitemap   Check sitemap.xml against real routes; --write regenerates it
@@ -321,6 +322,95 @@ def cmd_book(args) -> int:
 
 
 # ──────────────────────────────────────────────────────────────────────
+# quotes (chapter epigraphs)
+# ──────────────────────────────────────────────────────────────────────
+
+def load_quote_registry() -> list:
+    reg = json.loads((ROOT / "scripts" / "chapter_quotes.json").read_text(encoding="utf-8"))
+    return reg["quotes"]
+
+
+def epigraph_block(q: dict) -> str:
+    attribution = q["author"]
+    if q.get("source"):
+        attribution += f", *{q['source']}*"
+    if q.get("year"):
+        attribution += f" ({q['year']})"
+    return f'> *"{q["quote"]}"*\n> — {attribution}'
+
+
+def inject_epigraph(text: str, q: dict) -> tuple:
+    """Insert (or refresh) an epigraph blockquote right under the first heading
+    matching q['match']. Returns (new_text, action) where action is one of
+    'inserted', 'replaced', 'unchanged', 'no-heading'."""
+    heading_re = re.compile(q["match"], re.IGNORECASE | re.MULTILINE)
+    m = heading_re.search(text)
+    if not m:
+        return text, "no-heading"
+    lines = text.splitlines(keepends=True)
+    # locate the heading's line index
+    upto = text[:m.start()].count("\n")
+    i = upto + 1
+    # skip blank lines after the heading
+    j = i
+    while j < len(lines) and lines[j].strip() == "":
+        j += 1
+    block = epigraph_block(q) + "\n"
+    # an existing blockquote right under the title is the epigraph slot
+    if j < len(lines) and lines[j].lstrip().startswith(">"):
+        k = j
+        while k < len(lines) and (lines[k].lstrip().startswith(">") or lines[k].strip() == ""):
+            if lines[k].strip() == "" and k + 1 < len(lines) and not lines[k + 1].lstrip().startswith(">"):
+                break
+            k += 1
+        existing = "".join(lines[j:k])
+        if existing.strip() == block.strip():
+            return text, "unchanged"
+        new = "".join(lines[:j]) + block + "".join(lines[k:])
+        return new, "replaced"
+    new = "".join(lines[:i]) + "\n" + block + "".join(lines[i:])
+    return new, "inserted"
+
+
+def cmd_quotes(args) -> int:
+    registry = load_quote_registry()
+    results = []
+    if args.file:
+        target = Path(args.file).expanduser()
+        text = target.read_text(encoding="utf-8")
+        for q in registry:
+            text, action = inject_epigraph(text, q)
+            results.append({"key": q["key"], "file": str(target), "action": action})
+        if args.apply:
+            target.write_text(text, encoding="utf-8")
+        elif args.stdout:
+            sys.stdout.write(text)
+            return 1 if any(r["action"] == "no-heading" for r in results) else 0
+    else:
+        meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+        files = {s["id"]: BOOK_DIR / s["file"] for s in meta["sections"]}
+        for q in registry:
+            f = files.get(q["key"])
+            if not f or not f.exists():
+                results.append({"key": q["key"], "file": None, "action": "no-file"})
+                continue
+            text = f.read_text(encoding="utf-8")
+            new, action = inject_epigraph(text, q)
+            if args.apply and action in ("inserted", "replaced"):
+                f.write_text(new, encoding="utf-8")
+            results.append({"key": q["key"], "file": str(f.relative_to(ROOT)), "action": action})
+    bad = [r for r in results if r["action"] in ("no-heading", "no-file")]
+    if args.json:
+        print(json.dumps({"applied": args.apply, "results": results}, indent=2))
+    else:
+        mode = "APPLIED" if args.apply else "dry-run (use --apply to write)"
+        print(f"sts quotes — {len(registry)} epigraphs — {mode}")
+        for r in results:
+            print(f"  {r['action']:<10} {r['key']:<14} {r['file'] or '-'}")
+    return 1 if bad else 0
+
+
+# ──────────────────────────────────────────────────────────────────────
 # stripe
 # ──────────────────────────────────────────────────────────────────────
 
@@ -475,6 +565,15 @@ def main():
     p.add_argument("--thin", type=int, default=1500,
                    help="flag chapters under this many words (default 1500)")
     p.set_defaults(fn=cmd_book)
+
+    p = sub.add_parser("quotes")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--apply", action="store_true",
+                   help="write changes (default is a dry run)")
+    p.add_argument("--file", help="operate on a compiled draft instead of the chapter files")
+    p.add_argument("--stdout", action="store_true",
+                   help="with --file: print the transformed draft instead of reporting")
+    p.set_defaults(fn=cmd_quotes)
 
     p = sub.add_parser("sitemap")
     p.add_argument("--json", action="store_true")

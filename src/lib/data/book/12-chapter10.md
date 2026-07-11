@@ -1,5 +1,8 @@
 # Chapter 10: The "Create Over Consume" Protocol
 
+> *"The best way to predict the future is to invent it."*
+> — Alan Kay, *remark at Xerox PARC* (1971)
+
 If you spend your days consuming digital content, you are a target. If you are stuck in a loop of reading news about things you cannot control, you are failing to prepare. The line between someone who survives this period and someone who is a casualty is simple: **Create more than you consume.**
 
 You don't need deep pockets to start. You need physical results.

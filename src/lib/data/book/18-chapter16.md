@@ -1,4 +1,7 @@
 # Chapter 16: Digital Leverage and Media Autonomy
+
+> *"Code and media are permissionless leverage. They're the leverage behind the newly rich."*
+> — Naval Ravikant, *How to Get Rich* (2018)
 At some point in the early twenty-first century, humanity fell for the greatest magic trick ever performed.
 
 The technocrats convinced us that the internet was a public square, a library, and a playground. They gave us free email, free social media, and free video hosting. And in exchange, we happily handed over our attention, our behavioral data, and our cognitive autonomy.

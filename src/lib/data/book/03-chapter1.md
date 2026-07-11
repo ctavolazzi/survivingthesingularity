@@ -1,5 +1,8 @@
 # Chapter 1: The Event Horizon
 
+> *"Within thirty years, we will have the technological means to create superhuman intelligence. Shortly after, the human era will be ended."*
+> — Vernor Vinge, *The Coming Technological Singularity* (1993)
+
 ## The Event Horizon of General Intelligence
 The public, institutional, and academic discourse surrounding advanced technology frequently approaches the concept of the Technological Singularity as a hypothetical event confined to the distant future. However, empirical trajectories across machine learning, biological computing, and macroeconomic restructuring indicate that the event horizon has already been crossed. The Singularity is no longer an abstract philosophical debate; it is an active, structural reality driven by exponential progressions in computational intelligence and the decoupling of economic value from human labor. The fundamental premise of this societal and technological transition is that intelligence—historically the ultimate scarce resource that has gated human progress, innovation, and production—is rapidly approaching a marginal cost of zero.
 

@@ -1,5 +1,8 @@
 # Chapter 9: Deglobalization and the Neighborhood Factory
 
+> *"Man is small, and, therefore, small is beautiful."*
+> — E. F. Schumacher, *Small Is Beautiful* (1973)
+
 The solution is not to try and stop the corporate state or appeal to the empathy of trillionaires who choose to waste their vast resources on vanity projects while veterans sleep on the streets. The strategy is to build a functioning alternative that is so self-evidently superior that the transition becomes a complete no-brainer.
 
 - **Deglobalization, Not Decentralization:** "Decentralized" is a dangerous word. We require centralized control for quality, safety, and establishing critical stopgaps against bad actors. The real target is **deglobalization**. We must shrink the supply lines back to the local level to insulate ourselves from fragile, corrupt global networks.

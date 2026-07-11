@@ -1,5 +1,8 @@
 # Chapter 2: The Era of AGI (Stages 1–5)
 
+> *"The first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control."*
+> — I. J. Good, *Speculations Concerning the First Ultraintelligent Machine* (1965)
+
 ## Stage 1: The Cash Grab
 
 When the machine finally wakes up, there are no angels singing. The sky doesn't crack open to reveal a new dawn for humanity. The very first thing that happens when this capacity hits the wild is pure, unadulterated capitalization.

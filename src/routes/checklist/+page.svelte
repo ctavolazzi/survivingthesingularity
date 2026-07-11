@@ -511,6 +511,27 @@
     </div>
   </EmailGate>
 
+  <!-- ── LIVE EVENT: same community touchpoint, real-time ── -->
+  <section class="cl-discord-block" aria-label="Live weekly event">
+    <p class="cl-section-label">A separate thing</p>
+    <h2 class="cl-discord-block-heading">Prefer talking to typing?</h2>
+    <p class="cl-discord-block-sub">Every Tuesday, free, on Zoom. Live discussion with people working through the same questions you are.</p>
+
+    <div class="cl-discord cl-event">
+      <div class="cl-discord-icon cl-event-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="cl-discord-copy">
+        <p class="cl-discord-headline">Tuesdays, 4&ndash;5PM Pacific.</p>
+        <p class="cl-discord-sub">Free to join. No book purchase required.</p>
+      </div>
+      <a href="https://luma.com/event/evt-yQuYOJ1qhrnkvdw" target="_blank" rel="noopener noreferrer" class="cl-discord-btn cl-event-btn">
+        Save Your Seat
+        <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
   <!-- ── DISCORD: separate community value add, not part of the checklist ── -->
   <section class="cl-discord-block" aria-label="Community">
     <p class="cl-section-label">A separate thing</p>
@@ -718,6 +739,10 @@
     .cl-discord { flex-direction: column; align-items: flex-start; }
     .cl-discord-btn { width: 100%; justify-content: center; }
   }
+
+  .cl-event { background: rgba(245, 158, 11, 0.07); border-color: rgba(245, 158, 11, 0.25); }
+  .cl-event-icon { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
+  .cl-event-btn { background: #f59e0b; color: #0f172a; }
 
   /* ── CHECKLIST ITEMS ── */
   .cl-list {

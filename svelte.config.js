@@ -49,6 +49,10 @@ const config = {
 		},
 		// Disable prerendering for routes that use dynamic data loading
 		prerender: {
+			// Absolute-URL base for $page.url during prerender. Without this,
+			// og:image / og:url built from $page.url bake in the default
+			// http://sveltekit-prerender origin and social cards break.
+			origin: 'https://survivingthesingularity.com',
 			handleHttpError: ({ path, referrer, message }) => {
 				// Ignore 404s for specific paths that need dynamic loading
 				if (path.startsWith('/newsletter') || path.includes('blog')) {

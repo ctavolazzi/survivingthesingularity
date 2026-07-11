@@ -20,7 +20,8 @@
   <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. What is the Singularity, how humans react, and how to survive the transition. Open draft — read free or get early access." />
   <meta property="og:title" content="Surviving the Singularity. The Book." />
   <meta property="og:description" content="What is the Singularity. How humans react. How to survive the transition. Open draft by Christopher Tavolazzi." />
-  <meta property="og:image" content="/images/surviving_the_singularity_cover_1200.png" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
+  <meta property="og:url" content="https://survivingthesingularity.com/book" />
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 

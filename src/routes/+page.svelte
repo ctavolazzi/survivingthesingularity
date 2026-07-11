@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import { browser } from '$app/environment';
 
   export let data;
 
@@ -10,12 +9,8 @@
   let agiMins = '--';
   let agiSecs = '--';
   let countdownReady = false;
-  let edition = 'limited';
-
-  function handleCTASubmit(e) {
-    e.preventDefault();
-    window.location.href = `/book?edition=${edition}`;
-  }
+  let lumaEmbedWrap;
+  let lumaEmbedFrame;
 
   onMount(() => {
     const agiTarget = new Date('2027-11-25T00:00:00Z');
@@ -74,7 +69,21 @@
     }, { threshold: 0.5 });
     document.querySelectorAll('.count-up').forEach(el => countObs.observe(el));
 
-    return () => clearInterval(agiInterval);
+    function onLumaMessage(e) {
+      if (!e.origin.includes('lu.ma') && !e.origin.includes('luma.com')) return;
+      const data = e.data;
+      const height = typeof data === 'number' ? data
+        : (data && typeof data === 'object' && (data.height || data.frameHeight));
+      if (height && lumaEmbedFrame) {
+        lumaEmbedFrame.style.height = `${Math.ceil(height)}px`;
+      }
+    }
+    window.addEventListener('message', onLumaMessage);
+
+    return () => {
+      clearInterval(agiInterval);
+      window.removeEventListener('message', onLumaMessage);
+    };
   });
 </script>
 
@@ -83,12 +92,13 @@
   <meta name="description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft, open to read now." />
   <meta property="og:title" content="Surviving the Singularity" />
   <meta property="og:description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft, open to read now." />
-  <meta property="og:image" content="/images/surviving_the_singularity_cover_1200.png" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
+  <meta property="og:url" content="https://survivingthesingularity.com/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Surviving the Singularity" />
   <meta name="twitter:description" content="A practical field guide for staying human in the age of AI." />
-  <meta name="twitter:image" content="/images/surviving_the_singularity_cover_1200.png" />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
 </svelte:head>
 
 <div class="home">
@@ -173,57 +183,12 @@
           </a>
           <a href="/book" class="btn-ghost">Read the Book</a>
         </div>
-        <p class="hero-disclaimer">
-          For informational and educational purposes only. Not legal, financial, or professional advice.
-          <br><a href="/disclaimer">Full disclaimer.</a>
-        </p>
+        <a href="#event" class="hero-event-link">
+          <span class="event-dot" aria-hidden="true"></span>
+          Need people to talk to about this? Join Tuesday's live discussion, free &rarr;
+        </a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- WEEKLY EVENT: Luma Zoom community call -->
-  <section class="event-section" aria-labelledby="event-heading">
-    <div class="section-inner">
-      <div class="event-inner reveal">
-        <div class="event-text">
-          <div class="event-eyebrow">
-            <span class="event-dot"></span>
-            <span>Live &middot; Every Tuesday &middot; 4PM Pacific</span>
-          </div>
-          <h2 class="event-heading" id="event-heading">Your community awaits.</h2>
-          <p class="event-sub">
-            Tired of seeing the patterns with no one to talk to about them? Join our weekly
-            Zoom discussion: a support group for the transitional moment we're living through.
-          </p>
-          <ul class="event-list">
-            <li>Weekly community discussion, live on Zoom</li>
-            <li>Post-labor society, transhumanism, solarpunk, and everything in between</li>
-            <li>No old-world Luddism: we embrace reality as it is and map where it's going</li>
-            <li>Open-minded people who see what you're seeing. Free to join.</li>
-          </ul>
-          <div class="event-actions">
-            <a href="https://lu.ma/egus58y5" target="_blank" rel="noopener noreferrer" class="btn-primary">
-              Register on Luma
-              <span class="btn-icon" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-          </div>
-          <p class="event-fine">Tuesdays, 4:00&ndash;5:00 PM Pacific &middot; Zoom link sent when you register.</p>
-        </div>
-        <div class="event-embed">
-          <iframe
-            src="https://luma.com/embed/event/evt-yQuYOJ1qhrnkvdw/simple"
-            title="Register: Surviving the Singularity weekly community call"
-            frameborder="0"
-            scrolling="no"
-            allow="fullscreen"
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -444,6 +409,56 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEEKLY EVENT: Luma Zoom community call -->
+  <section class="event-section" id="event" aria-labelledby="event-heading">
+    <div class="section-inner">
+      <div class="event-inner reveal">
+        <div class="event-text">
+          <div class="event-eyebrow">
+            <span class="event-dot"></span>
+            <span>Live &middot; Every Tuesday &middot; 4PM Pacific &middot; Free</span>
+          </div>
+          <h2 class="event-heading" id="event-heading">Finally, people you can actually talk to about this.</h2>
+          <p class="event-sub">
+            You see where this is heading. Most people around you don't want to hear it.
+            Every Tuesday we get on Zoom and talk it through: AI, robotics, what comes after
+            work, how to be ready. Real conversation with people who've been thinking about
+            this as long as you have. The book is our shared map, but you don't need it to
+            join. Just show up.
+          </p>
+          <ul class="event-list">
+            <li>Live discussion, not a lecture: bring your questions, theories, and worries</li>
+            <li>Post-labor society, transhumanism, solarpunk, and everything in between</li>
+            <li>No old-world Luddism: we embrace reality as it is and map where it's going</li>
+            <li>Free, every week. No book purchase required to participate.</li>
+          </ul>
+          <div class="event-actions">
+            <a href="https://luma.com/event/evt-yQuYOJ1qhrnkvdw" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              Save Your Seat
+              <span class="btn-icon" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a href="/early-access" class="event-secondary-link">Want the shared map? Get the book &rarr;</a>
+          </div>
+          <p class="event-fine">Tuesdays, 4:00&ndash;5:00 PM Pacific &middot; on Zoom &middot; link sent when you register.</p>
+        </div>
+        <div class="event-embed" bind:this={lumaEmbedWrap}>
+          <iframe
+            bind:this={lumaEmbedFrame}
+            src="https://luma.com/embed/event/evt-yQuYOJ1qhrnkvdw/simple"
+            title="Surviving the Singularity: weekly live event details and registration"
+            frameborder="0"
+            scrolling="no"
+            allow="fullscreen; payment"
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -802,8 +817,12 @@
   .hero-sub-line { font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--text-2); line-height: 1.45; margin: 0; }
   .hero-sub-punch { color: var(--text-1); font-weight: 700; font-size: clamp(1.1rem, 2.5vw, 1.35rem); }
   .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
-  .hero-disclaimer { font-size: 0.95rem; color: var(--text-4); line-height: 1.6; max-width: 48ch; }
-  .hero-disclaimer a { color: var(--text-3); text-decoration: underline; text-underline-offset: 2px; }
+  .hero-event-link {
+    display: inline-flex; align-items: center; gap: 8px; margin: 4px 0 0;
+    font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-2);
+    text-decoration: none; border-bottom: 1px dashed var(--border-mid);
+  }
+  .hero-event-link:hover { color: var(--amber); }
 
   /* STAT STRIP */
   .stat-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: clamp(40px, 6vw, 64px) 0; }
@@ -1317,13 +1336,15 @@
   .event-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
   .event-list li { font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2); line-height: 1.55; padding-left: 18px; position: relative; }
   .event-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
-  .event-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
+  .event-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
+  .event-secondary-link { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-2); text-decoration: none; border-bottom: 1px dashed var(--border-mid); transition: color 0.15s ease; }
+  .event-secondary-link:hover { color: var(--amber); }
   .event-fine { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-3); margin: 0; }
   .event-embed {
     border: 1px solid var(--border-mid); border-radius: 16px;
-    overflow: hidden; background: var(--surface); width: 100%;
+    overflow: hidden; background: #f7f2e7; width: 100%;
   }
-  .event-embed iframe { display: block; width: 100%; height: 700px; border: none; }
+  .event-embed iframe { display: block; width: 100%; height: 730px; border: none; }
   @media (max-width: 640px) { .event-embed iframe { height: 780px; } }
 
   /* FREE PATH */

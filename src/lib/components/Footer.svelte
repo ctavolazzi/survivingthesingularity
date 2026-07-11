@@ -13,6 +13,7 @@
         <div class="footer-col">
           <h4 class="footer-col-title">Navigate</h4>
           <a href="/" class="footer-link">Home</a>
+          <a href="/#event" class="footer-link footer-link-accent">Live Tuesday Call</a>
           <a href="/checklist" class="footer-link">Free Checklist</a>
           <a href="/book" class="footer-link">The Book</a>
           <a href="/early-access" class="footer-link">Early Access</a>

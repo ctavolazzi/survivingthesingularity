@@ -21,7 +21,7 @@ Rule of thumb for this genre: chapters land 1,500–3,000 words. Anything under
 |---|---|---|---|
 | 03-chapter1.md | 1. The Event Horizon | 2,075 | ✅ healthy |
 | 04-chapter2.md | 2. The Era of AGI (Stages 1–5) | 2,153 | ✅ healthy |
-| 05-chapter3.md | 3. The Leap to ASI & the Machine Exodus | 872 | 🟡 thin |
+| 05-chapter3.md | 3. The Leap to ASI & the Machine Exodus | 2,034 | ✅ filled — Elijah weave scene (2026-07-12); no chapter under 1,000 words remains |
 | 06-chapter4.md | 4. Universal and Multiverse Apex | 814 | ✅ filled — gained Simulation Trilemma (Research Synthesis fold 2026-07-10) |
 | 07-chapter5.md | 5. The Thermodynamics of Survival | 1,427 | ✅ healthy |
 | 08-chapter6.md | 6. The Singularity Is a Done Deal | 979 | ✅ filled — gained Economic Paradox/FALC + Mathematical Dead End |
@@ -116,7 +116,7 @@ references doc, and the frozen manuscript snapshots.
 | 0. The Demonstration | n/a (cold open) | ✅ (whole chapter) | n/a | ✅ done — backstory retrofit 2026-07-11 |
 | 1. The Event Horizon | ✅ | ✅ (the week after the toast) | ✅ | ✅ **pilot done** 2026-07-11 |
 | 2. The Era of AGI | ✅ | ✅ (Companion all-hands; enclosure of the commons) | ✅ | ✅ done 2026-07-12 — 1,062w scene |
-| 3. The Leap to ASI | — | — | — | ⬜ pending |
+| 3. The Leap to ASI | ✅ | ✅ (RSI vertigo; failed call to his mother) | ✅ | ✅ done 2026-07-12 — 1,020w scene; chapter no longer thin (2,034w) |
 | 4. Universal / Multiverse Apex | — | — | — | ⬜ pending |
 | 5. Thermodynamics of Survival | — | — | — | ⬜ pending (callback to Ch.1 throttle) |
 | 6. The Singularity Is a Done Deal | — | — | — | ⬜ pending (Marta first contact) |

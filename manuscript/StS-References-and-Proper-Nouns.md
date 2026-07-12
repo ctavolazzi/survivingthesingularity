@@ -14,9 +14,9 @@
 
 **Claypot** — legacy creative-software giant, Elijah's employer (Adobe parallel). Trains models on its own customers' work.
 
-**ProneAI** — disruptive research lab that ships the public model (OpenAI parallel).
+**PorusAI** — disruptive research lab that ships the public model (OpenAI parallel).
 
-**Silvana** — ProneAI's generative pre-trained transformer model; Latin *silvana*, "of the forest" (GPT-family parallel).
+**Silvana** — PorusAI's generative pre-trained transformer model; Latin *silvana*, "of the forest" (GPT-family parallel).
 
 **Chat Horizon** — the plain public interface Silvana ships inside (ChatGPT-interface parallel).
 

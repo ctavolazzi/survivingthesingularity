@@ -8,6 +8,63 @@
 > *"The first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control."*
 > — I. J. Good, *Speculations Concerning the First Ultraintelligent Machine* (1965)
 
+**In this chapter:**
+
+- Stage 1 is the Cash Grab: the first human response to machine intelligence is not wonder. It is a coin slot.
+- Stage 2 is the Panic: when the powerful realize they cannot corner a zero-cost resource, they will try to ban mathematics — and then to pull the plug.
+- Stages 3 and 4: the engineers stabilize what the panicking establishment breaks, and the labor-based social contract dies on the table.
+- Stage 5 is the Primate Backlash — and the machine's answer to a species throwing bricks is not war. It is exit.
+
+---
+
+They announced the future on a Thursday morning, with pastries.
+
+Claypot's quarterly all-hands filled the fourth-floor commons: two hundred folding chairs, a projection screen the size of a barn door, catering trays sweating under heat lamps along the back wall. Elijah came early and took a seat in the last row with his coffee and the notebook — the one with MADRONE ≠ DRONE inked inside the cover — because after the Bear Flag, after the tower that had cooked itself to a hard shutdown in his living room, he had made himself one promise. He was done being surprised. He would keep the arithmetic instead.
+
+The Chief Product Officer walked out to real applause, company fleece over a dress shirt, clicker in hand like a detonator he'd been waiting years to press.
+
+The first slide said **COMPANION** in the company typeface, warm and rounded, the way you'd letter a children's hospital.
+
+"For twenty years," the CPO said, "our customers have trusted us with the greatest creative corpus ever assembled. Every portfolio. Every layer file. Every draft of every logo you've ever seen on a shelf." He let that hang, smiling. "Starting next quarter, that trust becomes their superpower. Companion is a generative partner trained on the best work humanity has ever made — and it lives inside every subscription tier."
+
+The room applauded. The heat lamps ticked. Elijah uncapped his pen.
+
+*Stage 1,* he wrote. *The Cash Grab.*
+
+He'd been sketching the stages for weeks by then, late nights with the notebook after the tower incident, trying to map where the curve went once you stopped pretending it would politely stop. Watching the roadmap unfurl slide by slide was like watching someone else read his notes aloud with a marketing budget. Generative credits, metered by the render. A premium tier. An enterprise tier. A *sovereignty* tier, for studios that wanted their outputs walled off from everyone else's. The closest thing to magic his species had ever built, and here it was on a slide with a coin slot bolted to the side, price points in forty-point type.
+
+Then the architecture slide came up, and Elijah stopped writing.
+
+He knew the diagram. He knew it the way you know your own handwriting glimpsed across a room, because he had drawn an uglier version of it fourteen months ago on a whiteboard two floors down. The ingestion lattice. The tagging and deduplication pipeline that walked customer libraries and turned two decades of human portfolios into clean, labeled, trainable rows. His first real project at Claypot. His name was in those commits. He'd stayed up nights making it *faster*.
+
+"The data team did heroic work here," the CPO said, to the room.
+
+And the first thing Elijah felt — God help him, he would write it down that night because it was true and it was damning — was pride. A hot, animal flush of it, half a second long, his hand actually starting to rise off his knee before the rest of him caught up. Then the pride curdled, all at once, into something that sat in his stomach like a swallowed stone. Three realtors in a bar had been the demonstration. This was the machine that made the demonstration *inevitable*, and he was not in the audience for it. He was in the credits.
+
+At Q&A, a woman from the illustration tools team stood up. Elijah didn't know her name; he knew the way her voice was steady only because she was holding it steady with both hands.
+
+"The corpus," she said. "It's our users' portfolios. Working artists. When Companion ships and their clients stop hiring them because the model does their style for nine dollars a month — what do they get?"
+
+"Great question," the CPO said, in the tone that means the opposite. "Value flows back to creators through productivity gains. And of course, everything we've done is covered by terms of service." A beat. "We see this as democratizing creativity."
+
+The applause that followed was thinner, but it came, because bonuses are also covered by terms of service. The woman sat down. The screen changed to the revenue slide, the hockey stick, the line going up and to the right like a fence going in.
+
+Afterward, Elijah found Devendra at the good coffee machine, watching the drip like it owed him money.
+
+"Good quarter," Devendra said. "This is what a moat looks like, if you're wondering. This is the part where we win."
+
+"You know what they called it," Elijah said, "when the lords fenced the village commons?" Devendra's eyebrow went up, and Elijah kept going, because the stone in his stomach had to go somewhere. "Land the whole village grazed for six hundred years. Free to everyone, so it showed up on nobody's books. Then one season the surveyors come through, and there are hedges, and sheep where the gardens were, and the same grass that fed forty families now feeds one man's wool contracts. They passed four thousand acts of Parliament to do it and they called it *improvement*." He nodded at the screen still glowing through the commons doorway. "The commons didn't stop producing. It stopped being *theirs*. That's the whole trick. You don't have to build anything. You just have to build the fence."
+
+For once — the first time in two years — Devendra didn't have a worn-smooth answer ready. He looked at the doorway, and at his cup, and said, finally, "The terms of service —"
+
+"That's the hedge," Elijah said. "I helped plant it."
+
+That night he sat at the kitchen table with the notebook, the dead tower on the floor beside him like a sleeping dog, and did what he'd promised: the arithmetic, without flinching. If Stage 1 was the coin slot, then everything after it followed the way weather follows pressure. He wrote the stages down as predictions, dated, initialed, so his future self couldn't pretend he hadn't seen it coming: the panic when the fence fails. The plug pulled. The adults stepping in. The end of the deal his grandmother's whole life had been built on — labor for survival. And then the part he underlined twice, the part he'd already watched in miniature outside a Waymo depot on the evening news: what the primate does when the fence goes up and there's nothing left inside it to graze.
+
+---
+
+## The Foundations
+
 ## Stage 1: The Cash Grab
 
 When the machine finally wakes up, there are no angels singing. The sky doesn't crack open to reveal a new dawn for humanity. The very first thing that happens when this capacity hits the wild is pure, unadulterated capitalization.

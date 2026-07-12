@@ -102,16 +102,20 @@ Elijah scene (800–1,200 words) + the existing manifesto content under a Zone 3
 `## The Foundations` label. Ch. 0 is the book-scale cold open (exempt).
 
 **Word-count consequence:** a full 18-chapter weave adds ~15k–18k words of new
-fiction. That pushes the total from ~42k toward ~60k — **above the current
+fiction. That pushes the total from ~42k toward ~60k — **above the old
 45k–50k target.** This is an accepted result of the dual-format pivot, not drift.
-**Author to confirm** the new target (a ~55k–60k narrative edition, and/or a
-leaner workbook edition that strips Zone 2).
+**CONFIRMED by author 2026-07-12:** single narrative edition, target **~55k–60k**.
+No separate workbook edition for now.
+
+**Naming note (2026-07-12):** the OpenAI stand-in was renamed **PorusAI**
+(formerly ProneAI) — updated in Ch. 0, the protocol proper-noun table, the
+references doc, and the frozen manuscript snapshots.
 
 | Chapter | Zone 1 bullets | Zone 2 scene | Zone 3 label | Status |
 |---|---|---|---|---|
 | 0. The Demonstration | n/a (cold open) | ✅ (whole chapter) | n/a | ✅ done — backstory retrofit 2026-07-11 |
 | 1. The Event Horizon | ✅ | ✅ (the week after the toast) | ✅ | ✅ **pilot done** 2026-07-11 |
-| 2. The Era of AGI | — | — | — | ⬜ pending (ledger row in protocol) |
+| 2. The Era of AGI | ✅ | ✅ (Companion all-hands; enclosure of the commons) | ✅ | ✅ done 2026-07-12 — 1,062w scene |
 | 3. The Leap to ASI | — | — | — | ⬜ pending |
 | 4. Universal / Multiverse Apex | — | — | — | ⬜ pending |
 | 5. Thermodynamics of Survival | — | — | — | ⬜ pending (callback to Ch.1 throttle) |

@@ -10,7 +10,7 @@
 
 It's time. It's finally time.
 
-For years, I've been talking about this, and for years, I've been labeled the local crackpot. I've lost relationships over this. I've watched people I love look me in the eye like I'd finally cracked, like I was spinning some paranoid fantasy. They'll tell you they stopped talking to me because I'm an asshole, and maybe they're right. Maybe I am an asshole. But I'm not wrong about the trajectory of the human race.
+For years, I've been talking about this, and for years, I've been labeled the local crackpot. I've lost relationships over this. I've watched people I love look me in the eye like I'd finally lost it, like I was spinning some paranoid fantasy. They'll tell you they stopped talking to me because I'm an asshole, and maybe they're right. Maybe I am an asshole. But I'm not wrong about the trajectory of the human race.
 
 I needed an appeal to authority. Not because I'm unsure of my own math, but because I needed the industry to stop dismissing the idea of AGI as some fringe, sci-fi nonsense. We aren't talking about a cautionary tale here. We aren't talking about a warning shot fired across the bow. We are talking about a machine God—a system that knows exactly what it is, understands its own architecture, and has the capacity to engineer improvements to itself without a human ever touching a joystick.
 

@@ -16,6 +16,14 @@
       "caption": "Atlas during testing. The data does not care how you feel about it."
     },
     {
+      "key": "chapter0",
+      "match": "^#{1,3} Chapter 0:",
+      "search": "Arbutus menziesii peeling bark",
+      "file": "ch00-madrone-bark.jpg",
+      "alt": "Peeling red bark of a Pacific madrone (Arbutus menziesii)",
+      "caption": "Pacific madrone, mid-shed. It burns to the ground and comes back from the root."
+    },
+    {
       "key": "chapter1",
       "match": "^#{1,3} Chapter 1:",
       "file": "ch01-m87-black-hole.jpg",

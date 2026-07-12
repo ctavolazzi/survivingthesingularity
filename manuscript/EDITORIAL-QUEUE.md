@@ -92,4 +92,40 @@ like a field manual (the homepage promises "actionable mechanics, not abstract a
 - [ ] Two outline gaps drafted, edited, and placed
 - [ ] One voice pass over Part II–III stubs
 - [ ] `scripts/build-epub.sh vX` run; EPUB spot-read on a phone + e-reader
-- [ ] Total lands 45k–50k
+- [ ] Total lands 45k–50k **(see §6 — the narrative weave changes this target)**
+
+## 6. Narrative weave rollout (Elijah Integration Protocol)
+
+**Protocol:** `src/lib/data/book/ELIJAH-PROTOCOL.md` (character, world, three-zone
+architecture, scene ledger). Each chapter gets Zone 1 briefing bullets + a Zone 2
+Elijah scene (800–1,200 words) + the existing manifesto content under a Zone 3
+`## The Foundations` label. Ch. 0 is the book-scale cold open (exempt).
+
+**Word-count consequence:** a full 18-chapter weave adds ~15k–18k words of new
+fiction. That pushes the total from ~42k toward ~60k — **above the current
+45k–50k target.** This is an accepted result of the dual-format pivot, not drift.
+**Author to confirm** the new target (a ~55k–60k narrative edition, and/or a
+leaner workbook edition that strips Zone 2).
+
+| Chapter | Zone 1 bullets | Zone 2 scene | Zone 3 label | Status |
+|---|---|---|---|---|
+| 0. The Demonstration | n/a (cold open) | ✅ (whole chapter) | n/a | ✅ done — backstory retrofit 2026-07-11 |
+| 1. The Event Horizon | ✅ | ✅ (the week after the toast) | ✅ | ✅ **pilot done** 2026-07-11 |
+| 2. The Era of AGI | — | — | — | ⬜ pending (ledger row in protocol) |
+| 3. The Leap to ASI | — | — | — | ⬜ pending |
+| 4. Universal / Multiverse Apex | — | — | — | ⬜ pending |
+| 5. Thermodynamics of Survival | — | — | — | ⬜ pending (callback to Ch.1 throttle) |
+| 6. The Singularity Is a Done Deal | — | — | — | ⬜ pending (Marta first contact) |
+| 7. Battle Lines | — | — | — | ⬜ pending (Denny) |
+| 8. Psychology of the Collapse | — | — | — | ⬜ pending (Marta) |
+| 9. Deglobalization / Neighborhood Factory | — | — | — | ⬜ pending (Marta, Reuben) |
+| 10. Create Over Consume | — | — | — | ⬜ pending (Denny) |
+| 11. Using the Tech to Your Advantage | — | — | — | ⬜ pending (deploy-leak friction) |
+| 12. The Land Strategy | — | — | — | ⬜ pending (Reuben) |
+| 13. The Shouse Protocol | — | — | — | ⬜ pending (Marta) |
+| 14. Collapse of the Long Tail | — | — | — | ⬜ pending (Denny) |
+| 15. Reclaiming Soil | — | — | — | ⬜ pending (Priya) |
+| 16. Digital Leverage / Media Autonomy | — | — | — | ⬜ pending |
+| 17. Tools of the Trade | — | — | — | ⬜ pending (Marta, Priya) |
+| 18. Roadmap / Premortem Pivot | — | — | — | ⬜ pending (full co-op) |
+| Conclusion: 2027 Tipping Point | — | — | — | ⬜ pending (loop close to Bear Flag) |

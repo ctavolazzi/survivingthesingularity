@@ -3,8 +3,13 @@
   "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
   "author": "Christopher Tavolazzi",
   "version": "0.2.0",
-  "lastUpdated": "2026-07-10",
+  "lastUpdated": "2026-07-11",
   "sections": [
+    {
+      "id": "chapter0",
+      "title": "Chapter 0: The Demonstration",
+      "file": "00-chapter0.md"
+    },
     {
       "id": "preface",
       "title": "Preface: Welcome to the Weirdness",

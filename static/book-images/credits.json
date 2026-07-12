@@ -1,5 +1,12 @@
 [
  {
+  "file": "ch00-madrone-bark.jpg",
+  "source_title": "File:Pacific Madrone Arbutus menziesii Peeling tree bark.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pacific_Madrone_Arbutus_menziesii_Peeling_tree_bark.jpg",
+  "artist": "Photo by and (c)2007 Jina Lee",
+  "license": "CC BY-SA 3.0"
+ },
+ {
   "file": "ch01-atlas.jpg",
   "source_title": "File:Atlas during testing.jpg",
   "page": "https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg",
@@ -59,7 +66,7 @@
   "file": "ch05-nao.jpg",
   "source_title": "File:NAO robot in the Robinlab.JPG",
   "page": "https://commons.wikimedia.org/wiki/File%3ANAO_robot_in_the_Robinlab.JPG",
-  "artist": "Gustavo A. Casañ",
+  "artist": "Gustavo A. Casa\u00f1",
   "license": "CC BY-SA 4.0"
  },
  {

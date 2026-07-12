@@ -2,6 +2,30 @@
 
 *Compiled from StS-Complete-Draft-v0.0.1.md, 2026-07-02. A reference index of every named framework, coined term, real-world person/organization/technology, and cultural reference mentioned in the manuscript. Organized by category, with chapter location noted where useful.*
 
+*Updated 2026-07-11: added Section 0 (The Fiction Layer) for the Elijah narrative. Full character, world, and chapter-architecture canon lives in `src/lib/data/book/ELIJAH-PROTOCOL.md` — this section is only the name index.*
+
+---
+
+## 0. The Fiction Layer (Elijah Narrative)
+
+*Canon authority: `src/lib/data/book/ELIJAH-PROTOCOL.md`. Prose: `src/lib/data/book/00-chapter0.md` (Ch. 0) and Zone 2 of each chapter.*
+
+**Elijah Galen Madrone** — protagonist / reader-proxy. Farm-raised outside Sonoma County; musician, artist, and delivery driver through his twenties; self-taught, entry-level data scientist (pivoted 2020); junior data hire at Claypot. "Madrone" = the California tree AND the refusal to be a drone; "Galen" = the healer. Motto: **MADRONE ≠ DRONE**.
+
+**Claypot** — legacy creative-software giant, Elijah's employer (Adobe parallel). Trains models on its own customers' work.
+
+**ProneAI** — disruptive research lab that ships the public model (OpenAI parallel).
+
+**Silvana** — ProneAI's generative pre-trained transformer model; Latin *silvana*, "of the forest" (GPT-family parallel).
+
+**Chat Horizon** — the plain public interface Silvana ships inside (ChatGPT-interface parallel).
+
+**The Bear Flag** — the California bar where the realtor incident (Ch. 0) happens.
+
+**"Living Through the Fourth Turning"** — the rogue manuscript Elijah begins at 1:40 a.m. (Ch. 0); it becomes this book. Strauss–Howe allusion.
+
+**The co-op cast** (introduced Part II, deployed Part III): **Marta Okonkwo** (fabricator/welder, anchor); **Dr. Priya Ramanathan** (soil biologist); **Reuben Vance** (legal/zoning hacker); **Denny Osei** (displaced logistics worker, the human cost).
+
 ---
 
 ## 1. The Core Framework (In-World Proper Nouns)

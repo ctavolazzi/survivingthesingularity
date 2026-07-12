@@ -8,6 +8,47 @@
 > *"Within thirty years, we will have the technological means to create superhuman intelligence. Shortly after, the human era will be ended."*
 > — Vernor Vinge, *The Coming Technological Singularity* (1993)
 
+**In this chapter:**
+
+- The event horizon is behind us, not ahead. The Singularity is not a forecast; it is a structural condition we are already living inside.
+- The 2017 Transformer paper, "Attention Is All You Need," automated the one thing we thought was ours alone: the processing of thought itself.
+- Silicon is not the only front. Biological computing is closing on the same target from a completely different, far more energy-efficient direction.
+- The clock reads 2027 — the point where the machine begins, in earnest, to rewrite its own code without us.
+
+---
+
+The Monday after the toast, Elijah brought the printout to work.
+
+He'd read "Attention Is All You Need" so many times over the weekend that the pages had gone soft at the corners, furred with highlighter in four colors that had stopped meaning anything distinct. He'd slept maybe five hours across two nights. He carried the thing into Claypot the way you carry a lab result you don't want confirmed, and he found Devendra at the good coffee machine on the fourth floor, because Devendra was senior, and calm, and had been doing this since before Elijah could spell *gradient descent*, and Elijah needed someone to tell him he was overreacting.
+
+"I think it's already over," Elijah said. No preamble. "I watched three people get replaced last week. Real people. Not a projection — a bar, a Tuesday, three jobs, gone. And nobody who did it even thought of it as a big deal."
+
+Devendra tapped his cup against the drip tray, unhurried. "Augmentation, not replacement," he said. It had the worn smoothness of a thing said many times. "It's a very good autocomplete, Elijah. It makes the people who use it faster. The realtors didn't fire humans because a chatbot is a person. They restructured. Companies restructure." He smiled, not unkindly, the way you smile at someone who's just discovered a thing you made your peace with years ago. "You'll calibrate. Everybody's first month feels like the apocalypse."
+
+Elijah wanted to be talked down. That was the humiliating part. He stood there holding the soft pages and *wanted* the calm to work on him. But it slid off, because he'd seen the training curves inside this building, and he'd done the one thing Devendra's reassurance depended on him not doing, which was the arithmetic.
+
+So that night he decided to settle it with his own hands, the only way a farm kid ever really trusts a thing: he'd try to break it.
+
+He had an old tower at home, a space heater of a machine he'd built for cheap during the pivot, two consumer GPUs zip-tied into a case that didn't quite fit them. He pulled a modest open model and started fine-tuning it on his own data, telling himself that if he could feel where it topped out — if he could find the ceiling by touch — he'd know it was just software, bounded like all software, and he could sleep.
+
+The room got warm around eleven. Warm the way the cab of his delivery car used to get in August, that thick engine-heat with a smell to it. The fans spun up to a howl he could hear from the kitchen. He kept feeding it. The loss curve kept sliding down — not magically, not infinitely, but *steadily*, the way a thing slides when there's real signal underneath and you've simply never had the compute to chase it before. Every increment cost him more. More power off the wall, more heat into the room, the meter he couldn't see spinning somewhere out in the garage.
+
+At 1:20 a.m. the machine threw the temperature warning, throttled itself to protect the silicon, and then — when he stubbornly queued another run — shut down hard. Black screen. The fans coasted to silence. The room ticked as it cooled, exactly like the engine of a car after a long haul.
+
+Elijah sat in the sudden quiet with sweat cooling on the back of his neck and understood something he would spend a whole later chapter of this book trying to say properly.
+
+The thing hadn't hit a ceiling of *intelligence*. It had hit a ceiling of *heat*. It would have kept getting better — it was still getting better when the hardware quit — and the only wall it found was thermodynamic. The machine that had dissolved three careers at the Bear Flag was not magic and was not bounded by cleverness. It was bounded by *watts*, by *cooling*, by the same brutal physics that decided whether his grandmother's crop lived or died. Give it more power and more heat to shed, and it would keep walking down that curve past anything a person could follow.
+
+He had wanted proof it was just software. He'd gotten it. And the proof was so much worse than the fear, because *just software* running on *enough energy* was precisely the problem. There was no clever limit coming to save anyone. There was only the power bill, and the people who could afford it.
+
+He didn't tell Devendra any of this. There was no point. Devendra wasn't wrong about the small mechanics — it *was* autocomplete, it *did* make people faster. He was wrong about the only thing that mattered, which was where the curve went when you stopped pretending it would politely stop. Elijah had watched it not stop. He'd had to unplug it to make it stop.
+
+He left the tower off for a week. Then he opened the notebook where he'd written MADRONE ≠ DRONE, and under it, he started keeping the arithmetic.
+
+---
+
+## The Foundations
+
 ## The Event Horizon of General Intelligence
 The public, institutional, and academic discourse surrounding advanced technology frequently approaches the concept of the Technological Singularity as a hypothetical event confined to the distant future. However, empirical trajectories across machine learning, biological computing, and macroeconomic restructuring indicate that the event horizon has already been crossed. The Singularity is no longer an abstract philosophical debate; it is an active, structural reality driven by exponential progressions in computational intelligence and the decoupling of economic value from human labor. The fundamental premise of this societal and technological transition is that intelligence—historically the ultimate scarce resource that has gated human progress, innovation, and production—is rapidly approaching a marginal cost of zero.
 

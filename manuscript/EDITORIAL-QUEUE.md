@@ -111,6 +111,17 @@ No separate workbook edition for now.
 (formerly ProneAI) — updated in Ch. 0, the protocol proper-noun table, the
 references doc, and the frozen manuscript snapshots.
 
+**History infusion (2026-07-12, author-directed):** verified historical casebook
+at `manuscript/HISTORY-CASEBOOK.md` (11 cases, sources, apocrypha blacklist).
+Landed so far: Ch. 2 Stage 2 (Red Flag Act 1865), Ch. 5 (new "Cyberdeck" section:
+230-year moral-panic lineage + full cyberdeck anatomy/culture + the Tiffany
+doctrine — author-mandated early-chapter placement), Ch. 14 ("Graveyard of the
+Unconvinced": Kodak/Sears/Blockbuster/Borders + Fujifilm/Swatch counter-cases).
+Appendix B sources 105–132 added. Still staged in casebook: Trithemius (Ch. 10/16),
+full Sousa treatment (optional, Ch. 16). Editorial dossier (ruthless pass) at
+`manuscript/EDITORIAL-DOSSIER-2026-07-12.md` — awaiting author chapter-by-chapter
+review + rulings on S9/S3/S4.
+
 | Chapter | Zone 1 bullets | Zone 2 scene | Zone 3 label | Status |
 |---|---|---|---|---|
 | 0. The Demonstration | n/a (cold open) | ✅ (whole chapter) | n/a | ✅ done — backstory retrofit 2026-07-11 |

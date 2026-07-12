@@ -63,6 +63,28 @@ When the Singularity hit, the corporate-state algorithms didn't need to send hun
 
 If your local grocery store only has three days of food on its shelves at any given moment, you are always exactly 72 hours away from starvation. That is the JIT Trap. And if you are relying on a centralized system to spring you from that trap, you are waiting for a rescue team that has already been reprogrammed to ignore your calls.
 
+## The Graveyard of the Unconvinced
+
+Before we build the alternative, walk with me through the cemetery, because every headstone in it says the same thing: *they saw it coming.*
+
+**Kodak, 1975.** A 24-year-old engineer named Steve Sasson builds the world's first digital camera in a Kodak lab — eight pounds, 0.01 megapixels, twenty-three seconds a photo, recorded to cassette tape. He shows management the future of their industry, invented in their own building, patented under their own name. Sasson later summarized the response in one sentence: *"That's cute — but don't tell anyone about it."* The official reasoning was that nobody would ever want to look at pictures on a television. The real reasoning was that Kodak's margins lived in chemistry — film, paper, developer — and the demo proposed a world that used none of it. Kodak had the future in its hands for thirty-seven years and chose the quarterly present every single time. Bankruptcy, January 2012, in the same decade every human being on Earth started carrying a digital camera in their pocket.
+
+**Sears, 1993.** For sixty years, Sears mailed fifteen million Wish Books a year — a 1,500-page catalog that reached every farmhouse in America. It *was* the everything store: direct-to-consumer, warehouse logistics, delivery to the middle of nowhere. You could buy a literal house from it. In 1993, because the catalog was "only" doing $3.3 billion at shrinking margins, Sears killed it — and tore out the distribution infrastructure and let the customer lists rot. **Amazon was founded the following July.** Bezos picked the playbook out of the trash and added a web browser. Sears didn't miss the internet; Sears amputated its own internet-shaped organ *one year* before the internet arrived, because a spreadsheet had reclassified the company's soul as a cost center. Sears could have been Amazon. Read that sentence again, and then read it one more time, because it is the single most expensive sentence in the history of American retail.
+
+**Blockbuster, 2000.** Reed Hastings and Marc Randolph fly to Dallas and offer Netflix — all of it — to Blockbuster for fifty million dollars. Blockbuster has nine thousand stores and sixty million customers; by the founders' account, they were laughed out of the room. (The Blockbuster CEO later denied the talks were serious, which is somehow worse.) Here's the mechanism everyone misses: Blockbuster's profit engine was *late fees* — the company was structurally paid by its customers' resentment, and Netflix's entire product was the deletion of that resentment. An incumbent cannot honestly evaluate a disruptor whose product is the removal of the incumbent's margin. Blockbuster went bankrupt in 2010.
+
+**Borders, 2001.** The bookstore chain decides the internet is a distraction — and **outsources its entire online operation to Amazon.** Amazon runs borders.com: the fulfillment, the customer service, the customer *relationship*. Every Borders online customer is, from day one, an Amazon customer wearing a Borders name tag. Borders spends the decade expanding big-box stores and doubling down on CD and DVD sections while iTunes eats physical media, takes its website back in 2008 — seven years too late — and is liquidated by September 2011. Borders did not lose to its executioner. Borders *hired* its executioner and paid the invoice on time.
+
+Four companies. Four early, clear, in-house sightings of the wave. Four decisions to protect this quarter's margin from next decade's world. Gradually, then suddenly.
+
+Now the two headstones that aren't there:
+
+**Fujifilm** faced the identical extinction event as Kodak — film sales peaked in 2000 and fell off a cliff. Instead of defending the product, it asked what its chemistry was *actually good at*: thin films, collagen (film is mostly gelatin), antioxidants. It aimed those exact skills at cosmetics, pharmaceuticals, and the coatings inside LCD screens. Fujifilm is thriving. Same wave, same decade, same industry. Different question.
+
+**The Swiss watch industry** ignored quartz until it nearly died of purity — from 90,000 workers in 1970 to about 33,000 by 1984. What saved it was heresy: the 1983 **Swatch**, a cheap, disposable, robot-assembled *quartz* watch — the antithesis of everything Swiss horology stood for — which adopted the enemy's technology at the bottom of the market to fund the survival of the mechanical craft at the top. Ten years later, Swiss mechanical watches were reborn as luxury. You do not beat the new machine by refusing it. You beat it by making it pay for what you actually want to keep.
+
+That's the whole cemetery tour, and here is the plaque at the exit gate: **the difference between Kodak and Fujifilm was never information.** Both had it. The difference was that one asked "how do we protect what we sell" and the other asked "what are we actually for." Your town, your trade, and your household are being asked that exact question right now, by the machine this book is about. The rest of this chapter is how to answer it like Fujifilm.
+
 ## Reclaiming Your Logistics: The Short Loop
 To survive in the cracks, we have to build the **Short Loop**.
 

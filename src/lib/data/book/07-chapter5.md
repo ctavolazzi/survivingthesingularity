@@ -128,6 +128,56 @@ By creating independent media cells, writing open-source survival code, or strea
 
   
 
+## The Cyberdeck: Your First Machine in the Cracks
+
+Before we go any further into grids and land and law, I want to show you what thermodynamic agency looks like when it's small enough to fit in a Pelican case. I want to show you what the kids are building. And before I do that, I need to show you two hundred and thirty years of adults being wrong about what the kids are building.
+
+### A Brief History of "Kids These Days"
+
+In 1790, the Reverend Enos Hitchcock warned the world about a technology that was destroying the youth: "The free access which many young people have to romances, novels, and plays has poisoned the mind and corrupted the morals of many a promising youth." Doctors across Europe diagnosed the epidemic — they called it *reading rage*, *reading fever*, *reading mania* — and blamed it for promiscuity, ruined eyesight, and moral collapse. The brain-rot of 1790 was **reading books for pleasure**.
+
+In 1816, The Times of London condemned an indecent foreign contagion sweeping the ballrooms and warned parents to keep their daughters away from it. The contagion was the **waltz**.
+
+In the 1890s, when the safety bicycle gave young women the ability to go where they pleased without a chaperone, physicians invented a disease called **"bicycle face"** — a permanent disfigurement caused by the strain of balancing — and warned that cycling caused infertility. The disease being treated was not on anyone's face. The disease was *freedom of movement*, and the bicycle was the vector.
+
+In 1906, John Philip Sousa — the most famous musician in America — published "The Menace of Mechanical Music," warning that the phonograph would destroy the human voice itself: "vocal cords will be eliminated by a process of evolution." The machine he was attacking had already made his own band one of the first recording stars on Earth.
+
+Then radio was rotting children's brains. Then comic books were, and the United States Senate held hearings about it. Then television. Then Dungeons & Dragons was Satanic, then video games were murder simulators, then the internet, then the phone, and now — right on schedule — the machine you're reading this book about.
+
+Two hundred and thirty years. Not one of those panics protected a single child. Every single one of them protected the *panicker* — from the discomfort of watching a world stop needing what they knew. So here is the translation key, and I want you to laminate it: when you hear "kids these days," what is actually being said is *"a tool I don't understand is making someone I can't control powerful in a way I can't supervise."*
+
+Which brings me to the kids, and what they're actually doing.
+
+### What a Cyberdeck Is
+
+Right now, while the professionally worried write op-eds about screen time, a generation of mostly young builders is constructing an entire alternative computing culture out of parts, spite, and joy. They call the machines **cyberdecks** — the name is lifted from the "cyberspace deck" Case jacks into in William Gibson's *Neuromancer* (1984) — and a cyberdeck is, simply, a personal computer you *build instead of buy*. Not assembled from a menu like a gaming PC. Designed. Fabricated. Owned in the way you can only own a thing you could rebuild from a pile of its own parts.
+
+There is no factory spec, but a canonical anatomy has emerged across the thousands of documented builds:
+
+- **The brain:** a single-board computer — usually a Raspberry Pi 4 or 5, or a Compute Module on a custom carrier board. Total draw: single-digit watts. The new Pis expose PCIe, so a fast NVMe drive rides along.
+- **The power:** recycled 18650 lithium cells salvaged from dead laptop packs, or a USB-C Power Delivery brick stepped down through a buck converter. A cyberdeck's power budget is measured in *watts* — it lives on the right side of every equation in this chapter.
+- **The face:** a seven-to-eleven-inch HDMI panel, or an e-ink screen for sunlight and near-zero draw.
+- **The hands:** a mechanical keyboard, frequently a tiny 40% layout, sometimes hand-wired key by key. Thrift-store keyboards run three to ten dollars.
+- **The body:** a Pelican case, an ammo can, a 3D-printed shell, a briefcase from Goodwill. One documented build lives in an old clarinet case.
+- **The ears:** an RTL-SDR dongle — a twenty-dollar USB stick that turns the deck into a radio receiver for the entire RF neighborhood — and a LoRa transceiver running Meshtastic, the encrypted, off-grid mesh messaging network. Builders report Meshtastic reception at forty-five miles with a good antenna and line of sight.
+- **The library:** offline. Kiwix with a full copy of Wikipedia and hundreds of gigabytes of manuals and maps, local LLMs running from the NVMe with no cloud in the loop, every reference the machine's owner might need when the network is gone or gated. Some builds go further: one contest entry lines its case with two layers of Faraday fabric so the whole library survives an electromagnetic event.
+
+Read that list again slowly, because you have seen it before. Owned hardware. Understood systems. Offline knowledge. Mesh communication. A power budget in watts. Repairability as a moral stance. **A cyberdeck is this entire book at 1:87 scale** — and the people building them did not wait for permission, funding, or a curriculum. Hackaday ran a cyberdeck contest in 2022 and got over a hundred finished machines; the community at cyberdeck.cafe runs its own challenges and holds exactly one rule about who's allowed in: *no gatekeeping.*
+
+### The Tiffany Doctrine
+
+Here is the part I need the older readers to sit with, because I am on your side and this is going to sting.
+
+The kids building these machines do not know how things used to be. They do not *care* how things used to be. Why the fuck would they? "How things used to be" is not a place they can live. The ladder you climbed was hauled up behind you decades ago — the cheap house, the one-income family, the job that couldn't see you after 5 p.m. They know the old world mostly as a rent bill and a lecture. So they are doing what young people have done in every turning before this one: building an entire alternative society with the materials at hand, while the previous tenants explain that the materials are somehow morally inferior.
+
+So: Grandpa. I'm sorry Tiffany wasn't around when they put a man on the moon. But right now she is learning the skills to put *herself* on the moon. She doesn't need a lecture about how kids these days don't know how to adjust the antenna on the TV — she needs your help and your emotional support while she builds a goddamn cyberdeck. She's teaching herself how to manufacture a robot that can fold your underwear and grab you a beer so she can focus on something much more important: her own life. It is YOUR job to help her learn how to handle frustration — not to give her more of it.
+
+And Grandpa — you have more to offer her than anyone in that Discord server, if you can drop the sermon. You know how to solder. You know why the fuse blows. You know what it feels like to stay with a broken thing until it isn't, which is the single rarest skill in her world of infinite scrolling and one-click everything. She is building the exact machine this chapter has been describing: a low-watt, owned, repairable, un-brickable computer that works when the grid doesn't. That's not brain-rot. That's the Reverend Hitchcock's poison, the bicycle face, the menace of mechanical music — the same panic on its two-hundred-and-thirty-year loop — and this time, you get to choose which side of the letter to the editor you're on.
+
+The pattern holds in every generation: the tool the elders mock becomes the world the kids build. The novel-readers became the literate public. The bicycle girls got the vote. The kids wasting their lives on computers built the thing you're mad at now. Tiffany and her cyberdeck are not the collapse of civilization. They are the *continuity plan*.
+
+Your first machine in the cracks doesn't need to be pretty. It needs to be yours. Build one with her.
+
 ## Step One: Audit Your Energy Budget
 Before you can build a mesh network or pool land with your neighbors, you must run a cold-eyed audit of your personal energy balance sheet.
 

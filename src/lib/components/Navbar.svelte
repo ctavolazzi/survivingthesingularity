@@ -15,10 +15,9 @@
   let lastFocused = null;
   let scrolled = false;
 
-  // Desktop nav links — minimal: free value + depth
+  // Desktop nav links — minimal: the book and context
   const desktopLinks = [
     { href: '/book', label: 'The Book' },
-    { href: '/checklist', label: 'Checklist' },
     { href: '/blog', label: 'Blog' },
   ];
 
@@ -28,22 +27,16 @@
       label: 'Start here',
       links: [
         {
-          href: '/checklist',
-          label: 'Free Readiness Checklist',
-          sub: '7 moves. Free.',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>`,
+          href: '/early-access',
+          label: 'Preorder the Book',
+          sub: '$5. Draft + research bundle now, 50% off at launch.',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
         },
         {
           href: '/book',
           label: 'The Book',
           sub: 'Full draft, open now. Read it as it gets written.',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
-        },
-        {
-          href: '/#event',
-          label: 'Live Tuesday Call',
-          sub: 'Free weekly discussion on Zoom. No purchase needed.',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
         },
       ],
     },
@@ -66,17 +59,9 @@
     },
   ];
 
-  // Context-aware CTA: changes based on where the user is in their journey
+  // One offer, one CTA, everywhere.
   $: currentPath = $page.url.pathname;
-  $: ctaConfig = (() => {
-    if (currentPath.startsWith('/early-access')) {
-      return { label: 'Start Here Free', href: '/checklist' };
-    }
-    if (currentPath.startsWith('/checklist')) {
-      return { label: 'Unlock Everything', href: '/early-access' };
-    }
-    return { label: 'Get Early Access', href: '/early-access' };
-  })();
+  const ctaConfig = { label: 'Preorder: $5', href: '/early-access' };
 
   $: isActive = (href) => href === '/' ? currentPath === '/' : currentPath.startsWith(href);
 

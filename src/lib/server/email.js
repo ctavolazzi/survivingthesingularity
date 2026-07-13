@@ -81,8 +81,8 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
       `available here on the site and on Amazon in paperback and Kindle. No payment collected now. We'll reach out when it's ready.`;
 
   const cta = isAuthors
-    ? { label: 'See the launch plan', url: 'https://survivingthesingularity.com/launch' }
-    : { label: 'Learn more', url: 'https://survivingthesingularity.com/launch' };
+    ? { label: 'Read the draft now', url: 'https://survivingthesingularity.com/book' }
+    : { label: 'Read the draft now', url: 'https://survivingthesingularity.com/book' };
 
   const subject = isAuthors
     ? `Author's Edition confirmed: copy #${copy_number}`

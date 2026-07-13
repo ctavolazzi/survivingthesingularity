@@ -3,7 +3,6 @@
 
   let checkoutLoading = false;
   let checkoutError = '';
-  let selectedEdition = $page.url.searchParams.get('edition') === 'authors' ? 'authors' : 'standard';
 
   async function checkout() {
     if (checkoutLoading) return;
@@ -13,7 +12,7 @@
       const res = await fetch('/api/stripe-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ edition_type: selectedEdition }),
+        body: JSON.stringify({ edition_type: 'standard' }),
       });
       const data = await res.json().catch(() => ({}));
       if (data.url) {
@@ -30,10 +29,10 @@
 </script>
 
 <svelte:head>
-  <title>Early Access | Surviving the Singularity</title>
+  <title>Preorder the Book | Surviving the Singularity</title>
   <meta name="description" content="Preorder for $5. Get the current book draft, research bundle, and a locked-in spot before the general public. Expected launch 2026." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Early Access | Surviving the Singularity" />
+  <meta property="og:title" content="Preorder the Book | Surviving the Singularity" />
   <meta property="og:description" content="Preorder for $5. Get the current book draft, research bundle, and a locked-in spot before the general public. Expected launch 2026." />
   <meta property="og:image" content="{$page.url.origin}/Surviving-the-Singularity-Cover.png" />
   <meta property="og:url" content="{$page.url.href}" />
@@ -86,7 +85,6 @@
         <li>The research bundle delivered to your inbox today</li>
         <li>The current book draft</li>
         <li>Exclusive link to buy the finished book at 50% off at launch</li>
-        <li>First access to the Author's Edition before the general public</li>
       </ul>
 
       <div class="ea-price-card">
@@ -97,31 +95,8 @@
           </div>
         </div>
 
-        <p class="ea-edition-label">Choose your edition</p>
-        <!-- Edition selector (inline, compact) -->
-        <div class="ea-edition-toggle">
-          <button
-            class="ea-edition-opt"
-            class:ea-edition-opt-active={selectedEdition === 'standard'}
-            on:click={() => selectedEdition = 'standard'}
-            type="button"
-          >Standard Edition</button>
-          <button
-            class="ea-edition-opt"
-            class:ea-edition-opt-active={selectedEdition === 'authors'}
-            on:click={() => selectedEdition = 'authors'}
-            type="button"
-          >Author's Edition <span class="ea-edition-limit">100 copies</span></button>
-        </div>
-
         <button class="ea-buy-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
-          {#if checkoutLoading}
-            Redirecting to checkout...
-          {:else if selectedEdition === 'authors'}
-            Reserve Author's Edition: $5
-          {:else}
-            Preorder Now: $5
-          {/if}
+          {checkoutLoading ? 'Redirecting to checkout...' : 'Preorder Now: $5'}
         </button>
 
         {#if checkoutError}
@@ -268,113 +243,7 @@
         </div>
       </div>
 
-      <div class="ea-item">
-        <div class="ea-item-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-          </svg>
-        </div>
-        <div class="ea-item-body">
-          <div class="ea-item-name">Author's Limited Edition Access</div>
-          <div class="ea-item-desc">100 numbered copies, and no two are alike. I hand-bind, number, and sign every single one myself — each copy is its own one-of-a-kind object. Includes a full bonus chapter not in the public book — the premortem: every reason this plan could fail, argued honestly, then answered. Once they're gone, they're gone.</div>
-          <span class="ea-tag ea-tag-soon">Ongoing</span>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-
-<!-- ── TWO EDITIONS ── -->
-<section class="ea-editions">
-  <div class="ea-editions-inner">
-    <p class="ea-label">Choose your edition</p>
-    <h2 class="ea-editions-heading">Preorder for $5. Pick your edition.</h2>
-    <p class="ea-editions-sub">Both include the research bundle delivered to your inbox today. Select one, then checkout.</p>
-
-    <div class="ea-editions-grid">
-
-      <!-- Standard Edition -->
-      <button
-        class="ea-ed ea-ed-selectable"
-        class:ea-ed-selected={selectedEdition === 'standard'}
-        on:click={() => selectedEdition = 'standard'}
-        type="button"
-        aria-pressed={selectedEdition === 'standard'}
-      >
-        <div class="ea-ed-header">
-          <div class="ea-ed-header-left">
-            <span class="ea-ed-tag">Standard Edition</span>
-            <span class="ea-ed-price-tag">$5</span>
-          </div>
-          <div class="ea-ed-check" aria-hidden="true">
-            {#if selectedEdition === 'standard'}
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            {/if}
-          </div>
-        </div>
-        <p class="ea-ed-desc">Research bundle in your inbox today. Current draft readable now. When the book launches on Amazon, I'll email you an exclusive link at 50% off.</p>
-        <ul class="ea-ed-features">
-          <li>Research bundle: papers, source docs</li>
-          <li>Current book draft as a PDF, in the bundle</li>
-          <li>Finished book publishes on Amazon via KDP — paperback and Kindle</li>
-          <li>Exclusive link to buy the finished book at 50% off</li>
-          <li>First access to everything built before launch</li>
-        </ul>
-      </button>
-
-      <!-- Author's Edition -->
-      <button
-        class="ea-ed ea-ed-premium ea-ed-selectable"
-        class:ea-ed-selected={selectedEdition === 'authors'}
-        on:click={() => selectedEdition = 'authors'}
-        type="button"
-        aria-pressed={selectedEdition === 'authors'}
-      >
-        <div class="ea-ed-header">
-          <div class="ea-ed-header-left">
-            <span class="ea-ed-tag ea-ed-tag-au">Author's Edition</span>
-            <span class="ea-ed-limited">100 copies only</span>
-          </div>
-          <div class="ea-ed-check ea-ed-check-au" aria-hidden="true">
-            {#if selectedEdition === 'authors'}
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            {/if}
-          </div>
-        </div>
-        <p class="ea-ed-desc">Everything in Standard, plus one of 100 hand-bound, signed, numbered copies — and no two of them are alike. Ships 2026.</p>
-        <ul class="ea-ed-features">
-          <li>Everything in Standard Edition</li>
-          <li>All 100 copies are different — yours is a one-of-a-kind object</li>
-          <li>I hand-bind, number, and sign every copy myself — 1 through 100</li>
-          <li>Bonus chapter: the premortem on the book's own thesis</li>
-          <li>Margin notes in my own hand, plus findings cut from the public edition</li>
-        </ul>
-      </button>
-
-    </div>
-
-    <!-- Single checkout CTA -->
-    <div class="ea-editions-cta">
-      <button class="ea-ed-checkout-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
-        {#if checkoutLoading}
-          Redirecting to checkout...
-        {:else if selectedEdition === 'authors'}
-          Reserve Author's Edition: $5
-        {:else}
-          Preorder Standard Edition: $5
-        {/if}
-      </button>
-      {#if checkoutError}
-        <p class="ea-checkout-error" style="margin-top:12px;">{checkoutError}</p>
-      {/if}
-      <p class="ea-ed-fine">
-        {selectedEdition === 'authors'
-          ? 'Your numbered copy is logged in our records the moment payment clears.'
-          : 'Research bundle delivered to your email immediately after payment.'}
-      </p>
-    </div>
-
   </div>
 </section>
 
@@ -399,22 +268,6 @@
   </div>
 </section>
 
-<!-- ── WELCOME VIDEO ── -->
-<section class="ea-video-section">
-  <div class="ea-video-inner">
-    <div class="ea-video-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/NKENM_J-rEg"
-        title="Welcome to the Singularity Community"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-</section>
-
 <!-- ── BOTTOM CTA ── -->
 <section class="ea-bottom">
   <div class="ea-bottom-inner">
@@ -423,7 +276,7 @@
       Early access pricing
     </p>
     <h2 class="ea-bottom-heading">Preorder now.<br>Don't wait.</h2>
-    <p class="ea-bottom-sub">$5 today. Research bundle in your inbox now. When the book launches, I'll email you a exclusive link at 50% off.</p>
+    <p class="ea-bottom-sub">$5 today. Research bundle in your inbox now. When the book launches, I'll email you an exclusive link at 50% off.</p>
     <button class="ea-bottom-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
       {checkoutLoading ? 'Redirecting...' : 'Preorder Now: $5'}
     </button>
@@ -548,72 +401,6 @@
     content: '›';
     position: absolute; left: 0;
     color: var(--amber); font-size: 1rem; line-height: 1.4;
-  }
-  .ea-edition-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.14em;
-    color: var(--amber); margin: 0 0 8px;
-  }
-
-  /* Price card */
-  .ea-price-card {
-    background: var(--surface);
-    border: 1px solid rgba(245,158,11,0.25);
-    border-radius: var(--r-card);
-    padding: 24px 24px 20px;
-    box-shadow: 0 0 0 1px rgba(245,158,11,0.06), 0 24px 64px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
-  }
-  .ea-price-row {
-    display: flex; align-items: center; gap: 16px;
-    margin-bottom: 20px;
-  }
-  .ea-price-amount {
-    font-size: 3.6rem; font-weight: 900; color: var(--text-1);
-    line-height: 1; letter-spacing: -0.04em; flex-shrink: 0;
-  }
-  .ea-price-amount sup {
-    font-size: 0.38em; vertical-align: super;
-    font-weight: 700; color: var(--amber);
-  }
-  .ea-price-meta-col {
-    display: flex; flex-direction: column; gap: 4px;
-  }
-  .ea-price-type {
-    font-size: 0.85rem; font-weight: 700; color: var(--text-1); line-height: 1.2;
-  }
-  .ea-price-note {
-    font-size: 0.75rem; color: var(--text-3);
-    font-family: 'JetBrains Mono', monospace;
-  }
-  .ea-price-free {
-    color: var(--amber);
-    font-size: 2.4rem;
-  }
-  .ea-edition-toggle {
-    display: flex; gap: 8px; margin-bottom: 16px;
-  }
-  .ea-edition-opt {
-    flex: 1; padding: 10px 12px;
-    background: rgba(255,255,255,0.04);
-    border: 1.5px solid rgba(255,255,255,0.1);
-    border-radius: 10px;
-    color: var(--text-3); font-size: 0.82rem; font-weight: 600;
-    font-family: inherit; cursor: pointer;
-    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
-    text-align: center; line-height: 1.3;
-  }
-  .ea-edition-opt:hover { border-color: rgba(245,158,11,0.3); color: var(--text-2); }
-  .ea-edition-opt-active {
-    border-color: var(--amber);
-    background: rgba(245,158,11,0.1);
-    color: var(--amber);
-  }
-  .ea-edition-limit {
-    display: block; font-size: 0.7rem; font-weight: 700;
-    font-family: 'JetBrains Mono', monospace;
-    text-transform: uppercase; letter-spacing: 0.08em;
-    opacity: 0.8;
   }
   .ea-buy-btn {
     display: flex; align-items: center; justify-content: center; gap: 10px;
@@ -841,220 +628,6 @@
   .ea-tag-live { background: rgba(16,185,129,0.12); color: var(--green); }
   .ea-tag-draft { background: var(--amber-dim); color: var(--amber); }
   .ea-tag-soon { background: rgba(148,163,184,0.08); color: var(--text-3); }
-
-  /* ── TWO EDITIONS ── */
-  .ea-editions {
-    border-top: 1px solid var(--border);
-    padding: clamp(48px, 7vw, 80px) 0;
-  }
-  .ea-editions-inner {
-    max-width: 1080px; margin: 0 auto;
-    padding: 0 clamp(20px, 5vw, 48px);
-  }
-  .ea-editions-heading {
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    font-weight: 800;
-    color: var(--text-1);
-    margin: 0.25rem 0 0.5rem;
-    letter-spacing: -0.025em;
-    line-height: 1.15;
-  }
-  .ea-editions-sub {
-    font-size: 1rem;
-    color: var(--text-3);
-    margin: 0 0 2.5rem;
-    line-height: 1.5;
-  }
-  .ea-editions-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    align-items: start;
-  }
-  @media (max-width: 680px) {
-    .ea-editions-grid { grid-template-columns: 1fr; }
-  }
-  .ea-ed {
-    padding: 1.75rem;
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    border-left: 3px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .ea-ed-premium {
-    border-color: rgba(245, 158, 11, 0.3);
-    border-left-color: rgba(245, 158, 11, 0.6);
-    background: rgba(245, 158, 11, 0.03);
-    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.08);
-  }
-  .ea-ed-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-  }
-  .ea-ed-tag {
-    font-size: 0.7rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--text-3);
-    font-family: 'JetBrains Mono', monospace;
-  }
-  .ea-ed-tag-au {
-    color: #f59e0b;
-  }
-  .ea-ed-price-tag {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--text-1);
-    letter-spacing: -0.03em;
-    font-family: 'JetBrains Mono', monospace;
-  }
-  .ea-ed-limited {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #f59e0b;
-    font-family: 'JetBrains Mono', monospace;
-  }
-  .ea-ed-desc {
-    font-size: 0.9rem;
-    color: var(--text-2);
-    line-height: 1.55;
-    margin: 0;
-  }
-  .ea-ed-features {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
-    flex: 1;
-  }
-  .ea-ed-features li {
-    font-size: 0.85rem;
-    color: var(--text-2);
-    padding-left: 1.1rem;
-    position: relative;
-    line-height: 1.4;
-  }
-  .ea-ed-features li::before {
-    content: '›';
-    position: absolute;
-    left: 0;
-    color: var(--text-3);
-    font-size: 0.7rem;
-    top: 0.1em;
-  }
-  .ea-ed-premium .ea-ed-features li::before {
-    content: '✓';
-    color: #f59e0b;
-    font-size: 0.75rem;
-  }
-  .ea-ed-cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-    width: 100%;
-    padding: 0.75rem 1.25rem;
-    font-weight: 800;
-    font-size: 0.88rem;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    letter-spacing: 0.01em;
-    transition: opacity 0.15s ease;
-    font-family: inherit;
-  }
-  .ea-ed-cta:hover:not(:disabled) { opacity: 0.88; }
-  .ea-ed-cta:disabled { opacity: 0.45; cursor: not-allowed; }
-  .ea-ed-cta-std {
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--text-1);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: none;
-  }
-  .ea-ed-cta-au {
-    background: #f59e0b;
-    color: #0f172a;
-    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
-  }
-  .ea-ed-note {
-    font-size: 0.75rem;
-    color: var(--text-3);
-    text-align: center;
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  .ea-ed-selectable {
-    cursor: pointer;
-    text-align: left;
-    font-family: inherit;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
-  }
-  .ea-ed-selectable:hover { transform: translateY(-2px); }
-  .ea-ed-selected {
-    border-color: rgba(245,158,11,0.6) !important;
-    box-shadow: 0 0 0 2px rgba(245,158,11,0.25), 0 8px 32px rgba(0,0,0,0.3);
-  }
-  .ea-ed-header-left {
-    display: flex; flex-direction: column; gap: 4px;
-  }
-  .ea-ed-check {
-    width: 24px; height: 24px; flex-shrink: 0;
-    background: var(--amber); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    color: #0a0a0a;
-    opacity: 0;
-    transition: opacity 0.15s ease;
-  }
-  .ea-ed-selected .ea-ed-check { opacity: 1; }
-  .ea-ed-check-au { background: var(--amber); }
-  .ea-editions-cta {
-    margin-top: 2rem;
-    display: flex; flex-direction: column; align-items: center; gap: 0;
-  }
-  .ea-ed-checkout-btn {
-    width: 100%; max-width: 420px;
-    padding: 17px 32px;
-    background: var(--amber); color: #0a0a0a;
-    font-size: 1.05rem; font-weight: 800;
-    border: none; border-radius: var(--r-pill); cursor: pointer;
-    font-family: inherit;
-    box-shadow: 0 4px 20px rgba(245,158,11,0.4);
-    transition: filter 0.2s ease, transform 0.2s var(--ease-spring);
-  }
-  .ea-ed-checkout-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-2px); }
-  .ea-ed-checkout-btn:disabled { opacity: 0.7; cursor: wait; }
-  .ea-ed-fine {
-    font-size: 0.78rem; color: var(--text-3);
-    text-align: center; margin-top: 12px; max-width: 380px;
-  }
-
-  /* ── WELCOME VIDEO ── */
-  .ea-video-section {
-    border-top: 1px solid var(--border);
-    padding: clamp(40px, 6vw, 72px) 0;
-  }
-  .ea-video-inner {
-    max-width: 800px; margin: 0 auto;
-    padding: 0 clamp(20px, 5vw, 48px);
-  }
-  .ea-video-wrap {
-    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
-    border-radius: 8px; background: #000;
-  }
-  .ea-video-wrap iframe {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    border: none;
-  }
 
   /* ── AUTHOR ── */
   .ea-author {

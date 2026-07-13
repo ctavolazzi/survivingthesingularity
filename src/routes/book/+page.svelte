@@ -55,7 +55,7 @@
           {#if PURCHASE_URL}
             <a href={PURCHASE_URL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy the Book</a>
           {:else}
-            <a href="/early-access" class="btn-primary">Reserve Early Access</a>
+            <a href="/early-access" class="btn-primary">Preorder the Book: $5</a>
           {/if}
           <a href="/StS-free-sample.pdf" class="btn-ghost" target="_blank" rel="noopener noreferrer">Read a free sample</a>
         </div>
@@ -114,61 +114,14 @@
     </div>
   </section>
 
-  <!-- ── THE TWO EDITIONS ── -->
-  <section class="section section-alt">
-    <div class="inner">
-      <p class="label">Choose Your Edition</p>
-      <h2 class="heading">Two ways to own this book.</h2>
-      <p class="subhead">The Standard Edition ships worldwide through Amazon. The Author's Limited Edition is 100 hand-bound, signed, and numbered copies — and no two of them are alike.</p>
-
-      <div class="editions">
-
-        <!-- Standard Edition -->
-        <div class="edition edition-standard">
-          <p class="ed-badge">Standard Edition</p>
-          <h3 class="ed-title">Surviving the Singularity</h3>
-          <p class="ed-sub">The complete book, in paperback and on Kindle. Published on Amazon via Kindle Direct Publishing.</p>
-
-          <ul class="ed-list">
-            <li>Full three-part book, all chapters</li>
-            <li>Paperback and Kindle editions</li>
-            <li>Available worldwide on Amazon via KDP</li>
-            <li>Print-on-demand — never sold out, never out of stock</li>
-            <li>Price announced at launch · August 2026</li>
-          </ul>
-
-          <a href="https://thecoffeejesus.substack.com" class="btn-ghost" target="_blank" rel="noopener noreferrer">Get notified at launch</a>
-        </div>
-
-        <!-- Author's Limited Edition -->
-        <div class="edition edition-authors">
-          <p class="ed-badge ed-badge-special">
-            <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1l1.88 3.82L14 5.64l-3 2.93.71 4.12L8 10.77l-3.71 1.92L5 8.57 2 5.64l4.12-.82L8 1z"/></svg>
-            Author's Limited Edition · 100 Copies Only
-          </p>
-          <h3 class="ed-title">One of one hundred.<br>One of a kind.</h3>
-          <p class="ed-sub">100 numbered copies, and no two are the same. Every single one is hand-bound and signed by the author.</p>
-
-          <ul class="ed-list ed-list-special">
-            <li>Everything in the Standard Edition</li>
-            <li>All 100 copies are different — each one is a unique, physical, one-of-a-kind object</li>
-            <li>Hand-bound by Christopher Tavolazzi, one copy at a time</li>
-            <li>Signed and numbered by hand — you own a specific number, 1 through 100, that exists nowhere else</li>
-            <li>Exclusive content and margin notes in the author's hand, different in every copy</li>
-            <li>$5 secures your number now · ships at launch, August 2026</li>
-          </ul>
-
-          <div class="ed-scarcity">
-            <span class="ed-scarcity-num">100</span>
-            <span class="ed-scarcity-text">copies will ever exist · when they're gone, they're gone</span>
-          </div>
-
-          <a href="/early-access?edition=authors" class="btn-primary">Claim your number</a>
-        </div>
-
-      </div>
-
-      <p class="ed-footnote">Why is every copy different? Because they're made by hand, one at a time — the binding, the materials, and the handwritten notes vary from copy to copy. Mass production makes identical objects. Hands don't.</p>
+  <!-- ── PREORDER ── -->
+  <section class="section section-alt section-center">
+    <div class="inner inner-narrow">
+      <p class="label">Preorder</p>
+      <h2 class="heading">Get the book for $5.</h2>
+      <p class="subhead">Preorder now and get the current draft and the research bundle in your inbox today, plus an exclusive link to buy the finished book at 50% off when it launches on Amazon in August 2026.</p>
+      <a href="/early-access" class="btn-primary">Preorder the Book: $5</a>
+      <p class="fine-print">One-time payment · Secured by Stripe</p>
     </div>
   </section>
 
@@ -468,130 +421,4 @@
   .part-2 .part-list li::before { background: #60a5fa; }
   .part-3 .part-list li::before { background: #34d399; }
 
-  /* ── EDITIONS ── */
-  .editions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
-    margin-top: 2rem;
-    align-items: start;
-  }
-  @media (max-width: 660px) {
-    .editions { grid-template-columns: 1fr; }
-  }
-
-  .edition {
-    padding: 1.75rem;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .edition-standard {
-    background: rgba(15,23,42,0.6);
-    border: 1px solid var(--border-mid);
-  }
-  .edition-authors {
-    background: rgba(245,158,11,0.04);
-    border: 1px solid rgba(245,158,11,0.28);
-    box-shadow: 0 0 48px rgba(245,158,11,0.06);
-  }
-
-  .ed-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--text-3);
-    background: rgba(255,255,255,0.04);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 0.3rem 0.7rem;
-    margin: 0;
-    width: fit-content;
-  }
-  .ed-badge-special {
-    color: var(--amber);
-    background: rgba(245,158,11,0.08);
-    border-color: rgba(245,158,11,0.25);
-  }
-
-  .ed-title {
-    font-size: clamp(1.1rem, 2.8vw, 1.35rem);
-    font-weight: 900;
-    color: var(--text-1);
-    margin: 0;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-  }
-  .ed-sub {
-    font-size: 0.9rem;
-    color: var(--text-2);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .ed-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.55rem;
-  }
-  .ed-list li {
-    font-size: 0.88rem;
-    color: var(--text-2);
-    line-height: 1.5;
-    padding-left: 1.2rem;
-    position: relative;
-  }
-  .ed-list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.55em;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--text-3);
-  }
-  .ed-list-special li::before {
-    background: var(--amber);
-  }
-
-  .ed-scarcity {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-    padding: 0.85rem 1rem;
-    background: rgba(245,158,11,0.06);
-    border: 1px solid rgba(245,158,11,0.18);
-    border-radius: 10px;
-  }
-  .ed-scarcity-num {
-    font-family: var(--mono);
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--amber);
-    line-height: 1;
-    flex-shrink: 0;
-  }
-  .ed-scarcity-text {
-    font-size: 0.82rem;
-    color: var(--text-2);
-    line-height: 1.45;
-  }
-
-  .ed-footnote {
-    font-size: 0.85rem;
-    color: var(--text-3);
-    line-height: 1.6;
-    margin: 1.5rem 0 0;
-    max-width: 62ch;
-  }
 </style>

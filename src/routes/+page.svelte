@@ -9,8 +9,6 @@
   let agiMins = '--';
   let agiSecs = '--';
   let countdownReady = false;
-  let lumaEmbedWrap;
-  let lumaEmbedFrame;
 
   onMount(() => {
     const agiTarget = new Date('2027-11-25T00:00:00Z');
@@ -69,29 +67,17 @@
     }, { threshold: 0.5 });
     document.querySelectorAll('.count-up').forEach(el => countObs.observe(el));
 
-    function onLumaMessage(e) {
-      if (!e.origin.includes('lu.ma') && !e.origin.includes('luma.com')) return;
-      const data = e.data;
-      const height = typeof data === 'number' ? data
-        : (data && typeof data === 'object' && (data.height || data.frameHeight));
-      if (height && lumaEmbedFrame) {
-        lumaEmbedFrame.style.height = `${Math.ceil(height)}px`;
-      }
-    }
-    window.addEventListener('message', onLumaMessage);
-
     return () => {
       clearInterval(agiInterval);
-      window.removeEventListener('message', onLumaMessage);
     };
   });
 </script>
 
 <svelte:head>
   <title>Surviving the Singularity: New Era, New Playbook</title>
-  <meta name="description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft, open to read now." />
+  <meta name="description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
   <meta property="og:title" content="Surviving the Singularity" />
-  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Free checklist, live research feed, and book draft, open to read now." />
+  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
   <meta property="og:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
   <meta property="og:url" content="https://survivingthesingularity.com/" />
   <meta property="og:type" content="website" />
@@ -176,17 +162,13 @@
         </div>
         <div class="hero-actions">
           <a href="/early-access" class="btn-primary">
-            Get Early Access: $5
+            Preorder the Book: $5
             <span class="btn-icon" aria-hidden="true">
               <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </a>
           <a href="/book" class="btn-ghost">Read the Book</a>
         </div>
-        <a href="#event" class="hero-event-link">
-          <span class="event-dot" aria-hidden="true"></span>
-          Need people to talk to about this? Join Tuesday's live discussion, free &rarr;
-        </a>
       </div>
 
     </div>
@@ -227,10 +209,76 @@
     </div>
   </section>
 
+  <!-- EVIDENCE: show, don't tell -->
+  <section class="evidence-section" aria-label="The evidence">
+    <div class="section-inner">
+      <div class="evidence-header reveal">
+        <span class="section-label">The Evidence</span>
+        <h2 class="section-heading">Stop imagining the future.<br>Look at the present.</h2>
+        <p class="section-sub">Every machine below is real and working today. This is the story the book tells: how we got here, and what you can build with the same tools.</p>
+      </div>
+      <div class="evidence-grid reveal reveal-d1">
+        <figure class="ev-cell ev-cell-large">
+          <div class="ev-media"><img src="/book-images/intro-asimo.webp" alt="Honda ASIMO humanoid robot walking" loading="lazy" decoding="async" /></div>
+          <figcaption class="ev-cap">
+            <span class="ev-cap-title">It started with a walk</span>
+            <span class="ev-cap-sub">ASIMO, 2000. The proof that machines could move through our world.</span>
+          </figcaption>
+        </figure>
+        <figure class="ev-cell">
+          <div class="ev-media"><img src="/book-images/ch02-waymo.webp" alt="Waymo autonomous vehicle driving on a city street" loading="lazy" decoding="async" /></div>
+          <figcaption class="ev-cap">
+            <span class="ev-cap-title">Then it learned to drive</span>
+            <span class="ev-cap-sub">Paid rides, no driver, every day.</span>
+          </figcaption>
+        </figure>
+        <figure class="ev-cell">
+          <div class="ev-media"><img src="/book-images/ch04-da-vinci.webp" alt="da Vinci surgical robot in an operating room" loading="lazy" decoding="async" /></div>
+          <figcaption class="ev-cap">
+            <span class="ev-cap-title">To operate</span>
+            <span class="ev-cap-sub">Steadier than human hands, in hospitals worldwide.</span>
+          </figcaption>
+        </figure>
+        <figure class="ev-cell">
+          <div class="ev-media"><img src="/book-images/ch11-spot.webp" alt="Boston Dynamics Spot robot walking on a forest trail" loading="lazy" decoding="async" /></div>
+          <figcaption class="ev-cap">
+            <span class="ev-cap-title">To leave the pavement</span>
+            <span class="ev-cap-sub">Off the factory floor and into the field.</span>
+          </figcaption>
+        </figure>
+        <figure class="ev-cell">
+          <div class="ev-media"><img src="/book-images/ch12-farmbot-watering.webp" alt="FarmBot machine watering garden beds" loading="lazy" decoding="async" /></div>
+          <figcaption class="ev-cap">
+            <span class="ev-cap-title">To grow food</span>
+            <span class="ev-cap-sub">An open-source robot that plants, waters, and weeds.</span>
+          </figcaption>
+        </figure>
+        <figure class="ev-cell ev-cell-wide">
+          <div class="ev-media"><img src="/book-images/ch10-nyse.webp" alt="New York Stock Exchange trading floor screens" loading="lazy" decoding="async" /></div>
+          <figcaption class="ev-cap">
+            <span class="ev-cap-title">And to run the markets</span>
+            <span class="ev-cap-sub">Most trading volume is already machine-to-machine.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- BEFORE / AFTER -->
   <section class="reality-section" aria-label="Without a plan vs with a plan">
     <div class="reality-inner reveal">
       <h2 class="reality-heading">Most people will get steamrolled.<br>You don't have to be one of them.</h2>
+      <div class="reality-diagram" aria-hidden="true">
+        <svg viewBox="0 0 600 170" preserveAspectRatio="xMidYMid meet">
+          <line x1="20" y1="85" x2="180" y2="85" class="rd-stem" />
+          <path class="rd-path rd-path-good" d="M180,85 C300,85 420,30 570,22" fill="none" />
+          <path class="rd-path rd-path-bad" d="M180,85 C300,85 420,140 570,148" fill="none" />
+          <circle class="rd-now" cx="180" cy="85" r="6" />
+          <text x="20" y="70" class="rd-label rd-label-dim">today</text>
+          <text x="430" y="14" class="rd-label rd-label-good">with a plan</text>
+          <text x="430" y="166" class="rd-label rd-label-bad">without one</text>
+        </svg>
+      </div>
       <div class="reality-cols">
         <div class="reality-col reality-col-bad">
           <span class="reality-col-label">Without a plan</span>
@@ -261,6 +309,18 @@
 
         <div class="middle-facts reveal">
           <h2 class="middle-heading">They don't want you to know the truth...<br>so here it is.</h2>
+          <div class="middle-diagram" aria-hidden="true">
+            <svg viewBox="0 0 560 210" preserveAspectRatio="xMidYMid meet">
+              <line x1="30" y1="185" x2="540" y2="185" class="md-axis" />
+              <line x1="30" y1="15" x2="30" y2="185" class="md-axis" />
+              <path class="md-curve md-curve-up" d="M30,175 C220,168 400,120 540,25" fill="none" />
+              <path class="md-curve md-curve-down" d="M30,45 C220,60 380,150 540,178" fill="none" />
+              <text x="330" y="60" class="md-label md-label-up">what AI can do</text>
+              <text x="310" y="140" class="md-label md-label-down">what it costs</text>
+              <text x="34" y="205" class="md-label md-label-dim">2020</text>
+              <text x="505" y="205" class="md-label md-label-dim">now</text>
+            </svg>
+          </div>
           <ul class="middle-list">
             <li>AI is displacing workers right now. CEOs are tripping over themselves to cut headcount. It is not stopping.</li>
             <li>Robot capabilities that cost $100K in 2022 are available for under $1,000 today.</li>
@@ -272,15 +332,37 @@
         <div class="middle-offer reveal reveal-d1">
           <p class="middle-offer-label">Here's what you do about it</p>
           <ul class="middle-offer-list">
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>12-step readiness checklist</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The readiness checklist: concrete moves, ordered by impact</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Full blueprint, all chapters</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Research bundle: the papers and sources behind the book</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Book draft, updated as it's written</li>
           </ul>
-          <a href="/early-access" class="middle-btn">Get all of it: $5</a>
+          <a href="/early-access" class="middle-btn">Preorder the book: $5</a>
           <p class="middle-fine">One-time. Price goes up at launch.</p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ANSWER VIDEO: the build side -->
+  <section class="video-section" aria-label="What taking control looks like">
+    <div class="section-inner">
+      <div class="video-header reveal">
+        <span class="section-label">The Other Side</span>
+        <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
+        <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Owning the hardware that feeds you is the whole game. The book shows you how to start.</p>
+      </div>
+    </div>
+    <div class="video-wrap reveal reveal-d1">
+      <div class="video-ratio">
+        <iframe
+          src="https://www.youtube.com/embed/uNkADHZStDE"
+          title="FarmBot: open-source automated food production"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   </section>
@@ -297,6 +379,9 @@
       </div>
       <div class="timeline-track reveal reveal-d1">
         <div class="timeline-item">
+          <div class="timeline-img" aria-hidden="true">
+            <img src="/book-images/ch03-echo-dot.webp" alt="" loading="lazy" decoding="async" />
+          </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot past"></div>
             <span class="timeline-period">2024</span>
@@ -305,6 +390,9 @@
           <p class="timeline-desc">AI tools go mainstream. Early job cuts begin. The people paying attention start preparing. Most people ignore it.</p>
         </div>
         <div class="timeline-item">
+          <div class="timeline-img" aria-hidden="true">
+            <img src="/book-images/ch06-edmond-de-belamy.webp" alt="" loading="lazy" decoding="async" />
+          </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot past"></div>
             <span class="timeline-period">2025</span>
@@ -313,6 +401,9 @@
           <p class="timeline-desc">AI model capabilities exceeded the average person in key areas. The intelligence gap closed. Most people missed it completely.</p>
         </div>
         <div class="timeline-item">
+          <div class="timeline-img" aria-hidden="true">
+            <img src="/book-images/ch07-pepper.webp" alt="" loading="lazy" decoding="async" />
+          </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot now"></div>
             <span class="timeline-period">2026. Now.</span>
@@ -321,6 +412,9 @@
           <p class="timeline-desc">Humanoid robots are entering workplaces. The social contract is being dismantled. Most people still think this is someone else's problem.</p>
         </div>
         <div class="timeline-item">
+          <div class="timeline-img" aria-hidden="true">
+            <img src="/book-images/ch16-servers.jpg" alt="" loading="lazy" decoding="async" />
+          </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot"></div>
             <span class="timeline-period">2027+</span>
@@ -333,7 +427,14 @@
   </section>
 
   <!-- VIDEO -->
-  <section class="video-section" aria-label="Watch">
+  <section class="video-section" aria-label="Watch autonomous robots at work">
+    <div class="section-inner">
+      <div class="video-header reveal">
+        <span class="section-label">No Cuts. No CGI.</span>
+        <h2 class="section-heading">Autonomous, at <em class="vh-em">1x speed.</em></h2>
+        <p class="section-sub">Nobody is holding a controller and nothing is sped up. This is where physical AI is right now.</p>
+      </div>
+    </div>
     <div class="video-wrap reveal">
       <div class="video-ratio">
         <iframe
@@ -356,22 +457,69 @@
       </div>
       <div class="book-parts reveal reveal-d1">
         <div class="book-part book-part-1">
+          <span class="book-part-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M4 28 C12 27 20 20 28 4" /><path d="M22 4 h6 v6" /></svg>
+          </span>
           <span class="book-part-num">Part I</span>
           <h3 class="book-part-title">What is the Singularity?</h3>
           <p class="book-part-sub">The data. The math. The thermodynamic reality.</p>
           <p class="book-part-desc">Why the 2017 Transformer crossed the event horizon. The mathematical map of intelligence scaling: nine stages from current AI to the apex, run by a machine bound by physics.</p>
         </div>
         <div class="book-part book-part-2">
+          <span class="book-part-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="4"/><circle cx="22" cy="10" r="4"/><path d="M4 26 c0-5 4-8 6-8 s6 3 6 8"/><path d="M16 26 c0-5 4-8 6-8 s6 3 6 8"/></svg>
+          </span>
           <span class="book-part-num">Part II</span>
           <h3 class="book-part-title">How Humans React</h3>
           <p class="book-part-sub">Transition dynamics. Fear to footing. The egalitarian pivot.</p>
           <p class="book-part-desc">Most people follow predictable patterns when disruption hits. Learn the psychology of the collapse, step out of the fear loop, and plug into the egalitarian, hyper-local cooperative networks already forming.</p>
         </div>
         <div class="book-part book-part-3">
+          <span class="book-part-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14 L16 6 L26 14"/><path d="M9 12 v12 h14 v-12"/><path d="M13 24 v-6 h6 v6"/></svg>
+          </span>
           <span class="book-part-num">Part III</span>
           <h3 class="book-part-title">How to Survive the Transition</h3>
           <p class="book-part-sub">Shouse Grids. DC-native microgrids. Hardware you own.</p>
           <p class="book-part-desc">Actionable mechanics, not abstract advice: Shouse Grids, DC-native microgrids, and mechanical transducer systems that refine local waste into value. Johnny Autoseed, our boutique robotics project management and consultation service, helps you stand up the physical infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE BOOK ITSELF -->
+  <section class="product-section" aria-label="The book you are preordering">
+    <div class="section-inner">
+      <div class="product-inner reveal">
+        <div class="product-cover">
+          <div class="product-cover-glow" aria-hidden="true"></div>
+          <picture>
+            <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
+            <img
+              src="/images/surviving_the_singularity_cover_1200.png"
+              alt="Surviving the Singularity book cover"
+              width="600"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="product-copy">
+          <span class="section-label">The Book</span>
+          <h2 class="product-heading">This is what five dollars buys.</h2>
+          <ul class="product-list">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The current book draft, in your inbox today</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The research bundle: the papers and sources behind every claim</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>50% off the finished book when it launches on Amazon</li>
+          </ul>
+          <a href="/early-access" class="btn-primary">
+            Preorder the Book: $5
+            <span class="btn-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <p class="product-fine">One-time payment · Secured by Stripe</p>
         </div>
       </div>
     </div>
@@ -382,127 +530,16 @@
     <div class="section-inner">
       <div class="cta-inner reveal">
         <div class="cta-glow" aria-hidden="true"></div>
-        <h2 class="cta-heading" id="act-heading">Get ready.<br><em>Five dollars.</em></h2>
-        <p class="cta-sub">The blueprint. The research bundle. The book draft. Get ahead of everyone else. One payment.<br><br>Five dollars also locks in 50% off at digital launch, plus queue access to Author's Edition: exactly 100 hand-bound, signed, numbered copies. No two alike. When they're gone, they're gone.<br><br>Limited time offer. Price goes up at launch.</p>
-        <!-- Bookbinding authenticity video: when the binding process video is
-             filmed, embed it here (same .video-ratio pattern as the sections
-             above) to prove the hand-bound Author's Edition is real. -->
+        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>Five dollars.</em></h2>
+        <p class="cta-sub">The book draft. The research bundle. The readiness checklist. One payment, everything now, plus 50% off the finished book at launch.<br><br>Limited time offer. Price goes up at launch.</p>
 
         <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
-          Get Early Access: $5
+          Preorder the Book: $5
           <span class="btn-icon" aria-hidden="true">
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
         <p style="font-size:0.8rem; color:#64748b; margin-top:14px;">No upsells. No subscription. Just the stuff that matters.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- WELCOME VIDEO -->
-  <section class="video-section" aria-label="Welcome to the community">
-    <div class="video-wrap reveal">
-      <div class="video-ratio">
-        <iframe
-          src="https://www.youtube.com/embed/NKENM_J-rEg"
-          title="Welcome to the Surviving the Singularity community"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- WEEKLY EVENT: Luma Zoom community call -->
-  <section class="event-section" id="event" aria-labelledby="event-heading">
-    <div class="section-inner">
-      <div class="event-inner reveal">
-        <div class="event-text">
-          <div class="event-eyebrow">
-            <span class="event-dot"></span>
-            <span>Live &middot; Every Tuesday &middot; 4PM Pacific &middot; Free</span>
-          </div>
-          <h2 class="event-heading" id="event-heading">Finally, people you can actually talk to about this.</h2>
-          <p class="event-sub">
-            You see where this is heading. Most people around you don't want to hear it.
-            Every Tuesday we get on Zoom and talk it through: AI, robotics, what comes after
-            work, how to be ready. Real conversation with people who've been thinking about
-            this as long as you have. The book is our shared map, but you don't need it to
-            join. Just show up.
-          </p>
-          <ul class="event-list">
-            <li>Live discussion, not a lecture: bring your questions, theories, and worries</li>
-            <li>Post-labor society, transhumanism, solarpunk, and everything in between</li>
-            <li>No old-world Luddism: we embrace reality as it is and map where it's going</li>
-            <li>Free, every week. No book purchase required to participate.</li>
-          </ul>
-          <div class="event-actions">
-            <a href="https://luma.com/event/evt-yQuYOJ1qhrnkvdw" target="_blank" rel="noopener noreferrer" class="btn-primary">
-              Save Your Seat
-              <span class="btn-icon" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
-            <a href="/early-access" class="event-secondary-link">Want the shared map? Get the book &rarr;</a>
-          </div>
-          <p class="event-fine">Tuesdays, 4:00&ndash;5:00 PM Pacific &middot; on Zoom &middot; link sent when you register.</p>
-        </div>
-        <div class="event-embed" bind:this={lumaEmbedWrap}>
-          <iframe
-            bind:this={lumaEmbedFrame}
-            src="https://luma.com/embed/event/evt-yQuYOJ1qhrnkvdw/simple"
-            title="Surviving the Singularity: weekly live event details and registration"
-            frameborder="0"
-            scrolling="no"
-            allow="fullscreen; payment"
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FREE PATH: Community for people who aren't buying yet -->
-  <section class="free-path" aria-label="Get started for free">
-    <div class="free-path-inner">
-      <p class="free-path-eyebrow">Not ready to buy? That's fine.</p>
-      <h2 class="free-path-heading">Get started for free.</h2>
-      <p class="free-path-sub">The checklist is free. The Discord community is free. Municipal Autonomy Code is free. You don't need to spend a dollar to start preparing.</p>
-
-      <div class="free-path-grid">
-        <a href="/downloads/Municipal-Autonomy-Code.pdf" download class="free-path-card">
-          <div class="free-path-card-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-          </div>
-          <div class="free-path-card-body">
-            <div class="free-path-card-title">Municipal Autonomy Code</div>
-            <div class="free-path-card-desc">The foundational legal layer for securing local infrastructure, straight from Appendix A. Instant download, no signup.</div>
-            <span class="free-path-card-cta">Download the code</span>
-          </div>
-        </a>
-
-        <a href="/checklist" class="free-path-card">
-          <div class="free-path-card-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-          </div>
-          <div class="free-path-card-body">
-            <div class="free-path-card-title">Free Readiness Checklist</div>
-            <div class="free-path-card-desc">7 moves. Start where you are. No payment, no signup for the first three steps.</div>
-            <span class="free-path-card-cta">Start the checklist</span>
-          </div>
-        </a>
-
-        <a href="https://discord.gg/DVKhj6Vxge" target="_blank" rel="noopener noreferrer" class="free-path-card free-path-card-discord">
-          <div class="free-path-card-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <div class="free-path-card-body">
-            <div class="free-path-card-title">Join the Discord</div>
-            <div class="free-path-card-desc">Preview the community for free. Permanent access requires submitting the checklist for review.</div>
-            <span class="free-path-card-cta">Preview the Discord</span>
-          </div>
-        </a>
       </div>
     </div>
   </section>
@@ -817,13 +854,6 @@
   .hero-sub-line { font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--text-2); line-height: 1.45; margin: 0; }
   .hero-sub-punch { color: var(--text-1); font-weight: 700; font-size: clamp(1.1rem, 2.5vw, 1.35rem); }
   .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
-  .hero-event-link {
-    display: inline-flex; align-items: center; gap: 8px; margin: 4px 0 0;
-    font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-2);
-    text-decoration: none; border-bottom: 1px dashed var(--border-mid);
-  }
-  .hero-event-link:hover { color: var(--amber); }
-
   /* STAT STRIP */
   .stat-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: clamp(40px, 6vw, 64px) 0; }
   .ss-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -1309,158 +1339,121 @@
   @media (max-width: 420px) { .email-form { flex-direction: column; } .email-submit { width: 100%; } }
 
 
-  /* WEEKLY EVENT */
-  .event-section { border-top: 1px solid var(--border); padding: clamp(56px, 8vw, 96px) 0; }
-  .event-inner {
-    display: grid; grid-template-columns: 1fr minmax(360px, 480px);
-    gap: clamp(32px, 5vw, 56px); align-items: center;
+
+  /* EVIDENCE */
+  .evidence-section { border-top: 1px solid var(--border); padding: clamp(56px, 8vw, 96px) 0; }
+  .evidence-header { margin-bottom: clamp(28px, 4vw, 44px); }
+  .evidence-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: auto auto; gap: 12px; }
+  .ev-cell {
+    margin: 0; display: flex; flex-direction: column;
+    background: var(--surface); border: 1px solid var(--border-mid);
+    border-radius: 14px; overflow: hidden; min-width: 0;
   }
-  @media (max-width: 900px) { .event-inner { grid-template-columns: 1fr; } }
-  .event-text { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
-  .event-eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-family: var(--font-mono); font-size: clamp(0.72rem, 1.8vw, 0.85rem);
-    font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;
-    color: var(--amber);
+  .ev-media { position: relative; aspect-ratio: 4/3; overflow: hidden; background: var(--surface-2); }
+  .ev-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s var(--ease-out); }
+  .ev-cell:hover .ev-media img { transform: scale(1.04); }
+  .ev-cell-large { grid-row: 1 / 3; }
+  .ev-cell-large .ev-media { aspect-ratio: auto; flex: 1; min-height: 280px; }
+  .ev-cell-wide { grid-column: 2 / 4; }
+  .ev-cell-wide .ev-media { aspect-ratio: 16/6; }
+  .ev-cap { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; }
+  .ev-cap-title { font-size: 0.95rem; font-weight: 700; color: var(--text-1); line-height: 1.3; }
+  .ev-cap-sub { font-size: 0.82rem; color: var(--text-3); line-height: 1.45; }
+  @media (max-width: 700px) {
+    .evidence-grid { grid-template-columns: 1fr 1fr; grid-template-rows: none; }
+    .ev-cell-large { grid-row: auto; grid-column: 1 / 3; }
+    .ev-cell-large .ev-media { aspect-ratio: 16/9; min-height: 0; flex: none; }
+    .ev-cell-wide { grid-column: 1 / 3; }
+    .ev-cell-wide .ev-media { aspect-ratio: 16/8; }
   }
-  .event-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--amber); box-shadow: 0 0 8px var(--amber);
-    flex-shrink: 0; animation: ac-pulse 2s ease-in-out infinite;
+
+  /* REALITY DIAGRAM */
+  .reality-diagram { max-width: 620px; margin: 0 auto clamp(28px, 4vw, 40px); }
+  .reality-diagram svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .rd-stem { stroke: var(--text-4); stroke-width: 2; }
+  .rd-path { stroke-width: 2.5; stroke-dasharray: 480; stroke-dashoffset: 480; }
+  .rd-path-good { stroke: #10b981; }
+  .rd-path-bad { stroke: #f87171; stroke-dasharray: 6 7; opacity: 0.85; }
+  :global(.reality-inner.visible) .rd-path-good { animation: rd-draw 1.4s var(--ease-out) 0.2s forwards; }
+  :global(.reality-inner.visible) .rd-path-bad { animation: rd-fade 1.4s ease 0.2s forwards; }
+  @keyframes rd-draw { to { stroke-dashoffset: 0; } }
+  @keyframes rd-fade { from { opacity: 0; } to { opacity: 0.85; } }
+  .rd-path-bad { opacity: 0; }
+  .rd-now { fill: var(--amber); }
+  .rd-label { font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .rd-label-good { fill: #10b981; }
+  .rd-label-bad { fill: #f87171; }
+  .rd-label-dim { fill: var(--text-3); }
+  @media (prefers-reduced-motion: reduce) {
+    .rd-path { stroke-dashoffset: 0; }
+    .rd-path-bad { opacity: 0.85; }
   }
-  .event-heading {
-    font-size: clamp(2rem, 5.5vw, 3.4rem); font-weight: 900;
+
+  /* MIDDLE DIAGRAM */
+  .middle-diagram { margin: 4px 0 20px; }
+  .middle-diagram svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .md-axis { stroke: var(--text-4); stroke-width: 1.5; }
+  .md-curve { stroke-width: 2.5; stroke-dasharray: 620; stroke-dashoffset: 620; }
+  .md-curve-up { stroke: var(--amber); }
+  .md-curve-down { stroke: var(--blue); opacity: 0.9; }
+  :global(.middle-facts.visible) .md-curve { animation: rd-draw 1.6s var(--ease-out) 0.2s forwards; }
+  .md-label { font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .md-label-up { fill: var(--amber); }
+  .md-label-down { fill: var(--blue); }
+  .md-label-dim { fill: var(--text-3); font-size: 12px; }
+  @media (prefers-reduced-motion: reduce) { .md-curve { stroke-dashoffset: 0; } }
+
+  /* TIMELINE THUMBS */
+  .timeline-img {
+    aspect-ratio: 16/10; border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--border-mid); background: var(--surface);
+    margin-bottom: 14px;
+  }
+  .timeline-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* VIDEO HEADER */
+  .video-header { margin-bottom: clamp(24px, 4vw, 40px); }
+  .vh-em { font-style: italic; color: var(--amber); }
+
+  /* BOOK PART ICONS */
+  .book-part-icon { display: block; width: 30px; height: 30px; margin-bottom: 12px; }
+  .book-part-icon svg { width: 100%; height: 100%; display: block; }
+
+  /* PRODUCT */
+  .product-section { border-top: 1px solid var(--border); padding: clamp(56px, 8vw, 96px) 0; }
+  .product-inner {
+    display: grid; grid-template-columns: 0.85fr 1.15fr;
+    gap: clamp(32px, 5vw, 64px); align-items: center;
+  }
+  @media (max-width: 768px) { .product-inner { grid-template-columns: 1fr; } }
+  .product-cover { position: relative; display: flex; justify-content: center; }
+  .product-cover-glow {
+    position: absolute; inset: -24px;
+    background: radial-gradient(ellipse at center, rgba(245,158,11,0.22) 0%, transparent 70%);
+    filter: blur(24px); pointer-events: none;
+  }
+  .product-cover img {
+    position: relative; width: min(320px, 78vw); height: auto;
+    border-radius: 8px;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(245,158,11,0.15);
+    transform: perspective(1200px) rotateY(-4deg);
+  }
+  .product-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+  .product-heading {
+    font-size: clamp(1.9rem, 4.5vw, 3rem); font-weight: 800;
     line-height: 1.05; letter-spacing: -0.03em; color: var(--text-1); margin: 0;
   }
-  .event-sub { font-size: clamp(1rem, 2.2vw, 1.15rem); color: var(--text-2); line-height: 1.7; margin: 0; max-width: 52ch; }
-  .event-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-  .event-list li { font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2); line-height: 1.55; padding-left: 18px; position: relative; }
-  .event-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
-  .event-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
-  .event-secondary-link { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-2); text-decoration: none; border-bottom: 1px dashed var(--border-mid); transition: color 0.15s ease; }
-  .event-secondary-link:hover { color: var(--amber); }
-  .event-fine { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-3); margin: 0; }
-  .event-embed {
-    border: 1px solid var(--border-mid); border-radius: 16px;
-    overflow: hidden; background: #f7f2e7; width: 100%;
+  .product-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .product-list li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2); line-height: 1.5;
   }
-  .event-embed iframe { display: block; width: 100%; height: 730px; border: none; }
-  @media (max-width: 640px) { .event-embed iframe { height: 780px; } }
-
-  /* FREE PATH */
-  .free-path {
-    border-top: 1px solid var(--border);
-    padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 60px);
-  }
-  .free-path-inner {
-    max-width: 860px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .free-path-eyebrow {
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--text-3);
-    margin: 0 0 0.75rem;
-    font-family: var(--font-mono);
-  }
-  .free-path-heading {
-    font-size: clamp(1.8rem, 5vw, 2.8rem);
-    font-weight: 900;
-    color: var(--text-1);
-    margin: 0 0 0.75rem;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-  }
-  .free-path-sub {
-    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-    color: var(--text-2);
-    line-height: 1.6;
-    margin: 0 0 2.5rem;
-    max-width: 560px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .free-path-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-    text-align: left;
-  }
-  @media (max-width: 900px) {
-    .free-path-grid { grid-template-columns: 1fr 1fr; }
-  }
-  @media (max-width: 600px) {
-    .free-path-grid { grid-template-columns: 1fr; }
-  }
-  .free-path-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid var(--border-mid);
-    border-left: 3px solid rgba(255, 255, 255, 0.1);
-    text-decoration: none;
-    transition: border-color 0.2s ease, background 0.2s ease;
-  }
-  .free-path-card:hover {
-    border-color: rgba(245, 158, 11, 0.3);
-    border-left-color: rgba(245, 158, 11, 0.6);
-    background: rgba(245, 158, 11, 0.03);
-  }
-  .free-path-card-discord {
-    border-left-color: rgba(88, 101, 242, 0.5);
-  }
-  .free-path-card-discord:hover {
-    border-color: rgba(88, 101, 242, 0.4);
-    border-left-color: rgba(88, 101, 242, 0.8);
-    background: rgba(88, 101, 242, 0.04);
-  }
-  .free-path-card-icon {
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--border-mid);
-    color: var(--text-2);
-  }
-  .free-path-card-discord .free-path-card-icon {
-    color: rgba(88, 101, 242, 0.9);
-    background: rgba(88, 101, 242, 0.08);
-    border-color: rgba(88, 101, 242, 0.2);
-  }
-  .free-path-card-body { flex: 1; min-width: 0; }
-  .free-path-card-title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text-1);
-    margin: 0 0 0.35rem;
-  }
-  .free-path-card-desc {
-    font-size: 0.875rem;
-    color: var(--text-2);
-    line-height: 1.5;
-    margin: 0 0 0.85rem;
-  }
-  .free-path-card-cta {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: var(--amber);
-    letter-spacing: 0.02em;
-  }
-  .free-path-card-discord .free-path-card-cta {
-    color: rgba(148, 154, 255, 0.9);
-  }
+  .product-list li svg { flex-shrink: 0; margin-top: 5px; }
+  .product-fine { font-size: 0.8rem; color: var(--text-3); margin: 0; }
 
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
   @media (prefers-reduced-motion: reduce) {
-    .ambient-orb, .ac-dot, .event-dot, .timeline-dot.now, .chapter-here-dot { animation: none; }
+    .ambient-orb, .ac-dot, .timeline-dot.now, .chapter-here-dot { animation: none; }
   }
 </style>

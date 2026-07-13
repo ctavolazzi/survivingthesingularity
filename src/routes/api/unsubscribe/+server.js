@@ -35,7 +35,7 @@ export async function POST(event) {
   }
 
   if (!supabaseAdmin) {
-    console.error('[unsubscribe] supabaseAdmin unavailable — check SUPABASE_SERVICE_KEY');
+    console.error('[unsubscribe] supabaseAdmin unavailable - check SUPABASE_SERVICE_KEY');
     return json({ error: 'Service unavailable.' }, { status: 503 });
   }
 

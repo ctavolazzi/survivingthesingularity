@@ -165,7 +165,7 @@
     gap: 0.75rem;
   }
 
-  /* Honeypot — must be visually gone but not display:none (some bots check) */
+  /* Honeypot - must be visually gone but not display:none (some bots check) */
   .hp-field {
     position: absolute;
     left: -9999px;

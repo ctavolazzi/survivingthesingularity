@@ -62,7 +62,7 @@ export async function POST(event) {
   }
 
   // Notifications: applicant confirmation + admin alert. Not gating the
-  // response on these — a slow/rate-limited Resend send shouldn't hold up
+  // response on these - a slow/rate-limited Resend send shouldn't hold up
   // the applicant's confirmation of a successful submission.
   const notify = Promise.all([
     sendDiscordApplicationConfirmation({ name, email }).catch((e) => console.error('[discord-application] confirmation threw:', e?.message ?? e)),

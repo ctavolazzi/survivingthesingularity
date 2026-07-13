@@ -68,7 +68,7 @@
     </form>
   </main>
 {:else if isBookRoot}
-  <!-- Main /book page has its own full-width layout — no wrapper needed -->
+  <!-- Main /book page has its own full-width layout - no wrapper needed -->
   <slot />
 {:else}
   <!-- Section sub-pages (/book/[sectionId]) need the prose reader layout -->

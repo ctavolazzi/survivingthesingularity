@@ -212,7 +212,7 @@
       max-width: 100%;
     }
 
-    /* Three equal columns — grid keeps them from word-wrapping on narrow screens */
+    /* Three equal columns - grid keeps them from word-wrapping on narrow screens */
     .footer-links-group {
       width: 100%;
       gap: 1rem;

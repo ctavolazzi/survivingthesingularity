@@ -158,14 +158,14 @@
         <span class="ea-part-num">Part I</span>
         <h3 class="ea-part-title">What Is the Singularity?</h3>
         <p class="ea-part-desc">
-          The case that the 2017 Transformer architecture already crossed the event horizon: parallel self-attention let models start processing their own architecture, which is what makes unassisted recursive self-improvement possible. This part lays out the 9-stage map of the intelligence explosion, from the first cash grab to a machine that outgrows the planet, and the physical limits — energy, compute, thermodynamics — that even a superintelligence can't skip.
+          The case that the 2017 Transformer architecture already crossed the event horizon: parallel self-attention let models start processing their own architecture, which is what makes unassisted recursive self-improvement possible. This part lays out the 9-stage map of the intelligence explosion, from the first cash grab to a machine that outgrows the planet, and the physical limits that even a superintelligence can't skip: energy, compute, thermodynamics.
         </p>
       </div>
       <div class="ea-part-card">
         <span class="ea-part-num">Part II</span>
         <h3 class="ea-part-title">How Humans React</h3>
         <p class="ea-part-desc">
-          The hard part was never the machine. It's us. This part breaks down the predictable arc of the human response — the panic, the power grabs, the backlash — and the deliberate shift it takes to get past fear-based hierarchy into the kind of open, collective problem-solving that actually survives a transition like this.
+          The hard part was never the machine. It's us. This part breaks down the predictable arc of the human response: the panic, the power grabs, the backlash. Then it maps the deliberate shift it takes to get past fear-based hierarchy into the kind of open, collective problem-solving that actually survives a transition like this.
         </p>
       </div>
       <div class="ea-part-card">
@@ -178,7 +178,7 @@
     </div>
 
     <blockquote class="ea-pull-quote">
-      "2027 is the tipping point — the year the loop closes on unassisted recursive self-improvement. Once that starts, there's no pausing it, and there's no going back to the way things were."
+      "2027 is the tipping point: the year the loop closes on unassisted recursive self-improvement. Once that starts, there's no pausing it, and there's no going back to the way things were."
     </blockquote>
   </div>
 </section>

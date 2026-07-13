@@ -24,7 +24,7 @@ const DUPLICATE_CHECK_EXEMPT_EMAIL = (env.TEST_REPEAT_PURCHASE_EMAIL || '').toLo
 
 // Claim a session ID in Supabase before sending the email.
 // Returns true if this is the first claim (send email), false if already claimed (skip).
-// Falls back to true (always send) when Supabase isn't configured — acceptable for local dev.
+// Falls back to true (always send) when Supabase isn't configured - acceptable for local dev.
 async function claimSession(sessionId, email) {
   if (!supabaseAdmin) return true;
   const { error } = await supabaseAdmin
@@ -41,7 +41,7 @@ async function claimSession(sessionId, email) {
  */
 async function getBundleUrl() {
   if (!supabaseAdmin) {
-    return null; // mock mode — page will show placeholder
+    return null; // mock mode - page will show placeholder
   }
   const { data, error } = await supabaseAdmin.storage
     .from(BUCKET)
@@ -112,12 +112,12 @@ export async function load({ url, platform }) {
     // Handed to waitUntil below so it survives after the response ships on
     // Cloudflare (a bare promise can be killed when the isolate freezes);
     // locally it just runs in the background. The awaits inside .then() are
-    // required for that to work — without them this promise would resolve
+    // required for that to work - without them this promise would resolve
     // before the emails actually finish, defeating the point of waitUntil.
     const fulfillment = claimSession(sessionId, customerEmail).then(async (claimed) => {
       if (!claimed) return;
 
-      // 1. Insert preorder row — trigger assigns copy_number for authors edition.
+      // 1. Insert preorder row - trigger assigns copy_number for authors edition.
       // The (email, edition_type) unique constraint blocks a real repeat
       // purchase; the exempt test email clears its own prior row first so it
       // can buy the same edition repeatedly without tripping that constraint.
@@ -146,7 +146,7 @@ export async function load({ url, platform }) {
         }
       }
 
-      // 2. Send the bundle (they paid, so they always get the download link —
+      // 2. Send the bundle (they paid, so they always get the download link -
       // on a duplicate this just resends access to what they already have)
       // and, for genuinely new preorders only, the admin alert. The two sends
       // are independent, so run them in parallel; allSettled keeps one

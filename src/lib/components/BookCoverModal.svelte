@@ -104,7 +104,7 @@
               The Singularity isn't just about fending off Terminator bots or finding food in the era of economic collapse and climate famines. It's about navigating a world where technology changes faster than we can keep up with.
             </p>
             <p>
-              This book is a primer on understanding and navigating the <strong>double exponential shift</strong> in the way we get our needs met &mdash; from autonomous drone swarms to the possibility of robots doing all labor in the world.
+              This book is a primer on understanding and navigating the <strong>double exponential shift</strong> in the way we get our needs met: from autonomous drone swarms to the possibility of robots doing all labor in the world.
             </p>
             <p>
               Before you resign yourself to your new overlords, pause for a moment, breathe, and know it's already over. Now you just have to learn how to survive the Singularity. <strong>This book will teach you.</strong>

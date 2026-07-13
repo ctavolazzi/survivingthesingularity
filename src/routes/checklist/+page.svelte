@@ -111,7 +111,7 @@
     return { destroy() { node.removeEventListener('input', resize); } };
   }
 
-  // ── Discord preview — free, no-commitment, temporary invite. Does NOT
+  // ── Discord preview - free, no-commitment, temporary invite. Does NOT
   // unlock the checklist; that's EmailGate's job, gated on a real email. ────
   const DISCORD_KEY = 'sts_discord_previewed';
   let discordPreviewed = false;
@@ -129,7 +129,7 @@
     window.open('https://discord.gg/DVKhj6Vxge', '_blank', 'noopener,noreferrer');
   }
 
-  // ── Send checklist email — fires automatically the moment the visitor
+  // ── Send checklist email - fires automatically the moment the visitor
   // unlocks with their email; also reusable as a manual resend after they
   // update their notes. ────────────────────────────────────────────────────
   let emailToSend = '';
@@ -264,7 +264,7 @@
     on:unlock={onUnlock}
     on:restore={onRestore}
   >
-    <!-- Free teaser items — always interactive -->
+    <!-- Free teaser items - always interactive -->
     <ol class="cl-list" aria-label="First three checklist items, free">
       {#each teaser as item}
         <li class="cl-item" class:is-checked={answers[item.n].checked} style="--cat-color: {categories[item.cat].color}">
@@ -337,7 +337,7 @@
       </div>
     </div>
 
-    <!-- Book sales pitch — inside the gate card, below the email form -->
+    <!-- Book sales pitch - inside the gate card, below the email form -->
     <div slot="gate-extra" class="cl-book-sales">
       <p class="cl-book-sales-eyebrow">The book behind this checklist</p>
       <h3 class="cl-book-sales-title">Surviving the Singularity</h3>

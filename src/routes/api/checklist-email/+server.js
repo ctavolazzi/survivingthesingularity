@@ -3,7 +3,7 @@ import { sendChecklistEmail } from '$lib/server/email.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 
 // In-memory rate limit: ip -> [timestamp, ...]
-// Resets on server restart — intentional; keeps it dependency-free.
+// Resets on server restart - intentional; keeps it dependency-free.
 const rateMap = new Map();
 
 function checkRate(ip) {
@@ -40,7 +40,7 @@ function isValidEmail(str) {
 const VALID_CATS = new Set(['foundation', 'infrastructure', 'autonomy', 'network']);
 
 export async function POST({ request, url, getClientAddress }) {
-  // Origin check — reject cross-site POSTs.
+  // Origin check - reject cross-site POSTs.
   const origin = request.headers.get('origin');
   if (origin && origin !== url.origin) {
     return json({ error: 'Bad request.' }, { status: 403 });
@@ -78,7 +78,7 @@ export async function POST({ request, url, getClientAddress }) {
     return json({ error: 'Invalid data.' }, { status: 400 });
   }
 
-  // Only send to addresses already on the waitlist — the checklist page can
+  // Only send to addresses already on the waitlist - the checklist page can
   // only obtain an email through EmailGate, which inserts it there first. A
   // direct POST with a stranger's address (email-bombing that burns Resend
   // quota and sender reputation) gets the same silent fake-success as the

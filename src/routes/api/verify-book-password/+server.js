@@ -7,17 +7,17 @@ import { verifyBookPassword, BOOK_ACCESS_COOKIE } from '$lib/server/bookAccess.j
 // café) can't lock each other out; brute force is still capped.
 const RATE_LIMIT = 5;
 const RATE_WINDOW_MS = 10 * 60 * 1000;
-const COOKIE_MAX_AGE = 60 * 60 * 24 * 365; // 1 year — one-time purchase, long-lived gate
+const COOKIE_MAX_AGE = 60 * 60 * 24 * 365; // 1 year - one-time purchase, long-lived gate
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST(event) {
-  // 1. Origin check — reject cross-site POSTs (cheap CSRF mitigation).
+  // 1. Origin check - reject cross-site POSTs (cheap CSRF mitigation).
   const origin = event.request.headers.get('origin');
   if (origin && origin !== event.url.origin) {
     return json({ error: 'Bad request.' }, { status: 403 });
   }
 
-  // 2. Rate limit per client IP (failed attempts only — see note above).
+  // 2. Rate limit per client IP (failed attempts only - see note above).
   const ip = event.getClientAddress();
   const rateKey = `book-pw:${ip}`;
   const { allowed, retryAfterMs } = peekRate(rateKey, RATE_LIMIT, RATE_WINDOW_MS);

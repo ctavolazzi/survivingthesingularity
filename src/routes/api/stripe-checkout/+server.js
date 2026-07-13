@@ -41,7 +41,7 @@ export async function POST({ request, url, getClientAddress }) {
   const editionType = body.edition_type === 'authors' ? 'authors' : 'standard';
   const priceId = EDITION_PRICE_IDS[editionType];
 
-  // MOCK MODE — dev-only. Lets the UI be tested without Stripe credentials.
+  // MOCK MODE - dev-only. Lets the UI be tested without Stripe credentials.
   // In production, a missing/placeholder key must fail loudly, not fake a
   // successful checkout for a real customer.
   const isMockPrice = !priceId || priceId === 'placeholder' || priceId.startsWith('your_');

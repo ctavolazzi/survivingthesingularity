@@ -75,7 +75,7 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
 
   const body = isAuthors
     ? `${greeting} Your Author's Limited Edition preorder is confirmed. Copy #${copy_number} of 100 is reserved for you. ` +
-      `Every copy is hand-bound, signed, and numbered by the author — and no two are alike, so #${copy_number} is one of a kind. ` +
+      `Every copy is hand-bound, signed, and numbered by the author. No two are alike, so #${copy_number} is one of a kind. ` +
       `No payment is collected now. You'll hear from us before the book ships in August 2026.`
     : `${greeting} Your preorder is confirmed. You'll get first access when the book launches in August 2026, ` +
       `available here on the site and on Amazon in paperback and Kindle. No payment collected now. We'll reach out when it's ready.`;
@@ -184,7 +184,7 @@ const CAT_LABELS = {
  */
 export async function sendChecklistEmail({ to, answers }) {
   if (!resend) {
-    console.warn('[email] RESEND_API_KEY unset — skipping checklist email to', to);
+    console.warn('[email] RESEND_API_KEY unset - skipping checklist email to', to);
     return { skipped: true };
   }
 
@@ -194,11 +194,11 @@ export async function sendChecklistEmail({ to, answers }) {
   const heading =
     checkedCount === total ? `You've completed all ${total} steps.` :
     checkedCount === 0     ? 'Your Singularity Readiness Checklist' :
-                             `${checkedCount}/${total} steps checked — keep going.`;
+                             `${checkedCount}/${total} steps checked. Keep going.`;
 
   const intro = checkedCount > 0
     ? `Here's your checklist with your notes. ${total - checkedCount} step${total - checkedCount !== 1 ? 's' : ''} still to do.`
-    : 'Your full Singularity Readiness Checklist — work through these at your own pace.';
+    : 'Your full Singularity Readiness Checklist. Work through these at your own pace.';
 
   const itemsHtml = answers.map(item => {
     const color = CAT_COLORS[item.cat] ?? '#f59e0b';
@@ -280,19 +280,19 @@ export async function sendChecklistEmail({ to, answers }) {
  */
 export async function sendDownloadEmail({ to, downloadUrl, sessionId, edition_type, copy_number }) {
   if (!resend) {
-    console.warn('[email] RESEND_API_KEY unset — skipping download email to', to);
+    console.warn('[email] RESEND_API_KEY unset - skipping download email to', to);
     return { skipped: true };
   }
 
   const isAuthors = edition_type === 'authors';
   const subject = isAuthors
-    ? `Your bundle is ready — Author's Edition copy #${copy_number}`
-    : 'Your bundle is ready — preorder confirmed';
+    ? `Your bundle is ready: Author's Edition copy #${copy_number}`
+    : 'Your bundle is ready: preorder confirmed';
   const heading = isAuthors
     ? `Your download is ready. You're copy #${copy_number} of 100.`
     : "Your download is ready. You're on the list.";
   const confirmLine = isAuthors
-    ? `Your Author's Limited Edition preorder is confirmed — copy #${copy_number} of 100 is reserved for you. Hand-bound, signed, and numbered by the author, and no two copies are alike. `
+    ? `Your Author's Limited Edition preorder is confirmed: copy #${copy_number} of 100 is reserved for you. Hand-bound, signed, and numbered by the author, and no two copies are alike. `
     : 'Your preorder is confirmed. ';
   const body =
     `${confirmLine}Your spot in line is locked in at 50% off the finished book, and we will email you an exclusive link when it is ready. ` +
@@ -335,7 +335,7 @@ export async function sendDownloadEmail({ to, downloadUrl, sessionId, edition_ty
  */
 export async function sendWelcomeEmail({ to, source = 'homepage', unsubscribeToken }) {
   if (!resend) {
-    console.warn('[email] RESEND_API_KEY unset — skipping welcome email to', to);
+    console.warn('[email] RESEND_API_KEY unset - skipping welcome email to', to);
     return { skipped: true };
   }
   const baseUrl = env.PUBLIC_BASE_URL || 'https://survivingthesingularity.com';

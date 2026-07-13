@@ -17,7 +17,7 @@
 
 <svelte:head>
   <title>Surviving the Singularity. The Book.</title>
-  <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. What is the Singularity, how humans react, and how to survive the transition. Open draft — read free or get early access." />
+  <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. What is the Singularity, how humans react, and how to survive the transition. Open draft: read a free sample or preorder for $5." />
   <meta property="og:title" content="Surviving the Singularity. The Book." />
   <meta property="og:description" content="What is the Singularity. How humans react. How to survive the transition. Open draft by Christopher Tavolazzi." />
   <meta property="og:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
@@ -49,7 +49,7 @@
         <p class="eyebrow">Open Draft · v0.2 · Reader Edition</p>
         <h1 class="book-title">Surviving the<br>Singularity</h1>
         <p class="byline">By Christopher Tavolazzi</p>
-        <p class="hook">Intelligence now has a marginal cost of zero. The old systems haven't caught up yet. This book is about what to do in the gap — before the window closes.</p>
+        <p class="hook">Intelligence now has a marginal cost of zero. The old systems haven't caught up yet. This book is about what to do in the gap, before the window closes.</p>
 
         <div class="hero-ctas">
           {#if PURCHASE_URL}
@@ -82,7 +82,7 @@
           <h3 class="part-title">What is the Singularity?</h3>
           <ul class="part-list">
             <li>Why the 2017 Transformer architecture crossed the event horizon</li>
-            <li>Nine stages from narrow AI to AGI — and where we are right now</li>
+            <li>Nine stages from narrow AI to AGI, and where we are right now</li>
             <li>The thermodynamic limits that shape everything in Parts II and III</li>
             <li>Why zero-cost intelligence changes the economics of survival</li>
           </ul>
@@ -94,7 +94,7 @@
           <ul class="part-list">
             <li>The predictable behavioral patterns when disruption hits</li>
             <li>Why fear-based thinking makes the transition harder</li>
-            <li>How to shift from reaction to observer status — and why it matters</li>
+            <li>How to shift from reaction to observer status, and why it matters</li>
             <li>Why cooperation is the optimal strategy, not an ideology</li>
           </ul>
         </div>
@@ -103,7 +103,7 @@
           <span class="part-num">Part III</span>
           <h3 class="part-title">How to Survive the Transition</h3>
           <ul class="part-list">
-            <li>Local energy and food infrastructure — built before you need it</li>
+            <li>Local energy and food infrastructure, built before you need it</li>
             <li>The Shouse Grid: community-managed microgrids and local compute</li>
             <li>The new social contract: food, shelter, and care as engineering targets</li>
             <li>The 2027 tipping point and what to do on either side of it</li>

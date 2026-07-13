@@ -444,7 +444,7 @@
             <span class="timeline-period">2027+</span>
           </div>
           <p class="timeline-label">The Horizon</p>
-          <p class="timeline-desc">Median expert estimate for AGI. Not a doomsday &mdash; a horizon. The people who prepared watch the sunrise from the right side of it. The book gets you there.</p>
+          <p class="timeline-desc">Median expert estimate for AGI. Not a doomsday. A horizon. The people who prepared watch the sunrise from the right side of it. The book gets you there.</p>
         </div>
       </div>
     </div>

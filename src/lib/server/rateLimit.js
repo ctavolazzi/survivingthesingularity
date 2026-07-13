@@ -37,7 +37,7 @@ export function rateLimit(key, limit, windowMs) {
 }
 
 /**
- * Like rateLimit(), but does NOT record a hit — use with recordHit() when
+ * Like rateLimit(), but does NOT record a hit - use with recordHit() when
  * only some outcomes should count against the budget (e.g. rate-limit failed
  * password attempts without penalizing successful ones, so legitimate users
  * behind a shared IP can't lock each other out).

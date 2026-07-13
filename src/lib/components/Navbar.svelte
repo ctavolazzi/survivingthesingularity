@@ -15,13 +15,13 @@
   let lastFocused = null;
   let scrolled = false;
 
-  // Desktop nav links — minimal: the book and context
+  // Desktop nav links - minimal: the book and context
   const desktopLinks = [
     { href: '/book', label: 'The Book' },
     { href: '/blog', label: 'Blog' },
   ];
 
-  // Drawer — focused: free path and context only
+  // Drawer - focused: free path and context only
   const drawerGroups = [
     {
       label: 'Start here',
@@ -353,7 +353,7 @@
     margin: 0 4px;
   }
 
-  /* ── DESKTOP LINKS — hidden below 680px via media query ── */
+  /* ── DESKTOP LINKS - hidden below 680px via media query ── */
   .nav-links {
     display: none; /* shown at 680px+ */
     align-items: center;
@@ -373,7 +373,7 @@
   .nav-link:hover { color: #f1f5f9; background: rgba(255, 255, 255, 0.05); }
   .nav-link.active { color: #f59e0b; background: rgba(245, 158, 11, 0.1); }
 
-  /* ── CTA — always visible, even on mobile ── */
+  /* ── CTA - always visible, even on mobile ── */
   .nav-cta {
     display: flex;
     align-items: center;
@@ -403,7 +403,7 @@
   }
   .nav-cta:hover .nav-cta-icon { transform: translate(1px, -1px); }
 
-  /* ── HAMBURGER — sized to balance STS on the opposite end ── */
+  /* ── HAMBURGER - sized to balance STS on the opposite end ── */
   .hamburger {
     position: relative;
     display: inline-flex;

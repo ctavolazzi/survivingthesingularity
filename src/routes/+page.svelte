@@ -375,19 +375,43 @@
           <span class="section-label">The Stages</span>
           <h2 class="section-heading">This is already in motion.</h2>
         </div>
-        <p class="section-sub">Every stage below is documented. The question is where you'll be standing when each one hits.</p>
+        <p class="section-sub">From one research paper to a planetary buildout in under a decade. Every stage is documented. The question is where you'll stand for the next one.</p>
       </div>
       <div class="timeline-track reveal reveal-d1">
         <div class="timeline-item">
-          <div class="timeline-img" aria-hidden="true">
-            <img src="/book-images/ch03-echo-dot.webp" alt="" loading="lazy" decoding="async" />
+          <div class="timeline-img timeline-paper" aria-hidden="true">
+            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+              <rect x="0" y="0" width="320" height="200" fill="#0f172a" />
+              <rect x="70" y="18" width="180" height="230" rx="3" fill="#f1f5f9" transform="rotate(-2 160 100)" />
+              <text x="160" y="52" text-anchor="middle" class="tp-title">Attention Is All</text>
+              <text x="160" y="70" text-anchor="middle" class="tp-title">You Need</text>
+              <text x="160" y="90" text-anchor="middle" class="tp-byline">Vaswani, Shazeer, Parmar, et al.</text>
+              <text x="160" y="104" text-anchor="middle" class="tp-byline">arXiv &#183; June 2017</text>
+              <g class="tp-lines">
+                <rect x="95" y="120" width="130" height="3" rx="1.5" fill="#cbd5e1" />
+                <rect x="95" y="129" width="122" height="3" rx="1.5" fill="#cbd5e1" />
+                <rect x="95" y="138" width="127" height="3" rx="1.5" fill="#cbd5e1" />
+                <rect x="95" y="147" width="110" height="3" rx="1.5" fill="#cbd5e1" />
+              </g>
+              <g fill="none" stroke="#f59e0b" stroke-width="1.6" opacity="0.9">
+                <path d="M100,180 C120,158 160,158 180,180" />
+                <path d="M120,180 C145,152 195,152 220,180" />
+                <path d="M100,180 C135,146 190,146 220,180" opacity="0.5" />
+              </g>
+              <g fill="#f59e0b">
+                <circle cx="100" cy="181" r="3.5" />
+                <circle cx="120" cy="181" r="3.5" />
+                <circle cx="180" cy="181" r="3.5" />
+                <circle cx="220" cy="181" r="3.5" />
+              </g>
+            </svg>
           </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot past"></div>
-            <span class="timeline-period">2024</span>
+            <span class="timeline-period">2017</span>
           </div>
-          <p class="timeline-label">The Warning Signs</p>
-          <p class="timeline-desc">AI tools go mainstream. Early job cuts begin. The people paying attention start preparing. Most people ignore it.</p>
+          <p class="timeline-label">The Event Horizon</p>
+          <p class="timeline-desc">Eight researchers publish the Transformer architecture. Every modern AI descends from this one paper. Almost nobody notices. The book argues this was the point of no return.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-img" aria-hidden="true">
@@ -395,32 +419,32 @@
           </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot past"></div>
-            <span class="timeline-period">2025</span>
+            <span class="timeline-period">2018</span>
           </div>
-          <p class="timeline-label">The Threshold Crossed</p>
-          <p class="timeline-desc">AI model capabilities exceeded the average person in key areas. The intelligence gap closed. Most people missed it completely.</p>
+          <p class="timeline-label">Machines Get Creative</p>
+          <p class="timeline-desc">An AI-painted portrait sells at Christie's for $432,500. "Creativity is safe from automation" dies quietly, six years before most people hear about AI art.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-img" aria-hidden="true">
-            <img src="/book-images/ch07-pepper.webp" alt="" loading="lazy" decoding="async" />
+            <img src="/images/optimized/ch16_servers_800.webp" alt="" loading="lazy" decoding="async" />
           </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot now"></div>
-            <span class="timeline-period">2026. Now.</span>
+            <span class="timeline-period">2022&ndash;Now</span>
           </div>
-          <p class="timeline-label">Physical AI Arrives</p>
-          <p class="timeline-desc">Humanoid robots are entering workplaces. The social contract is being dismantled. Most people still think this is someone else's problem.</p>
+          <p class="timeline-label">The Breakout</p>
+          <p class="timeline-desc">ChatGPT becomes the fastest-adopted product in history. Compute becomes the largest infrastructure buildout on the planet. Humanoids enter the factories. You are here.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-img" aria-hidden="true">
-            <img src="/book-images/ch16-servers.jpg" alt="" loading="lazy" decoding="async" />
+            <img src="/images/optimized/ch19_iss_sunrise_800.webp" alt="" loading="lazy" decoding="async" />
           </div>
           <div class="timeline-dot-row">
             <div class="timeline-dot"></div>
             <span class="timeline-period">2027+</span>
           </div>
-          <p class="timeline-label">AGI Horizon</p>
-          <p class="timeline-desc">Median expert estimate for AGI. Prepared people thrive. Don't be blindsided - be ready.</p>
+          <p class="timeline-label">The Horizon</p>
+          <p class="timeline-desc">Median expert estimate for AGI. Not a doomsday &mdash; a horizon. The people who prepared watch the sunrise from the right side of it. The book gets you there.</p>
         </div>
       </div>
     </div>
@@ -1410,6 +1434,9 @@
     margin-bottom: 14px;
   }
   .timeline-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .timeline-paper svg { width: 100%; height: 100%; display: block; }
+  .tp-title { font-family: var(--font-mono); font-size: 15px; font-weight: 700; fill: #0f172a; }
+  .tp-byline { font-family: var(--font-mono); font-size: 8.5px; fill: #64748b; }
 
   /* VIDEO HEADER */
   .video-header { margin-bottom: clamp(24px, 4vw, 40px); }

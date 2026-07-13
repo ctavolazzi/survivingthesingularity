@@ -58,7 +58,13 @@ export async function POST(event) {
 
   if (error) {
     console.error('[discord-application] insert error:', error.message);
-    return json({ error: 'Something went wrong. Try again.' }, { status: 500 });
+    // PGRST205: the discord_applications table itself is missing (migration
+    // never run against this Supabase project). Retrying won't help, so say
+    // so plainly instead of implying a transient failure.
+    const message = error.code === 'PGRST205'
+      ? "This form isn't wired up yet. Email info@survivingthesingularity.com and we'll get you sorted."
+      : 'Something went wrong. Try again.';
+    return json({ error: message }, { status: 503 });
   }
 
   // Notifications: applicant confirmation + admin alert. Not gating the

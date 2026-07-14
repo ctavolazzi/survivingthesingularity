@@ -2,12 +2,9 @@
     import { onMount } from 'svelte';
     import { fade } from 'svelte/transition';
     import { browser } from '$app/environment';
-    import Spacer from '$lib/components/Spacer.svelte';
-    import SimpleBookCallout from '$lib/components/SimpleBookCallout.svelte';
     import { page } from '$app/stores';
     import { BOOK_ACCESS_PASSWORD, BOOK_ACCESS_STORAGE_KEY } from '$lib/bookAccessCode.js';
 
-    let showLowerSections = false;
     let password = '';
     let formError = '';
     // Client-only gate: no server round trip, no env var to misconfigure.
@@ -24,9 +21,6 @@
             unlocked = true;
         }
         checkedStorage = true;
-        setTimeout(() => {
-            showLowerSections = true;
-        }, 1000);
     });
 
     function submitPassword() {
@@ -41,12 +35,7 @@
     }
 </script>
 
-{#if isBookRoot}
-  <!-- /book itself is the public marketing + table-of-contents page - never
-       gated, so nav/footer/email links to it always work for every visitor.
-       Only the actual chapter text (/book/[sectionId]) is behind the code. -->
-  <slot />
-{:else if !checkedStorage}
+{#if !checkedStorage}
   <!-- Avoid a flash of the gate for already-unlocked returning visitors -->
 {:else if !unlocked}
   <main class="gate-main">
@@ -68,23 +57,17 @@
       <p class="gate-hint">Don't have a password yet? Click "Get Early Access" above to get your code.</p>
     </form>
   </main>
+{:else if isBookRoot}
+  <!-- /book (unlocked): the reader's own layout - preface + table of
+       contents, no wrapper needed. -->
+  <slot />
 {:else}
-  <!-- Section sub-pages (/book/[sectionId]) need the prose reader layout -->
+  <!-- Chapter pages (/book/[sectionId]) get the prose reader layout -->
   <main class="bg-gray-950 text-gray-100 reader-main">
     <div class="reader-container" in:fade="{{ duration: 500 }}">
       <div class="prose prose-lg dark:prose-invert reader-prose">
         <slot />
       </div>
-
-      {#if showLowerSections}
-        <Spacer height="48px" />
-        <SimpleBookCallout
-          title="Navigate the Path to Singularity"
-          description="Get the insights and strategies you need to prepare for the technological changes that will reshape our world."
-          buttonText="Explore the Book"
-          buttonLink="/book"
-        />
-      {/if}
     </div>
   </main>
 {/if}

@@ -1,26 +1,30 @@
 <script>
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
-  import AuthorBio from '$lib/components/AuthorBio.svelte';
-
-  // Set by LAUNCH.sh when the Gumroad product is ready. Empty = no buy button shown.
-  const PURCHASE_URL = '';
-
-  export let data;
+  import { sectionsWithMeta } from '$lib/bookContent';
+  import { bookPage } from '$lib/stores/bookPage';
 
   let visible = false;
+  let lastVisitedId = null;
+
   onMount(() => {
     visible = true;
     window.scrollTo({ top: 0, behavior: 'instant' });
+    const unsubscribe = bookPage.subscribe(state => {
+      lastVisitedId = state.lastVisitedSectionId;
+    });
+    return unsubscribe;
   });
+
+  $: lastVisitedSection = sectionsWithMeta.find(s => s.id === lastVisitedId) ?? null;
 
   // Group the flat section list into Front Matter / Part I / II / III / Back
   // Matter for the table of contents, using the "part-N" divider entries
   // already in book.json as the group boundaries.
-  $: tocGroups = (() => {
+  const tocGroups = (() => {
     const groups = [];
     let current = { label: 'Front Matter', items: [] };
-    for (const section of data.book.sections) {
+    for (const section of sectionsWithMeta) {
       if (section.id.startsWith('part-')) {
         if (current.items.length) groups.push(current);
         current = { label: section.title, items: [] };
@@ -31,170 +35,64 @@
     if (current.items.length) groups.push(current);
     return groups;
   })();
+
+  const totalReadMinutes = sectionsWithMeta.reduce((sum, s) => sum + s.readMinutes, 0);
 </script>
 
 <svelte:head>
-  <title>Surviving the Singularity. The Book.</title>
-  <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. What is the Singularity, how humans react, and how to survive the transition. Open draft: read a free sample or preorder for $5." />
-  <meta property="og:title" content="Surviving the Singularity. The Book." />
-  <meta property="og:description" content="What is the Singularity. How humans react. How to survive the transition. Open draft by Christopher Tavolazzi." />
-  <meta property="og:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
-  <meta property="og:url" content="https://survivingthesingularity.com/book" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <title>Read the Book | Surviving the Singularity</title>
+  <meta name="description" content="The full current draft of Surviving the Singularity, navigable chapter by chapter." />
+  <meta name="robots" content="noindex" />
 </svelte:head>
 
 <div class="book-page">
 {#if visible}
 
-  <!-- ── HERO ── -->
-  <section class="hero" in:fade={{ duration: 400 }}>
-    <div class="hero-inner">
-
-      <div class="cover-wrap">
-        <picture>
-          <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
-          <img
-            src="/images/surviving_the_singularity_cover_1200.png"
-            alt="Surviving the Singularity book cover"
-            class="cover-img"
-            width="600"
-            height="800"
-          />
-        </picture>
-      </div>
-
-      <div class="hero-copy">
-        <p class="eyebrow">Open Draft · v0.2 · Reader Edition</p>
-        <h1 class="book-title">Surviving the<br>Singularity</h1>
-        <p class="byline">By Christopher Tavolazzi</p>
-        <p class="hook">Intelligence now has a marginal cost of zero. The old systems haven't caught up yet. This book is about what to do in the gap, before the window closes.</p>
-
-        <div class="hero-ctas">
-          {#if PURCHASE_URL}
-            <a href={PURCHASE_URL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy the Book</a>
-          {:else}
-            <a href="/early-access" class="btn-primary">Preorder the Book: $5</a>
-          {/if}
-          <a href="/StS-free-sample.pdf" class="btn-ghost" target="_blank" rel="noopener noreferrer">Read a free sample</a>
-        </div>
-
-        <p class="disclaimer-note">
-          For informational purposes only. Not financial, legal, or professional advice.
-          <a href="/disclaimer">Full disclaimer.</a>
-        </p>
-      </div>
-
+  <!-- ── PREFACE ── -->
+  <section class="preface" in:fade={{ duration: 400 }}>
+    <div class="inner-narrow">
+      <p class="eyebrow">Surviving the Singularity</p>
+      <p class="preface-text">
+        A practical field guide for staying agentic as AI rewrites work, money, medicine, and
+        meaning. Written in public, updated as it's finished. What follows is the complete
+        current draft: every chapter, in order, free to read for as long as you have this page.
+      </p>
+      <p class="preface-meta">{sectionsWithMeta.length} sections &middot; ~{Math.round(totalReadMinutes / 60 * 10) / 10} hours total</p>
     </div>
   </section>
 
-  <!-- ── WHAT'S INSIDE ── -->
-  <section class="section">
-    <div class="inner">
-      <p class="label">What's Inside</p>
-      <h2 class="heading">Three parts. Everything you need to navigate what's coming.</h2>
-
-      <div class="parts-grid">
-
-        <div class="part part-1">
-          <span class="part-num">Part I</span>
-          <h3 class="part-title">What is the Singularity?</h3>
-          <ul class="part-list">
-            <li>Why the 2017 Transformer architecture crossed the event horizon</li>
-            <li>Nine stages from narrow AI to AGI, and where we are right now</li>
-            <li>The thermodynamic limits that shape everything in Parts II and III</li>
-            <li>Why zero-cost intelligence changes the economics of survival</li>
-          </ul>
-        </div>
-
-        <div class="part part-2">
-          <span class="part-num">Part II</span>
-          <h3 class="part-title">How Humans React</h3>
-          <ul class="part-list">
-            <li>The predictable behavioral patterns when disruption hits</li>
-            <li>Why fear-based thinking makes the transition harder</li>
-            <li>How to shift from reaction to observer status, and why it matters</li>
-            <li>Why cooperation is the optimal strategy, not an ideology</li>
-          </ul>
-        </div>
-
-        <div class="part part-3">
-          <span class="part-num">Part III</span>
-          <h3 class="part-title">How to Survive the Transition</h3>
-          <ul class="part-list">
-            <li>Local energy and food infrastructure, built before you need it</li>
-            <li>The Shouse Grid: community-managed microgrids and local compute</li>
-            <li>The new social contract: food, shelter, and care as engineering targets</li>
-            <li>The 2027 tipping point and what to do on either side of it</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  {#if lastVisitedSection}
+    <section class="continue">
+      <a href="/book/{lastVisitedSection.id}" class="continue-card">
+        <span class="continue-label">Continue reading</span>
+        <span class="continue-title">{lastVisitedSection.title}</span>
+        <span class="continue-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </section>
+  {/if}
 
   <!-- ── TABLE OF CONTENTS ── -->
-  <section class="section toc-section">
+  <section class="toc-section">
     <div class="inner">
-      <p class="label">Read the Book</p>
-      <h2 class="heading">The full draft. Every chapter, right now.</h2>
-      <p class="subhead toc-subhead">28 sections, three parts, the whole current draft. Click any chapter to read it - you'll need the password from your preorder confirmation email.</p>
-
-      <div class="toc-groups">
-        {#each tocGroups as group}
-          <div class="toc-group">
-            <p class="toc-group-label">{group.label}</p>
-            <ul class="toc-list">
-              {#each group.items as section}
-                <li>
-                  <a href="/book/{section.id}" class="toc-item">
-                    <span class="toc-item-title">{section.title}</span>
+      {#each tocGroups as group}
+        <div class="toc-group">
+          <p class="toc-group-label">{group.label}</p>
+          <ul class="toc-list">
+            {#each group.items as section}
+              <li>
+                <a href="/book/{section.id}" class="toc-item" class:is-current={section.id === lastVisitedId}>
+                  <span class="toc-item-title">{section.title}</span>
+                  <span class="toc-item-meta">
+                    {#if section.id === lastVisitedId}<span class="toc-item-badge">Last read</span>{/if}
+                    <span class="toc-item-time">{section.readMinutes} min</span>
                     <span class="toc-item-arrow" aria-hidden="true">&rarr;</span>
-                  </a>
-                </li>
-              {/each}
-            </ul>
-          </div>
-        {/each}
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PREORDER ── -->
-  <section class="section section-alt section-center">
-    <div class="inner inner-narrow">
-      <p class="label">Preorder</p>
-      <h2 class="heading">Get the book for $5.</h2>
-      <p class="subhead">Preorder now and get the current draft and the research bundle in your inbox today, plus an exclusive link to buy the finished book at 50% off when it launches on Amazon in August 2026.</p>
-      <a href="/early-access" class="btn-primary">Preorder the Book: $5</a>
-      <p class="fine-print">One-time payment · Secured by Stripe</p>
-    </div>
-  </section>
-
-  <!-- ── FREE SAMPLE ── -->
-  <section class="section section-center">
-    <div class="inner inner-narrow">
-      <p class="label">Not sure yet?</p>
-      <h2 class="heading">Read the first chapter free.</h2>
-      <p class="subhead">Introduction plus Chapter 1. No signup. No email. About 10 minutes.</p>
-      <a href="/StS-free-sample.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">Download the free sample</a>
-      <p class="fine-print">PDF · No paywall · No strings</p>
-    </div>
-  </section>
-
-  <!-- ── AUTHOR ── -->
-  <section class="section section-alt">
-    <div class="inner">
-      <AuthorBio />
-    </div>
-  </section>
-
-  <!-- ── SUBSCRIBE ── -->
-  <section class="section section-center">
-    <div class="inner inner-narrow">
-      <p class="label">Stay in the loop</p>
-      <h2 class="heading">Get the next chapter when it ships.</h2>
-      <p class="subhead">Published on Substack. Subscribe once, get everything. Free tier covers all chapters and launch alerts.</p>
-      <a href="https://thecoffeejesus.substack.com" class="btn-primary" target="_blank" rel="noopener noreferrer">Subscribe on Substack</a>
+                  </span>
+                </a>
+              </li>
+            {/each}
+          </ul>
+        </div>
+      {/each}
     </div>
   </section>
 
@@ -207,7 +105,6 @@
     font-family: 'Outfit', system-ui, sans-serif;
     --amber:      #f59e0b;
     --amber-dim:  rgba(245,158,11,0.08);
-    --amber-glow: rgba(245,158,11,0.28);
     --surface:    #0f172a;
     --border:     rgba(255,255,255,0.07);
     --border-mid: rgba(255,255,255,0.11);
@@ -215,81 +112,87 @@
     --text-2:     #cbd5e1;
     --text-3:     #64748b;
     --mono:       'JetBrains Mono', monospace;
-    --ease-spring: cubic-bezier(0.34,1.56,0.64,1);
   }
 
-  /* ── LAYOUT PRIMITIVES ── */
-  .section {
-    padding: clamp(48px, 8vw, 88px) clamp(20px, 5vw, 48px);
-    border-top: 1px solid var(--border);
-  }
-  .section-alt {
-    background: rgba(15,23,42,0.4);
-  }
-  .section-center {
-    text-align: center;
+  .inner-narrow {
+    max-width: 640px;
+    margin: 0 auto;
   }
   .inner {
     max-width: 860px;
     margin: 0 auto;
   }
-  .inner-narrow {
-    max-width: 560px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
 
-  /* ── TYPE SCALE ── */
-  .label {
+  /* ── PREFACE ── */
+  .preface {
+    padding: clamp(48px, 8vw, 80px) clamp(20px, 5vw, 48px) clamp(32px, 5vw, 48px);
+    text-align: center;
+  }
+  .eyebrow {
     font-family: var(--mono);
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.16em;
     color: var(--amber);
-    margin: 0 0 0.6rem;
-    display: block;
+    margin: 0 0 1rem;
   }
-  .heading {
-    font-size: clamp(1.6rem, 4.5vw, 2.4rem);
-    font-weight: 900;
-    color: var(--text-1);
-    margin: 0 0 0.6rem;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-  }
-  .subhead {
-    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  .preface-text {
+    font-size: clamp(1.05rem, 2.4vw, 1.25rem);
     color: var(--text-2);
-    line-height: 1.65;
-    margin: 0 0 2rem;
-    max-width: 56ch;
+    line-height: 1.7;
+    margin: 0 0 1rem;
   }
-  .section-center .subhead {
-    margin-left: auto;
-    margin-right: auto;
+  .preface-meta {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--text-3);
+    margin: 0;
   }
-  .eyebrow {
+
+  /* ── CONTINUE READING ── */
+  .continue {
+    padding: 0 clamp(20px, 5vw, 48px);
+    max-width: 860px;
+    margin: 0 auto clamp(24px, 4vw, 40px);
+  }
+  .continue-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.4rem;
+    background: rgba(245,158,11,0.06);
+    border: 1px solid rgba(245,158,11,0.3);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .continue-card:hover {
+    background: rgba(245,158,11,0.1);
+    border-color: rgba(245,158,11,0.5);
+  }
+  .continue-label {
     font-family: var(--mono);
     font-size: 0.7rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: var(--text-3);
-    margin: 0 0 0.6rem;
+    letter-spacing: 0.08em;
+    color: var(--amber);
+    flex-shrink: 0;
   }
+  .continue-title {
+    flex: 1;
+    color: var(--text-1);
+    font-weight: 700;
+    font-size: 0.98rem;
+  }
+  .continue-arrow { color: var(--amber); flex-shrink: 0; }
+
   /* ── TABLE OF CONTENTS ── */
-  .toc-section { border-top: 1px solid var(--border); }
-  .toc-subhead { max-width: 68ch; }
-  .toc-groups {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-    text-align: left;
+  .toc-section {
+    padding: 0 clamp(20px, 5vw, 48px) clamp(64px, 9vw, 100px);
   }
+  .toc-group { margin-bottom: 2rem; }
   .toc-group-label {
     font-family: var(--mono);
     font-size: 0.72rem;
@@ -312,213 +215,54 @@
     align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
-    padding: 0.65rem 0.85rem;
+    padding: 0.75rem 1rem;
     border-radius: 8px;
     border: 1px solid transparent;
+    background: rgba(255,255,255,0.015);
     text-decoration: none;
     color: var(--text-2);
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     line-height: 1.4;
     transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
   }
-  .toc-item:hover {
+  .toc-item:hover,
+  .toc-item.is-current {
     color: var(--text-1);
     background: rgba(245,158,11,0.06);
     border-color: rgba(245,158,11,0.25);
+  }
+  .toc-item-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+  }
+  .toc-item-badge {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #0f172a;
+    background: var(--amber);
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+  }
+  .toc-item-time {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--text-3);
+    white-space: nowrap;
   }
   .toc-item-arrow {
     opacity: 0;
     transform: translateX(-4px);
     color: var(--amber);
     transition: opacity 0.15s ease, transform 0.15s ease;
-    flex-shrink: 0;
   }
   .toc-item:hover .toc-item-arrow { opacity: 1; transform: translateX(0); }
 
-  .fine-print {
-    font-size: 0.78rem;
-    color: var(--text-3);
-    margin: 0.25rem 0 0;
-  }
-
-  /* ── BUTTONS ── */
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.85rem 1.75rem;
-    background: var(--amber);
-    color: #0f172a;
-    font-weight: 800;
-    font-size: 0.95rem;
-    text-decoration: none;
-    border: none;
-    border-radius: 999px;
-    box-shadow: 0 4px 20px var(--amber-glow);
-    transition: filter 0.2s ease, transform 0.2s var(--ease-spring), box-shadow 0.2s ease;
-    white-space: nowrap;
-    font-family: inherit;
-    cursor: pointer;
-  }
-  .btn-primary:hover { filter: brightness(1.08); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(245,158,11,0.42); }
-  .btn-primary:active { transform: scale(0.97); }
-
-  .btn-ghost {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.85rem 1.75rem;
-    background: transparent;
-    color: var(--text-2);
-    font-weight: 700;
-    font-size: 0.95rem;
-    text-decoration: none;
-    border: 1px solid var(--border-mid);
-    border-radius: 999px;
-    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-    white-space: nowrap;
-    font-family: inherit;
-    cursor: pointer;
-  }
-  .btn-ghost:hover { color: var(--text-1); border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.04); }
-
-  /* ── HERO ── */
-  .hero {
-    padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 48px) clamp(48px, 7vw, 80px);
-    background: linear-gradient(160deg, rgba(245,158,11,0.06) 0%, transparent 55%);
-  }
-  .hero-inner {
-    max-width: 960px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: clamp(28px, 5vw, 64px);
-    align-items: center;
-  }
   @media (max-width: 640px) {
-    .hero-inner {
-      grid-template-columns: 1fr;
-    }
-    .cover-wrap {
-      display: flex;
-      justify-content: center;
-    }
+    .toc-item-badge { display: none; }
   }
-  .cover-img {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 28px 60px rgba(0,0,0,0.65), 0 0 0 1px rgba(245,158,11,0.1);
-  }
-  .hero-copy {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .book-title {
-    font-size: clamp(2rem, 6vw, 3.2rem);
-    font-weight: 900;
-    color: var(--text-1);
-    margin: 0 0 0.3rem;
-    letter-spacing: -0.035em;
-    line-height: 1.05;
-  }
-  .byline {
-    font-size: 0.9rem;
-    color: var(--text-3);
-    margin: 0 0 1.2rem;
-    font-family: var(--mono);
-  }
-  .hook {
-    font-size: clamp(0.95rem, 2.2vw, 1.1rem);
-    color: var(--text-2);
-    line-height: 1.65;
-    margin: 0 0 1.6rem;
-    max-width: 52ch;
-  }
-  .hero-ctas {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-  .disclaimer-note {
-    font-size: 0.78rem;
-    color: var(--text-3);
-    margin: 0;
-    line-height: 1.5;
-  }
-  .disclaimer-note a {
-    color: var(--text-2);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .disclaimer-note a:hover { color: var(--amber); }
-
-  /* ── PARTS GRID ── */
-  .parts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  @media (max-width: 680px) {
-    .parts-grid { grid-template-columns: 1fr; }
-  }
-  .part {
-    padding: 1.4rem;
-    border: 1px solid var(--border);
-    border-top: 3px solid var(--border-mid);
-    border-radius: 14px;
-  }
-  .part-1 { border-top-color: var(--amber); }
-  .part-2 { border-top-color: #3b82f6; }
-  .part-3 { border-top-color: #10b981; }
-  .part-num {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--text-3);
-    display: block;
-    margin-bottom: 0.4rem;
-  }
-  .part-title {
-    font-size: 0.98rem;
-    font-weight: 800;
-    color: var(--text-1);
-    margin: 0 0 0.75rem;
-    line-height: 1.25;
-  }
-  .part-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
-  }
-  .part-list li {
-    font-size: 0.85rem;
-    color: var(--text-2);
-    line-height: 1.5;
-    padding-left: 1.1rem;
-    position: relative;
-  }
-  .part-list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.55em;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--text-3);
-  }
-  .part-1 .part-list li::before { background: var(--amber); }
-  .part-2 .part-list li::before { background: #60a5fa; }
-  .part-3 .part-list li::before { background: #34d399; }
-
 </style>

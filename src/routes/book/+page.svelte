@@ -13,6 +13,24 @@
     visible = true;
     window.scrollTo({ top: 0, behavior: 'instant' });
   });
+
+  // Group the flat section list into Front Matter / Part I / II / III / Back
+  // Matter for the table of contents, using the "part-N" divider entries
+  // already in book.json as the group boundaries.
+  $: tocGroups = (() => {
+    const groups = [];
+    let current = { label: 'Front Matter', items: [] };
+    for (const section of data.book.sections) {
+      if (section.id.startsWith('part-')) {
+        if (current.items.length) groups.push(current);
+        current = { label: section.title, items: [] };
+      } else {
+        current.items.push(section);
+      }
+    }
+    if (current.items.length) groups.push(current);
+    return groups;
+  })();
 </script>
 
 <svelte:head>
@@ -110,6 +128,33 @@
           </ul>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TABLE OF CONTENTS ── -->
+  <section class="section toc-section">
+    <div class="inner">
+      <p class="label">Read the Book</p>
+      <h2 class="heading">The full draft. Every chapter, right now.</h2>
+      <p class="subhead toc-subhead">28 sections, three parts, the whole current draft. Click any chapter to read it - you'll need the password from your preorder confirmation email.</p>
+
+      <div class="toc-groups">
+        {#each tocGroups as group}
+          <div class="toc-group">
+            <p class="toc-group-label">{group.label}</p>
+            <ul class="toc-list">
+              {#each group.items as section}
+                <li>
+                  <a href="/book/{section.id}" class="toc-item">
+                    <span class="toc-item-title">{section.title}</span>
+                    <span class="toc-item-arrow" aria-hidden="true">&rarr;</span>
+                  </a>
+                </li>
+              {/each}
+            </ul>
+          </div>
+        {/each}
       </div>
     </div>
   </section>
@@ -235,6 +280,61 @@
     color: var(--text-3);
     margin: 0 0 0.6rem;
   }
+  /* ── TABLE OF CONTENTS ── */
+  .toc-section { border-top: 1px solid var(--border); }
+  .toc-subhead { max-width: 68ch; }
+  .toc-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  .toc-group-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--amber);
+    margin: 0 0 0.85rem;
+  }
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .toc-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.65rem 0.85rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: var(--text-2);
+    font-size: 0.92rem;
+    line-height: 1.4;
+    transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .toc-item:hover {
+    color: var(--text-1);
+    background: rgba(245,158,11,0.06);
+    border-color: rgba(245,158,11,0.25);
+  }
+  .toc-item-arrow {
+    opacity: 0;
+    transform: translateX(-4px);
+    color: var(--amber);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    flex-shrink: 0;
+  }
+  .toc-item:hover .toc-item-arrow { opacity: 1; transform: translateX(0); }
+
   .fine-print {
     font-size: 0.78rem;
     color: var(--text-3);

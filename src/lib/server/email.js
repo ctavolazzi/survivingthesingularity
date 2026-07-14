@@ -1,5 +1,6 @@
 import { env } from '$env/dynamic/private';
 import { Resend } from 'resend';
+import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 
 // Dynamic env so a missing key never breaks the build. If RESEND_API_KEY is
 // unset, every send becomes a logged no-op and signups still succeed.
@@ -337,7 +338,7 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">
         Full book: current draft <a href="https://survivingthesingularity.com/book" style="color:#f59e0b;">survivingthesingularity.com/book</a>
       </p>
-      ${env.BOOK_ACCESS_PASSWORD ? `<p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(env.BOOK_ACCESS_PASSWORD)}</strong></p>` : ''}
+      <p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(BOOK_ACCESS_PASSWORD)}</strong></p>
     </div>
     <p style="font-size:11px;color:#334155;margin:36px 0 0;">Order ref: ${sessionId.slice(0, 24)}... · survivingthesingularity.com · Reply to this email for support.</p>
   </div></body></html>`;

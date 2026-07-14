@@ -1,52 +1,54 @@
 <script>
     import { onMount } from 'svelte';
     import { fade } from 'svelte/transition';
-    import { invalidateAll } from '$app/navigation';
+    import { browser } from '$app/environment';
     import Spacer from '$lib/components/Spacer.svelte';
     import SimpleBookCallout from '$lib/components/SimpleBookCallout.svelte';
     import { page } from '$app/stores';
-
-    export let data;
+    import { BOOK_ACCESS_PASSWORD, BOOK_ACCESS_STORAGE_KEY } from '$lib/bookAccessCode.js';
 
     let showLowerSections = false;
     let password = '';
-    let submitting = false;
     let formError = '';
+    // Client-only gate: no server round trip, no env var to misconfigure.
+    // Starts locked; onMount checks localStorage before first paint would be
+    // ideal, but this keeps SSR simple since the whole point is the check
+    // never touches the server.
+    let unlocked = false;
+    let checkedStorage = false;
 
     $: isBookRoot = $page.url.pathname === '/book';
 
     onMount(() => {
+        if (browser && localStorage.getItem(BOOK_ACCESS_STORAGE_KEY) === '1') {
+            unlocked = true;
+        }
+        checkedStorage = true;
         setTimeout(() => {
             showLowerSections = true;
         }, 1000);
     });
 
-    async function submitPassword() {
-        if (submitting) return;
-        submitting = true;
+    function submitPassword() {
         formError = '';
-        try {
-            const res = await fetch('/api/verify-book-password', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ password })
-            });
-            const body = await res.json().catch(() => ({}));
-            if (!res.ok) {
-                formError = body.error || 'Incorrect password.';
-                return;
-            }
+        if (password === BOOK_ACCESS_PASSWORD) {
+            if (browser) localStorage.setItem(BOOK_ACCESS_STORAGE_KEY, '1');
+            unlocked = true;
             password = '';
-            await invalidateAll();
-        } catch {
-            formError = 'Something went wrong. Try again.';
-        } finally {
-            submitting = false;
+        } else {
+            formError = 'Incorrect password.';
         }
     }
 </script>
 
-{#if !data.unlocked}
+{#if isBookRoot}
+  <!-- /book itself is the public marketing + table-of-contents page - never
+       gated, so nav/footer/email links to it always work for every visitor.
+       Only the actual chapter text (/book/[sectionId]) is behind the code. -->
+  <slot />
+{:else if !checkedStorage}
+  <!-- Avoid a flash of the gate for already-unlocked returning visitors -->
+{:else if !unlocked}
   <main class="gate-main">
     <form class="gate-form" on:submit|preventDefault={submitPassword}>
       <p class="gate-eyebrow">Surviving the Singularity</p>
@@ -58,18 +60,14 @@
         placeholder="Password"
         autocomplete="off"
         class="gate-input"
-        disabled={submitting}
       />
       {#if formError}<p class="gate-error">{formError}</p>{/if}
-      <button type="submit" class="gate-submit" disabled={submitting || !password}>
-        {submitting ? 'Checking…' : 'Unlock'}
+      <button type="submit" class="gate-submit" disabled={!password}>
+        Unlock
       </button>
       <p class="gate-hint">Don't have a password yet? Click "Get Early Access" above to get your code.</p>
     </form>
   </main>
-{:else if isBookRoot}
-  <!-- Main /book page has its own full-width layout - no wrapper needed -->
-  <slot />
 {:else}
   <!-- Section sub-pages (/book/[sectionId]) need the prose reader layout -->
   <main class="bg-gray-950 text-gray-100 reader-main">

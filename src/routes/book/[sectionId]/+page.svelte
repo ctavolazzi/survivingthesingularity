@@ -62,7 +62,7 @@
   <!-- Top link -->
   <div class="mt-4 mb-4 text-center">
     <a href="/book" class="toc-link">
-      Back to Table of Contents
+      &larr; Table of Contents
     </a>
   </div>
 
@@ -74,7 +74,7 @@
     </div>
   </div>
 
-  <article class="prose prose-lg dark:prose-invert">
+  <article class="prose prose-lg dark:prose-invert chapter-article">
     {@html content}
   </article>
 
@@ -84,7 +84,7 @@
   <!-- Bottom link -->
   <div class="mt-8 mb-4 text-center">
     <a href="/book" class="toc-link">
-      Back to Table of Contents
+      &larr; Table of Contents
     </a>
   </div>
 
@@ -96,149 +96,8 @@
 </div>
 
 <style>
-  :global(.prose) {
-    max-width: 100%; /* Override Tailwind's max-width */
-  }
-
-  :global(.prose h1) {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: #f59e0b;
-    font-size: 2.25rem; /* Equivalent to text-4xl */
-    line-height: 1.2;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    text-align: left; /* Add this line to ensure left justification */
-  }
-
-  :global(.prose h2),
-  :global(.prose h3),
-  :global(.prose h4),
-  :global(.prose h5),
-  :global(.prose h6) {
-    text-align: left; /* Add this block to ensure all heading levels are left-justified */
-  }
-
-  :global(.prose p) {
-    color: #333; /* Dark gray for better contrast */
-    text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.5);
-    text-align: left; /* Add this line to ensure left justification */
-  }
-
-  :global(.dark .prose h1) {
-    color: #fbbf24;
-    text-align: left; /* Add this line to ensure left justification in dark mode */
-  }
-
-  :global(.dark .prose h2),
-  :global(.dark .prose h3),
-  :global(.dark .prose h4),
-  :global(.dark .prose h5),
-  :global(.dark .prose h6) {
-    text-align: left; /* Add this block to ensure all heading levels are left-justified in dark mode */
-  }
-
-  :global(.dark .prose p) {
-    color: #e0e0e0; /* Light gray for dark mode */
-    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);
-    text-align: left; /* Add this line to ensure left justification in dark mode */
-  }
-
-  @media (max-width: 640px) {
-    :global(.prose h1) {
-      font-size: 1.875rem; /* Equivalent to text-3xl */
-    }
-  }
-
-  :global(.prose a) {
-    color: #f59e0b;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  :global(.prose a:hover) {
-    color: #fbbf24;
-    text-decoration: underline;
-  }
-
-  :global(.dark .prose a) {
-    color: #fbbf24;
-  }
-
-  :global(.dark .prose a:hover) {
-    color: #fcd34d;
-  }
-
-  :global(.prose a[href="/book"]) {
-    color: white;
-    text-decoration: none;
-  }
-
-  :global(.prose a[href="/book"]:hover) {
-    text-decoration: none;
-  }
-
-  :global(.dark .prose a[href="/book"]) {
-    color: #1a202c;
-  }
-
-  :global(.dark .prose a[href="/book"]:hover) {
-    color: #2d3748;
-  }
-
-  :global(a[href="/book"]) {
-    text-decoration: none;
-  }
-
-  :global(a[href="/book"]:hover) {
-    text-decoration: underline;
-  }
-
-  :global(.dark a[href="/book"]) {
-    color: #fbbf24;
-  }
-
-  :global(.dark a[href="/book"]:hover) {
-    color: #fcd34d;
-  }
-
-  .toc-link {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #f59e0b;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .toc-link:hover {
-    color: #fbbf24;
-    background-color: rgba(245, 158, 11, 0.1);
-  }
-
-  .icon {
-    margin-right: 0.5rem;
-    font-size: 1.5rem;
-  }
-
-  :global(.dark) .toc-link {
-    color: #fbbf24;
-  }
-
-  :global(.dark) .toc-link:hover {
-    color: #fcd34d;
-    background-color: rgba(251, 191, 36, 0.1);
-  }
-
   .content-wrapper {
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 0 1rem;
   }
@@ -247,5 +106,158 @@
     .content-wrapper {
       max-width: 100%;
     }
+  }
+
+  .toc-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .toc-link:hover {
+    color: #f59e0b;
+    background-color: rgba(245, 158, 11, 0.08);
+  }
+
+  /* ── CHAPTER TYPOGRAPHY ── */
+  :global(.chapter-article) {
+    max-width: 100%;
+    color: #cbd5e1;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  /* Chapter title - the article's own H1 */
+  :global(.chapter-article h1) {
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    color: #f8fafc;
+    font-weight: 900;
+    font-size: clamp(1.9rem, 5vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.5rem;
+    text-align: left;
+  }
+
+  /* Chapter header image - first image, right after the H1 */
+  :global(.chapter-article img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 0 0 2rem;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(245,158,11,0.1);
+  }
+
+  /* Epigraph - the first blockquote, always right after the header image */
+  :global(.chapter-article blockquote:first-of-type) {
+    position: relative;
+    margin: 0 0 2.5rem;
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    border-left: 3px solid #f59e0b;
+    font-style: italic;
+  }
+  :global(.chapter-article blockquote:first-of-type p) {
+    color: #f1f5f9;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0 0 0.6rem;
+    text-shadow: none;
+  }
+  :global(.chapter-article blockquote:first-of-type p:last-child) {
+    font-style: normal;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f59e0b;
+    margin: 0;
+  }
+
+  /* Any other in-body blockquote (callouts, pull-quotes) */
+  :global(.chapter-article blockquote:not(:first-of-type)) {
+    margin: 2rem 0;
+    padding: 1.1rem 1.5rem;
+    background: rgba(245,158,11,0.05);
+    border-left: 3px solid rgba(245,158,11,0.5);
+    border-radius: 0 10px 10px 0;
+  }
+  :global(.chapter-article blockquote:not(:first-of-type) p) {
+    color: #e2e8f0;
+    font-style: italic;
+    margin: 0;
+    text-shadow: none;
+  }
+
+  :global(.chapter-article h2) {
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    color: #fbbf24;
+    font-weight: 800;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 2.75rem 0 1rem;
+    text-align: left;
+  }
+
+  :global(.chapter-article h3) {
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    color: #f1f5f9;
+    font-weight: 700;
+    font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+    line-height: 1.3;
+    margin: 2rem 0 0.85rem;
+    text-align: left;
+  }
+
+  :global(.chapter-article p) {
+    color: #cbd5e1;
+    text-shadow: none;
+    text-align: left;
+    margin: 0 0 1.3rem;
+  }
+
+  :global(.chapter-article ul),
+  :global(.chapter-article ol) {
+    margin: 0 0 1.3rem;
+    padding-left: 1.4rem;
+    color: #cbd5e1;
+  }
+  :global(.chapter-article li) {
+    margin-bottom: 0.5rem;
+    line-height: 1.65;
+  }
+
+  :global(.chapter-article hr) {
+    border: 0;
+    border-top: 1px solid rgba(148,163,184,0.15);
+    margin: 2.5rem 0;
+  }
+
+  :global(.chapter-article strong) { color: #f8fafc; }
+
+  :global(.chapter-article a) {
+    color: #f59e0b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+  }
+  :global(.chapter-article a:hover) { color: #fbbf24; }
+
+  @media (max-width: 640px) {
+    :global(.chapter-article) { font-size: 1rem; }
   }
 </style>

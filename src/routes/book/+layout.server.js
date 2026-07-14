@@ -1,11 +1,6 @@
-import { BOOK_ACCESS_COOKIE } from '$lib/server/bookAccess.js';
-
-// Password-gated route: must run per-request (cookie check), so it cannot
-// be baked to static HTML at build time. Overrides the site-wide
-// prerender=true from the root layout for everything under /book.
+// The password gate is now a pure client-side check (see +layout.svelte and
+// $lib/bookAccessCode.js) - no server env var to misconfigure across
+// environments. This file now only keeps the prerender override: /book and
+// /book/[sectionId] load per-request markdown content, so they can't be
+// baked to static HTML at build time like the site-wide default.
 export const prerender = false;
-
-/** @type {import('./$types').LayoutServerLoad} */
-export async function load(event) {
-  return { unlocked: event.cookies.get(BOOK_ACCESS_COOKIE) === '1' };
-}

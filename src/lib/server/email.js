@@ -313,8 +313,7 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);border-radius:10px;padding:16px 20px;margin-top:8px;">
       <p style="font-size:13px;color:#64748b;margin:0 0 10px;">Also included in your early access:</p>
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">
-        The book: <a href="https://survivingthesingularity.com/book" style="color:#f59e0b;">survivingthesingularity.com/book</a><br>
-        Readiness checklist: <a href="https://survivingthesingularity.com/checklist" style="color:#f59e0b;">survivingthesingularity.com/checklist</a>
+        Full book: current draft <a href="https://survivingthesingularity.com/book" style="color:#f59e0b;">survivingthesingularity.com/book</a>
       </p>
       ${env.BOOK_ACCESS_PASSWORD ? `<p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(env.BOOK_ACCESS_PASSWORD)}</strong></p>` : ''}
     </div>

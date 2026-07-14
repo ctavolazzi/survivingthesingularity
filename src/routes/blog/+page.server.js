@@ -55,7 +55,7 @@ export async function load() {
       author: 'Christopher Tavolazzi',
       route: '/blog/singularity-express',
       excerpt: 'The Singularity Express has pulled into the station. A look at what "Level 2" reasoning AI means and why the jump matters.',
-      image: 'https://cdn.midjourney.com/2cfb73bc-4072-40fa-aa86-8cf4f842b428/0_2.png'
+      image: '/images/surviving_the_singularity_cover_1200.png'
     },
     {
       title: 'Farm Bot Deep Dive - Exploring AI-Powered Precision Agriculture',
@@ -95,7 +95,7 @@ export async function load() {
       author: 'Christopher Tavolazzi',
       route: '/blog/synthetic-biological-computers',
       excerpt: "The world's first commercial \"biological computer\" fuses living human neurons with silicon hardware, potentially outpacing traditional AI systems while raising profound ethical questions.",
-      image: 'https://newatlas-brightspot.s3.amazonaws.com/47/f5/8b2b6d674ae78eb44e8a2d6b5494/wetware-chip.jpg'
+      image: '/images/surviving_the_singularity_cover_1200.png'
     }
   ];
 

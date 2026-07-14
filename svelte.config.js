@@ -28,7 +28,10 @@ const config = {
 					'https://i.cbc.ca', 'https://content.api.news',
 					'https://newatlas-brightspot.s3.amazonaws.com',
 					'https://www.digitaltrends.com',
-					'https://futurism.com'
+					'https://futurism.com',
+					'https://i.pcmag.com',
+					'https://www.testingcatalog.com', 'https://storage.ghost.io',
+					'https://corticallabs.com'
 				],
 				'media-src': ["'self'"],
 				'connect-src': [

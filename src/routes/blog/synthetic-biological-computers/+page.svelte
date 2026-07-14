@@ -5,7 +5,7 @@
     title: 'Synthetic Biological Intelligence: Living Human Cells Power Next-Gen Computing',
     date: '2025-04-07',
     author: 'Christopher Tavolazzi',
-    image: 'https://newatlas-brightspot.s3.amazonaws.com/47/f5/8b2b6d674ae78eb44e8a2d6b5494/wetware-chip.jpg',
+    image: '/images/surviving_the_singularity_cover_1200.png',
     readingTime: '8 min read',
     description: 'The world\'s first commercial "biological computer" fuses living human neurons with silicon hardware, potentially outpacing traditional AI systems while raising profound ethical questions.',
     audioSrc: '',

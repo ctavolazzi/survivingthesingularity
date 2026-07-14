@@ -69,3 +69,14 @@ registering the webhook above).
   `discord_applications` table doesn't exist on the live project yet, so the
   Discord application form on `/checklist` currently returns a clean "not wired up
   yet" message instead of crashing, but it still doesn't work until this runs.
+- Run `sql/009_preorder_discount_code.sql` in the Supabase SQL Editor. Preorders
+  work fine without it (the insert falls back gracefully), but each customer's
+  personal discount code won't be generated or shown in their email until it runs.
+- **Create the live-mode 50%-off promotion code.** `PREORDER50` currently only
+  exists in Stripe **test** mode (created via the API on 2026-07-13: a
+  `percent_off: 50, duration: once` coupon wrapped in a promotion code with that
+  exact string). Live mode is a separate Stripe environment - repeat the same two
+  API calls (or do it by hand in the dashboard: Product catalog → Coupons → new
+  50% once coupon → Promotion codes → code `PREORDER50`) once live keys are in
+  place. `MASTER_DISCOUNT_CODE` in `.env` can be overridden if you want a
+  different string in live mode.

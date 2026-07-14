@@ -6,9 +6,9 @@
   "lastUpdated": "2026-07-11",
   "sections": [
     {
-      "id": "chapter0",
-      "title": "Chapter 0: The Demonstration",
-      "file": "00-chapter0.md"
+      "id": "introduction",
+      "title": "Introduction: The Uncompromising Truth",
+      "file": "02-introduction.md"
     },
     {
       "id": "preface",
@@ -16,9 +16,9 @@
       "file": "01-preface.md"
     },
     {
-      "id": "introduction",
-      "title": "Introduction: The Uncompromising Truth",
-      "file": "02-introduction.md"
+      "id": "chapter0",
+      "title": "Chapter 0: The Demonstration",
+      "file": "00-chapter0.md"
     },
     {
       "id": "part-1",

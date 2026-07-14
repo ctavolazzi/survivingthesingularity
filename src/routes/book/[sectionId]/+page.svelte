@@ -156,8 +156,12 @@
 <style>
   /* ── CHAPTER NAV ── */
   .chapter-nav {
+    /* Sits below the site's own floating nav pill (measured ~71px tall) -
+       both are position: sticky at the top of the same scroll container,
+       so without this offset they'd both land at the same y and the
+       higher z-indexed site nav would render over this one. */
     position: sticky;
-    top: 0;
+    top: 74px;
     z-index: 20;
     background: rgba(2,6,23,0.92);
     backdrop-filter: blur(10px);

@@ -143,9 +143,13 @@ async function processImage(imagePath) {
       variants: {}
     };
 
-    // Generate WebP version at original size
+    // Generate WebP version at original size.
+    // Every output below works on image.clone(): sharp operations mutate the
+    // instance, so e.g. .webp() here would otherwise stick and make every
+    // later "original format" variant silently WebP-encoded inside a
+    // .png/.jpg-named file.
     const webpOutputPath = path.join(OUTPUT_DIR, `${outputBaseName}_original.webp`);
-    await image.webp({ quality: 80 }).toFile(webpOutputPath);
+    await image.clone().webp({ quality: 80 }).toFile(webpOutputPath);
     sizes.webp.original = path.relative(rootDir, webpOutputPath);
 
     // Generate variants for different sizes
@@ -153,15 +157,13 @@ async function processImage(imagePath) {
       // Skip if requested width is larger than original
       if (width > metadata.width) continue;
 
-      const resized = image.resize(width);
-
       // Original format variant
       const outputPathOriginal = path.join(OUTPUT_DIR, `${outputBaseName}_${width}${parsedPath.ext}`);
-      await resized.toFile(outputPathOriginal);
+      await image.clone().resize(width).toFile(outputPathOriginal);
 
       // WebP variant
       const outputPathWebP = path.join(OUTPUT_DIR, `${outputBaseName}_${width}.webp`);
-      await resized.webp({ quality: 80 }).toFile(outputPathWebP);
+      await image.clone().resize(width).webp({ quality: 80 }).toFile(outputPathWebP);
 
       // Add to manifest
       if (!sizes.variants[width]) {

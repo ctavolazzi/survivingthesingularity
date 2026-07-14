@@ -35,7 +35,7 @@ export async function GET({ url, platform, request }) {
       author: 'Christopher Tavolazzi',
       route: '/blog/singularity-express',
       excerpt: 'The Singularity Express has pulled into the station. A look at what "Level 2" reasoning AI means and why the jump matters.',
-      image: 'https://cdn.midjourney.com/2cfb73bc-4072-40fa-aa86-8cf4f842b428/0_2.png',
+      image: '/images/surviving_the_singularity_cover_1200.png',
       featured: true
     }
   ];

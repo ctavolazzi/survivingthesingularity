@@ -90,7 +90,4 @@
 
 <style>
   /* Add any additional styles here if needed */
-  .book-callout {
-    backdrop-filter: blur(8px);
-  }
 </style>

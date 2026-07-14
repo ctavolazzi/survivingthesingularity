@@ -1,8 +1,5 @@
-import { loadBlogPosts } from '$lib/data/blog-posts/blogPosts';
-
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
-  // Define blog posts directly with their routes
   const posts = [
     {
       title: 'The Algal Biorefinery Blueprint: Engineering the Post-Petrochemical Stack',
@@ -34,7 +31,7 @@ export async function load() {
       author: 'Christopher Tavolazzi',
       route: '/blog/synthetic-biological-intelligence',
       excerpt: 'Australian startup Cortical Labs has unveiled the CL1, the world\'s first commercial Synthetic Biological Intelligence system-a fusion of biology and tech with human neurons cultured directly onto silicon chips.',
-      image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80'
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80&auto=format&fit=crop'
     },
     {
       title: 'The Future of Neural Interfaces: A Comprehensive Guide',
@@ -42,7 +39,7 @@ export async function load() {
       author: 'Christopher Tavolazzi',
       route: '/blog/future-of-neural-interfaces',
       excerpt: 'Explore recent breakthroughs, future prospects, and ethical considerations in neural interfaces and brain-computer interfaces (BCIs).',
-      image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80'
+      image: 'https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=1200&q=80&auto=format&fit=crop'
     },
     {
       title: 'Robot Farm Bot - The Future of Residential Agriculture',
@@ -58,7 +55,7 @@ export async function load() {
       author: 'Christopher Tavolazzi',
       route: '/blog/singularity-express',
       excerpt: 'The Singularity Express has pulled into the station. A look at what "Level 2" reasoning AI means and why the jump matters.',
-      image: 'https://cdn.midjourney.com/2cfb73bc-4072-40fa-aa86-8cf4f842b428/0_2.png'
+      image: '/images/surviving_the_singularity_cover_1200.png'
     },
     {
       title: 'Farm Bot Deep Dive - Exploring AI-Powered Precision Agriculture',
@@ -75,6 +72,30 @@ export async function load() {
       route: '/blog/claude-projects-weekend-project',
       excerpt: 'Ready to supercharge your AI workflow? Join us for a weekend challenge exploring Claude Projects, a powerful new feature that\'s transforming how we interact with AI.',
       image: 'https://i.ytimg.com/vi/nbG2DO6Xsek/maxresdefault.jpg'
+    },
+    {
+      title: 'DARPA Seeks Plans for Large Bio-Mechanical Space Structures',
+      date: '2025-03-04',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/darpa-biomechanical-space-structures',
+      excerpt: 'DARPA has issued a request for information on building massive biological structures in space, exploring a sci-fi future where space infrastructure might be grown rather than assembled.',
+      image: 'https://futurism.com/_next/image?url=https%3A%2F%2Fwordpress-assets.futurism.com%2F2025%2F02%2Fdarpa-requests-plans-large-bio-mechanical-space-structures.jpg&w=2048&q=75'
+    },
+    {
+      title: "Neuralink's Latest Breakthrough: A New Era in Brain-Computer Interfaces",
+      date: '2024-03-09',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/neuralink-latest-breakthrough',
+      excerpt: "Neuralink's first human trial participants are controlling computers with their thoughts. A look at where brain-computer interface technology stands today and what comes next.",
+      image: 'https://www.digitaltrends.com/wp-content/uploads/2019/07/finalmente-sapremo-neuralink-progetto-segreto-elon-musk-v3-388343.jpg?resize=1200%2C630&p=1'
+    },
+    {
+      title: 'Synthetic Biological Intelligence: Living Human Cells Power Next-Gen Computing',
+      date: '2025-04-07',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/synthetic-biological-computers',
+      excerpt: "The world's first commercial \"biological computer\" fuses living human neurons with silicon hardware, potentially outpacing traditional AI systems while raising profound ethical questions.",
+      image: '/images/surviving_the_singularity_cover_1200.png'
     }
   ];
 
@@ -83,5 +104,6 @@ export async function load() {
   };
 }
 
-// Disable prerendering since we're using async data fetching
-export const prerender = false;
+// The post list is static data — prerender the blog index (and, via crawl, each
+// linked post) so these read-only pages serve from the CDN edge.
+export const prerender = true;

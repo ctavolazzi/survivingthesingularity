@@ -1,0 +1,8 @@
+# signals_denylist.txt
+# Add one arXiv ID per line (without version suffix) to permanently exclude that paper.
+# Lines starting with # are ignored.
+# Example:
+#   2406.12345
+
+# E-commerce pricing paper — matched "alignment" incidentally, off-thesis
+2606.26787

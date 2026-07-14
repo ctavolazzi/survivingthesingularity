@@ -3,12 +3,7 @@
   import { browser } from '$app/environment';
   import { fly, fade } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
-
-  // Hybrid clickwrap consent. "I Agree" stores a versioned consent record
-  // (timestamp + version) in localStorage. Banner re-shows if the version
-  // string is bumped (e.g. when terms materially change).
-  const CONSENT_VERSION = 'v2-2026-06-07';
-  const CONSENT_KEY = 'sts:consent';
+  import { CONSENT_KEY, CONSENT_VERSION } from '$lib/consent.js';
 
   let agreed = false;
   let agreedAt = '';
@@ -124,12 +119,11 @@
     width: calc(100% - 2rem);
     max-width: 780px;
     /* Neutral slate surface with a subtle on-brand amber edge - no red. */
-    background: rgba(15, 23, 42, 0.97);
-    border: 1px solid rgba(245, 158, 11, 0.22);
-    border-radius: 12px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(148, 163, 184, 0.06);
+    background: #0a0f23;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-left: 3px solid rgba(245, 158, 11, 0.5);
+    border-radius: 0;
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.1);
   }
 
   .dbnr-inner {
@@ -180,13 +174,14 @@
     color: #0a0a0a;
     border: 1px solid #f59e0b;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 0;
     font-size: 0.86rem;
     font-weight: 700;
     line-height: 1;
     cursor: pointer;
-    transition: all 0.15s ease;
+    transition: background 0.15s ease;
     white-space: nowrap;
+    box-shadow: 2px 2px 0 rgba(120, 53, 15, 0.4);
   }
 
   .dbnr-agree:hover {
@@ -199,12 +194,12 @@
     color: #cbd5e1;
     border: 1px solid rgba(148, 163, 184, 0.4);
     padding: 0.5rem 0.85rem;
-    border-radius: 8px;
+    border-radius: 0;
     font-size: 0.86rem;
     font-weight: 600;
     line-height: 1;
     cursor: pointer;
-    transition: all 0.15s ease;
+    transition: border-color 0.15s ease, color 0.15s ease;
     white-space: nowrap;
   }
 
@@ -229,20 +224,19 @@
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-    background: rgba(2, 6, 23, 0.92);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(2, 6, 23, 0.95);
   }
 
   .lockout-card {
     max-width: 380px;
     width: 100%;
     text-align: center;
-    background: rgba(15, 23, 42, 0.98);
-    border: 1px solid rgba(245, 158, 11, 0.25);
-    border-radius: 16px;
+    background: #0a0f23;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-left: 3px solid rgba(245, 158, 11, 0.6);
+    border-radius: 0;
     padding: 2rem 1.5rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.1);
   }
 
   .lockout-icon {
@@ -269,11 +263,12 @@
     color: #0a0a0a;
     border: none;
     padding: 0.7rem 1.4rem;
-    border-radius: 10px;
+    border-radius: 0;
     font-size: 0.95rem;
     font-weight: 700;
     cursor: pointer;
     transition: background 0.15s ease;
+    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
   }
 
   .lockout-btn:hover { background: #fbbf24; }
@@ -282,7 +277,7 @@
     .disclaimer-popup {
       bottom: 0.6rem;
       width: calc(100% - 1rem);
-      border-radius: 10px;
+      border-radius: 0;
     }
     /* Compact: short text + inline buttons side by side to save height. */
     .dbnr-inner { padding: 0.5rem 0.65rem; gap: 0.5rem; align-items: center; }

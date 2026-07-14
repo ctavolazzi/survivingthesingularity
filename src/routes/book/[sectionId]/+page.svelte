@@ -1,6 +1,7 @@
 <script>
   import { marked } from 'marked';
   import { onMount } from 'svelte';
+  import { page } from '$app/stores';
   import { safeGoto } from '$lib/utils/navigation';
   import { bookPage } from '$lib/stores/bookPage';
   import Pagination from '$lib/components/Pagination.svelte';
@@ -45,8 +46,14 @@
 <FloatingQuotePopup />
 
 <svelte:head>
-  <title>{data.book.title} - {data.section.title}</title>
-  <meta name="description" content="Read {data.section.title} from {data.book.title}">
+  <title>{data.section.title} | Surviving the Singularity</title>
+  <meta name="description" content="Read {data.section.title} from {data.book.title}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{data.section.title} | Surviving the Singularity" />
+  <meta property="og:description" content="Read {data.section.title} from {data.book.title}" />
+  <meta property="og:image" content="{$page.url.origin}/Surviving-the-Singularity-Cover.png" />
+  <meta property="og:url" content="{$page.url.href}" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <Spacer height="50px" />

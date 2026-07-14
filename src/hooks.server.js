@@ -19,34 +19,16 @@ export async function handle({ event, resolve }) {
 
   const response = await resolve(event);
 
-  // Security headers - applied to every response. Strict by default; loosen if
-  // you add new third-party embeds (YouTube, Vimeo, etc.) by extending the
-  // relevant CSP directive below.
+  // Security headers for SSR routes (Worker). CSP is handled by kit.csp in
+  // svelte.config.js, which injects per-request nonces into SvelteKit's own
+  // inline scripts and sets the CSP header automatically. Prerendered pages
+  // get CSP from static/_headers (served by Cloudflare Pages CDN, no Worker).
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('X-Frame-Options', 'SAMEORIGIN');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set('Permissions-Policy', 'geolocation=(), microphone=(), camera=(), payment=()');
   response.headers.set('Cross-Origin-Opener-Policy', 'same-origin');
-  // HSTS - only applies on https. Browsers ignore over http, so safe to set.
-  // 1 year, include subdomains. Add 'preload' later once you're sure.
   response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
-
-  // Content Security Policy - covers Supabase (newsletter), self-hosted assets.
-  // Allowlist additions: add domains to the matching directive (script-src, frame-src, etc.).
-  const csp = [
-    "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com",
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "font-src 'self' https://fonts.gstatic.com data:",
-    "img-src 'self' data: blob: https://cdn.midjourney.com https://images.unsplash.com https://plus.unsplash.com https://farm.bot https://*.futurism.com https://wordpress-assets.futurism.com https://i.ytimg.com https://*.ytimg.com https://www.open-electronics.org https://i.cbc.ca https://content.api.news",
-    "media-src 'self'",
-    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://cloudflareinsights.com",
-    "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://open.spotify.com https://*.substack.com",
-    "base-uri 'self'",
-    "form-action 'self'",
-    "frame-ancestors 'self'"
-  ].join('; ');
-  response.headers.set('Content-Security-Policy', csp);
 
   return response;
 }

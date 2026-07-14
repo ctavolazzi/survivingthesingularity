@@ -6,15 +6,16 @@
           <span class="footer-mark">STS</span>
           <span class="footer-brand-name">Surviving the Singularity</span>
         </div>
-        <p class="footer-tagline">Material independence through digital leverage, local intelligence, and minimalist infrastructure.</p>
+        <p class="footer-tagline">Preparing for the singularity. One move at a time.</p>
       </div>
 
       <div class="footer-links-group">
         <div class="footer-col">
           <h4 class="footer-col-title">Navigate</h4>
           <a href="/" class="footer-link">Home</a>
-          <a href="/blueprint" class="footer-link">The Blueprint</a>
-          <a href="/book" class="footer-link">Book</a>
+          <a href="/book" class="footer-link">The Book</a>
+          <a href="/early-access" class="footer-link footer-link-accent">Preorder the Book</a>
+          <a href="/checklist" class="footer-link">Free Checklist</a>
           <a href="/blog" class="footer-link">Blog</a>
         </div>
         <div class="footer-col">
@@ -40,23 +41,11 @@
     <div class="footer-divider"></div>
 
     <div class="footer-bottom">
-      <div class="footer-disclaimer-box">
-        <p class="footer-disclaimer-title">
-          ⚠ Informational &amp; educational use only
-        </p>
-        <p class="footer-disclaimer">
-          <strong>The information here is a starting point for your own research, not a professional recommendation.</strong>
-          You assume all risk for any action you take or fail to take based on anything you read here.
-          <a href="/disclaimer" class="footer-disclaimer-link">Read our terms &amp; disclaimers</a>.
-        </p>
-      </div>
-
       <p class="footer-consent">
-        <strong>By accessing or using this site, you acknowledge that you have read, understood, and agree to be bound by the</strong>
-        <a href="/terms" class="footer-disclaimer-link">Terms of Use</a>,
+        This site is for informational and educational purposes only, not professional advice. By using it, you agree to our
+        <a href="/terms" class="footer-disclaimer-link">Terms</a>,
         <a href="/disclaimer" class="footer-disclaimer-link">Disclaimer</a>, and
-        <a href="/policies" class="footer-disclaimer-link">Privacy &amp; Policies</a>.
-        If you do not agree, do not use this site.
+        <a href="/policies" class="footer-disclaimer-link">Privacy Policy</a>.
       </p>
 
       <p class="footer-copyright">
@@ -68,7 +57,8 @@
 
 <style>
   .site-footer {
-    background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.8) 30%, #020617 100%);
+    background: #020617;
+    border-top: 1px solid rgba(245, 158, 11, 0.12);
     padding: 4rem 1.5rem 2rem;
     margin-top: 4rem;
   }
@@ -162,39 +152,12 @@
 
   .footer-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.15), transparent);
+    background: rgba(245, 158, 11, 0.12);
     margin: 2.5rem 0;
   }
 
   .footer-bottom {
     text-align: center;
-  }
-
-  .footer-disclaimer-box {
-    max-width: 720px;
-    margin: 0 auto 1.25rem;
-    padding: 1rem 1.25rem;
-    background: rgba(120, 53, 15, 0.12);
-    border: 1px solid rgba(245, 158, 11, 0.25);
-    border-radius: 10px;
-    text-align: left;
-  }
-
-  .footer-disclaimer-title {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #fcd34d;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin: 0 0 0.5rem 0;
-    font-family: var(--font-primary);
-  }
-
-  .footer-disclaimer {
-    font-size: 0.86rem;
-    color: #e9eef5;
-    line-height: 1.65;
-    margin: 0;
   }
 
   .footer-disclaimer-link {
@@ -215,15 +178,11 @@
     padding: 0.85rem 1.1rem;
     background: rgba(15, 23, 42, 0.5);
     border: 1px solid rgba(148, 163, 184, 0.12);
-    border-radius: 8px;
+    border-radius: 0;
     font-size: 0.82rem;
     color: #dde4ef;
     line-height: 1.6;
     text-align: left;
-  }
-  .footer-consent strong {
-    color: #e2e8f0;
-    font-weight: 600;
   }
 
   .footer-copyright {
@@ -253,7 +212,7 @@
       max-width: 100%;
     }
 
-    /* Three equal columns — grid keeps them from word-wrapping on narrow screens */
+    /* Three equal columns - grid keeps them from word-wrapping on narrow screens */
     .footer-links-group {
       width: 100%;
       gap: 1rem;
@@ -268,13 +227,8 @@
       font-size: 0.8rem;
     }
 
-    .footer-disclaimer-box,
     .footer-consent {
       padding: 0.85rem 1rem;
-    }
-
-    .footer-disclaimer,
-    .footer-consent {
       font-size: 0.8rem;
     }
   }

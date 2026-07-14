@@ -254,7 +254,7 @@
         Residual triglycerides from lipid-stressed Chlorella convert to ASTM B100-grade biodiesel via standard transesterification at $1.15 to $1.25 per gallon. For wet feedstocks and municipal food waste, Hydrothermal Liquefaction (100 to 300 bar, 250°C to 380°C) converts 70% to 90% moisture-content material into biocrude without expensive pre-drying, with an Energy Return on Investment of 3.5 to 4.2. That fuel powers the facility's own logistics fleet, closing the thermodynamic loop.
       </p>
 
-      <h2>DC-Native Infrastructure and Thermodynamic Sovereignty</h2>
+      <h2>DC-Native Infrastructure and Thermodynamic Independence</h2>
 
       <p>
         Grid-dependent biorefineries have a hidden structural fragility: AC power conversion losses. A conventional off-grid solar system loses energy at the charge controller, during battery chemical transfer, through the inverter, and again at device adapters. Compound system efficiency drops to around 58%.
@@ -265,7 +265,7 @@
       </p>
 
       <p>
-        This isn't a technical curiosity. It's the difference between a facility that's thermodynamically sovereign and one that's hostage to grid availability.
+        This isn't a technical curiosity. It's the difference between a facility that's thermodynamically independent and one that's hostage to grid availability.
       </p>
 
       <h2>The Socioeconomic Inversion</h2>
@@ -312,7 +312,7 @@
         <div class="cta-signup" id="signup">
           <NewsletterSignup source="blog-biorefinery" label="" buttonText="Join the List" />
         </div>
-        <a href="/blueprint" class="cta-link">Read the full Blueprint →</a>
+        <a href="/book" class="cta-link">Read the full book →</a>
       </div>
 
     </div>

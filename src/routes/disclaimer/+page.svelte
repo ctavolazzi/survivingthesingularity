@@ -225,6 +225,40 @@
       </p>
     </section>
 
+    <section class="dpg-section" id="signals">
+      <h2>How the Research Signals feed works</h2>
+      <p>
+        The <a href="/signals">Research Signals</a> feed and homepage ticker are generated and updated
+        <strong>automatically by a script, not by a human</strong>. Here is exactly how it works so you
+        can judge what you are looking at:
+      </p>
+      <ul>
+        <li>A script runs daily and fetches recent preprints from the public
+          <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv API</a>
+          in categories including cs.AI (Artificial Intelligence), cs.LG (Machine Learning),
+          cs.CL (Computation and Language), cs.MA (Multi-Agent Systems), and cs.RO (Robotics).</li>
+        <li>Each paper's title and abstract are scored by how many singularity-relevant keywords they
+          contain, weighted by how central those keywords are to the site's thesis. The score is also
+          multiplied by a recency decay so older papers rank lower over time.</li>
+        <li>Papers below a minimum relevance threshold, or that lack at least one high-weight keyword
+          match, are excluded. The rest are ranked by their final score.</li>
+        <li>The ranked list is committed to the site's codebase, which triggers a rebuild and redeploy.
+          There is no live database. The feed is as current as the last successful sweep.</li>
+        <li>Any paper can be removed from the feed by adding its arXiv ID to a denylist file. If you
+          believe a specific item should be removed, contact
+          <a href="mailto:info@survivingthesingularity.com">info@survivingthesingularity.com</a>.</li>
+      </ul>
+      <p>
+        <strong>What this feed is not:</strong> it is not editorial, not an endorsement, not a claim
+        that the papers are important, accurate, or aligned with this site's views. The algorithm will
+        surface low-quality, irrelevant, or even contradictory papers. Treat everything in the feed as
+        a pointer to a source you should evaluate yourself, not as a vetted recommendation.
+      </p>
+      <p>
+        For the book's sourced argument, see <a href="/book">the book page</a>. Claims there are curated by the author and held to a higher standard than the automated feed.
+      </p>
+    </section>
+
     <section class="dpg-section">
       <h2>Changes to this disclaimer</h2>
       <p>

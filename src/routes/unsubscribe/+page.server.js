@@ -1,5 +1,8 @@
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 
+// Per-request: reads a token from the query string. Never prerender.
+export const prerender = false;
+
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ url }) {
   const token = url.searchParams.get('token') ?? '';

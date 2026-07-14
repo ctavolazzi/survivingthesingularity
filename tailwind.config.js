@@ -11,6 +11,22 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      borderRadius: {
+        none: '0',
+        sm: '0',
+        DEFAULT: '0',
+        md: '0',
+        lg: '0',
+        xl: '0',
+        '2xl': '0',
+        '3xl': '0',
+        full: '0',
+      },
+      boxShadow: {
+        hard: '4px 4px 0 #f59e0b',
+        'hard-blue': '4px 4px 0 #3b82f6',
+        'hard-dim': '3px 3px 0 rgba(241,245,249,0.12)',
+      },
       typography: {
         DEFAULT: {
           css: {

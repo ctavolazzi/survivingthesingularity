@@ -1,0 +1,44 @@
+{
+  "session_id": "93604695-4bcf-4c4d-94a4-7b36d3b70475",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-06-10T06:52:02.617995+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.85,
+    "context": 0.9,
+    "clarity": 0.9,
+    "coherence": 0.85,
+    "signal": 0.85,
+    "density": 0.8,
+    "state": 0.85,
+    "change": 0.0,
+    "completion": 0.0,
+    "impact": 0.8,
+    "engagement": 0.95,
+    "uncertainty": 0.2
+  },
+  "overall_confidence": 0.867,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "0fddfc28-e86e-4682-993f-da027cb51bbe",
+    "git_commit_sha": "bade5354148bdb5a23e3d0c959d5575c23533a5b",
+    "git_notes_ref": "empirica/session/93604695-4bcf-4c4d-94a4-7b36d3b70475/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "3dff47ce8d4100938d90a4250d77716686916d50",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        "src/routes/+page.svelte"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": "src/routes/+page.svelte | 28 +++++++++-------------------\n 1 file changed, 9 insertions(+), 19 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 94
+}

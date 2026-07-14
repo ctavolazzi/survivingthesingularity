@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { env } from '$env/dynamic/private';
 
-// Server-only privileged client. Uses the SECRET key, which bypasses RLS — so
+// Server-only privileged client. Uses the SECRET key, which bypasses RLS - so
 // this file must never be imported into client code. ($lib/server is enforced
 // server-only by SvelteKit.) Dynamic env so a missing key never breaks builds;
 // the client is simply null and callers degrade gracefully.

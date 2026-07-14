@@ -3,8 +3,6 @@
   import { fade, fly } from 'svelte/transition';
   import { onMount, onDestroy, createEventDispatcher } from 'svelte';
   import { browser } from '$app/environment';
-  import { sections } from '$lib/data/blueprint.js';
-  import { blueprintProgress } from '$lib/stores/progress.js';
 
   export let open = false;
 
@@ -16,28 +14,14 @@
 
   const pages = [
     { type: 'page', title: 'Home', desc: 'Main landing page', path: '/', icon: 'home', keywords: 'home landing main' },
-    { type: 'page', title: 'The Blueprint', desc: 'Full blueprint index', path: '/blueprint', icon: 'book', keywords: 'blueprint chapters guide' },
     { type: 'page', title: 'Blog', desc: 'Articles & dispatches', path: '/blog', icon: 'edit', keywords: 'blog articles posts' },
     { type: 'page', title: 'Book', desc: 'Surviving the Singularity book', path: '/book', icon: 'book', keywords: 'book read purchase' },
-    { type: 'page', title: 'Profile', desc: 'Your progress dashboard', path: '/profile', icon: 'user', keywords: 'profile account dashboard progress' },
+    { type: 'page', title: 'Signals', desc: 'Live AI research feed', path: '/signals', icon: 'chapter', keywords: 'signals research arxiv ai feed' },
+    { type: 'page', title: 'Early Access', desc: 'Get early access to everything', path: '/early-access', icon: 'user', keywords: 'early access buy purchase' },
     { type: 'page', title: 'About', desc: 'About the project', path: '/about', icon: 'info', keywords: 'about mission team' },
   ];
 
-  const chapters = sections.map(s => ({
-    type: 'chapter',
-    title: `Ch. ${s.number}: ${s.title}`,
-    desc: s.subtitle,
-    path: `/blueprint/${s.slug}`,
-    icon: 'chapter',
-    keywords: `${s.title} ${s.subtitle} chapter blueprint`,
-    slug: s.slug
-  }));
-
-  const actions = [
-    { type: 'action', title: 'Reset Blueprint Progress', desc: 'Clear all reading progress', icon: 'reset', action: 'reset-progress', keywords: 'reset clear progress' },
-  ];
-
-  const allItems = [...pages, ...chapters, ...actions];
+  const allItems = [...pages];
 
   $: filtered = query.trim()
     ? allItems.filter(item => {
@@ -64,13 +48,7 @@
   }
 
   function selectItem(item) {
-    if (item.type === 'action') {
-      if (item.action === 'reset-progress') {
-        blueprintProgress.reset();
-      }
-    } else {
-      goto(item.path);
-    }
+    goto(item.path);
     handleClose();
   }
 
@@ -114,12 +92,9 @@
       case 'user': return `<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>`;
       case 'info': return `<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>`;
       case 'chapter': return `<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/>`;
-      case 'reset': return `<polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>`;
       default: return `<circle cx="12" cy="12" r="10"/>`;
     }
   }
-
-  $: progress = $blueprintProgress;
 </script>
 
 {#if open}
@@ -140,7 +115,7 @@
           bind:value={query}
           type="text"
           class="palette-input"
-          placeholder="Search pages, chapters, actions..."
+          placeholder="Search pages..."
           spellcheck="false"
           autocomplete="off"
         />
@@ -164,12 +139,7 @@
                 {@html getIcon(item.icon)}
               </svg>
               <div class="palette-item-text">
-                <span class="palette-item-title">
-                  {item.title}
-                  {#if item.slug && progress[item.slug]?.readAt}
-                    <span class="palette-read-badge">read</span>
-                  {/if}
-                </span>
+                <span class="palette-item-title">{item.title}</span>
                 <span class="palette-item-desc">{item.desc}</span>
               </div>
               <span class="palette-item-type">{item.type}</span>
@@ -192,8 +162,7 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.82);
     z-index: 9999;
     border: none;
     margin: 0;
@@ -209,11 +178,12 @@
     z-index: 10000;
     width: calc(100% - 2rem);
     max-width: 580px;
-    background: #0f172a;
-    border: 1px solid rgba(148, 163, 184, 0.15);
-    border-radius: 16px;
+    background: #0a0f23;
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-left: 3px solid rgba(245, 158, 11, 0.4);
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(245, 158, 11, 0.08);
+    box-shadow: 6px 6px 0 rgba(245, 158, 11, 0.08);
   }
 
   .palette-input-wrap {
@@ -248,7 +218,7 @@
     font-size: 0.76rem;
     padding: 0.15rem 0.4rem;
     border: 1px solid rgba(148, 163, 184, 0.15);
-    border-radius: 4px;
+    border-radius: 0;
     color: #dde4ef;
     font-family: var(--font-primary);
     background: rgba(30, 41, 59, 0.5);
@@ -285,7 +255,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 0;
     transition: all 0.1s;
     text-align: left;
     font-family: inherit;
@@ -326,7 +296,7 @@
     padding: 0.1rem 0.35rem;
     background: rgba(16, 185, 129, 0.1);
     color: #10b981;
-    border-radius: 4px;
+    border-radius: 0;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;

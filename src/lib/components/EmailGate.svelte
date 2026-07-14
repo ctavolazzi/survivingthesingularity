@@ -1,6 +1,8 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount, createEventDispatcher } from 'svelte';
   import { browser } from '$app/environment';
+
+  const dispatch = createEventDispatcher();
 
   /**
    * Soft email gate. Renders the default slot (teaser) always; renders the
@@ -18,18 +20,27 @@
   export let headline = 'Unlock the rest';
   export let sub = 'Enter your email and the full version opens right here.';
   export let buttonText = 'Unlock Free';
+  export let forceUnlock = false;        // bypass gate without email (e.g. Discord click)
+  export let consentDefault = true;      // opt-out: pre-checked. Warm visitor, easy unsubscribe already in place.
 
   const LS_KEY = `sts_unlock_${storageKey}`;
 
   let unlocked = false;
   let email = '';
-  let subscribe = false; // opt-in: unchecked. Email still captured to unlock.
+  let subscribe = consentDefault;
   let honeypot = '';
   let state = 'idle'; // idle | loading | error
   let errorMsg = '';
 
   onMount(() => {
-    if (browser && localStorage.getItem(LS_KEY)) unlocked = true;
+    if (browser && localStorage.getItem(LS_KEY)) {
+      unlocked = true;
+      const storedEmail = localStorage.getItem(LS_KEY + '_email') || '';
+      // 'restore' (not 'unlock') so one-time side effects wired to 'unlock'
+      // (e.g. sending an email) can't refire on every page load for a
+      // visitor already unlocked on a previous visit.
+      dispatch('restore', { email: storedEmail });
+    }
   });
 
   async function submit(e) {
@@ -51,8 +62,13 @@
       });
       const data = await res.json().catch(() => ({}));
       if (res.status === 201 || res.status === 409) {
-        if (browser) localStorage.setItem(LS_KEY, '1');
+        if (browser) {
+          localStorage.setItem(LS_KEY, '1');
+          localStorage.setItem(LS_KEY + '_email', email);
+        }
         unlocked = true; // reveal
+        // 'unlock' fires ONLY here, on a brand-new submission.
+        dispatch('unlock', { email });
       } else {
         state = 'error';
         errorMsg = data.error || 'Something went wrong. Try again.';
@@ -67,7 +83,7 @@
 <!-- Always-visible teaser -->
 <slot />
 
-{#if unlocked}
+{#if unlocked || forceUnlock}
   <div class="gate-reveal">
     <slot name="gated" />
   </div>
@@ -110,13 +126,14 @@
 
       <label class="gate-consent">
         <input type="checkbox" bind:checked={subscribe} />
-        <span>Email me when the book drops + occasional updates</span>
+        <span>Send me Signal Dispatches, occasional emails only when something changes your plan</span>
       </label>
 
       {#if state === 'error'}
         <p class="gate-err" role="alert">{errorMsg}</p>
       {/if}
-      <p class="gate-meta">Instant access to the checklist. Unsubscribe anytime. <a href="/policies">Privacy</a>.</p>
+      <p class="gate-meta">Not a newsletter. Skip it anytime. <a href="/policies">Privacy</a>.</p>
+      <slot name="gate-extra" />
     </div>
   </div>
 {/if}
@@ -146,8 +163,9 @@
     padding: 1.75rem 1.5rem 1.5rem;
     background: rgba(15, 23, 42, 0.6);
     border: 1px solid rgba(245, 158, 11, 0.25);
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border-left: 3px solid rgba(245, 158, 11, 0.5);
+    border-radius: 0;
+    box-shadow: 4px 4px 0 rgba(245, 158, 11, 0.12);
   }
 
   .gate-lock {
@@ -160,7 +178,7 @@
     color: #f59e0b;
     background: rgba(245, 158, 11, 0.1);
     border: 1px solid rgba(245, 158, 11, 0.25);
-    border-radius: 12px;
+    border-radius: 0;
   }
 
   .gate-headline {
@@ -199,29 +217,29 @@
     padding: 0.7rem 0.9rem;
     background: rgba(2, 6, 23, 0.8);
     border: 1px solid rgba(148, 163, 184, 0.25);
-    border-radius: 8px;
+    border-radius: 0;
     color: #f1f5f9;
     font-size: 0.92rem;
     outline: none;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: border-color 0.15s ease;
   }
   .gate-input::placeholder { color: #64748b; }
   .gate-input:focus {
-    border-color: rgba(245, 158, 11, 0.5);
-    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.12);
+    border-color: rgba(245, 158, 11, 0.6);
   }
 
   .gate-btn {
     flex-shrink: 0;
     padding: 0.7rem 1.3rem;
-    background: linear-gradient(135deg, #f59e0b, #f97316);
+    background: #f59e0b;
     color: #0f172a;
     font-weight: 800;
     font-size: 0.9rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0;
     cursor: pointer;
     white-space: nowrap;
+    box-shadow: 3px 3px 0 rgba(120, 53, 15, 0.4);
     transition: opacity 0.15s ease, transform 0.15s ease;
   }
   .gate-btn:hover:not(:disabled) { opacity: 0.92; transform: translateY(-1px); }

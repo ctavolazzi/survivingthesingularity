@@ -31,14 +31,44 @@ export function rateLimit(key, limit, windowMs) {
   hits.push(now);
   buckets.set(key, hits);
 
-  // Opportunistic cleanup so the map doesn't grow unbounded.
-  if (buckets.size > 5000) {
-    for (const [k, v] of buckets) {
-      const live = v.filter((t) => t > cutoff);
-      if (live.length === 0) buckets.delete(k);
-      else buckets.set(k, live);
-    }
-  }
+  cleanup(cutoff);
 
   return { allowed: true, retryAfterMs: 0 };
+}
+
+/**
+ * Like rateLimit(), but does NOT record a hit - use with recordHit() when
+ * only some outcomes should count against the budget (e.g. rate-limit failed
+ * password attempts without penalizing successful ones, so legitimate users
+ * behind a shared IP can't lock each other out).
+ */
+export function peekRate(key, limit, windowMs) {
+  const now = Date.now();
+  const cutoff = now - windowMs;
+
+  const hits = (buckets.get(key) ?? []).filter((t) => t > cutoff);
+  buckets.set(key, hits);
+
+  if (hits.length >= limit) {
+    const retryAfterMs = hits[0] + windowMs - now;
+    return { allowed: false, retryAfterMs: Math.max(0, retryAfterMs) };
+  }
+  return { allowed: true, retryAfterMs: 0 };
+}
+
+/** Record one hit against `key` (pairs with peekRate). */
+export function recordHit(key) {
+  const hits = buckets.get(key) ?? [];
+  hits.push(Date.now());
+  buckets.set(key, hits);
+}
+
+// Opportunistic cleanup so the map doesn't grow unbounded.
+function cleanup(cutoff) {
+  if (buckets.size <= 5000) return;
+  for (const [k, v] of buckets) {
+    const live = v.filter((t) => t > cutoff);
+    if (live.length === 0) buckets.delete(k);
+    else buckets.set(k, live);
+  }
 }

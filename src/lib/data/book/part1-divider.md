@@ -1,3 +1,3 @@
-# Part I: The Wave
+# Part I: What is the Singularity?
 
-What is actually happening, who it is happening to, and why your toaster is suddenly so chatty. Read this part to understand the world that is arriving whether you ordered it or not.
+The event horizon is behind us, not ahead. This part maps what actually happened — the 2017 architecture shift, the nine stages of the intelligence explosion, and the thermodynamic reality that governs all of it.

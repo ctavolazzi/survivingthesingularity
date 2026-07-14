@@ -15,6 +15,646 @@
       }
     }
   },
+  "static/book-images/intro-asimo.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 1705,
+      "path": "static/book-images/intro-asimo.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/intro_asimo_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/intro_asimo_400.jpg",
+        "webp": "static/images/optimized/intro_asimo_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/intro_asimo_800.jpg",
+        "webp": "static/images/optimized/intro_asimo_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/intro_asimo_1200.jpg",
+        "webp": "static/images/optimized/intro_asimo_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch19-iss-sunrise.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1280,
+      "path": "static/book-images/ch19-iss-sunrise.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch19_iss_sunrise_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch19_iss_sunrise_400.jpg",
+        "webp": "static/images/optimized/ch19_iss_sunrise_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch19_iss_sunrise_800.jpg",
+        "webp": "static/images/optimized/ch19_iss_sunrise_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch19_iss_sunrise_1200.jpg",
+        "webp": "static/images/optimized/ch19_iss_sunrise_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch18-compass-map.jpg": {
+    "original": {
+      "width": 1479,
+      "height": 1114,
+      "path": "static/book-images/ch18-compass-map.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch18_compass_map_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch18_compass_map_400.jpg",
+        "webp": "static/images/optimized/ch18_compass_map_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch18_compass_map_800.jpg",
+        "webp": "static/images/optimized/ch18_compass_map_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch18_compass_map_1200.jpg",
+        "webp": "static/images/optimized/ch18_compass_map_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch17-workbench.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 2876,
+      "path": "static/book-images/ch17-workbench.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch17_workbench_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch17_workbench_400.jpg",
+        "webp": "static/images/optimized/ch17_workbench_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch17_workbench_800.jpg",
+        "webp": "static/images/optimized/ch17_workbench_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch17_workbench_1200.jpg",
+        "webp": "static/images/optimized/ch17_workbench_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch16-servers.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1280,
+      "path": "static/book-images/ch16-servers.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch16_servers_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch16_servers_400.jpg",
+        "webp": "static/images/optimized/ch16_servers_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch16_servers_800.jpg",
+        "webp": "static/images/optimized/ch16_servers_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch16_servers_1200.jpg",
+        "webp": "static/images/optimized/ch16_servers_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch14-dead-mall.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 2560,
+      "path": "static/book-images/ch14-dead-mall.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch14_dead_mall_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch14_dead_mall_400.jpg",
+        "webp": "static/images/optimized/ch14_dead_mall_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch14_dead_mall_800.jpg",
+        "webp": "static/images/optimized/ch14_dead_mall_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch14_dead_mall_1200.jpg",
+        "webp": "static/images/optimized/ch14_dead_mall_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch13-solar-barn.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1242,
+      "path": "static/book-images/ch13-solar-barn.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch13_solar_barn_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch13_solar_barn_400.jpg",
+        "webp": "static/images/optimized/ch13_solar_barn_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch13_solar_barn_800.jpg",
+        "webp": "static/images/optimized/ch13_solar_barn_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch13_solar_barn_1200.jpg",
+        "webp": "static/images/optimized/ch13_solar_barn_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch12-farmbot.jpg": {
+    "original": {
+      "width": 1125,
+      "height": 843,
+      "path": "static/book-images/ch12-farmbot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch12_farmbot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch12_farmbot_400.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch12_farmbot_800.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_800.webp"
+      }
+    }
+  },
+  "static/book-images/ch12-farmbot-watering.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 379,
+      "path": "static/book-images/ch12-farmbot-watering.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch12_farmbot_watering_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch12_farmbot_watering_400.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_watering_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch12_farmbot_watering_800.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_watering_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch12_farmbot_watering_1200.jpg",
+        "webp": "static/images/optimized/ch12_farmbot_watering_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch11-spot.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 853,
+      "path": "static/book-images/ch11-spot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch11_spot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch11_spot_400.jpg",
+        "webp": "static/images/optimized/ch11_spot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch11_spot_800.jpg",
+        "webp": "static/images/optimized/ch11_spot_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch11_spot_1200.jpg",
+        "webp": "static/images/optimized/ch11_spot_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch10-nyse.jpg": {
+    "original": {
+      "width": 1024,
+      "height": 683,
+      "path": "static/book-images/ch10-nyse.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch10_nyse_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch10_nyse_400.jpg",
+        "webp": "static/images/optimized/ch10_nyse_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch10_nyse_800.jpg",
+        "webp": "static/images/optimized/ch10_nyse_800.webp"
+      }
+    }
+  },
+  "static/book-images/ch09-sophia-un.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 1625,
+      "path": "static/book-images/ch09-sophia-un.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch09_sophia_un_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch09_sophia_un_400.jpg",
+        "webp": "static/images/optimized/ch09_sophia_un_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch09_sophia_un_800.jpg",
+        "webp": "static/images/optimized/ch09_sophia_un_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch09_sophia_un_1200.jpg",
+        "webp": "static/images/optimized/ch09_sophia_un_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch09-3d-printer.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 2560,
+      "path": "static/book-images/ch09-3d-printer.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch09_3d_printer_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch09_3d_printer_400.jpg",
+        "webp": "static/images/optimized/ch09_3d_printer_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch09_3d_printer_800.jpg",
+        "webp": "static/images/optimized/ch09_3d_printer_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch09_3d_printer_1200.jpg",
+        "webp": "static/images/optimized/ch09_3d_printer_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch08-sophia.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 853,
+      "path": "static/book-images/ch08-sophia.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch08_sophia_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch08_sophia_400.jpg",
+        "webp": "static/images/optimized/ch08_sophia_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch08_sophia_800.jpg",
+        "webp": "static/images/optimized/ch08_sophia_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch08_sophia_1200.jpg",
+        "webp": "static/images/optimized/ch08_sophia_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch07-pepper.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch07-pepper.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch07_pepper_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch07_pepper_400.jpg",
+        "webp": "static/images/optimized/ch07_pepper_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch07_pepper_800.jpg",
+        "webp": "static/images/optimized/ch07_pepper_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch07_pepper_1200.jpg",
+        "webp": "static/images/optimized/ch07_pepper_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch07-chess-battle-lines.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1920,
+      "path": "static/book-images/ch07-chess-battle-lines.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch07_chess_battle_lines_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch07_chess_battle_lines_400.jpg",
+        "webp": "static/images/optimized/ch07_chess_battle_lines_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch07_chess_battle_lines_800.jpg",
+        "webp": "static/images/optimized/ch07_chess_battle_lines_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch07_chess_battle_lines_1200.jpg",
+        "webp": "static/images/optimized/ch07_chess_battle_lines_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch05-sdo-sun.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1833,
+      "path": "static/book-images/ch05-sdo-sun.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch05_sdo_sun_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch05_sdo_sun_400.jpg",
+        "webp": "static/images/optimized/ch05_sdo_sun_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch05_sdo_sun_800.jpg",
+        "webp": "static/images/optimized/ch05_sdo_sun_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch05_sdo_sun_1200.jpg",
+        "webp": "static/images/optimized/ch05_sdo_sun_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch05-nao.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 853,
+      "path": "static/book-images/ch05-nao.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch05_nao_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch05_nao_400.jpg",
+        "webp": "static/images/optimized/ch05_nao_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch05_nao_800.jpg",
+        "webp": "static/images/optimized/ch05_nao_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch05_nao_1200.jpg",
+        "webp": "static/images/optimized/ch05_nao_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch04-hubble-deep-field.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1920,
+      "path": "static/book-images/ch04-hubble-deep-field.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch04_hubble_deep_field_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch04_hubble_deep_field_400.jpg",
+        "webp": "static/images/optimized/ch04_hubble_deep_field_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch04_hubble_deep_field_800.jpg",
+        "webp": "static/images/optimized/ch04_hubble_deep_field_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch04_hubble_deep_field_1200.jpg",
+        "webp": "static/images/optimized/ch04_hubble_deep_field_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch04-da-vinci.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch04-da-vinci.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch04_da_vinci_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch04_da_vinci_400.jpg",
+        "webp": "static/images/optimized/ch04_da_vinci_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch04_da_vinci_800.jpg",
+        "webp": "static/images/optimized/ch04_da_vinci_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch04_da_vinci_1200.jpg",
+        "webp": "static/images/optimized/ch04_da_vinci_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch03-falcon-heavy.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1280,
+      "path": "static/book-images/ch03-falcon-heavy.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch03_falcon_heavy_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch03_falcon_heavy_400.jpg",
+        "webp": "static/images/optimized/ch03_falcon_heavy_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch03_falcon_heavy_800.jpg",
+        "webp": "static/images/optimized/ch03_falcon_heavy_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch03_falcon_heavy_1200.jpg",
+        "webp": "static/images/optimized/ch03_falcon_heavy_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch03-echo-dot.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 726,
+      "path": "static/book-images/ch03-echo-dot.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch03_echo_dot_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch03_echo_dot_400.jpg",
+        "webp": "static/images/optimized/ch03_echo_dot_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch03_echo_dot_800.jpg",
+        "webp": "static/images/optimized/ch03_echo_dot_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch03_echo_dot_1200.jpg",
+        "webp": "static/images/optimized/ch03_echo_dot_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch02-waymo.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch02-waymo.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch02_waymo_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch02_waymo_400.jpg",
+        "webp": "static/images/optimized/ch02_waymo_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch02_waymo_800.jpg",
+        "webp": "static/images/optimized/ch02_waymo_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch02_waymo_1200.jpg",
+        "webp": "static/images/optimized/ch02_waymo_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch02-factory-robots.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 960,
+      "path": "static/book-images/ch02-factory-robots.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch02_factory_robots_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch02_factory_robots_400.jpg",
+        "webp": "static/images/optimized/ch02_factory_robots_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch02_factory_robots_800.jpg",
+        "webp": "static/images/optimized/ch02_factory_robots_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch02_factory_robots_1200.jpg",
+        "webp": "static/images/optimized/ch02_factory_robots_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch01-m87-black-hole.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1920,
+      "path": "static/book-images/ch01-m87-black-hole.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch01_m87_black_hole_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch01_m87_black_hole_400.jpg",
+        "webp": "static/images/optimized/ch01_m87_black_hole_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch01_m87_black_hole_800.jpg",
+        "webp": "static/images/optimized/ch01_m87_black_hole_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch01_m87_black_hole_1200.jpg",
+        "webp": "static/images/optimized/ch01_m87_black_hole_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch01-atlas.jpg": {
+    "original": {
+      "width": 1280,
+      "height": 1920,
+      "path": "static/book-images/ch01-atlas.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch01_atlas_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch01_atlas_400.jpg",
+        "webp": "static/images/optimized/ch01_atlas_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch01_atlas_800.jpg",
+        "webp": "static/images/optimized/ch01_atlas_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch01_atlas_1200.jpg",
+        "webp": "static/images/optimized/ch01_atlas_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch00-madrone-bark.jpg": {
+    "original": {
+      "width": 1920,
+      "height": 1440,
+      "path": "static/book-images/ch00-madrone-bark.jpg"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch00_madrone_bark_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch00_madrone_bark_400.jpg",
+        "webp": "static/images/optimized/ch00_madrone_bark_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch00_madrone_bark_800.jpg",
+        "webp": "static/images/optimized/ch00_madrone_bark_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch00_madrone_bark_1200.jpg",
+        "webp": "static/images/optimized/ch00_madrone_bark_1200.webp"
+      }
+    }
+  },
   "static/images/blog/singularity-express.jpg": {
     "original": {
       "width": 1200,
@@ -283,30 +923,6 @@
       }
     }
   },
-  "static/future-projections/future-of-jobs.png": {
-    "original": {
-      "width": 1200,
-      "height": 630,
-      "path": "static/future-projections/future-of-jobs.png"
-    },
-    "webp": {
-      "original": "static/images/optimized/future_of_jobs_original.webp"
-    },
-    "variants": {
-      "400": {
-        "original": "static/images/optimized/future_of_jobs_400.png",
-        "webp": "static/images/optimized/future_of_jobs_400.webp"
-      },
-      "800": {
-        "original": "static/images/optimized/future_of_jobs_800.png",
-        "webp": "static/images/optimized/future_of_jobs_800.webp"
-      },
-      "1200": {
-        "original": "static/images/optimized/future_of_jobs_1200.png",
-        "webp": "static/images/optimized/future_of_jobs_1200.webp"
-      }
-    }
-  },
   "static/images/treasure-tavern-square.png": {
     "original": {
       "width": 600,
@@ -380,6 +996,54 @@
       "1200": {
         "original": "static/images/optimized/surviving_the_singularity_cover_1200.png",
         "webp": "static/images/optimized/surviving_the_singularity_cover_1200.webp"
+      }
+    }
+  },
+  "static/future-projections/future-of-jobs.png": {
+    "original": {
+      "width": 1200,
+      "height": 630,
+      "path": "static/future-projections/future-of-jobs.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/future_of_jobs_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/future_of_jobs_400.png",
+        "webp": "static/images/optimized/future_of_jobs_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/future_of_jobs_800.png",
+        "webp": "static/images/optimized/future_of_jobs_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/future_of_jobs_1200.png",
+        "webp": "static/images/optimized/future_of_jobs_1200.webp"
+      }
+    }
+  },
+  "static/book-images/ch06-edmond-de-belamy.png": {
+    "original": {
+      "width": 1280,
+      "height": 1285,
+      "path": "static/book-images/ch06-edmond-de-belamy.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/ch06_edmond_de_belamy_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/ch06_edmond_de_belamy_400.png",
+        "webp": "static/images/optimized/ch06_edmond_de_belamy_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/ch06_edmond_de_belamy_800.png",
+        "webp": "static/images/optimized/ch06_edmond_de_belamy_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/ch06_edmond_de_belamy_1200.png",
+        "webp": "static/images/optimized/ch06_edmond_de_belamy_1200.webp"
       }
     }
   },

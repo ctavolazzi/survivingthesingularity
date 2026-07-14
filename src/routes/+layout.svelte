@@ -40,13 +40,18 @@
 
   afterNavigate(({ from, to }) => {
     navigating = false;
-    if (browser && from && to && from.url.pathname !== to.url.pathname) {
-      if (dev && sessionRabbit) {
+    if (browser) {
+      if (dev && sessionRabbit && from && to && from.url.pathname !== to.url.pathname) {
         sessionRabbit.watchNavigation(from.url.pathname, to.url.pathname);
       }
-      setTimeout(() => {
+      const fromPath = from?.url.pathname;
+      const toPath = to?.url.pathname;
+      const toHash = to?.url.hash;
+      if ((!fromPath || fromPath !== toPath) && !toHash) {
         window.scrollTo({ top: 0, behavior: 'instant' });
-      }, 50);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
     }
   });
 
@@ -57,7 +62,11 @@
         sessionRabbit.mark('app-mounted');
         sessionRabbit.info('Session started', { path: window.location.pathname });
       }
-      window.scrollTo(0, 0);
+      if (!window.location.hash) {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
     }
   });
 </script>
@@ -82,6 +91,7 @@
   <main id="main-content" tabindex="-1">
     <slot />
   </main>
+  <div class="site-thankyou" aria-hidden="true">Thank you for being here ❣️</div>
   <Footer />
   <ToastContainer />
   <StickyCaptureBar />
@@ -125,6 +135,14 @@
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+  }
+
+  .site-thankyou {
+    text-align: center;
+    padding: clamp(24px, 4vw, 40px) 20px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: rgba(148, 163, 184, 0.5);
+    letter-spacing: 0.02em;
   }
 
   /* Page loading bar */

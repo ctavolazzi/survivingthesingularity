@@ -1,14 +1,16 @@
 import { json } from '@sveltejs/kit';
 import timelineItems from '$lib/data/timelineItems.json';
+import { rateLimit } from '$lib/server/rateLimit.js';
 
-/**
- * Endpoint to fetch paginated timeline data
- * @param {Object} params - Request parameters
- * @returns {Object} JSON response with paginated timeline data
- */
-export async function GET({ url }) {
-  const page = parseInt(url.searchParams.get('page') || '1');
-  const limit = parseInt(url.searchParams.get('limit') || '5');
+export async function GET({ url, getClientAddress }) {
+  const ip = getClientAddress();
+  const { allowed } = rateLimit(`timeline:${ip}`, 60, 60_000);
+  if (!allowed) {
+    return json({ error: 'Too many requests.' }, { status: 429 });
+  }
+
+  const page = Math.max(1, parseInt(url.searchParams.get('page') || '1') || 1);
+  const limit = Math.min(50, Math.max(1, parseInt(url.searchParams.get('limit') || '5') || 5));
 
   const start = (page - 1) * limit;
   const end = start + limit;

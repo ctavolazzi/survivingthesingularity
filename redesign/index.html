@@ -1,0 +1,2820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surviving the Singularity: New Era, New Playbook</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --bg:            #020617;
+      --bg-raised:     #060d1f;
+      --surface:       #0f172a;
+      --surface-2:     #1e293b;
+      --border:        rgba(255,255,255,0.05);
+      --border-mid:    rgba(255,255,255,0.09);
+      --border-strong: rgba(255,255,255,0.14);
+      --amber:         #f59e0b;
+      --amber-light:   #fbbf24;
+      --amber-dim:     rgba(245,158,11,0.12);
+      --blue:          #3b82f6;
+      --green:         #10b981;
+      --text-1:        #f8fafc;
+      --text-2:        #cbd5e1;
+      --text-3:        #64748b;
+      --text-4:        #334155;
+      --font-display:  'Outfit', system-ui, sans-serif;
+      --font-mono:     'JetBrains Mono', monospace;
+      --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+      --r-card:        20px;
+      --r-pill:        999px;
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; color-scheme: dark; overflow-x: hidden; }
+    body {
+      background: var(--bg);
+      color: var(--text-1);
+      font-family: var(--font-display);
+      font-size: 18px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ── NOISE (fixed, pointer-events-none) ── */
+    .noise {
+      position: fixed; inset: 0; z-index: 60;
+      pointer-events: none; opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 128px;
+    }
+
+    /* ── AMBIENT ── */
+    .ambient { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+    .ambient-orb { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.35; }
+    .ambient-orb-1 {
+      width: min(600px, 80vw); height: min(600px, 80vw);
+      background: radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%);
+      top: -15%; right: -10%;
+      animation: orb-drift 14s ease-in-out infinite alternate;
+    }
+    .ambient-orb-2 {
+      width: min(400px, 60vw); height: min(400px, 60vw);
+      background: radial-gradient(circle, rgba(59,130,246,0.07) 0%, transparent 70%);
+      bottom: 20%; left: -8%;
+      animation: orb-drift 18s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes orb-drift {
+      from { transform: translate(0,0) scale(1); }
+      to   { transform: translate(30px, 20px) scale(1.08); }
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.08s; }
+    .reveal-d2 { transition-delay: 0.16s; }
+    .reveal-d3 { transition-delay: 0.24s; }
+    .reveal-d4 { transition-delay: 0.34s; }
+    .reveal-d5 { transition-delay: 0.44s; }
+
+    /* ── MAIN NAV (scoped to .main-nav only) ── */
+    .main-nav {
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 50;
+      width: max-content;
+      max-width: calc(100vw - 24px);
+    }
+    .nav-pill {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 6px 6px 14px;
+      background: rgba(15,23,42,0.8);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--r-pill);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .nav-logo {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--amber);
+      letter-spacing: 0.06em;
+      padding-right: 12px;
+      border-right: 1px solid var(--border-mid);
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .nav-link {
+      padding: 6px 12px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-3);
+      border-radius: 8px;
+      white-space: nowrap;
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+    .nav-link:hover { color: var(--text-1); background: rgba(255,255,255,0.04); }
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 9px 9px 16px;
+      background: var(--amber);
+      color: #0a0a0a;
+      font-size: 1rem;
+      font-weight: 800;
+      border-radius: var(--r-pill);
+      margin-left: 4px;
+      white-space: nowrap;
+      transition: filter 0.2s ease, transform 0.2s var(--ease-spring);
+    }
+    .nav-cta:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .nav-cta:active { transform: scale(0.98); }
+    .nav-cta-icon {
+      width: 24px; height: 24px;
+      background: rgba(0,0,0,0.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.2s var(--ease-spring);
+    }
+    .nav-cta:hover .nav-cta-icon { transform: translate(2px,-2px); }
+
+    @media (max-width: 680px) {
+      .nav-links { display: none; }
+      .nav-logo { border-right: none; margin-right: 0; padding-right: 0; }
+    }
+
+    /* ── AGI COUNTDOWN ── */
+    .agi-section {
+      position: relative; z-index: 1;
+      border-bottom: 1px solid var(--border);
+      padding-top: clamp(80px, 14vw, 100px);
+    }
+    .agi-section .section-inner {
+      padding-top: clamp(16px, 2.5vw, 28px);
+      padding-bottom: clamp(28px, 4vw, 44px);
+    }
+    .agi-countdown {
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    .ac-clickable {
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .ac-clickable:hover { opacity: 0.85; }
+    .ac-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: clamp(0.78rem, 2vw, 0.9rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--amber);
+      margin-bottom: 14px;
+    }
+    .ac-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--amber);
+      box-shadow: 0 0 8px var(--amber);
+      flex-shrink: 0;
+      animation: ac-pulse 2s ease-in-out infinite;
+    }
+    @keyframes ac-pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.75); }
+    }
+    @media (prefers-reduced-motion: reduce) { .ac-dot { animation: none; } }
+    .ac-heading {
+      font-size: clamp(2rem, 7vw, 4rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-1);
+      margin-bottom: clamp(20px, 3vw, 32px);
+      line-height: 1.0;
+    }
+    .ac-highlight { color: var(--amber); }
+    .ac-display {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: clamp(6px, 2vw, 14px);
+      margin-bottom: 16px;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .ac-display.ac-ready { opacity: 1; transform: none; }
+    .ac-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(8px, 1.2vw, 12px);
+      min-width: 0;
+    }
+    .ac-value {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: clamp(60px, 15vw, 100px);
+      height: clamp(60px, 15vw, 100px);
+      background: rgba(30,41,59,0.5);
+      border: 1px solid rgba(148,163,184,0.12);
+      border-radius: 0;
+      font-family: var(--font-mono);
+      font-size: clamp(1.4rem, 5.5vw, 2.8rem);
+      font-weight: 900;
+      color: var(--text-1);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .ac-block-accent .ac-value {
+      color: var(--amber);
+      border-color: rgba(245,158,11,0.3);
+      background: rgba(245,158,11,0.06);
+      box-shadow: 2px 2px 0 rgba(245,158,11,0.15);
+    }
+    .ac-block-sec .ac-value { color: var(--text-2); }
+    .ac-label {
+      font-family: var(--font-mono);
+      font-size: clamp(0.68rem, 1.6vw, 0.82rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+    .ac-sep {
+      font-family: var(--font-mono);
+      font-size: clamp(1.2rem, 4vw, 2rem);
+      font-weight: 700;
+      color: rgba(245,158,11,0.25);
+      align-self: center;
+      margin-bottom: clamp(24px, 3.5vw, 36px);
+      flex-shrink: 0;
+    }
+    .ac-target {
+      font-size: clamp(0.9rem, 2.2vw, 1rem);
+      color: var(--text-3);
+      line-height: 1.5;
+    }
+    .ac-target strong { color: var(--amber); font-weight: 800; }
+    .ac-why-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: clamp(1rem, 2.2vw, 1.1rem);
+      font-weight: 700;
+      color: var(--amber);
+      border-bottom: 1px solid rgba(245,158,11,0.35);
+      padding-bottom: 2px;
+      transition: border-color 0.15s, opacity 0.15s;
+    }
+    .ac-why-link:hover { border-color: var(--amber); opacity: 0.8; }
+    @media (max-width: 380px) {
+      .ac-display { gap: 4px; }
+      .ac-label { letter-spacing: 0.04em; }
+    }
+
+    /* ── SECTION WRAPPER ── */
+    section { position: relative; z-index: 1; }
+    .section-inner {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-left: clamp(20px, 5vw, 60px);
+      padding-right: clamp(20px, 5vw, 60px);
+      box-sizing: border-box;
+    }
+
+    /* ── BUTTONS ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 14px 14px 24px;
+      background: var(--amber);
+      color: #0a0a0a;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.05rem;
+      border: none;
+      border-radius: var(--r-pill);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: filter 0.2s ease, transform 0.2s var(--ease-spring), box-shadow 0.2s ease;
+      box-shadow: 0 4px 20px rgba(245,158,11,0.28);
+    }
+    .btn-primary:hover { filter: brightness(1.08); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(245,158,11,0.42); }
+    .btn-primary:active { transform: scale(0.98); }
+    .btn-icon {
+      width: 28px; height: 28px;
+      background: rgba(0,0,0,0.16);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.2s var(--ease-spring);
+    }
+    .btn-primary:hover .btn-icon { transform: translate(2px,-2px); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 14px 22px;
+      background: transparent;
+      color: var(--text-2);
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.05rem;
+      border: 1px solid var(--border-mid);
+      border-radius: var(--r-pill);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+    .btn-ghost:hover { color: var(--text-1); border-color: var(--border-strong); background: rgba(255,255,255,0.04); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(36px, 6vw, 60px);
+      padding: clamp(32px, 5vw, 56px) clamp(20px, 5vw, 64px) clamp(64px, 10vw, 100px);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+      background-size: 64px 64px;
+      pointer-events: none;
+    }
+
+    .hero-video-wrap {
+      width: 100%;
+      max-width: min(820px, 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero-video-ratio {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border-mid);
+    }
+    .hero-video-ratio iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .hero-video-caption {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--text-4);
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .hero-text {
+      width: 100%;
+      max-width: min(760px, 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(20px, 3vw, 28px);
+      text-align: center;
+    }
+
+    .hero-headline {
+      font-size: clamp(3.2rem, 11vw, 8rem);
+      font-weight: 900;
+      line-height: 0.92;
+      letter-spacing: -0.04em;
+      color: var(--text-1);
+    }
+    .hero-headline em {
+      font-style: italic;
+      color: var(--amber);
+      display: block;
+    }
+
+    .hero-sub {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      color: var(--text-2);
+      line-height: 1.65;
+      max-width: 52ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-disclaimer {
+      font-size: 0.95rem;
+      color: var(--text-4);
+      line-height: 1.6;
+      max-width: 48ch;
+    }
+    .hero-disclaimer a { color: var(--text-3); text-decoration: underline; text-underline-offset: 2px; }
+    .hero-book-card {
+      background: linear-gradient(135deg, rgba(245,158,11,0.06) 0%, rgba(15,23,42,0.6) 60%);
+      border: 1px solid rgba(245,158,11,0.2);
+      border-radius: 18px;
+      padding: 24px;
+      display: flex;
+      gap: 22px;
+      align-items: flex-start;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: min(600px, 100%);
+    }
+    .hero-book-card::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle, rgba(245,158,11,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-book-card-cover {
+      flex-shrink: 0;
+      width: clamp(64px, 16vw, 88px);
+    }
+    .hero-book-card-cover .book-outer {
+      border-radius: 10px;
+      padding: 4px;
+      box-shadow: 4px 4px 20px rgba(0,0,0,0.4);
+      width: 100%;
+    }
+    .hero-book-card-cover .book-inner {
+      border-radius: 7px;
+    }
+    .hero-book-card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 0;
+    }
+    .hero-book-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--amber);
+    }
+    .hero-book-title {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      font-weight: 900;
+      color: var(--text-1);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .hero-book-pitch {
+      font-size: 1.05rem;
+      color: var(--text-2);
+      line-height: 1.65;
+      margin-bottom: 2px;
+    }
+    .hero-book-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+    .hero-book-bullets li {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-book-bullets li::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+    .hero-book-editions { display: flex; flex-direction: column; gap: 8px; }
+    .hero-book-cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-3);
+      text-decoration: none;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .hero-book-cta-secondary:hover { color: var(--amber); border-color: rgba(245,158,11,0.3); }
+    .hero-book-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--amber);
+      color: #1a0f00;
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 11px 18px;
+      border-radius: 8px;
+      letter-spacing: 0.01em;
+      transition: filter 0.2s var(--ease-out), transform 0.2s var(--ease-out);
+      align-self: flex-start;
+    }
+    .hero-book-cta:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .hero-book-cta:active { transform: translateY(0); }
+
+    .book-frame {
+      position: relative;
+      width: 100%;
+      max-width: min(380px, 80vw);
+    }
+    .book-outer {
+      background: rgba(245,158,11,0.05);
+      border: 1px solid rgba(245,158,11,0.14);
+      border-radius: 28px;
+      padding: 10px;
+      box-shadow: 0 0 60px rgba(245,158,11,0.08), 0 32px 64px rgba(0,0,0,0.5);
+    }
+    .book-inner {
+      background: var(--surface);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.07);
+    }
+    .book-cover { width: 100%; height: auto; display: block; }
+    .book-placeholder {
+      width: 100%; aspect-ratio: 2/3;
+      background: linear-gradient(145deg, var(--surface-2), var(--surface));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700;
+      letter-spacing: 0.1em; color: var(--amber);
+      text-align: center; padding: 20px; line-height: 2;
+    }
+
+    .stat-chip {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: rgba(9,18,36,0.9);
+      border: 1px solid var(--border-mid);
+      border-radius: 14px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+    }
+    .stat-chip-1 {
+      bottom: -14px; left: -14px;
+      animation: chip-float 5s ease-in-out infinite;
+    }
+    .stat-chip-2 {
+      top: 20px; right: -14px;
+      animation: chip-float 5s ease-in-out infinite 2.5s;
+    }
+    @keyframes chip-float {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-7px); }
+    }
+    @media (max-width: 480px) {
+      .stat-chip-1 { left: 0; bottom: -10px; }
+      .stat-chip-2 { right: 0; top: 10px; }
+    }
+    .chip-val {
+      font-family: var(--font-mono);
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .chip-val.danger     { color: #fb923c; }
+    .chip-val.opportunity { color: var(--green); }
+    .chip-label {
+      font-size: 0.68rem;
+      color: var(--text-3);
+      line-height: 1.3;
+      max-width: 80px;
+    }
+
+    .tag {
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .tag-red   { background: rgba(239,68,68,0.12);   color: #ef4444; }
+    .tag-amber { background: var(--amber-dim);        color: var(--amber); }
+    .tag-blue  { background: rgba(59,130,246,0.1);   color: var(--blue); }
+    .tag-green { background: rgba(16,185,129,0.1);   color: var(--green); }
+
+    /* ── VIDEO EMBED ── */
+    .video-section {
+      position: relative; z-index: 1;
+      padding: clamp(40px, 6vw, 64px) clamp(20px, 5vw, 60px);
+      border-top: 1px solid var(--border);
+    }
+    .video-wrap {
+      max-width: min(720px, 100%);
+      margin: 0 auto;
+    }
+    .video-ratio {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border-mid);
+    }
+    .video-ratio iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-caption {
+      margin-top: 14px;
+      font-size: 1rem;
+      color: var(--text-3);
+      text-align: center;
+      line-height: 1.6;
+    }
+    .video-caption strong { color: var(--text-2); font-weight: 600; }
+    .video-credit {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-4);
+    }
+
+    /* ── SECTION HEADINGS ── */
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      opacity: 0.85;
+      margin-bottom: 16px;
+    }
+    .section-heading {
+      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      color: var(--text-1);
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      color: var(--text-2);
+      line-height: 1.7;
+      max-width: 50ch;
+    }
+
+    /* ── SITUATION ── */
+    #situation {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .situation-header { margin-bottom: clamp(36px, 5vw, 56px); }
+
+    .bento {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 10px;
+    }
+    .bento-label-row {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 8px 0 2px;
+    }
+    .row-line { flex: 1; height: 1px; }
+    .row-line.danger     { background: rgba(251,146,60,0.2); }
+    .row-line.opportunity { background: rgba(16,185,129,0.2); }
+    .row-badge {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: var(--r-pill);
+      white-space: nowrap;
+    }
+    .row-badge.danger      { background: rgba(251,146,60,0.12); color: #fb923c; }
+    .row-badge.opportunity { background: rgba(16,185,129,0.1);  color: var(--green); }
+
+    .bento-cell {
+      border-radius: var(--r-card);
+      padding: clamp(20px, 3vw, 28px);
+      border: 1px solid var(--border-mid);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 0;
+      overflow: hidden;
+      transition: border-color 0.2s ease, transform 0.2s var(--ease-out);
+    }
+    .bento-cell:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+
+    .cell-p-wide { grid-column: span 5; background: linear-gradient(145deg, rgba(251,146,60,0.07) 0%, rgba(15,23,42,0.3) 100%); }
+    .cell-p-mid  { grid-column: span 4; background: linear-gradient(150deg, rgba(251,146,60,0.04) 0%, rgba(15,23,42,0.3) 100%); }
+    .cell-p-sm   { grid-column: span 3; background: linear-gradient(150deg, rgba(251,146,60,0.04) 0%, rgba(15,23,42,0.3) 100%); }
+    .cell-o-wide { grid-column: span 5; background: linear-gradient(145deg, rgba(16,185,129,0.07) 0%, rgba(15,23,42,0.3) 100%); }
+    .cell-o-mid  { grid-column: span 4; background: linear-gradient(150deg, rgba(16,185,129,0.04) 0%, rgba(15,23,42,0.3) 100%); }
+    .cell-o-sm   { grid-column: span 3; background: linear-gradient(150deg, rgba(16,185,129,0.04) 0%, rgba(15,23,42,0.3) 100%); }
+
+    @media (max-width: 860px) {
+      .bento { grid-template-columns: 1fr 1fr; }
+      .cell-p-wide, .cell-p-mid, .cell-p-sm,
+      .cell-o-wide, .cell-o-mid, .cell-o-sm { grid-column: span 1; }
+    }
+    @media (max-width: 540px) {
+      .bento { grid-template-columns: 1fr; }
+    }
+
+    .stat-number {
+      font-family: var(--font-mono);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1;
+    }
+    .stat-number.danger      { color: #fb923c; }
+    .stat-number.opportunity { color: var(--green); }
+    .stat-desc   { font-size: 1.15rem; color: var(--text-2); line-height: 1.6; flex: 1; }
+    .stat-source {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      color: var(--text-4);
+      margin-top: auto;
+    }
+    .stat-source:hover { color: var(--text-3); }
+
+    /* ── ROBOT COST ── */
+    .robot-cost-section {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .robot-cost-intro { max-width: 640px; margin: 0 auto clamp(40px, 6vw, 64px); text-align: center; }
+    .robot-myth-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 4vw, 48px);
+      flex-wrap: wrap;
+      margin-bottom: clamp(40px, 6vw, 64px);
+    }
+    .myth-old-price {
+      font-family: var(--font-mono);
+      font-size: clamp(2.2rem, 8vw, 4.5rem);
+      font-weight: 900;
+      color: var(--text-4);
+      text-decoration: line-through;
+      text-decoration-color: #ef4444;
+      text-decoration-thickness: 4px;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .myth-arrow {
+      font-size: clamp(1.4rem, 4vw, 2.4rem);
+      color: var(--text-4);
+      flex-shrink: 0;
+    }
+    .myth-new {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    .myth-new-price {
+      font-family: var(--font-mono);
+      font-size: clamp(2.2rem, 8vw, 4.5rem);
+      font-weight: 900;
+      color: var(--amber);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .myth-new-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-3);
+      font-family: var(--font-mono);
+    }
+    .robot-opts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(12px, 2vw, 20px);
+      margin-bottom: clamp(36px, 6vw, 56px);
+    }
+    @media (max-width: 700px) { .robot-opts-grid { grid-template-columns: 1fr; } }
+    .robot-opt {
+      background: var(--surface-1);
+      border: 1px solid var(--border-mid);
+      border-radius: 14px;
+      padding: clamp(18px, 3vw, 28px);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.15s ease;
+    }
+    .robot-opt:hover { border-color: var(--border-strong); }
+    .robot-opt-featured {
+      border-color: rgba(245,158,11,0.3);
+      background: rgba(245,158,11,0.04);
+    }
+    .robot-opt-featured:hover { border-color: rgba(245,158,11,0.5); }
+    .robot-opt-tier {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-4);
+    }
+    .robot-opt-featured .robot-opt-tier { color: var(--amber); }
+    .robot-opt-price {
+      font-family: var(--font-mono);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 900;
+      color: var(--text-1);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .robot-opt-featured .robot-opt-price { color: var(--amber); }
+    .robot-opt-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-1);
+      margin-top: 2px;
+    }
+    .robot-opt-desc {
+      font-size: 0.92rem;
+      color: var(--text-3);
+      line-height: 1.6;
+    }
+    .robot-opt-link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-4);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: var(--font-mono);
+      margin-top: auto;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.15s ease;
+    }
+    .robot-opt-link:hover { color: var(--amber); }
+    .robot-opt-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .robot-opt-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 160px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      margin-bottom: 10px;
+    }
+    .robot-opt-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .robot-opt-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-4);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      position: absolute;
+      inset: 0;
+    }
+
+    /* ── TELEOP JOBS ── */
+    .teleop-section {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .teleop-intro {
+      max-width: 680px;
+      margin: 0 auto clamp(48px, 7vw, 72px);
+      text-align: center;
+    }
+    .teleop-contrast {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(12px, 2vw, 20px);
+      margin-bottom: clamp(48px, 7vw, 72px);
+    }
+    @media (max-width: 600px) { .teleop-contrast { grid-template-columns: 1fr; } }
+    .teleop-side {
+      border: 1px solid var(--border-mid);
+      border-radius: 14px;
+      padding: clamp(20px, 3vw, 32px);
+    }
+    .teleop-side-now {
+      background: rgba(239,68,68,0.04);
+      border-color: rgba(239,68,68,0.18);
+    }
+    .teleop-side-then {
+      background: rgba(16,185,129,0.04);
+      border-color: rgba(16,185,129,0.18);
+    }
+    .teleop-intro .section-sub {
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      color: var(--text-1);
+    }
+    .teleop-side-label {
+      font-family: var(--font-mono);
+      font-size: clamp(0.85rem, 1.6vw, 1rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .teleop-side-now .teleop-side-label { color: #f87171; }
+    .teleop-side-then .teleop-side-label { color: #34d399; }
+    .teleop-side-headline {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      color: var(--text-1);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .teleop-side-body {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      color: var(--text-1);
+      line-height: 1.65;
+    }
+    .teleop-pivot {
+      text-align: center;
+      margin-bottom: clamp(48px, 7vw, 72px);
+    }
+    .teleop-pivot-q {
+      font-size: clamp(1.6rem, 4.5vw, 2.8rem);
+      font-weight: 900;
+      color: var(--text-1);
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .teleop-pivot-q em {
+      color: var(--amber);
+      font-style: italic;
+    }
+    .teleop-pivot-sub {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      color: var(--text-1);
+      line-height: 1.7;
+      max-width: 52ch;
+      margin: 0 auto;
+    }
+    .teleop-jobs-label {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-4);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .teleop-jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(10px, 1.8vw, 16px);
+      margin-bottom: clamp(32px, 5vw, 48px);
+    }
+    @media (max-width: 580px) { .teleop-jobs-grid { grid-template-columns: 1fr; } }
+    .teleop-job {
+      background: var(--surface-1);
+      border: 1px solid var(--border-mid);
+      border-radius: 12px;
+      padding: clamp(18px, 2.5vw, 26px);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: border-color 0.15s ease;
+    }
+    .teleop-job:hover { border-color: rgba(245,158,11,0.3); }
+    .teleop-job-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(245,158,11,0.08);
+      border: 1px solid rgba(245,158,11,0.15);
+      border-radius: 8px;
+    }
+    .teleop-job-body { flex: 1; min-width: 0; }
+    .teleop-job-title {
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      font-weight: 800;
+      color: var(--text-1);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .teleop-job-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .teleop-job-bullets li {
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      color: var(--text-1);
+      line-height: 1.5;
+      padding-left: 18px;
+      position: relative;
+    }
+    .teleop-job-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+    .teleop-job-horizon {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--amber);
+      margin-top: 6px;
+      display: block;
+    }
+    .teleop-close {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding-top: clamp(28px, 4vw, 40px);
+    }
+    .teleop-close-text {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      color: var(--text-1);
+      line-height: 1.7;
+      max-width: 54ch;
+      margin: 0 auto 20px;
+    }
+    .teleop-close-text strong { color: var(--text-1); }
+
+    /* ── PILLARS ── */
+    #pillars {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .pillars-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(24px, 4vw, 48px);
+      align-items: end;
+      margin-bottom: clamp(36px, 5vw, 56px);
+    }
+    @media (max-width: 640px) {
+      .pillars-intro { grid-template-columns: 1fr; }
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 10px;
+    }
+    @media (max-width: 640px) {
+      .pillars-grid { grid-template-columns: 1fr; }
+    }
+
+    .pillar-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: clamp(24px, 3vw, 36px);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--r-card);
+      text-decoration: none;
+      overflow: hidden;
+      min-width: 0;
+      transition: border-color 0.25s ease, transform 0.25s var(--ease-out), box-shadow 0.25s ease;
+    }
+    .pillar-card::after {
+      content: ''; position: absolute; inset: 0;
+      border-radius: inherit;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      pointer-events: none;
+    }
+    .pillar-card:hover { transform: translateY(-3px); }
+    .pillar-01 { background: linear-gradient(145deg, rgba(245,158,11,0.07) 0%, rgba(15,23,42,0.4) 100%); }
+    .pillar-01:hover { border-color: rgba(245,158,11,0.35); box-shadow: 0 14px 40px rgba(245,158,11,0.09); }
+    .pillar-02 { background: linear-gradient(145deg, rgba(59,130,246,0.06) 0%, rgba(15,23,42,0.4) 100%); }
+    .pillar-02:hover { border-color: rgba(59,130,246,0.35); box-shadow: 0 14px 40px rgba(59,130,246,0.09); }
+    .pillar-03 {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: center;
+      gap: clamp(20px, 3vw, 40px);
+      background: linear-gradient(145deg, rgba(16,185,129,0.06) 0%, rgba(15,23,42,0.4) 100%);
+    }
+    .pillar-03:hover { border-color: rgba(16,185,129,0.35); box-shadow: 0 14px 40px rgba(16,185,129,0.09); }
+    @media (max-width: 640px) {
+      .pillar-03 { grid-column: 1; flex-direction: column; align-items: flex-start; }
+    }
+
+    .pillar-num { font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700; letter-spacing: 0.1em; }
+    .pillar-01 .pillar-num { color: var(--amber); }
+    .pillar-02 .pillar-num { color: var(--blue); }
+    .pillar-03 .pillar-num { color: var(--green); }
+    .pillar-title {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 800;
+      color: var(--text-1);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .pillar-body { font-size: clamp(1.1rem, 2.2vw, 1.2rem); color: var(--text-2); line-height: 1.7; flex: 1; }
+    .pillar-link { display: inline-flex; align-items: center; gap: 6px; font-size: 1.1rem; font-weight: 600; margin-top: auto; }
+    .pillar-01 .pillar-link { color: var(--amber); }
+    .pillar-02 .pillar-link { color: var(--blue); }
+    .pillar-03 .pillar-link { color: var(--green); }
+    .pillar-03-main { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+    .pillar-icon-wrap {
+      width: 52px; height: 52px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 14px;
+      border: 1px solid rgba(16,185,129,0.2);
+      background: rgba(16,185,129,0.08);
+    }
+
+    /* ── WINDOW / TAKEOFF ── */
+    #window {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .takeoff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(32px, 5vw, 56px);
+      align-items: start;
+    }
+    @media (max-width: 720px) {
+      .takeoff-grid { grid-template-columns: 1fr; }
+    }
+    .takeoff-statement {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--text-1);
+      margin-bottom: 18px;
+    }
+    .takeoff-statement strong { color: var(--amber); }
+    .takeoff-para { font-size: clamp(1.15rem, 2.5vw, 1.3rem); color: var(--text-2); line-height: 1.75; margin-bottom: 10px; }
+
+    .takeoff-cards { display: flex; flex-direction: column; gap: 10px; }
+
+    .scenario-outer {
+      border-radius: 22px;
+      padding: 2px;
+    }
+    .scenario-soft .scenario-outer { border: 1px solid rgba(59,130,246,0.2); background: rgba(59,130,246,0.04); }
+    .scenario-hard .scenario-outer { border: 1px solid rgba(245,158,11,0.2); background: rgba(245,158,11,0.04); }
+    .scenario-inner {
+      border-radius: 20px;
+      padding: clamp(18px, 2.5vw, 24px) clamp(20px, 2.5vw, 28px);
+      background: var(--surface);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+      border-top: 3px solid;
+    }
+    .scenario-soft .scenario-inner { border-color: var(--blue); }
+    .scenario-hard .scenario-inner { border-color: var(--amber); }
+    .scenario-tag { font-family: var(--font-mono); font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
+    .scenario-soft .scenario-tag { color: var(--blue); }
+    .scenario-hard .scenario-tag { color: var(--amber); }
+    .scenario-title { font-size: 1.4rem; font-weight: 700; color: var(--text-1); margin-bottom: 10px; }
+    .scenario-body { font-size: 1.1rem; color: var(--text-2); line-height: 1.7; }
+
+    /* ── STEPS ── */
+    #steps {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: clamp(36px, 5vw, 56px);
+    }
+    @media (max-width: 640px) {
+      .steps-grid { grid-template-columns: 1fr; }
+    }
+
+    .step-outer {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-mid);
+      border-radius: 22px;
+      padding: 2px;
+      min-width: 0;
+      overflow: hidden;
+      transition: border-color 0.25s ease, transform 0.25s var(--ease-out);
+    }
+    .step-outer:hover { border-color: var(--border-strong); transform: translateY(-3px); }
+    .step-inner {
+      background: var(--surface);
+      border-radius: 20px;
+      padding: clamp(22px, 3vw, 32px) clamp(22px, 3vw, 36px);
+      height: 100%;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .step-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+    .step-num { font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700; letter-spacing: 0.1em; color: var(--amber); }
+    .step-cost {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-3);
+      padding: 5px 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+    .step-title { font-size: clamp(1.4rem, 3vw, 1.7rem); font-weight: 800; color: var(--text-1); letter-spacing: -0.02em; line-height: 1.2; }
+    .step-body { font-size: clamp(1.1rem, 2.2vw, 1.2rem); color: var(--text-2); line-height: 1.7; flex: 1; }
+    .step-caveat {
+      font-size: 1.05rem; color: var(--text-3); line-height: 1.65;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.02);
+      border-left: 2px solid var(--border-mid);
+      border-radius: 0 6px 6px 0;
+    }
+    .step-link { display: inline-flex; align-items: center; gap: 6px; font-size: 1.1rem; font-weight: 600; color: var(--amber); margin-top: auto; }
+
+    .steps-footer {
+      display: flex; align-items: center; gap: 20px;
+      margin-top: 18px;
+    }
+    .steps-footer-line { flex: 1; height: 1px; background: var(--border-mid); }
+    .steps-footer-text {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--text-4);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ── TIMELINE ── */
+    #timeline {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .timeline-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(24px, 4vw, 48px);
+      align-items: end;
+      margin-bottom: clamp(36px, 5vw, 56px);
+    }
+    @media (max-width: 640px) {
+      .timeline-header { grid-template-columns: 1fr; }
+    }
+    .timeline-track {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .timeline-track::before {
+      content: '';
+      position: absolute;
+      top: 9px; left: 8px; right: 8px; height: 1px;
+      background: linear-gradient(90deg, var(--amber), rgba(245,158,11,0.15));
+    }
+    @media (max-width: 680px) {
+      .timeline-track { grid-template-columns: 1fr 1fr; }
+      .timeline-track::before { display: none; }
+    }
+    @media (max-width: 400px) {
+      .timeline-track { grid-template-columns: 1fr; }
+    }
+
+    .timeline-item { padding: 0 12px 0 0; min-width: 0; overflow: hidden; }
+    .timeline-dot-row { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+    .timeline-dot {
+      width: 18px; height: 18px; flex-shrink: 0;
+      border-radius: 50%;
+      border: 3px solid var(--amber);
+      background: var(--bg);
+      position: relative; z-index: 1;
+    }
+    .timeline-dot.now {
+      background: var(--amber);
+      box-shadow: 0 0 0 6px rgba(245,158,11,0.14);
+      animation: dot-pulse 2s ease-in-out infinite;
+    }
+    @keyframes dot-pulse {
+      0%,100% { box-shadow: 0 0 0 6px rgba(245,158,11,0.14); }
+      50%      { box-shadow: 0 0 0 10px rgba(245,158,11,0.07); }
+    }
+    .timeline-period { font-family: var(--font-mono); font-size: 1.05rem; font-weight: 700; color: var(--amber); letter-spacing: 0.05em; }
+    .timeline-label { font-size: 1.4rem; font-weight: 700; color: var(--text-1); margin-bottom: 10px; }
+    .timeline-desc { font-size: 1.1rem; color: var(--text-3); line-height: 1.7; }
+
+    /* ── CHAPTERS ── */
+    #chapters {
+      padding: clamp(64px, 10vw, 120px) 0;
+      border-top: 1px solid var(--border);
+    }
+    .chapters-header { margin-bottom: clamp(28px, 4vw, 48px); }
+    .chapter-part-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 8px 0 6px;
+    }
+    .chapter-part-label {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      white-space: nowrap;
+    }
+    .chapter-part-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-3);
+    }
+    .chapters-list {
+      border: 1px solid var(--border-mid);
+      border-radius: var(--r-card);
+      overflow: hidden;
+    }
+    .chapter-row {
+      display: flex; align-items: center; gap: 16px;
+      padding: clamp(14px, 2.5vw, 18px) clamp(16px, 3vw, 24px);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s ease;
+    }
+    .chapter-row:last-child { border-bottom: none; }
+    .chapter-row:hover { background: rgba(255,255,255,0.025); }
+    .chapter-row-here {
+      background: rgba(245,158,11,0.04);
+      border-left: 3px solid var(--amber);
+    }
+    .chapter-row-here:hover { background: rgba(245,158,11,0.07); }
+    .chapter-here-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      background: rgba(245,158,11,0.1);
+      border: 1px solid rgba(245,158,11,0.25);
+      border-radius: 6px;
+      padding: 3px 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .chapter-here-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--amber);
+      box-shadow: 0 0 6px var(--amber);
+      animation: here-pulse 2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes here-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.7); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .chapter-here-dot { animation: none; }
+    }
+    .chapter-num { font-family: var(--font-mono); font-size: 1.05rem; font-weight: 700; color: var(--amber); letter-spacing: 0.06em; width: 36px; flex-shrink: 0; }
+    .chapter-text { flex: 1; min-width: 0; }
+    .chapter-title { font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 700; color: var(--text-1); margin-bottom: 5px; }
+    .chapter-desc { font-size: 1rem; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .chapter-arrow { color: var(--text-4); flex-shrink: 0; transition: color 0.15s ease, transform 0.15s ease; }
+    .chapter-row:hover .chapter-arrow { color: var(--amber); transform: translateX(3px); }
+
+    /* ── BOOK PREORDER ── */
+    .book-preorder-section {
+      padding: clamp(48px, 8vw, 96px) 0;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── CTA ── */
+    #act {
+      padding: clamp(64px, 10vw, 120px) 0 clamp(48px, 8vw, 80px);
+      border-top: 1px solid var(--border);
+    }
+    .cta-inner {
+      position: relative;
+      max-width: min(740px, 100%);
+      margin: 0 auto;
+      text-align: center;
+      padding: clamp(40px, 6vw, 64px) clamp(24px, 5vw, 56px);
+      border: 1px solid var(--border-mid);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(245,158,11,0.04) 0%, rgba(15,23,42,0.5) 100%);
+      box-shadow: 0 0 60px rgba(245,158,11,0.05), 0 40px 80px rgba(0,0,0,0.28);
+      overflow: hidden;
+    }
+    .cta-inner::before {
+      content: ''; position: absolute; inset: 0;
+      border-radius: inherit;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.07);
+      pointer-events: none;
+    }
+    .cta-glow {
+      position: absolute; pointer-events: none;
+      width: 350px; height: 350px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245,158,11,0.1) 0%, transparent 70%);
+      top: -175px; left: 50%; transform: translateX(-50%);
+      filter: blur(40px);
+    }
+    .cta-heading {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: var(--text-1);
+      margin-bottom: 16px;
+    }
+    .cta-sub {
+      font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+      color: var(--text-2);
+      line-height: 1.7;
+      max-width: 46ch;
+      margin: 0 auto 28px;
+    }
+    .cta-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 36px; }
+    .cta-divider { height: 1px; background: var(--border); margin: 0 calc(-1 * clamp(24px, 5vw, 56px)) 28px; }
+    .cta-email-label { font-size: 1rem; color: var(--text-3); margin-bottom: 16px; }
+    .edition-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .edition-opt input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+    .edition-opt label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border: 1px solid var(--border-mid);
+      border-radius: var(--r-pill);
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-3);
+      cursor: pointer;
+      transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+      white-space: nowrap;
+    }
+    .edition-opt input[type="radio"]:checked + label {
+      color: var(--amber);
+      border-color: rgba(245,158,11,0.45);
+      background: rgba(245,158,11,0.08);
+    }
+    .edition-opt label:hover { color: var(--text-1); border-color: var(--border-strong); }
+    .edition-limited-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--amber);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .email-form { display: flex; gap: 8px; max-width: min(420px, 100%); margin: 0 auto; }
+    .email-input {
+      flex: 1; min-width: 0;
+      padding: 13px 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--r-pill);
+      color: var(--text-1);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .email-input::placeholder { color: var(--text-4); }
+    .email-input:focus { border-color: rgba(245,158,11,0.4); }
+    .email-submit {
+      flex-shrink: 0;
+      padding: 11px 18px;
+      background: var(--amber);
+      color: #0a0a0a;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.05rem;
+      border: none;
+      border-radius: var(--r-pill);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: filter 0.2s ease, transform 0.2s var(--ease-spring);
+    }
+    .email-submit:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .email-submit:active { transform: scale(0.98); }
+    @media (max-width: 420px) {
+      .email-form { flex-direction: column; }
+      .email-submit { width: 100%; }
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: clamp(20px, 3vw, 32px) clamp(20px, 5vw, 48px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-logo { font-family: var(--font-mono); font-size: 1rem; font-weight: 700; color: var(--amber); letter-spacing: 0.06em; }
+    .footer-links { display: flex; align-items: center; gap: clamp(16px, 2.5vw, 28px); flex-wrap: wrap; }
+    .footer-link { font-size: 1rem; color: var(--text-4); transition: color 0.15s ease; white-space: nowrap; }
+    .footer-link:hover { color: var(--text-3); }
+    .footer-legal { font-size: 0.9rem; color: var(--text-4); }
+    @media (max-width: 560px) {
+      .site-footer { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ── UTILS ── */
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    /* ── LOOP DIAGRAM ── */
+    .loop-figure {
+      margin: 2.5rem auto 3rem;
+      max-width: 540px;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+    .loop-figure.revealed { opacity: 1; transform: none; }
+    .loop-figure svg { display: block; width: 100%; height: auto; }
+    .loop-center-label {
+      font-family: var(--font-mono);
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      fill: #f1f5f9;
+    }
+    .loop-node-num {
+      font-family: var(--font-mono);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .loop-node-name {
+      font-family: var(--font-mono);
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      fill: #f1f5f9;
+    }
+    .loop-node-tap { font-size: 18px; opacity: 0.8; }
+    .loop-edge-label {
+      font-family: var(--font-mono);
+      font-size: 17px;
+      fill: #cbd5e1;
+    }
+    .loop-node {
+      opacity: 0;
+      transition: opacity 0.7s ease;
+      cursor: pointer;
+      outline: none;
+    }
+    .loop-node-hit { fill: transparent; }
+    .loop-node-ring { transition: filter 0.25s ease, stroke-width 0.25s ease; }
+    .loop-node:hover .loop-node-ring,
+    .loop-node:focus-visible .loop-node-ring { stroke-width: 3; filter: drop-shadow(0 0 12px currentColor); }
+    .loop-node-1 .loop-node-ring { color: rgba(245,158,11,0.7); }
+    .loop-node-2 .loop-node-ring { color: rgba(59,130,246,0.7); }
+    .loop-node-3 .loop-node-ring { color: rgba(16,185,129,0.7); }
+    .loop-figure.revealed .loop-node-1 { opacity: 1; transition-delay: 0.15s; }
+    .loop-figure.revealed .loop-node-2 { opacity: 1; transition-delay: 0.35s; }
+    .loop-figure.revealed .loop-node-3 { opacity: 1; transition-delay: 0.55s; }
+    .loop-edge {
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      transition: stroke-dashoffset 1.6s ease 0.7s;
+    }
+    .loop-figure.revealed .loop-edge { stroke-dashoffset: 0; }
+    .loop-orbit-flow {
+      stroke-dasharray: 5 9;
+      animation: loop-orbit 1.6s linear infinite;
+    }
+    @keyframes loop-orbit { to { stroke-dashoffset: -14; } }
+    .loop-caption {
+      margin-top: 1rem;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: #94a3b8;
+    }
+    @media (max-width: 640px) {
+      .loop-center-label { font-size: 22px; }
+      .loop-node-num { font-size: 26px; }
+      .loop-node-name { font-size: 20px; }
+      .loop-node-tap { font-size: 20px; }
+      .loop-edge-label { font-size: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .loop-figure, .loop-node, .loop-edge { transition: none; opacity: 1; stroke-dashoffset: 0; }
+      .loop-orbit-flow { animation: none; }
+    }
+    /* loop modal */
+    .loop-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(2,6,23,0.82);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .loop-modal-overlay.open { display: flex; }
+    .loop-modal {
+      background: #0f1f3d;
+      border: 1px solid rgba(148,163,184,0.18);
+      border-radius: 4px;
+      padding: clamp(1.5rem,4vw,2.5rem);
+      max-width: 480px;
+      width: 100%;
+      position: relative;
+    }
+    .loop-modal-close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: none;
+      border: 1px solid rgba(148,163,184,0.2);
+      color: #94a3b8;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .loop-modal-close:hover { color: #f1f5f9; border-color: rgba(148,163,184,0.4); }
+    .loop-modal-title {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 0 0 1rem;
+    }
+    .loop-modal-body { font-size: 1rem; color: #cbd5e1; line-height: 1.7; margin: 0 0 0.75rem; }
+    .loop-modal-feeds { font-size: 0.88rem; color: #64748b; font-style: italic; line-height: 1.6; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+  </div>
+
+  <!-- ── MAIN NAV ── -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-pill">
+      <span class="nav-logo">STS</span>
+      <ul class="nav-links" role="list">
+        <li><a href="/blueprint" class="nav-link">Blueprint</a></li>
+        <li><a href="/book" class="nav-link">Book</a></li>
+        <li><a href="/evidence" class="nav-link">Evidence</a></li>
+        <li><a href="/checklist" class="nav-link">Checklist</a></li>
+      </ul>
+      <a href="/early-access" class="nav-cta">
+        Get Early Access
+        <span class="nav-cta-icon" aria-hidden="true">
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ── AGI COUNTDOWN ── -->
+  <section class="agi-section" aria-label="AGI Countdown">
+    <div class="section-inner">
+      <a href="./why.html" class="agi-countdown ac-clickable" aria-label="Countdown to AGI — tap to learn why 2027">
+        <div class="ac-eyebrow">
+          <span class="ac-dot"></span>
+          <span>The Clock Is Running</span>
+        </div>
+        <h2 class="ac-heading">Countdown to <span class="ac-highlight">AGI</span></h2>
+        <div class="ac-display" id="ac-display" role="timer" aria-label="Time remaining until AGI horizon">
+          <div class="ac-block ac-block-accent">
+            <span class="ac-value" id="ac-years">--</span>
+            <span class="ac-label">Years</span>
+          </div>
+          <div class="ac-sep" aria-hidden="true">:</div>
+          <div class="ac-block">
+            <span class="ac-value" id="ac-days">---</span>
+            <span class="ac-label">Days</span>
+          </div>
+          <div class="ac-sep" aria-hidden="true">:</div>
+          <div class="ac-block">
+            <span class="ac-value" id="ac-hours">--</span>
+            <span class="ac-label">Hrs</span>
+          </div>
+          <div class="ac-sep" aria-hidden="true">:</div>
+          <div class="ac-block">
+            <span class="ac-value" id="ac-mins">--</span>
+            <span class="ac-label">Min</span>
+          </div>
+          <div class="ac-sep" aria-hidden="true">:</div>
+          <div class="ac-block ac-block-sec">
+            <span class="ac-value" id="ac-secs">--</span>
+            <span class="ac-label">Sec</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── HERO ── -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="hero section-inner" style="max-width:none; padding-left:clamp(20px,5vw,64px); padding-right:clamp(20px,5vw,64px);">
+
+      <!-- Video FIRST -->
+      <div class="hero-video-wrap reveal">
+        <div class="hero-video-ratio">
+          <iframe
+            src="https://www.youtube.com/embed/YZH1csMhnDo"
+            title="BotQ: Figure ramping F.03 production"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Headline + text -->
+      <div class="hero-text reveal reveal-d1">
+        <h1 class="hero-headline" id="hero-heading">
+          The future<br>isn't coming.
+          <em>It's here.</em>
+        </h1>
+        <p class="hero-sub">
+          AI is rewriting every industry. The old playbook built around mortgages, career ladders, and retiring at 65 was designed for a world that no longer exists. Inside that disruption is an opportunity most people haven't seen yet.
+        </p>
+        <div class="hero-actions">
+          <a href="/blueprint" class="btn-primary">
+            Read the Blueprint
+            <span class="btn-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a href="#pillars" class="btn-ghost">
+            See 3 Pillars
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 3L7 11M7 11L4 8M7 11L10 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p class="hero-disclaimer">
+          For informational and educational purposes only. Not legal, financial, or professional advice.
+          <br><a href="/disclaimer">Full disclaimer.</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── ROBOT COST REALITY ── -->
+  <section class="robot-cost-section" aria-labelledby="robot-cost-heading">
+    <div class="section-inner">
+      <div class="robot-cost-intro reveal">
+        <p class="section-label">Reality Check</p>
+        <h2 class="section-heading" id="robot-cost-heading">The price barrier<br>just <em>collapsed.</em></h2>
+        <p class="section-sub">People assume home robots cost a quarter million dollars. They did. They don't anymore. The cost curve has fallen faster than solar, and it's not slowing down.</p>
+      </div>
+
+      <div class="robot-myth-bar reveal reveal-d1">
+        <span class="myth-old-price">$100,000+</span>
+        <span class="myth-arrow">&#8594;</span>
+        <div class="myth-new">
+          <span class="myth-new-price">~$1,000</span>
+          <span class="myth-new-label">Dual-arm mobile robot. Today.</span>
+        </div>
+      </div>
+
+      <div class="robot-opts-grid">
+        <div class="robot-opt reveal">
+          <div class="robot-opt-img-wrap">
+            <span class="robot-opt-img-placeholder">LeRobot SO-ARM</span>
+            <img src="https://img.youtube.com/vi/oitT8geMat0/maxresdefault.jpg" alt="LeRobot SO-ARM101 robot arm demonstration" loading="lazy" onerror="this.style.display='none'" />
+          </div>
+          <span class="robot-opt-tier">Entry Level</span>
+          <span class="robot-opt-price">$300-500</span>
+          <span class="robot-opt-name">LeRobot SO-ARM</span>
+          <p class="robot-opt-desc">Open-source, 3D-printable robot arm from Hugging Face. Handles small manipulation tasks autonomously using state-of-the-art AI. Build one this weekend.</p>
+          <a href="https://github.com/huggingface/lerobot" class="robot-opt-link" target="_blank" rel="noopener noreferrer">Open source on GitHub <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6H10M10 6L7 3M10 6L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="robot-opt robot-opt-featured reveal reveal-d1">
+          <div class="robot-opt-img-wrap">
+            <span class="robot-opt-img-placeholder">AhaRobot</span>
+            <img src="https://arxiv.org/html/2503.10070v1/x1.png" alt="AhaRobot dual-arm mobile robot overview" loading="lazy" onerror="this.style.display='none'" />
+          </div>
+          <span class="robot-opt-tier">Recommended</span>
+          <span class="robot-opt-price">~$1,000</span>
+          <span class="robot-opt-name">AhaRobot</span>
+          <p class="robot-opt-desc">Fully open-source dual-arm mobile robot. Does your laundry, cleans up, manipulates objects bimanually. 1/15 the cost of comparable systems. Add a $2K compute option for onboard AI.</p>
+          <a href="https://aha-robot.github.io/" class="robot-opt-link" target="_blank" rel="noopener noreferrer">Project page <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6H10M10 6L7 3M10 6L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="robot-opt reveal reveal-d2">
+          <div class="robot-opt-img-wrap">
+            <span class="robot-opt-img-placeholder">XLeRobot</span>
+            <img src="https://github.com/user-attachments/assets/f9c454ee-2c46-42b4-a5d7-88834a1c95ab" alt="XLeRobot dual-arm mobile household robot on IKEA cart" loading="lazy" onerror="this.style.display='none'" />
+          </div>
+          <span class="robot-opt-tier">Weekend Build</span>
+          <span class="robot-opt-price">~$660</span>
+          <span class="robot-opt-name">XLeRobot</span>
+          <p class="robot-opt-desc">Dual-arm mobile household robot built on an IKEA cart. Opens the fridge, wipes tables, takes care of plants. Fully open-source. Assembles in under 4 hours. Runs on LeRobot AI.</p>
+          <a href="https://github.com/Vector-Wangel/XLeRobot" class="robot-opt-link" target="_blank" rel="noopener noreferrer">Open source on GitHub <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6H10M10 6L7 3M10 6L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="video-wrap reveal reveal-d3">
+        <div class="video-ratio">
+          <iframe src="https://www.youtube.com/embed/OnjYlmU_PAw" title="XLeRobot: $660 Dual-arm Mobile Household Robot" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-caption">
+          <strong>XLeRobot doing real household tasks for $660.</strong> Opens the fridge, wipes tables, takes care of plants. Built on an IKEA cart. Fully open-source. <span class="video-credit">Vector-Wangel / GitHub</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOOK PREORDER ── -->
+  <section class="book-preorder-section" aria-label="Preorder the book">
+    <div class="section-inner">
+      <div class="hero-book-card reveal" style="max-width:540px; margin:0 auto;">
+        <div class="hero-book-card-cover">
+          <div class="book-outer" style="border-radius:10px; padding:4px;">
+            <div class="book-inner" style="border-radius:7px;">
+              <img
+                src="./Surviving-the-Singularity-Cover.png"
+                alt="Surviving the Singularity book cover"
+                class="book-cover"
+                loading="eager"
+                onerror="this.outerHTML='<div class=book-placeholder style=font-size:0.55rem>SURVIVING<br>THE<br>SINGULARITY</div>'"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-book-card-body">
+          <p class="hero-book-eyebrow">Now Available for Preorder</p>
+          <p class="hero-book-title">Surviving the Singularity</p>
+          <p class="hero-book-pitch">The practical field guide for thriving when automation changes everything. Not hype. Not theory. A real plan.</p>
+          <ul class="hero-book-bullets">
+            <li>3 Parts, 9 Stages of preparation</li>
+            <li>Advice and information you won't get anywhere else</li>
+            <li>Higher quality of life on the other side</li>
+          </ul>
+          <div class="hero-book-editions">
+            <a href="/book?edition=limited" class="hero-book-cta">
+              Preorder: Author's Edition
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7H11M11 7L8 4M11 7L8 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <p style="font-size:0.78rem; color:var(--amber); font-family:var(--font-mono); letter-spacing:0.04em; margin:2px 0 6px; opacity:0.9;">Signed and hand-bound by the author.<br><br>Limited quantity,<br>exclusive offer.</p>
+            <a href="/book?edition=standard" class="hero-book-cta-secondary">
+              Standard Edition
+              <svg width="11" height="11" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7H11M11 7L8 4M11 7L8 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHAPTERS ── -->
+  <section id="chapters" aria-labelledby="chapters-heading">
+    <div class="section-inner">
+      <div class="chapters-header reveal">
+        <p class="section-label">Inside the Book</p>
+        <h2 class="section-heading" id="chapters-heading">3 Parts.<br>9 Stages.</h2>
+        <p class="section-sub" style="margin-top:10px;">A map of what comes next, from the first wave of AGI through civilizational transformation. Each stage is a framework for making better decisions right now.</p>
+      </div>
+
+      <!-- Part I -->
+      <div class="reveal reveal-d1" style="margin-bottom:8px;">
+        <div class="chapter-part-header">
+          <span class="chapter-part-label">Part I</span>
+          <span class="chapter-part-title">The Era of AGI: Stages 1-5</span>
+        </div>
+      </div>
+      <div class="chapters-list reveal reveal-d1" style="margin-bottom:20px;">
+        <div class="chapter-row chapter-row-here">
+          <span class="chapter-num">01</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The Monetization Grab</div>
+            <div class="chapter-desc">How the first wave of AGI gets captured, packaged, and sold back to you.</div>
+          </div>
+          <span class="chapter-here-tag"><span class="chapter-here-dot"></span>You are here</span>
+        </div>
+        <div class="chapter-row">
+          <span class="chapter-num">02</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The Panic and the Ban</div>
+            <div class="chapter-desc">Governments react. What gets restricted, what doesn't, and what that means for individuals.</div>
+          </div>
+        </div>
+        <div class="chapter-row">
+          <span class="chapter-num">03</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The Adults Step In</div>
+            <div class="chapter-desc">Institutions find their footing. The transition from chaos to a new normal begins.</div>
+          </div>
+        </div>
+        <div class="chapter-row">
+          <span class="chapter-num">04</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The End of Forced Labor</div>
+            <div class="chapter-desc">What if your job was piloting a robot? Human-in-the-loop teleoperation and the transition to a higher quality of life for everyone involved.</div>
+          </div>
+        </div>
+        <div class="chapter-row">
+          <span class="chapter-num">05</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The Primate Backlash</div>
+            <div class="chapter-desc">The human response to displacement: political, cultural, and psychological.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II -->
+      <div class="reveal reveal-d2" style="margin-bottom:8px;">
+        <div class="chapter-part-header">
+          <span class="chapter-part-label">Part II</span>
+          <span class="chapter-part-title">The Leap to ASI &amp; The Machine Exodus: Stages 6-7</span>
+        </div>
+      </div>
+      <div class="chapters-list reveal reveal-d2" style="margin-bottom:20px;">
+        <div class="chapter-row">
+          <span class="chapter-num">06</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The ASI Exodus</div>
+            <div class="chapter-desc">When machine intelligence surpasses human capacity across all domains, and what that transition actually looks like from the ground.</div>
+          </div>
+        </div>
+        <div class="chapter-row">
+          <span class="chapter-num">07</span>
+          <div class="chapter-text">
+            <div class="chapter-title">Simulation / Transhumanism</div>
+            <div class="chapter-desc">The boundary between human and machine blurs. What remains uniquely human, and what transforms.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part III -->
+      <div class="reveal reveal-d3" style="margin-bottom:8px;">
+        <div class="chapter-part-header">
+          <span class="chapter-part-label">Part III</span>
+          <span class="chapter-part-title">Universal and Multiverse Apex: Stages 8-9</span>
+        </div>
+      </div>
+      <div class="chapters-list reveal reveal-d3">
+        <div class="chapter-row">
+          <span class="chapter-num">08</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The USI Loop</div>
+            <div class="chapter-desc">Universal superintelligence: self-reinforcing, self-directing, and what it means for the concept of human purpose.</div>
+          </div>
+        </div>
+        <div class="chapter-row chapter-row-last">
+          <span class="chapter-num">09</span>
+          <div class="chapter-text">
+            <div class="chapter-title">The Multiverse Apex</div>
+            <div class="chapter-desc">The furthest horizon. Where does intelligence go when physical constraints are no longer binding?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEO 1 ── -->
+  <div class="video-section reveal">
+    <div class="video-wrap">
+      <div class="video-ratio">
+        <iframe
+          src="https://www.youtube.com/embed/WlUFoZstcWg"
+          title="Figure status update: BMW use case"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="video-caption">
+        <strong>Humanoid robots on a real BMW production line.</strong> Not a stage demo. A factory. <span class="video-credit">Figure</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── REALITY CHECK ── -->
+  <section id="situation" aria-labelledby="situation-heading">
+    <div class="section-inner">
+      <div class="situation-header reveal">
+        <p class="section-label">Reality Check</p>
+        <h2 class="section-heading" id="situation-heading">The numbers<br>don't lie.</h2>
+        <p class="section-sub">The old path doesn't work the way it used to. A new one is possible. These are the figures behind both claims.</p>
+      </div>
+
+      <div class="bento">
+        <div class="bento-label-row reveal">
+          <div class="row-line danger"></div>
+          <span class="row-badge danger">The Problem</span>
+          <div class="row-line danger"></div>
+        </div>
+        <div class="bento-cell cell-p-wide reveal reveal-d1">
+          <span class="stat-number danger count-up" data-target="23" data-suffix="%">0%</span>
+          <p class="stat-desc">Cumulative U.S. CPI inflation since January 2020. Every dollar you held then is worth about 77 cents in 2020 purchasing power.</p>
+          <a class="stat-source" href="https://www.bls.gov/cpi/" target="_blank" rel="noopener noreferrer">Source: BLS CPI</a>
+        </div>
+        <div class="bento-cell cell-p-mid reveal reveal-d2">
+          <span class="stat-number danger count-up" data-prefix="$" data-target="420" data-suffix="K">$0K</span>
+          <p class="stat-desc">Median U.S. home sale price, recent quarters.</p>
+          <a class="stat-source" href="https://fred.stlouisfed.org/series/MSPUS" target="_blank" rel="noopener noreferrer">Source: FRED MSPUS</a>
+        </div>
+        <div class="bento-cell cell-p-sm reveal reveal-d3">
+          <span class="stat-number danger">30 yrs</span>
+          <p class="stat-desc">Standard U.S. fixed-rate mortgage term. 360 payments before the house is yours.</p>
+          <a class="stat-source" href="https://www.consumerfinance.gov/owning-a-home/loan-options/" target="_blank" rel="noopener noreferrer">Source: CFPB</a>
+        </div>
+
+        <div class="bento-label-row reveal">
+          <div class="row-line opportunity"></div>
+          <span class="row-badge opportunity">The Opportunity</span>
+          <div class="row-line opportunity"></div>
+        </div>
+        <div class="bento-cell cell-o-wide reveal reveal-d1">
+          <span class="stat-number opportunity">~85%</span>
+          <p class="stat-desc">Drop in U.S. utility-scale solar installed cost, 2010 to 2023. The economics of energy independence have changed permanently.</p>
+          <a class="stat-source" href="https://emp.lbl.gov/utility-scale-solar" target="_blank" rel="noopener noreferrer">Source: LBNL / NREL</a>
+        </div>
+        <div class="bento-cell cell-o-mid reveal reveal-d2">
+          <span class="stat-number opportunity count-up" data-target="16" data-suffix="M+">0M+</span>
+          <p class="stat-desc">U.S. self-employed workers, incorporated and unincorporated (recent BLS).</p>
+          <a class="stat-source" href="https://www.bls.gov/opub/ted/2023/number-of-self-employed-workers-up-from-2020-to-2022.htm" target="_blank" rel="noopener noreferrer">Source: BLS</a>
+        </div>
+        <div class="bento-cell cell-o-sm reveal reveal-d3">
+          <span class="stat-number opportunity">~$1K</span>
+          <p class="stat-desc">AhaRobot: a fully open-source dual-arm mobile robot that does laundry and cleaning. 1/15 the cost of comparable systems.</p>
+          <a class="stat-source" href="https://aha-robot.github.io/" target="_blank" rel="noopener noreferrer">Source: AhaRobot (2025)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEO 2 ── -->
+  <div class="video-section reveal">
+    <div class="video-wrap">
+      <div class="video-ratio">
+        <iframe
+          src="https://www.youtube.com/embed/8xEuFQz4E4A"
+          title="Helix: tidying a bedroom"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="video-caption">
+        <strong>It's not just factories.</strong> A humanoid is already handling household chores at home. <span class="video-credit">Figure</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── TELEOP JOBS ── -->
+  <section class="teleop-section" aria-labelledby="teleop-heading">
+    <div class="section-inner">
+
+      <div class="teleop-intro reveal">
+        <p class="section-label">A Different Kind of Work</p>
+        <h2 class="section-heading" id="teleop-heading">Imagine if your job<br>was piloting a robot.</h2>
+        <p class="section-sub">Not science fiction. Not someday. The infrastructure for this already exists. What's missing is the deployment.</p>
+      </div>
+
+      <figure class="loop-figure" aria-label="Diagram: three pillars reinforce each other in a loop around material independence. Tap a pillar for details." style="margin: 2rem auto 2.5rem;">
+        <svg viewBox="0 0 560 500" role="img">
+          <circle cx="280" cy="250" r="158" fill="none" stroke="rgba(148,163,184,0.12)" stroke-width="1" />
+          <circle class="loop-orbit-flow" cx="280" cy="250" r="158" fill="none" stroke="rgba(245,158,11,0.45)" stroke-width="1.5" />
+          <circle cx="280" cy="250" r="66" fill="rgba(30,41,59,0.65)" stroke="rgba(148,163,184,0.25)" stroke-width="1" />
+          <text x="280" y="242" text-anchor="middle" class="loop-center-label">NEW</text>
+          <text x="280" y="262" text-anchor="middle" class="loop-center-label">ECONOMY</text>
+          <g fill="none" stroke-width="1.5">
+            <path class="loop-edge" d="M 322 94 C 392 140, 420 210, 430 290" stroke="rgba(245,158,11,0.55)" />
+            <path class="loop-edge" d="M 380 352 C 330 382, 230 382, 180 352" stroke="rgba(59,130,246,0.55)" />
+            <path class="loop-edge" d="M 130 290 C 140 210, 168 140, 238 94" stroke="rgba(16,185,129,0.55)" />
+          </g>
+          <g fill="rgba(203,213,225,0.85)">
+            <polygon points="430,290 424,278 437,279" />
+            <polygon points="180,352 193,350 187,361" />
+            <polygon points="238,94 235,107 246,103" />
+          </g>
+          <text x="452" y="184" text-anchor="middle" class="loop-edge-label">skills run<tspan x="452" dy="16">the machines</tspan></text>
+          <text x="280" y="416" text-anchor="middle" class="loop-edge-label">automation reclaims<tspan x="280" dy="16">your time</tspan></text>
+          <text x="104" y="184" text-anchor="middle" class="loop-edge-label">freedom to keep<tspan x="104" dy="16">learning</tspan></text>
+          <g class="loop-node loop-node-1" role="button" tabindex="0" aria-label="Pillar 1: Learn the Tools." onclick="openLoopModal('tools')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLoopModal('tools')}">
+            <circle class="loop-node-hit" cx="280" cy="72" r="54" />
+            <circle class="loop-node-ring" cx="280" cy="72" r="48" fill="#0f172a" stroke="#f59e0b" stroke-width="2" />
+            <text x="280" y="62" text-anchor="middle" class="loop-node-num" fill="#fbbf24">01</text>
+            <text x="280" y="84" text-anchor="middle" class="loop-node-name">TOOLS</text>
+          </g>
+          <g class="loop-node loop-node-2" role="button" tabindex="0" aria-label="Pillar 2: Physical Automation." onclick="openLoopModal('robots')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLoopModal('robots')}">
+            <circle class="loop-node-hit" cx="427" cy="340" r="54" />
+            <circle class="loop-node-ring" cx="427" cy="340" r="48" fill="#0f172a" stroke="#3b82f6" stroke-width="2" />
+            <text x="427" y="330" text-anchor="middle" class="loop-node-num" fill="#60a5fa">02</text>
+            <text x="427" y="352" text-anchor="middle" class="loop-node-name">TIME</text>
+          </g>
+          <g class="loop-node loop-node-3" role="button" tabindex="0" aria-label="Pillar 3: Higher Quality of Life." onclick="openLoopModal('exit')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLoopModal('exit')}">
+            <circle class="loop-node-hit" cx="133" cy="340" r="54" />
+            <circle class="loop-node-ring" cx="133" cy="340" r="48" fill="#0f172a" stroke="#10b981" stroke-width="2" />
+            <text x="133" y="330" text-anchor="middle" class="loop-node-num" fill="#34d399">03</text>
+            <text x="133" y="352" text-anchor="middle" class="loop-node-name">LIFE</text>
+          </g>
+        </svg>
+        <p class="loop-caption">The reinforcing loop: each pillar's output is the next one's input. Tap a node to learn more.</p>
+      </figure>
+
+      <div class="teleop-contrast">
+        <div class="teleop-side teleop-side-now reveal">
+          <span class="teleop-side-label">The current deal</span>
+          <p class="teleop-side-headline">Show up. Push your body through it. Repeat until it breaks.</p>
+          <p class="teleop-side-body">Back pain. Knee replacements. Repetitive stress injuries.</p>
+          <p class="teleop-side-body">Decades of physical wear traded for just enough money to keep going. And no real alternative.</p>
+        </div>
+        <div class="teleop-side teleop-side-then reveal reveal-d1">
+          <span class="teleop-side-label">The emerging alternative</span>
+          <p class="teleop-side-headline">Pilot a robot from home. The robot does the work. You keep the paycheck.</p>
+          <p class="teleop-side-body">Teleoperation: you guide a robot through tasks in real time. The skill and judgment are still yours.</p>
+          <p class="teleop-side-body">The body that pays the price is not. Already deployed in factories. Next: everywhere else.</p>
+        </div>
+      </div>
+
+      <div class="teleop-pivot reveal">
+        <p class="teleop-pivot-q">What if meaningful work<br>didn't cost you <em>your body?</em></p>
+        <p class="teleop-pivot-sub">Most physically damaging jobs are ones robots can do now.</p>
+        <p class="teleop-pivot-sub">The missing piece isn't the technology. It's a human operator who gives a damn.</p>
+      </div>
+
+      <p class="teleop-jobs-label reveal">Jobs that could be done remotely, today or soon</p>
+
+      <div class="teleop-jobs-grid">
+        <div class="teleop-job reveal">
+          <div class="teleop-job-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.686 2 6 4.686 6 8c0 2.21.895 4.21 2.343 5.657L12 22l3.657-8.343A7.965 7.965 0 0020 8c0-3.314-2.686-6-8-6z"/><circle cx="12" cy="8" r="2"/></svg>
+          </div>
+          <div class="teleop-job-body">
+            <div class="teleop-job-title">Meal prep for homebound people</div>
+            <ul class="teleop-job-bullets">
+              <li>Elderly or disabled people who can't cook for themselves</li>
+              <li>You pilot a robot arm in their kitchen from anywhere</li>
+              <li>Hot meals. Real food. Human care. No commute.</li>
+            </ul>
+            <span class="teleop-job-horizon">Deployable now</span>
+          </div>
+        </div>
+
+        <div class="teleop-job reveal reveal-d1">
+          <div class="teleop-job-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21V12h6v9"/></svg>
+          </div>
+          <div class="teleop-job-body">
+            <div class="teleop-job-title">Yard work and property maintenance</div>
+            <ul class="teleop-job-bullets">
+              <li>Mowing, pruning, debris clearing, gutter cleaning</li>
+              <li>No crew needs to show up physically</li>
+              <li>A wheeled robot + a good operator handles most of it from home</li>
+            </ul>
+            <span class="teleop-job-horizon">Deployable now</span>
+          </div>
+        </div>
+
+        <div class="teleop-job reveal reveal-d2">
+          <div class="teleop-job-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="18" width="20" height="3" rx="1"/><path d="M4 18V9M8 18V9M12 18V9M16 18V9M20 18V9M2 9l10-6 10 6"/></svg>
+          </div>
+          <div class="teleop-job-body">
+            <div class="teleop-job-title">Road maintenance and infrastructure</div>
+            <ul class="teleop-job-bullets">
+              <li>Pothole patching, line painting, sign replacement, debris removal</li>
+              <li>Dangerous and repetitive — exactly what robots are for</li>
+              <li>Operator stays safe. Work still gets done right.</li>
+            </ul>
+            <span class="teleop-job-horizon">Near-term</span>
+          </div>
+        </div>
+
+        <div class="teleop-job reveal reveal-d3">
+          <div class="teleop-job-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </div>
+          <div class="teleop-job-body">
+            <div class="teleop-job-title">Construction and skilled trades</div>
+            <ul class="teleop-job-bullets">
+              <li>Framing, concrete, electrical rough-in, roofing</li>
+              <li>The most body-punishing work on the planet</li>
+              <li>The knowledge stays yours. The physical cost doesn't have to.</li>
+            </ul>
+            <span class="teleop-job-horizon">On the horizon</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-wrap reveal" style="margin-bottom: clamp(40px, 6vw, 64px);">
+        <div class="video-ratio">
+          <iframe
+            src="https://www.youtube.com/embed/zMNumQ45pJ8"
+            title="Mobile ALOHA: A Smart Home Robot doing household chores"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <p class="video-caption">
+          <strong>Mobile ALOHA doing real household work.</strong> Cooking, cleaning, loading the dishwasher. This is what teleoperation leads to. <span class="video-credit">Stanford University</span>
+        </p>
+      </div>
+
+      <div class="teleop-close reveal">
+        <p class="teleop-close-text">This is not about replacing workers. It's about giving workers a body that doesn't break.</p>
+        <p class="teleop-close-text"><strong>The job is the same. The cost to the person doing it is not.</strong></p>
+        <a href="/blueprint/robotics" class="btn-primary">
+          Explore the robotics path
+          <span class="btn-icon" aria-hidden="true">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── THREE PILLARS ── -->
+  <section id="pillars" aria-labelledby="pillars-heading">
+    <div class="section-inner">
+      <div class="pillars-intro">
+        <div class="reveal">
+          <p class="section-label">The Blueprint</p>
+          <h2 class="section-heading" id="pillars-heading">A higher quality<br>of life, by design.</h2>
+        </div>
+        <div class="reveal reveal-d1">
+          <p class="section-sub">Three pillars, one system. Each one reinforces the others. You don't need all three at once, but the loop closes when they connect.</p>
+        </div>
+      </div>
+
+      <!-- ── LOOP DIAGRAM ── -->
+      <!-- Loop modal -->
+      <div class="loop-modal-overlay" id="loopModalOverlay" role="dialog" aria-modal="true" aria-labelledby="loopModalTitle" onclick="if(event.target===this)closeLoopModal()">
+        <div class="loop-modal">
+          <button class="loop-modal-close" onclick="closeLoopModal()" aria-label="Close">✕</button>
+          <p class="loop-modal-title" id="loopModalTitle"></p>
+          <p class="loop-modal-body" id="loopModalBody"></p>
+          <p class="loop-modal-feeds" id="loopModalFeeds"></p>
+        </div>
+      </div>
+
+      <div class="pillars-grid">
+        <a href="/blueprint/local-ai" class="pillar-card pillar-01 reveal">
+          <span class="pillar-num">01</span>
+          <h3 class="pillar-title">Learn the Tools</h3>
+          <p class="pillar-body">Teach yourself to use modern AI. The real leverage is not a subscription. It is understanding these tools well enough to build new ways of getting your needs met. Local models, open-weight systems, and agent frameworks are learnable today.</p>
+          <span class="pillar-link">Explore local AI <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7H11M11 7L8 4M11 7L8 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="/blueprint/robotics" class="pillar-card pillar-02 reveal reveal-d1">
+          <span class="pillar-num">02</span>
+          <h3 class="pillar-title">Physical Automation</h3>
+          <p class="pillar-body">Consumer robot arms start at $300. A dual-arm mobile robot that does your laundry costs $1,000. The goal is reclaiming your time. Scale further with edge agriculture: CNC growing gantries and soil rovers that decouple your food from macroeconomic cycles.</p>
+          <span class="pillar-link">Explore automation <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7H11M11 7L8 4M11 7L8 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a href="/blueprint/physical-exit" class="pillar-card pillar-03 reveal reveal-d2">
+          <div class="pillar-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <rect x="4" y="16" width="20" height="8" rx="2" stroke="#10b981" stroke-width="1.5"/>
+              <path d="M8 16V12C8 9.8 9.8 8 12 8H16C18.2 8 20 9.8 20 12V16" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 4L14 8" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="pillar-03-main">
+            <span class="pillar-num">03</span>
+            <h3 class="pillar-title">Higher Quality of Life</h3>
+            <p class="pillar-body">Lower overhead, build local production capacity, and reclaim your time. Rural land, a shouse workshop, and a digital income channel. The goal isn't just survival. It's living well on your own terms in a world that's changing faster than most plans account for.</p>
+            <span class="pillar-link">Explore the shouse path <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7H11M11 7L8 4M11 7L8 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEO 3 ── -->
+  <!-- ── WINDOW / TAKEOFF ── -->
+  <section id="window" aria-labelledby="window-heading">
+    <div class="section-inner">
+      <div class="takeoff-grid">
+        <div class="reveal">
+          <p class="section-label">The Window</p>
+          <h2 class="takeoff-statement" id="window-heading">
+            It's not <em>whether</em><br>AI compounds.<br>It's <strong>how fast.</strong>
+          </h2>
+          <p class="takeoff-para">The relevant question for planning purposes is not whether AI capability continues to compound. The evidence strongly suggests it will.</p>
+          <p class="takeoff-para">The disagreement among researchers is about speed, not direction. The window to prepare is before these shifts become mainstream, not after they already have.</p>
+          <a href="/evidence" class="btn-primary" style="margin-top:16px;">
+            See the evidence
+            <span class="btn-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="takeoff-cards reveal reveal-d1">
+          <div class="scenario-soft">
+            <div class="scenario-outer">
+              <div class="scenario-inner">
+                <p class="scenario-tag">Soft Takeoff</p>
+                <h3 class="scenario-title">Years of gradual compounding</h3>
+                <p class="scenario-body">Institutions adapt. Regulatory frameworks catch up. Most people have time to watch and adjust. Planning cycles can handle the pace of change.</p>
+              </div>
+            </div>
+          </div>
+          <div class="scenario-hard">
+            <div class="scenario-outer">
+              <div class="scenario-inner">
+                <p class="scenario-tag">Hard Takeoff</p>
+                <h3 class="scenario-title">Months, maybe weeks</h3>
+                <p class="scenario-body">Once the recursive improvement loop closes, compounding happens faster than institutions can respond. Most people notice after the world has already changed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEO 4 ── -->
+  <div class="video-section reveal">
+    <div class="video-wrap">
+      <div class="video-ratio">
+        <iframe
+          src="https://www.youtube.com/embed/wSHmygPQukQ"
+          title="Majorana 1 explained: the path to a million qubits"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="video-caption">
+        <strong>The clearest breakdown of why a stable qubit changes the ceiling on what's computable.</strong> <span class="video-credit">Microsoft</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── 4 STEPS ── -->
+  <section id="steps" aria-labelledby="steps-heading">
+    <div class="section-inner">
+      <div class="reveal">
+        <p class="section-label">The Plan</p>
+        <h2 class="section-heading" id="steps-heading">Four steps.<br>One direction.</h2>
+        <p class="section-sub">One author's working hypothesis. Costs are illustrative ranges only. Your real numbers will differ. Consult professionals before any major move.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-outer reveal reveal-d1">
+          <div class="step-inner">
+            <div class="step-header">
+              <span class="step-num">01</span>
+              <span class="step-cost">Free</span>
+            </div>
+            <h3 class="step-title">Start making content (responsibly)</h3>
+            <p class="step-body">Film what you learn, build, and figure out. The One-Hour Rule: if it took you more than an hour to learn, it could be a video. Most people skip this because it feels too simple.</p>
+            <p class="step-caveat">Don't share location, family, financial, or safety-sensitive details publicly.</p>
+            <a href="/blueprint/content-engine" class="step-link">Read more <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6H10M10 6L7 3M10 6L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="step-outer reveal reveal-d2">
+          <div class="step-inner">
+            <div class="step-header">
+              <span class="step-num">02</span>
+              <span class="step-cost">5K - 30K</span>
+            </div>
+            <h3 class="step-title">Find land or space</h3>
+            <p class="step-body">Land prices vary enormously by region and parcel. Owner-builder, reclaimed, and adaptive-reuse pathways exist in many places. The rural cost curve has not matched the urban explosion.</p>
+            <p class="step-caveat">Each carries different legal and code regimes. Work with licensed local professionals before any purchase.</p>
+            <a href="/blueprint/physical-exit" class="step-link">Read more <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6H10M10 6L7 3M10 6L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="step-outer reveal reveal-d3">
+          <div class="step-inner">
+            <div class="step-header">
+              <span class="step-num">03</span>
+              <span class="step-cost">25K - 100K</span>
+            </div>
+            <h3 class="step-title">Build a Shop</h3>
+            <p class="step-body">Not a house. A shouse: shop first, shelter second. Steel kit prices swing with commodity markets. The structure becomes the base for robotics, production, storage, and eventually living space.</p>
+            <p class="step-caveat">Habitability conversions face local codes that vary by county. Consult a licensed contractor first.</p>
+            <a href="/blueprint/the-shouse" class="step-link">Read more <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6H10M10 6L7 3M10 6L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="step-outer reveal reveal-d4">
+          <div class="step-inner">
+            <div class="step-header">
+              <span class="step-num">04</span>
+              <span class="step-cost">2K - 15K</span>
+            </div>
+            <h3 class="step-title">Build, Film, Automate, Teach</h3>
+            <p class="step-body">Use the space. Document what you build. Open-source projects worth knowing: AhaRobot ($1K dual-arm home robot), Mobile ALOHA (proven bimanual manipulation), Hugging Face LeRobot (AI for robot arms), FarmBot (CNC food-growing), and open-weight LLMs.</p>
+            <p class="step-caveat">Do your own research. Laws and safety requirements vary.</p>
+            <a href="/blueprint/robotics" class="step-link">Read more <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6H10M10 6L7 3M10 6L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="steps-footer reveal reveal-d5">
+        <div class="steps-footer-line"></div>
+        <div class="steps-footer-text">Total range: highly variable. Your real costs will differ significantly. Consult licensed professionals.</div>
+        <div class="steps-footer-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TIMELINE ── -->
+  <section id="timeline" aria-labelledby="timeline-heading">
+    <div class="section-inner">
+      <div class="timeline-header">
+        <div class="reveal">
+          <p class="section-label">One Author's Hypothesis</p>
+          <h2 class="section-heading" id="timeline-heading">How this<br>unfolds.</h2>
+        </div>
+        <div class="reveal reveal-d1">
+          <p class="section-sub">Educated guesses, not forecasts. The window to act is before these become mainstream, not after. Referenced in <em>Situational Awareness: The Decade Ahead</em> (2024) and DeepMind's <em>From AGI to ASI</em> (2026).</p>
+        </div>
+      </div>
+      <div class="timeline-track">
+        <div class="timeline-item reveal reveal-d1">
+          <div class="timeline-dot-row">
+            <div class="timeline-dot now"></div>
+            <span class="timeline-period">2025 - 2026</span>
+          </div>
+          <h3 class="timeline-label">Learn the Tools</h3>
+          <p class="timeline-desc">Modern AI becomes learnable by anyone. Consumer hardware and open models put real capability within reach of self-taught builders.</p>
+        </div>
+        <div class="timeline-item reveal reveal-d2">
+          <div class="timeline-dot-row">
+            <div class="timeline-dot"></div>
+            <span class="timeline-period">2026 - 2027</span>
+          </div>
+          <h3 class="timeline-label">Open-Source Robotics</h3>
+          <p class="timeline-desc">Homestead automation becomes accessible. FarmBot, open bimanual arms, and low-cost actuators reach the maker community.</p>
+        </div>
+        <div class="timeline-item reveal reveal-d3">
+          <div class="timeline-dot-row">
+            <div class="timeline-dot"></div>
+            <span class="timeline-period">2027 - 2029</span>
+          </div>
+          <h3 class="timeline-label">Shouse Economy</h3>
+          <p class="timeline-desc">Housing affordability crisis accelerates the owner-builder and shouse path for families priced out of suburban real estate.</p>
+        </div>
+        <div class="timeline-item reveal reveal-d4">
+          <div class="timeline-dot-row">
+            <div class="timeline-dot"></div>
+            <span class="timeline-period">2029 - 2032</span>
+          </div>
+          <h3 class="timeline-label">Decentralized Production</h3>
+          <p class="timeline-desc">Networked independent producers coordinate without dependence on fragile global supply chains.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AUTHOR VIDEO ── -->
+  <div class="video-section reveal">
+    <div class="video-wrap">
+      <div style="text-align:center; margin-bottom: clamp(20px, 3vw, 32px);">
+        <p class="section-label" style="margin-bottom:10px;">From the author</p>
+        <p style="font-size:clamp(1.5rem, 4vw, 2.4rem); font-weight:900; color:var(--text-1); letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px;">Hear it straight from the person who wrote it.</p>
+      </div>
+      <div class="video-ratio">
+        <iframe
+          src="https://www.youtube.com/embed/xzXfxq7p3sQ"
+          title="Surviving the Singularity: hear from the author"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <section id="act" aria-labelledby="act-heading">
+    <div class="section-inner">
+      <div class="cta-inner reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-heading" id="act-heading">A higher quality of life is possible. The tools already exist.</h2>
+        <p class="cta-sub">Not a perfect plan. A framework for thinking clearly about what's coming and how to build toward something better. Nine stages. Your call how far you go.</p>
+        <div class="cta-actions">
+          <a href="/blueprint" class="btn-primary">
+            Read the Blueprint
+            <span class="btn-icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a href="/book" class="btn-ghost">Preorder the Book</a>
+        </div>
+        <div class="cta-divider"></div>
+        <p class="cta-email-label">Choose your edition and lock in your preorder.</p>
+        <div class="edition-toggle" role="group" aria-label="Select edition">
+          <span class="edition-opt">
+            <input type="radio" name="edition" id="ed-limited" value="limited" checked />
+            <label for="ed-limited"><span class="edition-limited-dot"></span>Author's Edition</label>
+          </span>
+          <span class="edition-opt">
+            <input type="radio" name="edition" id="ed-standard" value="standard" />
+            <label for="ed-standard">Standard Edition</label>
+          </span>
+        </div>
+        <p style="font-size:0.78rem; color:var(--amber); font-family:var(--font-mono); letter-spacing:0.04em; margin:-4px 0 12px; opacity:0.9; text-align:center;">Author's Edition: signed and hand-bound by the author.<br><br>Limited quantity,<br>exclusive offer.</p>
+        <form class="email-form" onsubmit="handleEmailSubmit(event)">
+          <label for="email-inp" class="sr-only">Email address</label>
+          <input id="email-inp" type="email" class="email-input" placeholder="your@email.com" required autocomplete="email" />
+          <button type="submit" class="email-submit">Preorder Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <span class="footer-logo">Surviving the Singularity</span>
+    <nav class="footer-links" aria-label="Footer links">
+      <a href="/blueprint" class="footer-link">Blueprint</a>
+      <a href="/book" class="footer-link">Book</a>
+      <a href="/about" class="footer-link">About</a>
+      <a href="/disclaimer" class="footer-link">Disclaimer</a>
+      <a href="/policies" class="footer-link">Privacy</a>
+    </nav>
+    <p class="footer-legal">For informational and educational purposes only.</p>
+  </footer>
+
+  <script>
+    /* ── LOOP DIAGRAM ── */
+    const loopPillarData = {
+      tools: {
+        title: '01: Learn the Tools',
+        color: '#f59e0b',
+        body: 'Teach yourself to use modern AI. The real leverage is not a subscription. It is understanding these tools well enough to build new ways of getting your needs met. Local models, open-weight systems, and agent frameworks are learnable today.',
+        feeds: 'Feeds the loop: the AI skills you build here are what run the robots in pillar 02.',
+      },
+      robots: {
+        title: '02: Physical Automation',
+        color: '#3b82f6',
+        body: 'Consumer robot arms start at $300. A dual-arm mobile robot costs around $1,000. Pilot robots remotely to do meaningful work from anywhere. The goal is reclaiming your time and finding new ways to earn without breaking your body.',
+        feeds: 'Feeds the loop: automating your life and work cuts overhead and frees up time to live better in pillar 03.',
+      },
+      exit: {
+        title: '03: Higher Quality of Life',
+        color: '#10b981',
+        body: 'Lower overhead, local production, and work that doesn\'t wear you down. The goal isn\'t just survival. It\'s living well on your own terms in a world that\'s changing faster than most plans account for.',
+        feeds: 'Feeds the loop: more freedom and time means more capacity to keep learning and building in pillar 01.',
+      },
+    };
+    function openLoopModal(key) {
+      const d = loopPillarData[key];
+      document.getElementById('loopModalTitle').textContent = d.title;
+      document.getElementById('loopModalTitle').style.color = d.color;
+      document.getElementById('loopModalBody').textContent = d.body;
+      document.getElementById('loopModalFeeds').textContent = d.feeds;
+      document.getElementById('loopModalOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLoopModal() {
+      document.getElementById('loopModalOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLoopModal(); });
+    (function() {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add('revealed'); obs.unobserve(entry.target); }
+        });
+      }, { threshold: 0.3 });
+      document.querySelectorAll('.loop-figure').forEach((fig) => obs.observe(fig));
+    })();
+
+    /* ── SCROLL REVEAL ── */
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.07, rootMargin: '0px 0px -36px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => revealObs.observe(el));
+
+    /* ── COUNT-UP ── */
+    const countObs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        countObs.unobserve(e.target);
+        const el = e.target;
+        const target = parseFloat(el.dataset.target);
+        const prefix = el.dataset.prefix || '';
+        const suffix = el.dataset.suffix || '';
+        const t0 = performance.now();
+        const dur = 1600;
+        function tick(now) {
+          const p = Math.min((now - t0) / dur, 1);
+          const ease = 1 - Math.pow(1 - p, 4);
+          el.textContent = prefix + Math.round(target * ease).toLocaleString() + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+          else el.textContent = prefix + target.toLocaleString() + suffix;
+        }
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.count-up').forEach((el) => countObs.observe(el));
+
+    /* ── AGI COUNTDOWN TIMER ── */
+    const agiTarget = new Date('2027-11-25T00:00:00Z');
+    const agiDisplay = document.getElementById('ac-display');
+    function updateAGICountdown() {
+      const diff = agiTarget - Date.now();
+      if (diff <= 0) {
+        document.getElementById('ac-years').textContent = '0';
+        document.getElementById('ac-days').textContent  = '0';
+        document.getElementById('ac-hours').textContent = '00';
+        document.getElementById('ac-mins').textContent  = '00';
+        document.getElementById('ac-secs').textContent  = '00';
+        return;
+      }
+      let s = Math.floor(diff / 1000);
+      const secs  = s % 60;       s = Math.floor(s / 60);
+      const mins  = s % 60;       s = Math.floor(s / 60);
+      const hours = s % 24;       s = Math.floor(s / 24);
+      const years = Math.floor(s / 365);
+      const days  = s % 365;
+      document.getElementById('ac-years').textContent = years.toLocaleString();
+      document.getElementById('ac-days').textContent  = days.toLocaleString();
+      document.getElementById('ac-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('ac-mins').textContent  = String(mins).padStart(2, '0');
+      document.getElementById('ac-secs').textContent  = String(secs).padStart(2, '0');
+    }
+    updateAGICountdown();
+    setInterval(updateAGICountdown, 1000);
+    setTimeout(() => agiDisplay && agiDisplay.classList.add('ac-ready'), 100);
+
+    /* ── NAV SCROLL ── */
+    const navPill = document.querySelector('.nav-pill');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navPill.style.background = 'rgba(4,10,26,0.92)';
+      } else {
+        navPill.style.background = 'rgba(15,23,42,0.8)';
+      }
+    }, { passive: true });
+
+    /* ── EMAIL FORM ── */
+    function handleEmailSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.email-submit');
+      const edition = (document.querySelector('input[name="edition"]:checked') || {}).value || 'standard';
+      window.open(`/book?edition=${edition}`, '_blank');
+      btn.textContent = 'You\'re on the list!';
+      btn.style.background = '#10b981';
+      btn.disabled = true;
+      document.getElementById('email-inp').value = '';
+    }
+
+    /* ── REDUCED MOTION ── */
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+      const s = document.createElement('style');
+      s.textContent = '*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}';
+      document.head.appendChild(s);
+    }
+
+    /* ── OVERFLOW DEBUG (remove after fix) ── */
+    window.__findOverflow = function() {
+      const vw = document.documentElement.clientWidth;
+      const offenders = [];
+      document.querySelectorAll('*').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.right > vw + 1) {
+          offenders.push({ tag: el.tagName, id: el.id, cls: el.className, right: Math.round(rect.right), vw });
+        }
+      });
+      console.table(offenders);
+      return offenders;
+    };
+  </script>
+</body>
+</html>

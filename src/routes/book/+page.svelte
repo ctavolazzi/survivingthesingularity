@@ -1,518 +1,424 @@
 <script>
-  import { fade, fly } from 'svelte/transition';
-  import TableOfContents from '$lib/components/TableOfContents.svelte';
+  import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
   import AuthorBio from '$lib/components/AuthorBio.svelte';
-  import ChapterPreviewCard from '$lib/components/ChapterPreviewCard.svelte';
-  import coverImage from '$lib/images/Surviving-the-Singularity-Cover.png?url';
-  import { chaptersWithMeta } from '$lib/bookContent.js';
+
+  // Set by LAUNCH.sh when the Gumroad product is ready. Empty = no buy button shown.
+  const PURCHASE_URL = '';
 
   export let data;
 
-  // Set to the Gumroad URL on launch day — the Buy CTA below renders
-  // automatically when this is non-empty. Empty string = no change to site.
-  const PURCHASE_URL = '';
-
-  const pillars = [
-    {
-      icon: '🧭',
-      title: 'Understand',
-      desc: 'What the Singularity actually is, why it’s arriving faster than anyone tells you, and what it means for the way you get your needs met.'
-    },
-    {
-      icon: '🔍',
-      title: 'Navigate',
-      desc: 'How AI is rewiring jobs, healthcare, education, art, relationships, politics, and money - right now, not in 2050.'
-    },
-    {
-      icon: '🛠️',
-      title: 'Thrive',
-      desc: 'Practical patterns for staying agentic in a world where the tools are starting to act on their own.'
-    }
-  ];
+  let visible = false;
+  onMount(() => {
+    visible = true;
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  });
 </script>
 
 <svelte:head>
-  <title>Surviving the Singularity - The Book</title>
-  <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. An open-draft field manual for the people who refuse to be passive cargo when AI rewrites the world." />
-  <meta property="og:title" content="Surviving the Singularity - The Book" />
-  <meta property="og:description" content="An open-draft field manual for the people who refuse to be passive cargo when AI rewrites the world." />
-  <meta property="og:image" content="/Surviving-the-Singularity-Cover.png" />
+  <title>Surviving the Singularity. The Book.</title>
+  <meta name="description" content="Surviving the Singularity by Christopher Tavolazzi. What is the Singularity, how humans react, and how to survive the transition. Open draft: read a free sample or preorder for $5." />
+  <meta property="og:title" content="Surviving the Singularity. The Book." />
+  <meta property="og:description" content="What is the Singularity. How humans react. How to survive the transition. Open draft by Christopher Tavolazzi." />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
+  <meta property="og:url" content="https://survivingthesingularity.com/book" />
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="not-prose book-page">
+<div class="book-page">
+{#if visible}
 
-  <!-- HERO -->
-  <section class="hero" in:fade={{ duration: 600 }}>
-    <div class="hero-cover">
-      <img src={coverImage} alt="Surviving the Singularity book cover" loading="eager" />
-      <div class="hero-cover-glow" aria-hidden="true"></div>
-    </div>
-    <div class="hero-text">
-      <div class="hero-eyebrow">Open Draft · v0.1 · Reader Edition</div>
-      <h1>Surviving the Singularity</h1>
-      <p class="hero-subtitle">
-        A field manual for the people who refuse to be passive cargo when AI rewrites the world.
-      </p>
-      <p class="hero-byline">By <strong>Christopher Tavolazzi</strong> &middot; <span class="mono">a.k.a. The Coffee Jesus</span></p>
-      <div class="hero-ctas">
-        <a class="cta-primary" href="#chapter-previews">Read free chapters &rarr;</a>
-        <a class="cta-secondary" href="/StS-free-sample.pdf" download>Download free sample (PDF)</a>
+  <!-- ── HERO ── -->
+  <section class="hero" in:fade={{ duration: 400 }}>
+    <div class="hero-inner">
+
+      <div class="cover-wrap">
+        <picture>
+          <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
+          <img
+            src="/images/surviving_the_singularity_cover_1200.png"
+            alt="Surviving the Singularity book cover"
+            class="cover-img"
+            width="600"
+            height="800"
+          />
+        </picture>
       </div>
-      {#if PURCHASE_URL}
-        <div class="hero-preorder">
-          <div class="preorder-label">Part I: A Manual for the Cracks, available now.</div>
-          <a class="cta-primary subscribe-cta" href={PURCHASE_URL} target="_blank" rel="noopener noreferrer">
-            Buy the book → $7.99 launch week
-          </a>
-          <p class="preorder-meta">Instant EPUB download. Updates included forever.</p>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Open Draft · v0.2 · Reader Edition</p>
+        <h1 class="book-title">Surviving the<br>Singularity</h1>
+        <p class="byline">By Christopher Tavolazzi</p>
+        <p class="hook">Intelligence now has a marginal cost of zero. The old systems haven't caught up yet. This book is about what to do in the gap, before the window closes.</p>
+
+        <div class="hero-ctas">
+          {#if PURCHASE_URL}
+            <a href={PURCHASE_URL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy the Book</a>
+          {:else}
+            <a href="/early-access" class="btn-primary">Preorder the Book: $5</a>
+          {/if}
+          <a href="/StS-free-sample.pdf" class="btn-ghost" target="_blank" rel="noopener noreferrer">Read a free sample</a>
         </div>
-      {/if}
-      <!-- Substack funnel stays as secondary path once PURCHASE_URL is live. -->
-      <div class="hero-preorder">
-        <div class="preorder-label">Updates are posted to Substack when posted at all.</div>
-        <a class="cta-primary subscribe-cta" href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer">
-          Subscribe on Substack →
-        </a>
-        <p class="preorder-meta">Substack subscription. No content frequency, ship date, or completion guarantee. Subject to Substack's own terms.</p>
+
+        <p class="disclaimer-note">
+          For informational purposes only. Not financial, legal, or professional advice.
+          <a href="/disclaimer">Full disclaimer.</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── WHAT'S INSIDE ── -->
+  <section class="section">
+    <div class="inner">
+      <p class="label">What's Inside</p>
+      <h2 class="heading">Three parts. Everything you need to navigate what's coming.</h2>
+
+      <div class="parts-grid">
+
+        <div class="part part-1">
+          <span class="part-num">Part I</span>
+          <h3 class="part-title">What is the Singularity?</h3>
+          <ul class="part-list">
+            <li>Why the 2017 Transformer architecture crossed the event horizon</li>
+            <li>Nine stages from narrow AI to AGI, and where we are right now</li>
+            <li>The thermodynamic limits that shape everything in Parts II and III</li>
+            <li>Why zero-cost intelligence changes the economics of survival</li>
+          </ul>
+        </div>
+
+        <div class="part part-2">
+          <span class="part-num">Part II</span>
+          <h3 class="part-title">How Humans React</h3>
+          <ul class="part-list">
+            <li>The predictable behavioral patterns when disruption hits</li>
+            <li>Why fear-based thinking makes the transition harder</li>
+            <li>How to shift from reaction to observer status, and why it matters</li>
+            <li>Why cooperation is the optimal strategy, not an ideology</li>
+          </ul>
+        </div>
+
+        <div class="part part-3">
+          <span class="part-num">Part III</span>
+          <h3 class="part-title">How to Survive the Transition</h3>
+          <ul class="part-list">
+            <li>Local energy and food infrastructure, built before you need it</li>
+            <li>The Shouse Grid: community-managed microgrids and local compute</li>
+            <li>The new social contract: food, shelter, and care as engineering targets</li>
+            <li>The 2027 tipping point and what to do on either side of it</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- THESIS -->
-  <section class="thesis" in:fly={{ y: 20, duration: 600, delay: 200 }}>
-    <div class="eyebrow">The Thesis</div>
-    <h2>The shovel is digging its own hole.</h2>
-    <p>
-      The Singularity isn’t a future event. It’s a current condition.
-      Tools are leaping from <em>reacting to our input</em> to <em>acting on their own</em>,
-      and the pace is doubling on a curve nobody is steering.
-    </p>
-    <p>
-      This book is a primer on the double-exponential shift in <strong>how we get our needs met</strong>.
-      Work, food, health, money, relationships, governance - all of it is being renegotiated
-      in real time by systems that don’t need your permission to participate.
-    </p>
-    <p class="thesis-kicker">
-      You don’t need to stop the wave. You need to learn to surf it.
-    </p>
-  </section>
-
-  <!-- 3 PILLARS -->
-  <section class="pillars" in:fly={{ y: 20, duration: 600, delay: 300 }}>
-    <div class="eyebrow">What You’ll Get</div>
-    <h2>Three things, in order.</h2>
-    <div class="pillar-grid">
-      {#each pillars as p}
-        <div class="pillar">
-          <div class="pillar-icon">{p.icon}</div>
-          <h3>{p.title}</h3>
-          <p>{p.desc}</p>
-        </div>
-      {/each}
+  <!-- ── PREORDER ── -->
+  <section class="section section-alt section-center">
+    <div class="inner inner-narrow">
+      <p class="label">Preorder</p>
+      <h2 class="heading">Get the book for $5.</h2>
+      <p class="subhead">Preorder now and get the current draft and the research bundle in your inbox today, plus an exclusive link to buy the finished book at 50% off when it launches on Amazon in August 2026.</p>
+      <a href="/early-access" class="btn-primary">Preorder the Book: $5</a>
+      <p class="fine-print">One-time payment · Secured by Stripe</p>
     </div>
   </section>
 
-  <!-- AUTHOR BIO -->
-  <div in:fly={{ y: 20, duration: 600, delay: 350 }}>
-    <AuthorBio />
-  </div>
-
-  <!-- SAMPLE EXCERPT -->
-  <section class="sample" in:fly={{ y: 20, duration: 600, delay: 400 }}>
-    <div class="eyebrow">A Sample</div>
-    <blockquote>
-      <p>
-        “So the robots have taken over. Congratulations - you’ve lost.
-        Surviving the Singularity isn’t just about fending off Terminator bots or finding
-        food in the era of economic collapse and climate famines. It’s about staying hidden
-        from autonomous drone swarms and filtering nanobots out of the water.
-      </p>
-      <p>
-        Ah, who am I kidding? You don’t need to worry about the nanobots.
-        You’re just a disembodied brain in a jar.
-        Every sensation you’ve ever had, every person you’ve ever known
-        is a hallucination produced by neural-link electrodes.”
-      </p>
-      <footer>&mdash; from the <a href="/book/introduction">Introduction</a></footer>
-    </blockquote>
-  </section>
-
-  <!-- OPEN DRAFT - reframed disclaimer -->
-  <section class="open-draft" in:fly={{ y: 20, duration: 600, delay: 450 }}>
-    <div class="eyebrow">How This Book Works</div>
-    <h2>Built in public. Revised by readers.</h2>
-    <p>
-      This is the <strong>open draft</strong> of <em>Surviving the Singularity</em>.
-      Chapters land as they’re written. Typos, edges, and works-in-progress are part of the deal -
-      and so is your input. Spot a glitch in the matrix? A passage that lands wrong?
-      A topic you want covered? <a href="/about">Reach out</a> and it goes into the next revision.
-    </p>
-    <p class="text-muted">
-      Final print/e-book editions will be released on Amazon. Open-draft readers get early access, signed credit, and first crack at the launch.
-    </p>
-  </section>
-
-  <!-- FREE SAMPLE DOWNLOAD -->
-  <section class="sample-dl" in:fly={{ y: 20, duration: 600, delay: 470 }}>
-    <div class="sample-dl-inner">
-      <div class="eyebrow">Try Before You Commit</div>
-      <h2>Free PDF Sample</h2>
-      <p>Introduction + Chapter 1. No email, no signup. Just open it and read.</p>
-      <a class="cta-primary" href="/StS-free-sample.pdf" download>📥 Download (PDF)</a>
-      <p class="sample-dl-meta">~10-min read · plain PDF · sharable</p>
+  <!-- ── FREE SAMPLE ── -->
+  <section class="section section-center">
+    <div class="inner inner-narrow">
+      <p class="label">Not sure yet?</p>
+      <h2 class="heading">Read the first chapter free.</h2>
+      <p class="subhead">Introduction plus Chapter 1. No signup. No email. About 10 minutes.</p>
+      <a href="/StS-free-sample.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">Download the free sample</a>
+      <p class="fine-print">PDF · No paywall · No strings</p>
     </div>
   </section>
 
-  <!-- CHAPTER PREVIEW GRID - replaces the old plain TOC link list -->
-  <section id="chapter-previews" class="chapter-previews" in:fly={{ y: 20, duration: 600, delay: 500 }}>
-    <div class="eyebrow">Read Now</div>
-    <h2>Chapters</h2>
-    <p class="chapter-previews-lede">
-      All chapters are free. Pick one that calls you.
-    </p>
-    <div class="chapter-grid">
-      {#each chaptersWithMeta as section, i}
-        <ChapterPreviewCard {section} index={i} />
-      {/each}
+  <!-- ── AUTHOR ── -->
+  <section class="section section-alt">
+    <div class="inner">
+      <AuthorBio />
     </div>
   </section>
 
-  <!-- FULL TABLE OF CONTENTS - kept for completeness (front + back matter) -->
-  <section id="table-of-contents" class="toc" in:fly={{ y: 20, duration: 600, delay: 520 }}>
-    <div class="eyebrow">Full Contents</div>
-    <h2>Everything in the book</h2>
-    <p class="toc-lede">Including front matter, epilogue, glossary, and further reading.</p>
-    <div class="toc-wrap">
-      <TableOfContents sections={data.book.sections} />
+  <!-- ── SUBSCRIBE ── -->
+  <section class="section section-center">
+    <div class="inner inner-narrow">
+      <p class="label">Stay in the loop</p>
+      <h2 class="heading">Get the next chapter when it ships.</h2>
+      <p class="subhead">Published on Substack. Subscribe once, get everything. Free tier covers all chapters and launch alerts.</p>
+      <a href="https://thecoffeejesus.substack.com" class="btn-primary" target="_blank" rel="noopener noreferrer">Subscribe on Substack</a>
     </div>
   </section>
 
-  <!-- SUBSCRIBE - single funnel into Substack. No competing forms. -->
-  <section id="stay-in-loop" class="newsletter" in:fly={{ y: 20, duration: 600, delay: 550 }}>
-    <div class="eyebrow">Stay In The Loop</div>
-    <h2>Get the next chapter in your inbox.</h2>
-    <p>I publish chapters, essays, and project updates on Substack. Subscribe once, get everything.</p>
-    <a class="cta-primary subscribe-cta-large" href="https://thecoffeejesus.substack.com" target="_blank" rel="noopener noreferrer">
-      📬 Subscribe on Substack →
-    </a>
-    <p class="subscribe-meta">Free tier covers chapters + launch alerts. Founding-tier readers get bonus drops + name in book acknowledgements.</p>
-  </section>
-
+{/if}
 </div>
 
 <style>
-  /* === SCOPED TO BOOK PAGE - uses theme tokens from theme.css === */
-
+  /* ── TOKENS ── */
   .book-page {
-    color: var(--color-text-primary, #f1f5f9);
-    font-family: var(--font-primary, 'Inter', sans-serif);
-    max-width: 1100px;
-    margin: 0 auto;
+    font-family: 'Outfit', system-ui, sans-serif;
+    --amber:      #f59e0b;
+    --amber-dim:  rgba(245,158,11,0.08);
+    --amber-glow: rgba(245,158,11,0.28);
+    --surface:    #0f172a;
+    --border:     rgba(255,255,255,0.07);
+    --border-mid: rgba(255,255,255,0.11);
+    --text-1:     #f8fafc;
+    --text-2:     #cbd5e1;
+    --text-3:     #64748b;
+    --mono:       'JetBrains Mono', monospace;
+    --ease-spring: cubic-bezier(0.34,1.56,0.64,1);
   }
 
-  /* Shared section eyebrow */
-  .eyebrow,
-  .hero-eyebrow {
-    display: inline-block;
-    font-family: var(--font-mono, var(--font-primary));
-    font-size: 0.85rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--color-primary, #f59e0b);
-    margin-bottom: 0.75rem;
+  /* ── LAYOUT PRIMITIVES ── */
+  .section {
+    padding: clamp(48px, 8vw, 88px) clamp(20px, 5vw, 48px);
+    border-top: 1px solid var(--border);
   }
-
-  h1, h2, h3 {
-    font-family: var(--font-primary, 'Inter', sans-serif);
-    color: var(--color-text-primary, #f1f5f9);
-    line-height: 1.15;
-    margin: 0 0 1rem;
+  .section-alt {
+    background: rgba(15,23,42,0.4);
   }
-
-  p { line-height: 1.7; margin: 0 0 1rem; color: var(--color-text-secondary, #dde4ef); }
-  .mono { font-family: var(--font-mono, monospace); color: var(--color-text-secondary); }
-  .text-muted { color: var(--color-text-muted, #dde4ef); font-size: 0.9rem; }
-
-  /* === HERO === */
-  .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-    gap: 3rem;
-    align-items: center;
-    margin: 2rem 0 5rem;
-  }
-  .hero-cover { position: relative; }
-  .hero-cover img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    border-radius: var(--radius-md, 12px);
-    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px var(--color-border, rgba(148,163,184,0.1));
-    position: relative;
-    z-index: 1;
-    display: block;
-    margin: 0 auto;
-  }
-  .hero-cover-glow {
-    position: absolute;
-    inset: 10% 5%;
-    background: radial-gradient(circle, var(--color-primary, #f59e0b) 0%, transparent 70%);
-    filter: blur(40px);
-    opacity: 0.35;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .hero h1 {
-    font-size: clamp(2.25rem, 5vw, 3.75rem);
-    font-weight: 800;
-    color: var(--color-text-primary, #f1f5f9);
-    background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-primary) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  @supports not (-webkit-background-clip: text) {
-    .hero h1 {
-      background: none;
-      color: var(--color-text-primary, #f1f5f9);
-    }
-  }
-  .hero-subtitle {
-    font-size: 1.2rem;
-    color: var(--color-text-primary);
-    margin: 1rem 0;
-  }
-  .hero-byline { font-size: 0.95rem; }
-  .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
-  .cta-primary, .cta-secondary {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius-sm, 6px);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: transform 150ms ease, background-color 150ms ease, color 150ms ease;
-  }
-  .cta-primary {
-    background: var(--color-primary, #f59e0b);
-    color: #1a0f00;
-  }
-  .cta-primary:hover { background: var(--color-primary-light, #fbbf24); transform: translateY(-1px); }
-  .cta-secondary {
-    background: transparent;
-    color: var(--color-text-primary);
-    border: 1px solid var(--color-border-hover, rgba(148,163,184,0.2));
-  }
-  .cta-secondary:hover { background: var(--color-surface, rgba(30,41,59,0.5)); }
-
-  /* === SECTION CARDS === */
-  .thesis, .pillars, .sample, .open-draft, .toc, .newsletter,
-  .sample-dl, .chapter-previews {
-    background: var(--color-surface, rgba(30,41,59,0.5));
-    border: 1px solid var(--color-border, rgba(148,163,184,0.1));
-    border-radius: var(--radius-lg, 16px);
-    padding: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  .thesis h2, .pillars h2, .open-draft h2, .toc h2, .newsletter h2,
-  .sample-dl h2, .chapter-previews h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 700;
-  }
-
-  /* === HERO PREORDER (under primary CTAs) === */
-  .hero-preorder {
-    margin-top: 1.75rem;
-    padding-top: 1.5rem;
-    border-top: 1px dashed var(--color-border, rgba(148,163,184,0.15));
-  }
-  .preorder-label {
-    font-size: 0.85rem;
-    color: var(--color-text-muted, #dde4ef);
-    margin-bottom: 0.65rem;
-    font-family: var(--font-mono, var(--font-primary));
-  }
-  .preorder-meta {
-    margin-top: 0.65rem !important;
-    font-size: 0.86rem;
-    color: var(--color-text-muted, #dde4ef);
-    font-family: var(--font-mono, var(--font-primary));
-  }
-  .subscribe-cta { display: inline-block; }
-  .subscribe-cta-large {
-    display: inline-block;
-    font-size: 1.05rem;
-    padding: 0.85rem 1.75rem;
-    margin-top: 0.5rem;
-  }
-  .subscribe-meta {
-    margin-top: 1rem !important;
-    font-size: 0.82rem;
-    color: var(--color-text-muted, #dde4ef);
-    max-width: 520px;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  /* === FREE SAMPLE DOWNLOAD === */
-  .sample-dl {
+  .section-center {
     text-align: center;
-    background: linear-gradient(135deg, rgba(30,41,59,0.6), rgba(245,158,11,0.06));
-    border-color: rgba(245,158,11,0.25);
   }
-  .sample-dl-inner { max-width: 540px; margin: 0 auto; }
-  .sample-dl h2 { margin-top: 0; }
-  .sample-dl p { color: var(--color-text-secondary, #dde4ef); margin: 0 0 1.5rem; }
-  .sample-dl .cta-primary { font-size: 1.05rem; padding: 0.85rem 1.75rem; }
-  .sample-dl-meta {
-    margin-top: 1rem !important;
-    font-size: 0.86rem;
-    color: var(--color-text-muted, #dde4ef);
-    font-family: var(--font-mono, var(--font-primary));
+  .inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .inner-narrow {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
   }
 
-  /* === CHAPTER PREVIEWS === */
-  .chapter-previews-lede {
-    color: var(--color-text-secondary, #dde4ef);
-    margin: 0 0 1.5rem;
+  /* ── TYPE SCALE ── */
+  .label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--amber);
+    margin: 0 0 0.6rem;
+    display: block;
   }
-  .chapter-grid {
+  .heading {
+    font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+    font-weight: 900;
+    color: var(--text-1);
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+  .subhead {
+    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+    color: var(--text-2);
+    line-height: 1.65;
+    margin: 0 0 2rem;
+    max-width: 56ch;
+  }
+  .section-center .subhead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--text-3);
+    margin: 0 0 0.6rem;
+  }
+  .fine-print {
+    font-size: 0.78rem;
+    color: var(--text-3);
+    margin: 0.25rem 0 0;
+  }
+
+  /* ── BUTTONS ── */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.85rem 1.75rem;
+    background: var(--amber);
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 4px 20px var(--amber-glow);
+    transition: filter 0.2s ease, transform 0.2s var(--ease-spring), box-shadow 0.2s ease;
+    white-space: nowrap;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .btn-primary:hover { filter: brightness(1.08); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(245,158,11,0.42); }
+  .btn-primary:active { transform: scale(0.97); }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.85rem 1.75rem;
+    background: transparent;
+    color: var(--text-2);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 1px solid var(--border-mid);
+    border-radius: 999px;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .btn-ghost:hover { color: var(--text-1); border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.04); }
+
+  /* ── HERO ── */
+  .hero {
+    padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 48px) clamp(48px, 7vw, 80px);
+    background: linear-gradient(160deg, rgba(245,158,11,0.06) 0%, transparent 55%);
+  }
+  .hero-inner {
+    max-width: 960px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 240px 1fr;
+    gap: clamp(28px, 5vw, 64px);
+    align-items: center;
+  }
+  @media (max-width: 640px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+    }
+    .cover-wrap {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .cover-img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 28px 60px rgba(0,0,0,0.65), 0 0 0 1px rgba(245,158,11,0.1);
+  }
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .book-title {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    font-weight: 900;
+    color: var(--text-1);
+    margin: 0 0 0.3rem;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+  }
+  .byline {
+    font-size: 0.9rem;
+    color: var(--text-3);
+    margin: 0 0 1.2rem;
+    font-family: var(--mono);
+  }
+  .hook {
+    font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+    color: var(--text-2);
+    line-height: 1.65;
+    margin: 0 0 1.6rem;
+    max-width: 52ch;
+  }
+  .hero-ctas {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .disclaimer-note {
+    font-size: 0.78rem;
+    color: var(--text-3);
+    margin: 0;
+    line-height: 1.5;
+  }
+  .disclaimer-note a {
+    color: var(--text-2);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .disclaimer-note a:hover { color: var(--amber); }
+
+  /* ── PARTS GRID ── */
+  .parts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    margin-top: 2rem;
   }
-
-  /* === FULL TOC === */
-  .toc-lede {
-    color: var(--color-text-muted, #dde4ef);
-    margin: 0 0 1.5rem;
-    font-size: 0.92rem;
+  @media (max-width: 680px) {
+    .parts-grid { grid-template-columns: 1fr; }
   }
-  .thesis-kicker {
-    font-size: 1.15rem;
-    color: var(--color-primary, #f59e0b);
-    font-weight: 600;
-    margin-top: 1.5rem;
+  .part {
+    padding: 1.4rem;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--border-mid);
+    border-radius: 14px;
   }
-
-  /* === PILLARS === */
-  .pillar-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.25rem;
-    margin-top: 1.5rem;
+  .part-1 { border-top-color: var(--amber); }
+  .part-2 { border-top-color: #3b82f6; }
+  .part-3 { border-top-color: #10b981; }
+  .part-num {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-3);
+    display: block;
+    margin-bottom: 0.4rem;
   }
-  .pillar {
-    background: var(--color-bg-secondary, #0f172a);
-    border: 1px solid var(--color-border, rgba(148,163,184,0.1));
-    border-radius: var(--radius-md, 12px);
-    padding: 1.5rem;
-    transition: border-color 200ms ease, transform 200ms ease;
+  .part-title {
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: var(--text-1);
+    margin: 0 0 0.75rem;
+    line-height: 1.25;
   }
-  .pillar:hover { border-color: var(--color-primary, #f59e0b); transform: translateY(-2px); }
-  .pillar-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
-  .pillar h3 {
-    font-size: 1.1rem;
-    color: var(--color-primary, #f59e0b);
-    margin-bottom: 0.5rem;
+  .part-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
   }
-  .pillar p { font-size: 0.9rem; margin: 0; }
-
-  /* === SAMPLE === */
-  .sample blockquote {
-    margin: 1rem 0 0;
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
-    border-left: 3px solid var(--color-primary, #f59e0b);
-    background: var(--color-bg-secondary, #0f172a);
-    border-radius: 0 var(--radius-md, 12px) var(--radius-md, 12px) 0;
-    font-style: italic;
-    font-size: 1.05rem;
-  }
-  .sample blockquote p { color: var(--color-text-primary); }
-  .sample blockquote footer {
-    font-style: normal;
+  .part-list li {
     font-size: 0.85rem;
-    color: var(--color-text-muted);
-    margin-top: 0.75rem;
+    color: var(--text-2);
+    line-height: 1.5;
+    padding-left: 1.1rem;
+    position: relative;
   }
-  .sample blockquote footer a {
-    color: var(--color-primary, #f59e0b);
-    text-decoration: none;
-    border-bottom: 1px dashed currentColor;
+  .part-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--text-3);
   }
-  .sample blockquote footer a:hover { color: var(--color-primary-light, #fbbf24); }
+  .part-1 .part-list li::before { background: var(--amber); }
+  .part-2 .part-list li::before { background: #60a5fa; }
+  .part-3 .part-list li::before { background: #34d399; }
 
-  /* === OPEN DRAFT === */
-  .open-draft a {
-    color: var(--color-primary, #f59e0b);
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
-  }
-  .open-draft a:hover { color: var(--color-primary-light, #fbbf24); }
-
-  /* === TOC === */
-  .toc-wrap { margin-top: 1.5rem; }
-
-  /* === NEWSLETTER === */
-  .newsletter { text-align: center; }
-  .newsletter h2 { text-align: center; }
-  .newsletter p { text-align: center; max-width: 500px; margin: 0 auto 1.5rem; }
-
-  /* === RESPONSIVE === */
-
-  /* Tablet landscape / small desktop */
-  @media (max-width: 960px) {
-    .hero {
-      gap: 2rem;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
-    }
-    .hero-cover img { max-width: 260px; }
-  }
-
-  /* Mobile */
-  @media (max-width: 768px) {
-    .hero {
-      grid-template-columns: 1fr;
-      gap: 1.75rem;
-      text-align: center;
-      margin: 1rem 0 3rem;
-    }
-    .hero-cover img { max-width: 240px; }
-    .hero-ctas { justify-content: center; }
-    .hero-preorder { text-align: left; }
-    .thesis, .pillars, .sample, .open-draft, .toc, .newsletter,
-    .sample-dl, .chapter-previews {
-      padding: 1.5rem;
-    }
-  }
-
-  /* Small phones */
-  @media (max-width: 480px) {
-    .hero {
-      gap: 1.25rem;
-      margin: 0.5rem 0 2rem;
-    }
-    .hero-cover img { max-width: 200px; }
-    .hero-ctas {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .cta-primary, .cta-secondary { text-align: center; }
-    .thesis, .pillars, .sample, .open-draft, .toc, .newsletter,
-    .sample-dl, .chapter-previews {
-      padding: 1.25rem;
-    }
-    .chapter-grid {
-      grid-template-columns: 1fr;
-    }
-    .pillar-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* === REDUCED MOTION === */
-  @media (prefers-reduced-motion: reduce) {
-    .pillar:hover, .cta-primary:hover { transform: none; }
-  }
 </style>

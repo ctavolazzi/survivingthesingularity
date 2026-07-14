@@ -130,4 +130,4 @@ Code: open source. Book content: all rights reserved, free to read on the live s
 
 ## Author
 
-Christopher Tavolazzi. Writes as [The Coffee Jesus](https://thecoffeejesus.substack.com).
+Christopher Tavolazzi. Writes as [Coffee Jesus](https://thecoffeejesus.substack.com).

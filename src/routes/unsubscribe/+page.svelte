@@ -37,6 +37,7 @@
 
 <svelte:head>
   <title>Unsubscribe | Surviving the Singularity</title>
+  <meta name="description" content="Manage your Surviving the Singularity email preferences." />
   <meta name="robots" content="noindex" />
 </svelte:head>
 

@@ -1,163 +1,149 @@
 {
   "title": "Surviving the Singularity",
+  "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
   "author": "Christopher Tavolazzi",
-  "version": "0.1.0",
-  "lastUpdated": "2026-05-25",
+  "version": "0.2.0",
+  "lastUpdated": "2026-07-11",
   "sections": [
     {
-      "id": "acknowledgements",
-      "title": "Acknowledgements",
-      "file": "01-acknowledgements.md"
+      "id": "chapter0",
+      "title": "Chapter 0: The Demonstration",
+      "file": "00-chapter0.md"
+    },
+    {
+      "id": "preface",
+      "title": "Preface: Welcome to the Weirdness",
+      "file": "01-preface.md"
     },
     {
       "id": "introduction",
-      "title": "Introduction: Welcome to the Weirdness",
+      "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md"
     },
     {
       "id": "part-1",
-      "title": "Part I: The Wave",
+      "title": "Part I: What is the Singularity?",
       "file": "part1-divider.md"
     },
     {
       "id": "chapter1",
-      "title": "Chapter 1: What the Hell is Going On?: An Overview of AI and the Singularity",
+      "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md"
     },
     {
       "id": "chapter2",
-      "title": "Chapter 2: Show Me the Money (While It Still Exists): AI's Impact on Jobs and the Economy",
+      "title": "Chapter 2: The Era of AGI (Stages 1\u20135)",
       "file": "04-chapter2.md"
     },
     {
       "id": "chapter3",
-      "title": "Chapter 3: Your AI BFF (Best Fridge Forever): AI in Our Everyday Lives",
+      "title": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6\u20137)",
       "file": "05-chapter3.md"
     },
     {
       "id": "chapter4",
-      "title": "Chapter 4: Dr. AI Will See You Now (No Lollipops, Just Binary Code): AI in Healthcare",
+      "title": "Chapter 4: Universal and Multiverse Apex (Stages 8\u20139)",
       "file": "06-chapter4.md"
     },
     {
       "id": "chapter5",
-      "title": "Chapter 5: School of the Future (No Hoverboards, Just Smart Blackboards): AI in Education",
+      "title": "Chapter 5: The Thermodynamics of Survival",
       "file": "07-chapter5.md"
     },
     {
+      "id": "part-2",
+      "title": "Part II: How Humans React \u2014 The Cooperative Transition",
+      "file": "part2-divider.md"
+    },
+    {
       "id": "chapter6",
-      "title": "Chapter 6: When Robots Get Creative (Spoiler: It's Weird): AI in Art and Creativity",
+      "title": "Chapter 6: The Singularity Is a Done Deal",
       "file": "08-chapter6.md"
     },
     {
       "id": "chapter7",
-      "title": "Chapter 7: Love in the Time of Algorithms: AI in Relationships and Dating",
+      "title": "Chapter 7: The Battle Lines \u2014 The Entitled vs. The Ready",
       "file": "09-chapter7.md"
     },
     {
       "id": "chapter8",
-      "title": "Chapter 8: Lights, Camera, Algorithm!: AI in Entertainment and Media",
+      "title": "Chapter 8: The Psychology of the Collapse",
       "file": "10-chapter8.md"
     },
     {
       "id": "chapter9",
-      "title": "Chapter 9: AI for President: No Kissing Babies Required: AI in Politics and Governance",
+      "title": "Chapter 9: Deglobalization and the Neighborhood Factory",
       "file": "11-chapter9.md"
     },
     {
+      "id": "part-3",
+      "title": "Part III: How to Survive the Transition",
+      "file": "part3-divider.md"
+    },
+    {
       "id": "chapter10",
-      "title": "Chapter 10: Money Never Sleeps, and Neither Do the AIs: AI in Finance and Economics",
+      "title": "Chapter 10: The \"Create Over Consume\" Protocol",
       "file": "12-chapter10.md"
     },
     {
       "id": "chapter11",
-      "title": "Chapter 11: The Singularity: When AI Becomes SMARTer Than U",
+      "title": "Chapter 11: Using the Tech to Your Advantage",
       "file": "13-chapter11.md"
     },
     {
       "id": "chapter12",
-      "title": "Chapter 12: So Long, and Thanks for All the Data: Surviving and Thriving in the Age of AI",
+      "title": "Chapter 12: The Land Strategy",
       "file": "14-chapter12.md"
     },
     {
-      "id": "part-2",
-      "title": "Part II: Build a Better Tomorrow",
-      "file": "part2-divider.md"
+      "id": "chapter13",
+      "title": "Chapter 13: The Shouse Protocol",
+      "file": "15-chapter13.md"
     },
     {
-      "id": "ch13",
-      "title": "Chapter 13: The Thermodynamics of Survival",
-      "file": "p2-01-chapter13.md"
-    },
-    {
-      "id": "ch14",
+      "id": "chapter14",
       "title": "Chapter 14: The Collapse of the Long Tail",
-      "file": "p2-02-chapter14.md"
+      "file": "16-chapter14.md"
     },
     {
-      "id": "ch15",
-      "title": "Chapter 15: Cognitive Firewalls and Semantic Hygiene",
-      "file": "p2-03-chapter15.md"
+      "id": "chapter15",
+      "title": "Chapter 15: The Power of Reclaiming Soil",
+      "file": "17-chapter15.md"
     },
     {
-      "id": "ch16",
-      "title": "Chapter 16: The Great Slop-ocalypse and Algorithmic Judo",
-      "file": "p2-04-chapter16.md"
+      "id": "chapter16",
+      "title": "Chapter 16: Digital Leverage and Media Autonomy",
+      "file": "18-chapter16.md"
     },
     {
-      "id": "ch17",
-      "title": "Chapter 17: The Sovereign Shell ($25,000 Exit Strategy)",
-      "file": "p2-05-chapter17.md"
+      "id": "chapter17",
+      "title": "Chapter 17: Tools of the Trade",
+      "file": "19-chapter17.md"
     },
     {
-      "id": "ch18",
-      "title": "Chapter 18: DC-Native Solar and Recycled Storage",
-      "file": "p2-06-chapter18.md"
+      "id": "chapter18",
+      "title": "Chapter 18: The Roadmap and the Premortem Pivot",
+      "file": "20-chapter18.md"
     },
     {
-      "id": "ch19",
-      "title": "Chapter 19: The Crucible (Local Servers and Air-Gapped Sandboxes)",
-      "file": "p2-07-chapter19.md"
+      "id": "conclusion",
+      "title": "Conclusion: The 2027 Tipping Point",
+      "file": "21-conclusion.md"
     },
     {
-      "id": "ch20",
-      "title": "Chapter 20: The Robot in the Soil (FarmBot and Biological Refineries)",
-      "file": "p2-08-chapter20.md"
+      "id": "appendix-a",
+      "title": "Appendix A: The Municipal Autonomy Code",
+      "file": "22-appendix-a.md"
     },
     {
-      "id": "ch21",
-      "title": "Chapter 21: The Philosophy of the Commons",
-      "file": "p2-09-chapter21.md"
+      "id": "appendix-b",
+      "title": "Appendix B: Works Cited",
+      "file": "23-appendix-b.md"
     },
     {
-      "id": "ch22",
-      "title": "Chapter 22: The Sovereign Protocol (Mesh Networks, LoRa, and Offline Communication)",
-      "file": "p2-10-chapter22.md"
-    },
-    {
-      "id": "ch23",
-      "title": "Chapter 23: The Sovereign Horizon (The Semi-Autonomous CSA and the Shouse Grid)",
-      "file": "p2-11-chapter23.md"
-    },
-    {
-      "id": "epilogue",
-      "title": "Epilogue: The Future is Unwritten (But Probably Typed by an AI)",
-      "file": "15-epilogue.md"
-    },
-    {
-      "id": "glossary",
-      "title": "Glossary of AI Terms (For When You're Faking It at Dinner Parties)",
-      "file": "16-glossary.md"
-    },
-    {
-      "id": "further-reading",
-      "title": "Further Reading (In Case This Book Didn't Fry Your Circuits Enough)",
-      "file": "17-further-reading.md"
-    },
-    {
-      "id": "image-credits",
-      "title": "Image Credits",
-      "file": "19-image-credits.md"
+      "id": "appendix-c",
+      "title": "Appendix C: Executive Reference Guide",
+      "file": "24-appendix-c.md"
     }
   ]
 }

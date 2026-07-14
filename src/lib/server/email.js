@@ -27,9 +27,9 @@ function buildWelcome(source) {
       subject: 'Your Readiness Checklist is unlocked',
       heading: "You're in. The full checklist is open.",
       body:
-        'All 12 moves are unlocked on the site. Work through them at your own pace. ' +
+        'All 7 moves are unlocked on the site. Work through them at your own pace. ' +
         'Start with the three you have been avoiding. When you want the deeper strategy, ' +
-        'the full Blueprint is there too.',
+        'the book is there too.',
       cta: { label: 'Open the checklist', url: 'https://survivingthesingularity.com/checklist' },
     };
   }

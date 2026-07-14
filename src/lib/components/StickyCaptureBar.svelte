@@ -74,7 +74,7 @@
       <p class="capture-copy">
         <span class="capture-tag">Free</span>
         <strong>The Singularity Readiness Checklist</strong>
-        <span class="capture-copy-sub">12 moves to make before AGI.</span>
+        <span class="capture-copy-sub">7 moves to make before AGI.</span>
       </p>
       <a href="/checklist" class="capture-btn" on:click={dismiss}>
         Get the Checklist

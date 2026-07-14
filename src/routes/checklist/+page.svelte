@@ -190,7 +190,7 @@
 
 <svelte:head>
   <title>Free Readiness Checklist: Surviving the Singularity</title>
-  <meta name="description" content="12 concrete moves to build real independence before AGI changes everything. Check off steps, add your own notes, and email yourself the results." />
+  <meta name="description" content="7 concrete moves to build real independence before AGI changes everything. Check off steps, add your own notes, and email yourself the results." />
 </svelte:head>
 
 <div class="cl-page">

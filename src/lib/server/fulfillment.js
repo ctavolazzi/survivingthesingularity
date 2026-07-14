@@ -29,6 +29,17 @@ const LINK_TTL = 60 * 60 * 24 * 7; // 7 days in seconds
 // email can ever trigger the delete-then-insert path there.
 const DUPLICATE_CHECK_EXEMPT_EMAIL = (env.TEST_REPEAT_PURCHASE_EMAIL || '').toLowerCase() || null;
 
+// Unambiguous charset for a code a customer has to type back in later - no
+// 0/O, 1/I/L, so it reads cleanly out loud or off a screenshot.
+const CODE_CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+function generateDiscountCode() {
+  let code = '';
+  for (let i = 0; i < 6; i++) {
+    code += CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)];
+  }
+  return code;
+}
+
 /**
  * Claim a session ID in Supabase before doing anything else. Returns true if
  * this is the first claim (proceed with fulfillment), false if already
@@ -75,6 +86,7 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
   const bundleUrl = await getBundleUrl();
 
   let copyNumber = null;
+  let discountCode = null;
   let duplicate = false;
   const isExempt = DUPLICATE_CHECK_EXEMPT_EMAIL !== null
     && email.toLowerCase() === DUPLICATE_CHECK_EXEMPT_EMAIL;
@@ -83,20 +95,46 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
     if (isExempt) {
       await supabaseAdmin.from('preorders').delete().eq('email', email).eq('edition_type', editionType);
     }
-    const { data: preorder, error: preorderErr } = await supabaseAdmin
+
+    const generatedCode = generateDiscountCode();
+    let { data: preorder, error: preorderErr } = await supabaseAdmin
       .from('preorders')
-      .insert({ email, name, edition_type: editionType, source: 'stripe' })
-      .select('copy_number')
+      .insert({ email, name, edition_type: editionType, source: 'stripe', discount_code: generatedCode })
+      .select('copy_number, discount_code')
       .single();
+
+    // sql/009_preorder_discount_code.sql may not have run yet on this
+    // project - if the column itself is missing, PostgREST rejects the
+    // whole insert. Retry without it rather than let a schema migration
+    // gap take down the entire preorder pipeline; the code is simply
+    // omitted from the email until the migration runs.
+    if (preorderErr && preorderErr.code !== '23505') {
+      console.warn('[fulfillment] insert with discount_code failed, retrying without it:', preorderErr.message);
+      ({ data: preorder, error: preorderErr } = await supabaseAdmin
+        .from('preorders')
+        .insert({ email, name, edition_type: editionType, source: 'stripe' })
+        .select('copy_number')
+        .single());
+    }
+
     if (preorderErr) {
       if (preorderErr.code === '23505') {
         duplicate = true;
         console.warn(`[fulfillment] duplicate preorder blocked: ${email} already has a ${editionType} preorder.`);
+        // Look up their existing code so a resend still shows the real one.
+        const { data: existing } = await supabaseAdmin
+          .from('preorders')
+          .select('copy_number, discount_code')
+          .eq('email', email).eq('edition_type', editionType)
+          .maybeSingle();
+        copyNumber = existing?.copy_number ?? null;
+        discountCode = existing?.discount_code ?? null;
       } else {
         console.error('[fulfillment] preorder insert error:', preorderErr.message);
       }
     } else {
       copyNumber = preorder?.copy_number ?? null;
+      discountCode = preorder?.discount_code ?? null;
     }
   }
 
@@ -104,7 +142,7 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
   // access to what they already have); the admin alert only fires for
   // genuinely new preorders so a re-payment doesn't spam a second alert.
   const sends = [
-    sendDownloadEmail({ to: email, sessionId, edition_type: editionType, copy_number: copyNumber })
+    sendDownloadEmail({ to: email, sessionId, edition_type: editionType, copy_number: copyNumber, discount_code: discountCode })
       .catch((e) => console.error('[fulfillment] download email threw:', e?.message ?? e)),
   ];
   if (!duplicate) {
@@ -115,5 +153,5 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
   }
   await Promise.allSettled(sends);
 
-  return { alreadyFulfilled: false, duplicate, bundleUrl, copyNumber };
+  return { alreadyFulfilled: false, duplicate, bundleUrl, copyNumber, discountCode };
 }

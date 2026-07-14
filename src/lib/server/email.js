@@ -278,9 +278,9 @@ export async function sendChecklistEmail({ to, answers }) {
  * stale and the customer always lands on something in Surviving the
  * Singularity's own branding.
  *
- * @param {{ to: string, sessionId: string }} args
+ * @param {{ to: string, sessionId: string, discount_code?: string|null }} args
  */
-export async function sendDownloadEmail({ to, sessionId, edition_type, copy_number }) {
+export async function sendDownloadEmail({ to, sessionId, edition_type, copy_number, discount_code }) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset - skipping download email to', to);
     return { skipped: true };
@@ -303,6 +303,12 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.
   const pageUrl = `https://survivingthesingularity.com/early-access/success?session_id=${encodeURIComponent(sessionId)}`;
+  // Shared Stripe promotion code that actually redeems the 50% off at the
+  // future book checkout (allow_promotion_codes is already on in
+  // stripe-checkout/+server.js). The personal code below is this specific
+  // customer's proof of a genuine preorder, stored in Supabase
+  // (sql/009_preorder_discount_code.sql) - not itself a Stripe object.
+  const masterCode = env.MASTER_DISCOUNT_CODE || 'PREORDER50';
 
   const html = `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
@@ -310,6 +316,22 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download your bundle</a>
+    <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
+      <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your 50% off launch discount</p>
+      <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">Keep both of these. You'll need them when the finished book launches.</p>
+      <table role="presentation" style="width:100%;border-collapse:collapse;">
+        <tr>
+          <td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
+            <span style="font-size:12px;color:#64748b;display:block;">Your personal code</span>
+            <strong style="font-size:18px;letter-spacing:0.08em;color:#f1f5f9;">${discount_code ? escapeHtml(discount_code) : 'Emailed separately'}</strong>
+          </td>
+          <td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
+            <span style="font-size:12px;color:#64748b;display:block;">Code to redeem at checkout</span>
+            <strong style="font-size:18px;letter-spacing:0.08em;color:#f1f5f9;">${escapeHtml(masterCode)}</strong>
+          </td>
+        </tr>
+      </table>
+    </div>
     <div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);border-radius:10px;padding:16px 20px;margin-top:8px;">
       <p style="font-size:13px;color:#64748b;margin:0 0 10px;">Also included in your early access:</p>
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">

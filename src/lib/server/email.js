@@ -272,13 +272,15 @@ export async function sendChecklistEmail({ to, answers }) {
 }
 
 /**
- * Send the early-access research bundle download link after payment.
- * `downloadUrl` is a time-limited signed URL from Supabase Storage (or a
- * static URL in mock mode). The link is valid for 7 days.
+ * Send the early-access confirmation email after payment. Links to the
+ * branded success page (which mints a fresh signed download URL on every
+ * visit) rather than a raw storage URL directly, so the link never goes
+ * stale and the customer always lands on something in Surviving the
+ * Singularity's own branding.
  *
- * @param {{ to: string, downloadUrl: string, sessionId: string }} args
+ * @param {{ to: string, sessionId: string }} args
  */
-export async function sendDownloadEmail({ to, downloadUrl, sessionId, edition_type, copy_number }) {
+export async function sendDownloadEmail({ to, sessionId, edition_type, copy_number }) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset - skipping download email to', to);
     return { skipped: true };
@@ -296,22 +298,23 @@ export async function sendDownloadEmail({ to, downloadUrl, sessionId, edition_ty
     : 'Your preorder is confirmed. ';
   const body =
     `${confirmLine}Your spot in line is locked in at 50% off the finished book, and we will email you an exclusive link when it is ready. ` +
-    'The bundle below includes the complete current draft of the book as a PDF, plus the research PDFs, papers, images, and source documents behind it. ' +
-    'The link below is valid for 7 days. After that, reply to this email and we will send a fresh one.';
-  const cta = { label: 'Download your bundle', url: downloadUrl };
+    'The bundle below includes the complete current draft of the book as a PDF, plus the research PDFs, papers, images, and source documents behind it.';
+  // Links to the branded confirmation page, not the raw storage file directly.
+  // The page mints a fresh signed download URL on every visit, so this link
+  // works whenever the customer clicks it instead of expiring after 7 days.
+  const pageUrl = `https://survivingthesingularity.com/early-access/success?session_id=${encodeURIComponent(sessionId)}`;
 
   const html = `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
-    <a href="${downloadUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download your bundle</a>
+    <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download your bundle</a>
     <div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);border-radius:10px;padding:16px 20px;margin-top:8px;">
       <p style="font-size:13px;color:#64748b;margin:0 0 10px;">Also included in your early access:</p>
       <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.7;">
         The book: <a href="https://survivingthesingularity.com/book" style="color:#f59e0b;">survivingthesingularity.com/book</a><br>
-        Readiness checklist: <a href="https://survivingthesingularity.com/checklist" style="color:#f59e0b;">survivingthesingularity.com/checklist</a><br>
-        Research signals: <a href="https://survivingthesingularity.com/signals" style="color:#f59e0b;">survivingthesingularity.com/signals</a>
+        Readiness checklist: <a href="https://survivingthesingularity.com/checklist" style="color:#f59e0b;">survivingthesingularity.com/checklist</a>
       </p>
       ${env.BOOK_ACCESS_PASSWORD ? `<p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(env.BOOK_ACCESS_PASSWORD)}</strong></p>` : ''}
     </div>

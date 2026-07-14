@@ -104,7 +104,7 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
   // access to what they already have); the admin alert only fires for
   // genuinely new preorders so a re-payment doesn't spam a second alert.
   const sends = [
-    sendDownloadEmail({ to: email, downloadUrl: bundleUrl ?? null, sessionId, edition_type: editionType, copy_number: copyNumber })
+    sendDownloadEmail({ to: email, sessionId, edition_type: editionType, copy_number: copyNumber })
       .catch((e) => console.error('[fulfillment] download email threw:', e?.message ?? e)),
   ];
   if (!duplicate) {

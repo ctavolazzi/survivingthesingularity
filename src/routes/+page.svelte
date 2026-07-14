@@ -511,11 +511,14 @@
     </div>
   </section>
 
-  <!-- THE BOOK ITSELF -->
-  <section class="product-section" aria-label="The book you are preordering">
+  <!-- CTA -->
+  <section id="act" aria-labelledby="act-heading">
     <div class="section-inner">
-      <div class="product-inner reveal">
-        <div class="product-cover">
+      <div class="cta-inner reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>Five dollars.</em></h2>
+
+        <div class="cta-cover">
           <div class="product-cover-glow" aria-hidden="true"></div>
           <picture>
             <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
@@ -529,32 +532,7 @@
             />
           </picture>
         </div>
-        <div class="product-copy">
-          <span class="section-label">The Book</span>
-          <h2 class="product-heading">This is what five dollars buys.</h2>
-          <ul class="product-list">
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The current book draft, in your inbox today</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The research bundle: the papers and sources behind every claim</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>50% off the finished book when it launches on Amazon</li>
-          </ul>
-          <a href="/early-access" class="btn-primary">
-            Preorder the Book: $5
-            <span class="btn-icon" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </a>
-          <p class="product-fine">One-time payment · Secured by Stripe</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CTA -->
-  <section id="act" aria-labelledby="act-heading">
-    <div class="section-inner">
-      <div class="cta-inner reveal">
-        <div class="cta-glow" aria-hidden="true"></div>
-        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>Five dollars.</em></h2>
         <p class="cta-sub">The book draft. The research bundle. The readiness checklist. One payment, everything now, plus 50% off the finished book at launch.<br><br>Limited time offer. Price goes up at launch.</p>
 
         <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
@@ -1446,37 +1424,19 @@
   .book-part-icon { display: block; width: 30px; height: 30px; margin-bottom: 12px; }
   .book-part-icon svg { width: 100%; height: 100%; display: block; }
 
-  /* PRODUCT */
-  .product-section { border-top: 1px solid var(--border); padding: clamp(56px, 8vw, 96px) 0; }
-  .product-inner {
-    display: grid; grid-template-columns: 0.85fr 1.15fr;
-    gap: clamp(32px, 5vw, 64px); align-items: center;
-  }
-  @media (max-width: 768px) { .product-inner { grid-template-columns: 1fr; } }
-  .product-cover { position: relative; display: flex; justify-content: center; }
+  /* CTA COVER (folded into the CTA section, was a separate PRODUCT section) */
+  .cta-cover { position: relative; display: flex; justify-content: center; margin: clamp(20px, 4vw, 32px) 0; }
   .product-cover-glow {
     position: absolute; inset: -24px;
     background: radial-gradient(ellipse at center, rgba(245,158,11,0.22) 0%, transparent 70%);
     filter: blur(24px); pointer-events: none;
   }
-  .product-cover img {
-    position: relative; width: min(320px, 78vw); height: auto;
+  .cta-cover img {
+    position: relative; width: min(220px, 60vw); height: auto;
     border-radius: 8px;
     box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(245,158,11,0.15);
     transform: perspective(1200px) rotateY(-4deg);
   }
-  .product-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
-  .product-heading {
-    font-size: clamp(1.9rem, 4.5vw, 3rem); font-weight: 800;
-    line-height: 1.05; letter-spacing: -0.03em; color: var(--text-1); margin: 0;
-  }
-  .product-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
-  .product-list li {
-    display: flex; align-items: flex-start; gap: 10px;
-    font-size: clamp(0.95rem, 2vw, 1.05rem); color: var(--text-2); line-height: 1.5;
-  }
-  .product-list li svg { flex-shrink: 0; margin-top: 5px; }
-  .product-fine { font-size: 0.8rem; color: var(--text-3); margin: 0; }
 
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 

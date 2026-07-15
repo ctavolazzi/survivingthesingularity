@@ -61,16 +61,25 @@ function countWords(raw) {
   return matches ? matches.length : 0;
 }
 
+// Narrative chapters (chapterN + the conclusion) get an ongoing pass that
+// weaves a recurring throughline into the material (see ELIJAH-PROTOCOL.md).
+// Front/back matter (preface, introduction, appendices) were never in scope
+// for that pass, so they're excluded from the "in progress" check below
+// rather than being flagged as unfinished.
+const NARRATIVE_SECTION = /^(chapter\d+|conclusion)$/;
+
 // Chapter metadata enriched with teaser + word count + read time.
-// Stable shape: { ...sectionFromJson, teaser, wordCount, readMinutes }
+// Stable shape: { ...sectionFromJson, teaser, wordCount, readMinutes, inProgress }
 export const sectionsWithMeta = book.sections.map(section => {
   const raw = eagerMarkdown[`/src/lib/data/book/${section.file}`] || '';
   const wordCount = countWords(raw);
+  const inProgress = NARRATIVE_SECTION.test(section.id) && !raw.includes('Elijah');
   return {
     ...section,
     teaser: extractTeaser(raw),
     wordCount,
-    readMinutes: Math.max(1, Math.ceil(wordCount / 250))
+    readMinutes: Math.max(1, Math.ceil(wordCount / 250)),
+    inProgress
   };
 });
 

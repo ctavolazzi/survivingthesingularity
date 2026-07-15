@@ -109,7 +109,10 @@
                   class:is-current={section.id === data.section.id}
                   on:click={() => jumpTo(section.id)}
                 >
-                  <span>{section.title}</span>
+                  <span>
+                    {section.title}
+                    {#if section.inProgress}<span class="chapter-nav-wip">🚧</span>{/if}
+                  </span>
                   <span class="chapter-nav-time">{section.readMinutes} min</span>
                 </button>
               </li>
@@ -125,7 +128,10 @@
 
 <div class="content-wrapper">
   {#if currentMeta}
-    <p class="chapter-meta">{currentMeta.readMinutes} min read &middot; Part {currentSection} of {totalSections}</p>
+    <p class="chapter-meta">
+      {currentMeta.readMinutes} min read &middot; Part {currentSection} of {totalSections}
+      {#if currentMeta.inProgress}&middot; <span class="chapter-meta-wip">🚧 Under Construction 🚧</span>{/if}
+    </p>
   {/if}
 
   <!-- Existing Progress Bar -->
@@ -259,6 +265,10 @@
     color: #64748b;
     flex-shrink: 0;
   }
+  .chapter-nav-wip {
+    margin-left: 0.4rem;
+    font-size: 0.75rem;
+  }
 
   .content-wrapper {
     max-width: 720px;
@@ -270,6 +280,11 @@
     .content-wrapper {
       max-width: 100%;
     }
+  }
+
+  .chapter-meta-wip {
+    color: #fbbf24;
+    font-weight: 700;
   }
 
   .chapter-meta {

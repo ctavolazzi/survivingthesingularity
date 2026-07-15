@@ -81,7 +81,10 @@
             {#each group.items as section}
               <li>
                 <a href="/book/{section.id}" class="toc-item" class:is-current={section.id === lastVisitedId}>
-                  <span class="toc-item-title">{section.title}</span>
+                  <span class="toc-item-title">
+                    {section.title}
+                    {#if section.inProgress}<span class="toc-item-wip">🚧 Under Construction 🚧</span>{/if}
+                  </span>
                   <span class="toc-item-meta">
                     {#if section.id === lastVisitedId}<span class="toc-item-badge">Last read</span>{/if}
                     <span class="toc-item-time">{section.readMinutes} min</span>
@@ -224,6 +227,16 @@
     font-size: 0.95rem;
     line-height: 1.4;
     transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .toc-item-wip {
+    display: inline-block;
+    margin-left: 0.6rem;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #fbbf24;
+    white-space: nowrap;
   }
   .toc-item:hover,
   .toc-item.is-current {

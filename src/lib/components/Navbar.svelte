@@ -3,6 +3,7 @@
   import { goto } from '$app/navigation';
   import { onMount, onDestroy, tick } from 'svelte';
   import { browser } from '$app/environment';
+  import { readerMode } from '$lib/stores/readerMode';
 
   export let user = null;
   void user;
@@ -64,6 +65,10 @@
   const ctaConfig = { label: 'Preorder: $5', href: '/early-access' };
 
   $: isActive = (href) => href === '/' ? currentPath === '/' : currentPath.startsWith(href);
+
+  // Reader Mode hides this nav on book pages only - it shouldn't bleed into
+  // the rest of the site if the flag happens to still be on from a book visit.
+  $: hideForReaderMode = $readerMode && currentPath.startsWith('/book');
 
   function open() {
     lastFocused = browser ? document.activeElement : null;
@@ -177,6 +182,7 @@
 </script>
 
 <!-- Floating pill wrapper -->
+{#if !hideForReaderMode}
 <div class="nav-float" class:scrolled bind:this={navEl}>
   <nav class="nav-pill" aria-label="Main navigation">
 
@@ -231,6 +237,7 @@
 
   </nav>
 </div>
+{/if}
 
 <!-- Overlay -->
 <div class="drawer-overlay" bind:this={overlayEl} on:click={close} aria-hidden="true"></div>

@@ -1,32 +1,22 @@
 <script>
-    import { onMount } from 'svelte';
     import { fade } from 'svelte/transition';
-    import { browser } from '$app/environment';
     import { page } from '$app/stores';
-    import { BOOK_ACCESS_PASSWORD, BOOK_ACCESS_STORAGE_KEY } from '$lib/bookAccessCode.js';
+    import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 
     let password = '';
     let formError = '';
-    // Client-only gate: no server round trip, no env var to misconfigure.
-    // Starts locked; onMount checks localStorage before first paint would be
-    // ideal, but this keeps SSR simple since the whole point is the check
-    // never touches the server.
+    // Deliberately in-memory only, never persisted to storage: the unlock
+    // is meant to reset on any full page load (refresh, closed-and-reopened
+    // tab, new tab), not just on demand. Reading position is a separate
+    // store (bookPage.js) backed by localStorage, so that keeps surviving
+    // a re-lock even though the gate itself doesn't.
     let unlocked = false;
-    let checkedStorage = false;
 
     $: isBookRoot = $page.url.pathname === '/book';
-
-    onMount(() => {
-        if (browser && localStorage.getItem(BOOK_ACCESS_STORAGE_KEY) === '1') {
-            unlocked = true;
-        }
-        checkedStorage = true;
-    });
 
     function submitPassword() {
         formError = '';
         if (password === BOOK_ACCESS_PASSWORD) {
-            if (browser) localStorage.setItem(BOOK_ACCESS_STORAGE_KEY, '1');
             unlocked = true;
             password = '';
         } else {
@@ -35,9 +25,7 @@
     }
 </script>
 
-{#if !checkedStorage}
-  <!-- Avoid a flash of the gate for already-unlocked returning visitors -->
-{:else if !unlocked}
+{#if !unlocked}
   <main class="gate-main">
     <form class="gate-form" on:submit|preventDefault={submitPassword}>
       <p class="gate-eyebrow">Surviving the Singularity</p>

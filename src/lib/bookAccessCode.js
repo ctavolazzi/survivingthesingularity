@@ -3,4 +3,3 @@
 // customers, not a real access control. CT's call - if someone reads it out
 // of the bundle and unlocks the draft for free, that's fine.
 export const BOOK_ACCESS_PASSWORD = 'SHOUSE2026';
-export const BOOK_ACCESS_STORAGE_KEY = 'sts_book_access';

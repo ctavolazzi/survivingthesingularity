@@ -64,9 +64,11 @@
   {#if lastVisitedSection}
     <section class="continue">
       <a href="/book/{lastVisitedSection.id}" class="continue-card">
-        <span class="continue-label">Continue reading</span>
+        <span class="continue-top-row">
+          <span class="continue-label">Continue reading</span>
+          <span class="continue-arrow" aria-hidden="true">&rarr;</span>
+        </span>
         <span class="continue-title">{lastVisitedSection.title}</span>
-        <span class="continue-arrow" aria-hidden="true">&rarr;</span>
       </a>
     </section>
   {/if}
@@ -160,10 +162,16 @@
     margin: 0 auto clamp(24px, 4vw, 40px);
   }
   .continue-card {
+    /* Mobile-first: label+arrow on their own row, title on a full-width row
+       below so it wraps naturally instead of being squeezed into a narrow
+       column next to the label (the old single-row flex layout did this on
+       small screens). Switches to a single row at the .continue-wide
+       breakpoint where there's room for the title to sit inline. */
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 1.4rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
     background: rgba(245,158,11,0.06);
     border: 1px solid rgba(245,158,11,0.3);
     border-radius: 14px;
@@ -173,6 +181,12 @@
   .continue-card:hover {
     background: rgba(245,158,11,0.1);
     border-color: rgba(245,158,11,0.5);
+  }
+  .continue-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
   }
   .continue-label {
     font-family: var(--mono);
@@ -184,12 +198,30 @@
     flex-shrink: 0;
   }
   .continue-title {
-    flex: 1;
     color: var(--text-1);
     font-weight: 700;
     font-size: 0.98rem;
+    line-height: 1.4;
   }
   .continue-arrow { color: var(--amber); flex-shrink: 0; }
+
+  @media (min-width: 560px) {
+    .continue-card {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .continue-top-row {
+      display: contents;
+    }
+    .continue-label { order: 1; }
+    .continue-title {
+      order: 2;
+      flex: 1;
+      min-width: 0;
+    }
+    .continue-arrow { order: 3; }
+  }
 
   /* ── TABLE OF CONTENTS ── */
   .toc-section {

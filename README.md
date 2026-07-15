@@ -7,6 +7,23 @@
 
 ---
 
+## 📖 The book reader just got a real upgrade (2026-07-15)
+
+The `/book` reading experience went from "a page with chapters on it" to an actual reader, in one long session:
+
+- **Reader Mode.** A real, engineered distraction-free mode (browsers don't expose an API to trigger their native reader mode from the page, so we built our own): one tap strips the chrome - our own nav, the site's floating navbar, all of it - and bumps the type size up for comfortable reading. Toggle lives bottom-right, always reachable, remembers your preference.
+- **The chapter nav gets out of your way.** Scroll down to read, the TOC/Chapters pill slides out of sight. Scroll up, it slides back. Less UI fighting the text for space.
+- **It remembers your page, but re-locks on refresh.** Reload the tab, close it, open a new one - the password gate comes back, on purpose. But your reading position survives all of that, so re-entering the password drops you right back where you left off.
+- **Continue Reading, fixed for real.** It used to freeze on whatever chapter you first opened, because SvelteKit reuses the page component across chapter navigation and the old code only checked on first mount. Now it tracks properly across every chapter you visit.
+- **Word counts instead of "X min read."** Time estimates read like a chore. A number doesn't.
+- **All 287 em dashes gone** from the actual book text - replaced with whatever punctuation the sentence actually wanted (comma, ellipsis for interrupted dialogue, colon in two titles), not a blind find-and-replace.
+- **Keyboard nav.** Left/right arrows move between chapters.
+- **A real "thank you."** The quiet footer line on every page now opens an actual note - short, direct, no fluff, because the people who read this far into a book about the Singularity deserve better than a decorative emoji.
+
+Four PRs, all tested against production with real browser automation before being called done, not just "looks right in the diff."
+
+---
+
 ## What this is
 
 A SvelteKit site built around one question:

@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 14 Jul 2026 14:59:03 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 15 Jul 2026 14:57:40 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Can Agentic Trading Systems Pay for Their Own Intelligence?</title>
@@ -43,6 +43,20 @@
       <description>Complex multi-agent control tasks remain challenging for traditional rule-based and model-based approaches, motivating the adoption of learning-based methods. However, learning-based methods often struggle with sim-to-real transfer because they rely on accurate dynamics modeling or system identifica... [Score: 9.0 | Flagged for: agi, agent, multi-agent, alignment, rag] Authors: Chenlong Liu, Zhuohui Zhang, et al.</description>
     </item>
     <item>
+      <title>Can Induced Emotion Bias LLM Behaviors in Sequential Decision Making?</title>
+      <link>https://arxiv.org/abs/2607.12631</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12631</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>As Large Language Models (LLMs) are increasingly deployed as autonomous agents in high-stakes domains, understanding contextual factors that may modulate their decision-making becomes critical. While LLMs are trained to perceive and resonate with users' emotions, it remains unclear whether induced e... [Score: 8.5 | Flagged for: agi, agent, autonomous, llm, language model] Authors: Minh Khoi Ho, Zihao Zhu, et al.</description>
+    </item>
+    <item>
+      <title>Instance-Enriched Semantic Maps for Visual Language Navigation</title>
+      <link>https://arxiv.org/abs/2607.12630</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12630</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Visual Language Navigation (VLN) aims to enable an embodied agent to navigate complex environments by following natural language instructions. Recent approaches build semantic spatial maps and leverage Large Language Models (LLMs) for reasoning and decision making. Despite these advances, existing s... [Score: 8.5 | Flagged for: agent, reasoning, embodied, llm, language model] Authors: Jiho Hong, Eunae Kang, et al.</description>
+    </item>
+    <item>
       <title>From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence</title>
       <link>https://arxiv.org/abs/2607.11689</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11689</guid>
@@ -57,6 +71,13 @@
       <description>Assessing financial literacy during gameplay without disrupting the learning experience remains a key challenge in serious games for education. We present the Agentic BKT pipeline, a multi-agent large language model architecture for stealth assessment of financial competencies from open-ended gamepl... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Gabriel Santos, Rita Julia, et al.</description>
     </item>
     <item>
+      <title>FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation</title>
+      <link>https://arxiv.org/abs/2607.12982</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12982</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Math reasoning has achieved significant progress with the rapid advancement of Multimodal Large Language Models (MLLMs), however analytic geometry remains largely underexplored, primarily due to the scarcity of annotated samples. Existing diagram generation approaches struggle with analytic geometry... [Score: 8.0 | Flagged for: agi, reasoning, llm, language model, rag] Authors: Ruoran Xu, Wending Gao, et al.</description>
+    </item>
+    <item>
       <title>Agentic Routing: The Harness-Native Data Flywheel</title>
       <link>https://arxiv.org/abs/2607.11399</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11399</guid>
@@ -69,6 +90,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11250</guid>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <description>Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns ... [Score: 8.0 | Flagged for: agent, multi-agent, autonomy, llm, language model] Authors: Hyeong Kyu Choi, Jiatong Li, et al.</description>
+    </item>
+    <item>
+      <title>PFAdapter: Hierarchical LoRA Decomposition for Personalized Federated MLLMs</title>
+      <link>https://arxiv.org/abs/2607.12111</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12111</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Agentic AI systems are reshaping communications and networking by deploying autonomous intelligent agents capable of collaborative learning while maintaining data privacy at network edges. Within distributed network environments, Multimodal Large Language Models (MLLMs) serve as cognitive engines fo... [Score: 8.0 | Flagged for: agent, agentic, autonomous, llm, language model] Authors: Jing Liu, Kun Yang, et al.</description>
     </item>
     <item>
       <title>Shared Selective Persistent Memory for Agentic LLM Systems</title>
@@ -106,11 +134,25 @@
       <description>Self-improving agents are state-of-the-art (SOTA) on agentic coding benchmarks and have recently been extended to general domains. However, their search methods generally assume a stationary evaluation criterion: a fixed verifier, benchmark, or labeled dataset that remains valid as the agent improve... [Score: 8.0 | Flagged for: recursive self-improvement, self-improving, agent, agentic] Authors: Alex Iacob, Andrej Jovanović, et al.</description>
     </item>
     <item>
+      <title>Code-MUE: Measuring Code LLMs' Uncertainty through Execution-based Semantic Interaction Graphs</title>
+      <link>https://arxiv.org/abs/2607.12273</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12273</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>As Code Large Language Models (LLMs) become central to modern software engineering, their inherent stochasticity poses significant real-world risks, where even minor errors can lead to severe functional, security, or safety consequences. Reliable automation, therefore, demands the ability to disting... [Score: 7.5 | Flagged for: agi, llm, language model, rag, automation] Authors: Xiaoning Ren, Yinxing Xue, et al.</description>
+    </item>
+    <item>
       <title>VIA: Visual Interface Agent for Robot Control</title>
       <link>https://arxiv.org/abs/2607.11119</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11119</guid>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <description>Robot manipulation is a complex task that requires visual understanding, physical reasoning, planning, and closed-loop control. General-purpose foundation models (FMs) have grown remarkably capable of some of these, especially vision and reasoning. To leverage this for generalist robot policies, cur... [Score: 7.5 | Flagged for: foundation model, agent, planning, reasoning, robot] Authors: Hengyuan Hu, Priya Sundaresan, et al.</description>
+    </item>
+    <item>
+      <title>Agentic systems for breast cancer treatment recommendations</title>
+      <link>https://arxiv.org/abs/2607.12051</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12051</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) are increasingly being explored for clinical decision support, but their reliability in complex oncology treatment planning remains unclear. We evaluated agentic LLM systems for breast cancer treatment recommendation generation using 72 real clinical cases across stages ... [Score: 7.5 | Flagged for: agent, agentic, planning, llm, language model] Authors: Vinicius Anjos de Almeida, Nícolas Henrique Borges, et al.</description>
     </item>
     <item>
       <title>Mosaic: Runtime-Efficient Multi-Agent Embodied Planning</title>
@@ -148,6 +190,20 @@
       <description>What is an agent? What constitutes agency? With the rise of Large Language Model (LLM) systems marketed as ``coding agents'', ``AI co-scientists'', and other ``agentic" tools that promise to drive up productivity, and at the same time, ``existential" concerns such as AI escaping human control with d... [Score: 7.5 | Flagged for: agent, agentic, llm, language model, automation] Authors: Eric Xing, Mingkai Deng, et al.</description>
     </item>
     <item>
+      <title>PalmClaw: A Native On-Device Agent Framework for Mobile Phones</title>
+      <link>https://arxiv.org/abs/2607.13027</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.13027</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Large Language Model (LLM) agents have moved beyond generating responses to executing multi-step tasks by calling tools, observing the results, and iteratively deciding the next action. Most agent systems run on desktops or servers, which support tool use and task automation. Mobile devices are also... [Score: 7.0 | Flagged for: agent, tool use, llm, language model, automation] Authors: Hongru Cai, Yongqi Li, et al.</description>
+    </item>
+    <item>
+      <title>Unveiling Complex Collective Behaviors from Simple Rewards</title>
+      <link>https://arxiv.org/abs/2607.12861</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12861</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Multi-agent Reinforcement Learning (MARL) holds great potential for robot swarms, but the black-box nature of neural policies complicates strategic analysis, limiting multi-robot applications. Furthermore, complex swarm behaviors can surprisingly emerge from simple rewards without explicit aggregati... [Score: 7.0 | Flagged for: agent, multi-agent, interpretability, interpret, robot] Authors: Yize Mi, Jianan Li, et al.</description>
+    </item>
+    <item>
       <title>HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models</title>
       <link>https://arxiv.org/abs/2607.11475</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11475</guid>
@@ -160,62 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.07695</guid>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
       <description>We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-C... [Score: 7.0 | Flagged for: agent, multi-agent, reasoning, ai safety] Authors: Yujiao Chen</description>
-    </item>
-    <item>
-      <title>LLM-powered reasoning in agent-based modeling</title>
-      <link>https://arxiv.org/abs/2607.06757</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.06757</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Agent-based modeling (ABM) has the capability to model millions of individuals and their interactions, which is useful for policy making. However, ABMs have traditionally relied on static prior, which prevents the models from adapting to real-time changes. Our research provides a novel approach to a... [Score: 7.0 | Flagged for: agent, reasoning, llm, language model, rag] Authors: Sifat Afroj Moon, Dakotah Maguire, et al.</description>
-    </item>
-    <item>
-      <title>MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?</title>
-      <link>https://arxiv.org/abs/2606.23664</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.23664</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Multi-agent systems (MAS) offer a scalable path forward for agentic AI, comprising multiple LLM-based agents, each assigned a system prompt and a position within a workflow that governs inter-agent coordination and output aggregation. System prompts thus form a critical and accessible optimization s... [Score: 7.0 | Flagged for: agent, multi-agent, agentic, llm] Authors: Juyang Bai, Laixi Shi</description>
-    </item>
-    <item>
-      <title>RaMem: Contextual Reinstatement for Long-term Agentic Memory</title>
-      <link>https://arxiv.org/abs/2606.22844</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.22844</guid>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Long-term memory has become increasingly important for LLM agents that operate across extended interactions and evolving task contexts. Recent memory systems have made past experiences more persistent, compact, and retrievable, but retrieval alone does not ensure that a memory provides valid evidenc... [Score: 7.0 | Flagged for: agent, agentic, llm, retrieval, rag] Authors: Wei Yang, Bryce Kan, et al.</description>
-    </item>
-    <item>
-      <title>RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM</title>
-      <link>https://arxiv.org/abs/2607.11683</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.11683</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Graph retrieval-augmented generation (GraphRAG) enhances large language models with structured knowledge, yet existing systems construct knowledge graphs in a single extraction pass, producing noisy entities and brittle retrieval. RAGU, an open-source modular GraphRAG engine, addresses this by separ... [Score: 6.5 | Flagged for: reasoning, llm, language model, retrieval, rag] Authors: Mikhail Komarov, Ivan Bondarenko, et al.</description>
-    </item>
-    <item>
-      <title>The Ebb and Flow of Multimodal Focus: Scheduling Visual Relay Windows for Grounded VLM Reasoning</title>
-      <link>https://arxiv.org/abs/2607.11436</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.11436</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Vision-language models increasingly succeed on multimodal reasoning benchmarks, yet their visual evidence often becomes unstable once it enters the language stack, weakening evidence-grounded reasoning. To understand this fragility, we examine the internal dynamics of VLMs through a mechanistic lens... [Score: 6.5 | Flagged for: agi, reasoning, language model, rag] Authors: Wencheng Ye, Yi Bin, et al.</description>
-    </item>
-    <item>
-      <title>ToFu: A White-Box, Token-Efficient Agent Harness for Researchers</title>
-      <link>https://arxiv.org/abs/2607.11423</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.11423</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Agentic coding tools present new opportunities to transform research workflows. The performance of agent systems built depends on both large language models (LLMs) and the harness around LLMs, which is the orchestration code that determines an agent's behavior. We present ToFu, an agentic harness fo... [Score: 6.5 | Flagged for: agent, agentic, llm, language model] Authors: Junhao Ruan, Yuan Ge, et al.</description>
-    </item>
-    <item>
-      <title>Towards Predictive, Aligned, and Scalable Robot Learning</title>
-      <link>https://arxiv.org/abs/2607.11270</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.11270</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Learning, at its core, extends beyond memorization to the ability to reason and solve novel problems by navigating a space of possibilities. We introduce Lumo-2, a latent world-action model that generates actions by reasoning over world dynamics in latent space. The learned latent world dynamics cap... [Score: 6.5 | Flagged for: world model, reasoning, alignment, robot] Authors: Peijun Tang, Shangjin Xie, et al.</description>
-    </item>
-    <item>
-      <title>Multi-Agent Firewall Architecture for Privacy Protection of Sensitive Data in Interactions with Language Models</title>
-      <link>https://arxiv.org/abs/2607.08282</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.08282</guid>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <description>While Large Language Models (LLMs) have become essential productivity tools, their integration into workflows without adequate safeguards creates significant risks. This paper proposes an open-source, privacy-focused, user-facing firewall designed to secure both web-based and programmatic LLM intera... [Score: 6.5 | Flagged for: agent, multi-agent, llm, language model] Authors: Hugo García Cuesta, Pablo Mateo Torrejón, et al.</description>
     </item>
   </channel>
 </rss>

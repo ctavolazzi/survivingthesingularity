@@ -121,32 +121,57 @@
 </svelte:head>
 
 <!-- ── CHAPTER NAV: collapsible jump-to-chapter dropdown, closed by default.
-     Slides out of the way on scroll-down, back in on scroll-up, and is
-     fully removed while Reader Mode is active. ── -->
-{#if !$readerMode}
+     Slides out of the way on scroll-down, back in on scroll-up. The Reader
+     Mode toggle lives in the middle of this same pill (between TOC and
+     Chapters) rather than as its own fixed corner button, so it shares the
+     same scroll-hide behavior and the same visual weight as everything
+     else here instead of shouting for attention. In Reader Mode, TOC and
+     Chapters are hidden but the pill (and this toggle) stays, so there's
+     always a way back out. ── -->
 <div class="chapter-nav" class:nav-hidden={navHidden && !navOpen}>
   <div class="chapter-nav-pill">
-    <a href="/book" class="chapter-nav-toc-link" aria-label="Table of contents">
-      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-        <path d="M9.5 2.5L2.5 6L9.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      TOC
-    </a>
-    <div class="chapter-nav-sep" aria-hidden="true"></div>
+    {#if !$readerMode}
+      <a href="/book" class="chapter-nav-toc-link" aria-label="Table of contents">
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M9.5 2.5L2.5 6L9.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        TOC
+      </a>
+      <div class="chapter-nav-sep" aria-hidden="true"></div>
+    {/if}
+
     <button
       type="button"
-      class="chapter-nav-toggle"
-      aria-expanded={navOpen}
-      on:click={() => navOpen = !navOpen}
+      class="reader-toggle"
+      class:active={$readerMode}
+      on:click={() => readerMode.toggle()}
+      aria-pressed={$readerMode}
+      aria-label={$readerMode ? 'Exit reader mode' : 'Enter reader mode'}
+      title={$readerMode ? 'Exit reader mode' : 'Reader mode'}
     >
-      Chapters
-      <svg class="chapter-nav-chevron" class:open={navOpen} width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-        <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M2 5.5C2 4.67 2.67 4 3.5 4H9.5V16H3.5C2.67 16 2 15.33 2 14.5V5.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M18 5.5C18 4.67 17.33 4 16.5 4H10.5V16H16.5C17.33 16 18 15.33 18 14.5V5.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
       </svg>
     </button>
+
+    {#if !$readerMode}
+      <div class="chapter-nav-sep" aria-hidden="true"></div>
+      <button
+        type="button"
+        class="chapter-nav-toggle"
+        aria-expanded={navOpen}
+        on:click={() => navOpen = !navOpen}
+      >
+        Chapters
+        <svg class="chapter-nav-chevron" class:open={navOpen} width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    {/if}
   </div>
 
-  {#if navOpen}
+  {#if navOpen && !$readerMode}
     <div class="chapter-nav-dropdown">
       {#each tocGroups as group}
         <div class="chapter-nav-group">
@@ -174,22 +199,6 @@
     </div>
   {/if}
 </div>
-{/if}
-
-<button
-  type="button"
-  class="reader-toggle"
-  class:active={$readerMode}
-  on:click={() => readerMode.toggle()}
-  aria-pressed={$readerMode}
-  aria-label={$readerMode ? 'Exit reader mode' : 'Enter reader mode'}
-  title={$readerMode ? 'Exit reader mode' : 'Reader mode'}
->
-  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-    <path d="M2 5.5C2 4.67 2.67 4 3.5 4H9.5V16H3.5C2.67 16 2 15.33 2 14.5V5.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-    <path d="M18 5.5C18 4.67 17.33 4 16.5 4H10.5V16H16.5C17.33 16 18 15.33 18 14.5V5.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-  </svg>
-</button>
 
 <Spacer height="24px" />
 
@@ -381,37 +390,28 @@
   }
 
   /* ── READER MODE TOGGLE ──
-     Always-visible fixed button, independent of the auto-hiding chapter
-     nav, so there's always a way to turn reader mode back off. */
+     Lives inline in the chapter-nav pill, between TOC and Chapters, so it
+     shares the pill's own scroll-hide behavior instead of being its own
+     fixed corner element. Muted like everything else in the pill - no
+     amber fill for the "on" state, just a faint neutral highlight. */
   .reader-toggle {
-    /* Bottom-right, stacked above the dev-only White Rabbit debug trigger
-       (also bottom-right, 40px, prod-excluded) so neither is unreachable
-       in local dev. Bottom-left is already the FloatingPopupProgressBar's
-       spot in every environment. */
-    position: fixed;
-    right: clamp(16px, 4vw, 28px);
-    bottom: calc(clamp(16px, 4vw, 28px) + 56px);
-    z-index: 40;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    background: rgba(9, 14, 32, 0.86);
-    border: 1px solid rgba(255,255,255,0.09);
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
     border-radius: 999px;
-    color: rgba(203,213,225,0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+    color: rgba(203,213,225,0.75);
     cursor: pointer;
-    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    transition: color 0.15s ease, background 0.15s ease;
   }
-  .reader-toggle:hover { color: #f59e0b; border-color: rgba(245,158,11,0.35); }
+  .reader-toggle:hover { color: #f1f5f9; background: rgba(255,255,255,0.06); }
   .reader-toggle.active {
-    color: #0f172a;
-    background: #f59e0b;
-    border-color: #f59e0b;
+    color: #f1f5f9;
+    background: rgba(255,255,255,0.1);
   }
 
   /* ── READER MODE ── larger, roomier type once the chrome is out of the way */

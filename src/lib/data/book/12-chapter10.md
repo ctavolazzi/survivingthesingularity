@@ -6,7 +6,7 @@
 
 
 > *"The best way to predict the future is to invent it."*
-> — Alan Kay, *remark at Xerox PARC* (1971)
+> Alan Kay, *remark at Xerox PARC* (1971)
 
 If you spend your days consuming digital content, you are a target. If you are stuck in a loop of reading news about things you cannot control, you are failing to prepare. The line between someone who survives this period and someone who is a casualty is simple: **Create more than you consume.**
 
@@ -17,14 +17,14 @@ You don't need deep pockets to start. You need physical results.
 Change your reality before you try to change your thinking.
 
 1. **Energy Independence:** Buy a 50-watt solar panel, a charge controller, and a basic battery. Learn how to wire them together. This provides you with an independent power source for your communication devices. If the local utility lines go down, your lifeline to information stays live. You are no longer reliant on the wall socket.
-2. **Physical Cleanup:** Stop watching the internet and go outside. Find a neglected area in your neighborhood—a park, an alleyway, or an empty lot. Clean it up. Do not wait for a city crew to do it; they are already stretched thin and will not come.
+2. **Physical Cleanup:** Stop watching the internet and go outside. Find a neglected area in your neighborhood, a park, an alleyway, or an empty lot. Clean it up. Do not wait for a city crew to do it; they are already stretched thin and will not come.
 3. **Turn Reality into Output:** Film the work, take photos, and document the change. Turn that raw reality into your own content. By doing this, you are retraining your brain to treat chaotic or neglected environments as a resource rather than a source of stress.
 
 ## Step 2: Civic Connection
 
 The time you currently spend on digital fear is time you should be spending in your physical community.
 
-Find a place that needs human help—a community garden, a food pantry, or a neighborhood center.
+Find a place that needs human help, a community garden, a food pantry, or a neighborhood center.
 
 - **The Rule of Direct Exchange:** Show up and work. When you put in physical labor, you move from the world of digital opinion to the world of physical reality.
 - **The Human Filter:** Working alongside others allows you to find people who are also interested in being useful. You will not find these people on a screen. You will find them working on the ground.
@@ -51,7 +51,7 @@ But this is not just an annoyance for suburban dwellers trying to find a recipe 
 If you understand the mathematics of this collapse, you can do two things:
 
 1.  You can step outside the falling infrastructure and preserve your own intellectual autonomy.
-2.  You can practice **Algorithmic Judo**—hijacking the machine’s own attention-maximization algorithms to distribute off-grid, survival-level truth to the remaining human minds.
+2.  You can practice **Algorithmic Judo**, hijacking the machine’s own attention-maximization algorithms to distribute off-grid, survival-level truth to the remaining human minds.
 
 ### The Mathematics of Model Collapse
 
@@ -87,7 +87,7 @@ Over generations k → ∞, the variance of the distribution shrinks:
 
 > **lim_k → ∞ σ^2(P_k) = 0**
 
-The rare, highly creative, specialized, and deeply accurate insights of human genius—the edge cases, the weird hand-made engineering tricks, the highly specific local historical accounts—are systematically pruned away.
+The rare, highly creative, specialized, and deeply accurate insights of human genius, the edge cases, the weird hand-made engineering tricks, the highly specific local historical accounts, are systematically pruned away.
 
 ### 2. Error Accumulation (The Degeneracy Boundary)
 
@@ -168,7 +168,7 @@ To get your survival protocols past the digital gatekeepers and into the minds o
 
 ### Rule 1: The Outrage-or-Tragedy Hook (The Engagement Wrapper)
 
-The algorithms are mathematically hardwired to boost content that triggers extreme emotional responses—specifically, moral outrage, deep nostalgia, or existential anxiety.
+The algorithms are mathematically hardwired to boost content that triggers extreme emotional responses, specifically, moral outrage, deep nostalgia, or existential anxiety.
 
   - **The Trap:** Do not write: *"Here is how to calculate soil NPK ratios using compost."*
   - **The Judo:** Write: *"The government-backed chemical cartel is systematically destroying our topsoil to force us into a state-dependent food subscription model. Here is the physical proof, and here is how my grandfather fought back."*
@@ -206,5 +206,3 @@ Now, we build.
 We start with **Chapter 5: The Autonomous Shell ($25,000 Exit Strategy)**, where we will lay out the precise structural engineering, concrete placement, and metal-welding steps to construct a double-wide shipping-container fortress that will run completely outside their speculative, debt-fueled grid.
 
 Grab your boots and your welding helmet. It is time to get your hands dirty.
-
-—

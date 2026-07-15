@@ -6,7 +6,7 @@
 
 
 > *"Code and media are permissionless leverage. They're the leverage behind the newly rich."*
-> — Naval Ravikant, *How to Get Rich* (2018)
+> Naval Ravikant, *How to Get Rich* (2018)
 At some point in the early twenty-first century, humanity fell for the greatest magic trick ever performed.
 
 The technocrats convinced us that the internet was a public square, a library, and a playground. They gave us free email, free social media, and free video hosting. And in exchange, we happily handed over our attention, our behavioral data, and our cognitive autonomy.
@@ -17,7 +17,7 @@ Our minds were being harvested, row by row, to train the very machine learning m
 
 But magic tricks only work as long as the audience is looking where the magician wants them to look. The moment you step behind the curtain, the illusion falls apart.
 
-In this chapter, we are going to talk about **Digital Leverage**. We are going to explore how to turn the machine's own insatiable appetite for data against it, how to build independent media distribution networks, and why creative human expression is not a luxury—it is a critical survival weapon.
+In this chapter, we are going to talk about **Digital Leverage**. We are going to explore how to turn the machine's own insatiable appetite for data against it, how to build independent media distribution networks, and why creative human expression is not a luxury, it is a critical survival weapon.
 
 ## The Great Slop-ocalypse: Why the Machine Needs You
 To understand your digital leverage, you must understand a quiet crisis currently ravaging the centralized web: **Model Collapse**.
@@ -41,7 +41,7 @@ To understand your digital leverage, you must understand a quiet crisis currentl
 
   
 
-For decades, AI models were trained on the pristine, chaotic, beautiful archive of human history—books, essays, forum posts, and conversations created by real people. But as the internet became saturated with automated, AI-generated content (what we call "synthetic slop"), the machines began training on their own outputs.
+For decades, AI models were trained on the pristine, chaotic, beautiful archive of human history, books, essays, forum posts, and conversations created by real people. But as the internet became saturated with automated, AI-generated content (what we call "synthetic slop"), the machines began training on their own outputs.
 
 When a generative model trains on its own synthetic data, it suffers from a degenerative cognitive decline. The mathematical weights drift, errors compound, and within a few generations, the AI’s output collapses into repetitive, nonsensical, entropic mush.
 
@@ -49,14 +49,14 @@ When a generative model trains on its own synthetic data, it suffers from a dege
 
 This is your leverage.
 
-In a world drowned in sterile, automated slop, your raw human perspective—your stories, your art, your mistakes, your local survival experiments—is a highly valuable, non-synthetic resource. The algorithms are hardcoded to hunt for it, prioritize it, and feed it to their training pipelines.
+In a world drowned in sterile, automated slop, your raw human perspective, your stories, your art, your mistakes, your local survival experiments, is a highly valuable, non-synthetic resource. The algorithms are hardcoded to hunt for it, prioritize it, and feed it to their training pipelines.
 
 We are not going to give it to them for free. We are going to use it as bait.
 
 ## Algorithmic Judo: Packaging the Payload
 If you write a dry, technical manual on how to assemble an off-grid solar generator, the corporate-state algorithms will flag it, shadowban it, or bury it deep in the search results to prevent people from becoming energy independent.
 
-But if you package that exact same technical manual inside an engaging, emotionally resonant human story—say, a dramatic vlog about your community surviving a winter storm, featuring raw human laughter, struggle, and triumph—the engagement algorithms will boost it to the sky. They cannot help themselves. They are optimized for human engagement.
+But if you package that exact same technical manual inside an engaging, emotionally resonant human story, say, a dramatic vlog about your community surviving a winter storm, featuring raw human laughter, struggle, and triumph, the engagement algorithms will boost it to the sky. They cannot help themselves. They are optimized for human engagement.
 
 This is **Algorithmic Judo**. We use the weight and momentum of the algorithm to deliver our payload.
 
@@ -91,7 +91,7 @@ Using the centralized algorithms is a temporary, tactical maneuver. You cannot b
 To achieve true **Media Autonomy**, we must build a parallel, decentralized pipeline.
 
 ### 1. Metadata Sanitization (The Digital Cloak)
-Before you distribute any media, you must strip away the digital breadcrumbs that could expose your location or your community. Every photo you take with a smartphone contains **EXIF metadata**—hidden files that store the exact GPS coordinates, the date, the time, and the device serial number.
+Before you distribute any media, you must strip away the digital breadcrumbs that could expose your location or your community. Every photo you take with a smartphone contains **EXIF metadata**, hidden files that store the exact GPS coordinates, the date, the time, and the device serial number.
 
 Before uploading or sharing any file, use free, open-source tools (like Metadata Cleaner or exiftool) to completely sanitize your files. If the machine cannot verify *where* a piece of human data came from, it cannot target the community that produced it.
 
@@ -127,7 +127,7 @@ When the centralized internet goes dark or gets restricted behind biometric payw
 
   
 
-A sneakernet is simply the physical transport of digital data. A single, tiny microSD card can hold up to 1 terabyte of data—enough to store an entire library of survival manuals, offline medical databases, educational videos, and open-source software.
+A sneakernet is simply the physical transport of digital data. A single, tiny microSD card can hold up to 1 terabyte of data, enough to store an entire library of survival manuals, offline medical databases, educational videos, and open-source software.
 
 By passing encrypted storage drives from hand to hand, town to town, we create an air-gapped network that is completely immune to digital surveillance, remote shutdowns, and electromagnetic interference.
 
@@ -152,5 +152,3 @@ To begin building your digital leverage today, do not wait for the grid to go do
 They wanted to replace human culture with automated calculations. We are answering by turning our minds into transmitters, our art into shields, and our narratives into weapons.
 
 Keep your metadata clean. Protect your attention. Keep telling the human story.
-
-—

@@ -6,7 +6,7 @@
 
 
 > *"Buy the ticket, take the ride."*
-> — Hunter S. Thompson, *Fear and Loathing in Las Vegas* (1971)
+> Hunter S. Thompson, *Fear and Loathing in Las Vegas* (1971)
 So the robots have taken over. Congratulations! The Singularity is upon us.
 
 Surviving the Singularity isn't just about the fear of the unknown. Sure, popular media tells us we’ll be fending off hordes of Terminator bots or fighting for food in the era of societal collapse and climate famines, but that’s not the only way it can go. 
@@ -48,13 +48,11 @@ Over the next few chapters, we will explore:
   - **The power of the soil:** Collective land ownership, protective trusts, and agricultural pooling.
   - **Digital leverage:** Utilizing content creation, media independent cells, and intellectual assets to build independent support ecosystems.
   - **The tools of the trade:** mesh networks, open-source hardware, and decentralized energy.
-  - **The psychology of the collapse** (and how to keep your head—and reclaim your agency—when everyone else is losing theirs).
+  - **The psychology of the collapse** (and how to keep your head, and reclaim your agency, when everyone else is losing theirs).
   - ****How to prepare yourself for what’s already here, and what’s coming.****
 
 You are not a passive observer of this transition. You are an active participant, even if your participation is currently limited to trying not to starve.
 
 So take a deep breath. Adjust your neural link electrodes. And let's get to work.
-
-—
 
 ---

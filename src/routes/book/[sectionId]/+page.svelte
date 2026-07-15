@@ -1,6 +1,5 @@
 <script>
   import { marked } from 'marked';
-  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { safeGoto } from '$lib/utils/navigation';
   import { bookPage } from '$lib/stores/bookPage';
@@ -36,17 +35,15 @@
     return groups;
   })();
 
-  $: {
-    if (data && data.section) {
-      currentSection = data.book.sections.findIndex(section => section.id === data.section.id) + 1;
-    }
-  }
-
-  onMount(() => {
+  // Re-runs on every navigation between chapters, not just first mount -
+  // SvelteKit reuses this same component instance across /book/[sectionId]
+  // navigations (only `data` changes), so recording the last-visited
+  // section has to live here rather than in onMount, which only fires once.
+  $: if (data && data.section) {
     currentSection = data.book.sections.findIndex(section => section.id === data.section.id) + 1;
     bookPage.setCurrentSection(data.section.id);
     bookPage.updateLastVisited();
-  });
+  }
 
   function handleNavigation(event) {
     const { direction } = event.detail;
@@ -80,8 +77,14 @@
 
 <!-- ── CHAPTER NAV: collapsible jump-to-chapter dropdown, closed by default ── -->
 <div class="chapter-nav">
-  <div class="chapter-nav-inner">
-    <a href="/book" class="chapter-nav-toc-link">&larr; Table of Contents</a>
+  <div class="chapter-nav-pill">
+    <a href="/book" class="chapter-nav-toc-link" aria-label="Table of contents">
+      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+        <path d="M9.5 2.5L2.5 6L9.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      TOC
+    </a>
+    <div class="chapter-nav-sep" aria-hidden="true"></div>
     <button
       type="button"
       class="chapter-nav-toggle"
@@ -113,7 +116,7 @@
                     {section.title}
                     {#if section.inProgress}<span class="chapter-nav-wip">🚧</span>{/if}
                   </span>
-                  <span class="chapter-nav-time">{section.readMinutes} min</span>
+                  <span class="chapter-nav-time">{section.wordCount.toLocaleString()} words</span>
                 </button>
               </li>
             {/each}
@@ -129,7 +132,7 @@
 <div class="content-wrapper">
   {#if currentMeta}
     <p class="chapter-meta">
-      {currentMeta.readMinutes} min read &middot; Part {currentSection} of {totalSections}
+      {currentMeta.wordCount.toLocaleString()} words &middot; Part {currentSection} of {totalSections}
       {#if currentMeta.inProgress}&middot; <span class="chapter-meta-wip">🚧 Under Construction 🚧</span>{/if}
     </p>
   {/if}
@@ -160,69 +163,94 @@
 </div>
 
 <style>
-  /* ── CHAPTER NAV ── */
+  /* ── CHAPTER NAV ──
+     Floating pill, same visual language as the site's own nav-float/nav-pill
+     (transparent sticky wrapper + a centered rounded pill), sitting directly
+     beneath it rather than as a separate hard-edged full-width bar. */
   .chapter-nav {
-    /* Sits below the site's own floating nav pill (measured ~71px tall) -
-       both are position: sticky at the top of the same scroll container,
-       so without this offset they'd both land at the same y and the
-       higher z-indexed site nav would render over this one. */
+    /* top matches the site nav-pill's measured height so the two floating
+       pills sit stacked with a small gap instead of overlapping. */
     position: sticky;
     top: 74px;
     z-index: 20;
-    background: rgba(2,6,23,0.92);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(148,163,184,0.1);
+    padding: 0 16px 10px;
+    pointer-events: none;
   }
-  .chapter-nav-inner {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0.7rem 1rem;
+  .chapter-nav-pill {
+    pointer-events: all;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
+    gap: 2px;
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 4px;
+    background: rgba(9, 14, 32, 0.86);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 999px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
   }
   .chapter-nav-toc-link {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
+    font-size: 0.74rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #94a3b8;
+    letter-spacing: 0.04em;
+    color: rgba(203,213,225,0.8);
     text-decoration: none;
-    transition: color 0.15s ease;
+    white-space: nowrap;
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    transition: color 0.15s ease, background 0.15s ease;
   }
-  .chapter-nav-toc-link:hover { color: #f59e0b; }
+  .chapter-nav-toc-link:hover { color: #f59e0b; background: rgba(255,255,255,0.05); }
+  .chapter-nav-sep {
+    width: 1px;
+    height: 16px;
+    background: rgba(255,255,255,0.1);
+    flex-shrink: 0;
+  }
   .chapter-nav-toggle {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(148,163,184,0.15);
+    background: transparent;
+    border: none;
     color: #f1f5f9;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
+    font-size: 0.74rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 0.4rem 0.75rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    padding: 0.45rem 0.75rem;
     border-radius: 999px;
     cursor: pointer;
-    transition: border-color 0.15s ease, background 0.15s ease;
+    transition: background 0.15s ease, color 0.15s ease;
   }
-  .chapter-nav-toggle:hover { border-color: rgba(245,158,11,0.4); background: rgba(245,158,11,0.06); }
+  .chapter-nav-toggle:hover { background: rgba(245,158,11,0.12); color: #f59e0b; }
   .chapter-nav-chevron { transition: transform 0.2s ease; }
   .chapter-nav-chevron.open { transform: rotate(180deg); }
 
   .chapter-nav-dropdown {
+    pointer-events: all;
     max-height: min(70vh, 560px);
     overflow-y: auto;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0.5rem 1rem 1.25rem;
-    border-top: 1px solid rgba(148,163,184,0.08);
+    max-width: 620px;
+    margin: 8px auto 0;
+    padding: 0.75rem 0.5rem 1rem;
+    background: rgba(9, 14, 32, 0.92);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 20px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.05);
   }
-  .chapter-nav-group { margin-top: 1rem; }
+  .chapter-nav-group { padding: 0 0.5rem; margin-top: 1rem; }
   .chapter-nav-group-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68rem;

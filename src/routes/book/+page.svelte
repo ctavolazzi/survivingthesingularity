@@ -36,7 +36,7 @@
     return groups;
   })();
 
-  const totalReadMinutes = sectionsWithMeta.reduce((sum, s) => sum + s.readMinutes, 0);
+  const totalWords = sectionsWithMeta.reduce((sum, s) => sum + s.wordCount, 0);
 </script>
 
 <svelte:head>
@@ -57,7 +57,7 @@
         meaning. Written in public, updated as it's finished. What follows is the complete
         current draft: every chapter, in order, free to read for as long as you have this page.
       </p>
-      <p class="preface-meta">{sectionsWithMeta.length} sections &middot; ~{Math.round(totalReadMinutes / 60 * 10) / 10} hours total</p>
+      <p class="preface-meta">{sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words total</p>
     </div>
   </section>
 
@@ -87,7 +87,7 @@
                   </span>
                   <span class="toc-item-meta">
                     {#if section.id === lastVisitedId}<span class="toc-item-badge">Last read</span>{/if}
-                    <span class="toc-item-time">{section.readMinutes} min</span>
+                    <span class="toc-item-time">{section.wordCount.toLocaleString()} words</span>
                     <span class="toc-item-arrow" aria-hidden="true">&rarr;</span>
                   </span>
                 </a>

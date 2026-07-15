@@ -6,6 +6,7 @@
   import ToastContainer from '$lib/components/ToastContainer.svelte';
   import StickyCaptureBar from '$lib/components/StickyCaptureBar.svelte';
   import CommandPalette from '$lib/components/CommandPalette.svelte';
+  import InfoModal from '$lib/components/InfoModal.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
   import { createRabbit } from '$lib/debug/white-rabbit.js';
   import { browser, dev } from '$app/environment';
@@ -28,6 +29,7 @@
 
   let commandPaletteOpen = false;
   let navigating = false;
+  let thankYouOpen = false;
 
   // Force dark mode
   $: if (browser) {
@@ -91,7 +93,16 @@
   <main id="main-content" tabindex="-1">
     <slot />
   </main>
-  <div class="site-thankyou" aria-hidden="true">Thank you for being here ❣️</div>
+  <button type="button" class="site-thankyou" on:click={() => thankYouOpen = true}>
+    Thank you for being here ❣️
+  </button>
+  <InfoModal open={thankYouOpen} title="Thank You" on:close={() => thankYouOpen = false}>
+    <p>Most people look away from what's coming. You didn't.</p>
+    <p>You're willing to sit with hard ideas instead of dismissing them. Willing to ask what to build instead of who to blame. That's rarer than it should be, and it matters more than you think.</p>
+    <p>You don't need every answer. You just need to keep paying attention and keep building.</p>
+    <p>That's how hope actually comes back: not from certainty, but from people like you staying in the room.</p>
+    <p>Thank you for being here.</p>
+  </InfoModal>
   <Footer />
   <ToastContainer />
   <StickyCaptureBar />
@@ -138,11 +149,22 @@
   }
 
   .site-thankyou {
+    display: block;
+    width: 100%;
     text-align: center;
     padding: clamp(24px, 4vw, 40px) 20px;
     font-size: clamp(0.9rem, 2vw, 1rem);
+    font-family: inherit;
     color: rgba(148, 163, 184, 0.5);
     letter-spacing: 0.02em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .site-thankyou:hover,
+  .site-thankyou:focus-visible {
+    color: rgba(245, 158, 11, 0.75);
   }
 
   /* Page loading bar */

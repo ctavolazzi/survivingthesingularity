@@ -1,9 +1,11 @@
 <script>
   import { marked } from 'marked';
+  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { safeGoto } from '$lib/utils/navigation';
   import { bookPage } from '$lib/stores/bookPage';
   import { sectionsWithMeta } from '$lib/bookContent';
+  import { readerMode } from '$lib/stores/readerMode';
   import Pagination from '$lib/components/Pagination.svelte';
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
@@ -12,6 +14,7 @@
   let currentSection = 1;
   let totalSections = data.book.sections.length;
   let navOpen = false;
+  let navHidden = false;
 
   // Convert markdown to HTML
   $: content = marked(data.content);
@@ -60,6 +63,48 @@
     navOpen = false;
     safeGoto(`/book/${sectionId}`);
   }
+
+  onMount(() => {
+    // Slide the chapter nav out of the way on scroll-down, back in on
+    // scroll-up (readability - less chrome fighting for space while
+    // actively reading, still one scroll-up away when you want it).
+    // The scroll position doesn't reliably live on `window.scrollY` in
+    // this app (body can end up as its own scroll container depending on
+    // content height), and body/document scroll events don't bubble to
+    // window, so this reads whichever of the three actually has a value
+    // and listens on both possible event targets.
+    function getScrollY() {
+      return window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    }
+    let lastY = getScrollY();
+    function onScroll() {
+      const y = getScrollY();
+      if (Math.abs(y - lastY) < 4) return;
+      navHidden = y > lastY && y > 80;
+      lastY = y;
+    }
+
+    // Left/right arrow keys move between chapters, skipped while typing
+    // anywhere or while the chapter-jump dropdown is open.
+    function onKeydown(e) {
+      if (navOpen) return;
+      const tag = e.target && e.target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+      if (e.key === 'ArrowRight') handleNavigation({ detail: { direction: 'next' } });
+      else if (e.key === 'ArrowLeft') handleNavigation({ detail: { direction: 'prev' } });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    document.addEventListener('scroll', onScroll, { passive: true });
+    document.body.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('keydown', onKeydown);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      document.removeEventListener('scroll', onScroll);
+      document.body.removeEventListener('scroll', onScroll);
+      window.removeEventListener('keydown', onKeydown);
+    };
+  });
 </script>
 
 <FloatingPopupProgressBar />
@@ -75,8 +120,11 @@
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<!-- ── CHAPTER NAV: collapsible jump-to-chapter dropdown, closed by default ── -->
-<div class="chapter-nav">
+<!-- ── CHAPTER NAV: collapsible jump-to-chapter dropdown, closed by default.
+     Slides out of the way on scroll-down, back in on scroll-up, and is
+     fully removed while Reader Mode is active. ── -->
+{#if !$readerMode}
+<div class="chapter-nav" class:nav-hidden={navHidden && !navOpen}>
   <div class="chapter-nav-pill">
     <a href="/book" class="chapter-nav-toc-link" aria-label="Table of contents">
       <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -126,15 +174,31 @@
     </div>
   {/if}
 </div>
+{/if}
+
+<button
+  type="button"
+  class="reader-toggle"
+  class:active={$readerMode}
+  on:click={() => readerMode.toggle()}
+  aria-pressed={$readerMode}
+  aria-label={$readerMode ? 'Exit reader mode' : 'Enter reader mode'}
+  title={$readerMode ? 'Exit reader mode' : 'Reader mode'}
+>
+  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M2 5.5C2 4.67 2.67 4 3.5 4H9.5V16H3.5C2.67 16 2 15.33 2 14.5V5.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+    <path d="M18 5.5C18 4.67 17.33 4 16.5 4H10.5V16H16.5C17.33 16 18 15.33 18 14.5V5.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+  </svg>
+</button>
 
 <Spacer height="24px" />
 
-<div class="content-wrapper">
+<div class="content-wrapper" class:reader-mode={$readerMode}>
   {#if currentMeta}
-    <p class="chapter-meta">
-      {currentMeta.wordCount.toLocaleString()} words &middot; Part {currentSection} of {totalSections}
-      {#if currentMeta.inProgress}&middot; <span class="chapter-meta-wip">🚧 Under Construction 🚧</span>{/if}
-    </p>
+    <div class="chapter-meta">
+      <p class="chapter-meta-line">{currentMeta.wordCount.toLocaleString()} words &middot; Part {currentSection} of {totalSections}</p>
+      {#if currentMeta.inProgress}<p class="chapter-meta-wip">🚧 Under construction</p>{/if}
+    </div>
   {/if}
 
   <!-- Existing Progress Bar -->
@@ -175,6 +239,12 @@
     z-index: 20;
     padding: 0 16px 10px;
     pointer-events: none;
+    transform: translateY(0);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .chapter-nav.nav-hidden {
+    transform: translateY(-130%);
+    opacity: 0;
   }
   .chapter-nav-pill {
     pointer-events: all;
@@ -310,17 +380,70 @@
     }
   }
 
-  .chapter-meta-wip {
-    color: #fbbf24;
-    font-weight: 700;
+  /* ── READER MODE TOGGLE ──
+     Always-visible fixed button, independent of the auto-hiding chapter
+     nav, so there's always a way to turn reader mode back off. */
+  .reader-toggle {
+    /* Bottom-right, stacked above the dev-only White Rabbit debug trigger
+       (also bottom-right, 40px, prod-excluded) so neither is unreachable
+       in local dev. Bottom-left is already the FloatingPopupProgressBar's
+       spot in every environment. */
+    position: fixed;
+    right: clamp(16px, 4vw, 28px);
+    bottom: calc(clamp(16px, 4vw, 28px) + 56px);
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(9, 14, 32, 0.86);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 999px;
+    color: rgba(203,213,225,0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  .reader-toggle:hover { color: #f59e0b; border-color: rgba(245,158,11,0.35); }
+  .reader-toggle.active {
+    color: #0f172a;
+    background: #f59e0b;
+    border-color: #f59e0b;
   }
 
+  /* ── READER MODE ── larger, roomier type once the chrome is out of the way */
+  :global(.content-wrapper.reader-mode .chapter-article) {
+    font-size: 1.15rem;
+    line-height: 1.85;
+  }
+  :global(.content-wrapper.reader-mode .chapter-article h1) {
+    font-size: clamp(2.1rem, 5.5vw, 3.3rem);
+  }
+
+  /* One left-aligned column, stacked - matches the chapter title's own
+     left alignment below it, instead of a centered line that reads as a
+     separate block floating apart from the title. */
   .chapter-meta {
+    margin: 0 0 1rem;
+  }
+  .chapter-meta-line {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.8rem;
     color: #64748b;
-    text-align: center;
-    margin: 0 0 1rem;
+    text-align: left;
+    margin: 0;
+  }
+  .chapter-meta-wip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: rgba(251, 191, 36, 0.55);
+    text-align: left;
+    margin: 0.35rem 0 0;
   }
 
   .toc-link {

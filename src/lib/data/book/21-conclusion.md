@@ -6,9 +6,9 @@
 
 
 > *"As for the future, your task is not to foresee it, but to enable it."*
-> — Antoine de Saint-Exupéry, *The Wisdom of the Sands* (1948)
+> Antoine de Saint-Exupéry, *The Wisdom of the Sands* (1948)
 
-If you've made it this far, your lizard brain is probably screaming. You're probably trying to compartmentalize this as science fiction. You want to believe this is a fun thought experiment about a distant, unimaginable future—something for your great-great-grandchildren to worry about while you go back to paying your mortgage and scrolling through Reddit.
+If you've made it this far, your lizard brain is probably screaming. You're probably trying to compartmentalize this as science fiction. You want to believe this is a fun thought experiment about a distant, unimaginable future, something for your great-great-grandchildren to worry about while you go back to paying your mortgage and scrolling through Reddit.
 
 Wake the fuck up.
 

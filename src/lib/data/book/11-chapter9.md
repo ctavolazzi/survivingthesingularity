@@ -6,13 +6,13 @@
 
 
 > *"Man is small, and, therefore, small is beautiful."*
-> — E. F. Schumacher, *Small Is Beautiful* (1973)
+> E. F. Schumacher, *Small Is Beautiful* (1973)
 
 The solution is not to try and stop the corporate state or appeal to the empathy of trillionaires who choose to waste their vast resources on vanity projects while veterans sleep on the streets. The strategy is to build a functioning alternative that is so self-evidently superior that the transition becomes a complete no-brainer.
 
 - **Deglobalization, Not Decentralization:** "Decentralized" is a dangerous word. We require centralized control for quality, safety, and establishing critical stopgaps against bad actors. The real target is **deglobalization**. We must shrink the supply lines back to the local level to insulate ourselves from fragile, corrupt global networks.
 - **Neighborhood Factories:** We already have factories; the revolutionary shift is placing a localized, automated factory in **every single neighborhood and city**.
-- **Survival by Decree:** These neighborhood factories must provide for the basic survival needs of the citizens—food, shelter, and healthcare—as an absolute, automated human right, guaranteed by decree.
+- **Survival by Decree:** These neighborhood factories must provide for the basic survival needs of the citizens, food, shelter, and healthcare, as an absolute, automated human right, guaranteed by decree.
 - **Johnny Autoseed:** This is the practical execution of this vision. By utilizing existing, non-proprietary technologies (like FarmBot) for hyper-localized food production and neighborhood-level manufacturing (such as processing algae-based bioplastics), we can use the current monetary system as a temporary, enforced tool to construct a resilient, self-sufficient, and deglobalized reality.
 
 ## The Ultimatum: Why We Must Act Today
@@ -28,7 +28,7 @@ We must build the local infrastructure of abundance today, bypass the corporate 
 
 The absolute foundation of localized resilience is energy autonomy. The "Shouse" (Shed House) model has emerged as a highly adaptable architectural and infrastructural solution. A shouse is a hybrid structure combining a residence with a large, flexible workspace (such as a workshop, garage, or agricultural processing area) built using post-frame or prefabricated metal construction. Engineered for high-performance insulation, clear-span structures, and radiant floor heating, these buildings integrate heavy solar capacities and expandable battery storage (commonly utilizing 8kVA to 10kVA customizable inverters with expandable 8kWh battery banks) to completely decouple from the centralized utility grid.
 
-For broader community resilience, individual shouse energy systems must be networked through localized peer-to-peer (P2P) trading markets. The Brooklyn Microgrid serves as a foundational proof-of-concept for this architecture. Initiated in 2015 as a collaboration between LO3 Energy, Siemens, and ConsenSys, the pilot project utilizes blockchain technology to allow citizens—acting as "prosumers"—to directly buy and sell locally produced solar electricity with their neighbors across the Borough Hall, Park Slope, and Bay Ridge distribution networks. While physical microgrids protect against extreme weather events and grid failures by decoupling from the macro-grid, the blockchain smart contract layer ensures anonymity, immutability, and the trustless automated execution of transactions, circumventing the restrictions of traditional monopoly utilities.
+For broader community resilience, individual shouse energy systems must be networked through localized peer-to-peer (P2P) trading markets. The Brooklyn Microgrid serves as a foundational proof-of-concept for this architecture. Initiated in 2015 as a collaboration between LO3 Energy, Siemens, and ConsenSys, the pilot project utilizes blockchain technology to allow citizens, acting as "prosumers", to directly buy and sell locally produced solar electricity with their neighbors across the Borough Hall, Park Slope, and Bay Ridge distribution networks. While physical microgrids protect against extreme weather events and grid failures by decoupling from the macro-grid, the blockchain smart contract layer ensures anonymity, immutability, and the trustless automated execution of transactions, circumventing the restrictions of traditional monopoly utilities.
 
 The complete hyper-local deglobalized hub stacks three infrastructure layers:
 
@@ -44,7 +44,7 @@ The complete hyper-local deglobalized hub stacks three infrastructure layers:
 
 To depend on the industrial food system for your daily calories is to accept a collar.
 
-Every head of grocery-store lettuce, every bag of processed wheat, and every shrink-wrapped cut of meat sitting under sterile supermarket lights is a physical manifestation of oil. Modern agriculture does not grow food from the earth; it converts fossil fuels into human tissue using soil as a dead holding medium. From the diesel that tractors burn, to the Haber-Bosch nitrogen synthesized from natural gas, to the global cold-chain shipping networks—you are eating petroleum.
+Every head of grocery-store lettuce, every bag of processed wheat, and every shrink-wrapped cut of meat sitting under sterile supermarket lights is a physical manifestation of oil. Modern agriculture does not grow food from the earth; it converts fossil fuels into human tissue using soil as a dead holding medium. From the diesel that tractors burn, to the Haber-Bosch nitrogen synthesized from natural gas, to the global cold-chain shipping networks, you are eating petroleum.
 
 When the long-tail logistics collapse, the supermarkets empty in seventy-two hours.
 
@@ -64,7 +64,7 @@ To force this reaction to occur, industrial plants must run at pressures between
 
 When you buy a bag of synthetic chemical fertilizer, you are buying fossil fuel energy stabilized in salt.
 
-Furthermore, synthetic fertilizers are a trap. The highly concentrated salts kill the native soil biology—the mycorrhizal fungi and nitrogen-fixing bacteria that evolved over millions of years to feed plant roots. Once the soil biology is dead, the soil becomes sterile dirt. The plants become entirely addicted to the synthetic inputs; if you stop applying chemical salts, the crop collapses.
+Furthermore, synthetic fertilizers are a trap. The highly concentrated salts kill the native soil biology, the mycorrhizal fungi and nitrogen-fixing bacteria that evolved over millions of years to feed plant roots. Once the soil biology is dead, the soil becomes sterile dirt. The plants become entirely addicted to the synthetic inputs; if you stop applying chemical salts, the crop collapses.
 
 ```text
                    [THE DESTRUCTIVE FEEDBACK LOOP]
@@ -98,7 +98,7 @@ Plants cannot absorb atmospheric nitrogen. However, leguminous plants (such as c
 
 > **N₂ + 8H⁺ + 8e⁻ + 16 ATP → 2NH₃ + H₂ + 16 ADP + 16 Pᵢ** (via the nitrogenase enzyme)
 
-By maintaining a biologically active soil matrix—what Dr. Elaine Ingham terms the **Soil Food Web**—we establish an autonomous nutrient cycle. The soil feeds itself, indefinitely, powered entirely by solar energy captured through photosynthesis.
+By maintaining a biologically active soil matrix, what Dr. Elaine Ingham terms the **Soil Food Web**, we establish an autonomous nutrient cycle. The soil feeds itself, indefinitely, powered entirely by solar energy captured through photosynthesis.
 
 ### Section 2: The Automated Greenhouse Core (Mycodo and Raspberry Pi)
 
@@ -162,7 +162,7 @@ curl -sL https://raw.githubusercontent.com/kylegabriel/Mycodo/master/install | b
 
 Once installed, navigate to http://<your-pi-ip>:8080 in your local web browser. Through the Mycodo web interface, you can configure PID (Proportional-Integral-Derivative) loop controllers to maintain perfect soil moisture and air temperature:
 
-> **u(t) = Kp·e(t) + Ki·∫e(τ)dτ + Kd·de(t)/dt** — the standard PID control equation
+> **u(t) = Kp·e(t) + Ki·∫e(τ)dτ + Kd·de(t)/dt**, the standard PID control equation
 
 Where:
 
@@ -287,5 +287,3 @@ But autonomous survival is not an individual game played out in lonely isolation
 In the next chapter, we transition from Acts I and II to **Act III: The Commons (Legal and Municipal Engineering)**. We will lay out **Chapter 9: Hacking the Deed (Community Land Trusts)**, where we will construct a bulletproof legal framework to secure land, hold it collectively outside the speculative real-estate market, and starve the state of property taxes.
 
 Sharpen your legal pens. We are taking back the land.
-
-—

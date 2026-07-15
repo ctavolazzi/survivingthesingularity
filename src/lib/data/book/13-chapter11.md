@@ -6,7 +6,7 @@
 
 
 > *"Give me a place to stand, and I shall move the Earth."*
-> — attributed to Archimedes, *via Pappus of Alexandria* (c. 340 AD)
+> attributed to Archimedes, *via Pappus of Alexandria* (c. 340 AD)
 
 You do not need to be an engineer to use the new machine-based tools. You need to be persistent. Treat these tools as an aggressive, infinite research assistant. If the answer you get is generic, argue with the machine. Push it to be specific. Demand the technical procedures you need to get the job done.
 
@@ -83,7 +83,7 @@ You can run this comfortably on a single, used consumer GPU like an NVIDIA RTX 3
 
 > **V_RAM = ( (70 · 4) / (8) ) · 1.20 = 35 · 1.20 = 42 GB**
 
-To run a 70-billion parameter model—a model capable of complex coding, localized medical analysis, and advanced mechanical troubleshooting—you need at least 42 GB of VRAM.
+To run a 70-billion parameter model, a model capable of complex coding, localized medical analysis, and advanced mechanical troubleshooting, you need at least 42 GB of VRAM.
 
 You solve this by pooling GPUs. We install two used NVIDIA RTX 3090s or two enterprise Tesla P40s (24 GB VRAM each, costing roughly $150 per P40 on eBay) into our server motherboard, giving us 48 GB of combined VRAM. Thanks to unified memory architectures like unified virtual memory (UVM) or specialized frameworks like llama.cpp, the model weights are split seamlessly across both physical cards.
 
@@ -290,5 +290,3 @@ Now that we have power and intelligence, we must feed the meat engine.
 In the next chapter, we descend from the server racks and step into the wet, dark earth. We will lay out **Chapter 8: The Robot in the Soil (FarmBot and Biological Refineries)**, where we will combine automation, Raspberry Pi micro-greenhouses, and soil biology to bypass the petrochemical fertilizer industrial complex.
 
 Prepare your seed trays and biological cultures. We are taking back the soil.
-
-—

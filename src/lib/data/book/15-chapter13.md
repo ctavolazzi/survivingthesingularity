@@ -6,7 +6,7 @@
 
 
 > *"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."*
-> — attributed to R. Buckminster Fuller
+> attributed to R. Buckminster Fuller
 
 Once you have the land, you don't build a massive, complex suburban house. You build a "Shouse" (Shop-House).
 
@@ -28,7 +28,7 @@ And no, I do not mean a standard suburban split-level home with a thirty-year mo
 
 In the cracks, we do not rent our existence. We construct the **Autonomous Shell**.
 
-The Autonomous Shell is a heavily insulated, structurally reinforced, off-grid physical fortress built outside their speculative real-estate grid. It is designed to minimize your thermodynamic overhead while maximizing your physical security and digital autonomy. The entry cost? Roughly $25,000—the price of a mediocre used car. But instead of depreciating steel, you get a permanent, un-brickable exit from the corporate matrix.
+The Autonomous Shell is a heavily insulated, structurally reinforced, off-grid physical fortress built outside their speculative real-estate grid. It is designed to minimize your thermodynamic overhead while maximizing your physical security and digital autonomy. The entry cost? Roughly $25,000, the price of a mediocre used car. But instead of depreciating steel, you get a permanent, un-brickable exit from the corporate matrix.
 
 ```text
                  [THE DOUBLE-WIDE SHELL ARCHITECTURE]
@@ -266,7 +266,7 @@ We concentrate all plumbing, water filtration, and electrical distribution into 
 
 ### Step 6: Off-Grid Utility Routing
 
-All utility lines—electrical conduits, PEX water lines, and communications cables—must run through **open, accessible mechanical chases**.
+All utility lines, electrical conduits, PEX water lines, and communications cables, must run through **open, accessible mechanical chases**.
 
 Do not bury your wiring inside drywalled walls where a single rodent or a short circuit can force you to rip your home apart.
 
@@ -280,5 +280,3 @@ But a shell is dead without power.
 In the next chapter, we will bring this steel beast to life. We will layout **Chapter 6: DC-Native Solar and Recycled Storage**, where we will calculate our energy harvest, build an ultra-efficient DC microgrid, and bypass the energy-wasting trap of centralized AC power inverters.
 
 Get your wire strippers ready. It is time to harvest the sun.
-
-—

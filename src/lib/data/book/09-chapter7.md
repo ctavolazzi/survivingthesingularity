@@ -1,4 +1,4 @@
-# Chapter 7: The Battle Lines — The Entitled vs. The Ready
+# Chapter 7: The Battle Lines: The Entitled vs. The Ready
 
 ![Chess board set up in the opening position](/book-images/ch07-chess-battle-lines.jpg)
 
@@ -6,7 +6,7 @@
 
 
 > *"Chance favors only the prepared mind."*
-> — Louis Pasteur, *lecture at the University of Lille* (1854)
+> Louis Pasteur, *lecture at the University of Lille* (1854)
 
 The resistance to this inevitable transition is not universal. It is highly segregated along demographic lines of empathy, power, and structural privilege.
 
@@ -54,9 +54,9 @@ The Stage 5 backlash is not a theoretical projection; it is already empirically 
 
 | Anti-Autonomous-Vehicle Activist Principles & Concerns | Documented Incidents & System Failures |
 | :-- | :-- |
-| **Surveillance & Privacy:** Resistance to 365-degree cameras and corporate data sharing with law enforcement. | **Dog Fatality:** May 21, 2023 — A Waymo Jaguar operating in autonomous mode struck and killed a small dog on Toland St. in SF, unable to stop in time despite identifying the animal. |
+| **Surveillance & Privacy:** Resistance to 365-degree cameras and corporate data sharing with law enforcement. | **Dog Fatality:** May 21, 2023, A Waymo Jaguar operating in autonomous mode struck and killed a small dog on Toland St. in SF, unable to stop in time despite identifying the animal. |
 | **Public Transit Advocacy:** Protest against state funding allocated to private robotaxis over mass transit infrastructure. | **Emergency Interference:** SF Fire Chief reports nearly 40 instances of autonomous vehicles blocking or disrupting active emergency response operations. |
-| **Rules of Engagement:** Activists ethically target only empty vehicles, avoiding intersections and bus stops to prevent direct human harm. | **Physical Destruction:** Feb 10, 2024 — A Waymo robotaxi in Chinatown was surrounded, its windows smashed, and destroyed by a lit firework thrown inside. |
+| **Rules of Engagement:** Activists ethically target only empty vehicles, avoiding intersections and bus stops to prevent direct human harm. | **Physical Destruction:** Feb 10, 2024, A Waymo robotaxi in Chinatown was surrounded, its windows smashed, and destroyed by a lit firework thrown inside. |
 | **Labor & Status Protection:** Deep anxieties regarding job displacement for human drivers and the loss of economic agency. | **Federal Probes:** The US launched an investigation into Waymo robotaxis regarding their safety performance around school buses. |
 
 While the activists defend their actions under the banner of pedestrian safety and anti-surveillance, the underlying current of the protests represents a profound neo-Luddite anxiety regarding job displacement, shifting social norms, and a loss of control to algorithmic entities. As noted by author Brian Merchant in *Blood in the Machine*, the original 19th-century Luddites were not uneducated opponents of technology, but highly skilled technologists who understood exactly how machinery would destroy their workplace autonomy and identities. The modern "rage against the robots" follows this exact historical lineage, serving as a coping mechanism for a populace feeling overwhelmed by technologies poised to permanently replace their societal utility.

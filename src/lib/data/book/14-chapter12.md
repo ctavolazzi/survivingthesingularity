@@ -6,7 +6,7 @@
 
 
 > *"Land is the only thing in the world that amounts to anything … 'tis the only thing in this world that lasts."*
-> — Margaret Mitchell, *Gone with the Wind* (1936)
+> Margaret Mitchell, *Gone with the Wind* (1936)
 
 If you have capital, do not put it into a house, status symbols, or a business that depends on the city's health. **Buy land.**
 
@@ -30,7 +30,7 @@ What is she supposed to do? Is she just supposed to sit there, run out of money,
 
 This is where the standard survivalist narrative of the lone, paranoid prepper in a bunker completely collapses. A bunker is just a high-cost tomb. True autonomy is not an individual game of defensive isolation; it is a relational network.
 
-If we have the technology—if we have off-grid power, local AI, automated farming rigs, and open-source communication meshes—then we have a moral and thermodynamic obligation to build a system that *provides for our people*.
+If we have the technology, if we have off-grid power, local AI, automated farming rigs, and open-source communication meshes, then we have a moral and thermodynamic obligation to build a system that *provides for our people*.
 
 Our answer to the systemic collapse of community is the **Semi-Autonomous CSA (Community Supported Agriculture) built on the Shouse living model**. It is a network of productive physical workshops that uses local technology to automate survival, eliminate the rent-extraction of daily life, and protect the most vulnerable among us.
 
@@ -177,7 +177,7 @@ Here is your master, step-by-step roadmap to go from a dependent consumer to an 
 
 ### Phase 3: Secure the Shell & Power Bus (Months 3–6)
 
-  - [ ] Source your physical footprint—whether it is a dual-container "double-wide" Shouse (Chapter 5) or an existing outbuilding retrofitted as a productive workshop.
+  - [ ] Source your physical footprint, whether it is a dual-container "double-wide" Shouse (Chapter 5) or an existing outbuilding retrofitted as a productive workshop.
   - [ ] Install a minimum of three inches of closed-cell polyurethane spray foam to create a continuous thermal envelope.
   - [ ] Build your **DC-Native Solar Microgrid** (Chapter 6). Run a 24V or 48V direct bus to a marine fuse block. Wire your local server Crucible, your mesh radios, and your LED lighting directly to this DC bus, completely bypassing the inverter trap.
 
@@ -209,7 +209,7 @@ Right now, you can start building robots that grow your food. Right now, you can
 
 You do not need permission from a centralized board. You do not need to wait for a federal program, a corporate bailout, or a change in the political winds.
 
-You can, **RIGHT NOW**, start working with your neighbors, your friends, your family, and your local community to set up a Semi-Autonomous CSA. You can begin distributing not only physical resources, but fucking **LABOR** to those who need it most—completely bypassing the condescension, the bureaucracy, and the pain normally associated with institutional charity.
+You can, **RIGHT NOW**, start working with your neighbors, your friends, your family, and your local community to set up a Semi-Autonomous CSA. You can begin distributing not only physical resources, but fucking **LABOR** to those who need it most, completely bypassing the condescension, the bureaucracy, and the pain normally associated with institutional charity.
 
 This is not a blueprint for some distant, sci-fi utopia. This is an active, hostile reclamation of your life’s trajectory. By learning these tools, by understanding the raw physics of your environment, and by actively building the Shouse grid, you change the way we view the present.
 

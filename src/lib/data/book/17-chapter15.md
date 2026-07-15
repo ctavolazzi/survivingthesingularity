@@ -6,7 +6,7 @@
 
 
 > *"The nation that destroys its soil destroys itself."*
-> — Franklin D. Roosevelt, *letter to all state governors* (1937)
+> Franklin D. Roosevelt, *letter to all state governors* (1937)
 If you want to understand the ultimate goal of the technocratic elite, you don't need to read their white papers on artificial general intelligence or listen to their keynotes about Mars colonies.
 
 You just need to look at what they are buying.
@@ -134,7 +134,7 @@ To break this dependency, we must deploy the **Soil Food Web** hack.
 
   
 
-Healthy soil is not just dirt; it is a complex, self-assembling, biological reactor. A single teaspoon of healthy soil contains more living organisms than there are humans on Earth. These microbes—bacteria, fungi, protozoa, and nematodes—work in a beautiful, closed-loop economy:
+Healthy soil is not just dirt; it is a complex, self-assembling, biological reactor. A single teaspoon of healthy soil contains more living organisms than there are humans on Earth. These microbes, bacteria, fungi, protozoa, and nematodes, work in a beautiful, closed-loop economy:
 
 1.  **The Exchange:** Plants capture solar energy and turn it into simple sugars. They pump these sugars out through their roots (called exudates) into the soil.
 2.  **The Mining:** Soil bacteria and mycorrhizal fungi feed on these sugars. In exchange, they use specialized enzymes to dissolve rock, clay, and organic matter, unlocking phosphorus, potassium, and micro-nutrients that the plant’s roots could never access on their own.
@@ -165,5 +165,3 @@ You cannot build a Community Land Trust or restore a soil food web from behind a
 They wanted to turn us into disembodied nodes in a digital matrix. We are countering by anchoring ourselves deep into the biological bedrock of the earth.
 
 Grab your shovel. Protect your soil. The ground is the only thing they aren't making any more of.
-
-—

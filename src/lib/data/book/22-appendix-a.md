@@ -1,15 +1,15 @@
 # APPENDIX A: THE MUNICIPAL AUTONOMY CODE
 If you want to understand the limits of corporate-state power, you must look at the legal architecture of the municipality.
 
-In the old world, we were conditioned to look toward national capitals for political salvation. We marched, we voted, we argued online, and we waited for federal reforms that never came—unaware that the federal system was designed to be too vast, too slow, and too thoroughly captured by corporate lobbying to ever serve human needs.
+In the old world, we were conditioned to look toward national capitals for political salvation. We marched, we voted, we argued online, and we waited for federal reforms that never came, unaware that the federal system was designed to be too vast, too slow, and too thoroughly captured by corporate lobbying to ever serve human needs.
 
 But the law contains a fascinating, highly local loophole: **The Municipal Charter.**
 
-In many jurisdictions, local municipalities possess what is known as **Home Rule** or inherent **Police Power**—the constitutional authority to govern local affairs and pass laws protecting the health, safety, welfare, and morals of their citizens.
+In many jurisdictions, local municipalities possess what is known as **Home Rule** or inherent **Police Power**, the constitutional authority to govern local affairs and pass laws protecting the health, safety, welfare, and morals of their citizens.
 
 When the centralized grid fails, or when algorithmic networks render the local population redundant, a town council does not need to wait for permission from a distant state legislature. They can declare a local state of resource emergency and legally restructure their entire local economy overnight.
 
-This appendix is a plug-and-play legal template. It is a draft of a municipal ordinance—The Community Commons Act—modeled directly on the historic self-preservation codes deployed during the early days of the Singularity.
+This appendix is a plug-and-play legal template. It is a draft of a municipal ordinance, The Community Commons Act, modeled directly on the historic self-preservation codes deployed during the early days of the Singularity.
 
 You can print this document, modify the brackets, and present it to your local town council, municipal board, or neighborhood association. It is your legal tool to hack the municipal code and turn your town into a sanctuary in the cracks.
 
@@ -119,7 +119,5 @@ No employee, law enforcement officer, municipal contractor, or public resource o
 Attest: Approved:
 
 City Clerk Mayor / Board President
-
-—
 
 ---

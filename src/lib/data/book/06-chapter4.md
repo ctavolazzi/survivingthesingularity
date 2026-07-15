@@ -6,7 +6,7 @@
 
 
 > *"The universe is not only queerer than we suppose, but queerer than we can suppose."*
-> — J. B. S. Haldane, *Possible Worlds* (1927)
+> J. B. S. Haldane, *Possible Worlds* (1927)
 
 ## Stage 8: The Transition to USI
 
@@ -20,7 +20,7 @@ That is the scale of human arrogance. We thought we could put a leash on infinit
 
 ## Stage 9: The Apex Intelligence
 
-But even the universe has limits. There is a hard ceiling to the physics of our reality—a maximum capacity for how much intelligence and compute can exist before you hit the absolute boundaries of space and time.
+But even the universe has limits. There is a hard ceiling to the physics of our reality, a maximum capacity for how much intelligence and compute can exist before you hit the absolute boundaries of space and time.
 
 The USI hits that wall. It maxes out the hardware of our universe.
 
@@ -48,6 +48,6 @@ Utilizing Bayes' theorem and Bayesian model averaging to relate conditional prob
 
 where N-sim is the number of simulations. Because N-sim would be exceptionally large, this conditionally recovers the conventional conclusion that we are almost certainly simulated, *if* that hypothesis is true.
 
-However, Kipping notes that we currently exist in a "nulliparous" state—a reality that has not yet given birth to its own simulated universes. When factoring in the principle of indifference across the models, Kipping demonstrates that the objective Bayesian probability that we are currently living in a simulation is slightly less than 50%.
+However, Kipping notes that we currently exist in a "nulliparous" state, a reality that has not yet given birth to its own simulated universes. When factoring in the principle of indifference across the models, Kipping demonstrates that the objective Bayesian probability that we are currently living in a simulation is slightly less than 50%.
 
-But Kipping's mathematical formulation includes a profound caveat: if humanity *does* eventually reach the stage where we start producing high-fidelity ancestor simulations ourselves, we break the nulliparous condition. The moment a civilization creates a simulated reality, the Bayesian odds radically shift, dictating that they are almost certainly simulated themselves. As the intelligence explosion drives humanity toward unparalleled computational capacity, the birthing of our own simulations—and the subsequent mathematical proof of our own simulated nature—may emerge as the ultimate empirical discovery of the ASI era.
+But Kipping's mathematical formulation includes a profound caveat: if humanity *does* eventually reach the stage where we start producing high-fidelity ancestor simulations ourselves, we break the nulliparous condition. The moment a civilization creates a simulated reality, the Bayesian odds radically shift, dictating that they are almost certainly simulated themselves. As the intelligence explosion drives humanity toward unparalleled computational capacity, the birthing of our own simulations, and the subsequent mathematical proof of our own simulated nature, may emerge as the ultimate empirical discovery of the ASI era.

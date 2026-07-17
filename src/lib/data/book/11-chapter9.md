@@ -8,6 +8,53 @@
 > *"Man is small, and, therefore, small is beautiful."*
 > E. F. Schumacher, *Small Is Beautiful* (1973)
 
+**In this chapter:**
+
+- You don't beat the global supply chain by lobbying it. You beat it by needing it less, one neighborhood at a time.
+- A factory used to be a billion dollars and a river. Now it's a plasma table, a 3D printer, and somebody's cousin who can weld.
+- Elegant is what a design is before it meets weather, budgets, and the parts that are actually in the drawer.
+- The paperwork is part of the machine. Someone has to love it.
+
+---
+
+The co-op's first real manufacturing run — the thing Elijah would later describe to strangers as *the neighborhood factory booting up*, though at the time it was just a January argument in a cold shed — was forty greenhouse controllers for the CSA network two valleys over.
+
+The order came through a friend of a friend of Priya's: forty small boxes that could read soil moisture and air temperature and open a vent or a valve without asking a server in Virginia for permission. Real money, real deadline, real customers with real seedlings on the line. Elijah volunteered for the design with the eagerness of a man who had been sweeping floors for two months and could feel, at last, the shape of something he was actually trained to do.
+
+He designed a beautiful thing. He wants that on the record, with the caveat that so does everyone in this story every time he says it. Custom four-layer PCB, an elegant little system-on-module, sensors from a Swiss outfit whose datasheets read like poetry, the whole thing potted in resin, sleek as a river stone, no user-serviceable parts inside. He presented it to the shop on a Tuesday with renders. *Renders.*
+
+Marta looked at the renders for a while.
+
+"Walk me through the bill of materials," she said, so he did, and she wrote three numbers on the whiteboard while he talked: **11**, **1**, **0**.
+
+"Eleven weeks," she said, tapping the first number, "is the lead time on that Swiss sensor, I just looked it up, and that's the *quoted* lead time, which means it's a prayer. One" — the second number — "is how many suppliers make that module, which means the day they discontinue it, all forty of these are bricks, and we're the ones who sold bricks to farmers. And zero" — she tapped the last — "is how many people in this valley can fix a potted resin board when it fails during frost week. Including you, college. *Especially* you, because you'll be the one who's busy." She capped the marker. "It's a gorgeous design. It's a Claypot design. Everything single-sourced, nothing repairable, the whole thing optimized for the demo instead of the Tuesday three years from now when it breaks during calving. Design it again, and this time the spec is: parts from the drawer, parts from the junction box aisle, and nothing your neighbor can't fix with the tools he already owns."
+
+"That'll be uglier," Elijah said.
+
+"It'll be *ours*," Marta said. "Ugly is a maintenance feature. Ugly means the next guy can see how it works."
+
+So he designed it again, and the second version was the one this book teaches in the Foundations below: a Raspberry Pi anybody could buy anywhere, screw terminals instead of poetry, capacitive sensor probes at four dollars, a case Denny's kid printed forty of in PETG the color of school buses, relays you could buy at any electrical counter in America. The firmware did less and survived more. Every unit had a laminated one-page repair card zip-tied inside the lid, because Marta's rule was that documentation you have to go find is documentation that doesn't exist.
+
+The build itself took the shed three weekends, and it was during the second one — everyone deburring enclosures and crimping ferrules in an assembly line that Sal himself would have recognized from 1985 — that the door opened and let in a rectangle of cold light and a lean man in a good coat who was too pleased with himself for a Saturday.
+
+"Reuben Vance," Marta said, not looking up from the crimper. "Elijah. Elijah, Reuben. Reuben handles the part of the machine that runs on paper."
+
+"I heard," Reuben said, pulling folding chairs toward the woodstove like a man dealing cards, "that this operation is about to *sell manufactured electrical goods across county lines*." He said it the way other men say *rob a train*. He produced a folder. "So before anyone gets excited, here is what I did yesterday instead of having a life. Seller's permit — done, we're registered. Resale certificate for the component purchases, which, you're welcome, is about nine percent of your margin back. The shed's ag-exempt status survives because the controllers are agricultural equipment, and I have the assessor's email agreeing they are, in writing, because the assessor and I have an understanding built on me never making her think twice." He looked up. "Also your liability language on the invoice was going to get you sued by the first frost, so I rewrote it. You're a farm tool now, legally speaking. Farm tools have four hundred years of friendly precedent. Software has forty years of hostile precedent. Never be software if you can be a tool."
+
+Elijah looked at the folder, then at Marta. "Did we ask him to do this?"
+
+"Nobody asks Reuben," Priya said, from the crimping line. "Reuben *notices*."
+
+The forty units shipped in February in apple boxes, hand-delivered in Denny's truck, each one tested on the bench against a space heater and a cup of wet dirt. Two came back in the first month — one lightning, one gopher — and both were fixed in an afternoon by the farmers themselves, off the laminated card, with parts from town. Marta put the repair emails up on the corkboard like other shops hang their first dollar.
+
+And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's check-engine light — Curtis, it turned out, diagnosed it in nine minutes off a fourteen-dollar OBD dongle, a cracked vacuum line, two dollars of hose. Eleven months that light had been on. The dealership had quoted him twelve hundred dollars and a week; the man who wanted to fence out the world did it while the coffee brewed, because Elijah was co-op now, and that's what the machine of nineteen households does: it notices what's blinking on your dash, and it has the part in a drawer.
+
+That's the whole chapter, really. The rest is engineering.
+
+---
+
+## The Foundations
+
 The solution is not to try and stop the corporate state or appeal to the empathy of trillionaires who choose to waste their vast resources on vanity projects while veterans sleep on the streets. The strategy is to build a functioning alternative that is so self-evidently superior that the transition becomes a complete no-brainer.
 
 - **Deglobalization, Not Decentralization:** "Decentralized" is a dangerous word. We require centralized control for quality, safety, and establishing critical stopgaps against bad actors. The real target is **deglobalization**. We must shrink the supply lines back to the local level to insulate ourselves from fragile, corrupt global networks.

@@ -131,9 +131,9 @@ review + rulings on S9/S3/S4.
 | 4. Universal / Multiverse Apex | ✅ | ✅ (LADDER.xlsx overreach; map ≠ territory) | ✅ | ✅ done 2026-07-16 — 969w scene |
 | 5. Thermodynamics of Survival | ✅ | ✅ (the $211 power bill; grandmother's woodstove) | ✅ | ✅ done 2026-07-16 — 879w scene |
 | 6. The Singularity Is a Done Deal | ✅ | ✅ (quits Claypot; Marta shuts the pitch down; the broom) | ✅ | ✅ done 2026-07-16 — 954w scene |
-| 7. Battle Lines | — | — | — | ⬜ pending (Denny) |
-| 8. Psychology of the Collapse | — | — | — | ⬜ pending (Marta) |
-| 9. Deglobalization / Neighborhood Factory | — | — | — | ⬜ pending (Marta, Reuben) |
+| 7. Battle Lines | ✅ | ✅ (potluck; Denny's two ladders; Marta's Luddite floor) | ✅ | ✅ done 2026-07-16 — 1,108w |
+| 8. Psychology of the Collapse | ✅ | ✅ (the spiral; Gary and Sal; first firewall) | ✅ | ✅ done 2026-07-16 — 1,154w |
+| 9. Deglobalization / Neighborhood Factory | ✅ | ✅ (40 controllers; the 11/1/0 whiteboard; Reuben enters; check-engine payoff) | ✅ | ✅ done 2026-07-16 — 1,005w |
 | 10. Create Over Consume | — | — | — | ⬜ pending (Denny) |
 | 11. Using the Tech to Your Advantage | — | — | — | ⬜ pending (deploy-leak friction) |
 | 12. The Land Strategy | — | — | — | ⬜ pending (Reuben) |

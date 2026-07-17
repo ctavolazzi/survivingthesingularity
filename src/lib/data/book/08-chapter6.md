@@ -8,6 +8,55 @@
 > *"The ever accelerating progress of technology … gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue."*
 > John von Neumann, as recalled by Stanisław Ulam, *Bulletin of the American Mathematical Society* (1958)
 
+**In this chapter:**
+
+- The event horizon is behind us. The debate you're watching on the news is a rerun; the machine already shipped.
+- The bottleneck to a livable transition isn't technical. It's the human ego, the exhausted, and the status-invested.
+- You don't have to take anyone's wealth to end the terror. You have to use the robots to grow food and build shelter — and let people keep what they have.
+- Some people have already survived an automation wave. Find them. They are not on LinkedIn.
+
+---
+
+Elijah quit on a Tuesday, eleven months after the toast, and the resignation meeting took four minutes because nobody argued.
+
+There had been a moment, drafting the letter, when he'd imagined saying the whole thing out loud — the realtors, the ingestion pipeline with his name in the commits, the enclosure, the arithmetic in the notebook. But you learn who a speech is for by imagining giving it, and this one was for him. So he wrote two sentences, and Claypot's system auto-scheduled his exit interview with an AI that thanked him for his candor, and the badge went dead in his hand at the turnstile with a small red light, and that was eight years of the new economy: on-boarded by a person, off-boarded by a light.
+
+He drove north because north was the only direction that had ever meant anything. Past Santa Rosa the road opened up and his shoulders came down off his ears by degrees, the way they only did in country where things were still made of wood and weather. He had no plan. He wants that on the record too. He had savings, a dead grandmother's county, a notebook full of arithmetic, and a manuscript nobody had asked for, and somewhere past Cloverdale the check-engine light came on — the *old* economy asserting itself, combustion and gaskets, problems you could hold.
+
+The shop he pulled into wasn't a mechanic's. He realized it too late, halfway across the gravel: an old apple-packing shed off the county road, roll-up door open to the heat, and inside, not lifts and tires but *fabrication* — a CNC plasma table mid-cut, throwing orange sparks in a fan, welding curtains, steel racked by size along one wall like library books, and a wall of hand tools shadow-boarded so precisely it looked like an evidence display. A woman in a leather apron stood at the plasma table with her back to him, watching the cut the way you watch a pot that's nearly boiling. Fifty-something. Forearms like dock rope.
+
+"Engine light?" she said, without turning around. "Mechanic's two miles up, left at the grange hall. This isn't that."
+
+"What is it?" Elijah asked, because the question got out ahead of his manners.
+
+She turned around then and looked at him — one long, level pass, boots to haircut, the look of someone who has hired and fired and buried — and something in the shop's whole arrangement must have loosened her, because instead of pointing at the road she said, "Co-op. Nineteen households. We make what we can't afford to buy and fix what the market says to throw away." She nodded at the plasma table. "Right now: brackets for a neighbor's solar rack. You need something made?"
+
+And Elijah — God help him, he'd been alone with the arithmetic for eleven months, and here was a stranger standing inside the exact answer to it — Elijah went off. Again. The way he had at the Bear Flag.
+
+He told her what was coming, machine-gun style: the models, the curve, the end of labor. And then, because eight years of Claypot had installed a whole grammar in him he didn't know he was speaking, he started *pitching*. He heard himself say the shop could *scale*. He said *platform*. He said there ought to be an app — coordination software, a network of co-ops, a marketplace layer; he could build it in a month, this thing could be in fifty towns by spring, they could get ahead of the wave, first-mover — and somewhere in there he ran out of gas, because Marta Okonkwo had crossed her arms and was watching him with the exact expression she'd given the plasma cut: waiting to see if the machine would finish or fault.
+
+"You done?" she said.
+
+He was done.
+
+"Okay. One," she said, holding up a gloved finger, "nobody here needs an app. Maria-next-door needs her rack to survive a snow load. That's the bracket. Two — *scale*." She said the word like a fish she was returning. "Everything that ever screwed the people I know got big first. The plant I gave fifteen years to *scaled*. Scaled itself right to a labor market that didn't include us. You know what doesn't scale? Nineteen households who all know whose kid is whose. That's not a limitation, college. That's the load-bearing wall."
+
+"I'm not — " he started, and she talked straight through him, not unkindly, the way you talk through a gate that's still swinging.
+
+"Three. You drove up here to tell me a machine is coming for everybody's job." She pulled her glove off, finger by finger. "In 2009 I watched a company do to nine hundred of us what your machine is going to do to everybody, and there was no machine, just a spreadsheet and a tax break. So I know something you don't, which is what it's like *after*. And you know something I don't, which is apparently the schedule." She jerked her chin toward the fan of sparks. "That could be worth something. Not an app."
+
+The silence had the plasma table in it, ticking as it cooled, exactly like an engine after a long haul, exactly like a tower in a dark apartment. Elijah stood in it and felt the pitch die and something older stand up in its place.
+
+"I grew up on a farm," he said. "I can't weld. But I can fix a pump, and I can read a manual, and I'm not in a hurry."
+
+Marta looked at him for another second. Then she picked up a push broom leaning by the curtain and held it out.
+
+"Swarf goes in the red bin," she said. "We'll see."
+
+---
+
+## The Foundations
+
 ## The Premise
 
 The public discourse surrounding advanced technology is fundamentally broken. Mainstream media, academic institutions, and corporate-state bureaucrats treat the Technological Singularity as a hypothetical, distant debate. In reality, the event horizon has already been crossed.

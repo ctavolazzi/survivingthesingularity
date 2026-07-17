@@ -128,9 +128,9 @@ review + rulings on S9/S3/S4.
 | 1. The Event Horizon | ✅ | ✅ (the week after the toast) | ✅ | ✅ **pilot done** 2026-07-11 |
 | 2. The Era of AGI | ✅ | ✅ (Companion all-hands; enclosure of the commons) | ✅ | ✅ done 2026-07-12 — 1,062w scene |
 | 3. The Leap to ASI | ✅ | ✅ (RSI vertigo; failed call to his mother) | ✅ | ✅ done 2026-07-12 — 1,020w scene; chapter no longer thin (2,034w) |
-| 4. Universal / Multiverse Apex | — | — | — | ⬜ pending |
-| 5. Thermodynamics of Survival | — | — | — | ⬜ pending (callback to Ch.1 throttle) |
-| 6. The Singularity Is a Done Deal | — | — | — | ⬜ pending (Marta first contact) |
+| 4. Universal / Multiverse Apex | ✅ | ✅ (LADDER.xlsx overreach; map ≠ territory) | ✅ | ✅ done 2026-07-16 — 969w scene |
+| 5. Thermodynamics of Survival | ✅ | ✅ (the $211 power bill; grandmother's woodstove) | ✅ | ✅ done 2026-07-16 — 879w scene |
+| 6. The Singularity Is a Done Deal | ✅ | ✅ (quits Claypot; Marta shuts the pitch down; the broom) | ✅ | ✅ done 2026-07-16 — 954w scene |
 | 7. Battle Lines | — | — | — | ⬜ pending (Denny) |
 | 8. Psychology of the Collapse | — | — | — | ⬜ pending (Marta) |
 | 9. Deglobalization / Neighborhood Factory | — | — | — | ⬜ pending (Marta, Reuben) |

@@ -15,9 +15,10 @@ Commands:
     live      Probe production and compare against local routes (deploy drift)
     sitemap   Check sitemap.xml against real routes; --write regenerates it
     routes    List every route the site actually serves
+    ids       Unique ID for every page/section/image/paragraph; --write maps it
 
 Every command accepts --json for machine-readable output.
-`audit` and `sitemap` exit non-zero when errors are found (CI-friendly).
+`audit`, `sitemap`, and `ids` exit non-zero when errors are found (CI-friendly).
 
 Examples:
     python3 scripts/sts.py status
@@ -25,9 +26,11 @@ Examples:
     python3 scripts/sts.py book --thin 1500
     python3 scripts/sts.py sitemap --write
     python3 scripts/sts.py live
+    python3 scripts/sts.py ids --write
 """
 
 import argparse
+import hashlib
 import json
 import re
 import subprocess
@@ -778,6 +781,272 @@ def cmd_status(args) -> int:
 
 # ──────────────────────────────────────────────────────────────────────
 
+# ---------------------------------------------------------------------------
+# ids — give every page, section, image, and paragraph a durable unique ID.
+#
+# Turns fragile "file:line" citations into stable handles (e.g. STS-CH05-P12)
+# so any atom of the manuscript can be referenced in review and survive edits
+# to its neighbours. Manifest-only by default (zero render risk). `--inject`
+# writes invisible HTML-comment anchors that are safe for BOTH the site
+# renderer (marked) and the epub/pdf build (pandoc); `--strip` removes them.
+#
+# Scheme:  STS-{PAGE}                    the page itself (h1 title)
+#          STS-{PAGE}-S{n}               a section (h2+ heading)
+#          STS-{PAGE}-P{n}               a paragraph
+#          STS-{PAGE}-IMG{n}             an image
+#          STS-{PAGE}-{TBL|CODE|UL|BQ|CAP|HR}{n}   table/code/list/quote/caption/rule
+# PAGE tokens: CH00..CH18, PRE, INT, CON, PT1..PT3, APA/APB/APC.
+# ---------------------------------------------------------------------------
+
+PAGE_TOKENS = {
+    "preface": "PRE", "introduction": "INT", "conclusion": "CON",
+    "part-1": "PT1", "part-2": "PT2", "part-3": "PT3",
+    "appendix-a": "APA", "appendix-b": "APB", "appendix-c": "APC",
+}
+TYPE_PREFIX = {"paragraph": "P", "image": "IMG", "table": "TBL", "code": "CODE",
+               "list": "UL", "quote": "BQ", "caption": "CAP", "divider": "HR"}
+_IMG_RE = re.compile(r'^!\[[^\]]*\]\([^)]*\)\s*$')
+_IMG_CAP = re.compile(r'^!\[(?P<alt>[^\]]*)\]\((?P<url>[^)]*)\)')
+_ANCHOR_RE = re.compile(r'^\s*<!--\s*(STS-[A-Z0-9-]+)\s*-->\s*$')
+
+
+def page_token(section_id: str) -> str:
+    if section_id in PAGE_TOKENS:
+        return PAGE_TOKENS[section_id]
+    m = re.match(r"chapter(\d+)$", section_id)
+    if m:
+        return f"CH{int(m.group(1)):02d}"
+    return section_id.upper().replace("-", "")
+
+
+def _is_list(s: str) -> bool:
+    return bool(re.match(r'^([-*+]\s|\d+[.)]\s)', s))
+
+
+def parse_blocks(text: str):
+    """Segment markdown into typed blocks. Returns [(type, start_line, [lines])].
+    Pre-existing STS anchor comment lines are ignored so this is idempotent."""
+    lines = [l for l in text.split("\n")]
+    blocks, i, n = [], 0, len(lines)
+    while i < n:
+        s = lines[i].strip()
+        if s == "" or _ANCHOR_RE.match(lines[i]):
+            i += 1
+            continue
+        start = i
+        if s.startswith("```") or s.startswith("~~~"):
+            fence = s[:3]
+            i += 1
+            while i < n and not lines[i].strip().startswith(fence):
+                i += 1
+            i += 1
+            blocks.append(("code", start, lines[start:i]))
+        elif s.startswith("#"):
+            i += 1
+            blocks.append(("heading", start, [lines[start]]))
+        elif _IMG_RE.match(s):
+            i += 1
+            blocks.append(("image", start, [lines[start]]))
+        elif re.match(r'^(\*\*\*+|___+|---+)$', s):
+            i += 1
+            blocks.append(("divider", start, [lines[start]]))
+        elif s.startswith(">"):
+            j = i
+            while j < n and lines[j].strip().startswith(">"):
+                j += 1
+            blocks.append(("quote", start, lines[start:j]))
+            i = j
+        elif s.startswith("|"):
+            j = i
+            while j < n and lines[j].strip().startswith("|"):
+                j += 1
+            blocks.append(("table", start, lines[start:j]))
+            i = j
+        elif _is_list(s):
+            j = i
+            while j < n and lines[j].strip() != "" and (
+                    _is_list(lines[j].strip()) or lines[j].startswith((" ", "\t"))):
+                j += 1
+            blocks.append(("list", start, lines[start:j]))
+            i = j
+        else:
+            j = i
+            while j < n:
+                t = lines[j].strip()
+                if (t == "" or t.startswith(("#", ">", "|", "```", "~~~"))
+                        or _IMG_RE.match(t) or _is_list(t) or _ANCHOR_RE.match(lines[j])):
+                    break
+                j += 1
+            blocks.append(("paragraph", start, lines[start:j]))
+            i = j
+    return blocks
+
+
+def enumerate_blocks(section_id: str, text: str):
+    """Assign IDs to every block of one page. Returns (page_id, title, records)
+    where each record carries its id, type, protected flag, and metadata."""
+    tok = page_token(section_id)
+    page_id = f"STS-{tok}"
+    raw = parse_blocks(text)
+    # retype an italic paragraph directly under an image as its caption
+    for k in range(1, len(raw)):
+        if raw[k][0] == "paragraph" and raw[k - 1][0] == "image":
+            one = " ".join(l.strip() for l in raw[k][2]).strip()
+            if one.startswith("*") and one.endswith("*") and len(one) > 1:
+                raw[k] = ("caption", raw[k][1], raw[k][2])
+    records, counters, sec_n = [], {}, 0
+    seen_title, in_header, cur_section = False, True, None
+    for btype, start, blines in raw:
+        joined = "\n".join(blines).strip()
+        one = " ".join(l.strip() for l in blines).strip()
+        if btype == "heading":
+            level = len(one) - len(one.lstrip("#"))
+            htext = one.lstrip("#").strip()
+            if level == 1 and not seen_title:
+                seen_title, bid, typ, cur_section = True, page_id, "title", None
+            else:
+                sec_n += 1
+                bid = f"{page_id}-S{sec_n:02d}"
+                typ, cur_section, in_header = "section", bid, False
+            rec = {"id": bid, "type": typ, "level": level, "text": htext}
+        else:
+            pfx = TYPE_PREFIX.get(btype, "B")
+            counters[pfx] = counters.get(pfx, 0) + 1
+            bid = f"{page_id}-{pfx}{counters[pfx]:02d}"
+            rec = {"id": bid, "type": btype, "section": cur_section}
+            if btype == "image":
+                m = _IMG_CAP.match(one)
+                if m:
+                    rec["alt"], rec["url"] = m.group("alt"), m.group("url")
+            if btype not in ("image", "caption", "quote"):
+                in_header = False
+        # protected = the ELIJAH-PROTOCOL header run (title, image, caption, epigraph)
+        rec["protected"] = in_header and btype in ("heading", "image", "caption", "quote")
+        rec["start"] = start
+        rec["line"] = start + 1
+        norm = re.sub(r"\s+", " ", strip_md(joined)).strip()
+        rec["words"] = len(norm.split())
+        rec["chars"] = len(joined)
+        rec["sha1"] = hashlib.sha1(re.sub(r"\s+", " ", joined).strip().encode("utf-8")).hexdigest()[:8]
+        rec["preview"] = (norm[:90] + "…") if len(norm) > 90 else norm
+        records.append(rec)
+    title = next((r["text"] for r in records if r["type"] == "title"), section_id)
+    return page_id, title, records
+
+
+def build_id_map() -> dict:
+    meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+    pages, index, dupes = [], {}, []
+    for order, sec in enumerate(meta["sections"]):
+        f = BOOK_DIR / sec["file"]
+        if not f.exists():
+            continue
+        page_id, title, records = enumerate_blocks(sec["id"], f.read_text(encoding="utf-8"))
+        for r in records:
+            if r["id"] in index:
+                dupes.append(r["id"])
+            index[r["id"]] = {"file": sec["file"], "line": r["line"], "type": r["type"]}
+        pages.append({"page_id": page_id, "order": order, "section_id": sec["id"],
+                      "file": sec["file"], "title": sec["title"], "blocks": records})
+    return {"book": "Surviving the Singularity", "generated": date.today().isoformat(),
+            "scheme": "STS-{PAGE}[-S{n}|-{TYPE}{n}]",
+            "total_pages": len(pages),
+            "total_blocks": sum(len(p["blocks"]) for p in pages),
+            "duplicates": sorted(set(dupes)), "pages": pages, "index": index}
+
+
+def _write_id_markdown(m: dict) -> str:
+    GLYPH = {"title": "▛", "section": "§", "paragraph": "¶", "image": "🖼",
+             "caption": "⌇", "table": "▦", "code": "‹›", "list": "•",
+             "quote": "❝", "divider": "―"}
+    out = ["# Surviving the Singularity — Block ID Map", "",
+           f"Generated {m['generated']} by `sts.py ids`. "
+           f"{m['total_pages']} pages · {m['total_blocks']} addressable blocks.", "",
+           "Every page, section, image, and paragraph has a durable ID. Cite any atom "
+           "of the book by its handle (for example `STS-CH05-P12`) instead of a line "
+           "number. Regenerate with `python3 scripts/sts.py ids --write`.", "",
+           "| — | — |", "|---|---|",
+           f"| Scheme | `{m['scheme']}` |",
+           f"| Duplicate IDs | {len(m['duplicates']) or 'none'} |", ""]
+    for p in m["pages"]:
+        nblk = len(p["blocks"])
+        out.append(f"## {p['page_id']} — {p['title']}")
+        out.append("")
+        out.append(f"`{p['file']}` · {nblk} blocks")
+        out.append("")
+        for r in p["blocks"]:
+            g = GLYPH.get(r["type"], "·")
+            if r["type"] in ("title", "section"):
+                out.append(f"- **`{r['id']}`** {g} {r['text']}")
+            elif r["type"] == "image":
+                cap = r.get("alt", "") or r.get("url", "")
+                out.append(f"    - `{r['id']}` {g} {cap}")
+            else:
+                out.append(f"    - `{r['id']}` {g} {r['preview']}")
+        out.append("")
+    return "\n".join(out)
+
+
+def inject_anchors(text: str, section_id: str, strip: bool = False) -> str:
+    """Insert (or with strip=True, remove) invisible <!-- STS-... --> anchors
+    above every non-protected block. Idempotent and lossless."""
+    lines = [l for l in text.split("\n") if not _ANCHOR_RE.match(l)]
+    if strip:
+        return "\n".join(lines)
+    _, _, records = enumerate_blocks(section_id, "\n".join(lines))
+    # insert bottom-up so earlier line indices stay valid
+    for r in sorted(records, key=lambda r: r["start"], reverse=True):
+        if r.get("protected"):
+            continue
+        lines.insert(r["start"], f"<!-- {r['id']} -->")
+    return "\n".join(lines)
+
+
+def cmd_ids(args) -> int:
+    m = build_id_map()
+    if args.inject or args.strip:
+        meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+        touched = []
+        for sec in meta["sections"]:
+            f = BOOK_DIR / sec["file"]
+            if not f.exists():
+                continue
+            before = f.read_text(encoding="utf-8")
+            after = inject_anchors(before, sec["id"], strip=args.strip)
+            if after != before:
+                f.write_text(after, encoding="utf-8")
+                touched.append(sec["file"])
+        verb = "stripped" if args.strip else "injected"
+        if args.json:
+            print(json.dumps({"action": verb, "files": touched}, indent=2))
+        else:
+            print(f"anchors {verb} in {len(touched)} file(s)")
+            for t in touched:
+                print(f"  {t}")
+        return 0
+    if args.write:
+        (ROOT / "manuscript" / "BOOK-ID-MAP.json").write_text(
+            json.dumps(m, indent=2, ensure_ascii=False), encoding="utf-8")
+        (ROOT / "manuscript" / "BOOK-ID-MAP.md").write_text(
+            _write_id_markdown(m), encoding="utf-8")
+    if args.json:
+        print(json.dumps(m, indent=2, ensure_ascii=False))
+        return 1 if m["duplicates"] else 0
+    print(f"Surviving the Singularity — block ID map")
+    print(f"  {m['total_pages']} pages · {m['total_blocks']} addressable blocks")
+    by = {}
+    for p in m["pages"]:
+        for r in p["blocks"]:
+            by[r["type"]] = by.get(r["type"], 0) + 1
+    print("  " + " · ".join(f"{v} {k}" for k, v in sorted(by.items(), key=lambda x: -x[1])))
+    print(f"  duplicate IDs: {len(m['duplicates']) or 'none'}")
+    if args.write:
+        print("  wrote manuscript/BOOK-ID-MAP.json + BOOK-ID-MAP.md")
+    else:
+        print("  (run with --write to emit the map files; --inject to anchor the source)")
+    return 1 if m["duplicates"] else 0
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -822,6 +1091,16 @@ def main():
     p.add_argument("--write", action="store_true",
                    help="regenerate static/sitemap.xml from the real route table")
     p.set_defaults(fn=cmd_sitemap)
+
+    p = sub.add_parser("ids")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--write", action="store_true",
+                   help="emit manuscript/BOOK-ID-MAP.json + BOOK-ID-MAP.md")
+    p.add_argument("--inject", action="store_true",
+                   help="write invisible <!-- STS-... --> anchors into the chapter source")
+    p.add_argument("--strip", action="store_true",
+                   help="remove all injected STS anchors from the chapter source")
+    p.set_defaults(fn=cmd_ids)
 
     args = ap.parse_args()
     sys.exit(args.fn(args))

@@ -90,9 +90,9 @@
       </div>
       <p class="dbnr-text">
         By using this site you agree to the
-        <a href="/terms" class="dbnr-link-inline">Terms</a>,
-        <a href="/disclaimer" class="dbnr-link-inline">Disclaimer</a>, and
-        <a href="/policies" class="dbnr-link-inline">Privacy Policy</a>.
+        <span class="dbnr-nowrap"><a href="/terms" class="dbnr-link-inline">Terms</a>,</span>
+        <span class="dbnr-nowrap"><a href="/disclaimer" class="dbnr-link-inline">Disclaimer</a>,</span> and
+        <span class="dbnr-nowrap"><a href="/policies" class="dbnr-link-inline">Privacy Policy</a>.</span>
       </p>
       <div class="dbnr-actions">
         <button type="button" class="dbnr-agree" on:click={agree} aria-label="I have read and agree to the Terms, Disclaimer, and Privacy">
@@ -151,11 +151,17 @@
     font-weight: 700;
   }
 
+  .dbnr-nowrap { white-space: nowrap; }
+
   .dbnr-link-inline {
     color: #f59e0b;
     text-decoration: underline;
     text-underline-offset: 2px;
     font-weight: 600;
+    /* Grow the touch target without shifting layout. */
+    display: inline-block;
+    padding: 0.3rem 0.15rem;
+    margin: -0.3rem -0.15rem;
   }
 
   .dbnr-link-inline:hover {
@@ -275,21 +281,32 @@
 
   @media (max-width: 640px) {
     .disclaimer-popup {
-      bottom: 0.6rem;
+      bottom: calc(0.6rem + env(safe-area-inset-bottom, 0px));
       width: calc(100% - 1rem);
       border-radius: 0;
     }
-    /* Compact: short text + inline buttons side by side to save height. */
-    .dbnr-inner { padding: 0.5rem 0.65rem; gap: 0.5rem; align-items: center; }
+    /* Stacked: sentence gets the full width (one or two lines instead of
+       five), buttons become a comfortable full-width row underneath.
+       Costs ~20px of height, buys thumb-sized targets and legibility. */
+    .dbnr-inner {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0.75rem 0.85rem;
+      gap: 0.6rem;
+    }
     .dbnr-icon { display: none; }
-    .dbnr-text { font-size: 0.76rem; line-height: 1.35; }
-    .dbnr-actions { flex-direction: row; gap: 0.35rem; }
+    .dbnr-text { font-size: 0.85rem; line-height: 1.45; }
+    .dbnr-actions { flex-direction: row; gap: 0.5rem; }
     .dbnr-agree, .dbnr-disagree {
-      padding: 0.4rem 0.6rem;
-      font-size: 0.76rem;
+      flex: 1;
+      min-height: 44px;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+    /* Primary action gets the visual weight AND the bigger share. */
+    .dbnr-agree { flex: 1.4; }
   }
 </style>

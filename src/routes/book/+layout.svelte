@@ -42,7 +42,11 @@
       <button type="submit" class="gate-submit" disabled={!password}>
         Unlock
       </button>
-      <p class="gate-hint">Don't have a password yet? Click "Get Early Access" above to get your code.</p>
+      <p class="gate-hint">
+        Don't have a password yet?
+        <a href="/early-access" class="gate-hint-link">Preorder for $5</a>
+        and your code arrives by email.
+      </p>
     </form>
   </main>
 {:else if isBookRoot}
@@ -159,4 +163,15 @@
     color: #64748b;
     margin: 0.5rem 0 0;
   }
+  .gate-hint-link {
+    color: #f59e0b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    /* Inline link in a sentence: grow the touch target invisibly. */
+    display: inline-block;
+    padding: 0.35rem 0.2rem;
+    margin: -0.35rem -0.2rem;
+  }
+  .gate-hint-link:hover { color: #fbbf24; }
 </style>

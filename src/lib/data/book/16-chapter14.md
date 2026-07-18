@@ -229,6 +229,12 @@ Four headstones, one epitaph. Every company below *saw the wave*, and died anywa
 
 **The rule.** Find the line item where the old world charges people for its own inconvenience, late fees, gatekeeping, distribution monopolies. That line item is a countdown clock. If your income depends on one, move. If your plan can exploit one, hurry.
 
+**The practice.**
+
+1. Run the beachfront audit on yourself, in writing, this week. One column: everything you would have to admit is depreciating if the wave is real: skills, a role, a business line, a credential. Second column: what admitting it would cost you today. The second column is why Kodak's executives said "that's cute." You cannot divest what you refuse to appraise, and every month of refusal is inventory rotting on the shelf.
+2. Find your Sasson drawer. Somewhere in your life is the prototype that got the "don't tell anyone about it" treatment: the side project, the pivot idea, the skill you shelved because it threatened your current income's logic. Take it out. Give it one honest weekend of work and one real test with real people. Kodak's tragedy was not missing the future. It was inventing it and filing it.
+3. List the countdown clocks in your own industry: every place customers are charged for the incumbent's inconvenience: fees, waits, gatekeeping, mandatory middlemen. For each, ask two questions: does my paycheck depend on this, and could my next project delete it? The first answer tells you when to move. The second tells you where.
+
 ---
 
 ## Precedent P-17: The Mirror Twin (Tokyo, 2000s)
@@ -240,3 +246,9 @@ Fujifilm's film business peaked in 2000 and then collapsed on the same schedule 
 **The mechanism.** Kodak believed it was in the film business. Fujifilm realized it was in the applied-chemistry business. One defined itself by its product, which the wave destroyed; the other by its capabilities, which the wave could not touch.
 
 **The rule.** When the wave comes for your job or your company, do not ask "how do I save the product." Ask "what am I actually good at, and where does that skill eat next." Your product is mortal. Your capabilities are transferable, but only if you can name them before the bankruptcy lawyer does.
+
+**The practice.**
+
+1. Write your capability inventory tonight: one page, and no job titles or products allowed on it. Fujifilm's list said collagen chemistry and thin-film coatings, not "film." Yours might say: explaining hard things simply, calming angry people, seeing what's wrong with a system, making physical objects precisely, earning trust fast. If a line item could appear on a business card, it's a product. Cross it out and dig for the capability underneath it.
+2. For each capability, name two markets it could eat next: places that need that exact competence and are not yet your industry. Film chemistry went to cosmetics and pharmaceuticals. Where does yours go? You are not committing to anything. You are building the map you will need on short notice, while you can still draw it calmly.
+3. Set an annual mirror-twin review, on a recurring date, where you ask the Fujifilm question formally: has the wave moved, is my product more mortal than last year, and which capability do I strengthen next? Kodak had thirty-seven years of annual reviews between the Sasson demo and the bankruptcy, and not one of them asked this. Yours can.

@@ -349,3 +349,9 @@ What saved the remnant was a heresy. In 1983 the merged Swiss group launched the
 **The mechanism.** Salvation came not from defending purity but from adopting the disruptive technology on the defenders' own terms. The machine's output subsidized the human craft; refusing the machine had only starved it.
 
 **The rule.** You do not beat the new machine by refusing it. You beat it by using it to pay for what you actually want to keep. Use the AI to fund the workshop, the homestead, the human craft. That is not selling out. That is the only strategy with a documented win.
+
+**The practice.**
+
+1. Name your mechanical movement and your Swatch. On one line, write the thing you refuse to lose: the craft, the practice, the standard of work that is actually you. On the next line, sketch the cheap, fast, machine-leveraged offering that could fund it: the AI-assisted service, the automated product, the high-volume version of your skill. If the second line feels like a betrayal of the first, you have drawn it correctly. That feeling is what the Swiss had to swallow, and it saved them.
+2. Set the subsidy ratio and enforce it. Decide what fraction of your machine-leveraged income funds the protected craft: time, tools, or savings, and write it down like a tax you owe yourself. The Swatch was not a strategy until the profits actually flowed uphill to the watchmakers. Leverage without allocation is just drift.
+3. Refuse purity tests, including your own. The next time you catch yourself, or a colleague, declaring "real professionals don't use AI," translate it into 1975 Swiss: "real watchmakers don't do quartz." Then look up what happened to the firms that agreed. Say yes to the tool, on your terms, at the bottom of your market, and keep the top for your hands.

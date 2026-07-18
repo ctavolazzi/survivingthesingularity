@@ -186,3 +186,9 @@ The flag requirement lasted until 1878. The crippling speed limits lasted until 
 **The mechanism.** Incumbents rarely attack a technology's existence. They attack its speed, wrapped in the language of safety, and the collar works locally every time. But a legal collar is a local instrument in a global race. Regulation aimed at a technology's existence rather than its specific harms never stops the technology. It only decides which country profits from it.
 
 **The rule.** This is Stage 2's script, already performed once with a walking man and a square of red cloth. When the panic arrives and the plug is reached for, do not expect the wave to stop. Expect it to route around the collar and land somewhere else, and position yourself where it lands rather than where it is leashed.
+
+**The practice.**
+
+1. When the next AI ban, pause, or "safety framework" makes headlines, ask the Red Flag question before you form an opinion: *who wrote this, and what do they sell?* Then ask where the capability goes while the collar holds. The answer to the second question is an investment thesis, a relocation hint, or at minimum a skill choice.
+2. Audit your own moats. If any part of your income exists because a license, a credential, or a regulation keeps competitors out, assume the collar is temporary and start building the version of your value that survives its repeal. The stagecoach owners had thirty-one years of protection and used them to change nothing.
+3. Never build your household plan on the assumption that a pause will hold. Write your plan for the world where the technology arrives on schedule anyway. If the collar holds longer than expected, you lose nothing. If it doesn't, you were the one who kept walking.

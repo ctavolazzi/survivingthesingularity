@@ -108,3 +108,9 @@ What actually broke, every single time, was something else: the institutions tha
 **The mechanism.** A bigger universe never yet crushed a human being. It only ever crushed the monopolies that were charging rent on the smaller one.
 
 **The rule.** Stages 8 and 9, universal intelligence and the apex, are the final Copernican turn: mind itself gets a bigger address than us. You will hear that this makes humanity meaningless. Translate that claim: someone's authority requires the old map. Your breakfast, your loves, and your garden survive the demotion. Plan for the institutions that won't.
+
+**The practice.**
+
+1. Write the undemotable list. One page: the things in your life whose meaning does not depend on humans being the smartest thing in the universe. Meals you cook, people you love, soil you work, things you make with your hands. Post it where you will see it during the next existential news cycle. This is not therapy. It is ballast, and ships without it capsize in exactly the weather that is coming.
+2. Audit your dependencies on old-map institutions. List every credential, membership, and status marker you hold whose value assumes human cognitive monopoly. For each, ask: does this survive the demotion, or is it a crystal sphere? Reduce your load-bearing reliance on the spheres before they crack, not after.
+3. When someone tells you AI makes human life meaningless, run the translation exercise in real time: ask them what *they* would lose if it were true. You will find, almost every time, an authority, a ranking, or an identity built on the old map. Practice hearing the institutional panic underneath the philosophical claim. It will make you unrecruitable for other people's despair.

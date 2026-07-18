@@ -346,3 +346,9 @@ Around 1177 BC the whole system failed the way complex systems fail: not from on
 **The mechanism.** Interdependence is efficiency in fair weather and contagion in foul. The palaces died of their supply chains, because when the tin stopped moving, everything downstream of tin stopped being possible. The villages lived on their soil, because nothing they needed was on a ship.
 
 **The rule.** Deglobalization is not a policy preference; it is what cascading stress does to long supply chains, every time. The neighborhood factory, the local grid, the food within walking distance: that is not nostalgia. That is you deciding, in advance, which side of 1177 BC your street is on.
+
+**The practice.**
+
+1. Map your tin. List the five things your household genuinely cannot function without for a month: a medication, a fuel, a food staple, a spare part, a service. For each, trace where it actually comes from, as far up the chain as you can get in twenty minutes of looking. Most people have never once done this and are running a palace economy on faith. Pick the most fragile line and build one local or stored alternative for it this quarter.
+2. Take the neighbor census before you need it. The communities that walked out of 1177 BC knew who could do what. Write down, or better, learn in person, which people within walking distance can fix an engine, stitch a wound, grow food, wire a panel, keep bees, weld. If you can't name five, that is your project for the season. The mesh network is mostly people.
+3. Adopt the fair-weather buying rule: when two options are close, take the one that is repairable, local, or standardized over the one that is optimal and single-sourced. You are not paying extra for a product. You are paying for which side of the cascade your household sits on, one purchase at a time.

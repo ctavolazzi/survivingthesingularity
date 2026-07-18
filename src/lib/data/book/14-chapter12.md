@@ -279,3 +279,9 @@ The people who filed claims during the chaos held title when the chaos ended. It
 **The mechanism.** Transitions reprice land and position before they reprice anything else, and the repricing window opens during the confusion, not after it. Once the emergency passes, the deeds are already filed, and everyone who waited for clarity discovers that clarity is the name of the moment when the good positions are gone.
 
 **The rule.** You are living inside the equivalent window right now: rural land within EV range of the metros has not yet been repriced for the world this book describes. The land strategy chapter you just read is your filing paperwork. The emergency on the front page is not a reason to wait. It is the reason the office is uncrowded.
+
+**The practice.**
+
+1. Open the filing office this month. Spend one evening running this chapter's land search for real: three counties, actual listings, actual prices per acre, actual water and zoning notes in a spreadsheet. Not to buy this month. To convert "someday, land" from a mood into a document with numbers in it, because moods don't file claims and documents do.
+2. Put a date on the claim. The homesteaders had a five-year proving period with a clock on it; give yourself one. Write down the specific date by which you will have made a position decision: buy, lease, join a co-op's ground, or commit to improving where you are. An open-ended intention is how the window closes with you still deciding.
+3. Watch for the modern Homestead Acts and read them before the crowd does. Rural development grants, ag exemptions, county land banks, relocation incentives, conservation leases. These programs exist right now, uncrowded for the same reason the 1862 office was: everyone is watching the front page. Set a quarterly hour to check what your target counties are offering. The people who file during the confusion hold title after it.

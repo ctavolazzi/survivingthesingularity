@@ -113,3 +113,9 @@ Parliament's reply was the Frame Breaking Act, which made machine-wrecking a cap
 **The mechanism.** Rage against the machine aims at the one component of the system that cannot hear you. The machine has no ears. The owners heard perfectly well, and answered with the army, because the battle line was never human versus machine. It was, and remains, a fight over who sets the terms of the transition.
 
 **The rule.** The Entitled will hand you a hammer and point you at the data center. Decline. Every joule spent fighting the machine's existence is a joule taken from securing your position, and the frame-breaker's hammer is now batting zero for two hundred years. Fight for terms, not against physics.
+
+**The practice.**
+
+1. Install the rage-conversion rule. When the anger arrives, and it will, it is legitimate, honor it with a trade: every hour you spend furious at the machine buys one hour of building your position. Write the trade in your notebook and keep the ledger honest. The croppers' analysis was perfect and their energy went into hammers. Yours goes into welds.
+2. Negotiate your terms while you still hold leverage. The Luddites' tacit knowledge became worthless the day the frames could work without it. Yours has a similar clock. This month, write down what you know that isn't written down anywhere: the judgment calls, the failure modes, the customer knowledge. That document is either your severance leverage, your consulting practice, or your training data for a tool you own. Unwritten, it is nothing.
+3. Sort the movements before you join one. Any group organizing around the transition gets one question: "What are we building, and what terms are we demanding?" If the honest answer is only "we are expressing opposition," you have found a frame-breaking society, and you know their record. Join the ones negotiating severance structures, retraining funds, ownership stakes, and local capacity. Same anger. Different batting average.

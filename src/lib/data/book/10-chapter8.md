@@ -545,3 +545,9 @@ Bernays did not buy advertisements arguing that women should smoke. He hired you
 **The mechanism.** Industrial persuasion does not argue with your values. It wears them. The extraction arrives dressed as the thing you already believe in, which is why it never trips your defenses: the desire feels self-authored, because the best delivery system for someone else's agenda is your own identity.
 
 **The rule.** Bernays had newspapers and a parade. The systems aimed at you have your location, your pulse, your search history, and a trillion training examples of what makes people click. So before you act on a want, run the audit this chapter taught you: who profits if I feel this? The Great Cognitive Extraction does not pick your pocket. It picks your wanting.
+
+**The practice.**
+
+1. Run the desire audit for one week. Every time you notice a strong, sudden want, a purchase, an outrage, an urge to check something, write one line: what I want, when it arrived, and who profits if I act on it. You are not required to resist anything. Just log it. By day four you will start seeing the parade routes, and a desire you can see arriving is a desire you own instead of one that owns you.
+2. Trace one of your recent opinions back to its torch moment. Pick something you feel strongly about that you didn't feel strongly about a year ago, and reconstruct how it got in: which feed, which framing, which identity it flattered. This is uncomfortable, which is the point. Bernays worked because nobody in the parade thought of herself as the campaign.
+3. Do the firewall work in this chapter's Foundations as physical acts, today, not as intentions: notifications off, phone in a drawer that closes, one real thing before noon. Bernays needed you reachable. The drawer is not a productivity tip. It is jamming the parade's radio.

@@ -234,3 +234,9 @@ For a century the horse looked untouchable. The horse population of the United S
 **The mechanism.** The horse's owners debated tradition, beauty, and loyalty. The machine's buyers computed operating cost per unit of work. Only one of those conversations was real. Thermodynamic arithmetic does not negotiate, and it does not send a warning before it closes the account.
 
 **The rule.** You are a twenty-watt engine in a market that has just started selling intelligence by the kilowatt-hour. Audit your own energy ledger, what you consume, what you produce, and who captures the difference, before someone else runs the numbers on you. The horse found out its price after the fact. You still get to set some of the terms.
+
+**The practice.**
+
+1. Actually run the energy audit from this chapter's Step One. Not mentally. On paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who captures the spread. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all. That is the entire advantage on offer here.
+2. Price your work the way the machine's buyer will: output per dollar, not hours per day. Identify the parts of your job where you are competing on joules against silicon, and the parts where you are not (trust, presence, hands, judgment on the ground, relationships). Shift your effort and your reputation toward the second list this quarter. The first list is the wide stocking frame's territory.
+3. Move one meaningful expense from rented energy to owned energy this year: a solar panel and battery, a woodstove, a bicycle that replaces short car trips, insulation. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.

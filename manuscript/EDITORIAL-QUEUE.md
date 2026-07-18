@@ -2,6 +2,15 @@
 
 **Source of truth:** `src/lib/data/book/` (unified in commit `5164f49`; serves both the
 /book pages and the EPUB via `scripts/build-epub.sh`).
+**2026-07-17 — Precedent Ledger weave landed.** Every section (Preface through Conclusion)
+now closes with an ID'd historical precedent, P-01..P-22, Greene register (story ->
+mechanism -> rule), from the Neolithic grain trap to the 2000 "passing fad" headline.
+New Appendix D (The Precedent Ledger) indexes them; `manuscript/HISTORY-CASEBOOK.md`
+holds the ID table + sources; verification receipts in `manuscript/sources/research-log.md`
+(gathered via the new `sts.py research` command). Book total is now ~73,600 words
+(sts.py book, post-weave); the Conclusion is no longer the short outlier (313 -> ~1,600
+with P-22). Compiled snapshot: `StS-Complete-Draft-v0.0.7.md` (via new `sts.py compile`).
+Remaining polish item: voice pass over the 22 blocks against each chapter's sign-off lines.
 **Updated:** 2026-07-10 — Draft 5 ("Manual for the Cracks" lineage, recovered from Google
 Drive via `manuscript/SOURCE-MANIFEST.md`) merged into the Part II–III stubs. See
 `manuscript/StS-Complete-Draft-v0.0.3.md` Compilation Notes for the chapter mapping.

@@ -241,3 +241,9 @@ The *Whole Earth Catalog* sold welding rigs, geodesic dome mathematics, seed sup
 **The mechanism.** A catalog of tools is secretly a map of possible selves. Brand understood that people do not become capable by being credentialed. They become capable by getting access, and then getting started. Curation was the product; the tools already existed, scattered and invisible, exactly as they do now.
 
 **The rule.** This chapter is this book's version of that black paperback. Treat your toolset the way Brand treated the catalog: as your education, assembled deliberately, owned outright, and shared forward. Every tool in this chapter was chosen so that you understand it, can repair it, and cannot be locked out of it. Access to tools. It worked in 1968. It is the whole game now.
+
+**The practice.**
+
+1. Write your own one-page catalog tonight: every tool you own that you actually understand, can repair, and cannot be remotely disabled or locked out of. Be strict; a device you can only use is not on the list. The page will be shorter than you expect. The gaps are not a judgment. They are your curriculum, in priority order.
+2. Close one gap per month. Either learn an owned tool down to the repair level (take it apart, find its manual, buy its spare parts) or replace one rented capability with an owned one. Twelve months of this and your catalog is a different document, and so are you.
+3. Be somebody's access. Brand's genius was not owning tools; it was cataloging them for people who didn't know where to start. Publish your list, lend your tools with a signature and a return date, or run one workshop for your street. The Whole Earth Catalog made builders out of readers. Your one page can do that for at least one person, and one is how it always starts.

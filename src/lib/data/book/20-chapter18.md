@@ -127,3 +127,9 @@ Then came the instructive part: the punchline. Because nothing happened, a choru
 **The mechanism.** Prevention is invisible by construction. A premortem that works looks, from the outside, exactly like paranoia that turned out to be unnecessary, because the catastrophe it purchased the absence of never shows up to testify.
 
 **The rule.** This is the emotional price of the Premortem Pivot, and you should pay it knowingly: if you prepare well and the transition doesn't shatter your life, people will say you overreacted. Let them. Judge your preparation by the quality of the reasoning before the deadline, never by the silence after it. The silence is the product. You are buying it now.
+
+**The practice.**
+
+1. Run the household Y2K this weekend. One hour, everyone affected present. The prompt: "It is January 2028 and our income got cut in half by the transition. What broke first?" Work backward from the failure the way the programmers worked backward from midnight: list the top three things that would have needed patching, then patch one of them this month. Not the whole list. One.
+2. Set your remediation budget and write it down like a line item: the percentage of income and hours per week you spend on preparation: skills, soil, energy, savings, community. The world spent roughly three hundred billion dollars on Y2K and called it sane. Your five percent is not paranoia. It is the same engineering, at household scale.
+3. Date-stamp your reasoning. Every significant preparation decision gets one paragraph in the notebook: what you knew, what you assumed, why you acted, with the date. When the silence comes and someone says you overreacted, and both will happen, you will judge yourself against what was knowable at the time, not against the disaster that didn't arrive. That paragraph is the difference between conviction and embarrassment, and you write it before the deadline or not at all.

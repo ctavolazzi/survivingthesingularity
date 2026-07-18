@@ -215,3 +215,9 @@ Roughly twenty million Victory Gardens appeared in backyards, vacant lots, schoo
 **The mechanism.** Distributed production scales sideways. Twenty million small nodes came online faster than any centralized capacity could have been built, because the capacity already existed, dormant and unclaimed, in ordinary soil and ordinary hands. The bottleneck was never ability. It was the decision to activate.
 
 **The rule.** The soil within reach of your door is standby infrastructure with a documented national-scale activation record of about twenty-four months. Every raised bed you build now is a node the next emergency doesn't have to improvise. You are not gardening. You are pre-positioning.
+
+**The practice.**
+
+1. Activate one node this season, however small. A single raised bed, three buckets on a balcony, a community garden plot. Then measure the output honestly: pounds harvested, meals produced. The number will be small the first year, and that is fine, because the Victory Gardens were not built on expert growers. They were built on twenty million first-years who had already made their mistakes by the time it mattered.
+2. Make it a network, not a hobby. One garden is produce; a street of gardens is infrastructure. Find the two or three people nearest you who grow anything, trade one variety or one skill with them this season, and know each other's names. The 1943 gardens had national coordination behind them; yours starts with a fence-line conversation.
+3. Keep the standby system warm: save seed from one crop, keep the tools maintained and the beds alive over winter, and grow at least one thing every year without exception. Standby infrastructure that never gets exercised is a rumor, not a capability. The drill is the difference between "we used to garden" and twenty-four months to forty percent.

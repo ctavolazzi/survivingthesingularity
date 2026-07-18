@@ -128,3 +128,9 @@ The editors were not fools. They were doing exactly what respectable analysis is
 **The mechanism.** Expert timelines are autopsies of the most recent failure, not forecasts of the next success. The distance between "one to ten million years" and "done" can be ten weeks, because progress at a frontier is not a trend line. It is a door, and doors open all at once.
 
 **The rule.** When credentialed voices hand you a comfortable timeline for AGI, remember the unit of error. It is not years. It is orders of magnitude, and history has almost always erred in the direction nobody was bracing for. You are past the event horizon. Plan like the door is already open.
+
+**The practice.**
+
+1. Start a timeline file. Every time an expert publishes an AI timeline, paste it in with the date and the author. Review it quarterly. Within a year you will have taught yourself, with receipts, exactly how much a confident forecast is worth, and you will stop outsourcing your planning horizon to whoever sounded calmest.
+2. Plan by doors, not dates. Write down three things AI "cannot do" that would change your work or your household if they opened. Check them monthly. When one opens, and one will, you act that week, because you decided what the door means before it moved.
+3. Make one asymmetric bet this month: an action that looks slightly early if the transition takes ten years, and essential if it takes two. Learning the tools, planting the garden, and cutting a fixed cost all qualify. The Times editors risked nothing on their million-year estimate. You do not have that luxury; you live here.

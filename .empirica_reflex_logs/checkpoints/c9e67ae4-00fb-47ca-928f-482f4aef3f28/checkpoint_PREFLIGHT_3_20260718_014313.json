@@ -1,0 +1,184 @@
+{
+  "session_id": "c9e67ae4-00fb-47ca-928f-482f4aef3f28",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-07-18T01:43:09.605091+00:00",
+  "vectors": {
+    "know": 0.9,
+    "do": 0.92,
+    "context": 0.92,
+    "clarity": 0.9,
+    "coherence": 0.92,
+    "signal": 0.9,
+    "density": 0.88,
+    "state": 0.92,
+    "change": 0.05,
+    "completion": 0.05,
+    "impact": 0.8,
+    "engagement": 0.95,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.913,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "0cba16be-3fed-4830-a2e1-b91fc0deead1",
+    "git_commit_sha": "eef8d30b85baeb0d7f993b8de888db0505af3c6e",
+    "git_notes_ref": "empirica/session/c9e67ae4-00fb-47ca-928f-482f4aef3f28/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "dbdd41ce4acf10d3e0777be6cb8c0e66c85a5e95",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "dbdd41ce4acf10d3e0777be6cb8c0e66c85a5e95",
+        "message": "manuscript: Precedent Ledger v0.0.1 in history casebook",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T18:41:05-07:00",
+        "files_changed": [
+          "manuscript/HISTORY-CASEBOOK.md"
+        ]
+      },
+      {
+        "sha": "fa94174e5657be23021aa0458a6733a27541d19a",
+        "message": "chore: empirica session state + reflex checkpoints; ignore scripts/__pycache__",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T18:40:41-07:00",
+        "files_changed": [
+          ".empirica/sessions/sessions.db",
+          ".empirica/sessions/sessions.db-shm",
+          ".empirica_reflex_logs/checkpoints/3437d086-fc69-4549-b3db-b98283eac72d/checkpoint_CHECK_1_20260711_165907.json",
+          ".empirica_reflex_logs/checkpoints/3437d086-fc69-4549-b3db-b98283eac72d/checkpoint_PREFLIGHT_1_20260711_165859.json",
+          ".empirica_reflex_logs/checkpoints/345f8b44-214d-46cd-994e-4393776e0fdd/checkpoint_CHECK_1_20260712_185804.json",
+          ".empirica_reflex_logs/checkpoints/345f8b44-214d-46cd-994e-4393776e0fdd/checkpoint_PREFLIGHT_1_20260712_185744.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_CHECK_1_20260712_134645.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_CHECK_2_20260712_184441.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_CHECK_4_20260717_054749.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_POSTFLIGHT_1_20260712_183825.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_POSTFLIGHT_2_20260712_185512.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_PREFLIGHT_1_20260712_134558.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_PREFLIGHT_1_20260712_184435.json",
+          ".empirica_reflex_logs/checkpoints/35d61147-d429-4716-a7ff-12d1355e7e50/checkpoint_PREFLIGHT_3_20260717_054744.json",
+          ".empirica_reflex_logs/checkpoints/c9e67ae4-00fb-47ca-928f-482f4aef3f28/checkpoint_CHECK_1_20260718_004751.json",
+          ".empirica_reflex_logs/checkpoints/c9e67ae4-00fb-47ca-928f-482f4aef3f28/checkpoint_CHECK_2_20260718_004804.json",
+          ".empirica_reflex_logs/checkpoints/c9e67ae4-00fb-47ca-928f-482f4aef3f28/checkpoint_CHECK_2_20260718_010550.json",
+          ".empirica_reflex_logs/checkpoints/c9e67ae4-00fb-47ca-928f-482f4aef3f28/checkpoint_CHECK_2_20260718_012053.json",
+          ".empirica_reflex_logs/checkpoints/c9e67ae4-00fb-47ca-928f-482f4aef3f28/checkpoint_PREFLIGHT_1_20260718_004311.json",
+          ".empirica_reflex_logs/checkpoints/c9e67ae4-00fb-47ca-928f-482f4aef3f28/checkpoint_PREFLIGHT_1_20260718_011840.json",
+          ".empirica_reflex_logs/checkpoints/c9e67ae4-00fb-47ca-928f-482f4aef3f28/checkpoint_PREFLIGHT_2_20260718_010232.json",
+          ".empirica_reflex_logs/checkpoints/e154373a-1204-4f2c-a5e9-990b7cf42ec8/checkpoint_CHECK_1_20260717_030338.json",
+          ".empirica_reflex_logs/checkpoints/e154373a-1204-4f2c-a5e9-990b7cf42ec8/checkpoint_PREFLIGHT_1_20260717_025639.json",
+          ".gitignore"
+        ]
+      },
+      {
+        "sha": "41de22154aeb9c64755f49af821de2286be9e0b6",
+        "message": "docs: correct blog architecture in CLAUDE.md",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T18:40:41-07:00",
+        "files_changed": [
+          "CLAUDE.md"
+        ]
+      },
+      {
+        "sha": "62ee94099a02b410abf01758b14a797565297e5f",
+        "message": "sts: add research command (Wikipedia + DuckDuckGo source search)",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T18:40:04-07:00",
+        "files_changed": [
+          "manuscript/sources/research-log.md",
+          "scripts/sts.py"
+        ]
+      },
+      {
+        "sha": "888f4f675d52703c0634aeac71a13d138fb5405a",
+        "message": "book: Elijah weave Ch. 16-Conclusion: the dawn win, the storm, the premortem, the Bear Flag",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T18:25:26-07:00",
+        "files_changed": [
+          "src/lib/data/book/18-chapter16.md",
+          "src/lib/data/book/19-chapter17.md",
+          "src/lib/data/book/20-chapter18.md",
+          "src/lib/data/book/21-conclusion.md"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        "manuscript/HISTORY-CASEBOOK.md",
+        "src/lib/data/book/02-introduction.md"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": "manuscript/HISTORY-CASEBOOK.md       | 309 +++++++++++++++++++++++++++++++++++\n src/lib/data/book/02-introduction.md |  14 ++\n 2 files changed, 323 insertions(+)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "do": {
+      "prev": 0.9,
+      "curr": 0.92,
+      "delta": 0.02
+    },
+    "context": {
+      "prev": 0.93,
+      "curr": 0.92,
+      "delta": -0.01
+    },
+    "clarity": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "coherence": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.15,
+      "curr": 0.05,
+      "delta": -0.1
+    },
+    "impact": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.12,
+      "curr": 0.15,
+      "delta": 0.03
+    }
+  },
+  "token_count": 374
+}

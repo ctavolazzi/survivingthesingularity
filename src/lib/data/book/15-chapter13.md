@@ -333,3 +333,9 @@ The industry said what industries always say: that housing was too complex, too 
 **The mechanism.** Kit-plus-instructions is how a capability escapes its priesthood. The knowledge gets embedded in the parts and the manual instead of the guild, and the "unqualified" customer turns out to have been qualified all along, just unlicensed.
 
 **The rule.** The shouse is the Sears kit home of this transition: metal building systems, solar kits, prefab panels, open plans, a build you can substantially execute and fully understand. Whenever the incumbents insist something requires their permission and their price, go look for the version that ships as a kit. It existed in 1908. It exists now.
+
+**The practice.**
+
+1. Break one priesthood this year. Pick a single capability you currently rent from professionals, solar, basic plumbing, a shed, a greenhouse, fencing, and do the kit version of it, permitted where permits apply, documented as you go. The point is not the money saved. The point is the category change in your head: from someone who orders outcomes to someone who assembles them. That change transfers to everything.
+2. Practice the manual question. The next time you are told "you need a professional for that," ask the 1908 question: what specifically does the professional know, and where is it written down? Sometimes the answer is real (structural welds; see Marta and the vise: know your lane). Often the answer is a manual, a code book, and confidence. Learn to tell the two apart before you pay the difference.
+3. Leave a kit behind you. Whatever you build, photograph the steps, list the parts and prices, and write the one page you wish you'd had at the start. Give it to the next person. Sears embedded the expertise in the instructions and the parts; you can embed yours in a folder. A capability that dies with your project wasn't liberated. It was borrowed.

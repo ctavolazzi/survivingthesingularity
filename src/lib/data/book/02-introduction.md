@@ -38,6 +38,8 @@ So this book carries its case law with it. It's called the Precedent Ledger: twe
 
 Every chapter closes with one entry. Each carries a serial number, P-01 through P-22, because these are exhibits, not anecdotes: each one is dated, documented, and filed where you can check it (the full index, with sources, is Appendix D). Read each one twice. The first time it will sound like a story about someone else. The second time you will notice it is a story about you, with the nouns changed.
 
+Each entry runs the same four beats: the story, the mechanism underneath it, the rule it proves, and then the part most history books refuse to give you, **the practice**: three concrete actions, sized for a single week, that turn the lesson into position. History you don't act on is decoration. Appendix D carries the full operating manual for the Ledger, including a symptom index: find the row that matches the week you're having, and it tells you which precedent you're currently living inside.
+
 The old books of strategy were built this way on purpose. You learn what power does by watching what it did. History doesn't repeat, but it rhymes so hard you can set your survival plan to the meter.
 
 The Ledger opens on the next page, with the panic that greeted the most dangerous consumer technology ever handed to ordinary people: the paperback book.

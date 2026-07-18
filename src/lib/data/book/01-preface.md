@@ -69,4 +69,10 @@ Sit with that. The activity we now prescribe to children as the antidote to thei
 
 **The rule.** When you hear a technology described as rotting the minds of the young, translate it: *something just shifted power toward people who don't need permission anymore.* Then go find out what they know that you don't. That is what this book is for.
 
+**The practice.**
+
+1. This week, write down the next three times you hear "AI is rotting people's brains," and note who said it. For each one, name the thing the speaker can no longer supervise. Not to mock them. To train your ear: the panic is a location signal, and it points at where the power went.
+2. Find one person at least fifteen years younger than you who uses AI daily, and ask for twenty minutes of watching them work. Say nothing for the first ten. Your assignment is not to evaluate them. It is to notice what they no longer ask permission for.
+3. Catch yourself doing it. The next time a tool you don't use makes you irritated on principle, write down what it would cost you to spend one hour learning it, and compare that to how long you have already spent being irritated. Do the cheaper thing.
+
 ---

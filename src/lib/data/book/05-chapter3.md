@@ -110,3 +110,9 @@ Then the court's internal politics turned. The voyages were expensive, the facti
 **The mechanism.** Capability that is abandoned does not wait for you in reserve. It emigrates to whoever keeps sailing, and it compounds in their hands, not yours. A frontier cannot be paused by the people who leave it. It can only be inherited by the people who don't.
 
 **The rule.** When the machine intelligence leaves for the solar system's real resources, humanity will face the Ming choice at species scale: fund the frontier or turn inward and congratulate ourselves on the savings. Remember what the harbor full of rotting treasure ships bought China. The exodus is not the threat. Being the civilization that stayed home is.
+
+**The practice.**
+
+1. Inventory your own scrapped fleets. Write down three capabilities you or your household used to have and let rot: a language, an instrument, a trade skill, a garden, a network of people. Pick the one with the most strategic value for the transition and re-crew it, one hour a week. Capability decays quietly; the exercise is noticing it decayed at all.
+2. Hold a personal frontier hour. One hour a week, non-negotiable, at the actual edge of the current tools: the newest model, the newest workflow, whatever just shipped. Not reading about it. Using it. The frontier only leaves without the people who stopped sailing.
+3. When your employer, your industry, or your country announces it is "stepping back" from AI, ask the Ming question out loud in the meeting: *who keeps sailing while we don't, and what do they own in five years?* You will rarely get a good answer. The silence is information. Plan your own position accordingly.

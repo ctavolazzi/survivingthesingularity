@@ -2,6 +2,18 @@
 
 *Every chapter of this book closes with a Precedent: a documented case of human beings meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-22. The dates run from the birth of agriculture to the week the internet was declared a fad. Same wave, different water.*
 
+## How to Run the Ledger
+
+A ledger you read once is trivia. A ledger you operate is an instrument. Ninety years ago, Dale Carnegie opened his book with instructions for using it, because he knew the difference between a reader and a practitioner is procedure, not sincerity. Here is the procedure for this one.
+
+1. **Read every entry twice.** The first read is a story about them: monks, weavers, film executives. The second read is a story about you with the nouns changed. The entry has not done its work until the second reading has happened, and you will know it happened because it is slightly uncomfortable.
+2. **Locate yourself.** At any given moment you are living inside one or two precedents more than the others. Use the symptom index below to find today's. Reread that entry before you make today's decision, not after.
+3. **Name your seat.** Every precedent has the same three seats: the incumbent defending the beachfront, the panicker demanding the wave stop, and the builder working the new terms. Say out loud which seat you are currently in for the situation at hand. Nobody ever believes their own answer the first time, which is exactly why the question works. The rules exist to move you to the third seat.
+4. **Run the rule within twenty-four hours.** Knowledge that is not applied to a live decision evaporates; Carnegie knew this too. When you finish an entry, find one real decision on your desk this week and pass it through the rule. Small is fine. The point is that the Ledger touches reality while the reading is still warm.
+5. **Do the practices as written.** Each entry closes with three actions sized for a week. They are not homework; they are the entry, in executable form. If you only have time for one, do the one that makes you defensive.
+6. **Review quarterly.** Four times a year, reread just the one-breath rules below, and re-ask the location question: which precedent am I living in now, and which seat? Ten minutes. Positions drift; the review is how you catch yours drifting toward the beachfront.
+7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is currently living inside, and tell it to them as a story, the way Marta tells Gary and Sal. You will remember what you teach, they will get a map, and the Ledger was always meant to travel by word of mouth. Panic spreads person to person. So does this.
+
 ## The Ledger
 
 | ID | Precedent | Date | Closes |
@@ -53,6 +65,35 @@
 - **P-20.** Access to tools, not credentials, is what makes people capable. Curate your toolset like it's your education.
 - **P-21.** A premortem that works looks like paranoia that wasn't needed. The silence is the product.
 - **P-22.** Today's version of a compounding technology is the worst it will ever be. The essayists will keep writing. You keep building.
+
+## The Symptom Index
+
+*The Ledger is meant to be opened mid-situation. Find the row that matches your week and go reread that entry before you act.*
+
+| When this is happening | Open |
+| --- | --- |
+| Someone is explaining that AI is rotting young people's brains | P-01 |
+| A demo just shocked you, or failed to shock the room | P-02 |
+| An expert just gave a soothing timeline and you relaxed | P-03 |
+| A ban, pause, or "framework" is in the headlines | P-04 |
+| Your company, industry, or country is "stepping back" from the frontier | P-05 |
+| The news has you questioning whether humans matter anymore | P-06 |
+| Your pay, hours, or rates are being quietly repriced | P-07 |
+| Someone says "we'll just choose not to adopt it" | P-08 |
+| You are angry enough to want to smash something | P-09 |
+| A desire or outrage arrived suddenly and feels urgent | P-10 |
+| Shelves, shipping, or suppliers are wobbling | P-11 |
+| You notice you are consuming takes instead of making anything | P-12 |
+| Cheap AI output is undercutting your craft | P-13 |
+| You are waiting for things to settle down before deciding | P-14 |
+| You've been told only professionals can do that | P-15 |
+| Your employer just demoed the thing that replaces you | P-16 |
+| You need to reinvent yourself and don't know around what | P-17 |
+| Food prices or food security are on your mind | P-18 |
+| You know something worth saying and have no audience | P-19 |
+| You want to start building and don't know where | P-20 |
+| Someone calls your preparation paranoid | P-21 |
+| A smart person just called AI a fad, a bubble, or a toy | P-22 |
 
 ## Sourcing
 

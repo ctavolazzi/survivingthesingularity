@@ -114,3 +114,19 @@
   - Visual categorization
 - Implemented satisfaction tracking system
 - Added hover effects and smooth transitions
+
+## 2026-07-17 - Precedent Ledger weave + sts.py research/compile commands
+- Wove the Precedent Ledger through the whole book: 22 ID'd historical allegories (P-01..P-22), one closing every section from Preface to Conclusion, in the Greene register (story -> mechanism -> rule)
+- Range: Neolithic grain trap (c. 9500 BC) -> Bronze Age collapse -> Trithemius -> Red Flag Act -> Luddites -> Kodak/Sears/Blockbuster/Borders graveyard -> "internet is a passing fad" trio (Stoll 1995, Krugman 1998, Daily Mail 2000)
+- Device introduced at the end of the Introduction; P-01 (the 1790s novel-reading panic) opens the ledger in the Preface; new Appendix D indexes all 22 with one-line rules
+- Added `sts.py research` (Wikipedia API + Mojeek/DDG web search, --save to manuscript/sources/research-log.md); every new case verified with citable sources; apocrypha blacklist extended (manure-crisis quote, Pedro II "it talks", Duell)
+- Added `sts.py compile`; produced manuscript/StS-Complete-Draft-v0.0.7.md (74,002 words, 29 sections)
+- Verified: production build passes, /book pages render precedents (preview + curl), EPUB rebuild contains all 22 + Appendix D
+- Book: 66,321 -> 73,636 words; Conclusion no longer the thin outlier (313 -> ~1,600 in book source)
+
+## 2026-07-17 (later) - Precedent Ledger practice layer
+- Added "The practice" to all 22 precedent blocks: three concrete, week-sized actions each, tied to the chapter's own protocol (energy audit, capability inventory, desire audit, receipts file, household premortem, etc.)
+- Appendix D gained the operating manual: "How to Run the Ledger" (7 steps, Carnegie's use-instructions model: read twice, locate yourself, name your seat, run the rule in 24h, do the practices, quarterly review, teach one entry) plus "The Symptom Index" (22-row situation -> precedent lookup)
+- Introduction now names the four-beat structure (story -> mechanism -> rule -> practice) and points at Appendix D
+- Verified: 22 practice sections, no em dashes in new copy, production build passes, EPUB rebuilt with manual + index; compiled manuscript/StS-Complete-Draft-v0.0.8.md (78,857 words)
+- Book source now ~78,650 words (was 73,636 after the morning weave)

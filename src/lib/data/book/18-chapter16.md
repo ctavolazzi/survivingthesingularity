@@ -206,3 +206,9 @@ Thomas Paine had been in America for barely a year. He was a corset-maker's son,
 **The mechanism.** Leverage is the ratio of reach to permission. Paine required nobody's approval: no publisher's blessing beyond a single printer, no institution's endorsement, no gatekeeper's nod. When a new medium drops the cost of reach, the first people to notice acquire influence wildly out of proportion to their credentials, and the institutions that still think credentials are the bottleneck never see it coming.
 
 **The rule.** You hold distribution tools Paine could not have imagined, and so does everyone else, which is exactly why most people use them to consume instead of publish. Media autonomy means being the one printer in your community that the empire can't answer in time. Write the pamphlet. The press is already in your pocket.
+
+**The practice.**
+
+1. Write your forty-seven pages, or your four. Pick the one thing you know from direct experience that would genuinely help the person two years behind you, and write it in the register Denny used on camera: plain speech, what happened, what you'd do differently. Publish it this month. Paine's advantage was never eloquence. It was that he wrote the thing everyone was almost thinking, in words they could read aloud.
+2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and route every platform reader toward them. When the empire changes the algorithm, and it will, the people on your list are still yours.
+3. Run the tavern test on your own writing. Take your latest piece and read it out loud. Every sentence you stumble on, every word you would never say to a neighbor across a fence, rewrite in the plain register. Expertise that cannot survive being spoken is not leverage. It is decoration, and decoration does not start movements.

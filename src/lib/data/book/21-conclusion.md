@@ -84,4 +84,10 @@ Notice what all three had in common. They were written by intelligent, credentia
 
 **The rule.** You are currently living through 2026's editions of these three articles, published weekly, about AI, by smart people, containing accurate complaints. You have now read twenty-two entries in the Precedent Ledger, from the grain fields of the Fertile Crescent to a newspaper calling the internet a fad. You know how this rhymes. The tipping point is 2027. The people writing the essays will still be writing them. You will be building. That is the whole difference, and it has always been the whole difference.
 
+**The practice.**
+
+1. Start your own receipts file today. Every time a credentialed voice declares AI overhyped, a bubble, or a fad, save it: headline, author, date. Set a calendar reminder for January 2029 to read the file. You are not collecting them to gloat. You are building your personal immunity to confident dismissal, with evidence you gathered yourself, because borrowed conviction fails exactly when you need it.
+2. Learn the one distinction that separates useful criticism from Stoll's mistake. When you read an AI complaint, ask: is this an *annoyance*, something engineers are visibly grinding away at, or a *limit*, something physics or mathematics forbids? Slow modems were an annoyance. The speed of light is a limit. Only limits should change your plan. Everything else is a description of the worst version there will ever be.
+3. Close the Ledger and open the notebook. Go back through the twenty-one practices behind you and pick the single one that made you most uncomfortable, because that discomfort is a compass pointing at your beachfront. Do that one first. Twenty-two entries agree on the ending: the essayists kept writing, the builders kept building, and the decade sorted them. It is sorting you now.
+
 ---

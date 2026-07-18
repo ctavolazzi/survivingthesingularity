@@ -170,3 +170,9 @@ Sir William Thomson, later Lord Kelvin, the most famous physicist alive, stopped
 **The mechanism.** At every demonstration there are two audiences standing in the same room: the crowd measuring the machine against the present, and the handful measuring the present against the machine. The crowd asks whether it is impressive. The handful asks what dies when it becomes boring.
 
 **The rule.** You just watched a demonstration, at a bar, on a Tuesday. Do not ask how impressive the machine was. Ask what the world looks like when what it did is unremarkable, and price your next decade off that answer, because that is the calculation the other audience is already running.
+
+**The practice.**
+
+1. Run the boring test on the last AI demo that impressed you. Assume the capability is free, invisible, and everywhere within thirty-six months. Write down which of your income streams survives that assumption. That list is your actual resume.
+2. The next time you watch a demonstration, watch the room instead of the stage for two full minutes. Note who is applauding and who has gone quiet and started taking notes. Find out what the quiet ones do for a living. That is the second audience, and you want to be standing with them.
+3. Keep a demonstration log. One line per demo that crosses your feed: date, what it did, your one-sentence prediction of when it becomes boring. Review the log every six months. You are not training the predictions. You are training yourself to stop being surprised on schedule.

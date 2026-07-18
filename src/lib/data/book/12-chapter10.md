@@ -263,3 +263,9 @@ His own monastery's library, meanwhile, filled up with printed volumes, and his 
 **The mechanism.** Watch what critics of the new machine do, not what they write. They will publish the old world's eulogy on the new world's presses, every time, because the tool's advantage is real even to the people whose identity requires denying it. The sincerity of the critique and the adoption of the tool are not in conflict. They are the standard sequence.
 
 **The rule.** Today's version of Trithemius posts hand-wringing essays about AI, drafted with AI, to platforms ranked by AI. Ignore the essay; note the workflow. And take the personal warning underneath it: you do not get to sit out the tools of your era on aesthetic grounds. You only get to choose whether you use them to create or merely to complain, and the Create Over Consume protocol exists so you end up on the right side of that line.
+
+**The practice.**
+
+1. Run the abbot test on yourself, honestly, once. For one week, tally two numbers at the end of each day: hours spent consuming commentary about the transition, and hours spent making anything at all. Do not moralize the numbers, just get them. Trithemius never saw his own contradiction because he never counted. Your ratio is your actual position, whatever your opinions are.
+2. Ship one made thing this week using the tools you have complaints about. A document, a repaired fence, a video, a loaf, a script, a raised bed. The size does not matter. What matters is ending the week as someone whose hands touched the new world instead of someone who only reviewed it.
+3. When you read the next elegant essay about AI ruining everything, check the workflow before you absorb the thesis: how was it written, published, distributed, and monetized? If the answer at every step is "with the machine," you have not learned anything about AI. You have watched a monk hand his manuscript to the printer, and you already know how that story goes.

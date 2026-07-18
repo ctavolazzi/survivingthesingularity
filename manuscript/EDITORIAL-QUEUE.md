@@ -56,12 +56,23 @@ Front/back matter (preface 739, intro 544, appendices 1,318 + 1,460) is fine as-
 **Priority order** (updated 2026-07-10 evening, after both folds; every former stub is
 filled — remaining work is polish, not fill):
 1. ~~**Ch. 3 The Leap to ASI (872w)**~~ — RESOLVED 2026-07-17: narrative weave (Zone 2 scene) + P-05; well over 1,000 words.
-2. **Egalitarian Pivot** section (Ch. 6/7 territory) — last outline gap with no prose. → First draft now exists: `manuscript/drafts/draft-egalitarian-pivot.md` (2026-07-18); needs author edit + placement in Ch. 6 Foundations.
+2. ~~**Egalitarian Pivot**~~ — RESOLVED 2026-07-18: written directly into Ch. 7 Foundations
+   as `## The Egalitarian Pivot` (after the Primate Backlash section, bridging into P-09).
+   Ch. 7 chosen over Ch. 6 because the section answers the Entitled-vs-Ready framing and
+   uses Ch. 7's scarcity-psychology material as its foundation. Correction 2026-07-18: a
+   parallel first draft DOES exist at `manuscript/drafts/draft-egalitarian-pivot.md`
+   (committed cf1af63, Ch. 6 targeting, hot register); the in-chapter Ch. 7 section is the
+   placed version. Author may want to compare the two before the read.
+   Pending: author read.
 3. ~~**Conclusion (313w)**~~ — RESOLVED 2026-07-17: Bear Flag scene + P-22; ~1,600+ words.
 4. **Voice pass over all merged material** (Ch. 4, 6–13, 18) — the folds span the hot
    Manifesto register and the clinical research register; Part III should read like a
    field manual per the site's promise.
-5. **Stage-2 evidence weave for Ch. 2** (June 2026 export-control shutdown / GLM-5.2).
+5. ~~**Stage-2 evidence weave for Ch. 2**~~ — RESOLVED 2026-07-18: June 2026 export-order /
+   open-weight-release sequence woven into the Stage 2 Foundations (after the Red Flag
+   paragraph), events kept generic-but-dated in the prose, receipts in Appendix B 162–165
+   (CNBC, Tech Times, Arctic Wolf). P-04 block rewritten as a compressed case file to
+   remove the double-telling of the Red Flag story within Ch. 2.
 
 ## 2. Known gaps from the compilation notes (v0.0.1)
 
@@ -70,12 +81,11 @@ filled — remaining work is polish, not fill):
 - [ ] **"Egalitarian Pivot"** — outline section, no drafted prose. Natural home: Part II,
   Ch. 6/7 territory (the homepage now explicitly promises "the egalitarian pivot").
   → AI first draft queued: `manuscript/drafts/draft-egalitarian-pivot.md`
-- [ ] **Stage-2 real-world evidence weave for Ch. 2** (June 2026 export-control shutdown /
-  GLM-5.2 events). → AI first draft queued: `manuscript/drafts/draft-ch2-stage2-evidence.md`
-  → BLOCKED 2026-07-18: `sts.py research` could not verify these events (Mojeek 403,
-  Wikipedia sweep inconclusive); drafting without receipts would violate the casebook's
-  own sourcing rule. Needs: author-supplied links, or a research pass from a machine
-  with working web search. Do not draft from memory.
+- [x] **Stage-2 real-world evidence weave for Ch. 2** — DONE 2026-07-18: landed directly
+  in Ch. 2 (modern receipt paragraph + expanded Red Flag case file), with citations added
+  to Appendix B. (Earlier the same morning this was marked BLOCKED after an sts.py
+  research pass could not verify the events; the landed version came with its own
+  sources, superseding that note.) Pending: author read.
 - [ ] **"Local Biological Hub" / "Abundance Quotient"** — referenced concepts without
   standalone chapters; Ch. 18 carries them for now. Optional: give each a section inside
   Ch. 9/Ch. 15 rather than new chapters.
@@ -105,7 +115,8 @@ like a field manual (the homepage promises "actionable mechanics, not abstract a
 ## 5. Definition of done (pre-launch)
 
 - [x] No chapter under 1,000 words — verified 2026-07-18 (`sts.py book --thin 1000`: zero flags)
-- [ ] Two outline gaps drafted, edited, and placed
+- [x] Two outline gaps drafted and placed — Egalitarian Pivot (Ch. 7) + Stage-2 evidence
+  weave (Ch. 2), both 2026-07-18; author edit pass still welcome
 - [ ] One voice pass over Part II–III stubs
 - [ ] `scripts/build-epub.sh vX` run; EPUB spot-read on a phone + e-reader
 - [ ] Total lands 45k–50k **(see §6 — the narrative weave changes this target)**

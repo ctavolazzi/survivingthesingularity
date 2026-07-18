@@ -33,4 +33,43 @@
 131. LoRa-Linked Meshtastic Cyberdeck in a Clarinet Case - Hackster.io, https://www.hackster.io/news/this-lora-linked-meshtastic-cyberdeck-repurposes-an-old-clarinet-case-as-a-robust-housing-7b65661aa74d.amp
 132. Fallout Cyberdeck (EMP-hardened, Kiwix/SDR loadout) - Hackaday.io, https://hackaday.io/project/195667-fallout-cyberdeck
 
+## The Precedent Ledger Sources (added 2026-07-18)
+
+133. Centennial Exhibition, Philadelphia 1876 (Bell telephone demonstration) - Wikipedia, https://en.wikipedia.org/wiki/Centennial_Exhibition
+134. Flying Machines Which Do Not Fly, New York Times editorial, October 9, 1903 - Wikipedia, https://en.wikipedia.org/wiki/Flying_Machines_Which_Do_Not_Fly
+135. Did Wright Brothers Fly Same Year NYT Said Flying Machines Could Take 10M Years To Develop? - Snopes, https://www.snopes.com/fact-check/wright-brothers-first-flight/
+136. Zheng He and the Ming treasure voyages - Wikipedia, https://en.wikipedia.org/wiki/Zheng_He
+137. Haijin (the Ming sea ban) - Wikipedia, https://en.wikipedia.org/wiki/Haijin
+138. Copernican Revolution - Wikipedia, https://en.wikipedia.org/wiki/Copernican_Revolution
+139. Horsepower (Watt's unit and the steam engine) - Wikipedia, https://en.wikipedia.org/wiki/Horsepower
+140. Horses in the United States (population peak and collapse) - Wikipedia, https://en.wikipedia.org/wiki/Horses_in_the_United_States
+141. Neolithic Revolution - Wikipedia, https://en.wikipedia.org/wiki/Neolithic_Revolution
+142. Neolithic in the Near East (health and stature decline in early farmers) - Wikipedia, https://en.wikipedia.org/wiki/Neolithic_in_the_Near_East
+143. Luddite (frame-breaking, the Frame Breaking Act, the York executions) - Wikipedia, https://en.wikipedia.org/wiki/Luddite
+144. Torches of Freedom (Bernays, 1929 Easter parade) - Wikipedia, https://en.wikipedia.org/wiki/Torches_of_Freedom
+145. Edward Bernays - Wikipedia, https://en.wikipedia.org/wiki/Edward_Bernays
+146. Late Bronze Age collapse - Wikipedia, https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse
+147. Eric H. Cline, 1177 B.C.: The Year Civilization Collapsed - Wikipedia, https://en.wikipedia.org/wiki/1177_B.C.:_The_Year_Civilization_Collapsed
+148. Homestead Acts (1862) - Wikipedia, https://en.wikipedia.org/wiki/Homestead_Acts
+149. Sears Modern Homes (mail-order kit houses, 1908-1942) - Wikipedia, https://en.wikipedia.org/wiki/Sears_Modern_Homes
+150. Kit house - Wikipedia, https://en.wikipedia.org/wiki/Kit_house
+151. The Victory Garden - Smithsonian Gardens, https://gardens.si.edu/learn/blog/the-victory-garden/
+152. Victory Gardens: Food for the Fight - The National WWII Museum, https://www.nationalww2museum.org/war/articles/victory-gardens-world-war-ii
+153. Common Sense, Thomas Paine, 1776 - Wikipedia, https://en.wikipedia.org/wiki/Common_Sense
+154. Whole Earth Catalog ("Access to Tools"; Jobs's "Google in paperback form") - Wikipedia, https://en.wikipedia.org/wiki/Whole_Earth_Catalog
+155. Year 2000 problem (remediation costs and outcome debate) - Wikipedia, https://en.wikipedia.org/wiki/Year_2000_problem
+156. Y2K bug - Encyclopaedia Britannica, https://www.britannica.com/technology/Y2K-bug
+157. Clifford Stoll, "The Internet? Bah!" / "Why the Web Won't Be Nirvana," Newsweek, February 27, 1995, https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306
+158. "The Internet? Bah!" Classic Off-Target Essay Appeared 20 Years Ago - Poynter, https://www.poynter.org/reporting-editing/2015/the-internet-bah-classic-off-target-essay-appeared-20-years-ago/
+159. Did Paul Krugman Say the Internet's Effect on the World Economy Would Be "No Greater Than the Fax Machine's"? - Snopes, https://www.snopes.com/fact-check/paul-krugman-internets-effect-economy/
+160. Quote Origin: The Internet's Impact on the Economy Has Been No Greater Than the Fax Machine's - Quote Investigator, https://quoteinvestigator.com/2023/10/26/internet-fax/
+161. Daily Mail, December 5, 2000: "Internet 'may be just a passing fad as millions give up on it'" (page scan), https://markcarrigan.net/2024/02/17/daily-mail-2000-the-internet-may-just-be-a-passing-fad-as-millions-give-up-on-it/
+
+## Stage 2 Modern Evidence (added 2026-07-18)
+
+162. White House AI crackdown opens door for Chinese model makers to close gap - CNBC, June 30, 2026, https://www.cnbc.com/2026/06/30/white-house-ai-china-crackdown.html
+163. AI Export Controls Fail Their First Real Test: GLM-5.2 Cybersecurity Benchmarks Expose the Gap - Tech Times, June 28, 2026, https://www.techtimes.com/articles/319234/20260628/ai-export-controls-fail-their-first-real-test-glm-52-cybersecurity-benchmarks-expose-gap.htm
+164. Z.ai Releases GLM-5.2 as US Restricts Anthropic Models - Let's Data Science, https://letsdatascience.com/news/zai-releases-glm-52-as-us-restricts-anthropic-models-7fe0d44d
+165. GLM-5.2 Signals a New Phase of Accessible Frontier AI - Arctic Wolf, https://arcticwolf.com/resources/blog/glm-5-2-signals-new-phase-accessible-frontier-ai-and-a-shift-in-cyber-risk/
+
 ---

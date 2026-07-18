@@ -2,8 +2,8 @@
   "title": "Surviving the Singularity",
   "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
   "author": "Christopher Tavolazzi",
-  "version": "0.3.0",
-  "lastUpdated": "2026-07-17",
+  "version": "0.4.0",
+  "lastUpdated": "2026-07-18",
   "sections": [
     {
       "id": "introduction",
@@ -149,6 +149,11 @@
       "id": "appendix-d",
       "title": "Appendix D: The Precedent Ledger",
       "file": "25-appendix-d.md"
+    },
+    {
+      "id": "appendix-e",
+      "title": "Appendix E: The Cyberdeck",
+      "file": "26-appendix-e.md"
     }
   ]
 }

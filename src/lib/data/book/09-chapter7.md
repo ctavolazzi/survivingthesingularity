@@ -100,6 +100,20 @@ The Stage 5 backlash is not a theoretical projection; it is already empirically 
 
 While the activists defend their actions under the banner of pedestrian safety and anti-surveillance, the underlying current of the protests represents a profound neo-Luddite anxiety regarding job displacement, shifting social norms, and a loss of control to algorithmic entities. As noted by author Brian Merchant in *Blood in the Machine*, the original 19th-century Luddites were not uneducated opponents of technology, but highly skilled technologists who understood exactly how machinery would destroy their workplace autonomy and identities. The modern "rage against the robots" follows this exact historical lineage, serving as a coping mechanism for a populace feeling overwhelmed by technologies poised to permanently replace their societal utility.
 
+## The Egalitarian Pivot
+
+Here is the move the battle-line framing hides, and it is the most important move in this half of the book.
+
+"The Entitled vs. The Ready" reads, at first pass, like a sorting of winners from losers: the people who hoarded skills and solar panels on one side, the people who demanded the old world back on the other. Read it that way and you will prepare the wrong thing. A lone household with a generator and a rifle is not ready. It is just losing more slowly, with better lighting. Readiness that ends at your property line has a shelf life measured in weeks, because every system you actually depend on, food, repair, medicine, security, sanity, is social before it is technical.
+
+The pivot is this: when the machine makes intelligence cheap, it quietly bankrupts the entire vertical economy of status that organized your working life, the credentials, the titles, the salary ladder, the whole apparatus of being ranked. You cannot out-credential a model. Nobody can. And when nobody can, the premium migrates to the one asset the machine cannot mint: being known, trusted, and vouched for by specific people who can find your house. Trust is produced locally or not at all. That is not a warm sentiment. It is the coldest economics in this book.
+
+Egalitarian is not the moral garnish on this strategy; it is the load-bearing wall. The scarcity psychology this chapter just documented, the tunnel vision, the captured bandwidth, is a solo condition. It is what a nervous system does when one household absorbs every shock alone. Nineteen households pooling tools, food production, childcare, and repair skills can absorb a shock that would flatten any one of them, and the moment the buffer exists, the tunnel opens. Mullainathan and Shafir's farmers thought better after the harvest, when the buffer was full. The cooperative *is* the harvest, made permanent. The pivot does not just feed you. It gives you your cognition back, and cognition is what the next decade is actually rationed in.
+
+So the pivot, concretely: stop climbing and start weaving. Pool capital goods, the truck, the mill, the servers, the greenhouse, because five percent ownership of ten machines beats a loan on one. Keep the circle small enough that everyone's name is known and everyone's kid is recognized, because accountability at that scale needs no enforcement apparatus. Distribute the deciding, because a network with one indispensable node is just a boss with extra steps, and bosses are exactly what the wage economy is about to stop subsidizing. And do it *before* you need it, because trust compounds like capital and cannot be printed in an emergency.
+
+This is the fork the whole chapter has been walking toward. The Entitled demand the hierarchy back. The falsely ready fortify a bunker the hierarchy sold them. The actually ready pivot sideways, into the egalitarian, hyper-local networks already forming in shop sheds and church basements and CSA pickups across the country. The rest of Part II and all of Part III is the construction manual for that pivot. And the case file below is what happens to people with a legitimate grievance who never got the option to make it.
+
 ---
 
 ## Precedent P-09: The Frame-Breakers (England, 1811 to 1816)

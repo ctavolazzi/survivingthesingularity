@@ -17,6 +17,8 @@ Commands:
     routes    List every route the site actually serves
     research  Search the web (Wikipedia + DuckDuckGo) for sources/examples;
               --save appends results to manuscript/sources/research-log.md
+    compile   Concatenate the book source (src/lib/data/book, book.json order)
+              into a single manuscript draft markdown file
 
 Every command accepts --json for machine-readable output.
 `audit` and `sitemap` exit non-zero when errors are found (CI-friendly).
@@ -784,6 +786,40 @@ def cmd_status(args) -> int:
 # ──────────────────────────────────────────────────────────────────────
 
 # ──────────────────────────────────────────────────────────────────────
+# compile — concatenate book source into one manuscript draft
+# ──────────────────────────────────────────────────────────────────────
+
+def cmd_compile(args) -> int:
+    meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+    tag = args.tag or meta["version"]
+    header = (f"# {meta['title'].upper()}\n\n"
+              f"## {meta['subtitle']}\n\n"
+              f"**Author:** {meta['author']}\n"
+              f"**Manuscript:** {tag}\n"
+              f"**Compiled:** {date.today().isoformat()} (by sts.py compile, "
+              f"book.json section order)\n\n"
+              f"## TABLE OF CONTENTS\n\n")
+    toc = "\n".join(f"- {s['title']}" for s in meta["sections"])
+    chunks = [header + toc + "\n\n---\n"]
+    for s in meta["sections"]:
+        body = (BOOK_DIR / s["file"]).read_text(encoding="utf-8").strip()
+        chunks.append(body + "\n\n---\n")
+    text = "\n".join(chunks)
+    if args.stdout:
+        print(text)
+        return 0
+    out = (Path(args.out) if args.out
+           else ROOT / "manuscript" / f"StS-Complete-Draft-compiled-{date.today().isoformat()}.md")
+    if out.exists() and not args.force:
+        sys.exit(f"sts.py compile: {out} exists (pass --force to overwrite)")
+    out.write_text(text, encoding="utf-8")
+    words = len(re.findall(r"\b[\w'’-]+\b", text))
+    rel = out.relative_to(ROOT) if out.is_relative_to(ROOT) else out
+    print(f"compiled {len(meta['sections'])} sections -> {rel} ({words:,} words)")
+    return 0
+
+
+# ──────────────────────────────────────────────────────────────────────
 # research — web search for sources and historical examples (stdlib only)
 # ──────────────────────────────────────────────────────────────────────
 
@@ -980,6 +1016,14 @@ def main():
     p.add_argument("--write", action="store_true",
                    help="regenerate static/sitemap.xml from the real route table")
     p.set_defaults(fn=cmd_sitemap)
+
+    p = sub.add_parser("compile",
+                       help="concatenate book source into one manuscript draft markdown")
+    p.add_argument("--out", help="output path (default manuscript/StS-Complete-Draft-compiled-<date>.md)")
+    p.add_argument("--tag", help="manuscript tag for the header (default book.json version)")
+    p.add_argument("--stdout", action="store_true", help="print instead of writing")
+    p.add_argument("--force", action="store_true", help="overwrite an existing output file")
+    p.set_defaults(fn=cmd_compile)
 
     p = sub.add_parser("research",
                        help="search the web for sources/examples (Wikipedia + DuckDuckGo)")

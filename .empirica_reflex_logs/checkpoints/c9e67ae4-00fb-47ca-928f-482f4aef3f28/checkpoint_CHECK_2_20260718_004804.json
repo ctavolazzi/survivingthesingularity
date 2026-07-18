@@ -1,0 +1,121 @@
+{
+  "session_id": "c9e67ae4-00fb-47ca-928f-482f4aef3f28",
+  "phase": "CHECK",
+  "round": 2,
+  "timestamp": "2026-07-18T00:48:00.442996+00:00",
+  "vectors": {
+    "know": 0.9,
+    "do": 0.9,
+    "context": 0.92,
+    "clarity": 0.9,
+    "coherence": 0.9,
+    "signal": 0.9,
+    "density": 0.85,
+    "state": 0.9,
+    "change": 0.1,
+    "completion": 0.2,
+    "impact": 0.7,
+    "engagement": 0.95,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.907,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Continuity mined: Sal rule (one real thing before noon), 19 households, Reuben and Curtis voices, Hollis place Chekhov gun, ch9 scene texture. Ch10 draft complete in working tree. Scene plans for Ch11 (Crucible plus leak, Prometheus allegory) and Ch12 (the deed, CLT, enclosure reversed) match protocol section 7.4. Ready for praxic phase.",
+    "confidence": 0.85,
+    "gaps": [
+      "change: 0.10",
+      "completion: 0.20",
+      "uncertainty: 0.15"
+    ],
+    "cycle": null,
+    "round": 2,
+    "transaction_id": "7e378475-5100-49de-97a9-1bcd420002f1",
+    "git_commit_sha": "f8c38d04acd69fbe79a8653c3d21520f02802680",
+    "git_notes_ref": "empirica/session/c9e67ae4-00fb-47ca-928f-482f4aef3f28/CHECK/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "619a2500e864903b8edc2ac27c965fefc3898335",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "CLAUDE.md",
+        "src/lib/data/book/12-chapter10.md"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db     | Bin 1249280 -> 1253376 bytes\n .empirica/sessions/sessions.db-shm | Bin 32768 -> 32768 bytes\n CLAUDE.md                          |  15 ++++++++++---\n src/lib/data/book/12-chapter10.md  |  43 +++++++++++++++++++++++++++++++++++++\n 4 files changed, 55 insertions(+), 3 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.1,
+      "curr": 0.1,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.2,
+      "curr": 0.2,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.15,
+      "delta": 0.0
+    }
+  },
+  "token_count": 321
+}

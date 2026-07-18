@@ -8,6 +8,43 @@
 > *"Plans are worthless, but planning is everything."*
 > Dwight D. Eisenhower, *remarks to the National Defense Executive Reserve Conference* (1957)
 
+**In this chapter:**
+
+- A premortem is an obituary you write early enough to falsify. Assume the plan died; explain why; fix that, now.
+- Your model will be excellent about supply chains, grids, and legal exposure, and silent about the divorce, the burnout, and the shoulder. The room knows what the model doesn't.
+- Every risk gets a name attached: who it happens to, and who is watching for it. A risk without a name is a wish.
+- Plans are worthless. Planning is everything. The people doing the planning are the plan.
+
+---
+
+The co-op's annual meeting happened in the shouse, because the shouse had the woodstove and the wall screen and, by the second winter, the unofficial status of parliament. Reuben ran the agenda: the year's numbers, the trust's first ground-lease payment made in full to Irene Calder, the library's download counter (fifty-one thousand and climbing, from towns in nine countries now), the absorption's first full year, Tyler's name added to the roster. Then Elijah stood up for the last item, which was his, and which he had been building for a month, and said: "It's two years from now, and the co-op is dead. I'd like to spend two hours on how it died."
+
+He had come loaded. Of course he had. The premortem model was the notebook's whole arithmetic grown up: every stage, every watt, every county filing, run through the Crucible against futures like weather fronts. Supply shocks: modeled. The Memphis platform buying their steel distributor the way it bought Frank's: modeled, with a second-source list already drafted. Grid failures, fuel spikes, a hostile county supervisor, a change in the ag exemption, a Meridian-shaped entity with better lawyers: modeled, modeled, modeled, modeled. He walked the room through forty minutes of failure modes with the quiet competence of a man who had finally found the exact right size for his gift, and the room took it seriously, and the model was good.
+
+Then Marta said, "Your machine's got no column for the stuff that actually kills these things," and the second half of the meeting began.
+
+"Plants don't die of the strategy," she said. "I watched mine die for a year before the spreadsheet showed up; the spreadsheet was the coroner, not the cause. Things die of people, college. Run it again with people in it." And the room, which had two years of trust banked and a stove between them and the cold, ran it again with people in it, and Elijah wrote down what his model could not have generated in a thousand epochs:
+
+Burnout, said Priya, looking at Denny. The channel posts three times a week because one man will not stop, and if that man goes down, the lever goes down with him. Denny started to argue and then didn't, which everyone understood, including him. The fix got a name that night: Tyler learns the edit, Frank learns the counter-camera, the channel becomes a bench instead of a pillar.
+
+A divorce, said Reuben, flatly, into the quiet. Not naming anyone, not needing to: nineteen households is eighteen marriages and change, and the trust documents, he confessed, currently handled a split about as gracefully as a wood chipper. He'd have the amendment drafted by March. He had, everyone knew, already started.
+
+Founder-dependence, said Frank, who had watched a store die of it. Every load-bearing thing in the valley ran through the same four people, and the premortem for that was standing in the room wearing all four of their faces.
+
+And then Marta, who had raised the subject of people dying of people, put her cup down and paid the room the compliment of going first. "Shoulder's done," she said. "Rotator cuff. Tuesdays haven't fixed it and won't. I've got maybe two years of overhead welding left, and this valley has exactly one person certified to make the beads that hold roofs up." She looked at Tyler, nineteen years old, three months into the roster, holding his coffee like it might be repossessed. "Apprenticeship's four years if you're serious. So we start Monday."
+
+Elijah went home that night and rebuilt the model with the room's amendments, and the version that ships in this chapter's Foundations has the change that mattered: a names column. Every failure mode carries two names now, who it happens to and who is watching for it, because a risk without a name attached is not a risk, it is a wish with error bars. He was pasting in the last of it when he understood what he was actually looking at. The supply models, the watts, the stages, the names: it was the notebook. All of it. MADRONE ≠ DRONE, two years of arithmetic and margins and lists, finally arranged in the shape it had been trying to take since 1:40 in the morning at a kitchen table: not notes toward surviving something, but a manual for it. The manuscript nobody had asked for had an audience of fifty-one thousand downloads and eleven towns and one mother, and he started, that week, turning the notebook into the book you are nearly done holding.
+
+The newcomer arrived on the Saturday after the meeting, in a sensible car with two car seats in the back and a face Elijah had last seen lit by a laptop at a Claypot all-hands. Devendra stood in the shed doorway the way Elijah had once stood in it, two years and a lifetime ago, looking at the plasma table and the shadow-boarded wall and the whole impossible ordinary fact of the place, and he said, quietly, "I didn't know what I expected. It's smaller than the videos."
+
+"Everything real is," Elijah said. Then he picked up the push broom leaning by the welding curtain, the same broom, older now, bristles worn to a bevel, and held it out, and heard himself say the words in their rightful order, the way liturgy works, the way it had been said to him on the exact spot he was standing:
+
+"Swarf goes in the red bin. We'll see."
+
+---
+
+## The Foundations
+
 If you've read this far, your brain is probably looking for an exit strategy. You are looking for a reason why this won't happen, a flaw in the logic, or some excuse to go back to sleep. You might run a "premortem" in your head, dreaming up all the ways this transition fails.
 
 You'll tell yourself that local Shouse grids will fail because we can't bootstrap the supply chains. You'll say that local warlords will take over the Biorefinery Hubs the second the global grid drops. You'll argue that people will lose their minds without the daily grind of their 9-to-5 jobs, collapsing into a psychological void. You'll say the corporate-state establishment will launch a scorched-earth campaign, weaponizing the masses to tear down any neighborhood factories we try to build.

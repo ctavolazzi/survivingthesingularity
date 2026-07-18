@@ -7,6 +7,48 @@
 
 > *"Code and media are permissionless leverage. They're the leverage behind the newly rich."*
 > Naval Ravikant, *How to Get Rich* (2018)
+
+**In this chapter:**
+
+- Code and media work while you sleep. They are the only employees that cost nothing, complain never, and compound forever.
+- The machine flooded the world with synthetic content and created the one shortage it can't fill: proof that a real thing happened to real people. You are sitting on the supply.
+- Trust doesn't scale, and doesn't have to. Files scale. Ship the files; keep the trust local.
+- Nobody's permission was asked. That's the whole point of the lever.
+
+---
+
+The video that did it was the first fire.
+
+Denny had been documenting the shouse build all fall, the way he documented everything by then: no scripts, hands in frame, the county audible in his vowels. The finale was four minutes long. The cut, the columns, Marta's bead going down the header seam like a zipper closing, the stove with its printed-form firebrick, and at the end, the draw catching on the first match and the co-op standing around in the new warm doing nothing historic whatsoever. He ended it the way he had ended the first video, on the same porch of words, because Denny knew a load-bearing sentence when he'd built one: "Come see it. Bring your kid."
+
+It posted on a Thursday night. Elijah did the pipes and went to bed.
+
+He was up before light out of habit now, and he walked to the shed through the first hard frost of the year with coffee, to check the overnight telemetry the way other generations of men had walked out to check stock. The mesh was green. The greenhouse was green. The channel graph was a wall.
+
+Not a spike. He'd seen spikes; the leak postmortem had been a spike. This was compounding, the curve he'd been drawing in the notebook for two years, the one that lies to you at the beginning and then doesn't, except for the first time in his life it was under something he loved instead of over it. The first-fire video had gone out and dragged the whole catalog up behind it: the greenhouse controllers, the landing, the bed data, all of it feeding all of it, person to person, three years of the co-op's actual life moving through the world's feeds like true things move. And underneath the numbers, the inbox. He read it standing up, coffee going cold.
+
+A grange association in Idaho: how do we start. A parish council in Louisiana, two months out from the last flood, asking for the bed protocol. A machinist in Ohio with his father's shop and no work in it, asking for the controller files. A tribal housing authority. A retired county engineer. A woman in Maine who had, she wrote, four acres, a dead barn, and eleven neighbors who show up. Eleven towns by the time the sun was fully up, spread across nine states, every one of them asking some version of the same four words: how do we start.
+
+He rang no bells. He put it all on the big screen at Friday dinner and let the room read.
+
+Curtis got to the fence first, because Curtis always did, except the fence had changed shape over two years like everything else about Curtis: "That's a product," he said. "That inbox is a business. Course packs, plans, consulting. People pay real money for half of what we know." He wasn't wrong, and nobody said he was, and for a minute the old grammar hung over the table, the Claypot grammar, and Elijah felt it reach for him like a current he knew by name: scale it, platform it, first-mover. Two years ago he'd have already had the deck built.
+
+It was Frank Kowalski who took it apart, from the end of the table, in the tone of a man doing inventory. "I spent thirty years selling parts for two dollars over what the internet charged," Frank said. "Know what I was actually selling? Somebody who knows which part. You can't download me. Him neither." A thumb at Denny. "Fence the files and you're selling paper. Ship the files free and every one of those eleven towns needs a Frank and a Marta and a Priya of their own anyway, and they'll find them locally, because that part doesn't ship." He folded his glasses. "The store taught me that. Late."
+
+"The press did this once before," Elijah said, and kept it to two sentences, because he had learned. "Books used to be chained to desks. Somebody built a machine that made copying cheap, and the people who tried to keep the chains lost, and the people who shipped won everything that mattered. Media's the same machine with the crank removed."
+
+Marta was quiet until the end, which is how the co-op knew where the decision would land. "I told this one his first day," she said, nodding at Elijah, "that nineteen households who know whose kid is whose don't scale, and that's the load-bearing wall, and I meant it, and it's still true." She looked at the wall of numbers. "The wall doesn't scale. The blueprints of the wall scale fine. Ship them."
+
+So they shipped everything, that weekend, all of it: the shouse cut files with every dimension Marta had logged, the controller schematics and firmware and the laminated repair card as a printable, Priya's bed protocol with the three-depth probe design and the season of data behind it, the leak postmortem as a template for telling the truth in public, and Reuben's masterpiece, the Municipal Autonomy Code, the whole legal toolkit, annotated, in plain language, free. (The license, which Reuben spent the weekend on and enjoyed more than anyone should: use everything, sell nothing you didn't build on top of it, and keep the attribution, "because the only thing we charge is credit.")
+
+Monday morning Elijah stood in the shed at dawn again with the coffee, watching the library's download counter climb through four digits, towns he would never see pulling down files it had cost the co-op two years and every mistake in this book to earn. Out of eight years of habit his hands started drafting the status report, and he got as far as the first line before he understood there was nobody to send it to. No boss. No board. No platform taking its cut. The lever was just theirs, all the way down to the dirt it stood on, and it had worked all night, and it would work again tonight, whether or not anyone watching had permission, including them.
+
+The Foundations below are the mechanics of that lever. Learn them like the co-op learned them: with the cargo true, the trust local, and the files free.
+
+---
+
+## The Foundations
+
 At some point in the early twenty-first century, humanity fell for the greatest magic trick ever performed.
 
 The technocrats convinced us that the internet was a public square, a library, and a playground. They gave us free email, free social media, and free video hosting. And in exchange, we happily handed over our attention, our behavioral data, and our cognitive autonomy.

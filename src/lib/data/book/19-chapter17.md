@@ -7,6 +7,46 @@
 
 > *"We are as gods and might as well get good at it."*
 > Stewart Brand, *Whole Earth Catalog* (1968)
+
+**In this chapter:**
+
+- The tools that survive the transition are the ones you can understand, fix, and run with no cloud, no subscription, and no permission.
+- Networks fail at the node somebody flashed in a hurry. Discipline you skip in fair weather collects its debt in the storm.
+- Debugging in the dark is a solved problem: halve it. Power or brain, this side or that side, measure, cut again.
+- We are as gods with cold fingers and a multimeter, and we might as well get good at it.
+
+---
+
+The first hard storm of the winter came up the valley on a Friday afternoon with the barometer falling like a dropped tool, and by dark the county was gone. Grid power went first, a whole hillside of windows going out between one gust and the next. The cell towers lasted forty minutes longer on their batteries and then they went too, and the valley was back in 1890, except for nineteen households, where it was still Tuesday.
+
+The mesh held. That's the sentence Elijah had been building toward for a year, the LoRa lattice you'll learn to solder in the Foundations below, node by node across the ridgelines, and on the night it finally mattered it did what it was designed to do: shrugged. The co-op's map stayed lit, house to house, message traffic hopping the valley on watts you could count on your fingers. Marta's shop stayed lit. The greenhouse alarms stayed armed. The whole nervous system he'd been laying into walls and fence posts for a year kept right on reporting, calm as a pulse.
+
+Except node 7.
+
+Node 7 was the ridge repeater, the high hop that stitched the north houses into everyone else, and node 7 was his, personally, in every sense that stung: his design, his install, and, the previous Sunday, his firmware flash, done alone, in a hurry, ahead of the weather, without a second set of eyes, because it was "just a repeater" and the checklist law was for things that touched the open internet, and he had let himself believe that discipline was a perimeter instead of a practice. The storm found the ridge at eight o'clock. At 8:04 the map showed a hole where the north houses used to be.
+
+He suited up. Nobody made him; everybody let him, which at the co-op amounted to a verdict. Marta handed him the handheld radio and the small pack, pointed at his headlamp, and said the thing she always said instead of luck: "Talk before you touch."
+
+The ridge trail in a storm is a different country. Rain going sideways with gravel in it, madrone trunks slick as wet brick, the wind doing shift work: lean, release, lean. He climbed with the multimeter zipped inside his coat to keep the display warm, and the radio crackled at his collarbone every quarter mile, Marta running the net from the shop the way she'd once run a floor: short transmissions, no chatter, callsigns and traffic.
+
+And he could hear, in the gaps, the system working around the hole he'd made. Priya's greenhouse, riding the alert chain: low-temp alarm at 8:40, relayed around the dead ridge the long way, south through Frank's node, and Denny's voice acknowledging, hauling the backup battery bank through the weather to keep the winter starts alive, all of it happening without him, around him, because the network's whole design assumed any one node, any one person, could be the one that failed. It is a strange, strong medicine, hearing a thing you built survive you.
+
+Node 7's enclosure was where he'd bolted it, on the old fire-lookout stub, and the node was dark. He got the lid off inside a garbage bag rigged as a rain fly, fingers going stupid with cold, and keyed the radio, and the two of them debugged it across two miles of storm at 900 megahertz, Marta asking the only question she ever asked, the one you'll find at the top of the troubleshooting flowchart in this chapter:
+
+"Power or brain? Halve it."
+
+Battery voltage: 12.9, healthy. Power. Halved. "Downstream. Check the buck converter under load." Five point one volts, solid. Halved again. So: brain. The radio module's status light was flashing a pattern he'd never bothered to memorize, and Marta made him count it out loud, four short one long, and there it was, in the dark, at the exact intersection of wind and shame: bootloader error. Wrong image. He had flashed the 868-megahertz build onto a 915-megahertz board, Sunday, alone, confident, and the node had run on the old code in memory all week and died the first time the storm's brownout forced a reboot. The vise, the shovel, and now the ridge: the same exam, a third time, in worse weather.
+
+The fix took eleven minutes because he had, at least, packed like Marta taught: the SD card with the known-good image, hashes checked, lived in a film canister in the pack's top pocket, next to the spare fuses. Reflash, reboot, and the status light went to its slow steady breathing, and in his collar the radio said, in Priya's voice, "North houses just came back. Hello, ridge." Below him the whole county was black to the horizon, and across that blackness the co-op's houses held their small stubborn constellation, and node 7 was a star in it again instead of a hole.
+
+He stood up into the wind to pack the tools, and Marta's voice came up the hill one more time, dry as the inside of the enclosure was supposed to be. "Brand's line. On the shop wall. 'We are as gods and might as well get good at it.'" A crackle, wind on her end too, the shop door open to the weather. "Gods, hell. Gods is the easy part, college. Gods with cold fingers and a multimeter, that's the job. Getting good at it means next time you flash a node, somebody's watching. Come down. There's soup."
+
+He came down. There was soup. And the checklist got its amendment that Sunday, in Reuben's careful language, the one you'll find adapted in the Foundations: the two-eyes rule now covers everything with firmware, because the network doesn't care whether the packet that kills it came from the internet or from your own confident thumb. The storm blew out by noon Saturday. The county's power was back Tuesday. The co-op never noticed, except as traffic on a mesh that had already moved on to arguing about seed orders.
+
+---
+
+## The Foundations
+
 We live in the golden age of high-tech dependency.
 
 In the late twenty-first century, your refrigerator has more processing power than the Apollo guidance computer. It can monitor your milk consumption, order groceries autonomously, and display recipes on a high-definition touch screen.

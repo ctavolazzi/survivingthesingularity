@@ -7,6 +7,44 @@
 
 > *"The nation that destroys its soil destroys itself."*
 > Franklin D. Roosevelt, *letter to all state governors* (1937)
+
+**In this chapter:**
+
+- Soil is not dirt. It is a living reactor, and dead ground can be brought back in seasons, not centuries.
+- Instruments lie with total confidence about everywhere they aren't. Your sensor lives at one centimeter; the root lives at thirty.
+- The shovel is also a probe. It just logs to your arm.
+- Data does not replace ground truth. It makes ground truth legible, portable, and fundable.
+
+---
+
+The reclamation beds went in on the worst ground the forty acres had: the quarter acre behind the shed where Walt Calder had parked equipment for four decades, compacted to a hardpan that rang under a shovel like a sidewalk, stained at one end where a tractor had bled hydraulic fluid through the Clinton administration. Priya chose it on purpose. "Anyone can garden in good dirt," she said. "The book we're writing needs the parking lot."
+
+That spring she built her trial like the scientist she had never stopped being: twelve beds, deep mulch over broadfork-cracked pan, six of them inoculated every two weeks with actively aerated compost tea, six left as controls, everything else identical. The tea rig was a fifty-five-gallon barrel, an aquarium air pump from the pet aisle, a paint-strainer bag of the co-op's best thermal compost, and a cup of molasses, brewing under the eaves with a smell Elijah eventually learned to read: forest floor when it was right, sour dishrag when the air stone clogged. And Elijah instrumented everything, because that was his lane and by now everyone including him knew it: moisture probes from the greenhouse-controller stock in every bed, temperature strings, a dashboard. Priya asked for the data weekly. She never once asked him what it meant. He noticed that later.
+
+In July he brought her his conclusion, and he brought it gently, because he liked her and believed he was about to cost her something. The dashboard showed the tea beds and the control beds tracking identical on moisture, week after week. His irrigation controller had actually been watering the tea beds a touch more. "I can't find your effect," he said. "I'm sorry. Whatever the tea is doing, it isn't measurable."
+
+Priya looked at his printout the way Marta had once looked at his renders. Then she handed him the shovel.
+
+August, mid-afternoon, no shade worth the name. She had him dig two pits, one in a control bed, one in a tea bed, square-sided, knee deep, and she made him do it slowly, a spade-width at a time, and tell her what his arms felt. The control bed was honest about itself: four inches of nice crumb where the mulch had rotted in, then dust, then at ten inches the old pan, pale as concrete, roots turning sideways along the top of it like water hitting glass. The tea bed broke differently. The fork went in with his boot weight instead of his whole body. Dark crumb continued past the depth where the other pit had gone to dust. At two spade-depths the soil was cool, and held its shape when he squeezed it and broke cleanly when he poked it, and it was full of channels, worm-bore and root-bore, going down. Roots at thirty centimeters, white and branching. A worm, indignant, at thirty-five.
+
+"Now," Priya said, sitting on the bed edge like it was a lab bench, "tell me where your probe lives."
+
+His probe lived at one centimeter. Effectively. It was a surface-moisture sensor, and July had cooked the top inch of every bed equally, and his interpolation model had done the one thing models do best, which is extend a lie consistently in all directions. The tea beds were holding water a foot down, days longer, exactly where the roots had followed the biology, and his dashboard had been measuring the weather of the crust and calling it the climate of the planet. Worse, his irrigation logic had read the dry crust and watered the healthiest beds hardest: right answer, wrong stratum.
+
+"Your sensor lives at one centimeter," Priya said, not unkindly, in the tone of a woman who had spent twenty years watching agencies fund the crust. "The root lives at thirty. You instrumented the part of the system that's easiest to reach and assumed the rest agreed with it. Everyone does. Whole nations do." She nodded at the pit. "Roosevelt wrote every governor in the country in 1937: the nation that destroys its soil destroys itself. Every extension office I ever worked in had that framed on the wall, and every budget I ever sat through ignored the framing and funded the crust. It took a Dust Bowl to teach a president what this pit just taught you for the price of an afternoon's digging."
+
+He sat in the dirt with his ruined conclusion and started laughing, because he had been here before. The vise, the shovel: the co-op kept administering the same exam and he kept being surprised by the questions. Since the month a $211 power bill had rearranged his life, he had trusted meters over feelings, and the trust had mostly paid. Here was the lesson under that lesson, the one the Kill-A-Watt had never needed to teach because a wall socket is shallow: a meter tells the truth only about the exact place it lives. Instrument the wrong stratum and you don't get noise, you get confident fiction.
+
+The fix cost eleven dollars a bed: probes at three depths on a length of PVC, five, fifteen, thirty centimeters, epoxied and calibrated against the shovel, which Priya made him keep doing monthly, pit and squeeze and smell, "so the instruments stay honest and so do you." And the re-run data was not subtle. At depth, the tea beds held irrigation five days longer, ran four degrees cooler through the September heat, and were building measurable organic matter into ground that had been mechanically dead eighteen months earlier. The effect she had known was there by hand and eye for two decades was now a graph, with error bars, reproducible off eleven dollars of parts and a barrel of tea.
+
+What she got from him was the part that traveled. The graph went to the corkboard next to the repair emails, and then into the library with the cut files and the controller firmware, and then, though that story belongs to the next chapter, a good deal further than the corkboard. What he got from her was a habit he keeps to this day: once a month, whatever the dashboard says, he digs the pit anyway. By October he could read field capacity by squeeze, approximately, badly, the way you read a second language you learned as an adult. The shovel is also a probe, Priya says. It just logs to your arm, and its calibration is older than the county.
+
+The notebook got its line that fall, under the arithmetic, where the important numbers live: DEPTH OF SENSOR: 1 cm. DEPTH OF ROOT: 30. Write your models accordingly.
+
+---
+
+## The Foundations
+
 If you want to understand the ultimate goal of the technocratic elite, you don't need to read their white papers on artificial general intelligence or listen to their keynotes about Mars colonies.
 
 You just need to look at what they are buying.

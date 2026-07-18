@@ -8,6 +8,47 @@
 > *"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."*
 > attributed to R. Buckminster Fuller
 
+**In this chapter:**
+
+- Two steel boxes and roughly $25,000 buy a permanent exit from the mortgage machine. The double-wide hack is how you keep them from being a coffin.
+- Structure is not a feeling. Cut the mating walls without columns and headers, and the first real snow finds out for you.
+- A bad weld looks exactly like a good one from six feet away. The vise is how steel tells the truth. Know your lane on a build that people will live inside.
+- Heat you harvest beats heat you subscribe to. The oldest unshutoffable technology in this book has a flue now.
+
+---
+
+The containers came up the hill on a tilt-bed in the last week of August, two one-trip high-cubes still wearing their ocean stickers, and the driver set them down on Marta's piers with a gentleness that seemed impossible for forty thousand pounds of steel. The piers had been poured three weeks earlier, and Elijah had checked their levels so many times with the water level that Marta finally took the tubing away from him. "They're right," she said. "You watched me make them right. Trust the transit or go check the internet's opinion." Five millimeters over forty feet, she had told him, and the boxes twist and the cut never heals. The piers were off by one.
+
+It went up on the co-op's ground lease, on the worn patch where Walt Calder had once parked a combine, and it went up as the template: every dimension logged, every cut photographed, the file destined for the library, because the deal the co-op had made with itself was that nothing got built once. But it was also, and nobody made a ceremony of saying so, Elijah's. Two years of rented rooms and borrowed corners, and now a rectangle of dirt with his name on a ninety-nine-year piece of paper.
+
+He had wanted to weld on it. That was the humiliating part, later: how badly he had wanted it, the certified-adult feeling of it, after a year and a half of watching Marta lay beads like the steel was agreeing with her. He'd practiced evenings for a month on scrap, and his practice pieces looked, he thought, honestly good. He asked for a seam on the header beam, the long C-channel spine that would carry the roof across the cut. Marta didn't say no. She said, "Bring me your coupon," and put his best practice weld in the big bench vise, and slipped a cheater pipe over the free end, and broke it with one pull.
+
+The bead snapped clean along its own centerline. Inside, the break was bright and crystalline and full of small round voids, like honeycomb cast in nickel.
+
+"See the sparkle," she said, not a question. "Cold lap. Porosity. It sat on top of the steel and never became the steel. From six feet it looks like mine. The vise is how the metal does the truth." She set the two halves on the bench where he could keep them, which he did, and has them still. "There's nothing wrong with you, college. You're two hundred hours from a structural bead, and the rain is eight weeks out. And this seam," she put her glove flat on the C-channel, "holds a roof over someone's kid. Not this year's kid. Every kid in every copy of this build that ever gets made off our files. I don't weld those seams tired, and I don't let anybody weld them proud."
+
+So Marta welded the spine of his house, and Elijah went to his lane, and here is the part he would want said plainly: his lane turned out to be real work, and he was good at it. Before the spray foam went in he laced the wall cavities with thermocouple strings, so the shell could report its own temperature gradients for the rest of its life. He wired leak sensors low in the wet-room and at both bulkheads, put current monitoring on every branch circuit of the DC bus, ran the hardline to the shed, and built the little dashboard the whole co-op now uses, the one that shows a floor plan with a nervous system. Marta gave the finished panel a long look and said, "Huh," which everyone present understood to be a medal.
+
+The day of the cut, the columns and headers already in and inspected twice, Denny ran the plasma torch, and the interior mating walls came out in glowing rectangles, and light went through the two coffins and made them one room, sixteen feet of open span where no room had been. Everyone stood in it. That's all. Nobody said anything worth recording. Sixteen feet by forty is not a large space by the old world's arithmetic, and every person standing in it had lived in bigger, and not one of them had ever owned a cubic foot they could defend, and this one was paid for.
+
+The stove went in last, on a hearth pad of leftover pavers. The Fisher had ridden north in the back of his car two years ago, eighty pounds of plate steel and one cracked firebrick, and it had sat in the corner of the shed being a monument the way it had once been a monument in a rented apartment, and monuments, Marta observed, rust. She cast him a replacement brick out of refractory cement in a form Denny's kid printed. The flue kit was double-wall pipe, bought new, the one line item nobody let him salvage, and Priya held the storm collar while he sealed the roof penetration in a wind that wanted his hat.
+
+The first cold night came in the last week of September. He laid the fire the way his grandmother's hands had taught his hands before he was tall enough to see the top of the stove, and the draw caught on the first match, and the steel began to tick as it heated, the same sound as every engine and every server he had ever loved, run in reverse. People drifted over without being organized. Reuben brought chairs the way Reuben brings paperwork, already done. Somebody hung a pair of socks over the stove on general principle.
+
+He took one photograph from inside the shell: the stove lit, the socks, the new brick glowing faintly through the door gap, the dashboard on the wall behind reporting all systems green. He sent it to his mother at 9:41 on a Sunday, and for two years he had failed to build one sentence that could carry across to her what was happening to the world, and the phone rang before the checkmark appeared.
+
+"That's the Fisher," she said. No hello, but the radio was going behind her, so it was the same kitchen, the same country station, the same distance suddenly not mattering. "Is your flue double-wall? The Hendersons had a chimney fire in '88 and your grandmother talked about it for ten years."
+
+"Double-wall, Ma. Storm collar and all. Inspector signed it Tuesday."
+
+A quiet went down the line, with the radio under it. "It looks right in there," his mother said finally, in the voice she used for things that were settled. "It looks like somewhere."
+
+Every sentence he had ever tried to build for her had been about what was coming apart. The one that finally crossed was eighty pounds of plate steel, lit. He sat down in front of his grandmother's stove, in a house with Marta's welds for a spine and his own nerves in its walls, and added the night to the notebook: first fire. Under PARCELS OUT: 1, a new line: ROOFS: 1. The arithmetic of the whole second half of this book, still small enough to count on one hand, and finally moving in the right direction.
+
+---
+
+## The Foundations
+
 Once you have the land, you don't build a massive, complex suburban house. You build a "Shouse" (Shop-House).
 
 1. **The Core:** Pour a foundation, put up a metal utility building, and park an RV inside it. This gives you a secure, weatherproof shell while you develop the site.

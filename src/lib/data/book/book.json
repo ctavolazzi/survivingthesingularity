@@ -2,8 +2,8 @@
   "title": "Surviving the Singularity",
   "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
   "author": "Christopher Tavolazzi",
-  "version": "0.2.0",
-  "lastUpdated": "2026-07-11",
+  "version": "0.3.0",
+  "lastUpdated": "2026-07-17",
   "sections": [
     {
       "id": "introduction",
@@ -32,17 +32,17 @@
     },
     {
       "id": "chapter2",
-      "title": "Chapter 2: The Era of AGI (Stages 1\u20135)",
+      "title": "Chapter 2: The Era of AGI (Stages 1–5)",
       "file": "04-chapter2.md"
     },
     {
       "id": "chapter3",
-      "title": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6\u20137)",
+      "title": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)",
       "file": "05-chapter3.md"
     },
     {
       "id": "chapter4",
-      "title": "Chapter 4: Universal and Multiverse Apex (Stages 8\u20139)",
+      "title": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)",
       "file": "06-chapter4.md"
     },
     {

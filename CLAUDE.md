@@ -45,7 +45,7 @@ redesign; don't link to them.)
 - `src/hooks.server.js` — Supabase session management (gracefully degrades without credentials)
 - `src/lib/supabase.js` — SSR-compatible Supabase client factory
 - `src/lib/data/blueprint.js` — All blueprint content (8 sections with prose, tables, callouts, directives)
-- `src/lib/data/blog-posts/blogPosts.js` — Blog post loader
+- `src/routes/blog/+page.server.js` — Blog listing (hardcoded `posts` array; new posts must be added here)
 - `src/lib/components/Navbar.svelte` — Main nav with auth state
 - `src/lib/components/Footer.svelte` — Footer
 - `src/lib/components/CookieConsent.svelte` — GDPR-style cookie banner
@@ -62,15 +62,24 @@ Auth requires a real Supabase project. Without credentials, the site runs fine b
 npm run dev          # Start dev server
 npm run build        # Production build
 npm run preview      # Preview production build
-npm run create-blog  # Create new blog post
 ```
+
+(`npm run create-blog` scaffolds the LEGACY blog format and does not register the
+post in the listing — do not use it for new posts; see Content Architecture.)
 
 ## Content Architecture
 Blueprint content lives in `src/lib/data/blueprint.js` as a structured array of sections. Each section has:
 - `slug`, `number`, `title`, `subtitle`
 - `content[]` — array of blocks: `prose`, `heading`, `table`, `callout`, `directive`
 
-Blog posts live in `src/lib/data/blog-posts/[slug]/` with `content.md` + `index.js`.
+Blog posts are per-route Svelte pages: `src/routes/blog/[slug]/+page.svelte` holds the
+post, and the post must ALSO be added to the hardcoded `posts` array in
+`src/routes/blog/+page.server.js` to appear in the listing (and to `static/sitemap.xml`).
+
+Legacy note: `src/lib/data/blog-posts/[slug]/` (`content.md` + `index.js`) is the old
+system. Three older routes (`whispers-of-the-future`, `claude-projects-weekend-project`,
+`singularity-express`) still import their content from it, so don't delete it — but
+never author new posts there.
 
 ## Conventions
 - Dark mode only (forced via class)

@@ -332,6 +332,20 @@ Your compute node is now fully operational. You possess total local information 
 
 Now that we have power and intelligence, we must feed the meat engine.
 
-In the next chapter, we descend from the server racks and step into the wet, dark earth. We will lay out **Chapter 8: The Robot in the Soil (FarmBot and Biological Refineries)**, where we will combine automation, Raspberry Pi micro-greenhouses, and soil biology to bypass the petrochemical fertilizer industrial complex.
+In the next chapter, we secure the ground under all of it: **Chapter 12: The Land Strategy**, where the deed itself becomes the tool. Then, in **Chapter 15: The Power of Reclaiming Soil**, we descend from the server racks and step into the wet, dark earth, combining automation, sensor humility, and soil biology to bypass the petrochemical fertilizer industrial complex.
 
 Prepare your seed trays and biological cultures. We are taking back the soil.
+
+---
+
+## Precedent P-13: The Quartz Heresy (Switzerland, 1969 to 1983)
+
+In 1969 Seiko shipped the first quartz wristwatch, and the Swiss, who dominated world watchmaking, dismissed it as beneath the craft. They had centuries of mechanical mastery; quartz was a battery and a circuit, a gadget for people with no taste. They stayed pure.
+
+Purity cost them the industry. Between 1970 and the mid-1980s, Swiss watch employment collapsed from roughly ninety thousand to around thirty thousand; the number of Swiss watch firms fell from about sixteen hundred to under six hundred. Two-thirds of an ancient national craft evaporated in fifteen years.
+
+What saved the remnant was a heresy. In 1983 the merged Swiss group launched the Swatch: a cheap, disposable, fifty-one-component, robot-assembled *quartz* watch, the antithesis of everything Swiss watchmaking claimed to stand for. It adopted the enemy's technology at the bottom of the market, and the profits from that betrayal funded the survival of mechanical craftsmanship at the top, which came roaring back as luxury in the 1990s. The Swatch was a quartz Trojan horse that paid for the thing it appeared to destroy.
+
+**The mechanism.** Salvation came not from defending purity but from adopting the disruptive technology on the defenders' own terms. The machine's output subsidized the human craft; refusing the machine had only starved it.
+
+**The rule.** You do not beat the new machine by refusing it. You beat it by using it to pay for what you actually want to keep. Use the AI to fund the workshop, the homestead, the human craft. That is not selling out. That is the only strategy with a documented win.

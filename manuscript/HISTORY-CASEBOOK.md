@@ -308,7 +308,309 @@ Sources: [cyberdeck.cafe — What is a Cyberdeck](https://cyberdeck.cafe/mix/wha
 
 ---
 
+## F. Deep history: the wave has been breaking for 11,500 years
+
+### F1. The toy at the fair (Philadelphia, 1876) — P-02
+
+**Story:** At the 1876 Centennial Exhibition, the machine everyone came to see was the
+Corliss engine — 1,400 horsepower, four stories tall, the certified future. In a side hall,
+a Boston elocution teacher named Alexander Graham Bell demonstrated a gadget the judges
+nearly skipped: a wooden box that carried a voice down a wire. Sir William Thomson (later
+Lord Kelvin), the era's most famous physicist, judged it and called the telephone the
+greatest marvel he had seen in America. Western Union — offered Bell's patents around that
+time — passed, and spent the next decades losing the communications empire to the toy.
+The steam engine got the applause; the telephone got the century.
+
+**Mechanism:** At every demonstration there are two audiences: the crowd measuring the
+machine against the present, and the handful measuring the present against the machine.
+
+**Lesson:** When you watch a demonstration, don't ask "how impressive is this today."
+Ask "what does the world look like when this is boring."
+
+Sources: [Centennial Exhibition — Wikipedia](https://en.wikipedia.org/wiki/Centennial_Exhibition) · [Bell's telephone at the Centennial — Smithsonian](https://www.si.edu/spotlight/bell-telephone) · (Do NOT use Pedro II "My God, it talks!" — embellished; Kelvin's praise is the documented beat.)
+
+### F2. The fleet that sailed home forever (Ming China, 1433) — P-05
+
+**Story:** Between 1405 and 1433, Zheng He's treasure fleets — hundreds of ships, some
+several times the size of anything Europe would float for a century — reached India, Arabia,
+and East Africa. Then the court's faction fights turned against the voyages: expensive,
+destabilizing, beneath the dignity of the empire. The expeditions stopped; under the Haijin
+("sea ban") policies, private ocean trade was restricted for generations, and the greatest
+navy on Earth was allowed to rot at anchor. Sixty years later, smaller, hungrier ships from
+a poorer continent showed up in the Indian Ocean — and the next five hundred years happened
+to China instead of because of it.
+
+**Mechanism:** Capability that is abandoned doesn't stay yours in reserve. It emigrates —
+to whoever keeps sailing.
+
+**Lesson:** You cannot pause a frontier. You can only decide whether you'll be on it when
+it moves.
+
+Sources: [Zheng He — Wikipedia](https://en.wikipedia.org/wiki/Zheng_He) · [Haijin — Wikipedia](https://en.wikipedia.org/wiki/Haijin)
+
+### F3. The great demotion (1543) — P-06
+
+**Story:** Copernicus's *De revolutionibus* (1543) evicted the Earth from the center of the
+cosmos. The demotions never stopped: Galileo's moons, Darwin's apes, Hubble's billion other
+galaxies. Every generation was told the new picture would destroy meaning; every generation
+absorbed the demotion and kept making breakfast. What actually broke was not humanity's
+spirit but the institutions that had bet their authority on the old map.
+
+**Mechanism:** Humans survive being decentered; *hierarchies built on the old center* don't.
+
+**Lesson:** When the next intelligence arrives, the danger to you is not humiliation — it's
+being institutionally downstream of people who refuse the new map.
+
+Sources: [Copernican Revolution — Wikipedia](https://en.wikipedia.org/wiki/Copernican_Revolution) · [Heliocentrism — Wikipedia](https://en.wikipedia.org/wiki/Heliocentrism)
+
+### F4. The horse's last ledger (1783–1960) — P-07
+
+**Story:** James Watt needed to sell steam engines to men who owned horses, so he invented
+a unit — *horsepower* — that priced the animal against the machine in the animal's own
+currency. For a century the horse looked safe: US horse and mule population kept climbing,
+peaking above 25 million in the 1910s, an entire economy of hay, stables, farriers, and
+manure. Then internal combustion crossed the cost line, and in one working lifetime the
+population collapsed to a few million kept mostly for recreation. The horse never got less
+noble, less strong, or less willing. It got out-priced per watt.
+
+**Mechanism:** The horse's owners debated sentiment; the machine's buyers computed joules
+per dollar. Thermodynamic arithmetic doesn't negotiate.
+
+**Lesson:** Know your own energy ledger before someone else prices it for you.
+
+Sources: [Horsepower — Wikipedia](https://en.wikipedia.org/wiki/Horsepower) · [Horses in the United States — Wikipedia](https://en.wikipedia.org/wiki/Horses_in_the_United_States) · (Do NOT use the 1894 "nine feet of manure" Times quote — unsourced.)
+
+### F5. The grain trap (c. 9500 BC, Fertile Crescent) — P-08
+
+**Story:** The first singularity was a seed. When bands in the Fertile Crescent settled on
+wild grasses, the skeletal record shows the individual deal got *worse*: early farmers were
+shorter than the foragers before them, with worse teeth and new diseases — the "decline in
+health and stature" is standard in the archaeology of the Neolithic. And it didn't matter.
+Grain could be stored, taxed, and multiplied; farming villages out-bred and out-organized
+foragers, and within a few thousand years there was nowhere left to not-farm. Nobody voted.
+No council of hunter-gatherers reviewed the proposal. The people inside the transition
+couldn't see it, and their grandchildren couldn't leave it.
+
+**Mechanism:** A technology doesn't need to make each person better off to become
+mandatory. It only needs to make the *groups that adopt it* outcompete the groups that
+don't. The ratchet turns on group selection, not consent.
+
+**Lesson:** "We'll simply choose not to adopt it" has been losing since 9500 BC. The
+question is never whether the transition happens. It's what position you hold when it does.
+
+Sources: [Neolithic Revolution — Wikipedia](https://en.wikipedia.org/wiki/Neolithic_Revolution) · [Neolithic in the Near East (health & stature decline) — Wikipedia](https://en.wikipedia.org/wiki/Neolithic_in_the_Near_East)
+
+### F6. The frame-breakers (England, 1811–1816) — P-09
+
+**Story:** The Luddites were not ignorant technophobes — they were the *skilled* workers,
+croppers and framework knitters at the top of their trade, and they aimed their hammers
+precisely: at the wide frames making cheap, degraded goods with cheap, degraded labor,
+often sparing machines whose owners kept prices and wages fair. Parliament's answer was the
+Frame Breaking Act — death for breaking a machine — and soldiers. Men were hanged at York.
+The frames won anyway. The wages fell anyway. The craft died anyway. Everything the
+Luddites predicted for themselves came true; smashing the machines changed nothing but the
+date of their own funerals.
+
+**Mechanism:** Rage at the machine is aimed at the one component of the system that
+literally cannot hear you. The owners heard, and answered with the gallows.
+
+**Lesson:** The machine is not the enemy; the terms of the transition are. Fight for
+position, not against physics — the frame-breaker's hammer has never once worked.
+
+Sources: [Luddite — Wikipedia](https://en.wikipedia.org/wiki/Luddite) · [Frame Breaking Act / Industrial Revolution — Wikipedia](https://en.wikipedia.org/wiki/Industrial_Revolution)
+
+### F7. Torches of freedom (New York, 1929) — P-10
+
+**Story:** In 1929 it was taboo for women to smoke in public — half the cigarette market,
+locked. So the American Tobacco Company hired Edward Bernays, Freud's nephew, who hired
+young women to march in the Easter Sunday parade and, on cue, light cigarettes for the
+photographers he had also arranged. He fed the press the phrase "torches of freedom."
+Emancipation itself was retooled into a nicotine delivery vector. It worked; the taboo
+cracked; the market opened. The women in the parade experienced it as liberation. It was
+inventory expansion.
+
+**Mechanism:** Industrial persuasion doesn't argue with your values — it wears them. The
+extraction is dressed as the thing you already believe.
+
+**Lesson:** When a system this good at wanting things for you tells you what you want,
+audit the desire before you act on it. The 1929 version used newspapers; the current
+version knows your pulse.
+
+Sources: [Torches of Freedom — Wikipedia](https://en.wikipedia.org/wiki/Torches_of_Freedom) · [Edward Bernays — Wikipedia](https://en.wikipedia.org/wiki/Edward_Bernays)
+
+### F8. The year the bronze stopped (c. 1177 BC) — P-11
+
+**Story:** Late Bronze Age civilization was a globalized system: bronze required tin, and
+tin traveled thousands of miles — from sources as far as modern Afghanistan and Cornwall —
+through interlocking trade networks linking Egypt, the Hittites, Mycenae, Ugarit, Babylon.
+Around 1177 BC the system failed as systems do: drought, migration, war, and broken supply
+chains compounding each other. The most connected, most specialized palace economies
+collapsed hardest — writing itself vanished from Greece for centuries. What persisted were
+smaller, less specialized communities that could feed and equip themselves locally.
+
+**Mechanism:** Interdependence is efficiency in fair weather and contagion in foul. The
+palaces died of their supply chains; the villages lived on their soil.
+
+**Lesson:** In a cascading transition, your resilience equals whatever still works when the
+ships stop coming.
+
+Sources: [Late Bronze Age collapse — Wikipedia](https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse) · [Eric H. Cline, *1177 B.C.* — Wikipedia](https://en.wikipedia.org/wiki/1177_B.C.:_The_Year_Civilization_Collapsed)
+
+### F9. One hundred sixty acres (United States, 1862) — P-14
+
+**Story:** The Homestead Act of 1862 offered 160 acres of federal land to anyone who would
+live on it and improve it for five years. It was the largest transfer of position in the
+country's history, and it happened *during* the chaos — signed in the middle of the Civil
+War, while everyone's attention was on the front. The people who filed claims while the
+world was on fire held title when the world calmed down.
+
+**Mechanism:** Transitions reprice land and position before they reprice anything else —
+and the window opens during the confusion, not after it.
+
+**Lesson:** Secure your ground while the incumbents are distracted by the emergency. After
+the transition, the deeds are already filed.
+
+Sources: [Homestead Acts — Wikipedia](https://en.wikipedia.org/wiki/Homestead_Acts)
+
+### F10. The house that came by mail (1908–1942) — P-15
+
+**Story:** From 1908 to 1942, Sears sold tens of thousands of entire houses out of a
+catalog — precut lumber, nails, paint, instructions, shipped by rail. A family with a
+foundation and a few friends could assemble a real home without a builder's monopoly
+anywhere in the loop. Thousands of Sears Modern Homes are still standing and still lived in,
+a century of proof that "you can't build your own house" was a market boundary, not a law
+of nature.
+
+**Mechanism:** Kit-and-instructions is how a capability escapes its priesthood. The catalog
+did to homebuilding exactly what open hardware does to manufacturing.
+
+**Lesson:** Whatever the incumbents insist requires their permission, look for the version
+that ships as a kit.
+
+Sources: [Sears Modern Homes — Wikipedia](https://en.wikipedia.org/wiki/Sears_Modern_Homes) · [Kit house — Wikipedia](https://en.wikipedia.org/wiki/Kit_house)
+
+### F11. Twenty million gardens (United States, 1943–44) — P-18
+
+**Story:** When the war strained the food system, the US government asked amateurs to grow
+food — and roughly twenty million Victory Gardens appeared in backyards, vacant lots, and
+rooftops. By 1944 those gardens were producing on the order of **40 percent of the nation's
+fresh vegetables**. Not agribusiness. Not a five-year plan. Yards. The entire parallel food
+system materialized in about two growing seasons, then was allowed to evaporate when the
+emergency passed.
+
+**Mechanism:** Distributed production scales *sideways* — twenty million small nodes
+appeared faster than any centralized capacity could be built, because the capacity already
+existed, unclaimed, in ordinary people.
+
+**Lesson:** The soil in reach of your door is standby infrastructure. It has been switched
+on before, at national scale, in twenty-four months.
+
+Sources: [Smithsonian Gardens — Victory Gardens](https://gardens.si.edu/learn/blog/the-victory-garden/) · [National WWII Museum — Victory Gardens](https://www.nationalww2museum.org/war/articles/victory-gardens-world-war-ii)
+
+### F12. Forty-seven pages (Philadelphia, 1776) — P-19
+
+**Story:** *Common Sense* was forty-seven pages written in plain speech by a corset-maker's
+son who had been in America barely a year. Printed in January 1776, it tore through the
+colonies in months — proportionally one of the most-read things ever published in America —
+and converted a tax dispute into an independence movement. Paine held no office and
+commanded no troops. He had access to a press, a clear register ordinary people could read
+aloud in taverns, and a moment.
+
+**Mechanism:** Leverage is the ratio of reach to permission. Paine needed nobody's; the
+pamphlet was the whole apparatus.
+
+**Lesson:** One person with clear language and a distribution channel can out-move an
+empire's messaging. The press was the 1776 version; you are holding the current version.
+
+Sources: [Common Sense — Wikipedia](https://en.wikipedia.org/wiki/Common_Sense)
+
+### F13. Access to tools (1968) — P-20
+
+**Story:** Stewart Brand's *Whole Earth Catalog* put the NASA photo of the whole planet on
+the cover and three words under the title: **"Access to Tools."** Inside: welding rigs,
+geodesic math, seed suppliers, calculators, books — anything that let an individual "conduct
+his own education, find his own inspiration, shape his own environment." Steve Jobs, closing
+his 2005 Stanford address, called it "sort of like Google in paperback form, 35 years before
+Google came along." A generation of homesteaders and a generation of personal-computer
+builders came out of the same paperback.
+
+**Mechanism:** A catalog of tools is a map of possible selves. Curated access — not
+credentials — is what converts readers into builders.
+
+**Lesson:** Curate your toolset like it's your education, because it is.
+
+Sources: [Whole Earth Catalog — Wikipedia](https://en.wikipedia.org/wiki/Whole_Earth_Catalog)
+
+---
+
+## G. The foresight file: predictions with receipts
+
+### G1. One million years, give or take (New York Times, 1903) — P-03
+
+**Story:** On October 9, 1903, the New York Times editorial "Flying Machines Which Do Not
+Fly" calculated that a working flying machine might require "the combined and continuous
+efforts of mathematicians and mechanicians in from one million to ten million years."
+**Sixty-nine days later** the Wright Flyer left the sand at Kitty Hawk. The editors were not
+stupid; they were extrapolating from Langley's very public failure two days earlier. They
+measured the past. The Wrights were building the future in a bicycle shop with no
+journalists present.
+
+**Mechanism:** Expert timelines are autopsies of the last failure, not forecasts of the
+next success. The gap between "impossible" and "done" can be ten weeks.
+
+**Lesson:** When credentialed voices give you a comfortable timeline, remember the unit of
+error is not years. It's orders of magnitude — in both directions.
+
+Sources: [Flying Machines Which Do Not Fly — Wikipedia](https://en.wikipedia.org/wiki/Flying_Machines_Which_Do_Not_Fly) · [Snopes fact-check: TRUE](https://www.snopes.com/fact-check/wright-brothers-first-flight/)
+
+### G2. The apocalypse that ran on time (1999) — P-21
+
+**Story:** The Y2K bug was real: two-digit years in billions of lines of code, wired into
+banks, grids, and flight systems. The world ran history's largest premortem — roughly $300
+billion worldwide (over $100 billion in the US alone) auditing and patching before the
+deadline — and midnight passed with only trivia. The punchline is the debate that followed:
+because the disaster didn't happen, people concluded it never could have. (Honest caveat,
+kept in the book: some countries that spent little also passed quietly, so the size of the
+averted disaster is genuinely contested. That is what a successful premortem costs you —
+you never get to see the timeline you paid to avoid.)
+
+**Mechanism:** Prevention is invisible by construction. A premortem that works looks, from
+the outside, exactly like paranoia that was never needed.
+
+**Lesson:** Judge preparation by the quality of the reasoning before the deadline, not by
+the silence after it. The silence was the product.
+
+Sources: [Year 2000 problem — Wikipedia](https://en.wikipedia.org/wiki/Year_2000_problem) · [Britannica — Y2K bug](https://www.britannica.com/technology/Y2K-bug)
+
+### G3. The passing fad (1995–2000) — P-22
+
+**Story:** Three receipts, framed and hung. **February 1995, Newsweek**, Clifford Stoll —
+a genuine internet veteran — publishes "The Internet? Bah!", calling online commerce and
+digital news "baloney." **June 1998, Red Herring**, economist Paul Krugman: "By 2005 or so,
+it will become clear that the Internet's impact on the economy has been no greater than the
+fax machine's" (he later owned it: "I was clearly trying to be provocative, and got it
+wrong"). **December 5, 2000, the Daily Mail**: "Internet 'may be just a passing fad as
+millions give up on it.'" Within a decade of that headline the internet was the
+substrate of the economy, the press that printed it included. All three writers were
+intelligent. All three were describing the technology's *current annoyances* — slow modems,
+bad search, high access charges — at the exact moment the annoyances were being engineered
+away.
+
+**Mechanism:** The strength of a compounding technology is invisible year to year because
+critics benchmark the present version, and the present version is always the worst it will
+ever be.
+
+**Lesson:** You are currently reading 2026's versions of these three articles about AI.
+They are being written by intelligent people. Frame them now; the decade will hang them.
+
+Sources: [Newsweek — Stoll, "Why the Web Won't Be Nirvana" (1995)](https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306) · [Poynter retrospective](https://www.poynter.org/reporting-editing/2015/the-internet-bah-classic-off-target-essay-appeared-20-years-ago/) · [Snopes — Krugman fax-machine quote VERIFIED](https://www.snopes.com/fact-check/paul-krugman-internets-effect-economy/) · [Quote Investigator — Krugman](https://quoteinvestigator.com/2023/10/26/internet-fax/) · [Daily Mail Dec 5 2000 page scan](https://markcarrigan.net/2024/02/17/daily-mail-2000-the-internet-may-just-be-a-passing-fad-as-millions-give-up-on-it/)
+
+---
+
 ## Placement map
+
+> **Superseded 2026-07-17** by the Precedent Ledger table at the top of this file, which
+> assigns every case a P-ID and a chapter. Kept for the pre-ledger placement rationale.
 
 | Case | Chapter | Where |
 |---|---|---|
@@ -332,3 +634,10 @@ Sources: [cyberdeck.cafe — What is a Cyberdeck](https://cyberdeck.cafe/mix/wha
 - **Nathan Rothschild's Waterloo pigeon fortune** — heavily embellished legend; avoid.
 - **Blockbuster "laughed out of the room"** — usable ONLY attributed to Randolph/Hastings'
   account, with Antioco's denial acknowledged (as done in A3).
+- **The 1894 Times "nine feet of manure by 1950" quote** — no primary source has ever been
+  produced; the Great Horse Manure Crisis framing traces to a 2004 essay. Use documented
+  horse-population figures (peak >25M in the 1910s, collapse by 1960) instead.
+- **Pedro II "My God, it talks!" (Centennial, 1876)** — embellished anecdote. Use Kelvin's
+  documented praise of the telephone instead.
+- **"Everything that can be invented has been invented" (Duell, 1899)** — fabricated;
+  never use.

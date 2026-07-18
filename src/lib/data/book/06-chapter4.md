@@ -94,3 +94,17 @@ where N-sim is the number of simulations. Because N-sim would be exceptionally l
 However, Kipping notes that we currently exist in a "nulliparous" state, a reality that has not yet given birth to its own simulated universes. When factoring in the principle of indifference across the models, Kipping demonstrates that the objective Bayesian probability that we are currently living in a simulation is slightly less than 50%.
 
 But Kipping's mathematical formulation includes a profound caveat: if humanity *does* eventually reach the stage where we start producing high-fidelity ancestor simulations ourselves, we break the nulliparous condition. The moment a civilization creates a simulated reality, the Bayesian odds radically shift, dictating that they are almost certainly simulated themselves. As the intelligence explosion drives humanity toward unparalleled computational capacity, the birthing of our own simulations, and the subsequent mathematical proof of our own simulated nature, may emerge as the ultimate empirical discovery of the ASI era.
+
+---
+
+## Precedent P-06: The Great Demotion (Frombork, 1543)
+
+In 1543, a Polish canon named Copernicus published *De revolutionibus* from his deathbed and evicted the Earth from the center of the universe. The learned world insisted the demotion would unmake meaning itself: if we are not the center, what are we?
+
+The demotions never stopped coming. Galileo's telescope found other worlds with their own moons. Darwin filed humanity under the animals. Hubble showed our entire galaxy to be one among billions. Each time, authorities predicted civilizational despair. Each time, ordinary people absorbed the new map and kept making breakfast, falling in love, and planting gardens. The human spirit turned out to be indifferent to its cosmic address.
+
+What actually broke, every single time, was something else: the institutions that had bet their authority on the old map. The astronomers of the crystal spheres, the theologians of the fixed Earth, the taxonomists of human exceptionalism. People survived being decentered. Hierarchies built on the old center did not.
+
+**The mechanism.** A bigger universe never yet crushed a human being. It only ever crushed the monopolies that were charging rent on the smaller one.
+
+**The rule.** Stages 8 and 9, universal intelligence and the apex, are the final Copernican turn: mind itself gets a bigger address than us. You will hear that this makes humanity meaningless. Translate that claim: someone's authority requires the old map. Your breakfast, your loves, and your garden survive the demotion. Plan for the institutions that won't.

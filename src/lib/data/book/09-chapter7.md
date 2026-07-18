@@ -99,3 +99,17 @@ The Stage 5 backlash is not a theoretical projection; it is already empirically 
 | **Labor & Status Protection:** Deep anxieties regarding job displacement for human drivers and the loss of economic agency. | **Federal Probes:** The US launched an investigation into Waymo robotaxis regarding their safety performance around school buses. |
 
 While the activists defend their actions under the banner of pedestrian safety and anti-surveillance, the underlying current of the protests represents a profound neo-Luddite anxiety regarding job displacement, shifting social norms, and a loss of control to algorithmic entities. As noted by author Brian Merchant in *Blood in the Machine*, the original 19th-century Luddites were not uneducated opponents of technology, but highly skilled technologists who understood exactly how machinery would destroy their workplace autonomy and identities. The modern "rage against the robots" follows this exact historical lineage, serving as a coping mechanism for a populace feeling overwhelmed by technologies poised to permanently replace their societal utility.
+
+---
+
+## Precedent P-09: The Frame-Breakers (England, 1811 to 1816)
+
+This chapter mentioned the Luddites in passing. They earned the full case file, because everything they feared came true and everything they did failed, and both halves of that sentence matter.
+
+The croppers and framework knitters of the English Midlands were the elite of their trade, and their analysis was flawless. They saw precisely how the wide stocking frames would flood the market with degraded goods made by degraded labor. They were even surgical about it: crews often smashed only the frames of owners who cut wages and quality, and spared the machines of masters who kept fair terms. This was not ignorance of technology. It was a labor negotiation conducted with hammers, because no other negotiating table existed.
+
+Parliament's reply was the Frame Breaking Act, which made machine-wrecking a capital crime, and twelve thousand soldiers, more than Wellington had just taken to fight Napoleon in the Peninsula. Men were hanged at York in batches. And the frames won anyway. The wages fell anyway. The craft died anyway. The Luddites got the future exactly right and the strategy exactly wrong, and they paid for the difference at the gallows.
+
+**The mechanism.** Rage against the machine aims at the one component of the system that cannot hear you. The machine has no ears. The owners heard perfectly well, and answered with the army, because the battle line was never human versus machine. It was, and remains, a fight over who sets the terms of the transition.
+
+**The rule.** The Entitled will hand you a hammer and point you at the data center. Decline. Every joule spent fighting the machine's existence is a joule taken from securing your position, and the frame-breaker's hammer is now batting zero for two hundred years. Fight for terms, not against physics.

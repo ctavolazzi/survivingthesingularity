@@ -67,3 +67,21 @@ Stop arguing. Stop waiting. Start building.
 The singularity is here. Survive it if you can.
 
 ---
+
+## Precedent P-22: The Passing Fad (1995 to 2000)
+
+The Ledger closes with three receipts. Frame them.
+
+**February 27, 1995. Newsweek.** Clifford Stoll, an astronomer who had been online for two decades, publishes "The Internet? Bah!" Online shopping, digital news, telecommuting: "baloney." The Internet is "one big ocean of unedited data." No online database will replace your daily newspaper. He later owned it with grace: "Of my many mistakes, flubs, and howlers, few have been as public as my 1995 howler."
+
+**June 1998. Red Herring.** Paul Krugman, future Nobel laureate in economics: "By 2005 or so, it will become clear that the Internet's impact on the economy has been no greater than the fax machine's." He admitted it years later: "I was clearly trying to be provocative, and got it wrong."
+
+**December 5, 2000. The Daily Mail.** An actual printed headline: "Internet 'may be just a passing fad as millions give up on it.'" Millions were abandoning the web, the article explained, bored and frustrated by high access charges and limited uses. Within a decade of that headline, the internet was the substrate of the economy, including the newspaper that printed it.
+
+Notice what all three had in common. They were written by intelligent, credentialed people, and every specific complaint was *true at the moment of writing*. The modems were slow. The search was bad. The access charges were high. They accurately described the technology's current annoyances at the precise moment the annoyances were being engineered away, and mistook the worst version of the technology for the final version.
+
+**The mechanism.** A compounding technology is always the worst it will ever be, today. Critics benchmark the present version; builders build against the next one. Both are describing something real. Only one of them is describing the future.
+
+**The rule.** You are currently living through 2026's editions of these three articles, published weekly, about AI, by smart people, containing accurate complaints. You have now read twenty-two entries in the Precedent Ledger, from the grain fields of the Fertile Crescent to a newspaper calling the internet a fad. You know how this rhymes. The tipping point is 2027. The people writing the essays will still be writing them. You will be building. That is the whole difference, and it has always been the whole difference.
+
+---

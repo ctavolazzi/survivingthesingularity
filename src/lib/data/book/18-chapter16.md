@@ -194,3 +194,15 @@ To begin building your digital leverage today, do not wait for the grid to go do
 They wanted to replace human culture with automated calculations. We are answering by turning our minds into transmitters, our art into shields, and our narratives into weapons.
 
 Keep your metadata clean. Protect your attention. Keep telling the human story.
+
+---
+
+## Precedent P-19: Forty-Seven Pages (Philadelphia, 1776)
+
+Thomas Paine had been in America for barely a year. He was a corset-maker's son, a failed excise officer, a man with no office, no wealth, no troops, and no name worth borrowing. What he had was access to a printing press and a register ordinary people could read aloud in a tavern.
+
+*Common Sense* ran forty-seven pages. Published in January 1776, it tore through the colonies in months, proportionally one of the most widely read things ever printed in America, and it converted a grievance about taxes into a movement for independence. The pamphlet did what no assembly of officials had managed: it changed what ordinary people believed was possible, in their own kitchens, in their own language. The empire it argued against commanded the largest navy on Earth and could not answer forty-seven pages in time.
+
+**The mechanism.** Leverage is the ratio of reach to permission. Paine required nobody's approval: no publisher's blessing beyond a single printer, no institution's endorsement, no gatekeeper's nod. When a new medium drops the cost of reach, the first people to notice acquire influence wildly out of proportion to their credentials, and the institutions that still think credentials are the bottleneck never see it coming.
+
+**The rule.** You hold distribution tools Paine could not have imagined, and so does everyone else, which is exactly why most people use them to consume instead of publish. Media autonomy means being the one printer in your community that the empire can't answer in time. Write the pamphlet. The press is already in your pocket.

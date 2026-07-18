@@ -331,6 +331,18 @@ You have secured your physical shelter, your digital intelligence, and your calo
 
 But autonomous survival is not an individual game played out in lonely isolation. A single container in the woods is eventually a target. True autonomy is built on community, trust, and legal fortresses.
 
-In the next chapter, we transition from Acts I and II to **Act III: The Commons (Legal and Municipal Engineering)**. We will lay out **Chapter 9: Hacking the Deed (Community Land Trusts)**, where we will construct a bulletproof legal framework to secure land, hold it collectively outside the speculative real-estate market, and starve the state of property taxes.
+In the next chapter, the factory learns to speak: **Chapter 10: The "Create Over Consume" Protocol**, where the co-op's work becomes signal and the signal pays for the work. And when it is time to hold the ground under all of it, **Chapter 12: The Land Strategy** lays out the bulletproof legal framework to secure land, hold it collectively outside the speculative real-estate market, and take parcels off the board for good.
 
 Sharpen your legal pens. We are taking back the land.
+
+---
+
+## Precedent P-11: The Year the Bronze Stopped (Eastern Mediterranean, c. 1177 BC)
+
+The Late Bronze Age was a globalized world. Bronze itself was a supply-chain product: copper from Cyprus, tin from sources as distant as modern Afghanistan, moving thousands of miles through interlocking trade networks that connected Egypt, the Hittite Empire, Mycenaean Greece, Ugarit, and Babylon. Palace economies specialized, traded, and grew rich on the interdependence. It was efficient. It was sophisticated. It was, for its era, the most connected the human world had ever been.
+
+Around 1177 BC the whole system failed the way complex systems fail: not from one blow but from a cascade. Drought, famine, migrations, war, and severed trade routes fed on each other, and within a couple of generations nearly every great palace center in the eastern Mediterranean was rubble. The most connected, most specialized economies collapsed hardest and fastest; in Greece, writing itself disappeared for centuries. What persisted were the smaller, less glamorous communities that could feed, clothe, and equip themselves from what was within walking distance.
+
+**The mechanism.** Interdependence is efficiency in fair weather and contagion in foul. The palaces died of their supply chains, because when the tin stopped moving, everything downstream of tin stopped being possible. The villages lived on their soil, because nothing they needed was on a ship.
+
+**The rule.** Deglobalization is not a policy preference; it is what cascading stress does to long supply chains, every time. The neighborhood factory, the local grid, the food within walking distance: that is not nostalgia. That is you deciding, in advance, which side of 1177 BC your street is on.

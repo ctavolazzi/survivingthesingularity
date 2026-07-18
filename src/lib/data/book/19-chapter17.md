@@ -229,3 +229,15 @@ Autonomy is not an intellectual concept. It is a physical, calloused-hand realit
 The machine wants to keep you helpless, dependent on proprietary silicon, and waiting for authorized repair technicians. We are answering by reclaiming the solder iron, the open-source firmware, the DC line, and the raw metal of the earth.
 
 Keep your microcontrollers shielded. Protect your copper loops. Build for the long haul.
+
+---
+
+## Precedent P-20: Access to Tools (Menlo Park, 1968)
+
+In 1968 Stewart Brand put NASA's photograph of the whole Earth on a big black paperback cover and printed three words under the title: **Access to Tools.**
+
+The *Whole Earth Catalog* sold welding rigs, geodesic dome mathematics, seed suppliers, calculators, books on midwifery and books on cybernetics, anything that helped an individual, in Brand's words, conduct his own education, find his own inspiration, and shape his own environment. It refused to separate the homestead from the computer; the back-to-the-land commune and the personal computer both came out of its pages, carried by the same readers. Steve Jobs, closing his 2005 Stanford commencement address, described it as "sort of like Google in paperback form, 35 years before Google came along," and gave the graduating class its sign-off as his own final advice: stay hungry, stay foolish.
+
+**The mechanism.** A catalog of tools is secretly a map of possible selves. Brand understood that people do not become capable by being credentialed. They become capable by getting access, and then getting started. Curation was the product; the tools already existed, scattered and invisible, exactly as they do now.
+
+**The rule.** This chapter is this book's version of that black paperback. Treat your toolset the way Brand treated the catalog: as your education, assembled deliberately, owned outright, and shared forward. Every tool in this chapter was chosen so that you understand it, can repair it, and cannot be locked out of it. Access to tools. It worked in 1968. It is the whole game now.

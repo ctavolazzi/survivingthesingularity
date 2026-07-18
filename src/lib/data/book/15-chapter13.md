@@ -318,6 +318,18 @@ You have now constructed a completely air-tight, structurally invincible, thermo
 
 But a shell is dead without power.
 
-In the next chapter, we will bring this steel beast to life. We will layout **Chapter 6: DC-Native Solar and Recycled Storage**, where we will calculate our energy harvest, build an ultra-efficient DC microgrid, and bypass the energy-wasting trap of centralized AC power inverters.
+The full electrical build that brings this steel beast to life, calculating the energy harvest, wiring an ultra-efficient DC microgrid from recycled storage, and bypassing the energy-wasting trap of centralized AC power inverters, lives in **Chapter 17: Tools of the Trade**. Keep your wire strippers close.
 
-Get your wire strippers ready. It is time to harvest the sun.
+First, though, the next chapter steps back outside the property line. **Chapter 14: The Collapse of the Long Tail** is about what happens to the businesses around you while you build, and what a community owes the people inside them. Gradually, then suddenly: let's look at it up close.
+
+---
+
+## Precedent P-15: The House That Came by Mail (Chicago, 1908 to 1942)
+
+For thirty-four years, you could order a house from a catalog. Sears Modern Homes shipped as precut, numbered lumber with nails, paint, fixtures, and an instruction book, delivered to the nearest rail depot. A family with a poured foundation and a few capable friends could assemble a real, permanent, respectable home with no builder's monopoly anywhere in the transaction. Sears sold tens of thousands of them in hundreds of designs, from tiny cottages to genuinely grand houses.
+
+The industry said what industries always say: that housing was too complex, too consequential, too dangerous to hand to amateurs. The houses themselves voted otherwise. Thousands of Sears homes are still standing and still lived in more than a century later, frequently outperforming the contractor-built housing of the same era, because precut parts and clear instructions turn out to encode expertise better than a busy tradesman's afternoon does.
+
+**The mechanism.** Kit-plus-instructions is how a capability escapes its priesthood. The knowledge gets embedded in the parts and the manual instead of the guild, and the "unqualified" customer turns out to have been qualified all along, just unlicensed.
+
+**The rule.** The shouse is the Sears kit home of this transition: metal building systems, solar kits, prefab panels, open plans, a build you can substantially execute and fully understand. Whenever the incumbents insist something requires their permission and their price, go look for the version that ships as a kit. It existed in 1908. It exists now.

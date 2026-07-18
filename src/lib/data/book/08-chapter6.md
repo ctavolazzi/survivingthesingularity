@@ -95,3 +95,17 @@ We have always used technology to solve the failures of our environment. Agricul
 The SBI fact: Synthetic Biological Intelligence is not a sci-fi threat; it is the next apex organism. We observe it through the "Invisible Hand Made Visible", a dexterous robotic hand capable of complex labor, untethered from the cloud.
 
 And here is the mathematical dead end: for those under 25, the old model of "labor-for-survival" is mathematically impossible. This isn't a failure of their ambition; it is a structural failure of an economy that prioritizes "Number Go Up" over human survival.
+
+---
+
+## Precedent P-08: The Grain Trap (Fertile Crescent, c. 9500 BC)
+
+The first singularity was a seed.
+
+When bands of foragers in the Fertile Crescent settled down around wild grasses, the deal for each individual got measurably *worse*. The skeletons tell the story: early farmers were shorter than the hunter-gatherers who preceded them, with worse teeth, new diseases caught from their own livestock, and a workday that would have struck a forager as insane. Archaeologists describe the transition to agriculture with a standard phrase, a decline in health and stature. The first great technology made its first adopters sicker, smaller, and more exhausted.
+
+And it did not matter even slightly. Grain could be stored, counted, taxed, and multiplied. Farming villages out-bred and out-organized foraging bands, and within a few thousand years there was effectively nowhere left to not-farm. No one voted. No council of elders weighed the pros and cons on behalf of the species. The people inside the transition mostly could not see it, and their grandchildren could not leave it, because the skills, the land, and the population numbers had already crossed over.
+
+**The mechanism.** A technology does not need to make each person better off to become mandatory. It only needs to make the groups that adopt it outcompete the groups that don't. The ratchet turns on group selection, not on consent, and it has been turning since before writing existed to complain about it.
+
+**The rule.** "We'll simply choose not to adopt it" has been losing for eleven and a half thousand years. That is why the Singularity is a done deal: not because the machines are unstoppable, but because the adoption ratchet is. Stop spending energy on whether the transition happens. Spend all of it on what position you hold when it does.

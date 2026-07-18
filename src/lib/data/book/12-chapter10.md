@@ -246,6 +246,20 @@ In the next act of this manual, we are moving out of the system entirely. We hav
 
 Now, we build.
 
-We start with **Chapter 5: The Autonomous Shell ($25,000 Exit Strategy)**, where we will lay out the precise structural engineering, concrete placement, and metal-welding steps to construct a double-wide shipping-container fortress that will run completely outside their speculative, debt-fueled grid.
+We start with **Chapter 11: Using the Tech to Your Advantage**, turning the machine loose on our own problems, on hardware we own outright. And we build toward **Chapter 13: The Shouse Protocol**, the precise structural engineering, concrete placement, and metal-welding steps of a double-wide shipping-container home that runs completely outside their speculative, debt-fueled grid.
 
 Grab your boots and your welding helmet. It is time to get your hands dirty.
+
+---
+
+## Precedent P-12: The Abbot's Confession (Sponheim, 1492)
+
+Forty years after Gutenberg, the abbot Johannes Trithemius wrote *De Laude Scriptorum*, "In Praise of Scribes," the era's most eloquent attack on the printing press. The scribe's hand-copying was devotional, he argued; the printed book was vulgar and impermanent. "The printed book is made of paper and, like paper, will quickly disappear."
+
+Then he wanted people to actually read his argument. So he had it printed.
+
+His own monastery's library, meanwhile, filled up with printed volumes, and his own monks quietly abandoned perpetual copying as pointless. Trithemius was not a hypocrite, exactly. He was something more instructive: a sincere man whose body made a different decision than his pen. The moment reach mattered, he reached for the machine.
+
+**The mechanism.** Watch what critics of the new machine do, not what they write. They will publish the old world's eulogy on the new world's presses, every time, because the tool's advantage is real even to the people whose identity requires denying it. The sincerity of the critique and the adoption of the tool are not in conflict. They are the standard sequence.
+
+**The rule.** Today's version of Trithemius posts hand-wringing essays about AI, drafted with AI, to platforms ranked by AI. Ignore the essay; note the workflow. And take the personal warning underneath it: you do not get to sit out the tools of your era on aesthetic grounds. You only get to choose whether you use them to create or merely to complain, and the Create Over Consume protocol exists so you end up on the right side of that line.

@@ -222,3 +222,15 @@ Before you can build a mesh network or pool land with your neighbors, you must r
 Survival in the Singularity is not about waiting for a political savior or hoping the machines suddenly develop a warm, fuzzy conscience. It is about understanding the hard physics of your existence, securing your local energy loops, and building a collective, thermodynamic sanctuary in the cracks.
 
 Adjust your battery chargers. Protect your soil. It’s time to stop leaking energy to a machine that doesn’t love you.
+
+---
+
+## Precedent P-07: The Horse's Last Ledger (1783 to 1960)
+
+James Watt had a marketing problem. He needed to sell steam engines to men who owned horses, so he invented a unit of account that priced the animal in its own currency: *horsepower*. From the moment that word existed, every horse in the world was walking around with a number on its back, whether its owner knew it or not.
+
+For a century the horse looked untouchable. The horse population of the United States kept climbing right through the railroad age, peaking above twenty-five million in the 1910s, with an entire economy of hay fields, stables, farriers, harness makers, and teamsters built on its metabolism. Then internal combustion crossed the cost line, joules per dollar, and in a single working lifetime the population collapsed to a few million animals kept mostly for pleasure. The horse never became less noble, less strong, or less willing. It was out-priced per watt, and sentiment appeared in exactly zero rows of the ledger.
+
+**The mechanism.** The horse's owners debated tradition, beauty, and loyalty. The machine's buyers computed operating cost per unit of work. Only one of those conversations was real. Thermodynamic arithmetic does not negotiate, and it does not send a warning before it closes the account.
+
+**The rule.** You are a twenty-watt engine in a market that has just started selling intelligence by the kilowatt-hour. Audit your own energy ledger, what you consume, what you produce, and who captures the difference, before someone else runs the numbers on you. The horse found out its price after the fact. You still get to set some of the terms.

@@ -210,3 +210,33 @@ Transitioning to a hyper-local network is not a passive process. It requires act
 The Singularity didn't just break our supply chains; it broke our belief that we can survive without each other. The ultimate strategy for surviving in the cracks is simple: stop looking at the horizon for the next cargo ship, and start looking at your neighbor.
 
 Everything we need to survive is already here. We just need to connect the nodes.
+
+---
+
+## Precedent P-16: The Graveyard of the Unconvinced (1975 to 2011)
+
+Four headstones, one epitaph. Every company below *saw the wave*, and died anyway, because seeing is not the hard part.
+
+**Kodak, 1975.** A 24-year-old Kodak engineer named Steve Sasson built the world's first digital camera: eight pounds, 0.01 megapixels, twenty-three seconds per photo. He showed management. Their response, in his own telling: "That's cute, but don't tell anyone about it." The stated logic was that nobody would want to look at pictures on a television. The real logic was that Kodak's entire margin lived in chemistry, film, paper, and developing, and Sasson's box used none of it. Kodak held the future in its hands a decade before anyone else, put it in a drawer to protect the film business, and filed for bankruptcy in 2012, the same decade every human on Earth started carrying a digital camera in their pocket.
+
+**Sears, 1993.** For sixty years Sears *was* Amazon: a company that mailed a catalog of everything to millions of homes and delivered to the middle of nowhere. You could buy a house from it (see P-15). In 1993, with the catalog earning "only" $3.3 billion, the executives killed it to focus on the mall stores, dismantling the fulfillment machine and letting the customer lists go stale. Amazon was founded the following year. Jeff Bezos picked the everything-store playbook out of the trash where Sears had just dropped it and added a web browser. When Sears finally wanted online commerce in 1997, it had to rebuild from scratch the organ it had amputated.
+
+**Blockbuster, 2000.** Netflix's founders flew to Dallas and offered their company to Blockbuster for fifty million dollars. By the founders' account they were laughed out of the room (the CEO later disputed the laughing; the outcome is not disputed). Blockbuster's profits ran on late fees, meaning it was structurally paid by its customers' resentment, and Netflix's entire pitch was the deletion of that resentment. Blockbuster went bankrupt in 2010.
+
+**Borders, 2001.** The bookstore chain decided e-commerce was a distraction and outsourced its entire online operation to Amazon. Every Borders online customer was an Amazon customer wearing a Borders name tag, from day one. Borders took its website back in 2008, seven years too late, and was liquidated in 2011.
+
+**The mechanism.** Not one of these companies was blind. Kodak *invented* the killer; Sears *owned* the playbook; Blockbuster *held the term sheet*; Borders *signed the partnership*. The incumbent doesn't die because it can't see the wave. It dies because it is holding too much beachfront property to admit the tide is real. The long tail collapses gradually, then suddenly, and "suddenly" is the part that shows up in the bankruptcy filing.
+
+**The rule.** Find the line item where the old world charges people for its own inconvenience, late fees, gatekeeping, distribution monopolies. That line item is a countdown clock. If your income depends on one, move. If your plan can exploit one, hurry.
+
+---
+
+## Precedent P-17: The Mirror Twin (Tokyo, 2000s)
+
+One company faced Kodak's exact extinction event and lived, which is what makes it the most important entry in the graveyard: it proves the deaths were choices.
+
+Fujifilm's film business peaked in 2000 and then collapsed on the same schedule as Kodak's. Instead of defending the product, Fujifilm asked what its chemistry was *actually* good at: thin-film coatings, collagen science (film is mostly gelatin), antioxidants that keep photographs from fading. It aimed those exact competencies at new targets, cosmetics, pharmaceuticals, regenerative medicine, and the specialized films inside LCD screens, and thrived while its mirror twin in Rochester went under.
+
+**The mechanism.** Kodak believed it was in the film business. Fujifilm realized it was in the applied-chemistry business. One defined itself by its product, which the wave destroyed; the other by its capabilities, which the wave could not touch.
+
+**The rule.** When the wave comes for your job or your company, do not ask "how do I save the product." Ask "what am I actually good at, and where does that skill eat next." Your product is mortal. Your capabilities are transferable, but only if you can name them before the bankruptcy lawyer does.

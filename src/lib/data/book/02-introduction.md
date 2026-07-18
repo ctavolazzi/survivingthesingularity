@@ -28,4 +28,18 @@ If that sends a shiver down your spine, good. It should. But don't be afraid of 
 
 This is the roadmap. These are the nine stages. And we are already well into the first one.
 
+## The Precedent Ledger
+
+One more thing before we begin, because you're going to meet it at the end of every chapter in this book.
+
+You have been told, your whole life, that nothing like this has ever happened before. That is the single most disempowering lie in circulation right now, because a person facing something unprecedented has nothing to work with: no map, no case law, no record of what the survivors did. Cut off from history, you are easy to stampede.
+
+So this book carries its case law with it. It's called the Precedent Ledger: twenty-two documented episodes of human beings standing exactly where you are standing, watching a new capability arrive and reprice their entire world. The Ledger runs all the way back, past the pundits who called the internet a passing fad, past the executives who buried the digital camera to protect film, past the frame-breakers and the red-flag laws and the abbots raging at the printing press, back to the first and largest singularity our species ever walked through: the seed. Agriculture. The one-way door that turned foragers into farmers without asking anyone's permission.
+
+Every chapter closes with one entry. Each carries a serial number, P-01 through P-22, because these are exhibits, not anecdotes: each one is dated, documented, and filed where you can check it (the full index, with sources, is Appendix D). Read each one twice. The first time it will sound like a story about someone else. The second time you will notice it is a story about you, with the nouns changed.
+
+The old books of strategy were built this way on purpose. You learn what power does by watching what it did. History doesn't repeat, but it rhymes so hard you can set your survival plan to the meter.
+
+The Ledger opens on the next page, with the panic that greeted the most dangerous consumer technology ever handed to ordinary people: the paperback book.
+
 ---

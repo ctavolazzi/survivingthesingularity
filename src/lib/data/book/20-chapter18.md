@@ -113,3 +113,17 @@ The curriculum is modular, actionable, and technical:
 A system is only as good as its ability to provide food, shelter, and care locally. If your economy cannot provide an Adequate Level of Care to its neighbors, it is a failed system.
 
 The old world is gone. It's time to start building the new one.
+
+---
+
+## Precedent P-21: The Apocalypse That Ran On Time (1999)
+
+The Y2K bug was real. Billions of lines of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" was going to mean 1900 to machines that ran the world.
+
+What followed was history's largest premortem. Instead of waiting to see what broke, the world assumed failure in advance and worked backward: roughly three hundred billion dollars spent globally, more than a hundred billion in the United States alone, on auditing, patching, and testing before the deadline. Midnight came. Planes flew. Banks opened. The disaster produced trivia instead of headlines.
+
+Then came the instructive part: the punchline. Because nothing happened, a chorus concluded that nothing would have happened, that the whole effort was hysteria. And honesty requires the caveat: some countries that spent little also passed quietly, so the true size of the averted disaster is genuinely contested. Sit with how strange that is. The most successful large-scale act of anticipatory engineering in history is remembered, by many, as an overreaction.
+
+**The mechanism.** Prevention is invisible by construction. A premortem that works looks, from the outside, exactly like paranoia that turned out to be unnecessary, because the catastrophe it purchased the absence of never shows up to testify.
+
+**The rule.** This is the emotional price of the Premortem Pivot, and you should pay it knowingly: if you prepare well and the transition doesn't shatter your life, people will say you overreacted. Let them. Judge your preparation by the quality of the reasoning before the deadline, never by the silence after it. The silence is the product. You are buying it now.

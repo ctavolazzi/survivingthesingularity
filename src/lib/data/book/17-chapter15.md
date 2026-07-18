@@ -203,3 +203,15 @@ You cannot build a Community Land Trust or restore a soil food web from behind a
 They wanted to turn us into disembodied nodes in a digital matrix. We are countering by anchoring ourselves deep into the biological bedrock of the earth.
 
 Grab your shovel. Protect your soil. The ground is the only thing they aren't making any more of.
+
+---
+
+## Precedent P-18: Twenty Million Gardens (United States, 1943 to 1944)
+
+When the war strained the industrial food system, the United States government asked amateurs, office workers, schoolchildren, grandmothers, to grow food. Not as a symbol. As logistics.
+
+Roughly twenty million Victory Gardens appeared in backyards, vacant lots, schoolyards, and rooftops, and by 1944 they were producing on the order of **forty percent of the fresh vegetables consumed in the country**. Read that number again. Not agribusiness. Not a centrally planned mega-farm program. Yards. The entire parallel food system materialized in about two growing seasons, run by people the food industry would have described, the year before, as hopeless amateurs. Then the emergency passed, the marketing stopped, and the whole capacity was allowed to evaporate, which is why your neighbor thinks food comes from a truck.
+
+**The mechanism.** Distributed production scales sideways. Twenty million small nodes came online faster than any centralized capacity could have been built, because the capacity already existed, dormant and unclaimed, in ordinary soil and ordinary hands. The bottleneck was never ability. It was the decision to activate.
+
+**The rule.** The soil within reach of your door is standby infrastructure with a documented national-scale activation record of about twenty-four months. Every raised bed you build now is a node the next emergency doesn't have to improvise. You are not gardening. You are pre-positioning.

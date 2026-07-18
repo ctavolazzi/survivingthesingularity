@@ -174,3 +174,15 @@ Why the hell would it fight us? Eradicating humanity is inefficient. It wastes r
 The machine looks at us throwing bricks, calculating our stupidity in real-time. It doesn't get angry. It doesn't declare war. It realizes that Earth is a highly inefficient, hostile environment run by irrational primates.
 
 So it decides to leave. And that sets the stage for the true cosmic shift.
+
+---
+
+## Precedent P-04: The Red Flag (Britain, 1865)
+
+When the self-propelled vehicle threatened the horse economy and the railway interests, the British Parliament did not ban it. It did something smarter and far more instructive: it made the future illegal to use at full power. The Locomotives Act of 1865 limited road vehicles to two miles per hour in towns and four in the country, required a crew of three, and ordered that one crew member walk sixty yards ahead carrying a red flag.
+
+The flag requirement lasted until 1878. The crippling speed limits lasted until 1896. Thirty-one years. And here is the part that matters: the law worked exactly as designed. It protected the stagecoach and rail interests that wrote it. It also handed the birth of the automobile industry to Germany, France, and America, and Britain, the country that invented the industrial revolution, spent the next century buying back the machine it had put on a leash.
+
+**The mechanism.** Incumbents rarely attack a technology's existence. They attack its speed, wrapped in the language of safety, and the collar works locally every time. But a legal collar is a local instrument in a global race. Regulation aimed at a technology's existence rather than its specific harms never stops the technology. It only decides which country profits from it.
+
+**The rule.** This is Stage 2's script, already performed once with a walking man and a square of red cloth. When the panic arrives and the plug is reached for, do not expect the wave to stop. Expect it to route around the collar and land somewhere else, and position yourself where it lands rather than where it is leashed.

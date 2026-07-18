@@ -144,6 +144,11 @@
       "id": "appendix-c",
       "title": "Appendix C: Executive Reference Guide",
       "file": "24-appendix-c.md"
+    },
+    {
+      "id": "appendix-d",
+      "title": "Appendix D: The Precedent Ledger",
+      "file": "25-appendix-d.md"
     }
   ]
 }

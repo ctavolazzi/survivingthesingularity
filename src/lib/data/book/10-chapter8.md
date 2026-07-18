@@ -372,7 +372,7 @@ Because when the physical systems analyzed in Chapter 2 begin to rattle, a group
 
 But a small, highly focused, cognitively autonomous group running on analog protocols? They can build a micro-grid, construct a gravity-fed water loop, and lay down the foundations of a legal land trust while the rest of the world is busy scrolling through the apocalypse.
 
-In the next chapter, we are going to look at the ultimate weapon of digital extraction: the rise of algorithmic synthetic content. It is time to talk about Model Collapse, Algorithmic Judo, and how to weaponize the machine’s own algorithms to distribute off-grid, survival-level truth.
+Ahead in this manual, in Chapters 10 and 16, we take on the ultimate weapon of digital extraction: the rise of algorithmic synthetic content. That is where we talk about Model Collapse, Algorithmic Judo, and how to weaponize the machine’s own algorithms to distribute off-grid, survival-level truth.
 
 ---
 
@@ -532,4 +532,16 @@ You have stopped trying to fight the machine. You have stopped trying to reform 
 
 You eat because the soil biology is active. You have light because the DC solar bus is wired. You have intelligence because the local GPU is spinning. And you are safe because the people to your left and right are playing the long, cooperative game with you.
 
-In the next chapter, we look at the communication protocols that bind these nodes together. We will explore **Chapter 10: The Autonomy Protocol (Mesh Networks, LoRa, and Offline Communication)**, where we will build the silent, un-brickable communication lines that keep the commons connected when the commercial towers go quiet.
+In the next chapter, we put this circle to work: **Chapter 9: Deglobalization and the Neighborhood Factory**, where the trust mesh stops being a support group and becomes a production system. The radios themselves, the mesh networks, LoRa, and the silent, un-brickable communication lines that keep the commons connected when the commercial towers go quiet, get their own workbench chapter: **Chapter 17: Tools of the Trade**.
+
+---
+
+## Precedent P-10: Torches of Freedom (New York, 1929)
+
+In 1929 it was scandalous for a woman to smoke in public, which meant half the American cigarette market was locked behind a taboo. So the American Tobacco Company hired Edward Bernays, Sigmund Freud's nephew and the inventor of the phrase "public relations," to pick the lock.
+
+Bernays did not buy advertisements arguing that women should smoke. He hired young women to march in New York's Easter Sunday parade and, on a prearranged cue, light cigarettes in front of the photographers he had also arranged to be standing there. He fed the press the phrase "torches of freedom." The papers ran it as news, because it looked like news. Emancipation itself, the most authentic aspiration of the era, was retooled into a nicotine delivery vector. The women in the parade experienced it as liberation. On the company's books, it was inventory expansion.
+
+**The mechanism.** Industrial persuasion does not argue with your values. It wears them. The extraction arrives dressed as the thing you already believe in, which is why it never trips your defenses: the desire feels self-authored, because the best delivery system for someone else's agenda is your own identity.
+
+**The rule.** Bernays had newspapers and a parade. The systems aimed at you have your location, your pulse, your search history, and a trillion training examples of what makes people click. So before you act on a want, run the audit this chapter taught you: who profits if I feel this? The Great Cognitive Extraction does not pick your pocket. It picks your wanting.

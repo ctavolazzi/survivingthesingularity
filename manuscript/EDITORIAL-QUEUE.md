@@ -11,6 +11,9 @@ holds the ID table + sources; verification receipts in `manuscript/sources/resea
 (sts.py book, post-weave); the Conclusion is no longer the short outlier (313 -> ~1,600
 with P-22). Compiled snapshot: `StS-Complete-Draft-v0.0.7.md` (via new `sts.py compile`).
 Remaining polish item: voice pass over the 22 blocks against each chapter's sign-off lines.
+→ DONE 2026-07-18: all 22 blocks checked against their chapters' closing lines (sign-off
+extraction + manual review); no phrase collisions or duplicated closers; P-01/P-22 practice
+blocks confirmed present.
 **Updated:** 2026-07-10 — Draft 5 ("Manual for the Cracks" lineage, recovered from Google
 Drive via `manuscript/SOURCE-MANIFEST.md`) merged into the Part II–III stubs. See
 `manuscript/StS-Complete-Draft-v0.0.3.md` Compilation Notes for the chapter mapping.
@@ -52,9 +55,9 @@ Front/back matter (preface 739, intro 544, appendices 1,318 + 1,460) is fine as-
 
 **Priority order** (updated 2026-07-10 evening, after both folds; every former stub is
 filled — remaining work is polish, not fill):
-1. **Ch. 3 The Leap to ASI (872w)** — the only chapter still under 1,000 words.
-2. **Egalitarian Pivot** section (Ch. 6/7 territory) — last outline gap with no prose.
-3. **Conclusion (313w)** — improved but still short for a closer.
+1. ~~**Ch. 3 The Leap to ASI (872w)**~~ — RESOLVED 2026-07-17: narrative weave (Zone 2 scene) + P-05; well over 1,000 words.
+2. **Egalitarian Pivot** section (Ch. 6/7 territory) — last outline gap with no prose. → First draft now exists: `manuscript/drafts/draft-egalitarian-pivot.md` (2026-07-18); needs author edit + placement in Ch. 6 Foundations.
+3. ~~**Conclusion (313w)**~~ — RESOLVED 2026-07-17: Bear Flag scene + P-22; ~1,600+ words.
 4. **Voice pass over all merged material** (Ch. 4, 6–13, 18) — the folds span the hot
    Manifesto register and the clinical research register; Part III should read like a
    field manual per the site's promise.
@@ -69,6 +72,10 @@ filled — remaining work is polish, not fill):
   → AI first draft queued: `manuscript/drafts/draft-egalitarian-pivot.md`
 - [ ] **Stage-2 real-world evidence weave for Ch. 2** (June 2026 export-control shutdown /
   GLM-5.2 events). → AI first draft queued: `manuscript/drafts/draft-ch2-stage2-evidence.md`
+  → BLOCKED 2026-07-18: `sts.py research` could not verify these events (Mojeek 403,
+  Wikipedia sweep inconclusive); drafting without receipts would violate the casebook's
+  own sourcing rule. Needs: author-supplied links, or a research pass from a machine
+  with working web search. Do not draft from memory.
 - [ ] **"Local Biological Hub" / "Abundance Quotient"** — referenced concepts without
   standalone chapters; Ch. 18 carries them for now. Optional: give each a section inside
   Ch. 9/Ch. 15 rather than new chapters.
@@ -97,7 +104,7 @@ like a field manual (the homepage promises "actionable mechanics, not abstract a
 
 ## 5. Definition of done (pre-launch)
 
-- [ ] No chapter under 1,000 words (or consciously merged into a neighbor)
+- [x] No chapter under 1,000 words — verified 2026-07-18 (`sts.py book --thin 1000`: zero flags)
 - [ ] Two outline gaps drafted, edited, and placed
 - [ ] One voice pass over Part II–III stubs
 - [ ] `scripts/build-epub.sh vX` run; EPUB spot-read on a phone + e-reader

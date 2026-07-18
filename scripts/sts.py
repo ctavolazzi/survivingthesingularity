@@ -15,6 +15,8 @@ Commands:
     live      Probe production and compare against local routes (deploy drift)
     sitemap   Check sitemap.xml against real routes; --write regenerates it
     routes    List every route the site actually serves
+    research  Search the web (Wikipedia + DuckDuckGo) for sources/examples;
+              --save appends results to manuscript/sources/research-log.md
 
 Every command accepts --json for machine-readable output.
 `audit` and `sitemap` exit non-zero when errors are found (CI-friendly).
@@ -28,11 +30,14 @@ Examples:
 """
 
 import argparse
+import html as html_mod
 import json
 import re
 import subprocess
 import sys
+import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -778,6 +783,159 @@ def cmd_status(args) -> int:
 
 # ──────────────────────────────────────────────────────────────────────
 
+# ──────────────────────────────────────────────────────────────────────
+# research — web search for sources and historical examples (stdlib only)
+# ──────────────────────────────────────────────────────────────────────
+
+RESEARCH_UA = ("sts.py/" + VERSION +
+               " (survivingthesingularity.com book research; ctavolazzi@gmail.com)")
+
+
+def _http_get(url: str, timeout: int = 15) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": RESEARCH_UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def _strip_tags(fragment: str) -> str:
+    return html_mod.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
+
+
+def _wiki_search(query: str, n: int) -> list:
+    qs = urllib.parse.urlencode({
+        "action": "query", "list": "search", "srsearch": query,
+        "srlimit": n, "format": "json", "srprop": "snippet",
+    })
+    data = json.loads(_http_get("https://en.wikipedia.org/w/api.php?" + qs))
+    hits = []
+    for it in data.get("query", {}).get("search", []):
+        slug = urllib.parse.quote(it["title"].replace(" ", "_"))
+        hits.append({"source": "wiki", "title": it["title"],
+                     "url": "https://en.wikipedia.org/wiki/" + slug,
+                     "snippet": _strip_tags(it.get("snippet", ""))})
+    return hits
+
+
+def _wiki_summary(title: str) -> str:
+    slug = urllib.parse.quote(title.replace(" ", "_"))
+    try:
+        data = json.loads(_http_get(
+            "https://en.wikipedia.org/api/rest_v1/page/summary/" + slug))
+        return data.get("extract", "")
+    except Exception:
+        return ""
+
+
+BROWSER_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+              "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+
+def _mojeek_search(query: str, n: int) -> list:
+    """Mojeek serves parseable HTML without a bot challenge (DDG/Bing do not)."""
+    req = urllib.request.Request(
+        "https://www.mojeek.com/search?" + urllib.parse.urlencode({"q": query}),
+        headers={"User-Agent": BROWSER_UA})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        page = r.read().decode("utf-8", "replace")
+    link_pat = re.compile(
+        r'<h2><a class="title"[^>]+href="([^"]+)"[^>]*>(.*?)</a></h2>'
+        r'(?:<p class="s">(.*?)</p>)?', re.S)
+    hits = []
+    for m in link_pat.finditer(page):
+        hits.append({"source": "web", "title": _strip_tags(m.group(2)),
+                     "url": m.group(1),
+                     "snippet": _strip_tags(m.group(3) or "")})
+        if len(hits) >= n:
+            break
+    return hits
+
+
+def _ddg_search(query: str, n: int) -> list:
+    page = _http_get("https://html.duckduckgo.com/html/?" +
+                     urllib.parse.urlencode({"q": query}))
+    link_pat = re.compile(
+        r'<a[^>]+class="result__a"[^>]+href="([^"]+)"[^>]*>(.*?)</a>', re.S)
+    snip_pat = re.compile(r'class="result__snippet"[^>]*>(.*?)</a>', re.S)
+    snippets = [_strip_tags(s) for s in snip_pat.findall(page)]
+    hits = []
+    for i, m in enumerate(link_pat.finditer(page)):
+        href = m.group(1)
+        if "uddg=" in href:  # DDG redirect wrapper
+            href = urllib.parse.unquote(href.split("uddg=")[1].split("&")[0])
+        if href.startswith("//"):
+            href = "https:" + href
+        hits.append({"source": "web", "title": _strip_tags(m.group(2)),
+                     "url": href,
+                     "snippet": snippets[i] if i < len(snippets) else ""})
+        if len(hits) >= n:
+            break
+    return hits
+
+
+def _web_search(query: str, n: int) -> list:
+    """General web search: Mojeek first, DuckDuckGo as fallback.
+
+    Both engines captcha rapid-fire clients. Space calls ~20s apart when
+    running batches (see --sleep), and prefer --wiki-only when Wikipedia
+    can answer — the Wikipedia API is not rate-limited at this volume.
+    """
+    for engine in (_mojeek_search, _ddg_search):
+        try:
+            hits = engine(query, n)
+            if hits:
+                return hits
+        except Exception as e:
+            print(f"  {engine.__name__}: failed ({e})", file=sys.stderr)
+    return []
+
+
+def cmd_research(args) -> int:
+    query = " ".join(args.query)
+    results = []
+    if not args.web_only:
+        try:
+            results += _wiki_search(query, args.n)
+        except Exception as e:
+            print(f"  wikipedia: search failed ({e})", file=sys.stderr)
+    if not args.wiki_only:
+        if args.sleep:
+            time.sleep(args.sleep)
+        results += _web_search(query, args.n)
+    if args.summary:
+        for r in results:
+            if r["source"] == "wiki":
+                r["summary"] = _wiki_summary(r["title"])
+
+    if args.json:
+        print(json.dumps({"query": query, "results": results}, indent=2))
+    else:
+        print(f"research: {query} — {len(results)} results\n")
+        for r in results:
+            print(f"  [{r['source']}] {r['title']}")
+            print(f"        {r['url']}")
+            if r.get("snippet"):
+                print(f"        {r['snippet'][:220]}")
+            if r.get("summary"):
+                print(f"        | {r['summary'][:400]}")
+            print()
+
+    if args.save and results:
+        log = ROOT / "manuscript" / "sources" / "research-log.md"
+        log.parent.mkdir(parents=True, exist_ok=True)
+        new_file = not log.exists()
+        with log.open("a", encoding="utf-8") as f:
+            if new_file:
+                f.write("# Research log — sts.py research --save\n")
+            f.write(f"\n## {date.today().isoformat()} — {query}\n\n")
+            for r in results:
+                f.write(f"- [{r['title']}]({r['url']}) ({r['source']})")
+                if r.get("snippet"):
+                    f.write(f" — {r['snippet'][:200]}")
+                f.write("\n")
+        print(f"  saved -> {log.relative_to(ROOT)}")
+    return 0 if results else 1
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -822,6 +980,21 @@ def main():
     p.add_argument("--write", action="store_true",
                    help="regenerate static/sitemap.xml from the real route table")
     p.set_defaults(fn=cmd_sitemap)
+
+    p = sub.add_parser("research",
+                       help="search the web for sources/examples (Wikipedia + DuckDuckGo)")
+    p.add_argument("query", nargs="+", help="search terms")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("-n", type=int, default=5, help="results per engine (default 5)")
+    p.add_argument("--wiki-only", action="store_true")
+    p.add_argument("--web-only", action="store_true")
+    p.add_argument("--summary", action="store_true",
+                   help="pull full intro extracts for Wikipedia hits")
+    p.add_argument("--sleep", type=int, default=0,
+                   help="seconds to wait before the web query (batch politeness; ~20s avoids captchas)")
+    p.add_argument("--save", action="store_true",
+                   help="append results to manuscript/sources/research-log.md")
+    p.set_defaults(fn=cmd_research)
 
     args = ap.parse_args()
     sys.exit(args.fn(args))

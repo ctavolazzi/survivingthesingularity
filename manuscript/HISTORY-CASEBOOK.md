@@ -1,9 +1,46 @@
 # The History Casebook — verified cases for the manuscript
 
 **Compiled:** 2026-07-12, from primary-adjacent web research (sources below each case).
+**Expanded:** 2026-07-17 — Precedent Ledger ID system introduced; deep-history cases added
+(agriculture → antiquity → print → industrial → information age), verified via
+`sts.py research` (see `manuscript/sources/research-log.md`).
 **Method:** Robert Greene treatment — each case gets the story, the mechanism, and the lesson,
 written to be transplanted into a chapter. Placement map at the bottom. **Apocrypha blacklist
 at the very bottom — do not let these into the book.**
+
+---
+
+## THE PRECEDENT LEDGER (v0.0.1)
+
+Every chapter of the book closes with a **Precedent** — a documented historical case of
+humans meeting a technological wave, told Greene/Carnegie style (story → mechanism → rule).
+IDs run P-01 → P-22 in **order of appearance in the book**, so the reader can feel the
+ledger accumulate. The Ledger itself is indexed in Appendix D.
+
+| ID | Precedent | Event date | Book section | Casebook ref |
+|---|---|---|---|---|
+| P-01 | The Reading Rage | 1790s | Preface (specimen) | D1 |
+| P-02 | The Toy at the Fair | 1876 | Ch. 0 The Demonstration | F1 |
+| P-03 | One Million Years, Give or Take | 1903 | Ch. 1 Event Horizon | G1 |
+| P-04 | The Red Flag | 1865 | Ch. 2 Era of AGI | C1 |
+| P-05 | The Fleet That Sailed Home Forever | 1433 | Ch. 3 Machine Exodus | F2 |
+| P-06 | The Great Demotion | 1543 | Ch. 4 Universal Apex | F3 |
+| P-07 | The Horse's Last Ledger | 1783–1960 | Ch. 5 Thermodynamics | F4 |
+| P-08 | The Grain Trap | c. 9500 BC | Ch. 6 Done Deal | F5 |
+| P-09 | The Frame-Breakers | 1811 | Ch. 7 Battle Lines | F6 |
+| P-10 | Torches of Freedom | 1929 | Ch. 8 Psychology of Collapse | F7 |
+| P-11 | The Year the Bronze Stopped | c. 1177 BC | Ch. 9 Deglobalization | F8 |
+| P-12 | The Abbot's Confession | 1492 | Ch. 10 Create Over Consume | C2 |
+| P-13 | The Quartz Heresy | 1969–1983 | Ch. 11 Tech to Your Advantage | B2 |
+| P-14 | One Hundred Sixty Acres | 1862 | Ch. 12 Land Strategy | F9 |
+| P-15 | The House That Came by Mail | 1908 | Ch. 13 Shouse Protocol | F10 |
+| P-16 | The Graveyard of the Unconvinced | 1975–2011 | Ch. 14 Long Tail | A1–A4 |
+| P-17 | The Mirror Twin | 2000s | Ch. 14 Long Tail (counter) | B1 |
+| P-18 | Twenty Million Gardens | 1943–44 | Ch. 15 Reclaiming Soil | F11 |
+| P-19 | Forty-Seven Pages | 1776 | Ch. 16 Digital Leverage | F12 |
+| P-20 | Access to Tools | 1968 | Ch. 17 Tools of the Trade | F13 |
+| P-21 | The Apocalypse That Ran On Time | 1999 | Ch. 18 Premortem Pivot | G2 |
+| P-22 | The Passing Fad | 1995–2000 | Conclusion | G3 |
 
 ---
 

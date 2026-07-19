@@ -113,29 +113,9 @@ When you buy a bag of synthetic chemical fertilizer, you are buying fossil fuel 
 
 Furthermore, synthetic fertilizers are a trap. The highly concentrated salts kill the native soil biology, the mycorrhizal fungi and nitrogen-fixing bacteria that evolved over millions of years to feed plant roots. Once the soil biology is dead, the soil becomes sterile dirt. The plants become entirely addicted to the synthetic inputs; if you stop applying chemical salts, the crop collapses.
 
-```text
-                   [THE DESTRUCTIVE FEEDBACK LOOP]
-     +---------------------------------------------------------+
-     |                  Apply Synthetic NPK                    |
-     +---------------------------------------------------------+
-                                  |
-                                  v
-     +---------------------------------------------------------+
-     |      Chemical Salts Kill Native Soil Biology            |
-     +---------------------------------------------------------+
-                                  |
-                                  v
-     +---------------------------------------------------------+
-     |         Soil Structure Collapses Into Sterile Dirt      |
-     +---------------------------------------------------------+
-                                  |
-                                  v
-     +---------------------------------------------------------+
-     |     Plants Become Addicted to Constant Synthetic Inputs |
-     +---------------------------------------------------------+
-```
+![The Destructive NPK Feedback Loop: applying synthetic NPK kills native soil biology, which collapses the soil into sterile dirt, which makes plants dependent on constant synthetic inputs, which sends you back to buy the next bag](/book-images/ch09-npk-loop.svg)
 
-  
+*The NPK subscription trap. Every bag makes the next bag mandatory; the exit is biological.*
 
 ### The Biological Counter-Offensive
 
@@ -151,29 +131,9 @@ By maintaining a biologically active soil matrix, what Dr. Elaine Ingham terms t
 
 We do not have time to sit in a greenhouse all day adjusting manual valves and checking soil moisture with our fingers. We automate the physical environment using a Raspberry Pi paired with **Mycodo**, an open-source, industrial-grade environmental regulation system.
 
-```text
-                     [THE GREENHOUSE AUTOMATION BUS]
-                        +----------------------+
-                        |  Raspberry Pi Host   |
-                        |   (Mycodo Engine)    |
-                        +----------+-----------+
-                                   |
-         +-------------------------+-------------------------+
-         | (I2C Bus)                                         | (GPIO Relays)
-         v                                                   v
-   +-----------+                                       +-----------+
-   |  SHT31-D  | Temp / Humidity                       | 12V Water | Solenoid
-   |  Sensor   | Sensor                                |  Solenoid | Valve
-   +-----------+                                       +-----------+
-         |                                                   |
-         v                                                   v
-   +-----------+                                       +-----------+
-   |  STEMMA   | Soil Moisture                         |  12V Vent | Brushless
-   | Soil Sens | Sensor                                |   Exhaust | DC Fan
-   +-----------+                                       +-----------+
-```
+![The Greenhouse Automation Bus: a Raspberry Pi running Mycodo reads an I2C sensor bus (SHT31-D air, STEMMA soil) and drives a GPIO relay board controlling a water solenoid, exhaust fan, and grow lights, in a closed sense-decide-actuate loop](/book-images/ch09-greenhouse-bus.svg)
 
-  
+*The Greenhouse Automation Bus. Sensors in on I2C, 12V actuators out on GPIO relays, PID loops in the middle.*
 
 ### Sensor and Actuator Integration
 
@@ -216,24 +176,9 @@ To maximize yield in a tight, 16×40-foot outdoor footprint adjacent to your Aut
 
 Instead of traditional rows where space is wasted on walking paths, a CNC farm operates on a continuous, dense raised bed. A heavy-duty gantry, operating on aluminum V-slot rails, spans the length of the bed. It moves with sub-millimeter precision along the $X$, $Y$, and $Z$ axes, driven by high-torque NEMA 17 stepper motors.
 
-```text
-                        [THE CNC AUTONOMOUS BED]
-            +------------------- Gantry (X-Axis) -------------------+
-            |                                                       |
-     +------v-------------------------------------------------------v------+
-     |  [Tool Mount (Z-Axis)] ---> Seeding / Watering / Weeding     |
-     |                                                                     |
-     |  +---------------------------------------------------------------+  |
-     |  | (X, Y, Z Coord Map)                                           |  |
-     |  |                                                               |  |
-     |  |   [Carrot]      [Lettuce]     [Radish]      [Clover Cover]    |  |
-     |  |   (120, 80)     (240, 80)     (360, 80)     (480, 80)         |  |
-     |  |                                                               |  |
-     |  +---------------------------------------------------------------+  |
-     +---------------------------------------------------------------------+
-```
+![The CNC Autonomous Bed: a gantry travels the X-axis over a dense raised bed while a Z-axis tool head seeds, waters, and weeds plants addressed by X-Y coordinate, with no walking paths wasted](/book-images/ch09-cnc-bed.svg)
 
-  
+*The CNC Autonomous Bed. Every plant is a coordinate; the machine tends the whole grid from one rail.*
 
 ### The Tool Head Array
 
@@ -253,26 +198,9 @@ The secret to a successful brew is maintaining strict aerobic conditions. If the
 
 We construct a high-performance, 200-liter biological reactor using a heavy-duty food-grade IBC tote or plastic drum connected directly to our 24V DC microgrid.
 
-```text
-                     [THE ACT BIOLOGICAL REACTOR]
-                  +--------------------------------+
-                  |  Mesh Brewing Bag (Compost)    |
-                  +---------------+----------------+
-                                  |
-                                  v
-         +--------------------------------------------------+
-         |  Water / Molasses / Kelp Meal Solution (200L)   |
-         |                                                  |
-         |      O   O   o   O   O   o   O   o   O   o       | <--- Air Bubbles
-         +--------------------------------------------------+
-                                  ^
-                                  | (High-Volume Air Line)
-                  +---------------+----------------+
-                  |  12V Linear Diaphragm Air Pump | (35 Watts Continuous)
-                  +--------------------------------+
-```
+![The ACT Biological Reactor: a mesh compost bag suspended in a 200-liter tank of water, molasses, and kelp solution, aerated from below by a 12V linear diaphragm air pump, with a dissolved-oxygen gauge that must stay above 6 mg/L](/book-images/ch09-act-reactor.svg)
 
-  
+*The ACT Bioreactor. Keep the dissolved oxygen above 6 mg/L or the brew turns to a pathogen soup; the pump is not optional.*
 
 ### The Thermodynamic Oxygen Math
 

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="498" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">MODEL COLLAPSE, GENERATION BY GENERATION</text>
+  <line x1="40" y1="66" x2="520" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- three generations as distribution curves shrinking -->
+  <!-- Gen 0 -->
+  <g>
+    <rect x="70" y="140" width="200" height="200" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+    <path d="M 90 300 C 130 300 130 180 170 180 C 210 180 210 300 250 300" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <path d="M 90 300 C 110 300 120 250 130 230 C 145 200 155 300 170 300 C 185 300 195 210 210 235 C 220 255 230 300 250 300" fill="none" stroke="#f59e0b" stroke-width="1.2" opacity="0.6"/>
+    <text x="170" y="128" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">GEN 0 · human data</text>
+    <text x="170" y="322" font-size="11" fill="#94a3b8" text-anchor="middle">high variance, rich tails</text>
+  </g>
+
+  <line x1="278" y1="240" x2="318" y2="240" stroke="#64748b" stroke-width="2.5" marker-end="url(#ag)"/>
+  <text x="298" y="224" font-size="11" fill="#64748b" text-anchor="middle">train</text>
+
+  <!-- Gen 1 -->
+  <g>
+    <rect x="326" y="140" width="200" height="200" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <path d="M 346 300 C 396 300 396 210 426 210 C 456 210 456 300 506 300" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+    <text x="426" y="128" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">GEN 1</text>
+    <text x="426" y="322" font-size="11" fill="#94a3b8" text-anchor="middle">tails pruned, mean piles up</text>
+  </g>
+
+  <line x1="534" y1="240" x2="574" y2="240" stroke="#64748b" stroke-width="2.5" marker-end="url(#ag)"/>
+  <text x="554" y="224" font-size="11" fill="#64748b" text-anchor="middle">train</text>
+
+  <!-- Gen 5 -->
+  <g>
+    <rect x="582" y="140" width="200" height="200" rx="10" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+    <line x1="682" y1="300" x2="682" y2="185" stroke="#64748b" stroke-width="6"/>
+    <path d="M 662 300 L 682 300" stroke="#64748b" stroke-width="6"/>
+    <text x="682" y="128" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">GEN 5 · pure slop</text>
+    <text x="682" y="322" font-size="11" fill="#64748b" text-anchor="middle">a single spike: the average</text>
+  </g>
+
+  <text x="430" y="380" font-size="13" fill="#f1f5f9" text-anchor="middle">each generation trains on the last one's output; the variance bleeds out with every pass</text>
+  <text x="430" y="410" font-size="12" fill="#64748b" text-anchor="middle">the edge cases, the genius, the weird local knowledge: pruned first, gone by Gen 5</text>
+  <text x="430" y="452" font-size="12" fill="#f59e0b" text-anchor="middle">the cyclical view of this same failure appears in Chapter 16; here is what one lineage looks like</text>
+</svg>

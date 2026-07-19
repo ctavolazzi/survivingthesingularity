@@ -147,20 +147,9 @@ Where:
 
 The model collapses. It begins to output repetitive, low-variance mush: the same safe phrases, the same average answers, over and over. It becomes a copy of a copy of a copy, run through a fax machine, photocopied, and scanned back in. It is **Model Collapse**, and absent a continuous lifeline of fresh human-generated data, the peer-reviewed math says it is where recursive training ends.
 
-```text
-                        [THE MODEL COLLAPSE spiral]
-      Real Human Data (P_0)       Model Gen 1 (P_1)        Model Gen 5 (P_5)
-         +-------------+           +-------------+          +-------------+
-         |  High-Var   |           | Shrunk Var  |          | Degenerate  |
-         |  Creative   | --------> | High-Prob   | -------> | Pure Slop   |
-         |  Precision  |           | Mediocrity  |          | (Delta Fn)  |
-         +-------------+           +-------------+          +-------------+
-                ^                         ^                        ^
-                |                         |                        |
-          Rich Details             Loss of Details          Complete Rot
-```
+![Model collapse generation by generation: a wide, rich human-data distribution at Generation 0 narrows to a piled-up mean at Generation 1 and finally to a single degenerate spike at Generation 5](/book-images/ch10-model-collapse.svg)
 
-  
+*Model collapse across one training lineage. The rich tails, the edge cases, the genius, are pruned first and gone by Generation 5.*
 
 This is the ultimate irony of the digital age: the corporate state built a massive infrastructure to harvest and control human thought, but by automating the production of text and imagery, they have poisoned their own well. The centralized internet is becoming a barren, toxic wasteland of synthetic slop.
 
@@ -188,20 +177,9 @@ If you post a dry, technical PDF titled *"How to Build a DC-Native Solar Array a
 
 To bypass this filter, you must execute **Algorithmic Judo**.
 
-                      [ALGORITHMIC JUDO PIPELINE]
+![The Algorithmic Judo pipeline: a high-utility off-grid tech core wrapped in an outrage or tragedy narrative hook is scored viral by the algorithm and delivered to a human target who unlocks the core](/book-images/ch10-algorithm-unlock.svg)
 
-                       
-
-   High-Utility Core       Algorithmic Wrapper        Centralized Feeds       Human Target
-
-```text
-   +---------------+     +--------------------+     +-------------------+     +---------------+
-   | Off-Grid Tech | --> | Outrage/Tragedy    | --> | Algorithm Scores  | --> | Core Unlocked |
-   | Practical DIY |     | Narrative Hook     |     | Post High (Viral) |     | Real Survival |
-   +---------------+     +--------------------+     +-------------------+     +---------------+
-```
-
-  
+*Algorithmic Judo. A dry manual scores near zero; wrapped in a human story, the algorithm carries it for you.*
 
 Algorithmic Judo is the art of wrapping high-utility, survival-level, offline truths inside high-emotion, high-engagement, algorithmically boosted human narrative wrappers. You use the machine’s own weight and momentum to throw it over your shoulder.
 

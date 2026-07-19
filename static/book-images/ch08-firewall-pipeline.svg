@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="418" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE COGNITIVE FIREWALL PIPELINE</text>
+  <line x1="40" y1="66" x2="440" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- stage labels -->
+  <g font-size="12" fill="#64748b" text-anchor="middle">
+    <text x="140" y="130">incoming stream</text>
+    <text x="340" y="130">the sandbox</text>
+    <text x="540" y="130">semantic filter</text>
+    <text x="740" y="130">autonomous action</text>
+  </g>
+
+  <!-- boxes -->
+  <rect x="60" y="150" width="160" height="110" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="140" y="192" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">HIGH-ENTROPY</text>
+  <text x="140" y="214" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">DIGITAL WEB</text>
+  <text x="140" y="240" font-size="11" fill="#64748b" text-anchor="middle">raw, hostile, unfiltered</text>
+
+  <line x1="220" y1="205" x2="256" y2="205" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="260" y="150" width="160" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="340" y="192" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">STRICT BATCH</text>
+  <text x="340" y="214" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">PROCESSING</text>
+  <text x="340" y="240" font-size="11" fill="#94a3b8" text-anchor="middle">twice daily, timed window</text>
+
+  <line x1="420" y1="205" x2="456" y2="205" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="460" y="150" width="160" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="540" y="192" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">TEXT-ONLY</text>
+  <text x="540" y="214" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">SYNTHESIS</text>
+  <text x="540" y="240" font-size="11" fill="#94a3b8" text-anchor="middle">notes in the paper ledger</text>
+
+  <line x1="620" y1="205" x2="656" y2="205" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="660" y="150" width="160" height="110" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="740" y="192" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">DEEP PHYSICAL</text>
+  <text x="740" y="214" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">EXECUTION</text>
+  <text x="740" y="240" font-size="11" fill="#94a3b8" text-anchor="middle">welds, beds, charters</text>
+
+  <text x="430" y="320" font-size="13" fill="#f1f5f9" text-anchor="middle">entropy decreases left to right; agency increases</text>
+  <text x="430" y="348" font-size="12" fill="#64748b" text-anchor="middle">you run the queries; the queries do not run you</text>
+</svg>

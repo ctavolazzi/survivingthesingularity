@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ax" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#475569"/>
+    </marker>
+    <marker id="aai" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="538" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE COGNITIVE FRAGMENTATION CURVE</text>
+  <line x1="40" y1="66" x2="440" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- axes -->
+  <line x1="100" y1="110" x2="100" y2="430" stroke="#475569" stroke-width="2" marker-start="url(#ax)"/>
+  <line x1="100" y1="430" x2="800" y2="430" stroke="#475569" stroke-width="2" marker-end="url(#ax)"/>
+  <text x="66" y="270" font-size="12" fill="#94a3b8" text-anchor="middle" transform="rotate(-90 66 270)">cognitive depth</text>
+  <text x="450" y="466" font-size="12" fill="#94a3b8" text-anchor="middle">time (one hour)</text>
+
+  <!-- baseline -->
+  <line x1="100" y1="150" x2="800" y2="150" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.7"/>
+  <text x="792" y="140" font-size="12" fill="#3b82f6" text-anchor="end">deep focus baseline</text>
+
+  <!-- the curve: ramp to baseline, hold, interrupt drop, partial recovery, interrupt, partial, interrupt -->
+  <path d="M 100 424
+           C 150 400 180 170 240 152
+           L 320 151
+           L 326 400
+           C 380 380 420 240 470 210
+           L 476 402
+           C 520 386 560 300 610 268
+           L 616 404
+           C 660 390 700 330 760 312"
+        fill="none" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- interrupt markers -->
+  <g stroke="#f1f5f9" stroke-width="1.5" opacity="0.85">
+    <line x1="323" y1="120" x2="323" y2="404"/>
+    <line x1="473" y1="120" x2="473" y2="404"/>
+    <line x1="613" y1="120" x2="613" y2="404"/>
+  </g>
+  <g font-size="16" fill="#f1f5f9" text-anchor="middle">
+    <text x="323" y="112">⚡</text>
+    <text x="473" y="112">⚡</text>
+    <text x="613" y="112">⚡</text>
+  </g>
+  <text x="470" y="94" font-size="12" fill="#94a3b8" text-anchor="middle">algorithmic interrupts (3+ per hour)</text>
+
+  <!-- ~20 min annotation -->
+  <line x1="140" y1="196" x2="232" y2="172" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#aai)"/>
+  <text x="138" y="216" font-size="12" fill="#f59e0b">settling in:</text>
+  <text x="138" y="234" font-size="12" fill="#f59e0b">~20 minutes</text>
+
+  <!-- never returns annotation -->
+  <line x1="712" y1="252" x2="688" y2="300" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="714" y="226" font-size="12" fill="#94a3b8" text-anchor="middle">each recovery</text>
+  <text x="714" y="244" font-size="12" fill="#94a3b8" text-anchor="middle">peaks lower</text>
+
+  <text x="430" y="506" font-size="13" fill="#f1f5f9" text-anchor="middle">above ~3 interrupts per hour, the curve never touches baseline again</text>
+</svg>

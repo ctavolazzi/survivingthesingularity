@@ -85,24 +85,9 @@ The modern suburban home is a passive, energy-sucking consumption unit. It has n
 
 In the Autonomy Horizon, our primary physical unit is the **Shouse (Shop-House)**.
 
-```text
-                      [THE SHOUSE THERMODYNAMIC ENGINE]
-         +-------------------------------------------------------------+
-         |                         THE SHOP (50%)                      |
-         |  - Welder & CNC Plasma      - Compost Heat Exchange Loop    |
-         |  - Tool Library             - DC Microgrid Fuse Block       |
-         |  - Local Server Crucible    - Rainwater Filtration Rack     |
-         +------------------------------+------------------------------+
-                                        | (Shared Thermal/Power Bus)
-                                        v
-         +-------------------------------------------------------------+
-         |                        THE HOUSE (50%)                      |
-         |  - Highly Insulated Living   - Universal Design Wet-Room    |
-         |  - Energy-Efficient Kitchen  - Warm, Human Sanctuary        |
-         +-------------------------------------------------------------+
-```
+![The Shouse Thermodynamic Engine: the shop half holds the welder, CNC plasma, tool library, server Crucible, DC fuse block, and rainwater rack; a shared thermal and power bus feeds the insulated house half below](/book-images/ch12-shouse-engine.svg)
 
-  
+*The Shouse. Half factory, half home, one envelope: the shop's waste heat is the house's furnace.*
 
 A Shouse is 50% industrial workshop and 50% highly insulated, compact living quarters. It is an active thermodynamic engine.
 
@@ -113,33 +98,15 @@ When you live in a Shouse, you are not a consumer waiting for a delivery truck. 
 
 ### Section 2: The Semi-Autonomous CSA Topology
 
-A single Shouse is a powerful asset. But when you link five, ten, or fifty Shouses together via our offline LoRa mesh network (Chapter 10), you create a **Semi-Autonomous CSA**.
+A single Shouse is a powerful asset. But when you link five, ten, or fifty Shouses together via our offline LoRa mesh network (Chapters 14 and 17), you create a **Semi-Autonomous CSA**.
 
 This is not your standard, paper-based community garden. This is a high-tech, automated calorie and labor-distribution engine designed to bypass the commercial food grid entirely.
 
-```text
-                     [THE SEMI-AUTOMATON CSA NETWORK]
-              +----------------- [SHOUSE NODE A] -----------------+
-              |  - Local AI Server (Crucible)                     |
-              |  - High-Yield Micro-Greenhouse (Mycodo Automated) |
-              +-------------------------+-------------------------+
-                                        | (Mesh Task Exchange)
-                                        v
-              +----------------- [SHOUSE NODE B] -----------------+
-              |  - Tool Library (CNC, Tractor, Heavy Welder)       |
-              |  - High-Capacity Recycled DC Battery Bank         |
-              +-------------------------+-------------------------+
-                                        | (Mesh Task Exchange)
-                                        v
-              +----------------- [VULNERABLE NODE] ---------------+
-              |  - Elder Neighbor / Fixed-Income Home             |
-              |  - Receives Automated Calorie & Labor Deliveries   |
-              +---------------------------------------------------+
-```
+![The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhouse, Shouse Node B with its tool library and battery bank, exchanging tasks over LoRa mesh, and a vulnerable node receiving automated calorie and labor deliveries](/book-images/ch12-csa-network.svg)
 
-  
+*The Semi-Autonomous CSA. Automated nodes run at roughly 300% of their own need; the surplus carries whoever cannot produce.*
 
-In our semi-autonomous CSA, food production is automated using localized agricultural robots (like FarmBots and Mycodo-controlled greenhouses, as detailed in Chapter 8).
+In our semi-autonomous CSA, food production is automated using localized agricultural robots (like FarmBots and Mycodo-controlled greenhouses, as detailed in Chapter 9).
 
 Let’s look at the mathematical balancing of this system. We calculate the net energy and food capacity of our local network (E-net) using a simple balance:
 
@@ -160,16 +127,16 @@ How does this work in practice? Let’s walk through how our elder neighbor gets
 
 ### 1. The Mesh Request
 
-Our elder neighbor does not have a smartphone connected to a commercial cellular network. She has a simple, low-power LoRa mesh terminal mounted on her kitchen counter (Chapter 10).
+Our elder neighbor does not have a smartphone connected to a commercial cellular network. She has a simple, low-power LoRa mesh terminal mounted on her kitchen counter (Chapter 17).
 
   - She presses a pre-configured button on her terminal: [NEED HELP: FIRE CANOPY CLEARING].
   - The raw packet is broadcast over the offline mesh. It contains her unique node ID (Echo-4) and the prioritized task type.
 
 ### 2. The Crucible Coordination
 
-At the nearest Shouse Node, the local, air-gapped server (The Crucible, running the offline LLM stacks detailed in Chapter 7) receives the mesh packet.
+At the nearest Shouse Node, the local, air-gapped server (The Crucible, running the offline LLM stacks detailed in Chapter 11) receives the mesh packet.
 
-  - The local AI does not upload this data to a corporate cloud. It parses the request locally, cross-references it with the shared **Autonomous Directory** (Chapter 9), and checks the current resource schedule of the local Shouse network.
+  - The local AI does not upload this data to a corporate cloud. It parses the request locally, cross-references it with the shared **Autonomous Directory**, the network's running ledger of who has which tools, skills, and surpluses, and checks the current resource schedule of the local Shouse network.
   - The AI calculates the optimal tool and labor deployment using a basic cost-minimization algorithm:
 
 > **minimize (total human metabolic effort + total tool transit distance)**

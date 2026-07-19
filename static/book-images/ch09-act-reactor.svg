@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE ACT BIOLOGICAL REACTOR</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">aerated compost tea: 200 L, brewed on the DC bus</text>
+  <line x1="40" y1="88" x2="380" y2="88" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- tank -->
+  <path d="M 250 150 L 610 150 L 590 470 L 270 470 Z" fill="#0f172a" stroke="#334155" stroke-width="2.5"/>
+
+  <!-- liquid -->
+  <path d="M 259 200 L 601 200 L 585 460 L 275 460 Z" fill="#78350f" opacity="0.35"/>
+  <text x="430" y="330" font-size="12" fill="#94a3b8" text-anchor="middle">water + molasses + kelp meal</text>
+  <text x="430" y="350" font-size="12" fill="#94a3b8" text-anchor="middle">+ humic acid solution (200 L)</text>
+
+  <!-- brewing bag suspended -->
+  <line x1="430" y1="150" x2="430" y2="215" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="386" y="215" width="88" height="70" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2" opacity="0.9"/>
+  <text x="430" y="245" font-size="10" fill="#f59e0b" text-anchor="middle">compost</text>
+  <text x="430" y="260" font-size="10" fill="#f59e0b" text-anchor="middle">mesh bag</text>
+  <text x="430" y="275" font-size="10" fill="#94a3b8" text-anchor="middle">400 micron</text>
+
+  <!-- bubbles -->
+  <g fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.8">
+    <circle cx="320" cy="420" r="5"/><circle cx="340" cy="390" r="4"/><circle cx="360" cy="430" r="6"/>
+    <circle cx="400" cy="400" r="4"/><circle cx="430" cy="425" r="5"/><circle cx="460" cy="395" r="4"/>
+    <circle cx="490" cy="428" r="6"/><circle cx="520" cy="400" r="4"/><circle cx="545" cy="425" r="5"/>
+  </g>
+
+  <!-- air line + pump -->
+  <line x1="430" y1="470" x2="430" y2="500" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="330" y="500" width="200" height="44" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="430" y="521" font-size="12" font-weight="600" fill="#f1f5f9" text-anchor="middle">12V LINEAR AIR PUMP</text>
+  <text x="430" y="537" font-size="10" fill="#94a3b8" text-anchor="middle">35 W continuous · 80 LPM</text>
+  <line x1="430" y1="500" x2="430" y2="440" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+
+  <!-- DO gauge callout -->
+  <rect x="640" y="180" width="180" height="150" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="730" y="208" font-size="12" font-weight="600" fill="#3b82f6" text-anchor="middle">DISSOLVED OXYGEN</text>
+  <text x="730" y="238" font-size="12" fill="#f1f5f9" text-anchor="middle">keep &gt; 6.0 mg/L</text>
+  <text x="730" y="264" font-size="11" fill="#94a3b8" text-anchor="middle">C ≈ 468 / (31.6 + T)</text>
+  <text x="730" y="290" font-size="11" fill="#94a3b8" text-anchor="middle">15°C → 9.1 mg/L ✓</text>
+  <text x="730" y="312" font-size="11" fill="#f59e0b" text-anchor="middle">35°C → 7.0 mg/L, tight</text>
+
+  <text x="430" y="120" font-size="13" fill="#f1f5f9" text-anchor="middle">stay aerobic or the brew turns to a pathogen soup: the pump is not optional</text>
+</svg>

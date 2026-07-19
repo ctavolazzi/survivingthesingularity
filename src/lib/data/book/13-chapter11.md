@@ -81,25 +81,9 @@ You do not need to spend $10,000 on enterprise-grade hardware. The corporate cyc
 
 We are looking for the sweet spot of cost, power draw, and compute density.
 
-```text
-                     [THE AUTONOMOUS RACK ARCHITECTURE]
-   +-------------------------------------------------------------+
-   |  [U1] Ubiquiti EdgeRouter / Managed DC Switch (12V Native)  |
-   +-------------------------------------------------------------+
-   |  [U2] Custom 24V-to-12V Power Distribution Bar (Fuse Panel) |
-   +-------------------------------------------------------------+
-   |                                                             |
-   |  [U4-U8] Headless Proxmox Compute Node (Dual Xeon / EPYC)  |
-   |  +-------------------------------------------------------+  |
-   |  | GPU 1: RTX 3090 / Tesla P40 (24GB VRAM)               |  |
-   |  | GPU 2: RTX 3090 / Tesla P40 (24GB VRAM)               |  |
-   |  +-------------------------------------------------------+  |
-   +-------------------------------------------------------------+
-   |  [U9-U12] DIY Coolant Pump & Reservoir (12V Brushless DC)  |
-   +-------------------------------------------------------------+
-```
+![The Autonomous Rack Architecture: a 12V-native rack with an EdgeRouter and DC switch at U1, a 24V-to-12V fuse panel at U2, a headless Proxmox node with two 24 GB GPUs in the middle, and a coolant pump and reservoir at the bottom](/book-images/ch11-rack-architecture.svg)
 
-  
+*The Autonomous Rack. Everything runs native 12V DC off the shell's bus: no inverter, no wall bricks, no meter.*
 
 ### The LLM VRAM Bottleneck
 
@@ -138,29 +122,9 @@ If you run a server chassis containing dual Xeon CPUs and dual high-draw GPUs in
 
 Instead of running an AC unit to cool the room while the server heats it up (a double thermodynamic penalty), we build a **Split Liquid Cooling Loop**. We extract the heat directly from the silicon chips and pump it outside the container walls.
 
-                     [THE SPLIT-LOOP THERMAL EXCHANGE]
+![The Split-Loop Thermal Exchange: GPU and CPU water blocks inside the insulated shell feed a 12V pump that sends hot coolant through the wall to a salvaged car radiator in free air, with cool coolant returning to the chips](/book-images/ch11-cooling-loop.svg)
 
-                      
-
-  [INSIDE SHELL (Insulated)]             |  [OUTSIDE SHELL (Free Air)]
-
-```text
-                                         |
-   +-------------+    +-------------+    |
-   | Server GPU  |===>| Server CPU  |    |
-   | Water Block |    | Water Block |    |
-   +------+------+    +------+------+    |
-          ^                  |           |
-          |                  v           |
-   +------+------------------+------+    |       +-------------------------+
-   | 12V Brushless DC Liquid Pump   |===========>| External Radiator       |
-   | (Speed controlled via PWM)     |<===========| (Honda Civic Salvage)   |
-   +--------------------------------+    |       | + 12V High-Static Fans  |
-                                         |       +-------------------------+
-                                         |
-```
-
-  
+*The Split-Loop Thermal Exchange. Pull the heat straight off the silicon and dump it outside, instead of paying an AC unit to fight your own server.*
 
 The heat transfer rate (Q̇) of our liquid cooling loop in Watts is governed by the mass flow rate of our coolant (ṁ) and the temperature delta (Δ T) across our external heat exchanger:
 

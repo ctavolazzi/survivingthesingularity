@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <rect x="1" y="1" width="858" height="498" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">TRUST NETWORK TOPOLOGIES</text>
+  <line x1="40" y1="66" x2="380" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <line x1="430" y1="90" x2="430" y2="450" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- STAR -->
+  <text x="230" y="110" font-size="14" font-weight="600" fill="#64748b" text-anchor="middle">STAR TOPOLOGY</text>
+  <text x="230" y="130" font-size="12" fill="#64748b" text-anchor="middle">(centralized · fragile)</text>
+
+  <!-- spokes -->
+  <g stroke="#475569" stroke-width="2">
+    <line x1="230" y1="270" x2="230" y2="180"/>
+    <line x1="230" y1="270" x2="130" y2="220"/>
+    <line x1="230" y1="270" x2="330" y2="220"/>
+    <line x1="230" y1="270" x2="130" y2="330"/>
+    <line x1="230" y1="270" x2="330" y2="330"/>
+    <line x1="230" y1="270" x2="230" y2="368"/>
+  </g>
+  <!-- hub -->
+  <circle cx="230" cy="270" r="26" fill="#1e293b" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="230" y="276" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">HUB</text>
+  <!-- failure X on hub -->
+  <g stroke="#f59e0b" stroke-width="4">
+    <line x1="212" y1="252" x2="248" y2="288"/>
+    <line x1="248" y1="252" x2="212" y2="288"/>
+  </g>
+  <!-- leaf nodes -->
+  <g fill="#0f172a" stroke="#475569" stroke-width="2">
+    <circle cx="230" cy="180" r="12"/>
+    <circle cx="130" cy="220" r="12"/>
+    <circle cx="330" cy="220" r="12"/>
+    <circle cx="130" cy="330" r="12"/>
+    <circle cx="330" cy="330" r="12"/>
+    <circle cx="230" cy="368" r="12"/>
+  </g>
+  <text x="230" y="416" font-size="12" fill="#64748b" text-anchor="middle">hub dies, everything dies</text>
+
+  <!-- MESH -->
+  <text x="640" y="110" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">MESH TOPOLOGY</text>
+  <text x="640" y="130" font-size="12" fill="#f59e0b" text-anchor="middle">(decentralized · robust)</text>
+
+  <g stroke="#3b82f6" stroke-width="1.8" opacity="0.85">
+    <line x1="560" y1="200" x2="720" y2="200"/>
+    <line x1="560" y1="200" x2="520" y2="290"/>
+    <line x1="560" y1="200" x2="640" y2="270"/>
+    <line x1="720" y1="200" x2="640" y2="270"/>
+    <line x1="720" y1="200" x2="760" y2="290"/>
+    <line x1="520" y1="290" x2="640" y2="270"/>
+    <line x1="760" y1="290" x2="640" y2="270"/>
+    <line x1="520" y1="290" x2="580" y2="368"/>
+    <line x1="760" y1="290" x2="700" y2="368"/>
+    <line x1="580" y1="368" x2="700" y2="368"/>
+    <line x1="640" y1="270" x2="580" y2="368"/>
+    <line x1="640" y1="270" x2="700" y2="368"/>
+  </g>
+  <g fill="#0f172a" stroke="#f59e0b" stroke-width="2.5">
+    <circle cx="560" cy="200" r="13"/>
+    <circle cx="720" cy="200" r="13"/>
+    <circle cx="520" cy="290" r="13"/>
+    <circle cx="640" cy="270" r="13"/>
+    <circle cx="760" cy="290" r="13"/>
+    <circle cx="580" cy="368" r="13"/>
+    <circle cx="700" cy="368" r="13"/>
+  </g>
+  <text x="640" y="416" font-size="12" fill="#94a3b8" text-anchor="middle">every node routes; damage is a detour</text>
+
+  <text x="430" y="472" font-size="12" fill="#64748b" text-anchor="middle">keep each circle under Dunbar's ~150 · federate circles instead of growing one</text>
+</svg>

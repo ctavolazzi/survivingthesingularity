@@ -195,26 +195,9 @@ The recovery cost is not a guess; it has been measured. Attention researchers st
 
 Now do the arithmetic that the research implies. If settling into deep work costs you roughly twenty minutes, then anything more than about two or three interrupts per hour means your brain never reaches its baseline focus state at all. You are kept in a perpetual state of **cognitive fragmentation**: your metabolic energy is spent almost entirely on the overhead of context-switching, leaving next to nothing in the cognitive battery for strategic survival.
 
-                     [THE COGNITIVE FRAGMENTATION CURVE]
+![The Cognitive Fragmentation Curve: a graph of cognitive depth over one hour, showing a twenty-minute climb to deep-focus baseline, then repeated algorithmic interrupts, each recovery peaking lower than the last](/book-images/ch08-focus-recovery.svg)
 
-                      
-
-  Cognitive Depth
-
-```text
-        ^
-        |   Deep Focus Baseline (tau)
-        |   +-----------------------\*
-        |  /                         \\      <- Algorithmic Interrupt
-        | /                           \\
-        |/                            \*-------------+
-        |                                            | Recovery Overhead (t_recovery)
-        |                                           v
-        |                                           \*--------------->
-        +--------------------------------------------+---------------> Time
-```
-
-  
+*The Cognitive Fragmentation Curve. Above roughly three interrupts an hour, the curve never touches baseline again.*
 
 ### Shannon Entropy and the Algorithmic Slot Machine
 
@@ -242,20 +225,9 @@ Just as you would not drink untreated water from a stagnant puddle behind a dies
 
 Semantic Hygiene is the intentional, aggressive curation of the information you allow to cross your blood-brain barrier. It is a hostile, defensive protocol designed to preserve your E_cognitive for real-world physical autonomous action.
 
-                   [THE COGNITIVE FIREWALL PIPELINE]
+![The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batch processing, then text-only synthesis, and emerges as deep physical execution](/book-images/ch08-firewall-pipeline.svg)
 
-                    
-
-    Incoming Stream        The Sandbox         Semantic Filter      Autonomous Action
-
-```text
-   +---------------+     +---------------+     +---------------+     +---------------+
-   | High-Entropy  | --> | Strict Batch- | --> | Text-Only     | --> | Deep physical |
-   | Digital Web   |     | Processing    |     | Synthesis     |     | execution     |
-   +---------------+     +---------------+     +---------------+     +---------------+
-```
-
-  
+*The Cognitive Firewall Pipeline. Entropy falls left to right; agency rises.*
 
 ### Protocol 1: The No-Notifications Lockdown (Total Digital Blackout)
 
@@ -324,29 +296,9 @@ If you are a single human being trying to manage solar arrays, monitor soil biol
 
 When E_expended exceeds your daily caloric and cognitive intake, your system enters a state of negative energy balance. You begin to degrade. You skip maintenance on the solar inverter, you fail to monitor the soil moisture, or you make a fatal mistake while handling high-voltage DC lines.
 
-```text
-                   [THE DECAY OF ISOLATED SYSTEMS]
-     +---------------------------------------------------------+
-     |                  Isolated Individual                    |
-     +---------------------------------------------------------+
-                                  |
-            +---------------------+---------------------+
-            |                     |                     |
-            v                     v                     v
-     +--------------+      +--------------+      +--------------+
-     | Solar Drift  |      | Soil Decline |      | Cognitive    |
-     | (No Repair)  |      | (Pathogens)  |      | Exhaustion   |
-     +--------------+      +--------------+      +--------------+
-            |                     |                     |
-            +---------------------+---------------------+
-                                  |
-                                  v
-     +---------------------------------------------------------+
-     |             System Collapse (Maximum Entropy)          |
-     +---------------------------------------------------------+
-```
+![The Decay of Isolated Systems: an isolated individual fans out into solar drift, soil decline, and cognitive exhaustion, which converge into system collapse at maximum entropy](/book-images/ch08-isolated-decay.svg)
 
-  
+*The Decay of Isolated Systems. One person cannot out-work entropy on every front at once.*
 
 Now, consider a decentralized node of three households, six to eight people. By sharing the physical and cognitive load, the maintenance cost per capita drops exponentially:
 
@@ -380,17 +332,9 @@ A community is not a hierarchy; it is a topology.
 
 Modern corporate and state structures are built on **Star Topologies**. All lines of communication, resources, and authority run through a centralized hub. If the hub is compromised, corrupted, or experiences a systemic failure, every single outer node is instantly paralyzed.
 
-```text
-         [STAR TOPOLOGY]                          [MESH TOPOLOGY]
-       (Centralized/Fragile)                    (Decentralized/Robust)
-              Node                               Node ----- Node
-               \\                                 /  \\       /  \\
-         Node -- HUB -- Node                  Node -- Node -- Node
-               /                                 \\  /       \\  /
-              Node                               Node ----- Node
-```
+![Trust network topologies: a star topology where every node depends on one hub that can fail, versus a mesh topology where every node connects to several neighbors and damage becomes a detour](/book-images/ch08-star-vs-mesh.svg)
 
-  
+*Star versus mesh. In the star, the hub's failure is everyone's failure; in the mesh, damage is a routing problem.*
 
 In the Autonomous Commons, we build a **Mesh Topology**.
 
@@ -410,37 +354,9 @@ Therefore, our goal is not to build a single, massive community of thousands. Ou
 
 What does a physical Commons look like when stripped of government interference and corporate bureaucracy? It looks like a closed, shared metabolic loop.
 
-```text
-                         [THE AUTONOMOUS COMMONS LOOP]
-                          +------------------------+
-                          |   Solar DC Microgrid   |
-                          |   (Shared Energy Bus)  |
-                          +-----------+------------+
-                                      |
-         +----------------------------+----------------------------+
-         | (Surplus DC Power)                                      | (Clean Water)
-         v                                                         v
-   +-----------+                                             +-----------+
-   | local GPU | running local LLMs                         |  FarmBot  | automated crop bed
-   | server    | & local database                            |  Bioreact | & soil restoration
-   +-----------+                                             +-----------+
-         |                                                         |
-         v                                                         v
-   +-----------+                                             +-----------+
-   | cognitive | actionable survival files                   |  caloric  | nutrient-dense
-   | output    | & structural blueprints                     |  yield    | organic survival
-   +-----------+                                             +-----------+
-         |                                                         |
-         +----------------------------+----------------------------+
-                                      |
-                                      v
-                          +------------------------+
-                          |    Autonomous Nodes     |
-                          |    (Human Trust Mesh)  |
-                          +------------------------+
-```
+![The Autonomous Commons Loop: a shared solar DC microgrid powers a local GPU server producing cognitive output and a FarmBot bioreactor producing caloric yield, both feeding the human trust mesh, which maintains the grid in return](/book-images/ch08-commons-loop.svg)
 
-  
+*The Autonomous Commons Loop. Energy becomes intelligence and calories, and both flow back into the mesh that keeps the panels clean.*
 
 1.  **The Shared Energy Bus:** If Node A’s battery bank is topped off at 100% capacity by noon, their solar charge controllers do not dump the excess solar energy as waste heat. It is automatically routed via a localized, low-voltage DC transmission line to Node B, whose server stack is currently running a heavy data-compile.
 2.  **The Biological Exchange:** You do not buy compost inputs or organic fertilizers. You pool waste. Your kitchen scraps, garden waste, and graywater are fed into a centralized biological refinery (Chapter 9). The resulting aerated compost tea (ACT) is distributed to restore the soil biology of every raised bed in the network.

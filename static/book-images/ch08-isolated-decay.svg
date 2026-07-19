@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="538" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE DECAY OF ISOLATED SYSTEMS</text>
+  <line x1="40" y1="66" x2="420" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- individual -->
+  <rect x="230" y="96" width="400" height="60" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="430" y="122" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">THE ISOLATED INDIVIDUAL</text>
+  <text x="430" y="144" font-size="12" fill="#94a3b8" text-anchor="middle">one person, every system, no relief</text>
+
+  <!-- fan out -->
+  <line x1="430" y1="156" x2="180" y2="238" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="430" y1="156" x2="430" y2="238" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="430" y1="156" x2="680" y2="238" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+
+  <!-- three failure modes -->
+  <rect x="70" y="244" width="220" height="86" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="180" y="278" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">SOLAR DRIFT</text>
+  <text x="180" y="302" font-size="11" fill="#64748b" text-anchor="middle">no time to repair, output sags</text>
+
+  <rect x="320" y="244" width="220" height="86" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="430" y="278" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">SOIL DECLINE</text>
+  <text x="430" y="302" font-size="11" fill="#64748b" text-anchor="middle">pathogens win unwatched beds</text>
+
+  <rect x="570" y="244" width="220" height="86" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="680" y="278" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">COGNITIVE EXHAUSTION</text>
+  <text x="680" y="302" font-size="11" fill="#64748b" text-anchor="middle">fatal mistakes on live wires</text>
+
+  <!-- converge -->
+  <line x1="180" y1="330" x2="424" y2="404" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="430" y1="330" x2="430" y2="404" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="680" y1="330" x2="436" y2="404" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+
+  <!-- collapse -->
+  <rect x="230" y="410" width="400" height="60" rx="10" fill="#020617" stroke="#64748b" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <text x="430" y="436" font-size="15" font-weight="600" fill="#94a3b8" text-anchor="middle">SYSTEM COLLAPSE</text>
+  <text x="430" y="458" font-size="12" fill="#64748b" text-anchor="middle">maximum entropy</text>
+
+  <text x="430" y="508" font-size="13" fill="#f59e0b" text-anchor="middle">the cure is arithmetic: E per capita ∝ 1/N · share the load across trusted nodes</text>
+</svg>

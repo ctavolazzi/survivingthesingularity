@@ -1,5 +1,11 @@
 # Editorial Queue — Surviving the Singularity
 
+**LATEST VERSION: v0.5.0 (2026-07-19), "the illustrated draft."** All 34 diagrams are
+real SVG figures, em-dash sweep complete, mechanical + credibility pass applied, pixel-art
+part dividers in. Compiled: `manuscript/StS-Complete-Draft-compiled-2026-07-19.md` (83,092
+words). Built: `book-build/Surviving-the-Singularity-v0.5.0.epub/.pdf` (251 pp). The PDF
+is public at `/downloads/Surviving-the-Singularity-v0.5.0.pdf` (linked from /book).
+
 **Source of truth:** `src/lib/data/book/` (unified in commit `5164f49`; serves both the
 /book pages and the EPUB via `scripts/build-epub.sh`).
 **2026-07-17 — Precedent Ledger weave landed.** Every section (Preface through Conclusion)

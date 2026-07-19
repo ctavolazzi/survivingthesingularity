@@ -233,7 +233,7 @@ For a century the horse looked untouchable. The horse population of the United S
 
 **The mechanism.** The horse's owners debated tradition, beauty, and loyalty. The machine's buyers computed operating cost per unit of work. Only one of those conversations was real. Thermodynamic arithmetic does not negotiate, and it does not send a warning before it closes the account.
 
-**The rule.** You are a twenty-watt engine in a market that has just started selling intelligence by the kilowatt-hour. Audit your own energy ledger, what you consume, what you produce, and who captures the difference, before someone else runs the numbers on you. The horse found out its price after the fact. You still get to set some of the terms.
+**The rule.** You are a twenty-watt thinking engine inside a hundred-watt body, in a market that has just started selling intelligence by the kilowatt-hour. Audit your own energy ledger, what you consume, what you produce, and who captures the difference, before someone else runs the numbers on you. The horse found out its price after the fact. You still get to set some of the terms.
 
 **The practice.**
 

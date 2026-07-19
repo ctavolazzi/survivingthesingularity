@@ -7,19 +7,20 @@
 
 > *"Buy the ticket, take the ride."*
 > Hunter S. Thompson, *Fear and Loathing in Las Vegas* (1971)
+
 So the robots have taken over. Congratulations! The Singularity is upon us.
 
-Surviving the Singularity isn't just about the fear of the unknown. Sure, popular media tells us we’ll be fending off hordes of Terminator bots or fighting for food in the era of societal collapse and climate famines, but that’s not the only way it can go. 
+Popular media tells us we’ll be fending off hordes of Terminator bots or fighting for food in the era of societal collapse and climate famines. That’s one way it can go. It is not the only way.
 
-This is about so much more than just the fear.
+This book is about the other ways.
 
 **Here’s the neat trick of this moment: if your entire reality is a construct of your focus, then reframing your thinking is your first and most important tool. True survival begins when you reclaim agency over your own cognitive architecture and realize that nothing can own your mind unless you allow it.**
 
-Regardless of the ultimate nature of the future we’re stepping into, it is on its way. And right now, doesn’t it seem like everything is getting a lot weirder, a lot faster?
+Right now, doesn’t it seem like everything is getting a lot weirder, a lot faster?
 
-This book, *Surviving the Singularity*, is a primer on understanding and navigating the double exponential shift in the way we get our needs met. **As this work has evolved, it has transitioned from a simple manual on hiding from the dark to an active blueprint for building a parallel, independent existence.**
+This book, *Surviving the Singularity*, is a primer on what happens when the machinery that feeds, houses, and employs us starts improving faster than we can react, and on how to keep getting your needs met while it does.
 
-In the last 100 years, we've gone from a global society of excess and hyper-capitalism, coupled with massive wars, spanning continents, with weapons that threaten to eradicate all life on earth to...well it's pretty much the same isn't it? The only thing that really seems to have changed is the pace at which nightmarish horrors beyond our comprehension are being unleashed.
+Look back 100 years and you find a global society of excess and hyper-capitalism, continent-spanning wars, and weapons that threaten to eradicate all life on earth. Look around today and...well, it's pretty much the same, isn't it? The only thing that really seems to have changed is the pace at which nightmarish horrors beyond our comprehension are being unleashed.
 
 Wait, that's not quite right is it? Some things have definitely changed.
 
@@ -33,7 +34,7 @@ You are likely trying to figure out how to survive in a world that says it will 
 
 **We are no longer just passive victims of this obsolescence. We are learning to bypass their systems entirely through collaborative, real-world strategies.** 
 
-Here, you will learn about things like collective land ownership to buy back the soil under our feet together, high-leverage content creation to turn our unique human narratives into a resource the algorithms can't replicate or control, and how to keep your head when everything feels completely overwhelming.
+Here, you will learn about collective land ownership that buys back the soil under our feet, high-leverage content creation that turns our unique human narratives into a resource the algorithms can't replicate or control, and how to keep your head when everything feels completely overwhelming.
 
 **NOTE: this book is not intended as a guide on how to overthrow the system.**
 
@@ -49,7 +50,7 @@ Over the next few chapters, we will explore:
   - **Digital leverage:** Utilizing content creation, media independent cells, and intellectual assets to build independent support ecosystems.
   - **The tools of the trade:** mesh networks, open-source hardware, and decentralized energy.
   - **The psychology of the collapse** (and how to keep your head, and reclaim your agency, when everyone else is losing theirs).
-  - ****How to prepare yourself for what’s already here, and what’s coming.****
+  - **How to prepare yourself for what’s already here, and what’s coming.**
 
 You are not a passive observer of this transition. You are an active participant, even if your participation is currently limited to trying not to starve.
 

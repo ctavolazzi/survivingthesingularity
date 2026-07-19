@@ -59,8 +59,8 @@ The solution is not to try and stop the corporate state or appeal to the empathy
 
 - **Deglobalization, Not Decentralization:** "Decentralized" is a dangerous word. We require centralized control for quality, safety, and establishing critical stopgaps against bad actors. The real target is **deglobalization**. We must shrink the supply lines back to the local level to insulate ourselves from fragile, corrupt global networks.
 - **Neighborhood Factories:** We already have factories; the revolutionary shift is placing a localized, automated factory in **every single neighborhood and city**.
-- **Survival by Decree:** These neighborhood factories must provide for the basic survival needs of the citizens, food, shelter, and healthcare, as an absolute, automated human right, guaranteed by decree.
-- **Johnny Autoseed:** This is the practical execution of this vision. By utilizing existing, non-proprietary technologies (like FarmBot) for hyper-localized food production and neighborhood-level manufacturing (such as processing algae-based bioplastics), we can use the current monetary system as a temporary, enforced tool to construct a resilient, self-sufficient, and deglobalized reality.
+- **Survival by Decree:** These neighborhood factories must provide for the basic survival needs of the citizens, food, shelter, and healthcare, as an absolute, automated human right. The decree in question is not a government mandate you wait for; it is the founding charter your community writes for its own infrastructure, the co-op bylaw that says the greenhouse feeds members first, the land trust covenant that says nobody gets evicted into the market. You enact it locally, then defend it legally (Chapter 12 shows how).
+- **Johnny Autoseed:** Every vision needs a working prototype, and this book's name for the prototype is Johnny Autoseed: a food-security project in the Johnny Appleseed tradition, planting automated growing capacity instead of orchards. By utilizing existing, non-proprietary technologies (like FarmBot) for hyper-localized food production and neighborhood-level manufacturing (such as processing algae-based bioplastics), it uses the current monetary system as a temporary, enforced tool to construct a resilient, self-sufficient, and deglobalized reality.
 
 ## The Ultimatum: Why We Must Act Today
 
@@ -184,30 +184,24 @@ We install a series of cheap, highly reliable industrial sensors directly into o
       - **Adafruit SHT31-D:** Air temperature and relative humidity.
       - **Adafruit STEMMA Soil Sensor:** Capacitive soil moisture and temperature (corrosion-resistant).
 2.  **Actuators:** We interface the Pi's GPIO pins with an 8-channel optocoupled relay board to control high-draw 12-volt devices connected to our DC power distribution panel:
-      
-```text
+
       - **12V Brushless Exhaust Fan:** Pulls hot, stagnant air out when temperature or humidity spikes.
       - **12V Solenoid Water Valve:** Opens the gravity-fed irrigation line from our overhead water tank.
       - **12V LED Grow Lights:** High-efficiency, full-spectrum supplemental lighting.
-```
 
 ### Installing Mycodo
 
 To install the Mycodo daemon on a clean Raspberry Pi running Raspberry Pi OS Lite, run the following commands via your local workstation terminal:
 
+```bash
 # Ensure system packages are up to date
-
 sudo apt update && sudo apt upgrade -y
 
-  
-
 # Download and run the Mycodo installation script
-
 curl -sL https://raw.githubusercontent.com/kylegabriel/Mycodo/master/install | bash
+```
 
-  
-
-Once installed, navigate to http://<your-pi-ip>:8080 in your local web browser. Through the Mycodo web interface, you can configure PID (Proportional-Integral-Derivative) loop controllers to maintain perfect soil moisture and air temperature:
+Once installed, navigate to `http://<your-pi-ip>:8080` in your local web browser. Through the Mycodo web interface, you can configure PID (Proportional-Integral-Derivative) loop controllers to maintain perfect soil moisture and air temperature:
 
 > **u(t) = Kp·e(t) + Ki·∫e(τ)dτ + Kd·de(t)/dt**, the standard PID control equation
 
@@ -249,7 +243,7 @@ The vertical $Z$-axis carriage features an automated tool-changer bracket that s
 2.  **The Watering Nozzle:** Delivers a concentrated, direct-to-root micro-dose of water to each plant based on its exact growth stage, eliminating evaporation losses and preventing weed germination in the surrounding dry soil.
 3.  **The Rotary Weeder:** Uses computer vision (processed locally on your server stack via the OpenCV library) to identify the coordinates of emerging weeds and physically obliterate them with a localized spinning tool head before they can compete for nutrients.
 
-By utilizing high-density coordinate planting, you can harvest up to **four times** the calorie yield per square foot compared to traditional row-crop farming, with 90% less water consumption.
+Practitioners of high-density coordinate planting, the biointensive method this rig automates, report calorie yields per square foot several times higher than traditional row-crop farming, at a fraction of the water consumption, because drip irrigation targets each plant's root zone instead of soaking the walking paths.
 
 ### Section 4: The Aerated Compost Tea (ACT) Bioreactor
 
@@ -309,12 +303,10 @@ To prevent this, you must run a high-volume, continuous-duty **12-volt linear di
 1.  **Water De-chlorination:** Fill your bioreactor with 200 liters of clean well water or rainwater. If you must use municipal water, run the air pump for 4 hours first to completely outgas the volatile chlorine sanitizers.
 2.  **The Inoculant:** Place 2 kg of fresh, biologically active, locally produced thermal compost or worm castings inside a 400-micron nylon mesh brewing bag. Suspend the bag directly in the center of the tank, in the path of the rising air bubbles.
 3.  **The Microbial Foods:** Add the following organic catalysts directly to the water to fuel the rapid reproduction of the target organisms:
-      
-```text
+
       - **50 mL of Unsulfured Blackstrap Molasses:** Simple sugars to fuel rapid bacterial multiplication.
       - **30 mL of Liquid Kelp Meal:** Trace minerals and complex carbohydrates to encourage fungal hyphae growth.
       - **20 mL of Liquid Humic Acids:** Acts as a catalyst for fungal spore germination and stabilizes nutrients.
-```
 4.  **The Run:** Run the reactor continuously for exactly 24 hours. The water will transition from clear to a rich, frothy, deep-caramel brown.
 
 When applied to your soil or sprayed directly onto crop leaves (foliar feeding), this brew coats the surfaces with protective, beneficial biology, forming a living shield that prevents plant disease and unlocks insoluble soil minerals.
@@ -322,7 +314,7 @@ When applied to your soil or sprayed directly onto crop leaves (foliar feeding),
 ### Section 5: Execution Protocol
 
 1.  **Establish the Biology First:** Do not build complex gantries on dead dirt. Spend your first autumn digging deep layers of organic mulch, wood chips, and local manure into your raised beds. Inoculate the matrix with your aerobic compost tea brews. Let the biology build structural aggregate, trap moisture, and establish fungal networks through the winter.
-2.  **Solar-Thermal Loop Integration:** Run a loop of your server's cooling fluid (from Chapter 7) through a serpentine network of PEX pipe buried 30 cm below your greenhouse soil beds. In the winter, the waste heat generated by your local LLM queries and data-compiles will keep the soil warm, keeping soil biology active and allowing you to harvest fresh greens in sub-zero weather.
+2.  **Solar-Thermal Loop Integration:** Run a loop of your server's cooling fluid (from Chapter 11) through a serpentine network of PEX pipe buried 30 cm below your greenhouse soil beds. In the winter, the waste heat generated by your local LLM queries and data-compiles will keep the soil warm, keeping soil biology active and allowing you to harvest fresh greens in sub-zero weather.
 3.  **The Off-Grid Closed Loop:** Never import chemical pesticides or commercial seeds. Save your seeds from your hardiest plants. Feed your plant waste, weeds, and kitchen scraps directly into a localized vermicomposting (worm) bin. The worms convert the plant matter back into rich castings, which you feed back into your ACT bioreactor.
 
 Your calorie engine is now online. It is silent, automated, highly productive, and completely disconnected from the fossil-fuel industrial supply lines. If the global shipping lanes freeze, if fertilizer prices spike, or if the supermarkets go dark, you and your network eat fresh, nutrient-dense biological food harvested under your own roof.

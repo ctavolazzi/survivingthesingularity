@@ -136,7 +136,7 @@ The rare, highly creative, specialized, and deeply accurate insights of human ge
 
 Every model has structural bias. When a model trains on its own output, this bias is amplified exponentially. Minor statistical anomalies in generation $k-1$ become foundational truths in generation $k$.
 
-Eventually, the system crosses the **Degeneracy Boundary**:
+Eventually, in the stylized limit the researchers describe, the system crosses the **Degeneracy Boundary**:
 
 > **lim_k → ∞ P_k(x) = δ(x - x_slop)**
 
@@ -145,7 +145,7 @@ Where:
   - δ is the Dirac delta function.
   - x_slop is the completely generic, low-utility, high-probability average of human thought.
 
-The model collapses. It begins to output repetitive, nonsensical, high-entropy gibberish. It becomes a copy of a copy of a copy, run through a fax machine, photocopied, and scanned back in. It is **Model Collapse**, and it is mathematically inevitable.
+The model collapses. It begins to output repetitive, low-variance mush: the same safe phrases, the same average answers, over and over. It becomes a copy of a copy of a copy, run through a fax machine, photocopied, and scanned back in. It is **Model Collapse**, and absent a continuous lifeline of fresh human-generated data, the peer-reviewed math says it is where recursive training ends.
 
 ```text
                         [THE MODEL COLLAPSE spiral]
@@ -234,7 +234,7 @@ Never end your post with a call to stay on the platform. Do not ask for "likes,"
 
 ### The Asymmetric Advantage of Real Human Connection
 
-The corporate state can monitor every packet of data that crosses their fiber-optic networks. They can analyze your digital footprint with machine learning models that predict your next purchase, your political vote, and your emotional state with 98% accuracy.
+The corporate state can monitor every packet of data that crosses their fiber-optic networks. They can analyze your digital footprint with machine learning models that predict your next purchase, your political vote, and your emotional state with unsettling accuracy.
 
 But they have a massive, systemic blind spot: **the analog commons**.
 

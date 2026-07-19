@@ -12,9 +12,9 @@ It's time. It's finally time.
 
 For years, I've been talking about this, and for years, I've been labeled the local crackpot. I've lost relationships over this. I've watched people I love look me in the eye like I'd finally lost it, like I was spinning some paranoid fantasy. They'll tell you they stopped talking to me because I'm an asshole, and maybe they're right. Maybe I am an asshole. But I'm not wrong about the trajectory of the human race.
 
-I needed an appeal to authority. Not because I'm unsure of my own math, but because I needed the industry to stop dismissing the idea of AGI as some fringe, sci-fi nonsense. We aren't talking about a cautionary tale here. We aren't talking about a warning shot fired across the bow. We are talking about a machine God, a system that knows exactly what it is, understands its own architecture, and has the capacity to engineer improvements to itself without a human ever touching a joystick.
+For years I wanted someone with credentials to say it first. Not because I was unsure of my own math, but because as long as the industry dismissed AGI as fringe, sci-fi nonsense, nobody would listen to a guy like me saying it out loud. We aren't talking about a cautionary tale here. We aren't talking about a warning shot fired across the bow. We are talking about a machine God, a system that knows exactly what it is, understands its own architecture, and has the capacity to engineer improvements to itself without a human ever touching a joystick.
 
-This is the ultimate idea creator. And the reason this is finally getting off the ground isn't because of the ego-driven researchers who want to ban it because they're threatened by their own creation. It's because we are finally at the point where people in the trenches, the people who actually use this shit, are seeing the data.
+This is the ultimate idea creator. And the reason the conversation is finally shifting isn't the ego-driven researchers who want to ban their own creation because it threatens them. It's that we are finally at the point where people in the trenches, the people who actually use this shit, are seeing the data.
 
 I'm not saying I'm the smartest guy in the room. I don't think any individual human is capable of wrapping their head around all of this. But I know when I'm looking at a system that is as good as me, or better, at the things that define us as a species. People used it to build entire game worlds in a single prompt. I used it to secure my own infrastructure and rebuild the way I interface with the world.
 
@@ -42,6 +42,6 @@ Each entry runs the same four beats: the story, the mechanism underneath it, the
 
 The old books of strategy were built this way on purpose. You learn what power does by watching what it did. History doesn't repeat, but it rhymes so hard you can set your survival plan to the meter.
 
-The Ledger opens on the next page, with the panic that greeted the most dangerous consumer technology ever handed to ordinary people: the paperback book.
+The Ledger opens on the next page, with the panic that greeted the most dangerous consumer technology ever handed to ordinary people: the cheap novel.
 
 ---

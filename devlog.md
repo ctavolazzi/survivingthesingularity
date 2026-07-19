@@ -140,3 +140,14 @@
 - Compiled manuscript/StS-Complete-Draft-v0.0.9.md (80,220 words); book source now ~80,000 words
 - EDITORIAL-QUEUE: both outline gaps marked resolved; drafts/ files it referenced never existed (noted in place)
 - Manuscript is now content-complete per the queue's own definition; remaining pre-launch items are the voice pass, EPUB spot-read on devices, and production/front-matter work
+
+## 2026-07-19 - v0.5.0: the illustrated draft (Claude's version)
+- Every text-drawn diagram in the book is now a real figure: 33 hand-authored dark-theme SVGs in static/book-images/ (site palette, mono labels, self-contained canvases that render on any background), each with alt text and an italic caption. The 15 broken shattered-fence diagrams are gone; the 19 intact ASCII ones got real figures too (the ch12 mesh-scheduler stays a terminal block on purpose)
+- Two box-drawn tables converted to markdown tables (ch5 efficiency, ch8 processing styles)
+- Mechanical pass: preface epigraph spacing + quad-asterisk bold, intro paperback anachronism -> cheap novel, ch1 real table headers + LaTeX remnants removed + Transformer param count + FALC fifth driver + Grace et al. figures corrected, ch2 stage-transition dedup + adults defined, ch6 verbatim Economic Paradox dup replaced with a bridge, ch8 'final chapter' artifacts + article typos, ch9 bash comments fenced (rendered as H1s) + fence-wrapped bullets unwrapped, stale chapter cross-refs remapped across ch8/ch9/ch12/appendix A
+- Credibility pass: invented formulas reframed as honest sourced claims (Gloria Mark on interruption, Shannon entropy as a lens, Kipping in plain language), model-collapse entropy direction fixed and inevitability hedged to the published result, overclaims softened (self-awareness, 98%, yield stats), Mathematical Dead End given actual arithmetic
+- Em-dash sweep: 98 instances rewritten across ch4-ch9; all 30 shipped sections are now em-dash free, resolving the long-open policy question in favor of the global rule
+- Pixel art: three part-divider banners drawn in Aseprite (event-horizon grid, cooperative fire circle, shouse homestead), exported 4x nearest-neighbor to static/book-images/part{1,2,3}-divider.png
+- build-epub.sh now carries .svg into the EPUB/PDF image set
+- Verified: npm run build clean, sts.py audit 0/0, marked-level render probe over all 30 sections (59 images all resolve, zero wreckage in any pre block), headless Chrome screenshots of 4 figures (1 label collision found and fixed)
+- book.json 0.4.0 -> 0.5.0

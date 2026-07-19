@@ -20,8 +20,8 @@
   <rect x="470" y="164" width="90" height="16" rx="2" fill="#f59e0b"/>
   <line x1="240" y1="208" x2="296" y2="176" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#am)"/>
   <text x="228" y="226" font-size="12" fill="#f59e0b" text-anchor="end">6 mm weld plate</text>
-  <line x1="620" y1="208" x2="564" y2="176" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#am)"/>
-  <text x="632" y="226" font-size="12" fill="#f59e0b">6 mm weld plate</text>
+  <line x1="648" y1="142" x2="568" y2="166" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#am)"/>
+  <text x="656" y="140" font-size="12" fill="#f59e0b">6 mm weld plate</text>
 
   <!-- double C-channel header: two C profiles back to back -->
   <g stroke="#f1f5f9" stroke-width="3" fill="none">

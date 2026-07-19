@@ -25,7 +25,7 @@ echo "==> Sections (from book.json, minus print-style index)"
 FILES=$(jq -r '.sections[].file' "$BOOK/book.json" | grep -v '^18-index.md$')
 
 mkdir -p "$TMP/images"
-cp "$ROOT/static/book-images/"*.jpg "$ROOT/static/book-images/"*.png "$TMP/images/"
+cp "$ROOT/static/book-images/"*.jpg "$ROOT/static/book-images/"*.png "$ROOT/static/book-images/"*.svg "$TMP/images/"
 
 for f in $FILES; do
   prefix="${f%%-*}" # numeric prefix keeps footnote ids unique per chapter

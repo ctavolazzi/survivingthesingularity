@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#64748b"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE INVERTER TRAP VS. THE DC-NATIVE PROTOCOL</text>
+  <line x1="40" y1="66" x2="560" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- TOP: inverter trap -->
+  <text x="60" y="118" font-size="13" font-weight="600" fill="#64748b">THE THERMODYNAMIC INVERTER TRAP</text>
+
+  <rect x="60" y="140" width="130" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="125" y="166" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">SOLAR</text>
+  <text x="125" y="186" font-size="11" fill="#94a3b8" text-anchor="middle">DC</text>
+
+  <line x1="190" y1="170" x2="240" y2="170" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="244" y="140" width="130" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="309" y="166" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">BATTERY</text>
+  <text x="309" y="186" font-size="11" fill="#94a3b8" text-anchor="middle">DC</text>
+
+  <line x1="374" y1="170" x2="424" y2="170" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="428" y="140" width="130" height="60" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="493" y="166" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">INVERTER</text>
+  <text x="493" y="186" font-size="11" fill="#64748b" text-anchor="middle">DC → AC</text>
+  <!-- heat waste -->
+  <path d="M 470 134 q 4 -10 0 -18 M 493 134 q 4 -10 0 -18 M 516 134 q 4 -10 0 -18" fill="none" stroke="#64748b" stroke-width="1.5" opacity="0.8"/>
+  <text x="493" y="106" font-size="11" fill="#64748b" text-anchor="middle">10-15% lost as heat</text>
+
+  <line x1="558" y1="170" x2="608" y2="170" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="612" y="140" width="130" height="60" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="677" y="166" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">WALL BRICK</text>
+  <text x="677" y="186" font-size="11" fill="#64748b" text-anchor="middle">AC → DC again</text>
+  <path d="M 654 134 q 4 -10 0 -18 M 677 134 q 4 -10 0 -18 M 700 134 q 4 -10 0 -18" fill="none" stroke="#64748b" stroke-width="1.5" opacity="0.8"/>
+  <text x="677" y="106" font-size="11" fill="#64748b" text-anchor="middle">another 10-15% lost</text>
+
+  <line x1="677" y1="200" x2="677" y2="240" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="677" y="266" font-size="13" fill="#94a3b8" text-anchor="middle">your DC devices</text>
+  <text x="430" y="308" font-size="13" fill="#64748b" text-anchor="middle">up to 30% of your harvest burned converting DC to AC to DC</text>
+
+  <line x1="60" y1="332" x2="800" y2="332" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- BOTTOM: DC native -->
+  <text x="60" y="374" font-size="13" font-weight="600" fill="#f59e0b">THE INDEPENDENT DC-NATIVE PROTOCOL</text>
+
+  <rect x="60" y="396" width="150" height="60" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="135" y="422" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">SOLAR</text>
+  <text x="135" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">DC</text>
+
+  <line x1="210" y1="426" x2="252" y2="426" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="256" y="396" width="150" height="60" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="331" y="422" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">BATTERY</text>
+  <text x="331" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">12V / 24V bus</text>
+
+  <line x1="406" y1="426" x2="448" y2="426" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="452" y="396" width="150" height="60" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="527" y="422" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">DC FUSE BLOCK</text>
+  <text x="527" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">marine-grade</text>
+
+  <line x1="602" y1="426" x2="644" y2="426" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="648" y="396" width="150" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="723" y="422" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">DEVICES</text>
+  <text x="723" y="442" font-size="11" fill="#94a3b8" text-anchor="middle">LEDs, pumps, USB-C</text>
+
+  <text x="430" y="500" font-size="13" fill="#f59e0b" text-anchor="middle">zero conversion loss · no inverter to buy, cool, or fail</text>
+  <text x="430" y="526" font-size="12" fill="#64748b" text-anchor="middle">every load in the shell already wanted DC; stop paying the round-trip toll</text>
+</svg>

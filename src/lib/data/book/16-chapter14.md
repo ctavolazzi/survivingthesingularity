@@ -60,37 +60,9 @@ The algorithms optimized for maximum profit by stripping out all redundancy. And
 ## The Just-In-Time Trap
 The fundamental flaw of hyper-global supply chains is their total lack of resilience. They are optimized for *efficiency*, not *survival*.
 
-    THE LOGISTIC SHOCKWAVE: HOW THE BUFFER COLLAPSES
+![The Logistic Shockwave: a four-day cascade from port disruption, to trucks rerouted, to shelves stripped clean, to systemic panic, with the local food buffer draining to zero alongside](/book-images/ch14-logistic-shockwave.svg)
 
-     
-
-   [Day 1: Port Disruption / Algorithmic Lockout]
-
-```
-                  │
-```
-
-                  ▼
-
-   [Day 2: "Rolling Warehouses" (Trucks) Rerouted or Parked]
-
-```
-                  │
-```
-
-                  ▼
-
-   [Day 3: Supermarket Shelves Stripped Clean]
-
-```
-                  │
-```
-
-                  ▼
-
-   [Day 4: Systemic Panic & Resource Hoarding]
-
-  
+*The Logistic Shockwave. A just-in-time system has no buffer to absorb the blow, so the blow travels straight through to the shelves.*
 
 In systemic design, there is a constant trade-off between efficiency and resilience.
 
@@ -160,28 +132,9 @@ The corporate state knows this. That’s why the traditional internet is increas
 
 To achieve logistical autonomy, we must build a **Decentralized Municipal Mesh Network**.
 
-         CENTRALIZED VS. DECENTRALIZED MESH COMMS
+![Centralized versus decentralized mesh communications: a single tower serving three users fails entirely when broken, while a mesh of nodes routes around any dead node](/book-images/ch14-mesh-comms.svg)
 
-          
-
-      Centralized (Fragile)               Decentralized Mesh (Resilient)
-
-      
-
-```
-          ┌──────────┐                         o ─── o ─── o
-          │  Tower   │                        / \\   / \\   / \\
-          └────┬─────┘                       o ─── o ─── o ─── o
-         ┌─────┼─────┐                        \\   /   \\   /   /
-```
-
-         ▼     ▼     ▼                         o ─── o ─── o
-
-        [You] [You] [You]                      (Every node is a router)
-
-   (One break = Total Blackout)            (Self-healing, no single point of failure)
-
-  
+*Two topologies for a town. The tower is a single point of failure; the mesh treats damage as a routing problem.*
 
 A wireless mesh network is built using low-power, open-source radio nodes (such as LoRa or salvaged Wi-Fi hardware) deployed across a geographic area.
 

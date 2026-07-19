@@ -71,23 +71,9 @@ In the cracks, we do not rent our existence. We construct the **Autonomous Shell
 
 The Autonomous Shell is a heavily insulated, structurally reinforced, off-grid physical fortress built outside their speculative real-estate grid. It is designed to minimize your thermodynamic overhead while maximizing your physical security and digital autonomy. The entry cost? Roughly $25,000, the price of a mediocre used car. But instead of depreciating steel, you get a permanent, un-brickable exit from the corporate matrix.
 
-```text
-                 [THE DOUBLE-WIDE SHELL ARCHITECTURE]
-                 +----------------- 40 Feet -----------------+
-                 |                                           |
-  +--------------+-------------------------------------------+--------------+
-  |              |        communal workspace / servers       |              |
-  |              |                                           |              |
-  |  Container 1 |<================= [CUT] =================>|  Container 2 |
-  |   (8' x 40') |                                           |   (8' x 40') |
-  |              |       wet-room / living / kitchen         |              |
-  |              |                                           |              |
-  +--------------+-------------------------------------------+--------------+
-                 |    I-Beam Structural Reinforcement (Top)   |
-                 +-------------------------------------------+
-```
+![The Double-Wide Shell Architecture: two 8-by-40-foot containers mated along a reinforced seam, one side holding the workspace and server room, the other the wet-room, kitchen, and living quarters](/book-images/ch13-shell-architecture.svg)
 
-  
+*The Double-Wide Shell. Two one-trip containers, one surgical cut, 640 square feet of open span.*
 
 ### The Physics of the Double-Wide Shipping Container
 
@@ -107,34 +93,9 @@ Do not pour a monolithic concrete slab. It is an expensive, carbon-intensive, pe
 
 Instead, we use **Concrete Piers**. They are low-profile, highly resilient, and maintain a minimal physical and legal footprint.
 
-```text
-                       [6-POINT PIER ALIGNMENT]
-               Pier 1            Pier 2            Pier 3
-              +------+          +------+          +------+
-              | [##] |          | [##] |          | [##] |
-              +------+          +------+          +------+
-                 |                 |                 |
-```
+![6-Point Pier Alignment: plan view of six concrete piers positioned at the corner and center points of both containers' outer rails, with the seam line running between them](/book-images/ch13-pier-alignment.svg)
 
-    Container 1  |                 |                 |
-
-```text
-                 v                 v                 v
-                 ===================================== (Seam Line)
-                 ^                 ^                 ^
-```
-
-    Container 2  |                 |                 |
-
-```text
-                 |                 |                 |
-              +------+          +------+          +------+
-              | [##] |          | [##] |          | [##] |
-              +------+          +------+          +------+
-               Pier 4            Pier 5            Pier 6
-```
-
-  
+*The 6-point pier layout. Corner and center points, dug past the frost line, leveled to the millimeter.*
 
 ### The Geotechnical Calculations
 
@@ -174,24 +135,9 @@ A shipping container derives its structural strength from its corrugated steel s
 
 You must install a structural steel skeleton down the center seam to replace the removed wall.
 
-```text
-                     [CENTER C-CHANNEL REINFORCEMENT]
-                            Roof Corrugation
-                        +------------------------+
-                        |                        |
-                        |      +----------+      |
-                        +------|          |------+
-                               |  [Steel] |
-              Weld Plate ====> |  C-Chan  | <==== Weld Plate
-              (6 mm Steel)     |  Profile |      (6 mm Steel)
-                              |          |
-                              +----------+
-                                   ||
-                                   || <==== Vertical Support Column
-                                   ||       (75 mm x 75 mm HSS)
-```
+![Center C-Channel Reinforcement: section view showing the roof corrugation carried by a double C-channel header beam on 6 mm weld plates, supported by 75 by 75 mm HSS vertical columns welded to the floor rails](/book-images/ch13-c-channel.svg)
 
-  
+*The center-seam skeleton. Columns first, header second, then the cut: the roof never carries itself.*
 
 ### The Mechanical Load Calculations
 
@@ -240,28 +186,9 @@ Because k_steel is incredibly high, an uninsulated steel wall (d = 2 mm) transfe
 
 > **R-value = d / k_insulation**
 
-                      [THE THERMAL BARRIER LAYER]
+![The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel](/book-images/ch13-thermal-seal.svg)
 
-                       
-
-   Exterior        Steel        Closed-Cell Spray Foam      Interior Wall
-
-   Environment     Wall              (75 mm, R-21)          Wood Panel
-
-               ||===========||==========================||==============|
-
-               ||           ||                          ||              |
-
-   [HEAT] ===> ||           ||                          || ===> [BLOCKED]
-
-```text
-               ||           ||                          ||              |
-               ||===========||==========================||==============|
-                            ^                          ^
-                      No Condensation             Continuous Seal
-```
-
-  
+*The thermal barrier in section. Foam bonded to bare steel: vapor-sealed, condensation-proof, and the heat stays outside.*
 
 We do not use fiberglass batts. They settle over time, collect moisture, and allow air to draft through the corrugated ridges, causing rust to destroy your steel walls from the inside out.
 
@@ -280,23 +207,9 @@ When you construct the interior layout, you must design for long-term physical r
 
 We concentrate all plumbing, water filtration, and electrical distribution into a single, high-utility space: **The Universal Wet-Room**.
 
-```text
-                    [UNIVERSAL WET-ROOM LAYOUT]
-        +---------------------------- 8 Feet ----------------------------+
-        |                                                                |
-        |   +-------------------+                    +---------------+  |
-        |   |   DC Water Pump   |                     |  Linear Drain |  |
-        |   +---------+---------+                     +-------+-------+  |
-        |             |                                       ^          |
-        |             v                                       |          |
-        |      Shower Fixture                                 |          |
-        |             \\                                       /          |
-        |              \=====> [SLOPED FLOORED BASIN] =======/           |
-        |                                                                |
-        +----------------------------------------------------------------+
-```
+![Universal Wet-Room Layout: plan view with DC water pump feeding a shower fixture, the entire floor sloping as one basin toward a linear drain, and greywater exiting to the garden beds](/book-images/ch13-wet-room.svg)
 
-  
+*The Universal Wet-Room. One sloped basin, one linear drain, zero thresholds to trip over at any age.*
 
 ### The Wet-Room Construction
 

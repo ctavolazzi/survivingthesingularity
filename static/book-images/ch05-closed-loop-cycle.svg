@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 660" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="658" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE CLOSED-LOOP SURVIVAL CYCLE</text>
+  <line x1="40" y1="66" x2="418" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Stage 1: Sun & Soil -->
+  <rect x="240" y="96" width="380" height="74" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="430" y="128" font-size="19" font-weight="600" fill="#f1f5f9" text-anchor="middle">SUN &amp; SOIL</text>
+  <text x="430" y="152" font-size="13" fill="#94a3b8" text-anchor="middle">free energy, captured locally</text>
+
+  <!-- edge 1 -->
+  <line x1="430" y1="170" x2="430" y2="228" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="448" y="204" font-size="13" fill="#94a3b8">regenerative agriculture</text>
+
+  <!-- Stage 2: Community Calories -->
+  <rect x="240" y="236" width="380" height="74" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="430" y="268" font-size="19" font-weight="600" fill="#f1f5f9" text-anchor="middle">COMMUNITY CALORIES</text>
+  <text x="430" y="292" font-size="13" fill="#94a3b8" text-anchor="middle">fed people, surplus hours</text>
+
+  <!-- edge 2 -->
+  <line x1="430" y1="310" x2="430" y2="368" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="448" y="344" font-size="13" fill="#94a3b8">human labor &amp; cognition</text>
+
+  <!-- Stage 3: Creative Autonomy -->
+  <rect x="240" y="376" width="380" height="74" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="430" y="408" font-size="19" font-weight="600" fill="#f1f5f9" text-anchor="middle">CREATIVE AUTONOMY</text>
+  <text x="430" y="432" font-size="13" fill="#94a3b8" text-anchor="middle">content, mesh code, innovations</text>
+
+  <!-- edge 3 -->
+  <line x1="430" y1="450" x2="430" y2="508" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="448" y="484" font-size="13" fill="#94a3b8">digital arbitrage</text>
+
+  <!-- Stage 4: Physical Hardware -->
+  <rect x="240" y="516" width="380" height="74" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="430" y="548" font-size="19" font-weight="600" fill="#f1f5f9" text-anchor="middle">PHYSICAL HARDWARE</text>
+  <text x="430" y="572" font-size="13" fill="#94a3b8" text-anchor="middle">solar panels, tools, machines</text>
+
+  <!-- loop back -->
+  <path d="M 620 553 L 764 553 L 764 133 L 628 133" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aa)"/>
+  <text x="796" y="330" font-size="13" fill="#f59e0b" text-anchor="middle" transform="rotate(90 796 330)">the loop closes: hardware expands capture</text>
+</svg>

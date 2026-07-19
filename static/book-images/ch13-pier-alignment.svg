@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">6-POINT PIER ALIGNMENT</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">plan view · concrete piers at corner and center points, both outer rails</text>
+  <line x1="40" y1="88" x2="440" y2="88" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- footprint -->
+  <rect x="110" y="170" width="640" height="256" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="430" y="228" font-size="14" fill="#94a3b8" text-anchor="middle">CONTAINER 1</text>
+  <text x="430" y="382" font-size="14" fill="#94a3b8" text-anchor="middle">CONTAINER 2</text>
+
+  <!-- seam -->
+  <line x1="118" y1="298" x2="742" y2="298" stroke="#f59e0b" stroke-width="2" stroke-dasharray="10 6"/>
+  <text x="430" y="291" font-size="12" fill="#f59e0b" text-anchor="middle">seam line</text>
+
+  <!-- piers: top rail -->
+  <g stroke="#f59e0b" stroke-width="2" fill="#1e293b">
+    <rect x="110" y="150" width="40" height="40" rx="4"/>
+    <rect x="410" y="150" width="40" height="40" rx="4"/>
+    <rect x="710" y="150" width="40" height="40" rx="4"/>
+    <rect x="110" y="386" width="40" height="40" rx="4"/>
+    <rect x="410" y="386" width="40" height="40" rx="4"/>
+    <rect x="710" y="386" width="40" height="40" rx="4"/>
+  </g>
+  <g font-size="12" fill="#f59e0b" text-anchor="middle">
+    <text x="130" y="140">PIER 1</text>
+    <text x="430" y="140">PIER 2</text>
+    <text x="730" y="140">PIER 3</text>
+    <text x="130" y="452">PIER 4</text>
+    <text x="430" y="452">PIER 5</text>
+    <text x="730" y="452">PIER 6</text>
+  </g>
+  <!-- weld plate dots -->
+  <g fill="#f59e0b">
+    <circle cx="130" cy="170" r="4"/><circle cx="430" cy="170" r="4"/><circle cx="730" cy="170" r="4"/>
+    <circle cx="130" cy="406" r="4"/><circle cx="430" cy="406" r="4"/><circle cx="730" cy="406" r="4"/>
+  </g>
+
+  <text x="430" y="494" font-size="13" fill="#f1f5f9" text-anchor="middle">each pier: 50 × 50 cm footing · #4 rebar grid · Sonotube · steel weld-plate anchor</text>
+  <text x="430" y="520" font-size="12" fill="#64748b" text-anchor="middle">dug past the local frost line · leveled to the millimeter, or the mating cuts will not line up</text>
+</svg>

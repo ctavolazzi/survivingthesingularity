@@ -64,24 +64,9 @@ In this chapter, we are going to talk about **Digital Leverage**. We are going t
 ## The Great Slop-ocalypse: Why the Machine Needs You
 To understand your digital leverage, you must understand a quiet crisis currently ravaging the centralized web: **Model Collapse**.
 
-                  THE SPIRAL OF MODEL COLLAPSE
+![The Spiral of Model Collapse: AI models train on high-quality human data, flood the web with synthetic slop, then train on their own slop, degrading with every lap unless fresh human data enters the loop](/book-images/ch16-model-collapse.svg)
 
-                   
-
-    [High-Quality Human Data (Rare/Expensive)] ─── (AI Models Train on It)
-
-                       ▲                                  │
-
-```
-                       │ (Degrades without)               ▼
-                       │                      [Floods Web with AI-Slop]
-                       │                                  │
-                       │                                  ▼
-```
-
-    [System Degenerates into Mush] ◄─── (AI Trains on its Own Slop)
-
-  
+*The Spiral of Model Collapse. Every lap around the loop: less variance, more mush.*
 
 For decades, AI models were trained on the pristine, chaotic, beautiful archive of human history, books, essays, forum posts, and conversations created by real people. But as the internet became saturated with automated, AI-generated content (what we call "synthetic slop"), the machines began training on their own outputs.
 
@@ -102,23 +87,9 @@ But if you package that exact same technical manual inside an engaging, emotiona
 
 This is **Algorithmic Judo**. We use the weight and momentum of the algorithm to deliver our payload.
 
-                 THE ALGORITHMIC JUDO PIPELINE
+![The Algorithmic Judo Pipeline: a trojan-horse media package with a visible emotional wrapper and a hidden tactical payload rides the engagement algorithm to wide reach, then delivers autonomy guides, coordination tools, and off-grid manuals](/book-images/ch16-algorithmic-judo.svg)
 
-                  
-
-    [The Trojan Horse (Media)] ───► [Engagement Algorithm] ───► [Wide Reach]
-
-```
-    ┌────────────────────────┐      (Hardcoded to boost         │
-    │  - High-Emotion Story  │       human novelty/drama)       │ (Delivers)
-    │  - Art / Music / Vlog  │                                  ▼
-    ├────────────────────────┤                      [The Tactical Payload]
-    │  - Hidden Mesh Firmware│                      - Autonomy Guides
-    │  - Land Trust Templates│                      - Local Coordination
-    └────────────────────────┘                      - Off-Grid Manuals
-```
-
-  
+*Algorithmic Judo. The algorithm boosts the wrapper; the wrapper carries the payload.*
 
 To execute Algorithmic Judo successfully, your media must contain two layers:
 
@@ -148,26 +119,9 @@ IPFS is a peer-to-peer hypermedia protocol designed to make the web faster, safe
 ### 3. Sneakernets: The Physical Air-Gap
 When the centralized internet goes dark or gets restricted behind biometric paywalls, we fallback to the ultimate un-hackable network: the **Sneakernet**.
 
-                        THE SNEAKERNET CYCLE
+![The Sneakernet Cycle: an independent node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse](/book-images/ch16-sneakernet.svg)
 
-                         
-
-```
-      ┌───────────────┐                  ┌───────────────┐
-      │ Independent Node│──(Encrypts)─────►│ MicroSD / USB │
-      └───────────────┘                  └───────┬───────┘
-                                                 │ (Passed by hand /
-```
-
-                                                 ▼  local courier)
-
-```
-      ┌───────────────┐                  ┌───────────────┐
-      │ Neighbor Node │◄─(Decrypts)──────│ MicroSD / USB │
-      └───────────────┘                  └───────────────┘
-```
-
-  
+*The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet.*
 
 A sneakernet is simply the physical transport of digital data. A single, tiny microSD card can hold up to 1 terabyte of data, enough to store an entire library of survival manuals, offline medical databases, educational videos, and open-source software.
 

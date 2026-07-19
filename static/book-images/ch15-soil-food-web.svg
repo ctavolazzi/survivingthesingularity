@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 640" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="638" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE SOIL FOOD WEB ENGINE</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">the biological refinery that replaces the fertilizer subscription</text>
+  <line x1="40" y1="88" x2="500" y2="88" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- sun -->
+  <circle cx="430" cy="140" r="22" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <g stroke="#f59e0b" stroke-width="2">
+    <line x1="430" y1="106" x2="430" y2="94"/>
+    <line x1="430" y1="186" x2="430" y2="174"/>
+    <line x1="396" y1="140" x2="384" y2="140"/>
+    <line x1="476" y1="140" x2="464" y2="140"/>
+    <line x1="406" y1="116" x2="398" y2="108"/>
+    <line x1="454" y1="116" x2="462" y2="108"/>
+    <line x1="406" y1="164" x2="398" y2="172"/>
+    <line x1="454" y1="164" x2="462" y2="172"/>
+  </g>
+
+  <!-- stage 1 -->
+  <rect x="240" y="196" width="380" height="64" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="430" y="224" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">SUNLIGHT &amp; PLANTS</text>
+  <text x="430" y="246" font-size="12" fill="#94a3b8" text-anchor="middle">photosynthesis pumps sugar into the root zone</text>
+
+  <line x1="430" y1="260" x2="430" y2="306" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+  <text x="450" y="290" font-size="12" fill="#94a3b8">root exudates (sugars)</text>
+
+  <!-- stage 2 -->
+  <rect x="240" y="312" width="380" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="430" y="340" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">BACTERIA &amp; FUNGI</text>
+  <text x="430" y="362" font-size="12" fill="#94a3b8" text-anchor="middle">mine raw minerals out of rock, sand, and organic matter</text>
+
+  <line x1="430" y1="376" x2="430" y2="422" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+  <text x="450" y="406" font-size="12" fill="#94a3b8">grazed by the next trophic level</text>
+
+  <!-- stage 3 -->
+  <rect x="240" y="428" width="380" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="430" y="456" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">PROTOZOA &amp; NEMATODES</text>
+  <text x="430" y="478" font-size="12" fill="#94a3b8" text-anchor="middle">digest the microbes, excrete plant-available nutrients</text>
+
+  <line x1="430" y1="492" x2="430" y2="538" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+
+  <!-- stage 4 -->
+  <rect x="240" y="544" width="380" height="64" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="430" y="572" font-size="16" font-weight="600" fill="#f59e0b" text-anchor="middle">FED PLANTS, LIVING SOIL</text>
+  <text x="430" y="594" font-size="12" fill="#94a3b8" text-anchor="middle">zero chemical fertilizers needed</text>
+
+  <!-- side loop -->
+  <path d="M 620 576 L 744 576 L 744 228 L 628 228" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aa)"/>
+  <text x="776" y="402" font-size="12" fill="#3b82f6" text-anchor="middle" transform="rotate(90 776 402)">plants feed the web that feeds the plants</text>
+</svg>

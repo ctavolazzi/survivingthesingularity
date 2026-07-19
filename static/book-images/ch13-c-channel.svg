@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 600" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="598" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">CENTER C-CHANNEL REINFORCEMENT</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">section view at the seam · the steel skeleton that replaces the cut walls</text>
+  <line x1="40" y1="88" x2="480" y2="88" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- roof corrugation -->
+  <path d="M 130 150 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14 l 25 -14 l 25 14"
+        fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="430" y="122" font-size="13" fill="#3b82f6" text-anchor="middle">roof corrugation (both containers)</text>
+
+  <!-- weld plates -->
+  <rect x="300" y="164" width="90" height="16" rx="2" fill="#f59e0b"/>
+  <rect x="470" y="164" width="90" height="16" rx="2" fill="#f59e0b"/>
+  <line x1="240" y1="208" x2="296" y2="176" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#am)"/>
+  <text x="228" y="226" font-size="12" fill="#f59e0b" text-anchor="end">6 mm weld plate</text>
+  <line x1="620" y1="208" x2="564" y2="176" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#am)"/>
+  <text x="632" y="226" font-size="12" fill="#f59e0b">6 mm weld plate</text>
+
+  <!-- double C-channel header: two C profiles back to back -->
+  <g stroke="#f1f5f9" stroke-width="3" fill="none">
+    <path d="M 424 180 L 396 180 L 396 268 L 424 268"/>
+    <path d="M 436 180 L 464 180 L 464 268 L 436 268"/>
+  </g>
+  <text x="500" y="216" font-size="13" fill="#f1f5f9">double C-channel header beam</text>
+  <text x="500" y="238" font-size="12" fill="#94a3b8">section modulus S ≥ 35 cm³ · A36 steel</text>
+  <text x="500" y="260" font-size="12" fill="#94a3b8">welded along the full ceiling seam</text>
+
+  <!-- vertical HSS column -->
+  <rect x="410" y="268" width="40" height="240" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="418" y1="276" x2="418" y2="500" stroke="#334155" stroke-width="2"/>
+  <line x1="442" y1="276" x2="442" y2="500" stroke="#334155" stroke-width="2"/>
+  <text x="472" y="352" font-size="13" fill="#f1f5f9">vertical support column</text>
+  <text x="472" y="374" font-size="12" fill="#94a3b8">75 × 75 mm HSS, 6 mm wall</text>
+  <text x="472" y="396" font-size="12" fill="#94a3b8">one every 10 feet along the seam</text>
+
+  <!-- floor rail -->
+  <rect x="130" y="508" width="600" height="14" rx="2" fill="#334155"/>
+  <text x="430" y="548" font-size="13" fill="#94a3b8" text-anchor="middle">welded to the bottom floor rails of both containers</text>
+  <text x="430" y="574" font-size="12" fill="#64748b" text-anchor="middle">columns first, header second, THEN the cut: the roof never carries itself</text>
+</svg>

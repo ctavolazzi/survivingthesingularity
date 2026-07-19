@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 700" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="698" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE SURPLUS REDIRECTION MATRIX</text>
+  <line x1="40" y1="66" x2="430" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- source -->
+  <rect x="250" y="92" width="360" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="430" y="119" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">COMMERCIAL RETAILERS / WHOLESALERS</text>
+  <text x="430" y="141" font-size="12" fill="#94a3b8" text-anchor="middle">surplus food stream</text>
+
+  <line x1="430" y1="156" x2="430" y2="196" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+
+  <!-- decision diamond -->
+  <path d="M 430 200 L 540 258 L 430 316 L 320 258 Z" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="430" y="253" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">IS THE FOOD</text>
+  <text x="430" y="275" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">EDIBLE?</text>
+
+  <!-- YES branch -->
+  <path d="M 320 258 L 205 258 L 205 328" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+  <text x="248" y="248" font-size="13" font-weight="600" fill="#f59e0b">YES</text>
+  <rect x="70" y="334" width="270" height="62" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="205" y="360" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">REDIRECTION PROTOCOL</text>
+  <text x="205" y="382" font-size="11" fill="#94a3b8" text-anchor="middle">mandatory donation route</text>
+
+  <line x1="205" y1="396" x2="205" y2="436" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+
+  <rect x="70" y="442" width="270" height="84" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="205" y="470" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">MUNICIPAL KITCHENS</text>
+  <text x="205" y="490" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">+ CLT FOOD BANKS</text>
+  <text x="205" y="512" font-size="11" fill="#94a3b8" text-anchor="middle">business earns up to 25% utility credits</text>
+
+  <!-- NO branch -->
+  <path d="M 540 258 L 655 258 L 655 328" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ab)"/>
+  <text x="596" y="248" font-size="13" font-weight="600" fill="#3b82f6">NO</text>
+  <rect x="520" y="334" width="270" height="62" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="655" y="360" font-size="14" font-weight="600" fill="#3b82f6" text-anchor="middle">ORGANIC COMPOST ROUTE</text>
+  <text x="655" y="382" font-size="11" fill="#94a3b8" text-anchor="middle">non-edible organics only</text>
+
+  <line x1="655" y1="396" x2="655" y2="436" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+
+  <rect x="520" y="442" width="270" height="84" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="655" y="470" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">SOIL FOOD WEB</text>
+  <text x="655" y="490" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">COMPOST + BIOREACTOR</text>
+  <text x="655" y="512" font-size="11" fill="#94a3b8" text-anchor="middle">feeds the Chapter 9 ACT brewer</text>
+
+  <!-- landfill dodge path -->
+  <line x1="430" y1="316" x2="430" y2="560" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ag)"/>
+  <text x="430" y="416" font-size="11" fill="#64748b" text-anchor="middle">attempted</text>
+  <text x="430" y="432" font-size="11" fill="#64748b" text-anchor="middle">landfill dump</text>
+
+  <rect x="290" y="566" width="280" height="62" rx="10" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="430" y="592" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">PROGRESSIVE CIVIL PENALTY</text>
+  <text x="430" y="614" font-size="11" fill="#64748b" text-anchor="middle">revenues route directly to the MRSF</text>
+
+  <text x="430" y="668" font-size="12" fill="#64748b" text-anchor="middle">there is no such thing as waste; there is only misplaced energy</text>
+</svg>

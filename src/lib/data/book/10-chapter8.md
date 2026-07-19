@@ -64,37 +64,9 @@ In the old world, the primary economic engine was the extraction of physical res
 
 In the era of the Singularity, the primary economic engine is the extraction of **cognitive attention**.
 
-                   THE COGNITIVE EXTRACTION ENGINE
+![The Cognitive Extraction Engine: raw attention is harvested by infinite scroll and notifications, depleting the prefrontal cortex, producing systemic suggestibility, and ending in loss of physical agency](/book-images/ch08-cognitive-extraction.svg)
 
-                    
-
-     [Your Raw Attention] ─── (Harvested by Infinite Scroll / Notifications)
-
-```
-              │
-```
-
-              ▼
-
-     [Prefrontal Cortex Depletion] ─── (Dopamine baseline spike & crash)
-
-```
-              │
-```
-
-              ▼
-
-     [Systemic Suggestibility] ─── (Ready to accept automated corporate solutions)
-
-```
-              │
-```
-
-              ▼
-
-     [Loss of Physical Agency] ─── (Too tired to farm, build, or coordinate)
-
-  
+*The Cognitive Extraction Engine. Attention goes in at the top; agency comes out the bottom, and the platform keeps the difference.*
 
 Your attention is not a passive, infinite resource. It is a highly demanding chemical process. Every time you check a notification, read an inflammatory headline, or watch a short-form video clip, your brain releases a tiny squirt of dopamine, the neurochemical responsible for drive, motivation, and search behaviors.
 
@@ -126,35 +98,9 @@ In computer science, a "worm" is a self-replicating program that spreads through
 
 In psychology, we have **memetic viruses**. These are highly contagious packages of information, usually designed to trigger intense moral outrage, fear, or tribal division, that self-replicate through human conversation and social media networks.
 
-                 INFORMATION DISPENSING ARCHITECTURES
+![Information Dispensing Architectures: a centralized algorithmic stream interrupting your brain constantly, versus filtered local sources delivered to your brain in scheduled batches](/book-images/ch08-info-architectures.svg)
 
-                  
-
-     Real-Time Reactive (Fragile)           Analog Batch-Processing (Independent)
-
-     
-
-      [Centralized Algorithmic Stream]         [Filtered Local Sources]
-
-```
-                    │                                     │
-```
-
-                    ▼  (Constant Interruptions)           ▼  (Scheduled Batches)
-
-```
-           ┌─────────────────┐                   ┌─────────────────┐
-           │ YOUR BRAIN (OS) │                   │ YOUR BRAIN (OS) │
-           └─────────────────┘                   └─────────────────┘
-```
-
-             - Outrage-loops                       - Strategic action
-
-             - High anxiety                        - High executive function
-
-             - Depleted working memory             - Creative, focused agency
-
-  
+*Two architectures for the same brain. The stream keeps you reactive; the batch keeps you sovereign.*
 
 When you consume a memetic virus, your brain spends hours (or days) processing it. You play out imaginary arguments in your head, feel a spike of stress hormones, and talk about it with your neighbors.
 
@@ -170,22 +116,12 @@ We are designed to interact with the physical world in high-definition, three-di
 
 To achieve deep work, you must transition your intellectual consumption to **Analog Batch-Processing**:
 
-          PROCESSING STYLES COMPARISON
-
-           
-
-```
-┌───────────────────────────┬───────────────────────────┐
-│ Real-Time Stream (Fragile)│ Batch-Processing (Independent)│
-├───────────────────────────┼───────────────────────────┤
-│ Instant reaction          │ Delayed reflection        │
-│ Constant interruptions    │ Deep blocks of focus      │
-│ Digital fragmentation     │ Physical documentation    │
-│ Low comprehension         │ Mastery of technical craft│
-└───────────────────────────┴───────────────────────────┘
-```
-
-  
+| Real-Time Stream (Fragile) | Batch-Processing (Independent) |
+| :-- | :-- |
+| Instant reaction | Delayed reflection |
+| Constant interruptions | Deep blocks of focus |
+| Digital fragmentation | Physical documentation |
+| Low comprehension | Mastery of technical craft |
 
   - **Physical Documentation:** Keep a rugged, paper field journal. Write down your agricultural notes, your electrical schematics, your community plans, and your daily thoughts by hand with a pencil. Physical writing forces a slower, more deliberate form of cognitive synthesis that digital typing simply cannot replicate.
   - **Long-Form Reading:** Ditch the summaries and the short-form articles. Read complete, physical books or offline PDFs of academic papers, technical schematics, and classic literature. Training your mind to follow a complex, three-hundred-page argument is like doing heavy squats for your prefrontal cortex.

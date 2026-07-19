@@ -68,30 +68,9 @@ In Chapter 2, we discussed the theory of the Decentralized Municipal Mesh Networ
 
 We do not use cellular networks. We do not use commercial satellite links. Instead, we use **LoRa (Long Range)** radio technology.
 
-                ANATOMY OF AN INDEPENDENT MESH NODE
+![Anatomy of an independent mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz](/book-images/ch17-lora-node.svg)
 
-                  
-
-```
-                ┌────────────────────────────────┐
-                │ Waterproof Pelican / Ammo Box  │
-                │                                │
-                │  ┌──────────────────────────┐  │
-                │  │    5W Solar PV Panel     │  │
-                │  └────────────┬─────────────┘  │
-                │               ▼                │
-                │  ┌──────────────────────────┐  │
-                │  │  18650 Li-Ion Batteries  │  │
-                │  └────────────┬─────────────┘  │
-                │               ▼                │
-                │  ┌──────────────────────────┐  │   (915 / 868 MHz)
-                │  │ ESP32 / Heltec LoRa Chip │──┼───► [To Next Node]
-                │  └──────────────────────────┘  │
-                │                                │
-                └────────────────────────────────┘
-```
-
-  
+*An independent mesh node. Sunlight in, encrypted packets out, no license and no bill.*
 
 A standard mesh node is built around an incredibly cheap, highly efficient microcontroller like the **ESP32** integrated with a LoRa radio chip (such as the Heltec V3 or LilyGO T-Beam). These boards cost less than a lunch at a fast-food restaurant, yet they possess extraordinary capabilities:
 
@@ -113,43 +92,9 @@ The inverter’s job is to take the clean 12V, 24V, or 48V Direct Current (DC) e
 
 But if you look closely at your appliances, your phone charger, your laptop, your LED lightbulbs, your mesh routers, and your water pumps, they all run on DC power. Their power cords contain heavy plastic bricks whose sole purpose is to convert the AC house current *back* into low-voltage DC power.
 
-             THE THERMODYNAMIC INVERTER TRAP
+![The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 percent converting DC to AC and again converting back to DC at the wall brick, while the DC-native chain runs solar to battery to fuse block to devices with zero conversion loss](/book-images/ch17-dc-native.svg)
 
-              
-
-     [Solar Panel (DC)] ──► [Battery (DC)] 
-
-```
-                                │
-```
-
-                                ▼  (10-15% conversion energy loss!)
-
-                            [Inverter (AC)] 
-
-```
-                                │
-```
-
-                                ▼  (Another 10-15% energy loss!)
-
-                            [Wall Brick (DC)] ──► [Your Devices]
-
-                            
-
-     -----------------------------------------------------------------
-
-     
-
-              THE INDEPENDENT DC-NATIVE PROTOCOL
-
-               
-
-     [Solar Panel (DC)] ──► [Battery (DC)] ──► [DC Fuse Block] ──► [Devices]
-
-                                             (Zero conversion loss!)
-
-  
+*The round-trip toll. Every load in the shell already wanted DC; the inverter chain charges you twice to deliver it.*
 
 This is a thermodynamic disaster. You are losing up to 30% of your captured solar energy simply converting it back and forth through silicon components that generate heat and are highly vulnerable to failure.
 
@@ -168,29 +113,9 @@ If you must order replacement parts from a centralized distributor, your surviva
 
 To achieve true mechanical autonomy, your community must establish a **Independent Fab Lab** utilizing open-source machine tools.
 
-                  THE DECENTRALIZED FAB LAB
+![The Decentralized Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power](/book-images/ch17-fab-lab.svg)
 
-                   
-
-    [Independent Recycled Raw Materials]
-
-```
-                   │
-```
-
-                   ▼
-
-```
-    ┌───────────────────────────────────┐
-    │       OPEN-SOURCE MACHINE CORES   │
-    ├───────────────────────────────────┤
-    │  - 3D Printer (RepRap / PETG)     │ ──► [Custom Seals, Gears, Valves]
-    │  - CNC Plasma / Router (Low-Power)│ ──► [Structural Steel Mounts]
-    │  - BCS-Type Open Tractor (Diesel) │ ──► [Tillage, Hauling, Energy Generation]
-    └───────────────────────────────────┘
-```
-
-  
+*The Decentralized Fab Lab. Broken means fabricate, not wait.*
 
 The gold standard for decentralized fabrication is the **Global Village Construction Set (GVCS)**, an open-source project that details how to build the fifty industrial machines necessary to construct a small, modern, sustainable civilization from scratch, including tractors, 3D printers, wind turbines, and brick presses.
 

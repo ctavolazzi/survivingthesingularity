@@ -70,21 +70,13 @@ As temperature approaches absolute zero, the entropy of a system approaches a co
 ## The Meat Engine vs. The Silicon Machine
 Here is the hard, cold truth that the tech-utopians won't tell you: as a biological entity, you are a deeply inefficient thermodynamic engine.
 
-      TYPICAL THERMODYNAMIC EFFICIENCIES
-
-```
-┌──────────────────────────┬────────────────────────┐
-│ System                   │ Efficiency (%)         │
-├──────────────────────────┼────────────────────────┤
-│ Human Muscle (Mechanical)│ ~18% - 25%             │
-│ Diesel Engine            │ ~35% - 40%             │
-│ Steam Turbine            │ ~40% - 45%             │
-│ Combined Cycle Gas       │ ~60%                   │
-│ Electric Motor           │ ~90% - 95%             │
-└──────────────────────────┴────────────────────────┘
-```
-
-  
+| System | Typical Efficiency |
+| :-- | :-: |
+| Human Muscle (Mechanical) | ~18% to 25% |
+| Diesel Engine | ~35% to 40% |
+| Steam Turbine | ~40% to 45% |
+| Combined Cycle Gas | ~60% |
+| Electric Motor | ~90% to 95% |
 
 You burn roughly 2,000 to 2,500 kilocalories a day just to keep your heart pumping, your lungs moving, and your brain generating existential dread. That is equivalent to about 100 watts of continuous power, roughly the same energy required to run an old incandescent lightbulb.
 
@@ -121,46 +113,9 @@ The algorithms that run the modern world are ravenous for human engagement, uniq
 
 By creating independent media cells, writing open-source survival code, or streaming decentralized educational content, you can trade high-value digital human output back into the system to secure physical resources (tools, medical supplies, seed stocks). You are essentially using a tiny amount of local, renewable energy to extract massive value from the centralized machine.
 
-      THE CLOSED-LOOP SURVIVAL CYCLE
+![The Closed-Loop Survival Cycle: sun and soil feed community calories, which fund creative autonomy, which buys physical hardware, which expands the community's capture of sun and soil](/book-images/ch05-closed-loop-cycle.svg)
 
-       
-
-```
-         ┌────────────────────────┐
-         │     SUN & SOIL         │
-         └──────────┬─────────────┘
-                    │ (Regenerative Agriculture)
-```
-
-                    ▼
-
-```
-         ┌────────────────────────┐
-         │    COMMUNITY CALORIES  │
-         └──────────┬─────────────┘
-                    │ (Human Labor & Cognition)
-```
-
-                    ▼
-
-```
-   ┌───────────────────────────────────┐
-   │         CREATIVE AUTONOMY         │
-   │ (Content, Mesh Code, Innovations) │
-   └────────────────┬──────────────────┘
-                    │ (Digital Arbitrage)
-```
-
-                    ▼
-
-```
-         ┌────────────────────────┐
-         │    PHYSICAL HARDWARE   │
-         │   (Solar Panels, Tools)│
-         └────────────────────────┘
-```
-
-  
+*The Closed-Loop Survival Cycle. Energy captured from the sun and soil stays inside the community, and every pass through the loop widens the intake.*
 
 ## The Cyberdeck: Your First Machine in the Cracks
 

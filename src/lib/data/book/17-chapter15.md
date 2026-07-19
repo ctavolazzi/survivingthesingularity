@@ -64,39 +64,9 @@ In the cracks, we do not play this game. If you attempt to buy agricultural land
 
 To survive, we must transition from **private property** to the **collective commons**.
 
-              THE COOPERATIVE LAND TRUST FIREWALL
+![The Cooperative Land Trust Firewall: the speculative real estate market's attempts to buy or foreclose are blocked by a legal shield; inside the trust, the land is held in perpetuity and leased to community stewards on a 99-year ground lease](/book-images/ch15-clt-firewall.svg)
 
-               
-
-    [Speculative Real Estate Market] ─── (Attempts to Buy/Foreclose)
-
-```
-                  │
-```
-
-                  ▼   (BLOCKED BY LEGAL SHIELD)
-
-     ===========================================
-
-```
-     │        COMMUNITY LAND TRUST (CLT)       │
-     │                                         │
-     │  ┌───────────────────────────────────┐  │
-     │  │   The Land (Held in perpetuity)   │  │
-     │  │   - Removed from market spec      │  │
-     │  │   - Tax-sheltered / Easements     │  │
-     │  └──────────────────┬────────────────┘  │
-     │                     │ (99-Year Ground   │
-     │                     ▼  Lease)           │
-     │  ┌───────────────────────────────────┐  │
-     │  │ The Stewardship (Housing/Farms)   │  │
-     │  │ - Owned by community members      │  │
-     │  └───────────────────────────────────┘  │
-```
-
-     ===========================================
-
-  
+*The CLT firewall. Split the title, and the market can no longer reach the dirt.*
 
 The most powerful legal tool for this transition is the **Community Land Trust (CLT)**.
 
@@ -133,44 +103,9 @@ If you are relying on their chemical store to grow your food, you are not indepe
 
 To break this dependency, we must deploy the **Soil Food Web** hack.
 
-                 THE SOIL FOOD WEB ENGINE
+![The Soil Food Web Engine: sunlight and plants pump sugars to bacteria and fungi, which mine minerals, which are digested by protozoa and nematodes, which release plant-available nutrients back to the plants in a closed loop](/book-images/ch15-soil-food-web.svg)
 
-                  
-
-```
-                 ┌──────────────────────┐
-                 │  Sunlight & Plants   │
-                 └──────────┬───────────┘
-                            │ (Exudates/Sugars)
-```
-
-                            ▼
-
-```
-                 ┌──────────────────────┐
-                 │ Bacteria & Fungi     │ (Mine raw minerals from rock/sand)
-                 └──────────┬───────────┘
-                            │ (Consumed by)
-```
-
-                            ▼
-
-```
-                 ┌──────────────────────┐
-                 │ Protozoa & Nematodes │ (Release plant-available nutrients)
-                 └──────────┬───────────┘
-                            │
-```
-
-                            ▼
-
-```
-                 ┌──────────────────────┐
-                 │ Bio-Available Plants │ (Zero chemical fertilizers needed!)
-                 └──────────────────────┘
-```
-
-  
+*The Soil Food Web. A biological refinery running on sunlight: the plants feed the web that feeds the plants.*
 
 Healthy soil is not just dirt; it is a complex, self-assembling, biological reactor. A single teaspoon of healthy soil contains more living organisms than there are humans on Earth. These microbes, bacteria, fungi, protozoa, and nematodes, work in a beautiful, closed-loop economy:
 

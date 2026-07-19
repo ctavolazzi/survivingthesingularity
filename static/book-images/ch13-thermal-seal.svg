@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+    <pattern id="foam" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#78350f"/>
+      <circle cx="11" cy="10" r="2.2" fill="#78350f"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="538" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE THERMAL BARRIER LAYER</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">wall section · why the tin can stays 70°F on 500 watts</text>
+  <line x1="40" y1="88" x2="420" y2="88" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- layer: steel -->
+  <rect x="300" y="130" width="22" height="300" fill="#475569"/>
+  <text x="311" y="118" font-size="12" fill="#94a3b8" text-anchor="middle">steel</text>
+  <text x="311" y="452" font-size="11" fill="#64748b" text-anchor="middle">2 mm</text>
+
+  <!-- layer: foam -->
+  <rect x="322" y="130" width="170" height="300" fill="#0f172a" stroke="none"/>
+  <rect x="322" y="130" width="170" height="300" fill="url(#foam)" opacity="0.55"/>
+  <rect x="322" y="130" width="170" height="300" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <text x="407" y="118" font-size="12" fill="#f59e0b" text-anchor="middle">closed-cell spray foam</text>
+  <text x="407" y="452" font-size="11" fill="#f59e0b" text-anchor="middle">75 mm · R-21</text>
+
+  <!-- layer: interior panel -->
+  <rect x="492" y="130" width="26" height="300" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="505" y="118" font-size="12" fill="#94a3b8" text-anchor="middle">wood panel</text>
+
+  <!-- exterior / interior labels -->
+  <text x="160" y="160" font-size="13" fill="#64748b" text-anchor="middle">EXTERIOR</text>
+  <text x="160" y="180" font-size="12" fill="#64748b" text-anchor="middle">-20°F blizzard or</text>
+  <text x="160" y="198" font-size="12" fill="#64748b" text-anchor="middle">100°F heat dome</text>
+  <text x="660" y="160" font-size="13" fill="#f1f5f9" text-anchor="middle">INTERIOR</text>
+  <text x="660" y="180" font-size="12" fill="#94a3b8" text-anchor="middle">70°F sanctuary</text>
+  <text x="660" y="198" font-size="12" fill="#94a3b8" text-anchor="middle">under 500 W load</text>
+
+  <!-- heat arrows: big in, shrinking through -->
+  <line x1="120" y1="280" x2="292" y2="280" stroke="#f59e0b" stroke-width="8" marker-end="url(#ah)"/>
+  <text x="200" y="264" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">HEAT</text>
+  <line x1="330" y1="280" x2="400" y2="280" stroke="#f59e0b" stroke-width="4" opacity="0.6" marker-end="url(#ah)"/>
+  <line x1="430" y1="280" x2="460" y2="280" stroke="#f59e0b" stroke-width="2" opacity="0.35" marker-end="url(#ah)"/>
+  <text x="580" y="285" font-size="13" font-weight="600" fill="#3b82f6">BLOCKED</text>
+
+  <!-- callouts -->
+  <line x1="311" y1="366" x2="311" y2="330" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="311" y="386" font-size="12" fill="#3b82f6" text-anchor="middle">foam bonds to bare steel:</text>
+  <text x="311" y="404" font-size="12" fill="#3b82f6" text-anchor="middle">vapor-sealed, no condensation,</text>
+  <text x="311" y="422" font-size="12" fill="#3b82f6" text-anchor="middle">no rust from the inside out</text>
+
+  <text x="430" y="486" font-size="13" fill="#f1f5f9" text-anchor="middle">Q = k·A·ΔT / d  →  drive k down with foam, and the tin can stops leaking watts</text>
+  <text x="430" y="512" font-size="12" fill="#64748b" text-anchor="middle">walls R-21 (75 mm) · ceiling R-28 (100 mm) · continuous seal, zero fiberglass batts</text>
+</svg>

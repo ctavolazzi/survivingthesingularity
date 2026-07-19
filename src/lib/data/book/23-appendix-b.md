@@ -72,4 +72,20 @@
 164. Z.ai Releases GLM-5.2 as US Restricts Anthropic Models - Let's Data Science, https://letsdatascience.com/news/zai-releases-glm-52-as-us-restricts-anthropic-models-7fe0d44d
 165. GLM-5.2 Signals a New Phase of Accessible Frontier AI - Arctic Wolf, https://arcticwolf.com/resources/blog/glm-5-2-signals-new-phase-accessible-frontier-ai-and-a-shift-in-cyber-risk/
 
+## The Cyberdeck Revival (added 2026-07-18)
+
+166. Cyberdecks are having a moment, rejecting big tech surveillance with style and substance - TechCrunch, June 2, 2026, https://techcrunch.com/2026/06/02/cyberdeck-tiktok-trend-reject-big-tech/
+167. Neuromancer (William Gibson, 1984; origin of the "cyberspace deck") - Wikipedia, https://en.wikipedia.org/wiki/Neuromancer
+168. uConsole Review: A Portable Linux Cyberdeck - Mobile Hacker, March 30, 2026, https://www.mobile-hacker.com/2026/03/30/uconsole-review-a-portable-linux-cyberdeck/
+169. ClockworkPi uConsole (modular handheld Linux cyberdeck) - ClockworkPi, https://www.clockworkpi.com/uconsole
+170. HackBerry Pi CM5 (Compute Module 4/5 handheld deck) - Carbon Computers, https://carboncomputers.us/
+171. Building the Ultimate Cyberdeck: My Custom Hackberry Pi - Eclypsium, https://eclypsium.com/blog/building-the-ultimate-cyberdeck-my-custom-hackberry-pi/
+172. therustyrobot/cyberdeck: portable offline knowledge, AI, and mesh communication platform - GitHub, https://github.com/therustyrobot/cyberdeck
+173. Kiwix (offline Wikipedia and reference libraries) - Kiwix, https://kiwix.org/
+174. Meshtastic (open-source LoRa mesh messaging) - Meshtastic, https://meshtastic.org/
+175. RTL-SDR (low-cost software-defined radio receiver) - RTL-SDR.com, https://www.rtl-sdr.com/about-rtl-sdr/
+176. Computer Fraud and Abuse Act, 18 U.S.C. Sec. 1030 - Wikipedia, https://en.wikipedia.org/wiki/Computer_Fraud_and_Abuse_Act
+177. Van Buren v. United States (2021; narrowing "exceeds authorized access") - Wikipedia, https://en.wikipedia.org/wiki/Van_Buren_v._United_States
+178. Understanding the FCC Part 15 rules for unlicensed radio devices - FCC / 47 CFR Part 15, https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15
+
 ---

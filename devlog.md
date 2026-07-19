@@ -130,3 +130,13 @@
 - Introduction now names the four-beat structure (story -> mechanism -> rule -> practice) and points at Appendix D
 - Verified: 22 practice sections, no em dashes in new copy, production build passes, EPUB rebuilt with manual + index; compiled manuscript/StS-Complete-Draft-v0.0.8.md (78,857 words)
 - Book source now ~78,650 words (was 73,636 after the morning weave)
+
+## 2026-07-18 - Content-complete push: Egalitarian Pivot, Stage-2 evidence, citation sync
+- Discovered the Conclusion's Bear Flag scene never names Elijah (grep + the site's inProgress flag both missed it); named him once, which also clears the false "in progress" badge on /book
+- Wrote "The Egalitarian Pivot" into Ch. 7 Foundations (after Primate Backlash, bridging into P-09): the homepage-promised section; ~600 words on trust as the post-credential premium and the co-op as the scarcity-psychology cure
+- Wove the June 2026 Stage-2 receipt into Ch. 2 (export directive -> worldwide shutoff -> same-day open-weight release; verified via web search, sources in Appendix B 162-165); rewrote the P-04 Red Flag block as a compressed case file to kill the double-telling
+- Appendix B: added 133-161 (all Precedent Ledger sources) + 162-165 (Stage-2 evidence)
+- book.json bumped 0.3.0 -> 0.3.1; built and probed Surviving-the-Singularity-v0.3.1.pdf/.epub (Egalitarian Pivot, June 2026 weave, Ledger manual, symptom index all present); PDF opened locally
+- Compiled manuscript/StS-Complete-Draft-v0.0.9.md (80,220 words); book source now ~80,000 words
+- EDITORIAL-QUEUE: both outline gaps marked resolved; drafts/ files it referenced never existed (noted in place)
+- Manuscript is now content-complete per the queue's own definition; remaining pre-launch items are the voice pass, EPUB spot-read on devices, and production/front-matter work

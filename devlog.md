@@ -151,3 +151,9 @@
 - build-epub.sh now carries .svg into the EPUB/PDF image set
 - Verified: npm run build clean, sts.py audit 0/0, marked-level render probe over all 30 sections (59 images all resolve, zero wreckage in any pre block), headless Chrome screenshots of 4 figures (1 label collision found and fixed)
 - book.json 0.4.0 -> 0.5.0
+- Later same day: PDF published as a public download at /downloads, view + download buttons on /book (version read live from book.json)
+
+## 2026-07-19 (later) - v0.5.1: the Ledger's framing corrected (author ruling)
+- CT ruling on the introduction's Precedent Ledger passage: "nothing like this has ever happened before" is TRUE, not a lie. The machine is unprecedented (a tool that invents new tools, one of our most sacred core functions); what is precedented is the size, shape, and scale of the change and the human reaction to it
+- Rewrote the passage around that distinction, folding in CT's material: the goalpost-moving ("it can't do Y, until it does"), the AI-slop chorus as ego (the forager / hand-scribed manuscript / stage-play analogies), "the wise ones are learning how to solder," and the new thesis line: the technology is new every time, the stampede never is
+- book.json 0.5.0 -> 0.5.1; recompiled draft (83,377 words); rebuilt EPUB + PDF at v0.5.1; public download swapped to Surviving-the-Singularity-v0.5.1.pdf (the /book buttons track book.version automatically)

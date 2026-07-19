@@ -3,7 +3,7 @@
 ## The 9 Stages of the Singularity and the Future of Earth
 
 **Author:** Christopher Tavolazzi
-**Manuscript:** 0.5.0
+**Manuscript:** 0.5.1
 **Compiled:** 2026-07-19 (by sts.py compile, book.json section order)
 
 ## TABLE OF CONTENTS
@@ -75,7 +75,13 @@ This is the roadmap. These are the nine stages. And we are already well into the
 
 One more thing before we begin, because you're going to meet it at the end of every chapter in this book.
 
-You have been told, your whole life, that nothing like this has ever happened before. That is the single most disempowering lie in circulation right now, because a person facing something unprecedented has nothing to work with: no map, no case law, no record of what the survivors did. Cut off from history, you are easy to stampede.
+Let's get one thing straight: nothing like this has ever happened before. That's just true. Everything humanity ever built before was a tool that does a thing. This is a tool that does one of our most sacred, core functions: it is a tool that can invent new tools.
+
+Look around. Everywhere you go, someone is balking at the scale of the moment. It has been said that the last thing humanity will ever do is move the goalposts. "Sure, it can do X, but it will never do Y." Until it does. Until it does Y better than anyone alive. Then the goalposts move again.
+
+Go into any comment section and you will find the chorus: AI slop this, AI slop that. As if the moral outcry matters. As if a complaint can stand in the face of the sheer power of the inventions at hand. It's like refusing to eat food grown with agriculture because you are better than a plow, because you *only* forage, because you are a *real* hunter-gatherer. Or refusing anything from the printing press because a *real* reader only reads books scribed by hand. Or, to bring it home, refusing anything rendered on a screen because a *real* audience only attends stage plays and would never consume digital slop. This mentality is the ego rearing its head against something it cannot comprehend. The people who rely on ignorance are shouting the loudest complaints online right now. The wise ones are learning how to solder.
+
+So hold both of these at once, because your survival depends on the difference between them. The machine is unprecedented. The moment is not. The size, the shape, and the scale of the change, the way it moves through markets and families and minds, the panic, the denial, the goalpost-moving, the moral outcry: humanity has stood inside that exact weather before, over and over, and left receipts. The technology is new every time. The stampede never is. And a person who knows the stampede's choreography does not have to run with the herd.
 
 So this book carries its case law with it. It's called the Precedent Ledger: twenty-two documented episodes of human beings standing exactly where you are standing, watching a new capability arrive and reprice their entire world. The Ledger runs all the way back, past the pundits who called the internet a passing fad, past the executives who buried the digital camera to protect film, past the frame-breakers and the red-flag laws and the abbots raging at the printing press, back to the first and largest singularity our species ever walked through: the seed. Agriculture. The one-way door that turned foragers into farmers without asking anyone's permission.
 

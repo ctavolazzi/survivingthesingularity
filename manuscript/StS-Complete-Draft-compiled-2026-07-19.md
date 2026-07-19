@@ -3,7 +3,7 @@
 ## The 9 Stages of the Singularity and the Future of Earth
 
 **Author:** Christopher Tavolazzi
-**Manuscript:** 0.5.1
+**Manuscript:** 0.5.2
 **Compiled:** 2026-07-19 (by sts.py compile, book.json section order)
 
 ## TABLE OF CONTENTS
@@ -79,7 +79,9 @@ Let's get one thing straight: nothing like this has ever happened before. That's
 
 Look around. Everywhere you go, someone is balking at the scale of the moment. It has been said that the last thing humanity will ever do is move the goalposts. "Sure, it can do X, but it will never do Y." Until it does. Until it does Y better than anyone alive. Then the goalposts move again.
 
-Go into any comment section and you will find the chorus: AI slop this, AI slop that. As if the moral outcry matters. As if a complaint can stand in the face of the sheer power of the inventions at hand. It's like refusing to eat food grown with agriculture because you are better than a plow, because you *only* forage, because you are a *real* hunter-gatherer. Or refusing anything from the printing press because a *real* reader only reads books scribed by hand. Or, to bring it home, refusing anything rendered on a screen because a *real* audience only attends stage plays and would never consume digital slop. This mentality is the ego rearing its head against something it cannot comprehend. The people who rely on ignorance are shouting the loudest complaints online right now. The wise ones are learning how to solder.
+Go into any comment section and you will find the chorus: AI slop this, AI slop that. As if the moral outcry matters. As if a complaint can stand in the face of the sheer power of the inventions at hand. It's like refusing to eat food grown with agriculture because you are better than a plow, because you *only* forage, because you are a *real* hunter-gatherer. Or refusing anything from the printing press because a *real* reader only reads books scribed by hand. Or, to bring it home, refusing anything rendered on a screen because a *real* audience only attends stage plays and would never consume digital slop. This mentality is the ego rearing its head against something it cannot comprehend. The people who rely on ignorance are shouting the loudest complaints online right now.
+
+> **The wise ones are learning how to solder.**
 
 So hold both of these at once, because your survival depends on the difference between them. The machine is unprecedented. The moment is not. The size, the shape, and the scale of the change, the way it moves through markets and families and minds, the panic, the denial, the goalpost-moving, the moral outcry: humanity has stood inside that exact weather before, over and over, and left receipts. The technology is new every time. The stampede never is. And a person who knows the stampede's choreography does not have to run with the herd.
 

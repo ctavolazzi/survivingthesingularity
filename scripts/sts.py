@@ -19,6 +19,9 @@ Commands:
               --save appends results to manuscript/sources/research-log.md
     compile   Concatenate the book source (src/lib/data/book, book.json order)
               into a single manuscript draft markdown file
+    scan      Scannability audit: pull-quote candidates, wall-of-text
+              paragraphs, heading/emphasis deserts, list opportunities,
+              per-chapter texture scores
 
 Every command accepts --json for machine-readable output.
 `audit` and `sitemap` exit non-zero when errors are found (CI-friendly).
@@ -972,6 +975,148 @@ def cmd_research(args) -> int:
     return 0 if results else 1
 
 
+def cmd_scan(args) -> int:
+    """Scannability audit over the book source.
+
+    Finds opportunities to make the text scannable at a glance:
+      - pull-quote candidates (short, punchy, aphoristic sentences)
+      - wall-of-text paragraphs (suggest a split, a list, or bolding)
+      - heading deserts (long runs with no subhead)
+      - emphasis deserts (long runs with no bold/italic/list/quote texture)
+      - list opportunities (enumerations trapped inside prose)
+      - per-chapter texture score (formatting events per 1,000 words)
+    Report-only: never edits the manuscript.
+    """
+    book_dir = ROOT / "src" / "lib" / "data" / "book"
+    book = json.loads((book_dir / "book.json").read_text())
+    top_n = args.top
+
+    aphorism_re = re.compile(
+        r"^(The|That|This|You|It|We|Every|Nobody|History|Survival|Power|Panic|Trust)\b")
+    enum_re = re.compile(r"\b(First|Second|Third|Fourth)\b[,:]")
+
+    def sentences(text):
+        return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+
+    report = []
+    for section in book["sections"]:
+        path = book_dir / section["file"]
+        raw = path.read_text()
+        lines = raw.split("\n")
+
+        # Build paragraph blocks with line anchors, skipping fences/tables/images.
+        paras, buf, start, in_fence = [], [], None, False
+        for i, ln in enumerate(lines, 1):
+            if ln.strip().startswith("```"):
+                in_fence = not in_fence
+                continue
+            if in_fence:
+                continue
+            s = ln.strip()
+            is_prose = (s and not s.startswith(("#", "|", "!", ">", "-", "*", "1.", "2.",
+                                                "3.", "4.", "5.", "  -"))
+                        and not re.match(r"^\d+\.\s", s))
+            if is_prose:
+                if start is None:
+                    start = i
+                buf.append(s)
+            else:
+                if buf:
+                    paras.append((start, " ".join(buf)))
+                buf, start = [], None
+        if buf:
+            paras.append((start, " ".join(buf)))
+
+        words_total = len(re.findall(r"\S+", raw))
+        pulls, walls, list_ops = [], [], []
+        for ln_no, para in paras:
+            wc = len(para.split())
+            if wc > 90:
+                walls.append((ln_no, wc, para[:70]))
+            if enum_re.search(para) or para.count(";") >= 3:
+                list_ops.append((ln_no, para[:70]))
+            sents = sentences(para)
+            for pos, sent in enumerate(sents):
+                sw = len(sent.split())
+                if (4 <= sw <= 14 and aphorism_re.match(sent)
+                        and sent.endswith(".") and sent.count(",") <= 1
+                        and "](" not in sent and "*" not in sent):
+                    score = (14 - sw) + (4 if pos == len(sents) - 1 else 0) + \
+                            (2 if len(sents) >= 3 else 0)
+                    pulls.append((score, ln_no, sent))
+        pulls.sort(reverse=True)
+
+        # Texture: formatting events per 1000 words, and deserts.
+        events, desert_run, deserts, run_start = 0, 0, [], 1
+        heading_gaps, last_heading_wc, wc_seen = [], 0, 0
+        for i, ln in enumerate(lines, 1):
+            s = ln.strip()
+            w = len(s.split())
+            wc_seen += w
+            if s.startswith("#"):
+                if wc_seen - last_heading_wc > 900:
+                    heading_gaps.append((i, wc_seen - last_heading_wc))
+                last_heading_wc = wc_seen
+            if (s.startswith((">", "-", "|")) or re.match(r"^\d+\.", s)
+                    or "**" in s or re.search(r"(?<!\*)\*[^*]+\*(?!\*)", s)
+                    or s.startswith("#")):
+                events += 1
+                if desert_run > 500:
+                    deserts.append((run_start, desert_run))
+                desert_run, run_start = 0, i
+            else:
+                desert_run += w
+        if desert_run > 500:
+            deserts.append((run_start, desert_run))
+        texture = round(events / max(words_total, 1) * 1000, 1)
+
+        report.append({
+            "file": section["file"], "title": section["title"],
+            "words": words_total, "texture_per_1k": texture,
+            "pull_quote_candidates": [
+                {"line": l, "sentence": s, "score": sc} for sc, l, s in pulls[:top_n]],
+            "wall_paragraphs": [
+                {"line": l, "words": w, "starts": t} for l, w, t in walls[:top_n]],
+            "heading_deserts": [
+                {"near_line": l, "words_since_heading": w} for l, w in heading_gaps],
+            "emphasis_deserts": [
+                {"from_line": l, "plain_words": w} for l, w in deserts[:top_n]],
+            "list_opportunities": [
+                {"line": l, "starts": t} for l, t in list_ops[:top_n]],
+        })
+
+    if args.json:
+        print(json.dumps(report, indent=2))
+        return 0
+
+    print(f"sts scan — scannability audit · {len(report)} sections "
+          f"(top {top_n} findings per category per file)\n")
+    for r in sorted(report, key=lambda x: x["texture_per_1k"]):
+        flags = (len(r["pull_quote_candidates"]) + len(r["wall_paragraphs"])
+                 + len(r["heading_deserts"]) + len(r["emphasis_deserts"])
+                 + len(r["list_opportunities"]))
+        if not flags and not args.all:
+            continue
+        print(f"■ {r['file']} — {r['title']}")
+        print(f"  {r['words']:,} words · texture {r['texture_per_1k']}/1k")
+        for p in r["pull_quote_candidates"]:
+            print(f"    PULL  L{p['line']:>4}  \"{p['sentence']}\"")
+        for w in r["wall_paragraphs"]:
+            print(f"    WALL  L{w['line']:>4}  {w['words']} words: {w['starts']}…")
+        for h in r["heading_deserts"]:
+            print(f"    HEAD  L{h['near_line']:>4}  {h['words_since_heading']} words since last heading")
+        for d in r["emphasis_deserts"]:
+            print(f"    FLAT  L{d['from_line']:>4}  {d['plain_words']} words with zero texture")
+        for lo in r["list_opportunities"]:
+            print(f"    LIST  L{lo['line']:>4}  {lo['starts']}…")
+        print()
+    lowest = sorted(report, key=lambda x: x["texture_per_1k"])[:5]
+    print("Lowest-texture sections (most in need of scannability work):")
+    for r in lowest:
+        print(f"  {r['texture_per_1k']:>6}/1k  {r['file']} — {r['title']}")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -1024,6 +1169,15 @@ def main():
     p.add_argument("--stdout", action="store_true", help="print instead of writing")
     p.add_argument("--force", action="store_true", help="overwrite an existing output file")
     p.set_defaults(fn=cmd_compile)
+
+    p = sub.add_parser("scan",
+                       help="scannability audit: pull quotes, walls of text, deserts, lists")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--top", type=int, default=3,
+                   help="findings per category per file (default 3)")
+    p.add_argument("--all", action="store_true",
+                   help="include sections with zero findings in the report")
+    p.set_defaults(fn=cmd_scan)
 
     p = sub.add_parser("research",
                        help="search the web for sources/examples (Wikipedia + DuckDuckGo)")

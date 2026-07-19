@@ -157,3 +157,11 @@
 - CT ruling on the introduction's Precedent Ledger passage: "nothing like this has ever happened before" is TRUE, not a lie. The machine is unprecedented (a tool that invents new tools, one of our most sacred core functions); what is precedented is the size, shape, and scale of the change and the human reaction to it
 - Rewrote the passage around that distinction, folding in CT's material: the goalpost-moving ("it can't do Y, until it does"), the AI-slop chorus as ego (the forager / hand-scribed manuscript / stage-play analogies), "the wise ones are learning how to solder," and the new thesis line: the technology is new every time, the stampede never is
 - book.json 0.5.0 -> 0.5.1; recompiled draft (83,377 words); rebuilt EPUB + PDF at v0.5.1; public download swapped to Surviving-the-Singularity-v0.5.1.pdf (the /book buttons track book.version automatically)
+
+## 2026-07-19 (later still) - v0.5.2: pull quote, scan tool, PLAIN + DELUXE variants, auditor brief
+- "The wise ones are learning how to solder." moved to its own line as a pull quote (`> **...**` in 02-introduction.md); DELUXE renders it as a centered amber showpiece, site/EPUB as a bold blockquote, PLAIN folds it back into prose
+- New `sts.py scan`: scannability auditor (pull-quote candidates, wall-of-text paragraphs, heading/emphasis deserts, list opportunities, per-chapter texture score). First run immediately surfaced "The stampede never is." as a top candidate
+- New `scripts/build-pdf-variants.sh` + book-print-plain.css / book-print-deluxe.css: PLAIN (2 MB, pure text, no images, the reading floor) and DELUXE (running chapter headers, raised caps, styled pull quotes, TOC dot leaders with live page numbers, tinted tables/code, ornamental rules; the design ceiling). Ship draft sits between them by design
+- weasyprint lesson recorded: floating ::first-letter crashes on image-only paragraphs; use inline raised caps
+- AUDITOR-BRIEF.md written at repo root: full continuation prompt for future auditing agents (spin-up commands, canonical facts, done-list, toolbelt, verification recipes, versioning ritual, 9-pass audit roadmap, open items)
+- book.json 0.5.1 -> 0.5.2; EPUB/PDF + variants rebuilt; public download swapped to v0.5.2

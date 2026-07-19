@@ -1,0 +1,200 @@
+/* DELUXE variant: everything a print PDF can do. The design ceiling.
+   BOOK_VERSION is replaced with the build label by build-pdf-variants.sh.
+   Explorations: running chapter headers, drop caps, pull quotes, TOC page
+   leaders, tinted callouts, striped tables, chapter-opener treatment. */
+
+@page {
+  size: letter;
+  margin: 2.4cm 2.6cm 2.6cm;
+  @top-right {
+    content: string(chapter);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.08em;
+    color: #b45309;
+  }
+  @bottom-left {
+    content: "SURVIVING THE SINGULARITY \00b7 BOOK_VERSION-DELUXE";
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.1em;
+    color: #94a3b8;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8.5pt;
+    font-weight: bold;
+    color: #92400e;
+  }
+}
+@page :first {
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.62;
+  color: #1c1917;
+}
+
+/* ── Title page ── */
+header#title-block-header { text-align: center; padding-top: 4cm; }
+header#title-block-header h1 {
+  page-break-before: avoid;
+  font-size: 30pt;
+  border: none;
+  color: #92400e;
+  string-set: none;
+}
+header#title-block-header .subtitle { font-style: italic; color: #57534e; font-size: 12pt; }
+header#title-block-header .author { font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; font-size: 10pt; margin-top: 2em; }
+.version-stamp {
+  font-family: Menlo, monospace;
+  font-size: 10pt;
+  letter-spacing: 0.12em;
+  color: #92400e;
+  border: 1.5px solid #f59e0b;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px 12px;
+  margin-top: 0.8em;
+}
+
+/* ── Chapter openers ── */
+h1 {
+  page-break-before: always;
+  string-set: chapter content();
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22pt;
+  line-height: 1.2;
+  color: #92400e;
+  border: none;
+  border-bottom: 3px solid #f59e0b;
+  padding: 2.2cm 0 10px;
+}
+h1::before {
+  content: "SURVIVING THE SINGULARITY";
+  display: block;
+  font-size: 7.5pt;
+  font-weight: normal;
+  letter-spacing: 0.35em;
+  color: #d6d3d1;
+  margin-bottom: 1.2em;
+}
+
+/* Raised cap on the first prose paragraph after the chapter's epigraph.
+   (No float: weasyprint crashes floating ::first-letter when the paragraph
+   is a replaced element, so this is an inline raised cap instead.) */
+blockquote + p::first-letter {
+  font-family: Georgia, serif;
+  font-size: 200%;
+  font-weight: bold;
+  line-height: 0.8;
+  color: #92400e;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13.5pt;
+  color: #92400e;
+  margin-top: 1.7em;
+  padding-left: 8px;
+  border-left: 4px solid #f59e0b;
+}
+h3 { font-family: Helvetica, Arial, sans-serif; font-size: 11.5pt; color: #1e3a8a; }
+
+/* ── TOC with dot leaders and live page numbers ── */
+nav#TOC { page-break-after: always; }
+nav#TOC ul { list-style: none; padding-left: 0; }
+nav#TOC li { margin: 3px 0; }
+nav#TOC a { color: #1c1917; text-decoration: none; }
+nav#TOC a::after {
+  content: leader(". ") target-counter(attr(href), page);
+  color: #92400e;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+}
+
+/* ── Pull quotes (from standalone > **bold** lines, transformed at build) ── */
+.pullquote {
+  font-family: Georgia, serif;
+  font-size: 17pt;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+  color: #92400e;
+  margin: 1.6em 1.2cm;
+  padding: 0.9em 0;
+  border-top: 1.5px solid #f59e0b;
+  border-bottom: 1.5px solid #f59e0b;
+  page-break-inside: avoid;
+}
+.pullquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 30pt;
+  line-height: 0.4;
+  color: #f59e0b;
+  margin-bottom: 0.35em;
+}
+
+/* ── Blockquotes / epigraphs ── */
+blockquote {
+  border-left: 3px solid #f59e0b;
+  margin-left: 0;
+  padding: 2px 0 2px 1em;
+  color: #57534e;
+  font-style: italic;
+  page-break-inside: avoid;
+}
+blockquote strong { color: #92400e; }
+
+/* ── Figures ── */
+img { max-width: 100%; height: auto; }
+figure { margin: 1.6em 0; text-align: center; page-break-inside: avoid; }
+figure img { max-height: 15cm; width: auto; border-radius: 6px; }
+figcaption {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 8.5pt;
+  font-style: italic;
+  color: #78716c;
+  margin-top: 0.6em;
+  padding-top: 0.4em;
+  border-top: 1px solid #e7e5e4;
+  display: inline-block;
+}
+
+/* ── Emphasis + inline ── */
+strong { color: #7c2d12; }
+code {
+  font-family: Menlo, monospace;
+  font-size: 8.5pt;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+pre { background: #1c1917; color: #fbbf24; padding: 10px 12px; border-radius: 6px; font-size: 8pt; }
+pre code { background: none; border: none; color: inherit; }
+
+/* ── Tables ── */
+table { border-collapse: collapse; width: 100%; font-size: 9pt; page-break-inside: avoid; }
+th {
+  background: #92400e;
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.04em;
+}
+th, td { border: 1px solid #e7e5e4; padding: 5px 9px; text-align: left; }
+tr:nth-child(even) td { background: #fafaf9; }
+
+/* ── Ornamental rule ── */
+hr { border: none; text-align: center; margin: 1.9em 0; }
+hr::before { content: "\00b7 \00a0 \00b7 \00a0 \00b7"; color: #f59e0b; font-size: 13pt; letter-spacing: 0.4em; }
+
+.footnotes { font-size: 8.5pt; color: #57534e; }
+a { color: #92400e; }

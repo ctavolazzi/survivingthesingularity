@@ -1,12 +1,13 @@
 # Editorial Queue — Surviving the Singularity
 
-**LATEST VERSION: v0.5.1 (2026-07-19).** v0.5.0 was "the illustrated draft" (all 34
-diagrams real SVG figures, em-dash sweep, mechanical + credibility pass, pixel-art part
-dividers); v0.5.1 adds CT's author ruling rewriting the introduction's Ledger framing
-(the machine IS unprecedented; the stampede is not). Compiled:
-`manuscript/StS-Complete-Draft-compiled-2026-07-19.md` (83,377 words). Built:
-`book-build/Surviving-the-Singularity-v0.5.1.epub/.pdf`. The PDF is public at
-`/downloads/Surviving-the-Singularity-v0.5.1.pdf` (linked from /book).
+**LATEST VERSION: v0.5.2 (2026-07-19).** v0.5.0 = the illustrated draft (34 SVG figures,
+em-dash sweep, mechanical + credibility pass, pixel dividers). v0.5.1 = CT's Ledger-framing
+ruling (the machine IS unprecedented; the stampede is not). v0.5.2 = "the wise ones are
+learning how to solder" promoted to a standalone pull quote, `sts.py scan` scannability
+auditor added, PLAIN + DELUXE PDF variants added (`scripts/build-pdf-variants.sh`), PDF
+title-page version stamp + per-page footers. Public PDF:
+`/downloads/Surviving-the-Singularity-v0.5.2.pdf` (linked from /book).
+**Auditors start at `AUDITOR-BRIEF.md` (repo root).**
 
 **Source of truth:** `src/lib/data/book/` (unified in commit `5164f49`; serves both the
 /book pages and the EPUB via `scripts/build-epub.sh`).

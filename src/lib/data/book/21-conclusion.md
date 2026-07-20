@@ -62,9 +62,17 @@ Stop skimming the headlines. Stop parroting the cowards who want to keep you afr
 
 We are building a better tomorrow because it is the only intelligent thing to do. We are not "destroying jobs"; we are automating the toil and the risk. We are not "weird" for using tools to solve our survival; we are human. The choice is ours: keep arguing over the scraps of a dying system, or build the machinery of our own freedom.
 
+Here is the truth the fear keeps trying to bury. Things are changing, and you can do this. You can have robots that grow your food and build your house. You can make them yourself, teach them, train them, and hand what you learn to the person standing next to you. But first you have to put down the outdated mindset, the one that whispers you are not smart enough, not technical enough, not the kind of person this is for. That voice is the last fence, and it is the only one nobody else can tear down for you. Get over the self-doubt and look this thing straight in the face. Now.
+
+Do it for yourself, but do not stop there. Do it for your kids, your grandkids, and the generations who will inherit whatever we are brave enough to build. Every capable person who wakes up is one more on the side of the light, and we need as many as we can get, because the other side is already awake and already moving. If we let the capitalist goblins lock this down, if we let them regulate you out of the one opportunity that could change your life forever, we lose it. We lose the people who never got the chance, and every moment of value they would have made. Stay stuck in the past, and someone else laps you and leaps into the future with open arms.
+
+Humans were not built to live the way we have been living. We did not claw our way up out of the dirt and learn to bend nature to our will just to be conquered in our turn by a spreadsheet, by "number go up," by a quarterly line on somebody else's chart. You were not born to increase shareholder value. You were born to care for the Earth, the Sky, and each other. That is the older contract, the real one, and the machine is the first tool in ten thousand years big enough to let us keep it.
+
+So wake up. All the way up.
+
 Stop arguing. Stop waiting. Start building.
 
-The singularity is here. Survive it if you can.
+The singularity is here. Survive it if you can, and then turn around and help everyone you can reach survive it too.
 
 ---
 

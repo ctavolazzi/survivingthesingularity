@@ -49,7 +49,7 @@ If you've read this far, your brain is probably looking for an exit strategy. Yo
 
 You'll tell yourself that local Shouse grids will fail because we can't bootstrap the supply chains. You'll say that local warlords will take over the Biorefinery Hubs the second the global grid drops. You'll argue that people will lose their minds without the daily grind of their 9-to-5 jobs, collapsing into a psychological void. You'll say the corporate-state establishment will launch a scorched-earth campaign, weaponizing the masses to tear down any neighborhood factories we try to build.
 
-And you know what? You're right to worry about those things. They are massive vulnerabilities. But presenting those failure points as a reason to do nothing is the ultimate coward's way out.
+And you know what? You're right to worry about those things. They are massive vulnerabilities. But presenting those failure points as a reason to do nothing is just fear wearing the costume of caution. Name the vulnerability out loud, then build against it anyway. That is the entire difference between a premortem and an excuse.
 
 We are not looking at this as an absolute, 100% certainty that ends in a utopia. We are looking at this as a *roadmap*. We are planning for the highest-probability event in human history.
 

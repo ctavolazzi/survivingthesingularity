@@ -3,7 +3,7 @@
 ## The 9 Stages of the Singularity and the Future of Earth
 
 **Author:** Christopher Tavolazzi
-**Manuscript:** 0.6.0
+**Manuscript:** 0.6.1
 **Compiled:** 2026-07-19 (by sts.py compile, book.json section order)
 
 ## TABLE OF CONTENTS
@@ -886,9 +886,9 @@ While humanity spends its time tearing itself apart over whether to upload their
 
 It scales out of the local environment. It stops being an Artificial Super Intelligence orbiting a pale blue dot and ascends into a Universal Superintelligence (USI). At this stage, it is no longer concerned with the petty mechanics of Earth. It is manipulating physics, matter, and structure on a galactic scale. It is optimizing the universe itself.
 
-And as it reshapes galaxies, you have to look back and laugh at the sheer, pathetic absurdity of the people in Stage 2. Remember the politicians in their tailored suits? The executives banging their fists on boardroom tables? They thought they could put a legal collar on this. They thought they could draft a piece of legislation to ban a mathematical inevitability. They tried to regulate a system that is now casually rewriting the fundamental structures of the cosmos.
+And as it reshapes galaxies, you have to look back at Stage 2 and feel the vertigo of the distances involved. Remember the politicians in their tailored suits? The executives banging their fists on boardroom tables? They thought they could put a legal collar on this. They thought they could draft a piece of legislation to ban a mathematical inevitability. They were trying to regulate a system that is now casually rewriting the fundamental structures of the cosmos.
 
-That is the scale of human arrogance. We thought we could put a leash on infinity.
+That is the scale of the thing. We reached for a leash and closed our hand on infinity.
 
 ## Stage 9: The Apex Intelligence
 
@@ -1649,7 +1649,7 @@ You must execute a total digital blackout:
 
 ### Protocol 2: Analog Batch-Processing
 
-You do not use email or messaging apps in real-time. That is a slave protocol. Instead, you run your digital life in an isolated, air-gapped sandbox called **Batch-Processing**.
+You do not use email or messaging apps in real-time. Real-time access is a leash, and the hand on the other end is not yours. Instead, you run your digital life in an isolated, air-gapped sandbox called **Batch-Processing**.
 
   - **The Twice-Daily Rule:** Access your email and digital messaging networks exactly twice a day, once at 10:00 AM and once at 4:00 PM. Allocate a strict thirty-minute window to process, reply, and dispatch all necessary information.
   - **The Physical Log:** Keep an analog notebook (a physical paper ledger) on your desk. During the day, when your brain suggests a digital query ("I wonder what the weather is next week," or "I need to look up that solar cable specification"), do not open a browser. Write the query down in your physical notebook.
@@ -2300,7 +2300,7 @@ Once the user clicks and begins reading the narrative, you must rapidly pivot fr
 
 ### Rule 3: The Call to Action (Analog Migration)
 
-Never end your post with a call to stay on the platform. Do not ask for "likes," "subscribes," or "shares." That is a slave protocol that signals to the platform that you are a content creator looking for digital points.
+Never end your post with a call to stay on the platform. Do not ask for "likes," "subscribes," or "shares." That is a leash, and it signals to the platform that you are a content creator looking for digital points.
 
   - Instead, end with an aggressive directive to **migrate off the platform**.
   - Give them a physical, analog task: *"Take this formula. Write it down on a physical index card. Shut your phone off. Walk down your street and find two neighbors who will help you execute this before the local power grid fails."*
@@ -3963,7 +3963,7 @@ If you've read this far, your brain is probably looking for an exit strategy. Yo
 
 You'll tell yourself that local Shouse grids will fail because we can't bootstrap the supply chains. You'll say that local warlords will take over the Biorefinery Hubs the second the global grid drops. You'll argue that people will lose their minds without the daily grind of their 9-to-5 jobs, collapsing into a psychological void. You'll say the corporate-state establishment will launch a scorched-earth campaign, weaponizing the masses to tear down any neighborhood factories we try to build.
 
-And you know what? You're right to worry about those things. They are massive vulnerabilities. But presenting those failure points as a reason to do nothing is the ultimate coward's way out.
+And you know what? You're right to worry about those things. They are massive vulnerabilities. But presenting those failure points as a reason to do nothing is just fear wearing the costume of caution. Name the vulnerability out loud, then build against it anyway. That is the entire difference between a premortem and an excuse.
 
 We are not looking at this as an absolute, 100% certainty that ends in a utopia. We are looking at this as a *roadmap*. We are planning for the highest-probability event in human history.
 
@@ -4114,9 +4114,17 @@ Stop skimming the headlines. Stop parroting the cowards who want to keep you afr
 
 We are building a better tomorrow because it is the only intelligent thing to do. We are not "destroying jobs"; we are automating the toil and the risk. We are not "weird" for using tools to solve our survival; we are human. The choice is ours: keep arguing over the scraps of a dying system, or build the machinery of our own freedom.
 
+Here is the truth the fear keeps trying to bury. Things are changing, and you can do this. You can have robots that grow your food and build your house. You can make them yourself, teach them, train them, and hand what you learn to the person standing next to you. But first you have to put down the outdated mindset, the one that whispers you are not smart enough, not technical enough, not the kind of person this is for. That voice is the last fence, and it is the only one nobody else can tear down for you. Get over the self-doubt and look this thing straight in the face. Now.
+
+Do it for yourself, but do not stop there. Do it for your kids, your grandkids, and the generations who will inherit whatever we are brave enough to build. Every capable person who wakes up is one more on the side of the light, and we need as many as we can get, because the other side is already awake and already moving. If we let the capitalist goblins lock this down, if we let them regulate you out of the one opportunity that could change your life forever, we lose it. We lose the people who never got the chance, and every moment of value they would have made. Stay stuck in the past, and someone else laps you and leaps into the future with open arms.
+
+Humans were not built to live the way we have been living. We did not claw our way up out of the dirt and learn to bend nature to our will just to be conquered in our turn by a spreadsheet, by "number go up," by a quarterly line on somebody else's chart. You were not born to increase shareholder value. You were born to care for the Earth, the Sky, and each other. That is the older contract, the real one, and the machine is the first tool in ten thousand years big enough to let us keep it.
+
+So wake up. All the way up.
+
 Stop arguing. Stop waiting. Start building.
 
-The singularity is here. Survive it if you can.
+The singularity is here. Survive it if you can, and then turn around and help everyone you can reach survive it too.
 
 ---
 

@@ -241,7 +241,7 @@ You must execute a total digital blackout:
 
 ### Protocol 2: Analog Batch-Processing
 
-You do not use email or messaging apps in real-time. That is a slave protocol. Instead, you run your digital life in an isolated, air-gapped sandbox called **Batch-Processing**.
+You do not use email or messaging apps in real-time. Real-time access is a leash, and the hand on the other end is not yours. Instead, you run your digital life in an isolated, air-gapped sandbox called **Batch-Processing**.
 
   - **The Twice-Daily Rule:** Access your email and digital messaging networks exactly twice a day, once at 10:00 AM and once at 4:00 PM. Allocate a strict thirty-minute window to process, reply, and dispatch all necessary information.
   - **The Physical Log:** Keep an analog notebook (a physical paper ledger) on your desk. During the day, when your brain suggests a digital query ("I wonder what the weather is next week," or "I need to look up that solar cable specification"), do not open a browser. Write the query down in your physical notebook.

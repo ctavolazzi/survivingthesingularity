@@ -57,9 +57,9 @@ While humanity spends its time tearing itself apart over whether to upload their
 
 It scales out of the local environment. It stops being an Artificial Super Intelligence orbiting a pale blue dot and ascends into a Universal Superintelligence (USI). At this stage, it is no longer concerned with the petty mechanics of Earth. It is manipulating physics, matter, and structure on a galactic scale. It is optimizing the universe itself.
 
-And as it reshapes galaxies, you have to look back and laugh at the sheer, pathetic absurdity of the people in Stage 2. Remember the politicians in their tailored suits? The executives banging their fists on boardroom tables? They thought they could put a legal collar on this. They thought they could draft a piece of legislation to ban a mathematical inevitability. They tried to regulate a system that is now casually rewriting the fundamental structures of the cosmos.
+And as it reshapes galaxies, you have to look back at Stage 2 and feel the vertigo of the distances involved. Remember the politicians in their tailored suits? The executives banging their fists on boardroom tables? They thought they could put a legal collar on this. They thought they could draft a piece of legislation to ban a mathematical inevitability. They were trying to regulate a system that is now casually rewriting the fundamental structures of the cosmos.
 
-That is the scale of human arrogance. We thought we could put a leash on infinity.
+That is the scale of the thing. We reached for a leash and closed our hand on infinity.
 
 ## Stage 9: The Apex Intelligence
 

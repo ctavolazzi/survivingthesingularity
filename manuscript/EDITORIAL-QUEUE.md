@@ -1,6 +1,18 @@
 # Editorial Queue — Surviving the Singularity
 
-**LATEST VERSION: v0.6.0 (2026-07-19).** v0.5.0 = the illustrated draft (34 SVG figures,
+**LATEST VERSION: v0.6.1 (2026-07-19).** v0.6.1 = the final draft of the techno-optimist
+turn. Second tone-audit fixes: ch4's "pathetic absurdity / human arrogance" sneer reframed
+to awe at scale (target kept), ch18's "coward's way out" reframed to "fear wearing the
+costume of caution / name it, then build against it," two "slave protocol" metaphors
+reworded to "leash" (matching the book's own vocabulary). Conclusion's "Moral Mandate"
+amplified into the closing manifesto per CT: things are changing and you can do this; make,
+teach, and train the robots yourself; drop the outdated mindset and the self-doubt (the last
+fence); do it for your kids and grandkids and all of humanity; every capable person who wakes
+up is one more on the side of the light; don't let the capitalist goblins regulate you out;
+you were not born to increase shareholder value, you were born to care for the Earth, the
+Sky, and each other. Public PDF: `/downloads/Surviving-the-Singularity-v0.6.1.pdf`.
+
+**v0.6.0 (2026-07-19).** v0.5.0 = the illustrated draft (34 SVG figures,
 em-dash sweep, mechanical + credibility pass, pixel dividers). v0.5.1 = CT's Ledger-framing
 ruling (the machine IS unprecedented; the stampede is not). v0.5.2 = "the wise ones are
 learning how to solder" promoted to a standalone pull quote, `sts.py scan` scannability

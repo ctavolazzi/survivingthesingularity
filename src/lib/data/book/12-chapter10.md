@@ -205,7 +205,7 @@ Once the user clicks and begins reading the narrative, you must rapidly pivot fr
 
 ### Rule 3: The Call to Action (Analog Migration)
 
-Never end your post with a call to stay on the platform. Do not ask for "likes," "subscribes," or "shares." That is a slave protocol that signals to the platform that you are a content creator looking for digital points.
+Never end your post with a call to stay on the platform. Do not ask for "likes," "subscribes," or "shares." That is a leash, and it signals to the platform that you are a content creator looking for digital points.
 
   - Instead, end with an aggressive directive to **migrate off the platform**.
   - Give them a physical, analog task: *"Take this formula. Write it down on a physical index card. Shut your phone off. Walk down your street and find two neighbors who will help you execute this before the local power grid fails."*

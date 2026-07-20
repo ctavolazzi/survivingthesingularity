@@ -24,15 +24,15 @@ each pass actually needs.
 |---|---|
 | Repo | `~/Code/active/survivingthesingularity` (SvelteKit site + book) |
 | Book source (ONLY truth) | `src/lib/data/book/*.md`, order + version in `book.json` |
-| Current version | book.json `version` (v0.5.2 as of this writing). NEVER trust version strings in docs or filenames over book.json |
+| Current version | book.json `version` (v0.6.2 as of this writing, LIVE on main and prod). NEVER trust version strings in docs or filenames over book.json |
 | Structure | 30 sections: intro, preface, ch0, 3 part dividers, ch1-18, conclusion, appendices A-E. Order: Introduction BEFORE Preface (deliberate) |
 | Stale copies (never audit these) | `manuscript/StS-Complete-Draft-v*.md`, Desktop PDFs, `manuscript/drafts/` |
 | Figures | `static/book-images/*.svg` (33 hand-authored) + `part{1,2,3}-divider.png` (pixel art) + photo headers. Referenced as `![alt](/book-images/…)` + italic caption line |
 | Built artifacts | `book-build/Surviving-the-Singularity-v<X>.{epub,pdf}` + `-PLAIN.pdf` / `-DELUXE.pdf` variants |
 | Public download | `static/downloads/Surviving-the-Singularity-v<X>.pdf`; the /book page buttons build their href from book.json version automatically |
-| Branch | `weave-and-mobile-polish`. NEVER merge to main: main auto-deploys prod, and prod runs LIVE Stripe keys. Merging is the author's call only |
+| Branch | `weave-and-mobile-polish`. NEVER merge to main on your own: main auto-deploys prod, and prod runs LIVE Stripe keys. Merging is the author's call only. (2026-07-19 evening: CT explicitly authorized a merge; branch was merged to `main` at `fe12ffc` and Cloudflare deployed v0.6.2 to prod. Branch and main are reconciled to the same commit. The rule still stands for every future unsupervised merge.) |
 | Book page gate | /book is password-gated client-side; password constant lives in `src/lib/bookAccessCode.js` (needed for Playwright verification) |
-| Author rules | NO em dashes anywhere (settled ruling, whole book swept at v0.5.0). Versions bump on every content change. Author = Christopher (CT); he rules on voice, structure, and anything touching money |
+| Author rules | NO em dashes anywhere (settled, whole book swept at v0.5.0). NEVER use the word "manifesto" anywhere (settled at v0.6.2; only survivor is Bastani's real citation subtitle in Appendix B). Focus HYPER-LOCAL, not decentralized: "decentralized" only where it names actually-decentralized tech (mesh, LoRa, IPFS, distributed energy), never heralded as the goal (anchor thesis in ch9). Versions bump on every content change. Author = Christopher (CT); he rules on voice, structure, and anything touching money |
 | Continuity bibles | `src/lib/data/book/ELIJAH-PROTOCOL.md` (narrative timeline, Chekhov registry), `WRITING_CHECKLIST.md` (style), `manuscript/EDITORIAL-QUEUE.md` (editorial state, latest-version header) |
 
 ## 2. Already done — do not redo
@@ -50,6 +50,19 @@ each pass actually needs.
 - **v0.5.2**: "The wise ones are learning how to solder." became a standalone
   pull quote (`> **…**` in 02-introduction.md); `sts.py scan` added; PLAIN and
   DELUXE PDF variants added; PDF title-page version stamp + per-page footer.
+- **v0.6.0-0.6.2 "the techno-optimist turn"** (CT rulings): Intro gained the
+  ox/husbandry passage (labor delegated to something that runs on its own; "we're
+  so back" vs "it's all over" are the same facts; capitalism persists but stops
+  being mandatory for survival), the AI-slop hit sharpened onto wounded status,
+  and two reader-punishing lines redirected off the reader. Ch17 gained "The Proof
+  Is Not Hypothetical" (SECTOR 07 photobioreactor + EasyGrow DIY builders vs the
+  industrial "reduces human touch" pitch; Appendix B sources 179-182; transcripts
+  in manuscript/solarpunk-source/). Conclusion's Moral Mandate amplified into the
+  closing call to action. Second-audit fixes: ch4 sneer→awe, ch18 "coward's way
+  out"→"fear wearing the costume of caution," "slave protocol"→"leash" x2. Word
+  rulings: "manifesto" removed everywhere; decentralization de-heralded → hyper-local.
+  Site: /book download button removed (view-in-browser button stays), /book hero
+  copy rewritten to the new framing. Merged to main and deployed live to prod.
 - Fact-checks already verified: P-01..P-06 precedents, June 2026 export
   directive (sources 162-165), Red Flag Act, NYT 1903, DishBrain (AU$),
   Kipping math, Gloria Mark interruption research.
@@ -136,10 +149,15 @@ print(len(r.pages), 'v0.' in (r.pages[0].extract_text() or ''), 'v0.' in (r.page
 - Appendix C is 344 words; decide whether intentionally thin or expand.
 - Cyberdeck source URLs 166-178 unverified (roadmap H).
 - EPUB device spot-read never performed.
-- The public PDF URL is unauthenticated while /book is $5-gated; CT has been
-  told and has not yet ruled. Do not "fix" without his ruling.
-- Merge to main (= prod deploy of everything since 2026-07-16) awaits CT.
+- The public PDF URL is unauthenticated while /book is $5-gated; CT ruled the
+  download button be REMOVED (done at v0.6.2); the view-in-browser button stays
+  and the PDF path is still public. He is fine with that. Do not re-add a download button.
+- ~~Merge to main awaits CT.~~ DONE 2026-07-19 evening: CT authorized it; branch
+  merged to main at `fe12ffc`, prod deployed v0.6.2, verified live (24/24 routes,
+  v0.6.2 PDF serving). main and the branch are reconciled.
 - Stripe go-live sequence (A1-A8 in the vault plan) is site work, not book work.
+- Vault banners synced to v0.6.2 (2026-07-18_StS_Open_Items, _Master_Undone,
+  2026-07-19_StS_Plan_of_Action) via SimpleAgentOS atomic_io.
 
 ## 8. Coordination
 

@@ -87,5 +87,9 @@
 176. Computer Fraud and Abuse Act, 18 U.S.C. Sec. 1030 - Wikipedia, https://en.wikipedia.org/wiki/Computer_Fraud_and_Abuse_Act
 177. Van Buren v. United States (2021; narrowing "exceeds authorized access") - Wikipedia, https://en.wikipedia.org/wiki/Van_Buren_v._United_States
 178. Understanding the FCC Part 15 rules for unlicensed radio devices - FCC / 47 CFR Part 15, https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15
+179. I 3D Printed a Photobioreactor (open-source algae reactor for a home aquaponics loop) - SECTOR 07, https://www.youtube.com/watch?v=SLckTj_tJg4
+180. Mad scientist's homestead is parking size, off-grid system (EasyGrow vertical hydroponics and self-built wind turbines) - Kirsten Dirksen, https://www.youtube.com/watch?v=QSnHShly5R0
+181. Build an Automated Hydroponic System (open-source Mycodo automation) - Kyle Gabriel, https://www.youtube.com/watch?v=nyqykZK2Ev4
+182. Introducing the SANANBIO Uplift, A Fully-Automated Vertical Farming Platform - SANANBIO, https://www.youtube.com/watch?v=0s4YwzbUzhw
 
 ---

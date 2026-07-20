@@ -1,12 +1,20 @@
 # Editorial Queue — Surviving the Singularity
 
-**LATEST VERSION: v0.5.2 (2026-07-19).** v0.5.0 = the illustrated draft (34 SVG figures,
+**LATEST VERSION: v0.6.0 (2026-07-19).** v0.5.0 = the illustrated draft (34 SVG figures,
 em-dash sweep, mechanical + credibility pass, pixel dividers). v0.5.1 = CT's Ledger-framing
 ruling (the machine IS unprecedented; the stampede is not). v0.5.2 = "the wise ones are
 learning how to solder" promoted to a standalone pull quote, `sts.py scan` scannability
 auditor added, PLAIN + DELUXE PDF variants added (`scripts/build-pdf-variants.sh`), PDF
-title-page version stamp + per-page footers. Public PDF:
-`/downloads/Surviving-the-Singularity-v0.5.2.pdf` (linked from /book).
+title-page version stamp + per-page footers. v0.6.0 = the techno-optimist turn (CT ruling):
+Introduction gains the ox/husbandry passage ("we're so back" vs "it's all over" are the same
+facts; capitalism persists but stops being mandatory for survival), the AI-slop confrontation
+is sharpened onto wounded-status ego ("think about someone other than yourself"), and two
+reader-punishing lines are redirected off the reader (the "parrot"/Reddit jab, the "safe
+space" tripwire). Chapter 17 gains "The Proof Is Not Hypothetical": real DIY builders
+(SECTOR 07's 3D-printed photobioreactor, EasyGrow's off-grid vertical farms) as evidence,
+contrasted with the industrial "reduces human touch" pitch. Appendix B sources 179-182 (the
+source videos). Source transcripts + editorial note in `manuscript/solarpunk-source/`. Public
+PDF: `/downloads/Surviving-the-Singularity-v0.6.0.pdf` (linked from /book).
 **Auditors start at `AUDITOR-BRIEF.md` (repo root).**
 
 **Source of truth:** `src/lib/data/book/` (unified in commit `5164f49`; serves both the

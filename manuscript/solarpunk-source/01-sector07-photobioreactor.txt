@@ -1,0 +1,349 @@
+I have acquired a new data fragment.
+Just a moment while I compile the entry.
+Codex entry complete. Recovered
+prototype ALG1 photobioreactor.
+Historical records indicate this device
+cultivated photosynthetic microorganisms
+within a controlled environment.
+During this time period, researchers
+discovered [music] a wide array of
+applications for algae. Certain species
+could produce biofuel, bioplastics, and
+a potent protein source. Its plant-like
+nature also acted as a carbon dioxide
+filter [music] and oxygen producer in
+closed-loop air systems. This appears to
+be an excellent [music] candidate for
+analysis and reconstruction.
+Just a moment while I prepare the file
+for viewing.
+Render complete.
+Prepare for immersion.
+I really like the concept of this site.
+I think this will be where I post
+updates on my projects. Sort of like an
+engineering logbook.
+I'll start with my current project. I
+want to build an open-source aquaponic
+system as part of a larger
+self-sustaining home project.
+Aquaponics is like a mini
+self-sustaining ecosystem that produces
+plant crops year-round.
+All you have to do is feed the fish,
+which provides the nitrates to the
+system.
+But that means you still have to buy the
+fish food.
+If I could grow or produce that fish
+food, then the system could be truly
+self-reliant and produce fresh crops
+year-round without much manual effort.
+As I was researching this, I came across
+microalgae as a potential primary
+ingredient.
+That was a particularly attractive
+option because algae can also be grown
+in an automated system, and it grows
+really fast.
+In labs, they use a machine called a
+photobioreactor.
+I figure if it's a machine, I can
+probably build one of my self.
+Problem with that is I don't actually
+know anything about growing algae.
+So, I need to understand that before I
+can design a machine to automate those
+conditions.
+&gt;&gt; [music]
+&gt;&gt; Took me a couple weeks, but I finally
+finished the CAD model today.
+Now for the fun part, actually building
+it.
+This thing is going to take a lot of 3D
+printing. Thankfully, I got an upgrade.
+Finally got the Bambu A1 everyone's been
+talking about. [music]
+So, this part should be easy.
+Critical equipment detected.
+Apologies for the intrusion, but I've
+noticed something that requires further
+analysis.
+This machine appears to be a critical
+part of building ALG1.
+I'll need to take a closer look.
+Analysis complete.
+Historical records called this device
+[music] a 3D printer. It worked by
+depositing thermoplastic layers on a
+heated platform to achieve 3D
+components.
+This particular model, the A1, was built
+by Bambu Lab, founded [music] February
+9th, 2020. Recovered user records
+indicate this model was known for its
+automated calibration, high [music]
+print reliability, rapid fabrication
+speeds, and complimentary material
+management system.
+Cross-reference data suggests this model
+was widely adopted by engineers of this
+era. This machine would greatly increase
+your reconstruction efforts. I've
+analyzed the design and provided the
+schematics to the system. You can now
+request this device from the fabricator.
+I've included the request link in the
+analysis report.
+That's all for now. Please continue with
+your review.
+&gt;&gt; [music]
+&gt;&gt; I've got most of the big parts printed
+now, so I can finally start test fitting
+them together.
+After so much work, it's nice to see
+it's starting to take shape.
+&gt;&gt; [music]
+[music]
+&gt;&gt; A lot has happened since my last update.
+I have most of the electrical and
+mechanical done. So now it's time for
+programming and testing.
+I wrote a simple Python program that
+allows me to send commands to the
+Arduinos to test each subsystem.
+This lets me manually check things like
+the pumps, actuators, and lights before
+I get the full graphical user interface
+done.
+It's also how I discovered my first
+major problem.
+The stepper motors for the pH module
+don't work right.
+The contact detection for auto homing
+doesn't work reliably and half the time
+the motors are going too far or not far
+[music] enough.
+&gt;&gt; [music]
+&gt;&gt; No amount of code changes, motor swaps,
+or reducing friction has helped.
+So I had to make a smart motor drive
+system really dumb.
+I made some magnetic sensors out of
+stuff I had lying around. So now I can
+just tell the motors to go until they
+trip a sensor
+&gt;&gt; [music]
+&gt;&gt; and keep track of positions by counting
+sensor pulses.
+It's not ideal, but it works. So that
+means I can finally start closing
+everything up and get started working on
+the graphical user interface.
+&gt;&gt; [music]
+[music]
+&gt;&gt; I started by laying out all the buttons
+and elements on my Cyberdeck screen.
+Then tested it on the actual touchscreen
+for scale and responsiveness.
+&gt;&gt; [music]
+&gt;&gt; Once all the programming was debugged
+and running as a service, I took the pie
+out to install in the photobioreactor
+itself.
+&gt;&gt; [music]
+[music]
+&gt;&gt; Well, today's the day.
+It's finally time to start growing some
+algae.
+To get the fastest growth, I can only do
+about a gallon at a time.
+Once the algae fully populates each
+gallon, I can add more water and
+nutrients. Should take a couple weeks to
+reach full capacity and density.
+So while the algae does its thing, I
+figured I'd take some time to explain
+how some of this works since I've been
+so busy just building it up until now.
+Everything runs on a Raspberry Pi 5
+single board computer and two Arduino
+Nano microcontrollers.
+The Pi is like the manager and Arduinos
+are the workers that actually run each
+task.
+Everything communicates over two USB
+cables using easy to read ASCII
+commands.
+One Arduino controls the environmental
+systems [music] like the lights,
+temperature, and air bubbler.
+The other controls the pH sampler.
+[music]
+pH is an important factor for growing
+algae, so I designed a whole module to
+automate it.
+pH is the measurement of how acidic or
+alkaline the water is.
+pH sensors that measure this
+unfortunately kind of suck.
+If they dry out, [music] they stop
+working. So they have to be stored in a
+special solution when not in use.
+pH sensors also drift over time, which
+means they lose accuracy [music] and
+have to be recalibrated.
+This is normally done by submerging them
+in known value buffer solutions and
+[music] adjusting the software.
+For example, if the sensor is in a 7 pH
+solution [music] but measures 7.5,
+we basically tell the software that if
+it reads 7.5 again, it really [music]
+means 7.
+Between any measurements, the sensor has
+to be rinsed with deionized water
+[music] to prevent cross-contamination.
+We also have to keep the liquid sealed
+when not in use, otherwise they will
+evaporate or oxidize.
+To keep the liquid sealed when not in
+use, I combined the rotary motion and
+the lid control into one mechanism.
+Each lid travels inside a channel that
+keeps the lid closed until they move to
+the sensor.
+Handling the deionized water rinse was a
+little more tricky.
+&gt;&gt; [music]
+&gt;&gt; My solution is very similar to a lab
+magnetic stirrer except much smaller and
+with a drain included.
+The main idea is the water is stirred by
+a magnetic pill.
+Internally, the Teflon coated pill is
+magnetically coupled to a stack of
+neodymium ring magnets,
+which are belt driven by a micromotor.
+This allows the magnets to spin around
+the silicone tube, which acts as the
+drain path. All this together means the
+machine can schedule when to measure the
+pH, run the whole routine,
+&gt;&gt; [music]
+&gt;&gt; and report the results to the dashboard.
+Recalibration is also scheduled and
+handled automatically.
+&gt;&gt; [music]
+&gt;&gt; The touchscreen is the control center.
+The main page displays the pH,
+temperature, and light. Normally, algae
+density is measured manually using a
+Secchi disk.
+&gt;&gt; [music]
+&gt;&gt; To do it automatically, I'm just using a
+light sensor at the bottom of the tank
+and measuring how much light gets
+through the [music] algae.
+As the algae multiplies, less light can
+pass through the culture, so it's a good
+indicator of algae growth rate.
+The schedule tab just lets you know when
+an event is scheduled.
+The set point tab lets you change the
+algae's environment. This determines
+temperature, light cycle, sensor polling
+frequency, and other events. The manual
+tab allows you to manually control the
+gantry, trigger high-level functions
+like recalibration,
+and enable or disable subsystems.
+The log tab shows the real-time
+communication between the Pi and the
+Arduinos.
+It also allows you to send commands
+manually [music] if needed.
+As the photobioreactor runs, it also
+logs measurement data like light
+density, temperature, pH, and harvest
+[music] events over time.
+On this screen, you can export that CSV
+data to removable USB
+&gt;&gt; [music]
+&gt;&gt; to do deeper analysis on the data.
+The remaining tabs show a real-time
+graph of pH data, temperature, light,
+and harvest. This gives you a quick way
+to notice [music] trends and possible
+issues.
+The light graph is the one I use the
+most to gauge algae growth.
+When your readings start to flatline,
+that tells me the algae has reached peak
+density and won't grow much more unless
+I harvest some algae.
+Which brings us to today.
+The algae has finally reached peak
+density, [music] which means it's time
+for harvest.
+&gt;&gt; Before I run the auto filtration, I
+wanted to check the algae health and
+check for foreign [music] algae species
+which can be toxic.
+The only way to do that is under a
+microscope.
+&gt;&gt; [music]
+&gt;&gt; As far as I can tell, the algae looks
+healthy. There are a couple of weird
+ones that are straight instead of
+spiraled. And a few that didn't form
+properly, but mostly it looks good.
+&gt;&gt; [music]
+[music]
+&gt;&gt; Algae can be stored up to 2 years once
+dried, so I'm using a dehydrator.
+It only takes about 2 hours to fully
+dry.
+Then running it through coffee grinder
+reduces it to a powder form that'll make
+it easy to compress into fish food
+pellets.
+&gt;&gt; [music]
+&gt;&gt; So far, the algae production rate is
+about 8 g per week. I'll most likely
+have to scale up the system to match the
+amount needed by the fish.
+My design needs some work anyway [music]
+since there is some waste in the design,
+features I'm not using, and some things
+that didn't get fully automated.
+I did learn a lot from this design
+though, and most of it can be reapplied
+to a second version.
+In the end, it does grow algae. And
+almost everything works how I intended.
+So, I'm pretty happy with how it turned
+out.
+&gt;&gt; [music]
+[music]
+&gt;&gt; All recoverable data has been compiled.
+A reconstruction schema for ALG1 is now
+available.
+This includes recovered code, [music]
+fabrication files, and component data.
+However, the design remains incomplete.
+Analysis of development logs indicates
+the original creator identified
+unresolved issues and did not finalize
+this version for full release. As a
+result, this reconstruction should be
+considered experimental. It may be a
+useful reference for similar systems,
+but it is not recommended for direct
+replication in its current state.
+The reconstruction schema has been
+attached to the analysis report. I will
+notify you when I have new
+reconstruction project [music] data.
+Goodbye for now. Best of luck in your
+reconstruction efforts.

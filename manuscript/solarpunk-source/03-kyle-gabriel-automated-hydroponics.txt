@@ -1,0 +1,214 @@
+First, we'll construct the frame.
+I'm using steel tubing left over from a previous project,
+but there are a lot of other materials that can be used.
+One side of the frame is built higher than the other so
+water will flow through the channels by gravity.
+The water channels are made from vinyl
+downspouts cut to a length of 30 inches.
+Holes are cut every six inches on center.
+Since hole saw bits tend to tear vinyl,
+run the bit in reverse to get a nice cut.
+You can also alternate the hole positions every
+other channel to create a checkerboard pattern
+that maximizes space for plants to grow.
+One inch PVC was used for pumping water
+to each channel.
+Cement a cap to each end and use a tee in the
+center with an adapter that will be used to
+connect a hose to the water pump.
+Last, drill five holes in the side and
+insert rubber grommets to
+seal the microtubes that will be installed later.
+Four inch PVC was used for water collection.
+Cut off a few inches from the end caps to make them
+narrower, then cement them to the ends of the pipe.
+This is done to give a longer length opening.
+Make a straight cut along the length of
+the pipe from end cap to end cap.
+Make two more cuts along each
+end, creating a long flap.
+Use a heat gun to soften the PVC and open the flap
+enough to allow a channel to fit inside the opening.
+Then drill a hole for the bulkhead adapter.
+Apply heat to soften the PVC to allow it
+to conform to the adapter when it's
+tightened and make a watertight seal.
+Install the water collection pipe on the lower end of
+the stand and the water inlet pipe on the higher end.
+Alternate the channels across the stand to create
+a checkerboard pattern with the holes.
+Next, install the water pump to the inlet pipe and
+a drainage hose to the water collection pipe.
+The last step before starting the water flow is to drill
+a quarter inch hole in the inlet side of each channel,
+then install the microtubes from
+the grommets to the channels.
+Now we can fill the reservoir, turn on the pump,
+and see if everything is water-tight.
+We now have a basic functioning hydroponic
+system, with adjustments to the water
+chemistry needing to be manually performed.
+To automate the system, we'll need a control
+panel to interface all our sensors and devices.
+The sensors I'm installing will be able to measure
+air temperature, humidity, vapor pressure deficit,
+and carbon dioxide, water temperature,
+pH, and electrical conductivity,
+as well as water flow rate, water level,
+and power consumption.
+Since this is a prototype system, the connections
+of the control panel are made on bread boards.
+However, if this were to be put into a production
+system, you'll probably want to develop your
+own circuit boards, solder your connections,
+and add protection from water.
+Next, I'll push connections for an
+LCD through the grow tent wall.
+This will allow me to install an
+LCD to display measurements
+and stats on the outside of the
+tent for easier viewing.
+For measuring power, I'm using a
+split transformer that converts the
+electrical current being consumed by the
+system to a voltage.
+Up to 20 amps can be measured by this
+transformer, with a maximum output of 1 volt.
+This voltage is then converted to a digital
+signal by an analog-to-digital converter
+so we can ultimately determine how much
+current has been consumed over time.
+I chose to sacrifice a small 1 foot extension
+cord to get a single wire to clamp,
+rather than cutting into my power strip.
+Now, I'll set up the pumping system
+for the nutrient and pH solutions.
+I modeled mounts that will hold a bottle
+below each peristaltic pump in Fusion360,
+then printed them using Cura and Octoprint.
+For measuring water level, we'll need
+to mount a pipe that will enable us to
+adjust our float sensor to different heights.
+Next, we'll build a reservoir for our
+electrical conductivity, pH, and
+temperature sensors to measure the water.
+We want to separate these sensors
+from the main reservoir to allow any
+chemicals that are added sufficient time
+to mix before reaching the sensors.
+To do this, we'll divert a small amount of water from
+the main flow to the plants to fill up the reservoir,
+which will then spill back into the main reservoir.
+This lid I modeled and 3d printed will hold the probes.
+We'll need to drill a new hole in our water inlet pipe
+and use a rubber grommet to seal the microtube.
+Installing the flow meter is simple,
+if using compression fittings.
+Just cut the microtube where it looks like a
+good fit and press the ends into the fittings.
+A fan was added near the top of the tent to exhaust
+air and to help control temperature and humidity.
+Now let's build the box that will allow the
+Raspberry Pi to control our electrical devices.
+This will consist of four AC wall outlets that
+are individually-controlled by four relays,
+which can be switched on and off by the Raspberry Pi.
+We can now connect an AC power cord to the box,
+connect the Ethernet wire to our control panel,
+then plug in the devices we want to control.
+I also put everything in a battery box
+to protect against water.
+Installing the software is simple.
+First, flash the Raspbian OS image
+file to a micro SD card.
+You can now insert the SD card and
+power of the system for the first time.
+Installing Mycodo is even easier. Once
+logged into a terminal on the Raspberry Pi,
+execute the install command provided on Github.
+Let me give you a brief showcase of
+Mycodo before I demonstrate it working.
+For the sake of time, I've already configured everything,
+but this is all detailed in the accompanying write-up.
+Once you log in, you're greeted with the latest
+measurements from our sensors and devices.
+For a more detailed view, we can create custom
+dashboards with a number of different widgets
+available to display data and allow
+us to interact with the system.
+This dashboard displays information about
+water measurements, air measurements,
+flow, and electrical current consumption, as well
+as a live stream with the Raspberry Pi camera.
+Each of our inputs are configured on the
+Data page, where you can configure
+options such as measurement period, which
+measurements to record, among others.
+On the outputs page, we can configure our
+four peristaltic pumps and four relays.
+We can also test our outputs to ensure
+they're working before using them in the
+rest of the system with our automation tasks.
+Calibration is a crucial task. but can be
+tedious. Mycodo makes this easy by
+providing walk-throughs for the calibration
+procedures for several devices,
+including the peristaltic pumps and pH and
+electrical conductivity sensors we're using here.
+Once we have inputs and outputs
+configured and working properly,
+we can combine them to perform autonomous tasks.
+The most simple of these are simple timers, which
+we're using to turn our lights on from 3 AM to 8 PM.
+Next we have our most complex function,
+which monitors and regulates the water
+pH and electrical conductivity.
+This type of function is called a conditional controller
+and allows different conditions and actions to be
+used within Python code created by the user.
+Here we have two measurements,
+our pH and electrical conductivity,
+with several actions for manipulating
+the peristaltic pumps.
+We essentially have minimum and maximum
+allowed values for each measurement.
+If our measurements fall outside these ranges,
+peristaltic pumps will dispense small
+amounts of solution to bring them back.
+This function will run every 5 minutes,
+giving the sensors enough time to adequately
+detect the change in water chemistry
+before checking the measurements again.
+The next function is a PID controller
+that adjusts the vapor pressure deficit
+to an optimum range with a humidifier and exhaust fan.
+There are also simple monitor functions
+that will send an email to me if certain
+measurements aren't what they should be.
+I also have a function to trigger the
+remote shutter of my DSLR camera
+every three hours to create a high-quality time-lapse.
+And last, there's a simple timer for ensuring the
+exhaust fans run periodically to bring in fresh air.
+We could also create more functions such as
+incorporating the CO2 sensor for regulating exhaust,
+but this is a good set to start with.
+Let's go ahead and activate our pH and
+EC regulation function and see it in action.
+Since the addition of nutrients will impact pH, the
+function will first add nutrients until the water's
+electrical conductivity rises above
+800 microSiemens per centimeter,
+then either acid or base will be added until
+the pH returns between 5.5 and 6.5.
+I cultured a biocontrol agent to protect from
+microbial pathogens and contaminants.
+This is a bacterium named Streptomyces griseoviridis,
+commercially known as MycoStop, and will colonize
+the whole system, including the plant roots,
+preventing many harmful microorganisms
+from establishing.
+Now that we have the proper water chemistry
+and light schedule, we can plant our seeds.
+The seeds I'm planning are basil, along with
+red and green oak leaf and butter lettuce.

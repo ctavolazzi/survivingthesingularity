@@ -5,8 +5,15 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 19 Jul 2026 14:25:27 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 20 Jul 2026 15:15:20 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
+      <link>https://arxiv.org/abs/2607.16066</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.16066</guid>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Agentic Artificial Intelligence (AI), enabled by Large Language Models, marks a shift from rule-based automation toward autonomous, goal-driven control of Next-Generation Networks (NGNs). Existing surveys treat the two domains in isolation, leaving protocol integration, evaluation, and standardizati... [Score: 17.0 | Flagged for: agent, multi-agent, agentic, autonomous, tool use] Authors: Mazene Ameur, Abdelkader Mekrache, et al.</description>
+    </item>
     <item>
       <title>Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation</title>
       <link>https://arxiv.org/abs/2607.14256</link>
@@ -34,6 +41,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.14512</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>Multi-step retrosynthesis planning seeks to decompose a target molecule into commercially available building blocks through a sequence of feasible reactions. The vast combinatorial search space makes this task challenging even for expert chemists. Traditional methods combine tree search with offline... [Score: 10.0 | Flagged for: agent, agentic, planning, reasoning, llm] Authors: Yanqiao Zhu, Jingru Gan, et al.</description>
+    </item>
+    <item>
+      <title>Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning</title>
+      <link>https://arxiv.org/abs/2607.16057</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.16057</guid>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) are improving rapidly as reflected in benchmark scores, yet these AI benchmarks largely test capabilities such as factual recall, narrow question answering, mathematical problem-solving, and coding and agentic tool-use. What remains poorly measured is AI progress on the ... [Score: 9.5 | Flagged for: agent, agentic, tool-use, reasoning, llm] Authors: Ajay Patel, Kartik Hosanagar, et al.</description>
     </item>
     <item>
       <title>Can Agentic Trading Systems Pay for Their Own Intelligence?</title>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.07989</guid>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
       <description>Large language model (LLM) based multi-agent systems enable complex problem solving through coordinated reasoning and action, but their distributed structure also introduces new challenges in diagnosing system-level failures. When an execution fails, identifying which agent is responsible and at wha... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Yufei Xia, Anjun Gao, et al.</description>
-    </item>
-    <item>
-      <title>Information Limits and Attractor Dynamics in Economies of Frontier LLM Agents: A Pre-Registered Test</title>
-      <link>https://arxiv.org/abs/2607.06001</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.06001</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-      <description>We report a pre-registered, two-part experiment on small economies of frontier language-model agents (Claude Opus 4.8), testing two quantitative predictions about coupled multi-agent systems: an information-theoretic capacity region for wealth growth under market coupling, and a mean-field residual-... [Score: 8.0 | Flagged for: agent, multi-agent, alignment, llm, scaling] Authors: Cheng Qian</description>
-    </item>
-    <item>
-      <title>The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators</title>
-      <link>https://arxiv.org/abs/2606.26294</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.26294</guid>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Self-improving agents are state-of-the-art (SOTA) on agentic coding benchmarks and have recently been extended to general domains. However, their search methods generally assume a stationary evaluation criterion: a fixed verifier, benchmark, or labeled dataset that remains valid as the agent improve... [Score: 8.0 | Flagged for: recursive self-improvement, self-improving, agent, agentic] Authors: Alex Iacob, Andrej Jovanović, et al.</description>
     </item>
   </channel>
 </rss>

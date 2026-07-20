@@ -16,7 +16,7 @@ rewriting happens.
 
 ## 2. What solarpunk is, and why the book is missing it
 
-Solarpunk (per the movement's manifesto and common definition): "solar" = renewable
+Solarpunk (per the movement's founding statement and common definition): "solar" = renewable
 energy plus an optimistic future that rejects doomerism; "punk" = DIY, decentralized,
 post-scarcity-minded counterculture. Core tenets that map cleanly onto this book:
 

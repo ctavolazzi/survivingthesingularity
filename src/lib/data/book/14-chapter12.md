@@ -94,7 +94,7 @@ A Shouse is 50% industrial workshop and 50% highly insulated, compact living qua
   - **The Shop is the Shield:** The shop space houses your DC-native solar distribution panels, your batteries, your rainwater filtration rack, your local server Crucible, and your fabrication tools (welders, plasma cutters, 3D printers). It is where the physical work of autonomy happens.
   - **The House is the Sanctuary:** The living space is small, tight, and hyper-insulated (utilizing the spray-foam methods detailed in Chapter 5). Because it shares a structural envelope with the shop, waste heat from your server racks or shop equipment can be actively ducted into the living space during winter, keeping your thermal overhead near zero.
 
-When you live in a Shouse, you are not a consumer waiting for a delivery truck. You are a productive node in a decentralized industrial network. You have the physical capability to repair, fabricate, and automate.
+When you live in a Shouse, you are not a consumer waiting for a delivery truck. You are a productive node in a hyper-local industrial network. You have the physical capability to repair, fabricate, and automate.
 
 ### Section 2: The Semi-Autonomous CSA Topology
 

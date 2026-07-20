@@ -31,7 +31,7 @@ You can print this document, modify the brackets, and present it to your local t
 **NOW, THEREFORE, BE IT ORDAINED BY THE CITY COUNCIL OF THE CITY OF [MUNICIPALITY NAME]:**
 
 #### SECTION 1. TITLE AND DECLARATION OF POLICY
-This Ordinance shall be known and may be cited as the **"Community Commons Act."** It is hereby declared to be the policy of the City of [Municipality Name] that local resource self-reliance, physical autonomy, and decentralized technological coordination are critical public goods. Any municipal code, zoning regulation, or local statute in conflict with the provisions of this Act is hereby suspended.
+This Ordinance shall be known and may be cited as the **"Community Commons Act."** It is hereby declared to be the policy of the City of [Municipality Name] that local resource self-reliance, physical autonomy, and hyper-local technological coordination are critical public goods. Any municipal code, zoning regulation, or local statute in conflict with the provisions of this Act is hereby suspended.
 
 #### SECTION 2. CREATION OF THE MUNICIPAL RESOURCE SECURITY FUND (MRSF)
 There is hereby established a dedicated, non-lapsing public trust fund to be known as the **Municipal Resource Security Fund (MRSF)**. The MRSF shall be administered directly by a community-elected Resource Commons Board and shall be used exclusively to fund:

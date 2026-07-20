@@ -23,7 +23,7 @@ Two voices live in this book and must never blur:
 | | Voice | Person | Register |
 |---|---|---|---|
 | **Narrative** | Elijah | third person, past tense | gritty, sensory, novelistic |
-| **Manifesto** | the author | first person, present tense | urgent, technical, authoritative |
+| **Declaration** | the author | first person, present tense | urgent, technical, authoritative |
 
 The whole design goal is to keep the decor (story) and the foundation (research)
 structurally separate so the reader always knows which one they're reading.
@@ -61,7 +61,7 @@ the student gets the deep research — cleanly walled off from each other.
 
 ## The Foundations                            <- ZONE 3 label (h2, keeps TOC clean)
 
-<existing first-person manifesto content, voice untouched>
+<existing first-person Declaration content, voice untouched>
 ```
 
 ### Zone rules
@@ -71,7 +71,7 @@ the student gets the deep research — cleanly walled off from each other.
 - **Zone 2 — The Dialogue.** 800–1,200 words of third-person Elijah narrative.
   This is where the abstract concept of the chapter becomes physical, emotional,
   and human. Ends on the hard `---` divider.
-- **Zone 3 — The Foundations.** Hard cut back to the manifesto. Opens with the
+- **Zone 3 — The Foundations.** Hard cut back to the Declaration voice. Opens with the
   literal `## The Foundations` heading so the reader knows the story has stopped
   and the manual has resumed. The raw data, metrics, equations, and historical
   documentation live here, untouched by the fiction.
@@ -224,7 +224,7 @@ When drafting the narrative scene, hold the gritty, urgent register of the book.
   finds the pattern; the co-op's lived experience explains what the pattern costs.
   A mutual exchange between equals, not a download from an expert to a novice.
 - **Tone.** Gritty, grounded, humane. Dark where the material is dark. Not jokey —
-  save the satirical lightness for the manifesto's asides, not the scenes.
+  save the satirical lightness for the Declaration's asides, not the scenes.
 
 ---
 

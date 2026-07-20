@@ -64,9 +64,6 @@
         <a href={pdfHref} target="_blank" rel="noopener" class="pdf-btn pdf-btn-primary">
           View the PDF in your browser <span aria-hidden="true">&nearr;</span>
         </a>
-        <a href={pdfHref} download class="pdf-btn pdf-btn-ghost">
-          Download the PDF <span class="pdf-btn-note">v{book.version} &middot; 17&nbsp;MB</span>
-        </a>
       </div>
     </div>
   </section>

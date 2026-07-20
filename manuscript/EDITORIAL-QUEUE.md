@@ -1,11 +1,11 @@
 # Editorial Queue — Surviving the Singularity
 
-**LATEST VERSION: v0.6.1 (2026-07-19).** v0.6.1 = the final draft of the techno-optimist
+**LATEST VERSION: v0.6.2 (2026-07-19).** v0.6.2 = two word rulings on top of v0.6.1: "manifesto" removed everywhere (book prose ch1/ch5, internal register renamed "Declaration"; only Bastani's real citation subtitle survives in Appendix B) and decentralization de-heralded in favor of hyper-local/independent/deglobalization (kept only where it names actual decentralized tech: mesh, LoRa, IPFS, crypto, distributed energy; anchor thesis already in ch9). Public PDF: /downloads/Surviving-the-Singularity-v0.6.2.pdf. --- v0.6.1 = the techno-optimist
 turn. Second tone-audit fixes: ch4's "pathetic absurdity / human arrogance" sneer reframed
 to awe at scale (target kept), ch18's "coward's way out" reframed to "fear wearing the
 costume of caution / name it, then build against it," two "slave protocol" metaphors
 reworded to "leash" (matching the book's own vocabulary). Conclusion's "Moral Mandate"
-amplified into the closing manifesto per CT: things are changing and you can do this; make,
+amplified into the closing call to action per CT: things are changing and you can do this; make,
 teach, and train the robots yourself; drop the outdated mindset and the self-doubt (the last
 fence); do it for your kids and grandkids and all of humanity; every capable person who wakes
 up is one more on the side of the light; don't let the capitalist goblins regulate you out;
@@ -95,7 +95,7 @@ filled — remaining work is polish, not fill):
    Pending: author read.
 3. ~~**Conclusion (313w)**~~ — RESOLVED 2026-07-17: Bear Flag scene + P-22; ~1,600+ words.
 4. **Voice pass over all merged material** (Ch. 4, 6–13, 18) — the folds span the hot
-   Manifesto register and the clinical research register; Part III should read like a
+   Declaration register and the clinical research register; Part III should read like a
    field manual per the site's promise.
 5. ~~**Stage-2 evidence weave for Ch. 2**~~ — RESOLVED 2026-07-18: June 2026 export-order /
    open-weight-release sequence woven into the Stage 2 Foundations (after the Red Flag
@@ -125,7 +125,7 @@ Two registers per the compilation notes; mark each chapter as you edit.
 
 | Register | Chapters (current) |
 |---|---|
-| **Manifesto** (hot, declarative) | Intro, Ch. 1–4 (Stages prose), Ch. 18, Conclusion |
+| **Declaration** (hot, declarative) | Intro, Ch. 1–4 (Stages prose), Ch. 18, Conclusion |
 | **Manual** (calm, instructional) | Preface, Ch. 5, Ch. 14–17, Appendix A |
 | **Mixed / TBD** | Ch. 6–13 (mostly stubs — write them straight into the target register) |
 
@@ -154,7 +154,7 @@ like a field manual (the homepage promises "actionable mechanics, not abstract a
 
 **Protocol:** `src/lib/data/book/ELIJAH-PROTOCOL.md` (character, world, three-zone
 architecture, scene ledger). Each chapter gets Zone 1 briefing bullets + a Zone 2
-Elijah scene (800–1,200 words) + the existing manifesto content under a Zone 3
+Elijah scene (800–1,200 words) + the existing Declaration content under a Zone 3
 `## The Foundations` label. Ch. 0 is the book-scale cold open (exempt).
 
 **Word-count consequence:** a full 18-chapter weave adds ~15k–18k words of new

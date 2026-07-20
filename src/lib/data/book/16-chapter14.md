@@ -102,7 +102,7 @@ The Short Loop is the radical localization of your resource cycles. If the "Long
 
 Transitioning to a Short Loop network requires a fundamental reframe of how we view resources. We must stop thinking like consumers who buy things from a distant "somewhere else" and start thinking like closed-loop managers who capture, redirect, and multiply what is already right in front of us.
 
-This transition isn't about retreating into primitive isolation. It is about applying high-leverage, decentralized design to the physical world.
+This transition isn't about retreating into primitive isolation. It is about applying high-leverage, hyper-local design to the physical world.
 
 ## The Redirection Protocol: Intercepting the Flow
 Here is a staggering statistic from the twilight of the old world: **approximately 40% of all food produced within global distribution systems was discarded as waste** before it ever reached a human mouth.

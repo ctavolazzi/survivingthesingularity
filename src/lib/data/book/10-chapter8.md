@@ -284,7 +284,7 @@ Your tools will rust. Your medical supplies will expire. Your mind, starved of h
 
 True autonomy is not individual; it is **relational**.
 
-To survive the cracks, we must reclaim the ancient, decentralized philosophy of **The Commons**. We do not do this out of naive, utopian altruism. We do it because cooperation is the most thermodynamically efficient strategy available to human beings.
+To survive the cracks, we must reclaim the ancient, hyper-local philosophy of **The Commons**. We do not do this out of naive, utopian altruism. We do it because cooperation is the most thermodynamically efficient strategy available to human beings.
 
 ### Section 1: The Thermodynamic Failure of Isolation
 
@@ -300,7 +300,7 @@ When E_expended exceeds your daily caloric and cognitive intake, your system ent
 
 *The Decay of Isolated Systems. One person cannot out-work entropy on every front at once.*
 
-Now, consider a decentralized node of three households, six to eight people. By sharing the physical and cognitive load, the maintenance cost per capita drops exponentially:
+Now, consider a hyper-local node of three households, six to eight people. By sharing the physical and cognitive load, the maintenance cost per capita drops exponentially:
 
 > **E_maintenance, per capita ∝ (1) / (N)**
 

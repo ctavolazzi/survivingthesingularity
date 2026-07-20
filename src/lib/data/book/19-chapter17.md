@@ -115,9 +115,9 @@ To achieve true mechanical autonomy, your community must establish a **Independe
 
 ![The Decentralized Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power](/book-images/ch17-fab-lab.svg)
 
-*The Decentralized Fab Lab. Broken means fabricate, not wait.*
+*The Independent Fab Lab. Broken means fabricate, not wait.*
 
-The gold standard for decentralized fabrication is the **Global Village Construction Set (GVCS)**, an open-source project that details how to build the fifty industrial machines necessary to construct a small, modern, sustainable civilization from scratch, including tractors, 3D printers, wind turbines, and brick presses.
+The gold standard for local, independent fabrication is the **Global Village Construction Set (GVCS)**, an open-source project that details how to build the fifty industrial machines necessary to construct a small, modern, sustainable civilization from scratch, including tractors, 3D printers, wind turbines, and brick presses.
 
 The three critical starting tools for any parallel community are:
 

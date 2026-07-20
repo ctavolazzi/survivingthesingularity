@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE GREENHOUSE AUTOMATION BUS</text>
+  <line x1="40" y1="66" x2="460" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Pi host -->
+  <rect x="290" y="96" width="280" height="76" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="430" y="128" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">RASPBERRY PI HOST</text>
+  <text x="430" y="152" font-size="12" fill="#94a3b8" text-anchor="middle">Mycodo engine · PID loops</text>
+
+  <!-- buses -->
+  <path d="M 360 172 L 240 220" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ab)"/>
+  <text x="256" y="200" font-size="12" fill="#3b82f6" text-anchor="end">I2C sensor bus</text>
+  <path d="M 500 172 L 620 220" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+  <text x="608" y="200" font-size="12" fill="#f59e0b">GPIO relay board</text>
+
+  <!-- sensors column -->
+  <text x="240" y="252" font-size="12" font-weight="600" fill="#3b82f6" text-anchor="middle">SENSORS (inputs)</text>
+  <rect x="110" y="266" width="260" height="72" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="240" y="296" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">SHT31-D</text>
+  <text x="240" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">air temperature + humidity</text>
+
+  <rect x="110" y="350" width="260" height="72" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="240" y="380" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">STEMMA SOIL SENSOR</text>
+  <text x="240" y="402" font-size="11" fill="#94a3b8" text-anchor="middle">capacitive moisture + soil temp</text>
+
+  <!-- actuators column -->
+  <text x="620" y="252" font-size="12" font-weight="600" fill="#f59e0b" text-anchor="middle">ACTUATORS (12V outputs)</text>
+  <rect x="490" y="266" width="260" height="72" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="620" y="296" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">WATER SOLENOID VALVE</text>
+  <text x="620" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">gravity-fed irrigation line</text>
+
+  <rect x="490" y="350" width="260" height="72" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="620" y="380" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">EXHAUST FAN + GROW LIGHTS</text>
+  <text x="620" y="402" font-size="11" fill="#94a3b8" text-anchor="middle">brushless DC, relay-switched</text>
+
+  <!-- feedback loop -->
+  <path d="M 240 422 Q 240 480 430 480 Q 620 480 620 422" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 5" marker-start="url(#ab)" marker-end="url(#aa)"/>
+  <text x="430" y="470" font-size="12" fill="#64748b" text-anchor="middle">sense → decide → actuate → sense</text>
+
+  <text x="430" y="528" font-size="13" fill="#f1f5f9" text-anchor="middle">the greenhouse waters itself with control-loop precision while you sleep</text>
+</svg>

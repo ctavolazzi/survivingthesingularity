@@ -1,8 +1,10 @@
 <script>
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
-  import { sectionsWithMeta } from '$lib/bookContent';
+  import { sectionsWithMeta, book } from '$lib/bookContent';
   import { bookPage } from '$lib/stores/bookPage';
+
+  const pdfHref = `/downloads/Surviving-the-Singularity-v${book.version}.pdf`;
 
   let visible = false;
   let lastVisitedId = null;
@@ -53,11 +55,19 @@
     <div class="inner-narrow">
       <p class="eyebrow">Surviving the Singularity</p>
       <p class="preface-text">
-        A practical field guide for staying agentic as AI rewrites work, money, medicine, and
-        meaning. Written in public, updated as it's finished. What follows is the complete
-        current draft: every chapter, in order, free to read for as long as you have this page.
+        The machine that can do most jobs is already here. Things are changing, and you can do
+        this: point the same tools at your own food, power, and shelter, build hyper-local
+        instead of waiting on a system that is coming apart, and come out the other side with
+        your agency intact. Written in public, updated as it's finished. What follows is the
+        complete current draft: every chapter, in order, free to read for as long as you have
+        this page.
       </p>
-      <p class="preface-meta">{sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words total</p>
+      <p class="preface-meta">Draft v{book.version} &middot; {sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words total</p>
+      <div class="pdf-actions">
+        <a href={pdfHref} target="_blank" rel="noopener" class="pdf-btn pdf-btn-primary">
+          View the PDF in your browser <span aria-hidden="true">&nearr;</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -153,6 +163,50 @@
     font-size: 0.8rem;
     color: var(--text-3);
     margin: 0;
+  }
+
+  /* ── PDF ACTIONS ── */
+  .pdf-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+  .pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.7rem 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    min-height: 44px;
+  }
+  .pdf-btn-primary {
+    background: var(--amber);
+    color: #020617;
+    border: 1px solid var(--amber);
+  }
+  .pdf-btn-primary:hover {
+    background: #fbbf24;
+    border-color: #fbbf24;
+  }
+  .pdf-btn-ghost {
+    background: var(--amber-dim);
+    color: var(--amber);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+  }
+  .pdf-btn-ghost:hover {
+    border-color: var(--amber);
+    background: rgba(245, 158, 11, 0.14);
+  }
+  .pdf-btn-note {
+    font-weight: 400;
+    font-size: 0.72rem;
+    color: var(--text-3);
   }
 
   /* ── CONTINUE READING ── */

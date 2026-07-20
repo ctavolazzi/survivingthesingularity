@@ -1,0 +1,52 @@
+{
+  "session_id": "35d61147-d429-4716-a7ff-12d1355e7e50",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-07-12T13:45:54.486786+00:00",
+  "vectors": {
+    "know": 0.75,
+    "do": 0.85,
+    "context": 0.8,
+    "clarity": 0.8,
+    "coherence": 0.8,
+    "signal": 0.85,
+    "density": 0.7,
+    "state": 0.75,
+    "change": 0.1,
+    "completion": 0.05,
+    "impact": 0.7,
+    "engagement": 0.9,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.8,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "86920359-cbe2-4d2f-b59a-570f628a4712",
+    "git_commit_sha": "715552fadd52da0f8ac29e20751582e6f3ed4de7",
+    "git_notes_ref": "empirica/session/35d61147-d429-4716-a7ff-12d1355e7e50/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7db8b11fec6c2eeed2a3b5f0425891f83906d7f7",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "manuscript/EDITORIAL-QUEUE.md",
+        "manuscript/StS-References-and-Proper-Nouns.md",
+        "scripts/chapter_images.json",
+        "scripts/chapter_quotes.json",
+        "src/lib/data/book/03-chapter1.md",
+        "src/lib/data/book/book.json",
+        "static/book-images/credits.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db                | Bin 1077248 -> 1241088 bytes\n .empirica/sessions/sessions.db-shm            | Bin 32768 -> 32768 bytes\n manuscript/EDITORIAL-QUEUE.md                 |  38 +++++++++++++++++++++++-\n manuscript/StS-References-and-Proper-Nouns.md |  24 +++++++++++++++\n scripts/chapter_images.json                   |   8 +++++\n scripts/chapter_quotes.json                   |   8 +++++\n src/lib/data/book/03-chapter1.md              |  41 ++++++++++++++++++++++++++\n src/lib/data/book/book.json                   |   7 ++++-\n static/book-images/credits.json               |   9 +++++-\n 9 files changed, 132 insertions(+), 3 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 154
+}

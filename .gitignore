@@ -50,3 +50,6 @@ book-build/
 
 # Playwright test artifacts
 tests/results/
+
+# Python bytecode
+scripts/__pycache__/

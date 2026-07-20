@@ -1,0 +1,123 @@
+{
+  "session_id": "c9e67ae4-00fb-47ca-928f-482f4aef3f28",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-07-18T01:18:32.326855+00:00",
+  "vectors": {
+    "know": 0.9,
+    "do": 0.92,
+    "context": 0.92,
+    "clarity": 0.9,
+    "coherence": 0.92,
+    "signal": 0.9,
+    "density": 0.88,
+    "state": 0.92,
+    "change": 0.05,
+    "completion": 0.05,
+    "impact": 0.8,
+    "engagement": 0.95,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.913,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "83291b75-361d-4a08-ac29-d12e05398cc5",
+    "git_commit_sha": "e111da3e691548a20446cef106d00666186ccf91",
+    "git_notes_ref": "empirica/session/c9e67ae4-00fb-47ca-928f-482f4aef3f28/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "b4015f71c77d7a0613766c2233482ebe65d327bd",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "b4015f71c77d7a0613766c2233482ebe65d327bd",
+        "message": "book: Elijah weave Ch. 13-15: first fire, the absorption, and the shovel",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T18:09:06-07:00",
+        "files_changed": [
+          "src/lib/data/book/15-chapter13.md",
+          "src/lib/data/book/16-chapter14.md",
+          "src/lib/data/book/17-chapter15.md"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        "CLAUDE.md"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db | Bin 1249280 -> 1257472 bytes\n CLAUDE.md                      |  15 ++++++++++++---\n 2 files changed, 12 insertions(+), 3 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "do": {
+      "prev": 0.9,
+      "curr": 0.92,
+      "delta": 0.02
+    },
+    "context": {
+      "prev": 0.93,
+      "curr": 0.92,
+      "delta": -0.01
+    },
+    "clarity": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "coherence": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.15,
+      "curr": 0.05,
+      "delta": -0.1
+    },
+    "impact": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.12,
+      "curr": 0.15,
+      "delta": 0.03
+    }
+  },
+  "token_count": 252
+}

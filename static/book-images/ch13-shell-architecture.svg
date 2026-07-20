@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE DOUBLE-WIDE SHELL ARCHITECTURE</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">plan view · two one-trip 40 ft high-cube containers, mated and cut open</text>
+  <line x1="40" y1="88" x2="470" y2="88" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- 40 ft dimension -->
+  <line x1="110" y1="128" x2="750" y2="128" stroke="#94a3b8" stroke-width="1.5" marker-start="url(#ab)" marker-end="url(#ab)"/>
+  <text x="430" y="120" font-size="13" fill="#94a3b8" text-anchor="middle">40 feet</text>
+
+  <!-- footprint -->
+  <rect x="110" y="150" width="640" height="256" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
+
+  <!-- seam -->
+  <line x1="118" y1="278" x2="742" y2="278" stroke="#f59e0b" stroke-width="2" stroke-dasharray="10 6"/>
+  <text x="430" y="271" font-size="12" fill="#f59e0b" text-anchor="middle">seam: interior mating walls cut away, steel skeleton takes the load</text>
+
+  <!-- container 1 -->
+  <text x="430" y="190" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">CONTAINER 1 · 8' × 40'</text>
+  <text x="430" y="216" font-size="13" fill="#94a3b8" text-anchor="middle">communal workspace · air-gapped server room</text>
+
+  <!-- container 2 -->
+  <text x="430" y="330" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">CONTAINER 2 · 8' × 40'</text>
+  <text x="430" y="356" font-size="13" fill="#94a3b8" text-anchor="middle">wet-room · kitchen · living quarters</text>
+
+  <!-- width dimensions -->
+  <line x1="86" y1="150" x2="86" y2="278" stroke="#94a3b8" stroke-width="1.5" marker-start="url(#ab)" marker-end="url(#ab)"/>
+  <text x="72" y="220" font-size="12" fill="#94a3b8" text-anchor="middle" transform="rotate(-90 72 220)">8 ft</text>
+  <line x1="86" y1="278" x2="86" y2="406" stroke="#94a3b8" stroke-width="1.5" marker-start="url(#ab)" marker-end="url(#ab)"/>
+  <text x="72" y="348" font-size="12" fill="#94a3b8" text-anchor="middle" transform="rotate(-90 72 348)">8 ft</text>
+
+  <!-- corner castings -->
+  <rect x="104" y="144" width="12" height="12" fill="#f59e0b"/>
+  <rect x="744" y="144" width="12" height="12" fill="#f59e0b"/>
+  <rect x="104" y="400" width="12" height="12" fill="#f59e0b"/>
+  <rect x="744" y="400" width="12" height="12" fill="#f59e0b"/>
+  <rect x="104" y="272" width="12" height="12" fill="#f59e0b"/>
+  <rect x="744" y="272" width="12" height="12" fill="#f59e0b"/>
+  <text x="430" y="446" font-size="12" fill="#64748b" text-anchor="middle">■ corner castings: chained tight, welded with 7018 rods</text>
+
+  <text x="430" y="500" font-size="14" fill="#f1f5f9" text-anchor="middle">640 sq ft of open span · roughly $25,000 all-in</text>
+  <text x="430" y="524" font-size="12" fill="#64748b" text-anchor="middle">I-beam and C-channel reinforcement detail: see the center-seam figure below</text>
+</svg>

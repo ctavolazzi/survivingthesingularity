@@ -55,6 +55,13 @@ export async function loadBlogPosts() {
     console.error('Error importing algae-saves-us:', error.message);
   }
 
+  try {
+    const antiGravity = await import('./no-scientists-didnt-just-invent-antigravity-what-they-actually-found-is-stranger/index.js');
+    if (antiGravity && antiGravity.post) posts.push(antiGravity.post);
+  } catch (error) {
+    console.error('Error importing no-scientists-didnt-just-invent-antigravity-what-they-actually-found-is-stranger:', error.message);
+  }
+
   return posts;
 }
 

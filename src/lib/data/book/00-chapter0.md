@@ -158,3 +158,21 @@ You're holding it.
 ---
 
 *The rest of this book is the manual Elijah wished someone had handed him that night at the Bear Flag, what's actually happening, in what order, and what people like us can build while it does.*
+
+---
+
+## Precedent P-02: The Toy at the Fair (Philadelphia, 1876)
+
+At the 1876 Centennial Exhibition, the machine everyone crossed the country to see was the Corliss engine: 1,400 horsepower, four stories tall, the certified future of American industry. President Grant himself threw the lever. In a side gallery, a Boston elocution teacher named Alexander Graham Bell was demonstrating a gadget the judges nearly skipped on their way to dinner: a wooden box that carried a human voice down a wire.
+
+Sir William Thomson, later Lord Kelvin, the most famous physicist alive, stopped, listened, and called the telephone the greatest marvel he had seen in America. Almost nobody else at the fair agreed. Western Union, offered Bell's patents in that era for a pittance, passed on them, and spent the following decades watching the toy from the side gallery swallow the communications empire whole. The steam engine got the applause. The telephone got the century.
+
+**The mechanism.** At every demonstration there are two audiences standing in the same room: the crowd measuring the machine against the present, and the handful measuring the present against the machine. The crowd asks whether it is impressive. The handful asks what dies when it becomes boring.
+
+**The rule.** You just watched a demonstration, at a bar, on a Tuesday. Do not ask how impressive the machine was. Ask what the world looks like when what it did is unremarkable, and price your next decade off that answer, because that is the calculation the other audience is already running.
+
+**The practice.**
+
+1. Run the boring test on the last AI demo that impressed you. Assume the capability is free, invisible, and everywhere within thirty-six months. Write down which of your income streams survives that assumption. That list is your actual resume.
+2. The next time you watch a demonstration, watch the room instead of the stage for two full minutes. Note who is applauding and who has gone quiet and started taking notes. Find out what the quiet ones do for a living. That is the second audience, and you want to be standing with them.
+3. Keep a demonstration log. One line per demo that crosses your feed: date, what it did, your one-sentence prediction of when it becomes boring. Review the log every six months. You are not training the predictions. You are training yourself to stop being surprised on schedule.

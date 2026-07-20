@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="498" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE SNEAKERNET CYCLE</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">the un-hackable network: data that walks</text>
+  <line x1="40" y1="88" x2="380" y2="88" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- node A -->
+  <rect x="60" y="160" width="210" height="110" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="165" y="198" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">INDEPENDENT NODE</text>
+  <text x="165" y="222" font-size="12" fill="#94a3b8" text-anchor="middle">local server + archive</text>
+  <text x="165" y="244" font-size="12" fill="#3b82f6" text-anchor="middle">encrypts ⇒</text>
+
+  <!-- microSD chip center -->
+  <g transform="translate(380,168)">
+    <rect x="0" y="0" width="100" height="120" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+    <path d="M 78 0 L 100 22 L 100 0 Z" fill="#020617"/>
+    <g fill="#f59e0b">
+      <rect x="12" y="10" width="8" height="18" rx="2"/>
+      <rect x="26" y="10" width="8" height="18" rx="2"/>
+      <rect x="40" y="10" width="8" height="18" rx="2"/>
+      <rect x="54" y="10" width="8" height="18" rx="2"/>
+    </g>
+    <text x="50" y="70" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">microSD</text>
+    <text x="50" y="92" font-size="11" fill="#94a3b8" text-anchor="middle">1 TB · encrypted</text>
+  </g>
+
+  <!-- arrows A->chip, chip->B -->
+  <line x1="270" y1="215" x2="372" y2="215" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+  <line x1="488" y1="215" x2="590" y2="215" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <!-- hand-carry arc over the top -->
+  <path d="M 165 156 Q 430 60 695 156" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ab)"/>
+  <text x="430" y="120" font-size="12" fill="#94a3b8" text-anchor="middle">passed by hand · local courier · town to town</text>
+
+  <!-- node B -->
+  <rect x="596" y="160" width="210" height="110" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="701" y="198" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">NEIGHBOR NODE</text>
+  <text x="701" y="222" font-size="12" fill="#94a3b8" text-anchor="middle">next community over</text>
+  <text x="701" y="244" font-size="12" fill="#3b82f6" text-anchor="middle">⇐ decrypts</text>
+
+  <!-- return path -->
+  <path d="M 695 278 Q 430 372 173 280" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ab)"/>
+  <text x="430" y="342" font-size="12" fill="#64748b" text-anchor="middle">and back again, with their library merged into yours</text>
+
+  <text x="430" y="420" font-size="13" fill="#f1f5f9" text-anchor="middle">immune to surveillance, remote shutdown, and electromagnetic interference</text>
+  <text x="430" y="446" font-size="12" fill="#64748b" text-anchor="middle">a library walks across town in a pocket; nobody upstream ever sees a packet</text>
+</svg>

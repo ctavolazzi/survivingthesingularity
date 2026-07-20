@@ -23,7 +23,7 @@ Two voices live in this book and must never blur:
 | | Voice | Person | Register |
 |---|---|---|---|
 | **Narrative** | Elijah | third person, past tense | gritty, sensory, novelistic |
-| **Manifesto** | the author | first person, present tense | urgent, technical, authoritative |
+| **Declaration** | the author | first person, present tense | urgent, technical, authoritative |
 
 The whole design goal is to keep the decor (story) and the foundation (research)
 structurally separate so the reader always knows which one they're reading.
@@ -61,7 +61,7 @@ the student gets the deep research — cleanly walled off from each other.
 
 ## The Foundations                            <- ZONE 3 label (h2, keeps TOC clean)
 
-<existing first-person manifesto content, voice untouched>
+<existing first-person Declaration content, voice untouched>
 ```
 
 ### Zone rules
@@ -71,7 +71,7 @@ the student gets the deep research — cleanly walled off from each other.
 - **Zone 2 — The Dialogue.** 800–1,200 words of third-person Elijah narrative.
   This is where the abstract concept of the chapter becomes physical, emotional,
   and human. Ends on the hard `---` divider.
-- **Zone 3 — The Foundations.** Hard cut back to the manifesto. Opens with the
+- **Zone 3 — The Foundations.** Hard cut back to the Declaration voice. Opens with the
   literal `## The Foundations` heading so the reader knows the story has stopped
   and the manual has resumed. The raw data, metrics, equations, and historical
   documentation live here, untouched by the fiction.
@@ -224,7 +224,7 @@ When drafting the narrative scene, hold the gritty, urgent register of the book.
   finds the pattern; the co-op's lived experience explains what the pattern costs.
   A mutual exchange between equals, not a download from an expert to a novice.
 - **Tone.** Gritty, grounded, humane. Dark where the material is dark. Not jokey —
-  save the satirical lightness for the manifesto's asides, not the scenes.
+  save the satirical lightness for the Declaration's asides, not the scenes.
 
 ---
 
@@ -273,3 +273,108 @@ first contact with the co-op. **Part III:** building it, together.
 *When in doubt: separate the decor from the foundation, make Elijah earn it through
 friction, and let the co-op carry what Elijah cannot know. Keep the science real and
 the story gritty.*
+
+---
+
+## 7. Continuity bible (added 2026-07-16 — binding for Ch. 7–18 + Conclusion)
+
+The ledger (§6) fixes each scene's premise. This section fixes what connects them.
+Scenes run the length the story needs — the 800–1,200 window is a floor for effort,
+not a ceiling on the narrative (author ruling, 2026-07-16).
+
+### 7.1 Timeline (two years, Bear Flag to Bear Flag)
+
+| When | Chapters | Season anchor |
+|---|---|---|
+| Month 0 | Ch. 0 (the toast) | late fall — Chat Horizon is weeks old |
+| Months 1–2 | Ch. 1–2 (printout Monday; Companion all-hands) | winter |
+| Months 3–5 | Ch. 3–4 (Sunday calls; LADDER weekend, "cold spring") | spring |
+| Month 6 | Ch. 5 (the $211 bill; the woodstove) | early summer |
+| Month 11 | Ch. 6 (quits on a Tuesday; drives north; the broom) | early fall, year 1 |
+| Months 11–13 | Ch. 7–8 (potluck battle lines; the breakdown) | fall → first winter north |
+| Months 13–15 | Ch. 9 (first manufacturing cell) | deep winter |
+| Months 16–18 | Ch. 10–11 (media engine; the leak, the Crucible) | spring, year 2 |
+| Months 18–20 | Ch. 12 (the deed) · Ch. 15 (Priya's beds run all season) | late spring–summer |
+| Months 20–22 | Ch. 13 (shouse build) · Ch. 14 (Kowalski's closes) | summer–early fall |
+| Month 23 | Ch. 16 (the overnight win) · Ch. 17 (the storm) | fall–first storm |
+| Month 24 | Ch. 18 (premortem, annual meeting) | one year at the co-op |
+| Month ~26 | Conclusion (manuscript done; the drive south) | winter — two years after the toast |
+
+### 7.2 Elijah's arc in one line per phase
+
+witness (0) → accomplice (1–2) → exile-in-place (3–4) → auditor (5) → apostate (6)
+→ student (7–9) → operator (10–11) → neighbor (12–14) → instrument-maker (15–17)
+→ member (18) → author (Conclusion). The competence he arrives with never grows;
+what grows is his knowledge of where it ends.
+
+### 7.3 Chekhov registry — planted guns and where they fire
+
+| Planted | Where | Fires |
+|---|---|---|
+| Napkin / "handing them a telescope" | Ch. 0 | Conclusion — he hands the reader the telescope instead (the book) |
+| "You're holding it." | Ch. 0 close | Conclusion close — bookend, verbatim echo |
+| "Congratulations" (toast, hollow) | Ch. 0 | Conclusion — reclaimed, raised alone at the Bear Flag |
+| MADRONE ≠ DRONE notebook | Ch. 0 | Ch. 18 — the notebook's arithmetic becomes the premortem model; Conclusion — becomes the manuscript |
+| The mother call that failed | Ch. 3 | Ch. 13 — photo from inside the shell; Conclusion — she is the first reader ("no sentence he could build, so he built a book") |
+| Grandmother's Fisher woodstove, no flue | Ch. 5 | Ch. 13 — installed in the shouse; first fire |
+| Kill-A-Watt auditing habit | Ch. 5 | Ch. 15 — sensor humility inverts it (the meter lies where the root lives) |
+| Check-engine light | Ch. 6 | Ch. 9 — Marta's shop finally fixes the car, off-hand, mid-scene |
+| The broom / "Swarf goes in the red bin" | Ch. 6 | Ch. 18 — Elijah hands the broom to the co-op's newest arrival |
+| Devendra ("augmentation, not replacement") | Ch. 1 | Ch. 14 — email: Claypot cut his division; the calm man calls Elijah |
+| Hollis place sold to "some outfit from Sacramento" | Ch. 3 | Ch. 12 — the same outfit circles the co-op's parcel; the CLT beats it |
+| Silvana / Chat Horizon | Ch. 0 | Ch. 11 — its open-weights descendant runs air-gapped on the Crucible |
+
+### 7.4 Co-op cast state per chapter (who carries what)
+
+- **Ch. 7 (Denny):** potluck meeting; Elijah says "reskilling," Denny — reskilled twice,
+  automated out twice — takes it apart without raising his voice. A prepper-minded member
+  argues for pulling up the ladder; **Marta** deploys the Luddite truth (anti-starvation,
+  not anti-machine) to end the argument. Elijah starts writing names, not numbers.
+- **Ch. 8 (Marta):** the spiral (Companion 2.0 ships; savings math at 3 a.m.); Marta finds
+  him wrecked, tells 2009 properly — the plant, the first winter, who made it and who
+  didn't, and why: routine, hands, small circle, no news before noon. First firewall.
+- **Ch. 9 (Marta + Reuben):** the greenhouse-controller cell. Elijah's spec: elegant,
+  single-sourced, unbuildable. Marta re-engineers around salvage and stock steel. Reuben
+  enters mid-scene with the county paperwork nobody asked him for, already done.
+- **Ch. 10 (Denny):** the media engine. Elijah's algorithm-tuned cut reads as slop and
+  dies; Denny telling the Kowalski's-adjacent truth plainly to a phone on a tripod
+  travels. Denny gets the channel — the first thing that is *his* since the warehouse.
+- **Ch. 11 (co-op):** the Crucible build and the leak — a config error exposes the mesh
+  journal to the open net for 41 hours. Marta's cold fury; Reuben on exposure; the
+  honest public write-up (judo applied to failure). Checklists become law. Air-gap after.
+- **Ch. 12 (Reuben):** the deed. Sacramento outfit circles the widow's parcel; Elijah
+  builds a beautiful model; the deal closes at her kitchen table because Marta fixed her
+  husband's tractor in 2011 and Reuben knows the recorder's office by first name.
+  Enclosure, run in reverse — one parcel out of the market forever.
+- **Ch. 13 (Marta):** the double-wide build. Elijah's test weld snaps in the vise
+  ("that bead holds a roof over someone's kid"); he owns sensors, wiring, monitoring —
+  and is good at it. The Fisher stove gets its flue. First fire. Photo to his mother.
+- **Ch. 14 (Denny):** Kowalski's Hardware dies — gradually, then suddenly. Elijah had
+  watched the metrics for months and said nothing (didn't want to be the crackpot
+  again); the realtor guilt, rhymed. Devendra's email lands the same week. The co-op's
+  answer: absorb the inventory, and Frank Kowalski joins — the long tail landing in the
+  short loop. Denny runs the story.
+- **Ch. 15 (Priya):** the beds. His moisture model is confidently wrong; the shovel
+  corrects it ("your sensor lives at one centimeter; the root lives at thirty").
+  Exchange completes both ways: her intuition becomes legible in his dashboards —
+  the tea-inoculated beds provably hold water longer.
+- **Ch. 16 (co-op, the earned win):** Denny's series compounds overnight; morning finds
+  requests from eleven towns; they ship everything open — templates, cut files, the
+  Municipal Autonomy Code. Permissionless leverage, witnessed at dawn, nobody's boss
+  to thank.
+- **Ch. 17 (Marta + Priya):** first hard storm; grid and cell go down; the mesh holds
+  except node 7 — Elijah's own, botched flash. He walks the ridge; Marta talks him
+  through halving the problem over the radio; Priya's greenhouse rides on the alert
+  chain. Gods with cold fingers and a multimeter.
+- **Ch. 18 (full co-op):** the premortem. His model knows supply, grid, legal; the room
+  adds burnout, a divorce, founder-dependence, Marta's shoulder. The model gets a
+  names column. He hands the broom to a newcomer. The notebook starts becoming a book.
+- **Conclusion:** the drive south, the Bear Flag, one beer, the finished manuscript on
+  the bar. "Congratulations," reclaimed. First copy mailed to his mother. *You're
+  holding it.*
+
+### 7.5 Register guard
+
+Part III scenes stay gritty but the light gets in — the wins are physical and earned
+(Ch. 9 ship, Ch. 13 fire, Ch. 16 dawn). No speeches. History enters only as a weapon
+in someone's mouth mid-conflict (§5 rule holds through the end).

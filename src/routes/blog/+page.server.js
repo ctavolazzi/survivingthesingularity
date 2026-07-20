@@ -2,6 +2,14 @@
 export async function load() {
   const posts = [
     {
+      title: "No, Scientists Didn't Just Invent Anti-Gravity (What They Actually Found Is Stranger)",
+      date: '2026-07-17',
+      author: 'Christopher Tavolazzi',
+      route: '/blog/no-scientists-didnt-just-invent-antigravity-what-they-actually-found-is-stranger',
+      excerpt: "A new paper proposes a lab-feasible way to make gravity look repulsive for a filtered slice of particles. It's not a hoverboard. It's a real plan to test whether gravity itself is quantum, one of the biggest open questions in physics.",
+      image: 'https://images.unsplash.com/photo-1708011271954-c0d2b3155ded?q=80&w=2072&auto=format&fit=crop'
+    },
+    {
       title: 'The Algal Biorefinery Blueprint: Engineering the Post-Petrochemical Stack',
       date: '2026-06-17',
       author: 'Christopher Tavolazzi',

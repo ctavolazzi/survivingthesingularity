@@ -1,0 +1,34 @@
+/* PLAIN variant: pure text, zero decoration. The reading floor.
+   BOOK_VERSION is replaced with the build label by build-pdf-variants.sh */
+@page {
+  size: letter;
+  margin: 2.6cm 2.8cm;
+  @bottom-center {
+    content: "BOOK_VERSION-PLAIN \00b7 " counter(page);
+    font-family: Georgia, serif;
+    font-size: 8pt;
+    color: #555555;
+  }
+}
+@page :first { @bottom-center { content: none; } }
+
+body { font-family: Georgia, serif; font-size: 11pt; line-height: 1.65; color: #000000; }
+h1 { page-break-before: always; font-family: Georgia, serif; font-size: 15pt; font-weight: bold; color: #000000; border: none; }
+header#title-block-header h1 { page-break-before: avoid; }
+h2 { font-family: Georgia, serif; font-size: 12.5pt; font-weight: bold; color: #000000; margin-top: 1.6em; }
+h3 { font-family: Georgia, serif; font-size: 11pt; font-weight: bold; font-style: italic; color: #000000; }
+nav#TOC { page-break-after: always; }
+nav#TOC a { color: #000000; text-decoration: none; }
+img, figure { display: none; }
+figcaption { display: none; }
+blockquote { margin-left: 1.6em; border: none; color: #000000; font-style: italic; }
+.pullquote { font-style: italic; margin: 1.2em 2em; }
+code { font-family: Courier, monospace; font-size: 9pt; background: none; }
+table { border-collapse: collapse; width: 100%; font-size: 9.5pt; }
+th, td { border: 1px solid #000000; padding: 4px 8px; text-align: left; }
+th { background: none; font-weight: bold; }
+hr { border: none; border-top: 1px solid #999999; margin: 1.8em 20%; }
+a { color: #000000; text-decoration: none; }
+strong { font-weight: bold; }
+.footnotes { font-size: 8.5pt; }
+.version-stamp { font-family: Georgia, serif; border: none; padding: 0; }

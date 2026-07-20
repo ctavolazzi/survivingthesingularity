@@ -7,6 +7,48 @@
 
 > *"Code and media are permissionless leverage. They're the leverage behind the newly rich."*
 > Naval Ravikant, *How to Get Rich* (2018)
+
+**In this chapter:**
+
+- Code and media work while you sleep. They are the only employees that cost nothing, complain never, and compound forever.
+- The machine flooded the world with synthetic content and created the one shortage it can't fill: proof that a real thing happened to real people. You are sitting on the supply.
+- Trust doesn't scale, and doesn't have to. Files scale. Ship the files; keep the trust local.
+- Nobody's permission was asked. That's the whole point of the lever.
+
+---
+
+The video that did it was the first fire.
+
+Denny had been documenting the shouse build all fall, the way he documented everything by then: no scripts, hands in frame, the county audible in his vowels. The finale was four minutes long. The cut, the columns, Marta's bead going down the header seam like a zipper closing, the stove with its printed-form firebrick, and at the end, the draw catching on the first match and the co-op standing around in the new warm doing nothing historic whatsoever. He ended it the way he had ended the first video, on the same porch of words, because Denny knew a load-bearing sentence when he'd built one: "Come see it. Bring your kid."
+
+It posted on a Thursday night. Elijah did the pipes and went to bed.
+
+He was up before light out of habit now, and he walked to the shed through the first hard frost of the year with coffee, to check the overnight telemetry the way other generations of men had walked out to check stock. The mesh was green. The greenhouse was green. The channel graph was a wall.
+
+Not a spike. He'd seen spikes; the leak postmortem had been a spike. This was compounding, the curve he'd been drawing in the notebook for two years, the one that lies to you at the beginning and then doesn't, except for the first time in his life it was under something he loved instead of over it. The first-fire video had gone out and dragged the whole catalog up behind it: the greenhouse controllers, the landing, the bed data, all of it feeding all of it, person to person, three years of the co-op's actual life moving through the world's feeds like true things move. And underneath the numbers, the inbox. He read it standing up, coffee going cold.
+
+A grange association in Idaho: how do we start. A parish council in Louisiana, two months out from the last flood, asking for the bed protocol. A machinist in Ohio with his father's shop and no work in it, asking for the controller files. A tribal housing authority. A retired county engineer. A woman in Maine who had, she wrote, four acres, a dead barn, and eleven neighbors who show up. Eleven towns by the time the sun was fully up, spread across nine states, every one of them asking some version of the same four words: how do we start.
+
+He rang no bells. He put it all on the big screen at Friday dinner and let the room read.
+
+Curtis got to the fence first, because Curtis always did, except the fence had changed shape over two years like everything else about Curtis: "That's a product," he said. "That inbox is a business. Course packs, plans, consulting. People pay real money for half of what we know." He wasn't wrong, and nobody said he was, and for a minute the old grammar hung over the table, the Claypot grammar, and Elijah felt it reach for him like a current he knew by name: scale it, platform it, first-mover. Two years ago he'd have already had the deck built.
+
+It was Frank Kowalski who took it apart, from the end of the table, in the tone of a man doing inventory. "I spent thirty years selling parts for two dollars over what the internet charged," Frank said. "Know what I was actually selling? Somebody who knows which part. You can't download me. Him neither." A thumb at Denny. "Fence the files and you're selling paper. Ship the files free and every one of those eleven towns needs a Frank and a Marta and a Priya of their own anyway, and they'll find them locally, because that part doesn't ship." He folded his glasses. "The store taught me that. Late."
+
+"The press did this once before," Elijah said, and kept it to two sentences, because he had learned. "Books used to be chained to desks. Somebody built a machine that made copying cheap, and the people who tried to keep the chains lost, and the people who shipped won everything that mattered. Media's the same machine with the crank removed."
+
+Marta was quiet until the end, which is how the co-op knew where the decision would land. "I told this one his first day," she said, nodding at Elijah, "that nineteen households who know whose kid is whose don't scale, and that's the load-bearing wall, and I meant it, and it's still true." She looked at the wall of numbers. "The wall doesn't scale. The blueprints of the wall scale fine. Ship them."
+
+So they shipped everything, that weekend, all of it: the shouse cut files with every dimension Marta had logged, the controller schematics and firmware and the laminated repair card as a printable, Priya's bed protocol with the three-depth probe design and the season of data behind it, the leak postmortem as a template for telling the truth in public, and Reuben's masterpiece, the Municipal Autonomy Code, the whole legal toolkit, annotated, in plain language, free. (The license, which Reuben spent the weekend on and enjoyed more than anyone should: use everything, sell nothing you didn't build on top of it, and keep the attribution, "because the only thing we charge is credit.")
+
+Monday morning Elijah stood in the shed at dawn again with the coffee, watching the library's download counter climb through four digits, towns he would never see pulling down files it had cost the co-op two years and every mistake in this book to earn. Out of eight years of habit his hands started drafting the status report, and he got as far as the first line before he understood there was nobody to send it to. No boss. No board. No platform taking its cut. The lever was just theirs, all the way down to the dirt it stood on, and it had worked all night, and it would work again tonight, whether or not anyone watching had permission, including them.
+
+The Foundations below are the mechanics of that lever. Learn them like the co-op learned them: with the cargo true, the trust local, and the files free.
+
+---
+
+## The Foundations
+
 At some point in the early twenty-first century, humanity fell for the greatest magic trick ever performed.
 
 The technocrats convinced us that the internet was a public square, a library, and a playground. They gave us free email, free social media, and free video hosting. And in exchange, we happily handed over our attention, our behavioral data, and our cognitive autonomy.
@@ -22,24 +64,9 @@ In this chapter, we are going to talk about **Digital Leverage**. We are going t
 ## The Great Slop-ocalypse: Why the Machine Needs You
 To understand your digital leverage, you must understand a quiet crisis currently ravaging the centralized web: **Model Collapse**.
 
-                  THE SPIRAL OF MODEL COLLAPSE
+![The Spiral of Model Collapse: AI models train on high-quality human data, flood the web with synthetic slop, then train on their own slop, degrading with every lap unless fresh human data enters the loop](/book-images/ch16-model-collapse.svg)
 
-                   
-
-    [High-Quality Human Data (Rare/Expensive)] ─── (AI Models Train on It)
-
-                       ▲                                  │
-
-```
-                       │ (Degrades without)               ▼
-                       │                      [Floods Web with AI-Slop]
-                       │                                  │
-                       │                                  ▼
-```
-
-    [System Degenerates into Mush] ◄─── (AI Trains on its Own Slop)
-
-  
+*The Spiral of Model Collapse. Every lap around the loop: less variance, more mush.*
 
 For decades, AI models were trained on the pristine, chaotic, beautiful archive of human history, books, essays, forum posts, and conversations created by real people. But as the internet became saturated with automated, AI-generated content (what we call "synthetic slop"), the machines began training on their own outputs.
 
@@ -60,23 +87,9 @@ But if you package that exact same technical manual inside an engaging, emotiona
 
 This is **Algorithmic Judo**. We use the weight and momentum of the algorithm to deliver our payload.
 
-                 THE ALGORITHMIC JUDO PIPELINE
+![The Algorithmic Judo Pipeline: a trojan-horse media package with a visible emotional wrapper and a hidden tactical payload rides the engagement algorithm to wide reach, then delivers autonomy guides, coordination tools, and off-grid manuals](/book-images/ch16-algorithmic-judo.svg)
 
-                  
-
-    [The Trojan Horse (Media)] ───► [Engagement Algorithm] ───► [Wide Reach]
-
-```
-    ┌────────────────────────┐      (Hardcoded to boost         │
-    │  - High-Emotion Story  │       human novelty/drama)       │ (Delivers)
-    │  - Art / Music / Vlog  │                                  ▼
-    ├────────────────────────┤                      [The Tactical Payload]
-    │  - Hidden Mesh Firmware│                      - Autonomy Guides
-    │  - Land Trust Templates│                      - Local Coordination
-    └────────────────────────┘                      - Off-Grid Manuals
-```
-
-  
+*Algorithmic Judo. The algorithm boosts the wrapper; the wrapper carries the payload.*
 
 To execute Algorithmic Judo successfully, your media must contain two layers:
 
@@ -106,26 +119,9 @@ IPFS is a peer-to-peer hypermedia protocol designed to make the web faster, safe
 ### 3. Sneakernets: The Physical Air-Gap
 When the centralized internet goes dark or gets restricted behind biometric paywalls, we fallback to the ultimate un-hackable network: the **Sneakernet**.
 
-                        THE SNEAKERNET CYCLE
+![The Sneakernet Cycle: an independent node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse](/book-images/ch16-sneakernet.svg)
 
-                         
-
-```
-      ┌───────────────┐                  ┌───────────────┐
-      │ Independent Node│──(Encrypts)─────►│ MicroSD / USB │
-      └───────────────┘                  └───────┬───────┘
-                                                 │ (Passed by hand /
-```
-
-                                                 ▼  local courier)
-
-```
-      ┌───────────────┐                  ┌───────────────┐
-      │ Neighbor Node │◄─(Decrypts)──────│ MicroSD / USB │
-      └───────────────┘                  └───────────────┘
-```
-
-  
+*The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet.*
 
 A sneakernet is simply the physical transport of digital data. A single, tiny microSD card can hold up to 1 terabyte of data, enough to store an entire library of survival manuals, offline medical databases, educational videos, and open-source software.
 
@@ -152,3 +148,21 @@ To begin building your digital leverage today, do not wait for the grid to go do
 They wanted to replace human culture with automated calculations. We are answering by turning our minds into transmitters, our art into shields, and our narratives into weapons.
 
 Keep your metadata clean. Protect your attention. Keep telling the human story.
+
+---
+
+## Precedent P-19: Forty-Seven Pages (Philadelphia, 1776)
+
+Thomas Paine had been in America for barely a year. He was a corset-maker's son, a failed excise officer, a man with no office, no wealth, no troops, and no name worth borrowing. What he had was access to a printing press and a register ordinary people could read aloud in a tavern.
+
+*Common Sense* ran forty-seven pages. Published in January 1776, it tore through the colonies in months, proportionally one of the most widely read things ever printed in America, and it converted a grievance about taxes into a movement for independence. The pamphlet did what no assembly of officials had managed: it changed what ordinary people believed was possible, in their own kitchens, in their own language. The empire it argued against commanded the largest navy on Earth and could not answer forty-seven pages in time.
+
+**The mechanism.** Leverage is the ratio of reach to permission. Paine required nobody's approval: no publisher's blessing beyond a single printer, no institution's endorsement, no gatekeeper's nod. When a new medium drops the cost of reach, the first people to notice acquire influence wildly out of proportion to their credentials, and the institutions that still think credentials are the bottleneck never see it coming.
+
+**The rule.** You hold distribution tools Paine could not have imagined, and so does everyone else, which is exactly why most people use them to consume instead of publish. Media autonomy means being the one printer in your community that the empire can't answer in time. Write the pamphlet. The press is already in your pocket.
+
+**The practice.**
+
+1. Write your forty-seven pages, or your four. Pick the one thing you know from direct experience that would genuinely help the person two years behind you, and write it in the register Denny used on camera: plain speech, what happened, what you'd do differently. Publish it this month. Paine's advantage was never eloquence. It was that he wrote the thing everyone was almost thinking, in words they could read aloud.
+2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and route every platform reader toward them. When the empire changes the algorithm, and it will, the people on your list are still yours.
+3. Run the tavern test on your own writing. Take your latest piece and read it out loud. Every sentence you stumble on, every word you would never say to a neighbor across a fence, rewrite in the plain register. Expertise that cannot survive being spoken is not leverage. It is decoration, and decoration does not start movements.

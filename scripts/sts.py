@@ -15,6 +15,13 @@ Commands:
     live      Probe production and compare against local routes (deploy drift)
     sitemap   Check sitemap.xml against real routes; --write regenerates it
     routes    List every route the site actually serves
+    research  Search the web (Wikipedia + DuckDuckGo) for sources/examples;
+              --save appends results to manuscript/sources/research-log.md
+    compile   Concatenate the book source (src/lib/data/book, book.json order)
+              into a single manuscript draft markdown file
+    scan      Scannability audit: pull-quote candidates, wall-of-text
+              paragraphs, heading/emphasis deserts, list opportunities,
+              per-chapter texture scores
 
 Every command accepts --json for machine-readable output.
 `audit` and `sitemap` exit non-zero when errors are found (CI-friendly).
@@ -28,11 +35,14 @@ Examples:
 """
 
 import argparse
+import html as html_mod
 import json
 import re
 import subprocess
 import sys
+import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -778,6 +788,335 @@ def cmd_status(args) -> int:
 
 # ──────────────────────────────────────────────────────────────────────
 
+# ──────────────────────────────────────────────────────────────────────
+# compile — concatenate book source into one manuscript draft
+# ──────────────────────────────────────────────────────────────────────
+
+def cmd_compile(args) -> int:
+    meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+    tag = args.tag or meta["version"]
+    header = (f"# {meta['title'].upper()}\n\n"
+              f"## {meta['subtitle']}\n\n"
+              f"**Author:** {meta['author']}\n"
+              f"**Manuscript:** {tag}\n"
+              f"**Compiled:** {date.today().isoformat()} (by sts.py compile, "
+              f"book.json section order)\n\n"
+              f"## TABLE OF CONTENTS\n\n")
+    toc = "\n".join(f"- {s['title']}" for s in meta["sections"])
+    chunks = [header + toc + "\n\n---\n"]
+    for s in meta["sections"]:
+        body = (BOOK_DIR / s["file"]).read_text(encoding="utf-8").strip()
+        chunks.append(body + "\n\n---\n")
+    text = "\n".join(chunks)
+    if args.stdout:
+        print(text)
+        return 0
+    out = (Path(args.out) if args.out
+           else ROOT / "manuscript" / f"StS-Complete-Draft-compiled-{date.today().isoformat()}.md")
+    if out.exists() and not args.force:
+        sys.exit(f"sts.py compile: {out} exists (pass --force to overwrite)")
+    out.write_text(text, encoding="utf-8")
+    words = len(re.findall(r"\b[\w'’-]+\b", text))
+    rel = out.relative_to(ROOT) if out.is_relative_to(ROOT) else out
+    print(f"compiled {len(meta['sections'])} sections -> {rel} ({words:,} words)")
+    return 0
+
+
+# ──────────────────────────────────────────────────────────────────────
+# research — web search for sources and historical examples (stdlib only)
+# ──────────────────────────────────────────────────────────────────────
+
+RESEARCH_UA = ("sts.py/" + VERSION +
+               " (survivingthesingularity.com book research; ctavolazzi@gmail.com)")
+
+
+def _http_get(url: str, timeout: int = 15) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": RESEARCH_UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def _strip_tags(fragment: str) -> str:
+    return html_mod.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
+
+
+def _wiki_search(query: str, n: int) -> list:
+    qs = urllib.parse.urlencode({
+        "action": "query", "list": "search", "srsearch": query,
+        "srlimit": n, "format": "json", "srprop": "snippet",
+    })
+    data = json.loads(_http_get("https://en.wikipedia.org/w/api.php?" + qs))
+    hits = []
+    for it in data.get("query", {}).get("search", []):
+        slug = urllib.parse.quote(it["title"].replace(" ", "_"))
+        hits.append({"source": "wiki", "title": it["title"],
+                     "url": "https://en.wikipedia.org/wiki/" + slug,
+                     "snippet": _strip_tags(it.get("snippet", ""))})
+    return hits
+
+
+def _wiki_summary(title: str) -> str:
+    slug = urllib.parse.quote(title.replace(" ", "_"))
+    try:
+        data = json.loads(_http_get(
+            "https://en.wikipedia.org/api/rest_v1/page/summary/" + slug))
+        return data.get("extract", "")
+    except Exception:
+        return ""
+
+
+BROWSER_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+              "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+
+def _mojeek_search(query: str, n: int) -> list:
+    """Mojeek serves parseable HTML without a bot challenge (DDG/Bing do not)."""
+    req = urllib.request.Request(
+        "https://www.mojeek.com/search?" + urllib.parse.urlencode({"q": query}),
+        headers={"User-Agent": BROWSER_UA})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        page = r.read().decode("utf-8", "replace")
+    link_pat = re.compile(
+        r'<h2><a class="title"[^>]+href="([^"]+)"[^>]*>(.*?)</a></h2>'
+        r'(?:<p class="s">(.*?)</p>)?', re.S)
+    hits = []
+    for m in link_pat.finditer(page):
+        hits.append({"source": "web", "title": _strip_tags(m.group(2)),
+                     "url": m.group(1),
+                     "snippet": _strip_tags(m.group(3) or "")})
+        if len(hits) >= n:
+            break
+    return hits
+
+
+def _ddg_search(query: str, n: int) -> list:
+    page = _http_get("https://html.duckduckgo.com/html/?" +
+                     urllib.parse.urlencode({"q": query}))
+    link_pat = re.compile(
+        r'<a[^>]+class="result__a"[^>]+href="([^"]+)"[^>]*>(.*?)</a>', re.S)
+    snip_pat = re.compile(r'class="result__snippet"[^>]*>(.*?)</a>', re.S)
+    snippets = [_strip_tags(s) for s in snip_pat.findall(page)]
+    hits = []
+    for i, m in enumerate(link_pat.finditer(page)):
+        href = m.group(1)
+        if "uddg=" in href:  # DDG redirect wrapper
+            href = urllib.parse.unquote(href.split("uddg=")[1].split("&")[0])
+        if href.startswith("//"):
+            href = "https:" + href
+        hits.append({"source": "web", "title": _strip_tags(m.group(2)),
+                     "url": href,
+                     "snippet": snippets[i] if i < len(snippets) else ""})
+        if len(hits) >= n:
+            break
+    return hits
+
+
+def _web_search(query: str, n: int) -> list:
+    """General web search: Mojeek first, DuckDuckGo as fallback.
+
+    Both engines captcha rapid-fire clients. Space calls ~20s apart when
+    running batches (see --sleep), and prefer --wiki-only when Wikipedia
+    can answer — the Wikipedia API is not rate-limited at this volume.
+    """
+    for engine in (_mojeek_search, _ddg_search):
+        try:
+            hits = engine(query, n)
+            if hits:
+                return hits
+        except Exception as e:
+            print(f"  {engine.__name__}: failed ({e})", file=sys.stderr)
+    return []
+
+
+def cmd_research(args) -> int:
+    query = " ".join(args.query)
+    results = []
+    if not args.web_only:
+        try:
+            results += _wiki_search(query, args.n)
+        except Exception as e:
+            print(f"  wikipedia: search failed ({e})", file=sys.stderr)
+    if not args.wiki_only:
+        if args.sleep:
+            time.sleep(args.sleep)
+        results += _web_search(query, args.n)
+    if args.summary:
+        for r in results:
+            if r["source"] == "wiki":
+                r["summary"] = _wiki_summary(r["title"])
+
+    if args.json:
+        print(json.dumps({"query": query, "results": results}, indent=2))
+    else:
+        print(f"research: {query} — {len(results)} results\n")
+        for r in results:
+            print(f"  [{r['source']}] {r['title']}")
+            print(f"        {r['url']}")
+            if r.get("snippet"):
+                print(f"        {r['snippet'][:220]}")
+            if r.get("summary"):
+                print(f"        | {r['summary'][:400]}")
+            print()
+
+    if args.save and results:
+        log = ROOT / "manuscript" / "sources" / "research-log.md"
+        log.parent.mkdir(parents=True, exist_ok=True)
+        new_file = not log.exists()
+        with log.open("a", encoding="utf-8") as f:
+            if new_file:
+                f.write("# Research log — sts.py research --save\n")
+            f.write(f"\n## {date.today().isoformat()} — {query}\n\n")
+            for r in results:
+                f.write(f"- [{r['title']}]({r['url']}) ({r['source']})")
+                if r.get("snippet"):
+                    f.write(f" — {r['snippet'][:200]}")
+                f.write("\n")
+        print(f"  saved -> {log.relative_to(ROOT)}")
+    return 0 if results else 1
+
+
+def cmd_scan(args) -> int:
+    """Scannability audit over the book source.
+
+    Finds opportunities to make the text scannable at a glance:
+      - pull-quote candidates (short, punchy, aphoristic sentences)
+      - wall-of-text paragraphs (suggest a split, a list, or bolding)
+      - heading deserts (long runs with no subhead)
+      - emphasis deserts (long runs with no bold/italic/list/quote texture)
+      - list opportunities (enumerations trapped inside prose)
+      - per-chapter texture score (formatting events per 1,000 words)
+    Report-only: never edits the manuscript.
+    """
+    book_dir = ROOT / "src" / "lib" / "data" / "book"
+    book = json.loads((book_dir / "book.json").read_text())
+    top_n = args.top
+
+    aphorism_re = re.compile(
+        r"^(The|That|This|You|It|We|Every|Nobody|History|Survival|Power|Panic|Trust)\b")
+    enum_re = re.compile(r"\b(First|Second|Third|Fourth)\b[,:]")
+
+    def sentences(text):
+        return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+
+    report = []
+    for section in book["sections"]:
+        path = book_dir / section["file"]
+        raw = path.read_text()
+        lines = raw.split("\n")
+
+        # Build paragraph blocks with line anchors, skipping fences/tables/images.
+        paras, buf, start, in_fence = [], [], None, False
+        for i, ln in enumerate(lines, 1):
+            if ln.strip().startswith("```"):
+                in_fence = not in_fence
+                continue
+            if in_fence:
+                continue
+            s = ln.strip()
+            is_prose = (s and not s.startswith(("#", "|", "!", ">", "-", "*", "1.", "2.",
+                                                "3.", "4.", "5.", "  -"))
+                        and not re.match(r"^\d+\.\s", s))
+            if is_prose:
+                if start is None:
+                    start = i
+                buf.append(s)
+            else:
+                if buf:
+                    paras.append((start, " ".join(buf)))
+                buf, start = [], None
+        if buf:
+            paras.append((start, " ".join(buf)))
+
+        words_total = len(re.findall(r"\S+", raw))
+        pulls, walls, list_ops = [], [], []
+        for ln_no, para in paras:
+            wc = len(para.split())
+            if wc > 90:
+                walls.append((ln_no, wc, para[:70]))
+            if enum_re.search(para) or para.count(";") >= 3:
+                list_ops.append((ln_no, para[:70]))
+            sents = sentences(para)
+            for pos, sent in enumerate(sents):
+                sw = len(sent.split())
+                if (4 <= sw <= 14 and aphorism_re.match(sent)
+                        and sent.endswith(".") and sent.count(",") <= 1
+                        and "](" not in sent and "*" not in sent):
+                    score = (14 - sw) + (4 if pos == len(sents) - 1 else 0) + \
+                            (2 if len(sents) >= 3 else 0)
+                    pulls.append((score, ln_no, sent))
+        pulls.sort(reverse=True)
+
+        # Texture: formatting events per 1000 words, and deserts.
+        events, desert_run, deserts, run_start = 0, 0, [], 1
+        heading_gaps, last_heading_wc, wc_seen = [], 0, 0
+        for i, ln in enumerate(lines, 1):
+            s = ln.strip()
+            w = len(s.split())
+            wc_seen += w
+            if s.startswith("#"):
+                if wc_seen - last_heading_wc > 900:
+                    heading_gaps.append((i, wc_seen - last_heading_wc))
+                last_heading_wc = wc_seen
+            if (s.startswith((">", "-", "|")) or re.match(r"^\d+\.", s)
+                    or "**" in s or re.search(r"(?<!\*)\*[^*]+\*(?!\*)", s)
+                    or s.startswith("#")):
+                events += 1
+                if desert_run > 500:
+                    deserts.append((run_start, desert_run))
+                desert_run, run_start = 0, i
+            else:
+                desert_run += w
+        if desert_run > 500:
+            deserts.append((run_start, desert_run))
+        texture = round(events / max(words_total, 1) * 1000, 1)
+
+        report.append({
+            "file": section["file"], "title": section["title"],
+            "words": words_total, "texture_per_1k": texture,
+            "pull_quote_candidates": [
+                {"line": l, "sentence": s, "score": sc} for sc, l, s in pulls[:top_n]],
+            "wall_paragraphs": [
+                {"line": l, "words": w, "starts": t} for l, w, t in walls[:top_n]],
+            "heading_deserts": [
+                {"near_line": l, "words_since_heading": w} for l, w in heading_gaps],
+            "emphasis_deserts": [
+                {"from_line": l, "plain_words": w} for l, w in deserts[:top_n]],
+            "list_opportunities": [
+                {"line": l, "starts": t} for l, t in list_ops[:top_n]],
+        })
+
+    if args.json:
+        print(json.dumps(report, indent=2))
+        return 0
+
+    print(f"sts scan — scannability audit · {len(report)} sections "
+          f"(top {top_n} findings per category per file)\n")
+    for r in sorted(report, key=lambda x: x["texture_per_1k"]):
+        flags = (len(r["pull_quote_candidates"]) + len(r["wall_paragraphs"])
+                 + len(r["heading_deserts"]) + len(r["emphasis_deserts"])
+                 + len(r["list_opportunities"]))
+        if not flags and not args.all:
+            continue
+        print(f"■ {r['file']} — {r['title']}")
+        print(f"  {r['words']:,} words · texture {r['texture_per_1k']}/1k")
+        for p in r["pull_quote_candidates"]:
+            print(f"    PULL  L{p['line']:>4}  \"{p['sentence']}\"")
+        for w in r["wall_paragraphs"]:
+            print(f"    WALL  L{w['line']:>4}  {w['words']} words: {w['starts']}…")
+        for h in r["heading_deserts"]:
+            print(f"    HEAD  L{h['near_line']:>4}  {h['words_since_heading']} words since last heading")
+        for d in r["emphasis_deserts"]:
+            print(f"    FLAT  L{d['from_line']:>4}  {d['plain_words']} words with zero texture")
+        for lo in r["list_opportunities"]:
+            print(f"    LIST  L{lo['line']:>4}  {lo['starts']}…")
+        print()
+    lowest = sorted(report, key=lambda x: x["texture_per_1k"])[:5]
+    print("Lowest-texture sections (most in need of scannability work):")
+    for r in lowest:
+        print(f"  {r['texture_per_1k']:>6}/1k  {r['file']} — {r['title']}")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -822,6 +1161,38 @@ def main():
     p.add_argument("--write", action="store_true",
                    help="regenerate static/sitemap.xml from the real route table")
     p.set_defaults(fn=cmd_sitemap)
+
+    p = sub.add_parser("compile",
+                       help="concatenate book source into one manuscript draft markdown")
+    p.add_argument("--out", help="output path (default manuscript/StS-Complete-Draft-compiled-<date>.md)")
+    p.add_argument("--tag", help="manuscript tag for the header (default book.json version)")
+    p.add_argument("--stdout", action="store_true", help="print instead of writing")
+    p.add_argument("--force", action="store_true", help="overwrite an existing output file")
+    p.set_defaults(fn=cmd_compile)
+
+    p = sub.add_parser("scan",
+                       help="scannability audit: pull quotes, walls of text, deserts, lists")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--top", type=int, default=3,
+                   help="findings per category per file (default 3)")
+    p.add_argument("--all", action="store_true",
+                   help="include sections with zero findings in the report")
+    p.set_defaults(fn=cmd_scan)
+
+    p = sub.add_parser("research",
+                       help="search the web for sources/examples (Wikipedia + DuckDuckGo)")
+    p.add_argument("query", nargs="+", help="search terms")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("-n", type=int, default=5, help="results per engine (default 5)")
+    p.add_argument("--wiki-only", action="store_true")
+    p.add_argument("--web-only", action="store_true")
+    p.add_argument("--summary", action="store_true",
+                   help="pull full intro extracts for Wikipedia hits")
+    p.add_argument("--sleep", type=int, default=0,
+                   help="seconds to wait before the web query (batch politeness; ~20s avoids captchas)")
+    p.add_argument("--save", action="store_true",
+                   help="append results to manuscript/sources/research-log.md")
+    p.set_defaults(fn=cmd_research)
 
     args = ap.parse_args()
     sys.exit(args.fn(args))

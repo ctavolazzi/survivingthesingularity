@@ -8,6 +8,47 @@
 > *"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."*
 > attributed to R. Buckminster Fuller
 
+**In this chapter:**
+
+- Two steel boxes and roughly $25,000 buy a permanent exit from the mortgage machine. The double-wide hack is how you keep them from being a coffin.
+- Structure is not a feeling. Cut the mating walls without columns and headers, and the first real snow finds out for you.
+- A bad weld looks exactly like a good one from six feet away. The vise is how steel tells the truth. Know your lane on a build that people will live inside.
+- Heat you harvest beats heat you subscribe to. The oldest unshutoffable technology in this book has a flue now.
+
+---
+
+The containers came up the hill on a tilt-bed in the last week of August, two one-trip high-cubes still wearing their ocean stickers, and the driver set them down on Marta's piers with a gentleness that seemed impossible for forty thousand pounds of steel. The piers had been poured three weeks earlier, and Elijah had checked their levels so many times with the water level that Marta finally took the tubing away from him. "They're right," she said. "You watched me make them right. Trust the transit or go check the internet's opinion." Five millimeters over forty feet, she had told him, and the boxes twist and the cut never heals. The piers were off by one.
+
+It went up on the co-op's ground lease, on the worn patch where Walt Calder had once parked a combine, and it went up as the template: every dimension logged, every cut photographed, the file destined for the library, because the deal the co-op had made with itself was that nothing got built once. But it was also, and nobody made a ceremony of saying so, Elijah's. Two years of rented rooms and borrowed corners, and now a rectangle of dirt with his name on a ninety-nine-year piece of paper.
+
+He had wanted to weld on it. That was the humiliating part, later: how badly he had wanted it, the certified-adult feeling of it, after a year and a half of watching Marta lay beads like the steel was agreeing with her. He'd practiced evenings for a month on scrap, and his practice pieces looked, he thought, honestly good. He asked for a seam on the header beam, the long C-channel spine that would carry the roof across the cut. Marta didn't say no. She said, "Bring me your coupon," and put his best practice weld in the big bench vise, and slipped a cheater pipe over the free end, and broke it with one pull.
+
+The bead snapped clean along its own centerline. Inside, the break was bright and crystalline and full of small round voids, like honeycomb cast in nickel.
+
+"See the sparkle," she said, not a question. "Cold lap. Porosity. It sat on top of the steel and never became the steel. From six feet it looks like mine. The vise is how the metal does the truth." She set the two halves on the bench where he could keep them, which he did, and has them still. "There's nothing wrong with you, college. You're two hundred hours from a structural bead, and the rain is eight weeks out. And this seam," she put her glove flat on the C-channel, "holds a roof over someone's kid. Not this year's kid. Every kid in every copy of this build that ever gets made off our files. I don't weld those seams tired, and I don't let anybody weld them proud."
+
+So Marta welded the spine of his house, and Elijah went to his lane, and here is the part he would want said plainly: his lane turned out to be real work, and he was good at it. Before the spray foam went in he laced the wall cavities with thermocouple strings, so the shell could report its own temperature gradients for the rest of its life. He wired leak sensors low in the wet-room and at both bulkheads, put current monitoring on every branch circuit of the DC bus, ran the hardline to the shed, and built the little dashboard the whole co-op now uses, the one that shows a floor plan with a nervous system. Marta gave the finished panel a long look and said, "Huh," which everyone present understood to be a medal.
+
+The day of the cut, the columns and headers already in and inspected twice, Denny ran the plasma torch, and the interior mating walls came out in glowing rectangles, and light went through the two coffins and made them one room, sixteen feet of open span where no room had been. Everyone stood in it. That's all. Nobody said anything worth recording. Sixteen feet by forty is not a large space by the old world's arithmetic, and every person standing in it had lived in bigger, and not one of them had ever owned a cubic foot they could defend, and this one was paid for.
+
+The stove went in last, on a hearth pad of leftover pavers. The Fisher had ridden north in the back of his car two years ago, eighty pounds of plate steel and one cracked firebrick, and it had sat in the corner of the shed being a monument the way it had once been a monument in a rented apartment, and monuments, Marta observed, rust. She cast him a replacement brick out of refractory cement in a form Denny's kid printed. The flue kit was double-wall pipe, bought new, the one line item nobody let him salvage, and Priya held the storm collar while he sealed the roof penetration in a wind that wanted his hat.
+
+The first cold night came in the last week of September. He laid the fire the way his grandmother's hands had taught his hands before he was tall enough to see the top of the stove, and the draw caught on the first match, and the steel began to tick as it heated, the same sound as every engine and every server he had ever loved, run in reverse. People drifted over without being organized. Reuben brought chairs the way Reuben brings paperwork, already done. Somebody hung a pair of socks over the stove on general principle.
+
+He took one photograph from inside the shell: the stove lit, the socks, the new brick glowing faintly through the door gap, the dashboard on the wall behind reporting all systems green. He sent it to his mother at 9:41 on a Sunday, and for two years he had failed to build one sentence that could carry across to her what was happening to the world, and the phone rang before the checkmark appeared.
+
+"That's the Fisher," she said. No hello, but the radio was going behind her, so it was the same kitchen, the same country station, the same distance suddenly not mattering. "Is your flue double-wall? The Hendersons had a chimney fire in '88 and your grandmother talked about it for ten years."
+
+"Double-wall, Ma. Storm collar and all. Inspector signed it Tuesday."
+
+A quiet went down the line, with the radio under it. "It looks right in there," his mother said finally, in the voice she used for things that were settled. "It looks like somewhere."
+
+Every sentence he had ever tried to build for her had been about what was coming apart. The one that finally crossed was eighty pounds of plate steel, lit. He sat down in front of his grandmother's stove, in a house with Marta's welds for a spine and his own nerves in its walls, and added the night to the notebook: first fire. Under PARCELS OUT: 1, a new line: ROOFS: 1. The arithmetic of the whole second half of this book, still small enough to count on one hand, and finally moving in the right direction.
+
+---
+
+## The Foundations
+
 Once you have the land, you don't build a massive, complex suburban house. You build a "Shouse" (Shop-House).
 
 1. **The Core:** Pour a foundation, put up a metal utility building, and park an RV inside it. This gives you a secure, weatherproof shell while you develop the site.
@@ -30,23 +71,9 @@ In the cracks, we do not rent our existence. We construct the **Autonomous Shell
 
 The Autonomous Shell is a heavily insulated, structurally reinforced, off-grid physical fortress built outside their speculative real-estate grid. It is designed to minimize your thermodynamic overhead while maximizing your physical security and digital autonomy. The entry cost? Roughly $25,000, the price of a mediocre used car. But instead of depreciating steel, you get a permanent, un-brickable exit from the corporate matrix.
 
-```text
-                 [THE DOUBLE-WIDE SHELL ARCHITECTURE]
-                 +----------------- 40 Feet -----------------+
-                 |                                           |
-  +--------------+-------------------------------------------+--------------+
-  |              |        communal workspace / servers       |              |
-  |              |                                           |              |
-  |  Container 1 |<================= [CUT] =================>|  Container 2 |
-  |   (8' x 40') |                                           |   (8' x 40') |
-  |              |       wet-room / living / kitchen         |              |
-  |              |                                           |              |
-  +--------------+-------------------------------------------+--------------+
-                 |    I-Beam Structural Reinforcement (Top)   |
-                 +-------------------------------------------+
-```
+![The Double-Wide Shell Architecture: two 8-by-40-foot containers mated along a reinforced seam, one side holding the workspace and server room, the other the wet-room, kitchen, and living quarters](/book-images/ch13-shell-architecture.svg)
 
-  
+*The Double-Wide Shell. Two one-trip containers, one surgical cut, 640 square feet of open span.*
 
 ### The Physics of the Double-Wide Shipping Container
 
@@ -66,34 +93,9 @@ Do not pour a monolithic concrete slab. It is an expensive, carbon-intensive, pe
 
 Instead, we use **Concrete Piers**. They are low-profile, highly resilient, and maintain a minimal physical and legal footprint.
 
-```text
-                       [6-POINT PIER ALIGNMENT]
-               Pier 1            Pier 2            Pier 3
-              +------+          +------+          +------+
-              | [##] |          | [##] |          | [##] |
-              +------+          +------+          +------+
-                 |                 |                 |
-```
+![6-Point Pier Alignment: plan view of six concrete piers positioned at the corner and center points of both containers' outer rails, with the seam line running between them](/book-images/ch13-pier-alignment.svg)
 
-    Container 1  |                 |                 |
-
-```text
-                 v                 v                 v
-                 ===================================== (Seam Line)
-                 ^                 ^                 ^
-```
-
-    Container 2  |                 |                 |
-
-```text
-                 |                 |                 |
-              +------+          +------+          +------+
-              | [##] |          | [##] |          | [##] |
-              +------+          +------+          +------+
-               Pier 4            Pier 5            Pier 6
-```
-
-  
+*The 6-point pier layout. Corner and center points, dug past the frost line, leveled to the millimeter.*
 
 ### The Geotechnical Calculations
 
@@ -133,24 +135,9 @@ A shipping container derives its structural strength from its corrugated steel s
 
 You must install a structural steel skeleton down the center seam to replace the removed wall.
 
-```text
-                     [CENTER C-CHANNEL REINFORCEMENT]
-                            Roof Corrugation
-                        +------------------------+
-                        |                        |
-                        |      +----------+      |
-                        +------|          |------+
-                               |  [Steel] |
-              Weld Plate ====> |  C-Chan  | <==== Weld Plate
-              (6 mm Steel)     |  Profile |      (6 mm Steel)
-                              |          |
-                              +----------+
-                                   ||
-                                   || <==== Vertical Support Column
-                                   ||       (75 mm x 75 mm HSS)
-```
+![Center C-Channel Reinforcement: section view showing the roof corrugation carried by a double C-channel header beam on 6 mm weld plates, supported by 75 by 75 mm HSS vertical columns welded to the floor rails](/book-images/ch13-c-channel.svg)
 
-  
+*The center-seam skeleton. Columns first, header second, then the cut: the roof never carries itself.*
 
 ### The Mechanical Load Calculations
 
@@ -199,28 +186,9 @@ Because k_steel is incredibly high, an uninsulated steel wall (d = 2 mm) transfe
 
 > **R-value = d / k_insulation**
 
-                      [THE THERMAL BARRIER LAYER]
+![The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel](/book-images/ch13-thermal-seal.svg)
 
-                       
-
-   Exterior        Steel        Closed-Cell Spray Foam      Interior Wall
-
-   Environment     Wall              (75 mm, R-21)          Wood Panel
-
-               ||===========||==========================||==============|
-
-               ||           ||                          ||              |
-
-   [HEAT] ===> ||           ||                          || ===> [BLOCKED]
-
-```text
-               ||           ||                          ||              |
-               ||===========||==========================||==============|
-                            ^                          ^
-                      No Condensation             Continuous Seal
-```
-
-  
+*The thermal barrier in section. Foam bonded to bare steel: vapor-sealed, condensation-proof, and the heat stays outside.*
 
 We do not use fiberglass batts. They settle over time, collect moisture, and allow air to draft through the corrugated ridges, causing rust to destroy your steel walls from the inside out.
 
@@ -239,23 +207,9 @@ When you construct the interior layout, you must design for long-term physical r
 
 We concentrate all plumbing, water filtration, and electrical distribution into a single, high-utility space: **The Universal Wet-Room**.
 
-```text
-                    [UNIVERSAL WET-ROOM LAYOUT]
-        +---------------------------- 8 Feet ----------------------------+
-        |                                                                |
-        |   +-------------------+                    +---------------+  |
-        |   |   DC Water Pump   |                     |  Linear Drain |  |
-        |   +---------+---------+                     +-------+-------+  |
-        |             |                                       ^          |
-        |             v                                       |          |
-        |      Shower Fixture                                 |          |
-        |             \\                                       /          |
-        |              \=====> [SLOPED FLOORED BASIN] =======/           |
-        |                                                                |
-        +----------------------------------------------------------------+
-```
+![Universal Wet-Room Layout: plan view with DC water pump feeding a shower fixture, the entire floor sloping as one basin toward a linear drain, and greywater exiting to the garden beds](/book-images/ch13-wet-room.svg)
 
-  
+*The Universal Wet-Room. One sloped basin, one linear drain, zero thresholds to trip over at any age.*
 
 ### The Wet-Room Construction
 
@@ -277,6 +231,24 @@ You have now constructed a completely air-tight, structurally invincible, thermo
 
 But a shell is dead without power.
 
-In the next chapter, we will bring this steel beast to life. We will layout **Chapter 6: DC-Native Solar and Recycled Storage**, where we will calculate our energy harvest, build an ultra-efficient DC microgrid, and bypass the energy-wasting trap of centralized AC power inverters.
+The full electrical build that brings this steel beast to life, calculating the energy harvest, wiring an ultra-efficient DC microgrid from recycled storage, and bypassing the energy-wasting trap of centralized AC power inverters, lives in **Chapter 17: Tools of the Trade**. Keep your wire strippers close.
 
-Get your wire strippers ready. It is time to harvest the sun.
+First, though, the next chapter steps back outside the property line. **Chapter 14: The Collapse of the Long Tail** is about what happens to the businesses around you while you build, and what a community owes the people inside them. Gradually, then suddenly: let's look at it up close.
+
+---
+
+## Precedent P-15: The House That Came by Mail (Chicago, 1908 to 1942)
+
+For thirty-four years, you could order a house from a catalog. Sears Modern Homes shipped as precut, numbered lumber with nails, paint, fixtures, and an instruction book, delivered to the nearest rail depot. A family with a poured foundation and a few capable friends could assemble a real, permanent, respectable home with no builder's monopoly anywhere in the transaction. Sears sold tens of thousands of them in hundreds of designs, from tiny cottages to genuinely grand houses.
+
+The industry said what industries always say: that housing was too complex, too consequential, too dangerous to hand to amateurs. The houses themselves voted otherwise. Thousands of Sears homes are still standing and still lived in more than a century later, frequently outperforming the contractor-built housing of the same era, because precut parts and clear instructions turn out to encode expertise better than a busy tradesman's afternoon does.
+
+**The mechanism.** Kit-plus-instructions is how a capability escapes its priesthood. The knowledge gets embedded in the parts and the manual instead of the guild, and the "unqualified" customer turns out to have been qualified all along, just unlicensed.
+
+**The rule.** The shouse is the Sears kit home of this transition: metal building systems, solar kits, prefab panels, open plans, a build you can substantially execute and fully understand. Whenever the incumbents insist something requires their permission and their price, go look for the version that ships as a kit. It existed in 1908. It exists now.
+
+**The practice.**
+
+1. Break one priesthood this year. Pick a single capability you currently rent from professionals, solar, basic plumbing, a shed, a greenhouse, fencing, and do the kit version of it, permitted where permits apply, documented as you go. The point is not the money saved. The point is the category change in your head: from someone who orders outcomes to someone who assembles them. That change transfers to everything.
+2. Practice the manual question. The next time you are told "you need a professional for that," ask the 1908 question: what specifically does the professional know, and where is it written down? Sometimes the answer is real (structural welds; see Marta and the vise: know your lane). Often the answer is a manual, a code book, and confidence. Learn to tell the two apart before you pay the difference.
+3. Leave a kit behind you. Whatever you build, photograph the steps, list the parts and prices, and write the one page you wish you'd had at the start. Give it to the next person. Sears embedded the expertise in the instructions and the parts; you can embed yours in a folder. A capability that dies with your project wasn't liberated. It was borrowed.

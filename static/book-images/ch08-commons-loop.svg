@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 680" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="678" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE AUTONOMOUS COMMONS LOOP</text>
+  <line x1="40" y1="66" x2="440" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- solar bus -->
+  <rect x="270" y="92" width="320" height="70" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="430" y="122" font-size="15" font-weight="600" fill="#f59e0b" text-anchor="middle">SOLAR DC MICROGRID</text>
+  <text x="430" y="146" font-size="12" fill="#94a3b8" text-anchor="middle">the shared energy bus</text>
+
+  <!-- split arrows -->
+  <path d="M 350 162 Q 230 190 215 232" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="222" y="196" font-size="11" fill="#94a3b8" text-anchor="end">surplus DC power</text>
+  <path d="M 510 162 Q 630 190 645 232" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="640" y="196" font-size="11" fill="#94a3b8">pumped clean water</text>
+
+  <!-- left branch: GPU server -->
+  <rect x="90" y="238" width="250" height="80" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="215" y="270" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">LOCAL GPU SERVER</text>
+  <text x="215" y="294" font-size="11" fill="#94a3b8" text-anchor="middle">air-gapped LLMs + database</text>
+
+  <line x1="215" y1="318" x2="215" y2="362" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+
+  <rect x="90" y="368" width="250" height="80" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="215" y="400" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">COGNITIVE OUTPUT</text>
+  <text x="215" y="424" font-size="11" fill="#94a3b8" text-anchor="middle">survival files + blueprints</text>
+
+  <!-- right branch: farmbot -->
+  <rect x="520" y="238" width="250" height="80" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="645" y="270" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">FARMBOT + BIOREACTOR</text>
+  <text x="645" y="294" font-size="11" fill="#94a3b8" text-anchor="middle">automated beds, living soil</text>
+
+  <line x1="645" y1="318" x2="645" y2="362" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+
+  <rect x="520" y="368" width="250" height="80" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="645" y="400" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">CALORIC YIELD</text>
+  <text x="645" y="424" font-size="11" fill="#94a3b8" text-anchor="middle">nutrient-dense food, year round</text>
+
+  <!-- converge to trust mesh -->
+  <path d="M 215 448 Q 240 510 344 532" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+  <path d="M 645 448 Q 620 510 516 532" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
+
+  <rect x="270" y="500" width="320" height="76" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="430" y="532" font-size="15" font-weight="600" fill="#f59e0b" text-anchor="middle">AUTONOMOUS NODES</text>
+  <text x="430" y="556" font-size="12" fill="#94a3b8" text-anchor="middle">the human trust mesh</text>
+
+  <!-- loop back -->
+  <path d="M 270 538 L 60 538 L 60 127 L 262 127" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aa)"/>
+  <text x="46 " y="330" font-size="12" fill="#f59e0b" text-anchor="middle" transform="rotate(-90 46 330)">fed, informed people maintain the grid</text>
+
+  <text x="430" y="628" font-size="13" fill="#f1f5f9" text-anchor="middle">energy becomes intelligence and calories; both flow back into the mesh that keeps the panels clean</text>
+</svg>

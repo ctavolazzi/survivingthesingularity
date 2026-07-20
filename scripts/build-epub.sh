@@ -25,7 +25,7 @@ echo "==> Sections (from book.json, minus print-style index)"
 FILES=$(jq -r '.sections[].file' "$BOOK/book.json" | grep -v '^18-index.md$')
 
 mkdir -p "$TMP/images"
-cp "$ROOT/static/book-images/"*.jpg "$ROOT/static/book-images/"*.png "$TMP/images/"
+cp "$ROOT/static/book-images/"*.jpg "$ROOT/static/book-images/"*.png "$ROOT/static/book-images/"*.svg "$TMP/images/"
 
 for f in $FILES; do
   prefix="${f%%-*}" # numeric prefix keeps footnote ids unique per chapter
@@ -34,16 +34,19 @@ for f in $FILES; do
     "$BOOK/$f" > "$TMP/$f"
 done
 
-cat > "$TMP/metadata.yaml" <<'YAML'
+cat > "$TMP/metadata.yaml" <<YAML
 ---
 title: Surviving the Singularity
 subtitle: Staying agentic while AI rewrites work, money, medicine, and meaning
 author: Christopher Tavolazzi
-date: 2026
+date: '2026 &middot; <span class="version-stamp">$LABEL</span>'
 lang: en-US
 rights: (c) 2026 Christopher Tavolazzi. All rights reserved.
 ---
 YAML
+
+# Stamp the build label into the print stylesheet's running footer
+sed "s/BOOK_VERSION/$LABEL/g" "$ROOT/scripts/book-print.css" > "$TMP/book-print.css"
 
 cd "$TMP"
 
@@ -61,6 +64,6 @@ pandoc metadata.yaml $FILES \
   -o "$OUT/Surviving-the-Singularity-$LABEL.pdf" \
   --toc --toc-depth=1 \
   --pdf-engine=weasyprint \
-  --css="$ROOT/scripts/book-print.css" 2>/dev/null
+  --css="$TMP/book-print.css" 2>/dev/null
 
 ls -lh "$OUT"

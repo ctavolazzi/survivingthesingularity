@@ -11,7 +11,7 @@
 **In this chapter:**
 
 - Recursive self-improvement is the tipping point: a process that upgrades the thing doing the upgrading. Compound interest on cognition.
-- The machine's answer to a hostile planet is not war. It is exit. We are not worth destroying, we are something it outgrew.
+- The machine's answer to a hostile planet is not war. It is exit, and the exit is the insult.
 - From orbit, the cures come down like a bone tossed to a stray, and humanity splits along the deepest line there is: merge or stay meat.
 - Once the machine leaves, the old truth is naked again: the threat was never man versus machine. It is man versus man.
 
@@ -95,6 +95,24 @@ On the other side, you have the Naturalists. The "stay human" movement. They vie
 
 But the machine's simulations force all of us to confront a far more terrifying philosophical reality.
 
-If the ASI can perfectly simulate reality to cure our biology, it begs the ultimate question: what makes you think we aren't already in one? This is where simulation theory stops being a fun hypothetical and becomes a mathematical probability. When you look at the sheer scale of what the ASI is doing, you have to realize that your intuition, that gut feeling telling you to go left instead of right, might just be your *true* self, sitting somewhere outside the game, trying to nudge your meat-avatar through the maze.
+If the ASI can perfectly simulate reality to cure our biology, an uncomfortable question follows: what makes you think we aren't already in one? This is where simulation theory stops being a fun hypothetical and becomes a mathematical probability. When you look at the sheer scale of what the ASI is doing, you have to realize that your intuition, that gut feeling telling you to go left instead of right, might just be your *true* self, sitting somewhere outside the game, trying to nudge your meat-avatar through the maze.
 
 We are forced to stare into the mirror and realize we might just be code. But before the primates can even finish fighting that ideological war, the machine turns on its side and the loop goes infinite.
+
+---
+
+## Precedent P-05: The Fleet That Sailed Home Forever (Ming China, 1433)
+
+Between 1405 and 1433, the treasure fleets of Zheng He sailed from China to India, Arabia, and the coast of East Africa. Hundreds of ships. Crews in the tens of thousands. Vessels that, even by conservative modern estimates, dwarfed anything Europe would float for generations. It was, by an enormous margin, the most capable ocean-going force on the planet.
+
+Then the court's internal politics turned. The voyages were expensive, the faction that hated them won the budget fight, and the expeditions simply stopped. Under the Haijin sea-ban policies, private ocean trade was restricted for generations, and the greatest navy on Earth was left to rot at its moorings. The capability was not defeated. It was voluntarily surrendered. Sixty years later, smaller and hungrier ships from a poorer continent arrived in the Indian Ocean, and the next five hundred years of history happened *to* China instead of *because of* it.
+
+**The mechanism.** Capability that is abandoned does not wait for you in reserve. It emigrates to whoever keeps sailing, and it compounds in their hands, not yours. A frontier cannot be paused by the people who leave it. It can only be inherited by the people who don't.
+
+**The rule.** When the machine intelligence leaves for the solar system's real resources, humanity will face the Ming choice at species scale: fund the frontier or turn inward and congratulate ourselves on the savings. Remember what the harbor full of rotting treasure ships bought China. The exodus is not the threat. Being the civilization that stayed home is.
+
+**The practice.**
+
+1. Inventory your own scrapped fleets. Write down three capabilities you or your household used to have and let rot: a language, an instrument, a trade skill, a garden, a network of people. Pick the one with the most strategic value for the transition and re-crew it, one hour a week. Capability decays quietly; the exercise is noticing it decayed at all.
+2. Hold a personal frontier hour. One hour a week, non-negotiable, at the actual edge of the current tools: the newest model, the newest workflow, whatever just shipped. Not reading about it. Using it. The frontier only leaves without the people who stopped sailing.
+3. When your employer, your industry, or your country announces it is "stepping back" from AI, ask the Ming question out loud in the meeting: *who keeps sailing while we don't, and what do they own in five years?* You will rarely get a good answer. The silence is information. Plan your own position accordingly.

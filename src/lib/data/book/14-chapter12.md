@@ -8,6 +8,49 @@
 > *"Land is the only thing in the world that amounts to anything … 'tis the only thing in this world that lasts."*
 > Margaret Mitchell, *Gone with the Wind* (1936)
 
+**In this chapter:**
+
+- Land is the one input the machine cannot manufacture more of. Whatever else you secure, secure the dirt.
+- The outfit circling your county runs a pipeline: estates, widows, cash offers, fourteen-day closes. Its entire strategy is speed and loneliness.
+- A community land trust is enclosure run in reverse. One deed at a time, ground comes off the speculative market forever.
+- The data tells you when to move. The deal closes on who fixed the tractor in 2011.
+
+---
+
+The first letter was addressed to OWNER/OCCUPANT, and Irene Calder read it on her porch and threw it away, which is also what she did with the second one. The third letter came with a young man attached.
+
+Everything the co-op had built stood on Calder ground. The shed had been Walt Calder's equipment barn; Priya's beds ran where his hay had run; the lease was month to month and had been since Walt died, because Irene liked Marta and had never once raised the rent, and nobody had wanted to disturb an arrangement that worked by being talked about over pie. The young man on the porch offered twenty-two percent over anything the county said forty acres was worth, all cash, a fourteen-day close, and a flyer with a sunset on it. Irene told him no. Irene's son Dale, in Phoenix, said, "Mom."
+
+Elijah did what Elijah does when he is frightened: he pulled data. The county recorder's index was public, ancient, and slow, so he was polite to it, scraping at night, and then he did two neighboring counties for context. The pattern assembled itself the way patterns do, all at once, on the third evening. Eleven different LLC names, one registered agent, a mail-forwarding address in Sacramento. Fifty-some parcels in three years, always the same shape: an estate or a widow, a cash offer, a fast close. Then the parcel goes quiet inside a shell company for a year or two and reappears stitched into a block big enough to matter, leased to whoever needs flat land, water rights, and no neighbors with opinions.
+
+That Sunday, on the regular call, he asked his mother what the outfit was called, the one that bought the Hollis place back home. She had to go find the church newsletter to check. Same agent. Eight hundred miles apart, the same signature. He sat with the phone against his ear while she talked about the pump, and looked out at the shed, and understood that the thing which had eaten the Hollis dairy was standing two fences away.
+
+He built a map. He built, God help him, a dashboard, and it was beautiful, and he presented it at Friday dinner with a laser pointer, and this time he heard himself doing it and grinned mid-sentence, and the room grinned back, because everyone at that table had been present for the greenhouse controllers. But the dashboard did its one load-bearing job: the outfit's median time from first letter to recorded deed was nine weeks, and Irene had gotten her first letter five weeks ago. The data could not close the deal. The data said: move now.
+
+"It's not a data problem," Reuben said, already dealing folders around the table like cards. "It's a people problem wearing a paperwork costume. Fortunately," and here he almost smiled, "I have been waiting my entire adult life for this exact fight."
+
+What he dealt out was a community land trust: a legal person that cannot die, cannot divorce, cannot have a bad year at the casino, and cannot sell for profit, ever, because its charter forbids it. The trust buys the forty acres at honest appraisal. Irene keeps a life estate on the house and her oaks, and gets paid every month she lives. The co-op signs a ninety-nine-year ground lease with the trust, which converts the handshake nobody had wanted to examine into something that survives everybody at the table. The down payment was the channel's first real surplus and the greenhouse-controller money, which meant, as Denny pointed out, that the machine that took his warehouse job was now buying land it could never take back.
+
+Dale attended the kitchen-table meeting by speakerphone, from Phoenix, and he was not wrong by his own lights. "Their number is higher, Mom. That's just math."
+
+"There's a machine that's been running since the fifteen hundreds," Reuben said to the phone where it lay on the oilcloth, next to the coffee and the folders. "It turns commons into fences. Every century it gets a new name. Enclosure. Consolidation. Urban renewal. This week it's an LLC in Sacramento with a mail drop and a flyer with a sunset on it. It only runs in one direction, Dale, and it has never once run toward your mother's porch. What's on this table is that machine in reverse. She gets paid for life. She keeps the house and the oaks. And the land comes off the market forever. Not mostly forever. Forever, in the county's own handwriting. Nobody can flip it. Including us. That's not the fine print. That's the machine."
+
+There was a long quiet on the line, the box fan working, Walt's cap on its peg by the door. Irene had listened to all of it with both hands around her cup, and what she finally asked was not about the resale formula.
+
+"Marta. Walt's tractor, back when. What did you charge him?"
+
+"Sixty," Marta said. "It was the fuel line, not the pump. Dealer wanted nine hundred."
+
+"And it still runs," Irene said, to the phone, to Dale, to the table generally, in the tone of a woman entering evidence. Then she asked where she signed.
+
+Reuben walked the deed into the county himself, because some things you do not mail, and Doreen at the recorder's window, who had known him long enough to skip both pleasantries and suspicion, stamped it at 11:04 on a Tuesday morning. The letters from Sacramento kept coming for a month, addressed to an owner who no longer existed in any form their pipeline could reach, and the co-op read them aloud at dinner, and they were the first junk mail anyone had ever looked forward to.
+
+The dashboard had been right about everything, the timeline, the ceiling, the pattern, and none of it closed the deal. What closed the deal was a fuel line fixed honest in 2011 and a clerk who trusted the man across the counter. Elijah wrote the number in the notebook anyway, under MADRONE ≠ DRONE and Sal's rule, where the important arithmetic lived. A new line, a new unit of measure: PARCELS OUT: 1.
+
+---
+
+## The Foundations
+
 If you have capital, do not put it into a house, status symbols, or a business that depends on the city's health. **Buy land.**
 
 Buy as much raw land as you can afford to hold. The goal is to set aside enough money to pay the property taxes for the next ten years. If the land is bought and paid for, and the taxes are covered, that dirt belongs to you. Whatever happens to the city or the institutions, you have a place to build your own reality.
@@ -42,61 +85,28 @@ The modern suburban home is a passive, energy-sucking consumption unit. It has n
 
 In the Autonomy Horizon, our primary physical unit is the **Shouse (Shop-House)**.
 
-```text
-                      [THE SHOUSE THERMODYNAMIC ENGINE]
-         +-------------------------------------------------------------+
-         |                         THE SHOP (50%)                      |
-         |  - Welder & CNC Plasma      - Compost Heat Exchange Loop    |
-         |  - Tool Library             - DC Microgrid Fuse Block       |
-         |  - Local Server Crucible    - Rainwater Filtration Rack     |
-         +------------------------------+------------------------------+
-                                        | (Shared Thermal/Power Bus)
-                                        v
-         +-------------------------------------------------------------+
-         |                        THE HOUSE (50%)                      |
-         |  - Highly Insulated Living   - Universal Design Wet-Room    |
-         |  - Energy-Efficient Kitchen  - Warm, Human Sanctuary        |
-         +-------------------------------------------------------------+
-```
+![The Shouse Thermodynamic Engine: the shop half holds the welder, CNC plasma, tool library, server Crucible, DC fuse block, and rainwater rack; a shared thermal and power bus feeds the insulated house half below](/book-images/ch12-shouse-engine.svg)
 
-  
+*The Shouse. Half factory, half home, one envelope: the shop's waste heat is the house's furnace.*
 
 A Shouse is 50% industrial workshop and 50% highly insulated, compact living quarters. It is an active thermodynamic engine.
 
   - **The Shop is the Shield:** The shop space houses your DC-native solar distribution panels, your batteries, your rainwater filtration rack, your local server Crucible, and your fabrication tools (welders, plasma cutters, 3D printers). It is where the physical work of autonomy happens.
   - **The House is the Sanctuary:** The living space is small, tight, and hyper-insulated (utilizing the spray-foam methods detailed in Chapter 5). Because it shares a structural envelope with the shop, waste heat from your server racks or shop equipment can be actively ducted into the living space during winter, keeping your thermal overhead near zero.
 
-When you live in a Shouse, you are not a consumer waiting for a delivery truck. You are a productive node in a decentralized industrial network. You have the physical capability to repair, fabricate, and automate.
+When you live in a Shouse, you are not a consumer waiting for a delivery truck. You are a productive node in a hyper-local industrial network. You have the physical capability to repair, fabricate, and automate.
 
 ### Section 2: The Semi-Autonomous CSA Topology
 
-A single Shouse is a powerful asset. But when you link five, ten, or fifty Shouses together via our offline LoRa mesh network (Chapter 10), you create a **Semi-Autonomous CSA**.
+A single Shouse is a powerful asset. But when you link five, ten, or fifty Shouses together via our offline LoRa mesh network (Chapters 14 and 17), you create a **Semi-Autonomous CSA**.
 
 This is not your standard, paper-based community garden. This is a high-tech, automated calorie and labor-distribution engine designed to bypass the commercial food grid entirely.
 
-```text
-                     [THE SEMI-AUTOMATON CSA NETWORK]
-              +----------------- [SHOUSE NODE A] -----------------+
-              |  - Local AI Server (Crucible)                     |
-              |  - High-Yield Micro-Greenhouse (Mycodo Automated) |
-              +-------------------------+-------------------------+
-                                        | (Mesh Task Exchange)
-                                        v
-              +----------------- [SHOUSE NODE B] -----------------+
-              |  - Tool Library (CNC, Tractor, Heavy Welder)       |
-              |  - High-Capacity Recycled DC Battery Bank         |
-              +-------------------------+-------------------------+
-                                        | (Mesh Task Exchange)
-                                        v
-              +----------------- [VULNERABLE NODE] ---------------+
-              |  - Elder Neighbor / Fixed-Income Home             |
-              |  - Receives Automated Calorie & Labor Deliveries   |
-              +---------------------------------------------------+
-```
+![The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhouse, Shouse Node B with its tool library and battery bank, exchanging tasks over LoRa mesh, and a vulnerable node receiving automated calorie and labor deliveries](/book-images/ch12-csa-network.svg)
 
-  
+*The Semi-Autonomous CSA. Automated nodes run at roughly 300% of their own need; the surplus carries whoever cannot produce.*
 
-In our semi-autonomous CSA, food production is automated using localized agricultural robots (like FarmBots and Mycodo-controlled greenhouses, as detailed in Chapter 8).
+In our semi-autonomous CSA, food production is automated using localized agricultural robots (like FarmBots and Mycodo-controlled greenhouses, as detailed in Chapter 9).
 
 Let’s look at the mathematical balancing of this system. We calculate the net energy and food capacity of our local network (E-net) using a simple balance:
 
@@ -117,16 +127,16 @@ How does this work in practice? Let’s walk through how our elder neighbor gets
 
 ### 1. The Mesh Request
 
-Our elder neighbor does not have a smartphone connected to a commercial cellular network. She has a simple, low-power LoRa mesh terminal mounted on her kitchen counter (Chapter 10).
+Our elder neighbor does not have a smartphone connected to a commercial cellular network. She has a simple, low-power LoRa mesh terminal mounted on her kitchen counter (Chapter 17).
 
   - She presses a pre-configured button on her terminal: [NEED HELP: FIRE CANOPY CLEARING].
   - The raw packet is broadcast over the offline mesh. It contains her unique node ID (Echo-4) and the prioritized task type.
 
 ### 2. The Crucible Coordination
 
-At the nearest Shouse Node, the local, air-gapped server (The Crucible, running the offline LLM stacks detailed in Chapter 7) receives the mesh packet.
+At the nearest Shouse Node, the local, air-gapped server (The Crucible, running the offline LLM stacks detailed in Chapter 11) receives the mesh packet.
 
-  - The local AI does not upload this data to a corporate cloud. It parses the request locally, cross-references it with the shared **Autonomous Directory** (Chapter 9), and checks the current resource schedule of the local Shouse network.
+  - The local AI does not upload this data to a corporate cloud. It parses the request locally, cross-references it with the shared **Autonomous Directory**, the network's running ledger of who has which tools, skills, and surpluses, and checks the current resource schedule of the local Shouse network.
   - The AI calculates the optimal tool and labor deployment using a basic cost-minimization algorithm:
 
 > **minimize (total human metabolic effort + total tool transit distance)**
@@ -224,3 +234,21 @@ The tools are on your table. The copper is stripped. The soil is waiting.
 It is up to **YOU** to make it so.
 
 Go forth and build.
+
+---
+
+## Precedent P-14: One Hundred Sixty Acres (United States, 1862)
+
+The Homestead Act was signed in May 1862, and the timing is the entire lesson: the country was one year into the Civil War. While every headline and every conversation was consumed by the emergency, the federal government quietly opened millions of acres, offering one hundred sixty acres to anyone, including women and immigrants who had filed for citizenship, who would live on the land and improve it for five years.
+
+The people who filed claims during the chaos held title when the chaos ended. It was one of the largest transfers of position in the country's history, and it happened not after the crisis resolved but in the middle of it, executed by people who could hold two thoughts at once: the world is on fire, and the filing office is open.
+
+**The mechanism.** Transitions reprice land and position before they reprice anything else, and the repricing window opens during the confusion, not after it. Once the emergency passes, the deeds are already filed, and everyone who waited for clarity discovers that clarity is the name of the moment when the good positions are gone.
+
+**The rule.** You are living inside the equivalent window right now: rural land within EV range of the metros has not yet been repriced for the world this book describes. The land strategy chapter you just read is your filing paperwork. The emergency on the front page is not a reason to wait. It is the reason the office is uncrowded.
+
+**The practice.**
+
+1. Open the filing office this month. Spend one evening running this chapter's land search for real: three counties, actual listings, actual prices per acre, actual water and zoning notes in a spreadsheet. Not to buy this month. To convert "someday, land" from a mood into a document with numbers in it, because moods don't file claims and documents do.
+2. Put a date on the claim. The homesteaders had a five-year proving period with a clock on it; give yourself one. Write down the specific date by which you will have made a position decision: buy, lease, join a co-op's ground, or commit to improving where you are. An open-ended intention is how the window closes with you still deciding.
+3. Watch for the modern Homestead Acts and read them before the crowd does. Rural development grants, ag exemptions, county land banks, relocation incentives, conservation leases. These programs exist right now, uncrowded for the same reason the 1862 office was: everyone is watching the front page. Set a quarterly hour to check what your target counties are offering. The people who file during the confusion hold title after it.

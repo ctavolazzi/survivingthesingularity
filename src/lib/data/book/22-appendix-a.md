@@ -31,51 +31,19 @@ You can print this document, modify the brackets, and present it to your local t
 **NOW, THEREFORE, BE IT ORDAINED BY THE CITY COUNCIL OF THE CITY OF [MUNICIPALITY NAME]:**
 
 #### SECTION 1. TITLE AND DECLARATION OF POLICY
-This Ordinance shall be known and may be cited as the **"Community Commons Act."** It is hereby declared to be the policy of the City of [Municipality Name] that local resource self-reliance, physical autonomy, and decentralized technological coordination are critical public goods. Any municipal code, zoning regulation, or local statute in conflict with the provisions of this Act is hereby suspended.
+This Ordinance shall be known and may be cited as the **"Community Commons Act."** It is hereby declared to be the policy of the City of [Municipality Name] that local resource self-reliance, physical autonomy, and hyper-local technological coordination are critical public goods. Any municipal code, zoning regulation, or local statute in conflict with the provisions of this Act is hereby suspended.
 
 #### SECTION 2. CREATION OF THE MUNICIPAL RESOURCE SECURITY FUND (MRSF)
 There is hereby established a dedicated, non-lapsing public trust fund to be known as the **Municipal Resource Security Fund (MRSF)**. The MRSF shall be administered directly by a community-elected Resource Commons Board and shall be used exclusively to fund:
 
-1.  The purchase and permanent legal shielding of local agricultural land via Community Land Trusts (as detailed in Chapter 3).
-2.  The deployment, maintenance, and distribution of open-source, DC-native energy harvesting microgrids (as detailed in Chapter 5).
+1.  The purchase and permanent legal shielding of local agricultural land via Community Land Trusts (as detailed in Chapters 12 and 15).
+2.  The deployment, maintenance, and distribution of open-source, DC-native energy harvesting microgrids (as detailed in Chapter 17).
 3.  The hardware, tools, and infrastructure necessary to support the Municipal Mesh Network (as detailed in Section 4 of this Act).
 
 #### SECTION 3. THE ZERO-WASTE REDIRECTION PROTOCOL
-              THE SURPLUS REDIRECTION MATRIX
+![The Surplus Redirection Matrix: commercial surplus food is sorted by edibility, with edible food redirected to municipal kitchens and CLT food banks for utility credits, non-edible organics routed to the soil food web bioreactor, and attempted landfill dumping met with a progressive civil penalty funding the MRSF](/book-images/appa-redirection-matrix.svg)
 
-               
-
-    [Commercial Retailers / Wholesalers]
-
-```
-                     │
-                     ├─► Is Food Edible?
-                     │       │
-                     │       ├─► [YES] ──► [Redirection Protocol]
-                     │       │                 │
-                     │       │                 ▼
-                     │       │             [Municipal Kitchens / CLT Banks]
-                     │       │                 (Receives Utility Credits)
-                     │       │
-                     │       └─► [NO] ───► [Soil Food Web Compost]
-                     │                         (Chapter 3 Bio-Reactor)
-```
-
-                     ▼
-
-       (Attempted Landfill Dump)
-
-```
-                     │
-```
-
-                     ▼
-
-         [PROGRESSIVE CIVIL PENALTY]
-
-         (Revenues Route Directly to MRSF)
-
-  
+*The Surplus Redirection Matrix. Every path out of a loading dock leads somewhere useful, including the penalty.*
 
 **(a) Zero-Waste Mandate:** No commercial food establishment, grocery retailer, or wholesale food distributor operating within the city limits shall dispose of edible surplus food in landfills or waste-containment systems.
 

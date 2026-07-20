@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#ef4444"/>
+    </marker>
+    <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="518" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE SPLIT-LOOP THERMAL EXCHANGE</text>
+  <line x1="40" y1="66" x2="460" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- divider -->
+  <line x1="500" y1="90" x2="500" y2="470" stroke="#1e293b" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="250" y="112" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">INSIDE SHELL (insulated)</text>
+  <text x="680" y="112" font-size="13" font-weight="600" fill="#3b82f6" text-anchor="middle">OUTSIDE SHELL (free air)</text>
+
+  <!-- water blocks -->
+  <rect x="70" y="150" width="150" height="70" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="2"/>
+  <text x="145" y="180" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">GPU BLOCK</text>
+  <text x="145" y="202" font-size="11" fill="#94a3b8" text-anchor="middle">heat at the silicon</text>
+
+  <rect x="260" y="150" width="150" height="70" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="2"/>
+  <text x="335" y="180" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">CPU BLOCK</text>
+  <text x="335" y="202" font-size="11" fill="#94a3b8" text-anchor="middle">600-1000 W total</text>
+
+  <!-- pump -->
+  <rect x="150" y="300" width="230" height="70" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <text x="265" y="330" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">12V BRUSHLESS PUMP</text>
+  <text x="265" y="352" font-size="11" fill="#94a3b8" text-anchor="middle">PWM speed control</text>
+
+  <!-- radiator outside -->
+  <rect x="560" y="220" width="230" height="120" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="675" y="256" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">EXTERNAL RADIATOR</text>
+  <text x="675" y="278" font-size="11" fill="#94a3b8" text-anchor="middle">salvaged Honda Civic core</text>
+  <g stroke="#3b82f6" stroke-width="1.2" opacity="0.6">
+    <line x1="580" y1="296" x2="770" y2="296"/>
+    <line x1="580" y1="308" x2="770" y2="308"/>
+    <line x1="580" y1="320" x2="770" y2="320"/>
+  </g>
+  <text x="675" y="334" font-size="10" fill="#3b82f6" text-anchor="middle">+ 12V high-static fans</text>
+
+  <!-- flow: blocks -> pump (hot) -->
+  <line x1="145" y1="220" x2="200" y2="298" stroke="#ef4444" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="335" y1="220" x2="300" y2="298" stroke="#ef4444" stroke-width="2.5" marker-end="url(#ah)"/>
+  <!-- pump -> radiator (hot out) -->
+  <path d="M 380 320 L 470 320 L 470 260 L 552 260" fill="none" stroke="#ef4444" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="470" y="248" font-size="11" fill="#ef4444" text-anchor="middle">hot coolant out</text>
+  <!-- radiator -> blocks (cool return) -->
+  <path d="M 560 300 L 470 300 L 470 400 L 90 400 L 90 224" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ac)"/>
+  <text x="300" y="418" font-size="11" fill="#3b82f6" text-anchor="middle">cool coolant returns to the chips</text>
+
+  <text x="430" y="470" font-size="13" fill="#f1f5f9" text-anchor="middle">pull the heat straight off the silicon and dump it outside: no AC fighting your own server</text>
+  <text x="430" y="496" font-size="12" fill="#64748b" text-anchor="middle">Q̇ = ṁ · Cₚ · ΔT · in winter, duct that waste heat into the living space instead</text>
+</svg>

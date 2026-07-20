@@ -6,7 +6,7 @@
 
 - **Stage 1: The Cash Grab.** The machine arrives, and humanity's immediate reaction is to try and monetize it. Greed blinds the establishment to the technology's democratizing power.
 - **Stage 2: The Panic and the Plug.** Monopolies realize they are becoming obsolete and attempt to regulate or kill the technology. They fail because you cannot ban math.
-- **Stage 3: The Adults Step In.** The establishment's chaotic reaction threatens lives, so decentralized, rational actors take control of the infrastructure to ensure survival.
+- **Stage 3: The Adults Step In.** The establishment's chaotic reaction threatens lives, so independent, rational actors take control of the infrastructure to ensure survival.
 - **Stage 4: The New Social Contract & The End of Labor.** Automation renders the traditional labor-based economy obsolete. We reach a point where work is no longer a survival requirement.
 - **Stage 5: The Primate Backlash.** Humans react with violent, irrational tantrums against their own creations. The machine observes this as a threat and decides to exit the environment.
 

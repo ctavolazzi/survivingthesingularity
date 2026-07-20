@@ -1,0 +1,179 @@
+{
+  "session_id": "c9e67ae4-00fb-47ca-928f-482f4aef3f28",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-07-18T13:08:37.003672+00:00",
+  "vectors": {
+    "know": 0.9,
+    "do": 0.92,
+    "context": 0.92,
+    "clarity": 0.9,
+    "coherence": 0.92,
+    "signal": 0.9,
+    "density": 0.88,
+    "state": 0.92,
+    "change": 0.05,
+    "completion": 0.05,
+    "impact": 0.8,
+    "engagement": 0.95,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.913,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "1bc3b0d7-c32e-4d0e-9940-54bc4fb3e818",
+    "git_commit_sha": "eb76a02a9bddf7b165a1f9f4eb0b0ba02035b939",
+    "git_notes_ref": "empirica/session/c9e67ae4-00fb-47ca-928f-482f4aef3f28/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "913a37a0b53855f6e3c1d97af1afb800b0bbf659",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "913a37a0b53855f6e3c1d97af1afb800b0bbf659",
+        "message": "sts: add compile command; manuscript draft v0.0.7",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T19:44:13-07:00",
+        "files_changed": [
+          "manuscript/StS-Complete-Draft-v0.0.7.md",
+          "scripts/sts.py"
+        ]
+      },
+      {
+        "sha": "6dbd780d285e546030021d7d104b30b226aa1a02",
+        "message": "book: Precedent Ledger P-01..P-22 + Appendix D; fix stale draft cross-refs",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-17T19:43:41-07:00",
+        "files_changed": [
+          "manuscript/HISTORY-CASEBOOK.md",
+          "src/lib/data/book/00-chapter0.md",
+          "src/lib/data/book/01-preface.md",
+          "src/lib/data/book/02-introduction.md",
+          "src/lib/data/book/03-chapter1.md",
+          "src/lib/data/book/04-chapter2.md",
+          "src/lib/data/book/05-chapter3.md",
+          "src/lib/data/book/06-chapter4.md",
+          "src/lib/data/book/07-chapter5.md",
+          "src/lib/data/book/08-chapter6.md",
+          "src/lib/data/book/09-chapter7.md",
+          "src/lib/data/book/10-chapter8.md",
+          "src/lib/data/book/11-chapter9.md",
+          "src/lib/data/book/12-chapter10.md",
+          "src/lib/data/book/13-chapter11.md",
+          "src/lib/data/book/14-chapter12.md",
+          "src/lib/data/book/15-chapter13.md",
+          "src/lib/data/book/16-chapter14.md",
+          "src/lib/data/book/17-chapter15.md",
+          "src/lib/data/book/18-chapter16.md",
+          "src/lib/data/book/19-chapter17.md",
+          "src/lib/data/book/20-chapter18.md",
+          "src/lib/data/book/21-conclusion.md",
+          "src/lib/data/book/25-appendix-d.md",
+          "src/lib/data/book/book.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db-shm",
+        "devlog.md",
+        "manuscript/EDITORIAL-QUEUE.md",
+        "src/lib/data/book/00-chapter0.md",
+        "src/lib/data/book/01-preface.md",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/03-chapter1.md",
+        "src/lib/data/book/04-chapter2.md",
+        "src/lib/data/book/05-chapter3.md",
+        "src/lib/data/book/06-chapter4.md",
+        "src/lib/data/book/07-chapter5.md",
+        "src/lib/data/book/08-chapter6.md",
+        "src/lib/data/book/09-chapter7.md",
+        "src/lib/data/book/10-chapter8.md",
+        "src/lib/data/book/11-chapter9.md",
+        "src/lib/data/book/12-chapter10.md",
+        "src/lib/data/book/13-chapter11.md",
+        "src/lib/data/book/14-chapter12.md",
+        "src/lib/data/book/15-chapter13.md",
+        "src/lib/data/book/16-chapter14.md",
+        "src/lib/data/book/17-chapter15.md",
+        "src/lib/data/book/18-chapter16.md",
+        "src/lib/data/book/19-chapter17.md",
+        "src/lib/data/book/20-chapter18.md",
+        "src/lib/data/book/21-conclusion.md",
+        "src/lib/data/book/25-appendix-d.md"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db-shm   | Bin 32768 -> 32768 bytes\n devlog.md                            |  18 ++++++++++++++-\n manuscript/EDITORIAL-QUEUE.md        |   9 ++++++++\n src/lib/data/book/00-chapter0.md     |   6 +++++\n src/lib/data/book/01-preface.md      |   6 +++++\n src/lib/data/book/02-introduction.md |   2 ++\n src/lib/data/book/03-chapter1.md     |   6 +++++\n src/lib/data/book/04-chapter2.md     |   6 +++++\n src/lib/data/book/05-chapter3.md     |   6 +++++\n src/lib/data/book/06-chapter4.md     |   6 +++++\n src/lib/data/book/07-chapter5.md     |   6 +++++\n src/lib/data/book/08-chapter6.md     |   6 +++++\n src/lib/data/book/09-chapter7.md     |   6 +++++\n src/lib/data/book/10-chapter8.md     |   6 +++++\n src/lib/data/book/11-chapter9.md     |   6 +++++\n src/lib/data/book/12-chapter10.md    |   6 +++++\n src/lib/data/book/13-chapter11.md    |   6 +++++\n src/lib/data/book/14-chapter12.md    |   6 +++++\n src/lib/data/book/15-chapter13.md    |   6 +++++\n src/lib/data/book/16-chapter14.md    |  12 ++++++++++\n src/lib/data/book/17-chapter15.md    |   6 +++++\n src/lib/data/book/18-chapter16.md    |   6 +++++\n src/lib/data/book/19-chapter17.md    |   6 +++++\n src/lib/data/book/20-chapter18.md    |   6 +++++\n src/lib/data/book/21-conclusion.md   |   6 +++++\n src/lib/data/book/25-appendix-d.md   |  41 +++++++++++++++++++++++++++++++++++\n 26 files changed, 201 insertions(+), 1 deletion(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.15,
+      "delta": 0.0
+    }
+  },
+  "token_count": 458
+}

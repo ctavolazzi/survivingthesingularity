@@ -7,6 +7,40 @@
 
 > *"If your theory is found to be against the Second Law of Thermodynamics I can give you no hope; there is nothing for it but to collapse in deepest humiliation."*
 > Arthur Eddington, *The Nature of the Physical World* (1928)
+
+**In this chapter:**
+
+- Every intelligence (silicon, biological, or divine) pays its bills in the same currency: watts.
+- You are a 100-watt machine with expensive fuel requirements and no purchasing department. Know your budget.
+- The machine's only hard ceiling is heat and power. Yours too. Whoever owns energy owns the transition.
+- The counterattack starts small and already has a name: the cyberdeck. The kids are building it.
+
+---
+
+The envelope was thin, which fooled him.
+
+Elijah's power bills had always been the boring kind of mail: forty-something dollars, autopay, straight into the recycling. This one he opened over the kitchen sink out of pure Monday inertia, and then he stood there long enough for the tap he'd been about to run to matter, because the number at the bottom said $211.46.
+
+His first instinct was that he'd been hacked. His second, arriving with the slow heat of a blush, was the truth: the meter hadn't lied, *he'd* simply never been the kind of animal it was built to catch before. One month. One month of fine-tuning runs on the tower, of LADDER.xlsx crunching overnight, of two GPUs breathing like sled dogs under his desk while he chased the far end of the curve. A hundred and seventy dollars of difference between a man who *thinks about* machine intelligence and a man who *runs* it, printed on paper and mailed to his door by the utility company like a grade.
+
+He sat down at the kitchen table with the bill and the notebook, and for once he didn't need to build the insight. It walked in and pulled up a chair.
+
+The night the tower had cooked itself into a shutdown, the night he'd proven the curve was real, he'd written down that the machine's only wall was heat. He had understood it then the way you understand a headline. Now, holding the invoice, he understood it the way you understand a hangover. Intelligence wasn't magic. Intelligence was *energy, arranged*. Every token the machine produced was a little cone of waste heat over a server rack somewhere; every clever thing it said had a wattage. And every clever thing *he* said did too: roughly a hundred watts, day and night, the output of one warm incandescent bulb, fueled by groceries. He wrote the two numbers side by side. The datacenter measured in gigawatts, him measured in sandwiches. The whole coming war, right there in one line of notebook arithmetic.
+
+That week he became insufferable in a brand-new way. He bought a plug-in power meter (a little gray box, fourteen dollars, the single highest-leverage instrument purchase of his life) and went through the apartment like an auditor with a grudge. The television, off, sipping eleven watts around the clock for the privilege of turning on two seconds faster. The cable box, twenty-two watts, doing *nothing*, a tenant who paid no rent. The microwave clock. The laser printer he used four times a year. He filled two notebook pages with the ledger of it, and the ledger told him something the Foundations chapters of this book will spend many pages proving: he had been leaking energy (money, agency, *survival margin*) in a fine mist, everywhere, always, invisibly, to machines that did not love him.
+
+Then he did the other math, the one that mattered. The tower drew 600 watts flat-out to run a model that could think alongside him. His phone drew five to make him dumber. Somewhere between those two numbers, he realized, there was a machine worth owning: something small, something *his*, something that ran on watts he could count on his fingers and served nobody's meter but his own. He didn't have the name for it yet. The kids, as we're about to see, already did.
+
+On Sunday he drove out to the storage unit where his grandmother's things had been sitting since the estate sale nobody could face finishing, and he came back with the woodstove. It was a squat black Fisher, older than he was, eighty pounds of plate steel with a crack in one firebrick, and he had no fireplace and no flue and no permission from his landlord, so it sat in the corner of the living room as a monument, which was the point. His grandmother had heated a whole farmhouse with it, cooked on it, dried socks over it, kept lambs alive behind it in bad Februaries, all on wood she'd bucked herself from her own downed oaks. Total utility bill: a chainsaw's gas and her own hundred watts. He put his hand flat on the cold steel the way she used to put his hand on the madrones, and he did the arithmetic one more time, the full circuit of it. The datacenter bought its watts with billions. The realtors bought theirs with a subscription. His grandmother had *harvested* hers, off her own dirt, with her own body, and nobody, not a utility, not a platform, not a machine God, had ever once been in a position to shut her off.
+
+That was the whole chapter, standing in the corner of a rented apartment. That was the strategy. Not going backward to the woodstove; he wasn't romantic about kerosene light or hauling water, and neither was she. Going *forward* to her position: owner of the watts, harvester of the loop, unshutoffable. The rest of this book is the modern version of that stove.
+
+He unplugged the cable box on his way to bed. It was, he'd say later, only half joking, the first act of the rest of his life: the first watt he ever took back.
+
+---
+
+## The Foundations
+
 Let's talk about energy.
 
 And no, I don't mean the spiritual, "I'm really vibing with your aura" kind of energy. If you try to align your chakras to stay warm during a nuclear winter, you are going to freeze to death with very well-aligned, highly aesthetic ice crystals in your lungs.
@@ -36,21 +70,13 @@ As temperature approaches absolute zero, the entropy of a system approaches a co
 ## The Meat Engine vs. The Silicon Machine
 Here is the hard, cold truth that the tech-utopians won't tell you: as a biological entity, you are a deeply inefficient thermodynamic engine.
 
-      TYPICAL THERMODYNAMIC EFFICIENCIES
-
-```
-┌──────────────────────────┬────────────────────────┐
-│ System                   │ Efficiency (%)         │
-├──────────────────────────┼────────────────────────┤
-│ Human Muscle (Mechanical)│ ~18% - 25%             │
-│ Diesel Engine            │ ~35% - 40%             │
-│ Steam Turbine            │ ~40% - 45%             │
-│ Combined Cycle Gas       │ ~60%                   │
-│ Electric Motor           │ ~90% - 95%             │
-└──────────────────────────┴────────────────────────┘
-```
-
-  
+| System | Typical Efficiency |
+| :-- | :-: |
+| Human Muscle (Mechanical) | ~18% to 25% |
+| Diesel Engine | ~35% to 40% |
+| Steam Turbine | ~40% to 45% |
+| Combined Cycle Gas | ~60% |
+| Electric Motor | ~90% to 95% |
 
 You burn roughly 2,000 to 2,500 kilocalories a day just to keep your heart pumping, your lungs moving, and your brain generating existential dread. That is equivalent to about 100 watts of continuous power, roughly the same energy required to run an old incandescent lightbulb.
 
@@ -87,46 +113,9 @@ The algorithms that run the modern world are ravenous for human engagement, uniq
 
 By creating independent media cells, writing open-source survival code, or streaming decentralized educational content, you can trade high-value digital human output back into the system to secure physical resources (tools, medical supplies, seed stocks). You are essentially using a tiny amount of local, renewable energy to extract massive value from the centralized machine.
 
-      THE CLOSED-LOOP SURVIVAL CYCLE
+![The Closed-Loop Survival Cycle: sun and soil feed community calories, which fund creative autonomy, which buys physical hardware, which expands the community's capture of sun and soil](/book-images/ch05-closed-loop-cycle.svg)
 
-       
-
-```
-         ┌────────────────────────┐
-         │     SUN & SOIL         │
-         └──────────┬─────────────┘
-                    │ (Regenerative Agriculture)
-```
-
-                    ▼
-
-```
-         ┌────────────────────────┐
-         │    COMMUNITY CALORIES  │
-         └──────────┬─────────────┘
-                    │ (Human Labor & Cognition)
-```
-
-                    ▼
-
-```
-   ┌───────────────────────────────────┐
-   │         CREATIVE AUTONOMY         │
-   │ (Content, Mesh Code, Innovations) │
-   └────────────────┬──────────────────┘
-                    │ (Digital Arbitrage)
-```
-
-                    ▼
-
-```
-         ┌────────────────────────┐
-         │    PHYSICAL HARDWARE   │
-         │   (Solar Panels, Tools)│
-         └────────────────────────┘
-```
-
-  
+*The Closed-Loop Survival Cycle. Energy captured from the sun and soil stays inside the community, and every pass through the loop widens the intake.*
 
 ## The Cyberdeck: Your First Machine in the Cracks
 
@@ -188,3 +177,21 @@ Before you can build a mesh network or pool land with your neighbors, you must r
 Survival in the Singularity is not about waiting for a political savior or hoping the machines suddenly develop a warm, fuzzy conscience. It is about understanding the hard physics of your existence, securing your local energy loops, and building a collective, thermodynamic sanctuary in the cracks.
 
 Adjust your battery chargers. Protect your soil. It’s time to stop leaking energy to a machine that doesn’t love you.
+
+---
+
+## Precedent P-07: The Horse's Last Ledger (1783 to 1960)
+
+James Watt had a marketing problem. He needed to sell steam engines to men who owned horses, so he invented a unit of account that priced the animal in its own currency: *horsepower*. From the moment that word existed, every horse in the world was walking around with a number on its back, whether its owner knew it or not.
+
+For a century the horse looked untouchable. The horse population of the United States kept climbing right through the railroad age, peaking above twenty-five million in the 1910s, with an entire economy of hay fields, stables, farriers, harness makers, and teamsters built on its metabolism. Then internal combustion crossed the cost line, joules per dollar, and in a single working lifetime the population collapsed to a few million animals kept mostly for pleasure. The horse never became less noble, less strong, or less willing. It was out-priced per watt, and sentiment appeared in exactly zero rows of the ledger.
+
+**The mechanism.** The horse's owners debated tradition, beauty, and loyalty. The machine's buyers computed operating cost per unit of work. Only one of those conversations was real. Thermodynamic arithmetic does not negotiate, and it does not send a warning before it closes the account.
+
+**The rule.** You are a twenty-watt thinking engine inside a hundred-watt body, in a market that has just started selling intelligence by the kilowatt-hour. Audit your own energy ledger, what you consume, what you produce, and who captures the difference, before someone else runs the numbers on you. The horse found out its price after the fact. You still get to set some of the terms.
+
+**The practice.**
+
+1. Actually run the energy audit from this chapter's Step One. Not mentally. On paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who captures the spread. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all. That is the entire advantage on offer here.
+2. Price your work the way the machine's buyer will: output per dollar, not hours per day. Identify the parts of your job where you are competing on joules against silicon, and the parts where you are not (trust, presence, hands, judgment on the ground, relationships). Shift your effort and your reputation toward the second list this quarter. The first list is the wide stocking frame's territory.
+3. Move one meaningful expense from rented energy to owned energy this year: a solar panel and battery, a woodstove, a bicycle that replaces short car trips, insulation. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.

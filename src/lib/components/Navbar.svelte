@@ -340,6 +340,9 @@
 
   /* ── BRAND ── */
   .nav-brand {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.88rem;
     font-weight: 700;
@@ -347,7 +350,7 @@
     letter-spacing: 0.08em;
     text-decoration: none;
     white-space: nowrap;
-    padding-right: 4px;
+    padding: 0 6px 0 2px;
     transition: opacity 0.15s ease;
   }
   .nav-brand:hover { opacity: 0.8; }
@@ -410,14 +413,17 @@
   }
   .nav-cta:hover .nav-cta-icon { transform: translate(1px, -1px); }
 
-  /* ── HAMBURGER - sized to balance STS on the opposite end ── */
+  /* ── HAMBURGER - sized to balance STS on the opposite end.
+     Visual disc stays compact; the ::after pseudo-element extends the
+     touch target to a 44px square (Apple HIG minimum) without changing
+     the pill's visual rhythm. ── */
   .hamburger {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
     border: none;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.07);
@@ -427,6 +433,12 @@
     margin-left: 2px;
     -webkit-tap-highlight-color: transparent;
     transition: background 0.15s ease, color 0.15s ease;
+  }
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
   }
   .hamburger:hover { background: rgba(255, 255, 255, 0.12); color: #f1f5f9; }
   .hamburger:active { transform: scale(0.9); }
@@ -479,6 +491,8 @@
     flex-shrink: 0;
   }
   .drawer-head-brand {
+    display: inline-flex; align-items: center;
+    min-height: 44px; padding: 0 8px; margin-left: -8px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.9rem; font-weight: 700;
     color: #f59e0b; letter-spacing: 0.08em;
@@ -486,9 +500,9 @@
   }
   .drawer-close {
     display: inline-flex; align-items: center; justify-content: center;
-    width: 34px; height: 34px;
+    width: 44px; height: 44px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 8px;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.03);
     color: #94a3b8; cursor: pointer;
     transition: border-color 0.15s, color 0.15s, background 0.15s;

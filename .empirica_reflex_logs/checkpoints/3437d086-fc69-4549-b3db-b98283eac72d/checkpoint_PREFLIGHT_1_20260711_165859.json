@@ -1,0 +1,44 @@
+{
+  "session_id": "3437d086-fc69-4549-b3db-b98283eac72d",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-07-11T16:58:56.187240+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.9,
+    "context": 0.85,
+    "clarity": 0.85,
+    "coherence": 0.85,
+    "signal": 0.9,
+    "density": 0.8,
+    "state": 0.8,
+    "change": 0.1,
+    "completion": 0.05,
+    "impact": 0.8,
+    "engagement": 0.9,
+    "uncertainty": 0.25
+  },
+  "overall_confidence": 0.867,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "02dcdb5c-5897-41b5-8d92-d0e1aaab7f05",
+    "git_commit_sha": "46db871b95fcd4b510c8e6d60e030e76f4b89b54",
+    "git_notes_ref": "empirica/session/3437d086-fc69-4549-b3db-b98283eac72d/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7db8b11fec6c2eeed2a3b5f0425891f83906d7f7",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db | Bin 1077248 -> 1241088 bytes\n 1 file changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 98
+}

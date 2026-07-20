@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">CENTRALIZED VS. DECENTRALIZED MESH COMMS</text>
+  <line x1="40" y1="66" x2="530" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <line x1="430" y1="90" x2="430" y2="510" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- LEFT: centralized -->
+  <text x="230" y="110" font-size="14" font-weight="600" fill="#64748b" text-anchor="middle">CENTRALIZED</text>
+  <text x="230" y="130" font-size="12" fill="#64748b" text-anchor="middle">(fragile)</text>
+
+  <!-- tower -->
+  <path d="M 214 236 L 230 172 L 246 236 Z" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="219" y1="216" x2="241" y2="216" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="223" y1="198" x2="237" y2="198" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="230" cy="166" r="5" fill="#94a3b8"/>
+  <path d="M 214 158 a 22 22 0 0 1 32 0" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 206 150 a 34 34 0 0 1 48 0" fill="none" stroke="#94a3b8" stroke-width="1.5" opacity="0.6"/>
+  <text x="230" y="260" font-size="12" fill="#94a3b8" text-anchor="middle">TOWER</text>
+
+  <!-- X break mark -->
+  <g stroke="#f59e0b" stroke-width="4">
+    <line x1="216" y1="192" x2="244" y2="220"/>
+    <line x1="244" y1="192" x2="216" y2="220"/>
+  </g>
+
+  <!-- spokes to users -->
+  <line x1="230" y1="268" x2="120" y2="360" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="230" y1="268" x2="230" y2="360" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="230" y1="268" x2="340" y2="360" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <g font-size="13" fill="#94a3b8" text-anchor="middle">
+    <text x="120" y="386">[you]</text>
+    <text x="230" y="386">[you]</text>
+    <text x="340" y="386">[you]</text>
+  </g>
+  <text x="230" y="440" font-size="13" fill="#f59e0b" text-anchor="middle">one break = total blackout</text>
+  <text x="230" y="464" font-size="12" fill="#64748b" text-anchor="middle">permission-based coordination</text>
+
+  <!-- RIGHT: mesh -->
+  <text x="640" y="110" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">DECENTRALIZED MESH</text>
+  <text x="640" y="130" font-size="12" fill="#f59e0b" text-anchor="middle">(resilient)</text>
+
+  <!-- mesh edges -->
+  <g stroke="#3b82f6" stroke-width="1.8" opacity="0.8">
+    <line x1="530" y1="200" x2="640" y2="180"/>
+    <line x1="640" y1="180" x2="750" y2="200"/>
+    <line x1="530" y1="200" x2="560" y2="290"/>
+    <line x1="640" y1="180" x2="560" y2="290"/>
+    <line x1="640" y1="180" x2="720" y2="290"/>
+    <line x1="750" y1="200" x2="720" y2="290"/>
+    <line x1="560" y1="290" x2="720" y2="290"/>
+    <line x1="560" y1="290" x2="600" y2="374"/>
+    <line x1="720" y1="290" x2="680" y2="374"/>
+    <line x1="600" y1="374" x2="680" y2="374"/>
+    <line x1="530" y1="200" x2="600" y2="374" opacity="0.45"/>
+    <line x1="750" y1="200" x2="680" y2="374" opacity="0.45"/>
+  </g>
+  <!-- one dead node, routed around -->
+  <g stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 4">
+    <line x1="640" y1="180" x2="640" y2="278"/>
+  </g>
+  <!-- nodes -->
+  <g fill="#0f172a" stroke="#f59e0b" stroke-width="2.5">
+    <circle cx="530" cy="200" r="14"/>
+    <circle cx="640" cy="180" r="14"/>
+    <circle cx="750" cy="200" r="14"/>
+    <circle cx="560" cy="290" r="14"/>
+    <circle cx="720" cy="290" r="14"/>
+    <circle cx="600" cy="374" r="14"/>
+    <circle cx="680" cy="374" r="14"/>
+  </g>
+  <!-- dead node -->
+  <circle cx="640" cy="292" r="14" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <g stroke="#475569" stroke-width="2">
+    <line x1="633" y1="285" x2="647" y2="299"/>
+    <line x1="647" y1="285" x2="633" y2="299"/>
+  </g>
+
+  <text x="640" y="440" font-size="13" fill="#3b82f6" text-anchor="middle">every node is a router</text>
+  <text x="640" y="464" font-size="12" fill="#94a3b8" text-anchor="middle">self-healing: kill one node, the signal hops around it</text>
+
+  <text x="430" y="528" font-size="12" fill="#64748b" text-anchor="middle">LoRa radios + salvaged Wi-Fi hardware · no tower, no telecom, no kill-switch</text>
+</svg>

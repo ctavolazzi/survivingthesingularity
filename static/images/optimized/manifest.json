@@ -1023,6 +1023,78 @@
       }
     }
   },
+  "static/book-images/part3-divider.png": {
+    "original": {
+      "width": 1920,
+      "height": 640,
+      "path": "static/book-images/part3-divider.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/part3_divider_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/part3_divider_400.png",
+        "webp": "static/images/optimized/part3_divider_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/part3_divider_800.png",
+        "webp": "static/images/optimized/part3_divider_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/part3_divider_1200.png",
+        "webp": "static/images/optimized/part3_divider_1200.webp"
+      }
+    }
+  },
+  "static/book-images/part2-divider.png": {
+    "original": {
+      "width": 1920,
+      "height": 640,
+      "path": "static/book-images/part2-divider.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/part2_divider_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/part2_divider_400.png",
+        "webp": "static/images/optimized/part2_divider_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/part2_divider_800.png",
+        "webp": "static/images/optimized/part2_divider_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/part2_divider_1200.png",
+        "webp": "static/images/optimized/part2_divider_1200.webp"
+      }
+    }
+  },
+  "static/book-images/part1-divider.png": {
+    "original": {
+      "width": 1920,
+      "height": 640,
+      "path": "static/book-images/part1-divider.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/part1_divider_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/part1_divider_400.png",
+        "webp": "static/images/optimized/part1_divider_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/part1_divider_800.png",
+        "webp": "static/images/optimized/part1_divider_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/part1_divider_1200.png",
+        "webp": "static/images/optimized/part1_divider_1200.webp"
+      }
+    }
+  },
   "static/book-images/ch06-edmond-de-belamy.png": {
     "original": {
       "width": 1280,

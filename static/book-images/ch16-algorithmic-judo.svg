@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE ALGORITHMIC JUDO PIPELINE</text>
+  <line x1="40" y1="66" x2="440" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- trojan horse: two-layer box -->
+  <rect x="50" y="140" width="240" height="200" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="170" y="126" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">THE TROJAN HORSE</text>
+  <!-- wrapper layer -->
+  <rect x="66" y="156" width="208" height="80" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="170" y="180" font-size="12" font-weight="600" fill="#f1f5f9" text-anchor="middle">WRAPPER (visible)</text>
+  <text x="170" y="200" font-size="11" fill="#94a3b8" text-anchor="middle">high-emotion story</text>
+  <text x="170" y="218" font-size="11" fill="#94a3b8" text-anchor="middle">art · music · vlog</text>
+  <!-- payload layer -->
+  <rect x="66" y="244" width="208" height="80" rx="6" fill="#020617" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="170" y="268" font-size="12" font-weight="600" fill="#f59e0b" text-anchor="middle">PAYLOAD (hidden)</text>
+  <text x="170" y="288" font-size="11" fill="#94a3b8" text-anchor="middle">mesh firmware</text>
+  <text x="170" y="306" font-size="11" fill="#94a3b8" text-anchor="middle">land trust templates</text>
+
+  <!-- arrow 1 -->
+  <line x1="290" y1="240" x2="360" y2="240" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ab)"/>
+
+  <!-- engagement algorithm -->
+  <rect x="366" y="180" width="200" height="120" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="466" y="222" font-size="14" font-weight="600" fill="#3b82f6" text-anchor="middle">ENGAGEMENT</text>
+  <text x="466" y="244" font-size="14" font-weight="600" fill="#3b82f6" text-anchor="middle">ALGORITHM</text>
+  <text x="466" y="272" font-size="11" fill="#94a3b8" text-anchor="middle">hardcoded to boost</text>
+  <text x="466" y="288" font-size="11" fill="#94a3b8" text-anchor="middle">human novelty + drama</text>
+
+  <!-- arrow 2 -->
+  <line x1="566" y1="240" x2="636" y2="240" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ab)"/>
+  <text x="601" y="226" font-size="11" fill="#94a3b8" text-anchor="middle">boosted</text>
+
+  <!-- wide reach -->
+  <rect x="642" y="192" width="168" height="96" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="726" y="232" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">WIDE REACH</text>
+  <text x="726" y="256" font-size="11" fill="#94a3b8" text-anchor="middle">millions of feeds</text>
+
+  <!-- delivery arrow down -->
+  <path d="M 726 288 Q 726 380 560 402" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
+  <text x="746" y="352" font-size="11" fill="#f59e0b">delivers</text>
+
+  <!-- tactical payload delivered -->
+  <rect x="220" y="376" width="330" height="120" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="385" y="408" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">THE TACTICAL PAYLOAD, UNPACKED</text>
+  <text x="385" y="434" font-size="12" fill="#f1f5f9" text-anchor="middle">autonomy guides · local coordination</text>
+  <text x="385" y="456" font-size="12" fill="#f1f5f9" text-anchor="middle">off-grid manuals · working code</text>
+  <text x="385" y="480" font-size="11" fill="#94a3b8" text-anchor="middle">their bandwidth, your liberation</text>
+
+  <text x="430" y="532" font-size="12" fill="#64748b" text-anchor="middle">use the machine's own weight to throw it: it cannot resist a human story</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 600" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#64748b"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="598" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">INFORMATION DISPENSING ARCHITECTURES</text>
+  <line x1="40" y1="66" x2="470" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <line x1="430" y1="90" x2="430" y2="560" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- LEFT: real-time reactive -->
+  <text x="230" y="106" font-size="14" font-weight="600" fill="#64748b" text-anchor="middle">REAL-TIME REACTIVE</text>
+  <text x="230" y="126" font-size="12" fill="#64748b" text-anchor="middle">(fragile)</text>
+
+  <rect x="70" y="146" width="320" height="66" rx="10" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <text x="230" y="174" font-size="15" font-weight="600" fill="#94a3b8" text-anchor="middle">CENTRALIZED</text>
+  <text x="230" y="196" font-size="15" font-weight="600" fill="#94a3b8" text-anchor="middle">ALGORITHMIC STREAM</text>
+
+  <!-- three jittery interrupt arrows -->
+  <line x1="180" y1="212" x2="196" y2="288" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="230" y1="212" x2="230" y2="288" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="280" y1="212" x2="264" y2="288" stroke="#64748b" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="230" y="256" font-size="12" fill="#64748b" text-anchor="middle">constant interruptions</text>
+
+  <rect x="110" y="296" width="240" height="58" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="230" y="331" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">YOUR BRAIN (OS)</text>
+
+  <text x="90" y="404" font-size="14" fill="#94a3b8">- outrage-loops</text>
+  <text x="90" y="434" font-size="14" fill="#94a3b8">- high anxiety</text>
+  <text x="90" y="464" font-size="14" fill="#94a3b8">- depleted working memory</text>
+  <text x="90" y="494" font-size="14" fill="#94a3b8">- zero surplus for strategy</text>
+
+  <!-- RIGHT: analog batch -->
+  <text x="630" y="106" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">ANALOG BATCH-PROCESSING</text>
+  <text x="630" y="126" font-size="12" fill="#f59e0b" text-anchor="middle">(independent)</text>
+
+  <rect x="470" y="146" width="320" height="66" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="630" y="174" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">FILTERED</text>
+  <text x="630" y="196" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">LOCAL SOURCES</text>
+
+  <!-- one clean scheduled arrow -->
+  <line x1="630" y1="212" x2="630" y2="288" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+  <text x="646" y="256" font-size="12" fill="#f59e0b">scheduled batches</text>
+
+  <rect x="510" y="296" width="240" height="58" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="630" y="331" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">YOUR BRAIN (OS)</text>
+
+  <text x="490" y="404" font-size="14" fill="#f1f5f9">- strategic action</text>
+  <text x="490" y="434" font-size="14" fill="#f1f5f9">- high executive function</text>
+  <text x="490" y="464" font-size="14" fill="#f1f5f9">- creative, focused agency</text>
+  <text x="490" y="494" font-size="14" fill="#f1f5f9">- surplus energy for building</text>
+
+  <text x="230" y="548" font-size="13" fill="#64748b" text-anchor="middle">their architecture</text>
+  <text x="630" y="548" font-size="13" fill="#f59e0b" text-anchor="middle">your architecture</text>
+</svg>

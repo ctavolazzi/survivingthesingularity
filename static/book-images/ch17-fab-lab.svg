@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="558" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE DECENTRALIZED FAB LAB</text>
+  <line x1="40" y1="66" x2="380" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- input -->
+  <rect x="50" y="220" width="190" height="120" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="145" y="258" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">RECYCLED RAW</text>
+  <text x="145" y="280" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">MATERIALS</text>
+  <text x="145" y="308" font-size="11" fill="#94a3b8" text-anchor="middle">scrap steel · PETG · salvage</text>
+
+  <line x1="240" y1="280" x2="292" y2="280" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ab)"/>
+
+  <!-- machine cores -->
+  <rect x="298" y="110" width="290" height="340" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="443" y="144" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">OPEN-SOURCE MACHINE CORES</text>
+
+  <rect x="318" y="164" width="250" height="76" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <text x="443" y="196" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">3D PRINTER</text>
+  <text x="443" y="218" font-size="11" fill="#94a3b8" text-anchor="middle">RepRap · prints its own parts</text>
+
+  <rect x="318" y="252" width="250" height="76" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <text x="443" y="284" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">CNC PLASMA / ROUTER</text>
+  <text x="443" y="306" font-size="11" fill="#94a3b8" text-anchor="middle">low-power, DC-bus friendly</text>
+
+  <rect x="318" y="340" width="250" height="76" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <text x="443" y="372" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">OPEN-SOURCE TRACTOR</text>
+  <text x="443" y="394" font-size="11" fill="#94a3b8" text-anchor="middle">BCS-type · GVCS pattern</text>
+
+  <!-- outputs -->
+  <line x1="568" y1="202" x2="620" y2="202" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+  <rect x="626" y="172" width="190" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="721" y="198" font-size="12" font-weight="600" fill="#f1f5f9" text-anchor="middle">SEALS · GEARS · VALVES</text>
+  <text x="721" y="218" font-size="11" fill="#94a3b8" text-anchor="middle">the parts that always break</text>
+
+  <line x1="568" y1="290" x2="620" y2="290" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+  <rect x="626" y="260" width="190" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="721" y="286" font-size="12" font-weight="600" fill="#f1f5f9" text-anchor="middle">STRUCTURAL STEEL</text>
+  <text x="721" y="306" font-size="11" fill="#94a3b8" text-anchor="middle">mounts, brackets, frames</text>
+
+  <line x1="568" y1="378" x2="620" y2="378" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
+  <rect x="626" y="348" width="190" height="60" rx="8" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="721" y="374" font-size="12" font-weight="600" fill="#f1f5f9" text-anchor="middle">TILLAGE · HAULING</text>
+  <text x="721" y="394" font-size="11" fill="#94a3b8" text-anchor="middle">field power, PTO energy</text>
+
+  <text x="430" y="496" font-size="13" fill="#f1f5f9" text-anchor="middle">no order forms, no distributors: broken means fabricate, not wait</text>
+  <text x="430" y="522" font-size="12" fill="#64748b" text-anchor="middle">pattern library: Global Village Construction Set, fifty machines for a small civilization</text>
+</svg>

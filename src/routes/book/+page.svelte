@@ -55,9 +55,12 @@
     <div class="inner-narrow">
       <p class="eyebrow">Surviving the Singularity</p>
       <p class="preface-text">
-        A practical field guide for staying agentic as AI rewrites work, money, medicine, and
-        meaning. Written in public, updated as it's finished. What follows is the complete
-        current draft: every chapter, in order, free to read for as long as you have this page.
+        The machine that can do most jobs is already here. Things are changing, and you can do
+        this: point the same tools at your own food, power, and shelter, build hyper-local
+        instead of waiting on a system that is coming apart, and come out the other side with
+        your agency intact. Written in public, updated as it's finished. What follows is the
+        complete current draft: every chapter, in order, free to read for as long as you have
+        this page.
       </p>
       <p class="preface-meta">Draft v{book.version} &middot; {sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words total</p>
       <div class="pdf-actions">

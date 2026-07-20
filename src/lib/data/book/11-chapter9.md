@@ -62,6 +62,10 @@ The solution is not to try and stop the corporate state or appeal to the empathy
 - **Survival by Decree:** These neighborhood factories must provide for the basic survival needs of the citizens, food, shelter, and healthcare, as an absolute, automated human right. The decree in question is not a government mandate you wait for; it is the founding charter your community writes for its own infrastructure, the co-op bylaw that says the greenhouse feeds members first, the land trust covenant that says nobody gets evicted into the market. You enact it locally, then defend it legally (Chapter 12 shows how).
 - **Johnny Autoseed:** Every vision needs a working prototype, and this book's name for the prototype is Johnny Autoseed: a food-security project in the Johnny Appleseed tradition, planting automated growing capacity instead of orchards. By utilizing existing, non-proprietary technologies (like FarmBot) for hyper-localized food production and neighborhood-level manufacturing (such as processing algae-based bioplastics), it uses the current monetary system as a temporary, enforced tool to construct a resilient, self-sufficient, and deglobalized reality.
 
+![Two supply lines compared side by side: a long fragile global chain of raw material, overseas factory, ocean freight and last-mile truck, versus a short hyper-local loop of local material, neighborhood factory, and you](/book-images/ch09-hyperlocal-vs-global.svg)
+
+*Not decentralization for its own sake. A shorter line: one you can hold in your head, that depends on your own hands instead of the broken backs of strangers far away.*
+
 ## The Ultimatum: Why We Must Act Today
 
 We are at a critical junction in human history. The window of opportunity to determine the terms of our relationship with the machine god is rapidly closing. Whether this transition takes one year, ten years, or a century, the machines *will* eventually run the entire global supply chain.

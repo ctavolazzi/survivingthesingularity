@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#c2410c"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="858" height="618" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">TWO SUPPLY LINES: GLOBAL VS HYPER-LOCAL</text>
+  <line x1="40" y1="66" x2="560" y2="66" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- LEFT: the global chain -->
+  <text x="215" y="104" font-size="15" font-weight="600" fill="#c2410c" text-anchor="middle">THE GLOBAL CHAIN</text>
+
+  <rect x="120" y="122" width="190" height="52" rx="9" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="215" y="146" font-size="14" fill="#f1f5f9" text-anchor="middle">raw material,</text>
+  <text x="215" y="164" font-size="14" fill="#f1f5f9" text-anchor="middle">a continent away</text>
+  <line x1="215" y1="174" x2="215" y2="204" stroke="#c2410c" stroke-width="2" marker-end="url(#ar)"/>
+
+  <rect x="120" y="206" width="190" height="52" rx="9" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="215" y="230" font-size="14" fill="#f1f5f9" text-anchor="middle">overseas factory,</text>
+  <text x="215" y="248" font-size="14" fill="#f1f5f9" text-anchor="middle">cheapest labor found</text>
+  <line x1="215" y1="258" x2="215" y2="288" stroke="#c2410c" stroke-width="2" marker-end="url(#ar)"/>
+
+  <rect x="120" y="290" width="190" height="52" rx="9" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="215" y="314" font-size="14" fill="#f1f5f9" text-anchor="middle">ocean freight,</text>
+  <text x="215" y="332" font-size="14" fill="#f1f5f9" text-anchor="middle">port, warehouse</text>
+  <line x1="215" y1="342" x2="215" y2="372" stroke="#c2410c" stroke-width="2" marker-end="url(#ar)"/>
+
+  <rect x="120" y="374" width="190" height="52" rx="9" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="215" y="398" font-size="14" fill="#f1f5f9" text-anchor="middle">last-mile truck</text>
+  <text x="215" y="416" font-size="14" fill="#f1f5f9" text-anchor="middle">to your door</text>
+  <line x1="215" y1="426" x2="215" y2="456" stroke="#c2410c" stroke-width="2" marker-end="url(#ar)"/>
+
+  <rect x="120" y="458" width="190" height="46" rx="9" fill="#1a1005" stroke="#c2410c" stroke-width="2"/>
+  <text x="215" y="486" font-size="15" font-weight="600" fill="#f59e0b" text-anchor="middle">YOU (waiting)</text>
+
+  <text x="215" y="540" font-size="12.5" fill="#94a3b8" text-anchor="middle">every link is someone else's</text>
+  <text x="215" y="558" font-size="12.5" fill="#94a3b8" text-anchor="middle">broken back, and any one</text>
+  <text x="215" y="576" font-size="12.5" fill="#94a3b8" text-anchor="middle">of them can cut the line</text>
+
+  <!-- divider -->
+  <line x1="430" y1="110" x2="430" y2="580" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- RIGHT: the hyper-local loop -->
+  <text x="645" y="104" font-size="15" font-weight="600" fill="#f59e0b" text-anchor="middle">THE HYPER-LOCAL LOOP</text>
+
+  <rect x="550" y="150" width="190" height="56" rx="9" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="645" y="174" font-size="14" fill="#f1f5f9" text-anchor="middle">local material,</text>
+  <text x="645" y="192" font-size="14" fill="#f1f5f9" text-anchor="middle">salvage, soil, sun</text>
+
+  <line x1="645" y1="206" x2="645" y2="250" stroke="#f59e0b" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="663" y="232" font-size="12.5" fill="#94a3b8">your hands</text>
+
+  <rect x="550" y="252" width="190" height="56" rx="9" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="645" y="276" font-size="14" fill="#f1f5f9" text-anchor="middle">neighborhood</text>
+  <text x="645" y="294" font-size="14" fill="#f1f5f9" text-anchor="middle">factory + mesh</text>
+
+  <line x1="645" y1="308" x2="645" y2="352" stroke="#f59e0b" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="663" y="334" font-size="12.5" fill="#94a3b8">made, not bought</text>
+
+  <rect x="550" y="354" width="190" height="46" rx="9" fill="#1a1005" stroke="#f59e0b" stroke-width="2"/>
+  <text x="645" y="382" font-size="15" font-weight="600" fill="#f59e0b" text-anchor="middle">YOU (building)</text>
+
+  <!-- loop back: repair/reuse feeds the local material again -->
+  <path d="M 550 377 L 500 377 L 500 178 L 548 178" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ag)"/>
+  <text x="486" y="278" font-size="12.5" fill="#f59e0b" text-anchor="middle" transform="rotate(-90 486 278)">repair, reuse, teach the next person</text>
+
+  <text x="645" y="440" font-size="12.5" fill="#94a3b8" text-anchor="middle">short enough to hold in your</text>
+  <text x="645" y="458" font-size="12.5" fill="#94a3b8" text-anchor="middle">head; no link depends on a</text>
+  <text x="645" y="476" font-size="12.5" fill="#94a3b8" text-anchor="middle">stranger far away being exploited</text>
+  <text x="645" y="512" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">deglobalize. shrink the line.</text>
+  <text x="645" y="532" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">depend on your own hands.</text>
+</svg>

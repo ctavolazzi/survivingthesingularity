@@ -1,6 +1,6 @@
 {
   "schema": "sts-art-catalog/v1",
-  "generated": "2026-07-20",
+  "generated": "2026-07-21",
   "project": "Surviving the Singularity (book)",
   "book_version_introduced": "0.7.0",
   "palette": {
@@ -1525,7 +1525,7 @@
         "file": "18-chapter16.md",
         "section": "3. Sneakernets: The Physical Air-Gap"
       },
-      "alt": "The Sneakernet Cycle: an independent node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse",
+      "alt": "The Sneakernet Cycle: a hyper-local node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse",
       "caption": "The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet."
     },
     {
@@ -1552,7 +1552,7 @@
     {
       "id": "sts.diagram.ch17-lora-node",
       "type": "diagram-svg",
-      "label": "Anatomy of an independent mesh node",
+      "label": "Anatomy of a hyper-local mesh node",
       "concepts": [
         "lora",
         "mesh-networking",
@@ -1566,8 +1566,8 @@
         "file": "19-chapter17.md",
         "section": "1. The Nervous System: DIY LoRa Mesh Nodes"
       },
-      "alt": "Anatomy of an independent mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz",
-      "caption": "An independent mesh node. Sunlight in, encrypted packets out, no license and no bill."
+      "alt": "Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz",
+      "caption": "A hyper-local mesh node. Sunlight in, encrypted packets out, no license and no bill."
     },
     {
       "id": "sts.diagram.ch17-dc-native",
@@ -1591,7 +1591,7 @@
     {
       "id": "sts.diagram.ch17-fab-lab",
       "type": "diagram-svg",
-      "label": "The Decentralized Fab Lab",
+      "label": "The Neighborhood Fab Lab",
       "concepts": [
         "3d-printing",
         "cnc",
@@ -1603,8 +1603,8 @@
         "file": "19-chapter17.md",
         "section": "3. The Skeleton: Open-Source Machine Tools"
       },
-      "alt": "The Decentralized Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power",
-      "caption": "The Independent Fab Lab. Broken means fabricate, not wait."
+      "alt": "The Neighborhood Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power",
+      "caption": "The Neighborhood Fab Lab. Broken means fabricate, not wait."
     },
     {
       "id": "sts.photo.ch18-compass-map",
@@ -1668,6 +1668,68 @@
       },
       "alt": "The Surplus Redirection Matrix: commercial surplus food is sorted by edibility, with edible food redirected to municipal kitchens and CLT food banks for utility credits, non-edible organics routed to the soil food web bioreactor, and attempted landfill dumping met with a progressive civil penalty funding the MRSF",
       "caption": "The Surplus Redirection Matrix. Every path out of a loading dock leads somewhere useful, including the penalty."
+    },
+    {
+      "id": "sts.diagram.intro-nine-stages",
+      "type": "diagram-svg",
+      "label": "The nine stages of the singularity, grouped into three eras",
+      "concepts": [
+        "singularity",
+        "roadmap",
+        "nine-stages",
+        "agi",
+        "asi",
+        "new-social-contract"
+      ],
+      "figure": "static/book-images/intro-nine-stages.svg",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "INTRODUCTION: The Uncompromising Truth"
+      },
+      "alt": "The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge",
+      "caption": "The whole roadmap on one page. Everything you can act on lives in the first five stages, and the fight is over the terms of Stage 4."
+    },
+    {
+      "id": "sts.diagram.ch09-region-ring",
+      "type": "diagram-svg",
+      "label": "A dense city core ringed by four surrounding municipalities that supply it",
+      "concepts": [
+        "deglobalization",
+        "hyper-local",
+        "supply-chain",
+        "resilience",
+        "food-security",
+        "regional-buildout"
+      ],
+      "figure": "static/book-images/ch09-region-ring.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "A Dense City Cannot Feed Itself, and It Does Not Have To"
+      },
+      "alt": "A dense city core ringed by four surrounding municipalities that supply it: food production, materials recovery, energy and water, and neighborhood factories, with supply flowing inward to the core",
+      "caption": "You do not deglobalize a city by walling it off. You ring it with municipalities that produce what it cannot, which is also where the good jobs are."
+    },
+    {
+      "id": "sts.diagram.ch18-social-contract",
+      "type": "diagram-svg",
+      "label": "Two social contracts compared side by side",
+      "concepts": [
+        "new-social-contract",
+        "adequate-level-of-care",
+        "post-labor",
+        "regeneration",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch18-social-contract.svg",
+      "placement": {
+        "chapter": "chapter18",
+        "file": "20-chapter18.md",
+        "section": "The Adequate Level of Care (ALC)"
+      },
+      "alt": "Two social contracts compared side by side: the old one runs your labor to a wage to rented survival, and cuts you off if you miss a payment; the new one runs machines and regenerative loops to local abundance to an adequate level of care, so a job becomes a choice",
+      "caption": "The old contract makes you rent your survival month to month. The new one makes survival the floor, so a job becomes a choice, not a sentence."
     }
   ]
 }

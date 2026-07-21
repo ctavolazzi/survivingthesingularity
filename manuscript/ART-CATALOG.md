@@ -51,10 +51,29 @@ if future coursework wants motion or alternate angles.
 | sts.diagram.hyperlocal-vs-global | Two Supply Lines | ch09-hyperlocal-vs-global.svg | 11-chapter9.md |
 | sts.diagram.algae-loop | Closed Algae Fish-Food Loop | ch17-algae-loop.svg | 19-chapter17.md, SECTOR 07 |
 
+## Manuscript addressing (every block, not just art)
+
+As of 2026-07-20 every block of the book carries a stable unique id via the
+manuscript index — `src/lib/data/book/manuscript-index.json` (schema
+`sts-manuscript-index/v1`, built by `sts.py id build`). Ids look like
+`sts.chapter9.b0029`; figure blocks cross-link back to this catalog through an
+`art_id` field. So the two namespaces join cleanly:
+
+- **art id** (`sts.plate.*` / `sts.diagram.*` / `sts.sprite.*`): the semantic
+  asset, with concept tags — this file.
+- **block id** (`sts.<section>.b<NNNN>`): where that asset (or any paragraph) is
+  placed in the manuscript — the index.
+
+`sts.py id list --type figure` enumerates all 66 figures and shows which already
+have an `art_id`. That is the worklist for the cataloguing task below.
+
 ## Not yet catalogued (future work)
 
 The 33 pre-existing hand-authored SVG figures (`ch*-*.svg`), the photo headers
 (`ch*.jpg/.webp`), and the three pixel-art part-divider banners
-(`part{1,2,3}-divider.png`) are **not yet** in `art-catalog.json`. Extending the
-catalog to every book figure (with concept tags) is the prerequisite for
-chapter-complete programmatic coursework. See the continuation prompt.
+(`part{1,2,3}-divider.png`) are **not yet** in `art-catalog.json` (7 of the 66
+figures are catalogued; 59 are not). Extending the catalog to every book figure
+(with concept tags) is the prerequisite for chapter-complete programmatic
+coursework. Every one of those 59 already has a stable block id in the manuscript
+index, so the join target exists — only the concept tags are missing. See the
+continuation prompt.

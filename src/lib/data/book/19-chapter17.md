@@ -102,6 +102,8 @@ But if you look closely at your appliances, your phone charger, your laptop, you
 
 This is a thermodynamic disaster. You are losing up to 30% of your captured solar energy simply converting it back and forth through silicon components that generate heat and are highly vulnerable to failure.
 
+[[interactive:local-grid-sizer]]
+
 In the cracks, we build **DC-Native Systems**.
 
 We run our microgrids on a unified 12V or 24V DC bus. We completely eliminate the inverter.

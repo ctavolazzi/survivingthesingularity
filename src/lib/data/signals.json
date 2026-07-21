@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T15:15:20Z",
+  "generated_at": "2026-07-21T15:08:10Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -29,6 +29,34 @@
         "planning",
         "reasoning",
         "alignment",
+        "llm",
+        "language model",
+        "automation"
+      ]
+    },
+    {
+      "id": "2607.17331",
+      "source": "arxiv",
+      "title": "Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning",
+      "url": "https://arxiv.org/abs/2607.17331",
+      "authors": [
+        "Zhihao Liu",
+        "Tianyu Wang",
+        "Xi Vincent Wang",
+        "Lihui Wang"
+      ],
+      "summary": "Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across functional boundaries. This paper presents Agentic ERP, an expert-system architecture that combines role-aligned large-language-model (LLM) agents with a risk-tiered human-in-the-loop harness and a graph-based orchestrator to execute end-to-end business workflows on a production ERP backend. First, autonomo",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-19",
+      "score": 12.0,
+      "raw_score": 24,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomous",
+        "planning",
         "llm",
         "language model",
         "automation"
@@ -100,8 +128,8 @@
         "Dirk Van den Poel"
       ],
       "summary": "The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement Learning from Human Feedback (RLHF) prevent them from sustaining steadfast partisan behaviour. We present a multi-agent framework that reconciles factual grounding with ideological alignment by combining Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Retrieval-Augmented Gene",
-      "category": "cs.CL",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-07-16",
       "score": 11.0,
       "raw_score": 22,
@@ -318,6 +346,31 @@
         "agent",
         "multi-agent",
         "alignment",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.18026",
+      "source": "arxiv",
+      "title": "Rethinking Heterogeneous LLM Merging: A Weighted Model Averaging Perspective",
+      "url": "https://arxiv.org/abs/2607.18026",
+      "authors": [
+        "Jiahe Fan",
+        "Yinghao Hou",
+        "Si Chen",
+        "Aiyuan Zhang"
+      ],
+      "summary": "Can large language models with substantially different parameter spaces be merged by direct weighted averaging, without training or semantic alignment? Existing heterogeneous fusion methods typically introduce distillation, adapters, learned latent spaces, routing, or feature alignment, leaving open whether a simpler recipe can work for genuinely different billion-parameter checkpoints. We revisit this counterintuitive question through training-free dimensional adaptation followed by ratio-controlled interpolation. In union-style merging, we expand the smaller model into the larger parameter s",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-20",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "llm",
+        "language model",
         "rag"
       ]
     },
@@ -817,6 +870,54 @@
       ]
     },
     {
+      "id": "2607.18029",
+      "source": "arxiv",
+      "title": "Natural Language Access to Domain-Specific Metadata: A Reusable Framework for LLM Query Generation",
+      "url": "https://arxiv.org/abs/2607.18029",
+      "authors": [
+        "Blake G. Fitch",
+        "Cato Elia Kurtz"
+      ],
+      "summary": "Researchers need to answer ad-hoc questions about the contents of domain-specific archives but often lack the expertise to write structured queries on the metadata. We show that when domain vocabulary and semantics are captured in a well-designed Web Ontology Language (OWL) ontology, Large Language Models (LLMs) can generate accurate structured queries zero-shot, without fine-tuning, retrieval augmentation, or multi-agent orchestration. We present the Natural Language Knowledge Graph Query (NLKGQ) system, a framework and development process that enables natural language access to metadata in s",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-20",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "2607.18102",
+      "source": "arxiv",
+      "title": "FinSAgent: Corpus-Aligned Multi-Agent RAG Framework for Evidence-Grounded SEC Filing Question Answering",
+      "url": "https://arxiv.org/abs/2607.18102",
+      "authors": [
+        "Jijun Chi",
+        "Zhenghan Tai",
+        "Hanwei Wu",
+        "Tung Sum Thomas Kwok"
+      ],
+      "summary": "Financial question answering over U.S. Securities and Exchange Commission (SEC) filings requires retrieving and synthesizing heterogeneous evidence dispersed across long, standardized, and highly redundant disclosures. Existing retrieval-augmented and multi-agent systems typically derive retrieval queries directly from the user's question and rank candidates by semantic similarity. Together, these choices create prior-corpus misalignment: a mismatch between model priors and the target filings' structure, terminology, and evidence standards. As a result, query generation misses corpus-specific ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-20",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "alignment",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.15674",
       "source": "arxiv",
       "title": "A Generative Partially Specified Finite State Machine Approach to Complex Behaviour Planning",
@@ -1166,6 +1267,128 @@
       ]
     },
     {
+      "id": "2607.17946",
+      "source": "arxiv",
+      "title": "A Geometric Perspective on Stabilizing Value Conflict Resolution",
+      "url": "https://arxiv.org/abs/2607.17946",
+      "authors": [
+        "Saket Reddy",
+        "Andy Liu"
+      ],
+      "summary": "Large Language Models (LLMs) often struggle to navigate value conflicts when trained with the compressed scalar rewards of Reinforcement Learning from Human Feedback (RLHF). To address this challenge, we investigate how chain-of-thought (CoT) reasoning can help improve performance in this domain. Geometrically, we show that CoT correlates with further smoothing the model's loss landscape in its sharpest direction, helping resolve the optimization instability of traditional scalar rewards. We also demonstrate via relevant downstream benchmarks that value conflict-focused CoT may generalize to d",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "reasoning",
+        "chain-of-thought",
+        "rlhf",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2607.18066",
+      "source": "arxiv",
+      "title": "Pancasila-Dilemmas: Evaluating Large Language Models on Indonesian Human Value Dilemmas Grounded in Pancasila",
+      "url": "https://arxiv.org/abs/2607.18066",
+      "authors": [
+        " Supryadi",
+        " Irfan",
+        " Julianti",
+        "Darren Keanly Martin"
+      ],
+      "summary": "The value alignment of large language models (LLMs) is crucial for ensuring responses align with human intention and value preferences. However, most evaluations of value alignment focus on Western or universal values, while assessments grounded in the value systems of specific countries remain scarce. In this paper, we introduce Pancasila-Dilemmas, an evaluation dataset of 1,834 questions derived from Indonesian news, classified by 5 values of Pancasila: Religion, Humanity, Unity, Democracy, and Social Justice. This dataset reflects daily life in Indonesia, making it suitable for measuring th",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "alignment",
+        "value alignment",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2607.17535",
+      "source": "arxiv",
+      "title": "Salience Induction against Multi-Hop RAG Agents: Threat and Defense",
+      "url": "https://arxiv.org/abs/2607.17535",
+      "authors": [
+        "Xingfu Zhou",
+        "Pengfei Wang",
+        "Yuan Zhou",
+        "Wei Xie"
+      ],
+      "summary": "Agentic retrieval-augmented generation (RAG) systems increasingly retrieve external evidence and orchestrate tools for knowledge-intensive applications. In Multi-Hop question answering, agents chain facts across documents. Existing defenses focus on content poisoning, which injects false facts, and prompt injection, which embeds directives. We identify a third attack surface: the salience channel, through which fact position, emphasis, framing, and semantic proximity can redirect reasoning even when all retrieved claims are true and no instructions are present. We formalize Salience Induction ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.18060",
+      "source": "arxiv",
+      "title": "RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning",
+      "url": "https://arxiv.org/abs/2607.18060",
+      "authors": [
+        "Jinbang Huang",
+        "Yuanzhao Hu",
+        "Zhiyuan Li",
+        "Ran Qi"
+      ],
+      "summary": "Long-horizon robotic tasks require diverse capabilities that no single policy can reliably provide. Heterogeneous policies offer complementary strengths, but orchestrating them requires reasoning over uncertain capability boundaries and cross-policy distribution mismatch, which are largely overlooked by existing planning methods built on homogeneous, predefined skills with fixed applicability. We propose RoboHarness, a unified framework that encapsulates independently developed robot control systems as reusable agentic skills. Although instantiated in this work with VLAs, RL policies, and task",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-20",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "reasoning",
+        "robot"
+      ]
+    },
+    {
+      "id": "2607.16619",
+      "source": "arxiv",
+      "title": "SAGE: A Socially-Aware Generative Engine for Heterogeneous Multi-Agent Navigation",
+      "url": "https://arxiv.org/abs/2607.16619",
+      "authors": [
+        "Lan Hu",
+        "Minghui Liwang",
+        "Wenbo Zhu",
+        "Xinlei Yi"
+      ],
+      "summary": "Safe and socially compliant navigation in open human-robot environments requires robots to reason about heterogeneous participants with different dynamics, autonomy levels, and social roles. Existing trajectory prediction and planning methods often rely on homogeneous interaction assumptions or enforce only geometric collision constraints, making it difficult to jointly model asymmetric interactions, coupled prediction-planning, and soft social norms. This paper proposes SAGE, a socially-aware generative engine for heterogeneous multi-agent navigation. SAGE represents robots and surrounding en",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-18",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomy",
+        "planning",
+        "robot"
+      ]
+    },
+    {
       "id": "2607.16156",
       "source": "arxiv",
       "title": "PRISA: Proactive Infrastructure LiDAR Framework for Intersection Safety Assessment",
@@ -1284,220 +1507,6 @@
         "multi-agent",
         "agentic",
         "language model"
-      ]
-    },
-    {
-      "id": "2607.11475",
-      "source": "arxiv",
-      "title": "HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models",
-      "url": "https://arxiv.org/abs/2607.11475",
-      "authors": [
-        "Aznaur Aliev",
-        "Carlos Hinojosa",
-        "Abdelrahman Eldesokey",
-        "Bang An"
-      ],
-      "summary": "Safety alignment in large language models can be fragile under fine-tuning, as even benign task adaptation may increase harmful compliance. Existing defenses mainly follow two directions: they either intervene during or after fine-tuning through retraining or weight modification, which can be costly and may hurt task performance, or they use model-agnostic safety classifiers, which may miss failures specific to a given fine-tuned checkpoint. These limitations motivate a post hoc, model-specific, and non-invasive approach to safety restoration. To meet these requirements, we propose HyperSafe, ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-13",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "alignment",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.07695",
-      "source": "arxiv",
-      "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
-      "url": "https://arxiv.org/abs/2607.07695",
-      "authors": [
-        "Yujiao Chen"
-      ],
-      "summary": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-CA, a consequence-allocation benchmark spanning 228 contexts, five canonical rules, and seven model populations (33,924 games), with a normative cooperative reference and auto-labelled reasoning traces. Three findings emerge. (1) Deployment rules causally alter collective safety: changing only the co",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-08",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "ai safety"
-      ]
-    },
-    {
-      "id": "2607.06757",
-      "source": "arxiv",
-      "title": "LLM-powered reasoning in agent-based modeling",
-      "url": "https://arxiv.org/abs/2607.06757",
-      "authors": [
-        "Sifat Afroj Moon",
-        "Dakotah Maguire",
-        "Adam Spannaus",
-        "Joe Tuccillo"
-      ],
-      "summary": "Agent-based modeling (ABM) has the capability to model millions of individuals and their interactions, which is useful for policy making. However, ABMs have traditionally relied on static prior, which prevents the models from adapting to real-time changes. Our research provides a novel approach to addressing this information gap. Large language models (LLMs) offer new opportunities to predict human decision-making. Here, we introduce a scalable Hybrid Agent-based and Language-driven Epidemic (HALE) modeling framework that leverages LLMs to predict human decision-making in an ABM simulation. As",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-07",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2606.23664",
-      "source": "arxiv",
-      "title": "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
-      "url": "https://arxiv.org/abs/2606.23664",
-      "authors": [
-        "Juyang Bai",
-        "Laixi Shi"
-      ],
-      "summary": "Multi-agent systems (MAS) offer a scalable path forward for agentic AI, comprising multiple LLM-based agents, each assigned a system prompt and a position within a workflow that governs inter-agent coordination and output aggregation. System prompts thus form a critical and accessible optimization surface: they specify agents' roles and behaviors, enabling system-level improvements without model finetuning. Although prompt optimization has shown substantial potential for single LLMs, extending it to MAS poses distinct challenges, notably an exponentially growing search space. It remains unclea",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-22",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "llm"
-      ]
-    },
-    {
-      "id": "2606.22844",
-      "source": "arxiv",
-      "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
-      "url": "https://arxiv.org/abs/2606.22844",
-      "authors": [
-        "Wei Yang",
-        "Bryce Kan",
-        "Shixuan Li",
-        "Li Li"
-      ],
-      "summary": "Long-term memory has become increasingly important for LLM agents that operate across extended interactions and evolving task contexts. Recent memory systems have made past experiences more persistent, compact, and retrievable, but retrieval alone does not ensure that a memory provides valid evidence for the current query. When experiences are compressed into reusable fragments, memories from different situations may appear equally relevant if they involve recurring entities or user states. We refer to this failure as context collapse: memories lose the surrounding context needed to judge whet",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-22",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.16133",
-      "source": "arxiv",
-      "title": "When Do Multi-Agent Systems Help? An Information Bottleneck Perspective",
-      "url": "https://arxiv.org/abs/2607.16133",
-      "authors": [
-        "Wendi Yu",
-        "Lianhao Zhou",
-        "Xiangjue Dong",
-        "Sai Sudarshan Barath"
-      ],
-      "summary": "LLM powered multi-agent systems (MAS) have emerged as a promising paradigm for complex tasks. However, their advantages over single-agent systems (SAS) remain unclear, with performance varying inconsistently across settings. Here, we provide an information bottleneck perspective on elucidating the differences between MAS and SAS. Specifically, our key observation is that a SAS accumulates its full reasoning trace in one shared context, while a MAS uses isolated local contexts connected by bounded relay messages. We show that, under infinite relay bandwidth, any SAS can be simulated by a MAS th",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-17",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm"
-      ]
-    },
-    {
-      "id": "2607.15545",
-      "source": "arxiv",
-      "title": "CoWeaver: A Bi-directional, Learnable and Explainable Matching Engine for Mixed Human-Agent Science Collaboration",
-      "url": "https://arxiv.org/abs/2607.15545",
-      "authors": [
-        "Jiayao Gu",
-        "Kexin Chu",
-        "Peidong Liu",
-        "Yue Yang"
-      ],
-      "summary": "LLM-based agents excel at writing articles, coding and information retrieval. However, they fail to form strong collaborations within the scientific community due to the bidirectional, dynamic nature of the problem and a high demand of decision interpretability. We proposed COWEAVER, a bidirectional, learnable and explainable algorithm to match scientists and form strong collaborations within a human-agent network. COWEAVER matches candidates and requesters through filling capability gaps and filters candidates through a two-stage ranking step. Finally, the model explores newcomers by maintain",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-17",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "interpretability",
-        "interpret",
-        "llm",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2607.15544",
-      "source": "arxiv",
-      "title": "EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections",
-      "url": "https://arxiv.org/abs/2607.15544",
-      "authors": [
-        "Rituparna Datta",
-        "Srini Venkatramanan",
-        "Bryan L. Lewis",
-        "Yiqi Su"
-      ],
-      "summary": "Generation of clear and accessible public health narratives is critical for communicating complex epidemiological projections to policymakers and the general public at large. Such narratives require more than simply reporting numbers: projections must be contextualized and quantitatively grounded across multiple dimensions. Further, projections are often derived from large ensemble datasets which combine intervention assumptions, geographic and demographic strata, outcomes, time horizons, and uncertainty quantiles. However, directly using large language models (LLMs) to summarize and contextua",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-17",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.14895",
-      "source": "arxiv",
-      "title": "Leveraging Instruction Tuning and Merging for Reasoning Model Adaptation",
-      "url": "https://arxiv.org/abs/2607.14895",
-      "authors": [
-        "Yu-Du Feng",
-        "Niels Mündler-Sasahara",
-        "Mark Vero",
-        "Martin Vechev"
-      ],
-      "summary": "Reasoning language models (RLMs) have demonstrated impressive performance in domains such as mathematics and coding. These domains permit reliable verification of model outputs, which is important for enabling the reinforcement learning that drives RLM performance gains. However, training RLMs on domains that lack reliable verifiers remains challenging. Meanwhile, for both verifiable and unverifiable domains, large amounts of unused supervised fine-tuning data with human-written solutions exist. In this work, we show that these data can be used efficiently to further improve RLM performance. F",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-07-16",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "language model",
-        "rag"
       ]
     }
   ]

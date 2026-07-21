@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Mon, 20 Jul 2026 15:15:20 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 21 Jul 2026 15:08:10 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -13,6 +13,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.16066</guid>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
       <description>Agentic Artificial Intelligence (AI), enabled by Large Language Models, marks a shift from rule-based automation toward autonomous, goal-driven control of Next-Generation Networks (NGNs). Existing surveys treat the two domains in isolation, leaving protocol integration, evaluation, and standardizati... [Score: 17.0 | Flagged for: agent, multi-agent, agentic, autonomous, tool use] Authors: Mazene Ameur, Abdelkader Mekrache, et al.</description>
+    </item>
+    <item>
+      <title>Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning</title>
+      <link>https://arxiv.org/abs/2607.17331</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.17331</guid>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across function... [Score: 12.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Zhihao Liu, Tianyu Wang, et al.</description>
     </item>
     <item>
       <title>Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation</title>
@@ -90,6 +97,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2606.26575</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
       <description>Complex multi-agent control tasks remain challenging for traditional rule-based and model-based approaches, motivating the adoption of learning-based methods. However, learning-based methods often struggle with sim-to-real transfer because they rely on accurate dynamics modeling or system identifica... [Score: 9.0 | Flagged for: agi, agent, multi-agent, alignment, rag] Authors: Chenlong Liu, Zhuohui Zhang, et al.</description>
+    </item>
+    <item>
+      <title>Rethinking Heterogeneous LLM Merging: A Weighted Model Averaging Perspective</title>
+      <link>https://arxiv.org/abs/2607.18026</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.18026</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Can large language models with substantially different parameter spaces be merged by direct weighted averaging, without training or semantic alignment? Existing heterogeneous fusion methods typically introduce distillation, adapters, learned latent spaces, routing, or feature alignment, leaving open... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Jiahe Fan, Yinghao Hou, et al.</description>
     </item>
     <item>
       <title>SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration</title>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.09493</guid>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
       <description>Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints, data schemas, and tool-use patterns that made previous sessions productive. Naively persisting entire conver... [Score: 8.0 | Flagged for: agent, agentic, tool use, tool-use, llm] Authors: Sanjana Pedada, Aditya Dhavala, et al.</description>
-    </item>
-    <item>
-      <title>Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks</title>
-      <link>https://arxiv.org/abs/2607.09330</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.09330</guid>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Embodied agent teams powered by heterogeneous large language models (LLMs) are being widely deployed in physical artificial intelligence such as smart factories, warehouses, and service robotics. To enable collaboration among such an agent team, efficient coordination mechanisms that operate reliabl... [Score: 8.0 | Flagged for: agent, embodied, robot, robotics, llm] Authors: Nuocheng Yang, Sihua Wang, et al.</description>
-    </item>
-    <item>
-      <title>Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems</title>
-      <link>https://arxiv.org/abs/2607.07989</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.07989</guid>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Large language model (LLM) based multi-agent systems enable complex problem solving through coordinated reasoning and action, but their distributed structure also introduces new challenges in diagnosing system-level failures. When an execution fails, identifying which agent is responsible and at wha... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Yufei Xia, Anjun Gao, et al.</description>
     </item>
   </channel>
 </rss>

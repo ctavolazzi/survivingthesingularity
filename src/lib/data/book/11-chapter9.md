@@ -35,9 +35,17 @@ Marta looked at the renders for a while.
 
 So he designed it again, and the second version was the one this book teaches in the Foundations below: a Raspberry Pi anybody could buy anywhere, screw terminals instead of poetry, capacitive sensor probes at four dollars, a case Denny's kid printed forty of in PETG the color of school buses, relays you could buy at any electrical counter in America. The firmware did less and survived more. Every unit had a laminated one-page repair card zip-tied inside the lid, because Marta's rule was that documentation you have to go find is documentation that doesn't exist.
 
+![A yellow PETG 3D-printed greenhouse controller box, lid open, a Raspberry Pi and screw terminals visible inside](/book-images/ch09-controller.png)
+
+*The controller. Field-repairable. Screw terminals instead of poetry.*
+
 The build itself took the shed three weekends, and it was during the second one, everyone deburring enclosures and crimping ferrules in an assembly line that Sal himself would have recognized from 1985, that the door opened and let in a rectangle of cold light and a lean man in a good coat who was too pleased with himself for a Saturday.
 
 "Reuben Vance," Marta said, not looking up from the crimper. "Elijah. Elijah, Reuben. Reuben handles the part of the machine that runs on paper."
+
+![A lean man in a well-tailored dark coat, carrying a leather folio of papers](/book-images/ch09-reuben.png)
+
+*Reuben Vance. Handles the part of the machine that runs on paper.*
 
 "I heard," Reuben said, pulling folding chairs toward the woodstove like a man dealing cards, "that this operation is about to *sell manufactured electrical goods across county lines*." He said it the way other men say *rob a train*. He produced a folder. "So before anyone gets excited, here is what I did yesterday instead of having a life. Seller's permit: done, we're registered. Resale certificate for the component purchases, which, you're welcome, is about nine percent of your margin back. The shed's ag-exempt status survives because the controllers are agricultural equipment, and I have the assessor's email agreeing they are, in writing, because the assessor and I have an understanding built on me never making her think twice." He looked up. "Also your liability language on the invoice was going to get you sued by the first frost, so I rewrote it. You're a farm tool now, legally speaking. Farm tools have four hundred years of friendly precedent. Software has forty years of hostile precedent. Never be software if you can be a tool."
 

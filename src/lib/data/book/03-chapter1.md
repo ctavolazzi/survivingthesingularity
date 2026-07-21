@@ -21,6 +21,10 @@ The Monday after the toast, Elijah brought the printout to work.
 
 He'd read "Attention Is All You Need" so many times over the weekend that the pages had gone soft at the corners, furred with highlighter in four colors that had stopped meaning anything distinct. He'd slept maybe five hours across two nights. He carried the thing into Claypot the way you carry a lab result you don't want confirmed, and he found Devendra at the good coffee machine on the fourth floor, because Devendra was senior, and calm, and had been doing this since before Elijah could spell *gradient descent*, and Elijah needed someone to tell him he was overreacting.
 
+![A tech worker in business casual clothing with a laptop bag over one shoulder](/book-images/ch01-devendra.png)
+
+*Devendra. Senior and calm. Wrong about the thing that mattered.*
+
 "I think it's already over," Elijah said. No preamble. "I watched three people get replaced last week. Real people. Not a projection… a bar, a Tuesday, three jobs, gone. And nobody who did it even thought of it as a big deal."
 
 Devendra tapped his cup against the drip tray, unhurried. "Augmentation, not replacement," he said. It had the worn smoothness of a thing said many times. "It's a very good autocomplete, Elijah. It makes the people who use it faster. The realtors didn't fire humans because a chatbot is a person. They restructured. Companies restructure." He smiled, not unkindly, the way you smile at someone who's just discovered a thing you made your peace with years ago. "You'll calibrate. Everybody's first month feels like the apocalypse."
@@ -30,6 +34,10 @@ Elijah wanted to be talked down. That was the humiliating part. He stood there h
 So that night he decided to settle it with his own hands, the only way a farm kid ever really trusts a thing: he'd try to break it.
 
 He had an old tower at home, a space heater of a machine he'd built for cheap during the pivot, two consumer GPUs zip-tied into a case that didn't quite fit them. He pulled a modest open model and started fine-tuning it on his own data, telling himself that if he could feel where it topped out, if he could find the ceiling by touch, he'd know it was just software, bounded like all software, and he could sleep.
+
+![A beige mini-tower PC case with two mismatched GPUs zip-tied inside, visible through an open side panel](/book-images/ch01-pc-rig.png)
+
+*The rig. Two GPUs zip-tied into a case that never fit them. It throttles by design.*
 
 The room got warm around eleven. Warm the way the cab of his delivery car used to get in August, that thick engine-heat with a smell to it. The fans spun up to a howl he could hear from the kitchen. He kept feeding it. The loss curve kept sliding down, not magically, not infinitely, but *steadily*, the way a thing slides when there's real signal underneath and you've simply never had the compute to chase it before. Every increment cost him more. More power off the wall, more heat into the room, the meter he couldn't see spinning somewhere out in the garage.
 

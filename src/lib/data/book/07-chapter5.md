@@ -33,6 +33,10 @@ Then he did the other math, the one that mattered. The tower drew 600 watts flat
 
 On Sunday he drove out to the storage unit where his grandmother's things had been sitting since the estate sale nobody could face finishing, and he came back with the woodstove. It was a squat black Fisher, older than he was, eighty pounds of plate steel with a crack in one firebrick, and he had no fireplace and no flue and no permission from his landlord, so it sat in the corner of the living room as a monument, which was the point. His grandmother had heated a whole farmhouse with it, cooked on it, dried socks over it, kept lambs alive behind it in bad Februaries, all on wood she'd bucked herself from her own downed oaks. Total utility bill: a chainsaw's gas and her own hundred watts. He put his hand flat on the cold steel the way she used to put his hand on the madrones, and he did the arithmetic one more time, the full circuit of it. The datacenter bought its watts with billions. The realtors bought theirs with a subscription. His grandmother had *harvested* hers, off her own dirt, with her own body, and nobody, not a utility, not a platform, not a machine God, had ever once been in a position to shut her off.
 
+![A squat black cast-iron wood stove with the door open, one cracked firebrick visible inside](/book-images/ch05-woodstove.png)
+
+*The Fisher. Eighty pounds of steel, one cracked firebrick. Older than him.*
+
 That was the whole chapter, standing in the corner of a rented apartment. That was the strategy. Not going backward to the woodstove; he wasn't romantic about kerosene light or hauling water, and neither was she. Going *forward* to her position: owner of the watts, harvester of the loop, unshutoffable. The rest of this book is the modern version of that stove.
 
 He unplugged the cable box on his way to bed. It was, he'd say later, only half joking, the first act of the rest of his life: the first watt he ever took back.

@@ -1,0 +1,497 @@
+{
+  "schema": "sts-art-catalog/v1",
+  "generated": "2026-07-20",
+  "project": "Surviving the Singularity (book)",
+  "book_version_introduced": "0.7.0",
+  "palette": {
+    "navy": "#020617",
+    "amber": "#f59e0b",
+    "blue": "#3b82f6",
+    "slate": "#94a3b8",
+    "ink": "#f1f5f9"
+  },
+  "provenance": {
+    "tool": "PixelLab (Tier 1) + Python(Pillow) compositing; SVG diagrams hand-authored",
+    "license_note": "PixelLab-generated assets subject to PixelLab Terms of Service (https://pixellab.ai/termsofservice). Verify commercial/coursework rights before external reuse."
+  },
+  "id_scheme": "sts.<kind>.<slug>  (kind: sprite=object, char=character, plate=composite, diagram=svg)",
+  "assets": [
+    {
+      "id": "sts.sprite.photobioreactor",
+      "type": "sprite-object",
+      "label": "DIY Photobioreactor",
+      "concepts": [
+        "algae-culture",
+        "aquaponics",
+        "closed-loop",
+        "3d-printing",
+        "raspberry-pi",
+        "food-independence"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "be66341d-23d5-4edc-9dd4-def901b980b8",
+        "selected_frame_id": "518e9f04-fe30-46dd-9ba8-3b7bdd6e8454",
+        "alt_frame_id": "24995ad3-27a9-4fc1-84f6-c706b8941b06"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-photobioreactor.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit",
+        "sts.plate.photobioreactor"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.grow-tower",
+      "type": "sprite-object",
+      "label": "Vertical Grow Tower",
+      "concepts": [
+        "vertical-hydroponics",
+        "food-production",
+        "water-efficiency",
+        "urban-farming"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "b54c09a3-bf64-4af0-bca1-7987e491e462",
+        "selected_frame_id": "da227fbd-73f4-4409-8a6e-409e8d77c14b"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-grow-tower.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.lora-node",
+      "type": "sprite-object",
+      "label": "LoRa Mesh Node",
+      "concepts": [
+        "mesh-networking",
+        "lora",
+        "off-grid-comms",
+        "meshtastic",
+        "decentralized-tech"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "3a25f932-b65f-4d8b-8eff-7935102e5b7c",
+        "selected_frame_id": "2e70c977-f083-49e2-88fc-982bd9924b11"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-lora-node.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.solar-battery",
+      "type": "sprite-object",
+      "label": "Solar + Battery Rig",
+      "concepts": [
+        "solar-power",
+        "off-grid-energy",
+        "charge-controller",
+        "dc-microgrid"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "aa08d2ec-fb55-4521-ba19-04155c4aa298",
+        "selected_frame_id": "7628f606-858b-4c64-9bc0-ed81a06af105"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-solar-battery.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.printer-3d",
+      "type": "sprite-object",
+      "label": "Desktop 3D Printer",
+      "concepts": [
+        "3d-printing",
+        "fabrication",
+        "reprap",
+        "distributed-manufacturing"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "60426470-7494-450d-a38e-7b8cde188de8",
+        "selected_frame_id": "bef728c7-3d0f-4c38-8592-8bfa1037b222"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-printer-3d.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.plasma-table",
+      "type": "sprite-object",
+      "label": "CNC Plasma Table",
+      "concepts": [
+        "cnc",
+        "metal-fabrication",
+        "maker-shop",
+        "tooling"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "c4ea7230-b9d5-492a-96aa-4fb2c425cc4d",
+        "selected_frame_id": "9fc3df01-3fa5-431b-98d1-234b5903eab7"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-plasma-table.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.walk-behind-tractor",
+      "type": "sprite-object",
+      "label": "Walk-Behind Tractor",
+      "concepts": [
+        "appropriate-technology",
+        "tillage",
+        "bcs-tractor",
+        "homestead-machinery"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "6ecd5de2-1057-4d14-bbce-8bb11a9ffb0c",
+        "selected_frame_id": "3328f7fb-0d12-46ce-a589-6227e2444a27"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-walk-behind-tractor.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit"
+      ],
+      "chapter": "ch17"
+    },
+    {
+      "id": "sts.sprite.cyberdeck",
+      "type": "sprite-object",
+      "label": "Homemade Cyberdeck",
+      "concepts": [
+        "cyberdeck",
+        "offline-computing",
+        "diy-hardware",
+        "digital-autonomy"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "c2e1e7b0-7376-4728-a164-37afa9c44f6f",
+        "selected_frame_id": "15546138-4bcd-47d4-952c-1d810ad0e494"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-cyberdeck.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.field-kit",
+        "sts.plate.cyberdeck"
+      ],
+      "chapter": "appendix-e"
+    },
+    {
+      "id": "sts.sprite.ox-and-plow",
+      "type": "sprite-object",
+      "label": "Ox and Plow",
+      "concepts": [
+        "animal-husbandry",
+        "delegated-labor",
+        "agriculture-history",
+        "analogy-for-AI"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "f2ebbf38-3ef9-460b-bf7f-6ae4f06ac846",
+        "selected_frame_id": "1f525619-fe8f-4728-b4f6-1316efb5b7cb",
+        "alt_frame_id": "101a601f-8c69-496e-875f-e01957103fc9"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-ox-and-plow.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.ox-and-plow"
+      ],
+      "chapter": "introduction"
+    },
+    {
+      "id": "sts.char.elijah",
+      "type": "sprite-character",
+      "label": "Elijah",
+      "role": "narrator; ex-tech worker learning to build",
+      "concepts": [
+        "cast",
+        "protagonist"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "ae2178a9-ccd3-4d71-92a3-b3e8d7f17f88",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-elijah.png",
+      "size": [
+        248,
+        248
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.char.marta",
+      "type": "sprite-character",
+      "label": "Marta",
+      "role": "fabricator; runs the co-op shop",
+      "concepts": [
+        "cast"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "f4b231e5-f2f6-4a0c-b8e2-81827243af59",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-marta.png",
+      "size": [
+        248,
+        248
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.char.priya",
+      "type": "sprite-character",
+      "label": "Priya",
+      "role": "soil scientist",
+      "concepts": [
+        "cast"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "21b9fdab-12ea-48f8-a0a6-1dad48fdf422",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-priya.png",
+      "size": [
+        244,
+        244
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.char.denny",
+      "type": "sprite-character",
+      "label": "Denny",
+      "role": "network engineer; livestreamer",
+      "concepts": [
+        "cast"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "6889a96a-3ab5-4884-b7bf-89bec3bddf03",
+        "directions": 8,
+        "south_used": true
+      },
+      "raw": "static/book-images/sprites/sts-char-denny.png",
+      "size": [
+        248,
+        248
+      ],
+      "used_in": [
+        "sts.plate.co-op-cast"
+      ],
+      "chapter": "part-2"
+    },
+    {
+      "id": "sts.plate.field-kit",
+      "type": "plate-composite",
+      "label": "The Field Kit",
+      "figure": "static/book-images/ch17-field-kit.png",
+      "size": [
+        1648,
+        792
+      ],
+      "composed_of": [
+        "sts.sprite.photobioreactor",
+        "sts.sprite.grow-tower",
+        "sts.sprite.lora-node",
+        "sts.sprite.solar-battery",
+        "sts.sprite.printer-3d",
+        "sts.sprite.plasma-table",
+        "sts.sprite.walk-behind-tractor",
+        "sts.sprite.cyberdeck"
+      ],
+      "placement": {
+        "chapter": "ch17",
+        "file": "19-chapter17.md",
+        "section": "Foundations intro"
+      },
+      "alt": "A pixel-art specimen board of the field kit: photobioreactor, grow tower, LoRa node, solar and battery, 3D printer, CNC plasma table, walk-behind tractor, cyberdeck",
+      "caption": "The field kit. Every one of these already exists, and a person with modest money and stubbornness can own the lot."
+    },
+    {
+      "id": "sts.plate.co-op-cast",
+      "type": "plate-composite",
+      "label": "The Co-op",
+      "figure": "static/book-images/coop-cast.png",
+      "size": [
+        1808,
+        606
+      ],
+      "composed_of": [
+        "sts.char.elijah",
+        "sts.char.marta",
+        "sts.char.priya",
+        "sts.char.denny"
+      ],
+      "placement": {
+        "chapter": "part-2",
+        "file": "part2-divider.md",
+        "section": "divider"
+      },
+      "alt": "Pixel-art portraits of the co-op: Elijah, Marta, Priya, and Denny",
+      "caption": "The people the rest of this book is about. Nineteen households; these four you get to know."
+    },
+    {
+      "id": "sts.plate.photobioreactor",
+      "type": "plate-composite",
+      "label": "The Photobioreactor (solo)",
+      "figure": "static/book-images/ch17-photobioreactor.png",
+      "size": [
+        760,
+        606
+      ],
+      "composed_of": [
+        "sts.sprite.photobioreactor"
+      ],
+      "placement": {
+        "chapter": "ch17",
+        "file": "19-chapter17.md",
+        "section": "The Proof Is Not Hypothetical (SECTOR 07)"
+      },
+      "alt": "A DIY 3D-printed photobioreactor growing green algae with a Raspberry Pi board",
+      "caption": "Tens of thousands of dollars in a lab. A few hundred on a workbench."
+    },
+    {
+      "id": "sts.plate.cyberdeck",
+      "type": "plate-composite",
+      "label": "The Cyberdeck (solo)",
+      "figure": "static/book-images/appe-cyberdeck.png",
+      "size": [
+        760,
+        542
+      ],
+      "composed_of": [
+        "sts.sprite.cyberdeck"
+      ],
+      "placement": {
+        "chapter": "appendix-e",
+        "file": "26-appendix-e.md",
+        "section": "opening"
+      },
+      "alt": "A homemade cyberdeck: rugged case, mechanical keyboard, amber map screen, antenna",
+      "caption": "A computer you understand all the way down, that answers to nobody's server."
+    },
+    {
+      "id": "sts.plate.ox-and-plow",
+      "type": "plate-composite",
+      "label": "You Do Not Program an Ox",
+      "figure": "static/book-images/intro-ox-plow.png",
+      "size": [
+        760,
+        492
+      ],
+      "composed_of": [
+        "sts.sprite.ox-and-plow"
+      ],
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "the ox / husbandry passage"
+      },
+      "alt": "A brown ox in a wooden yoke pulling a plow through a field",
+      "caption": "The first time labor could be handed to something that ran on its own. The machine is the second."
+    },
+    {
+      "id": "sts.diagram.hyperlocal-vs-global",
+      "type": "diagram-svg",
+      "label": "Two Supply Lines: Global vs Hyper-local",
+      "concepts": [
+        "deglobalization",
+        "hyper-local",
+        "supply-chain",
+        "resilience"
+      ],
+      "figure": "static/book-images/ch09-hyperlocal-vs-global.svg",
+      "placement": {
+        "chapter": "ch9",
+        "file": "11-chapter9.md",
+        "section": "Deglobalization, Not Decentralization"
+      },
+      "alt": "Two supply lines compared: a long fragile global chain versus a short hyper-local loop",
+      "caption": "Not decentralization for its own sake. A shorter line you can hold in your head."
+    },
+    {
+      "id": "sts.diagram.algae-loop",
+      "type": "diagram-svg",
+      "label": "The Closed Algae Fish-Food Loop",
+      "concepts": [
+        "closed-loop",
+        "aquaponics",
+        "algae",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch17-algae-loop.svg",
+      "placement": {
+        "chapter": "ch17",
+        "file": "19-chapter17.md",
+        "section": "The Proof Is Not Hypothetical"
+      },
+      "alt": "The closed algae fish-food loop: fish, grow beds, dry and grind, photobioreactor, back to fish",
+      "caption": "Grow the fish food too, and the last store-bought input drops out. The loop closes."
+    }
+  ]
+}

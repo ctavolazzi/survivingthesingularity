@@ -32,6 +32,10 @@ Then, once, we found an exception. We domesticated the animal. We put an ox in f
 
 This is the second time. That's what the machine actually is, under all the doom. Not a god arriving to end us. An animal we just learned to domesticate, one that happens to think. For the first time since the ox, the work of keeping yourself alive can be handed to something that doesn't need you standing over it.
 
+![A brown ox in a wooden yoke pulling a plow through a field](/book-images/intro-ox-plow.png)
+
+*The first time labor could be handed to something that ran on its own. The machine is the second.*
+
 Which is why "it's all over" and "we're so back" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Tell someone the machine can do most jobs now and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But capitalism is going to be fine. The markets will still be here. What ends is the part where you *have* to sell your day to a corporation to be allowed to eat. For the first time, that becomes optional. Not abolished. Optional. And optional is the whole ballgame.
 
 This is the roadmap. These are the nine stages. And we are already well into the first one.

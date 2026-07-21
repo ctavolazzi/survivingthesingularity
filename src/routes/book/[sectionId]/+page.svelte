@@ -9,6 +9,7 @@
   import Pagination from '$lib/components/Pagination.svelte';
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
+  import { interactiveRegistry } from '$lib/components/interactives/registry.js';
   export let data;
 
   let currentSection = 1;
@@ -16,8 +17,30 @@
   let navOpen = false;
   let navHidden = false;
 
-  // Convert markdown to HTML
-  $: content = marked(data.content);
+  // A chapter can drop `[[interactive:some-id]]` on its own line to embed a
+  // live widget from the interactives registry at that point in the prose.
+  // Split on the marker BEFORE running markdown, so the token never has to
+  // survive marked()/HTML escaping - the raw markdown chunks around it are
+  // rendered normally, and the id in between is looked up in the registry.
+  const INTERACTIVE_MARKER = /^\[\[interactive:([a-z0-9-]+)\]\]\s*$/m;
+
+  function splitIntoSegments(raw) {
+    const segments = [];
+    let rest = raw;
+    let match;
+    while ((match = INTERACTIVE_MARKER.exec(rest))) {
+      const before = rest.slice(0, match.index);
+      if (before.trim()) segments.push({ type: 'html', value: marked(before) });
+      segments.push({ type: 'component', id: match[1] });
+      rest = rest.slice(match.index + match[0].length);
+    }
+    if (rest.trim()) segments.push({ type: 'html', value: marked(rest) });
+    return segments;
+  }
+
+  // Chapters with no marker fall straight through as a single html segment,
+  // so this is a strict superset of the old `marked(data.content)` behavior.
+  $: segments = splitIntoSegments(data.content);
 
   $: currentMeta = sectionsWithMeta.find(s => s.id === data.section.id);
 
@@ -216,7 +239,15 @@
   </div>
 
   <article class="prose prose-lg dark:prose-invert chapter-article">
-    {@html content}
+    {#each segments as segment}
+      {#if segment.type === 'html'}
+        {@html segment.value}
+      {:else if interactiveRegistry[segment.id]}
+        <div class="interactive-embed not-prose">
+          <svelte:component this={interactiveRegistry[segment.id]} />
+        </div>
+      {/if}
+    {/each}
   </article>
 
   <!-- Add this anchor element right after the article content -->

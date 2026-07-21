@@ -22,6 +22,13 @@ Commands:
     scan      Scannability audit: pull-quote candidates, wall-of-text
               paragraphs, heading/emphasis deserts, list opportunities,
               per-chapter texture scores
+    id        Manuscript addressing: a stable unique id for every block
+              (build|list|get|replace|verify|stress). Non-invasive sidecar
+              index (src/lib/data/book/manuscript-index.json); the .md source
+              stays clean, so building the index is not a content change.
+    art       Enroll every book figure in art-catalog.json (list|sync).
+              Data-driven from the manuscript index + credits.json; ids are
+              sts.<kind>.<filename-stem> so new art auto-enrolls.
 
 Every command accepts --json for machine-readable output.
 `audit` and `sitemap` exit non-zero when errors are found (CI-friendly).
@@ -35,9 +42,12 @@ Examples:
 """
 
 import argparse
+import hashlib
 import html as html_mod
 import json
 import re
+import shutil
+import tempfile
 import subprocess
 import sys
 import time
@@ -1117,6 +1127,793 @@ def cmd_scan(args) -> int:
     return 0
 
 
+# ──────────────────────────────────────────────────────────────────────
+# id — manuscript addressing: a stable unique id for every block
+# ──────────────────────────────────────────────────────────────────────
+#
+# Non-invasive by design. The .md source stays clean (no anchors leak into
+# the book, the EPUB, or the PDF). The address book lives beside the source in
+# src/lib/data/book/manuscript-index.json and maps
+#     sts.<section_id>.b<NNNN>  ->  (file, line span, type, content hash)
+# Building the index does NOT modify any .md or book.json, so it is not a
+# content change and does not trigger the versioning ritual.
+#
+# IDs are carried forward across rebuilds (a programmatic edit keeps a block's
+# identity; inserts mint fresh ids; deletes are tombstoned for audit). Figure
+# blocks cross-link to art-catalog.json ids, unifying prose + art under one
+# addressable namespace so coursework can join on either.
+
+INDEX_NAME = "manuscript-index.json"
+INDEX_SCHEMA = "sts-manuscript-index/v1"
+
+_WORD_RE = re.compile(r"\b[\w'’-]+\b")
+_IMG_RE = re.compile(r"!\[[^\]]*\]\(([^)\s]+)")
+_LIST_RE = re.compile(r"^([-*+]\s+|\d+[.)]\s+)")
+_HR_RE = re.compile(r"^(-{3,}|\*{3,}|_{3,})$")
+_ID_RE = re.compile(r"^sts\.[a-z0-9-]+\.b\d{4}$")
+
+
+def _norm_text(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _block_hash(btype: str, level: int, text: str) -> str:
+    key = f"{btype}:{level}:{_norm_text(text)}"
+    return hashlib.sha1(key.encode("utf-8")).hexdigest()[:12]
+
+
+def _classify(first: str, nlines: int):
+    """(type, level) for a raw block, from its first line and line count."""
+    if first.startswith("#"):
+        return "heading", len(first) - len(first.lstrip("#"))
+    if first.startswith("!["):
+        return "figure", 0
+    if first.startswith(("```", "~~~")):
+        return "code", 0
+    if first.startswith("|"):
+        return "table", 0
+    if first.startswith(">"):
+        return "blockquote", 0
+    if _LIST_RE.match(first):
+        return "list", 0
+    if nlines == 1 and _HR_RE.match(first):
+        return "hr", 0
+    return "paragraph", 0
+
+
+def _md_blocks(lines):
+    """Split markdown source into typed blocks with 1-indexed inclusive spans.
+
+    Guarantee: every non-blank line belongs to exactly one block; blocks are
+    ordered and non-overlapping; the only uncovered lines are blank (or blank
+    lines held inside a fenced code block, which are covered by that block).
+    """
+    blocks, N, i = [], len(lines), 0
+    while i < N:
+        if lines[i].strip() == "":
+            i += 1
+            continue
+        start = i
+        first = lines[i].lstrip()
+        if first.startswith("#") or first.startswith("!["):
+            end = i                                   # headings / images: one line
+        elif first.startswith(("```", "~~~")):
+            fence = first[:3]
+            j = i + 1
+            while j < N and not lines[j].lstrip().startswith(fence):
+                j += 1
+            end = j if j < N else N - 1               # include the closing fence
+        else:
+            j = i
+            while j < N and lines[j].strip() != "":
+                j += 1
+            end = j - 1                               # blank-line delimited run
+        raw = lines[start:end + 1]
+        btype, level = _classify(raw[0].lstrip(), len(raw))
+        blocks.append({"type": btype, "level": level,
+                       "lines": [start + 1, end + 1], "text": "\n".join(raw)})
+        i = end + 1
+    # A single-italic paragraph right after a figure is that figure's caption.
+    for k in range(1, len(blocks)):
+        if blocks[k]["type"] == "paragraph" and blocks[k - 1]["type"] == "figure":
+            t = blocks[k]["text"].strip()
+            if t.startswith("*") and t.endswith("*") and not t.startswith("**"):
+                blocks[k]["type"] = "caption"
+    return blocks
+
+
+def _art_figure_map(book_dir):
+    """{source image path -> art-catalog id} for every catalogued figure."""
+    p = book_dir / "art-catalog.json"
+    if not p.exists():
+        return {}
+    cat = json.loads(p.read_text(encoding="utf-8"))
+    out = {}
+    for a in cat.get("assets", []):
+        fig = a.get("figure")
+        if fig:
+            out[fig[len("static"):] if fig.startswith("static/") else fig] = a["id"]
+    return out
+
+
+def _reconcile(old_blocks, new_blocks):
+    """Carry stable ids from old_blocks onto new_blocks (mutates new_blocks).
+
+    Pass 1 matches on exact content (unchanged blocks, reorders keep their id).
+    Pass 2 pairs residual same-type blocks positionally (an in-place edit keeps
+    its id). Unmatched new blocks are left id-less for the caller to mint.
+    Returns the list of old ids that vanished (tombstones).
+    """
+    from collections import defaultdict, deque
+    exact = defaultdict(deque)
+    for ob in old_blocks:
+        exact[(ob["type"], ob.get("level", 0), ob["hash"])].append(ob)
+    used = set()
+    for nb in new_blocks:
+        dq = exact.get((nb["type"], nb["level"], nb["hash"]))
+        if dq:
+            ob = dq.popleft()
+            nb["id"] = ob["id"]
+            used.add(ob["id"])
+    by_type = defaultdict(deque)
+    for ob in old_blocks:
+        if ob["id"] not in used:
+            by_type[ob["type"]].append(ob)
+    for nb in new_blocks:
+        if nb.get("id"):
+            continue
+        dq = by_type.get(nb["type"])
+        if dq:
+            ob = dq.popleft()
+            nb["id"] = ob["id"]
+            used.add(ob["id"])
+    return [ob["id"] for ob in old_blocks if ob["id"] not in used]
+
+
+def _build_index(book_dir, old_index=None):
+    """Parse every section into addressed blocks, reconciling ids with old_index."""
+    book = json.loads((book_dir / "book.json").read_text(encoding="utf-8"))
+    figmap = _art_figure_map(book_dir)
+    old_secs = {s["id"]: s for s in (old_index or {}).get("sections", [])}
+    sections_out, total_blocks, total_words = [], 0, 0
+    for s in book["sections"]:
+        sid = s["id"]
+        lines = (book_dir / s["file"]).read_text(encoding="utf-8").split("\n")
+        blocks = _md_blocks(lines)
+        for b in blocks:
+            b["hash"] = _block_hash(b["type"], b["level"], b["text"])
+        old = old_secs.get(sid, {})
+        tombstones = _reconcile(old.get("blocks", []), blocks)
+        next_ord = old.get("next_ordinal", 1)
+        for b in blocks:
+            if not b.get("id"):
+                b["id"] = f"sts.{sid}.b{next_ord:04d}"
+                next_ord += 1
+        recs = []
+        for b in blocks:
+            rec = {"id": b["id"], "type": b["type"], "lines": b["lines"],
+                   "words": len(_WORD_RE.findall(b["text"])), "hash": b["hash"],
+                   "preview": _norm_text(b["text"])[:90]}
+            if b["type"] == "heading":
+                rec["level"] = b["level"]
+            if b["type"] == "figure":
+                m = _IMG_RE.search(b["text"])
+                rec["image"] = m.group(1) if m else None
+                rec["art_id"] = figmap.get(rec["image"])
+            recs.append(rec)
+        sec_words = sum(r["words"] for r in recs)
+        total_blocks += len(recs)
+        total_words += sec_words
+        sections_out.append({
+            "id": sid, "title": s["title"], "file": s["file"],
+            "next_ordinal": next_ord, "words": sec_words,
+            "tombstones": sorted(set(old.get("tombstones", [])) | set(tombstones)),
+            "blocks": recs})
+    return {"schema": INDEX_SCHEMA, "book_version": book["version"],
+            "generated": None,
+            "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
+            "totals": {"sections": len(sections_out),
+                       "blocks": total_blocks, "words": total_words},
+            "sections": sections_out}
+
+
+def _index_path(book_dir):
+    return book_dir / INDEX_NAME
+
+
+def _load_index(book_dir):
+    p = _index_path(book_dir)
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+
+def _strip_gen(ix):
+    return {k: v for k, v in ix.items() if k != "generated"}
+
+
+def _write_index(book_dir, index, force=False):
+    """Write the index. No-op (returns False) when nothing but the date changed."""
+    old = _load_index(book_dir)
+    if old and not force and _strip_gen(old) == _strip_gen(index):
+        return False
+    index = dict(index)
+    index["generated"] = date.today().isoformat()
+    _index_path(book_dir).write_text(
+        json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return True
+
+
+def _live_index():
+    """A freshly-parsed index of the current source, ids continued from disk.
+
+    Reads always parse live source so line spans are never stale; the persisted
+    index only supplies id continuity.
+    """
+    return _build_index(BOOK_DIR, _load_index(BOOK_DIR))
+
+
+def _find_block(index, bid):
+    for sec in index["sections"]:
+        for blk in sec["blocks"]:
+            if blk["id"] == bid:
+                return blk, sec
+    return None, None
+
+
+def _splice(path, span, new_text):
+    """Replace 1-indexed inclusive line span in a file, preserving final newline."""
+    raw = path.read_text(encoding="utf-8")
+    final_nl = raw.endswith("\n")
+    lines = raw.split("\n")
+    if final_nl:
+        lines = lines[:-1]
+    a, b = span
+    lines[a - 1:b] = new_text.rstrip("\n").split("\n") if new_text != "" else []
+    path.write_text("\n".join(lines) + ("\n" if final_nl else ""), encoding="utf-8")
+
+
+def _id_build(args):
+    index = _build_index(BOOK_DIR, _load_index(BOOK_DIR))
+    changed = _write_index(BOOK_DIR, index, force=args.force)
+    t = index["totals"]
+    tomb = sum(len(s["tombstones"]) for s in index["sections"])
+    if args.json:
+        print(json.dumps({"changed": changed, "totals": t, "tombstones": tomb}, indent=2))
+    else:
+        print(f"manuscript-index: {t['blocks']} blocks · {t['sections']} sections · "
+              f"{t['words']:,} words" + ("" if changed else " (unchanged)"))
+        if tomb:
+            print(f"  {tomb} tombstoned id(s) retained for audit")
+    return 0
+
+
+def _id_list(args):
+    index = _live_index()
+    rows = []
+    for sec in index["sections"]:
+        if args.section and sec["id"] != args.section:
+            continue
+        for blk in sec["blocks"]:
+            if args.type and blk["type"] != args.type:
+                continue
+            rows.append((sec["file"], blk))
+    if args.json:
+        print(json.dumps([{"section_file": f, **b} for f, b in rows],
+                         indent=2, ensure_ascii=False))
+        return 0
+    print(f"manuscript blocks — {len(rows)} shown\n")
+    for _, b in rows:
+        a, z = b["lines"]
+        tag = b["type"][:4].upper()
+        art = f"  [{b['art_id']}]" if b.get("art_id") else ""
+        print(f"  {b['id']:<26} {tag:<5} L{a}-{z:<5} {b['words']:>4}w  "
+              f"{b['preview'][:60]}{art}")
+    return 0
+
+
+def _id_get(args):
+    index = _live_index()
+    blk, sec = _find_block(index, args.id)
+    if not blk:
+        sys.exit(f"sts.py id get: no block {args.id}")
+    lines = (BOOK_DIR / sec["file"]).read_text(encoding="utf-8").split("\n")
+    a, b = blk["lines"]
+    text = "\n".join(lines[a - 1:b])
+    if args.json:
+        print(json.dumps({**blk, "section": sec["id"], "file": sec["file"],
+                          "text": text}, indent=2, ensure_ascii=False))
+    else:
+        print(text)
+    return 0
+
+
+def _id_replace(args):
+    if args.file:
+        new = Path(args.file).read_text(encoding="utf-8")
+    elif args.stdin:
+        new = sys.stdin.read()
+    elif args.text is not None:
+        new = args.text
+    else:
+        sys.exit("sts.py id replace: provide --text, --file, or --stdin")
+    new = new.rstrip("\n")
+    index = _live_index()
+    blk, sec = _find_block(index, args.id)
+    if not blk:
+        sys.exit(f"sts.py id replace: no block {args.id}")
+    path = BOOK_DIR / sec["file"]
+    a, b = blk["lines"]
+    if args.dry_run:
+        print(f"[dry-run] {args.id}: {sec['file']} L{a}-{b} "
+              f"({blk['words']}w) <- {len(new.splitlines())} new line(s)")
+        return 0
+    _splice(path, (a, b), new)
+    rebuilt = _build_index(BOOK_DIR, _load_index(BOOK_DIR))
+    _write_index(BOOK_DIR, rebuilt, force=True)
+    after, _ = _find_block(rebuilt, args.id)
+    aw = after["words"] if after else "gone"
+    print(f"replaced {args.id} in {sec['file']} (L{a}-{b}, {blk['words']}w -> {aw}w); "
+          f"index rebuilt")
+    return 0
+
+
+def _verify_index(book_dir, index):
+    """Return a list of (check, ok, detail). Pure; used by verify and stress."""
+    checks = []
+    all_ids = [b["id"] for s in index["sections"] for b in s["blocks"]]
+    checks.append(("id.count", len(all_ids) > 0, f"{len(all_ids)} blocks"))
+    dups = len(all_ids) - len(set(all_ids))
+    checks.append(("id.unique", dups == 0, f"{dups} duplicate id(s)"))
+    bad_scheme = [i for i in all_ids if not _ID_RE.match(i)]
+    checks.append(("id.scheme", not bad_scheme, str(bad_scheme[:3])))
+    span_bad, hash_bad, cover_bad = [], [], []
+    for s in index["sections"]:
+        lines = (book_dir / s["file"]).read_text(encoding="utf-8").split("\n")
+        nonblank = {i for i, ln in enumerate(lines, 1) if ln.strip()}
+        covered = []
+        for b in s["blocks"]:
+            a, z = b["lines"]
+            if not (1 <= a <= z <= len(lines)):
+                span_bad.append(b["id"])
+                continue
+            covered += list(range(a, z + 1))
+            text = "\n".join(lines[a - 1:z])
+            lvl = b.get("level", 0)
+            if _block_hash(b["type"], lvl, text) != b["hash"]:
+                hash_bad.append(b["id"])
+        cset = set(covered)
+        if len(covered) != len(cset):
+            cover_bad.append(s["file"] + ":overlap")
+        if nonblank - cset:
+            cover_bad.append(s["file"] + ":unaddressed")
+        if any(lines[i - 1].strip() for i in (cset - nonblank)):
+            cover_bad.append(s["file"] + ":nonblank-gap")
+    checks.append(("span.valid", not span_bad, str(span_bad[:3])))
+    checks.append(("hash.match", not hash_bad, str(hash_bad[:3])))
+    checks.append(("coverage.exact", not cover_bad, str(cover_bad[:3])))
+    # art cross-links resolve
+    cat_ids = set()
+    catp = book_dir / "art-catalog.json"
+    if catp.exists():
+        cat_ids = {a["id"] for a in
+                   json.loads(catp.read_text(encoding="utf-8")).get("assets", [])}
+    art_bad = [b["id"] for s in index["sections"] for b in s["blocks"]
+               if b.get("art_id") and b["art_id"] not in cat_ids]
+    linked = sum(1 for s in index["sections"] for b in s["blocks"] if b.get("art_id"))
+    checks.append(("art.links", not art_bad, f"{linked} linked, bad {art_bad[:3]}"))
+    return checks
+
+
+def _id_verify(args):
+    index = _live_index()
+    checks = _verify_index(BOOK_DIR, index)
+    failed = [c for c in checks if not c[1]]
+    if args.json:
+        print(json.dumps({"ok": not failed,
+                          "checks": [{"check": c, "ok": ok, "detail": d}
+                                     for c, ok, d in checks]}, indent=2))
+    else:
+        for c, ok, d in checks:
+            print(f"  {'PASS' if ok else 'FAIL'}  {c:<16} {d}")
+        t = index["totals"]
+        print(f"\n{'OK' if not failed else 'FAILED'}: "
+              f"{t['blocks']} blocks, {t['sections']} sections, {t['words']:,} words")
+    return 1 if failed else 0
+
+
+def _ids_of(index):
+    return [b["id"] for s in index["sections"] for b in s["blocks"]]
+
+
+def _id_stress(args):
+    """Stress-test programmatic editing on a throwaway copy of the book source.
+
+    Real files are never touched. Exercises: coverage/uniqueness, get-integrity,
+    edit-in-place id stability, insert (fresh id), delete (tombstone), and a
+    revert that must reproduce the baseline ids exactly.
+    """
+    results = []
+
+    def check(name, ok, detail=""):
+        results.append({"check": name, "ok": bool(ok), "detail": detail})
+
+    tmp = Path(tempfile.mkdtemp(prefix="sts-idstress-"))
+    try:
+        for f in BOOK_DIR.glob("*.md"):
+            shutil.copy2(f, tmp / f.name)
+        for extra in ("book.json", "art-catalog.json"):
+            if (BOOK_DIR / extra).exists():
+                shutil.copy2(BOOK_DIR / extra, tmp / extra)
+
+        import time as _time
+        t0 = _time.time()
+        base = _build_index(tmp, None)
+        build_ms = round((_time.time() - t0) * 1000, 1)
+        base_ids = _ids_of(base)
+
+        for c, ok, d in _verify_index(tmp, base):
+            check("build." + c, ok, d)
+        check("perf.build_under_2s", build_ms < 2000, f"{build_ms} ms")
+
+        # get-by-id integrity across every block
+        gi = 0
+        for s in base["sections"]:
+            lines = (tmp / s["file"]).read_text(encoding="utf-8").split("\n")
+            for b in s["blocks"]:
+                a, z = b["lines"]
+                if "\n".join(lines[a - 1:z]) and \
+                   _block_hash(b["type"], b.get("level", 0),
+                               "\n".join(lines[a - 1:z])) == b["hash"]:
+                    gi += 1
+        check("get.integrity_all", gi == len(base_ids), f"{gi}/{len(base_ids)}")
+
+        def first_of(index, sid, btype):
+            sec = next(s for s in index["sections"] if s["id"] == sid)
+            blk = next(b for b in sec["blocks"] if b["type"] == btype)
+            return blk, sec
+
+        prev = base
+
+        # 1. EDIT a paragraph in place -> same id, other ids untouched, no tombstone
+        blk, sec = first_of(prev, "chapter9", "paragraph")
+        orig = "\n".join((tmp / sec["file"]).read_text().split("\n")[
+            blk["lines"][0] - 1:blk["lines"][1]])
+        _splice(tmp / sec["file"], tuple(blk["lines"]), orig + " Stress-edit sentinel.")
+        cur = _build_index(tmp, prev)
+        eblk, _ = _find_block(cur, blk["id"])
+        check("edit.id_stable", eblk is not None, blk["id"])
+        check("edit.word_grew", eblk and eblk["words"] > blk["words"],
+              f"{blk['words']}->{eblk['words'] if eblk else '?'}")
+        check("edit.others_unchanged",
+              set(_ids_of(cur)) == set(base_ids), "id set preserved")
+        check("edit.no_tombstone",
+              sum(len(s["tombstones"]) for s in cur["sections"]) == 0)
+        prev = cur
+
+        # 2. INSERT a new paragraph -> fresh id minted, all prior ids survive
+        blk, sec = first_of(prev, "chapter17", "paragraph")
+        body = "\n".join((tmp / sec["file"]).read_text().split("\n")[
+            blk["lines"][0] - 1:blk["lines"][1]])
+        _splice(tmp / sec["file"], tuple(blk["lines"]),
+                body + "\n\nInserted stress paragraph for id-minting.")
+        before_ids = set(_ids_of(prev))
+        cur = _build_index(tmp, prev)
+        now_ids = set(_ids_of(cur))
+        check("insert.count_plus1", len(now_ids) == len(before_ids) + 1,
+              f"{len(before_ids)}->{len(now_ids)}")
+        check("insert.priors_survive", before_ids <= now_ids)
+        check("insert.fresh_id", len(now_ids - before_ids) == 1,
+              str(sorted(now_ids - before_ids)))
+        prev = cur
+
+        # 3. DELETE a paragraph -> its id tombstoned, others untouched
+        blk, sec = first_of(prev, "introduction", "paragraph")
+        before_ids = set(_ids_of(prev))
+        _splice(tmp / sec["file"], tuple(blk["lines"]), "")
+        cur = _build_index(tmp, prev)
+        now_ids = set(_ids_of(cur))
+        tombs = {t for s in cur["sections"] for t in s["tombstones"]}
+        check("delete.count_minus1", len(now_ids) == len(before_ids) - 1,
+              f"{len(before_ids)}->{len(now_ids)}")
+        check("delete.id_tombstoned", blk["id"] in tombs, blk["id"])
+        check("delete.others_untouched", now_ids == before_ids - {blk["id"]})
+        prev = cur
+
+        # 4. REVERT to pristine source -> a fresh build reproduces baseline ids
+        for f in BOOK_DIR.glob("*.md"):
+            shutil.copy2(f, tmp / f.name)
+        rebuilt = _build_index(tmp, None)
+        check("revert.ids_reproduce", _ids_of(rebuilt) == base_ids,
+              "deterministic minting")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    passed = sum(1 for r in results if r["ok"])
+    failed = [r for r in results if not r["ok"]]
+    if args.json:
+        print(json.dumps({"ok": not failed, "passed": passed,
+                          "total": len(results), "results": results}, indent=2))
+    else:
+        print(f"sts id stress — programmatic-editing stress test "
+              f"({passed}/{len(results)} checks)\n")
+        for r in results:
+            print(f"  {'PASS' if r['ok'] else 'FAIL'}  {r['check']:<26} {r['detail']}")
+        print(f"\n{'ALL PASS' if not failed else str(len(failed)) + ' FAILED'}")
+    return 1 if failed else 0
+
+
+def cmd_id(args):
+    return {"build": _id_build, "list": _id_list, "get": _id_get,
+            "replace": _id_replace, "verify": _id_verify,
+            "stress": _id_stress}[args.action](args)
+
+
+# ──────────────────────────────────────────────────────────────────────
+# art — enroll every book figure in the art catalog (data-driven)
+# ──────────────────────────────────────────────────────────────────────
+#
+# Reads the manuscript index (figure blocks + placement), the .md source (alt +
+# caption), and static/book-images/credits.json (photo attribution), and emits a
+# catalog entry for every figure not yet in art-catalog.json. Ids are a pure
+# function of the file: sts.<kind>.<filename-stem> (kind: photo | diagram |
+# banner), so new art auto-enrolls. Concepts are suggested from a controlled
+# vocabulary so figures stay queryable by topic. Building the catalog does not
+# touch book prose, so it is not a content change (no version bump).
+
+_FIG_ALT_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)")
+
+# concept -> lowercase trigger substrings, matched against alt+caption+heading.
+CONCEPT_VOCAB = {
+    "humanoid-robot": ["atlas", "asimo", "sophia", "humanoid", "spot", "quadruped"],
+    "robotics": ["robot", "robots", "robotic", "farmbot", "gantry", "quadruped"],
+    "automation": ["automation", "automated", "automatic", "autonomous",
+                   "cnc autonomous", "self-tending"],
+    "generative-ai": ["ai-generated", "generated by", "edmond", "belamy",
+                      "generative adversarial"],
+    "model-collapse": ["model collapse", "synthetic slop", "training lineage",
+                       "generation 0", "degrading", "degrades", "degenerate spike"],
+    "cosmology": ["black hole", "galaxies", "hubble", "deep field",
+                  "event horizon telescope", "messier", "m87"],
+    "event-horizon": ["event horizon", "no going back", "past a certain line"],
+    "spaceflight": ["falcon heavy", "rocket", "kennedy space", "space station",
+                    "iss", "from orbit", "sunrise from"],
+    "solar-energy": ["sun", "solar", "sdo", "photovoltaic", "rooftop", "5-watt"],
+    "thermodynamics": ["thermodynamic", "entropy", "waste heat", "survival cycle",
+                       "energy captured", "out-work entropy"],
+    "regeneration": ["madrone", "bark", "from the root", "regeneration",
+                     "regenerative", "comes back"],
+    "soil-health": ["soil", "npk", "microbial", "fungi", "bacteria", "nematode",
+                    "protozoa", "food web", "living soil", "substrate"],
+    "composting": ["compost", "aerated", "molasses", "kelp", "bioreactor",
+                   "dissolved oxygen", " act "],
+    "food-independence": ["calorie", "greenhouse", "grow light", "garden", "csa",
+                          "farmbot", "raised bed", "harvest", "caloric"],
+    "farmbot": ["farmbot", "cnc autonomous bed", "seeds, waters"],
+    "closed-loop": ["closed loop", "closed-loop", "cycle", "in return", "feeds the",
+                    "back to the", "loop back"],
+    "3d-printing": ["3d printer", "3d-print", "reprap", "petg"],
+    "cnc": ["cnc", "plasma", "gantry", "router"],
+    "fabrication": ["fab lab", "fabricate", "machine core", "tool library",
+                    "workbench", "hand tools", "welder"],
+    "welding": ["weld", "c-channel", "hss", "header beam", "steel wall", "6 mm weld"],
+    "dc-microgrid": ["12v", "24v", "dc-native", "dc water", "fuse block",
+                     "fuse panel", "inverter", "conversion loss", "native 12v"],
+    "off-grid-energy": ["off-grid", "18650", "battery", "microgrid", "decouple",
+                        "no meter", "no bill"],
+    "thermal-management": ["cooling", "coolant", "radiator", "water block",
+                           "thermal exchange", "split-loop", "waste heat"],
+    "thermal-envelope": ["spray foam", "r-21", "insulated", "insulation",
+                         "thermal barrier", "vapor-sealed", "closed-cell",
+                         "condensation"],
+    "shouse": ["shouse", "shop half", "half factory", "one envelope", "shed house"],
+    "container-construction": ["container", "shell", "pier", "double-wide",
+                               "one-trip", "640 square"],
+    "wet-room": ["wet-room", "wet room", "shower", "greywater", "linear drain",
+                 "sloped basin"],
+    "mesh-networking": ["mesh", "topology", "star topology", "meshtastic", "node"],
+    "lora": ["lora", "915", "868 mhz", "esp32"],
+    "off-grid-comms": ["sneakernet", "microsd", "courier", "encrypts", "encrypted",
+                       "antenna", "no license"],
+    "resilience": ["single point of failure", "routing problem", "route around",
+                   "buffer", "damage becomes", "redundancy", "redundant"],
+    "attention-economy": ["attention", "infinite scroll", "notification",
+                          "engagement", "suggestibility", "reactive"],
+    "cognitive-autonomy": ["cognitive", "prefrontal", "focus", "deep-focus",
+                           "agency", "sovereign", "batch"],
+    "digital-leverage": ["algorithm", "viral", "wide reach", "media package",
+                         "code and media", "scale while you sleep"],
+    "media-strategy": ["algorithmic judo", "trojan", "wrapper", "payload",
+                       "narrative hook", "outrage"],
+    "supply-chain": ["supply chain", "supply line", "port disruption", "logistic",
+                     "just-in-time", "freight", "shelves stripped"],
+    "deglobalization": ["deglobal", "neighborhood factory", "hyper-local"],
+    "market-collapse": ["stock exchange", "nyse", "trading floor", "dead mall",
+                        "abandoned", "shockwave", "systemic panic", "gradually, then"],
+    "land-strategy": ["land trust", "clt", "ground lease", "real estate", "title",
+                      "perpetuity", "foreclose"],
+    "legal-strategy": ["legal shield", "firewall", "civil penalty", "statute",
+                       "redirection matrix", "municipal"],
+    "commons": ["the commons", "commons loop", "autonomous commons", "community",
+                "shared", "steward", "cooperative", "co-op", "trust mesh"],
+    "food-security": ["food bank", "municipal kitchen", "surplus", "redirect",
+                      "edibility", "calorie deliver"],
+    "systems-thinking": ["pipeline", "architecture", "engine", "matrix", "feedback",
+                         " bus", "sense-decide-actuate", "flow"],
+    "strategy": ["chess", "battle lines", "opening position", "compass", "premortem",
+                 "roadmap", "the map"],
+    "pixel-art": ["pixel art", "pixel-art"],
+}
+
+
+def _load_credits():
+    p = STATIC_DIR / "book-images" / "credits.json"
+    if not p.exists():
+        return {}
+    return {c["file"]: c for c in json.loads(p.read_text(encoding="utf-8"))}
+
+
+def _clean_caption(cap: str) -> str:
+    t = cap.strip()
+    if t.startswith("*") and t.endswith("*"):
+        t = t[1:-1].strip()
+    # Strip a trailing credit parenthetical, tolerating one level of nesting
+    # (e.g. "(Photo by (c)2007 Jina Lee, CC BY-SA 3.0, via Wikimedia Commons)").
+    m = re.search(r"\s*\((?:[^()]|\([^()]*\))*"
+                  r"(?:CC |CC0|Public domain|via Wikimedia)"
+                  r"(?:[^()]|\([^()]*\))*\)\s*$", t)
+    if m:
+        t = t[:m.start()].strip()
+    return t
+
+
+_TRIGGER_CACHE = {}
+
+
+def _derive_concepts(*texts) -> list:
+    """Word-boundary match of the concept vocabulary against the given text.
+
+    Word boundaries (not raw substrings) avoid false hits like 'title' inside
+    'entitled', 'gan' inside 'gantry', or 'iss' inside 'dissolved'.
+    """
+    if not _TRIGGER_CACHE:
+        for concept, trigs in CONCEPT_VOCAB.items():
+            _TRIGGER_CACHE[concept] = [
+                re.compile(r"\b" + re.escape(t.strip()) + r"\b") for t in trigs]
+    hay = " ".join(t.lower() for t in texts if t)
+    return sorted({c for c, pats in _TRIGGER_CACHE.items()
+                   if any(p.search(hay) for p in pats)})
+
+
+def _figure_records(book_dir, index):
+    """Every figure block enriched with alt, cleaned caption, nearest heading."""
+    out = []
+    for sec in index["sections"]:
+        lines = (book_dir / sec["file"]).read_text(encoding="utf-8").split("\n")
+        blocks, heading = sec["blocks"], None
+        for i, b in enumerate(blocks):
+            if b["type"] == "heading":
+                a, z = b["lines"]
+                heading = "\n".join(lines[a - 1:z]).lstrip("# ").strip()
+            if b["type"] != "figure":
+                continue
+            a, z = b["lines"]
+            m = _FIG_ALT_RE.search("\n".join(lines[a - 1:z]))
+            alt = m.group(1) if m else ""
+            img = m.group(2) if m else b.get("image")
+            cap = ""
+            if i + 1 < len(blocks) and blocks[i + 1]["type"] == "caption":
+                ca, cz = blocks[i + 1]["lines"]
+                cap = _clean_caption("\n".join(lines[ca - 1:cz]))
+            out.append({"block_id": b["id"], "art_id": b.get("art_id"),
+                        "section": sec["id"], "file": sec["file"], "image": img,
+                        "alt": alt, "caption": cap, "heading": heading})
+    return out
+
+
+def _figure_kind(image: str):
+    stem = Path(image).name.rsplit(".", 1)[0]
+    ext = Path(image).suffix.lower()
+    if re.match(r"part\d-divider$", stem):
+        return "banner", "banner-pixel", stem
+    if ext == ".svg":
+        return "diagram", "diagram-svg", stem
+    return "photo", "photo", stem
+
+
+def _propose_asset(rec, credits):
+    kind, typ, stem = _figure_kind(rec["image"])
+    label = rec["alt"].split(":")[0].strip() if ":" in rec["alt"] else rec["alt"]
+    asset = {
+        "id": f"sts.{kind}.{stem}",
+        "type": typ,
+        "label": label[:80],
+        "concepts": _derive_concepts(rec["alt"], rec["caption"], rec["heading"]),
+        "figure": "static" + rec["image"] if rec["image"].startswith("/")
+                  else rec["image"],
+        "placement": {"chapter": rec["section"], "file": rec["file"],
+                      "section": rec["heading"]},
+        "alt": rec["alt"],
+        "caption": rec["caption"],
+    }
+    if kind == "photo":
+        c = credits.get(Path(rec["image"]).name)
+        if c:
+            asset["credit"] = {"artist": c.get("artist"),
+                               "license": c.get("license"),
+                               "source": c.get("page")}
+    return asset
+
+
+def _id_art_records():
+    index = _build_index(BOOK_DIR, _load_index(BOOK_DIR))
+    return index, _figure_records(BOOK_DIR, index)
+
+
+def _art_list(args):
+    _, figs = _id_art_records()
+    done = [f for f in figs if f["art_id"]]
+    todo = [f for f in figs if not f["art_id"]]
+    if args.json:
+        print(json.dumps(figs, indent=2, ensure_ascii=False))
+        return 0
+    print(f"figures — {len(figs)} total · {len(done)} catalogued · "
+          f"{len(todo)} not yet\n")
+    for f in figs:
+        mark = f["art_id"] or "—"
+        print(f"  {'[x]' if f['art_id'] else '[ ]'} {Path(f['image']).name:<28} "
+              f"{f['section']:<13} {mark}")
+    return 0
+
+
+def _art_sync(args):
+    _, figs = _id_art_records()
+    credits = _load_credits()
+    todo = [f for f in figs if not f["art_id"]]
+    proposed = [_propose_asset(f, credits) for f in todo]
+    no_concepts = [a["id"] for a in proposed if not a["concepts"]]
+
+    if not args.apply:
+        if args.json:
+            print(json.dumps(proposed, indent=2, ensure_ascii=False))
+        else:
+            print(f"art sync (dry-run) — {len(proposed)} figures to enroll\n")
+            for a in proposed:
+                print(f"  {a['id']:<34} {a['type']:<12} "
+                      f"[{', '.join(a['concepts']) or 'NO CONCEPTS'}]")
+            kinds = {}
+            for a in proposed:
+                kinds[a["type"]] = kinds.get(a["type"], 0) + 1
+            print(f"\n  by kind: " + ", ".join(f"{k} {v}" for k, v in kinds.items()))
+            if no_concepts:
+                print(f"  {len(no_concepts)} with no concepts: {no_concepts}")
+            print("\n  pass --apply to merge into art-catalog.json")
+        return 0
+
+    catp = BOOK_DIR / "art-catalog.json"
+    cat = json.loads(catp.read_text(encoding="utf-8"))
+    existing = {a["id"] for a in cat["assets"]}
+    added = [a for a in proposed if a["id"] not in existing]
+    cat["assets"].extend(added)
+    cat["generated"] = date.today().isoformat()
+    catp.write_text(json.dumps(cat, indent=2, ensure_ascii=False) + "\n",
+                    encoding="utf-8")
+    # rebuild the manuscript index so every figure now carries its art_id
+    idx = _build_index(BOOK_DIR, _load_index(BOOK_DIR))
+    _write_index(BOOK_DIR, idx, force=True)
+    linked = sum(1 for s in idx["sections"] for b in s["blocks"]
+                 if b["type"] == "figure" and b.get("art_id"))
+    total = sum(1 for s in idx["sections"] for b in s["blocks"]
+                if b["type"] == "figure")
+    print(f"art sync: added {len(added)} assets ({len(cat['assets'])} total); "
+          f"manuscript index rebuilt, {linked}/{total} figures linked")
+    if no_concepts:
+        print(f"  {len(no_concepts)} entries need manual concepts: {no_concepts}")
+    return 0
+
+
+def cmd_art(args):
+    return {"list": _art_list, "sync": _art_sync}[args.action](args)
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -1193,6 +1990,41 @@ def main():
     p.add_argument("--save", action="store_true",
                    help="append results to manuscript/sources/research-log.md")
     p.set_defaults(fn=cmd_research)
+
+    p = sub.add_parser("id",
+                       help="manuscript addressing: a stable unique id for every block")
+    p.set_defaults(fn=cmd_id)
+    idsub = p.add_subparsers(dest="action", required=True)
+    b = idsub.add_parser("build", help="(re)generate manuscript-index.json, carrying ids forward")
+    b.add_argument("--json", action="store_true")
+    b.add_argument("--force", action="store_true", help="rewrite even if only the date changed")
+    ls = idsub.add_parser("list", help="list block ids with type, span, and preview")
+    ls.add_argument("--section", help="restrict to one section id (e.g. chapter9)")
+    ls.add_argument("--type", help="restrict to one block type (paragraph, heading, figure, ...)")
+    ls.add_argument("--json", action="store_true")
+    g = idsub.add_parser("get", help="print a block's current source by id")
+    g.add_argument("id")
+    g.add_argument("--json", action="store_true")
+    rp = idsub.add_parser("replace", help="replace a block's source by id (then rebuild the index)")
+    rp.add_argument("id")
+    rp.add_argument("--text", help="replacement markdown (inline)")
+    rp.add_argument("--file", help="read replacement markdown from a file")
+    rp.add_argument("--stdin", action="store_true", help="read replacement markdown from stdin")
+    rp.add_argument("--dry-run", action="store_true", help="report the edit without writing")
+    vf = idsub.add_parser("verify", help="check ids: unique, in-scheme, spans+hashes valid, full coverage")
+    vf.add_argument("--json", action="store_true")
+    ss = idsub.add_parser("stress", help="stress-test programmatic editing on a throwaway copy")
+    ss.add_argument("--json", action="store_true")
+
+    p = sub.add_parser("art",
+                       help="enroll every book figure in art-catalog.json (data-driven)")
+    p.set_defaults(fn=cmd_art)
+    artsub = p.add_subparsers(dest="action", required=True)
+    al = artsub.add_parser("list", help="figure inventory: which are catalogued, which are not")
+    al.add_argument("--json", action="store_true")
+    asy = artsub.add_parser("sync", help="propose (or --apply) catalog entries for uncatalogued figures")
+    asy.add_argument("--apply", action="store_true", help="merge into art-catalog.json + rebuild the index")
+    asy.add_argument("--json", action="store_true")
 
     args = ap.parse_args()
     sys.exit(args.fn(args))

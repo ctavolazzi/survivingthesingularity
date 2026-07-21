@@ -76,7 +76,42 @@ python3 scripts/sts.py scan                 # scannability: pull quotes, walls, 
 python3 scripts/sts.py compile --force      # one-file draft in manuscript/
 bash scripts/build-epub.sh vX.Y.Z           # shipping EPUB + PDF (version-stamped)
 bash scripts/build-pdf-variants.sh vX.Y.Z   # PLAIN (floor) + DELUXE (ceiling) PDFs
+
+# Manuscript addressing — a stable unique id for every block (see 3a)
+python3 scripts/sts.py id build             # (re)gen src/lib/data/book/manuscript-index.json
+python3 scripts/sts.py id list --section chapter9 --type figure
+python3 scripts/sts.py id get sts.chapter9.b0029        # print a block's source by id
+python3 scripts/sts.py id replace <id> --file new.md    # edit a block, then auto-rebuild the index
+python3 scripts/sts.py id verify            # ids unique + in-scheme, spans/hashes valid, full coverage
+python3 scripts/sts.py id stress            # stress-test programmatic editing (throwaway copy)
+
+# Art catalog — enroll every figure (data-driven; ids sts.<kind>.<filename-stem>)
+python3 scripts/sts.py art list             # figure inventory: which are catalogued
+python3 scripts/sts.py art sync             # dry-run: propose catalog entries for new figures
+python3 scripts/sts.py art sync --apply     # merge into art-catalog.json + rebuild the index
 ```
+
+### 3a. Manuscript addressing (`sts.py id`, added 2026-07-20)
+
+Every block of the book — heading, paragraph, list, blockquote, figure, caption,
+table, code fence, hr — carries a stable unique id `sts.<section_id>.b<NNNN>`
+(e.g. `sts.chapter9.b0029`). The map lives in a **sidecar** file,
+`src/lib/data/book/manuscript-index.json` (schema `sts-manuscript-index/v1`),
+NOT in the .md source. Consequences:
+
+- The .md stays clean; nothing leaks into the book/EPUB/PDF. Building the index
+  is **not a content change** — no version bump, no build ritual, no deploy risk.
+- Ids are carried forward across rebuilds: an in-place edit keeps the block's id,
+  an insert mints a fresh id, a delete tombstones the id (audit trail). This is
+  what makes id-addressed programmatic editing safe.
+- Figure blocks cross-link to `art-catalog.json` via `art_id`, so prose and art
+  share one addressable namespace (the join key for coursework). As of build:
+  1,960 blocks, 66 figures, 7 cross-linked to catalog assets (59 figures not yet
+  in the art catalog — that is the coursework-prerequisite TODO).
+- `id verify` is CI-friendly (exits non-zero on any failure); `id stress` runs a
+  20-check edit/insert/delete/revert suite on a throwaway copy and never touches
+  real files. Regenerate the index after any manuscript edit (`id replace` does
+  it automatically; manual .md edits need a `id build`).
 
 - Pull-quote syntax in source: a standalone `> **Sentence.**` line. Site/EPUB
   render it as a bold blockquote; DELUXE renders it as a centered amber pull

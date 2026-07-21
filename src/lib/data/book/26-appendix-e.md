@@ -2,6 +2,10 @@
 
 *Chapter 17 gave you the workbench. This is the machine that comes off it. A cyberdeck is a personal computer you build yourself, from parts you understand, to run without a cloud, a subscription, or anyone's permission. In 2026 the culture around them stopped being niche. This appendix is a field guide: what a cyberdeck is, why it came back, and how to build one that survives the transition instead of depending on it.*
 
+![A homemade cyberdeck: a rugged hard case holding a mechanical keyboard, an amber map-lit screen, and a stub antenna](/book-images/appe-cyberdeck.png)
+
+*A computer you understand all the way down, that answers to nobody's server.*
+
 ## The Word, and Where It Came From
 
 The word is older than the hardware. William Gibson coined "cyberspace deck" in 1984, in *Neuromancer*, for the machine his console cowboys jacked into the matrix with. He never described it in detail. He has since admitted he had no clear picture of what it should look like, so he left the picture to the reader. For almost thirty years that was all a cyberdeck was: a hole in a novel, shaped exactly like the machine you wished you owned.

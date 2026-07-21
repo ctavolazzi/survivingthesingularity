@@ -5,7 +5,11 @@ of truth is **`src/lib/data/book/art-catalog.json`** (schema `sts-art-catalog/v1
 build coursework and tooling against that file, not this one.
 
 - **ID scheme:** `sts.<kind>.<slug>` where kind is `sprite` (object), `char`
-  (character), `plate` (composite figure placed in the book), `diagram` (SVG).
+  (character), `plate` (composite figure placed in the book), `diagram` (SVG),
+  `photo` (licensed photograph header), `banner` (part-divider pixel art). For
+  the auto-enrolled figures the slug is the image filename stem
+  (`sts.diagram.ch09-npk-loop`, `sts.photo.ch01-atlas`) so ids are collision-free
+  and derivable; the original hand-picked plates/diagrams keep their prettier slugs.
 - **Palette:** navy `#020617`, amber `#f59e0b`, blue `#3b82f6`, slate `#94a3b8`, ink `#f1f5f9`.
 - **Raw sprites** (transparent PNG, reusable for recomposition): `static/book-images/sprites/<id-with-hyphens>.png`.
 - **Provenance / license:** PixelLab (Tier 1) generations + Python(Pillow) compositing;
@@ -67,13 +71,25 @@ manuscript index — `src/lib/data/book/manuscript-index.json` (schema
 `sts.py id list --type figure` enumerates all 66 figures and shows which already
 have an `art_id`. That is the worklist for the cataloguing task below.
 
-## Not yet catalogued (future work)
+## Every figure is now catalogued (2026-07-20)
 
-The 33 pre-existing hand-authored SVG figures (`ch*-*.svg`), the photo headers
-(`ch*.jpg/.webp`), and the three pixel-art part-divider banners
-(`part{1,2,3}-divider.png`) are **not yet** in `art-catalog.json` (7 of the 66
-figures are catalogued; 59 are not). Extending the catalog to every book figure
-(with concept tags) is the prerequisite for chapter-complete programmatic
-coursework. Every one of those 59 already has a stable block id in the manuscript
-index, so the join target exists — only the concept tags are missing. See the
-continuation prompt.
+All **66** figures in the book are in `art-catalog.json` (79 assets total,
+including the sprite/character components). The 59 pre-existing figures — 34
+hand-authored SVG diagrams, 22 licensed photo headers, and the 3 part-divider
+banners — were enrolled by `sts.py art sync --apply`, which is data-driven:
+
+- Ids, labels, placement, alt, and caption are pulled from the manuscript index +
+  source; photo `credit` (artist, license, source) comes from
+  `static/book-images/credits.json`.
+- `concepts[]` are suggested from a controlled vocabulary (word-boundary matched
+  against alt + caption + heading) so figures are queryable by topic. **These
+  tags are auto-derived — treat them as a first pass and refine by hand.** Once an
+  asset is in the catalog, `art sync` never overwrites it, so hand edits stick
+  (already done: `ch04-hubble` de-tagged from `land-strategy`, `ch09-act-reactor`
+  from `mesh-networking`, the three banners given distinct labels).
+- New art auto-enrolls: drop a figure into a chapter, run `sts.py art sync`, and
+  it appears with a fresh id and suggested concepts. `sts.py art list` shows which
+  figures are catalogued.
+
+The catalog `concepts[]` + `placement.chapter` are the join keys for the
+chapter-complete coursework generator (next in the continuation prompt).

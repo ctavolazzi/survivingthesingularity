@@ -40,7 +40,7 @@
           "hash": "6c69928ffcf1",
           "preview": "![Boston Dynamics Atlas during DARPA testing](/book-images/ch01-atlas.jpg)",
           "image": "/book-images/ch01-atlas.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch01-atlas"
         },
         {
           "id": "sts.introduction.b0003",
@@ -419,7 +419,7 @@
           "hash": "c018e312195f",
           "preview": "![Honda ASIMO humanoid robot, 2001](/book-images/intro-asimo.jpg)",
           "image": "/book-images/intro-asimo.jpg",
-          "art_id": null
+          "art_id": "sts.photo.intro-asimo"
         },
         {
           "id": "sts.preface.b0003",
@@ -818,7 +818,7 @@
           "hash": "10c2038b0fad",
           "preview": "![Peeling red bark of a Pacific madrone (Arbutus menziesii)](/book-images/ch00-madrone-bar",
           "image": "/book-images/ch00-madrone-bark.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch00-madrone-bark"
         },
         {
           "id": "sts.chapter0.b0003",
@@ -1789,7 +1789,7 @@
           "hash": "f2ab89bd9c57",
           "preview": "![Pixel art: a dark sun crossed by an amber ring rising over a perspective grid, a lone fi",
           "image": "/book-images/part1-divider.png",
-          "art_id": null
+          "art_id": "sts.banner.part1-divider"
         },
         {
           "id": "sts.part-1.b0003",
@@ -1835,7 +1835,7 @@
           "hash": "07d5d3bb0df6",
           "preview": "![Event Horizon Telescope image of the M87 supermassive black hole](/book-images/ch01-m87-",
           "image": "/book-images/ch01-m87-black-hole.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch01-m87-black-hole"
         },
         {
           "id": "sts.chapter1.b0003",
@@ -2526,7 +2526,7 @@
           "hash": "ceecf43446df",
           "preview": "![Robotic arms assembling a car body](/book-images/ch02-factory-robots.jpg)",
           "image": "/book-images/ch02-factory-robots.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch02-factory-robots"
         },
         {
           "id": "sts.chapter2.b0003",
@@ -3569,7 +3569,7 @@
           "hash": "69289b758eab",
           "preview": "![Falcon Heavy lifting off from Kennedy Space Center](/book-images/ch03-falcon-heavy.jpg)",
           "image": "/book-images/ch03-falcon-heavy.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch03-falcon-heavy"
         },
         {
           "id": "sts.chapter3.b0003",
@@ -4202,7 +4202,7 @@
           "hash": "33391295177e",
           "preview": "![Hubble Ultra-Deep Field showing thousands of galaxies](/book-images/ch04-hubble-deep-fie",
           "image": "/book-images/ch04-hubble-deep-field.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch04-hubble-deep-field"
         },
         {
           "id": "sts.chapter4.b0003",
@@ -4814,7 +4814,7 @@
           "hash": "cc1c15721447",
           "preview": "![The Sun imaged by NASA's Solar Dynamics Observatory](/book-images/ch05-sdo-sun.jpg)",
           "image": "/book-images/ch05-sdo-sun.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch05-sdo-sun"
         },
         {
           "id": "sts.chapter5.b0003",
@@ -5419,7 +5419,7 @@
           "hash": "71f578b6b431",
           "preview": "![The Closed-Loop Survival Cycle: sun and soil feed community calories, which fund creativ",
           "image": "/book-images/ch05-closed-loop-cycle.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch05-closed-loop-cycle"
         },
         {
           "id": "sts.chapter5.b0057",
@@ -5856,7 +5856,7 @@
           "hash": "856c1f09d907",
           "preview": "![Pixel art: scattered figures standing alone in the dark on the left, a small group gathe",
           "image": "/book-images/part2-divider.png",
-          "art_id": null
+          "art_id": "sts.banner.part2-divider"
         },
         {
           "id": "sts.part-2.b0003",
@@ -5926,7 +5926,7 @@
           "hash": "a162f31a7fbc",
           "preview": "![Edmond de Belamy, the first AI-generated portrait sold at a major auction house](/book-i",
           "image": "/book-images/ch06-edmond-de-belamy.png",
-          "art_id": null
+          "art_id": "sts.photo.ch06-edmond-de-belamy"
         },
         {
           "id": "sts.chapter6.b0003",
@@ -6517,7 +6517,7 @@
           "hash": "b1a84dbdb67d",
           "preview": "![Chess board set up in the opening position](/book-images/ch07-chess-battle-lines.jpg)",
           "image": "/book-images/ch07-chess-battle-lines.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch07-chess-battle-lines"
         },
         {
           "id": "sts.chapter7.b0003",
@@ -7152,7 +7152,7 @@
           "hash": "ab3c874538d5",
           "preview": "![Sophia, the humanoid robot by Hanson Robotics](/book-images/ch08-sophia.jpg)",
           "image": "/book-images/ch08-sophia.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch08-sophia"
         },
         {
           "id": "sts.chapter8.b0003",
@@ -7486,7 +7486,7 @@
           "hash": "51fb11a9cea7",
           "preview": "![The Cognitive Extraction Engine: raw attention is harvested by infinite scroll and notif",
           "image": "/book-images/ch08-cognitive-extraction.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch08-cognitive-extraction"
         },
         {
           "id": "sts.chapter8.b0033",
@@ -7690,7 +7690,7 @@
           "hash": "857cbdfd0339",
           "preview": "![Information Dispensing Architectures: a centralized algorithmic stream interrupting your",
           "image": "/book-images/ch08-info-architectures.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch08-info-architectures"
         },
         {
           "id": "sts.chapter8.b0051",
@@ -8181,7 +8181,7 @@
           "hash": "34ee91529336",
           "preview": "![The Cognitive Fragmentation Curve: a graph of cognitive depth over one hour, showing a t",
           "image": "/book-images/ch08-focus-recovery.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch08-focus-recovery"
         },
         {
           "id": "sts.chapter8.b0095",
@@ -8350,7 +8350,7 @@
           "hash": "5020eed8383d",
           "preview": "![The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batc",
           "image": "/book-images/ch08-firewall-pipeline.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch08-firewall-pipeline"
         },
         {
           "id": "sts.chapter8.b0110",
@@ -8721,7 +8721,7 @@
           "hash": "9990ff2c2b27",
           "preview": "![The Decay of Isolated Systems: an isolated individual fans out into solar drift, soil de",
           "image": "/book-images/ch08-isolated-decay.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch08-isolated-decay"
         },
         {
           "id": "sts.chapter8.b0143",
@@ -8912,7 +8912,7 @@
           "hash": "e04f17df4332",
           "preview": "![Trust network topologies: a star topology where every node depends on one hub that can f",
           "image": "/book-images/ch08-star-vs-mesh.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch08-star-vs-mesh"
         },
         {
           "id": "sts.chapter8.b0160",
@@ -9037,7 +9037,7 @@
           "hash": "b385d038e39c",
           "preview": "![The Autonomous Commons Loop: a shared solar DC microgrid powers a local GPU server produ",
           "image": "/book-images/ch08-commons-loop.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch08-commons-loop"
         },
         {
           "id": "sts.chapter8.b0171",
@@ -9250,7 +9250,7 @@
           "hash": "259f3eabe9df",
           "preview": "![Desktop 3D printer mid-print](/book-images/ch09-3d-printer.jpg)",
           "image": "/book-images/ch09-3d-printer.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch09-3d-printer"
         },
         {
           "id": "sts.chapter9.b0003",
@@ -9831,7 +9831,7 @@
           "hash": "de15eb2882ae",
           "preview": "![The Destructive NPK Feedback Loop: applying synthetic NPK kills native soil biology, whi",
           "image": "/book-images/ch09-npk-loop.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch09-npk-loop"
         },
         {
           "id": "sts.chapter9.b0055",
@@ -9934,7 +9934,7 @@
           "hash": "71f21c86b546",
           "preview": "![The Greenhouse Automation Bus: a Raspberry Pi running Mycodo reads an I2C sensor bus (SH",
           "image": "/book-images/ch09-greenhouse-bus.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch09-greenhouse-bus"
         },
         {
           "id": "sts.chapter9.b0064",
@@ -10126,7 +10126,7 @@
           "hash": "c652f1b45300",
           "preview": "![The CNC Autonomous Bed: a gantry travels the X-axis over a dense raised bed while a Z-ax",
           "image": "/book-images/ch09-cnc-bed.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch09-cnc-bed"
         },
         {
           "id": "sts.chapter9.b0081",
@@ -10240,7 +10240,7 @@
           "hash": "2d4269729050",
           "preview": "![The ACT Biological Reactor: a mesh compost bag suspended in a 200-liter tank of water, m",
           "image": "/book-images/ch09-act-reactor.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch09-act-reactor"
         },
         {
           "id": "sts.chapter9.b0091",
@@ -10631,7 +10631,7 @@
           "hash": "df6a1275e5c6",
           "preview": "![Pixel art: a container shouse with a lit window and rooftop solar, a wind turbine, garde",
           "image": "/book-images/part3-divider.png",
-          "art_id": null
+          "art_id": "sts.banner.part3-divider"
         },
         {
           "id": "sts.part-3.b0003",
@@ -10699,7 +10699,7 @@
           "hash": "e410cbf35cb3",
           "preview": "![The New York Stock Exchange trading floor](/book-images/ch10-nyse.jpg)",
           "image": "/book-images/ch10-nyse.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch10-nyse"
         },
         {
           "id": "sts.chapter10.b0003",
@@ -11457,7 +11457,7 @@
           "hash": "b6e028e66ffa",
           "preview": "![Model collapse generation by generation: a wide, rich human-data distribution at Generat",
           "image": "/book-images/ch10-model-collapse.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch10-model-collapse"
         },
         {
           "id": "sts.chapter10.b0071",
@@ -11626,7 +11626,7 @@
           "hash": "0c28d82b26e6",
           "preview": "![The Algorithmic Judo pipeline: a high-utility off-grid tech core wrapped in an outrage o",
           "image": "/book-images/ch10-algorithm-unlock.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch10-algorithm-unlock"
         },
         {
           "id": "sts.chapter10.b0086",
@@ -12019,7 +12019,7 @@
           "hash": "749c850e73ed",
           "preview": "![Boston Dynamics Spot quadruped robot](/book-images/ch11-spot.jpg)",
           "image": "/book-images/ch11-spot.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch11-spot"
         },
         {
           "id": "sts.chapter11.b0003",
@@ -12444,7 +12444,7 @@
           "hash": "cd9098bbc110",
           "preview": "![The Autonomous Rack Architecture: a 12V-native rack with an EdgeRouter and DC switch at ",
           "image": "/book-images/ch11-rack-architecture.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch11-rack-architecture"
         },
         {
           "id": "sts.chapter11.b0041",
@@ -12657,7 +12657,7 @@
           "hash": "76c6c575f7a7",
           "preview": "![The Split-Loop Thermal Exchange: GPU and CPU water blocks inside the insulated shell fee",
           "image": "/book-images/ch11-cooling-loop.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch11-cooling-loop"
         },
         {
           "id": "sts.chapter11.b0060",
@@ -13093,7 +13093,7 @@
           "hash": "0948d55d0bbc",
           "preview": "![FarmBot automated gardening system over a raised bed](/book-images/ch12-farmbot.jpg)",
           "image": "/book-images/ch12-farmbot.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch12-farmbot"
         },
         {
           "id": "sts.chapter12.b0003",
@@ -13538,7 +13538,7 @@
           "hash": "d9043a4e9d45",
           "preview": "![The Shouse Thermodynamic Engine: the shop half holds the welder, CNC plasma, tool librar",
           "image": "/book-images/ch12-shouse-engine.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch12-shouse-engine"
         },
         {
           "id": "sts.chapter12.b0043",
@@ -13629,7 +13629,7 @@
           "hash": "a5847c08ed3b",
           "preview": "![The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhou",
           "image": "/book-images/ch12-csa-network.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch12-csa-network"
         },
         {
           "id": "sts.chapter12.b0051",
@@ -14348,7 +14348,7 @@
           "hash": "46635536f40b",
           "preview": "![Solar panels on a rural outbuilding roof](/book-images/ch13-solar-barn.jpg)",
           "image": "/book-images/ch13-solar-barn.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch13-solar-barn"
         },
         {
           "id": "sts.chapter13.b0003",
@@ -14704,7 +14704,7 @@
           "hash": "423b49b92aaa",
           "preview": "![The Double-Wide Shell Architecture: two 8-by-40-foot containers mated along a reinforced",
           "image": "/book-images/ch13-shell-architecture.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch13-shell-architecture"
         },
         {
           "id": "sts.chapter13.b0035",
@@ -14829,7 +14829,7 @@
           "hash": "850ea78abe37",
           "preview": "![6-Point Pier Alignment: plan view of six concrete piers positioned at the corner and cen",
           "image": "/book-images/ch13-pier-alignment.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch13-pier-alignment"
         },
         {
           "id": "sts.chapter13.b0046",
@@ -15044,7 +15044,7 @@
           "hash": "6b9945788dfd",
           "preview": "![Center C-Channel Reinforcement: section view showing the roof corrugation carried by a d",
           "image": "/book-images/ch13-c-channel.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch13-c-channel"
         },
         {
           "id": "sts.chapter13.b0065",
@@ -15291,7 +15291,7 @@
           "hash": "c90557baaed5",
           "preview": "![The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm ",
           "image": "/book-images/ch13-thermal-seal.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch13-thermal-seal"
         },
         {
           "id": "sts.chapter13.b0087",
@@ -15393,7 +15393,7 @@
           "hash": "ea8388795326",
           "preview": "![Universal Wet-Room Layout: plan view with DC water pump feeding a shower fixture, the en",
           "image": "/book-images/ch13-wet-room.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch13-wet-room"
         },
         {
           "id": "sts.chapter13.b0096",
@@ -15640,7 +15640,7 @@
           "hash": "6e1dbadfdc8a",
           "preview": "![Interior of an abandoned shopping mall](/book-images/ch14-dead-mall.jpg)",
           "image": "/book-images/ch14-dead-mall.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch14-dead-mall"
         },
         {
           "id": "sts.chapter14.b0003",
@@ -15952,7 +15952,7 @@
           "hash": "f6201ac3c2c9",
           "preview": "![The Logistic Shockwave: a four-day cascade from port disruption, to trucks rerouted, to ",
           "image": "/book-images/ch14-logistic-shockwave.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch14-logistic-shockwave"
         },
         {
           "id": "sts.chapter14.b0031",
@@ -16365,7 +16365,7 @@
           "hash": "5ff4ffbc728d",
           "preview": "![Centralized versus decentralized mesh communications: a single tower serving three users",
           "image": "/book-images/ch14-mesh-comms.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch14-mesh-comms"
         },
         {
           "id": "sts.chapter14.b0068",
@@ -16756,7 +16756,7 @@
           "hash": "995d89c3c15a",
           "preview": "![Automated watering over garden soil](/book-images/ch12-farmbot-watering.jpg)",
           "image": "/book-images/ch12-farmbot-watering.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch12-farmbot-watering"
         },
         {
           "id": "sts.chapter15.b0003",
@@ -17090,7 +17090,7 @@
           "hash": "a54ddc2008c1",
           "preview": "![The Cooperative Land Trust Firewall: the speculative real estate market's attempts to bu",
           "image": "/book-images/ch15-clt-firewall.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch15-clt-firewall"
         },
         {
           "id": "sts.chapter15.b0033",
@@ -17328,7 +17328,7 @@
           "hash": "93d0216427bc",
           "preview": "![The Soil Food Web Engine: sunlight and plants pump sugars to bacteria and fungi, which m",
           "image": "/book-images/ch15-soil-food-web.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch15-soil-food-web"
         },
         {
           "id": "sts.chapter15.b0054",
@@ -17619,7 +17619,7 @@
           "hash": "4d4df861fca6",
           "preview": "![Racks of servers in a data center](/book-images/ch16-servers.jpg)",
           "image": "/book-images/ch16-servers.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch16-servers"
         },
         {
           "id": "sts.chapter16.b0003",
@@ -17953,7 +17953,7 @@
           "hash": "15ed38be3445",
           "preview": "![The Spiral of Model Collapse: AI models train on high-quality human data, flood the web ",
           "image": "/book-images/ch16-model-collapse.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch16-model-collapse"
         },
         {
           "id": "sts.chapter16.b0033",
@@ -18088,7 +18088,7 @@
           "hash": "94c8cd5ab2cd",
           "preview": "![The Algorithmic Judo Pipeline: a trojan-horse media package with a visible emotional wra",
           "image": "/book-images/ch16-algorithmic-judo.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch16-algorithmic-judo"
         },
         {
           "id": "sts.chapter16.b0045",
@@ -18281,7 +18281,7 @@
           "hash": "7604ebe2f0d8",
           "preview": "![The Sneakernet Cycle: an independent node encrypts data onto a microSD card, which is pa",
           "image": "/book-images/ch16-sneakernet.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch16-sneakernet"
         },
         {
           "id": "sts.chapter16.b0062",
@@ -18561,7 +18561,7 @@
           "hash": "f67db50c271f",
           "preview": "![Workbench with hand tools](/book-images/ch17-workbench.jpg)",
           "image": "/book-images/ch17-workbench.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch17-workbench"
         },
         {
           "id": "sts.chapter17.b0003",
@@ -18941,7 +18941,7 @@
           "hash": "c6f76c7b634e",
           "preview": "![Anatomy of an independent mesh node: a waterproof Pelican case containing a 5-watt solar",
           "image": "/book-images/ch17-lora-node.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch17-lora-node"
         },
         {
           "id": "sts.chapter17.b0037",
@@ -19066,7 +19066,7 @@
           "hash": "31181763f289",
           "preview": "![The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 p",
           "image": "/book-images/ch17-dc-native.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch17-dc-native"
         },
         {
           "id": "sts.chapter17.b0048",
@@ -19179,7 +19179,7 @@
           "hash": "f8fdf48077a0",
           "preview": "![The Decentralized Fab Lab: recycled raw materials feed three open-source machine cores, ",
           "image": "/book-images/ch17-fab-lab.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch17-fab-lab"
         },
         {
           "id": "sts.chapter17.b0058",
@@ -19631,7 +19631,7 @@
           "hash": "a70f40b17af7",
           "preview": "![Topographic map with compass rose](/book-images/ch18-compass-map.jpg)",
           "image": "/book-images/ch18-compass-map.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch18-compass-map"
         },
         {
           "id": "sts.chapter18.b0003",
@@ -20333,7 +20333,7 @@
           "hash": "0762cd030c2a",
           "preview": "![Sunrise seen from the International Space Station](/book-images/ch19-iss-sunrise.jpg)",
           "image": "/book-images/ch19-iss-sunrise.jpg",
-          "art_id": null
+          "art_id": "sts.photo.ch19-iss-sunrise"
         },
         {
           "id": "sts.conclusion.b0003",
@@ -21136,7 +21136,7 @@
           "hash": "0ae1f15e7056",
           "preview": "![The Surplus Redirection Matrix: commercial surplus food is sorted by edibility, with edi",
           "image": "/book-images/appa-redirection-matrix.svg",
-          "art_id": null
+          "art_id": "sts.diagram.appa-redirection-matrix"
         },
         {
           "id": "sts.appendix-a.b0026",

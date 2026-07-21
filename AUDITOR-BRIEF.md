@@ -84,6 +84,11 @@ python3 scripts/sts.py id get sts.chapter9.b0029        # print a block's source
 python3 scripts/sts.py id replace <id> --file new.md    # edit a block, then auto-rebuild the index
 python3 scripts/sts.py id verify            # ids unique + in-scheme, spans/hashes valid, full coverage
 python3 scripts/sts.py id stress            # stress-test programmatic editing (throwaway copy)
+
+# Art catalog — enroll every figure (data-driven; ids sts.<kind>.<filename-stem>)
+python3 scripts/sts.py art list             # figure inventory: which are catalogued
+python3 scripts/sts.py art sync             # dry-run: propose catalog entries for new figures
+python3 scripts/sts.py art sync --apply     # merge into art-catalog.json + rebuild the index
 ```
 
 ### 3a. Manuscript addressing (`sts.py id`, added 2026-07-20)

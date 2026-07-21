@@ -42,6 +42,10 @@ So ask the question this whole book turns on, and ask it in plain language. If a
 
 > **If a robot can grow my food and build my house, why am I still renting my survival?**
 
+![A pixel-art diptych: on the left a solar-topped farm robot on treads waters a row of vegetable seedlings; on the right a robot on treads raises and bolts the timber frame of a small house](/book-images/intro-robots.png)
+
+*The two machines this whole book is about: one that grows the food, one that builds the house. The pieces already exist; the work is putting them in your neighbors' hands.*
+
 That question is not a complaint. It is a design brief. The rest of this book is the answer, and the answer is not to flee the world or bunker against it. It is to build the thing that makes the question obsolete, close to home, with your neighbors, starting now.
 
 This is the roadmap. These are the nine stages. And we are already well into the first one.

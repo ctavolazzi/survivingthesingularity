@@ -1730,6 +1730,38 @@
       },
       "alt": "Two social contracts compared side by side: the old one runs your labor to a wage to rented survival, and cuts you off if you miss a payment; the new one runs machines and regenerative loops to local abundance to an adequate level of care, so a job becomes a choice",
       "caption": "The old contract makes you rent your survival month to month. The new one makes survival the floor, so a job becomes a choice, not a sentence."
+    },
+    {
+      "id": "sts.plate.grow-build-robots",
+      "type": "plate-composite",
+      "label": "The Robots That Grow Your Food and Build Your House",
+      "concepts": [
+        "robotics",
+        "automation",
+        "food-independence",
+        "new-social-contract",
+        "seminal-question",
+        "regeneration"
+      ],
+      "figure": "static/book-images/intro-robots.png",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "INTRODUCTION: The Uncompromising Truth"
+      },
+      "alt": "A pixel-art diptych: on the left a solar-topped farm robot on treads waters a row of vegetable seedlings; on the right a robot on treads raises and bolts the timber frame of a small house",
+      "caption": "The two machines this whole book is about: one that grows the food, one that builds the house. The pieces already exist; the work is putting them in your neighbors' hands.",
+      "pixellab": {
+        "grower": {
+          "object_id": "43d42db2-15d1-4072-bcc7-0d97ae6b1b61",
+          "source": "e45876b9 frame 3"
+        },
+        "builder": {
+          "object_id": "5e1c8edb-46a2-42d8-ba1c-772c499a7277",
+          "source": "513d255e frame 0"
+        }
+      },
+      "provenance": "PixelLab 1-direction objects + Python(Pillow) compositing on the navy/amber palette"
     }
   ]
 }

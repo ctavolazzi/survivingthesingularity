@@ -5,16 +5,16 @@
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 1973,
-    "words": 85802
+    "blocks": 1975,
+    "words": 85871
   },
   "sections": [
     {
       "id": "introduction",
       "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md",
-      "next_ordinal": 39,
-      "words": 2035,
+      "next_ordinal": 41,
+      "words": 2104,
       "tombstones": [],
       "blocks": [
         {
@@ -254,11 +254,35 @@
           "preview": "> **If a robot can grow my food and build my house, why am I still renting my survival?**"
         },
         {
-          "id": "sts.introduction.b0036",
-          "type": "paragraph",
+          "id": "sts.introduction.b0039",
+          "type": "figure",
           "lines": [
             45,
             45
+          ],
+          "words": 38,
+          "hash": "9b8dde00b0ee",
+          "preview": "![A pixel-art diptych: on the left a solar-topped farm robot on treads waters a row of veg",
+          "image": "/book-images/intro-robots.png",
+          "art_id": "sts.plate.grow-build-robots"
+        },
+        {
+          "id": "sts.introduction.b0040",
+          "type": "caption",
+          "lines": [
+            47,
+            47
+          ],
+          "words": 31,
+          "hash": "d93075031d10",
+          "preview": "*The two machines this whole book is about: one that grows the food, one that builds the h"
+        },
+        {
+          "id": "sts.introduction.b0036",
+          "type": "paragraph",
+          "lines": [
+            49,
+            49
           ],
           "words": 51,
           "hash": "fe5ad03940a1",
@@ -268,8 +292,8 @@
           "id": "sts.introduction.b0020",
           "type": "paragraph",
           "lines": [
-            47,
-            47
+            51,
+            51
           ],
           "words": 18,
           "hash": "c037614c364b",
@@ -279,8 +303,8 @@
           "id": "sts.introduction.b0037",
           "type": "figure",
           "lines": [
-            49,
-            49
+            53,
+            53
           ],
           "words": 50,
           "hash": "9f1451eb8e1a",
@@ -292,8 +316,8 @@
           "id": "sts.introduction.b0038",
           "type": "caption",
           "lines": [
-            51,
-            51
+            55,
+            55
           ],
           "words": 27,
           "hash": "45f95c86ed4f",
@@ -303,8 +327,8 @@
           "id": "sts.introduction.b0021",
           "type": "heading",
           "lines": [
-            53,
-            53
+            57,
+            57
           ],
           "words": 3,
           "hash": "caaec0489b26",
@@ -315,8 +339,8 @@
           "id": "sts.introduction.b0022",
           "type": "paragraph",
           "lines": [
-            55,
-            55
+            59,
+            59
           ],
           "words": 21,
           "hash": "a2a8c05cf360",
@@ -326,8 +350,8 @@
           "id": "sts.introduction.b0023",
           "type": "paragraph",
           "lines": [
-            57,
-            57
+            61,
+            61
           ],
           "words": 49,
           "hash": "115bad5eaaad",
@@ -337,8 +361,8 @@
           "id": "sts.introduction.b0024",
           "type": "paragraph",
           "lines": [
-            59,
-            59
+            63,
+            63
           ],
           "words": 57,
           "hash": "ebf71a66a63a",
@@ -348,8 +372,8 @@
           "id": "sts.introduction.b0025",
           "type": "paragraph",
           "lines": [
-            61,
-            61
+            65,
+            65
           ],
           "words": 210,
           "hash": "c53f13ff9485",
@@ -359,8 +383,8 @@
           "id": "sts.introduction.b0026",
           "type": "blockquote",
           "lines": [
-            63,
-            63
+            67,
+            67
           ],
           "words": 8,
           "hash": "e14939b8e251",
@@ -370,8 +394,8 @@
           "id": "sts.introduction.b0027",
           "type": "paragraph",
           "lines": [
-            65,
-            65
+            69,
+            69
           ],
           "words": 93,
           "hash": "e0e776b0910b",
@@ -381,8 +405,8 @@
           "id": "sts.introduction.b0028",
           "type": "paragraph",
           "lines": [
-            67,
-            67
+            71,
+            71
           ],
           "words": 106,
           "hash": "b07b568153df",
@@ -392,8 +416,8 @@
           "id": "sts.introduction.b0029",
           "type": "paragraph",
           "lines": [
-            69,
-            69
+            73,
+            73
           ],
           "words": 72,
           "hash": "ffa9525892e7",
@@ -403,8 +427,8 @@
           "id": "sts.introduction.b0030",
           "type": "paragraph",
           "lines": [
-            71,
-            71
+            75,
+            75
           ],
           "words": 84,
           "hash": "6214d7d3b09a",
@@ -414,8 +438,8 @@
           "id": "sts.introduction.b0031",
           "type": "paragraph",
           "lines": [
-            73,
-            73
+            77,
+            77
           ],
           "words": 38,
           "hash": "0022ef0fed18",
@@ -425,8 +449,8 @@
           "id": "sts.introduction.b0032",
           "type": "paragraph",
           "lines": [
-            75,
-            75
+            79,
+            79
           ],
           "words": 25,
           "hash": "4cecdc4cee85",
@@ -436,8 +460,8 @@
           "id": "sts.introduction.b0033",
           "type": "hr",
           "lines": [
-            77,
-            77
+            81,
+            81
           ],
           "words": 0,
           "hash": "ebad27de99a8",

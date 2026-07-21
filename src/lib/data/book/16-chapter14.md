@@ -113,7 +113,7 @@ In the cracks, **there is no such thing as waste. There is only misplaced energy
 
 The first step in building a hyper-local network is the deployment of a **Zero-Waste Redirection Protocol**. This is a strategy of tactical intervention. Instead of allowing surplus food, tools, and raw materials to be dumped into landfills or locked behind corporate waste-management systems, communities must organize to intercept these streams.
 
-This is exactly how we begin to codify our survival. In independent municipal zones, we establish local ordinances to legally protect and enforce this redirection:
+This is exactly how we begin to codify our survival. In hyper-local municipal zones, we establish local ordinances to legally protect and enforce this redirection:
 
 **The Redirection Protocol (Section 3):**
 
@@ -125,7 +125,7 @@ This is exactly how we begin to codify our survival. In independent municipal zo
 
 By enforcing the Redirection Protocol, a community transforms a massive systemic leak into a localized calorie reserve. Suddenly, instead of waiting for a container ship, you are feeding your community using the structural excesses of the very system that tried to render you redundant.
 
-## The Municipal Mesh: Independent Communications
+## The Municipal Mesh: Hyper-Local Communications
 You cannot coordinate a local resource loop if you cannot talk to each other.
 
 The corporate state knows this. That’s why the traditional internet is increasingly gated, monitored, and subject to sudden, centralized kill-switches. If your communication relies on cellular towers owned by multinational telecom conglomerates and routing servers located in high-security datacenters, your coordination is entirely permission-based.

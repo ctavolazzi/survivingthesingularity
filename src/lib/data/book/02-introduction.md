@@ -38,7 +38,17 @@ This is the second time. That's what the machine actually is, under all the doom
 
 Which is why "it's all over" and "we're so back" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Tell someone the machine can do most jobs now and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But capitalism is going to be fine. The markets will still be here. What ends is the part where you *have* to sell your day to a corporation to be allowed to eat. For the first time, that becomes optional. Not abolished. Optional. And optional is the whole ballgame.
 
+So ask the question this whole book turns on, and ask it in plain language. If a robot can already fold your laundry and walk your dog, why can't it grow your food and build your house? And if it can do those things, why are you still trading your one and only life for the money to rent them back from whoever owns the machine? This is not about a better gadget. It is the first real chance to *produce* survival instead of *renting* it: food, shelter, and care, made close to home, by machines a determined person could learn to build and repair.
+
+> **If a robot can grow my food and build my house, why am I still renting my survival?**
+
+That question is not a complaint. It is a design brief. The rest of this book is the answer, and the answer is not to flee the world or bunker against it. It is to build the thing that makes the question obsolete, close to home, with your neighbors, starting now.
+
 This is the roadmap. These are the nine stages. And we are already well into the first one.
+
+![The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge](/book-images/intro-nine-stages.svg)
+
+*The whole roadmap on one page. Everything you can act on lives in the first five stages, and the fight is over the terms of Stage 4.*
 
 ## The Precedent Ledger
 

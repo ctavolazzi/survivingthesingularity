@@ -60,11 +60,23 @@ The solution is not to try and stop the corporate state or appeal to the empathy
 - **Deglobalization, Not Decentralization:** "Decentralized" is a dangerous word. We require centralized control for quality, safety, and establishing critical stopgaps against bad actors. The real target is **deglobalization**. We must shrink the supply lines back to the local level to insulate ourselves from fragile, corrupt global networks.
 - **Neighborhood Factories:** We already have factories; the revolutionary shift is placing a localized, automated factory in **every single neighborhood and city**.
 - **Survival by Decree:** These neighborhood factories must provide for the basic survival needs of the citizens, food, shelter, and healthcare, as an absolute, automated human right. The decree in question is not a government mandate you wait for; it is the founding charter your community writes for its own infrastructure, the co-op bylaw that says the greenhouse feeds members first, the land trust covenant that says nobody gets evicted into the market. You enact it locally, then defend it legally (Chapter 12 shows how).
-- **Johnny Autoseed:** Every vision needs a working prototype, and this book's name for the prototype is Johnny Autoseed: a food-security project in the Johnny Appleseed tradition, planting automated growing capacity instead of orchards. By utilizing existing, non-proprietary technologies (like FarmBot) for hyper-localized food production and neighborhood-level manufacturing (such as processing algae-based bioplastics), it uses the current monetary system as a temporary, enforced tool to construct a resilient, self-sufficient, and deglobalized reality.
+- **A Working Prototype, Already in Backyards:** Every vision needs a working prototype, and this one is not hypothetical. People are already doing it: 3D-printed bioreactors bubbling on workbenches, drip irrigation that opens and closes on soil moisture and barometric pressure, sensor rigs that turn a raised bed into something closer to a Tamagotchi than a chore. None of it waits on anyone's permission. By using existing, non-proprietary technologies (like FarmBot) for hyper-local food production and neighborhood-level manufacturing (such as processing algae-based bioplastics), a community can use the current monetary system as a temporary, enforced tool to build toward a resilient, self-sufficient, deglobalized reality.
 
 ![Two supply lines compared side by side: a long fragile global chain of raw material, overseas factory, ocean freight and last-mile truck, versus a short hyper-local loop of local material, neighborhood factory, and you](/book-images/ch09-hyperlocal-vs-global.svg)
 
 *Not decentralization for its own sake. A shorter line: one you can hold in your head, that depends on your own hands instead of the broken backs of strangers far away.*
+
+## A Dense City Cannot Feed Itself, and It Does Not Have To
+
+The first objection to all of this is always the same, and it is a fair one: New York City cannot grow its own food. Neither can Los Angeles, or Denver, or anywhere people are stacked a hundred feet deep. You do not want a biorefinery or an algae plant or a chemical loop in the middle of Manhattan, and you never will. Density is a feature, not a flaw, and hyper-local has never meant that every city block smelts its own steel.
+
+The trick is to stop drawing the circle around the city and start drawing it around the region. A dense core does not have to make everything inside its own limits. It has to sit inside a ring of surrounding municipalities that do: towns and counties that can fold food production, neighborhood factories, and materials recovery into the way they are already growing. That is not a fantasy. It is a jobs program. While money still matters, and it will for a long time yet, building that ring is honest, well-paid, local work for the people who live there, the trades and the fabricators and the growers and everyone who keeps a place running.
+
+Think of it at the scale it actually deserves, which is Manhattan Project scale. Not a bunker in the woods. A deliberate, regional, out-loud build-out of the capacity to feed and house and power ourselves, handing the labor nobody should have to break their back on to machines, and running it as regenerative closed loops that get healthier the longer they run, good for the people and good for the ground they stand on. The goal is never to cut the city off from the world. It is to make sure that if the world's supply lines seize up for a week or a season, the region keeps its people fed instead of waiting on a truck that is not coming. Resilience, not secession. Ask the only question that matters: if the trucks stopped tomorrow, could your region provide what its people need to survive? Today, almost nowhere can answer yes. That gap is the work.
+
+![A dense city core ringed by four surrounding municipalities that supply it: food production, materials recovery, energy and water, and neighborhood factories, with supply flowing inward to the core](/book-images/ch09-region-ring.svg)
+
+*You do not deglobalize a city by walling it off. You ring it with municipalities that produce what it cannot, which is also where the good jobs are.*
 
 ## The Ultimatum: Why We Must Act Today
 
@@ -86,7 +98,7 @@ The complete hyper-local deglobalized hub stacks three infrastructure layers:
 | Infrastructure Layer | Technological Implementation | Core Functionality |
 | :-- | :-- | :-- |
 | **Energy** | Shouse architecture, blockchain P2P, inverters | Decoupled, self-sustaining power generation and trustless localized market distribution. |
-| **Agriculture** | FarmBot, 3D phenotyping, Johnny Autoseed | Automated, high-yield caloric production eliminating dependency on global shipping. |
+| **Agriculture** | FarmBot, 3D phenotyping, Mycodo grow controllers | Automated, high-yield caloric production eliminating dependency on global shipping. |
 | **Manufacturing** | Algae bioplastics (PHA/PLA), FDM 3D printing | Circular production of physical goods and medical supplies using carbon-negative feedstock. |
 
 ---

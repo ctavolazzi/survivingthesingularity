@@ -47,7 +47,7 @@ Over the next few chapters, we will explore:
   - **The thermodynamics of survival** (and why energy is the only currency that actually matters).
   - **The transition** from hyper-global supply chains to hyper-local regenerative networks.
   - **The power of the soil:** Collective land ownership, protective trusts, and agricultural pooling.
-  - **Digital leverage:** Utilizing content creation, media independent cells, and intellectual assets to build independent support ecosystems.
+  - **Digital leverage:** Utilizing content creation, hyper-local media cells, and intellectual assets to build resilient community support ecosystems.
   - **The tools of the trade:** mesh networks, open-source hardware, and decentralized energy.
   - **The psychology of the collapse** (and how to keep your head, and reclaim your agency, when everyone else is losing theirs).
   - **How to prepare yourself for what’s already here, and what’s coming.**

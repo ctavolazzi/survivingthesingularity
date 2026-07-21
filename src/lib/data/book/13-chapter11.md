@@ -75,7 +75,7 @@ In the cracks, we do not query the cloud. We compute on copper and silicon we ow
 
 We build **The Crucible**: a localized, high-performance, completely air-gapped server stack.
 
-### Section 1: Sourcing and Hardware Mathematics (Independent Compute)
+### Section 1: Sourcing and Hardware Mathematics (Hyper-Local Compute)
 
 You do not need to spend $10,000 on enterprise-grade hardware. The corporate cycle of planned obsolescence is your greatest asset. Every three to five years, enterprise data centers dump truckloads of pristine, high-reliability server hardware onto the secondary market (eBay, government auctions, corporate liquidators) for pennies on the dollar.
 

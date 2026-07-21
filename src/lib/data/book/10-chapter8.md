@@ -33,6 +33,10 @@ Elijah blinked at her.
 
 "Plant closed in '09," she said. "You know that part. Nine hundred of us. What I never told you is what the next year did, because the layoff isn't the wound. The layoff is one day, they cater it, there's a folder. The wound is the *after*, and nobody caters that." She leaned back. "There were two men on my line. Gary and Sal. Same job, same severance, same age, same mortgage. I'm telling you they were the same man on paper. Gary went home and did what you're doing right now. Every morning: the news, the forums, the unemployment numbers, which senator said what, which plant was next. He was going to stay *informed*, Gary. He was going to stay on top of it." She let the phrase sit there between them, wearing his own voice. "And the information went through him like water through a man who can't stop drinking it. You'd see him at the store and he'd have the whole national picture, every betrayal, chapter and verse, and his lawn dead, and his hands soft, and this *hum* coming off him. Couldn't fix a fence. Couldn't sit through dinner. The picture was so big there was no place in it small enough for him to stand."
 
+![A middle-aged factory worker with a tired anxious expression, wearing a plant uniform](/book-images/ch08-gary.png)
+
+*Gary. Stayed informed. Couldn't fix a fence.*
+
 She turned her coffee mug (his coffee mug, she'd poured herself one) a quarter turn, the same gesture as Denny's water glass, and Elijah wondered distantly if everyone who'd been through the fire came out with the same tells.
 
 "Sal cried for a week. Honestly, ugly, scared his kids. And then Sal did the thing I didn't understand for years: he stopped reading the news. Completely. Cold. His brother-in-law called him irresponsible. And every morning Sal got up at the same time he'd gotten up for the line, and he fixed one thing before noon. That was the whole system. One thing, before noon: a gutter, a carburetor, a neighbor's water heater. Afternoons he went and learned welding inspection at the community college, not because he had a plan, because it was *Tuesday*. He knew exactly as much about the national picture as Gary did, you understand. He knew it was bad. He just declined to *rehearse* it all day." She shrugged. "Gary had a heart attack in '12. Sal put a bathroom in my sister's house last spring. Same layoff. Same facts. Different *diet*."
@@ -116,7 +120,7 @@ We are designed to interact with the physical world in high-definition, three-di
 
 To achieve deep work, you must transition your intellectual consumption to **Analog Batch-Processing**:
 
-| Real-Time Stream (Fragile) | Batch-Processing (Independent) |
+| Real-Time Stream (Fragile) | Batch-Processing (Sovereign) |
 | :-- | :-- |
 | Instant reaction | Delayed reflection |
 | Constant interruptions | Deep blocks of focus |
@@ -132,7 +136,7 @@ Let us trace the thread of everything we have built across this book:
 
 If you want to survive the Singularity, you must build parallel, self-reliant communities. But you cannot build a **Community Land Trust** (Chapter 12) if your neighbors are too polarized by algorithmic rage-bait to agree on a meeting time.
 
-You cannot maintain an **Independent Mesh Network** (Chapters 14 and 17) if your local engineers are too distracted by doomscrolling to notice a failing node.
+You cannot maintain a **Neighborhood Mesh Network** (Chapters 14 and 17) if your local engineers are too distracted by doomscrolling to notice a failing node.
 
 You cannot manage a **DC-Native Microgrid** (Chapter 17) if your mind is too fragmented to execute a clean, safe electrical wire splice without blowing your charge controller.
 
@@ -145,7 +149,7 @@ Reclaiming your focus is not a personal self-care option; it is a hostile, polit
 The diagnosis is complete. The systems are designed, and the chapters ahead hand you the tools. But this step is yours alone, and it starts now:
 
 1.  **Purge the Intrusions:** Take your phone right now. Turn off every notification. Delete the apps designed to mine your attention. Put it in a Faraday drawer (Chapter 17) when you are working, eating, or sleeping.
-2.  **Anchor in the Real:** Go outside. Touch the soil. Look at your neighborhood. Find the three people in your immediate vicinity who are ready to stop consuming slop and start building independent systems.
+2.  **Anchor in the Real:** Go outside. Touch the soil. Look at your neighborhood. Find the three people in your immediate vicinity who are ready to stop consuming slop and start building hyper-local systems.
 3.  **Run the Code:** Start small. Build one mesh node. Restore one patch of dead soil. Set up one 12V solar panel. Keep your mind clear, your body active, and your community tight.
 
 The simulation only has power over you as long as you keep your eyes glued to the screen.
@@ -360,7 +364,7 @@ What does a physical Commons look like when stripped of government interference 
 
 1.  **The Shared Energy Bus:** If Node A’s battery bank is topped off at 100% capacity by noon, their solar charge controllers do not dump the excess solar energy as waste heat. It is automatically routed via a localized, low-voltage DC transmission line to Node B, whose server stack is currently running a heavy data-compile.
 2.  **The Biological Exchange:** You do not buy compost inputs or organic fertilizers. You pool waste. Your kitchen scraps, garden waste, and graywater are fed into a centralized biological refinery (Chapter 9). The resulting aerated compost tea (ACT) is distributed to restore the soil biology of every raised bed in the network.
-3.  **The Digital Archive:** One high-capacity local server stack (Chapter 11) hosts the collective digital archive for the entire circle. All medical texts, mechanical manuals, regional maps, and air-gapped LLM models are stored locally and accessed via a private, localized Wi-Fi or LoRa mesh network. Every member of the network has instant, offline access to the sum of human knowledge, completely independent of the commercial internet.
+3.  **The Digital Archive:** One high-capacity local server stack (Chapter 11) hosts the collective digital archive for the entire circle. All medical texts, mechanical manuals, regional maps, and air-gapped LLM models are stored locally and accessed via a private, localized Wi-Fi or LoRa mesh network. Every member of the network has instant, offline access to the sum of human knowledge, completely free of the commercial internet.
 
 ### Section 5: Execution Protocol
 

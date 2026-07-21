@@ -79,9 +79,13 @@ Because it is going to happen, we must plan our future accordingly. And the only
 
 We cannot rely on global supply chains that are one trade war or cyberattack away from collapse. We cannot rely on a corporate-state apparatus that views intelligence as a metered utility.
 
-Each local community must build the infrastructure to provide food, shelter, and medical care independent of the global grid. I have coined a term for this baseline metric: **The Adequate Level of Care (ALC)**.
+Each local community must build the infrastructure to provide food, shelter, and medical care that can keep functioning without the global grid in an emergency. I have coined a term for this baseline metric: **The Adequate Level of Care (ALC)**.
 
 Moving forward, we must stop measuring the success of our economy by GDP. GDP is a ghost metric designed to keep you on the hamster wheel. We must measure our economy by whether or not a community can provide an Adequate Level of Care for the people who live there.
+
+![Two social contracts compared side by side: the old one runs your labor to a wage to rented survival, and cuts you off if you miss a payment; the new one runs machines and regenerative loops to local abundance to an adequate level of care, so a job becomes a choice](/book-images/ch18-social-contract.svg)
+
+*The old contract makes you rent your survival month to month. The new one makes survival the floor, so a job becomes a choice, not a sentence.*
 
 Does your local community have the Local Biorefinery Hubs to process waste? Do you have the localized agriculture to feed your neighbors? Do you have the tools to synthesize basic medicines and build shelters? If global shipping stopped tomorrow, could your community sustain an Adequate Level of Care?
 
@@ -95,7 +99,7 @@ The cascading effects of the Transformer architecture, the biological efficiency
 
 To navigate the rapidly closing window of the 2027 ignition point, society must establish a New Social Contract fundamentally decoupled from labor-for-survival models. This requires the implementation of an "Abundance Quotient" and an "Adequate Level of Care", a systemic, ethical commitment recognizing that essential survival needs (food, shelter, healthcare, and energy) are fundamental human rights that must be secured at the local level without excessive burdens or transactional compliance.
 
-Achieving this transition requires urgent, cooperative dynamics. Communities must proactively bypass the psychological bottlenecks of the scarcity mindset and leverage existing open-source tools to build semi-independent shouse microgrids, automated agricultural hubs, and circular algae-based manufacturing networks. By decoupling individual survival from fragile, globalized supply chains and the metering of corporate gatekeepers, humanity can insulate itself from the inevitable primate backlash and infrastructural panic of the transition. The technological singularity is an active, structural reality; survival depends not on resisting the mathematical inevitability of the machine, but on cooperatively engineering the local infrastructure of abundance to safely receive it.
+Achieving this transition requires urgent, cooperative dynamics. Communities must proactively bypass the psychological bottlenecks of the scarcity mindset and leverage existing open-source tools to build hyper-local shouse microgrids, automated agricultural hubs, and circular algae-based manufacturing networks. By decoupling individual survival from fragile, globalized supply chains and the metering of corporate gatekeepers, humanity can insulate itself from the inevitable primate backlash and infrastructural panic of the transition. The technological singularity is an active, structural reality; survival depends not on resisting the mathematical inevitability of the machine, but on cooperatively engineering the local infrastructure of abundance to safely receive it.
 
 ## The Empowerment Architecture
 
@@ -107,7 +111,7 @@ This roadmap is a beacon for two audiences.
 
 The curriculum is modular, actionable, and technical:
 
-- **Infrastructure deployment:** mesh node deployment for secure, localized communication independent of the global grid; DC microgrid implementation for power resilience at the community level; the Regenerative Hub, integrating mechanical transducers to refine local waste into materials for housing and food.
+- **Infrastructure deployment:** mesh node deployment for secure, localized communication that keeps working even when the global grid goes down; DC microgrid implementation for power resilience at the community level; the Regenerative Hub, integrating mechanical transducers to refine local waste into materials for housing and food.
 - **The ALC protocol:** asset value retention through robotic maintenance, and decoupling survival, moving from a "work or die" contract to a cooperative model where machines perform the labor, and humans perform the coordination, art, and community care.
 
 A system is only as good as its ability to provide food, shelter, and care locally. If your economy cannot provide an Adequate Level of Care to its neighbors, it is a failed system.

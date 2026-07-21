@@ -59,7 +59,7 @@ Our minds were being harvested, row by row, to train the very machine learning m
 
 But magic tricks only work as long as the audience is looking where the magician wants them to look. The moment you step behind the curtain, the illusion falls apart.
 
-In this chapter, we are going to talk about **Digital Leverage**. We are going to explore how to turn the machine's own insatiable appetite for data against it, how to build independent media distribution networks, and why creative human expression is not a luxury, it is a critical survival weapon.
+In this chapter, we are going to talk about **Digital Leverage**. We are going to explore how to turn the machine's own insatiable appetite for data against it, how to build hyper-local media distribution networks, and why creative human expression is not a luxury, it is a critical survival weapon.
 
 ## The Great Slop-ocalypse: Why the Machine Needs You
 To understand your digital leverage, you must understand a quiet crisis currently ravaging the centralized web: **Model Collapse**.
@@ -109,7 +109,7 @@ Before you distribute any media, you must strip away the digital breadcrumbs tha
 Before uploading or sharing any file, use free, open-source tools (like Metadata Cleaner or exiftool) to completely sanitize your files. If the machine cannot verify *where* a piece of human data came from, it cannot target the community that produced it.
 
 ### 2. The P2P Distribution Matrix (IPFS)
-Instead of uploading files to a centralized database (like AWS or Google Cloud), independent communities utilize **IPFS (InterPlanetary File System)**.
+Instead of uploading files to a centralized database (like AWS or Google Cloud), hyper-local communities utilize **IPFS (InterPlanetary File System)**.
 
 IPFS is a peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open.
 
@@ -119,7 +119,7 @@ IPFS is a peer-to-peer hypermedia protocol designed to make the web faster, safe
 ### 3. Sneakernets: The Physical Air-Gap
 When the centralized internet goes dark or gets restricted behind biometric paywalls, we fallback to the ultimate un-hackable network: the **Sneakernet**.
 
-![The Sneakernet Cycle: an independent node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse](/book-images/ch16-sneakernet.svg)
+![The Sneakernet Cycle: a hyper-local node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse](/book-images/ch16-sneakernet.svg)
 
 *The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet.*
 
@@ -138,7 +138,7 @@ When you actively write, paint, compose, code, or build, you are shifting your b
 
 A community that stops telling its own stories will eventually believe the stories told about them by the machine. We must preserve our history, our humor, our tragedies, and our hope.
 
-## Step Four: Launch Your Independent Station
+## Step Four: Launch Your Hyper-Local Station
 To begin building your digital leverage today, do not wait for the grid to go down. Start establishing your infrastructure now:
 
 1.  **Sanitize Your Output:** Download an EXIF metadata stripper today. Make it an unbreakable habit to clean every photo, video, and document before it leaves your local devices.

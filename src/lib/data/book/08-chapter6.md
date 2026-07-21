@@ -25,6 +25,10 @@ He drove north because north was the only direction that had ever meant anything
 
 The shop he pulled into wasn't a mechanic's. He realized it too late, halfway across the gravel: an old apple-packing shed off the county road, roll-up door open to the heat, and inside, not lifts and tires but *fabrication*: a CNC plasma table mid-cut, throwing orange sparks in a fan, welding curtains, steel racked by size along one wall like library books, and a wall of hand tools shadow-boarded so precisely it looked like an evidence display. A woman in a leather apron stood at the plasma table with her back to him, watching the cut the way you watch a pot that's nearly boiling. Fifty-something. Forearms like dock rope.
 
+![A pegboard tool wall with hand tools hung in painted shadow-board silhouettes](/book-images/ch06-tool-wall.png)
+
+*The tool wall. Shadow-boarded like an evidence display.*
+
 "Engine light?" she said, without turning around. "Mechanic's two miles up, left at the grange hall. This isn't that."
 
 "What is it?" Elijah asked, because the question got out ahead of his manners.

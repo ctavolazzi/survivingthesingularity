@@ -25,6 +25,10 @@ He had wanted to weld on it. That was the humiliating part, later: how badly he 
 
 The bead snapped clean along its own centerline. Inside, the break was bright and crystalline and full of small round voids, like honeycomb cast in nickel.
 
+![A heavy steel bench vise clamping a broken metal weld test coupon, the fracture bright and visible](/book-images/ch13-vise.png)
+
+*The vise. The metal does the truth. Bright and crystalline.*
+
 "See the sparkle," she said, not a question. "Cold lap. Porosity. It sat on top of the steel and never became the steel. From six feet it looks like mine. The vise is how the metal does the truth." She set the two halves on the bench where he could keep them, which he did, and has them still. "There's nothing wrong with you, college. You're two hundred hours from a structural bead, and the rain is eight weeks out. And this seam," she put her glove flat on the C-channel, "holds a roof over someone's kid. Not this year's kid. Every kid in every copy of this build that ever gets made off our files. I don't weld those seams tired, and I don't let anybody weld them proud."
 
 So Marta welded the spine of his house, and Elijah went to his lane, and here is the part he would want said plainly: his lane turned out to be real work, and he was good at it. Before the spray foam went in he laced the wall cavities with thermocouple strings, so the shell could report its own temperature gradients for the rest of its life. He wired leak sensors low in the wet-room and at both bulkheads, put current monitoring on every branch circuit of the DC bus, ran the hardline to the shed, and built the little dashboard the whole co-op now uses, the one that shows a floor plan with a nervous system. Marta gave the finished panel a long look and said, "Huh," which everyone present understood to be a medal.

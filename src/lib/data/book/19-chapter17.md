@@ -57,9 +57,9 @@ This is the **Smart Home Trap**.
 
 The corporate state did not need to build prison walls; they just designed a luxury lifestyle where every door, thermostat, lightbulb, and tool requires an active cloud subscription, continuous biometric authentication, and constant telemetry reporting. The moment you step out of line, your entire life is remotely bricked.
 
-In the cracks, we do not use "smart" tools. We use **independent tools**.
+In the cracks, we do not use "smart" tools. We use **tools we own**.
 
-An independent tool is open-source, modular, repairable, and completely air-gapped. If you cannot understand how it works, fix it with basic hand tools, and run it without an internet connection, it is not a tool, it is an electronic leash.
+A tool you own is open-source, modular, repairable, and runs completely offline. If you cannot understand how it works, fix it with basic hand tools, and run it without an internet connection, it is not a tool, it is an electronic leash.
 
 In this chapter, we are going to dive into the physical hardware of survival: the radios, the power grids, and the open-source machines that will allow us to maintain a high-tech existence in a post-corporate world.
 
@@ -72,9 +72,9 @@ In Chapter 2, we discussed the theory of the Decentralized Municipal Mesh Networ
 
 We do not use cellular networks. We do not use commercial satellite links. Instead, we use **LoRa (Long Range)** radio technology.
 
-![Anatomy of an independent mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz](/book-images/ch17-lora-node.svg)
+![Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz](/book-images/ch17-lora-node.svg)
 
-*An independent mesh node. Sunlight in, encrypted packets out, no license and no bill.*
+*A hyper-local mesh node. Sunlight in, encrypted packets out, no license and no bill.*
 
 A standard mesh node is built around an incredibly cheap, highly efficient microcontroller like the **ESP32** integrated with a LoRa radio chip (such as the Heltec V3 or LilyGO T-Beam). These boards cost less than a lunch at a fast-food restaurant, yet they possess extraordinary capabilities:
 
@@ -83,7 +83,7 @@ A standard mesh node is built around an incredibly cheap, highly efficient micro
   - **Meshtastic Integration:** By flashing these chips with open-source firmware like **Meshtastic**, they automatically form a decentralized, encrypted, self-healing communication grid.
 
 ### Building a Field-Ready Node
-To deploy a node that can survive weather, wildlife, and detection, follow the **Independent Node Standard**:
+To deploy a node that can survive weather, wildlife, and detection, follow the **Hyper-Local Node Standard**:
 
 1.  **The Enclosure:** Mount the electronics inside a waterproof plastic Pelican case, a heavy-duty PVC pipe capped at both ends, or a salvaged military ammo can.
 2.  **The Power:** Connect the board to a simple battery holder containing two recycled 18650 lithium-ion cells (salvaged from old laptop battery packs or power tools) and a cheap 5V solar charge regulator wired to a small solar panel.
@@ -106,7 +106,7 @@ In the cracks, we build **DC-Native Systems**.
 
 We run our microgrids on a unified 12V or 24V DC bus. We completely eliminate the inverter.
 
-  - **Independent Distribution:** We route power through standard marine-grade fuse blocks.
+  - **Local Distribution:** We route power through standard marine-grade fuse blocks.
   - **Direct DC Loads:** We run DC-native LED puck lights, marine bilge pumps for water filtration, USB-C chargers for communications hardware, and high-efficiency 12V compression refrigerators.
   - **Recycled Storage:** Instead of buying expensive, proprietary home-battery packs with closed-source battery management systems (BMS) that can remotely lock down the cell if they detect an unapproved charger, we build our own battery banks. We salvage deep-cycle lead-acid batteries from golf carts, marine vessels, or backup power units (UPS). With a simple voltmeter and basic maintenance, these rugged chemistries can keep your lights on for decades.
 
@@ -115,13 +115,13 @@ Securing communication and power is only half the battle. Eventually, things are
 
 If you must order replacement parts from a centralized distributor, your survival is still permission-based.
 
-To achieve true mechanical autonomy, your community must establish a **Independent Fab Lab** utilizing open-source machine tools.
+To achieve true mechanical autonomy, your community must establish a **Neighborhood Fab Lab** utilizing open-source machine tools.
 
-![The Decentralized Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power](/book-images/ch17-fab-lab.svg)
+![The Neighborhood Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power](/book-images/ch17-fab-lab.svg)
 
-*The Independent Fab Lab. Broken means fabricate, not wait.*
+*The Neighborhood Fab Lab. Broken means fabricate, not wait.*
 
-The gold standard for local, independent fabrication is the **Global Village Construction Set (GVCS)**, an open-source project that details how to build the fifty industrial machines necessary to construct a small, modern, sustainable civilization from scratch, including tractors, 3D printers, wind turbines, and brick presses.
+The gold standard for hyper-local fabrication is the **Global Village Construction Set (GVCS)**, an open-source project that details how to build the fifty industrial machines necessary to construct a small, modern, sustainable civilization from scratch, including tractors, 3D printers, wind turbines, and brick presses.
 
 The three critical starting tools for any parallel community are:
 

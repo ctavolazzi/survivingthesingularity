@@ -23,6 +23,10 @@ Marta cared about one number, watts, and he had that answer ready, because a $21
 
 The rack went together the way everything in the shed went together: Marta on steel and power, Elijah on software, everyone else on opinions. Two scavenged compute cards with a combined forty-eight gigabytes of memory. A salvaged Civic radiator bolted to the shady north wall, two brass bulkheads through the corrugated steel, a marine pump the size of a fist. And on the first cold boot, fans screaming like weather, they loaded the model: a granddaughter of Silvana, open weights, three generations downstream of the thing that had started all of this, small enough now to live on scavenged silicon and capable enough to draft a contract, debug a controller, or walk a stranger through a fuel line at two in the morning. Elijah sat with that for a minute in the dark of the shed. The fire that had burned down his old life, purring in a stove he had built.
 
+![A stack of three scavenged rack-mount servers beside a salvaged car radiator with brass pipe fittings](/book-images/ch11-crucible.png)
+
+*The Crucible. Three filing cabinets and a salvaged radiator.*
+
 For five weeks it was purely good. Reuben fed it easements and it found the clause a lawyer had missed. Priya's intern learned blight triage from it in an afternoon. It never got tired and it never billed and it never, not once, phoned home, because there was no home to phone. Elijah started calling the rack the Crucible, and the name stuck the way names do when a thing has earned one.
 
 The mistake, when it came, was not the machine's.
@@ -75,7 +79,7 @@ In the cracks, we do not query the cloud. We compute on copper and silicon we ow
 
 We build **The Crucible**: a localized, high-performance, completely air-gapped server stack.
 
-### Section 1: Sourcing and Hardware Mathematics (Independent Compute)
+### Section 1: Sourcing and Hardware Mathematics (Hyper-Local Compute)
 
 You do not need to spend $10,000 on enterprise-grade hardware. The corporate cycle of planned obsolescence is your greatest asset. Every three to five years, enterprise data centers dump truckloads of pristine, high-reliability server hardware onto the secondary market (eBay, government auctions, corporate liquidators) for pennies on the dollar.
 

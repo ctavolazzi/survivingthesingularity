@@ -35,7 +35,13 @@ His probe lived at one centimeter. Effectively. It was a surface-moisture sensor
 
 He sat in the dirt with his ruined conclusion and started laughing, because he had been here before. The vise, the shovel: the co-op kept administering the same exam and he kept being surprised by the questions. Since the month a $211 power bill had rearranged his life, he had trusted meters over feelings, and the trust had mostly paid. Here was the lesson under that lesson, the one the Kill-A-Watt had never needed to teach because a wall socket is shallow: a meter tells the truth only about the exact place it lives. Instrument the wrong stratum and you don't get noise, you get confident fiction.
 
-The fix cost eleven dollars a bed: probes at three depths on a length of PVC, five, fifteen, thirty centimeters, epoxied and calibrated against the shovel, which Priya made him keep doing monthly, pit and squeeze and smell, "so the instruments stay honest and so do you." And the re-run data was not subtle. At depth, the tea beds held irrigation five days longer, ran four degrees cooler through the September heat, and were building measurable organic matter into ground that had been mechanically dead eighteen months earlier. The effect she had known was there by hand and eye for two decades was now a graph, with error bars, reproducible off eleven dollars of parts and a barrel of tea.
+The fix cost eleven dollars a bed: probes at three depths on a length of PVC, five, fifteen, thirty centimeters, epoxied and calibrated against the shovel, which Priya made him keep doing monthly, pit and squeeze and smell, "so the instruments stay honest and so do you."
+
+![A white PVC pipe soil-moisture probe with three depth-marked sensor leads](/book-images/ch15-probe.png)
+
+*The probe. Three depths, five, fifteen, thirty centimeters.*
+
+And the re-run data was not subtle. At depth, the tea beds held irrigation five days longer, ran four degrees cooler through the September heat, and were building measurable organic matter into ground that had been mechanically dead eighteen months earlier. The effect she had known was there by hand and eye for two decades was now a graph, with error bars, reproducible off eleven dollars of parts and a barrel of tea.
 
 What she got from him was the part that traveled. The graph went to the corkboard next to the repair emails, and then into the library with the cut files and the controller firmware, and then, though that story belongs to the next chapter, a good deal further than the corkboard. What he got from her was a habit he keeps to this day: once a month, whatever the dashboard says, he digs the pit anyway. By October he could read field capacity by squeeze, approximately, badly, the way you read a second language you learned as an adult. The shovel is also a probe, Priya says. It just logs to your arm, and its calibration is older than the county.
 

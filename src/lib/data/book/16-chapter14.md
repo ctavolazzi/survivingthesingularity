@@ -19,6 +19,10 @@
 
 Every controller the co-op ever shipped had parts from Kowalski's in it. When Chapter 9 said relays you could buy at any electrical counter in America, the counter it meant was Frank's: third bay off the square, wood worn pale where four generations of forearms had rested on it, a bell over the door that Frank's grandfather had hung, and Frank himself, who could tell you the torque spec for a head bolt from memory and would carry a two-dollar part out to your truck like it was an appliance.
 
+![An older hardware-store owner wearing glasses and a canvas work apron](/book-images/ch14-frank.png)
+
+*Frank Kowalski. Knows the torque spec from memory.*
+
 Elijah watched the store die for nine months before it died, and said nothing, and this chapter exists because of both halves of that sentence.
 
 He hadn't meant to be watching. He kept the co-op's purchasing ledger, and the ledger noticed before he did: substitution emails, out-of-stocks on things that had never been out of stock, the fastener aisle developing gaps that stayed gaps. He pulled the thread, because he cannot not pull threads. Frank's regional distributor had been bought by a logistics platform out of Memphis, the kind with a two-letter name and no phone number, and the platform had done what platforms do: raised minimum order quantities past what a single-counter store could float, rerouted the trucks to serve its own fulfillment nodes, and let the long tail of its customer list, the Franks, wither on schedule. The chart Elijah built, because he cannot not build charts, showed the co-op's own orders drifting away from the square, to salvage yards and online, one substitution at a time. The hours sign got re-taped twice. Tyler, who'd worked the register three summers, stopped being there. Gradually is not invisible. Gradually is a curve, and Elijah was, by profession and by scar tissue, a man who read curves.
@@ -38,6 +42,10 @@ Frank looked at the chart for a while. "Fella in Hemingway gets asked how he wen
 At Friday dinner Elijah said it all again, chart and confession both, in front of everyone, because that had become the co-op's immune system and he trusted it now. Denny, whose chapter this properly is, gave the verdict, and it had edges. "You of all people," he said. "You watched a man get optimized out by a spreadsheet he never saw, and you had the spreadsheet." Then, because Denny's justice always had a second half: "So fix it forward. What's the co-op do about Frank?"
 
 What the co-op did about Frank is now called the absorption, and Reuben structured it in a weekend: the inventory bought at honest wholesale, not vulture pennies, the money real enough to matter; the stock rolled into the tool library and the parts wall; and a job, because the tool library had been run on a clipboard and an honor system and it turned out what it needed was a man who knows the torque specs from memory and where every last thing is. Frank hung his grandfather's bell over the tool library door. The first time it rang for a member checking out the plasma cutter, the store had not died after all. It had shrunk to fit through a doorway and moved two miles east, inside the loop, where Memphis can't see it.
+
+![A brass bell mounted above a worn wooden hardware-store door frame](/book-images/ch14-bell.png)
+
+*The bell. Frank's grandfather hung it over the door.*
 
 Denny told the whole story on the channel, the platform and the laminated sign and the bell, and called it the only thing it was: a landing. The long tail is collapsing everywhere, every square in every county, gradually and then suddenly. The Foundations below are about the collapse. The scene you just read is about the difference between watching it happen to your neighbors and catching them inside it. Elijah keeps the broken coupon from Chapter 13 on a shelf. Next to it, now, the chart he sat on for nine months. Both of them failures of the same kind: things that looked fine from six feet, until the load came on.
 
@@ -113,7 +121,7 @@ In the cracks, **there is no such thing as waste. There is only misplaced energy
 
 The first step in building a hyper-local network is the deployment of a **Zero-Waste Redirection Protocol**. This is a strategy of tactical intervention. Instead of allowing surplus food, tools, and raw materials to be dumped into landfills or locked behind corporate waste-management systems, communities must organize to intercept these streams.
 
-This is exactly how we begin to codify our survival. In independent municipal zones, we establish local ordinances to legally protect and enforce this redirection:
+This is exactly how we begin to codify our survival. In hyper-local municipal zones, we establish local ordinances to legally protect and enforce this redirection:
 
 **The Redirection Protocol (Section 3):**
 
@@ -125,7 +133,7 @@ This is exactly how we begin to codify our survival. In independent municipal zo
 
 By enforcing the Redirection Protocol, a community transforms a massive systemic leak into a localized calorie reserve. Suddenly, instead of waiting for a container ship, you are feeding your community using the structural excesses of the very system that tried to render you redundant.
 
-## The Municipal Mesh: Independent Communications
+## The Municipal Mesh: Hyper-Local Communications
 You cannot coordinate a local resource loop if you cannot talk to each other.
 
 The corporate state knows this. That’s why the traditional internet is increasingly gated, monitored, and subject to sudden, centralized kill-switches. If your communication relies on cellular towers owned by multinational telecom conglomerates and routing servers located in high-security datacenters, your coordination is entirely permission-based.

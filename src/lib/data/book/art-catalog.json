@@ -1,6 +1,6 @@
 {
   "schema": "sts-art-catalog/v1",
-  "generated": "2026-07-20",
+  "generated": "2026-07-21",
   "project": "Surviving the Singularity (book)",
   "book_version_introduced": "0.7.0",
   "palette": {
@@ -608,7 +608,7 @@
       "placement": {
         "chapter": "chapter2",
         "file": "04-chapter2.md",
-        "section": "Chapter 2: The Era of AGI (Stages 1–5)"
+        "section": "Chapter 2: The Era of AGI (Stages 1\u20135)"
       },
       "alt": "Robotic arms assembling a car body",
       "caption": "Robotic arms at work. The structural automation of labor, already routine.",
@@ -629,7 +629,7 @@
       "placement": {
         "chapter": "chapter3",
         "file": "05-chapter3.md",
-        "section": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)"
+        "section": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6\u20137)"
       },
       "alt": "Falcon Heavy lifting off from Kennedy Space Center",
       "caption": "Falcon Heavy demo mission. The exodus hardware is already flying.",
@@ -650,7 +650,7 @@
       "placement": {
         "chapter": "chapter4",
         "file": "06-chapter4.md",
-        "section": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)"
+        "section": "Chapter 4: Universal and Multiverse Apex (Stages 8\u20139)"
       },
       "alt": "Hubble Ultra-Deep Field showing thousands of galaxies",
       "caption": "The Hubble Ultra-Deep Field. The available real estate.",
@@ -1525,7 +1525,7 @@
         "file": "18-chapter16.md",
         "section": "3. Sneakernets: The Physical Air-Gap"
       },
-      "alt": "The Sneakernet Cycle: an independent node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse",
+      "alt": "The Sneakernet Cycle: a hyper-local node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse",
       "caption": "The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet."
     },
     {
@@ -1552,7 +1552,7 @@
     {
       "id": "sts.diagram.ch17-lora-node",
       "type": "diagram-svg",
-      "label": "Anatomy of an independent mesh node",
+      "label": "Anatomy of a hyper-local mesh node",
       "concepts": [
         "lora",
         "mesh-networking",
@@ -1566,8 +1566,8 @@
         "file": "19-chapter17.md",
         "section": "1. The Nervous System: DIY LoRa Mesh Nodes"
       },
-      "alt": "Anatomy of an independent mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz",
-      "caption": "An independent mesh node. Sunlight in, encrypted packets out, no license and no bill."
+      "alt": "Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz",
+      "caption": "A hyper-local mesh node. Sunlight in, encrypted packets out, no license and no bill."
     },
     {
       "id": "sts.diagram.ch17-dc-native",
@@ -1591,7 +1591,7 @@
     {
       "id": "sts.diagram.ch17-fab-lab",
       "type": "diagram-svg",
-      "label": "The Decentralized Fab Lab",
+      "label": "The Neighborhood Fab Lab",
       "concepts": [
         "3d-printing",
         "cnc",
@@ -1603,8 +1603,8 @@
         "file": "19-chapter17.md",
         "section": "3. The Skeleton: Open-Source Machine Tools"
       },
-      "alt": "The Decentralized Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power",
-      "caption": "The Independent Fab Lab. Broken means fabricate, not wait."
+      "alt": "The Neighborhood Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power",
+      "caption": "The Neighborhood Fab Lab. Broken means fabricate, not wait."
     },
     {
       "id": "sts.photo.ch18-compass-map",
@@ -1668,6 +1668,689 @@
       },
       "alt": "The Surplus Redirection Matrix: commercial surplus food is sorted by edibility, with edible food redirected to municipal kitchens and CLT food banks for utility credits, non-edible organics routed to the soil food web bioreactor, and attempted landfill dumping met with a progressive civil penalty funding the MRSF",
       "caption": "The Surplus Redirection Matrix. Every path out of a loading dock leads somewhere useful, including the penalty."
+    },
+    {
+      "id": "sts.diagram.intro-nine-stages",
+      "type": "diagram-svg",
+      "label": "The nine stages of the singularity, grouped into three eras",
+      "concepts": [
+        "singularity",
+        "roadmap",
+        "nine-stages",
+        "agi",
+        "asi",
+        "new-social-contract"
+      ],
+      "figure": "static/book-images/intro-nine-stages.svg",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "INTRODUCTION: The Uncompromising Truth"
+      },
+      "alt": "The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge",
+      "caption": "The whole roadmap on one page. Everything you can act on lives in the first five stages, and the fight is over the terms of Stage 4."
+    },
+    {
+      "id": "sts.diagram.ch09-region-ring",
+      "type": "diagram-svg",
+      "label": "A dense city core ringed by four surrounding municipalities that supply it",
+      "concepts": [
+        "deglobalization",
+        "hyper-local",
+        "supply-chain",
+        "resilience",
+        "food-security",
+        "regional-buildout"
+      ],
+      "figure": "static/book-images/ch09-region-ring.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "A Dense City Cannot Feed Itself, and It Does Not Have To"
+      },
+      "alt": "A dense city core ringed by four surrounding municipalities that supply it: food production, materials recovery, energy and water, and neighborhood factories, with supply flowing inward to the core",
+      "caption": "You do not deglobalize a city by walling it off. You ring it with municipalities that produce what it cannot, which is also where the good jobs are."
+    },
+    {
+      "id": "sts.diagram.ch18-social-contract",
+      "type": "diagram-svg",
+      "label": "Two social contracts compared side by side",
+      "concepts": [
+        "new-social-contract",
+        "adequate-level-of-care",
+        "post-labor",
+        "regeneration",
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/ch18-social-contract.svg",
+      "placement": {
+        "chapter": "chapter18",
+        "file": "20-chapter18.md",
+        "section": "The Adequate Level of Care (ALC)"
+      },
+      "alt": "Two social contracts compared side by side: the old one runs your labor to a wage to rented survival, and cuts you off if you miss a payment; the new one runs machines and regenerative loops to local abundance to an adequate level of care, so a job becomes a choice",
+      "caption": "The old contract makes you rent your survival month to month. The new one makes survival the floor, so a job becomes a choice, not a sentence."
+    },
+    {
+      "id": "sts.plate.grow-build-robots",
+      "type": "plate-composite",
+      "label": "The Robots That Grow Your Food and Build Your House",
+      "concepts": [
+        "robotics",
+        "automation",
+        "food-independence",
+        "new-social-contract",
+        "seminal-question",
+        "regeneration"
+      ],
+      "figure": "static/book-images/intro-robots.png",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "INTRODUCTION: The Uncompromising Truth"
+      },
+      "alt": "A pixel-art diptych: on the left a solar-topped farm robot on treads waters a row of vegetable seedlings; on the right a robot on treads raises and bolts the timber frame of a small house",
+      "caption": "The two machines this whole book is about: one that grows the food, one that builds the house. The pieces already exist; the work is putting them in your neighbors' hands.",
+      "pixellab": {
+        "grower": {
+          "object_id": "43d42db2-15d1-4072-bcc7-0d97ae6b1b61",
+          "source": "e45876b9 frame 3"
+        },
+        "builder": {
+          "object_id": "5e1c8edb-46a2-42d8-ba1c-772c499a7277",
+          "source": "513d255e frame 0"
+        }
+      },
+      "provenance": "PixelLab 1-direction objects + Python(Pillow) compositing on the navy/amber palette"
+    },
+    {
+      "id": "sts.sprite.pc-rig",
+      "type": "sprite-object",
+      "label": "Gaming Rig (GPU Tower)",
+      "concepts": [
+        "local-compute",
+        "thermodynamic-ceiling",
+        "self-hosted-model"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "b157a6dc-058a-46ca-8233-1aec5184eaa5",
+        "selected_frame_id": "2c8e7033-6f80-4b05-9a55-0e198c407745",
+        "alt_frame_id": "b54ac72f-a003-4ec7-b103-a963481bde83"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-pc-rig.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.pc-rig"
+      ],
+      "chapter": "ch01"
+    },
+    {
+      "id": "sts.plate.pc-rig",
+      "type": "plate-composite",
+      "label": "Gaming Rig (GPU Tower)",
+      "figure": "static/book-images/ch01-pc-rig.png",
+      "size": [
+        760,
+        654
+      ],
+      "composed_of": [
+        "sts.sprite.pc-rig"
+      ],
+      "placement": {
+        "chapter": "ch01",
+        "file": "03-chapter1.md",
+        "section": "the tower at home"
+      },
+      "alt": "A beige mini-tower PC case with two mismatched GPUs zip-tied inside, visible through an open side panel",
+      "caption": "The rig. Two GPUs zip-tied into a case that never fit them. It throttles by design."
+    },
+    {
+      "id": "sts.sprite.woodstove",
+      "type": "sprite-object",
+      "label": "The Fisher Wood Stove",
+      "concepts": [
+        "off-grid-energy",
+        "thermodynamics",
+        "harvested-not-bought"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "6d16de11-5b10-47e3-8a08-3eb09818777e",
+        "selected_frame_id": "bedcc54c-6ec9-4f62-8e64-f537f46eb401",
+        "alt_frame_id": "03a89eb2-367c-4ae7-92c6-40926dc4a236"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-woodstove.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.woodstove"
+      ],
+      "chapter": "ch05"
+    },
+    {
+      "id": "sts.plate.woodstove",
+      "type": "plate-composite",
+      "label": "The Fisher Wood Stove",
+      "figure": "static/book-images/ch05-woodstove.png",
+      "size": [
+        760,
+        614
+      ],
+      "composed_of": [
+        "sts.sprite.woodstove"
+      ],
+      "placement": {
+        "chapter": "ch05",
+        "file": "07-chapter5.md",
+        "section": "the grandmother's stove"
+      },
+      "alt": "A squat black cast-iron wood stove with the door open, one cracked firebrick visible inside",
+      "caption": "The Fisher. Eighty pounds of steel, one cracked firebrick. Older than him."
+    },
+    {
+      "id": "sts.sprite.tool-wall",
+      "type": "sprite-object",
+      "label": "Shadow-Board Tool Wall",
+      "concepts": [
+        "fabrication",
+        "maker-shop",
+        "hand-tools"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "36fa4720-952e-492d-bc0e-af2229689cd0",
+        "selected_frame_id": "d7682b46-0661-4cd0-bff0-395d8d45b2ba",
+        "alt_frame_id": "6175f4ce-83a6-4df6-8c9c-5e30418a12ef"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-tool-wall.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.tool-wall"
+      ],
+      "chapter": "ch06"
+    },
+    {
+      "id": "sts.plate.tool-wall",
+      "type": "plate-composite",
+      "label": "Shadow-Board Tool Wall",
+      "figure": "static/book-images/ch06-tool-wall.png",
+      "size": [
+        760,
+        654
+      ],
+      "composed_of": [
+        "sts.sprite.tool-wall"
+      ],
+      "placement": {
+        "chapter": "ch06",
+        "file": "08-chapter6.md",
+        "section": "Marta's shop"
+      },
+      "alt": "A pegboard tool wall with hand tools hung in painted shadow-board silhouettes",
+      "caption": "The tool wall. Shadow-boarded like an evidence display."
+    },
+    {
+      "id": "sts.sprite.controller",
+      "type": "sprite-object",
+      "label": "Field-Repairable Controller",
+      "concepts": [
+        "raspberry-pi",
+        "field-repairable",
+        "greenhouse",
+        "open-hardware"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "fbffaa54-a1ad-4a9b-86de-e18b32724b1f",
+        "selected_frame_id": "904b48c3-20f0-46b9-9ded-bb6b290e5853",
+        "alt_frame_id": "dc0fb309-930a-4282-a160-e8426b3448f9"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-controller.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.controller"
+      ],
+      "chapter": "ch09"
+    },
+    {
+      "id": "sts.plate.controller",
+      "type": "plate-composite",
+      "label": "Field-Repairable Controller",
+      "figure": "static/book-images/ch09-controller.png",
+      "size": [
+        760,
+        622
+      ],
+      "composed_of": [
+        "sts.sprite.controller"
+      ],
+      "placement": {
+        "chapter": "ch09",
+        "file": "11-chapter9.md",
+        "section": "the field-repairable controller"
+      },
+      "alt": "A yellow PETG 3D-printed greenhouse controller box, lid open, a Raspberry Pi and screw terminals visible inside",
+      "caption": "The controller. Field-repairable. Screw terminals instead of poetry."
+    },
+    {
+      "id": "sts.sprite.crucible",
+      "type": "sprite-object",
+      "label": "The Crucible (Rack + Radiator)",
+      "concepts": [
+        "local-compute",
+        "air-gapped",
+        "scavenged-hardware",
+        "data-sovereignty"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "f917391b-6b38-4e21-8809-eb51cbc7ce35",
+        "selected_frame_id": "c8fc1c7c-b6c4-4bc7-9c61-7485e78d2728",
+        "alt_frame_id": "a155ef68-da3d-4054-8313-319e89c9c130"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-crucible.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.crucible"
+      ],
+      "chapter": "ch11"
+    },
+    {
+      "id": "sts.plate.crucible",
+      "type": "plate-composite",
+      "label": "The Crucible (Rack + Radiator)",
+      "figure": "static/book-images/ch11-crucible.png",
+      "size": [
+        760,
+        646
+      ],
+      "composed_of": [
+        "sts.sprite.crucible"
+      ],
+      "placement": {
+        "chapter": "ch11",
+        "file": "13-chapter11.md",
+        "section": "The Crucible: Local Servers and Air-Gapped Sandboxes"
+      },
+      "alt": "A stack of three scavenged rack-mount servers beside a salvaged car radiator with brass pipe fittings",
+      "caption": "The Crucible. Three filing cabinets and a salvaged radiator."
+    },
+    {
+      "id": "sts.sprite.vise",
+      "type": "sprite-object",
+      "label": "The Bench Vise",
+      "concepts": [
+        "fabrication",
+        "quality-control",
+        "welding"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "23310408-09f9-4eaf-bcdc-d6e95d6e9d66",
+        "selected_frame_id": "e500b0f4-1547-48e2-a31b-b9f90138f402",
+        "alt_frame_id": "60b9aaf0-b0b9-4146-8b9e-de90c8784a8b"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-vise.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.vise"
+      ],
+      "chapter": "ch13"
+    },
+    {
+      "id": "sts.plate.vise",
+      "type": "plate-composite",
+      "label": "The Bench Vise",
+      "figure": "static/book-images/ch13-vise.png",
+      "size": [
+        760,
+        662
+      ],
+      "composed_of": [
+        "sts.sprite.vise"
+      ],
+      "placement": {
+        "chapter": "ch13",
+        "file": "15-chapter13.md",
+        "section": "the broken weld coupon"
+      },
+      "alt": "A heavy steel bench vise clamping a broken metal weld test coupon, the fracture bright and visible",
+      "caption": "The vise. The metal does the truth. Bright and crystalline."
+    },
+    {
+      "id": "sts.sprite.bell",
+      "type": "sprite-object",
+      "label": "The Hardware-Store Bell",
+      "concepts": [
+        "long-tail-collapse",
+        "tool-library",
+        "absorption"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "79fef6e1-8ce5-4db7-b9f8-df54a82b7f98",
+        "selected_frame_id": "5a9c4ca5-b54e-44a2-a3e1-15f17111a1d4",
+        "alt_frame_id": "afeb0dbf-e756-4c43-bb63-ddd89227f729"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-bell.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.bell"
+      ],
+      "chapter": "ch14"
+    },
+    {
+      "id": "sts.plate.bell",
+      "type": "plate-composite",
+      "label": "The Hardware-Store Bell",
+      "figure": "static/book-images/ch14-bell.png",
+      "size": [
+        760,
+        666
+      ],
+      "composed_of": [
+        "sts.sprite.bell"
+      ],
+      "placement": {
+        "chapter": "ch14",
+        "file": "16-chapter14.md",
+        "section": "the absorption of Frank's hardware store"
+      },
+      "alt": "A brass bell mounted above a worn wooden hardware-store door frame",
+      "caption": "The bell. Frank's grandfather hung it over the door."
+    },
+    {
+      "id": "sts.sprite.probe",
+      "type": "sprite-object",
+      "label": "Three-Depth Soil Probe",
+      "concepts": [
+        "soil-science",
+        "instrumentation",
+        "regenerative-agriculture"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "9a635284-3954-4f77-aa38-9d56061ce992",
+        "selected_frame_id": "62336cb0-0b0f-432d-8291-df9c5359f87c",
+        "alt_frame_id": "1f029e17-1924-47af-8f34-f08101d4e849"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-probe.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.probe"
+      ],
+      "chapter": "ch15"
+    },
+    {
+      "id": "sts.plate.probe",
+      "type": "plate-composite",
+      "label": "Three-Depth Soil Probe",
+      "figure": "static/book-images/ch15-probe.png",
+      "size": [
+        760,
+        626
+      ],
+      "composed_of": [
+        "sts.sprite.probe"
+      ],
+      "placement": {
+        "chapter": "ch15",
+        "file": "17-chapter15.md",
+        "section": "the three-depth soil probe fix"
+      },
+      "alt": "A white PVC pipe soil-moisture probe with three depth-marked sensor leads",
+      "caption": "The probe. Three depths, five, fifteen, thirty centimeters."
+    },
+    {
+      "id": "sts.sprite.proofs",
+      "type": "sprite-object",
+      "label": "The Printed Proofs",
+      "concepts": [
+        "manuscript-to-book",
+        "self-publishing"
+      ],
+      "pixellab": {
+        "kind": "object",
+        "review_id": "2cccd57f-3d1f-4dc8-a4e6-0aedc2f1152c",
+        "selected_frame_id": "49bbefa6-296e-4a36-a2e9-8acc0dc8c3cb",
+        "alt_frame_id": "7a1c93aa-9122-4cae-be52-689a6793c6db"
+      },
+      "raw": "static/book-images/sprites/sts-sprite-proofs.png",
+      "size": [
+        128,
+        128
+      ],
+      "used_in": [
+        "sts.plate.proofs"
+      ],
+      "chapter": "conclusion"
+    },
+    {
+      "id": "sts.plate.proofs",
+      "type": "plate-composite",
+      "label": "The Printed Proofs",
+      "figure": "static/book-images/conclusion-proofs.png",
+      "size": [
+        760,
+        614
+      ],
+      "composed_of": [
+        "sts.sprite.proofs"
+      ],
+      "placement": {
+        "chapter": "conclusion",
+        "file": "21-conclusion.md",
+        "section": "the proofs come back"
+      },
+      "alt": "An open cardboard box of freshly printed perfect-bound paperback books",
+      "caption": "The proofs. Ten copies, perfect-bound. The book, finally."
+    },
+    {
+      "id": "sts.char.reuben",
+      "type": "sprite-character",
+      "label": "Reuben Vance",
+      "role": "co-op's legal/paperwork specialist",
+      "concepts": [
+        "land-trust",
+        "municipal-autonomy-code",
+        "legal"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "3647709b-19fb-4dbb-bc83-8bd13647765d",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-reuben.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.reuben"
+      ],
+      "chapter": "ch09"
+    },
+    {
+      "id": "sts.plate.reuben",
+      "type": "plate-composite",
+      "label": "Reuben Vance",
+      "figure": "static/book-images/ch09-reuben.png",
+      "size": [
+        760,
+        652
+      ],
+      "composed_of": [
+        "sts.char.reuben"
+      ],
+      "placement": {
+        "chapter": "ch09",
+        "file": "11-chapter9.md",
+        "section": "Reuben Vance introduced"
+      },
+      "alt": "A lean man in a well-tailored dark coat, carrying a leather folio of papers",
+      "caption": "Reuben Vance. Handles the part of the machine that runs on paper."
+    },
+    {
+      "id": "sts.char.frank",
+      "type": "sprite-character",
+      "label": "Frank Kowalski",
+      "role": "hardware-store owner, absorbed into the co-op",
+      "concepts": [
+        "long-tail-collapse",
+        "tool-library",
+        "absorption"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "acddad3d-ee63-4338-bdc5-bf169a3c065d",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-frank.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.frank"
+      ],
+      "chapter": "ch14"
+    },
+    {
+      "id": "sts.plate.frank",
+      "type": "plate-composite",
+      "label": "Frank Kowalski",
+      "figure": "static/book-images/ch14-frank.png",
+      "size": [
+        760,
+        636
+      ],
+      "composed_of": [
+        "sts.char.frank"
+      ],
+      "placement": {
+        "chapter": "ch14",
+        "file": "16-chapter14.md",
+        "section": "Frank Kowalski introduced"
+      },
+      "alt": "An older hardware-store owner wearing glasses and a canvas work apron",
+      "caption": "Frank Kowalski. Knows the torque spec from memory."
+    },
+    {
+      "id": "sts.char.gary",
+      "type": "sprite-character",
+      "label": "Gary",
+      "role": "Marta's retrospective, plant-closure anecdote",
+      "concepts": [
+        "psychology-of-collapse",
+        "doomscrolling",
+        "cautionary-tale"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "e9085f79-2cbf-45e4-95f9-da21bfe090bb",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-gary.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.gary"
+      ],
+      "chapter": "ch08"
+    },
+    {
+      "id": "sts.plate.gary",
+      "type": "plate-composite",
+      "label": "Gary",
+      "figure": "static/book-images/ch08-gary.png",
+      "size": [
+        760,
+        654
+      ],
+      "composed_of": [
+        "sts.char.gary"
+      ],
+      "placement": {
+        "chapter": "ch08",
+        "file": "10-chapter8.md",
+        "section": "Marta tells Gary and Sal's story"
+      },
+      "alt": "A middle-aged factory worker with a tired anxious expression, wearing a plant uniform",
+      "caption": "Gary. Stayed informed. Couldn't fix a fence."
+    },
+    {
+      "id": "sts.char.devendra",
+      "type": "sprite-character",
+      "label": "Devendra",
+      "role": "Elijah's senior colleague at Claypot",
+      "concepts": [
+        "corporate-denial",
+        "augmentation-not-replacement"
+      ],
+      "pixellab": {
+        "kind": "character",
+        "character_id": "044bbda6-a5fc-4b2d-a1b7-a441d4bf3c65",
+        "mode": "v3",
+        "directions": 8
+      },
+      "raw": "static/book-images/sprites/sts-char-devendra.png",
+      "size": [
+        256,
+        256
+      ],
+      "used_in": [
+        "sts.plate.devendra"
+      ],
+      "chapter": "ch01"
+    },
+    {
+      "id": "sts.plate.devendra",
+      "type": "plate-composite",
+      "label": "Devendra",
+      "figure": "static/book-images/ch01-devendra.png",
+      "size": [
+        760,
+        650
+      ],
+      "composed_of": [
+        "sts.char.devendra"
+      ],
+      "placement": {
+        "chapter": "ch01",
+        "file": "03-chapter1.md",
+        "section": "Devendra introduced"
+      },
+      "alt": "A tech worker in business casual clothing with a laptop bag over one shoulder",
+      "caption": "Devendra. Senior and calm. Wrong about the thing that mattered."
     }
   ]
 }

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 548" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="mr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#c2410c"/>
+    </marker>
+    <marker id="ma" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="546" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+  <text x="40" y="48" font-size="19" letter-spacing="2" fill="#f1f5f9">THE NEW SOCIAL CONTRACT</text>
+  <line x1="40" y1="62" x2="430" y2="62" stroke="#f59e0b" stroke-width="2"/>
+
+  <text x="234" y="92" font-size="14" letter-spacing="2" fill="#f87171" text-anchor="middle">THE OLD CONTRACT</text>
+  <text x="666" y="92" font-size="14" letter-spacing="2" fill="#f59e0b" text-anchor="middle">THE NEW CONTRACT</text>
+
+  <!-- LEFT column (old) -->
+  <rect x="48" y="108" width="372" height="60" rx="10" fill="#0f172a" stroke="#c2410c" stroke-width="2"/>
+  <text x="234" y="134" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">YOUR LABOR</text>
+  <text x="234" y="153" font-size="11.5" fill="#94a3b8" text-anchor="middle">sell your day, every day</text>
+  <line x1="234" y1="170" x2="234" y2="206" stroke="#c2410c" stroke-width="2" marker-end="url(#mr)"/>
+  <rect x="48" y="208" width="372" height="60" rx="10" fill="#0f172a" stroke="#c2410c" stroke-width="2"/>
+  <text x="234" y="234" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">A WAGE</text>
+  <text x="234" y="253" font-size="11.5" fill="#94a3b8" text-anchor="middle">money, and only if a job exists</text>
+  <line x1="234" y1="270" x2="234" y2="306" stroke="#c2410c" stroke-width="2" marker-end="url(#mr)"/>
+  <rect x="48" y="308" width="372" height="60" rx="10" fill="#0f172a" stroke="#c2410c" stroke-width="2"/>
+  <text x="234" y="334" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">RENTED SURVIVAL</text>
+  <text x="234" y="353" font-size="11.5" fill="#94a3b8" text-anchor="middle">food, shelter, care, month to month</text>
+  <line x1="234" y1="370" x2="234" y2="398" stroke="#c2410c" stroke-width="2" marker-end="url(#mr)"/>
+  <rect x="48" y="400" width="372" height="44" rx="10" fill="#1a0a08" stroke="#7f1d1d" stroke-width="2"/>
+  <text x="234" y="427" font-size="12.5" fill="#f87171" text-anchor="middle">Miss a payment and you are cut off.</text>
+
+  <!-- RIGHT column (new) -->
+  <rect x="480" y="108" width="372" height="60" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="666" y="132" font-size="14.5" font-weight="600" fill="#f1f5f9" text-anchor="middle">MACHINES + REGENERATIVE LOOPS</text>
+  <text x="666" y="152" font-size="11.5" fill="#94a3b8" text-anchor="middle">robots do the toil; closed loops feed them</text>
+  <line x1="666" y1="170" x2="666" y2="206" stroke="#f59e0b" stroke-width="2" marker-end="url(#ma)"/>
+  <rect x="480" y="208" width="372" height="60" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="666" y="234" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">LOCAL ABUNDANCE</text>
+  <text x="666" y="253" font-size="11.5" fill="#94a3b8" text-anchor="middle">food, shelter, care, produced close to home</text>
+  <line x1="666" y1="270" x2="666" y2="306" stroke="#f59e0b" stroke-width="2" marker-end="url(#ma)"/>
+  <rect x="480" y="308" width="372" height="60" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="666" y="334" font-size="15" font-weight="600" fill="#f59e0b" text-anchor="middle">ADEQUATE LEVEL OF CARE</text>
+  <text x="666" y="353" font-size="11.5" fill="#94a3b8" text-anchor="middle">survival is the floor, not the prize</text>
+  <line x1="666" y1="370" x2="666" y2="398" stroke="#f59e0b" stroke-width="2" marker-end="url(#ma)"/>
+  <rect x="480" y="400" width="372" height="44" rx="10" fill="#1a1206" stroke="#f59e0b" stroke-width="2"/>
+  <text x="666" y="427" font-size="12.5" fill="#f59e0b" text-anchor="middle">A job becomes a choice, not a sentence.</text>
+
+  <line x1="40" y1="480" x2="860" y2="480" stroke="#1e293b" stroke-width="2"/>
+  <text x="450" y="508" font-size="13.5" fill="#f1f5f9" text-anchor="middle">Not the end of work. The end of working to earn the right to exist.</text>
+</svg>

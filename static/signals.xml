@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 21 Jul 2026 15:08:10 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 23 Jul 2026 15:14:56 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -41,6 +41,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.15095</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement ... [Score: 11.0 | Flagged for: agent, multi-agent, alignment, rlhf, llm] Authors: Dylan Van Mulders, Matthias Bogaert, et al.</description>
+    </item>
+    <item>
+      <title>Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents</title>
+      <link>https://arxiv.org/abs/2607.19190</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.19190</guid>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajec... [Score: 10.0 | Flagged for: world model, foundation model, agent, agentic, alignment] Authors: Guanxiong Chen, Qianjun Xia, et al.</description>
     </item>
     <item>
       <title>RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning</title>
@@ -97,6 +104,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2606.26575</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
       <description>Complex multi-agent control tasks remain challenging for traditional rule-based and model-based approaches, motivating the adoption of learning-based methods. However, learning-based methods often struggle with sim-to-real transfer because they rely on accurate dynamics modeling or system identifica... [Score: 9.0 | Flagged for: agi, agent, multi-agent, alignment, rag] Authors: Chenlong Liu, Zhuohui Zhang, et al.</description>
+    </item>
+    <item>
+      <title>PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning</title>
+      <link>https://arxiv.org/abs/2607.20064</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.20064</guid>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Long-horizon tasks require sustained perception, reasoning, and exploration, and are a persistent challenge for large language model (LLM) agents. This gap is reflected in their limited performance on continual learning benchmarks such as ARC-AGI-3, especially when models are evaluated out of the bo... [Score: 8.5 | Flagged for: agi, agent, reasoning, llm, language model] Authors: Alexis Fox, Junlin Wang, et al.</description>
     </item>
     <item>
       <title>Rethinking Heterogeneous LLM Merging: A Weighted Model Averaging Perspective</title>
@@ -162,6 +176,13 @@
       <description>Assessing financial literacy during gameplay without disrupting the learning experience remains a key challenge in serious games for education. We present the Agentic BKT pipeline, a multi-agent large language model architecture for stealth assessment of financial competencies from open-ended gamepl... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Gabriel Santos, Rita Julia, et al.</description>
     </item>
     <item>
+      <title>D2VBench: Benchmarking Large Language Models with Value Dilemmas in Daily Scenarios</title>
+      <link>https://arxiv.org/abs/2607.19834</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.19834</guid>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <description>With the wide application of large language models (LLMs) in real-world scenarios, the value implication of their outputs is crucial. However, existing evaluation benchmarks suffer from insufficient coverage of value dilemmas in daily scenarios involving multiple value conflicts and simplistic evalu... [Score: 8.0 | Flagged for: alignment, value alignment, llm, language model, rag] Authors: Siyi Hao, Yidi Cao, et al.</description>
+    </item>
+    <item>
       <title>Show Me How You Reason and I'll Tell You Who You Are: Reasoning Graphs for Robust LLM Authorship Attribution</title>
       <link>https://arxiv.org/abs/2607.14905</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.14905</guid>
@@ -195,27 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11399</guid>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <description>Large language model agents are increasingly executed not by a single model call, but by an execution harness that manages observation, context, control, action, state, and verification. At the same time, frontier and open models are becoming structurally specialized: a model that is strong at code ... [Score: 8.0 | Flagged for: agent, agentic, tool use, reasoning, language model] Authors: Xinchen Liu, Hang Zhou, et al.</description>
-    </item>
-    <item>
-      <title>Multi-Agent LLMs Fail to Explore Each Other</title>
-      <link>https://arxiv.org/abs/2607.11250</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.11250</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns ... [Score: 8.0 | Flagged for: agent, multi-agent, autonomy, llm, language model] Authors: Hyeong Kyu Choi, Jiatong Li, et al.</description>
-    </item>
-    <item>
-      <title>PFAdapter: Hierarchical LoRA Decomposition for Personalized Federated MLLMs</title>
-      <link>https://arxiv.org/abs/2607.12111</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.12111</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Agentic AI systems are reshaping communications and networking by deploying autonomous intelligent agents capable of collaborative learning while maintaining data privacy at network edges. Within distributed network environments, Multimodal Large Language Models (MLLMs) serve as cognitive engines fo... [Score: 8.0 | Flagged for: agent, agentic, autonomous, llm, language model] Authors: Jing Liu, Kun Yang, et al.</description>
-    </item>
-    <item>
-      <title>Shared Selective Persistent Memory for Agentic LLM Systems</title>
-      <link>https://arxiv.org/abs/2607.09493</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.09493</guid>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints, data schemas, and tool-use patterns that made previous sessions productive. Naively persisting entire conver... [Score: 8.0 | Flagged for: agent, agentic, tool use, tool-use, llm] Authors: Sanjana Pedada, Aditya Dhavala, et al.</description>
     </item>
   </channel>
 </rss>

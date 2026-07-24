@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T15:14:56Z",
+  "generated_at": "2026-07-24T15:00:33Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -197,6 +197,55 @@
       ]
     },
     {
+      "id": "2607.21503",
+      "source": "arxiv",
+      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+      "url": "https://arxiv.org/abs/2607.21503",
+      "authors": [
+        "Gaurav Dadhich"
+      ],
+      "summary": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations. The incumbent response treats this as a storage-and-retrieval problem. We argue that framing is too narrow. Actively managing what an agent holds in mind is a lifecycle, not merely a store: it s",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "reasoning",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.21361",
+      "source": "arxiv",
+      "title": "FedAgentKE: Federated Semantic Knowledge Evolution for Heterogeneous Agents",
+      "url": "https://arxiv.org/abs/2607.21361",
+      "authors": [
+        "Weihao Li",
+        "Jun Bai",
+        "Ziyang Song"
+      ],
+      "summary": "Large language model (LLM)-based agents increasingly rely on reasoning, tool use, and iterative execution, yet existing agent frameworks still operate largely in isolation. While recent memory-based agent systems improve individual agents through local retrieval and workflow reuse, local experiences remain fragmented across isolated agent frameworks, limiting cross-framework knowledge transfer and collaborative reasoning evolution. We propose FedAgentKE, a lightweight framework for Federated Semantic Knowledge Evolution across heterogeneous agents. FedAgentKE enables distributed agent framewor",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-23",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.16057",
       "source": "arxiv",
       "title": "Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning",
@@ -372,6 +421,31 @@
         "agent",
         "multi-agent",
         "alignment",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.21522",
+      "source": "arxiv",
+      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+      "url": "https://arxiv.org/abs/2607.21522",
+      "authors": [
+        "Hongxin Zhang",
+        "Chunru Lin",
+        "Junyan Li",
+        "Zhou Xian"
+      ],
+      "summary": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic syste",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "foundation model",
+        "agent",
+        "agentic",
         "rag"
       ]
     },
@@ -946,6 +1020,31 @@
       ]
     },
     {
+      "id": "2607.21067",
+      "source": "arxiv",
+      "title": "PrefReward: Learning User Preference Matrix for Personalized Text Generation",
+      "url": "https://arxiv.org/abs/2607.21067",
+      "authors": [
+        "Yue Wu",
+        "Chengbing Wang",
+        "Yimeng Bai",
+        "Xiaoyan Zhao"
+      ],
+      "summary": "Large Language Models (LLMs) have demonstrated remarkable ability in generating personalized content by leveraging user histories and contextual cues. However, most existing personalization approaches rely on implicit representations within model parameters, making it difficult to interpret user-specific preferences or effectively handle long-context dependencies. To address these challenges, we propose PrefReward, a novel preference-aware generative framework that explicitly models user styles through a structured preference matrix and integrates it into the decoding process as a reward signa",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "interpret",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.19830",
       "source": "arxiv",
       "title": "VizRAG: Enhancing Retrieval-Augmented Generation with Hypergraph Visualization",
@@ -1393,122 +1492,26 @@
       ]
     },
     {
-      "id": "2607.20268",
+      "id": "2607.21324",
       "source": "arxiv",
-      "title": "PoTRE: Test-Time Reasoning inspired by Cognitive Heterogeneity",
-      "url": "https://arxiv.org/abs/2607.20268",
+      "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+      "url": "https://arxiv.org/abs/2607.21324",
       "authors": [
-        "Anmol Kankariya",
-        "Sercan Ö. Arık"
+        "Paolo Pedinotti",
+        "Enrico Santus"
       ],
-      "summary": "While Large Language Models (LLMs) excel at many tasks, they frequently struggle with complex reasoning that requires long-horizon planning and iterative error correction. Furthermore, standard single-stream prompting proves brittle when models encounter novel abstractions or rigorous domain constraints. We introduce PoTRE (Poly-Topological Reasoning Ensembles), a heterogeneous framework that decouples inference into four agents: (1) Adversarial Refinement Agent, (2) Hierarchical strategic Planning Agent, (3) Spectrum Search Agent, and (4) Direct Chain Agent. A final Task-Adaptive Aggregation ",
+      "summary": "Retrieval-Augmented Generation (RAG) systems increasingly employ multiple LLM agents. Yet, most prior work optimizes components in isolation rather than coordinating improvements across the pipeline. We introduce GRADRAG, a framework for cross-component prompt adaptation that models the RAG pipeline as a computational graph and propagates structured evaluation feedback to update upstream agents. An Evaluator critiques downstream answers and supporting evidence, producing actionable feedback that a Prompt Optimizer uses to iteratively update adaptive agents, such as retrievers, graph constructo",
       "category": "cs.AI",
       "tag": "Research",
-      "published_at": "2026-07-22",
+      "published_at": "2026-07-23",
       "score": 7.0,
       "raw_score": 14,
       "matched_keywords": [
         "agent",
-        "planning",
-        "reasoning",
+        "multi-agent",
         "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.20410",
-      "source": "arxiv",
-      "title": "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
-      "url": "https://arxiv.org/abs/2607.20410",
-      "authors": [
-        "Nethmi Muthugala",
-        " Supryadi",
-        "Surangika Ranathunga",
-        "Nisansa de Silva"
-      ],
-      "summary": "Value alignment of Large Language Models (LLMs) has been shown to be culturally biased toward Western norms. This results in the mishandling of local values in multilingual societies such as Sri Lanka that have their unique cultural dynamics. Existing benchmarks overlook Sri Lankan-contextualized values in its official language Sinhala, hindering culturally sensitive evaluation and fine-tuning. To bridge this gap, we propose LKValues, the first survey-grounded resource suite for Sri Lankan value alignment. From a trilingual survey of 205 respondents, blending adapted global frameworks and LLM-",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-22",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "alignment",
-        "value alignment",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.20207",
-      "source": "arxiv",
-      "title": "SeededGrasp: Language-Guided Grasping in Complex Scenes with Multiple Embodiments",
-      "url": "https://arxiv.org/abs/2607.20207",
-      "authors": [
-        "Yang Xu",
-        "Gurpreet Singh Mukker",
-        "Raymond Wang",
-        "Jasper Gerigk"
-      ],
-      "summary": "Practical robotic grasping in complex scenes requires both 3D spatial reasoning and alignment with task-specific requirements. Vision-language models (VLMs) offer a natural way to specify these requirements using language, but existing approaches either use a VLM to predict the grasp directly with limited spatial awareness, or train the VLM together with the grasping model, which requires significantly more data and compute. These limitations impede performance and have prevented scaling to multiple embodiments in complex scenes. We address this by proposing SeededGrasp, a novel data-efficient",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-22",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "reasoning",
-        "alignment",
-        "robot",
-        "language model",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2607.17946",
-      "source": "arxiv",
-      "title": "A Geometric Perspective on Stabilizing Value Conflict Resolution",
-      "url": "https://arxiv.org/abs/2607.17946",
-      "authors": [
-        "Saket Reddy",
-        "Andy Liu"
-      ],
-      "summary": "Large Language Models (LLMs) often struggle to navigate value conflicts when trained with the compressed scalar rewards of Reinforcement Learning from Human Feedback (RLHF). To address this challenge, we investigate how chain-of-thought (CoT) reasoning can help improve performance in this domain. Geometrically, we show that CoT correlates with further smoothing the model's loss landscape in its sharpest direction, helping resolve the optimization instability of traditional scalar rewards. We also demonstrate via relevant downstream benchmarks that value conflict-focused CoT may generalize to d",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "reasoning",
-        "chain-of-thought",
-        "rlhf",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.18066",
-      "source": "arxiv",
-      "title": "Pancasila-Dilemmas: Evaluating Large Language Models on Indonesian Human Value Dilemmas Grounded in Pancasila",
-      "url": "https://arxiv.org/abs/2607.18066",
-      "authors": [
-        " Supryadi",
-        " Irfan",
-        " Julianti",
-        "Darren Keanly Martin"
-      ],
-      "summary": "The value alignment of large language models (LLMs) is crucial for ensuring responses align with human intention and value preferences. However, most evaluations of value alignment focus on Western or universal values, while assessments grounded in the value systems of specific countries remain scarce. In this paper, we introduce Pancasila-Dilemmas, an evaluation dataset of 1,834 questions derived from Indonesian news, classified by 5 values of Pancasila: Religion, Humanity, Unity, Democracy, and Social Justice. This dataset reflects daily life in Indonesia, making it suitable for measuring th",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "alignment",
-        "value alignment",
-        "llm",
-        "language model"
+        "retrieval",
+        "rag"
       ]
     }
   ]

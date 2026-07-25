@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T15:00:33Z",
+  "generated_at": "2026-07-25T14:39:56Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -319,32 +319,6 @@
         "reasoning",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2606.25532",
-      "source": "arxiv",
-      "title": "Agentic evolution of physically constrained foundation models",
-      "url": "https://arxiv.org/abs/2606.25532",
-      "authors": [
-        "Jiangwei Zhang",
-        "Wen Sun",
-        "Chong Wang",
-        "Shiyao Li"
-      ],
-      "summary": "Artificial intelligence increasingly drives automated scientific discovery, yet contemporary generalist agents lack physical grounding, frequently hallucinating hardware-incompatible designs. Here, we present a physically grounded, multi-agent discovery engine that autonomously architects hardware-compliant computing systems. Anchored by an Evolutionary Knowledge Graph structuring past scientific innovations, the framework extracts an \"algorithmic Chain-of-Thought\" to transform blind stochastic search into directed structural evolution. Applied to the extreme testbed of foundation model deploy",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous",
-        "chain-of-thought"
       ]
     },
     {
@@ -675,30 +649,6 @@
       ]
     },
     {
-      "id": "2606.25358",
-      "source": "arxiv",
-      "title": "Agentic Knowledge Tracing: A Multi-Agent LLM Architecture for Stealth Assessment of Financial Literacy in Serious Games",
-      "url": "https://arxiv.org/abs/2606.25358",
-      "authors": [
-        "Gabriel Santos",
-        "Rita Julia",
-        "Marcelo Nascimento"
-      ],
-      "summary": "Assessing financial literacy during gameplay without disrupting the learning experience remains a key challenge in serious games for education. We present the Agentic BKT pipeline, a multi-agent large language model architecture for stealth assessment of financial competencies from open-ended gameplay events. The pipeline processes events from a 2D platformer serious game aligned with the OECD/INFE financial literacy framework through four phases: (1) the game captures every player decision as a structured event log; (2) an LLM event classifier labels each action on a four-point rubric validat",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2607.19834",
       "source": "arxiv",
       "title": "D2VBench: Benchmarking Large Language Models with Value Dilemmas in Daily Scenarios",
@@ -993,30 +943,6 @@
         "alignment",
         "llm",
         "scaling"
-      ]
-    },
-    {
-      "id": "2606.26294",
-      "source": "arxiv",
-      "title": "The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators",
-      "url": "https://arxiv.org/abs/2606.26294",
-      "authors": [
-        "Alex Iacob",
-        "Andrej Jovanović",
-        "William F. Shen",
-        "Daniel Burkhardt"
-      ],
-      "summary": "Self-improving agents are state-of-the-art (SOTA) on agentic coding benchmarks and have recently been extended to general domains. However, their search methods generally assume a stationary evaluation criterion: a fixed verifier, benchmark, or labeled dataset that remains valid as the agent improves. This ignores a central feature of evolution: species adapt as their environments change with them. We aim to bring the same principle to recursive self-improvement, making evaluation part of the improvement loop and opening search to evolving evaluators, adversarial objectives, and dynamic utilit",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "self-improving",
-        "agent",
-        "agentic"
       ]
     },
     {
@@ -1468,30 +1394,6 @@
       ]
     },
     {
-      "id": "2606.25899",
-      "source": "arxiv",
-      "title": "Manipulation Is Task-Dependent: A Multi-Axis, Multi-Environment Evaluation of Frontier LLMs",
-      "url": "https://arxiv.org/abs/2606.25899",
-      "authors": [
-        "Adeeb Zaman",
-        "Erik Nordby",
-        "Fred Heiding"
-      ],
-      "summary": "We evaluate manipulative behavior in six frontier language models across six environments, ranging from negotiation tasks to agentic workflows, resulting in 13{,}590 individual scenarios. Manipulation rates are measured across three axes: framing (mandate honesty or permit manipulation), incentive structure (from no incentives to substantial ones), and task difficulty. Existing benchmarks typically vary a single axis within a single environment, an approach our results show is insufficient. We rank models by manipulation rate and find Spearman rank correlations across environments average $ρ= ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
       "id": "2607.21324",
       "source": "arxiv",
       "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
@@ -1512,6 +1414,99 @@
         "llm",
         "retrieval",
         "rag"
+      ]
+    },
+    {
+      "id": "2607.21279",
+      "source": "arxiv",
+      "title": "A Unified Moral-Value Dataset for Instruction Tuning",
+      "url": "https://arxiv.org/abs/2607.21279",
+      "authors": [
+        "Zhaohui Zeng",
+        "Florian Mai"
+      ],
+      "summary": "Large language models (LLMs) have developed rapidly and become valuable tools in everyday life. However, how to align LLMs to a particular set of human values is still an open problem. Recent studies show that instruction tuning has strong potential for zero-shot tasks and may serve as an effective approach to addressing value alignment. Nevertheless, although many datasets for instruction tuning already exist, they are not specifically designed around moral scenarios and behaviors. We construct a unified moral-value dataset that can be directly used for instruction tuning. This dataset is bui",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "alignment",
+        "value alignment",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2607.21210",
+      "source": "arxiv",
+      "title": "Explainable Belief Harmonization under Dynamic Epistemic Partitions",
+      "url": "https://arxiv.org/abs/2607.21210",
+      "authors": [
+        "Adam Kostka",
+        "Jarosław A. Chudziak"
+      ],
+      "summary": "Existing approaches to multi-agent belief combination have established mature foundations for combining uncertain beliefs under common assumptions: consensus methods use iterative averaging, logic-based methods resolve conflicting knowledge bases, and epistemic logic analyzes agents' information states. Typically, these approaches assume that the structure determining what each agent can represent remains fixed. However, in many scenarios, agents gain or lose observational capacity during execution, and what was once admissible may become structurally impossible. This paper presents a formal f",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-23",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.20207",
+      "source": "arxiv",
+      "title": "SeededGrasp: Language-Guided Grasping in Complex Scenes with Multiple Embodiments",
+      "url": "https://arxiv.org/abs/2607.20207",
+      "authors": [
+        "Yang Xu",
+        "Gurpreet Singh Mukker",
+        "Raymond Wang",
+        "Jasper Gerigk"
+      ],
+      "summary": "Practical robotic grasping in complex scenes requires both 3D spatial reasoning and alignment with task-specific requirements. Vision-language models (VLMs) offer a natural way to specify these requirements using language, but existing approaches either use a VLM to predict the grasp directly with limited spatial awareness, or train the VLM together with the grasping model, which requires significantly more data and compute. These limitations impede performance and have prevented scaling to multiple embodiments in complex scenes. We address this by proposing SeededGrasp, a novel data-efficient",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-22",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "reasoning",
+        "alignment",
+        "robot",
+        "language model",
+        "scaling"
+      ]
+    },
+    {
+      "id": "2607.21482",
+      "source": "arxiv",
+      "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+      "url": "https://arxiv.org/abs/2607.21482",
+      "authors": [
+        "Mack Nixon",
+        "Liam Wright",
+        "Yevgeniya Kovalchuk",
+        "Alison Fang-Wei Wu"
+      ],
+      "summary": "Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powered by open-weight LLMs on one of the most persistent bottlenecks in research on longitudinal populati",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model"
       ]
     }
   ]

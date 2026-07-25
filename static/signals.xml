@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Fri, 24 Jul 2026 15:00:33 +0000</lastBuildDate>
+   <lastBuildDate>Sat, 25 Jul 2026 14:39:56 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -90,13 +90,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.07666</guid>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
       <description>Large language models (LLMs) demonstrate remarkable reasoning capabilities, yet their stateless architecture fundamentally limits deployment in long-horizon research workflows requiring multi-session continuity and quantitative rigor. Here we present Ensemble QSP, a multi-agent framework featuring a... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, reasoning, llm] Authors: Shivendra G. Tewari, Holly Kimko</description>
-    </item>
-    <item>
-      <title>Agentic evolution of physically constrained foundation models</title>
-      <link>https://arxiv.org/abs/2606.25532</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.25532</guid>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Artificial intelligence increasingly drives automated scientific discovery, yet contemporary generalist agents lack physical grounding, frequently hallucinating hardware-incompatible designs. Here, we present a physically grounded, multi-agent discovery engine that autonomously architects hardware-c... [Score: 9.5 | Flagged for: foundation model, agent, multi-agent, agentic, autonomous] Authors: Jiangwei Zhang, Wen Sun, et al.</description>
     </item>
     <item>
       <title>MARS: Multi-hop Adaptive Retrieval and SPARQL Generation for KGQA</title>
@@ -190,13 +183,6 @@
       <description>Artificial general intelligence ultimately requires agents that can reason and act in the physical world. Action models, vision-language-action policies, and world models have advanced this goal, while World Action Models (WAMs) are particularly promising because they connect candidate interventions... [Score: 8.5 | Flagged for: artificial general intelligence, world model, agent, embodied, rag] Authors: Yuanzhi Liang, Xufeng Zhan, et al.</description>
     </item>
     <item>
-      <title>Agentic Knowledge Tracing: A Multi-Agent LLM Architecture for Stealth Assessment of Financial Literacy in Serious Games</title>
-      <link>https://arxiv.org/abs/2606.25358</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.25358</guid>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Assessing financial literacy during gameplay without disrupting the learning experience remains a key challenge in serious games for education. We present the Agentic BKT pipeline, a multi-agent large language model architecture for stealth assessment of financial competencies from open-ended gamepl... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Gabriel Santos, Rita Julia, et al.</description>
-    </item>
-    <item>
       <title>D2VBench: Benchmarking Large Language Models with Value Dilemmas in Daily Scenarios</title>
       <link>https://arxiv.org/abs/2607.19834</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.19834</guid>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.14543</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>Vision-language models (VLMs) are increasingly used as the reasoning backbone of embodied agents, enabling robots to interpret visual scenes, follow language instructions, and plan multi-step actions. In household environments, however, safety depends not only on recognizing objects, but also on how... [Score: 8.0 | Flagged for: agent, reasoning, interpret, embodied, robot] Authors: Huaigang Yang, Ya Li, et al.</description>
+    </item>
+    <item>
+      <title>ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System</title>
+      <link>https://arxiv.org/abs/2607.14178</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14178</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on empirically driven domains with quantitative benchmarks, leaving theory-driven discovery, particularly in ma... [Score: 8.0 | Flagged for: agent, multi-agent, autonomous, reasoning, language model] Authors: Yutong He, Daibo Li, et al.</description>
+    </item>
+    <item>
+      <title>FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation</title>
+      <link>https://arxiv.org/abs/2607.12982</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.12982</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Math reasoning has achieved significant progress with the rapid advancement of Multimodal Large Language Models (MLLMs), however analytic geometry remains largely underexplored, primarily due to the scarcity of annotated samples. Existing diagram generation approaches struggle with analytic geometry... [Score: 8.0 | Flagged for: agi, reasoning, llm, language model, rag] Authors: Ruoran Xu, Wending Gao, et al.</description>
     </item>
   </channel>
 </rss>

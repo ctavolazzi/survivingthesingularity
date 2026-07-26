@@ -59,7 +59,30 @@
 <svelte:head>
   <title>Friends Only | Surviving the Singularity</title>
   <meta name="description" content="A private page for friends of the book. Password required." />
+  <!-- noindex keeps this out of search results. It does NOT stop iMessage,
+       Discord, Slack, or WhatsApp from rendering a link preview - those read
+       the og: tags below, which is exactly what we want when the link gets
+       texted to someone. Absolute URLs, hardcoded rather than derived from
+       $page.url, because every social crawler requires them. -->
   <meta name="robots" content="noindex, nofollow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:title" content="The whole book. One password." />
+  <meta property="og:description" content="Surviving the Singularity, complete current draft. Read it online or take the PDF and EPUB with you. You'll need the code." />
+  <meta property="og:url" content="https://survivingthesingularity.com/exclusive-friends-only" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/exclusive-friends-only.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/exclusive-friends-only.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Surviving the Singularity, friends and family edition. The whole book, one password." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The whole book. One password." />
+  <meta name="twitter:description" content="Surviving the Singularity, complete current draft. Read it online or take the PDF and EPUB with you. You'll need the code." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/exclusive-friends-only.png" />
+  <meta name="twitter:image:alt" content="Surviving the Singularity, friends and family edition. The whole book, one password." />
 </svelte:head>
 
 <div class="friends-page">

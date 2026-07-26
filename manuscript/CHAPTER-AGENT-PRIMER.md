@@ -147,7 +147,18 @@ python3 scripts/sts.py id get sts.chapter9.b0029       # read one block
 python3 scripts/sts.py id replace <id> --file new.md   # edit one block, index auto-rebuilds
 python3 scripts/sts.py id verify          # ids unique, spans valid, full coverage
 python3 scripts/sts.py art list           # figure inventory for your chapter
+
+python3 scripts/sts.py verify             # ALL fast checks, exits non-zero on failure
+python3 scripts/sts.py verify math        # recompute every calculation the book shows
+python3 scripts/sts.py verify meta        # subtitle / price drift across the site
+python3 scripts/sts.py verify precedents  # P-01..P-22 coverage and index integrity
+python3 scripts/sts.py verify links       # liveness-check every Works Cited URL (slow)
 ```
+
+**Run `sts.py verify` before you start and again before you hand back.** It is the
+harness that catches mechanically checkable defects so you can spend your attention on
+the ones that need judgment. If it reports something inside your chapter, that is yours
+to fix. If it reports something outside it, put it in your cross-chapter items.
 
 **Manuscript addressing** is the safe way to make surgical edits. Every block (heading,
 paragraph, list, figure, caption, table) has a stable id like `sts.chapter9.b0029`,

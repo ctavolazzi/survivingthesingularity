@@ -11,7 +11,9 @@ Commands:
     book      Book manuscript stats: per-chapter word counts, thin chapters
     quotes    Inject chapter epigraphs from scripts/chapter_quotes.json
     images    Fetch (Wikimedia Commons, license-gated) + inject chapter header images
-    stripe    Stripe go-live readiness (masks all secrets)
+    stripe    Stripe go-live readiness (masks all secrets); --live probes
+              production for live-vs-test mode, webhook health, and whether
+              the price charged matches the price advertised
     live      Probe production and compare against local routes (deploy drift)
     sitemap   Check sitemap.xml against real routes; --write regenerates it
     routes    List every route the site actually serves
@@ -690,7 +692,196 @@ def stripe_state() -> dict:
             "golive_doc": "STRIPE-GO-LIVE.md" if (ROOT / "STRIPE-GO-LIVE.md").exists() else None}
 
 
+# ── live drift: what we charge vs what we advertise ───────────────────
+#
+# Reading .env tells you nothing about production. On 2026-07-26 the live
+# site was charging $9 while every page promised $5, and it had been doing so
+# for ten days, because the only thing anyone checked was a status line in a
+# markdown file. Everything below probes the real site instead.
+
+# Lines that mention the offer are the only place a preorder price can live.
+# The manuscript and blog quote plenty of unrelated money ($100K salaries,
+# $1.25 widgets), so an unscoped scan for "$N" is pure noise.
+OFFER_KEYWORDS = ("preorder", "early access", "full kit", "gets you")
+PRICE_RE = re.compile(r"\$([0-9][0-9,]*(?:\.[0-9]{2})?)")
+
+CHROME_PATHS = (
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "/Applications/Chromium.app/Contents/MacOS/Chromium",
+    "/usr/bin/google-chrome",
+    "/usr/bin/chromium",
+    "/usr/bin/chromium-browser",
+)
+
+
+def money_to_cents(s: str) -> int:
+    return int(round(float(s.replace(",", "")) * 100))
+
+
+def fmt_cents(c: int) -> str:
+    return f"${c / 100:,.2f}"
+
+
+def advertised_prices() -> dict:
+    """Every preorder price the site quotes, as {cents: [files]}."""
+    found = {}
+    for root in (ROOT / "src/routes", ROOT / "src/lib/components"):
+        if not root.exists():
+            continue
+        for f in sorted(root.rglob("*.svelte")):
+            rel = f.relative_to(ROOT).as_posix()
+            for line in f.read_text(encoding="utf-8", errors="replace").splitlines():
+                low = line.lower()
+                if not any(k in low for k in OFFER_KEYWORDS):
+                    continue
+                for m in PRICE_RE.finditer(line):
+                    files = found.setdefault(money_to_cents(m.group(1)), [])
+                    if rel not in files:
+                        files.append(rel)
+    return found
+
+
+def post_json(url: str, payload: dict, timeout: float = 20.0):
+    """POST JSON. Returns (status, body). Never raises; 0 means no response."""
+    req = urllib.request.Request(
+        url, data=json.dumps(payload).encode("utf-8"), method="POST",
+        headers={"Content-Type": "application/json",
+                 "User-Agent": f"sts.py/{VERSION}"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.status, resp.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode("utf-8", "replace")
+    except Exception as e:
+        return 0, str(e)
+
+
+def find_chrome():
+    for p in CHROME_PATHS:
+        if Path(p).exists():
+            return p
+    return shutil.which("google-chrome") or shutil.which("chromium")
+
+
+def charged_cents(session_url: str, chrome: str):
+    """Read the amount a Stripe Checkout session will actually charge.
+
+    Stripe's checkout page is client-rendered — the amount is nowhere in the
+    HTML that a plain GET returns — so this needs a real browser.
+    Returns (cents, error).
+    """
+    try:
+        out = subprocess.run(
+            [chrome, "--headless", "--disable-gpu", "--no-sandbox", "--dump-dom",
+             "--virtual-time-budget=15000", session_url],
+            capture_output=True, text=True, timeout=120).stdout
+    except Exception as e:
+        return None, f"render failed: {e}"
+    amounts = [money_to_cents(m) for m in re.findall(r"\$([0-9][0-9,]*\.[0-9]{2})", out)]
+    if not amounts:
+        return None, "no dollar amount in the rendered checkout page"
+    # Stripe prints the total in several places (line item, subtotal, total);
+    # the most repeated value is the one being charged.
+    return max(set(amounts), key=amounts.count), None
+
+
+def stripe_live_state(check_price: bool = True) -> dict:
+    """Probe production: live-vs-test, webhook health, price truthfulness."""
+    st = {"site": SITE, "errors": [], "warnings": []}
+
+    # 1. What happens when a real customer clicks buy?
+    status, body = post_json(f"{SITE}/api/stripe-checkout", {"edition_type": "standard"})
+    st["checkout_status"] = status
+    session_url = ""
+    if status == 200:
+        try:
+            session_url = json.loads(body).get("url") or ""
+        except Exception:
+            session_url = ""
+        st["mode"] = ("live" if "cs_live_" in session_url else
+                      "test" if "cs_test_" in session_url else "unknown")
+        if st["mode"] == "unknown":
+            st["errors"].append("no cs_live_/cs_test_ in the session url — cannot tell "
+                                "whether real cards are being charged")
+    elif status == 429:
+        # Self-inflicted when probing repeatedly; not a production fault.
+        st["mode"] = "unknown"
+        st["warnings"].append("checkout rate-limited (429); 5 requests per 10 min "
+                              "per IP, retry later")
+    else:
+        st["mode"] = "unknown"
+        st["errors"].append(f"checkout returned {status}, expected 200")
+
+    # 2. Is the fulfillment webhook actually configured? A configured endpoint
+    #    rejects an unsigned POST with 400; 503 is its "not configured" branch.
+    wh_status, _ = post_json(f"{SITE}/api/webhooks/stripe", {})
+    st["webhook_status"] = wh_status
+    st["webhook_ok"] = wh_status == 400
+    if wh_status == 503:
+        st["errors"].append("webhook 503 — STRIPE_WEBHOOK_SECRET unset in prod; a paid "
+                            "order is lost whenever the browser never reaches /success")
+    elif wh_status != 400:
+        st["warnings"].append(f"webhook returned {wh_status}; expected 400 (configured) "
+                              "or 503 (not configured)")
+
+    # 3. Does what we charge match what we promise?
+    ads = advertised_prices()
+    st["advertised_cents"] = sorted(ads)
+    st["advertised_in"] = {str(c): ads[c] for c in sorted(ads)}
+    if not ads:
+        st["warnings"].append("found no advertised preorder price in the site source")
+    elif len(ads) > 1:
+        st["errors"].append("site advertises conflicting preorder prices: "
+                            + ", ".join(fmt_cents(c) for c in sorted(ads)))
+
+    st["charged_cents"] = None
+    chrome = find_chrome() if check_price else None
+    if check_price:
+        if not session_url:
+            st["warnings"].append("no checkout session, so the charged price was "
+                                  "not verified")
+        elif not chrome:
+            st["warnings"].append("Chrome/Chromium not found, so the charged price was "
+                                  "NOT verified — this is the check that catches "
+                                  "advertising one price and billing another")
+        else:
+            cents, err = charged_cents(session_url, chrome)
+            st["charged_cents"] = cents
+            if err:
+                st["warnings"].append(err)
+            elif len(ads) == 1 and cents != sorted(ads)[0]:
+                st["errors"].append(
+                    f"PRICE MISMATCH: checkout charges {fmt_cents(cents)} but the site "
+                    f"advertises {fmt_cents(sorted(ads)[0])} — fix the live price or the "
+                    "prod STRIPE_PRICE_ID_STANDARD, not the app code (STRIPE-GO-LIVE.md)")
+    return st
+
+
+def cmd_stripe_live(args) -> int:
+    st = stripe_live_state(check_price=not args.no_price)
+    if args.json:
+        print(json.dumps(st, indent=2))
+        return 1 if st["errors"] else 0
+    print(f"Stripe live probe of {st['site']}")
+    print(f"  checkout:   HTTP {st['checkout_status']} · mode {st['mode']}"
+          + ("  <- REAL CARDS" if st["mode"] == "live" else ""))
+    print(f"  webhook:    HTTP {st['webhook_status']}"
+          + ("  <- OK: configured" if st["webhook_ok"] else "  <- NOT CONFIGURED"))
+    adv = ", ".join(fmt_cents(c) for c in st["advertised_cents"]) or "none found"
+    print(f"  advertised: {adv}")
+    print(f"  charged:    {fmt_cents(st['charged_cents']) if st['charged_cents'] is not None else 'not verified'}")
+    for w in st["warnings"]:
+        print(f"  WARN   {w}")
+    for e in st["errors"]:
+        print(f"  ERROR  {e}")
+    if not st["errors"]:
+        print("\n  No drift: production charges what the site advertises.")
+    return 1 if st["errors"] else 0
+
+
 def cmd_stripe(args) -> int:
+    if getattr(args, "live", False):
+        return cmd_stripe_live(args)
     st = stripe_state()
     if args.json:
         print(json.dumps(st, indent=2))
@@ -1921,11 +2112,22 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     for name, fn in (("status", cmd_status), ("audit", cmd_audit),
-                     ("stripe", cmd_stripe), ("live", cmd_live),
-                     ("routes", cmd_routes)):
+                     ("live", cmd_live), ("routes", cmd_routes)):
         p = sub.add_parser(name)
         p.add_argument("--json", action="store_true")
         p.set_defaults(fn=fn)
+
+    p = sub.add_parser("stripe")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--live", action="store_true",
+                   help="probe PRODUCTION instead of local .env: live-vs-test mode, "
+                        "webhook health, and whether the price charged matches the "
+                        "price advertised. Creates a real (unpaid, expiring) checkout "
+                        "session each run. Exits non-zero on drift.")
+    p.add_argument("--no-price", action="store_true",
+                   help="with --live, skip the browser render that reads the charged "
+                        "amount (faster, but stops catching price mismatches)")
+    p.set_defaults(fn=cmd_stripe)
 
     p = sub.add_parser("book")
     p.add_argument("--json", action="store_true")

@@ -1,23 +1,26 @@
 <script>
     import { fade } from 'svelte/transition';
     import { page } from '$app/stores';
-    import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
+    import { isValidBookPassword } from '$lib/bookAccessCode.js';
+    import { bookUnlocked } from '$lib/stores/bookAccess.js';
 
     let password = '';
     let formError = '';
-    // Deliberately in-memory only, never persisted to storage: the unlock
-    // is meant to reset on any full page load (refresh, closed-and-reopened
-    // tab, new tab), not just on demand. Reading position is a separate
-    // store (bookPage.js) backed by localStorage, so that keeps surviving
-    // a re-lock even though the gate itself doesn't.
-    let unlocked = false;
+    // The unlock lives in a store that is deliberately in-memory only, never
+    // persisted to storage: it resets on any full page load (refresh,
+    // closed-and-reopened tab, new tab), not just on demand. Keeping it in a
+    // store rather than a local means /exclusive-friends-only can unlock the
+    // reader too, so a friend types one password instead of two. Reading
+    // position is a separate store (bookPage.js) backed by localStorage, so
+    // that keeps surviving a re-lock even though the gate itself doesn't.
+    $: unlocked = $bookUnlocked;
 
     $: isBookRoot = $page.url.pathname === '/book';
 
     function submitPassword() {
         formError = '';
-        if (password === BOOK_ACCESS_PASSWORD) {
-            unlocked = true;
+        if (isValidBookPassword(password)) {
+            bookUnlocked.set(true);
             password = '';
         } else {
             formError = 'Incorrect password.';

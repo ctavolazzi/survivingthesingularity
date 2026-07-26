@@ -5,7 +5,7 @@
 *Atlas during testing. The data does not care how you feel about it. (DARPA, Public domain, via Wikimedia Commons)*
 
 
-> *"It is far better to grasp the universe as it really is than to persist in delusion, however satisfying and reassuring."*
+> *"For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring."*
 > Carl Sagan, *The Demon-Haunted World* (1995)
 
 It's time. It's finally time.
@@ -20,7 +20,7 @@ I'm not saying I'm the smartest guy in the room. I don't think any individual hu
 
 The loudest voices in the room are working from a headline and a Reddit thread they skimmed once. That's noise, and noise is cheap. I'm not asking you to trust me over them. I'm asking you to go around all of us. Stop listening to the guys in lab coats who have a vested interest in keeping you afraid, and stop listening to me while you're at it. Get your goddamn hands on it. Use it yourself. Then you'll know.
 
-We are about to have a system that can engineer new systems without us. That is the singularity. It's not five years away. It's not ten. It is right in front of us, and the clock is ticking toward 2027, the year where this machine starts to truly rewrite its own code.
+We are about to have a system that can engineer new systems without us. That is the singularity. It's not five years away. It's not ten. It is right in front of us, and the clock is ticking toward 2027, the year when this machine starts to truly rewrite its own code.
 
 I'm not trying to cause panic. I'm trying to cause a moment of clarity. This is happening, it's already happened in the past tense, and the social contract we've been living under is about to be shredded.
 

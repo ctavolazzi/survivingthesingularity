@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
   "book_version": "0.7.1",
-  "generated": "2026-07-21",
+  "generated": "2026-07-26",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2002,
-    "words": 86213
+    "blocks": 2006,
+    "words": 86461
   },
   "sections": [
     {
@@ -14,7 +14,7 @@
       "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md",
       "next_ordinal": 41,
-      "words": 2104,
+      "words": 2106,
       "tombstones": [],
       "blocks": [
         {
@@ -60,9 +60,9 @@
             8,
             9
           ],
-          "words": 27,
-          "hash": "6cd3b5ae7c28",
-          "preview": "> *\"It is far better to grasp the universe as it really is than to persist in delusion, ho"
+          "words": 29,
+          "hash": "bb1c1df3aab2",
+          "preview": "> *\"For me, it is far better to grasp the Universe as it really is than to persist in delu"
         },
         {
           "id": "sts.introduction.b0005",
@@ -138,7 +138,7 @@
             23
           ],
           "words": 52,
-          "hash": "0c87a99c480d",
+          "hash": "e3af27fc9fcd",
           "preview": "We are about to have a system that can engineer new systems without us. That is the singul"
         },
         {
@@ -474,7 +474,7 @@
       "title": "Preface: Welcome to the Weirdness",
       "file": "01-preface.md",
       "next_ordinal": 36,
-      "words": 1156,
+      "words": 1170,
       "tombstones": [],
       "blocks": [
         {
@@ -509,9 +509,9 @@
             5,
             5
           ],
-          "words": 15,
-          "hash": "0d9cad7939b3",
-          "preview": "*ASIMO, 2001. The weirdness arrived on schedule. (Liauzh, CC BY-SA 4.0, via Wikimedia Comm"
+          "words": 25,
+          "hash": "1498cea10639",
+          "preview": "*ASIMO, the 2001 model, photographed at Honda Welcome Plaza Aoyama in 2023. The weirdness "
         },
         {
           "id": "sts.preface.b0004",
@@ -597,9 +597,9 @@
             23,
             23
           ],
-          "words": 60,
-          "hash": "2da7761779bf",
-          "preview": "Look back 100 years and you find a global society of excess and hyper-capitalism, continen"
+          "words": 63,
+          "hash": "dfc1cbd2b26f",
+          "preview": "Look back across the last 100 years and you find a global society of excess and hyper-capi"
         },
         {
           "id": "sts.preface.b0012",
@@ -619,9 +619,9 @@
             27,
             27
           ],
-          "words": 50,
-          "hash": "23c12e5e8a77",
-          "preview": "First, we've automated almost all cognitive and physical labor. Second, we've concentrated"
+          "words": 51,
+          "hash": "32b5a81059a7",
+          "preview": "First, we've learned to automate both cognitive and physical labor. Second, we've concentr"
         },
         {
           "id": "sts.preface.b0014",
@@ -1778,8 +1778,8 @@
             166,
             166
           ],
-          "words": 71,
-          "hash": "be7c46f1de09",
+          "words": 74,
+          "hash": "46ba67d43481",
           "preview": "At the 1876 Centennial Exhibition, the machine everyone crossed the country to see was the"
         },
         {
@@ -1789,8 +1789,8 @@
             168,
             168
           ],
-          "words": 74,
-          "hash": "741a8284f57a",
+          "words": 71,
+          "hash": "c877de04a52e",
           "preview": "Sir William Thomson, later Lord Kelvin, the most famous physicist alive, stopped, listened"
         },
         {
@@ -1890,7 +1890,7 @@
       "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md",
       "next_ordinal": 66,
-      "words": 3439,
+      "words": 3510,
       "tombstones": [],
       "blocks": [
         {
@@ -2262,8 +2262,8 @@
             68,
             68
           ],
-          "words": 75,
-          "hash": "83a5d9078bdb",
+          "words": 99,
+          "hash": "b151b628bdb3",
           "preview": "The seminal paper \"Attention Is All You Need\" achieved a profound structural breakthrough "
         },
         {
@@ -2273,9 +2273,9 @@
             70,
             74
           ],
-          "words": 48,
-          "hash": "3ea7d4ff4d84",
-          "preview": "| Evaluation Metric / Task | Legacy Ensemble State-of-the-Art | Transformer Architecture R"
+          "words": 66,
+          "hash": "6f6cf1021132",
+          "preview": "| Evaluation Metric / Task | Best Prior Result, Ensembles Included | Transformer, \"Big\" Co"
         },
         {
           "id": "sts.chapter1.b0031",
@@ -2284,9 +2284,9 @@
             76,
             76
           ],
-          "words": 9,
-          "hash": "347d6cc67107",
-          "preview": "*Table 1: Performance Benchmarks of the 2017 Transformer Architecture.*"
+          "words": 38,
+          "hash": "222c0e9e6246",
+          "preview": "*Table 1: Performance Benchmarks of the 2017 Transformer Architecture. Figures are for the"
         },
         {
           "id": "sts.chapter1.b0032",
@@ -21910,8 +21910,8 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
-      "next_ordinal": 12,
-      "words": 3418,
+      "next_ordinal": 16,
+      "words": 3579,
       "tombstones": [],
       "blocks": [
         {
@@ -22030,11 +22030,57 @@
           "preview": "166. Cyberdecks are having a moment, rejecting big tech surveillance with style and substa"
         },
         {
-          "id": "sts.appendix-b.b0011",
-          "type": "hr",
+          "id": "sts.appendix-b.b0012",
+          "type": "heading",
           "lines": [
             95,
             95
+          ],
+          "words": 5,
+          "hash": "b7fecee21880",
+          "preview": "## P-01 Primary Sources (added 2026-07-26)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0013",
+          "type": "list",
+          "lines": [
+            97,
+            98
+          ],
+          "words": 69,
+          "hash": "7464a8d19651",
+          "preview": "183. Enos Hitchcock, Memoirs of the Bloomsgrove Family, Vol. 2 (1790) - primary source for"
+        },
+        {
+          "id": "sts.appendix-b.b0014",
+          "type": "heading",
+          "lines": [
+            100,
+            100
+          ],
+          "words": 5,
+          "hash": "0201cb41d5eb",
+          "preview": "## P-02 Primary Sources (added 2026-07-26)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0015",
+          "type": "list",
+          "lines": [
+            102,
+            103
+          ],
+          "words": 82,
+          "hash": "28a834f1a102",
+          "preview": "185. Everyone Wanted Alexander Graham Bell to Debut the Telephone at the Philadelphia Cent"
+        },
+        {
+          "id": "sts.appendix-b.b0011",
+          "type": "hr",
+          "lines": [
+            105,
+            105
           ],
           "words": 0,
           "hash": "ebad27de99a8",

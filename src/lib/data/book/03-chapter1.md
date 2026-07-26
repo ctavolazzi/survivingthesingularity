@@ -65,15 +65,15 @@ The friction currently observed across global markets, socio-political instituti
 ## The Structural Automation of Thought
 The modern acceleration toward AGI was fundamentally catalyzed in 2017 with the introduction of the Transformer architecture by researchers at Google Brain and Google Research. Prior to this innovation, the dominant sequence transduction models in natural language processing relied heavily on complex recurrent neural networks (RNNs) or convolutional neural networks (CNNs) arranged in rigid encoder-decoder configurations. These legacy architectures were inherently bottlenecked by their sequential processing requirements; a system had to fully process step t before it could process step t+1, severely limiting the ability to leverage modern hardware accelerators.
 
-The seminal paper "Attention Is All You Need" achieved a profound structural breakthrough by dispensing with recurrence and convolutions entirely, relying solely on an attention mechanism to map global dependencies between input and output. This shift to parallel self-attention represented the literal automation of thought processing, allowing operations to be massively parallelized. The foundational model was small by today's standards, roughly sixty-five million parameters in its base configuration, and it still beat everything before it.
+The seminal paper "Attention Is All You Need" achieved a profound structural breakthrough by dispensing with recurrence and convolutions entirely, relying solely on an attention mechanism to map global dependencies between input and output. This shift to parallel self-attention represented the literal automation of thought processing, allowing operations to be massively parallelized. The foundational model was small by today's standards, sixty-five million parameters in its base configuration and two hundred thirteen million in the big one, and the big one beat every system that came before it, including the ensembles that had been stacked specifically to win these benchmarks.
 
-| Evaluation Metric / Task | Legacy Ensemble State-of-the-Art | Transformer Architecture Result |
+| Evaluation Metric / Task | Best Prior Result, Ensembles Included | Transformer, "Big" Configuration |
 | :-: | :-: | :-: |
-| WMT 2014 English-to-German (BLEU) | ~26.4 BLEU | 28.4 BLEU (improvement of >2 BLEU) |
-| WMT 2014 English-to-French (BLEU) | ~40.4 BLEU | 41.8 BLEU |
-| Training Compute Cost | Weeks to Months on vast clusters | 3.5 days on eight GPUs |
+| WMT 2014 English-to-German (BLEU) | 26.4 (ConvS2S ensemble) | 28.4, a gain of more than 2 BLEU |
+| WMT 2014 English-to-French (BLEU) | 41.3 (ConvS2S ensemble) | 41.8, a new single-model record |
+| Training compute, English-to-German | 1.8 x 10^20 FLOPs (GNMT ensemble) | 2.3 x 10^19 FLOPs: 3.5 days on eight P100 GPUs |
 
-*Table 1: Performance Benchmarks of the 2017 Transformer Architecture.*
+*Table 1: Performance Benchmarks of the 2017 Transformer Architecture. Figures are for the 213-million-parameter "big" configuration; the 65-million-parameter base model reached 27.3 and 38.1 on the same two tasks after twelve hours on the same hardware.*
 
 By eliminating the sequential bottleneck, self-attention dramatically improved the speed, scalability, and efficiency of models, enabling the processing of intricate patterns over long-range dependencies across massive datasets. This parallelization was not merely a software optimization; it fundamentally altered the physical execution of machine learning. Later implementations went further, restructuring the model so that its attention and feed-forward stages run concurrently instead of one after the other, squeezing measurably more work out of every GPU in the cluster.
 

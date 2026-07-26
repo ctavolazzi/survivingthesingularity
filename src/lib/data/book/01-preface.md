@@ -2,7 +2,7 @@
 
 ![Honda ASIMO humanoid robot, 2001](/book-images/intro-asimo.jpg)
 
-*ASIMO, 2001. The weirdness arrived on schedule. (Liauzh, CC BY-SA 4.0, via Wikimedia Commons)*
+*ASIMO, the 2001 model, photographed at Honda Welcome Plaza Aoyama in 2023. The weirdness arrived on schedule. (Liauzh, CC BY-SA 4.0, via Wikimedia Commons)*
 
 
 > *"Buy the ticket, take the ride."*
@@ -20,11 +20,11 @@ Right now, doesn’t it seem like everything is getting a lot weirder, a lot fas
 
 This book, *Surviving the Singularity*, is a primer on what happens when the machinery that feeds, houses, and employs us starts improving faster than we can react, and on how to keep getting your needs met while it does.
 
-Look back 100 years and you find a global society of excess and hyper-capitalism, continent-spanning wars, and weapons that threaten to eradicate all life on earth. Look around today and...well, it's pretty much the same, isn't it? The only thing that really seems to have changed is the pace at which nightmarish horrors beyond our comprehension are being unleashed.
+Look back across the last 100 years and you find a global society of excess and hyper-capitalism, continent-spanning wars, and weapons that threaten to eradicate all life on earth. Look around today and...well, it's pretty much the same, isn't it? The only thing that really seems to have changed is the pace at which nightmarish horrors beyond our comprehension are being unleashed.
 
 Wait, that's not quite right is it? Some things have definitely changed.
 
-First, we've automated almost all cognitive and physical labor. Second, we've concentrated wealth and power into the hands of a microscopic elite who own the servers, the algorithms, and the land. Third, we've created an environment where the average human is not just exploited, but is now becoming entirely redundant.
+First, we've learned to automate both cognitive and physical labor. Second, we've concentrated wealth and power into the hands of a microscopic elite who own the servers, the algorithms, and the land. Third, we've created an environment where the average human is not just exploited, but is now becoming entirely redundant.
 
 And that's why you're reading this.
 

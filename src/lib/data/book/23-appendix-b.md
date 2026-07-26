@@ -92,4 +92,14 @@
 181. Build an Automated Hydroponic System (open-source Mycodo automation) - Kyle Gabriel, https://www.youtube.com/watch?v=nyqykZK2Ev4
 182. Introducing the SANANBIO Uplift, A Fully-Automated Vertical Farming Platform - SANANBIO, https://www.youtube.com/watch?v=0s4YwzbUzhw
 
+## P-01 Primary Sources (added 2026-07-26)
+
+183. Enos Hitchcock, Memoirs of the Bloomsgrove Family, Vol. 2 (1790) - primary source for the "free access which many young people have to romances, novels, and plays" passage - Internet Archive, https://archive.org/details/bim_eighteenth-century_memoirs-of-the-bloomsgro_hitchcock-enos_1790_2
+184. Richard Brinsley Sheridan, The Rivals (1775), Act I Scene 2 - Sir Anthony Absolute's "as an ever-green tree, of diabolical knowledge" line; punctuation modernized in the Preface - Wikipedia, https://en.wikipedia.org/wiki/The_Rivals
+
+## P-02 Primary Sources (added 2026-07-26)
+
+185. Everyone Wanted Alexander Graham Bell to Debut the Telephone at the Philadelphia Centennial Exhibition. He Almost Avoided It Entirely (judges' heat exhaustion and the "come back tomorrow" deferral; Thomson served as receiver) - Smithsonian Magazine, https://www.smithsonianmag.com/smithsonian-institution/everyone-wanted-alexander-graham-bell-to-debut-the-telephone-at-the-philadelphia-centennial-exhibition-he-almost-walked-away-first-180989016/
+186. Lord Kelvin (Sir William Thomson) on Bell's telephone, "the most wonderful thing in America ... the greatest by far of all the marvels of the electric telegraph" - University of Glasgow, https://www.gla.ac.uk/news/archiveofnews/2024/may/headline_1076640_en.html
+
 ---

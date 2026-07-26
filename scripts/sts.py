@@ -28,6 +28,10 @@ Commands:
               (build|list|get|replace|verify|stress). Non-invasive sidecar
               index (src/lib/data/book/manuscript-index.json); the .md source
               stays clean, so building the index is not a content change.
+    flow      Export every manuscript figure into one flat, upload-ready
+              folder (SVG diagrams rasterized to opaque PNG), with a
+              MANIFEST.md whose per-asset "prompt" is the figure's alt text.
+              Built for dropping the book's art into Google Flow.
     art       Enroll every book figure in art-catalog.json (list|sync).
               Data-driven from the manuscript index + credits.json; ids are
               sts.<kind>.<filename-stem> so new art auto-enrolls.
@@ -44,6 +48,7 @@ Examples:
 """
 
 import argparse
+import collections
 import hashlib
 import html as html_mod
 import json
@@ -2105,6 +2110,199 @@ def cmd_art(args):
     return {"list": _art_list, "sync": _art_sync}[args.action](args)
 
 
+# --- flow: export the manuscript's figures as an upload-ready asset pack -----
+
+FLOW_BG = "#020617"          # book navy, so rasterized diagrams land opaque
+FLOW_WIDTH = 1600            # raster width for SVG diagrams
+FLOW_KINDS = ("photo", "plate", "banner", "diagram")
+
+
+def _flow_kind(image: str, credits: dict) -> str:
+    """photo (licensed stock) · plate (original pixel art) · banner · diagram.
+
+    Sharper than _figure_kind, which lumps every raster into 'photo'. The
+    discriminator is credits.json: a file with a Wikimedia credit is somebody
+    else's photograph; a raster without one is art made for this book.
+    """
+    name = Path(image).name
+    stem = name.rsplit(".", 1)[0]
+    if Path(image).suffix.lower() == ".svg":
+        return "diagram"
+    if re.match(r"part\d-divider$", stem):
+        return "banner"
+    return "photo" if name in credits else "plate"
+
+
+def _flow_rasterize(chrome, svg: Path, dest: Path, width: int) -> str:
+    """SVG -> opaque PNG at the source aspect ratio, via headless Chrome.
+
+    qlmanage also renders SVG but letterboxes into a transparent square, which
+    Flow reads as a padded image. Chrome honours the viewBox exactly.
+    """
+    head = svg.read_text(encoding="utf-8", errors="replace")[:2000]
+    m = re.search(r'viewBox="([\d.\-\s]+)"', head)
+    ratio = 0.5
+    if m:
+        nums = m.group(1).split()
+        if len(nums) == 4 and float(nums[2]):
+            ratio = float(nums[3]) / float(nums[2])
+    height = max(1, round(width * ratio))
+    with tempfile.TemporaryDirectory() as td:
+        page = Path(td) / "page.html"
+        page.write_text(
+            f"<style>html,body{{margin:0;padding:0;background:{FLOW_BG}}}"
+            f"img{{display:block;width:{width}px;height:auto}}</style>"
+            f'<img src="{svg.resolve().as_uri()}">', encoding="utf-8")
+        out = subprocess.run(
+            [chrome, "--headless", "--disable-gpu", "--no-sandbox",
+             "--hide-scrollbars", "--force-device-scale-factor=1",
+             f"--window-size={width},{height}",
+             f"--screenshot={dest}", page.as_uri()],
+            capture_output=True, text=True, timeout=90)
+    if not dest.exists():
+        return (out.stderr or "chrome produced no file").strip().splitlines()[-1:][0]
+    return ""
+
+
+def cmd_flow(args) -> int:
+    """Copy every manuscript figure into one flat, upload-ready folder."""
+    kinds = {k.strip() for k in args.kinds.split(",")} if args.kinds \
+        else set(FLOW_KINDS)
+    bad = kinds - set(FLOW_KINDS)
+    if bad:
+        print(f"unknown kind(s): {sorted(bad)} — pick from {list(FLOW_KINDS)}")
+        return 2
+
+    out_dir = Path(args.out).expanduser() if args.out else \
+        Path.home() / "Desktop" / "StS-Flow-Assets"
+    credits = _load_credits()
+    _, figs = _id_art_records()
+
+    items, skipped = [], []
+    for n, rec in enumerate(figs, 1):
+        kind = _flow_kind(rec["image"], credits)
+        src = STATIC_DIR / rec["image"].lstrip("/")
+        stem = Path(rec["image"]).name.rsplit(".", 1)[0]
+        ext = "png" if kind == "diagram" else Path(rec["image"]).suffix.lstrip(".")
+        item = {"n": n, "kind": kind, "source": str(src.relative_to(ROOT)),
+                "file": f"{kind}-{n:02d}-{stem}.{ext}",
+                "chapter": rec["section"], "section": rec["heading"],
+                "prompt": rec["alt"], "caption": rec["caption"],
+                "art_id": rec["art_id"]}
+        c = credits.get(Path(rec["image"]).name)
+        if c:
+            item["credit"] = {"artist": c.get("artist"),
+                              "license": c.get("license"),
+                              "source": c.get("page")}
+        if kind not in kinds:
+            continue
+        if not src.exists():
+            skipped.append({**item, "why": "source file missing"})
+            continue
+        items.append(item)
+
+    if args.dry_run:
+        if args.json:
+            print(json.dumps({"out": str(out_dir), "assets": items,
+                              "skipped": skipped}, indent=2, ensure_ascii=False))
+            return 0
+        by_kind = collections.Counter(i["kind"] for i in items)
+        print(f"flow (dry run) — {len(items)} assets -> {out_dir}")
+        for k in FLOW_KINDS:
+            if by_kind[k]:
+                print(f"  {k:<8} {by_kind[k]:>3}")
+        for s in skipped:
+            print(f"  ! {s['file']}: {s['why']}")
+        return 0
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    chrome = find_chrome() if any(i["kind"] == "diagram" for i in items) else None
+    written = []
+    for item in items:
+        src, dest = ROOT / item["source"], out_dir / item["file"]
+        if item["kind"] == "diagram":
+            if not chrome:
+                skipped.append({**item, "why": "Chrome/Chromium not found, so the "
+                                               "SVG could not be rasterized"})
+                continue
+            err = _flow_rasterize(chrome, src, dest, args.width)
+            if err:
+                skipped.append({**item, "why": f"rasterize failed: {err}"})
+                continue
+        else:
+            shutil.copy2(src, dest)
+        item["bytes"] = dest.stat().st_size
+        written.append(item)
+
+    _flow_manifest(out_dir, written, skipped)
+
+    if args.json:
+        print(json.dumps({"out": str(out_dir), "written": written,
+                          "skipped": skipped}, indent=2, ensure_ascii=False))
+        return 1 if skipped else 0
+    by_kind = collections.Counter(i["kind"] for i in written)
+    total_mb = sum(i["bytes"] for i in written) / 1e6
+    print(f"flow — {len(written)} assets ({total_mb:.1f} MB) -> {out_dir}")
+    for k in FLOW_KINDS:
+        if by_kind[k]:
+            print(f"  {k:<8} {by_kind[k]:>3}")
+    print("  + MANIFEST.md, flow-manifest.json, CREDITS.txt")
+    for s in skipped:
+        print(f"  ! {s['file']}: {s['why']}")
+    return 1 if skipped else 0
+
+
+def _flow_manifest(out_dir: Path, written: list, skipped: list) -> None:
+    """MANIFEST.md (prompts, human-readable) + JSON + a credits roll-up."""
+    (out_dir / "flow-manifest.json").write_text(json.dumps(
+        {"schema": "sts-flow-pack/v1", "generated": date.today().isoformat(),
+         "project": "Surviving the Singularity (book)",
+         "assets": written, "skipped": skipped},
+        indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    lines = ["# StS — Google Flow asset pack", "",
+             f"Generated {date.today().isoformat()} · {len(written)} assets · "
+             "every figure in the manuscript, in book order.", "",
+             "Each **prompt** below is the figure's alt text: it already "
+             "describes the shot in visual terms, so it drops straight into "
+             "Flow as a prompt or as an ingredient caption.", ""]
+    for kind in FLOW_KINDS:
+        group = [i for i in written if i["kind"] == kind]
+        if not group:
+            continue
+        lines += [f"## {kind} ({len(group)})", ""]
+        for i in group:
+            lines += [f"### `{i['file']}`", "",
+                      f"- **Chapter:** {i['chapter']}"
+                      + (f" · {i['section']}" if i["section"] else ""),
+                      f"- **Prompt:** {i['prompt']}"]
+            if i["caption"]:
+                lines.append(f"- **Caption:** {i['caption']}")
+            if i.get("credit"):
+                c = i["credit"]
+                lines.append(f"- **Credit:** {c['artist']} · {c['license']} · "
+                             f"{c['source']}")
+            lines.append("")
+    if skipped:
+        lines += ["## Not exported", ""] + \
+                 [f"- `{s['file']}` — {s['why']}" for s in skipped] + [""]
+    (out_dir / "MANIFEST.md").write_text("\n".join(lines), encoding="utf-8")
+
+    creds = ["Surviving the Singularity — asset credits",
+             f"Generated {date.today().isoformat()}", "",
+             "Licensed photographs (attribution required on reuse):", ""]
+    for i in written:
+        if i.get("credit"):
+            c = i["credit"]
+            creds.append(f"{i['file']}\n  {c['artist']} · {c['license']}\n"
+                         f"  {c['source']}\n")
+    creds += ["", "Original art (plates, banners, diagrams) is by the author;",
+              "pixel-art plates were made with PixelLab and are subject to",
+              "PixelLab's Terms of Service (https://pixellab.ai/termsofservice).",
+              ""]
+    (out_dir / "CREDITS.txt").write_text("\n".join(creds), encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -2217,6 +2415,20 @@ def main():
     vf.add_argument("--json", action="store_true")
     ss = idsub.add_parser("stress", help="stress-test programmatic editing on a throwaway copy")
     ss.add_argument("--json", action="store_true")
+
+    p = sub.add_parser("flow",
+                       help="export every manuscript figure as an upload-ready "
+                            "asset pack (Google Flow and friends)")
+    p.add_argument("--out", help="output folder (default ~/Desktop/StS-Flow-Assets)")
+    p.add_argument("--kinds",
+                   help="comma-separated subset of photo,plate,banner,diagram "
+                        "(default: all)")
+    p.add_argument("--width", type=int, default=FLOW_WIDTH,
+                   help=f"raster width for SVG diagrams (default {FLOW_WIDTH})")
+    p.add_argument("--dry-run", action="store_true",
+                   help="report what would be exported without writing")
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_flow)
 
     p = sub.add_parser("art",
                        help="enroll every book figure in art-catalog.json (data-driven)")

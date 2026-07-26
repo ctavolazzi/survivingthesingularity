@@ -11,6 +11,10 @@ Commands:
     book      Book manuscript stats: per-chapter word counts, thin chapters
     quotes    Inject chapter epigraphs from scripts/chapter_quotes.json
     images    Fetch (Wikimedia Commons, license-gated) + inject chapter header images
+    verify    Fact-checking harness. Recomputes every calculation the book
+              shows its reader, catches subtitle/price drift across the site
+              and the built file, and audits Precedent Ledger integrity.
+              `verify links` liveness-checks every Works Cited URL.
     stripe    Stripe go-live readiness (masks all secrets); --live probes
               production for live-vs-test mode, webhook health, and whether
               the price charged matches the price advertised
@@ -2609,6 +2613,284 @@ def _flow_manifest(out_dir: Path, written: list, skipped: list) -> None:
     (out_dir / "CREDITS.txt").write_text("\n".join(creds), encoding="utf-8")
 
 
+# ──────────────────────────────────────────────────────────────────────
+# verify — the fact-checking harness
+# ──────────────────────────────────────────────────────────────────────
+#
+# Everything here exists because it was first found by hand, and finding it
+# by hand does not scale to 27 sections under a September deadline. On
+# 2026-07-26: chapter 9 printed 468/66.6 as 7.02 when it is 7.03, and the
+# book shipped three different subtitles across book.json, app.html and the
+# cover modal. Both are mechanical, so both should be a command.
+#
+# Design rule: a check either passes deterministically or it does not run.
+# Nothing here asks the reader to trust a judgment call.
+
+BOOK_SECTION_RE = re.compile(r"^\d\d-|^part\d-")
+
+# Only these characters may reach the arithmetic evaluator.
+SAFE_ARITH = re.compile(r"^[0-9\s.+\-*/()]+$")
+# A stated result: a number, optionally followed by a unit.
+STATED_RE = re.compile(r"^\s*([0-9]+(?:\.[0-9]+)?)\s*([^\s0-9].*)?$")
+
+
+def _eval_arith(expr: str):
+    """Evaluate a pure-arithmetic string. Returns None if not safely evaluable."""
+    if not SAFE_ARITH.match(expr) or not any(c.isdigit() for c in expr):
+        return None
+    import ast
+    import operator
+    ops = {ast.Add: operator.add, ast.Sub: operator.sub, ast.Mult: operator.mul,
+           ast.Div: operator.truediv, ast.USub: operator.neg, ast.UAdd: operator.pos}
+
+    def ev(n):
+        if isinstance(n, ast.Expression):
+            return ev(n.body)
+        if isinstance(n, ast.Constant) and isinstance(n.value, (int, float)):
+            return n.value
+        if isinstance(n, ast.BinOp) and type(n.op) in ops:
+            return ops[type(n.op)](ev(n.left), ev(n.right))
+        if isinstance(n, ast.UnaryOp) and type(n.op) in ops:
+            return ops[type(n.op)](ev(n.operand))
+        raise ValueError("unsupported expression")
+    try:
+        return ev(ast.parse(expr.strip(), mode="eval"))
+    except Exception:
+        return None
+
+
+def _strip_markup(line: str) -> str:
+    line = re.sub(r"^\s*>+\s*", "", line)
+    return line.replace("**", "").replace("`", "").replace("\\", "")
+
+
+def verify_math() -> list:
+    """Recompute every calculation the book shows its reader.
+
+    The book prints its own divisions so a reader can check them. That makes
+    them machine-checkable too, and makes a wrong one worse than a typo: the
+    one place the text invites verification is the place it fails it.
+    """
+    problems = []
+    for f in sorted(BOOK_DIR.glob("*.md")):
+        if not BOOK_SECTION_RE.match(f.name):
+            continue
+        for lineno, raw in enumerate(f.read_text(encoding="utf-8",
+                                                 errors="replace").splitlines(), 1):
+            if "=" not in raw and "≈" not in raw:
+                continue
+            parts = re.split(r"[=≈]", _strip_markup(raw))
+            if len(parts) < 2:
+                continue
+            for lhs, rhs in zip(parts, parts[1:]):
+                left = _eval_arith(lhs)
+                if left is None:
+                    continue
+                right_expr = _eval_arith(rhs)
+                if right_expr is not None:
+                    # expression = expression: compare directly
+                    if abs(left - right_expr) > max(1e-9, abs(left) * 1e-9):
+                        problems.append({
+                            "file": f.name, "line": lineno,
+                            "kind": "expression mismatch",
+                            "detail": f"{lhs.strip()} = {left:g} but "
+                                      f"{rhs.strip()} = {right_expr:g}"})
+                    continue
+                m = STATED_RE.match(rhs)
+                if not m:
+                    continue
+                stated_s = m.group(1)
+                stated = float(stated_s)
+                decimals = len(stated_s.split(".")[1]) if "." in stated_s else 0
+                if round(left, decimals) != round(stated, decimals):
+                    problems.append({
+                        "file": f.name, "line": lineno,
+                        "kind": "rounding",
+                        "detail": f"{lhs.strip()} = {left!r}, which rounds to "
+                                  f"{round(left, decimals)}, but the text says {stated_s}"})
+    return problems
+
+
+def _subtitle_sources() -> dict:
+    """Every place the book states what it is about."""
+    found = {}
+    bj = BOOK_DIR / "book.json"
+    if bj.exists():
+        try:
+            found["book.json (EPUB/PDF metadata)"] = json.loads(
+                bj.read_text(encoding="utf-8")).get("subtitle", "")
+        except Exception:
+            pass
+    app = ROOT / "src/app.html"
+    if app.exists():
+        m = re.search(r'<meta\s+name="description"\s+content="([^"]+)"',
+                      app.read_text(encoding="utf-8"))
+        if m:
+            found["src/app.html (social + search)"] = m.group(1)
+    modal = ROOT / "src/lib/components/BookCoverModal.svelte"
+    if modal.exists():
+        m = re.search(r'class="book-subtitle">([^<]+)<',
+                      modal.read_text(encoding="utf-8"))
+        if m:
+            found["BookCoverModal.svelte (what a buyer sees)"] = m.group(1)
+    return found
+
+
+def _normalize_claim(s: str) -> str:
+    s = s.lower()
+    s = re.sub(r"^surviving the singularity[.:]?\s*", "", s)
+    s = re.sub(r"^(a|the)\s+field manual for\s+", "", s)
+    s = re.sub(r"[^a-z0-9 ]+", "", s)
+    return " ".join(s.split())
+
+
+def verify_meta() -> list:
+    """Catch drift between what the site promises and what the file says."""
+    problems = []
+    subs = _subtitle_sources()
+    distinct = {_normalize_claim(v) for v in subs.values() if v}
+    if len(distinct) > 1:
+        problems.append({
+            "kind": "subtitle drift",
+            "detail": f"{len(distinct)} different subtitles in production: "
+                      + " | ".join(f"{k} -> {v!r}" for k, v in subs.items())})
+    ads = advertised_prices()
+    if len(ads) > 1:
+        problems.append({
+            "kind": "price drift",
+            "detail": "site advertises conflicting prices: "
+                      + ", ".join(fmt_cents(c) for c in sorted(ads))})
+    return problems
+
+
+def verify_precedents() -> dict:
+    """Precedent Ledger integrity: P-01..P-22, one per section, all indexed."""
+    per_section, all_ids = {}, set()
+    for f in sorted(BOOK_DIR.glob("*.md")):
+        if not BOOK_SECTION_RE.match(f.name):
+            continue
+        ids = sorted(set(re.findall(r"P-(\d{2})", f.read_text(encoding="utf-8",
+                                                              errors="replace"))))
+        if ids:
+            per_section[f.name] = ids
+            all_ids.update(ids)
+    expected = {f"{i:02d}" for i in range(1, 23)}
+    appendix_d = BOOK_DIR / "25-appendix-d.md"
+    indexed = set(re.findall(r"P-(\d{2})", appendix_d.read_text(encoding="utf-8")
+                             )) if appendix_d.exists() else set()
+    # Appendix B (Works Cited) and Appendix D (the Ledger index) reference every
+    # precedent by design. Counting them as reuse makes every ID look duplicated
+    # and buries the two that actually are.
+    INDEXES = {"23-appendix-b.md", "25-appendix-d.md"}
+    prose = {s: ids for s, ids in per_section.items() if s not in INDEXES}
+    where = {}
+    for sec, ids in prose.items():
+        for i in ids:
+            where.setdefault(i, []).append(sec)
+    return {
+        "missing_from_book": sorted(expected - all_ids),
+        "missing_from_appendix_d": sorted(expected - indexed),
+        "unknown_ids": sorted(all_ids - expected),
+        "in_multiple_sections": {i: v for i, v in sorted(where.items()) if len(v) > 1},
+        "sections_with_multiple": {s: v for s, v in prose.items() if len(v) > 1},
+    }
+
+
+def verify_links(timeout: float = 12.0) -> list:
+    """Liveness-check every source URL in Works Cited."""
+    ap_b = BOOK_DIR / "23-appendix-b.md"
+    if not ap_b.exists():
+        return []
+    urls, seen = [], set()
+    for u in re.findall(r"https?://[^\s)>\]\"']+", ap_b.read_text(encoding="utf-8")):
+        u = u.rstrip(".,;")
+        if u not in seen:
+            seen.add(u)
+            urls.append(u)
+    dead = []
+    for u in urls:
+        code = 0
+        for method in ("HEAD", "GET"):
+            req = urllib.request.Request(u, method=method, headers={
+                "User-Agent": "Mozilla/5.0 (compatible; sts.py link check)"})
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as r:
+                    code = r.status
+                break
+            except urllib.error.HTTPError as e:
+                code = e.code
+                if code in (403, 405) and method == "HEAD":
+                    continue  # some hosts refuse HEAD; retry as GET
+                break
+            except Exception:
+                code = 0
+                break
+        if code != 200:
+            dead.append({"url": u, "status": code})
+    return {"checked": len(urls), "dead": dead}
+
+
+def cmd_verify(args) -> int:
+    checks = args.check or "all"
+    result, failed = {}, 0
+
+    if checks in ("all", "math"):
+        result["math"] = verify_math()
+        failed += len(result["math"])
+    if checks in ("all", "meta"):
+        result["meta"] = verify_meta()
+        failed += len(result["meta"])
+    if checks in ("all", "precedents"):
+        p = verify_precedents()
+        result["precedents"] = p
+        failed += (len(p["missing_from_book"]) + len(p["missing_from_appendix_d"])
+                   + len(p["unknown_ids"]))
+    if checks == "links" or (checks == "all" and args.links):
+        result["links"] = verify_links()
+        failed += len(result["links"]["dead"])
+
+    if args.json:
+        print(json.dumps(result, indent=2))
+        return 1 if failed else 0
+
+    print(f"Verifying the book against itself — sts.py v{VERSION}")
+    if "math" in result:
+        bad = result["math"]
+        print(f"\n  math        {len(bad)} problem(s) in shown calculations")
+        for p in bad:
+            print(f"    {p['file']}:{p['line']}  [{p['kind']}] {p['detail']}")
+    if "meta" in result:
+        bad = result["meta"]
+        print(f"\n  meta        {len(bad)} drift problem(s)")
+        for p in bad:
+            print(f"    [{p['kind']}] {p['detail']}")
+    if "precedents" in result:
+        p = result["precedents"]
+        print("\n  precedents  P-01..P-22 ledger integrity")
+        for key, label in (("missing_from_book", "never used in any section"),
+                           ("missing_from_appendix_d", "not indexed in Appendix D"),
+                           ("unknown_ids", "out of range")):
+            if p[key]:
+                print(f"    ERROR  {label}: {', '.join('P-' + i for i in p[key])}")
+        for i, secs in p["in_multiple_sections"].items():
+            print(f"    note   P-{i} appears in {len(secs)} sections: {', '.join(secs)}")
+        for s, ids in p["sections_with_multiple"].items():
+            print(f"    note   {s} carries {len(ids)}: {', '.join('P-' + i for i in ids)}")
+        if not any(p[k] for k in ("missing_from_book", "missing_from_appendix_d",
+                                  "unknown_ids")):
+            print("    OK     all 22 present in the book and indexed in Appendix D")
+    if "links" in result:
+        lk = result["links"]
+        print(f"\n  links       {len(lk['dead'])} dead of {lk['checked']} checked")
+        for d in lk["dead"]:
+            print(f"    {d['status'] or 'no response'}  {d['url']}")
+    elif checks == "all" and not args.links:
+        print("\n  links       skipped (network). Add --links to check Works Cited.")
+
+    print(f"\n  {failed} problem(s) found" if failed else "\n  Clean.")
+    return 1 if failed else 0
+
+
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -2620,6 +2902,16 @@ def main():
         p = sub.add_parser(name)
         p.add_argument("--json", action="store_true")
         p.set_defaults(fn=fn)
+
+    p = sub.add_parser("verify")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("check", nargs="?",
+                   choices=["all", "math", "meta", "precedents", "links"],
+                   help="which check to run (default: all fast checks)")
+    p.add_argument("--links", action="store_true",
+                   help="with 'all', also liveness-check every Works Cited URL "
+                        "(network, slow)")
+    p.set_defaults(fn=cmd_verify)
 
     p = sub.add_parser("stripe")
     p.add_argument("--json", action="store_true")

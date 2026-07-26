@@ -114,6 +114,7 @@ citing it, flag that in your report.
 | Editorial state | `manuscript/EDITORIAL-QUEUE.md` |
 | Canonical facts + roadmap | `AUDITOR-BRIEF.md` (repo root) |
 | Research receipts | `manuscript/sources/research-log.md` |
+| Outside reading of the book | `manuscript/sources/EXTERNAL-ANALYSIS-2026-07-26.md` (cross-reference ONLY, never cite it) |
 
 **Never edit** `manuscript/StS-Complete-Draft-*.md`. Those are stale compiled snapshots.
 Editing one is invisible to the book and wastes the pass. Same for `manuscript/drafts/`
@@ -173,6 +174,14 @@ sources are appended to Appendix B with continuous numbering and logged to
 `research-log.md`. Precedents P-07..P-22 are **not yet fact-checked** (only P-01..P-06
 are), so if your chapter carries one, verifying it is part of your job. Cyberdeck source
 URLs 166-178 are unverified. A claim you cannot source gets softened or cut, not shipped.
+
+> **Do not launder.** `manuscript/sources/EXTERNAL-ANALYSIS-2026-07-26.md` is an outside
+> reader's analysis of this book. It restates the book's own claims in confident
+> analytical prose, and two of its eight cited sources are CT's own Medium pages, so
+> agreeing with it proves nothing. Use it to see what an outside reader understood and
+> to pick up verification worklist items. **Never cite it, and never treat a number
+> appearing in it as confirmed.** It covers exactly the claims that are currently
+> unverified, which makes it the easiest possible way to fool yourself.
 
 **4. Voice.** One register throughout. The known defect is that Foundations sections
 swing between rant and academic while the narrative scenes are strong. Unify toward the

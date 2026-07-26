@@ -29,6 +29,41 @@ source videos). Source transcripts + editorial note in `manuscript/solarpunk-sou
 PDF: `/downloads/Surviving-the-Singularity-v0.6.0.pdf` (linked from /book).
 **Auditors start at `AUDITOR-BRIEF.md` (repo root).**
 
+## 2026-07-26 intake: external analysis + three defects found
+
+**Source filed:** `manuscript/sources/EXTERNAL-ANALYSIS-2026-07-26.md`, a third-party
+analytical evaluation of the book supplied by CT. Cross-reference only. Nothing in it may
+be cited: its works-cited list is eight entries, two of which are CT's own Medium pages,
+and its numbers are restatements of the book's own claims, so using it to verify the book
+is circular. Filed with a verification worklist and an explicit anti-laundering warning.
+
+**Open defects found on intake:**
+
+1. **Three subtitles in production.** `book.json` says "The 9 Stages of the Singularity and
+   the Future of Earth" and drives EPUB/PDF metadata. `src/app.html` says "A field manual
+   for staying agentic as AI rewrites work, money, medicine, and meaning." `BookCoverModal.svelte`
+   says "A field manual for staying agentic as AI rewrites the world." The external analysis
+   uses a fourth variant, so the drift has already left the repo. The cover a preorder buyer
+   sees disagrees with the metadata inside the file they download. **Needs one CT ruling and
+   one sweep before the August campaign.**
+2. **Rounding error, Chapter 9 line 247.** Prints `468 / 66.6 ~= 7.02 mg/L`; the true value is
+   7.027, which rounds to 7.03. The 15C companion line is correct at 10.04. Mechanical fix,
+   but it is a content change, so ride it with the next wave rather than bumping alone.
+3. **P-09 Wellington comparison unsourced.** Chapter 7: twelve thousand soldiers, "more than
+   Wellington had just taken to fight Napoleon in the Peninsula." Sits in the unverified
+   P-07..P-22 band. The comparison depends on which year of the Peninsular army is meant.
+   Verify against a scholarly source or soften.
+
+**Verified clean on intake:** "nineteen households" consistent across nine section files plus
+the Part II divider; the 41-hour leak matches between `13-chapter11.md` and `ELIJAH-PROTOCOL.md`;
+the 15C dissolved-oxygen figure is arithmetically correct.
+
+**Also new:** `src/lib/data/book/VOICE-GUIDE.md` replaces `WRITING_CHECKLIST.md` as the voice
+reference (commit `900e514`). The old checklist is still on disk pending a CT ruling to retire
+it. Audit roadmap pass C should be repointed at the new guide.
+
+---
+
 **Source of truth:** `src/lib/data/book/` (unified in commit `5164f49`; serves both the
 /book pages and the EPUB via `scripts/build-epub.sh`).
 **2026-07-17 — Precedent Ledger weave landed.** Every section (Preface through Conclusion)

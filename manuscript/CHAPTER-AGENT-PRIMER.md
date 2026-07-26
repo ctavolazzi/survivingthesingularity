@@ -10,8 +10,13 @@
 > ```
 >
 > If that prints anything other than `0.7.1 2026-07-21 30`, the word counts in the
-> chapter map at section 10 are stale. Re-run `python3 scripts/sts.py book` for current
-> numbers. The file paths do not change.
+> chapter map at section 10 are stale.
+>
+> **That check is necessary but not sufficient.** Other sessions edit this repo, and
+> prose changes land before the version bump does, so `book.json` can report current
+> while the map is already wrong. Always run `python3 scripts/sts.py book` yourself and
+> trust its number for your chapter over the map below. The map is an orientation aid;
+> `sts.py` is the measurement. The file paths never change.
 
 You are running **one chapter** of a book that ships in September 2026. You are not
 auditing the whole manuscript, not redesigning the book, and not touching the website.

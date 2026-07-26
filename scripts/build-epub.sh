@@ -20,6 +20,9 @@ else
   sips -s format png -z 2560 1600 "$TMP/cover.pdf" --out "$TMP/cover.png" >/dev/null
 fi
 cp "$TMP/cover.png" "$OUT/cover.png"
+# Cover page for the print PDF (the EPUB gets its cover via --epub-cover-image).
+# Lives beside cover.png so the img src can stay relative.
+cp "$ROOT/scripts/book-cover-page.html" "$TMP/cover-page.html"
 
 echo "==> Sections (from book.json, minus print-style index)"
 FILES=$(jq -r '.sections[].file' "$BOOK/book.json" | grep -v '^18-index.md$')
@@ -64,6 +67,7 @@ pandoc metadata.yaml $FILES \
   -o "$OUT/Surviving-the-Singularity-$LABEL.pdf" \
   --toc --toc-depth=1 \
   --pdf-engine=weasyprint \
+  --include-before-body=cover-page.html \
   --css="$TMP/book-print.css" 2>/dev/null
 
 ls -lh "$OUT"

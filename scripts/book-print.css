@@ -20,6 +20,35 @@
   @bottom-left { content: none; }
   @bottom-right { content: none; }
 }
+/* Full-page cover, injected by build-epub.sh via --include-before-body */
+@page cover {
+  margin: 0;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+/* Negative margin cancels the UA default 8px body margin so the cover actually
+   bleeds to the page edge. Scoped to this element on purpose — zeroing the body
+   margin globally would widen the text block and reflow all 276 other pages. */
+#cover-page {
+  page: cover;
+  page-break-after: always;
+  text-align: center;
+  margin: -8px 0 0 -8px;
+  width: calc(100% + 16px);
+  height: 100vh;
+  overflow: hidden;
+}
+/* Full-bleed. The art is 1410x2056 (0.686) against letter's 0.773, so cover-fit
+   trims ~231px of height. object-position: top puts all of that trim at the
+   bottom (empty grass) instead of splitting it — a centered crop would leave the
+   title only 77px off the edge. Title occupies 9.3%-22.3% of art height. */
+#cover-page img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
 .version-stamp {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 10pt;

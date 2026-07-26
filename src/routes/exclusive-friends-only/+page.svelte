@@ -4,6 +4,7 @@
   import { sectionsWithMeta, book } from '$lib/bookContent';
   import { isValidFriendsPassword } from '$lib/bookAccessCode.js';
   import { bookUnlocked } from '$lib/stores/bookAccess.js';
+  import BookCover from '$lib/components/BookCover.svelte';
 
   const pdfHref = `/downloads/Surviving-the-Singularity-v${book.version}.pdf`;
   const epubHref = `/downloads/Surviving-the-Singularity-v${book.version}.epub`;
@@ -91,6 +92,9 @@
   <!-- ── GATE ── -->
   <main class="gate-main">
     <form class="gate-form" on:submit|preventDefault={submitPassword}>
+      <div class="gate-cover">
+        <BookCover width="clamp(112px, 30vw, 140px)" loading="eager" />
+      </div>
       <p class="eyebrow">Friends &amp; family</p>
       <h1 class="gate-title">You either have the password or you don't.</h1>
       <p class="gate-sub">
@@ -123,6 +127,9 @@
   <!-- ── WELCOME ── -->
   <section class="welcome" in:fade={{ duration: 400 }}>
     <div class="inner-narrow">
+      <div class="welcome-cover">
+        <BookCover width="clamp(150px, 36vw, 220px)" loading="eager" tilt />
+      </div>
       <p class="eyebrow">Access granted</p>
       <h1 class="welcome-title">You're in. Take the whole thing.</h1>
       <p class="welcome-text">
@@ -173,10 +180,11 @@
       <p class="section-label">Or read it here</p>
       <h2 class="read-title">Every chapter, in order.</h2>
       <p class="read-sub">
-        Same reader as the book page, already unlocked for you. Pick up anywhere.
+        One continuous scroll, already unlocked for you. It remembers your place, so you can
+        put it down and come back. Or jump straight to a chapter below.
       </p>
       <div class="read-actions">
-        <a href="/book" class="btn-primary">Open the reader</a>
+        <a href="/read" class="btn-primary">Open the reader</a>
       </div>
 
       {#each tocGroups as group}
@@ -271,6 +279,11 @@
     gap: 0.75rem;
     text-align: center;
   }
+  .gate-cover {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
   .gate-title {
     font-size: clamp(1.5rem, 4.5vw, 2rem);
     font-weight: 800;
@@ -352,6 +365,11 @@
   .welcome {
     padding: clamp(48px, 8vw, 80px) clamp(20px, 5vw, 48px) clamp(24px, 4vw, 36px);
     text-align: center;
+  }
+  .welcome-cover {
+    display: flex;
+    justify-content: center;
+    margin-bottom: clamp(24px, 4vw, 36px);
   }
   .welcome-title {
     font-size: clamp(1.75rem, 5vw, 2.5rem);

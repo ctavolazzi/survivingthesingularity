@@ -86,3 +86,13 @@ export const sectionsWithMeta = book.sections.map(section => {
 // Convenience: just the numbered chapters (excludes front/back matter),
 // useful for chapter-card grids on the /book landing page.
 export const chaptersWithMeta = sectionsWithMeta.filter(s => /^chapter\d+$/.test(s.id));
+
+// Same shape as sectionsWithMeta, plus the raw markdown body. The continuous
+// reader (/read) renders the whole book in one scroll, so it needs every
+// section's prose up front rather than one lazy fetch per chapter. The
+// markdown is already bundled eagerly above for word counts and teasers, so
+// this adds no extra payload beyond the strings themselves.
+export const sectionsWithBody = sectionsWithMeta.map(section => ({
+  ...section,
+  raw: eagerMarkdown[`/src/lib/data/book/${section.file}`] || ''
+}));

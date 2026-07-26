@@ -3,6 +3,7 @@
   import { onMount } from 'svelte';
   import { sectionsWithMeta, book } from '$lib/bookContent';
   import { bookPage } from '$lib/stores/bookPage';
+  import BookCover from '$lib/components/BookCover.svelte';
 
   const pdfHref = `/downloads/Surviving-the-Singularity-v${book.version}.pdf`;
 
@@ -53,6 +54,9 @@
   <!-- ── PREFACE ── -->
   <section class="preface" in:fade={{ duration: 400 }}>
     <div class="inner-narrow">
+      <div class="preface-cover">
+        <BookCover width="clamp(150px, 34vw, 210px)" loading="eager" tilt />
+      </div>
       <p class="eyebrow">Surviving the Singularity</p>
       <p class="preface-text">
         The machine that can do most jobs is already here. Things are changing, and you can do
@@ -64,7 +68,10 @@
       </p>
       <p class="preface-meta">Draft v{book.version} &middot; {sectionsWithMeta.length} sections &middot; {totalWords.toLocaleString()} words total</p>
       <div class="pdf-actions">
-        <a href={pdfHref} target="_blank" rel="noopener" class="pdf-btn pdf-btn-primary">
+        <a href="/read" class="pdf-btn pdf-btn-primary">
+          Read it straight through <span aria-hidden="true">&rarr;</span>
+        </a>
+        <a href={pdfHref} target="_blank" rel="noopener" class="pdf-btn pdf-btn-ghost">
           View the PDF in your browser <span aria-hidden="true">&nearr;</span>
         </a>
       </div>
@@ -142,6 +149,11 @@
   .preface {
     padding: clamp(48px, 8vw, 80px) clamp(20px, 5vw, 48px) clamp(32px, 5vw, 48px);
     text-align: center;
+  }
+  .preface-cover {
+    display: flex;
+    justify-content: center;
+    margin-bottom: clamp(24px, 4vw, 36px);
   }
   .eyebrow {
     font-family: var(--mono);

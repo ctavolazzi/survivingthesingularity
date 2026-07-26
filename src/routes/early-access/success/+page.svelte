@@ -1,4 +1,6 @@
 <script>
+  import BookCover from '$lib/components/BookCover.svelte';
+
   export let data;
 </script>
 
@@ -24,7 +26,11 @@
         <span class="success-mode-badge">Dev mode</span>
       {/if}
 
-      <h1 class="success-heading">You're in.</h1>
+      <div class="success-cover">
+        <BookCover width="clamp(128px, 32vw, 168px)" loading="eager" tilt />
+      </div>
+
+      <h1 class="success-heading" id="success-heading">You're in.</h1>
       <p class="success-sub">
         {#if data.email}
           Your research bundle and access links are on their way to <strong>{data.email}</strong>.

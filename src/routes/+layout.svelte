@@ -4,7 +4,6 @@
   import Footer from '$lib/components/Footer.svelte';
   import DisclaimerBanner from '$lib/components/DisclaimerBanner.svelte';
   import ToastContainer from '$lib/components/ToastContainer.svelte';
-  import StickyCaptureBar from '$lib/components/StickyCaptureBar.svelte';
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import InfoModal from '$lib/components/InfoModal.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
@@ -20,6 +19,12 @@
   const SITE = 'https://survivingthesingularity.com';
   $: canonicalPath = $page.url.pathname.replace(/\/+$/, '') || '/';
   $: canonical = SITE + canonicalPath;
+
+  // The continuous reader (/read) is a reading surface, not a page of the
+  // marketing site: it brings its own sticky chapter bar, and the floating
+  // navbar would sit on top of it. Site chrome steps aside there. The reader
+  // links back out from its own chapter drawer.
+  $: isReader = $page.url.pathname === '/read';
 
   // White-rabbit is a debug instrumentation system - only enabled in dev so we
   // don't ship behavioral tracking or expose internals to production visitors.
@@ -81,7 +86,9 @@
 
 <div class="app">
   <DisclaimerBanner />
-  <Navbar user={data?.user} />
+  {#if !isReader}
+    <Navbar user={data?.user} />
+  {/if}
 
   <!-- Page transition loading bar -->
   {#if navigating}
@@ -93,9 +100,11 @@
   <main id="main-content" tabindex="-1">
     <slot />
   </main>
-  <button type="button" class="site-thankyou" on:click={() => thankYouOpen = true}>
-    Thank you for being here ❣️
-  </button>
+  {#if !isReader}
+    <button type="button" class="site-thankyou" on:click={() => thankYouOpen = true}>
+      Thank you for being here ❣️
+    </button>
+  {/if}
   <InfoModal open={thankYouOpen} title="Thank You" on:close={() => thankYouOpen = false}>
     <p>Most people look away from what's coming. You didn't.</p>
     <p>You're willing to sit with hard ideas instead of dismissing them. Willing to ask what to build instead of who to blame. That's rarer than it should be, and it matters more than you think.</p>
@@ -103,9 +112,10 @@
     <p>That's how hope actually comes back: not from certainty, but from people like you staying in the room.</p>
     <p>Thank you for being here.</p>
   </InfoModal>
-  <Footer />
+  {#if !isReader}
+    <Footer />
+  {/if}
   <ToastContainer />
-  <StickyCaptureBar />
   <CommandPalette bind:open={commandPaletteOpen} />
   {#if dev}
     <WhiteRabbitPanel />

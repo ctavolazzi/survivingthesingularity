@@ -35,6 +35,9 @@ Commands:
     art       Enroll every book figure in art-catalog.json (list|sync).
               Data-driven from the manuscript index + credits.json; ids are
               sts.<kind>.<filename-stem> so new art auto-enrolls.
+    cover     Keep the website's cover art in sync with the book's. Reports
+              which site assets still carry an older cover; --sync
+              regenerates every derivative from art-raw/book-cover-final-source.png.
 
 Every command accepts --json for machine-readable output.
 `audit` and `sitemap` exit non-zero when errors are found (CI-friendly).
@@ -2106,8 +2109,311 @@ def _art_sync(args):
     return 0
 
 
+# --- art cut: lossless background removal for plate composites ---------------
+
+ART_RAW_DIR = ROOT / "art-raw"
+
+# A plate is a sprite composited by script onto one flat palette colour (the same
+# navy as FLOW_BG below), so its background is exactly one RGB value with no
+# anti-aliasing. That makes exact colour keying correct AND lossless: verified on
+# char-gary-plate.png, the keyed figure is a 2.000x nearest-neighbour match to the
+# authored sprite alpha, IoU 100.00%, 0 differing pixels of 105,728.
+#
+# An ML matting model (rembg, withoutbg, BiRefNet) can only approximate this, and
+# approximation is what feathers edges. Measured on sts-char-gary.png, withoutbg
+# turned a perfectly binary authored alpha (0.00% intermediate) into 5.26%
+# intermediate, erasing 1.66% of the silhouette. Do not use matting on the art.
+
+
+def _art_dominant_colour(px):
+    """Most common RGB triple, and the share of the image it covers."""
+    colour, n = collections.Counter(px).most_common(1)[0]
+    return colour, n / len(px)
+
+
+def _art_largest_component(fg, w, h):
+    """8-connected BFS. Returns a mask of the biggest blob and the blob count."""
+    seen = bytearray(w * h)
+    best = []
+    blobs = 0
+    for start in range(w * h):
+        if not fg[start] or seen[start]:
+            continue
+        blobs += 1
+        comp = []
+        q = collections.deque([start])
+        seen[start] = 1
+        while q:
+            i = q.popleft()
+            comp.append(i)
+            y, x = divmod(i, w)
+            for dy in (-1, 0, 1):
+                ny = y + dy
+                if ny < 0 or ny >= h:
+                    continue
+                base = ny * w
+                for dx in (-1, 0, 1):
+                    nx = x + dx
+                    if (dx or dy) and 0 <= nx < w:
+                        j = base + nx
+                        if fg[j] and not seen[j]:
+                            seen[j] = 1
+                            q.append(j)
+        if len(comp) > len(best):
+            best = comp
+    mask = bytearray(w * h)
+    for i in best:
+        mask[i] = 1
+    return mask, blobs
+
+
+def _art_key_plate(Image, path: Path, tol: int = 0):
+    im = Image.open(path).convert("RGB")
+    w, h = im.size
+    # getdata() is deprecated for removal in Pillow 14; get_flattened_data() is
+    # its replacement and does not exist before Pillow 11.3, so try both.
+    reader = getattr(im, "get_flattened_data", None) or im.getdata
+    px = list(reader())
+    bg, share = _art_dominant_colour(px)
+
+    if tol == 0:
+        fg = bytearray(0 if p == bg else 1 for p in px)
+    else:
+        br, bgc, bb = bg
+        fg = bytearray(
+            0 if abs(p[0] - br) + abs(p[1] - bgc) + abs(p[2] - bb) <= tol else 1
+            for p in px)
+
+    fig, blobs = _art_largest_component(fg, w, h)
+
+    def build(mask):
+        out = Image.new("RGBA", (w, h))
+        # zero the RGB where transparent, so no navy fringe survives premultiply
+        out.putdata([(px[i][0], px[i][1], px[i][2], 255) if mask[i]
+                     else (0, 0, 0, 0) for i in range(w * h)])
+        hist = out.getchannel("A").histogram()
+        mid = 1 - (hist[0] + hist[255]) / sum(hist)
+        if mid:
+            raise AssertionError(
+                f"{path.name}: alpha not binary ({mid * 100:.3f}% intermediate)")
+        return out
+
+    return {"bg": bg, "bg_share": share, "blobs": blobs,
+            "content": build(fg), "figure": build(fig),
+            "kept_content": sum(fg) / len(fg), "kept_figure": sum(fig) / len(fig)}
+
+
+def _art_cut(args) -> int:
+    """Key plate composites to transparency without touching the hard edges."""
+    try:
+        from PIL import Image
+    except ModuleNotFoundError:
+        print("art cut needs Pillow (the only non-stdlib dep in this script): "
+              "pip install Pillow", file=sys.stderr)
+        return 1
+
+    plates = [Path(p) for p in args.plates] if args.plates else \
+        sorted(ART_RAW_DIR.glob("*-plate.png"))
+    if not plates:
+        print(f"no plates found in {ART_RAW_DIR}", file=sys.stderr)
+        return 1
+
+    out_dir = Path(args.out).expanduser() if args.out else ART_RAW_DIR / "cut"
+    if not args.dry_run:
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+    rows, wrote = [], []
+    for p in plates:
+        r = _art_key_plate(Image, p, tol=args.tol)
+        stem = p.stem.replace("-plate", "")
+        # largest-blob is only right for single-subject plates; ch06-pegboard has
+        # 97 components and drops the loose tools, so flag it instead of lying.
+        multi = r["kept_figure"] < r["kept_content"] * 0.8
+        for variant in (("content", "figure") if args.variant == "both"
+                        else (args.variant,)):
+            if not args.dry_run:
+                dest = out_dir / f"{stem}-{variant}.png"
+                r[variant].save(dest)
+                wrote.append(dest)
+        rows.append({"plate": p.name, "bg": "#%02x%02x%02x" % r["bg"],
+                     "bg_share": round(r["bg_share"], 4), "blobs": r["blobs"],
+                     "kept_content": round(r["kept_content"], 4),
+                     "kept_figure": round(r["kept_figure"], 4),
+                     "multi_subject": multi})
+
+    if args.json:
+        print(json.dumps(rows, indent=2))
+        return 0
+
+    print(f"{'plate':32} {'bg':9} {'bg%':>6} {'blobs':>6} "
+          f"{'content%':>9} {'figure%':>8}")
+    for r in rows:
+        flag = "  ← multi-subject: use -content" if r["multi_subject"] else ""
+        print(f"{r['plate']:32} {r['bg']:9} {r['bg_share']*100:5.1f}% "
+              f"{r['blobs']:6d} {r['kept_content']*100:8.2f}% "
+              f"{r['kept_figure']*100:7.2f}%{flag}")
+    tail = "(dry run, nothing written)" if args.dry_run else \
+        f"-> {out_dir} ({len(wrote)} file(s))"
+    print(f"\n{len(rows)} plate(s), all alpha verified binary {tail}")
+    return 0
+
+
 def cmd_art(args):
-    return {"list": _art_list, "sync": _art_sync}[args.action](args)
+    return {"list": _art_list, "sync": _art_sync, "cut": _art_cut}[args.action](args)
+
+
+# --- cover: keep the website's cover art in sync with the book's -------------
+
+COVER_SOURCE = ART_RAW_DIR / "book-cover-final-source.png"
+
+# Every cover asset the website can serve, and the width it is published at.
+# width None means "native source width". The `_original` webp variants are
+# the higher-fidelity encodes the homepage <picture> prefers; the plain ones
+# are the compressed siblings. Both families are listed because leaving a
+# stale sibling behind is exactly how the site ended up advertising a cover
+# the book no longer had.
+COVER_TARGETS = (
+    ("static/Surviving-the-Singularity-Cover.png", None, None),
+    ("static/images/Surviving-the-Singularity-Cover.png", None, None),
+    ("static/images/Surviving-the-Singularity-Cover.webp", None, 82),
+    ("static/images/surviving_the_singularity_cover_1200.png", None, None),
+    ("static/images/optimized/surviving_the_singularity_cover_400.png", 400, None),
+    ("static/images/optimized/surviving_the_singularity_cover_800.png", 800, None),
+    ("static/images/optimized/surviving_the_singularity_cover_1200.png", 1200, None),
+    ("static/images/optimized/surviving_the_singularity_cover_400.webp", 400, 82),
+    ("static/images/optimized/surviving_the_singularity_cover_800.webp", 800, 82),
+    ("static/images/optimized/surviving_the_singularity_cover_1200.webp", 1200, 82),
+    ("static/images/optimized/surviving_the_singularity_cover_400_original.webp", 400, 92),
+    ("static/images/optimized/surviving_the_singularity_cover_800_original.webp", 800, 92),
+    ("static/images/optimized/surviving_the_singularity_cover_1200_original.webp", None, 92),
+    ("static/images/optimized/surviving_the_singularity_cover_original.webp", None, 92),
+    ("src/lib/images/Surviving-the-Singularity-Cover.png", None, None),
+    ("src/lib/images/Surviving-the-Singularity-Cover.webp", None, 82),
+)
+
+# Written next to the source so a later run can tell "this derivative came
+# from the current cover" from "this derivative predates it" without
+# re-deriving every encode. Content hash of COVER_SOURCE.
+COVER_STAMP = STATIC_DIR / "images" / "optimized" / ".cover-source-sha256"
+
+
+def _sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def _img_size(path: Path):
+    """(width, height) via sips, or None if unreadable."""
+    out = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(path)],
+                         capture_output=True, text=True)
+    nums = re.findall(r"pixel(?:Width|Height):\s*(\d+)", out.stdout)
+    return (int(nums[0]), int(nums[1])) if len(nums) == 2 else None
+
+
+def _cover_render(src: Path, dest: Path, width, quality) -> str:
+    """Render one derivative. Returns '' on success, else an error string."""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if dest.suffix.lower() == ".webp":
+        cmd = ["cwebp", "-quiet", "-q", str(quality or 82)]
+        if width:
+            cmd += ["-resize", str(width), "0"]
+        cmd += [str(src), "-o", str(dest)]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        return "" if dest.exists() and r.returncode == 0 else (r.stderr or "cwebp failed").strip()
+
+    # PNG. The cover art is painterly, so a straight re-encode lands around
+    # 3-4 MB — heavy for a fallback <img> and far too heavy for the og:image
+    # social scrapers fetch. An adaptive 256-colour octree palette cuts that
+    # ~3.7x with no visible banding, because the art is cel-shaded (flat
+    # regions, hard edges) rather than a photograph. Pillow is the same
+    # optional dependency `art cut` uses; without it, fall back to sips and
+    # accept the larger file rather than failing the sync.
+    try:
+        from PIL import Image
+    except ImportError:
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td) / dest.name
+            shutil.copyfile(src, tmp)
+            if width:
+                r = subprocess.run(["sips", "--resampleWidth", str(width), str(tmp)],
+                                   capture_output=True, text=True)
+                if r.returncode != 0:
+                    return (r.stderr or "sips failed").strip()
+            shutil.move(str(tmp), str(dest))
+        return ""
+
+    try:
+        im = Image.open(src).convert("RGB")
+        if width and width != im.width:
+            im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+        im.quantize(colors=256, method=Image.Quantize.FASTOCTREE,
+                    dither=Image.Dither.FLOYDSTEINBERG).save(dest, optimize=True)
+    except Exception as e:  # noqa: BLE001 - report, don't crash the whole sync
+        return f"{type(e).__name__}: {e}"
+    return ""
+
+
+def cmd_cover(args) -> int:
+    if not COVER_SOURCE.exists():
+        sys.exit(f"sts cover: source art missing — {COVER_SOURCE.relative_to(ROOT)}")
+    src_hash = _sha256(COVER_SOURCE)
+    src_size = _img_size(COVER_SOURCE)
+    stamped = COVER_STAMP.read_text(encoding="utf-8").strip() if COVER_STAMP.exists() else ""
+    in_sync = stamped == src_hash
+
+    results = []
+    for rel, width, quality in COVER_TARGETS:
+        dest = ROOT / rel
+        want_w = width or (src_size[0] if src_size else None)
+        if not dest.exists():
+            state = "missing"
+        elif not in_sync:
+            state = "stale"
+        else:
+            got = _img_size(dest)
+            state = "ok" if got and want_w and got[0] == want_w else "stale"
+        row = {"file": rel, "width": want_w, "state": state}
+        if args.sync:
+            err = _cover_render(COVER_SOURCE, dest, width, quality)
+            row["state"] = "failed" if err else ("wrote" if state != "ok" else "rewrote")
+            row["error"] = err or None
+            row["bytes"] = dest.stat().st_size if dest.exists() else 0
+        results.append(row)
+
+    if args.sync and not any(r["state"] == "failed" for r in results):
+        COVER_STAMP.parent.mkdir(parents=True, exist_ok=True)
+        COVER_STAMP.write_text(src_hash + "\n", encoding="utf-8")
+
+    drifted = [r for r in results if r["state"] in ("stale", "missing", "failed")]
+    if args.json:
+        print(json.dumps({
+            "source": str(COVER_SOURCE.relative_to(ROOT)),
+            "source_sha256": src_hash,
+            "source_size": src_size,
+            "synced": bool(args.sync),
+            "in_sync": in_sync,
+            "results": results,
+        }, indent=2))
+        return 1 if drifted and not args.sync else 0
+
+    dims = f"{src_size[0]}x{src_size[1]}" if src_size else "?"
+    print(f"sts cover — source {COVER_SOURCE.relative_to(ROOT)} ({dims}, {src_hash[:12]})")
+    for r in results:
+        note = f" — {r['error']}" if r.get("error") else ""
+        size = f"  {r['bytes'] / 1024:7.0f} KB" if r.get("bytes") else ""
+        print(f"  {r['state']:<8} {str(r['width'] or '-'):>5}w  {r['file']}{size}{note}")
+    if args.sync:
+        failed = [r for r in results if r["state"] == "failed"]
+        print(f"\n  {len(results) - len(failed)}/{len(results)} derivatives written from the current cover.")
+        return 1 if failed else 0
+    if drifted:
+        print(f"\n  {len(drifted)} asset(s) do not match the current cover — run `sts.py cover --sync`.")
+        return 1
+    print("\n  site cover matches the book cover.")
+    return 0
 
 
 # --- flow: export the manuscript's figures as an upload-ready asset pack -----
@@ -2430,6 +2736,15 @@ def main():
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_flow)
 
+    p = sub.add_parser("cover",
+                       help="keep the website's cover art in sync with the book's; "
+                            "--sync regenerates every derivative from the source art")
+    p.add_argument("--sync", action="store_true",
+                   help="regenerate every site cover derivative from "
+                        "art-raw/book-cover-final-source.png")
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_cover)
+
     p = sub.add_parser("art",
                        help="enroll every book figure in art-catalog.json (data-driven)")
     p.set_defaults(fn=cmd_art)
@@ -2439,6 +2754,22 @@ def main():
     asy = artsub.add_parser("sync", help="propose (or --apply) catalog entries for uncatalogued figures")
     asy.add_argument("--apply", action="store_true", help="merge into art-catalog.json + rebuild the index")
     asy.add_argument("--json", action="store_true")
+    ac = artsub.add_parser("cut",
+                           help="key plate backgrounds to transparency, losslessly "
+                                "(exact colour match, never ML matting)")
+    ac.add_argument("plates", nargs="*",
+                    help="plate PNGs (default: every *-plate.png in art-raw/)")
+    ac.add_argument("--out", help="output dir (default art-raw/cut)")
+    ac.add_argument("--variant", choices=("content", "figure", "both"),
+                    default="both",
+                    help="content = figure+frame+caption · figure = largest blob "
+                         "(single-subject plates only) · both (default)")
+    ac.add_argument("--tol", type=int, default=0,
+                    help="L1 tolerance around the background colour "
+                         "(default 0 = exact, which is what keeps edges hard)")
+    ac.add_argument("--dry-run", action="store_true",
+                    help="report without writing")
+    ac.add_argument("--json", action="store_true")
 
     args = ap.parse_args()
     sys.exit(args.fn(args))

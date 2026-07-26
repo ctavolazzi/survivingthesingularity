@@ -676,6 +676,199 @@ def cmd_quotes(args) -> int:
 
 
 # ──────────────────────────────────────────────────────────────────────
+# backup — Supabase redundancy
+# ──────────────────────────────────────────────────────────────────────
+#
+# Every customer record the business has - the waitlist, the preorders, the
+# fulfilment ledger - lives in exactly one Supabase project, and until this
+# command existed there was no second copy of any of it. Supabase's own
+# point-in-time recovery is a paid add-on and, either way, a backup you have
+# never restored from is a rumour. This writes a plain-text dump you can read
+# with `cat`, verify with a hash, and restore with `resolve-artifacts`-free
+# ordinary HTTP.
+#
+# Deliberately not pg_dump: there is no direct Postgres connection string in
+# this project (Supabase issues one, but it is not in .env and putting it
+# there widens the blast radius of a leaked file), and neither pg_dump nor
+# the supabase CLI is installed. PostgREST reaches the same rows with the
+# credential the app already uses.
+
+BACKUP_DEFAULT_DIR = Path.home() / "Backups" / "sts-supabase"
+BACKUP_STORAGE_BUCKETS = ("downloads",)
+BACKUP_PAGE = 1000
+
+
+def read_env(*names: str) -> dict:
+    """Read specific keys out of .env without importing a dotenv library."""
+    out = {}
+    envfile = ROOT / ".env"
+    if not envfile.exists():
+        return out
+    for line in envfile.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        if k in names:
+            out[k] = v.strip().strip('"').strip("'")
+    return out
+
+
+def _sb_creds():
+    e = read_env("SUPABASE_URL", "SUPABASE_SECRET_KEY", "SUPABASE_SERVICE_KEY")
+    url = e.get("SUPABASE_URL")
+    key = e.get("SUPABASE_SECRET_KEY") or e.get("SUPABASE_SERVICE_KEY")
+    if not url or not key:
+        sys.exit("sts backup: SUPABASE_URL and SUPABASE_SECRET_KEY (or "
+                 "SUPABASE_SERVICE_KEY) must be set in .env")
+    return url.rstrip("/"), key
+
+
+def _sb_get(url: str, key: str, headers: dict = None, timeout: int = 60):
+    req = urllib.request.Request(url)
+    req.add_header("apikey", key)
+    req.add_header("Authorization", f"Bearer {key}")
+    for h, v in (headers or {}).items():
+        req.add_header(h, v)
+    return urllib.request.urlopen(req, timeout=timeout)
+
+
+def _sb_tables(url: str, key: str) -> list:
+    """Discover every table PostgREST exposes, from its OpenAPI document.
+
+    Discovery rather than a hardcoded list: a table added later (a migration
+    nobody told this script about) would otherwise be silently left out of
+    every backup, which is the failure mode that makes people trust a backup
+    that does not contain their data.
+    """
+    with _sb_get(f"{url}/rest/v1/", key) as r:
+        spec = json.loads(r.read().decode("utf-8"))
+    names = []
+    for path in spec.get("paths", {}):
+        if path.startswith("/") and path != "/" and not path.startswith("/rpc/"):
+            names.append(path.lstrip("/"))
+    return sorted(set(names))
+
+
+def _sb_dump_table(url: str, key: str, table: str, dest: Path) -> dict:
+    """Page through one table into NDJSON. Returns a manifest entry."""
+    rows = 0
+    h = hashlib.sha256()
+    with dest.open("w", encoding="utf-8") as fh:
+        offset = 0
+        while True:
+            q = f"{url}/rest/v1/{table}?select=*&limit={BACKUP_PAGE}&offset={offset}"
+            try:
+                with _sb_get(q, key) as r:
+                    batch = json.loads(r.read().decode("utf-8"))
+            except urllib.error.HTTPError as e:
+                return {"table": table, "rows": 0, "error": f"HTTP {e.code}"}
+            if not batch:
+                break
+            for row in batch:
+                line = json.dumps(row, sort_keys=True, ensure_ascii=False)
+                fh.write(line + "\n")
+                h.update(line.encode("utf-8"))
+                rows += 1
+            if len(batch) < BACKUP_PAGE:
+                break
+            offset += BACKUP_PAGE
+    return {"table": table, "rows": rows, "sha256": h.hexdigest(),
+            "file": dest.name, "bytes": dest.stat().st_size}
+
+
+def _sb_dump_storage(url: str, key: str, bucket: str, out_dir: Path, fetch: bool) -> dict:
+    """Record (and optionally download) every object in a storage bucket."""
+    body = json.dumps({"prefix": "", "limit": 1000}).encode("utf-8")
+    req = urllib.request.Request(f"{url}/storage/v1/object/list/{bucket}", data=body)
+    req.add_header("apikey", key)
+    req.add_header("Authorization", f"Bearer {key}")
+    req.add_header("Content-Type", "application/json")
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            listing = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        return {"bucket": bucket, "objects": 0, "error": f"HTTP {e.code}"}
+    if not isinstance(listing, list):
+        return {"bucket": bucket, "objects": 0, "error": str(listing)}
+    entries, downloaded = [], 0
+    files_dir = out_dir / "storage" / bucket
+    for obj in listing:
+        meta = obj.get("metadata") or {}
+        e = {"name": obj["name"], "bytes": meta.get("size"),
+             "mimetype": meta.get("mimetype")}
+        if fetch:
+            files_dir.mkdir(parents=True, exist_ok=True)
+            try:
+                with _sb_get(f"{url}/storage/v1/object/{bucket}/{obj['name']}", key,
+                             timeout=300) as r:
+                    blob = r.read()
+                (files_dir / obj["name"]).write_bytes(blob)
+                e["sha256"] = hashlib.sha256(blob).hexdigest()
+                downloaded += 1
+            except Exception as ex:  # noqa: BLE001
+                e["error"] = str(ex)
+        entries.append(e)
+    return {"bucket": bucket, "objects": len(entries),
+            "downloaded": downloaded, "entries": entries}
+
+
+def cmd_backup(args) -> int:
+    url, key = _sb_creds()
+    stamp = date.today().isoformat()
+    root = Path(args.out).expanduser() if args.out else BACKUP_DEFAULT_DIR
+    out_dir = root / stamp
+    (out_dir / "tables").mkdir(parents=True, exist_ok=True)
+
+    tables = _sb_tables(url, key)
+    dumped = [_sb_dump_table(url, key, t, out_dir / "tables" / f"{t}.ndjson")
+              for t in tables]
+    storage = [_sb_dump_storage(url, key, b, out_dir, not args.no_files)
+               for b in BACKUP_STORAGE_BUCKETS]
+
+    manifest = {
+        "taken": stamp,
+        "project_url": url,
+        "tables": dumped,
+        "storage": storage,
+        "total_rows": sum(d.get("rows", 0) for d in dumped),
+        "restore": "Each tables/<name>.ndjson is one JSON object per line, exactly "
+                   "the shape PostgREST accepts. To restore a table: POST the lines "
+                   "(batched) to <project_url>/rest/v1/<name> with the service key and "
+                   "Content-Type: application/json. Storage objects under storage/<bucket>/ "
+                   "go back via POST <project_url>/storage/v1/object/<bucket>/<name>.",
+    }
+    (out_dir / "manifest.json").write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+
+    errors = [d for d in dumped if d.get("error")] + \
+             [s for s in storage if s.get("error")]
+    if args.json:
+        print(json.dumps(manifest, indent=2))
+        return 1 if errors else 0
+    print(f"sts backup — {url}")
+    print(f"  -> {out_dir}")
+    for d in dumped:
+        if d.get("error"):
+            print(f"  ERROR  {d['table']:<24} {d['error']}")
+        else:
+            print(f"  {d['rows']:>6} rows  {d['table']:<24} {d['sha256'][:12]}")
+    for s in storage:
+        if s.get("error"):
+            print(f"  ERROR  bucket {s['bucket']}: {s['error']}")
+        else:
+            print(f"  {s['objects']:>6} objs  storage/{s['bucket']:<17}"
+                  f" {s['downloaded']} downloaded")
+    print(f"\n  {manifest['total_rows']} rows across {len(dumped)} tables.")
+    if errors:
+        print(f"  {len(errors)} target(s) failed — backup is INCOMPLETE.")
+        return 1
+    print("  Copy this directory somewhere that is not this machine "
+          "(a backup with one copy is not a backup).")
+    return 0
+
+
+# ──────────────────────────────────────────────────────────────────────
 # stripe
 # ──────────────────────────────────────────────────────────────────────
 
@@ -2807,27 +3000,56 @@ def verify_links(timeout: float = 12.0) -> list:
         if u not in seen:
             seen.add(u)
             urls.append(u)
-    dead = []
+    # Only a 404/410 is evidence that a source is gone. A 403 or 401 means the
+    # host refused an automated request, which many publishers do by IP:
+    # Britannica, MDPI and ResearchGate all refuse even with a browser user
+    # agent, while the pages themselves are perfectly alive in a real browser.
+    # Reporting those as dead sends someone to rewrite a working bibliography.
+    dead, blocked, server_error, unreachable = [], [], [], []
     for u in urls:
-        code = 0
+        status, reason = _probe_url(u, timeout)
+        if status == 200:
+            continue
+        entry = {"url": u, "status": status, "reason": reason}
+        if status in (404, 410):
+            dead.append(entry)
+        elif status in (401, 403, 429):
+            blocked.append(entry)
+        elif status:
+            server_error.append(entry)
+        else:
+            unreachable.append(entry)
+    return {"checked": len(urls), "dead": dead, "blocked": blocked,
+            "server_error": server_error, "unreachable": unreachable}
+
+
+def _probe_url(url: str, timeout: float, attempts: int = 3):
+    """Return (http_status, reason). status 0 means no HTTP answer at all.
+
+    Retries network-level failures, because hammering ~200 hosts in a row
+    provokes throttling and DNS hiccups that look exactly like a dead link.
+    Only an actual HTTP status counts as evidence about the source.
+    """
+    reason = ""
+    for attempt in range(attempts):
         for method in ("HEAD", "GET"):
-            req = urllib.request.Request(u, method=method, headers={
-                "User-Agent": "Mozilla/5.0 (compatible; sts.py link check)"})
+            req = urllib.request.Request(url, method=method, headers={
+                "User-Agent": "Mozilla/5.0 (compatible; sts.py link check)",
+                "Accept": "*/*"})
             try:
                 with urllib.request.urlopen(req, timeout=timeout) as r:
-                    code = r.status
-                break
+                    return r.status, ""
             except urllib.error.HTTPError as e:
-                code = e.code
-                if code in (403, 405) and method == "HEAD":
-                    continue  # some hosts refuse HEAD; retry as GET
-                break
-            except Exception:
-                code = 0
-                break
-        if code != 200:
-            dead.append({"url": u, "status": code})
-    return {"checked": len(urls), "dead": dead}
+                if e.code in (403, 405, 501) and method == "HEAD":
+                    continue  # host refuses HEAD; try GET before judging
+                return e.code, f"HTTP {e.code}"
+            except urllib.error.URLError as e:
+                reason = str(getattr(e, "reason", e))[:90]
+            except Exception as e:
+                reason = f"{type(e).__name__}: {e}"[:90]
+        if attempt < attempts - 1:
+            time.sleep(1.5 * (attempt + 1))  # back off, then retry
+    return 0, reason or "no response after retries"
 
 
 def cmd_verify(args) -> int:
@@ -2881,9 +3103,30 @@ def cmd_verify(args) -> int:
             print("    OK     all 22 present in the book and indexed in Appendix D")
     if "links" in result:
         lk = result["links"]
-        print(f"\n  links       {len(lk['dead'])} dead of {lk['checked']} checked")
+        print(f"\n  links       {lk['checked']} sources checked")
+        print(f"    {len(lk['dead'])} dead (404/410) · {len(lk['blocked'])} bot-blocked "
+              f"· {len(lk['server_error'])} server error · "
+              f"{len(lk['unreachable'])} unreachable")
         for d in lk["dead"]:
-            print(f"    {d['status'] or 'no response'}  {d['url']}")
+            print(f"\n    DEAD {d['status']}  {d['url']}")
+        if lk["server_error"]:
+            print("\n    Server errors (recheck later, may be transient):")
+            for d in lk["server_error"]:
+                print(f"      {d['status']}  {d['url'][:80]}")
+        if lk["unreachable"]:
+            print("\n    No HTTP answer after 3 tries. Could be the source, could be "
+                  "this network:")
+            for d in lk["unreachable"]:
+                print(f"      {d['reason'][:40]:<40}  {d['url'][:60]}")
+        if lk["blocked"]:
+            print(f"\n    {len(lk['blocked'])} hosts refused an automated request "
+                  "(401/403/429). This is NOT evidence the page is gone: Britannica, "
+                  "MDPI and ResearchGate refuse by IP even with a browser user agent. "
+                  "Spot-check by hand, do not bulk-edit Appendix B from this list.")
+            for d in lk["blocked"][:8]:
+                print(f"      {d['status']}  {d['url'][:80]}")
+            if len(lk["blocked"]) > 8:
+                print(f"      ... and {len(lk['blocked']) - 8} more (--json for all)")
     elif checks == "all" and not args.links:
         print("\n  links       skipped (network). Add --links to check Works Cited.")
 
@@ -3027,6 +3270,15 @@ def main():
                    help="report what would be exported without writing")
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_flow)
+
+    p = sub.add_parser("backup",
+                       help="dump every Supabase table + storage bucket to a local "
+                            "directory (NDJSON + manifest with row counts and hashes)")
+    p.add_argument("--out", help=f"backup root (default: {BACKUP_DEFAULT_DIR})")
+    p.add_argument("--no-files", action="store_true",
+                   help="record storage object names/sizes but do not download them")
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_backup)
 
     p = sub.add_parser("cover",
                        help="keep the website's cover art in sync with the book's; "

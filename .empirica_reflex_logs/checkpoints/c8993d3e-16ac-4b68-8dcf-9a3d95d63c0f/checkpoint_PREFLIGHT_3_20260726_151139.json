@@ -1,0 +1,111 @@
+{
+  "session_id": "c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-07-26T15:11:33.441914+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.9,
+    "context": 0.88,
+    "clarity": 0.9,
+    "coherence": 0.85,
+    "signal": 0.88,
+    "density": 0.8,
+    "state": 0.9,
+    "change": 0.6,
+    "completion": 0.85,
+    "impact": 0.7,
+    "engagement": 0.9,
+    "uncertainty": 0.3
+  },
+  "overall_confidence": 0.877,
+  "meta": {
+    "reasoning": "Opened retroactively: I did the archive work without a transaction open, which is the discipline gap this records. The work itself is verified rather than asserted. 216 files and 712 MB copied with zero errors after fixing an exFAT xattr failure, 471 files and matching sha256 on the canonical PDF confirmed on both the SanDisk and the Google Drive side, primer pinned to v0.7.1 and checked against book.json's actual output. uncertainty 0.3 is dominated by one real gap I found late: roughly 30 draft versions live only as native Google Docs, which a filesystem sweep cannot see because .gdoc files are 175-byte pointers, so the archive is complete for on-disk artifacts but misses that entire lineage.",
+    "prompt": "Opened retroactively: I did the archive work without a transaction open, which is the discipline gap this records. The work itself is verified rather than asserted. 216 files and 712 MB copied with zero errors after fixing an exFAT xattr failure, 471 files and matching sha256 on the canonical PDF confirmed on both the SanDisk and the Google Drive side, primer pinned to v0.7.1 and checked against book.json's actual output. uncertainty 0.3 is dominated by one real gap I found late: roughly 30 draft versions live only as native Google Docs, which a filesystem sweep cannot see because .gdoc files are 175-byte pointers, so the archive is complete for on-disk artifacts but misses that entire lineage.",
+    "transaction_id": "27c3dfef-c559-443e-ad53-6a26d2dea2b4",
+    "git_commit_sha": "4c2a673f72142370cc49253b70eefbf7d880c5e9",
+    "git_notes_ref": "empirica/session/c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "dd127a15e82a4771470e6ed5ff088c51c49a1bc1",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db     | Bin 1257472 -> 1355776 bytes\n .empirica/sessions/sessions.db-shm | Bin 32768 -> 32768 bytes\n 2 files changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.88,
+      "curr": 0.9,
+      "delta": 0.02
+    },
+    "context": {
+      "prev": 0.9,
+      "curr": 0.88,
+      "delta": -0.02
+    },
+    "clarity": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    },
+    "signal": {
+      "prev": 0.86,
+      "curr": 0.88,
+      "delta": 0.02
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 0.8,
+      "delta": -0.05
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.3,
+      "curr": 0.6,
+      "delta": 0.3
+    },
+    "completion": {
+      "prev": 0.75,
+      "curr": 0.85,
+      "delta": 0.1
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.7,
+      "delta": -0.15
+    },
+    "engagement": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "uncertainty": {
+      "prev": 0.28,
+      "curr": 0.3,
+      "delta": 0.02
+    }
+  },
+  "token_count": 523
+}

@@ -1,0 +1,126 @@
+{
+  "session_id": "ac4f0bde-c122-4a14-918d-a94a630ce478",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-07-26T16:20:20.575270+00:00",
+  "vectors": {
+    "know": 0.88,
+    "do": 0.85,
+    "context": 0.82,
+    "clarity": 0.9,
+    "coherence": 0.88,
+    "signal": 0.85,
+    "density": 0.82,
+    "state": 0.7,
+    "change": 0.35,
+    "completion": 0.85,
+    "impact": 0.65,
+    "engagement": 0.93,
+    "uncertainty": 0.2
+  },
+  "overall_confidence": 0.85,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Recovery window. Grounding was gathered in the destroyed session 818b2f76 and is fully reflected in artifacts that survived on disk and in the DB. No new praxic work is gated by this CHECK.",
+    "confidence": 0.8,
+    "gaps": [
+      "change: 0.35",
+      "uncertainty: 0.20"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": "b7978fcf-330f-445d-bcca-c56d0aee9345",
+    "git_commit_sha": "a2ee7b683965aad2d12ac07130e4ebdc635fc0fa",
+    "git_notes_ref": "empirica/session/ac4f0bde-c122-4a14-918d-a94a630ce478/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "1d159a4ce8edca396d8bd2b51a09946ac341463e",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "manuscript/sources/research-log.md",
+        "src/lib/data/book/00-chapter0.md",
+        "src/lib/data/book/01-preface.md",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/03-chapter1.md",
+        "src/lib/data/book/23-appendix-b.md",
+        "src/lib/data/book/art-catalog.json",
+        "src/lib/data/book/manuscript-index.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db          | Bin 1257472 -> 1445888 bytes\n .empirica/sessions/sessions.db-shm      | Bin 32768 -> 32768 bytes\n manuscript/sources/research-log.md      | 189 ++++++++++++++++++++++++++++++++\n src/lib/data/book/00-chapter0.md        |   4 +-\n src/lib/data/book/01-preface.md         |   6 +-\n src/lib/data/book/02-introduction.md    |   4 +-\n src/lib/data/book/03-chapter1.md        |  12 +-\n src/lib/data/book/23-appendix-b.md      |  10 ++\n src/lib/data/book/art-catalog.json      |   2 +-\n src/lib/data/book/manuscript-index.json | 116 ++++++++++++++------\n 10 files changed, 294 insertions(+), 49 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.82,
+      "curr": 0.82,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.82,
+      "curr": 0.82,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.35,
+      "curr": 0.35,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.65,
+      "curr": 0.65,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.93,
+      "curr": 0.93,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.2,
+      "delta": 0.0
+    }
+  },
+  "token_count": 332
+}

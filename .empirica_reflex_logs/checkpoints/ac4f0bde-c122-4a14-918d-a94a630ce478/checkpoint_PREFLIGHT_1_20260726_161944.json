@@ -1,0 +1,53 @@
+{
+  "session_id": "ac4f0bde-c122-4a14-918d-a94a630ce478",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-07-26T16:19:36.931463+00:00",
+  "vectors": {
+    "know": 0.88,
+    "do": 0.85,
+    "context": 0.82,
+    "clarity": 0.9,
+    "coherence": 0.88,
+    "signal": 0.85,
+    "density": 0.82,
+    "state": 0.7,
+    "change": 0.35,
+    "completion": 0.85,
+    "impact": 0.65,
+    "engagement": 0.93,
+    "uncertainty": 0.2
+  },
+  "overall_confidence": 0.85,
+  "meta": {
+    "reasoning": "Opened solely to close out work already done and already verified on disk. Vectors carry forward the honest end-state assessment from the destroyed window rather than a fresh baseline, because no further work is being performed here.",
+    "prompt": "Opened solely to close out work already done and already verified on disk. Vectors carry forward the honest end-state assessment from the destroyed window rather than a fresh baseline, because no further work is being performed here.",
+    "transaction_id": "b7978fcf-330f-445d-bcca-c56d0aee9345",
+    "git_commit_sha": "765cf6becabc53e1aaa3b6dd2fb9bd1e0ae97f67",
+    "git_notes_ref": "empirica/session/ac4f0bde-c122-4a14-918d-a94a630ce478/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "1d159a4ce8edca396d8bd2b51a09946ac341463e",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "manuscript/sources/research-log.md",
+        "src/lib/data/book/00-chapter0.md",
+        "src/lib/data/book/01-preface.md",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/03-chapter1.md",
+        "src/lib/data/book/23-appendix-b.md",
+        "src/lib/data/book/art-catalog.json",
+        "src/lib/data/book/manuscript-index.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db          | Bin 1257472 -> 1441792 bytes\n .empirica/sessions/sessions.db-shm      | Bin 32768 -> 32768 bytes\n manuscript/sources/research-log.md      | 189 ++++++++++++++++++++++++++++++++\n src/lib/data/book/00-chapter0.md        |   4 +-\n src/lib/data/book/01-preface.md         |   6 +-\n src/lib/data/book/02-introduction.md    |   4 +-\n src/lib/data/book/03-chapter1.md        |  12 +-\n src/lib/data/book/23-appendix-b.md      |  10 ++\n src/lib/data/book/art-catalog.json      |   2 +-\n src/lib/data/book/manuscript-index.json | 116 ++++++++++++++------\n 10 files changed, 294 insertions(+), 49 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 253
+}

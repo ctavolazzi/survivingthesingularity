@@ -1,0 +1,111 @@
+{
+  "session_id": "c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-07-26T15:28:43.215561+00:00",
+  "vectors": {
+    "know": 0.62,
+    "do": 0.85,
+    "context": 0.7,
+    "clarity": 0.7,
+    "coherence": 0.65,
+    "signal": 0.8,
+    "density": 0.7,
+    "state": 0.75,
+    "change": 0.05,
+    "completion": 0.15,
+    "impact": 0.7,
+    "engagement": 0.9,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.723,
+  "meta": {
+    "reasoning": "Read the Preface in full and the Introduction (its preceding neighbor) in full. Confirmed book.json ordering puts Introduction at index 0, Preface at index 1, Chapter 0 at index 2. Confirmed via grep that the Preface has zero em dashes, zero uses of 'manifesto', and zero uses of 'independent', so three of the six settled rules are already clean. One 'decentralized' survives at line 51 ('decentralized energy') inside a list of genuinely decentralized technologies, which is within the settled-rule exemption but uses a different word than the rule's own allowlist ('distributed energy'). Appendix D confirms P-01 The Reading Rage 1790s maps to the Preface, matching the in-file block.\n\nknow is 0.62 rather than higher because I have identified the defects but not yet verified three factual claims: the ASIMO caption date of 2001 (Honda unveiled ASIMO in October 2000, so the caption may be the photo date rather than the debut), the line-23 claim that 100 years ago there were continent-spanning wars and weapons threatening all life on earth (1926 predates both nuclear weapons and WWII), and the line-27 claim that we have already automated almost all cognitive and physical labor. P-01 falls in the fact-checked band P-01..P-06 per the primer, so its internal citations are lower risk, but I have not yet read HISTORY-CASEBOOK.\n\nThe dominant finding so far is a register break inside a single file: the Preface body carries blog-era voice ('Congratulations!', 'Adjust your neural link electrodes', an inline all-caps 'NOTE:') while the P-01 block below it is in the mature v0.7.x field-manual voice. This is the sharpest instance in the book of the voice defect the primer names. Second finding is a cohesion problem the Preface cannot fix alone: the Introduction closes by promising 'The Ledger opens on the next page', but roughly 1,100 words of Preface body sit between that promise and P-01.\n\nuncertainty at 0.35 reflects that the largest question is a judgment call whose boundary is CT's to set: how much of the Preface body should be rewritten versus cut. I will report that rather than execute it. coherence 0.65 because I suspect but have not confirmed that the Preface's mindset-first claim at line 17 contradicts Chapter 5's thermodynamics argument, which I have not read.",
+    "prompt": "Read the Preface in full and the Introduction (its preceding neighbor) in full. Confirmed book.json ordering puts Introduction at index 0, Preface at index 1, Chapter 0 at index 2. Confirmed via grep that the Preface has zero em dashes, zero uses of 'manifesto', and zero uses of 'independent', so three of the six settled rules are already clean. One 'decentralized' survives at line 51 ('decentralized energy') inside a list of genuinely decentralized technologies, which is within the settled-rule exemption but uses a different word than the rule's own allowlist ('distributed energy'). Appendix D confirms P-01 The Reading Rage 1790s maps to the Preface, matching the in-file block.\n\nknow is 0.62 rather than higher because I have identified the defects but not yet verified three factual claims: the ASIMO caption date of 2001 (Honda unveiled ASIMO in October 2000, so the caption may be the photo date rather than the debut), the line-23 claim that 100 years ago there were continent-spanning wars and weapons threatening all life on earth (1926 predates both nuclear weapons and WWII), and the line-27 claim that we have already automated almost all cognitive and physical labor. P-01 falls in the fact-checked band P-01..P-06 per the primer, so its internal citations are lower risk, but I have not yet read HISTORY-CASEBOOK.\n\nThe dominant finding so far is a register break inside a single file: the Preface body carries blog-era voice ('Congratulations!', 'Adjust your neural link electrodes', an inline all-caps 'NOTE:') while the P-01 block below it is in the mature v0.7.x field-manual voice. This is the sharpest instance in the book of the voice defect the primer names. Second finding is a cohesion problem the Preface cannot fix alone: the Introduction closes by promising 'The Ledger opens on the next page', but roughly 1,100 words of Preface body sit between that promise and P-01.\n\nuncertainty at 0.35 reflects that the largest question is a judgment call whose boundary is CT's to set: how much of the Preface body should be rewritten versus cut. I will report that rather than execute it. coherence 0.65 because I suspect but have not confirmed that the Preface's mindset-first claim at line 17 contradicts Chapter 5's thermodynamics argument, which I have not read.",
+    "transaction_id": "d9546d97-d7d5-4da3-9ab5-ce0775d1b0ee",
+    "git_commit_sha": "78bb760507a6c6a5f96efea740b4eb423cc3b103",
+    "git_notes_ref": "empirica/session/c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "dd127a15e82a4771470e6ed5ff088c51c49a1bc1",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db     | Bin 1257472 -> 1368064 bytes\n .empirica/sessions/sessions.db-shm | Bin 32768 -> 32768 bytes\n 2 files changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.45,
+      "curr": 0.62,
+      "delta": 0.17
+    },
+    "do": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "context": {
+      "prev": 0.55,
+      "curr": 0.7,
+      "delta": 0.15
+    },
+    "clarity": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.6,
+      "curr": 0.65,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.6,
+      "curr": 0.7,
+      "delta": 0.1
+    },
+    "state": {
+      "prev": 0.7,
+      "curr": 0.75,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.05,
+      "curr": 0.15,
+      "delta": 0.1
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.7,
+      "delta": -0.15
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.5,
+      "curr": 0.35,
+      "delta": -0.15
+    }
+  },
+  "token_count": 1181
+}

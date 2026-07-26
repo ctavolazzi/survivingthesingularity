@@ -1,0 +1,52 @@
+{
+  "session_id": "bc8b2d4f-b7da-4ed5-bdb2-014732b63a2f",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-07-26T16:11:54.070601+00:00",
+  "vectors": {
+    "know": 0.82,
+    "do": 0.85,
+    "context": 0.88,
+    "clarity": 0.85,
+    "coherence": 0.85,
+    "signal": 0.8,
+    "density": 0.85,
+    "state": 0.88,
+    "change": 0.3,
+    "completion": 0.6,
+    "impact": 0.8,
+    "engagement": 0.92,
+    "uncertainty": 0.3
+  },
+  "overall_confidence": 0.85,
+  "meta": {
+    "reasoning": "The document is a machine-assisted outside synthesis whose works-cited list includes the book's own author, so its evidentiary value is near zero while its cross-reference value is high. Filed it with an explicit anti-laundering warning, because a confident restatement of exactly the claims the book has not verified (P-07 through P-22, Appendix B 166-178) is the easiest possible way to mistake circularity for corroboration. Verified what was mechanically checkable rather than listing everything as open: the dissolved-oxygen arithmetic, the nineteen-household count across nine files, the 41-hour leak against the protocol bible. signal 0.8 not higher because the source is low-grade; uncertainty 0.3 covers the large block of numbers I flagged but could not check without web access.",
+    "prompt": "The document is a machine-assisted outside synthesis whose works-cited list includes the book's own author, so its evidentiary value is near zero while its cross-reference value is high. Filed it with an explicit anti-laundering warning, because a confident restatement of exactly the claims the book has not verified (P-07 through P-22, Appendix B 166-178) is the easiest possible way to mistake circularity for corroboration. Verified what was mechanically checkable rather than listing everything as open: the dissolved-oxygen arithmetic, the nineteen-household count across nine files, the 41-hour leak against the protocol bible. signal 0.8 not higher because the source is low-grade; uncertainty 0.3 covers the large block of numbers I flagged but could not check without web access.",
+    "transaction_id": "bd824131-87eb-48a0-9175-5738e1e5483b",
+    "git_commit_sha": "ea1a18fdc7b4714b0d275f23a2036fa4639162b3",
+    "git_notes_ref": "empirica/session/bc8b2d4f-b7da-4ed5-bdb2-014732b63a2f/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "900e514c0e957a1f968ef647de7dcc36404580ee",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "manuscript/sources/research-log.md",
+        "src/lib/data/book/00-chapter0.md",
+        "src/lib/data/book/01-preface.md",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/23-appendix-b.md",
+        "src/lib/data/book/art-catalog.json",
+        "src/lib/data/book/manuscript-index.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db          | Bin 1257472 -> 1388544 bytes\n .empirica/sessions/sessions.db-shm      | Bin 32768 -> 32768 bytes\n manuscript/sources/research-log.md      | 124 ++++++++++++++++++++++++++++++++\n src/lib/data/book/00-chapter0.md        |   4 +-\n src/lib/data/book/01-preface.md         |   6 +-\n src/lib/data/book/02-introduction.md    |   4 +-\n src/lib/data/book/23-appendix-b.md      |  10 +++\n src/lib/data/book/art-catalog.json      |   2 +-\n src/lib/data/book/manuscript-index.json |  98 ++++++++++++++++++-------\n 9 files changed, 214 insertions(+), 34 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 455
+}

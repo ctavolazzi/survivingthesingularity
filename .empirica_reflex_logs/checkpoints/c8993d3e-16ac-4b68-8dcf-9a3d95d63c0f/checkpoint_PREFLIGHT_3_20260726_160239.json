@@ -1,0 +1,111 @@
+{
+  "session_id": "c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-07-26T16:02:36.407179+00:00",
+  "vectors": {
+    "know": 0.72,
+    "do": 0.85,
+    "context": 0.7,
+    "clarity": 0.75,
+    "coherence": 0.7,
+    "signal": 0.8,
+    "density": 0.7,
+    "state": 0.65,
+    "change": 0.05,
+    "completion": 0.3,
+    "impact": 0.6,
+    "engagement": 0.9,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.757,
+  "meta": {
+    "reasoning": "Read Ch. 0 in full, both neighbors (Preface with P-01, Ch. 1 with P-03), the P-02 casebook entry F1, Appendix D's P-02 rows, and the ELIJAH-PROTOCOL timeline plus Chekhov registry. Ran sts.py scan and book. know 0.72 because this chapter and its immediate continuity are now well grounded in session-gathered reads, but I have not read the other 26 sections and am relying on the primer for the wider book. state 0.65 because parallel sessions edit this repo and I have only checked git status once. uncertainty 0.35 is driven by three specific open items I have not yet verified: the Gibson epigraph provenance (no Appendix B entry exists for it), the chapter's unsourced 'for a pittance' characterisation of the Western Union patent refusal which the casebook pointedly does not make, and whether uncited epigraphs are a book-wide convention or a Ch. 0 defect. change 0.05 because nothing is edited yet.",
+    "prompt": "Read Ch. 0 in full, both neighbors (Preface with P-01, Ch. 1 with P-03), the P-02 casebook entry F1, Appendix D's P-02 rows, and the ELIJAH-PROTOCOL timeline plus Chekhov registry. Ran sts.py scan and book. know 0.72 because this chapter and its immediate continuity are now well grounded in session-gathered reads, but I have not read the other 26 sections and am relying on the primer for the wider book. state 0.65 because parallel sessions edit this repo and I have only checked git status once. uncertainty 0.35 is driven by three specific open items I have not yet verified: the Gibson epigraph provenance (no Appendix B entry exists for it), the chapter's unsourced 'for a pittance' characterisation of the Western Union patent refusal which the casebook pointedly does not make, and whether uncited epigraphs are a book-wide convention or a Ch. 0 defect. change 0.05 because nothing is edited yet.",
+    "transaction_id": "2c928229-5d84-485f-ba62-459b8d817b29",
+    "git_commit_sha": "bc19e4a0fc9e7897661c5314d6bd90aeb608d904",
+    "git_notes_ref": "empirica/session/c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "dd127a15e82a4771470e6ed5ff088c51c49a1bc1",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db     | Bin 1257472 -> 1368064 bytes\n .empirica/sessions/sessions.db-shm | Bin 32768 -> 32768 bytes\n 2 files changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.45,
+      "curr": 0.72,
+      "delta": 0.27
+    },
+    "do": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "context": {
+      "prev": 0.55,
+      "curr": 0.7,
+      "delta": 0.15
+    },
+    "clarity": {
+      "prev": 0.7,
+      "curr": 0.75,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.6,
+      "curr": 0.7,
+      "delta": 0.1
+    },
+    "signal": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.6,
+      "curr": 0.7,
+      "delta": 0.1
+    },
+    "state": {
+      "prev": 0.7,
+      "curr": 0.65,
+      "delta": -0.05
+    },
+    "change": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.05,
+      "curr": 0.3,
+      "delta": 0.25
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.6,
+      "delta": -0.25
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.5,
+      "curr": 0.35,
+      "delta": -0.15
+    }
+  },
+  "token_count": 614
+}

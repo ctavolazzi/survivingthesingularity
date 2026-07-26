@@ -1,0 +1,54 @@
+{
+  "session_id": "c9aafa54-27b0-471f-9d84-73df1b7e0f08",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-07-26T19:34:22.614651+00:00",
+  "vectors": {
+    "know": 0.72,
+    "do": 0.78,
+    "context": 0.8,
+    "clarity": 0.75,
+    "coherence": 0.76,
+    "signal": 0.82,
+    "density": 0.7,
+    "state": 0.85,
+    "change": 0.15,
+    "completion": 0.1,
+    "impact": 0.85,
+    "engagement": 0.88,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.767,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "995b00e4-bf7e-485b-ab6b-8225cd94eac9",
+    "git_commit_sha": "1eca72e668cbacccac9b03df428290b3df12ec1f",
+    "git_notes_ref": "empirica/session/c9aafa54-27b0-471f-9d84-73df1b7e0f08/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "f43484f44332359410d022bd08457856feaf3a3d",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "manuscript/sources/research-log.md",
+        "scripts/sts.py",
+        "src/lib/data/book/00-chapter0.md",
+        "src/lib/data/book/01-preface.md",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/03-chapter1.md",
+        "src/lib/data/book/23-appendix-b.md",
+        "src/lib/data/book/art-catalog.json",
+        "src/lib/data/book/manuscript-index.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db          | Bin 1257472 -> 1445888 bytes\n .empirica/sessions/sessions.db-shm      | Bin 32768 -> 32768 bytes\n manuscript/sources/research-log.md      | 204 ++++++++++++++++++++++++++++++++\n scripts/sts.py                          | 167 +++++++++++++++++++++++++-\n src/lib/data/book/00-chapter0.md        |   4 +-\n src/lib/data/book/01-preface.md         |   6 +-\n src/lib/data/book/02-introduction.md    |   4 +-\n src/lib/data/book/03-chapter1.md        |  12 +-\n src/lib/data/book/23-appendix-b.md      |  10 ++\n src/lib/data/book/art-catalog.json      |   2 +-\n src/lib/data/book/manuscript-index.json | 116 ++++++++++++------\n 11 files changed, 475 insertions(+), 50 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 167
+}

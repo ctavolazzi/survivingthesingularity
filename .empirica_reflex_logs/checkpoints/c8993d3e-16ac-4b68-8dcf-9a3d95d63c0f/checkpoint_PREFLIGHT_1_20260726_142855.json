@@ -1,0 +1,45 @@
+{
+  "session_id": "c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-07-26T14:28:51.680768+00:00",
+  "vectors": {
+    "know": 0.78,
+    "do": 0.62,
+    "context": 0.8,
+    "clarity": 0.6,
+    "coherence": 0.75,
+    "signal": 0.85,
+    "density": 0.7,
+    "state": 0.82,
+    "change": 0.05,
+    "completion": 0.3,
+    "impact": 0.9,
+    "engagement": 0.9,
+    "uncertainty": 0.42
+  },
+  "overall_confidence": 0.733,
+  "meta": {
+    "reasoning": "Grounded this session by probing production, not by reading docs. Confirmed: prod checkout returns cs_live_ sessions; headless render of the live Stripe checkout page shows $9.00 while every site page says $5; /api/webhooks/stripe returns 503, which the source shows means STRIPE_SECRET_KEY or STRIPE_WEBHOOK_SECRET is unset in prod. do=0.62 and uncertainty=0.42 are the honest constraint: the two live blockers (price, webhook secret) both live in the Stripe and Cloudflare dashboards, which I have no credentials for. I cannot tell whether the live Standard price object itself is $9 or prod points at the wrong price ID. impact=0.9 because the site is taking real money at a price no page advertises, and a missing webhook means a dropped connection loses a paid order silently.",
+    "prompt": "Grounded this session by probing production, not by reading docs. Confirmed: prod checkout returns cs_live_ sessions; headless render of the live Stripe checkout page shows $9.00 while every site page says $5; /api/webhooks/stripe returns 503, which the source shows means STRIPE_SECRET_KEY or STRIPE_WEBHOOK_SECRET is unset in prod. do=0.62 and uncertainty=0.42 are the honest constraint: the two live blockers (price, webhook secret) both live in the Stripe and Cloudflare dashboards, which I have no credentials for. I cannot tell whether the live Standard price object itself is $9 or prod points at the wrong price ID. impact=0.9 because the site is taking real money at a price no page advertises, and a missing webhook means a dropped connection loses a paid order silently.",
+    "transaction_id": "42151806-b9f3-4e12-bd19-4a8208b8d32b",
+    "git_commit_sha": "87c22968b8d1513f9c58c7c5e69ff0a2dc599aac",
+    "git_notes_ref": "empirica/session/c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bd109f9691294e7214b6b202eb3a5d24b369242b",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db     | Bin 1257472 -> 1327104 bytes\n .empirica/sessions/sessions.db-shm | Bin 32768 -> 32768 bytes\n 2 files changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 422
+}

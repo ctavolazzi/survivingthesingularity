@@ -1,0 +1,120 @@
+{
+  "session_id": "c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f",
+  "phase": "CHECK",
+  "round": 6,
+  "timestamp": "2026-07-26T16:06:29.999435+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.9,
+    "context": 0.88,
+    "clarity": 0.9,
+    "coherence": 0.88,
+    "signal": 0.9,
+    "density": 0.85,
+    "state": 0.85,
+    "change": 0.05,
+    "completion": 0.5,
+    "impact": 0.7,
+    "engagement": 0.92,
+    "uncertainty": 0.18
+  },
+  "overall_confidence": 0.877,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Investigation complete; moving to a deliberately narrow set of edits. Grounding gathered this session, not from priors: read 01-preface.md and 02-introduction.md in full, Chapter 0 and Chapter 5 openings, VOICE-GUIDE.md, Appendix D, Appendix B, HISTORY-CASEBOOK.md, and the research log. Pulled the 35 Preface block ids so every edit is block-addressed.\n\nExternal verification performed (not inferred): the Enos Hitchcock 1790 quotation resolves to Memoirs of the Bloomsgrove Family, Vol. 2, and the Preface's rendering matches the primary wording. The Sheridan line resolves to The Rivals (1775), Sir Anthony Absolute, original reading 'as an ever-green tree, of diabolical knowledge'; the Preface modernizes punctuation, which is accepted practice and not a defect. The ASIMO image credit is partly wrong: author Liauzh and CC BY-SA 4.0 are both correct, but the photograph is dated 5 November 2023 at Honda Welcome Plaza Aoyama and depicts the 2001 model, while the caption reads 'ASIMO, 2001'. A CC BY-SA 4.0 licence on an apparently 2001 photograph is self-contradicting, since 4.0 dates from 2013, and that is the kind of tell that costs credibility with an acquisitions editor.\n\nTwo discoveries changed my plan rather than confirming it. First, VOICE-GUIDE.md was written today and explicitly supersedes WRITING_CHECKLIST.md, and it names the Preface as Register A, The Argument. That gives me a concrete standard instead of the stale checklist the primer warned about. Second, I had planned to change 'decentralized energy' to 'distributed energy' and I am now NOT doing that: grep shows the book uses 'decentralized energy' in Chapter 14 and Appendix A defines DERS as Decentralized Energy/Resource Systems, so the Preface is already consistent with book-wide usage and my 'fix' would have introduced divergence. That is a dead end worth recording.\n\nEntering praxic with three prose fixes (ASIMO caption precision, a false point-in-time claim at b0011 where 1926 predates both nuclear weapons and any ongoing continent-spanning war, and a false quantifier at b0013), plus two citation-hygiene additions that the primer's gate 3 explicitly sanctions. Everything touching voice, the opening line, the mindset-versus-thermodynamics contradiction, and structure is being reported for CT rather than executed, because the primer reserves those. uncertainty is 0.18 rather than lower because the boundary between 'mechanical' and 'judgment' on the b0013 quantifier is genuinely arguable and I may have drawn it one word too generously.",
+    "confidence": 0.8200000000000001,
+    "gaps": [
+      "change: 0.05",
+      "uncertainty: 0.18"
+    ],
+    "cycle": null,
+    "round": 6,
+    "transaction_id": "70cd1bbe-bf2f-4b8e-8606-591f30edf1fc",
+    "git_commit_sha": "8c6d381b8c8778ef045924a4d254871feb746d91",
+    "git_notes_ref": "empirica/session/c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f/CHECK/6"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "dd127a15e82a4771470e6ed5ff088c51c49a1bc1",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/manuscript-index.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db          | Bin 1257472 -> 1368064 bytes\n .empirica/sessions/sessions.db-shm      | Bin 32768 -> 32768 bytes\n src/lib/data/book/02-introduction.md    |   4 ++--\n src/lib/data/book/manuscript-index.json |  14 +++++++-------\n 4 files changed, 9 insertions(+), 9 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.82,
+      "curr": 0.85,
+      "delta": 0.03
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.88,
+      "delta": 0.08
+    },
+    "clarity": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.82,
+      "curr": 0.88,
+      "delta": 0.06
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "state": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.4,
+      "curr": 0.5,
+      "delta": 0.1
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.7,
+      "delta": -0.15
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.92,
+      "delta": 0.02
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.18,
+      "delta": -0.02
+    }
+  },
+  "token_count": 741
+}

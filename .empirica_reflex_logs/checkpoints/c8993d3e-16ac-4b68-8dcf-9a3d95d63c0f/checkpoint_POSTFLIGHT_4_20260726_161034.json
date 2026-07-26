@@ -1,0 +1,169 @@
+{
+  "session_id": "c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f",
+  "phase": "POSTFLIGHT",
+  "round": 4,
+  "timestamp": "2026-07-26T16:10:29.075028+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.8,
+    "context": 0.85,
+    "clarity": 0.85,
+    "coherence": 0.85,
+    "signal": 0.85,
+    "density": 0.8,
+    "state": 0.8,
+    "change": 0.15,
+    "completion": 0.55,
+    "impact": 0.7,
+    "engagement": 0.9,
+    "uncertainty": 0.25
+  },
+  "overall_confidence": 0.833,
+  "meta": {
+    "reasoning": "Introduction (02-introduction.md) chapter-agent pass. Deliverable is the structured report; the manuscript change is deliberately tiny. change=0.15 is literal: 2 insertions / 2 deletions in one book file, plus an append to manuscript/sources/research-log.md. I did NOT do the texture restructure, because the primer reserves restructure for CT and the honest verdict is 'needs another pass' on gate 5. completion=0.55 reflects that: UNPACK, ANALYZE, the fact-check ledger, and both mechanical fixes are done, but the goal 'Introduction to penultimate' is NOT met and I am leaving it open rather than self-grading it closed. Real win: found and corrected a genuine misquote on page one of the book. The Sagan epigraph dropped 'For me,' and lowercased 'Universe', converting Sagan's personal epistemic stance into a universal declarative, verified against three independent quote records against The Demon-Haunted World (1995) ch.1. For a book whose opening caption is 'the data does not care how you feel about it', misquoting Sagan on page one was the highest-value defect available. Also verified the Jameson/capitalism line needs NO fix (Jameson himself hedges it as 'someone once said', so the manuscript's 'the line goes' mirrors its source) rather than manufacturing a change to look productive. Also found a tooling defect: sts.py scan's top-3-per-category display HIDES the section's worst wall (b0025, 210 words), so any agent trusting scan as a full inventory misses it; logged shared. know rose 0.45->0.85 across the transaction on genuine reads. uncertainty stays 0.25 and is itemized, not papered: the Atlas photo rights credit is UNVERIFIED (logged as an assumption at 0.6, flagged as print-rights exposure, NOT rounded up to done), CT owes rulings on the texture restructure and the Intro-to-Preface tonal handoff, and goals-complete-task is uncallable because no CLI surface exposes task ids, so my six tracked tasks carry no task-level evidence. do=0.8 rather than higher partly for that blocked evidence path. Logged 8 artifacts with 2 semantic edges, 1 mistake (I nearly reported a fabricated Empirica persistence bug from a DB probe that contradicted a CLI success, and caught it by re-running the CLI), and 1 followup note.",
+    "task_summary": "Introduction (02-introduction.md) chapter-agent pass. Deliverable is the structured report; the manuscript change is deliberately tiny. change=0.15 is literal: 2 insertions / 2 deletions in one book file, plus an append to manuscript/sources/research-log.md. I did NOT do the texture restructure, because the primer reserves restructure for CT and the honest verdict is 'needs another pass' on gate 5. completion=0.55 reflects that: UNPACK, ANALYZE, the fact-check ledger, and both mechanical fixes are done, but the goal 'Introduction to penultimate' is NOT met and I am leaving it open rather than self-grading it closed. Real win: found and corrected a genuine misquote on page one of the book. The Sagan epigraph dropped 'For me,' and lowercased 'Universe', converting Sagan's personal epistemic stance into a universal declarative, verified against three independent quote records against The Demon-Haunted World (1995) ch.1. For a book whose opening caption is 'the data does not care how you feel about it', misquoting Sagan on page one was the highest-value defect available. Also verified the Jameson/capitalism line needs NO fix (Jameson himself hedges it as 'someone once said', so the manuscript's 'the line goes' mirrors its source) rather than manufacturing a change to look productive. Also found a tooling defect: sts.py scan's top-3-per-category display HIDES the section's worst wall (b0025, 210 words), so any agent trusting scan as a full inventory misses it; logged shared. know rose 0.45->0.85 across the transaction on genuine reads. uncertainty stays 0.25 and is itemized, not papered: the Atlas photo rights credit is UNVERIFIED (logged as an assumption at 0.6, flagged as print-rights exposure, NOT rounded up to done), CT owes rulings on the texture restructure and the Intro-to-Preface tonal handoff, and goals-complete-task is uncallable because no CLI surface exposes task ids, so my six tracked tasks carry no task-level evidence. do=0.8 rather than higher partly for that blocked evidence path. Logged 8 artifacts with 2 semantic edges, 1 mistake (I nearly reported a fabricated Empirica persistence bug from a DB probe that contradicted a CLI success, and caught it by re-running the CLI), and 1 followup note.",
+    "postflight_confidence": 0.75,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.13,
+      "do": -0.05,
+      "context": 0.05,
+      "clarity": 0.15,
+      "coherence": 0.1,
+      "signal": 0.05,
+      "density": 0.05,
+      "state": 0.0,
+      "change": 0.1,
+      "completion": 0.3,
+      "impact": 0.1,
+      "engagement": 0.0,
+      "uncertainty": -0.15
+    },
+    "trajectory_issues": [],
+    "transaction_id": "70cd1bbe-bf2f-4b8e-8606-591f30edf1fc",
+    "tool_call_count": 0,
+    "work_type": "research",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible."
+    },
+    "coverage": null,
+    "git_commit_sha": "c7b96c682c0fd2da07bf26d1d5e56d2d5ea18558",
+    "git_notes_ref": "empirica/session/c8993d3e-16ac-4b68-8dcf-9a3d95d63c0f/POSTFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "900e514c0e957a1f968ef647de7dcc36404580ee",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "900e514c0e957a1f968ef647de7dcc36404580ee",
+        "message": "book: chapter-agent primer + a voice guide written from the prose",
+        "author": "Christopher Tavolazzi",
+        "timestamp": "2026-07-26T09:09:01-07:00",
+        "files_changed": [
+          "manuscript/CHAPTER-AGENT-PRIMER.md",
+          "src/lib/data/book/VOICE-GUIDE.md"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        ".empirica/sessions/sessions.db-shm",
+        "manuscript/sources/research-log.md",
+        "src/lib/data/book/00-chapter0.md",
+        "src/lib/data/book/01-preface.md",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/23-appendix-b.md",
+        "src/lib/data/book/art-catalog.json",
+        "src/lib/data/book/manuscript-index.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db          | Bin 1257472 -> 1368064 bytes\n .empirica/sessions/sessions.db-shm      | Bin 32768 -> 32768 bytes\n manuscript/sources/research-log.md      |  81 ++++++++++++++++++++++++++++++++\n src/lib/data/book/00-chapter0.md        |   4 +-\n src/lib/data/book/01-preface.md         |   6 +--\n src/lib/data/book/02-introduction.md    |   4 +-\n src/lib/data/book/23-appendix-b.md      |  10 ++++\n src/lib/data/book/art-catalog.json      |   2 +-\n src/lib/data/book/manuscript-index.json |  75 +++++++++++++++++++----------\n 9 files changed, 148 insertions(+), 34 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.86,
+      "curr": 0.85,
+      "delta": -0.01
+    },
+    "do": {
+      "prev": 0.9,
+      "curr": 0.8,
+      "delta": -0.1
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.85,
+      "delta": -0.05
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.05,
+      "curr": 0.15,
+      "delta": 0.1
+    },
+    "completion": {
+      "prev": 0.55,
+      "curr": 0.55,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.6,
+      "curr": 0.7,
+      "delta": 0.1
+    },
+    "engagement": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.25,
+      "delta": 0.1
+    }
+  },
+  "token_count": 1298
+}

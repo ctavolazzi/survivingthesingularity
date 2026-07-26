@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 25 Jul 2026 14:39:56 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 26 Jul 2026 14:40:44 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -97,20 +97,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.14561</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>Large language models (LLMs) have demonstrated strong reasoning performance, but their tendency to hallucinate limits their reliability in knowledge-intensive tasks requiring up-to-date and grounded information. Combining knowledge graphs (KGs) with LLMs facilitates the use of explicit symbolic know... [Score: 9.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Nikit Srivastava, Daniel Vollmers, et al.</description>
-    </item>
-    <item>
-      <title>OpenRCA 2.0: From Outcome Labels to Causal Process Supervision</title>
-      <link>https://arxiv.org/abs/2606.27154</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.27154</guid>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed sympto... [Score: 9.0 | Flagged for: agent, agentic, tool use, reasoning, llm] Authors: Aoyang Fang, Yifan Yang, et al.</description>
-    </item>
-    <item>
-      <title>IDEA: Insensitive to Dynamics Mismatch via Effect Alignment for Sim-to-Real Transfer in Multi-Agent Control</title>
-      <link>https://arxiv.org/abs/2606.26575</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.26575</guid>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Complex multi-agent control tasks remain challenging for traditional rule-based and model-based approaches, motivating the adoption of learning-based methods. However, learning-based methods often struggle with sim-to-real transfer because they rely on accurate dynamics modeling or system identifica... [Score: 9.0 | Flagged for: agi, agent, multi-agent, alignment, rag] Authors: Chenlong Liu, Zhuohui Zhang, et al.</description>
     </item>
     <item>
       <title>GS-Agent: Creating 4D Physical Worlds With Generative Simulation</title>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.12982</guid>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
       <description>Math reasoning has achieved significant progress with the rapid advancement of Multimodal Large Language Models (MLLMs), however analytic geometry remains largely underexplored, primarily due to the scarcity of annotated samples. Existing diagram generation approaches struggle with analytic geometry... [Score: 8.0 | Flagged for: agi, reasoning, llm, language model, rag] Authors: Ruoran Xu, Wending Gao, et al.</description>
+    </item>
+    <item>
+      <title>Agentic Routing: The Harness-Native Data Flywheel</title>
+      <link>https://arxiv.org/abs/2607.11399</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.11399</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Large language model agents are increasingly executed not by a single model call, but by an execution harness that manages observation, context, control, action, state, and verification. At the same time, frontier and open models are becoming structurally specialized: a model that is strong at code ... [Score: 8.0 | Flagged for: agent, agentic, tool use, reasoning, language model] Authors: Xinchen Liu, Hang Zhou, et al.</description>
+    </item>
+    <item>
+      <title>Multi-Agent LLMs Fail to Explore Each Other</title>
+      <link>https://arxiv.org/abs/2607.11250</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.11250</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns ... [Score: 8.0 | Flagged for: agent, multi-agent, autonomy, llm, language model] Authors: Hyeong Kyu Choi, Jiatong Li, et al.</description>
     </item>
   </channel>
 </rss>

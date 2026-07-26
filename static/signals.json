@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T14:39:56Z",
+  "generated_at": "2026-07-26T14:40:44Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -345,57 +345,6 @@
         "llm",
         "language model",
         "retrieval"
-      ]
-    },
-    {
-      "id": "2606.27154",
-      "source": "arxiv",
-      "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
-      "url": "https://arxiv.org/abs/2606.27154",
-      "authors": [
-        "Aoyang Fang",
-        "Yifan Yang",
-        "Jin'ao Shang",
-        "Qisheng Lu"
-      ],
-      "summary": "Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from caus",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-06-25",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
-        "reasoning",
-        "llm",
-        "rag"
-      ]
-    },
-    {
-      "id": "2606.26575",
-      "source": "arxiv",
-      "title": "IDEA: Insensitive to Dynamics Mismatch via Effect Alignment for Sim-to-Real Transfer in Multi-Agent Control",
-      "url": "https://arxiv.org/abs/2606.26575",
-      "authors": [
-        "Chenlong Liu",
-        "Zhuohui Zhang",
-        "Xinyan Chen",
-        "Zhipeng Wang"
-      ],
-      "summary": "Complex multi-agent control tasks remain challenging for traditional rule-based and model-based approaches, motivating the adoption of learning-based methods. However, learning-based methods often struggle with sim-to-real transfer because they rely on accurate dynamics modeling or system identification and learn policies in low-level control spaces that are highly sensitive to dynamics mismatch, making them costly and fragile in complex environments. To address this issue, we propose a sim-to-real method for multi-agent control, which is insensitive to dynamics mismatch via effect alignment. ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-06-25",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "alignment",
-        "rag"
       ]
     },
     {
@@ -1507,6 +1456,55 @@
         "agentic",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2607.21345",
+      "source": "arxiv",
+      "title": "Regulating autonomous and agentic AI",
+      "url": "https://arxiv.org/abs/2607.21345",
+      "authors": [
+        "Chris Reed",
+        "Alex Austria",
+        "Anmol Bharuka",
+        "Pragnitha Mandava"
+      ],
+      "summary": "Regulating activities where regulatees use autonomous and agentic AI is challenging. Regulatory assumptions about regulatee knowledge and control no longer hold true; much of that lies elsewhere in the AI supply chain which thus needs to be brought within the scope of regulation. Governance systems for autonomous AI cannot replicate existing governance models, but need a fresh approach. Retrospective supervisory oversight becomes ineffective as a risk management tool, and AI autonomy generates new systemic risks which require new solutions. This paper investigate four regulatory systems: UK re",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "autonomy"
+      ]
+    },
+    {
+      "id": "2607.20061",
+      "source": "arxiv",
+      "title": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
+      "url": "https://arxiv.org/abs/2607.20061",
+      "authors": [
+        "Hanjing Ye",
+        "Tianle Zeng",
+        "Jiazhao Zhang",
+        "Shaoan Wang"
+      ],
+      "summary": "Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, their chain-of-thought (CoT) reasoning often operates in abstract spatial latents that are difficult to supervise and weakly aligned with explicit image-space detections. To address this, we introduce ReferTrack, a referring-then-tracking paradigm that grounds EVT using a single forward-facing camera. Our model first selects the target from ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-22",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "planning",
+        "reasoning",
+        "chain-of-thought",
+        "embodied"
       ]
     }
   ]

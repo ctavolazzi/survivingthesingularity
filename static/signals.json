@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T15:08:10Z",
+  "generated_at": "2026-07-26T14:40:44Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -144,6 +144,32 @@
       ]
     },
     {
+      "id": "2607.19190",
+      "source": "arxiv",
+      "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+      "url": "https://arxiv.org/abs/2607.19190",
+      "authors": [
+        "Guanxiong Chen",
+        "Qianjun Xia",
+        "Jiawei Peng",
+        "Heng Zhang"
+      ],
+      "summary": "Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajectories into a runnable physical simulation. Today this process still depends on manual tuning of visual foundation models, mesh cleanup, coordinate-frame alignment, and brittle workflow glue across visual perception tools and simulators. We introduce \\textit{Agentic Real2Sim}, a framework for genera",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-21",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "world model",
+        "foundation model",
+        "agent",
+        "agentic",
+        "alignment",
+        "robot"
+      ]
+    },
+    {
       "id": "2607.14512",
       "source": "arxiv",
       "title": "RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning",
@@ -167,6 +193,55 @@
         "reasoning",
         "llm",
         "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.21503",
+      "source": "arxiv",
+      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+      "url": "https://arxiv.org/abs/2607.21503",
+      "authors": [
+        "Gaurav Dadhich"
+      ],
+      "summary": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations. The incumbent response treats this as a storage-and-retrieval problem. We argue that framing is too narrow. Actively managing what an agent holds in mind is a lifecycle, not merely a store: it s",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "reasoning",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.21361",
+      "source": "arxiv",
+      "title": "FedAgentKE: Federated Semantic Knowledge Evolution for Heterogeneous Agents",
+      "url": "https://arxiv.org/abs/2607.21361",
+      "authors": [
+        "Weihao Li",
+        "Jun Bai",
+        "Ziyang Song"
+      ],
+      "summary": "Large language model (LLM)-based agents increasingly rely on reasoning, tool use, and iterative execution, yet existing agent frameworks still operate largely in isolation. While recent memory-based agent systems improve individual agents through local retrieval and workflow reuse, local experiences remain fragmented across isolated agent frameworks, limiting cross-framework knowledge transfer and collaborative reasoning evolution. We propose FedAgentKE, a lightweight framework for Federated Semantic Knowledge Evolution across heterogeneous agents. FedAgentKE enables distributed agent framewor",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-23",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval",
         "rag"
       ]
     },
@@ -247,32 +322,6 @@
       ]
     },
     {
-      "id": "2606.25532",
-      "source": "arxiv",
-      "title": "Agentic evolution of physically constrained foundation models",
-      "url": "https://arxiv.org/abs/2606.25532",
-      "authors": [
-        "Jiangwei Zhang",
-        "Wen Sun",
-        "Chong Wang",
-        "Shiyao Li"
-      ],
-      "summary": "Artificial intelligence increasingly drives automated scientific discovery, yet contemporary generalist agents lack physical grounding, frequently hallucinating hardware-incompatible designs. Here, we present a physically grounded, multi-agent discovery engine that autonomously architects hardware-compliant computing systems. Anchored by an Evolutionary Knowledge Graph structuring past scientific innovations, the framework extracts an \"algorithmic Chain-of-Thought\" to transform blind stochastic search into directed structural evolution. Applied to the extreme testbed of foundation model deploy",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous",
-        "chain-of-thought"
-      ]
-    },
-    {
       "id": "2607.14561",
       "source": "arxiv",
       "title": "MARS: Multi-hop Adaptive Retrieval and SPARQL Generation for KGQA",
@@ -299,54 +348,53 @@
       ]
     },
     {
-      "id": "2606.27154",
+      "id": "2607.21522",
       "source": "arxiv",
-      "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
-      "url": "https://arxiv.org/abs/2606.27154",
+      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+      "url": "https://arxiv.org/abs/2607.21522",
       "authors": [
-        "Aoyang Fang",
-        "Yifan Yang",
-        "Jin'ao Shang",
-        "Qisheng Lu"
+        "Hongxin Zhang",
+        "Chunru Lin",
+        "Junyan Li",
+        "Zhou Xian"
       ],
-      "summary": "Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from caus",
+      "summary": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic syste",
       "category": "cs.AI",
       "tag": "Research",
-      "published_at": "2026-06-25",
-      "score": 9.0,
-      "raw_score": 18,
+      "published_at": "2026-07-23",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
+        "agi",
+        "foundation model",
         "agent",
         "agentic",
-        "tool use",
-        "reasoning",
-        "llm",
         "rag"
       ]
     },
     {
-      "id": "2606.26575",
+      "id": "2607.20064",
       "source": "arxiv",
-      "title": "IDEA: Insensitive to Dynamics Mismatch via Effect Alignment for Sim-to-Real Transfer in Multi-Agent Control",
-      "url": "https://arxiv.org/abs/2606.26575",
+      "title": "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
+      "url": "https://arxiv.org/abs/2607.20064",
       "authors": [
-        "Chenlong Liu",
-        "Zhuohui Zhang",
-        "Xinyan Chen",
-        "Zhipeng Wang"
+        "Alexis Fox",
+        "Junlin Wang",
+        "Paul Rosu",
+        "Bhuwan Dhingra"
       ],
-      "summary": "Complex multi-agent control tasks remain challenging for traditional rule-based and model-based approaches, motivating the adoption of learning-based methods. However, learning-based methods often struggle with sim-to-real transfer because they rely on accurate dynamics modeling or system identification and learn policies in low-level control spaces that are highly sensitive to dynamics mismatch, making them costly and fragile in complex environments. To address this issue, we propose a sim-to-real method for multi-agent control, which is insensitive to dynamics mismatch via effect alignment. ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-06-25",
-      "score": 9.0,
-      "raw_score": 18,
+      "summary": "Long-horizon tasks require sustained perception, reasoning, and exploration, and are a persistent challenge for large language model (LLM) agents. This gap is reflected in their limited performance on continual learning benchmarks such as ARC-AGI-3, especially when models are evaluated out of the box. Various agent harnesses have been proposed to close this gap, and each commits to a strategy for handling long sequences of observations, i.e., what information to save from the environment and how to load it into model context, a choice we argue is particularly consequential. Existing methods fo",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-22",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
         "agi",
         "agent",
-        "multi-agent",
-        "alignment",
-        "rag"
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -550,27 +598,28 @@
       ]
     },
     {
-      "id": "2606.25358",
+      "id": "2607.19834",
       "source": "arxiv",
-      "title": "Agentic Knowledge Tracing: A Multi-Agent LLM Architecture for Stealth Assessment of Financial Literacy in Serious Games",
-      "url": "https://arxiv.org/abs/2606.25358",
+      "title": "D2VBench: Benchmarking Large Language Models with Value Dilemmas in Daily Scenarios",
+      "url": "https://arxiv.org/abs/2607.19834",
       "authors": [
-        "Gabriel Santos",
-        "Rita Julia",
-        "Marcelo Nascimento"
+        "Siyi Hao",
+        "Yidi Cao",
+        "Linhao Yu",
+        "Yuqi Ren"
       ],
-      "summary": "Assessing financial literacy during gameplay without disrupting the learning experience remains a key challenge in serious games for education. We present the Agentic BKT pipeline, a multi-agent large language model architecture for stealth assessment of financial competencies from open-ended gameplay events. The pipeline processes events from a 2D platformer serious game aligned with the OECD/INFE financial literacy framework through four phases: (1) the game captures every player decision as a structured event log; (2) an LLM event classifier labels each action on a four-point rubric validat",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 8.5,
-      "raw_score": 17,
+      "summary": "With the wide application of large language models (LLMs) in real-world scenarios, the value implication of their outputs is crucial. However, existing evaluation benchmarks suffer from insufficient coverage of value dilemmas in daily scenarios involving multiple value conflicts and simplistic evaluation formalisms that fail to assess LLMs' value alignment. To address these issues, we propose D2VBench, a value alignment benchmark comprising 10,000 instances of real daily dilemma scenarios constructed through a multi-stage collaboration between LLMs and humans, grounded in 158 manually annotate",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-22",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
+        "alignment",
+        "value alignment",
         "llm",
-        "language model"
+        "language model",
+        "rag"
       ]
     },
     {
@@ -846,27 +895,77 @@
       ]
     },
     {
-      "id": "2606.26294",
+      "id": "2607.21067",
       "source": "arxiv",
-      "title": "The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators",
-      "url": "https://arxiv.org/abs/2606.26294",
+      "title": "PrefReward: Learning User Preference Matrix for Personalized Text Generation",
+      "url": "https://arxiv.org/abs/2607.21067",
       "authors": [
-        "Alex Iacob",
-        "Andrej Jovanović",
-        "William F. Shen",
-        "Daniel Burkhardt"
+        "Yue Wu",
+        "Chengbing Wang",
+        "Yimeng Bai",
+        "Xiaoyan Zhao"
       ],
-      "summary": "Self-improving agents are state-of-the-art (SOTA) on agentic coding benchmarks and have recently been extended to general domains. However, their search methods generally assume a stationary evaluation criterion: a fixed verifier, benchmark, or labeled dataset that remains valid as the agent improves. This ignores a central feature of evolution: species adapt as their environments change with them. We aim to bring the same principle to recursive self-improvement, making evaluation part of the improvement loop and opening search to evolving evaluators, adversarial objectives, and dynamic utilit",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 8.0,
-      "raw_score": 16,
+      "summary": "Large Language Models (LLMs) have demonstrated remarkable ability in generating personalized content by leveraging user histories and contextual cues. However, most existing personalization approaches rely on implicit representations within model parameters, making it difficult to interpret user-specific preferences or effectively handle long-context dependencies. To address these challenges, we propose PrefReward, a novel preference-aware generative framework that explicitly models user styles through a structured preference matrix and integrates it into the decoding process as a reward signa",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 7.5,
+      "raw_score": 15,
       "matched_keywords": [
-        "recursive self-improvement",
-        "self-improving",
-        "agent",
-        "agentic"
+        "agi",
+        "interpret",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.19830",
+      "source": "arxiv",
+      "title": "VizRAG: Enhancing Retrieval-Augmented Generation with Hypergraph Visualization",
+      "url": "https://arxiv.org/abs/2607.19830",
+      "authors": [
+        "Yanbin Wei",
+        "Yang Chen",
+        "Renling Gan",
+        "Ziru Liu"
+      ],
+      "summary": "Hypergraph-based RAG systems surpass traditional graph-based approaches by organizing complex n-ary atomic facts among entities, rather than relying solely on binary relationships. Despite the advancements in multimodal large language models (MLLMs) with enhanced visual capabilities, current hypergraph-based RAG frameworks predominantly restrict knowledge retrieval and reconstruction to a unimodal, text-centric paradigm. This limitation prevents them from fully leveraging the powerful visual perception capabilities of modern MLLMs. To address this gap, we systematically explore the integration",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-22",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2607.19850",
+      "source": "arxiv",
+      "title": "SOPD-SocialNav: Selective On-Policy Distillation for Vision-Language Social Navigation",
+      "url": "https://arxiv.org/abs/2607.19850",
+      "authors": [
+        "Xinyu Zhang",
+        "Zishuo Wang",
+        "Ling Xiao"
+      ],
+      "summary": "Vision-language models have shown strong potential for social robot navigation by leveraging rich semantic understanding of complex environments and human behaviors. However, large scale VLMs are difficult to deploy on resource-constrained robotic platforms, while lightweight VLMs often lack sufficient social reasoning capability. To address this problem, we propose SOPD-SocialNav, a selective on-policy distillation (SOPD) method that transfers social navigation knowledge from a large teacher VLM to a lightweight student VLM. SOPD introduces an entropy-based token selection mechanism that uses",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-22",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "robot",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -904,8 +1003,8 @@
         "Tung Sum Thomas Kwok"
       ],
       "summary": "Financial question answering over U.S. Securities and Exchange Commission (SEC) filings requires retrieving and synthesizing heterogeneous evidence dispersed across long, standardized, and highly redundant disclosures. Existing retrieval-augmented and multi-agent systems typically derive retrieval queries directly from the user's question and rank candidates by semantic similarity. Together, these choices create prior-corpus misalignment: a mismatch between model priors and the target filings' structure, terminology, and evidence standards. As a result, query generation misses corpus-specific ",
-      "category": "cs.CL",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-07-20",
       "score": 7.5,
       "raw_score": 15,
@@ -915,6 +1014,31 @@
         "alignment",
         "retrieval",
         "rag"
+      ]
+    },
+    {
+      "id": "2607.18548",
+      "source": "arxiv",
+      "title": "Engineering Trustworthy Agentic AI for Critical Systems",
+      "url": "https://arxiv.org/abs/2607.18548",
+      "authors": [
+        "Omar Al-Refai",
+        "Ibrahim Shahbaz",
+        "Adam Ali Husseinat",
+        "Michael Mandulak"
+      ],
+      "summary": "Agentic artificial intelligence systems, capable of autonomous perception, planning, tool use, and multi-step action, are increasingly proposed for critical engineering domains where decisions carry physical, operational, or economic consequences. This survey addresses a gap in current literature by treating trustworthiness, whether agentic behavior can be verified, audited, and trusted under the constraints that engineering practice actually requires, as a first-class engineering property, rather than evaluating agentic AI by task capability alone. The study adopts a trustworthiness model org",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-20",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "tool use",
+        "planning"
       ]
     },
     {
@@ -1219,91 +1343,41 @@
       ]
     },
     {
-      "id": "2606.25899",
+      "id": "2607.21324",
       "source": "arxiv",
-      "title": "Manipulation Is Task-Dependent: A Multi-Axis, Multi-Environment Evaluation of Frontier LLMs",
-      "url": "https://arxiv.org/abs/2606.25899",
+      "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+      "url": "https://arxiv.org/abs/2607.21324",
       "authors": [
-        "Adeeb Zaman",
-        "Erik Nordby",
-        "Fred Heiding"
+        "Paolo Pedinotti",
+        "Enrico Santus"
       ],
-      "summary": "We evaluate manipulative behavior in six frontier language models across six environments, ranging from negotiation tasks to agentic workflows, resulting in 13{,}590 individual scenarios. Manipulation rates are measured across three axes: framing (mandate honesty or permit manipulation), incentive structure (from no incentives to substantial ones), and task difficulty. Existing benchmarks typically vary a single axis within a single environment, an approach our results show is insufficient. We rank models by manipulation rate and find Spearman rank correlations across environments average $ρ= ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-24",
-      "score": 7.5,
-      "raw_score": 15,
+      "summary": "Retrieval-Augmented Generation (RAG) systems increasingly employ multiple LLM agents. Yet, most prior work optimizes components in isolation rather than coordinating improvements across the pipeline. We introduce GRADRAG, a framework for cross-component prompt adaptation that models the RAG pipeline as a computational graph and propagates structured evaluation feedback to update upstream agents. An Evaluator critiques downstream answers and supporting evidence, producing actionable feedback that a Prompt Optimizer uses to iteratively update adaptive agents, such as retrievers, graph constructo",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 7.0,
+      "raw_score": 14,
       "matched_keywords": [
         "agent",
-        "agentic",
+        "multi-agent",
         "llm",
-        "language model",
+        "retrieval",
         "rag"
       ]
     },
     {
-      "id": "2606.23991",
+      "id": "2607.21279",
       "source": "arxiv",
-      "title": "Critique of Agent Model",
-      "url": "https://arxiv.org/abs/2606.23991",
+      "title": "A Unified Moral-Value Dataset for Instruction Tuning",
+      "url": "https://arxiv.org/abs/2607.21279",
       "authors": [
-        "Eric Xing",
-        "Mingkai Deng",
-        "Jinyu Hou"
+        "Zhaohui Zeng",
+        "Florian Mai"
       ],
-      "summary": "What is an agent? What constitutes agency? With the rise of Large Language Model (LLM) systems marketed as ``coding agents'', ``AI co-scientists'', and other ``agentic\" tools that promise to drive up productivity, and at the same time, ``existential\" concerns such as AI escaping human control with destructive power under a speculative ``machine agency\" against humans, it has become essential to clarify where automation ends and agency begins, both for building capable systems and for understanding whether and what to fear. Drawing on Descartes' grounding of agency in independent thought, and o",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-06-22",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model",
-        "automation"
-      ]
-    },
-    {
-      "id": "2607.17946",
-      "source": "arxiv",
-      "title": "A Geometric Perspective on Stabilizing Value Conflict Resolution",
-      "url": "https://arxiv.org/abs/2607.17946",
-      "authors": [
-        "Saket Reddy",
-        "Andy Liu"
-      ],
-      "summary": "Large Language Models (LLMs) often struggle to navigate value conflicts when trained with the compressed scalar rewards of Reinforcement Learning from Human Feedback (RLHF). To address this challenge, we investigate how chain-of-thought (CoT) reasoning can help improve performance in this domain. Geometrically, we show that CoT correlates with further smoothing the model's loss landscape in its sharpest direction, helping resolve the optimization instability of traditional scalar rewards. We also demonstrate via relevant downstream benchmarks that value conflict-focused CoT may generalize to d",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "reasoning",
-        "chain-of-thought",
-        "rlhf",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.18066",
-      "source": "arxiv",
-      "title": "Pancasila-Dilemmas: Evaluating Large Language Models on Indonesian Human Value Dilemmas Grounded in Pancasila",
-      "url": "https://arxiv.org/abs/2607.18066",
-      "authors": [
-        " Supryadi",
-        " Irfan",
-        " Julianti",
-        "Darren Keanly Martin"
-      ],
-      "summary": "The value alignment of large language models (LLMs) is crucial for ensuring responses align with human intention and value preferences. However, most evaluations of value alignment focus on Western or universal values, while assessments grounded in the value systems of specific countries remain scarce. In this paper, we introduce Pancasila-Dilemmas, an evaluation dataset of 1,834 questions derived from Indonesian news, classified by 5 values of Pancasila: Religion, Humanity, Unity, Democracy, and Social Justice. This dataset reflects daily life in Indonesia, making it suitable for measuring th",
+      "summary": "Large language models (LLMs) have developed rapidly and become valuable tools in everyday life. However, how to align LLMs to a particular set of human values is still an open problem. Recent studies show that instruction tuning has strong potential for zero-shot tasks and may serve as an effective approach to addressing value alignment. Nevertheless, although many datasets for instruction tuning already exist, they are not specifically designed around moral scenarios and behaviors. We construct a unified moral-value dataset that can be directly used for instruction tuning. This dataset is bui",
       "category": "cs.CL",
       "tag": "Research",
-      "published_at": "2026-07-20",
+      "published_at": "2026-07-23",
       "score": 7.0,
       "raw_score": 14,
       "matched_keywords": [
@@ -1314,95 +1388,18 @@
       ]
     },
     {
-      "id": "2607.17535",
+      "id": "2607.21210",
       "source": "arxiv",
-      "title": "Salience Induction against Multi-Hop RAG Agents: Threat and Defense",
-      "url": "https://arxiv.org/abs/2607.17535",
+      "title": "Explainable Belief Harmonization under Dynamic Epistemic Partitions",
+      "url": "https://arxiv.org/abs/2607.21210",
       "authors": [
-        "Xingfu Zhou",
-        "Pengfei Wang",
-        "Yuan Zhou",
-        "Wei Xie"
+        "Adam Kostka",
+        "Jarosław A. Chudziak"
       ],
-      "summary": "Agentic retrieval-augmented generation (RAG) systems increasingly retrieve external evidence and orchestrate tools for knowledge-intensive applications. In Multi-Hop question answering, agents chain facts across documents. Existing defenses focus on content poisoning, which injects false facts, and prompt injection, which embeds directives. We identify a third attack surface: the salience channel, through which fact position, emphasis, framing, and semantic proximity can redirect reasoning even when all retrieved claims are true and no instructions are present. We formalize Salience Induction ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.18060",
-      "source": "arxiv",
-      "title": "RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning",
-      "url": "https://arxiv.org/abs/2607.18060",
-      "authors": [
-        "Jinbang Huang",
-        "Yuanzhao Hu",
-        "Zhiyuan Li",
-        "Ran Qi"
-      ],
-      "summary": "Long-horizon robotic tasks require diverse capabilities that no single policy can reliably provide. Heterogeneous policies offer complementary strengths, but orchestrating them requires reasoning over uncertain capability boundaries and cross-policy distribution mismatch, which are largely overlooked by existing planning methods built on homogeneous, predefined skills with fixed applicability. We propose RoboHarness, a unified framework that encapsulates independently developed robot control systems as reusable agentic skills. Although instantiated in this work with VLAs, RL policies, and task",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-20",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "reasoning",
-        "robot"
-      ]
-    },
-    {
-      "id": "2607.16619",
-      "source": "arxiv",
-      "title": "SAGE: A Socially-Aware Generative Engine for Heterogeneous Multi-Agent Navigation",
-      "url": "https://arxiv.org/abs/2607.16619",
-      "authors": [
-        "Lan Hu",
-        "Minghui Liwang",
-        "Wenbo Zhu",
-        "Xinlei Yi"
-      ],
-      "summary": "Safe and socially compliant navigation in open human-robot environments requires robots to reason about heterogeneous participants with different dynamics, autonomy levels, and social roles. Existing trajectory prediction and planning methods often rely on homogeneous interaction assumptions or enforce only geometric collision constraints, making it difficult to jointly model asymmetric interactions, coupled prediction-planning, and soft social norms. This paper proposes SAGE, a socially-aware generative engine for heterogeneous multi-agent navigation. SAGE represents robots and surrounding en",
+      "summary": "Existing approaches to multi-agent belief combination have established mature foundations for combining uncertain beliefs under common assumptions: consensus methods use iterative averaging, logic-based methods resolve conflicting knowledge bases, and epistemic logic analyzes agents' information states. Typically, these approaches assume that the structure determining what each agent can represent remains fixed. However, in many scenarios, agents gain or lose observational capacity during execution, and what was once admissible may become structurally impossible. This paper presents a formal f",
       "category": "cs.MA",
       "tag": "Agents",
-      "published_at": "2026-07-18",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomy",
-        "planning",
-        "robot"
-      ]
-    },
-    {
-      "id": "2607.16156",
-      "source": "arxiv",
-      "title": "PRISA: Proactive Infrastructure LiDAR Framework for Intersection Safety Assessment",
-      "url": "https://arxiv.org/abs/2607.16156",
-      "authors": [
-        "Tam Bang",
-        "Hussam Abubakr",
-        "Emiliano de la Garza Villarreal",
-        "Truc Phuong Nguyen"
-      ],
-      "summary": "Urban intersections are among the most hazardous locations in road networks, posing significant risks to vehicles and vulnerable road users (VRUs) such as pedestrians and cyclists. The complexity of multi-agent interactions demands continuous, real-time monitoring systems capable of anticipating conflicts before they escalate into crashes. We present PRISA, a modular infrastructure LiDAR framework leveraging privacy-preserving, low-light-robust roadside sensors for long-term traffic observation and real-time risk detection at the edge. The framework comprises two core components: a sensing and",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-07-17",
+      "published_at": "2026-07-23",
       "score": 7.0,
       "raw_score": 14,
       "matched_keywords": [
@@ -1413,100 +1410,101 @@
       ]
     },
     {
-      "id": "2607.13705",
+      "id": "2607.20207",
       "source": "arxiv",
-      "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
-      "url": "https://arxiv.org/abs/2607.13705",
+      "title": "SeededGrasp: Language-Guided Grasping in Complex Scenes with Multiple Embodiments",
+      "url": "https://arxiv.org/abs/2607.20207",
       "authors": [
-        "Zichen Ding",
-        "Jiaye Ge",
-        "Shufan Jiang",
-        "Kai Chen"
+        "Yang Xu",
+        "Gurpreet Singh Mukker",
+        "Raymond Wang",
+        "Jasper Gerigk"
       ],
-      "summary": "As Large Language Models (LLMs) evolve into autonomous agents, the need for unified evaluation infrastructure becomes critical. However, current evaluation pipelines remain highly fragmented and tightly coupled, hindering reproducibility and causing redundant engineering. To address this, we introduce AgentCompass, an open-source, lightweight, and extensible infrastructure for evaluating LLM-based agents. AgentCompass organizes the evaluation process around three independent components, namely Benchmark, Harness, and Environment, thereby enabling flexible configurations without requiring the r",
+      "summary": "Practical robotic grasping in complex scenes requires both 3D spatial reasoning and alignment with task-specific requirements. Vision-language models (VLMs) offer a natural way to specify these requirements using language, but existing approaches either use a VLM to predict the grasp directly with limited spatial awareness, or train the VLM together with the grasping model, which requires significantly more data and compute. These limitations impede performance and have prevented scaling to multiple embodiments in complex scenes. We address this by proposing SeededGrasp, a novel data-efficient",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-22",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "reasoning",
+        "alignment",
+        "robot",
+        "language model",
+        "scaling"
+      ]
+    },
+    {
+      "id": "2607.21482",
+      "source": "arxiv",
+      "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+      "url": "https://arxiv.org/abs/2607.21482",
+      "authors": [
+        "Mack Nixon",
+        "Liam Wright",
+        "Yevgeniya Kovalchuk",
+        "Alison Fang-Wei Wu"
+      ],
+      "summary": "Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powered by open-weight LLMs on one of the most persistent bottlenecks in research on longitudinal populati",
       "category": "cs.AI",
       "tag": "Research",
-      "published_at": "2026-07-15",
-      "score": 7.0,
-      "raw_score": 14,
+      "published_at": "2026-07-23",
+      "score": 6.5,
+      "raw_score": 13,
       "matched_keywords": [
         "agent",
-        "autonomous",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.13027",
-      "source": "arxiv",
-      "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
-      "url": "https://arxiv.org/abs/2607.13027",
-      "authors": [
-        "Hongru Cai",
-        "Yongqi Li",
-        "Ran Wei",
-        "Wenjie Li"
-      ],
-      "summary": "Large Language Model (LLM) agents have moved beyond generating responses to executing multi-step tasks by calling tools, observing the results, and iteratively deciding the next action. Most agent systems run on desktops or servers, which support tool use and task automation. Mobile devices are also important agent environments because they are widely accessible and contain users' data, sensors, and daily-use applications. Existing mobile agents mainly operate smartphones through graphical user interface (GUI) actions such as tapping, swiping, and typing, which often form long, interface-depen",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-14",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "tool use",
-        "llm",
-        "language model",
-        "automation"
-      ]
-    },
-    {
-      "id": "2607.12861",
-      "source": "arxiv",
-      "title": "Unveiling Complex Collective Behaviors from Simple Rewards",
-      "url": "https://arxiv.org/abs/2607.12861",
-      "authors": [
-        "Yize Mi",
-        "Jianan Li",
-        "Liang Li",
-        "Shiyu Zhao"
-      ],
-      "summary": "Multi-agent Reinforcement Learning (MARL) holds great potential for robot swarms, but the black-box nature of neural policies complicates strategic analysis, limiting multi-robot applications. Furthermore, complex swarm behaviors can surprisingly emerge from simple rewards without explicit aggregation incentives. Unveiling the mechanisms behind this emergence is critical, but the disconnection between simple rewards and collective behaviors exacerbates interpretability challenges. This paper aims to reveal the hidden mechanisms in this process. We propose a two-stage EEC (\\LinkIII) explanatory",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-14",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "interpretability",
-        "interpret",
-        "robot"
-      ]
-    },
-    {
-      "id": "2607.14158",
-      "source": "arxiv",
-      "title": "Orchestrating Power Grid Studies with Multi-Agent AI and MCP Servers",
-      "url": "https://arxiv.org/abs/2607.14158",
-      "authors": [
-        "Jérôme Picault",
-        "Clément Goubet"
-      ],
-      "summary": "This position paper explores how Agentic AI and Model Context Protocol (MCP) can support power-grid studies in a Transmission System Operator (TSO) context. We focus on integrating Large Language Models with numerical simulation tools, structured workflows, and human supervision. We identify key industrial requirements for agent assisted grid studies and introduce pypowsybl-mcp, an MCP-based interface exposing selected capabilities of our simulation tool, pypowsybl to AI agents. This first step provides a testbed to study how agents can setup simulations, execute analyses, retrieve results, an",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-14",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
         "agentic",
+        "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2607.21345",
+      "source": "arxiv",
+      "title": "Regulating autonomous and agentic AI",
+      "url": "https://arxiv.org/abs/2607.21345",
+      "authors": [
+        "Chris Reed",
+        "Alex Austria",
+        "Anmol Bharuka",
+        "Pragnitha Mandava"
+      ],
+      "summary": "Regulating activities where regulatees use autonomous and agentic AI is challenging. Regulatory assumptions about regulatee knowledge and control no longer hold true; much of that lies elsewhere in the AI supply chain which thus needs to be brought within the scope of regulation. Governance systems for autonomous AI cannot replicate existing governance models, but need a fresh approach. Retrospective supervisory oversight becomes ineffective as a risk management tool, and AI autonomy generates new systemic risks which require new solutions. This paper investigate four regulatory systems: UK re",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-23",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "autonomy"
+      ]
+    },
+    {
+      "id": "2607.20061",
+      "source": "arxiv",
+      "title": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
+      "url": "https://arxiv.org/abs/2607.20061",
+      "authors": [
+        "Hanjing Ye",
+        "Tianle Zeng",
+        "Jiazhao Zhang",
+        "Shaoan Wang"
+      ],
+      "summary": "Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, their chain-of-thought (CoT) reasoning often operates in abstract spatial latents that are difficult to supervise and weakly aligned with explicit image-space detections. To address this, we introduce ReferTrack, a referring-then-tracking paradigm that grounds EVT using a single forward-facing camera. Our model first selects the target from ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-22",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "planning",
+        "reasoning",
+        "chain-of-thought",
+        "embodied"
       ]
     }
   ]

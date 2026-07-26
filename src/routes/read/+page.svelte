@@ -13,6 +13,7 @@
   import { marked } from 'marked';
   import DOMPurify from 'isomorphic-dompurify';
   import { sectionsWithBody, book } from '$lib/bookContent';
+  import imageDimensions from '$lib/data/book/image-dimensions.json';
   import { readingPosition } from '$lib/stores/readingPosition';
   import { readerFontSize } from '$lib/stores/readerFontSize';
 
@@ -35,11 +36,22 @@
   function renderMarkdown(raw) {
     if (!raw) return '';
     const html = DOMPurify.sanitize(marked(raw));
-    // Lazy-load the 84 chapter images. marked has no hook for this and the
-    // markdown source shouldn't carry HTML attributes, so it's applied to the
-    // sanitized output - after DOMPurify, never before, so we're not handing
-    // it markup to re-parse.
-    return html.replace(/<img /g, '<img loading="lazy" decoding="async" ');
+    // Applied to the sanitized output - after DOMPurify, never before, so we
+    // are not handing it markup to re-parse.
+    //
+    // The width/height pair is what makes "put me back where I was" work. The
+    // markdown carries no dimensions, so without these the browser cannot
+    // reserve space for an image until it downloads it, and every arrival
+    // shoves the prose below it down the page. Restoring a position against a
+    // document that is still growing lands the reader in the wrong chapter.
+    // With the intrinsic size declared (and CSS keeping width:100%;height:auto)
+    // the box is correct before a single byte arrives, so nothing shifts.
+    return html.replace(/<img ([^>]*?)src="([^"]+)"/g, (match, pre, src) => {
+      const name = src.split('/').pop();
+      const size = imageDimensions[name];
+      const dims = size ? ` width="${size[0]}" height="${size[1]}"` : '';
+      return `<img loading="lazy" decoding="async"${dims} ${pre}src="${src}"`;
+    });
   }
 
   const INITIAL_MOUNT = 3;
@@ -156,28 +168,6 @@
     scroller.scrollTo({ top: Math.max(0, top), behavior });
   }
 
-  // Wait for every image currently in the document to finish loading (or fail),
-  // with a ceiling so a slow CDN can't hold the reader hostage. This is the
-  // deterministic half of the restore: images carry no intrinsic size in the
-  // markdown, so until they've loaded, any offset we compute is measured
-  // against a document that is still growing.
-  function imagesSettled(timeoutMs = 4000) {
-    const imgs = Array.from(document.images).filter((img) => !img.complete);
-    if (!imgs.length) return Promise.resolve();
-    return Promise.race([
-      Promise.all(
-        imgs.map(
-          (img) =>
-            new Promise((resolve) => {
-              img.addEventListener('load', resolve, { once: true });
-              img.addEventListener('error', resolve, { once: true });
-            })
-        )
-      ),
-      new Promise((r) => setTimeout(r, timeoutMs))
-    ]);
-  }
-
   // Put the reader back roughly where they were. "Roughly" is the whole spec:
   // the chapter they were in, and about how far through it. Getting even that
   // right needs the layout to stop moving first - the chapter images are lazy
@@ -185,18 +175,14 @@
   // measured against a document that is still growing, and the reader lands in
   // the wrong chapter entirely.
   async function restoreTo(index, ratio) {
-    // Mount the target's neighbourhood, then force its images to load now
-    // rather than when they scroll into view: a lazy image above the reader
-    // may never load at all, and would shift the page the moment they scroll
-    // back up.
-    mountUpTo(index);
-    await tick();
-    document
-      .querySelectorAll('.prose img[loading="lazy"]')
-      .forEach((img) => img.setAttribute('loading', 'eager'));
-
-    await imagesSettled();
-    await document.fonts?.ready?.catch?.(() => {});
+    // One scroll is enough now that every image declares its size: the layout
+    // above the target is already its final height, loaded or not. Fonts are
+    // the only remaining reflow, and they are usually cached by the time
+    // anyone returns to the book, so this waits on them only briefly.
+    await Promise.race([
+      document.fonts?.ready ?? Promise.resolve(),
+      new Promise((r) => setTimeout(r, 600))
+    ]).catch(() => {});
     await scrollToSection(index, ratio, 'auto');
   }
 

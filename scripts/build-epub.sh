@@ -32,9 +32,13 @@ cp "$ROOT/static/book-images/"*.jpg "$ROOT/static/book-images/"*.png "$ROOT/stat
 
 for f in $FILES; do
   prefix="${f%%-*}" # numeric prefix keeps footnote ids unique per chapter
-  sed -E -e 's|\]\(/book-images/|](images/|g' \
-         -e "s/\[\^([^]]+)\]/[^${prefix}-\1]/g" \
-    "$BOOK/$f" > "$TMP/$f"
+  # `refs render` expands [](sts:chapter1) internal cross-references to text.
+  # It exits non-zero on a pointer that resolves to nothing, and pipefail turns
+  # that into a failed build -- a dead cross-reference must never reach a reader.
+  python3 "$ROOT/scripts/sts.py" refs render "$f" \
+  | sed -E -e 's|\]\(/book-images/|](images/|g' \
+           -e "s/\[\^([^]]+)\]/[^${prefix}-\1]/g" \
+    > "$TMP/$f"
 done
 
 cat > "$TMP/metadata.yaml" <<YAML

@@ -1210,8 +1210,14 @@ def cmd_compile(args) -> int:
               f"## TABLE OF CONTENTS\n\n")
     toc = "\n".join(f"- {s['title']}" for s in meta["sections"])
     chunks = [header + toc + "\n\n---\n"]
+    targets = _ref_targets(_live_index())
     for s in meta["sections"]:
         body = (BOOK_DIR / s["file"]).read_text(encoding="utf-8").strip()
+        try:
+            body = _expand_refs(body, targets, s["file"])
+        except KeyError as e:
+            sys.exit(f"sts.py compile: {e}\n  a cross-reference points at "
+                     f"nothing. Run: sts.py refs list")
         chunks.append(body + "\n\n---\n")
     text = "\n".join(chunks)
     if args.stdout:
@@ -2078,6 +2084,268 @@ def cmd_id(args):
     return {"build": _id_build, "list": _id_list, "get": _id_get,
             "replace": _id_replace, "verify": _id_verify,
             "stress": _id_stress}[args.action](args)
+
+
+# ──────────────────────────────────────────────────────────────────────
+# refs — internal cross-references that cannot rot
+# ──────────────────────────────────────────────────────────────────────
+#
+# The problem: every internal cross-reference in the book is plain prose --
+# "the thermodynamic limits we discussed in Chapter 1", "as detailed in
+# Chapter 5". Reorder or renumber a chapter and every one of those sentences
+# becomes quietly wrong. Nothing in the build notices, because to a renderer
+# they are just words.
+#
+# The fix is to write the POINTER instead of the number, and generate the
+# number at render time:
+#
+#     [](sts:chapter1)          -> "Chapter 1"        (label generated)
+#     [](sts:sts.chapter1.b0003)-> "Chapter 1"        (block-precise pointer)
+#     [the limits](sts:chapter1)-> "the limits"       (author's words, checked)
+#
+# An empty label is generated from book.json, so renumbering a chapter rewrites
+# every sentence that points at it. A non-empty label is the author's phrasing
+# and is left alone -- but the pointer is still resolved, so deleting the target
+# fails the build instead of leaving a sentence that references nothing.
+#
+# WHY EXPANSION, NOT HYPERLINKS. Three different consumers read the raw .md:
+# `sts.py compile`, scripts/build-epub.sh (pandoc, straight off BOOK_DIR), and
+# the website (src/lib/bookContent.js, via Vite ?raw). There is no single href
+# that is correct in all three -- the site needs /book/<section>, print needs an
+# internal anchor, and anchors in the source are exactly what the id subsystem
+# exists to avoid. So a ref expands to TEXT, identically everywhere. The edge
+# table below is per-target-agnostic, so emitting real hrefs later is a change
+# of one function, not a redesign.
+
+# [label](sts:target) -- target is a section id or a full sts.<sec>.b<NNNN> id.
+_SREF_RE = re.compile(r"\[([^\]\n]*)\]\(sts:([A-Za-z0-9._-]+)\)")
+
+
+def _section_label(title: str) -> str:
+    """'Chapter 1: The Event Horizon' -> 'Chapter 1'.
+
+    book.json titles are '<short name>: <descriptive tail>'. The short name is
+    what prose actually says ("as we saw in Chapter 1"), so that is what a
+    generated label expands to. Titles with no colon are used whole.
+    """
+    return title.split(":", 1)[0].strip() if ":" in title else title.strip()
+
+
+def _ref_targets(index):
+    """{ref target -> {...}} for every addressable thing a ref may point at.
+
+    Two granularities, both legal:
+      * section id   ('chapter1')          -- stable across editing, use for prose
+      * block id     ('sts.chapter1.b0003')-- precise, but blocks churn
+    """
+    out = {}
+    for sec in index["sections"]:
+        out[sec["id"]] = {"kind": "section", "section": sec["id"],
+                          "title": sec["title"], "file": sec["file"],
+                          "label": _section_label(sec["title"])}
+        for blk in sec["blocks"]:
+            out[blk["id"]] = {"kind": "block", "section": sec["id"],
+                              "title": sec["title"], "file": sec["file"],
+                              "label": _section_label(sec["title"]),
+                              "block": blk["id"], "lines": blk["lines"]}
+    return out
+
+
+def _ref_edges(index):
+    """Every sts: reference in the manuscript, as (source -> target) edges.
+
+    This is the shared substrate: `refs --to` reads it backwards to answer
+    "what breaks if I cut this", and the expanders read it forwards to render.
+    """
+    targets = _ref_targets(index)
+    edges = []
+    for sec in index["sections"]:
+        # line -> owning block id, so an edge knows which block it lives in.
+        owner = {}
+        for blk in sec["blocks"]:
+            a, z = blk["lines"]
+            for ln in range(a, z + 1):
+                owner[ln] = blk["id"]
+        text = (BOOK_DIR / sec["file"]).read_text(encoding="utf-8")
+        for lineno, line in enumerate(text.split("\n"), 1):
+            for m in _SREF_RE.finditer(line):
+                label, target = m.group(1), m.group(2)
+                edges.append({
+                    "from_section": sec["id"], "from_block": owner.get(lineno),
+                    "file": sec["file"], "line": lineno,
+                    "label": label, "to": target,
+                    "resolved": target in targets,
+                    "to_section": targets.get(target, {}).get("section"),
+                    "generated": not label.strip(),
+                    "raw": m.group(0)})
+    return edges
+
+
+def _expand_refs(text: str, targets: dict, where: str = "") -> str:
+    """Replace every sts: ref in `text` with its rendered form. Raises on a
+    dangling target -- a broken cross-reference must stop a build, not ship."""
+    def sub(m):
+        label, target = m.group(1), m.group(2)
+        t = targets.get(target)
+        if t is None:
+            raise KeyError(f"{where}: unresolvable reference sts:{target} "
+                           f"in {m.group(0)!r}")
+        return label if label.strip() else t["label"]
+    return _SREF_RE.sub(sub, text)
+
+
+def verify_refs() -> list:
+    """Dangling sts: cross-references. Empty list means every pointer lands."""
+    index = _live_index()
+    return [{"kind": "dangling reference",
+             "file": e["file"], "line": e["line"],
+             "detail": f"sts:{e['to']} matches no section or block  ({e['raw']})"}
+            for e in _ref_edges(index) if not e["resolved"]]
+
+
+def _refs_render(args):
+    """Emit one section file with refs expanded (the hook build-epub.sh uses)."""
+    index = _live_index()
+    targets = _ref_targets(index)
+    src = Path(args.file)
+    if not src.exists():
+        src = BOOK_DIR / args.file
+    if not src.exists():
+        sys.exit(f"sts.py refs render: no such file {args.file}")
+    try:
+        out = _expand_refs(src.read_text(encoding="utf-8"), targets, src.name)
+    except KeyError as e:
+        sys.exit(f"sts.py refs render: {e}")
+    sys.stdout.write(out)
+    return 0
+
+
+def _refs_list(args):
+    index = _live_index()
+    edges = _ref_edges(index)
+    if args.to:
+        edges = [e for e in edges if e["to"] == args.to
+                 or e["to_section"] == args.to]
+    if args.json:
+        print(json.dumps(edges, indent=2, ensure_ascii=False))
+        return 0
+    if not edges:
+        scope = f" pointing at {args.to}" if args.to else ""
+        print(f"no sts: cross-references{scope}")
+        return 0
+    print(f"cross-references — {len(edges)} shown\n")
+    for e in edges:
+        mark = "  " if e["resolved"] else "!!"
+        shown = e["label"] if e["label"].strip() else "(generated)"
+        print(f"  {mark} {e['file']}:{e['line']:<5} -> sts:{e['to']:<28} {shown}")
+    bad = [e for e in edges if not e["resolved"]]
+    if bad:
+        print(f"\n  {len(bad)} dangling (marked !!)")
+    return 1 if bad else 0
+
+
+def _refs_stress(args):
+    """Prove the ref machinery on a throwaway copy. Real files are never touched.
+
+    Nothing in the manuscript uses sts: refs yet, so without this the resolver
+    would ship untested against real content. Mirrors `id stress`.
+    """
+    global BOOK_DIR
+    results = []
+
+    def check(name, ok, detail=""):
+        results.append({"check": name, "ok": bool(ok), "detail": detail})
+
+    real, tmp = BOOK_DIR, Path(tempfile.mkdtemp(prefix="sts-refstress-"))
+    try:
+        for f in real.glob("*.md"):
+            shutil.copy2(f, tmp / f.name)
+        for extra in ("book.json", "art-catalog.json"):
+            if (real / extra).exists():
+                shutil.copy2(real / extra, tmp / extra)
+        BOOK_DIR = tmp
+
+        book = json.loads((tmp / "book.json").read_text(encoding="utf-8"))
+        sec = book["sections"][0]
+        victim = tmp / sec["file"]
+        index = _build_index(tmp, None)
+        # A block belonging to chapter1, so the block-pointer assertion below
+        # actually distinguishes "resolved to its section" from "resolved at all".
+        a_block = next(s for s in index["sections"]
+                       if s["id"] == "chapter1")["blocks"][0]["id"]
+
+        # A generated label, an author-worded label, a block-precise pointer.
+        victim.write_text(victim.read_text(encoding="utf-8") +
+                          "\n\nSee [](sts:chapter1), and [the limits](sts:chapter1), "
+                          f"and [](sts:{a_block}).\n", encoding="utf-8")
+
+        edges = _ref_edges(_build_index(tmp, None))
+        check("scan.finds_all", len(edges) == 3, f"{len(edges)} edge(s)")
+        check("scan.all_resolve", all(e["resolved"] for e in edges),
+              str([e["to"] for e in edges if not e["resolved"]]))
+        check("scan.generated_flagged",
+              sum(1 for e in edges if e["generated"]) == 2,
+              f"{sum(1 for e in edges if e['generated'])} generated")
+        check("scan.block_attributed", all(e["from_block"] for e in edges),
+              "every edge knows its owning block")
+
+        targets = _ref_targets(_build_index(tmp, None))
+        out = _expand_refs(victim.read_text(encoding="utf-8"), targets, "test")
+        ch1 = _section_label(
+            next(s["title"] for s in book["sections"] if s["id"] == "chapter1"))
+        check("expand.generated_label", f"See {ch1}," in out, f"-> {ch1!r}")
+        check("expand.keeps_author_words", "the limits" in out,
+              "non-empty label preserved")
+        one = _expand_refs(f"[](sts:{a_block})", targets, "test")
+        check("expand.block_ref_to_section", one == ch1,
+              f"sts:{a_block} -> {one!r} (want {ch1!r})")
+        check("expand.no_marker_survives", "](sts:" not in out,
+              "no sts: leaks into rendered output")
+
+        # A dangling pointer must stop a build, not ship.
+        victim.write_text(victim.read_text(encoding="utf-8") +
+                          "\n\nBroken [](sts:chapter99).\n", encoding="utf-8")
+        check("dangle.verify_catches",
+              len([e for e in _ref_edges(_build_index(tmp, None))
+                   if not e["resolved"]]) == 1, "1 dangling found")
+        raised = False
+        try:
+            _expand_refs(victim.read_text(encoding="utf-8"),
+                         _ref_targets(_build_index(tmp, None)), "test")
+        except KeyError:
+            raised = True
+        check("dangle.expand_raises", raised, "render refuses to emit a dead ref")
+
+        # Renumbering the target rewrites the prose that points at it.
+        bj = json.loads((tmp / "book.json").read_text(encoding="utf-8"))
+        for s in bj["sections"]:
+            if s["id"] == "chapter1":
+                s["title"] = "Chapter 4: The Event Horizon"
+        (tmp / "book.json").write_text(json.dumps(bj, indent=2), encoding="utf-8")
+        moved = _expand_refs("See [](sts:chapter1).",
+                             _ref_targets(_build_index(tmp, None)), "test")
+        check("renumber.label_follows", moved == "See Chapter 4.", moved)
+    finally:
+        BOOK_DIR = real
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    passed = sum(1 for r in results if r["ok"])
+    failed = [r for r in results if not r["ok"]]
+    if args.json:
+        print(json.dumps({"ok": not failed, "passed": passed,
+                          "total": len(results), "results": results}, indent=2))
+    else:
+        print(f"sts refs stress — cross-reference resolver "
+              f"({passed}/{len(results)} checks)\n")
+        for r in results:
+            print(f"  {'PASS' if r['ok'] else 'FAIL'}  {r['check']:<28} {r['detail']}")
+        print(f"\n{'ALL PASS' if not failed else str(len(failed)) + ' FAILED'}")
+    return 1 if failed else 0
+
+
+def cmd_refs(args):
+    return {"list": _refs_list, "render": _refs_render,
+            "stress": _refs_stress}[args.action](args)
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -3133,6 +3401,9 @@ def cmd_verify(args) -> int:
         result["precedents"] = p
         failed += (len(p["missing_from_book"]) + len(p["missing_from_appendix_d"])
                    + len(p["unknown_ids"]))
+    if checks in ("all", "refs"):
+        result["refs"] = verify_refs()
+        failed += len(result["refs"])
     if checks == "links" or (checks == "all" and args.links):
         result["links"] = verify_links()
         failed += len(result["links"]["dead"])
@@ -3152,6 +3423,11 @@ def cmd_verify(args) -> int:
         print(f"\n  meta        {len(bad)} drift problem(s)")
         for p in bad:
             print(f"    [{p['kind']}] {p['detail']}")
+    if "refs" in result:
+        bad = result["refs"]
+        print(f"\n  refs        {len(bad)} dangling cross-reference(s)")
+        for p in bad:
+            print(f"    {p['file']}:{p['line']}  {p['detail']}")
     if "precedents" in result:
         p = result["precedents"]
         print("\n  precedents  P-01..P-22 ledger integrity")
@@ -3215,7 +3491,7 @@ def main():
     p = sub.add_parser("verify")
     p.add_argument("--json", action="store_true")
     p.add_argument("check", nargs="?",
-                   choices=["all", "math", "meta", "precedents", "links"],
+                   choices=["all", "math", "meta", "precedents", "refs", "links"],
                    help="which check to run (default: all fast checks)")
     p.add_argument("--links", action="store_true",
                    help="with 'all', also liveness-check every Works Cited URL "
@@ -3282,6 +3558,21 @@ def main():
     p.add_argument("--all", action="store_true",
                    help="include sections with zero findings in the report")
     p.set_defaults(fn=cmd_scan)
+
+    p = sub.add_parser("refs",
+                       help="internal cross-references: [](sts:chapter1) pointers "
+                            "that renumber themselves instead of rotting")
+    refsub = p.add_subparsers(dest="action", required=True)
+    rl = refsub.add_parser("list", help="every cross-reference, dangling ones marked")
+    rl.add_argument("--to", help="only refs pointing at this section or block id")
+    rl.add_argument("--json", action="store_true")
+    rr = refsub.add_parser("render",
+                           help="print one section with refs expanded (build hook)")
+    rr.add_argument("file", help="section filename or path")
+    rs = refsub.add_parser("stress",
+                           help="prove the resolver on a throwaway copy of the book")
+    rs.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_refs)
 
     p = sub.add_parser("research",
                        help="search the web for sources/examples (Wikipedia + DuckDuckGo)")

@@ -2,12 +2,50 @@ import bookJson from '$lib/data/book/book.json';
 
 export const book = bookJson;
 
+// Internal cross-references are written as pointers, not numbers:
+//   [](sts:chapter1)            -> "Chapter 1"   (label generated from book.json)
+//   [the limits](sts:chapter1)  -> "the limits"  (author's words, pointer checked)
+// so renumbering a chapter rewrites every sentence that points at it instead of
+// leaving prose that is quietly wrong. scripts/sts.py owns the canonical
+// resolver (`sts.py refs`) and is what the EPUB/PDF build and `sts.py verify
+// refs` use; this is the same rule for the website, which cannot call Python at
+// build time. book.json is imported above, so there is no generated artifact to
+// keep in sync -- the labels are derived from the same titles sts.py reads.
+const STS_REF = /\[([^\]\n]*)\]\(sts:([A-Za-z0-9._-]+)\)/g;
+
+// 'Chapter 1: The Event Horizon' -> 'Chapter 1'. Mirrors _section_label().
+const shortLabel = title => (title.includes(':') ? title.split(':')[0] : title).trim();
+
+// A ref target is a section id ('chapter1') or a block id
+// ('sts.chapter1.b0003'); a block id carries its section in the middle segment.
+const labelFor = target => {
+  const parts = target.split('.');
+  const sectionId = parts.length >= 3 && parts[0] === 'sts' ? parts[1] : target;
+  const section = book.sections.find(s => s.id === sectionId);
+  return section ? shortLabel(section.title) : null;
+};
+
+export function expandRefs(raw) {
+  if (!raw || !raw.includes('](sts:')) return raw;
+  return raw.replace(STS_REF, (whole, label, target) => {
+    if (label.trim()) return label;
+    const generated = labelFor(target);
+    // A dangling pointer fails the EPUB build and `sts.py verify refs`. If one
+    // reaches here anyway, drop the marker rather than render "](sts:..." at a
+    // reader; the checks above are where it is meant to be caught and named.
+    return generated ?? '';
+  });
+}
+
 // Lazy loader - returns a function per chapter that fetches markdown on demand.
-// Preserves the original surface used by /book/[sectionId] routes.
+// Preserves the original surface used by /book/[sectionId] routes: still a
+// function returning a promise of the markdown, now with refs expanded.
+const lazyMarkdown = import.meta.glob('$lib/data/book/*.md', { query: '?raw', import: 'default' });
+
 export const sections = Object.fromEntries(
   book.sections.map(section => [
     section.id,
-    import.meta.glob('$lib/data/book/*.md', { query: '?raw', import: 'default' })[`/src/lib/data/book/${section.file}`]
+    async () => expandRefs(await lazyMarkdown[`/src/lib/data/book/${section.file}`]())
   ])
 );
 
@@ -71,7 +109,7 @@ const NARRATIVE_SECTION = /^(chapter\d+|conclusion)$/;
 // Chapter metadata enriched with teaser + word count + read time.
 // Stable shape: { ...sectionFromJson, teaser, wordCount, readMinutes, inProgress }
 export const sectionsWithMeta = book.sections.map(section => {
-  const raw = eagerMarkdown[`/src/lib/data/book/${section.file}`] || '';
+  const raw = expandRefs(eagerMarkdown[`/src/lib/data/book/${section.file}`] || '');
   const wordCount = countWords(raw);
   const inProgress = NARRATIVE_SECTION.test(section.id) && !raw.includes('Elijah');
   return {
@@ -94,5 +132,5 @@ export const chaptersWithMeta = sectionsWithMeta.filter(s => /^chapter\d+$/.test
 // this adds no extra payload beyond the strings themselves.
 export const sectionsWithBody = sectionsWithMeta.map(section => ({
   ...section,
-  raw: eagerMarkdown[`/src/lib/data/book/${section.file}`] || ''
+  raw: expandRefs(eagerMarkdown[`/src/lib/data/book/${section.file}`] || '')
 }));

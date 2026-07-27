@@ -38,9 +38,25 @@ export async function POST({ request }) {
 
   let event;
   try {
-    event = stripe.webhooks.constructEvent(rawBody, signature, WEBHOOK_SECRET);
+    // MUST be constructEventAsync, not constructEvent. In production this runs
+    // on the Cloudflare Workers runtime, where the Stripe SDK resolves its
+    // "workerd" export condition and its crypto provider is SubtleCrypto -
+    // which is async-only. The synchronous constructEvent therefore throws
+    // CryptoProviderOnlySupportsAsyncError on EVERY request, whatever the
+    // secret, and the catch below turns that into an indistinguishable
+    // "Invalid signature" 400. The async form picks the right provider on both
+    // the worker build (SubtleCrypto) and the node build used by local dev.
+    event = await stripe.webhooks.constructEventAsync(rawBody, signature, WEBHOOK_SECRET);
   } catch (err) {
-    console.error('[webhook] signature verification failed:', err.message);
+    // A crypto-provider/config fault and a genuinely bad signature both landed
+    // here as the same opaque message, which cost a long night of chasing the
+    // wrong cause. Keep them distinguishable in the logs.
+    const misconfigured = err?.type !== 'StripeSignatureVerificationError';
+    console.error(
+      misconfigured
+        ? `[webhook] verification could not run (likely misconfiguration): ${err?.constructor?.name}: ${err?.message}`
+        : `[webhook] signature rejected: ${err.message}`
+    );
     return json({ error: 'Invalid signature' }, { status: 400 });
   }
 

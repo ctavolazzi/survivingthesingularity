@@ -299,7 +299,8 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     : 'Your preorder is confirmed. ';
   const body =
     `${confirmLine}Your spot in line is locked in at 50% off the finished book, and we will email you an exclusive link when it is ready. ` +
-    'The bundle below includes the complete current draft of the book as a PDF, plus the research PDFs, papers, images, and source documents behind it.';
+    'Your download is The Precedent File: 29 documented cases of people meeting a machine that changed everything, with every source listed so you can check the work. ' +
+    'It also carries the complete current book in PDF and EPUB, the Municipal Autonomy Code, and the cover art.';
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.
@@ -316,7 +317,7 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
-    <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download your bundle</a>
+    <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download The Precedent File</a>
     <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
       <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your 50% off launch discount</p>
       <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">Keep both of these. You'll need them when the finished book launches.</p>

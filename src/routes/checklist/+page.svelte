@@ -498,7 +498,7 @@
           <div class="cl-upgrade-text">
             <p class="cl-section-label">Want everything</p>
             <h2 class="cl-upgrade-heading">The full kit is $5.</h2>
-            <p class="cl-upgrade-sub">All chapters, the book draft, the research bundle, and every tool I build next. One payment. Instant access.</p>
+            <p class="cl-upgrade-sub">All chapters, the book draft, The Precedent File, and every tool I build next. One payment. Instant access.</p>
           </div>
           <a href="/early-access" class="cl-upgrade-btn">
             Get Early Access

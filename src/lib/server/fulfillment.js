@@ -57,7 +57,7 @@ export async function claimSession(sessionId, email) {
 }
 
 /**
- * Generates a Supabase Storage signed URL for the research bundle. Falls
+ * Generates a Supabase Storage signed URL for The Precedent File bundle. Falls
  * back to null when storage isn't configured (mock mode / local dev).
  */
 export async function getBundleUrl() {

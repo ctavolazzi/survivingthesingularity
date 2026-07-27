@@ -6,7 +6,7 @@
 
 <svelte:head>
   <title>You're in. Surviving the Singularity</title>
-  <meta name="description" content="Your preorder is confirmed. Your research bundle is on its way." />
+  <meta name="description" content="Your preorder is confirmed. The Precedent File is on its way." />
   <meta name="robots" content="noindex" />
 </svelte:head>
 
@@ -33,9 +33,9 @@
       <h1 class="success-heading" id="success-heading">You're in.</h1>
       <p class="success-sub">
         {#if data.email}
-          Your research bundle and access links are on their way to <strong>{data.email}</strong>.
+          The Precedent File and your access links are on their way to <strong>{data.email}</strong>.
         {:else}
-          Your research bundle is ready. Download it below.
+          The Precedent File is ready. Download it below.
         {/if}
       </p>
     </div>
@@ -51,8 +51,8 @@
           </svg>
         </div>
         <div>
-          <p class="download-name">Research Bundle</p>
-          <p class="download-meta">PDFs, papers, images, source documents</p>
+          <p class="download-name">The Precedent File</p>
+          <p class="download-meta">29 documented cases with sources, plus the full book in PDF and EPUB</p>
         </div>
       </div>
 

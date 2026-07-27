@@ -1,43 +1,105 @@
-This is the book data for survivingthesingularity.com.
+# This directory is the book
 
-The book is written in Markdown and is converted to HTML for the website.
+**You are in the single source of truth.** The book is the `.md` files here, and
+`book.json` decides which of them are the book and in what order.
 
-The book is divided into sections, which are defined in the `book.json` file.
+Both halves are required:
 
-## Content Management
+- **`*.md`** holds the prose. One file per section.
+- **`book.json`** is the manifest: which files, what order, what titles, plus the
+  version, title and subtitle that become EPUB and PDF metadata.
 
-1. To add or edit content, simply modify the corresponding Markdown files.
-2. Update the `book.json` file to reflect any changes in the book's structure.
-3. Our automated system will detect changes and rebuild the website accordingly.
+Neither is the book on its own.
 
-## Formatting Guidelines
+## A file in this folder is not automatically in the book
 
-- Use standard Markdown syntax for formatting.
-- Include images in the `images/` subdirectory and reference them using relative paths.
-- For complex layouts or interactive elements, use HTML within the Markdown files.
+**`book.json` is the gate.** If a `.md` file here is not listed in its `sections`
+array, it is not in the book, is not on the website, and is not in the EPUB or the
+PDFs.
 
-## Publishing Process
+That is deliberate, and it is what lets craft documents live beside the manuscript
+without leaking into it. Right now 33 `.md` files are in this directory and 30 are
+in the book. The three that are not:
 
-1. Commit changes to this repository.
-2. Our CI/CD pipeline automatically detects updates.
-3. The Markdown is converted to HTML and optimized for web display.
-4. The website is rebuilt and deployed with the latest content.
+| File | What it is |
+| --- | --- |
+| `VOICE-GUIDE.md` | the voice reference. Read before writing. |
+| `ELIJAH-PROTOCOL.md` | the narrative throughline spec |
+| `README.md` | this file |
 
-## Contributing
+Check the gate rather than trusting it:
 
-For authors and editors with access to this repository:
+```bash
+python3 scripts/sts.py book        # per-section word counts, straight from book.json
+python3 scripts/sts.py verify      # math, meta, refs, precedents
+```
 
-1. Clone the repository.
-2. Make your changes in a new branch.
-3. Submit a pull request for review.
+## Everything with book text in it, except this folder, is output
+
+| Artifact | Made by |
+| --- | --- |
+| The `/book` reader and `/read` | `src/lib/bookContent.js` |
+| Shipping EPUB and review PDF | `scripts/build-epub.sh` |
+| PLAIN and DELUXE PDFs | `scripts/build-pdf-variants.sh` |
+| `manuscript/StS-Complete-Draft-*.md` | `sts.py compile` |
+| `manuscript-index.json` | `sts.py id build` |
+
+Five consumers, none of which keeps an editable copy. **Hand-editing any of them is
+lost work**: the next build overwrites it. Fix the source and rebuild.
+
+Two traps in particular:
+
+1. **The compiled drafts in `manuscript/` look like the manuscript.** They are
+   exports. Nothing reads them back.
+2. **`manuscript-index.json` is a cache, not truth.** `sts.py id verify` re-parses
+   the live source and checks that against itself, so it cannot tell you the index
+   file on disk has gone stale. A clean `id verify` is not evidence the index is
+   current.
+
+Also not sources, despite looking like them: `src/lib/data/book-v1-archive/` and
+`src/lib/data/sample.md`. Nothing imports either.
+
+## Formatting
+
+- Standard Markdown. HTML inline where a layout needs it.
+- **Images live in `static/book-images/`** and are referenced as
+  `/book-images/name.png`, not from a subdirectory of this folder.
+- Internal cross-references should be pointers, not typed numbers:
+  `[](sts:chapter1)` renders "Chapter 1" and follows the chapter if it is
+  renumbered. `sts.py verify refs` fails the build on a pointer that lands
+  nowhere. See `REFS-DESIGN.md`.
+
+## After editing
+
+```bash
+python3 scripts/sts.py verify      # exits non-zero on a real problem
+python3 scripts/sts.py id build    # refresh the block index
+```
+
+Do not run the full build ritual per change. EPUB, PDF variants and the
+`static/downloads/` swap happen once, at version close. See `AUDITOR-BRIEF.md`.
 
 ## License
 
-The content of this book is © [Current Year] [Author Name]. All rights reserved. The text is made available online for free reading, but may not be reproduced or distributed without permission.
+© 2026 Christopher Tavolazzi. All rights reserved. The text is free to read online
+and may not be reproduced or distributed without permission.
 
-This content is provided for educational and informational purposes.
+---
 
-# Guidelines for Writing in the Dynamic Satirical Style of Christopher Tavolazzi
+## Voice guidance below is SUPERSEDED
+
+> **Do not write to the guide below.** It is blog-era guidance from an earlier
+> incarnation of this project: a humor quota, emoji headings, "Buckle up,
+> buttercup." It contradicts the register the book actually uses now, and an agent
+> following it literally writes the wrong book. `WRITING_CHECKLIST.md` was deleted
+> on 2026-07-26 for exactly this reason and this is the same material.
+>
+> **The voice reference is [`VOICE-GUIDE.md`](VOICE-GUIDE.md)**, which is written
+> against the shipped prose and quotes real lines from the book.
+>
+> Kept only as a record of where the project started.
+
+### Guidelines for Writing in the Dynamic Satirical Style of Christopher Tavolazzi (superseded)
 
 ## Introduction
 

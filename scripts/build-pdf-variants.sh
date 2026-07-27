@@ -30,9 +30,15 @@ cp "$ROOT/static/book-images/"*.jpg "$ROOT/static/book-images/"*.png \
 #   deluxe: /book-images/ -> images/ ; standalone "> **text**" -> pull-quote div
 #   plain:  images + their italic caption lines stripped ;
 #           standalone "> **text**" -> its own emphatic plain paragraph
+mkdir -p "$TMP/src"
 for f in $FILES; do
   prefix="${f%%-*}"
-  python3 - "$BOOK/$f" "$TMP" "$f" "$prefix" <<'PY'
+  # Expand [](sts:chapter1) internal cross-references to text before anything
+  # else touches the file. Exits non-zero on a pointer that resolves to nothing,
+  # and set -e turns that into a failed build: a dead cross-reference must never
+  # reach a reader. Same hook scripts/build-epub.sh uses.
+  python3 "$ROOT/scripts/sts.py" refs render "$f" > "$TMP/src/$f"
+  python3 - "$TMP/src/$f" "$TMP" "$f" "$prefix" <<'PY'
 import re, sys
 src, tmp, name, prefix = sys.argv[1:5]
 raw = open(src).read()

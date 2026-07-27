@@ -68,6 +68,23 @@ npm run preview      # Preview production build
 post in the listing — do not use it for new posts; see Content Architecture.)
 
 ## Content Architecture
+
+### The book: `src/lib/data/book/` (single source of truth)
+
+Book text lives in `src/lib/data/book/`, one `.md` per section, with `book.json`
+setting the running order. **Edit there and nowhere else.** The website, the EPUB,
+the PDFs and the `manuscript/` snapshots are all generated from it and overwritten
+on the next build. Never hand-edit an output to correct book text, and never hand
+the user a list of stale outputs as if they were files to fix: fix the source, then
+rebuild.
+
+Full rules, including the `book.json` gate and the three ways people get this
+wrong, live in ONE place: the **"Book content: the single source of truth"**
+section of `README.md`. Read it before touching book content. Do not restate it
+here; two copies of a rule is the problem it exists to prevent.
+
+### Blueprint and blog
+
 Blueprint content lives in `src/lib/data/blueprint.js` as a structured array of sections. Each section has:
 - `slug`, `number`, `title`, `subtitle`
 - `content[]` — array of blocks: `prose`, `heading`, `table`, `callout`, `directive`

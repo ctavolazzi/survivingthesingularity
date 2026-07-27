@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import BookCover from '$lib/components/BookCover.svelte';
 
   export let data;
 
@@ -520,17 +521,7 @@
 
         <div class="cta-cover">
           <div class="product-cover-glow" aria-hidden="true"></div>
-          <picture>
-            <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
-            <img
-              src="/images/surviving_the_singularity_cover_1200.png"
-              alt="Surviving the Singularity book cover"
-              width="600"
-              height="800"
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
+          <BookCover width="min(220px, 60vw)" glow={false} />
         </div>
 
         <p class="cta-sub">The book draft. The Precedent File. The readiness checklist. One payment, everything now, plus 50% off the finished book at launch.<br><br>Limited time offer. Price goes up at launch.</p>
@@ -1431,8 +1422,12 @@
     background: radial-gradient(ellipse at center, rgba(245,158,11,0.22) 0%, transparent 70%);
     filter: blur(24px); pointer-events: none;
   }
-  .cta-cover img {
-    position: relative; width: min(220px, 60vw); height: auto;
+  /* BookCover owns the art; the page keeps its own glow and its perspective
+     tilt. Neutralising the component's hover lift keeps this cover as static
+     as it has always been here. */
+  .cta-cover :global(.cover-img),
+  .cta-cover :global(.cover-wrap:hover .cover-img) {
+    position: relative;
     border-radius: 8px;
     box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(245,158,11,0.15);
     transform: perspective(1200px) rotateY(-4deg);

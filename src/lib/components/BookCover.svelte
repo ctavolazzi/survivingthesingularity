@@ -6,6 +6,15 @@
 
   /** Rendered width. Any CSS length; the aspect ratio is locked to the art. */
   export let width = '220px';
+  /**
+   * The `sizes` hint for the srcset, as an absolute CSS length (px/vw, and
+   * media conditions). It defaults to `width`, which is right whenever width
+   * is already absolute - but `sizes` forbids percentages, so a width like
+   * "100%" or "min(340px, 100%)" produces an invalid hint, the browser falls
+   * back to 100vw, and a 200px box downloads the 1200w file. Pass this
+   * explicitly whenever `width` is relative.
+   */
+  export let sizes = width;
   /** Amber halo behind the cover. Off for small inline uses. */
   export let glow = true;
   /** Slight tilt, so it reads as an object rather than a flat image. */
@@ -23,14 +32,14 @@
       srcset="/images/optimized/surviving_the_singularity_cover_400.webp 400w,
               /images/optimized/surviving_the_singularity_cover_800.webp 800w,
               /images/optimized/surviving_the_singularity_cover_1200.webp 1200w"
-      sizes="{width}"
+      sizes="{sizes}"
     />
     <img
       src="/images/surviving_the_singularity_cover_1200.png"
       srcset="/images/optimized/surviving_the_singularity_cover_400.png 400w,
               /images/optimized/surviving_the_singularity_cover_800.png 800w,
               /images/optimized/surviving_the_singularity_cover_1200.png 1200w"
-      sizes="{width}"
+      sizes="{sizes}"
       {alt}
       {loading}
       decoding="async"

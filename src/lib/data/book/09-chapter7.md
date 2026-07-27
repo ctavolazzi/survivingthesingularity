@@ -165,15 +165,15 @@ Then came the machine that actually took the jobs. *The Jazz Singer* opened in 1
 
 So the American Federation of Musicians did what the Luddites never could. It ran a campaign.
 
-![A 1929 newspaper advertisement headlined "Taking Liberties With Folks' Habits," showing a large robot shouldering aside a weeping cherub at a harp while a dog howls, above columns of argument signed by the American Federation of Musicians](/book-images/ch07-canned-music-1929.jpg)
+![A robot shoulders aside a weeping cherub at a harp while a dog howls at it](/book-images/ch07-canned-music-1929.jpg)
 
-*Exhibitors Herald-World, November 16, 1929. "Is the Robot such good company he can 'hog the whole show?'"*
+*Exhibitors Herald-World, November 16, 1929. The union asks whether the Robot is good enough company to hog the whole show.*
 
 Starting in the autumn of 1929 the union bought advertisements in newspapers across the United States and Canada, and by 1930 had organized the effort into an enrollment vehicle with a name built for the age: the Music Defense League. The union put more than half a million Depression-era dollars behind it. And it chose, as the face of the enemy, a robot.
 
 Not a metaphor. A drawn mechanical man, week after week, in hundreds of papers: shoving a harpist aside, hoisting a banner reading CANNED MUSIC IN THEATERS over a gathering of muses, grinding instruments through a meat grinder, failing to soothe a baby. The copy is worth reading closely, because you have read it recently. "Dehumanizing the theatre may prove to be an exceedingly dangerous move." "The Robot is a bulging, pushing sort, quite impervious to audience reactions." "Tho' the Robot can make no music of himself, he can and does arrest the efforts of those who can." And the coupon at the bottom of the page, which readers were invited to clip and mail to 1440 Broadway, asking to be enrolled "as one who is opposed to the elimination of Living Music from the Theatre."
 
-![A 1930 newspaper advertisement headlined "Is the Robot Fooling YOU?", showing a robot among classical muses holding a banner reading CANNED MUSIC IN THEATERS, with a mail-in coupon enrolling the reader in the Music Defense League](/book-images/ch07-canned-music-1930.jpg)
+![A robot stands among classical muses holding a banner reading CANNED MUSIC IN THEATERS](/book-images/ch07-canned-music-1930.jpg)
 
 *Exhibitors Herald-World, May 17, 1930. The union claimed two million enrollments by that spring. Note the coupon.*
 

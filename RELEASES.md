@@ -5,7 +5,49 @@ currently claims; this file records which build is the one to hand someone.
 
 ---
 
-## Latest build: v0.7.2 — the cover build
+## Latest build: v0.7.4 — the canned music build
+
+| | |
+|---|---|
+| **Version** | `0.7.4` |
+| **Built** | 2026-07-27 12:53 |
+| **From commit** | `23612ef` "v0.7.4: the canned music campaign, with the robot ads", plus the alt-text trim that follows it |
+| **Sections** | 30 |
+| **Pages** | 289 (v0.7.2 was 277) |
+| **Words** | 90,591 |
+| **Precedents** | 23 (was 22) |
+| **Formats** | PDF 22 MB · EPUB 21 MB |
+
+**What changed from v0.7.2.** v0.7.3 was never built as a release artifact; its content
+(the seventeen definitions pass, the P-19 page-count correction, and the rest of that
+cycle) ships inside this build, which is why the ledger jumps from v0.7.2 to v0.7.4. See
+`V0.7.3-SCOPE.md` and `V0.7.4-SCOPE.md` for both cycles.
+
+The headline addition is **Precedent P-10, "The Robot in the Orchestra Pit,"** in
+Chapter 7, and the two 1929 and 1930 American Federation of Musicians advertisements it
+reproduces. These are the first primary-source documents printed as figures in this book
+rather than illustrations, so two things about them are worth recording here:
+
+1. **They were read before they were used.** Both were located by full-text search of the
+   Media History Digital Library and then rendered as page scans and looked at, to confirm
+   each is the advertisement itself and not trade-press coverage of it. Every line quoted
+   in the chapter is transcribed off the scan.
+2. **Rights are recorded, not assumed.** Both pages are US public domain by date (1929
+   page since 1 Jan 2025, 1930 page since 1 Jan 2026), and `credits.json` names the issue,
+   the page, the archive URL, and the fact that the files were cropped and converted to
+   grayscale.
+
+**Note for the next build:** figure alt text renders as a visible caption line above the
+italic caption, in both the PDF and the EPUB. That is the established pattern, so keep alt
+text to a single short descriptive line. The first v0.7.4 build had three-line alt text on
+the ads and it read as a wall; it was trimmed and rebuilt before this entry was written.
+
+**Not done in this build:** `static/downloads/` was not swapped and nothing was merged to
+main. Production still serves the older file. That swap is CT's call.
+
+---
+
+## Previous build: v0.7.2 — the cover build
 
 | | |
 |---|---|

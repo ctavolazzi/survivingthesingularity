@@ -6,7 +6,7 @@
   "totals": {
     "sections": 30,
     "blocks": 2065,
-    "words": 91805
+    "words": 91840
   },
   "sections": [
     {
@@ -4638,7 +4638,7 @@
       "title": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)",
       "file": "06-chapter4.md",
       "next_ordinal": 55,
-      "words": 2304,
+      "words": 2311,
       "tombstones": [],
       "blocks": [
         {
@@ -5106,9 +5106,9 @@
             90,
             90
           ],
-          "words": 8,
-          "hash": "27a65d512fcf",
-          "preview": "> **P(base reality | simulations exist) = 1 / (N-sim + 1)**"
+          "words": 13,
+          "hash": "f46c2c8a0306",
+          "preview": "> $$P(\\text{base reality} \\mid \\text{simulations exist}) = 1 / (N_{\\text{sim}} + 1)$$"
         },
         {
           "id": "sts.chapter4.b0043",
@@ -5117,9 +5117,9 @@
             92,
             92
           ],
-          "words": 30,
-          "hash": "bfbd20174fc8",
-          "preview": "One real world, N-sim fake ones, and you are equally likely to be in any of them. If simul"
+          "words": 32,
+          "hash": "dc238d28887c",
+          "preview": "One real world, $N_{\\text{sim}}$ fake ones, and you are equally likely to be in any of the"
         },
         {
           "id": "sts.chapter4.b0044",
@@ -7961,7 +7961,7 @@
       "title": "Chapter 8: The Psychology of the Collapse",
       "file": "10-chapter8.md",
       "next_ordinal": 190,
-      "words": 6144,
+      "words": 6172,
       "tombstones": [
         "sts.chapter8.b0070",
         "sts.chapter8.b0111",
@@ -8486,8 +8486,8 @@
             94,
             94
           ],
-          "words": 33,
-          "hash": "ef2a2e8c9407",
+          "words": 37,
+          "hash": "4242709199cc",
           "preview": "Here's a back-of-the-envelope model, an accounting identity rather than a law of physics, "
         },
         {
@@ -8497,9 +8497,9 @@
             96,
             96
           ],
-          "words": 4,
-          "hash": "ffa6b635b715",
-          "preview": "> **E_cognitive = E_total - E_maintenance - E_locomotion**"
+          "words": 12,
+          "hash": "d74a89f6d956",
+          "preview": "> $$E_{\\text{cognitive}} = E_{\\text{total}} - E_{\\text{maintenance}} - E_{\\text{locomotion"
         },
         {
           "id": "sts.chapter8.b0087",
@@ -8519,9 +8519,9 @@
             100,
             101
           ],
-          "words": 34,
-          "hash": "d42d6ba9306b",
-          "preview": "- E_maintenance is the involuntary thermodynamic cost of keeping your organs functioning, "
+          "words": 36,
+          "hash": "eacd57acdb45",
+          "preview": "- $E_{\\text{maintenance}}$ is the involuntary thermodynamic cost of keeping your organs fu"
         },
         {
           "id": "sts.chapter8.b0048",
@@ -8622,7 +8622,7 @@
             119
           ],
           "words": 34,
-          "hash": "04c492609d91",
+          "hash": "3715c146a5c1",
           "preview": "Again, not willpower. It's a mathematical trap built to exploit your dopaminergic reward s"
         },
         {
@@ -8633,8 +8633,8 @@
             121
           ],
           "words": 8,
-          "hash": "e6c48f8a4bf1",
-          "preview": "> **H(X) = -Σ P(x_i) log₂ P(x_i)**"
+          "hash": "bd9a41fe003a",
+          "preview": "> $$H(X) = -\\sum P(x_i) \\log_2 P(x_i)$$"
         },
         {
           "id": "sts.chapter8.b0101",
@@ -8644,8 +8644,8 @@
             123
           ],
           "words": 29,
-          "hash": "c9edc1fc79e4",
-          "preview": "Where P(x_i) is the probability of the next piece of content being a specific thing: an in"
+          "hash": "3a2bdbbfb199",
+          "preview": "Where $P(x_i)$ is the probability of the next piece of content being a specific thing: an "
         },
         {
           "id": "sts.chapter8.b0058",
@@ -9340,8 +9340,8 @@
             260,
             260
           ],
-          "words": 23,
-          "hash": "a7ad5093d784",
+          "words": 25,
+          "hash": "b93033cc0bb5",
           "preview": "Every physical system requires maintenance. The energy required to maintain your Autonomou"
         },
         {
@@ -9362,9 +9362,9 @@
             264,
             264
           ],
-          "words": 4,
-          "hash": "1b9480033376",
-          "preview": "> **E_expended = E_metabolic + E_maintenance + E_defense**"
+          "words": 12,
+          "hash": "a089dd25366a",
+          "preview": "> $$E_{\\text{expended}} = E_{\\text{metabolic}} + E_{\\text{maintenance}} + E_{\\text{defense"
         },
         {
           "id": "sts.chapter8.b0141",
@@ -9373,9 +9373,9 @@
             266,
             266
           ],
-          "words": 47,
-          "hash": "d13a3ead9e8e",
-          "preview": "When E_expended exceeds your daily caloric and cognitive intake, your system enters a stat"
+          "words": 49,
+          "hash": "dcca2024211a",
+          "preview": "When $E_{\\text{expended}}$ exceeds your daily caloric and cognitive intake, your system en"
         },
         {
           "id": "sts.chapter8.b0142",
@@ -9644,9 +9644,9 @@
             316,
             316
           ],
-          "words": 3,
-          "hash": "dcb4d9395acc",
-          "preview": "> **N_cognitive limit ≈ 150**"
+          "words": 5,
+          "hash": "a419957969f4",
+          "preview": "> $$N_{\\text{cognitive limit}} ≈ 150$$"
         },
         {
           "id": "sts.chapter8.b0166",

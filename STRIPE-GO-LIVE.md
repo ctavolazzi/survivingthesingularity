@@ -60,8 +60,57 @@ Surviving the Singularity". `$5` is what the site promises on `/`, `/about`,
 **The intended price is $5** (confirmed by the author 2026-07-26). The site copy is
 correct; Stripe is wrong. Two possible causes, distinguishable only from the dashboard:
 
-1. The live Standard price object `price_1To6muCYoTMkQm81rXG6QagG` was created at $9.
-2. Production's `STRIPE_PRICE_ID_STANDARD` points at some other live price that is $9.
+1. ~~The live Standard price object `price_1To6muCYoTMkQm81rXG6QagG` was created at $9.~~
+   **Ruled out 2026-07-26.** The live dashboard shows that price at **$5.00 USD**
+   one-time, default price on product `prod_UniDSzyaLPPGZY` ("Surviving the
+   Singularity: Pre-Order the First Edition", Active), created 6/30/26 6:53 PM. It is
+   live-mode data: price ids are mode-scoped, so a live id returns no result when
+   searched in test mode.
+
+   A price's **`unit_amount` is not updatable** in the Stripe API — you cannot edit
+   $9 into $5 — and this object has no `currency_options` entries that could carry a
+   second amount. So it was never $9.
+
+   Its log does show two `POST /v1/prices/{id}` calls after creation (7/2/26 9:34 AM and
+   **7/26/26 7:38 PM**). Those can only have touched mutable fields — `active`,
+   `nickname`, `metadata`, `tax_behavior`, `lookup_key` — never the amount. Worth
+   knowing that the 7/26 one lands about 90 minutes before production was observed back
+   on test keys; if that edit was not deliberate, find out what made it.
+2. ✅ **This is the cause.** Production was pointing at some *other* live price object
+   that is $9. The $5 price was correct the whole time; the environment was aimed at
+   the wrong one.
+
+   **Prime suspect: the Author's Edition price** `price_1TogztCYoTMkQm81Nfv3uJ20` on
+   `prod_UoJdPeLmMWnpsL`. It is the other live price this project owns, it is a
+   higher-tier product, and `STRIPE_PRICE_ID` — the shared fallback that a missing
+   `STRIPE_PRICE_ID_STANDARD` silently drops through to — is exactly the kind of
+   variable that ends up pointing at it. **Check that price's unit amount first.** If it
+   reads $9, the whole incident is explained and no unknown price object is loose in the
+   catalog.
+
+### The silent fallback that makes cause 2 possible
+
+[src/routes/api/stripe-checkout/+server.js](src/routes/api/stripe-checkout/+server.js)
+resolves the price as:
+
+```js
+standard: env.STRIPE_PRICE_ID_STANDARD || PRICE_ID,   // PRICE_ID = env.STRIPE_PRICE_ID
+```
+
+If `STRIPE_PRICE_ID_STANDARD` is unset — or misspelled, or dropped during an env edit —
+checkout does not fail. It silently falls through to `STRIPE_PRICE_ID` and charges
+whatever that points at, with no error anywhere. That is a plausible mechanism for an
+$9 charge against a $5 catalog, and it will still be there at the next cutover.
+
+**Before re-cutover, decide what `STRIPE_PRICE_ID` should hold.** Either point it at the
+same $5 price so the fallback is harmless, or remove it and make a missing
+`STRIPE_PRICE_ID_STANDARD` fail loudly in production the way the mock branch already
+does. A fallback that quietly charges a different amount than the site advertises is
+worse than a 503.
+
+**Still to find:** the $9 price object itself. It is presumably still live and still
+selectable. Locate it via Payments (below) — open any $9 charge and read which price it
+used — then archive it.
 
 **To fix:** open the Stripe dashboard in **live mode** and read the unit amount on
 `price_1To6muCYoTMkQm81rXG6QagG`.

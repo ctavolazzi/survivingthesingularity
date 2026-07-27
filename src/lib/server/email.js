@@ -315,6 +315,24 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
   // (sql/009_preorder_discount_code.sql) - not itself a Stripe object.
   const masterCode = env.MASTER_DISCOUNT_CODE || 'PREORDER50';
 
+  // The personal code only exists once sql/009_preorder_discount_code.sql has
+  // run; until then fulfillPreorder retries the insert without it and passes
+  // null through. This used to render the words "Emailed separately", which
+  // nothing in this codebase does - there is no follow-up send, so it was a
+  // promise to the customer that could never be kept. Show the row only when
+  // there is a real code. The master code is the one that actually redeems, so
+  // a customer missing the personal code still has everything they need.
+  const hasPersonalCode = Boolean(discount_code);
+  const keepLine = hasPersonalCode
+    ? "Keep both of these. You'll need them when the finished book launches."
+    : "Keep this code. You'll need it when the finished book launches.";
+  const personalCodeCell = hasPersonalCode
+    ? `<td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
+            <span style="font-size:12px;color:#64748b;display:block;">Your personal code</span>
+            <strong style="font-size:18px;letter-spacing:0.08em;color:#f1f5f9;">${escapeHtml(discount_code)}</strong>
+          </td>`
+    : '';
+
   const html = `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
@@ -323,13 +341,10 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download your bundle</a>
     <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
       <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your 50% off launch discount</p>
-      <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">Keep both of these. You'll need them when the finished book launches.</p>
+      <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">${keepLine}</p>
       <table role="presentation" style="width:100%;border-collapse:collapse;">
         <tr>
-          <td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
-            <span style="font-size:12px;color:#64748b;display:block;">Your personal code</span>
-            <strong style="font-size:18px;letter-spacing:0.08em;color:#f1f5f9;">${discount_code ? escapeHtml(discount_code) : 'Emailed separately'}</strong>
-          </td>
+          ${personalCodeCell}
           <td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
             <span style="font-size:12px;color:#64748b;display:block;">Code to redeem at checkout</span>
             <strong style="font-size:18px;letter-spacing:0.08em;color:#f1f5f9;">${escapeHtml(masterCode)}</strong>

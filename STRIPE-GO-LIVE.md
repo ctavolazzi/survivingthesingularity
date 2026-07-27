@@ -1,33 +1,61 @@
 # Stripe Go-Live Checklist — Edition Prices
 
-**Status: LIVE AND TAKING REAL MONEY.** Production has been on live-mode keys since
-some point between 2026-07-13 and 2026-07-16. Local/dev is still correctly on the
-test-mode price — that part is unchanged and intentional.
-Last updated: 2026-07-26.
+**Status: BACK ON TEST-MODE KEYS. The storefront cannot take real money.**
+Production was on live-mode keys between roughly 2026-07-13 and 2026-07-26; it is not
+now. Local/dev is still correctly on the test-mode price — that part is unchanged and
+intentional.
+Last updated: 2026-07-26 (re-probed).
 
 > **Do not trust a remembered status line in this file.** It said "NOT LIVE YET" for
-> ten days after the cutover actually happened, which is how the pricing defect below
-> went unnoticed. Verify with `python3 scripts/sts.py stripe --live`, which probes
-> production directly. A `cs_live_` session id means real cards are being charged.
+> ten days after the cutover actually happened, and then said "LIVE AND TAKING REAL
+> MONEY" after production had been rolled back. Verify with
+> `python3 scripts/sts.py stripe --live`, which probes production directly. A
+> `cs_live_` session id means real cards are being charged; `cs_test_` means they
+> are not.
 
-## 🔴 Open defects in production (found 2026-07-26)
+## Verified production state (probed 2026-07-26)
 
-| # | Defect | Impact | Fix lives in |
-|---|---|---|---|
-| 1 | Live checkout charges **$9.00**; every page advertises **$5** | Customers are billed 80% over the advertised price | Stripe dashboard / prod env |
-| 2 | `/api/webhooks/stripe` returns **503** | Paid orders are silently lost when the browser doesn't reach the success page | Prod env (`STRIPE_WEBHOOK_SECRET`) |
+`python3 scripts/sts.py stripe --live`, plus a direct `POST /api/stripe-checkout` for
+both `standard` and `authors`:
 
-Neither is a code defect. `stripe-checkout/+server.js` resolves the price correctly and
-the webhook handler is written correctly; both faults are in environment/dashboard
-configuration. Do not "fix" them by editing application code.
+| Signal | Reading | Means |
+|---|---|---|
+| Checkout session id | `cs_test_…` (both editions) | Production is on **test** keys |
+| Advertised vs charged | $5.00 vs $5.00 | No price drift — the $9 defect is gone |
+| `/api/webhooks/stripe` (unsigned POST) | **400**, not 503 | `STRIPE_WEBHOOK_SECRET` **is** set |
 
-### Defect 1 — the $9 / $5 gap
+### What this means
 
-Confirmed by creating a real live checkout session against production and rendering the
-returned Stripe page: it shows `$9.00` under the line item "Preorder Surviving the
-Singularity". `$5` is what the site promises on `/`, `/about`, `/early-access` (6
-places), `/checklist`, the `/book` gate hint, the Navbar CTA, and the `og:description`
-social meta.
+The two defects logged earlier on 2026-07-26 — the $9-vs-$5 overcharge and the 503
+webhook — are **both resolved**, and the environment is now on test keys.
+
+**Whether that rollback was deliberate is unknown and was not verified.** Pulling live
+keys would be a sound deliberate response to an 80% overcharge; an accidental revert of
+the env vars would look identical from outside. Either way the consequence is the same
+and it is the thing that matters: **the store currently collects nothing.** A real
+customer reaches a test-mode Stripe page, and a real card is declined there. If the
+rollback was accidental, note that it also silently un-fixed nothing — the $9 price may
+still be waiting on the live price object.
+
+So this is no longer a defect list. It is a **re-cutover**: the remaining work is to put
+live keys back with the price verified at $5 *before* they go in, so the overcharge
+cannot recur. See "Re-cutover checklist" below.
+
+None of this is a code defect. `stripe-checkout/+server.js` resolves the price correctly
+and the webhook handler is written correctly; every fault so far has been in
+environment/dashboard configuration. Do not "fix" them by editing application code.
+
+### History: the $9 / $5 gap (live window 2026-07-13 → 2026-07-26)
+
+**No longer reproducible** — production now charges $5, matching the site. Kept because
+the cause was never identified from the dashboard, so it can recur the moment live keys
+go back in. Read this before re-cutting over.
+
+As observed while live: creating a real live checkout session against production and
+rendering the returned Stripe page showed `$9.00` under the line item "Preorder
+Surviving the Singularity". `$5` is what the site promises on `/`, `/about`,
+`/early-access` (6 places), `/checklist`, the `/book` gate hint, the Navbar CTA, and the
+`og:description` social meta.
 
 **The intended price is $5** (confirmed by the author 2026-07-26). The site copy is
 correct; Stripe is wrong. Two possible causes, distinguishable only from the dashboard:
@@ -54,15 +82,22 @@ disagree.
 filtered to since the cutover. Any successful $9 payment is a customer owed a $4 refund
 and an apology.
 
-### Defect 2 — the missing webhook secret
+### Resolved: the missing webhook secret
 
-`POST /api/webhooks/stripe` on production returns 503. In
+`POST /api/webhooks/stripe` now answers an unsigned POST with **400** (missing
+signature). In
 [src/routes/api/webhooks/stripe/+server.js](src/routes/api/webhooks/stripe/+server.js)
-that status is returned from exactly one branch — `if (!stripe || !WEBHOOK_SECRET)`.
-Checkout works, so `STRIPE_SECRET_KEY` is set; the missing variable is
-`STRIPE_WEBHOOK_SECRET`. Follow step 3 of the cutover procedure below to register the
-live endpoint and set the secret. A correctly configured endpoint answers an unsigned
-POST with **400** (missing signature), not 503.
+the old 503 came from exactly one branch — `if (!stripe || !WEBHOOK_SECRET)` — so a 400
+proves both `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` are set and signature
+verification is running.
+
+> ⚠️ **This does not carry over to live mode.** Stripe signing secrets are per-endpoint
+> *and* per-mode. Production is on test keys, so the `whsec_…` currently set is almost
+> certainly the **test-mode** endpoint's. Re-cutting over to live keys without also
+> swapping in the **live** endpoint's signing secret puts the webhook straight back into
+> silent failure — except worse than a 503: every real Stripe delivery would fail
+> signature verification with a 400, and Stripe would retry and then give up. Treat
+> "webhook secret is set" as mode-specific, never as done.
 
 **Launch scope:** going live with the Standard Edition only. The Author's Edition
 toggle was removed from the UI in the single-offer cut (2026-07-12); the price ID
@@ -90,12 +125,40 @@ that calls it right now.
 
 These are also kept as commented lines in `.env`.
 
+## Re-cutover checklist
+
+Production is on **test** keys (verified 2026-07-26). Work these in order. Do not skip
+step 0 — it is the step whose absence caused the overcharge.
+
+- [ ] **0. Verify the live price reads $5 BEFORE any key goes in.** Stripe dashboard,
+      **live mode**, open `price_1To6muCYoTMkQm81rXG6QagG`. If it is not $5.00 USD
+      one-time, create a new live price at $5.00 on product `prod_UniDSzyaLPPGZY`,
+      archive the wrong one, and use the new id below. Prices are immutable — you cannot
+      edit $9 into $5.
+- [ ] **1. Audit the previous live window for overcharges.** Stripe → Payments, live
+      mode, 2026-07-13 → 2026-07-26. Every successful $9 payment is a customer owed a $4
+      refund and an apology. Do this even if the answer is zero, and write the number
+      down here.
+- [ ] **2. Set the live env vars** in Cloudflare (see step 1 of the procedure below).
+- [ ] **3. Register the LIVE webhook endpoint** and set its own `whsec_…` — the
+      test-mode secret currently in place will not verify live traffic. See the warning
+      under "Resolved: the missing webhook secret".
+- [ ] **4. Run the two Supabase migrations** (`sql/008`, `sql/009`) — see "Still
+      outstanding" below.
+- [ ] **5. Create `PREORDER50` in live mode** — it exists only in test mode.
+- [ ] **6. Re-probe:** `python3 scripts/sts.py stripe --live` must report `mode live`,
+      webhook configured, and no price drift.
+- [ ] **7. One real purchase with a real card**, then confirm every downstream effect
+      (steps 4–5 of the procedure below).
+
 ## Cutover procedure
 
-Steps 1 and 2 are **done** — production is live and the mock branch is correctly gated.
-Step 3 is **not done** (defect 2 above). Steps 4–6 remain unverified.
+Reference detail for the checklist above. Step 2 (mock gating) is a permanent code
+property and stays done. Every other step must be redone for the re-cutover, because
+production was rolled back to test keys.
 
-1. ✅ In the production host's environment (Vercel/Cloudflare/etc.), set:
+1. ⬜ In the production host's environment (**Cloudflare** — confirmed from response
+   headers; adapter-auto resolves to the Cloudflare adapter), set:
    - `STRIPE_SECRET_KEY` → the **live-mode** key
    - `STRIPE_PRICE_ID_STANDARD=price_1To6muCYoTMkQm81rXG6QagG`
    - `STRIPE_PRICE_ID_AUTHORS=price_1TogztCYoTMkQm81Nfv3uJ20` (kept set even though
@@ -105,8 +168,8 @@ Step 3 is **not done** (defect 2 above). Steps 4–6 remain unverified.
    production. Resolved by **gating rather than removing**: the branch still exists but
    is wrapped in `if (!dev)` so production returns a 503 instead of faking a successful
    checkout. `sts.py stripe` asserts this on every run.
-3. ❌ **Register the live webhook** — NOT DONE. This is defect 2 above; production
-   currently 503s here.
+3. ⬜ **Register the live webhook.** A secret is set today, but for test mode — see the
+   warning above. This must be redone against the live-mode endpoint.
    - Stripe Dashboard → Developers → Webhooks → Add endpoint →
      `https://survivingthesingularity.com/api/webhooks/stripe`
    - Events: `checkout.session.completed` and `checkout.session.async_payment_succeeded`
@@ -129,16 +192,22 @@ Do NOT change component code for the cutover — edition selection and linking a
 wired; the switch is environment-variable-only (plus removing the mock branch and
 registering the webhook above).
 
-## Still outstanding while live (found in the 2026-07-13 pre-flight sweep, unverified since)
+## Still outstanding (found in the 2026-07-13 pre-flight sweep, unverified since)
 
-These were "before go-live" items. Go-live happened without them, so they are now
-running gaps on a live storefront rather than pre-launch chores. None has been verified
-against the live project — checking requires Supabase and live-Stripe dashboard access.
+These were "before go-live" items. The first cutover happened without them; they are
+still not done. None has been verified against the live project — checking requires
+Supabase and live-Stripe dashboard access.
 
 - Run `sql/008_discord_applications.sql` in the Supabase SQL Editor. The
   `discord_applications` table doesn't exist on the live project yet, so the
   Discord application form on `/checklist` currently returns a clean "not wired up
   yet" message instead of crashing, but it still doesn't work until this runs.
+  **Note (2026-07-26):** this file was referenced by this doc, by `SITEMAP.md`, and by
+  `009`'s own header, but had never actually been written — it was absent from the
+  working tree *and* from all of git history. It now exists. Migrations `001`, `003`,
+  `004`, `006`, `007` are still missing from `sql/`, so the directory cannot rebuild a
+  Supabase project from scratch; the live schema is currently the only source of truth
+  for those.
 - Run `sql/009_preorder_discount_code.sql` in the Supabase SQL Editor. Preorders
   work fine without it (the insert falls back gracefully), but each customer's
   personal discount code won't be generated or shown in their email until it runs.

@@ -20,7 +20,14 @@ cloudflare_logs/Discord.dmg
 
 # Supabase files (for security reasons)
 /supabase/
+# Blanket-ignore .sql so a stray database dump (which would contain real
+# customer rows) can never be committed by accident...
 *.sql
+# ...but sql/ holds schema migrations, not data. They must be version-controlled:
+# this rule previously swallowed 001, 003, 004, 006 and 008 silently, leaving the
+# directory unable to rebuild a Supabase project from scratch. Dumps still get
+# ignored anywhere else in the tree.
+!sql/*.sql
 
 # Scripts and sensitive directories (for security reasons)
 /cursor/

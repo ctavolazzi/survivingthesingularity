@@ -3,6 +3,7 @@
   import { browser } from '$app/environment';
   import EmailGate from '$lib/components/EmailGate.svelte';
   import DiscordApplication from '$lib/components/DiscordApplication.svelte';
+  import BookCover from '$lib/components/BookCover.svelte';
 
   const categories = {
     foundation:     { label: 'Foundation',     color: '#f59e0b', desc: 'Understand your actual situation before you change anything.' },
@@ -342,12 +343,9 @@
       <p class="cl-book-sales-eyebrow">The book behind this checklist</p>
       <h3 class="cl-book-sales-title">Surviving the Singularity</h3>
 
-      <img
-        src="/images/surviving_the_singularity_cover_1200.png"
-        alt="Surviving the Singularity book cover"
-        class="cl-book-sales-cover"
-        loading="lazy"
-      />
+      <div class="cl-book-sales-cover">
+        <BookCover width="100%" sizes="(max-width: 640px) 80px, 200px" glow={false} />
+      </div>
 
       <ul class="cl-book-sales-parts">
         <li><span class="cl-book-part-label">Part I</span> What's happening. The nine stages of AI scaling.</li>
@@ -1055,10 +1053,13 @@
     text-transform: uppercase; letter-spacing: 0.14em;
     color: #f59e0b; margin: 0;
   }
+  /* Wrapper sizes the cover; BookCover draws it (correct 1410x2056 intrinsic
+     size and a real srcset, so this 200px box stops pulling the 1.1MB PNG). */
   .cl-book-sales-cover {
-    display: block;
     width: min(200px, 55%);
     margin: 0 auto;
+  }
+  .cl-book-sales-cover :global(.cover-img) {
     border-radius: 6px;
     box-shadow: 0 20px 48px rgba(0,0,0,0.7), 0 4px 12px rgba(0,0,0,0.4);
   }

@@ -1,5 +1,6 @@
 <script>
   import { page } from '$app/stores';
+  import BookCover from '$lib/components/BookCover.svelte';
 
   let checkoutLoading = false;
   let checkoutError = '';
@@ -47,16 +48,12 @@
     <div class="ea-cover-col">
       <div class="ea-cover-wrap">
         <div class="ea-cover-glow" aria-hidden="true"></div>
-        <picture>
-          <source srcset="/images/optimized/surviving_the_singularity_cover_1200_original.webp" type="image/webp" />
-          <img
-            src="/images/surviving_the_singularity_cover_1200.png"
-            alt="Surviving the Singularity book cover"
-            class="ea-cover-img"
-            width="600"
-            height="800"
-          />
-        </picture>
+        <BookCover
+          width="min(340px, 100%)"
+          sizes="(max-width: 400px) 90vw, 340px"
+          glow={false}
+          loading="eager"
+        />
         <div class="ea-cover-badge">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
             <circle cx="6" cy="6" r="6" fill="#f59e0b" opacity="0.2"/>
@@ -332,9 +329,12 @@
     background: radial-gradient(ellipse at center, rgba(245,158,11,0.25) 0%, transparent 70%);
     filter: blur(20px); z-index: 0; pointer-events: none;
   }
-  .ea-cover-img {
+  /* BookCover draws the art; the page keeps its own glow and badge, so the
+     component's glow is off and its hover lift is neutralised to preserve the
+     static perspective tilt this hero has always had. */
+  .ea-cover-wrap :global(.cover-img),
+  .ea-cover-wrap :global(.cover-wrap:hover .cover-img) {
     position: relative; z-index: 1;
-    width: min(340px, 100%); height: auto;
     border-radius: 8px;
     box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(245,158,11,0.15);
     transform: perspective(1200px) rotateY(4deg);

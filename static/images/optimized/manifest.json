@@ -902,7 +902,7 @@
   "static/Surviving-the-Singularity-Cover.png": {
     "original": {
       "width": 1410,
-      "height": 2250,
+      "height": 2056,
       "path": "static/Surviving-the-Singularity-Cover.png"
     },
     "webp": {
@@ -1002,7 +1002,7 @@
   "static/images/Surviving-the-Singularity-Cover.png": {
     "original": {
       "width": 1410,
-      "height": 2250,
+      "height": 2056,
       "path": "static/images/Surviving-the-Singularity-Cover.png"
     },
     "webp": {
@@ -1443,6 +1443,30 @@
       }
     }
   },
+  "static/images/og/exclusive-friends-only.png": {
+    "original": {
+      "width": 2400,
+      "height": 1260,
+      "path": "static/images/og/exclusive-friends-only.png"
+    },
+    "webp": {
+      "original": "static/images/optimized/exclusive_friends_only_original.webp"
+    },
+    "variants": {
+      "400": {
+        "original": "static/images/optimized/exclusive_friends_only_400.png",
+        "webp": "static/images/optimized/exclusive_friends_only_400.webp"
+      },
+      "800": {
+        "original": "static/images/optimized/exclusive_friends_only_800.png",
+        "webp": "static/images/optimized/exclusive_friends_only_800.webp"
+      },
+      "1200": {
+        "original": "static/images/optimized/exclusive_friends_only_1200.png",
+        "webp": "static/images/optimized/exclusive_friends_only_1200.webp"
+      }
+    }
+  },
   "static/images/blog/whispers-ai-featured.png": {
     "original": {
       "width": 1536,
@@ -1879,7 +1903,7 @@
   "src/lib/images/Surviving-the-Singularity-Cover.png": {
     "original": {
       "width": 1410,
-      "height": 2250,
+      "height": 2056,
       "path": "src/lib/images/Surviving-the-Singularity-Cover.png"
     },
     "webp": {

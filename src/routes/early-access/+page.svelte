@@ -30,10 +30,10 @@
 
 <svelte:head>
   <title>Preorder the Book | Surviving the Singularity</title>
-  <meta name="description" content="Preorder for $5. Get the current book draft, research bundle, and a locked-in spot before the general public. Expected launch 2026." />
+  <meta name="description" content="Preorder for $5. Get the current book draft, The Precedent File, and a locked-in spot before the general public. Expected launch 2026." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Preorder the Book | Surviving the Singularity" />
-  <meta property="og:description" content="Preorder for $5. Get the current book draft, research bundle, and a locked-in spot before the general public. Expected launch 2026." />
+  <meta property="og:description" content="Preorder for $5. Get the current book draft, The Precedent File, and a locked-in spot before the general public. Expected launch 2026." />
   <meta property="og:image" content="{$page.url.origin}/Surviving-the-Singularity-Cover.png" />
   <meta property="og:url" content="{$page.url.href}" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -78,11 +78,11 @@
         Preorder the book.<br><span class="ea-amber">Get the bundle now.</span>
       </h1>
       <p class="ea-sub">
-        $5 gets you the current book draft, the research bundle, and a 50% discount at launch.
+        $5 gets you the current book draft, The Precedent File, and a 50% discount at launch.
       </p>
       <p class="ea-sub ea-sub-label">You get:</p>
       <ul class="ea-hero-list">
-        <li>The research bundle delivered to your inbox today</li>
+        <li>The Precedent File delivered to your inbox today</li>
         <li>The current book draft</li>
         <li>Exclusive link to buy the finished book at 50% off at launch</li>
       </ul>
@@ -237,8 +237,8 @@
           </svg>
         </div>
         <div class="ea-item-body">
-          <div class="ea-item-name">Research Bundle</div>
-          <div class="ea-item-desc">The complete current book draft as a PDF and an EPUB, plus the readiness checklist and the key research sources behind it. Delivered to your inbox the moment payment clears.</div>
+          <div class="ea-item-name">The Precedent File</div>
+          <div class="ea-item-desc">29 documented cases of people meeting a machine that changed everything, with every source so you can check the work. Plus the complete current book in PDF and EPUB, the Municipal Autonomy Code, and the cover art. Delivered to your inbox the moment payment clears.</div>
           <span class="ea-tag ea-tag-live">Included</span>
         </div>
       </div>
@@ -276,7 +276,7 @@
       Early access pricing
     </p>
     <h2 class="ea-bottom-heading">Preorder now.<br>Don't wait.</h2>
-    <p class="ea-bottom-sub">$5 today. Research bundle in your inbox now. When the book launches, I'll email you an exclusive link at 50% off.</p>
+    <p class="ea-bottom-sub">$5 today. The Precedent File in your inbox now. When the book launches, I'll email you an exclusive link at 50% off.</p>
     <button class="ea-bottom-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
       {checkoutLoading ? 'Redirecting...' : 'Preorder Now: $5'}
     </button>

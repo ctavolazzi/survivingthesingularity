@@ -334,7 +334,7 @@
           <ul class="middle-offer-list">
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The readiness checklist: concrete moves, ordered by impact</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Full blueprint, all chapters</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Research bundle: the papers and sources behind the book</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>The Precedent File: 29 documented cases, with every source</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Book draft, updated as it's written</li>
           </ul>
           <a href="/early-access" class="middle-btn">Preorder the book: $5</a>
@@ -533,7 +533,7 @@
           </picture>
         </div>
 
-        <p class="cta-sub">The book draft. The research bundle. The readiness checklist. One payment, everything now, plus 50% off the finished book at launch.<br><br>Limited time offer. Price goes up at launch.</p>
+        <p class="cta-sub">The book draft. The Precedent File. The readiness checklist. One payment, everything now, plus 50% off the finished book at launch.<br><br>Limited time offer. Price goes up at launch.</p>
 
         <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
           Preorder the Book: $5

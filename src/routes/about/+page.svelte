@@ -60,7 +60,7 @@
         </div>
         <div class="provide-item">
           <h3>Early Access</h3>
-          <p>$5 gets you the full draft, the research bundle, and 50% off the finished book when it ships.</p>
+          <p>$5 gets you the full draft, The Precedent File, and 50% off the finished book when it ships.</p>
           <a href="/early-access" class="provide-link">Get early access</a>
         </div>
         <div class="provide-item">

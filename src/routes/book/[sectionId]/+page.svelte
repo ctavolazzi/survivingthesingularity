@@ -1,6 +1,7 @@
 <script>
-  import { marked } from 'marked';
+  import { renderMarkdown } from '$lib/utils/bookMarkdown';
   import { onMount } from 'svelte';
+  import 'katex/dist/katex.min.css';
   import { page } from '$app/stores';
   import { safeGoto } from '$lib/utils/navigation';
   import { bookPage } from '$lib/stores/bookPage';
@@ -30,11 +31,11 @@
     let match;
     while ((match = INTERACTIVE_MARKER.exec(rest))) {
       const before = rest.slice(0, match.index);
-      if (before.trim()) segments.push({ type: 'html', value: marked(before) });
+      if (before.trim()) segments.push({ type: 'html', value: renderMarkdown(before) });
       segments.push({ type: 'component', id: match[1] });
       rest = rest.slice(match.index + match[0].length);
     }
-    if (rest.trim()) segments.push({ type: 'html', value: marked(rest) });
+    if (rest.trim()) segments.push({ type: 'html', value: renderMarkdown(rest) });
     return segments;
   }
 
@@ -569,6 +570,38 @@
     font-style: italic;
     margin: 0;
     text-shadow: none;
+  }
+
+  /* Math. The equations live inside in-body blockquotes so they keep the
+     amber callout treatment above - these rules just stop the callout's
+     italic/text-shadow from leaking into KaTeX's own typesetting. */
+  :global(.chapter-article .katex) {
+    font-style: normal;
+    text-shadow: none;
+    color: #f1f5f9;
+  }
+  /* Long equations (ch13's section-modulus line is the worst) scroll inside
+     the callout rather than widening the page on a phone. */
+  :global(.chapter-article .katex-display) {
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.35rem 0;
+  }
+  /* The degraded form when KaTeX cannot parse a span: the plain variable
+     text, delimiters stripped, which is what the page already looked like
+     before any of this. Monospace so it does not masquerade as prose. */
+  :global(.chapter-article .math-fallback) {
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 0.95em;
+    color: #f1f5f9;
+  }
+  :global(.chapter-article .math-fallback-display) {
+    display: block;
+    text-align: center;
+    padding: 0.35rem 0;
+    overflow-x: auto;
   }
 
   :global(.chapter-article h2) {

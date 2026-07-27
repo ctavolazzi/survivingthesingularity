@@ -42,6 +42,7 @@
 		"flowbite-svelte-icons": "^1.6.1",
 		"gray-matter": "^4.0.3",
 		"isomorphic-dompurify": "^3.16.0",
+		"katex": "^0.16.47",
 		"marked": "^14.1.1",
 		"papaparse": "^5.4.1",
 		"pdfjs-dist": "^4.6.82",

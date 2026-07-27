@@ -297,9 +297,13 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
   const confirmLine = isAuthors
     ? `Your Author's Limited Edition preorder is confirmed: copy #${copy_number} of 100 is reserved for you. Hand-bound, signed, and numbered by the author, and no two copies are alike. `
     : 'Your preorder is confirmed. ';
+  // Describe the bundle by what is ACTUALLY in it. This line previously promised
+  // "research PDFs, papers, images, and source documents" while the archive held
+  // four .txt files totalling 3KB and no book at all. If the bundle's contents
+  // change, change this sentence in the same commit.
   const body =
     `${confirmLine}Your spot in line is locked in at 50% off the finished book, and we will email you an exclusive link when it is ready. ` +
-    'The bundle below includes the complete current draft of the book as a PDF, plus the research PDFs, papers, images, and source documents behind it.';
+    'The bundle below has the complete current draft as a PDF and an EPUB, plus the readiness checklist and the key research sources behind the book.';
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.

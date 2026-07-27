@@ -52,7 +52,7 @@
         </div>
         <div>
           <p class="download-name">Research Bundle</p>
-          <p class="download-meta">PDFs, papers, images, source documents</p>
+          <p class="download-meta">Draft PDF + EPUB, checklist, research sources</p>
         </div>
       </div>
 

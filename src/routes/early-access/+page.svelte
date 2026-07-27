@@ -238,7 +238,7 @@
         </div>
         <div class="ea-item-body">
           <div class="ea-item-name">Research Bundle</div>
-          <div class="ea-item-desc">The complete current book draft as a PDF, plus the papers, images, and source documents behind it. Delivered to your inbox the moment payment clears.</div>
+          <div class="ea-item-desc">The complete current book draft as a PDF and an EPUB, plus the readiness checklist and the key research sources behind it. Delivered to your inbox the moment payment clears.</div>
           <span class="ea-tag ea-tag-live">Included</span>
         </div>
       </div>

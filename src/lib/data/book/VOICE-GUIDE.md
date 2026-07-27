@@ -143,7 +143,7 @@ Every section from Preface through Conclusion carries these, in this order:
 3. **In this chapter** bullets, in Part III. Each bullet is a claim with teeth, not a topic.
 4. **Narrative scene**, where the chapter has one.
 5. **Foundations / body**, in the register that chapter belongs to.
-6. **The Precedent block**, P-01 through P-22, in Greene register: story, then mechanism,
+6. **The Precedent block**, P-01 through P-23, in Greene register: story, then mechanism,
    then rule, then **the practice**, which is three concrete actions sized for one week.
 
 The Precedent block is the chapter's closing move. Check that yours does not duplicate a

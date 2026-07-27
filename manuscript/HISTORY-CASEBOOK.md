@@ -10,11 +10,11 @@ at the very bottom — do not let these into the book.**
 
 ---
 
-## THE PRECEDENT LEDGER (v0.0.1)
+## THE PRECEDENT LEDGER (v0.0.2)
 
 Every chapter of the book closes with a **Precedent** — a documented historical case of
 humans meeting a technological wave, told Greene/Carnegie style (story → mechanism → rule).
-IDs run P-01 → P-22 in **order of appearance in the book**, so the reader can feel the
+IDs run P-01 → P-23 in **order of appearance in the book**, so the reader can feel the
 ledger accumulate. The Ledger itself is indexed in Appendix D.
 
 | ID | Precedent | Event date | Book section | Casebook ref |
@@ -28,19 +28,20 @@ ledger accumulate. The Ledger itself is indexed in Appendix D.
 | P-07 | The Horse's Last Ledger | 1783–1960 | Ch. 5 Thermodynamics | F4 |
 | P-08 | The Grain Trap | c. 9500 BC | Ch. 6 Done Deal | F5 |
 | P-09 | The Frame-Breakers | 1811 | Ch. 7 Battle Lines | F6 |
-| P-10 | Torches of Freedom | 1929 | Ch. 8 Psychology of Collapse | F7 |
-| P-11 | The Year the Bronze Stopped | c. 1177 BC | Ch. 9 Deglobalization | F8 |
-| P-12 | The Abbot's Confession | 1492 | Ch. 10 Create Over Consume | C2 |
-| P-13 | The Quartz Heresy | 1969–1983 | Ch. 11 Tech to Your Advantage | B2 |
-| P-14 | One Hundred Sixty Acres | 1862 | Ch. 12 Land Strategy | F9 |
-| P-15 | The House That Came by Mail | 1908 | Ch. 13 Shouse Protocol | F10 |
-| P-16 | The Graveyard of the Unconvinced | 1975–2011 | Ch. 14 Long Tail | A1–A4 |
-| P-17 | The Mirror Twin | 2000s | Ch. 14 Long Tail (counter) | B1 |
-| P-18 | Twenty Million Gardens | 1943–44 | Ch. 15 Reclaiming Soil | F11 |
-| P-19 | Forty-Seven Pages | 1776 | Ch. 16 Digital Leverage | F12 |
-| P-20 | Access to Tools | 1968 | Ch. 17 Tools of the Trade | F13 |
-| P-21 | The Apocalypse That Ran On Time | 1999 | Ch. 18 Premortem Pivot | G2 |
-| P-22 | The Passing Fad | 1995–2000 | Conclusion | G3 |
+| P-10 | The Robot in the Orchestra Pit | 1929–1948 | Ch. 7 Battle Lines | C3 |
+| P-11 | Torches of Freedom | 1929 | Ch. 8 Psychology of Collapse | F7 |
+| P-12 | The Year the Bronze Stopped | c. 1177 BC | Ch. 9 Deglobalization | F8 |
+| P-13 | The Abbot's Confession | 1492 | Ch. 10 Create Over Consume | C2 |
+| P-14 | The Quartz Heresy | 1969–1983 | Ch. 11 Tech to Your Advantage | B2 |
+| P-15 | One Hundred Sixty Acres | 1862 | Ch. 12 Land Strategy | F9 |
+| P-16 | The House That Came by Mail | 1908 | Ch. 13 Shouse Protocol | F10 |
+| P-17 | The Graveyard of the Unconvinced | 1975–2011 | Ch. 14 Long Tail | A1–A4 |
+| P-18 | The Mirror Twin | 2000s | Ch. 14 Long Tail (counter) | B1 |
+| P-19 | Twenty Million Gardens | 1943–44 | Ch. 15 Reclaiming Soil | F11 |
+| P-20 | Forty-Seven Pages | 1776 | Ch. 16 Digital Leverage | F12 |
+| P-21 | Access to Tools | 1968 | Ch. 17 Tools of the Trade | F13 |
+| P-22 | The Apocalypse That Ran On Time | 1999 | Ch. 18 Premortem Pivot | G2 |
+| P-23 | The Passing Fad | 1995–2000 | Conclusion | G3 |
 
 ---
 
@@ -210,6 +211,83 @@ eulogy for the old world on the new world's presses.
 Sources: [In Praise of Scribes — Internet Archive](https://archive.org/details/inpraiseofscribe0000trit) · [Wondermark — Monk vs. the Printing Press (sourced excerpts)](https://wondermark.com/true-stuff-monk-vs-press/) · [History of Information — Trithemius on vellum](https://www.historyofinformation.com/detail.php?id=337)
 
 ---
+
+### C3. The canned music campaign (United States, 1906–1948) — P-10
+
+**Story:** The most thoroughly documented organized campaign against a technology in
+American history, run by people with a real and vanishing wage. Three acts.
+
+*Act one, the warning (1906).* John Philip Sousa publishes "The Menace of Mechanical
+Music" in *Appleton's*: recording will kill amateur music-making and atrophy the national
+voice, since "the vocal cord will be eliminated by a process of evolution, as was the tail
+of man when he came from the ape." He is already among the most-recorded artists on Earth
+and keeps recording for another twenty-five years. The essay is also lobbying for what
+became the 1909 Copyright Act's mechanical royalty, which he got. See also D4.
+
+*Act two, the robot (1929–1931).* *The Jazz Singer* (1927) puts synchronized sound in
+theaters and starts emptying the orchestra pits, where tens of thousands of musicians had
+steady work. From autumn 1929 the American Federation of Musicians (Joseph N. Weber,
+president) buys newspaper advertising across the US and Canada; by 1930 the effort has a
+membership vehicle, the **Music Defense League**, and reportedly more than $500,000 behind
+it. The villain of the campaign is a literal drawn **robot**, by the illustrator Helguera:
+shoving a harpist aside, hauling a CANNED MUSIC IN THEATERS banner past the muses, grinding
+instruments in a meat grinder. Ad copy: "Is the Robot Fooling YOU?" · "Is the Robot such
+good company he can 'hog the whole show?'" · "Dehumanizing the theatre may prove to be an
+exceedingly dangerous move." · "The Robot is a bulging, pushing sort, quite impervious to
+audience reactions." · coupon: enroll me "as one who is opposed to the elimination of
+Living Music from the Theatre." The union claims 2,000,000 enrollments in May 1930 and
+2,500,000 the same week to the trade press. **Both are union claims, never audited; the
+book presents them as claims.** The orchestras went anyway.
+
+*Act three, the invoice (1942–1948).* James Caesar Petrillo takes the AFM presidency in
+1940 and on August 1, 1942 bars every union musician from commercial recording. The ban
+runs to November 11, 1944, the longest work stoppage in American entertainment (Decca and
+World settle September 1943, Capitol October 11, 1943, RCA Victor and Columbia November 11,
+1944). Congress passes the **Lea Act** in 1946, universally called the Anti-Petrillo Act.
+A second ban in 1948 settles December 14 and creates the **Music Performance Trust Fund**,
+paid for by a per-record royalty. Side effect nobody planned: singers were not in the
+instrumentalists' union, so they kept recording through the ban while the bands could not,
+which handed the decade to the vocalists.
+
+**Mechanism:** The AFM did everything the Luddites could not. Organized, funded, lawful,
+national, publicly sympathetic, led by people who understood the technology. None of it
+touched the outcome, because none of it was aimed at an outcome anyone could deliver: the
+public was never voting on whether recording should exist. Twenty years of arguing that
+the machine had no soul produced nothing. The single move that produced a durable
+institution was the one that stopped arguing and sent a bill.
+
+**Lesson (Greene register):** Nobody ever won by proving the machine has no soul. Stop
+arguing about the soul and start writing the invoice. The Music Performance Trust Fund is
+still running, still financed by a royalty from the major labels, now including streaming,
+and recorded music (the thing the campaign existed to stop) is how working musicians make
+their living.
+
+Sources: [Smithsonian — Musicians Wage War Against Evil Robots](https://www.smithsonianmag.com/history/musicians-wage-war-against-evil-robots-92702721/) · [AFM ad, "Taking Liberties With Folks' Habits," Exhibitors Herald-World, Nov 16 1929, p.35](https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up) · [AFM/MDL ad, "Is the Robot Fooling YOU?", Exhibitors Herald-World, May 17 1930, p.44](https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up) · ["2,500,000 Members for Music Defense League," Motion Picture News, May 17 1930, p.40](https://archive.org/details/motionnew41moti/page/n267/mode/2up) · [Sousa, "The Menace of Mechanical Music" (full text)](https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf) · [1942–1944 musicians' strike](https://en.wikipedia.org/wiki/1942%E2%80%931944_musicians%27_strike) · [James Petrillo](https://en.wikipedia.org/wiki/James_Petrillo) · [Music Performance Trust Fund](https://musicpf.org/about/)
+
+**Image rights note:** both advertisements are reproduced in the book from Media History
+Digital Library scans hosted at the Internet Archive. The 1929 page entered the US public
+domain on January 1, 2025; the 1930 page on January 1, 2026. Provenance is recorded in
+`static/book-images/credits.json`.
+
+### C4. The same campaign, later letterheads (1981–2001)
+
+Kept as a set because the book uses them as a table in Ch. 7 rather than as full cases.
+
+- **Home Taping Is Killing Music (BPI, launched 28 October 1981).** Skull-and-crossbones
+  made from a compact cassette, plus "And It's Illegal." Demand: a levy on blank tape.
+  Britain never enacted one, and recorded music sales rose across the cassette decade.
+  Punk and indie labels printed the counter-slogan on sleeves.
+- **Jack Valenti for the MPAA, 1982.** Before the House Judiciary subcommittee on courts
+  and civil liberties: "I say to you that the VCR is to the American film producer and the
+  American public as the Boston strangler is to the woman home alone." Also called the
+  technology "a great tidal wave just off the shore." *Sony v. Universal* went against him
+  5 to 4 in 1984, and by 1986 home video out-earned the American box office. The industry
+  that begged Congress to kill the VCR spent the next thirty years living on it.
+- **RIAA vs Napster, 1999–2001.** Napster was shut down. Nothing about the demand for
+  on-demand digital music was. Streaming is now the industry's revenue base.
+
+**Lesson:** three more receipts for the same rule as C3, close enough to living memory that
+a reader can check them against their own experience of how each story ended.
 
 ## D. The moral-panic lineage: "kids these days," 230 years of receipts
 
@@ -419,7 +497,7 @@ position, not against physics — the frame-breaker's hammer has never once work
 
 Sources: [Luddite — Wikipedia](https://en.wikipedia.org/wiki/Luddite) · [Frame Breaking Act / Industrial Revolution — Wikipedia](https://en.wikipedia.org/wiki/Industrial_Revolution)
 
-### F7. Torches of freedom (New York, 1929) — P-10
+### F7. Torches of freedom (New York, 1929) — P-11
 
 **Story:** In 1929 it was taboo for women to smoke in public — half the cigarette market,
 locked. So the American Tobacco Company hired Edward Bernays, Freud's nephew, who hired
@@ -438,7 +516,7 @@ version knows your pulse.
 
 Sources: [Torches of Freedom — Wikipedia](https://en.wikipedia.org/wiki/Torches_of_Freedom) · [Edward Bernays — Wikipedia](https://en.wikipedia.org/wiki/Edward_Bernays)
 
-### F8. The year the bronze stopped (c. 1177 BC) — P-11
+### F8. The year the bronze stopped (c. 1177 BC) — P-12
 
 **Story:** Late Bronze Age civilization was a globalized system: bronze required tin, and
 tin traveled thousands of miles — from sources as far as modern Afghanistan and Cornwall —
@@ -456,7 +534,7 @@ ships stop coming.
 
 Sources: [Late Bronze Age collapse — Wikipedia](https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse) · [Eric H. Cline, *1177 B.C.* — Wikipedia](https://en.wikipedia.org/wiki/1177_B.C.:_The_Year_Civilization_Collapsed)
 
-### F9. One hundred sixty acres (United States, 1862) — P-14
+### F9. One hundred sixty acres (United States, 1862) — P-15
 
 **Story:** The Homestead Act of 1862 offered 160 acres of federal land to anyone who would
 live on it and improve it for five years. It was the largest transfer of position in the
@@ -472,7 +550,7 @@ the transition, the deeds are already filed.
 
 Sources: [Homestead Acts — Wikipedia](https://en.wikipedia.org/wiki/Homestead_Acts)
 
-### F10. The house that came by mail (1908–1942) — P-15
+### F10. The house that came by mail (1908–1942) — P-16
 
 **Story:** From 1908 to 1942, Sears sold tens of thousands of entire houses out of a
 catalog — precut lumber, nails, paint, instructions, shipped by rail. A family with a
@@ -489,7 +567,7 @@ that ships as a kit.
 
 Sources: [Sears Modern Homes — Wikipedia](https://en.wikipedia.org/wiki/Sears_Modern_Homes) · [Kit house — Wikipedia](https://en.wikipedia.org/wiki/Kit_house)
 
-### F11. Twenty million gardens (United States, 1943–44) — P-18
+### F11. Twenty million gardens (United States, 1943–44) — P-19
 
 **Story:** When the war strained the food system, the US government asked amateurs to grow
 food — and roughly twenty million Victory Gardens appeared in backyards, vacant lots, and
@@ -507,7 +585,7 @@ on before, at national scale, in twenty-four months.
 
 Sources: [Smithsonian Gardens — Victory Gardens](https://gardens.si.edu/learn/blog/the-victory-garden/) · [National WWII Museum — Victory Gardens](https://www.nationalww2museum.org/war/articles/victory-gardens-world-war-ii)
 
-### F12. Forty-seven pages (Philadelphia, 1776) — P-19
+### F12. Seventy-nine pages (Philadelphia, 1776) — P-20
 
 **Story:** *Common Sense* was forty-seven pages written in plain speech by a corset-maker's
 son who had been in America barely a year. Printed in January 1776, it tore through the
@@ -524,7 +602,7 @@ empire's messaging. The press was the 1776 version; you are holding the current 
 
 Sources: [Common Sense — Wikipedia](https://en.wikipedia.org/wiki/Common_Sense)
 
-### F13. Access to tools (1968) — P-20
+### F13. Access to tools (1968) — P-21
 
 **Story:** Stewart Brand's *Whole Earth Catalog* put the NASA photo of the whole planet on
 the cover and three words under the title: **"Access to Tools."** Inside: welding rigs,
@@ -563,7 +641,7 @@ error is not years. It's orders of magnitude — in both directions.
 
 Sources: [Flying Machines Which Do Not Fly — Wikipedia](https://en.wikipedia.org/wiki/Flying_Machines_Which_Do_Not_Fly) · [Snopes fact-check: TRUE](https://www.snopes.com/fact-check/wright-brothers-first-flight/)
 
-### G2. The apocalypse that ran on time (1999) — P-21
+### G2. The apocalypse that ran on time (1999) — P-22
 
 **Story:** The Y2K bug was real: two-digit years in billions of lines of code, wired into
 banks, grids, and flight systems. The world ran history's largest premortem — roughly $300
@@ -582,7 +660,7 @@ the silence after it. The silence was the product.
 
 Sources: [Year 2000 problem — Wikipedia](https://en.wikipedia.org/wiki/Year_2000_problem) · [Britannica — Y2K bug](https://www.britannica.com/technology/Y2K-bug)
 
-### G3. The passing fad (1995–2000) — P-22
+### G3. The passing fad (1995–2000) — P-23
 
 **Story:** Three receipts, framed and hung. **February 1995, Newsweek**, Clifford Stoll —
 a genuine internet veteran — publishes "The Internet? Bah!", calling online commerce and
@@ -641,3 +719,14 @@ Sources: [Newsweek — Stoll, "Why the Web Won't Be Nirvana" (1995)](https://www
   documented praise of the telephone instead.
 - **"Everything that can be invented has been invented" (Duell, 1899)** — fabricated;
   never use.
+- **The Bavarian medical board's anti-railway decree (usually dated 1835)** — the one that
+  supposedly ruled rail travel would produce "delirium furiosum" in passengers and in
+  bystanders who merely watched a train go past, and demanded the lines be fenced. It is
+  the single most-cited example of railway technophobia on the internet and **no archival
+  record of it has ever been produced**; the wording traces to later English-language
+  retellings, not to any Bavarian document anyone cites. Excluded on the same grounds as
+  the Western Union memo. If the anti-railway beat is needed, the documented material is
+  better anyway: the canal and turnpike interests that funded the parliamentary opposition
+  to the Liverpool & Manchester bill (rejected 1825, passed 1826), and "railway spine,"
+  a genuine medical diagnosis invented for rail travel and given its standard exposition
+  in John Eric Erichsen's *On Railway and Other Injuries of the Nervous System* (1866).

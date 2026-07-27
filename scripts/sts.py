@@ -98,6 +98,14 @@ ROUTES_DIR = ROOT / "src" / "routes"
 STATIC_DIR = ROOT / "static"
 BOOK_DIR = ROOT / "src" / "lib" / "data" / "book"
 
+# How many Precedents the Ledger is supposed to contain. Asserted here on
+# purpose rather than counted from Appendix D: the whole point of the check
+# is to compare the chapters against an independent number, and deriving it
+# from the index would make the comparison a tautology. Bump it when a
+# precedent is added, and `verify precedents` will name whichever end of
+# the renumber you missed.
+LEDGER_SIZE = 23
+
 
 # ──────────────────────────────────────────────────────────────────────
 # Shared collectors
@@ -3323,7 +3331,7 @@ def verify_meta() -> list:
 
 
 def verify_precedents() -> dict:
-    """Precedent Ledger integrity: P-01..P-22, one per section, all indexed."""
+    """Precedent Ledger integrity: P-01..P-23, one per section, all indexed."""
     per_section, all_ids = {}, set()
     for f in sorted(BOOK_DIR.glob("*.md")):
         if not BOOK_SECTION_RE.match(f.name):
@@ -3338,7 +3346,7 @@ def verify_precedents() -> dict:
         if ids:
             per_section[f.name] = ids
             all_ids.update(ids)
-    expected = {f"{i:02d}" for i in range(1, 23)}
+    expected = {f"{i:02d}" for i in range(1, LEDGER_SIZE + 1)}
     appendix_d = BOOK_DIR / "25-appendix-d.md"
     indexed = set(re.findall(r"P-(\d{2})", appendix_d.read_text(encoding="utf-8")
                              )) if appendix_d.exists() else set()
@@ -3467,7 +3475,7 @@ def cmd_verify(args) -> int:
             print(f"    {p['file']}:{p['line']}  {p['detail']}")
     if "precedents" in result:
         p = result["precedents"]
-        print("\n  precedents  P-01..P-22 ledger integrity")
+        print(f"\n  precedents  P-01..P-{LEDGER_SIZE:02d} ledger integrity")
         for key, label in (("missing_from_book", "never used in any section"),
                            ("missing_from_appendix_d", "not indexed in Appendix D"),
                            ("unknown_ids", "out of range")):
@@ -3479,7 +3487,8 @@ def cmd_verify(args) -> int:
             print(f"    note   {s} carries {len(ids)}: {', '.join('P-' + i for i in ids)}")
         if not any(p[k] for k in ("missing_from_book", "missing_from_appendix_d",
                                   "unknown_ids")):
-            print("    OK     all 22 present in the book and indexed in Appendix D")
+            print(f"    OK     all {LEDGER_SIZE} present in the book "
+                  "and indexed in Appendix D")
     if "links" in result:
         lk = result["links"]
         print(f"\n  links       {lk['checked']} sources checked")

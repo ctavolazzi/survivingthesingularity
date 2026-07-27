@@ -147,7 +147,7 @@ Grab your shovel. Protect your soil. The ground is the only thing they aren't ma
 
 ---
 
-## Precedent P-18: Twenty Million Gardens (United States, 1943 to 1944)
+## Precedent P-19: Twenty Million Gardens (United States, 1943 to 1944)
 
 When the war strained the industrial food system, the United States government asked amateurs, office workers, schoolchildren, grandmothers, to grow food. Not as a symbol. As logistics.
 

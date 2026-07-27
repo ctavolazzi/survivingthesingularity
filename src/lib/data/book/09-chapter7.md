@@ -100,6 +100,25 @@ The Stage 5 backlash is not a theoretical projection; it is already empirically 
 
 While the activists defend their actions under the banner of pedestrian safety and anti-surveillance, the underlying current of the protests represents a profound neo-Luddite anxiety regarding job displacement, shifting social norms, and a loss of control to algorithmic entities. As noted by author Brian Merchant in *Blood in the Machine*, the original 19th-century Luddites were not uneducated opponents of technology, but highly skilled technologists who understood exactly how machinery would destroy their workplace autonomy and identities. The modern "rage against the robots" follows this exact historical lineage, serving as a coping mechanism for a populace feeling overwhelmed by technologies poised to permanently replace their societal utility.
 
+## The Campaign Has a Letterhead
+
+A traffic cone on a robotaxi is the hammer, and the hammer is the half of the lineage everyone recognizes. The other half is quieter, better dressed, and far better funded: the organized campaign, run by a trade body with a budget and a lawyer, against a machine that has just made its members' skills reproducible.
+
+It has been run at least six times in the last hundred and twenty years, by serious people with real grievances, and the script barely changes. Name the defect (the machine has no soul). Predict the death of the art. Buy the ads. Demand a legal remedy. Lose the argument about whether the machine exists, which was never the winnable one.
+
+| Year | Who organized it | What they called the machine | What they demanded | How it went |
+| :-- | :-- | :-- | :-- | :-- |
+| 1906 | John Philip Sousa, in *Appleton's Magazine* | "mechanical music," a "menace" | copyright control over recordings | The 1909 Copyright Act gave composers a mechanical royalty. Sousa kept recording. |
+| 1929–1931 | American Federation of Musicians, through its Music Defense League | "canned music," "the Robot" | that theaters keep live orchestras | Over $500,000 of newspaper advertising. The orchestras went anyway. |
+| 1942–1948 | AFM under James C. Petrillo | the same | royalties on records, paid to a musicians' fund | Won the royalty. Congress answered with the Lea Act, nicknamed the Anti-Petrillo Act. |
+| 1981 | British Phonographic Industry | "Home taping is killing music" | a levy on blank cassettes | Never enacted in Britain. Record sales rose through the cassette decade. |
+| 1982 | MPAA, Jack Valenti, before the House Judiciary Committee | "the Boston strangler" | the VCR banned or taxed | Lost 5 to 4 in *Sony v. Universal* (1984). By 1986 home video out-earned the box office. |
+| 1999–2001 | RIAA | piracy | Napster shut down | Napster shut down. Streaming became the industry's revenue base within fifteen years. |
+
+Three campaigns readers expect on that list are missing, and the reason is the same each time: this book only carries cases that survive a primary source. There was no organized campaign against the printing press, only one extremely eloquent abbot, and he gets his own file in Chapter 10. The famous Western Union memo calling the telephone "a toy" has never been produced by anyone and is almost certainly a fabrication. And the Bavarian medical board decree warning that rail travel at speed would induce brain disease in passengers and in bystanders who merely watched the train go by, which appears in a thousand articles about technophobia, traces to no archival record anybody has ever cited. Real history is a strong enough argument. See Appendix D on sourcing for the rest of the blacklist.
+
+What the surviving cases have in common is the part nobody quotes: in every one of them, the medium the campaign was formed to stop became, inside two decades, the primary way the people it was defending got paid.
+
 ## The Egalitarian Pivot
 
 Here is the move the battle-line framing hides, and it is the most important move in this half of the book.
@@ -133,3 +152,51 @@ Parliament's reply was the Frame Breaking Act, which made machine-wrecking a cap
 1. Install the rage-conversion rule. When the anger arrives, and it will, it is legitimate, honor it with a trade: every hour you spend furious at the machine buys one hour of building your position. Write the trade in your notebook and keep the ledger honest. The croppers' analysis was perfect and their energy went into hammers. Yours goes into welds.
 2. Negotiate your terms while you still hold leverage. The Luddites' tacit knowledge became worthless the day the frames could work without it. Yours has a similar clock. This month, write down what you know that isn't written down anywhere: the judgment calls, the failure modes, the customer knowledge. That document is either your severance leverage, your consulting practice, or your training data for a tool you own. Unwritten, it is nothing.
 3. Sort the movements before you join one. Any group organizing around the transition gets one question: "What are we building, and what terms are we demanding?" If the honest answer is only "we are expressing opposition," you have found a frame-breaking society, and you know their record. Join the ones negotiating severance structures, retraining funds, ownership stakes, and local capacity. Same anger. Different batting average.
+
+---
+
+## Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)
+
+The croppers had no negotiating table, which is the excuse history grants them. The musicians had every table there was, and used all of them, and it is the most useful failure in this book.
+
+Start with the warning shot. In 1906 John Philip Sousa, the most famous bandleader alive, published "The Menace of Mechanical Music" in *Appleton's Magazine*. Recording would kill amateur music-making, he argued, empty the parlors, and shrink the national body itself: "the vocal cord will be eliminated by a process of evolution, as was the tail of man when he came from the ape." He was not a crank. He was, by then, one of the most recorded artists on Earth, with hundreds of titles already cut, and his essay was timed to a copyright fight he mostly won. He kept recording for another quarter century.
+
+Then came the machine that actually took the jobs. *The Jazz Singer* opened in 1927, and within two years the synchronized soundtrack had begun emptying the orchestra pits of American movie theaters, where tens of thousands of musicians had made a steady living playing under silent films. This was not a forecast. It was a payroll, and it was ending.
+
+So the American Federation of Musicians did what the Luddites never could. It ran a campaign.
+
+![A 1929 newspaper advertisement headlined "Taking Liberties With Folks' Habits," showing a large robot shouldering aside a weeping cherub at a harp while a dog howls, above columns of argument signed by the American Federation of Musicians](/book-images/ch07-canned-music-1929.jpg)
+
+*Exhibitors Herald-World, November 16, 1929. "Is the Robot such good company he can 'hog the whole show?'"*
+
+Starting in the autumn of 1929 the union bought advertisements in newspapers across the United States and Canada, and by 1930 had organized the effort into an enrollment vehicle with a name built for the age: the Music Defense League. The union put more than half a million Depression-era dollars behind it. And it chose, as the face of the enemy, a robot.
+
+Not a metaphor. A drawn mechanical man, week after week, in hundreds of papers: shoving a harpist aside, hoisting a banner reading CANNED MUSIC IN THEATERS over a gathering of muses, grinding instruments through a meat grinder, failing to soothe a baby. The copy is worth reading closely, because you have read it recently. "Dehumanizing the theatre may prove to be an exceedingly dangerous move." "The Robot is a bulging, pushing sort, quite impervious to audience reactions." "Tho' the Robot can make no music of himself, he can and does arrest the efforts of those who can." And the coupon at the bottom of the page, which readers were invited to clip and mail to 1440 Broadway, asking to be enrolled "as one who is opposed to the elimination of Living Music from the Theatre."
+
+![A 1930 newspaper advertisement headlined "Is the Robot Fooling YOU?", showing a robot among classical muses holding a banner reading CANNED MUSIC IN THEATERS, with a mail-in coupon enrolling the reader in the Music Defense League](/book-images/ch07-canned-music-1930.jpg)
+
+*Exhibitors Herald-World, May 17, 1930. The union claimed two million enrollments by that spring. Note the coupon.*
+
+By its own count the League signed up two million people that spring, and claimed two and a half million weeks later. Take the union's numbers as the union's numbers. Even discounted, this was one of the largest organized public campaigns ever mounted against a technology, and it was mounted by skilled professionals defending a real and disappearing wage.
+
+It did not save a single orchestra pit.
+
+So the union escalated, and the escalation is the part worth studying. In 1940 James Caesar Petrillo took the AFM presidency, and on the stroke of August 1, 1942, he forbade every union musician in America to make a commercial recording. The ban held for two years and three months, the longest work stoppage in the history of American entertainment. Decca broke first in September 1943, Capitol that October; RCA Victor and Columbia held out until November 11, 1944. Petrillo did it again in 1948. Congress got angry enough in between to pass the Lea Act, a federal statute aimed so precisely at one man that everyone called it the Anti-Petrillo Act.
+
+Two things came out of all that, and only one of them was intended.
+
+The unintended one: because singers were not in the instrumentalists' union, they could keep recording through the ban while the bands could not. A strike designed to protect orchestras handed the decade to the vocalists, and the era of the band gave way to the era of the singer, permanently.
+
+The intended one was the only durable win in twenty years of fighting: a royalty. The 1948 settlement created the Music Performance Trust Fund, financed by a per-record payment from the labels, to pay union musicians to play free public concerts. It is still running. It is still financed the same way, now by the three major labels, and it now takes its cut of streaming. Every time a major-label record is played today, a fraction of a cent goes to a fund created by the men who bought the robot ads, and pays a live musician to play in a park.
+
+That is the whole precedent, and here is its sting. Recorded music, the canned music, the Robot, is now simply how musicians earn. It is not a threat to the profession; it is the profession's floor, its distribution, its discovery, and for most working artists the only reason anyone in another state has heard of them. The thing the campaign existed to prevent became the thing the campaign's beneficiaries live on, and the institution that still pays them is funded by a tax on it.
+
+**The mechanism.** The AFM did everything correctly by the standards of legitimate opposition. It was organized, funded, national, lawful, publicly sympathetic, and led by people who understood the technology better than the public did. None of that touched the outcome, because none of it was aimed at an outcome anyone could deliver. You cannot make a technology unpopular by proving it has no soul. The public was never voting on whether recording should exist; it was enjoying recordings. The only move that ever produced anything was the last one, and it was not a defense. It was an invoice.
+
+**The rule.** Argue about the machine's soul and you will spend twenty years and half a million dollars getting nothing. Argue about the machine's bill and you can build an institution that outlives you. When the wave comes for your trade, skip the essay about what is being lost and go straight to the clause: who pays whom, how much, per what, forever.
+
+**The practice.**
+
+1. Read your own industry's robot ad this week. Find the most recent public statement your professional body, union, or guild has made about AI, and mark it in two colors: sentences arguing that the machine is soulless, derivative, or dangerous to the art, and sentences naming a term (a rate, a royalty, a credit, a consent requirement, a bargaining unit). Count both. The ratio is a forecast, and you now know which color has a win on record.
+2. Draft the one clause you would actually want, in a single sentence, and say who pays it. Not a position, not a values statement, a clause: "any model trained on our archive pays X per use into Y, administered by Z." Petrillo's people spent from 1929 to 1948 discovering that this sentence was the entire game. You can write yours this afternoon.
+3. Find the fund and check whether you are in it. Almost every affected trade already has a collecting body of some kind: a residual, a royalty pool, a licensing society, a trust. Most of the people eligible for them are not enrolled, because enrollment was never the exciting part of the fight. Spend twenty minutes finding out what exists in your field, whether you qualify, and what it pays. The clipped coupon is the only part of the Music Defense League that is still sending anybody money.

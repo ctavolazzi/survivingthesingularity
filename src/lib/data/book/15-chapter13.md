@@ -241,7 +241,7 @@ First, though, the next chapter steps back outside the property line. **Chapter 
 
 ---
 
-## Precedent P-15: The House That Came by Mail (Chicago, 1908 to 1942)
+## Precedent P-16: The House That Came by Mail (Chicago, 1908 to 1942)
 
 For thirty-four years, you could order a house from a catalog. Sears Modern Homes shipped as precut, numbered lumber with nails, paint, fixtures, and an instruction book, delivered to the nearest rail depot. A family with a poured foundation and a few capable friends could assemble a real, permanent, respectable home with no builder's monopoly anywhere in the transaction. Sears sold tens of thousands of them in hundreds of designs, from tiny cottages to genuinely grand houses.
 

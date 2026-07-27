@@ -1,6 +1,6 @@
 {
   "schema": "sts-art-catalog/v1",
-  "generated": "2026-07-21",
+  "generated": "2026-07-27",
   "project": "Surviving the Singularity (book)",
   "book_version_introduced": "0.7.0",
   "palette": {
@@ -608,7 +608,7 @@
       "placement": {
         "chapter": "chapter2",
         "file": "04-chapter2.md",
-        "section": "Chapter 2: The Era of AGI (Stages 1\u20135)"
+        "section": "Chapter 2: The Era of AGI (Stages 1–5)"
       },
       "alt": "Robotic arms assembling a car body",
       "caption": "Robotic arms at work. The structural automation of labor, already routine.",
@@ -629,7 +629,7 @@
       "placement": {
         "chapter": "chapter3",
         "file": "05-chapter3.md",
-        "section": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6\u20137)"
+        "section": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)"
       },
       "alt": "Falcon Heavy lifting off from Kennedy Space Center",
       "caption": "Falcon Heavy demo mission. The exodus hardware is already flying.",
@@ -650,7 +650,7 @@
       "placement": {
         "chapter": "chapter4",
         "file": "06-chapter4.md",
-        "section": "Chapter 4: Universal and Multiverse Apex (Stages 8\u20139)"
+        "section": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)"
       },
       "alt": "Hubble Ultra-Deep Field showing thousands of galaxies",
       "caption": "The Hubble Ultra-Deep Field. The available real estate.",
@@ -2351,6 +2351,48 @@
       },
       "alt": "A tech worker in business casual clothing with a laptop bag over one shoulder",
       "caption": "Devendra. Senior and calm. Wrong about the thing that mattered."
+    },
+    {
+      "id": "sts.photo.ch07-canned-music-1929",
+      "type": "photo",
+      "label": "A 1929 newspaper advertisement headlined \"Taking Liberties With Folks' Habits,\" ",
+      "concepts": [
+        "robotics"
+      ],
+      "figure": "static/book-images/ch07-canned-music-1929.jpg",
+      "placement": {
+        "chapter": "chapter7",
+        "file": "09-chapter7.md",
+        "section": "Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)"
+      },
+      "alt": "A 1929 newspaper advertisement headlined \"Taking Liberties With Folks' Habits,\" showing a large robot shouldering aside a weeping cherub at a harp while a dog howls, above columns of argument signed by the American Federation of Musicians",
+      "caption": "Exhibitors Herald-World, November 16, 1929. \"Is the Robot such good company he can 'hog the whole show?'\"",
+      "credit": {
+        "artist": "Advertisement by the American Federation of Musicians (Joseph N. Weber, president); illustration signed Helguera",
+        "license": "Public domain (published in the United States in 1929; US copyright expired January 1, 2025)",
+        "source": "https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up"
+      }
+    },
+    {
+      "id": "sts.photo.ch07-canned-music-1930",
+      "type": "photo",
+      "label": "A 1930 newspaper advertisement headlined \"Is the Robot Fooling YOU?\", showing a ",
+      "concepts": [
+        "robotics"
+      ],
+      "figure": "static/book-images/ch07-canned-music-1930.jpg",
+      "placement": {
+        "chapter": "chapter7",
+        "file": "09-chapter7.md",
+        "section": "Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)"
+      },
+      "alt": "A 1930 newspaper advertisement headlined \"Is the Robot Fooling YOU?\", showing a robot among classical muses holding a banner reading CANNED MUSIC IN THEATERS, with a mail-in coupon enrolling the reader in the Music Defense League",
+      "caption": "Exhibitors Herald-World, May 17, 1930. The union claimed two million enrollments by that spring. Note the coupon.",
+      "credit": {
+        "artist": "Advertisement by the American Federation of Musicians (Joseph N. Weber, president); illustration signed Helguera",
+        "license": "Public domain (published in the United States in 1930; US copyright expired January 1, 2026)",
+        "source": "https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up"
+      }
     }
   ]
 }

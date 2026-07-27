@@ -80,7 +80,7 @@ The singularity is here. Survive it if you can, and then turn around and help ev
 
 ---
 
-## Precedent P-22: The Passing Fad (1995 to 2000)
+## Precedent P-23: The Passing Fad (1995 to 2000)
 
 The Ledger closes with three receipts. Frame them.
 

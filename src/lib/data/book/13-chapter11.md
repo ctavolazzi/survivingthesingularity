@@ -306,7 +306,7 @@ Prepare your seed trays and biological cultures. We are taking back the soil.
 
 ---
 
-## Precedent P-13: The Quartz Heresy (Switzerland, 1969 to 1983)
+## Precedent P-14: The Quartz Heresy (Switzerland, 1969 to 1983)
 
 In 1969 Seiko shipped the first quartz wristwatch, and the Swiss, who dominated world watchmaking, dismissed it as beneath the craft. They had centuries of mechanical mastery; quartz was a battery and a circuit, a gadget for people with no taste. They stayed pure.
 

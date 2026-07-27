@@ -281,7 +281,7 @@ Sharpen your legal pens. We are taking back the land.
 
 ---
 
-## Precedent P-11: The Year the Bronze Stopped (Eastern Mediterranean, c. 1177 BC)
+## Precedent P-12: The Year the Bronze Stopped (Eastern Mediterranean, c. 1177 BC)
 
 The Late Bronze Age was a globalized world. Bronze itself was a supply-chain product: copper from Cyprus, tin from sources as distant as modern Afghanistan, moving thousands of miles through interlocking trade networks that connected Egypt, the Hittite Empire, Mycenaean Greece, Ugarit, and Babylon. Palace economies specialized, traded, and grew rich on the interdependence. It was efficient. It was sophisticated. It was, for its era, the most connected the human world had ever been.
 

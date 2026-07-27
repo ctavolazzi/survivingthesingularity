@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.7.3",
+  "book_version": "0.7.4",
   "generated": "2026-07-27",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2030,
-    "words": 88935
+    "blocks": 2065,
+    "words": 91845
   },
   "sections": [
     {
@@ -420,8 +420,8 @@
             73
           ],
           "words": 72,
-          "hash": "ffa9525892e7",
-          "preview": "Every chapter closes with one entry. Each carries a serial number, P-01 through P-22, beca"
+          "hash": "bb709e8a9325",
+          "preview": "Every chapter closes with one entry. Each carries a serial number, P-01 through P-23, beca"
         },
         {
           "id": "sts.introduction.b0030",
@@ -7000,8 +7000,8 @@
       "id": "chapter7",
       "title": "Chapter 7: The Battle Lines: The Entitled vs. The Ready",
       "file": "09-chapter7.md",
-      "next_ordinal": 57,
-      "words": 3513,
+      "next_ordinal": 86,
+      "words": 5353,
       "tombstones": [],
       "blocks": [
         {
@@ -7452,11 +7452,78 @@
           "preview": "While the activists defend their actions under the banner of pedestrian safety and anti-su"
         },
         {
-          "id": "sts.chapter7.b0041",
+          "id": "sts.chapter7.b0057",
           "type": "heading",
           "lines": [
             103,
             103
+          ],
+          "words": 5,
+          "hash": "37010cb42f51",
+          "preview": "## The Campaign Has a Letterhead",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter7.b0058",
+          "type": "paragraph",
+          "lines": [
+            105,
+            105
+          ],
+          "words": 56,
+          "hash": "8e7b11de1c79",
+          "preview": "A traffic cone on a robotaxi is the hammer, and the hammer is the half of the lineage ever"
+        },
+        {
+          "id": "sts.chapter7.b0059",
+          "type": "paragraph",
+          "lines": [
+            107,
+            107
+          ],
+          "words": 61,
+          "hash": "d1c078fc4cd9",
+          "preview": "It has been run at least six times in the last hundred and twenty years, by serious people"
+        },
+        {
+          "id": "sts.chapter7.b0060",
+          "type": "table",
+          "lines": [
+            109,
+            116
+          ],
+          "words": 180,
+          "hash": "3c4fbddbb351",
+          "preview": "| Year | Who organized it | What they called the machine | What they demanded | How it wen"
+        },
+        {
+          "id": "sts.chapter7.b0061",
+          "type": "paragraph",
+          "lines": [
+            118,
+            118
+          ],
+          "words": 135,
+          "hash": "92856bf917ab",
+          "preview": "Three campaigns readers expect on that list are missing, and the reason is the same each t"
+        },
+        {
+          "id": "sts.chapter7.b0062",
+          "type": "paragraph",
+          "lines": [
+            120,
+            120
+          ],
+          "words": 39,
+          "hash": "dc8b16624a71",
+          "preview": "What the surviving cases have in common is the part nobody quotes: in every one of them, t"
+        },
+        {
+          "id": "sts.chapter7.b0041",
+          "type": "heading",
+          "lines": [
+            122,
+            122
           ],
           "words": 3,
           "hash": "d7f593e702f4",
@@ -7467,8 +7534,8 @@
           "id": "sts.chapter7.b0042",
           "type": "paragraph",
           "lines": [
-            105,
-            105
+            124,
+            124
           ],
           "words": 21,
           "hash": "2d7915fbac39",
@@ -7478,8 +7545,8 @@
           "id": "sts.chapter7.b0043",
           "type": "paragraph",
           "lines": [
-            107,
-            107
+            126,
+            126
           ],
           "words": 102,
           "hash": "ac2ebb026c05",
@@ -7489,8 +7556,8 @@
           "id": "sts.chapter7.b0044",
           "type": "paragraph",
           "lines": [
-            109,
-            109
+            128,
+            128
           ],
           "words": 95,
           "hash": "e50d68bb0d2a",
@@ -7500,8 +7567,8 @@
           "id": "sts.chapter7.b0045",
           "type": "paragraph",
           "lines": [
-            111,
-            111
+            130,
+            130
           ],
           "words": 120,
           "hash": "009cb217844c",
@@ -7511,8 +7578,8 @@
           "id": "sts.chapter7.b0046",
           "type": "paragraph",
           "lines": [
-            113,
-            113
+            132,
+            132
           ],
           "words": 105,
           "hash": "c6a348e905c5",
@@ -7522,8 +7589,8 @@
           "id": "sts.chapter7.b0047",
           "type": "paragraph",
           "lines": [
-            115,
-            115
+            134,
+            134
           ],
           "words": 90,
           "hash": "da0be9d31a10",
@@ -7533,8 +7600,8 @@
           "id": "sts.chapter7.b0048",
           "type": "hr",
           "lines": [
-            117,
-            117
+            136,
+            136
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -7544,8 +7611,8 @@
           "id": "sts.chapter7.b0049",
           "type": "heading",
           "lines": [
-            119,
-            119
+            138,
+            138
           ],
           "words": 8,
           "hash": "f0ffe2e111be",
@@ -7556,8 +7623,8 @@
           "id": "sts.chapter7.b0050",
           "type": "paragraph",
           "lines": [
-            121,
-            121
+            140,
+            140
           ],
           "words": 31,
           "hash": "43cd067ffaf0",
@@ -7567,8 +7634,8 @@
           "id": "sts.chapter7.b0051",
           "type": "paragraph",
           "lines": [
-            123,
-            123
+            142,
+            142
           ],
           "words": 88,
           "hash": "f3d49c669505",
@@ -7578,8 +7645,8 @@
           "id": "sts.chapter7.b0052",
           "type": "paragraph",
           "lines": [
-            125,
-            125
+            144,
+            144
           ],
           "words": 83,
           "hash": "5292e3a6826e",
@@ -7589,8 +7656,8 @@
           "id": "sts.chapter7.b0053",
           "type": "paragraph",
           "lines": [
-            127,
-            127
+            146,
+            146
           ],
           "words": 56,
           "hash": "d41e4afcba4d",
@@ -7600,8 +7667,8 @@
           "id": "sts.chapter7.b0054",
           "type": "paragraph",
           "lines": [
-            129,
-            129
+            148,
+            148
           ],
           "words": 50,
           "hash": "c7a1969174b1",
@@ -7611,8 +7678,8 @@
           "id": "sts.chapter7.b0055",
           "type": "paragraph",
           "lines": [
-            131,
-            131
+            150,
+            150
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -7622,12 +7689,270 @@
           "id": "sts.chapter7.b0056",
           "type": "list",
           "lines": [
-            133,
-            135
+            152,
+            154
           ],
           "words": 199,
           "hash": "a235dec1d555",
           "preview": "1. Install the rage-conversion rule. When the anger arrives, and it will, it is legitimate"
+        },
+        {
+          "id": "sts.chapter7.b0063",
+          "type": "hr",
+          "lines": [
+            156,
+            156
+          ],
+          "words": 0,
+          "hash": "ebad27de99a8",
+          "preview": "---"
+        },
+        {
+          "id": "sts.chapter7.b0064",
+          "type": "heading",
+          "lines": [
+            158,
+            158
+          ],
+          "words": 13,
+          "hash": "566190e681b5",
+          "preview": "## Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter7.b0065",
+          "type": "paragraph",
+          "lines": [
+            160,
+            160
+          ],
+          "words": 35,
+          "hash": "ea5e301b21d4",
+          "preview": "The croppers had no negotiating table, which is the excuse history grants them. The musici"
+        },
+        {
+          "id": "sts.chapter7.b0066",
+          "type": "paragraph",
+          "lines": [
+            162,
+            162
+          ],
+          "words": 105,
+          "hash": "14f8cb589cb6",
+          "preview": "Start with the warning shot. In 1906 John Philip Sousa, the most famous bandleader alive, "
+        },
+        {
+          "id": "sts.chapter7.b0067",
+          "type": "paragraph",
+          "lines": [
+            164,
+            164
+          ],
+          "words": 60,
+          "hash": "5e134738a905",
+          "preview": "Then came the machine that actually took the jobs. *The Jazz Singer* opened in 1927, and w"
+        },
+        {
+          "id": "sts.chapter7.b0068",
+          "type": "paragraph",
+          "lines": [
+            166,
+            166
+          ],
+          "words": 16,
+          "hash": "99760a2be717",
+          "preview": "So the American Federation of Musicians did what the Luddites never could. It ran a campai"
+        },
+        {
+          "id": "sts.chapter7.b0069",
+          "type": "figure",
+          "lines": [
+            168,
+            168
+          ],
+          "words": 40,
+          "hash": "d10c196d12ff",
+          "preview": "![A 1929 newspaper advertisement headlined \"Taking Liberties With Folks' Habits,\" showing ",
+          "image": "/book-images/ch07-canned-music-1929.jpg",
+          "art_id": "sts.photo.ch07-canned-music-1929"
+        },
+        {
+          "id": "sts.chapter7.b0070",
+          "type": "caption",
+          "lines": [
+            170,
+            170
+          ],
+          "words": 17,
+          "hash": "8106368a2b56",
+          "preview": "*Exhibitors Herald-World, November 16, 1929. \"Is the Robot such good company he can 'hog t"
+        },
+        {
+          "id": "sts.chapter7.b0071",
+          "type": "paragraph",
+          "lines": [
+            172,
+            172
+          ],
+          "words": 63,
+          "hash": "dc6de8746998",
+          "preview": "Starting in the autumn of 1929 the union bought advertisements in newspapers across the Un"
+        },
+        {
+          "id": "sts.chapter7.b0072",
+          "type": "paragraph",
+          "lines": [
+            174,
+            174
+          ],
+          "words": 135,
+          "hash": "b14b163d3a89",
+          "preview": "Not a metaphor. A drawn mechanical man, week after week, in hundreds of papers: shoving a "
+        },
+        {
+          "id": "sts.chapter7.b0073",
+          "type": "figure",
+          "lines": [
+            176,
+            176
+          ],
+          "words": 39,
+          "hash": "8fa52c1c22c4",
+          "preview": "![A 1930 newspaper advertisement headlined \"Is the Robot Fooling YOU?\", showing a robot am",
+          "image": "/book-images/ch07-canned-music-1930.jpg",
+          "art_id": "sts.photo.ch07-canned-music-1930"
+        },
+        {
+          "id": "sts.chapter7.b0074",
+          "type": "caption",
+          "lines": [
+            178,
+            178
+          ],
+          "words": 17,
+          "hash": "103bb3b18ad8",
+          "preview": "*Exhibitors Herald-World, May 17, 1930. The union claimed two million enrollments by that "
+        },
+        {
+          "id": "sts.chapter7.b0075",
+          "type": "paragraph",
+          "lines": [
+            180,
+            180
+          ],
+          "words": 59,
+          "hash": "1e1baa41db30",
+          "preview": "By its own count the League signed up two million people that spring, and claimed two and "
+        },
+        {
+          "id": "sts.chapter7.b0076",
+          "type": "paragraph",
+          "lines": [
+            182,
+            182
+          ],
+          "words": 8,
+          "hash": "16f90ba9ca2e",
+          "preview": "It did not save a single orchestra pit."
+        },
+        {
+          "id": "sts.chapter7.b0077",
+          "type": "paragraph",
+          "lines": [
+            184,
+            184
+          ],
+          "words": 112,
+          "hash": "84ce5f8209cc",
+          "preview": "So the union escalated, and the escalation is the part worth studying. In 1940 James Caesa"
+        },
+        {
+          "id": "sts.chapter7.b0078",
+          "type": "paragraph",
+          "lines": [
+            186,
+            186
+          ],
+          "words": 14,
+          "hash": "27806e52c444",
+          "preview": "Two things came out of all that, and only one of them was intended."
+        },
+        {
+          "id": "sts.chapter7.b0079",
+          "type": "paragraph",
+          "lines": [
+            188,
+            188
+          ],
+          "words": 50,
+          "hash": "2d9219183e86",
+          "preview": "The unintended one: because singers were not in the instrumentalists' union, they could ke"
+        },
+        {
+          "id": "sts.chapter7.b0080",
+          "type": "paragraph",
+          "lines": [
+            190,
+            190
+          ],
+          "words": 102,
+          "hash": "26d16447b2d9",
+          "preview": "The intended one was the only durable win in twenty years of fighting: a royalty. The 1948"
+        },
+        {
+          "id": "sts.chapter7.b0081",
+          "type": "paragraph",
+          "lines": [
+            192,
+            192
+          ],
+          "words": 85,
+          "hash": "4fffc897bc7d",
+          "preview": "That is the whole precedent, and here is its sting. Recorded music, the canned music, the "
+        },
+        {
+          "id": "sts.chapter7.b0082",
+          "type": "paragraph",
+          "lines": [
+            194,
+            194
+          ],
+          "words": 99,
+          "hash": "6fd3a3601e48",
+          "preview": "**The mechanism.** The AFM did everything correctly by the standards of legitimate opposit"
+        },
+        {
+          "id": "sts.chapter7.b0083",
+          "type": "paragraph",
+          "lines": [
+            196,
+            196
+          ],
+          "words": 63,
+          "hash": "fc752583c782",
+          "preview": "**The rule.** Argue about the machine's soul and you will spend twenty years and half a mi"
+        },
+        {
+          "id": "sts.chapter7.b0084",
+          "type": "paragraph",
+          "lines": [
+            198,
+            198
+          ],
+          "words": 2,
+          "hash": "d3f3b3e8610e",
+          "preview": "**The practice.**"
+        },
+        {
+          "id": "sts.chapter7.b0085",
+          "type": "list",
+          "lines": [
+            200,
+            202
+          ],
+          "words": 230,
+          "hash": "4265520c3334",
+          "preview": "1. Read your own industry's robot ad this week. Find the most recent public statement your"
         }
       ]
     },
@@ -9489,8 +9814,8 @@
             350
           ],
           "words": 8,
-          "hash": "b0b307f6b87e",
-          "preview": "## Precedent P-10: Torches of Freedom (New York, 1929)",
+          "hash": "398bbe917d2c",
+          "preview": "## Precedent P-11: Torches of Freedom (New York, 1929)",
           "level": 2
         },
         {
@@ -10987,8 +11312,8 @@
             284
           ],
           "words": 12,
-          "hash": "f1507a89c9a7",
-          "preview": "## Precedent P-11: The Year the Bronze Stopped (Eastern Mediterranean, c. 1177 BC)",
+          "hash": "cdd96ad2fe2f",
+          "preview": "## Precedent P-12: The Year the Bronze Stopped (Eastern Mediterranean, c. 1177 BC)",
           "level": 2
         },
         {
@@ -12364,8 +12689,8 @@
             233
           ],
           "words": 7,
-          "hash": "7df2a7d1f86c",
-          "preview": "## Precedent P-12: The Abbot's Confession (Sponheim, 1492)",
+          "hash": "2eb1e9c22b5c",
+          "preview": "## Precedent P-13: The Abbot's Confession (Sponheim, 1492)",
           "level": 2
         },
         {
@@ -13462,8 +13787,8 @@
             309
           ],
           "words": 9,
-          "hash": "a355d9518f0c",
-          "preview": "## Precedent P-13: The Quartz Heresy (Switzerland, 1969 to 1983)",
+          "hash": "9b6bf567a9b7",
+          "preview": "## Precedent P-14: The Quartz Heresy (Switzerland, 1969 to 1983)",
           "level": 2
         },
         {
@@ -14728,8 +15053,8 @@
             240
           ],
           "words": 9,
-          "hash": "8c2d9f92b0d5",
-          "preview": "## Precedent P-14: One Hundred Sixty Acres (United States, 1862)",
+          "hash": "dc6963fc0005",
+          "preview": "## Precedent P-15: One Hundred Sixty Acres (United States, 1862)",
           "level": 2
         },
         {
@@ -16044,8 +16369,8 @@
             244
           ],
           "words": 12,
-          "hash": "34de90370b54",
-          "preview": "## Precedent P-15: The House That Came by Mail (Chicago, 1908 to 1942)",
+          "hash": "b9738ae7dcbd",
+          "preview": "## Precedent P-16: The House That Came by Mail (Chicago, 1908 to 1942)",
           "level": 2
         },
         {
@@ -17086,8 +17411,8 @@
             177
           ],
           "words": 10,
-          "hash": "3742b3ad158e",
-          "preview": "## Precedent P-16: The Graveyard of the Unconvinced (1975 to 2011)",
+          "hash": "a467f5ffd0af",
+          "preview": "## Precedent P-17: The Graveyard of the Unconvinced (1975 to 2011)",
           "level": 2
         },
         {
@@ -17120,7 +17445,7 @@
             183
           ],
           "words": 113,
-          "hash": "6c2a8759d1af",
+          "hash": "2f2bf6120502",
           "preview": "**Sears, 1993.** For sixty years Sears *was* Amazon: a company that mailed a catalog of ev"
         },
         {
@@ -17208,8 +17533,8 @@
             201
           ],
           "words": 7,
-          "hash": "327f9050a4ec",
-          "preview": "## Precedent P-17: The Mirror Twin (Tokyo, 2000s)",
+          "hash": "51fb432eb9de",
+          "preview": "## Precedent P-18: The Mirror Twin (Tokyo, 2000s)",
           "level": 2
         },
         {
@@ -18106,8 +18431,8 @@
             150
           ],
           "words": 10,
-          "hash": "a9fa6f83d86c",
-          "preview": "## Precedent P-18: Twenty Million Gardens (United States, 1943 to 1944)",
+          "hash": "56dde62e2867",
+          "preview": "## Precedent P-19: Twenty Million Gardens (United States, 1943 to 1944)",
           "level": 2
         },
         {
@@ -18183,7 +18508,7 @@
       "title": "Chapter 16: Digital Leverage and Media Autonomy",
       "file": "18-chapter16.md",
       "next_ordinal": 84,
-      "words": 3105,
+      "words": 3102,
       "tombstones": [],
       "blocks": [
         {
@@ -19048,8 +19373,8 @@
             154
           ],
           "words": 6,
-          "hash": "ae094b5ef85c",
-          "preview": "## Precedent P-19: Seventy-Nine Pages (Philadelphia, 1776)",
+          "hash": "32db4fa62cfb",
+          "preview": "## Precedent P-20: Seventy-Nine Pages (Philadelphia, 1776)",
           "level": 2
         },
         {
@@ -19070,8 +19395,8 @@
             158,
             158
           ],
-          "words": 90,
-          "hash": "ba9287955041",
+          "words": 87,
+          "hash": "a28fb387dc23",
           "preview": "*Common Sense* ran seventy-nine pages in Robert Bell's first printing, published in Januar"
         },
         {
@@ -20118,8 +20443,8 @@
             182
           ],
           "words": 8,
-          "hash": "1ab57ae1dced",
-          "preview": "## Precedent P-20: Access to Tools (Menlo Park, 1968)",
+          "hash": "dd489287c4a4",
+          "preview": "## Precedent P-21: Access to Tools (Menlo Park, 1968)",
           "level": 2
         },
         {
@@ -20833,8 +21158,8 @@
             123
           ],
           "words": 9,
-          "hash": "eedd2e6b93d2",
-          "preview": "## Precedent P-21: The Apocalypse That Ran On Time (1999)",
+          "hash": "c43c4d28dc06",
+          "preview": "## Precedent P-22: The Apocalypse That Ran On Time (1999)",
           "level": 2
         },
         {
@@ -21368,8 +21693,8 @@
             83
           ],
           "words": 8,
-          "hash": "8a47641e21ae",
-          "preview": "## Precedent P-22: The Passing Fad (1995 to 2000)",
+          "hash": "4941ee01a700",
+          "preview": "## Precedent P-23: The Passing Fad (1995 to 2000)",
           "level": 2
         },
         {
@@ -22051,8 +22376,8 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
-      "next_ordinal": 22,
-      "words": 4553,
+      "next_ordinal": 28,
+      "words": 5499,
       "tombstones": [],
       "blocks": [
         {
@@ -22154,8 +22479,8 @@
             56,
             88
           ],
-          "words": 707,
-          "hash": "5777f805ee62",
+          "words": 723,
+          "hash": "caee142ecdaf",
           "preview": "146. Nikola Danaylov, 17 Definitions of the Technological Singularity - Singularity Weblog"
         },
         {
@@ -22285,11 +22610,79 @@
           "preview": "187. Frank Ongley Darvall, Popular Disturbances and Public Order in Regency England: Being"
         },
         {
-          "id": "sts.appendix-b.b0011",
-          "type": "hr",
+          "id": "sts.appendix-b.b0022",
+          "type": "heading",
           "lines": [
             138,
             138
+          ],
+          "words": 5,
+          "hash": "95e4449cbc4b",
+          "preview": "## P-20 Primary Sources (added 2026-07-27)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0023",
+          "type": "paragraph",
+          "lines": [
+            140,
+            140
+          ],
+          "words": 210,
+          "hash": "ed930c400d5e",
+          "preview": "*A correction of record. Earlier drafts of this precedent, then numbered P-19, were titled"
+        },
+        {
+          "id": "sts.appendix-b.b0024",
+          "type": "list",
+          "lines": [
+            142,
+            145
+          ],
+          "words": 163,
+          "hash": "adafe4764b0b",
+          "preview": "193. Common sense; addressed to the inhabitants of America (Robert Bell's first Philadelph"
+        },
+        {
+          "id": "sts.appendix-b.b0025",
+          "type": "heading",
+          "lines": [
+            147,
+            147
+          ],
+          "words": 5,
+          "hash": "a55866ba5363",
+          "preview": "## P-10 Primary Sources (added 2026-07-27)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0026",
+          "type": "paragraph",
+          "lines": [
+            149,
+            149
+          ],
+          "words": 140,
+          "hash": "00117e65a210",
+          "preview": "*The two advertisements reproduced in Chapter 7 were read from the original page scans, no"
+        },
+        {
+          "id": "sts.appendix-b.b0027",
+          "type": "list",
+          "lines": [
+            151,
+            160
+          ],
+          "words": 407,
+          "hash": "cb5ecca61d78",
+          "preview": "197. American Federation of Musicians, \"Taking Liberties With Folks' Habits\" (advertisemen"
+        },
+        {
+          "id": "sts.appendix-b.b0011",
+          "type": "hr",
+          "lines": [
+            162,
+            162
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -22505,7 +22898,7 @@
       "title": "Appendix D: The Precedent Ledger",
       "file": "25-appendix-d.md",
       "next_ordinal": 15,
-      "words": 1404,
+      "words": 1531,
       "tombstones": [],
       "blocks": [
         {
@@ -22528,7 +22921,7 @@
             3
           ],
           "words": 58,
-          "hash": "7a00e787025c",
+          "hash": "e7c489907c23",
           "preview": "*Every chapter of this book closes with a Precedent: a documented case of human beings mee"
         },
         {
@@ -22582,18 +22975,18 @@
           "type": "table",
           "lines": [
             19,
-            42
+            43
           ],
-          "words": 185,
-          "hash": "bbff11156594",
+          "words": 196,
+          "hash": "3de1ed0c2ef4",
           "preview": "| ID | Precedent | Date | Closes | | --- | --- | --- | --- | | P-01 | The Reading Rage | 1"
         },
         {
           "id": "sts.appendix-d.b0008",
           "type": "heading",
           "lines": [
-            44,
-            44
+            45,
+            45
           ],
           "words": 6,
           "hash": "e748de7b6967",
@@ -22604,19 +22997,19 @@
           "id": "sts.appendix-d.b0009",
           "type": "list",
           "lines": [
-            46,
-            67
+            47,
+            69
           ],
-          "words": 365,
-          "hash": "11a5c5a4c314",
+          "words": 386,
+          "hash": "acf2e493ec70",
           "preview": "- **P-01.** \"Kids these days\" means power just moved toward people who don't need permissi"
         },
         {
           "id": "sts.appendix-d.b0010",
           "type": "heading",
           "lines": [
-            69,
-            69
+            71,
+            71
           ],
           "words": 3,
           "hash": "5b8b445834ed",
@@ -22627,8 +23020,8 @@
           "id": "sts.appendix-d.b0011",
           "type": "paragraph",
           "lines": [
-            71,
-            71
+            73,
+            73
           ],
           "words": 23,
           "hash": "e8c494fe081c",
@@ -22638,19 +23031,19 @@
           "id": "sts.appendix-d.b0012",
           "type": "table",
           "lines": [
-            73,
-            96
+            75,
+            99
           ],
-          "words": 228,
-          "hash": "952ad1ca7be1",
+          "words": 241,
+          "hash": "a84a2024ffd3",
           "preview": "| When this is happening | Open | | --- | --- | | Someone is explaining that AI is rotting"
         },
         {
           "id": "sts.appendix-d.b0013",
           "type": "heading",
           "lines": [
-            98,
-            98
+            101,
+            101
           ],
           "words": 1,
           "hash": "d8bf7abab6f0",
@@ -22661,11 +23054,11 @@
           "id": "sts.appendix-d.b0014",
           "type": "paragraph",
           "lines": [
-            100,
-            100
+            103,
+            103
           ],
-          "words": 106,
-          "hash": "542da374fb65",
+          "words": 188,
+          "hash": "e7c6e7bb9dd3",
           "preview": "Every entry in the Ledger is documented, and the receipts live in the project's history ca"
         }
       ]
@@ -23048,7 +23441,7 @@
             73
           ],
           "words": 90,
-          "hash": "ef4903de80b6",
+          "hash": "9a50dfc83b6f",
           "preview": "In 1968 Stewart Brand put three words on the cover of the *Whole Earth Catalog*: Access to"
         },
         {

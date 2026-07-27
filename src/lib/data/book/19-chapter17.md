@@ -179,7 +179,7 @@ Keep your microcontrollers shielded. Protect your copper loops. Build for the lo
 
 ---
 
-## Precedent P-20: Access to Tools (Menlo Park, 1968)
+## Precedent P-21: Access to Tools (Menlo Park, 1968)
 
 In 1968 Stewart Brand put NASA's photograph of the whole Earth on a big black paperback cover and printed three words under the title: **Access to Tools.**
 

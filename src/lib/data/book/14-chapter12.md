@@ -237,7 +237,7 @@ Go forth and build.
 
 ---
 
-## Precedent P-14: One Hundred Sixty Acres (United States, 1862)
+## Precedent P-15: One Hundred Sixty Acres (United States, 1862)
 
 The Homestead Act was signed in May 1862, and the timing is the entire lesson: the country was one year into the Civil War. While every headline and every conversation was consumed by the emergency, the federal government quietly opened millions of acres, offering one hundred sixty acres to anyone, including women and immigrants who had filed for citizenship, who would live on the land and improve it for five years.
 

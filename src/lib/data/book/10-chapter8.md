@@ -347,7 +347,7 @@ In the next chapter, we put this circle to work: **Chapter 9: Deglobalization an
 
 ---
 
-## Precedent P-10: Torches of Freedom (New York, 1929)
+## Precedent P-11: Torches of Freedom (New York, 1929)
 
 In 1929 it was scandalous for a woman to smoke in public, which meant half the American cigarette market was locked behind a taboo. So the American Tobacco Company hired Edward Bernays, Sigmund Freud's nephew and the inventor of the phrase "public relations," to pick the lock.
 

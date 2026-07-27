@@ -1,6 +1,6 @@
 # APPENDIX D: THE PRECEDENT LEDGER
 
-*Every chapter of this book closes with a Precedent: a documented case of human beings meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-22. The dates run from the birth of agriculture to the week the internet was declared a fad. Same wave, different water.*
+*Every chapter of this book closes with a Precedent: a documented case of human beings meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-23. The dates run from the birth of agriculture to the week the internet was declared a fad. Same wave, different water.*
 
 ## How to Run the Ledger
 
@@ -27,19 +27,20 @@ A ledger you read once is trivia. A ledger you operate is an instrument. Ninety 
 | P-07 | The Horse's Last Ledger | 1783–1960 | Chapter 5 |
 | P-08 | The Grain Trap | c. 9500 BC | Chapter 6 |
 | P-09 | The Frame-Breakers | 1811–1816 | Chapter 7 |
-| P-10 | Torches of Freedom | 1929 | Chapter 8 |
-| P-11 | The Year the Bronze Stopped | c. 1177 BC | Chapter 9 |
-| P-12 | The Abbot's Confession | 1492 | Chapter 10 |
-| P-13 | The Quartz Heresy | 1969–1983 | Chapter 11 |
-| P-14 | One Hundred Sixty Acres | 1862 | Chapter 12 |
-| P-15 | The House That Came by Mail | 1908–1942 | Chapter 13 |
-| P-16 | The Graveyard of the Unconvinced | 1975–2011 | Chapter 14 |
-| P-17 | The Mirror Twin | 2000s | Chapter 14 |
-| P-18 | Twenty Million Gardens | 1943–1944 | Chapter 15 |
-| P-19 | Seventy-Nine Pages | 1776 | Chapter 16 |
-| P-20 | Access to Tools | 1968 | Chapter 17 |
-| P-21 | The Apocalypse That Ran On Time | 1999 | Chapter 18 |
-| P-22 | The Passing Fad | 1995–2000 | Conclusion |
+| P-10 | The Robot in the Orchestra Pit | 1929–1948 | Chapter 7 |
+| P-11 | Torches of Freedom | 1929 | Chapter 8 |
+| P-12 | The Year the Bronze Stopped | c. 1177 BC | Chapter 9 |
+| P-13 | The Abbot's Confession | 1492 | Chapter 10 |
+| P-14 | The Quartz Heresy | 1969–1983 | Chapter 11 |
+| P-15 | One Hundred Sixty Acres | 1862 | Chapter 12 |
+| P-16 | The House That Came by Mail | 1908–1942 | Chapter 13 |
+| P-17 | The Graveyard of the Unconvinced | 1975–2011 | Chapter 14 |
+| P-18 | The Mirror Twin | 2000s | Chapter 14 |
+| P-19 | Twenty Million Gardens | 1943–1944 | Chapter 15 |
+| P-20 | Seventy-Nine Pages | 1776 | Chapter 16 |
+| P-21 | Access to Tools | 1968 | Chapter 17 |
+| P-22 | The Apocalypse That Ran On Time | 1999 | Chapter 18 |
+| P-23 | The Passing Fad | 1995–2000 | Conclusion |
 
 ## The rules, in one breath each
 
@@ -52,19 +53,20 @@ A ledger you read once is trivia. A ledger you operate is an instrument. Ninety 
 - **P-07.** Audit your own energy ledger before someone else runs the numbers on you.
 - **P-08.** Adoption is a ratchet driven by group competition, not consent. Fight for position, not prevention.
 - **P-09.** The frame-breaker's hammer is batting zero for two hundred years. Fight for terms, not against physics.
-- **P-10.** Extraction arrives dressed as your own values. Audit the desire: who profits if I feel this?
-- **P-11.** Your resilience equals whatever still works when the ships stop coming.
-- **P-12.** The critics of the machine publish their eulogies on the machine. Watch the workflow, not the essay.
-- **P-13.** Use the new machine's profits to fund what you actually want to keep. It's the only strategy with a win on record.
-- **P-14.** Transitions reprice land first, during the confusion. The emergency is why the filing office is uncrowded.
-- **P-15.** Whatever supposedly requires the incumbents' permission, find the version that ships as a kit.
-- **P-16.** Seeing the wave is not the hard part. Divesting the beachfront is. Find the line item that charges people for inconvenience; it's a countdown clock.
-- **P-17.** Your product is mortal. Your capabilities are transferable, if you can name them in time.
-- **P-18.** The soil by your door is standby infrastructure with a proven 24-month national activation record.
-- **P-19.** Leverage is reach divided by permission. Be the printer the empire can't answer in time.
-- **P-20.** Access to tools, not credentials, is what makes people capable. Curate your toolset like it's your education.
-- **P-21.** A premortem that works looks like paranoia that wasn't needed. The silence is the product.
-- **P-22.** Today's version of a compounding technology is the worst it will ever be. The essayists will keep writing. You keep building.
+- **P-10.** Nobody ever won by proving the machine has no soul. Stop arguing about the soul and start writing the invoice.
+- **P-11.** Extraction arrives dressed as your own values. Audit the desire: who profits if I feel this?
+- **P-12.** Your resilience equals whatever still works when the ships stop coming.
+- **P-13.** The critics of the machine publish their eulogies on the machine. Watch the workflow, not the essay.
+- **P-14.** Use the new machine's profits to fund what you actually want to keep. It's the only strategy with a win on record.
+- **P-15.** Transitions reprice land first, during the confusion. The emergency is why the filing office is uncrowded.
+- **P-16.** Whatever supposedly requires the incumbents' permission, find the version that ships as a kit.
+- **P-17.** Seeing the wave is not the hard part. Divesting the beachfront is. Find the line item that charges people for inconvenience; it's a countdown clock.
+- **P-18.** Your product is mortal. Your capabilities are transferable, if you can name them in time.
+- **P-19.** The soil by your door is standby infrastructure with a proven 24-month national activation record.
+- **P-20.** Leverage is reach divided by permission. Be the printer the empire can't answer in time.
+- **P-21.** Access to tools, not credentials, is what makes people capable. Curate your toolset like it's your education.
+- **P-22.** A premortem that works looks like paranoia that wasn't needed. The silence is the product.
+- **P-23.** Today's version of a compounding technology is the worst it will ever be. The essayists will keep writing. You keep building.
 
 ## The Symptom Index
 
@@ -81,20 +83,21 @@ A ledger you read once is trivia. A ledger you operate is an instrument. Ninety 
 | Your pay, hours, or rates are being quietly repriced | P-07 |
 | Someone says "we'll just choose not to adopt it" | P-08 |
 | You are angry enough to want to smash something | P-09 |
-| A desire or outrage arrived suddenly and feels urgent | P-10 |
-| Shelves, shipping, or suppliers are wobbling | P-11 |
-| You notice you are consuming takes instead of making anything | P-12 |
-| Cheap AI output is undercutting your craft | P-13 |
-| You are waiting for things to settle down before deciding | P-14 |
-| You've been told only professionals can do that | P-15 |
-| Your employer just demoed the thing that replaces you | P-16 |
-| You need to reinvent yourself and don't know around what | P-17 |
-| Food prices or food security are on your mind | P-18 |
-| You know something worth saying and have no audience | P-19 |
-| You want to start building and don't know where | P-20 |
-| Someone calls your preparation paranoid | P-21 |
-| A smart person just called AI a fad, a bubble, or a toy | P-22 |
+| Your trade body just published a statement about AI and the art | P-10 |
+| A desire or outrage arrived suddenly and feels urgent | P-11 |
+| Shelves, shipping, or suppliers are wobbling | P-12 |
+| You notice you are consuming takes instead of making anything | P-13 |
+| Cheap AI output is undercutting your craft | P-14 |
+| You are waiting for things to settle down before deciding | P-15 |
+| You've been told only professionals can do that | P-16 |
+| Your employer just demoed the thing that replaces you | P-17 |
+| You need to reinvent yourself and don't know around what | P-18 |
+| Food prices or food security are on your mind | P-19 |
+| You know something worth saying and have no audience | P-20 |
+| You want to start building and don't know where | P-21 |
+| Someone calls your preparation paranoid | P-22 |
+| A smart person just called AI a fad, a bubble, or a toy | P-23 |
 
 ## Sourcing
 
-Every entry in the Ledger is documented, and the receipts live in the project's history casebook alongside Appendix B's works cited. A note on standards: several famous tech-history quotes are fabrications, and they were deliberately excluded from this book. You will not find the Western Union "telephone is a toy" memo, Bill Gates's "640K ought to be enough," the 1894 "nine feet of manure" prophecy, or "everything that can be invented has been invented" anywhere in these pages, because none of them survives contact with a primary source. The Ledger only carries cases that do. History is a strong enough argument without inventing any of it.
+Every entry in the Ledger is documented, and the receipts live in the project's history casebook alongside Appendix B's works cited. A note on standards: several famous tech-history quotes are fabrications, and they were deliberately excluded from this book. You will not find the Western Union "telephone is a toy" memo, Bill Gates's "640K ought to be enough," the 1894 "nine feet of manure" prophecy, the Bavarian medical board's decree that watching a train go past would give bystanders a brain disease, or "everything that can be invented has been invented" anywhere in these pages, because none of them survives contact with a primary source. The last one is worth naming specifically, because it is the single most-cited example of railway technophobia on the internet and no archival record of it has ever been produced. Losing it costs nothing: the documented history of resistance to the railway, the canals that funded the parliamentary opposition and the "railway spine" diagnosis of the 1860s, is real and was always the better material. The Ledger only carries cases that do. History is a strong enough argument without inventing any of it.

@@ -230,7 +230,7 @@ Grab your boots and your welding helmet. It is time to get your hands dirty.
 
 ---
 
-## Precedent P-12: The Abbot's Confession (Sponheim, 1492)
+## Precedent P-13: The Abbot's Confession (Sponheim, 1492)
 
 Forty years after Gutenberg, the abbot Johannes Trithemius wrote *De Laude Scriptorum*, "In Praise of Scribes," the era's most eloquent attack on the printing press. The scribe's hand-copying was devotional, he argued; the printed book was vulgar and impermanent. "The printed book is made of paper and, like paper, will quickly disappear."
 

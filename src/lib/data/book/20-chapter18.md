@@ -120,7 +120,7 @@ The old world is gone. It's time to start building the new one.
 
 ---
 
-## Precedent P-21: The Apocalypse That Ran On Time (1999)
+## Precedent P-22: The Apocalypse That Ran On Time (1999)
 
 The Y2K bug was real. Billions of lines of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" was going to mean 1900 to machines that ran the world.
 

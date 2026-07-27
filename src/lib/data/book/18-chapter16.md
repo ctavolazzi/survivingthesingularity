@@ -151,7 +151,7 @@ Keep your metadata clean. Protect your attention. Keep telling the human story.
 
 ---
 
-## Precedent P-19: Seventy-Nine Pages (Philadelphia, 1776)
+## Precedent P-20: Seventy-Nine Pages (Philadelphia, 1776)
 
 Thomas Paine had been in America for barely a year. He was a corset-maker's son, a failed excise officer, a man with no office, no wealth, no troops, and no name worth borrowing. What he had was access to a printing press and a register ordinary people could read aloud in a tavern.
 

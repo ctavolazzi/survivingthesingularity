@@ -70,7 +70,7 @@ Build the deck to keep yourself free. Not to reach into anyone else's life. The 
 
 ## The Precedent
 
-In 1968 Stewart Brand put three words on the cover of the *Whole Earth Catalog*: Access to Tools (Precedent P-20). The catalog was a map of possible selves, a list of the machines that would let an ordinary person educate themselves, feed themselves, and build their own world. The cyberdeck is that catalog collapsed into a single object. It is what Brand's black paperback was pointing at all along: not a computer you are allowed to use, but a computer you understand, can repair, and cannot be locked out of.
+In 1968 Stewart Brand put three words on the cover of the *Whole Earth Catalog*: Access to Tools (Precedent P-21). The catalog was a map of possible selves, a list of the machines that would let an ordinary person educate themselves, feed themselves, and build their own world. The cyberdeck is that catalog collapsed into a single object. It is what Brand's black paperback was pointing at all along: not a computer you are allowed to use, but a computer you understand, can repair, and cannot be locked out of.
 
 The culture rediscovered this in 2026, ten of thousands of people at a time, and mostly by feel, because sealed consumer technology had finally gotten frightening enough to push them back to the soldering iron. You do not have to wait to be pushed.
 

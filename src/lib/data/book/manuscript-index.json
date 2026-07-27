@@ -5,8 +5,8 @@
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2027,
-    "words": 88450
+    "blocks": 2030,
+    "words": 88941
   },
   "sections": [
     {
@@ -7001,7 +7001,7 @@
       "title": "Chapter 7: The Battle Lines: The Entitled vs. The Ready",
       "file": "09-chapter7.md",
       "next_ordinal": 57,
-      "words": 3500,
+      "words": 3513,
       "tombstones": [],
       "blocks": [
         {
@@ -7581,8 +7581,8 @@
             125,
             125
           ],
-          "words": 70,
-          "hash": "36276731eca0",
+          "words": 83,
+          "hash": "5292e3a6826e",
           "preview": "Parliament's reply was the Frame Breaking Act, which made machine-wrecking a capital crime"
         },
         {
@@ -22051,8 +22051,8 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
-      "next_ordinal": 19,
-      "words": 4080,
+      "next_ordinal": 22,
+      "words": 4558,
       "tombstones": [],
       "blocks": [
         {
@@ -22251,11 +22251,45 @@
           "preview": "185. Everyone Wanted Alexander Graham Bell to Debut the Telephone at the Philadelphia Cent"
         },
         {
-          "id": "sts.appendix-b.b0011",
-          "type": "hr",
+          "id": "sts.appendix-b.b0019",
+          "type": "heading",
           "lines": [
             127,
             127
+          ],
+          "words": 5,
+          "hash": "d2650ac4a671",
+          "preview": "## P-09 Primary Sources (added 2026-07-26)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0020",
+          "type": "paragraph",
+          "lines": [
+            129,
+            129
+          ],
+          "words": 222,
+          "hash": "3316c19dc37e",
+          "preview": "*A correction of record. Earlier drafts of P-09 stated that the twelve thousand troops dep"
+        },
+        {
+          "id": "sts.appendix-b.b0021",
+          "type": "list",
+          "lines": [
+            131,
+            136
+          ],
+          "words": 251,
+          "hash": "5b0e906d7d10",
+          "preview": "187. Frank Ongley Darvall, Popular Disturbances and Public Order in Regency England: Being"
+        },
+        {
+          "id": "sts.appendix-b.b0011",
+          "type": "hr",
+          "lines": [
+            138,
+            138
           ],
           "words": 0,
           "hash": "ebad27de99a8",

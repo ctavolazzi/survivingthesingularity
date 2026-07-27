@@ -124,7 +124,7 @@ The old world is gone. It's time to start building the new one.
 
 The Y2K bug was real. Billions of lines of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" was going to mean 1900 to machines that ran the world.
 
-What followed was history's largest premortem. Instead of waiting to see what broke, the world assumed failure in advance and worked backward: roughly three hundred billion dollars spent globally, more than a hundred billion in the United States alone, on auditing, patching, and testing before the deadline. Midnight came. Planes flew. Banks opened. The disaster produced trivia instead of headlines.
+What followed was history's largest premortem. Instead of waiting to see what broke, the world assumed failure in advance and worked backward: roughly three hundred billion dollars spent globally, about a hundred billion in the United States alone, on auditing, patching, and testing before the deadline. Midnight came. Planes flew. Banks opened. The disaster produced trivia instead of headlines.
 
 Then came the instructive part: the punchline. Because nothing happened, a chorus concluded that nothing would have happened, that the whole effort was hysteria. And honesty requires the caveat: some countries that spent little also passed quietly, so the true size of the averted disaster is genuinely contested. Sit with how strange that is. The most successful large-scale act of anticipatory engineering in history is remembered, by many, as an overreaction.
 

@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
   "book_version": "0.7.3",
-  "generated": "2026-07-26",
+  "generated": "2026-07-27",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
     "blocks": 2030,
-    "words": 88931
+    "words": 88930
   },
   "sections": [
     {
@@ -20195,7 +20195,7 @@
       "title": "Chapter 18: The Roadmap and the Premortem Pivot",
       "file": "20-chapter18.md",
       "next_ordinal": 65,
-      "words": 2852,
+      "words": 2851,
       "tombstones": [],
       "blocks": [
         {
@@ -20855,8 +20855,8 @@
             127,
             127
           ],
-          "words": 60,
-          "hash": "baea9aebd941",
+          "words": 59,
+          "hash": "2ed5c8c9b184",
           "preview": "What followed was history's largest premortem. Instead of waiting to see what broke, the w"
         },
         {

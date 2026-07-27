@@ -86,8 +86,11 @@ scripts/sts.py run live.
 
 Any document asserting a word count or a version is making a claim, not a
 measurement, and several of them are stale on purpose-free grounds:
-AUDITOR-BRIEF.md carries stale version strings, and STRIPE-GO-LIVE.md had a
-stale header for ten days.
+AUDITOR-BRIEF.md carries stale version strings, and STRIPE-GO-LIVE.md has now
+had a stale header twice, in both directions: it said "NOT LIVE YET" for ten
+days while production was charging real cards, then "LIVE AND TAKING REAL MONEY"
+after production had been rolled back to test keys. A status line is a claim.
+`python3 scripts/sts.py stripe --live` is the measurement.
 
 CROSS-REFERENCES
 

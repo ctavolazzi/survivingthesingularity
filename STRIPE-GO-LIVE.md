@@ -139,7 +139,14 @@ step 0 — it is the step whose absence caused the overcharge.
       mode, 2026-07-13 → 2026-07-26. Every successful $9 payment is a customer owed a $4
       refund and an apology. Do this even if the answer is zero, and write the number
       down here.
-- [ ] **2. Set the live env vars** in Cloudflare (see step 1 of the procedure below).
+- [ ] **2. Set the live env vars** in Cloudflare (see step 1 of the procedure below),
+      and in the same change flip `EXPECTED_MODE` from `test` to `live` in
+      [.github/workflows/stripe-guard.yml](.github/workflows/stripe-guard.yml). That
+      workflow probes production daily and fails whenever the real mode stops matching
+      the declared one — it is what would have caught both the silent cutover and the
+      silent rollback. Leaving it on `test` after going live means it alarms every day
+      for the wrong reason; leaving it on `live` after a rollback is exactly the alarm
+      you want.
 - [ ] **3. Register the LIVE webhook endpoint** and set its own `whsec_…` — the
       test-mode secret currently in place will not verify live traffic. See the warning
       under "Resolved: the missing webhook secret".

@@ -1,0 +1,112 @@
+name: Stripe Production Guard
+
+# Catches silent drift between what production's checkout actually does and what
+# this repo believes it does. That belief has been wrong twice: the checklist
+# said "NOT LIVE YET" for ten days while real cards were being charged, then
+# said "LIVE AND TAKING REAL MONEY" after production had been rolled back to
+# test keys and the store had quietly stopped collecting anything.
+#
+# Nothing here needs a secret. It probes only public endpoints: it creates a
+# Stripe Checkout Session (which moves no money and charges nobody) and sends an
+# unsigned POST to the webhook, which is rejected by design.
+
+on:
+  schedule:
+    # Daily at 14:00 UTC (7am PT / 10am ET) - an hour after the signals sweep.
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  # The mode production is SUPPOSED to be in. This is the whole point of the
+  # guard: an accidental cutover and an accidental rollback both show up as a
+  # mismatch against this line.
+  #
+  # >>> FLIP THIS TO "live" AS PART OF THE RE-CUTOVER (STRIPE-GO-LIVE.md). <<<
+  # Flip it in the same commit that sets the live env vars, so the guard starts
+  # failing the moment production drifts back off live.
+  EXPECTED_MODE: test
+
+jobs:
+  probe:
+    name: Probe production checkout
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # sts.py already fails on price drift (advertised != charged). It does NOT
+      # fail on a mode change, because it has no way to know which mode you
+      # meant - that is what EXPECTED_MODE supplies.
+      - name: Probe and assert
+        run: |
+          set -o pipefail
+          python scripts/sts.py stripe --live --json | tee probe.json || true
+          python - <<'PY'
+          import json, os, sys
+
+          # The probe is piped through `|| true` so a drift exit code doesn't kill
+          # the step before we can report every problem at once. That also means a
+          # crashed or network-failed probe leaves probe.json empty, which must
+          # read as "could not verify", not as a pass.
+          try:
+              st = json.load(open('probe.json'))
+          except Exception as exc:
+              print(f':: FAIL - the probe produced no usable JSON ({exc}).')
+              print('   Production state is UNVERIFIED. Check whether the site is up.')
+              sys.exit(1)
+
+          expected = os.environ['EXPECTED_MODE']
+          failures = []
+
+          mode = st.get('mode')
+          if mode != expected:
+              if expected == 'live':
+                  failures.append(
+                      f"Production is in {mode!r} mode but should be {expected!r}. "
+                      "The storefront is NOT collecting money - a real card is "
+                      "declined on a test-mode Stripe page.")
+              else:
+                  failures.append(
+                      f"Production is in {mode!r} mode but this repo expects "
+                      f"{expected!r}. If the cutover was intentional, flip "
+                      "EXPECTED_MODE in this workflow. If it was not, real cards "
+                      "are being charged right now.")
+
+          if not st.get('webhook_ok'):
+              failures.append(
+                  f"Webhook is not configured (HTTP {st.get('webhook_status')}). "
+                  "Paid orders are lost whenever the buyer's browser doesn't reach "
+                  "the success page.")
+
+          # Price drift - sts.py's own check, surfaced here so one job reports
+          # every problem at once instead of one per run.
+          for e in st.get('errors', []):
+              failures.append(e)
+
+          adv = ', '.join(f"${c/100:.2f}" for c in st.get('advertised_cents') or []) or 'none found'
+          charged = st.get('charged_cents')
+          print(f"mode={mode} expected={expected} webhook_ok={st.get('webhook_ok')}")
+          print(f"advertised={adv} charged={'$%.2f' % (charged/100) if charged is not None else 'not verified'}")
+
+          if failures:
+              print('\n:: FAIL')
+              for f in failures:
+                  print(f'  - {f}')
+              print('\nSee STRIPE-GO-LIVE.md. These are environment/dashboard faults;'
+                    ' do not "fix" them by editing application code.')
+              sys.exit(1)
+
+          print('\n:: OK - production matches what this repo expects.')
+          PY

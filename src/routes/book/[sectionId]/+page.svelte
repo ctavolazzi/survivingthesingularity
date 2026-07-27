@@ -132,16 +132,9 @@
 
 <FloatingPopupProgressBar />
 
-<svelte:head>
-  <title>{data.section.title} | Surviving the Singularity</title>
-  <meta name="description" content="Read {data.section.title} from {data.book.title}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="{data.section.title} | Surviving the Singularity" />
-  <meta property="og:description" content="Read {data.section.title} from {data.book.title}" />
-  <meta property="og:image" content="{$page.url.origin}/Surviving-the-Singularity-Cover.png" />
-  <meta property="og:url" content="{$page.url.href}" />
-  <meta name="twitter:card" content="summary_large_image" />
-</svelte:head>
+<!-- Head lives in ../+layout.svelte, which renders above the password gate.
+     Anything declared here is inside the gate and so never reaches a crawler
+     or a link unfurler; the layout reads the chapter title off $page.data. -->
 
 <!-- ── CHAPTER NAV: collapsible jump-to-chapter dropdown, closed by default.
      Slides out of the way on scroll-down, back in on scroll-up. The Reader

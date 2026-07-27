@@ -35,9 +35,23 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Preorder the Book | Surviving the Singularity" />
   <meta property="og:description" content="Preorder for $5. Get the current book draft, The Precedent File, and a locked-in spot before the general public. Expected launch 2026." />
-  <meta property="og:image" content="{$page.url.origin}/Surviving-the-Singularity-Cover.png" />
-  <meta property="og:url" content="{$page.url.href}" />
+  <!-- Landscape card, not the portrait cover: og:image gets cropped to roughly
+       1.91:1, so the 1410x2056 art was being sliced. Absolute and hardcoded
+       rather than $page.url, which prerenders to http://sveltekit-prerender.
+       Rebuild with `sts.py og --render`. -->
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:url" content="https://survivingthesingularity.com/early-access" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/early-access.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/early-access.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Preorder Surviving the Singularity for $5 and get the bundle now." />
+
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Preorder the book. Get the bundle now." />
+  <meta name="twitter:description" content="$5 gets you the current draft, The Precedent File, and a 50% discount at launch." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/early-access.png" />
 </svelte:head>
 
 <!-- ── HERO ── -->

@@ -192,6 +192,25 @@
 <svelte:head>
   <title>Free Readiness Checklist: Surviving the Singularity</title>
   <meta name="description" content="7 concrete moves to build real independence before AGI changes everything. Check off steps, add your own notes, and email yourself the results." />
+
+  <!-- Share card. Absolute URLs, hardcoded rather than derived from $page.url,
+       because every social crawler requires them. Rebuild with `sts.py og --render`. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:title" content="Seven concrete moves. Start today." />
+  <meta property="og:description" content="Build real independence before AGI changes everything. Check off steps, add notes, email yourself the results." />
+  <meta property="og:url" content="https://survivingthesingularity.com/checklist" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/checklist.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/checklist.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="The free Surviving the Singularity readiness checklist: seven concrete moves, start today." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Seven concrete moves. Start today." />
+  <meta name="twitter:description" content="Build real independence before AGI changes everything. Check off steps, add notes, email yourself the results." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/checklist.png" />
 </svelte:head>
 
 <div class="cl-page">

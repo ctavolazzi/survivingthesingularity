@@ -10,6 +10,26 @@
 <svelte:head>
   <title>About: Surviving the Singularity</title>
   <meta name="description" content="Christopher Tavolazzi (The Coffee Jesus) is a developer, futurist, and founder of Johnny Autoseed. Surviving the Singularity is a living field guide written in real time as the world changes." />
+
+  <!-- Share card. Absolute URLs, hardcoded rather than derived from $page.url,
+       because every social crawler requires them (and prerendering bakes in
+       http://sveltekit-prerender otherwise). Rebuild with `sts.py og --render`. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:title" content="Written in real time, as the world changes." />
+  <meta property="og:description" content="Christopher Tavolazzi is a developer, futurist, and founder of Johnny Autoseed. Surviving the Singularity is a living field guide." />
+  <meta property="og:url" content="https://survivingthesingularity.com/about" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/about.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/about.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="About the author of Surviving the Singularity: written in real time, as the world changes." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Written in real time, as the world changes." />
+  <meta name="twitter:description" content="Christopher Tavolazzi is a developer, futurist, and founder of Johnny Autoseed. Surviving the Singularity is a living field guide." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/about.png" />
 </svelte:head>
 
 {#if visible}

@@ -42,11 +42,8 @@
   const totalWords = sectionsWithMeta.reduce((sum, s) => sum + s.wordCount, 0);
 </script>
 
-<svelte:head>
-  <title>Read the Book | Surviving the Singularity</title>
-  <meta name="description" content="The full current draft of Surviving the Singularity, navigable chapter by chapter." />
-  <meta name="robots" content="noindex" />
-</svelte:head>
+<!-- Head lives in ./+layout.svelte, which renders above the password gate.
+     Anything declared here sits inside the gate and never reaches a crawler. -->
 
 <div class="book-page">
 {#if visible}

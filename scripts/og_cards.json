@@ -1,0 +1,83 @@
+{
+  "_comment": [
+    "Share cards, one per route. Rendered by `sts.py og --render` into",
+    "static/images/og/<out>, then referenced from that route's <svelte:head>.",
+    "Copy here should echo the page's own title/description - a share card that",
+    "promises something the page does not deliver is worse than no card.",
+    "headline_lead prints white, headline_accent prints amber, on the next line."
+  ],
+  "cards": [
+    {
+      "route": "/",
+      "out": "home.png",
+      "eyebrow": "NEW ERA, NEW PLAYBOOK",
+      "headline_lead": "Surviving",
+      "headline_accent": "the Singularity.",
+      "body": "A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now.",
+      "chip": "PREORDER $5"
+    },
+    {
+      "route": "/early-access",
+      "out": "early-access.png",
+      "eyebrow": "EARLY ACCESS PRICING",
+      "headline_lead": "Preorder the book.",
+      "headline_accent": "Get the bundle now.",
+      "body": "$5 gets you the current draft, The Precedent File, and a 50% discount at launch.",
+      "chip": "PREORDER $5"
+    },
+    {
+      "route": "/about",
+      "out": "about.png",
+      "eyebrow": "ABOUT THE AUTHOR",
+      "headline_lead": "Written in real time,",
+      "headline_accent": "as the world changes.",
+      "body": "Christopher Tavolazzi is a developer, futurist, and founder of Johnny Autoseed. This is a living field guide.",
+      "chip": "THE AUTHOR"
+    },
+    {
+      "route": "/checklist",
+      "out": "checklist.png",
+      "eyebrow": "FREE READINESS CHECKLIST",
+      "headline_lead": "Seven concrete moves.",
+      "headline_accent": "Start today.",
+      "body": "Build real independence before AGI changes everything. Check off steps, add notes, email yourself the results.",
+      "chip": "FREE / NO PAYWALL"
+    },
+    {
+      "route": "/signals",
+      "out": "signals.png",
+      "eyebrow": "RESEARCH SIGNALS",
+      "headline_lead": "The arXiv sweep,",
+      "headline_accent": "ranked and dated.",
+      "body": "Algorithmically swept research ranked by singularity relevance. Auto-updated daily. Not hand-curated.",
+      "chip": "UPDATED DAILY"
+    },
+    {
+      "route": "/blog",
+      "out": "blog.png",
+      "eyebrow": "FIELD NOTES",
+      "headline_lead": "Breakthroughs that",
+      "headline_accent": "reach you first.",
+      "body": "Read about the breakthroughs that might impact your life today, or in the very near future.",
+      "chip": "ESSAYS & ANALYSIS"
+    },
+    {
+      "route": "/book",
+      "out": "book.png",
+      "eyebrow": "THE FULL DRAFT",
+      "headline_lead": "Read the book,",
+      "headline_accent": "chapter by chapter.",
+      "body": "The complete current draft of Surviving the Singularity, navigable chapter by chapter.",
+      "chip": "DRAFT v{version}"
+    },
+    {
+      "route": "/read",
+      "out": "read.png",
+      "eyebrow": "CONTINUOUS READER",
+      "headline_lead": "The whole book,",
+      "headline_accent": "one scroll.",
+      "body": "The full draft in one continuous, readable scroll. Your place is kept as you go.",
+      "chip": "DRAFT v{version}"
+    }
+  ]
+}

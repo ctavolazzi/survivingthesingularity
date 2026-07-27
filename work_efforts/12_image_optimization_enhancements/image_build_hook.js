@@ -33,6 +33,11 @@ const IMAGE_DIRS = [
 // Directories to exclude
 const EXCLUDE_DIRS = [
   path.join(rootDir, 'static/images/optimized'),
+  // Share cards are fetched exactly once, by a scraper, at the single absolute
+  // URL named in the page's og:image tag. Nothing ever requests a 400w webp of
+  // one, so generating seven derivatives per card added 7.4MB of files no
+  // request will ever match.
+  path.join(rootDir, 'static/images/og'),
   path.join(rootDir, 'node_modules'),
   path.join(rootDir, '.svelte-kit')
 ];

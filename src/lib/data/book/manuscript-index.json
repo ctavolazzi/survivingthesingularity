@@ -6,7 +6,7 @@
   "totals": {
     "sections": 30,
     "blocks": 2065,
-    "words": 91840
+    "words": 91862
   },
   "sections": [
     {
@@ -7961,7 +7961,7 @@
       "title": "Chapter 8: The Psychology of the Collapse",
       "file": "10-chapter8.md",
       "next_ordinal": 190,
-      "words": 6172,
+      "words": 6194,
       "tombstones": [
         "sts.chapter8.b0070",
         "sts.chapter8.b0111",
@@ -8519,8 +8519,8 @@
             100,
             101
           ],
-          "words": 36,
-          "hash": "eacd57acdb45",
+          "words": 38,
+          "hash": "83bededd8dd1",
           "preview": "- $E_{\\text{maintenance}}$ is the involuntary thermodynamic cost of keeping your organs fu"
         },
         {
@@ -8710,8 +8710,8 @@
             135,
             135
           ],
-          "words": 43,
-          "hash": "0f73cbae1670",
+          "words": 45,
+          "hash": "1e8389f2540b",
           "preview": "You wouldn't drink untreated water from a stagnant puddle behind a diesel refinery. Hold t"
         },
         {
@@ -9061,9 +9061,9 @@
             208,
             208
           ],
-          "words": 13,
-          "hash": "6a53e0580b14",
-          "preview": "You've reclaimed your E_cognitive. Now spend it, on building local, low-entropy physical n"
+          "words": 15,
+          "hash": "cd393bfa01d3",
+          "preview": "You've reclaimed your $E_{\\text{cognitive}}$. Now spend it, on building local, low-entropy"
         },
         {
           "id": "sts.chapter8.b0098",
@@ -9419,9 +9419,9 @@
             274,
             274
           ],
-          "words": 5,
-          "hash": "b201d4d19db8",
-          "preview": "> **E_maintenance, per capita ∝ (1) / (N)**"
+          "words": 8,
+          "hash": "6bb75c7357dd",
+          "preview": "> $$E_{\\text{maintenance, per capita}} \\propto (1) / (N)$$"
         },
         {
           "id": "sts.chapter8.b0112",
@@ -9431,8 +9431,8 @@
             276
           ],
           "words": 14,
-          "hash": "1456e83ae088",
-          "preview": "Where N is the number of active, trusted nodes in your immediate physical network."
+          "hash": "efe8055172fe",
+          "preview": "Where $N$ is the number of active, trusted nodes in your immediate physical network."
         },
         {
           "id": "sts.chapter8.b0147",
@@ -9519,9 +9519,9 @@
             294,
             294
           ],
-          "words": 4,
-          "hash": "a932c6fe41c3",
-          "preview": "> **Payoff_Cooperation ≫ Payoff_Defection as t → ∞**"
+          "words": 17,
+          "hash": "98779f83fb8c",
+          "preview": "> $$\\text{Payoff}_{\\text{cooperation}} \\gg \\text{Payoff}_{\\text{defection}} \\quad \\text{as"
         },
         {
           "id": "sts.chapter8.b0155",

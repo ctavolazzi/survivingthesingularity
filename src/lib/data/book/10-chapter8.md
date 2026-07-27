@@ -271,7 +271,7 @@ When $E_{\text{expended}}$ exceeds your daily caloric and cognitive intake, your
 
 Now, consider a hyper-local node of three households, six to eight people. By sharing the physical and cognitive load, the maintenance cost per capita drops exponentially:
 
-> $$E_{\text{maintenance, per capita}} \propto \frac{1}{N}$$
+> $$E_{\text{maintenance, per capita}} \propto (1) / (N)$$
 
 Where $N$ is the number of active, trusted nodes in your immediate physical network.
 
@@ -313,7 +313,7 @@ Every node is directly connected to multiple neighboring nodes. Information, pow
 
 We must not fall into the trap of trying to build massive, global networks of direct trust. Human biology has a hard-coded limit on the number of stable, relational bonds a single mind can maintain. This is **Dunbar’s Number**, mathematically modeled around 150 individuals:
 
-> $$N_{\text{cognitive limit}} \approx 150$$
+> $$N_{\text{cognitive limit}} ≈ 150$$
 
 If your network grows beyond this limit, the social mechanisms of trust, mutual accountability, and direct relation begin to break down. You must introduce bureaucratic layers, formal legal contracts, and centralized oversight to maintain order, reintroducing the very systems we are escaping.
 

@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.7.1",
+  "book_version": "0.7.3",
   "generated": "2026-07-26",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2006,
-    "words": 86461
+    "blocks": 2046,
+    "words": 88869
   },
   "sections": [
     {
@@ -14,7 +14,7 @@
       "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md",
       "next_ordinal": 41,
-      "words": 2106,
+      "words": 2105,
       "tombstones": [],
       "blocks": [
         {
@@ -82,8 +82,8 @@
             13,
             13
           ],
-          "words": 75,
-          "hash": "a5f76043d3bc",
+          "words": 74,
+          "hash": "1980fdca0aed",
           "preview": "For years, I've been talking about this, and for years, I've been labeled the local crackp"
         },
         {
@@ -1889,8 +1889,8 @@
       "id": "chapter1",
       "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md",
-      "next_ordinal": 66,
-      "words": 3510,
+      "next_ordinal": 96,
+      "words": 5058,
       "tombstones": [],
       "blocks": [
         {
@@ -1956,18 +1956,18 @@
           "type": "list",
           "lines": [
             13,
-            16
+            17
           ],
-          "words": 88,
-          "hash": "1fdf0d0d92db",
-          "preview": "- The event horizon is behind us, not ahead. The Singularity is not a forecast; it is a st"
+          "words": 122,
+          "hash": "969c16d8b817",
+          "preview": "- Nobody agrees what the word means. One hundred and eighty years of definitions sort into"
         },
         {
           "id": "sts.chapter1.b0007",
           "type": "hr",
           "lines": [
-            18,
-            18
+            19,
+            19
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -1977,8 +1977,8 @@
           "id": "sts.chapter1.b0008",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            21,
+            21
           ],
           "words": 11,
           "hash": "e3b23ea85de0",
@@ -1988,8 +1988,8 @@
           "id": "sts.chapter1.b0009",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            23,
+            23
           ],
           "words": 100,
           "hash": "77ca4b90ff3b",
@@ -1999,8 +1999,8 @@
           "id": "sts.chapter1.b0062",
           "type": "figure",
           "lines": [
-            24,
-            24
+            25,
+            25
           ],
           "words": 17,
           "hash": "b6fc04703b93",
@@ -2012,8 +2012,8 @@
           "id": "sts.chapter1.b0063",
           "type": "caption",
           "lines": [
-            26,
-            26
+            27,
+            27
           ],
           "words": 10,
           "hash": "dafec73a34c0",
@@ -2023,8 +2023,8 @@
           "id": "sts.chapter1.b0010",
           "type": "paragraph",
           "lines": [
-            28,
-            28
+            29,
+            29
           ],
           "words": 42,
           "hash": "d299cff6a65a",
@@ -2034,8 +2034,8 @@
           "id": "sts.chapter1.b0011",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            31,
+            31
           ],
           "words": 85,
           "hash": "abad497d8426",
@@ -2045,8 +2045,8 @@
           "id": "sts.chapter1.b0012",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            33,
+            33
           ],
           "words": 56,
           "hash": "660034573cc5",
@@ -2056,8 +2056,8 @@
           "id": "sts.chapter1.b0013",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            35,
+            35
           ],
           "words": 28,
           "hash": "9047e880f3ef",
@@ -2067,8 +2067,8 @@
           "id": "sts.chapter1.b0014",
           "type": "paragraph",
           "lines": [
-            36,
-            36
+            37,
+            37
           ],
           "words": 79,
           "hash": "e45d37715bda",
@@ -2078,8 +2078,8 @@
           "id": "sts.chapter1.b0064",
           "type": "figure",
           "lines": [
-            38,
-            38
+            39,
+            39
           ],
           "words": 20,
           "hash": "e7a7ed179c6f",
@@ -2091,8 +2091,8 @@
           "id": "sts.chapter1.b0065",
           "type": "caption",
           "lines": [
-            40,
-            40
+            41,
+            41
           ],
           "words": 16,
           "hash": "93fb2563444a",
@@ -2102,8 +2102,8 @@
           "id": "sts.chapter1.b0015",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            43,
+            43
           ],
           "words": 104,
           "hash": "4e70bc0fbe35",
@@ -2113,8 +2113,8 @@
           "id": "sts.chapter1.b0016",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            45,
+            45
           ],
           "words": 52,
           "hash": "42f59543669e",
@@ -2124,8 +2124,8 @@
           "id": "sts.chapter1.b0017",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            47,
+            47
           ],
           "words": 32,
           "hash": "3f882894858d",
@@ -2135,8 +2135,8 @@
           "id": "sts.chapter1.b0018",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            49,
+            49
           ],
           "words": 102,
           "hash": "03c39688b663",
@@ -2146,8 +2146,8 @@
           "id": "sts.chapter1.b0019",
           "type": "paragraph",
           "lines": [
-            50,
-            50
+            51,
+            51
           ],
           "words": 54,
           "hash": "f1074d41e13f",
@@ -2157,8 +2157,8 @@
           "id": "sts.chapter1.b0020",
           "type": "paragraph",
           "lines": [
-            52,
-            52
+            53,
+            53
           ],
           "words": 64,
           "hash": "abd0fa0af66a",
@@ -2168,8 +2168,8 @@
           "id": "sts.chapter1.b0021",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            55,
+            55
           ],
           "words": 26,
           "hash": "3f15fd4a1ece",
@@ -2179,8 +2179,8 @@
           "id": "sts.chapter1.b0022",
           "type": "hr",
           "lines": [
-            56,
-            56
+            57,
+            57
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -2190,8 +2190,8 @@
           "id": "sts.chapter1.b0023",
           "type": "heading",
           "lines": [
-            58,
-            58
+            59,
+            59
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -2199,11 +2199,344 @@
           "level": 2
         },
         {
+          "id": "sts.chapter1.b0066",
+          "type": "heading",
+          "lines": [
+            61,
+            61
+          ],
+          "words": 5,
+          "hash": "59cba26b77b3",
+          "preview": "## Seventeen Definitions and No Agreement",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter1.b0031",
+          "type": "paragraph",
+          "lines": [
+            62,
+            62
+          ],
+          "words": 50,
+          "hash": "11072571d071",
+          "preview": "The word in the title of this book has no agreed meaning. That isn't a technicality, and i"
+        },
+        {
+          "id": "sts.chapter1.b0045",
+          "type": "paragraph",
+          "lines": [
+            64,
+            64
+          ],
+          "words": 89,
+          "hash": "d4473ef0f42a",
+          "preview": "Nikola Danaylov, who runs Singularity Weblog and has interviewed most of the people who th"
+        },
+        {
+          "id": "sts.chapter1.b0067",
+          "type": "paragraph",
+          "lines": [
+            66,
+            66
+          ],
+          "words": 4,
+          "hash": "60b000ac7430",
+          "preview": "Here's the lineage, compressed."
+        },
+        {
+          "id": "sts.chapter1.b0068",
+          "type": "paragraph",
+          "lines": [
+            68,
+            68
+          ],
+          "words": 101,
+          "hash": "13801d76eea4",
+          "preview": "**1847.** A Michigan preacher named R. Thornton reviews a new four-function mechanical cal"
+        },
+        {
+          "id": "sts.chapter1.b0069",
+          "type": "paragraph",
+          "lines": [
+            70,
+            70
+          ],
+          "words": 81,
+          "hash": "6eb8dc792d04",
+          "preview": "**1863.** Samuel Butler, farming sheep in New Zealand, reads Darwin and writes to the Chri"
+        },
+        {
+          "id": "sts.chapter1.b0070",
+          "type": "paragraph",
+          "lines": [
+            72,
+            72
+          ],
+          "words": 53,
+          "hash": "f3c6adfe86c2",
+          "preview": "**1951.** Alan Turing, speaking to a small society in Manchester: \"once the machine thinki"
+        },
+        {
+          "id": "sts.chapter1.b0071",
+          "type": "paragraph",
+          "lines": [
+            74,
+            74
+          ],
+          "words": 70,
+          "hash": "b2b6570ded86",
+          "preview": "**1958.** Stanislaw Ulam, writing his friend John von Neumann's obituary, recalls a conver"
+        },
+        {
+          "id": "sts.chapter1.b0072",
+          "type": "paragraph",
+          "lines": [
+            76,
+            76
+          ],
+          "words": 66,
+          "hash": "e2ecffebc1d0",
+          "preview": "**1965.** I.J. Good, who spent the war breaking German ciphers alongside Turing, writes do"
+        },
+        {
+          "id": "sts.chapter1.b0073",
+          "type": "paragraph",
+          "lines": [
+            78,
+            78
+          ],
+          "words": 84,
+          "hash": "a7369df5c155",
+          "preview": "**1993.** Vernor Vinge, mathematician and novelist, presents \"The Coming Technological Sin"
+        },
+        {
+          "id": "sts.chapter1.b0074",
+          "type": "paragraph",
+          "lines": [
+            80,
+            80
+          ],
+          "words": 59,
+          "hash": "1b6d946b5f79",
+          "preview": "**2005.** Ray Kurzweil, in *The Singularity Is Near*: \"a future period during which the pa"
+        },
+        {
+          "id": "sts.chapter1.b0075",
+          "type": "paragraph",
+          "lines": [
+            82,
+            82
+          ],
+          "words": 127,
+          "hash": "c0b053fb3c18",
+          "preview": "The rest of the list fills in around those. Hans Moravec, in 1988, hands robots the succes"
+        },
+        {
+          "id": "sts.chapter1.b0076",
+          "type": "paragraph",
+          "lines": [
+            84,
+            84
+          ],
+          "words": 11,
+          "hash": "37d814bfc955",
+          "preview": "Fifteen decades. No consensus. One word, doing all of that work."
+        },
+        {
+          "id": "sts.chapter1.b0077",
+          "type": "heading",
+          "lines": [
+            86,
+            86
+          ],
+          "words": 10,
+          "hash": "48893ff007e8",
+          "preview": "### The three schools, and which one this book runs on",
+          "level": 3
+        },
+        {
+          "id": "sts.chapter1.b0078",
+          "type": "paragraph",
+          "lines": [
+            87,
+            87
+          ],
+          "words": 51,
+          "hash": "552e939f8f5a",
+          "preview": "In 2007 Eliezer Yudkowsky did the sorting that makes the pile usable. Nearly every definit"
+        },
+        {
+          "id": "sts.chapter1.b0079",
+          "type": "table",
+          "lines": [
+            89,
+            93
+          ],
+          "words": 82,
+          "hash": "112aa76cdf88",
+          "preview": "| School | The core claim | Whose | What it tells you to do | | --- | --- | --- | --- | | "
+        },
+        {
+          "id": "sts.chapter1.b0080",
+          "type": "paragraph",
+          "lines": [
+            95,
+            95
+          ],
+          "words": 15,
+          "hash": "dd0490ade4f1",
+          "preview": "*Table 1: The three singularity schools (Yudkowsky, 2007), with the planning posture each "
+        },
+        {
+          "id": "sts.chapter1.b0081",
+          "type": "paragraph",
+          "lines": [
+            97,
+            97
+          ],
+          "words": 62,
+          "hash": "97efc0777d5e",
+          "preview": "Those are three genuinely different animals. Accelerating Change is a claim about a graph,"
+        },
+        {
+          "id": "sts.chapter1.b0082",
+          "type": "paragraph",
+          "lines": [
+            99,
+            99
+          ],
+          "words": 26,
+          "hash": "3f5891a7fe2b",
+          "preview": "This book runs on Event Horizon for the map and Intelligence Explosion for the engine, and"
+        },
+        {
+          "id": "sts.chapter1.b0083",
+          "type": "paragraph",
+          "lines": [
+            101,
+            101
+          ],
+          "words": 95,
+          "hash": "6fe8ca093af9",
+          "preview": "Not because Kurzweil's curve is wrong. Because of what a curve does to the person reading "
+        },
+        {
+          "id": "sts.chapter1.b0084",
+          "type": "blockquote",
+          "lines": [
+            103,
+            103
+          ],
+          "words": 12,
+          "hash": "74212fc1610b",
+          "preview": "> **A curve gives you a date. A door gives you a Monday.**"
+        },
+        {
+          "id": "sts.chapter1.b0085",
+          "type": "paragraph",
+          "lines": [
+            105,
+            105
+          ],
+          "words": 65,
+          "hash": "d35bd43e856f",
+          "preview": "The book's one amendment to Good is Chapter 5, and it's the reason Elijah's tower shut its"
+        },
+        {
+          "id": "sts.chapter1.b0086",
+          "type": "heading",
+          "lines": [
+            107,
+            107
+          ],
+          "words": 3,
+          "hash": "35fec334d6a9",
+          "preview": "### The seventeenth slot",
+          "level": 3
+        },
+        {
+          "id": "sts.chapter1.b0087",
+          "type": "paragraph",
+          "lines": [
+            108,
+            108
+          ],
+          "words": 24,
+          "hash": "575d2eb07d12",
+          "preview": "Danaylov left one open. Here is the one this book uses, and every claim in the rest of the"
+        },
+        {
+          "id": "sts.chapter1.b0088",
+          "type": "blockquote",
+          "lines": [
+            110,
+            110
+          ],
+          "words": 26,
+          "hash": "65ed0ca7380a",
+          "preview": "> **The Singularity is the point where intelligence stops being scarce, and every institut"
+        },
+        {
+          "id": "sts.chapter1.b0089",
+          "type": "paragraph",
+          "lines": [
+            112,
+            112
+          ],
+          "words": 15,
+          "hash": "bad5035f5fd2",
+          "preview": "Three things follow, and they're why this definition and not one of the other sixteen."
+        },
+        {
+          "id": "sts.chapter1.b0090",
+          "type": "paragraph",
+          "lines": [
+            114,
+            114
+          ],
+          "words": 62,
+          "hash": "8b2690d5623c",
+          "preview": "**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest huma"
+        },
+        {
+          "id": "sts.chapter1.b0091",
+          "type": "paragraph",
+          "lines": [
+            116,
+            116
+          ],
+          "words": 58,
+          "hash": "edcc8a1b8d51",
+          "preview": "**It's testable this quarter.** You don't need anyone's date. Has the market price of the "
+        },
+        {
+          "id": "sts.chapter1.b0092",
+          "type": "paragraph",
+          "lines": [
+            118,
+            118
+          ],
+          "words": 66,
+          "hash": "01ee62423173",
+          "preview": "**It names the actual emergency, which is not the machine.** It's the gap. The old contrac"
+        },
+        {
+          "id": "sts.chapter1.b0093",
+          "type": "paragraph",
+          "lines": [
+            120,
+            120
+          ],
+          "words": 42,
+          "hash": "6e89f25bbc79",
+          "preview": "Sixteen definitions spent a hundred and eighty years describing the same shadow from diffe"
+        },
+        {
           "id": "sts.chapter1.b0024",
           "type": "heading",
           "lines": [
-            60,
-            60
+            122,
+            122
           ],
           "words": 6,
           "hash": "8e08cebccdc2",
@@ -2214,8 +2547,8 @@
           "id": "sts.chapter1.b0025",
           "type": "paragraph",
           "lines": [
-            61,
-            61
+            123,
+            123
           ],
           "words": 110,
           "hash": "437c46f0b17a",
@@ -2225,8 +2558,8 @@
           "id": "sts.chapter1.b0026",
           "type": "paragraph",
           "lines": [
-            63,
-            63
+            125,
+            125
           ],
           "words": 143,
           "hash": "3c1e07a31e75",
@@ -2236,8 +2569,8 @@
           "id": "sts.chapter1.b0027",
           "type": "heading",
           "lines": [
-            65,
-            65
+            127,
+            127
           ],
           "words": 5,
           "hash": "ecf212bebdfa",
@@ -2248,8 +2581,8 @@
           "id": "sts.chapter1.b0028",
           "type": "paragraph",
           "lines": [
-            66,
-            66
+            128,
+            128
           ],
           "words": 91,
           "hash": "edbc86bbc83a",
@@ -2259,8 +2592,8 @@
           "id": "sts.chapter1.b0029",
           "type": "paragraph",
           "lines": [
-            68,
-            68
+            130,
+            130
           ],
           "words": 99,
           "hash": "b151b628bdb3",
@@ -2270,30 +2603,30 @@
           "id": "sts.chapter1.b0030",
           "type": "table",
           "lines": [
-            70,
-            74
+            132,
+            136
           ],
           "words": 66,
           "hash": "6f6cf1021132",
           "preview": "| Evaluation Metric / Task | Best Prior Result, Ensembles Included | Transformer, \"Big\" Co"
         },
         {
-          "id": "sts.chapter1.b0031",
+          "id": "sts.chapter1.b0094",
           "type": "paragraph",
           "lines": [
-            76,
-            76
+            138,
+            138
           ],
           "words": 38,
-          "hash": "222c0e9e6246",
-          "preview": "*Table 1: Performance Benchmarks of the 2017 Transformer Architecture. Figures are for the"
+          "hash": "26f35a415a9f",
+          "preview": "*Table 2: Performance Benchmarks of the 2017 Transformer Architecture. Figures are for the"
         },
         {
           "id": "sts.chapter1.b0032",
           "type": "paragraph",
           "lines": [
-            78,
-            78
+            140,
+            140
           ],
           "words": 77,
           "hash": "9dd946025655",
@@ -2303,8 +2636,8 @@
           "id": "sts.chapter1.b0033",
           "type": "paragraph",
           "lines": [
-            80,
-            80
+            142,
+            142
           ],
           "words": 45,
           "hash": "0c87b14a2dc5",
@@ -2314,8 +2647,8 @@
           "id": "sts.chapter1.b0034",
           "type": "heading",
           "lines": [
-            82,
-            82
+            144,
+            144
           ],
           "words": 6,
           "hash": "b4f8bb53e3b6",
@@ -2326,8 +2659,8 @@
           "id": "sts.chapter1.b0035",
           "type": "paragraph",
           "lines": [
-            83,
-            83
+            145,
+            145
           ],
           "words": 83,
           "hash": "e89909f5bb3a",
@@ -2337,8 +2670,8 @@
           "id": "sts.chapter1.b0036",
           "type": "paragraph",
           "lines": [
-            85,
-            85
+            147,
+            147
           ],
           "words": 101,
           "hash": "08b52ce8b681",
@@ -2348,8 +2681,8 @@
           "id": "sts.chapter1.b0037",
           "type": "paragraph",
           "lines": [
-            87,
-            87
+            149,
+            149
           ],
           "words": 99,
           "hash": "bcd0483e3d2a",
@@ -2359,8 +2692,8 @@
           "id": "sts.chapter1.b0038",
           "type": "paragraph",
           "lines": [
-            89,
-            89
+            151,
+            151
           ],
           "words": 101,
           "hash": "17d1fbabfbae",
@@ -2370,8 +2703,8 @@
           "id": "sts.chapter1.b0039",
           "type": "heading",
           "lines": [
-            91,
-            91
+            153,
+            153
           ],
           "words": 7,
           "hash": "07428aa96232",
@@ -2382,8 +2715,8 @@
           "id": "sts.chapter1.b0040",
           "type": "paragraph",
           "lines": [
-            92,
-            92
+            154,
+            154
           ],
           "words": 79,
           "hash": "c4d52a448566",
@@ -2393,8 +2726,8 @@
           "id": "sts.chapter1.b0041",
           "type": "paragraph",
           "lines": [
-            94,
-            94
+            156,
+            156
           ],
           "words": 95,
           "hash": "52ca48cdb2fb",
@@ -2404,8 +2737,8 @@
           "id": "sts.chapter1.b0042",
           "type": "paragraph",
           "lines": [
-            96,
-            96
+            158,
+            158
           ],
           "words": 125,
           "hash": "8db569ea2a3d",
@@ -2415,8 +2748,8 @@
           "id": "sts.chapter1.b0043",
           "type": "paragraph",
           "lines": [
-            98,
-            98
+            160,
+            160
           ],
           "words": 52,
           "hash": "69dca5a1dbea",
@@ -2426,30 +2759,30 @@
           "id": "sts.chapter1.b0044",
           "type": "table",
           "lines": [
-            100,
-            103
+            162,
+            165
           ],
           "words": 33,
           "hash": "023455a616de",
           "preview": "| AI Milestone | 2022 Aggregate Forecast | 2023 Aggregate Forecast | Net Shift | | :-: | :"
         },
         {
-          "id": "sts.chapter1.b0045",
+          "id": "sts.chapter1.b0095",
           "type": "paragraph",
           "lines": [
-            105,
-            105
+            167,
+            167
           ],
           "words": 13,
-          "hash": "c49aec630278",
-          "preview": "*Table 2: Shifts in Expert Consensus on AI Timelines (Grace et al., 2024).*"
+          "hash": "4979e28d7f7e",
+          "preview": "*Table 3: Shifts in Expert Consensus on AI Timelines (Grace et al., 2024).*"
         },
         {
           "id": "sts.chapter1.b0046",
           "type": "paragraph",
           "lines": [
-            107,
-            107
+            169,
+            169
           ],
           "words": 72,
           "hash": "ea8b74d2405a",
@@ -2459,8 +2792,8 @@
           "id": "sts.chapter1.b0047",
           "type": "paragraph",
           "lines": [
-            109,
-            109
+            171,
+            171
           ],
           "words": 60,
           "hash": "f5b42741003f",
@@ -2470,8 +2803,8 @@
           "id": "sts.chapter1.b0048",
           "type": "heading",
           "lines": [
-            111,
-            111
+            173,
+            173
           ],
           "words": 8,
           "hash": "00fd047ac5ab",
@@ -2482,8 +2815,8 @@
           "id": "sts.chapter1.b0049",
           "type": "paragraph",
           "lines": [
-            112,
-            112
+            174,
+            174
           ],
           "words": 52,
           "hash": "afb402eaf917",
@@ -2493,8 +2826,8 @@
           "id": "sts.chapter1.b0050",
           "type": "paragraph",
           "lines": [
-            114,
-            114
+            176,
+            176
           ],
           "words": 88,
           "hash": "af94e01c8e6e",
@@ -2504,8 +2837,8 @@
           "id": "sts.chapter1.b0051",
           "type": "paragraph",
           "lines": [
-            116,
-            116
+            178,
+            178
           ],
           "words": 134,
           "hash": "b3d0175c49ed",
@@ -2515,8 +2848,8 @@
           "id": "sts.chapter1.b0052",
           "type": "paragraph",
           "lines": [
-            118,
-            118
+            180,
+            180
           ],
           "words": 147,
           "hash": "a05ac507b7ec",
@@ -2526,8 +2859,8 @@
           "id": "sts.chapter1.b0053",
           "type": "hr",
           "lines": [
-            120,
-            120
+            182,
+            182
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -2537,8 +2870,8 @@
           "id": "sts.chapter1.b0054",
           "type": "heading",
           "lines": [
-            122,
-            122
+            184,
+            184
           ],
           "words": 11,
           "hash": "d093e8ad6f1c",
@@ -2549,8 +2882,8 @@
           "id": "sts.chapter1.b0055",
           "type": "paragraph",
           "lines": [
-            124,
-            124
+            186,
+            186
           ],
           "words": 45,
           "hash": "3c72268c82a7",
@@ -2560,8 +2893,8 @@
           "id": "sts.chapter1.b0056",
           "type": "paragraph",
           "lines": [
-            126,
-            126
+            188,
+            188
           ],
           "words": 13,
           "hash": "aa37ed36be1c",
@@ -2571,8 +2904,8 @@
           "id": "sts.chapter1.b0057",
           "type": "paragraph",
           "lines": [
-            128,
-            128
+            190,
+            190
           ],
           "words": 81,
           "hash": "6afbb36430e0",
@@ -2582,8 +2915,8 @@
           "id": "sts.chapter1.b0058",
           "type": "paragraph",
           "lines": [
-            130,
-            130
+            192,
+            192
           ],
           "words": 51,
           "hash": "c35d7572afba",
@@ -2593,8 +2926,8 @@
           "id": "sts.chapter1.b0059",
           "type": "paragraph",
           "lines": [
-            132,
-            132
+            194,
+            194
           ],
           "words": 52,
           "hash": "b6c62da4c719",
@@ -2604,8 +2937,8 @@
           "id": "sts.chapter1.b0060",
           "type": "paragraph",
           "lines": [
-            134,
-            134
+            196,
+            196
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -2615,8 +2948,8 @@
           "id": "sts.chapter1.b0061",
           "type": "list",
           "lines": [
-            136,
-            138
+            198,
+            200
           ],
           "words": 158,
           "hash": "b039512707d1",
@@ -10679,8 +11012,8 @@
             247
           ],
           "words": 13,
-          "hash": "9ede92118db7",
-          "preview": "> **C_DO, sat ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.02 mg/L**"
+          "hash": "5d6c803b741b",
+          "preview": "> **C_DO, sat ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.03 mg/L**"
         },
         {
           "id": "sts.chapter9.b0102",
@@ -21910,8 +22243,8 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
-      "next_ordinal": 16,
-      "words": 3579,
+      "next_ordinal": 19,
+      "words": 4080,
       "tombstones": [],
       "blocks": [
         {
@@ -21977,18 +22310,52 @@
           "type": "list",
           "lines": [
             38,
-            66
+            50
           ],
-          "words": 481,
-          "hash": "04e58aa4beac",
+          "words": 202,
+          "hash": "8fd8205d993b",
           "preview": "133. Centennial Exhibition, Philadelphia 1876 (Bell telephone demonstration) - Wikipedia, "
+        },
+        {
+          "id": "sts.appendix-b.b0016",
+          "type": "heading",
+          "lines": [
+            52,
+            52
+          ],
+          "words": 8,
+          "hash": "761e88c41ba4",
+          "preview": "## Defining the Singularity: The Primary Lineage (added 2026-07-26)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0017",
+          "type": "paragraph",
+          "lines": [
+            54,
+            54
+          ],
+          "words": 65,
+          "hash": "67f2043302e4",
+          "preview": "*Every quotation in Chapter 1's definitional history was checked against the primary text "
+        },
+        {
+          "id": "sts.appendix-b.b0018",
+          "type": "list",
+          "lines": [
+            56,
+            88
+          ],
+          "words": 707,
+          "hash": "5777f805ee62",
+          "preview": "146. Nikola Danaylov, 17 Definitions of the Technological Singularity - Singularity Weblog"
         },
         {
           "id": "sts.appendix-b.b0007",
           "type": "heading",
           "lines": [
-            68,
-            68
+            90,
+            90
           ],
           "words": 6,
           "hash": "191fdb6973c2",
@@ -21999,8 +22366,8 @@
           "id": "sts.appendix-b.b0008",
           "type": "list",
           "lines": [
-            70,
-            73
+            92,
+            95
           ],
           "words": 95,
           "hash": "89f0a4a3ccc0",
@@ -22010,8 +22377,8 @@
           "id": "sts.appendix-b.b0009",
           "type": "heading",
           "lines": [
-            75,
-            75
+            97,
+            97
           ],
           "words": 5,
           "hash": "97bedcb12d56",
@@ -22022,8 +22389,8 @@
           "id": "sts.appendix-b.b0010",
           "type": "list",
           "lines": [
-            77,
-            93
+            99,
+            115
           ],
           "words": 303,
           "hash": "3cf27cba912f",
@@ -22033,8 +22400,8 @@
           "id": "sts.appendix-b.b0012",
           "type": "heading",
           "lines": [
-            95,
-            95
+            117,
+            117
           ],
           "words": 5,
           "hash": "b7fecee21880",
@@ -22045,8 +22412,8 @@
           "id": "sts.appendix-b.b0013",
           "type": "list",
           "lines": [
-            97,
-            98
+            119,
+            120
           ],
           "words": 69,
           "hash": "7464a8d19651",
@@ -22056,8 +22423,8 @@
           "id": "sts.appendix-b.b0014",
           "type": "heading",
           "lines": [
-            100,
-            100
+            122,
+            122
           ],
           "words": 5,
           "hash": "0201cb41d5eb",
@@ -22068,8 +22435,8 @@
           "id": "sts.appendix-b.b0015",
           "type": "list",
           "lines": [
-            102,
-            103
+            124,
+            125
           ],
           "words": 82,
           "hash": "28a834f1a102",
@@ -22079,8 +22446,8 @@
           "id": "sts.appendix-b.b0011",
           "type": "hr",
           "lines": [
-            105,
-            105
+            127,
+            127
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -22092,8 +22459,8 @@
       "id": "appendix-c",
       "title": "Appendix C: Executive Reference Guide",
       "file": "24-appendix-c.md",
-      "next_ordinal": 11,
-      "words": 342,
+      "next_ordinal": 18,
+      "words": 702,
       "tombstones": [],
       "blocks": [
         {
@@ -22120,11 +22487,89 @@
           "preview": "*Use this guide to explain the core trajectory of the singularity to others.*"
         },
         {
-          "id": "sts.appendix-c.b0003",
+          "id": "sts.appendix-c.b0011",
           "type": "heading",
           "lines": [
             5,
             5
+          ],
+          "words": 6,
+          "hash": "9914a19cd998",
+          "preview": "## PART 0: What the Word Means",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-c.b0012",
+          "type": "paragraph",
+          "lines": [
+            7,
+            7
+          ],
+          "words": 44,
+          "hash": "76ce0c00066a",
+          "preview": "*Before the stages, the definition. Nobody agrees on one, so most arguments about the sing"
+        },
+        {
+          "id": "sts.appendix-c.b0013",
+          "type": "list",
+          "lines": [
+            9,
+            10
+          ],
+          "words": 73,
+          "hash": "33464361ebc0",
+          "preview": "- **The one-sentence definition this book uses.** The Singularity is the point where intel"
+        },
+        {
+          "id": "sts.appendix-c.b0014",
+          "type": "paragraph",
+          "lines": [
+            12,
+            12
+          ],
+          "words": 31,
+          "hash": "81b81c2719cd",
+          "preview": "**The three schools, in case somebody quotes one at you.** Eliezer Yudkowsky sorted the wh"
+        },
+        {
+          "id": "sts.appendix-c.b0015",
+          "type": "list",
+          "lines": [
+            14,
+            16
+          ],
+          "words": 97,
+          "hash": "6892e7173b42",
+          "preview": "- **Accelerating Change (Kurzweil, Toffler, Smart).** Technology feeds on itself and speed"
+        },
+        {
+          "id": "sts.appendix-c.b0016",
+          "type": "paragraph",
+          "lines": [
+            18,
+            18
+          ],
+          "words": 61,
+          "hash": "06250d2b46bb",
+          "preview": "**This book's position.** Event Horizon for the map, Intelligence Explosion for the engine"
+        },
+        {
+          "id": "sts.appendix-c.b0017",
+          "type": "paragraph",
+          "lines": [
+            20,
+            20
+          ],
+          "words": 48,
+          "hash": "0f658cef463d",
+          "preview": "**The five names worth knowing.** Thornton (1847, first to describe machines fixing their "
+        },
+        {
+          "id": "sts.appendix-c.b0003",
+          "type": "heading",
+          "lines": [
+            22,
+            22
           ],
           "words": 9,
           "hash": "4bbcd91eab0f",
@@ -22135,8 +22580,8 @@
           "id": "sts.appendix-c.b0004",
           "type": "list",
           "lines": [
-            7,
-            11
+            24,
+            28
           ],
           "words": 136,
           "hash": "87fed857fea6",
@@ -22146,8 +22591,8 @@
           "id": "sts.appendix-c.b0005",
           "type": "heading",
           "lines": [
-            13,
-            13
+            30,
+            30
           ],
           "words": 9,
           "hash": "9482228b1773",
@@ -22158,8 +22603,8 @@
           "id": "sts.appendix-c.b0006",
           "type": "list",
           "lines": [
-            15,
-            16
+            32,
+            33
           ],
           "words": 61,
           "hash": "b60c802ac867",
@@ -22169,8 +22614,8 @@
           "id": "sts.appendix-c.b0007",
           "type": "heading",
           "lines": [
-            18,
-            18
+            35,
+            35
           ],
           "words": 10,
           "hash": "ea6ddbd47614",
@@ -22181,8 +22626,8 @@
           "id": "sts.appendix-c.b0008",
           "type": "list",
           "lines": [
-            20,
-            21
+            37,
+            38
           ],
           "words": 62,
           "hash": "3b952a246273",
@@ -22192,8 +22637,8 @@
           "id": "sts.appendix-c.b0009",
           "type": "heading",
           "lines": [
-            23,
-            23
+            40,
+            40
           ],
           "words": 5,
           "hash": "977fc1deca5e",
@@ -22204,8 +22649,8 @@
           "id": "sts.appendix-c.b0010",
           "type": "list",
           "lines": [
-            25,
-            25
+            42,
+            42
           ],
           "words": 32,
           "hash": "8aef0c8685a1",

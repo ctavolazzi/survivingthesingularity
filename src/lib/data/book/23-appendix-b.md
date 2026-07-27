@@ -48,6 +48,28 @@
 143. Luddite (frame-breaking, the Frame Breaking Act, the York executions) - Wikipedia, https://en.wikipedia.org/wiki/Luddite
 144. Torches of Freedom (Bernays, 1929 Easter parade) - Wikipedia, https://en.wikipedia.org/wiki/Torches_of_Freedom
 145. Edward Bernays - Wikipedia, https://en.wikipedia.org/wiki/Edward_Bernays
+
+## Defining the Singularity: The Primary Lineage (added 2026-07-26)
+
+*Every quotation in Chapter 1's definitional history was checked against the primary text or the closest available full-text archive, not against a secondary summary. Where the compiled list that prompted this section attributed a line loosely, the entry below carries the corrected source: Butler's "no security" sentence is from Erewhon (1872), which grew out of the 1863 newspaper letter, and is cited here as such.*
+
+146. Nikola Danaylov, 17 Definitions of the Technological Singularity - Singularity Weblog, https://www.singularityweblog.com/17-definitions-of-the-technological-singularity/
+147. Samuel Butler and the Technological Singularity - Singularity Weblog, https://www.singularityweblog.com/samuel-butler/
+148. R. Thornton, The Expounder of Primitive Christianity, vol. 4, Ann Arbor, Michigan, 1847, p. 281 (the earliest known description of machines remedying their own defects); see Technological singularity - Wikipedia, https://en.wikipedia.org/wiki/Technological_singularity
+149. Samuel Butler, "Darwin among the Machines," The Press, Christchurch, New Zealand, 13 June 1863, published under the pseudonym Cellarius - Wikisource, https://en.wikisource.org/wiki/Darwin_among_the_Machines
+150. Samuel Butler, Erewhon, or Over the Range (1872), "The Book of the Machines," source of the "no security against the ultimate development of mechanical consciousness" passage - Project Gutenberg, https://www.gutenberg.org/ebooks/1906
+151. Darwin among the Machines - Wikipedia, https://en.wikipedia.org/wiki/Darwin_among_the_Machines
+152. Alan Turing, "Intelligent Machinery, A Heretical Theory," c. 1951, lecture to the '51 Society, Manchester; reprinted in The Essential Turing (Oxford) - full text via gwern, https://gwern.net/doc/ai/1951-turing.pdf
+153. AMT-B-4, "Intelligent Machinery, A Heretical Theory" - The Turing Digital Archive, King's College Cambridge, https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4
+154. Stanislaw Ulam, "Tribute to John von Neumann," Bulletin of the American Mathematical Society 64, no. 3, part 2 (May 1958), p. 5, source of the "essential singularity" passage; see Technological singularity - Wikipedia, https://en.wikipedia.org/wiki/Technological_singularity
+155. I.J. Good, "Speculations Concerning the First Ultraintelligent Machine," Advances in Computers, vol. 6 (1965), source of the "intelligence explosion" - Wikipedia entry with citation, https://en.wikipedia.org/wiki/I._J._Good
+156. Vernor Vinge, "The Coming Technological Singularity: How to Survive in the Post-Human Era," VISION-21 Symposium, NASA Lewis Research Center and the Ohio Aerospace Institute, March 30-31, 1993 - full text, https://edoras.sdsu.edu/~vinge/misc/singularity.html
+157. Hans Moravec, Mind Children: The Future of Robot and Human Intelligence, Harvard University Press, 1988 - Wikipedia, https://en.wikipedia.org/wiki/Mind_Children
+158. Nick Bostrom, "How Long Before Superintelligence?," 1997, revised through 2008 - author's own site, https://nickbostrom.com/superintelligence
+159. Ray Kurzweil, The Singularity Is Near: When Humans Transcend Biology, Viking, 2005 - Wikipedia, https://en.wikipedia.org/wiki/The_Singularity_Is_Near
+160. Eliezer Yudkowsky, "Three Major Singularity Schools," September 2007 - author's own site, https://yudkowsky.net/singularity/schools/
+161. John Smart, Acceleration Watch (the "permanent and irreversible developmental phase change" framing), http://www.accelerationwatch.com/
+162. Beckett Sterner et al., "Past Visions of Artificial Futures: One Hundred and Fifty Years under the Spectre of Evolving Machines" - arXiv, https://arxiv.org/pdf/1806.01322
 146. Late Bronze Age collapse - Wikipedia, https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse
 147. Eric H. Cline, 1177 B.C.: The Year Civilization Collapsed - Wikipedia, https://en.wikipedia.org/wiki/1177_B.C.:_The_Year_Civilization_Collapsed
 148. Homestead Acts (1862) - Wikipedia, https://en.wikipedia.org/wiki/Homestead_Acts

@@ -10,6 +10,7 @@
 
 **In this chapter:**
 
+- Nobody agrees what the word means. One hundred and eighty years of definitions sort into three schools that quietly contradict each other, and picking the wrong one is how you talk yourself into waiting.
 - The event horizon is behind us, not ahead. The Singularity is not a forecast; it is a structural condition we are already living inside.
 - The 2017 Transformer paper, "Attention Is All You Need," automated the one thing we thought was ours alone: the processing of thought itself.
 - Silicon is not the only front. Biological computing is closing on the same target from a completely different, far more energy-efficient direction.
@@ -57,6 +58,67 @@ He left the tower off for a week. Then he opened the notebook where he'd written
 
 ## The Foundations
 
+## Seventeen Definitions and No Agreement
+The word in the title of this book has no agreed meaning. That isn't a technicality, and it isn't pedantry. It's the reason the argument about it never resolves, and it's the reason two intelligent people can look at the same week of news and walk away with opposite plans.
+
+Nikola Danaylov, who runs Singularity Weblog and has interviewed most of the people who think about this professionally, went looking for a definition and came back with seventeen. Not seventeen phrasings of one idea. Seventeen ideas, several of which contradict each other, all wearing the same word. He arranged them in the order they were written, which turns out to run back a hundred and eighty years, and then he left the last slot empty for the reader. That's either intellectual humility or a confession, and it's probably both.
+
+Here's the lineage, compressed.
+
+**1847.** A Michigan preacher named R. Thornton reviews a new four-function mechanical calculator for *The Expounder of Primitive Christianity*, and he doesn't like it. Students will turn a crank instead of thinking. Then, in the middle of the complaint, he trips over the whole thing: "But who knows that such machines when brought to greater perfection, may not think of a plan to remedy all their own defects and then grind out ideas beyond the ken of mortal mind!" That is recursive self-improvement, described in 1847, by a man annoyed about arithmetic homework. Then the idea goes quiet for a century.
+
+**1863.** Samuel Butler, farming sheep in New Zealand, reads Darwin and writes to the Christchurch *Press* under a pen name. The letter is called "Darwin among the Machines." He expands it nine years later in *Erewhon*, where the line lands: "There is no security against the ultimate development of mechanical consciousness, in the fact of machines possessing little consciousness now. A mollusc has not much consciousness." His argument is about rate. Machines are doing in centuries what biology needs epochs for.
+
+**1951.** Alan Turing, speaking to a small society in Manchester: "once the machine thinking method has started, it would not take long to outstrip our feeble powers." And then, without hedging, "At some stage therefore we should have to expect the machines to take control." He credits Butler for the idea, by name.
+
+**1958.** Stanislaw Ulam, writing his friend John von Neumann's obituary, recalls a conversation about "the accelerating progress of technology and changes in human life, which gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue." That's the word arriving, borrowed from mathematics, where a singularity is the point at which your equation stops returning answers.
+
+**1965.** I.J. Good, who spent the war breaking German ciphers alongside Turing, writes down the mechanism. "Let an ultraintelligent machine be defined as a machine that can far surpass all the intellectual activities of any man however clever." Such a machine can design better machines. "There would then unquestionably be an 'intelligence explosion.'" Good called it the last invention humanity would ever need to make.
+
+**1993.** Vernor Vinge, mathematician and novelist, presents "The Coming Technological Singularity" at a NASA symposium and opens on the two sentences at the head of this chapter. He also does something almost nobody who quotes him bothers to repeat: he lists four separate roads to the same destination. Computers that wake up. Networks that wake up. Human-computer interfaces so intimate that the pair counts as superhuman. Or straight biological enhancement of human intellect. Four doors, not one, and the argument doesn't care which opens.
+
+**2005.** Ray Kurzweil, in *The Singularity Is Near*: "a future period during which the pace of technological change will be so rapid, its impact so deep, that human life will be irreversibly transformed." Read that again and notice what's missing. There is no machine in that sentence. Kurzweil's singularity is a property of a curve, not of a mind.
+
+The rest of the list fills in around those. Hans Moravec, in 1988, hands robots the succession somewhere around 2030 to 2040. Nick Bostrom, in 1997, defines superintelligence as "an intellect that is much smarter than the best human brains in practically every field, including scientific creativity, general wisdom and social skills." Kevin Kelly compresses a million years of change into the next five minutes. John Smart calls it a permanent and irreversible developmental phase change. The list even runs through Ted Kaczynski, whose passage about a system growing too complex for human beings to steer is the one part of that text that reads as analysis instead of pathology, which is worth knowing and is not a defense of a man who mailed bombs to strangers.
+
+Fifteen decades. No consensus. One word, doing all of that work.
+
+### The three schools, and which one this book runs on
+In 2007 Eliezer Yudkowsky did the sorting that makes the pile usable. Nearly every definition on that list, he argued, belongs to one of three schools, and the schools quietly contradict each other once you push on them. Blend them and you end up defending a claim that nobody actually holds.
+
+| School | The core claim | Whose | What it tells you to do |
+| --- | --- | --- | --- |
+| **Accelerating Change** | "Technological change feeds on itself, and therefore accelerates." | Kurzweil, Toffler, Smart | Read the curve, extrapolate, set a date. |
+| **Event Horizon** | Build something smarter than us and the far side stops being predictable, by anyone, the builders included. | Vinge | Stop forecasting. Prepare for the unforecastable. |
+| **Intelligence Explosion** | Intelligence is what produces technology. Aim it at itself and the loop closes. | Good, Yudkowsky | Watch one variable: can it improve itself yet? |
+
+*Table 1: The three singularity schools (Yudkowsky, 2007), with the planning posture each one implies.*
+
+Those are three genuinely different animals. Accelerating Change is a claim about a graph, and it doesn't require anything anywhere to be smarter than you are. Event Horizon is a claim about the limits of prediction. Intelligence Explosion is a claim about a feedback loop, and a loop can close fast enough that no curve ever shows it to you in time.
+
+This book runs on Event Horizon for the map and Intelligence Explosion for the engine, and it declines Accelerating Change as a planning tool on purpose.
+
+Not because Kurzweil's curve is wrong. Because of what a curve does to the person reading it. A smooth exponential invites you to find your dot on it, notice that the interesting part is somewhere off to the right, and go back to work. It sells you a date, and a date is permission to wait. The Precedent at the end of this chapter is what happens to people who accept a comfortable date from a credible source. Event Horizon takes the date away and hands you a door instead, and doors don't give notice.
+
+> **A curve gives you a date. A door gives you a Monday.**
+
+The book's one amendment to Good is Chapter 5, and it's the reason Elijah's tower shut itself down at 1:20 in the morning. The intelligence explosion is real, and it is a physical process. It runs on watts. It sheds heat. Both of those are metered, and somebody owns the meter. Good's loop doesn't close in a vacuum. It closes wherever the power is.
+
+### The seventeenth slot
+Danaylov left one open. Here is the one this book uses, and every claim in the rest of these pages runs downstream of it:
+
+> **The Singularity is the point where intelligence stops being scarce, and every institution quietly built on its scarcity starts failing before anyone has written the replacement.**
+
+Three things follow, and they're why this definition and not one of the other sixteen.
+
+**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything at all. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.
+
+**It's testable this quarter.** You don't need anyone's date. Has the market price of the cognitive work you sell fallen in the last eighteen months? Has the institution that pays for it started behaving strangely about it, restructuring, retitling, quietly not backfilling? That's the measurement, and you can run it on yourself before the end of the week.
+
+**It names the actual emergency, which is not the machine.** It's the gap. The old contract is failing on a schedule set by hardware, and the new one is being drafted by nobody in particular, slowly, mostly by whoever holds the power contracts. Everything in Part II is about that gap. Everything in Part III is about what you build inside it while it's still open.
+
+Sixteen definitions spent a hundred and eighty years describing the same shadow from different angles, and nearly all of them looked up, toward the thing arriving. This one looks down, at the floor already going soft under people you know by name.
+
 ## The Event Horizon of General Intelligence
 The public, institutional, and academic discourse surrounding advanced technology frequently approaches the concept of the Technological Singularity as a hypothetical event confined to the distant future. However, empirical trajectories across machine learning, biological computing, and macroeconomic restructuring indicate that the event horizon has already been crossed. The Singularity is no longer an abstract philosophical debate; it is an active, structural reality driven by exponential progressions in computational intelligence and the decoupling of economic value from human labor. The fundamental premise of this societal and technological transition is that intelligence, historically the ultimate scarce resource that has gated human progress, innovation, and production, is rapidly approaching a marginal cost of zero.
 
@@ -73,7 +135,7 @@ The seminal paper "Attention Is All You Need" achieved a profound structural bre
 | WMT 2014 English-to-French (BLEU) | 41.3 (ConvS2S ensemble) | 41.8, a new single-model record |
 | Training compute, English-to-German | 1.8 x 10^20 FLOPs (GNMT ensemble) | 2.3 x 10^19 FLOPs: 3.5 days on eight P100 GPUs |
 
-*Table 1: Performance Benchmarks of the 2017 Transformer Architecture. Figures are for the 213-million-parameter "big" configuration; the 65-million-parameter base model reached 27.3 and 38.1 on the same two tasks after twelve hours on the same hardware.*
+*Table 2: Performance Benchmarks of the 2017 Transformer Architecture. Figures are for the 213-million-parameter "big" configuration; the 65-million-parameter base model reached 27.3 and 38.1 on the same two tasks after twelve hours on the same hardware.*
 
 By eliminating the sequential bottleneck, self-attention dramatically improved the speed, scalability, and efficiency of models, enabling the processing of intricate patterns over long-range dependencies across massive datasets. This parallelization was not merely a software optimization; it fundamentally altered the physical execution of machine learning. Later implementations went further, restructuring the model so that its attention and feed-forward stages run concurrently instead of one after the other, squeezing measurably more work out of every GPU in the cluster.
 
@@ -102,7 +164,7 @@ The broader scientific community is rapidly adjusting its expectations to align 
 | High-Level Machine Intelligence (HLMI), 50% probability | 2060 | 2047 | 13 years sooner |
 | Full Automation of Labor (FAOL), 50% probability | 2164 | 2116 | 48 years sooner |
 
-*Table 2: Shifts in Expert Consensus on AI Timelines (Grace et al., 2024).*
+*Table 3: Shifts in Expert Consensus on AI Timelines (Grace et al., 2024).*
 
 The same survey put a 10 percent probability on high-level machine intelligence arriving as early as 2027. And on the darkest question it asked, between 37.8 and 51.4 percent of respondents, depending on how the question was framed, assigned at least a 10 percent probability to outcomes as bad as human extinction. These are not doomers on a forum. These are the people building the systems, surveyed by the thousands.
 

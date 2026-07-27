@@ -244,7 +244,7 @@ At 15°C, the water can hold a generous amount of oxygen, providing a highly sta
 
 **Scenario B: Brewing in the peak of summer (**T = 35°C**):**
 
-> **C_DO, sat ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.02 mg/L**
+> **C_DO, sat ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.03 mg/L**
 
 At 35°C, the saturation point drops dangerously close to our minimum safety limit of 6.0 mg/L. If your biological population spikes and begins consuming oxygen faster than your air pump can dissolve it, the tank will instantly go anaerobic.
 

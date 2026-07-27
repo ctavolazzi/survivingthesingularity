@@ -5,8 +5,8 @@
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2046,
-    "words": 88869
+    "blocks": 2027,
+    "words": 88450
   },
   "sections": [
     {
@@ -7635,9 +7635,30 @@
       "id": "chapter8",
       "title": "Chapter 8: The Psychology of the Collapse",
       "file": "10-chapter8.md",
-      "next_ordinal": 189,
-      "words": 6563,
-      "tombstones": [],
+      "next_ordinal": 190,
+      "words": 6144,
+      "tombstones": [
+        "sts.chapter8.b0070",
+        "sts.chapter8.b0111",
+        "sts.chapter8.b0113",
+        "sts.chapter8.b0114",
+        "sts.chapter8.b0115",
+        "sts.chapter8.b0116",
+        "sts.chapter8.b0117",
+        "sts.chapter8.b0118",
+        "sts.chapter8.b0120",
+        "sts.chapter8.b0121",
+        "sts.chapter8.b0122",
+        "sts.chapter8.b0123",
+        "sts.chapter8.b0124",
+        "sts.chapter8.b0125",
+        "sts.chapter8.b0126",
+        "sts.chapter8.b0127",
+        "sts.chapter8.b0128",
+        "sts.chapter8.b0129",
+        "sts.chapter8.b0146",
+        "sts.chapter8.b0179"
+      ],
       "blocks": [
         {
           "id": "sts.chapter8.b0001",
@@ -7988,33 +8009,55 @@
           "level": 2
         },
         {
+          "id": "sts.chapter8.b0076",
+          "type": "paragraph",
+          "lines": [
+            68,
+            68
+          ],
+          "words": 4,
+          "hash": "57d0b6d2018d",
+          "preview": "Pick up your phone."
+        },
+        {
           "id": "sts.chapter8.b0030",
           "type": "paragraph",
           "lines": [
-            67,
-            67
+            70,
+            70
           ],
-          "words": 21,
-          "hash": "374459fe0f24",
-          "preview": "In the old world, the primary economic engine was the extraction of physical resources, mi"
+          "words": 31,
+          "hash": "85e41676cdab",
+          "preview": "Look at that piece of glass. It's cold, it's inert, and it weighs less than half a pound. "
         },
         {
           "id": "sts.chapter8.b0031",
           "type": "paragraph",
           "lines": [
-            69,
-            69
+            72,
+            72
           ],
-          "words": 16,
-          "hash": "90a4320980e4",
-          "preview": "In the era of the Singularity, the primary economic engine is the extraction of **cognitiv"
+          "words": 36,
+          "hash": "669bc0e8820d",
+          "preview": "In the old world, the primary economic engine was the extraction of physical resources: mi"
+        },
+        {
+          "id": "sts.chapter8.b0034",
+          "type": "paragraph",
+          "lines": [
+            74,
+            74
+          ],
+          "words": 39,
+          "hash": "3f4f4e1bf2c8",
+          "preview": "You think you're looking at a tool. You think you're checking the news, staying connected,"
         },
         {
           "id": "sts.chapter8.b0032",
           "type": "figure",
           "lines": [
-            71,
-            71
+            76,
+            76
           ],
           "words": 30,
           "hash": "51fb11a9cea7",
@@ -8026,557 +8069,63 @@
           "id": "sts.chapter8.b0033",
           "type": "caption",
           "lines": [
-            73,
-            73
+            78,
+            78
           ],
           "words": 21,
           "hash": "97ac04ccc89c",
           "preview": "*The Cognitive Extraction Engine. Attention goes in at the top; agency comes out the botto"
         },
         {
-          "id": "sts.chapter8.b0034",
-          "type": "paragraph",
-          "lines": [
-            75,
-            75
-          ],
-          "words": 48,
-          "hash": "d240ee1cf71b",
-          "preview": "Your attention is not a passive, infinite resource. It is a highly demanding chemical proc"
-        },
-        {
           "id": "sts.chapter8.b0035",
           "type": "paragraph",
           "lines": [
-            77,
-            77
+            80,
+            80
           ],
-          "words": 34,
-          "hash": "924c778205fe",
-          "preview": "But because these platforms utilize **variable-reward schedules** (the exact same psycholo"
+          "words": 41,
+          "hash": "b05f65b2acb1",
+          "preview": "The corporate state doesn't just want your land, your taxes, and your physical labor. It w"
         },
         {
           "id": "sts.chapter8.b0036",
           "type": "paragraph",
           "lines": [
-            79,
-            79
+            82,
+            82
           ],
-          "words": 40,
-          "hash": "ed0a4fb654c2",
-          "preview": "The result? You develop a chronic, low-grade executive dysfunction. You find it incredibly"
+          "words": 63,
+          "hash": "893f6a5040a1",
+          "preview": "And attention isn't a passive, infinite resource. It's a demanding chemical process. Every"
         },
         {
           "id": "sts.chapter8.b0037",
           "type": "paragraph",
           "lines": [
-            81,
-            81
+            84,
+            84
           ],
-          "words": 49,
-          "hash": "7c3ab3cbc6ec",
-          "preview": "This is not a personal failure of willpower. It is a systemic, industrial-scale neurologic"
-        },
-        {
-          "id": "sts.chapter8.b0038",
-          "type": "heading",
-          "lines": [
-            83,
-            83
-          ],
-          "words": 7,
-          "hash": "5dd49d1a496e",
-          "preview": "## 1. The Cognitive Firewall: Air-Gapping Your Mind",
-          "level": 2
+          "words": 80,
+          "hash": "aa24a0322da9",
+          "preview": "What it leaves behind is a chronic, low-grade executive dysfunction. You find it hard to r"
         },
         {
           "id": "sts.chapter8.b0039",
           "type": "paragraph",
           "lines": [
-            84,
-            84
-          ],
-          "words": 25,
-          "hash": "53cef2d6206f",
-          "preview": "To reclaim your mental agency, you must treat your brain the same way a cybersecurity engi"
-        },
-        {
-          "id": "sts.chapter8.b0040",
-          "type": "paragraph",
-          "lines": [
             86,
             86
           ],
-          "words": 35,
-          "hash": "0da269d9f40e",
-          "preview": "An air-gapped computer is physically disconnected from the internet, making it completely "
-        },
-        {
-          "id": "sts.chapter8.b0041",
-          "type": "heading",
-          "lines": [
-            88,
-            88
-          ],
-          "words": 3,
-          "hash": "dbee017638ff",
-          "preview": "### The No-Notifications Protocol",
-          "level": 3
-        },
-        {
-          "id": "sts.chapter8.b0042",
-          "type": "paragraph",
-          "lines": [
-            89,
-            89
-          ],
-          "words": 10,
-          "hash": "645dce500514",
-          "preview": "Your phone should never be allowed to interrupt you. Period."
-        },
-        {
-          "id": "sts.chapter8.b0043",
-          "type": "list",
-          "lines": [
-            91,
-            92
-          ],
-          "words": 70,
-          "hash": "00179689abac",
-          "preview": "- **The Setting:** Turn off every single push notification on your devices, with the absol"
-        },
-        {
-          "id": "sts.chapter8.b0044",
-          "type": "heading",
-          "lines": [
-            94,
-            94
-          ],
-          "words": 3,
-          "hash": "bdea5be6f97b",
-          "preview": "### The Dopamine Reset",
-          "level": 3
-        },
-        {
-          "id": "sts.chapter8.b0045",
-          "type": "paragraph",
-          "lines": [
-            95,
-            95
-          ],
-          "words": 16,
-          "hash": "a1847719d76a",
-          "preview": "To restore your brain’s natural chemical baseline, you must schedule regular intervals of "
-        },
-        {
-          "id": "sts.chapter8.b0046",
-          "type": "list",
-          "lines": [
-            97,
-            98
-          ],
-          "words": 78,
-          "hash": "a635e9f864e9",
-          "preview": "- **The Hack:** Spend at least thirty minutes a day without any inputs. No podcasts, no mu"
-        },
-        {
-          "id": "sts.chapter8.b0047",
-          "type": "heading",
-          "lines": [
-            100,
-            100
-          ],
-          "words": 6,
-          "hash": "132d5778ba82",
-          "preview": "## 2. Semantic Hygiene: Filtering Memetic Viruses",
-          "level": 2
-        },
-        {
-          "id": "sts.chapter8.b0048",
-          "type": "paragraph",
-          "lines": [
-            101,
-            101
-          ],
-          "words": 19,
-          "hash": "0fc242c5a21b",
-          "preview": "In computer science, a \"worm\" is a self-replicating program that spreads through networks,"
-        },
-        {
-          "id": "sts.chapter8.b0049",
-          "type": "paragraph",
-          "lines": [
-            103,
-            103
-          ],
-          "words": 33,
-          "hash": "a3bbaa599e9a",
-          "preview": "In psychology, we have **memetic viruses**. These are highly contagious packages of inform"
-        },
-        {
-          "id": "sts.chapter8.b0050",
-          "type": "figure",
-          "lines": [
-            105,
-            105
-          ],
-          "words": 25,
-          "hash": "857cbdfd0339",
-          "preview": "![Information Dispensing Architectures: a centralized algorithmic stream interrupting your",
-          "image": "/book-images/ch08-info-architectures.svg",
-          "art_id": "sts.diagram.ch08-info-architectures"
-        },
-        {
-          "id": "sts.chapter8.b0051",
-          "type": "caption",
-          "lines": [
-            107,
-            107
-          ],
-          "words": 16,
-          "hash": "0a452c5193b1",
-          "preview": "*Two architectures for the same brain. The stream keeps you reactive; the batch keeps you "
-        },
-        {
-          "id": "sts.chapter8.b0052",
-          "type": "paragraph",
-          "lines": [
-            109,
-            109
-          ],
-          "words": 35,
-          "hash": "e741229cc95c",
-          "preview": "When you consume a memetic virus, your brain spends hours (or days) processing it. You pla"
-        },
-        {
-          "id": "sts.chapter8.b0053",
-          "type": "paragraph",
-          "lines": [
-            111,
-            111
-          ],
-          "words": 10,
-          "hash": "e16783e5dd7a",
-          "preview": "**This is a massive waste of your finite cognitive energy.**"
-        },
-        {
-          "id": "sts.chapter8.b0054",
-          "type": "paragraph",
-          "lines": [
-            113,
-            113
-          ],
-          "words": 5,
-          "hash": "6c5f28bb0252",
-          "preview": "To practice strict **Semantic Hygiene**:"
-        },
-        {
-          "id": "sts.chapter8.b0055",
-          "type": "list",
-          "lines": [
-            115,
-            116
-          ],
-          "words": 129,
-          "hash": "5b8d580454da",
-          "preview": "1. **The 24-Hour Delay:** Never react, post, or share information about a breaking global "
-        },
-        {
-          "id": "sts.chapter8.b0056",
-          "type": "heading",
-          "lines": [
-            118,
-            118
-          ],
-          "words": 3,
-          "hash": "d8ead317c646",
-          "preview": "## 3. Analog Batch-Processing",
-          "level": 2
-        },
-        {
-          "id": "sts.chapter8.b0057",
-          "type": "paragraph",
-          "lines": [
-            119,
-            119
-          ],
-          "words": 36,
-          "hash": "dade23378ea2",
-          "preview": "We are designed to interact with the physical world in high-definition, three-dimensional "
-        },
-        {
-          "id": "sts.chapter8.b0058",
-          "type": "paragraph",
-          "lines": [
-            121,
-            121
-          ],
-          "words": 13,
-          "hash": "759343a069d8",
-          "preview": "To achieve deep work, you must transition your intellectual consumption to **Analog Batch-"
-        },
-        {
-          "id": "sts.chapter8.b0059",
-          "type": "table",
-          "lines": [
-            123,
-            128
-          ],
-          "words": 25,
-          "hash": "6719071d46ac",
-          "preview": "| Real-Time Stream (Fragile) | Batch-Processing (Sovereign) | | :-- | :-- | | Instant reac"
-        },
-        {
-          "id": "sts.chapter8.b0060",
-          "type": "list",
-          "lines": [
-            130,
-            132
-          ],
-          "words": 139,
-          "hash": "6f516a982c6b",
-          "preview": "- **Physical Documentation:** Keep a rugged, paper field journal. Write down your agricult"
-        },
-        {
-          "id": "sts.chapter8.b0061",
-          "type": "heading",
-          "lines": [
-            134,
-            134
-          ],
-          "words": 7,
-          "hash": "2a2bd32e9dee",
-          "preview": "## The Master Key to the Parallel World",
-          "level": 2
-        },
-        {
-          "id": "sts.chapter8.b0062",
-          "type": "paragraph",
-          "lines": [
-            135,
-            135
-          ],
-          "words": 13,
-          "hash": "374312fc83d2",
-          "preview": "Let us trace the thread of everything we have built across this book:"
-        },
-        {
-          "id": "sts.chapter8.b0063",
-          "type": "paragraph",
-          "lines": [
-            137,
-            137
-          ],
-          "words": 38,
-          "hash": "7baa2234c5ad",
-          "preview": "If you want to survive the Singularity, you must build parallel, self-reliant communities."
-        },
-        {
-          "id": "sts.chapter8.b0064",
-          "type": "paragraph",
-          "lines": [
-            139,
-            139
-          ],
-          "words": 25,
-          "hash": "08127765e284",
-          "preview": "You cannot maintain a **Neighborhood Mesh Network** (Chapters 14 and 17) if your local eng"
-        },
-        {
-          "id": "sts.chapter8.b0065",
-          "type": "paragraph",
-          "lines": [
-            141,
-            141
-          ],
-          "words": 27,
-          "hash": "1aa106633f96",
-          "preview": "You cannot manage a **DC-Native Microgrid** (Chapter 17) if your mind is too fragmented to"
-        },
-        {
-          "id": "sts.chapter8.b0066",
-          "type": "paragraph",
-          "lines": [
-            143,
-            143
-          ],
-          "words": 16,
-          "hash": "a1b0efe8dd3c",
-          "preview": "**Your cognitive focus is the operational fuel that powers every single parallel engine of"
-        },
-        {
-          "id": "sts.chapter8.b0067",
-          "type": "paragraph",
-          "lines": [
-            145,
-            145
-          ],
-          "words": 44,
-          "hash": "ecb26ea5710f",
-          "preview": "Reclaiming your focus is not a personal self-care option; it is a hostile, political act o"
-        },
-        {
-          "id": "sts.chapter8.b0068",
-          "type": "heading",
-          "lines": [
-            147,
-            147
-          ],
-          "words": 4,
-          "hash": "69920e8227a3",
-          "preview": "## Reboot Your Operating System",
-          "level": 2
-        },
-        {
-          "id": "sts.chapter8.b0069",
-          "type": "paragraph",
-          "lines": [
-            149,
-            149
-          ],
-          "words": 26,
-          "hash": "ed784c066106",
-          "preview": "The diagnosis is complete. The systems are designed, and the chapters ahead hand you the t"
-        },
-        {
-          "id": "sts.chapter8.b0070",
-          "type": "list",
-          "lines": [
-            151,
-            153
-          ],
-          "words": 103,
-          "hash": "ca9c46987b77",
-          "preview": "1. **Purge the Intrusions:** Take your phone right now. Turn off every notification. Delet"
-        },
-        {
-          "id": "sts.chapter8.b0071",
-          "type": "paragraph",
-          "lines": [
-            155,
-            155
-          ],
-          "words": 18,
-          "hash": "47c03838cdf8",
-          "preview": "The simulation only has power over you as long as you keep your eyes glued to the screen."
-        },
-        {
-          "id": "sts.chapter8.b0072",
-          "type": "paragraph",
-          "lines": [
-            157,
-            157
-          ],
-          "words": 18,
-          "hash": "33257f075505",
-          "preview": "Step away from the screen. Look around you. The real world is still here, waiting to be re"
-        },
-        {
-          "id": "sts.chapter8.b0073",
-          "type": "paragraph",
-          "lines": [
-            159,
-            159
-          ],
-          "words": 4,
-          "hash": "7913d9fab66f",
-          "preview": "Let's get to work."
-        },
-        {
-          "id": "sts.chapter8.b0074",
-          "type": "hr",
-          "lines": [
-            161,
-            161
-          ],
-          "words": 0,
-          "hash": "ebad27de99a8",
-          "preview": "---"
-        },
-        {
-          "id": "sts.chapter8.b0075",
-          "type": "heading",
-          "lines": [
-            163,
-            163
-          ],
-          "words": 5,
-          "hash": "c366351df43b",
-          "preview": "## Cognitive Firewalls and Semantic Hygiene",
-          "level": 2
-        },
-        {
-          "id": "sts.chapter8.b0076",
-          "type": "paragraph",
-          "lines": [
-            165,
-            165
-          ],
-          "words": 4,
-          "hash": "57d0b6d2018d",
-          "preview": "Pick up your phone."
-        },
-        {
-          "id": "sts.chapter8.b0077",
-          "type": "paragraph",
-          "lines": [
-            167,
-            167
-          ],
-          "words": 30,
-          "hash": "8d934d602aec",
-          "preview": "Look at that piece of glass. It is cold, inert, and weighing less than half a pound. It is"
-        },
-        {
-          "id": "sts.chapter8.b0078",
-          "type": "paragraph",
-          "lines": [
-            169,
-            169
-          ],
-          "words": 27,
-          "hash": "0cd2927c51f0",
-          "preview": "When you look at a screen, you think you are looking at a tool. You think you are \"checkin"
-        },
-        {
-          "id": "sts.chapter8.b0079",
-          "type": "paragraph",
-          "lines": [
-            171,
-            171
-          ],
-          "words": 25,
-          "hash": "5014e1bd6954",
-          "preview": "You are not. You are sticking a straw directly into your prefrontal cortex and allowing a "
-        },
-        {
-          "id": "sts.chapter8.b0080",
-          "type": "paragraph",
-          "lines": [
-            173,
-            173
-          ],
-          "words": 60,
-          "hash": "b7446f666e80",
-          "preview": "The corporate state does not just want your land, your taxes, and your physical labor. It "
-        },
-        {
-          "id": "sts.chapter8.b0081",
-          "type": "paragraph",
-          "lines": [
-            175,
-            175
-          ],
           "words": 29,
-          "hash": "540224c3889e",
-          "preview": "If you cannot control your attention, you cannot build a buffer. If you cannot build a buf"
+          "hash": "1a090bf64bd9",
+          "preview": "If you can't control your attention, you can't build a buffer. And if you can't build a bu"
         },
         {
           "id": "sts.chapter8.b0082",
           "type": "heading",
           "lines": [
-            177,
-            177
+            88,
+            88
           ],
           "words": 5,
           "hash": "4bf83873dd39",
@@ -8584,44 +8133,44 @@
           "level": 3
         },
         {
-          "id": "sts.chapter8.b0083",
+          "id": "sts.chapter8.b0040",
           "type": "paragraph",
           "lines": [
-            179,
-            179
+            90,
+            90
           ],
-          "words": 20,
-          "hash": "c244ae3d9477",
-          "preview": "To understand why this is a survival issue, we must look at the brain as a finite thermody"
+          "words": 23,
+          "hash": "7d1bf6db8cd0",
+          "preview": "To see why this is a survival issue and not a lifestyle complaint, look at the brain as a "
         },
         {
-          "id": "sts.chapter8.b0084",
+          "id": "sts.chapter8.b0042",
           "type": "paragraph",
           "lines": [
-            181,
-            181
+            92,
+            92
           ],
-          "words": 44,
-          "hash": "cc8cfd63e10a",
-          "preview": "Your brain accounts for roughly 2% of your total body mass, yet it consumes more than 20% "
+          "words": 36,
+          "hash": "616dbe4c0d41",
+          "preview": "Your brain is roughly 2% of your body mass and burns more than 20% of your metabolic energ"
         },
         {
-          "id": "sts.chapter8.b0085",
+          "id": "sts.chapter8.b0045",
           "type": "paragraph",
           "lines": [
-            183,
-            183
+            94,
+            94
           ],
-          "words": 37,
-          "hash": "2332207a6f12",
-          "preview": "Here is a back-of-the-envelope model, an accounting identity rather than a law of physics,"
+          "words": 33,
+          "hash": "ef2a2e8c9407",
+          "preview": "Here's a back-of-the-envelope model, an accounting identity rather than a law of physics, "
         },
         {
           "id": "sts.chapter8.b0086",
           "type": "blockquote",
           "lines": [
-            185,
-            185
+            96,
+            96
           ],
           "words": 4,
           "hash": "ffa6b635b715",
@@ -8631,8 +8180,8 @@
           "id": "sts.chapter8.b0087",
           "type": "paragraph",
           "lines": [
-            187,
-            187
+            98,
+            98
           ],
           "words": 1,
           "hash": "4e1a08a021da",
@@ -8642,74 +8191,63 @@
           "id": "sts.chapter8.b0088",
           "type": "list",
           "lines": [
-            189,
-            190
+            100,
+            101
           ],
           "words": 34,
           "hash": "d42d6ba9306b",
           "preview": "- E_maintenance is the involuntary thermodynamic cost of keeping your organs functioning, "
         },
         {
-          "id": "sts.chapter8.b0089",
+          "id": "sts.chapter8.b0048",
           "type": "paragraph",
           "lines": [
-            192,
-            192
+            103,
+            103
           ],
-          "words": 38,
-          "hash": "90b91633f2e6",
+          "words": 37,
+          "hash": "6fd5cce40a78",
           "preview": "The accounting is crude, but the constraint it describes is real: your cognitive budget is"
         },
         {
-          "id": "sts.chapter8.b0090",
+          "id": "sts.chapter8.b0049",
           "type": "paragraph",
           "lines": [
-            194,
-            194
+            105,
+            105
           ],
-          "words": 41,
-          "hash": "32c2b5b156b2",
-          "preview": "In a natural state, your cognitive energy is spent on high-utility tasks: tracking prey, b"
+          "words": 33,
+          "hash": "45ef4703029b",
+          "preview": "In a natural state that budget goes to high-utility work: tracking prey, building shelter,"
         },
         {
-          "id": "sts.chapter8.b0091",
+          "id": "sts.chapter8.b0052",
           "type": "paragraph",
           "lines": [
-            196,
-            196
+            107,
+            107
           ],
-          "words": 44,
-          "hash": "b47b53bacf1c",
-          "preview": "Let us express the cost of a cognitive context-switch. When your brain is focused on a dee"
+          "words": 89,
+          "hash": "a1883ecfa656",
+          "preview": "Now put a number on the context-switch. When your brain is deep in a complex task (wiring "
         },
         {
-          "id": "sts.chapter8.b0092",
+          "id": "sts.chapter8.b0053",
           "type": "paragraph",
           "lines": [
-            198,
-            198
+            109,
+            109
           ],
-          "words": 59,
-          "hash": "b26c6cd42e9d",
-          "preview": "The recovery cost is not a guess; it has been measured. Attention researchers studying int"
-        },
-        {
-          "id": "sts.chapter8.b0093",
-          "type": "paragraph",
-          "lines": [
-            200,
-            200
-          ],
-          "words": 73,
-          "hash": "285836c350af",
-          "preview": "Now do the arithmetic that the research implies. If settling into deep work costs you roug"
+          "words": 60,
+          "hash": "201eafdaeff7",
+          "preview": "Do the arithmetic that implies. If settling into deep work costs you twenty minutes, then "
         },
         {
           "id": "sts.chapter8.b0094",
           "type": "figure",
           "lines": [
-            202,
-            202
+            111,
+            111
           ],
           "words": 33,
           "hash": "34ee91529336",
@@ -8721,8 +8259,8 @@
           "id": "sts.chapter8.b0095",
           "type": "caption",
           "lines": [
-            204,
-            204
+            113,
+            113
           ],
           "words": 16,
           "hash": "51012af12b5e",
@@ -8732,8 +8270,8 @@
           "id": "sts.chapter8.b0096",
           "type": "heading",
           "lines": [
-            206,
-            206
+            115,
+            115
           ],
           "words": 7,
           "hash": "d442cd143c1c",
@@ -8741,44 +8279,33 @@
           "level": 3
         },
         {
-          "id": "sts.chapter8.b0097",
+          "id": "sts.chapter8.b0054",
           "type": "paragraph",
           "lines": [
-            208,
-            208
+            117,
+            117
           ],
-          "words": 16,
-          "hash": "2628bbbdfdee",
-          "preview": "Why do you look at the screen? Why is it so incredibly difficult to put down?"
+          "words": 13,
+          "hash": "405d94ce8f3e",
+          "preview": "So why do you look? Why is it so hard to put down?"
         },
         {
-          "id": "sts.chapter8.b0098",
+          "id": "sts.chapter8.b0057",
           "type": "paragraph",
           "lines": [
-            210,
-            210
+            119,
+            119
           ],
-          "words": 37,
-          "hash": "95ff589429eb",
-          "preview": "It is not a failure of willpower. It is a mathematical trap designed to exploit your dopam"
-        },
-        {
-          "id": "sts.chapter8.b0099",
-          "type": "paragraph",
-          "lines": [
-            212,
-            212
-          ],
-          "words": 20,
-          "hash": "5013ed02de68",
-          "preview": "Information theory gives us a precise lens for this trap. Shannon Entropy ($H$) measures t"
+          "words": 34,
+          "hash": "04c492609d91",
+          "preview": "Again, not willpower. It's a mathematical trap built to exploit your dopaminergic reward s"
         },
         {
           "id": "sts.chapter8.b0100",
           "type": "blockquote",
           "lines": [
-            214,
-            214
+            121,
+            121
           ],
           "words": 8,
           "hash": "e6c48f8a4bf1",
@@ -8788,97 +8315,86 @@
           "id": "sts.chapter8.b0101",
           "type": "paragraph",
           "lines": [
-            216,
-            216
+            123,
+            123
           ],
           "words": 29,
           "hash": "c9edc1fc79e4",
           "preview": "Where P(x_i) is the probability of the next piece of content being a specific thing: an in"
         },
         {
-          "id": "sts.chapter8.b0102",
+          "id": "sts.chapter8.b0058",
           "type": "paragraph",
           "lines": [
-            218,
-            218
+            125,
+            125
           ],
-          "words": 59,
-          "hash": "577641218b1f",
-          "preview": "If a stream is completely predictable, its entropy is zero. Your brain quickly habituates,"
+          "words": 57,
+          "hash": "7fd3a90bcec6",
+          "preview": "If a stream is completely predictable, its entropy is zero. Your brain habituates, stops r"
         },
         {
-          "id": "sts.chapter8.b0103",
+          "id": "sts.chapter8.b0062",
           "type": "paragraph",
           "lines": [
-            220,
-            220
+            127,
+            127
           ],
-          "words": 46,
-          "hash": "00bb374f29d5",
-          "preview": "This high-entropy stream forces your brain into a state of chronic vigilance. Your amygdal"
+          "words": 61,
+          "hash": "a6ec8937b709",
+          "preview": "It also keeps your amygdala firing at manufactured, low-context, high-emotion signals, whi"
         },
         {
-          "id": "sts.chapter8.b0104",
-          "type": "paragraph",
-          "lines": [
-            222,
-            222
-          ],
-          "words": 35,
-          "hash": "bb03f4e2327a",
-          "preview": "A population with an offline prefrontal cortex is incredibly easy to manage. It cannot bui"
-        },
-        {
-          "id": "sts.chapter8.b0105",
+          "id": "sts.chapter8.b0038",
           "type": "heading",
           "lines": [
-            224,
-            224
+            129,
+            129
           ],
           "words": 6,
-          "hash": "41da9fe5252a",
-          "preview": "### Semantic Hygiene: Protecting the Input Buffer",
-          "level": 3
+          "hash": "09a7c01f6747",
+          "preview": "## The Cognitive Firewall: Air-Gapping Your Mind",
+          "level": 2
         },
         {
-          "id": "sts.chapter8.b0106",
+          "id": "sts.chapter8.b0063",
           "type": "paragraph",
           "lines": [
-            226,
-            226
+            131,
+            131
           ],
-          "words": 11,
-          "hash": "1baacd03d767",
-          "preview": "To survive the cognitive collapse, you must practice strict **Semantic Hygiene**."
+          "words": 20,
+          "hash": "84550cbf698e",
+          "preview": "To take your mental agency back, treat your brain the way a security engineer treats a cri"
         },
         {
-          "id": "sts.chapter8.b0107",
+          "id": "sts.chapter8.b0064",
           "type": "paragraph",
           "lines": [
-            228,
-            228
+            133,
+            133
           ],
-          "words": 37,
-          "hash": "4e8554304205",
-          "preview": "Just as you would not drink untreated water from a stagnant puddle behind a diesel refiner"
+          "words": 38,
+          "hash": "543d2efaaf57",
+          "preview": "An air-gapped machine is physically disconnected from the network, which makes remote comp"
         },
         {
-          "id": "sts.chapter8.b0108",
+          "id": "sts.chapter8.b0065",
           "type": "paragraph",
           "lines": [
-            230,
-            230
+            135,
+            135
           ],
-          "words": 33,
-          "hash": "16b090152e7d",
-          "preview": "Semantic Hygiene is the intentional, aggressive curation of the information you allow to c"
+          "words": 43,
+          "hash": "0f73cbae1670",
+          "preview": "You wouldn't drink untreated water from a stagnant puddle behind a diesel refinery. Hold t"
         },
         {
           "id": "sts.chapter8.b0109",
           "type": "figure",
           "lines": [
-            232,
-            232
+            137,
+            137
           ],
           "words": 25,
           "hash": "5020eed8383d",
@@ -8890,232 +8406,524 @@
           "id": "sts.chapter8.b0110",
           "type": "caption",
           "lines": [
-            234,
-            234
+            139,
+            139
           ],
           "words": 11,
           "hash": "ef5710239a14",
           "preview": "*The Cognitive Firewall Pipeline. Entropy falls left to right; agency rises.*"
         },
         {
-          "id": "sts.chapter8.b0111",
+          "id": "sts.chapter8.b0041",
           "type": "heading",
           "lines": [
-            236,
-            236
-          ],
-          "words": 8,
-          "hash": "6f932f7cdb48",
-          "preview": "### Protocol 1: The No-Notifications Lockdown (Total Digital Blackout)",
-          "level": 3
-        },
-        {
-          "id": "sts.chapter8.b0112",
-          "type": "paragraph",
-          "lines": [
-            238,
-            238
-          ],
-          "words": 28,
-          "hash": "d677886d950c",
-          "preview": "The default state of your phone is set to \"hostile capture.\" Every app is pre-configured t"
-        },
-        {
-          "id": "sts.chapter8.b0113",
-          "type": "paragraph",
-          "lines": [
-            240,
-            240
-          ],
-          "words": 7,
-          "hash": "b91fd364113a",
-          "preview": "You must execute a total digital blackout:"
-        },
-        {
-          "id": "sts.chapter8.b0114",
-          "type": "list",
-          "lines": [
-            242,
-            244
-          ],
-          "words": 111,
-          "hash": "9cd798f86f0a",
-          "preview": "1. **Disable All Audio and Visual Alerts:** Go to your device settings. Turn off *all* not"
-        },
-        {
-          "id": "sts.chapter8.b0115",
-          "type": "heading",
-          "lines": [
-            246,
-            246
-          ],
-          "words": 4,
-          "hash": "9787b48795cc",
-          "preview": "### Protocol 2: Analog Batch-Processing",
-          "level": 3
-        },
-        {
-          "id": "sts.chapter8.b0116",
-          "type": "paragraph",
-          "lines": [
-            248,
-            248
-          ],
-          "words": 38,
-          "hash": "db5ab88bac37",
-          "preview": "You do not use email or messaging apps in real-time. Real-time access is a leash, and the "
-        },
-        {
-          "id": "sts.chapter8.b0117",
-          "type": "list",
-          "lines": [
-            250,
-            252
-          ],
-          "words": 134,
-          "hash": "228ca5156c4b",
-          "preview": "- **The Twice-Daily Rule:** Access your email and digital messaging networks exactly twice"
-        },
-        {
-          "id": "sts.chapter8.b0118",
-          "type": "heading",
-          "lines": [
-            254,
-            254
+            141,
+            141
           ],
           "words": 5,
-          "hash": "94690a69a5ac",
-          "preview": "### Protocol 3: The Grayscale Protocol",
+          "hash": "dfdcaad01192",
+          "preview": "### Protocol 1: The No-Notifications Lockdown",
+          "level": 3
+        },
+        {
+          "id": "sts.chapter8.b0066",
+          "type": "paragraph",
+          "lines": [
+            143,
+            143
+          ],
+          "words": 34,
+          "hash": "1d979ad2722a",
+          "preview": "Your phone should never be allowed to interrupt you. Period. The default state of the devi"
+        },
+        {
+          "id": "sts.chapter8.b0067",
+          "type": "paragraph",
+          "lines": [
+            145,
+            145
+          ],
+          "words": 4,
+          "hash": "3d0f0d9d3dbb",
+          "preview": "Execute a total blackout:"
+        },
+        {
+          "id": "sts.chapter8.b0043",
+          "type": "list",
+          "lines": [
+            147,
+            149
+          ],
+          "words": 101,
+          "hash": "08f72b249333",
+          "preview": "1. **Disable every alert.** Go to your device settings and turn off *all* notifications. T"
+        },
+        {
+          "id": "sts.chapter8.b0077",
+          "type": "paragraph",
+          "lines": [
+            151,
+            151
+          ],
+          "words": 44,
+          "hash": "572d93b9950c",
+          "preview": "Here's the standard to hold yourself to. If a corporate server can buzz your pocket and fo"
+        },
+        {
+          "id": "sts.chapter8.b0044",
+          "type": "heading",
+          "lines": [
+            153,
+            153
+          ],
+          "words": 4,
+          "hash": "416fdd9afe0f",
+          "preview": "### Protocol 2: Semantic Hygiene",
+          "level": 3
+        },
+        {
+          "id": "sts.chapter8.b0078",
+          "type": "paragraph",
+          "lines": [
+            155,
+            155
+          ],
+          "words": 19,
+          "hash": "a1f5b1cb375f",
+          "preview": "In computer science, a worm is a self-replicating program that spreads through networks, e"
+        },
+        {
+          "id": "sts.chapter8.b0079",
+          "type": "paragraph",
+          "lines": [
+            157,
+            157
+          ],
+          "words": 29,
+          "hash": "6b8f0f4f1d3e",
+          "preview": "In psychology, we have **memetic viruses**: highly contagious packages of information, usu"
+        },
+        {
+          "id": "sts.chapter8.b0050",
+          "type": "figure",
+          "lines": [
+            159,
+            159
+          ],
+          "words": 25,
+          "hash": "857cbdfd0339",
+          "preview": "![Information Dispensing Architectures: a centralized algorithmic stream interrupting your",
+          "image": "/book-images/ch08-info-architectures.svg",
+          "art_id": "sts.diagram.ch08-info-architectures"
+        },
+        {
+          "id": "sts.chapter8.b0051",
+          "type": "caption",
+          "lines": [
+            161,
+            161
+          ],
+          "words": 16,
+          "hash": "0a452c5193b1",
+          "preview": "*Two architectures for the same brain. The stream keeps you reactive; the batch keeps you "
+        },
+        {
+          "id": "sts.chapter8.b0080",
+          "type": "paragraph",
+          "lines": [
+            163,
+            163
+          ],
+          "words": 46,
+          "hash": "b86eb32e5227",
+          "preview": "Consume one and your brain spends hours, sometimes days, processing it. You run imaginary "
+        },
+        {
+          "id": "sts.chapter8.b0081",
+          "type": "paragraph",
+          "lines": [
+            165,
+            165
+          ],
+          "words": 16,
+          "hash": "e00de627cd73",
+          "preview": "Semantic Hygiene is the aggressive curation of what you let cross your blood-brain barrier"
+        },
+        {
+          "id": "sts.chapter8.b0046",
+          "type": "list",
+          "lines": [
+            167,
+            168
+          ],
+          "words": 113,
+          "hash": "c7257f58d160",
+          "preview": "1. **The 24-Hour Delay.** Never react, post, or share on a breaking global news story insi"
+        },
+        {
+          "id": "sts.chapter8.b0047",
+          "type": "heading",
+          "lines": [
+            170,
+            170
+          ],
+          "words": 4,
+          "hash": "2087bca0535e",
+          "preview": "### Protocol 3: Analog Batch-Processing",
+          "level": 3
+        },
+        {
+          "id": "sts.chapter8.b0083",
+          "type": "paragraph",
+          "lines": [
+            172,
+            172
+          ],
+          "words": 27,
+          "hash": "f9e26a61b3ca",
+          "preview": "We're built to interact with the physical world in high-definition, three-dimensional spac"
+        },
+        {
+          "id": "sts.chapter8.b0059",
+          "type": "table",
+          "lines": [
+            174,
+            179
+          ],
+          "words": 25,
+          "hash": "6719071d46ac",
+          "preview": "| Real-Time Stream (Fragile) | Batch-Processing (Sovereign) | | :-- | :-- | | Instant reac"
+        },
+        {
+          "id": "sts.chapter8.b0084",
+          "type": "paragraph",
+          "lines": [
+            181,
+            181
+          ],
+          "words": 23,
+          "hash": "0eb3b3f7c010",
+          "preview": "So stop running your digital life in real time. Real-time access is a leash, and the hand "
+        },
+        {
+          "id": "sts.chapter8.b0055",
+          "type": "list",
+          "lines": [
+            183,
+            186
+          ],
+          "words": 209,
+          "hash": "0c10925bfce9",
+          "preview": "- **The Twice-Daily Rule:** Open email and messaging exactly twice a day, once at 10:00 AM"
+        },
+        {
+          "id": "sts.chapter8.b0056",
+          "type": "heading",
+          "lines": [
+            188,
+            188
+          ],
+          "words": 5,
+          "hash": "be52f6d89032",
+          "preview": "### Protocol 4: The Grayscale Protocol",
           "level": 3
         },
         {
           "id": "sts.chapter8.b0119",
           "type": "paragraph",
           "lines": [
-            256,
-            256
+            190,
+            190
           ],
           "words": 25,
           "hash": "0a3b82483e6c",
           "preview": "Color is a powerful dopaminergic trigger. App developers spend millions of dollars testing"
         },
         {
-          "id": "sts.chapter8.b0120",
+          "id": "sts.chapter8.b0085",
           "type": "paragraph",
           "lines": [
-            258,
-            258
+            192,
+            192
           ],
-          "words": 5,
-          "hash": "755255b34744",
-          "preview": "Strip them of this leverage:"
+          "words": 59,
+          "hash": "fc6ca2604dae",
+          "preview": "Strip them of the leverage. Switch your phone and computer displays to **complete greyscal"
         },
         {
-          "id": "sts.chapter8.b0121",
-          "type": "list",
-          "lines": [
-            260,
-            261
-          ],
-          "words": 56,
-          "hash": "58251be7e3ac",
-          "preview": "- Switch your phone and computer displays to **complete greyscale mode**. - When your scre"
-        },
-        {
-          "id": "sts.chapter8.b0122",
+          "id": "sts.chapter8.b0075",
           "type": "heading",
           "lines": [
-            263,
-            263
+            194,
+            194
           ],
           "words": 5,
-          "hash": "da74e40ee718",
-          "preview": "### Reclaiming the Local Analog Commons",
+          "hash": "48091ac63243",
+          "preview": "### Protocol 5: The Dopamine Reset",
           "level": 3
         },
         {
-          "id": "sts.chapter8.b0123",
+          "id": "sts.chapter8.b0089",
           "type": "paragraph",
           "lines": [
-            265,
-            265
+            196,
+            196
           ],
-          "words": 11,
-          "hash": "351958e3a18c",
-          "preview": "Once you install your cognitive firewalls, an extraordinary biological shift occurs."
+          "words": 15,
+          "hash": "1968aef84ec8",
+          "preview": "The first four protocols cut the inputs. This one repairs the damage they already did."
         },
         {
-          "id": "sts.chapter8.b0124",
+          "id": "sts.chapter8.b0090",
           "type": "paragraph",
           "lines": [
-            267,
-            267
+            198,
+            198
           ],
-          "words": 54,
-          "hash": "a468c77f4001",
-          "preview": "Within forty-eight hours, your brain’s dopamine receptors begin to up-regulate. The consta"
+          "words": 43,
+          "hash": "0d7ea5f53544",
+          "preview": "To restore your brain's natural chemical baseline, schedule regular intervals of **absolut"
         },
         {
-          "id": "sts.chapter8.b0125",
+          "id": "sts.chapter8.b0091",
           "type": "paragraph",
           "lines": [
-            269,
-            269
+            200,
+            200
+          ],
+          "words": 10,
+          "hash": "c33b7f4c86d6",
+          "preview": "Your brain will panic and scream for stimulation. Let it."
+        },
+        {
+          "id": "sts.chapter8.b0105",
+          "type": "heading",
+          "lines": [
+            202,
+            202
           ],
           "words": 5,
-          "hash": "fa002db0130d",
-          "preview": "You have reclaimed your E_cognitive."
+          "hash": "c8d916bece4a",
+          "preview": "## Reclaiming the Local Analog Commons",
+          "level": 2
         },
         {
-          "id": "sts.chapter8.b0126",
+          "id": "sts.chapter8.b0092",
           "type": "paragraph",
           "lines": [
-            271,
-            271
+            204,
+            204
           ],
-          "words": 38,
-          "hash": "1148f4f924e2",
-          "preview": "What do you do with this newly recovered energy? You spend it on building local, low-entro"
+          "words": 11,
+          "hash": "09c7f1d65e58",
+          "preview": "Once the firewall is up, something biological happens on its own."
         },
         {
-          "id": "sts.chapter8.b0127",
+          "id": "sts.chapter8.b0093",
           "type": "paragraph",
           "lines": [
-            273,
-            273
+            206,
+            206
           ],
-          "words": 37,
-          "hash": "4d75c868d4ed",
+          "words": 77,
+          "hash": "088b469f3fb8",
+          "preview": "Within about forty-eight hours your dopamine receptors begin to up-regulate. The constant "
+        },
+        {
+          "id": "sts.chapter8.b0097",
+          "type": "paragraph",
+          "lines": [
+            208,
+            208
+          ],
+          "words": 13,
+          "hash": "6a53e0580b14",
+          "preview": "You've reclaimed your E_cognitive. Now spend it, on building local, low-entropy physical n"
+        },
+        {
+          "id": "sts.chapter8.b0098",
+          "type": "paragraph",
+          "lines": [
+            210,
+            210
+          ],
+          "words": 36,
+          "hash": "2ee4d0268eff",
           "preview": "Because when the physical systems analyzed in Chapter 2 begin to rattle, a group of fragme"
         },
         {
-          "id": "sts.chapter8.b0128",
+          "id": "sts.chapter8.b0099",
           "type": "paragraph",
           "lines": [
-            275,
-            275
+            212,
+            212
           ],
-          "words": 44,
-          "hash": "f7939c042c22",
-          "preview": "But a small, highly focused, cognitively autonomous group running on analog protocols? The"
+          "words": 46,
+          "hash": "a8811cee91cd",
+          "preview": "A small, highly focused, cognitively autonomous group running on analog protocols is a dif"
         },
         {
-          "id": "sts.chapter8.b0129",
+          "id": "sts.chapter8.b0061",
+          "type": "heading",
+          "lines": [
+            214,
+            214
+          ],
+          "words": 7,
+          "hash": "2a2bd32e9dee",
+          "preview": "## The Master Key to the Parallel World",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter8.b0102",
           "type": "paragraph",
           "lines": [
-            277,
-            277
+            216,
+            216
           ],
-          "words": 47,
-          "hash": "4439c46d3345",
-          "preview": "Ahead in this manual, in Chapters 10 and 16, we take on the ultimate weapon of digital ext"
+          "words": 11,
+          "hash": "464eaa725300",
+          "preview": "Let's trace the thread through everything we've built across this book."
         },
         {
-          "id": "sts.chapter8.b0130",
+          "id": "sts.chapter8.b0103",
+          "type": "paragraph",
+          "lines": [
+            218,
+            218
+          ],
+          "words": 39,
+          "hash": "3faa6efffd79",
+          "preview": "If you want to survive the Singularity, you have to build parallel, hyper-local communitie"
+        },
+        {
+          "id": "sts.chapter8.b0104",
+          "type": "paragraph",
+          "lines": [
+            220,
+            220
+          ],
+          "words": 25,
+          "hash": "f092562a1b95",
+          "preview": "You can't maintain a **Neighborhood Mesh Network** (Chapters 14 and 17) if your local engi"
+        },
+        {
+          "id": "sts.chapter8.b0106",
+          "type": "paragraph",
+          "lines": [
+            222,
+            222
+          ],
+          "words": 27,
+          "hash": "96c159b37ccd",
+          "preview": "You can't manage a **DC-Native Microgrid** (Chapter 17) if your mind is too fragmented to "
+        },
+        {
+          "id": "sts.chapter8.b0189",
+          "type": "blockquote",
+          "lines": [
+            224,
+            224
+          ],
+          "words": 14,
+          "hash": "f760cbbff713",
+          "preview": "> **Your cognitive focus is the operational fuel behind every parallel engine in this book"
+        },
+        {
+          "id": "sts.chapter8.b0107",
+          "type": "paragraph",
+          "lines": [
+            226,
+            226
+          ],
+          "words": 34,
+          "hash": "52e13426e138",
+          "preview": "Reclaiming it isn't a personal self-care option. It's a political act. It's the moment you"
+        },
+        {
+          "id": "sts.chapter8.b0068",
+          "type": "heading",
+          "lines": [
+            228,
+            228
+          ],
+          "words": 4,
+          "hash": "69920e8227a3",
+          "preview": "## Reboot Your Operating System",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter8.b0069",
+          "type": "paragraph",
+          "lines": [
+            230,
+            230
+          ],
+          "words": 26,
+          "hash": "ed784c066106",
+          "preview": "The diagnosis is complete. The systems are designed, and the chapters ahead hand you the t"
+        },
+        {
+          "id": "sts.chapter8.b0060",
+          "type": "list",
+          "lines": [
+            232,
+            234
+          ],
+          "words": 102,
+          "hash": "103c3896c0ff",
+          "preview": "1. **Purge the Intrusions:** Take your phone right now. Turn off every notification. Delet"
+        },
+        {
+          "id": "sts.chapter8.b0108",
+          "type": "paragraph",
+          "lines": [
+            236,
+            236
+          ],
+          "words": 42,
+          "hash": "ce5c58aef9d1",
+          "preview": "Later in this manual, Chapters 10 and 16 take on the other end of the extraction machine: "
+        },
+        {
+          "id": "sts.chapter8.b0071",
+          "type": "paragraph",
+          "lines": [
+            238,
+            238
+          ],
+          "words": 18,
+          "hash": "47c03838cdf8",
+          "preview": "The simulation only has power over you as long as you keep your eyes glued to the screen."
+        },
+        {
+          "id": "sts.chapter8.b0072",
+          "type": "paragraph",
+          "lines": [
+            240,
+            240
+          ],
+          "words": 18,
+          "hash": "33257f075505",
+          "preview": "Step away from the screen. Look around you. The real world is still here, waiting to be re"
+        },
+        {
+          "id": "sts.chapter8.b0073",
+          "type": "paragraph",
+          "lines": [
+            242,
+            242
+          ],
+          "words": 4,
+          "hash": "7913d9fab66f",
+          "preview": "Let's get to work."
+        },
+        {
+          "id": "sts.chapter8.b0074",
           "type": "hr",
           "lines": [
-            279,
-            279
+            244,
+            244
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -9125,8 +8933,8 @@
           "id": "sts.chapter8.b0131",
           "type": "heading",
           "lines": [
-            281,
-            281
+            246,
+            246
           ],
           "words": 7,
           "hash": "d90d6891460a",
@@ -9137,8 +8945,8 @@
           "id": "sts.chapter8.b0132",
           "type": "paragraph",
           "lines": [
-            283,
-            283
+            248,
+            248
           ],
           "words": 36,
           "hash": "e369cb9ac11d",
@@ -9148,8 +8956,8 @@
           "id": "sts.chapter8.b0133",
           "type": "paragraph",
           "lines": [
-            285,
-            285
+            250,
+            250
           ],
           "words": 62,
           "hash": "eca0029290de",
@@ -9159,8 +8967,8 @@
           "id": "sts.chapter8.b0134",
           "type": "paragraph",
           "lines": [
-            287,
-            287
+            252,
+            252
           ],
           "words": 46,
           "hash": "6f6e9a409a7c",
@@ -9170,8 +8978,8 @@
           "id": "sts.chapter8.b0135",
           "type": "paragraph",
           "lines": [
-            289,
-            289
+            254,
+            254
           ],
           "words": 8,
           "hash": "9cce3053d16b",
@@ -9181,8 +8989,8 @@
           "id": "sts.chapter8.b0136",
           "type": "paragraph",
           "lines": [
-            291,
-            291
+            256,
+            256
           ],
           "words": 39,
           "hash": "04aced962623",
@@ -9192,8 +9000,8 @@
           "id": "sts.chapter8.b0137",
           "type": "heading",
           "lines": [
-            293,
-            293
+            258,
+            258
           ],
           "words": 7,
           "hash": "ebebe2b14d99",
@@ -9204,8 +9012,8 @@
           "id": "sts.chapter8.b0138",
           "type": "paragraph",
           "lines": [
-            295,
-            295
+            260,
+            260
           ],
           "words": 23,
           "hash": "a7ad5093d784",
@@ -9215,8 +9023,8 @@
           "id": "sts.chapter8.b0139",
           "type": "paragraph",
           "lines": [
-            297,
-            297
+            262,
+            262
           ],
           "words": 34,
           "hash": "a8ce4ed0eae3",
@@ -9226,8 +9034,8 @@
           "id": "sts.chapter8.b0140",
           "type": "blockquote",
           "lines": [
-            299,
-            299
+            264,
+            264
           ],
           "words": 4,
           "hash": "1b9480033376",
@@ -9237,8 +9045,8 @@
           "id": "sts.chapter8.b0141",
           "type": "paragraph",
           "lines": [
-            301,
-            301
+            266,
+            266
           ],
           "words": 47,
           "hash": "d13a3ead9e8e",
@@ -9248,8 +9056,8 @@
           "id": "sts.chapter8.b0142",
           "type": "figure",
           "lines": [
-            303,
-            303
+            268,
+            268
           ],
           "words": 29,
           "hash": "9990ff2c2b27",
@@ -9261,8 +9069,8 @@
           "id": "sts.chapter8.b0143",
           "type": "caption",
           "lines": [
-            305,
-            305
+            270,
+            270
           ],
           "words": 15,
           "hash": "c63635037248",
@@ -9272,8 +9080,8 @@
           "id": "sts.chapter8.b0144",
           "type": "paragraph",
           "lines": [
-            307,
-            307
+            272,
+            272
           ],
           "words": 26,
           "hash": "0c59e497d435",
@@ -9283,30 +9091,30 @@
           "id": "sts.chapter8.b0145",
           "type": "blockquote",
           "lines": [
-            309,
-            309
+            274,
+            274
           ],
           "words": 5,
           "hash": "b201d4d19db8",
           "preview": "> **E_maintenance, per capita ∝ (1) / (N)**"
         },
         {
-          "id": "sts.chapter8.b0146",
+          "id": "sts.chapter8.b0112",
           "type": "paragraph",
           "lines": [
-            311,
-            311
+            276,
+            276
           ],
           "words": 14,
-          "hash": "efe8055172fe",
-          "preview": "Where $N$ is the number of active, trusted nodes in your immediate physical network."
+          "hash": "1456e83ae088",
+          "preview": "Where N is the number of active, trusted nodes in your immediate physical network."
         },
         {
           "id": "sts.chapter8.b0147",
           "type": "paragraph",
           "lines": [
-            313,
-            313
+            278,
+            278
           ],
           "words": 44,
           "hash": "ad41ac09d265",
@@ -9316,8 +9124,8 @@
           "id": "sts.chapter8.b0148",
           "type": "heading",
           "lines": [
-            315,
-            315
+            280,
+            280
           ],
           "words": 7,
           "hash": "35abedd69cfb",
@@ -9328,8 +9136,8 @@
           "id": "sts.chapter8.b0149",
           "type": "paragraph",
           "lines": [
-            317,
-            317
+            282,
+            282
           ],
           "words": 20,
           "hash": "dd6711a52be1",
@@ -9339,8 +9147,8 @@
           "id": "sts.chapter8.b0150",
           "type": "paragraph",
           "lines": [
-            319,
-            319
+            284,
+            284
           ],
           "words": 51,
           "hash": "3d01cd64a3b4",
@@ -9350,8 +9158,8 @@
           "id": "sts.chapter8.b0151",
           "type": "paragraph",
           "lines": [
-            321,
-            321
+            286,
+            286
           ],
           "words": 26,
           "hash": "f23291bde0f7",
@@ -9361,8 +9169,8 @@
           "id": "sts.chapter8.b0152",
           "type": "list",
           "lines": [
-            323,
-            325
+            288,
+            290
           ],
           "words": 35,
           "hash": "da62386a849d",
@@ -9372,8 +9180,8 @@
           "id": "sts.chapter8.b0153",
           "type": "paragraph",
           "lines": [
-            327,
-            327
+            292,
+            292
           ],
           "words": 20,
           "hash": "9a6790bdc43d",
@@ -9383,8 +9191,8 @@
           "id": "sts.chapter8.b0154",
           "type": "blockquote",
           "lines": [
-            329,
-            329
+            294,
+            294
           ],
           "words": 4,
           "hash": "a932c6fe41c3",
@@ -9394,8 +9202,8 @@
           "id": "sts.chapter8.b0155",
           "type": "paragraph",
           "lines": [
-            331,
-            331
+            296,
+            296
           ],
           "words": 72,
           "hash": "02c925c83f5a",
@@ -9405,8 +9213,8 @@
           "id": "sts.chapter8.b0156",
           "type": "heading",
           "lines": [
-            333,
-            333
+            298,
+            298
           ],
           "words": 5,
           "hash": "bf3bcdc314e4",
@@ -9417,8 +9225,8 @@
           "id": "sts.chapter8.b0157",
           "type": "paragraph",
           "lines": [
-            335,
-            335
+            300,
+            300
           ],
           "words": 10,
           "hash": "8cab2a2d1b5f",
@@ -9428,8 +9236,8 @@
           "id": "sts.chapter8.b0158",
           "type": "paragraph",
           "lines": [
-            337,
-            337
+            302,
+            302
           ],
           "words": 40,
           "hash": "d2f3332e56cd",
@@ -9439,8 +9247,8 @@
           "id": "sts.chapter8.b0159",
           "type": "figure",
           "lines": [
-            339,
-            339
+            304,
+            304
           ],
           "words": 35,
           "hash": "e04f17df4332",
@@ -9452,8 +9260,8 @@
           "id": "sts.chapter8.b0160",
           "type": "caption",
           "lines": [
-            341,
-            341
+            306,
+            306
           ],
           "words": 20,
           "hash": "a8ac1d6d17a6",
@@ -9463,8 +9271,8 @@
           "id": "sts.chapter8.b0161",
           "type": "paragraph",
           "lines": [
-            343,
-            343
+            308,
+            308
           ],
           "words": 9,
           "hash": "3ba0860cfed5",
@@ -9474,8 +9282,8 @@
           "id": "sts.chapter8.b0162",
           "type": "paragraph",
           "lines": [
-            345,
-            345
+            310,
+            310
           ],
           "words": 39,
           "hash": "7f5e85d2691b",
@@ -9485,8 +9293,8 @@
           "id": "sts.chapter8.b0163",
           "type": "heading",
           "lines": [
-            347,
-            347
+            312,
+            312
           ],
           "words": 7,
           "hash": "f3d5f4eaac5a",
@@ -9497,8 +9305,8 @@
           "id": "sts.chapter8.b0164",
           "type": "paragraph",
           "lines": [
-            349,
-            349
+            314,
+            314
           ],
           "words": 44,
           "hash": "f2a4327a947d",
@@ -9508,8 +9316,8 @@
           "id": "sts.chapter8.b0165",
           "type": "blockquote",
           "lines": [
-            351,
-            351
+            316,
+            316
           ],
           "words": 3,
           "hash": "dcb4d9395acc",
@@ -9519,8 +9327,8 @@
           "id": "sts.chapter8.b0166",
           "type": "paragraph",
           "lines": [
-            353,
-            353
+            318,
+            318
           ],
           "words": 42,
           "hash": "cb6d25445367",
@@ -9530,8 +9338,8 @@
           "id": "sts.chapter8.b0167",
           "type": "paragraph",
           "lines": [
-            355,
-            355
+            320,
+            320
           ],
           "words": 63,
           "hash": "2d381cf485a1",
@@ -9541,8 +9349,8 @@
           "id": "sts.chapter8.b0168",
           "type": "heading",
           "lines": [
-            357,
-            357
+            322,
+            322
           ],
           "words": 6,
           "hash": "e02d401ffa85",
@@ -9553,8 +9361,8 @@
           "id": "sts.chapter8.b0169",
           "type": "paragraph",
           "lines": [
-            359,
-            359
+            324,
+            324
           ],
           "words": 23,
           "hash": "a2e6196605f3",
@@ -9564,8 +9372,8 @@
           "id": "sts.chapter8.b0170",
           "type": "figure",
           "lines": [
-            361,
-            361
+            326,
+            326
           ],
           "words": 39,
           "hash": "b385d038e39c",
@@ -9577,8 +9385,8 @@
           "id": "sts.chapter8.b0171",
           "type": "caption",
           "lines": [
-            363,
-            363
+            328,
+            328
           ],
           "words": 21,
           "hash": "fcb97eb9bf5e",
@@ -9588,8 +9396,8 @@
           "id": "sts.chapter8.b0172",
           "type": "list",
           "lines": [
-            365,
-            367
+            330,
+            332
           ],
           "words": 173,
           "hash": "de35283dcfe3",
@@ -9599,8 +9407,8 @@
           "id": "sts.chapter8.b0173",
           "type": "heading",
           "lines": [
-            369,
-            369
+            334,
+            334
           ],
           "words": 4,
           "hash": "a16bfe998689",
@@ -9611,8 +9419,8 @@
           "id": "sts.chapter8.b0174",
           "type": "paragraph",
           "lines": [
-            371,
-            371
+            336,
+            336
           ],
           "words": 30,
           "hash": "b21900035b19",
@@ -9622,8 +9430,8 @@
           "id": "sts.chapter8.b0175",
           "type": "list",
           "lines": [
-            373,
-            375
+            338,
+            340
           ],
           "words": 158,
           "hash": "5d2a9341c93c",
@@ -9633,8 +9441,8 @@
           "id": "sts.chapter8.b0176",
           "type": "paragraph",
           "lines": [
-            377,
-            377
+            342,
+            342
           ],
           "words": 38,
           "hash": "84b4b6e5589f",
@@ -9644,8 +9452,8 @@
           "id": "sts.chapter8.b0177",
           "type": "paragraph",
           "lines": [
-            379,
-            379
+            344,
+            344
           ],
           "words": 47,
           "hash": "408104519309",
@@ -9655,19 +9463,19 @@
           "id": "sts.chapter8.b0178",
           "type": "paragraph",
           "lines": [
-            381,
-            381
+            346,
+            346
           ],
           "words": 66,
           "hash": "a18843c9f8fe",
           "preview": "In the next chapter, we put this circle to work: **Chapter 9: Deglobalization and the Neig"
         },
         {
-          "id": "sts.chapter8.b0179",
+          "id": "sts.chapter8.b0130",
           "type": "hr",
           "lines": [
-            383,
-            383
+            348,
+            348
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -9677,8 +9485,8 @@
           "id": "sts.chapter8.b0180",
           "type": "heading",
           "lines": [
-            385,
-            385
+            350,
+            350
           ],
           "words": 8,
           "hash": "b0b307f6b87e",
@@ -9689,8 +9497,8 @@
           "id": "sts.chapter8.b0181",
           "type": "paragraph",
           "lines": [
-            387,
-            387
+            352,
+            352
           ],
           "words": 47,
           "hash": "55a2cfebfe7e",
@@ -9700,8 +9508,8 @@
           "id": "sts.chapter8.b0182",
           "type": "paragraph",
           "lines": [
-            389,
-            389
+            354,
+            354
           ],
           "words": 95,
           "hash": "ab350ae4f390",
@@ -9711,8 +9519,8 @@
           "id": "sts.chapter8.b0183",
           "type": "paragraph",
           "lines": [
-            391,
-            391
+            356,
+            356
           ],
           "words": 49,
           "hash": "0faba5dfebb8",
@@ -9722,8 +9530,8 @@
           "id": "sts.chapter8.b0184",
           "type": "paragraph",
           "lines": [
-            393,
-            393
+            358,
+            358
           ],
           "words": 64,
           "hash": "806e323f00fe",
@@ -9733,8 +9541,8 @@
           "id": "sts.chapter8.b0185",
           "type": "paragraph",
           "lines": [
-            395,
-            395
+            360,
+            360
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -9744,8 +9552,8 @@
           "id": "sts.chapter8.b0186",
           "type": "list",
           "lines": [
-            397,
-            399
+            362,
+            364
           ],
           "words": 187,
           "hash": "1b44c0e37d58",

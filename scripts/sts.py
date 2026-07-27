@@ -1638,19 +1638,26 @@ def _reconcile(old_blocks, new_blocks):
     Pass 1 matches on exact content (unchanged blocks, reorders keep their id).
     Pass 2 pairs residual same-type blocks positionally (an in-place edit keeps
     its id). Unmatched new blocks are left id-less for the caller to mint.
-    Returns the list of old ids that vanished (tombstones).
+
+    Returns (tombstones, stats). Pass 1 is provable: the content is identical,
+    so the id is certainly the same block's. Pass 2 is a *guess* — correct for
+    an in-place edit, wrong when a delete and an insert of the same type land
+    in one edit, which slides every id after the delete onto its neighbour.
+    stats["positional"] is that guess count, so a caller can surface it.
     """
     from collections import defaultdict, deque
     exact = defaultdict(deque)
     for ob in old_blocks:
         exact[(ob["type"], ob.get("level", 0), ob["hash"])].append(ob)
     used = set()
+    n_exact = n_positional = 0
     for nb in new_blocks:
         dq = exact.get((nb["type"], nb["level"], nb["hash"]))
         if dq:
             ob = dq.popleft()
             nb["id"] = ob["id"]
             used.add(ob["id"])
+            n_exact += 1
     by_type = defaultdict(deque)
     for ob in old_blocks:
         if ob["id"] not in used:
@@ -1663,7 +1670,9 @@ def _reconcile(old_blocks, new_blocks):
             ob = dq.popleft()
             nb["id"] = ob["id"]
             used.add(ob["id"])
-    return [ob["id"] for ob in old_blocks if ob["id"] not in used]
+            n_positional += 1
+    tombstones = [ob["id"] for ob in old_blocks if ob["id"] not in used]
+    return tombstones, {"exact": n_exact, "positional": n_positional}
 
 
 def _build_index(book_dir, old_index=None):
@@ -1672,6 +1681,7 @@ def _build_index(book_dir, old_index=None):
     figmap = _art_figure_map(book_dir)
     old_secs = {s["id"]: s for s in (old_index or {}).get("sections", [])}
     sections_out, total_blocks, total_words = [], 0, 0
+    recon = {"exact": 0, "positional": 0, "by_section": []}
     for s in book["sections"]:
         sid = s["id"]
         lines = (book_dir / s["file"]).read_text(encoding="utf-8").split("\n")
@@ -1679,7 +1689,12 @@ def _build_index(book_dir, old_index=None):
         for b in blocks:
             b["hash"] = _block_hash(b["type"], b["level"], b["text"])
         old = old_secs.get(sid, {})
-        tombstones = _reconcile(old.get("blocks", []), blocks)
+        tombstones, rstats = _reconcile(old.get("blocks", []), blocks)
+        recon["exact"] += rstats["exact"]
+        recon["positional"] += rstats["positional"]
+        if rstats["positional"]:
+            recon["by_section"].append({"section": sid,
+                                        "positional": rstats["positional"]})
         next_ord = old.get("next_ordinal", 1)
         for b in blocks:
             if not b.get("id"):
@@ -1710,6 +1725,11 @@ def _build_index(book_dir, old_index=None):
             "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
             "totals": {"sections": len(sections_out),
                        "blocks": total_blocks, "words": total_words},
+            # How this build reconciled ids against old_index. Describes the
+            # *transition*, not the state, so it is never persisted: rebuilding
+            # from the written index would report 0 positional and rewrite the
+            # file every time. _write_index strips it.
+            "_reconcile": recon,
             "sections": sections_out}
 
 
@@ -1723,7 +1743,7 @@ def _load_index(book_dir):
 
 
 def _strip_gen(ix):
-    return {k: v for k, v in ix.items() if k != "generated"}
+    return {k: v for k, v in ix.items() if k not in ("generated", "_reconcile")}
 
 
 def _write_index(book_dir, index, force=False):
@@ -1732,6 +1752,7 @@ def _write_index(book_dir, index, force=False):
     if old and not force and _strip_gen(old) == _strip_gen(index):
         return False
     index = dict(index)
+    index.pop("_reconcile", None)          # transition stat, not persisted state
     index["generated"] = date.today().isoformat()
     _index_path(book_dir).write_text(
         json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -1772,13 +1793,29 @@ def _id_build(args):
     changed = _write_index(BOOK_DIR, index, force=args.force)
     t = index["totals"]
     tomb = sum(len(s["tombstones"]) for s in index["sections"])
+    rc = index["_reconcile"]
     if args.json:
-        print(json.dumps({"changed": changed, "totals": t, "tombstones": tomb}, indent=2))
+        print(json.dumps({"changed": changed, "totals": t, "tombstones": tomb,
+                          "reconcile": rc}, indent=2))
     else:
         print(f"manuscript-index: {t['blocks']} blocks · {t['sections']} sections · "
               f"{t['words']:,} words" + ("" if changed else " (unchanged)"))
+        print(f"  ids carried: {rc['exact']} by content match · "
+              f"{rc['positional']} positionally")
         if tomb:
             print(f"  {tomb} tombstoned id(s) retained for audit")
+        if rc["positional"]:
+            print(f"\n  WARNING  {rc['positional']} id(s) were carried by POSITION, "
+                  "not by content.")
+            print("           Pass 2 pairs leftover same-type blocks in order. That is "
+                  "right for an\n"
+                  "           in-place edit and WRONG when a delete and an insert land "
+                  "in one edit,\n"
+                  "           which slides ids onto neighbouring blocks. Only the "
+                  "content matches\n"
+                  "           above are provable. Review before trusting these ids:")
+            for row in rc["by_section"]:
+                print(f"             {row['section']:<16} {row['positional']:>4}")
     return 0
 
 

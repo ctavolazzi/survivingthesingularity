@@ -34,10 +34,34 @@ const DUPLICATE_CHECK_EXEMPT_EMAIL = (env.TEST_REPEAT_PURCHASE_EMAIL || '').toLo
 const CODE_CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
 function generateDiscountCode() {
   let code = '';
+  // crypto.getRandomValues over Math.random: this code is handed to the
+  // customer as proof of a genuine preorder, so it should not be guessable
+  // from other codes issued nearby. Available in both Workers and Node 18+.
+  const bytes = crypto.getRandomValues(new Uint8Array(6));
   for (let i = 0; i < 6; i++) {
-    code += CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)];
+    code += CODE_CHARS[bytes[i] % CODE_CHARS.length];
   }
   return code;
+}
+
+/**
+ * `preorders` has three unique constraints, and every one of them surfaces as
+ * the same Postgres 23505:
+ *   - (email, edition_type)        -> a genuine repeat customer
+ *   - (edition_type, copy_number)  -> the author's-edition numbering race
+ *   - discount_code                -> two generated codes collided
+ * Only the first means "already preordered". Treating the other two as a
+ * duplicate customer silently drops a paid order: no row is written, no admin
+ * alert fires, and the customer still gets their download, so nobody finds
+ * out. PostgREST puts the violated constraint's name in `message`, which is
+ * the only thing that tells them apart.
+ */
+function violatedConstraint(err) {
+  if (err?.code !== '23505') return null;
+  const msg = err.message ?? '';
+  if (/discount_code/.test(msg)) return 'discount_code';
+  if (/edition_copy|copy_number/.test(msg)) return 'copy_number';
+  return 'email';
 }
 
 /**
@@ -96,12 +120,21 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
       await supabaseAdmin.from('preorders').delete().eq('email', email).eq('edition_type', editionType);
     }
 
-    const generatedCode = generateDiscountCode();
-    let { data: preorder, error: preorderErr } = await supabaseAdmin
-      .from('preorders')
-      .insert({ email, name, edition_type: editionType, source: 'stripe', discount_code: generatedCode })
-      .select('copy_number, discount_code')
-      .single();
+    // Retry a code collision with a fresh code before any of the duplicate
+    // handling below can mistake it for a repeat customer. Five attempts
+    // against a 31^6 space is far beyond what any realistic order volume
+    // needs; it exists so the failure is impossible rather than merely rare.
+    let preorder = null;
+    let preorderErr = null;
+    for (let attempt = 1; attempt <= 5; attempt++) {
+      ({ data: preorder, error: preorderErr } = await supabaseAdmin
+        .from('preorders')
+        .insert({ email, name, edition_type: editionType, source: 'stripe', discount_code: generateDiscountCode() })
+        .select('copy_number, discount_code')
+        .single());
+      if (violatedConstraint(preorderErr) !== 'discount_code') break;
+      console.warn(`[fulfillment] discount code collision for ${email}, retrying (attempt ${attempt}/5).`);
+    }
 
     // sql/009_preorder_discount_code.sql may not have run yet on this
     // project - if the column itself is missing, PostgREST rejects the
@@ -118,7 +151,7 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
     }
 
     if (preorderErr) {
-      if (preorderErr.code === '23505') {
+      if (violatedConstraint(preorderErr) === 'email') {
         duplicate = true;
         console.warn(`[fulfillment] duplicate preorder blocked: ${email} already has a ${editionType} preorder.`);
         // Look up their existing code so a resend still shows the real one.
@@ -130,7 +163,13 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
         copyNumber = existing?.copy_number ?? null;
         discountCode = existing?.discount_code ?? null;
       } else {
-        console.error('[fulfillment] preorder insert error:', preorderErr.message);
+        // Not a repeat customer: a real paid order just failed to record.
+        // `duplicate` stays false so the admin alert still fires - that alert
+        // is now the only way anyone finds out this happened.
+        console.error(
+          `[fulfillment] PAID ORDER NOT RECORDED for ${email} (${editionType}, session ${sessionId}). ` +
+          `Constraint: ${violatedConstraint(preorderErr) ?? 'none'}. Error: ${preorderErr.message}`
+        );
       }
     } else {
       copyNumber = preorder?.copy_number ?? null;

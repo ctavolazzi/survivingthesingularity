@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>StS storefront: from test mode to selling</title>
+<style>
+  :root {
+    --forest: #2d5016;
+    --forest-deep: #1e360f;
+    --sage: #89b07f;
+    --cream: #ede8d8;
+    --paper: #fbf8ef;
+    --golden: #c8a24f;
+    --golden-ink: #8a6a1a;
+    --amber: #d16849;
+    --rust: #a83a1e;
+    --ink: #22301a;
+    --muted: #5f6d58;
+    --line: rgb(45 80 22 / 0.16);
+    --line-strong: rgb(45 80 22 / 0.34);
+    --shadow: 0 1px 2px rgb(34 48 26 / 0.06), 0 8px 24px rgb(34 48 26 / 0.07);
+    --radius: 12px;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+    --sans: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #171c14;
+      --paper: #1e2419;
+      --ink: #e6ebe0;
+      --muted: #9aa893;
+      --forest: #a8cf9a;
+      --forest-deep: #cfe4c6;
+      --line: rgb(168 207 154 / 0.18);
+      --line-strong: rgb(168 207 154 / 0.36);
+      --golden: #d9b768;
+      --golden-ink: #dfc37f;
+      --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.35);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .shell { max-width: 1180px; margin: 0 auto; padding: 32px 20px 120px; }
+
+  /* ── Masthead ─────────────────────────────────────────── */
+  .masthead { border-bottom: 2px solid var(--line-strong); padding-bottom: 24px; margin-bottom: 28px; }
+  .eyebrow {
+    font-size: 12px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--golden-ink); margin: 0 0 8px;
+  }
+  h1 { font-size: clamp(28px, 4.4vw, 42px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 900; margin: 0 0 12px; color: var(--forest); }
+  .standfirst { font-size: clamp(15px, 1.8vw, 18px); color: var(--muted); max-width: 66ch; margin: 0 0 20px; }
+
+  .meta-row { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--muted); font-family: var(--mono); }
+  .meta-row b { color: var(--ink); font-weight: 700; }
+
+  /* ── Progress ─────────────────────────────────────────── */
+  .progress-card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 20px; margin: 24px 0 32px; box-shadow: var(--shadow);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px;
+  }
+  .progress-figure { font-size: 30px; font-weight: 900; color: var(--forest); line-height: 1; font-variant-numeric: tabular-nums; }
+  .progress-label { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .bar { flex: 1 1 260px; height: 10px; border-radius: 999px; background: var(--line); overflow: hidden; min-width: 200px; }
+  .bar > i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--sage), var(--forest)); transition: width 0.3s ease; }
+  .reset-btn {
+    font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    background: none; border: 1px solid var(--line-strong); color: var(--muted);
+    border-radius: 999px; padding: 6px 14px;
+  }
+  .reset-btn:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ── Filters ──────────────────────────────────────────── */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  .chip {
+    font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    background: var(--paper); border: 1px solid var(--line-strong); color: var(--muted);
+    border-radius: 999px; padding: 6px 14px; transition: all 0.15s;
+  }
+  .chip:hover { color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+  @media (prefers-color-scheme: dark) { .chip[aria-pressed="true"] { color: #12180f; } }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; color: var(--muted); margin: 14px 0 30px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .dot--legal { background: var(--rust); }
+  .dot--copy { background: var(--amber); }
+  .dot--numbers { background: var(--golden); }
+  .dot--config { background: var(--sage); }
+  .dot--gate { background: var(--forest); border-radius: 50%; }
+
+  /* ── Flow rail ────────────────────────────────────────── */
+  .wave { position: relative; margin: 0 0 10px; }
+  .wave-head {
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    padding: 14px 0 10px;
+  }
+  .wave-num {
+    font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--paper);
+    background: var(--forest); border-radius: 6px; padding: 3px 8px; letter-spacing: 0.06em;
+  }
+  @media (prefers-color-scheme: dark) { .wave-num { color: #12180f; } }
+  .wave-title { font-size: 19px; font-weight: 800; letter-spacing: -0.015em; margin: 0; color: var(--forest); }
+  .wave-note { font-size: 13px; color: var(--muted); }
+  .wave-count { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-left: auto; }
+
+  .connector { display: flex; justify-content: center; padding: 2px 0; }
+  .connector svg { display: block; color: var(--line-strong); }
+
+  .nodes {
+    display: grid; gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  .node {
+    position: relative; text-align: left; font: inherit; cursor: pointer;
+    background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--sage);
+    border-radius: var(--radius); padding: 13px 14px 12px; box-shadow: var(--shadow);
+    transition: transform 0.14s, box-shadow 0.14s, border-color 0.14s;
+    display: flex; flex-direction: column; gap: 6px; width: 100%;
+  }
+  .node:hover, .node:focus-visible { transform: translateY(-2px); box-shadow: 0 4px 8px rgb(34 48 26 / 0.1), 0 14px 30px rgb(34 48 26 / 0.12); }
+  .node:focus-visible { outline: 2px solid var(--golden); outline-offset: 2px; }
+  .node[data-cat="legal"] { border-left-color: var(--rust); }
+  .node[data-cat="copy"] { border-left-color: var(--amber); }
+  .node[data-cat="numbers"] { border-left-color: var(--golden); }
+  .node[data-cat="config"] { border-left-color: var(--sage); }
+  .node[data-blocked="true"] { opacity: 0.62; border-style: dashed; }
+  .node[data-done="true"] { opacity: 0.5; }
+  .node[data-done="true"] .node-title { text-decoration: line-through; }
+  .node[hidden] { display: none; }
+
+  .node-top { display: flex; align-items: center; gap: 8px; }
+  .node-id { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; }
+  .node-flag {
+    font-size: 10px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 2px 6px; border-radius: 4px; margin-left: auto;
+  }
+  .node-flag--blocked { background: rgb(168 58 30 / 0.14); color: var(--rust); }
+  .node-flag--gate { background: rgb(200 162 79 / 0.2); color: var(--golden-ink); }
+  .node-title { font-size: 14.5px; font-weight: 700; line-height: 1.35; margin: 0; letter-spacing: -0.01em; }
+  .node-files { font-family: var(--mono); font-size: 11px; color: var(--muted); line-height: 1.5; word-break: break-all; }
+  .node-check { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .node-check input { accent-color: var(--forest); width: 15px; height: 15px; cursor: pointer; }
+
+  /* Gate nodes */
+  .gate {
+    background: linear-gradient(180deg, rgb(200 162 79 / 0.13), transparent), var(--paper);
+    border: 1px solid var(--golden); border-left-width: 1px;
+    border-radius: var(--radius);
+  }
+  .gate .node-title { color: var(--golden-ink); }
+
+  /* ── Drawer ───────────────────────────────────────────── */
+  .drawer-scrim {
+    position: fixed; inset: 0; background: rgb(20 28 16 / 0.42); backdrop-filter: blur(2px);
+    opacity: 0; pointer-events: none; transition: opacity 0.2s; z-index: 40;
+  }
+  .drawer-scrim[data-open="true"] { opacity: 1; pointer-events: auto; }
+
+  .drawer {
+    position: fixed; top: 0; right: 0; height: 100dvh; width: min(560px, 100vw);
+    background: var(--paper); border-left: 1px solid var(--line-strong);
+    box-shadow: -20px 0 60px rgb(20 28 16 / 0.18);
+    transform: translateX(102%); transition: transform 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 50; display: flex; flex-direction: column;
+  }
+  .drawer[data-open="true"] { transform: none; }
+  .drawer-head { padding: 20px 22px 14px; border-bottom: 1px solid var(--line); display: flex; align-items: flex-start; gap: 12px; }
+  .drawer-close {
+    font: inherit; font-size: 22px; line-height: 1; cursor: pointer; background: none;
+    border: none; color: var(--muted); padding: 2px 6px; margin-left: auto; border-radius: 6px;
+  }
+  .drawer-close:hover { color: var(--ink); background: var(--line); }
+  .drawer-body { padding: 20px 22px 60px; overflow-y: auto; flex: 1; }
+  .drawer h2 { font-size: 19px; line-height: 1.25; margin: 4px 0 0; letter-spacing: -0.02em; color: var(--forest); }
+  .drawer h3 {
+    font-size: 11px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--golden-ink); margin: 22px 0 7px;
+  }
+  .drawer h3:first-child { margin-top: 0; }
+  .drawer p { margin: 0 0 10px; font-size: 14.5px; }
+  .drawer ul, .drawer ol { margin: 0 0 10px; padding-left: 20px; font-size: 14.5px; }
+  .drawer li { margin-bottom: 5px; }
+  .drawer code, .path {
+    font-family: var(--mono); font-size: 12.5px; background: var(--cream);
+    border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; word-break: break-all;
+  }
+  .quote {
+    border-left: 3px solid var(--amber); padding: 8px 0 8px 12px; margin: 0 0 12px;
+    font-size: 14px; color: var(--muted); font-style: italic;
+  }
+  .verify {
+    background: rgb(137 176 127 / 0.14); border: 1px solid rgb(137 176 127 / 0.4);
+    border-radius: 8px; padding: 10px 12px; font-size: 13.5px;
+  }
+  .verify b { color: var(--forest); }
+  .blocked-banner {
+    background: rgb(168 58 30 / 0.1); border: 1px solid rgb(168 58 30 / 0.35);
+    border-radius: 8px; padding: 10px 12px; font-size: 13.5px; margin-bottom: 16px;
+  }
+
+  .opt {
+    display: block; width: 100%; text-align: left; font: inherit; cursor: pointer;
+    background: var(--cream); border: 1px solid var(--line-strong); border-radius: 8px;
+    padding: 10px 12px; margin-bottom: 8px; transition: border-color 0.15s, background 0.15s;
+  }
+  .opt:hover { border-color: var(--forest); }
+  .opt[aria-pressed="true"] { border-color: var(--forest); border-width: 2px; background: rgb(137 176 127 / 0.16); }
+  .opt b { display: block; font-size: 14px; margin-bottom: 3px; }
+  .opt span { font-size: 13px; color: var(--muted); }
+  .rec { font-size: 10px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--golden-ink); margin-left: 6px; }
+
+  /* ── Footer ───────────────────────────────────────────── */
+  .closing { margin-top: 44px; padding-top: 24px; border-top: 2px solid var(--line-strong); font-size: 14px; color: var(--muted); }
+  .closing b { color: var(--ink); }
+
+  @media print {
+    .drawer, .drawer-scrim, .filters, .reset-btn, .chip { display: none !important; }
+    body { background: #fff; }
+    .node { break-inside: avoid; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <header class="masthead">
+    <p class="eyebrow">Storefront roadmap</p>
+    <h1>Your store is open but cannot take money. Here is the path to fixing that.</h1>
+    <p class="standfirst">The <strong>Preorder for $5</strong> button works and sends people to a real Stripe page &mdash; but that page is in <strong>test mode</strong>, where only fake card numbers are accepted. A real card is declined. Everything else on this page is worth doing; only <strong>Wave 3</strong> changes whether you can get paid. <br><br>The reassuring part: <strong>no customer has ever been affected by any of this</strong>, because no customer has ever completed a purchase. Every finished order in the database is one of your own test runs.</p>
+    <div class="meta-row"><span><b>Probed:</b> 2026-07-26 → 07-27, production</span>
+      <span><b>Method:</b> sts.py stripe --live, direct API POST, wrangler pages secret list, local Supabase backup</span>
+      <span><b>Host:</b> Cloudflare Pages · project survivingthesingularity · deploys origin/main</span>
+      <span><b>Excluded:</b> anything needing Stripe live-mode CLI auth (key needs re-login)</span></div>
+  </header>
+
+  <div class="progress-card">
+    <div>
+      <div class="progress-figure"><span id="pct">0</span>%</div>
+      <div class="progress-label">complete</div>
+    </div>
+    <div class="bar"><i id="bar"></i></div>
+    <div>
+      <div class="progress-figure"><span id="donecount">0</span>&thinsp;/&thinsp;<span id="totalcount">0</span></div>
+      <div class="progress-label">tasks closed</div>
+    </div>
+    <button class="reset-btn" id="reset" type="button">Reset progress</button>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filter findings by category">
+    <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-filter="legal" aria-pressed="false">Legal &amp; data truth</button>
+    <button class="chip" type="button" data-filter="copy" aria-pressed="false">Copy contradictions</button>
+    <button class="chip" type="button" data-filter="numbers" aria-pressed="false">Numbers &amp; naming</button>
+    <button class="chip" type="button" data-filter="config" aria-pressed="false">Config hygiene</button>
+    <button class="chip" type="button" data-filter="blocked" aria-pressed="false">Blocked only</button>
+    <button class="chip" type="button" data-filter="open" aria-pressed="false">Not yet done</button>
+  </div>
+
+  <div class="legend">
+    <span><i class="dot dot--gate"></i> decision gate</span>
+    <span><i class="dot dot--legal"></i> legal / data truth</span>
+    <span><i class="dot dot--copy"></i> copy contradiction</span>
+    <span><i class="dot dot--numbers"></i> numbers / naming</span>
+    <span><i class="dot dot--config"></i> config hygiene</span>
+    <span>dashed border = blocked</span>
+  </div>
+
+  <main id="flow"></main>
+
+  <section class="closing"><p><strong>Stop here.</strong> Announcing the store, emailing a list, or pointing traffic at it is not a step on this page. Do that only after V2 has passed with a real card and a real refund.</p>
+    <p>If you do only one thing: <strong>Wave 3</strong>. Waves 1, 2 and 4 are all genuinely worth doing, but none of them changes the fact that production is in test mode and collects nothing.</p>
+    <p><strong>Note on parallel work:</strong> another session was editing this repo at 07:14 today &mdash; a citation audit touching <code>manuscript/sources/research-log.md</code>, <code>src/lib/data/book/23-appendix-b.md</code> and <code>manuscript-index.json</code>. Those files are uncommitted and are not yours to commit from this roadmap.</p></section>
+
+</div>
+
+<div class="drawer-scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1">
+  <div class="drawer-head">
+    <div>
+      <span class="node-id" id="drawer-id"></span>
+      <h2 id="drawer-title"></h2>
+    </div>
+    <button class="drawer-close" id="drawer-close" type="button" aria-label="Close details">&times;</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<script>
+/* ───────────────────────────────────────────────────────────
+   Data: waves, gates, findings.
+   cat: legal | copy | numbers | config | gate
+   ─────────────────────────────────────────────────────────── */
+
+/* Plan data is injected by scripts/build_diagram.py from a JSON plan file.
+   See references/data-schema.md for the shape. */
+const PLAN = {
+ "waves": [
+  {
+   "id": "w0",
+   "num": "Wave 0",
+   "title": "Close the diagnosis",
+   "note": "Two dashboard reads. Cheap, and they decide how careful Wave 3 has to be.",
+   "nodes": [
+    {
+     "id": "D1",
+     "cat": "numbers",
+     "title": "Confirm the Author's Edition price — the $9 suspect",
+     "files": "Stripe dashboard → Live mode → search price_1TogztCYoTMkQm81Nfv3uJ20",
+     "what": "Production charged $9 while every page advertised $5. The $5 price object has been cleared; the charge came from somewhere else, and this is the most likely somewhere.",
+     "quote": "Live checkout charges $9.00; every page advertises $5",
+     "detail": [
+      "The Standard price <code>price_1To6muCYoTMkQm81rXG6QagG<\/code> reads <strong>$5.00<\/strong> and always did &mdash; Stripe's <code>unit_amount<\/code> is not updatable, so it was never $9.",
+      "<code>wrangler pages secret list<\/code> shows <strong>STRIPE_PRICE_ID_AUTHORS is not set<\/strong> in production, so the <code>authors<\/code> edition silently resolved to the shared <code>STRIPE_PRICE_ID<\/code>.",
+      "The endpoint accepts <code>edition_type<\/code> from any caller: POSTing <code>{\"edition_type\":\"authors\"}<\/code> at production returned a valid checkout session."
+     ],
+     "steps": [
+      "Open Stripe and confirm the mode toggle says Live, not Test.",
+      "Paste price_1TogztCYoTMkQm81Nfv3uJ20 into the search bar.",
+      "Read the unit amount."
+     ],
+     "verify": "If it reads <strong>$9.00<\/strong>, the incident is fully explained and no unknown price is loose in the catalog. If it reads anything else, a third price object exists &mdash; find it through D2 by opening a charge and reading which price it used."
+    },
+    {
+     "id": "D2",
+     "cat": "legal",
+     "title": "Audit the live window for real overcharges",
+     "files": "Stripe dashboard → Payments → Live mode → 2026-07-13 to 2026-07-26",
+     "what": "If anyone was billed $9 for a $5 product, they are owed $4 and an explanation. This is the only step with a duty attached.",
+     "quote": "Any successful $9 payment is a customer owed a $4 refund and an apology.",
+     "detail": [
+      "Local Supabase backup says the answer is <strong>zero<\/strong>: all <strong>9<\/strong> <code>fulfilled_sessions<\/code> rows carry <code>cs_test_<\/code> ids, not one <code>cs_live_<\/code>, across the entire history.",
+      "<code>preorders<\/code> holds 3 rows &mdash; two <code>test@example.com<\/code> dummies from 06-27 and one self-test from your own address on 07-14, also via a test session.",
+      "<strong>Do not close on that evidence alone.<\/strong> <code>fulfilled_sessions<\/code> only records orders that were <em>fulfilled<\/em>, and the webhook was returning 503 for part of the live window &mdash; which is exactly the condition under which a real paid order leaves no row at all."
+     ],
+     "steps": [
+      "Filter Payments to live mode, 2026-07-13 through 2026-07-26.",
+      "Count successful charges. Note the amount on each.",
+      "Write the number down, even if it is zero."
+     ],
+     "verify": "Zero live payments means nothing tonight ever reached a customer, and Wave 3 can proceed with no remediation. Any $9 charge means a refund and a note to that person, plus confirmation that the webhook dropped an order."
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "num": "Wave 1",
+   "title": "Get the two committed fixes live",
+   "note": "Both are real bugs, already written and committed, sitting on a branch production does not serve.",
+   "nodes": [
+    {
+     "id": "G1",
+     "cat": "gate",
+     "gate": true,
+     "title": "How much do you want to ship right now?",
+     "files": "branch v0.7.3 vs origin/main",
+     "what": "Production deploys origin/main. The fixes live on v0.7.3, which is 16 commits ahead including a book version bump. Shipping the fixes and shipping the book are separable.",
+     "detail": [
+      "The two fixes are <code>05ca194<\/code> (phantom discount-code promise) and <code>6e5b64d<\/code> (dev-only price fallback).",
+      "A full push also deploys the whole Precedent File wave and the v0.7.3 book. That is a release, not a hotfix."
+     ],
+     "options": [
+      {
+       "k": "cherry",
+       "label": "Cherry-pick the two fixes onto main",
+       "desc": "Branch from origin/main, cherry-pick 05ca194 and 6e5b64d, push. Ships only the bug fixes. 05ca194 may conflict in email.js since main's surrounding copy differs — keep main's Precedent File sentence and the new personalCodeCell block.",
+       "rec": true
+      },
+      {
+       "k": "full",
+       "label": "Push v0.7.3 to main as a release",
+       "desc": "Fast-forwards main and deploys 16 commits including the book version bump. Do this only if you mean to ship the book this morning."
+      }
+     ]
+    },
+    {
+     "id": "F1",
+     "cat": "config",
+     "title": "Stop promising a follow-up email that nothing sends",
+     "files": "src/lib/server/email.js (fixed in 05ca194; bug live at e476a04:email.js:328)",
+     "what": "When a customer has no personal discount code, the confirmation email prints words promising one is coming. Nothing in the codebase ever sends it.",
+     "quote": "Emailed separately",
+     "detail": [
+      "That phrase appears <strong>exactly once<\/strong> in the whole codebase &mdash; in the email template. There is no follow-up sender anywhere.",
+      "It is not a rare path: the personal code only exists after <code>sql/009<\/code> runs, and that migration has not run, so <em>every<\/em> customer would see it.",
+      "Fix renders the personal-code cell only when a real code exists, and switches \"Keep both of these\" to \"Keep this code\"."
+     ],
+     "steps": [
+      "Apply per your choice in G1.",
+      "Confirm the string no longer appears in the deployed source."
+     ],
+     "verify": "Run a test-mode purchase. The discount block shows one code cell (the redeemable PREORDER50) and no promise of a second email.",
+     "dep": "G1"
+    },
+    {
+     "id": "F2",
+     "cat": "config",
+     "title": "Stop the price fallback from silently billing the wrong amount",
+     "files": "src/routes/api/stripe-checkout/+server.js (fixed in 6e5b64d)",
+     "what": "Each edition fell back to a shared price variable when its own was unset. A fallback cannot fail — it just charges whatever the shared one points at.",
+     "quote": "standard: env.STRIPE_PRICE_ID_STANDARD || PRICE_ID",
+     "detail": [
+      "This is the shape of the $9 defect, and it is live right now: <code>STRIPE_PRICE_ID_AUTHORS<\/code> is unset, so an Author's Edition sale bills the <em>standard<\/em> price.",
+      "Fix keeps the fallback in dev and requires the edition's own variable in production, returning 503 instead of guessing.",
+      "Verified across three environments: production standard unchanged, production authors now 503s instead of mispricing, dev untouched.",
+      "Nothing in <code>src/<\/code> or <code>static/<\/code> requests the authors edition, so there is <strong>no UI impact<\/strong>."
+     ],
+     "steps": [
+      "Apply per your choice in G1.",
+      "Confirm the standard checkout still opens after deploy."
+     ],
+     "verify": "<code>python3 scripts/sts.py stripe --live<\/code> still reports HTTP 200 and $5.00 = $5.00. A 503 would mean STRIPE_PRICE_ID_STANDARD did not survive — roll back at once.",
+     "dep": "G1"
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "num": "Wave 2",
+   "title": "Run the two database migrations",
+   "note": "Paste and run. Both are idempotent, so running twice is harmless.",
+   "nodes": [
+    {
+     "id": "M1",
+     "cat": "config",
+     "title": "Create the discord_applications table",
+     "files": "sql/008_discord_applications.sql → Supabase SQL Editor",
+     "what": "The Discord application form on /checklist has never worked. The table it writes to does not exist.",
+     "quote": "This form isn't wired up yet. Email info@survivingthesingularity.com and we'll get you sorted.",
+     "detail": [
+      "The file was referenced by STRIPE-GO-LIVE.md, by SITEMAP.md, and by 009's own header, but had <strong>never been written<\/strong> &mdash; absent from the working tree and from all of git history.",
+      "Root cause was a blanket <code>*.sql<\/code> line in <code>.gitignore<\/code>, added to keep database dumps out, which silently swallowed the whole migration set. Fixed in <code>f238578<\/code>.",
+      "The endpoint already degrades cleanly (PGRST205 → a clear 503), so nothing crashes today; it simply cannot accept applications."
+     ],
+     "steps": [
+      "Open Supabase → SQL Editor.",
+      "Paste the contents of sql/008_discord_applications.sql and run."
+     ],
+     "verify": "\"Success. No rows returned.\" Then submit the Discord form on /checklist — it should accept you instead of returning the not-wired-up message."
+    },
+    {
+     "id": "M2",
+     "cat": "config",
+     "title": "Add the per-customer discount code column",
+     "files": "sql/009_preorder_discount_code.sql → Supabase SQL Editor",
+     "what": "Each preorder is supposed to get its own code as proof of purchase. The column does not exist, so the code is always null.",
+     "quote": "alter table public.preorders add column if not exists discount_code text;",
+     "detail": [
+      "<code>fulfillment.js<\/code> deliberately retries the insert without the column so a missing migration cannot take down the preorder pipeline &mdash; the code is just omitted.",
+      "This is what makes F1's null path fire for every customer today."
+     ],
+     "steps": [
+      "Paste the contents of sql/009_preorder_discount_code.sql and run.",
+      "Run 008 first if you have not — 009's header assumes it."
+     ],
+     "verify": "\"Success. No rows returned.\" Then a test purchase shows <strong>two<\/strong> code cells in the email instead of one. Requires F1 deployed to read correctly.",
+     "dep": "M1"
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "num": "Wave 3",
+   "title": "Turn the store on",
+   "note": "This is the only wave that changes whether money can reach you. Do the steps in this order — flipping the key without the webhook loses orders.",
+   "nodes": [
+    {
+     "id": "G2",
+     "cat": "gate",
+     "gate": true,
+     "title": "Sell the Author's Edition, or keep that door shut?",
+     "files": "Cloudflare → STRIPE_PRICE_ID_AUTHORS",
+     "what": "After F2, the authors path returns 503 until its own price variable is set. That is deliberate — but it is your call whether to open it.",
+     "detail": [
+      "No button anywhere on the site requests it; it is reachable only by direct API call.",
+      "The doc notes the toggle was removed in the single-offer cut on 2026-07-12."
+     ],
+     "options": [
+      {
+       "k": "closed",
+       "label": "Leave it unset — keep the path closed",
+       "desc": "The edition stays unsellable, which matches the current UI. One less live price to keep honest while you are re-cutting over.",
+       "rec": true
+      },
+      {
+       "k": "open",
+       "label": "Set it to price_1TogztCYoTMkQm81Nfv3uJ20",
+       "desc": "Opens the edition for sale at its own price. Only do this if D1 confirmed that price is the amount you actually intend to charge."
+      }
+     ]
+    },
+    {
+     "id": "S1",
+     "cat": "config",
+     "title": "Put the live Stripe keys in Cloudflare",
+     "files": "Cloudflare → Pages → survivingthesingularity → Settings → Variables",
+     "what": "Production currently holds test-mode values, which is why real cards decline.",
+     "quote": "checkout: HTTP 200 · mode test",
+     "detail": [
+      "Confirmed twice: <code>sts.py stripe --live<\/code> reports <code>mode test<\/code>, and a direct POST returns a <code>cs_test_…<\/code> session for both editions.",
+      "Already set in production (names only, values encrypted): STRIPE_PRICE_ID, STRIPE_PRICE_ID_STANDARD, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, SUPABASE_SERVICE_KEY."
+     ],
+     "steps": [
+      "Set STRIPE_SECRET_KEY to the live-mode key.",
+      "Set STRIPE_PRICE_ID_STANDARD to price_1To6muCYoTMkQm81rXG6QagG — confirmed $5.00.",
+      "Point STRIPE_PRICE_ID at that same $5 price, or remove it entirely.",
+      "Redeploy — Pages needs a new deployment for variable changes to take effect."
+     ],
+     "verify": "<code>python3 scripts/sts.py stripe --live<\/code> reports <code>mode live &lt;- REAL CARDS<\/code>. If it still says test, the redeploy did not happen.",
+     "dep": "D1"
+    },
+    {
+     "id": "S2",
+     "cat": "config",
+     "title": "Register the live webhook and its own signing secret",
+     "files": "Stripe → Developers → Webhooks (live mode)",
+     "what": "Signing secrets are per-endpoint and per-mode. The one in place is the test-mode secret and will not verify live traffic.",
+     "quote": "webhook: HTTP 400  <- OK: configured",
+     "detail": [
+      "A 400 to an unsigned POST proves a secret is set &mdash; but production is on test keys, so it is almost certainly the test endpoint's.",
+      "Going live without swapping it is <em>worse<\/em> than the old 503: every real Stripe delivery would fail signature verification, retry, and give up. Silently.",
+      "This webhook is what guarantees a paid order is never lost when a customer's browser closes before reaching the success page."
+     ],
+     "steps": [
+      "Add endpoint: https://survivingthesingularity.com/api/webhooks/stripe",
+      "Subscribe to checkout.session.completed and checkout.session.async_payment_succeeded.",
+      "Copy the new whsec_… into Cloudflare as STRIPE_WEBHOOK_SECRET and redeploy."
+     ],
+     "verify": "An unsigned POST to the endpoint still returns 400, and a real test delivery from the Stripe dashboard shows a 200 in the webhook's attempt log.",
+     "dep": "S1"
+    },
+    {
+     "id": "S3",
+     "cat": "config",
+     "title": "Create PREORDER50 in live mode",
+     "files": "Stripe → Product catalog → Coupons (live mode)",
+     "what": "The 50%-off code every preorder customer is promised exists only in test mode. In live mode it would simply not redeem.",
+     "quote": "Code to redeem at checkout: PREORDER50",
+     "detail": [
+      "Test and live are separate environments; a coupon in one does not exist in the other.",
+      "This is one of two mechanisms behind the \"50% discount at launch\" promise. The other is the per-customer code from M2."
+     ],
+     "steps": [
+      "Create a coupon: 50% off, duration \"once\".",
+      "Wrap it in a Promotion code with the exact string PREORDER50.",
+      "MASTER_DISCOUNT_CODE is unset in production, so the code defaults to PREORDER50 — match it exactly."
+     ],
+     "verify": "Enter PREORDER50 at a live checkout and watch the total halve. <code>allow_promotion_codes<\/code> is already enabled on the session.",
+     "dep": "S1"
+    },
+    {
+     "id": "S4",
+     "cat": "config",
+     "title": "Point the drift alarm at live",
+     "files": ".github/workflows/stripe-guard.yml",
+     "what": "A daily job compares production's real mode against the mode this repo expects. It is set to expect test.",
+     "quote": "EXPECTED_MODE: test",
+     "detail": [
+      "This guard exists because the repo's belief about production has been wrong twice, in <em>both<\/em> directions, and both times it was found by hand long after the fact.",
+      "Leaving it on <code>test<\/code> after going live means a daily failure for the wrong reason. Leaving it on <code>live<\/code> after a rollback is exactly the alarm you want."
+     ],
+     "steps": [
+      "Change EXPECTED_MODE from test to live.",
+      "Commit it in the same change as S1 so the alarm never disagrees with reality."
+     ],
+     "verify": "Run the workflow manually. It should pass, printing <code>mode=live expected=live webhook_ok=True<\/code>.",
+     "dep": "S1"
+    }
+   ]
+  },
+  {
+   "id": "w4",
+   "num": "Wave 4",
+   "title": "Add the second channel",
+   "note": "Gumroad. Only worth doing once Wave 3 works — otherwise you have two storefronts and neither takes money.",
+   "nodes": [
+    {
+     "id": "G3",
+     "cat": "gate",
+     "gate": true,
+     "title": "How do Gumroad buyers get their discount code?",
+     "files": "Gumroad product settings",
+     "what": "Personal codes are generated by your Supabase fulfillment pipeline, which Gumroad never touches. A Gumroad buyer pays the same $5 and gets strictly less.",
+     "detail": [
+      "The redeemable code (PREORDER50) is shared and can simply be printed. The per-customer proof-of-preorder code cannot.",
+      "Leaving this unaddressed recreates tonight's core defect on a new channel: a promise the system does not keep."
+     ],
+     "options": [
+      {
+       "k": "state",
+       "label": "Say so plainly in the product description",
+       "desc": "Tell Gumroad buyers their launch discount code arrives by email from the site, and include PREORDER50 in the delivered files. Honest, costs nothing, ships today.",
+       "rec": true
+      },
+      {
+       "k": "wire",
+       "label": "Wire Gumroad's Ping webhook into the same fulfillment",
+       "desc": "Full parity — Gumroad buyers land in the preorders table and get a personal code. More work, and it is a new payment path to verify end to end."
+      }
+     ]
+    },
+    {
+     "id": "U1",
+     "cat": "numbers",
+     "title": "Set the Gumroad price to $5",
+     "files": "Gumroad → new product → Price field",
+     "what": "The field currently reads 1. Your site charges 5.",
+     "quote": "Price: $ 1",
+     "detail": [
+      "A $1 listing undercuts your own site by 80% and gives anyone who finds it no reason to ever pay $5.",
+      "You have spent this whole session on a bug where the advertised and charged prices disagreed. Do not open a second storefront that disagrees with the first."
+     ],
+     "steps": [
+      "Change the Price field from 1 to 5.",
+      "Leave the type as E-book — that is what gives PDF/ePub delivery."
+     ],
+     "verify": "The Gumroad product page shows $5, matching /early-access."
+    },
+    {
+     "id": "U2",
+     "cat": "config",
+     "title": "Upload the same bundle both channels should deliver",
+     "files": "manuscript/bonus/dist/research-bundle-v1.zip (48.7 MB, in the survivingthesingularity worktree)",
+     "what": "Gumroad should hand over byte-identical goods to the site, or the two channels drift.",
+     "quote": "verified via signed URL: 48,776,826 bytes, 10 entries, integrity OK",
+     "detail": [
+      "Contents: The Precedent File (.pdf and .md, 29 lettered cases), START-HERE, Sources-and-Citations, the book as PDF <em>and<\/em> EPUB, three cover sizes, and the Municipal Autonomy Code.",
+      "Built and published by <code>scripts/build_bonus.py --upload<\/code>, which backs up the live copy first and verifies the result through a real signed URL.",
+      "<strong>Beware a decoy:<\/strong> there is a stale 3 KB <code>research-bundle-v1.zip<\/code> on the Desktop with the same filename. It is not what production serves."
+     ],
+     "steps": [
+      "Upload manuscript/bonus/dist/research-bundle-v1.zip to the Gumroad product.",
+      "Do not use Gumroad's pre-order mode — it withholds files until a release date, and your model delivers immediately."
+     ],
+     "verify": "Buy your own Gumroad listing and confirm the download opens to 10 files including The-Precedent-File.pdf and the EPUB.",
+     "dep": "U1"
+    }
+   ]
+  },
+  {
+   "id": "w5",
+   "num": "Verify",
+   "title": "Prove it works before you tell anyone",
+   "note": "Runs after Wave 3, and again after Wave 4. A store that looks live is not the same as a store that paid you.",
+   "nodes": [
+    {
+     "id": "V1",
+     "cat": "config",
+     "title": "Probe production rather than trusting a status line",
+     "files": "python3 scripts/sts.py stripe --live",
+     "what": "Every document in this repo that claimed to know production's state has been wrong at least once.",
+     "quote": "Do not trust a remembered status line in this file.",
+     "detail": [
+      "STRIPE-GO-LIVE.md said \"NOT LIVE YET\" for ten days while real cards were being charged, then said \"LIVE AND TAKING REAL MONEY\" after production had been rolled back to test.",
+      "The probe creates a checkout session, which moves no money and charges nobody."
+     ],
+     "steps": [
+      "Run the probe from the repo root.",
+      "Read all four lines, not just the first."
+     ],
+     "verify": "<code>mode live &lt;- REAL CARDS<\/code>, <code>webhook HTTP 400 &lt;- OK: configured<\/code>, advertised $5.00 = charged $5.00, and \"No drift.\""
+    },
+    {
+     "id": "V2",
+     "cat": "legal",
+     "title": "One real purchase with a real card",
+     "files": "https://survivingthesingularity.com/early-access",
+     "what": "The only test that counts. Everything upstream can pass while fulfillment quietly fails.",
+     "quote": "$5 gets you the current book draft, The Precedent File, and a 50% discount at launch.",
+     "detail": [
+      "Three things were promised and each has failed independently at some point tonight: the bundle, the personal code, and the redeemable code.",
+      "Check every downstream effect, not just that the payment succeeded."
+     ],
+     "steps": [
+      "Buy the Standard Edition with a real card.",
+      "Confirm the confirmation email arrives and its download link opens the 48.7 MB bundle.",
+      "Confirm both discount codes appear (requires M2 and F1).",
+      "Confirm the admin alert reaches admin@johnnyautoseed.com.",
+      "Confirm a preorders row exists carrying a discount_code.",
+      "Refund yourself."
+     ],
+     "verify": "All five confirmations pass. If any single one fails, the store is not ready regardless of what the probe said.",
+     "dep": "V1"
+    }
+   ]
+  }
+ ],
+ "gates": []
+};
+const WAVES = PLAN.waves || [];
+const EXTRA_GATES = PLAN.gates || [];
+
+/* ───────────────────────────────────────────────────────────
+   Render
+   ─────────────────────────────────────────────────────────── */
+
+const STORE = "sts-storefront-roadmap-20260727";
+let state = {};
+try { state = JSON.parse(localStorage.getItem(STORE) || "{}"); } catch { state = {}; }
+const save = () => { try { localStorage.setItem(STORE, JSON.stringify(state)); } catch {} };
+
+const ALL = [];
+WAVES.forEach(w => w.nodes.forEach(n => ALL.push(n)));
+EXTRA_GATES.forEach(n => ALL.push(n));
+const byId = Object.fromEntries(ALL.map(n => [n.id, n]));
+
+const CONNECTOR = '<div class="connector"><svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="7" y1="1" x2="7" y2="15"/><polyline points="2,11 7,17 12,11"/></svg></div>';
+
+function nodeHTML(n) {
+  const done = !!state["done:" + n.id];
+  const flag = n.blocked
+    ? '<span class="node-flag node-flag--blocked">blocked</span>'
+    : (n.gate ? '<span class="node-flag node-flag--gate">decide</span>' : "");
+  return `
+  <button class="node ${n.gate ? "gate" : ""}" type="button"
+          data-id="${n.id}" data-cat="${n.cat}"
+          data-blocked="${!!n.blocked}" data-done="${done}">
+    <span class="node-top"><span class="node-id">${n.id}</span>${flag}</span>
+    <span class="node-title">${n.title}</span>
+    <span class="node-files">${n.files || ""}</span>
+    ${n.gate ? "" : `<label class="node-check" onclick="event.stopPropagation()">
+      <input type="checkbox" data-check="${n.id}" ${done ? "checked" : ""} />
+      <span>mark done</span></label>`}
+  </button>`;
+}
+
+function render() {
+  const flow = document.getElementById("flow");
+  let html = "";
+  WAVES.forEach((w, i) => {
+    if (i > 0) html += CONNECTOR;
+    const total = w.nodes.filter(n => !n.gate).length;
+    html += `<section class="wave" data-wave="${w.id}">
+      <header class="wave-head">
+        <span class="wave-num">${w.num}</span>
+        <h2 class="wave-title">${w.title}</h2>
+        <span class="wave-count" data-wavecount="${w.id}"></span>
+      </header>
+      <p class="wave-note" style="margin:0 0 12px">${w.note}</p>
+      <div class="nodes">${w.nodes.map(nodeHTML).join("")}</div>
+    </section>`;
+  });
+  // Only render the trailing decisions block when the plan actually supplies
+  // `gates`. Plans that follow the convention of placing each gate inline,
+  // immediately before the work it blocks, supply none - and an empty section
+  // claiming unresolved decisions is a lie the reader has to go check.
+  if (EXTRA_GATES.length) {
+    const n = EXTRA_GATES.length;
+    html += CONNECTOR;
+    html += `<section class="wave">
+      <header class="wave-head">
+        <span class="wave-num">Open</span>
+        <h2 class="wave-title">Decisions still yours to make</h2>
+      </header>
+      <p class="wave-note" style="margin:0 0 12px">${n} call${n === 1 ? "" : "s"} I deliberately did not resolve. Each one changes what the fix looks like.</p>
+      <div class="nodes">${EXTRA_GATES.map(nodeHTML).join("")}</div>
+    </section>`;
+  }
+  flow.innerHTML = html;
+  updateProgress();
+}
+
+function updateProgress() {
+  const tasks = ALL.filter(n => !n.gate);
+  const done = tasks.filter(n => state["done:" + n.id]).length;
+  const pct = tasks.length ? Math.round((done / tasks.length) * 100) : 0;
+  document.getElementById("pct").textContent = pct;
+  document.getElementById("bar").style.width = pct + "%";
+  document.getElementById("donecount").textContent = done;
+  document.getElementById("totalcount").textContent = tasks.length;
+  WAVES.forEach(w => {
+    const t = w.nodes.filter(n => !n.gate);
+    const d = t.filter(n => state["done:" + n.id]).length;
+    const el = document.querySelector(`[data-wavecount="${w.id}"]`);
+    if (el) el.textContent = t.length ? `${d}/${t.length}` : "";
+  });
+}
+
+/* ── Drawer ── */
+const drawer = document.getElementById("drawer");
+const scrim = document.getElementById("scrim");
+let lastFocus = null;
+
+function openDrawer(id) {
+  const n = byId[id];
+  if (!n) return;
+  lastFocus = document.activeElement;
+  document.getElementById("drawer-id").textContent = n.id;
+  document.getElementById("drawer-title").textContent = n.title;
+
+  let b = "";
+  if (n.blocked) {
+    b += `<div class="blocked-banner"><b>Blocked by gate G0.</b> This file is dirty in the parallel business plan session. Editing it risks a clobber.</div>`;
+  }
+  if (n.dep && !n.blocked) {
+    b += `<div class="blocked-banner" style="background:rgb(200 162 79 / 0.13);border-color:rgb(200 162 79 / 0.45)">Depends on <b>${n.dep}</b>. Resolve that first.</div>`;
+  }
+  if (n.what) b += `<h3>What is wrong</h3><p>${n.what}</p>`;
+  if (n.quote) b += `<div class="quote">&ldquo;${n.quote}&rdquo;</div>`;
+  if (n.files) b += `<h3>Files</h3><p><span class="path">${n.files}</span></p>`;
+  if (n.detail) b += `<h3>Evidence</h3><ul>${n.detail.map(d => `<li>${d}</li>`).join("")}</ul>`;
+  if (n.options) {
+    b += `<h3>Pick one</h3>`;
+    n.options.forEach(o => {
+      const chosen = state["opt:" + n.id] === o.k;
+      b += `<button class="opt" type="button" data-opt="${n.id}" data-optk="${o.k}" aria-pressed="${chosen}">
+        <b>${o.label}${o.rec ? '<span class="rec">recommended</span>' : ""}</b><span>${o.desc}</span></button>`;
+    });
+  }
+  if (n.steps) b += `<h3>Steps</h3><ol>${n.steps.map(s => `<li>${s}</li>`).join("")}</ol>`;
+  if (n.verify) b += `<h3>How you know it worked</h3><div class="verify">${n.verify}</div>`;
+
+  document.getElementById("drawer-body").innerHTML = b;
+  drawer.dataset.open = "true";
+  scrim.dataset.open = "true";
+  drawer.focus();
+}
+
+function closeDrawer() {
+  drawer.dataset.open = "false";
+  scrim.dataset.open = "false";
+  if (lastFocus) lastFocus.focus();
+}
+
+/* ── Events ── */
+document.addEventListener("click", e => {
+  const node = e.target.closest(".node");
+  if (node) { openDrawer(node.dataset.id); return; }
+  const opt = e.target.closest("[data-opt]");
+  if (opt) {
+    const id = opt.dataset.opt;
+    state["opt:" + id] = state["opt:" + id] === opt.dataset.optk ? null : opt.dataset.optk;
+    save();
+    openDrawer(id);
+    return;
+  }
+  const chip = e.target.closest(".chip");
+  if (chip) {
+    document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === chip)));
+    applyFilter(chip.dataset.filter);
+    return;
+  }
+  if (e.target.id === "drawer-close" || e.target.id === "scrim") closeDrawer();
+});
+
+document.addEventListener("change", e => {
+  const cb = e.target.closest("[data-check]");
+  if (!cb) return;
+  state["done:" + cb.dataset.check] = cb.checked;
+  save();
+  const node = cb.closest(".node");
+  if (node) node.dataset.done = String(cb.checked);
+  updateProgress();
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && drawer.dataset.open === "true") closeDrawer();
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  state = {}; save(); closeDrawer(); render();
+});
+
+function applyFilter(f) {
+  document.querySelectorAll(".node").forEach(el => {
+    const n = byId[el.dataset.id];
+    let show = true;
+    if (f === "blocked") show = !!n.blocked;
+    else if (f === "open") show = !n.gate && !state["done:" + n.id];
+    else if (f !== "all") show = n.cat === f;
+    el.hidden = !show;
+  });
+  document.querySelectorAll(".wave").forEach(w => {
+    const any = [...w.querySelectorAll(".node")].some(el => !el.hidden);
+    w.hidden = !any;
+  });
+}
+
+render();
+</script>
+</body>
+</html>

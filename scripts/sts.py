@@ -265,19 +265,56 @@ def sitemap_urls() -> list:
     return re.findall(r"<loc>([^<]+)</loc>", sm.read_text(encoding="utf-8"))
 
 
+def route_is_noindex(route: str) -> bool:
+    """True if the route's own page declares robots noindex.
+
+    A page that says noindex has opted out of search on purpose. Listing it in
+    sitemap.xml tells a crawler "fetch this" and "do not index this" in the same
+    breath, and it hands out the URL of a page that was meant to be shared by
+    link only. /exclusive-friends-only is exactly that: the whole book behind one
+    password, noindex+nofollow.
+    """
+    rel = "" if route == "/" else route.lstrip("/")
+    page = (ROUTES_DIR / rel / "+page.svelte") if rel else (ROUTES_DIR / "+page.svelte")
+    if not page.exists():
+        return False
+    src = page.read_text(encoding="utf-8", errors="ignore")
+    return bool(re.search(r'name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', src, re.I))
+
+
 def public_pages(pages: list) -> list:
-    """Pages that belong in the sitemap (skip utility/dynamic/transactional)."""
+    """Pages that belong in the sitemap (skip utility/dynamic/transactional).
+
+    `skip` covers routes with no meta of their own to read. Everything else is
+    decided by the page itself via robots noindex, so a new private page stops
+    warning the moment it is written, and starts warning again the moment
+    someone deletes its noindex - which is the change actually worth flagging.
+    """
     skip = {"/unsubscribe", "/early-access/success"}
-    return [p for p in pages if "[" not in p and p not in skip]
+    return [p for p in pages
+            if "[" not in p and p not in skip and not route_is_noindex(p)]
 
 
 def check_sitemap(pages: list):
+    """Three distinct faults, which used to be collapsed into one message.
+
+    A URL with no route behind it is a 404 served to a crawler. A URL whose
+    route exists but declares noindex is not a 404 at all - it is the sitemap
+    and the page giving a crawler opposite instructions. Reporting the second
+    as "no such route exists" sends whoever reads it hunting for a missing file
+    that is sitting right there.
+    """
     errors, missing = [], []
     listed = {u.replace(SITE, "") or "/" for u in sitemap_urls()}
-    real = set(public_pages(pages))
+    real = {p for p in pages if "[" not in p}
+    should_list = set(public_pages(pages))
+
     for ghost in sorted(listed - real):
         errors.append(f"sitemap.xml lists {ghost} but no such route exists (404 to crawlers)")
-    for m in sorted(real - listed):
+    for clash in sorted((listed & real) - should_list):
+        errors.append(f"sitemap.xml lists {clash}, but that page sets robots noindex "
+                      f"- the sitemap invites the crawl the page then refuses")
+    for m in sorted(should_list - listed):
         missing.append(m)
     return errors, missing
 

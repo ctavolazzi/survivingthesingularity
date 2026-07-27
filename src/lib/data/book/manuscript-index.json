@@ -6,7 +6,7 @@
   "totals": {
     "sections": 30,
     "blocks": 2030,
-    "words": 88941
+    "words": 88936
   },
   "sections": [
     {
@@ -14,7 +14,7 @@
       "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md",
       "next_ordinal": 41,
-      "words": 2105,
+      "words": 2100,
       "tombstones": [],
       "blocks": [
         {
@@ -82,8 +82,8 @@
             13,
             13
           ],
-          "words": 74,
-          "hash": "1980fdca0aed",
+          "words": 69,
+          "hash": "f5b19d93fc8a",
           "preview": "For years, I've been talking about this, and for years, I've been labeled the local crackp"
         },
         {

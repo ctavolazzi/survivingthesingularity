@@ -15,6 +15,10 @@ Commands:
               shows its reader, catches subtitle/price drift across the site
               and the built file, and audits Precedent Ledger integrity.
               `verify links` liveness-checks every Works Cited URL.
+    schema    Which sql/ migrations have actually reached the live database.
+              A committed migration file is not an applied migration; the
+              app swallows both "table missing" and "column missing", so
+              nothing else surfaces the gap.
     stripe    Stripe go-live readiness (masks all secrets); --live probes
               production for live-vs-test mode, webhook health, and whether
               the price charged matches the price advertised
@@ -673,6 +677,92 @@ def cmd_quotes(args) -> int:
         for r in results:
             print(f"  {r['action']:<10} {r['key']:<14} {r['file'] or '-'}")
     return 1 if bad else 0
+
+
+# ──────────────────────────────────────────────────────────────────────
+# schema — which migrations have actually reached the live database
+# ──────────────────────────────────────────────────────────────────────
+#
+# sql/ is a directory of files. That is not the same thing as a database.
+# On 2026-07-26 migrations 008 and 009 had been written, committed, and
+# forgotten: the discord endpoint was 500ing against a table that did not
+# exist, and every preorder confirmation went out with no discount code
+# while the whole pitch was "50% off at launch". Nothing surfaced it,
+# because the app catches both failures and carries on.
+#
+# There is no psql and no supabase CLI on this machine, so this asks
+# PostgREST the only question it can answer cheaply: select the thing and
+# see whether the schema cache knows about it. A missing table answers
+# PGRST205, a missing column answers 42703, and either way the migration
+# has not run.
+
+# (migration file, human name, table, column or None for a whole-table check)
+SCHEMA_EXPECTATIONS = [
+    ("001_waitlist.sql",                 "waitlist",              "waitlist",             None),
+    ("002_waitlist_unsubscribe.sql",     "unsubscribe token",     "waitlist",             "unsubscribe_token"),
+    ("003_preorders.sql",                "preorders",             "preorders",            None),
+    ("004_fulfilled_sessions.sql",       "fulfilment ledger",     "fulfilled_sessions",   None),
+    ("005_preorders_copy_lock.sql",      "copy numbering",        "preorders",            "copy_number"),
+    ("006_preorders_standard_edition.sql", "standard edition",    "preorders",            "edition_type"),
+    ("008_discord_applications.sql",     "discord applications",  "discord_applications", None),
+    ("009_preorder_discount_code.sql",   "per-buyer discount code", "preorders",          "discount_code"),
+]
+
+
+def _schema_probe(url: str, key: str, table: str, column: str = None):
+    """Ask PostgREST whether a table (or column) exists. Returns (ok, detail)."""
+    sel = column or "*"
+    q = f"{url}/rest/v1/{table}?select={urllib.parse.quote(sel)}&limit=1"
+    try:
+        with _sb_get(q, key, timeout=20):
+            return True, "present"
+    except urllib.error.HTTPError as e:
+        try:
+            payload = json.loads(e.read().decode("utf-8"))
+        except Exception:  # noqa: BLE001
+            return False, f"HTTP {e.code}"
+        code = payload.get("code", "")
+        msg = payload.get("message", "")
+        if code == "PGRST205":
+            return False, "table does not exist"
+        if code == "42703":
+            return False, "column does not exist"
+        return False, f"{code}: {msg}"[:80]
+    except Exception as e:  # noqa: BLE001
+        return False, str(e)[:80]
+
+
+def cmd_schema(args) -> int:
+    url, key = _sb_creds()
+    rows, pending = [], []
+    for migration, label, table, column in SCHEMA_EXPECTATIONS:
+        target = f"{table}.{column}" if column else table
+        ok, detail = _schema_probe(url, key, table, column)
+        rows.append({"migration": migration, "label": label,
+                     "target": target, "applied": ok, "detail": detail})
+        if not ok:
+            pending.append(migration)
+
+    if args.json:
+        print(json.dumps({"project": url, "rows": rows,
+                          "pending": sorted(set(pending))}, indent=2))
+        return 1 if pending else 0
+
+    print(f"sts schema — {url}")
+    for r in rows:
+        mark = "ok     " if r["applied"] else "MISSING"
+        print(f"  {mark}  {r['migration']:<38} {r['target']:<28} {r['detail']}")
+    if pending:
+        uniq = sorted(set(pending))
+        print(f"\n  {len(uniq)} migration(s) have not reached the database:")
+        for m in uniq:
+            print(f"    sql/{m}")
+        print("\n  There is no psql or supabase CLI here, so run them by hand:")
+        print("  Supabase dashboard > SQL Editor > paste the file > Run.")
+        print("  Every one of these files is idempotent; re-running an applied one is safe.")
+        return 1
+    print("\n  Every migration in sql/ is live in the database.")
+    return 0
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -3270,6 +3360,12 @@ def main():
                    help="report what would be exported without writing")
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_flow)
+
+    p = sub.add_parser("schema",
+                       help="check which sql/ migrations have actually reached the "
+                            "live Supabase database (exits non-zero if any are pending)")
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_schema)
 
     p = sub.add_parser("backup",
                        help="dump every Supabase table + storage bucket to a local "

@@ -7,6 +7,12 @@ import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 const apiKey = env.RESEND_API_KEY;
 const from = env.EMAIL_FROM || 'Surviving the Singularity <onboarding@resend.dev>';
 
+// Where "somebody just preordered" lands. This was hardcoded, which meant the
+// business's own notification address could only be changed by shipping a
+// deploy. The fallback is the address it was hardcoded to, so an unset var
+// keeps today's behaviour exactly.
+const adminAlertTo = env.ADMIN_ALERT_EMAIL || 'admin@johnnyautoseed.com';
+
 const resend = apiKey ? new Resend(apiKey) : null;
 
 function escapeHtml(str) {
@@ -114,7 +120,7 @@ export async function sendAdminPreorderAlert({ name, email, edition_type, copy_n
   const body = `Name: ${name}\nEmail: ${email}\nEdition: ${edition_type}${isAuthors && copy_number ? `\nCopy: #${copy_number} / 100` : ''}`;
   const { error } = await resend.emails.send({
     from,
-    to: 'admin@johnnyautoseed.com',
+    to: adminAlertTo,
     subject,
     text: body,
   });
@@ -156,7 +162,7 @@ export async function sendAdminDiscordApplicationAlert({ name, email, answer }) 
   const body = `Name: ${name}\nEmail: ${email}\n\nAnswer:\n${answer}`;
   const { error } = await resend.emails.send({
     from,
-    to: 'admin@johnnyautoseed.com',
+    to: adminAlertTo,
     subject,
     text: body,
   });

@@ -300,3 +300,179 @@ Cited entries: **3-7** (Transformer), **12-18** (DishBrain), **19-23** (Aschenbr
   persistence.** Chapter agents should write their durable record to a git-tracked file and treat the epistemic layer
   as best-effort until this is fixed. The manuscript edits themselves were never at risk: they are on disk, verified
   by `git diff` and by `sts.py id verify` (PASS hash.match, PASS coverage.exact, PASS art.links 83 linked).
+
+## 2026-07-26. Citation audit: Appendix B link sweep, and P-22 verified clean
+
+Two pieces of work, one editing sources and one checking a precedent. No manuscript prose changed.
+
+### Appendix B dead-link sweep: two of four "dead" sources were never dead
+
+`sts.py verify --links` reported 1 dead, 21 bot-blocked, 2 server error, 1 unreachable. Each of the four flagged
+sources was then re-probed by hand with a browser user agent, which changed the picture materially:
+
+- **171, Eclypsium cyberdeck.** Genuinely 404. The article moved slug, from
+  `building-the-ultimate-cyberdeck-my-custom-hackberry-pi` to `build-the-ultimate-cyberdeck-hackberry-pi`.
+  URL replaced; same article, no claim affected.
+- **2, Workforce Singapore.** Genuinely dead, but NOT for the reported reason. The tool reported a DNS failure;
+  the host in fact resolves to three A records. Workforce Singapore has migrated to `swda.gov.sg`, and the old
+  direct-PDF path now redirects to `/not-found`. Repointed at the report's landing page on the new domain, which
+  is the more durable target than a versioned PDF URL.
+- **42, Global Dialogue / Marie Jahoda.** Reported 500. **Returns HTTP 200 with a browser user agent. Not broken.**
+  This is the citation behind the latent-functions-of-employment argument that Chapters 7 and 8 both lean on, so
+  editing it on the automated signal would have damaged a working source.
+- **65, eBay Australia listing.** Reported 500; actually a 403 bot-block. Not proven dead. It is a pure duplicate of
+  source 62 (The Off-Grid Shop, identical product and title string) and a marketplace listing that expires by
+  design, so it remains a candidate for removal. Left in place: Appendix B hard-types its 208 entry numbers in
+  prose, so deleting 65 forces a hand renumber of 66 through 192, which would also renumber the P-01, P-02 and
+  P-09 Primary Sources blocks. Nothing in the manuscript cites Appendix B by number (verified by grep), so the
+  redundant entry costs the reader nothing and the renumber is not worth its risk. CT's call.
+
+Result: `verify --links` goes from 1 dead / 1 unreachable / exit 1 to **0 dead / 0 unreachable / Clean**.
+
+**Rule this produced, for the fleet:** a bot-hostile HTTP response is not evidence a citation is dead. Only a 404,
+a 410, or a redirect landing on a not-found page justifies an edit. `sts.py` prints this warning itself and it was
+still nearly ignored. The 23 bot-blocked hosts in the current run (ResearchGate, MDPI, Monash, Fast Company and
+others) are working citations and must not be bulk-edited from that list.
+
+### Precedent triage, and P-22 verified against primary sources
+
+The P-09 probe established that the book's failure mode is inheritance rather than invention, so the remaining
+fifteen unverified precedents were swept for comparison claims rather than for fabricated quotes. Of the raw hits,
+most are prose artifacts ("the first list", "the first answer", "the first year") rather than checkable assertions.
+The genuine factual comparison claims concentrate in five precedents: P-19 (largest navy on Earth), P-21 (Y2K
+remediation dollar figures), P-13 (first quartz wristwatch), P-11 (writing disappeared in Greece), P-14 (one of the
+largest transfers of position in the country's history).
+
+**P-22 was checked first, as the highest-risk entry in the book.** It is the closing precedent, it sits in the
+Conclusion, and it rests on three direct quotations attributed to named real people. That is precisely the species
+of claim Appendix D brags about excluding, which makes an error there maximally damaging.
+
+It verifies. All three receipts hold:
+
+1. **Clifford Stoll, Newsweek.** "Baloney. Do our computer pundits lack all common sense?" and "the Internet is one
+   big ocean of unedited data, without any pretense of completeness" are both verbatim from the essay, republished
+   by Newsweek as "Why the Web Won't Be Nirvana" (Appendix B 157). The essay does dismiss online shopping,
+   telecommuting and digital news, and does state flatly that no online database will replace your daily newspaper.
+   His later line, "Of my many mistakes, flubs, and howlers, few have been as public as my 1995 howler," is real.
+   *One note:* Newsweek's web republication is dated February 26, 1995 while the book says February 27. February 27
+   is the standard print issue citation and February 27, 1995 was a Monday, Newsweek's cover-date convention. Left
+   as written.
+2. **Paul Krugman, Red Herring.** The article is "Why most economists' predictions are wrong," Red Herring,
+   10 June 1998, so the book's "June 1998" is correct, as is "future Nobel laureate" (2008). The fax machine
+   sentence is quoted accurately. The admission is also real: Krugman told Business Insider in 2013, "Anyway, I was
+   clearly trying to be provocative, and got it wrong, which happens to all of us sometimes." The book's shortened
+   form is a faithful truncation.
+   *Trap avoided:* in that same 2013 email Krugman describes the piece as a New York Times Magazine
+   hundredth-anniversary item written from the perspective of 2098, which does not match Red Herring. The book does
+   not repeat that confusion, and it should not be introduced.
+3. **Daily Mail, 5 December 2000.** Headline and date confirmed; the piece was by science correspondent James
+   Chapman and drew on Virtual Society research reporting UK users going online less often out of boredom, cost and
+   limited uses. The book's paraphrase tracks the headline's own "millions give up on it."
+
+Appendix B already carries these (157 Stoll, 159 Snopes, plus Quote Investigator and the Daily Mail page scan), so
+**no new sources were added and no P-22 Primary Sources block is needed.** P-22 moves from unverified to verified
+with no edit.
+
+**Refinement to the diagnostic:** the book's *quotations* are in good shape. P-09 failed on a comparison, not a
+quote, and P-22's three quotes all survive primary-source contact. The audit should keep hunting comparisons and
+superlatives and should not spend its budget re-checking quoted material.
+
+Status after this pass: P-01 through P-06, P-09 and P-22 checked. Thirteen remain: P-07, P-08, P-10 through P-21.
+
+## 2026-07-27. Citation audit: P-21, P-19, P-13, P-11 checked
+
+Four comparison claims verified. **Two pass clean, one needs a precision fix, one has a genuine source
+conflict that needs CT.** No manuscript prose was changed in this pass; every item below is a finding
+awaiting a decision, not an edit already made.
+
+### P-13, The Quartz Heresy. PASSES.
+
+13-chapter11.md:311 claims "In 1969 Seiko shipped the first quartz wristwatch."
+
+Confirmed. The Seiko Quartz Astron 35SQ was unveiled in Tokyo on **25 December 1969**, after ten years of
+development at Suwa Seikosha. It carries an IEEE Milestone, "Electronic Quartz Wristwatch, 1969," which
+is about as close to an institutional adjudication of a first-claim as exists. Priced at 450,000 yen,
+roughly a car; a hundred 18-karat gold examples sold within the first week at $1,250.
+
+This was flagged as high risk because it is a first-claim, the same shape P-09 failed on. It survives.
+The companion clause "the Swiss, who dominated world watchmaking" is well attested and was not disturbed.
+
+### P-11, The Year the Bronze Stopped. PASSES.
+
+11-chapter9.md:288 claims "in Greece, writing itself disappeared for centuries."
+
+Confirmed, and if anything the book understates it. Linear B fell out of use with the collapse of the
+Mycenaean palaces around 1200 BC. Writing did not merely decline, it **ended**: the palace redistributive
+economy that required scribes was gone, so the need for records was gone with it. Greece was illiterate
+for roughly four centuries until the alphabet arrived around 800 BC.
+
+The companion clause "the most connected, most specialized economies collapsed hardest and fastest" is
+the softer half and is standard in the literature. Left as written.
+
+### P-21, The Apocalypse That Ran On Time. PASSES on the global figure, NEEDS A PRECISION FIX on the US one.
+
+20-chapter18.md:127 claims "roughly three hundred billion dollars spent globally, more than a hundred
+billion in the United States alone."
+
+- **Global, roughly $300bn: holds.** Estimates cluster from $308bn worldwide up through Gartner's
+  $300bn to $600bn range, with some media figures near $450bn. "Roughly three hundred billion" sits at
+  the low, defensible end and is fair.
+- **US, "more than a hundred billion": slightly overstated.** The canonical figure is the US Department
+  of Commerce's November 1999 estimate of **$100 billion**, covering repairs from 1995 through 2001.
+  The book says "more than," the source says "$100 billion." That is a small overshoot of the same
+  species as Chapter 0's "pittance," which was corrected for exactly this reason.
+
+**Recommended fix, not yet applied:** change "more than a hundred billion" to "about a hundred billion."
+This makes the sentence more accurate rather than vaguer, so it does not run into Appendix D's ban on
+softening. **The figure appears twice**, at line 127 and again at line 138 ("The world spent roughly
+three hundred billion dollars on Y2K and called it sane"). Line 138 uses only the global figure, which
+holds, so only line 127 needs the edit.
+
+### P-19, Forty-Seven Pages. CONTESTED. NEEDS CT.
+
+18-chapter16.md:158 claims "*Common Sense* ran forty-seven pages" and closes on "could not answer
+forty-seven pages in time." The number is the precedent's title and its punchline, and it appears twice
+in one paragraph.
+
+**The sources genuinely conflict:**
+
+- **47 pages** is what Wikipedia states in its first sentence, and it is repeated very widely downstream.
+- **79 pages** is the physical collation of the Robert Bell first edition, given as `[4], 79, [1]` by
+  the Library of Congress catalogue and echoed by Sotheby's and Bonhams in their auction descriptions of
+  first printings, and by the Museum of the American Revolution.
+
+This is **the P-09 pattern again**: a vivid, memorable, widely repeated number whose strongest backing is
+Wikipedia, sitting against a bibliographic record that says something else. The audit rule written after
+P-09 says to treat any precedent backed only by a bare Wikipedia link as unverified by default, and that
+is exactly the situation.
+
+Two plausible reconciliations, neither confirmed:
+
+1. The two numbers describe **different editions**. Bell's first printing and Bradford's enlarged
+   edition, which added appendices, are different lengths, and "47" may belong to a particular
+   typesetting rather than the first printing.
+2. One count is of **text pages** and the other of **signature pages** including front matter and blanks.
+
+**Not edited, deliberately.** Unlike P-09, this claim is not demonstrably false, it is disputed. Cutting
+or changing a chapter's title and punchline on a contested number is a judgment call that belongs to CT,
+not to an audit pass. Two honest options:
+
+- **Resolve it.** Consult Gimbel's Paine bibliography or the LoC physical description directly, establish
+  which edition is being described, and state that edition explicitly in the text.
+- **Sidestep it.** Rewrite so the pamphlet's brevity carries the point without a specific page count.
+  This loses the title "Forty-Seven Pages," which is a real cost.
+
+Also unverified in the same sentence and worth folding into whichever pass resolves this: "commanded the
+largest navy on Earth," which is very likely true for Britain in 1776 but should not be asserted on
+likelihood, and "proportionally one of the most widely read things ever printed in America," which is the
+weakest of the three claims.
+
+### Running status
+
+Checked: P-01 through P-06, P-09, P-11, P-13, P-21, P-22. **Thirteen of 22 verified.**
+Remaining: P-07, P-08, P-10, P-12, P-14, P-15, P-16, P-17, P-18, P-19 (contested), P-20.
+
+**Pattern holding across the audit:** first-claims and disappearance-claims have survived every check so
+far. The failures cluster in **numeric comparisons repeated from secondary sources**: P-09's Wellington,
+P-21's US dollar figure, and now P-19's page count. That is a narrow, predictable target for the
+remaining passes.

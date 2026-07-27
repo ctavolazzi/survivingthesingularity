@@ -6,7 +6,7 @@
   "totals": {
     "sections": 30,
     "blocks": 2030,
-    "words": 88936
+    "words": 88931
   },
   "sections": [
     {
@@ -22052,7 +22052,7 @@
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
       "next_ordinal": 22,
-      "words": 4558,
+      "words": 4553,
       "tombstones": [],
       "blocks": [
         {
@@ -22074,8 +22074,8 @@
             3,
             3
           ],
-          "words": 2008,
-          "hash": "3f9ba09f83ab",
+          "words": 2003,
+          "hash": "9294c059e92b",
           "preview": "1. Strategic Preemption Under Shared Catastrophic Risk: The Suicide Region and the Race to"
         },
         {
@@ -22201,7 +22201,7 @@
             115
           ],
           "words": 303,
-          "hash": "3cf27cba912f",
+          "hash": "8850402513f1",
           "preview": "166. Cyberdecks are having a moment, rejecting big tech surveillance with style and substa"
         },
         {

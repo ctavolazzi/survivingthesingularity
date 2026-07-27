@@ -98,7 +98,7 @@
         </div>
         <div class="modal-text">
           <h2 id="book-cover-title" class="book-title">Surviving the Singularity</h2>
-          <div class="book-subtitle">A field manual for staying agentic as AI rewrites the world.</div>
+          <div class="book-subtitle">The 9 Stages of the Singularity and the Future of Earth</div>
           <div class="book-description">
             <p>
               The Singularity isn't just about fending off Terminator bots or finding food in the era of economic collapse and climate famines. It's about navigating a world where technology changes faster than we can keep up with.

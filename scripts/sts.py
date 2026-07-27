@@ -2941,12 +2941,36 @@ def verify_meta() -> list:
     """Catch drift between what the site promises and what the file says."""
     problems = []
     subs = _subtitle_sources()
-    distinct = {_normalize_claim(v) for v in subs.values() if v}
-    if len(distinct) > 1:
+    # book.json is canonical: it becomes the EPUB/PDF metadata a buyer downloads.
+    # Surfaces that render a SUBTITLE must match it exactly. src/app.html holds a
+    # meta *description* -- a ~155-char search snippet, a different field with a
+    # different job -- so it only has to CONTAIN the subtitle, not equal it.
+    # Comparing a description against a subtitle for equality is a category error
+    # and made a correct description look like drift.
+    DESCRIPTION_SOURCES = {"src/app.html (social + search)"}
+    canonical_key = "book.json (EPUB/PDF metadata)"
+    canonical = _normalize_claim(subs.get(canonical_key, ""))
+    drifted = {}
+    for k, v in subs.items():
+        if not v or k == canonical_key:
+            continue
+        got = _normalize_claim(v)
+        ok = canonical in got if k in DESCRIPTION_SOURCES else got == canonical
+        if not ok:
+            drifted[k] = v
+    if canonical and drifted:
         problems.append({
             "kind": "subtitle drift",
-            "detail": f"{len(distinct)} different subtitles in production: "
-                      + " | ".join(f"{k} -> {v!r}" for k, v in subs.items())})
+            "detail": f"{len(drifted) + 1} different subtitles in production: "
+                      + " | ".join(f"{k} -> {v!r}"
+                                   for k, v in [(canonical_key,
+                                                 subs[canonical_key])]
+                                   + list(drifted.items()))})
+    elif not canonical:
+        problems.append({
+            "kind": "subtitle missing",
+            "detail": "book.json has no subtitle, so nothing can be checked "
+                      "against it"})
     ads = advertised_prices()
     if len(ads) > 1:
         problems.append({
@@ -2962,8 +2986,13 @@ def verify_precedents() -> dict:
     for f in sorted(BOOK_DIR.glob("*.md")):
         if not BOOK_SECTION_RE.match(f.name):
             continue
-        ids = sorted(set(re.findall(r"P-(\d{2})", f.read_text(encoding="utf-8",
-                                                              errors="replace"))))
+        # Count the precedent a section OWNS (its `## Precedent P-NN:` heading),
+        # not every mention. A bare "P-15" in prose is a cross-reference, and
+        # counting those reported ch14 as carrying three precedents when it
+        # carries two and merely points at P-15 inside the Sears passage.
+        ids = sorted(set(re.findall(r"^## Precedent P-(\d{2})",
+                                    f.read_text(encoding="utf-8",
+                                                errors="replace"), re.M)))
         if ids:
             per_section[f.name] = ids
             all_ids.update(ids)

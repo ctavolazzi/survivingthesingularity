@@ -33,7 +33,7 @@ each pass actually needs.
 | Branch | `weave-and-mobile-polish`. NEVER merge to main on your own: main auto-deploys prod, and prod runs LIVE Stripe keys. Merging is the author's call only. (2026-07-19 evening: CT explicitly authorized a merge; branch was merged to `main` at `fe12ffc` and Cloudflare deployed v0.6.2 to prod. Branch and main are reconciled to the same commit. The rule still stands for every future unsupervised merge.) |
 | Book page gate | /book is password-gated client-side; password constant lives in `src/lib/bookAccessCode.js` (needed for Playwright verification) |
 | Author rules | NO em dashes anywhere (settled, whole book swept at v0.5.0). NEVER use the word "manifesto" anywhere (settled at v0.6.2; only survivor is Bastani's real citation subtitle in Appendix B). Focus HYPER-LOCAL, not decentralized: "decentralized" only where it names actually-decentralized tech (mesh, LoRa, IPFS, distributed energy), never heralded as the goal (anchor thesis in ch9). Versions bump on every content change. Author = Christopher (CT); he rules on voice, structure, and anything touching money |
-| Continuity bibles | `src/lib/data/book/ELIJAH-PROTOCOL.md` (narrative timeline, Chekhov registry), `WRITING_CHECKLIST.md` (style), `manuscript/EDITORIAL-QUEUE.md` (editorial state, latest-version header) |
+| Continuity bibles | `src/lib/data/book/ELIJAH-PROTOCOL.md` (narrative timeline, Chekhov registry), `src/lib/data/book/VOICE-GUIDE.md` (style), `manuscript/EDITORIAL-QUEUE.md` (editorial state, latest-version header) |
 
 ## 2. Already done — do not redo
 
@@ -170,7 +170,7 @@ print(len(r.pages), 'v0.' in (r.pages[0].extract_text() or ''), 'v0.' in (r.page
 |---|---|---|
 | A. Rendering | nothing up front | Recipe 4.1, then `sts.py audit`. Fix only what it flags |
 | B. Facts / allegories | One chapter at a time + `manuscript/HISTORY-CASEBOOK.md` | Verify every date, name, quote, number in P-07..P-22 (P-01..P-06 done). WebSearch receipts; log new sources to Appendix B (23-appendix-b.md, next number 179) |
-| C. Voice unification | `WRITING_CHECKLIST.md` + the Foundations sections of ch4, 6-13, 18 | Biggest open job. Narrative scenes are strong; Foundations swing rant↔academic. Field-manual register is the target for Part III |
+| C. Voice unification | `src/lib/data/book/VOICE-GUIDE.md` + the Foundations sections of ch4, 6-13, 18 | Biggest open job. Narrative scenes are strong; Foundations swing rant↔academic. Field-manual register is the target for Part III |
 | D. Elijah continuity | `ELIJAH-PROTOCOL.md` + narrative openers of ch0-18 + conclusion | Timeline: toast → all-hands → resignation at 11 months → co-op arc. Check tells, seasons, Chekhov registry |
 | E. Cross-refs | grep `(Chapter` and `(Chapters` across book dir | Verify against real TOC (land=12, soil=15, tools/mesh=17, servers=11, factory/ACT=9, mesh-network concept=14). Swept at v0.5.0; re-verify after any restructure |
 | F. Scannability | `sts.py scan` output only | Promote flagged pull quotes (`> **…**`), split WALL paragraphs, add subheads in HEAD deserts. Narrative scenes are ALLOWED to be low-texture; judgment required |

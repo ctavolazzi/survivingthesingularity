@@ -4,10 +4,10 @@ Written 2026-07-26 against the shipped v0.7.1 prose, not against memory of it. E
 rule below is followed by a real line from the book, so you can hear the target rather
 than infer it.
 
-**This replaces `WRITING_CHECKLIST.md`**, which is blog-era guidance (emoji headers, a
-30% humor quota, "Buckle up, buttercup" transitions) that predates the v0.6.x
+**This replaced `WRITING_CHECKLIST.md`**, which was blog-era guidance (emoji headers, a
+30% humor quota, "Buckle up, buttercup" transitions) predating the v0.6.x
 techno-optimist turn and the v0.7.1 wake-up-call turn. Following the old checklist
-literally produces the wrong book. Retire it once CT signs off.
+literally produced the wrong book. Retired and deleted 2026-07-26 on CT's sign-off.
 
 ---
 

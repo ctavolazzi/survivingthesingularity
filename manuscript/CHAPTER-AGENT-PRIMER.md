@@ -87,13 +87,17 @@ three Part dividers, Chapters 1 through 18, Conclusion, Appendices A through E.
 5. **Do not add a PDF download button** to /book. CT removed it on purpose.
 6. **CT rules on voice, structure, cuts, and anything touching money.**
 
-### The one trap in the existing docs
+### The voice reference
 
-`src/lib/data/book/WRITING_CHECKLIST.md` is the file the audit roadmap names as the
-voice reference. **It is stale. Do not use it.** It is blog-era guidance: emoji section
-markers, a 30% humor quota, "Buckle up, buttercup" transitions, "Stay human out there"
-closers. That voice predates the v0.6.x techno-optimist turn and the v0.7.1
-wake-up-call turn, and following it literally will produce the wrong book.
+`src/lib/data/book/VOICE-GUIDE.md` is the voice reference. It was written 2026-07-26
+against the shipped prose rather than from memory, so every rule carries a real line
+from the book and you can hear the target instead of inferring it.
+
+It replaced `WRITING_CHECKLIST.md`, which was retired and deleted on 2026-07-26. That
+file was blog-era guidance (emoji section markers, a 30% humor quota, "Buckle up,
+buttercup" transitions, "Stay human out there" closers) predating both the v0.6.x
+techno-optimist turn and the v0.7.1 wake-up-call turn. If you find a doc still pointing
+at it, that pointer is stale; the file is gone.
 
 **Use `src/lib/data/book/VOICE-GUIDE.md` instead.** It was written against the shipped
 v0.7.1 prose and quotes real lines, so you can hear the target rather than infer it. It
@@ -112,7 +116,7 @@ citing it, flag that in your report.
 |---|---|
 | **Book source, the ONLY truth** | `src/lib/data/book/*.md` |
 | Order + canonical version | `src/lib/data/book/book.json` (never trust a version in a filename or doc) |
-| **Voice reference** | `src/lib/data/book/VOICE-GUIDE.md` (NOT `WRITING_CHECKLIST.md`, which is stale) |
+| **Voice reference** | `src/lib/data/book/VOICE-GUIDE.md` |
 | Narrative continuity bible | `src/lib/data/book/ELIJAH-PROTOCOL.md` (timeline, Chekhov registry) |
 | Precedent ledger P-01..P-22 | `src/lib/data/book/25-appendix-d.md` + `manuscript/HISTORY-CASEBOOK.md` |
 | Works Cited | `src/lib/data/book/23-appendix-b.md` |

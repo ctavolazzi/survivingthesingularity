@@ -91,7 +91,7 @@ A separate editing pass with its own structure, including a `book.json` manifest
 ### Supporting Editorial Assets (already written)
 
 - `EDITING_STRATEGY.md`: global edit plan plus chapter-by-chapter notes
-- `WRITING_CHECKLIST.md`: voice and structure quality gates
+- `VOICE-GUIDE.md`: voice and structure quality gates
 - Style guide: full documentation of the "Dynamic Satirical Commentary" voice
 - Glossary with definitions, further reading, index, acknowledgements, back cover
 

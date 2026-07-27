@@ -91,14 +91,14 @@ To see why this is a survival issue and not a lifestyle complaint, look at the b
 
 Your brain is roughly 2% of your body mass and burns more than 20% of your metabolic energy. That energy arrives as glucose and oxygen, driving the sodium-potassium pumps that let your 86 billion neurons fire.
 
-Here's a back-of-the-envelope model, an accounting identity rather than a law of physics, but a useful one. Call your total metabolic budget E_total. Your cognitive capacity (E_cognitive) is whatever survives the involuntary costs:
+Here's a back-of-the-envelope model, an accounting identity rather than a law of physics, but a useful one. Call your total metabolic budget $E_{\text{total}}$. Your cognitive capacity ($E_{\text{cognitive}}$) is whatever survives the involuntary costs:
 
-> **E_cognitive = E_total - E_maintenance - E_locomotion**
+> $$E_{\text{cognitive}} = E_{\text{total}} - E_{\text{maintenance}} - E_{\text{locomotion}}$$
 
 Where:
 
-  - E_maintenance is the involuntary thermodynamic cost of keeping your organs functioning, your body temperature at 98.6° F, and your immune system active.
-  - E_locomotion is the energy spent moving your physical frame through space.
+  - $E_{\text{maintenance}}$ is the involuntary thermodynamic cost of keeping your organs functioning, your body temperature at 98.6° F, and your immune system active.
+  - $E_{\text{locomotion}}$ is the energy spent moving your physical frame through space.
 
 The accounting is crude, but the constraint it describes is real: your cognitive budget is finite, and every decision you make, every notification you scan, every feed you scroll spends glucose out of the same limited account.
 
@@ -116,11 +116,11 @@ Do the arithmetic that implies. If settling into deep work costs you twenty minu
 
 So why do you look? Why is it so hard to put down?
 
-Again, not willpower. It's a mathematical trap built to exploit your dopaminergic reward system, and information theory gives us a precise lens for it. Shannon entropy (H) measures the uncertainty of a message stream:
+Again, not willpower. It's a mathematical trap built to exploit your dopaminergic reward system, and information theory gives us a precise lens for it. Shannon entropy ($H$) measures the uncertainty of a message stream:
 
-> **H(X) = -Σ P(x_i) log₂ P(x_i)**
+> $$H(X) = -\sum P(x_i) \log_2 P(x_i)$$
 
-Where P(x_i) is the probability of the next piece of content being a specific thing: an incredibly funny video, an outrage-inducing news story, a message from a friend.
+Where $P(x_i)$ is the probability of the next piece of content being a specific thing: an incredibly funny video, an outrage-inducing news story, a message from a friend.
 
 If a stream is completely predictable, its entropy is zero. Your brain habituates, stops releasing dopamine, and you close the app. So the algorithm holds your feed's uncertainty high on purpose, mixing rare, high-dopamine rewards with high-outrage noise so the next scroll always *might* pay off. That engineered uncertainty is the entire slot-machine trick, expressed in bits.
 
@@ -132,7 +132,7 @@ To take your mental agency back, treat your brain the way a security engineer tr
 
 An air-gapped machine is physically disconnected from the network, which makes remote compromise impossible. A cognitive firewall does the same job on the same logic. You establish strict physical boundaries between your working memory and the algorithmic firehose.
 
-You wouldn't drink untreated water from a stagnant puddle behind a diesel refinery. Hold the same standard for what crosses into your head. This is a defensive protocol with one purpose, preserving your E_cognitive for real-world action, and it runs on five settings.
+You wouldn't drink untreated water from a stagnant puddle behind a diesel refinery. Hold the same standard for what crosses into your head. This is a defensive protocol with one purpose, preserving your $E_{\text{cognitive}}$ for real-world action, and it runs on five settings.
 
 ![The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batch processing, then text-only synthesis, and emerges as deep physical execution](/book-images/ch08-firewall-pipeline.svg)
 
@@ -205,7 +205,7 @@ Once the firewall is up, something biological happens on its own.
 
 Within about forty-eight hours your dopamine receptors begin to up-regulate. The constant low-level background noise of systemic anxiety drops away. Your focus returns. You start seeing the real world, the wood grain on your kitchen table, the angle of the sun, the micro-movements of your local ecology, in intense, high-resolution clarity. And the quiet tasks of actual survival, chopping wood, weeding a garden plot, working through a technical manual, stop feeling like chores and start being absorbing.
 
-You've reclaimed your E_cognitive. Now spend it, on building local, low-entropy physical networks.
+You've reclaimed your $E_{\text{cognitive}}$. Now spend it, on building local, low-entropy physical networks.
 
 Because when the physical systems analyzed in Chapter 2 begin to rattle, a group of fragmented, phone-addicted individuals cannot coordinate a response. They'll scream at each other on digital networks while their water treatment plants fail.
 
@@ -257,13 +257,13 @@ To survive the cracks, we must reclaim the ancient, hyper-local philosophy of **
 
 ### Section 1: The Thermodynamic Failure of Isolation
 
-Every physical system requires maintenance. The energy required to maintain your Autonomous Shell (E_maintenance) is a constant tax on your daily metabolic output.
+Every physical system requires maintenance. The energy required to maintain your Autonomous Shell ($E_{\text{maintenance}}$) is a constant tax on your daily metabolic output.
 
 If you are a single human being trying to manage solar arrays, monitor soil biology, maintain a water purification system, defend a physical perimeter, and write local LLM scripts, your daily energy expenditure is:
 
-> **E_expended = E_metabolic + E_maintenance + E_defense**
+> $$E_{\text{expended}} = E_{\text{metabolic}} + E_{\text{maintenance}} + E_{\text{defense}}$$
 
-When E_expended exceeds your daily caloric and cognitive intake, your system enters a state of negative energy balance. You begin to degrade. You skip maintenance on the solar inverter, you fail to monitor the soil moisture, or you make a fatal mistake while handling high-voltage DC lines.
+When $E_{\text{expended}}$ exceeds your daily caloric and cognitive intake, your system enters a state of negative energy balance. You begin to degrade. You skip maintenance on the solar inverter, you fail to monitor the soil moisture, or you make a fatal mistake while handling high-voltage DC lines.
 
 ![The Decay of Isolated Systems: an isolated individual fans out into solar drift, soil decline, and cognitive exhaustion, which converge into system collapse at maximum entropy](/book-images/ch08-isolated-decay.svg)
 
@@ -271,9 +271,9 @@ When E_expended exceeds your daily caloric and cognitive intake, your system ent
 
 Now, consider a hyper-local node of three households, six to eight people. By sharing the physical and cognitive load, the maintenance cost per capita drops exponentially:
 
-> **E_maintenance, per capita ∝ (1) / (N)**
+> $$E_{\text{maintenance, per capita}} \propto \frac{1}{N}$$
 
-Where N is the number of active, trusted nodes in your immediate physical network.
+Where $N$ is the number of active, trusted nodes in your immediate physical network.
 
 By pooling specialized labor, one person manages the direct-current solar microgrid, another runs the biological compost bioreactors and automated FarmBot, and a third maintains the local server stacks and cognitive firewalls. This is not collectivism imposed by a centralized authority; it is **thermodynamic load-sharing**.
 
@@ -291,7 +291,7 @@ However, when interactions are repeated indefinitely, when the game is iterated,
 
 Over hundreds of generations of simulated games, this simple, decentralized strategy consistently outperforms pure selfishness, predatory extraction, and passive submission.
 
-> **Payoff_Cooperation ≫ Payoff_Defection as t → ∞**
+> $$\text{Payoff}_{\text{cooperation}} \gg \text{Payoff}_{\text{defection}} \quad \text{as } t \to \infty$$
 
 In the cracks, we establish a high-trust, local environment where the game is played daily, face-to-face, indefinitely. The cost of defection in a small, localized network is social death, complete disconnection from the physical resources, caloric engines, and digital infrastructure of the Autonomous Shell. Because the cost of being cast out into the entropic chaos of the industrial collapse is near-infinite, the incentive to maintain absolute integrity within the network is absolute.
 
@@ -313,7 +313,7 @@ Every node is directly connected to multiple neighboring nodes. Information, pow
 
 We must not fall into the trap of trying to build massive, global networks of direct trust. Human biology has a hard-coded limit on the number of stable, relational bonds a single mind can maintain. This is **Dunbar’s Number**, mathematically modeled around 150 individuals:
 
-> **N_cognitive limit ≈ 150**
+> $$N_{\text{cognitive limit}} \approx 150$$
 
 If your network grows beyond this limit, the social mechanisms of trust, mutual accountability, and direct relation begin to break down. You must introduce bureaucratic layers, formal legal contracts, and centralized oversight to maintain order, reintroducing the very systems we are escaping.
 

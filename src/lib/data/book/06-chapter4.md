@@ -87,9 +87,9 @@ In 2020, the astronomer David Kipping ran the odds properly, and his result cuts
 
 Kipping collapsed Bostrom's trilemma into a two-horse race: either realities like ours never produce simulations, or they do. If they do, the arithmetic is brutal and simple:
 
-> **P(base reality | simulations exist) = 1 / (N-sim + 1)**
+> $$P(\text{base reality} \mid \text{simulations exist}) = 1 / (N_{\text{sim}} + 1)$$
 
-One real world, N-sim fake ones, and you are equally likely to be in any of them. If simulations exist in large numbers, you are almost certainly in one. *If.*
+One real world, $N_{\text{sim}}$ fake ones, and you are equally likely to be in any of them. If simulations exist in large numbers, you are almost certainly in one. *If.*
 
 But here is the part everyone skips: we have never built one. Kipping calls this the "nulliparous" state, a reality that has not yet given birth to a single simulated universe. Weigh the two hypotheses evenly, as the evidence currently demands, and the odds that we are living in a simulation land just under 50%. A coin flip, leaning slightly toward real.
 

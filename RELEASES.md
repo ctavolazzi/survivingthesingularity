@@ -10,11 +10,11 @@ currently claims; this file records which build is the one to hand someone.
 | | |
 |---|---|
 | **Version** | `0.7.4` |
-| **Built** | 2026-07-27 12:53 |
-| **From commit** | `23612ef` "v0.7.4: the canned music campaign, with the robot ads", plus the alt-text trim that follows it |
+| **Built** | 2026-07-27 15:11 |
+| **From commit** | `91f23cb`, the head of the v0.7.4 cycle: the canned music campaign and the robot ads (`23612ef`), the alt-text trim, the KaTeX math pass, and the id-index rebuild |
 | **Sections** | 30 |
 | **Pages** | 289 (v0.7.2 was 277) |
-| **Words** | 90,591 |
+| **Words** | 90,596 |
 | **Precedents** | 23 (was 22) |
 | **Formats** | PDF 22 MB · EPUB 21 MB |
 
@@ -41,6 +41,12 @@ rather than illustrations, so two things about them are worth recording here:
 italic caption, in both the PDF and the EPUB. That is the established pattern, so keep alt
 text to a single short descriptive line. The first v0.7.4 build had three-line alt text on
 the ads and it read as a wall; it was trimmed and rebuilt before this entry was written.
+
+**Rebuilt at 15:11.** The 12:53 artifact predated two commits: the alt-text trim and the
+KaTeX math pass that converted the bold-markdown formulas in Chapters 4 and 8 to real
+math. The id index had also been built before that pass, so it was rebuilt too. The
+shipping artifact is the 15:11 one; word count moved 90,591 to 90,596 for that reason
+alone, and no prose changed.
 
 **Not done in this build:** `static/downloads/` was not swapped and nothing was merged to
 main. Production still serves the older file. That swap is CT's call.

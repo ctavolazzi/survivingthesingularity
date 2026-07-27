@@ -98,8 +98,14 @@ Step 3 is **not done** (defect 2 above). Steps 4–6 remain unverified.
 1. ✅ In the production host's environment (Vercel/Cloudflare/etc.), set:
    - `STRIPE_SECRET_KEY` → the **live-mode** key
    - `STRIPE_PRICE_ID_STANDARD=price_1To6muCYoTMkQm81rXG6QagG`
-   - `STRIPE_PRICE_ID_AUTHORS=price_1TogztCYoTMkQm81Nfv3uJ20` (kept set even though
-     the UI doesn't expose it yet — costs nothing, keeps the backend ready)
+   - `STRIPE_PRICE_ID_AUTHORS=price_1TogztCYoTMkQm81Nfv3uJ20` — **currently not set in
+     production** (confirmed via `wrangler pages secret list`). It used to not matter,
+     because the endpoint fell back to the shared `STRIPE_PRICE_ID`; that fallback is
+     now dev-only, so the `authors` path returns 503 until this is set. That is
+     deliberate: the fallback meant an Author's Edition sale billed the *standard*
+     price, and `edition_type` is accepted from any caller regardless of what the UI
+     exposes. Set it if you want the edition sellable; leave it unset to keep the
+     path closed.
    - Keep `STRIPE_PRICE_ID` set (fallback only; safe to point at the standard live price).
 2. ✅ Make the mock-mode branch in `stripe-checkout/+server.js` unreachable in
    production. Resolved by **gating rather than removing**: the branch still exists but

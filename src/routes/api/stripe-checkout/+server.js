@@ -7,11 +7,24 @@ import { rateLimit } from '$lib/server/rateLimit.js';
 const PRICE_ID      = env.STRIPE_PRICE_ID;
 const SECRET_KEY    = env.STRIPE_SECRET_KEY;
 
-// Per-edition Stripe prices. Falls back to the shared STRIPE_PRICE_ID so the
-// endpoint keeps working if the edition-specific vars aren't set.
+// Per-edition Stripe prices.
+//
+// The shared STRIPE_PRICE_ID is a convenience fallback for local dev, where
+// having one variable set is enough to exercise the flow. In production it is a
+// hazard: an unset, misspelled, or dropped edition variable does not fail - it
+// silently bills whatever the shared one happens to point at. That is exactly
+// the shape of the 2026-07 defect where a $5 product charged $9, and it is the
+// shape of a live bug right now, since STRIPE_PRICE_ID_AUTHORS is not set in
+// production and `authors` therefore resolves to the standard price. The
+// endpoint accepts edition_type from any caller, so that path is reachable
+// whether or not the UI exposes a button for it.
+//
+// So: dev keeps the fallback, production demands the edition's own variable and
+// refuses the sale without it. Refusing is the safe failure - a customer who
+// cannot check out complains; a customer billed the wrong amount may not.
 const EDITION_PRICE_IDS = {
-  standard: env.STRIPE_PRICE_ID_STANDARD || PRICE_ID,
-  authors:  env.STRIPE_PRICE_ID_AUTHORS  || PRICE_ID,
+  standard: env.STRIPE_PRICE_ID_STANDARD || (dev ? PRICE_ID : undefined),
+  authors:  env.STRIPE_PRICE_ID_AUTHORS  || (dev ? PRICE_ID : undefined),
 };
 
 // Graceful: if no Stripe key, we run in mock mode so the rest of the UI
@@ -47,7 +60,13 @@ export async function POST({ request, url, getClientAddress }) {
   const isMockPrice = !priceId || priceId === 'placeholder' || priceId.startsWith('your_');
   if (!stripe || isMockPrice) {
     if (!dev) {
-      console.error('[stripe-checkout] Missing Stripe credentials in production.');
+      // Name the actual cause. These two failures need completely different
+      // fixes, and "missing credentials" sends whoever reads this log hunting
+      // for an API key that is fine.
+      const cause = !stripe
+        ? 'STRIPE_SECRET_KEY is missing or a placeholder'
+        : `no price configured for the "${editionType}" edition - set STRIPE_PRICE_ID_${editionType.toUpperCase()} in the production environment`;
+      console.error(`[stripe-checkout] Refusing checkout: ${cause}.`);
       return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
     }
     return json({

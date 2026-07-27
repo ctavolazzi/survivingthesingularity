@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T14:40:44Z",
+  "generated_at": "2026-07-27T15:47:29Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -144,6 +144,31 @@
       ]
     },
     {
+      "id": "2607.22319",
+      "source": "arxiv",
+      "title": "Towards Trustworthy and Cost-Efficient Data Integration: From Naïve RAG to Agentic RAG",
+      "url": "https://arxiv.org/abs/2607.22319",
+      "authors": [
+        "Chuangtao Ma",
+        "Arijit Khan"
+      ],
+      "summary": "Large language models (LLMs) and AI agents have demonstrated strong potential for data integration in zero-shot and few-shot settings. However, they continue to face significant accuracy and cost challenges in enterprise environments due to a persistent knowledge gap. This paper envisions trustworthy, scalable, and cost-efficient integration through knowledge-grounded LLMs and agents operating within a retrieval-augmented generation (RAG) workflow. Here, trustworthiness refers to evidence-grounded, verifiable reasoning, where integration decisions are transparently supported by retrieved knowl",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-24",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.19190",
       "source": "arxiv",
       "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
@@ -194,6 +219,32 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2607.22400",
+      "source": "arxiv",
+      "title": "A Self-Calibrating Agentic AI Framework for Autonomous Edge Resource Allocation",
+      "url": "https://arxiv.org/abs/2607.22400",
+      "authors": [
+        "Fin Gentzen",
+        "Marla Grunewald",
+        "Iulisloi Zacarias",
+        "Mounir Bensalem"
+      ],
+      "summary": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, transitioning from static conversational interfaces to dynamic systems capable of complex reasoning, tool execution, and decision-making. However, the operational reliability of these agentic AI systems is fundamentally challenged by the absence of reliable ground truth in open-ended environments and the risk of increasing operational drift over time. To address this challenge, we propose and experimentally evaluate an agentic AI framework, designed to enforce autonomous integrity within LLM-driven systems. We design ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-24",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -322,6 +373,56 @@
       ]
     },
     {
+      "id": "2607.22014",
+      "source": "arxiv",
+      "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
+      "url": "https://arxiv.org/abs/2607.22014",
+      "authors": [
+        "Suman Navaratnarajah",
+        "Taehyoung Kim",
+        "Jona Ruthardt",
+        "Ishaan Bhimwal"
+      ],
+      "summary": "Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation of MLLMs in aerial 3D environments. It comprises 120 missions across five simulated 3D environments and four task families. Agents must autonomously plan, navigate, and report outcomes using only egocentric observations and its action history, without aerial-specific fine-tuning. Across 22 open- and",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-24",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "reasoning",
+        "embodied",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2607.21912",
+      "source": "arxiv",
+      "title": "Reliability-Contagion Feasibility in LLM Multi-Agent Networks",
+      "url": "https://arxiv.org/abs/2607.21912",
+      "authors": [
+        "Ruiwu Niu",
+        "Xincheng Shu",
+        "Ying Zhao"
+      ],
+      "summary": "Communication allows large language model agents to pool evidence, but it also creates paths along which an erroneous claim can spread. We formulate a correction-aware network model that tracks susceptible, exposed, infectious, and corrected agents and derive its early-invasion condition for heterogeneous communication networks. We then couple this propagation model to an analytic majority-vote benchmark in which a clean-task reliability target imposes a minimum connectivity requirement. Under fixed exposure per communication edge, reliability and error control impose opposing graph constraint",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-24",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2607.14561",
       "source": "arxiv",
       "title": "MARS: Multi-hop Adaptive Retrieval and SPARQL Generation for KGQA",
@@ -348,6 +449,29 @@
       ]
     },
     {
+      "id": "2607.22511",
+      "source": "arxiv",
+      "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+      "url": "https://arxiv.org/abs/2607.22511",
+      "authors": [
+        "Jiyuan Tan",
+        "Vasilis Syrgkanis"
+      ],
+      "summary": "Automating theoretical research is constrained not only by the generation of candidate results, but also by their reliable evaluation. A common approach is to close the research loop with a large language model (LLM) reviewer. However, such reviewers remain empirically unreliable: they may accept fabricated papers and detect them at rates close to chance (Bad Scientist, 2025). We present CausalForge, a framework for automated theoretical research in causal inference grounded in the Lean proof assistant. CausalForge combines Causalean, a foundational Lean library for causal inference containing",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-24",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "self-improving",
+        "agent",
+        "agentic",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2607.21522",
       "source": "arxiv",
       "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
@@ -359,7 +483,7 @@
         "Zhou Xian"
       ],
       "summary": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic syste",
-      "category": "cs.AI",
+      "category": "cs.CL",
       "tag": "Research",
       "published_at": "2026-07-23",
       "score": 8.5,
@@ -595,6 +719,31 @@
         "agent",
         "embodied",
         "rag"
+      ]
+    },
+    {
+      "id": "2607.22082",
+      "source": "arxiv",
+      "title": "When Language Models Meet NeuroGraphs: Exploring Enhanced Agentic LLM Framework Towards Brain Network Analysis",
+      "url": "https://arxiv.org/abs/2607.22082",
+      "authors": [
+        "Jiaxing Li",
+        "Rui Dong",
+        "Muyao Tang",
+        "Youyong Kong"
+      ],
+      "summary": "Brain network analysis is crucial for understanding cognition and neurological disorders, yet existing deep learning methods mainly treat connectome analysis as a graph-to-logit classification problem, offering limited explanatory reasoning. Large language models (LLMs) provide a promising interface for knowledge-intensive scientific analysis, but directly applying general-purpose LLMs to brain networks remains challenging due to the structure-language gap, limited neuroscience grounding, and overconfident positive predictions. In this paper, we propose \\textbf{BrainAgent}, an agentic LLM fram",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-24",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -892,6 +1041,29 @@
         "alignment",
         "llm",
         "scaling"
+      ]
+    },
+    {
+      "id": "2607.21936",
+      "source": "arxiv",
+      "title": "Leveraging External Knowledge for Historical Document Restoration via Retrieval-Augmented Large Language Models",
+      "url": "https://arxiv.org/abs/2607.21936",
+      "authors": [
+        "Gabeen Kim",
+        "Kyeongpil Kang"
+      ],
+      "summary": "Historical documents act as invaluable knowledge archives but often suffer from illegibility due to physical deterioration and damage. While existing restoration methods based on masked language modeling effectively utilize local context, they struggle to restore named entities that require external historical knowledge. To address this limitation, we introduce a novel framework for historical document restoration that leverages large language models with retrieval-augmented generation (RAG). By combining the implicit knowledge of pre-trained LLMs with explicitly retrieved external context, ou",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-24",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
       ]
     },
     {
@@ -1340,171 +1512,6 @@
         "autonomous",
         "robot",
         "language model"
-      ]
-    },
-    {
-      "id": "2607.21324",
-      "source": "arxiv",
-      "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
-      "url": "https://arxiv.org/abs/2607.21324",
-      "authors": [
-        "Paolo Pedinotti",
-        "Enrico Santus"
-      ],
-      "summary": "Retrieval-Augmented Generation (RAG) systems increasingly employ multiple LLM agents. Yet, most prior work optimizes components in isolation rather than coordinating improvements across the pipeline. We introduce GRADRAG, a framework for cross-component prompt adaptation that models the RAG pipeline as a computational graph and propagates structured evaluation feedback to update upstream agents. An Evaluator critiques downstream answers and supporting evidence, producing actionable feedback that a Prompt Optimizer uses to iteratively update adaptive agents, such as retrievers, graph constructo",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-23",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.21279",
-      "source": "arxiv",
-      "title": "A Unified Moral-Value Dataset for Instruction Tuning",
-      "url": "https://arxiv.org/abs/2607.21279",
-      "authors": [
-        "Zhaohui Zeng",
-        "Florian Mai"
-      ],
-      "summary": "Large language models (LLMs) have developed rapidly and become valuable tools in everyday life. However, how to align LLMs to a particular set of human values is still an open problem. Recent studies show that instruction tuning has strong potential for zero-shot tasks and may serve as an effective approach to addressing value alignment. Nevertheless, although many datasets for instruction tuning already exist, they are not specifically designed around moral scenarios and behaviors. We construct a unified moral-value dataset that can be directly used for instruction tuning. This dataset is bui",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-23",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "alignment",
-        "value alignment",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.21210",
-      "source": "arxiv",
-      "title": "Explainable Belief Harmonization under Dynamic Epistemic Partitions",
-      "url": "https://arxiv.org/abs/2607.21210",
-      "authors": [
-        "Adam Kostka",
-        "Jarosław A. Chudziak"
-      ],
-      "summary": "Existing approaches to multi-agent belief combination have established mature foundations for combining uncertain beliefs under common assumptions: consensus methods use iterative averaging, logic-based methods resolve conflicting knowledge bases, and epistemic logic analyzes agents' information states. Typically, these approaches assume that the structure determining what each agent can represent remains fixed. However, in many scenarios, agents gain or lose observational capacity during execution, and what was once admissible may become structurally impossible. This paper presents a formal f",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-23",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.20207",
-      "source": "arxiv",
-      "title": "SeededGrasp: Language-Guided Grasping in Complex Scenes with Multiple Embodiments",
-      "url": "https://arxiv.org/abs/2607.20207",
-      "authors": [
-        "Yang Xu",
-        "Gurpreet Singh Mukker",
-        "Raymond Wang",
-        "Jasper Gerigk"
-      ],
-      "summary": "Practical robotic grasping in complex scenes requires both 3D spatial reasoning and alignment with task-specific requirements. Vision-language models (VLMs) offer a natural way to specify these requirements using language, but existing approaches either use a VLM to predict the grasp directly with limited spatial awareness, or train the VLM together with the grasping model, which requires significantly more data and compute. These limitations impede performance and have prevented scaling to multiple embodiments in complex scenes. We address this by proposing SeededGrasp, a novel data-efficient",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-22",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "reasoning",
-        "alignment",
-        "robot",
-        "language model",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2607.21482",
-      "source": "arxiv",
-      "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
-      "url": "https://arxiv.org/abs/2607.21482",
-      "authors": [
-        "Mack Nixon",
-        "Liam Wright",
-        "Yevgeniya Kovalchuk",
-        "Alison Fang-Wei Wu"
-      ],
-      "summary": "Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powered by open-weight LLMs on one of the most persistent bottlenecks in research on longitudinal populati",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-23",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.21345",
-      "source": "arxiv",
-      "title": "Regulating autonomous and agentic AI",
-      "url": "https://arxiv.org/abs/2607.21345",
-      "authors": [
-        "Chris Reed",
-        "Alex Austria",
-        "Anmol Bharuka",
-        "Pragnitha Mandava"
-      ],
-      "summary": "Regulating activities where regulatees use autonomous and agentic AI is challenging. Regulatory assumptions about regulatee knowledge and control no longer hold true; much of that lies elsewhere in the AI supply chain which thus needs to be brought within the scope of regulation. Governance systems for autonomous AI cannot replicate existing governance models, but need a fresh approach. Retrospective supervisory oversight becomes ineffective as a risk management tool, and AI autonomy generates new systemic risks which require new solutions. This paper investigate four regulatory systems: UK re",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-23",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "autonomy"
-      ]
-    },
-    {
-      "id": "2607.20061",
-      "source": "arxiv",
-      "title": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
-      "url": "https://arxiv.org/abs/2607.20061",
-      "authors": [
-        "Hanjing Ye",
-        "Tianle Zeng",
-        "Jiazhao Zhang",
-        "Shaoan Wang"
-      ],
-      "summary": "Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, their chain-of-thought (CoT) reasoning often operates in abstract spatial latents that are difficult to supervise and weakly aligned with explicit image-space detections. To address this, we introduce ReferTrack, a referring-then-tracking paradigm that grounds EVT using a single forward-facing camera. Our model first selects the target from ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-22",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "planning",
-        "reasoning",
-        "chain-of-thought",
-        "embodied"
       ]
     }
   ]

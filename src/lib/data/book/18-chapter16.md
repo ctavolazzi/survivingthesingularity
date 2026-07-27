@@ -151,11 +151,11 @@ Keep your metadata clean. Protect your attention. Keep telling the human story.
 
 ---
 
-## Precedent P-19: Forty-Seven Pages (Philadelphia, 1776)
+## Precedent P-19: Seventy-Nine Pages (Philadelphia, 1776)
 
 Thomas Paine had been in America for barely a year. He was a corset-maker's son, a failed excise officer, a man with no office, no wealth, no troops, and no name worth borrowing. What he had was access to a printing press and a register ordinary people could read aloud in a tavern.
 
-*Common Sense* ran forty-seven pages. Published in January 1776, it tore through the colonies in months, proportionally one of the most widely read things ever printed in America, and it converted a grievance about taxes into a movement for independence. The pamphlet did what no assembly of officials had managed: it changed what ordinary people believed was possible, in their own kitchens, in their own language. The empire it argued against commanded the largest navy on Earth and could not answer forty-seven pages in time.
+*Common Sense* ran seventy-nine pages in Robert Bell's first printing, published in January 1776. It tore through the colonies in months, running through roughly twenty-five printings in its first year, and it converted a grievance about taxes into a movement for independence. The pamphlet did what no assembly of officials had managed: it changed what ordinary people believed was possible, in their own kitchens, in their own language. The empire it argued against commanded the largest navy on Earth and could not answer seventy-nine pages in time.
 
 **The mechanism.** Leverage is the ratio of reach to permission. Paine required nobody's approval: no publisher's blessing beyond a single printer, no institution's endorsement, no gatekeeper's nod. When a new medium drops the cost of reach, the first people to notice acquire influence wildly out of proportion to their credentials, and the institutions that still think credentials are the bottleneck never see it coming.
 
@@ -163,6 +163,6 @@ Thomas Paine had been in America for barely a year. He was a corset-maker's son,
 
 **The practice.**
 
-1. Write your forty-seven pages, or your four. Pick the one thing you know from direct experience that would genuinely help the person two years behind you, and write it in the register Denny used on camera: plain speech, what happened, what you'd do differently. Publish it this month. Paine's advantage was never eloquence. It was that he wrote the thing everyone was almost thinking, in words they could read aloud.
+1. Write your seventy-nine pages, or your four. Pick the one thing you know from direct experience that would genuinely help the person two years behind you, and write it in the register Denny used on camera: plain speech, what happened, what you'd do differently. Publish it this month. Paine's advantage was never eloquence. It was that he wrote the thing everyone was almost thinking, in words they could read aloud.
 2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and route every platform reader toward them. When the empire changes the algorithm, and it will, the people on your list are still yours.
 3. Run the tavern test on your own writing. Take your latest piece and read it out loud. Every sentence you stumble on, every word you would never say to a neighbor across a fence, rewrite in the plain register. Expertise that cannot survive being spoken is not leverage. It is decoration, and decoration does not start movements.

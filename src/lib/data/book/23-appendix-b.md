@@ -77,7 +77,7 @@
 150. Kit house - Wikipedia, https://en.wikipedia.org/wiki/Kit_house
 151. The Victory Garden - Smithsonian Gardens, https://gardens.si.edu/learn/blog/the-victory-garden/
 152. Victory Gardens: Food for the Fight - The National WWII Museum, https://www.nationalww2museum.org/war/articles/victory-gardens-world-war-ii
-153. Common Sense, Thomas Paine, 1776 - Wikipedia, https://en.wikipedia.org/wiki/Common_Sense
+153. Common sense; addressed to the inhabitants of America (Robert Bell's first Philadelphia printing, 1776; collation [4], 79, [1] pp.) - Library of Congress, https://www.loc.gov/item/2006681076/
 154. Whole Earth Catalog ("Access to Tools"; Jobs's "Google in paperback form") - Wikipedia, https://en.wikipedia.org/wiki/Whole_Earth_Catalog
 155. Year 2000 problem (remediation costs and outcome debate) - Wikipedia, https://en.wikipedia.org/wiki/Year_2000_problem
 156. Y2K bug - Encyclopaedia Britannica, https://www.britannica.com/technology/Y2K-bug
@@ -134,5 +134,14 @@
 190. The York Special Commission, January 1813 - sixty-four charged, twenty-four convicted; three men (George Mellor, William Thorpe, Thomas Smith) hanged 8 January for the murder of William Horsfall, and fourteen more on 16 January in two groups of seven, at eleven o'clock and half past one - Luddite Bicentenary, http://ludditebicentenary.blogspot.com/2013/01/16th-january-1813-14-convicted-luddites.html
 191. 1813: 14 Luddites at York - independent corroboration of the 16 January execution count, the two groups of seven and their times - Executed Today, https://www.executedtoday.com/2013/01/16/1813-14-luddites-at-york/
 192. The proclamation of Ned Ludd - The National Archives (UK), https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-proclamation-of-ned-ludd/
+
+## P-19 Primary Sources (added 2026-07-27)
+
+*A correction of record. Earlier drafts of P-19 were titled "Forty-Seven Pages" and stated that Common Sense ran forty-seven pages, and that it was "proportionally one of the most widely read things ever printed in America." Neither survives checking. The forty-seven figure traces to the opening sentence of the Wikipedia article, which gives no citation for it, and no bibliography supports it; the Robert Bell first printing of January 1776 collates [4], 79, [1] pp. in the Library of Congress record, echoed by the auction houses that handle the book. The precedent is now titled "Seventy-Nine Pages" and names the edition in the text, because the count is edition-dependent and a bare number invites the same error back. The readership claim rested on sales figures of one hundred twenty thousand, one hundred fifty thousand and half a million copies that Trish Loughran has shown trace to no source; her far upper limit is seventy-five thousand, from roughly twenty-five printings at a ceiling of three thousand each, and she believes the true number was well below it. The text now gives the printing count, which is the hardest fact available and comes from the skeptic's own tally, rather than a superlative resting on numbers nobody can substantiate.*
+
+193. Common sense; addressed to the inhabitants of America (Robert Bell's first Philadelphia printing, 1776) - the bibliographic collation [4], 79, [1] pp. behind the seventy-nine page figure - Library of Congress, https://www.loc.gov/item/2006681076/
+194. Trish Loughran, "Disseminating Common Sense: Thomas Paine and the Problem of the Early National Bestseller," American Literature 78:1 (2006) - the revision of the circulation figures and the source of the roughly twenty-five printings count, https://read.dukeupress.edu/american-literature/article-pdf/78/1/1/391397/AL078-01-01LoughranFpp.pdf
+195. Thomas Paine's Inflated Numbers - traces the one hundred twenty thousand and one hundred fifty thousand sales figures to no source and summarizes Loughran's seventy-five thousand ceiling - Journal of the American Revolution, https://allthingsliberty.com/2013/03/thomas-paines-inflated-numbers/
+196. The Royal Navy during the American Revolution - the 1775 Admiralty abstract, one hundred thirty-one ships of the line and two hundred nine smaller vessels, behind "the largest navy on Earth" - American Battlefield Trust, https://www.battlefields.org/learn/articles/royal-navy-during-american-revolution
 
 ---

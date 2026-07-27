@@ -6,7 +6,7 @@
   "totals": {
     "sections": 30,
     "blocks": 2030,
-    "words": 88930
+    "words": 88935
   },
   "sections": [
     {
@@ -18183,7 +18183,7 @@
       "title": "Chapter 16: Digital Leverage and Media Autonomy",
       "file": "18-chapter16.md",
       "next_ordinal": 84,
-      "words": 3100,
+      "words": 3105,
       "tombstones": [],
       "blocks": [
         {
@@ -19048,8 +19048,8 @@
             154
           ],
           "words": 6,
-          "hash": "e531cf1e88b1",
-          "preview": "## Precedent P-19: Forty-Seven Pages (Philadelphia, 1776)",
+          "hash": "ae094b5ef85c",
+          "preview": "## Precedent P-19: Seventy-Nine Pages (Philadelphia, 1776)",
           "level": 2
         },
         {
@@ -19070,9 +19070,9 @@
             158,
             158
           ],
-          "words": 85,
-          "hash": "1395a919a619",
-          "preview": "*Common Sense* ran forty-seven pages. Published in January 1776, it tore through the colon"
+          "words": 90,
+          "hash": "ba9287955041",
+          "preview": "*Common Sense* ran seventy-nine pages in Robert Bell's first printing, published in Januar"
         },
         {
           "id": "sts.chapter16.b0080",
@@ -19115,8 +19115,8 @@
             168
           ],
           "words": 193,
-          "hash": "50aa8c85b6b7",
-          "preview": "1. Write your forty-seven pages, or your four. Pick the one thing you know from direct exp"
+          "hash": "52cd88287dc8",
+          "preview": "1. Write your seventy-nine pages, or your four. Pick the one thing you know from direct ex"
         }
       ]
     },
@@ -22585,7 +22585,7 @@
             42
           ],
           "words": 185,
-          "hash": "6ef80264f52e",
+          "hash": "bbff11156594",
           "preview": "| ID | Precedent | Date | Closes | | --- | --- | --- | --- | | P-01 | The Reading Rage | 1"
         },
         {

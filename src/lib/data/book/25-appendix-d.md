@@ -36,7 +36,7 @@ A ledger you read once is trivia. A ledger you operate is an instrument. Ninety 
 | P-16 | The Graveyard of the Unconvinced | 1975–2011 | Chapter 14 |
 | P-17 | The Mirror Twin | 2000s | Chapter 14 |
 | P-18 | Twenty Million Gardens | 1943–1944 | Chapter 15 |
-| P-19 | Forty-Seven Pages | 1776 | Chapter 16 |
+| P-19 | Seventy-Nine Pages | 1776 | Chapter 16 |
 | P-20 | Access to Tools | 1968 | Chapter 17 |
 | P-21 | The Apocalypse That Ran On Time | 1999 | Chapter 18 |
 | P-22 | The Passing Fad | 1995–2000 | Conclusion |

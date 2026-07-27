@@ -82,7 +82,16 @@ export async function POST({ request, url, getClientAddress }) {
       cancel_url:  `${url.origin}/early-access`,
       customer_email: undefined,
       metadata: { product: 'early-access-bundle-v1', edition_type: editionType },
-      allow_promotion_codes: true,
+      // PREORDER50 is a 50%-off `duration: once` coupon that is emailed to
+      // every customer, and it is meant for the FUTURE book launch - not for
+      // this $5 preorder. Stripe applies a promotion code to whatever is in
+      // the cart, so leaving the promo box on THIS checkout would let anyone
+      // holding that code buy the preorder for $2.50, and the code is a fixed
+      // string sitting in every buyer's inbox. Off unless deliberately
+      // enabled; turn it on only once the live coupon is restricted to the
+      // product it is actually for (Stripe coupon -> Applies to -> specific
+      // product), so enabling promos here cannot reopen the discount hole.
+      allow_promotion_codes: env.ALLOW_PROMOTION_CODES === 'true',
       billing_address_collection: 'auto',
     });
 

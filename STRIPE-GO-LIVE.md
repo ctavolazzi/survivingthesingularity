@@ -184,10 +184,23 @@ step 0 — it is the step whose absence caused the overcharge.
       one-time, create a new live price at $5.00 on product `prod_UniDSzyaLPPGZY`,
       archive the wrong one, and use the new id below. Prices are immutable — you cannot
       edit $9 into $5.
-- [ ] **1. Audit the previous live window for overcharges.** Stripe → Payments, live
+- [~] **1. Audit the previous live window for overcharges.** Stripe → Payments, live
       mode, 2026-07-13 → 2026-07-26. Every successful $9 payment is a customer owed a $4
-      refund and an apology. Do this even if the answer is zero, and write the number
-      down here.
+      refund and an apology.
+      - **Strong evidence the answer is zero.** The 2026-07-26 Supabase backup
+        (`~/Backups/sts-supabase/2026-07-26/tables/`) shows all **9**
+        `fulfilled_sessions` rows carrying `cs_test_` session ids — not one `cs_live_`,
+        across the entire history. `preorders` holds 3 rows: two `test@example.com`
+        dummies from 06-27, and one self-test from the author's own address on 07-14,
+        also via a test session. No real customer appears to have ever completed a
+        purchase.
+      - **Do not close this on that evidence alone.** The backup was taken 13:10 on
+        07-26, so it cannot see a payment made later that day. Worse,
+        `fulfilled_sessions` only records orders that were *fulfilled*, and for part of
+        the live window the webhook was returning 503 — precisely the condition under
+        which a paid order leaves no row. Absence of rows is weakest exactly where it
+        matters most. The Stripe Payments dashboard is the only authoritative source.
+        Check it, then mark this `[x]` with the number.
 - [ ] **2. Set the live env vars** in Cloudflare (see step 1 of the procedure below),
       and in the same change flip `EXPECTED_MODE` from `test` to `live` in
       [.github/workflows/stripe-guard.yml](.github/workflows/stripe-guard.yml). That

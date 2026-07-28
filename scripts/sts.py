@@ -59,6 +59,7 @@ import collections
 import hashlib
 import html as html_mod
 import json
+import os
 import re
 import shutil
 import tempfile
@@ -744,18 +745,30 @@ BACKUP_PAGE = 1000
 
 
 def read_env(*names: str) -> dict:
-    """Read specific keys out of .env without importing a dotenv library."""
+    """Read specific keys out of .env, falling back to the real environment.
+
+    This repo is checked out as several git worktrees, and only one of them
+    carries a .env. Reading ROOT/.env alone meant `sts schema` and `sts backup`
+    simply could not run from the canonical worktree - the answer was "set it in
+    .env", which invites planting a copy of the production service key in a tree
+    that has no business holding one. So: .env still wins where it exists (it is
+    the per-checkout override), and anything it does not define falls back to
+    the process environment, which lets a caller export the credential for one
+    command without leaving it on disk.
+    """
     out = {}
     envfile = ROOT / ".env"
-    if not envfile.exists():
-        return out
-    for line in envfile.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        k, v = line.split("=", 1)
-        if k in names:
-            out[k] = v.strip().strip('"').strip("'")
+    if envfile.exists():
+        for line in envfile.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            if k in names:
+                out[k] = v.strip().strip('"').strip("'")
+    for name in names:
+        if not out.get(name) and os.environ.get(name):
+            out[name] = os.environ[name]
     return out
 
 
@@ -858,6 +871,195 @@ def _sb_dump_storage(url: str, key: str, bucket: str, out_dir: Path, fetch: bool
             "downloaded": downloaded, "entries": entries}
 
 
+# ──────────────────────────────────────────────────────────────────────
+# schema — which migrations have actually reached the live database
+# ──────────────────────────────────────────────────────────────────────
+#
+# sql/ is a directory of files. That is not the same thing as a database.
+# On 2026-07-26 migrations 008 and 009 had been written, committed, and
+# forgotten: the discord endpoint was 500ing against a table that did not
+# exist, and every preorder confirmation went out with no discount code
+# while the whole pitch was "50% off at launch". Nothing surfaced it,
+# because the app catches both failures and carries on.
+#
+# There is no psql and no supabase CLI on this machine, so this asks
+# PostgREST the only question it can answer cheaply: select the thing and
+# see whether the schema cache knows about it. A missing table answers
+# PGRST205, a missing column answers 42703, and either way the migration
+# has not run.
+
+# (migration file, human name, table, column or None for a whole-table check)
+SCHEMA_EXPECTATIONS = [
+    ("001_waitlist.sql",                 "waitlist",              "waitlist",             None),
+    ("002_waitlist_unsubscribe.sql",     "unsubscribe token",     "waitlist",             "unsubscribe_token"),
+    ("003_preorders.sql",                "preorders",             "preorders",            None),
+    ("004_fulfilled_sessions.sql",       "fulfilment ledger",     "fulfilled_sessions",   None),
+    ("005_preorders_copy_lock.sql",      "copy numbering",        "preorders",            "copy_number"),
+    ("006_preorders_standard_edition.sql", "standard edition",    "preorders",            "edition_type"),
+    ("008_discord_applications.sql",     "discord applications",  "discord_applications", None),
+    ("009_preorder_discount_code.sql",   "per-buyer discount code", "preorders",          "discount_code"),
+    # 010 ships two columns via two separate ALTER statements. Probe both: the
+    # SQL Editor stops at the first error, so a half-applied run can leave one
+    # present and the other missing, and probing only one would call that done.
+    ("010_waitlist_consent.sql",         "newsletter consent",    "waitlist",             "newsletter_consent"),
+    ("010_waitlist_consent.sql",         "book release consent",  "waitlist",             "book_release_consent"),
+]
+
+# Migrations that exist in sql/ but deliberately have nothing to probe.
+SCHEMA_UNPROBED_OK: set = set()
+
+
+def _schema_unexpected() -> list:
+    """Migration files in sql/ that no expectation covers.
+
+    This checker's failure mode is silence: a migration nobody added to
+    SCHEMA_EXPECTATIONS is not reported as pending, it is not reported at all,
+    and `sts schema` then prints "every migration is live" while the column it
+    adds is missing. That is not hypothetical - 010 was written, committed and
+    left uncovered, so the checker gave this project a clean bill of health on a
+    database that had never seen the consent columns. Compare the directory
+    against the table so the next omission is loud.
+    """
+    sql_dir = ROOT / "sql"
+    if not sql_dir.is_dir():
+        return []
+    covered = {m for m, _, _, _ in SCHEMA_EXPECTATIONS} | SCHEMA_UNPROBED_OK
+    return sorted(p.name for p in sql_dir.glob("*.sql") if p.name not in covered)
+
+
+def _schema_probe(url: str, key: str, table: str, column: str = None):
+    """Ask PostgREST whether a table (or column) exists. Returns (ok, detail)."""
+    sel = column or "*"
+    q = f"{url}/rest/v1/{table}?select={urllib.parse.quote(sel)}&limit=1"
+    try:
+        with _sb_get(q, key, timeout=20):
+            return True, "present"
+    except urllib.error.HTTPError as e:
+        try:
+            payload = json.loads(e.read().decode("utf-8"))
+        except Exception:  # noqa: BLE001
+            return False, f"HTTP {e.code}"
+        code = payload.get("code", "")
+        msg = payload.get("message", "")
+        if code == "PGRST205":
+            return False, "table does not exist"
+        if code == "42703":
+            return False, "column does not exist"
+        return False, f"{code}: {msg}"[:80]
+    except Exception as e:  # noqa: BLE001
+        return False, str(e)[:80]
+
+
+def cmd_schema(args) -> int:
+    url, key = _sb_creds()
+    rows, pending = [], []
+    for migration, label, table, column in SCHEMA_EXPECTATIONS:
+        target = f"{table}.{column}" if column else table
+        ok, detail = _schema_probe(url, key, table, column)
+        rows.append({"migration": migration, "label": label,
+                     "target": target, "applied": ok, "detail": detail})
+        if not ok:
+            pending.append(migration)
+
+    unexpected = _schema_unexpected()
+
+    # --bundle: emit exactly the migrations that are still pending, concatenated
+    # in filename order, ready to paste into the Supabase SQL Editor in one go.
+    # Applying them one file at a time is where this project loses track - the
+    # tab gets closed halfway, and `sts schema` is then the only thing that says
+    # so. Generated from the live probe rather than kept as a checked-in file, so
+    # it cannot drift: an already-applied migration simply stops appearing.
+    if getattr(args, "bundle", False):
+        uniq = sorted(set(pending))
+        if not uniq:
+            print("-- Nothing pending: every migration in sql/ is already live.")
+            return 0
+        print("-- Pending Supabase migrations, generated by `sts schema --bundle`.")
+        print(f"-- Project: {url}")
+        print("-- Paste the whole thing into the Supabase SQL Editor and Run.")
+        print("-- Every file here is idempotent; re-running an applied one is safe.")
+        for name in uniq:
+            path = ROOT / "sql" / name
+            print(f"\n\n-- ═══════════════════════════════════════════════════")
+            print(f"-- {name}")
+            print(f"-- ═══════════════════════════════════════════════════\n")
+            print(path.read_text(encoding="utf-8").rstrip())
+        print("\n\n-- Then re-run `python3 scripts/sts.py schema` to confirm.")
+        return 0
+
+    if args.json:
+        print(json.dumps({"project": url, "rows": rows,
+                          "pending": sorted(set(pending)),
+                          "uncovered": unexpected}, indent=2))
+        return 1 if (pending or unexpected) else 0
+
+    print(f"sts schema — {url}")
+    for r in rows:
+        mark = "ok     " if r["applied"] else "MISSING"
+        print(f"  {mark}  {r['migration']:<38} {r['target']:<28} {r['detail']}")
+
+    if unexpected:
+        print(f"\n  {len(unexpected)} migration(s) in sql/ are not covered by this check,")
+        print("  so their state is UNKNOWN, not clean:")
+        for m in unexpected:
+            print(f"    sql/{m}")
+        print("  Add each to SCHEMA_EXPECTATIONS in scripts/sts.py.")
+
+    if pending:
+        uniq = sorted(set(pending))
+        print(f"\n  {len(uniq)} migration(s) have not reached the database:")
+        for m in uniq:
+            print(f"    sql/{m}")
+        print("\n  There is no psql or supabase CLI here, so run them by hand:")
+        print("  Supabase dashboard > SQL Editor > paste the file > Run.")
+        print("  Every one of these files is idempotent; re-running an applied one is safe.")
+
+    if pending or unexpected:
+        return 1
+    print("\n  Every migration in sql/ is live in the database.")
+    return 0
+
+
+def _sb_schema_snapshot(url: str, key: str) -> dict:
+    """Capture the live column layout of every exposed table.
+
+    The backup this replaced was rows only. Rows do not describe the table they
+    came from, and sql/ is missing 001, 003, 004, 006 and 007 entirely, so there
+    was no path from a blank Supabase project back to a working one - the NDJSON
+    would have had nowhere to land. PostgREST publishes an OpenAPI document
+    describing every table it exposes, which gives real column names, types,
+    formats and required-ness read off the live database rather than guessed
+    from the endpoints that write to it.
+
+    Honest about its limits: this captures COLUMNS. It does not capture indexes,
+    unique constraints, check constraints, defaults, foreign keys, RLS policies,
+    triggers or functions - so it is a reconstruction aid, not a restore script.
+    A real `pg_dump --schema-only` (or the dashboard's schema export) is still
+    the thing to get, and `restore_gaps` in the manifest says so rather than
+    letting the file imply more coverage than it has.
+    """
+    try:
+        with _sb_get(f"{url}/rest/v1/", key, timeout=30) as r:
+            spec = json.loads(r.read().decode("utf-8"))
+    except Exception as e:  # noqa: BLE001
+        return {"error": str(e)[:200]}
+
+    tables = {}
+    for name, defn in sorted((spec.get("definitions") or {}).items()):
+        required = set(defn.get("required") or [])
+        cols = []
+        for col, meta in (defn.get("properties") or {}).items():
+            cols.append({
+                "column": col,
+                "type": meta.get("type"),
+                "format": meta.get("format"),
+                "required": col in required,
+                "description": meta.get("description"),
+            })
+        tables[name] = cols
+    return {"captured_from": "PostgREST OpenAPI (/rest/v1/)", "tables": tables}
+
+
 def cmd_backup(args) -> int:
     url, key = _sb_creds()
     stamp = date.today().isoformat()
@@ -871,12 +1073,26 @@ def cmd_backup(args) -> int:
     storage = [_sb_dump_storage(url, key, b, out_dir, not args.no_files)
                for b in BACKUP_STORAGE_BUCKETS]
 
+    schema = _sb_schema_snapshot(url, key)
+    (out_dir / "schema.json").write_text(
+        json.dumps(schema, indent=2) + "\n", encoding="utf-8")
+
     manifest = {
         "taken": stamp,
         "project_url": url,
         "tables": dumped,
         "storage": storage,
+        "schema": {"file": "schema.json",
+                   "tables": sorted((schema.get("tables") or {}).keys()),
+                   "error": schema.get("error")},
         "total_rows": sum(d.get("rows", 0) for d in dumped),
+        "restore_gaps": "schema.json lists COLUMNS only. Indexes, unique and check "
+                        "constraints, defaults, foreign keys, RLS policies, triggers "
+                        "and functions are NOT captured, and sql/ is missing 001, 003, "
+                        "004, 006 and 007 - so this is a reconstruction aid, not a "
+                        "restore script. Get a real pg_dump --schema-only (or the "
+                        "Supabase dashboard schema export) before trusting any of this "
+                        "as disaster recovery.",
         "restore": "Each tables/<name>.ndjson is one JSON object per line, exactly "
                    "the shape PostgREST accepts. To restore a table: POST the lines "
                    "(batched) to <project_url>/rest/v1/<name> with the service key and "
@@ -904,6 +1120,12 @@ def cmd_backup(args) -> int:
         else:
             print(f"  {s['objects']:>6} objs  storage/{s['bucket']:<17}"
                   f" {s['downloaded']} downloaded")
+    if schema.get("error"):
+        print(f"  ERROR  schema.json                {schema['error']}")
+    else:
+        ncols = sum(len(c) for c in schema["tables"].values())
+        print(f"  {ncols:>6} cols  schema.json              "
+              f"{len(schema['tables'])} tables (columns only — see restore_gaps)")
     print(f"\n  {manifest['total_rows']} rows across {len(dumped)} tables.")
     if errors:
         print(f"  {len(errors)} target(s) failed — backup is INCOMPLETE.")
@@ -3673,6 +3895,15 @@ def main():
                    help="report what would be exported without writing")
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_flow)
+
+    p = sub.add_parser("schema",
+                       help="check which sql/ migrations have actually reached the "
+                            "live Supabase database (exits non-zero if any are pending)")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--bundle", action="store_true",
+                   help="print the still-pending migrations concatenated in order, "
+                        "ready to paste into the Supabase SQL Editor in one go")
+    p.set_defaults(fn=cmd_schema)
 
     p = sub.add_parser("backup",
                        help="dump every Supabase table + storage bucket to a local "

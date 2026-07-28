@@ -65,7 +65,16 @@ export async function POST(event) {
   // The NewsletterSignup component still enforces an explicit choice in its
   // own UI by disabling submit until a box is checked.
 
-  const supabase = createSupabaseServerClient(event);
+  // Write with the service-role client, not the request-scoped anon one.
+  // The anon key ships to every browser, so anything this endpoint can do with
+  // it, anyone can do directly against PostgREST - skipping the origin check,
+  // rate limit, honeypot and validation above. Probed 2026-07-28: the anon key
+  // could in fact INSERT into waitlist and preorders. Using the service role
+  // here lets the anon INSERT policy be dropped, which makes this endpoint the
+  // only door into the table.
+  // Falls back to the anon client only when no service key is configured
+  // (local dev without secrets), where there is nothing to protect anyway.
+  const supabase = supabaseAdmin ?? createSupabaseServerClient(event);
 
   let { error } = await supabase
     .from('waitlist')

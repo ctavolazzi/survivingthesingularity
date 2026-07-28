@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Mon, 27 Jul 2026 15:47:29 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 28 Jul 2026 15:25:35 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -41,6 +41,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.15095</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement ... [Score: 11.0 | Flagged for: agent, multi-agent, alignment, rlhf, llm] Authors: Dylan Van Mulders, Matthias Bogaert, et al.</description>
+    </item>
+    <item>
+      <title>Embodied GPT-5.1: Evidence of a World Model?</title>
+      <link>https://arxiv.org/abs/2607.23899</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.23899</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <description>This exploratory study examines whether a large multimodal language model, GPT-5.1, can serve as the high-level controller of a physical mobile robot despite having no prior embodiment, no training in simulated environments, and no exposure to sensorimotor experience. Using only low-resolution first... [Score: 10.0 | Flagged for: world model, reasoning, embodied, robot, language model] Authors: Roberto Spinelli, Thiago C. Martins</description>
     </item>
     <item>
       <title>Towards Trustworthy and Cost-Efficient Data Integration: From Naïve RAG to Agentic RAG</title>
@@ -204,18 +211,11 @@
       <description>Artificial general intelligence ultimately requires agents that can reason and act in the physical world. Action models, vision-language-action policies, and world models have advanced this goal, while World Action Models (WAMs) are particularly promising because they connect candidate interventions... [Score: 8.5 | Flagged for: artificial general intelligence, world model, agent, embodied, rag] Authors: Yuanzhi Liang, Xufeng Zhan, et al.</description>
     </item>
     <item>
-      <title>When Language Models Meet NeuroGraphs: Exploring Enhanced Agentic LLM Framework Towards Brain Network Analysis</title>
-      <link>https://arxiv.org/abs/2607.22082</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.22082</guid>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Brain network analysis is crucial for understanding cognition and neurological disorders, yet existing deep learning methods mainly treat connectome analysis as a graph-to-logit classification problem, offering limited explanatory reasoning. Large language models (LLMs) provide a promising interface... [Score: 8.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Jiaxing Li, Rui Dong, et al.</description>
-    </item>
-    <item>
-      <title>D2VBench: Benchmarking Large Language Models with Value Dilemmas in Daily Scenarios</title>
-      <link>https://arxiv.org/abs/2607.19834</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.19834</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <description>With the wide application of large language models (LLMs) in real-world scenarios, the value implication of their outputs is crucial. However, existing evaluation benchmarks suffer from insufficient coverage of value dilemmas in daily scenarios involving multiple value conflicts and simplistic evalu... [Score: 8.0 | Flagged for: alignment, value alignment, llm, language model, rag] Authors: Siyi Hao, Yidi Cao, et al.</description>
+      <title>Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents</title>
+      <link>https://arxiv.org/abs/2607.24625</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.24625</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Autonomous LLM agents processing mixed-confidentiality data face severe security risks from prompt injection attacks and reasoning errors. While dynamic Information Flow Control (IFC) provides structural security guarantees, traditional taint tracking permanently taints an agent's context upon readi... [Score: 8.0 | Flagged for: agent, agentic, autonomous, reasoning, llm] Authors: Arseny Kravchenko, Vadim Liventsev, et al.</description>
     </item>
   </channel>
 </rss>

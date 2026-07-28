@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T15:47:29Z",
+  "generated_at": "2026-07-28T15:25:35Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -141,6 +141,31 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2607.23899",
+      "source": "arxiv",
+      "title": "Embodied GPT-5.1: Evidence of a World Model?",
+      "url": "https://arxiv.org/abs/2607.23899",
+      "authors": [
+        "Roberto Spinelli",
+        "Thiago C. Martins"
+      ],
+      "summary": "This exploratory study examines whether a large multimodal language model, GPT-5.1, can serve as the high-level controller of a physical mobile robot despite having no prior embodiment, no training in simulated environments, and no exposure to sensorimotor experience. Using only low-resolution first-person images and a discrete action set, the model was tasked with navigation and object-directed behaviors such as locating and contacting a target toy. Across multiple trials, GPT-5.1 demonstrated emergent capabilities that suggest elements of spatial reasoning and physical understanding. These i",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-27",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "world model",
+        "reasoning",
+        "embodied",
+        "robot",
+        "language model",
+        "emergent",
+        "emergent capabilit"
       ]
     },
     {
@@ -722,6 +747,31 @@
       ]
     },
     {
+      "id": "2607.24625",
+      "source": "arxiv",
+      "title": "Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents",
+      "url": "https://arxiv.org/abs/2607.24625",
+      "authors": [
+        "Arseny Kravchenko",
+        "Vadim Liventsev",
+        "Innokentii Konstantinov",
+        "Ildar Iskhakov"
+      ],
+      "summary": "Autonomous LLM agents processing mixed-confidentiality data face severe security risks from prompt injection attacks and reasoning errors. While dynamic Information Flow Control (IFC) provides structural security guarantees, traditional taint tracking permanently taints an agent's context upon reading unvetted data, severely restricting downstream utility. We present APPA (Agentic Permissions Policy Algebra), an IFC framework that resolves this usability bottleneck through engine-managed context branching and prospective acquisition enforcement. Before data acquisition occurs, APPA prospective",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-27",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
       "id": "2607.22082",
       "source": "arxiv",
       "title": "When Language Models Meet NeuroGraphs: Exploring Enhanced Agentic LLM Framework Towards Brain Network Analysis",
@@ -1041,6 +1091,57 @@
         "alignment",
         "llm",
         "scaling"
+      ]
+    },
+    {
+      "id": "2607.24744",
+      "source": "arxiv",
+      "title": "Data Pyramid for Embodied Manipulation",
+      "url": "https://arxiv.org/abs/2607.24744",
+      "authors": [
+        "Yifan Ye",
+        "Yankai Fu",
+        "Yaoxu Lv",
+        "Bohan Hou"
+      ],
+      "summary": "Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions. These signals can be provided, to varying degrees, by multiple data sources. In this work, we organize the embodied data ecosystem as a \"pyramid\" spanning five complementary sources: real-robot data, UMI-style data, egocentric and exocentric data, simulation data, and general vision-language data. We organize the pyramid around the tension between scalability and robot alignment, and ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-27",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "alignment",
+        "embodied",
+        "robot"
+      ]
+    },
+    {
+      "id": "2607.23784",
+      "source": "arxiv",
+      "title": "A Few Words Go a Long Way: Language Guided Robot Policy Synthesis",
+      "url": "https://arxiv.org/abs/2607.23784",
+      "authors": [
+        "Daphne Chen",
+        "Archit Ritesh Jain",
+        "Eric Goossen",
+        "Emma Romig"
+      ],
+      "summary": "While vision-language-action models have demonstrated impressive zero-shot manipulation capabilities, they remain fundamentally black box policies that are difficult to interpret, adapt, or correct when they inevitably fail. In this work, we propose ARCHITECT, a framework that treats robot policy acquisition as an interactive program synthesis task. ARCHITECT leverages the reasoning capabilities of LLM coding agents to synthesize modular robot programs that utilize a suite of perception and control tools. Unlike end-to-end models where distribution shift leads to unpredictable, cascading failu",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-26",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "interpret",
+        "robot",
+        "llm",
+        "rag"
       ]
     },
     {
@@ -1412,106 +1513,6 @@
         "reasoning",
         "robot",
         "rag"
-      ]
-    },
-    {
-      "id": "2607.12051",
-      "source": "arxiv",
-      "title": "Agentic systems for breast cancer treatment recommendations",
-      "url": "https://arxiv.org/abs/2607.12051",
-      "authors": [
-        "Vinicius Anjos de Almeida",
-        "Nícolas Henrique Borges",
-        "Leonardo Vicenzi",
-        "Helena Kociolek"
-      ],
-      "summary": "Large language models (LLMs) are increasingly being explored for clinical decision support, but their reliability in complex oncology treatment planning remains unclear. We evaluated agentic LLM systems for breast cancer treatment recommendation generation using 72 real clinical cases across stages I to IV and 1,147 case-specific rubrics generated through Asymmetric Information Rubric Generation (AIRG), in which the rubric generator had access to real clinical decisions unavailable to the evaluated models. Seven pipelines were compared, including single-LLM baselines, tool-augmented systems, a",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-13",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.09603",
-      "source": "arxiv",
-      "title": "Mosaic: Runtime-Efficient Multi-Agent Embodied Planning",
-      "url": "https://arxiv.org/abs/2607.09603",
-      "authors": [
-        "Kunjal Panchal",
-        "Saayan Mitra",
-        "Sunav Choudhary",
-        "Victor Bursztyn"
-      ],
-      "summary": "LLM-based multi-agent embodied planning remains impractical due to prohibitively high execution latency. We identify failed actions as the dominant bottleneck, stemming from two core challenges: inaccurate state tracking under partial observability and inefficient coordination that produces redundant or conflicting actions. We introduce Mosaic, a runtime-efficient multi-agent planning framework that addresses both challenges. Mosaic maintains accurate yet lightweight state tracking through agent-centric semantic memory that stores objects in relative coordinates, enabling geometric transformat",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-10",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "planning",
-        "embodied",
-        "llm"
-      ]
-    },
-    {
-      "id": "2607.08662",
-      "source": "arxiv",
-      "title": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
-      "url": "https://arxiv.org/abs/2607.08662",
-      "authors": [
-        "Xiaoshuai Song",
-        "Liancheng Zhang",
-        "Kangzhi Zhao",
-        "Yutao Zhu"
-      ],
-      "summary": "Large language model (LLM)-based web search agents are transforming information seeking from simple factoid question answering into complex, deep-and-wide search and research-oriented tasks. A single ReAct-style agent is constrained by one long trajectory and limited context, making it difficult to handle depth and coverage simultaneously. Existing multi-agent systems improve search coverage through parallel execution and aggregation, but still exhibit clear limitations in recursive depth, collaboration adaptability, and evidence-grounded expansion. We propose WebSwarm, a progressive recursive",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-09",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.07403",
-      "source": "arxiv",
-      "title": "Multi-Agent Robotic Control with Onboard Vision-Language Models",
-      "url": "https://arxiv.org/abs/2607.07403",
-      "authors": [
-        "Kajetan Rachwał",
-        "Maciej Majek",
-        "Bartłomiej Boczek",
-        "Jakub Matejczyk"
-      ],
-      "summary": "Vision Language Models (VLMs) and Vision Language Action (VLA) models have shown promise in robotic control. Yet, they face significant challenges regarding explainability, generalization, and compute requirements. This paper presents a Multi-Agent System (MAS) architecture that addresses these limitations by deploying specialized agents on onboard hardware - eliminating dependence on external compute. The system controls a multi-purpose autonomous mobile manipulator in a simulated industrial warehouse, fulfilling five task categories: safety inspection, warehouse maintenance, warehouse search",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-08",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "robot",
-        "language model"
       ]
     }
   ]

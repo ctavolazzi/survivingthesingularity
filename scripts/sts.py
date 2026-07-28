@@ -1799,13 +1799,21 @@ def cmd_routes(args) -> int:
 def cmd_status(args) -> int:
     branch = git("branch", "--show-current")
     dirty = len([l for l in git("status", "--porcelain").splitlines() if l])
-    ahead = git("rev-list", "--count", "main..HEAD") or "?"
+    # Against origin/main, not main. The local `main` ref in this checkout is
+    # 61 commits stale and nothing updates it, so `main..HEAD` reported "61
+    # ahead" for a branch that was in fact fully pushed and 0/0 with the remote.
+    # A number that large reads as "you have a pile of unpushed work" and sent
+    # at least one session hunting for commits that were already on the remote.
+    # Fall back to the local ref only when there is no remote-tracking one.
+    base = "origin/main" if git("rev-parse", "--verify", "-q", "origin/main") else "main"
+    ahead = git("rev-list", "--count", f"{base}..HEAD") or "?"
     book = book_stats()
     stripe = stripe_state()
     pages = collect_routes()["pages"]
     sm_errors, sm_missing = check_sitemap(pages)
     status = {
-        "git": {"branch": branch, "dirty_paths": dirty, "ahead_of_main": ahead},
+        "git": {"branch": branch, "dirty_paths": dirty,
+                "ahead_of_main": ahead, "ahead_of": base},
         "book": {"version": book["version"], "words": book["total_words"],
                  "updated": book["lastUpdated"]},
         "site": {"pages": len(pages), "sitemap_ghosts": len(sm_errors),
@@ -1817,7 +1825,7 @@ def cmd_status(args) -> int:
         print(json.dumps(status, indent=2))
         return 0
     print(f"Surviving the Singularity — sts.py v{VERSION}")
-    print(f"  git:     {branch} · {dirty} dirty paths · {ahead} ahead of main")
+    print(f"  git:     {branch} · {dirty} dirty paths · {ahead} ahead of {base}")
     print(f"  book:    v{book['version']} · {book['total_words']:,} words · updated {book['lastUpdated']}")
     print(f"  site:    {len(pages)} pages · sitemap ghosts {len(sm_errors)} · unlisted {len(sm_missing)}")
     print(f"  stripe:  local key {stripe['local_key_mode']} · prod-fail-loud "

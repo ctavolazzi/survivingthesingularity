@@ -57,6 +57,7 @@ Examples:
 import argparse
 import collections
 import hashlib
+import hmac
 import html as html_mod
 import json
 import os
@@ -1228,6 +1229,43 @@ def post_json(url: str, payload: dict, timeout: float = 20.0):
         return 0, str(e)
 
 
+# A benign event type the webhook handler does not act on. Deliberate: this
+# probe carries a REAL signature, so it must be a payload that cannot fulfil an
+# order even when verification succeeds. Never probe with
+# checkout.session.completed.
+WEBHOOK_PROBE_EVENT = {
+    "id": "evt_sts_probe",
+    "object": "event",
+    "type": "payment_intent.created",
+    "data": {"object": {"id": "pi_sts_probe"}},
+}
+
+
+def post_signed_webhook(url: str, secret: str, timeout: float = 20.0):
+    """POST a correctly signed Stripe event. Returns (status, body).
+
+    Signs exactly the bytes that are sent, the way Stripe does:
+    HMAC-SHA256 over "<timestamp>.<raw body>" keyed by the endpoint secret.
+    """
+    payload = json.dumps(WEBHOOK_PROBE_EVENT, separators=(",", ":"))
+    ts = str(int(time.time()))
+    sig = hmac.new(secret.encode("utf-8"),
+                   f"{ts}.{payload}".encode("utf-8"),
+                   hashlib.sha256).hexdigest()
+    req = urllib.request.Request(
+        url, data=payload.encode("utf-8"), method="POST",
+        headers={"Content-Type": "application/json",
+                 "User-Agent": f"sts.py/{VERSION}",
+                 "Stripe-Signature": f"t={ts},v1={sig}"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.status, resp.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode("utf-8", "replace")
+    except Exception as e:
+        return 0, str(e)
+
+
 def find_chrome():
     for p in CHROME_PATHS:
         if Path(p).exists():
@@ -1284,17 +1322,64 @@ def stripe_live_state(check_price: bool = True) -> dict:
         st["mode"] = "unknown"
         st["errors"].append(f"checkout returned {status}, expected 200")
 
-    # 2. Is the fulfillment webhook actually configured? A configured endpoint
-    #    rejects an unsigned POST with 400; 503 is its "not configured" branch.
+    # 2. Does the fulfillment webhook actually WORK?
+    #
+    #    An unsigned POST answering 400 proves only that STRIPE_WEBHOOK_SECRET is
+    #    set. It does NOT prove signature verification runs. This check used to
+    #    print "HTTP 400 <- OK: configured" and treat that as health, which is
+    #    exactly what a webhook whose verifier cannot run returns, so for weeks
+    #    it certified as healthy an endpoint that rejected every event Stripe ever
+    #    sent, including correctly signed ones (the synchronous constructEvent /
+    #    Workers SubtleCrypto fault, fixed in aea146e). Three audits repeated that
+    #    reading. A status code that looks identical whether the thing works or is
+    #    completely broken is not evidence.
+    #
+    #    The only proof is a correctly signed event coming back 200. So: unsigned
+    #    POST to tell "configured" from 503, then a signed probe to tell "verifies"
+    #    from "rejects everything".
     wh_status, _ = post_json(f"{SITE}/api/webhooks/stripe", {})
     st["webhook_status"] = wh_status
-    st["webhook_ok"] = wh_status == 400
+    st["webhook_secret_set"] = wh_status not in (503, 0)
+    st["webhook_verified"] = None  # None = could not be proven either way
+    st["webhook_signed_status"] = None
     if wh_status == 503:
         st["errors"].append("webhook 503 — STRIPE_WEBHOOK_SECRET unset in prod; a paid "
                             "order is lost whenever the browser never reaches /success")
     elif wh_status != 400:
-        st["warnings"].append(f"webhook returned {wh_status}; expected 400 (configured) "
-                              "or 503 (not configured)")
+        st["warnings"].append(f"unsigned webhook POST returned {wh_status}; expected 400 "
+                              "(secret set) or 503 (not configured)")
+
+    secret = read_env("STRIPE_WEBHOOK_SECRET").get("STRIPE_WEBHOOK_SECRET", "")
+    if wh_status == 503:
+        pass  # already an error; a signed probe adds nothing
+    elif not secret:
+        st["warnings"].append(
+            "webhook NOT PROVEN: no STRIPE_WEBHOOK_SECRET available locally, so a "
+            "signed event could not be sent. 'HTTP 400' alone cannot distinguish a "
+            "working verifier from one that rejects every event. Re-run with the "
+            "secret exported, or read the runtime's own log line "
+            "(wrangler pages deployment tail <id> --project-name survivingthesingularity)")
+    else:
+        sg_status, _ = post_signed_webhook(f"{SITE}/api/webhooks/stripe", secret)
+        st["webhook_signed_status"] = sg_status
+        if sg_status == 200:
+            st["webhook_verified"] = True
+        elif sg_status == 400:
+            st["webhook_verified"] = False
+            st["errors"].append(
+                "webhook REJECTED a correctly signed event (400). Either the local "
+                "secret differs from production's, or verification cannot run at all. "
+                "Those are indistinguishable from out here. Settle it from the "
+                "runtime log: 'verification could not run' means the handler is "
+                "broken for EVERY event and no order is ever fulfilled by webhook; "
+                "'signature rejected' means it is only the secret")
+        else:
+            st["warnings"].append(f"signed webhook probe returned {sg_status}; expected "
+                                  "200 (verified) or 400 (rejected)")
+
+    # Keep the old key, but redefine it honestly: ok now means proven, not
+    # 'answered with a status code that was easy to misread'.
+    st["webhook_ok"] = st["webhook_verified"] is True
 
     # 3. Does what we charge match what we promise?
     ads = advertised_prices()
@@ -1337,8 +1422,18 @@ def cmd_stripe_live(args) -> int:
     print(f"Stripe live probe of {st['site']}")
     print(f"  checkout:   HTTP {st['checkout_status']} · mode {st['mode']}"
           + ("  <- REAL CARDS" if st["mode"] == "live" else ""))
+    if st["webhook_verified"] is True:
+        wh_note = "  <- VERIFIED: a signed event was accepted"
+    elif st["webhook_verified"] is False:
+        wh_note = "  <- BROKEN: a correctly signed event was rejected"
+    elif st["webhook_secret_set"]:
+        wh_note = "  <- secret set, but verification NOT PROVEN"
+    else:
+        wh_note = "  <- NOT CONFIGURED"
+    signed = st["webhook_signed_status"]
     print(f"  webhook:    HTTP {st['webhook_status']}"
-          + ("  <- OK: configured" if st["webhook_ok"] else "  <- NOT CONFIGURED"))
+          + (f" · signed HTTP {signed}" if signed is not None else "")
+          + wh_note)
     adv = ", ".join(fmt_cents(c) for c in st["advertised_cents"]) or "none found"
     print(f"  advertised: {adv}")
     print(f"  charged:    {fmt_cents(st['charged_cents']) if st['charged_cents'] is not None else 'not verified'}")

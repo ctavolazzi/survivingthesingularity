@@ -266,11 +266,8 @@
   $: if (sentinel && ready) { /* referenced so Svelte tracks the binding */ }
 </script>
 
-<svelte:head>
-  <title>Reader | Surviving the Singularity</title>
-  <meta name="description" content="The full draft of Surviving the Singularity in one continuous, readable scroll." />
-  <meta name="robots" content="noindex" />
-</svelte:head>
+<!-- Head lives in +layout.svelte: this component only renders once the gate is
+     open, so anything declared here is invisible to crawlers and unfurlers. -->
 
 <div class="reader" data-size={$readerFontSize}>
 

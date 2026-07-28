@@ -14,7 +14,59 @@
     $: unlocked = $bookUnlocked;
 
     $: isBookRoot = $page.url.pathname === '/book';
+
+    // Chapter metadata comes through $page.data because the chapter page's own
+    // <svelte:head> sits inside the gate and therefore never renders for a
+    // crawler or a link unfurler.
+    $: section = $page.data?.section;
 </script>
+
+<!-- The head lives here, above the gate, not in the page components. Everything
+     below renders only when `unlocked` is true, and that store is in-memory and
+     starts false on every load - so a crawler, an iMessage preview or a Discord
+     unfurl never reached the metadata in +page.svelte. In production /book,
+     /read and every /book/[sectionId] were serving no title, no share card, and
+     crucially no robots directive: the `noindex` this route was believed to
+     carry has never once been emitted, while /book was also listed in
+     sitemap.xml and robots.txt allows everything. -->
+<svelte:head>
+  {#if isBookRoot}
+    <title>Read the Book | Surviving the Singularity</title>
+    <meta name="description" content="The full current draft of Surviving the Singularity, navigable chapter by chapter." />
+    <meta property="og:title" content="Read the book, chapter by chapter." />
+    <meta property="og:description" content="The complete current draft of Surviving the Singularity, navigable chapter by chapter." />
+    <meta property="og:url" content="https://survivingthesingularity.com/book" />
+  {:else if section}
+    <title>{section.title} | Surviving the Singularity</title>
+    <meta name="description" content="Read {section.title} from Surviving the Singularity." />
+    <meta property="og:title" content="{section.title} | Surviving the Singularity" />
+    <meta property="og:description" content="Read {section.title} from Surviving the Singularity." />
+    <meta property="og:url" content="https://survivingthesingularity.com{$page.url.pathname}" />
+  {/if}
+
+  <!-- Genuinely noindex, and now actually emitted. Every route under /book is
+       password-gated, so the only thing a crawler can ever see here is the
+       gate; an indexed gate is a worse search result than no result. The SEO
+       doors are the pages that render real content to a crawler: /, /blog,
+       /about, /checklist, /signals, /early-access. `sts.py sitemap` keeps
+       these routes out of sitemap.xml to match. -->
+  <meta name="robots" content="noindex" />
+
+  <!-- noindex does not suppress link previews - iMessage, Discord, Slack and
+       WhatsApp read the og: tags, which is what we want when a chapter link
+       gets sent to someone. Rebuild the card with `sts.py og --render`. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/book.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/book.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Surviving the Singularity: read the full draft, chapter by chapter." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/book.png" />
+</svelte:head>
 
 {#if !unlocked}
   <BookGate />

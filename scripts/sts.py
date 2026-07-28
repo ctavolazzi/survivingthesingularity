@@ -15,6 +15,13 @@ Commands:
               shows its reader, catches subtitle/price drift across the site
               and the built file, and audits Precedent Ledger integrity.
               `verify links` liveness-checks every Works Cited URL.
+    og        Share cards. No args audits every public page for a resolvable
+              og:image (a page without one shares as a bare blue link);
+              --render rebuilds them from scripts/og_cards.json at 1200x630.
+    schema    Which sql/ migrations have actually reached the live database.
+              A committed migration file is not an applied migration; the
+              app swallows both "table missing" and "column missing", so
+              nothing else surfaces the gap.
     stripe    Stripe go-live readiness (masks all secrets); --live probes
               production for live-vs-test mode, webhook health, and whether
               the price charged matches the price advertised
@@ -206,13 +213,27 @@ def cmd_audit(args) -> int:
         if (shadow / "index.html").exists() or shadow.with_suffix(".html").exists():
             errors.append(f"static{page} shadows route {page} — stale page will be served")
 
-    # 3. Per-page head meta
+    # 3. Per-page head meta. A page may legitimately delegate its head to a
+    # layout - routes behind the book gate have to, because the page component
+    # only renders once the gate is open and a crawler never gets that far - so
+    # walk the layout chain before calling a head missing.
+    def layout_supplies_head(page_path: Path) -> bool:
+        d = page_path.parent
+        while True:
+            layout = d / "+layout.svelte"
+            if layout.exists() and "<svelte:head>" in layout.read_text(encoding="utf-8"):
+                return True
+            if d == ROUTES_DIR:
+                return False
+            d = d.parent
+
     for marker in ROUTES_DIR.rglob("+page.svelte"):
         rel = str(marker.relative_to(ROOT))
         text = marker.read_text(encoding="utf-8")
         head = re.search(r"<svelte:head>(.*?)</svelte:head>", text, re.DOTALL)
         if not head:
-            warnings.append(f"{rel}: no <svelte:head> (title/description missing)")
+            if not layout_supplies_head(marker):
+                warnings.append(f"{rel}: no <svelte:head> (title/description missing)")
             continue
         h = head.group(1)
         if "<title>" not in h:
@@ -275,21 +296,44 @@ def sitemap_urls() -> list:
     return re.findall(r"<loc>([^<]+)</loc>", sm.read_text(encoding="utf-8"))
 
 
+NOINDEX_RE = re.compile(r'name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', re.I)
+
+
 def route_is_noindex(route: str) -> bool:
-    """True if the route's own page declares robots noindex.
+    """True if the route declares robots noindex, on its page or a layout above it.
 
     A page that says noindex has opted out of search on purpose. Listing it in
     sitemap.xml tells a crawler "fetch this" and "do not index this" in the same
     breath, and it hands out the URL of a page that was meant to be shared by
     link only. /exclusive-friends-only is exactly that: the whole book behind one
     password, noindex+nofollow.
+
+    The layout walk is load-bearing, not defensive. The gated routes moved their
+    whole head into +layout.svelte, because the page component only renders once
+    the password gate opens and a crawler never gets that far. Reading only
+    +page.svelte after that move sees no noindex on /book or /read, decides they
+    are public, and demands they be added to the sitemap - the exact opposite of
+    what those pages ask for.
     """
+    def declares(f: Path) -> bool:
+        return f.exists() and bool(
+            NOINDEX_RE.search(f.read_text(encoding="utf-8", errors="ignore")))
+
     rel = "" if route == "/" else route.lstrip("/")
-    page = (ROUTES_DIR / rel / "+page.svelte") if rel else (ROUTES_DIR / "+page.svelte")
-    if not page.exists():
+    d = (ROUTES_DIR / rel) if rel else ROUTES_DIR
+    if not (d / "+page.svelte").exists():
         return False
-    src = page.read_text(encoding="utf-8", errors="ignore")
-    return bool(re.search(r'name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', src, re.I))
+    # The route's own page, then only the LAYOUTS above it. A parent directory's
+    # +page.svelte is a sibling route, not an ancestor - inheriting its noindex
+    # would silently drop unrelated pages out of the sitemap.
+    if declares(d / "+page.svelte"):
+        return True
+    while True:
+        if declares(d / "+layout.svelte"):
+            return True
+        if d == ROUTES_DIR:
+            return False
+        d = d.parent
 
 
 def public_pages(pages: list) -> list:
@@ -870,6 +914,234 @@ def _sb_dump_storage(url: str, key: str, bucket: str, out_dir: Path, fetch: bool
         entries.append(e)
     return {"bucket": bucket, "objects": len(entries),
             "downloaded": downloaded, "entries": entries}
+
+
+# ──────────────────────────────────────────────────────────────────────
+# og — share cards
+# ──────────────────────────────────────────────────────────────────────
+#
+# A link with no og:image shares as a bare blue line of text. On
+# 2026-07-26 seven of the site's eleven real surfaces did exactly that,
+# including /checklist and /blog, the two pages most likely to be passed
+# around. The two pages that DID set og:image pointed it at the cover
+# art, which is 1410x2056 - portrait, into a slot every scraper crops to
+# roughly 1.91:1, so the art got sliced through the middle.
+#
+# Cards are 1200x630 (the OG slot's own aspect) rendered at 2x, which is
+# how static/images/og/exclusive-friends-only.png was already built by
+# hand. Nothing generated that file, so this exists to stop the next one
+# being hand-built too. Copy lives in scripts/og_cards.json next to the
+# other registries, and the house style below is read off that card.
+
+OG_DIR = STATIC_DIR / "images" / "og"
+OG_W, OG_H, OG_SCALE = 1200, 630, 2
+
+
+def load_og_cards() -> list:
+    reg = json.loads((ROOT / "scripts" / "og_cards.json").read_text(encoding="utf-8"))
+    # {version} resolves from book.json, so a card that quotes the draft version
+    # cannot go stale against the book it is advertising.
+    version = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))["version"]
+    cards = []
+    for c in reg["cards"]:
+        c = dict(c)
+        for k in ("eyebrow", "headline_lead", "headline_accent", "body", "chip"):
+            if isinstance(c.get(k), str):
+                c[k] = c[k].replace("{version}", version)
+        cards.append(c)
+    return cards
+
+
+def og_html(card: dict, cover_uri: str) -> str:
+    e = html_mod.escape
+    return f"""<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+  body {{
+    width: {OG_W}px; height: {OG_H}px; overflow: hidden;
+    background: #020617; color: #f1f5f9;
+    font-family: 'Outfit', system-ui, sans-serif;
+    display: flex; align-items: center;
+    position: relative;
+  }}
+  /* amber edge, the one bit of chrome the friends-only card already had */
+  .edge {{ position: absolute; left: 0; top: 0; bottom: 0; width: 7px; background: #f59e0b; }}
+  .glow {{
+    position: absolute; right: -140px; top: 50%; transform: translateY(-50%);
+    width: 720px; height: 720px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(245,158,11,0.16) 0%, transparent 62%);
+  }}
+  .copy {{ position: relative; padding: 0 0 0 76px; width: 720px; }}
+  .eyebrow {{
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+    font-size: 19px; letter-spacing: 0.16em; color: #f59e0b;
+    margin-bottom: 22px;
+  }}
+  h1 {{ font-weight: 900; font-size: 62px; line-height: 1.04; letter-spacing: -0.02em; }}
+  h1 .accent {{ color: #f59e0b; display: block; }}
+  p {{ font-size: 23px; line-height: 1.5; color: #94a3b8; margin-top: 26px; max-width: 620px; }}
+  /* bordered chip, then the domain as plain text beside it - the layout the
+     hand-built friends-only card established */
+  .chiprow {{
+    display: flex; align-items: center; gap: 14px; margin-top: 34px;
+    font-family: 'JetBrains Mono', monospace; font-size: 16px; letter-spacing: 0.09em;
+  }}
+  .chip {{
+    font-weight: 500; color: #f59e0b;
+    border: 1px solid rgba(245,158,11,0.45); border-radius: 6px;
+    padding: 9px 15px;
+  }}
+  .site {{ color: #64748b; }}
+  .cover {{ position: relative; margin-left: auto; margin-right: 76px; }}
+  .cover img {{
+    display: block; width: 268px; height: auto; border-radius: 9px;
+    transform: perspective(1400px) rotateY(-9deg) rotate(1.6deg);
+    box-shadow: 0 40px 90px rgba(0,0,0,0.72), 0 0 0 1px rgba(245,158,11,0.22);
+  }}
+</style></head><body>
+  <div class="edge"></div><div class="glow"></div>
+  <div class="copy">
+    <div class="eyebrow">{e(card['eyebrow'])}</div>
+    <h1>{e(card['headline_lead'])}<span class="accent">{e(card['headline_accent'])}</span></h1>
+    <p>{e(card['body'])}</p>
+    <div class="chiprow"><span class="chip">{e(card['chip'])}</span><span class="site">/ survivingthesingularity.com</span></div>
+  </div>
+  <div class="cover"><img src="{cover_uri}" alt=""></div>
+</body></html>"""
+
+
+def render_og_card(card: dict, chrome: str, cover_uri: str, out_dir: Path) -> dict:
+    """Render one card to PNG with headless Chrome. Returns a report row."""
+    out = out_dir / card["out"]
+    with tempfile.TemporaryDirectory() as td:
+        page = Path(td) / "card.html"
+        page.write_text(og_html(card, cover_uri), encoding="utf-8")
+        shot = Path(td) / "card.png"
+        cmd = [chrome, "--headless", "--disable-gpu", "--no-sandbox",
+               "--hide-scrollbars", "--default-background-color=00000000",
+               f"--force-device-scale-factor={OG_SCALE}",
+               f"--window-size={OG_W},{OG_H}",
+               "--virtual-time-budget=12000",
+               f"--screenshot={shot}", page.as_uri()]
+        try:
+            subprocess.run(cmd, capture_output=True, timeout=180)
+        except Exception as ex:  # noqa: BLE001
+            return {"route": card["route"], "out": card["out"], "action": f"render-failed ({ex})"}
+        if not shot.exists():
+            return {"route": card["route"], "out": card["out"], "action": "render-failed (no output)"}
+        out_dir.mkdir(parents=True, exist_ok=True)
+        blob = shot.read_bytes()
+        same = out.exists() and out.read_bytes() == blob
+        out.write_bytes(blob)
+    return {"route": card["route"], "out": card["out"],
+            "action": "unchanged" if same else "written",
+            "bytes": out.stat().st_size}
+
+
+def _og_image_in(path: Path):
+    """The og:image a single .svelte file declares in its head, or None."""
+    if not path.exists():
+        return None
+    head = re.search(r"<svelte:head>(.*?)</svelte:head>",
+                     path.read_text(encoding="utf-8"), re.DOTALL)
+    if not head:
+        return None
+    m = re.search(r'property="og:image"\s+content=(?:"([^"]*)"|\{([^}]*)\})',
+                  head.group(1))
+    if not m:
+        return None
+    # content={post.image} is a real declaration whose value only exists at
+    # runtime; record it as dynamic rather than calling it missing.
+    return m.group(1) if m.group(1) is not None else f"{{{m.group(2)}}}"
+
+
+def og_declared() -> dict:
+    """{route: og:image content} for every route that declares one.
+
+    Walks the layout chain, not just +page.svelte. The gated routes (/book,
+    /read) have to put their head in a +layout.svelte, because the page
+    component only renders once the password gate opens and a crawler never
+    gets that far - that is the whole point of the layouts e0ff6a8 added. A
+    checker that reads only +page.svelte reports those two as bare links while
+    they are in fact correctly tagged, which is a check contradicting the fix
+    it is supposed to be verifying.
+    """
+    found = {}
+    for marker in ROUTES_DIR.rglob("+page.svelte"):
+        rel = marker.parent.relative_to(ROUTES_DIR)
+        route = "/" + "/".join(rel.parts) if rel.parts else "/"
+        img = _og_image_in(marker)
+        d = marker.parent
+        while img is None:
+            img = _og_image_in(d / "+layout.svelte")
+            if d == ROUTES_DIR:
+                break
+            d = d.parent
+        if img is not None:
+            found[route] = img
+    return found
+
+
+def cmd_og(args) -> int:
+    cards = load_og_cards()
+    if args.render:
+        chrome = find_chrome()
+        if not chrome:
+            sys.exit("sts og: Chrome/Chromium not found - cards are rendered in a real browser "
+                     "(web fonts, gradients), so there is no fallback path here.")
+        cover = STATIC_DIR / "images" / "surviving_the_singularity_cover_1200.png"
+        if not cover.exists():
+            sys.exit(f"sts og: cover art missing at {cover} - run `sts.py cover --sync` first")
+        only = set(args.only.split(",")) if args.only else None
+        rows = [render_og_card(c, chrome, cover.as_uri(), OG_DIR)
+                for c in cards if not only or c["route"] in only]
+        if args.json:
+            print(json.dumps(rows, indent=2))
+        else:
+            print(f"sts og --render — {len(rows)} card(s) at {OG_W}x{OG_H} @{OG_SCALE}x")
+            for r in rows:
+                size = f"{r['bytes']:,}b" if r.get("bytes") else ""
+                print(f"  {r['action']:<12} {r['route']:<18} {r['out']:<20} {size}")
+        return 1 if any("failed" in r["action"] for r in rows) else 0
+
+    # check mode: every public page should declare an og:image that exists
+    declared = og_declared()
+    pages = public_pages(collect_routes()["pages"])
+    problems, dynamic, ok = [], [], []
+    for p in pages:
+        img = declared.get(p)
+        if not img:
+            problems.append(f"{p} declares no og:image — shares as a bare link")
+            continue
+        if img.startswith("{"):
+            dynamic.append(f"{p} og:image is {img} — resolved at runtime, not checkable here")
+            continue
+        # {$page.url.origin}/foo.png -> /foo.png
+        local = img.split("survivingthesingularity.com", 1)[-1]
+        if "}" in local:
+            local = local.split("}", 1)[-1]
+        if local.startswith("/") and not (STATIC_DIR / local.lstrip("/")).exists():
+            problems.append(f"{p} og:image points at {local}, which is not in static/ "
+                            "(scrapers will fall back to no image)")
+        else:
+            ok.append(p)
+    if args.json:
+        print(json.dumps({"ok": ok, "dynamic": dynamic, "problems": problems,
+                          "declared": declared}, indent=2))
+        return 1 if problems else 0
+    print(f"sts og — {len(pages)} public pages")
+    for p in problems:
+        print(f"  ERROR  {p}")
+    for d in dynamic:
+        print(f"  warn   {d}")
+    print(f"\n  {len(ok)}/{len(pages)} pages have a static share card that resolves"
+          + (f", {len(dynamic)} set one at runtime" if dynamic else ""))
+    if problems:
+        print("  `sts.py og --render` builds the cards in scripts/og_cards.json.")
+    return 1 if problems else 0
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -3990,6 +4262,16 @@ def main():
                    help="report what would be exported without writing")
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_flow)
+
+    p = sub.add_parser("og",
+                       help="share cards: no args audits every public page for a "
+                            "resolvable og:image; --render rebuilds them from "
+                            "scripts/og_cards.json")
+    p.add_argument("--render", action="store_true",
+                   help="render the cards to static/images/og/ (needs Chrome)")
+    p.add_argument("--only", help="comma-separated routes to render, e.g. /blog,/about")
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_og)
 
     p = sub.add_parser("schema",
                        help="check which sql/ migrations have actually reached the "

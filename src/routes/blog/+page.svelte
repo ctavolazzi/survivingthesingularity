@@ -33,6 +33,25 @@
 <svelte:head>
   <title>Blog - Surviving the Singularity</title>
   <meta name="description" content="Read about breakthroughs that might impact your life today or in the very near future." />
+
+  <!-- Share card. Absolute URLs, hardcoded rather than derived from $page.url,
+       because every social crawler requires them. Rebuild with `sts.py og --render`. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:title" content="Breakthroughs that reach you first." />
+  <meta property="og:description" content="Read about the breakthroughs that might impact your life today, or in the very near future." />
+  <meta property="og:url" content="https://survivingthesingularity.com/blog" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/blog.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/blog.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Field notes from Surviving the Singularity: breakthroughs that reach you first." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Breakthroughs that reach you first." />
+  <meta name="twitter:description" content="Read about the breakthroughs that might impact your life today, or in the very near future." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/blog.png" />
 </svelte:head>
 
 {#if visible}

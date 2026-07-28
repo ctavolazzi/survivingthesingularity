@@ -77,15 +77,26 @@
 <svelte:head>
   <title>Surviving the Singularity: New Era, New Playbook</title>
   <meta name="description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
+  <!-- Share card is a 1200x630 landscape render, not the cover art. The cover
+       is 1410x2056; every scraper crops og:image to roughly 1.91:1, so pointing
+       at the portrait art sliced the book in half. Rebuild with
+       `sts.py og --render`. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:title" content="Surviving the Singularity" />
   <meta property="og:description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
-  <meta property="og:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
   <meta property="og:url" content="https://survivingthesingularity.com/" />
-  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/home.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/home.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Surviving the Singularity: a practical field guide for staying human in the age of AI." />
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Surviving the Singularity" />
   <meta name="twitter:description" content="A practical field guide for staying human in the age of AI." />
-  <meta name="twitter:image" content="https://survivingthesingularity.com/images/surviving_the_singularity_cover_1200.png" />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/home.png" />
 </svelte:head>
 
 <div class="home">

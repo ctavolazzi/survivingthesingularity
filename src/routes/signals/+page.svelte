@@ -57,6 +57,25 @@
   <title>Research Signals: Surviving the Singularity</title>
   <meta name="description" content="Algorithmically swept arXiv research ranked by singularity relevance. Auto-updated daily. Not hand-curated." />
   <link rel="alternate" type="application/rss+xml" title="Research Signals RSS" href="/signals.xml" />
+
+  <!-- Share card. Absolute URLs, hardcoded rather than derived from $page.url,
+       because every social crawler requires them. Rebuild with `sts.py og --render`. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Surviving the Singularity" />
+  <meta property="og:title" content="The arXiv sweep, ranked and dated." />
+  <meta property="og:description" content="Algorithmically swept research ranked by singularity relevance. Auto-updated daily. Not hand-curated." />
+  <meta property="og:url" content="https://survivingthesingularity.com/signals" />
+  <meta property="og:image" content="https://survivingthesingularity.com/images/og/signals.png" />
+  <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/signals.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Research Signals: the arXiv sweep, ranked by singularity relevance and updated daily." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The arXiv sweep, ranked and dated." />
+  <meta name="twitter:description" content="Algorithmically swept research ranked by singularity relevance. Auto-updated daily. Not hand-curated." />
+  <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/signals.png" />
 </svelte:head>
 
 <div class="signals-page">

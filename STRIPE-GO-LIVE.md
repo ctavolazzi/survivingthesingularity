@@ -4,7 +4,14 @@
 Production was on live-mode keys between roughly 2026-07-13 and 2026-07-26; it is not
 now. Local/dev is still correctly on the test-mode price — that part is unchanged and
 intentional.
-Last updated: 2026-07-26 (re-probed).
+Test mode is deliberate: the fulfillment pipeline gets proven before real money moves.
+It is now on a clock, not indefinite.
+Last updated: 2026-07-28 (re-probed).
+
+**2026-07-28:** the Stripe webhook, recorded as correct by three prior audits, had in
+fact never verified a single event. Fixed and proven in production; see "Resolved
+2026-07-28" below. Remaining go-live blockers are the four Supabase migrations and one
+end-to-end test purchase.
 
 > **Do not trust a remembered status line in this file.** It said "NOT LIVE YET" for
 > ten days after the cutover actually happened, and then said "LIVE AND TAKING REAL
@@ -41,9 +48,15 @@ So this is no longer a defect list. It is a **re-cutover**: the remaining work i
 live keys back with the price verified at $5 *before* they go in, so the overcharge
 cannot recur. See "Re-cutover checklist" below.
 
-None of this is a code defect. `stripe-checkout/+server.js` resolves the price correctly
-and the webhook handler is written correctly; every fault so far has been in
-environment/dashboard configuration. Do not "fix" them by editing application code.
+None of *this* is a code defect: `stripe-checkout/+server.js` resolves the price
+correctly, and the mode/price faults have all been environment or dashboard
+configuration. Do not "fix" those by editing application code.
+
+**But do not generalize that.** This paragraph used to also assert "the webhook handler
+is written correctly," and that sentence is why nobody read the handler for weeks while
+it rejected every event Stripe sent. It was a code defect, in application code, and it
+was the most expensive one in the project. See "Resolved 2026-07-28" below. A prior
+claim that an area is clean is not evidence about that area.
 
 ### History: the $9 / $5 gap (live window 2026-07-13 → 2026-07-26)
 
@@ -131,14 +144,49 @@ disagree.
 filtered to since the cutover. Any successful $9 payment is a customer owed a $4 refund
 and an apology.
 
-### Resolved: the missing webhook secret
+### Resolved 2026-07-28: the webhook had never verified a single event
 
-`POST /api/webhooks/stripe` now answers an unsigned POST with **400** (missing
-signature). In
-[src/routes/api/webhooks/stripe/+server.js](src/routes/api/webhooks/stripe/+server.js)
-the old 503 came from exactly one branch — `if (!stripe || !WEBHOOK_SECRET)` — so a 400
-proves both `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` are set and signature
-verification is running.
+**Corrected.** This section used to say a 400 on an unsigned POST "proves both
+`STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` are set and signature verification is
+running." The first half was true. The second half was wrong, and it was wrong for
+weeks across three audits.
+
+The endpoint was rejecting **every** event, including correctly signed ones. From the
+Cloudflare runtime's own log:
+
+```text
+[webhook] signature verification failed: CryptoProvider cannot be used in a
+synchronous context. Use `await constructEventAsync(...)` instead of `constructEvent(...)`
+```
+
+Production runs on the Cloudflare Workers runtime, so the bundler resolves Stripe's
+`workerd` export condition and the SDK's crypto provider is SubtleCrypto, which is
+async-only. The synchronous `constructEvent` threw before it ever compared a signature.
+The secret was never the problem; every secret failed identically. Consequence: the
+webhook never fulfilled an order. All fulfillment to date came from the success page, so
+any customer who closed the tab, or paid with a delayed method, was charged and never
+fulfilled. Impact was zero only because production is on test keys.
+
+Fixed in `aea146e` (`await constructEventAsync`, plus a catch that separates
+"verification could not run" from "signature rejected"), cherry-picked to main as
+`dcc7809` and deployed 2026-07-28.
+
+**Verified in production, not inferred.** A correctly signed benign event
+(`payment_intent.created`, deliberately a type the handler does not act on, so a valid
+signature cannot fulfil anything) returns `200 {"received":true}`, and the request logs
+no error line at all. That also settles a second question: the `whsec_…` in `.env`
+**matches** the one in Cloudflare, which a 400 alone could never have told us.
+
+> **The lesson worth keeping.** A 400 is what a *correctly configured* webhook returns
+> to an unsigned POST, and also what a webhook whose verifier cannot run returns to
+> *everything*. Those two look identical from outside. `sts stripe --live` printed
+> "HTTP 400 <- OK: configured" and every audit believed it. The check now sends a
+> signed event and requires a 200 before it will say VERIFIED; a rejection is an error
+> and an unprovable state is a warning, never a clean bill of health. When a check says
+> something is fine, ask what observation would look identical if it were broken.
+
+What is proven above is proven for **test mode only**, and the reason is the next
+paragraph.
 
 > ⚠️ **This does not carry over to live mode.** Stripe signing secrets are per-endpoint
 > *and* per-mode. Production is on test keys, so the `whsec_…` currently set is almost
@@ -211,9 +259,15 @@ step 0 — it is the step whose absence caused the overcharge.
       you want.
 - [ ] **3. Register the LIVE webhook endpoint** and set its own `whsec_…` — the
       test-mode secret currently in place will not verify live traffic. See the warning
-      under "Resolved: the missing webhook secret".
-- [ ] **4. Run the two Supabase migrations** (`sql/008`, `sql/009`) — see "Still
-      outstanding" below.
+      under "Resolved 2026-07-28: the webhook had never verified a single event".
+      After swapping the secret, re-prove it the same way that section describes:
+      `sts stripe --live` must print VERIFIED, not merely HTTP 400.
+- [ ] **4. Run the four pending Supabase migrations** (`002`, `008`, `009`, `010` as of
+      2026-07-28). Do not work from that hardcoded list: get the current one from
+      `python3 scripts/sts.py schema`, and `sts schema --bundle` prints them
+      concatenated and paste-ready. `002` is the one that matters most and is not a
+      go-live blocker but a live compliance gap: without it the mailing list has no
+      working unsubscribe.
 - [ ] **5. Create `PREORDER50` in live mode** — it exists only in test mode.
 - [ ] **6. Re-probe:** `python3 scripts/sts.py stripe --live` must report `mode live`,
       webhook configured, and no price drift.

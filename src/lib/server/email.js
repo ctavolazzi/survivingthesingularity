@@ -1,6 +1,7 @@
 import { env } from '$env/dynamic/private';
 import { Resend } from 'resend';
 import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
+import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 
 // Dynamic env so a missing key never breaks the build. If RESEND_API_KEY is
 // unset, every send becomes a logged no-op and signups still succeed.
@@ -8,6 +9,58 @@ const apiKey = env.RESEND_API_KEY;
 const from = env.EMAIL_FROM || 'Surviving the Singularity <onboarding@resend.dev>';
 
 const resend = apiKey ? new Resend(apiKey) : null;
+
+/**
+ * Send through Resend and record the attempt in email_deliveries.
+ *
+ * Every send used to do `const { error } = await resend.emails.send(...)`,
+ * which threw away `data.id` - the one handle that lets a delivery outcome be
+ * matched back to the send. A bounced confirmation and a delivered one left
+ * the database in identical states, so "did this customer actually receive
+ * their bundle link?" could only be answered from Resend's dashboard, which
+ * is a third party with ~30 day retention. For a table whose whole job is
+ * redundancy against Stripe, that is the wrong shape.
+ *
+ * The ledger write is deliberately best-effort and never throws: failing to
+ * RECORD an email must not stop the email, and must not take down fulfillment.
+ * A missing ledger row is a reporting gap; a thrown error here would be a lost
+ * order.
+ *
+ * @param {{ type: string, to: string, sessionId?: string|null }} meta
+ * @param {object} payload passed straight to resend.emails.send
+ */
+async function sendAndRecord(meta, payload) {
+  const { data, error } = await resend.emails.send(payload);
+
+  try {
+    if (supabaseAdmin) {
+      // supabase-js RETURNS errors, it does not throw them, so the catch below
+      // would never fire on a failed insert. Read `error` explicitly or a
+      // broken ledger stays completely silent - which is the exact failure
+      // mode this table was built to eliminate.
+      const { error: logErr } = await supabaseAdmin.from('email_deliveries').insert({
+        message_id: data?.id ?? null,
+        to_email: meta.to,
+        email_type: meta.type,
+        session_id: meta.sessionId ?? null,
+        // 'sent' means Resend accepted it, NOT that it arrived. Only the
+        // Resend webhook can move this to 'delivered' or 'bounced'.
+        status: error ? 'failed' : 'sent',
+        error: error ? String(error.message ?? error).slice(0, 500) : null
+      });
+      if (logErr) {
+        console.error(
+          `[email] delivery ledger write failed for ${meta.type} to ${meta.to}: ${logErr.message}` +
+          (logErr.code === 'PGRST205' ? ' (run sql/011_email_deliveries.sql)' : '')
+        );
+      }
+    }
+  } catch (e) {
+    console.error('[email] could not record delivery for', meta.type, e?.message ?? e);
+  }
+
+  return { data, error };
+}
 
 function escapeHtml(str) {
   return String(str)
@@ -112,12 +165,13 @@ export async function sendAdminPreorderAlert({ name, email, edition_type, copy_n
     ? `[STS] Author's Edition preorder #${copy_number}: ${name}`
     : `[STS] Regular edition preorder: ${name}`;
   const body = `Name: ${name}\nEmail: ${email}\nEdition: ${edition_type}${isAuthors && copy_number ? `\nCopy: #${copy_number} / 100` : ''}`;
-  const { error } = await resend.emails.send({
-    from,
-    to: 'admin@johnnyautoseed.com',
-    subject,
-    text: body,
-  });
+  // Recorded too, and for a specific reason: a buyer name containing CRLF
+  // makes Resend reject this subject, so the alert silently never sends while
+  // the order records fine. Without a row here that failure is invisible.
+  const { error } = await sendAndRecord(
+    { type: 'admin_preorder_alert', to: 'admin@johnnyautoseed.com' },
+    { from, to: 'admin@johnnyautoseed.com', subject, text: body }
+  );
   if (error) console.error('[email] admin preorder alert failed:', error.message ?? error);
   return error ? { error } : { ok: true };
 }
@@ -363,12 +417,17 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <p style="font-size:11px;color:#334155;margin:36px 0 0;">Order ref: ${sessionId.slice(0, 24)}... · survivingthesingularity.com · Reply to this email for support.</p>
   </div></body></html>`;
 
-  const { error } = await resend.emails.send({ from, to, subject, html });
+  // The one email a paying customer must receive. Recorded so a bounce is
+  // visible in our own data rather than only in Resend's dashboard.
+  const { data, error } = await sendAndRecord(
+    { type: 'preorder_download', to, sessionId },
+    { from, to, subject, html }
+  );
   if (error) {
     console.error('[email] download email failed:', error.message ?? error);
     return { error };
   }
-  return { ok: true };
+  return { ok: true, messageId: data?.id ?? null };
 }
 
 /**
@@ -388,12 +447,10 @@ export async function sendWelcomeEmail({ to, source = 'homepage', unsubscribeTok
     ? `${baseUrl}/unsubscribe?token=${unsubscribeToken}`
     : null;
   const copy = buildWelcome(source);
-  const { error } = await resend.emails.send({
-    from,
-    to,
-    subject: copy.subject,
-    html: renderHtml({ ...copy, unsubscribeUrl }),
-  });
+  const { error } = await sendAndRecord(
+    { type: 'welcome', to },
+    { from, to, subject: copy.subject, html: renderHtml({ ...copy, unsubscribeUrl }) }
+  );
   if (error) {
     console.error('[email] welcome send failed:', error.message ?? error);
     return { error };

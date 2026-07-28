@@ -1176,6 +1176,7 @@ SCHEMA_EXPECTATIONS = [
     # present and the other missing, and probing only one would call that done.
     ("010_waitlist_consent.sql",         "newsletter consent",    "waitlist",             "newsletter_consent"),
     ("010_waitlist_consent.sql",         "book release consent",  "waitlist",             "book_release_consent"),
+    ("011_email_deliveries.sql",         "email delivery ledger", "email_deliveries",     None),
 ]
 
 # Migrations that exist in sql/ but deliberately have nothing to probe.

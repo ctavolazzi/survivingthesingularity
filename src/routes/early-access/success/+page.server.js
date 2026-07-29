@@ -3,6 +3,7 @@ import { env } from '$env/dynamic/private';
 import Stripe from 'stripe';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { getBundleUrl, fulfillPreorder } from '$lib/server/fulfillment.js';
+import { recordCheckoutCompleted, markTransactionFulfilled } from '$lib/server/transactions.js';
 
 // Per-request: reads session_id/email from the query string. Never prerender.
 export const prerender = false;
@@ -149,7 +150,25 @@ export async function load({ url, platform }) {
   // ── FULFILL (once per session; also covered independently by the Stripe
   // webhook at /api/webhooks/stripe if the browser never gets this far) ───────
   if (customerEmail) {
+    // The ledger write is chained onto fulfillment rather than run beside it,
+    // so `fulfilled` is only ever set by the call that actually delivered.
+    // When the webhook won the race this returns `alreadyFulfilled` and the
+    // flag is left for whichever worker did the work to set.
     const fulfillment = fulfillPreorder({ sessionId, email: customerEmail, name: customerName, editionType })
+      .then(async (result) => {
+        await recordCheckoutCompleted({
+          sessionId,
+          paymentIntent: typeof session.payment_intent === 'string'
+            ? session.payment_intent
+            : session.payment_intent?.id ?? null,
+          email: customerEmail,
+          name: customerName,
+          editionType,
+          amountTotal: session.amount_total ?? null,
+          currency: session.currency ?? null,
+        });
+        if (result?.delivered) await markTransactionFulfilled(sessionId);
+      })
       .catch((e) => console.error('[success] fulfillPreorder threw:', e?.message ?? e));
 
     if (platform?.context?.waitUntil) {

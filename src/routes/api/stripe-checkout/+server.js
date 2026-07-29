@@ -3,6 +3,7 @@ import { env } from '$env/dynamic/private';
 import { dev } from '$app/environment';
 import Stripe from 'stripe';
 import { rateLimit } from '$lib/server/rateLimit.js';
+import { recordCheckoutInitiated } from '$lib/server/transactions.js';
 
 const PRICE_ID      = env.STRIPE_PRICE_ID;
 const SECRET_KEY    = env.STRIPE_SECRET_KEY;
@@ -93,6 +94,19 @@ export async function POST({ request, url, getClientAddress }) {
       // product), so enabling promos here cannot reopen the discount hole.
       allow_promotion_codes: env.ALLOW_PROMOTION_CODES === 'true',
       billing_address_collection: 'auto',
+    });
+
+    // Put the session on the ledger the moment it exists, before the customer
+    // has done anything. This is what makes an abandoned checkout visible: the
+    // row sits at 'initiated' until either the webhook moves it to 'completed'
+    // or Stripe expires it. Awaited rather than fired and forgotten, because on
+    // Workers an un-awaited promise is not guaranteed to run after the response
+    // is returned, and a silently skipped write is worse than a few extra ms.
+    await recordCheckoutInitiated({
+      sessionId: session.id,
+      editionType,
+      amountTotal: session.amount_total ?? null,
+      currency: session.currency ?? null,
     });
 
     return json({ url: session.url });

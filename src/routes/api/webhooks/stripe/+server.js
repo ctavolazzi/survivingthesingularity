@@ -2,6 +2,11 @@ import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import Stripe from 'stripe';
 import { fulfillPreorder } from '$lib/server/fulfillment.js';
+import {
+  recordCheckoutCompleted,
+  recordCheckoutExpired,
+  markTransactionFulfilled,
+} from '$lib/server/transactions.js';
 
 const SECRET_KEY = env.STRIPE_SECRET_KEY;
 const WEBHOOK_SECRET = env.STRIPE_WEBHOOK_SECRET;
@@ -60,6 +65,15 @@ export async function POST({ request }) {
     return json({ error: 'Invalid signature' }, { status: 400 });
   }
 
+  // The customer started checkout and never finished. Recorded, not acted on:
+  // the ask was to be able to see that it happened, not to chase it. Without
+  // this event an abandoned cart is indistinguishable from a cart that never
+  // existed, because nothing else in the system ever hears about it.
+  if (event.type === 'checkout.session.expired') {
+    await recordCheckoutExpired(event.data.object.id);
+    return json({ received: true });
+  }
+
   if (event.type === 'checkout.session.completed' || event.type === 'checkout.session.async_payment_succeeded') {
     const session = event.data.object;
 
@@ -74,15 +88,43 @@ export async function POST({ request }) {
     const name = session.customer_details?.name ?? '';
     const editionType = session.metadata?.edition_type === 'authors' ? 'authors' : 'standard';
 
-    if (email) {
-      try {
-        await fulfillPreorder({ sessionId: session.id, email, name, editionType });
-      } catch (err) {
-        console.error('[webhook] fulfillPreorder threw:', err.message);
-        // 500 so Stripe retries with backoff instead of a transient failure
-        // silently dropping a real paid order.
-        return json({ error: 'Fulfillment failed' }, { status: 500 });
-      }
+    // Ledger first, and unconditionally. This runs before fulfillment and
+    // outside the `if (email)` guard on purpose: the money moved whether or not
+    // we can identify the buyer or successfully deliver to them, and that fact
+    // must survive every failure below it. Previously a session with no email
+    // returned 200 having recorded nothing anywhere.
+    await recordCheckoutCompleted({
+      sessionId: session.id,
+      paymentIntent: typeof session.payment_intent === 'string'
+        ? session.payment_intent
+        : session.payment_intent?.id ?? null,
+      email,
+      name,
+      editionType,
+      amountTotal: session.amount_total ?? null,
+      currency: session.currency ?? null,
+    });
+
+    if (!email) {
+      // Nothing to deliver to, but the payment is now on the ledger and will
+      // show up in the "completed but not fulfilled" report rather than
+      // vanishing.
+      console.error(`[webhook] paid session ${session.id} has no customer email; recorded but not fulfilled.`);
+      return json({ received: true });
+    }
+
+    try {
+      const result = await fulfillPreorder({ sessionId: session.id, email, name, editionType });
+      // Only claim fulfilment when this call actually delivered. `alreadyFulfilled`
+      // means another worker owns it and will set the flag itself.
+      if (result?.delivered) await markTransactionFulfilled(session.id);
+    } catch (err) {
+      console.error('[webhook] fulfillPreorder threw:', err.message);
+      // 500 so Stripe retries with backoff instead of a transient failure
+      // silently dropping a real paid order. The retry is now genuinely useful:
+      // claimSession repairs its own stale claim rather than treating the
+      // half-finished first attempt as done.
+      return json({ error: 'Fulfillment failed' }, { status: 500 });
     }
   }
 

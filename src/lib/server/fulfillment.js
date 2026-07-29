@@ -64,20 +64,106 @@ function violatedConstraint(err) {
   return 'email';
 }
 
+// How long a claim may sit unfinished before a later attempt treats it as
+// abandoned rather than in-flight. The success page and the webhook routinely
+// fire within seconds of each other, so anything shorter would let a normal
+// race look like a crash and double-email the customer. Stripe spaces its
+// webhook retries minutes apart, so anything this side of that is a repair.
+const STALE_CLAIM_MS = 2 * 60 * 1000;
+
 /**
- * Claim a session ID in Supabase before doing anything else. Returns true if
- * this is the first claim (proceed with fulfillment), false if already
- * claimed - the mechanism that keeps the success page and the webhook from
- * ever both fulfilling the same session.
+ * Claim a session ID in Supabase before doing anything else. Returns true to
+ * proceed with fulfillment, false to stand down.
+ *
+ * This is the mechanism that stops the success page and the webhook from both
+ * fulfilling the same session. It used to be a bare insert: row present meant
+ * "done", so a crash anywhere between the claim and the last send left a
+ * tombstone that made every subsequent retry a no-op. Stripe would retry, this
+ * would answer "already claimed", the webhook would return 200, and a paid
+ * customer would receive nothing while the table insisted they had been served.
+ *
+ * The row now records an outcome, so the three cases are distinguishable:
+ *   - delivered            -> genuinely done, stand down
+ *   - claimed, fresh       -> another worker is mid-flight, let it finish
+ *   - claimed/failed, old  -> the first attempt died, repair it
  */
 export async function claimSession(sessionId, email) {
   if (!supabaseAdmin) return true;
+
   const { error } = await supabaseAdmin
     .from('fulfilled_sessions')
     .insert({ session_id: sessionId, email });
-  if (error?.code === '23505') return false; // duplicate key -> already claimed
-  if (error) console.error('[fulfillment] claimSession error:', error.message);
-  return !error;
+  if (!error) return true;
+  if (error.code !== '23505') {
+    console.error('[fulfillment] claimSession error:', error.message);
+    return false;
+  }
+
+  const { data: existing, error: lookupErr } = await supabaseAdmin
+    .from('fulfilled_sessions')
+    .select('status, created_at, attempts')
+    .eq('session_id', sessionId)
+    .maybeSingle();
+
+  // Cannot tell what state the prior attempt reached. Standing down risks
+  // losing a paid order permanently; proceeding risks a second email. A
+  // duplicate email is an apology, a lost order is a refund and a lost
+  // customer, so this errs toward delivering twice.
+  if (lookupErr || !existing) {
+    console.error(
+      `[fulfillment] claim lookup failed for ${sessionId}; proceeding rather than risk a lost order:`,
+      lookupErr?.message ?? 'no row'
+    );
+    return true;
+  }
+
+  // Pre-013 rows have no status column value; treat them as delivered, which
+  // is what the migration backfills them to.
+  if (!existing.status || existing.status === 'delivered') return false;
+
+  const ageMs = Date.now() - new Date(existing.created_at).getTime();
+  if (ageMs < STALE_CLAIM_MS) return false;
+
+  const attempts = (existing.attempts ?? 1) + 1;
+  await supabaseAdmin
+    .from('fulfilled_sessions')
+    .update({ status: 'claimed', attempts })
+    .eq('session_id', sessionId);
+  console.warn(
+    `[fulfillment] repairing stale ${existing.status} claim for ${sessionId} ` +
+    `(age ${Math.round(ageMs / 1000)}s, attempt ${attempts}).`
+  );
+  return true;
+}
+
+/**
+ * Record how fulfillment actually ended. Best-effort and never throws: failing
+ * to write the outcome must not undo a delivery that already happened.
+ *
+ * Without this the table only ever recorded intent. `status = 'delivered'` is
+ * what makes a retry safe to skip, and what makes
+ * `where status <> 'delivered'` a usable list of orders that need attention.
+ */
+async function markSessionOutcome(sessionId, status, lastError = null) {
+  if (!supabaseAdmin) return;
+  try {
+    const { error } = await supabaseAdmin
+      .from('fulfilled_sessions')
+      .update({
+        status,
+        completed_at: new Date().toISOString(),
+        last_error: lastError ? String(lastError).slice(0, 500) : null,
+      })
+      .eq('session_id', sessionId);
+    if (error) {
+      console.error(
+        `[fulfillment] could not mark ${sessionId} as ${status}: ${error.message}` +
+        (error.code === 'PGRST204' ? ' (run sql/013_checkout_durability.sql)' : '')
+      );
+    }
+  } catch (e) {
+    console.error('[fulfillment] markSessionOutcome threw:', e?.message ?? e);
+  }
 }
 
 /**
@@ -180,17 +266,36 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
   // They always get the download link (on a duplicate this just resends
   // access to what they already have); the admin alert only fires for
   // genuinely new preorders so a re-payment doesn't spam a second alert.
-  const sends = [
-    sendDownloadEmail({ to: email, sessionId, edition_type: editionType, copy_number: copyNumber, discount_code: discountCode })
-      .catch((e) => console.error('[fulfillment] download email threw:', e?.message ?? e)),
-  ];
-  if (!duplicate) {
-    sends.push(
-      sendAdminPreorderAlert({ name, email, edition_type: editionType, copy_number: copyNumber })
-        .catch((e) => console.error('[fulfillment] admin alert threw:', e?.message ?? e))
-    );
-  }
-  await Promise.allSettled(sends);
+  //
+  // The download email's result is captured rather than swallowed, because it
+  // is the one send that decides whether this session counts as delivered. The
+  // admin alert failing is our problem; the customer still got their bundle.
+  const downloadPromise = sendDownloadEmail({
+    to: email, sessionId, edition_type: editionType, copy_number: copyNumber, discount_code: discountCode,
+  }).catch((e) => {
+    console.error('[fulfillment] download email threw:', e?.message ?? e);
+    return { error: e?.message ?? String(e) };
+  });
 
-  return { alreadyFulfilled: false, duplicate, bundleUrl, copyNumber, discountCode };
+  const adminPromise = duplicate
+    ? Promise.resolve(null)
+    : sendAdminPreorderAlert({ name, email, edition_type: editionType, copy_number: copyNumber })
+        .catch((e) => console.error('[fulfillment] admin alert threw:', e?.message ?? e));
+
+  const [downloadResult] = await Promise.all([downloadPromise, adminPromise]);
+
+  // `skipped: true` means RESEND_API_KEY is unset, which is a configuration
+  // fault, not a delivery. Calling that 'delivered' would let a misconfigured
+  // deployment quietly mark every order complete while sending nothing.
+  const deliveryFailed = Boolean(downloadResult?.error) || Boolean(downloadResult?.skipped);
+  await markSessionOutcome(
+    sessionId,
+    deliveryFailed ? 'failed' : 'delivered',
+    downloadResult?.error ?? (downloadResult?.skipped ? 'RESEND_API_KEY unset; no email sent' : null)
+  );
+
+  return {
+    alreadyFulfilled: false, duplicate, bundleUrl, copyNumber, discountCode,
+    delivered: !deliveryFailed,
+  };
 }

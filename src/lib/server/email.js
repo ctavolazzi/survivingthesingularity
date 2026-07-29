@@ -142,12 +142,14 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
     ? `Author's Edition confirmed: copy #${copy_number}`
     : 'Preorder confirmed: Surviving the Singularity';
 
-  const { error } = await resend.emails.send({
-    from,
-    to: email,
-    subject,
-    html: renderHtml({ heading, body, cta }),
-  });
+  // Recorded: this is the customer's own copy of the order. The admin alert
+  // below was already in the ledger while this was not, which had it backwards
+  // - a bounced admin alert costs us an inbox notification, a bounced customer
+  // confirmation costs the customer any record that the order exists.
+  const { error } = await sendAndRecord(
+    { type: 'preorder_confirmation', to: email },
+    { from, to: email, subject, html: renderHtml({ heading, body, cta }) }
+  );
   if (error) console.error('[email] preorder confirmation failed:', error.message ?? error);
   return error ? { error } : { ok: true };
 }
@@ -189,12 +191,10 @@ export async function sendDiscordApplicationConfirmation({ name, email }) {
   const heading = 'Application received.';
   const body = `${greeting} Your application to join the Surviving the Singularity Discord is in. We review every application by hand, so it may take a few days. You'll hear from us either way.`;
   const cta = { label: 'Back to the checklist', url: 'https://survivingthesingularity.com/checklist' };
-  const { error } = await resend.emails.send({
-    from,
-    to: email,
-    subject: 'Your Discord application is in',
-    html: renderHtml({ heading, body, cta }),
-  });
+  const { error } = await sendAndRecord(
+    { type: 'discord_application_confirmation', to: email },
+    { from, to: email, subject: 'Your Discord application is in', html: renderHtml({ heading, body, cta }) }
+  );
   if (error) console.error('[email] discord application confirmation failed:', error.message ?? error);
   return error ? { error } : { ok: true };
 }
@@ -208,12 +208,13 @@ export async function sendAdminDiscordApplicationAlert({ name, email, answer }) 
   if (!resend) return { skipped: true };
   const subject = `[STS] Discord application: ${name}`;
   const body = `Name: ${name}\nEmail: ${email}\n\nAnswer:\n${answer}`;
-  const { error } = await resend.emails.send({
-    from,
-    to: 'admin@johnnyautoseed.com',
-    subject,
-    text: body,
-  });
+  // Same reasoning as the preorder alert: an applicant name containing CRLF
+  // makes Resend reject this subject, so the alert silently never sends while
+  // the application records fine. Without a row here that failure is invisible.
+  const { error } = await sendAndRecord(
+    { type: 'admin_discord_application_alert', to: 'admin@johnnyautoseed.com' },
+    { from, to: 'admin@johnnyautoseed.com', subject, text: body }
+  );
   if (error) console.error('[email] admin discord application alert failed:', error.message ?? error);
   return error ? { error } : { ok: true };
 }
@@ -318,7 +319,10 @@ export async function sendChecklistEmail({ to, answers }) {
 </div>
 </body></html>`;
 
-  const { error } = await resend.emails.send({ from, to, subject, html });
+  const { error } = await sendAndRecord(
+    { type: 'checklist', to },
+    { from, to, subject, html }
+  );
   if (error) {
     console.error('[email] checklist send failed:', error.message ?? error);
     return { error };

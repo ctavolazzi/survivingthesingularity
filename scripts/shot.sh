@@ -9,8 +9,9 @@
 #      layout bugs and to invent fake ones.
 #   2. --window-size clamps to a 500px minimum on this macOS version, so a
 #      narrow value silently produces a 500px shot and fakes mobile overflow.
-#      For viewports under 500px use scripts/shot-narrow.sh, which loads the
-#      page inside an iframe of the true width.
+#      For viewports under 500px use scripts/shot-narrow.mjs, which drives
+#      Playwright to set an exact viewport with no clamp, and measures overflow
+#      from inside the page rather than guessing at it.
 #
 # file:// CSP warnings in the console are almost always noise, not a defect.
 
@@ -25,7 +26,7 @@ H="${4:-1800}"
 
 if [ "$W" -lt 500 ]; then
   echo "refusing: width $W is below the 500px clamp and would produce a false result." >&2
-  echo "use scripts/shot-narrow.sh for narrow viewports." >&2
+  echo "use scripts/shot-narrow.mjs for narrow viewports." >&2
   exit 2
 fi
 

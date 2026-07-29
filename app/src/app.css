@@ -125,8 +125,9 @@ body {
 }
 
 /* ---------- reduced motion ----------
-   Targeted selectors at equal specificity, later in source order, so nothing
-   here needs !important. Scoped component styles carry their own block. */
+   Targeted selectors at equal specificity, later in source order, which is why
+   no priority override is required. Scoped component styles carry their own
+   block. */
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

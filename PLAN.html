@@ -399,11 +399,15 @@ Pipeline stages</a></li>
 tasks</a></li>
 <li><a href="#93-how-to-run-it" id="toc-93-how-to-run-it">9.3 How to run
 it</a></li>
+<li><a href="#94-a-defect-the-automated-check-could-not-see" id="toc-94-a-defect-the-automated-check-could-not-see">9.4 A defect the
+automated check could not see</a></li>
 </ul></li>
 <li><a href="#10-ws-e-mvp-spinup-tooling" id="toc-10-ws-e-mvp-spinup-tooling">10. <code>WS-E</code>
 <code>/mvp-spinup</code> tooling</a>
 <ul>
-<li><a href="#101-the-seven-stages-the-skill-encodes" id="toc-101-the-seven-stages-the-skill-encodes">10.1 The seven stages
+<li><a href="#102-two-bugs-the-lints-own-positive-control-caught" id="toc-102-two-bugs-the-lints-own-positive-control-caught">10.2 Two
+bugs the lint&#39;s own positive control caught</a></li>
+<li><a href="#103-the-seven-stages-the-skill-encodes" id="toc-103-the-seven-stages-the-skill-encodes">10.3 The seven stages
 the skill encodes</a></li>
 </ul></li>
 <li><a href="#11-ws-f-launch-campaign" id="toc-11-ws-f-launch-campaign">11. <code>WS-F</code> Launch
@@ -1209,8 +1213,9 @@ rule annotations, screenshot verified</td>
 <td><code>D-S7</code></td>
 <td><code>/mvp-spinup</code> skill</td>
 <td><code>~/.claude/skills/mvp-spinup/</code></td>
-<td><span class="st st-prog">IN PROGRESS</span></td>
-<td>See <code>WS-E</code></td>
+<td><span class="st st-done">DONE</span></td>
+<td>Skill, slash command, 3 scripts, 4 references. Registered and
+listed. See <code>WS-E</code></td>
 </tr>
 </tbody>
 </table>
@@ -1303,20 +1308,25 @@ arrow-key navigation.</td>
 <tr>
 <td><code>D-09t</code></td>
 <td>P2</td>
-<td><code>scripts/shot-narrow.sh</code> for sub-500px viewports via
-iframe. <strong><code>shot.sh</code> references it and it does not exist
-yet.</strong></td>
-<td><span class="st st-todo">TODO</span></td>
+<td>Narrow-viewport screenshot helper. Shipped as
+<code>scripts/shot-narrow.mjs</code>, driving Playwright rather than the
+iframe trick: a <code>file://</code> harness wrapping an
+<code>http://localhost</code> page is cross-origin, so it cannot read
+<code>scrollWidth</code>, and an overflow check that cannot read the
+document is not a check.</td>
+<td><span class="st st-done">DONE</span></td>
 <td>none</td>
-<td>Script exists, produces a true 390px render</td>
+<td>Sets an exact viewport with no clamp, measures overflow inside the
+page, and names the widest offending element</td>
 </tr>
 <tr>
 <td><code>D-10t</code></td>
 <td>P2</td>
 <td>Verify at 390px and 768px.</td>
-<td><span class="st st-todo">TODO</span></td>
+<td><span class="st st-done">DONE</span></td>
 <td><code>D-09t</code></td>
-<td>Screenshots at both widths, no horizontal page scroll</td>
+<td>Both PASS for overflow. Visual review at 390px found a real clipping
+defect the measurement could not see. See 9.4</td>
 </tr>
 <tr>
 <td><code>D-11t</code></td>
@@ -1346,6 +1356,26 @@ derivation end to end.</td>
 to <code>true</code>, and watch the shipment clause appear on
 <code>/policies</code> and the excluded row change on the homepage,
 together.</p>
+<h3 id="94-a-defect-the-automated-check-could-not-see">9.4 A defect the
+automated check could not see</h3>
+<p>Worth recording because it is the general case, not a one-off.</p>
+<p>At 390px the overflow measurement returned PASS:
+<code>scrollWidth</code> equalled <code>clientWidth</code>, no
+horizontal page scroll. The precedent list was nonetheless broken. Each
+row&#39;s date is <code>white-space: nowrap</code> and pushed right with
+<code>margin-left: auto</code>, so at narrow widths it ran past the
+row&#39;s content box and was <strong>clipped</strong> by the container&#39;s
+<code>overflow: hidden</code>, which exists only to make the rounded
+corners work. Clipped content does not extend the document, so it never
+trips a <code>scrollWidth</code> check. &quot;New York,&quot; and &quot;Eastern
+Mediterranean, c.&quot; were simply cut in half, and every measurement said
+the page was fine.</p>
+<p>Fixed by giving the date its own line below the title under
+700px.</p>
+<p>The rule this produces, now written into the skill: <strong>the
+measurement and the eye catch different bugs.</strong> An automated
+check finds what it was told to look for. Run it, then look at the
+screenshot anyway.</p>
 <hr />
 <h2 id="10-ws-e-mvp-spinup-tooling">10. <code>WS-E</code>
 <code>/mvp-spinup</code> tooling</h2>
@@ -1370,59 +1400,98 @@ the scaffolding.</p>
 <td>P2</td>
 <td>Write <code>~/.claude/skills/mvp-spinup/SKILL.md</code> with the
 seven-stage procedure and its trigger conditions.</td>
-<td><span class="st st-prog">IN PROGRESS</span></td>
+<td><span class="st st-done">DONE</span></td>
 <td>none</td>
-<td>Skill loads and the stage list matches this document</td>
+<td>Skill registered and listed. Stage table matches section 9.1</td>
 </tr>
 <tr>
 <td><code>E-02</code></td>
 <td>P2</td>
 <td>Write the slash command wrapper at
 <code>~/.claude/commands/mvp-spinup.md</code>.</td>
-<td><span class="st st-todo">TODO</span></td>
+<td><span class="st st-done">DONE</span></td>
 <td><code>E-01</code></td>
-<td><code>/mvp-spinup &lt;project&gt;</code> invokes the skill</td>
+<td><code>/mvp-spinup</code> present with <code>argument-hint</code>,
+defers to the skill rather than restating it</td>
 </tr>
 <tr>
 <td><code>E-03</code></td>
 <td>P2</td>
-<td>Bundle <code>scripts/shot.sh</code> and <code>shot-narrow.sh</code>
-as skill assets.</td>
-<td><span class="st st-todo">TODO</span></td>
+<td>Bundle the screenshot scripts as skill assets.</td>
+<td><span class="st st-done">DONE</span></td>
 <td><code>D-09t</code></td>
-<td>Both scripts live under the skill directory</td>
+<td><code>scripts/shot.sh</code>, <code>scripts/shot-narrow.mjs</code>,
+<code>scripts/houserules.sh</code></td>
 </tr>
 <tr>
 <td><code>E-04</code></td>
 <td>P2</td>
-<td>Bundle the <code>doc.css</code> and wireframe CSS as reusable
+<td>Bundle the stylesheets and the plan shell as reusable
 templates.</td>
-<td><span class="st st-todo">TODO</span></td>
+<td><span class="st st-done">DONE</span></td>
 <td><code>E-01</code></td>
-<td><code>references/</code> holds both</td>
+<td><code>references/doc.css</code>, <code>plan.css</code>,
+<code>plan-body.html</code>, <code>plan-template.md</code></td>
 </tr>
 <tr>
 <td><code>E-05</code></td>
 <td>P2</td>
-<td>Encode the house rules as a lint step: no em dashes, no
-<code>!important</code>, no banned vocabulary, no undeclared
-numbers.</td>
-<td><span class="st st-todo">TODO</span></td>
+<td>Encode the house rules as a lint step.</td>
+<td><span class="st st-done">DONE</span></td>
 <td><code>E-01</code></td>
-<td>Script exits non-zero on a planted violation</td>
+<td><code>houserules.sh</code> clean on this repo, and a planted canary
+trips em dash, <code>!important</code>, and banned vocabulary at once.
+Two of its own bugs found and fixed by that control. See 10.2</td>
 </tr>
 <tr>
 <td><code>E-06</code></td>
 <td>P3</td>
 <td>Document the ground-truth-first rule: measure the existing system
 before designing its replacement.</td>
+<td><span class="st st-done">DONE</span></td>
+<td><code>E-01</code></td>
+<td>Stage 0 is the skill&#39;s prime directive, with the three findings it
+produced named as the argument</td>
+</tr>
+<tr>
+<td><code>E-07</code></td>
+<td>P3</td>
+<td>Run <code>/mvp-spinup</code> against a second, unrelated project to
+prove it generalizes.</td>
 <td><span class="st st-todo">TODO</span></td>
 <td><code>E-01</code></td>
-<td>Stage 0 exists in the skill</td>
+<td><code>V-05</code> passes</td>
 </tr>
 </tbody>
 </table>
-<h3 id="101-the-seven-stages-the-skill-encodes">10.1 The seven stages
+<h3 id="102-two-bugs-the-lints-own-positive-control-caught">10.2 Two
+bugs the lint&#39;s own positive control caught</h3>
+<p><code>houserules.sh</code> was wrong twice before it was right, and
+both failures argue for always running a lint against planted violations
+rather than only against a codebase you expect to be clean.</p>
+<ol type="1">
+<li><strong>A flag reached <code>grep</code> through the pattern
+parameter.</strong> The helper took the pattern as <code>$1</code>, so
+calling it as <code>scan -i &#39;&lt;regex&gt;&#39;</code> made <code>-i</code>
+the search string. <code>grep -e &quot;-i&quot;</code> matched
+<code>align-items</code>, <code>margin-inline</code>,
+<code>z-index</code>, <code>tab-id</code>, and
+<code>aria-invalid</code>, producing roughly 80 false positives that
+looked like a catastrophic style failure. Case sensitivity is now fixed
+inside the helper and cannot be passed in.</li>
+<li><strong>A code rule was applied to prose.</strong> The
+<code>!important</code> check flagged four lines of this plan document
+that describe the rule forbidding <code>!important</code>. Documentation
+is not a violation. CSS and JS rules now scan code files only, while the
+em dash rule still scans everything, because prose is exactly where em
+dashes go wrong.</li>
+</ol>
+<p>Both were found by planting a file containing an em dash, an
+<code>!important</code>, and a banned word, and checking that all three
+tripped. Neither would have been found by running the lint on a clean
+repository, which is the failure mode of every check that has only ever
+passed.</p>
+<h3 id="103-the-seven-stages-the-skill-encodes">10.3 The seven stages
 the skill encodes</h3>
 <table>
 <thead>
@@ -1529,7 +1598,8 @@ the offer does not contain.</td>
 <td><code>F-03t</code></td>
 <td>P3</td>
 <td>Only once the numerator is worth showing, wire
-<code>preorder_counts</code> to a live counter.</td>
+<code>preorder_counts</code> to a visible counter. Label it with an
+as-of date unless it genuinely queries on request.</td>
 <td><span class="st st-defer">DEFERRED</span></td>
 <td><code>F-02t</code></td>
 <td>Counter reads a number that helps rather than harms</td>

@@ -266,7 +266,7 @@ site before it touches production.
 | `D-S4` | Wireframe | `design/04-wireframe.html` | <span class="st st-done">DONE</span> | 8 labeled sections `S1` to `S8`, intent and rule annotations, screenshot verified |
 | `D-S5` | Vanilla mockup | `design/05-mockup/` | <span class="st st-done">DONE</span> | Real book prose, no `!important`, screenshot verified at 1440x3400 |
 | `D-S6` | SvelteKit MVP | `app/` | <span class="st st-done">DONE</span> | Builds clean, dev server on `:5180`, both routes HTTP 200 |
-| `D-S7` | `/mvp-spinup` skill | `~/.claude/skills/mvp-spinup/` | <span class="st st-prog">IN PROGRESS</span> | See `WS-E` |
+| `D-S7` | `/mvp-spinup` skill | `~/.claude/skills/mvp-spinup/` | <span class="st st-done">DONE</span> | Skill, slash command, 3 scripts, 4 references. Registered and listed. See `WS-E` |
 
 ### 9.2 Build tasks
 
@@ -280,8 +280,8 @@ site before it touches production.
 | `D-06t` | P1 | Accessible tablist: `aria-selected`, roving tabindex, arrow-key navigation. | <span class="st st-done">DONE</span> | none | `PrecedentFile.svelte` |
 | `D-07t` | P1 | Inert buy button and email field that state what they are. | <span class="st st-done">DONE</span> | none | Toast on buy, validate-and-report on email, nothing persisted |
 | `D-08t` | P1 | Headless screenshot helper encoding the two macOS gotchas. | <span class="st st-done">DONE</span> | none | `scripts/shot.sh`, refuses widths under 500px |
-| `D-09t` | P2 | `scripts/shot-narrow.sh` for sub-500px viewports via iframe. **`shot.sh` references it and it does not exist yet.** | <span class="st st-todo">TODO</span> | none | Script exists, produces a true 390px render |
-| `D-10t` | P2 | Verify at 390px and 768px. | <span class="st st-todo">TODO</span> | `D-09t` | Screenshots at both widths, no horizontal page scroll |
+| `D-09t` | P2 | Narrow-viewport screenshot helper. Shipped as `scripts/shot-narrow.mjs`, driving Playwright rather than the iframe trick: a `file://` harness wrapping an `http://localhost` page is cross-origin, so it cannot read `scrollWidth`, and an overflow check that cannot read the document is not a check. | <span class="st st-done">DONE</span> | none | Sets an exact viewport with no clamp, measures overflow inside the page, and names the widest offending element |
+| `D-10t` | P2 | Verify at 390px and 768px. | <span class="st st-done">DONE</span> | `D-09t` | Both PASS for overflow. Visual review at 390px found a real clipping defect the measurement could not see. See 9.4 |
 | `D-11t` | P2 | Accessibility pass: contrast ratios, focus order, reduced-motion behavior. | <span class="st st-todo">TODO</span> | none | Contrast measured, keyboard walk-through recorded |
 | `D-12t` | P3 | Wire `stats.generated.json` in the demo to prove the derivation end to end. | <span class="st st-todo">TODO</span> | `C-02` | Editing the book changes the demo's numbers |
 
@@ -296,6 +296,25 @@ To see the architectural thesis in one edit: open `app/src/lib/offer.js`, flip
 `shipsPhysicalGoods` to `true`, and watch the shipment clause appear on
 `/policies` and the excluded row change on the homepage, together.
 
+### 9.4 A defect the automated check could not see
+
+Worth recording because it is the general case, not a one-off.
+
+At 390px the overflow measurement returned PASS: `scrollWidth` equalled
+`clientWidth`, no horizontal page scroll. The precedent list was nonetheless
+broken. Each row's date is `white-space: nowrap` and pushed right with
+`margin-left: auto`, so at narrow widths it ran past the row's content box and
+was **clipped** by the container's `overflow: hidden`, which exists only to make
+the rounded corners work. Clipped content does not extend the document, so it
+never trips a `scrollWidth` check. "New York," and "Eastern Mediterranean, c."
+were simply cut in half, and every measurement said the page was fine.
+
+Fixed by giving the date its own line below the title under 700px.
+
+The rule this produces, now written into the skill: **the measurement and the eye
+catch different bugs.** An automated check finds what it was told to look for.
+Run it, then look at the screenshot anyway.
+
 ---
 
 ## 10. `WS-E` `/mvp-spinup` tooling
@@ -307,14 +326,38 @@ same seven-stage treatment without rebuilding the scaffolding.
 
 | ID | Pri | Task | Status | Blocked by | Done when |
 |---|---|---|---|---|---|
-| `E-01` | P2 | Write `~/.claude/skills/mvp-spinup/SKILL.md` with the seven-stage procedure and its trigger conditions. | <span class="st st-prog">IN PROGRESS</span> | none | Skill loads and the stage list matches this document |
-| `E-02` | P2 | Write the slash command wrapper at `~/.claude/commands/mvp-spinup.md`. | <span class="st st-todo">TODO</span> | `E-01` | `/mvp-spinup <project>` invokes the skill |
-| `E-03` | P2 | Bundle `scripts/shot.sh` and `shot-narrow.sh` as skill assets. | <span class="st st-todo">TODO</span> | `D-09t` | Both scripts live under the skill directory |
-| `E-04` | P2 | Bundle the `doc.css` and wireframe CSS as reusable templates. | <span class="st st-todo">TODO</span> | `E-01` | `references/` holds both |
-| `E-05` | P2 | Encode the house rules as a lint step: no em dashes, no `!important`, no banned vocabulary, no undeclared numbers. | <span class="st st-todo">TODO</span> | `E-01` | Script exits non-zero on a planted violation |
-| `E-06` | P3 | Document the ground-truth-first rule: measure the existing system before designing its replacement. | <span class="st st-todo">TODO</span> | `E-01` | Stage 0 exists in the skill |
+| `E-01` | P2 | Write `~/.claude/skills/mvp-spinup/SKILL.md` with the seven-stage procedure and its trigger conditions. | <span class="st st-done">DONE</span> | none | Skill registered and listed. Stage table matches section 9.1 |
+| `E-02` | P2 | Write the slash command wrapper at `~/.claude/commands/mvp-spinup.md`. | <span class="st st-done">DONE</span> | `E-01` | `/mvp-spinup` present with `argument-hint`, defers to the skill rather than restating it |
+| `E-03` | P2 | Bundle the screenshot scripts as skill assets. | <span class="st st-done">DONE</span> | `D-09t` | `scripts/shot.sh`, `scripts/shot-narrow.mjs`, `scripts/houserules.sh` |
+| `E-04` | P2 | Bundle the stylesheets and the plan shell as reusable templates. | <span class="st st-done">DONE</span> | `E-01` | `references/doc.css`, `plan.css`, `plan-body.html`, `plan-template.md` |
+| `E-05` | P2 | Encode the house rules as a lint step. | <span class="st st-done">DONE</span> | `E-01` | `houserules.sh` clean on this repo, and a planted canary trips em dash, `!important`, and banned vocabulary at once. Two of its own bugs found and fixed by that control. See 10.2 |
+| `E-06` | P3 | Document the ground-truth-first rule: measure the existing system before designing its replacement. | <span class="st st-done">DONE</span> | `E-01` | Stage 0 is the skill's prime directive, with the three findings it produced named as the argument |
+| `E-07` | P3 | Run `/mvp-spinup` against a second, unrelated project to prove it generalizes. | <span class="st st-todo">TODO</span> | `E-01` | `V-05` passes |
 
-### 10.1 The seven stages the skill encodes
+### 10.2 Two bugs the lint's own positive control caught
+
+`houserules.sh` was wrong twice before it was right, and both failures argue for
+always running a lint against planted violations rather than only against a
+codebase you expect to be clean.
+
+1. **A flag reached `grep` through the pattern parameter.** The helper took the
+   pattern as `$1`, so calling it as `scan -i '<regex>'` made `-i` the search
+   string. `grep -e "-i"` matched `align-items`, `margin-inline`, `z-index`,
+   `tab-id`, and `aria-invalid`, producing roughly 80 false positives that
+   looked like a catastrophic style failure. Case sensitivity is now fixed
+   inside the helper and cannot be passed in.
+2. **A code rule was applied to prose.** The `!important` check flagged four
+   lines of this plan document that describe the rule forbidding `!important`.
+   Documentation is not a violation. CSS and JS rules now scan code files only,
+   while the em dash rule still scans everything, because prose is exactly where
+   em dashes go wrong.
+
+Both were found by planting a file containing an em dash, an `!important`, and a
+banned word, and checking that all three tripped. Neither would have been found
+by running the lint on a clean repository, which is the failure mode of every
+check that has only ever passed.
+
+### 10.3 The seven stages the skill encodes
 
 | Stage | Input | Output | Why this step is not skippable |
 |---|---|---|---|
@@ -342,7 +385,7 @@ nothing.
 |---|---|---|---|---|---|
 | `F-01t` | P2 | Rewrite all campaign copy against the ratified offer sentence. Existing drafts assume a physical book and lifetime portal access that the offer does not contain. | <span class="st st-block">BLOCKED</span> | `D-01` | No campaign asset promises anything absent from `offer.js` |
 | `F-02t` | P2 | Build audience before scarcity. Current state: waitlist 9, preorders 6 (all test mode). | <span class="st st-block">BLOCKED</span> | `V-04` | Waitlist above a threshold Chris sets |
-| `F-03t` | P3 | Only once the numerator is worth showing, wire `preorder_counts` to a live counter. | <span class="st st-defer">DEFERRED</span> | `F-02t` | Counter reads a number that helps rather than harms |
+| `F-03t` | P3 | Only once the numerator is worth showing, wire `preorder_counts` to a visible counter. Label it with an as-of date unless it genuinely queries on request. | <span class="st st-defer">DEFERRED</span> | `F-02t` | Counter reads a number that helps rather than harms |
 | `F-04t` | P2 | Publish one full precedent as a free public post to demonstrate depth. | <span class="st st-todo">TODO</span> | `D-01` | Post live, links to a working checkout |
 
 ### 11.1 Explicitly not doing

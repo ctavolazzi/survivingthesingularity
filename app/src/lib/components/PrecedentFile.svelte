@@ -227,6 +227,20 @@
 
   @media (max-width: 700px) {
     .rest-list { grid-template-columns: 1fr; }
+
+    /* The date is nowrap and pushed right by margin-left:auto, which at narrow
+       widths runs it under the rounded container's overflow:hidden and clips it
+       instead of overflowing the page. So it never trips a scrollWidth check,
+       it just quietly becomes unreadable. Give it its own line instead. */
+    .rest-list li { flex-wrap: wrap; }
+    .rest-list i {
+      flex-basis: 100%;
+      margin-left: 0;
+      padding-left: 31px;
+      white-space: normal;
+      font-size: 12px;
+      margin-top: 3px;
+    }
   }
   @media (max-width: 460px) {
     .tabs { flex-direction: column; }

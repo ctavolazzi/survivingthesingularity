@@ -1,5 +1,4 @@
 import { json } from '@sveltejs/kit';
-import { createSupabaseServerClient } from '$lib/supabase.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { rateLimit } from '$lib/server/rateLimit.js';
 import { sendWelcomeEmail } from '$lib/server/email.js';
@@ -11,11 +10,39 @@ const MAX_EMAIL_LENGTH = 254; // RFC 5321
 const RATE_LIMIT = 5;
 const RATE_WINDOW_MS = 10 * 60 * 1000;
 
+/** Origin of a Referer URL, or null if it is absent or unparseable. */
+function refererOrigin(referer) {
+  if (!referer) return null;
+  try {
+    return new URL(referer).origin;
+  } catch {
+    return null;
+  }
+}
+
 /** @type {import('./$types').RequestHandler} */
 export async function POST(event) {
   // 1. Origin check - reject cross-site POSTs (cheap CSRF mitigation).
+  //
+  // This now fails CLOSED. The previous condition was
+  // `if (origin && origin !== event.url.origin)`, which skipped the check
+  // entirely whenever the header was absent. Verified live on 2026-07-28: a
+  // POST with a forged Origin was correctly refused with 403, while a POST
+  // with no Origin header at all returned 201. Every non-browser client gets
+  // to simply omit the header and walk through, which is the opposite of what
+  // the check is for.
+  //
+  // Requiring it costs no real signup: browsers attach Origin to every POST,
+  // same-origin included, and the only two callers are same-origin fetches
+  // (NewsletterSignup.svelte, EmailGate.svelte). Referer is accepted as a
+  // fallback for the rare privacy tool that strips one header but not the other.
   const origin = event.request.headers.get('origin');
-  if (origin && origin !== event.url.origin) {
+  const expected = event.url.origin;
+  const sameOrigin = origin
+    ? origin === expected
+    : refererOrigin(event.request.headers.get('referer')) === expected;
+
+  if (!sameOrigin) {
     return json({ error: 'Bad request.' }, { status: 403 });
   }
 
@@ -65,16 +92,24 @@ export async function POST(event) {
   // The NewsletterSignup component still enforces an explicit choice in its
   // own UI by disabling submit until a box is checked.
 
-  // Write with the service-role client, not the request-scoped anon one.
-  // The anon key ships to every browser, so anything this endpoint can do with
-  // it, anyone can do directly against PostgREST - skipping the origin check,
-  // rate limit, honeypot and validation above. Probed 2026-07-28: the anon key
-  // could in fact INSERT into waitlist and preorders. Using the service role
-  // here lets the anon INSERT policy be dropped, which makes this endpoint the
-  // only door into the table.
-  // Falls back to the anon client only when no service key is configured
-  // (local dev without secrets), where there is nothing to protect anyway.
-  const supabase = supabaseAdmin ?? createSupabaseServerClient(event);
+  // Service role only. There is deliberately no anon fallback any more.
+  //
+  // There used to be one (`supabaseAdmin ?? createSupabaseServerClient(event)`)
+  // for local dev without secrets. sql/012 revoked every anon grant on this
+  // table on 2026-07-28, so that path can now only ever return 42501. Keeping
+  // it would turn a missing service key into a confusing "permission denied"
+  // deep in the insert instead of an obvious misconfiguration here, and it was
+  // the last thing in the codebase importing a Supabase client that could be
+  // constructed in a browser.
+  //
+  // This endpoint is now the only door into the table. That is the point:
+  // anything reachable with the publishable key is reachable by anyone,
+  // skipping the origin check, rate limit, honeypot and validation above.
+  if (!supabaseAdmin) {
+    console.error('[waitlist] SUPABASE_SERVICE_KEY is not configured; cannot record signup.');
+    return json({ error: 'Signups are temporarily unavailable.' }, { status: 503 });
+  }
+  const supabase = supabaseAdmin;
 
   let { error } = await supabase
     .from('waitlist')

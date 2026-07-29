@@ -73,9 +73,39 @@ This project is open source. If you want to fork it, remix it, or contribute fix
 
 - **Framework:** SvelteKit v2 + Vite v5
 - **Styling:** Tailwind CSS v3 + scoped component CSS, dark-only theme
-- **Auth/Database:** Supabase (newsletter signup fallback only, gracefully degrades without credentials)
+- **Auth/Database:** Supabase, server-side only through the service role (see "Database access" below)
 - **Fonts:** Inter (UI) + JetBrains Mono (numbers, code)
 - **Deployment:** adapter-auto (Cloudflare Pages target)
+
+### Database access
+
+**This project has no browser-side Supabase client, and it must stay that way.**
+
+Every database read and write goes through [`src/lib/server/supabaseAdmin.js`](src/lib/server/supabaseAdmin.js)
+using the service-role key, called only from `+page.server.js` / `+server.js`
+endpoints. There is no `PUBLIC_SUPABASE_ANON_KEY` anywhere in `src/`, so no
+Supabase credential is a build input and none can reach the bundle.
+
+Do not add one. Specifically, do not create `src/lib/supabaseClient.js`, and do
+not follow the Supabase onboarding snippet that tells you to. That snippet ships
+a publishable key to every visitor.
+
+The reason this is a written rule rather than a preference: it already happened.
+An older deployment shipped a chunk literally named `supabaseClient.<hash>.js`
+containing a working key for a previous Supabase project, and it is still
+publicly fetchable from historical Cloudflare Pages deployment URLs. On
+2026-07-28 an audit found that the publishable key could `INSERT` into
+`waitlist` and `preorders`, which was not a spam problem but a silent
+denial-of-fulfillment: `preorders` is unique on `(email, edition_type)`, so a
+pre-planted row makes a genuine paid order collide, and the collision is read as
+"duplicate customer", which is exactly the flag that suppresses the admin alert.
+`sql/012_lockdown_public_grants.sql` closed the grant. Removing the client
+removes the other half.
+
+Supabase publishable keys are *designed* to be public, so their confidentiality
+is not a security control. The control is that the database grants nothing to
+`anon`. If a future feature genuinely needs public data, add a server endpoint
+for it rather than shipping a key.
 
 ### Design tokens
 
@@ -93,7 +123,10 @@ npm install
 npm run dev -- --open
 ```
 
-Without Supabase credentials in `.env`, newsletter signup falls back to localStorage. Everything else works.
+Without `SUPABASE_SERVICE_KEY` in `.env`, `/api/waitlist` returns 503 and the
+signup form reports that signups are unavailable. Everything else works. There
+is deliberately no anonymous-key fallback: `sql/012` revoked every `anon` grant,
+so such a fallback could only ever fail with `permission denied`.
 
 ### Building
 

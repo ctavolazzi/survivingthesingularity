@@ -68,6 +68,16 @@
         {#if data.email}
           <p class="download-email-note">Also sent to {data.email}. Link valid for 7 days.</p>
         {/if}
+        {#if data.recovered}
+          <!-- Served from our own fulfilment record because Stripe could not
+               confirm the session. The download is genuine; say so plainly
+               rather than implying we just re-checked with Stripe. -->
+          <p class="download-email-note">
+            Confirmed from your order record. We could not reach Stripe just now,
+            so the live receipt is unavailable, but your purchase and this
+            download are valid.
+          </p>
+        {/if}
       {:else}
         <div class="download-pending">
           <p>Your bundle link is being prepared. Check your email in a moment, or <a href="mailto:ctavolazzi@gmail.com">contact us</a> if it doesn't arrive within 10 minutes.</p>
@@ -107,7 +117,23 @@
       </div>
       <h1 class="success-heading">Something went wrong.</h1>
       <p class="success-sub">{data.error ?? 'We could not verify your payment.'}</p>
-      <p class="success-sub">Email <a href="mailto:ctavolazzi@gmail.com" class="contact-link">ctavolazzi@gmail.com</a> with your order details and we will sort it out.</p>
+      {#if data.orderRef}
+        <!-- Give support something searchable. Asking a customer to "describe
+             your order" when we already hold an identifier wastes both sides. -->
+        <p class="success-sub">
+          Your order reference: <code class="order-ref">{data.orderRef}</code>
+        </p>
+        <p class="success-sub">
+          Email
+          <a
+            class="contact-link"
+            href="mailto:ctavolazzi@gmail.com?subject={encodeURIComponent('Preorder download issue ' + data.orderRef)}&body={encodeURIComponent('My order reference is ' + data.orderRef + '.\n\nWhat happened:\n')}"
+          >ctavolazzi@gmail.com</a>
+          and we will send your download by hand.
+        </p>
+      {:else}
+        <p class="success-sub">Email <a href="mailto:ctavolazzi@gmail.com" class="contact-link">ctavolazzi@gmail.com</a> with your order details and we will sort it out.</p>
+      {/if}
       <a href="/early-access" class="back-link">Back to early access</a>
     </div>
 
@@ -295,5 +321,16 @@
   .kit-item-desc { font-size: 0.76rem; color: #64748b; display: block; margin-top: 1px; }
 
   .contact-link { color: #f59e0b; text-decoration: underline; text-underline-offset: 2px; }
+
+  .order-ref {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+    color: #f1f5f9;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
+    padding: 2px 7px;
+    word-break: break-all;
+  }
   .back-link { font-size: 0.9rem; color: #f59e0b; text-decoration: underline; text-underline-offset: 2px; margin-top: 8px; }
 </style>

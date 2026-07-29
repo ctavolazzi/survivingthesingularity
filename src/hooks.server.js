@@ -1,7 +1,8 @@
 /**
  * Server hooks - no auth. The site is read-only and does not maintain
- * user sessions. Supabase remains available via `$lib/supabase.js` for
- * anonymous newsletter inserts only.
+ * user sessions. All database access goes through `$lib/server/supabaseAdmin.js`
+ * using the service role; there is no browser-side Supabase client and no
+ * publishable key in the bundle. See README, "Database access".
  */
 
 export async function handle({ event, resolve }) {

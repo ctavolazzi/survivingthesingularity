@@ -34,9 +34,11 @@ const config = {
 					'https://corticallabs.com'
 				],
 				'media-src': ["'self'"],
+				// No Supabase origin here: every Supabase call happens server-side
+				// in src/lib/server/supabaseAdmin.js, so the browser never opens a
+				// connection to *.supabase.co and must not be permitted to.
 				'connect-src': [
 					"'self'",
-					'https://*.supabase.co', 'wss://*.supabase.co',
 					'https://cloudflareinsights.com'
 				],
 				'frame-src': [

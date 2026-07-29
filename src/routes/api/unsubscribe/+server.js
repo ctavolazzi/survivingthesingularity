@@ -1,11 +1,12 @@
+import { isSameOrigin } from '$lib/server/sameOrigin.js';
 import { json } from '@sveltejs/kit';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { rateLimit } from '$lib/server/rateLimit.js';
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST(event) {
-  const origin = event.request.headers.get('origin');
-  if (origin && origin !== event.url.origin) {
+  // Fails closed; see $lib/server/sameOrigin.js.
+  if (!isSameOrigin(event.request, event.url)) {
     return json({ error: 'Bad request.' }, { status: 403 });
   }
 

@@ -1,3 +1,4 @@
+import { isSameOrigin } from '$lib/server/sameOrigin.js';
 import { json } from '@sveltejs/kit';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { rateLimit } from '$lib/server/rateLimit.js';
@@ -9,9 +10,8 @@ const RATE_WINDOW_MS = 10 * 60 * 1000;
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST(event) {
-  // Origin check: cheap CSRF mitigation.
-  const origin = event.request.headers.get('origin');
-  if (origin && origin !== event.url.origin) {
+  // Origin check: cheap CSRF mitigation. Fails closed; see $lib/server/sameOrigin.js.
+  if (!isSameOrigin(event.request, event.url)) {
     return json({ error: 'Bad request.' }, { status: 403 });
   }
 

@@ -1,3 +1,4 @@
+import { isSameOrigin } from '$lib/server/sameOrigin.js';
 import { json, redirect } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import { dev } from '$app/environment';
@@ -35,8 +36,9 @@ const stripe = isMockKey ? null : new Stripe(SECRET_KEY, { apiVersion: '2024-06-
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST({ request, url, getClientAddress }) {
-  const origin = request.headers.get('origin');
-  if (origin && origin !== url.origin) {
+  // Fails closed; see $lib/server/sameOrigin.js. This one guards the money
+  // path: without it a script could create checkout sessions at will.
+  if (!isSameOrigin(request, url)) {
     return json({ error: 'Bad request.' }, { status: 403 });
   }
 

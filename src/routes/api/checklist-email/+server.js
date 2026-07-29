@@ -1,3 +1,4 @@
+import { isSameOrigin } from '$lib/server/sameOrigin.js';
 import { json } from '@sveltejs/kit';
 import { sendChecklistEmail } from '$lib/server/email.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
@@ -40,9 +41,8 @@ function isValidEmail(str) {
 const VALID_CATS = new Set(['foundation', 'infrastructure', 'autonomy', 'network']);
 
 export async function POST({ request, url, getClientAddress }) {
-  // Origin check - reject cross-site POSTs.
-  const origin = request.headers.get('origin');
-  if (origin && origin !== url.origin) {
+  // Origin check - reject cross-site POSTs. Fails closed; see $lib/server/sameOrigin.js.
+  if (!isSameOrigin(request, url)) {
     return json({ error: 'Bad request.' }, { status: 403 });
   }
 

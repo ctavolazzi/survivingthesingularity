@@ -1,3 +1,4 @@
+import { isSameOrigin } from '$lib/server/sameOrigin.js';
 import { json } from '@sveltejs/kit';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { rateLimit } from '$lib/server/rateLimit.js';
@@ -9,16 +10,6 @@ const MAX_EMAIL_LENGTH = 254; // RFC 5321
 // Per-IP: max 5 signups per 10 minutes.
 const RATE_LIMIT = 5;
 const RATE_WINDOW_MS = 10 * 60 * 1000;
-
-/** Origin of a Referer URL, or null if it is absent or unparseable. */
-function refererOrigin(referer) {
-  if (!referer) return null;
-  try {
-    return new URL(referer).origin;
-  } catch {
-    return null;
-  }
-}
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST(event) {
@@ -36,13 +27,12 @@ export async function POST(event) {
   // same-origin included, and the only two callers are same-origin fetches
   // (NewsletterSignup.svelte, EmailGate.svelte). Referer is accepted as a
   // fallback for the rare privacy tool that strips one header but not the other.
-  const origin = event.request.headers.get('origin');
-  const expected = event.url.origin;
-  const sameOrigin = origin
-    ? origin === expected
-    : refererOrigin(event.request.headers.get('referer')) === expected;
-
-  if (!sameOrigin) {
+  //
+  // The implementation moved to $lib/server/sameOrigin.js on 2026-07-29. It was
+  // fixed here and only here, and the four other routes carrying copies of the
+  // old fail-open version stayed broken for a day because of it. Sharing the
+  // check is what stops the next fix from missing four files again.
+  if (!isSameOrigin(event.request, event.url)) {
     return json({ error: 'Bad request.' }, { status: 403 });
   }
 

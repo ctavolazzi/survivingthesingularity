@@ -853,8 +853,37 @@ def _sb_tables(url: str, key: str) -> list:
     return sorted(set(names))
 
 
+def _sb_exact_count(url: str, key: str, table: str):
+    """The server's own row count, for cross-checking the paginated read.
+
+    Verify rather than assume. A paginated dump that quietly stops short - a
+    dropped page, a mid-run error swallowed somewhere - produces a file that
+    looks exactly like a complete one, and the gap only surfaces during a
+    restore, which is the worst possible moment to discover it. PostgREST will
+    state the count itself, so ask it.
+
+    Returns None if the server does not answer with a range, in which case the
+    dump is recorded as unverified rather than assumed good.
+    """
+    req = urllib.request.Request(f"{url}/rest/v1/{table}?select=*", method="HEAD")
+    req.add_header("apikey", key)
+    req.add_header("Authorization", f"Bearer {key}")
+    req.add_header("Prefer", "count=exact")
+    req.add_header("Range", "0-0")
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            rng = r.headers.get("content-range")
+    except Exception:  # noqa: BLE001
+        return None
+    if not rng or "/" not in rng:
+        return None
+    total = rng.rsplit("/", 1)[1]
+    return int(total) if total.isdigit() else None
+
+
 def _sb_dump_table(url: str, key: str, table: str, dest: Path) -> dict:
     """Page through one table into NDJSON. Returns a manifest entry."""
+    expected = _sb_exact_count(url, key, table)
     rows = 0
     h = hashlib.sha256()
     with dest.open("w", encoding="utf-8") as fh:
@@ -876,8 +905,16 @@ def _sb_dump_table(url: str, key: str, table: str, dest: Path) -> dict:
             if len(batch) < BACKUP_PAGE:
                 break
             offset += BACKUP_PAGE
-    return {"table": table, "rows": rows, "sha256": h.hexdigest(),
-            "file": dest.name, "bytes": dest.stat().st_size}
+    entry = {"table": table, "rows": rows, "sha256": h.hexdigest(),
+             "file": dest.name, "bytes": dest.stat().st_size,
+             "expected": expected}
+    # A short dump is a silent data loss, so it is an error, not a note. The
+    # run fails and the manifest says which table, because a backup that
+    # reports success while missing rows is worse than one that reports
+    # nothing: you stop checking it.
+    if expected is not None and rows != expected:
+        entry["error"] = f"incomplete: wrote {rows} rows, server says {expected}"
+    return entry
 
 
 def _sb_dump_storage(url: str, key: str, bucket: str, out_dir: Path, fetch: bool) -> dict:
@@ -1337,8 +1374,25 @@ def _sb_schema_snapshot(url: str, key: str) -> dict:
 def cmd_backup(args) -> int:
     url, key = _sb_creds()
     stamp = date.today().isoformat()
-    root = Path(args.out).expanduser() if args.out else BACKUP_DEFAULT_DIR
+    root = (Path(args.out).expanduser() if args.out else BACKUP_DEFAULT_DIR).resolve()
+
+    # These files hold customer email addresses and payment references. A
+    # backup that lands inside a git worktree is one `git add -A` away from
+    # being published to a public GitHub repo.
+    if root == ROOT or ROOT in root.parents:
+        sys.exit(f"sts backup: refusing to write customer data inside the "
+                 f"git worktree ({root}). Pass --out somewhere else.")
+
+    # Never overwrite yesterday's good backup with today's broken one, and
+    # never let a second run of the day silently replace the first. An
+    # overwritten backup is an undetectable loss of the history the backup
+    # exists to preserve.
     out_dir = root / stamp
+    if (out_dir / "manifest.json").exists():
+        n = 2
+        while (root / f"{stamp}-{n}" / "manifest.json").exists():
+            n += 1
+        out_dir = root / f"{stamp}-{n}"
     (out_dir / "tables").mkdir(parents=True, exist_ok=True)
 
     tables = _sb_tables(url, key)
@@ -1387,7 +1441,8 @@ def cmd_backup(args) -> int:
         if d.get("error"):
             print(f"  ERROR  {d['table']:<24} {d['error']}")
         else:
-            print(f"  {d['rows']:>6} rows  {d['table']:<24} {d['sha256'][:12]}")
+            mark = "verified" if d.get("expected") is not None else "UNVERIFIED"
+            print(f"  {d['rows']:>6} rows  {d['table']:<24} {d['sha256'][:12]}  {mark}")
     for s in storage:
         if s.get("error"):
             print(f"  ERROR  bucket {s['bucket']}: {s['error']}")

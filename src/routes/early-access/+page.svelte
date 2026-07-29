@@ -4,24 +4,57 @@
 
   let checkoutLoading = false;
   let checkoutError = '';
+  let email = '';
+  // Set when the server refuses a repeat purchase. This is not an error state:
+  // nothing went wrong, the customer already owns the thing they are trying to
+  // buy, and the correct response is to give it back to them rather than to
+  // apologise in red.
+  let ownedMessage = '';
+
+  // Mirrors the server rule in $lib/server/validEmail.js. The server is the one
+  // that counts; this only exists so a typo is caught before a round trip.
+  const EMAIL_RE = /^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$/;
+  $: emailOk = EMAIL_RE.test(email.trim());
+
+  function ownedText(data) {
+    if (data.resent) {
+      return 'You already have this one. We have re-sent your download link to that address, so check your inbox in a minute.';
+    }
+    if (data.reason === 'cooldown') {
+      return 'You already have this one, and we sent your download link to that address very recently. Check your inbox, including spam.';
+    }
+    // no_session or error: we cannot honestly promise an email is on its way.
+    return 'You already have this one. We could not re-send the link automatically, so email info@survivingthesingularity.com and we will sort it out.';
+  }
 
   async function checkout() {
     if (checkoutLoading) return;
-    checkoutLoading = true;
     checkoutError = '';
+    ownedMessage = '';
+
+    if (!emailOk) {
+      checkoutError = 'Enter a valid email address first.';
+      return;
+    }
+
+    checkoutLoading = true;
     try {
       const res = await fetch('/api/stripe-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ edition_type: 'standard' }),
+        body: JSON.stringify({ edition_type: 'standard', email: email.trim() }),
       });
       const data = await res.json().catch(() => ({}));
       if (data.url) {
         window.location.href = data.url;
+        return; // leave the button disabled through the redirect
+      }
+      if (data.already_owned) {
+        ownedMessage = ownedText(data);
       } else {
         checkoutError = data.error ?? 'Could not start checkout. Try again.';
-        checkoutLoading = false;
       }
+      checkoutLoading = false;
     } catch {
       checkoutError = 'Network error. Try again.';
       checkoutLoading = false;
@@ -106,12 +139,39 @@
           </div>
         </div>
 
-        <button class="ea-buy-btn" on:click={checkout} type="button" disabled={checkoutLoading}>
+        <!-- Collected here, not on Stripe's page. Asking first is what lets the
+             server refuse a second copy BEFORE the card is charged instead of
+             deduplicating a payment it has already taken. -->
+        <label class="ea-email-label" for="ea-email">Where should we send it?</label>
+        <input
+          id="ea-email"
+          class="ea-email-input"
+          type="email"
+          name="email"
+          inputmode="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          bind:value={email}
+          on:keydown={(e) => e.key === 'Enter' && checkout()}
+          disabled={checkoutLoading}
+        />
+
+        <button
+          class="ea-buy-btn"
+          class:is-loading={checkoutLoading}
+          on:click={checkout}
+          type="button"
+          disabled={checkoutLoading || !emailOk}
+        >
           {checkoutLoading ? 'Redirecting to checkout...' : 'Preorder Now: $5'}
         </button>
 
         {#if checkoutError}
           <p class="ea-checkout-error">{checkoutError}</p>
+        {/if}
+
+        {#if ownedMessage}
+          <p class="ea-owned-note">{ownedMessage}</p>
         {/if}
 
 
@@ -416,6 +476,34 @@
     position: absolute; left: 0;
     color: var(--amber); font-size: 1rem; line-height: 1.4;
   }
+  .ea-email-label {
+    display: block; font-size: 0.78rem; color: var(--text-3);
+    margin-bottom: 6px; letter-spacing: 0.02em;
+  }
+  .ea-email-input {
+    width: 100%; padding: 13px 14px; margin-bottom: 12px;
+    background: rgba(2,6,23,0.6); color: var(--text-1);
+    border: 1px solid var(--border); border-radius: 10px;
+    font-family: inherit; font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .ea-email-input::placeholder { color: var(--text-3); }
+  .ea-email-input:focus {
+    outline: none; border-color: var(--amber);
+    box-shadow: 0 0 0 3px rgba(245,158,11,0.15);
+  }
+  .ea-email-input:disabled { opacity: 0.6; }
+
+  /* Not an error. The customer already owns this, which is good news badly
+     timed, so it reads as information rather than as a failure. */
+  .ea-owned-note {
+    font-size: 0.82rem; color: #7dd3fc;
+    background: rgba(56,189,248,0.08);
+    border: 1px solid rgba(56,189,248,0.22);
+    border-radius: 8px; padding: 10px 12px;
+    margin: 0 0 12px; line-height: 1.6;
+  }
+
   .ea-buy-btn {
     display: flex; align-items: center; justify-content: center; gap: 10px;
     width: 100%; padding: 15px 20px;
@@ -433,7 +521,11 @@
     box-shadow: 0 8px 32px rgba(245,158,11,0.45);
   }
   .ea-buy-btn:active:not(:disabled) { transform: scale(0.98); }
-  .ea-buy-btn:disabled { opacity: 0.7; cursor: wait; }
+  /* Two different disabled states. `cursor: wait` on the no-email-yet case
+     would tell the customer something is happening when the button is simply
+     waiting on them. */
+  .ea-buy-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; box-shadow: none; }
+  .ea-buy-btn:disabled.is-loading { opacity: 0.7; cursor: wait; }
 
   .ea-checkout-error {
     font-size: 0.82rem; color: #f87171;

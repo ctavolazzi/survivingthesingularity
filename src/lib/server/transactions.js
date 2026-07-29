@@ -40,18 +40,25 @@ function report(op, sessionId, error) {
  * that is precisely why this is written: without it, an abandoned checkout is
  * indistinguishable from a checkout that never happened.
  *
- * No email here on purpose. Stripe collects the address during checkout, so at
- * creation time we genuinely do not know who this is. An abandoned cart is
- * anonymous, which is a fact about the flow rather than a hole in the logging.
+ * The email is optional and was null for every row written before 2026-07-29.
+ * Stripe used to collect the address on its own hosted page, so at creation
+ * time we genuinely did not know who the buyer was and an abandoned cart was
+ * anonymous. `/api/stripe-checkout` now asks for the address first, in order to
+ * refuse a repeat purchase before the charge rather than after it, so the
+ * abandoned-cart rows it writes from here carry a name to follow up with.
  *
- * @param {{ sessionId: string, editionType?: string, amountTotal?: number|null, currency?: string|null }} args
+ * It stays optional rather than required because any other caller, and every
+ * historical row, legitimately has nothing to put there.
+ *
+ * @param {{ sessionId: string, editionType?: string, email?: string|null, amountTotal?: number|null, currency?: string|null }} args
  */
-export async function recordCheckoutInitiated({ sessionId, editionType = 'standard', amountTotal = null, currency = null }) {
+export async function recordCheckoutInitiated({ sessionId, editionType = 'standard', email = null, amountTotal = null, currency = null }) {
   if (!supabaseAdmin || !sessionId) return;
   try {
     const { error } = await supabaseAdmin.from('checkout_transactions').insert({
       session_id: sessionId,
       edition_type: editionType,
+      email,
       amount_total: amountTotal,
       currency,
       status: 'initiated',

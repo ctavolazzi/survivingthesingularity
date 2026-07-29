@@ -5,6 +5,8 @@ import { dev } from '$app/environment';
 import Stripe from 'stripe';
 import { rateLimit } from '$lib/server/rateLimit.js';
 import { recordCheckoutInitiated } from '$lib/server/transactions.js';
+import { normalizeEmail, isValidEmail } from '$lib/server/validEmail.js';
+import { findExistingPreorder, resendPreorderDownload } from '$lib/server/preorderLookup.js';
 
 const PRICE_ID      = env.STRIPE_PRICE_ID;
 const SECRET_KEY    = env.STRIPE_SECRET_KEY;
@@ -57,6 +59,48 @@ export async function POST({ request, url, getClientAddress }) {
   const editionType = body.edition_type === 'authors' ? 'authors' : 'standard';
   const priceId = EDITION_PRICE_IDS[editionType];
 
+  // ── The address, collected here rather than by Stripe ──────────────────────
+  //
+  // This endpoint used to pass `customer_email: undefined` and let Stripe
+  // collect the address on its own hosted page. That made the app blind to who
+  // the buyer was until the webhook fired, which is after the card is charged,
+  // so `unique (email, edition_type)` could only ever deduplicate a customer we
+  // had already taken money from.
+  //
+  // Asking first costs one form field and turns a charge-then-refuse into a
+  // refuse-before-charge.
+  const rawEmail = typeof body.email === 'string' ? body.email : '';
+  const email = normalizeEmail(rawEmail);
+  if (!isValidEmail(email)) {
+    return json({ error: 'Enter a valid email address.' }, { status: 400 });
+  }
+
+  const existing = await findExistingPreorder({ email, rawEmail, editionType });
+
+  // The lookup could not run. Do NOT treat that as "no existing order": a
+  // failed query would then wave through the exact double charge this check
+  // exists to prevent. Refusing costs a customer one retry; guessing costs them
+  // five dollars and us a chargeback.
+  if (!existing.checked) {
+    console.error(`[stripe-checkout] refusing checkout: duplicate check unavailable for ${editionType}.`);
+    return json({ error: 'Checkout is temporarily unavailable. Please try again shortly.' }, { status: 503 });
+  }
+
+  if (existing.found) {
+    // No Stripe session is created on this branch. That is the whole point:
+    // there is nothing to refund because nothing was ever charged.
+    const { resent, reason } = await resendPreorderDownload({
+      email, rawEmail, editionType, preorder: existing.preorder,
+    });
+    console.warn(`[stripe-checkout] repeat purchase refused before charge for ${editionType} (resend: ${reason}).`);
+    return json({
+      already_owned: true,
+      resent,
+      reason,
+      copy_number: existing.preorder?.copy_number ?? null,
+    });
+  }
+
   // MOCK MODE - dev-only. Lets the UI be tested without Stripe credentials.
   // In production, a missing/placeholder key must fail loudly, not fake a
   // successful checkout for a real customer.
@@ -83,7 +127,11 @@ export async function POST({ request, url, getClientAddress }) {
       line_items: [{ price: priceId, quantity: 1 }],
       success_url: `${url.origin}/early-access/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url:  `${url.origin}/early-access`,
-      customer_email: undefined,
+      // Passing this both prefills the field and makes it read-only on Stripe's
+      // page. That is what binds the duplicate check above to the charge: the
+      // address we cleared is the address that gets billed and fulfilled, not
+      // whatever the buyer might have retyped one screen later.
+      customer_email: email,
       metadata: { product: 'early-access-bundle-v1', edition_type: editionType },
       // PREORDER50 is a 50%-off `duration: once` coupon that is emailed to
       // every customer, and it is meant for the FUTURE book launch - not for
@@ -107,6 +155,11 @@ export async function POST({ request, url, getClientAddress }) {
     await recordCheckoutInitiated({
       sessionId: session.id,
       editionType,
+      // Now that the address is collected before the session exists, an
+      // abandoned checkout is no longer anonymous. sql/013 called that a fact
+      // about the flow rather than a gap in the logging, and it was, right up
+      // until this change made the address available at creation time.
+      email,
       amountTotal: session.amount_total ?? null,
       currency: session.currency ?? null,
     });

@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>STS-PLAN-0.0.1: remediation and launch plan</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">
+:root {
+--bg: #0a0a0b;
+--surface: #121214;
+--surface-2: #17171a;
+--surface-3: #1e1e23;
+--border: #26262b;
+--border-2: #34343d;
+--text: #e9e9eb;
+--text-dim: #9d9da5;
+--text-faint:#6e6e77;
+--accent: #f59e0b;
+--accent-dim:rgba(245, 158, 11, 0.12);
+--done: #4ade80;
+--prog: #60a5fa;
+--todo: #a8a8b0;
+--block: #f87171;
+--dec: #f59e0b;
+--defer: #71717a;
+--mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+--sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+--serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+background: var(--bg);
+color: var(--text);
+font: 15.5px/1.65 var(--sans);
+-webkit-text-size-adjust: 100%;
+}
+
+#shell {
+display: grid;
+grid-template-columns: 268px minmax(0, 1fr);
+gap: 0;
+max-width: 1500px;
+margin-inline: auto;
+}
+#sidebar {
+position: sticky;
+top: 0;
+align-self: start;
+height: 100vh;
+overflow-y: auto;
+border-right: 1px solid var(--border);
+padding: 24px 18px 60px;
+background: var(--surface);
+}
+#content {
+min-width: 0;
+padding: 40px 44px 140px;
+}
+
+#filter-wrap { margin-bottom: 20px; }
+#filter {
+width: 100%;
+background: var(--bg);
+border: 1px solid var(--border-2);
+border-radius: 8px;
+padding: 10px 12px;
+color: var(--text);
+font: 400 13.5px/1.3 var(--mono);
+}
+#filter::placeholder { color: var(--text-faint); }
+#filter:focus { border-color: var(--accent); outline: none; }
+#filter-count {
+font: 400 11.5px/1.4 var(--mono);
+color: var(--text-faint);
+margin-top: 7px;
+min-height: 16px;
+}
+
+tr.filtered-out { display: none; }
+
+#TOC { font-size: 13px; }
+#TOC ul { list-style: none; margin: 0; padding: 0; }
+#TOC ul ul { padding-left: 12px; }
+#TOC li { margin: 0; }
+#TOC a {
+display: block;
+color: var(--text-dim);
+text-decoration: none;
+padding: 4px 8px;
+border-radius: 5px;
+border-left: 2px solid transparent;
+line-height: 1.4;
+}
+#TOC a:hover { color: var(--text); background: var(--surface-2); }
+#TOC > ul > li > a {
+color: var(--text);
+font-weight: 600;
+margin-top: 8px;
+}
+#TOC ul ul a { font-size: 12.5px; }
+.side-label {
+font: 600 10.5px/1 var(--mono);
+letter-spacing: 0.14em;
+text-transform: uppercase;
+color: var(--text-faint);
+margin: 0 0 12px;
+padding-left: 8px;
+}
+
+h1 {
+font: 600 clamp(26px, 3.6vw, 38px)/1.15 var(--serif);
+letter-spacing: -0.02em;
+margin: 0 0 32px;
+text-wrap: balance;
+}
+h2 {
+font: 600 clamp(20px, 2.6vw, 27px)/1.2 var(--serif);
+letter-spacing: -0.015em;
+margin: 56px 0 18px;
+padding-top: 24px;
+border-top: 1px solid var(--border);
+scroll-margin-top: 20px;
+}
+h3 {
+font: 600 16.5px/1.3 var(--sans);
+margin: 34px 0 12px;
+color: var(--text);
+scroll-margin-top: 20px;
+}
+h4 {
+font: 600 14px/1.4 var(--sans);
+margin: 24px 0 8px;
+color: var(--text-dim);
+}
+
+p { margin: 0 0 14px; max-width: 90ch; }
+a { color: var(--accent); text-underline-offset: 3px; }
+strong { color: #fff; font-weight: 600; }
+em { color: var(--text-dim); }
+ul, ol { margin: 0 0 16px; padding-left: 22px; max-width: 90ch; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--text-faint); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0; }
+blockquote {
+margin: 20px 0;
+padding: 14px 18px;
+background: var(--accent-dim);
+border-left: 3px solid var(--accent);
+border-radius: 0 6px 6px 0;
+color: var(--text);
+max-width: 90ch;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+code {
+font: 0.875em/1.5 var(--mono);
+background: var(--surface-3);
+border: 1px solid var(--border);
+border-radius: 4px;
+padding: 1.5px 5px;
+color: var(--text);
+white-space: nowrap;
+}
+pre {
+background: var(--surface);
+border: 1px solid var(--border);
+border-radius: 8px;
+padding: 16px 18px;
+overflow-x: auto;
+margin: 18px 0;
+max-width: 100%;
+}
+pre code {
+background: none;
+border: 0;
+padding: 0;
+font-size: 12.5px;
+line-height: 1.62;
+color: var(--text-dim);
+white-space: pre;
+}
+
+.table-scroll {
+overflow-x: auto;
+margin: 18px 0;
+border: 1px solid var(--border);
+border-radius: 8px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+font-size: 13.8px;
+}
+thead th {
+position: sticky;
+top: 0;
+z-index: 2;
+background: var(--surface-3);
+font: 600 11px/1.4 var(--mono);
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: var(--text-dim);
+text-align: left;
+padding: 10px 13px;
+border-bottom: 1px solid var(--border-2);
+white-space: nowrap;
+}
+tbody td {
+padding: 11px 13px;
+border-bottom: 1px solid var(--border);
+vertical-align: top;
+color: var(--text-dim);
+line-height: 1.55;
+}
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover td { background: var(--surface-2); }
+tbody td:first-child { color: var(--text); white-space: nowrap; }
+tbody td code { white-space: nowrap; }
+
+.st {
+display: inline-block;
+font: 600 10.5px/1 var(--mono);
+letter-spacing: 0.07em;
+padding: 4px 7px;
+border-radius: 4px;
+white-space: nowrap;
+border: 1px solid transparent;
+}
+.st-done { color: var(--done); background: rgba(74, 222, 128, 0.11); border-color: rgba(74, 222, 128, 0.28); }
+.st-prog { color: var(--prog); background: rgba(96, 165, 250, 0.11); border-color: rgba(96, 165, 250, 0.28); }
+.st-todo { color: var(--todo); background: rgba(168, 168, 176, 0.10); border-color: rgba(168, 168, 176, 0.24); }
+.st-block { color: var(--block); background: rgba(248, 113, 113, 0.11); border-color: rgba(248, 113, 113, 0.28); }
+.st-dec { color: var(--dec); background: var(--accent-dim); border-color: rgba(245, 158, 11, 0.30); }
+.st-defer { color: var(--defer); background: rgba(113, 113, 122, 0.10); border-color: rgba(113, 113, 122, 0.26); }
+
+@media print {
+#sidebar { display: none; }
+#shell { grid-template-columns: 1fr; }
+body { background: #fff; color: #000; font-size: 10.5pt; }
+#content { padding: 0; }
+h1, h2, h3, strong { color: #000; }
+a { color: #000; }
+pre, blockquote, table, .table-scroll { break-inside: avoid; }
+thead th { position: static; background: #eee; color: #000; }
+tbody td { color: #222; }
+}
+
+@media (max-width: 1000px) {
+#shell { grid-template-columns: 1fr; }
+#sidebar {
+position: static;
+height: auto;
+border-right: 0;
+border-bottom: 1px solid var(--border);
+max-height: 46vh;
+}
+#content { padding: 28px 20px 90px; }
+}
+</style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#surviving-the-singularity-remediation-and-launch-plan" id="toc-surviving-the-singularity-remediation-and-launch-plan">Surviving
+the Singularity: remediation and launch plan</a>
+<ul>
+<li><a href="#1-document-control" id="toc-1-document-control">1.
+Document control</a></li>
+<li><a href="#2-how-to-use-this-document" id="toc-2-how-to-use-this-document">2. How to use this document</a>
+<ul>
+<li><a href="#21-identifier-scheme" id="toc-21-identifier-scheme">2.1
+Identifier scheme</a></li>
+<li><a href="#22-status-legend" id="toc-22-status-legend">2.2 Status
+legend</a></li>
+<li><a href="#23-priority-scheme" id="toc-23-priority-scheme">2.3
+Priority scheme</a></li>
+<li><a href="#24-the-one-rule-this-document-enforces" id="toc-24-the-one-rule-this-document-enforces">2.4 The one rule this
+document enforces</a></li>
+</ul></li>
+<li><a href="#3-executive-summary" id="toc-3-executive-summary">3.
+Executive summary</a>
+<ul>
+<li><a href="#31-situation" id="toc-31-situation">3.1 Situation</a></li>
+<li><a href="#32-critical-path" id="toc-32-critical-path">3.2 Critical
+path</a></li>
+<li><a href="#33-what-is-already-built" id="toc-33-what-is-already-built">3.3 What is already built</a></li>
+</ul></li>
+<li><a href="#4-findings-register" id="toc-4-findings-register">4.
+Findings register</a></li>
+<li><a href="#5-decisions-required" id="toc-5-decisions-required">5.
+Decisions required</a>
+<ul>
+<li><a href="#51-d-01-what-does-five-dollars-actually-buy" id="toc-51-d-01-what-does-five-dollars-actually-buy">5.1
+<code>D-01</code> What does five dollars actually buy?</a></li>
+<li><a href="#52-d-02-what-is-the-bounded-scope-of-forever" id="toc-52-d-02-what-is-the-bounded-scope-of-forever">5.2
+<code>D-02</code> What is the bounded scope of &quot;forever&quot;?</a></li>
+<li><a href="#53-d-03-does-the-physical-book-get-sold-at-all-and-at-what-price" id="toc-53-d-03-does-the-physical-book-get-sold-at-all-and-at-what-price">5.3
+<code>D-03</code> Does the physical book get sold at all, and at what
+price?</a></li>
+<li><a href="#54-d-04-does-the-new-site-replace-the-current-homepage-or-ship-alongside-it" id="toc-54-d-04-does-the-new-site-replace-the-current-homepage-or-ship-alongside-it">5.4
+<code>D-04</code> Does the new site replace the current homepage, or
+ship alongside it?</a></li>
+</ul></li>
+<li><a href="#6-ws-a-offer-reconciliation" id="toc-6-ws-a-offer-reconciliation">6. <code>WS-A</code> Offer
+reconciliation</a></li>
+<li><a href="#7-ws-b-checkout-go-live" id="toc-7-ws-b-checkout-go-live">7. <code>WS-B</code> Checkout
+go-live</a></li>
+<li><a href="#8-ws-c-data-accuracy-and-derivation" id="toc-8-ws-c-data-accuracy-and-derivation">8. <code>WS-C</code> Data
+accuracy and derivation</a></li>
+<li><a href="#9-ws-d-demo-mvp" id="toc-9-ws-d-demo-mvp">9.
+<code>WS-D</code> Demo MVP</a>
+<ul>
+<li><a href="#91-pipeline-stages" id="toc-91-pipeline-stages">9.1
+Pipeline stages</a></li>
+<li><a href="#92-build-tasks" id="toc-92-build-tasks">9.2 Build
+tasks</a></li>
+<li><a href="#93-how-to-run-it" id="toc-93-how-to-run-it">9.3 How to run
+it</a></li>
+</ul></li>
+<li><a href="#10-ws-e-mvp-spinup-tooling" id="toc-10-ws-e-mvp-spinup-tooling">10. <code>WS-E</code>
+<code>/mvp-spinup</code> tooling</a>
+<ul>
+<li><a href="#101-the-seven-stages-the-skill-encodes" id="toc-101-the-seven-stages-the-skill-encodes">10.1 The seven stages
+the skill encodes</a></li>
+</ul></li>
+<li><a href="#11-ws-f-launch-campaign" id="toc-11-ws-f-launch-campaign">11. <code>WS-F</code> Launch
+campaign</a>
+<ul>
+<li><a href="#111-explicitly-not-doing" id="toc-111-explicitly-not-doing">11.1 Explicitly not doing</a></li>
+</ul></li>
+<li><a href="#12-dependency-map" id="toc-12-dependency-map">12.
+Dependency map</a></li>
+<li><a href="#13-verification-gates" id="toc-13-verification-gates">13.
+Verification gates</a>
+<ul>
+<li><a href="#131-v-03-evidence-recorded-2026-07-29" id="toc-131-v-03-evidence-recorded-2026-07-29">13.1 <code>V-03</code>
+evidence, recorded 2026-07-29</a></li>
+</ul></li>
+<li><a href="#14-risk-register" id="toc-14-risk-register">14. Risk
+register</a></li>
+<li><a href="#15-appendices" id="toc-15-appendices">15. Appendices</a>
+<ul>
+<li><a href="#151-file-inventory-this-working-copy" id="toc-151-file-inventory-this-working-copy">15.1 File inventory, this
+working copy</a></li>
+<li><a href="#152-commands-used-to-establish-the-baseline" id="toc-152-commands-used-to-establish-the-baseline">15.2 Commands used
+to establish the baseline</a></li>
+<li><a href="#153-measured-baselines-2026-07-29" id="toc-153-measured-baselines-2026-07-29">15.3 Measured baselines,
+2026-07-29</a></li>
+<li><a href="#154-house-rules-this-plan-is-written-under" id="toc-154-house-rules-this-plan-is-written-under">15.4 House rules
+this plan is written under</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="surviving-the-singularity-remediation-and-launch-plan">Surviving
+the Singularity: remediation and launch plan</h1>
+<h2 id="1-document-control">1. Document control</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Document ID</strong></td>
+<td>STS-PLAN-0.0.1</td>
+</tr>
+<tr>
+<td><strong>Version</strong></td>
+<td>0.0.1</td>
+</tr>
+<tr>
+<td><strong>Created</strong></td>
+<td>2026-07-29</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Active</td>
+</tr>
+<tr>
+<td><strong>Owner</strong></td>
+<td>Chris Tavolazzi</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Live site remediation, offer architecture, demo MVP, launch
+sequencing</td>
+</tr>
+<tr>
+<td><strong>Supersedes</strong></td>
+<td>Nothing. First revision.</td>
+</tr>
+<tr>
+<td><strong>Companion docs</strong></td>
+<td><code>design/01-design-doc.txt</code>,
+<code>design/02-design-doc.md</code>,
+<code>design/03-design-doc.html</code></td>
+</tr>
+<tr>
+<td><strong>Working copy</strong></td>
+<td><code>~/Code/active/sts-mvp</code></td>
+</tr>
+<tr>
+<td><strong>Live source</strong></td>
+<td><code>~/Code/active/sts-v0.7.3</code> (git worktree, branch
+<code>v0.7.3</code>)</td>
+</tr>
+<tr>
+<td><strong>Production pin</strong></td>
+<td>deployment <code>af13a3c9</code>, source <code>332fdfd</code>,
+branch <code>main</code></td>
+</tr>
+<tr>
+<td><strong>Evidence ledger</strong></td>
+<td><code>~/Code/active/STS-VERIFICATION-LEDGER.md</code>
+(append-only)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-how-to-use-this-document">2. How to use this document</h2>
+<h3 id="21-identifier-scheme">2.1 Identifier scheme</h3>
+<p>Every item has a stable, greppable ID. IDs are never reused or
+renumbered.</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Meaning</th>
+<th>Example</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>F-nn</code></td>
+<td>Finding. A defect measured on the live site or in the source.</td>
+<td><code>F-03</code></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><code>D-nn</code></td>
+<td>Decision required. Blocks work until answered by a human.</td>
+<td><code>D-01</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>WS-x</code></td>
+<td>Workstream. A grouping of tasks with a shared goal.</td>
+<td><code>WS-B</code></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><code>x-nn</code></td>
+<td>Task, prefixed by its workstream letter.</td>
+<td><code>B-04</code></td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr>
+<td><code>R-nn</code></td>
+<td>Risk.</td>
+<td><code>R-02</code></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><code>V-nn</code></td>
+<td>Verification gate. Definition of done for a workstream.</td>
+<td><code>V-01</code></td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+<p>To find everything about one item:
+<code>grep -rn &quot;B-04&quot; PLAN.md</code>.</p>
+<h3 id="22-status-legend">2.2 Status legend</h3>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="st st-done">DONE</span></td>
+<td>Complete and verified. Evidence recorded in the task row.</td>
+</tr>
+<tr>
+<td><span class="st st-prog">IN PROGRESS</span></td>
+<td>Started, not finished.</td>
+</tr>
+<tr>
+<td><span class="st st-todo">TODO</span></td>
+<td>Ready to start. Nothing blocks it.</td>
+</tr>
+<tr>
+<td><span class="st st-block">BLOCKED</span></td>
+<td>Cannot start. The blocker is named in the row.</td>
+</tr>
+<tr>
+<td><span class="st st-dec">DECISION</span></td>
+<td>Waiting on a <code>D-nn</code> answer from Chris.</td>
+</tr>
+<tr>
+<td><span class="st st-defer">DEFERRED</span></td>
+<td>Deliberately not now. The gate that releases it is named.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-priority-scheme">2.3 Priority scheme</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>P0</code></td>
+<td>Blocks taking money. Nothing downstream matters until these
+close.</td>
+</tr>
+<tr>
+<td><code>P1</code></td>
+<td>Blocks launching honestly. Ship before any promotion.</td>
+</tr>
+<tr>
+<td><code>P2</code></td>
+<td>Should ship with launch, not fatal if it slips a week.</td>
+</tr>
+<tr>
+<td><code>P3</code></td>
+<td>Post-launch.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-the-one-rule-this-document-enforces">2.4 The one rule this
+document enforces</h3>
+<blockquote>
+<p>Any task that changes what the customer is promised must change
+<code>app/src/lib/offer.js</code> (demo) or its production equivalent,
+and never a component&#39;s inline prose. Offer language typed directly into
+a page is the defect class that produced <code>F-01</code>.</p>
+</blockquote>
+<hr />
+<h2 id="3-executive-summary">3. Executive summary</h2>
+<h3 id="31-situation">3.1 Situation</h3>
+<p>The live site converts, and the underlying book is in good shape: 23
+of 23 precedents indexed, zero dangling cross references, 90,623 words,
+security headers all live, database locked down. That work is real and
+none of this plan disturbs it.</p>
+<p>Three things are nonetheless true and blocking:</p>
+<ol type="1">
+<li>The site describes the same $5 purchase three different ways, and
+the legal layer describes a different transaction than the sales layer
+(<code>F-01</code>).</li>
+<li>The store has never accepted a real dollar, and there is no
+live-mode webhook endpoint, so switching keys today would take payments
+and record none of them (<code>F-04</code>, <code>F-05</code>).</li>
+<li>The homepage claims 29 documented cases where the project&#39;s own
+harness counts 23 (<code>F-02</code>).</li>
+</ol>
+<h3 id="32-critical-path">3.2 Critical path</h3>
+<pre><code>D-01 (ratify the offer sentence)
+  |
+  +--&gt; A-01..A-06  reconcile sales copy and /policies      P0
+  |
+  +--&gt; C-01..C-04  fix and derive the counts               P1
+  |
+  v
+B-01..B-07  checkout: fix the button, create the live
+            webhook, flip keys, take one real dollar       P0
+  |
+  v
+V-04  one real transaction verified end to end
+  |
+  v
+WS-F  launch campaign (already designed, gated on V-04)</code></pre>
+<h3 id="33-what-is-already-built">3.3 What is already built</h3>
+<p>The demo MVP exists, builds clean, and runs. See <code>WS-D</code>.
+It is the argument for the offer architecture rendered as a working
+site, including a <code>/policies</code> page that derives its refund
+clause from the same object the hero reads.</p>
+<hr />
+<h2 id="4-findings-register">4. Findings register</h2>
+<p>Measured 2026-07-29 against production <code>af13a3c9</code> / source
+<code>332fdfd</code>. Each row names the method, so each is
+re-runnable.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Severity</th>
+<th>Finding</th>
+<th>Method</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>F-01</code></td>
+<td><strong>P0</strong></td>
+<td>The $5 offer is described three ways. Homepage and
+<code>/early-access</code> sell digital access plus a 50% launch coupon.
+<code>/policies</code> sells merchandise, offering refunds &quot;prior to
+shipment&quot; and citing the FTC Mail, Internet, or Telephone Order
+Merchandise Rule. <code>/terms</code> says the site is &quot;informational
+only&quot; and never mentions a sale.</td>
+<td>Read all four rendered surfaces plus source</td>
+<td><span class="st st-dec">DECISION</span> <code>D-01</code></td>
+</tr>
+<tr>
+<td><code>F-02</code></td>
+<td><strong>P1</strong></td>
+<td>Homepage claims &quot;The Precedent File: 29 documented cases&quot;. The book
+contains 23, <code>P-01</code> through <code>P-23</code>. Likely origin:
+the site has 29 pages.</td>
+<td><code>python3 scripts/sts.py verify</code> reports &quot;all 23 present
+in the book and indexed in Appendix D&quot;</td>
+<td><span class="st st-todo">TODO</span> <code>C-01</code></td>
+</tr>
+<tr>
+<td><code>F-03</code></td>
+<td><strong>P0</strong></td>
+<td>Bottom buy button on <code>/early-access</code> binds
+<code>disabled</code> to <code>checkoutLoading</code> only, unlike the
+top button which also requires a valid email. Button looks clickable,
+does nothing, and renders its error message 4052px away in a 720px
+viewport.</td>
+<td>Playwright, production, measured</td>
+<td><span class="st st-todo">TODO</span> <code>B-01</code></td>
+</tr>
+<tr>
+<td><code>F-04</code></td>
+<td><strong>P0</strong></td>
+<td>Store has never taken real money. 92 Stripe sessions with
+<code>livemode=true</code> count 0. 24 charges with 0 livemode paid
+charges.</td>
+<td>Stripe API as authoritative ledger</td>
+<td><span class="st st-todo">TODO</span> <code>B-04</code></td>
+</tr>
+<tr>
+<td><code>F-05</code></td>
+<td><strong>P0</strong></td>
+<td>No live-mode webhook endpoint exists. <code>webhook_endpoints</code>
+count 1, <code>livemode=false</code>. Flipping to live keys without
+creating one loses every order silently.</td>
+<td>Stripe API</td>
+<td><span class="st st-todo">TODO</span> <code>B-03</code></td>
+</tr>
+<tr>
+<td><code>F-06</code></td>
+<td>P2</td>
+<td>10 paid test sessions have no corresponding app row (23
+complete/paid sessions vs 13 <code>fulfilled_sessions</code>). All test
+mode, no money lost, but the reconciliation gap is real.</td>
+<td>Stripe to Supabase reconciliation</td>
+<td><span class="st st-todo">TODO</span> <code>B-06</code></td>
+</tr>
+<tr>
+<td><code>F-07</code></td>
+<td>P2</td>
+<td><code>preorder_counts</code> table exists in the schema and is
+referenced nowhere in <code>src/</code>. Plumbing without wiring.</td>
+<td><code>rg preorder_counts src/</code> returns nothing</td>
+<td><span class="st st-defer">DEFERRED</span> <code>F-03</code>
+gate</td>
+</tr>
+<tr>
+<td><code>F-08</code></td>
+<td>P2</td>
+<td><code>/policies</code> says &quot;As of May 2026, no firm shipping date
+has been set&quot; while <code>V0.7.3-SCOPE.md</code> says the book ships
+September 2026 with the preorder campaign in August. Stale by two
+months.</td>
+<td>Source comparison</td>
+<td><span class="st st-todo">TODO</span> <code>A-05</code></td>
+</tr>
+<tr>
+<td><code>F-09</code></td>
+<td>P3</td>
+<td>Local <code>RESEND_API_KEY</code> is dead, so email reconciliation
+against the Resend API is impossible from this machine. Production has
+its own key and <code>fulfilled_sessions</code> shows 13 rows all
+<code>status: delivered</code>, so prod delivery probably works, but
+&quot;probably&quot; is not adequate under a promise phrased &quot;I will ensure&quot;.</td>
+<td>Bogus-key and real-key controls both return identical 400</td>
+<td><span class="st st-block">BLOCKED</span> needs a valid key</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-decisions-required">5. Decisions required</h2>
+<p>These block work. Each has a recommended default and the cost of each
+alternative. Nothing in <code>WS-A</code> can start until
+<code>D-01</code> is answered.</p>
+<h3 id="51-d-01-what-does-five-dollars-actually-buy">5.1
+<code>D-01</code> What does five dollars actually buy?</h3>
+<p><strong>Blocks:</strong> <code>A-01</code> through <code>A-06</code>,
+<code>V-01</code>. Transitively blocks <code>WS-F</code>.</p>
+<p><strong>Recommended default:</strong></p>
+<blockquote>
+<p>Five dollars, once. You get the book as it is being written, The
+Precedent File, and every update forever. When the finished book ships,
+the digital edition is yours at no additional cost.</p>
+</blockquote>
+<p><strong>Why:</strong> it matches what is actually delivered today, it
+replaces the 50% coupon (the weakest thing to be holding a month before
+launch) with the hook Chris identified himself, and it says nothing
+about a physical copy, which keeps the FTC Merchandise Rule out of scope
+and keeps print and postage out of a five dollar price.</p>
+<p><strong>Alternatives:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Upside</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. Keep the 50% coupon</td>
+<td>Lowest change cost</td>
+<td>Keeps the weak promise. Leaves <code>/policies</code> shipment
+language wrong.</td>
+</tr>
+<tr>
+<td>B. Include a physical copy</td>
+<td>Strongest emotional offer</td>
+<td>Needs a real price ($29 to $39), a fulfilment path, and full
+Merchandise Rule compliance. Not a five dollar product.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-d-02-what-is-the-bounded-scope-of-forever">5.2
+<code>D-02</code> What is the bounded scope of &quot;forever&quot;?</h3>
+<p><strong>Blocks:</strong> <code>A-03</code>.</p>
+<p>&quot;Every update forever&quot; is an unbounded obligation being sold to
+strangers by a person on a health-constrained runway. It needs one
+written paragraph: what counts as an update, in what form it arrives,
+and what happens if the project stops.</p>
+<p><strong>Recommended default:</strong> the <code>foreverScope</code>
+string already written into <code>app/src/lib/offer.js</code>, which
+promises revisions and corrections by email and on the site for as long
+as the book is maintained, and guarantees that if the project stops,
+everything already delivered stays yours and readable.</p>
+<h3 id="53-d-03-does-the-physical-book-get-sold-at-all-and-at-what-price">5.3
+<code>D-03</code> Does the physical book get sold at all, and at what
+price?</h3>
+<p><strong>Blocks:</strong> <code>A-06</code>, and any promotion that
+mentions print.</p>
+<p><strong>Recommended default:</strong> yes, later, as a separate
+product at $29 to $39, listed as &quot;not ready&quot; until it is. Not bundled
+into the $5.</p>
+<h3 id="54-d-04-does-the-new-site-replace-the-current-homepage-or-ship-alongside-it">5.4
+<code>D-04</code> Does the new site replace the current homepage, or
+ship alongside it?</h3>
+<p><strong>Blocks:</strong> <code>D-05</code> sequencing of
+<code>WS-D</code> into production.</p>
+<p><strong>Recommended default:</strong> port the offer architecture
+(<code>offer.js</code>, derived stats, the reconciled
+<code>/policies</code>) into the existing site first, as that is where
+the P0 findings live. Treat the new homepage layout as a second,
+separable change. Do not couple a legal fix to a redesign.</p>
+<hr />
+<h2 id="6-ws-a-offer-reconciliation">6. <code>WS-A</code> Offer
+reconciliation</h2>
+<p><strong>Goal:</strong> one offer, stated identically on every surface
+including the legal pages, traceable to a single source of truth.</p>
+<p><strong>Verification gate:</strong> <code>V-01</code>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pri</th>
+<th>Task</th>
+<th>Status</th>
+<th>Blocked by</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A-01</code></td>
+<td>P0</td>
+<td>Create the production offer module at <code>src/lib/offer.js</code>
+in the live repo, ported from <code>app/src/lib/offer.js</code>.</td>
+<td><span class="st st-dec">DECISION</span></td>
+<td><code>D-01</code></td>
+<td>File exists, exports a frozen object, <code>npm run build</code>
+passes.</td>
+</tr>
+<tr>
+<td><code>A-02</code></td>
+<td>P0</td>
+<td>Rewrite the <code>/early-access</code> hero and bottom copy to
+render from <code>offer.sentence</code>. Delete the inline prose.</td>
+<td><span class="st st-dec">DECISION</span></td>
+<td><code>A-01</code></td>
+<td><code>rg &#39;50% off&#39; src/routes/early-access/</code> returns nothing,
+or returns only offer-object-derived output.</td>
+</tr>
+<tr>
+<td><code>A-03</code></td>
+<td>P0</td>
+<td>Add the bounded &quot;forever&quot; scope paragraph to the offer section,
+rendered on the page rather than buried in terms.</td>
+<td><span class="st st-dec">DECISION</span></td>
+<td><code>D-02</code></td>
+<td>Paragraph visible on <code>/early-access</code> and
+<code>/policies</code>.</td>
+</tr>
+<tr>
+<td><code>A-04</code></td>
+<td>P0</td>
+<td>Rewrite <code>/policies</code> refund language to derive from
+<code>refundClause()</code>. Remove the shipment clause while
+<code>shipsPhysicalGoods</code> is false.</td>
+<td><span class="st st-dec">DECISION</span></td>
+<td><code>A-01</code></td>
+<td><code>/policies</code> contains no &quot;prior to shipment&quot; string and no
+FTC Merchandise Rule citation while the offer ships nothing.</td>
+</tr>
+<tr>
+<td><code>A-05</code></td>
+<td>P1</td>
+<td>Fix the stale &quot;As of May 2026, no firm shipping date&quot; line. Replace
+with a derived date or remove it.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td><code>F-08</code> closed. Rendered page agrees with
+<code>V0.7.3-SCOPE.md</code>.</td>
+</tr>
+<tr>
+<td><code>A-06</code></td>
+<td>P1</td>
+<td>Add the explicit &quot;not included: a printed copy&quot; row to the offer
+table on the live site.</td>
+<td><span class="st st-dec">DECISION</span></td>
+<td><code>D-03</code></td>
+<td>Excluded row renders at the same size and weight as the included
+rows.</td>
+</tr>
+<tr>
+<td><code>A-07</code></td>
+<td>P1</td>
+<td>Update <code>/terms</code> so it acknowledges that a sale occurs on
+this site.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>A-01</code></td>
+<td><code>/terms</code> references the purchase and links to
+<code>/policies</code>.</td>
+</tr>
+<tr>
+<td><code>A-08</code></td>
+<td>P2</td>
+<td>Add a build-time assertion that fails the build if offer language
+appears outside the offer module.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>A-01</code></td>
+<td>A test that greps components for
+<code>$5</code>/<code>50% off</code> and fails.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-ws-b-checkout-go-live">7. <code>WS-B</code> Checkout
+go-live</h2>
+<p><strong>Goal:</strong> one real dollar moves from a real card and
+every downstream effect fires. This is the only workstream that unblocks
+promotion.</p>
+<p><strong>Verification gate:</strong> <code>V-04</code>. <strong>Order
+matters. Do not reorder <code>B-03</code> and
+<code>B-04</code>.</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pri</th>
+<th>Task</th>
+<th>Status</th>
+<th>Blocked by</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B-01</code></td>
+<td>P0</td>
+<td>Fix the bottom buy button binding on <code>/early-access</code> line
+351 so <code>disabled</code> also requires <code>emailOk</code>,
+matching line 162.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td>Playwright asserts bottom button <code>disabled=true</code> before a
+valid email and <code>false</code> after. <code>F-03</code> closed.</td>
+</tr>
+<tr>
+<td><code>B-02</code></td>
+<td>P0</td>
+<td>Move the checkout error message so it renders adjacent to the button
+that produced it, not 4052px away.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>B-01</code></td>
+<td>Measured distance from button to error under 400px at a 720px
+viewport.</td>
+</tr>
+<tr>
+<td><code>B-03</code></td>
+<td>P0</td>
+<td><strong>Create the live-mode Stripe webhook endpoint</strong>
+pointing at <code>/api/webhooks/stripe</code>.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td>Stripe API shows <code>webhook_endpoints</code> with a
+<code>livemode=true</code> row. <code>F-05</code> closed.</td>
+</tr>
+<tr>
+<td><code>B-04</code></td>
+<td>P0</td>
+<td>Set the live-mode signing secret and switch
+<code>STRIPE_SECRET_KEY</code> to the live key in Cloudflare Pages
+secrets.</td>
+<td><span class="st st-block">BLOCKED</span></td>
+<td><code>B-03</code></td>
+<td><code>wrangler pages secret list</code> shows the live key. Checkout
+probe reports <code>mode live</code>.</td>
+</tr>
+<tr>
+<td><code>B-05</code></td>
+<td>P0</td>
+<td>Add the missing <code>STRIPE_PRICE_ID_AUTHORS</code> secret. Code
+reads it, the secret inventory does not contain it.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td><code>wrangler pages secret list</code> includes it.</td>
+</tr>
+<tr>
+<td><code>B-06</code></td>
+<td>P1</td>
+<td>Close the reconciliation gap behind <code>F-06</code>: 10 paid
+sessions with no app row. Add an alert when a paid session has no
+<code>fulfilled_sessions</code> row within N minutes.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td>A deliberately dropped webhook produces an admin alert.</td>
+</tr>
+<tr>
+<td><code>B-07</code></td>
+<td>P0</td>
+<td><strong>Take one real dollar from one real card.</strong> Confirm
+charge, <code>fulfilled_sessions</code> row, transactional email, and
+working download link.</td>
+<td><span class="st st-block">BLOCKED</span></td>
+<td><code>B-04</code></td>
+<td>All four effects observed and recorded in the verification ledger.
+<code>V-04</code> passes.</td>
+</tr>
+<tr>
+<td><code>B-08</code></td>
+<td>P1</td>
+<td>Add webhook event-id idempotency so identical signed bytes replayed
+twice are recorded once.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td>Replay of identical signed payload produces one row, not two.</td>
+</tr>
+<tr>
+<td><code>B-09</code></td>
+<td>P2</td>
+<td>Reject future-dated webhook timestamps. Stripe&#39;s
+<code>constructEvent</code> enforces tolerance on the past side only;
+<code>t+600s</code> currently returns 200.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td><code>t+600s</code> returns 400.</td>
+</tr>
+<tr>
+<td><code>B-10</code></td>
+<td>P2</td>
+<td>Shorten the 7 day signed download URL TTL, or accept it explicitly
+in writing.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>D-01</code></td>
+<td>TTL decision recorded in <code>/policies</code>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-ws-c-data-accuracy-and-derivation">8. <code>WS-C</code> Data
+accuracy and derivation</h2>
+<p><strong>Goal:</strong> no number on a sales page that a reader can
+disprove.</p>
+<p><strong>Verification gate:</strong> <code>V-02</code>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pri</th>
+<th>Task</th>
+<th>Status</th>
+<th>Blocked by</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C-01</code></td>
+<td>P1</td>
+<td>Fix the &quot;29 documented cases&quot; claim to 23. Immediate one-word
+fix.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td><code>rg &#39;29 documented&#39; src/</code> returns nothing.
+<code>F-02</code> closed.</td>
+</tr>
+<tr>
+<td><code>C-02</code></td>
+<td>P1</td>
+<td>Add a prebuild step that emits
+<code>src/lib/stats.generated.json</code> from
+<code>scripts/sts.py</code>: precedent count, word count, source count,
+section count.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>C-01</code></td>
+<td>Adding a 24th precedent to the book makes the site say 24 with no
+site edit.</td>
+</tr>
+<tr>
+<td><code>C-03</code></td>
+<td>P1</td>
+<td>Port the provenance pattern: every rendered stat carries the
+artifact it came from, rendered on the page in mono.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>C-02</code></td>
+<td>Each stat displays a source string.</td>
+</tr>
+<tr>
+<td><code>C-04</code></td>
+<td>P2</td>
+<td>Add a build assertion that fails if any four-or-fewer-digit integer
+appears in sales copy without coming from the stats module.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>C-02</code></td>
+<td>Test exists and fails on a planted hardcoded number.</td>
+</tr>
+<tr>
+<td><code>C-05</code></td>
+<td>P2</td>
+<td>Resolve the 1 dead link of 186 in Works Cited.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td><code>sts.py verify --links</code> reports 0 dead.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-ws-d-demo-mvp">9. <code>WS-D</code> Demo MVP</h2>
+<p><strong>Goal:</strong> make the offer architecture arguable by
+rendering it as a working site before it touches production.</p>
+<p><strong>Verification gate:</strong> <code>V-03</code>.
+<strong>Location:</strong> <code>~/Code/active/sts-mvp</code>.</p>
+<h3 id="91-pipeline-stages">9.1 Pipeline stages</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Stage</th>
+<th>Artifact</th>
+<th>Status</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>D-S1</code></td>
+<td>Plain text design doc</td>
+<td><code>design/01-design-doc.txt</code></td>
+<td><span class="st st-done">DONE</span></td>
+<td>8 sections, every number measured or marked unverified</td>
+</tr>
+<tr>
+<td><code>D-S2</code></td>
+<td>Markdown conversion</td>
+<td><code>design/02-design-doc.md</code></td>
+<td><span class="st st-done">DONE</span></td>
+<td>Tables, anchors, fences, cross-links</td>
+</tr>
+<tr>
+<td><code>D-S3</code></td>
+<td>HTML conversion</td>
+<td><code>design/03-design-doc.html</code></td>
+<td><span class="st st-done">DONE</span></td>
+<td>pandoc 3.6.4, <code>--standalone --embed-resources</code>, CSS fully
+inlined, verified no external <code>href</code></td>
+</tr>
+<tr>
+<td><code>D-S4</code></td>
+<td>Wireframe</td>
+<td><code>design/04-wireframe.html</code></td>
+<td><span class="st st-done">DONE</span></td>
+<td>8 labeled sections <code>S1</code> to <code>S8</code>, intent and
+rule annotations, screenshot verified</td>
+</tr>
+<tr>
+<td><code>D-S5</code></td>
+<td>Vanilla mockup</td>
+<td><code>design/05-mockup/</code></td>
+<td><span class="st st-done">DONE</span></td>
+<td>Real book prose, no <code>!important</code>, screenshot verified at
+1440x3400</td>
+</tr>
+<tr>
+<td><code>D-S6</code></td>
+<td>SvelteKit MVP</td>
+<td><code>app/</code></td>
+<td><span class="st st-done">DONE</span></td>
+<td>Builds clean, dev server on <code>:5180</code>, both routes HTTP
+200</td>
+</tr>
+<tr>
+<td><code>D-S7</code></td>
+<td><code>/mvp-spinup</code> skill</td>
+<td><code>~/.claude/skills/mvp-spinup/</code></td>
+<td><span class="st st-prog">IN PROGRESS</span></td>
+<td>See <code>WS-E</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="92-build-tasks">9.2 Build tasks</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pri</th>
+<th>Task</th>
+<th>Status</th>
+<th>Blocked by</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>D-01t</code></td>
+<td>P1</td>
+<td>Offer module with frozen object and <code>refundClause()</code>
+derivation.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td><code>app/src/lib/offer.js</code>, 4 included, 1 excluded,
+<code>shipsPhysicalGoods</code> flag</td>
+</tr>
+<tr>
+<td><code>D-02t</code></td>
+<td>P1</td>
+<td>Stats module with provenance per number.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td><code>app/src/lib/stats.js</code>, 4 stats each carrying
+<code>source</code> and <code>measuredOn</code></td>
+</tr>
+<tr>
+<td><code>D-03t</code></td>
+<td>P1</td>
+<td>Precedent data: 3 open cases from real book prose, 20 listed, total
+derived.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td><code>app/src/lib/precedents.js</code>,
+<code>total = open.length + rest.length</code></td>
+</tr>
+<tr>
+<td><code>D-04t</code></td>
+<td>P1</td>
+<td>Eight sections as Svelte 5 components with scoped styles.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td>Header, Hero, PrecedentFile, OfferTable, UpdateEngine, BookParts,
+Close, SiteFooter</td>
+</tr>
+<tr>
+<td><code>D-05t</code></td>
+<td>P1</td>
+<td><code>/policies</code> route deriving every clause from the offer
+object.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td>Renders &quot;Nothing is shipped, so no shipment date applies.&quot; with zero
+hand-written refund prose</td>
+</tr>
+<tr>
+<td><code>D-06t</code></td>
+<td>P1</td>
+<td>Accessible tablist: <code>aria-selected</code>, roving tabindex,
+arrow-key navigation.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td><code>PrecedentFile.svelte</code></td>
+</tr>
+<tr>
+<td><code>D-07t</code></td>
+<td>P1</td>
+<td>Inert buy button and email field that state what they are.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td>Toast on buy, validate-and-report on email, nothing persisted</td>
+</tr>
+<tr>
+<td><code>D-08t</code></td>
+<td>P1</td>
+<td>Headless screenshot helper encoding the two macOS gotchas.</td>
+<td><span class="st st-done">DONE</span></td>
+<td>none</td>
+<td><code>scripts/shot.sh</code>, refuses widths under 500px</td>
+</tr>
+<tr>
+<td><code>D-09t</code></td>
+<td>P2</td>
+<td><code>scripts/shot-narrow.sh</code> for sub-500px viewports via
+iframe. <strong><code>shot.sh</code> references it and it does not exist
+yet.</strong></td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td>Script exists, produces a true 390px render</td>
+</tr>
+<tr>
+<td><code>D-10t</code></td>
+<td>P2</td>
+<td>Verify at 390px and 768px.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>D-09t</code></td>
+<td>Screenshots at both widths, no horizontal page scroll</td>
+</tr>
+<tr>
+<td><code>D-11t</code></td>
+<td>P2</td>
+<td>Accessibility pass: contrast ratios, focus order, reduced-motion
+behavior.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td>none</td>
+<td>Contrast measured, keyboard walk-through recorded</td>
+</tr>
+<tr>
+<td><code>D-12t</code></td>
+<td>P3</td>
+<td>Wire <code>stats.generated.json</code> in the demo to prove the
+derivation end to end.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>C-02</code></td>
+<td>Editing the book changes the demo&#39;s numbers</td>
+</tr>
+</tbody>
+</table>
+<h3 id="93-how-to-run-it">9.3 How to run it</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/Code/active/sts-mvp/app</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> run dev          <span class="co"># http://localhost:5180</span></span></code></pre></div>
+<p>To see the architectural thesis in one edit: open
+<code>app/src/lib/offer.js</code>, flip <code>shipsPhysicalGoods</code>
+to <code>true</code>, and watch the shipment clause appear on
+<code>/policies</code> and the excluded row change on the homepage,
+together.</p>
+<hr />
+<h2 id="10-ws-e-mvp-spinup-tooling">10. <code>WS-E</code>
+<code>/mvp-spinup</code> tooling</h2>
+<p><strong>Goal:</strong> turn this pipeline into a repeatable skill so
+the next project gets the same seven-stage treatment without rebuilding
+the scaffolding.</p>
+<p><strong>Verification gate:</strong> <code>V-05</code>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pri</th>
+<th>Task</th>
+<th>Status</th>
+<th>Blocked by</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>E-01</code></td>
+<td>P2</td>
+<td>Write <code>~/.claude/skills/mvp-spinup/SKILL.md</code> with the
+seven-stage procedure and its trigger conditions.</td>
+<td><span class="st st-prog">IN PROGRESS</span></td>
+<td>none</td>
+<td>Skill loads and the stage list matches this document</td>
+</tr>
+<tr>
+<td><code>E-02</code></td>
+<td>P2</td>
+<td>Write the slash command wrapper at
+<code>~/.claude/commands/mvp-spinup.md</code>.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>E-01</code></td>
+<td><code>/mvp-spinup &lt;project&gt;</code> invokes the skill</td>
+</tr>
+<tr>
+<td><code>E-03</code></td>
+<td>P2</td>
+<td>Bundle <code>scripts/shot.sh</code> and <code>shot-narrow.sh</code>
+as skill assets.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>D-09t</code></td>
+<td>Both scripts live under the skill directory</td>
+</tr>
+<tr>
+<td><code>E-04</code></td>
+<td>P2</td>
+<td>Bundle the <code>doc.css</code> and wireframe CSS as reusable
+templates.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>E-01</code></td>
+<td><code>references/</code> holds both</td>
+</tr>
+<tr>
+<td><code>E-05</code></td>
+<td>P2</td>
+<td>Encode the house rules as a lint step: no em dashes, no
+<code>!important</code>, no banned vocabulary, no undeclared
+numbers.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>E-01</code></td>
+<td>Script exits non-zero on a planted violation</td>
+</tr>
+<tr>
+<td><code>E-06</code></td>
+<td>P3</td>
+<td>Document the ground-truth-first rule: measure the existing system
+before designing its replacement.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>E-01</code></td>
+<td>Stage 0 exists in the skill</td>
+</tr>
+</tbody>
+</table>
+<h3 id="101-the-seven-stages-the-skill-encodes">10.1 The seven stages
+the skill encodes</h3>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Input</th>
+<th>Output</th>
+<th>Why this step is not skippable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>The live system</td>
+<td>Measured baseline</td>
+<td>A design built on a described system inherits the description&#39;s
+errors. This is how <code>F-01</code> and <code>F-02</code> were
+found.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Baseline</td>
+<td>Plain text doc</td>
+<td>No formatting to hide behind. Weak arguments are visible in plain
+text.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Plain text</td>
+<td>Markdown</td>
+<td>Structure: tables, anchors, cross-references.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Markdown</td>
+<td>Standalone HTML</td>
+<td>Real converter, resources embedded, shareable as one file.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>HTML</td>
+<td>Wireframe</td>
+<td>Structure without aesthetics, so layout arguments happen before
+visual ones.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Wireframe</td>
+<td>Vanilla mockup</td>
+<td>Real content, real CSS, no framework, so the design is judged and
+not the tooling.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Mockup</td>
+<td>Framework MVP</td>
+<td>Componentized, data-driven, running on localhost.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="11-ws-f-launch-campaign">11. <code>WS-F</code> Launch
+campaign</h2>
+<p><strong>Status:</strong> <span class="st st-defer">DEFERRED</span>.
+<strong>Gate:</strong> <code>V-04</code> must pass.</p>
+<p>The campaign has already been designed across earlier sessions:
+Substack as the primary vehicle, YouTube as visual proof, short-form as
+top of funnel, phased across teaser, announcement, and deep dive. That
+design is not the bottleneck and executing it before <code>V-04</code>
+would drive traffic at a checkout that collects nothing.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pri</th>
+<th>Task</th>
+<th>Status</th>
+<th>Blocked by</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>F-01t</code></td>
+<td>P2</td>
+<td>Rewrite all campaign copy against the ratified offer sentence.
+Existing drafts assume a physical book and lifetime portal access that
+the offer does not contain.</td>
+<td><span class="st st-block">BLOCKED</span></td>
+<td><code>D-01</code></td>
+<td>No campaign asset promises anything absent from
+<code>offer.js</code></td>
+</tr>
+<tr>
+<td><code>F-02t</code></td>
+<td>P2</td>
+<td>Build audience before scarcity. Current state: waitlist 9, preorders
+6 (all test mode).</td>
+<td><span class="st st-block">BLOCKED</span></td>
+<td><code>V-04</code></td>
+<td>Waitlist above a threshold Chris sets</td>
+</tr>
+<tr>
+<td><code>F-03t</code></td>
+<td>P3</td>
+<td>Only once the numerator is worth showing, wire
+<code>preorder_counts</code> to a live counter.</td>
+<td><span class="st st-defer">DEFERRED</span></td>
+<td><code>F-02t</code></td>
+<td>Counter reads a number that helps rather than harms</td>
+</tr>
+<tr>
+<td><code>F-04t</code></td>
+<td>P2</td>
+<td>Publish one full precedent as a free public post to demonstrate
+depth.</td>
+<td><span class="st st-todo">TODO</span></td>
+<td><code>D-01</code></td>
+<td>Post live, links to a working checkout</td>
+</tr>
+</tbody>
+</table>
+<h3 id="111-explicitly-not-doing">11.1 Explicitly not doing</h3>
+<ul>
+<li>No seat counters or countdown timers while the waitlist holds 9
+people. A counter reading &quot;6 of 500 claimed&quot; is negative social
+proof.</li>
+<li>No three-tier cohort ladder. Three price points and three deadline
+windows is demand-conversion machinery, and the actual constraint is
+demand.</li>
+<li>No promotion of a physical copy until <code>D-03</code> is answered
+and fulfilment exists.</li>
+</ul>
+<hr />
+<h2 id="12-dependency-map">12. Dependency map</h2>
+<pre><code>D-01 ratify offer sentence
+ |
+ +-- A-01 offer module ---+-- A-02 sales copy
+ |                        +-- A-04 /policies
+ |                        +-- A-07 /terms
+ |                        +-- A-08 build assertion
+ |
+ +-- A-06 excluded row  (also needs D-03)
+ +-- F-01t campaign copy rewrite
+
+D-02 forever scope --------- A-03 scope paragraph
+
+B-01 button binding ------- B-02 error placement
+B-03 live webhook --------- B-04 live keys ------- B-07 one real dollar --&gt; V-04
+                                                                            |
+C-01 fix 29 to 23 -------- C-02 derive stats ---+-- C-03 provenance         |
+                                               +-- C-04 assertion          |
+                                               +-- D-12t demo wiring       |
+                                                                           v
+D-09t shot-narrow -------- D-10t narrow verify                          WS-F launch
+
+E-01 SKILL.md ------------+-- E-02 slash command
+                          +-- E-04 templates
+                          +-- E-05 house-rule lint
+                          +-- E-06 stage 0 doc
+D-09t --------------------+-- E-03 bundle scripts</code></pre>
+<hr />
+<h2 id="13-verification-gates">13. Verification gates</h2>
+<p>A workstream is not done because its tasks are checked off. It is
+done when its gate passes, with evidence written to the ledger.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Gate</th>
+<th>Passes when</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>V-01</code></td>
+<td>Offer consistency</td>
+<td>The offer sentence is byte-identical on the homepage, the checkout
+page, and <code>/policies</code>, and all three trace to one module. No
+surface contains offer prose that is not derived.</td>
+<td>Fetch all three rendered pages, diff the extracted sentence</td>
+</tr>
+<tr>
+<td><code>V-02</code></td>
+<td>Numeric honesty</td>
+<td>Every number in sales copy is derivable from an artifact, and adding
+a 24th precedent changes the site with no site edit.</td>
+<td>Add a test precedent, rebuild, confirm the count moved, revert</td>
+</tr>
+<tr>
+<td><code>V-03</code></td>
+<td>Demo integrity</td>
+<td>Build clean, both routes 200, derived count reads 23,
+<code>/policies</code> contains no shipment clause while
+<code>shipsPhysicalGoods</code> is false.</td>
+<td><span class="st st-done">DONE</span> 2026-07-29. See 13.1</td>
+</tr>
+<tr>
+<td><code>V-04</code></td>
+<td><strong>Money moves</strong></td>
+<td>One real card is charged, and the charge, the app row, the email,
+and the download link are all observed.</td>
+<td>Live transaction, recorded in the verification ledger</td>
+</tr>
+<tr>
+<td><code>V-05</code></td>
+<td>Skill works</td>
+<td><code>/mvp-spinup</code> runs stages 0 through 6 on a project that
+is not this one.</td>
+<td>Run it against a second project</td>
+</tr>
+<tr>
+<td><code>V-06</code></td>
+<td>No regression</td>
+<td>The 23 precedents, 186 sources, security headers, and anon lockdown
+all still verify after every change.</td>
+<td><code>python3 scripts/sts.py verify</code> plus
+<code>sts.py schema</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="131-v-03-evidence-recorded-2026-07-29">13.1 <code>V-03</code>
+evidence, recorded 2026-07-29</h3>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build</td>
+<td>PASS</td>
+<td><code>vite build</code> completed in 4.01s, no errors</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>PASS</td>
+<td>HTTP 200</td>
+</tr>
+<tr>
+<td><code>/policies</code></td>
+<td>PASS</td>
+<td>HTTP 200</td>
+</tr>
+<tr>
+<td>Derived precedent count</td>
+<td>PASS</td>
+<td>Rendered HTML contains &quot;23 times, people met&quot;, never &quot;29
+documented&quot;</td>
+</tr>
+<tr>
+<td>No stray 29</td>
+<td>PASS</td>
+<td>The only <code>29</code> in the output is inside the dates 1929</td>
+</tr>
+<tr>
+<td>Offer sentence on both surfaces</td>
+<td>PASS</td>
+<td>&quot;Five dollars, once&quot; appears 3 times on <code>/</code>, 1 time on
+<code>/policies</code></td>
+</tr>
+<tr>
+<td>Refund clause derived</td>
+<td>PASS</td>
+<td>&quot;Nothing is shipped, so no shipment date applies.&quot;</td>
+</tr>
+<tr>
+<td>No <code>!important</code></td>
+<td>PASS</td>
+<td>Zero occurrences outside comments explaining its absence</td>
+</tr>
+<tr>
+<td>No em dashes</td>
+<td>PASS</td>
+<td>Zero occurrences in <code>design/05-mockup/</code> and
+<code>app/src/</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="14-risk-register">14. Risk register</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Risk</th>
+<th>Likelihood</th>
+<th>Impact</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>R-01</code></td>
+<td>Live keys flipped before <code>B-03</code>, so real orders arrive
+with no webhook to record them.</td>
+<td>Medium</td>
+<td><strong>Severe.</strong> Silent revenue loss and unfulfilled
+customers.</td>
+<td><code>B-03</code> before <code>B-04</code>, stated twice in this
+document. <code>B-04</code> marked BLOCKED until <code>B-03</code>
+closes.</td>
+</tr>
+<tr>
+<td><code>R-02</code></td>
+<td>&quot;Forever&quot; is sold without a bounded scope and becomes an unpayable
+obligation.</td>
+<td>Medium</td>
+<td>High</td>
+<td><code>D-02</code> blocks <code>A-03</code>. Scope paragraph renders
+on the page, not in terms.</td>
+</tr>
+<tr>
+<td><code>R-03</code></td>
+<td>A customer checks the precedent count, finds 29 against 23, and
+stops trusting the sourcing.</td>
+<td>Low per visitor, certain in aggregate</td>
+<td>High</td>
+<td><code>C-01</code> is a one-word fix available today.
+<code>C-02</code> makes recurrence impossible.</td>
+</tr>
+<tr>
+<td><code>R-04</code></td>
+<td>Campaign runs before checkout works, spending scarce attention on a
+page that collects nothing.</td>
+<td>Medium</td>
+<td>High</td>
+<td><code>WS-F</code> gated on <code>V-04</code>.</td>
+</tr>
+<tr>
+<td><code>R-05</code></td>
+<td>The offer fix gets bundled with the homepage redesign and neither
+ships.</td>
+<td>Medium</td>
+<td>Medium</td>
+<td><code>D-04</code> recommends decoupling. <code>WS-A</code> touches
+copy and one module, not layout.</td>
+</tr>
+<tr>
+<td><code>R-06</code></td>
+<td>Concurrent sessions in the shared checkout clobber work, as happened
+2026-07-26.</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Work in the <code>v0.7.3</code> worktree. Do not
+<code>git checkout</code> another branch there. Commit per coherent
+wave.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="15-appendices">15. Appendices</h2>
+<h3 id="151-file-inventory-this-working-copy">15.1 File inventory, this
+working copy</h3>
+<pre><code>~/Code/active/sts-mvp/
+  PLAN.md                       this document
+  PLAN.html                     rendered, pandoc
+  design/
+    01-design-doc.txt           stage 1
+    02-design-doc.md            stage 2
+    03-design-doc.html          stage 3, self-contained
+    doc.css                     stylesheet for stage 3
+    04-wireframe.html           stage 4
+    05-mockup/
+      index.html                stage 5
+      styles.css
+      app.js
+  app/                          stage 6, SvelteKit
+    src/lib/offer.js            THE offer object
+    src/lib/stats.js            derived numbers with provenance
+    src/lib/precedents.js       3 open cases, 20 listed, total derived
+    src/lib/toast.svelte.js
+    src/lib/components/         8 section components plus BuyButton, Toast
+    src/routes/+layout.svelte
+    src/routes/+page.svelte
+    src/routes/policies/+page.svelte
+  scripts/
+    shot.sh                     headless screenshot, refuses sub-500px</code></pre>
+<h3 id="152-commands-used-to-establish-the-baseline">15.2 Commands used
+to establish the baseline</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># precedent count, authoritative</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/Code/active/sts-v0.7.3 <span class="kw">&amp;&amp;</span> <span class="ex">python3</span> scripts/sts.py verify</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># word count, page count, stripe mode</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/sts.py status</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># schema and migration state</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/sts.py schema</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># live route check</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/sts.py live</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># the offer, as three surfaces describe it</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="ex">rg</span> <span class="at">-n</span> <span class="at">-i</span> <span class="st">&#39;lifetime|forever|physical|50% off&#39;</span> src/routes/+page.svelte <span class="dt">\</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  src/routes/early-access/+page.svelte src/routes/policies/+page.svelte</span></code></pre></div>
+<h3 id="153-measured-baselines-2026-07-29">15.3 Measured baselines,
+2026-07-29</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th style="text-align: right;">Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Words</td>
+<td style="text-align: right;">90,623</td>
+<td><code>sts.py status</code></td>
+</tr>
+<tr>
+<td>Sections</td>
+<td style="text-align: right;">30</td>
+<td>manuscript index</td>
+</tr>
+<tr>
+<td>Precedents</td>
+<td style="text-align: right;">23</td>
+<td><code>sts.py verify</code>, <code>P-01</code> to
+<code>P-23</code></td>
+</tr>
+<tr>
+<td>Sources in Works Cited</td>
+<td style="text-align: right;">186</td>
+<td>link check, 1 dead</td>
+</tr>
+<tr>
+<td>Site pages</td>
+<td style="text-align: right;">29</td>
+<td><code>sts.py status</code></td>
+</tr>
+<tr>
+<td>Waitlist rows</td>
+<td style="text-align: right;">9</td>
+<td>Supabase</td>
+</tr>
+<tr>
+<td>Preorder rows</td>
+<td style="text-align: right;">6</td>
+<td>Supabase, all test mode</td>
+</tr>
+<tr>
+<td>Fulfilled sessions</td>
+<td style="text-align: right;">13</td>
+<td>Supabase</td>
+</tr>
+<tr>
+<td>Stripe live-mode paid charges</td>
+<td style="text-align: right;">0</td>
+<td>Stripe API</td>
+</tr>
+<tr>
+<td>Stripe live-mode webhook endpoints</td>
+<td style="text-align: right;">0</td>
+<td>Stripe API</td>
+</tr>
+</tbody>
+</table>
+<h3 id="154-house-rules-this-plan-is-written-under">15.4 House rules
+this plan is written under</h3>
+<ul>
+<li>No em dashes, in any copy, content, comment, or prose.</li>
+<li>No <code>!important</code>. Win CSS conflicts with specificity and
+source order.</li>
+<li>No banned vocabulary. Use &quot;call to action&quot; or &quot;the close&quot;.</li>
+<li>Versions start at 0.0.1.</li>
+<li>Commit per coherent wave, never batch to the end.</li>
+<li>Verify UI headless before claiming it works. Never
+<code>--disable-gpu</code>. <code>--window-size</code> clamps to 500px
+on this macOS, so narrow viewports need an iframe.</li>
+<li>Never claim a payment pipeline works from code review. Run a real
+transaction.</li>
+<li>No false &quot;live&quot; or &quot;real-time&quot; labels on static or build-time
+data.</li>
+</ul>
+<script>
+/* Wraps pandoc's flat output into the sidebar-plus-content shell, then adds the
+   two things that make a long plan usable: a live row filter and horizontally
+   scrollable tables.
+
+   Runs on DOMContentLoaded so it can move pandoc-generated nodes around after
+   they exist. */
+
+document.addEventListener('DOMContentLoaded', function () {
+  var body = document.body;
+  var toc = document.getElementById('TOC');
+
+  /* ---- 1. build the shell ---- */
+
+  var shell = document.createElement('div');
+  shell.id = 'shell';
+
+  var sidebar = document.createElement('aside');
+  sidebar.id = 'sidebar';
+
+  var content = document.createElement('main');
+  content.id = 'content';
+
+  /* Everything pandoc emitted moves into #content, except the table of
+     contents, which moves into the sidebar. */
+  while (body.firstChild) {
+    var node = body.firstChild;
+    if (node === toc) {
+      sidebar.appendChild(node);
+    } else {
+      content.appendChild(node);
+    }
+  }
+
+  /* ---- 2. filter box, above the contents ---- */
+
+  var wrap = document.createElement('div');
+  wrap.id = 'filter-wrap';
+  wrap.innerHTML =
+    '<p class="side-label">Filter rows</p>' +
+    '<input id="filter" type="search" placeholder="B-04, BLOCKED, webhook..." ' +
+    'autocomplete="off" spellcheck="false" aria-label="Filter table rows">' +
+    '<p id="filter-count" role="status" aria-live="polite"></p>' +
+    '<p class="side-label" style="margin-top:22px">Contents</p>';
+
+  sidebar.insertBefore(wrap, sidebar.firstChild);
+
+  shell.appendChild(sidebar);
+  shell.appendChild(content);
+  body.appendChild(shell);
+
+  /* ---- 3. tables scroll inside their own container ---- */
+
+  content.querySelectorAll('table').forEach(function (table) {
+    var scroller = document.createElement('div');
+    scroller.className = 'table-scroll';
+    table.parentNode.insertBefore(scroller, table);
+    scroller.appendChild(table);
+  });
+
+  /* ---- 4. live row filter ---- */
+
+  var input = document.getElementById('filter');
+  var count = document.getElementById('filter-count');
+  var rows = Array.prototype.slice.call(content.querySelectorAll('tbody tr'));
+
+  function applyFilter() {
+    var q = input.value.trim().toLowerCase();
+
+    if (!q) {
+      rows.forEach(function (r) {
+        r.classList.remove('filtered-out');
+      });
+      count.textContent = rows.length + ' rows';
+      return;
+    }
+
+    var shown = 0;
+    rows.forEach(function (r) {
+      var hit = r.textContent.toLowerCase().indexOf(q) !== -1;
+      r.classList.toggle('filtered-out', !hit);
+      if (hit) shown++;
+    });
+
+    count.textContent = shown + ' of ' + rows.length + ' rows match';
+  }
+
+  input.addEventListener('input', applyFilter);
+  applyFilter();
+
+  /* Slash focuses the filter, the way every search-first tool does it. */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement !== input) {
+      e.preventDefault();
+      input.focus();
+      input.select();
+    }
+    if (e.key === 'Escape' && document.activeElement === input) {
+      input.value = '';
+      applyFilter();
+      input.blur();
+    }
+  });
+});
+</script>
+</body>
+</html>

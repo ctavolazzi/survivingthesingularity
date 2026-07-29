@@ -1,0 +1,105 @@
+<script>
+/* Wraps pandoc's flat output into the sidebar-plus-content shell, then adds the
+   two things that make a long plan usable: a live row filter and horizontally
+   scrollable tables.
+
+   Runs on DOMContentLoaded so it can move pandoc-generated nodes around after
+   they exist. */
+
+document.addEventListener('DOMContentLoaded', function () {
+  var body = document.body;
+  var toc = document.getElementById('TOC');
+
+  /* ---- 1. build the shell ---- */
+
+  var shell = document.createElement('div');
+  shell.id = 'shell';
+
+  var sidebar = document.createElement('aside');
+  sidebar.id = 'sidebar';
+
+  var content = document.createElement('main');
+  content.id = 'content';
+
+  /* Everything pandoc emitted moves into #content, except the table of
+     contents, which moves into the sidebar. */
+  while (body.firstChild) {
+    var node = body.firstChild;
+    if (node === toc) {
+      sidebar.appendChild(node);
+    } else {
+      content.appendChild(node);
+    }
+  }
+
+  /* ---- 2. filter box, above the contents ---- */
+
+  var wrap = document.createElement('div');
+  wrap.id = 'filter-wrap';
+  wrap.innerHTML =
+    '<p class="side-label">Filter rows</p>' +
+    '<input id="filter" type="search" placeholder="B-04, BLOCKED, webhook..." ' +
+    'autocomplete="off" spellcheck="false" aria-label="Filter table rows">' +
+    '<p id="filter-count" role="status" aria-live="polite"></p>' +
+    '<p class="side-label" style="margin-top:22px">Contents</p>';
+
+  sidebar.insertBefore(wrap, sidebar.firstChild);
+
+  shell.appendChild(sidebar);
+  shell.appendChild(content);
+  body.appendChild(shell);
+
+  /* ---- 3. tables scroll inside their own container ---- */
+
+  content.querySelectorAll('table').forEach(function (table) {
+    var scroller = document.createElement('div');
+    scroller.className = 'table-scroll';
+    table.parentNode.insertBefore(scroller, table);
+    scroller.appendChild(table);
+  });
+
+  /* ---- 4. live row filter ---- */
+
+  var input = document.getElementById('filter');
+  var count = document.getElementById('filter-count');
+  var rows = Array.prototype.slice.call(content.querySelectorAll('tbody tr'));
+
+  function applyFilter() {
+    var q = input.value.trim().toLowerCase();
+
+    if (!q) {
+      rows.forEach(function (r) {
+        r.classList.remove('filtered-out');
+      });
+      count.textContent = rows.length + ' rows';
+      return;
+    }
+
+    var shown = 0;
+    rows.forEach(function (r) {
+      var hit = r.textContent.toLowerCase().indexOf(q) !== -1;
+      r.classList.toggle('filtered-out', !hit);
+      if (hit) shown++;
+    });
+
+    count.textContent = shown + ' of ' + rows.length + ' rows match';
+  }
+
+  input.addEventListener('input', applyFilter);
+  applyFilter();
+
+  /* Slash focuses the filter, the way every search-first tool does it. */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement !== input) {
+      e.preventDefault();
+      input.focus();
+      input.select();
+    }
+    if (e.key === 'Escape' && document.activeElement === input) {
+      input.value = '';
+      applyFilter();
+      input.blur();
+    }
+  });
+});
+</script>

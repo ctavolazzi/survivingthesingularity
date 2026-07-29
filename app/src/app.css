@@ -1,0 +1,137 @@
+/* Global layer: tokens, base, and the primitives shared across sections.
+   Section-specific CSS lives scoped inside its own component, which is the one
+   real change from the vanilla mockup's single stylesheet. */
+
+:root {
+  --bg:         #08080a;
+  --surface:    #101013;
+  --surface-2:  #16161a;
+  --surface-3:  #1c1c21;
+  --border:     #25252c;
+  --border-2:   #32323b;
+
+  --text:       #ececed;
+  --text-2:     #a8a8b0;
+  --text-3:     #71717a;
+
+  --accent:     #f59e0b;
+  --accent-hi:  #fbbf24;
+  --accent-dim: rgba(245, 158, 11, 0.12);
+
+  --ok:         #4ade80;
+  --no:         #6b6b73;
+  --bad:        #f87171;
+
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+
+  --wrap: 1120px;
+  --wrap-narrow: 760px;
+  --r: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ---------- layout primitives ---------- */
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+.wrap-narrow { max-width: var(--wrap-narrow); }
+
+.band { padding: clamp(64px, 9vw, 108px) 0; border-top: 1px solid var(--border); }
+.band-alt { background: var(--surface); }
+
+/* ---------- type primitives ---------- */
+
+.kicker {
+  font: 600 12px/1 var(--mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 16px;
+}
+
+.sec-h2 {
+  font: 600 clamp(26px, 4vw, 40px)/1.15 var(--serif);
+  letter-spacing: -0.02em;
+  margin: 0 0 18px;
+  max-width: 24ch;
+  text-wrap: balance;
+}
+
+.sec-lede {
+  font-size: 17px;
+  color: var(--text-2);
+  max-width: 66ch;
+  margin: 0 0 40px;
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font: 600 15px/1 var(--sans);
+  letter-spacing: 0.01em;
+  padding: 14px 22px;
+  border-radius: var(--r);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #17120a;
+  border-color: var(--accent);
+}
+.btn-primary:hover { background: var(--accent-hi); border-color: var(--accent-hi); }
+.btn-primary:active { transform: translateY(1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border-2);
+}
+.btn-ghost:hover { border-color: var(--text-3); background: var(--surface-2); }
+.btn-ghost .arrow { transition: transform 140ms ease; }
+.btn-ghost:hover .arrow { transform: translateX(4px); }
+
+.btn-sm { padding: 10px 16px; font-size: 14px; }
+.btn-lg { padding: 16px 30px; font-size: 16.5px; }
+
+:where(a, button, input):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ---------- reduced motion ----------
+   Targeted selectors at equal specificity, later in source order, so nothing
+   here needs !important. Scoped component styles carry their own block. */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+  .btn-primary:active { transform: none; }
+  .btn-ghost .arrow { transition: none; }
+  .btn-ghost:hover .arrow { transform: none; }
+}

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe: Surviving the Singularity homepage v0.0.1</title>
+<style>
+/* Deliberately low fidelity. No brand color, no real type, no polish.
+   The only job here is structure, hierarchy, and intent. If something looks
+   attractive in this file it is a bug. */
+
+:root {
+  --ink:    #1a1a1a;
+  --line:   #b8b8b8;
+  --fill:   #ececec;
+  --fill-2: #e0e0e0;
+  --dim:    #767676;
+  --note:   #0b5ed7;
+  --warn:   #b02a37;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 0 80px;
+  background: #fafafa;
+  color: var(--ink);
+  font: 14px/1.5 var(--mono);
+}
+
+/* Layout primitives */
+
+.page { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+.sec {
+  position: relative;
+  border: 2px dashed var(--line);
+  background: #fff;
+  margin: 0 0 14px;
+  padding: 26px 22px 22px;
+}
+
+.sec-id {
+  position: absolute;
+  top: -11px; left: 14px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+}
+
+.sec-name {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin: 0 0 16px;
+}
+
+/* Grey boxes standing in for content */
+
+.box {
+  background: var(--fill);
+  border: 1px solid var(--line);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+.box.dark { background: var(--fill-2); }
+.box.tall { min-height: 120px; }
+.box.xtall { min-height: 190px; }
+
+.lbl { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); display: block; margin-bottom: 6px; }
+
+/* Text placeholder bars */
+.bar { height: 10px; background: var(--line); margin: 0 0 7px; opacity: 0.55; }
+.bar.w100 { width: 100%; } .bar.w90 { width: 90%; } .bar.w75 { width: 75%; }
+.bar.w60 { width: 60%; } .bar.w45 { width: 45%; } .bar.w30 { width: 30%; }
+.bar.big { height: 22px; opacity: 0.75; }
+.bar.huge { height: 34px; opacity: 0.85; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: 2px solid var(--ink);
+  padding: 10px 18px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #fff;
+}
+.btn.primary { background: var(--ink); color: #fff; }
+
+/* Rows and grids */
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-start; }
+.row > * { flex: 1 1 0; min-width: 0; }
+.row.tight { gap: 8px; }
+.row.auto > * { flex: 0 0 auto; }
+.cols-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+/* Annotations. Blue is intent, red is a rule that must not be broken. */
+.note {
+  border-left: 3px solid var(--note);
+  background: #f0f5ff;
+  color: #123;
+  padding: 8px 12px;
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.note.warn { border-left-color: var(--warn); background: #fff2f3; }
+.note b { letter-spacing: 0.06em; }
+
+/* Header of the wireframe doc itself */
+.wf-head { padding: 40px 0 24px; }
+.wf-head h1 { font: 600 20px/1.3 var(--mono); margin: 0 0 6px; }
+.wf-head p { margin: 0; color: var(--dim); font-size: 12px; }
+.key { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 11px; color: var(--dim); }
+.key span::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 6px; vertical-align: -1px; }
+.key .k-note::before { background: var(--note); }
+.key .k-warn::before { background: var(--warn); }
+.key .k-box::before { background: var(--fill); border: 1px solid var(--line); }
+
+@media (max-width: 760px) {
+  .cols-4, .cols-3, .cols-2 { grid-template-columns: 1fr; }
+  .row { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<div class="page wf-head">
+  <h1>WIREFRAME / survivingthesingularity.com homepage / v0.0.1</h1>
+  <p>Structure only. Derived from design document section 5. Not a visual design.</p>
+  <div class="key">
+    <span class="k-box">content placeholder</span>
+    <span class="k-note">intent note</span>
+    <span class="k-warn">rule that must not be broken</span>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- S1 -->
+  <section class="sec">
+    <span class="sec-id">S1</span>
+    <p class="sec-name">Header</p>
+    <div class="row auto" style="align-items:center; justify-content:space-between;">
+      <div class="box" style="flex:0 0 200px;"><span class="lbl">wordmark</span><div class="bar w90"></div></div>
+      <div class="box" style="flex:1 1 auto;"><span class="lbl">nav: precedent file / the book / updates / about</span><div class="bar w75"></div></div>
+      <div class="btn primary">Get in for $5</div>
+    </div>
+    <p class="note"><b>INTENT.</b> The buy button is hidden at the top of the page and fades in only after the hero scrolls out of view. A visitor who has read nothing has not earned a persistent ask, and a header button competing with the hero button splits the click.</p>
+  </section>
+
+  <!-- S2 -->
+  <section class="sec">
+    <span class="sec-id">S2</span>
+    <p class="sec-name">Hero</p>
+    <div class="box dark">
+      <span class="lbl">eyebrow / derived, one line</span>
+      <div class="bar w45"></div>
+    </div>
+    <div class="box">
+      <span class="lbl">headline / the positioning claim</span>
+      <div class="bar huge w90"></div>
+      <div class="bar huge w60"></div>
+    </div>
+    <div class="box">
+      <span class="lbl">the offer sentence / verbatim from the offer object</span>
+      <div class="bar w100"></div>
+      <div class="bar w75"></div>
+    </div>
+    <div class="row auto" style="margin:14px 0 4px;">
+      <div class="btn primary">Get in for $5</div>
+      <div class="btn">Explore the Precedent File &rarr;</div>
+    </div>
+    <p class="note"><b>INTENT.</b> Dual call to action. The primary converts the decided visitor. The secondary serves the visitor who wants to see the goods before paying, and keeps them on the page instead of bouncing.</p>
+    <div class="cols-4" style="margin-top:14px;">
+      <div class="box"><span class="lbl">stat 1</span><div class="bar big w60"></div><div class="bar w90"></div></div>
+      <div class="box"><span class="lbl">stat 2</span><div class="bar big w60"></div><div class="bar w90"></div></div>
+      <div class="box"><span class="lbl">stat 3</span><div class="bar big w60"></div><div class="bar w90"></div></div>
+      <div class="box"><span class="lbl">stat 4</span><div class="bar big w60"></div><div class="bar w90"></div></div>
+    </div>
+    <p class="note warn"><b>RULE.</b> Every one of these four numbers is derived from an artifact and carries its provenance. A number that cannot be derived does not appear. This is the structural fix for the live site claiming 29 precedents when there are 23.</p>
+  </section>
+
+  <!-- S3 -->
+  <section class="sec">
+    <span class="sec-id">S3</span>
+    <p class="sec-name">The Precedent File / scroll target of the explore button</p>
+    <div class="box"><span class="lbl">section heading + one line of framing</span><div class="bar big w60"></div><div class="bar w90"></div></div>
+    <div class="row auto tight" style="margin:12px 0;">
+      <div class="btn primary">P-07</div>
+      <div class="btn">P-09</div>
+      <div class="btn">P-19</div>
+    </div>
+    <div class="box xtall">
+      <span class="lbl">active tab panel / real precedent text, not a summary</span>
+      <div class="bar w100"></div><div class="bar w100"></div><div class="bar w90"></div>
+      <div class="bar w100"></div><div class="bar w75"></div>
+      <div class="bar w45" style="margin-top:14px;"></div>
+      <span class="lbl" style="margin-top:6px;">sources, cited</span>
+    </div>
+    <div class="box dark">
+      <span class="lbl">the remaining twenty / titles and dates, greyed, not blurred</span>
+      <div class="cols-3">
+        <div class="bar w90"></div><div class="bar w90"></div><div class="bar w90"></div>
+        <div class="bar w75"></div><div class="bar w90"></div><div class="bar w60"></div>
+        <div class="bar w90"></div><div class="bar w75"></div><div class="bar w90"></div>
+      </div>
+    </div>
+    <p class="note"><b>INTENT.</b> A blur says "there is more text." Twenty real titles with real dates say "there is more work, it is specific, and none of it is filler." The second is a stronger argument and it is also simply true.</p>
+  </section>
+
+  <!-- S4 -->
+  <section class="sec">
+    <span class="sec-id">S4</span>
+    <p class="sec-name">What five dollars buys</p>
+    <div class="box"><span class="lbl">heading</span><div class="bar big w45"></div></div>
+    <div class="box">
+      <span class="lbl">included / four rows, rendered from the offer object</span>
+      <div class="bar w90"></div><div class="bar w75"></div><div class="bar w90"></div><div class="bar w60"></div>
+    </div>
+    <div class="box dark">
+      <span class="lbl">NOT included / stated plainly, in the same table</span>
+      <div class="bar w75"></div>
+    </div>
+    <div class="box">
+      <span class="lbl">what "forever" means / the scope paragraph</span>
+      <div class="bar w100"></div><div class="bar w90"></div><div class="bar w60"></div>
+    </div>
+    <p class="note warn"><b>RULE.</b> Every string in this section comes from one frozen offer object that the legal pages also read. If the offer changes, the sales copy and the refund policy move together. Prose that describes the offer separately on each surface is what produced the current three-way contradiction.</p>
+    <p class="note"><b>INTENT.</b> The excluded row is the trust move. Saying plainly what you are not getting for five dollars buys more credibility than any adjective in the included list.</p>
+  </section>
+
+  <!-- S5 -->
+  <section class="sec">
+    <span class="sec-id">S5</span>
+    <p class="sec-name">The update engine</p>
+    <div class="cols-2">
+      <div class="box tall">
+        <span class="lbl">how updates reach you / three steps</span>
+        <div class="bar w90"></div><div class="bar w75"></div><div class="bar w90"></div>
+      </div>
+      <div class="box tall">
+        <span class="lbl">stated cadence + stated limit</span>
+        <div class="bar w75"></div><div class="bar w90"></div>
+      </div>
+    </div>
+    <div class="box">
+      <span class="lbl">email field + submit</span>
+      <div class="row auto" style="align-items:center;">
+        <div class="box" style="flex:1 1 300px; margin:0;"><div class="bar w45"></div></div>
+        <div class="btn primary">Notify me</div>
+      </div>
+      <div class="bar w30" style="margin-top:10px;"></div>
+      <span class="lbl">unsubscribe link, right here, not in the footer</span>
+    </div>
+    <p class="note warn"><b>RULE.</b> In the MVP this field validates and reports what would happen. It writes nowhere. Collecting real addresses into a demo with no privacy policy behind it is a real problem, not a small one.</p>
+  </section>
+
+  <!-- S6 -->
+  <section class="sec">
+    <span class="sec-id">S6</span>
+    <p class="sec-name">The book</p>
+    <div class="cols-3">
+      <div class="box tall"><span class="lbl">part I</span><div class="bar big w75"></div><div class="bar w90"></div><div class="bar w90"></div><div class="bar w60"></div></div>
+      <div class="box tall"><span class="lbl">part II</span><div class="bar big w75"></div><div class="bar w90"></div><div class="bar w90"></div><div class="bar w60"></div></div>
+      <div class="box tall"><span class="lbl">part III</span><div class="bar big w75"></div><div class="bar w90"></div><div class="bar w90"></div><div class="bar w60"></div></div>
+    </div>
+    <p class="note"><b>INTENT.</b> The book comes after the offer and after the proof, not before. The artifact is not the product. The updates are.</p>
+  </section>
+
+  <!-- S7 -->
+  <section class="sec">
+    <span class="sec-id">S7</span>
+    <p class="sec-name">Close</p>
+    <div class="box" style="text-align:center; padding:36px 20px;">
+      <div class="bar huge w60" style="margin-inline:auto;"></div>
+      <div class="bar w75" style="margin-inline:auto;"></div>
+      <div class="btn primary" style="margin-top:18px;">Get in for $5</div>
+    </div>
+    <p class="note warn"><b>RULE.</b> No countdown, no seat counter, no "only N left." The waitlist currently holds 9 people. A counter reading "6 of 500 claimed" is negative social proof in a box with a border around it.</p>
+  </section>
+
+  <!-- S8 -->
+  <section class="sec">
+    <span class="sec-id">S8</span>
+    <p class="sec-name">Footer</p>
+    <div class="row">
+      <div class="box"><span class="lbl">Johnny Autoseed LLC</span><div class="bar w60"></div></div>
+      <div class="box"><span class="lbl">terms / policies / disclaimer / accessibility</span><div class="bar w90"></div></div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

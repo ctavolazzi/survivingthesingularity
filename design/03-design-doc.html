@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Surviving the Singularity: design document v0.0.1</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+:root {
+--bg: #0a0a0b;
+--surface: #121214;
+--surface-2: #17171a;
+--border: #26262b;
+--text: #e8e8ea;
+--text-dim: #9a9aa2;
+--text-faint:#6b6b73;
+--accent: #f59e0b;
+--accent-dim:#7c5310;
+--good: #4ade80;
+--bad: #f87171;
+--mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+--sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+--serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+margin: 0;
+padding: 64px 24px 128px;
+background: var(--bg);
+color: var(--text);
+font: 16px/1.7 var(--sans);
+max-width: 860px;
+margin-inline: auto;
+}
+
+h1 {
+font: 600 clamp(28px, 5vw, 42px)/1.15 var(--serif);
+letter-spacing: -0.02em;
+margin: 0 0 8px;
+text-wrap: balance;
+}
+h2 {
+font: 600 clamp(22px, 3.4vw, 30px)/1.2 var(--serif);
+letter-spacing: -0.015em;
+margin: 72px 0 20px;
+padding-top: 28px;
+border-top: 1px solid var(--border);
+text-wrap: balance;
+}
+h3 {
+font: 600 18px/1.3 var(--sans);
+letter-spacing: -0.005em;
+color: var(--text);
+margin: 40px 0 12px;
+}
+h4 { font: 600 15px/1.4 var(--sans); margin: 28px 0 8px; color: var(--text-dim); }
+
+p { margin: 0 0 16px; }
+a { color: var(--accent); text-decoration-color: var(--accent-dim); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--accent); }
+strong { color: #fff; font-weight: 600; }
+em { color: var(--text-dim); }
+ul, ol { margin: 0 0 18px; padding-left: 22px; }
+li { margin-bottom: 7px; }
+li::marker { color: var(--text-faint); }
+hr {
+border: 0;
+border-top: 1px solid var(--border);
+margin: 56px 0;
+}
+
+blockquote {
+margin: 24px 0;
+padding: 16px 20px;
+background: var(--surface);
+border-left: 3px solid var(--accent);
+border-radius: 0 6px 6px 0;
+color: var(--text-dim);
+}
+blockquote p:last-child { margin-bottom: 0; }
+blockquote strong { color: var(--accent); }
+
+code {
+font: 0.88em/1.5 var(--mono);
+background: var(--surface-2);
+border: 1px solid var(--border);
+border-radius: 4px;
+padding: 1px 5px;
+color: var(--text);
+}
+pre {
+background: var(--surface);
+border: 1px solid var(--border);
+border-radius: 8px;
+padding: 16px 18px;
+overflow-x: auto;
+margin: 20px 0;
+}
+pre code {
+background: none;
+border: 0;
+padding: 0;
+font-size: 13px;
+line-height: 1.6;
+color: var(--text-dim);
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 22px 0;
+font-size: 14.5px;
+display: block;
+overflow-x: auto;
+white-space: normal;
+}
+th, td {
+text-align: left;
+vertical-align: top;
+padding: 10px 14px;
+border-bottom: 1px solid var(--border);
+}
+th {
+font: 600 12px/1.4 var(--sans);
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--text-faint);
+border-bottom: 1px solid var(--border);
+white-space: nowrap;
+}
+tbody tr:hover { background: var(--surface); }
+td code { white-space: nowrap; }
+
+header#title-block-header {
+margin-bottom: 40px;
+}
+
+@media print {
+body { background: #fff; color: #000; max-width: none; padding: 0; }
+h1, h2, h3, strong { color: #000; }
+pre, blockquote, table { break-inside: avoid; }
+a { color: #000; }
+}
+@media (max-width: 640px) {
+body { padding: 40px 18px 96px; font-size: 15.5px; }
+h2 { margin-top: 48px; }
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Surviving the Singularity: design document v0.0.1</h1>
+</header>
+<h1 id="surviving-the-singularity-design-document-for-the-new-site">Surviving
+the Singularity: design document for the new site</h1>
+<p><strong>Version 0.0.1</strong> · Written 2026-07-29 · Status:
+<strong>Proposal</strong></p>
+<blockquote>
+<p>Nothing in this document is built into the live site. It describes a
+demo MVP that exists to make a set of decisions visible and arguable
+before any of them touch production.</p>
+</blockquote>
+<p>Every number below was measured on 2026-07-29 against the working
+copy at <code>~/Code/active/sts-v0.7.3</code> and against production
+deployment <code>af13a3c9</code> (source <code>332fdfd</code>). Numbers
+that could not be verified are marked <code>UNVERIFIED</code> rather
+than estimated.</p>
+<p><strong>Contents</strong></p>
+<ol type="1">
+<li><a href="#why-this-document-exists">Why this document
+exists</a></li>
+<li><a href="#measured-state">Measured state of the current
+site</a></li>
+<li><a href="#the-one-decision">The one decision this asks for</a></li>
+<li><a href="#positioning">Positioning</a></li>
+<li><a href="#the-explore-component">The Explore component</a></li>
+<li><a href="#page-structure">Page structure</a></li>
+<li><a href="#visual-direction">Visual direction</a></li>
+<li><a href="#technical-shape">Technical shape of the MVP</a></li>
+<li><a href="#what-shipping-requires">What shipping this
+requires</a></li>
+</ol>
+<hr />
+<p><a id="why-this-document-exists"></a></p>
+<h2 id="0-why-this-document-exists">0. Why this document exists</h2>
+<p>The live site sells well. It also currently says three different
+things about what a customer is buying, claims a number it cannot
+support, and routes every one of those sales into a payment processor
+that has never accepted a real dollar.</p>
+<p>None of those are marketing problems. They are all one problem:
+<strong>the offer is described in prose, separately, on every surface
+that mentions it, and prose drifts.</strong></p>
+<p>The new site fixes that structurally. There is one offer object. It
+is defined once. Every surface that describes the offer, including the
+refund policy, reads from it. A number that appears on the sales page is
+derived from the artifact it describes, not typed by hand.</p>
+<p>That is the entire architectural thesis. Everything else here is
+presentation.</p>
+<hr />
+<p><a id="measured-state"></a></p>
+<h2 id="1-measured-state-of-the-current-site">1. Measured state of the
+current site</h2>
+<h3 id="11-three-descriptions-of-one-purchase">1.1 Three descriptions of
+one purchase</h3>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>What it says</th>
+<th>What it implies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage hero + close</td>
+<td>&quot;The book draft. The Precedent File. The readiness checklist. One
+payment, everything now, plus 50% off the finished book at launch.&quot;</td>
+<td>$5 is access plus a discount coupon. No merchandise.</td>
+</tr>
+<tr>
+<td><code>/early-access</code> (checkout)</td>
+<td>&quot;$5 today. The Precedent File in your inbox now. When the book
+launches, I&#39;ll email you an exclusive link at 50% off.&quot;</td>
+<td>Same. Consistent with the homepage.</td>
+</tr>
+<tr>
+<td><code>/policies</code> (refunds)</td>
+<td>&quot;Preorder customers may request a full refund at any time
+<strong>prior to shipment</strong>,&quot; citing the U.S. FTC Mail, Internet,
+or Telephone Order Merchandise Rule.</td>
+<td>$5 is money taken for goods that will be shipped. Triggers a 30 day
+ship-or-refund obligation.</td>
+</tr>
+<tr>
+<td><code>/terms</code></td>
+<td>The site is &quot;informational only.&quot; Never mentions a sale.</td>
+<td>No transaction exists.</td>
+</tr>
+</tbody>
+</table>
+<p>These cannot all be true. The sales layer sells access. The legal
+layer sells merchandise. Three price tiers and a countdown deadline
+would make that gap considerably more expensive than it is today.</p>
+<h3 id="12-the-number-that-does-not-survive-checking">1.2 The number
+that does not survive checking</h3>
+<p>The homepage says:</p>
+<blockquote>
+<p>The Precedent File: <strong>29 documented cases</strong>, with every
+source</p>
+</blockquote>
+<p>The book contains <strong>23</strong> precedents, <code>P-01</code>
+through <code>P-23</code>. Not an estimate. The project&#39;s own harness
+confirms it:</p>
+<pre class="console"><code>$ python3 scripts/sts.py verify
+  precedents  P-01..P-23 ledger integrity
+    OK     all 23 present in the book and indexed in Appendix D</code></pre>
+<p>The claim overstates by six, on the one asset whose entire pitch is
+that you can check the work. A reader who checks the work finds the
+count wrong before they find anything else.</p>
+<blockquote>
+<p><strong>Likely origin:</strong> the site has 29 <em>pages</em>. That
+collision is exactly what hardcoding produces and derivation
+prevents.</p>
+</blockquote>
+<h3 id="13-the-checkout">1.3 The checkout</h3>
+<p>From the verification ledger, round 3, 2026-07-29, Stripe API as
+authoritative:</p>
+<pre><code>92 sessions,  livemode=true count:       0
+24 charges,   livemode paid charges:     0
+webhook_endpoints count 1, livemode=false</code></pre>
+<p>The store has <strong>never taken real money</strong>. There is
+<strong>no live-mode webhook endpoint</strong>, so switching to live
+keys without creating one first would accept payments and record none of
+them.</p>
+<p>Separately, a confirmed conversion defect: the bottom buy button on
+<code>/early-access</code> binds <code>disabled</code> to
+<code>checkoutLoading</code> only, while the top button also requires a
+valid email. The bottom button looks clickable, does nothing, and
+renders its error message <strong>4052px away in a 720px
+viewport</strong>.</p>
+<h3 id="14-the-audience-actually">1.4 The audience, actually</h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th style="text-align: right;">Rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>waitlist</code></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><code>preorders</code></td>
+<td style="text-align: right;">6 <em>(all test mode)</em></td>
+</tr>
+<tr>
+<td><code>fulfilled_sessions</code></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><code>discord_applications</code></td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>This is the number that should govern the launch design. A scarcity
+counter reading &quot;6 of 500 claimed&quot; is not urgency. It is negative social
+proof rendered in a box with a border around it.</p>
+<p>The schema has a <code>preorder_counts</code> table. It is referenced
+nowhere in <code>src/</code>. The plumbing exists, the wiring does not,
+and until the numerator is worth showing it should stay that way.</p>
+<h3 id="15-what-is-already-good-and-must-not-regress">1.5 What is
+already good and must not regress</h3>
+<p>Measured, not assumed:</p>
+<ul>
+<li>23 of 23 precedents present and indexed. Zero dangling cross
+references, zero math drift, zero metadata drift.</li>
+<li>186 sources in Works Cited, 1 dead.</li>
+<li>90,623 words, 30 sections.</li>
+<li>Security headers all live: HSTS, CSP
+<code>default-src &#39;self&#39;</code>, COOP, nosniff, XFO, Referrer-Policy,
+Permissions-Policy.</li>
+<li>Anon database access denied on all six tables, verified with a
+live-key positive control.</li>
+<li>The download bucket is genuinely private. Anon signing of a real
+object path returns 404.</li>
+<li>No em dashes on the homepage. No banned vocabulary. <strong>The site
+holds the voice rules better than most copy written for
+it.</strong></li>
+</ul>
+<p>This is a re-architecture of the offer surface, not a rewrite of the
+book or the security posture.</p>
+<hr />
+<p><a id="the-one-decision"></a></p>
+<h2 id="2-the-one-decision-this-document-asks-for">2. The one decision
+this document asks for</h2>
+<p>Everything downstream depends on a single sentence, and only Chris
+can ratify it. The MVP ships with a recommended default so the
+consequences are visible, and the default is changeable in one file.</p>
+<h3 id="recommended-default">Recommended default</h3>
+<blockquote>
+<p><strong>Five dollars, once. You get the book as it is being written,
+The Precedent File, and every update forever. When the finished book
+ships, the digital edition is yours at no additional cost.</strong></p>
+</blockquote>
+<p><strong>Why this one.</strong> It matches what is actually delivered
+today. It removes the discount coupon, which is the weakest possible
+thing to be holding a month before launch, and replaces it with the
+thing Chris identified as the real hook: buy once, receive updates
+forever.</p>
+<p>It deliberately says nothing about a physical copy. The moment the
+offer promises shipped merchandise, the FTC Merchandise Rule applies, a
+30 day clock starts, and a five dollar price has to absorb print and
+postage. Physical stays a separate, later, correctly priced product.</p>
+<p>It makes <code>/policies</code> correct instead of contradictory: no
+shipment, no shipment clause.</p>
+<h3 id="the-two-alternatives-stated-honestly">The two alternatives,
+stated honestly</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Upside</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A.</strong> Keep the 50% coupon</td>
+<td>Lowest change cost</td>
+<td>Keeps the weak promise. Leaves <code>/policies</code> shipment
+language wrong.</td>
+</tr>
+<tr>
+<td><strong>B.</strong> Include a physical copy</td>
+<td>Strongest emotional offer</td>
+<td>Needs a real price ($29 to $39), a fulfilment path, full Merchandise
+Rule compliance. Not a five dollar product.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="open-question-before-selling-forever">Open question before
+selling &quot;forever&quot;</h3>
+<p>&quot;Every update forever&quot; is an unbounded obligation. Before it is sold
+it needs a written scope: <strong>what counts as an update, in what form
+it arrives, and what happens if the project stops.</strong> One
+paragraph. It protects the buyer and it protects Chris.</p>
+<p>The MVP renders that paragraph as a real, visible part of the offer
+rather than hiding it in terms. An honest boundary sells better than an
+unbounded promise nobody believes.</p>
+<hr />
+<p><a id="positioning"></a></p>
+<h2 id="3-positioning">3. Positioning</h2>
+<h3 id="31-the-shift">3.1 The shift</h3>
+<table>
+<tbody>
+<tr>
+<td><strong>From</strong></td>
+<td>Here is a book about the singularity, buy it.</td>
+</tr>
+<tr>
+<td><strong>To</strong></td>
+<td>Here is a standing position on what is happening, it keeps updating,
+and five dollars puts you inside it permanently.</td>
+</tr>
+</tbody>
+</table>
+<p>The book is the artifact. <strong>The updates are the
+product.</strong> The current site leads with the artifact and mentions
+the updates in a bullet. The new site inverts that.</p>
+<h3 id="32-what-the-site-must-not-sound-like">3.2 What the site must not
+sound like</h3>
+<ul>
+<li>Not a prepper guide. Not secession. Not bunkers.</li>
+<li>Emergency resilience, community scale, deglobalized.</li>
+<li>Hyper-local, neighborhood-based, cooperative.</li>
+<li>Avoid &quot;independent&quot; as an identity.</li>
+<li>The thesis is empowerment and a new social contract, not
+survivalism.</li>
+<li>The seminal line: <em>if a robot grows my food and builds my house,
+why am I renting survival?</em></li>
+<li>No em dashes anywhere. No banned vocabulary.</li>
+</ul>
+<h3 id="33-proof-strategy-derived-not-asserted">3.3 Proof strategy:
+derived, not asserted</h3>
+<p>Every headline number is computed from an artifact at build time and
+carries the artifact it came from.</p>
+<table>
+<thead>
+<tr>
+<th>Stat</th>
+<th>Derived from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23 precedents</td>
+<td>count of <code>## Precedent P-NN</code> headings in book source</td>
+</tr>
+<tr>
+<td>90,623 words</td>
+<td>harness word count</td>
+</tr>
+<tr>
+<td>186 sources</td>
+<td>Works Cited index</td>
+</tr>
+<tr>
+<td>30 sections</td>
+<td>manuscript index</td>
+</tr>
+</tbody>
+</table>
+<p>If the book gains a precedent, the site says 24 without anyone
+editing the site. <strong>If a number cannot be derived, it does not go
+on the page.</strong> This is the direct structural answer to <a href="#measured-state">1.2</a>.</p>
+<h3 id="34-social-proof-honestly">3.4 Social proof, honestly</h3>
+<p>With 9 people on the waitlist, the site does not display a count of
+people. It displays a <strong>count of work</strong>. Work is the thing
+there is a lot of.</p>
+<p>No seat counters. No &quot;318 of 500 remaining.&quot; No countdown to a
+deadline that is not real. When the audience is large enough that a
+number helps, <code>preorder_counts</code> is already there.</p>
+<hr />
+<p><a id="the-explore-component"></a></p>
+<h2 id="4-the-explore-component">4. The Explore component</h2>
+<h3 id="41-what-it-is">4.1 What it is</h3>
+<p>A secondary call to action beside the primary buy button in the hero.
+Its job is to serve the visitor who will not spend five dollars on a
+page they have read for eleven seconds, and who wants to see the goods
+first.</p>
+<p><strong>Name: <code>EXPLORE THE PRECEDENT FILE</code></strong></p>
+<p>Chosen over &quot;the vault,&quot; &quot;the playbook,&quot; and &quot;the living archive&quot; for
+one reason: The Precedent File is a real thing that exists, has a real
+count, and can be verified by the person clicking. The other three are
+names for a thing that would have to be built first.</p>
+<h3 id="42-what-it-does">4.2 What it does</h3>
+<p>Smooth scrolls to an in-page section. It does not navigate away and
+it does not open a modal. The visitor keeps their scroll position and
+their momentum.</p>
+<h3 id="43-what-they-land-on">4.3 What they land on</h3>
+<p>A tabbed reader showing three <strong>real</strong> precedents in
+full, pulled from the book source. Not summaries. The actual opening
+passage and the actual sources.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Title</th>
+<th>Why this one</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>P-07</code></td>
+<td>The Horse&#39;s Last Ledger (1783 to 1960)</td>
+<td>Labor displacement that completed</td>
+</tr>
+<tr>
+<td><code>P-09</code></td>
+<td>The Frame-Breakers (England, 1811 to 1816)</td>
+<td>Organized resistance that failed</td>
+</tr>
+<tr>
+<td><code>P-19</code></td>
+<td>Twenty Million Gardens (United States, 1943 to 1944)</td>
+<td>Distributed food response that worked at national scale in under two
+years</td>
+</tr>
+</tbody>
+</table>
+<p>Below the three open tabs, the remaining twenty are listed by title
+and date, greyed, with a single line: <strong>&quot;Twenty more, every one
+sourced.&quot;</strong> That is the unlock. The visitor can see the exact
+shape of what they do not have.</p>
+<h3 id="44-why-this-beats-a-blurred-paragraph">4.4 Why this beats a
+blurred paragraph</h3>
+<p>A blur says &quot;there is more text.&quot; A list of twenty real titles with
+real dates says &quot;there is more work, and it is specific, and none of it
+is filler.&quot; The second is a stronger argument and it is also simply
+true.</p>
+<hr />
+<p><a id="page-structure"></a></p>
+<h2 id="5-page-structure">5. Page structure</h2>
+<p>The MVP builds the homepage only. Other routes are stubs so the nav
+resolves. Deliberate: the homepage carries the offer, and the offer is
+what is being decided.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Section</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1</strong></td>
+<td>Header</td>
+<td>Wordmark, four nav items, one persistent buy button that appears
+after the hero scrolls past</td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td>Hero</td>
+<td>Eyebrow (derived), headline, offer sentence verbatim from the offer
+object, dual CTA, four derived proof numbers</td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td>The Precedent File</td>
+<td>Target of the explore button. Tabbed reader, three real precedents,
+twenty listed. See <a href="#the-explore-component">§4</a></td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td>What five dollars buys</td>
+<td>One table from the offer object: four included rows, <strong>one
+explicitly excluded row</strong>, and the &quot;forever&quot; scope paragraph</td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td>The update engine</td>
+<td>How updates reach you. Stated cadence, stated limit, visible
+unsubscribe link <strong>in the section that asks for the
+email</strong></td>
+</tr>
+<tr>
+<td><strong>S6</strong></td>
+<td>The book</td>
+<td>Three parts, real titles, real descriptions, current word count</td>
+</tr>
+<tr>
+<td><strong>S7</strong></td>
+<td>Close</td>
+<td>Offer sentence again, buy button again, nothing else. No countdown,
+no counter, no scarcity</td>
+</tr>
+<tr>
+<td><strong>S8</strong></td>
+<td>Footer</td>
+<td>Johnny Autoseed LLC, policy links, the four legal routes</td>
+</tr>
+</tbody>
+</table>
+<p>The excluded row in S4 is the trust move. Nobody else does it.</p>
+<hr />
+<p><a id="visual-direction"></a></p>
+<h2 id="6-visual-direction">6. Visual direction</h2>
+<p>Inherit the existing dark technical aesthetic. <strong>This is not a
+rebrand.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Surface</td>
+<td>Near black, layered by elevation not by border alone</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>High contrast, generous measure, never below 16px</td>
+</tr>
+<tr>
+<td>Accent</td>
+<td>The existing amber, used for exactly one thing per screen: the thing
+you should click</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>One serif for headlines, one system stack for interface, one mono
+for derived numbers and IDs</td>
+</tr>
+<tr>
+<td>Motion</td>
+<td>Entrance only, short, fully disabled under
+<code>prefers-reduced-motion</code></td>
+</tr>
+<tr>
+<td>Grid</td>
+<td>Single column on mobile, twelve column above 900px</td>
+</tr>
+<tr>
+<td>Density</td>
+<td>The current site is dense and that is correct for this audience.
+Keep it. Add air only around the offer, the one place a reader
+stops</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Explicitly rejected:</strong> glassmorphism, gradient text,
+animated gradient borders, hero video, and any element whose purpose is
+to look expensive rather than to be read.</p>
+<hr />
+<p><a id="technical-shape"></a></p>
+<h2 id="7-technical-shape-of-the-mvp">7. Technical shape of the MVP</h2>
+<h3 id="71-the-offer-object">7.1 The offer object</h3>
+<p><code>src/lib/offer.js</code> exports one frozen object: price, offer
+sentence, included list, excluded list, forever-scope paragraph.</p>
+<p>The hero reads from it. The offer table reads from it. The close
+reads from it. The policies stub reads from it. Changing the offer is a
+one file change and every surface moves together, which is the entire
+point of <a href="#why-this-document-exists">§0</a>.</p>
+<h3 id="72-derived-stats">7.2 Derived stats</h3>
+<p><code>src/lib/stats.js</code> exports numbers <strong>with their
+provenance attached</strong>. Each stat carries a source string saying
+where it came from. In the MVP these are literals with provenance
+recorded; in production they are computed at build time by
+<code>scripts/sts.py</code>, which already produces every one of
+them.</p>
+<p>The provenance field is not decoration. It is what makes <a href="#measured-state">1.2</a> impossible to repeat.</p>
+<h3 id="73-stack">7.3 Stack</h3>
+<p>SvelteKit 2, Svelte 5, Vite. No CSS framework, no component library,
+no external font, no analytics. Plain CSS with custom properties,
+because the whole file is under 900 lines and a framework would be more
+code than the site.</p>
+<h3 id="74-explicitly-out-of-scope">7.4 Explicitly out of scope</h3>
+<ul>
+<li><strong>No payment integration.</strong> The buy button is inert and
+says so. Wiring a demo to a live Stripe key is how test charges end up
+in a real ledger.</li>
+<li><strong>No email capture that writes anywhere.</strong> The field
+validates and reports what <em>would</em> happen. Collecting real
+addresses into a demo with no privacy policy is a real problem, not a
+small one.</li>
+<li>No database, no auth, no book reader, no blog, no signals feed.</li>
+</ul>
+<hr />
+<p><a id="what-shipping-requires"></a></p>
+<h2 id="8-what-shipping-this-actually-requires">8. What shipping this
+actually requires</h2>
+<p>In order. Steps 1 through 4 are blocking and none of them is a design
+task.</p>
+<ol type="1">
+<li><strong>Ratify the offer sentence</strong> in <a href="#the-one-decision">§2</a>.</li>
+<li><strong>Rewrite <code>/policies</code></strong> to match it. Remove
+the shipment clause if the offer has no shipment.</li>
+<li><strong>Fix the 29 to 23</strong>, or better, derive it.</li>
+<li><strong>Fix the bottom buy button</strong> disabled binding.</li>
+<li><strong>Create the live-mode Stripe webhook endpoint, then switch to
+live keys.</strong> That order, or every order is lost.</li>
+<li><strong>Take one real dollar from one real card</strong> and confirm
+every downstream effect fires: charge, row, email, download link.</li>
+<li>Then build audience.</li>
+<li>Then, when a counter would read a number worth reading, wire
+<code>preorder_counts</code>.</li>
+</ol>
+<blockquote>
+<p>The campaign is step 7. It has been designed. It is not the
+bottleneck and it never was.</p>
+</blockquote>
+</body>
+</html>

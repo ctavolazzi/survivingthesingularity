@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 28 Jul 2026 15:25:35 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 30 Jul 2026 15:16:02 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -48,6 +48,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.23899</guid>
       <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
       <description>This exploratory study examines whether a large multimodal language model, GPT-5.1, can serve as the high-level controller of a physical mobile robot despite having no prior embodiment, no training in simulated environments, and no exposure to sensorimotor experience. Using only low-resolution first... [Score: 10.0 | Flagged for: world model, reasoning, embodied, robot, language model] Authors: Roberto Spinelli, Thiago C. Martins</description>
+    </item>
+    <item>
+      <title>How Affect Propagates among LLM Agents: Emergent Emotional Contagion in Crowd Simulation</title>
+      <link>https://arxiv.org/abs/2607.25140</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.25140</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <description>This paper studies the behavior of language models in a multi-agent crowd simulation, focusing on how affect propagates among agents that perceive and appraise one another. Each agent perceives its neighbors through visual, auditory, and tactile channels, then appraises these perceptions in light of... [Score: 10.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Funda Durupinar</description>
     </item>
     <item>
       <title>Towards Trustworthy and Cost-Efficient Data Integration: From Naïve RAG to Agentic RAG</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11689</guid>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <description>Artificial general intelligence ultimately requires agents that can reason and act in the physical world. Action models, vision-language-action policies, and world models have advanced this goal, while World Action Models (WAMs) are particularly promising because they connect candidate interventions... [Score: 8.5 | Flagged for: artificial general intelligence, world model, agent, embodied, rag] Authors: Yuanzhi Liang, Xufeng Zhan, et al.</description>
-    </item>
-    <item>
-      <title>Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents</title>
-      <link>https://arxiv.org/abs/2607.24625</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.24625</guid>
-      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Autonomous LLM agents processing mixed-confidentiality data face severe security risks from prompt injection attacks and reasoning errors. While dynamic Information Flow Control (IFC) provides structural security guarantees, traditional taint tracking permanently taints an agent's context upon readi... [Score: 8.0 | Flagged for: agent, agentic, autonomous, reasoning, llm] Authors: Arseny Kravchenko, Vadim Liventsev, et al.</description>
     </item>
   </channel>
 </rss>

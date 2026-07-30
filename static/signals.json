@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T15:25:35Z",
+  "generated_at": "2026-07-30T15:16:02Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -166,6 +166,29 @@
         "language model",
         "emergent",
         "emergent capabilit"
+      ]
+    },
+    {
+      "id": "2607.25140",
+      "source": "arxiv",
+      "title": "How Affect Propagates among LLM Agents: Emergent Emotional Contagion in Crowd Simulation",
+      "url": "https://arxiv.org/abs/2607.25140",
+      "authors": [
+        "Funda Durupinar"
+      ],
+      "summary": "This paper studies the behavior of language models in a multi-agent crowd simulation, focusing on how affect propagates among agents that perceive and appraise one another. Each agent perceives its neighbors through visual, auditory, and tactile channels, then appraises these perceptions in light of its prompted personality profile, memory, current affective state, and situational context. Appraisal is carried out by an LLM, which updates the agent's internal affective state and selects its outward expression. The architecture contains no hand-authored mechanism for directly transferring affec",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-07-27",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "emergent"
       ]
     },
     {
@@ -747,6 +770,54 @@
       ]
     },
     {
+      "id": "2607.26922",
+      "source": "arxiv",
+      "title": "Two Calls Beat Five Agents: Evaluating Multi-Agent Pipelines Against Self-Refinement for Local Language Models",
+      "url": "https://arxiv.org/abs/2607.26922",
+      "authors": [
+        "Ashish Prajapati",
+        "Om Mohite"
+      ],
+      "summary": "Multi-agent LLM pipeline systems break down the task among multiple roles for better reasoning, but are benchmarked mainly with large-scale commercial models. In this study, we investigate Parishad, a structured multi-agent system involving five roles, by deploying it on Qwen2.5-7B-Instruct, a local model, on two datasets: GSM8K (500 questions) and HumanEval (164 questions), compared with prompting directly and two-call self-refinement. The multi-agent system drops GSM8K accuracy from 75.0\\% to 45.0\\% with JSON data format due to the error accumulation problem. With plaintext format, the accur",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-07-29",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2607.26579",
+      "source": "arxiv",
+      "title": "ContactFlow: A video action conditioning that transfers across embodiments",
+      "url": "https://arxiv.org/abs/2607.26579",
+      "authors": [
+        "Sami Azirar",
+        "Enrico Pallotta",
+        "Jan Nogga",
+        "Jürgen Gall"
+      ],
+      "summary": "World models offer a promising route toward robot planning by enabling agents to imagine and verify the consequences of actions before execution. However, current video-based world models often struggle to capture the physical constraints that govern manipulation, particularly contact. Further, their action conditioning is often constrained to specific embodiments such as parallel grippers. We propose \\emph{Contact Flow}, an embodiment-agnostic action representation that encodes manipulation through the trajectory of 3D contact points between an actor and a target object. By discarding actor-s",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-29",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "world model",
+        "agent",
+        "planning",
+        "robot"
+      ]
+    },
+    {
       "id": "2607.24625",
       "source": "arxiv",
       "title": "Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents",
@@ -1094,6 +1165,31 @@
       ]
     },
     {
+      "id": "2607.26998",
+      "source": "arxiv",
+      "title": "AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Penetration Agents",
+      "url": "https://arxiv.org/abs/2607.26998",
+      "authors": [
+        "Ruoyu Wang",
+        "Heng Zhao",
+        "Renjie Wu",
+        "Mengnan Zhao"
+      ],
+      "summary": "Large language model (LLM) agents automate penetration testing through an observation-action loop, selecting actions based on observations returned by tools. This dependence allows defenders to inject deceptive observations that can mislead the agent's decision-making process. However, existing defenses rely heavily on static, isolated artifacts planted in the environment prior to an attack. Advanced agents can progressively recognize and bypass these artifacts, ultimately refocusing their exploitation attempts on the real target. To address this issue, we introduce AgentSnare, a trajectory-ad",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-07-29",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "deceptive",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2607.24744",
       "source": "arxiv",
       "title": "Data Pyramid for Embodied Manipulation",
@@ -1411,107 +1507,6 @@
         "reasoning",
         "language model",
         "scaling",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.14047",
-      "source": "arxiv",
-      "title": "PhysClaw-0: A Symbiotic Agentic System for Robot Autonomy via Language Corrections",
-      "url": "https://arxiv.org/abs/2607.14047",
-      "authors": [
-        "Boyuan Wang",
-        "Zhenyuan Zhang",
-        "Zhiqin Yang",
-        "Peijun Gu"
-      ],
-      "summary": "Autonomous data collection governs the volume and quality of real-world trajectories for manipulation policy learning. Existing pipelines reduce human effort via self-resetting, VLM verification, or language-guided correction, yet episode-scoped fixes must be reissued whenever the same failure recurs, so oversight cost grows with session length rather than with the number of distinct problems. We present PhysClaw-0, a human-robot symbiotic agentic system in which corrections are retained and reused across rounds. The collection loop collects, verifies, and resets autonomously, pausing for a re",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-15",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "autonomy",
-        "robot"
-      ]
-    },
-    {
-      "id": "2607.13354",
-      "source": "arxiv",
-      "title": "A Hybrid Sampling-Based Trajectory Planner with Game-Theoretic Guidance for Autonomous Racing",
-      "url": "https://arxiv.org/abs/2607.13354",
-      "authors": [
-        "Alexander Langmann",
-        "Frederico Pita de Araujo",
-        "Mattia Piccinini",
-        "Johannes Betz"
-      ],
-      "summary": "Autonomous racing demands planning algorithms that balance vehicle dynamics at the limits of handling with strategic decision-making in competitive multi-agent scenarios. Game theory provides a mathematical framework for modeling these interactions, enabling interactive trajectory planning and strategic behaviors, such as blocking. However, directly solving full dynamic games online is computationally prohibitive and challenging to integrate into robust, high-frequency autonomous software stacks. This paper proposes a hybrid architecture that integrates game-theoretic reasoning into a sampling",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-15",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "planning",
-        "reasoning"
-      ]
-    },
-    {
-      "id": "2607.12273",
-      "source": "arxiv",
-      "title": "Code-MUE: Measuring Code LLMs' Uncertainty through Execution-based Semantic Interaction Graphs",
-      "url": "https://arxiv.org/abs/2607.12273",
-      "authors": [
-        "Xiaoning Ren",
-        "Yinxing Xue",
-        "Lei Ma",
-        "Yuheng Huang"
-      ],
-      "summary": "As Code Large Language Models (LLMs) become central to modern software engineering, their inherent stochasticity poses significant real-world risks, where even minor errors can lead to severe functional, security, or safety consequences. Reliable automation, therefore, demands the ability to distinguish between confident, well-supported predictions and stochastic guessing. However, existing uncertainty estimation methods face a critical gap: white and grey-box techniques are often inapplicable to closed-source models, while standard \"black-box\" text metrics fail to capture the unique fragility",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-14",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "llm",
-        "language model",
-        "rag",
-        "automation"
-      ]
-    },
-    {
-      "id": "2607.11119",
-      "source": "arxiv",
-      "title": "VIA: Visual Interface Agent for Robot Control",
-      "url": "https://arxiv.org/abs/2607.11119",
-      "authors": [
-        "Hengyuan Hu",
-        "Priya Sundaresan",
-        "Jensen Gao",
-        "Dorsa Sadigh"
-      ],
-      "summary": "Robot manipulation is a complex task that requires visual understanding, physical reasoning, planning, and closed-loop control. General-purpose foundation models (FMs) have grown remarkably capable of some of these, especially vision and reasoning. To leverage this for generalist robot policies, current methods typically involve converting existing FMs into vision-language-action (VLA) models by fine-tuning on robot data to output low-level actions. However, VLAs are often orders of magnitude smaller than frontier FMs given the limited data and compute available for fine-tuning, which in turn ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-13",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "planning",
-        "reasoning",
-        "robot",
         "rag"
       ]
     }

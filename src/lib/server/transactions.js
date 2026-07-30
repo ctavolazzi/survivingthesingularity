@@ -76,13 +76,32 @@ export async function recordCheckoutInitiated({ sessionId, editionType = 'standa
  * success page both reach this and either may arrive first - and because a
  * session created before sql/013 shipped has no `initiated` row to update.
  *
+ * STILL NEVER THROWS, BUT NOW REPORTS. Previously this swallowed the outcome
+ * entirely, which meant the webhook could not tell a recorded payment from an
+ * unrecorded one and answered Stripe 200 either way. Stripe then stopped
+ * retrying and the row was lost for good. An adversarial audit on 2026-07-29
+ * called that out and was right: returning 500 costs a retry, whereas returning
+ * 200 costs the record permanently, and Stripe retries for about three days for
+ * free. Losing the financial ledger row is what destroys chargeback defence and
+ * makes reconciliation impossible.
+ *
+ * The three outcomes are deliberately distinguishable, because the caller must
+ * treat them differently:
+ *   { ok: true,  configured: true  }  wrote the row
+ *   { ok: true,  configured: false }  no database wired up at all, nothing to do
+ *   { ok: false, configured: true  }  a database IS wired up and the write FAILED
+ *
+ * Only the third is a reason to fail the request. Conflating it with the second
+ * would make every local dev webhook return 500.
+ *
  * @param {{ sessionId: string, paymentIntent?: string|null, email?: string|null, name?: string, editionType?: string, amountTotal?: number|null, currency?: string|null }} args
+ * @returns {Promise<{ ok: boolean, configured: boolean, error?: string }>}
  */
 export async function recordCheckoutCompleted({
   sessionId, paymentIntent = null, email = null, name = '',
   editionType = 'standard', amountTotal = null, currency = null,
 }) {
-  if (!supabaseAdmin || !sessionId) return;
+  if (!supabaseAdmin || !sessionId) return { ok: true, configured: false };
   try {
     const { error } = await supabaseAdmin
       .from('checkout_transactions')
@@ -100,8 +119,13 @@ export async function recordCheckoutCompleted({
         { onConflict: 'session_id' }
       );
     report('recordCheckoutCompleted', sessionId, error);
+    return error
+      ? { ok: false, configured: true, error: error.message }
+      : { ok: true, configured: true };
   } catch (e) {
-    console.error('[transactions] recordCheckoutCompleted threw:', e?.message ?? e);
+    const message = e?.message ?? String(e);
+    console.error('[transactions] recordCheckoutCompleted threw:', message);
+    return { ok: false, configured: true, error: message };
   }
 }
 

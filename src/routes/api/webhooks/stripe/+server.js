@@ -130,7 +130,7 @@ export async function POST({ request }) {
     // we can identify the buyer or successfully deliver to them, and that fact
     // must survive every failure below it. Previously a session with no email
     // returned 200 having recorded nothing anywhere.
-    await recordCheckoutCompleted({
+    const ledger = await recordCheckoutCompleted({
       sessionId: session.id,
       paymentIntent: typeof session.payment_intent === 'string'
         ? session.payment_intent
@@ -141,6 +141,44 @@ export async function POST({ request }) {
       amountTotal: session.amount_total ?? null,
       currency: session.currency ?? null,
     });
+
+    /**
+     * THE FINANCIAL LEDGER FAILS CLOSED. The event audit trail does not.
+     *
+     * This is the one place the degrade-open rule is deliberately inverted, and
+     * the reasoning is worth keeping because the two layers now behave
+     * differently on purpose:
+     *
+     *   webhook_events    an audit trail. Losing a row costs a report, so it
+     *                     degrades OPEN and never blocks a paid order.
+     *   checkout_transactions  the financial record. Losing a row destroys
+     *                     chargeback defence and makes reconciliation
+     *                     impossible, and Stripe will retry for about three
+     *                     days at no cost. So it fails CLOSED.
+     *
+     * Answering 200 here when the write failed is what makes the loss
+     * permanent: Stripe treats 200 as delivered and stops retrying. Returning
+     * 500 costs a retry and keeps the order recoverable.
+     *
+     * SAFE BECAUSE OF WHERE IT SITS. This runs BEFORE fulfillPreorder, which is
+     * where every email is sent, so a retry triggered here cannot re-send
+     * anything to the customer. Verified by reading the order of operations: the
+     * ledger write is line ~133 and fulfillment is line ~160. If anyone ever
+     * moves fulfillment above this point, this early return becomes a
+     * duplicate-email generator, so keep the ordering.
+     *
+     * `configured: false` means no database is wired up at all, which is the
+     * normal state in local dev. That must NOT 500, or every local webhook and
+     * every run of scripts/probe-stripe-webhook.mjs starts failing.
+     */
+    if (ledger.configured && !ledger.ok) {
+      console.error(
+        `[webhook] LEDGER WRITE FAILED for paid session ${session.id}: ${ledger.error}. ` +
+          'Returning 500 so Stripe retries; no email has been sent yet.'
+      );
+      await markEventFailed(event.id, `ledger write failed: ${ledger.error}`);
+      return json({ error: 'Ledger write failed' }, { status: 500 });
+    }
 
     if (!email) {
       // Nothing to deliver to, but the payment is now on the ledger and will

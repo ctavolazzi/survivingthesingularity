@@ -46,6 +46,23 @@
  * The five negative controls are not optional decoration. A handler that returned
  * 200 to everything would pass all four positive checks, so without the controls
  * a clean run and a broken-open handler look identical.
+ *
+ * THE PAID-SESSION EXPECTATION DEPENDS ON YOUR DATABASE STATE. Do not "fix" a
+ * failure here without checking which case you are in:
+ *
+ *   no SUPABASE_* set          paid session -> 200. The ledger degrades open
+ *                              because nothing is wired up, which is the normal
+ *                              local state and what this file asserts.
+ *   SUPABASE_* set but broken  paid session -> 500, on purpose. The financial
+ *                              ledger fails CLOSED so Stripe retries rather
+ *                              than dropping the record. Look for
+ *                              "LEDGER WRITE FAILED" in the server log; that is
+ *                              the branch working, not a regression.
+ *   SUPABASE_* set and working paid session -> 200 with a row written.
+ *
+ * Verified 2026-07-29 by pointing SUPABASE_URL at an unreachable host: the paid
+ * case flipped to 500 while unpaid, unhandled and expired stayed 200, proving the
+ * fail-closed path is scoped to the paid branch only.
  */
 import { createHmac } from 'node:crypto';
 

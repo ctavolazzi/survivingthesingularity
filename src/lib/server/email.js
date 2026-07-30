@@ -452,6 +452,29 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
  *
  * @param {{ to: string, source?: string, unsubscribeToken?: string }} args
  */
+/**
+ * Alert the admin inbox that paid sessions were never fulfilled (plan item B-06).
+ *
+ * Plain text, not HTML, and deliberately so: this one is read in a hurry on a
+ * phone, and every line of it is an action item rather than a nicety.
+ *
+ * The subject carries the COUNT, because the whole value of this alert is being
+ * able to tell "one order needs a nudge" from "the pipeline is down" without
+ * opening it.
+ *
+ * @param {{ count: number, body: string }} args
+ */
+export async function sendAdminReconciliationAlert({ count, body }) {
+  if (!resend) return { skipped: true };
+  const subject = `[STS] ${count} paid session${count === 1 ? '' : 's'} not fulfilled`;
+  const { error } = await sendAndRecord(
+    { type: 'admin_reconciliation_alert', to: 'admin@johnnyautoseed.com' },
+    { from, to: 'admin@johnnyautoseed.com', subject, text: body }
+  );
+  if (error) console.error('[email] reconciliation alert failed:', error.message ?? error);
+  return error ? { error } : { ok: true };
+}
+
 export async function sendWelcomeEmail({ to, source = 'homepage', unsubscribeToken }) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset - skipping welcome email to', to);

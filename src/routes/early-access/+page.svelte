@@ -82,7 +82,7 @@
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
-  <meta property="og:image:alt" content="Preorder Surviving the Singularity for $5 and get the bundle now." />
+  <meta property="og:image:alt" content="Preorder Surviving the Singularity for {offer.price} and get the bundle now." />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Preorder the book. Get the bundle now." />
@@ -331,7 +331,7 @@
       <p class="ea-label">Who's building this</p>
       <p class="ea-author-name"><a href="https://www.linkedin.com/in/christopher-tavolazzi/" target="_blank" rel="noopener noreferrer" class="ea-author-link">Christopher Tavolazzi</a></p>
       <p class="ea-author-text">
-        $5 gets you everything I've made so far and early access to everything I make next.<br><br>
+        {offer.price} gets you everything I've made so far and early access to everything I make next.<br><br>
         I'll hold onto your email and send you updates only when it's relevant. No spam, no daily marketing emails, no BS.<br><br>
         Just clear, actionable intelligence you can use to upgrade your life.
       </p>

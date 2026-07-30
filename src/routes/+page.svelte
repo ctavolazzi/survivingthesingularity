@@ -78,7 +78,7 @@
 
 <svelte:head>
   <title>Surviving the Singularity: New Era, New Playbook</title>
-  <meta name="description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
+  <meta name="description" content="A practical field guide for staying human in the age of AI. Preorder the book for {offer.price} and read the draft now." />
   <!-- Share card is a 1200x630 landscape render, not the cover art. The cover
        is 1410x2056; every scraper crops og:image to roughly 1.91:1, so pointing
        at the portrait art sliced the book in half. Rebuild with
@@ -86,7 +86,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Surviving the Singularity" />
   <meta property="og:title" content="Surviving the Singularity" />
-  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Preorder the book for $5 and read the draft now." />
+  <meta property="og:description" content="A practical field guide for staying human in the age of AI. Preorder the book for {offer.price} and read the draft now." />
   <meta property="og:url" content="https://survivingthesingularity.com/" />
   <meta property="og:image" content="https://survivingthesingularity.com/images/og/home.png" />
   <meta property="og:image:secure_url" content="https://survivingthesingularity.com/images/og/home.png" />
@@ -176,7 +176,7 @@
         </div>
         <div class="hero-actions">
           <a href="/early-access" class="btn-primary">
-            Preorder the Book: $5
+            Preorder the Book: {offer.price}
             <span class="btn-icon" aria-hidden="true">
               <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
@@ -530,7 +530,7 @@
     <div class="section-inner">
       <div class="cta-inner reveal">
         <div class="cta-glow" aria-hidden="true"></div>
-        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>Five dollars.</em></h2>
+        <h2 class="cta-heading" id="act-heading">Preorder the book.<br><em>{offer.priceWords}.</em></h2>
 
         <div class="cta-cover">
           <div class="product-cover-glow" aria-hidden="true"></div>
@@ -540,7 +540,7 @@
         <p class="cta-sub">{offer.sentence}<br><br>{offer.windowClose}</p>
 
         <a href="/early-access" class="btn-primary" style="font-size:1.1rem; padding:16px 36px;">
-          Preorder the Book: $5
+          Preorder the Book: {offer.price}
           <span class="btn-icon" aria-hidden="true">
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>

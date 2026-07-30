@@ -63,7 +63,7 @@
 
   // One offer, one CTA, everywhere.
   $: currentPath = $page.url.pathname;
-  const ctaConfig = { label: 'Preorder: $5', href: '/early-access' };
+  const ctaConfig = { label: `Preorder: ${offer.price}`, href: '/early-access' };
 
   $: isActive = (href) => href === '/' ? currentPath === '/' : currentPath.startsWith(href);
 

@@ -4,7 +4,7 @@ import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 // The confirmation email is a sales surface like any other, and it is the one a
 // customer keeps. It derives its offer claims from the same object the pages do.
-import { offer } from '$lib/offer.js';
+import { offer, offerItemLabel } from '$lib/offer.js';
 
 // Dynamic env so a missing key never breaks the build. If RESEND_API_KEY is
 // unset, every send becomes a logged no-op and signups still succeed.
@@ -410,7 +410,7 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download The Precedent File</a>
     <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
-      <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your 50% off the Print Edition</p>
+      <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your ${offerItemLabel('print-discount')}</p>
       <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">${keepLine}</p>
       <table role="presentation" style="width:100%;border-collapse:collapse;">
         <tr>

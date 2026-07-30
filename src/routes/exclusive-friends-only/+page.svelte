@@ -5,6 +5,7 @@
   import { isValidFriendsPassword } from '$lib/bookAccessCode.js';
   import { bookUnlocked } from '$lib/stores/bookAccess.js';
   import BookCover from '$lib/components/BookCover.svelte';
+  import { offer } from '$lib/offer';
 
   const pdfHref = `/downloads/Surviving-the-Singularity-v${book.version}.pdf`;
   const epubHref = `/downloads/Surviving-the-Singularity-v${book.version}.epub`;
@@ -117,7 +118,7 @@
       </button>
       <p class="gate-hint">
         No code? The public door is <a href="/early-access" class="gate-hint-link">right here</a>
-        for $5, and it's worth it.
+        for {offer.price}, and it's worth it.
       </p>
     </form>
   </main>
@@ -217,7 +218,7 @@
       <p class="closing-text">
         Pass the code along to anyone you'd actually want in the room. If you'd rather send
         someone through the front door, <a href="/early-access" class="closing-link">early access</a>
-        is $5 and it helps the book get finished.
+        is {offer.price} and it helps the book get finished.
       </p>
       <p class="closing-note">
         Commentary and informational only. Not professional advice of any kind. See the

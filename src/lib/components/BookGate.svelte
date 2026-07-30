@@ -9,6 +9,7 @@
   // re-lock never costs anyone their place.
   import { isValidBookPassword } from '$lib/bookAccessCode.js';
   import { bookUnlocked } from '$lib/stores/bookAccess.js';
+  import { offer } from '$lib/offer';
 
   /** Line under the title. Each surface says why you'd have a password. */
   export let subtitle = 'Enter the password from your confirmation email to read the book.';
@@ -47,7 +48,7 @@
     </button>
     <p class="gate-hint">
       Don't have a password yet?
-      <a href="/early-access" class="gate-hint-link">Preorder for $5</a>
+      <a href="/early-access" class="gate-hint-link">Preorder for {offer.price}</a>
       and your code arrives by email.
     </p>
   </form>

@@ -74,6 +74,15 @@ export const offer = Object.freeze({
   billing: 'once',
 
   /**
+   * The price spelled out, for display headings that want words rather than a
+   * numeral. Not new copy: `sentence` below already opens with these words, and
+   * the homepage close already rendered them. Naming the string here is what
+   * lets that heading derive instead of hardcoding, so a future price change
+   * cannot leave a numeral and a spelled-out word disagreeing on the same page.
+   */
+  priceWords: 'Five dollars',
+
+  /**
    * The load-bearing sentence. Rendered verbatim in the hero, in the close, and
    * on /policies. It is one sentence group rather than a bullet list, because a
    * bullet list is where qualifiers hide.
@@ -99,6 +108,7 @@ export const offer = Object.freeze({
    */
   included: Object.freeze([
     Object.freeze({
+      id: 'all-digital',
       title: 'All the digital content.',
       detail:
         'Everything this project publishes in digital form. There is no ' +
@@ -106,6 +116,7 @@ export const offer = Object.freeze({
       available: true
     }),
     Object.freeze({
+      id: 'book-draft',
       title: 'The book as it is being written.',
       detail:
         'Read the current pre-release version on the site, every section, ' +
@@ -113,6 +124,7 @@ export const offer = Object.freeze({
       available: true
     }),
     Object.freeze({
+      id: 'precedent-file',
       title: 'The Precedent File.',
       detail:
         `${PRECEDENT_COUNT} documented cases of people meeting a machine that ` +
@@ -120,6 +132,7 @@ export const offer = Object.freeze({
       available: true
     }),
     Object.freeze({
+      id: 'early-access-list',
       title: 'A permanent place on the early-access list.',
       detail:
         'You stay on it until you ask to come off. One reply is enough, and ' +
@@ -127,6 +140,7 @@ export const offer = Object.freeze({
       available: true
     }),
     Object.freeze({
+      id: 'updates-only',
       title: 'Only the updates that matter.',
       detail:
         'This list gets substantial version updates and nothing else. The ' +
@@ -134,6 +148,7 @@ export const offer = Object.freeze({
       available: true
     }),
     Object.freeze({
+      id: 'print-discount',
       title: '50% off the Print Edition.',
       detail:
         'Your place in line to buy the Print Edition at half price, as an ' +
@@ -141,6 +156,7 @@ export const offer = Object.freeze({
       available: false
     }),
     Object.freeze({
+      id: 'membership-grandfathered',
       title: 'You never pay the membership.',
       detail:
         'When the subscription launches, preorder buyers are grandfathered in ' +
@@ -157,6 +173,7 @@ export const offer = Object.freeze({
    */
   excluded: Object.freeze([
     Object.freeze({
+      id: 'print-edition',
       title: 'Not included: the Print Edition itself.',
       detail:
         'Print is a separate product at its own price, released as numbered ' +
@@ -213,6 +230,42 @@ export const offer = Object.freeze({
     subjectLine: 'Refund request'
   })
 });
+
+/**
+ * Looks up one included or excluded item by its stable `id`.
+ *
+ * Surfaces that need a single line of the offer rather than the whole list use
+ * this instead of indexing the array. `included[5]` silently becomes the wrong
+ * promise the first time someone reorders the list, and the confirmation email
+ * a paying customer receives is not a good place to find that out.
+ *
+ * Throws rather than returning undefined. A typo in an id is a build-time
+ * mistake and should read like one, not render as the word "undefined" in a
+ * receipt.
+ */
+export function offerItem(id) {
+  const found =
+    offer.included.find((item) => item.id === id) ||
+    offer.excluded.find((item) => item.id === id);
+
+  if (!found) {
+    throw new Error(
+      `offerItem: no offer item with id "${id}". Valid ids: ` +
+        [...offer.included, ...offer.excluded].map((i) => i.id).join(', ')
+    );
+  }
+
+  return found;
+}
+
+/**
+ * The title of an offer item with its trailing period removed, for label and
+ * heading contexts where the list's sentence punctuation reads wrong. Derived
+ * so the label still cannot drift from the list it came from.
+ */
+export function offerItemLabel(id) {
+  return offerItem(id).title.replace(/\.$/, '');
+}
 
 /**
  * Derives the refund paragraph from the offer rather than restating it.

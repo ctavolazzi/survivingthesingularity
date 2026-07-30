@@ -20,21 +20,39 @@
  * exploitable hole, which is exactly why it is a P2 and why the failure mode
  * below is tuned the way it is.
  *
- * THE FAILURE MODE IS TUNED TO NOT BREAK THE MONEY PATH
+ * THE MALFORMED-TIMESTAMP BYPASS. READ THIS BEFORE LOOSENING ANYTHING.
  *
- * The realistic way this code hurts anyone is by rejecting legitimate traffic:
- * if our clock ran behind Stripe's, every genuine webhook would look
- * future-dated and 100% of paid orders would start bouncing. That is a far worse
- * outcome than the thing being defended against. So:
+ * The first version of this module degraded open on ANY timestamp it could not
+ * parse, which left the guard trivially bypassable. Measured, not theorised:
+ * `t=abc` and `t=` both returned 200 with a valid signature.
+ *
+ * The mechanism is in stripe-node. `parseHeader` does
+ * `accum.timestamp = parseInt(kv[1], 10)` with no validity check, and
+ * `makeHMACContent` signs the PARSED value back: `${details.timestamp}.${payload}`.
+ * So `t=abc` parses to NaN, and an attacker who signs over the literal string
+ * "NaN.{body}" produces a signature Stripe accepts. The tolerance test is then
+ * `timestampAge > tolerance` where timestampAge is `now - NaN`, and `NaN > 300`
+ * is false, so Stripe's own past-side check does not fire either. The result was
+ * a payload with NO time bound in either direction, which is exactly the
+ * unbounded-validity window this module claims to close.
+ *
+ * Hence the split below between ABSENT and MALFORMED. They are not the same
+ * event and must not share a branch:
  *
  *   future-dated beyond tolerance   400, with the measured skew in the log
- *   timestamp missing/unparseable   ALLOWED, loudly. See `degradesOpen` below.
+ *   `t` present but unparseable     400. Stripe cannot produce this with a
+ *                                   valid signature, so the only way to reach
+ *                                   it is a hand-crafted header. Fail SHUT.
+ *   `t` absent entirely             ALLOWED, loudly. Unreachable in practice
+ *                                   (Stripe defaults to -1, which its own
+ *                                   tolerance rejects as ancient) and kept open
+ *                                   only as a safety valve for a genuine header
+ *                                   format change.
+ *   clock unusable                  ALLOWED, loudly, and reported as its own
+ *                                   reason so the log names the real cause.
  *
- * Degrading open on an unparseable header is deliberate. Reaching that branch
- * means Stripe's signature header format changed under us, and failing shut on
- * that would take the whole checkout down for the three days Stripe retries and
- * then lose the orders. The signature check is still the real guard and still
- * runs; this only ever adds a rejection on top of it.
+ * The asymmetry is the point. A format change is a Stripe-side event we should
+ * survive; a garbage value inside a well-formed header is a chosen input.
  */
 
 /**
@@ -48,20 +66,29 @@
 export const FUTURE_TOLERANCE_SECONDS = 300;
 
 /**
+ * @typedef {object} ParsedTimestamp
+ * @property {boolean} present a `t` key existed in the header at all
+ * @property {number|null} seconds the parsed value, or null when `t` was
+ *   present but its value could not be read as an exact integer
+ */
+
+/**
  * Pull the `t=` value out of a stripe-signature header.
  *
  * The header is a comma-separated list of key=value pairs, for example
  * `t=1717171717,v1=abc...,v0=def...`. Only `t` is of interest here.
  *
- * Returns null rather than throwing or guessing for anything that is not a
- * finite integer count of seconds. Callers must treat null as "cannot tell",
- * never as "zero" and never as "invalid": see the degrade-open note above.
+ * RETURNS `present` SEPARATELY FROM `seconds`, and that distinction is the
+ * whole fix for the bypass described in the module header. Collapsing "there
+ * was no timestamp" and "there was a timestamp and it was garbage" into a
+ * single null is what let `t=abc` through. One of those is a Stripe-side
+ * format change worth surviving; the other is a chosen input.
  *
  * @param {string|null|undefined} header raw stripe-signature header
- * @returns {number|null} unix seconds, or null if not determinable
+ * @returns {ParsedTimestamp}
  */
 export function parseSignatureTimestamp(header) {
-  if (typeof header !== 'string') return null;
+  if (typeof header !== 'string') return { present: false, seconds: null };
 
   for (const part of header.split(',')) {
     const eq = part.indexOf('=');
@@ -70,22 +97,23 @@ export function parseSignatureTimestamp(header) {
 
     const raw = part.slice(eq + 1).trim();
 
-    // Deliberately strict. Number('') is 0 and Number(' 12 ') is 12, and both
-    // of those coercions would turn a malformed header into a confident wrong
-    // answer. Only a plain run of digits, optionally signed, counts.
-    if (!/^-?\d+$/.test(raw)) return null;
+    // Deliberately strict, and stricter than stripe-node's own parseInt. Number('')
+    // is 0 and parseInt('123abc') is 123, and both of those coercions would turn a
+    // malformed header into a confident wrong answer. A leading + is tolerated
+    // because Number() and parseInt() agree on it; nothing else is.
+    if (!/^[+-]?\d+$/.test(raw)) return { present: true, seconds: null };
 
     const seconds = Number(raw);
-    return Number.isSafeInteger(seconds) ? seconds : null;
+    return { present: true, seconds: Number.isSafeInteger(seconds) ? seconds : null };
   }
 
-  return null;
+  return { present: false, seconds: null };
 }
 
 /**
  * @typedef {object} FreshnessResult
  * @property {boolean} ok whether the caller may proceed
- * @property {'ok'|'future-dated'|'no-timestamp'} reason
+ * @property {'ok'|'future-dated'|'malformed-timestamp'|'no-timestamp'|'unusable-clock'} reason
  * @property {boolean} degradesOpen true when ok is true DESPITE not having
  *   verified anything, so the caller can log it rather than read it as a pass
  * @property {number|null} skewSeconds signed seconds ahead of now, null if
@@ -106,20 +134,34 @@ export function parseSignatureTimestamp(header) {
  * @returns {FreshnessResult}
  */
 export function checkFreshness(header, nowSeconds, toleranceSeconds = FUTURE_TOLERANCE_SECONDS) {
-  const timestamp = parseSignatureTimestamp(header);
+  const { present, seconds } = parseSignatureTimestamp(header);
 
-  if (timestamp === null) {
+  // FAIL SHUT. A `t` that exists but does not parse cannot come from Stripe with
+  // a valid signature, because Stripe signs its own parseInt result back into
+  // the HMAC content. Reaching here therefore means someone hand-built the
+  // header, and it is the exact input that bypassed both this guard and Stripe's
+  // tolerance before. Do not relax this to a degrade-open without re-reading the
+  // module header.
+  if (present && seconds === null) {
+    return { ok: false, reason: 'malformed-timestamp', degradesOpen: false, skewSeconds: null };
+  }
+
+  // Degrade OPEN, and only here. No `t` at all is what a Stripe-side header
+  // format change would look like, and failing shut on that would bounce every
+  // real webhook. Unreachable in practice: with no `t`, stripe-node defaults the
+  // timestamp to -1 and its own tolerance rejects that as ancient.
+  if (!present) {
     return { ok: true, reason: 'no-timestamp', degradesOpen: true, skewSeconds: null };
   }
 
-  // A caller that hands us a nonsense clock gets the same treatment as a
-  // nonsense header. Guessing at "now" is how a guard starts rejecting real
-  // traffic for reasons nobody can reconstruct from the logs.
+  // Its own reason code, not folded into no-timestamp. A log line that names the
+  // wrong cause is how the constructEventAsync bug cost someone a long night,
+  // and collapsing these two was repeating that mistake.
   if (!Number.isFinite(nowSeconds)) {
-    return { ok: true, reason: 'no-timestamp', degradesOpen: true, skewSeconds: null };
+    return { ok: true, reason: 'unusable-clock', degradesOpen: true, skewSeconds: null };
   }
 
-  const skewSeconds = timestamp - nowSeconds;
+  const skewSeconds = seconds - nowSeconds;
 
   // Strictly greater than. A timestamp sitting exactly on the tolerance boundary
   // is accepted, matching how Stripe treats its own boundary and keeping the

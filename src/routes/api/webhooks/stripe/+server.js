@@ -92,6 +92,19 @@ export async function POST({ request }) {
   const freshness = checkFreshness(signature, Math.floor(Date.now() / 1000));
 
   if (!freshness.ok) {
+    if (freshness.reason === 'malformed-timestamp') {
+      // Stripe cannot produce this with a valid signature, so it is a crafted
+      // header rather than an operational fault. Kept as its own message: the
+      // two rejections have completely different causes and treating them as
+      // one is what made the original bypass invisible.
+      console.error(
+        `[webhook] rejecting event ${event.id}: the stripe-signature header carried ` +
+          'a `t` value that is not an integer. Stripe signs its own parsed timestamp ' +
+          'back into the HMAC, so a valid signature cannot reach here by accident.'
+      );
+      return json({ error: 'Malformed timestamp' }, { status: 400 });
+    }
+
     console.error(
       `[webhook] rejecting future-dated event ${event.id}: signed timestamp is ` +
         `${freshness.skewSeconds}s ahead of this server's clock. If this is every ` +
@@ -102,10 +115,15 @@ export async function POST({ request }) {
 
   if (freshness.degradesOpen) {
     // Allowed, but this is not a pass and must not read like one in the logs.
+    // The reason is named rather than guessed at, because the two causes need
+    // completely different responses from whoever reads this line.
     console.error(
-      `[webhook] could not read a timestamp from the signature header on event ` +
-        `${event.id}; allowing it through. The signature itself still verified. ` +
-        'Suspect a change to the stripe-signature header format.'
+      freshness.reason === 'unusable-clock'
+        ? `[webhook] this server's clock is unusable, so event ${event.id} could not be ` +
+            'checked for freshness and was allowed through. The signature itself verified.'
+        : `[webhook] the signature header on event ${event.id} carried no \`t\` at all; ` +
+            'allowing it through. The signature itself verified. Suspect a change to the ' +
+            'stripe-signature header format.'
     );
   }
 

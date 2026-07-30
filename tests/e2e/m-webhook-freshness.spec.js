@@ -29,38 +29,41 @@ const sig = (t) => `t=${t},v1=5257a869e7ecebeda32affa62cdca3fa51cad7e77a0e56ff53
 
 test.describe('reading the timestamp out of the header', () => {
   test('pulls t out of a real stripe-signature header', () => {
-    // If this ever returns null the whole guard silently stops guarding, so it
-    // is asserted against an exact value rather than just "not null".
-    expect(parseSignatureTimestamp(sig(NOW))).toBe(NOW);
+    // If this ever stops returning the value the whole guard silently stops
+    // guarding, so it is asserted against an exact number, not just "not null".
+    expect(parseSignatureTimestamp(sig(NOW))).toEqual({ present: true, seconds: NOW });
   });
 
-  test('tolerates surrounding whitespace and extra schemes', () => {
-    expect(parseSignatureTimestamp(` t=${NOW} , v1=abc , v0=def `)).toBe(NOW);
-    expect(parseSignatureTimestamp(`v1=abc,t=${NOW}`)).toBe(NOW);
+  test('tolerates surrounding whitespace, a leading +, and extra schemes', () => {
+    expect(parseSignatureTimestamp(` t=${NOW} , v1=abc , v0=def `).seconds).toBe(NOW);
+    expect(parseSignatureTimestamp(`v1=abc,t=${NOW}`).seconds).toBe(NOW);
+    expect(parseSignatureTimestamp(`t=+${NOW},v1=abc`).seconds).toBe(NOW);
   });
 
   test('does not mistake another key ending in t for the timestamp', () => {
-    // `st=` and `nonce_t=` both end in t and both must be ignored.
-    expect(parseSignatureTimestamp('st=123,v1=abc')).toBeNull();
-    expect(parseSignatureTimestamp('nonce_t=123,v1=abc')).toBeNull();
+    // `st=` and `nonce_t=` both end in t and both must be ignored. These report
+    // ABSENT, not malformed, because no `t` key was present at all.
+    expect(parseSignatureTimestamp('st=123,v1=abc')).toEqual({ present: false, seconds: null });
+    expect(parseSignatureTimestamp('nonce_t=123,v1=abc')).toEqual({ present: false, seconds: null });
   });
 
-  test('refuses to coerce a malformed value into a confident number', () => {
-    // Every one of these is a case where Number() would have produced an
-    // answer. `Number('')` is 0, which would read as January 1970 and sail
-    // through the future check while being obvious nonsense.
-    for (const bad of ['t=,v1=abc', 't=abc', 't=12.5', 't=1e9', 't= 12 3', 't=0x10', 't=NaN']) {
-      expect(parseSignatureTimestamp(bad), bad).toBeNull();
+  test('reports a present-but-unreadable t as PRESENT, which is what fails it shut', () => {
+    // Every one of these is a case where a coercion would have produced an
+    // answer: `Number('')` is 0, and stripe-node's own `parseInt('123abc')` is
+    // 123. Reporting present:true is the entire fix for the bypass, because
+    // present:false would degrade open and let the crafted header through.
+    for (const bad of ['t=,v1=abc', 't=abc', 't=12.5', 't=1e9', 't= 12 3', 't=0x10', 't=NaN', 't=123abc']) {
+      expect(parseSignatureTimestamp(bad), bad).toEqual({ present: true, seconds: null });
     }
   });
 
-  test('refuses an integer too large to be exact', () => {
-    expect(parseSignatureTimestamp('t=99999999999999999999')).toBeNull();
+  test('refuses an integer too large to be exact, and still reports it present', () => {
+    expect(parseSignatureTimestamp('t=99999999999999999999')).toEqual({ present: true, seconds: null });
   });
 
-  test('returns null for anything that is not a string', () => {
+  test('reports absent for anything that is not a string', () => {
     for (const bad of [undefined, null, 42, {}, []]) {
-      expect(parseSignatureTimestamp(bad)).toBeNull();
+      expect(parseSignatureTimestamp(bad)).toEqual({ present: false, seconds: null });
     }
   });
 });
@@ -87,6 +90,45 @@ test.describe('the future side is refused', () => {
   });
 });
 
+test.describe('the malformed-timestamp bypass, regression', () => {
+  /**
+   * THE BUG THIS BLOCK EXISTS FOR, measured over HTTP before it was fixed:
+   * `t=abc` and `t=` both returned 200 with a valid signature, defeating this
+   * guard AND Stripe's own tolerance at the same time.
+   *
+   * stripe-node's `parseHeader` runs `parseInt(kv[1], 10)` with no validity
+   * check, and `makeHMACContent` signs the parsed value back as
+   * `${details.timestamp}.${payload}`. So `t=abc` becomes the literal string
+   * "NaN", an attacker signs over "NaN.{body}", and the tolerance test becomes
+   * `NaN > 300`, which is false. The payload then had no time bound at all.
+   */
+  test('a present-but-unparseable t is REFUSED, not waved through', () => {
+    for (const crafted of ['t=abc,v1=sig', 't=,v1=sig', 't=NaN,v1=sig', 't=123abc,v1=sig', 't=0x10,v1=sig']) {
+      const r = checkFreshness(crafted, NOW);
+      expect(r.ok, crafted).toBe(false);
+      expect(r.reason, crafted).toBe('malformed-timestamp');
+      expect(r.degradesOpen, crafted).toBe(false);
+    }
+  });
+
+  test('malformed and absent are different verdicts, which is the whole fix', () => {
+    // If these two ever collapse back to the same answer, the bypass is back.
+    const malformed = checkFreshness('t=abc,v1=sig', NOW);
+    const absent = checkFreshness('v1=sig', NOW);
+
+    expect(malformed.ok).toBe(false);
+    expect(absent.ok).toBe(true);
+    expect(malformed.reason).not.toBe(absent.reason);
+  });
+
+  test('a malformed t is refused no matter what the clock says', () => {
+    // Refusal must not depend on skew, since skew is unknowable here.
+    for (const clock of [NOW, NOW - 1_000_000, NOW + 1_000_000, NaN]) {
+      expect(checkFreshness('t=abc,v1=sig', clock).ok, String(clock)).toBe(false);
+    }
+  });
+});
+
 test.describe('everything else is allowed, on purpose', () => {
   test('the past is left entirely to Stripe tolerance', () => {
     // Deliberately NOT enforced here. Two expiry windows that can drift apart
@@ -99,10 +141,12 @@ test.describe('everything else is allowed, on purpose', () => {
     }
   });
 
-  test('an unreadable header degrades OPEN and says so', () => {
+  test('an ABSENT t degrades OPEN and says so', () => {
     // Failing shut here would reject every real webhook the day Stripe changes
     // its header format. `degradesOpen` is what stops that being read as a pass.
-    for (const bad of ['v1=abc', 't=abc', '', undefined, null]) {
+    // Unreachable in practice: with no `t`, stripe-node defaults to -1 and its
+    // own tolerance rejects that as ancient before this code ever runs.
+    for (const bad of ['v1=abc', '', undefined, null]) {
       const r = checkFreshness(bad, NOW);
       expect(r.ok, JSON.stringify(bad)).toBe(true);
       expect(r.reason).toBe('no-timestamp');
@@ -111,10 +155,13 @@ test.describe('everything else is allowed, on purpose', () => {
     }
   });
 
-  test('a broken clock on our side degrades OPEN rather than rejecting traffic', () => {
+  test('a broken clock degrades OPEN under its OWN reason code', () => {
+    // Not folded into no-timestamp. A log line naming the wrong cause is how the
+    // constructEventAsync bug cost someone a long night.
     for (const clock of [NaN, Infinity, -Infinity]) {
       const r = checkFreshness(sig(NOW + 600), clock);
       expect(r.ok, String(clock)).toBe(true);
+      expect(r.reason).toBe('unusable-clock');
       expect(r.degradesOpen).toBe(true);
     }
   });

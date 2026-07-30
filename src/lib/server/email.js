@@ -100,10 +100,44 @@ function buildWelcome(source) {
   };
 }
 
+/**
+ * Postal address for the email footer.
+ *
+ * The federal CAN-SPAM Act requires a valid physical postal address, a street
+ * address or a registered PO box, in commercial email. Verified 2026-07-29: no
+ * address of any kind appeared anywhere in this file, so every commercial send
+ * was missing it.
+ *
+ * DELIBERATELY UNSET AND DELIBERATELY NOT INVENTED. Nobody should guess a
+ * business address into a legal notice, and shipping a plausible-looking
+ * placeholder would be worse than shipping nothing: it reads as compliance while
+ * being false. So the mechanism is wired and the value is one environment
+ * variable away.
+ *
+ * Set EMAIL_POSTAL_ADDRESS in Cloudflare Pages, for example
+ * "Johnny Autoseed LLC, PO Box 1234, Chico, CA 95926", before running any
+ * newsletter or promotional send. The transactional receipt is on a different
+ * footing, since CAN-SPAM treats transactional or relationship messages
+ * differently from commercial ones, but there is no downside to it appearing
+ * there too.
+ */
+const postalAddress = env.EMAIL_POSTAL_ADDRESS || null;
+if (!postalAddress) {
+  console.warn(
+    '[email] EMAIL_POSTAL_ADDRESS is unset, so the CAN-SPAM postal address is ' +
+      'omitted from email footers. Set it before any commercial or newsletter send.'
+  );
+}
+
 function renderHtml({ heading, body, cta, unsubscribeUrl }) {
   const footerUnsubscribe = unsubscribeUrl
     ? `<a href="${unsubscribeUrl}" style="color:#475569;text-decoration:underline;">Unsubscribe</a>`
     : 'Reply to unsubscribe';
+  // Rendered only when a real address is configured. An empty line is better
+  // than a fabricated one.
+  const footerPostal = postalAddress
+    ? `<p style="font-size:12px;color:#475569;margin:8px 0 0;">${escapeHtml(postalAddress)}</p>`
+    : '';
   return `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
@@ -111,6 +145,7 @@ function renderHtml({ heading, body, cta, unsubscribeUrl }) {
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${cta.url}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:12px 22px;border-radius:8px;">${cta.label}</a>
     <p style="font-size:12px;color:#475569;margin:36px 0 0;">You received this because you signed up at survivingthesingularity.com. ${footerUnsubscribe}.</p>
+    ${footerPostal}
   </div></body></html>`;
 }
 

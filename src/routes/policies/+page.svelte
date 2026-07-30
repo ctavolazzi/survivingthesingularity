@@ -65,9 +65,39 @@
         <strong>Website Usage:</strong> This site itself does not set first-party tracking cookies and does not run third-party analytics or advertising tags as of the last-updated date above. The site may set a small number of strictly-functional values in browser localStorage (for example, to remember whether you have dismissed the disclaimer banner). Outbound links to third-party services such as Substack, Ko-fi, YouTube, and Spotify will be subject to those services' own privacy practices once you click through. You should review their policies separately.
       </p>
 
+      <!-- DRAFTED 2026-07-29. CalOPPA requires a site collecting personal
+           information from California residents to disclose HOW it responds to
+           Do Not Track signals. It does not require honouring them, so the
+           compliant move is an accurate statement, and the statement below is
+           accurate as measured: grep found zero references to DNT, Sec-GPC,
+           navigator.doNotTrack or globalPrivacyControl anywhere in
+           hooks.server.js or the rest of src, so nothing reads those headers.
+
+           ONE THING TO CONFIRM BEFORE THIS GOES LIVE: static/_headers allows
+           static.cloudflareinsights.com in script-src and cloudflareinsights.com
+           in connect-src. Cloudflare Web Analytics is injected at the edge, not
+           from this repo, so whether it is actually enabled cannot be determined
+           from the source. If it IS enabled, the "no third-party analytics"
+           sentence in the paragraph above needs qualifying. Check the Cloudflare
+           dashboard. -->
+      <p>
+        <strong>Do Not Track and Global Privacy Control:</strong> Some browsers
+        can send a Do Not Track (DNT) header or a Global Privacy Control signal.
+        This site does not currently detect or respond to either one. That is
+        stated plainly rather than dressed up, because the honest position is
+        that there is very little here for such a signal to switch off: the site
+        runs no advertising tags and no cross-site tracking, so there is no
+        behavioural profile being built to opt out of. If that ever changes, this
+        section changes with it.
+      </p>
+
       <p>
         <strong>Children:</strong> This site is not directed to children under 13. Personal information from children under 13 is not knowingly collected. If you believe a child has provided personal information, you may contact
-        <a href="mailto:info@thecoffeejesus.com">info@thecoffeejesus.com</a>;
+        <!-- Was info@thecoffeejesus.com, a leftover from before the contact
+             address was migrated on 2026-07-29. Every other address on this page
+             already derives from the offer module; this one had been missed, so a
+             child-safety report would have gone to a stale inbox. -->
+        <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a>;
         review on a best-available-basis with no guaranteed action is contemplated.
       </p>
 

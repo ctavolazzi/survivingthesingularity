@@ -227,6 +227,25 @@
         provision prevents either party from seeking injunctive relief in
         court for intellectual-property infringement.
       </p>
+      <!-- DRAFTED 2026-07-29, NOT REVIEWED BY A LAWYER. Reason it exists:
+           under McGill v. Citibank (Cal. 2017) a waiver of the right to seek
+           public injunctive relief in any forum is unenforceable in California,
+           and where such a waiver is not severable a court can decline to
+           enforce the entire arbitration agreement. The clause above waives
+           "representative" actions without carving public injunctive relief
+           out, which is the exact shape McGill addresses. This paragraph is
+           protective: it narrows the waiver rather than widening it. Have
+           counsel confirm the wording before this reaches production. -->
+      <p>
+        <strong>Public injunctive relief.</strong> Nothing in the paragraph
+        above waives any right you may have to seek public injunctive relief.
+        A claim for public injunctive relief is excluded from arbitration and
+        from the waiver of representative actions, and may be brought in the
+        courts described above. If a court decides that this exclusion is
+        unenforceable, then only the claim for public injunctive relief
+        proceeds in court and the remainder of the dispute stays in
+        arbitration.
+      </p>
     </section>
 
     <section class="t-section">
@@ -262,6 +281,29 @@
       <p>
         Questions about these Terms? Email
         <a href="mailto:info@survivingthesingularity.com">info@survivingthesingularity.com</a>.
+      </p>
+    </section>
+
+    <!-- DRAFTED 2026-07-29, NOT REVIEWED BY A LAWYER, but this one is close to
+         mechanical: California Civil Code section 1789.3 requires a provider of
+         electronic commercial services to give California subscribers this
+         specific notice, and the text below is the standard statutory recital.
+         Verified absent before adding: zero occurrences of "1789.3" or
+         "Complaint Assistance" anywhere in /terms or /policies.
+
+         Appended as section 17 rather than inserted mid-document on purpose.
+         Inserting would renumber 13 through 16, and a previous pass already
+         renumbered this file once; there is no reason to spend that risk on
+         ordering. -->
+    <section class="t-section">
+      <h2>17. California consumer rights notice</h2>
+      <p>
+        Under California Civil Code Section 1789.3, California residents are
+        entitled to the following specific consumer rights notice: The Complaint
+        Assistance Unit of the Division of Consumer Services of the California
+        Department of Consumer Affairs may be contacted in writing at 1625 North
+        Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at
+        (800) 952-5210.
       </p>
     </section>
   </div>

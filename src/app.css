@@ -24,6 +24,13 @@ body {
   min-height: 100dvh;
   margin: 0;
   padding: 0;
+  /* NOTE: this computes to 0px in practice. env(safe-area-inset-bottom) is
+     invalid at computed-value time unless the meta viewport sets
+     viewport-fit=cover, so this declaration has long been a silent no-op.
+     Measured 2026-07-29. Left in place rather than removed because it is
+     pre-existing and harmless, but do not rely on it to reserve space: the
+     space the consent banner needs is reserved on .app in +layout.svelte,
+     where the cascade is actually controllable. */
   padding-bottom: env(safe-area-inset-bottom);
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;

@@ -13,7 +13,17 @@ export default defineConfig({
     ['list']
   ],
   use: {
-    baseURL: 'http://localhost:5173',
+    /* PORT 5174, NOT 5173, AND THIS IS NOT COSMETIC.
+       A stale `python -m http.server` has been squatting 5173 on this machine
+       (PID 6731, still up on 2026-07-29). Combined with reuseExistingServer
+       below, Playwright adopted the squatter instead of starting the app, so
+       every relative goto() resolved to a 404 and EVERY page-based test failed
+       on `waiting for locator(...)`. Measured that day: i-checkout-gate, the
+       whole B-01/B-02 regression suite, was 8 of 8 failing for this reason and
+       had been silently providing zero coverage. Against 5174 the same specs
+       return 3 passed / 6 failed, where the 6 need Stripe and Supabase env that
+       this machine does not have. */
+    baseURL: 'http://localhost:5174',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
@@ -52,8 +62,14 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: 'npm run dev',
-    url: 'http://localhost:5173',
+    /* Must pass the port explicitly. Without it vite picks 5173, finds the
+       squatter, and silently increments to some other port that baseURL above
+       is not pointing at. */
+    command: 'npm run dev -- --port 5174',
+    url: 'http://localhost:5174',
+    /* Kept true so a dev server you already have on 5174 is reused rather than
+       fought over. That is safe here in a way it was not on 5173, because 5174
+       is not occupied by a foreign process. */
     reuseExistingServer: true,
     timeout: 30000,
   },

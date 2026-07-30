@@ -146,9 +146,21 @@
     grid-template-columns: minmax(0, 1fr);
     min-height: 100vh;
     min-height: 100dvh;
+    /* Space claimed by the fixed consent banner. Set by DisclaimerBanner while
+       it is on screen, 0 otherwise. Custom properties inherit, so the banner can
+       set it on <body> and it resolves here.
+       Applied on .app rather than on body: an identical declaration on body
+       computed to 0px no matter how it was written, while the same expression
+       resolved correctly on other elements, so something in the cascade there
+       wins in a way that was not worth chasing. This element is owned entirely
+       by this file, which makes the outcome predictable. */
+    padding-bottom: var(--consent-reserve, 0px);
   }
 
-  /* DisclaimerBanner is fixed-position popup - no grid row needed */
+  /* DisclaimerBanner is fixed-position, so it reserves no layout space of its
+     own. Until 2026-07-29 nothing reserved space for it either, and at the end
+     of a page it simply sat on top of whatever was there. See the padding-bottom
+     above and the comment block in DisclaimerBanner.svelte. */
 
   main {
     display: flex;

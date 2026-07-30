@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
   import { browser } from '$app/environment';
   import { fly, fade } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
@@ -29,6 +29,52 @@
   $: if (browser) {
     document.body.style.overflow = disagreed ? 'hidden' : '';
   }
+
+  /**
+   * Measured height of the banner, bound from the element itself rather than
+   * hardcoded, because the mobile breakpoint stacks the buttons under the
+   * sentence and the banner is meaningfully taller there.
+   */
+  let bannerHeight = 0;
+
+  /**
+   * RESERVE REAL LAYOUT SPACE FOR A position:fixed BANNER.
+   *
+   * The banner used to reserve none, so it simply sat on top of whatever was at
+   * the bottom of the viewport. On 2026-07-29 that was measured to be both buy
+   * buttons on /early-access, at 390x844 AND 1280x720:
+   *
+   *   banner [695,832]  button [784,844]   elementFromPoint(centre) = dbnr-agree
+   *
+   * A customer tapping the middle of "Preorder Now: $5" hit "I Agree" instead.
+   * The email field was partly covered too. A first-time visitor is exactly the
+   * person who still has this banner up, and exactly the person trying to buy.
+   *
+   * The value composes with env(safe-area-inset-bottom) in app.css rather than
+   * overwriting it, so the device home indicator keeps its space as well. The
+   * extra 24px covers the banner's own `bottom` offset plus breathing room.
+   *
+   * Consequence worth knowing: while the banner is up the document is ~150px
+   * taller than the viewport, so a short page gains a small scroll. That is the
+   * honest outcome. The banner really does occupy that space, and pretending
+   * otherwise is what covered the button.
+   */
+  $: if (browser) {
+    const showing = !agreed && !disagreed && bannerHeight > 0;
+    document.body.style.setProperty(
+      '--consent-reserve',
+      showing ? `${bannerHeight + 24}px` : '0px'
+    );
+  }
+
+  // Leave no trace. A stranded reserve would leave a permanent dead strip at
+  // the bottom of every page, and a stranded overflow:hidden would leave the
+  // whole site unscrollable.
+  onDestroy(() => {
+    if (!browser) return;
+    document.body.style.removeProperty('--consent-reserve');
+    document.body.style.overflow = '';
+  });
 
   function agree() {
     const at = new Date().toISOString();
@@ -79,6 +125,7 @@
     role="region"
     aria-label="Site disclaimer and acceptance"
     transition:fly={{ y: 80, duration: 300, easing: cubicOut }}
+    bind:clientHeight={bannerHeight}
   >
     <div class="dbnr-inner">
       <div class="dbnr-icon" aria-hidden="true">

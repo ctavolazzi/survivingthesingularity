@@ -8,7 +8,7 @@
  * `preorders` carries a unique constraint on (email, edition_type), which is
  * what enforces one copy per customer. That is correct for a product catalogue
  * and useless as a financial record: a repeat purchase writes no row at all.
- * Live data on 2026-07-29 showed 12 completed Stripe sessions producing 3
+ * Production data observed on 2026-07-29 showed 12 completed Stripe sessions producing 3
  * preorder rows. The other 9 payments existed only in `fulfilled_sessions`,
  * which is a 30-day dedup cache. There was no answer to "who paid us, when,
  * and how much" that came from our own database.

@@ -12,6 +12,7 @@ import {
   markEventProcessed,
   markEventFailed,
 } from '$lib/server/webhookEvents.js';
+import { checkFreshness } from '$lib/server/webhookFreshness.js';
 
 const SECRET_KEY = env.STRIPE_SECRET_KEY;
 const WEBHOOK_SECRET = env.STRIPE_WEBHOOK_SECRET;
@@ -68,6 +69,44 @@ export async function POST({ request }) {
         : `[webhook] signature rejected: ${err.message}`
     );
     return json({ error: 'Invalid signature' }, { status: 400 });
+  }
+
+  /**
+   * B-09. Refuse a timestamp dated further into the future than our tolerance.
+   *
+   * Stripe enforces its tolerance on the PAST side only, so a payload signed
+   * with a far-future `t` keeps a valid signature indefinitely. This bounds the
+   * window on both ends. Reasoning, including why this is hygiene rather than a
+   * patch for an exploitable hole, is in webhookFreshness.js.
+   *
+   * PLACED HERE ON PURPOSE, between verification and beginEvent. After
+   * verification, so the timestamp being judged is one Stripe actually signed
+   * rather than attacker-controlled noise. Before beginEvent, so a rejected
+   * event writes no bookkeeping row, exactly like a bad signature above.
+   *
+   * The guard degrades OPEN when it cannot read a timestamp at all. Do not
+   * tighten that without reading the module header: failing shut on a header
+   * format change would reject every real webhook for the three days Stripe
+   * retries and then lose the orders.
+   */
+  const freshness = checkFreshness(signature, Math.floor(Date.now() / 1000));
+
+  if (!freshness.ok) {
+    console.error(
+      `[webhook] rejecting future-dated event ${event.id}: signed timestamp is ` +
+        `${freshness.skewSeconds}s ahead of this server's clock. If this is every ` +
+        "request rather than one, suspect clock skew on this server, not an attack."
+    );
+    return json({ error: 'Timestamp out of tolerance' }, { status: 400 });
+  }
+
+  if (freshness.degradesOpen) {
+    // Allowed, but this is not a pass and must not read like one in the logs.
+    console.error(
+      `[webhook] could not read a timestamp from the signature header on event ` +
+        `${event.id}; allowing it through. The signature itself still verified. ` +
+        'Suspect a change to the stripe-signature header format.'
+    );
   }
 
   // Event-level bookkeeping and replay detection (B-08). Claimed AFTER signature

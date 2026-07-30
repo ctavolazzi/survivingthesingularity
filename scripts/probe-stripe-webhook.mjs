@@ -146,20 +146,25 @@ await post('valid signature for a DIFFERENT payload -> 400', { payload: p1, head
 await post('timestamp 600s in the PAST -> 400', { payload: p1, header: sign(p1, now() - 600), expect: 400 });
 
 /**
- * B-09. Stripe's constructEvent enforces its tolerance on the PAST side only, so a
- * future-dated timestamp currently sails through. Measured at 200 on 2026-07-29.
+ * B-09, FIXED 2026-07-29. Stripe's constructEvent enforces its tolerance on the
+ * PAST side only, so a future-dated timestamp used to sail through: measured at
+ * 200 earlier the same day. src/lib/server/webhookFreshness.js now bounds the
+ * future side at 300s and the handler rejects past it, so this expects 400.
  *
- * When B-09 is fixed, flip this expectation to 400. Until then a 200 here is the
- * bug reproducing, which is why it is labelled rather than counted as a pass.
+ * A 200 here is therefore a REGRESSION, not the original bug. Before assuming
+ * the guard was removed, check the two ways it deliberately degrades open: an
+ * unparseable stripe-signature header, and a non-finite clock. Both log to the
+ * server console. Set B09_EXPECT=200 to pin the pre-fix behaviour on an old
+ * checkout.
  */
-console.log('\n--- B-09: future-dated timestamp (200 = bug still present) ---');
-const B09_EXPECT = Number(process.env.B09_EXPECT || 200);
+console.log('\n--- B-09: future-dated timestamp (400 = guard in place) ---');
+const B09_EXPECT = Number(process.env.B09_EXPECT || 400);
 await post(`timestamp 600s in the FUTURE -> ${B09_EXPECT}`, { payload: p1, header: sign(p1, now() + 600), expect: B09_EXPECT });
 console.log(
-  B09_EXPECT === 200
-    ? '        200 means B-09 is unfixed, which was the state on 2026-07-29.\n' +
-      '        After fixing it, re-run with B09_EXPECT=400.'
-    : '        Expecting 400, so B-09 is being verified as fixed.'
+  B09_EXPECT === 400
+    ? '        400 means the freshness guard is live. Look for "rejecting future-dated\n' +
+      '        event" in the server log to confirm it is that guard and not something else.'
+    : '        Pinned to 200, the pre-fix behaviour. This asserts the bug, not the fix.'
 );
 
 console.log(`\n${results.filter(Boolean).length}/${results.length} assertions passed`);

@@ -592,6 +592,43 @@ deployed site is fixed, only that the source is. Production still runs `332fdfd`
 
 ---
 
+## 14.1 `WS-G` Adversarial audit triage, 2026-07-29
+
+A 19-item "ADVERSARIAL VULNERABILITY & LIABILITY CHECKLIST" PDF was reviewed.
+It labels the project **v8.7.5**, which is not a version this project has ever
+had, so every checkable claim was verified against source before any action.
+Evidence in ledger round 7.
+
+**Three of its recommendations would have broken production.** Do not action
+them, and do not action them if the document resurfaces:
+
+| Audit item | Advice | Why it is wrong here |
+|---|---|---|
+| 03 | use `stripe.webhooks.constructEvent()` | The handler uses `constructEventAsync` deliberately. On workerd the sync form throws `CryptoProviderOnlySupportsAsyncError` on every request, surfacing as a 400 "Invalid signature". This breaks 100% of webhooks. |
+| 04 | use `$env/static/private` | 9 files use `$env/dynamic/private` on purpose so a missing key cannot break the build. Pages secrets are runtime bindings. |
+| 11 | put "All sales final upon link generation" at checkout | `refundClause()` grants a 30 day full refund. This would put contradictory refund terms on two customer surfaces, the exact `F-01` defect class this plan exists to close. |
+
+**Four claims were simply wrong:** 013 is applied in production (only 014 is
+not), `/privacy` does not exist (the policy is `/policies`), the AGI countdown
+already targets a fixed date, and the version is wrong.
+
+**Most of Phase 2 is out of scope for now.** Items 06, 07 and 08 are CCPA/CPRA
+gated: $25M revenue, 100k California consumers, or half of revenue from selling
+personal information. This project has 9 waitlist rows, 6 test-mode preorders and
+has never taken a real dollar. CalOPPA, Civil Code 1789.3 and CAN-SPAM are not
+revenue gated, which is why those are the ones actioned.
+
+| ID | Pri | Task | Status | Dep | Acceptance |
+|---|---|---|---|---|---|
+| `G-01` | P1 | Consent banner reserved no layout space, so page-end content sat behind it permanently. | <span class="st st-done">DONE</span> `23c3f3b` | none | `.app` reserves the banner height while it is up. Footer clears it at 390x844 (685 vs 695) and 1280x720 (610 vs 612). **Severity of the original report corrected:** the buy buttons are only covered under a forced `scrollIntoView({block:'end'})`; they sit mid-document and can always be scrolled clear. |
+| `G-02` | P1 | **The Playwright suite was dead.** Config pointed at :5173, squatted by a stale `python -m http.server`, and `reuseExistingServer:true` made it adopt the squatter, so every relative `goto()` 404ed. `i-checkout-gate`, the B-01/B-02 regression suite, was 8 of 8 failing with zero coverage. | <span class="st st-done">DONE</span> `23c3f3b` | none | Repointed at 5174 with explicit `--port`. Now 3 passed / 6 failed, the 6 needing Stripe and Supabase env. |
+| `G-03` | P1 | Financial ledger answered Stripe 200 even when the write failed, making the loss permanent. | <span class="st st-done">DONE</span> `0b1d5b5` | none | `checkout_transactions` now fails CLOSED so Stripe retries; `webhook_events` still degrades OPEN. Proven both ways: no DB gives 10/10 with the branch firing 0 times, unreachable DB flips the paid path to 500 while unpaid/unhandled/expired stay 200. Safe because the ledger write precedes every email. |
+| `G-04` | P2 | CA Civil Code 1789.3 notice, DNT disclosure, McGill public-injunctive-relief carve-out. | <span class="st st-prog">DRAFTED, UNREVIEWED</span> `81aa440` | none | All three render, verified with a positive control per page. **Needs a lawyer before it ships.** McGill is the one most in need of review. |
+| `G-05` | P2 | CAN-SPAM postal address absent from every email. | <span class="st st-block">BLOCKED on Chris</span> `81aa440` | none | `EMAIL_POSTAL_ADDRESS` is wired and deliberately unset; the footer renders it only when real. **No address was invented.** Needs the actual business mailing address before any newsletter send. |
+| `G-06` | P2 | Unknown: is Cloudflare Web Analytics enabled? | <span class="st st-todo">TODO</span> | none | `static/_headers` allows `cloudflareinsights.com`, which is edge-injected and invisible from the repo. If it is on, the "no third-party analytics" sentence on /policies needs qualifying. Check the dashboard. |
+| `G-07` | P3 | Residual: a fixed bottom overlay still covers content at some scroll positions, and a tap at the button centre can land on "I Agree". | <span class="st st-dec">DECISION</span> | `G-01` | Only removing the overlay would fix it: move the banner into layout flow as a grid row, or auto-dismiss on scroll. Both are visible UX changes to a consent surface, so this is Chris's call, not a silent fix. |
+| `G-08` | P3 | Audit item 10 makes a real copy point, not a legal one: "Preorder" implies waiting, but digital access is immediate. | <span class="st st-todo">TODO</span> | `D-01` | The FTC merchandise rule angle does not bite, since `shipsPhysicalGoods` is false and delivery is immediate. But renaming the CTA to something like "Instant access" may be both more accurate and better converting. Offer copy, so it needs ratification and must go through `offer.js`. |
+
 ## 15. Appendices
 
 ### 15.1 File inventory, this working copy

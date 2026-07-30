@@ -1,5 +1,6 @@
 <script>
   import BookCover from '$lib/components/BookCover.svelte';
+  import { offer } from '$lib/offer';
 
   export let data;
 </script>
@@ -52,7 +53,7 @@
         </div>
         <div>
           <p class="download-name">The Precedent File</p>
-          <p class="download-meta">29 documented cases with sources, plus the full book in PDF and EPUB</p>
+          <p class="download-meta">{offer.precedentCount} documented cases with sources, plus the full book in PDF and EPUB</p>
         </div>
       </div>
 

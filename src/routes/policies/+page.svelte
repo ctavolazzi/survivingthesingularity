@@ -1,5 +1,9 @@
 <script>
   import { onMount } from 'svelte';
+  // Every offer claim on this page is derived, never typed. See src/lib/offer.js
+  // for why: the sales pages and this page used to describe two different
+  // transactions, and the fix is one object rather than better proofreading.
+  import { offer, cadence, refundClause } from '$lib/offer';
 
   onMount(() => {
     if (window.location.hash) {
@@ -20,8 +24,40 @@
   <div class="policies-inner">
     <header class="p-header">
       <h1>Our Policies</h1>
-      <p class="p-sub">Last updated: 25 May 2026.</p>
+      <p class="p-sub">Last updated: 29 July 2026.</p>
     </header>
+
+    <section id="what-you-buy" class="p-section">
+      <h2>What the {offer.price} preorder is</h2>
+      <p class="p-offer-sentence">{offer.sentence}</p>
+
+      <p><strong>Included:</strong></p>
+      <ul class="p-offer-list">
+        {#each offer.included as item}
+          <li><strong>{item.title}</strong> {item.detail}</li>
+        {/each}
+      </ul>
+
+      <p><strong>Not included:</strong></p>
+      <ul class="p-offer-list">
+        {#each offer.excluded as item}
+          <li><strong>{item.title}</strong> {item.detail}</li>
+        {/each}
+      </ul>
+
+      <p>
+        <strong>What "you keep getting it" means, exactly:</strong> {offer.foreverScope}
+      </p>
+
+      <p>
+        <strong>When the preorder window closes:</strong> {offer.windowClose}
+      </p>
+
+      <p>
+        <strong>How often things change:</strong> {cadence.research} {cadence.site}
+        {cadence.newsletter} {cadence.book} {cadence.print}
+      </p>
+    </section>
 
     <section id="privacy-policy" class="p-section">
       <h2>Privacy &amp; Contact</h2>
@@ -44,18 +80,16 @@
       </p>
 
       <p>
-        <strong>Book Status:</strong> The book is in active development. As of May 2026, no firm shipping date has been set. Periodic progress updates may be sent by email. No specific delivery date is guaranteed.
+        <strong>Book Status:</strong> The book is in active development and readable now, in the state it is currently in. The finished edition is targeted for September 2026. That is a target and not a guarantee, and it is the one date on this page that may move. Your access does not depend on it: the {offer.price} purchase delivers immediately and nothing about it waits for a release date.
       </p>
 
       <p>
-        <strong>Preorder Refund Eligibility:</strong> Preorder customers may request a full refund at any time prior to shipment, for any reason or no reason, by emailing
-        <a href="mailto:info@thecoffeejesus.com">info@thecoffeejesus.com</a>
-        from the email address used to place the order with the subject line "Refund request". Refunds, where eligible, are processed to the original payment method in accordance with applicable law and the policies of the relevant payment processor. No specific timeline for refund processing is guaranteed beyond what applicable law requires. The U.S. FTC Mail, Internet, or Telephone Order Merchandise Rule and any other applicable consumer-protection laws govern over anything stated on this page.
+        <strong>Preorder Refund Eligibility:</strong> {refundClause()}
       </p>
 
       <p>
         <strong>Contact:</strong> Preorder questions and refund requests may be sent to
-        <a href="mailto:info@thecoffeejesus.com">info@thecoffeejesus.com</a>.
+        <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a>.
         No specific response time is promised; reasonable effort, when made, is informational and creates no obligation.
       </p>
     </section>
@@ -140,5 +174,31 @@
   }
   .p-section a:hover {
     color: #fbbf24;
+  }
+
+  /* The offer sentence renders at the top of the legal page at a size that says
+     it matters, because the reason this page exists is that the sales layer and
+     the legal layer once described two different transactions. */
+  .p-offer-sentence {
+    color: #fafafa;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    border-left: 2px solid #f59e0b;
+    padding-left: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .p-offer-list {
+    color: #e9eef5;
+    line-height: 1.75;
+    font-size: 0.94rem;
+    margin: 0 0 1.25rem 0;
+    padding-left: 1.15rem;
+  }
+  .p-offer-list li {
+    margin-bottom: 0.5rem;
+  }
+  .p-offer-list strong {
+    color: #fafafa;
+    font-weight: 700;
   }
 </style>

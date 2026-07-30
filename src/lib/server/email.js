@@ -2,6 +2,9 @@ import { env } from '$env/dynamic/private';
 import { Resend } from 'resend';
 import { BOOK_ACCESS_PASSWORD } from '$lib/bookAccessCode.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
+// The confirmation email is a sales surface like any other, and it is the one a
+// customer keeps. It derives its offer claims from the same object the pages do.
+import { offer } from '$lib/offer.js';
 
 // Dynamic env so a missing key never breaks the build. If RESEND_API_KEY is
 // unset, every send becomes a logged no-op and signups still succeed.
@@ -360,18 +363,26 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
   // four .txt files totalling 3KB and no book at all. If the bundle's contents
   // change, change this sentence in the same commit.
   const body =
-    `${confirmLine}Your spot in line is locked in at 50% off the finished book, and we will email you an exclusive link when it is ready. ` +
-    'Your download is The Precedent File: 29 documented cases of people meeting a machine that changed everything, with every source listed so you can check the work. ' +
+    `${confirmLine}Every digital thing this project makes is now yours, including the finished edition when it lands, at no additional cost. ` +
+    'When the membership launches later, you never pay it. ' +
+    `Your download is The Precedent File: ${offer.precedentCount} documented cases of people meeting a machine that changed everything, with every source listed so you can check the work. ` +
     'It also carries the complete current book in PDF and EPUB, the Municipal Autonomy Code, and the cover art.';
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.
   const pageUrl = `https://survivingthesingularity.com/early-access/success?session_id=${encodeURIComponent(sessionId)}`;
-  // Shared Stripe promotion code that actually redeems the 50% off at the
-  // future book checkout (allow_promotion_codes is already on in
+  // Shared Stripe promotion code (allow_promotion_codes is already on in
   // stripe-checkout/+server.js). The personal code below is this specific
   // customer's proof of a genuine preorder, stored in Supabase
   // (sql/009_preorder_discount_code.sql) - not itself a Stripe object.
+  //
+  // 2026-07-29: what this code buys CHANGED. It used to be 50% off the finished
+  // book, which no longer means anything now that the digital edition is
+  // included in the $5. Per the ratified offer it attaches to the Print
+  // Edition, a separate product at its own price that does not exist yet. The
+  // copy below says exactly that rather than implying the code is redeemable
+  // today, because it is not: there is nothing to redeem it against until the
+  // first Print Edition goes on sale.
   const masterCode = env.MASTER_DISCOUNT_CODE || 'PREORDER50';
 
   // The personal code only exists once sql/009_preorder_discount_code.sql has
@@ -383,8 +394,8 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
   // a customer missing the personal code still has everything they need.
   const hasPersonalCode = Boolean(discount_code);
   const keepLine = hasPersonalCode
-    ? "Keep both of these. You'll need them when the finished book launches."
-    : "Keep this code. You'll need it when the finished book launches.";
+    ? 'Keep both of these. The Print Edition is a separate product and it is not ready yet, so there is nothing to redeem against today. When the first one goes on sale, these are what get you half off it.'
+    : 'Keep this code. The Print Edition is a separate product and it is not ready yet, so there is nothing to redeem against today. When the first one goes on sale, this is what gets you half off it.';
   const personalCodeCell = hasPersonalCode
     ? `<td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
             <span style="font-size:12px;color:#64748b;display:block;">Your personal code</span>
@@ -399,13 +410,13 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download The Precedent File</a>
     <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
-      <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your 50% off launch discount</p>
+      <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your 50% off the Print Edition</p>
       <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">${keepLine}</p>
       <table role="presentation" style="width:100%;border-collapse:collapse;">
         <tr>
           ${personalCodeCell}
           <td style="padding:8px 0;border-top:1px solid rgba(16,185,129,0.15);">
-            <span style="font-size:12px;color:#64748b;display:block;">Code to redeem at checkout</span>
+            <span style="font-size:12px;color:#64748b;display:block;">Code to redeem when the Print Edition is on sale</span>
             <strong style="font-size:18px;letter-spacing:0.08em;color:#f1f5f9;">${escapeHtml(masterCode)}</strong>
           </td>
         </tr>

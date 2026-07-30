@@ -1,13 +1,19 @@
+<script>
+  // These Terms describe a site that sells something, so the price comes from
+  // the offer object rather than being typed here. See src/lib/offer.js.
+  import { offer } from '$lib/offer';
+</script>
+
 <svelte:head>
   <title>Terms of Use - Surviving the Singularity</title>
-  <meta name="description" content="Terms of use governing access to survivingthesingularity.com. Informational only." />
+  <meta name="description" content="Terms of use governing access to survivingthesingularity.com, including the terms of the preorder purchase." />
 </svelte:head>
 
 <div class="terms-page">
   <div class="terms-inner">
     <header class="t-header">
       <h1>Terms of Use</h1>
-      <p class="t-sub">Last updated: 26 May 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
+      <p class="t-sub">Last updated: 29 July 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
     </header>
 
     <section class="t-section">
@@ -26,7 +32,37 @@
     </section>
 
     <section class="t-section">
-      <h2>2. No warranties</h2>
+      <h2>2. Purchases and digital access</h2>
+      <p>
+        <strong>This Site sells something.</strong> Until 29 July 2026 these
+        Terms did not say so, which left a reader of section 1 with the
+        impression that the Site is informational only and nothing is for sale.
+        That was wrong, and this section exists to correct it.
+      </p>
+      <p>
+        The Site offers a one-time {offer.price} preorder. It grants digital
+        access and delivers immediately. <strong>Nothing is shipped.</strong>
+        The Print Edition is a separate product, at its own price, and is not
+        included in the preorder; the preorder includes a discount right
+        against it once it exists.
+      </p>
+      <p>
+        Payment is processed by Stripe, and Stripe's own terms apply to the
+        payment itself. The full description of what the preorder includes and
+        excludes, the bounded scope of ongoing updates, and the refund policy
+        are set out on the
+        <a href="/policies">policies page</a>, which is incorporated into these
+        Terms by reference. Where these Terms and the policies page disagree
+        about what is being sold, the policies page governs.
+      </p>
+      <p>
+        Nothing in section 1 above limits your statutory rights as a consumer in
+        connection with that purchase.
+      </p>
+    </section>
+
+    <section class="t-section">
+      <h2>3. No warranties</h2>
       <p>
         The Site is provided <strong>"as is" and "as available"</strong> without
         warranties of any kind, whether express, implied, statutory, or otherwise.
@@ -44,7 +80,7 @@
     </section>
 
     <section class="t-section">
-      <h2>3. Limitation of liability</h2>
+      <h2>4. Limitation of liability</h2>
       <p>
         To the maximum extent permitted by applicable law, in no event shall
         the operator, its affiliates, contributors, or licensors be liable for
@@ -70,7 +106,7 @@
     </section>
 
     <section class="t-section">
-      <h2>4. Assumption of risk</h2>
+      <h2>5. Assumption of risk</h2>
       <p>
         You acknowledge that you use the Site, and any information obtained
         from it, entirely at your own risk. Topics referenced on the Site -
@@ -84,7 +120,7 @@
     </section>
 
     <section class="t-section">
-      <h2>5. Indemnification</h2>
+      <h2>6. Indemnification</h2>
       <p>
         You agree to defend, indemnify, and hold harmless the operator and
         its affiliates, contributors, and licensors from and against any and
@@ -98,7 +134,7 @@
     </section>
 
     <section class="t-section">
-      <h2>6. Intellectual property</h2>
+      <h2>7. Intellectual property</h2>
       <p>
         Original content on the Site, including text, graphics, layout, code,
         and the "Surviving the Singularity" name and branding, is the property
@@ -116,7 +152,7 @@
     </section>
 
     <section class="t-section">
-      <h2>7. User submissions</h2>
+      <h2>8. User submissions</h2>
       <p>
         The Site does not currently solicit user-generated content. If you
         contact the operator (for example, by email), you grant the operator
@@ -128,7 +164,7 @@
     </section>
 
     <section class="t-section">
-      <h2>8. Third-party links and services</h2>
+      <h2>9. Third-party links and services</h2>
       <p>
         The Site contains links to third-party websites and services that the
         operator does not own or control. The operator is not responsible for
@@ -139,7 +175,7 @@
     </section>
 
     <section class="t-section">
-      <h2>9. Acceptable use</h2>
+      <h2>10. Acceptable use</h2>
       <p>You agree not to:</p>
       <ul>
         <li>Use the Site in any way that violates any applicable law or regulation;</li>
@@ -151,7 +187,7 @@
     </section>
 
     <section class="t-section">
-      <h2>10. Termination</h2>
+      <h2>11. Termination</h2>
       <p>
         The operator may suspend or terminate your access to the Site at any
         time, for any reason or no reason, without notice. Provisions of these
@@ -162,7 +198,7 @@
     </section>
 
     <section class="t-section">
-      <h2>11. Governing law and dispute resolution</h2>
+      <h2>12. Governing law and dispute resolution</h2>
       <p>
         These Terms are governed by the laws of the State of California, USA,
         without regard to its conflict-of-laws principles. Subject to the
@@ -194,7 +230,7 @@
     </section>
 
     <section class="t-section">
-      <h2>12. Changes to these Terms</h2>
+      <h2>13. Changes to these Terms</h2>
       <p>
         The operator may modify these Terms at any time by posting an updated
         version on the Site. Your continued use of the Site after changes are
@@ -204,7 +240,7 @@
     </section>
 
     <section class="t-section">
-      <h2>13. Severability</h2>
+      <h2>14. Severability</h2>
       <p>
         If any provision of these Terms is held invalid or unenforceable, that
         provision shall be enforced to the maximum extent permissible, and the
@@ -213,7 +249,7 @@
     </section>
 
     <section class="t-section">
-      <h2>14. Entire agreement</h2>
+      <h2>15. Entire agreement</h2>
       <p>
         These Terms, together with the <a href="/disclaimer">Disclaimer</a> and
         <a href="/policies">Privacy &amp; Policies</a>, constitute the entire
@@ -222,7 +258,7 @@
     </section>
 
     <section class="t-section">
-      <h2>15. Contact</h2>
+      <h2>16. Contact</h2>
       <p>
         Questions about these Terms? Email
         <a href="mailto:info@survivingthesingularity.com">info@survivingthesingularity.com</a>.

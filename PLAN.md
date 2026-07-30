@@ -119,66 +119,121 @@ names the method, so each is re-runnable.
 
 | ID | Severity | Finding | Method | Status |
 |---|---|---|---|---|
-| `F-01` | **P0** | The $5 offer is described three ways. Homepage and `/early-access` sell digital access plus a 50% launch coupon. `/policies` sells merchandise, offering refunds "prior to shipment" and citing the FTC Mail, Internet, or Telephone Order Merchandise Rule. `/terms` says the site is "informational only" and never mentions a sale. | Read all four rendered surfaces plus source | <span class="st st-dec">DECISION</span> `D-01` |
-| `F-02` | **P1** | Homepage claims "The Precedent File: 29 documented cases". The book contains 23, `P-01` through `P-23`. Likely origin: the site has 29 pages. | `python3 scripts/sts.py verify` reports "all 23 present in the book and indexed in Appendix D" | <span class="st st-todo">TODO</span> `C-01` |
-| `F-03` | **P0** | Bottom buy button on `/early-access` binds `disabled` to `checkoutLoading` only, unlike the top button which also requires a valid email. Button looks clickable, does nothing, and renders its error message 4052px away in a 720px viewport. | Playwright, production, measured | <span class="st st-todo">TODO</span> `B-01` |
+| `F-01` | **P0** | The $5 offer is described three ways. Homepage and `/early-access` sell digital access plus a 50% launch coupon. `/policies` sells merchandise, offering refunds "prior to shipment" and citing the FTC Mail, Internet, or Telephone Order Merchandise Rule. `/terms` says the site is "informational only" and never mentions a sale. **It was worse than three: `/about`, `/checklist`, the navbar, the success page, and the confirmation email each carried a sixth, seventh, eighth, ninth and tenth wording.** | Read all four rendered surfaces plus source, then a lint sweep that found five more | <span class="st st-done">CLOSED</span> `WS-A` |
+| `F-02` | **P1** | Homepage claims "The Precedent File: 29 documented cases". The book contains 23, `P-01` through `P-23`. Likely origin: the site has 29 pages. | `python3 scripts/sts.py verify` reports "all 23 present in the book and indexed in Appendix D" | <span class="st st-done">CLOSED</span> `C-01` |
+| `F-03` | **P0** | Bottom buy button on `/early-access` binds `disabled` to `checkoutLoading` only, unlike the top button which also requires a valid email. Button looks clickable, does nothing, and renders its error message 4052px away in a 720px viewport. | Playwright, production, measured | <span class="st st-done">CLOSED</span> `B-01` `B-02` |
 | `F-04` | **P0** | Store has never taken real money. 92 Stripe sessions with `livemode=true` count 0. 24 charges with 0 livemode paid charges. | Stripe API as authoritative ledger | <span class="st st-todo">TODO</span> `B-04` |
 | `F-05` | **P0** | No live-mode webhook endpoint exists. `webhook_endpoints` count 1, `livemode=false`. Flipping to live keys without creating one loses every order silently. | Stripe API | <span class="st st-todo">TODO</span> `B-03` |
 | `F-06` | P2 | 10 paid test sessions have no corresponding app row (23 complete/paid sessions vs 13 `fulfilled_sessions`). All test mode, no money lost, but the reconciliation gap is real. | Stripe to Supabase reconciliation | <span class="st st-todo">TODO</span> `B-06` |
 | `F-07` | P2 | `preorder_counts` table exists in the schema and is referenced nowhere in `src/`. Plumbing without wiring. | `rg preorder_counts src/` returns nothing | <span class="st st-defer">DEFERRED</span> `F-03` gate |
-| `F-08` | P2 | `/policies` says "As of May 2026, no firm shipping date has been set" while `V0.7.3-SCOPE.md` says the book ships September 2026 with the preorder campaign in August. Stale by two months. | Source comparison | <span class="st st-todo">TODO</span> `A-05` |
+| `F-08` | P2 | `/policies` says "As of May 2026, no firm shipping date has been set" while `V0.7.3-SCOPE.md` says the book ships September 2026 with the preorder campaign in August. Stale by two months. | Source comparison | <span class="st st-done">CLOSED</span> `A-05` |
 | `F-09` | P3 | Local `RESEND_API_KEY` is dead, so email reconciliation against the Resend API is impossible from this machine. Production has its own key and `fulfilled_sessions` shows 13 rows all `status: delivered`, so prod delivery probably works, but "probably" is not adequate under a promise phrased "I will ensure". | Bogus-key and real-key controls both return identical 400 | <span class="st st-block">BLOCKED</span> needs a valid key |
 
 ---
 
-## 5. Decisions required
+## 5. Decisions
 
-These block work. Each has a recommended default and the cost of each
-alternative. Nothing in `WS-A` can start until `D-01` is answered.
+`D-01`, `D-02` and `D-03` were **RATIFIED by Chris on 2026-07-29** and are
+recorded below as answers, not as proposals. The production offer module
+`~/Code/active/sts-v0.7.3/src/lib/offer.js` is the executable copy of this
+section; where prose here and that file disagree, the file is right and this
+section is stale.
 
-### 5.1 `D-01` What does five dollars actually buy?
+### 5.1 `D-01` What does five dollars actually buy? RATIFIED
 
-**Blocks:** `A-01` through `A-06`, `V-01`. Transitively blocks `WS-F`.
+**Answer, and it is not the recommended default that was on the table.** The 50%
+discount survives, but it now attaches specifically to the **Print Edition**
+rather than to the book in general. That is better than the proposed default,
+because it keeps the incentive while pointing it at a real physical good
+carrying its own separate price, instead of discounting a digital edition that
+the offer now gives away.
 
-**Recommended default:**
+Five dollars, once, buys:
 
-> Five dollars, once. You get the book as it is being written, The Precedent
-> File, and every update forever. When the finished book ships, the digital
-> edition is yours at no additional cost.
+| # | Item | Available |
+|---:|---|---|
+| 1 | All the digital content. Full stop. | immediately |
+| 2 | Read the current pre-release version of the book on the site. | immediately |
+| 3 | The Precedent File, 23 documented cases, every source. | immediately |
+| 4 | A permanent spot on the early-access list, until they ask to come off. | immediately |
+| 5 | Only substantial version updates get sent. No weekly noise to this list. | immediately |
+| 6 | A place in line to buy the **Print Edition** at 50% off, as an early supporter. | future |
+| 7 | **Grandfathering.** When the membership or subscription launches, preorder buyers never pay it. | future |
 
-**Why:** it matches what is actually delivered today, it replaces the 50% coupon
-(the weakest thing to be holding a month before launch) with the hook Chris
-identified himself, and it says nothing about a physical copy, which keeps the
-FTC Merchandise Rule out of scope and keeps print and postage out of a five
-dollar price.
+Item 7 is economically the most valuable thing in the list, so it is stated as a
+headline benefit and rendered last in the offer table as the closer, not buried.
 
-**Alternatives:**
+After the preorder window closes that exclusive price is gone, and new arrivals
+who want updates buy a membership or subscription.
 
-| Option | Upside | Cost |
+**Legal consequence, load-bearing:** the $5 SKU still ships nothing. It grants
+digital access plus a discount right on a future purchase. So
+`shipsPhysicalGoods` stays **false**, the FTC Mail, Internet, or Telephone Order
+Merchandise Rule does not apply to it, and `/policies` must **not** carry a
+shipment clause for it. The Print Edition is a separate SKU and gets its own
+terms when it exists. Do not flip the flag to cover it.
+
+### 5.2 `D-02` What is the bounded scope of "forever"? RATIFIED
+
+Bounded on three axes, all three stated on the page rather than in terms:
+
+1. **Cohort-limited.** It belongs to preorder buyers, and the window closes.
+2. **Opt-out at any time by request.** One reply is enough.
+3. **Substantial version updates only.** Not every small change.
+
+That is a real long-term obligation, bounded on every axis, which is what made
+it safe to sell.
+
+### 5.3 `D-03` Does the Print Edition get sold, and at what price? RATIFIED
+
+Yes, as **numbered Print Editions**, not a single release. A new Print Edition
+ships only when enough has changed to warrant one, which Chris estimates at
+every one to two years, tracking the tech industry's own release cadence. Print
+is a separate product at a real price and is not bundled into the $5.
+
+The term of art is **"Print Edition"**, capitalised. Not "printed copy", not
+"physical edition", not "hardback".
+
+### 5.3.1 The cadence conflict, resolved
+
+The handoff flagged a contradiction: "printed versions available as editions,
+updated monthly, and released every 1-2 years". Chris resolved it on 2026-07-29:
+
+| Surface | Cadence |
+|---|---|
+| Research | Daily. |
+| The site | New coverage as often as daily, depending on the news cycle and whether there is anything worth pushing that day. |
+| Newsletter | Weekly. |
+| The book itself, digital | Monthly. |
+| **Print Edition** | A new one every year or two. |
+
+The site line is deliberately hedged in the shipped copy. "Updated daily" flat
+would be a promise that has to be kept on a slow news week, and house rule 5
+forbids a false live-data claim. `cadence.site` in `offer.js` states the true
+thing.
+
+### 5.4 `D-05` Which of the five proposed additions to the offer get shipped? OPEN
+
+**Status:** <span class="st st-dec">DECISION</span>. **Blocks:** nothing
+currently in flight. `WS-A` shipped the seven ratified items only.
+
+Chris asked for input on what else the $5 should carry. Five candidates were
+proposed, chosen for near-zero marginal cost, real perceived value, and
+deliverability by one person on a health-constrained runway. **None are
+implemented**, because none are ratified, and shipping an unratified promise to
+a paying customer is the exact defect class this plan exists to close.
+
+| ID | Proposal | Cost to deliver |
 |---|---|---|
-| A. Keep the 50% coupon | Lowest change cost | Keeps the weak promise. Leaves `/policies` shipment language wrong. |
-| B. Include a physical copy | Strongest emotional offer | Needs a real price ($29 to $39), a fulfilment path, and full Merchandise Rule compliance. Not a five dollar product. |
+| `D-05a` | **Name in the Print Edition.** An opt-in "Founding Readers" appendix listing preorder supporters by name in every Print Edition. | One page of layout. Needs a name field at checkout and a trivial opt-out. |
+| `D-05b` | **First read.** Preorder buyers get each substantial update before the public post goes live. | Send ordering only. |
+| `D-05c` | **Name the grandfathering as a benefit.** Already ratified as item 7; this was only about stating it loudly. | Done, shipped in `WS-A`. |
+| `D-05d` | **Reader questions shape coverage.** Buyers can reply to any update and it gets read, with no promise it gets answered. | Attention only. The "read, not necessarily answered" phrasing is what keeps it sustainable. |
+| `D-05e` | **Version-pinned archive.** Every version they were a supporter for stays downloadable. | Already technically possible: the downloads bucket is private and the signed-URL path exists. |
 
-### 5.2 `D-02` What is the bounded scope of "forever"?
-
-**Blocks:** `A-03`.
-
-"Every update forever" is an unbounded obligation being sold to strangers by a
-person on a health-constrained runway. It needs one written paragraph: what
-counts as an update, in what form it arrives, and what happens if the project
-stops.
-
-**Recommended default:** the `foreverScope` string already written into
-`app/src/lib/offer.js`, which promises revisions and corrections by email and on
-the site for as long as the book is maintained, and guarantees that if the
-project stops, everything already delivered stays yours and readable.
-
-### 5.3 `D-03` Does the physical book get sold at all, and at what price?
-
-**Blocks:** `A-06`, and any promotion that mentions print.
-
-**Recommended default:** yes, later, as a separate product at $29 to $39, listed
-as "not ready" until it is. Not bundled into the $5.
+**Explicitly not proposed:** Discord, live calls, or office hours. One person
+doing daily research cannot also staff a community, and a dead Discord is worse
+than no Discord.
 
 ### 5.4 `D-04` Does the new site replace the current homepage, or ship alongside it?
 
@@ -200,14 +255,15 @@ pages, traceable to a single source of truth.
 
 | ID | Pri | Task | Status | Blocked by | Done when |
 |---|---|---|---|---|---|
-| `A-01` | P0 | Create the production offer module at `src/lib/offer.js` in the live repo, ported from `app/src/lib/offer.js`. | <span class="st st-dec">DECISION</span> | `D-01` | File exists, exports a frozen object, `npm run build` passes. |
-| `A-02` | P0 | Rewrite the `/early-access` hero and bottom copy to render from `offer.sentence`. Delete the inline prose. | <span class="st st-dec">DECISION</span> | `A-01` | `rg '50% off' src/routes/early-access/` returns nothing, or returns only offer-object-derived output. |
-| `A-03` | P0 | Add the bounded "forever" scope paragraph to the offer section, rendered on the page rather than buried in terms. | <span class="st st-dec">DECISION</span> | `D-02` | Paragraph visible on `/early-access` and `/policies`. |
-| `A-04` | P0 | Rewrite `/policies` refund language to derive from `refundClause()`. Remove the shipment clause while `shipsPhysicalGoods` is false. | <span class="st st-dec">DECISION</span> | `A-01` | `/policies` contains no "prior to shipment" string and no FTC Merchandise Rule citation while the offer ships nothing. |
-| `A-05` | P1 | Fix the stale "As of May 2026, no firm shipping date" line. Replace with a derived date or remove it. | <span class="st st-todo">TODO</span> | none | `F-08` closed. Rendered page agrees with `V0.7.3-SCOPE.md`. |
-| `A-06` | P1 | Add the explicit "not included: a printed copy" row to the offer table on the live site. | <span class="st st-dec">DECISION</span> | `D-03` | Excluded row renders at the same size and weight as the included rows. |
-| `A-07` | P1 | Update `/terms` so it acknowledges that a sale occurs on this site. | <span class="st st-todo">TODO</span> | `A-01` | `/terms` references the purchase and links to `/policies`. |
-| `A-08` | P2 | Add a build-time assertion that fails the build if offer language appears outside the offer module. | <span class="st st-todo">TODO</span> | `A-01` | A test that greps components for `$5`/`50% off` and fails. |
+| `A-01` | P0 | Create the production offer module at `src/lib/offer.js` in the live repo. | <span class="st st-done">DONE</span> | none | Frozen object, `refundClause()`, `offerBlurb()`, `cadence`. `npm run build` passes. Carries the 7 ratified items, the excluded Print Edition row, `foreverScope`, `windowClose`, `precedentCount`, `shipsPhysicalGoods:false`. |
+| `A-02` | P0 | Render the `/early-access` hero, includes grid, and bottom CTA from the offer module. Delete the inline prose. | <span class="st st-done">DONE</span> | `A-01` | Rendered `/early-access` carries `offer.sentence` twice; the 4 hand-written cards are replaced by a 7-item `{#each offer.included}`. |
+| `A-03` | P0 | Render the bounded "forever" scope on the page rather than buried in terms. | <span class="st st-done">DONE</span> | `D-02` | `.ea-scope` block on `/early-access` renders `foreverScope` + `windowClose`; `/policies` renders both again in its offer section. |
+| `A-04` | P0 | Derive `/policies` refund language from `refundClause()`. Remove the shipment clause while `shipsPhysicalGoods` is false. | <span class="st st-done">DONE</span> | `A-01` | Rendered `/policies`: `prior to shipment` 0 hits, `Merchandise Rule` 0 hits, derived clause reads "Nothing is shipped, so no shipment date applies and no shipping policy is involved." |
+| `A-05` | P1 | Fix the stale "As of May 2026, no firm shipping date" line. | <span class="st st-done">DONE</span> | none | `F-08` closed. 0 hits for `As of May 2026`. Replaced with a September 2026 target explicitly labelled a target, not a guarantee. |
+| `A-06` | P1 | Add the explicit excluded row to the live site. | <span class="st st-done">DONE</span> | `D-03` | "Not included: the Print Edition itself." renders full-width at the same surface, padding, and type sizes as the included cards. Screenshot verified at 1280 and 390. |
+| `A-07` | P1 | Update `/terms` so it acknowledges that a sale occurs on this site. | <span class="st st-done">DONE</span> | `A-01` | New section 2 "Purchases and digital access", sections 2-15 renumbered to 3-16, links to `/policies` and states it governs on conflict. |
+| `A-09` | P0 | **Surfaces the plan missed.** The lint found `/about`, `/checklist`, `Navbar.svelte`, `/early-access/success`, and the confirmation email all carrying independent offer prose. | <span class="st st-done">DONE</span> | `A-01` | All five now derive. The email's promo-code block re-describes the 50% as attaching to the Print Edition and says plainly there is nothing to redeem against yet. |
+| `A-08` | P2 | Add a build-time assertion that fails the build if offer language appears outside the offer module. | <span class="st st-todo">TODO</span> | `A-01` | A test that greps components for `$5`/`50% off` and fails. `A-09` is the argument for why this is worth building: five surfaces were found by hand that the plan had not listed. |
 
 ---
 
@@ -220,8 +276,8 @@ fires. This is the only workstream that unblocks promotion.
 
 | ID | Pri | Task | Status | Blocked by | Done when |
 |---|---|---|---|---|---|
-| `B-01` | P0 | Fix the bottom buy button binding on `/early-access` line 351 so `disabled` also requires `emailOk`, matching line 162. | <span class="st st-todo">TODO</span> | none | Playwright asserts bottom button `disabled=true` before a valid email and `false` after. `F-03` closed. |
-| `B-02` | P0 | Move the checkout error message so it renders adjacent to the button that produced it, not 4052px away. | <span class="st st-todo">TODO</span> | `B-01` | Measured distance from button to error under 400px at a 720px viewport. |
+| `B-01` | P0 | Fix the bottom buy button binding on `/early-access` so `disabled` also requires `emailOk`, matching the hero button. | <span class="st st-done">DONE</span> | none | Playwright, 1280x720 and 390x844: bottom button `disabled=true` before a valid email, `false` after, and it agrees with the hero button in both states. The bottom CTA now carries its own email field bound to the same value, so a customer who scrolls straight to it can actually buy. See 7.1 |
+| `B-02` | P0 | Move the checkout error message so it renders adjacent to the button that produced it, not 4052px away. | <span class="st st-done">DONE</span> | `B-01` | Measured **gap = 16px**, down from 4052px, at both 1280x720 and 390x844, with the endpoint intercepted so a real error state actually rendered. Button and error confirmed on screen together. |
 | `B-03` | P0 | **Create the live-mode Stripe webhook endpoint** pointing at `/api/webhooks/stripe`. | <span class="st st-todo">TODO</span> | none | Stripe API shows `webhook_endpoints` with a `livemode=true` row. `F-05` closed. |
 | `B-04` | P0 | Set the live-mode signing secret and switch `STRIPE_SECRET_KEY` to the live key in Cloudflare Pages secrets. | <span class="st st-block">BLOCKED</span> | `B-03` | `wrangler pages secret list` shows the live key. Checkout probe reports `mode live`. |
 | `B-05` | P0 | Add the missing `STRIPE_PRICE_ID_AUTHORS` secret. Code reads it, the secret inventory does not contain it. | <span class="st st-todo">TODO</span> | none | `wrangler pages secret list` includes it. |
@@ -229,7 +285,41 @@ fires. This is the only workstream that unblocks promotion.
 | `B-07` | P0 | **Take one real dollar from one real card.** Confirm charge, `fulfilled_sessions` row, transactional email, and working download link. | <span class="st st-block">BLOCKED</span> | `B-04` | All four effects observed and recorded in the verification ledger. `V-04` passes. |
 | `B-08` | P1 | Add webhook event-id idempotency so identical signed bytes replayed twice are recorded once. | <span class="st st-todo">TODO</span> | none | Replay of identical signed payload produces one row, not two. |
 | `B-09` | P2 | Reject future-dated webhook timestamps. Stripe's `constructEvent` enforces tolerance on the past side only; `t+600s` currently returns 200. | <span class="st st-todo">TODO</span> | none | `t+600s` returns 400. |
-| `B-10` | P2 | Shorten the 7 day signed download URL TTL, or accept it explicitly in writing. | <span class="st st-todo">TODO</span> | `D-01` | TTL decision recorded in `/policies`. |
+| `B-10` | P2 | Shorten the 7 day signed download URL TTL, or accept it explicitly in writing. | <span class="st st-todo">TODO</span> | none | TTL decision recorded in `/policies`. Unblocked: `D-01` is ratified. |
+
+### 7.1 A passing check that proved nothing, caught by its own control
+
+Worth recording, because it is the same shape as the 9.4 clipping defect and it
+nearly produced a false PASS on a `P0` fix.
+
+The first run of the `B-01` measurement filled the email field 600ms after
+`load` and asserted the buttons. It reported:
+
+```
+PASS  hero button disabled before a valid email :: disabled=true
+PASS  bottom button disabled before a valid email :: disabled=true
+FAIL  bottom button enabled after a valid email  :: disabled=true
+FAIL  hero field mirrors the bottom field        :: hero=""
+```
+
+The two PASS lines are worthless. The page had not hydrated, and **the
+server-rendered markup already ships both buttons disabled**, so "disabled=true
+before a valid email" is exactly what a completely dead page returns. Had the
+run stopped after the two gate assertions, as a narrower test would have, it
+would have reported the fix verified while measuring a page Svelte was not yet
+listening to. The only reason the flaw surfaced is that a later assertion in the
+same run required the page to actually *react*, and that one failed.
+
+Fixed by adding an explicit hydration gate: type into the hero field, wait for
+the framework to enable the hero button, and only then begin asserting. If the
+gate never fires, the run records `PAGE HYDRATED = FAIL` and voids the rest
+rather than reporting a green suite.
+
+**The rule:** a check whose passing state is indistinguishable from the
+unhydrated, unloaded, or unreachable state is not a check. Every UI assertion
+needs a control that can only pass if the thing under test is alive. This is the
+same lesson as the Cloudflare 1010 bot-block in the verification ledger, where
+every origin probe "passed" because the app never saw the request.
 
 ---
 
@@ -241,7 +331,7 @@ fires. This is the only workstream that unblocks promotion.
 
 | ID | Pri | Task | Status | Blocked by | Done when |
 |---|---|---|---|---|---|
-| `C-01` | P1 | Fix the "29 documented cases" claim to 23. Immediate one-word fix. | <span class="st st-todo">TODO</span> | none | `rg '29 documented' src/` returns nothing. `F-02` closed. |
+| `C-01` | P1 | Fix the "29 documented cases" claim to 23. | <span class="st st-done">DONE</span> | none | Not a one-word fix in the end: the claim appeared on the homepage, `/early-access`, `/early-access/success`, **and inside the confirmation email**, so a customer who bought could be told 29 after the site said 23. All four now render `offer.precedentCount`. Rendered output: `29 documented` 0 hits, `23 documented` 3 hits. `F-02` closed. |
 | `C-02` | P1 | Add a prebuild step that emits `src/lib/stats.generated.json` from `scripts/sts.py`: precedent count, word count, source count, section count. | <span class="st st-todo">TODO</span> | `C-01` | Adding a 24th precedent to the book makes the site say 24 with no site edit. |
 | `C-03` | P1 | Port the provenance pattern: every rendered stat carries the artifact it came from, rendered on the page in mono. | <span class="st st-todo">TODO</span> | `C-02` | Each stat displays a source string. |
 | `C-04` | P2 | Add a build assertion that fails if any four-or-fewer-digit integer appears in sales copy without coming from the stats module. | <span class="st st-todo">TODO</span> | `C-02` | Test exists and fails on a planted hardcoded number. |
@@ -383,10 +473,10 @@ nothing.
 
 | ID | Pri | Task | Status | Blocked by | Done when |
 |---|---|---|---|---|---|
-| `F-01t` | P2 | Rewrite all campaign copy against the ratified offer sentence. Existing drafts assume a physical book and lifetime portal access that the offer does not contain. | <span class="st st-block">BLOCKED</span> | `D-01` | No campaign asset promises anything absent from `offer.js` |
+| `F-01t` | P2 | Rewrite all campaign copy against the ratified offer sentence. Existing drafts assume a physical book and lifetime portal access that the offer does not contain. | <span class="st st-todo">TODO</span> | none | No campaign asset promises anything absent from `offer.js`. Unblocked: `D-01` is ratified, and `src/lib/offer.js` is now the thing to write against. |
 | `F-02t` | P2 | Build audience before scarcity. Current state: waitlist 9, preorders 6 (all test mode). | <span class="st st-block">BLOCKED</span> | `V-04` | Waitlist above a threshold Chris sets |
 | `F-03t` | P3 | Only once the numerator is worth showing, wire `preorder_counts` to a visible counter. Label it with an as-of date unless it genuinely queries on request. | <span class="st st-defer">DEFERRED</span> | `F-02t` | Counter reads a number that helps rather than harms |
-| `F-04t` | P2 | Publish one full precedent as a free public post to demonstrate depth. | <span class="st st-todo">TODO</span> | `D-01` | Post live, links to a working checkout |
+| `F-04t` | P2 | Publish one full precedent as a free public post to demonstrate depth. | <span class="st st-todo">TODO</span> | none | Post live, links to a working checkout. Unblocked by `D-01`, but still gated behind `V-04` in practice: do not point traffic at a checkout that has never taken a real dollar. |
 
 ### 11.1 Explicitly not doing
 
@@ -438,12 +528,40 @@ gate passes, with evidence written to the ledger.
 
 | ID | Gate | Passes when | Method |
 |---|---|---|---|
-| `V-01` | Offer consistency | The offer sentence is byte-identical on the homepage, the checkout page, and `/policies`, and all three trace to one module. No surface contains offer prose that is not derived. | Fetch all three rendered pages, diff the extracted sentence |
+| `V-01` | Offer consistency | The offer sentence is byte-identical on the homepage, the checkout page, and `/policies`, and all three trace to one module. No surface contains offer prose that is not derived. | <span class="st st-done">PASSED</span> 2026-07-29. See 13.2 |
 | `V-02` | Numeric honesty | Every number in sales copy is derivable from an artifact, and adding a 24th precedent changes the site with no site edit. | Add a test precedent, rebuild, confirm the count moved, revert |
 | `V-03` | Demo integrity | Build clean, both routes 200, derived count reads 23, `/policies` contains no shipment clause while `shipsPhysicalGoods` is false. | <span class="st st-done">DONE</span> 2026-07-29. See 13.1 |
 | `V-04` | **Money moves** | One real card is charged, and the charge, the app row, the email, and the download link are all observed. | Live transaction, recorded in the verification ledger |
 | `V-05` | Skill works | `/mvp-spinup` runs stages 0 through 6 on a project that is not this one. | Run it against a second project |
 | `V-06` | No regression | The 23 precedents, 186 sources, security headers, and anon lockdown all still verify after every change. | `python3 scripts/sts.py verify` plus `sts.py schema` |
+
+### 13.2 `V-01` evidence, recorded 2026-07-29
+
+Measured against the live source at `~/Code/active/sts-v0.7.3`, dev server on
+`:5174`, all assertions read from **rendered HTML** rather than from source.
+Port 5173 was skipped: the stale `python -m http.server` (PID 6731) recorded in
+the verification ledger still holds it, and `reuseExistingServer:true` would have
+silently adopted it.
+
+| Check | Result | Evidence |
+|---|---|---|
+| Build | PASS | `vite build` clean, no errors |
+| `/`, `/early-access`, `/policies`, `/terms`, `/about`, `/checklist` | PASS | all HTTP 200 |
+| Offer sentence on homepage | PASS | "Five dollars, once" x1 |
+| Offer sentence on `/early-access` | PASS | "Five dollars, once" x2 (hero and close) |
+| Offer sentence on `/policies` | PASS | "Five dollars, once" x1 |
+| No shipment clause while `shipsPhysicalGoods` is false | PASS | `prior to shipment` 0, `Merchandise Rule` 0 in rendered `/policies` |
+| Refund clause is derived | PASS | "Nothing is shipped, so no shipment date applies and no shipping policy is involved." |
+| Stale ship date gone | PASS | `As of May 2026` 0 hits |
+| `/terms` acknowledges the sale | PASS | "This Site sells something" renders in new section 2 |
+| Precedent count | PASS | `29 documented` 0 hits across all six pages, `23 documented` 3 hits |
+| Book version surfaced on a sales page | PASS | "Draft v0.7.4, in progress" and "You get v0.7.4, updated 2026-07-27", both derived from `book.json` |
+| House rules | PASS | em dashes, `!important`, banned vocabulary, version scheme, false live-data claims: all clean across 8 changed files |
+| Horizontal overflow | PASS | 1280x900 and 390x844: `scrollWidth == clientWidth` |
+| Visual review at 390 and 1280 | PASS | Screenshots inspected, not just measured. Excluded row confirmed rendering at the same weight as included rows |
+
+**Not claimed:** this is the dev server, not production. Nothing here says the
+deployed site is fixed, only that the source is. Production still runs `332fdfd`.
 
 ### 13.1 `V-03` evidence, recorded 2026-07-29
 

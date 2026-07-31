@@ -4174,6 +4174,567 @@ def cmd_verify(args) -> int:
     print(f"\n  {failed} problem(s) found" if failed else "\n  Clean.")
     return 1 if failed else 0
 
+# ──────────────────────────────────────────────────────────────────────
+# factcheck
+# ──────────────────────────────────────────────────────────────────────
+#
+# A chain of custody for every mechanically detectable claim in the book.
+#
+# Local only by design. This pass makes no network request. Every hop it
+# cannot resolve from the working tree plus the git object store is recorded
+# BROKEN with a reason, never inferred. A hop that is merely plausible is
+# still BROKEN.
+#
+# The anchor is the block id from `sts id`, not a line number. Line numbers
+# rot on the next edit; block ids survive it.
+
+FC_SCHEMA = "sts-factcheck/v1"
+FC_REPO = "https://github.com/ctavolazzi/survivingthesingularity"
+FC_BOOK_REL = "src/lib/data/book"
+
+# Verdicts. CONTRADICTED is reserved for a claim this pass can actively
+# disprove from local evidence, which in a local only run means a broken
+# internal reference or a missing asset. An unverified external source is
+# UNCHECKED, never UNSUPPORTED: absence of a network pass is not evidence.
+FC_SUPPORTED = "SUPPORTED"
+FC_PARTIAL = "PARTIAL"
+FC_UNSUPPORTED = "UNSUPPORTED"
+FC_UNCHECKED = "UNCHECKED"
+FC_UNCHECKABLE = "UNCHECKABLE"
+FC_CONTRADICTED = "CONTRADICTED"
+
+_FC_PCT = re.compile(r"\b\d+(?:\.\d+)?\s?(?:%|percent\b)")
+_FC_MONEY = re.compile(
+    r"\$\s?\d[\d,]*(?:\.\d+)?(?:\s*(?:billion|million|trillion|thousand))?", re.I)
+_FC_MAG = re.compile(r"\b\d[\d,]*(?:\.\d+)?\s+(?:billion|million|trillion)\b", re.I)
+_FC_YEAR = re.compile(r"\b(?:1[5-9]\d{2}|20\d{2})\b")
+_FC_URL = re.compile(r"https?://[^\s)>\]\"']+")
+_FC_PREC = re.compile(r"\bP-(\d{2})\b")
+_FC_PREC_HEAD = re.compile(r"^##\s+Precedent\s+P-(\d{2})\s*:", re.M)
+_FC_CHAP = re.compile(r"\bChapter\s+(\d+)\b")
+_FC_APDX = re.compile(r"\bAppendix\s+([A-Z])\b")
+_FC_TABLE = re.compile(r"\bTable\s+(\d+)\b")
+_FC_ATTRIB = re.compile(
+    r"\b(?:said|says|wrote|writes|argued|argues|noted|notes|observed|observes|"
+    r"according to|told|declared|predicted|warned|put it|estimated|reported)\b", re.I)
+_FC_CAUSAL = re.compile(
+    r"\b(?:because|therefore|as a result|led to|leads to|caused|causes|"
+    r"results in|resulted in|drove|drives|means that|which is why)\b", re.I)
+_FC_COMPARE = re.compile(
+    r"\b(?:more than|larger than|greater than|fewer than|less than|the first|"
+    r"the largest|the biggest|the only|the worst|the fastest|twice as|"
+    r"half as|outnumber(?:ed|s)?)\b", re.I)
+
+# Sentence enders that are abbreviations, not sentence boundaries.
+_FC_ABBREV = {"c", "ca", "e.g", "i.e", "vs", "mr", "mrs", "ms", "dr", "st",
+              "no", "fig", "approx", "est", "cf", "al", "u.s", "u.k", "b.c",
+              "a.d", "jr", "sr", "inc", "ltd", "co"}
+
+# Capitalized tokens that carry no proper noun signal on their own.
+_FC_STOPCAP = {
+    "The", "A", "An", "And", "But", "Or", "If", "In", "On", "At", "By", "For",
+    "From", "To", "With", "As", "It", "This", "That", "These", "Those", "There",
+    "When", "Where", "What", "Why", "How", "Who", "We", "You", "They", "He",
+    "She", "I", "Not", "No", "Yes", "So", "Then", "Now", "Every", "Each",
+    "Most", "More", "Less", "One", "Two", "Three", "Their", "His", "Her",
+    "Its", "Our", "Your", "My", "Was", "Were", "Is", "Are", "Be", "Been",
+    "Had", "Has", "Have", "Do", "Does", "Did", "Will", "Would", "Can",
+    "Could", "Should", "May", "Might", "Must", "Let", "Look", "Think",
+    "Consider", "Imagine", "Because", "After", "Before", "During", "While",
+    "Until", "Since", "Between", "Under", "Over", "Above", "Below",
+}
+
+
+def _fc_sentences(text: str):
+    """Split into sentences, returning (sentence, char_offset) pairs.
+
+    Deliberately simple. It merges a fragment back when the break followed a
+    known abbreviation, which is the failure mode that matters here ("c. 1177
+    BC", "U.S."). It is not a linguistics engine and does not pretend to be:
+    a mis-split shows up as a slightly wide or narrow quote, never as a wrong
+    verdict, because verdicts key off the matched span rather than the
+    sentence.
+    """
+    parts, buf, start, pos = [], "", 0, 0
+    for chunk in re.split(r"(?<=[.!?])(\s+)", text):
+        if chunk.strip() == "" and chunk != "":
+            buf += chunk
+            pos += len(chunk)
+            continue
+        if not buf:
+            start = pos
+        buf += chunk
+        pos += len(chunk)
+        tail = buf.rstrip()
+        last = tail.split()[-1].rstrip(".!?").lower() if tail.split() else ""
+        if last in _FC_ABBREV or (len(last) == 1 and last.isalpha()):
+            continue
+        if tail:
+            parts.append((tail, start))
+        buf = ""
+    if buf.strip():
+        parts.append((buf.strip(), start))
+    return parts
+
+
+def _fc_has_proper_noun(sentence: str) -> bool:
+    """True if the sentence carries a capitalized token that is not sentence
+    initial and is not a common capitalized function word."""
+    toks = sentence.split()
+    for tok in toks[1:]:
+        bare = tok.strip("\"'(),.;:!?*_[]")
+        if len(bare) > 2 and bare[0].isupper() and bare not in _FC_STOPCAP:
+            return True
+    return False
+
+
+def _fc_line_of(block_start: int, text: str, offset: int) -> int:
+    """1-indexed file line for a char offset inside a block's joined source."""
+    return block_start + text.count("\n", 0, offset)
+
+
+def _fc_git_state(files):
+    """Receipt state per book file, resolved against what exists on origin.
+
+    Three states, and the distinction is the whole point:
+
+      origin_exact  the working tree file is byte identical to the file at
+                    origin/main, so current line numbers are valid at that
+                    SHA and a permalink pinned to it resolves for anybody.
+      local_only    committed here but not identical to origin, so no SHA a
+                    reader can fetch describes this text.
+      uncommitted   dirty in the working tree. There is no SHA at all.
+
+    Pinning a receipt to a local only SHA would produce a link that 404s for
+    every reader but this machine, so those are recorded BROKEN instead.
+    """
+    dirty = set()
+    porcelain = git("status", "--porcelain", "--", FC_BOOK_REL)
+    for line in porcelain.splitlines():
+        if len(line) > 3:
+            dirty.add(Path(line[3:].strip().strip('"')).name)
+
+    origin_sha = git("rev-parse", "origin/main")
+    origin_short = origin_sha[:12] if origin_sha else None
+    head_sha = git("rev-parse", "HEAD")
+
+    state = {}
+    for fname in files:
+        abs_path = BOOK_DIR / fname
+        rel = f"{FC_BOOK_REL}/{fname}"
+        work_blob = git("hash-object", str(abs_path))
+        origin_blob = git("rev-parse", f"origin/main:{rel}")
+        blame = {}
+        if fname not in dirty:
+            blame = _fc_blame(rel)
+        if fname in dirty:
+            rstate, reason = "uncommitted", (
+                "uncommitted working-tree content, no immutable receipt exists yet")
+        elif work_blob and origin_blob and work_blob == origin_blob:
+            rstate, reason = "origin_exact", None
+        else:
+            rstate, reason = "local_only", (
+                "committed locally but not present on origin, so no SHA a reader "
+                "can resolve describes this text")
+        state[fname] = {
+            "file": fname,
+            "rel_path": rel,
+            "receipt_state": rstate,
+            "reason": reason,
+            "origin_sha": origin_sha or None,
+            "origin_short": origin_short,
+            "head_sha": head_sha or None,
+            "work_blob": work_blob or None,
+            "origin_blob": origin_blob or None,
+            "blame": blame,
+        }
+    return state
+
+
+def _fc_blame(rel_path: str):
+    """line number -> {sha, author, date, summary} from git blame against HEAD."""
+    out = subprocess.run(
+        ["git", "-C", str(ROOT), "blame", "--line-porcelain", "HEAD", "--", rel_path],
+        capture_output=True, text=True)
+    if out.returncode != 0:
+        return {}
+    blame, sha, author, ts, summary, lineno = {}, None, None, None, None, None
+    for line in out.stdout.splitlines():
+        m = re.match(r"^([0-9a-f]{40}) \d+ (\d+)", line)
+        if m:
+            sha, lineno = m.group(1), int(m.group(2))
+        elif line.startswith("author "):
+            author = line[7:]
+        elif line.startswith("author-time "):
+            ts = int(line[12:])
+        elif line.startswith("summary "):
+            summary = line[8:]
+        elif line.startswith("\t") and sha is not None:
+            blame[lineno] = {
+                "sha": sha, "short": sha[:12], "author": author,
+                "date": (date.fromtimestamp(ts).isoformat() if ts else None),
+                "summary": summary,
+            }
+    return blame
+
+
+def _fc_targets(index):
+    """Everything an internal cross-reference could legitimately point at."""
+    chapters, appendices, precedents, tables = set(), set(), set(), set()
+    art_ids, images = set(), {}
+    for sec in index["sections"]:
+        m = re.match(r"^Chapter (\d+)", sec["title"])
+        if m:
+            chapters.add(int(m.group(1)))
+        m = re.match(r"^Appendix ([A-Z])", sec["title"])
+        if m:
+            appendices.add(m.group(1))
+        src = (BOOK_DIR / sec["file"]).read_text(encoding="utf-8")
+        for pm in _FC_PREC_HEAD.finditer(src):
+            precedents.add(f"P-{pm.group(1)}")
+        for blk in sec["blocks"]:
+            if blk.get("art_id"):
+                art_ids.add(blk["art_id"])
+            if blk.get("image"):
+                images[blk["image"]] = blk["id"]
+    # Tables are numbered in prose, not in markup. A "Table N" reference is
+    # resolvable only against the table blocks that actually exist.
+    n_tables = sum(1 for sec in index["sections"]
+                   for blk in sec["blocks"] if blk["type"] == "table")
+    tables = set(range(1, n_tables + 1))
+
+    catalog_ids = set()
+    cat_path = BOOK_DIR / "art-catalog.json"
+    if cat_path.exists():
+        cat = json.loads(cat_path.read_text(encoding="utf-8"))
+        catalog_ids = {a["id"] for a in cat.get("assets", [])}
+    return {
+        "chapters": chapters, "appendices": appendices, "precedents": precedents,
+        "tables": tables, "n_tables": n_tables, "art_ids": art_ids,
+        "images": images, "catalog_ids": catalog_ids,
+    }
+
+
+def _fc_works_cited():
+    """Every URL that appears in the Works Cited appendix, as a set."""
+    cited = set()
+    for fname in ("23-appendix-b.md",):
+        p = BOOK_DIR / fname
+        if p.exists():
+            cited |= set(_FC_URL.findall(p.read_text(encoding="utf-8")))
+    return {u.rstrip(".,);") for u in cited}
+
+
+def _fc_extract(index, targets, cited, gitstate):
+    """The extraction pass. One record per claim, keyed by block id."""
+    claims = []
+    stats = collections.Counter()
+    seq = 0
+
+    for sec in index["sections"]:
+        fname = sec["file"]
+        gs = gitstate[fname]
+        src_lines = (BOOK_DIR / fname).read_text(encoding="utf-8").split("\n")
+
+        for blk in sec["blocks"]:
+            a, b = blk["lines"]
+            text = "\n".join(src_lines[a - 1:b])
+
+            def mk(ctype, quote, offset, verdict, note, **extra):
+                nonlocal seq
+                seq += 1
+                line = _fc_line_of(a, text, offset)
+                bl = gs["blame"].get(line) or {}
+                if gs["receipt_state"] == "origin_exact":
+                    permalink = (f"{FC_REPO}/blob/{gs['origin_sha']}/"
+                                 f"{gs['rel_path']}#L{line}")
+                    link_state = "resolvable"
+                else:
+                    permalink, link_state = None, "broken"
+                rec = {
+                    "seq": seq,
+                    "claim": quote.strip(),
+                    "type": ctype,
+                    "section": sec["id"],
+                    "section_title": sec["title"],
+                    "file": fname,
+                    "line": line,
+                    "block_id": blk["id"],
+                    "block_type": blk["type"],
+                    "block_lines": [a, b],
+                    "block_hash": blk.get("hash"),
+                    "git": {
+                        "receipt_state": gs["receipt_state"],
+                        "reason": gs["reason"],
+                        "sha": bl.get("sha"),
+                        "short": bl.get("short"),
+                        "author": bl.get("author"),
+                        "date": bl.get("date"),
+                        "summary": bl.get("summary"),
+                        "permalink": permalink,
+                        "link_state": link_state,
+                    },
+                    "verdict": verdict,
+                    "note": note,
+                }
+                rec.update(extra)
+                claims.append(rec)
+                stats[ctype] += 1
+                stats[f"verdict:{verdict}"] += 1
+                return rec
+
+            # ---- internal cross references. Exact, and locally decidable.
+            for m in _FC_PREC.finditer(text):
+                pid = f"P-{m.group(1)}"
+                # A precedent's own heading is a definition, not a reference.
+                if re.match(r"^##\s+Precedent\s+" + re.escape(pid), text):
+                    continue
+                ok = pid in targets["precedents"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_SUPPORTED if ok else FC_CONTRADICTED,
+                   (f"{pid} resolves to a `## Precedent {pid}:` heading in the book."
+                    if ok else
+                    f"{pid} is referenced but no `## Precedent {pid}:` heading exists. "
+                    "Dangling internal reference."),
+                   xref_kind="precedent", target=pid, resolved=ok)
+
+            for m in _FC_CHAP.finditer(text):
+                n = int(m.group(1))
+                ok = n in targets["chapters"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_SUPPORTED if ok else FC_CONTRADICTED,
+                   (f"Chapter {n} exists in book.json running order."
+                    if ok else
+                    f"Chapter {n} is referenced but the book has no such chapter. "
+                    "Dangling internal reference."),
+                   xref_kind="chapter", target=f"Chapter {n}", resolved=ok)
+
+            for m in _FC_APDX.finditer(text):
+                letter = m.group(1)
+                ok = letter in targets["appendices"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_SUPPORTED if ok else FC_CONTRADICTED,
+                   (f"Appendix {letter} exists in book.json running order."
+                    if ok else
+                    f"Appendix {letter} is referenced but no such appendix exists. "
+                    "Dangling internal reference."),
+                   xref_kind="appendix", target=f"Appendix {letter}", resolved=ok)
+
+            for m in _FC_TABLE.finditer(text):
+                n = int(m.group(1))
+                ok = n in targets["tables"]
+                mk("internal_xref", m.group(0), m.start(),
+                   FC_PARTIAL if ok else FC_CONTRADICTED,
+                   (f"The book contains {targets['n_tables']} table blocks, so a "
+                    f"Table {n} plausibly exists, but table numbering lives in prose "
+                    "and nothing binds this reference to a specific table block."
+                    if ok else
+                    f"Table {n} is referenced but the book has only "
+                    f"{targets['n_tables']} table blocks."),
+                   xref_kind="table", target=f"Table {n}", resolved=ok)
+
+            # ---- figures. art_id resolution plus the asset actually on disk.
+            if blk["type"] == "figure" and blk.get("image"):
+                img = blk["image"]
+                art_id = blk.get("art_id")
+                on_disk = (STATIC_DIR / img.lstrip("/")).exists()
+                in_cat = bool(art_id) and art_id in targets["catalog_ids"]
+                if not on_disk:
+                    v, note = FC_CONTRADICTED, (
+                        f"The manuscript renders {img} but no such file exists under "
+                        "static/. A reader gets a broken image.")
+                elif not art_id:
+                    v, note = FC_PARTIAL, (
+                        f"{img} is on disk but the block carries no art_id, so it is "
+                        "not enrolled in art-catalog.json and nothing tracks its "
+                        "provenance or licence.")
+                elif not in_cat:
+                    v, note = FC_PARTIAL, (
+                        f"{img} is on disk and the block declares art_id {art_id}, but "
+                        "that id is absent from art-catalog.json.")
+                else:
+                    v, note = FC_SUPPORTED, (
+                        f"{img} exists under static/ and art_id {art_id} resolves in "
+                        "art-catalog.json.")
+                mk("image", blk["preview"][:200], 0, v, note,
+                   image=img, art_id=art_id, on_disk=on_disk, in_catalog=in_cat)
+
+            # ---- URLs. No network this run, so state is UNCHECKED, never dead.
+            for m in _FC_URL.finditer(text):
+                url = m.group(0).rstrip(".,);")
+                host = urllib.parse.urlparse(url).netloc.lower()
+                in_cited = url in cited
+                bare_wiki = host.endswith("wikipedia.org")
+                mk("url", url, m.start(), FC_UNCHECKED,
+                   ("Liveness and content were not checked: this run is local only, "
+                    "no network request was made. "
+                    + ("The URL also appears in the Appendix B Works Cited list."
+                       if in_cited else
+                       "This URL does not appear in the Appendix B Works Cited list.")
+                    + (" Host is Wikipedia, which the P-09 post mortem flags as "
+                       "unverified by default when it is a claim's only citation."
+                       if bare_wiki else "")),
+                   url=url, host=host, in_works_cited=in_cited,
+                   bare_wikipedia=bare_wiki, source_state="UNCHECKED",
+                   archive_url=None, archive_date=None)
+
+            # ---- prose claims. Sentence scoped.
+            if blk["type"] in ("paragraph", "list", "blockquote", "caption", "table"):
+                for sent, off in _fc_sentences(text):
+                    if sent.startswith("!["):
+                        continue
+                    is_stat = bool(_FC_PCT.search(sent) or _FC_MONEY.search(sent)
+                                   or _FC_MAG.search(sent))
+                    years = _FC_YEAR.findall(sent)
+                    is_attrib = (blk["type"] == "blockquote"
+                                 or bool(_FC_ATTRIB.search(sent)))
+                    is_causal = bool(_FC_CAUSAL.search(sent))
+                    is_compare = bool(_FC_COMPARE.search(sent))
+                    has_proper = _fc_has_proper_noun(sent)
+                    nearby_url = bool(_FC_URL.search(text))
+
+                    base_note = (
+                        "No external source was resolved: this run is local only and "
+                        "made no network request. "
+                        + ("The enclosing block carries a URL."
+                           if nearby_url else
+                           "The enclosing block carries no URL, so even a network run "
+                           "would have nothing to resolve from the text itself."))
+
+                    if is_stat:
+                        mk("statistic", sent, off, FC_UNCHECKED,
+                           base_note + (" Comparison language present, which the P-09 "
+                                        "post mortem identifies as the book's actual "
+                                        "failure mode." if is_compare else ""),
+                           has_citation_nearby=nearby_url,
+                           comparison_claim=is_compare)
+                    # A bare year in prose is context, not an asserted event. It is
+                    # promoted to a dated_event claim only when the sentence also
+                    # names something. Everything not promoted is counted and
+                    # reported rather than silently dropped.
+                    if years:
+                        if has_proper or is_attrib:
+                            mk("dated_event", sent, off, FC_UNCHECKED,
+                               base_note, years=sorted(set(years)),
+                               has_citation_nearby=nearby_url,
+                               comparison_claim=is_compare)
+                        else:
+                            stats["year_mentions_not_promoted"] += 1
+                    if is_attrib and not is_stat:
+                        mk("attribution", sent, off, FC_UNCHECKED,
+                           base_note, has_citation_nearby=nearby_url,
+                           comparison_claim=is_compare)
+                    if is_causal and not (is_stat or is_attrib):
+                        mk("causal_claim", sent, off, FC_UNCHECKABLE,
+                           "Causal claims are not mechanically decidable. This one was "
+                           "detected by connective language only and needs a human "
+                           "reader; no automated verdict is offered.",
+                           has_citation_nearby=nearby_url,
+                           comparison_claim=is_compare)
+    return claims, stats
+
+
+# What this pass does NOT cover, stated so the trace cannot imply otherwise.
+FC_NOT_COVERED = [
+    {"kind": "named entity",
+     "why": "No entity extraction is implemented. Recognising 'Frank Darvall' as a "
+            "person and checking that the person said the thing needs either a "
+            "gazetteer or a model, and guessing from capitalisation would produce "
+            "confident nonsense."},
+    {"kind": "external source liveness",
+     "why": "This run is local only by request. No URL was fetched, so no source is "
+            "known live, dead, paywalled or archived. `sts verify --links` does the "
+            "liveness half over the network; content verification is still unbuilt."},
+    {"kind": "archive.org snapshots",
+     "why": "Requires network. Every archive hop is recorded BROKEN."},
+    {"kind": "causal claim adjudication",
+     "why": "Detected but never adjudicated. A connective word is not a causal claim "
+            "and no automated verdict is offered."},
+    {"kind": "quotation wording",
+     "why": "Attributions are located, but whether the quoted words match the source "
+            "text is not checked. That needs the source, which needs network."},
+    {"kind": "table numbering",
+     "why": "Table numbers live in prose, not in markup. Nothing binds 'Table 2' to a "
+            "specific table block, so these resolve only to a plausible range."},
+]
+
+
+def cmd_factcheck(args) -> int:
+    index = _live_index()
+    targets = _fc_targets(index)
+    cited = _fc_works_cited()
+    files = [sec["file"] for sec in index["sections"]]
+    gitstate = _fc_git_state(files)
+    claims, stats = _fc_extract(index, targets, cited, gitstate)
+
+    by_state = collections.Counter(g["receipt_state"] for g in gitstate.values())
+    verdicts = collections.Counter(c["verdict"] for c in claims)
+    types = collections.Counter(c["type"] for c in claims)
+    resolvable = sum(1 for c in claims if c["git"]["link_state"] == "resolvable")
+
+    report = {
+        "schema": FC_SCHEMA,
+        "generated": date.today().isoformat(),
+        "network": False,
+        "repo": FC_REPO,
+        "repo_public": True,
+        "book_version": index.get("book_version"),
+        "totals": {
+            "sections": len(index["sections"]),
+            "blocks": index["totals"]["blocks"],
+            "words": index["totals"]["words"],
+            "claims": len(claims),
+            "receipts_resolvable": resolvable,
+            "year_mentions_not_promoted": stats.get("year_mentions_not_promoted", 0),
+        },
+        "by_type": dict(types),
+        "by_verdict": dict(verdicts),
+        "by_receipt_state": dict(by_state),
+        "targets": {
+            "chapters": sorted(targets["chapters"]),
+            "appendices": sorted(targets["appendices"]),
+            "precedents": sorted(targets["precedents"]),
+            "tables": targets["n_tables"],
+            "art_ids": len(targets["art_ids"]),
+            "catalog_ids": len(targets["catalog_ids"]),
+            "works_cited_urls": len(cited),
+        },
+        "git": {fname: {k: v for k, v in g.items() if k != "blame"}
+                for fname, g in gitstate.items()},
+        "not_covered": FC_NOT_COVERED,
+        "claims": claims,
+    }
+
+    if args.out:
+        outp = Path(args.out)
+        outp.parent.mkdir(parents=True, exist_ok=True)
+        outp.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+                        encoding="utf-8")
+
+    if args.json:
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        return 0
+
+    t = report["totals"]
+    print(f"\nfactcheck  {t['claims']:,} claims across {t['sections']} sections "
+          f"({t['words']:,} words)")
+    print("  network: OFF. No URL was fetched. External source hops are BROKEN.\n")
+    print("  by type")
+    for k, v in types.most_common():
+        print(f"    {k:<18} {v:>6}")
+    print("\n  by verdict")
+    for k, v in verdicts.most_common():
+        print(f"    {k:<18} {v:>6}")
+    print("\n  git receipts")
+    for k, v in by_state.most_common():
+        print(f"    {k:<18} {v:>6} file(s)")
+    print(f"    {'resolvable links':<18} {resolvable:>6} of {t['claims']} claims")
+    print(f"\n  {t['year_mentions_not_promoted']} bare year mentions were triaged out "
+          "as prose context, not claims.")
+    if args.out:
+        print(f"\n  wrote {args.out}")
+    return 0
+
 
 def main():
     ap = argparse.ArgumentParser(prog="sts.py", description=__doc__,
@@ -4196,6 +4757,13 @@ def main():
                    help="with 'all', also liveness-check every Works Cited URL "
                         "(network, slow)")
     p.set_defaults(fn=cmd_verify)
+
+    p = sub.add_parser("factcheck",
+                       help="chain of custody for every mechanically detectable "
+                            "claim (local only, no network)")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--out", help="write the JSON inventory to this path")
+    p.set_defaults(fn=cmd_factcheck)
 
     p = sub.add_parser("stripe")
     p.add_argument("--json", action="store_true")

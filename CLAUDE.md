@@ -67,6 +67,20 @@ npm run preview      # Preview production build
 (`npm run create-blog` scaffolds the LEGACY blog format and does not register the
 post in the listing — do not use it for new posts; see Content Architecture.)
 
+## Provenance and fact-checking
+
+`sts.py factcheck` traces every mechanically detectable claim in the book back to
+its evidence, and `scripts/build_factcheck_trace.py` renders that as the public
+audit page at `/factcheck`. Full rules, the three git receipt states, what the
+pass cannot see, and the verification discipline it was built under live in ONE
+place: **`FACTCHECK.md`**. Read it before changing the harness or the trace page.
+Do not restate it here.
+
+The one thing worth repeating because it bites: **this worktree carries dirty
+paths that belong to other sessions**, including `scripts/sts.py` and several
+book chapters. Stage by name and check what else is in a file before committing
+it. Never `git add -A`.
+
 ## Content Architecture
 
 ### The book: `src/lib/data/book/` (single source of truth)

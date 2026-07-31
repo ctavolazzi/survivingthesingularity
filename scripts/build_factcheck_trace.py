@@ -639,16 +639,76 @@ apply();
 """
 
 
+def summarise(report):
+    """The headline numbers, for the site route to import.
+
+    The /factcheck page must not hardcode a single count either, so it reads
+    this file instead. One generator, one set of numbers, no third copy to
+    drift."""
+    claims = report["claims"]
+    def count(pred):
+        return sum(1 for c in claims if pred(c))
+    urls = [c for c in claims if c["type"] == "url"]
+    return {
+        "generated": report["generated"],
+        "book_version": report["book_version"],
+        "repo": report["repo"],
+        "network": report["network"],
+        "words": report["totals"]["words"],
+        "sections": report["totals"]["sections"],
+        "blocks": report["totals"]["blocks"],
+        "claims": len(claims),
+        "resolvable": count(lambda c: c["git"]["link_state"] == "resolvable"),
+        "broken": count(lambda c: c["git"]["link_state"] != "resolvable"),
+        "by_verdict": report["by_verdict"],
+        "by_type": report["by_type"],
+        "urls": len(urls),
+        "wikipedia": sum(1 for c in urls if c.get("bare_wikipedia")),
+        "not_in_works_cited": sum(1 for c in urls if c.get("in_works_cited") is False),
+        "comparison_claims": count(lambda c: c.get("comparison_claim")),
+        "figures": count(lambda c: c["type"] == "image"),
+        "internal_refs": count(lambda c: c["type"] == "internal_xref"),
+        "uncommitted_files": sorted(
+            g["file"] for g in report["git"].values()
+            if g["receipt_state"] == "uncommitted"),
+        "not_covered": report["not_covered"],
+    }
+
+
 def main():
-    if len(sys.argv) != 3:
-        sys.exit("usage: build_factcheck_trace.py <in.json> <out.html>")
-    src, dst = Path(sys.argv[1]), Path(sys.argv[2])
+    args = sys.argv[1:]
+    if len(args) < 2:
+        sys.exit("usage: build_factcheck_trace.py <in.json> <out.html> "
+                 "[--summary <path.json>] [--static <path.html>]")
+    src, dst = Path(args[0]), Path(args[1])
+    summary_path = static_path = None
+    i = 2
+    while i < len(args):
+        if args[i] == "--summary":
+            summary_path = Path(args[i + 1]); i += 2
+        elif args[i] == "--static":
+            static_path = Path(args[i + 1]); i += 2
+        else:
+            sys.exit(f"unknown argument: {args[i]}")
+
     report = json.loads(src.read_text(encoding="utf-8"))
     html = build(report)
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text(html, encoding="utf-8")
     kb = len(html.encode("utf-8")) / 1024
     print(f"wrote {dst}  ({kb:,.0f} KB, {len(report['claims']):,} claims)")
+
+    if static_path:
+        static_path.parent.mkdir(parents=True, exist_ok=True)
+        static_path.write_text(html, encoding="utf-8")
+        print(f"wrote {static_path}  (served by the site)")
+
+    if summary_path:
+        summary_path.parent.mkdir(parents=True, exist_ok=True)
+        summary_path.write_text(
+            json.dumps(summarise(report), indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8")
+        print(f"wrote {summary_path}  (headline numbers for the /factcheck route)")
 
 
 if __name__ == "__main__":

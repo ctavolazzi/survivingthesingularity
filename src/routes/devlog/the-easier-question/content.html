@@ -1,240 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Easier Question</title>
-<meta name="description" content="Four checks came back green while the thing they were supposed to prove stayed false. Every one answered a question that was easier than the one being asked.">
-<meta name="robots" content="noindex, follow">
-<script type="importmap">
-{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
-</script>
-<style>
-:root {
-  --pf-bg:#0b0e14; --pf-surface:#141922; --pf-surface2:#1b2230; --pf-line:#232b39;
-  --pf-ink:#e6edf7; --pf-muted:#93a1b8; --pf-accent:#f59e0b; --pf-accent2:#38bdf8;
-  --pf-good:#34d399; --pf-bad:#f87171; --pf-warn:#fbbf24;
-  --pf-max:46rem; --pf-bleed:66rem;
-  --pf-mono: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, monospace;
-  --pf-sans: ui-sans-serif, system-ui, "Inter", -apple-system, sans-serif;
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --pf-bg:#fbfaf7; --pf-surface:#ffffff; --pf-surface2:#f4f1ea; --pf-line:#e3ded3;
-    --pf-ink:#1c1917; --pf-muted:#6b6558; --pf-accent:#b45309; --pf-accent2:#0369a1;
-    --pf-good:#047857; --pf-bad:#b91c1c; --pf-warn:#a16207;
-  }
-}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--pf-bg);color:var(--pf-ink);font-family:var(--pf-sans);
-  font-size:1.06rem;line-height:1.7;-webkit-font-smoothing:antialiased}
-.wrap{max-width:var(--pf-max);margin:0 auto;padding:0 1.25rem}
-.pf-bleed{max-width:var(--pf-bleed);margin-inline:auto;padding:0 1.25rem}
-.scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
-img,svg,canvas{max-width:100%;display:block}img{height:auto}
-a{color:var(--pf-accent2)}
-h1{font-size:clamp(2.1rem,7vw,3.6rem);line-height:1.03;letter-spacing:-.035em;margin:0 0 .8rem}
-h2{font-size:clamp(1.4rem,3.4vw,1.95rem);line-height:1.18;margin:4rem 0 .9rem;letter-spacing:-.018em;scroll-margin-top:2rem}
-h3{font-size:1.06rem;margin:2.2rem 0 .4rem;color:var(--pf-accent);font-family:var(--pf-mono);font-weight:600}
-p{margin:0 0 1.15rem}
-strong{font-weight:650;color:var(--pf-ink)}
-code.inline{font-family:var(--pf-mono);font-size:.86em;background:var(--pf-surface2);padding:.12em .38em;border-radius:4px}
-
-/* Back link to the index. A generated post is a standalone file, so without
-   this it is a dead end for anyone who lands on it directly. */
-.pf-back{position:fixed;top:.9rem;left:.9rem;z-index:70;font-family:var(--pf-mono);font-size:.72rem;
-  text-decoration:none;color:var(--pf-muted);background:color-mix(in srgb,var(--pf-bg) 88%,transparent);
-  border:1px solid var(--pf-line);border-radius:999px;padding:.35rem .75rem;backdrop-filter:blur(6px)}
-.pf-back:hover{color:var(--pf-ink);border-color:var(--pf-muted)}
-@media(max-width:900px){.pf-back{position:static;display:inline-block;margin:1rem 0 0 1.25rem}}
-
-/* progress + toc */
-.pf-progress{position:fixed;top:0;left:0;right:0;height:3px;background:transparent;z-index:60}
-.pf-progress span{display:block;height:100%;background:var(--pf-accent);transform:scaleX(0);transform-origin:0 50%}
-.pf-toc{position:sticky;top:1.5rem;font-family:var(--pf-mono);font-size:.76rem}
-.pf-toc-h{text-transform:uppercase;letter-spacing:.14em;color:var(--pf-muted);margin:0 0 .5rem}
-.pf-toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--pf-line)}
-.pf-toc li{margin:0}
-.pf-toc a{display:block;padding:.3rem .7rem;color:var(--pf-muted);text-decoration:none;border-left:2px solid transparent;margin-left:-1px}
-.pf-toc a:hover{color:var(--pf-ink)}
-.pf-toc a.on{color:var(--pf-accent);border-left-color:var(--pf-accent)}
-@media(max-width:1180px){.pf-toc{display:none}}
-.pf-layout{display:grid;grid-template-columns:1fr;gap:0}
-/* Grid and flex items default to min-width:auto, which means they refuse to
-   shrink below their CONTENT's min-content width. A .scroll-x child holding a
-   660px min-width SVG therefore widened this whole column to 736px at a 390px
-   viewport, and the overflow-x:auto never got a chance to scroll. min-width:0
-   is what lets the scroll container actually do its job.
-   No backticks in this file: the whole stylesheet is one template literal. */
-.pf-layout>*{min-width:0}
-@media(min-width:1181px){
-  .pf-layout{grid-template-columns:minmax(0,1fr) 15rem;max-width:74rem;margin-inline:auto;gap:2.5rem;padding:0 1.25rem}
-  .pf-layout .wrap{padding:0;max-width:var(--pf-max)}
-}
-
-/* hero */
-.pf-hero{position:relative;margin-bottom:2.5rem}
-.pf-hero-img{width:100%;height:clamp(200px,34vw,380px);object-fit:cover;border-radius:14px;filter:saturate(.72) contrast(1.06)}
-/* Only the bottom edge is shaded, enough to seat the image against the page.
-   Fading the whole frame washed the photograph out to near white in light mode. */
-.pf-hero-shade{position:absolute;inset:0;border-radius:14px;
-  background:linear-gradient(180deg,transparent 0%,transparent 62%,color-mix(in srgb,var(--pf-bg) 62%,transparent) 100%)}
-.pf-hero-credit{font-family:var(--pf-mono);font-size:.68rem;color:var(--pf-muted);margin-top:.5rem}
-.pf-hero-credit a{color:var(--pf-muted)}
-.byline{font-family:var(--pf-mono);font-size:.72rem;color:var(--pf-muted);text-transform:uppercase;letter-spacing:.17em;margin:0 0 1.2rem}
-.dek{color:var(--pf-muted);font-size:clamp(1.05rem,2.4vw,1.3rem);line-height:1.5;margin:0 0 2rem}
-
-/* stat strip */
-.pf-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
-  background:var(--pf-line);border:1px solid var(--pf-line);border-radius:12px;overflow:hidden;margin:2rem 0}
-.pf-stat{background:var(--pf-surface);padding:1rem .9rem;text-decoration:none;display:block;transition:background .2s}
-.pf-stat:hover{background:var(--pf-surface2)}
-.pf-stat-n{display:block;font-family:var(--pf-mono);font-size:1.7rem;font-weight:700;color:var(--pf-ink);letter-spacing:-.02em}
-.pf-stat[data-tone=bad] .pf-stat-n{color:var(--pf-bad)}
-.pf-stat[data-tone=good] .pf-stat-n{color:var(--pf-good)}
-.pf-stat[data-tone=accent] .pf-stat-n{color:var(--pf-accent)}
-.pf-stat-l{display:block;font-size:.78rem;color:var(--pf-muted);margin-top:.15rem;line-height:1.35}
-.pf-stat-s{display:block;font-family:var(--pf-mono);font-size:.66rem;color:var(--pf-muted);opacity:.75;margin-top:.3rem}
-
-/* tldr */
-.pf-tldr{background:var(--pf-surface);border:1px solid var(--pf-line);border-left:3px solid var(--pf-accent);
-  border-radius:0 12px 12px 0;padding:1.2rem 1.4rem;margin:2.5rem 0}
-.pf-tldr-h{font-family:var(--pf-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.15em;
-  color:var(--pf-accent);margin:0 0 .7rem}
-.pf-tldr-list{margin:0;padding-left:1.15rem;font-size:.99rem}
-.pf-tldr-list li{margin-bottom:.45rem}
-.pf-tldr-verdict{margin:.9rem 0 0;padding-top:.9rem;border-top:1px solid var(--pf-line);font-weight:600}
-
-/* finding cards */
-.pf-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1rem;margin:2rem 0}
-.pf-card{background:var(--pf-surface);border:1px solid var(--pf-line);border-radius:12px;padding:1.1rem;
-  display:flex;flex-direction:column}
-.pf-card[data-tone=bad]{border-top:3px solid var(--pf-bad)}
-.pf-card[data-tone=accent]{border-top:3px solid var(--pf-accent)}
-.pf-card-h{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.6rem}
-.pf-card-icon{image-rendering:pixelated;flex:0 0 auto}
-.pf-card-n{font-family:var(--pf-mono);font-size:.68rem;color:var(--pf-muted);letter-spacing:.1em}
-/* Card headlines are prose, not code. They inherit h3 otherwise, whose mono
-   accent styling made them read as labels rather than titles. */
-.pf-card-t{font-size:1.06rem;margin:.1rem 0 0;line-height:1.25;letter-spacing:-.015em;
-  font-family:var(--pf-sans);color:var(--pf-ink);font-weight:650}
-.pf-card-lede{font-size:.9rem;color:var(--pf-muted);margin:0 0 .8rem;line-height:1.55}
-.pf-card-gap{margin:0 0 .9rem;font-size:.8rem;display:grid;gap:.35rem}
-.pf-card-gap div{display:grid;grid-template-columns:5.2rem 1fr;gap:.5rem}
-.pf-card-gap dt{font-family:var(--pf-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--pf-muted)}
-.pf-card-gap dd{margin:0;color:var(--pf-muted)}
-.pf-card-gap dd.pf-need{color:var(--pf-ink);font-weight:600}
-.pf-card-link{margin-top:auto;font-family:var(--pf-mono);font-size:.75rem;text-decoration:none}
-
-/* evidence */
-.pf-evidence{border:1px solid var(--pf-line);border-radius:10px;background:var(--pf-surface);margin:1.5rem 0;overflow:hidden}
-.pf-evidence[data-tone=good]{border-left:3px solid var(--pf-good)}
-.pf-evidence[data-tone=bad]{border-left:3px solid var(--pf-bad)}
-.pf-evidence[data-tone=accent]{border-left:3px solid var(--pf-accent)}
-.pf-evidence summary{cursor:pointer;padding:.75rem 1rem;font-family:var(--pf-mono);font-size:.8rem;
-  color:var(--pf-ink);list-style:none;display:flex;align-items:center;gap:.55rem;user-select:none}
-.pf-evidence summary::-webkit-details-marker{display:none}
-.pf-evidence summary:hover{background:var(--pf-surface2)}
-.pf-ev-chev{width:0;height:0;border-left:5px solid var(--pf-accent);border-top:4px solid transparent;
-  border-bottom:4px solid transparent;transition:transform .18s;flex:0 0 auto}
-.pf-evidence[open] .pf-ev-chev{transform:rotate(90deg)}
-.pf-ev-body{padding:0 1rem 1rem;border-top:1px solid var(--pf-line)}
-.pf-ev-body>*:first-child{margin-top:1rem}
-
-/* code */
-pre.code{background:var(--pf-surface);border:1px solid var(--pf-line);border-left:3px solid var(--pf-accent2);
-  border-radius:8px;padding:.9rem 1rem;overflow-x:auto;font-family:var(--pf-mono);font-size:.8rem;
-  line-height:1.65;margin:1.5rem 0}
-pre.code .c{color:var(--pf-muted)} pre.code .k{color:var(--pf-accent2)} pre.code .s{color:var(--pf-good)}
-pre.code .hl{color:var(--pf-accent);font-weight:600}
-pre.code .add{color:var(--pf-good);display:block} pre.code .del{color:var(--pf-bad);display:block;opacity:.9}
-
-/* tables */
-table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:32rem}
-th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--pf-line);vertical-align:top}
-th{font-family:var(--pf-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--pf-muted);font-weight:600}
-.pf-filter-wrap{margin:1.6rem 0}
-.pf-filter-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.pf-filter{width:100%;max-width:22rem;background:var(--pf-surface);border:1px solid var(--pf-line);
-  border-radius:8px;padding:.5rem .7rem;color:var(--pf-ink);font-family:var(--pf-mono);font-size:.82rem}
-.pf-filter-count{font-family:var(--pf-mono);font-size:.72rem;color:var(--pf-muted);margin-left:.7rem}
-
-/* scenes */
-.pf-scene-wrap{position:relative;margin:2.6rem auto}
-.pf-canvas{width:100%;aspect-ratio:16/9;background:transparent;display:block}
-.pf-canvas-short{aspect-ratio:21/9}
-.pf-controls{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-bottom:.7rem}
-.pf-controls-label{font-family:var(--pf-mono);font-size:.66rem;text-transform:uppercase;
-  letter-spacing:.12em;color:var(--pf-muted);margin-right:.15rem}
-.pf-controls-sep{width:1px;height:16px;background:var(--pf-line);margin:0 .45rem}
-.pf-chip{font-family:var(--pf-mono);font-size:.72rem;padding:.28rem .6rem;border-radius:999px;
-  border:1px solid var(--pf-line);background:var(--pf-surface);color:var(--pf-muted);cursor:pointer;transition:all .16s}
-.pf-chip:hover{color:var(--pf-ink);border-color:var(--pf-muted)}
-.pf-chip.on{background:var(--pf-accent);border-color:var(--pf-accent);color:#0b0e14;font-weight:600}
-/* The readout is anchored to the CANVAS, not the figure. Anchoring it to the
-   figure put it on top of the filter chips as soon as they wrapped to a second
-   row on a narrower screen. */
-.pf-stage{position:relative}
-.pf-readout{position:absolute;top:.7rem;left:.7rem;font-family:var(--pf-mono);font-size:.72rem;
-  background:color-mix(in srgb,var(--pf-bg) 86%,transparent);border:1px solid var(--pf-line);
-  border-radius:6px;padding:.4rem .6rem;color:var(--pf-muted);pointer-events:none;max-width:calc(100% - 1.4rem)}
-.pf-readout b{color:var(--pf-ink)}
-.pf-legend{display:flex;gap:1rem;flex-wrap:wrap;font-family:var(--pf-mono);font-size:.7rem;color:var(--pf-muted);margin-top:.6rem}
-.pf-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:.35rem}
-
-/* compare slider */
-.pf-compare{margin:2.5rem 0}
-.pf-compare-stage{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--pf-line);line-height:0}
-.pf-compare-after{width:100%}
-.pf-compare-before{position:absolute;inset:0;width:50%;overflow:hidden;border-right:2px solid var(--pf-accent)}
-.pf-compare-before img{height:100%;width:auto;max-width:none}
-.pf-compare-range{position:absolute;inset:auto 0 0;width:100%;margin:0;padding:0;opacity:0;height:100%;cursor:ew-resize}
-.pf-compare-tag{position:absolute;top:.5rem;font-family:var(--pf-mono);font-size:.66rem;text-transform:uppercase;
-  letter-spacing:.1em;padding:.2rem .45rem;border-radius:4px;background:color-mix(in srgb,var(--pf-bg) 80%,transparent);color:var(--pf-muted)}
-.pf-compare-tag-l{left:.5rem} .pf-compare-tag-r{right:.5rem}
-
-/* misc prose furniture */
-.callout{border-left:3px solid var(--pf-accent);background:var(--pf-surface);padding:.95rem 1.15rem;
-  border-radius:0 8px 8px 0;margin:1.9rem 0;font-size:.97rem}
-.callout.warn{border-left-color:var(--pf-bad)}
-.callout.good{border-left-color:var(--pf-good)}
-.pull{font-size:clamp(1.25rem,3.2vw,1.62rem);line-height:1.32;font-weight:650;border-top:1px solid var(--pf-line);
-  border-bottom:1px solid var(--pf-line);padding:1.5rem 0;margin:3rem 0;letter-spacing:-.018em}
-figure{margin:2.6rem 0}
-figcaption{font-size:.84rem;color:var(--pf-muted);margin-top:.8rem;line-height:1.5}
-.pf-marker{display:flex;align-items:center;gap:.75rem;margin:4rem 0 .6rem}
-.pf-marker img{image-rendering:pixelated;flex:0 0 auto}
-.pf-marker h2{margin:0}
-.pf-fn{position:relative}
-.pf-fn-mark{font-family:var(--pf-mono);font-size:.7em;vertical-align:super;background:none;border:none;
-  color:var(--pf-accent);cursor:pointer;padding:0 .1em}
-.pf-fn-body{display:none;background:var(--pf-surface);border:1px solid var(--pf-line);border-radius:8px;
-  padding:.7rem .85rem;font-size:.85rem;color:var(--pf-muted);margin:.6rem 0}
-.pf-fn.open .pf-fn-body{display:block}
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
-
-/* provenance */
-.provenance{border-top:1px solid var(--pf-line);margin-top:4.5rem;padding-top:2rem}
-.prov-lede{color:var(--pf-muted);font-size:.92rem}
-.prov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.7rem;margin:1.2rem 0}
-.prov-grid div{background:var(--pf-surface);border:1px solid var(--pf-line);border-radius:8px;padding:.6rem .75rem}
-.prov-grid dt{font-family:var(--pf-mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.1em;color:var(--pf-muted)}
-.prov-grid dd{margin:.25rem 0 0;font-size:.84rem;word-break:break-word}
-.prov-warn{color:var(--pf-bad);font-family:var(--pf-mono);font-size:.7rem}
-.prov-table{font-size:.8rem}
-.prov-raw summary{cursor:pointer;font-family:var(--pf-mono);font-size:.76rem;color:var(--pf-muted)}
-footer.pf-foot{border-top:1px solid var(--pf-line);margin-top:3rem;padding:2rem 0 4rem;font-size:.86rem;color:var(--pf-muted)}
-
-/* Reduced motion: same selectors, later in the file, so source order wins the
-   cascade with no priority override. SMIL and WebGL are handled in script. */
-@media (prefers-reduced-motion: reduce){
-  .reveal{opacity:1;transform:none;transition:none}
-  .pf-ev-chev{transition:none}
-}</style>
-</head>
-<body>
-<a class="pf-back" href="/devlog">back to devlog</a>
 
 <div class="pf-progress" role="presentation"><span id="pf-progress-fill"></span></div>
 <div class="pf-layout">
@@ -486,62 +249,7 @@ sits inside a blockquote.</p>
   </div>
   <figcaption>The pipeline runs bottom to top. The first probe tested only the top layer, KaTeX itself. The failure, had there been one, would have lived in the amber layer second from the bottom, which nothing had ever exercised. Click a layer to isolate it.</figcaption>
 </figure>
-<script type="module">
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-const LAYERS = [{"label":"markdown source","color":6583435,"note":"The chapter file. Contains \"> $$...$$\", display math nested inside a blockquote."},{"label":"marked tokenizer","color":16096779,"note":"THE UNTESTED LAYER. It has to recognise a math block inside a blockquote. No committed chapter had ever exercised this path."},{"label":"katex extension","color":3718648,"note":"Custom tokenizer, deliberately narrow so book prices like $25,000 never parse as math."},{"label":"KaTeX renderer","color":3462041,"note":"The only layer the first probe actually tested."}];
-const canvas = document.getElementById('stack');
-const readout = document.getElementById('stack-readout');
-const fig = document.getElementById('stack-fig');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(40, 16/9, 0.1, 200);
-camera.position.set(6.5, 5.4, 9);
-const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = true; controls.enablePan = false;
-controls.target.set(0, 1.4, 0);
-controls.minDistance = 7; controls.maxDistance = 24;
-controls.maxPolarAngle = Math.PI / 2.05;
-scene.add(new THREE.AmbientLight(0xffffff, 0.7));
-const key = new THREE.DirectionalLight(0xffffff, 1.4); key.position.set(5, 9, 6); scene.add(key);
 
-const slabs = LAYERS.map((l, i) => {
-  const m = new THREE.Mesh(
-    new THREE.BoxGeometry(4.6, 0.34, 3.2),
-    new THREE.MeshStandardMaterial({ color: l.color, roughness: 0.45, metalness: 0.08, transparent: true, opacity: 1 })
-  );
-  m.position.y = i * 1.05;
-  m.userData = { ...l, baseY: i * 1.05 };
-  scene.add(m);
-  return m;
-});
-let isolate = -1;
-fig.querySelectorAll('[data-layer]').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    fig.querySelectorAll('[data-layer]').forEach(b => b.classList.remove('on'));
-    btn.classList.add('on');
-    isolate = Number(btn.dataset.layer);
-    readout.textContent = isolate < 0 ? 'click a layer name' : LAYERS[isolate].note || LAYERS[isolate].label;
-  });
-});
-const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
-renderer.setAnimationLoop(() => {
-  const w = canvas.clientWidth, h = canvas.clientHeight;
-  if (w && h && canvas.width !== Math.round(w * renderer.getPixelRatio())) {
-    renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
-  }
-  slabs.forEach((s, i) => {
-    const on = isolate < 0 || isolate === i;
-    const ty = isolate < 0 ? s.userData.baseY : (isolate === i ? 1.05 : s.userData.baseY);
-    s.position.y += (ty - s.position.y) * 0.12;
-    s.material.opacity += ((on ? 1 : 0.12) - s.material.opacity) * 0.12;
-  });
-  if (!still) scene.rotation.y += 0.0014;
-  controls.update();
-  renderer.render(scene, camera);
-});
-</script>
 
 <p>So I ran the second probe through the actual renderer instead of the library underneath it.
 Twenty of twenty display blocks became KaTeX HTML, with no raw <code class="inline">$$</code>
@@ -639,23 +347,125 @@ every fetch gets asked a second question: <em>is the cited work actually on this
 citation's own title, from the book's Works Cited, is the probe.</p>
 
 <figure class="pf-bleed reveal">
-  <pre class="mermaid">
-flowchart TD
-    A["HTTP response"] --> B{"status"}
-    B -- "404 / 410" --> D["DEAD"]
-    B -- "401 / 403 / 429" --> E["BLOCKED<br/>host refused a bot,<br/>not evidence of death"]
-    B -- "no answer" --> F["UNREACHABLE"]
-    B -- "200" --> G{"body is HTML?"}
-    G -- "no, PDF or other" --> H["LIVE_UNVERIFIED<br/>not parsed, so not confirmed"]
-    G -- "yes" --> I{"soft 404 markers?"}
-    I -- "yes" --> J["SOFT_404"]
-    I -- "no" --> K{"cited title on the page?"}
-    K -- "half or more" --> L["LIVE_CONFIRMED"]
-    K -- "few, and gated" --> M["WALLED"]
-    K -- "few" --> N["LIVE_UNCONFIRMED"]
-  </pre>
+  <div class="scroll-x"><svg viewBox="0 0 900 547" role="img" data-pf-anim="flow" style="min-width:820px"
+      aria-label="Decision flow: HTTP status then body is HTML? then soft 404 markers? then cited title on the page?">
+    <defs>
+      <marker id="flow-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--pf-muted)"/></marker>
+      <marker id="flow-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--pf-accent2)"/></marker>
+    </defs>
+    <g font-family="var(--pf-mono)">
+      <g opacity="0"><animate attributeName="opacity" to="1" dur=".4s" begin="0.15s" fill="freeze"/>
+        <rect x="45" y="81" width="210" height="52" rx="8"
+              fill="var(--pf-surface)" stroke="var(--pf-accent2)" stroke-width="1.6"/>
+        <text x="150" y="111" text-anchor="middle" fill="var(--pf-ink)" font-size="12.5">HTTP status</text>
+      </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="0.45s" fill="freeze"/>
+          <path d="M255 107 H427.5 V53 H592"
+                fill="none" stroke="var(--pf-bad)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="46" fill="var(--pf-muted)" font-size="10">404 / 410</text>
+          <rect x="600" y="30" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-bad)" stroke-width="1.5"/>
+          <text x="614" y="57" fill="var(--pf-bad)" font-size="12">DEAD</text>
+          
+        </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="0.65s" fill="freeze"/>
+          <path d="M255 107 H427.5 V107 H592"
+                fill="none" stroke="var(--pf-accent)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="100" fill="var(--pf-muted)" font-size="10">401 / 403 / 429</text>
+          <rect x="600" y="84" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-accent)" stroke-width="1.5"/>
+          <text x="614" y="103" fill="var(--pf-accent)" font-size="12">BLOCKED</text>
+          <text x="614" y="118" fill="var(--pf-muted)" font-size="9.5">host refused a bot, not evidence of death</text>
+        </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="0.85s" fill="freeze"/>
+          <path d="M255 107 H427.5 V161 H592"
+                fill="none" stroke="var(--pf-accent)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="154" fill="var(--pf-muted)" font-size="10">no answer</text>
+          <rect x="600" y="138" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-accent)" stroke-width="1.5"/>
+          <text x="614" y="165" fill="var(--pf-accent)" font-size="12">UNREACHABLE</text>
+          
+        </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="1.05s" fill="freeze"/>
+          <line x1="150" y1="133" x2="150" y2="202" stroke="var(--pf-accent2)"
+                stroke-width="1.4" marker-end="url(#flow-b)"/>
+          <text x="160" y="171.5" fill="var(--pf-accent2)" font-size="10">200</text>
+        </g>
+      <g opacity="0"><animate attributeName="opacity" to="1" dur=".4s" begin="1.30s" fill="freeze"/>
+        <rect x="45" y="210" width="210" height="52" rx="8"
+              fill="var(--pf-surface)" stroke="var(--pf-accent2)" stroke-width="1.6"/>
+        <text x="150" y="240" text-anchor="middle" fill="var(--pf-ink)" font-size="12.5">body is HTML?</text>
+      </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="1.60s" fill="freeze"/>
+          <path d="M255 236 H427.5 V236 H592"
+                fill="none" stroke="var(--pf-accent)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="229" fill="var(--pf-muted)" font-size="10">no, PDF or other</text>
+          <rect x="600" y="213" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-accent)" stroke-width="1.5"/>
+          <text x="614" y="232" fill="var(--pf-accent)" font-size="12">LIVE_UNVERIFIED</text>
+          <text x="614" y="247" fill="var(--pf-muted)" font-size="9.5">not parsed, so not confirmed</text>
+        </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="1.80s" fill="freeze"/>
+          <line x1="150" y1="262" x2="150" y2="300" stroke="var(--pf-accent2)"
+                stroke-width="1.4" marker-end="url(#flow-b)"/>
+          <text x="160" y="285" fill="var(--pf-accent2)" font-size="10">yes</text>
+        </g>
+      <g opacity="0"><animate attributeName="opacity" to="1" dur=".4s" begin="2.05s" fill="freeze"/>
+        <rect x="45" y="308" width="210" height="52" rx="8"
+              fill="var(--pf-surface)" stroke="var(--pf-accent2)" stroke-width="1.6"/>
+        <text x="150" y="338" text-anchor="middle" fill="var(--pf-ink)" font-size="12.5">soft 404 markers?</text>
+      </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="2.35s" fill="freeze"/>
+          <path d="M255 334 H427.5 V334 H592"
+                fill="none" stroke="var(--pf-bad)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="327" fill="var(--pf-muted)" font-size="10">yes</text>
+          <rect x="600" y="311" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-bad)" stroke-width="1.5"/>
+          <text x="614" y="338" fill="var(--pf-bad)" font-size="12">SOFT_404</text>
+          
+        </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="2.55s" fill="freeze"/>
+          <line x1="150" y1="360" x2="150" y2="398" stroke="var(--pf-accent2)"
+                stroke-width="1.4" marker-end="url(#flow-b)"/>
+          <text x="160" y="383" fill="var(--pf-accent2)" font-size="10">no</text>
+        </g>
+      <g opacity="0"><animate attributeName="opacity" to="1" dur=".4s" begin="2.80s" fill="freeze"/>
+        <rect x="45" y="406" width="210" height="52" rx="8"
+              fill="var(--pf-surface)" stroke="var(--pf-accent2)" stroke-width="1.6"/>
+        <text x="150" y="436" text-anchor="middle" fill="var(--pf-ink)" font-size="12.5">cited title on the page?</text>
+      </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="3.10s" fill="freeze"/>
+          <path d="M255 432 H427.5 V378 H592"
+                fill="none" stroke="var(--pf-good)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="371" fill="var(--pf-muted)" font-size="10">half or more</text>
+          <rect x="600" y="355" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-good)" stroke-width="1.5"/>
+          <text x="614" y="382" fill="var(--pf-good)" font-size="12">LIVE_CONFIRMED</text>
+          
+        </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="3.30s" fill="freeze"/>
+          <path d="M255 432 H427.5 V432 H592"
+                fill="none" stroke="var(--pf-accent)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="425" fill="var(--pf-muted)" font-size="10">few, and gated</text>
+          <rect x="600" y="409" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-accent)" stroke-width="1.5"/>
+          <text x="614" y="436" fill="var(--pf-accent)" font-size="12">WALLED</text>
+          
+        </g>
+        <g opacity="0"><animate attributeName="opacity" to="1" dur=".35s" begin="3.50s" fill="freeze"/>
+          <path d="M255 432 H427.5 V486 H592"
+                fill="none" stroke="var(--pf-accent)" stroke-width="1.3" marker-end="url(#flow-a)"/>
+          <text x="431.5" y="479" fill="var(--pf-muted)" font-size="10">few</text>
+          <rect x="600" y="463" width="280" height="46" rx="7"
+                fill="var(--pf-surface)" stroke="var(--pf-accent)" stroke-width="1.5"/>
+          <text x="614" y="490" fill="var(--pf-accent)" font-size="12">LIVE_UNCONFIRMED</text>
+          
+        </g></g>
+  </svg></div>
   <figcaption>Only one leaf is a confirmation, and reaching it requires reading the page rather than
-  the status line.</figcaption>
+  the status line. Hand drawn rather than a mermaid flowchart, because any host with a
+  <code class="inline">script-src 'self'</code> policy blocks a CDN diagram library, and this page
+  should not need one.</figcaption>
 </figure>
 
 <p>Two rules in there matter more than the rest, and both are about refusing to overclaim.
@@ -747,124 +557,7 @@ within those four chapters, <em>every single claim</em> was broken. Not most. Al
   </div>
   <figcaption>All 1,242 traced claims, one column per section, in book order. Switch the height metric or filter the set. The tall column is Appendix B, which alone carries 330 claims, about 27 percent of everything the harness tracks, because it is the Works Cited list.</figcaption>
 </figure>
-<script type="module">
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-const RECORDS = [{"label":"introduction","flag":false,"values":{"claims":23,"broken":0,"resolvable":23}},{"label":"preface","flag":false,"values":{"claims":9,"broken":0,"resolvable":9}},{"label":"chapter0","flag":false,"values":{"claims":31,"broken":0,"resolvable":31}},{"label":"part-1","flag":false,"values":{"claims":1,"broken":0,"resolvable":1}},{"label":"chapter1","flag":false,"values":{"claims":64,"broken":0,"resolvable":64}},{"label":"chapter2","flag":false,"values":{"claims":42,"broken":0,"resolvable":42}},{"label":"chapter3","flag":false,"values":{"claims":16,"broken":0,"resolvable":16}},{"label":"chapter4","flag":false,"values":{"claims":19,"broken":0,"resolvable":19}},{"label":"chapter5","flag":false,"values":{"claims":29,"broken":0,"resolvable":29}},{"label":"part-2","flag":false,"values":{"claims":2,"broken":0,"resolvable":2}},{"label":"chapter6","flag":false,"values":{"claims":34,"broken":0,"resolvable":34}},{"label":"chapter7","flag":false,"values":{"claims":60,"broken":0,"resolvable":60}},{"label":"chapter8","flag":false,"values":{"claims":64,"broken":0,"resolvable":64}},{"label":"chapter9","flag":true,"values":{"claims":43,"broken":43,"resolvable":0}},{"label":"part-3","flag":false,"values":{"claims":1,"broken":0,"resolvable":1}},{"label":"chapter10","flag":true,"values":{"claims":32,"broken":32,"resolvable":0}},{"label":"chapter11","flag":true,"values":{"claims":39,"broken":39,"resolvable":0}},{"label":"chapter12","flag":false,"values":{"claims":40,"broken":0,"resolvable":40}},{"label":"chapter13","flag":true,"values":{"claims":37,"broken":37,"resolvable":0}},{"label":"chapter14","flag":false,"values":{"claims":62,"broken":0,"resolvable":62}},{"label":"chapter15","flag":false,"values":{"claims":29,"broken":0,"resolvable":29}},{"label":"chapter16","flag":false,"values":{"claims":25,"broken":0,"resolvable":25}},{"label":"chapter17","flag":false,"values":{"claims":24,"broken":0,"resolvable":24}},{"label":"chapter18","flag":false,"values":{"claims":29,"broken":0,"resolvable":29}},{"label":"conclusion","flag":false,"values":{"claims":18,"broken":0,"resolvable":18}},{"label":"appendix-a","flag":false,"values":{"claims":8,"broken":0,"resolvable":8}},{"label":"appendix-b","flag":false,"values":{"claims":330,"broken":0,"resolvable":330}},{"label":"appendix-c","flag":false,"values":{"claims":8,"broken":0,"resolvable":8}},{"label":"appendix-d","flag":false,"values":{"claims":101,"broken":0,"resolvable":101}},{"label":"appendix-e","flag":false,"values":{"claims":22,"broken":0,"resolvable":22}}];
-const METRICS = [{"key":"claims","label":"all claims"},{"key":"broken","label":"broken only"},{"key":"resolvable","label":"resolvable only"}];
-const canvas = document.getElementById('field');
-const readout = document.getElementById('field-readout');
-const countEl = document.getElementById('field-count');
-const fig = document.getElementById('field-fig');
-
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(42, 16/9, 0.1, 300);
-camera.position.set(19, 13, 27);
-const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = true;
-controls.enablePan = false;
-controls.target.set(0, 3.4, 0);
-controls.minDistance = 14; controls.maxDistance = 60;
-controls.maxPolarAngle = Math.PI / 2.05;
-
-scene.add(new THREE.AmbientLight(0xffffff, 0.72));
-const key = new THREE.DirectionalLight(0xffffff, 1.35);
-key.position.set(8, 16, 10); scene.add(key);
-
-const COLS = 6, GAP = 2.4, MAXH = 9.5;
-const group = new THREE.Group(); scene.add(group);
-const geo = new THREE.BoxGeometry(1.5, 1, 1.5);
-let metric = METRICS[0].key;
-let filter = () => true;
-
-const bars = RECORDS.map((r, i) => {
-  const mat = new THREE.MeshStandardMaterial({
-    color: r.flag ? 0xf87171 : 0x38bdf8, roughness: 0.5, metalness: 0.05, transparent: true, opacity: 1
-  });
-  const m = new THREE.Mesh(geo, mat);
-  m.position.set((i % COLS - (COLS-1)/2) * GAP, 0, (Math.floor(i / COLS) - (Math.ceil(RECORDS.length/COLS)-1)/2) * GAP);
-  m.userData = r;
-  group.add(m);
-  return m;
-});
-
-const grid = new THREE.GridHelper(COLS * GAP + 4, 10, 0x2a3444, 0x1c2431);
-scene.add(grid);
-
-// Target heights are recomputed on every filter or metric change and eased
-// toward each frame, so switching metrics reads as the same objects changing
-// rather than a new chart appearing.
-function retarget() {
-  const vals = RECORDS.map(r => r.values[metric] ?? 0);
-  const max = Math.max(...vals, 1);
-  let shown = 0;
-  bars.forEach((b) => {
-    const r = b.userData;
-    const visible = filter(r);
-    if (visible) shown++;
-    const v = r.values[metric] ?? 0;
-    b.userData._targetH = visible ? Math.max(0.25, (v / max) * MAXH) : 0.02;
-    b.userData._targetO = visible ? 1 : 0.06;
-  });
-  if (countEl) countEl.textContent = shown + ' of ' + RECORDS.length + ' sections shown';
-}
-
-fig.querySelectorAll('[data-metric]').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    fig.querySelectorAll('[data-metric]').forEach(b => b.classList.remove('on'));
-    btn.classList.add('on'); metric = btn.dataset.metric; retarget();
-  });
-});
-const FILTERS = { 'all': (r) => true, 'broken': (r) => r.flag, 'chapters': (r) => r.label.startsWith("chapter"), 'apparatus': (r) => !r.label.startsWith("chapter") };
-fig.querySelectorAll('[data-filter]').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    fig.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('on'));
-    btn.classList.add('on'); filter = FILTERS[btn.dataset.filter] || (() => true); retarget();
-  });
-});
-filter = FILTERS['all'] || (() => true);
-retarget();
-
-const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();
-canvas.addEventListener('pointermove', (e) => {
-  const r = canvas.getBoundingClientRect();
-  ptr.x = ((e.clientX - r.left) / r.width) * 2 - 1;
-  ptr.y = -((e.clientY - r.top) / r.height) * 2 + 1;
-  ray.setFromCamera(ptr, camera);
-  const hit = ray.intersectObjects(bars).find(h => h.object.userData._targetO > 0.5);
-  if (hit) {
-    const d = hit.object.userData;
-    readout.innerHTML = '<b>' + d.label + '</b> · ' +
-      METRICS.map(m => m.label + ' ' + (d.values[m.key] ?? 0)).join(' · ');
-  } else readout.textContent = 'drag to orbit · hover a column';
-});
-
-function resize() {
-  const w = canvas.clientWidth, h = canvas.clientHeight;
-  if (!w || !h) return;
-  const need = Math.round(w * renderer.getPixelRatio());
-  if (canvas.width !== need) {
-    renderer.setSize(w, h, false);
-    camera.aspect = w / h; camera.updateProjectionMatrix();
-  }
-}
-const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
-renderer.setAnimationLoop(() => {
-  resize();
-  for (const b of bars) {
-    const t = b.userData._targetH ?? 1;
-    b.scale.y += (t - b.scale.y) * 0.14;
-    b.position.y = b.scale.y / 2;
-    b.material.opacity += ((b.userData._targetO ?? 1) - b.material.opacity) * 0.14;
-  }
-  if (!still) group.rotation.y += 0.0012;
-  controls.update();
-  renderer.render(scene, camera);
-});
-</script>
 
 <h2 id="sec-guard">The only guard that worked</h2>
 
@@ -965,11 +658,11 @@ bulb behind it.</p>
   <p class="prov-lede">What built this page, from what, and in what state. Generated by the
   build, not typed by hand.</p>
   <dl class="prov-grid">
-    <div><dt>generator</dt><dd>postforge v0.0.3 (spec schema 1)</dd></div>
-    <div><dt>built at</dt><dd>2026-07-31T18:05:00Z</dd></div>
+    <div><dt>generator</dt><dd>postforge v0.0.4 (spec schema 1)</dd></div>
+    <div><dt>built at</dt><dd>2026-07-31T19:15:00Z</dd></div>
     <div><dt>config hash</dt><dd><code>4b43d7f46e90</code></dd></div>
-    <div><dt>postforge commit</dt><dd><code>f7bcf53</code> <span class="prov-warn">dirty</span></dd></div>
-    <div><dt>source repo</dt><dd><code>44aaab2 on v0.7.3 (tree dirty: 41 path(s) at build time)</code></dd></div>
+    <div><dt>postforge commit</dt><dd><code>a63c4f3</code> <span class="prov-warn">dirty</span></dd></div>
+    <div><dt>source repo</dt><dd><code>bcdbba6 on v0.7.3 (tree dirty: 38 path(s) at build time)</code></dd></div>
   </dl>
   <div class="scroll-x">
     <table class="prov-table">
@@ -1024,10 +717,10 @@ bulb behind it.</p>
     <pre class="code"><code>{
   &quot;generator&quot;: {
     &quot;name&quot;: &quot;postforge&quot;,
-    &quot;version&quot;: &quot;0.0.3&quot;,
+    &quot;version&quot;: &quot;0.0.4&quot;,
     &quot;specSchema&quot;: 1
   },
-  &quot;builtAt&quot;: &quot;2026-07-31T18:05:00Z&quot;,
+  &quot;builtAt&quot;: &quot;2026-07-31T19:15:00Z&quot;,
   &quot;config&quot;: {
     &quot;hash&quot;: &quot;4b43d7f46e90&quot;,
     &quot;sources&quot;: [
@@ -1036,20 +729,20 @@ bulb behind it.</p>
   },
   &quot;postforgeRepo&quot;: {
     &quot;available&quot;: true,
-    &quot;sha&quot;: &quot;f7bcf53e7653aef2c02c608de0cb1e3982dce691&quot;,
-    &quot;short&quot;: &quot;f7bcf53&quot;,
+    &quot;sha&quot;: &quot;a63c4f3a25ef74a35a1fa305adde941d351719d1&quot;,
+    &quot;short&quot;: &quot;a63c4f3&quot;,
     &quot;branch&quot;: &quot;main&quot;,
     &quot;dirty&quot;: true,
-    &quot;dirtyFiles&quot;: 5
+    &quot;dirtyFiles&quot;: 7
   },
   &quot;sourceRepo&quot;: {
     &quot;path&quot;: &quot;/Users/ctavolazzi/Code/active/sts-v0.7.3&quot;,
     &quot;available&quot;: true,
-    &quot;sha&quot;: &quot;44aaab2cbaef78723f866c449b4899679a296fde&quot;,
-    &quot;short&quot;: &quot;44aaab2&quot;,
+    &quot;sha&quot;: &quot;bcdbba6a8d1962fee1d62426993bb443482b6b9e&quot;,
+    &quot;short&quot;: &quot;bcdbba6&quot;,
     &quot;branch&quot;: &quot;v0.7.3&quot;,
     &quot;dirty&quot;: true,
-    &quot;dirtyFiles&quot;: 41
+    &quot;dirtyFiles&quot;: 38
   },
   &quot;assets&quot;: [
     {
@@ -1129,10 +822,10 @@ bulb behind it.</p>
 <script type="application/json" id="postforge-provenance">{
   "generator": {
     "name": "postforge",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "specSchema": 1
   },
-  "builtAt": "2026-07-31T18:05:00Z",
+  "builtAt": "2026-07-31T19:15:00Z",
   "config": {
     "hash": "4b43d7f46e90",
     "sources": [
@@ -1141,20 +834,20 @@ bulb behind it.</p>
   },
   "postforgeRepo": {
     "available": true,
-    "sha": "f7bcf53e7653aef2c02c608de0cb1e3982dce691",
-    "short": "f7bcf53",
+    "sha": "a63c4f3a25ef74a35a1fa305adde941d351719d1",
+    "short": "a63c4f3",
     "branch": "main",
     "dirty": true,
-    "dirtyFiles": 5
+    "dirtyFiles": 7
   },
   "sourceRepo": {
     "path": "/Users/ctavolazzi/Code/active/sts-v0.7.3",
     "available": true,
-    "sha": "44aaab2cbaef78723f866c449b4899679a296fde",
-    "short": "44aaab2",
+    "sha": "bcdbba6a8d1962fee1d62426993bb443482b6b9e",
+    "short": "bcdbba6",
     "branch": "v0.7.3",
     "dirty": true,
-    "dirtyFiles": 41
+    "dirtyFiles": 38
   },
   "assets": [
     {
@@ -1230,108 +923,3 @@ bulb behind it.</p>
   ]
 }</script>
 
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs';
-  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
-  mermaid.initialize({
-    startOnLoad: true, theme: dark ? 'dark' : 'neutral',
-    themeVariables: { fontFamily: 'ui-monospace, Menlo, monospace', fontSize: '13px' },
-    flowchart: { curve: 'basis', htmlLabels: true }, securityLevel: 'loose'
-  });
-</script>
-<script>
-// Count up the stat tiles when they scroll into view.
-function countUp(el) {
-  const to = Number(el.dataset.countTo);
-  const prefix = el.textContent.replace(/[0-9,]/g, '');
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    el.textContent = prefix + to.toLocaleString(); return;
-  }
-  const start = performance.now(), dur = 900;
-  const tick = (now) => {
-    const p = Math.min(1, (now - start) / dur);
-    el.textContent = prefix + Math.round(to * (1 - Math.pow(1 - p, 3))).toLocaleString();
-    if (p < 1) requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
-}
-document.querySelectorAll('[data-count-to]').forEach((el) => {
-  new IntersectionObserver((es, o) => {
-    for (const e of es) if (e.isIntersecting) { countUp(e.target); o.disconnect(); }
-  }, { threshold: 0.6 }).observe(el);
-});
-
-// Reveal on scroll.
-const revealIO = new IntersectionObserver((es) => {
-  for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); }
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach((el) => revealIO.observe(el));
-
-// Reading progress.
-const fill = document.getElementById('pf-progress-fill');
-if (fill) {
-  const onScroll = () => {
-    const h = document.documentElement;
-    const p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
-    fill.style.transform = 'scaleX(' + Math.min(1, Math.max(0, p)) + ')';
-  };
-  addEventListener('scroll', onScroll, { passive: true }); onScroll();
-}
-
-// Table of contents scroll spy.
-const tocLinks = [...document.querySelectorAll('[data-toc]')];
-if (tocLinks.length) {
-  const targets = tocLinks.map((a) => document.getElementById(a.dataset.toc)).filter(Boolean);
-  const spy = new IntersectionObserver((es) => {
-    for (const e of es) {
-      if (!e.isIntersecting) continue;
-      tocLinks.forEach((a) => a.classList.toggle('on', a.dataset.toc === e.target.id));
-    }
-  }, { rootMargin: '-15% 0px -70% 0px' });
-  targets.forEach((t) => spy.observe(t));
-}
-
-// Table filters.
-document.querySelectorAll('[data-filters]').forEach((input) => {
-  const table = document.getElementById(input.dataset.filters);
-  const count = document.getElementById(input.dataset.filters + '-count');
-  const rows = [...table.querySelectorAll('tbody tr')];
-  const apply = () => {
-    const q = input.value.trim().toLowerCase();
-    let shown = 0;
-    rows.forEach((r) => {
-      const hit = !q || r.dataset.search.includes(q);
-      r.hidden = !hit; if (hit) shown++;
-    });
-    if (count) count.textContent = shown + ' of ' + rows.length;
-  };
-  input.addEventListener('input', apply); apply();
-});
-
-// Before/after slider.
-document.querySelectorAll('.pf-compare').forEach((fig) => {
-  const range = fig.querySelector('.pf-compare-range');
-  const before = fig.querySelector('.pf-compare-before');
-  const sync = () => { before.style.width = range.value + '%'; };
-  range.addEventListener('input', sync); sync();
-});
-
-// Sidenotes.
-document.querySelectorAll('.pf-fn-mark').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const open = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!open));
-    btn.parentElement.classList.toggle('open', !open);
-  });
-});
-
-// SMIL ignores CSS, so reduced motion is honoured by jumping each animated SVG
-// to the end of its timeline. Every animation uses fill="freeze", so the reader
-// gets the finished diagram instead of a blank one.
-if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  document.querySelectorAll('svg[data-pf-anim]').forEach((s) => {
-    if (typeof s.setCurrentTime === 'function') { s.setCurrentTime(8); s.pauseAnimations(); }
-  });
-}</script>
-</body>
-</html>

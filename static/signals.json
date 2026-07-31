@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T15:16:02Z",
+  "generated_at": "2026-07-31T15:24:02Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -32,6 +32,32 @@
         "llm",
         "language model",
         "automation"
+      ]
+    },
+    {
+      "id": "2607.27599",
+      "source": "arxiv",
+      "title": "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models",
+      "url": "https://arxiv.org/abs/2607.27599",
+      "authors": [
+        "Xiangcheng Zhang",
+        "Yilun Du"
+      ],
+      "summary": "Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system that leverages the reasoning capabilities of Vision-Language Models (VLMs) and the physical grounding of a multi-task pose-image conditioned world model. Our system enables an agent to propose initial action plans and iteratively refine them via optimization and search, reasoning over imagined world ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-30",
+      "score": 12.0,
+      "raw_score": 24,
+      "matched_keywords": [
+        "agi",
+        "world model",
+        "agent",
+        "planning",
+        "reasoning",
+        "robot",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -1165,6 +1191,31 @@
       ]
     },
     {
+      "id": "2607.28146",
+      "source": "arxiv",
+      "title": "Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game",
+      "url": "https://arxiv.org/abs/2607.28146",
+      "authors": [
+        "Niklas Bauer",
+        "Lars Benedikt Kaesberg",
+        "Akiko Aizawa",
+        "Jan Philip Wahle"
+      ],
+      "summary": "As large language models (LLMs) are deployed as agents in high-stakes settings, such as medical and legal systems, understanding their deceptive capabilities is fundamental to safety. Controlled social deduction games provide a reproducible proxy for isolating and evaluating these complex adversarial behaviors. We present the open-source benchmark framework ParliamentBench based on the game Secret Hitler to evaluate LLMs in scenarios that require deception, persuasion, and reasoning under information asymmetry. We evaluate 16 LLMs across 1,600 simulated matches playing each other, playing agai",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-30",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "deceptive",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2607.26998",
       "source": "arxiv",
       "title": "AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Penetration Agents",
@@ -1458,56 +1509,6 @@
         "reasoning",
         "language model",
         "retrieval"
-      ]
-    },
-    {
-      "id": "2607.13591",
-      "source": "arxiv",
-      "title": "Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents",
-      "url": "https://arxiv.org/abs/2607.13591",
-      "authors": [
-        "Eric Hanchen Jiang",
-        "Zhi Zhang",
-        "Yuchen Wu",
-        "Levina Li"
-      ],
-      "summary": "Large Language Model (LLM) agents increasingly rely on external memory systems to accumulate experience across tasks. Yet nearly all existing approaches, from graph-structured memories to reflective insight stores, access memory through fixed, hand-designed heuristics. We argue that this static view of memory is a core bottleneck for agentic learning because optimal memory behavior is fundamentally context-dependent. The early stages of the tasks, benefit from minimal retrieval because memory is sparse; recurring goal types benefit from plan reuse rather than generic nearest-neighbor lookup; s",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-15",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2607.13394",
-      "source": "arxiv",
-      "title": "GFlowRL: Scaling Distribution-Matching RL to Large Language Models",
-      "url": "https://arxiv.org/abs/2607.13394",
-      "authors": [
-        "Xiaodong Liu",
-        "Michael Xu",
-        "Jack W. Stokes",
-        "Paul Smolensky"
-      ],
-      "summary": "Generative Flow Networks (GFlowNets) offer a promising alternative to reward-maximizing reinforcement learning (RL) for large reasoning models, encouraging diverse reasoning paths by matching reward distributions rather than collapsing to dominant modes. Recent work shows promise on math and code, but scaling GFlowNet-style RL to modern post-training pipelines remains difficult: as model size, rollout horizon, reward noise, and distributed-systems complexity grow together, a learned prompt-conditional partition function becomes a source of gradient instability and engineering overhead rather t",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-15",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "language model",
-        "scaling",
-        "rag"
       ]
     }
   ]

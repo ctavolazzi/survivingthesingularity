@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 30 Jul 2026 15:16:02 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 31 Jul 2026 15:24:02 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -13,6 +13,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.16066</guid>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
       <description>Agentic Artificial Intelligence (AI), enabled by Large Language Models, marks a shift from rule-based automation toward autonomous, goal-driven control of Next-Generation Networks (NGNs). Existing surveys treat the two domains in isolation, leaving protocol integration, evaluation, and standardizati... [Score: 17.0 | Flagged for: agent, multi-agent, agentic, autonomous, tool use] Authors: Mazene Ameur, Abdelkader Mekrache, et al.</description>
+    </item>
+    <item>
+      <title>World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models</title>
+      <link>https://arxiv.org/abs/2607.27599</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.27599</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system t... [Score: 12.0 | Flagged for: agi, world model, agent, planning, reasoning] Authors: Xiangcheng Zhang, Yilun Du</description>
     </item>
     <item>
       <title>Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.13315</guid>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
       <description>Unequal availability of human preference data across languages poses a significant challenge for aligning large language models in multilingual settings. To address the lack of sufficient data in low-resource language alignment, we propose a meta-learning framework for Reinforcement Learning from Hu... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Jiaying Lin, Seongho Son, et al.</description>
-    </item>
-    <item>
-      <title>From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence</title>
-      <link>https://arxiv.org/abs/2607.11689</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.11689</guid>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Artificial general intelligence ultimately requires agents that can reason and act in the physical world. Action models, vision-language-action policies, and world models have advanced this goal, while World Action Models (WAMs) are particularly promising because they connect candidate interventions... [Score: 8.5 | Flagged for: artificial general intelligence, world model, agent, embodied, rag] Authors: Yuanzhi Liang, Xufeng Zhan, et al.</description>
     </item>
   </channel>
 </rss>

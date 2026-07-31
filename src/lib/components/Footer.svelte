@@ -25,6 +25,9 @@
           <a href="/terms" class="footer-link">Terms</a>
           <a href="/disclaimer" class="footer-link">Disclaimer</a>
           <a href="/accessibility" class="footer-link">Accessibility</a>
+          <!-- Devlog is reachable from here and nowhere else on purpose: it is
+               working notes about the build, not part of the reader funnel. -->
+          <a href="/devlog" class="footer-link">Devlog</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Subscribe</h4>

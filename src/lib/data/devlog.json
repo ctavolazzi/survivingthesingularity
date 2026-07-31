@@ -1,0 +1,15 @@
+{
+  "comment": "The devlog index. One entry per generated post under static/devlog/. Posts are built by postforge and carry their own provenance record; this file only holds what the index page needs to list them.",
+  "entries": [
+    {
+      "slug": "the-easier-question",
+      "title": "The Easier Question",
+      "dek": "Four times in one working session a check came back green while the thing it was supposed to prove stayed false. Every one of them failed the same way.",
+      "date": "2026-07-31",
+      "href": "/devlog/the-easier-question.html",
+      "readingMinutes": 9,
+      "tags": ["verification", "provenance", "fact-checking"],
+      "builtBy": "postforge v0.0.3"
+    }
+  ]
+}

@@ -61,3 +61,8 @@ tests/results/
 # Python bytecode
 scripts/__pycache__/
 art-raw/
+
+# factcheck network pass: cached HTTP responses, one file per URL. This is what
+# makes the pass resumable across archive.org backoff, so it is local state and
+# never a commit.
+.factcheck-cache/

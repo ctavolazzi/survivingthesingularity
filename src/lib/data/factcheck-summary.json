@@ -1,0 +1,65 @@
+{
+  "generated": "2026-07-30",
+  "book_version": "0.7.4",
+  "repo": "https://github.com/ctavolazzi/survivingthesingularity",
+  "network": false,
+  "words": 91950,
+  "sections": 30,
+  "blocks": 2065,
+  "claims": 1242,
+  "resolvable": 1091,
+  "broken": 151,
+  "by_verdict": {
+    "SUPPORTED": 273,
+    "UNCHECKED": 776,
+    "UNCHECKABLE": 190,
+    "PARTIAL": 3
+  },
+  "by_type": {
+    "image": 85,
+    "dated_event": 223,
+    "attribution": 283,
+    "causal_claim": 190,
+    "internal_xref": 191,
+    "statistic": 43,
+    "url": 227
+  },
+  "urls": 227,
+  "wikipedia": 38,
+  "not_in_works_cited": 4,
+  "comparison_claims": 36,
+  "figures": 85,
+  "internal_refs": 191,
+  "uncommitted_files": [
+    "11-chapter9.md",
+    "12-chapter10.md",
+    "13-chapter11.md",
+    "15-chapter13.md"
+  ],
+  "not_covered": [
+    {
+      "kind": "named entity",
+      "why": "No entity extraction is implemented. Recognising 'Frank Darvall' as a person and checking that the person said the thing needs either a gazetteer or a model, and guessing from capitalisation would produce confident nonsense."
+    },
+    {
+      "kind": "external source liveness",
+      "why": "This run is local only by request. No URL was fetched, so no source is known live, dead, paywalled or archived. `sts verify --links` does the liveness half over the network; content verification is still unbuilt."
+    },
+    {
+      "kind": "archive.org snapshots",
+      "why": "Requires network. Every archive hop is recorded BROKEN."
+    },
+    {
+      "kind": "causal claim adjudication",
+      "why": "Detected but never adjudicated. A connective word is not a causal claim and no automated verdict is offered."
+    },
+    {
+      "kind": "quotation wording",
+      "why": "Attributions are located, but whether the quoted words match the source text is not checked. That needs the source, which needs network."
+    },
+    {
+      "kind": "table numbering",
+      "why": "Table numbers live in prose, not in markup. Nothing binds 'Table 2' to a specific table block, so these resolve only to a plausible range."
+    }
+  ]
+}

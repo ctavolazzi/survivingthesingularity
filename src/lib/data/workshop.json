@@ -1,0 +1,951 @@
+{
+  "generatedAt": "2026-07-31T17:19:39Z",
+  "generator": "scripts/build_workshop_data.py",
+  "note": "Snapshot. Regenerated only when this script runs and the site is rebuilt. Not live.",
+  "repo": {
+    "branch": "v0.7.3",
+    "head": "44aaab2",
+    "aheadOfMain": 17,
+    "behindMain": 1,
+    "dirtyPaths": 36,
+    "pushed": false
+  },
+  "book": {
+    "version": "0.7.4",
+    "words": 91954,
+    "blocks": 2065,
+    "sections": 30,
+    "claims": 1242,
+    "receiptsResolvable": 1091,
+    "receiptsBroken": 151
+  },
+  "verdicts": {
+    "SUPPORTED": 273,
+    "UNCHECKED": 776,
+    "UNCHECKABLE": 190,
+    "PARTIAL": 3
+  },
+  "claimTypes": {
+    "image": 85,
+    "dated_event": 223,
+    "attribution": 283,
+    "causal_claim": 190,
+    "internal_xref": 191,
+    "statistic": 43,
+    "url": 227
+  },
+  "receiptStates": {
+    "origin_exact": 26,
+    "local_only": 4
+  },
+  "sectionsDetail": [
+    {
+      "id": "introduction",
+      "title": "Introduction: The Uncompromising Truth",
+      "words": 2100,
+      "claims": 23,
+      "broken": 0,
+      "topType": "causal_claim",
+      "types": {
+        "image": 4,
+        "dated_event": 1,
+        "attribution": 4,
+        "causal_claim": 10,
+        "internal_xref": 4
+      },
+      "verdicts": {
+        "SUPPORTED": 8,
+        "UNCHECKED": 5,
+        "UNCHECKABLE": 10
+      }
+    },
+    {
+      "id": "preface",
+      "title": "Preface: Welcome to the Weirdness",
+      "words": 1170,
+      "claims": 9,
+      "broken": 0,
+      "topType": "dated_event",
+      "types": {
+        "image": 1,
+        "dated_event": 4,
+        "attribution": 3,
+        "causal_claim": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 1,
+        "UNCHECKED": 7,
+        "UNCHECKABLE": 1
+      }
+    },
+    {
+      "id": "chapter0",
+      "title": "Chapter 0: The Demonstration",
+      "words": 3706,
+      "claims": 31,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 1,
+        "image": 1,
+        "dated_event": 6,
+        "attribution": 16,
+        "statistic": 1,
+        "causal_claim": 6
+      },
+      "verdicts": {
+        "SUPPORTED": 2,
+        "UNCHECKED": 23,
+        "UNCHECKABLE": 6
+      }
+    },
+    {
+      "id": "part-1",
+      "title": "Part I: What is the Singularity?",
+      "words": 65,
+      "claims": 1,
+      "broken": 0,
+      "topType": "image",
+      "types": {
+        "image": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 1
+      }
+    },
+    {
+      "id": "chapter1",
+      "title": "Chapter 1: The Event Horizon",
+      "words": 5058,
+      "claims": 64,
+      "broken": 0,
+      "topType": "dated_event",
+      "types": {
+        "internal_xref": 5,
+        "image": 3,
+        "attribution": 14,
+        "dated_event": 25,
+        "causal_claim": 12,
+        "statistic": 5
+      },
+      "verdicts": {
+        "SUPPORTED": 5,
+        "UNCHECKED": 44,
+        "UNCHECKABLE": 12,
+        "PARTIAL": 3
+      }
+    },
+    {
+      "id": "chapter2",
+      "title": "Chapter 2: The Era of AGI (Stages 1\u20135)",
+      "words": 4285,
+      "claims": 42,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 1,
+        "image": 1,
+        "dated_event": 8,
+        "attribution": 17,
+        "causal_claim": 15
+      },
+      "verdicts": {
+        "SUPPORTED": 2,
+        "UNCHECKED": 25,
+        "UNCHECKABLE": 15
+      }
+    },
+    {
+      "id": "chapter3",
+      "title": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6\u20137)",
+      "words": 2443,
+      "claims": 16,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 1,
+        "image": 1,
+        "dated_event": 1,
+        "attribution": 8,
+        "causal_claim": 5
+      },
+      "verdicts": {
+        "SUPPORTED": 2,
+        "UNCHECKED": 9,
+        "UNCHECKABLE": 5
+      }
+    },
+    {
+      "id": "chapter4",
+      "title": "Chapter 4: Universal and Multiverse Apex (Stages 8\u20139)",
+      "words": 2311,
+      "claims": 19,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 1,
+        "image": 1,
+        "dated_event": 4,
+        "attribution": 7,
+        "causal_claim": 5,
+        "statistic": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 2,
+        "UNCHECKED": 12,
+        "UNCHECKABLE": 5
+      }
+    },
+    {
+      "id": "chapter5",
+      "title": "Chapter 5: The Thermodynamics of Survival",
+      "words": 4244,
+      "claims": 29,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 1,
+        "image": 3,
+        "dated_event": 5,
+        "attribution": 9,
+        "statistic": 4,
+        "causal_claim": 7
+      },
+      "verdicts": {
+        "SUPPORTED": 4,
+        "UNCHECKED": 18,
+        "UNCHECKABLE": 7
+      }
+    },
+    {
+      "id": "part-2",
+      "title": "Part II: How Humans React: The Cooperative Transition",
+      "words": 116,
+      "claims": 2,
+      "broken": 0,
+      "topType": "image",
+      "types": {
+        "image": 2
+      },
+      "verdicts": {
+        "SUPPORTED": 2
+      }
+    },
+    {
+      "id": "chapter6",
+      "title": "Chapter 6: The Singularity Is a Done Deal",
+      "words": 2410,
+      "claims": 34,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 3,
+        "image": 2,
+        "statistic": 1,
+        "dated_event": 3,
+        "attribution": 14,
+        "causal_claim": 11
+      },
+      "verdicts": {
+        "SUPPORTED": 5,
+        "UNCHECKED": 18,
+        "UNCHECKABLE": 11
+      }
+    },
+    {
+      "id": "chapter7",
+      "title": "Chapter 7: The Battle Lines: The Entitled vs. The Ready",
+      "words": 5313,
+      "claims": 60,
+      "broken": 0,
+      "topType": "dated_event",
+      "types": {
+        "internal_xref": 3,
+        "image": 3,
+        "dated_event": 20,
+        "attribution": 13,
+        "causal_claim": 18,
+        "statistic": 3
+      },
+      "verdicts": {
+        "SUPPORTED": 6,
+        "UNCHECKED": 36,
+        "UNCHECKABLE": 18
+      }
+    },
+    {
+      "id": "chapter8",
+      "title": "Chapter 8: The Psychology of the Collapse",
+      "words": 6194,
+      "claims": 64,
+      "broken": 0,
+      "topType": "causal_claim",
+      "types": {
+        "internal_xref": 16,
+        "image": 9,
+        "dated_event": 2,
+        "attribution": 16,
+        "causal_claim": 18,
+        "statistic": 3
+      },
+      "verdicts": {
+        "SUPPORTED": 25,
+        "UNCHECKED": 21,
+        "UNCHECKABLE": 18
+      }
+    },
+    {
+      "id": "chapter9",
+      "title": "Chapter 9: Deglobalization and the Neighborhood Factory",
+      "words": 5201,
+      "claims": 43,
+      "broken": 43,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 5,
+        "image": 9,
+        "dated_event": 3,
+        "attribution": 16,
+        "causal_claim": 7,
+        "statistic": 1,
+        "url": 2
+      },
+      "verdicts": {
+        "SUPPORTED": 14,
+        "UNCHECKED": 22,
+        "UNCHECKABLE": 7
+      }
+    },
+    {
+      "id": "part-3",
+      "title": "Part III: How to Survive the Transition",
+      "words": 148,
+      "claims": 1,
+      "broken": 0,
+      "topType": "image",
+      "types": {
+        "image": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 1
+      }
+    },
+    {
+      "id": "chapter10",
+      "title": "Chapter 10: The \"Create Over Consume\" Protocol",
+      "words": 3661,
+      "claims": 32,
+      "broken": 32,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 3,
+        "image": 3,
+        "dated_event": 1,
+        "attribution": 17,
+        "causal_claim": 6,
+        "statistic": 2
+      },
+      "verdicts": {
+        "SUPPORTED": 6,
+        "UNCHECKED": 20,
+        "UNCHECKABLE": 6
+      }
+    },
+    {
+      "id": "chapter11",
+      "title": "Chapter 11: Using the Tech to Your Advantage",
+      "words": 4061,
+      "claims": 39,
+      "broken": 39,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 4,
+        "image": 4,
+        "attribution": 18,
+        "statistic": 4,
+        "causal_claim": 3,
+        "url": 2,
+        "dated_event": 4
+      },
+      "verdicts": {
+        "SUPPORTED": 8,
+        "UNCHECKED": 28,
+        "UNCHECKABLE": 3
+      }
+    },
+    {
+      "id": "chapter12",
+      "title": "Chapter 12: The Land Strategy",
+      "words": 3833,
+      "claims": 40,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 11,
+        "image": 3,
+        "dated_event": 2,
+        "attribution": 14,
+        "causal_claim": 8,
+        "statistic": 2
+      },
+      "verdicts": {
+        "SUPPORTED": 14,
+        "UNCHECKED": 18,
+        "UNCHECKABLE": 8
+      }
+    },
+    {
+      "id": "chapter13",
+      "title": "Chapter 13: The Shouse Protocol",
+      "words": 4659,
+      "claims": 37,
+      "broken": 37,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 3,
+        "image": 7,
+        "attribution": 20,
+        "statistic": 3,
+        "causal_claim": 3,
+        "dated_event": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 10,
+        "UNCHECKED": 24,
+        "UNCHECKABLE": 3
+      }
+    },
+    {
+      "id": "chapter14",
+      "title": "Chapter 14: The Collapse of the Long Tail",
+      "words": 4614,
+      "claims": 62,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 4,
+        "image": 5,
+        "attribution": 20,
+        "dated_event": 18,
+        "causal_claim": 12,
+        "statistic": 3
+      },
+      "verdicts": {
+        "SUPPORTED": 9,
+        "UNCHECKED": 41,
+        "UNCHECKABLE": 12
+      }
+    },
+    {
+      "id": "chapter15",
+      "title": "Chapter 15: The Power of Reclaiming Soil",
+      "words": 3203,
+      "claims": 29,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 3,
+        "image": 4,
+        "dated_event": 3,
+        "attribution": 9,
+        "causal_claim": 9,
+        "statistic": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 7,
+        "UNCHECKED": 13,
+        "UNCHECKABLE": 9
+      }
+    },
+    {
+      "id": "chapter16",
+      "title": "Chapter 16: Digital Leverage and Media Autonomy",
+      "words": 3102,
+      "claims": 25,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 1,
+        "image": 4,
+        "attribution": 13,
+        "dated_event": 2,
+        "causal_claim": 5
+      },
+      "verdicts": {
+        "SUPPORTED": 5,
+        "UNCHECKED": 15,
+        "UNCHECKABLE": 5
+      }
+    },
+    {
+      "id": "chapter17",
+      "title": "Chapter 17: Tools of the Trade",
+      "words": 3886,
+      "claims": 24,
+      "broken": 0,
+      "topType": "image",
+      "types": {
+        "internal_xref": 2,
+        "image": 7,
+        "dated_event": 4,
+        "attribution": 5,
+        "causal_claim": 5,
+        "statistic": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 9,
+        "UNCHECKED": 10,
+        "UNCHECKABLE": 5
+      }
+    },
+    {
+      "id": "chapter18",
+      "title": "Chapter 18: The Roadmap and the Premortem Pivot",
+      "words": 2851,
+      "claims": 29,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "internal_xref": 1,
+        "image": 2,
+        "dated_event": 4,
+        "attribution": 14,
+        "causal_claim": 7,
+        "statistic": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 3,
+        "UNCHECKED": 19,
+        "UNCHECKABLE": 7
+      }
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusion: The 2027 Tipping Point",
+      "words": 2223,
+      "claims": 18,
+      "broken": 0,
+      "topType": "causal_claim",
+      "types": {
+        "image": 2,
+        "dated_event": 3,
+        "attribution": 5,
+        "internal_xref": 1,
+        "causal_claim": 6,
+        "statistic": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 3,
+        "UNCHECKED": 9,
+        "UNCHECKABLE": 6
+      }
+    },
+    {
+      "id": "appendix-a",
+      "title": "Appendix A: The Municipal Autonomy Code",
+      "words": 1304,
+      "claims": 8,
+      "broken": 0,
+      "topType": "attribution",
+      "types": {
+        "attribution": 3,
+        "statistic": 2,
+        "causal_claim": 1,
+        "internal_xref": 1,
+        "image": 1
+      },
+      "verdicts": {
+        "UNCHECKED": 5,
+        "UNCHECKABLE": 1,
+        "SUPPORTED": 2
+      }
+    },
+    {
+      "id": "appendix-b",
+      "title": "Appendix B: Works Cited",
+      "words": 5499,
+      "claims": 330,
+      "broken": 0,
+      "topType": "url",
+      "types": {
+        "url": 223,
+        "dated_event": 89,
+        "attribution": 3,
+        "statistic": 4,
+        "internal_xref": 10,
+        "causal_claim": 1
+      },
+      "verdicts": {
+        "UNCHECKED": 319,
+        "SUPPORTED": 10,
+        "UNCHECKABLE": 1
+      }
+    },
+    {
+      "id": "appendix-c",
+      "title": "Appendix C: Executive Reference Guide",
+      "words": 702,
+      "claims": 8,
+      "broken": 0,
+      "topType": "dated_event",
+      "types": {
+        "internal_xref": 2,
+        "dated_event": 4,
+        "causal_claim": 1,
+        "attribution": 1
+      },
+      "verdicts": {
+        "SUPPORTED": 2,
+        "UNCHECKED": 5,
+        "UNCHECKABLE": 1
+      }
+    },
+    {
+      "id": "appendix-d",
+      "title": "Appendix D: The Precedent Ledger",
+      "words": 1531,
+      "claims": 101,
+      "broken": 0,
+      "topType": "internal_xref",
+      "types": {
+        "internal_xref": 93,
+        "attribution": 2,
+        "causal_claim": 4,
+        "dated_event": 2
+      },
+      "verdicts": {
+        "SUPPORTED": 93,
+        "UNCHECKED": 4,
+        "UNCHECKABLE": 4
+      }
+    },
+    {
+      "id": "appendix-e",
+      "title": "Appendix E: The Cyberdeck",
+      "words": 2061,
+      "claims": 22,
+      "broken": 0,
+      "topType": "internal_xref",
+      "types": {
+        "internal_xref": 11,
+        "image": 1,
+        "dated_event": 4,
+        "causal_claim": 4,
+        "attribution": 2
+      },
+      "verdicts": {
+        "SUPPORTED": 12,
+        "UNCHECKED": 6,
+        "UNCHECKABLE": 4
+      }
+    }
+  ],
+  "commits": [
+    {
+      "sha": "44aaab2",
+      "date": "2026-07-31",
+      "subject": "workshop: a gated dashboard of the book build, and the first devlog post",
+      "stream": "workshop",
+      "streamLabel": "dashboard",
+      "files": 5,
+      "adds": 3219,
+      "dels": 0
+    },
+    {
+      "sha": "aaa8e7a",
+      "date": "2026-07-31",
+      "subject": "factcheck: the network half, resumable and unwilling to trust a 200",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 2,
+      "adds": 399,
+      "dels": 0
+    },
+    {
+      "sha": "93eefce",
+      "date": "2026-07-31",
+      "subject": "book: finish the KaTeX math conversion across the four math chapters",
+      "stream": "book",
+      "streamLabel": "manuscript",
+      "files": 5,
+      "adds": 265,
+      "dels": 264
+    },
+    {
+      "sha": "f23ea19",
+      "date": "2026-07-31",
+      "subject": "factcheck: put the audit on the site and write down the discipline",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 8,
+      "adds": 1316,
+      "dels": 26
+    },
+    {
+      "sha": "ad98b87",
+      "date": "2026-07-30",
+      "subject": "factcheck trace: the animated chain of custody page",
+      "stream": "factcheck trace",
+      "streamLabel": "fact-checking harness",
+      "files": 2,
+      "adds": 1203,
+      "dels": 0
+    },
+    {
+      "sha": "cc7ca97",
+      "date": "2026-07-30",
+      "subject": "factcheck: chain of custody for every mechanically detectable claim",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 2,
+      "adds": 41763,
+      "dels": 0
+    },
+    {
+      "sha": "a9bf245",
+      "date": "2026-07-30",
+      "subject": "webhooks: close the malformed-timestamp bypass in my own B-09 fix",
+      "stream": "webhooks",
+      "streamLabel": "payments",
+      "files": 4,
+      "adds": 294,
+      "dels": 55
+    },
+    {
+      "sha": "6899e43",
+      "date": "2026-07-29",
+      "subject": "webhooks: bound the signature window on the future side (B-09)",
+      "stream": "webhooks",
+      "streamLabel": "payments",
+      "files": 4,
+      "adds": 353,
+      "dels": 10
+    },
+    {
+      "sha": "f7d8653",
+      "date": "2026-07-29",
+      "subject": "transactions: reword a comment that failed the house-rules lint",
+      "stream": "transactions",
+      "streamLabel": "payments",
+      "files": 1,
+      "adds": 1,
+      "dels": 1
+    },
+    {
+      "sha": "0b1d5b5",
+      "date": "2026-07-29",
+      "subject": "webhooks: the financial ledger now fails closed, the audit trail still does not",
+      "stream": "webhooks",
+      "streamLabel": "payments",
+      "files": 3,
+      "adds": 82,
+      "dels": 3
+    },
+    {
+      "sha": "81aa440",
+      "date": "2026-07-29",
+      "subject": "legal copy: the four audit items that were real. UNREVIEWED BY A LAWYER.",
+      "stream": "legal copy",
+      "streamLabel": "legal",
+      "files": 3,
+      "adds": 108,
+      "dels": 1
+    },
+    {
+      "sha": "23c3f3b",
+      "date": "2026-07-29",
+      "subject": "consent banner: stop trapping page-end content, and un-break the test suite",
+      "stream": "consent banner",
+      "streamLabel": "consent",
+      "files": 4,
+      "adds": 87,
+      "dels": 5
+    },
+    {
+      "sha": "2ce87e5",
+      "date": "2026-07-29",
+      "subject": "scripts: keep the verification harnesses that proved B-08 and B-06",
+      "stream": "scripts",
+      "streamLabel": "tooling",
+      "files": 3,
+      "adds": 444,
+      "dels": 0
+    },
+    {
+      "sha": "1b4a7cc",
+      "date": "2026-07-29",
+      "subject": "docs: architecture page for the money path",
+      "stream": "docs",
+      "streamLabel": "documentation",
+      "files": 2,
+      "adds": 2212,
+      "dels": 0
+    },
+    {
+      "sha": "36c0edb",
+      "date": "2026-07-29",
+      "subject": "webhooks: event idempotency and a reconciliation report, both measured",
+      "stream": "webhooks",
+      "streamLabel": "payments",
+      "files": 12,
+      "adds": 1528,
+      "dels": 0
+    },
+    {
+      "sha": "297543b",
+      "date": "2026-07-29",
+      "subject": "offer: assert the facts derive, not just the sentence",
+      "stream": "offer",
+      "streamLabel": "offer",
+      "files": 9,
+      "adds": 429,
+      "dels": 14
+    },
+    {
+      "sha": "e0cd238",
+      "date": "2026-07-29",
+      "subject": "offer: one object every surface reads, and fix the buy button that did nothing",
+      "stream": "offer",
+      "streamLabel": "offer",
+      "files": 10,
+      "adds": 609,
+      "dels": 107
+    },
+    {
+      "sha": "332fdfd",
+      "date": "2026-07-29",
+      "subject": "checkout: refuse a repeat purchase before the charge, not after it",
+      "stream": "checkout",
+      "streamLabel": "checkout",
+      "files": 5,
+      "adds": 385,
+      "dels": 11
+    },
+    {
+      "sha": "9e02b6c",
+      "date": "2026-07-28",
+      "subject": "backup: one nightly gate instead of two competing scripts",
+      "stream": "backup",
+      "streamLabel": "backup",
+      "files": 3,
+      "adds": 121,
+      "dels": 169
+    },
+    {
+      "sha": "2f28645",
+      "date": "2026-07-28",
+      "subject": "security: make the origin check fail closed on every API route, and back up the database",
+      "stream": "security",
+      "streamLabel": "security",
+      "files": 7,
+      "adds": 244,
+      "dels": 27
+    },
+    {
+      "sha": "2235e7c",
+      "date": "2026-07-28",
+      "subject": "checkout: make a paid order impossible to lose silently",
+      "stream": "checkout",
+      "streamLabel": "checkout",
+      "files": 6,
+      "adds": 529,
+      "dels": 28
+    },
+    {
+      "sha": "b47beeb",
+      "date": "2026-07-28",
+      "subject": "email: record every transactional send, not three of seven",
+      "stream": "email",
+      "streamLabel": "email",
+      "files": 1,
+      "adds": 23,
+      "dels": 19
+    },
+    {
+      "sha": "7c4c239",
+      "date": "2026-07-28",
+      "subject": "security: close the public-key write surface and shrink the CSP",
+      "stream": "security",
+      "streamLabel": "security",
+      "files": 19,
+      "adds": 1385,
+      "dels": 162
+    },
+    {
+      "sha": "5e9716e",
+      "date": "2026-07-28",
+      "subject": "email: record whether each transactional email actually arrived",
+      "stream": "email",
+      "streamLabel": "email",
+      "files": 4,
+      "adds": 326,
+      "dels": 14
+    }
+  ],
+  "network": {
+    "checked": 40,
+    "of": 220,
+    "confirmed": 33,
+    "unverified": 5,
+    "blocked": 2,
+    "dead": 0,
+    "note": "Sample only. The harness is built and proven resumable; the remaining 180 have not been fetched."
+  },
+  "blockers": [
+    {
+      "id": "push",
+      "title": "151 receipts stay broken until the branch is pushed",
+      "why": "A permalink mints only at origin_exact, byte identical to origin/main. Committing locally advances the state one step and mints nothing.",
+      "needs": "A decision to push. main auto-deploys and production runs live Stripe keys.",
+      "effort": "one command",
+      "severity": "high"
+    },
+    {
+      "id": "network",
+      "title": "180 of 220 citations have never been fetched",
+      "why": "The local pass never touches the network, so every URL claim came back UNCHECKED. The external harness exists and resumes after being killed, but has not been turned loose.",
+      "needs": "A decision to run the full pass. It is slow and will hit archive.org backoff.",
+      "effort": "hours, unattended",
+      "severity": "high"
+    },
+    {
+      "id": "comparison",
+      "title": "36 comparison claims unchecked by any tool",
+      "why": "The project's own post mortem identifies inherited comparison claims as this book's real failure mode. No automated pass touches them.",
+      "needs": "A human reading primary sources.",
+      "effort": "manual",
+      "severity": "high"
+    },
+    {
+      "id": "worksCited",
+      "title": "4 URLs cited nowhere in Works Cited",
+      "why": "They appear in the manuscript but have no Appendix B entry, so a reader cannot follow them.",
+      "needs": "Cite them properly or cut them.",
+      "effort": "small",
+      "severity": "medium"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "the-easier-question",
+      "title": "The Easier Question",
+      "dek": "Four checks came back green while the thing they were supposed to prove stayed false.",
+      "date": "2026-07-31",
+      "href": "/devlog/the-easier-question.html",
+      "readingMinutes": 9,
+      "tags": [
+        "verification",
+        "provenance",
+        "factcheck"
+      ],
+      "builtBy": "postforge v0.0.2"
+    }
+  ],
+  "links": [
+    {
+      "label": "Chain of custody trace",
+      "href": "/factcheck-trace.html",
+      "note": "Every claim, hop by hop, including the hops that break"
+    }
+  ]
+}

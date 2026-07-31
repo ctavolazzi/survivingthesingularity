@@ -93,28 +93,28 @@ We are looking for the sweet spot of cost, power draw, and compute density.
 
 To run modern, high-capability generative models (such as Llama-3-70B or Mistral-8x22B) locally and at high speeds, your CPU is useless. The bottleneck is not processing speed; it is memory bandwidth. You must load the entire model weights directly into **Video RAM (VRAM)**.
 
-Let us calculate the exact VRAM requirement (V_RAM) for any given local LLM based on its parameter size ($P$, in billions), its quantization level ($Q$, in bits per weight), and an operational overhead buffer ($B$):
+Let us calculate the exact VRAM requirement ($V_{RAM}$) for any given local LLM based on its parameter size ($P$, in billions), its quantization level ($Q$, in bits per weight), and an operational overhead buffer ($B$):
 
-> **V_RAM ≈ ( (P · Q) / (8) ) · B [GB]**
+> $$V_{RAM} ≈ ( (P · Q) / (8) ) · B \text{ [GB]}$$
 
 Where:
 
   - $P$ is the parameter count of the model (e.g., 70 for a 70B model).
   - $Q$ is the quantization bit-depth (typically 4-bit or 8-bit using GPTQ, AWQ, or GGUF formats).
   - 8 is the conversion factor from bits to bytes.
-  - $B$ is the system overhead buffer (B ≈ 1.20, which accounts for the context window, KV cache, and runtime memory overhead).
+  - $B$ is the system overhead buffer ($B ≈ 1.20$, which accounts for the context window, KV cache, and runtime memory overhead).
 
 Let us run the math for two highly capable local configurations:
 
 **Scenario A: Running Llama-3-8B at FP16 (unquantized,** 16-bit **precision):**
 
-> **V_RAM = ( (8 · 16) / (8) ) · 1.20 = 16 · 1.20 = 19.2 GB**
+> $$V_{RAM} = ( (8 · 16) / (8) ) · 1.20 = 16 · 1.20 = 19.2 \text{ GB}$$
 
 You can run this comfortably on a single, used consumer GPU like an NVIDIA RTX 3090 (24 GB of GDDR6X VRAM).
 
 **Scenario B: Running a heavy, high-tier Llama-3-70B model at** 4-bit **quantization (**$Q = 4$**):**
 
-> **V_RAM = ( (70 · 4) / (8) ) · 1.20 = 35 · 1.20 = 42 GB**
+> $$V_{RAM} = ( (70 · 4) / (8) ) · 1.20 = 35 · 1.20 = 42 \text{ GB}$$
 
 To run a 70-billion parameter model, a model capable of complex coding, localized medical analysis, and advanced mechanical troubleshooting, you need at least 42 GB of VRAM.
 
@@ -130,23 +130,23 @@ Instead of running an AC unit to cool the room while the server heats it up (a d
 
 *The Split-Loop Thermal Exchange. Pull the heat straight off the silicon and dump it outside, instead of paying an AC unit to fight your own server.*
 
-The heat transfer rate (Q̇) of our liquid cooling loop in Watts is governed by the mass flow rate of our coolant (ṁ) and the temperature delta (Δ T) across our external heat exchanger:
+The heat transfer rate ($\dot{Q}$) of our liquid cooling loop in Watts is governed by the mass flow rate of our coolant ($\dot{m}$) and the temperature delta ($\Delta T$) across our external heat exchanger:
 
-> **Q̇ = ṁ · C_p · Δ T**
+> $$\dot{Q} = \dot{m} · C_p · \Delta T$$
 
 Where:
 
-  - ṁ is the fluid mass flow rate in kilograms per second (kg/s).
-  - C_p is the specific heat capacity of our coolant (for water/propylene glycol mix, C_p ≈ 3,800 J/(kg·°C)).
-  - Δ T is the temperature difference between the hot fluid leaving the server and the cold fluid returning from the external radiator (T_out - T_in).
+  - $\dot{m}$ is the fluid mass flow rate in kilograms per second (kg/s).
+  - $C_p$ is the specific heat capacity of our coolant (for water/propylene glycol mix, $C_p ≈ \text{3,800}$ J/(kg·°C)).
+  - $\Delta T$ is the temperature difference between the hot fluid leaving the server and the cold fluid returning from the external radiator ($T_{out} - T_{in}$).
 
-To dissipate 1,000 Watts (1,000 J/s) of continuous compute heat while maintaining a tight, highly stable temperature delta of Δ T = 5°C to protect our silicon:
+To dissipate 1,000 Watts (1,000 J/s) of continuous compute heat while maintaining a tight, highly stable temperature delta of $\Delta T = 5$°C to protect our silicon:
 
-> **ṁ = Q̇ / (C_p · ΔT) = (1,000) / (3,800 · 5) ≈ 0.0526 kg/s**
+> $$\dot{m} = \dot{Q} / (C_p · \Delta T) = (\text{1,000}) / (\text{3,800} · 5) ≈ 0.0526 \text{ kg/s}$$
 
 Since water has a density of roughly 1 kg/L, this requires a volumetric flow rate of:
 
-> **Flow Rate ≈ 0.0526 L/s ≈ 3.16 Liters per minute (LPM)**
+> $$\text{Flow Rate} ≈ 0.0526 \text{ L/s} ≈ 3.16 \text{ Liters per minute (LPM)}$$
 
 Any standard, high-reliability 12-volt DC brushless water pump (such as a Laing D5 marine pump, drawing a meager 18 watts) can easily push 15 LPM through a high-restriction loop.
 

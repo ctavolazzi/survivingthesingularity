@@ -58,6 +58,38 @@ If you came here because someone you trust sent you the link, start at [**Why**]
 | [`/blueprint`](https://survivingthesingularity.com/blueprint) | Eight chapter blueprint. Shouse construction, collective ownership, semi-autonomous CSA, local AI, offline healthcare AI, and more. |
 | [`/blog`](https://survivingthesingularity.com/blog) | Dispatches. Some philosophical, some profane. |
 | [`/about`](https://survivingthesingularity.com/about) | What this project is and is not. |
+| [`/factcheck`](https://survivingthesingularity.com/factcheck) | Every checkable claim in the book, traced back to its evidence. Audit it yourself. |
+
+## Check the book yourself
+
+Most books ask you to trust them. This one hands you the receipts.
+
+[`/factcheck`](https://survivingthesingularity.com/factcheck) is a live audit of
+the manuscript. It pulls every mechanically detectable claim out of the book
+source and traces each one back through ten hops: the sentence quoted verbatim,
+where it sits in the source, the commit that put it there, a GitHub permalink
+pinned to that exact commit, the source behind it, and a verdict. Pick any
+number in any chapter and watch the trail resolve. Then go read the source for
+yourself.
+
+**It shows you where the trail breaks, too.** That is the part worth trusting.
+A claim whose source has not been checked says so. Text that has not been
+committed yet has no permalink, and the page says that rather than inventing
+one. The list of things the audit *cannot* see sits above the statistics, not
+buried under them.
+
+As of the 2026-07-30 pass: **1,242 claims traced**, 1,091 carrying a permalink
+you can click through to the exact line on GitHub, 273 supported, 0
+contradicted, and 227 external citations of which 38 are Wikipedia. Every one
+of those numbers is computed by the page from its own data, so it cannot drift
+from what it is describing.
+
+The repository is public. The audit runs against the same source the book is
+built from. Nothing here is a screenshot of a claim; it is the claim, the
+commit, and the link.
+
+How it is built, what it deliberately does not cover, and the discipline behind
+it: [`FACTCHECK.md`](FACTCHECK.md).
 
 ## Stay in touch
 

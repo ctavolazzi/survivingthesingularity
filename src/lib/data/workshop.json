@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-07-31T15:40:00Z",
+  "note": "Snapshot generated at build time from sts.py factcheck and git log. Not live.",
+  "book": {
+    "version": "0.7.4",
+    "words": 91954,
+    "blocks": 2065,
+    "sections": 30,
+    "claims": 1242,
+    "receiptsResolvable": 1091,
+    "receiptsBroken": 151
+  },
+  "verdicts": {
+    "SUPPORTED": 273,
+    "UNCHECKED": 776,
+    "UNCHECKABLE": 190,
+    "PARTIAL": 3
+  },
+  "claimTypes": {
+    "image": 85,
+    "dated_event": 223,
+    "attribution": 283,
+    "causal_claim": 190,
+    "internal_xref": 191,
+    "statistic": 43,
+    "url": 227
+  },
+  "receiptStates": {
+    "origin_exact": 26,
+    "local_only": 4
+  },
+  "commits": [
+    {
+      "sha": "aaa8e7a",
+      "date": "2026-07-31",
+      "subject": "factcheck: the network half, resumable and unwilling to trust a 200",
+      "stream": "factcheck"
+    },
+    {
+      "sha": "93eefce",
+      "date": "2026-07-31",
+      "subject": "book: finish the KaTeX math conversion across the four math chapters",
+      "stream": "book"
+    },
+    {
+      "sha": "f23ea19",
+      "date": "2026-07-31",
+      "subject": "factcheck: put the audit on the site and write down the discipline",
+      "stream": "factcheck"
+    },
+    {
+      "sha": "ad98b87",
+      "date": "2026-07-30",
+      "subject": "factcheck trace: the animated chain of custody page",
+      "stream": "factcheck trace"
+    },
+    {
+      "sha": "cc7ca97",
+      "date": "2026-07-30",
+      "subject": "factcheck: chain of custody for every mechanically detectable claim",
+      "stream": "factcheck"
+    },
+    {
+      "sha": "a9bf245",
+      "date": "2026-07-30",
+      "subject": "webhooks: close the malformed-timestamp bypass in my own B-09 fix",
+      "stream": "webhooks"
+    },
+    {
+      "sha": "6899e43",
+      "date": "2026-07-29",
+      "subject": "webhooks: bound the signature window on the future side (B-09)",
+      "stream": "webhooks"
+    },
+    {
+      "sha": "f7d8653",
+      "date": "2026-07-29",
+      "subject": "transactions: reword a comment that failed the house-rules lint",
+      "stream": "transactions"
+    },
+    {
+      "sha": "0b1d5b5",
+      "date": "2026-07-29",
+      "subject": "webhooks: the financial ledger now fails closed, the audit trail still does not",
+      "stream": "webhooks"
+    },
+    {
+      "sha": "81aa440",
+      "date": "2026-07-29",
+      "subject": "legal copy: the four audit items that were real. UNREVIEWED BY A LAWYER.",
+      "stream": "legal copy"
+    },
+    {
+      "sha": "23c3f3b",
+      "date": "2026-07-29",
+      "subject": "consent banner: stop trapping page-end content, and un-break the test suite",
+      "stream": "consent banner"
+    },
+    {
+      "sha": "2ce87e5",
+      "date": "2026-07-29",
+      "subject": "scripts: keep the verification harnesses that proved B-08 and B-06",
+      "stream": "scripts"
+    },
+    {
+      "sha": "1b4a7cc",
+      "date": "2026-07-29",
+      "subject": "docs: architecture page for the money path",
+      "stream": "docs"
+    },
+    {
+      "sha": "36c0edb",
+      "date": "2026-07-29",
+      "subject": "webhooks: event idempotency and a reconciliation report, both measured",
+      "stream": "webhooks"
+    }
+  ],
+  "network": {
+    "checked": 40,
+    "of": 220,
+    "confirmed": 33,
+    "unverified": 5,
+    "blocked": 2,
+    "dead": 0
+  },
+  "posts": [
+    {
+      "slug": "the-easier-question",
+      "title": "The Easier Question",
+      "dek": "Four checks came back green while the thing they were supposed to prove stayed false.",
+      "date": "2026-07-31",
+      "href": "/devlog/the-easier-question.html",
+      "readingMinutes": 9,
+      "tags": [
+        "verification",
+        "provenance",
+        "factcheck"
+      ],
+      "builtBy": "postforge v0.0.1"
+    }
+  ]
+}

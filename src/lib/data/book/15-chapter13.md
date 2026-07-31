@@ -105,17 +105,17 @@ Instead, we use **Concrete Piers**. They are low-profile, highly resilient, and 
 
 You must transfer the dead load of the steel containers and your live load (appliances, servers, water, human bodies) directly into the earth.
 
-Let the total weight of the loaded structure be W_total = 15,000 kg (≈ 147,150 N).
+Let the total weight of the loaded structure be $W_{total} = \text{15,000}$ kg (≈ 147,150 N).
 
 If we use a six-pier configuration, each pier must support a vertical design load of:
 
-> **F_pier = W_total / 6 = 2,500 kg ≈ 24,525 N**
+> $$F_{pier} = W_{total} / 6 = \text{2,500 kg} ≈ \text{24,525 N}$$
 
-To prevent settlement, the bearing capacity of the soil (q_allow) must exceed the pressure exerted by the bottom of the pier. Assuming a conservative sandy-clay soil with a safe bearing capacity of q_allow = 100 kPa (100,000 N/m^2), the minimum surface area of each pier base (A_base) is:
+To prevent settlement, the bearing capacity of the soil ($q_{allow}$) must exceed the pressure exerted by the bottom of the pier. Assuming a conservative sandy-clay soil with a safe bearing capacity of $q_{allow} = 100$ kPa (100,000 N/m²), the minimum surface area of each pier base ($A_{base}$) is:
 
-> **A_base ≥ F_pier / q_allow = 24,525 N / 100,000 N/m^2 = 0.245 m^2**
+> $$A_{base} \geq F_{pier} / q_{allow} = \text{24,525 N} / \text{100,000 N/m}^2 = 0.245 \text{ m}^2$$
 
-A square pier footing of 50 cm × 50 cm (0.25 m^2) is mathematically sufficient to prevent your fortress from sinking into the mud.
+A square pier footing of 50 cm × 50 cm (0.25 m²) is mathematically sufficient to prevent your fortress from sinking into the mud.
 
 ### Physical Execution
 
@@ -147,15 +147,15 @@ You must install a structural steel skeleton down the center seam to replace the
 
 Let us calculate the required section modulus for the center support beam to resist bending.
 
-Assume a total roof live load (snow, solar arrays) of w = 3,000 N/m distributed across the 12.19-meter (40-foot) span. If we place vertical support columns at every 3.05-meter (10-foot) interval, we divide the span into four equal segments of L = 3.05 m.
+Assume a total roof live load (snow, solar arrays) of $w = \text{3,000}$ N/m distributed across the 12.19-meter (40-foot) span. If we place vertical support columns at every 3.05-meter (10-foot) interval, we divide the span into four equal segments of $L = 3.05$ m.
 
-The maximum bending moment (M_max) for a continuously supported beam with uniform load is:
+The maximum bending moment ($M_{max}$) for a continuously supported beam with uniform load is:
 
-> **M_max = (w · L^2) / (8) = 3,000 N/m · (3.05 m)^2 / 8 ≈ 3,488 N·m**
+> $$M_{max} = (w · L^2) / (8) = \text{3,000 N/m} · (3.05 \text{ m})^2 / 8 ≈ \text{3,488 N·m}$$
 
-To prevent structural failure, the maximum bending stress (σ_max) must not exceed the allowable yield strength of structural A36 steel (σ_allow = 250 MPa), factored with a safety margin of 1.5 (σ_design = 166 MPa):
+To prevent structural failure, the maximum bending stress ($\sigma_{max}$) must not exceed the allowable yield strength of structural A36 steel ($\sigma_{allow} = 250$ MPa), factored with a safety margin of 1.5 ($\sigma_{design} = 166$ MPa):
 
-> **σ_design = M_max / S  ⇒ S ≥ M_max / σ_design = 3,488 N·m / 166×10^6 N/m^2 ≈ 2.1 × 10^-5 m^3 = 21 cm^3**
+> $$\sigma_{design} = M_{max} / S \Rightarrow S \geq M_{max} / \sigma_{design} = \text{3,488 N·m} / 166 × 10^6 \text{ N/m}^2 ≈ 2.1 × 10^{-5} \text{ m}^3 = 21 \text{ cm}^3$$
 
 Where:
 
@@ -176,19 +176,19 @@ A metal container is a massive thermal conductor. If you do not insulate it corr
 
 Let the heat transfer through the metal walls be modeled by Fourier's Law of Thermal Conduction:
 
-> **Q = (k · A · Δ T) / (d)**
+> $$Q = (k · A · \Delta T) / (d)$$
 
 Where:
 
   - $Q$ is the heat transfer rate in Watts ($W$).
-  - $k$ is the thermal conductivity of the material (k_steel ≈ 50 W/m·K).
-  - $A$ is the surface area of the walls (≈ 120 m^2).
-  - Δ T is the temperature difference between the inside and outside environments.
+  - $k$ is the thermal conductivity of the material ($k_{steel} ≈ 50$ W/m·K).
+  - $A$ is the surface area of the walls (≈ 120 m²).
+  - $\Delta T$ is the temperature difference between the inside and outside environments.
   - $d$ is the thickness of the material.
 
-Because k_steel is incredibly high, an uninsulated steel wall (d = 2 mm) transfers heat almost instantly. To survive off-grid with minimal power usage, we must maximize the thermal resistance (R-value) of our insulation layer to drop $Q$ to a fraction of its original value.
+Because $k_{steel}$ is incredibly high, an uninsulated steel wall ($d = 2$ mm) transfers heat almost instantly. To survive off-grid with minimal power usage, we must maximize the thermal resistance (R-value) of our insulation layer to drop $Q$ to a fraction of its original value.
 
-> **R-value = d / k_insulation**
+> $$\text{R-value} = d / k_{insulation}$$
 
 ![The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel](/book-images/ch13-thermal-seal.svg)
 

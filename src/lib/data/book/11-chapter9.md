@@ -187,12 +187,13 @@ curl -sL https://raw.githubusercontent.com/kylegabriel/Mycodo/master/install | b
 
 Once installed, navigate to `http://<your-pi-ip>:8080` in your local web browser. Through the Mycodo web interface, you can configure PID (Proportional-Integral-Derivative) loop controllers to maintain perfect soil moisture and air temperature:
 
-> **u(t) = Kp·e(t) + Ki·∫e(τ)dτ + Kd·de(t)/dt**, the standard PID control equation
+> $$u(t) = K_p e(t) + K_i \int e(\tau) d\tau + K_d \, de(t)/dt$$
+> the standard PID control equation
 
 Where:
 
   - $e(t)$ is the current error (the difference between your target soil moisture and the current sensor reading).
-  - K_p, K_i, and K_d are the tuning coefficients that dictate how quickly and smoothly your automated water valves open to keep your crops perfectly hydrated without wasting a single drop of water.
+  - $K_p$, $K_i$, and $K_d$ are the tuning coefficients that dictate how quickly and smoothly your automated water valves open to keep your crops perfectly hydrated without wasting a single drop of water.
 
 ### Section 3: The Mechanical Calorie Engine (FarmBot Architecture)
 
@@ -228,9 +229,9 @@ We construct a high-performance, 200-liter biological reactor using a heavy-duty
 
 ### The Thermodynamic Oxygen Math
 
-The maximum concentration of dissolved oxygen (C_DO) that water can hold decreases significantly as the temperature rises. We calculate the saturation limit of dissolved oxygen in fresh water using the simplified temperature dependence formula:
+The maximum concentration of dissolved oxygen ($C_{DO}$) that water can hold decreases significantly as the temperature rises. We calculate the saturation limit of dissolved oxygen in fresh water using the simplified temperature dependence formula:
 
-> **C_DO, sat ≈ (468) / (31.6 + T) [mg/L]**
+> $$C_{DO,\text{sat}} ≈ (468) / (31.6 + T) \text{ [mg/L]}$$
 
 Where $T$ is the temperature of the water in degrees Celsius (°C).
 
@@ -238,13 +239,13 @@ Let us run the calculations for two different operating scenarios:
 
 **Scenario A: Brewing in the cool mountain spring air (**T = 15°C**):**
 
-> **C_DO, sat ≈ (468) / (31.6 + 15) = (468) / (46.6) ≈ 10.04 mg/L**
+> $$C_{DO,\text{sat}} ≈ (468) / (31.6 + 15) = (468) / (46.6) ≈ 10.04 \text{ mg/L}$$
 
 At 15°C, the water can hold a generous amount of oxygen, providing a highly stable safety buffer for your growing aerobic microbes.
 
 **Scenario B: Brewing in the peak of summer (**T = 35°C**):**
 
-> **C_DO, sat ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.03 mg/L**
+> $$C_{DO,\text{sat}} ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.03 \text{ mg/L}$$
 
 At 35°C, the saturation point drops dangerously close to our minimum safety limit of 6.0 mg/L. If your biological population spikes and begins consuming oxygen faster than your air pump can dissolve it, the tank will instantly go anaerobic.
 

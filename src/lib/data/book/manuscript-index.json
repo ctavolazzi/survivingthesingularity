@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
   "book_version": "0.7.4",
-  "generated": "2026-07-27",
+  "generated": "2026-07-31",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
     "blocks": 2065,
-    "words": 91862
+    "words": 91954
   },
   "sections": [
     {
@@ -9891,7 +9891,7 @@
       "title": "Chapter 9: Deglobalization and the Neighborhood Factory",
       "file": "11-chapter9.md",
       "next_ordinal": 133,
-      "words": 5189,
+      "words": 5201,
       "tombstones": [],
       "blocks": [
         {
@@ -10837,18 +10837,18 @@
           "type": "blockquote",
           "lines": [
             190,
-            190
+            191
           ],
-          "words": 18,
-          "hash": "ac174639c924",
-          "preview": "> **u(t) = Kp·e(t) + Ki·∫e(τ)dτ + Kd·de(t)/dt**, the standard PID control equation"
+          "words": 20,
+          "hash": "9e43a53f3fdd",
+          "preview": "> $$u(t) = K_p e(t) + K_i \\int e(\\tau) d\\tau + K_d \\, de(t)/dt$$ > the standard PID contro"
         },
         {
           "id": "sts.chapter9.b0075",
           "type": "paragraph",
           "lines": [
-            192,
-            192
+            193,
+            193
           ],
           "words": 1,
           "hash": "4e1a08a021da",
@@ -10858,19 +10858,19 @@
           "id": "sts.chapter9.b0076",
           "type": "list",
           "lines": [
-            194,
-            195
+            195,
+            196
           ],
           "words": 50,
-          "hash": "d2075c3c08d2",
+          "hash": "cf90b4b12b1c",
           "preview": "- $e(t)$ is the current error (the difference between your target soil moisture and the cu"
         },
         {
           "id": "sts.chapter9.b0077",
           "type": "heading",
           "lines": [
-            197,
-            197
+            198,
+            198
           ],
           "words": 8,
           "hash": "a4c0b10092e3",
@@ -10881,8 +10881,8 @@
           "id": "sts.chapter9.b0078",
           "type": "paragraph",
           "lines": [
-            199,
-            199
+            200,
+            200
           ],
           "words": 26,
           "hash": "b3994705c971",
@@ -10892,8 +10892,8 @@
           "id": "sts.chapter9.b0079",
           "type": "paragraph",
           "lines": [
-            201,
-            201
+            202,
+            202
           ],
           "words": 54,
           "hash": "200064e01245",
@@ -10903,8 +10903,8 @@
           "id": "sts.chapter9.b0080",
           "type": "figure",
           "lines": [
-            203,
-            203
+            204,
+            204
           ],
           "words": 36,
           "hash": "c652f1b45300",
@@ -10916,8 +10916,8 @@
           "id": "sts.chapter9.b0081",
           "type": "caption",
           "lines": [
-            205,
-            205
+            206,
+            206
           ],
           "words": 18,
           "hash": "dba90199bd3b",
@@ -10927,8 +10927,8 @@
           "id": "sts.chapter9.b0082",
           "type": "heading",
           "lines": [
-            207,
-            207
+            208,
+            208
           ],
           "words": 4,
           "hash": "ff611b0e0a99",
@@ -10939,8 +10939,8 @@
           "id": "sts.chapter9.b0083",
           "type": "paragraph",
           "lines": [
-            209,
-            209
+            210,
+            210
           ],
           "words": 17,
           "hash": "03c76555d0c2",
@@ -10950,8 +10950,8 @@
           "id": "sts.chapter9.b0084",
           "type": "list",
           "lines": [
-            211,
-            213
+            212,
+            214
           ],
           "words": 105,
           "hash": "cfa114769880",
@@ -10961,8 +10961,8 @@
           "id": "sts.chapter9.b0085",
           "type": "paragraph",
           "lines": [
-            215,
-            215
+            216,
+            216
           ],
           "words": 45,
           "hash": "4c3f8c36e63e",
@@ -10972,8 +10972,8 @@
           "id": "sts.chapter9.b0086",
           "type": "heading",
           "lines": [
-            217,
-            217
+            218,
+            218
           ],
           "words": 8,
           "hash": "1d4e3228ee9f",
@@ -10984,8 +10984,8 @@
           "id": "sts.chapter9.b0087",
           "type": "paragraph",
           "lines": [
-            219,
-            219
+            220,
+            220
           ],
           "words": 28,
           "hash": "b78fee819c59",
@@ -10995,8 +10995,8 @@
           "id": "sts.chapter9.b0088",
           "type": "paragraph",
           "lines": [
-            221,
-            221
+            222,
+            222
           ],
           "words": 54,
           "hash": "bd26a4b58c95",
@@ -11006,8 +11006,8 @@
           "id": "sts.chapter9.b0089",
           "type": "paragraph",
           "lines": [
-            223,
-            223
+            224,
+            224
           ],
           "words": 23,
           "hash": "a6c1956cb767",
@@ -11017,8 +11017,8 @@
           "id": "sts.chapter9.b0090",
           "type": "figure",
           "lines": [
-            225,
-            225
+            226,
+            226
           ],
           "words": 43,
           "hash": "2d4269729050",
@@ -11030,8 +11030,8 @@
           "id": "sts.chapter9.b0091",
           "type": "caption",
           "lines": [
-            227,
-            227
+            228,
+            228
           ],
           "words": 24,
           "hash": "0cb2abe1054d",
@@ -11041,8 +11041,8 @@
           "id": "sts.chapter9.b0092",
           "type": "heading",
           "lines": [
-            229,
-            229
+            230,
+            230
           ],
           "words": 4,
           "hash": "0892cf6e2249",
@@ -11053,30 +11053,30 @@
           "id": "sts.chapter9.b0093",
           "type": "paragraph",
           "lines": [
-            231,
-            231
+            232,
+            232
           ],
-          "words": 34,
-          "hash": "ee8087336224",
-          "preview": "The maximum concentration of dissolved oxygen (C_DO) that water can hold decreases signifi"
+          "words": 35,
+          "hash": "ceb1d14491d8",
+          "preview": "The maximum concentration of dissolved oxygen ($C_{DO}$) that water can hold decreases sig"
         },
         {
           "id": "sts.chapter9.b0094",
           "type": "blockquote",
           "lines": [
-            233,
-            233
+            234,
+            234
           ],
-          "words": 8,
-          "hash": "8807ca9feed4",
-          "preview": "> **C_DO, sat ≈ (468) / (31.6 + T) [mg/L]**"
+          "words": 11,
+          "hash": "be1b654bccfb",
+          "preview": "> $$C_{DO,\\text{sat}} ≈ (468) / (31.6 + T) \\text{ [mg/L]}$$"
         },
         {
           "id": "sts.chapter9.b0095",
           "type": "paragraph",
           "lines": [
-            235,
-            235
+            236,
+            236
           ],
           "words": 12,
           "hash": "8dd6d32b97cf",
@@ -11086,8 +11086,8 @@
           "id": "sts.chapter9.b0096",
           "type": "paragraph",
           "lines": [
-            237,
-            237
+            238,
+            238
           ],
           "words": 10,
           "hash": "93ea4b120128",
@@ -11097,8 +11097,8 @@
           "id": "sts.chapter9.b0097",
           "type": "paragraph",
           "lines": [
-            239,
-            239
+            240,
+            240
           ],
           "words": 12,
           "hash": "5682fa5e6cca",
@@ -11108,19 +11108,19 @@
           "id": "sts.chapter9.b0098",
           "type": "blockquote",
           "lines": [
-            241,
-            241
+            242,
+            242
           ],
-          "words": 13,
-          "hash": "b4ec6945a2e8",
-          "preview": "> **C_DO, sat ≈ (468) / (31.6 + 15) = (468) / (46.6) ≈ 10.04 mg/L**"
+          "words": 16,
+          "hash": "1a1ee4824a7c",
+          "preview": "> $$C_{DO,\\text{sat}} ≈ (468) / (31.6 + 15) = (468) / (46.6) ≈ 10.04 \\text{ mg/L}$$"
         },
         {
           "id": "sts.chapter9.b0099",
           "type": "paragraph",
           "lines": [
-            243,
-            243
+            244,
+            244
           ],
           "words": 23,
           "hash": "44bcee3e45a3",
@@ -11130,8 +11130,8 @@
           "id": "sts.chapter9.b0100",
           "type": "paragraph",
           "lines": [
-            245,
-            245
+            246,
+            246
           ],
           "words": 11,
           "hash": "7f6a5b8cf68c",
@@ -11141,19 +11141,19 @@
           "id": "sts.chapter9.b0101",
           "type": "blockquote",
           "lines": [
-            247,
-            247
+            248,
+            248
           ],
-          "words": 13,
-          "hash": "5d6c803b741b",
-          "preview": "> **C_DO, sat ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.03 mg/L**"
+          "words": 16,
+          "hash": "e776a29918a4",
+          "preview": "> $$C_{DO,\\text{sat}} ≈ (468) / (31.6 + 35) = (468) / (66.6) ≈ 7.03 \\text{ mg/L}$$"
         },
         {
           "id": "sts.chapter9.b0102",
           "type": "paragraph",
           "lines": [
-            249,
-            249
+            250,
+            250
           ],
           "words": 42,
           "hash": "d487873b475d",
@@ -11163,8 +11163,8 @@
           "id": "sts.chapter9.b0103",
           "type": "paragraph",
           "lines": [
-            251,
-            251
+            252,
+            252
           ],
           "words": 53,
           "hash": "6609be1c3796",
@@ -11174,8 +11174,8 @@
           "id": "sts.chapter9.b0104",
           "type": "heading",
           "lines": [
-            253,
-            253
+            254,
+            254
           ],
           "words": 4,
           "hash": "2f684ad9d243",
@@ -11186,8 +11186,8 @@
           "id": "sts.chapter9.b0105",
           "type": "list",
           "lines": [
-            255,
-            257
+            256,
+            258
           ],
           "words": 100,
           "hash": "08c9571faca0",
@@ -11197,8 +11197,8 @@
           "id": "sts.chapter9.b0106",
           "type": "list",
           "lines": [
-            259,
-            262
+            260,
+            263
           ],
           "words": 69,
           "hash": "cb311ef9f91b",
@@ -11208,8 +11208,8 @@
           "id": "sts.chapter9.b0107",
           "type": "paragraph",
           "lines": [
-            264,
-            264
+            265,
+            265
           ],
           "words": 35,
           "hash": "7af7b9fa0190",
@@ -11219,8 +11219,8 @@
           "id": "sts.chapter9.b0108",
           "type": "heading",
           "lines": [
-            266,
-            266
+            267,
+            267
           ],
           "words": 4,
           "hash": "a16bfe998689",
@@ -11231,8 +11231,8 @@
           "id": "sts.chapter9.b0109",
           "type": "list",
           "lines": [
-            268,
-            270
+            269,
+            271
           ],
           "words": 171,
           "hash": "61918bbe3c0f",
@@ -11242,8 +11242,8 @@
           "id": "sts.chapter9.b0110",
           "type": "paragraph",
           "lines": [
-            272,
-            272
+            273,
+            273
           ],
           "words": 51,
           "hash": "2e81fec63b3a",
@@ -11253,8 +11253,8 @@
           "id": "sts.chapter9.b0111",
           "type": "paragraph",
           "lines": [
-            274,
-            274
+            275,
+            275
           ],
           "words": 13,
           "hash": "fd9081f7b177",
@@ -11264,8 +11264,8 @@
           "id": "sts.chapter9.b0112",
           "type": "paragraph",
           "lines": [
-            276,
-            276
+            277,
+            277
           ],
           "words": 33,
           "hash": "2fe3c0ab9f35",
@@ -11275,8 +11275,8 @@
           "id": "sts.chapter9.b0113",
           "type": "paragraph",
           "lines": [
-            278,
-            278
+            279,
+            279
           ],
           "words": 72,
           "hash": "c012d57e42c5",
@@ -11286,8 +11286,8 @@
           "id": "sts.chapter9.b0114",
           "type": "paragraph",
           "lines": [
-            280,
-            280
+            281,
+            281
           ],
           "words": 10,
           "hash": "f60089eb278a",
@@ -11297,8 +11297,8 @@
           "id": "sts.chapter9.b0115",
           "type": "hr",
           "lines": [
-            282,
-            282
+            283,
+            283
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -11308,8 +11308,8 @@
           "id": "sts.chapter9.b0116",
           "type": "heading",
           "lines": [
-            284,
-            284
+            285,
+            285
           ],
           "words": 12,
           "hash": "cdd96ad2fe2f",
@@ -11320,8 +11320,8 @@
           "id": "sts.chapter9.b0117",
           "type": "paragraph",
           "lines": [
-            286,
-            286
+            287,
+            287
           ],
           "words": 74,
           "hash": "45f8bc55a097",
@@ -11331,8 +11331,8 @@
           "id": "sts.chapter9.b0118",
           "type": "paragraph",
           "lines": [
-            288,
-            288
+            289,
+            289
           ],
           "words": 87,
           "hash": "b90d125ed932",
@@ -11342,8 +11342,8 @@
           "id": "sts.chapter9.b0119",
           "type": "paragraph",
           "lines": [
-            290,
-            290
+            291,
+            291
           ],
           "words": 46,
           "hash": "c91dcd87780d",
@@ -11353,8 +11353,8 @@
           "id": "sts.chapter9.b0120",
           "type": "paragraph",
           "lines": [
-            292,
-            292
+            293,
+            293
           ],
           "words": 50,
           "hash": "384a1545dfe6",
@@ -11364,8 +11364,8 @@
           "id": "sts.chapter9.b0121",
           "type": "paragraph",
           "lines": [
-            294,
-            294
+            295,
+            295
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -11375,8 +11375,8 @@
           "id": "sts.chapter9.b0122",
           "type": "list",
           "lines": [
-            296,
-            298
+            297,
+            299
           ],
           "words": 203,
           "hash": "335b6fc36771",
@@ -11457,7 +11457,7 @@
       "title": "Chapter 10: The \"Create Over Consume\" Protocol",
       "file": "12-chapter10.md",
       "next_ordinal": 118,
-      "words": 3641,
+      "words": 3661,
       "tombstones": [],
       "blocks": [
         {
@@ -11983,7 +11983,7 @@
             103
           ],
           "words": 42,
-          "hash": "f4414806e4e6",
+          "hash": "526d72b7ce89",
           "preview": "A Large Language Model (LLM) is not an intelligence. It is a highly sophisticated statisti"
         },
         {
@@ -11994,8 +11994,8 @@
             105
           ],
           "words": 5,
-          "hash": "51f244e84d37",
-          "preview": "> **P(W_1, W_2, dots, W_n)**"
+          "hash": "90ccb20f381b",
+          "preview": "> $$P(W_1, W_2, \\dots, W_n)$$"
         },
         {
           "id": "sts.chapter10.b0049",
@@ -12027,7 +12027,7 @@
             111
           ],
           "words": 58,
-          "hash": "4f6cc219e20f",
+          "hash": "2d7ce545f9cc",
           "preview": "The corporate state, in its drive to automate everything and eliminate costly human writer"
         },
         {
@@ -12037,8 +12037,8 @@
             113,
             113
           ],
-          "words": 40,
-          "hash": "986cabd58da3",
+          "words": 42,
+          "hash": "35f3bab8b8ae",
           "preview": "Let us express this iterative training process mathematically. Let the real human data dis"
         },
         {
@@ -12059,9 +12059,9 @@
             117,
             117
           ],
-          "words": 8,
-          "hash": "6cf47ac4ae52",
-          "preview": "> **P_k(x) = ∫ q_k(x | y) P_k-1(y) dy**"
+          "words": 11,
+          "hash": "6813ee5567e5",
+          "preview": "> $$P_k(x) = \\int q_k(x \\mid y) P_{k-1}(y) \\, dy$$"
         },
         {
           "id": "sts.chapter10.b0055",
@@ -12081,9 +12081,9 @@
             121,
             121
           ],
-          "words": 18,
-          "hash": "bc66a15d1cd7",
-          "preview": "- q_k(x | y) is the error-prone transition kernel representing the approximation and sampl"
+          "words": 19,
+          "hash": "fc836425d0ec",
+          "preview": "- $q_k(x \\mid y)$ is the error-prone transition kernel representing the approximation and "
         },
         {
           "id": "sts.chapter10.b0057",
@@ -12126,9 +12126,9 @@
             129,
             129
           ],
-          "words": 9,
-          "hash": "3d716f53af03",
-          "preview": "Over generations k → ∞, the variance of the distribution shrinks:"
+          "words": 11,
+          "hash": "086656019d33",
+          "preview": "Over generations $k \\to \\infty$, the variance of the distribution shrinks:"
         },
         {
           "id": "sts.chapter10.b0061",
@@ -12137,9 +12137,9 @@
             131,
             131
           ],
-          "words": 5,
-          "hash": "bf41d91fd929",
-          "preview": "> **lim_k → ∞ σ^2(P_k) = 0**"
+          "words": 8,
+          "hash": "96d5feea64cc",
+          "preview": "> $$\\lim_{k \\to \\infty} \\sigma^2(P_k) = 0$$"
         },
         {
           "id": "sts.chapter10.b0062",
@@ -12193,9 +12193,9 @@
             141,
             141
           ],
-          "words": 6,
-          "hash": "3333c4f3cc08",
-          "preview": "> **lim_k → ∞ P_k(x) = δ(x - x_slop)**"
+          "words": 11,
+          "hash": "8b3ea42ebf71",
+          "preview": "> $$\\lim_{k \\to \\infty} P_k(x) = \\delta(x - x_{\\text{slop}})$$"
         },
         {
           "id": "sts.chapter10.b0067",
@@ -12215,9 +12215,9 @@
             145,
             146
           ],
-          "words": 17,
-          "hash": "253f51a390ab",
-          "preview": "- δ is the Dirac delta function. - x_slop is the completely generic, low-utility, high-pro"
+          "words": 19,
+          "hash": "343b4f6bdf58",
+          "preview": "- $\\delta$ is the Dirac delta function. - $x_{\\text{slop}}$ is the completely generic, low"
         },
         {
           "id": "sts.chapter10.b0069",
@@ -12306,9 +12306,9 @@
             162,
             162
           ],
-          "words": 45,
-          "hash": "4d6e5f67ad91",
-          "preview": "The energy cost to generate a token (J_token) is non-trivial. When multiplied by trillions"
+          "words": 46,
+          "hash": "42f82abd1d80",
+          "preview": "The energy cost to generate a token ($J_{token}$) is non-trivial. When multiplied by trill"
         },
         {
           "id": "sts.chapter10.b0077",
@@ -12384,8 +12384,8 @@
             176,
             176
           ],
-          "words": 73,
-          "hash": "978ed71d664b",
+          "words": 74,
+          "hash": "82c6da69bfaa",
           "preview": "If you post a dry, technical PDF titled *\"How to Build a DC-Native Solar Array and Setup a"
         },
         {
@@ -12777,7 +12777,7 @@
       "title": "Chapter 11: Using the Tech to Your Advantage",
       "file": "13-chapter11.md",
       "next_ordinal": 98,
-      "words": 4037,
+      "words": 4061,
       "tombstones": [],
       "blocks": [
         {
@@ -13295,9 +13295,9 @@
             96,
             96
           ],
-          "words": 35,
-          "hash": "443766b8e338",
-          "preview": "Let us calculate the exact VRAM requirement (V_RAM) for any given local LLM based on its p"
+          "words": 36,
+          "hash": "9c8929d51e3e",
+          "preview": "Let us calculate the exact VRAM requirement ($V_{RAM}$) for any given local LLM based on i"
         },
         {
           "id": "sts.chapter11.b0045",
@@ -13306,9 +13306,9 @@
             98,
             98
           ],
-          "words": 6,
-          "hash": "d3445dbf13f1",
-          "preview": "> **V_RAM ≈ ( (P · Q) / (8) ) · B [GB]**"
+          "words": 8,
+          "hash": "ffb0a77fb285",
+          "preview": "> $$V_{RAM} ≈ ( (P · Q) / (8) ) · B \\text{ [GB]}$$"
         },
         {
           "id": "sts.chapter11.b0046",
@@ -13329,7 +13329,7 @@
             105
           ],
           "words": 60,
-          "hash": "ab19d092e98f",
+          "hash": "40bcc30ec11a",
           "preview": "- $P$ is the parameter count of the model (e.g., 70 for a 70B model). - $Q$ is the quantiz"
         },
         {
@@ -13361,9 +13361,9 @@
             111,
             111
           ],
-          "words": 12,
-          "hash": "556ae29c4261",
-          "preview": "> **V_RAM = ( (8 · 16) / (8) ) · 1.20 = 16 · 1.20 = 19.2 GB**"
+          "words": 14,
+          "hash": "c389ff96c755",
+          "preview": "> $$V_{RAM} = ( (8 · 16) / (8) ) · 1.20 = 16 · 1.20 = 19.2 \\text{ GB}$$"
         },
         {
           "id": "sts.chapter11.b0051",
@@ -13394,9 +13394,9 @@
             117,
             117
           ],
-          "words": 11,
-          "hash": "add1d6025c77",
-          "preview": "> **V_RAM = ( (70 · 4) / (8) ) · 1.20 = 35 · 1.20 = 42 GB**"
+          "words": 13,
+          "hash": "ef2264a0588c",
+          "preview": "> $$V_{RAM} = ( (70 · 4) / (8) ) · 1.20 = 35 · 1.20 = 42 \\text{ GB}$$"
         },
         {
           "id": "sts.chapter11.b0054",
@@ -13485,9 +13485,9 @@
             133,
             133
           ],
-          "words": 34,
-          "hash": "f77fee85cd9e",
-          "preview": "The heat transfer rate (Q̇) of our liquid cooling loop in Watts is governed by the mass fl"
+          "words": 36,
+          "hash": "99a2afba90fd",
+          "preview": "The heat transfer rate ($\\dot{Q}$) of our liquid cooling loop in Watts is governed by the "
         },
         {
           "id": "sts.chapter11.b0062",
@@ -13496,9 +13496,9 @@
             135,
             135
           ],
-          "words": 5,
-          "hash": "f056c455474a",
-          "preview": "> **Q̇ = ṁ · C_p · Δ T**"
+          "words": 7,
+          "hash": "f561002ac3a7",
+          "preview": "> $$\\dot{Q} = \\dot{m} · C_p · \\Delta T$$"
         },
         {
           "id": "sts.chapter11.b0063",
@@ -13518,9 +13518,9 @@
             139,
             141
           ],
-          "words": 57,
-          "hash": "c9d89805ba10",
-          "preview": "- ṁ is the fluid mass flow rate in kilograms per second (kg/s). - C_p is the specific heat"
+          "words": 61,
+          "hash": "3027abc086a8",
+          "preview": "- $\\dot{m}$ is the fluid mass flow rate in kilograms per second (kg/s). - $C_p$ is the spe"
         },
         {
           "id": "sts.chapter11.b0065",
@@ -13530,7 +13530,7 @@
             143
           ],
           "words": 30,
-          "hash": "77e368498f14",
+          "hash": "515e9313e38d",
           "preview": "To dissipate 1,000 Watts (1,000 J/s) of continuous compute heat while maintaining a tight,"
         },
         {
@@ -13540,9 +13540,9 @@
             145,
             145
           ],
-          "words": 13,
-          "hash": "d9e9f4934a77",
-          "preview": "> **ṁ = Q̇ / (C_p · ΔT) = (1,000) / (3,800 · 5) ≈ 0.0526 kg/s**"
+          "words": 19,
+          "hash": "3eaa0bea2966",
+          "preview": "> $$\\dot{m} = \\dot{Q} / (C_p · \\Delta T) = (\\text{1,000}) / (\\text{3,800} · 5) ≈ 0.0526 \\t"
         },
         {
           "id": "sts.chapter11.b0067",
@@ -13562,9 +13562,9 @@
             149,
             149
           ],
-          "words": 12,
-          "hash": "bf7cf965d84a",
-          "preview": "> **Flow Rate ≈ 0.0526 L/s ≈ 3.16 Liters per minute (LPM)**"
+          "words": 15,
+          "hash": "e083ce5add87",
+          "preview": "> $$\\text{Flow Rate} ≈ 0.0526 \\text{ L/s} ≈ 3.16 \\text{ Liters per minute (LPM)}$$"
         },
         {
           "id": "sts.chapter11.b0069",
@@ -15130,7 +15130,7 @@
       "title": "Chapter 13: The Shouse Protocol",
       "file": "15-chapter13.md",
       "next_ordinal": 117,
-      "words": 4623,
+      "words": 4659,
       "tombstones": [],
       "blocks": [
         {
@@ -15704,9 +15704,9 @@
             108,
             108
           ],
-          "words": 16,
-          "hash": "6c158675deff",
-          "preview": "Let the total weight of the loaded structure be W_total = 15,000 kg (≈ 147,150 N)."
+          "words": 18,
+          "hash": "6539f15b837a",
+          "preview": "Let the total weight of the loaded structure be $W_{total} = \\text{15,000}$ kg (≈ 147,150 "
         },
         {
           "id": "sts.chapter13.b0050",
@@ -15726,9 +15726,9 @@
             112,
             112
           ],
-          "words": 9,
-          "hash": "32c8e75cbf16",
-          "preview": "> **F_pier = W_total / 6 = 2,500 kg ≈ 24,525 N**"
+          "words": 13,
+          "hash": "9162c1400569",
+          "preview": "> $$F_{pier} = W_{total} / 6 = \\text{2,500 kg} ≈ \\text{24,525 N}$$"
         },
         {
           "id": "sts.chapter13.b0052",
@@ -15737,9 +15737,9 @@
             114,
             114
           ],
-          "words": 50,
-          "hash": "f339d80d3f2c",
-          "preview": "To prevent settlement, the bearing capacity of the soil (q_allow) must exceed the pressure"
+          "words": 52,
+          "hash": "1f935775a230",
+          "preview": "To prevent settlement, the bearing capacity of the soil ($q_{allow}$) must exceed the pres"
         },
         {
           "id": "sts.chapter13.b0053",
@@ -15748,9 +15748,9 @@
             116,
             116
           ],
-          "words": 15,
-          "hash": "34fb4e853505",
-          "preview": "> **A_base ≥ F_pier / q_allow = 24,525 N / 100,000 N/m^2 = 0.245 m^2**"
+          "words": 22,
+          "hash": "f76b2b7bd983",
+          "preview": "> $$A_{base} \\geq F_{pier} / q_{allow} = \\text{24,525 N} / \\text{100,000 N/m}^2 = 0.245 \\t"
         },
         {
           "id": "sts.chapter13.b0054",
@@ -15759,9 +15759,9 @@
             118,
             118
           ],
-          "words": 25,
-          "hash": "1d0ffcbc8ebd",
-          "preview": "A square pier footing of 50 cm × 50 cm (0.25 m^2) is mathematically sufficient to prevent "
+          "words": 24,
+          "hash": "ce913832d8ab",
+          "preview": "A square pier footing of 50 cm × 50 cm (0.25 m²) is mathematically sufficient to prevent y"
         },
         {
           "id": "sts.chapter13.b0055",
@@ -15919,9 +15919,9 @@
             150,
             150
           ],
-          "words": 47,
-          "hash": "6191dbd277cd",
-          "preview": "Assume a total roof live load (snow, solar arrays) of w = 3,000 N/m distributed across the"
+          "words": 48,
+          "hash": "37af65279052",
+          "preview": "Assume a total roof live load (snow, solar arrays) of $w = \\text{3,000}$ N/m distributed a"
         },
         {
           "id": "sts.chapter13.b0069",
@@ -15930,9 +15930,9 @@
             152,
             152
           ],
-          "words": 14,
-          "hash": "a42ad5eca037",
-          "preview": "The maximum bending moment (M_max) for a continuously supported beam with uniform load is:"
+          "words": 15,
+          "hash": "c4da54029647",
+          "preview": "The maximum bending moment ($M_{max}$) for a continuously supported beam with uniform load"
         },
         {
           "id": "sts.chapter13.b0070",
@@ -15941,9 +15941,9 @@
             154,
             154
           ],
-          "words": 18,
-          "hash": "9a972325c0ec",
-          "preview": "> **M_max = (w · L^2) / (8) = 3,000 N/m · (3.05 m)^2 / 8 ≈ 3,488 N·m**"
+          "words": 22,
+          "hash": "4229a06a1a58",
+          "preview": "> $$M_{max} = (w · L^2) / (8) = \\text{3,000 N/m} · (3.05 \\text{ m})^2 / 8 ≈ \\text{3,488 N·"
         },
         {
           "id": "sts.chapter13.b0071",
@@ -15952,9 +15952,9 @@
             156,
             156
           ],
-          "words": 34,
-          "hash": "244b3ab5890e",
-          "preview": "To prevent structural failure, the maximum bending stress (σ_max) must not exceed the allo"
+          "words": 37,
+          "hash": "7b08f6822d9c",
+          "preview": "To prevent structural failure, the maximum bending stress ($\\sigma_{max}$) must not exceed"
         },
         {
           "id": "sts.chapter13.b0072",
@@ -15963,9 +15963,9 @@
             158,
             158
           ],
-          "words": 25,
-          "hash": "a18eca759093",
-          "preview": "> **σ_design = M_max / S ⇒ S ≥ M_max / σ_design = 3,488 N·m / 166×10^6 N/m^2 ≈ 2.1 × 10^-5"
+          "words": 35,
+          "hash": "2a9803a6e2ba",
+          "preview": "> $$\\sigma_{design} = M_{max} / S \\Rightarrow S \\geq M_{max} / \\sigma_{design} = \\text{3,4"
         },
         {
           "id": "sts.chapter13.b0073",
@@ -16065,8 +16065,8 @@
             179
           ],
           "words": 6,
-          "hash": "298c52d223ed",
-          "preview": "> **Q = (k · A · Δ T) / (d)**"
+          "hash": "4d3dffef052b",
+          "preview": "> $$Q = (k · A · \\Delta T) / (d)$$"
         },
         {
           "id": "sts.chapter13.b0082",
@@ -16087,7 +16087,7 @@
             187
           ],
           "words": 52,
-          "hash": "6cbe749427fb",
+          "hash": "34789523ce27",
           "preview": "- $Q$ is the heat transfer rate in Watts ($W$). - $k$ is the thermal conductivity of the m"
         },
         {
@@ -16097,9 +16097,9 @@
             189,
             189
           ],
-          "words": 44,
-          "hash": "f29fe043c392",
-          "preview": "Because k_steel is incredibly high, an uninsulated steel wall (d = 2 mm) transfers heat al"
+          "words": 45,
+          "hash": "c32f76f7436c",
+          "preview": "Because $k_{steel}$ is incredibly high, an uninsulated steel wall ($d = 2$ mm) transfers h"
         },
         {
           "id": "sts.chapter13.b0085",
@@ -16108,9 +16108,9 @@
             191,
             191
           ],
-          "words": 3,
-          "hash": "9de63b43d87e",
-          "preview": "> **R-value = d / k_insulation**"
+          "words": 5,
+          "hash": "b2d97d871b32",
+          "preview": "> $$\\text{R-value} = d / k_{insulation}$$"
         },
         {
           "id": "sts.chapter13.b0086",

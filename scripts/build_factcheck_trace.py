@@ -14,9 +14,19 @@ The page never hardcodes a count. Every number it displays is computed in
 the browser from the embedded records, so the page cannot drift from its
 own data.
 
+The --static target must stay a directory index, not a root-level .html.
+Cloudflare Pages redirects /factcheck-trace.html to /factcheck-trace, and the
+adapter-cloudflare worker only recognises a static path when the build manifest
+holds either that exact name or that name plus "/index.html". A root-level
+factcheck-trace.html satisfies neither after the redirect, so the request fell
+through to SvelteKit and 404ed in production while every local check passed.
+scripts/probe-pages-routing.mjs checks this against a real build.
+
 Usage:
     python3 scripts/build_factcheck_trace.py docs/factcheck-2026-07-30.json \
-            docs/factcheck-trace-2026-07-30.html
+            docs/factcheck-trace-2026-07-30.html \
+            --summary src/lib/data/factcheck-summary.json \
+            --static static/factcheck-trace/index.html
 """
 
 import json

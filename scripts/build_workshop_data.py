@@ -218,7 +218,7 @@ def main() -> int:
             }
         ],
         "links": [
-            {"label": "Chain of custody trace", "href": "/factcheck-trace.html",
+            {"label": "Chain of custody trace", "href": "/factcheck-trace/",
              "note": "Every claim, hop by hop, including the hops that break"},
         ],
     }

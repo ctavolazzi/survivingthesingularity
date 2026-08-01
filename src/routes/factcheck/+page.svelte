@@ -127,7 +127,7 @@
       and the chain of custody draws itself hop by hop, and stops dead where the
       evidence does.
     </p>
-    <a class="fc-button" href="/factcheck-trace.html">
+    <a class="fc-button" href="/factcheck-trace/">
       Open the full audit
       <span aria-hidden="true">-&gt;</span>
     </a>

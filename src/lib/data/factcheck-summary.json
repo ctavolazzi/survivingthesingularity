@@ -1,14 +1,14 @@
 {
-  "generated": "2026-07-30",
+  "generated": "2026-08-01",
   "book_version": "0.7.4",
   "repo": "https://github.com/ctavolazzi/survivingthesingularity",
   "network": false,
-  "words": 91950,
+  "words": 91954,
   "sections": 30,
   "blocks": 2065,
   "claims": 1242,
-  "resolvable": 1091,
-  "broken": 151,
+  "resolvable": 1242,
+  "broken": 0,
   "by_verdict": {
     "SUPPORTED": 273,
     "UNCHECKED": 776,
@@ -30,12 +30,7 @@
   "comparison_claims": 36,
   "figures": 85,
   "internal_refs": 191,
-  "uncommitted_files": [
-    "11-chapter9.md",
-    "12-chapter10.md",
-    "13-chapter11.md",
-    "15-chapter13.md"
-  ],
+  "uncommitted_files": [],
   "not_covered": [
     {
       "kind": "named entity",

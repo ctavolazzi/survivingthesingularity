@@ -80,6 +80,11 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 
+# sts_lib holds the internals, split by concern. Importable with no packaging
+# step because sys.path[0] is this file's directory whenever sts.py runs as the
+# main script -- which is the only way it is meant to run.
+from sts_lib.manifest import load_manifest, section_files, section_label
+
 VERSION = "0.0.1"
 SITE = "https://survivingthesingularity.com"
 
@@ -418,7 +423,7 @@ def strip_md(text: str) -> str:
 
 
 def book_stats() -> dict:
-    meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+    meta = load_manifest(BOOK_DIR)
     sections = []
     for s in meta["sections"]:
         f = BOOK_DIR / s["file"]
@@ -432,7 +437,27 @@ def book_stats() -> dict:
             "sections": sections}
 
 
+# Sections no consumer of the reflowable build can use, named by section ID.
+#
+# Keyed on id, not filename. scripts/build-epub.sh used to drop the print-style
+# index with `grep -v '^18-index.md$'`, and by the time this was written that
+# pattern matched nothing at all: the file had been renumbered out from under
+# it. A dead filter that reads like a live one is worse than no filter, because
+# it looks handled. Section ids survive renumbering; filenames carry an ordinal
+# prefix and do not.
+EPUB_EXCLUDE_IDS = ("index",)
+
+
 def cmd_book(args) -> int:
+    if args.files:
+        # The ordered section list for build-epub.sh, which used to derive it
+        # with its own jq expression. One manifest reader, three consumers.
+        meta = load_manifest(BOOK_DIR)
+        excluded = {s["file"] for s in meta["sections"]
+                    if s["id"] in EPUB_EXCLUDE_IDS}
+        for f in section_files(meta, exclude=excluded):
+            print(f)
+        return 0
     stats = book_stats()
     if args.json:
         print(json.dumps(stats, indent=2))
@@ -705,7 +730,7 @@ def cmd_images(args) -> int:
             sys.stdout.write(text)
             return 1 if any(r["action"] == "no-heading" for r in results) else 0
     else:
-        meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+        meta = load_manifest(BOOK_DIR)
         files = {s["id"]: BOOK_DIR / s["file"] for s in meta["sections"]}
         for e in registry:
             f = files.get(e["key"])
@@ -743,7 +768,7 @@ def cmd_quotes(args) -> int:
             sys.stdout.write(text)
             return 1 if any(r["action"] == "no-heading" for r in results) else 0
     else:
-        meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+        meta = load_manifest(BOOK_DIR)
         files = {s["id"]: BOOK_DIR / s["file"] for s in meta["sections"]}
         for q in registry:
             f = files.get(q["key"])
@@ -978,7 +1003,7 @@ def load_og_cards() -> list:
     reg = json.loads((ROOT / "scripts" / "og_cards.json").read_text(encoding="utf-8"))
     # {version} resolves from book.json, so a card that quotes the draft version
     # cannot go stale against the book it is advertising.
-    version = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))["version"]
+    version = load_manifest(BOOK_DIR)["version"]
     cards = []
     for c in reg["cards"]:
         c = dict(c)
@@ -2034,7 +2059,7 @@ def cmd_status(args) -> int:
 # ──────────────────────────────────────────────────────────────────────
 
 def cmd_compile(args) -> int:
-    meta = json.loads((BOOK_DIR / "book.json").read_text(encoding="utf-8"))
+    meta = load_manifest(BOOK_DIR)
     tag = args.tag or meta["version"]
     header = (f"# {meta['title'].upper()}\n\n"
               f"## {meta['subtitle']}\n\n"
@@ -2234,8 +2259,7 @@ def cmd_scan(args) -> int:
       - per-chapter texture score (formatting events per 1,000 words)
     Report-only: never edits the manuscript.
     """
-    book_dir = ROOT / "src" / "lib" / "data" / "book"
-    book = json.loads((book_dir / "book.json").read_text())
+    book = load_manifest(BOOK_DIR)
     top_n = args.top
 
     aphorism_re = re.compile(
@@ -2247,7 +2271,7 @@ def cmd_scan(args) -> int:
 
     report = []
     for section in book["sections"]:
-        path = book_dir / section["file"]
+        path = BOOK_DIR / section["file"]
         raw = path.read_text()
         lines = raw.split("\n")
 
@@ -2518,7 +2542,9 @@ def _reconcile(old_blocks, new_blocks):
 
 def _build_index(book_dir, old_index=None):
     """Parse every section into addressed blocks, reconciling ids with old_index."""
-    book = json.loads((book_dir / "book.json").read_text(encoding="utf-8"))
+    # book_dir is a parameter, not BOOK_DIR: `refs stress` builds an index from a
+    # mutated manifest in a temp tree to prove the ref checks actually fire.
+    book = load_manifest(book_dir)
     figmap = _art_figure_map(book_dir)
     old_secs = {s["id"]: s for s in (old_index or {}).get("sections", [])}
     sections_out, total_blocks, total_words = [], 0, 0
@@ -2956,14 +2982,11 @@ def cmd_id(args):
 _SREF_RE = re.compile(r"\[([^\]\n]*)\]\(sts:([A-Za-z0-9._-]+)\)")
 
 
-def _section_label(title: str) -> str:
-    """'Chapter 1: The Event Horizon' -> 'Chapter 1'.
-
-    book.json titles are '<short name>: <descriptive tail>'. The short name is
-    what prose actually says ("as we saw in Chapter 1"), so that is what a
-    generated label expands to. Titles with no colon are used whole.
-    """
-    return title.split(":", 1)[0].strip() if ":" in title else title.strip()
+# The label rule lives in sts_lib.manifest so the parity check can run it
+# against the JavaScript half. Kept under the old private name because the ref
+# subsystem below reads better with it, and renaming it would touch call sites
+# that have nothing to do with where the rule lives.
+_section_label = section_label
 
 
 def _ref_targets(index):
@@ -3079,6 +3102,36 @@ def _refs_list(args):
     return 1 if bad else 0
 
 
+def _refs_labels(args):
+    """Every label this resolver generates, as JSON. The parity substrate.
+
+    scripts/check-resolver-parity.mjs runs the JavaScript half of the rule set
+    (src/lib/bookManifest.js) over the same manifest and diffs against this, so
+    the two implementations cannot drift apart unnoticed. The website cannot
+    call Python at build time, which is why there are two; this is what keeps
+    that from meaning two behaviours.
+
+    Emits both granularities on purpose. `sections` is the shared half, which
+    both sides must agree on exactly. `targets` covers every pointer the
+    manuscript actually contains, including block ids -- where this resolver is
+    deliberately STRICTER, because it resolves against the manuscript index and
+    can see that a block id names a block that no longer exists.
+    """
+    index = _live_index()
+    targets = _ref_targets(index)
+    out = {
+        "version": load_manifest(BOOK_DIR)["version"],
+        "sections": [{"id": s["id"], "title": s["title"],
+                      "label": _section_label(s["title"])}
+                     for s in index["sections"]],
+        "targets": {e["to"]: (targets[e["to"]]["label"]
+                              if e["to"] in targets else None)
+                    for e in _ref_edges(index)},
+    }
+    print(json.dumps(out, indent=2, ensure_ascii=False))
+    return 0
+
+
 def _refs_stress(args):
     """Prove the ref machinery on a throwaway copy. Real files are never touched.
 
@@ -3100,7 +3153,7 @@ def _refs_stress(args):
                 shutil.copy2(real / extra, tmp / extra)
         BOOK_DIR = tmp
 
-        book = json.loads((tmp / "book.json").read_text(encoding="utf-8"))
+        book = load_manifest(tmp)
         sec = book["sections"][0]
         victim = tmp / sec["file"]
         index = _build_index(tmp, None)
@@ -3152,7 +3205,7 @@ def _refs_stress(args):
         check("dangle.expand_raises", raised, "render refuses to emit a dead ref")
 
         # Renumbering the target rewrites the prose that points at it.
-        bj = json.loads((tmp / "book.json").read_text(encoding="utf-8"))
+        bj = load_manifest(tmp)
         for s in bj["sections"]:
             if s["id"] == "chapter1":
                 s["title"] = "Chapter 4: The Event Horizon"
@@ -3180,7 +3233,7 @@ def _refs_stress(args):
 
 def cmd_refs(args):
     return {"list": _refs_list, "render": _refs_render,
-            "stress": _refs_stress}[args.action](args)
+            "labels": _refs_labels, "stress": _refs_stress}[args.action](args)
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -5041,6 +5094,10 @@ def main():
 
     p = sub.add_parser("book")
     p.add_argument("--json", action="store_true")
+    p.add_argument("--files", action="store_true",
+                   help="section files in running order, one per line, minus "
+                        "sections the reflowable build cannot use "
+                        "(what scripts/build-epub.sh consumes)")
     p.add_argument("--thin", type=int, default=1500,
                    help="flag chapters under this many words (default 1500)")
     p.set_defaults(fn=cmd_book)
@@ -5098,6 +5155,10 @@ def main():
     rr = refsub.add_parser("render",
                            help="print one section with refs expanded (build hook)")
     rr.add_argument("file", help="section filename or path")
+    refsub.add_parser("labels",
+                      help="every generated label as JSON; what "
+                           "scripts/check-resolver-parity.mjs diffs the "
+                           "website's resolver against")
     rs = refsub.add_parser("stress",
                            help="prove the resolver on a throwaway copy of the book")
     rs.add_argument("--json", action="store_true")

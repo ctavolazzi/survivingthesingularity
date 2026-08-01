@@ -3,10 +3,11 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"prebuild": "node scripts/check-offer-drift.mjs && node scripts/check-book-downloads.mjs && node work_efforts/12_image_optimization_enhancements/image_build_hook.js",
+		"prebuild": "node scripts/check-offer-drift.mjs && node scripts/check-book-downloads.mjs && node scripts/check-resolver-parity.mjs && node work_efforts/12_image_optimization_enhancements/image_build_hook.js",
 		"build": "vite build",
 		"check:offer": "node scripts/check-offer-drift.mjs",
 		"check:downloads": "node scripts/check-book-downloads.mjs",
+		"check:resolver": "node scripts/check-resolver-parity.mjs",
 		"book:publish": "node scripts/publish-book-downloads.mjs",
 		"book:release": "node scripts/publish-book-downloads.mjs && node scripts/check-book-downloads.mjs",
 		"preview": "vite preview",

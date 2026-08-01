@@ -64,7 +64,11 @@ def trim(report):
         for k in ("url", "host", "in_works_cited", "bare_wikipedia",
                   "xref_kind", "target", "resolved", "image", "art_id",
                   "on_disk", "in_catalog", "comparison_claim",
-                  "has_citation_nearby", "years", "source_state"):
+                  "has_citation_nearby", "years", "source_state",
+                  # From the network half. Absent on an offline run, and the
+                  # page must render either way.
+                  "source_detail", "source_status", "source_final_url",
+                  "source_title_match"):
             if k in c:
                 rec[k] = c[k]
         out.append(rec)
@@ -280,11 +284,7 @@ footer code{font-family:var(--mono);color:var(--mut)}
     <div class="asof" id="asof"></div>
     <div class="banner">
       <div class="dot"></div>
-      <p><b>This was a local-only pass. No URL was fetched.</b> Nothing on this page tells you
-        whether a source is live, dead, paywalled or archived, because no network request was
-        made. Every external source hop is recorded broken with a reason rather than guessed at.
-        A claim marked <span class="vd UNCHECKED">UNCHECKED</span> is not a claim that failed.
-        It is a claim nobody has checked yet.</p>
+      <p id="netbanner"></p>
     </div>
     <div class="tiles" id="tiles"></div>
   </div>
@@ -397,6 +397,29 @@ $("#asof").textContent =
   "As of " + D.generated + " . book version " + D.book_version +
   " . " + nf(D.totals.words) + " words . " + nf(D.totals.blocks) + " blocks . " +
   D.totals.sections + " sections . generated at build time, not live";
+
+// The banner states what this pass did and did NOT do. It is generated from
+// D.network rather than written by hand, because the two halves of the audit
+// were unwired for a while and the hand-written version kept asserting "no URL
+// was fetched" on a page whose data said otherwise. A claim about the method
+// has to come from the same place as the method.
+const NET = D.network;
+$("#netbanner").innerHTML = NET
+  ? `<b>The Works Cited list was fetched. ${nf(NET.url_claims_resolved)} of `
+    + `${nf(NET.url_claims)} external URLs have a network record.</b> `
+    + "A citation reads confirmed only when the citation's own title words were "
+    + "found on the page that answered, never on a bare HTTP 200, because soft "
+    + "404s, parked domains, consent walls and paywalls all return 200. "
+    + `${nf(NET.by_source_state.BLOCKED || 0)} hosts refused an automated request, `
+    + "which is a fact about those hosts and not evidence against the citation, so "
+    + `they stay <span class="vd UNCHECKED">UNCHECKED</span>. Nothing here checks `
+    + "that a source actually supports the sentence citing it."
+  : "<b>This was a local-only pass. No URL was fetched.</b> Nothing on this page "
+    + "tells you whether a source is live, dead, paywalled or archived, because no "
+    + "network request was made. Every external source hop is recorded broken with "
+    + "a reason rather than guessed at. A claim marked "
+    + `<span class="vd UNCHECKED">UNCHECKED</span> is not a claim that failed. It `
+    + "is a claim nobody has checked yet.";
 
 const tiles = [
   ["neutral", nf(C.length), "claims traced"],
@@ -535,9 +558,30 @@ function hops(c) {
       (c.in_works_cited ? "Also present in the Appendix B Works Cited list."
                         : "NOT present in the Appendix B Works Cited list.") +
       (c.bare_wikipedia ? " Host is Wikipedia, which the P-09 post mortem treats as unverified by default when it is a claim's only citation." : "") });
-    bad(8, "source state", "BROKEN",
-      "No network request was made in this run, so liveness is unknown. A 200 would not have been enough anyway: soft 404s, parked domains, consent walls and paywalls all return 200, so the content has to be read, not just the status code.");
-    bad(9, "archive", "BROKEN", "No web.archive.org snapshot was resolved. Requires network.");
+    // Hop 8 is the one the network half actually answers. OK only for
+    // LIVE_CONFIRMED: a refusal or an unparsed PDF is not a checked source, and
+    // rendering either as ok would be the whole point of this page thrown away.
+    const SS = c.source_state;
+    if (!SS || SS === "UNCHECKED") {
+      bad(8, "source state", "BROKEN",
+        "No network record exists for this URL, so liveness is unknown. A 200 would not have been enough anyway: soft 404s, parked domains, consent walls and paywalls all return 200, so the content has to be read, not just the status code.");
+    } else {
+      const okState = SS === "LIVE_CONFIRMED";
+      const deadState = SS === "DEAD" || SS === "SOFT_404";
+      const m = c.source_title_match;
+      const matchTxt = m && m.of
+        ? ` Title match ${m.matched} of ${m.of} words (${m.fraction}).` : "";
+      H.push({ n: 8, label: "source state",
+        val: SS + (c.source_status ? " . HTTP " + c.source_status : ""),
+        st: okState ? "ok" : deadState ? "broken" : "na",
+        why: (c.source_detail || SS) + matchTxt + " " + (
+          okState
+            ? "The citation's own title words were found on the page that answered, which is why this reads as checked rather than merely reachable."
+            : deadState
+              ? "The host says this is gone. This is the one external state the audit can actively disprove."
+              : "Fetched, but not checked. This is not evidence against the citation, and it is not a check either.") });
+    }
+    bad(9, "archive", "BROKEN", "No web.archive.org snapshot was resolved. Not built.");
   } else if (c.t === "image") {
     H.push({ n: 7, label: "source", val: c.image + (c.art_id ? "\nart_id " + c.art_id : ""),
       st: c.on_disk ? "ok" : "broken",
@@ -549,7 +593,7 @@ function hops(c) {
     na(9, "archive", "not applicable", "Local asset. Nothing to archive.");
   } else if (c.t === "internal_xref") {
     H.push({ n: 7, label: "source", val: c.target, st: c.resolved ? "ok" : "broken",
-      why: c.resolved ? "Target exists inside the book itself. This is the one claim class fully decidable without network."
+      why: c.resolved ? "Target exists inside the book itself. This is the one claim class decidable from the working tree alone."
                       : "Target does not exist in the book. Dangling internal reference." });
     H.push({ n: 8, label: "source state", val: c.resolved ? "resolved in-book" : "DANGLING",
       st: c.resolved ? "ok" : "broken", why: c.n });
@@ -559,7 +603,7 @@ function hops(c) {
       "No external source is attached to this claim in the manuscript source. " +
       (c.has_citation_nearby ? "The enclosing block does carry a URL, so a source may be intended but is not bound to this sentence."
                              : "The enclosing block carries no URL at all, so even a network run would have nothing to resolve."));
-    bad(8, "source state", "BROKEN", "No source to check. Local-only run, no network request made.");
+    bad(8, "source state", "BROKEN", "No source to check. Nothing is bound to this sentence, so a network run has nothing to resolve.");
     bad(9, "archive", "BROKEN", "No source to archive.");
   }
 

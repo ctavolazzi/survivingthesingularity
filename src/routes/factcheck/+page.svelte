@@ -91,16 +91,30 @@
       This is the part worth trusting. An audit that only shows its wins is marketing.
     </p>
     <ul>
-      <li>
-        <strong>{n(summary.broken)} claims have no receipt yet.</strong> They live in
-        book files that have not been committed, so there is no commit to link to.
-        The page says so rather than inventing a link that would break for you.
-      </li>
-      <li>
-        <strong>No source was fetched in this pass.</strong> Nothing here tells you
-        whether a cited page is still live, paywalled, or gone. A claim marked
-        UNCHECKED is not a claim that failed. It is a claim nobody has checked yet.
-      </li>
+      {#if summary.broken > 0}
+        <li>
+          <strong>{n(summary.broken)} claims have no receipt yet.</strong> They live in
+          book files that have not been committed, so there is no commit to link to.
+          The page says so rather than inventing a link that would break for you.
+        </li>
+      {/if}
+      {#if summary.network}
+        <li>
+          <strong>Every cited page was fetched, but being live is not being right.</strong>
+          {n(summary.network.by_source_state?.LIVE_CONFIRMED ?? 0)} of
+          {n(summary.network.url_claims)} citations answered with the cited title on the
+          page. The rest stay UNCHECKED, including
+          {n(summary.network.by_source_state?.BLOCKED ?? 0)} whose hosts refuse automated
+          requests, which says something about those hosts and nothing about the citation.
+          Nothing here checks that a source actually supports the sentence citing it.
+        </li>
+      {:else}
+        <li>
+          <strong>No source was fetched in this pass.</strong> Nothing here tells you
+          whether a cited page is still live, paywalled, or gone. A claim marked
+          UNCHECKED is not a claim that failed. It is a claim nobody has checked yet.
+        </li>
+      {/if}
       <li>
         <strong>{n(summary.wikipedia)} of {n(summary.urls)} citations are Wikipedia</strong>
         ({pct(summary.wikipedia, summary.urls)}%), and {n(summary.not_in_works_cited)}

@@ -4341,6 +4341,64 @@ FC_UNCHECKED = "UNCHECKED"
 FC_UNCHECKABLE = "UNCHECKABLE"
 FC_CONTRADICTED = "CONTRADICTED"
 
+# ---- the network half, if it has been run.
+#
+# scripts/factcheck_network.py fetches every Appendix B citation and writes one
+# JSON record per URL into .factcheck-cache/. This pass READS that cache; it
+# never fetches anything itself, so `sts factcheck` stays offline and instant.
+# If the cache is absent the behaviour is exactly what it always was: every URL
+# comes back UNCHECKED and the report says no network run informed it.
+#
+# THE MAPPING IS DELIBERATELY STINGY. Only LIVE_CONFIRMED promotes a claim to
+# SUPPORTED, and LIVE_CONFIRMED already means the tool found the citation's own
+# title words on the fetched page, not merely that the host answered 200.
+# Everything else stays UNCHECKED and carries the real reason:
+#
+#   BLOCKED           the host refuses automated clients. That is a fact about
+#                     the host and is NOT evidence against the citation, so it
+#                     must never read as a failure.
+#   WALLED            gated, and the cited work was not visible behind the gate.
+#   LIVE_UNVERIFIED   live, but the body was never parsed (PDF and other
+#                     non-HTML). Live is not the same as verified.
+#   LIVE_UNCONFIRMED  live HTML, but the cited title was not on the page.
+#
+# The temptation is to call the last two PARTIAL because the host did answer.
+# Resisted on purpose: a reader scanning the audit reads any non-UNCHECKED
+# verdict as "someone checked this", and for these nobody has.
+FC_NET_CACHE_REL = ".factcheck-cache"
+
+FC_NET_TO_VERDICT = {
+    "LIVE_CONFIRMED": FC_SUPPORTED,
+    "LIVE_UNVERIFIED": FC_UNCHECKED,
+    "LIVE_UNCONFIRMED": FC_UNCHECKED,
+    "BLOCKED": FC_UNCHECKED,
+    "WALLED": FC_UNCHECKED,
+    "SERVER_ERROR": FC_UNCHECKED,
+    "UNREACHABLE": FC_UNCHECKED,
+    "OTHER": FC_UNCHECKED,
+    # A host that answered 404/410 for a citation the book relies on is the one
+    # case the network half can actively disprove.
+    "DEAD": FC_UNSUPPORTED,
+    "SOFT_404": FC_UNSUPPORTED,
+}
+
+
+def _fc_network_cache() -> dict:
+    """Load the network half keyed by URL. Absent cache means an offline run."""
+    out = {}
+    d = ROOT / FC_NET_CACHE_REL
+    if not d.is_dir():
+        return out
+    for p in sorted(d.glob("*.json")):
+        try:
+            r = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue  # a truncated cache entry is a miss, not a crash
+        url = r.get("url")
+        if url and r.get("state"):
+            out[url] = r
+    return out
+
 _FC_PCT = re.compile(r"\b\d+(?:\.\d+)?\s?(?:%|percent\b)")
 _FC_MONEY = re.compile(
     r"\$\s?\d[\d,]*(?:\.\d+)?(?:\s*(?:billion|million|trillion|thousand))?", re.I)
@@ -4563,7 +4621,7 @@ def _fc_works_cited():
     return {u.rstrip(".,);") for u in cited}
 
 
-def _fc_extract(index, targets, cited, gitstate):
+def _fc_extract(index, targets, cited, gitstate, net=None):
     """The extraction pass. One record per claim, keyed by block id."""
     claims = []
     stats = collections.Counter()
@@ -4697,24 +4755,45 @@ def _fc_extract(index, targets, cited, gitstate):
                 mk("image", blk["preview"][:200], 0, v, note,
                    image=img, art_id=art_id, on_disk=on_disk, in_catalog=in_cat)
 
-            # ---- URLs. No network this run, so state is UNCHECKED, never dead.
+            # ---- URLs. Resolved from the network cache when one exists, and
+            # UNCHECKED (never dead) when it does not. Absence of a fetch is
+            # not evidence against a citation.
             for m in _FC_URL.finditer(text):
                 url = m.group(0).rstrip(".,);")
                 host = urllib.parse.urlparse(url).netloc.lower()
                 in_cited = url in cited
                 bare_wiki = host.endswith("wikipedia.org")
-                mk("url", url, m.start(), FC_UNCHECKED,
-                   ("Liveness and content were not checked: this run is local only, "
-                    "no network request was made. "
-                    + ("The URL also appears in the Appendix B Works Cited list."
-                       if in_cited else
-                       "This URL does not appear in the Appendix B Works Cited list.")
-                    + (" Host is Wikipedia, which the P-09 post mortem flags as "
-                       "unverified by default when it is a claim's only citation."
-                       if bare_wiki else "")),
-                   url=url, host=host, in_works_cited=in_cited,
-                   bare_wikipedia=bare_wiki, source_state="UNCHECKED",
-                   archive_url=None, archive_date=None)
+
+                cited_note = ("The URL also appears in the Appendix B Works Cited list."
+                              if in_cited else
+                              "This URL does not appear in the Appendix B Works Cited "
+                              "list.")
+                wiki_note = (" Host is Wikipedia, which the P-09 post mortem flags as "
+                             "unverified by default when it is a claim's only citation."
+                             if bare_wiki else "")
+
+                hit = (net or {}).get(url)
+                if hit:
+                    state = hit["state"]
+                    verdict = FC_NET_TO_VERDICT.get(state, FC_UNCHECKED)
+                    mk("url", url, m.start(), verdict,
+                       f"{hit.get('detail', state)} {cited_note}{wiki_note}",
+                       url=url, host=host, in_works_cited=in_cited,
+                       bare_wikipedia=bare_wiki, source_state=state,
+                       source_detail=hit.get("detail", ""),
+                       source_status=hit.get("status"),
+                       source_final_url=hit.get("final_url"),
+                       source_title_match=hit.get("match"),
+                       checked_with=hit.get("checked_with"),
+                       archive_url=None, archive_date=None)
+                else:
+                    mk("url", url, m.start(), FC_UNCHECKED,
+                       ("Liveness and content were not checked: no network record "
+                        "exists for this URL. "
+                        + cited_note + wiki_note),
+                       url=url, host=host, in_works_cited=in_cited,
+                       bare_wikipedia=bare_wiki, source_state="UNCHECKED",
+                       archive_url=None, archive_date=None)
 
             # ---- prose claims. Sentence scoped.
             if blk["type"] in ("paragraph", "list", "blockquote", "caption", "table"):
@@ -4773,18 +4852,32 @@ def _fc_extract(index, targets, cited, gitstate):
 
 
 # What this pass does NOT cover, stated so the trace cannot imply otherwise.
+FC_NOT_COVERED_NET_OFF = {
+    "kind": "external source liveness",
+    "why": "No network record exists for this run. No URL was fetched, so no source "
+           "is known live, dead, paywalled or archived. Run "
+           "`python3 scripts/factcheck_network.py` to populate it.",
+}
+
+FC_NOT_COVERED_NET_ON = {
+    "kind": "external source content, beyond the title",
+    "why": "The network half fetched every Works Cited URL and asked whether the "
+           "citation's own title words appear on the page, which is why a bare 200 "
+           "is never enough to confirm one. It does NOT read the source and check "
+           "that it supports the sentence citing it. A LIVE_CONFIRMED citation is a "
+           "real page carrying the right title, not a verified argument. PDFs are "
+           "fetched but never parsed, so they stay unconfirmed on purpose.",
+}
+
 FC_NOT_COVERED = [
     {"kind": "named entity",
      "why": "No entity extraction is implemented. Recognising 'Frank Darvall' as a "
             "person and checking that the person said the thing needs either a "
             "gazetteer or a model, and guessing from capitalisation would produce "
             "confident nonsense."},
-    {"kind": "external source liveness",
-     "why": "This run is local only by request. No URL was fetched, so no source is "
-            "known live, dead, paywalled or archived. `sts verify --links` does the "
-            "liveness half over the network; content verification is still unbuilt."},
     {"kind": "archive.org snapshots",
-     "why": "Requires network. Every archive hop is recorded BROKEN."},
+     "why": "Requires an archive pass that is not built. Every archive hop is "
+            "recorded BROKEN."},
     {"kind": "causal claim adjudication",
      "why": "Detected but never adjudicated. A connective word is not a causal claim "
             "and no automated verdict is offered."},
@@ -4803,17 +4896,37 @@ def cmd_factcheck(args) -> int:
     cited = _fc_works_cited()
     files = [sec["file"] for sec in index["sections"]]
     gitstate = _fc_git_state(files)
-    claims, stats = _fc_extract(index, targets, cited, gitstate)
+    net = _fc_network_cache()
+    claims, stats = _fc_extract(index, targets, cited, gitstate, net)
 
     by_state = collections.Counter(g["receipt_state"] for g in gitstate.values())
     verdicts = collections.Counter(c["verdict"] for c in claims)
     types = collections.Counter(c["type"] for c in claims)
     resolvable = sum(1 for c in claims if c["git"]["link_state"] == "resolvable")
 
+    url_claims = [c for c in claims if c["type"] == "url"]
+    net_states = collections.Counter(
+        c["source_state"] for c in url_claims if c["source_state"] != "UNCHECKED")
+    matched = sum(1 for c in url_claims if c["source_state"] != "UNCHECKED")
+
+    # `network` was a bare False. It is now the receipt for the network half, so
+    # a reader can see how many URLs were actually fetched and in what state
+    # rather than taking "network: true" on faith.
+    network = False if not net else {
+        "cache": FC_NET_CACHE_REL,
+        "urls_cached": len(net),
+        "url_claims": len(url_claims),
+        "url_claims_resolved": matched,
+        "url_claims_unresolved": len(url_claims) - matched,
+        "by_source_state": dict(net_states),
+        "confirmed_means": "the citation's own title words were found on the fetched "
+                           "page. A bare HTTP 200 is never enough.",
+    }
+
     report = {
         "schema": FC_SCHEMA,
         "generated": date.today().isoformat(),
-        "network": False,
+        "network": network,
         "repo": FC_REPO,
         "repo_public": True,
         "book_version": index.get("book_version"),
@@ -4839,7 +4952,8 @@ def cmd_factcheck(args) -> int:
         },
         "git": {fname: {k: v for k, v in g.items() if k != "blame"}
                 for fname, g in gitstate.items()},
-        "not_covered": FC_NOT_COVERED,
+        "not_covered": FC_NOT_COVERED + [
+            FC_NOT_COVERED_NET_ON if net else FC_NOT_COVERED_NET_OFF],
         "claims": claims,
     }
 
@@ -4856,7 +4970,17 @@ def cmd_factcheck(args) -> int:
     t = report["totals"]
     print(f"\nfactcheck  {t['claims']:,} claims across {t['sections']} sections "
           f"({t['words']:,} words)")
-    print("  network: OFF. No URL was fetched. External source hops are BROKEN.\n")
+    if network:
+        n = network
+        print(f"  network: ON from {n['cache']}/. "
+              f"{n['url_claims_resolved']} of {n['url_claims']} URL claims resolved, "
+              f"{n['url_claims_unresolved']} with no record.")
+        print("    " + "  ".join(f"{k} {v}" for k, v in
+                                 sorted(n["by_source_state"].items())))
+        print("    Only LIVE_CONFIRMED counts as SUPPORTED. A refusal is not a "
+              "failure of the citation.\n")
+    else:
+        print("  network: OFF. No URL was fetched. External source hops are BROKEN.\n")
     print("  by type")
     for k, v in types.most_common():
         print(f"    {k:<18} {v:>6}")

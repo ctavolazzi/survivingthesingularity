@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-01T15:45:13Z",
+  "generatedAt": "2026-08-01T16:23:06Z",
   "generator": "scripts/build_workshop_data.py",
   "note": "Snapshot. Regenerated only when this script runs and the site is rebuilt. Not live.",
   "repo": {
-    "branch": "factcheck-trace-fix",
-    "head": "09f3570",
+    "branch": "ship-current",
+    "head": "d7491f3",
     "aheadOfMain": 0,
     "behindMain": 0,
-    "dirtyPaths": 6,
+    "dirtyPaths": 3,
     "pushed": true
   },
   "book": {
@@ -641,6 +641,16 @@
   ],
   "commits": [
     {
+      "sha": "d7491f3",
+      "date": "2026-08-01",
+      "subject": "factcheck: serve the trace as a directory index, and republish the numbers",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 8,
+      "adds": 869,
+      "dels": 732
+    },
+    {
       "sha": "09f3570",
       "date": "2026-08-01",
       "subject": "chore: daily signals sweep 2026-08-01",
@@ -869,16 +879,6 @@
       "files": 1,
       "adds": 241,
       "dels": 10
-    },
-    {
-      "sha": "e32a358",
-      "date": "2026-07-27",
-      "subject": "merge: bring in the daily signals sweep from main",
-      "stream": "merge",
-      "streamLabel": "merge",
-      "files": 0,
-      "adds": 0,
-      "dels": 0
     }
   ],
   "network": {
@@ -892,11 +892,11 @@
   },
   "blockers": [
     {
-      "id": "push",
-      "title": "151 receipts stay broken until the branch is pushed",
-      "why": "A permalink mints only at origin_exact, byte identical to origin/main. Committing locally advances the state one step and mints nothing.",
-      "needs": "A decision to push. main auto-deploys and production runs live Stripe keys.",
-      "effort": "one command",
+      "id": "payments",
+      "title": "The payment path is committed but unshipped",
+      "why": "Eleven commits covering the Stripe webhook handler, offer.js, migration 014_webhook_events.sql, the admin reconcile endpoint and legal copy whose own commit message says UNREVIEWED BY A LAWYER. They were deliberately held back when the book and factcheck work shipped, because the new webhook code expects the table migration 014 creates and nobody has confirmed it exists on the live database.",
+      "needs": "Someone with database access to run sts.py schema and confirm 014 is applied, then a lawyer on the legal copy.",
+      "effort": "one check, then a decision",
       "severity": "high"
     },
     {

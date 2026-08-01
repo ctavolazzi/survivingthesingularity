@@ -13,7 +13,8 @@
         "provenance",
         "fact-checking"
       ],
-      "builtBy": "postforge v0.0.4"
+      "builtBy": "postforge v0.0.5",
+      "updated": "2026-08-01"
     }
   ]
 }

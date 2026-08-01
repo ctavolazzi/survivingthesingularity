@@ -1,4 +1,5 @@
 import bookJson from '$lib/data/book/book.json';
+import { expandRefs as expandRefsRule } from '$lib/bookManifest.js';
 
 export const book = bookJson;
 
@@ -9,33 +10,16 @@ export const book = bookJson;
 // leaving prose that is quietly wrong. scripts/sts.py owns the canonical
 // resolver (`sts.py refs`) and is what the EPUB/PDF build and `sts.py verify
 // refs` use; this is the same rule for the website, which cannot call Python at
-// build time. book.json is imported above, so there is no generated artifact to
-// keep in sync -- the labels are derived from the same titles sts.py reads.
-const STS_REF = /\[([^\]\n]*)\]\(sts:([A-Za-z0-9._-]+)\)/g;
-
-// 'Chapter 1: The Event Horizon' -> 'Chapter 1'. Mirrors _section_label().
-const shortLabel = title => (title.includes(':') ? title.split(':')[0] : title).trim();
-
-// A ref target is a section id ('chapter1') or a block id
-// ('sts.chapter1.b0003'); a block id carries its section in the middle segment.
-const labelFor = target => {
-  const parts = target.split('.');
-  const sectionId = parts.length >= 3 && parts[0] === 'sts' ? parts[1] : target;
-  const section = book.sections.find(s => s.id === sectionId);
-  return section ? shortLabel(section.title) : null;
-};
-
-export function expandRefs(raw) {
-  if (!raw || !raw.includes('](sts:')) return raw;
-  return raw.replace(STS_REF, (whole, label, target) => {
-    if (label.trim()) return label;
-    const generated = labelFor(target);
-    // A dangling pointer fails the EPUB build and `sts.py verify refs`. If one
-    // reaches here anyway, drop the marker rather than render "](sts:..." at a
-    // reader; the checks above are where it is meant to be caught and named.
-    return generated ?? '';
-  });
-}
+// build time.
+//
+// The rule itself now lives in $lib/bookManifest.js so the prebuild scripts can
+// run it too, and scripts/check-resolver-parity.mjs asserts it still agrees
+// with sts.py. This file supplies the manifest and keeps the loading concerns
+// (Vite globs, teasers, word counts) that are the website's alone. A dangling
+// pointer fails the EPUB build and `sts.py verify refs`; if one reaches here
+// anyway the default drops the marker rather than render "](sts:..." at a
+// reader, because the checks above are where it is meant to be caught and named.
+export const expandRefs = raw => expandRefsRule(book, raw);
 
 // Lazy loader - returns a function per chapter that fetches markdown on demand.
 // Preserves the original surface used by /book/[sectionId] routes: still a

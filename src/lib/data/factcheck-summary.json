@@ -2,21 +2,7 @@
   "generated": "2026-08-01",
   "book_version": "0.7.4",
   "repo": "https://github.com/ctavolazzi/survivingthesingularity",
-  "network": {
-    "cache": ".factcheck-cache",
-    "urls_cached": 220,
-    "url_claims": 227,
-    "url_claims_resolved": 223,
-    "url_claims_unresolved": 4,
-    "by_source_state": {
-      "LIVE_UNVERIFIED": 18,
-      "LIVE_CONFIRMED": 167,
-      "BLOCKED": 24,
-      "LIVE_UNCONFIRMED": 13,
-      "WALLED": 1
-    },
-    "confirmed_means": "the citation's own title words were found on the fetched page. A bare HTTP 200 is never enough."
-  },
+  "network": false,
   "words": 91954,
   "sections": 30,
   "blocks": 2065,
@@ -24,8 +10,8 @@
   "resolvable": 1242,
   "broken": 0,
   "by_verdict": {
-    "SUPPORTED": 440,
-    "UNCHECKED": 609,
+    "SUPPORTED": 273,
+    "UNCHECKED": 776,
     "UNCHECKABLE": 190,
     "PARTIAL": 3
   },
@@ -51,8 +37,12 @@
       "why": "No entity extraction is implemented. Recognising 'Frank Darvall' as a person and checking that the person said the thing needs either a gazetteer or a model, and guessing from capitalisation would produce confident nonsense."
     },
     {
+      "kind": "external source liveness",
+      "why": "This run is local only by request. No URL was fetched, so no source is known live, dead, paywalled or archived. `sts verify --links` does the liveness half over the network; content verification is still unbuilt."
+    },
+    {
       "kind": "archive.org snapshots",
-      "why": "Requires an archive pass that is not built. Every archive hop is recorded BROKEN."
+      "why": "Requires network. Every archive hop is recorded BROKEN."
     },
     {
       "kind": "causal claim adjudication",
@@ -65,10 +55,6 @@
     {
       "kind": "table numbering",
       "why": "Table numbers live in prose, not in markup. Nothing binds 'Table 2' to a specific table block, so these resolve only to a plausible range."
-    },
-    {
-      "kind": "external source content, beyond the title",
-      "why": "The network half fetched every Works Cited URL and asked whether the citation's own title words appear on the page, which is why a bare 200 is never enough to confirm one. It does NOT read the source and check that it supports the sentence citing it. A LIVE_CONFIRMED citation is a real page carrying the right title, not a verified argument. PDFs are fetched but never parsed, so they stay unconfirmed on purpose."
     }
   ]
 }

@@ -4,8 +4,9 @@
   import { sectionsWithMeta, book } from '$lib/bookContent';
   import { bookPage } from '$lib/stores/bookPage';
   import BookCover from '$lib/components/BookCover.svelte';
+  import { downloadHref } from '$lib/bookManifest.js';
 
-  const pdfHref = `/downloads/Surviving-the-Singularity-v${book.version}.pdf`;
+  const pdfHref = downloadHref(book.version, 'pdf');
 
   let visible = false;
   let lastVisitedId = null;

@@ -183,8 +183,17 @@ def fetch(url: str, timeout: float = 15.0, attempts: int = 3) -> dict:
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 raw = r.read(400_000)  # enough to judge content, bounded on disk
                 ctype = r.headers.get("Content-Type", "")
+                # The declared charset is attacker-and-idiot controlled and is
+                # NOT always a text encoding. d-nb.info answers a real PDF with
+                # `application/pdf;charset=base64`, and bytes.decode('base64')
+                # raises LookupError, which the caller then reported as
+                # UNREACHABLE. A live source was being called dead by a decode
+                # crash. Fall back rather than propagate.
                 charset = r.headers.get_content_charset() or "utf-8"
-                body = raw.decode(charset, errors="replace")
+                try:
+                    body = raw.decode(charset, errors="replace")
+                except (LookupError, TypeError):
+                    body = raw.decode("utf-8", errors="replace")
                 return {
                     "status": r.status,
                     "final_url": r.geturl(),
@@ -263,18 +272,28 @@ def classify(citation: dict, resp: dict) -> dict:
             "match": None,
         }
 
-    for marker in SOFT_404_MARKERS:
-        if marker in text:
-            return {
-                "state": "SOFT_404",
-                "detail": f"200 but the page reads as missing: '{marker}'",
-                "match": None,
-            }
-
     tokens = title_tokens(citation["title"])
     hits = [t for t in tokens if t in text]
     frac = (len(hits) / len(tokens)) if tokens else 0.0
     match = {"matched": len(hits), "of": len(tokens), "fraction": round(frac, 2)}
+
+    # A missing-page marker only matters when the cited work is also absent,
+    # for the same reason a wall does. The marker scan reads the whole page, and
+    # a real article can quote the phrase in its own prose or bibliography.
+    # en.wikipedia.org/wiki/Kit_house was condemned as a soft 404 because a
+    # footnote 21,000 characters in reads "the katrina cottage plans are no
+    # longer available at lowe's". The article was fine. Gating on the title
+    # match is exactly what the WALL_MARKERS branch below already did; the
+    # inconsistency between the two was the bug.
+    if frac < 0.5:
+        for marker in SOFT_404_MARKERS:
+            if marker in text:
+                return {
+                    "state": "SOFT_404",
+                    "detail": f"200 but the page reads as missing ('{marker}') "
+                              "and the cited title is not on the page",
+                    "match": match,
+                }
 
     # A wall only matters when the cited work is also absent. Many real articles
     # carry a cookie banner and the full text underneath it.

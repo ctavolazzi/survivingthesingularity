@@ -1214,10 +1214,106 @@ SCHEMA_EXPECTATIONS = [
     ("010_waitlist_consent.sql",         "newsletter consent",    "waitlist",             "newsletter_consent"),
     ("010_waitlist_consent.sql",         "book release consent",  "waitlist",             "book_release_consent"),
     ("011_email_deliveries.sql",         "email delivery ledger", "email_deliveries",     None),
+    # 013 adds four columns to fulfilled_sessions in one ALTER. Probe the two
+    # that carry meaning on their own: `status` is what makes a half-finished
+    # fulfilment visible, and `attempts` is what makes a retry loop visible.
+    # Without these the durability work is invisible to this checker.
+    ("013_checkout_durability.sql",      "fulfilment status",     "fulfilled_sessions",   "status"),
+    ("013_checkout_durability.sql",      "fulfilment attempts",   "fulfilled_sessions",   "attempts"),
+    ("013_checkout_durability.sql",      "checkout durability",   "checkout_transactions", None),
 ]
 
-# Migrations that exist in sql/ but deliberately have nothing to probe.
-SCHEMA_UNPROBED_OK: set = set()
+# Migrations that exist in sql/ but deliberately have nothing this checker can
+# probe. Listing them here is not a free pass: it is the difference between
+# "we looked and there is nothing table-shaped to look at" and the silent
+# omission described in _schema_unexpected below.
+SCHEMA_UNPROBED_OK: set = {
+    # Replaces a trigger FUNCTION (assign_authors_copy_number). No table and no
+    # column changes, so table/column presence cannot see it either way.
+    # Verifying it means inserting an authors-edition row and reading back the
+    # assigned copy_number, which writes to production and is not something a
+    # read-only status command should do.
+    "007_authors_edition_no_cap.sql",
+    # Revokes grants and enables RLS. Again nothing table-shaped: the tables it
+    # protects exist both before and after it runs. It is NOT unchecked, it is
+    # checked differently - see the lockdown probe below, which is the only
+    # thing in this file that verifies the most important security migration in
+    # the project.
+    "012_lockdown_public_grants.sql",
+}
+
+# Tables sql/012 revokes from anon. A lockdown regression here re-exposes
+# customer email addresses to the key that ships in every browser.
+LOCKDOWN_TABLES = ["waitlist", "preorders", "fulfilled_sessions",
+                   "discord_applications", "email_deliveries", "preorder_counts"]
+
+
+def _anon_probe(url: str, anon_key: str, table: str):
+    """Attempt an anon SELECT. Returns (denied: bool, detail: str).
+
+    A 401 alone is ambiguous: a dead key denies everything too, which would make
+    a broken key look like a successful lockdown. The caller establishes a
+    key-validity control first, so by the time this runs a 401 means the grant
+    layer refused a WORKING key.
+    """
+    req = urllib.request.Request(
+        f"{url}/rest/v1/{table}?select=*&limit=1",
+        headers={"apikey": anon_key, "Authorization": f"Bearer {anon_key}",
+                 "User-Agent": f"sts.py/{VERSION}"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            body = resp.read().decode("utf-8", "replace")[:120]
+            return False, f"READABLE by anon (HTTP {resp.status}) {body}"
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace")
+        code = ""
+        try:
+            code = json.loads(body).get("code", "")
+        except Exception:
+            pass
+        if e.code in (401, 403) or code == "42501":
+            return True, f"denied (HTTP {e.code}{', ' + code if code else ''})"
+        if e.code == 404:
+            return True, "not exposed (HTTP 404)"
+        return False, f"unexpected HTTP {e.code}: {body[:100]}"
+    except Exception as e:
+        return False, f"probe failed: {e}"
+
+
+def _lockdown_report(url: str) -> list:
+    """Verify sql/012 behaviourally, with a key-validity control.
+
+    Returns a list of row dicts; an empty list means the anon key was not
+    available and nothing could be concluded.
+    """
+    e = read_env("PUBLIC_SUPABASE_ANON_KEY", "SUPABASE_PUBLISHABLE_KEY")
+    anon = e.get("PUBLIC_SUPABASE_ANON_KEY") or e.get("SUPABASE_PUBLISHABLE_KEY")
+    if not anon:
+        return []
+
+    # CONTROL FIRST. A valid publishable key on /rest/v1/ answers "Secret API
+    # key required"; a bogus one answers "Invalid API key". Without this the
+    # whole table below is worthless.
+    control_ok = False
+    try:
+        req = urllib.request.Request(
+            f"{url}/rest/v1/", headers={"apikey": anon, "User-Agent": f"sts.py/{VERSION}"})
+        urllib.request.urlopen(req, timeout=20)
+        control_ok = True
+    except urllib.error.HTTPError as ce:
+        control_ok = "Invalid API key" not in ce.read().decode("utf-8", "replace")
+    except Exception:
+        control_ok = False
+
+    rows = [{"table": "(key-validity control)", "denied": control_ok,
+             "detail": "anon key is live" if control_ok
+                       else "ANON KEY IS DEAD - every denial below is meaningless"}]
+    if not control_ok:
+        return rows
+    for t in LOCKDOWN_TABLES:
+        denied, detail = _anon_probe(url, anon, t)
+        rows.append({"table": t, "denied": denied, "detail": detail})
+    return rows
 
 
 def _schema_unexpected() -> list:
@@ -1308,6 +1404,21 @@ def cmd_schema(args) -> int:
     for r in rows:
         mark = "ok     " if r["applied"] else "MISSING"
         print(f"  {mark}  {r['migration']:<38} {r['target']:<28} {r['detail']}")
+
+    # sql/012 is the most important security migration in the project and is not
+    # table-shaped, so presence probing cannot see it. Verify it behaviourally.
+    lockdown = _lockdown_report(url)
+    if lockdown:
+        print("\n  sql/012 lockdown (anon must be denied on every table below):")
+        for r in lockdown:
+            mark = "ok     " if r["denied"] else "EXPOSED"
+            print(f"  {mark}  {r['table']:<38} {r['detail']}")
+        exposed = [r["table"] for r in lockdown if not r["denied"]]
+        if exposed:
+            print(f"\n  LOCKDOWN REGRESSION: {', '.join(exposed)}")
+            pending.append("012_lockdown_public_grants.sql")
+    else:
+        print("\n  sql/012 lockdown: NOT CHECKED (no anon key in .env), state UNKNOWN.")
 
     if unexpected:
         print(f"\n  {len(unexpected)} migration(s) in sql/ are not covered by this check,")
@@ -1542,12 +1653,19 @@ def advertised_prices() -> dict:
     return found
 
 
-def post_json(url: str, payload: dict, timeout: float = 20.0):
-    """POST JSON. Returns (status, body). Never raises; 0 means no response."""
+def post_json(url: str, payload: dict, timeout: float = 20.0, headers: dict = None):
+    """POST JSON. Returns (status, body). Never raises; 0 means no response.
+
+    `headers` is merged over the defaults. The checkout endpoints enforce
+    same-origin and fail CLOSED, so a probe that sends no Origin gets a 403 and
+    looks exactly like a broken checkout. Callers hitting those routes must pass
+    one; see cmd_stripe_live.
+    """
+    hdrs = {"Content-Type": "application/json", "User-Agent": f"sts.py/{VERSION}"}
+    hdrs.update(headers or {})
     req = urllib.request.Request(
         url, data=json.dumps(payload).encode("utf-8"), method="POST",
-        headers={"Content-Type": "application/json",
-                 "User-Agent": f"sts.py/{VERSION}"})
+        headers=hdrs)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.status, resp.read().decode("utf-8", "replace")
@@ -1555,6 +1673,11 @@ def post_json(url: str, payload: dict, timeout: float = 20.0):
         return e.code, e.read().decode("utf-8", "replace")
     except Exception as e:
         return 0, str(e)
+
+
+# Address used by the checkout probe. On our own domain and never sold to, so
+# it cannot collide with a real customer and cannot be read as one.
+STRIPE_PROBE_EMAIL = "sts-probe@survivingthesingularity.com"
 
 
 # A benign event type the webhook handler does not act on. Deliberate: this
@@ -1628,7 +1751,21 @@ def stripe_live_state(check_price: bool = True) -> dict:
     st = {"site": SITE, "errors": [], "warnings": []}
 
     # 1. What happens when a real customer clicks buy?
-    status, body = post_json(f"{SITE}/api/stripe-checkout", {"edition_type": "standard"})
+    # Origin is REQUIRED here. /api/stripe-checkout enforces same-origin and
+    # fails closed as of 2f28645, so a probe without it gets 403 and this
+    # command then reports "ERROR checkout returned 403" against a checkout that
+    # works perfectly. That false alarm stood for a full session before anyone
+    # traced it back to the probe rather than the app.
+    #
+    # The body needs an `email` too. Since 332fdfd the address is collected
+    # before the session is created, so a body carrying only edition_type is
+    # rejected 400 "Enter a valid email address." Use a dedicated probe address
+    # on our own domain: it is obviously not a customer, it will never appear in
+    # `preorders`, so the duplicate check always takes the new-buyer path and
+    # this probe keeps measuring the thing it is meant to measure.
+    status, body = post_json(f"{SITE}/api/stripe-checkout",
+                             {"edition_type": "standard", "email": STRIPE_PROBE_EMAIL},
+                             headers={"Origin": SITE})
     st["checkout_status"] = status
     session_url = ""
     if status == 200:
@@ -4173,6 +4310,7 @@ def cmd_verify(args) -> int:
 
     print(f"\n  {failed} problem(s) found" if failed else "\n  Clean.")
     return 1 if failed else 0
+
 
 # ──────────────────────────────────────────────────────────────────────
 # factcheck

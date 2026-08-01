@@ -134,8 +134,8 @@
       <h1 class="welcome-title">You're in. Take the whole thing.</h1>
       <p class="welcome-text">
         This is the complete current draft of <em>Surviving the Singularity</em>, v{book.version},
-        the same file that goes out to preorders. Download it, read it online, put it on your
-        e-reader, hand it to somebody who needs it. No paywall between you and any of it.
+        the same file that goes out to preorders. Start reading right here, right now, or take
+        the PDF with you. No paywall between you and any of it.
       </p>
       <p class="welcome-text">
         It's a draft, so it's still moving. If something reads wrong, or you spot a claim that
@@ -147,41 +147,17 @@
     </div>
   </section>
 
-  <!-- ── DOWNLOADS ── -->
-  <section class="downloads">
-    <div class="inner">
-      <p class="section-label">Take it with you</p>
-      <div class="dl-grid">
-        <a href={pdfHref} class="dl-card" download>
-          <span class="dl-format">PDF</span>
-          <span class="dl-title">The full book, laid out</span>
-          <span class="dl-note">Illustrated edition. Reads well on a laptop or printed.</span>
-          <span class="dl-action">Download <span aria-hidden="true">&darr;</span></span>
-        </a>
-        <a href={epubHref} class="dl-card" download>
-          <span class="dl-format">EPUB</span>
-          <span class="dl-title">For your e-reader</span>
-          <span class="dl-note">Kindle, Kobo, Apple Books. Reflows to your screen.</span>
-          <span class="dl-action">Download <span aria-hidden="true">&darr;</span></span>
-        </a>
-        <a href={pdfHref} class="dl-card" target="_blank" rel="noopener">
-          <span class="dl-format">Browser</span>
-          <span class="dl-title">Just open the PDF</span>
-          <span class="dl-note">No download. Opens in a new tab, exactly as printed.</span>
-          <span class="dl-action">Open <span aria-hidden="true">&nearr;</span></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── READ ONLINE ── -->
+  <!-- ── READ ONLINE ──
+       This leads. The book is readable on this site right now with nothing to
+       install and nothing to wait for, which is a better first offer than a
+       22 MB file. Downloads follow as the "also" - see the section below. -->
   <section class="read-online">
     <div class="inner">
-      <p class="section-label">Or read it here</p>
-      <h2 class="read-title">Every chapter, in order.</h2>
+      <p class="section-label">Start reading</p>
+      <h2 class="read-title">The whole book is right here, already unlocked.</h2>
       <p class="read-sub">
-        One continuous scroll, already unlocked for you. It remembers your place, so you can
-        put it down and come back. Or jump straight to a chapter below.
+        Nothing to download and nothing to install. One continuous scroll that remembers your
+        place, so you can put it down and come back. Or jump straight to a chapter below.
       </p>
       <div class="read-actions">
         <a href="/read" class="btn-primary">Open the reader</a>
@@ -208,6 +184,44 @@
           </ul>
         </div>
       {/each}
+    </div>
+  </section>
+
+  <!-- ── DOWNLOADS ──
+       Deliberately second. Reading online is the thing that works instantly;
+       the file is the thing you take with you. Both hrefs are derived from
+       book.json, and scripts/check-book-downloads.mjs fails the build if the
+       matching file is not in static/downloads - these links 404'd in
+       production once because nothing asserted that. -->
+  <section class="downloads">
+    <div class="inner">
+      <p class="section-label">It's also a file</p>
+      <h2 class="read-title">Take the current draft with you.</h2>
+      <p class="read-sub">
+        The same v{book.version} text you just read, as a file you own. Keep it, print it,
+        put it on an e-reader, send it to somebody. It's a draft, so it'll be replaced by a
+        newer one, but this copy is yours.
+      </p>
+      <div class="dl-grid">
+        <a href={pdfHref} class="dl-card" download>
+          <span class="dl-format">PDF</span>
+          <span class="dl-title">The full book, laid out</span>
+          <span class="dl-note">Illustrated edition. Reads well on a laptop or printed.</span>
+          <span class="dl-action">Download <span aria-hidden="true">&darr;</span></span>
+        </a>
+        <a href={epubHref} class="dl-card" download>
+          <span class="dl-format">EPUB</span>
+          <span class="dl-title">For your e-reader</span>
+          <span class="dl-note">Kindle, Kobo, Apple Books. Reflows to your screen.</span>
+          <span class="dl-action">Download <span aria-hidden="true">&darr;</span></span>
+        </a>
+        <a href={pdfHref} class="dl-card" target="_blank" rel="noopener">
+          <span class="dl-format">Browser</span>
+          <span class="dl-title">Just open the PDF</span>
+          <span class="dl-note">No download. Opens in a new tab, exactly as printed.</span>
+          <span class="dl-action">Open <span aria-hidden="true">&nearr;</span></span>
+        </a>
+      </div>
     </div>
   </section>
 

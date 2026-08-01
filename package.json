@@ -3,8 +3,9 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"prebuild": "node work_efforts/12_image_optimization_enhancements/image_build_hook.js",
+		"prebuild": "node scripts/check-book-downloads.mjs && node work_efforts/12_image_optimization_enhancements/image_build_hook.js",
 		"build": "vite build",
+		"check:downloads": "node scripts/check-book-downloads.mjs",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",

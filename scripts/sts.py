@@ -84,6 +84,7 @@ from pathlib import Path
 # step because sys.path[0] is this file's directory whenever sts.py runs as the
 # main script -- which is the only way it is meant to run.
 from sts_lib.manifest import load_manifest, section_files, section_label
+from sts_lib.refs import SREF_RE, expand_refs, ref_edges, ref_targets
 
 VERSION = "0.0.1"
 SITE = "https://survivingthesingularity.com"
@@ -2978,78 +2979,25 @@ def cmd_id(args):
 # table below is per-target-agnostic, so emitting real hrefs later is a change
 # of one function, not a redesign.
 
-# [label](sts:target) -- target is a section id or a full sts.<sec>.b<NNNN> id.
-_SREF_RE = re.compile(r"\[([^\]\n]*)\]\(sts:([A-Za-z0-9._-]+)\)")
-
-
-# The label rule lives in sts_lib.manifest so the parity check can run it
-# against the JavaScript half. Kept under the old private name because the ref
-# subsystem below reads better with it, and renaming it would touch call sites
-# that have nothing to do with where the rule lives.
+# The rules themselves live in sts_lib.refs, which is pure and takes the book
+# directory as an argument. The aliases below keep the private names the
+# command handlers already use, so moving the rules out did not turn into a
+# rename touching every call site.
+_SREF_RE = SREF_RE
 _section_label = section_label
+_ref_targets = ref_targets
+_expand_refs = expand_refs
 
 
-def _ref_targets(index):
-    """{ref target -> {...}} for every addressable thing a ref may point at.
-
-    Two granularities, both legal:
-      * section id   ('chapter1')          -- stable across editing, use for prose
-      * block id     ('sts.chapter1.b0003')-- precise, but blocks churn
-    """
-    out = {}
-    for sec in index["sections"]:
-        out[sec["id"]] = {"kind": "section", "section": sec["id"],
-                          "title": sec["title"], "file": sec["file"],
-                          "label": _section_label(sec["title"])}
-        for blk in sec["blocks"]:
-            out[blk["id"]] = {"kind": "block", "section": sec["id"],
-                              "title": sec["title"], "file": sec["file"],
-                              "label": _section_label(sec["title"]),
-                              "block": blk["id"], "lines": blk["lines"]}
-    return out
-
-
-def _ref_edges(index):
+def _ref_edges(index, book_dir=None):
     """Every sts: reference in the manuscript, as (source -> target) edges.
 
-    This is the shared substrate: `refs --to` reads it backwards to answer
-    "what breaks if I cut this", and the expanders read it forwards to render.
+    book_dir defaults to BOOK_DIR for the command handlers below, which all
+    operate on the real book. `refs stress` passes a temp tree instead -- it
+    used to rebind the module global to do that, which is why the rule now
+    takes the directory rather than reaching for it.
     """
-    targets = _ref_targets(index)
-    edges = []
-    for sec in index["sections"]:
-        # line -> owning block id, so an edge knows which block it lives in.
-        owner = {}
-        for blk in sec["blocks"]:
-            a, z = blk["lines"]
-            for ln in range(a, z + 1):
-                owner[ln] = blk["id"]
-        text = (BOOK_DIR / sec["file"]).read_text(encoding="utf-8")
-        for lineno, line in enumerate(text.split("\n"), 1):
-            for m in _SREF_RE.finditer(line):
-                label, target = m.group(1), m.group(2)
-                edges.append({
-                    "from_section": sec["id"], "from_block": owner.get(lineno),
-                    "file": sec["file"], "line": lineno,
-                    "label": label, "to": target,
-                    "resolved": target in targets,
-                    "to_section": targets.get(target, {}).get("section"),
-                    "generated": not label.strip(),
-                    "raw": m.group(0)})
-    return edges
-
-
-def _expand_refs(text: str, targets: dict, where: str = "") -> str:
-    """Replace every sts: ref in `text` with its rendered form. Raises on a
-    dangling target -- a broken cross-reference must stop a build, not ship."""
-    def sub(m):
-        label, target = m.group(1), m.group(2)
-        t = targets.get(target)
-        if t is None:
-            raise KeyError(f"{where}: unresolvable reference sts:{target} "
-                           f"in {m.group(0)!r}")
-        return label if label.strip() else t["label"]
-    return _SREF_RE.sub(sub, text)
+    return ref_edges(index, BOOK_DIR if book_dir is None else book_dir)
 
 
 def verify_refs() -> list:
@@ -3138,7 +3086,6 @@ def _refs_stress(args):
     Nothing in the manuscript uses sts: refs yet, so without this the resolver
     would ship untested against real content. Mirrors `id stress`.
     """
-    global BOOK_DIR
     results = []
 
     def check(name, ok, detail=""):
@@ -3151,7 +3098,11 @@ def _refs_stress(args):
         for extra in ("book.json", "art-catalog.json"):
             if (real / extra).exists():
                 shutil.copy2(real / extra, tmp / extra)
-        BOOK_DIR = tmp
+        # Every rule below is handed `tmp` explicitly. This used to rebind the
+        # module-level BOOK_DIR for the duration of the test, so the resolver
+        # would read the throwaway copy -- a test mutating a global belonging to
+        # the module under test, which left the real book one early `return`
+        # away from being the thing under test instead.
 
         book = load_manifest(tmp)
         sec = book["sections"][0]
@@ -3167,7 +3118,7 @@ def _refs_stress(args):
                           "\n\nSee [](sts:chapter1), and [the limits](sts:chapter1), "
                           f"and [](sts:{a_block}).\n", encoding="utf-8")
 
-        edges = _ref_edges(_build_index(tmp, None))
+        edges = _ref_edges(_build_index(tmp, None), tmp)
         check("scan.finds_all", len(edges) == 3, f"{len(edges)} edge(s)")
         check("scan.all_resolve", all(e["resolved"] for e in edges),
               str([e["to"] for e in edges if not e["resolved"]]))
@@ -3194,7 +3145,7 @@ def _refs_stress(args):
         victim.write_text(victim.read_text(encoding="utf-8") +
                           "\n\nBroken [](sts:chapter99).\n", encoding="utf-8")
         check("dangle.verify_catches",
-              len([e for e in _ref_edges(_build_index(tmp, None))
+              len([e for e in _ref_edges(_build_index(tmp, None), tmp)
                    if not e["resolved"]]) == 1, "1 dangling found")
         raised = False
         try:
@@ -3214,7 +3165,6 @@ def _refs_stress(args):
                              _ref_targets(_build_index(tmp, None)), "test")
         check("renumber.label_follows", moved == "See Chapter 4.", moved)
     finally:
-        BOOK_DIR = real
         shutil.rmtree(tmp, ignore_errors=True)
 
     passed = sum(1 for r in results if r["ok"])

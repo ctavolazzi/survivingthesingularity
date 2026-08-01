@@ -60,6 +60,7 @@ tests/results/
 
 # Python bytecode
 scripts/__pycache__/
+scripts/sts_lib/__pycache__/
 art-raw/
 
 # factcheck network pass: cached HTTP responses, one file per URL. This is what

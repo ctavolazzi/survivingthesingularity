@@ -79,6 +79,17 @@ jobs:
           # Absent, the job still runs and still catches mode drift and price
           # drift. It just cannot prove the webhook, and says so.
           STRIPE_WEBHOOK_SECRET: ${{ secrets.STRIPE_WEBHOOK_SECRET }}
+          # A RESTRICTED key (rk_live_...) with READ access to Checkout
+          # Sessions, and nothing else. sts.py only ever issues GETs with it.
+          # Never a full sk_live_: this job's whole job is to be boring, and a
+          # key that can move money makes it interesting.
+          #
+          # Without it the price check falls back to scraping Stripe's rendered
+          # page, which reported a $8.84 charge on 2026-08-02 while the Stripe
+          # API said 500 usd and two real customers paid exactly $5.00. That
+          # fallback now warns instead of failing, so the absence of this key
+          # costs coverage rather than turning the guard permanently red.
+          STRIPE_READ_KEY: ${{ secrets.STRIPE_READ_KEY }}
         run: |
           set -o pipefail
           python scripts/sts.py stripe --live --json | tee probe.json || true

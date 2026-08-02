@@ -1559,6 +1559,29 @@ def post_json(url: str, payload: dict, timeout: float = 20.0, extra_headers: dic
         return 0, str(e)
 
 
+def stripe_api_get(path: str, key: str, timeout: float = 20.0):
+    """GET a Stripe resource. Returns (status, parsed) or (status, None).
+
+    Read-only by construction: this only ever issues GETs, so a RESTRICTED key
+    with read access to Checkout Sessions is enough and is what belongs in CI.
+    Never put a full sk_live_ here.
+    """
+    req = urllib.request.Request(
+        f"https://api.stripe.com/v1/{path.lstrip('/')}",
+        headers={"Authorization": f"Bearer {key}",
+                 "User-Agent": f"sts.py/{VERSION}"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.status, json.loads(resp.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        try:
+            return e.code, json.loads(e.read().decode("utf-8", "replace"))
+        except Exception:
+            return e.code, None
+    except Exception:
+        return 0, None
+
+
 # Address used by the checkout probe. On our own domain and never sold to, so
 # it cannot collide with a real customer and cannot be read as one. It will
 # never appear in `preorders`, so the duplicate check always takes the
@@ -1748,26 +1771,81 @@ def stripe_live_state(check_price: bool = True) -> dict:
         st["errors"].append("site advertises conflicting preorder prices: "
                             + ", ".join(fmt_cents(c) for c in sorted(ads)))
 
+    # WHERE THE CHARGED AMOUNT COMES FROM, AND WHY IT CHANGED.
+    #
+    # This used to read the price by rendering Stripe's checkout page in
+    # headless Chrome and taking the most repeated $X.XX string. That works from
+    # a laptop and lies from a datacenter. On 2026-08-02 the CI run reported
+    # "checkout charges $8.84 but the site advertises $5.00" while Stripe's own
+    # records showed every session it created was amount_total=500 usd, and two
+    # real customers were charged exactly $5.00 that same hour.
+    #
+    # The scrape is not fixable, because the page is not lying. Stripe Adaptive
+    # Pricing renders a local-currency estimate based on the caller's
+    # geolocation, so a runner abroad SHOULD see a different number, and no
+    # regex can tell that apart from genuine drift. A check that fires on
+    # correct behaviour is worse than no check: it is what teaches you to ignore
+    # the guard, which is precisely how three real faults went unread for five
+    # days.
+    #
+    # So: ask Stripe. A restricted read key answers authoritatively in one call.
+    # Without a key the scrape still runs, but a disagreement is a WARNING that
+    # names its own unreliability rather than a build-failing error.
     st["charged_cents"] = None
-    chrome = find_chrome() if check_price else None
+    st["charged_currency"] = None
+    st["charged_source"] = None
     if check_price:
         if not session_url:
             st["warnings"].append("no checkout session, so the charged price was "
                                   "not verified")
-        elif not chrome:
-            st["warnings"].append("Chrome/Chromium not found, so the charged price was "
-                                  "NOT verified — this is the check that catches "
-                                  "advertising one price and billing another")
         else:
-            cents, err = charged_cents(session_url, chrome)
-            st["charged_cents"] = cents
-            if err:
-                st["warnings"].append(err)
-            elif len(ads) == 1 and cents != sorted(ads)[0]:
-                st["errors"].append(
-                    f"PRICE MISMATCH: checkout charges {fmt_cents(cents)} but the site "
-                    f"advertises {fmt_cents(sorted(ads)[0])} — fix the live price or the "
-                    "prod STRIPE_PRICE_ID_STANDARD, not the app code (STRIPE-GO-LIVE.md)")
+            keys = read_env("STRIPE_READ_KEY", "STRIPE_SECRET_KEY")
+            read_key = keys.get("STRIPE_READ_KEY") or keys.get("STRIPE_SECRET_KEY") or ""
+            sid = re.search(r"cs_(?:live|test)_[A-Za-z0-9]+", session_url)
+
+            if read_key and sid:
+                code, obj = stripe_api_get(f"checkout/sessions/{sid.group(0)}", read_key)
+                if code == 200 and isinstance(obj, dict) and obj.get("amount_total") is not None:
+                    st["charged_cents"] = obj["amount_total"]
+                    st["charged_currency"] = obj.get("currency")
+                    st["charged_source"] = "stripe-api"
+                else:
+                    st["warnings"].append(
+                        f"Stripe API price lookup failed (HTTP {code}). The key may lack "
+                        "read access to Checkout Sessions, or belong to the other mode. "
+                        "Falling back to the rendered page, which cannot be trusted")
+
+            if st["charged_cents"] is None:
+                chrome = find_chrome()
+                if not chrome:
+                    st["warnings"].append("Chrome/Chromium not found, so the charged price "
+                                          "was NOT verified — this is the check that "
+                                          "catches advertising one price and billing another")
+                else:
+                    cents, err = charged_cents(session_url, chrome)
+                    if err:
+                        st["warnings"].append(err)
+                    else:
+                        st["charged_cents"] = cents
+                        st["charged_source"] = "rendered-page"
+
+            cents = st["charged_cents"]
+            if cents is not None and len(ads) == 1 and cents != sorted(ads)[0]:
+                if st["charged_source"] == "stripe-api":
+                    cur = (st["charged_currency"] or "?").upper()
+                    st["errors"].append(
+                        f"PRICE MISMATCH: Stripe says this session charges "
+                        f"{fmt_cents(cents)} {cur} but the site advertises "
+                        f"{fmt_cents(sorted(ads)[0])} — fix the live price or the prod "
+                        "STRIPE_PRICE_ID_STANDARD, not the app code (STRIPE-GO-LIVE.md)")
+                else:
+                    st["warnings"].append(
+                        f"price NOT PROVEN: the rendered page showed {fmt_cents(cents)} "
+                        f"against an advertised {fmt_cents(sorted(ads)[0])}, but this "
+                        "number is scraped from Stripe's client-rendered page and cannot "
+                        "distinguish real drift from Adaptive Pricing showing a local "
+                        "currency. Set STRIPE_READ_KEY (a restricted key with read access "
+                        "to Checkout Sessions) to settle it authoritatively")
     return st
 
 

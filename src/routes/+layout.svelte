@@ -7,6 +7,7 @@
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import InfoModal from '$lib/components/InfoModal.svelte';
   import WhiteRabbitPanel from '$lib/components/WhiteRabbitPanel.svelte';
+  import SplashLoader from '$lib/components/SplashLoader.svelte';
   import { createRabbit } from '$lib/debug/white-rabbit.js';
   import { browser, dev } from '$app/environment';
   import { afterNavigate, beforeNavigate } from '$app/navigation';
@@ -25,6 +26,30 @@
   // navbar would sit on top of it. Site chrome steps aside there. The reader
   // links back out from its own chapter drawer.
   $: isReader = $page.url.pathname === '/read';
+
+  // The auth surfaces (/signup and the /auth/* endpoints it redirects through)
+  // are the same kind of exception, for the same reason: the signup page was
+  // designed as a standalone full-page surface and brings its own masthead,
+  // its own footer, and its own consent language. Rendered inside the site
+  // chrome it produced two headers stacked on each other and the fixed consent
+  // banner sitting across the submit button.
+  //
+  // The DisclaimerBanner is the one worth spelling out. It is a passive "by
+  // using this site you agree" notice, and on this page it competed with an
+  // explicit "I agree to the Terms and the Privacy Policy" checkbox that gates
+  // the form. Two consent affordances disagreeing about what you have agreed
+  // to is worse than either alone, and the checkbox is the stronger record:
+  // it is per-account, it is refused if unticked, and sql/016 stamps the time
+  // it happened. The page also links Terms and Privacy in its own footer, so
+  // nothing becomes unreachable.
+  //
+  // SplashLoader steps aside too. A 1.56s boot animation in front of a signup
+  // form is friction on the one page whose whole job is a conversion.
+  $: isAuthSurface =
+    $page.url.pathname === '/signup' || $page.url.pathname.startsWith('/auth/');
+
+  // Routes that supply their own chrome and want the site's out of the way.
+  $: isBareSurface = isReader || isAuthSurface;
 
   // White-rabbit is a debug instrumentation system - only enabled in dev so we
   // don't ship behavioral tracking or expose internals to production visitors.
@@ -84,9 +109,17 @@
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
+<!-- 1.56s cold-start boot sequence. Overlays the page rather than blocking it,
+     so the site loads underneath and is ready the moment the wipe clears. -->
+{#if !isAuthSurface}
+  <SplashLoader />
+{/if}
+
 <div class="app">
-  <DisclaimerBanner />
-  {#if !isReader}
+  {#if !isAuthSurface}
+    <DisclaimerBanner />
+  {/if}
+  {#if !isBareSurface}
     <Navbar user={data?.user} />
   {/if}
 
@@ -100,7 +133,7 @@
   <main id="main-content" tabindex="-1">
     <slot />
   </main>
-  {#if !isReader}
+  {#if !isBareSurface}
     <button type="button" class="site-thankyou" on:click={() => thankYouOpen = true}>
       Thank you for being here ❣️
     </button>
@@ -112,7 +145,7 @@
     <p>That's how hope actually comes back: not from certainty, but from people like you staying in the room.</p>
     <p>Thank you for being here.</p>
   </InfoModal>
-  {#if !isReader}
+  {#if !isBareSurface}
     <Footer />
   {/if}
   <ToastContainer />

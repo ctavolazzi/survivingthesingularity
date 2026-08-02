@@ -76,8 +76,10 @@ jobs:
       # meant - that is what EXPECTED_MODE supplies.
       - name: Probe and assert
         env:
-          # Must be the LIVE endpoint secret, the whsec_... belonging to the
-          # production-fulfillment destination (we_1TzoPYCYoTMkQm81E4almkKI).
+          # Must be the LIVE endpoint secret: the whsec_... belonging to the
+          # event destination named "production-fulfillment" in the Stripe
+          # dashboard. Named rather than given by id, because ids do not belong
+          # in a public repository.
           # A test-mode secret signs an event production correctly rejects, and
           # the guard would then report a broken verifier that is in fact fine.
           #

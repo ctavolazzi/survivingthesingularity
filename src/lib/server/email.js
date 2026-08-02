@@ -29,7 +29,76 @@ const resend = apiKey ? new Resend(apiKey) : null;
  * @param {{ type: string, to: string, sessionId?: string|null }} meta
  * @param {object} payload passed straight to resend.emails.send
  */
+/* Flatten our HTML into a readable plain-text alternative.
+ *
+ * WHY THIS EXISTS. Every email a CUSTOMER receives was HTML-only: the preorder
+ * confirmation, the Discord confirmation, the checklist, the download email
+ * that carries the thing they just paid for, and the welcome email. The only
+ * two sends that carried a text part were the admin alerts to
+ * admin@johnnyautoseed.com, so our internal mail was well-formed and our
+ * customers' mail was not.
+ *
+ * A multipart/alternative message with no text part is one of the oldest spam
+ * heuristics there is, because for a long time only bulk senders skipped it. It
+ * also renders as nothing at all in a text-only client or a screen reader that
+ * prefers the text part. For a $5 purchase the failure mode is specific and
+ * expensive: the customer pays, the receipt carrying their download link goes
+ * to spam, and they conclude they were scammed.
+ *
+ * Deliberately NOT a general-purpose HTML converter. It handles exactly the
+ * markup renderHtml() emits, and anchors become "label (url)" because a link
+ * whose href is thrown away is useless in plain text, and the download link is
+ * the entire point of the most important message here.
+ */
+function htmlToText(html) {
+  return String(html)
+    .replace(/<(style|script|head)[\s\S]*?<\/\1>/gi, '')
+    // Keep the destination. "Download The Precedent File" with no URL is
+    // exactly as useless as no text part at all.
+    .replace(/<a\b[^>]*href=["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi,
+             (_, href, label) => `${label.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()} (${href})`)
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/(p|div|tr|h1|h2|h3|h4|li|td|table)>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    // Entities last: renderHtml escapes user-supplied names through
+    // escapeHtml(), so a customer called "O'Brien" would otherwise be greeted
+    // by their own escape sequence. Note escapeHtml emits the HEX form
+    // &#x27; for an apostrophe, not the decimal &#39; - handle both, because
+    // getting this wrong is invisible until a real person with a real name
+    // reads their receipt.
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&#x27;/gi, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .split('\n').map((l) => l.replace(/[ \t]+/g, ' ').trim()).join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
 async function sendAndRecord(meta, payload) {
+  /* Add the text part here rather than at the five call sites. Two of those
+     sites are the money path (sendPreorderConfirmation, sendDownloadEmail) and
+     five edits is five chances to break fulfillment for a paying customer.
+     Everything already funnels through this function, so one guarded block
+     covers all of them.
+
+     FAILS OPEN ON PURPOSE. If anything in htmlToText throws, this logs and
+     sends the byte-identical payload that shipped before this change. A
+     deliverability improvement must never be able to stop a paid order from
+     being delivered. The `!payload.text` guard also leaves the two admin
+     alerts, which already carry their own text, completely untouched. */
+  if (!payload.text && payload.html) {
+    try {
+      const text = htmlToText(payload.html);
+      if (text) payload = { ...payload, text };
+    } catch (e) {
+      console.error('[email] plain-text generation failed, sending HTML only:', e?.message ?? e);
+    }
+  }
+
   const { data, error } = await resend.emails.send(payload);
 
   try {

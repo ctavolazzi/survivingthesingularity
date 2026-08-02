@@ -574,6 +574,8 @@ def _sha256(path: Path) -> str:
 
 
 def main() -> int:
+    no_pdf = "--no-pdf" in sys.argv
+
     if not CASEBOOK.exists():
         print(f"error: {CASEBOOK} not found", file=sys.stderr)
         return 1
@@ -685,7 +687,7 @@ def main() -> int:
     labels[STAGE / "Sources-and-Citations.md"] = (
         f"Sources and Citations, {n_links} links", "primary", None)
 
-    if "--no-pdf" not in sys.argv:
+    if not no_pdf:
         pandoc = shutil.which("pandoc")
         if pandoc:
             cmd = [
@@ -798,7 +800,20 @@ def main() -> int:
     (DIST / "manifest.json").write_text(
         json.dumps(manifest, indent=2) + "\n", encoding="utf8")
 
-    _write_site_manifest(manifest)
+    # --no-pdf is a dev convenience: it skips the slowest step and produces a
+    # bundle missing the headline file. It must NOT overwrite the manifest the
+    # site ships from, or the page and the email will itemise a bundle with no
+    # Precedent File PDF in it and nothing will complain.
+    #
+    # This is not hypothetical. It happened during this file's own development:
+    # a --no-pdf run while testing the leak guards silently replaced a correct
+    # 11-file manifest with a 10-file one, and the commit went out describing a
+    # bundle that did not exist.
+    if no_pdf:
+        print("\n--no-pdf: NOT writing the site manifest. This bundle has no "
+              "Precedent File PDF, so it is not a shippable artifact.")
+    else:
+        _write_site_manifest(manifest)
 
     print()
     print(f"cases              : {counts['precedent_file_cases']}")

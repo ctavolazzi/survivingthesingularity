@@ -38,14 +38,20 @@
 import { createServerClient } from '@supabase/ssr';
 import { env } from '$env/dynamic/private';
 import { dev } from '$app/environment';
+import { supabaseConfigured } from '$lib/server/supabaseEnv.js';
 
 const url = env.SUPABASE_URL;
 const anonKey = env.SUPABASE_ANON_KEY;
 
-/** True when auth is configured well enough to attempt a sign-in. */
-export const authConfigured = Boolean(
-  url && anonKey && !anonKey.startsWith('placeholder')
-);
+/**
+ * True when auth is configured well enough to attempt a sign-in.
+ *
+ * Validates the URL, not just its presence. createServerClient throws on a
+ * malformed one, and this module is reached from hooks.server.js on every
+ * request, so an unvalidated value turns one bad environment variable into a
+ * site-wide 500. See $lib/server/supabaseEnv.js.
+ */
+export const authConfigured = supabaseConfigured(url, anonKey, 'supabaseAuth');
 
 /**
  * Cookie options for every auth cookie we set.

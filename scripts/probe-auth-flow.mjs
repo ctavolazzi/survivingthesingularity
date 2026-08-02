@@ -25,6 +25,7 @@
 
 import { safeRedirect } from '../src/lib/server/safeRedirect.js';
 import { checkPassword, strengthScore } from '../src/lib/server/passwordPolicy.js';
+import { isUsableSupabaseUrl, isUsableSupabaseKey } from '../src/lib/server/supabaseEnv.js';
 
 const BASE = (process.argv[2] ?? 'http://localhost:5199').replace(/\/$/, '');
 
@@ -283,6 +284,37 @@ console.log('\nPassword policy');
     strengthScore('') === 0 && strengthScore('abcdefgh') === 0 && strengthScore('abcdefghijklm1!') === 3,
     `${strengthScore('abcdefghijklm1!')}`
   );
+}
+
+// ---------------------------------------------------------------------------
+console.log('\nConfig guard (a bad env var must not 500 the site)');
+// ---------------------------------------------------------------------------
+{
+  // Regression test for 2026-08-01: an unedited .env.example URL reached
+  // createClient(), which throws at module scope, which 500'd every route
+  // including ones that never touch Supabase. The guard has to reject bad
+  // values AND still accept good ones, or it just disables Supabase entirely.
+  const rejects = [
+    'https://<your-project-ref>.supabase.co',
+    'your_supabase_url',
+    'not a url',
+    undefined
+  ];
+  const refused = rejects.filter((u) => isUsableSupabaseUrl(u) === false);
+  record('placeholder / malformed URLs refused', refused.length === rejects.length,
+    `${refused.length}/${rejects.length}`);
+
+  record('a real project URL is accepted (control)',
+    isUsableSupabaseUrl('https://abcdefghijklm.supabase.co') === true, '');
+  record('a real key is accepted (control)',
+    isUsableSupabaseKey('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.body.sig') === true, '');
+  record('placeholder key refused',
+    isUsableSupabaseKey('your_supabase_anon_key') === false, '');
+
+  // The end-to-end version: whatever this deployment's config is, the site
+  // must serve. A 500 here means the guard is not doing its job.
+  const home = await raw('/');
+  record('homepage serves regardless of Supabase config', home.status === 200, `${home.status}`);
 }
 
 // ---------------------------------------------------------------------------

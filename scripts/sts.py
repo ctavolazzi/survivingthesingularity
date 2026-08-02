@@ -3761,6 +3761,88 @@ def cmd_cover(args) -> int:
     return 0
 
 
+# --- bundle: build, publish and prove the $5 preorder bundle ----------------
+#
+# The bundle is the only thing a paying customer receives, and until this
+# command existed there was no way to ask what was in the live copy of it. The
+# program that last wrote that object read its credentials and half its payload
+# out of a different repository and left no record, so "what did we sell" was
+# answerable only by downloading the zip by hand.
+#
+# `verify` is offline and needs no credentials, so it can run anywhere.
+# `verify --remote` is the one check that can see a stale live object, which is
+# the failure this whole surface exists to make visible.
+
+
+def cmd_bundle(args) -> int:
+    from sts_lib import bonus
+
+    if args.action == "build":
+        cmd = [sys.executable, str(ROOT / "scripts" / "build_bonus.py")]
+        if args.no_pdf:
+            cmd.append("--no-pdf")
+        return subprocess.run(cmd, cwd=ROOT).returncode
+
+    if args.action == "upload":
+        zip_path = ROOT / bonus.ZIP_REL
+        if not zip_path.exists():
+            print(f"sts bundle upload: {bonus.ZIP_REL} not found. Run "
+                  f"`sts.py bundle build` first.")
+            return 1
+        # Never publish an archive the offline pass cannot vouch for. Uploading
+        # replaces the object every signed URL already in a customer's inbox
+        # resolves through, so the cost of a bad publish is not a rebuild.
+        findings, site = bonus.verify_local(ROOT)
+        if findings:
+            print("sts bundle upload: REFUSING to publish, local verify failed:")
+            for f in findings:
+                print(f"  - {f}")
+            return 1
+        print(f"local verify clean: {site['bundle']['entries']} entries, "
+              f"{site['bundle']['bytes']:,} bytes, "
+              f"sha256 {site['bundle']['sha256'][:16]}...")
+        if not args.yes:
+            print("\nThis REPLACES the live object customers download.")
+            print("Re-run with --yes to publish. A dated backup is taken first.")
+            return 1
+        return bonus.upload(zip_path, ROOT)
+
+    # verify
+    findings, site = bonus.verify_local(ROOT)
+    if site:
+        print(f"sts bundle verify: {bonus.SITE_MANIFEST_REL}")
+        print(f"  built           : {site['generated_at']}")
+        print(f"  entries         : {site['bundle']['entries']}")
+        print(f"  bytes           : {site['bundle']['bytes']:,}")
+        print(f"  sha256          : {site['bundle']['sha256']}")
+
+    if args.remote:
+        if not site:
+            findings.append("cannot check the live object: the site manifest is unreadable")
+        else:
+            print()
+            findings += bonus.verify_remote(ROOT, site)
+
+    if args.json:
+        print(json.dumps({
+            "manifest": site or None,
+            "remote_checked": bool(args.remote),
+            "findings": findings,
+            "clean": not findings,
+        }, indent=2))
+        return 1 if findings else 0
+
+    print()
+    if findings:
+        print(f"{len(findings)} finding(s):")
+        for f in findings:
+            print(f"  - {f}")
+        return 1
+    print("Clean." + ("" if args.remote else
+                      " (offline only. pass --remote to check the live object.)"))
+    return 0
+
+
 # --- flow: export the manuscript's figures as an upload-ready asset pack -----
 
 FLOW_BG = "#020617"          # book navy, so rasterized diagrams land opaque
@@ -5209,6 +5291,29 @@ def main():
                         "art-raw/book-cover-final-source.png")
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_cover)
+
+    p = sub.add_parser("bundle",
+                       help="the $5 preorder bundle: build it, publish it, and "
+                            "prove the live object is the one we describe")
+    p.set_defaults(fn=cmd_bundle)
+    bsub = p.add_subparsers(dest="action", required=True)
+    bb = bsub.add_parser("build", help="rebuild the bundle, its manifest and the site manifest")
+    bb.add_argument("--no-pdf", action="store_true",
+                    help="skip the pandoc/xelatex step. Produces a bundle with no "
+                         "Precedent File PDF, so it does NOT write the site manifest")
+    bv = bsub.add_parser("verify",
+                         help="cross-check the site manifest, the build manifest and "
+                              "the zip. Offline unless --remote")
+    bv.add_argument("--remote", action="store_true",
+                    help="also fetch the LIVE object through a signed URL and compare "
+                         "it to the manifest the site ships from")
+    bv.add_argument("--json", action="store_true")
+    bu = bsub.add_parser("upload",
+                         help="replace the live object, keeping a dated backup. "
+                              "Verifies locally first and refuses on any finding")
+    bu.add_argument("--yes", action="store_true",
+                    help="actually publish. Without it this reports and stops, because "
+                         "the upload replaces what current customers download")
 
     p = sub.add_parser("art",
                        help="enroll every book figure in art-catalog.json (data-driven)")

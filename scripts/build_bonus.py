@@ -14,9 +14,14 @@ House rules enforced here, because a customer-facing file is copy:
 
 Stdlib only, matching scripts/sts.py.
 
-Usage:
-  python3 scripts/build_bonus.py            # build into manuscript/bonus/dist
-  python3 scripts/build_bonus.py --no-pdf   # skip the pandoc/xelatex step
+Usage: go through sts.py, which is the documented surface.
+
+  python3 scripts/sts.py bundle build            # build into manuscript/bonus/dist
+  python3 scripts/sts.py bundle build --no-pdf   # skip the pandoc/xelatex step
+  python3 scripts/sts.py bundle verify           # prove the manifest describes the zip
+  python3 scripts/sts.py bundle upload --yes     # publish, after a local verify
+
+Running this file directly still works and is what `bundle build` shells out to.
 """
 from __future__ import annotations
 
@@ -30,6 +35,13 @@ import sys
 import textwrap
 import zipfile
 from pathlib import Path
+
+# Publishing lives in sts_lib.bonus, not here. This script BUILDS the bundle;
+# putting the Supabase write beside the builder is what made "what is in the
+# live object" unanswerable from the CLI for months. sts.py is the one entry
+# point for both now, and this import resolves with no packaging step because
+# scripts/ is this file's own directory when it runs as __main__.
+from sts_lib.bonus import upload as _upload
 
 ROOT = Path(__file__).resolve().parent.parent
 CASEBOOK = ROOT / "manuscript" / "HISTORY-CASEBOOK.md"
@@ -837,7 +849,7 @@ def main() -> int:
         print(f"  {f['bytes']:>12,}  {f['path']}")
 
     if "--upload" in sys.argv:
-        return _upload(zip_path)
+        return _upload(zip_path, ROOT)
     print("\n(dry run. pass --upload to publish to Supabase Storage)")
     return 0
 
@@ -870,98 +882,6 @@ def _write_site_manifest(manifest: dict) -> None:
         f"export default Object.freeze({body});\n",
         encoding="utf8",
     )
-
-
-def _env() -> dict:
-    out = {}
-    for line in (ROOT / ".env").read_text(encoding="utf8").split("\n"):
-        line = line.strip()
-        if line and not line.startswith("#") and "=" in line:
-            k, v = line.split("=", 1)
-            out[k.strip()] = v.strip()
-    return out
-
-
-def _upload(zip_path: Path) -> int:
-    """Replace the live bundle in place, keeping a dated backup.
-
-    The storage path must not change: DOWNLOAD_BUNDLE_PATH in the production
-    environment points at it, and every signed URL already in a customer's inbox
-    resolves through it.
-    """
-    import datetime
-    import json
-    import urllib.error
-    import urllib.request
-
-    env = _env()
-    base = env["SUPABASE_URL"]
-    key = env.get("SUPABASE_SERVICE_KEY") or env["SUPABASE_SECRET_KEY"]
-    bucket = env.get("DOWNLOAD_BUCKET", "downloads")
-    name = env.get("DOWNLOAD_BUNDLE_PATH", "research-bundle-v1.zip")
-    hdr = {"apikey": key, "Authorization": f"Bearer {key}"}
-
-    def call(method, path, data=None, ctype=None, extra=None):
-        h = dict(hdr)
-        if ctype:
-            h["Content-Type"] = ctype
-        if extra:
-            h.update(extra)
-        req = urllib.request.Request(base + path, data=data, method=method, headers=h)
-        try:
-            with urllib.request.urlopen(req, timeout=300) as r:
-                return r.status, r.read()
-        except urllib.error.HTTPError as e:
-            return e.code, e.read()
-
-    # 1. Pull the live bundle down and shelve a dated copy of it.
-    status, current = call("GET", f"/storage/v1/object/{bucket}/{name}")
-    if status != 200:
-        print(f"error: could not download live bundle ({status})", file=sys.stderr)
-        return 1
-    stamp = datetime.datetime.now().strftime("%Y%m%d")
-    backup = name.replace(".zip", f"-backup-{stamp}.zip")
-    status, body = call(
-        "POST", f"/storage/v1/object/{bucket}/{backup}", current,
-        "application/zip", {"x-upsert": "true"},
-    )
-    print(f"backup {backup}: HTTP {status} ({len(current):,} bytes preserved)")
-    if status not in (200, 201):
-        print("  refusing to overwrite without a backup:", body[:200], file=sys.stderr)
-        return 1
-
-    # 2. Replace in place.
-    new = zip_path.read_bytes()
-    status, body = call(
-        "POST", f"/storage/v1/object/{bucket}/{name}", new,
-        "application/zip", {"x-upsert": "true"},
-    )
-    print(f"upload {name}: HTTP {status} ({len(new):,} bytes)")
-    if status not in (200, 201):
-        print("  upload failed:", body[:300], file=sys.stderr)
-        return 1
-
-    # 3. Prove it by fetching it back through a signed URL, exactly as a
-    #    customer would, and opening the zip.
-    status, body = call(
-        "POST", f"/storage/v1/object/sign/{bucket}/{name}",
-        json.dumps({"expiresIn": 300}).encode(), "application/json",
-    )
-    if status != 200:
-        print("  signed url failed:", body[:200], file=sys.stderr)
-        return 1
-    signed = base + "/storage/v1" + json.loads(body)["signedURL"]
-    with urllib.request.urlopen(signed, timeout=300) as r:
-        fetched = r.read()
-    check = DIST / "verify-roundtrip.zip"
-    check.write_bytes(fetched)
-    with zipfile.ZipFile(check) as z:
-        bad = z.testzip()
-        names = z.namelist()
-    check.unlink()
-    print(f"verified via signed URL: {len(fetched):,} bytes, {len(names)} entries, "
-          f"integrity {'OK' if bad is None else 'CORRUPT: ' + bad}")
-    return 0 if bad is None and len(fetched) == len(new) else 1
 
 
 if __name__ == "__main__":

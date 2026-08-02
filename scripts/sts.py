@@ -1542,12 +1542,14 @@ def advertised_prices() -> dict:
     return found
 
 
-def post_json(url: str, payload: dict, timeout: float = 20.0):
+def post_json(url: str, payload: dict, timeout: float = 20.0, extra_headers: dict = None):
     """POST JSON. Returns (status, body). Never raises; 0 means no response."""
+    hdrs = {"Content-Type": "application/json",
+            "User-Agent": f"sts.py/{VERSION}"}
+    hdrs.update(extra_headers or {})
     req = urllib.request.Request(
         url, data=json.dumps(payload).encode("utf-8"), method="POST",
-        headers={"Content-Type": "application/json",
-                 "User-Agent": f"sts.py/{VERSION}"})
+        headers=hdrs)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.status, resp.read().decode("utf-8", "replace")
@@ -1555,6 +1557,13 @@ def post_json(url: str, payload: dict, timeout: float = 20.0):
         return e.code, e.read().decode("utf-8", "replace")
     except Exception as e:
         return 0, str(e)
+
+
+# Address used by the checkout probe. On our own domain and never sold to, so
+# it cannot collide with a real customer and cannot be read as one. It will
+# never appear in `preorders`, so the duplicate check always takes the
+# new-buyer path and the probe keeps measuring what it is meant to measure.
+STRIPE_PROBE_EMAIL = "sts-probe@survivingthesingularity.com"
 
 
 # A benign event type the webhook handler does not act on. Deliberate: this
@@ -1628,7 +1637,27 @@ def stripe_live_state(check_price: bool = True) -> dict:
     st = {"site": SITE, "errors": [], "warnings": []}
 
     # 1. What happens when a real customer clicks buy?
-    status, body = post_json(f"{SITE}/api/stripe-checkout", {"edition_type": "standard"})
+    #
+    # Origin is REQUIRED. /api/stripe-checkout enforces same-origin and fails
+    # CLOSED, so a probe that sends no Origin gets a 403 and this whole function
+    # goes blind: mode reads 'unknown', which the guard then reports as
+    # "real cards are being charged right now". That is a fabricated alarm about
+    # the one thing it exists to watch, and it ran every morning from
+    # 2026-07-29 to 2026-08-02 because the same-origin fix shipped to production
+    # while the matching probe fix stayed on the v0.7.3 branch.
+    #
+    # The webhook probe below deliberately does NOT send Origin: Stripe posts
+    # cross-origin, that route is exempt, and faking a browser origin there
+    # would test something no real caller does.
+    #
+    # The body needs an `email` for the same class of reason. Since 332fdfd the
+    # address is collected BEFORE the session is created, so a body carrying
+    # only edition_type is rejected 400 "Enter a valid email address." Fixing
+    # only the Origin turns a silent 403 into a silent 400 and the probe stays
+    # just as blind, so both belong in one change.
+    status, body = post_json(f"{SITE}/api/stripe-checkout",
+                             {"edition_type": "standard", "email": STRIPE_PROBE_EMAIL},
+                             extra_headers={"Origin": SITE})
     st["checkout_status"] = status
     session_url = ""
     if status == 200:

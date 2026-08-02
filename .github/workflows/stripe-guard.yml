@@ -6,9 +6,23 @@ name: Stripe Production Guard
 # said "LIVE AND TAKING REAL MONEY" after production had been rolled back to
 # test keys and the store had quietly stopped collecting anything.
 #
-# Nothing here needs a secret. It probes only public endpoints: it creates a
-# Stripe Checkout Session (which moves no money and charges nobody) and sends an
-# unsigned POST to the webhook, which is rejected by design.
+# It creates a Stripe Checkout Session, which moves no money and charges nobody,
+# and it sends one event to the webhook.
+#
+# THAT EVENT MUST BE SIGNED, and this is why the job now takes a secret. An
+# UNSIGNED post answers 400, and a 400 proves nothing: a verifier that works and
+# a verifier that rejects every event look identical from outside. sts.py is
+# honest about that and reports webhook_ok=false whenever it cannot prove the
+# case either way, so without the secret this check can never pass. It never
+# did. The guard ran red every day from 2026-07-28 to 2026-08-01 on exactly
+# that, and a permanently red alarm is one nobody reads.
+#
+# STRIPE_WEBHOOK_SECRET fixes it by letting the probe sign the event the way
+# Stripe does. What it sends is a payment_intent.created carrying a fake id, and
+# the handler subscribes only to checkout.session.completed and
+# checkout.session.async_payment_succeeded, so a verified probe event is parsed
+# and then ignored. It proves the verifier without fulfilling an order, emailing
+# anyone, or writing a row.
 
 on:
   schedule:
@@ -24,10 +38,16 @@ env:
   # guard: an accidental cutover and an accidental rollback both show up as a
   # mismatch against this line.
   #
-  # >>> FLIP THIS TO "live" AS PART OF THE RE-CUTOVER (STRIPE-GO-LIVE.md). <<<
-  # Flip it in the same commit that sets the live env vars, so the guard starts
-  # failing the moment production drifts back off live.
-  EXPECTED_MODE: test
+  # Cutover completed 2026-08-01. Evidence, rather than an assertion: charge
+  # ch_3TzowQCYoTMkQm811AnxPHY5 for $5.00 captured against a real card, session
+  # cs_live_a1d3bc... complete/paid, and fulfilled_sessions carrying that
+  # session_id with status=delivered, attempts=1, last_error=null. Advertised
+  # $5.00 equals charged $5.00, so there is no price drift to hide behind.
+  #
+  # From here a mismatch means production drifted OFF live, which is the silent
+  # failure that cost ten days last time: the storefront still renders, still
+  # takes a card, and collects nothing.
+  EXPECTED_MODE: live
 
 jobs:
   probe:
@@ -50,6 +70,15 @@ jobs:
       # fail on a mode change, because it has no way to know which mode you
       # meant - that is what EXPECTED_MODE supplies.
       - name: Probe and assert
+        env:
+          # Must be the LIVE endpoint secret, the whsec_... belonging to the
+          # production-fulfillment destination (we_1TzoPYCYoTMkQm81E4almkKI).
+          # A test-mode secret signs an event production correctly rejects, and
+          # the guard would then report a broken verifier that is in fact fine.
+          #
+          # Absent, the job still runs and still catches mode drift and price
+          # drift. It just cannot prove the webhook, and says so.
+          STRIPE_WEBHOOK_SECRET: ${{ secrets.STRIPE_WEBHOOK_SECRET }}
         run: |
           set -o pipefail
           python scripts/sts.py stripe --live --json | tee probe.json || true

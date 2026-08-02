@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-01T15:45:13Z",
+  "generatedAt": "2026-08-01T16:21:48Z",
   "generator": "scripts/build_workshop_data.py",
   "note": "Snapshot. Regenerated only when this script runs and the site is rebuilt. Not live.",
   "repo": {
-    "branch": "factcheck-trace-fix",
-    "head": "09f3570",
-    "aheadOfMain": 0,
-    "behindMain": 0,
-    "dirtyPaths": 6,
-    "pushed": true
+    "branch": "v0.7.3",
+    "head": "a9b831d",
+    "aheadOfMain": 23,
+    "behindMain": 6,
+    "dirtyPaths": 50,
+    "pushed": false
   },
   "book": {
     "version": "0.7.4",
@@ -20,8 +20,8 @@
     "receiptsBroken": 0
   },
   "verdicts": {
-    "SUPPORTED": 273,
-    "UNCHECKED": 776,
+    "SUPPORTED": 440,
+    "UNCHECKED": 609,
     "UNCHECKABLE": 190,
     "PARTIAL": 3
   },
@@ -575,8 +575,8 @@
         "causal_claim": 1
       },
       "verdicts": {
-        "UNCHECKED": 319,
-        "SUPPORTED": 10,
+        "UNCHECKED": 152,
+        "SUPPORTED": 177,
         "UNCHECKABLE": 1
       }
     },
@@ -641,54 +641,234 @@
   ],
   "commits": [
     {
-      "sha": "09f3570",
+      "sha": "a9b831d",
       "date": "2026-08-01",
-      "subject": "chore: daily signals sweep 2026-08-01",
-      "stream": "chore",
-      "streamLabel": "chore",
-      "files": 3,
-      "adds": 3,
-      "dels": 3
+      "subject": "factcheck: wire the network half into the audit it was written for",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 8,
+      "adds": 44130,
+      "dels": 73
     },
     {
-      "sha": "a6e3981",
-      "date": "2026-07-31",
-      "subject": "book, factcheck and workshop: the content half, without the money path",
-      "stream": "book, factcheck and workshop",
-      "streamLabel": "book, factcheck and workshop",
-      "files": 20,
-      "adds": 5212,
-      "dels": 287
+      "sha": "4f749a6",
+      "date": "2026-08-01",
+      "subject": "factcheck: two verdicts were the instrument failing, not the source",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 2,
+      "adds": 171,
+      "dels": 9
     },
     {
-      "sha": "d5976e5",
-      "date": "2026-07-31",
-      "subject": "devlog: publish the first post, reachable from the footer only",
-      "stream": "devlog",
-      "streamLabel": "devlog",
-      "files": 6,
-      "adds": 1733,
+      "sha": "dbf4139",
+      "date": "2026-08-01",
+      "subject": "schema: verify sql/012 behaviourally, and stop the checkout probe lying",
+      "stream": "schema",
+      "streamLabel": "schema",
+      "files": 1,
+      "adds": 145,
+      "dels": 7
+    },
+    {
+      "sha": "715a747",
+      "date": "2026-08-01",
+      "subject": "tests: commit the checkout-gate suite the go-live baseline is measured against",
+      "stream": "tests",
+      "streamLabel": "tests",
+      "files": 1,
+      "adds": 231,
       "dels": 0
     },
     {
-      "sha": "1d027a2",
+      "sha": "c17494f",
       "date": "2026-07-31",
-      "subject": "chore: daily signals sweep 2026-07-31",
-      "stream": "chore",
-      "streamLabel": "chore",
-      "files": 3,
-      "adds": 112,
-      "dels": 110
+      "subject": "devlog: the post is a route now, so it gets the real navbar",
+      "stream": "devlog",
+      "streamLabel": "devlog",
+      "files": 4,
+      "adds": 700,
+      "dels": 556
     },
     {
-      "sha": "3600400",
+      "sha": "bcdbba6",
+      "date": "2026-07-31",
+      "subject": "devlog: a real page in the site chrome, reachable from the footer only",
+      "stream": "devlog",
+      "streamLabel": "devlog",
+      "files": 8,
+      "adds": 2022,
+      "dels": 303
+    },
+    {
+      "sha": "44aaab2",
+      "date": "2026-07-31",
+      "subject": "workshop: a gated dashboard of the book build, and the first devlog post",
+      "stream": "workshop",
+      "streamLabel": "dashboard",
+      "files": 5,
+      "adds": 3219,
+      "dels": 0
+    },
+    {
+      "sha": "aaa8e7a",
+      "date": "2026-07-31",
+      "subject": "factcheck: the network half, resumable and unwilling to trust a 200",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 2,
+      "adds": 399,
+      "dels": 0
+    },
+    {
+      "sha": "93eefce",
+      "date": "2026-07-31",
+      "subject": "book: finish the KaTeX math conversion across the four math chapters",
+      "stream": "book",
+      "streamLabel": "manuscript",
+      "files": 5,
+      "adds": 265,
+      "dels": 264
+    },
+    {
+      "sha": "f23ea19",
+      "date": "2026-07-31",
+      "subject": "factcheck: put the audit on the site and write down the discipline",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 8,
+      "adds": 1316,
+      "dels": 26
+    },
+    {
+      "sha": "ad98b87",
       "date": "2026-07-30",
-      "subject": "chore: daily signals sweep 2026-07-30",
-      "stream": "chore",
-      "streamLabel": "chore",
+      "subject": "factcheck trace: the animated chain of custody page",
+      "stream": "factcheck trace",
+      "streamLabel": "fact-checking harness",
+      "files": 2,
+      "adds": 1203,
+      "dels": 0
+    },
+    {
+      "sha": "cc7ca97",
+      "date": "2026-07-30",
+      "subject": "factcheck: chain of custody for every mechanically detectable claim",
+      "stream": "factcheck",
+      "streamLabel": "fact-checking harness",
+      "files": 2,
+      "adds": 41763,
+      "dels": 0
+    },
+    {
+      "sha": "a9bf245",
+      "date": "2026-07-30",
+      "subject": "webhooks: close the malformed-timestamp bypass in my own B-09 fix",
+      "stream": "webhooks",
+      "streamLabel": "payments",
+      "files": 4,
+      "adds": 294,
+      "dels": 55
+    },
+    {
+      "sha": "6899e43",
+      "date": "2026-07-29",
+      "subject": "webhooks: bound the signature window on the future side (B-09)",
+      "stream": "webhooks",
+      "streamLabel": "payments",
+      "files": 4,
+      "adds": 353,
+      "dels": 10
+    },
+    {
+      "sha": "f7d8653",
+      "date": "2026-07-29",
+      "subject": "transactions: reword a comment that failed the house-rules lint",
+      "stream": "transactions",
+      "streamLabel": "payments",
+      "files": 1,
+      "adds": 1,
+      "dels": 1
+    },
+    {
+      "sha": "0b1d5b5",
+      "date": "2026-07-29",
+      "subject": "webhooks: the financial ledger now fails closed, the audit trail still does not",
+      "stream": "webhooks",
+      "streamLabel": "payments",
       "files": 3,
-      "adds": 202,
-      "dels": 212
+      "adds": 82,
+      "dels": 3
+    },
+    {
+      "sha": "81aa440",
+      "date": "2026-07-29",
+      "subject": "legal copy: the four audit items that were real. UNREVIEWED BY A LAWYER.",
+      "stream": "legal copy",
+      "streamLabel": "legal",
+      "files": 3,
+      "adds": 108,
+      "dels": 1
+    },
+    {
+      "sha": "23c3f3b",
+      "date": "2026-07-29",
+      "subject": "consent banner: stop trapping page-end content, and un-break the test suite",
+      "stream": "consent banner",
+      "streamLabel": "consent",
+      "files": 4,
+      "adds": 87,
+      "dels": 5
+    },
+    {
+      "sha": "2ce87e5",
+      "date": "2026-07-29",
+      "subject": "scripts: keep the verification harnesses that proved B-08 and B-06",
+      "stream": "scripts",
+      "streamLabel": "tooling",
+      "files": 3,
+      "adds": 444,
+      "dels": 0
+    },
+    {
+      "sha": "1b4a7cc",
+      "date": "2026-07-29",
+      "subject": "docs: architecture page for the money path",
+      "stream": "docs",
+      "streamLabel": "documentation",
+      "files": 2,
+      "adds": 2212,
+      "dels": 0
+    },
+    {
+      "sha": "36c0edb",
+      "date": "2026-07-29",
+      "subject": "webhooks: event idempotency and a reconciliation report, both measured",
+      "stream": "webhooks",
+      "streamLabel": "payments",
+      "files": 12,
+      "adds": 1528,
+      "dels": 0
+    },
+    {
+      "sha": "297543b",
+      "date": "2026-07-29",
+      "subject": "offer: assert the facts derive, not just the sentence",
+      "stream": "offer",
+      "streamLabel": "offer",
+      "files": 9,
+      "adds": 429,
+      "dels": 14
+    },
+    {
+      "sha": "e0cd238",
+      "date": "2026-07-29",
+      "subject": "offer: one object every surface reads, and fix the buy button that did nothing",
+      "stream": "offer",
+      "streamLabel": "offer",
+      "files": 10,
+      "adds": 609,
+      "dels": 107
     },
     {
       "sha": "332fdfd",
@@ -699,186 +879,6 @@
       "files": 5,
       "adds": 385,
       "dels": 11
-    },
-    {
-      "sha": "9e02b6c",
-      "date": "2026-07-28",
-      "subject": "backup: one nightly gate instead of two competing scripts",
-      "stream": "backup",
-      "streamLabel": "backup",
-      "files": 3,
-      "adds": 121,
-      "dels": 169
-    },
-    {
-      "sha": "2f28645",
-      "date": "2026-07-28",
-      "subject": "security: make the origin check fail closed on every API route, and back up the database",
-      "stream": "security",
-      "streamLabel": "security",
-      "files": 7,
-      "adds": 244,
-      "dels": 27
-    },
-    {
-      "sha": "2235e7c",
-      "date": "2026-07-28",
-      "subject": "checkout: make a paid order impossible to lose silently",
-      "stream": "checkout",
-      "streamLabel": "checkout",
-      "files": 6,
-      "adds": 529,
-      "dels": 28
-    },
-    {
-      "sha": "b47beeb",
-      "date": "2026-07-28",
-      "subject": "email: record every transactional send, not three of seven",
-      "stream": "email",
-      "streamLabel": "email",
-      "files": 1,
-      "adds": 23,
-      "dels": 19
-    },
-    {
-      "sha": "7c4c239",
-      "date": "2026-07-28",
-      "subject": "security: close the public-key write surface and shrink the CSP",
-      "stream": "security",
-      "streamLabel": "security",
-      "files": 19,
-      "adds": 1385,
-      "dels": 162
-    },
-    {
-      "sha": "5e9716e",
-      "date": "2026-07-28",
-      "subject": "email: record whether each transactional email actually arrived",
-      "stream": "email",
-      "streamLabel": "email",
-      "files": 4,
-      "adds": 326,
-      "dels": 14
-    },
-    {
-      "sha": "88fafa1",
-      "date": "2026-07-28",
-      "subject": "merge: signals sweep from the concurrent session",
-      "stream": "merge",
-      "streamLabel": "merge",
-      "files": 0,
-      "adds": 0,
-      "dels": 0
-    },
-    {
-      "sha": "57bd124",
-      "date": "2026-07-28",
-      "subject": "waitlist: insert with the service role so the table can be locked down",
-      "stream": "waitlist",
-      "streamLabel": "waitlist",
-      "files": 1,
-      "adds": 10,
-      "dels": 1
-    },
-    {
-      "sha": "3233093",
-      "date": "2026-07-28",
-      "subject": "chore: daily signals sweep 2026-07-28",
-      "stream": "chore",
-      "streamLabel": "chore",
-      "files": 3,
-      "adds": 217,
-      "dels": 215
-    },
-    {
-      "sha": "33bbc24",
-      "date": "2026-07-27",
-      "subject": "sts: `status` was comparing against a local main ref nothing updates",
-      "stream": "sts",
-      "streamLabel": "sts",
-      "files": 1,
-      "adds": 11,
-      "dels": 3
-    },
-    {
-      "sha": "893e5b2",
-      "date": "2026-07-27",
-      "subject": "seo: share cards everywhere, and make the gated routes emit metadata at all",
-      "stream": "seo",
-      "streamLabel": "seo",
-      "files": 30,
-      "adds": 578,
-      "dels": 34
-    },
-    {
-      "sha": "9d1a553",
-      "date": "2026-07-26",
-      "subject": "site: every surface that shows the book now shows it through BookCover",
-      "stream": "site",
-      "streamLabel": "site",
-      "files": 4,
-      "adds": 39,
-      "dels": 34
-    },
-    {
-      "sha": "498a11d",
-      "date": "2026-07-27",
-      "subject": "docs: the webhook was never correct, and this file said it was",
-      "stream": "docs",
-      "streamLabel": "documentation",
-      "files": 1,
-      "adds": 68,
-      "dels": 14
-    },
-    {
-      "sha": "5b33887",
-      "date": "2026-07-27",
-      "subject": "sts: stop `stripe --live` certifying a webhook that rejects every event",
-      "stream": "sts",
-      "streamLabel": "sts",
-      "files": 1,
-      "adds": 101,
-      "dels": 6
-    },
-    {
-      "sha": "dcc7809",
-      "date": "2026-07-26",
-      "subject": "preorder: verify webhook signatures with the async crypto path",
-      "stream": "preorder",
-      "streamLabel": "preorder",
-      "files": 1,
-      "adds": 18,
-      "dels": 2
-    },
-    {
-      "sha": "902e589",
-      "date": "2026-07-27",
-      "subject": "sql: stop 002 claiming a uniqueness it does not create",
-      "stream": "sql",
-      "streamLabel": "sql",
-      "files": 1,
-      "adds": 9,
-      "dels": 1
-    },
-    {
-      "sha": "cd6ff7a",
-      "date": "2026-07-27",
-      "subject": "sts: put the migration checker on the branch that ships, and capture schema in backup",
-      "stream": "sts",
-      "streamLabel": "sts",
-      "files": 1,
-      "adds": 241,
-      "dels": 10
-    },
-    {
-      "sha": "e32a358",
-      "date": "2026-07-27",
-      "subject": "merge: bring in the daily signals sweep from main",
-      "stream": "merge",
-      "streamLabel": "merge",
-      "files": 0,
-      "adds": 0,
-      "dels": 0
     }
   ],
   "network": {
@@ -892,11 +892,11 @@
   },
   "blockers": [
     {
-      "id": "push",
-      "title": "151 receipts stay broken until the branch is pushed",
-      "why": "A permalink mints only at origin_exact, byte identical to origin/main. Committing locally advances the state one step and mints nothing.",
-      "needs": "A decision to push. main auto-deploys and production runs live Stripe keys.",
-      "effort": "one command",
+      "id": "payments",
+      "title": "The payment path is committed but unshipped",
+      "why": "Eleven commits covering the Stripe webhook handler, offer.js, migration 014_webhook_events.sql, the admin reconcile endpoint and legal copy whose own commit message says UNREVIEWED BY A LAWYER. They were deliberately held back when the book and factcheck work shipped, because the new webhook code expects the table migration 014 creates and nobody has confirmed it exists on the live database.",
+      "needs": "Someone with database access to run sts.py schema and confirm 014 is applied, then a lawyer on the legal copy.",
+      "effort": "one check, then a decision",
       "severity": "high"
     },
     {

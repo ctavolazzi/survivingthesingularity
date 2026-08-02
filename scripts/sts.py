@@ -1312,8 +1312,13 @@ def _lockdown_report(url: str) -> list:
     Returns a list of row dicts; an empty list means the anon key was not
     available and nothing could be concluded.
     """
-    e = read_env("PUBLIC_SUPABASE_ANON_KEY", "SUPABASE_PUBLISHABLE_KEY")
-    anon = e.get("PUBLIC_SUPABASE_ANON_KEY") or e.get("SUPABASE_PUBLISHABLE_KEY")
+    # SUPABASE_ANON_KEY is the current name (server-only, no PUBLIC_ prefix; see
+    # .env.example). The two older names stay as fallbacks so a stale checkout
+    # still probes. Losing the name here does not fail loudly: the probe returns
+    # [] and the caller prints "NOT CHECKED", which reads like "fine" and is not.
+    e = read_env("SUPABASE_ANON_KEY", "PUBLIC_SUPABASE_ANON_KEY", "SUPABASE_PUBLISHABLE_KEY")
+    anon = (e.get("SUPABASE_ANON_KEY") or e.get("PUBLIC_SUPABASE_ANON_KEY")
+            or e.get("SUPABASE_PUBLISHABLE_KEY"))
     if not anon:
         return []
 

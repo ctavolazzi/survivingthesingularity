@@ -99,14 +99,40 @@ const priceRe = new RegExp(`${escapeRe(offer.price)}(?!\\d|[.,]\\d)`);
 const discountRe = /\b\d{1,3}\s*%\s*off\b/i;
 
 /**
- * The precedent count, followed by the nouns it is ever counted in. Currently
- * zero violations: this rule is a regression guard on F-02, the "29 documented
- * cases" claim that was live on four surfaces including the email.
+ * A COUNT RULE MUST NOT BE ABLE TO BUILD ITSELF OUT OF NOTHING.
+ *
+ * The rule below used to read `offer.precedentCount`. When that field was split
+ * into two correctly-named ones, this line would have produced
+ * `new RegExp('\\bundefined\\s+(documented|...)')`, which matches nothing, and
+ * the lint would have printed "clean" while enforcing a dead rule.
+ *
+ * That is the exact failure this file's own header calls out: "a passing state
+ * indistinguishable from a dead one". Exit 2 instead. A lint that cannot build
+ * its rule has to fail loudly, not quietly succeed.
  */
-const precedentRe = new RegExp(
-  `\\b${offer.precedentCount}\\s+(documented|cases?|precedents?|entries)\\b`,
-  'i'
-);
+function requireCount(name, value) {
+  if (!Number.isInteger(value) || value <= 0) {
+    console.error(
+      `check-offer-drift: offer.${name} is ${JSON.stringify(value)}, ` +
+        'so no rule can be built from it. Refusing to report a pass with a dead rule.'
+    );
+    process.exit(2);
+  }
+  return value;
+}
+
+/**
+ * A count followed by the nouns it is ever counted in.
+ *
+ * Two rules, not one, because there are two counts describing two different
+ * artifacts: the book's 23-precedent ledger, and the bonus file's measured case
+ * count. Conflating them is the bug that put a wrong number on four live
+ * surfaces including the confirmation email, so each gets its own guard and its
+ * own fix hint naming the right field.
+ */
+function countRe(value) {
+  return new RegExp(`\\b${value}\\s+(documented|cases?|precedents?|entries)\\b`, 'i');
+}
 
 /**
  * Shipment language, live only while the SKU ships nothing.
@@ -140,11 +166,18 @@ const RULES = [
     fix: "use offerItemLabel('print-discount') from $lib/offer instead"
   },
   {
-    id: 'precedent-count',
+    id: 'ledger-precedent-count',
     active: true,
-    re: precedentRe,
-    what: `the precedent count ${offer.precedentCount} typed by hand`,
-    fix: 'render {offer.precedentCount} from $lib/offer instead'
+    re: countRe(requireCount('ledgerPrecedentCount', offer.ledgerPrecedentCount)),
+    what: `the book's ledger count ${offer.ledgerPrecedentCount} typed by hand`,
+    fix: 'render {offer.ledgerPrecedentCount} from $lib/offer instead'
+  },
+  {
+    id: 'precedent-file-case-count',
+    active: true,
+    re: countRe(requireCount('precedentFileCaseCount', offer.precedentFileCaseCount)),
+    what: `the Precedent File case count ${offer.precedentFileCaseCount} typed by hand`,
+    fix: 'render {offer.precedentFileCaseCount} from $lib/offer instead'
   },
   {
     id: 'shipment',

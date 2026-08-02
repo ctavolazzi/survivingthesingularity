@@ -400,8 +400,15 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
   const body =
     `${confirmLine}Every digital thing this project makes is now yours, including the finished edition when it lands, at no additional cost. ` +
     'When the membership launches later, you never pay it. ' +
-    `Your download is The Precedent File: ${offer.precedentCount} documented cases of people meeting a machine that changed everything, with every source listed so you can check the work. ` +
-    'It also carries the complete current book in PDF and EPUB, the Municipal Autonomy Code, and the cover art.';
+    `Your download is The Precedent File: ${offer.precedentFileCaseCount} documented cases of people meeting a machine that changed everything, ` +
+    `${offer.precedentFileSourcedCount} of them with their sources listed inline so you can check the work. ` +
+    'It carries the sources index, the cover art, and the Robotics Company Index alongside it. ' +
+    // The book files ride along for convenience and are NOT what the five
+    // dollars bought: they are free to anyone at /downloads, and this sentence
+    // says so rather than letting the list imply otherwise. The itemised table
+    // below marks them from bundleManifest role: "convenience-copy", so this
+    // cannot drift back into a selling point without the manifest changing too.
+    'It also carries the full book in PDF and EPUB and the Municipal Autonomy Code, which are free to download by anyone and are in here so you do not have to go and get them.';
   // Links to the branded confirmation page, not the raw storage file directly.
   // The page mints a fresh signed download URL on every visit, so this link
   // works whenever the customer clicks it instead of expiring after 7 days.

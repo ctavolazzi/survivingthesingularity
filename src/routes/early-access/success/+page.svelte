@@ -53,7 +53,7 @@
         </div>
         <div>
           <p class="download-name">The Precedent File</p>
-          <p class="download-meta">{offer.precedentCount} documented cases with sources, plus the full book in PDF and EPUB</p>
+          <p class="download-meta">{offer.precedentFileCaseCount} documented cases, {offer.precedentFileSourcedCount} with sources listed inline</p>
         </div>
       </div>
 

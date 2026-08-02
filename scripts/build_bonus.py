@@ -20,6 +20,9 @@ Usage:
 """
 from __future__ import annotations
 
+import datetime
+import hashlib
+import json
 import re
 import shutil
 import subprocess
@@ -34,12 +37,27 @@ BONUS = ROOT / "manuscript" / "bonus"
 DIST = BONUS / "dist"
 STAGE = DIST / "The-Precedent-File"
 
-BOOK_PDF = ROOT / "static" / "downloads" / "Surviving-the-Singularity-v0.7.2.pdf"
-BOOK_EPUB = ROOT / "static" / "downloads" / "Surviving-the-Singularity-v0.7.2.epub"
-MUNI_PDF = ROOT / "static" / "downloads" / "Municipal-Autonomy-Code.pdf"
-COVER_FULL = ROOT / "art-raw" / "book-cover-final-source.png"
+BOOK_JSON = ROOT / "src" / "lib" / "data" / "book" / "book.json"
+APPENDIX_D = ROOT / "src" / "lib" / "data" / "book" / "25-appendix-d.md"
+DOWNLOADS = ROOT / "static" / "downloads"
+MUNI_PDF = DOWNLOADS / "Municipal-Autonomy-Code.pdf"
+ROBOTICS_CSV = ROOT / "static" / "data" / "robotics_companies.csv"
+
+# The cover source is resolved at build time, not asserted here. art-raw/ is
+# gitignored (.gitignore:64), so it is absent in any fresh clone and hard-failing
+# on it would make this script unrunnable for everyone but the author's laptop.
+# The fallback is the same full-size art the /early-access OG tags already use.
+COVER_CANDIDATES = [
+    ROOT / "art-raw" / "book-cover-final-source.png",
+    ROOT / "static" / "Surviving-the-Singularity-Cover.png",
+]
 COVER_800 = ROOT / "static" / "images" / "optimized" / "surviving_the_singularity_cover_800.png"
 COVER_400 = ROOT / "static" / "images" / "optimized" / "surviving_the_singularity_cover_400.png"
+
+# Where the site reads the same facts from. Written by this script, never by hand.
+SITE_MANIFEST = ROOT / "src" / "lib" / "data" / "bundleManifest.js"
+
+MANIFEST_SCHEMA = 1
 
 # Anything matching these must not survive into the shipped file. Checked at the
 # end so a future edit to the casebook cannot quietly leak production notes.
@@ -56,19 +74,26 @@ INTERNAL_PATTERNS = [
     r"\bFIXME\b",
 ]
 
+# Every number below is a {{TOKEN}} filled from a measurement of the document
+# this script just built. The hardcoded "29" that used to sit here was never
+# measured against anything: the real figure is 31, the ledger it was confused
+# with is 23, and the "cases indexed" line this script prints is 27. Four
+# numbers, one of them on four live sales surfaces, none of them counted. See
+# _count_cases and the header of src/lib/offer.js.
 FRONT_MATTER = """---
 title: "The Precedent File"
-subtitle: "29 documented cases of people meeting a machine that changed everything"
+subtitle: "{{CASE_COUNT}} documented cases of people meeting a machine that changed everything"
 author: "Companion research to *Surviving the Singularity*"
 lang: en-GB
 ---
 
 # The Precedent File
 
-**29 documented cases of people meeting a machine that changed everything, and
-what they did next.**
+**{{CASE_COUNT}} documented cases of people meeting a machine that changed
+everything, and what they did next.**
 
-Companion research to *Surviving the Singularity*. Free with the preorder.
+Companion research to *Surviving the Singularity* {{BOOK_VERSION}}. Free with
+the preorder.
 
 Every case below follows the same three beats: the story, the mechanism (the
 reason it happened, not just the fact that it did), and the rule you can carry
@@ -76,30 +101,25 @@ out of it. Sources sit under each case. Where a famous version of a story is
 embellished or fabricated, that is said plainly instead of quietly using it.
 
 The final section, *Stories that are not true*, exists because the argument
-this book makes attracts fake evidence. Eight of the most repeated anecdotes
-about technology panic have no primary source. They are listed so you can stop
-using them, with the documented alternative in each case.
+this book makes attracts fake evidence. {{APOCRYPHA_DEBUNKED_WORDS}} of the
+most repeated anecdotes about technology panic have no primary source, and one
+more is real but routinely overstated. They are listed so you can stop using
+them, with the documented alternative in each case.
 
 """
 
 LEDGER_INTRO = """## The ledger
 
 Every chapter of *Surviving the Singularity* closes with a precedent: a
-documented case of people meeting a technological wave. They run P-01 to P-22
-in order of appearance, so the weight accumulates as you read. This table maps
-each one to its chapter in the book and to its full write-up below.
+documented case of people meeting a technological wave. They run P-01 to
+P-{{LEDGER_MAX}} in order of appearance, so the weight accumulates as you read.
+This table maps each one to its chapter in the book and to its full write-up
+below.
 
-"""
-
-APOCRYPHA_INTRO = """## Stories that are not true
-
-These circulate constantly, usually in service of exactly the argument this
-book is making. Every one of them is fabricated, unsourced, or materially
-embellished. They are listed here so you can recognise them and reach for the
-documented version instead, which is given in each entry.
-
-Using a fake quote to make a true point hands the other side a free win. Do not
-do it.
+Note the two numbers, because they are easy to confuse and this file is about
+checking work. The ledger below holds {{LEDGER_COUNT}} precedents, one per
+chapter of the book. This file holds {{CASE_COUNT}} cases, because the research
+turned up more than the book had room to close chapters with.
 
 """
 
@@ -191,7 +211,7 @@ def _dedash(text: str) -> str:
     return "\n\n".join(out_blocks)
 
 
-def _clean_body(raw: str) -> str:
+def _clean_body(raw: str) -> tuple[str, str]:
     lines = raw.split("\n")
 
     # 1. Drop the internal header block, keep from the ledger heading onward.
@@ -337,7 +357,7 @@ def _rewrite_apocrypha(_block: str) -> str:
     return APOCRYPHA
 
 
-def _extract_sources(text: str) -> str:
+def _extract_sources(text: str) -> tuple[str, int, int]:
     """Pull every citation into a standalone index, grouped by case."""
     out = [
         "# Sources and Citations",
@@ -373,8 +393,184 @@ def _extract_sources(text: str) -> str:
             out.append("")
     out.append("---")
     out.append("")
-    out.append(f"*{n_links} sources across {n_cases} cases.*")
+    # "headings", not "cases". This counts headings that carry a Sources line,
+    # which includes one section-level heading and excludes the cases that have
+    # no sources yet. Calling it a case count is how the wrong number spread.
+    out.append(f"*{n_links} sources across {n_cases} headings.*")
     return "\n".join(out), n_cases, n_links
+
+
+# ---------------------------------------------------------------------------
+# Measurement. Everything below counts the artifact rather than asserting about
+# it, because every wrong number this file has ever shipped was asserted.
+# ---------------------------------------------------------------------------
+
+_ONES = ("zero one two three four five six seven eight nine ten eleven twelve "
+         "thirteen fourteen fifteen sixteen seventeen eighteen nineteen").split()
+_TENS = ("", "", "twenty", "thirty", "forty", "fifty",
+         "sixty", "seventy", "eighty", "ninety")
+
+
+def _spell(n: int) -> str:
+    """Spell an integer 0-99. The voice deliberately writes counts out in prose."""
+    if n < 20:
+        return _ONES[n]
+    tens, ones = divmod(n, 10)
+    return _TENS[tens] + (f"-{_ONES[ones]}" if ones else "")
+
+
+def _fill(text: str, tokens: dict) -> str:
+    """Substitute {{TOKEN}} placeholders.
+
+    Deliberately not str.format: these templates are prose that may grow a
+    literal brace, and format would raise on it. The build refuses to ship any
+    surviving {{ (see the leak guard in main), so a typo cannot pass silently.
+    """
+    for k, v in tokens.items():
+        text = text.replace("{{" + k + "}}", str(v))
+    return text
+
+
+# A case is anchored on its ID, not on the heading level. "### A1. " can only be
+# a case; "### The Western Union memo (1876)" in the apocrypha never can, even if
+# somebody later moves that block above the split point.
+CASE_RE = re.compile(r"^### ([A-G])(\d+)\. (.+)$", re.M)
+GROUP_RE = re.compile(r"^## ([A-G])\. (.+)$", re.M)
+
+
+def _count_cases(body: str) -> dict:
+    """Count what the emitted document actually contains, and assert its shape.
+
+    Returns the counts block that goes into the manifest. Raises SystemExit on a
+    structural problem, because a bundle whose own index is wrong is worse than
+    no bundle: the entire pitch of this file is that you can check the work.
+    """
+    cases = CASE_RE.findall(body)
+    groups = GROUP_RE.findall(body)
+
+    ids = [f"{letter}{num}" for letter, num, _ in cases]
+    dupes = sorted({i for i in ids if ids.count(i) > 1})
+    if dupes:
+        raise SystemExit(f"build_bonus: duplicate case ids {dupes}")
+
+    per_group = {}
+    for letter, num, _ in cases:
+        per_group.setdefault(letter, []).append(int(num))
+
+    for letter, nums in per_group.items():
+        expected = list(range(1, len(nums) + 1))
+        if sorted(nums) != expected:
+            raise SystemExit(
+                f"build_bonus: group {letter} is not contiguous from 1: "
+                f"found {sorted(nums)}, expected {expected}"
+            )
+
+    # Which cases carry no Sources line. Reported, never hidden: a case without a
+    # source is the one thing a reader of this file is entitled to know about.
+    without = []
+    for letter, num, _ in cases:
+        cid = f"{letter}{num}"
+        start = body.index(f"### {cid}. ")
+        nxt = body.find("\n### ", start + 1)
+        chunk = body[start:nxt if nxt != -1 else len(body)]
+        if "Sources:" not in chunk:
+            without.append(cid)
+
+    declared = [letter for letter, _ in groups]
+    return {
+        "precedent_file_cases": len(cases),
+        "cases_with_sources": len(cases) - len(without),
+        "cases_without_sources": without,
+        "case_groups": [
+            {"letter": letter, "title": title, "cases": len(per_group.get(letter, []))}
+            for letter, title in groups
+        ],
+        "sections_without_cases": [g for g in declared if g not in per_group],
+    }
+
+
+def _count_apocrypha(block: str) -> tuple[int, int]:
+    """(entries, debunked). The last entry is 'One that is real, with a caveat',
+    which is why the old 'Eight have no primary source' line was false."""
+    entries = re.findall(r"^### (.+)$", block, re.M)
+    real = [e for e in entries if re.search(r"\breal\b", e, re.I)]
+    return len(entries), len(entries) - len(real)
+
+
+def _ledger_count() -> tuple[int, int]:
+    """(count, max) of the book's own precedent ledger, read from Appendix D."""
+    rows = re.findall(r"^\| P-(\d+)", APPENDIX_D.read_text(encoding="utf8"), re.M)
+    if not rows:
+        raise SystemExit(f"build_bonus: no P-NN rows found in {APPENDIX_D}")
+    nums = [int(r) for r in rows]
+    return len(nums), max(nums)
+
+
+def _book_meta() -> dict:
+    meta = json.loads(BOOK_JSON.read_text(encoding="utf8"))
+    return {
+        "version": meta["version"],
+        "title": meta["title"],
+        "last_updated": meta.get("lastUpdated"),
+    }
+
+
+def _book_artifacts(version: str) -> dict:
+    """Locate the shipped book files by glob, then assert they are this version.
+
+    Deliberately NOT a second implementation of the filename rule. That rule
+    lives in src/lib/bookManifest.js and nowhere else. Globbing and asserting
+    fails loudly on a rename; a copy of the rule would quietly build the wrong
+    name, which is the failure this repo keeps legislating against.
+    """
+    out = {}
+    for ext in ("pdf", "epub"):
+        hits = sorted(DOWNLOADS.glob(f"Surviving-the-Singularity-v*.{ext}"))
+        if len(hits) != 1:
+            raise SystemExit(
+                f"build_bonus: expected exactly one {ext} in {DOWNLOADS}, "
+                f"found {[h.name for h in hits]}. Run scripts/publish-book-downloads.mjs."
+            )
+        if f"-v{version}." not in hits[0].name:
+            raise SystemExit(
+                f"build_bonus: book.json says v{version} but {DOWNLOADS} holds "
+                f"{hits[0].name}. Rebuild the book before building the bundle."
+            )
+        out[ext] = hits[0]
+    return out
+
+
+def _resolve_cover() -> tuple[Path, bool]:
+    """First existing cover source, and whether it is the fallback."""
+    for i, cand in enumerate(COVER_CANDIDATES):
+        if cand.exists():
+            return cand, i > 0
+    raise SystemExit(
+        "build_bonus: no cover source found. Tried: "
+        + ", ".join(str(c) for c in COVER_CANDIDATES)
+    )
+
+
+def _png_dimensions(path: Path) -> tuple[int, int] | None:
+    """Width and height straight out of the PNG IHDR chunk. Stdlib only.
+
+    Read rather than asserted so the manifest can state the real pixel size of
+    the cover art instead of calling it "high resolution", which is an adjective
+    a buyer cannot check.
+    """
+    with path.open("rb") as fh:
+        head = fh.read(24)
+    if len(head) < 24 or head[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    return int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+
+
+def _sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def main() -> int:
@@ -386,11 +582,36 @@ def main() -> int:
     body, apocrypha = _clean_body(raw)
     apocrypha = _rewrite_apocrypha(apocrypha)
 
+    # Measure first, then write the numbers into the prose. Never the reverse.
+    counts = _count_cases(body)
+    apoc_entries, apoc_debunked = _count_apocrypha(apocrypha)
+    ledger_count, ledger_max = _ledger_count()
+    book = _book_meta()
+
+    counts["apocrypha_entries"] = apoc_entries
+    counts["apocrypha_debunked"] = apoc_debunked
+    counts["ledger_precedents"] = ledger_count
+
+    tokens = {
+        "CASE_COUNT": counts["precedent_file_cases"],
+        "CASE_COUNT_WORDS": _spell(counts["precedent_file_cases"]),
+        "LEDGER_COUNT": ledger_count,
+        "LEDGER_MAX": f"{ledger_max:02d}",
+        "APOCRYPHA_DEBUNKED": apoc_debunked,
+        "APOCRYPHA_ENTRIES": apoc_entries,
+        "APOCRYPHA_DEBUNKED_WORDS": _spell(apoc_debunked).capitalize(),
+        "APOCRYPHA_DEBUNKED_WORDS_LC": _spell(apoc_debunked),
+        "BOOK_VERSION": f"v{book['version']}",
+    }
+
     document = FRONT_MATTER + body + "\n\n---\n\n" + apocrypha + "\n"
+    # Fill before the de-dash pass so its rewrapping measures the final text.
+    document = _fill(document, tokens)
     document = _dedash(document)
 
-    sources_md, n_cases, n_links = _extract_sources(document)
+    sources_md, n_sourced_cases, n_links = _extract_sources(document)
     sources_md = _dedash(sources_md)
+    counts["source_links"] = n_links
 
     # Guard: nothing internal may ship.
     leaks = []
@@ -399,35 +620,70 @@ def main() -> int:
             leaks.append(f"{pat!r} at char {m.start()}: ...{document[max(0,m.start()-60):m.start()+60]!r}...")
     if "—" in document or "—" in sources_md:
         leaks.append("em dash survived the de-dash pass")
+    # An unfilled placeholder is a build bug that would ship as literal braces.
+    for m in re.finditer(r"\{\{[A-Z_]+\}\}", document):
+        leaks.append(f"unfilled placeholder {m.group(0)} at char {m.start()}")
+    # Regression guard on the number this file shipped wrong for months. Only
+    # trips when it is being used AS a case count, so a year like 1929 is safe.
+    for m in re.finditer(r"\b(29|twenty-nine)\b(?=[^.]{0,40}\b(cases?|documented|precedents?)\b)",
+                         document, flags=re.I):
+        leaks.append(f"stale case count {m.group(1)!r} at char {m.start()}")
     if leaks:
         print("REFUSING TO BUILD, internal content would leak:", file=sys.stderr)
         for l in leaks:
             print("  -", l, file=sys.stderr)
         return 1
 
+    art = _book_artifacts(book["version"])
+    cover_full, cover_is_fallback = _resolve_cover()
+    cover_dims = _png_dimensions(cover_full)
+
     if STAGE.exists():
         shutil.rmtree(STAGE)
     (STAGE / "book").mkdir(parents=True)
     (STAGE / "extras").mkdir()
     (STAGE / "cover").mkdir()
+    (STAGE / "research").mkdir()
 
     (STAGE / "The-Precedent-File.md").write_text(document, encoding="utf8")
     (STAGE / "Sources-and-Citations.md").write_text(sources_md, encoding="utf8")
-    shutil.copy2(BONUS / "START-HERE.md", STAGE / "START-HERE.md")
 
+    # `role` is the field that makes decision two enforceable. A file marked
+    # convenience-copy is one the reader can already download for free, and the
+    # page and the email render that fact FROM HERE rather than from an adjective
+    # somebody typed. Nobody can quietly promote it back to a selling point.
     copies = [
-        (BOOK_PDF, STAGE / "book" / "Surviving-the-Singularity.pdf"),
-        (BOOK_EPUB, STAGE / "book" / "Surviving-the-Singularity.epub"),
-        (MUNI_PDF, STAGE / "extras" / "Municipal-Autonomy-Code.pdf"),
-        (COVER_FULL, STAGE / "cover" / "Surviving-the-Singularity-cover-full.png"),
-        (COVER_800, STAGE / "cover" / "Surviving-the-Singularity-cover-800.png"),
-        (COVER_400, STAGE / "cover" / "Surviving-the-Singularity-cover-400.png"),
+        (art["pdf"], STAGE / "book" / "Surviving-the-Singularity.pdf",
+         f"Surviving the Singularity, v{book['version']} (PDF)", "convenience-copy",
+         f"/downloads/{art['pdf'].name}"),
+        (art["epub"], STAGE / "book" / "Surviving-the-Singularity.epub",
+         f"Surviving the Singularity, v{book['version']} (EPUB)", "convenience-copy",
+         f"/downloads/{art['epub'].name}"),
+        (MUNI_PDF, STAGE / "extras" / "Municipal-Autonomy-Code.pdf",
+         "The Municipal Autonomy Code (Appendix A)", "convenience-copy",
+         "/downloads/Municipal-Autonomy-Code.pdf"),
+        (cover_full, STAGE / "cover" / "Surviving-the-Singularity-cover-full.png",
+         f"Cover art, {cover_dims[0]}x{cover_dims[1]}" if cover_dims else "Cover art",
+         "primary", None),
+        (COVER_800, STAGE / "cover" / "Surviving-the-Singularity-cover-800.png",
+         "Cover art, 800px wide", "primary", None),
+        (COVER_400, STAGE / "cover" / "Surviving-the-Singularity-cover-400.png",
+         "Cover art, 400px wide", "primary", None),
+        (ROBOTICS_CSV, STAGE / "research" / "Robotics-Company-Index.csv",
+         "The Robotics Company Index (CSV)", "primary", None),
     ]
-    for src, dst in copies:
+    labels = {}
+    for src, dst, label, role, free_at in copies:
         if not src.exists():
             print(f"error: missing required asset {src}", file=sys.stderr)
             return 1
         shutil.copy2(src, dst)
+        labels[dst] = (label, role, free_at)
+
+    labels[STAGE / "The-Precedent-File.md"] = (
+        f"The Precedent File, {counts['precedent_file_cases']} cases (Markdown)", "primary", None)
+    labels[STAGE / "Sources-and-Citations.md"] = (
+        f"Sources and Citations, {n_links} links", "primary", None)
 
     if "--no-pdf" not in sys.argv:
         pandoc = shutil.which("pandoc")
@@ -445,29 +701,160 @@ def main() -> int:
                 print("  ", (r.stderr or "").strip().splitlines()[-1:] or "")
             else:
                 print(f"  PDF: {(STAGE / 'The-Precedent-File.pdf').stat().st_size:,} bytes")
+                labels[STAGE / "The-Precedent-File.pdf"] = (
+                    f"The Precedent File, {counts['precedent_file_cases']} cases (PDF)",
+                    "primary", None)
+
+    # START-HERE is a template so the reader-facing README cannot describe a
+    # bundle other than the one it ships inside. Its "What is inside" table is
+    # generated from the staged files for the same reason.
+    staged_now = sorted(p for p in STAGE.rglob("*") if p.is_file())
+    inside_rows = ["| File | What it is |", "| --- | --- |"]
+    for p in staged_now:
+        rel = p.relative_to(STAGE).as_posix()
+        label, role, free_at = labels.get(p, (rel, "primary", None))
+        note = f"{label}. Also free at `{free_at}`." if free_at else f"{label}."
+        inside_rows.append(f"| `{rel}` | {note} |")
+
+    start_here = (BONUS / "START-HERE.md").read_text(encoding="utf8")
+    # The template's own instructions are for whoever edits it, not for a reader.
+    start_here = re.sub(r"<!--.*?-->\n*", "", start_here, flags=re.S)
+    start_here = _fill(start_here, {**tokens, "INSIDE_TABLE": "\n".join(inside_rows)})
+    start_here = _dedash(start_here)
+    if "{{" in start_here:
+        print("error: START-HERE.md has unfilled placeholders", file=sys.stderr)
+        return 1
+    (STAGE / "START-HERE.md").write_text(start_here, encoding="utf8")
+    labels[STAGE / "START-HERE.md"] = ("Start here", "primary", None)
+
+    # ONE list feeds both the archive and the manifest. That is what makes
+    # "the manifest is generated, never hand-written" a property of the code
+    # rather than a promise in a comment: there is no second enumeration to
+    # forget to update.
+    staged = sorted(p for p in STAGE.rglob("*") if p.is_file())
 
     zip_path = DIST / "research-bundle-v1.zip"
     if zip_path.exists():
         zip_path.unlink()
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
-        for f in sorted(STAGE.rglob("*")):
-            if f.is_file():
-                z.write(f, f.relative_to(STAGE.parent))
+        for f in staged:
+            z.write(f, f.relative_to(STAGE.parent))
+
+    files = []
+    for p in staged:
+        label, role, free_at = labels.get(p, (p.name, "primary", None))
+        rec = {
+            "path": p.relative_to(STAGE.parent).as_posix(),
+            "label": label,
+            "format": p.suffix.lstrip(".").lower(),
+            "role": role,
+            "bytes": p.stat().st_size,
+            "sha256": _sha256(p),
+        }
+        if free_at:
+            rec["also_free_at"] = free_at
+        files.append(rec)
+
+    manifest = {
+        "schema": MANIFEST_SCHEMA,
+        # Second resolution, UTC, no microseconds. The zip is not byte
+        # reproducible anyway (copy2 carries mtimes in), so bundle.sha256
+        # describes THIS artifact and `sts.py bundle verify --remote` is what
+        # compares the live object against the manifest that shipped with it.
+        "generated_at": datetime.datetime.now(datetime.timezone.utc)
+                                 .replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generator": "scripts/build_bonus.py",
+        "bundle": {
+            "root": STAGE.name,
+            "object": "research-bundle-v1.zip",
+            "bucket": "downloads",
+            "bytes": zip_path.stat().st_size,
+            "sha256": _sha256(zip_path),
+            "entries": len(files),
+        },
+        "book": book,
+        "counts": counts,
+        "cover": {
+            "source": str(cover_full.relative_to(ROOT)),
+            "fallback": cover_is_fallback,
+            "width": cover_dims[0] if cover_dims else None,
+            "height": cover_dims[1] if cover_dims else None,
+        },
+        "files": files,
+        # Input hashes are what let `bundle verify` say "the committed site
+        # manifest is stale relative to the casebook" instead of only "the
+        # numbers match themselves".
+        "inputs": {
+            "casebook": {"path": str(CASEBOOK.relative_to(ROOT)), "sha256": _sha256(CASEBOOK)},
+            "start_here": {"path": str((BONUS / "START-HERE.md").relative_to(ROOT)),
+                           "sha256": _sha256(BONUS / "START-HERE.md")},
+            "book_json": {"path": str(BOOK_JSON.relative_to(ROOT)), "sha256": _sha256(BOOK_JSON)},
+            "appendix_d": {"path": str(APPENDIX_D.relative_to(ROOT)), "sha256": _sha256(APPENDIX_D)},
+        },
+    }
+
+    # Beside the zip, never inside it: inside would make bundle.sha256
+    # self-referential and force a two-pass build for no gain.
+    (DIST / "manifest.json").write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf8")
+
+    _write_site_manifest(manifest)
 
     print()
-    print(f"cases indexed : {n_cases}")
-    print(f"sources        : {n_links}")
-    print(f"precedent file : {len(document):,} chars")
-    print(f"bundle         : {zip_path}  ({zip_path.stat().st_size:,} bytes)")
+    print(f"cases              : {counts['precedent_file_cases']}")
+    print(f"  with sources     : {counts['cases_with_sources']}")
+    if counts["cases_without_sources"]:
+        print(f"  WITHOUT sources  : {', '.join(counts['cases_without_sources'])}")
+    if counts["sections_without_cases"]:
+        print(f"  sections with no numbered cases: {', '.join(counts['sections_without_cases'])}")
+    print(f"apocrypha          : {apoc_entries} entries, {apoc_debunked} debunked")
+    print(f"book ledger        : {ledger_count} precedents, P-01 to P-{ledger_max:02d}")
+    print(f"source links       : {n_links} across {n_sourced_cases} headings")
+    print(f"precedent file     : {len(document):,} chars")
+    print(f"cover              : {cover_full.relative_to(ROOT)}"
+          + (f" ({cover_dims[0]}x{cover_dims[1]})" if cover_dims else "")
+          + (" [FALLBACK]" if cover_is_fallback else ""))
+    print(f"bundle             : {zip_path}  ({zip_path.stat().st_size:,} bytes)")
+    print(f"manifest           : {DIST / 'manifest.json'}")
+    print(f"site manifest      : {SITE_MANIFEST.relative_to(ROOT)}")
     print()
-    with zipfile.ZipFile(zip_path) as z:
-        for i in z.infolist():
-            print(f"  {i.file_size:>12,}  {i.filename}")
+    for f in files:
+        print(f"  {f['bytes']:>12,}  {f['path']}")
 
     if "--upload" in sys.argv:
         return _upload(zip_path)
     print("\n(dry run. pass --upload to publish to Supabase Storage)")
     return 0
+
+
+def _write_site_manifest(manifest: dict) -> None:
+    """Project the manifest into an ESM module the site can import.
+
+    Deliberately .js and not .json. scripts/check-offer-drift.mjs imports
+    src/lib/offer.js in PLAIN NODE, not through Vite, and plain-Node ESM cannot
+    import JSON without an import attribute. offer.js reads this file, so this
+    file has to be a module. Same dict, one generator, so the two cannot
+    disagree at generation time.
+    """
+    body = json.dumps(manifest, indent=2)
+    SITE_MANIFEST.write_text(
+        "/**\n"
+        " * GENERATED BY scripts/build_bonus.py. DO NOT EDIT.\n"
+        " *\n"
+        " * The preorder bundle, described by a measurement of the bundle rather\n"
+        " * than by prose. src/lib/offer.js derives its case count from here, the\n"
+        " * /early-access page renders its file list from here, and the\n"
+        " * confirmation email itemises from here. Regenerate with:\n"
+        " *\n"
+        " *   python3 scripts/sts.py bundle build\n"
+        " *\n"
+        " * This is the DEPLOY-TIME view of the bundle. It can only be stale\n"
+        " * against the live object if someone uploads without deploying;\n"
+        " * `python3 scripts/sts.py bundle verify --remote` is the check for that.\n"
+        " */\n"
+        f"export default Object.freeze({body});\n",
+        encoding="utf8",
+    )
 
 
 def _env() -> dict:

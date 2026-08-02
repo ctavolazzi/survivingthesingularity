@@ -10,6 +10,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<!-- Splash boot sequence: stamps html[data-splash] before first paint so
+		     returning visitors never see the 1.56s sequence flash. Render-blocking
+		     and external on purpose — CSP is script-src 'self' with a SvelteKit
+		     nonce, which an inline block here would not carry. -->
+		<script src="/splash-gate.js"></script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

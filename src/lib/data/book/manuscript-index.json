@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.7.4",
-  "generated": "2026-07-31",
+  "book_version": "0.7.5",
+  "generated": "2026-08-02",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2065,
-    "words": 91954
+    "blocks": 2067,
+    "words": 92003
   },
   "sections": [
     {
@@ -473,8 +473,8 @@
       "id": "preface",
       "title": "Preface: Welcome to the Weirdness",
       "file": "01-preface.md",
-      "next_ordinal": 36,
-      "words": 1170,
+      "next_ordinal": 38,
+      "words": 1219,
       "tombstones": [],
       "blocks": [
         {
@@ -801,11 +801,35 @@
           "preview": "The printing economy had made books cheap enough for ordinary people, and circulating libr"
         },
         {
-          "id": "sts.preface.b0030",
-          "type": "paragraph",
+          "id": "sts.preface.b0036",
+          "type": "figure",
           "lines": [
             67,
             67
+          ],
+          "words": 25,
+          "hash": "2b52dda5b51c",
+          "preview": "![A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more ",
+          "image": "/book-images/preface-reading-rage.png",
+          "art_id": "sts.plate.novel-reader"
+        },
+        {
+          "id": "sts.preface.b0037",
+          "type": "caption",
+          "lines": [
+            69,
+            69
+          ],
+          "words": 24,
+          "hash": "7c7532db9360",
+          "preview": "*The epidemic, as the doctors saw it. Two hundred years later we hand this exact picture t"
+        },
+        {
+          "id": "sts.preface.b0030",
+          "type": "paragraph",
+          "lines": [
+            71,
+            71
           ],
           "words": 46,
           "hash": "85595f3ca523",
@@ -815,8 +839,8 @@
           "id": "sts.preface.b0031",
           "type": "paragraph",
           "lines": [
-            69,
-            69
+            73,
+            73
           ],
           "words": 48,
           "hash": "6213013e8b9b",
@@ -826,8 +850,8 @@
           "id": "sts.preface.b0032",
           "type": "paragraph",
           "lines": [
-            71,
-            71
+            75,
+            75
           ],
           "words": 45,
           "hash": "b5a8e3416bd0",
@@ -837,8 +861,8 @@
           "id": "sts.preface.b0033",
           "type": "paragraph",
           "lines": [
-            73,
-            73
+            77,
+            77
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -848,8 +872,8 @@
           "id": "sts.preface.b0034",
           "type": "list",
           "lines": [
-            75,
-            77
+            79,
+            81
           ],
           "words": 150,
           "hash": "0aa5e4dd8492",
@@ -859,8 +883,8 @@
           "id": "sts.preface.b0035",
           "type": "hr",
           "lines": [
-            79,
-            79
+            83,
+            83
           ],
           "words": 0,
           "hash": "ebad27de99a8",

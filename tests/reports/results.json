@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/ctavolazzi/Code/active/survivingthesingularity/playwright.config.js",
-    "rootDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/e2e",
+    "configFile": "/work/playwright.config.js",
+    "rootDir": "/work/tests/e2e",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,21 +10,17 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 4
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/results",
+        "outputDir": "/work/tests/results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/e2e",
+        "testDir": "/work/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -32,15 +28,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/results",
+        "outputDir": "/work/tests/results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/e2e",
+        "testDir": "/work/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -48,15 +42,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/results",
+        "outputDir": "/work/tests/results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/e2e",
+        "testDir": "/work/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -64,15 +56,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/results",
+        "outputDir": "/work/tests/results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "mobile-chrome",
         "name": "mobile-chrome",
-        "testDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/e2e",
+        "testDir": "/work/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -80,15 +70,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/results",
+        "outputDir": "/work/tests/results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "mobile-safari",
         "name": "mobile-safari",
-        "testDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/e2e",
+        "testDir": "/work/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -96,15 +84,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/results",
+        "outputDir": "/work/tests/results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 4
-        },
+        "metadata": {},
         "id": "tablet",
         "name": "tablet",
-        "testDir": "/Users/ctavolazzi/Code/active/survivingthesingularity/tests/e2e",
+        "testDir": "/work/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -142,12 +128,7 @@
     "updateSourceMethod": "patch",
     "version": "1.58.2",
     "workers": 4,
-    "webServer": {
-      "command": "npm run dev",
-      "url": "http://localhost:5173",
-      "reuseExistingServer": true,
-      "timeout": 30000
-    }
+    "webServer": null
   },
   "suites": [
     {
@@ -172,27 +153,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4712,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:12.944Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-d557d2fdc43d7c7aa100",
+              "id": "91401e12fd72532a649d-a236ea0dffc5c11b3c68",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -206,27 +173,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3152,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:12.947Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-3639128d081953f340d6",
+              "id": "91401e12fd72532a649d-e860b4f3f16ad7742c35",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -240,27 +193,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2400,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:13.010Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-e7386e744a1f362511ce",
+              "id": "91401e12fd72532a649d-6731f4db7aebb1840107",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -274,27 +213,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3500,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:12.923Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-288fd81db008f030e831",
+              "id": "91401e12fd72532a649d-d8b93e7c1142b76a8435",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -308,27 +233,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2680,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:16.171Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-ffed4ce1fecad993f12f",
+              "id": "91401e12fd72532a649d-a846ad1fdd68f01c6531",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -342,27 +253,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2247,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:17.060Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-8afaac2ebb31398e059c",
+              "id": "91401e12fd72532a649d-467bffc79f4f83b41e63",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -376,27 +273,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3170,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:17.067Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-6da687de5da46f0c5e84",
+              "id": "91401e12fd72532a649d-ad8556a9f8a462760bdc",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -410,27 +293,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2877,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:18.282Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-4ac69e736f682bca123b",
+              "id": "91401e12fd72532a649d-4863e1fd1a982fb3fac7",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -444,27 +313,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2087,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:18.871Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-87c36206ab8497a01487",
+              "id": "91401e12fd72532a649d-46c23d808c26eae129fd",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -478,27 +333,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3273,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:19.330Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-6b4cbfbb4e60d95d043e",
+              "id": "91401e12fd72532a649d-ec0768748fe1a34ef632",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -512,27 +353,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4039,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:20.262Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-33bc8d1434a0888a30e3",
+              "id": "91401e12fd72532a649d-a66e64654491b0abaa2c",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -546,27 +373,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3130,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:20.979Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-ad631352851b25b9422b",
+              "id": "91401e12fd72532a649d-d70c1f0c8d32b51e6d02",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -580,27 +393,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2806,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:21.181Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-522300c7dff904754808",
+              "id": "91401e12fd72532a649d-c40bcc800154b4f6d5a2",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -614,27 +413,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2693,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:22.619Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-56bf8a8b91e1b90bfd09",
+              "id": "91401e12fd72532a649d-23947dbb820de973214f",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -648,27 +433,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2371,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:24.009Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-23e70aa0600d391c0f20",
+              "id": "91401e12fd72532a649d-6545b7f5fd22f973c42f",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -682,27 +453,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2316,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:24.128Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-a718cb072c016efa052e",
+              "id": "91401e12fd72532a649d-5bea74d9ab767ed5bb1b",
               "file": "a-stability.spec.js",
               "line": 32,
               "column": 5
@@ -716,27 +473,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4098,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:24.320Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-206546c0635c3e702d93",
+              "id": "91401e12fd72532a649d-deece7ea569a0cc10403",
               "file": "a-stability.spec.js",
               "line": 55,
               "column": 3
@@ -750,27 +493,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 4723,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:25.328Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-2d102a973aced3dfc07a",
+              "id": "91401e12fd72532a649d-d2c98384e67b7a2bfc54",
               "file": "a-stability.spec.js",
               "line": 76,
               "column": 3
@@ -784,27 +513,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1660,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:26.393Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-d7f61c4ff866fb7d0033",
+              "id": "91401e12fd72532a649d-cc3b4a2923bd82ba62dc",
               "file": "a-stability.spec.js",
               "line": 97,
               "column": 3
@@ -818,27 +533,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3647,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:26.459Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "91401e12fd72532a649d-f4cdd56d36ca7b7d6142",
+              "id": "91401e12fd72532a649d-dd5edca8a0f1bd722a7d",
               "file": "a-stability.spec.js",
               "line": 106,
               "column": 3
@@ -869,27 +570,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3516,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:28.091Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-fe875dfb97164b45d915",
+              "id": "56125ebeb002cc7a692f-d13b447d92479bc624cf",
               "file": "b-security.spec.js",
               "line": 17,
               "column": 3
@@ -903,27 +590,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2265,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:28.447Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-ea610c1068d49e38c18b",
+              "id": "56125ebeb002cc7a692f-244593afcb1bab111a56",
               "file": "b-security.spec.js",
               "line": 28,
               "column": 3
@@ -937,27 +610,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1370,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:30.099Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-0510e2bfc51ba02dfbf5",
+              "id": "56125ebeb002cc7a692f-37edd7e070eb6d150e15",
               "file": "b-security.spec.js",
               "line": 35,
               "column": 3
@@ -971,27 +630,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2824,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:30.143Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-233d6e63d19357a8a002",
+              "id": "56125ebeb002cc7a692f-60090f631b0a527dc910",
               "file": "b-security.spec.js",
               "line": 43,
               "column": 3
@@ -1005,27 +650,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2256,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:30.774Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-d77698abcefa2452468f",
+              "id": "56125ebeb002cc7a692f-2809b0a22e4564f96d99",
               "file": "b-security.spec.js",
               "line": 49,
               "column": 3
@@ -1039,27 +670,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2928,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:31.537Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-a85871f92977272c39fa",
+              "id": "56125ebeb002cc7a692f-d7270d944767ffa188bc",
               "file": "b-security.spec.js",
               "line": 57,
               "column": 3
@@ -1073,27 +690,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1931,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:31.694Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-388ac101426e00e17e5a",
+              "id": "56125ebeb002cc7a692f-4b90c6cc9cf3a630b430",
               "file": "b-security.spec.js",
               "line": 71,
               "column": 3
@@ -1107,27 +710,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3245,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:32.983Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-ab21c239f512ab8bb593",
+              "id": "56125ebeb002cc7a692f-583f3308903d4bab25fc",
               "file": "b-security.spec.js",
               "line": 80,
               "column": 3
@@ -1141,27 +730,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1295,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:33.070Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-f1242a528b8732cdadaf",
+              "id": "56125ebeb002cc7a692f-c90b99117aba0228ec49",
               "file": "b-security.spec.js",
               "line": 90,
               "column": 3
@@ -1175,27 +750,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2669,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:33.655Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "56125ebeb002cc7a692f-20519e222d480bb2c7dc",
+              "id": "56125ebeb002cc7a692f-5b43fd00ab05c7889253",
               "file": "b-security.spec.js",
               "line": 96,
               "column": 3
@@ -1226,31 +787,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3114,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Homepage load time: 1781ms\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:34.445Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-7f20ae6bdcc81e674862",
+              "id": "aaad0383a28e53ce5514-ead6eb3caa39476d1386",
               "file": "c-speed.spec.js",
               "line": 12,
               "column": 3
@@ -1264,31 +807,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1775,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Blueprint load time: 657ms\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:34.523Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-3a6d7b2e3e7f4768e618",
+              "id": "aaad0383a28e53ce5514-d15688268beee0acef0d",
               "file": "c-speed.spec.js",
               "line": 21,
               "column": 3
@@ -1302,31 +827,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1874,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Blueprint section load time: 787ms\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:36.268Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-0a3f04302619c1c78799",
+              "id": "aaad0383a28e53ce5514-4b5c1c2fd5b942d62b30",
               "file": "c-speed.spec.js",
               "line": 30,
               "column": 3
@@ -1340,31 +847,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1520,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Blog load time: 647ms\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:36.319Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-3278c8aa20c015d076f9",
+              "id": "aaad0383a28e53ce5514-1fb6d7c84a119d0c69c1",
               "file": "c-speed.spec.js",
               "line": 39,
               "column": 3
@@ -1378,27 +867,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2559,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:36.359Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-bbe66b470089e7685573",
+              "id": "aaad0383a28e53ce5514-2cac3ed1cfc0d46a9d22",
               "file": "c-speed.spec.js",
               "line": 48,
               "column": 3
@@ -1412,27 +887,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3488,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:37.587Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-a2c55125be2197500a27",
+              "id": "aaad0383a28e53ce5514-3a478c93507d0b922ba1",
               "file": "c-speed.spec.js",
               "line": 72,
               "column": 3
@@ -1446,31 +907,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 4283,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Navigation time (/ -> /blueprint): 316ms\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:37.863Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-6a590bb580cd5af11e9c",
+              "id": "aaad0383a28e53ce5514-f2f45bdadd49fd914156",
               "file": "c-speed.spec.js",
               "line": 96,
               "column": 3
@@ -1484,31 +927,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3767,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Total page weight: 304KB (0.30MB)\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:38.158Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-c329eec442a581249a38",
+              "id": "aaad0383a28e53ce5514-c2e8ad649ef596494721",
               "file": "c-speed.spec.js",
               "line": 109,
               "column": 3
@@ -1522,31 +947,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3308,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "First Contentful Paint: 1744ms\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:38.936Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "aaad0383a28e53ce5514-f31877a76e5218f6f632",
+              "id": "aaad0383a28e53ce5514-a0faa170f9fcf2301c61",
               "file": "c-speed.spec.js",
               "line": 126,
               "column": 3
@@ -1577,27 +984,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3151,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:41.145Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-85ee3a732516f32ee269",
+              "id": "a73f9ebd186e4b545042-be69d96a90b7fa7dd7f0",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1611,27 +1004,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2941,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:41.986Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-44d9a36521d8c9d664e5",
+              "id": "a73f9ebd186e4b545042-9d1e60e6271ecda1cf21",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1645,27 +1024,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2881,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:42.184Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-64cf24958b63e72bf462",
+              "id": "a73f9ebd186e4b545042-10e2e6fd380463f61759",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1679,27 +1044,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3631,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:42.286Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-ee275358c44dfc37663f",
+              "id": "a73f9ebd186e4b545042-873a1df0e866fe940ae6",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1713,27 +1064,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3726,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:44.312Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-32c4465e9b630196599f",
+              "id": "a73f9ebd186e4b545042-978da98262eb4b73fccb",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1747,27 +1084,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3521,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:44.948Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-6daf16360a7b46c22684",
+              "id": "a73f9ebd186e4b545042-c7332f69e7841956a276",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1781,27 +1104,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 4184,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:45.094Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-bb76b6fd60008bb1c971",
+              "id": "a73f9ebd186e4b545042-75c418c1f756c17b8b2d",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1815,27 +1124,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4493,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:45.939Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-bd6c81547b78b9e79e5d",
+              "id": "a73f9ebd186e4b545042-dc35f213e7ecd3e6389b",
               "file": "d-device-compliance.spec.js",
               "line": 24,
               "column": 5
@@ -1849,27 +1144,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2292,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:48.052Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-9a1ac02377c7803616db",
+              "id": "a73f9ebd186e4b545042-b593c05d6442e80fb51f",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -1883,27 +1164,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1996,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:48.484Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-eff4221fee1b9a3b8d78",
+              "id": "a73f9ebd186e4b545042-b56dddc59238ea5033b4",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -1917,27 +1184,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1900,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:49.334Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-b0baa7acdbee3e519fb4",
+              "id": "a73f9ebd186e4b545042-85d4a3c4a323547395ca",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -1951,27 +1204,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2395,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:50.360Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-8b2ced29a6ca898ff91f",
+              "id": "a73f9ebd186e4b545042-50c831389bd7c3cab7ab",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -1985,27 +1224,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2560,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:50.452Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-ffca142851e4d9ef88b9",
+              "id": "a73f9ebd186e4b545042-c6c304dc3fdd69e2fe7b",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -2019,27 +1244,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2513,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:50.511Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-c89972f940a557cd0296",
+              "id": "a73f9ebd186e4b545042-b73d1e6bc1a4dfc1c867",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -2053,27 +1264,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2436,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:51.264Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-12efd3561d47ccd1a67d",
+              "id": "a73f9ebd186e4b545042-6b5abf25b607e67d4642",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -2087,27 +1284,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2337,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:52.771Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-f74771244a5cc5cbf314",
+              "id": "a73f9ebd186e4b545042-ea4f5488ee9fb26d4752",
               "file": "d-device-compliance.spec.js",
               "line": 41,
               "column": 5
@@ -2121,31 +1304,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2175,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [
-                        {
-                          "text": "Found 28 elements with font-size < 10px\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:53.036Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-0861ac3d27cd48f244b1",
+              "id": "a73f9ebd186e4b545042-8c74d63d8fd2a35bc30f",
               "file": "d-device-compliance.spec.js",
               "line": 56,
               "column": 3
@@ -2159,31 +1324,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2051,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [
-                        {
-                          "text": "Small touch targets found: [\n  {\n    tag: \u001b[32m'A'\u001b[39m,\n    text: \u001b[32m'STS  Surviving the Singularity'\u001b[39m,\n    width: \u001b[32m'28'\u001b[39m,\n    height: \u001b[32m'20'\u001b[39m\n  },\n  { tag: \u001b[32m'BUTTON'\u001b[39m, text: \u001b[32m'  '\u001b[39m, width: \u001b[32m'40'\u001b[39m, height: \u001b[32m'40'\u001b[39m },\n  { tag: \u001b[32m'BUTTON'\u001b[39m, text: \u001b[32m'🐇 '\u001b[39m, width: \u001b[32m'40'\u001b[39m, height: \u001b[32m'40'\u001b[39m }\n]\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:53.039Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-17876b47d1cf2088d28c",
+              "id": "a73f9ebd186e4b545042-f075d1c7083111a25f8d",
               "file": "d-device-compliance.spec.js",
               "line": 83,
               "column": 3
@@ -2197,27 +1344,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 7435,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:53.715Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-63984eab33961859d5ae",
+              "id": "a73f9ebd186e4b545042-64f7e635521c7255b8e9",
               "file": "d-device-compliance.spec.js",
               "line": 115,
               "column": 3
@@ -2231,27 +1364,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2122,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:55.110Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "a73f9ebd186e4b545042-17b681add5551e805571",
+              "id": "a73f9ebd186e4b545042-139dda8fb81d23f69856",
               "file": "d-device-compliance.spec.js",
               "line": 125,
               "column": 3
@@ -2282,27 +1401,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3224,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:55.138Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-899a7ff1491e7df41e50",
+              "id": "09083ccbe4393ca846b8-50d3edaca03fa9f145c5",
               "file": "e-mobile-design.spec.js",
               "line": 19,
               "column": 3
@@ -2316,27 +1421,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3143,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:55.311Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-5ba87fe19b856b1ba7c5",
+              "id": "09083ccbe4393ca846b8-0858032e07f3f4e92e53",
               "file": "e-mobile-design.spec.js",
               "line": 38,
               "column": 3
@@ -2350,27 +1441,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3135,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:57.254Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-43bd7a55b1d933a9653d",
+              "id": "09083ccbe4393ca846b8-edf35e2c2acc01a7e144",
               "file": "e-mobile-design.spec.js",
               "line": 51,
               "column": 3
@@ -2384,27 +1461,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3210,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:58.379Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-7878634c4f4060541c5c",
+              "id": "09083ccbe4393ca846b8-e0117fa4a84458e7f002",
               "file": "e-mobile-design.spec.js",
               "line": 66,
               "column": 3
@@ -2418,27 +1481,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4201,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:38:58.469Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-8f90f5135d49ad39b63f",
+              "id": "09083ccbe4393ca846b8-3eff27397c7d399842b2",
               "file": "e-mobile-design.spec.js",
               "line": 75,
               "column": 3
@@ -2452,27 +1501,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1662,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:00.404Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-f9b90412581c9476f7f2",
+              "id": "09083ccbe4393ca846b8-77d431a0a641408ab336",
               "file": "e-mobile-design.spec.js",
               "line": 89,
               "column": 3
@@ -2486,27 +1521,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2367,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:01.176Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-32d65300b07bbfc4bcf7",
+              "id": "09083ccbe4393ca846b8-1c621c1d1f3b75e7ed5c",
               "file": "e-mobile-design.spec.js",
               "line": 104,
               "column": 3
@@ -2520,27 +1541,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2321,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:01.639Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "09083ccbe4393ca846b8-6978292e7bd788eef80f",
+              "id": "09083ccbe4393ca846b8-62b7edb5c4492406161e",
               "file": "e-mobile-design.spec.js",
               "line": 121,
               "column": 3
@@ -2571,27 +1578,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2515,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:02.096Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-d5e53f2ea7a7ae3cb7a3",
+              "id": "7b42569d0c39937f993c-f71ff6da1578e09f33ea",
               "file": "f-legal-compliance.spec.js",
               "line": 16,
               "column": 3
@@ -2605,27 +1598,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6198,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:02.747Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-da05a5c8670b7e88ae47",
+              "id": "7b42569d0c39937f993c-d9644334baf830d4f070",
               "file": "f-legal-compliance.spec.js",
               "line": 24,
               "column": 3
@@ -2639,27 +1618,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3682,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:03.576Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-449e076cac4113012476",
+              "id": "7b42569d0c39937f993c-8f0669560a1030eee735",
               "file": "f-legal-compliance.spec.js",
               "line": 44,
               "column": 3
@@ -2673,27 +1638,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3212,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:04.007Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-467d6a87d226819054e9",
+              "id": "7b42569d0c39937f993c-414ee20af55c6d4cd746",
               "file": "f-legal-compliance.spec.js",
               "line": 64,
               "column": 3
@@ -2707,31 +1658,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2638,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [
-                        {
-                          "text": "Financial content detected but no inline disclaimer found. Ensure /policies covers this.\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:04.629Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-386beb565a73dc82c542",
+              "id": "7b42569d0c39937f993c-678c9018283b334e7002",
               "file": "f-legal-compliance.spec.js",
               "line": 81,
               "column": 3
@@ -2745,27 +1678,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1847,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:07.248Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-c8916ab6a1d6837aced8",
+              "id": "7b42569d0c39937f993c-d3e1f1af392402cb1821",
               "file": "f-legal-compliance.spec.js",
               "line": 105,
               "column": 3
@@ -2779,27 +1698,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2261,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:07.272Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-2db3f98db13b16024fae",
+              "id": "7b42569d0c39937f993c-525d5c98f4a8d750b56c",
               "file": "f-legal-compliance.spec.js",
               "line": 118,
               "column": 3
@@ -2813,27 +1718,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3986,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:07.281Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "7b42569d0c39937f993c-93b2e61af6884ad0f5a0",
+              "id": "7b42569d0c39937f993c-39380040107ebeba0ede",
               "file": "f-legal-compliance.spec.js",
               "line": 137,
               "column": 3
@@ -2864,27 +1755,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3606,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:08.968Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-e50327bf9d62fd22cd5c",
+              "id": "cdee56cb96fbdb50ea88-e9ad9ebd24204a3cb725",
               "file": "g-user-profiles.spec.js",
               "line": 12,
               "column": 3
@@ -2898,27 +1775,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3201,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:09.132Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-732bf736aa31e87b8151",
+              "id": "cdee56cb96fbdb50ea88-f7ab6fe792a2f97886ce",
               "file": "g-user-profiles.spec.js",
               "line": 25,
               "column": 3
@@ -2932,27 +1795,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3204,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:09.582Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-843a4dd286dbb73d7812",
+              "id": "cdee56cb96fbdb50ea88-9391e48014031c1a2ee8",
               "file": "g-user-profiles.spec.js",
               "line": 42,
               "column": 3
@@ -2966,27 +1815,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2877,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:11.310Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-0d6df454b85f25723fe5",
+              "id": "cdee56cb96fbdb50ea88-336707e2880f1a21e204",
               "file": "g-user-profiles.spec.js",
               "line": 59,
               "column": 3
@@ -3000,27 +1835,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1877,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:12.348Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-e55c0c5358a0d9a6a5ea",
+              "id": "cdee56cb96fbdb50ea88-a26f3705e7e50043db95",
               "file": "g-user-profiles.spec.js",
               "line": 73,
               "column": 3
@@ -3034,27 +1855,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2852,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:12.588Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-0fefcfcb30da94d8267d",
+              "id": "cdee56cb96fbdb50ea88-a453409c574a61b7c297",
               "file": "g-user-profiles.spec.js",
               "line": 80,
               "column": 3
@@ -3068,31 +1875,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3535,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "LocalStorage tracking active: true\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:12.805Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-0bf4f29d995ed6e731e9",
+              "id": "cdee56cb96fbdb50ea88-6d2032ab4450e6c05803",
               "file": "g-user-profiles.spec.js",
               "line": 96,
               "column": 3
@@ -3106,27 +1895,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 5961,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:14.210Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "cdee56cb96fbdb50ea88-b6c7b5a1d452c28282cf",
+              "id": "cdee56cb96fbdb50ea88-878c959ae0b1f47b3895",
               "file": "g-user-profiles.spec.js",
               "line": 112,
               "column": 3
@@ -3157,27 +1932,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 6315,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:14.260Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-7bafad7cc72597c3e05d",
+              "id": "79518f3042eb262b7b52-9827cf8df8d4dcad8cc6",
               "file": "h-usability.spec.js",
               "line": 12,
               "column": 3
@@ -3191,27 +1952,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7150,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:15.476Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-b29f3723609472c98209",
+              "id": "79518f3042eb262b7b52-fc0b9184bc15b00374f6",
               "file": "h-usability.spec.js",
               "line": 37,
               "column": 3
@@ -3225,27 +1972,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 6366,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:16.418Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-7ad0bd7eae79ef993121",
+              "id": "79518f3042eb262b7b52-1ae29e10b94be9f335cb",
               "file": "h-usability.spec.js",
               "line": 56,
               "column": 3
@@ -3259,27 +1992,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 4758,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:20.202Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-7091f09ac951145a90cd",
+              "id": "79518f3042eb262b7b52-507de66c9c420206bff6",
               "file": "h-usability.spec.js",
               "line": 72,
               "column": 3
@@ -3293,27 +2012,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3338,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:20.594Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-b0ad3334408fd8125584",
+              "id": "79518f3042eb262b7b52-0d9a786011a35f9df6c5",
               "file": "h-usability.spec.js",
               "line": 86,
               "column": 3
@@ -3327,27 +2032,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6325,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:22.653Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-78de2ffba7a714fe4c1a",
+              "id": "79518f3042eb262b7b52-1034a27f027ccfdf42f5",
               "file": "h-usability.spec.js",
               "line": 101,
               "column": 3
@@ -3361,27 +2052,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 6014,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:22.810Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-72e96e16919d045063cb",
+              "id": "79518f3042eb262b7b52-b3a8faad72c7ec2294af",
               "file": "h-usability.spec.js",
               "line": 122,
               "column": 3
@@ -3395,27 +2072,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 5453,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:24.026Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-aee8905506736e920a29",
+              "id": "79518f3042eb262b7b52-a07b9abecb52b58f0c19",
               "file": "h-usability.spec.js",
               "line": 140,
               "column": 3
@@ -3429,27 +2092,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 4863,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:24.987Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-21711ba61d1d5cfef137",
+              "id": "79518f3042eb262b7b52-75cf3f813b044c3dda09",
               "file": "h-usability.spec.js",
               "line": 153,
               "column": 3
@@ -3463,27 +2112,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3444,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:28.848Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-ed9177fb33565aff6ca0",
+              "id": "79518f3042eb262b7b52-83cce6d7d4ce89e46d8d",
               "file": "h-usability.spec.js",
               "line": 178,
               "column": 3
@@ -3497,29 +2132,1742 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4386,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-15T20:39:28.996Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
-              "id": "79518f3042eb262b7b52-f554eb8a94cc04329d23",
+              "id": "79518f3042eb262b7b52-6ef517036d6a2c84ca99",
               "file": "h-usability.spec.js",
               "line": 189,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "i-checkout-gate.spec.js",
+      "file": "i-checkout-gate.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "early-access checkout email gate",
+          "file": "i-checkout-gate.spec.js",
+          "line": 51,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the email field is present and precedes the primary buy button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-a2a9c9b4ea8ba84b281e",
+              "file": "i-checkout-gate.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "the primary buy button is disabled until a valid address is typed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-02c79f4a294fd2fe0562",
+              "file": "i-checkout-gate.spec.js",
+              "line": 63,
+              "column": 3
+            },
+            {
+              "title": "an empty checkout attempt never reaches the network",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-9e998070381cdc870390",
+              "file": "i-checkout-gate.spec.js",
+              "line": 83,
+              "column": 3
+            },
+            {
+              "title": "the bottom buy button is not gated on a valid email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-acbf4b58362aed0b4da9",
+              "file": "i-checkout-gate.spec.js",
+              "line": 109,
+              "column": 3
+            },
+            {
+              "title": "bottom-button error renders where the customer can see it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "/work/tests/e2e/i-checkout-gate.spec.js",
+                        "line": 137,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-854017181e2460f18b64",
+              "file": "i-checkout-gate.spec.js",
+              "line": 137,
+              "column": 8
+            },
+            {
+              "title": "a valid address in the field enables the primary path end to end",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-b4666664826b0c97d567",
+              "file": "i-checkout-gate.spec.js",
+              "line": 159,
+              "column": 3
+            },
+            {
+              "title": "the already-owned refusal reads as good news, not an error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-e7b2a66aff7590ae77d1",
+              "file": "i-checkout-gate.spec.js",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "a cooldown refusal does not promise an email that was not sent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-802e5760c2ab2559e8e5",
+              "file": "i-checkout-gate.spec.js",
+              "line": 198,
+              "column": 3
+            },
+            {
+              "title": "a 503 fail-closed answer surfaces as an error, not a silent no-op",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6641c526cff4618da445-ad70cdf150494c579f72",
+              "file": "i-checkout-gate.spec.js",
+              "line": 215,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "j-webhook-event-policy.spec.js",
+      "file": "j-webhook-event-policy.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "B-08 event disposition",
+          "file": "j-webhook-event-policy.spec.js",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a never-before-seen event is processed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-52d5425cb8b0fead71e7",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "undefined is treated the same as null, not as a row",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-917e3f4ea5f040c60f70",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "an already-processed event is a duplicate and is skipped",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-8584a96efd11b1e3b2ae",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 51,
+              "column": 3
+            },
+            {
+              "title": "a processed event stays skipped no matter how old it is",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-45a56d39441ae6770dae",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "a retry after a FAILED attempt is allowed through, not skipped",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-5c1b392772c679f978e2",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "a failed attempt is retryable immediately, with no cool-off",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-e19cc8cb34011f474a79",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 90,
+              "column": 3
+            },
+            {
+              "title": "an in-flight attempt is left alone and is NOT reported a duplicate",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-4a5319d2eb3b6dbd54d6",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 98,
+              "column": 3
+            },
+            {
+              "title": "a stale in-flight attempt is repaired, not abandoned",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-a85ac77abf3108b935bc",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 111,
+              "column": 3
+            },
+            {
+              "title": "the stale boundary is exclusive on the in-flight side",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-02323641358862187ba3",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 121,
+              "column": 3
+            },
+            {
+              "title": "a row with an unparseable timestamp proceeds rather than standing down",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-9aa107e09ea658b2ff0e",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 134,
+              "column": 3
+            },
+            {
+              "title": "an unrecognised status is treated as in-flight, not as processed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-fbd680be379b0ae1c902",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "a missing status is not read as processed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-681d933d259a3b99a51a",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 160,
+              "column": 3
+            },
+            {
+              "title": "only one state in the whole space reports duplicate",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-7da43247b94df982655a",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 170,
+              "column": 3
+            },
+            {
+              "title": "every state in the space yields a well-formed disposition",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4b48fec766598b639b90-0a3c524243fa564146dd",
+              "file": "j-webhook-event-policy.spec.js",
+              "line": 186,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "k-admin-token.spec.js",
+      "file": "k-admin-token.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "fail shut on configuration problems",
+          "file": "k-admin-token.spec.js",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "an unset secret authorises nobody, even with no token supplied",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-d064d58a4eb4fbbe91d1",
+              "file": "k-admin-token.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "an empty token cannot match an empty secret",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-15561751d5ead5ffaa76",
+              "file": "k-admin-token.spec.js",
+              "line": 37,
+              "column": 3
+            },
+            {
+              "title": "a secret shorter than the minimum is refused rather than trusted",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-d50cb273cc99a8b566f5",
+              "file": "k-admin-token.spec.js",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "a secret exactly at the minimum length is accepted",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-11d73a3570855608b824",
+              "file": "k-admin-token.spec.js",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "not-configured is reported as 503, never 401",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-4ff375a75b69f54594b8",
+              "file": "k-admin-token.spec.js",
+              "line": 57,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "token matching",
+          "file": "k-admin-token.spec.js",
+          "line": 64,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the correct token is authorised",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-c87ee6d736800b763143",
+              "file": "k-admin-token.spec.js",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "a wrong token of the same length is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-adddae78f22a3d3a22f2",
+              "file": "k-admin-token.spec.js",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "a token that is a prefix of the secret is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-b4a2f87c0fc2b1c5c87a",
+              "file": "k-admin-token.spec.js",
+              "line": 80,
+              "column": 3
+            },
+            {
+              "title": "a token with the secret as a prefix is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-06b15bd0e761e3141559",
+              "file": "k-admin-token.spec.js",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "a missing header is missing-token, distinct from bad-token",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-7dc5e1b220713262189e",
+              "file": "k-admin-token.spec.js",
+              "line": 90,
+              "column": 3
+            },
+            {
+              "title": "matching is case sensitive on the token itself",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-2d5c6fe955510e2d6eab",
+              "file": "k-admin-token.spec.js",
+              "line": 97,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "bearer header parsing",
+          "file": "k-admin-token.spec.js",
+          "line": 102,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the scheme is case insensitive, the token is not touched",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-62aa97b30efac2914323",
+              "file": "k-admin-token.spec.js",
+              "line": 103,
+              "column": 3
+            },
+            {
+              "title": "extra whitespace around the token is tolerated",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-4231f83ad15713c53d52",
+              "file": "k-admin-token.spec.js",
+              "line": 109,
+              "column": 3
+            },
+            {
+              "title": "a non-bearer scheme yields nothing",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-7a775608cbb6d0438fad",
+              "file": "k-admin-token.spec.js",
+              "line": 114,
+              "column": 3
+            },
+            {
+              "title": "a bearer scheme with no token yields nothing",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-ae2b680f884089a0e31a",
+              "file": "k-admin-token.spec.js",
+              "line": 120,
+              "column": 3
+            },
+            {
+              "title": "non-string input yields nothing rather than throwing",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-556d99252cd1fd2ff116",
+              "file": "k-admin-token.spec.js",
+              "line": 126,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "constant time comparison correctness",
+          "file": "k-admin-token.spec.js",
+          "line": 133,
+          "column": 6,
+          "specs": [
+            {
+              "title": "equal strings compare equal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-60cc4c4cb666f56a2331",
+              "file": "k-admin-token.spec.js",
+              "line": 134,
+              "column": 3
+            },
+            {
+              "title": "different strings compare unequal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-3afa4bff464398e62d91",
+              "file": "k-admin-token.spec.js",
+              "line": 140,
+              "column": 3
+            },
+            {
+              "title": "different lengths compare unequal, including prefixes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-a16dc43b063ba4413d53",
+              "file": "k-admin-token.spec.js",
+              "line": 145,
+              "column": 3
+            },
+            {
+              "title": "a trailing NUL cannot be used to pad to equality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-96648c091478eacf0155",
+              "file": "k-admin-token.spec.js",
+              "line": 152,
+              "column": 3
+            },
+            {
+              "title": "null and undefined are treated as empty, not as wildcards",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-b39b8871e460c9f26905",
+              "file": "k-admin-token.spec.js",
+              "line": 164,
+              "column": 3
+            },
+            {
+              "title": "multibyte characters compare correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-c8291a2d2ab881da57ce",
+              "file": "k-admin-token.spec.js",
+              "line": 170,
+              "column": 3
+            },
+            {
+              "title": "every position is compared, not just the first mismatch",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "58603a32b0c124040ea3-a604b310213b8d4fc355",
+              "file": "k-admin-token.spec.js",
+              "line": 175,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "l-reconcile-format.spec.js",
+      "file": "l-reconcile-format.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "the default grace window is a sane non-zero value",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "4df67c9021cec84ce8f3-eabe7f1ae80b46f3d327",
+          "file": "l-reconcile-format.spec.js",
+          "line": 178,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "a check that could not run must not read as an all-clear",
+          "file": "l-reconcile-format.spec.js",
+          "line": 34,
+          "column": 6,
+          "specs": [
+            {
+              "title": "unconfigured says so and explicitly denies being an all-clear",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-a68faffcb482f029decf",
+              "file": "l-reconcile-format.spec.js",
+              "line": 35,
+              "column": 3
+            },
+            {
+              "title": "a failed query says so and denies being an all-clear",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-634321c52f7b36b67bf2",
+              "file": "l-reconcile-format.spec.js",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "a genuinely clean result is the ONLY output that reassures",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-cef18a80181ac10d8534",
+              "file": "l-reconcile-format.spec.js",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "clean output names the window it checked, so a short window cannot hide behind it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-e0b848fcf938209dd5cf",
+              "file": "l-reconcile-format.spec.js",
+              "line": 66,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "money is stated correctly",
+          "file": "l-reconcile-format.spec.js",
+          "line": 74,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a single session converts minor units to a readable amount",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-f9e3c31823f3ab2744f7",
+              "file": "l-reconcile-format.spec.js",
+              "line": 75,
+              "column": 3
+            },
+            {
+              "title": "amounts are summed across sessions, not counted",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-4462c7e026db8d799b31",
+              "file": "l-reconcile-format.spec.js",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "a null amount does not poison the total with NaN",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-7c2d0e6508285dbeef16",
+              "file": "l-reconcile-format.spec.js",
+              "line": 98,
+              "column": 3
+            },
+            {
+              "title": "currency comes from the data, not hardcoded, and survives a null first row",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-0e02dd45c6a047f885c3",
+              "file": "l-reconcile-format.spec.js",
+              "line": 111,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "each row says what actually went wrong",
+          "file": "l-reconcile-format.spec.js",
+          "line": 124,
+          "column": 6,
+          "specs": [
+            {
+              "title": "never_claimed is called out as a probably-missing webhook",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-9037db0dec9f9a8073d6",
+              "file": "l-reconcile-format.spec.js",
+              "line": 125,
+              "column": 3
+            },
+            {
+              "title": "a claimed-but-failed row reports its status and error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-6dba897603331b7f1371",
+              "file": "l-reconcile-format.spec.js",
+              "line": 134,
+              "column": 3
+            },
+            {
+              "title": "a missing email is stated rather than rendered as undefined",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-0097c270cc505cf4ba2c",
+              "file": "l-reconcile-format.spec.js",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "every row appears, not just the first",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-4cd613f37ba0ed377a61",
+              "file": "l-reconcile-format.spec.js",
+              "line": 164,
+              "column": 3
+            },
+            {
+              "title": "the report never renders the literal word undefined for any row shape",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4df67c9021cec84ce8f3-b6e6431115fbf1740254",
+              "file": "l-reconcile-format.spec.js",
+              "line": 170,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "m-webhook-freshness.spec.js",
+      "file": "m-webhook-freshness.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "reading the timestamp out of the header",
+          "file": "m-webhook-freshness.spec.js",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "pulls t out of a real stripe-signature header",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-d100739cc9e4a8f4fa9b",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "tolerates surrounding whitespace, a leading +, and extra schemes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-135b9b02e728bf0f4142",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 37,
+              "column": 3
+            },
+            {
+              "title": "does not mistake another key ending in t for the timestamp",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-51e20d298030f627a546",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "reports a present-but-unreadable t as PRESENT, which is what fails it shut",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-3e12924451db9f32e223",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "refuses an integer too large to be exact, and still reports it present",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-4692b8318500ae8daeab",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "reports absent for anything that is not a string",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-7bb726b692e9012c7ad7",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 64,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "the future side is refused",
+          "file": "m-webhook-freshness.spec.js",
+          "line": 71,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the reproduction case: 600s ahead is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-0f588b21f81428abd726",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 72,
+              "column": 3
+            },
+            {
+              "title": "exactly on the tolerance boundary is accepted, one second past it is not",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-1c8f47162c2418e900ce",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 82,
+              "column": 3
+            },
+            {
+              "title": "a wildly future timestamp, the unbounded-validity case, is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-771fdbc790beb88361d5",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 87,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "the malformed-timestamp bypass, regression",
+          "file": "m-webhook-freshness.spec.js",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a present-but-unparseable t is REFUSED, not waved through",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-99234051fdf8cb049ee3",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 105,
+              "column": 3
+            },
+            {
+              "title": "malformed and absent are different verdicts, which is the whole fix",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-d0a37a60e27aeae4b4a5",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 114,
+              "column": 3
+            },
+            {
+              "title": "a malformed t is refused no matter what the clock says",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-3bd974ce1cf1ca6281a6",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 124,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "everything else is allowed, on purpose",
+          "file": "m-webhook-freshness.spec.js",
+          "line": 132,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the past is left entirely to Stripe tolerance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-a8c1948aef5d4eed987b",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 133,
+              "column": 3
+            },
+            {
+              "title": "an ABSENT t degrades OPEN and says so",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-3951c3de9a2bf5b0abd8",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 144,
+              "column": 3
+            },
+            {
+              "title": "a broken clock degrades OPEN under its OWN reason code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-5c1dd4aff3eb9b5c5333",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 158,
+              "column": 3
+            },
+            {
+              "title": "a valid in-window timestamp is a clean pass, not a degrade",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-542a920485a7a0dfe361",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 169,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "mutation guard: the split is exact, so neither always-answer survives",
+          "file": "m-webhook-freshness.spec.js",
+          "line": 175,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a sweep of offsets rejects precisely the ones past tolerance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-3b8fd8bf195795189c62",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 176,
+              "column": 3
+            },
+            {
+              "title": "the sweep is sensitive to the comparison, so it cannot pass vacuously",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3c0a0b5384d1c2cd0cb4-a55edb80d23dfaf3c78b",
+              "file": "m-webhook-freshness.spec.js",
+              "line": 188,
               "column": 3
             }
           ]
@@ -3529,10 +3877,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-15T20:38:10.565Z",
-    "duration": 82993.03600000001,
-    "expected": 94,
-    "skipped": 0,
+    "startTime": "2026-08-02T01:20:55.229Z",
+    "duration": 312.06399999999985,
+    "expected": 0,
+    "skipped": 172,
     "unexpected": 0,
     "flaky": 0
   }

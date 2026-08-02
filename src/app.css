@@ -94,6 +94,20 @@ input, select, textarea {
 }
 .page-evidence-link a:hover { text-decoration: underline; }
 
+/* Splash boot sequence (SplashLoader.svelte).
+   The decision to play is made pre-paint by the inline script in app.html,
+   which stamps data-splash on <html>. Anything other than "play" hides the
+   overlay before it can flash — the component itself then unmounts on hydrate.
+   These rules must be global because they cross the component boundary. */
+html[data-splash]:not([data-splash="play"]) [data-sts-splash] {
+  display: none;
+}
+
+html.splash-locked,
+html.splash-locked body {
+  overflow: hidden;
+}
+
 /* Shared arrow shimmer used on primary CTAs across components. */
 .shimmer-arrow {
   transition: transform 0.2s ease;

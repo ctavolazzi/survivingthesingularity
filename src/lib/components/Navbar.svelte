@@ -5,7 +5,12 @@
   import { browser } from '$app/environment';
   import { readerMode } from '$lib/stores/readerMode';
   import { offer } from '$lib/offer';
+  import { session, refreshSession } from '$lib/stores/session.js';
 
+  // Vestigial. The root layout is prerendered, so it has never been able to
+  // pass a real user down here - its load() returns a stub. Account state now
+  // comes from $session, which asks /api/session after hydration. Kept so the
+  // existing `<Navbar user={data?.user} />` call site does not break.
   export let user = null;
   void user;
 
@@ -76,6 +81,13 @@
   // One offer, one CTA, everywhere.
   $: currentPath = $page.url.pathname;
   const ctaConfig = { label: `Preorder: ${offer.price}`, href: '/early-access' };
+
+  // Account state. The layout is prerendered, so this cannot come from layout
+  // data - see $lib/stores/session.js and /api/session for why.
+  $: signInHref =
+    currentPath && currentPath !== '/'
+      ? `/signup?mode=signin&next=${encodeURIComponent(currentPath)}`
+      : '/signup?mode=signin';
 
   $: isActive = (href) => href === '/' ? currentPath === '/' : currentPath.startsWith(href);
 
@@ -184,6 +196,10 @@
     if (drawerEl) drawerEl.inert = true;
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('keydown', handleKey);
+
+    // Resolve the account control. Fires once per page load; the store shares
+    // one request between any other component that asks.
+    refreshSession();
   });
 
   onDestroy(() => {
@@ -232,6 +248,45 @@
         </svg>
       </span>
     </a>
+
+    <!--
+      Account control. Rightmost thing in the pill besides the menu button.
+
+      Renders nothing until $session resolves. That is on purpose: the layout is
+      prerendered, so the baked HTML cannot know who is asking, and defaulting to
+      "Sign in" would flash the wrong state at every signed-in visitor on every
+      page load. An empty slot for ~50ms is quieter than a wrong answer.
+
+      Styled as a text link rather than a button so it stays subordinate to the
+      preorder CTA beside it. The whole site funnels to that CTA; a free account
+      is not a second offer competing with it.
+    -->
+    <div class="nav-account" class:is-ready={$session.status !== 'unknown'} data-testid="nav-account">
+      {#if $session.status === 'signedIn'}
+        <!--
+          Deliberately NOT a link to /account: that page does not exist yet, and
+          a navbar entry that 404s is worse than none. Sign out is the one action
+          a signed-in visitor always needs, and it is a POST because a GET
+          sign-out can be triggered by any prefetch or link-preview bot.
+          When /account lands, the name becomes the link and this moves inside it.
+        -->
+        <span class="nav-account-dot" aria-hidden="true"></span>
+        <span class="nav-account-name" title={$session.displayName}>
+          {$session.displayName || 'Account'}
+        </span>
+        <form method="POST" action="/auth/signout" class="nav-account-form">
+          <input type="hidden" name="next" value={currentPath} />
+          <button type="submit" class="nav-account-link nav-account-signout">Sign out</button>
+        </form>
+      {:else if $session.status === 'signedOut'}
+        <a
+          href={signInHref}
+          class="nav-account-link"
+          aria-label="Sign in or create an account"
+          on:click={(e) => navigateTo(signInHref, e)}
+        >Sign in</a>
+      {/if}
+    </div>
 
     <!-- Hamburger (mobile) -->
     <button
@@ -395,6 +450,71 @@
   }
   .nav-link:hover { color: #f1f5f9; background: rgba(255, 255, 255, 0.05); }
   .nav-link.active { color: #f59e0b; background: rgba(245, 158, 11, 0.1); }
+
+  /* ── ACCOUNT CONTROL ──
+     Holds its width from the start so the pill does not jump sideways when
+     $session resolves a moment after hydration. Reserving the space is the
+     difference between "the label appears" and "the whole nav twitches". */
+  .nav-account {
+    display: flex;
+    align-items: center;
+    min-width: 62px;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.18s ease;
+  }
+  .nav-account.is-ready { opacity: 1; }
+
+  .nav-account-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 140px;
+    padding: 6px 11px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: rgba(203, 213, 225, 0.75);
+    text-decoration: none;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+  .nav-account-link:hover { color: #f1f5f9; background: rgba(255, 255, 255, 0.05); }
+
+  .nav-account-name {
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.88rem;
+    color: rgba(203, 213, 225, 0.9);
+  }
+
+  .nav-account-form { display: flex; margin: 0; }
+  .nav-account-signout {
+    appearance: none;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  /* Signed-in tell. A dot rather than an avatar: there is no avatar to show,
+     and a generated initial-circle would imply a profile picture exists. */
+  .nav-account-dot {
+    width: 6px;
+    height: 6px;
+    flex: none;
+    border-radius: 50%;
+    background: #10b981;
+  }
+
+  /* Below the desktop breakpoint the pill is tight and the drawer already
+     carries "Sign in", so the inline control steps aside rather than pushing
+     the CTA off-screen. */
+  @media (max-width: 640px) {
+    .nav-account { display: none; }
+  }
 
   /* ── CTA - always visible, even on mobile ── */
   .nav-cta {

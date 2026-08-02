@@ -366,6 +366,10 @@
         <span class="section-label">The Other Side</span>
         <h2 class="section-heading">The same robots can work <em class="vh-em">for you.</em></h2>
         <p class="section-sub">Open-source machines like FarmBot already plant, water, and weed a garden on their own. Owning the hardware that feeds you is the whole game. The book shows you how to start.</p>
+        <blockquote class="thesis-quote">
+          <p>If a robot can grow my food and build my house, why am I still renting my survival?</p>
+          <cite>Surviving the Singularity, Introduction</cite>
+        </blockquote>
       </div>
     </div>
     <div class="video-wrap reveal reveal-d1">
@@ -702,6 +706,29 @@
     color: var(--text-2);
     line-height: 1.7;
     max-width: 50ch;
+  }
+  /* The question the book turns on (Introduction). */
+  .thesis-quote {
+    margin: 32px 0 0;
+    padding: 2px 0 2px 24px;
+    border-left: 3px solid var(--amber);
+    max-width: 46ch;
+  }
+  .thesis-quote p {
+    font-size: clamp(1.2rem, 3vw, 1.85rem);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    color: var(--text-1);
+    margin: 0 0 12px;
+  }
+  .thesis-quote cite {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-2);
   }
 
   /* AGI COUNTDOWN */

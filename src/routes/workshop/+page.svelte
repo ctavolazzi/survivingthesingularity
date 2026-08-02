@@ -265,6 +265,7 @@
 
 <svelte:head>
   <title>Workshop</title>
+  <meta name="description" content="A private working dashboard of the book build and the engineering around it. Not public." />
   <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
@@ -331,8 +332,11 @@
           <span class="s">{coveragePct}% coverage</span>
         </a>
         <a class="stat" href="#blocked">
-          <span class="n bad" use:countup={data.book.receiptsBroken}>0</span><span class="l">receipts broken</span>
-          <span class="s">all in 4 chapters</span>
+          <span class="n" class:bad={data.book.receiptsBroken > 0} class:good={data.book.receiptsBroken === 0}
+            use:countup={data.book.receiptsBroken}>0</span><span class="l">receipts broken</span>
+          <!-- The sub-label was hardcoded to "all in 4 chapters", which read as
+               nonsense the moment the count reached zero. Derive it. -->
+          <span class="s">{data.book.receiptsBroken > 0 ? 'all in 4 chapters' : 'every claim resolves'}</span>
         </a>
         <a class="stat" href="#blocked">
           <span class="n">{data.network.checked}<small>/{data.network.of}</small></span>

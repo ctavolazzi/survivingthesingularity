@@ -64,6 +64,10 @@ In the 1790s, respectable society identified a technology that was destroying th
 
 The printing economy had made books cheap enough for ordinary people, and circulating libraries had made them nearly free, and suddenly young women were doing something unsupervised with their minds for hours at a time. The elders were horrified. Reverend Enos Hitchcock, 1790: "The free access which many young people have to romances, novels, and plays has poisoned the mind and corrupted the morals of many a promising youth." Doctors across Europe diagnosed "reading rage," "reading fever," "reading mania," an epidemic, blamed for promiscuity, ruined eyesight, bad posture, and moral collapse. In Sheridan's play *The Rivals*, a circulating library is "an evergreen tree of diabolical knowledge." Reading for pleasure was the brain-rot of 1790.
 
+![A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more books stacked on the floor](/book-images/preface-reading-rage.png)
+
+*The epidemic, as the doctors saw it. Two hundred years later we hand this exact picture to children as the cure for their screens.*
+
 Sit with that. The activity we now prescribe to children as the antidote to their screens, the one stamped on posters in every school library, was condemned by an entire generation of authority figures in exactly the vocabulary now aimed at the tools in your pocket.
 
 **The mechanism.** The panic was never about the books. A new technology had made someone the elders couldn't supervise powerful in a way they didn't understand, and the elders experienced that loss of supervision as moral decay. The panic protected no one. It only ever comforted the panicker.

@@ -3,6 +3,12 @@
 Ledger of built book artifacts. `book.json` holds the version the source
 currently claims; this file records which build is the one to hand someone.
 
+**The source is currently ahead of the latest build.** `book.json` reads `0.7.5`
+(see `V0.7.5-SCOPE.md`); the newest built artifact is v0.7.4 below. Nothing in the
+v0.7.5 cycle is in a file anyone can download. This is the normal state between
+builds, not a defect — but do not quote v0.7.5 page or word counts off this page,
+and do not tell a reader they are getting v0.7.5.
+
 ---
 
 ## Latest build: v0.7.4 — the canned music build

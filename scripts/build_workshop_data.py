@@ -172,12 +172,24 @@ def main() -> int:
         },
         # Human judgement, deliberately separated from everything measured above.
         "blockers": [
+            # RESOLVED 2026-08-01: the receipts blocker. The four chapters were
+            # pushed, every file reached origin_exact, and the pass now reports
+            # 1,242 of 1,242 resolvable. Kept out of the list rather than left
+            # sitting there stale, which is the exact failure the first devlog
+            # post is about.
             {
-                "id": "push",
-                "title": "151 receipts stay broken until the branch is pushed",
-                "why": "A permalink mints only at origin_exact, byte identical to origin/main. Committing locally advances the state one step and mints nothing.",
-                "needs": "A decision to push. main auto-deploys and production runs live Stripe keys.",
-                "effort": "one command",
+                "id": "payments",
+                "title": "The payment path is committed but unshipped",
+                "why": (
+                    "Eleven commits covering the Stripe webhook handler, offer.js, migration "
+                    "014_webhook_events.sql, the admin reconcile endpoint and legal copy whose own "
+                    "commit message says UNREVIEWED BY A LAWYER. They were deliberately held back "
+                    "when the book and factcheck work shipped, because the new webhook code expects "
+                    "the table migration 014 creates and nobody has confirmed it exists on the live "
+                    "database."
+                ),
+                "needs": "Someone with database access to run sts.py schema and confirm 014 is applied, then a lawyer on the legal copy.",
+                "effort": "one check, then a decision",
                 "severity": "high",
             },
             {

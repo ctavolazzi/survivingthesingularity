@@ -7,11 +7,18 @@ import { test, expect } from '@playwright/test';
  * and user-specific features work correctly.
  */
 
+/* /login does not exist and has not for some time. CLAUDE.md: "There are still
+   no /blueprint, /login, or /profile routes — removed in a past redesign; don't
+   link to them. /signup is the sign-in surface, not /login."
+   These specs pointed at /login and had been failing on every engine. Retargeted
+   at the real surface rather than skipped, so the coverage is restored instead of
+   traded away. a-stability.spec.js separately asserts that /login stays a 404. */
+const SIGNIN = '/signup?mode=signin';
+
 test.describe('User Profiles', () => {
 
-  test('Login page loads and has form elements', async ({ page }) => {
-    await page.goto('/login');
-    await page.waitForLoadState('networkidle');
+  test('Sign-in page loads and has form elements', async ({ page }) => {
+    await page.goto(SIGNIN, { waitUntil: 'domcontentloaded' });
 
     // Should have email input
     const emailInput = page.locator('input[type="email"]');
@@ -22,10 +29,11 @@ test.describe('User Profiles', () => {
     expect(await loginBtn.count()).toBeGreaterThan(0);
   });
 
-  test('Login form validates email input', async ({ page }) => {
-    await page.goto('/login');
+  test('Sign-in form validates email input', async ({ page }) => {
+    await page.goto(SIGNIN, { waitUntil: 'domcontentloaded' });
 
     const emailInput = page.locator('input[type="email"]');
+    await expect(emailInput).toBeVisible();
     await emailInput.fill('not-an-email');
 
     // Try to submit
@@ -56,19 +64,13 @@ test.describe('User Profiles', () => {
     expect(isHandled).toBe(true);
   });
 
-  test('Profile page has blueprint progress section', async ({ page }) => {
-    await page.goto('/profile');
-    await page.waitForLoadState('networkidle');
-
-    const body = await page.textContent('body');
-
-    // Profile page should reference blueprint progress
-    const hasProgress = body?.toLowerCase().includes('progress') ||
-                       body?.toLowerCase().includes('blueprint') ||
-                       body?.toLowerCase().includes('chapter');
-
-    expect(hasProgress).toBe(true);
-  });
+  /* Removed: 'Profile page has blueprint progress section'.
+     Unlike the sign-in specs above, this one has no surface to retarget at. It
+     asserted that /profile shows blueprint progress, and BOTH halves are gone:
+     there is no /profile route and no blueprint section anywhere in the product.
+     The coverage is not lost, it moved: a-stability.spec.js now asserts that
+     /profile and every /blueprint path keep returning 404, which is the only
+     thing still worth checking about them. */
 
   test('Auth callback route exists', async ({ page }) => {
     // The auth callback route should handle OAuth/magic link redirects
@@ -77,10 +79,9 @@ test.describe('User Profiles', () => {
     expect(response?.status()).toBeLessThan(500);
   });
 
-  test('Login page is accessible on mobile', async ({ page }) => {
+  test('Sign-in page is accessible on mobile', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 });
-    await page.goto('/login');
-    await page.waitForLoadState('networkidle');
+    await page.goto(SIGNIN, { waitUntil: 'domcontentloaded' });
 
     // Email input should be visible and usable
     const emailInput = page.locator('input[type="email"]');

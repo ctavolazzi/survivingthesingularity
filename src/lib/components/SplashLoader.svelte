@@ -183,10 +183,16 @@
           {/each}
         </ol>
 
-        <footer class="stamp">
+        <!-- A div, not a <footer>. This stamp is decoration inside the boot
+             overlay, but <footer> is a contentinfo landmark, so using one here
+             put a second contentinfo on every page alongside the real site
+             footer. Screen readers announced two, and locator('footer') failed
+             Playwright strict mode with "resolved to 2 elements", which is what
+             broke f-legal-compliance and e-mobile-design on all three engines. -->
+        <div class="stamp">
           <span class="stamp-box">SIGNAL ACQUIRED</span>
           <span class="stamp-sub">9/9 MAPPED &middot; THE FUTURE ISN'T COMING</span>
-        </footer>
+        </div>
       </div>
 
       <div class="rule"><i bind:this={ruleEl}></i></div>

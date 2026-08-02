@@ -23,8 +23,12 @@ test.describe('Device Compliance', () => {
   for (const viewport of VIEWPORTS) {
     test(`Homepage renders on ${viewport.name} (${viewport.width}x${viewport.height})`, async ({ page }) => {
       await page.setViewportSize({ width: viewport.width, height: viewport.height });
-      await page.goto('/');
-      await page.waitForLoadState('networkidle');
+      /* Not networkidle. The homepage loads video and webfonts and never reaches
+         a 500ms idle gap inside the 30s timeout, so waitForLoadState timed out
+         and Playwright reported it as "Navigation to / is interrupted by another
+         navigation to /", which reads like a redirect bug and is not one. The
+         body assertion below retries, so it carries readiness on its own. */
+      await page.goto('/', { waitUntil: 'domcontentloaded' });
 
       // Should have visible content
       const body = await page.locator('body');
@@ -37,11 +41,17 @@ test.describe('Device Compliance', () => {
     });
   }
 
+  /* /blueprint was removed in a past redesign, so this loop was asserting that
+     the 404 page renders without horizontal overflow on eight viewports. That is
+     not nothing, but it is not what the test name claims, and it silently passed
+     while reading as real Blueprint coverage. Pointed at /book instead, which is
+     the long-form reading surface that actually exists and is the one worth
+     checking for overflow at every width. a-stability.spec.js separately asserts
+     that /blueprint stays a 404. */
   for (const viewport of VIEWPORTS) {
-    test(`Blueprint page renders on ${viewport.name}`, async ({ page }) => {
+    test(`Book page renders on ${viewport.name}`, async ({ page }) => {
       await page.setViewportSize({ width: viewport.width, height: viewport.height });
-      await page.goto('/blueprint');
-      await page.waitForLoadState('networkidle');
+      await page.goto('/book', { waitUntil: 'domcontentloaded' });
 
       const body = await page.locator('body');
       await expect(body).toBeVisible();

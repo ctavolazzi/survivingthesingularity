@@ -67,3 +67,21 @@ art-raw/
 # makes the pass resumable across archive.org backoff, so it is local state and
 # never a commit.
 .factcheck-cache/
+
+# Playwright's HTML reporter and its results.json. Regenerated on every run, and
+# results.json churns thousands of lines per run, which buries real diffs in
+# review. tests/results/ above was already ignored; this is the same class of
+# artifact and was tracked only by oversight.
+tests/reports/
+
+# Splash probe frames. scripts/probe_splash.mjs writes a PNG per timestamp plus
+# the negative control; the script is the artifact worth keeping, not its output.
+scripts/.probe-out/
+
+# create-video render cache: hashed segment mp4s, extracted frames and text
+# fragments. Keyed by content hash, rebuilt on demand, and large.
+promo/**/.cvcache/
+
+# empirica reflex checkpoints. Per-transaction session state written by the
+# epistemic harness, not project source.
+.empirica_reflex_logs/

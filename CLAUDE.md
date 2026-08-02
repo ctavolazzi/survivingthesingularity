@@ -38,24 +38,46 @@ A SvelteKit web platform for the **YouTube Shouse Blueprint** — a comprehensiv
                        featured-posts, verify-book-password, unsubscribe,
                        fetch-title, discord-application
 ```
-(There are no /blueprint, /login, /profile, or /auth routes — removed in a past
-redesign; don't link to them.)
+Accounts (added 2026-08-01):
+```
+/signup                   → create account / sign in (?mode=signin), form actions
+/auth/oauth/[provider]    → GET, starts Google/GitHub OAuth (allowlisted)
+/auth/callback            → GET, exchanges the code or token_hash for a session
+/auth/signout             → POST only
+```
+(There are still no /blueprint, /login, or /profile routes — removed in a past
+redesign; don't link to them. `/signup` is the sign-in surface, not `/login`.)
+
+Auth is **server-side only**: no browser Supabase client, no key in the bundle,
+session in httpOnly cookies. Read `src/lib/server/supabaseAuth.js` before
+changing any of it. Verify with `node scripts/probe-auth-flow.mjs <url>` — and
+run it against `npm run preview`, not `vite dev`, because SvelteKit disables its
+CSRF origin check in dev (`if (!DEV)` in kit's respond.js), so the cross-origin
+check is meaningless there. The probe detects this and says SKIP.
 
 ## Key Files
-- `src/hooks.server.js` — Supabase session management (gracefully degrades without credentials)
-- `src/lib/supabase.js` — SSR-compatible Supabase client factory
+- `src/hooks.server.js`: resolves the session per request into `event.locals`, sets security headers.
+- `src/lib/server/supabaseAdmin.js`: data client. Service role, server-only, bypasses RLS.
+- `src/lib/server/supabaseAuth.js`: auth client. Request-scoped GoTrue, server-only. Read its header.
 - `src/lib/data/blueprint.js` — All blueprint content (8 sections with prose, tables, callouts, directives)
 - `src/routes/blog/+page.server.js` — Blog listing (hardcoded `posts` array; new posts must be added here)
-- `src/lib/components/Navbar.svelte` — Main nav with auth state
+- `src/lib/components/Navbar.svelte`: main nav. Its `user` prop is vestigial and unused.
 - `src/lib/components/Footer.svelte` — Footer
 - `src/lib/components/CookieConsent.svelte` — GDPR-style cookie banner
 
-## Auth Setup
-Auth requires a real Supabase project. Without credentials, the site runs fine but auth features are disabled.
-1. Create a Supabase project at https://supabase.com
-2. Copy URL + anon key to `.env` (replace placeholders)
-3. Enable Email auth + any OAuth providers (GitHub, Google) in Supabase dashboard
-4. Set redirect URL to `https://yourdomain.com/auth/callback`
+## Database Access
+There is no browser-side Supabase client. Every query goes through
+`src/lib/server/supabaseAdmin.js` on the service role, so the bundle ships no
+publishable/anon key and the build needs no Supabase env set at all.
+
+Set `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, and `SUPABASE_ANON_KEY` (server-only,
+no `PUBLIC_` prefix, holds the publishable key that auth needs). Do NOT add
+`PUBLIC_SUPABASE_*` or create a browser client: `src/lib/supabase.js` was deleted
+in WO-08 (`docs/work-orders-2026-07-28.md`) for exactly that reason. Supabase's
+own SvelteKit quickstart panel tells you to recreate it; ignore it. Anon holds no
+grants on this project, so a browser client returns `42501` on every table anyway.
+
+Full rules live in ONE place: the "Database access" section of `README.md`.
 
 ## Commands
 ```bash

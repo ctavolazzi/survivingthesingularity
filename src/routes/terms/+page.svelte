@@ -30,7 +30,7 @@
   <div class="terms-inner">
     <header class="t-header">
       <h1>Terms of Use</h1>
-      <p class="t-sub">Last updated: 29 July 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
+      <p class="t-sub">Last updated: 1 August 2026. By accessing or using survivingthesingularity.com (the "Site"), you agree to these Terms of Use. If you do not agree, do not use the Site.</p>
     </header>
 
     <section class="t-section">
@@ -199,7 +199,10 @@
         <li>Use automated means (bots, scrapers) to access the Site in a way that imposes an unreasonable load on its infrastructure;</li>
         <li>Attempt to interfere with, compromise, or circumvent the security of the Site;</li>
         <li>Misrepresent your identity or affiliation in any communication with the operator;</li>
-        <li>Use the Site to harass, defame, or harm any person.</li>
+        <li>Use the Site to harass, defame, or harm any person;</li>
+        <li>Create an account using an email address you do not control, or share your account credentials with anyone else;</li>
+        <li>Attempt to access another person's account, or to enumerate which email addresses have accounts;</li>
+        <li>Automate sign-in attempts, or attempt to defeat the rate limits applied to them.</li>
       </ul>
     </section>
 
@@ -211,6 +214,12 @@
         Terms that by their nature should survive termination (including
         disclaimers, limitation of liability, indemnification, and dispute
         resolution) shall survive.
+      </p>
+      <p>
+        You may close your account at any time by contacting the operator (see
+        section 16). Closing your account does not revoke anything you have
+        already purchased: purchased material remains yours under the terms it
+        was sold on, and access to it can be restored without the account.
       </p>
     </section>
 
@@ -321,6 +330,42 @@
         Department of Consumer Affairs may be contacted in writing at 1625 North
         Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at
         (800) 952-5210.
+      </p>
+    </section>
+
+    <!-- Added when accounts shipped. Appended as 18 rather than inserted in
+         topic order on purpose: renumbering fifteen sections would break every
+         existing cross-reference and every link anyone has already saved to a
+         numbered clause. Sections 10, 11 and 16 were amended in place. -->
+    <section class="t-section">
+      <h2>18. Accounts</h2>
+      <p>
+        Accounts are optional and free. Nothing that is readable without an
+        account requires one, and creating one is not a condition of any purchase.
+      </p>
+      <p>
+        You must be at least 13 years old to create an account. You are
+        responsible for keeping your password or sign-in link private, and for
+        activity that happens under your account. Tell the operator promptly if
+        you believe someone else has access to it.
+      </p>
+      <p>
+        You must give an email address you actually control. Accounts registered
+        to an address belonging to someone else may be removed without notice.
+      </p>
+      <p>
+        Accounts are provided as they are, and the Site may change or withdraw
+        account features. Where a feature holds something you created - reading
+        position, checklist state - the operator will make a reasonable effort to
+        preserve or export it, but sections 3 and 4 (no warranties, limitation of
+        liability) apply to account features exactly as they apply to the rest of
+        the Site. Keep your own copy of anything you cannot afford to lose.
+      </p>
+      <p>
+        What is stored about an account, and what is done with it, is described
+        in the <a href="/policies#accounts">Privacy Policy</a>. Where these Terms
+        and that policy disagree about the handling of personal data, that policy
+        governs.
       </p>
     </section>
   </div>

@@ -162,6 +162,71 @@ export async function clearActivationIntent(email) {
 }
 
 /**
+ * Burn the code a now-proven address was carrying, if it was carrying one.
+ *
+ * Called from /auth/callback, which is the first moment control of the address
+ * is established - by clicking the emailed link, or by a provider asserting it.
+ * Everything before that point is a claim, and burning a single-use code on a
+ * claim is how a stranger destroys a code before its recipient ever sees it.
+ *
+ * Ordering matters and is not arbitrary: this must run AFTER the callback's
+ * ensureProfile(), because it updates the profile row rather than creating one.
+ * ensureProfile writes `access_source: 'signup'` with `ignoreDuplicates`, so it
+ * never overwrites a row that already says 'activation_code'.
+ *
+ * Never throws. A redemption failure must not cost someone the sign-in they
+ * just completed - they are already authenticated by the time this runs, and
+ * the code is still there to try again from the account page.
+ *
+ * @param {{ userId: string, email: string }} args
+ * @returns {Promise<{ redeemed: boolean, reason?: string }>}
+ */
+export async function redeemPendingActivation({ userId, email }) {
+  try {
+    const intent = await takeActivationIntent(email);
+    if (!intent) return { redeemed: false };
+
+    const result = await redeemActivationCode({ codeId: intent.codeId, userId, email });
+
+    // Only a genuine failure keeps the intent alive for a retry. 'exhausted',
+    // 'revoked' and 'expired' are final answers, so the intent is cleared -
+    // leaving it would re-attempt a dead code on every subsequent sign-in.
+    if (!result.ok && result.reason === 'unavailable') {
+      return { redeemed: false, reason: result.reason };
+    }
+
+    await clearActivationIntent(email);
+    if (!result.ok) return { redeemed: false, reason: result.reason };
+
+    await markProfileActivated(userId);
+    return { redeemed: true };
+  } catch (e) {
+    console.error('[activationCodes] pending redemption threw:', e?.message ?? e);
+    return { redeemed: false, reason: 'unavailable' };
+  }
+}
+
+/**
+ * Record that this account came in through a code rather than a purchase.
+ *
+ * Deliberately does NOT overwrite 'purchase'. Someone who bought the book and
+ * also redeemed a comp code is a purchaser; downgrading that would misreport
+ * what they are owed. sql/016 widened the constraint to allow 'signup', which
+ * is the value this replaces.
+ *
+ * @param {string} userId
+ */
+async function markProfileActivated(userId) {
+  if (!supabaseAdmin) return;
+  const { error } = await supabaseAdmin
+    .from('profiles')
+    .update({ access_source: 'activation_code', updated_at: new Date().toISOString() })
+    .eq('id', userId)
+    .neq('access_source', 'purchase');
+  if (error) console.error('[activationCodes] could not mark profile activated:', error.message);
+}
+
+/**
  * Mint a batch. Returns the plaintext codes, which is the only time they exist.
  *
  * The caller MUST show or store what comes back. There is no recovery path: the

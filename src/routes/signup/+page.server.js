@@ -35,6 +35,12 @@ import { enforceAuthBudget, authRateReset } from '$lib/server/authRateLimit.js';
 import { safeRedirect } from '$lib/server/safeRedirect.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 import { authConfigured } from '$lib/server/supabaseAuth.js';
+import {
+  inspectActivationCode,
+  recordActivationIntent,
+  redeemPendingActivation
+} from '$lib/server/activationCodes.js';
+import { activationErrorText } from '$lib/server/activationCodeCrypto.js';
 
 // src/routes/+layout.server.js sets `prerender = true` for the whole site.
 // Nothing here can be prerendered: the page depends on the request's session
@@ -98,6 +104,13 @@ export const actions = {
     const { email, next, trapped } = readCommon(form);
     const password = form.get('password');
     const consent = form.get('consent') === 'on' || form.get('consent') === 'true';
+    // Left as typed. normalizeActivationCode() inside inspectActivationCode()
+    // is what folds case, dashes, spaces and confusable glyphs, and it is the
+    // single place that should know how - trimming it here too would be a
+    // second, quieter copy of that rule.
+    const rawCode = typeof form.get('activation_code') === 'string'
+      ? form.get('activation_code').trim()
+      : '';
 
     // Silent success. Identical to the real success shape so a bot cannot
     // distinguish them.
@@ -127,6 +140,30 @@ export const actions = {
       return problem(429, { message: MESSAGES.rateLimited, email });
     }
 
+    // The activation code, if one was typed. Optional: /signup is open, and a
+    // code is what upgrades a free account to a comp reader.
+    //
+    // Checked AFTER the rate-limit budget on purpose. This is the only surface
+    // where an outsider can test whether a code exists, so a guess has to cost
+    // the same budget a password attempt costs. 60 bits makes brute force
+    // hopeless anyway; the ordering is what stops this form being a free oracle.
+    //
+    // Checked BEFORE signUp so a bad code does not leave a half-made account
+    // behind, and NOT spent here - see redeemPendingActivation(). All that
+    // happens on success is that the intent is remembered against an address
+    // that has yet to prove itself.
+    let activation = null;
+    if (rawCode) {
+      activation = await inspectActivationCode(rawCode);
+      if (!activation.ok) {
+        return problem(400, {
+          message: activationErrorText(activation.reason),
+          field: 'activation_code',
+          email
+        });
+      }
+    }
+
     const { data, error } = await event.locals.supabaseAuth.auth.signUp({
       email,
       password,
@@ -148,9 +185,25 @@ export const actions = {
 
     await recordConsent(data?.user?.id, email);
 
+    // Remember the code against this address so /auth/callback can burn it once
+    // the confirmation link is clicked. Stores the code_id, never the code, so
+    // no plaintext travels in the link or the email.
+    if (activation?.codeId) {
+      await recordActivationIntent({ email, codeId: activation.codeId });
+    }
+
     // Confirmations disabled on the Supabase project: signUp returns a live
     // session and the person is already signed in. Nothing to wait for.
-    if (data?.session) throw redirect(303, next);
+    if (data?.session) {
+      // ...and nothing to click, so /auth/callback will never run. Burn the
+      // code here instead. Without this branch the whole activation path is
+      // silently dead on any project with email confirmation turned off, and
+      // it would look like the code was accepted, because it was.
+      if (activation?.codeId && data.user?.id) {
+        await redeemPendingActivation({ userId: data.user.id, email });
+      }
+      throw redirect(303, next);
+    }
 
     return { pending: true, email, mode: 'signup' };
   },

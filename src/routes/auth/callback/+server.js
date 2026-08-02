@@ -25,6 +25,7 @@ import { redirect } from '@sveltejs/kit';
 import { safeRedirect } from '$lib/server/safeRedirect.js';
 import { MESSAGES, mapAuthError } from '$lib/server/authErrors.js';
 import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
+import { redeemPendingActivation } from '$lib/server/activationCodes.js';
 
 // Opt out of the site-wide `prerender = true` (src/routes/+layout.server.js).
 // This endpoint exists to read a one-time code out of a live request; a
@@ -90,6 +91,12 @@ export async function GET(event) {
   if (user?.id && user?.email) {
     await claimEntitlements(user.id, user.email.toLowerCase());
     await ensureProfile(user);
+    // The second door. If this person typed an activation code at /signup, the
+    // code was validated then but NOT spent - it is burned here, because this
+    // is the first moment they have proven the address is theirs. Runs after
+    // ensureProfile so there is a row to stamp. Never throws: a code that fails
+    // to redeem must not cost someone the sign-in they just completed.
+    await redeemPendingActivation({ userId: user.id, email: user.email.toLowerCase() });
   }
 
   throw redirect(303, next);

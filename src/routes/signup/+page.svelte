@@ -55,6 +55,10 @@
   let password = '';
   let revealed = false;
   let submitting = false;
+  // Kept in component state so a rejected submit does not clear it. Retyping a
+  // twelve-character code because the password was too short is the kind of
+  // small insult that makes people give up on a form.
+  let activationCode = '';
 
   // Identical to strengthScore() in $lib/server/passwordPolicy.js. Kept in step
   // deliberately: a meter that says "Strong" about something the server
@@ -357,6 +361,33 @@
             </div>
 
             {#if isSignup}
+              <div class="field" class:is-error={errorField === 'activation_code'}>
+                <div class="field-label">
+                  <label for="activation_code">Activation code</label>
+                  <span class="field-hint">Optional</span>
+                </div>
+                <input
+                  class="input code-input"
+                  id="activation_code"
+                  name="activation_code"
+                  type="text"
+                  inputmode="latin"
+                  autocomplete="off"
+                  autocapitalize="characters"
+                  spellcheck="false"
+                  maxlength="20"
+                  placeholder="XXXX-XXXX-XXXX"
+                  aria-describedby="activation-help"
+                  value={activationCode}
+                  on:input={(e) => (activationCode = e.currentTarget.value)}
+                />
+                <p class="field-help" id="activation-help">
+                  Got a code from a review copy or a giveaway? Enter it here. The
+                  server folds case, dashes and spaces, so type it however it was
+                  written.
+                </p>
+              </div>
+
               <label class="consent" class:is-error={errorField === 'consent'}>
                 <input type="checkbox" name="consent" required />
                 <span class="consent-text">
@@ -829,6 +860,28 @@
 }
 .field-hint a { color: var(--amber); text-decoration: none; font-weight: 600; }
 .field-hint a:hover { text-decoration: underline; }
+
+.field-help {
+  margin: 6px 0 0;
+  font-size: clamp(0.72rem, 2.8cqi, 0.79rem);
+  line-height: 1.5;
+  color: var(--text-3);
+}
+
+/* Codes are read off a card and typed one character at a time, so they get the
+   mono face the rest of this site uses for numbers and labels. The letter
+   spacing is what stops XXXX-XXXX-XXXX reading as one long word. `uppercase` is
+   presentational only - the server normalizes independently, so a paste of
+   lowercase text still works if CSS never loads. */
+.code-input {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.code-input::placeholder {
+  letter-spacing: 0.12em;
+  text-transform: none;
+}
 
 .input-wrap { position: relative; display: flex; }
 .input {

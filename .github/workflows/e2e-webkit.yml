@@ -32,11 +32,27 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# ON SIZING. The first real run of this workflow (30756938289) was killed at the
+# 30 minute ceiling with 29m08s spent in the test step alone; setup took 62s, so
+# the run was never close to fitting. The arithmetic: one project is 181 tests
+# after the grep-invert, three projects in one job is 543, and
+# playwright.config.js pins `workers: 1` under CI, so all 543 ran serially. At 3s
+# a test that is ~27 minutes at a 100% pass rate, before `retries: 2` charges
+# three attempts for every failure. So the projects are sharded into a matrix
+# here rather than serialised into one job.
+
 jobs:
   webkit:
-    name: WebKit / mobile-safari / tablet
+    name: e2e ${{ matrix.project }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
+
+    strategy:
+      # One project going red must not cancel the other two. Partial coverage
+      # that reports which engine broke beats a run that cancels itself.
+      fail-fast: false
+      matrix:
+        project: [webkit, mobile-safari, tablet]
 
     steps:
       - uses: actions/checkout@v4
@@ -64,24 +80,32 @@ jobs:
           STRIPE_PRICE_ID_STANDARD: ${{ secrets.STRIPE_TEST_PRICE_ID }}
         run: |
           set -o pipefail
-          PROJECTS="--project=webkit --project=mobile-safari --project=tablet"
+          # --workers overrides the `workers: CI ? 1` pin in playwright.config.js
+          # for this run only. Editing the config would also change local runs,
+          # where the single worker is deliberate. ubuntu-latest gives 4 vCPU.
+          PROJECT="--project=${{ matrix.project }} --workers=4"
           if [ -z "${SUPABASE_URL}" ]; then
             echo "::notice title=Partial run::No SUPABASE_URL secret configured, so i-checkout-gate is excluded. Add test-mode secrets to cover the checkout path."
-            echo "- **i-checkout-gate excluded**: no test-mode secrets configured." >> "$GITHUB_STEP_SUMMARY"
-            npx playwright test $PROJECTS --grep-invert "early-access checkout email gate"
+            echo "- **${{ matrix.project }}**: i-checkout-gate excluded, no test-mode secrets configured." >> "$GITHUB_STEP_SUMMARY"
+            npx playwright test $PROJECT --grep-invert "early-access checkout email gate"
           else
-            echo "- Full WebKit run including checkout gate." >> "$GITHUB_STEP_SUMMARY"
-            npx playwright test $PROJECTS
+            echo "- **${{ matrix.project }}**: full run including checkout gate." >> "$GITHUB_STEP_SUMMARY"
+            npx playwright test $PROJECT
           fi
 
+      # always(), NOT !cancelled(). A job killed by timeout-minutes counts as
+      # cancelled, so the previous guard skipped the upload on precisely the run
+      # that most needed a report: 30756938289 timed out and left nothing to read.
+      #
       # if-no-files-found: ignore, because a clean pass writes no trace or video
       # (retention is failure-only) and a missing artifact must not turn a green
       # run red.
       - name: Upload report
-        if: ${{ !cancelled() }}
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-webkit-report
+          # Matrix jobs cannot share one artifact name.
+          name: playwright-report-${{ matrix.project }}
           path: |
             tests/reports/
             tests/results/

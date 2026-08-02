@@ -38,11 +38,16 @@ env:
   # guard: an accidental cutover and an accidental rollback both show up as a
   # mismatch against this line.
   #
-  # Cutover completed 2026-08-01. Evidence, rather than an assertion: charge
-  # ch_3TzowQCYoTMkQm811AnxPHY5 for $5.00 captured against a real card, session
-  # cs_live_a1d3bc... complete/paid, and fulfilled_sessions carrying that
-  # session_id with status=delivered, attempts=1, last_error=null. Advertised
-  # $5.00 equals charged $5.00, so there is no price drift to hide behind.
+  # Cutover completed 2026-08-01, verified against completed orders rather
+  # than asserted: real cards captured at $5.00, sessions complete/paid, and
+  # fulfilled_sessions rows reading status=delivered with attempts=1 and
+  # last_error=null. Advertised $5.00 equalled charged $5.00, so there was no
+  # price drift to hide behind.
+  #
+  # The Stripe object ids that evidenced this are deliberately NOT written
+  # here. This repository is public and charge, session and customer ids are
+  # customer-linked. Reconcile against the Stripe dashboard instead; an id
+  # pasted into a comment for one night's convenience outlives the night.
   #
   # From here a mismatch means production drifted OFF live, which is the silent
   # failure that cost ten days last time: the storefront still renders, still

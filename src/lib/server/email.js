@@ -5,6 +5,11 @@ import { supabaseAdmin } from '$lib/server/supabaseAdmin.js';
 // The confirmation email is a sales surface like any other, and it is the one a
 // customer keeps. It derives its offer claims from the same object the pages do.
 import { offer, offerItemLabel } from '$lib/offer.js';
+// The itemised file table is a MEASUREMENT of the archive, not a description of
+// it. A static import, so it bundles into the Worker with no filesystem read.
+// Regenerated only by scripts/build_bonus.py, and `sts.py bundle verify` is what
+// proves it still matches the zip customers actually receive.
+import bundleManifest from '$lib/data/bundleManifest.js';
 
 // Dynamic env so a missing key never breaks the build. If RESEND_API_KEY is
 // unset, every send becomes a logged no-op and signups still succeed.
@@ -75,6 +80,68 @@ function escapeHtml(str) {
 }
 
 /**
+ * Stripe reports most currencies in minor units (cents), but not all of them.
+ * Dividing by 100 unconditionally would print a 500 yen charge as 5.00 yen.
+ * This is the full Stripe zero-decimal set as of 2026-08.
+ */
+const ZERO_DECIMAL = new Set([
+  'bif', 'clp', 'djf', 'gnf', 'jpy', 'kmf', 'krw', 'mga',
+  'pyg', 'rwf', 'ugx', 'vnd', 'vuv', 'xaf', 'xof', 'xpf',
+]);
+
+/**
+ * What the customer was ACTUALLY charged, formatted, or null.
+ *
+ * DELIBERATELY NOT DERIVED FROM offer.priceCents, and this is the one place in
+ * this codebase where deriving from the offer object would be wrong. Checkout
+ * runs with allow_promotion_codes, so the advertised price and the charged
+ * amount legitimately differ, and a receipt that states the list price to
+ * someone who used a code is a false financial record.
+ *
+ * Returns null rather than a guess when Stripe gave us nothing. The caller then
+ * omits the row: a receipt with no amount line is incomplete, a receipt with an
+ * invented amount is wrong.
+ */
+function formatMoney(amountMinor, currency) {
+  if (!Number.isFinite(amountMinor) || !currency) return null;
+  const code = String(currency).toLowerCase();
+  const major = ZERO_DECIMAL.has(code) ? amountMinor : amountMinor / 100;
+  try {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: code.toUpperCase(),
+    }).format(major);
+  } catch {
+    // Unknown currency code, or an Intl build without it. Still better than
+    // dropping the amount entirely, since the number itself is the fact.
+    return `${major.toFixed(ZERO_DECIMAL.has(code) ? 0 : 2)} ${code.toUpperCase()}`;
+  }
+}
+
+function formatBytes(bytes) {
+  if (!Number.isFinite(bytes)) return '';
+  if (bytes >= 1024 * 1024) return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  if (bytes >= 1024) return `${Math.round(bytes / 1024)} KB`;
+  return `${bytes} B`;
+}
+
+/**
+ * Stripe hands out unix SECONDS. Rendered in UTC and labelled as such, because
+ * a date with no zone on a financial record is ambiguous by exactly the amount
+ * that matters at a month boundary.
+ */
+function formatOrderDate(unixSeconds) {
+  if (!Number.isFinite(unixSeconds)) return null;
+  try {
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
+    }).format(new Date(unixSeconds * 1000)) + ' UTC';
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Source-aware welcome copy. The checklist is delivered on-site (the email is
  * a confirmation + nudge back), so its copy differs from the book waitlist.
  */
@@ -129,23 +196,40 @@ if (!postalAddress) {
   );
 }
 
-function renderHtml({ heading, body, cta, unsubscribeUrl }) {
-  const footerUnsubscribe = unsubscribeUrl
+/**
+ * The legal footer, in ONE place.
+ *
+ * Extracted because sendDownloadEmail builds its own HTML rather than going
+ * through renderHtml, and so shipped without any postal address at all. That
+ * made the CAN-SPAM line absent from the single email every paying customer
+ * receives, which is the worst possible file to omit it from. A shared helper
+ * means the next hand-rolled email cannot quietly drop it either.
+ *
+ * `reason` states why this person is receiving mail, which has to be true of
+ * the specific send: a purchase receipt did not arrive because someone "signed
+ * up", and saying so on a transactional message is both wrong and confusing.
+ */
+function footerHtml({ unsubscribeUrl = null, reason = 'you signed up at survivingthesingularity.com' } = {}) {
+  const unsub = unsubscribeUrl
     ? `<a href="${unsubscribeUrl}" style="color:#475569;text-decoration:underline;">Unsubscribe</a>`
     : 'Reply to unsubscribe';
   // Rendered only when a real address is configured. An empty line is better
   // than a fabricated one.
-  const footerPostal = postalAddress
+  const postal = postalAddress
     ? `<p style="font-size:12px;color:#475569;margin:8px 0 0;">${escapeHtml(postalAddress)}</p>`
     : '';
+  return `<p style="font-size:12px;color:#475569;margin:36px 0 0;">You received this because ${reason}. ${unsub}.</p>
+    ${postal}`;
+}
+
+function renderHtml({ heading, body, cta, unsubscribeUrl }) {
   return `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${cta.url}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:12px 22px;border-radius:8px;">${cta.label}</a>
-    <p style="font-size:12px;color:#475569;margin:36px 0 0;">You received this because you signed up at survivingthesingularity.com. ${footerUnsubscribe}.</p>
-    ${footerPostal}
+    ${footerHtml({ unsubscribeUrl })}
   </div></body></html>`;
 }
 
@@ -377,7 +461,10 @@ export async function sendChecklistEmail({ to, answers }) {
  *
  * @param {{ to: string, sessionId: string, discount_code?: string|null }} args
  */
-export async function sendDownloadEmail({ to, sessionId, edition_type, copy_number, discount_code }) {
+export async function sendDownloadEmail({
+  to, sessionId, edition_type, copy_number, discount_code,
+  amountTotal = null, currency = null, paymentIntent = null, orderedAt = null,
+}) {
   if (!resend) {
     console.warn('[email] RESEND_API_KEY unset - skipping download email to', to);
     return { skipped: true };
@@ -445,12 +532,61 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
           </td>`
     : '';
 
+  // ── ORDER RECEIPT ─────────────────────────────────────────────────────────
+  // Each row is OMITTED when its fact is missing rather than filled with a
+  // plausible value. A receipt is a financial record: a missing line is a gap
+  // the customer can ask about, an invented line is a misstatement they cannot
+  // detect. The amount in particular never falls back to the list price, since
+  // promotion codes make the charged amount legitimately different.
+  const amountPaid = formatMoney(amountTotal, currency);
+  const orderDate = formatOrderDate(orderedAt);
+  const receiptRows = [
+    ['Order reference', sessionId],
+    orderDate ? ['Order date', orderDate] : null,
+    amountPaid ? ['Amount paid', amountPaid] : null,
+    paymentIntent ? ['Payment reference', paymentIntent] : null,
+  ]
+    .filter(Boolean)
+    .map(
+      ([k, v]) => `<tr>
+          <td style="padding:6px 12px 6px 0;font-size:12px;color:#64748b;white-space:nowrap;vertical-align:top;">${k}</td>
+          <td style="padding:6px 0;font-size:12px;color:#e2e8f0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all;">${escapeHtml(v)}</td>
+        </tr>`
+    )
+    .join('');
+
+  // ── WHAT IS IN THE ARCHIVE ────────────────────────────────────────────────
+  // Generated from bundleManifest, which scripts/build_bonus.py writes from the
+  // same staged file list it zips. So this table cannot describe a file the
+  // archive does not contain, and `sts.py bundle verify` fails if it drifts.
+  // The convenience copies are tagged as free rather than listed flat, so the
+  // list cannot read as though five dollars unlocked the book.
+  const fileRows = bundleManifest.files
+    .map((f) => {
+      // Keyed on `role`, which is the semantic field, with `also_free_at`
+      // supplying the location. The comment above the body copy promises this
+      // marking, so it reads the field that promise names.
+      const freeTag = f.role === 'convenience-copy' && f.also_free_at
+        ? `<span style="display:inline-block;font-size:10px;color:#6ee7b7;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);border-radius:4px;padding:1px 6px;margin-left:6px;white-space:nowrap;">free at ${escapeHtml(f.also_free_at.replace(/\/[^/]*$/, '') || '/downloads')}</span>`
+        : '';
+      return `<tr>
+          <td style="padding:7px 12px 7px 0;font-size:12px;color:#e2e8f0;line-height:1.5;border-top:1px solid rgba(148,163,184,0.12);">${escapeHtml(f.label)}${freeTag}</td>
+          <td style="padding:7px 0;font-size:11px;color:#64748b;text-align:right;white-space:nowrap;vertical-align:top;border-top:1px solid rgba(148,163,184,0.12);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">${escapeHtml(f.format.toUpperCase())} · ${formatBytes(f.bytes)}</td>
+        </tr>`;
+    })
+    .join('');
+
   const html = `<!doctype html><html><body style="margin:0;background:#020617;font-family:Inter,system-ui,sans-serif;color:#e2e8f0;">
   <div style="max-width:520px;margin:0 auto;padding:40px 24px;">
     <p style="font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;font-weight:700;margin:0 0 16px;">Surviving the Singularity</p>
     <h1 style="font-size:24px;color:#f1f5f9;margin:0 0 16px;">${heading}</h1>
     <p style="font-size:15px;line-height:1.7;color:#94a3b8;margin:0 0 28px;">${body}</p>
     <a href="${pageUrl}" style="display:inline-block;background:#f59e0b;color:#0f172a;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:8px;margin-bottom:24px;">Download The Precedent File</a>
+    <div style="background:rgba(148,163,184,0.04);border:1px solid rgba(148,163,184,0.15);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
+      <p style="font-size:12px;color:#64748b;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700;">In your archive</p>
+      <p style="font-size:12px;color:#64748b;margin:0 0 6px;">${bundleManifest.bundle.entries} files, ${formatBytes(bundleManifest.bundle.bytes)} zipped.</p>
+      <table role="presentation" style="width:100%;border-collapse:collapse;">${fileRows}</table>
+    </div>
     <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px 20px;margin-bottom:16px;">
       <p style="font-size:13px;color:#6ee7b7;font-weight:700;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.06em;">Your ${offerItemLabel('print-discount')}</p>
       <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;line-height:1.6;">${keepLine}</p>
@@ -471,7 +607,12 @@ export async function sendDownloadEmail({ to, sessionId, edition_type, copy_numb
       </p>
       <p style="font-size:13px;color:#94a3b8;margin:10px 0 0;line-height:1.7;border-top:1px solid rgba(245,158,11,0.12);padding-top:10px;">Book page password: <strong style="color:#f1f5f9;letter-spacing:0.02em;">${escapeHtml(BOOK_ACCESS_PASSWORD)}</strong></p>
     </div>
-    <p style="font-size:11px;color:#334155;margin:36px 0 0;">Order ref: ${sessionId.slice(0, 24)}... · survivingthesingularity.com · Reply to this email for support.</p>
+    <div style="border-top:1px solid rgba(148,163,184,0.15);margin-top:32px;padding-top:20px;">
+      <p style="font-size:12px;color:#64748b;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700;">Order receipt</p>
+      <table role="presentation" style="width:100%;border-collapse:collapse;">${receiptRows}</table>
+      <p style="font-size:11px;color:#334155;margin:14px 0 0;">Keep this for your records. Reply to this email for support.</p>
+    </div>
+    ${footerHtml({ reason: 'you bought early access at survivingthesingularity.com' })}
   </div></body></html>`;
 
   // The one email a paying customer must receive. Recorded so a bounce is

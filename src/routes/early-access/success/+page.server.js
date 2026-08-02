@@ -154,7 +154,19 @@ export async function load({ url, platform }) {
     // so `fulfilled` is only ever set by the call that actually delivered.
     // When the webhook won the race this returns `alreadyFulfilled` and the
     // flag is left for whichever worker did the work to set.
-    const fulfillment = fulfillPreorder({ sessionId, email: customerEmail, name: customerName, editionType })
+    // Payment facts threaded through for the confirmation email's receipt
+    // block, read off the `session` this load already fetched. The webhook
+    // passes the identical four, so whichever path wins the race sends the
+    // same receipt.
+    const fulfillment = fulfillPreorder({
+      sessionId, email: customerEmail, name: customerName, editionType,
+      amountTotal: session.amount_total ?? null,
+      currency: session.currency ?? null,
+      paymentIntent: typeof session.payment_intent === 'string'
+        ? session.payment_intent
+        : session.payment_intent?.id ?? null,
+      orderedAt: session.created ?? null,
+    })
       .then(async (result) => {
         await recordCheckoutCompleted({
           sessionId,

@@ -252,7 +252,20 @@ export async function POST({ request }) {
     }
 
     try {
-      const result = await fulfillPreorder({ sessionId: session.id, email, name, editionType });
+      // The payment facts ride along so the confirmation email can carry a real
+      // receipt. Same `session` object the ledger write above used, so this
+      // costs no extra Stripe round trip. `created` is the checkout session's
+      // own timestamp, which is the closest paid-at Stripe gives us without
+      // expanding the PaymentIntent.
+      const result = await fulfillPreorder({
+        sessionId: session.id, email, name, editionType,
+        amountTotal: session.amount_total ?? null,
+        currency: session.currency ?? null,
+        paymentIntent: typeof session.payment_intent === 'string'
+          ? session.payment_intent
+          : session.payment_intent?.id ?? null,
+        orderedAt: session.created ?? null,
+      });
       // Only claim fulfilment when this call actually delivered. `alreadyFulfilled`
       // means another worker owns it and will set the flag itself.
       if (result?.delivered) await markTransactionFulfilled(session.id);

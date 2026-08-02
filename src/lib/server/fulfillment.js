@@ -183,10 +183,22 @@ export async function getBundleUrl() {
 }
 
 /**
- * @param {{ sessionId: string, email: string, name?: string, editionType: 'standard'|'authors' }} args
+ * @param {{ sessionId: string, email: string, name?: string, editionType: 'standard'|'authors',
+ *          amountTotal?: number|null, currency?: string|null,
+ *          paymentIntent?: string|null, orderedAt?: number|null }} args
  * @returns {Promise<{ alreadyFulfilled: boolean, duplicate?: boolean, bundleUrl?: string|null, copyNumber?: number|null }>}
+ *
+ * The four payment fields are passed straight through to the confirmation
+ * email's receipt block and are not used for anything else here. They are
+ * OPTIONAL and default to null on purpose: both callers already hold the Stripe
+ * session, so nothing has to be fetched, but a caller that genuinely does not
+ * have them (a manual replay, a future admin resend) still gets a working
+ * email with the receipt rows it cannot fill simply absent.
  */
-export async function fulfillPreorder({ sessionId, email, name = '', editionType }) {
+export async function fulfillPreorder({
+  sessionId, email, name = '', editionType,
+  amountTotal = null, currency = null, paymentIntent = null, orderedAt = null,
+}) {
   const claimed = await claimSession(sessionId, email).catch((e) => {
     console.error('[fulfillment] claimSession threw:', e?.message ?? e);
     return false;
@@ -272,6 +284,7 @@ export async function fulfillPreorder({ sessionId, email, name = '', editionType
   // admin alert failing is our problem; the customer still got their bundle.
   const downloadPromise = sendDownloadEmail({
     to: email, sessionId, edition_type: editionType, copy_number: copyNumber, discount_code: discountCode,
+    amountTotal, currency, paymentIntent, orderedAt,
   }).catch((e) => {
     console.error('[fulfillment] download email threw:', e?.message ?? e);
     return { error: e?.message ?? String(e) };

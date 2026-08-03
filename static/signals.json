@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T14:39:19Z",
+  "generated_at": "2026-08-03T15:47:08Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -447,6 +447,32 @@
       ]
     },
     {
+      "id": "2607.29347",
+      "source": "arxiv",
+      "title": "SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery",
+      "url": "https://arxiv.org/abs/2607.29347",
+      "authors": [
+        "Jiamin Wu",
+        "Peishan Xiang",
+        "Jingyang Chen",
+        "Yuqing Zhu"
+      ],
+      "summary": "Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic plan",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-07-31",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomous",
+        "planning",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.22014",
       "source": "arxiv",
       "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
@@ -793,6 +819,31 @@
         "agent",
         "embodied",
         "rag"
+      ]
+    },
+    {
+      "id": "2607.28979",
+      "source": "arxiv",
+      "title": "Mixture-of-Translators: Translating KV Caches Across Heterogeneous Large Language Models",
+      "url": "https://arxiv.org/abs/2607.28979",
+      "authors": [
+        "Jin-woo Lee",
+        "Minkyung Song",
+        "Junghyun Oh",
+        "Seunghoon Han"
+      ],
+      "summary": "Heterogeneous Large Language Model (LLM) systems increasingly rely on shared contexts, retrieved evidence, and multi-agent dialogue histories, yet their internal key-value (KV) caches remain model-specific and cannot be reused across architectures. Consequently, each model must repeatedly prefill or store caches for the same context, limiting the scalability of multi-model reasoning and long-context generation. We propose Mixture-of-Translators(MoT), a cache translation framework that maps context KV caches from a source LLM into the cache space of a target LLM. Unlike prior approaches that de",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-07-31",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1191,6 +1242,57 @@
       ]
     },
     {
+      "id": "2607.29600",
+      "source": "arxiv",
+      "title": "HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation",
+      "url": "https://arxiv.org/abs/2607.29600",
+      "authors": [
+        "An Liu",
+        "Bingxi Liu",
+        "Hongyu Ding",
+        "Yixuan Jiang"
+      ],
+      "summary": "Vision-and-language navigation (VLN) enables robots to follow instructions in previously unseen environments. Recently, a training-free paradigm has emerged: the robot queries a multimodal LLM to understand its observations and plan the next action. However, long-horizon navigation based on either image streams or dense map inevitably introduces a growing memory and reasoning bottleneck. We present HAM-VLN, a decision-coupled, agent-authored memory that equips the robot with a persistent, depth-grounded world graph. In the same model call used to select the next action, HAM-VLN also records se",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-31",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "robot",
+        "llm"
+      ]
+    },
+    {
+      "id": "2607.29172",
+      "source": "arxiv",
+      "title": "CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning",
+      "url": "https://arxiv.org/abs/2607.29172",
+      "authors": [
+        "Yuxin Chen",
+        "Hari Srikanth",
+        "Nathan Jew",
+        "Menglin Wu"
+      ],
+      "summary": "While robot foundation models are growing increasingly capable, the strongest models are typically trained on proprietary data and remain closed-source, limiting downstream users' ability to adapt them to new tasks, embodiments, and deployment settings. Following the LLM community, an emerging access paradigm for closed-weight robot foundation models is the managed supervised fine-tuning (SFT) API, where users submit training data and receive a tuned policy without access to model weights, gradients, or training internals. While such APIs let downstream users leverage powerful proprietary foun",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-07-31",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "foundation model",
+        "humanoid",
+        "robot",
+        "robotics",
+        "llm",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.28146",
       "source": "arxiv",
       "title": "Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game",
@@ -1407,106 +1509,6 @@
         "agent",
         "multi-agent",
         "llm",
-        "language model",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2607.18102",
-      "source": "arxiv",
-      "title": "FinSAgent: Corpus-Aligned Multi-Agent RAG Framework for Evidence-Grounded SEC Filing Question Answering",
-      "url": "https://arxiv.org/abs/2607.18102",
-      "authors": [
-        "Jijun Chi",
-        "Zhenghan Tai",
-        "Hanwei Wu",
-        "Tung Sum Thomas Kwok"
-      ],
-      "summary": "Financial question answering over U.S. Securities and Exchange Commission (SEC) filings requires retrieving and synthesizing heterogeneous evidence dispersed across long, standardized, and highly redundant disclosures. Existing retrieval-augmented and multi-agent systems typically derive retrieval queries directly from the user's question and rank candidates by semantic similarity. Together, these choices create prior-corpus misalignment: a mismatch between model priors and the target filings' structure, terminology, and evidence standards. As a result, query generation misses corpus-specific ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-20",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "alignment",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.18548",
-      "source": "arxiv",
-      "title": "Engineering Trustworthy Agentic AI for Critical Systems",
-      "url": "https://arxiv.org/abs/2607.18548",
-      "authors": [
-        "Omar Al-Refai",
-        "Ibrahim Shahbaz",
-        "Adam Ali Husseinat",
-        "Michael Mandulak"
-      ],
-      "summary": "Agentic artificial intelligence systems, capable of autonomous perception, planning, tool use, and multi-step action, are increasingly proposed for critical engineering domains where decisions carry physical, operational, or economic consequences. This survey addresses a gap in current literature by treating trustworthiness, whether agentic behavior can be verified, audited, and trusted under the constraints that engineering practice actually requires, as a first-class engineering property, rather than evaluating agentic AI by task capability alone. The study adopts a trustworthiness model org",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-20",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "tool use",
-        "planning"
-      ]
-    },
-    {
-      "id": "2607.15674",
-      "source": "arxiv",
-      "title": "A Generative Partially Specified Finite State Machine Approach to Complex Behaviour Planning",
-      "url": "https://arxiv.org/abs/2607.15674",
-      "authors": [
-        "Kalana Ratnayake",
-        "Michael Pritchard",
-        "David Hinwood",
-        "Maleen Jayasuriya"
-      ],
-      "summary": "Autonomous robots operating in dynamic environments require behaviour planning systems that combine reactivity, interpretability, and adaptability. While Large Language Models have been successfully integrated with Behaviour Trees for dynamic replanning, Finite State Machines, despite their widespread adoption and computational efficiency, remain unexplored for generative approaches. We propose a Generative Partially Specified Finite State Machine (GPSFSM) neurosymbolic architecture that utilises the symbolic and semantic structure of FSMs, including states and event-triggered transitions, to ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-17",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "autonomous",
-        "planning",
-        "interpretability",
-        "interpret",
-        "robot",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.15253",
-      "source": "arxiv",
-      "title": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
-      "url": "https://arxiv.org/abs/2607.15253",
-      "authors": [
-        "Debayan Mukhopadhyay",
-        "Utshab Kumar Ghosh",
-        "Shubham Chatterjee"
-      ],
-      "summary": "Retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. The idea holds up when a document is read on its own. It breaks when a language model works as a search agent, issuing several queries and reasoning across turns, because a document can matter for what it lets the agent do next rather than for what it says about the current question.\n  We measure that gap rather than argue it. Using a ReAct style agent over HotpotQA, we replay 1000 development question",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-16",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
         "language model",
         "retrieval"
       ]

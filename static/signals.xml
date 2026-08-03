@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 02 Aug 2026 14:39:19 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 03 Aug 2026 15:47:08 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -127,6 +127,13 @@
       <description>Large language models (LLMs) demonstrate remarkable reasoning capabilities, yet their stateless architecture fundamentally limits deployment in long-horizon research workflows requiring multi-session continuity and quantitative rigor. Here we present Ensemble QSP, a multi-agent framework featuring a... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, reasoning, llm] Authors: Shivendra G. Tewari, Holly Kimko</description>
     </item>
     <item>
+      <title>SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery</title>
+      <link>https://arxiv.org/abs/2607.29347</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.29347</guid>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomo... [Score: 9.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Jiamin Wu, Peishan Xiang, et al.</description>
+    </item>
+    <item>
       <title>Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents</title>
       <link>https://arxiv.org/abs/2607.22014</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.22014</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.12630</guid>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
       <description>Visual Language Navigation (VLN) aims to enable an embodied agent to navigate complex environments by following natural language instructions. Recent approaches build semantic spatial maps and leverage Large Language Models (LLMs) for reasoning and decision making. Despite these advances, existing s... [Score: 8.5 | Flagged for: agent, reasoning, embodied, llm, language model] Authors: Jiho Hong, Eunae Kang, et al.</description>
-    </item>
-    <item>
-      <title>Meta-Learning Preferences for Multilingual LLM Alignment</title>
-      <link>https://arxiv.org/abs/2607.13315</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.13315</guid>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Unequal availability of human preference data across languages poses a significant challenge for aligning large language models in multilingual settings. To address the lack of sufficient data in low-resource language alignment, we propose a meta-learning framework for Reinforcement Learning from Hu... [Score: 8.5 | Flagged for: agi, alignment, llm, language model, rag] Authors: Jiaying Lin, Seongho Son, et al.</description>
     </item>
   </channel>
 </rss>

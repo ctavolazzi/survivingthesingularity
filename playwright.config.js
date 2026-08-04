@@ -137,7 +137,7 @@ export default defineConfig({
          construction; see the comment on the test itself. `npx vite build`
          rather than `npm run build`, because the npm script runs the
          downloads gate, which is deliberately red mid-cycle (see
-         V0.7.6-SCOPE.md) and would turn every e2e run red with it. */
+         V0.7.5.1-SCOPE.md) and would turn every e2e run red with it. */
       command: 'npx vite build --logLevel error && npx vite preview --port 4173',
       url: 'http://localhost:4173',
       reuseExistingServer: true,

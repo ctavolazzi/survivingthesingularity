@@ -1,7 +1,7 @@
 # R2 move plan for the book downloads
 
 **Status: PLAN ONLY.** Nothing here is executed. Written 2026-08-04 against the
-v0.7.6 open cycle; re-measure before acting on any number in it.
+v0.7.5.1 open cycle; re-measure before acting on any number in it.
 
 ## Why move
 

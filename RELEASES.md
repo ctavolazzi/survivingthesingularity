@@ -3,12 +3,12 @@
 Ledger of built book artifacts. `book.json` holds the version the source
 currently claims; this file records which build is the one to hand someone.
 
-**The source is ahead of the latest build again.** `book.json` reads `0.7.6` (the
-open cycle, see `V0.7.6-SCOPE.md`); the newest built artifact is v0.7.5 below and
+**The source is ahead of the latest build again.** `book.json` reads `0.7.5.1` (the
+open cycle, see `V0.7.5.1-SCOPE.md`); the newest built artifact is v0.7.5 below and
 it is what `static/downloads/` ships. The stable aliases
 (`/downloads/Surviving-the-Singularity.pdf` and `.epub`) resolve to v0.7.5. This
-is the normal state of an open cycle: do not quote v0.7.6 counts off this page,
-and do not tell a reader they are getting v0.7.6.
+is the normal state of an open cycle: do not quote v0.7.5.1 counts off this page,
+and do not tell a reader they are getting v0.7.5.1.
 
 ---
 

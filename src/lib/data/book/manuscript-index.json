@@ -1,6 +1,6 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.7.6",
+  "book_version": "0.7.5.1",
   "generated": "2026-08-03",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {

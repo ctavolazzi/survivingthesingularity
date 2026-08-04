@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Mon, 03 Aug 2026 15:47:08 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 04 Aug 2026 15:28:07 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -48,6 +48,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.15095</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement ... [Score: 11.0 | Flagged for: agent, multi-agent, alignment, rlhf, llm] Authors: Dylan Van Mulders, Matthias Bogaert, et al.</description>
+    </item>
+    <item>
+      <title>When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems</title>
+      <link>https://arxiv.org/abs/2608.00747</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.00747</guid>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Large language models are increasingly integrated into autonomous robotic systems for task planning and control, but this integration exposes them to prompt injection attacks that can lead to unsafe decisions and physical harm. Multi-agent settings increase the risks through cross-agent contaminatio... [Score: 10.0 | Flagged for: agent, multi-agent, autonomous, planning, robot] Authors: Neha Nagaraja, Amisha Bagari, et al.</description>
     </item>
     <item>
       <title>Embodied GPT-5.1: Evidence of a World Model?</title>
@@ -155,6 +162,27 @@
       <description>Large language models (LLMs) have demonstrated strong reasoning performance, but their tendency to hallucinate limits their reliability in knowledge-intensive tasks requiring up-to-date and grounded information. Combining knowledge graphs (KGs) with LLMs facilitates the use of explicit symbolic know... [Score: 9.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Nikit Srivastava, Daniel Vollmers, et al.</description>
     </item>
     <item>
+      <title>Cross-Domain Hybrid OPD for Generalizable Search Agents</title>
+      <link>https://arxiv.org/abs/2608.02101</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.02101</guid>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Recent advances in Reinforcement Learning (RL) have substantially improved the capabilities of autonomous search agents, enabling sophisticated planning, and iterative retrieval over dynamic information sources. However, optimizing language models for specialized search behaviors often incurs an ali... [Score: 8.5 | Flagged for: agent, autonomous, planning, alignment, language model] Authors: Hongzhan Chen, Xiaoyu Liu, et al.</description>
+    </item>
+    <item>
+      <title>Asking Questions the Right Way: A Multi-Agent Conversational System for Prompt Formulation in Complex Task Resolution</title>
+      <link>https://arxiv.org/abs/2608.01366</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.01366</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) are integral to complex intellectual tasks, yet output quality remains constrained by user-provided prompts. Iterative multi-turn prompting often leads to context degradation and diminishing cognitive returns. We present PAWNI (Prompt Architecture Wizard using Neural Int... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: B. Sankar, Pawni Yadav, et al.</description>
+    </item>
+    <item>
+      <title>Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures</title>
+      <link>https://arxiv.org/abs/2608.00718</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.00718</guid>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Multi-agent LLM pipelines orchestrate multiple specialized language model agents into structured workflows where intermediate outputs are passed across agents to solve complex tasks. This design introduces a security gap absent in single-agent settings: once an agent accepts adversarial content, it ... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Faisal Haque Bappy, Tahrim Hossain, et al.</description>
+    </item>
+    <item>
       <title>CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference</title>
       <link>https://arxiv.org/abs/2607.22511</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.22511</guid>
@@ -188,34 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.15257</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-ag... [Score: 8.5 | Flagged for: agi, agent, multi-agent, language model, rag] Authors: Yuyao Zhang, Junjie Gao, et al.</description>
-    </item>
-    <item>
-      <title>BadWAM: When World-Action Models Dream Right but Act Wrong</title>
-      <link>https://arxiv.org/abs/2607.15207</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.15207</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <description>World-action models (WAMs) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world prediction. This coupling is often viewed as a source of robustness, interpretability, and safety, ... [Score: 8.5 | Flagged for: agi, interpretability, interpret, embodied, robot] Authors: Qi Li, Xingyi Yang, et al.</description>
-    </item>
-    <item>
-      <title>The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce</title>
-      <link>https://arxiv.org/abs/2607.13998</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.13998</guid>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <description>The rapid proliferation of Agentic Artificial Intelligence fundamentally disrupts traditional customer loyalty paradigms. As AI evolves from passive recommendation algorithms to autonomous, goal-directed agents capable of executing purchasing decisions, the conventional understanding of consumer-bra... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, autonomous, autonomy] Authors: Sai Srikanth Madugula, Peplluis Esteva de la Rosa, et al.</description>
-    </item>
-    <item>
-      <title>Can Induced Emotion Bias LLM Behaviors in Sequential Decision Making?</title>
-      <link>https://arxiv.org/abs/2607.12631</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.12631</guid>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <description>As Large Language Models (LLMs) are increasingly deployed as autonomous agents in high-stakes domains, understanding contextual factors that may modulate their decision-making becomes critical. While LLMs are trained to perceive and resonate with users' emotions, it remains unclear whether induced e... [Score: 8.5 | Flagged for: agi, agent, autonomous, llm, language model] Authors: Minh Khoi Ho, Zihao Zhu, et al.</description>
-    </item>
-    <item>
-      <title>Instance-Enriched Semantic Maps for Visual Language Navigation</title>
-      <link>https://arxiv.org/abs/2607.12630</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.12630</guid>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Visual Language Navigation (VLN) aims to enable an embodied agent to navigate complex environments by following natural language instructions. Recent approaches build semantic spatial maps and leverage Large Language Models (LLMs) for reasoning and decision making. Despite these advances, existing s... [Score: 8.5 | Flagged for: agent, reasoning, embodied, llm, language model] Authors: Jiho Hong, Eunae Kang, et al.</description>
     </item>
   </channel>
 </rss>

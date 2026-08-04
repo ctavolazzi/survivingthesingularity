@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T15:47:08Z",
+  "generated_at": "2026-08-04T15:28:07Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -167,6 +167,32 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2608.00747",
+      "source": "arxiv",
+      "title": "When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems",
+      "url": "https://arxiv.org/abs/2608.00747",
+      "authors": [
+        "Neha Nagaraja",
+        "Amisha Bagari",
+        "Hayretdin Bahsi"
+      ],
+      "summary": "Large language models are increasingly integrated into autonomous robotic systems for task planning and control, but this integration exposes them to prompt injection attacks that can lead to unsafe decisions and physical harm. Multi-agent settings increase the risks through cross-agent contamination and broader attack surfaces. In this paper, we evaluate prompt injection attacks against an LLM-based multi-agent robotic system, considering both direct injections into task instructions and indirect injections through perception modules. In our experiments across varying attack-goal complexities",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-01",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "planning",
+        "robot",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -458,8 +484,8 @@
         "Yuqing Zhu"
       ],
       "summary": "Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic plan",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-07-31",
       "score": 9.0,
       "raw_score": 18,
@@ -546,6 +572,82 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2608.02101",
+      "source": "arxiv",
+      "title": "Cross-Domain Hybrid OPD for Generalizable Search Agents",
+      "url": "https://arxiv.org/abs/2608.02101",
+      "authors": [
+        "Hongzhan Chen",
+        "Xiaoyu Liu",
+        "Dengming Zhang",
+        "Minzhou Huang"
+      ],
+      "summary": "Recent advances in Reinforcement Learning (RL) have substantially improved the capabilities of autonomous search agents, enabling sophisticated planning, and iterative retrieval over dynamic information sources. However, optimizing language models for specialized search behaviors often incurs an alignment tax, where gains in search performance come at the expense of general-purpose capabilities, limiting their effectiveness as universal assistants. In this technical report, we present the training framework behind the Yuanbao search agent, designed to achieve search specialization without sacr",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-03",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "planning",
+        "alignment",
+        "language model",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "2608.01366",
+      "source": "arxiv",
+      "title": "Asking Questions the Right Way: A Multi-Agent Conversational System for Prompt Formulation in Complex Task Resolution",
+      "url": "https://arxiv.org/abs/2608.01366",
+      "authors": [
+        "B. Sankar",
+        "Pawni Yadav",
+        "Srinidhi Ranjini Girish",
+        "Amogh A. S"
+      ],
+      "summary": "Large language models (LLMs) are integral to complex intellectual tasks, yet output quality remains constrained by user-provided prompts. Iterative multi-turn prompting often leads to context degradation and diminishing cognitive returns. We present PAWNI (Prompt Architecture Wizard using Neural Intelligence), an agentic conversational interface of eight agents that transforms unstructured queries into structured prompts through guided question-and-answer dialogue informed by a self-evolving knowledge base. Rather than optimizing the models response, PAWNI optimizes the question itself by fron",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-02",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.00718",
+      "source": "arxiv",
+      "title": "Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures",
+      "url": "https://arxiv.org/abs/2608.00718",
+      "authors": [
+        "Faisal Haque Bappy",
+        "Tahrim Hossain",
+        "Tarannum Shaila Zaman",
+        "Raiful Hasan"
+      ],
+      "summary": "Multi-agent LLM pipelines orchestrate multiple specialized language model agents into structured workflows where intermediate outputs are passed across agents to solve complex tasks. This design introduces a security gap absent in single-agent settings: once an agent accepts adversarial content, it is propagated as trusted input throughout the pipeline. We argue that this vulnerability stems from the absence of boundary verification, a security primitive that enforces explicit validation of data as it crosses inter-agent boundaries, including content, identity, execution intent, and state inte",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-01",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -819,6 +921,79 @@
         "agent",
         "embodied",
         "rag"
+      ]
+    },
+    {
+      "id": "2608.02407",
+      "source": "arxiv",
+      "title": "Antares: Foundation Models for Agentic Vulnerability Localization",
+      "url": "https://arxiv.org/abs/2608.02407",
+      "authors": [
+        "Supriti Vijay",
+        "Aman Priyanshu",
+        "Didier Chapoteau",
+        "Arthur Goldblatt"
+      ],
+      "summary": "Vulnerability localization is a fundamental step in software security, requiring models to reason over large codebases and iteratively identify vulnerable implementations. We present Antares, a family of compact language models (350M, 1B, and 3B parameters) for agentic vulnerability localization. Based on IBM Granite base models, Antares is trained through a two-stage pipeline that combines supervised fine-tuning on cybersecurity reasoning and repository exploration data with reinforcement learning from verifiable rewards over vulnerable repositories. Across extensive evaluations, Antares-3B a",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-03",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "reasoning",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.02412",
+      "source": "arxiv",
+      "title": "Why Large Language Models Fail at Tabular Prediction",
+      "url": "https://arxiv.org/abs/2608.02412",
+      "authors": [
+        "Marta Garnelo",
+        "Wojciech M. Czarnecki"
+      ],
+      "summary": "Large language models (LLMs) have become the default tool for a remarkable range of tasks, yet they have had conspicuously little success at one of the most common machine learning workloads: predictive analytics over tabular data. This gap is the founding premise of the fast-growing field of tabular foundation models, but the question of why generic LLMs fail has remained open. We study a frontier LLM in its purest inference regime - a single generation pass over a prompt containing the full training and test data, with no tools, no agentic scaffolding, and no fine-tuning - and systematically",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-08-03",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.01558",
+      "source": "arxiv",
+      "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+      "url": "https://arxiv.org/abs/2608.01558",
+      "authors": [
+        "Alireza Lotfi",
+        "Subangkar Karmaker Shanto",
+        "Imtiaz Karim",
+        "Elisa Bertino"
+      ],
+      "summary": "Autonomous agents are increasingly used to execute consequential tasks in environments governed by operational constraints, organizational policies, regulatory requirements, and technical standards. Their safety is therefore determined not by the correctness of individual actions, but by whether their overall behavior remains consistent with the rules and invariants of the systems in which they operate. As large language model (LLM)-based agents become more autonomous and increasingly delegate tasks across organizational boundaries, securing them evolves from a single challenge into a broad an",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-03",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1242,6 +1417,56 @@
       ]
     },
     {
+      "id": "2608.02553",
+      "source": "arxiv",
+      "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+      "url": "https://arxiv.org/abs/2608.02553",
+      "authors": [
+        "Taye Akinrele",
+        "Sindhuja Penchala",
+        "Noorbakhsh Amiri Golilarz",
+        "Sudip Mittal"
+      ],
+      "summary": "Cognitive AI seeks to move beyond language generation and autonomous task execution toward systems capable of sustained reasoning, adaptive behavior, persistent memory, and self-regulation. While generative and agentic AI have demonstrated impressive capabilities across a wide range of tasks, many fundamental cognitive functions remain fragmented or weakly developed, limiting reliable operation over extended time horizons. This paper presents a taxonomy-driven survey of the major cognitive capability gaps that continue to constrain the development of Cognitive AI. The literature is organized a",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-03",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.01193",
+      "source": "arxiv",
+      "title": "Humans Are More Diverse: Frontier LLMs Show Extreme Policies in Idealised AI Development Races",
+      "url": "https://arxiv.org/abs/2608.01193",
+      "authors": [
+        "Phu Hoa Pham",
+        "Duy Minh Dao Sy",
+        "Trung Kiet Huynh",
+        "Phu Quy Nguyen Lam"
+      ],
+      "summary": "An AI development race creates a multi-agent safety dilemma. Each company can develop slowly and safely, or move faster while taking a risk that may remove its final reward. We use this repeated game to study strategic safety behaviour among large language model (LLM) agents in races with two to five players. However, a valid action does not show that an agent understands the game. We therefore place an audit gate before behavioural interpretation. We first verify the game engine, then test rule recall, state tracking, payoff calculation, and stability under different but equivalent task descr",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-02",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2607.29600",
       "source": "arxiv",
       "title": "HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation",
@@ -1290,227 +1515,6 @@
         "robotics",
         "llm",
         "rag"
-      ]
-    },
-    {
-      "id": "2607.28146",
-      "source": "arxiv",
-      "title": "Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game",
-      "url": "https://arxiv.org/abs/2607.28146",
-      "authors": [
-        "Niklas Bauer",
-        "Lars Benedikt Kaesberg",
-        "Akiko Aizawa",
-        "Jan Philip Wahle"
-      ],
-      "summary": "As large language models (LLMs) are deployed as agents in high-stakes settings, such as medical and legal systems, understanding their deceptive capabilities is fundamental to safety. Controlled social deduction games provide a reproducible proxy for isolating and evaluating these complex adversarial behaviors. We present the open-source benchmark framework ParliamentBench based on the game Secret Hitler to evaluate LLMs in scenarios that require deception, persuasion, and reasoning under information asymmetry. We evaluate 16 LLMs across 1,600 simulated matches playing each other, playing agai",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-30",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "deceptive",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.26998",
-      "source": "arxiv",
-      "title": "AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Penetration Agents",
-      "url": "https://arxiv.org/abs/2607.26998",
-      "authors": [
-        "Ruoyu Wang",
-        "Heng Zhao",
-        "Renjie Wu",
-        "Mengnan Zhao"
-      ],
-      "summary": "Large language model (LLM) agents automate penetration testing through an observation-action loop, selecting actions based on observations returned by tools. This dependence allows defenders to inject deceptive observations that can mislead the agent's decision-making process. However, existing defenses rely heavily on static, isolated artifacts planted in the environment prior to an attack. Advanced agents can progressively recognize and bypass these artifacts, ultimately refocusing their exploitation attempts on the real target. To address this issue, we introduce AgentSnare, a trajectory-ad",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-07-29",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "deceptive",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.24744",
-      "source": "arxiv",
-      "title": "Data Pyramid for Embodied Manipulation",
-      "url": "https://arxiv.org/abs/2607.24744",
-      "authors": [
-        "Yifan Ye",
-        "Yankai Fu",
-        "Yaoxu Lv",
-        "Bohan Hou"
-      ],
-      "summary": "Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions. These signals can be provided, to varying degrees, by multiple data sources. In this work, we organize the embodied data ecosystem as a \"pyramid\" spanning five complementary sources: real-robot data, UMI-style data, egocentric and exocentric data, simulation data, and general vision-language data. We organize the pyramid around the tension between scalability and robot alignment, and ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-27",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "alignment",
-        "embodied",
-        "robot"
-      ]
-    },
-    {
-      "id": "2607.23784",
-      "source": "arxiv",
-      "title": "A Few Words Go a Long Way: Language Guided Robot Policy Synthesis",
-      "url": "https://arxiv.org/abs/2607.23784",
-      "authors": [
-        "Daphne Chen",
-        "Archit Ritesh Jain",
-        "Eric Goossen",
-        "Emma Romig"
-      ],
-      "summary": "While vision-language-action models have demonstrated impressive zero-shot manipulation capabilities, they remain fundamentally black box policies that are difficult to interpret, adapt, or correct when they inevitably fail. In this work, we propose ARCHITECT, a framework that treats robot policy acquisition as an interactive program synthesis task. ARCHITECT leverages the reasoning capabilities of LLM coding agents to synthesize modular robot programs that utilize a suite of perception and control tools. Unlike end-to-end models where distribution shift leads to unpredictable, cascading failu",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-26",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "interpret",
-        "robot",
-        "llm",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.21936",
-      "source": "arxiv",
-      "title": "Leveraging External Knowledge for Historical Document Restoration via Retrieval-Augmented Large Language Models",
-      "url": "https://arxiv.org/abs/2607.21936",
-      "authors": [
-        "Gabeen Kim",
-        "Kyeongpil Kang"
-      ],
-      "summary": "Historical documents act as invaluable knowledge archives but often suffer from illegibility due to physical deterioration and damage. While existing restoration methods based on masked language modeling effectively utilize local context, they struggle to restore named entities that require external historical knowledge. To address this limitation, we introduce a novel framework for historical document restoration that leverages large language models with retrieval-augmented generation (RAG). By combining the implicit knowledge of pre-trained LLMs with explicitly retrieved external context, ou",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-24",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.21067",
-      "source": "arxiv",
-      "title": "PrefReward: Learning User Preference Matrix for Personalized Text Generation",
-      "url": "https://arxiv.org/abs/2607.21067",
-      "authors": [
-        "Yue Wu",
-        "Chengbing Wang",
-        "Yimeng Bai",
-        "Xiaoyan Zhao"
-      ],
-      "summary": "Large Language Models (LLMs) have demonstrated remarkable ability in generating personalized content by leveraging user histories and contextual cues. However, most existing personalization approaches rely on implicit representations within model parameters, making it difficult to interpret user-specific preferences or effectively handle long-context dependencies. To address these challenges, we propose PrefReward, a novel preference-aware generative framework that explicitly models user styles through a structured preference matrix and integrates it into the decoding process as a reward signa",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-23",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "interpret",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.19830",
-      "source": "arxiv",
-      "title": "VizRAG: Enhancing Retrieval-Augmented Generation with Hypergraph Visualization",
-      "url": "https://arxiv.org/abs/2607.19830",
-      "authors": [
-        "Yanbin Wei",
-        "Yang Chen",
-        "Renling Gan",
-        "Ziru Liu"
-      ],
-      "summary": "Hypergraph-based RAG systems surpass traditional graph-based approaches by organizing complex n-ary atomic facts among entities, rather than relying solely on binary relationships. Despite the advancements in multimodal large language models (MLLMs) with enhanced visual capabilities, current hypergraph-based RAG frameworks predominantly restrict knowledge retrieval and reconstruction to a unimodal, text-centric paradigm. This limitation prevents them from fully leveraging the powerful visual perception capabilities of modern MLLMs. To address this gap, we systematically explore the integration",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-22",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.19850",
-      "source": "arxiv",
-      "title": "SOPD-SocialNav: Selective On-Policy Distillation for Vision-Language Social Navigation",
-      "url": "https://arxiv.org/abs/2607.19850",
-      "authors": [
-        "Xinyu Zhang",
-        "Zishuo Wang",
-        "Ling Xiao"
-      ],
-      "summary": "Vision-language models have shown strong potential for social robot navigation by leveraging rich semantic understanding of complex environments and human behaviors. However, large scale VLMs are difficult to deploy on resource-constrained robotic platforms, while lightweight VLMs often lack sufficient social reasoning capability. To address this problem, we propose SOPD-SocialNav, a selective on-policy distillation (SOPD) method that transfers social navigation knowledge from a large teacher VLM to a lightweight student VLM. SOPD introduces an entropy-based token selection mechanism that uses",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-22",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "robot",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.18029",
-      "source": "arxiv",
-      "title": "Natural Language Access to Domain-Specific Metadata: A Reusable Framework for LLM Query Generation",
-      "url": "https://arxiv.org/abs/2607.18029",
-      "authors": [
-        "Blake G. Fitch",
-        "Cato Elia Kurtz"
-      ],
-      "summary": "Researchers need to answer ad-hoc questions about the contents of domain-specific archives but often lack the expertise to write structured queries on the metadata. We show that when domain vocabulary and semantics are captured in a well-designed Web Ontology Language (OWL) ontology, Large Language Models (LLMs) can generate accurate structured queries zero-shot, without fine-tuning, retrieval augmentation, or multi-agent orchestration. We present the Natural Language Knowledge Graph Query (NLKGQ) system, a framework and development process that enables natural language access to metadata in s",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-20",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "retrieval"
       ]
     }
   ]

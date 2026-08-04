@@ -1,4 +1,4 @@
-import { parseMarkdown } from '../src/lib/utils/markdownParser';
+import { parseMarkdown } from '../markdownParser';
 
 describe('parseMarkdown', () => {
   test('extracts title and date correctly', async () => {

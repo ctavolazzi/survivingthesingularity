@@ -3,9 +3,34 @@
 Ledger of built book artifacts. `book.json` holds the version the source
 currently claims; this file records which build is the one to hand someone.
 
+**The latest build matches the source.** `book.json` reads `0.7.5` and the v0.7.5
+build below is what `static/downloads/` ships. The stable aliases
+(`/downloads/Surviving-the-Singularity.pdf` and `.epub`) resolve to it.
+
 ---
 
-## Latest build: v0.7.4 — the canned music build
+## Latest build: v0.7.5 — the citation audit build
+
+| | |
+|---|---|
+| **Version** | `0.7.5` |
+| **Built** | 2026-08-03 21:14 |
+| **From commit** | `ffed5fc`, the head of the v0.7.5 cycle: the reading-rage plate and the measured plate builder (`build_book_plate.py`), the dead-file cleanup (`15b167c`), and the P-11/P-12/P-13 citation audit with its Appendix B corrections of record (sources 207-215) |
+| **Sections** | 30 |
+| **Pages** | 293 (v0.7.4 was 289) |
+| **Words** | 92,778 by the block index |
+| **Precedents** | 23, sixteen now verified against primary sources |
+| **Formats** | PDF 22.38 MiB · EPUB 21.14 MiB |
+
+**What changed from v0.7.4.** Precedent P-01 gained the reading-rage figure, and the
+figure-plate layout became a checked artifact instead of a convention held by eye.
+The citation audit cut two inherited claims (Bernays as "inventor of the phrase
+'public relations,'" the Trithemius monks-abandoned-copying line), replaced one
+unattested quote with the documented translation, and recorded the corrections in
+Appendix B. The research bundle zip still carries a v0.7.4 convenience copy of the
+book; it is versioned separately and rebuilds on its own pass.
+
+## Previous build: v0.7.4 — the canned music build
 
 | | |
 |---|---|

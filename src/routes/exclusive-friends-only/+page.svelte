@@ -6,10 +6,14 @@
   import { bookUnlocked } from '$lib/stores/bookAccess.js';
   import BookCover from '$lib/components/BookCover.svelte';
   import { offer } from '$lib/offer';
-  import { downloadHref } from '$lib/bookManifest.js';
+  import { downloadHref, releasedVersion } from '$lib/bookManifest.js';
 
-  const pdfHref = downloadHref(book.version, 'pdf');
-  const epubHref = downloadHref(book.version, 'epub');
+  // Downloads derive from the RELEASED build, never the open working version:
+  // mid-cycle those differ, and a version-derived href is the 404 this page
+  // shipped once already.
+  const released = releasedVersion(book);
+  const pdfHref = downloadHref(released, 'pdf');
+  const epubHref = downloadHref(released, 'epub');
 
   let password = '';
   let formError = '';
@@ -200,7 +204,7 @@
       <p class="section-label">It's also a file</p>
       <h2 class="read-title">Take the current draft with you.</h2>
       <p class="read-sub">
-        The same v{book.version} text you just read, as a file you own. Keep it, print it,
+        The latest built edition, v{released}, as a file you own. Keep it, print it,
         put it on an e-reader, send it to somebody. It's a draft, so it'll be replaced by a
         newer one, but this copy is yours.
       </p>

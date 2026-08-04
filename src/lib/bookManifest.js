@@ -32,6 +32,23 @@
 export const assetName = (version, ext) =>
   `Surviving-the-Singularity-v${version}.${ext}`;
 
+/**
+ * The version a reader can download RIGHT NOW.
+ *
+ * book.json carries two versions with two jobs. `version` is the open working
+ * label: it runs ahead of the newest build for the whole editing cycle, and
+ * nothing a reader touches may be derived from it. `released` is the newest
+ * PUBLISHED build, stamped by scripts/publish-book-downloads.mjs at version
+ * close, and is what every download href, redirect and downloads assertion
+ * derives from. Before `released` existed, hrefs derived from `version`, which
+ * made every mid-cycle build red at the downloads gate by construction and
+ * trained everyone to ignore the failure emails (2026-08-04, CT).
+ *
+ * Falls back to `version` when the field is absent, which is exactly the old
+ * behavior: a closed cycle where the working version IS the shipped one.
+ */
+export const releasedVersion = manifest => manifest.released || manifest.version;
+
 /** The one place a public download URL is built. */
 export const downloadHref = (version, ext) => `/downloads/${assetName(version, ext)}`;
 

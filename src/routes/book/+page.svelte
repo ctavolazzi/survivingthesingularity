@@ -4,9 +4,11 @@
   import { sectionsWithMeta, book } from '$lib/bookContent';
   import { bookPage } from '$lib/stores/bookPage';
   import BookCover from '$lib/components/BookCover.svelte';
-  import { downloadHref } from '$lib/bookManifest.js';
+  import { downloadHref, releasedVersion } from '$lib/bookManifest.js';
 
-  const pdfHref = downloadHref(book.version, 'pdf');
+  // Derived from the RELEASED build, not the open working version; mid-cycle
+  // those differ and only released's file exists.
+  const pdfHref = downloadHref(releasedVersion(book), 'pdf');
 
   let visible = false;
   let lastVisitedId = null;

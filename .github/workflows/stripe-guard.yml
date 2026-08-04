@@ -24,10 +24,12 @@ env:
   # guard: an accidental cutover and an accidental rollback both show up as a
   # mismatch against this line.
   #
-  # >>> FLIP THIS TO "live" AS PART OF THE RE-CUTOVER (STRIPE-GO-LIVE.md). <<<
-  # Flip it in the same commit that sets the live env vars, so the guard starts
-  # failing the moment production drifts back off live.
-  EXPECTED_MODE: test
+  # Flipped to "live" at the 2026-08-01 re-cutover (STRIPE-GO-LIVE.md) on main.
+  # This branch copy still said "test" until 2026-08-04, which would have
+  # silently reverted the guard's premise at merge and made it fail daily
+  # against a correctly-live store. If production is ever deliberately rolled
+  # back to test keys, flip this in the same commit.
+  EXPECTED_MODE: live
 
 jobs:
   probe:

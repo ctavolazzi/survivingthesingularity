@@ -117,8 +117,35 @@ for (const p of planned) {
 }
 
 if (dryRun) {
-  console.log(`publish-book-downloads: dry run, nothing written. v${version}.`);
+  console.log(`publish-book-downloads: dry run, nothing written. v${version} ` +
+    `(would also stamp "released": "${version}" into ${BOOK_JSON}).`);
   process.exit(0);
+}
+
+// ── Stamp the release ────────────────────────────────────────────────────────
+//
+// Publishing IS the moment `released` changes meaning: the files for this
+// version now exist, so every reader-facing href may derive from it. Stamped
+// here rather than by hand for the same reason this whole script exists - the
+// manual half of a two-part step is the half that gets skipped.
+//
+// A surgical string replace, not JSON.parse -> stringify: book.json is the
+// gated source of truth for the entire book and a reserialization would
+// rewrite every line of it to change one field.
+
+const bookJsonPath = join(ROOT, BOOK_JSON);
+const raw = readFileSync(bookJsonPath, 'utf8');
+const stamped = raw.replace(/"released":\s*"[^"]*"/, `"released": "${version}"`);
+if (stamped === raw && !raw.includes(`"released": "${version}"`)) {
+  console.error(
+    `\npublish-book-downloads: could not find a "released" field in ${BOOK_JSON} to stamp. ` +
+      `Add \"released\": \"${version}\" after \"version\" by hand, then re-run.\n`
+  );
+  process.exit(1);
+}
+if (stamped !== raw) {
+  writeFileSync(bookJsonPath, stamped);
+  console.log(`publish-book-downloads: stamped "released": "${version}" in ${BOOK_JSON}.`);
 }
 
 console.log(

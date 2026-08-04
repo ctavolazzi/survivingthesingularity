@@ -4,6 +4,7 @@
   // Nothing on this page states the offer in its own words. See src/lib/offer.js.
   import { offer, offerBlurb } from '$lib/offer';
   import { book } from '$lib/bookContent';
+  import { releasedVersion } from '$lib/bookManifest.js';
 
   let checkoutLoading = false;
   let checkoutError = '';
@@ -139,8 +140,11 @@
             <span class="ea-price-type">one-time preorder</span>
             <!-- Derived from src/lib/data/book/book.json, the same file /book and
                  /read already read. A reader who buys "the book as it is being
-                 written" should be able to see which version that is. -->
-            <span class="ea-price-version">You get v{book.version}, updated {book.lastUpdated}</span>
+                 written" should see the version they can DOWNLOAD today, which
+                 is the released build, not the open working label that runs
+                 ahead of it mid-cycle (RELEASES.md: never tell a reader they
+                 are getting the unbuilt version). -->
+            <span class="ea-price-version">You get v{releasedVersion(book)}, updated {book.lastUpdated}</span>
           </div>
         </div>
 

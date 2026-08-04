@@ -181,6 +181,63 @@
 
 213. Trithemius favors vellum over paper for long-term information storage - the durability passage in translation and the printing of De Laude Scriptorum - History of Information (Jeremy Norman), https://www.historyofinformation.com/detail.php?id=337
 214. Johannes Trithemius greatly expands his abbey library as a result of the development of printing - the growth of the Sponheim library from around forty volumes to some two thousand - History of Information (Jeremy Norman), https://www.historyofinformation.com/detail.php?id=346
-215. John Trithemius - the abbacy, the library's fame and composition, and its dispersal after his departure - Catholic Encyclopedia (1913), via Wikisource, https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/John_Trithemius
+215. John Trithemius - the abbacy, the library's fame and composition, and its dispersal after his departure - Catholic Encyclopedia (1913), via Wikisource, https://en.wikisource.org/wiki/Catholic_Encyclopedia_%281913%29/John_Trithemius
+
+## P-07 Primary Sources (added 2026-08-03)
+
+*A correction of record, in two parts. First, earlier drafts said Watt "invented" the unit. The horse-for-engine comparison predates him: Thomas Savery was already rating engines against teams of horses in The Miner's Friend (1702), and the boast was standard engine-sellers' language through the eighteenth century. What Watt did in the early 1780s was standardize the comparison into a number, thirty-three thousand foot-pounds per minute, and use it to price his engines against the animals they replaced; the text now says so. Second, earlier drafts gave "the horse population of the United States... peaking above twenty-five million in the 1910s." That figure belongs to horses and mules together, which peaked at about 26.5 million in 1915; horses alone peaked around 21.5 million. The text now names the combined herd and the year. The same species of error as P-09's Wellington and P-11's "inventor of the phrase": a vivid secondary-source shorthand absorbed with its imprecision intact.*
+
+216. Horsepower - Savery's 1702 comparison in The Miner's Friend, Watt's standardization of the unit at 33,000 foot-pounds per minute, and the marketing context - Encyclopaedia Britannica, https://www.britannica.com/science/horsepower
+217. Horse and Mule Population Statistics, from USDA data (Horses, Mules, and Motor Vehicles, 1840-1924, and successors) - the climb through 26.5 million in 1915 and the collapse after - Yale Energy History, https://energyhistory.yale.edu/horse-and-mule-population-statistics
+
+## P-08 Primary Sources (added 2026-08-03)
+
+*No correction was needed. The decline in health and stature across the agricultural transition is the standard bioarchaeological finding the text describes: shorter skeletons, worse teeth, new infectious disease, observed across regions and repeated in the systematic reviews.*
+
+218. Mark Nathan Cohen and George J. Armelagos, eds., Paleopathology at the Origins of Agriculture (1984) - the foundational volume; declining health observed in 19 of 21 societies crossing into farming - Discover Magazine summary, https://www.discovermagazine.com/early-farmers-were-sicker-and-shorter-than-their-forager-ancestors-944
+219. Amanda Mummert, Emily Esche, Joshua Robinson, and George J. Armelagos, "Stature and robusticity during the agricultural transition: Evidence from the bioarchaeological record," Economics and Human Biology 9:3 (2011) - the systematic review confirming the decline - PubMed, https://pubmed.ncbi.nlm.nih.gov/21507735/
+
+## P-15 Primary Sources (added 2026-08-03)
+
+*No correction was needed. Signed May 20, 1862, one year into the war; one hundred sixty acres to any head of household or adult who would live on the land and improve it for five years, citizens or immigrants who had filed their declaration of intention, women included.*
+
+220. Homestead Act (1862) - the signing date, the terms, and the eligibility language - National Archives, Milestone Documents, https://www.archives.gov/milestone-documents/homestead-act
+
+## P-16 Primary Sources (added 2026-08-03)
+
+*A correction of record, in two parts. First, earlier drafts said the kits "shipped as precut, numbered lumber" across the whole 1908 to 1942 run. Precut framing arrived in 1916, an innovation pioneered by the Aladdin Company and adopted by Sears; before that, the buyer cut the lumber to length, and the pre-1916 houses are catalog houses rather than kit houses in the strict sense. The text now dates it. Second, earlier drafts said the surviving houses were "frequently outperforming the contractor-built housing of the same era." No comparative record supports that claim, and it has been cut for what the record does support: the kits were framed in first-growth southern yellow pine with cypress siding on the better lines, a material grade the market no longer sells, and an estimated eighteen to twenty-two thousand are still standing.*
+
+221. Sears House Seeker, "What Is A Kit House?" - the pre-1916 houses shipped with uncut lumber; precut framing from 1916, pioneered by Aladdin - https://www.searshouseseeker.com/2021/01/sears-houses-in-st-louis-missouri.html
+222. Fine Homebuilding, "A History of Sears Homes: The Houses That Came in Kits" - the Honor Bilt grades, the first-growth southern yellow pine and cypress, and the eighteen to twenty-two thousand survival estimate - https://www.finehomebuilding.com/2026/07/21/when-sears-sold-houses
+
+## P-17 Primary Sources (added 2026-08-03)
+
+*One repair. Earlier drafts said the executives killed the catalog "with the catalog earning 'only' $3.3 billion," which reads as a profitable organ cut for being too small. The record is harsher on both sides: $3.3 billion in sales in its final year, and roughly $175 million in losses on printing and postage. The text now carries both, because the precedent's point, that Sears dismantled the fulfillment machine a year before Amazon was founded on the same playbook, does not need the loss hidden to stand. The other three headstones checked clean: Sasson's 1975 prototype (eight pounds, 0.01 megapixels, twenty-three seconds, the "that's cute" response in his own telling), the 1997 date for Sears' first e-commerce, Blockbuster passing on Netflix at fifty million dollars in 2000 with the laughter disputed and the outcome not, and Borders outsourcing its online store to Amazon from 2001 to 2008.*
+
+223. Steven Sasson's 1975 prototype and Kodak's response, in Sasson's own telling - with the nuance that Kodak did later enter digital, late and half-hearted - Snopes fact check, https://www.snopes.com/fact-check/kodak-digital-camera-invention/
+224. The last Sears Big Book, announced January 25, 1993 - "$3.3 billion in sales for the prior year, but inefficient business organization resulted in $175 million in losses" - DailyFinance, "The End of a Uniquely American Retail Era" (2013), via Internet Archive, https://web.archive.org/web/20240804015351/https://www.aol.com/news/2013-01-25-the-end-of-a-uniquely-american-retail-era.html
+225. Timeline: "Digital Sears" - the 1996 informational sears.com and the 1997 Craftsman e-commerce launch - Transformco press archive, https://transformco.com/press-releases/pr/1882
+226. Blockbuster's 2000 pass on acquiring Netflix for fifty million dollars - Variety, "Epic Fail: How Blockbuster Could Have Owned Netflix," https://variety.com/2013/biz/news/epic-fail-how-blockbuster-could-have-owned-netflix-1200823443/
+227. Borders Group - the 2001 Amazon outsourcing, the 2008 borders.com relaunch, and the 2011 liquidation - Wikipedia, https://en.wikipedia.org/wiki/Borders_Group
+
+## P-18 Primary Sources (added 2026-08-03)
+
+*No correction was needed. Film peaked in 2000, when it carried roughly sixty percent of Fujifilm's revenue and two-thirds of its profit, then collapsed about ninety percent in a decade; the redeployment of gelatin and collagen chemistry into cosmetics (Astalift, 2007), the entry into pharmaceuticals (Toyama Chemical, 2008), and the LCD polarizer films all check.*
+
+228. Fujifilm's diversification out of film - the 2000 peak, the collapse, Astalift, Toyama Chemical, and the LCD films - Nippon.com, "Fujifilm Finds New Life in Cosmetics," https://www.nippon.com/en/features/c00511/
+
+## P-19 Primary Sources (added 2026-08-03)
+
+*One repair, of attribution rather than substance. The twenty million gardens and the forty percent of fresh vegetables are the Department of Agriculture's own wartime figures, and historians suspect they were generous; the department also claimed forty-two percent of 1943 produce. The text now credits the count to the USDA instead of asserting it bare. "On the order of" stays, because even discounted, the scale is the point the precedent rests on.*
+
+229. Smithsonian Gardens, "Victory Gardens" - the twenty million gardens and the USDA production claims - https://gardens.si.edu/learn/for-educators/grown-from-the-past-a-short-history-of-community-gardening-in-the-united-states/victory-gardens/
+230. History.com, "America's Patriotic Victory Gardens" - the forty percent claim and the historians' caution that the wartime numbers may be exaggerated - https://www.history.com/articles/americas-patriotic-victory-gardens
+
+## P-21 Primary Sources (added 2026-08-03)
+
+*One repair. Earlier drafts said the catalog "sold welding rigs, geodesic dome mathematics, seed suppliers..." The catalog sold none of it directly: items ran as reviews with prices and supplier addresses, and its own statement of purpose called it "an evaluation and access device." The text now says listed, and gains the access-device line, which is the precedent's own mechanism stated in Brand's own words. The Jobs material checks against the Stanford text: "sort of like Google in paperback form, 35 years before Google came along," and stay hungry, stay foolish as the back-cover farewell of the final issue, passed to the graduates as his own.*
+
+231. Whole Earth Catalog, Fall 1968 - the purpose statement, the function paragraph ("an evaluation and access device"), and the listing format - Whole Earth Index, https://wholeearth.info/p/whole-earth-catalog-fall-1968
+232. Steve Jobs, Stanford Commencement Address (June 12, 2005) - the "Google in paperback form" description and the stay hungry, stay foolish farewell - Stanford News, https://news.stanford.edu/2005/06/14/jobs-061505/
 
 ---

@@ -18,6 +18,10 @@ Usage: go through sts.py, which is the documented surface.
 
   python3 scripts/sts.py bundle build            # build into manuscript/bonus/dist
   python3 scripts/sts.py bundle build --no-pdf   # skip the pandoc/xelatex step
+  python3 scripts/sts.py bundle build --book-version 0.7.5
+                                                 # mid-cycle: bundle the latest
+                                                 # PUBLISHED build, not book.json's
+                                                 # open version
   python3 scripts/sts.py bundle verify           # prove the manifest describes the zip
   python3 scripts/sts.py bundle upload --yes     # publish, after a local verify
 
@@ -518,8 +522,19 @@ def _ledger_count() -> tuple[int, int]:
     return len(nums), max(nums)
 
 
-def _book_meta() -> dict:
+def _book_meta(version_override: str | None = None) -> dict:
     meta = json.loads(BOOK_JSON.read_text(encoding="utf8"))
+    if version_override and version_override != meta["version"]:
+        # Mid-cycle rebuild: book.json names the OPEN version, whose artifacts
+        # do not exist yet, and the bundle carries the latest PUBLISHED build
+        # instead, named explicitly by the caller. book.json's lastUpdated
+        # describes the open source tree, not that build, so it must not be
+        # attached to it.
+        return {
+            "version": version_override,
+            "title": meta["title"],
+            "last_updated": None,
+        }
     return {
         "version": meta["version"],
         "title": meta["title"],
@@ -534,21 +549,28 @@ def _book_artifacts(version: str) -> dict:
     lives in src/lib/bookManifest.js and nowhere else. Globbing and asserting
     fails loudly on a rename; a copy of the rule would quietly build the wrong
     name, which is the failure this repo keeps legislating against.
+
+    static/downloads deliberately carries prior versions alongside the current
+    one (cce91d4 added v0.7.4 back for main's links; 90d9e1e added v0.7.5
+    beside it), so the assertion is "exactly one file OF THIS VERSION", not
+    "exactly one file". A version with no artifact still fails loudly.
     """
     out = {}
     for ext in ("pdf", "epub"):
         hits = sorted(DOWNLOADS.glob(f"Surviving-the-Singularity-v*.{ext}"))
-        if len(hits) != 1:
+        match = [h for h in hits if f"-v{version}." in h.name]
+        if len(match) > 1:
             raise SystemExit(
-                f"build_bonus: expected exactly one {ext} in {DOWNLOADS}, "
-                f"found {[h.name for h in hits]}. Run scripts/publish-book-downloads.mjs."
+                f"build_bonus: more than one {ext} for v{version} in {DOWNLOADS}: "
+                f"{[h.name for h in match]}."
             )
-        if f"-v{version}." not in hits[0].name:
+        if not match:
             raise SystemExit(
-                f"build_bonus: book.json says v{version} but {DOWNLOADS} holds "
-                f"{hits[0].name}. Rebuild the book before building the bundle."
+                f"build_bonus: no {ext} for v{version} in {DOWNLOADS}, found "
+                f"{[h.name for h in hits]}. Run scripts/publish-book-downloads.mjs, "
+                f"or name a published build with --book-version."
             )
-        out[ext] = hits[0]
+        out[ext] = match[0]
     return out
 
 
@@ -588,6 +610,15 @@ def _sha256(path: Path) -> str:
 def main() -> int:
     no_pdf = "--no-pdf" in sys.argv
 
+    book_version = None
+    if "--book-version" in sys.argv:
+        i = sys.argv.index("--book-version")
+        if i + 1 >= len(sys.argv) or sys.argv[i + 1].startswith("-"):
+            print("error: --book-version needs a value, e.g. --book-version 0.7.5",
+                  file=sys.stderr)
+            return 1
+        book_version = sys.argv[i + 1].lstrip("v")
+
     if not CASEBOOK.exists():
         print(f"error: {CASEBOOK} not found", file=sys.stderr)
         return 1
@@ -600,7 +631,10 @@ def main() -> int:
     counts = _count_cases(body)
     apoc_entries, apoc_debunked = _count_apocrypha(apocrypha)
     ledger_count, ledger_max = _ledger_count()
-    book = _book_meta()
+    book = _book_meta(book_version)
+    if book_version:
+        print(f"--book-version: bundling the PUBLISHED v{book['version']} book, "
+              f"not book.json's open version")
 
     counts["apocrypha_entries"] = apoc_entries
     counts["apocrypha_debunked"] = apoc_debunked

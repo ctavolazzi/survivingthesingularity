@@ -3781,6 +3781,8 @@ def cmd_bundle(args) -> int:
         cmd = [sys.executable, str(ROOT / "scripts" / "build_bonus.py")]
         if args.no_pdf:
             cmd.append("--no-pdf")
+        if args.book_version:
+            cmd += ["--book-version", args.book_version]
         return subprocess.run(cmd, cwd=ROOT).returncode
 
     if args.action == "upload":
@@ -5301,6 +5303,10 @@ def main():
     bb.add_argument("--no-pdf", action="store_true",
                     help="skip the pandoc/xelatex step. Produces a bundle with no "
                          "Precedent File PDF, so it does NOT write the site manifest")
+    bb.add_argument("--book-version", metavar="X.Y.Z",
+                    help="bundle this PUBLISHED build's book files instead of "
+                         "book.json's version. For mid-cycle rebuilds, when "
+                         "book.json is ahead of the latest published build")
     bv = bsub.add_parser("verify",
                          help="cross-check the site manifest, the build manifest and "
                               "the zip. Offline unless --remote")

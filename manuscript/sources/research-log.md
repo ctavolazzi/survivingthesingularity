@@ -476,3 +476,58 @@ Remaining: P-07, P-08, P-10, P-12, P-14, P-15, P-16, P-17, P-18, P-19 (contested
 far. The failures cluster in **numeric comparisons repeated from secondary sources**: P-09's Wellington,
 P-21's US dollar figure, and now P-19's page count. That is a narrow, predictable target for the
 remaining passes.
+
+## 2026-08-03. Citation audit: P-11 (Torches), P-12 (Bronze, re-check), P-13 (Abbot), current numbering
+
+**Numbering note.** The 2026-07-27 entries above use the pre-renumber scheme (22 precedents). The
+insertion of P-10 (The Robot in the Orchestra Pit) shifted everything after P-09 up by one: old P-11 =
+current P-12, old P-13 = current P-14, old P-19 = current P-20, old P-21 = current P-22, old P-22 =
+current P-23. Everything below uses current numbering (23 precedents).
+
+### P-11, Torches of Freedom. TWO REPAIRS AND A CUT, PASSES AFTER REPAIR.
+
+- **"The inventor of the phrase 'public relations'": CUT.** The phrase predates Bernays: Dorman B.
+  Eaton's 1882 Yale Law School address "The Public Relations and Duties of the Legal Profession," and
+  railway trade literature by 1897. Bernays coined the job title "counsel on public relations"
+  (Crystallizing Public Opinion, 1923). Replaced with "the future father of public relations," the
+  label his obituaries and the profession's histories attached to him. Same species as P-09's
+  Wellington: a vivid secondary-source epithet absorbed with its error intact.
+- **"Hired young women": now "recruited."** Roughly ten women brought in by telegram signed by Bernays'
+  secretary Bertha Hunt, presented as a women's rights advocate; press briefed in advance.
+- **"Half the American cigarette market": now "half the potential American cigarette market."**
+- **Murphree caveat recorded** (American Journalism 32:3, 2015): the staging is confirmed accurate, but
+  the story that the papers uniformly fell for it is Bernays' own retelling; some editors called it out.
+  Appendix B sources 207-211.
+
+### P-12, The Year the Bronze Stopped. PASSES (re-check).
+
+Confirms the 2026-07-27 pass (logged there as P-11 under the old numbering). Copper from Cyprus, tin
+from sources including modern Afghanistan, the interdependence cascade, writing lost in Greece for
+centuries: all check against Cline. The book itself added as Appendix B source 212.
+
+### P-13, The Abbot's Confession. ONE QUOTE REPLACED, ONE CLAIM CUT.
+
+- **The "quickly disappear" quote: REPLACED.** "The printed book is made of paper and, like paper, will
+  quickly disappear" circulates widely but could not be traced past modern retellings. Replaced with the
+  documented translation: parchment a thousand years, paper two hundred.
+- **"His own monks quietly abandoned perpetual copying as pointless": CUT.** Inverts the record.
+  Trithemius kept exhorting his monks to copy, writing that a monk who cited printing as a reason to
+  stop was concealing his own sloth. Replaced with the documented fact: the Sponheim library grew from
+  around forty volumes to some two thousand, heavy with printed books, while De Laude Scriptorum went
+  to the press in 1494. Appendix B sources 213-215.
+- HISTORY-CASEBOOK.md entries F7 and C2 corrected to match, with pointers to the Appendix B blocks.
+
+### Verified elsewhere, confirmed landed
+
+The old-P-21 (current P-22) US precision fix recommended on 2026-07-27 is in the text: chapter 18 line
+127 now reads "about a hundred billion in the United States alone."
+
+### Running status (current numbering, 23 precedents)
+
+Verified: P-01 through P-06, P-09, P-10, P-11, P-12, P-13, P-14, P-20, P-22, P-23. **Sixteen of 23.**
+Remaining: P-07, P-08, P-15, P-16, P-17, P-18, P-19, P-21 (Access to Tools).
+
+**Pattern still holding:** the failures cluster in comparisons, superlative epithets, and vivid quotes
+inherited from secondary retellings (P-09's Wellington, P-20's page count, P-22's US figure, P-11's
+"inventor of the phrase," P-13's "quickly disappear"). First-claims verified against primary sources
+keep surviving. The remaining eight passes should keep hunting exactly that species.

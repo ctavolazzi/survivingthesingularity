@@ -159,4 +159,28 @@
 205. Jack Valenti, testimony on home recording of copyrighted works ("the VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone") - Hearings before the Subcommittee on Courts, Civil Liberties and the Administration of Justice, House Committee on the Judiciary, 1982 - transcript, https://cryptome.org/hrcw-hear.htm
 206. Home Taping Is Killing Music - the BPI campaign launched October 28, 1981, and the blank-tape levy that Britain never enacted - Wikipedia, https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music
 
+## P-11 Primary Sources (added 2026-08-03)
+
+*A correction of record. Earlier drafts of this precedent called Edward Bernays "the inventor of the phrase 'public relations.'" That epithet has been cut. The phrase predates him: Dorman B. Eaton addressed the Yale Law School on "The Public Relations and Duties of the Legal Profession" in 1882, before Bernays was born, and the term appears in railroad trade literature by 1897. What Bernays coined was the job title "counsel on public relations," in Crystallizing Public Opinion (1923); the label the text now uses, the future father of public relations, is the one his obituaries and the profession's own histories attached to him. Two smaller repairs from the same check: the marchers were recruited, not hired. Roughly ten women were brought in through a telegram signed by Bernays' secretary Bertha Hunt, presented as a women's rights advocate, and the press was briefed in advance. Read the march's press success alongside Murphree's 2015 finding: the staging was real, but the story that the papers uniformly fell for it is Bernays' own retelling, and some editors called it out as a publicity stunt at the time.*
+
+207. History of public relations - Dorman B. Eaton's 1882 Yale address "The Public Relations and Duties of the Legal Profession" and the 1897 railway-literature usage, the phrase in print decades before Bernays' career - Wikipedia, https://en.wikipedia.org/wiki/History_of_public_relations
+208. Edward Bernays, Crystallizing Public Opinion (1923) - the book that coined "counsel on public relations" - Wikipedia, https://en.wikipedia.org/wiki/Crystallizing_Public_Opinion
+209. Edward Bernays - the "father of public relations" label and the first professional public relations counsel role - Britannica, https://www.britannica.com/biography/Edward-Bernays
+210. Vanessa Murphree, "Edward Bernays's 1929 'Torches of Freedom' March: Myths and Historical Significance," American Journalism 32:3 (2015) - confirms the staging was carefully arranged, debunks the uniform press credulity as a Bernays-driven myth - Taylor and Francis, https://www.tandfonline.com/doi/abs/10.1080/08821127.2015.1064681
+211. Torches of Freedom Campaign - the recruitment telegram signed by Bertha Hunt and the advance press briefing - University of Ottawa digital history exhibit, https://omeka.uottawa.ca/jmccutcheon/exhibits/show/american-women-in-tobacco-adve/torches-of-freedom-campaign
+
+## P-12 Primary Sources (added 2026-08-03)
+
+*No correction was needed. The precedent's claims (copper from Cyprus, tin crossing well over a thousand miles from sources including modern Afghanistan, the interlocking palace network, the cascade of drought, migration, war and severed trade, the loss of writing in Greece for centuries, and the survival of less specialized communities) check against Cline, whose account the precedent already followed. The entry below adds the book itself to the ledger; source 147 is the encyclopedia article about it.*
+
+212. Eric H. Cline, 1177 B.C.: The Year Civilization Collapsed (Princeton University Press, 2014; revised edition 2021) - the systems-collapse account behind this precedent, including the Afghan tin route and the interdependence argument - Princeton University Press, https://press.princeton.edu/books/paperback/9780691208015/1177-bc
+
+## P-13 Primary Sources (added 2026-08-03)
+
+*A correction of record, in two parts. First, earlier drafts quoted Trithemius as writing "The printed book is made of paper and, like paper, will quickly disappear." That sentence circulates widely but could not be traced past modern retellings, so it has been replaced with the passage as documented in translation: parchment lasting a thousand years against paper's two hundred. Second, earlier drafts stated that his own monks "quietly abandoned perpetual copying as pointless." The record shows nearly the opposite. Trithemius kept exhorting his monks to copy, writing that a monk who pointed to printing as a reason to stop was concealing his own sloth. What is documented, and what the text now says, is that his library at Sponheim grew from around forty volumes to some two thousand, famous in his lifetime and heavy with printed books, while De Laude Scriptorum itself went to the press in 1494.*
+
+213. Trithemius favors vellum over paper for long-term information storage - the durability passage in translation and the printing of De Laude Scriptorum - History of Information (Jeremy Norman), https://www.historyofinformation.com/detail.php?id=337
+214. Johannes Trithemius greatly expands his abbey library as a result of the development of printing - the growth of the Sponheim library from around forty volumes to some two thousand - History of Information (Jeremy Norman), https://www.historyofinformation.com/detail.php?id=346
+215. John Trithemius - the abbacy, the library's fame and composition, and its dispersal after his departure - Catholic Encyclopedia (1913), via Wikisource, https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/John_Trithemius
+
 ---

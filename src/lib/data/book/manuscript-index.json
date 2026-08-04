@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.7.4",
-  "generated": "2026-07-31",
+  "book_version": "0.7.5",
+  "generated": "2026-08-03",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2065,
-    "words": 91954
+    "blocks": 2076,
+    "words": 92778
   },
   "sections": [
     {
@@ -473,8 +473,8 @@
       "id": "preface",
       "title": "Preface: Welcome to the Weirdness",
       "file": "01-preface.md",
-      "next_ordinal": 36,
-      "words": 1170,
+      "next_ordinal": 38,
+      "words": 1219,
       "tombstones": [],
       "blocks": [
         {
@@ -801,11 +801,35 @@
           "preview": "The printing economy had made books cheap enough for ordinary people, and circulating libr"
         },
         {
-          "id": "sts.preface.b0030",
-          "type": "paragraph",
+          "id": "sts.preface.b0036",
+          "type": "figure",
           "lines": [
             67,
             67
+          ],
+          "words": 25,
+          "hash": "2b52dda5b51c",
+          "preview": "![A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more ",
+          "image": "/book-images/preface-reading-rage.png",
+          "art_id": "sts.plate.novel-reader"
+        },
+        {
+          "id": "sts.preface.b0037",
+          "type": "caption",
+          "lines": [
+            69,
+            69
+          ],
+          "words": 24,
+          "hash": "7c7532db9360",
+          "preview": "*The epidemic, as the doctors saw it. Two hundred years later we hand this exact picture t"
+        },
+        {
+          "id": "sts.preface.b0030",
+          "type": "paragraph",
+          "lines": [
+            71,
+            71
           ],
           "words": 46,
           "hash": "85595f3ca523",
@@ -815,8 +839,8 @@
           "id": "sts.preface.b0031",
           "type": "paragraph",
           "lines": [
-            69,
-            69
+            73,
+            73
           ],
           "words": 48,
           "hash": "6213013e8b9b",
@@ -826,8 +850,8 @@
           "id": "sts.preface.b0032",
           "type": "paragraph",
           "lines": [
-            71,
-            71
+            75,
+            75
           ],
           "words": 45,
           "hash": "b5a8e3416bd0",
@@ -837,8 +861,8 @@
           "id": "sts.preface.b0033",
           "type": "paragraph",
           "lines": [
-            73,
-            73
+            77,
+            77
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -848,8 +872,8 @@
           "id": "sts.preface.b0034",
           "type": "list",
           "lines": [
-            75,
-            77
+            79,
+            81
           ],
           "words": 150,
           "hash": "0aa5e4dd8492",
@@ -859,8 +883,8 @@
           "id": "sts.preface.b0035",
           "type": "hr",
           "lines": [
-            79,
-            79
+            83,
+            83
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -9826,8 +9850,8 @@
             352
           ],
           "words": 47,
-          "hash": "55a2cfebfe7e",
-          "preview": "In 1929 it was scandalous for a woman to smoke in public, which meant half the American ci"
+          "hash": "d6b9249e3e73",
+          "preview": "In 1929 it was scandalous for a woman to smoke in public, which meant half the potential A"
         },
         {
           "id": "sts.chapter8.b0182",
@@ -9837,8 +9861,8 @@
             354
           ],
           "words": 95,
-          "hash": "ab350ae4f390",
-          "preview": "Bernays did not buy advertisements arguing that women should smoke. He hired young women t"
+          "hash": "800b93c05a16",
+          "preview": "Bernays did not buy advertisements arguing that women should smoke. He recruited young wom"
         },
         {
           "id": "sts.chapter8.b0183",
@@ -11457,7 +11481,7 @@
       "title": "Chapter 10: The \"Create Over Consume\" Protocol",
       "file": "12-chapter10.md",
       "next_ordinal": 118,
-      "words": 3661,
+      "words": 3694,
       "tombstones": [],
       "blocks": [
         {
@@ -12700,8 +12724,8 @@
             235,
             235
           ],
-          "words": 52,
-          "hash": "b3538410d4d8",
+          "words": 75,
+          "hash": "144ff3f699f4",
           "preview": "Forty years after Gutenberg, the abbot Johannes Trithemius wrote *De Laude Scriptorum*, \"I"
         },
         {
@@ -12722,9 +12746,9 @@
             239,
             239
           ],
-          "words": 52,
-          "hash": "b6850ba25b56",
-          "preview": "His own monastery's library, meanwhile, filled up with printed volumes, and his own monks "
+          "words": 62,
+          "hash": "2126512fe844",
+          "preview": "His own monastery's library, meanwhile, grew from around forty volumes to some two thousan"
         },
         {
           "id": "sts.chapter10.b0114",
@@ -22376,8 +22400,8 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
-      "next_ordinal": 28,
-      "words": 5499,
+      "next_ordinal": 37,
+      "words": 6241,
       "tombstones": [],
       "blocks": [
         {
@@ -22678,11 +22702,113 @@
           "preview": "197. American Federation of Musicians, \"Taking Liberties With Folks' Habits\" (advertisemen"
         },
         {
-          "id": "sts.appendix-b.b0011",
-          "type": "hr",
+          "id": "sts.appendix-b.b0028",
+          "type": "heading",
           "lines": [
             162,
             162
+          ],
+          "words": 5,
+          "hash": "467ce6cfe9f0",
+          "preview": "## P-11 Primary Sources (added 2026-08-03)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0029",
+          "type": "paragraph",
+          "lines": [
+            164,
+            164
+          ],
+          "words": 184,
+          "hash": "a5eeea2126b0",
+          "preview": "*A correction of record. Earlier drafts of this precedent called Edward Bernays \"the inven"
+        },
+        {
+          "id": "sts.appendix-b.b0030",
+          "type": "list",
+          "lines": [
+            166,
+            170
+          ],
+          "words": 166,
+          "hash": "0ada4e5cfeac",
+          "preview": "207. History of public relations - Dorman B. Eaton's 1882 Yale address \"The Public Relatio"
+        },
+        {
+          "id": "sts.appendix-b.b0031",
+          "type": "heading",
+          "lines": [
+            172,
+            172
+          ],
+          "words": 5,
+          "hash": "32e259f58c77",
+          "preview": "## P-12 Primary Sources (added 2026-08-03)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0032",
+          "type": "paragraph",
+          "lines": [
+            174,
+            174
+          ],
+          "words": 77,
+          "hash": "d5ec7d1f0211",
+          "preview": "*No correction was needed. The precedent's claims (copper from Cyprus, tin crossing well o"
+        },
+        {
+          "id": "sts.appendix-b.b0033",
+          "type": "list",
+          "lines": [
+            176,
+            176
+          ],
+          "words": 44,
+          "hash": "c73e149da26f",
+          "preview": "212. Eric H. Cline, 1177 B.C.: The Year Civilization Collapsed (Princeton University Press"
+        },
+        {
+          "id": "sts.appendix-b.b0034",
+          "type": "heading",
+          "lines": [
+            178,
+            178
+          ],
+          "words": 5,
+          "hash": "8a43f88c3013",
+          "preview": "## P-13 Primary Sources (added 2026-08-03)",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0035",
+          "type": "paragraph",
+          "lines": [
+            180,
+            180
+          ],
+          "words": 149,
+          "hash": "77e6974862a5",
+          "preview": "*A correction of record, in two parts. First, earlier drafts quoted Trithemius as writing "
+        },
+        {
+          "id": "sts.appendix-b.b0036",
+          "type": "list",
+          "lines": [
+            182,
+            184
+          ],
+          "words": 107,
+          "hash": "e75bbdd66b80",
+          "preview": "213. Trithemius favors vellum over paper for long-term information storage - the durabilit"
+        },
+        {
+          "id": "sts.appendix-b.b0011",
+          "type": "hr",
+          "lines": [
+            186,
+            186
           ],
           "words": 0,
           "hash": "ebad27de99a8",

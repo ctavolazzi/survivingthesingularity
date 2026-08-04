@@ -197,10 +197,14 @@ Sources: [Locomotive Acts — Wikipedia](https://en.wikipedia.org/wiki/Locomotiv
 
 **Story:** Forty years after Gutenberg, Abbot Johannes Trithemius wrote *De Laude Scriptorum* —
 an impassioned defense of hand-copying manuscripts against the vulgar new printing press,
-arguing the scribe's work was devotional and the printed book impermanent ("the printed book is
-made of paper and, like paper, will quickly disappear"). To spread his argument efficiently,
-**he had it printed.** His own monks found perpetual copying pointless; his own library filled
-with printed books he called a "marvelous" art.
+arguing the scribe's work was devotional and the printed book impermanent ("The word written on
+parchment will last a thousand years. The printed word is on paper. How long will it last? The
+most you can expect a book of paper to survive is two hundred years."). To spread his argument
+efficiently, **he had it printed** (1494). His Sponheim library, meanwhile, grew from around
+forty volumes to some two thousand, heavy with products of the press he called a "marvelous" art.
+(Corrected 2026-08-03: the old "quickly disappear" quote could not be traced past retellings, and
+the claim that his monks abandoned copying inverts the record; he kept exhorting them to copy.
+See Appendix B, P-13 Primary Sources.)
 
 **Mechanism:** The defense of the old craft was sincere *and* the defender used the new machine
 the moment reach mattered. Bodies vote with the tool.
@@ -500,9 +504,11 @@ Sources: [Luddite — Wikipedia](https://en.wikipedia.org/wiki/Luddite) · [Fram
 ### F7. Torches of freedom (New York, 1929) — P-11
 
 **Story:** In 1929 it was taboo for women to smoke in public — half the cigarette market,
-locked. So the American Tobacco Company hired Edward Bernays, Freud's nephew, who hired
+locked. So the American Tobacco Company hired Edward Bernays, Freud's nephew, who recruited
 young women to march in the Easter Sunday parade and, on cue, light cigarettes for the
-photographers he had also arranged. He fed the press the phrase "torches of freedom."
+photographers he had also arranged. (Corrected 2026-08-03: "recruited," not "hired"; and
+Bernays was not "the inventor of the phrase public relations." See Appendix B, P-11 Primary
+Sources, including the Murphree 2015 caveat on how the press actually covered it.) He fed the press the phrase "torches of freedom."
 Emancipation itself was retooled into a nicotine delivery vector. It worked; the taboo
 cracked; the market opened. The women in the parade experienced it as liberation. It was
 inventory expansion.

@@ -232,11 +232,11 @@ Grab your boots and your welding helmet. It is time to get your hands dirty.
 
 ## Precedent P-13: The Abbot's Confession (Sponheim, 1492)
 
-Forty years after Gutenberg, the abbot Johannes Trithemius wrote *De Laude Scriptorum*, "In Praise of Scribes," the era's most eloquent attack on the printing press. The scribe's hand-copying was devotional, he argued; the printed book was vulgar and impermanent. "The printed book is made of paper and, like paper, will quickly disappear."
+Forty years after Gutenberg, the abbot Johannes Trithemius wrote *De Laude Scriptorum*, "In Praise of Scribes," the era's most eloquent attack on the printing press. The scribe's hand-copying was devotional, he argued; the printed book was vulgar and impermanent. "The word written on parchment will last a thousand years. The printed word is on paper. How long will it last? The most you can expect a book of paper to survive is two hundred years."
 
 Then he wanted people to actually read his argument. So he had it printed.
 
-His own monastery's library, meanwhile, filled up with printed volumes, and his own monks quietly abandoned perpetual copying as pointless. Trithemius was not a hypocrite, exactly. He was something more instructive: a sincere man whose body made a different decision than his pen. The moment reach mattered, he reached for the machine.
+His own monastery's library, meanwhile, grew from around forty volumes to some two thousand, made famous in his own lifetime largely by the products of the presses he had attacked. Trithemius was not a hypocrite, exactly. He was something more instructive: a sincere man whose body made a different decision than his pen. The moment reach mattered, he reached for the machine.
 
 **The mechanism.** Watch what critics of the new machine do, not what they write. They will publish the old world's eulogy on the new world's presses, every time, because the tool's advantage is real even to the people whose identity requires denying it. The sincerity of the critique and the adoption of the tool are not in conflict. They are the standard sequence.
 

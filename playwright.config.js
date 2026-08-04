@@ -117,16 +117,32 @@ export default defineConfig({
     },
   ].filter((p) => webkitAvailable || !WEBKIT_PROJECTS.has(p.name)),
 
-  webServer: EXTERNAL_BASE_URL ? undefined : {
-    /* Must pass the port explicitly. Without it vite picks 5173, finds the
-       squatter, and silently increments to some other port that baseURL above
-       is not pointing at. */
-    command: 'npm run dev -- --port 5174',
-    url: 'http://localhost:5174',
-    /* Kept true so a dev server you already have on 5174 is reused rather than
-       fought over. That is safe here in a way it was not on 5173, because 5174
-       is not occupied by a foreign process. */
-    reuseExistingServer: true,
-    timeout: 30000,
-  },
+  webServer: EXTERNAL_BASE_URL ? undefined : [
+    {
+      /* Must pass the port explicitly. Without it vite picks 5173, finds the
+         squatter, and silently increments to some other port that baseURL above
+         is not pointing at. */
+      command: 'npm run dev -- --port 5174',
+      url: 'http://localhost:5174',
+      /* Kept true so a dev server you already have on 5174 is reused rather than
+         fought over. That is safe here in a way it was not on 5173, because 5174
+         is not occupied by a foreign process. */
+      reuseExistingServer: true,
+      timeout: 30000,
+    },
+    {
+      /* The production build, for the tests that measure what a visitor
+         actually downloads (c-speed's page-weight budget). The dev server
+         above ships ~2.5MB of scaffolding that made that budget unmeetable by
+         construction; see the comment on the test itself. `npx vite build`
+         rather than `npm run build`, because the npm script runs the
+         downloads gate, which is deliberately red mid-cycle (see
+         V0.7.6-SCOPE.md) and would turn every e2e run red with it. */
+      command: 'npx vite build --logLevel error && npx vite preview --port 4173',
+      url: 'http://localhost:4173',
+      reuseExistingServer: true,
+      /* The build itself takes a couple of minutes on CI hardware. */
+      timeout: 300000,
+    },
+  ],
 });

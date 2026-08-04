@@ -123,9 +123,18 @@ test.describe('Device Compliance', () => {
   });
 
   test('Navbar is visible on all screen sizes', async ({ page }) => {
+    /* ONE load, then resize. The previous shape re-goto'd '/' once per
+       viewport, and on WebKit touch profiles the second same-URL goto raced
+       the first page's still-settling load into "Navigation to / is
+       interrupted by another navigation to /" - the same masked-timeout
+       artifact documented at the top of this file, failing mobile-safari on
+       every retry (run 30922307065). Navbar visibility across sizes is a CSS
+       media-query property; it holds or breaks on a live resize without a
+       reload, which is also what a real device rotation does. */
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+
     for (const viewport of VIEWPORTS) {
       await page.setViewportSize({ width: viewport.width, height: viewport.height });
-      await page.goto('/');
 
       const nav = page.locator('nav').first();
       await expect(nav).toBeVisible();

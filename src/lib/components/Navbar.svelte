@@ -621,7 +621,9 @@
   @media (max-width: 959px) {
     .nav-pill { padding: 5px 5px 5px 12px; gap: 2px; }
     .nav-sep { display: none; }
-    .nav-cta { font-size: 0.82rem; padding: 5px 5px 5px 11px; }
+    /* 7px vertical keeps the pill at 38px, over the 36px minimum tap target
+       the e2e mobile-design spec enforces. 5px measured 34.6px on Pixel 5. */
+    .nav-cta { font-size: 0.82rem; padding: 7px 5px 7px 11px; }
     .nav-cta-icon { width: 20px; height: 20px; }
   }
 

@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import BookCover from '$lib/components/BookCover.svelte';
+  import LiteYouTube from '$lib/components/LiteYouTube.svelte';
   // No offer prose is typed into this file. See src/lib/offer.js.
   import { offer } from '$lib/offer';
 
@@ -154,12 +155,7 @@
 
       <div class="hero-video-wrap reveal">
         <div class="hero-video-ratio">
-          <iframe
-            src="https://www.youtube.com/embed/YZH1csMhnDo"
-            title="BotQ: Figure ramping F.03 production"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <LiteYouTube videoId="YZH1csMhnDo" title="BotQ: Figure ramping F.03 production" />
         </div>
       </div>
 
@@ -374,13 +370,7 @@
     </div>
     <div class="video-wrap reveal reveal-d1">
       <div class="video-ratio">
-        <iframe
-          src="https://www.youtube.com/embed/uNkADHZStDE"
-          title="FarmBot: open-source automated food production"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
+        <LiteYouTube videoId="uNkADHZStDE" title="FarmBot: open-source automated food production" />
       </div>
     </div>
   </section>
@@ -479,12 +469,7 @@
     </div>
     <div class="video-wrap reveal">
       <div class="video-ratio">
-        <iframe
-          src="https://www.youtube.com/embed/6K_bGH54ltI"
-          title="AI capabilities: Surviving the Singularity"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <LiteYouTube videoId="6K_bGH54ltI" title="AI capabilities: Surviving the Singularity" />
       </div>
     </div>
   </section>

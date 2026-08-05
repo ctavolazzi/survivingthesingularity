@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T15:28:07Z",
+  "generated_at": "2026-08-05T15:19:34Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -167,6 +167,32 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2608.03502",
+      "source": "arxiv",
+      "title": "Hybrid LLM-Augmented Reinforcement Learning Agents for Complex Sequential Decision Tasks",
+      "url": "https://arxiv.org/abs/2608.03502",
+      "authors": [
+        "Christophe D. Hounwanou",
+        "John Emeka Eze",
+        "Yaé Ulrich Gaba"
+      ],
+      "summary": "Large Language Models (LLMs) have recently shown strong capabilities in reasoning, planning, and tool-use, enabling new forms of autonomous agents. However, LLM-based agents struggle with long-horizon sequential decision tasks that require precise action optimization and environment interaction. Reinforcement Learning (RL), while effective for sequential control, often lacks the high-level abstraction and task decomposition abilities needed for complex scenarios. This paper introduces an LLM-Augmented Reinforcement Learning Agent that integrates LLM-driven planning with RL-based action optimiz",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-04",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "tool-use",
+        "planning",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -575,6 +601,31 @@
       ]
     },
     {
+      "id": "2608.03387",
+      "source": "arxiv",
+      "title": "RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation",
+      "url": "https://arxiv.org/abs/2608.03387",
+      "authors": [
+        "Shuliang He",
+        "Shuai Wang",
+        "Bo Yue",
+        "Junchi Teng"
+      ],
+      "summary": "Humanoid robots have the potential to perform dexterous manipulation in human environments, yet acquiring diverse and generalizable skills remains costly due to expensive hardware data collection and labor-intensive annotation. Recent advances in video generative models provide a promising opportunity to synthesize rich manipulation experiences from visual observations, but transferring such imagined behaviors into executable whole-body humanoid skills remains largely unexplored. In this work, we present RoboReact, a framework that automatically synthesizes whole-body humanoid manipulation ski",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-04",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "humanoid",
+        "robot"
+      ]
+    },
+    {
       "id": "2608.02101",
       "source": "arxiv",
       "title": "Cross-Domain Hybrid OPD for Generalizable Search Agents",
@@ -611,7 +662,7 @@
         "Srinidhi Ranjini Girish",
         "Amogh A. S"
       ],
-      "summary": "Large language models (LLMs) are integral to complex intellectual tasks, yet output quality remains constrained by user-provided prompts. Iterative multi-turn prompting often leads to context degradation and diminishing cognitive returns. We present PAWNI (Prompt Architecture Wizard using Neural Intelligence), an agentic conversational interface of eight agents that transforms unstructured queries into structured prompts through guided question-and-answer dialogue informed by a self-evolving knowledge base. Rather than optimizing the models response, PAWNI optimizes the question itself by fron",
+      "summary": "Large language models (LLMs) are integral to complex intellectual tasks, yet output quality remains constrained by user-provided prompts. Iterative multi-turn prompting often leads to context degradation and diminishing cognitive returns. We present PAWNI (Prompt Architecture Wizard using Neural Intelligence), an agentic conversational interface of eight agents that transforms unstructured queries into structured prompts through guided question-and-answer dialogue informed by a self-evolving knowledge base. Rather than optimising the model's response, PAWNI optimises the question itself by fro",
       "category": "cs.MA",
       "tag": "Agents",
       "published_at": "2026-08-02",
@@ -921,6 +972,31 @@
         "agent",
         "embodied",
         "rag"
+      ]
+    },
+    {
+      "id": "2608.03648",
+      "source": "arxiv",
+      "title": "Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate",
+      "url": "https://arxiv.org/abs/2608.03648",
+      "authors": [
+        "Hao Wu",
+        "Shoucheng Song",
+        "Chang Yao",
+        "Haoyu Wang"
+      ],
+      "summary": "Multi-Agent Debate (MAD) improves the reasoning performance of Large Language Models (LLMs) through multi-round interaction. However, LLMs in MAD are highly susceptible to blind conformity. Existing individual evaluation methods, typically based on confidence or perplexity, fail to reflect the correctness of reasoning and may even exacerbate blind conformity. To address this, we shift the perspective from individual evaluation to group interaction. We define mutual referencing among LLMs as \\textbf{Debate Relationships} and recognize that regulating these relationships is the key to mitigating",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-04",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1417,103 +1493,27 @@
       ]
     },
     {
-      "id": "2608.02553",
+      "id": "2608.03494",
       "source": "arxiv",
-      "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
-      "url": "https://arxiv.org/abs/2608.02553",
+      "title": "Beyond Initialization Loss: A Systematic Study of Token Embedding Initialization Strategies for LLM Vocabulary Extension",
+      "url": "https://arxiv.org/abs/2608.03494",
       "authors": [
-        "Taye Akinrele",
-        "Sindhuja Penchala",
-        "Noorbakhsh Amiri Golilarz",
-        "Sudip Mittal"
+        "Raviraj Joshi",
+        "Utkarsh Vaidya",
+        "Sanjay Singh Chauhan",
+        "Niranjan Wartikar"
       ],
-      "summary": "Cognitive AI seeks to move beyond language generation and autonomous task execution toward systems capable of sustained reasoning, adaptive behavior, persistent memory, and self-regulation. While generative and agentic AI have demonstrated impressive capabilities across a wide range of tasks, many fundamental cognitive functions remain fragmented or weakly developed, limiting reliable operation over extended time horizons. This paper presents a taxonomy-driven survey of the major cognitive capability gaps that continue to constrain the development of Cognitive AI. The literature is organized a",
-      "category": "cs.AI",
+      "summary": "Vocabulary extension is an efficient way to adapt pretrained large language models (LLMs) to new languages, but the initialization of newly added token embeddings can strongly affect continued pre-training (CPT) efficiency. We present a systematic study of more than 20 initialization strategies for Hindi vocabulary extension in Nemotron-3-Nano-30B-A3B. Our comparison spans vocabulary-averaging baselines; external and learned initialization methods, including FOCUS, top-k semantic retrieval, and residual MLP mappings; subword composition; norm calibration; and input-output asymmetry. We find th",
+      "category": "cs.CL",
       "tag": "Research",
-      "published_at": "2026-08-03",
+      "published_at": "2026-08-04",
       "score": 7.5,
       "raw_score": 15,
       "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "reasoning",
-        "rag"
-      ]
-    },
-    {
-      "id": "2608.01193",
-      "source": "arxiv",
-      "title": "Humans Are More Diverse: Frontier LLMs Show Extreme Policies in Idealised AI Development Races",
-      "url": "https://arxiv.org/abs/2608.01193",
-      "authors": [
-        "Phu Hoa Pham",
-        "Duy Minh Dao Sy",
-        "Trung Kiet Huynh",
-        "Phu Quy Nguyen Lam"
-      ],
-      "summary": "An AI development race creates a multi-agent safety dilemma. Each company can develop slowly and safely, or move faster while taking a risk that may remove its final reward. We use this repeated game to study strategic safety behaviour among large language model (LLM) agents in races with two to five players. However, a valid action does not show that an agent understands the game. We therefore place an audit gate before behavioural interpretation. We first verify the game engine, then test rule recall, state tracking, payoff calculation, and stability under different but equivalent task descr",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-02",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "interpret",
+        "agi",
         "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.29600",
-      "source": "arxiv",
-      "title": "HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation",
-      "url": "https://arxiv.org/abs/2607.29600",
-      "authors": [
-        "An Liu",
-        "Bingxi Liu",
-        "Hongyu Ding",
-        "Yixuan Jiang"
-      ],
-      "summary": "Vision-and-language navigation (VLN) enables robots to follow instructions in previously unseen environments. Recently, a training-free paradigm has emerged: the robot queries a multimodal LLM to understand its observations and plan the next action. However, long-horizon navigation based on either image streams or dense map inevitably introduces a growing memory and reasoning bottleneck. We present HAM-VLN, a decision-coupled, agent-authored memory that equips the robot with a persistent, depth-grounded world graph. In the same model call used to select the next action, HAM-VLN also records se",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-31",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "robot",
-        "llm"
-      ]
-    },
-    {
-      "id": "2607.29172",
-      "source": "arxiv",
-      "title": "CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning",
-      "url": "https://arxiv.org/abs/2607.29172",
-      "authors": [
-        "Yuxin Chen",
-        "Hari Srikanth",
-        "Nathan Jew",
-        "Menglin Wu"
-      ],
-      "summary": "While robot foundation models are growing increasingly capable, the strongest models are typically trained on proprietary data and remain closed-source, limiting downstream users' ability to adapt them to new tasks, embodiments, and deployment settings. Following the LLM community, an emerging access paradigm for closed-weight robot foundation models is the managed supervised fine-tuning (SFT) API, where users submit training data and receive a tuned policy without access to model weights, gradients, or training internals. While such APIs let downstream users leverage powerful proprietary foun",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-31",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "foundation model",
-        "humanoid",
-        "robot",
-        "robotics",
-        "llm",
+        "language model",
+        "retrieval",
         "rag"
       ]
     }

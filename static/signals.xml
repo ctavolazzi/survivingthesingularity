@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Wed, 05 Aug 2026 15:19:34 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 06 Aug 2026 15:18:59 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -57,6 +57,13 @@
       <description>Large Language Models (LLMs) have recently shown strong capabilities in reasoning, planning, and tool-use, enabling new forms of autonomous agents. However, LLM-based agents struggle with long-horizon sequential decision tasks that require precise action optimization and environment interaction. Rei... [Score: 10.0 | Flagged for: agent, autonomous, tool-use, planning, reasoning] Authors: Christophe D. Hounwanou, John Emeka Eze, et al.</description>
     </item>
     <item>
+      <title>CURATE: Leveraging LLM Agents to Compose, Catalog, and Deploy Reproducible Workflows</title>
+      <link>https://arxiv.org/abs/2608.04270</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.04270</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Agentic code generation has shown promise in automating and accelerating software development by utilizing Large Language Models (LLMs) to generate, test, and deploy code. For engineers and scientists, such systems have the potential to accelerate the development of applied and scientific workflows ... [Score: 10.0 | Flagged for: agi, agent, agentic, llm, language model] Authors: Nolan Cutler, Chia-Chen Kuo, et al.</description>
+    </item>
+    <item>
       <title>When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems</title>
       <link>https://arxiv.org/abs/2608.00747</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.00747</guid>
@@ -97,6 +104,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.14512</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <description>Multi-step retrosynthesis planning seeks to decompose a target molecule into commercially available building blocks through a sequence of feasible reactions. The vast combinatorial search space makes this task challenging even for expert chemists. Traditional methods combine tree search with offline... [Score: 10.0 | Flagged for: agent, agentic, planning, reasoning, llm] Authors: Yanqiao Zhu, Jingru Gan, et al.</description>
+    </item>
+    <item>
+      <title>Structured LLM Reasoning for Zero-Shot Human--Robot Coordination Under Hidden Goals</title>
+      <link>https://arxiv.org/abs/2608.04309</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.04309</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <description>We present a structured large-language-model (LLM) architecture for zero-shot human--robot coordination in a cooperative construction task with private goal views. Guided by a Dec-POMDP formulation, the architecture decomposes decision-making into (i) action-conditioned Theory-of-Mind (ToM) inferenc... [Score: 9.5 | Flagged for: agent, multi-agent, planning, reasoning, interpret] Authors: Dong Hae Mangalindan, Anand Gokhale, et al.</description>
     </item>
     <item>
       <title>A Self-Calibrating Agentic AI Framework for Autonomous Edge Resource Allocation</title>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.22511</guid>
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
       <description>Automating theoretical research is constrained not only by the generation of candidate results, but also by their reliable evaluation. A common approach is to close the research loop with a large language model (LLM) reviewer. However, such reviewers remain empirically unreliable: they may accept fa... [Score: 8.5 | Flagged for: self-improving, agent, agentic, llm, language model] Authors: Jiyuan Tan, Vasilis Syrgkanis</description>
-    </item>
-    <item>
-      <title>GS-Agent: Creating 4D Physical Worlds With Generative Simulation</title>
-      <link>https://arxiv.org/abs/2607.21522</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.21522</guid>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generat... [Score: 8.5 | Flagged for: agi, foundation model, agent, agentic, rag] Authors: Hongxin Zhang, Chunru Lin, et al.</description>
-    </item>
-    <item>
-      <title>PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning</title>
-      <link>https://arxiv.org/abs/2607.20064</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.20064</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Long-horizon tasks require sustained perception, reasoning, and exploration, and are a persistent challenge for large language model (LLM) agents. This gap is reflected in their limited performance on continual learning benchmarks such as ARC-AGI-3, especially when models are evaluated out of the bo... [Score: 8.5 | Flagged for: agi, agent, reasoning, llm, language model] Authors: Alexis Fox, Junlin Wang, et al.</description>
     </item>
   </channel>
 </rss>

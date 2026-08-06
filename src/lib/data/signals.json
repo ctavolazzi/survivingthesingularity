@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T15:19:34Z",
+  "generated_at": "2026-08-06T15:18:59Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -196,6 +196,32 @@
       ]
     },
     {
+      "id": "2608.04270",
+      "source": "arxiv",
+      "title": "CURATE: Leveraging LLM Agents to Compose, Catalog, and Deploy Reproducible Workflows",
+      "url": "https://arxiv.org/abs/2608.04270",
+      "authors": [
+        "Nolan Cutler",
+        "Chia-Chen Kuo",
+        "Nanda Velugoti",
+        "Kathryn Newhart"
+      ],
+      "summary": "Agentic code generation has shown promise in automating and accelerating software development by utilizing Large Language Models (LLMs) to generate, test, and deploy code. For engineers and scientists, such systems have the potential to accelerate the development of applied and scientific workflows while reducing barriers to entry in domains that have yet to fully realize their benefits. However, a key gap remains: existing coding agents primarily focus on code generation and do not address the entire workflow lifecycle, including deployment and sharing. As a result, users develop and stitch m",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-04",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.00747",
       "source": "arxiv",
       "title": "When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems",
@@ -345,6 +371,33 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2608.04309",
+      "source": "arxiv",
+      "title": "Structured LLM Reasoning for Zero-Shot Human--Robot Coordination Under Hidden Goals",
+      "url": "https://arxiv.org/abs/2608.04309",
+      "authors": [
+        "Dong Hae Mangalindan",
+        "Anand Gokhale",
+        "Francesco Bullo",
+        "Vaibhav Srivastava"
+      ],
+      "summary": "We present a structured large-language-model (LLM) architecture for zero-shot human--robot coordination in a cooperative construction task with private goal views. Guided by a Dec-POMDP formulation, the architecture decomposes decision-making into (i) action-conditioned Theory-of-Mind (ToM) inference, (ii) hierarchical planning, (iii) conversation interpretation, (iv) action verification, and (v) feedback-based replanning. We compare the proposed method with an ablation without ToM inference and a multi-agent reinforcement-learning policy trained offline over many goal pairs. In human-particip",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-05",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "planning",
+        "reasoning",
+        "interpret",
+        "robot",
+        "llm"
       ]
     },
     {
@@ -975,6 +1028,56 @@
       ]
     },
     {
+      "id": "2608.04317",
+      "source": "arxiv",
+      "title": "Trident : How to Break Deep Reinforcement Learning Cyber Defenses (Agentic)",
+      "url": "https://arxiv.org/abs/2608.04317",
+      "authors": [
+        "Ryozo Masukawa",
+        "Ian Bryant",
+        "Armita Kazeminajafabadi",
+        "Sanggeon Yun"
+      ],
+      "summary": "Autonomous cyber defense systems based on Deep Reinforcement Learning (DRL) have attracted significant research attention, yet remain evaluated almost exclusively against static, heuristic red agents, leaving their robustness against adaptive threats critically understudied. Meanwhile, recent advances in Reinforcement Learning with Verifiable Rewards (RLVR) have improved LLM reasoning, but their integration into cybersecurity remains elusive due to the absence of suitable benchmark environments and interaction datasets. To bridge this gap, we introduce Trident, an agentic LLM red teaming frame",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
+      "id": "2608.05042",
+      "source": "arxiv",
+      "title": "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation",
+      "url": "https://arxiv.org/abs/2608.05042",
+      "authors": [
+        "Peiyan Li",
+        "Yuze Zhu",
+        "Yixiang Chen",
+        "Qisen Ma"
+      ],
+      "summary": "Leveraging pre-trained vision-language models (VLMs) to construct vision-language-action (VLA) models has emerged as a promising paradigm for 3D robot manipulation. However, existing 3D VLA methods remain data-hungry, exhibit limited generalization under distribution shifts, and lack explicit memory of past observations. These limitations hinder their application to data-scarce, open-world, and memory-dependent manipulation scenarios. Our previous work, BridgeVLA, improves data efficiency and generalization by preserving the input--output alignment of a pre-trained VLM during 3D action learnin",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "robot",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.03648",
       "source": "arxiv",
       "title": "Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate",
@@ -1417,104 +1520,6 @@
         "tool use",
         "tool-use",
         "llm"
-      ]
-    },
-    {
-      "id": "2607.09330",
-      "source": "arxiv",
-      "title": "Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks",
-      "url": "https://arxiv.org/abs/2607.09330",
-      "authors": [
-        "Nuocheng Yang",
-        "Sihua Wang",
-        "Zihan Chen",
-        "Tony Q. S. Quek"
-      ],
-      "summary": "Embodied agent teams powered by heterogeneous large language models (LLMs) are being widely deployed in physical artificial intelligence such as smart factories, warehouses, and service robotics. To enable collaboration among such an agent team, efficient coordination mechanisms that operate reliably under limited network resources are required. However, existing heterogeneous LLM-agent coordination frameworks that rely on multi-round natural-language-based conversations introduce three coupled challenges. First, inter-agent dialogue incurs communication overhead that grows rapidly with team s",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-10",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "embodied",
-        "robot",
-        "robotics",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.07989",
-      "source": "arxiv",
-      "title": "Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2607.07989",
-      "authors": [
-        "Yufei Xia",
-        "Anjun Gao",
-        "Yueyang Quan",
-        "Zhuqing Liu"
-      ],
-      "summary": "Large language model (LLM) based multi-agent systems enable complex problem solving through coordinated reasoning and action, but their distributed structure also introduces new challenges in diagnosing system-level failures. When an execution fails, identifying which agent is responsible and at what point the trajectory first becomes irreversibly misdirected is difficult due to long-horizon interactions and tightly coupled agent behaviors. In this paper, we study the problem of failure localization in LLM-based multi-agent systems and present AgentLocate, a framework that attributes failures ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-08",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.06001",
-      "source": "arxiv",
-      "title": "Information Limits and Attractor Dynamics in Economies of Frontier LLM Agents: A Pre-Registered Test",
-      "url": "https://arxiv.org/abs/2607.06001",
-      "authors": [
-        "Cheng Qian"
-      ],
-      "summary": "We report a pre-registered, two-part experiment on small economies of frontier language-model agents (Claude Opus 4.8), testing two quantitative predictions about coupled multi-agent systems: an information-theoretic capacity region for wealth growth under market coupling, and a mean-field residual-scaling law for population misalignment under incentive and control levers. All predictions, acceptance bands, and decision rules were frozen in a public git chain before any run; every reported number re-derives mechanically from cached model outputs; the entire experiment cost $138.76 in metered A",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-07",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "alignment",
-        "llm",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2608.03494",
-      "source": "arxiv",
-      "title": "Beyond Initialization Loss: A Systematic Study of Token Embedding Initialization Strategies for LLM Vocabulary Extension",
-      "url": "https://arxiv.org/abs/2608.03494",
-      "authors": [
-        "Raviraj Joshi",
-        "Utkarsh Vaidya",
-        "Sanjay Singh Chauhan",
-        "Niranjan Wartikar"
-      ],
-      "summary": "Vocabulary extension is an efficient way to adapt pretrained large language models (LLMs) to new languages, but the initialization of newly added token embeddings can strongly affect continued pre-training (CPT) efficiency. We present a systematic study of more than 20 initialization strategies for Hindi vocabulary extension in Nemotron-3-Nano-30B-A3B. Our comparison spans vocabulary-averaging baselines; external and learned initialization methods, including FOCUS, top-k semantic retrieval, and residual MLP mappings; subword composition; norm calibration; and input-output asymmetry. We find th",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-08-04",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
       ]
     }
   ]

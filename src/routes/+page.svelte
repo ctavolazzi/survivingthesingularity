@@ -508,7 +508,7 @@
           <span class="book-part-num">Part III</span>
           <h3 class="book-part-title">How to Survive the Transition</h3>
           <p class="book-part-sub">Shouse Grids. DC-native microgrids. Hardware you own.</p>
-          <p class="book-part-desc">Actionable mechanics, not abstract advice: Shouse Grids, DC-native microgrids, and mechanical transducer systems that refine local waste into value. Johnny Autoseed, our boutique robotics project management and consultation service, helps you stand up the physical infrastructure.</p>
+          <p class="book-part-desc">Actionable mechanics, not abstract advice: Shouse Grids, DC-native microgrids, and mechanical transducer systems that refine local waste into value. The author's separate venture, Johnny Autoseed LLC, researches the same open-source robotics stack.</p>
         </div>
       </div>
     </div>

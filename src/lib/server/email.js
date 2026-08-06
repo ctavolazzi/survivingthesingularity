@@ -182,7 +182,7 @@ function buildWelcome(source) {
  * variable away.
  *
  * Set EMAIL_POSTAL_ADDRESS in Cloudflare Pages, for example
- * "Johnny Autoseed LLC, PO Box 1234, Chico, CA 95926", before running any
+ * "Christopher Tavolazzi, PO Box 1234, Chico, CA 95926", before running any
  * newsletter or promotional send. The transactional receipt is on a different
  * footing, since CAN-SPAM treats transactional or relationship messages
  * differently from commercial ones, but there is no downside to it appearing

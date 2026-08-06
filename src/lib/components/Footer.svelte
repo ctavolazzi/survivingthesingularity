@@ -53,7 +53,7 @@
       </p>
 
       <p class="footer-copyright">
-        &copy; {new Date().getFullYear()} <a href="https://johnnyautoseed.com" target="_blank" rel="noopener noreferrer" class="footer-copyright-link">Johnny Autoseed LLC</a>. All rights reserved where applicable.
+        &copy; {new Date().getFullYear()} Christopher Tavolazzi. All rights reserved where applicable.
       </p>
     </div>
   </div>
@@ -194,13 +194,6 @@
     color: #dde4ef;
     margin: 0;
   }
-
-  .footer-copyright-link {
-    color: #f59e0b;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .footer-copyright-link:hover { color: #fbbf24; text-decoration: underline; }
 
   @media (max-width: 640px) {
     .site-footer {

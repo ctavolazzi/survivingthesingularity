@@ -78,15 +78,14 @@
 
     <section id="privacy-policy" class="p-section">
       <h2>Privacy &amp; Contact</h2>
-      <!-- UPDATED when accounts shipped. The previous version of this paragraph
-           said the site sets no first-party cookies at all. That was true when
-           written and stopped being true the moment /signup existed: signing in
-           sets a session cookie. Left alone it would have been a false statement
-           in a privacy policy, which is the one document on the site where being
-           out of date is itself the harm. Anything added here must be checkable
-           against src/lib/server/supabaseAuth.js. -->
+      <!-- RE-UPDATED 2026-08-04 when accounts were removed. This paragraph
+           briefly disclosed a sign-in session cookie while /signup existed
+           (2026-08-01 to 2026-08-04); accounts are gone, so the no-first-party-
+           cookies statement is true again. The privacy policy is the one
+           document on the site where being out of date is itself the harm:
+           re-check, do not trust, if auth ever returns. -->
       <p>
-        <strong>Website Usage:</strong> This site does not run third-party analytics or advertising tags, and sets no tracking or advertising cookies, as of the last-updated date above. It sets first-party cookies for one purpose only: keeping you signed in if you create an account (see <a href="#accounts">Accounts</a>). Those are strictly necessary for a feature you asked for, and the site sets none of them until you sign in. The site may also store a small number of strictly-functional values in browser localStorage, for example whether you have dismissed the disclaimer banner. Outbound links to third-party services such as Substack, Ko-fi, YouTube, and Spotify will be subject to those services' own privacy practices once you click through. You should review their policies separately.
+        <strong>Website Usage:</strong> This site does not run third-party analytics or advertising tags, and sets no tracking, advertising, or sign-in cookies, as of the last-updated date above. There are no user accounts (see <a href="#accounts">Accounts</a>). The site may store a small number of strictly-functional values in browser localStorage, for example whether you have dismissed the disclaimer banner. Outbound links to third-party services such as Substack, Ko-fi, YouTube, and Spotify will be subject to those services' own privacy practices once you click through. You should review their policies separately.
       </p>
 
       <!-- DRAFTED 2026-07-29. CalOPPA requires a site collecting personal
@@ -125,71 +124,58 @@
         review on a best-available-basis with no guaranteed action is contemplated.
       </p>
 
-      <!-- Every claim in this block is checkable against code, and should be
-           re-checked rather than trusted if any of it is edited:
-             what is stored        -> sql/015 + sql/016 (profiles, auth_rate_limits)
-             what a session is     -> src/lib/server/supabaseAuth.js
-             what OAuth receives   -> src/routes/auth/oauth/[provider]/+server.js
-             the rate-limit hash   -> src/lib/server/authRateLimit.js hashKey()
-             consent separation    -> sql/016, marketing_consent defaults false -->
+      <!-- Accounts were removed 2026-08-04 by CT's ruling: the identity model
+           is the purchase email, nothing else. Every claim in this block is
+           checkable against code:
+             what is stored on purchase -> src/lib/server/transactions.js
+                                           (recordCheckoutCompleted)
+             what purchase email sends  -> src/lib/server/email.js
+             consent at checkout        -> src/routes/api/stripe-checkout/+server.js -->
       <section id="accounts">
         <p>
-          <strong>Accounts:</strong> Creating an account is optional. Everything
-          readable without one stays readable without one. If you do create an
-          account, this is the whole of what is kept: your email address, a
-          display name derived from it or supplied by your sign-in provider, the
-          time you accepted these terms, and the time the account was created.
+          <strong>No accounts:</strong> This site has no user accounts, no
+          profiles, no passwords, and no sign-in. There is nothing to register
+          for and no login cookie to set. Everything readable on the site is
+          readable by anyone with the link, and paid content is delivered by
+          email instead of behind a login.
         </p>
 
         <p>
-          <strong>Passwords:</strong> If you set a password, it is stored only as
-          a salted hash by the authentication provider and is not recoverable by
-          anyone, including us. We never see it. If you would rather not have one,
-          the sign-in-link option on the signup page never creates a password at
-          all.
+          <strong>What buying the book stores:</strong> When you preorder, the
+          record kept is the one the payment created: the email address and name
+          you gave at checkout, what you bought, what you paid, and the payment
+          reference. That record is the whole of your identity here. It exists
+          so your purchase can be delivered, looked up if something goes wrong,
+          and honored when future editions ship.
+        </p>
+
+        <p id="purchase-emails">
+          <strong>What your purchase email is used for:</strong> Buying the book
+          means we will email you: the receipt and download delivery for the
+          edition you bought, and notice when a new edition of the book is
+          released, including any upgrade discount your purchase entitles you
+          to (up to and including free, depending on the terms current at that
+          release). These messages are part of what you bought, not a
+          newsletter. Each one carries an unsubscribe link, and unsubscribing
+          from release notices never affects your access to what you already
+          purchased.
         </p>
 
         <p>
-          <strong>Signing in with Google or GitHub:</strong> If you use one of
-          those buttons, that provider tells us your email address and, where they
-          supply it, your name. We ask for nothing else and receive nothing else -
-          no contact list, no repositories, no posting rights. Starting that
-          sign-in also tells the provider you are signing in here, which is
-          inherent to how it works and is the reason the email option exists
-          alongside it.
+          <strong>Marketing is a separate decision:</strong> Buying the book is
+          not permission to send you marketing. If you want the newsletter you
+          have to ask for it separately, and you can stop it at any time from
+          the unsubscribe link in any message.
         </p>
 
         <p>
-          <strong>Session cookies:</strong> Signing in sets cookies that keep you
-          signed in. They are marked HttpOnly, so no script on the page can read
-          them, and they are used for nothing but recognising your session. They
-          are not used to track you between sites, and there is nothing in them
-          for an advertiser. Signing out invalidates the session on the server as
-          well as clearing the cookies.
-        </p>
-
-        <p>
-          <strong>Sign-in security records:</strong> Failed and attempted
-          sign-ins are counted so that automated password-guessing can be slowed
-          down. Those counters store a one-way hash rather than your address, are
-          used for nothing else, and are discarded within a day.
-        </p>
-
-        <p>
-          <strong>Marketing is a separate decision:</strong> The checkbox at
-          signup is agreement to the Terms and this Privacy Policy. It is not
-          permission to email you marketing, and it is not recorded as such. If
-          you want the newsletter you have to ask for it separately, and you can
-          stop it at any time from the unsubscribe link in any message.
-        </p>
-
-        <p>
-          <strong>Deleting your account:</strong> Write to
+          <strong>Removing your data:</strong> Write to
           <a href="mailto:{offer.refund.contact}">{offer.refund.contact}</a> and
-          say so. Deleting the account deletes the profile with it. Records we are
-          required to keep for a completed purchase - the order itself, and what
-          the payment processor holds - survive account deletion, because those
-          are financial records rather than profile data.
+          say so. We will remove your email from the release-notice list and any
+          newsletter list. Records we are required to keep for a completed
+          purchase - the order itself, and what the payment processor holds -
+          survive that removal, because those are financial records rather than
+          contact preferences.
         </p>
       </section>
 

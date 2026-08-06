@@ -17,7 +17,6 @@
           <a href="/early-access" class="footer-link footer-link-accent">Preorder the Book</a>
           <a href="/checklist" class="footer-link">Free Checklist</a>
           <a href="/blog" class="footer-link">Blog</a>
-          <a href="/signup" class="footer-link">Sign in</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-col-title">Resources</h4>

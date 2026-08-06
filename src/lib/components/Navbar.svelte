@@ -6,6 +6,9 @@
   import { readerMode } from '$lib/stores/readerMode';
   import { offer } from '$lib/offer';
 
+  // Vestigial. Accounts were removed 2026-08-04 by CT's ruling, so there is no
+  // user to pass down and no account control to render. Kept as an accepted
+  // prop so the existing `<Navbar user={data?.user} />` call site does not break.
   export let user = null;
   void user;
 
@@ -56,18 +59,6 @@
           label: 'About',
           sub: 'The author and why this project exists',
           icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
-        },
-        // The only way into /signup from the site. It went in here rather than
-        // into `desktopLinks` deliberately: that list is commented "minimal",
-        // and the CTA rule below is "one offer, one CTA, everywhere". A free
-        // account is not a second offer and should not read like one competing
-        // with the preorder. The drawer and the footer are where utility
-        // navigation belongs.
-        {
-          href: '/signup',
-          label: 'Sign in',
-          sub: 'Free account. Keeps your place in the book and the checklist.',
-          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/></svg>`,
         },
       ],
     },

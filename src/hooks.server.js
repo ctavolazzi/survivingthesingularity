@@ -1,28 +1,25 @@
 /**
  * Server hooks.
  *
- * AUTH, AND WHY THE OLD COMMENT HERE IS NO LONGER TRUE
+ * NO AUTH, AGAIN, AND THIS TIME BY RULING RATHER THAN BY DEFAULT
  *
- * This file used to open "no auth. The site is read-only and does not maintain
- * user sessions", and stubbed safeGetSession() to null. That was accurate from
- * WO-08 until the /signup flow landed. Accounts now exist, so the stub is a
- * real implementation.
+ * Accounts, sessions and sign-in existed here between 2026-08-01 and
+ * 2026-08-04, then CT killed them: "kill user profiles. Kill accounts. Kill
+ * sign in." The identity model is the purchase email. Buyers are recognised
+ * by the address they paid with (the transactions ledger the Stripe webhook
+ * writes), and future editions reach them by email with whatever discount the
+ * terms of that day set. No passwords, no sessions, no cookies to protect, no
+ * OAuth surface, and a privacy policy a person can actually read.
  *
- * What has NOT changed is the rule the old comment was protecting: there is
- * still no browser-side Supabase client and no publishable key in the bundle.
- * Sessions are established server-side and carried in httpOnly cookies. See
- * the header of `$lib/server/supabaseAuth.js` for why that is the only shape
- * of auth compatible with sql/012, and README's "Database access" section for
- * the data rule, which is untouched: every table read still goes through
- * `$lib/server/supabaseAdmin.js` on the service role.
+ * The rule the old auth was built around still stands and is now simpler to
+ * see: there is no browser-side Supabase client and no key of any kind in the
+ * bundle. Every table read goes through `$lib/server/supabaseAdmin.js` on the
+ * service role. See README's "Database access" section.
  *
- * `event.locals` after this hook:
- *   supabaseAuth  - request-scoped GoTrue client, or null if unconfigured
- *   safeGetSession- verified session getter (round-trips to the auth server)
- *   session/user  - resolved once per request, null when signed out
+ * The auth implementation was removed at commit history around 2026-08-04; if
+ * it is ever wanted again it is one revert away, but read the ruling above
+ * before proposing that.
  */
-
-import { createAuthClient, safeGetSession } from '$lib/server/supabaseAuth.js';
 
 export async function handle({ event, resolve }) {
   // Fix for "[object Object]" navigation errors (pre-existing safety net)
@@ -33,28 +30,7 @@ export async function handle({ event, resolve }) {
     });
   }
 
-  // Request-scoped auth client. Null when SUPABASE_ANON_KEY is unset, which is
-  // the normal state of a local checkout with no secrets - every consumer below
-  // degrades to signed-out rather than throwing, so the site still renders.
-  event.locals.supabaseAuth = createAuthClient(event);
-
-  // Verified, not decoded. See safeGetSession()'s header: it round-trips to the
-  // auth server, because the cookie it would otherwise trust is attacker input.
-  event.locals.safeGetSession = () => safeGetSession(event.locals.supabaseAuth);
-
-  const { session, user } = await event.locals.safeGetSession();
-  event.locals.session = session;
-  event.locals.user = user;
-
-  const response = await resolve(event, {
-    // Supabase's client library reads these off responses it makes itself. It
-    // makes none in the browser here, but SvelteKit strips unlisted headers
-    // from `fetch` responses it serializes into the page, and omitting this is
-    // a documented source of silent session-refresh failures if a load
-    // function ever proxies an auth call. Cheap insurance, no downside.
-    filterSerializedResponseHeaders: (name) =>
-      name === 'content-range' || name === 'x-supabase-api-version'
-  });
+  const response = await resolve(event);
 
   // Security headers for SSR routes (Worker). CSP is handled by kit.csp in
   // svelte.config.js, which injects per-request nonces into SvelteKit's own

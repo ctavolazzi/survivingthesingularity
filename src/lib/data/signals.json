@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T15:18:59Z",
+  "generated_at": "2026-08-07T14:15:19Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -167,6 +167,59 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2608.06366",
+      "source": "arxiv",
+      "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+      "url": "https://arxiv.org/abs/2608.06366",
+      "authors": [
+        "Soorya Ram Shimgekar",
+        "Michelle Hu",
+        "Dorisa Shehi",
+        "Daniel Kang"
+      ],
+      "summary": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data with disease-specific, guideline-based clinical reasoning. Existing rule-based and large language model (LLM)-based approaches offer only partial automation with limited maintainability and evidence traceability. We developed the Nimblemind Multi-Agent System (nMAS), an evidence-linked, rubric-grounde",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-06",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag",
+        "automation"
+      ]
+    },
+    {
+      "id": "2608.05668",
+      "source": "arxiv",
+      "title": "F$^2$Agent: Financial Fusion of Agentic Intelligence for Multimodal Trading",
+      "url": "https://arxiv.org/abs/2608.05668",
+      "authors": [
+        "Changshuo Liu",
+        "Yanzheng Jin",
+        "Shangfeng Cai",
+        "Peng Fang"
+      ],
+      "summary": "With increasingly diverse and heterogeneous information sources, effectively leveraging multimodal data is becoming pivotal for high-quality financial trading. Although recent advancements in Large Language Model (LLM)-based agents have enabled the ingestion of multimodal inputs, existing methods fail to capture nuanced cross-modal dependencies and remain vulnerable to market noise, due to limited multimodal modeling, ineffective fusion mechanisms, and inadequate robustness. To address these challenges, we propose F$^2$Agent, a novel multimodal agentic paradigm driven by the Financial Fusion o",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-06",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "llm",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -552,6 +605,32 @@
       ]
     },
     {
+      "id": "2608.05999",
+      "source": "arxiv",
+      "title": "Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2608.05999",
+      "authors": [
+        "He Kong",
+        "Zengjue Chen",
+        "Qi Wang",
+        "Qianli Xing"
+      ],
+      "summary": "Vision-language-action (VLA) models have demonstrated remarkable capabilities in robotic manipulation by leveraging pretrained vision-language models. However, existing post-training methods predominantly optimize VLA models as flat policies, making it difficult to explicitly model task progression and perform robust long-horizon manipulation. Although hierarchical approaches introduce task decomposition, they mainly rely on supervised learning from offline demonstrations and cannot effectively improve execution through online interaction. To address this limitation, we propose Hierarchical Ro",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-06",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "embodied",
+        "robot",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.29347",
       "source": "arxiv",
       "title": "SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery",
@@ -651,6 +730,32 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2608.06128",
+      "source": "arxiv",
+      "title": "Contextual Information Policy Optimization for Search Agents",
+      "url": "https://arxiv.org/abs/2608.06128",
+      "authors": [
+        "Xingyu Guo",
+        "Wei Chen",
+        "Linlin Yang",
+        "Baochang Zhang"
+      ],
+      "summary": "Search agents extend large language models beyond static parametric memory by enabling them to acquire and use ex ternal evidence during multi-step reasoning. For knowledge intensive tasks involving complex or evolving information, their reliability depends not only on retrieving relevant ev idence but also on using it to guide subsequent reasoning. However, existing methods primarily reward final-answer cor rectness or intermediate progress, without directly assessing whether post-retrieval actions are grounded in the retrieved evidence. This misalignment encourages prior-driven reason ing: a",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-06",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "alignment",
+        "language model",
+        "retrieval",
+        "rag"
       ]
     },
     {
@@ -1028,6 +1133,29 @@
       ]
     },
     {
+      "id": "2608.05956",
+      "source": "arxiv",
+      "title": "Certifying Collective Reasoning in Multi-Agent Systems via Koopman Spectral Analysis",
+      "url": "https://arxiv.org/abs/2608.05956",
+      "authors": [
+        "Nuzhat Khan",
+        "Indrakshi Dey"
+      ],
+      "summary": "Orchestrated collectives of large language model (LLM) agents that debate and vote are an emerging form of computational intelligence: the intelligent behaviour resides in the \\emph{interaction}, not in any single agent. They improve task accuracy, yet remain black boxes at the system level: there is no principled test of convergence, no bound on the rounds needed, and no faithful account of what drove a decision. This paper develops a novel framework based on Koopman operator theory and validates its theoretical guarantees on multi-agent consensus dynamics. Treating the collective as one nonl",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-06",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.04317",
       "source": "arxiv",
       "title": "Trident : How to Break Deep Reinforcement Learning Cyber Defenses (Agentic)",
@@ -1397,129 +1525,6 @@
         "autonomous",
         "reasoning",
         "language model"
-      ]
-    },
-    {
-      "id": "2607.12982",
-      "source": "arxiv",
-      "title": "FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation",
-      "url": "https://arxiv.org/abs/2607.12982",
-      "authors": [
-        "Ruoran Xu",
-        "Wending Gao",
-        "Qiufeng Wang"
-      ],
-      "summary": "Math reasoning has achieved significant progress with the rapid advancement of Multimodal Large Language Models (MLLMs), however analytic geometry remains largely underexplored, primarily due to the scarcity of annotated samples. Existing diagram generation approaches struggle with analytic geometry: template methods cannot handle constraint-driven layouts, and generative models lack the geometric precision to render annotated conic curves correctly. We present FormalAnalyticGeo, a scalable framework for fully automatic generation of multimodal analytic geometry problems. Leveraging the rigor ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-14",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.11399",
-      "source": "arxiv",
-      "title": "Agentic Routing: The Harness-Native Data Flywheel",
-      "url": "https://arxiv.org/abs/2607.11399",
-      "authors": [
-        "Xinchen Liu",
-        "Hang Zhou",
-        "Yingjie Zong",
-        "Yuchuan Tian"
-      ],
-      "summary": "Large language model agents are increasingly executed not by a single model call, but by an execution harness that manages observation, context, control, action, state, and verification. At the same time, frontier and open models are becoming structurally specialized: a model that is strong at code editing, long-context recovery, tool use, mathematical reasoning, or low-latency response may not dominate on the other axes. This makes model selection inside an agent a core systems problem rather than a per-query serving trick. Existing routing methods mostly optimize single-turn cost-quality tra",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-13",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
-        "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.11250",
-      "source": "arxiv",
-      "title": "Multi-Agent LLMs Fail to Explore Each Other",
-      "url": "https://arxiv.org/abs/2607.11250",
-      "authors": [
-        "Hyeong Kyu Choi",
-        "Jiatong Li",
-        "Wendi Li",
-        "Xin Eric Wang"
-      ],
-      "summary": "Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns that lead to suboptimal coordination and increased regret. We formalize this challenge as the Multi-Agent Exploration problem, modeling it as a partially observable stochastic game (POSG) problem in which agents must probe peers to infer their capabilities and identify effective interaction strategi",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-13",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomy",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.12111",
-      "source": "arxiv",
-      "title": "PFAdapter: Hierarchical LoRA Decomposition for Personalized Federated MLLMs",
-      "url": "https://arxiv.org/abs/2607.12111",
-      "authors": [
-        "Jing Liu",
-        "Kun Yang",
-        "Yan Wang",
-        "Dingkang Yang"
-      ],
-      "summary": "Agentic AI systems are reshaping communications and networking by deploying autonomous intelligent agents capable of collaborative learning while maintaining data privacy at network edges. Within distributed network environments, Multimodal Large Language Models (MLLMs) serve as cognitive engines for edge devices, yet federated fine-tuning faces substantial challenges in balancing global knowledge aggregation with local adaptation under heterogeneous network conditions. Conventional federated protocols typically rely on uniform parameter aggregation, which conflates domain-invariant features w",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-13",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.09493",
-      "source": "arxiv",
-      "title": "Shared Selective Persistent Memory for Agentic LLM Systems",
-      "url": "https://arxiv.org/abs/2607.09493",
-      "authors": [
-        "Sanjana Pedada",
-        "Aditya Dhavala",
-        "Neelraj Patil"
-      ],
-      "summary": "Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints, data schemas, and tool-use patterns that made previous sessions productive. Naively persisting entire conversation histories is token-inefficient and counterproductive: irrelevant context degrades generation quality. We introduce shared selective persistent memory, an architecture that identifies and retains four categories of reusable context (task specifications, data schemas, tool configurations, and o",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-10",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
-        "tool-use",
-        "llm"
       ]
     }
   ]

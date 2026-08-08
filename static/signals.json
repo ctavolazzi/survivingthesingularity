@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T14:15:19Z",
+  "generated_at": "2026-08-08T13:50:02Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -575,30 +575,6 @@
         "agent",
         "agentic",
         "tool use",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.07666",
-      "source": "arxiv",
-      "title": "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling",
-      "url": "https://arxiv.org/abs/2607.07666",
-      "authors": [
-        "Shivendra G. Tewari",
-        "Holly Kimko"
-      ],
-      "summary": "Large language models (LLMs) demonstrate remarkable reasoning capabilities, yet their stateless architecture fundamentally limits deployment in long-horizon research workflows requiring multi-session continuity and quantitative rigor. Here we present Ensemble QSP, a multi-agent framework featuring a three-layer hierarchical memory architecture that keeps injected context bounded and constant in project duration (mid-term project state: median 301 tokens, max 4,050, across 104 runs) by capping each state category and evicting completed work, enabling continuous autonomous operation without cont",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-08",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
         "reasoning",
         "llm",
         "language model"
@@ -1525,6 +1501,31 @@
         "autonomous",
         "reasoning",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.05738",
+      "source": "arxiv",
+      "title": "In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use",
+      "url": "https://arxiv.org/abs/2608.05738",
+      "authors": [
+        "Jiarui Yang",
+        "Wen Huang",
+        "Jiale Zhang",
+        "Maowei Hu"
+      ],
+      "summary": "Vision-Language-Action (VLA) models have become the dominant recipe for generalist manipulation, yet they are almost universally trained by behavior cloning: a policy imitates expert action chunks conditioned on a static image and a fixed instruction. A natural remedy is to inject explicit reasoning through textual chain-of-thought (CoT). We show, both empirically and analytically, that free-form textual CoT degrades low-level control: the reasoning it produces is ungrounded, its latency breaks closed-loop timing, and, crucially, the reasoning and action tokens are optimized against conflictin",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-06",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
+        "reasoning",
+        "chain-of-thought"
       ]
     }
   ]

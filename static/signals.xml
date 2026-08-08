@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Fri, 07 Aug 2026 14:15:19 +0000</lastBuildDate>
+   <lastBuildDate>Sat, 08 Aug 2026 13:50:02 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -162,13 +162,6 @@
       <description>Large language model (LLM) agents are increasingly used in trading systems, where model reasoning, tool use, and continual decisions incur costs that are expected to produce trading value. Existing evaluations typically report performance metrics, but rarely examine agentic viability: whether dynami... [Score: 9.5 | Flagged for: agent, agentic, tool use, reasoning, llm] Authors: Qiqi Duan, Changlun Li, et al.</description>
     </item>
     <item>
-      <title>A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling</title>
-      <link>https://arxiv.org/abs/2607.07666</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.07666</guid>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) demonstrate remarkable reasoning capabilities, yet their stateless architecture fundamentally limits deployment in long-horizon research workflows requiring multi-session continuity and quantitative rigor. Here we present Ensemble QSP, a multi-agent framework featuring a... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, reasoning, llm] Authors: Shivendra G. Tewari, Holly Kimko</description>
-    </item>
-    <item>
       <title>Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation</title>
       <link>https://arxiv.org/abs/2608.05999</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.05999</guid>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.03387</guid>
       <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
       <description>Humanoid robots have the potential to perform dexterous manipulation in human environments, yet acquiring diverse and generalizable skills remains costly due to expensive hardware data collection and labor-intensive annotation. Recent advances in video generative models provide a promising opportuni... [Score: 8.5 | Flagged for: agi, agent, agentic, humanoid, robot] Authors: Shuliang He, Shuai Wang, et al.</description>
+    </item>
+    <item>
+      <title>Cross-Domain Hybrid OPD for Generalizable Search Agents</title>
+      <link>https://arxiv.org/abs/2608.02101</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.02101</guid>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Recent advances in Reinforcement Learning (RL) have substantially improved the capabilities of autonomous search agents, enabling sophisticated planning, and iterative retrieval over dynamic information sources. However, optimizing language models for specialized search behaviors often incurs an ali... [Score: 8.5 | Flagged for: agent, autonomous, planning, alignment, language model] Authors: Hongzhan Chen, Xiaoyu Liu, et al.</description>
     </item>
   </channel>
 </rss>

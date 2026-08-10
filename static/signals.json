@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T13:53:17Z",
+  "generated_at": "2026-08-10T14:22:02Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -144,6 +144,33 @@
       ]
     },
     {
+      "id": "2608.06865",
+      "source": "arxiv",
+      "title": "Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection",
+      "url": "https://arxiv.org/abs/2608.06865",
+      "authors": [
+        "Xuechao Zou",
+        "Shun Zhang",
+        "Kai Li",
+        "Yi Zhou"
+      ],
+      "summary": "The malicious use of generative artificial intelligence to create highly realistic deepfake videos raises serious ethical concerns and poses substantial challenges to AI safety. However, existing deepfake video benchmarks provide limited coverage of recent synthesis methods and generally lack reliable fine-grained textual annotations. Meanwhile, conventional detectors and multimodal large language models (MLLMs), whether operating as a single model or relying on a single analytical perspective, often fail to capture subtle forgery artifacts, limiting their generalization to emerging AI-generat",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-07",
+      "score": 11.0,
+      "raw_score": 22,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "ai safety",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2607.15095",
       "source": "arxiv",
       "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
@@ -167,6 +194,33 @@
         "llm",
         "language model",
         "retrieval"
+      ]
+    },
+    {
+      "id": "2608.06830",
+      "source": "arxiv",
+      "title": "When Coordination Becomes a Threat: Communication Attacks in LLM-Controlled Multi-Robot Systems",
+      "url": "https://arxiv.org/abs/2608.06830",
+      "authors": [
+        "Zhen Huang",
+        "Zhihuang Liu",
+        "Weijia Shi",
+        "Yifan Yang"
+      ],
+      "summary": "Large Language Models (LLMs) are increasingly used as high-level planners in embodied multi-robot systems, enabling robots to interpret natural language instructions and coordinate executable actions. Yet, this growing reliance on LLM planners also raises security concerns. Prior work has focused mainly on individual robots, while communication risks in multi-robot collaboration remain insufficiently understood. Existing multi-robot studies are further limited to preliminary analysis under the Decentralized Multi-agent System (DMAS) architecture, so it remains unclear whether these risks persi",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-07",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "interpret",
+        "embodied",
+        "robot",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -423,6 +477,32 @@
         "reasoning",
         "llm",
         "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.07419",
+      "source": "arxiv",
+      "title": "Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration",
+      "url": "https://arxiv.org/abs/2608.07419",
+      "authors": [
+        "Ruochen Jin",
+        "Zhanliang Wang",
+        "Zongyu Dai",
+        "Jiancong Xiao"
+      ],
+      "summary": "Preference alignment often makes large language models (LLMs) overconfident and poorly calibrated. Traditional post-hoc temperature scaling is inherently domain-dependent: a temperature fitted on one domain does not generalize across domains. This motivates us to modify model parameters during training to improve calibration. We propose maximizing the entropy of predictive distributions as the calibration objective, which directly targets overconfidence by discouraging overly concentrated predictions. Inspired by temperature scaling, we realize this through a bilevel optimization formulation, ",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-08-07",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "llm",
+        "language model",
+        "scaling",
         "rag"
       ]
     },
@@ -1109,6 +1189,56 @@
       ]
     },
     {
+      "id": "2608.07367",
+      "source": "arxiv",
+      "title": "People Are Not Just Their Countries. Disentangling Social Determinants of LLM Value Alignment Across Europe",
+      "url": "https://arxiv.org/abs/2608.07367",
+      "authors": [
+        "Maria-Louisa Wightman",
+        "Guillaume Bied",
+        "Tijl De Bie"
+      ],
+      "summary": "As Large Language Models (LLMs) are increasingly used as a primary source of information and advice, understanding their alignment to humans in terms of values becomes a pressing concern. A growing literature has leveraged large scale surveys to investigate to what extent LLMs' and humans' stated values and opinions align. With limited exceptions, studied populations have been defined country borders or cultural bounds. Yet, this focus neglects the role that socio-demographic divides may play for value alignment disparities.\n  Relying on the European Social Survey, we address this knowledge ga",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-07",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "alignment",
+        "value alignment",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.07154",
+      "source": "arxiv",
+      "title": "Representation Handoffs for OpenArm-Based Laboratory Mobile Manipulation",
+      "url": "https://arxiv.org/abs/2608.07154",
+      "authors": [
+        "Yang Shen",
+        "Chonghao Cheng",
+        "Ziyi Zhao",
+        "Jialuo Zhu"
+      ],
+      "summary": "Open-source robotics and foundation models have lowered the barrier to embodied AI, yet language-guided laboratory automation still requires reliable alignment from instructions and observations to safe actions. This field report presents an OpenArm-based mobile manipulation prototype for laboratory-style tasks, built by integrating dual OpenArm manipulators with a mobile base, vertical slide, RGB-D sensing, lidar-based mapping, ROS2/MoveIt execution, and profile-defined skill interfaces. The system is organized around representation handoffs: natural language requests are constrained into reg",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-07",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "foundation model",
+        "alignment",
+        "embodied",
+        "robot",
+        "robotics",
+        "automation"
+      ]
+    },
+    {
       "id": "2608.05956",
       "source": "arxiv",
       "title": "Certifying Collective Reasoning in Multi-Agent Systems via Koopman Spectral Analysis",
@@ -1400,132 +1530,6 @@
         "reasoning",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2607.19834",
-      "source": "arxiv",
-      "title": "D2VBench: Benchmarking Large Language Models with Value Dilemmas in Daily Scenarios",
-      "url": "https://arxiv.org/abs/2607.19834",
-      "authors": [
-        "Siyi Hao",
-        "Yidi Cao",
-        "Linhao Yu",
-        "Yuqi Ren"
-      ],
-      "summary": "With the wide application of large language models (LLMs) in real-world scenarios, the value implication of their outputs is crucial. However, existing evaluation benchmarks suffer from insufficient coverage of value dilemmas in daily scenarios involving multiple value conflicts and simplistic evaluation formalisms that fail to assess LLMs' value alignment. To address these issues, we propose D2VBench, a value alignment benchmark comprising 10,000 instances of real daily dilemma scenarios constructed through a multi-stage collaboration between LLMs and humans, grounded in 158 manually annotate",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-22",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "alignment",
-        "value alignment",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.14905",
-      "source": "arxiv",
-      "title": "Show Me How You Reason and I'll Tell You Who You Are: Reasoning Graphs for Robust LLM Authorship Attribution",
-      "url": "https://arxiv.org/abs/2607.14905",
-      "authors": [
-        "Zlata Kikteva",
-        "Artur Romazanov",
-        "Annette Hautli-Janisz",
-        "Ramon Ruiz-Dolz"
-      ],
-      "summary": "Given the current trend to employ large language models (LLMs) in almost any imaginable context, LLM-generated text detection and authorship attribution have become a pressing issue. Prior work has primarily focused on surface-level linguistic features, an approach shown to be susceptible to paraphrasing and other obfuscation techniques. In this paper, we go beyond the linguistic surface, extracting and analysing reasoning structures in LLM-generated texts with the goal of capturing more complex signals of LLM authorship. We propose a graph neural network approach that leverages reasoning grap",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-16",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.14543",
-      "source": "arxiv",
-      "title": "SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents",
-      "url": "https://arxiv.org/abs/2607.14543",
-      "authors": [
-        "Huaigang Yang",
-        "Ya Li",
-        "Min Ren",
-        "Bo Dai"
-      ],
-      "summary": "Vision-language models (VLMs) are increasingly used as the reasoning backbone of embodied agents, enabling robots to interpret visual scenes, follow language instructions, and plan multi-step actions. In household environments, however, safety depends not only on recognizing objects, but also on how actions change the physical scene over time. Existing embodied safety evaluations largely focus on static risk recognition, unsafe instruction refusal, or final-state task completion. As a result, process-level safety failures induced by spatial relations such as support, containment, and proximity",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-16",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "interpret",
-        "embodied",
-        "robot",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.14178",
-      "source": "arxiv",
-      "title": "ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System",
-      "url": "https://arxiv.org/abs/2607.14178",
-      "authors": [
-        "Yutong He",
-        "Daibo Li",
-        "Guohong Li",
-        "Jiahe Geng"
-      ],
-      "summary": "Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on empirically driven domains with quantitative benchmarks, leaving theory-driven discovery, particularly in mathematically grounded disciplines requiring rigorous proofs and synthesis of domain knowledge, largely underexplored. Key challenges include the difficulty of verifying theoretical reasoning at scale, insufficient reasoning ability for autonomous frontier exploration, and a scarcity of procedural he",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-15",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.05738",
-      "source": "arxiv",
-      "title": "In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use",
-      "url": "https://arxiv.org/abs/2608.05738",
-      "authors": [
-        "Jiarui Yang",
-        "Wen Huang",
-        "Jiale Zhang",
-        "Maowei Hu"
-      ],
-      "summary": "Vision-Language-Action (VLA) models have become the dominant recipe for generalist manipulation, yet they are almost universally trained by behavior cloning: a policy imitates expert action chunks conditioned on a static image and a fixed instruction. A natural remedy is to inject explicit reasoning through textual chain-of-thought (CoT). We show, both empirically and analytically, that free-form textual CoT degrades low-level control: the reasoning it produces is ungrounded, its latency breaks closed-loop timing, and, crucially, the reasoning and action tokens are optimized against conflictin",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-06",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
-        "reasoning",
-        "chain-of-thought"
       ]
     }
   ]

@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Mon, 10 Aug 2026 14:22:02 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 12 Aug 2026 14:22:36 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -13,6 +13,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.16066</guid>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
       <description>Agentic Artificial Intelligence (AI), enabled by Large Language Models, marks a shift from rule-based automation toward autonomous, goal-driven control of Next-Generation Networks (NGNs). Existing surveys treat the two domains in isolation, leaving protocol integration, evaluation, and standardizati... [Score: 17.0 | Flagged for: agent, multi-agent, agentic, autonomous, tool use] Authors: Mazene Ameur, Abdelkader Mekrache, et al.</description>
+    </item>
+    <item>
+      <title>Contextual Value Alignment via Multilayer Combinatorial Fusion</title>
+      <link>https://arxiv.org/abs/2608.07642</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.07642</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Aligning large language models (LLMs) with human values remains a major challenge, especially for trustworthy AI. While existing approaches such as RLHF, CAI, and their variants have achieved promising results, they often rely on a single-agent framework and a unified reward system. This limits thei... [Score: 13.5 | Flagged for: agent, multi-agent, reasoning, alignment, rlhf] Authors: Yuanhong Wu, Djallel Bouneffouf, et al.</description>
     </item>
     <item>
       <title>World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models</title>
@@ -134,6 +141,13 @@
       <description>Multi-step retrosynthesis planning seeks to decompose a target molecule into commercially available building blocks through a sequence of feasible reactions. The vast combinatorial search space makes this task challenging even for expert chemists. Traditional methods combine tree search with offline... [Score: 10.0 | Flagged for: agent, agentic, planning, reasoning, llm] Authors: Yanqiao Zhu, Jingru Gan, et al.</description>
     </item>
     <item>
+      <title>Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy</title>
+      <link>https://arxiv.org/abs/2608.09857</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.09857</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: bia... [Score: 9.5 | Flagged for: agent, agentic, autonomy, planning, robot] Authors: Rohan Bhagra, Mahantesh Halapannavar, et al.</description>
+    </item>
+    <item>
       <title>Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration</title>
       <link>https://arxiv.org/abs/2608.07419</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.07419</guid>
@@ -176,13 +190,6 @@
       <description>Large language models (LLMs) are improving rapidly as reflected in benchmark scores, yet these AI benchmarks largely test capabilities such as factual recall, narrow question answering, mathematical problem-solving, and coding and agentic tool-use. What remains poorly measured is AI progress on the ... [Score: 9.5 | Flagged for: agent, agentic, tool-use, reasoning, llm] Authors: Ajay Patel, Kartik Hosanagar, et al.</description>
     </item>
     <item>
-      <title>Can Agentic Trading Systems Pay for Their Own Intelligence?</title>
-      <link>https://arxiv.org/abs/2607.10286</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.10286</guid>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Large language model (LLM) agents are increasingly used in trading systems, where model reasoning, tool use, and continual decisions incur costs that are expected to produce trading value. Existing evaluations typically report performance metrics, but rarely examine agentic viability: whether dynami... [Score: 9.5 | Flagged for: agent, agentic, tool use, reasoning, llm] Authors: Qiqi Duan, Changlun Li, et al.</description>
-    </item>
-    <item>
       <title>Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation</title>
       <link>https://arxiv.org/abs/2608.05999</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.05999</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.21912</guid>
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
       <description>Communication allows large language model agents to pool evidence, but it also creates paths along which an erroneous claim can spread. We formulate a correction-aware network model that tracks susceptible, exposed, infectious, and corrected agents and derive its early-invasion condition for heterog... [Score: 9.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Ruiwu Niu, Xincheng Shu, et al.</description>
-    </item>
-    <item>
-      <title>MARS: Multi-hop Adaptive Retrieval and SPARQL Generation for KGQA</title>
-      <link>https://arxiv.org/abs/2607.14561</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14561</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) have demonstrated strong reasoning performance, but their tendency to hallucinate limits their reliability in knowledge-intensive tasks requiring up-to-date and grounded information. Combining knowledge graphs (KGs) with LLMs facilitates the use of explicit symbolic know... [Score: 9.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Nikit Srivastava, Daniel Vollmers, et al.</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T14:22:02Z",
+  "generated_at": "2026-08-12T14:22:36Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -32,6 +32,33 @@
         "llm",
         "language model",
         "automation"
+      ]
+    },
+    {
+      "id": "2608.07642",
+      "source": "arxiv",
+      "title": "Contextual Value Alignment via Multilayer Combinatorial Fusion",
+      "url": "https://arxiv.org/abs/2608.07642",
+      "authors": [
+        "Yuanhong Wu",
+        "Djallel Bouneffouf",
+        "D. Frank Hsu"
+      ],
+      "summary": "Aligning large language models (LLMs) with human values remains a major challenge, especially for trustworthy AI. While existing approaches such as RLHF, CAI, and their variants have achieved promising results, they often rely on a single-agent framework and a unified reward system. This limits their ability to capture ethical pluralism, adapt to diverse moral contexts, and reflect the dynamics of multi-agent moral reasoning.\n  In this work, we propose a framework that utilizes multilayer combinatorial fusion for contextual value alignment (MCF-CVA). At the first layer of the framework, it ins",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-07",
+      "score": 13.5,
+      "raw_score": 27,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "alignment",
+        "rlhf",
+        "value alignment",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -481,6 +508,32 @@
       ]
     },
     {
+      "id": "2608.09857",
+      "source": "arxiv",
+      "title": "Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy",
+      "url": "https://arxiv.org/abs/2608.09857",
+      "authors": [
+        "Rohan Bhagra",
+        "Mahantesh Halapannavar",
+        "Uddhav Bhattarai"
+      ],
+      "summary": "Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: biased toward user-specified goals, they may suggest actions misaligned with scientific ethics, they may be unsafe due to an inability to \"remember\" prior safety risks, or they may be vulnerable to adversarial attacks on the autonomy ecosystem. We propose a LLM-driven verification layer between plannin",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-10",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomy",
+        "planning",
+        "robot",
+        "robotics",
+        "llm"
+      ]
+    },
+    {
       "id": "2608.07419",
       "source": "arxiv",
       "title": "Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration",
@@ -629,32 +682,6 @@
         "agent",
         "agentic",
         "tool-use",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.10286",
-      "source": "arxiv",
-      "title": "Can Agentic Trading Systems Pay for Their Own Intelligence?",
-      "url": "https://arxiv.org/abs/2607.10286",
-      "authors": [
-        "Qiqi Duan",
-        "Changlun Li",
-        "Chen Wang",
-        "Fan Zhang"
-      ],
-      "summary": "Large language model (LLM) agents are increasingly used in trading systems, where model reasoning, tool use, and continual decisions incur costs that are expected to produce trading value. Existing evaluations typically report performance metrics, but rarely examine agentic viability: whether dynamic LLM-mediated decisions convert their induced costs into measurable incremental profit. To apply this criterion, we introduce TradeLens, a trace-grounded diagnostic toolkit for evaluating agentic trading systems from their trading records, runtime traces, and deployment configurations. It reconstru",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-11",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
         "reasoning",
         "llm",
         "language model"
@@ -1189,6 +1216,56 @@
       ]
     },
     {
+      "id": "2608.11152",
+      "source": "arxiv",
+      "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
+      "url": "https://arxiv.org/abs/2608.11152",
+      "authors": [
+        "Zetao Hong",
+        "Song Yuan",
+        "Yuanhao Ding",
+        "Yibo Zhu"
+      ],
+      "summary": "Modern reinforcement learning (RL) post-training pipelines for large language models (LLMs) increasingly combine rollout workloads across multiple domains and feedback paradigms. Prefix-aware routing improves inference efficiency through cache reuse and load balancing, but it does not control how heterogeneous rollout sessions compete for KV-cache capacity. When reinforcement learning with verifiable rewards (RLVR), reinforcement learning from human feedback (RLHF), and agentic rollouts share an asynchronous inference service, their distinct sequence structures, interaction patterns, and KV-re",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-08-11",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "rlhf",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.10692",
+      "source": "arxiv",
+      "title": "SPIEval: Evaluating Large Language Models as Mobile Assistants over Scattered Personal Information",
+      "url": "https://arxiv.org/abs/2608.10692",
+      "authors": [
+        "Junjie Ye",
+        "Zhuohui Sheng",
+        "Shaofan Liu",
+        "Yulun Zhu"
+      ],
+      "summary": "Large language models (LLMs) are increasingly deployed as mobile assistants, where a key challenge is leveraging personal information scattered across multiple applications (apps) to complete user instructions. However, due to the lack of dedicated benchmarks, their capabilities remain poorly understood. To address this gap, we introduce SPIEval, a human-curated benchmark grounded in five cognitive capabilities (i.e., reasoning, disambiguation, integration, preference inference, and multi-intent decomposition). SPIEval comprises 250 tasks spanning 4,335 personal records distributed across 10 a",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-11",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.07367",
       "source": "arxiv",
       "title": "People Are Not Just Their Countries. Disentangling Social Determinants of LLM Value Alignment Across Europe",
@@ -1452,81 +1529,6 @@
       "matched_keywords": [
         "agent",
         "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.26579",
-      "source": "arxiv",
-      "title": "ContactFlow: A video action conditioning that transfers across embodiments",
-      "url": "https://arxiv.org/abs/2607.26579",
-      "authors": [
-        "Sami Azirar",
-        "Enrico Pallotta",
-        "Jan Nogga",
-        "Jürgen Gall"
-      ],
-      "summary": "World models offer a promising route toward robot planning by enabling agents to imagine and verify the consequences of actions before execution. However, current video-based world models often struggle to capture the physical constraints that govern manipulation, particularly contact. Further, their action conditioning is often constrained to specific embodiments such as parallel grippers. We propose \\emph{Contact Flow}, an embodiment-agnostic action representation that encodes manipulation through the trajectory of 3D contact points between an actor and a target object. By discarding actor-s",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-29",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "world model",
-        "agent",
-        "planning",
-        "robot"
-      ]
-    },
-    {
-      "id": "2607.24625",
-      "source": "arxiv",
-      "title": "Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents",
-      "url": "https://arxiv.org/abs/2607.24625",
-      "authors": [
-        "Arseny Kravchenko",
-        "Vadim Liventsev",
-        "Innokentii Konstantinov",
-        "Ildar Iskhakov"
-      ],
-      "summary": "Autonomous LLM agents processing mixed-confidentiality data face severe security risks from prompt injection attacks and reasoning errors. While dynamic Information Flow Control (IFC) provides structural security guarantees, traditional taint tracking permanently taints an agent's context upon reading unvetted data, severely restricting downstream utility. We present APPA (Agentic Permissions Policy Algebra), an IFC framework that resolves this usability bottleneck through engine-managed context branching and prospective acquisition enforcement. Before data acquisition occurs, APPA prospective",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-27",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "reasoning",
-        "llm"
-      ]
-    },
-    {
-      "id": "2607.22082",
-      "source": "arxiv",
-      "title": "When Language Models Meet NeuroGraphs: Exploring Enhanced Agentic LLM Framework Towards Brain Network Analysis",
-      "url": "https://arxiv.org/abs/2607.22082",
-      "authors": [
-        "Jiaxing Li",
-        "Rui Dong",
-        "Muyao Tang",
-        "Youyong Kong"
-      ],
-      "summary": "Brain network analysis is crucial for understanding cognition and neurological disorders, yet existing deep learning methods mainly treat connectome analysis as a graph-to-logit classification problem, offering limited explanatory reasoning. Large language models (LLMs) provide a promising interface for knowledge-intensive scientific analysis, but directly applying general-purpose LLMs to brain networks remains challenging due to the structure-language gap, limited neuroscience grounding, and overconfident positive predictions. In this paper, we propose \\textbf{BrainAgent}, an agentic LLM fram",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-24",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
         "reasoning",
         "llm",
         "language model"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T14:22:36Z",
+  "generated_at": "2026-08-13T14:24:17Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -688,6 +688,32 @@
       ]
     },
     {
+      "id": "2608.11679",
+      "source": "arxiv",
+      "title": "AgenticTwin: An Agentic LLM Framework Integrated with Digital Twin for Anomaly Detection",
+      "url": "https://arxiv.org/abs/2608.11679",
+      "authors": [
+        "Touseef Hasan",
+        "Mounika Ghanta",
+        "Souvika Sarkar",
+        "Ujjwal Guin"
+      ],
+      "summary": "Digital twins are increasingly used to monitor and simulate the behavior of cyber-physical systems. Even with skilled operators, interpreting anomalies detected within digital twin pipelines is challenging, as the sheer complexity and volume of raw sensor data make thorough analysis difficult. Recent advances in large language models (LLMs) offer promising capabilities for reasoning and explanation, yet their integration into digital twin-driven anomaly analysis remains underexplored. In this work, we propose AgenticTwin, an agentic framework that integrates LLM-driven reasoning with a digital",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-12",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.05999",
       "source": "arxiv",
       "title": "Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation",
@@ -1187,31 +1213,6 @@
         "alignment",
         "llm",
         "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.11689",
-      "source": "arxiv",
-      "title": "From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence",
-      "url": "https://arxiv.org/abs/2607.11689",
-      "authors": [
-        "Yuanzhi Liang",
-        "Xufeng Zhan",
-        "Haibin Huang",
-        "Chi Zhang"
-      ],
-      "summary": "Artificial general intelligence ultimately requires agents that can reason and act in the physical world. Action models, vision-language-action policies, and world models have advanced this goal, while World Action Models (WAMs) are particularly promising because they connect candidate interventions with predicted consequences. However, progress remains fragmented: models use incompatible action spaces and prediction targets, datasets and tasks follow different conventions, and runtime systems expose limited interfaces for reuse and evaluation. We review the evolution toward WAMs and organize ",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-13",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "artificial general intelligence",
-        "world model",
-        "agent",
-        "embodied",
         "rag"
       ]
     },

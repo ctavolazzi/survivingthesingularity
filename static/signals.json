@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T14:24:17Z",
+  "generated_at": "2026-08-14T14:17:49Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -842,6 +842,31 @@
       ]
     },
     {
+      "id": "2608.13317",
+      "source": "arxiv",
+      "title": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2608.13317",
+      "authors": [
+        "Yanwen Peng",
+        "Delvin Ce Zhang",
+        "Xi Wang",
+        "Nikolaos Aletras"
+      ],
+      "summary": "Large language model based multi-agent systems usually communicate in text, i.e., using discrete tokens. However, text introduces a discrete bottleneck. Converting the sender's continuous hidden states into discrete tokens discards information that token identities alone cannot capture. Recent work proposes latent communication as an alternative, where agents transmit hidden representations directly without converting them to text. However, existing latent methods either inject working memory layer by layer across the transformers, or require trained projectors that limit portability. We propo",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-13",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "alignment",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.06128",
       "source": "arxiv",
       "title": "Contextual Information Policy Optimization for Search Agents",
@@ -1141,79 +1166,53 @@
       ]
     },
     {
-      "id": "2607.12631",
+      "id": "2608.12984",
       "source": "arxiv",
-      "title": "Can Induced Emotion Bias LLM Behaviors in Sequential Decision Making?",
-      "url": "https://arxiv.org/abs/2607.12631",
+      "title": "Reconcile Once, Write Anytime: A Trust-Tiered Librarian and a Multi-Agent Writer for Drift-Free, Point-in-Time Research",
+      "url": "https://arxiv.org/abs/2608.12984",
       "authors": [
-        "Minh Khoi Ho",
-        "Zihao Zhu",
-        "Runchuan Zhu",
-        "Levina Li"
+        "Xing Zhang",
+        "Yanwei Cui",
+        "Guanghui Wang",
+        "Peiyang He"
       ],
-      "summary": "As Large Language Models (LLMs) are increasingly deployed as autonomous agents in high-stakes domains, understanding contextual factors that may modulate their decision-making becomes critical. While LLMs are trained to perceive and resonate with users' emotions, it remains unclear whether induced emotion can influence their sequential decision-making. We investigate this question using the Iowa Gambling Task (IGT), a classic psychological paradigm for studying decision-making under uncertainty, combined with an imagination-based emotion induction procedure. We first validate the feasibility o",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-14",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.12630",
-      "source": "arxiv",
-      "title": "Instance-Enriched Semantic Maps for Visual Language Navigation",
-      "url": "https://arxiv.org/abs/2607.12630",
-      "authors": [
-        "Jiho Hong",
-        "Eunae Kang",
-        "Sanghyun Kim",
-        "Young-Sik Shin"
-      ],
-      "summary": "Visual Language Navigation (VLN) aims to enable an embodied agent to navigate complex environments by following natural language instructions. Recent approaches build semantic spatial maps and leverage Large Language Models (LLMs) for reasoning and decision making. Despite these advances, existing systems lack instance-level object detail and robustness to diverse user queries, limiting reliable navigation in complex indoor environments. To address these limitations, we propose Instance-Enriched Semantic Maps, a unified framework with three key contributions: (1) Instance-level two-and-a-half-",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-14",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "embodied",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.13315",
-      "source": "arxiv",
-      "title": "Meta-Learning Preferences for Multilingual LLM Alignment",
-      "url": "https://arxiv.org/abs/2607.13315",
-      "authors": [
-        "Jiaying Lin",
-        "Seongho Son",
-        "Nam Phuong Tran",
-        "Long Tran-thanh"
-      ],
-      "summary": "Unequal availability of human preference data across languages poses a significant challenge for aligning large language models in multilingual settings. To address the lack of sufficient data in low-resource language alignment, we propose a meta-learning framework for Reinforcement Learning from Human Feedback and Direct Preference Optimization. By leveraging preference data from other languages, our framework learns a transferable initialization that enables effective adaptation to a target language with minimal data. We provide theoretical guarantees for both the meta-reward modeling and me",
+      "summary": "Long-form research reports generated by large language models drift, contradict themselves, and lose provenance: the same metric appears with different values, and rumor is quoted as confidently as an audited filing. We present a two-tier agentic system that separates a maintained, point-in-time knowledge library from report writing. A deterministic \"librarian\" ingests timestamped sources into a trust-tiered ontology, layering evidence cards, an authoritative metric ledger, and a claim graph into an always-current source of truth, not per-query RAG over raw chunks. A portable multi-agent \"writ",
       "category": "cs.CL",
       "tag": "Research",
-      "published_at": "2026-07-14",
-      "score": 8.5,
-      "raw_score": 17,
+      "published_at": "2026-08-13",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
-        "agi",
-        "alignment",
-        "llm",
+        "agent",
+        "multi-agent",
+        "agentic",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2608.12835",
+      "source": "arxiv",
+      "title": "AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN",
+      "url": "https://arxiv.org/abs/2608.12835",
+      "authors": [
+        "Yutong Liu",
+        "Xiaojie Li",
+        "Mingzhu Xu",
+        "Jianlong Wu"
+      ],
+      "summary": "Unmanned Aerial Vehicle Vision-Language Navigation (UAV-VLN) requires agents to follow language instructions, infer spatial structure from sparse multi-view observations, and execute feasible 3D motion in complex outdoor environments. Despite recent progress with large language models, most existing methods still map vision-language inputs directly to actions, providing limited explicit scene grounding and future-aware spatial reasoning. We propose AirForesight, a current-to-future spatial map imagination framework for UAV-VLN. AirForesight first learns a structured current-map representation ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-13",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "planning",
+        "reasoning",
+        "language model"
       ]
     },
     {

@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Fri, 14 Aug 2026 14:17:49 +0000</lastBuildDate>
+   <lastBuildDate>Sat, 15 Aug 2026 13:35:04 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -34,13 +34,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.17331</guid>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
       <description>Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across function... [Score: 12.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Zhihao Liu, Tianyu Wang, et al.</description>
-    </item>
-    <item>
-      <title>Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation</title>
-      <link>https://arxiv.org/abs/2607.14256</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14256</guid>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution edge cases. Traditional active learning and manual annotation fail to scale against the complexity and volume ... [Score: 12.0 | Flagged for: agi, agent, multi-agent, agentic, llm] Authors: Genglin Liu, Muye Zhang, et al.</description>
     </item>
     <item>
       <title>Scaling Behavior Foundation Model for Humanoid Robots</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.22014</guid>
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
       <description>Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation ... [Score: 9.0 | Flagged for: agent, autonomous, reasoning, embodied, llm] Authors: Suman Navaratnarajah, Taehyoung Kim, et al.</description>
+    </item>
+    <item>
+      <title>Reliability-Contagion Feasibility in LLM Multi-Agent Networks</title>
+      <link>https://arxiv.org/abs/2607.21912</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.21912</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Communication allows large language model agents to pool evidence, but it also creates paths along which an erroneous claim can spread. We formulate a correction-aware network model that tracks susceptible, exposed, infectious, and corrected agents and derive its early-invasion condition for heterog... [Score: 9.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Ruiwu Niu, Xincheng Shu, et al.</description>
     </item>
   </channel>
 </rss>

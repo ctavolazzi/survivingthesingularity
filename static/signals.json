@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:17:49Z",
+  "generated_at": "2026-08-15T13:35:04Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -113,33 +113,6 @@
         "llm",
         "language model",
         "automation"
-      ]
-    },
-    {
-      "id": "2607.14256",
-      "source": "arxiv",
-      "title": "Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation",
-      "url": "https://arxiv.org/abs/2607.14256",
-      "authors": [
-        "Genglin Liu",
-        "Muye Zhang",
-        "Krishnamurthy Viswanathan",
-        "Nichole J. Hansen"
-      ],
-      "summary": "Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution edge cases. Traditional active learning and manual annotation fail to scale against the complexity and volume of novel multimodal threats. In this paper, we propose an automated, agentic red-teaming framework that systematically synthesizes difficult examples using an iterative strategy that proposes novel hypotheses as well as mutating on past attempts. Leveraging a multi-agent architecture that consists o",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-15",
-      "score": 12.0,
-      "raw_score": 24,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "agentic",
-        "llm",
-        "language model",
-        "rag"
       ]
     },
     {
@@ -1142,30 +1115,6 @@
       ]
     },
     {
-      "id": "2607.13998",
-      "source": "arxiv",
-      "title": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
-      "url": "https://arxiv.org/abs/2607.13998",
-      "authors": [
-        "Sai Srikanth Madugula",
-        "Peplluis Esteva de la Rosa",
-        "Daya Shankar"
-      ],
-      "summary": "The rapid proliferation of Agentic Artificial Intelligence fundamentally disrupts traditional customer loyalty paradigms. As AI evolves from passive recommendation algorithms to autonomous, goal-directed agents capable of executing purchasing decisions, the conventional understanding of consumer-brand relationships requires a structural reevaluation. By synthesizing extant literature across human-machine teaming, consumer decision-making, and algorithmic trust dynamics, we demonstrate that traditional loyalty models fail to account for algorithmic bounded rationality and constructed autonomy. ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-15",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous",
-        "autonomy"
-      ]
-    },
-    {
       "id": "2608.12984",
       "source": "arxiv",
       "title": "Reconcile Once, Write Anytime: A Trust-Tiered Librarian and a Multi-Agent Writer for Drift-Free, Point-in-Time Research",
@@ -1530,6 +1479,55 @@
         "agent",
         "multi-agent",
         "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.12841",
+      "source": "arxiv",
+      "title": "AQuA: Recursively Self-Improving Quantitative Trading Research Agents",
+      "url": "https://arxiv.org/abs/2608.12841",
+      "authors": [
+        "Jiacheng Guo",
+        "Suozhi Huang",
+        "Yunlong Gao",
+        "Zihao Li"
+      ],
+      "summary": "We study recursive self-improvement at the level of quantitative-investment research: whether an autonomous system can use evidence from earlier experiments to improve the hypotheses and candidates proposed in later iterations. We present AQuA, which comprises two separate language-model-driven research systems: one for symbolic factor discovery and one for trainable model development. The two systems do not share agents, memories, candidate spaces, or research state. Instead, each independently closes its own research loop by retaining validated evidence and using it to guide subsequent propo",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-13",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "self-improving",
+        "agent",
+        "autonomous"
+      ]
+    },
+    {
+      "id": "2608.11033",
+      "source": "arxiv",
+      "title": "Who Are You Explaining To? A Multi-Agent System for Audience-Aware XAI Narratives",
+      "url": "https://arxiv.org/abs/2608.11033",
+      "authors": [
+        "Francesco Musicco",
+        "Danilo Danese",
+        "Giuseppe Fasano",
+        "Angela Lombardi"
+      ],
+      "summary": "Feature-attribution methods such as SHAP provide useful evidence about individual model predictions, but their numerical outputs are rarely sufficient for audiences with different expertise, goals, and risks of misinterpretation. In medical AI, the same local explanation must reach patients, clinicians, and data scientists through markedly different forms of communication, and naive verbalization through large language models (LLMs) is prone to weak grounding, conflation of attribution with causal language, and outputs that are persuasive without being faithful to the underlying model evidence",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-11",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "interpret",
         "llm",
         "language model"
       ]

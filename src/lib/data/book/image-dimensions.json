@@ -1,270 +1,274 @@
 {
- "appe-cyberdeck.png": [
-  760,
-  542
- ],
- "ch00-madrone-bark.jpg": [
-  1920,
-  1440
- ],
- "ch01-atlas.jpg": [
-  1280,
-  1920
- ],
- "ch01-atlas.webp": [
-  800,
-  1200
- ],
- "ch01-devendra.png": [
-  760,
-  650
- ],
- "ch01-m87-black-hole.jpg": [
-  1920,
-  1920
- ],
- "ch01-pc-rig.png": [
-  760,
-  654
- ],
- "ch02-factory-robots.jpg": [
-  1280,
-  960
- ],
- "ch02-factory-robots.webp": [
-  800,
-  600
- ],
- "ch02-waymo.jpg": [
-  1280,
-  960
- ],
- "ch02-waymo.webp": [
-  800,
-  600
- ],
- "ch03-echo-dot.jpg": [
-  1280,
-  726
- ],
- "ch03-echo-dot.webp": [
-  800,
-  454
- ],
- "ch03-falcon-heavy.jpg": [
-  1920,
-  1280
- ],
- "ch04-da-vinci.jpg": [
-  1280,
-  960
- ],
- "ch04-da-vinci.webp": [
-  800,
-  600
- ],
- "ch04-hubble-deep-field.jpg": [
-  1920,
-  1920
- ],
- "ch05-nao.jpg": [
-  1280,
-  853
- ],
- "ch05-nao.webp": [
-  800,
-  534
- ],
- "ch05-sdo-sun.jpg": [
-  1920,
-  1833
- ],
- "ch05-woodstove.png": [
-  760,
-  614
- ],
- "ch06-edmond-de-belamy.png": [
-  1280,
-  1285
- ],
- "ch06-edmond-de-belamy.webp": [
-  800,
-  804
- ],
- "ch06-tool-wall.png": [
-  760,
-  654
- ],
- "ch07-canned-music-1929.jpg": [
-  1400,
-  2070
- ],
- "ch07-canned-music-1930.jpg": [
-  1400,
-  2161
- ],
- "ch07-chess-battle-lines.jpg": [
-  1920,
-  1920
- ],
- "ch07-pepper.jpg": [
-  1280,
-  960
- ],
- "ch07-pepper.webp": [
-  800,
-  600
- ],
- "ch08-gary.png": [
-  760,
-  654
- ],
- "ch08-sophia.jpg": [
-  1280,
-  853
- ],
- "ch08-sophia.webp": [
-  800,
-  534
- ],
- "ch09-3d-printer.jpg": [
-  1920,
-  2560
- ],
- "ch09-controller.png": [
-  760,
-  622
- ],
- "ch09-reuben.png": [
-  760,
-  652
- ],
- "ch09-sophia-un.jpg": [
-  1280,
-  1625
- ],
- "ch09-sophia-un.webp": [
-  800,
-  1016
- ],
- "ch10-nyse.jpg": [
-  1024,
-  683
- ],
- "ch10-nyse.webp": [
-  800,
-  534
- ],
- "ch11-crucible.png": [
-  760,
-  646
- ],
- "ch11-spot.jpg": [
-  1280,
-  853
- ],
- "ch11-spot.webp": [
-  800,
-  534
- ],
- "ch12-farmbot-watering.jpg": [
-  1280,
-  379
- ],
- "ch12-farmbot-watering.webp": [
-  800,
-  236
- ],
- "ch12-farmbot.jpg": [
-  1125,
-  843
- ],
- "ch12-farmbot.webp": [
-  800,
-  600
- ],
- "ch13-solar-barn.jpg": [
-  1920,
-  1242
- ],
- "ch13-vise.png": [
-  760,
-  662
- ],
- "ch14-bell.png": [
-  760,
-  666
- ],
- "ch14-dead-mall.jpg": [
-  1920,
-  2560
- ],
- "ch14-frank.png": [
-  760,
-  636
- ],
- "ch15-probe.png": [
-  760,
-  626
- ],
- "ch16-servers.jpg": [
-  1920,
-  1280
- ],
- "ch17-field-kit.png": [
-  1648,
-  792
- ],
- "ch17-photobioreactor.png": [
-  760,
-  606
- ],
- "ch17-workbench.jpg": [
-  1920,
-  2876
- ],
- "ch18-compass-map.jpg": [
-  1479,
-  1114
- ],
- "ch19-iss-sunrise.jpg": [
-  1920,
-  1280
- ],
- "conclusion-proofs.png": [
-  760,
-  614
- ],
- "coop-cast.png": [
-  1808,
-  606
- ],
- "intro-asimo.jpg": [
-  1280,
-  1705
- ],
- "intro-asimo.webp": [
-  800,
-  1066
- ],
- "intro-ox-plow.png": [
-  760,
-  492
- ],
- "intro-robots.png": [
-  1180,
-  684
- ],
- "part1-divider.png": [
-  1920,
-  640
- ],
- "part2-divider.png": [
-  1920,
-  640
- ],
- "part3-divider.png": [
-  1920,
-  640
- ]
+  "appe-cyberdeck.png": [
+    760,
+    542
+  ],
+  "ch00-madrone-bark.jpg": [
+    1920,
+    1440
+  ],
+  "ch01-atlas.jpg": [
+    1280,
+    1920
+  ],
+  "ch01-atlas.webp": [
+    800,
+    1200
+  ],
+  "ch01-devendra.png": [
+    760,
+    650
+  ],
+  "ch01-m87-black-hole.jpg": [
+    1920,
+    1920
+  ],
+  "ch01-pc-rig.png": [
+    760,
+    654
+  ],
+  "ch02-factory-robots.jpg": [
+    1280,
+    960
+  ],
+  "ch02-factory-robots.webp": [
+    800,
+    600
+  ],
+  "ch02-waymo.jpg": [
+    1280,
+    960
+  ],
+  "ch02-waymo.webp": [
+    800,
+    600
+  ],
+  "ch03-echo-dot.jpg": [
+    1280,
+    726
+  ],
+  "ch03-echo-dot.webp": [
+    800,
+    454
+  ],
+  "ch03-falcon-heavy.jpg": [
+    1920,
+    1280
+  ],
+  "ch04-da-vinci.jpg": [
+    1280,
+    960
+  ],
+  "ch04-da-vinci.webp": [
+    800,
+    600
+  ],
+  "ch04-hubble-deep-field.jpg": [
+    1920,
+    1920
+  ],
+  "ch05-nao.jpg": [
+    1280,
+    853
+  ],
+  "ch05-nao.webp": [
+    800,
+    534
+  ],
+  "ch05-sdo-sun.jpg": [
+    1920,
+    1833
+  ],
+  "ch05-woodstove.png": [
+    760,
+    614
+  ],
+  "ch06-edmond-de-belamy.png": [
+    1280,
+    1285
+  ],
+  "ch06-edmond-de-belamy.webp": [
+    800,
+    804
+  ],
+  "ch06-tool-wall.png": [
+    760,
+    654
+  ],
+  "ch07-canned-music-1929.jpg": [
+    1400,
+    2070
+  ],
+  "ch07-canned-music-1930.jpg": [
+    1400,
+    2161
+  ],
+  "ch07-chess-battle-lines.jpg": [
+    1920,
+    1920
+  ],
+  "ch07-pepper.jpg": [
+    1280,
+    960
+  ],
+  "ch07-pepper.webp": [
+    800,
+    600
+  ],
+  "ch08-gary.png": [
+    760,
+    654
+  ],
+  "ch08-sophia.jpg": [
+    1280,
+    853
+  ],
+  "ch08-sophia.webp": [
+    800,
+    534
+  ],
+  "ch09-3d-printer.jpg": [
+    1920,
+    2560
+  ],
+  "ch09-controller.png": [
+    760,
+    622
+  ],
+  "ch09-reuben.png": [
+    760,
+    652
+  ],
+  "ch09-sophia-un.jpg": [
+    1280,
+    1625
+  ],
+  "ch09-sophia-un.webp": [
+    800,
+    1016
+  ],
+  "ch10-nyse.jpg": [
+    1024,
+    683
+  ],
+  "ch10-nyse.webp": [
+    800,
+    534
+  ],
+  "ch11-crucible.png": [
+    760,
+    646
+  ],
+  "ch11-spot.jpg": [
+    1280,
+    853
+  ],
+  "ch11-spot.webp": [
+    800,
+    534
+  ],
+  "ch12-farmbot-watering.jpg": [
+    1280,
+    379
+  ],
+  "ch12-farmbot-watering.webp": [
+    800,
+    236
+  ],
+  "ch12-farmbot.jpg": [
+    1125,
+    843
+  ],
+  "ch12-farmbot.webp": [
+    800,
+    600
+  ],
+  "ch13-solar-barn.jpg": [
+    1920,
+    1242
+  ],
+  "ch13-vise.png": [
+    760,
+    662
+  ],
+  "ch14-bell.png": [
+    760,
+    666
+  ],
+  "ch14-dead-mall.jpg": [
+    1920,
+    2560
+  ],
+  "ch14-frank.png": [
+    760,
+    636
+  ],
+  "ch15-probe.png": [
+    760,
+    626
+  ],
+  "ch16-servers.jpg": [
+    1920,
+    1280
+  ],
+  "ch17-field-kit.png": [
+    1648,
+    792
+  ],
+  "ch17-photobioreactor.png": [
+    760,
+    606
+  ],
+  "ch17-workbench.jpg": [
+    1920,
+    2876
+  ],
+  "ch18-compass-map.jpg": [
+    1479,
+    1114
+  ],
+  "ch19-iss-sunrise.jpg": [
+    1920,
+    1280
+  ],
+  "conclusion-proofs.png": [
+    760,
+    614
+  ],
+  "coop-cast.png": [
+    1808,
+    606
+  ],
+  "intro-asimo.jpg": [
+    1280,
+    1705
+  ],
+  "intro-asimo.webp": [
+    800,
+    1066
+  ],
+  "intro-ox-plow.png": [
+    760,
+    492
+  ],
+  "intro-robots.png": [
+    1180,
+    684
+  ],
+  "part1-divider.png": [
+    1920,
+    640
+  ],
+  "part2-divider.png": [
+    1920,
+    640
+  ],
+  "part3-divider.png": [
+    1920,
+    640
+  ],
+  "preface-reading-rage.png": [
+    760,
+    599
+  ]
 }

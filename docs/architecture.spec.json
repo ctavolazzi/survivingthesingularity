@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "title": "Surviving the Singularity",
+    "eyebrow": "architecture / sts v0.7.3",
+    "tagline": "A prerendered SvelteKit book site with one live money path. Almost every page is baked to static HTML at build time; a handful of routes stay dynamic so a reader can buy the book, and everything privileged happens behind $lib/server where the browser never reaches it.",
+    "footer": "Counts measured from the working tree at v0.7.3 (332fdfd). Import edges resolved from the source, not guessed. Nothing in this page was read off a deployed environment.",
+    "description": "How the Surviving the Singularity site fits together: routes, server lib, book source of truth, checkout, and the build tooling."
+  },
+
+  "layers": [
+    { "id": "edge",     "name": "Delivery edge",   "blurb": "Cloudflare Pages CDN and the SSR Worker" },
+    { "id": "routes",   "name": "Routes",          "blurb": "SvelteKit pages, endpoints, webhooks" },
+    { "id": "ui",       "name": "Components",      "blurb": "Svelte components, stores, markdown" },
+    { "id": "server",   "name": "Server-only lib", "blurb": "Privileged code the bundle never sees" },
+    { "id": "content",  "name": "Content and data","blurb": "Book source, blog, static JSON" },
+    { "id": "tooling",  "name": "Build and ops",   "blurb": "Generators, audits, migrations, tests" },
+    { "id": "external", "name": "External",        "blurb": "Stripe, Supabase, Resend, arXiv" }
+  ],
+
+  "nodes": [
+    {
+      "id": "cdn", "layer": "edge", "kind": "entry", "name": "Pages CDN",
+      "blurb": "Serves every prerendered page and the 666 files in static/ without touching a Worker.",
+      "detail": "Because these responses bypass the Worker entirely, they cannot get their CSP from svelte.config.js. static/_headers is the only thing setting security headers on them.",
+      "files": ["static/_headers", "static/sitemap.xml", "static/robots.txt", "svelte.config.js"],
+      "tech": ["cloudflare-pages"], "fileCount": 666, "verified": true
+    },
+    {
+      "id": "worker", "layer": "edge", "kind": "entry", "name": "SSR Worker",
+      "blurb": "Handles the routes that opt out of prerendering, and stamps security headers on their responses.",
+      "detail": "hooks.server.js has no auth in it. The site keeps no user sessions; safeGetSession() is a stub returning null so older callers do not crash.",
+      "files": ["src/hooks.server.js", "src/app.html", "svelte.config.js"],
+      "tech": ["sveltekit", "adapter-auto"], "loc": 37, "fileCount": 3, "verified": true
+    },
+
+    {
+      "id": "r-pages", "layer": "routes", "kind": "ui", "name": "Content pages",
+      "blurb": "Landing page, blog, checklist, signals, about, and the legal set. Prerendered.",
+      "detail": "Blog posts are per-route Svelte pages. A new post also has to be added to the hardcoded posts array in blog/+page.server.js and to static/sitemap.xml or it does not appear anywhere.",
+      "files": ["src/routes/+page.svelte", "src/routes/+layout.svelte", "src/routes/blog/+page.server.js", "src/routes/signals/+page.server.js", "src/routes/checklist/+page.svelte", "src/routes/about/+page.svelte"],
+      "tech": ["svelte"], "loc": 7340, "fileCount": 21, "verified": true
+    },
+    {
+      "id": "r-book", "layer": "routes", "kind": "ui", "name": "Book reader",
+      "blurb": "/book chapter grid, /book/[sectionId] per chapter, /read as one continuous scroll.",
+      "detail": "Gated client-side by a password check in $lib/bookAccessCode.js, not by the server. The gate keeps a casual visitor out; it is not an access control.",
+      "files": ["src/routes/book/+page.svelte", "src/routes/book/[sectionId]/+page.server.js", "src/routes/book/+layout.server.js", "src/routes/read/+page.svelte"],
+      "tech": ["svelte"], "loc": 2135, "fileCount": 8, "verified": true
+    },
+    {
+      "id": "r-buy", "layer": "routes", "kind": "entry", "name": "Early access",
+      "blurb": "The $5 preorder: email capture, checkout hand-off, and the post-payment success page.",
+      "detail": "The success page load is the fast path for fulfillment. It calls fulfillPreorder directly and, on Workers, hands the promise to waitUntil so the response is not held open.",
+      "files": ["src/routes/early-access/+page.svelte", "src/routes/early-access/+page.server.js", "src/routes/early-access/success/+page.server.js", "src/routes/early-access/success/+page.svelte"],
+      "tech": ["svelte", "stripe"], "loc": 1388, "fileCount": 4, "verified": true
+    },
+    {
+      "id": "r-api", "layer": "routes", "kind": "service", "name": "JSON endpoints",
+      "blurb": "Nine POST/GET handlers: checkout, waitlist, checklist email, unsubscribe, timeline, discord, titles.",
+      "detail": "Every mutating endpoint runs the same three guards first: same-origin, JSON content type, IP rate limit. stripe-checkout is the only one that can move money.",
+      "files": ["src/routes/api/stripe-checkout/+server.js", "src/routes/api/waitlist/+server.js", "src/routes/api/checklist-email/+server.js", "src/routes/api/unsubscribe/+server.js", "src/routes/api/timeline/+server.js", "src/routes/api/discord-application/+server.js"],
+      "tech": ["sveltekit"], "loc": 876, "fileCount": 9, "verified": true
+    },
+    {
+      "id": "r-hooks", "layer": "routes", "kind": "service", "name": "Webhooks",
+      "blurb": "Stripe and Resend calling in server-to-server. The Stripe one is the source of truth for fulfillment.",
+      "detail": "Signature verification must use constructEventAsync: on the workerd runtime the Stripe SDK's crypto provider is SubtleCrypto, which is async-only, so the sync form throws on every request regardless of the secret.",
+      "files": ["src/routes/api/webhooks/stripe/+server.js", "src/routes/api/webhooks/resend/+server.js"],
+      "tech": ["stripe", "resend"], "loc": 310, "fileCount": 2, "verified": true
+    },
+
+    {
+      "id": "components", "layer": "ui", "kind": "ui", "name": "Components",
+      "blurb": "Thirty top-level Svelte components: navbar, footer, gates, book cover, timeline, toasts, share.",
+      "files": ["src/lib/components/Navbar.svelte", "src/lib/components/BookGate.svelte", "src/lib/components/EmailGate.svelte", "src/lib/components/Timeline.svelte", "src/lib/components/Markdown.svelte"],
+      "tech": ["svelte"], "loc": 6270, "fileCount": 30, "verified": true
+    },
+    {
+      "id": "ui-kit", "layer": "ui", "kind": "lib", "name": "UI kit",
+      "blurb": "The small shared primitive set: Button, Card, Input, Checkbox.",
+      "files": ["src/lib/components/ui/Button.svelte", "src/lib/components/ui/Card.svelte", "src/lib/components/ui/index.js", "src/lib/components/ui/README.md"],
+      "tech": ["svelte"], "loc": 304, "fileCount": 5, "verified": true
+    },
+    {
+      "id": "stores", "layer": "ui", "kind": "data", "name": "Stores",
+      "blurb": "Client state that outlives a page: book access, reading position, font size, dark mode, toasts.",
+      "detail": "Most of these persist to localStorage, which is why a reader's place in the book survives a reload without any server involvement.",
+      "files": ["src/lib/stores/bookAccess.js", "src/lib/stores/readingPosition.js", "src/lib/stores/readerFontSize.js", "src/lib/stores/progress.js", "src/lib/stores/toasts.js"],
+      "tech": ["svelte-store"], "loc": 359, "fileCount": 11, "verified": true
+    },
+    {
+      "id": "md", "layer": "ui", "kind": "lib", "name": "Markdown render",
+      "blurb": "Turns book and blog markdown into HTML, including KaTeX math and the book-specific block rules.",
+      "files": ["src/lib/utils/markdownParser.js", "src/lib/utils/bookMarkdown.js", "src/lib/utils/katexExtension.js", "src/lib/components/Markdown.svelte"],
+      "tech": ["marked", "katex"], "loc": 270, "fileCount": 4, "verified": true
+    },
+
+    {
+      "id": "s-fulfill", "layer": "server", "kind": "service", "name": "Fulfillment",
+      "blurb": "The single definition of \"a preorder was paid, now make it real\": claim, insert, email, alert.",
+      "detail": "claimSession records an outcome rather than just intent, so a crash mid-delivery leaves a repairable claim instead of a tombstone that makes every Stripe retry a silent no-op. It errs toward delivering twice, on the grounds that a duplicate email is an apology and a lost order is a refund.",
+      "files": ["src/lib/server/fulfillment.js"],
+      "tech": ["supabase", "resend"], "loc": 302, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "s-ledger", "layer": "server", "kind": "data", "name": "Checkout ledger",
+      "blurb": "One row per checkout session: initiated, completed, expired. Never purged.",
+      "detail": "Separate from preorders on purpose. preorders is unique on (email, edition_type), so a repeat purchase writes no row at all. On 2026-07-29, 12 completed Stripe sessions had produced 3 preorder rows.",
+      "files": ["src/lib/server/transactions.js"],
+      "tech": ["supabase"], "loc": 208, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "s-email", "layer": "server", "kind": "service", "name": "Email",
+      "blurb": "Every outbound send, plus the email_deliveries ledger that records whether it landed.",
+      "detail": "With RESEND_API_KEY unset each send becomes a logged no-op. Fulfillment treats that skip as a failure rather than a delivery, so a misconfigured deploy cannot mark orders complete while sending nothing.",
+      "files": ["src/lib/server/email.js"],
+      "tech": ["resend"], "loc": 561, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "s-lookup", "layer": "server", "kind": "service", "name": "Preorder lookup",
+      "blurb": "Answers \"has this address already bought this edition\" before a card is ever charged.",
+      "files": ["src/lib/server/preorderLookup.js"],
+      "tech": ["supabase"], "fileCount": 1, "verified": true
+    },
+    {
+      "id": "s-guard", "layer": "server", "kind": "config", "name": "Request guards",
+      "blurb": "Same-origin check, in-memory sliding-window rate limit, email normalisation and validation.",
+      "detail": "The rate limiter's state is a Map in one process. Each Cloudflare isolate gets its own, so it is a speed bump against casual abuse rather than a durable limit.",
+      "files": ["src/lib/server/sameOrigin.js", "src/lib/server/rateLimit.js", "src/lib/server/validEmail.js"],
+      "loc": 156, "fileCount": 3, "verified": true
+    },
+    {
+      "id": "s-db", "layer": "server", "kind": "data", "name": "Supabase admin",
+      "blurb": "The one privileged database client. Service role, bypasses RLS, server-only by construction.",
+      "detail": "There is no browser-side Supabase client anywhere in the bundle, which is why neither CSP copy grants a *.supabase.co connect-src.",
+      "files": ["src/lib/server/supabaseAdmin.js"],
+      "tech": ["supabase"], "fileCount": 1, "verified": true
+    },
+
+    {
+      "id": "book-src", "layer": "content", "kind": "data", "name": "Book source",
+      "blurb": "Thirty-three markdown files plus book.json. The single source of truth for the book, full stop.",
+      "detail": "book.json sets the running order and gates what exists; 30 sections are listed. The website, the EPUB, the PDFs and manuscript/ are all generated from here and overwritten on the next build. Editing an output to fix book text is the recurring mistake this rule exists to prevent.",
+      "files": ["src/lib/data/book/book.json", "src/lib/data/book/chapter1.md", "src/lib/data/book/manuscript-index.json", "README.md"],
+      "tech": ["markdown"], "loc": 31950, "fileCount": 37, "verified": true
+    },
+    {
+      "id": "bookload", "layer": "content", "kind": "lib", "name": "Book loader",
+      "blurb": "Reads book.json plus the markdown and exposes lazy, eager, and full-body views of the book.",
+      "detail": "Also expands sts: cross-references. Internal pointers are written as [](sts:chapter1) rather than a literal number, so renumbering a chapter rewrites every sentence pointing at it instead of leaving prose that is quietly wrong.",
+      "files": ["src/lib/bookContent.js", "src/lib/bookAccessCode.js"],
+      "loc": 137, "fileCount": 2, "verified": true
+    },
+    {
+      "id": "blog-data", "layer": "content", "kind": "data", "name": "Blog content",
+      "blurb": "Thirteen post routes, plus the legacy markdown store three older posts still import from.",
+      "detail": "src/lib/data/blog-posts/ is the old system. It cannot be deleted because whispers-of-the-future, claude-projects-weekend-project and singularity-express still read from it, but nothing new should be authored there.",
+      "files": ["src/routes/blog/+page.server.js", "src/lib/data/blog-posts/", "src/routes/blog/algae-saves-us/+page.svelte"],
+      "loc": 5455, "fileCount": 16, "verified": true
+    },
+    {
+      "id": "sitedata", "layer": "content", "kind": "data", "name": "Site data",
+      "blurb": "Structured JSON and JS the pages import directly: blueprint, timeline, signals, quotes, evidence.",
+      "detail": "signals.json is a build artifact written by the arXiv sweep, so the /signals feed is as fresh as the last time that script ran, not live.",
+      "files": ["src/lib/data/blueprint.js", "src/lib/data/signals.json", "src/lib/data/timelineItems.json", "src/lib/data/quotes.json", "src/lib/data/evidence.js"],
+      "tech": ["json", "js"], "fileCount": 9, "verified": true
+    },
+    {
+      "id": "assets", "layer": "content", "kind": "data", "name": "Static assets",
+      "blurb": "Images, audio, download bundles, share cards, the sample PDF, sitemap and robots.",
+      "files": ["static/images/", "static/book-images/", "static/downloads/", "static/StS-free-sample.pdf", "static/sitemap.xml"],
+      "tech": ["666 files"], "fileCount": 666, "verified": true
+    },
+
+    {
+      "id": "sts", "layer": "tooling", "kind": "build", "name": "sts.py",
+      "blurb": "The project API. Twenty-plus subcommands covering audit, verify, refs, schema, stripe, live, og, cover.",
+      "detail": "Stdlib only, finds the repo root itself, every command takes --json, and audit/sitemap exit non-zero on errors. This is the tool to reach for on any book or site task rather than a one-off script.",
+      "files": ["scripts/sts.py"],
+      "tech": ["python"], "loc": 4400, "fileCount": 1, "verified": true
+    },
+    {
+      "id": "sweep", "layer": "tooling", "kind": "build", "name": "Signals sweep",
+      "blurb": "Fetches recent arXiv preprints, scores them, and writes the three signals files.",
+      "detail": "Outputs src/lib/data/signals.json for SSR, static/signals.json for external consumers, and static/signals.xml as RSS. No API key, no third-party deps.",
+      "files": ["scripts/sweep_signals.py", "scripts/signals_denylist.txt"],
+      "tech": ["python"], "fileCount": 2, "verified": true
+    },
+    {
+      "id": "bookbuild", "layer": "tooling", "kind": "build", "name": "Book build",
+      "blurb": "Compiles the markdown source into the EPUB and the print/review PDF variants.",
+      "detail": "Reads src/lib/data/book in book.json order and writes book-build/. Everything it produces is disposable output.",
+      "files": ["scripts/build-epub.sh", "scripts/build-pdf-variants.sh", "scripts/epub.css", "book-build/"],
+      "tech": ["pandoc", "weasyprint"], "fileCount": 8, "verified": true
+    },
+    {
+      "id": "migrations", "layer": "tooling", "kind": "build", "name": "SQL migrations",
+      "blurb": "Thirteen numbered files defining every table the server writes to.",
+      "detail": "Applied by hand against Supabase. A committed file is not an applied migration, and the app swallows both a missing table and a missing column, so nothing surfaces the gap except sts.py schema.",
+      "files": ["sql/003_preorders.sql", "sql/004_fulfilled_sessions.sql", "sql/012_lockdown_public_grants.sql", "sql/013_checkout_durability.sql"],
+      "tech": ["postgres"], "loc": 755, "fileCount": 13, "verified": true
+    },
+    {
+      "id": "e2e", "layer": "tooling", "kind": "build", "name": "Playwright tests",
+      "blurb": "Eight browser specs driving the real routes.",
+      "files": ["tests/e2e/", "playwright.config.js"],
+      "tech": ["playwright"], "loc": 1141, "fileCount": 8, "verified": true
+    },
+
+    {
+      "id": "stripe", "layer": "external", "kind": "external", "name": "Stripe",
+      "blurb": "Hosted checkout for the preorder, and the webhook that confirms payment independent of the browser.",
+      "detail": "The buyer's email is collected by this app before the session is created and passed as customer_email, which makes the field read-only on Stripe's page and binds the duplicate check to the address that actually gets billed.",
+      "tech": ["stripe"], "verified": true
+    },
+    {
+      "id": "supabase", "layer": "external", "kind": "external", "name": "Supabase",
+      "blurb": "Postgres for preorders, waitlist, sessions and ledgers, plus Storage for the download bundle.",
+      "detail": "Download links are signed URLs with a seven-day TTL, minted per request rather than stored.",
+      "tech": ["postgres", "storage"], "verified": true
+    },
+    {
+      "id": "resend", "layer": "external", "kind": "external", "name": "Resend",
+      "blurb": "Transactional email: download links, welcome mail, admin alerts, plus delivery webhooks back.",
+      "tech": ["resend"], "verified": true
+    },
+    {
+      "id": "arxiv", "layer": "external", "kind": "external", "name": "arXiv API",
+      "blurb": "Source for the signals feed. Read at build time by the sweep script, never at request time.",
+      "tech": ["atom"], "verified": true
+    }
+  ],
+
+  "edges": [
+    { "from": "worker", "to": "r-buy",     "kind": "call", "label": "dynamic routes" },
+    { "from": "worker", "to": "r-api",     "kind": "call" },
+    { "from": "worker", "to": "r-hooks",   "kind": "call" },
+    { "from": "cdn",    "to": "r-pages",   "kind": "call", "label": "prerendered" },
+    { "from": "cdn",    "to": "assets",    "kind": "data" },
+
+    { "from": "r-pages", "to": "components", "kind": "call", "label": "41 imports" },
+    { "from": "r-pages", "to": "blog-data",  "kind": "data" },
+    { "from": "r-pages", "to": "sitedata",   "kind": "data" },
+    { "from": "r-book",  "to": "components", "kind": "call", "label": "6 imports" },
+    { "from": "r-book",  "to": "stores",     "kind": "call", "label": "7 imports" },
+    { "from": "r-book",  "to": "md",         "kind": "call" },
+    { "from": "r-book",  "to": "bookload",   "kind": "call", "label": "3 imports" },
+    { "from": "r-buy",   "to": "components", "kind": "call" },
+    { "from": "r-buy",   "to": "s-fulfill",  "kind": "call", "label": "fast path" },
+    { "from": "r-buy",   "to": "s-ledger",   "kind": "call" },
+    { "from": "r-buy",   "to": "stripe",     "kind": "call" },
+    { "from": "r-api",   "to": "s-guard",    "kind": "call" },
+    { "from": "r-api",   "to": "s-lookup",   "kind": "call" },
+    { "from": "r-api",   "to": "s-ledger",   "kind": "call" },
+    { "from": "r-api",   "to": "s-email",    "kind": "call" },
+    { "from": "r-api",   "to": "s-db",       "kind": "call", "label": "24 imports" },
+    { "from": "r-api",   "to": "stripe",     "kind": "call", "label": "create session" },
+    { "from": "r-hooks", "to": "s-fulfill",  "kind": "call", "label": "source of truth" },
+    { "from": "r-hooks", "to": "s-ledger",   "kind": "call" },
+
+    { "from": "components", "to": "stores",  "kind": "call", "label": "4 imports" },
+    { "from": "components", "to": "ui-kit",  "kind": "call" },
+    { "from": "components", "to": "md",      "kind": "call" },
+    { "from": "components", "to": "sitedata","kind": "data" },
+
+    { "from": "s-fulfill", "to": "s-email",  "kind": "call" },
+    { "from": "s-fulfill", "to": "s-db",     "kind": "call" },
+    { "from": "s-lookup",  "to": "s-db",     "kind": "call" },
+    { "from": "s-ledger",  "to": "s-db",     "kind": "call" },
+    { "from": "s-email",   "to": "s-db",     "kind": "call" },
+    { "from": "s-email",   "to": "resend",   "kind": "call" },
+    { "from": "s-db",      "to": "supabase", "kind": "call" },
+
+    { "from": "bookload", "to": "book-src",  "kind": "data", "label": "book.json order" },
+
+    { "from": "sts",       "to": "book-src",  "kind": "build" },
+    { "from": "sts",       "to": "assets",    "kind": "build", "label": "og, sitemap" },
+    { "from": "sts",       "to": "migrations", "kind": "build", "label": "schema drift" },
+    { "from": "bookbuild", "to": "book-src",  "kind": "build" },
+    { "from": "sweep",     "to": "sitedata",  "kind": "build", "label": "signals.json" },
+    { "from": "sweep",     "to": "arxiv",     "kind": "call" },
+    { "from": "migrations","to": "supabase",  "kind": "build", "label": "applied by hand" },
+    { "from": "e2e",       "to": "r-pages",   "kind": "build" },
+
+    { "from": "stripe", "to": "r-hooks", "kind": "event", "label": "payment confirmed" },
+    { "from": "resend", "to": "r-hooks", "kind": "event", "label": "delivery status" }
+  ],
+
+  "flows": [
+    {
+      "id": "read",
+      "name": "A reader opens a chapter",
+      "blurb": "The common path, and the one with the least machinery in it. Nothing here touches a database or an external service.",
+      "steps": [
+        { "node": "cdn", "title": "Request hits the CDN",
+          "text": "Most of the site is prerendered, so the response is a static file. /book and /book/[sectionId] are not: their layout sets prerender = false because chapter markdown is loaded per request.",
+          "file": "src/routes/book/+layout.server.js" },
+        { "node": "worker", "title": "Worker handles the book route",
+          "text": "hooks.server.js stamps the security headers and hands off. No session lookup happens, because the site has no auth.",
+          "file": "src/hooks.server.js" },
+        { "node": "r-book", "title": "Section resolved from book.json",
+          "text": "The load function looks the sectionId up in book.sections and 404s if it is not there. book.json is the gate: a markdown file not listed in it does not exist as far as the site is concerned.",
+          "file": "src/routes/book/[sectionId]/+page.server.js" },
+        { "node": "bookload", "title": "Markdown fetched and refs expanded",
+          "text": "The per-section loader pulls the raw markdown, then rewrites every [](sts:chapterN) pointer into the chapter's real label from book.json.",
+          "file": "src/lib/bookContent.js" },
+        { "node": "book-src", "title": "The source file itself",
+          "text": "One of 33 .md files. This is the only place book prose is authored; the EPUB, the PDFs and manuscript/ are all downstream copies.",
+          "file": "src/lib/data/book/book.json" },
+        { "node": "md", "title": "Rendered to HTML",
+          "text": "The markdown parser handles the book-specific block rules and KaTeX math, and the reader's position and font size come back out of localStorage.",
+          "file": "src/lib/utils/bookMarkdown.js" }
+      ]
+    },
+    {
+      "id": "buy",
+      "name": "A reader buys the preorder",
+      "blurb": "The only path where money moves. It is built so that the browser closing at any point does not cost the customer their order.",
+      "steps": [
+        { "node": "r-api", "title": "Checkout requested",
+          "text": "Same-origin check, JSON content-type check, then five requests per IP per ten minutes. The same-origin guard fails closed: without it a script could mint checkout sessions at will.",
+          "file": "src/routes/api/stripe-checkout/+server.js" },
+        { "node": "s-lookup", "title": "Duplicate refused before the charge",
+          "text": "The email is collected by this app, not by Stripe, precisely so this check can run first. If the lookup itself fails, checkout is refused rather than waved through, because guessing here costs the customer five dollars and a chargeback.",
+          "file": "src/lib/server/preorderLookup.js" },
+        { "node": "stripe", "title": "Hosted checkout",
+          "text": "The session is created with the cleared email as customer_email, which prefills and locks the field. Promotion codes are off unless ALLOW_PROMOTION_CODES is explicitly true, because the 50%-off launch coupon sits in every buyer's inbox.",
+          "file": "src/routes/api/stripe-checkout/+server.js" },
+        { "node": "s-ledger", "title": "Session written to the ledger",
+          "text": "Awaited, not fired and forgotten: on Workers an un-awaited promise is not guaranteed to run after the response returns. The row sits at 'initiated' until it is completed or expires, which is what makes an abandoned cart visible at all.",
+          "file": "src/lib/server/transactions.js" },
+        { "node": "r-hooks", "title": "Stripe confirms, server to server",
+          "text": "This is the source of truth. It fires whether or not the browser ever makes it back, and returns 500 on a fulfillment error so Stripe retries with backoff instead of dropping a paid order.",
+          "file": "src/routes/api/webhooks/stripe/+server.js" },
+        { "node": "s-fulfill", "title": "Claim, insert, deliver",
+          "text": "The success page and the webhook both call this. A unique constraint on session_id means whichever arrives first does the work; the other stands down. A claim older than two minutes is treated as a crashed attempt and repaired.",
+          "file": "src/lib/server/fulfillment.js" },
+        { "node": "s-email", "title": "Bundle link sent",
+          "text": "A seven-day signed Supabase Storage URL plus the copy number and discount code. If RESEND_API_KEY is unset the send is a no-op, and the session is marked failed rather than delivered.",
+          "file": "src/lib/server/email.js" },
+        { "node": "r-buy", "title": "Success page, or recovery",
+          "text": "If Stripe cannot confirm the session, the page falls back to the fulfilled_sessions row, which this project owns. That matters concretely: a live-mode key cannot retrieve a test-mode session.",
+          "file": "src/routes/early-access/success/+page.server.js" }
+      ]
+    },
+    {
+      "id": "ship",
+      "name": "Edited prose becomes a deployed page",
+      "blurb": "The build path. Every artifact except the markdown source is regenerated, which is why hand-editing an output never sticks.",
+      "steps": [
+        { "node": "book-src", "title": "Edit the markdown",
+          "text": "One file in src/lib/data/book/, and add it to book.json if it is new. Nowhere else.",
+          "file": "src/lib/data/book/book.json" },
+        { "node": "sts", "title": "Verify before building",
+          "text": "sts.py verify recomputes every figure the book shows a reader and catches price and subtitle drift across the site; verify refs catches a dangling cross-reference before it reaches a reader.",
+          "file": "scripts/sts.py" },
+        { "node": "bookbuild", "title": "EPUB and PDFs regenerated",
+          "text": "Reads the same source in book.json order and overwrites book-build/. Anything already in there is disposable.",
+          "file": "scripts/build-epub.sh" },
+        { "node": "sweep", "title": "Signals refreshed, separately",
+          "text": "The arXiv sweep is its own step and writes signals.json plus the RSS feed. The /signals page is only as current as the last run.",
+          "file": "scripts/sweep_signals.py" },
+        { "node": "cdn", "title": "vite build, then prerender",
+          "text": "prerender is true site-wide from the root layout, so almost everything is baked to HTML at build time and served from the edge. Four routes opt out.",
+          "file": "src/routes/+layout.server.js" },
+        { "node": "sts", "title": "Check what actually deployed",
+          "text": "sts.py live probes production and diffs it against local routes; sts.py schema reports which sql/ migrations have really reached the database. Neither is inferrable from the repo alone.",
+          "file": "scripts/sts.py" }
+      ]
+    }
+  ],
+
+  "state": [
+    {
+      "name": "Supabase Postgres",
+      "kind": "database", "where": "hosted",
+      "blurb": "preorders, waitlist, fulfilled_sessions, checkout_transactions, email_deliveries, discord_applications. Written only by the service-role client, never from a browser.",
+      "files": ["sql/", "src/lib/server/supabaseAdmin.js", "src/lib/server/transactions.js"]
+    },
+    {
+      "name": "Supabase Storage",
+      "kind": "object store", "where": "hosted",
+      "blurb": "The research bundle customers download. Links are signed per request with a seven-day TTL rather than stored anywhere.",
+      "files": ["src/lib/server/fulfillment.js"]
+    },
+    {
+      "name": "Prerendered HTML and static/",
+      "kind": "files", "where": "build output",
+      "blurb": "The bulk of the site. 666 files in static/ plus every baked page. Regenerated on each build; nothing written at runtime survives here.",
+      "files": ["static/", "static/_headers", "static/sitemap.xml"]
+    },
+    {
+      "name": "Generated content artifacts",
+      "kind": "files", "where": "repo",
+      "blurb": "signals.json and its RSS twin, the EPUB and PDFs in book-build/, manuscript/ snapshots, og cards. All downstream of the markdown source and overwritten on the next run.",
+      "files": ["src/lib/data/signals.json", "book-build/", "manuscript/"]
+    },
+    {
+      "name": "localStorage",
+      "kind": "browser", "where": "client",
+      "blurb": "Reading position, reader font size, book access flag, dark mode. Nothing here is trusted by the server.",
+      "files": ["src/lib/stores/readingPosition.js", "src/lib/stores/bookAccess.js"]
+    },
+    {
+      "name": "In-process rate-limit map",
+      "kind": "memory", "where": "per isolate",
+      "blurb": "Sliding-window buckets keyed by ip:route. Lost on every cold start and not shared between Cloudflare isolates.",
+      "files": ["src/lib/server/rateLimit.js"]
+    },
+    {
+      "name": "Environment",
+      "kind": "config", "where": "deployment",
+      "blurb": "Seventeen variables, and the ones that matter most are the Stripe keys and per-edition price IDs. Several failure modes in this system are an unset variable rather than broken code.",
+      "files": ["svelte.config.js", "src/routes/api/stripe-checkout/+server.js"]
+    }
+  ],
+
+  "seams": [
+    {
+      "title": "Two CSP copies, and one is blocking images in production",
+      "risk": "high",
+      "text": "A prerendered page carries a baked-in meta CSP from svelte.config.js and also gets the header CSP from static/_headers. Both apply, and CSP intersects: a resource must pass every policy. The _headers img-src list is missing seven origins the Kit config permits, so those images are blocked live right now. Verified on /blog/synthetic-biological-intelligence, which loads corticallabs.com/images/footer-device.jpg while the deployed header omits that origin. Also affected: futurism.com, digitaltrends.com, i.pcmag.com, testingcatalog.com, storage.ghost.io, newatlas-brightspot.s3.amazonaws.com. The 'unsafe-inline' that _headers adds to script-src is the harmless direction of the same drift, since the stricter meta policy still applies.",
+      "files": ["static/_headers", "svelte.config.js", "src/routes/blog/synthetic-biological-intelligence/+page.svelte"]
+    },
+    {
+      "title": "A migration file is not a migration",
+      "risk": "high",
+      "text": "sql/ is applied by hand against Supabase. The server code swallows both a missing table (PGRST205) and a missing column (PGRST204) so that a schema gap degrades instead of crashing, which also means nothing tells you the gap exists. fulfillment.js and transactions.js name the specific file to run in their error logs, and sts.py schema is the only thing that reports it up front. Assume nothing about the deployed schema from the repo.",
+      "files": ["sql/", "src/lib/server/transactions.js", "scripts/sts.py"]
+    },
+    {
+      "title": "Per-edition Stripe price IDs",
+      "risk": "high",
+      "text": "STRIPE_PRICE_ID is a shared dev fallback. In production each edition demands its own variable and the sale is refused without it, because the failure mode of the fallback is billing the wrong amount rather than erroring. The endpoint accepts edition_type from any caller, so the authors path is reachable whether or not a button exists for it. The code comment records this as the shape of a real 2026-07 defect where a $5 product charged $9.",
+      "files": ["src/routes/api/stripe-checkout/+server.js"]
+    },
+    {
+      "title": "Prerender is on by default",
+      "risk": "medium",
+      "text": "The root layout sets prerender = true for the whole site. A new route that reads query params, per-request data, or a live count gets baked to static HTML at build time unless it exports prerender = false. Four routes currently opt out: the book layout, early-access, early-access/success, and unsubscribe. Adding a fifth dynamic route and forgetting is a silent bug that only appears in production.",
+      "files": ["src/routes/+layout.server.js", "src/routes/early-access/success/+page.server.js"]
+    },
+    {
+      "title": "The blog listing is a hardcoded array",
+      "risk": "medium",
+      "text": "A blog post is a route directory, but it does not appear in /blog until it is also added to the posts array in blog/+page.server.js, and it is not indexed until it is also added to static/sitemap.xml. Three edits, no check that ties them together. npm run create-blog scaffolds the legacy format and does not register the post at all, which is why CLAUDE.md tells you not to use it.",
+      "files": ["src/routes/blog/+page.server.js", "static/sitemap.xml"]
+    },
+    {
+      "title": "Fulfillment runs from two places",
+      "risk": "medium",
+      "text": "The success page and the Stripe webhook both call fulfillPreorder, and they routinely fire within seconds of each other. The whole correctness argument rests on claimSession's unique constraint plus its stale-claim window. Any change to the claim logic, the status values, or the two-minute threshold has to hold for both callers at once, and getting it wrong is either a double email or a paid order that silently receives nothing.",
+      "files": ["src/lib/server/fulfillment.js", "src/routes/api/webhooks/stripe/+server.js", "src/routes/early-access/success/+page.server.js"]
+    },
+    {
+      "title": "The book gate is client-side",
+      "risk": "medium",
+      "text": "The password check for /book lives in the browser, in $lib/bookAccessCode.js, and the server layout only disables prerendering. That is a deliberate simplification over a server env var that could be misconfigured per environment, but it means the gate keeps out a casual visitor and nothing more. The paid download is protected differently, by a fulfilled_sessions row rather than by the shape of a session id.",
+      "files": ["src/routes/book/+layout.server.js", "src/lib/bookAccessCode.js"]
+    },
+    {
+      "title": "Rate limits do not survive the edge",
+      "risk": "low",
+      "text": "rateLimit.js keeps its buckets in a Map in one process. Every Cloudflare isolate gets a fresh one, so the effective limit is per isolate rather than per site. Fine as a bot speed bump, and explicitly documented as such, but do not build anything that needs a hard ceiling on top of it without moving the state to KV or Postgres.",
+      "files": ["src/lib/server/rateLimit.js"]
+    }
+  ],
+
+  "ground": {
+    "verified": [
+      "File, line and module counts come from a scan of the working tree at v0.7.3 (332fdfd), not from memory.",
+      "Import edge weights come from the resolved graph across .js and .svelte, including $lib alias resolution.",
+      "The checkout, fulfillment, webhook, email, ledger and rate-limit modules were read end to end.",
+      "The CSP divergence was checked by comparing svelte.config.js against static/_headers directly.",
+      "book.json lists 30 sections against 33 .md files on disk; the four prerender = false opt-outs were confirmed by grep."
+    ],
+    "inferred": [
+      "Layer assignment is an editorial choice. The repo has no such grouping; it follows the import direction, which points one way throughout.",
+      "sts.py is described from its module docstring and subcommand list rather than from reading all ~4,400 lines.",
+      "Component and store descriptions come from names and a sample of files, not from reading all 30 components.",
+      "Deployment is read as Cloudflare Pages from adapter-auto plus static/_headers, the workerd notes in the Stripe webhook, and the cloudflareinsights CSP entries. No deployment config was inspected."
+    ],
+    "unknown": [
+      "Which sql/ migrations have actually been applied to the live database. Only sts.py schema can answer that, and it was not run.",
+      "Whether production is on live or test Stripe keys, and whether STRIPE_PRICE_ID_AUTHORS is set there. PROJECT-STATUS notes flag this as open.",
+      "How SvelteKit resolves the site-wide prerender = true against the GET endpoints under src/routes/api, none of which set it explicitly.",
+      "Whether the deployed site matches this tree at all: the working tree is dirty with 34 changed files.",
+      "Runtime behaviour generally. Nothing here was observed against a running server or a real transaction."
+    ]
+  }
+}

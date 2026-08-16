@@ -1,0 +1,51 @@
+id: ceabf0fdb01b4fac
+name: positive-control-every-absence-sweep
+version: '1.0'
+description: ''
+epistemic:
+  source_confidence: 0.8
+  teaching_quality: 0.8
+  reproducibility: 0.7
+  expected_delta:
+    know: 0
+    do: 0
+    context: 0
+    clarity: 0
+    coherence: 0
+    signal: 0
+    uncertainty: 0
+prerequisites: []
+steps: []
+relations: []
+corrections: []
+validation:
+  replay_count: 0
+  success_rate: 0.0
+  avg_completion_time_ms: 0
+  test_cases: []
+  success_criteria: ''
+  last_validated: null
+suggested_tier: free
+suggested_price: 0.0
+created_by: cli
+created_timestamp: 1785707591.178506
+updated_timestamp: 1785707591.178507
+tags: []
+domain: null
+abstraction_level: personal
+sharing_policy: private
+abstract_pattern: null
+parent_lesson_id: null
+entity_ids: []
+project_id: null
+org_id: null
+user_id: null
+trigger_type: null
+trigger_config: null
+output_format: markdown
+output_renderer: template
+output_config: null
+execution_count: 0
+feedback_score: 0.0
+last_executed: null
+last_feedback: null

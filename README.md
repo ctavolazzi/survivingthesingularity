@@ -105,7 +105,7 @@ This project is open source. If you want to fork it, remix it, or contribute fix
 
 - **Framework:** SvelteKit v2 + Vite v5
 - **Styling:** Tailwind CSS v3 + scoped component CSS, dark-only theme
-- **Auth/Database:** Supabase, server-side only through the service role (see "Database access" below)
+- **Database:** Supabase, server-side only through the service role (see "Database access" below). There is no auth; see the header of `src/hooks.server.js`.
 - **Fonts:** Inter (UI) + JetBrains Mono (numbers, code)
 - **Deployment:** adapter-auto (Cloudflare Pages target)
 
@@ -156,7 +156,7 @@ npm run dev -- --open
 ```
 
 Without `SUPABASE_SERVICE_KEY` in `.env`, `/api/waitlist` returns 503 and the
-signup form reports that signups are unavailable. Everything else works. There
+waitlist form reports that signups are unavailable. Everything else works. There
 is deliberately no anonymous-key fallback: `sql/012` revoked every `anon` grant,
 so such a fallback could only ever fail with `permission denied`.
 

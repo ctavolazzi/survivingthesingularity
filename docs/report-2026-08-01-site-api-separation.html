@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site API after the separation pass — 2026-08-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}
+</script>
+<style>
+:root{
+  --primary:#f59e0b; --primary-dark:#d97706; --primary-light:#fbbf24;
+  --secondary:#3b82f6; --secondary-light:#60a5fa;
+  --text:#f1f5f9; --text-2:#c3cddc; --muted:#94a3b8;
+  --bg:#020617; --bg-2:#0f172a; --bg-3:#1e293b;
+  --surface:rgba(30,41,59,.5); --surface-hi:rgba(30,41,59,.8);
+  --line:rgba(148,163,184,.14); --line-hi:rgba(148,163,184,.28);
+  --ok:#10b981; --err:#ef4444; --warn:#f59e0b;
+  --mono:'JetBrains Mono','Courier New',monospace;
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --max:1100px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:var(--sans); font-size:16px; line-height:1.7;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 1.5rem}
+h1,h2,h3{line-height:1.2; margin:0}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem); font-weight:800; letter-spacing:-.02em}
+h3{font-size:1.12rem; font-weight:700}
+p{margin:0 0 1rem}
+a{color:var(--primary-light)}
+code,.mono{font-family:var(--mono); font-size:.87em}
+.eyebrow{
+  font-family:var(--mono); font-size:.72rem; font-weight:700;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--primary);
+  margin-bottom:.8rem;
+}
+section{padding:5rem 0; border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.lede{font-size:1.08rem; color:var(--text-2); max-width:70ch}
+.muted{color:var(--muted)}
+
+/* reveal, scoped to .js so a script error cannot blank the page */
+.js .rv{opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1)}
+.js .rv.in{opacity:1; transform:none}
+
+/* ── hero ── */
+#hero{
+  position:relative; min-height:88vh; display:flex; align-items:center;
+  padding:4rem 0; overflow:hidden; border-top:0;
+}
+#hero canvas{position:absolute; inset:0; width:100%; height:100%; display:block}
+#hero::after{
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse 78% 62% at 50% 46%, rgba(2,6,23,.93) 0%, rgba(2,6,23,.78) 42%, rgba(2,6,23,.28) 72%, transparent 100%);
+}
+.hero-inner{position:relative; z-index:2; width:100%}
+h1{font-size:clamp(2.1rem,5.6vw,4rem); font-weight:800; letter-spacing:-.035em; max-width:19ch}
+h1 .hl{
+  background:linear-gradient(100deg,var(--primary) 0%,var(--primary-light) 55%,var(--secondary-light) 100%);
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+.hero-lede{margin-top:1.4rem; font-size:clamp(1rem,1.7vw,1.16rem); color:var(--text-2); max-width:62ch}
+
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(148px,1fr)); gap:1px; margin-top:2.6rem; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+.stat{background:var(--bg); padding:1.1rem 1.2rem}
+.stat .n{font-family:var(--mono); font-size:1.72rem; font-weight:700; color:var(--primary); line-height:1.1}
+.stat .n.bad{color:var(--err)}
+.stat .n.warn{color:var(--warn)}
+.stat .n.good{color:var(--ok)}
+.stat .l{font-size:.76rem; color:var(--muted); margin-top:.35rem; line-height:1.4}
+
+/* ── cards / grid ── */
+.grid{display:grid; gap:1rem}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:1.4rem}
+.card h3{margin-bottom:.5rem}
+.card p{font-size:.93rem; color:var(--text-2); margin-bottom:0}
+.card + .card{margin-top:0}
+
+/* ── scorecard ── */
+.score{border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-top:2rem}
+.score-row{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:1rem; padding:1.1rem 1.3rem; border-top:1px solid var(--line); align-items:start}
+.score-row:first-child{border-top:0}
+.score-row .ask{font-weight:600; font-size:.97rem}
+.score-row .detail{font-size:.88rem; color:var(--muted); margin-top:.3rem}
+.pill{font-family:var(--mono); font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:.3rem .6rem; border-radius:999px; white-space:nowrap; border:1px solid}
+.pill.done{color:var(--ok); border-color:rgba(16,185,129,.35); background:rgba(16,185,129,.1)}
+.pill.part{color:var(--warn); border-color:rgba(245,158,11,.35); background:rgba(245,158,11,.1)}
+.pill.open{color:var(--secondary-light); border-color:rgba(59,130,246,.35); background:rgba(59,130,246,.1)}
+.pill.drop{color:var(--muted); border-color:var(--line-hi); background:rgba(148,163,184,.08)}
+
+/* ── figure / svg ── */
+.fig{background:var(--bg-2); border:1px solid var(--line); border-radius:14px; padding:1.5rem; margin:2rem 0; overflow-x:auto}
+.fig svg{display:block; min-width:640px; width:100%; height:auto}
+.fig-cap{font-size:.84rem; color:var(--muted); margin-top:1rem; padding-top:1rem; border-top:1px solid var(--line)}
+
+/* ── table ── */
+.tw{overflow-x:auto; margin:2rem 0; border:1px solid var(--line); border-radius:12px}
+table{border-collapse:collapse; width:100%; min-width:660px; font-size:.9rem}
+th,td{padding:.85rem 1rem; text-align:left; border-top:1px solid var(--line); vertical-align:top}
+thead th{background:var(--bg-2); border-top:0; font-size:.72rem; font-family:var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:700}
+tbody tr.ctrl{background:rgba(59,130,246,.055)}
+td .mono{color:var(--text-2)}
+.tag{font-family:var(--mono); font-size:.68rem; font-weight:700; padding:.16rem .45rem; border-radius:4px; letter-spacing:.05em}
+.tag.red{color:var(--err); background:rgba(239,68,68,.13)}
+.tag.grn{color:var(--ok); background:rgba(16,185,129,.13)}
+.tag.blu{color:var(--secondary-light); background:rgba(59,130,246,.13)}
+
+/* ── 3d ── */
+#scene-wrap{position:relative; height:520px; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:linear-gradient(180deg,#050b1c 0%,#020617 100%); margin:2rem 0}
+#scene-wrap canvas{display:block; width:100%; height:100%}
+.scene-hint{position:absolute; left:1rem; bottom:1rem; font-family:var(--mono); font-size:.7rem; color:var(--muted); background:rgba(2,6,23,.72); padding:.35rem .6rem; border-radius:6px; border:1px solid var(--line); pointer-events:none}
+
+/* ── timeline ── */
+.tl{position:relative; margin-top:2.4rem; padding-left:1.9rem}
+.tl::before{content:''; position:absolute; left:6px; top:.5rem; bottom:.5rem; width:2px; background:linear-gradient(180deg,var(--primary),var(--secondary))}
+.tl-item{position:relative; padding-bottom:2rem}
+.tl-item::before{content:''; position:absolute; left:-1.9rem; top:.45rem; width:14px; height:14px; border-radius:50%; background:var(--bg); border:2px solid var(--primary)}
+.tl-item .sha{font-family:var(--mono); font-size:.74rem; color:var(--primary); font-weight:700}
+.tl-item h3{margin:.25rem 0 .4rem}
+.tl-item p{font-size:.92rem; color:var(--text-2); margin:0}
+
+/* ── next steps ── */
+details.step{border:1px solid var(--line); border-radius:12px; margin-bottom:.8rem; background:var(--surface); overflow:hidden}
+details.step[open]{border-color:var(--line-hi)}
+details.step summary{padding:1.1rem 1.3rem; cursor:pointer; display:flex; gap:1rem; align-items:center; list-style:none; font-weight:600}
+details.step summary::-webkit-details-marker{display:none}
+details.step summary::after{content:'+'; margin-left:auto; font-family:var(--mono); color:var(--muted); font-size:1.2rem; line-height:1}
+details.step[open] summary::after{content:'\2212'}
+.rank{font-family:var(--mono); font-size:.72rem; font-weight:700; color:var(--bg); background:var(--primary); width:24px; height:24px; border-radius:6px; display:grid; place-items:center; flex:none}
+.rank.b{background:var(--secondary)}
+.rank.c{background:var(--muted)}
+.step-body{padding:0 1.3rem 1.3rem; border-top:1px solid var(--line); padding-top:1.1rem}
+.step-body dl{margin:0; display:grid; grid-template-columns:auto minmax(0,1fr); gap:.55rem 1.1rem; font-size:.91rem}
+.step-body dt{font-family:var(--mono); font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding-top:.2rem}
+.step-body dd{margin:0; color:var(--text-2)}
+
+/* ── bottom line ── */
+.bl{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.2rem; margin-top:2rem}
+.bl-card{border-radius:14px; padding:1.6rem; border:1px solid}
+.bl-card.trust{border-color:rgba(16,185,129,.3); background:rgba(16,185,129,.06)}
+.bl-card.doubt{border-color:rgba(245,158,11,.3); background:rgba(245,158,11,.06)}
+.bl-card h3{margin-bottom:.9rem}
+.bl-card ul{margin:0; padding-left:1.1rem; font-size:.92rem; color:var(--text-2)}
+.bl-card li{margin-bottom:.6rem}
+.bl-card li:last-child{margin-bottom:0}
+
+footer{padding:3rem 0 4rem; border-top:1px solid var(--line); color:var(--muted); font-size:.84rem}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{transition-duration:.01ms}
+  .anim{animation:none !important}
+}
+@media (max-width:640px){
+  section{padding:3.4rem 0}
+  #scene-wrap{height:400px}
+  .step-body dl{grid-template-columns:1fr; gap:.25rem .5rem}
+  .step-body dd{margin-bottom:.7rem}
+}
+</style>
+</head>
+<body>
+<script>document.body.classList.add('js')</script>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="wrap hero-inner">
+    <div class="eyebrow rv">Session report &middot; 1 August 2026 &middot; sts-v0.7.3</div>
+    <h1 class="rv">The site API stopped <span class="hl">repeating itself</span>, and grew a gate that says so.</h1>
+    <p class="hero-lede rv">
+      Five consumers each re-derived what the book is from the same two files. The download
+      filename was spelled in four places, and on 2026-08-01 that cost a production 404.
+      Three waves collapsed the duplication to one reader per runtime, deleted the third
+      implementation entirely, and added a check that fails the build when the two survivors
+      disagree. One filter turned out to have been dead for some time.
+    </p>
+    <div class="stats rv">
+      <div class="stat"><div class="n">8&nbsp;&rarr;&nbsp;1</div><div class="l">places Python reads book.json</div></div>
+      <div class="stat"><div class="n">4&nbsp;&rarr;&nbsp;1</div><div class="l">definitions of the download filename</div></div>
+      <div class="stat"><div class="n">3&nbsp;&rarr;&nbsp;2</div><div class="l">resolver implementations, plus a drift gate</div></div>
+      <div class="stat"><div class="n bad">0</div><div class="l">sections the EPUB filter was excluding</div></div>
+      <div class="stat"><div class="n warn">5,239</div><div class="l">lines still in sts.py, 23 subcommands</div></div>
+      <div class="stat"><div class="n warn">0</div><div class="l">cross-references in the real manuscript</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SITUATION ══ -->
+<section id="situation">
+  <div class="wrap">
+    <div class="eyebrow rv">Situation</div>
+    <h2 class="rv">Scored against what you actually asked for</h2>
+    <p class="lede rv" style="margin-top:1rem">
+      You picked all three separations from the map, plus &ldquo;whatever other separations
+      of concerns you think are appropriate.&rdquo; Here is each one against its own words,
+      including the one I proposed and then withdrew.
+    </p>
+
+    <div class="score rv">
+      <div class="score-row">
+        <div>
+          <div class="ask">One resolver, three callers</div>
+          <div class="detail">
+            Delivered as <em>two</em> resolvers plus a parity gate, not one. The site cannot call
+            Python at build time, and the alternative dodge, emitting a generated JSON for the
+            site to import, trades two implementations for one implementation plus a staleable
+            artifact. The bash third copy was deleted outright.
+          </div>
+        </div>
+        <span class="pill part">Partial by design</span>
+      </div>
+      <div class="score-row">
+        <div>
+          <div class="ask">Automate the hand copy</div>
+          <div class="detail">
+            <code>npm run book:publish</code> derives every filename from book.json. Deliberately
+            not wired into prebuild: a copy on every build would ship whatever sat in
+            <code>book-build/</code>, which is worse than a missing file because it is a wrong
+            file that passes.
+          </div>
+        </div>
+        <span class="pill done">Closed</span>
+      </div>
+      <div class="score-row">
+        <div>
+          <div class="ask">Split sts.py internals</div>
+          <div class="detail">
+            Two concerns lifted into <code>scripts/sts_lib/</code>: the manifest reader and the
+            cross-reference rules, 197 lines behind an unchanged CLI. The index subsystem, art
+            catalog, Stripe, OG cards and the verify groups all still live in the one file.
+          </div>
+        </div>
+        <span class="pill part">Started, 2 of ~8</span>
+      </div>
+      <div class="score-row">
+        <div>
+          <div class="ask">Separate verify from build (my proposal)</div>
+          <div class="detail">
+            Withdrawn. I claimed from the diagram that sts.py &ldquo;grades its own output.&rdquo;
+            It does not. <code>verify_math</code>, <code>verify_meta</code>,
+            <code>verify_precedents</code> and <code>verify_refs</code> all read the book source
+            and site source; none reads <code>book-build/</code>. The map showed sts.py in two
+            bands because one file hosts both concerns, not because of a circular loop. No fix
+            was invented for it.
+          </div>
+        </div>
+        <span class="pill drop">Withdrawn, not a defect</span>
+      </div>
+      <div class="score-row">
+        <div>
+          <div class="ask">Judgment call: the dead EPUB filter</div>
+          <div class="detail">
+            Found while replacing the bash resolver. Not on your list; fixed anyway, because it
+            was the exact failure mode the change was meant to prevent.
+          </div>
+        </div>
+        <span class="pill done">Found and closed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHANGE 1 ══ -->
+<section id="change-one">
+  <div class="wrap">
+    <div class="eyebrow rv">What changed, part one</div>
+    <h2 class="rv">One string, spelled in four places</h2>
+    <p class="lede rv" style="margin-top:1rem">
+      The mechanism first. Every surface that offers the book built its own filename from
+      <code>book.json</code>&rsquo;s version field, using its own copy of the same template
+      literal. Nothing held those copies together, so they could disagree, and they did:
+      book.json said 0.7.4, <code>static/downloads/</code> held 0.7.2, and the link generated
+      correctly, pointed at a file that had never shipped, and 404&rsquo;d for every friend
+      handed the password.
+    </p>
+
+    <div class="fig rv">
+      <svg viewBox="0 0 900 300" role="img" aria-label="Four independent copies of the filename rule collapsing into one shared module">
+        <defs>
+          <linearGradient id="gA" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#f59e0b"/>
+          </linearGradient>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+          </marker>
+        </defs>
+
+        <!-- before -->
+        <text x="20" y="26" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="1.6">BEFORE &#183; FOUR DEFINITIONS</text>
+        <rect x="20" y="42" width="150" height="34" rx="6" fill="rgba(239,68,68,.1)" stroke="rgba(239,68,68,.4)"/>
+        <text x="32" y="63" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">/book route</text>
+        <rect x="20" y="86" width="150" height="34" rx="6" fill="rgba(239,68,68,.1)" stroke="rgba(239,68,68,.4)"/>
+        <text x="32" y="107" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">friends-only route</text>
+        <rect x="20" y="130" width="150" height="34" rx="6" fill="rgba(239,68,68,.1)" stroke="rgba(239,68,68,.4)"/>
+        <text x="32" y="151" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">download guard</text>
+        <rect x="20" y="174" width="150" height="34" rx="6" fill="rgba(239,68,68,.1)" stroke="rgba(239,68,68,.4)"/>
+        <text x="32" y="195" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">_redirects</text>
+
+        <text x="20" y="238" fill="#ef4444" font-family="JetBrains Mono, monospace" font-size="10">each spells it itself</text>
+        <text x="20" y="256" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="9">Surviving-the-Singularity-v${version}.${ext}</text>
+        <text x="20" y="278" fill="#ef4444" font-family="Inter, sans-serif" font-size="11" font-weight="700">&#8594; 404 in production, 2026-08-01</text>
+
+        <!-- arrows to hub -->
+        <path d="M175,59 C 260,59 300,130 380,146" stroke="#94a3b8" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".55"/>
+        <path d="M175,103 C 260,103 310,132 380,148" stroke="#94a3b8" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".55"/>
+        <path d="M175,147 C 260,147 320,150 380,150" stroke="#94a3b8" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".55"/>
+        <path d="M175,191 C 260,191 310,168 380,154" stroke="#94a3b8" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".55"/>
+
+        <!-- hub -->
+        <rect x="382" y="118" width="176" height="66" rx="10" fill="rgba(245,158,11,.12)" stroke="url(#gA)" stroke-width="1.6"/>
+        <text x="470" y="144" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">bookManifest.js</text>
+        <text x="470" y="163" fill="#c3cddc" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">assetName() &#183; downloadHref()</text>
+        <circle class="anim" cx="470" cy="151" r="52" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="34;60" dur="3.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values=".5;0" dur="3.4s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- after -->
+        <text x="600" y="26" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="1.6">AFTER &#183; ONE, IMPORTED</text>
+        <path d="M560,140 C 610,120 620,80 660,66" stroke="#f59e0b" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".7"/>
+        <path d="M560,146 C 610,138 620,116 660,110" stroke="#f59e0b" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".7"/>
+        <path d="M560,154 C 610,158 620,172 660,154" stroke="#f59e0b" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".7"/>
+        <path d="M560,160 C 610,178 620,200 660,198" stroke="#f59e0b" stroke-width="1.2" fill="none" marker-end="url(#ar)" opacity=".7"/>
+
+        <rect x="662" y="48" width="218" height="34" rx="6" fill="rgba(245,158,11,.08)" stroke="rgba(245,158,11,.35)"/>
+        <text x="674" y="69" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">/book route &#183; imports</text>
+        <rect x="662" y="92" width="218" height="34" rx="6" fill="rgba(245,158,11,.08)" stroke="rgba(245,158,11,.35)"/>
+        <text x="674" y="113" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">friends-only &#183; imports</text>
+        <rect x="662" y="136" width="218" height="34" rx="6" fill="rgba(245,158,11,.08)" stroke="rgba(245,158,11,.35)"/>
+        <text x="674" y="157" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">download guard &#183; imports</text>
+        <rect x="662" y="180" width="218" height="34" rx="6" fill="rgba(16,185,129,.08)" stroke="rgba(16,185,129,.35)"/>
+        <text x="674" y="201" fill="#f1f5f9" font-family="JetBrains Mono, monospace" font-size="10">book:publish &#183; NEW</text>
+        <text x="662" y="238" fill="#10b981" font-family="Inter, sans-serif" font-size="11" font-weight="700">the person no longer types the version</text>
+      </svg>
+      <div class="fig-cap">
+        The publish script is the new box. It copies <code>book-build/</code> into
+        <code>static/downloads/</code> with names derived from the manifest, and it is
+        idempotent by content hash, so re-running it after an unchanged rebuild is a no-op.
+        It is not in prebuild on purpose, and the guard now fails with
+        <code>fix: npm run book:publish</code> instead of a <code>cp</code> line to retype.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROOF ══ -->
+<section id="proof">
+  <div class="wrap">
+    <div class="eyebrow rv">Proof</div>
+    <h2 class="rv">Every guard was watched going red first</h2>
+    <p class="lede rv" style="margin-top:1rem">
+      A green check nobody has seen fail is not evidence, it is a decoration. Each row below
+      was run this session. The highlighted rows are the controls, and they are the reason the
+      other rows mean anything: the negative controls prove each guard does something rather
+      than nothing, and the positive controls prove normal use still works.
+    </p>
+
+    <div class="tw rv">
+      <table>
+        <thead>
+          <tr><th>What was run</th><th>Condition</th><th>Result</th><th>Exit</th></tr>
+        </thead>
+        <tbody>
+          <tr class="ctrl">
+            <td><span class="tag blu">NEG CTRL</span> <span class="mono">check-book-downloads</span></td>
+            <td>Shipped EPUB removed from <span class="mono">static/downloads/</span></td>
+            <td><span class="tag red">FAILED</span> named the file and <span class="mono">npm run book:publish</span></td>
+            <td class="mono">1</td>
+          </tr>
+          <tr>
+            <td><span class="mono">publish-book-downloads</span></td>
+            <td>Repair path after the above</td>
+            <td>Restored 21.12 MiB EPUB, sha256 identical to original</td>
+            <td class="mono">0</td>
+          </tr>
+          <tr class="ctrl">
+            <td><span class="tag blu">POS CTRL</span> <span class="mono">check-book-downloads</span></td>
+            <td>After publish</td>
+            <td><span class="tag grn">CLEAN</span> PDF 22.34 MiB, EPUB 21.12 MiB</td>
+            <td class="mono">0</td>
+          </tr>
+          <tr class="ctrl">
+            <td><span class="tag blu">NEG CTRL</span> <span class="mono">check-resolver-parity</span></td>
+            <td><span class="mono">shortLabel</span> broken in the JS rules</td>
+            <td><span class="tag red">FAILED</span> 30 disagreements, each section named</td>
+            <td class="mono">1</td>
+          </tr>
+          <tr class="ctrl">
+            <td><span class="tag blu">NEG CTRL</span> <span class="mono">check-resolver-parity</span></td>
+            <td><span class="mono">sectionIdFor</span> pointed at the wrong section</td>
+            <td><span class="tag red">FAILED</span> label mismatch, Chapter 1 vs Chapter 7</td>
+            <td class="mono">1</td>
+          </tr>
+          <tr class="ctrl">
+            <td><span class="tag blu">NEG CTRL</span> <span class="mono">check-resolver-parity</span></td>
+            <td><span class="mono">sectionIdFor</span> resolving to nothing</td>
+            <td><span class="tag red">FAILED</span> dropped-marker divergence caught</td>
+            <td class="mono">1</td>
+          </tr>
+          <tr>
+            <td><span class="mono">check-resolver-parity</span></td>
+            <td>Rules restored, fixture reverted</td>
+            <td><span class="tag grn">CLEAN</span> 30 sections agree across both runtimes</td>
+            <td class="mono">0</td>
+          </tr>
+          <tr class="ctrl">
+            <td><span class="tag blu">POS CTRL</span> <span class="mono">sts.py refs stress</span></td>
+            <td>After lifting the rules out and deleting <span class="mono">global BOOK_DIR</span></td>
+            <td><span class="tag grn">11/11</span> including <span class="mono">renumber.label_follows</span></td>
+            <td class="mono">0</td>
+          </tr>
+          <tr class="ctrl">
+            <td><span class="tag blu">POS CTRL</span> EPUB build, real toolchain</td>
+            <td>Section list from <span class="mono">sts.py book --files</span></td>
+            <td>33 xhtml sections, <strong>identical set</strong> to shipped v0.7.4</td>
+            <td class="mono">0</td>
+          </tr>
+          <tr>
+            <td><span class="mono">sts.py book --files</span> vs old jq pipeline</td>
+            <td>Direct diff of both outputs</td>
+            <td>Byte identical, 30 lines. No behavior change today</td>
+            <td class="mono">0</td>
+          </tr>
+          <tr>
+            <td>All 23 subcommands + full site build</td>
+            <td>After all three waves</td>
+            <td><span class="tag grn">CLEAN</span> 3 prebuild guards pass, built in 11.77s</td>
+            <td class="mono">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid g2 rv">
+      <div class="card">
+        <h3>Why the stress suite&rsquo;s green is not vacuous</h3>
+        <p>
+          <span class="mono">scan.finds_all</span> asserts it finds 3 cross-reference edges, and
+          the real manuscript contains zero. That assertion can only pass if the resolver is
+          genuinely reading the throwaway copy it was handed. The test proves its own wiring,
+          which is what made it safe to delete the global it used to rebind.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Why the parity check is half-exercised</h3>
+        <p>
+          It has two arms. The section arm compares all 30 titles and is fully live. The pointer
+          arm compares every <span class="mono">sts:</span> reference in the book, and there are
+          currently none, so it is vacuous on real content. I injected a real reference into a
+          chapter to exercise it, confirmed both failure modes, then reverted. Treat the pointer
+          arm as tested but not yet load-bearing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3D ══ -->
+<section id="scene">
+  <div class="wrap">
+    <div class="eyebrow rv">The moving part</div>
+    <h2 class="rv">Where the book comes from, now</h2>
+    <p class="lede rv" style="margin-top:1rem">
+      Drag to orbit. Two inputs at the top, the rule layer in the middle, consumers below.
+      The amber pulses are reads flowing from the manifest through the shared rules and out to
+      whoever asked. Before this session there was no middle layer: every consumer reached
+      straight past it to the manifest.
+    </p>
+
+    <div id="scene-wrap" class="rv">
+      <canvas id="scene-canvas"></canvas>
+      <div class="scene-hint">drag to orbit &middot; scroll page to continue</div>
+    </div>
+
+    <div class="grid g3 rv">
+      <div class="card">
+        <h3>The layer that did not exist</h3>
+        <p>
+          <span class="mono">sts_lib/manifest.py</span> and
+          <span class="mono">bookManifest.js</span>, 171 lines between them. One reads book.json
+          for all of Python, the other holds the rules every JS caller shares.
+        </p>
+      </div>
+      <div class="card">
+        <h3>The node that was deleted</h3>
+        <p>
+          <span class="mono">build-epub.sh</span> no longer parses the manifest. It asks
+          <span class="mono">sts.py book --files</span>, which is the same reader
+          <span class="mono">compile</span> and the index path already used.
+        </p>
+      </div>
+      <div class="card">
+        <h3>The edge that is new</h3>
+        <p>
+          <span class="mono">check-resolver-parity.mjs</span> runs both rule sets over the same
+          manifest and fails the build if one label disagrees. It costs 0.7s and sits in
+          prebuild.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHANGE 2 ══ -->
+<section id="change-two">
+  <div class="wrap">
+    <div class="eyebrow rv">What changed, part two</div>
+    <h2 class="rv">Two implementations, made honest</h2>
+    <p class="lede rv" style="margin-top:1rem">
+      A cross-reference is written as a pointer, <code>[](sts:chapter1)</code>, and rendered as
+      &ldquo;Chapter 1&rdquo; from the manifest, so renumbering a chapter rewrites the sentences
+      pointing at it rather than leaving prose that is quietly wrong. Something must turn the
+      pointer into words, and two runtimes need to: Python for the book builds, JavaScript for
+      the site, which cannot call Python at build time.
+    </p>
+    <p class="lede rv">
+      Three implementations existed. The bash one is gone. The remaining two are not held
+      together by discipline, they are held together by a gate.
+    </p>
+
+    <div class="fig rv">
+      <svg viewBox="0 0 900 260" role="img" aria-label="Python and JavaScript resolvers compared by a parity gate">
+        <defs>
+          <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+          </marker>
+        </defs>
+
+        <rect x="352" y="16" width="196" height="40" rx="8" fill="rgba(59,130,246,.1)" stroke="rgba(59,130,246,.45)"/>
+        <text x="450" y="41" fill="#60a5fa" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">book.json &#183; 30 sections</text>
+
+        <path d="M400,58 C 340,80 250,86 200,96" stroke="#94a3b8" stroke-width="1.2" fill="none" marker-end="url(#ar2)" opacity=".6"/>
+        <path d="M500,58 C 560,80 650,86 700,96" stroke="#94a3b8" stroke-width="1.2" fill="none" marker-end="url(#ar2)" opacity=".6"/>
+
+        <rect x="60" y="100" width="284" height="72" rx="10" fill="rgba(245,158,11,.09)" stroke="rgba(245,158,11,.4)"/>
+        <text x="202" y="126" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">sts_lib/refs.py &#183; canonical</text>
+        <text x="202" y="146" fill="#c3cddc" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">resolves against the manuscript index</text>
+        <text x="202" y="162" fill="#c3cddc" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">sections AND blocks &#183; raises on dangling</text>
+
+        <rect x="556" y="100" width="284" height="72" rx="10" fill="rgba(59,130,246,.09)" stroke="rgba(59,130,246,.4)"/>
+        <text x="698" y="126" fill="#60a5fa" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">bookManifest.js &#183; website</text>
+        <text x="698" y="146" fill="#c3cddc" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">resolves against book.json only</text>
+        <text x="698" y="162" fill="#c3cddc" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">sections &#183; drops a marker it cannot resolve</text>
+
+        <path d="M344,150 L 420,178" stroke="#f59e0b" stroke-width="1.4" fill="none" opacity=".8"/>
+        <path d="M556,150 L 480,178" stroke="#3b82f6" stroke-width="1.4" fill="none" opacity=".8"/>
+
+        <rect x="356" y="182" width="188" height="52" rx="10" fill="rgba(16,185,129,.1)" stroke="rgba(16,185,129,.5)" stroke-width="1.6"/>
+        <text x="450" y="204" fill="#10b981" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">check-resolver-parity</text>
+        <text x="450" y="222" fill="#c3cddc" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">disagree &#8594; build fails, section named</text>
+        <circle class="anim" cx="450" cy="208" r="40" fill="none" stroke="#10b981" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="26;58" dur="3.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values=".45;0" dur="3.8s" repeatCount="indefinite"/>
+        </circle>
+
+        <text x="60" y="208" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Python is deliberately stricter.</text>
+        <text x="60" y="224" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">That asymmetry is reported, not failed.</text>
+      </svg>
+      <div class="fig-cap">
+        The gate is directional. Both resolve but disagree, or Python resolves where the site
+        drops the marker: build fails. The site resolves where Python refuses: a note, because
+        Python checks block ids against the manuscript index and is meant to be stricter, and
+        its own build already stops first.
+      </div>
+    </div>
+
+    <div class="grid g2 rv">
+      <div class="card">
+        <h3>The filter that had already died</h3>
+        <p>
+          <span class="mono">build-epub.sh</span> excluded the print index with
+          <span class="mono">grep -v '^18-index.md$'</span>. There is no
+          <span class="mono">18-index.md</span> and no index section in book.json: the pattern
+          matched nothing while still reading like a live filter. Harmless today, a trap the
+          moment an index returns. The replacement excludes by section <em>id</em>, which
+          survives renumbering; filenames carry an ordinal prefix and do not.
+        </p>
+      </div>
+      <div class="card">
+        <h3>The global that hid a dependency</h3>
+        <p>
+          <span class="mono">ref_edges</span> read the module-level
+          <span class="mono">BOOK_DIR</span>, so the stress test declared
+          <span class="mono">global BOOK_DIR</span> and rebound it to a temp tree: a test faking
+          its environment by mutating a global owned by the module under test, leaving the real
+          manuscript one early <span class="mono">return</span> away from being the thing under
+          test. It now takes the directory as an argument. The global is gone.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TIMELINE ══ -->
+<section id="timeline">
+  <div class="wrap">
+    <div class="eyebrow rv">Timeline</div>
+    <h2 class="rv">Three commits, in order</h2>
+    <p class="lede rv" style="margin-top:1rem">
+      All on branch <code>v0.7.3</code>, none pushed. Each was committed by pathspec, because
+      this worktree carries staged and unstaged work from other sessions that a plain
+      <code>git commit</code> would have swept up.
+    </p>
+
+    <div class="tl rv">
+      <div class="tl-item">
+        <div class="sha">1910c3b</div>
+        <h3>Remove the person from the book download path</h3>
+        <p>
+          Shared JS rules module, the publish script, and four copies of the filename collapsed
+          to one. Bundles another session&rsquo;s uncommitted download guard, which this change
+          edits and therefore cannot be separated from.
+          <strong>It also swept in that session&rsquo;s unstaged rewrite of the friends-only
+          page</strong>, which I caught after committing and recorded in the amended message
+          rather than silently. Nothing broke: all three href bindings are still used and the
+          build passes.
+        </p>
+      </div>
+      <div class="tl-item">
+        <div class="sha">19b8c1a</div>
+        <h3>Three implementations of &ldquo;what the book is&rdquo; down to two, with a drift gate</h3>
+        <p>
+          <span class="mono">sts_lib/</span> created; the eight inline manifest reads in sts.py
+          become one; the bash resolver and its dead filter deleted; the parity check added and
+          wired into prebuild.
+        </p>
+      </div>
+      <div class="tl-item">
+        <div class="sha">62305dc</div>
+        <h3>Lift the cross-reference rules out of sts.py and kill the global they hid behind</h3>
+        <p>
+          <span class="mono">sts_lib/refs.py</span> takes the rules as pure functions. sts.py
+          loses 71 lines and gains 21, keeps its command handlers, and aliases the old private
+          names so the move did not become a rename touching every call site.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEXT ══ -->
+<section id="next">
+  <div class="wrap">
+    <div class="eyebrow rv">Next steps</div>
+    <h2 class="rv">Ranked by what breaks trust and what blocks money</h2>
+    <p class="lede rv" style="margin-top:1rem">
+      Not ranked by ease. The first item is the one that can still put a wrong file in a
+      reader&rsquo;s hands.
+    </p>
+
+    <details class="step rv" open>
+      <summary><span class="rank">1</span> Ship a version and watch the new path carry it</summary>
+      <div class="step-body">
+        <dl>
+          <dt>Situation</dt><dd>The publish and guard loop has been proven on a synthetic break: I deleted a shipped file and repaired it. It has never carried a real version bump end to end.</dd>
+          <dt>Why it matters</dt><dd>The 404 this work exists to prevent happened at version close, which is exactly the moment not yet exercised. A guard that has only seen an artificial failure is a guard with one untested branch.</dd>
+          <dt>Recommendation</dt><dd>At the next bump, run <code>scripts/build-epub.sh v0.7.5</code> then <code>npm run book:release</code>, and confirm <code>static/_redirects</code> regenerates with 0.7.4 appended to <code>RETIRED_VERSIONS</code>.</dd>
+          <dt>Expected outcome</dt><dd>Both artifacts land, the guard passes, and no version string is typed by a human anywhere in the process.</dd>
+          <dt>Blocked on</dt><dd>You, at the next version close. Note <code>RETIRED_VERSIONS</code> is still a hand-maintained list, the one place a version is still typed.</dd>
+        </dl>
+      </div>
+    </details>
+
+    <details class="step rv">
+      <summary><span class="rank">2</span> Decide whether the PDF moves to R2 now or later</summary>
+      <div class="step-body">
+        <dl>
+          <dt>Situation</dt><dd>The v0.7.4 PDF is 22.34 MiB against Cloudflare Pages&rsquo; hard 25 MiB asset ceiling. 2.66 MiB of headroom, and the book gains images every version.</dd>
+          <dt>Why it matters</dt><dd>Crossing the line fails the <em>deploy</em>, not the build, so it surfaces far from the change that caused it. The existing guard warns at 85 percent, which is firing now.</dd>
+          <dt>Recommendation</dt><dd>Move the book to an R2 public bucket on a subdomain and point <code>downloadHref</code> at it. R2 charges nothing for egress, so hosting cost does not change. Because the href is now generated in one place, this is a one-function change.</dd>
+          <dt>Expected outcome</dt><dd>The ceiling stops being a release risk permanently, and the illustrated edition can grow.</dd>
+          <dt>Blocked on</dt><dd>Your call on subdomain and bucket. Not urgent this version, near-certain by 0.7.6.</dd>
+        </dl>
+      </div>
+    </details>
+
+    <details class="step rv">
+      <summary><span class="rank b">3</span> Continue the sts.py split, one concern per commit</summary>
+      <div class="step-body">
+        <dl>
+          <dt>Situation</dt><dd>5,239 lines and 23 subcommands remain in one file. Two concerns are out; the index subsystem, art catalog, Stripe, OG cards and the verify groups are not.</dd>
+          <dt>Why it matters</dt><dd>It is the most-touched file in the repo. Every unrelated concern sharing it widens the blast radius of any edit, and this session found two real defects hiding in it.</dd>
+          <dt>Recommendation</dt><dd>Same pattern each time: lift the pure rule, leave the command handler, pass the path in rather than reading a global. The index subsystem is the natural next one, since refs already depends on it. One concern per commit, each with its own verification.</dd>
+          <dt>Expected outcome</dt><dd>Each extraction is independently reviewable. Batching them produces a diff nobody can review, which is why this session stopped at two.</dd>
+          <dt>Blocked on</dt><dd>Nothing. Pick it up whenever.</dd>
+        </dl>
+      </div>
+    </details>
+
+    <details class="step rv">
+      <summary><span class="rank b">4</span> Give the parity check something real to compare</summary>
+      <div class="step-body">
+        <dl>
+          <dt>Situation</dt><dd>The manuscript contains zero <code>sts:</code> cross-references, so the pointer arm of the parity check compares an empty set on every run.</dd>
+          <dt>Why it matters</dt><dd>The whole pointer mechanism, the thing that makes renumbering safe, is unused in production prose. It is proven by the stress suite and by my temporary fixture, but it has never rendered a reference to a real reader.</dd>
+          <dt>Recommendation</dt><dd>Convert a handful of existing hardcoded &ldquo;as we saw in Chapter N&rdquo; phrases in the prose into <code>[](sts:chapterN)</code> pointers. <code>sts.py refs list</code> will then have something to report and the gate becomes load-bearing.</dd>
+          <dt>Expected outcome</dt><dd>Renumbering a chapter stops being a manual find-and-replace across 30 files.</dd>
+          <dt>Blocked on</dt><dd>You, since it edits book prose and that is authorial territory, not mine.</dd>
+        </dl>
+      </div>
+    </details>
+
+    <details class="step rv">
+      <summary><span class="rank c">5</span> Untangle the other sessions&rsquo; work in this worktree</summary>
+      <div class="step-body">
+        <dl>
+          <dt>Situation</dt><dd>Nine files from other sessions sit staged in the index (factcheck trace, workshop data, v0.7.2 download deletions), plus unstaged edits across several routes. One of those edits landed inside commit 1910c3b.</dd>
+          <dt>Why it matters</dt><dd>CLAUDE.md warns about exactly this, and it caught me once today. Anyone committing here without a pathspec will sweep up work they did not write.</dd>
+          <dt>Recommendation</dt><dd>Review and commit or discard the staged set deliberately, so the next session starts from a clean index.</dd>
+          <dt>Expected outcome</dt><dd>Pathspec commits stop being mandatory, and the trap stops being armed.</dd>
+          <dt>Blocked on</dt><dd>You. I will not commit or discard another session&rsquo;s work without being asked.</dd>
+        </dl>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ══ BOTTOM LINE ══ -->
+<section id="bottom">
+  <div class="wrap">
+    <div class="eyebrow rv">Bottom line</div>
+    <h2 class="rv">What to rely on, and what not to yet</h2>
+
+    <div class="bl rv">
+      <div class="bl-card trust">
+        <h3>Safe to rely on</h3>
+        <ul>
+          <li><strong>The download filename has one definition.</strong> Four surfaces import it. The class of bug that 404&rsquo;d in production cannot recur from a copy drifting, because there are no copies.</li>
+          <li><strong>A forgotten publish fails the build.</strong> Watched: exit 1 with the file named, exit 0 after <code>npm run book:publish</code>.</li>
+          <li><strong>The EPUB build is behavior-preserving.</strong> Real pandoc and weasyprint run, producing a section set identical to the shipped v0.7.4.</li>
+          <li><strong>The section-label rule agrees across runtimes.</strong> All 30 verified, and the check was watched failing three different ways.</li>
+          <li><strong>The CLI surface is unchanged.</strong> All 23 subcommands parse and the ones touching the manifest were run, not just <code>--help</code>ed.</li>
+        </ul>
+      </div>
+      <div class="bl-card doubt">
+        <h3>Do not rely on yet</h3>
+        <ul>
+          <li><strong>The pointer arm of the parity check.</strong> Zero cross-references exist in the book, so it compares an empty set. Tested with an injected fixture, not by production content.</li>
+          <li><strong>The release path end to end.</strong> Proven against a synthetic deletion, never against a real version bump. <code>RETIRED_VERSIONS</code> is still hand-maintained.</li>
+          <li><strong>sts.py being &ldquo;split.&rdquo;</strong> Two concerns of roughly eight are out. It is 5,239 lines and still the most-touched file in the repo.</li>
+          <li><strong>Commit 1910c3b being only my work.</strong> It carries another session&rsquo;s guard and their unstaged rewrite of the friends-only page. Disclosed in the message; review before pushing.</li>
+          <li><strong>Anything about production.</strong> Nothing here was deployed or probed live. Every claim is local: build output, exit codes, and file contents on disk.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Generated 1 August 2026 from work in <span class="mono">~/Code/active/sts-v0.7.3</span> on branch
+    <span class="mono">v0.7.3</span>. Commits <span class="mono">1910c3b</span>,
+    <span class="mono">19b8c1a</span>, <span class="mono">62305dc</span>, none pushed.
+    Every number in this report came from a command run during the session.
+  </div>
+</footer>
+
+<script type="module">
+import * as THREE from 'three';
+
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ── reveal on scroll ── */
+const io = new IntersectionObserver((es) => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+document.querySelectorAll('.rv').forEach((el, i) => {
+  el.style.transitionDelay = Math.min(i % 6, 5) * 55 + 'ms';
+  io.observe(el);
+});
+
+/* ── shared: soft round sprite so points are not hard squares ── */
+function discTexture(size = 64) {
+  const c = document.createElement('canvas');
+  c.width = c.height = size;
+  const g = c.getContext('2d');
+  const grd = g.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+  grd.addColorStop(0,   'rgba(255,255,255,1)');
+  grd.addColorStop(0.35,'rgba(255,255,255,0.55)');
+  grd.addColorStop(1,   'rgba(255,255,255,0)');
+  g.fillStyle = grd;
+  g.fillRect(0, 0, size, size);
+  return new THREE.CanvasTexture(c);
+}
+const DISC = discTexture();
+
+/* ── hero particle field ── */
+(function hero(){
+  const canvas = document.getElementById('hero-canvas');
+  const host = document.getElementById('hero');
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(60, 1, 0.1, 100);
+  cam.position.set(0, 0, 26);
+  cam.lookAt(0, 0, 0);
+
+  const N = 900;
+  const pos = new Float32Array(N * 3);
+  const col = new Float32Array(N * 3);
+  const amber = new THREE.Color(0xf59e0b), blue = new THREE.Color(0x3b82f6);
+  for (let i = 0; i < N; i++) {
+    pos[i*3]   = (Math.random() - 0.5) * 62;
+    pos[i*3+1] = (Math.random() - 0.5) * 34;
+    pos[i*3+2] = (Math.random() - 0.5) * 26;
+    const c = Math.random() < 0.55 ? amber : blue;
+    const f = 0.35 + Math.random() * 0.65;
+    col[i*3] = c.r * f; col[i*3+1] = c.g * f; col[i*3+2] = c.b * f;
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  const pts = new THREE.Points(geo, new THREE.PointsMaterial({
+    size: 0.34, map: DISC, vertexColors: true, transparent: true,
+    depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0.9
+  }));
+  scene.add(pts);
+
+  function size(){
+    const w = host.clientWidth, h = host.clientHeight;
+    renderer.setSize(w, h, false);
+    cam.aspect = w / h; cam.updateProjectionMatrix();
+  }
+  size(); addEventListener('resize', size);
+
+  let t = 0;
+  (function loop(){
+    requestAnimationFrame(loop);
+    if (!reduced) { t += 0.0016; pts.rotation.y = t; pts.rotation.x = Math.sin(t * 0.6) * 0.09; }
+    renderer.render(scene, cam);
+  })();
+})();
+
+/* ── layered dependency scene ── */
+(function graph(){
+  const canvas = document.getElementById('scene-canvas');
+  const host = document.getElementById('scene-wrap');
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(52, 1, 0.1, 200);
+  cam.position.set(0, 7, 34);
+  cam.lookAt(0, 0, 0);
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.65));
+  const key = new THREE.DirectionalLight(0xffffff, 0.9); key.position.set(6, 12, 10); scene.add(key);
+
+  const root = new THREE.Group(); scene.add(root);
+
+  function label(text, color = '#f1f5f9') {
+    const c = document.createElement('canvas');
+    const ctx = c.getContext('2d');
+    ctx.font = '600 40px JetBrains Mono, monospace';
+    c.width = Math.ceil(ctx.measureText(text).width) + 24;
+    c.height = 56;
+    const g = c.getContext('2d');
+    g.font = '600 40px JetBrains Mono, monospace';
+    g.fillStyle = color; g.textBaseline = 'middle';
+    g.fillText(text, 12, 30);
+    const tex = new THREE.CanvasTexture(c);
+    tex.minFilter = THREE.LinearFilter;
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false }));
+    // /58 not /46: at the tighter scale the consumer-row labels overlapped into
+    // one unreadable string in a headless capture at 1500px wide.
+    sp.scale.set(c.width / 58, c.height / 58, 1);
+    return sp;
+  }
+
+  // layer y positions
+  const Y = { src: 7.5, rule: 1.5, use: -5 };
+
+  const NODES = [
+    { id:'md',   x:-4.5, y:Y.src,  label:'30 .md',        c:0x3b82f6, layer:'src' },
+    { id:'json', x: 4.5, y:Y.src,  label:'book.json',     c:0x3b82f6, layer:'src' },
+
+    { id:'pym',  x:-6,   y:Y.rule, label:'manifest.py',   c:0xf59e0b, layer:'rule' },
+    { id:'pyr',  x: 0,   y:Y.rule, label:'refs.py',       c:0xf59e0b, layer:'rule' },
+    { id:'jsm',  x: 6,   y:Y.rule, label:'bookManifest',  c:0xfbbf24, layer:'rule' },
+
+    { id:'cli',  x:-10.5, y:Y.use, label:'sts.py',        c:0x94a3b8, layer:'use' },
+    { id:'epub', x:-3.5,  y:Y.use, label:'epub.sh',       c:0x94a3b8, layer:'use' },
+    { id:'site', x: 3.5,  y:Y.use, label:'site',          c:0x94a3b8, layer:'use' },
+    { id:'gate', x: 10.5, y:Y.use, label:'parity',        c:0x10b981, layer:'use' }
+  ];
+
+  const EDGES = [
+    ['md','pym'], ['json','pym'], ['md','pyr'], ['json','jsm'],
+    ['pym','pyr'], ['pym','cli'], ['pyr','cli'], ['pym','epub'],
+    ['jsm','site'], ['pyr','gate'], ['jsm','gate']
+  ];
+
+  const byId = {};
+  NODES.forEach(n => {
+    const geo = n.layer === 'rule'
+      ? new THREE.IcosahedronGeometry(0.92, 1)
+      : new THREE.BoxGeometry(1.5, 0.7, 1.5);
+    const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
+      color: n.c, roughness: 0.42, metalness: 0.25,
+      emissive: n.c, emissiveIntensity: n.layer === 'rule' ? 0.42 : 0.16
+    }));
+    mesh.position.set(n.x, n.y, 0);
+    root.add(mesh);
+    const sp = label(n.label, '#' + new THREE.Color(n.c).getHexString());
+    sp.position.set(n.x, n.y + 1.5, 0);
+    root.add(sp);
+    byId[n.id] = mesh.position;
+  });
+
+  // layer plates
+  [[Y.src,0x3b82f6],[Y.rule,0xf59e0b],[Y.use,0x94a3b8]].forEach(([y,c]) => {
+    const g = new THREE.Mesh(
+      new THREE.PlaneGeometry(30, 7),
+      new THREE.MeshBasicMaterial({ color:c, transparent:true, opacity:0.045, side:THREE.DoubleSide })
+    );
+    g.rotation.x = -Math.PI / 2; g.position.set(0, y - 0.85, 0);
+    root.add(g);
+  });
+
+  // edges
+  const paths = [];
+  EDGES.forEach(([a,b]) => {
+    const p1 = byId[a], p2 = byId[b];
+    const mid = new THREE.Vector3().lerpVectors(p1, p2, 0.5);
+    mid.z += 1.6;
+    const curve = new THREE.QuadraticBezierCurve3(p1.clone(), mid, p2.clone());
+    const geo = new THREE.BufferGeometry().setFromPoints(curve.getPoints(34));
+    root.add(new THREE.Line(geo, new THREE.LineBasicMaterial({
+      color: 0x94a3b8, transparent: true, opacity: 0.3
+    })));
+    paths.push(curve);
+  });
+
+  // flowing pulses, seeded across the whole path so it flows rather than pulsing in waves
+  const PULSE = 60;
+  const pp = new Float32Array(PULSE * 3);
+  const state = [];
+  for (let i = 0; i < PULSE; i++) {
+    state.push({ curve: paths[i % paths.length], t: Math.random(), v: 0.0022 + Math.random() * 0.0034 });
+  }
+  const pgeo = new THREE.BufferGeometry();
+  pgeo.setAttribute('position', new THREE.BufferAttribute(pp, 3));
+  root.add(new THREE.Points(pgeo, new THREE.PointsMaterial({
+    color: 0xfbbf24, size: 0.46, map: DISC, transparent: true,
+    depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0.95
+  })));
+
+  function stepPulses(mult = 1) {
+    for (let i = 0; i < PULSE; i++) {
+      const s = state[i];
+      s.t += s.v * mult;
+      if (s.t > 1) s.t -= 1;
+      const p = s.curve.getPoint(s.t);
+      pp[i*3] = p.x; pp[i*3+1] = p.y; pp[i*3+2] = p.z;
+    }
+    pgeo.attributes.position.needsUpdate = true;
+  }
+  stepPulses(0);
+
+  // drag to orbit
+  let dragging = false, px = 0, ry = 0, rx = 0, autov = 0.0022;
+  canvas.style.cursor = 'grab';
+  canvas.addEventListener('pointerdown', e => { dragging = true; px = e.clientX; canvas.style.cursor = 'grabbing'; canvas.setPointerCapture(e.pointerId); });
+  canvas.addEventListener('pointerup',   e => { dragging = false; canvas.style.cursor = 'grab'; });
+  canvas.addEventListener('pointermove', e => {
+    if (!dragging) return;
+    ry += (e.clientX - px) * 0.006; px = e.clientX;
+  });
+
+  function size(){
+    const w = host.clientWidth, h = host.clientHeight;
+    renderer.setSize(w, h, false);
+    cam.aspect = w / h; cam.updateProjectionMatrix();
+  }
+  size(); addEventListener('resize', size);
+
+  (function loop(){
+    requestAnimationFrame(loop);
+    if (!reduced) {
+      if (!dragging) ry += autov;
+      stepPulses(1);
+    }
+    rx += (Math.sin(Date.now() * 0.00016) * 0.06 - rx) * 0.02;
+    root.rotation.y = ry;
+    root.rotation.x = rx;
+    renderer.render(scene, cam);
+  })();
+})();
+</script>
+</body>
+</html>

@@ -38,27 +38,28 @@ A SvelteKit web platform for the **YouTube Shouse Blueprint** — a comprehensiv
                        featured-posts, verify-book-password, unsubscribe,
                        fetch-title, discord-application
 ```
-Accounts (added 2026-08-01):
-```
-/signup                   → create account / sign in (?mode=signin), form actions
-/auth/oauth/[provider]    → GET, starts Google/GitHub OAuth (allowlisted)
-/auth/callback            → GET, exchanges the code or token_hash for a session
-/auth/signout             → POST only
-```
-(There are still no /blueprint, /login, or /profile routes — removed in a past
-redesign; don't link to them. `/signup` is the sign-in surface, not `/login`.)
+**There is no auth.** Accounts, sign-in and sessions existed between 2026-08-01
+and 2026-08-04, then CT killed them by ruling: "kill user profiles. Kill
+accounts. Kill sign in." `/signup`, `/auth/*`, `supabaseAuth.js`, `authErrors`,
+`authRateLimit`, `passwordPolicy` and `probe-auth-flow.mjs` are all gone from
+disk. Do not link to them, do not restore them casually, and do not believe an
+older doc that describes them. Read the header of `src/hooks.server.js` for the
+ruling and its reasoning before touching this.
 
-Auth is **server-side only**: no browser Supabase client, no key in the bundle,
-session in httpOnly cookies. Read `src/lib/server/supabaseAuth.js` before
-changing any of it. Verify with `node scripts/probe-auth-flow.mjs <url>` — and
-run it against `npm run preview`, not `vite dev`, because SvelteKit disables its
-CSRF origin check in dev (`if (!DEV)` in kit's respond.js), so the cross-origin
-check is meaningless there. The probe detects this and says SKIP.
+The identity model is **the purchase email**: buyers are recognised by the
+address they paid with, via the transactions ledger the Stripe webhook writes.
+No passwords, no sessions, no cookies to protect, no OAuth surface.
+
+(There are also no /blueprint, /login, or /profile routes, removed in an earlier
+redesign. Nothing in the site is a sign-in surface.)
+
+Two orphans survive the teardown and are referenced by nothing:
+`src/lib/stores/session.js` and `src/routes/api/session/+server.js`. The build
+is green either way; delete them when convenient.
 
 ## Key Files
-- `src/hooks.server.js`: resolves the session per request into `event.locals`, sets security headers.
+- `src/hooks.server.js`: sets security headers. Read its header for the no-auth ruling.
 - `src/lib/server/supabaseAdmin.js`: data client. Service role, server-only, bypasses RLS.
-- `src/lib/server/supabaseAuth.js`: auth client. Request-scoped GoTrue, server-only. Read its header.
 - `src/lib/data/blueprint.js` — All blueprint content (8 sections with prose, tables, callouts, directives)
 - `src/routes/blog/+page.server.js` — Blog listing (hardcoded `posts` array; new posts must be added here)
 - `src/lib/components/Navbar.svelte`: main nav. Its `user` prop is vestigial and unused.
@@ -70,8 +71,9 @@ There is no browser-side Supabase client. Every query goes through
 `src/lib/server/supabaseAdmin.js` on the service role, so the bundle ships no
 publishable/anon key and the build needs no Supabase env set at all.
 
-Set `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, and `SUPABASE_ANON_KEY` (server-only,
-no `PUBLIC_` prefix, holds the publishable key that auth needs). Do NOT add
+Set `SUPABASE_URL` and `SUPABASE_SERVICE_KEY`. `SUPABASE_ANON_KEY` was wanted by
+the auth surface and nothing in `src/` reads it since the accounts teardown; only
+`scripts/sts.py`'s env probe still names it. Do NOT add
 `PUBLIC_SUPABASE_*` or create a browser client: `src/lib/supabase.js` was deleted
 in WO-08 (`docs/work-orders-2026-07-28.md`) for exactly that reason. Supabase's
 own SvelteKit quickstart panel tells you to recreate it; ignore it. Anon holds no

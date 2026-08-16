@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 15 Aug 2026 13:35:04 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 16 Aug 2026 13:36:02 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization</title>
@@ -36,25 +36,11 @@
       <description>Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across function... [Score: 12.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Zhihao Liu, Tianyu Wang, et al.</description>
     </item>
     <item>
-      <title>Scaling Behavior Foundation Model for Humanoid Robots</title>
-      <link>https://arxiv.org/abs/2607.15163</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.15163</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Humanoid control requires natural whole-body coordination, precise real-time responses to control signals, and robust generalization across diverse environmental contexts, making it a cornerstone for generalist embodied agents. Behavior Foundation Models (BFMs) have recently emerged as a promising s... [Score: 11.5 | Flagged for: agi, foundation model, agent, embodied, humanoid] Authors: Weishuai Zeng, Kangning Yin, et al.</description>
-    </item>
-    <item>
       <title>Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection</title>
       <link>https://arxiv.org/abs/2608.06865</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.06865</guid>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <description>The malicious use of generative artificial intelligence to create highly realistic deepfake videos raises serious ethical concerns and poses substantial challenges to AI safety. However, existing deepfake video benchmarks provide limited coverage of recent synthesis methods and generally lack reliab... [Score: 11.0 | Flagged for: agent, multi-agent, reasoning, ai safety, llm] Authors: Xuechao Zou, Shun Zhang, et al.</description>
-    </item>
-    <item>
-      <title>Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents</title>
-      <link>https://arxiv.org/abs/2607.15095</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.15095</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <description>The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement ... [Score: 11.0 | Flagged for: agent, multi-agent, alignment, rlhf, llm] Authors: Dylan Van Mulders, Matthias Bogaert, et al.</description>
     </item>
     <item>
       <title>When Coordination Becomes a Threat: Communication Attacks in LLM-Controlled Multi-Robot Systems</title>
@@ -125,13 +111,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.19190</guid>
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
       <description>Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajec... [Score: 10.0 | Flagged for: world model, foundation model, agent, agentic, alignment] Authors: Guanxiong Chen, Qianjun Xia, et al.</description>
-    </item>
-    <item>
-      <title>RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning</title>
-      <link>https://arxiv.org/abs/2607.14512</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14512</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Multi-step retrosynthesis planning seeks to decompose a target molecule into commercially available building blocks through a sequence of feasible reactions. The vast combinatorial search space makes this task challenging even for expert chemists. Traditional methods combine tree search with offline... [Score: 10.0 | Flagged for: agent, agentic, planning, reasoning, llm] Authors: Yanqiao Zhu, Jingru Gan, et al.</description>
     </item>
     <item>
       <title>Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy</title>
@@ -216,6 +195,27 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.21912</guid>
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
       <description>Communication allows large language model agents to pool evidence, but it also creates paths along which an erroneous claim can spread. We formulate a correction-aware network model that tracks susceptible, exposed, infectious, and corrected agents and derive its early-invasion condition for heterog... [Score: 9.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Ruiwu Niu, Xincheng Shu, et al.</description>
+    </item>
+    <item>
+      <title>StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems</title>
+      <link>https://arxiv.org/abs/2608.13317</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.13317</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Large language model based multi-agent systems usually communicate in text, i.e., using discrete tokens. However, text introduces a discrete bottleneck. Converting the sender's continuous hidden states into discrete tokens discards information that token identities alone cannot capture. Recent work ... [Score: 8.5 | Flagged for: agent, multi-agent, alignment, llm, language model] Authors: Yanwen Peng, Delvin Ce Zhang, et al.</description>
+    </item>
+    <item>
+      <title>Contextual Information Policy Optimization for Search Agents</title>
+      <link>https://arxiv.org/abs/2608.06128</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.06128</guid>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Search agents extend large language models beyond static parametric memory by enabling them to acquire and use ex ternal evidence during multi-step reasoning. For knowledge intensive tasks involving complex or evolving information, their reliability depends not only on retrieving relevant ev idence ... [Score: 8.5 | Flagged for: agent, reasoning, alignment, language model, retrieval] Authors: Xingyu Guo, Wei Chen, et al.</description>
+    </item>
+    <item>
+      <title>RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation</title>
+      <link>https://arxiv.org/abs/2608.03387</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.03387</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Humanoid robots have the potential to perform dexterous manipulation in human environments, yet acquiring diverse and generalizable skills remains costly due to expensive hardware data collection and labor-intensive annotation. Recent advances in video generative models provide a promising opportuni... [Score: 8.5 | Flagged for: agi, agent, agentic, humanoid, robot] Authors: Shuliang He, Shuai Wang, et al.</description>
     </item>
   </channel>
 </rss>

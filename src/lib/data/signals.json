@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:35:04Z",
+  "generated_at": "2026-08-16T13:36:02Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -116,34 +116,6 @@
       ]
     },
     {
-      "id": "2607.15163",
-      "source": "arxiv",
-      "title": "Scaling Behavior Foundation Model for Humanoid Robots",
-      "url": "https://arxiv.org/abs/2607.15163",
-      "authors": [
-        "Weishuai Zeng",
-        "Kangning Yin",
-        "Xiaojie Niu",
-        "Shunlin Lu"
-      ],
-      "summary": "Humanoid control requires natural whole-body coordination, precise real-time responses to control signals, and robust generalization across diverse environmental contexts, making it a cornerstone for generalist embodied agents. Behavior Foundation Models (BFMs) have recently emerged as a promising solution to address these challenges by leveraging large-scale behavioral data to achieve superior expressiveness, versatility and generalization. However, despite growing interest in scaling BFMs to further improve their capabilities, it remains unclear how key factors, including the learning paradi",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-16",
-      "score": 11.5,
-      "raw_score": 23,
-      "matched_keywords": [
-        "agi",
-        "foundation model",
-        "agent",
-        "embodied",
-        "humanoid",
-        "robot",
-        "scaling",
-        "rag"
-      ]
-    },
-    {
       "id": "2608.06865",
       "source": "arxiv",
       "title": "Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection",
@@ -168,32 +140,6 @@
         "llm",
         "language model",
         "rag"
-      ]
-    },
-    {
-      "id": "2607.15095",
-      "source": "arxiv",
-      "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
-      "url": "https://arxiv.org/abs/2607.15095",
-      "authors": [
-        "Dylan Van Mulders",
-        "Matthias Bogaert",
-        "Dirk Van den Poel"
-      ],
-      "summary": "The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement Learning from Human Feedback (RLHF) prevent them from sustaining steadfast partisan behaviour. We present a multi-agent framework that reconciles factual grounding with ideological alignment by combining Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Retrieval-Augmented Gene",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-16",
-      "score": 11.0,
-      "raw_score": 22,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "alignment",
-        "rlhf",
-        "llm",
-        "language model",
-        "retrieval"
       ]
     },
     {
@@ -451,33 +397,6 @@
         "agentic",
         "alignment",
         "robot"
-      ]
-    },
-    {
-      "id": "2607.14512",
-      "source": "arxiv",
-      "title": "RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning",
-      "url": "https://arxiv.org/abs/2607.14512",
-      "authors": [
-        "Yanqiao Zhu",
-        "Jingru Gan",
-        "Xiaoqi Sun",
-        "Fang Sun"
-      ],
-      "summary": "Multi-step retrosynthesis planning seeks to decompose a target molecule into commercially available building blocks through a sequence of feasible reactions. The vast combinatorial search space makes this task challenging even for expert chemists. Traditional methods combine tree search with offline-trained value networks that score candidates in isolation, without reasoning about complete multi-step routes. Recent work leverages Large Language Models (LLMs) for this task, but relies on simple interfaces that limit exploration of the full search space. We introduce RetroAgent, an LLM agent tha",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-16",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "planning",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
       ]
     },
     {
@@ -789,32 +708,6 @@
       ]
     },
     {
-      "id": "2607.14561",
-      "source": "arxiv",
-      "title": "MARS: Multi-hop Adaptive Retrieval and SPARQL Generation for KGQA",
-      "url": "https://arxiv.org/abs/2607.14561",
-      "authors": [
-        "Nikit Srivastava",
-        "Daniel Vollmers",
-        "René Speck",
-        "Nikolaos Karalis"
-      ],
-      "summary": "Large language models (LLMs) have demonstrated strong reasoning performance, but their tendency to hallucinate limits their reliability in knowledge-intensive tasks requiring up-to-date and grounded information. Combining knowledge graphs (KGs) with LLMs facilitates the use of explicit symbolic knowledge that can be continuously updated without costly fine-tuning, while benefiting from rapidly advancing LLM reasoning. We propose MARS, a scalable knowledge graph question answering (KGQA) approach that requires no model fine-tuning. Rather than relying on open-ended agentic exploration, MARS per",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-16",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval"
-      ]
-    },
-    {
       "id": "2608.13317",
       "source": "arxiv",
       "title": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
@@ -1061,56 +954,6 @@
         "alignment",
         "llm",
         "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.15257",
-      "source": "arxiv",
-      "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
-      "url": "https://arxiv.org/abs/2607.15257",
-      "authors": [
-        "Yuyao Zhang",
-        "Junjie Gao",
-        "Zhengxian Wu",
-        "Jiaming Fan"
-      ],
-      "summary": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-agent framework that turns fragile, implicit search progress into explicit, persistent, and shared stat",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-16",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.15207",
-      "source": "arxiv",
-      "title": "BadWAM: When World-Action Models Dream Right but Act Wrong",
-      "url": "https://arxiv.org/abs/2607.15207",
-      "authors": [
-        "Qi Li",
-        "Xingyi Yang",
-        "Xinchao Wang"
-      ],
-      "summary": "World-action models (WAMs) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world prediction. This coupling is often viewed as a source of robustness, interpretability, and safety, as a robot's action can in principle be checked against its imagined future. In this paper, we show that this assumption is fragile. We introduce BadWAM, a unified framework for modeling and evaluating World-Action Drift Attacks: a new class of WAM-specific adversarial attacks that use small visual ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-16",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "interpretability",
-        "interpret",
-        "embodied",
-        "robot",
         "rag"
       ]
     },
@@ -1530,6 +1373,155 @@
         "interpret",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.13160",
+      "source": "arxiv",
+      "title": "Better Decomposition, Free Aggregation: A Synthesizer-Folding Framework for Multilingual Multi-Hop Question Answering",
+      "url": "https://arxiv.org/abs/2608.13160",
+      "authors": [
+        "Yilin Wang",
+        "Yuchun Fan",
+        "Weidong Bao",
+        "Zili Wei"
+      ],
+      "summary": "Multilingual retrieval-augmented generation (mRAG) equips large language models with access to globally distributed external knowledge for complex multilingual question answering. Recent approaches either translate retrieved documents into English or the query language to bridge the cross-lingual semantic gap, or decompose a complex query into sub-questions and aggregate the intermediate reasoning process. However, both lines of work suffer from two limitations. First, one-size-fits-all translation alignment, blanket translation discards culturally and linguistically native information unique ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-13",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "reasoning",
+        "alignment",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.13474",
+      "source": "arxiv",
+      "title": "Decoding Task Progress from VLA Representations",
+      "url": "https://arxiv.org/abs/2608.13474",
+      "authors": [
+        "Atiksh Bhardwaj",
+        "Edward Weiyi Duan",
+        "Prithwish Dan",
+        "Wei-Chiu Ma"
+      ],
+      "summary": "Vision-language-action models (VLAs) are moving rapidly towards deployment as general-purpose manipulation policies, but we currently lack basic tools for understanding what these models represent internally or for monitoring them at runtime. Leveraging ideas from mechanistic interpretability, we probe the residual stream of $π_{0.5}$ and find that task progress, the normalized time remaining in a trajectory, is linearly readable from the activations. We find that this signal is present in the pretrained PaliGemma backbone prior to training on any robot-specific data. A single linear probe gen",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-13",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "interpretability",
+        "interpret",
+        "robot",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.13103",
+      "source": "arxiv",
+      "title": "S2-HWM: Sparse Event-Structured Hierarchical World Model for Long-Horizon Surgical Robot Manipulation",
+      "url": "https://arxiv.org/abs/2608.13103",
+      "authors": [
+        "Shuzhe Zhang",
+        "Xin Zhu",
+        "Yinling Qian",
+        "Qiong Wang"
+      ],
+      "summary": "Long-horizon surgical robot manipulation is challenging because task rewards are sparse, while meaningful interaction changes occur at irregular intervals. Existing world-model agents typically imagine at primitive-step resolution, leaving variable-duration task progress implicit. Manually specified stages can provide intermediate structure, but their task specific boundaries are difficult to align with state-dependent interaction transitions. We propose S2-HWM, a Sparse Event-Structured Hierarchical World Model that learns sparse event evidence from primitive latent trajectories to coordinate",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-13",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "world model",
+        "agent",
+        "robot"
+      ]
+    },
+    {
+      "id": "2608.12854",
+      "source": "arxiv",
+      "title": "BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving",
+      "url": "https://arxiv.org/abs/2608.12854",
+      "authors": [
+        "Bing Zhan",
+        "Shuyao Shang",
+        "Jiahao Gu",
+        "Shuo Lu"
+      ],
+      "summary": "Autonomous driving requires planning under both semantic constraints and predictive dynamics. Existing end-to-end driving approaches, however, typically emphasize only one side of this requirement: Vision-Language-Action (VLA) models exploit VLM priors for semantic reasoning, while World Action Models (WAMs) provide future-aware prediction through generative world modeling. This naturally motivates a unified planner that can leverage both semantic priors and predictive dynamics. However, we find that a naive combination through joint token-level attention suffers from an attention-allocation m",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-13",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "world model",
+        "autonomous",
+        "planning",
+        "reasoning",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.11876",
+      "source": "arxiv",
+      "title": "D3D-GEN: Robot-Aware Domain-Grounded Interactive 3D World Generation for Social Robotics",
+      "url": "https://arxiv.org/abs/2608.11876",
+      "authors": [
+        "Anh Duc Do",
+        "Volodymyr Scherbyna",
+        "Tai Duc Nguyen",
+        "Spaarsh Thakkar"
+      ],
+      "summary": "Training and validation of Embodied AI for social navigation critically depends on realistic simulation environments, yet many current approaches fail to find a balance between realism and simulability. We propose D3D-GEN, a novel world generation system that combines a domain agent with a retrieval-augmented generation (RAG) pipeline grounded in that domain. Our system enables users to rapidly generate domain-grounded, fully interactive 3D worlds by automating both the collection of domain knowledge and the synthesis of realistic floorplans and object placements, without dependence on any fix",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-12",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "embodied",
+        "robot",
+        "robotics",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.13476",
+      "source": "arxiv",
+      "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+      "url": "https://arxiv.org/abs/2608.13476",
+      "authors": [
+        "Saisha Shetty",
+        "Satvik Tripathi",
+        "Austin Lin",
+        "Colin Zhao"
+      ],
+      "summary": "We present Multi-Agent Reasoning and Coordination (MARC), an open-source framework that replaces monolithic LLM prompting with deterministic multi-agent orchestration for clinical reasoning. MARC coordinates role-specialized agents for extraction, reasoning, answer generation, and evaluation, with explicit context passing and traceable intermediate outputs, enabling stage-wise failure attribution. We additionally introduce a Decomposer module that generates task-specific agent prompts from a plain-language description, eliminating manual prompt engineering. The framework supports both API-base",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-13",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm"
       ]
     }
   ]

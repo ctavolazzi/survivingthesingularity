@@ -1,0 +1,501 @@
+{
+  "meta": {
+    "title": "The book, and everything downstream of it",
+    "eyebrow": "provenance / sts v0.7.4",
+    "tagline": "Every word a reader ever sees starts in 30 Markdown files and one manifest. This is the map of what reads those files, what they become, and where a change can silently fail to arrive.",
+    "footer": "Counts measured on 2026-08-01 against the working tree at /Users/ctavolazzi/Code/active/sts-v0.7.3. Claim numbers come from a live run of sts.py factcheck, not from a document.",
+    "description": "A derivation map of Surviving the Singularity: the single source of truth for book copy, the five consumers that read it, and every artifact and public surface generated from it."
+  },
+
+  "facts": [
+    { "label": "the origin", "value": "30 files", "note": "27 sections plus 3 part dividers" },
+    { "label": "words", "value": "91,954", "note": "block index, sts.py id verify" },
+    { "label": "consumers", "value": "5", "note": "no editable copies" },
+    { "label": "claims traced", "value": "1,242", "note": "1,242 of 1,242 resolvable" },
+    { "label": "book version", "value": "0.7.4", "note": "book.json is the authority" },
+    { "label": "decoy book.json", "value": "9", "note": "across ~/Code/active" }
+  ],
+
+  "layers": [
+    { "id": "origin",   "name": "The origin",  "blurb": "Two inputs. Neither is the book alone." },
+    { "id": "readers",  "name": "What reads it", "blurb": "Five consumers plus the claim harness." },
+    { "id": "outputs",  "name": "What it becomes", "blurb": "Generated artifacts. All overwritten on rebuild." },
+    { "id": "surfaces", "name": "Public surfaces", "blurb": "Routes and promotional cuts readers meet." },
+    { "id": "guards",   "name": "Drift guards", "blurb": "Checks that point back up at the source." }
+  ],
+
+  "nodes": [
+    {
+      "id": "book-md",
+      "layer": "origin",
+      "kind": "data",
+      "name": "30 Markdown files",
+      "blurb": "The prose. One file per section, plus three part dividers. This is the only place book text may be edited.",
+      "detail": "33 .md files sit in this directory; 30 are the book. ELIJAH-PROTOCOL.md (the two-voice bible), VOICE-GUIDE.md and README.md live alongside them and are deliberately excluded by the manifest, which is how they stay out of the manuscript without leaving the folder. Two sibling directories look like the source and are not: src/lib/data/book-v1-archive/ carries near-identical filenames from an older draft, and src/lib/data/sample.md is stale promo copy. Nothing imports either.",
+      "files": [
+        "src/lib/data/book/00-chapter0.md",
+        "src/lib/data/book/02-introduction.md",
+        "src/lib/data/book/03-chapter1.md",
+        "src/lib/data/book/23-appendix-b.md",
+        "src/lib/data/book/part1-divider.md",
+        "src/lib/data/book/ELIJAH-PROTOCOL.md",
+        "src/lib/data/book/VOICE-GUIDE.md"
+      ],
+      "tech": ["markdown"],
+      "loc": 4722,
+      "fileCount": 30,
+      "verified": true
+    },
+    {
+      "id": "book-json",
+      "layer": "origin",
+      "kind": "config",
+      "name": "book.json manifest",
+      "blurb": "Decides which files are the book, in what order, under what titles, at what version. A .md file not listed here is not in the book.",
+      "detail": "This is a real gate, not a convention. scripts/build-epub.sh reads the list with jq -r '.sections[].file'; src/lib/bookContent.js imports the same manifest so the site derives its running order from one place. It also carries the version, title and subtitle that become EPUB and PDF metadata, and the version string that the download URLs on /book and /exclusive-friends-only are built from.",
+      "files": ["src/lib/data/book/book.json"],
+      "tech": ["json"],
+      "loc": 178,
+      "fileCount": 1,
+      "verified": true
+    },
+
+    {
+      "id": "bookcontent",
+      "layer": "readers",
+      "kind": "lib",
+      "name": "bookContent.js",
+      "blurb": "The website's reader. Imports the manifest, lazily globs the Markdown, and expands internal cross-references before anything renders.",
+      "detail": "Cross-references are written as pointers, not numbers: [](sts:chapter1) renders as 'Chapter 1' from the manifest title. Renumbering a chapter therefore rewrites every sentence that points at it instead of leaving prose that is quietly wrong. sts.py owns the canonical resolver that the EPUB and PDF builds use; this file is the same rule reimplemented for the site, which cannot call Python at build time.",
+      "files": ["src/lib/bookContent.js"],
+      "tech": ["javascript", "vite"],
+      "loc": 507,
+      "fileCount": 1,
+      "verified": true
+    },
+    {
+      "id": "epub-build",
+      "layer": "readers",
+      "kind": "build",
+      "name": "build-epub.sh",
+      "blurb": "Builds the shipping EPUB and the review PDF from the manifest order, via pandoc and weasyprint.",
+      "detail": "Reads the file list straight out of book.json, prefixes footnote ids per chapter so they stay unique, copies static/book-images/ into a temp tree, and expands sts: cross-references with sts.py refs render. Output lands in book-build/.",
+      "files": ["scripts/build-epub.sh"],
+      "tech": ["bash", "pandoc", "weasyprint"],
+      "fileCount": 1,
+      "verified": true
+    },
+    {
+      "id": "pdf-variants",
+      "layer": "readers",
+      "kind": "build",
+      "name": "PDF variants build",
+      "blurb": "Builds the PLAIN and DELUXE PDFs. The reading floor and the design ceiling, from the same source.",
+      "detail": "PLAIN strips images and their caption lines entirely. DELUXE adds running chapter headers, drop caps, styled pull quotes, TOC dot leaders with live page numbers and ornamental rules. The shipping draft sits deliberately between the two.",
+      "files": ["scripts/build-pdf-variants.sh"],
+      "tech": ["bash", "weasyprint"],
+      "fileCount": 1,
+      "verified": true
+    },
+    {
+      "id": "sts-cli",
+      "layer": "readers",
+      "kind": "build",
+      "name": "sts.py",
+      "blurb": "The project API. 22 verbs over the book and the site, stdlib only. Compiles drafts, builds the block index, counts words, verifies the math.",
+      "detail": "sts.py compile concatenates the source in manifest order into a manuscript snapshot. sts.py id build writes a stable unique id for every block into a sidecar index, so the .md source stays clean and building the index is not a content change. sts.py verify recomputes every calculation the book shows a reader, catches subtitle and price drift across the site, and audits Precedent Ledger integrity. It is the most-touched file in the repo at 24 commits.",
+      "files": ["scripts/sts.py"],
+      "tech": ["python"],
+      "loc": 5100,
+      "fileCount": 1,
+      "verified": true
+    },
+    {
+      "id": "factcheck",
+      "layer": "readers",
+      "kind": "service",
+      "name": "claim harness",
+      "blurb": "Extracts every mechanically detectable claim from the source, resolves each back to the commit that wrote it, and checks cited URLs over the network.",
+      "detail": "Seven claim types: attribution, url, dated_event, internal_xref, causal_claim, image, statistic. The network half is resumable from .factcheck-cache/ and refuses to treat an HTTP 200 as proof a source is live. A permalink mints only at origin_exact, meaning the file is byte identical to origin/main, which is why 151 receipts once closed by pushing rather than by committing.",
+      "files": [
+        "scripts/factcheck_network.py",
+        "scripts/build_factcheck_trace.py",
+        "FACTCHECK.md"
+      ],
+      "tech": ["python"],
+      "loc": 3800,
+      "fileCount": 3,
+      "verified": true
+    },
+
+    {
+      "id": "book-build",
+      "layer": "outputs",
+      "kind": "data",
+      "name": "book-build/",
+      "blurb": "The generated EPUB and PDF, plus the cover. Not tracked as content. Regenerated whole on every build.",
+      "detail": "Currently holds v0.7.3 and v0.7.4 side by side. The v0.7.4 PDF is 23,428,861 bytes (22.34 MiB) and the EPUB 22,142,881 bytes (21.12 MiB). Cloudflare Pages enforces a hard 25 MiB per-asset limit, so the PDF has 2.66 MiB of headroom before the next illustrated version blocks a release.",
+      "files": [
+        "book-build/Surviving-the-Singularity-v0.7.4.pdf",
+        "book-build/Surviving-the-Singularity-v0.7.4.epub",
+        "book-build/cover.png"
+      ],
+      "tech": ["epub", "pdf"],
+      "fileCount": 5,
+      "verified": true
+    },
+    {
+      "id": "downloads",
+      "layer": "outputs",
+      "kind": "data",
+      "name": "static/downloads/",
+      "blurb": "The copy the site actually serves. Filled by hand from book-build/, which is exactly where it went wrong once.",
+      "detail": "Both /book and /exclusive-friends-only build the download href as /downloads/Surviving-the-Singularity-v${book.version}.pdf. The href was derived from book.json; the file was hand-placed. book.json said 0.7.4 and this directory held only 0.7.2, so production served a 404 to buyers. Fixed on 2026-08-01 and now guarded at prebuild.",
+      "files": [
+        "static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "static/downloads/Municipal-Autonomy-Code.pdf"
+      ],
+      "fileCount": 3,
+      "verified": true
+    },
+    {
+      "id": "manuscript-snap",
+      "layer": "outputs",
+      "kind": "data",
+      "name": "manuscript/ exports",
+      "blurb": "Compiled draft snapshots. Nothing reads them back. Editing one is lost work.",
+      "detail": "These files look like the manuscript and are the most common way to waste an afternoon on this project. They are one-way exports written by sts.py compile. The directory also holds genuine hand-authored working documents (the editorial queue, the source manifest, the history casebook), which is part of why the exports read as authoritative when they are not.",
+      "files": [
+        "manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "manuscript/EDITORIAL-QUEUE.md",
+        "manuscript/SOURCE-OF-TRUTH-PRIMER.md"
+      ],
+      "loc": 45013,
+      "fileCount": 20,
+      "verified": true
+    },
+    {
+      "id": "ms-index",
+      "layer": "outputs",
+      "kind": "data",
+      "name": "manuscript-index",
+      "blurb": "A generated block-address cache sitting inside the source directory. Gives every paragraph a stable id without touching the prose.",
+      "detail": "664 KB of sidecar, and the second most-touched file in the repo at 18 commits. It is a cache over the truth: sts.py id verify re-parses the live source and checks that against itself, so it cannot tell you the index file on disk has gone stale. A clean id verify is not evidence the index is current.",
+      "files": ["src/lib/data/book/manuscript-index.json"],
+      "tech": ["json"],
+      "fileCount": 1,
+      "verified": true
+    },
+    {
+      "id": "fc-data",
+      "layer": "outputs",
+      "kind": "data",
+      "name": "factcheck summary",
+      "blurb": "The claim counts and the chain-of-custody trace, generated at build time. Two artifacts, one pass.",
+      "detail": "Measured on 2026-08-01: 1,242 claims across 30 sections, 440 SUPPORTED, 609 UNCHECKED, 190 UNCHECKABLE, 3 PARTIAL, and 1,242 of 1,242 with a resolvable link back to a commit. The network half resolved 223 of 227 URL claims, of which only the 167 LIVE_CONFIRMED count as support.",
+      "files": [
+        "src/lib/data/factcheck-summary.json",
+        "static/factcheck-trace/index.html"
+      ],
+      "tech": ["json", "html"],
+      "fileCount": 2,
+      "verified": true
+    },
+
+    {
+      "id": "r-read",
+      "layer": "surfaces",
+      "kind": "ui",
+      "name": "/read",
+      "blurb": "The continuous reader. Renders the whole book client side with saved position and font size.",
+      "files": [
+        "src/routes/read/+page.svelte",
+        "src/lib/stores/readingPosition.js",
+        "src/lib/stores/readerFontSize.js"
+      ],
+      "tech": ["svelte", "marked"],
+      "loc": 834,
+      "fileCount": 2,
+      "verified": true
+    },
+    {
+      "id": "r-book",
+      "layer": "surfaces",
+      "kind": "ui",
+      "name": "/book",
+      "blurb": "The chapter index and per-section routes. Eager-loads every chapter at build time so cards can show a teaser and a read time.",
+      "files": [
+        "src/routes/book/+page.svelte",
+        "src/routes/book/[sectionId]/+page.svelte",
+        "src/routes/book/[sectionId]/+page.server.js"
+      ],
+      "tech": ["svelte"],
+      "loc": 1301,
+      "fileCount": 6,
+      "verified": true
+    },
+    {
+      "id": "r-gated",
+      "layer": "surfaces",
+      "kind": "ui",
+      "name": "gated download pages",
+      "blurb": "Where a buyer or a friend gets the file. Both derive the download URL from the manifest version.",
+      "detail": "The password on /exclusive-friends-only is deliberately client visible and documented as such in src/lib/bookAccessCode.js. It is a courtesy gate, not access control; the PDF URL is public either way. That is a sanctioned decision, not an oversight.",
+      "files": [
+        "src/routes/early-access/+page.svelte",
+        "src/routes/exclusive-friends-only/+page.svelte",
+        "src/lib/bookAccessCode.js"
+      ],
+      "tech": ["svelte", "stripe"],
+      "loc": 1526,
+      "fileCount": 4,
+      "verified": true
+    },
+    {
+      "id": "r-factcheck",
+      "layer": "surfaces",
+      "kind": "ui",
+      "name": "/factcheck",
+      "blurb": "The public audit page. Imports the generated summary and says outright that its numbers are build-time, not live.",
+      "files": [
+        "src/routes/factcheck/+page.svelte",
+        "src/lib/data/factcheck-summary.json"
+      ],
+      "tech": ["svelte"],
+      "fileCount": 2,
+      "verified": true
+    },
+    {
+      "id": "r-workshop",
+      "layer": "surfaces",
+      "kind": "ui",
+      "name": "/workshop",
+      "blurb": "The build dashboard. Reads the block index and the claim summary, then adds hand-written blockers a generator cannot refresh.",
+      "detail": "Every measured number on this page regenerates. The 'needs a human' list does not: it is authored by hand in scripts/build_workshop_data.py. One entry went stale within a day and had to be corrected on a live page.",
+      "files": [
+        "src/routes/workshop/+page.svelte",
+        "scripts/build_workshop_data.py",
+        "src/lib/data/workshop.json"
+      ],
+      "tech": ["svelte", "python"],
+      "fileCount": 3,
+      "verified": true
+    },
+    {
+      "id": "promo",
+      "layer": "surfaces",
+      "kind": "data",
+      "name": "quote clips",
+      "blurb": "Four rendered promo videos whose text was lifted from the source by hand. The only branch with no automated tie back.",
+      "detail": "Rendered locally with ffmpeg, roughly 11 to 15 seconds each, from JSON scene specs beside them. The quotes were grepped out of the book and read in context, but nothing re-checks them if the prose changes, which makes this the one downstream artifact that can drift silently.",
+      "files": [
+        "promo/quote-clips/01-event-horizon.json",
+        "promo/quote-clips/02-tenant-farmer.json",
+        "promo/quote-clips/03-soil-is-waiting.json",
+        "promo/quote-clips/04-renting-survival.json"
+      ],
+      "tech": ["ffmpeg"],
+      "fileCount": 8,
+      "verified": true
+    },
+
+    {
+      "id": "guard-dl",
+      "layer": "guards",
+      "kind": "build",
+      "name": "download guard",
+      "blurb": "Runs at prebuild. Derives the expected filenames from the manifest and fails the build when the file the site links to is missing or over the host's ceiling.",
+      "detail": "Watched failing in both directions before being trusted: a missing file exits 1 and takes npm run build down with it, and a deliberately oversized 26 MiB artifact also exits 1. It warns from 85 percent of the 25 MiB ceiling, so the next illustrated version surfaces as a warning before it surfaces as a blocked release.",
+      "files": ["scripts/check-book-downloads.mjs", "package.json"],
+      "tech": ["node"],
+      "fileCount": 1,
+      "verified": true
+    },
+    {
+      "id": "guard-verify",
+      "layer": "guards",
+      "kind": "build",
+      "name": "sts.py verify",
+      "blurb": "Recomputes the arithmetic the book shows its reader, catches subtitle and price drift across the site, and liveness-checks every Works Cited URL.",
+      "files": ["scripts/sts.py"],
+      "tech": ["python"],
+      "verified": true
+    },
+    {
+      "id": "receipts",
+      "layer": "guards",
+      "kind": "config",
+      "name": "git receipts",
+      "blurb": "Every claim resolves to the commit that wrote its sentence. A permalink mints only when the file is byte identical to origin/main.",
+      "detail": "All 30 source files currently sit at origin_exact, so local_only is zero and every one of the 1,242 claims has a resolvable link. This is the state that makes the public trace worth anything, and it is lost the moment a chapter is edited and not pushed.",
+      "files": [".git", "FACTCHECK.md"],
+      "verified": true
+    }
+  ],
+
+  "edges": [
+    { "from": "book-json", "to": "bookcontent", "kind": "data", "label": "import" },
+    { "from": "book-md", "to": "bookcontent", "kind": "data", "label": "glob" },
+    { "from": "book-json", "to": "epub-build", "kind": "build", "label": "jq sections" },
+    { "from": "book-md", "to": "epub-build", "kind": "build" },
+    { "from": "book-json", "to": "pdf-variants", "kind": "build" },
+    { "from": "book-md", "to": "pdf-variants", "kind": "build" },
+    { "from": "book-json", "to": "sts-cli", "kind": "build" },
+    { "from": "book-md", "to": "sts-cli", "kind": "build" },
+    { "from": "book-md", "to": "factcheck", "kind": "build", "label": "claim extract" },
+    { "from": "book-md", "to": "promo", "kind": "build", "label": "by hand" },
+
+    { "from": "epub-build", "to": "book-build", "kind": "build" },
+    { "from": "pdf-variants", "to": "book-build", "kind": "build" },
+    { "from": "sts-cli", "to": "manuscript-snap", "kind": "build", "label": "compile" },
+    { "from": "sts-cli", "to": "ms-index", "kind": "build", "label": "id build" },
+    { "from": "factcheck", "to": "fc-data", "kind": "build" },
+    { "from": "book-build", "to": "downloads", "kind": "build", "label": "hand copy" },
+
+    { "from": "bookcontent", "to": "r-read", "kind": "call" },
+    { "from": "bookcontent", "to": "r-book", "kind": "call" },
+    { "from": "bookcontent", "to": "r-gated", "kind": "call" },
+    { "from": "downloads", "to": "r-gated", "kind": "data" },
+    { "from": "fc-data", "to": "r-factcheck", "kind": "data" },
+    { "from": "fc-data", "to": "r-workshop", "kind": "data" },
+    { "from": "ms-index", "to": "r-workshop", "kind": "data" },
+
+    { "from": "guard-dl", "to": "book-json", "kind": "event", "label": "derives targets" },
+    { "from": "guard-dl", "to": "downloads", "kind": "event", "label": "asserts present" },
+    { "from": "guard-verify", "to": "book-md", "kind": "event", "label": "recomputes" },
+    { "from": "receipts", "to": "book-md", "kind": "event", "label": "origin_exact" }
+  ],
+
+  "flows": [
+    {
+      "id": "to-screen",
+      "name": "A sentence reaches a screen",
+      "blurb": "The shortest branch, and the only one with no manual step anywhere in it.",
+      "steps": [
+        { "node": "book-md", "title": "Edit the source", "text": "One .md file in src/lib/data/book/. Nothing else in the repo is an acceptable place to change book text.", "file": "src/lib/data/book/02-introduction.md" },
+        { "node": "book-json", "title": "The manifest decides", "text": "If the file is not listed in book.json, the edit is invisible. That gate is what keeps the voice bible in the same folder without leaking it into the manuscript.", "file": "src/lib/data/book/book.json" },
+        { "node": "bookcontent", "title": "Read and expand", "text": "bookContent.js imports the manifest, globs the Markdown, and rewrites every sts: cross-reference pointer into a real chapter label taken from the manifest title.", "file": "src/lib/bookContent.js" },
+        { "node": "r-read", "title": "Render", "text": "marked plus DOMPurify turn it into HTML in the browser, with reading position and font size restored from local storage.", "file": "src/routes/read/+page.svelte" }
+      ]
+    },
+    {
+      "id": "to-file",
+      "name": "A sentence reaches a buyer's PDF",
+      "blurb": "The branch that broke in production, because one step in it is a person moving a file.",
+      "steps": [
+        { "node": "book-json", "title": "The file list", "text": "build-epub.sh reads the running order with jq -r '.sections[].file' and takes the version, title and subtitle for the metadata.", "file": "scripts/build-epub.sh" },
+        { "node": "epub-build", "title": "Build", "text": "Footnote ids are prefixed per chapter, images are staged into a temp tree, sts: refs are expanded, then pandoc and weasyprint emit the EPUB and the PDF.", "file": "scripts/build-epub.sh" },
+        { "node": "book-build", "title": "Land in book-build/", "text": "22.34 MiB of PDF and 21.12 MiB of EPUB. This directory is not what the website serves.", "file": "book-build/Surviving-the-Singularity-v0.7.4.pdf" },
+        { "node": "downloads", "title": "Copy across by hand", "text": "Someone moves the artifact into static/downloads/. This was documented as a step at version close and was silently skipped, so the site advertised 0.7.4 while the folder held 0.7.2.", "file": "static/downloads/Surviving-the-Singularity-v0.7.4.pdf" },
+        { "node": "guard-dl", "title": "The guard that now exists", "text": "check-book-downloads.mjs rebuilds the expected filenames from book.json at prebuild and fails the build rather than shipping a link to nothing.", "file": "scripts/check-book-downloads.mjs" },
+        { "node": "r-gated", "title": "The reader clicks", "text": "Both gated pages build the href from the manifest version, so the link and the file now cannot disagree without the build failing first.", "file": "src/routes/exclusive-friends-only/+page.svelte" }
+      ]
+    },
+    {
+      "id": "to-receipt",
+      "name": "A claim earns a receipt",
+      "blurb": "The branch that turns prose back into evidence, and the one that depends on pushing rather than committing.",
+      "steps": [
+        { "node": "book-md", "title": "Extract", "text": "The harness walks the source for seven claim types. 1,242 found across 30 sections, plus 39 bare year mentions triaged out as prose context.", "file": "src/lib/data/book/23-appendix-b.md" },
+        { "node": "factcheck", "title": "Resolve to a commit", "text": "Each claim traces back to the commit that wrote its sentence. A permalink mints only at origin_exact, byte identical to origin/main, which is why 151 broken receipts closed by pushing and not by committing.", "file": "FACTCHECK.md" },
+        { "node": "receipts", "title": "Check the receipt state", "text": "All 30 files currently sit at origin_exact, so local_only is zero. Edit a chapter without pushing and its claims go dark again.", "file": "FACTCHECK.md" },
+        { "node": "fc-data", "title": "Write the summary and the trace", "text": "440 SUPPORTED, 609 UNCHECKED, 190 UNCHECKABLE, 3 PARTIAL. Only the 167 LIVE_CONFIRMED URLs count as support; a 200 is not a live source and a refusal is not a failed citation.", "file": "src/lib/data/factcheck-summary.json" },
+        { "node": "r-factcheck", "title": "Publish it", "text": "The public audit page imports the summary and states plainly that the numbers are generated at build time, not live.", "file": "src/routes/factcheck/+page.svelte" }
+      ]
+    }
+  ],
+
+  "state": [
+    {
+      "name": "The source files themselves",
+      "kind": "git",
+      "where": "repo",
+      "blurb": "The book is state, not just input. Its value to the claim harness depends on being pushed, because a receipt resolves against origin/main rather than against the local branch.",
+      "files": ["src/lib/data/book/", "src/lib/data/book/book.json"]
+    },
+    {
+      "name": "Block address index",
+      "kind": "cache",
+      "where": "repo",
+      "blurb": "664 KB sidecar giving every paragraph a stable id. Generated, committed, and unable to detect its own staleness.",
+      "files": ["src/lib/data/book/manuscript-index.json"]
+    },
+    {
+      "name": "Network citation cache",
+      "kind": "cache",
+      "where": "disk, gitignored",
+      "blurb": "Holds the result of every URL the harness has fetched. Safe to delete; the pass resumes from whatever survives.",
+      "files": [".factcheck-cache/"]
+    },
+    {
+      "name": "Reader position",
+      "kind": "browser storage",
+      "where": "client",
+      "blurb": "Scroll position and font size for /read, and the client-side unlock flag for the gated pages.",
+      "files": ["src/lib/stores/readingPosition.js", "src/lib/stores/readerFontSize.js"]
+    }
+  ],
+
+  "seams": [
+    {
+      "title": "One step in the download path is a person",
+      "risk": "high",
+      "text": "book-build/ is generated; static/downloads/ is filled by hand. The href on both gated pages is derived from book.json, so the moment the manifest version moves ahead of the folder, buyers get a 404 and nothing in the build notices. That is not hypothetical: it shipped. The prebuild guard now closes it, and the guard was watched failing on a missing file and on an oversized one before being trusted.",
+      "files": ["static/downloads/", "scripts/check-book-downloads.mjs"]
+    },
+    {
+      "title": "The index cannot report its own staleness",
+      "risk": "high",
+      "text": "sts.py id verify re-parses the live source and checks it against itself, so a clean verify says nothing about whether manuscript-index.json on disk still matches. /workshop reads that index. A stale cache therefore surfaces as confident, specific, wrong numbers on a public page.",
+      "files": ["src/lib/data/book/manuscript-index.json", "scripts/build_workshop_data.py"]
+    },
+    {
+      "title": "Nine other book.json files exist on this machine",
+      "risk": "medium",
+      "text": "Ten copies live under ~/Code/active across five worktrees, one of which is the real one. Editing an orphan that looks like the source is the failure mode the project's own README names third, and the tell is that the edit changes nothing. Two of them, book-v1-archive/ and sample.md, sit inside this very repo.",
+      "files": ["src/lib/data/book-v1-archive/book.json", "src/lib/data/sample.md"]
+    },
+    {
+      "title": "2.66 MiB of headroom before a release blocks",
+      "risk": "medium",
+      "text": "Cloudflare Pages refuses any single asset over 25 MiB. The v0.7.4 PDF is 22.34 MiB. The next illustrated version very likely crosses it, and the answer is R2, which charges nothing for egress at any volume, rather than compressing the book. The guard warns from 85 percent so this arrives as a warning and not as a surprise.",
+      "files": ["book-build/", "scripts/check-book-downloads.mjs"]
+    },
+    {
+      "title": "The promo clips have no tie back",
+      "risk": "medium",
+      "text": "Four quote videos carry book text that was lifted by hand. Every other downstream artifact regenerates from the source; these do not, and nothing re-checks them if the prose they quote is rewritten. They are the one branch that can go quietly wrong.",
+      "files": ["promo/quote-clips/"]
+    },
+    {
+      "title": "The exports look editable and are not",
+      "risk": "low",
+      "text": "manuscript/ holds one-way snapshots from sts.py compile next to genuinely hand-authored working documents, which is what makes the snapshots read as authoritative. An edit to a compiled draft is lost on the next compile, and the file will keep looking correct until then.",
+      "files": ["manuscript/StS-Complete-Draft-compiled-2026-07-21.md"]
+    }
+  ],
+
+  "ground": {
+    "verified": [
+      "The consumer list came from grepping the working tree, not from the README: rg found src/lib/bookContent.js, scripts/build-epub.sh, scripts/build-pdf-variants.sh, scripts/sts.py and the factcheck scripts reading src/lib/data/book.",
+      "The resolved import graph confirms src/lib -> src/lib/data/book and src/routes/read -> src/lib/data/book, and that seven route files import bookContent.js including sitemap.xml/+server.js.",
+      "30 sections and version 0.7.4 read directly out of book.json; 33 .md files sit in the directory and exactly three (ELIJAH-PROTOCOL, README, VOICE-GUIDE) are excluded by the manifest.",
+      "Claim counts, verdict split and receipt state come from a live run of python3 scripts/sts.py factcheck on 2026-08-01, not from any document.",
+      "Artifact byte sizes were read off disk with ls, and the four promo mp4 files were confirmed present with find.",
+      "Ten book.json files were counted with find across ~/Code/active, of which one is the canonical source."
+    ],
+    "inferred": [
+      "The Markdown edge into bookContent.js is written as import.meta.glob, which the scanner's resolver does not follow. It is drawn from reading the file rather than from the resolved graph.",
+      "Every edge from the source into a Python or shell consumer is derived from reading those scripts, since the scanner resolves only JavaScript and Python module imports, not filesystem reads.",
+      "That manuscript/ snapshots are written by sts.py compile and that nothing reads them back is taken from the project README plus the sts.py help text. Neither command was run to confirm it.",
+      "Line and file counts per node come from the scan of the working tree, which currently carries 60 dirty paths belonging to several concurrent sessions."
+    ],
+    "unknown": [
+      "Whether the deployed site is built from the same commit as this working tree. Production is main; this worktree is v0.7.3, and the two have diverged.",
+      "Whether manuscript-index.json on disk is current, which is unknowable by design from inside the tooling.",
+      "Whether the four promo clips still quote the source accurately, since nothing checks them.",
+      "How many of the 609 UNCHECKED claims are checkable at all. The 36 inherited comparison claims in particular need a person reading primary sources."
+    ]
+  }
+}

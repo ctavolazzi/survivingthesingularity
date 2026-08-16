@@ -85,3 +85,6 @@ promo/**/.cvcache/
 # empirica reflex checkpoints. Per-transaction session state written by the
 # epistemic harness, not project source.
 .empirica_reflex_logs/
+
+# video render caches (regenerable)
+.cvcache/

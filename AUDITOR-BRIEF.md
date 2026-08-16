@@ -24,7 +24,7 @@ each pass actually needs.
 |---|---|
 | Repo | `~/Code/active/survivingthesingularity` (SvelteKit site + book) |
 | Book source (ONLY truth) | `src/lib/data/book/*.md`, order + version in `book.json` |
-| Current version | book.json `version` (v0.6.2 as of this writing, LIVE on main and prod). NEVER trust version strings in docs or filenames over book.json |
+| Current version | book.json `version` (v0.7.5 as of this writing, in the `sts-v0.7.3` worktree and NOT on main or prod; main/prod still serve the v0.7.4 build). NEVER trust version strings in docs or filenames over book.json |
 | Structure | 30 sections: intro, preface, ch0, 3 part dividers, ch1-18, conclusion, appendices A-E. Order: Introduction BEFORE Preface (deliberate) |
 | Stale copies (never audit these) | `manuscript/StS-Complete-Draft-v*.md`, Desktop PDFs, `manuscript/drafts/` |
 | Figures | `static/book-images/*.svg` (33 hand-authored) + `part{1,2,3}-divider.png` (pixel art) + photo headers. Referenced as `![alt](/book-images/…)` + italic caption line |

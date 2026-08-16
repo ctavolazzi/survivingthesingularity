@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signup design board · Surviving the Singularity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;min-width:0}
+:root{
+  --bg:#020617; --surface:#0f172a; --surface-2:#1e293b;
+  --border:rgba(255,255,255,0.06); --border-mid:rgba(255,255,255,0.1); --border-strong:rgba(255,255,255,0.16);
+  --amber:#f59e0b; --amber-light:#fbbf24; --blue:#3b82f6; --green:#10b981; --red:#ef4444;
+  --t1:#f8fafc; --t2:#cbd5e1; --t3:#64748b; --t4:#334155;
+  --font:'Outfit',system-ui,sans-serif; --mono:'JetBrains Mono',monospace;
+  --gutter:clamp(16px,4vw,48px);
+}
+body{margin:0;background:var(--bg);color:var(--t1);font-family:var(--font);line-height:1.6;
+  font-size:clamp(15px,1vw+12px,16px);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--amber)}
+.wrap{max-width:1320px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* header */
+.top{border-bottom:1px solid var(--border);padding:clamp(28px,5vw,56px) 0 clamp(22px,4vw,36px);
+  background:radial-gradient(ellipse 80% 100% at 50% 0%,rgba(245,158,11,0.07),transparent 70%)}
+.kicker{font-family:var(--mono);font-size:0.66rem;font-weight:600;letter-spacing:0.2em;
+  text-transform:uppercase;color:var(--amber);margin:0 0 12px}
+h1{margin:0 0 14px;font-size:clamp(1.7rem,5vw,2.9rem);font-weight:800;letter-spacing:-0.03em;line-height:1.08}
+.lede{margin:0;max-width:66ch;color:var(--t2);font-size:clamp(0.95rem,2vw,1.08rem)}
+.meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:0.64rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--t3);border:1px solid var(--border-mid);border-radius:999px;padding:5px 11px}
+.chip.live{color:var(--green);border-color:rgba(16,185,129,0.3)}
+
+section{padding:clamp(40px,7vw,80px) 0;border-bottom:1px solid var(--border)}
+.sec-head{margin-bottom:clamp(24px,4vw,40px);max-width:70ch}
+.sec-num{font-family:var(--mono);font-size:0.66rem;letter-spacing:0.18em;color:var(--amber);
+  text-transform:uppercase;display:block;margin-bottom:9px}
+h2{margin:0 0 10px;font-size:clamp(1.3rem,3.4vw,2rem);font-weight:700;letter-spacing:-0.02em;line-height:1.15}
+h3{margin:0 0 8px;font-size:clamp(1rem,2.2vw,1.12rem);font-weight:700}
+.sec-head p{margin:0;color:var(--t3);font-size:clamp(0.88rem,1.9vw,0.98rem)}
+
+/* wireframe cards */
+.wf-grid{display:grid;gap:clamp(20px,3.5vw,32px);grid-template-columns:1fr}
+@media (min-width:900px){.wf-grid{grid-template-columns:repeat(2,1fr)}}
+.wf{background:linear-gradient(180deg,rgba(15,23,42,0.75),rgba(6,13,31,0.75));
+  border:1px solid var(--border-mid);border-radius:18px;padding:clamp(16px,2.6vw,24px);overflow:hidden}
+.wf.span{grid-column:1/-1}
+.wf-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  flex-wrap:wrap;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.wf-name{font-weight:700;font-size:clamp(0.95rem,2vw,1.05rem)}
+.wf-dim{font-family:var(--mono);font-size:0.68rem;color:var(--t3);letter-spacing:0.08em}
+.wf svg{width:100%;height:auto;display:block;border-radius:10px}
+.wf-note{margin:14px 0 0;color:var(--t3);font-size:clamp(0.82rem,1.7vw,0.89rem);line-height:1.6}
+.wf-note strong{color:var(--t2);font-weight:600}
+
+/* wireframe SVG vocabulary */
+.wf-bg{fill:#050b1a}
+.wf-box{fill:none;stroke:#334155;stroke-width:1.5}
+.wf-fill{fill:#0f172a;stroke:#334155;stroke-width:1.5}
+.wf-line{fill:#1e293b}
+.wf-line-lt{fill:#243247}
+.wf-cta{fill:#f59e0b}
+.wf-cta-txt{fill:#0b0f1a;font-family:'JetBrains Mono',monospace;font-weight:700}
+.wf-txt{fill:#64748b;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.06em}
+.wf-txt-b{fill:#cbd5e1;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.04em}
+.wf-accent{fill:none;stroke:#f59e0b;stroke-width:1.5}
+.wf-dash{fill:none;stroke:#f59e0b;stroke-width:1;stroke-dasharray:3 3;opacity:0.65}
+.wf-ann{fill:#f59e0b;font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:0.05em}
+
+/* breakpoint table */
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--border-mid);border-radius:14px}
+table{width:100%;border-collapse:collapse;min-width:660px}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:top;
+  font-size:clamp(0.8rem,1.7vw,0.88rem)}
+th{font-family:var(--mono);font-size:0.64rem;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--t3);background:rgba(2,6,23,0.6);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-family:var(--mono);color:var(--amber);white-space:nowrap;font-size:0.8rem}
+td strong{color:var(--t1);font-weight:600}
+.q{color:var(--t3)}
+
+/* live previews */
+.frames{display:flex;gap:clamp(16px,2.4vw,28px);overflow-x:auto;padding-bottom:16px;
+  -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+.frame{flex:none;scroll-snap-align:start}
+.frame-label{display:flex;align-items:baseline;gap:9px;margin-bottom:9px;flex-wrap:wrap}
+.frame-label b{font-size:0.9rem;font-weight:700}
+.frame-label span{font-family:var(--mono);font-size:0.66rem;color:var(--t3);letter-spacing:0.08em}
+.device{border:1px solid var(--border-strong);border-radius:14px;overflow:hidden;
+  background:#020617;box-shadow:0 20px 50px -22px rgba(0,0,0,0.9);position:relative}
+.device iframe{border:0;display:block;transform-origin:0 0;background:#020617}
+.legend{margin-top:14px;color:var(--t3);font-size:0.84rem}
+
+/* spec grid */
+.spec{display:grid;gap:clamp(14px,2.4vw,20px);grid-template-columns:1fr}
+@media (min-width:680px){.spec{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1060px){.spec{grid-template-columns:repeat(3,1fr)}}
+.card{background:rgba(15,23,42,0.6);border:1px solid var(--border-mid);border-radius:16px;
+  padding:clamp(16px,2.4vw,22px)}
+.card p{margin:0;color:var(--t3);font-size:0.87rem;line-height:1.6}
+.card code{font-family:var(--mono);font-size:0.8em;color:var(--amber);background:rgba(245,158,11,0.08);
+  padding:1px 5px;border-radius:4px}
+.swatches{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.sw{width:30px;height:30px;border-radius:8px;border:1px solid var(--border-strong)}
+
+ul.tight{margin:0;padding-left:1.05em;color:var(--t3);font-size:0.87rem;line-height:1.65}
+ul.tight li{margin-bottom:6px}
+ul.tight strong{color:var(--t2);font-weight:600}
+ul.tight code{font-family:var(--mono);font-size:0.82em;color:var(--amber)}
+
+.state-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.state{border:1px solid var(--border-mid);border-radius:12px;padding:14px 16px;background:rgba(2,6,23,0.5)}
+.state b{display:block;font-size:0.88rem;margin-bottom:4px}
+.state span{color:var(--t3);font-size:0.8rem;line-height:1.5;display:block}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;vertical-align:1px}
+
+footer{padding:clamp(30px,5vw,48px) 0;color:var(--t4);font-size:0.82rem;text-align:center}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <p class="kicker">Design board</p>
+    <h1>Account signup</h1>
+    <p class="lede">
+      A responsive signup surface for survivingthesingularity.com. Drawn mobile first,
+      resolved at desktop, then checked back through tablet. Every preview below is the
+      same single file rendered live at a different width, not a mockup image.
+    </p>
+    <div class="meta">
+      <span class="chip live">Live previews</span>
+      <span class="chip">Mobile first</span>
+      <span class="chip">3 breakpoints</span>
+      <span class="chip">Container queries</span>
+      <span class="chip">280px to 4K</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 1. WIREFRAMES ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">01 / Wireframes</span>
+      <h2>Structure before surface</h2>
+      <p>
+        The order the layout was reasoned in: phone first, because that is the hardest
+        constraint and the majority of traffic. Then desktop, because that is where the
+        extra width has to earn its keep. Tablet last, as the resolution between them.
+      </p>
+    </div>
+
+    <div class="wf-grid">
+
+      <!-- MOBILE -->
+      <div class="wf">
+        <div class="wf-head">
+          <span class="wf-name">1. Mobile</span>
+          <span class="wf-dim">390 &times; 844 · base layout</span>
+        </div>
+        <svg viewBox="0 0 300 620" role="img" aria-label="Mobile wireframe: masthead, form card, value rail below">
+          <rect class="wf-bg" width="300" height="620" rx="8"/>
+          <!-- masthead -->
+          <rect class="wf-box" x="16" y="16" width="268" height="26" rx="5"/>
+          <rect class="wf-line-lt" x="24" y="25" width="16" height="9" rx="2"/>
+          <rect class="wf-line" x="46" y="27" width="52" height="5" rx="2"/>
+          <rect class="wf-line" x="196" y="27" width="80" height="5" rx="2"/>
+          <text class="wf-txt" x="16" y="56">MASTHEAD · mark + sign-in link</text>
+
+          <!-- card -->
+          <rect class="wf-accent" x="16" y="68" width="268" height="352" rx="10"/>
+          <text class="wf-ann" x="20" y="82">CARD · order 1 (form first)</text>
+          <rect class="wf-line-lt" x="28" y="92" width="140" height="9" rx="3"/>
+          <rect class="wf-line" x="28" y="106" width="96" height="6" rx="2"/>
+          <!-- segmented -->
+          <rect class="wf-fill" x="28" y="124" width="244" height="26" rx="13"/>
+          <rect class="wf-line-lt" x="32" y="128" width="118" height="18" rx="9"/>
+          <text class="wf-txt" x="52" y="140">CREATE</text>
+          <text class="wf-txt" x="186" y="140">SIGN IN</text>
+          <!-- oauth stacked -->
+          <rect class="wf-fill" x="28" y="160" width="244" height="30" rx="6"/>
+          <text class="wf-txt" x="98" y="179">CONTINUE WITH GOOGLE</text>
+          <rect class="wf-fill" x="28" y="196" width="244" height="30" rx="6"/>
+          <text class="wf-txt" x="98" y="215">CONTINUE WITH GITHUB</text>
+          <text class="wf-ann" x="28" y="240">stacked below 380px card width</text>
+          <!-- divider -->
+          <line x1="28" y1="252" x2="140" y2="252" stroke="#243247" stroke-width="1.5"/>
+          <text class="wf-txt" x="146" y="256">OR</text>
+          <line x1="160" y1="252" x2="272" y2="252" stroke="#243247" stroke-width="1.5"/>
+          <!-- fields -->
+          <rect class="wf-line" x="28" y="266" width="34" height="5" rx="2"/>
+          <rect class="wf-fill" x="28" y="276" width="244" height="30" rx="6"/>
+          <rect class="wf-line" x="28" y="316" width="52" height="5" rx="2"/>
+          <rect class="wf-fill" x="28" y="326" width="244" height="30" rx="6"/>
+          <rect class="wf-line-lt" x="250" y="335" width="14" height="12" rx="3"/>
+          <!-- consent -->
+          <rect class="wf-fill" x="28" y="366" width="13" height="13" rx="3"/>
+          <rect class="wf-line" x="48" y="371" width="180" height="5" rx="2"/>
+          <!-- cta -->
+          <rect class="wf-cta" x="28" y="388" width="244" height="34" rx="6"/>
+          <text class="wf-cta-txt" x="105" y="409" font-size="10">CREATE ACCOUNT →</text>
+
+          <!-- rail below -->
+          <rect class="wf-box" x="16" y="440" width="268" height="132" rx="8" stroke-dasharray="4 3"/>
+          <text class="wf-ann" x="20" y="454">RAIL · order 2 (value after action)</text>
+          <rect class="wf-line-lt" x="28" y="462" width="180" height="11" rx="3"/>
+          <rect class="wf-line" x="28" y="480" width="230" height="5" rx="2"/>
+          <rect class="wf-line" x="28" y="490" width="196" height="5" rx="2"/>
+          <g>
+            <rect class="wf-fill" x="28" y="506" width="18" height="18" rx="5"/>
+            <rect class="wf-line" x="52" y="510" width="88" height="5" rx="2"/>
+            <rect class="wf-line" x="52" y="519" width="120" height="4" rx="2"/>
+            <rect class="wf-fill" x="28" y="534" width="18" height="18" rx="5"/>
+            <rect class="wf-line" x="52" y="538" width="76" height="5" rx="2"/>
+            <rect class="wf-line" x="52" y="547" width="112" height="4" rx="2"/>
+          </g>
+          <text class="wf-txt" x="16" y="592">FOOTER · terms · privacy · a11y</text>
+          <line x1="16" y1="600" x2="284" y2="600" stroke="#1e293b" stroke-width="1.5"/>
+        </svg>
+        <p class="wf-note">
+          <strong>The one decision that matters here:</strong> the card comes first and the
+          value rail second. Someone arriving on a phone from a checkout link already
+          decided. Making them scroll past four benefit bullets to reach an email field
+          is a tax on a user who is already converted. The rail is still there, underneath,
+          for the ones who need convincing.
+        </p>
+      </div>
+
+      <!-- DESKTOP -->
+      <div class="wf">
+        <div class="wf-head">
+          <span class="wf-name">2. Desktop</span>
+          <span class="wf-dim">1440 &times; 900 · two pane</span>
+        </div>
+        <svg viewBox="0 0 640 400" role="img" aria-label="Desktop wireframe: value rail left, form card right">
+          <rect class="wf-bg" width="640" height="400" rx="8"/>
+          <!-- masthead -->
+          <rect class="wf-line-lt" x="28" y="24" width="14" height="10" rx="2"/>
+          <rect class="wf-line" x="48" y="27" width="120" height="5" rx="2"/>
+          <rect class="wf-line" x="474" y="27" width="138" height="5" rx="2"/>
+          <line x1="28" y1="48" x2="612" y2="48" stroke="#141e33" stroke-width="1"/>
+
+          <!-- rail left -->
+          <rect class="wf-box" x="28" y="76" width="300" height="252" rx="8" stroke-dasharray="4 3"/>
+          <text class="wf-ann" x="32" y="90">RAIL · 1.05fr · max 560px</text>
+          <rect class="wf-cta" x="40" y="100" width="52" height="6" rx="3" opacity="0.85"/>
+          <rect class="wf-line-lt" x="40" y="118" width="248" height="16" rx="4"/>
+          <rect class="wf-line-lt" x="40" y="140" width="172" height="16" rx="4"/>
+          <rect class="wf-line" x="40" y="168" width="256" height="5" rx="2"/>
+          <rect class="wf-line" x="40" y="179" width="228" height="5" rx="2"/>
+          <g>
+            <rect class="wf-fill" x="40" y="200" width="20" height="20" rx="6"/>
+            <rect class="wf-line" x="70" y="204" width="96" height="5" rx="2"/>
+            <rect class="wf-line" x="70" y="214" width="150" height="4" rx="2"/>
+            <rect class="wf-fill" x="40" y="230" width="20" height="20" rx="6"/>
+            <rect class="wf-line" x="70" y="234" width="112" height="5" rx="2"/>
+            <rect class="wf-line" x="70" y="244" width="138" height="4" rx="2"/>
+            <rect class="wf-fill" x="40" y="260" width="20" height="20" rx="6"/>
+            <rect class="wf-line" x="70" y="264" width="88" height="5" rx="2"/>
+            <rect class="wf-line" x="70" y="274" width="146" height="4" rx="2"/>
+            <rect class="wf-fill" x="40" y="290" width="20" height="20" rx="6"/>
+            <rect class="wf-line" x="70" y="294" width="104" height="5" rx="2"/>
+            <rect class="wf-line" x="70" y="304" width="130" height="4" rx="2"/>
+          </g>
+          <text class="wf-ann" x="40" y="322">benefits go 1-up here, not 2-up</text>
+
+          <!-- gap annotation -->
+          <line class="wf-dash" x1="336" y1="76" x2="336" y2="328"/>
+          <line class="wf-dash" x1="368" y1="76" x2="368" y2="328"/>
+          <text class="wf-ann" x="330" y="344">gap</text>
+          <text class="wf-ann" x="322" y="356">6vw</text>
+
+          <!-- card right -->
+          <rect class="wf-accent" x="376" y="60" width="236" height="284" rx="10"/>
+          <text class="wf-ann" x="380" y="54">CARD · fixed 420-480px, never stretches</text>
+          <rect class="wf-line-lt" x="392" y="76" width="128" height="10" rx="3"/>
+          <rect class="wf-line" x="392" y="92" width="88" height="5" rx="2"/>
+          <rect class="wf-fill" x="392" y="106" width="204" height="24" rx="12"/>
+          <rect class="wf-line-lt" x="395" y="109" width="99" height="18" rx="9"/>
+          <!-- oauth 2-up -->
+          <rect class="wf-fill" x="392" y="140" width="98" height="28" rx="6"/>
+          <text class="wf-txt" x="422" y="158">GOOGLE</text>
+          <rect class="wf-fill" x="498" y="140" width="98" height="28" rx="6"/>
+          <text class="wf-txt" x="528" y="158">GITHUB</text>
+          <text class="wf-ann" x="392" y="180">2-up: container query, not viewport</text>
+          <line x1="392" y1="192" x2="484" y2="192" stroke="#243247" stroke-width="1.5"/>
+          <text class="wf-txt" x="490" y="196">OR</text>
+          <line x1="504" y1="192" x2="596" y2="192" stroke="#243247" stroke-width="1.5"/>
+          <rect class="wf-line" x="392" y="206" width="30" height="5" rx="2"/>
+          <rect class="wf-fill" x="392" y="216" width="204" height="28" rx="6"/>
+          <rect class="wf-line" x="392" y="254" width="46" height="5" rx="2"/>
+          <rect class="wf-fill" x="392" y="264" width="204" height="28" rx="6"/>
+          <rect class="wf-fill" x="392" y="302" width="12" height="12" rx="3"/>
+          <rect class="wf-line" x="410" y="307" width="150" height="5" rx="2"/>
+          <rect class="wf-cta" x="392" y="322" width="204" height="14" rx="5"/>
+
+          <line x1="28" y1="368" x2="612" y2="368" stroke="#141e33" stroke-width="1"/>
+          <text class="wf-txt" x="266" y="386">TERMS · PRIVACY · A11Y</text>
+        </svg>
+        <p class="wf-note">
+          <strong>Width has to be spent, not just filled.</strong> The card is pinned to a
+          420 to 480px column and the rail takes the remainder. A form that stretches to
+          700px is worse than one that does not: the eye has to travel the full width of an
+          input to find a 40 character email. The extra desktop space goes to the argument,
+          not the fields.
+        </p>
+      </div>
+
+      <!-- TABLET -->
+      <div class="wf span">
+        <div class="wf-head">
+          <span class="wf-name">3. Tablet</span>
+          <span class="wf-dim">834 &times; 1112 · centered narrative column, and why it is not a split</span>
+        </div>
+        <svg viewBox="0 0 640 300" role="img" aria-label="Tablet wireframe compared against a rejected split layout">
+          <rect class="wf-bg" width="640" height="300" rx="8"/>
+
+          <!-- chosen -->
+          <text class="wf-ann" x="24" y="22">CHOSEN · 900px to 1139px</text>
+          <rect class="wf-accent" x="24" y="30" width="272" height="250" rx="8"/>
+          <rect class="wf-line" x="40" y="44" width="60" height="5" rx="2"/>
+          <rect class="wf-line" x="214" y="44" width="66" height="5" rx="2"/>
+          <!-- centered rail -->
+          <rect class="wf-cta" x="134" y="66" width="52" height="5" rx="2" opacity="0.85"/>
+          <rect class="wf-line-lt" x="76" y="80" width="168" height="13" rx="4"/>
+          <rect class="wf-line" x="94" y="100" width="132" height="5" rx="2"/>
+          <rect class="wf-line" x="106" y="110" width="108" height="5" rx="2"/>
+          <!-- benefits 2-up -->
+          <rect class="wf-fill" x="60" y="126" width="16" height="16" rx="5"/>
+          <rect class="wf-line" x="82" y="130" width="66" height="4" rx="2"/>
+          <rect class="wf-line" x="82" y="138" width="80" height="3.5" rx="2"/>
+          <rect class="wf-fill" x="172" y="126" width="16" height="16" rx="5"/>
+          <rect class="wf-line" x="194" y="130" width="60" height="4" rx="2"/>
+          <rect class="wf-line" x="194" y="138" width="76" height="3.5" rx="2"/>
+          <rect class="wf-fill" x="60" y="152" width="16" height="16" rx="5"/>
+          <rect class="wf-line" x="82" y="156" width="72" height="4" rx="2"/>
+          <rect class="wf-line" x="82" y="164" width="62" height="3.5" rx="2"/>
+          <rect class="wf-fill" x="172" y="152" width="16" height="16" rx="5"/>
+          <rect class="wf-line" x="194" y="156" width="56" height="4" rx="2"/>
+          <rect class="wf-line" x="194" y="164" width="72" height="3.5" rx="2"/>
+          <text class="wf-ann" x="60" y="184">benefits 2-up, rail centered</text>
+          <!-- card centered -->
+          <rect class="wf-fill" x="76" y="194" width="168" height="74" rx="8"/>
+          <rect class="wf-line-lt" x="88" y="204" width="72" height="7" rx="3"/>
+          <rect class="wf-line-lt" x="88" y="218" width="66" height="12" rx="4"/>
+          <rect class="wf-line-lt" x="162" y="218" width="66" height="12" rx="4"/>
+          <rect class="wf-line" x="88" y="236" width="140" height="12" rx="4"/>
+          <rect class="wf-cta" x="88" y="252" width="140" height="10" rx="4"/>
+          <text class="wf-ann" x="80" y="278">card max 520px, centered</text>
+
+          <!-- rejected -->
+          <text class="wf-txt-b" x="344" y="22" fill="#ef4444">REJECTED · split at 768px</text>
+          <rect x="344" y="30" width="272" height="250" rx="8" fill="none" stroke="#7f1d1d" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <rect class="wf-line" x="360" y="44" width="60" height="5" rx="2"/>
+          <rect class="wf-line" x="534" y="44" width="66" height="5" rx="2"/>
+          <!-- cramped rail -->
+          <rect class="wf-line-lt" x="360" y="76" width="104" height="11" rx="4"/>
+          <rect class="wf-line-lt" x="360" y="92" width="88" height="11" rx="4"/>
+          <rect class="wf-line" x="360" y="112" width="106" height="4" rx="2"/>
+          <rect class="wf-line" x="360" y="120" width="98" height="4" rx="2"/>
+          <rect class="wf-line" x="360" y="128" width="108" height="4" rx="2"/>
+          <rect class="wf-line" x="360" y="136" width="92" height="4" rx="2"/>
+          <rect class="wf-line" x="360" y="144" width="104" height="4" rx="2"/>
+          <rect class="wf-line" x="360" y="152" width="86" height="4" rx="2"/>
+          <path d="M356 108 L356 160" stroke="#ef4444" stroke-width="1.5"/>
+          <path d="M474 108 L474 160" stroke="#ef4444" stroke-width="1.5"/>
+          <text class="wf-txt" x="360" y="176" fill="#fca5a5">~30 chars per line. ragged, slow to read.</text>
+          <!-- cramped card -->
+          <rect x="492" y="70" width="108" height="188" rx="8" fill="#0f172a" stroke="#7f1d1d" stroke-width="1.5"/>
+          <rect class="wf-line-lt" x="502" y="80" width="60" height="7" rx="3"/>
+          <rect class="wf-fill" x="502" y="96" width="88" height="16" rx="5"/>
+          <rect class="wf-fill" x="502" y="116" width="88" height="16" rx="5"/>
+          <text class="wf-txt" x="502" y="146" fill="#fca5a5">oauth forced</text>
+          <text class="wf-txt" x="502" y="157" fill="#fca5a5">back to stacked</text>
+          <rect class="wf-fill" x="502" y="166" width="88" height="16" rx="5"/>
+          <rect class="wf-fill" x="502" y="188" width="88" height="16" rx="5"/>
+          <rect class="wf-cta" x="502" y="212" width="88" height="12" rx="4" opacity="0.5"/>
+          <text class="wf-txt" x="502" y="242" fill="#fca5a5">card only ~380px</text>
+          <text class="wf-ann" x="344" y="278" fill="#fca5a5">both panes lose. neither earns the split.</text>
+        </svg>
+        <p class="wf-note">
+          <strong>Tablet is where most responsive designs go wrong,</strong> because 768px is
+          the reflex breakpoint and it is the wrong one for a two-pane layout. Split an
+          834px tablet and each pane gets roughly 380px: the rail copy sets at about 30
+          characters per line, which reads as a ragged column, and the card drops back to
+          stacked federated buttons anyway. So the split waits until 1140px. Between 900
+          and 1139 the page composes as one centered narrative column instead, which is a
+          better use of that width than a bad split.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. BREAKPOINTS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02 / Thresholds</span>
+      <h2>Three breakpoints, and each one has a reason</h2>
+      <p>
+        A breakpoint is a claim that something breaks. Each of these was placed by widening
+        the window until the layout actually failed, then setting the threshold just before
+        the failure. Everything between them is fluid, so the layout is continuous rather
+        than stepped.
+      </p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Threshold</th><th>What changes</th><th>Why there and not elsewhere</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>base<br>&lt; 560px</td>
+            <td><strong>Single column, card first.</strong> Rail below. Federated buttons stacked. Wordmark reduced to the glyph.</td>
+            <td class="q">The floor is 280px, which covers a folded Galaxy Z and a narrow browser side panel. Below 320 the card padding tightens via container query rather than a media query.</td>
+          </tr>
+          <tr>
+            <td>560px</td>
+            <td><strong>Benefits go 2-up.</strong> Full wordmark appears in the masthead.</td>
+            <td class="q">The benefit body copy hits a comfortable measure around 270px per column. Below that a 2-up grid produces four-word lines. This is also where a 500px square viewport crosses into readable.</td>
+          </tr>
+          <tr>
+            <td>900px</td>
+            <td><strong>Rail moves above the card and centers.</strong> One narrative column: argument, then form.</td>
+            <td class="q">Enough width for the rail to hold a 60 character measure at full width, but not enough for two panes. Tablet portrait (834px) sits just below this and stays in the mobile composition, which is correct: it is a phone layout with more room.</td>
+          </tr>
+          <tr>
+            <td>1140px</td>
+            <td><strong>Two panes.</strong> Rail left at 1.05fr, card right pinned to 420-480px. Benefits return to 1-up.</td>
+            <td class="q">The first width where the card can hold 480px and the rail still clears 500px. Tablet landscape (1112px) deliberately stays single column, since a 1112px split leaves the rail at 480px and the copy gets tight.</td>
+          </tr>
+          <tr>
+            <td>1600px</td>
+            <td><strong>Growth stops.</strong> Container caps at 1480px, gap opens to 120px, headline steps up.</td>
+            <td class="q">Past this the layout stops getting bigger and starts getting more air. Nothing on an ultrawide should be 1600px of input field.</td>
+          </tr>
+          <tr>
+            <td>height<br>&le; 760px</td>
+            <td><strong>Vertical rhythm compresses.</strong> Stack, card padding and headline all shrink against vh.</td>
+            <td class="q">Width is only half of responsive. An 800 by 600 window, a square viewport and a laptop with a browser toolbar all fail the same way: the submit button falls below the fold.</td>
+          </tr>
+          <tr>
+            <td>height<br>&le; 560px</td>
+            <td><strong>Rail collapses to its headline.</strong> Benefits, proof line and footer hide.</td>
+            <td class="q">Landscape phone. At 390 by 560 the rail is not persuasion, it is an obstacle between the user and the field they came for.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. LIVE PREVIEWS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">03 / Live</span>
+      <h2>The same file at seven widths</h2>
+      <p>
+        Each frame below is <code style="font-family:var(--mono);font-size:0.85em;color:var(--amber)">signup.html</code>
+        in a real iframe at the labelled size, scaled to fit. Nothing here is an image, so
+        what you see is what the CSS actually does. Scroll the strip sideways.
+      </p>
+    </div>
+
+    <div class="frames" id="frames"></div>
+
+    <p class="legend">
+      Note the two that usually get skipped: <strong style="color:var(--t2)">280 &times; 653</strong>
+      (folded phone) and <strong style="color:var(--t2)">500 &times; 500</strong> (square). The square
+      viewport is the real test, because it fails on height rather than width and most
+      layouts only defend one axis.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 4. STATES ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">04 / States</span>
+      <h2>A form is not one screen</h2>
+      <p>Every state below is reachable from the demo bar at the bottom of the live design.</p>
+    </div>
+    <div class="state-grid">
+      <div class="state"><b><span class="dot" style="background:var(--t3)"></span>Default</b><span>Empty, consent unchecked, submit enabled. No pre-emptive red.</span></div>
+      <div class="state"><b><span class="dot" style="background:var(--amber)"></span>Focus</b><span>Amber border plus a 3px ring. Field background darkens so the active row reads first.</span></div>
+      <div class="state"><b><span class="dot" style="background:var(--red)"></span>Error</b><span>Fires on submit, not on keystroke. Clears the moment the user starts fixing it.</span></div>
+      <div class="state"><b><span class="dot" style="background:var(--green)"></span>Strength</b><span>Four segments, appears only once typing starts, in signup mode only.</span></div>
+      <div class="state"><b><span class="dot" style="background:var(--blue)"></span>Loading</b><span>Button becomes the spinner and states what it is doing. No layout shift.</span></div>
+      <div class="state"><b><span class="dot" style="background:var(--green)"></span>Check email</b><span>Card swaps in place. Shows the address back, offers resend and correct.</span></div>
+      <div class="state"><b><span class="dot" style="background:var(--t3)"></span>Sign in</b><span>Same card. Consent row and strength meter drop out, hint becomes "Forgot?".</span></div>
+      <div class="state"><b><span class="dot" style="background:var(--t3)"></span>Reduced motion</b><span>Orbs stop drifting, spinner stills, transitions collapse to a single frame.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. SPEC ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">05 / Spec</span>
+      <h2>What a build needs to know</h2>
+      <p>Tokens are lifted from <code style="font-family:var(--mono);font-size:0.85em;color:var(--amber)">src/routes/+page.svelte</code> so this surface matches the current homepage, not the older brutalist theme.</p>
+    </div>
+    <div class="spec">
+      <div class="card">
+        <h3>Palette</h3>
+        <p>Amber carries the single primary action. Blue and green are reserved for state, never for chrome.</p>
+        <div class="swatches">
+          <span class="sw" style="background:#020617" title="--bg #020617"></span>
+          <span class="sw" style="background:#0f172a" title="--surface #0f172a"></span>
+          <span class="sw" style="background:#1e293b" title="--surface-2 #1e293b"></span>
+          <span class="sw" style="background:#f59e0b" title="--amber #f59e0b"></span>
+          <span class="sw" style="background:#fbbf24" title="--amber-light #fbbf24"></span>
+          <span class="sw" style="background:#3b82f6" title="--blue #3b82f6"></span>
+          <span class="sw" style="background:#10b981" title="--green #10b981"></span>
+          <span class="sw" style="background:#ef4444" title="--red #ef4444"></span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Type</h3>
+        <ul class="tight">
+          <li><strong>Outfit</strong> for everything readable</li>
+          <li><strong>JetBrains Mono</strong> for labels, eyebrows, strength meter</li>
+          <li>Headline <code>clamp(1.65rem, 4.4vw, 3rem)</code></li>
+          <li>Inputs floored at <code>16px</code>, which is what stops iOS Safari zooming on focus</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Fluid primitives</h3>
+        <ul class="tight">
+          <li><code>--gutter: clamp(16px, 5vw, 56px)</code></li>
+          <li><code>--stack: clamp(14px, 2.6vw, 22px)</code></li>
+          <li><code>--card-pad: clamp(20px, 5.2vw, 40px)</code></li>
+          <li><code>--tap: 48px</code> floor on every control</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Container queries</h3>
+        <p>The card is its own query context, so its internals key off the pane width rather than the viewport. Federated buttons pair at a card width of 380px and padding tightens under 320px. That means the card is correct if it is ever reused in a modal or a narrower shell.</p>
+      </div>
+      <div class="card">
+        <h3>Accessibility</h3>
+        <ul class="tight">
+          <li>Every control clears 48px, above the 44px WCAG 2.5.5 target</li>
+          <li>Errors are <code>role="alert"</code>, strength is <code>aria-live="polite"</code></li>
+          <li>Visible <code>:focus-visible</code> ring on everything focusable</li>
+          <li>Reveal toggle is a real <code>aria-pressed</code> button</li>
+          <li><code>forced-colors</code> block restores borders in high contrast</li>
+          <li>Body text meets 4.5:1; muted metadata is decorative and duplicated in accessible copy</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Open questions for build</h3>
+        <ul class="tight">
+          <li>Confirm which OAuth providers are actually enabled in Supabase before shipping both buttons</li>
+          <li>Magic link and password are both drawn. Pick one as primary, or ship both as designed</li>
+          <li>The site has no <code>/login</code> or <code>/auth</code> route today, so routing is a build decision, not a design one</li>
+          <li>Consent checkbox wording needs a legal read against the existing policies page</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Design study · signup.html + wireframes.html · Surviving the Singularity
+  </div>
+</footer>
+
+<script>
+/* Build the live preview strip. Each device renders signup.html at its true
+   pixel size inside an iframe, then scales down to fit the board. Scaling the
+   iframe (rather than resizing the window) is the only way to see a real
+   narrow viewport on a desktop screen. */
+var DEVICES = [
+  { name: 'Folded phone', w: 280,  h: 653,  scale: 0.62, note: '280 × 653' },
+  { name: 'iPhone 13',    w: 390,  h: 844,  scale: 0.62, note: '390 × 844' },
+  { name: 'Square',       w: 500,  h: 500,  scale: 0.62, note: '500 × 500' },
+  { name: 'Landscape',    w: 844,  h: 390,  scale: 0.46, note: '844 × 390' },
+  { name: 'iPad portrait',w: 834,  h: 1112, scale: 0.40, note: '834 × 1112' },
+  { name: 'iPad landscape',w:1112, h: 834,  scale: 0.40, note: '1112 × 834' },
+  { name: 'Desktop',      w: 1440, h: 900,  scale: 0.36, note: '1440 × 900' }
+];
+var strip = document.getElementById('frames');
+DEVICES.forEach(function (d) {
+  var wrap = document.createElement('div');
+  wrap.className = 'frame';
+  var label = document.createElement('div');
+  label.className = 'frame-label';
+  label.innerHTML = '<b>' + d.name + '</b><span>' + d.note + '</span>';
+  var device = document.createElement('div');
+  device.className = 'device';
+  device.style.width  = Math.round(d.w * d.scale) + 'px';
+  device.style.height = Math.round(d.h * d.scale) + 'px';
+  var f = document.createElement('iframe');
+  f.src = 'signup.html';
+  f.width = d.w;
+  f.height = d.h;
+  f.loading = 'lazy';
+  f.title = d.name + ' preview';
+  f.style.width  = d.w + 'px';
+  f.style.height = d.h + 'px';
+  f.style.transform = 'scale(' + d.scale + ')';
+  device.appendChild(f);
+  wrap.appendChild(label);
+  wrap.appendChild(device);
+  strip.appendChild(wrap);
+});
+</script>
+</body>
+</html>

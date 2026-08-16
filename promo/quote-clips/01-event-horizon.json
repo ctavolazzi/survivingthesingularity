@@ -1,0 +1,38 @@
+{
+  "out": "01-event-horizon/01-event-horizon.mp4",
+  "size": "1280x720",
+  "fps": 30,
+  "crf": 20,
+  "stitch": "cuts",
+  "theme": {
+    "bg": "#020617",
+    "fg": "#f1f5f9",
+    "dim": "#94a3b8"
+  },
+  "credits": [
+    "Quote: Surviving the Singularity, Chapter 1: The Event Horizon",
+    "Image: Event Horizon Telescope image of the M87 supermassive black hole (book figure ch01-m87-black-hole)"
+  ],
+  "scenes": [
+    {
+      "type": "quote",
+      "src": "/Users/ctavolazzi/Code/active/sts-v0.7.3/static/images/optimized/ch01_m87_black_hole_1200.jpg",
+      "motion": "pan-up",
+      "darken": 0.58,
+      "text": "The event horizon is behind us, not ahead.",
+      "label": "Surviving the Singularity  ·  Chapter 1: The Event Horizon",
+      "size": 66,
+      "dur": 7,
+      "fade_in": 0.7
+    },
+    {
+      "type": "end",
+      "text": "Surviving the Singularity",
+      "sub": "survivingthesingularity.com",
+      "size": 74,
+      "dur": 4,
+      "in": 1.0,
+      "rise": 20
+    }
+  ]
+}

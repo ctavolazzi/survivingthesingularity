@@ -144,6 +144,20 @@ export async function POST({ request, url, getClientAddress }) {
       // product), so enabling promos here cannot reopen the discount hole.
       allow_promotion_codes: env.ALLOW_PROMOTION_CODES === 'true',
       billing_address_collection: 'auto',
+      // The consent disclosure, ON the payment page, where the email is given.
+      // CT's ruling 2026-08-04: no accounts; the purchase email IS the buyer's
+      // identity, and release notices with upgrade discounts are part of what
+      // is bought. Saying so at the moment of purchase is what makes emailing
+      // buyers later defensible. The full text lives in /policies
+      // #purchase-emails; this line is the point-of-collection notice.
+      custom_text: {
+        submit: {
+          message:
+            "We'll email your receipt and download, plus notice of future " +
+            'editions with your upgrade discount. Details: ' +
+            'survivingthesingularity.com/policies',
+        },
+      },
     });
 
     // Put the session on the ledger the moment it exists, before the customer

@@ -131,7 +131,7 @@ The global agricultural complex depends on three primary inputs: Nitrogen (N), P
 
 > **N₂ + 3H₂ → 2NH₃** (catalyst, high pressure, high temperature; ΔH = −92.4 kJ/mol)
 
-To force this reaction to occur, industrial plants must run at pressures between 15 MPa and 25 MPa (150 to 250 bar) and temperatures between 400°C and 500°C. This single chemical reaction consumes approximately 1\% to 2\% of the entire global energy supply and accounts for roughly 3% of global carbon emissions.
+To force this reaction to occur, industrial plants must run at pressures between 15 MPa and 25 MPa (150 to 250 bar) and temperatures between 400°C and 500°C. This single chemical reaction consumes approximately 1% to 2% of the entire global energy supply and accounts for roughly 3% of global carbon emissions.
 
 When you buy a bag of synthetic chemical fertilizer, you are buying fossil fuel energy stabilized in salt.
 
@@ -235,7 +235,7 @@ The maximum concentration of dissolved oxygen ($C_{DO}$) that water can hold dec
 
 Where $T$ is the temperature of the water in degrees Celsius (°C).
 
-Let us run the calculations for two different operating scenarios:
+Let's run the calculations for two different operating scenarios:
 
 **Scenario A: Brewing in the cool mountain spring air (**T = 15°C**):**
 

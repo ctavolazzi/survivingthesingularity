@@ -67,11 +67,11 @@ Own the dirt. Build the systems. Be the one who is prepared, rather than the one
 
 ## The Autonomous Shell: The $25,000 Exit Strategy
 
-Let us talk about shelter.
+Let's talk about shelter.
 
-And no, I do not mean a standard suburban split-level home with a thirty-year mortgage, a manicured lawn, and a smart-lock door that can be remotely disabled by a bank’s automated foreclosure script. That is not a home; it is a financial cage designed to keep you servicing debt until your biological engine runs out of steam. If you must pay a monthly subscription fee to the state and the banks just to exist on the surface of the Earth, you are not a citizen; you are a tenant in a high-security penal colony.
+And no, I don't mean a standard suburban split-level home with a thirty-year mortgage, a manicured lawn, and a smart-lock door that can be remotely disabled by a bank’s automated foreclosure script. That's not a home; it's a financial cage designed to keep you servicing debt until your biological engine runs out of steam. If you must pay a monthly subscription fee to the state and the banks just to exist on the surface of the Earth, you're not a citizen; you're a tenant in a high-security penal colony.
 
-In the cracks, we do not rent our existence. We construct the **Autonomous Shell**.
+In the cracks, we don't rent our existence. We construct the **Autonomous Shell**.
 
 The Autonomous Shell is a heavily insulated, structurally reinforced, off-grid physical fortress built outside their speculative real-estate grid. It is designed to minimize your thermodynamic overhead while maximizing your physical security and digital autonomy. The entry cost? Roughly $25,000, the price of a mediocre used car. But instead of depreciating steel, you get a permanent, un-brickable exit from the corporate matrix.
 
@@ -145,7 +145,7 @@ You must install a structural steel skeleton down the center seam to replace the
 
 ### The Mechanical Load Calculations
 
-Let us calculate the required section modulus for the center support beam to resist bending.
+Let's calculate the required section modulus for the center support beam to resist bending.
 
 Assume a total roof live load (snow, solar arrays) of $w = \text{3,000}$ N/m distributed across the 12.19-meter (40-foot) span. If we place vertical support columns at every 3.05-meter (10-foot) interval, we divide the span into four equal segments of $L = 3.05$ m.
 

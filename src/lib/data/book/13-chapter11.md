@@ -93,7 +93,7 @@ We are looking for the sweet spot of cost, power draw, and compute density.
 
 To run modern, high-capability generative models (such as Llama-3-70B or Mistral-8x22B) locally and at high speeds, your CPU is useless. The bottleneck is not processing speed; it is memory bandwidth. You must load the entire model weights directly into **Video RAM (VRAM)**.
 
-Let us calculate the exact VRAM requirement ($V_{RAM}$) for any given local LLM based on its parameter size ($P$, in billions), its quantization level ($Q$, in bits per weight), and an operational overhead buffer ($B$):
+Let's calculate the exact VRAM requirement ($V_{RAM}$) for any given local LLM based on its parameter size ($P$, in billions), its quantization level ($Q$, in bits per weight), and an operational overhead buffer ($B$):
 
 > $$V_{RAM} ≈ ( (P · Q) / (8) ) · B \text{ [GB]}$$
 
@@ -104,7 +104,7 @@ Where:
   - 8 is the conversion factor from bits to bytes.
   - $B$ is the system overhead buffer ($B ≈ 1.20$, which accounts for the context window, KV cache, and runtime memory overhead).
 
-Let us run the math for two highly capable local configurations:
+Let's run the math for two highly capable local configurations:
 
 **Scenario A: Running Llama-3-8B at FP16 (unquantized,** 16-bit **precision):**
 

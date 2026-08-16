@@ -89,7 +89,7 @@ Mullainathan and Shafir demonstrated this through empirical studies; for instanc
 
 ## The Primate Backlash Is Already Here
 
-The Stage 5 backlash is not a theoretical projection; it is already empirically observable on the streets of major technological hubs. In San Francisco, an anti-car activist group known as the "Safe Street Rebels" has waged a sustained campaign of physical sabotage against autonomous vehicles operated by Waymo and Cruise. Utilizing a tactic known as "coning," activists place ordinary traffic cones on the hoods of self-driving robotaxis. This simple act exploits the vehicles' safety protocols, throwing the $50,000 cars into a "panic mode" that permanently disables them in the middle of the street until a human employee arrives to reset the system, causing massive localized traffic jams.
+The Stage 5 backlash is not a theoretical projection; it is already empirically observable on the streets of major technological hubs. In San Francisco, an anti-car activist group known as the "Safe Street Rebels" has waged a sustained campaign of physical sabotage against autonomous vehicles operated by Waymo and Cruise. Utilizing a tactic known as "coning," activists place ordinary traffic cones on the hoods of self-driving robotaxis. This simple act exploits the vehicles' safety protocols, throwing the cars into a "panic mode" that disables them in the middle of the street until a human employee arrives to reset the system, causing massive localized traffic jams.
 
 | Anti-Autonomous-Vehicle Activist Principles & Concerns | Documented Incidents & System Failures |
 | :-- | :-- |

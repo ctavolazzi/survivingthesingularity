@@ -1,39 +1,8 @@
 {
-  "generated_at": "2026-08-16T13:36:02Z",
+  "generated_at": "2026-08-17T13:43:23Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
-    {
-      "id": "2607.16066",
-      "source": "arxiv",
-      "title": "LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization",
-      "url": "https://arxiv.org/abs/2607.16066",
-      "authors": [
-        "Mazene Ameur",
-        "Abdelkader Mekrache",
-        "Bouziane Brik",
-        "Adlen Ksentini"
-      ],
-      "summary": "Agentic Artificial Intelligence (AI), enabled by Large Language Models, marks a shift from rule-based automation toward autonomous, goal-driven control of Next-Generation Networks (NGNs). Existing surveys treat the two domains in isolation, leaving protocol integration, evaluation, and standardization alignment underexplored. To address this gap, a two-part tutorial-and-survey is presented. Part I formalises the control, management, and AI-native planes of 5G and 6G. It then covers the foundations of agentic systems: reasoning, planning, tool use, multi-agent coordination, and evaluation. Part",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-17",
-      "score": 17.0,
-      "raw_score": 34,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous",
-        "tool use",
-        "planning",
-        "reasoning",
-        "alignment",
-        "llm",
-        "language model",
-        "automation"
-      ]
-    },
     {
       "id": "2608.07642",
       "source": "arxiv",
@@ -57,6 +26,33 @@
         "alignment",
         "rlhf",
         "value alignment",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.13900",
+      "source": "arxiv",
+      "title": "Agentic Transaction: Towards ACID-Compliant Agent Systems",
+      "url": "https://arxiv.org/abs/2608.13900",
+      "authors": [
+        "Zhaoyan Sun",
+        "Xiaoxiao Wang",
+        "Guoliang Li"
+      ],
+      "summary": "Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace manipulation. As agents increasingly operate over persistent environments and multi-step workflows, they face challenges analogous to those addressed by transactional database systems: reliable execution, consistent outcomes, safe concurrency, and durable state management. We introduce the concept of an agentic transaction and propose an ACID-compliant agent system framework that reinterprets the classi",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-14",
+      "score": 12.0,
+      "raw_score": 24,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "tool use",
+        "reasoning",
+        "interpret",
         "llm",
         "language model"
       ]
@@ -554,32 +550,6 @@
       ]
     },
     {
-      "id": "2607.16057",
-      "source": "arxiv",
-      "title": "Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning",
-      "url": "https://arxiv.org/abs/2607.16057",
-      "authors": [
-        "Ajay Patel",
-        "Kartik Hosanagar",
-        "Ramayya Krishnan",
-        "Chris Callison-Burch"
-      ],
-      "summary": "Large language models (LLMs) are improving rapidly as reflected in benchmark scores, yet these AI benchmarks largely test capabilities such as factual recall, narrow question answering, mathematical problem-solving, and coding and agentic tool-use. What remains poorly measured is AI progress on the analytical knowledge work white-collar professionals perform daily, including synthesizing complex information, exercising judgment under uncertainty and incomplete information, applying strategic and adversarial thinking in multi-stakeholder settings, weighing trade-offs, and producing defensible, ",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-17",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool-use",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2608.11679",
       "source": "arxiv",
       "title": "AgenticTwin: An Agentic LLM Framework Integrated with Digital Twin for Anomaly Detection",
@@ -958,6 +928,31 @@
       ]
     },
     {
+      "id": "2608.14452",
+      "source": "arxiv",
+      "title": "SheetCompass: Hierarchical Relation Graphs for Agentic Spreadsheet Reasoning",
+      "url": "https://arxiv.org/abs/2608.14452",
+      "authors": [
+        "Panjing He",
+        "Mingyue Cheng",
+        "Yucong Luo",
+        "Li Li"
+      ],
+      "summary": "Spreadsheets are widely used to organize, analyze, and manipulate semi-structured data, yet automated spreadsheet reasoning remains challenging for large language models (LLMs). Real-world workbooks often contain implicit cross-table associations, fine-grained column dependencies, and complex spatial layouts. Existing methods typically flatten these multidimensional structures into sequential strings, losing important intra-sheet boundaries and inter-sheet semantics. Consequently, LLMs cannot exploit the global spatial context that human experts naturally use when inspecting spreadsheets. We p",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-14",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.12984",
       "source": "arxiv",
       "title": "Reconcile Once, Write Anytime: A Trust-Tiered Librarian and a Multi-Agent Writer for Drift-Free, Point-in-Time Research",
@@ -969,8 +964,8 @@
         "Peiyang He"
       ],
       "summary": "Long-form research reports generated by large language models drift, contradict themselves, and lose provenance: the same metric appears with different values, and rumor is quoted as confidently as an audited filing. We present a two-tier agentic system that separates a maintained, point-in-time knowledge library from report writing. A deterministic \"librarian\" ingests timestamped sources into a trust-tiered ontology, layering evidence cards, an authoritative metric ledger, and a claim graph into an always-current source of truth, not per-query RAG over raw chunks. A portable multi-agent \"writ",
-      "category": "cs.CL",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-08-13",
       "score": 8.0,
       "raw_score": 16,
@@ -1376,6 +1371,55 @@
       ]
     },
     {
+      "id": "2608.14354",
+      "source": "arxiv",
+      "title": "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
+      "url": "https://arxiv.org/abs/2608.14354",
+      "authors": [
+        "Mingming Zhao",
+        "Jiqian Dong",
+        "Kangping Xu",
+        "Zadid Hasan"
+      ],
+      "summary": "Enabling LLM agents to sustain productive, stable, and goal-aligned research over extended horizons is a central challenge for autonomous machine learning and scientific discovery, as progress hinges on continuously managing evolving state, exploration decisions, and computational resources. Pioneering autoresearch agents, despite great success, still lack mechanisms for continuity, recovery from dead ends, and value-driven compute allocation, which inherently undermines overall search efficiency, wastes computational resources, and lowers the chance of ultimate success. To bridge this gap, we",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-14",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "autonomous",
+        "llm"
+      ]
+    },
+    {
+      "id": "2608.14047",
+      "source": "arxiv",
+      "title": "Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use",
+      "url": "https://arxiv.org/abs/2608.14047",
+      "authors": [
+        "Yi Ding",
+        "Yanzhao Yu",
+        "Xili Dai",
+        "Xianbiao Qi"
+      ],
+      "summary": "This paper integrates end-to-end Visual-Language-Action (VLA) models with agentic tool-use to propose Agentic Robot with Tool-use (ART). ART is a tool-injection framework that tunes any VLA model to leverage off-the-shelf tool modules for low-level vision, high-level affordance, and embodiment enhancement. Compared to vanilla VLA models with a whole continuous action solution space, ART reduces the complexity of the action solution space through tool-use, which not only improves generalizability across different tasks but also reduces data dependency. To demonstrate the advantages (high genera",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-14",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool-use",
+        "robot",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.13160",
       "source": "arxiv",
       "title": "Better Decomposition, Free Aggregation: A Synthesizer-Folding Framework for Multilingual Multi-Hop Question Answering",
@@ -1472,56 +1516,6 @@
         "planning",
         "reasoning",
         "rag"
-      ]
-    },
-    {
-      "id": "2608.11876",
-      "source": "arxiv",
-      "title": "D3D-GEN: Robot-Aware Domain-Grounded Interactive 3D World Generation for Social Robotics",
-      "url": "https://arxiv.org/abs/2608.11876",
-      "authors": [
-        "Anh Duc Do",
-        "Volodymyr Scherbyna",
-        "Tai Duc Nguyen",
-        "Spaarsh Thakkar"
-      ],
-      "summary": "Training and validation of Embodied AI for social navigation critically depends on realistic simulation environments, yet many current approaches fail to find a balance between realism and simulability. We propose D3D-GEN, a novel world generation system that combines a domain agent with a retrieval-augmented generation (RAG) pipeline grounded in that domain. Our system enables users to rapidly generate domain-grounded, fully interactive 3D worlds by automating both the collection of domain knowledge and the synthesis of realistic floorplans and object placements, without dependence on any fix",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-12",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "embodied",
-        "robot",
-        "robotics",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2608.13476",
-      "source": "arxiv",
-      "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
-      "url": "https://arxiv.org/abs/2608.13476",
-      "authors": [
-        "Saisha Shetty",
-        "Satvik Tripathi",
-        "Austin Lin",
-        "Colin Zhao"
-      ],
-      "summary": "We present Multi-Agent Reasoning and Coordination (MARC), an open-source framework that replaces monolithic LLM prompting with deterministic multi-agent orchestration for clinical reasoning. MARC coordinates role-specialized agents for extraction, reasoning, answer generation, and evaluation, with explicit context passing and traceable intermediate outputs, enabling stage-wise failure attribution. We additionally introduce a Decomposer module that generates task-specific agent prompts from a plain-language description, eliminating manual prompt engineering. The framework supports both API-base",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-13",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm"
       ]
     }
   ]

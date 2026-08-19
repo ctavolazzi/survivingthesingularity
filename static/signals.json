@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T13:47:22Z",
+  "generated_at": "2026-08-19T13:49:28Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -84,34 +84,6 @@
       ]
     },
     {
-      "id": "2607.17331",
-      "source": "arxiv",
-      "title": "Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning",
-      "url": "https://arxiv.org/abs/2607.17331",
-      "authors": [
-        "Zhihao Liu",
-        "Tianyu Wang",
-        "Xi Vincent Wang",
-        "Lihui Wang"
-      ],
-      "summary": "Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across functional boundaries. This paper presents Agentic ERP, an expert-system architecture that combines role-aligned large-language-model (LLM) agents with a risk-tiered human-in-the-loop harness and a graph-based orchestrator to execute end-to-end business workflows on a production ERP backend. First, autonomo",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-19",
-      "score": 12.0,
-      "raw_score": 24,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "autonomous",
-        "planning",
-        "llm",
-        "language model",
-        "automation"
-      ]
-    },
-    {
       "id": "2608.06865",
       "source": "arxiv",
       "title": "Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection",
@@ -189,6 +161,32 @@
         "autonomous",
         "humanoid",
         "robot"
+      ]
+    },
+    {
+      "id": "2608.17184",
+      "source": "arxiv",
+      "title": "AISA: AI Safety Assistant Framework for Continuous Improvement of Highway Construction",
+      "url": "https://arxiv.org/abs/2608.17184",
+      "authors": [
+        "Mason Smetana",
+        "Trevor Neece",
+        "Lev Khazanovich"
+      ],
+      "summary": "Job Safety Analysis (JSA) and pre-task planning can benefit from prior incident records, yet historical accident data is often stored as unstructured narratives that are difficult to consult at the point of planning. A novel framework centered on large language models (LLMs) for highway construction safety reporting and planning is proposed as a foundation for future agentic applications, prioritizing deterministic, local inferencing. The first aim is to enable classification and quality scoring of incident narratives for existing and future reporting purposes. The second is to evaluate retrie",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-17",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "ai safety",
+        "llm",
+        "language model",
+        "job"
       ]
     },
     {
@@ -460,8 +458,8 @@
         "Yiwei Xu"
       ],
       "summary": "Large Language Models (LLMs) have demonstrated capabilities in in-context learning, task decomposition, step-by-step reasoning, and code generation, driving their gradual evolution from text generation models into the core of agents capable of perceiving environments, invoking tools, and executing tasks. Traditional LLM Agents typically obtain information through webpages, documents, databases, or external tools and generate corresponding invocation sequences according to user goals; when this technology is further integrated with robotic systems, large language models begin to undertake funct",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.RO",
+      "tag": "Robotics",
       "published_at": "2026-08-17",
       "score": 9.5,
       "raw_score": 19,
@@ -649,6 +647,32 @@
         "agent",
         "tool use",
         "reasoning",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.17836",
+      "source": "arxiv",
+      "title": "Leveraging Association Context Retrieval in Knowledge Edit- ing to Build White-Box Attacks on LLMs",
+      "url": "https://arxiv.org/abs/2608.17836",
+      "authors": [
+        "Roman Maksimov",
+        "Vladimir Aletov",
+        "Vladimir Solodkin",
+        "Dmitry Bylinkin"
+      ],
+      "summary": "As large language models (LLMs) are granted increasing autonomy, it is essential to investigate methods that can induce unsafe behavior. We propose a novel white-box attack inspired by locate-then-edit approaches from the field of Knowledge Editing. Our choice is motivated by the observation that models edited with such schemes tend to assign unusually high prediction probabilities to the edit target, a property that is particularly advantageous when designing attacks. We modify the editing framework by incorporating as- sociative knowledge retrieved from the model, thereby extending constrain",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-08-18",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agi",
+        "autonomy",
         "llm",
         "language model",
         "retrieval",
@@ -856,6 +880,32 @@
         "agentic",
         "llm",
         "rag"
+      ]
+    },
+    {
+      "id": "2608.17129",
+      "source": "arxiv",
+      "title": "PROBE: Manipulation-Grounded Visual Question Answering with VLM Agents",
+      "url": "https://arxiv.org/abs/2608.17129",
+      "authors": [
+        "Vineet Bhat",
+        "Siyi Chen",
+        "Alex Zook",
+        "Xuning Yang"
+      ],
+      "summary": "Vision-language Models (VLMs) excel at 2D grounding, spatial reasoning and agentic tool-based planning in static scenes. However, consider asking a home robot \"Is my medication still in the cabinet?\" The answer may be physically hidden behind a row of containers that must first be moved aside. Answering such questions in real-world cluttered environments requires reasoning in dynamic scenes: distractors must be manipulated to reveal occluded objects, and each action changes the scene the model must reason over. We formalize this setting as Manipulation-Grounded Visual Question Answering (MG-VQ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-17",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "reasoning",
+        "robot",
+        "language model"
       ]
     },
     {
@@ -1106,6 +1156,55 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2608.17928",
+      "source": "arxiv",
+      "title": "A Theoretical Framework for Parallel Lifelong MAPF Using Group Decentralized Planning",
+      "url": "https://arxiv.org/abs/2608.17928",
+      "authors": [
+        "Alex DeWeese",
+        "Jiaoyang Li",
+        "Guannan Qu"
+      ],
+      "summary": "In the Lifelong Multi-Agent Path Finding (L-MAPF) problem, agents must repeatedly move from one destination to another while avoiding obstacles and inter-agent collisions. Widely regarded as one of the highest-performing solutions to this problem is the Rolling-Horizon Collision Resolution (RHCR) framework. However, commensurate with its quality solutions, it incurs a computational cost that limits its applicability to even modest agent counts. In this paper, leveraging theoretical methods from the Locally Interdependent Multi-Agent MDP literature, we first theoretically prove the near-optimal",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-18",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "planning",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.17834",
+      "source": "arxiv",
+      "title": "AdaLens: Interactive Storyline for Monitoring and Steering Long-Running Agentic Data Analysis",
+      "url": "https://arxiv.org/abs/2608.17834",
+      "authors": [
+        "Yangtian Liu",
+        "Yan Miao",
+        "Shuhan Liu",
+        "Yunfan Zhou"
+      ],
+      "summary": "Large language models are pushing data science toward increasingly autonomous and agentic workflows, with recent systems already supporting multi-step and long-running analyses. As these workflows become more autonomous, conventional interfaces no longer provide adequate support for two critical requirements: observability for understanding an agent's evolving reasoning and evidence, and steerability for redirecting low-value directions or deepening promising ones during execution. Existing interactive approaches improve process visibility and open intervention points, but they remain largely ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-18",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "language model"
       ]
     },
     {
@@ -1427,103 +1526,6 @@
         "agentic",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2608.01558",
-      "source": "arxiv",
-      "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
-      "url": "https://arxiv.org/abs/2608.01558",
-      "authors": [
-        "Alireza Lotfi",
-        "Subangkar Karmaker Shanto",
-        "Imtiaz Karim",
-        "Elisa Bertino"
-      ],
-      "summary": "Autonomous agents are increasingly used to execute consequential tasks in environments governed by operational constraints, organizational policies, regulatory requirements, and technical standards. Their safety is therefore determined not by the correctness of individual actions, but by whether their overall behavior remains consistent with the rules and invariants of the systems in which they operate. As large language model (LLM)-based agents become more autonomous and increasingly delegate tasks across organizational boundaries, securing them evolves from a single challenge into a broad an",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-03",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.28979",
-      "source": "arxiv",
-      "title": "Mixture-of-Translators: Translating KV Caches Across Heterogeneous Large Language Models",
-      "url": "https://arxiv.org/abs/2607.28979",
-      "authors": [
-        "Jin-woo Lee",
-        "Minkyung Song",
-        "Junghyun Oh",
-        "Seunghoon Han"
-      ],
-      "summary": "Heterogeneous Large Language Model (LLM) systems increasingly rely on shared contexts, retrieved evidence, and multi-agent dialogue histories, yet their internal key-value (KV) caches remain model-specific and cannot be reused across architectures. Consequently, each model must repeatedly prefill or store caches for the same context, limiting the scalability of multi-model reasoning and long-context generation. We propose Mixture-of-Translators(MoT), a cache translation framework that maps context KV caches from a source LLM into the cache space of a target LLM. Unlike prior approaches that de",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-31",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.26922",
-      "source": "arxiv",
-      "title": "Two Calls Beat Five Agents: Evaluating Multi-Agent Pipelines Against Self-Refinement for Local Language Models",
-      "url": "https://arxiv.org/abs/2607.26922",
-      "authors": [
-        "Ashish Prajapati",
-        "Om Mohite"
-      ],
-      "summary": "Multi-agent LLM pipeline systems break down the task among multiple roles for better reasoning, but are benchmarked mainly with large-scale commercial models. In this study, we investigate Parishad, a structured multi-agent system involving five roles, by deploying it on Qwen2.5-7B-Instruct, a local model, on two datasets: GSM8K (500 questions) and HumanEval (164 questions), compared with prompting directly and two-call self-refinement. The multi-agent system drops GSM8K accuracy from 75.0\\% to 45.0\\% with JSON data format due to the error accumulation problem. With plaintext format, the accur",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-07-29",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.16269",
-      "source": "arxiv",
-      "title": "Domain-Agnostic Neural Topic Modeling with Contextual Token-Level Semantic Graph Representation",
-      "url": "https://arxiv.org/abs/2608.16269",
-      "authors": [
-        "Seung-Won Seo",
-        "Won Ik Cho",
-        "Yongmin Yoo"
-      ],
-      "summary": "Recent advances in neural topic models with pre-trained language models (PLMs) have achieved strong performance by leveraging general-domain pre-training, yet their topic interpretability often degrades on specialized corpora. This limitation primarily stems from the geometry of the embedding space, where domain-specific terms unseen during pre-training collapse into an indistinguishable region, and neither domain-specific re-training, word-level graph enrichment, nor parameter-efficient fine-tuning can restructure this space without inheriting the capacity ceiling of the underlying encoder. O",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-08-17",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "interpretability",
-        "interpret",
-        "language model",
-        "rag"
       ]
     }
   ]

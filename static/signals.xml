@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 18 Aug 2026 13:47:22 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 19 Aug 2026 13:49:28 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Contextual Value Alignment via Multilayer Combinatorial Fusion</title>
@@ -29,13 +29,6 @@
       <description>Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system t... [Score: 12.0 | Flagged for: agi, world model, agent, planning, reasoning] Authors: Xiangcheng Zhang, Yilun Du</description>
     </item>
     <item>
-      <title>Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning</title>
-      <link>https://arxiv.org/abs/2607.17331</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.17331</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across function... [Score: 12.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Zhihao Liu, Tianyu Wang, et al.</description>
-    </item>
-    <item>
       <title>Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection</title>
       <link>https://arxiv.org/abs/2608.06865</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.06865</guid>
@@ -55,6 +48,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.16195</guid>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <description>Achieving human-level competitive intelligence and physical agility in humanoid robots remains a profound challenge, particularly in contact-rich and highly dynamic tasks such as boxing. While Multi-Agent Reinforcement Learning offers a principled framework for strategic interaction, its direct appl... [Score: 10.0 | Flagged for: agi, agent, multi-agent, autonomous, humanoid] Authors: Kangning Yin, Kaige Liu, et al.</description>
+    </item>
+    <item>
+      <title>AISA: AI Safety Assistant Framework for Continuous Improvement of Highway Construction</title>
+      <link>https://arxiv.org/abs/2608.17184</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.17184</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Job Safety Analysis (JSA) and pre-task planning can benefit from prior incident records, yet historical accident data is often stored as unstructured narratives that are difficult to consult at the point of planning. A novel framework centered on large language models (LLMs) for highway construction... [Score: 10.0 | Flagged for: agent, agentic, planning, ai safety, llm] Authors: Mason Smetana, Trevor Neece, et al.</description>
     </item>
     <item>
       <title>When Coordination Becomes a Threat: Communication Attacks in LLM-Controlled Multi-Robot Systems</title>
@@ -183,6 +183,13 @@
       <description>Large language model (LLM)-based agents increasingly rely on reasoning, tool use, and iterative execution, yet existing agent frameworks still operate largely in isolation. While recent memory-based agent systems improve individual agents through local retrieval and workflow reuse, local experiences... [Score: 9.5 | Flagged for: agent, tool use, reasoning, llm, language model] Authors: Weihao Li, Jun Bai, et al.</description>
     </item>
     <item>
+      <title>Leveraging Association Context Retrieval in Knowledge Edit- ing to Build White-Box Attacks on LLMs</title>
+      <link>https://arxiv.org/abs/2608.17836</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.17836</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <description>As large language models (LLMs) are granted increasing autonomy, it is essential to investigate methods that can induce unsafe behavior. We propose a novel white-box attack inspired by locate-then-edit approaches from the field of Knowledge Editing. Our choice is motivated by the observation that mo... [Score: 9.0 | Flagged for: agi, autonomy, llm, language model, retrieval] Authors: Roman Maksimov, Vladimir Aletov, et al.</description>
+    </item>
+    <item>
       <title>Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis</title>
       <link>https://arxiv.org/abs/2608.16775</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.16775</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.29347</guid>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <description>Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomo... [Score: 9.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Jiamin Wu, Peishan Xiang, et al.</description>
-    </item>
-    <item>
-      <title>Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents</title>
-      <link>https://arxiv.org/abs/2607.22014</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.22014</guid>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation ... [Score: 9.0 | Flagged for: agent, autonomous, reasoning, embodied, llm] Authors: Suman Navaratnarajah, Taehyoung Kim, et al.</description>
     </item>
   </channel>
 </rss>

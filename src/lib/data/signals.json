@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T13:49:28Z",
+  "generated_at": "2026-08-20T13:50:59Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -108,6 +108,32 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2608.18575",
+      "source": "arxiv",
+      "title": "Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution",
+      "url": "https://arxiv.org/abs/2608.18575",
+      "authors": [
+        "Ting-Wei Li",
+        "Yuanchen Bei",
+        "Xiao Lin",
+        "Hanghang Tong"
+      ],
+      "summary": "Large language model (LLM)-based multi-agent systems (MAS) often exhibit complex failure modes, which frequently cause agents to produce incorrect outcomes. This motivates the task of Agent Failure Attribution: given a failed multi-agent trajectory, identify the faulty agents and their corresponding error types. Existing approaches predominantly rely on LLMs to perform failure attribution, either through direct prompting, fine-tuning on synthetic data or complex agentic pipelines. While effective, these methods incur substantial computational overhead due to long-context processing, expensive ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-19",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1134,28 +1160,28 @@
       ]
     },
     {
-      "id": "2607.18026",
+      "id": "2608.19029",
       "source": "arxiv",
-      "title": "Rethinking Heterogeneous LLM Merging: A Weighted Model Averaging Perspective",
-      "url": "https://arxiv.org/abs/2607.18026",
+      "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+      "url": "https://arxiv.org/abs/2608.19029",
       "authors": [
-        "Jiahe Fan",
-        "Yinghao Hou",
-        "Si Chen",
-        "Aiyuan Zhang"
+        "Pradeep Murugesan",
+        "Luoxiao Yang",
+        "Xueli Chen",
+        "Xinqi Fan"
       ],
-      "summary": "Can large language models with substantially different parameter spaces be merged by direct weighted averaging, without training or semantic alignment? Existing heterogeneous fusion methods typically introduce distillation, adapters, learned latent spaces, routing, or feature alignment, leaving open whether a simpler recipe can work for genuinely different billion-parameter checkpoints. We revisit this counterintuitive question through training-free dimensional adaptation followed by ratio-controlled interpolation. In union-style merging, we expand the smaller model into the larger parameter s",
+      "summary": "Accurate and responsible medical question answering (QA) is important in healthcare, where complex cases require factual knowledge and nuanced reasoning. Existing medical QA systems, typically based on single-agent architectures and static retrieval, often lack adaptability, persistent memory, and structured decision-making. This work introduces an adaptive memory and reflection (AMR) agentic system, a multi-agent framework in which specialized agents use dedicated memory and reflection-based feedback to retrieve relevant prior cases and improve subsequent reasoning. Complexity assessment rout",
       "category": "cs.AI",
       "tag": "Research",
-      "published_at": "2026-07-20",
-      "score": 8.5,
-      "raw_score": 17,
+      "published_at": "2026-08-19",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
-        "agi",
-        "alignment",
-        "llm",
-        "language model",
-        "rag"
+        "agent",
+        "multi-agent",
+        "agentic",
+        "reasoning",
+        "retrieval"
       ]
     },
     {
@@ -1169,8 +1195,8 @@
         "Guannan Qu"
       ],
       "summary": "In the Lifelong Multi-Agent Path Finding (L-MAPF) problem, agents must repeatedly move from one destination to another while avoiding obstacles and inter-agent collisions. Widely regarded as one of the highest-performing solutions to this problem is the Rolling-Horizon Collision Resolution (RHCR) framework. However, commensurate with its quality solutions, it incurs a computational cost that limits its applicability to even modest agent counts. In this paper, leveraging theoretical methods from the Locally Interdependent Multi-Agent MDP literature, we first theoretically prove the near-optimal",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-08-18",
       "score": 8.0,
       "raw_score": 16,
@@ -1502,29 +1528,6 @@
         "agent",
         "agentic",
         "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.02412",
-      "source": "arxiv",
-      "title": "Why Large Language Models Fail at Tabular Prediction",
-      "url": "https://arxiv.org/abs/2608.02412",
-      "authors": [
-        "Marta Garnelo",
-        "Wojciech M. Czarnecki"
-      ],
-      "summary": "Large language models (LLMs) have become the default tool for a remarkable range of tasks, yet they have had conspicuously little success at one of the most common machine learning workloads: predictive analytics over tabular data. This gap is the founding premise of the fast-growing field of tabular foundation models, but the question of why generic LLMs fail has remained open. We study a frontier LLM in its purest inference regime - a single generation pass over a prompt containing the full training and test data, with no tools, no agentic scaffolding, and no fine-tuning - and systematically",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-08-03",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "llm",
         "language model"
       ]
     }

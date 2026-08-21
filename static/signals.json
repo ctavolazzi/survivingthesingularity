@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T13:50:59Z",
+  "generated_at": "2026-08-21T13:50:22Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -447,29 +447,55 @@
       ]
     },
     {
-      "id": "2607.19190",
+      "id": "2608.20314",
       "source": "arxiv",
-      "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
-      "url": "https://arxiv.org/abs/2607.19190",
+      "title": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
+      "url": "https://arxiv.org/abs/2608.20314",
       "authors": [
-        "Guanxiong Chen",
-        "Qianjun Xia",
-        "Jiawei Peng",
-        "Heng Zhang"
+        "Fengqing Jiang",
+        "Yite Wang",
+        "Boyi Liu",
+        "Zhaoyang Wang"
       ],
-      "summary": "Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajectories into a runnable physical simulation. Today this process still depends on manual tuning of visual foundation models, mesh cleanup, coordinate-frame alignment, and brittle workflow glue across visual perception tools and simulators. We introduce \\textit{Agentic Real2Sim}, a framework for genera",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-21",
-      "score": 10.0,
-      "raw_score": 20,
+      "summary": "Mid-training is increasingly recognized as a critical stage for shaping the capabilities of large language models. Recent work has shown that targeted mid-training can strengthen reasoning-intensive abilities such as math and science, and can also improve agentic capabilities in software-engineering settings. In this work, we study the parallel but less explored agentic capability: general tool use. We present MidTool, an open corpus construction pipeline for agentic tool-use mid-training that combines large-scale web, PDF, and code data with synthesized supervision from real-world tool APIs, ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-20",
+      "score": 9.5,
+      "raw_score": 19,
       "matched_keywords": [
-        "world model",
-        "foundation model",
         "agent",
         "agentic",
-        "alignment",
-        "robot"
+        "tool use",
+        "tool-use",
+        "reasoning",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.20129",
+      "source": "arxiv",
+      "title": "Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving",
+      "url": "https://arxiv.org/abs/2608.20129",
+      "authors": [
+        "Mehdi Azarafza",
+        "Faezeh Pasandideh",
+        "Ali Ehteshami Bejnordi",
+        "Stefan Henkler"
+      ],
+      "summary": "Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective control and safety mechanisms, their performance may degrade in situations requiring contextual reasoning. Large Language Models (LLMs) have demonstrated strong capabilities in understanding multimodal information and generating contextual reasoning, however, their use for direct vehicle control can introduce latency and hallucination risks. To address these limitations, a hybrid framework is propose",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-20",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1160,6 +1186,53 @@
       ]
     },
     {
+      "id": "2608.20099",
+      "source": "arxiv",
+      "title": "Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design",
+      "url": "https://arxiv.org/abs/2608.20099",
+      "authors": [
+        "Poomphob Suwannapichat",
+        "Boonyarit Changaival",
+        "Caesar Wu",
+        "Pascal Bouvry"
+      ],
+      "summary": "LLM-based Multi-Agent Systems (MAS) achieve strong performance on complex reasoning tasks by coordinating multiple agents, but at the cost of substantial token consumption. Recent work on automatic topology design, ARG-Designer, has reframed this problem as autoregressive graph generation. However, its training objective provides no explicit incentive for the model to generate sparse and efficient topologies. We address this limitation by introducing a Reward-Guided Autoregressive Graph Generation (RGA-Designer) inspired by Reinforcement Learning from Human Feedback (RLHF). We train a reward m",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-08-20",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "rlhf",
+        "llm"
+      ]
+    },
+    {
+      "id": "2608.19557",
+      "source": "arxiv",
+      "title": "When Do LLM Agents Help? Deadline-Aware Mixed-Criticality Task Scheduling at the Autonomous-Vehicle Edge",
+      "url": "https://arxiv.org/abs/2608.19557",
+      "authors": [
+        "Reza Zakerian"
+      ],
+      "summary": "Autonomous vehicles offload latency-sensitive perception tasks to nearby mobile edge computing (MEC) servers, where a missed safety-critical task is unsafe rather than merely degraded. Large language models (LLMs) are increasingly proposed as adaptive, explainable schedulers, yet evidence of when they help is scarce. We study deadline-aware, mixed-criticality scheduling on heterogeneous MEC servers, where time-critical (TC) tasks must be protected at a controlled cost to best-effort traffic, and ask whether a multi-agent LLM control layer improves on a strong heuristic. We answer in two steps.",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-20",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.19029",
       "source": "arxiv",
       "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
@@ -1171,8 +1244,8 @@
         "Xinqi Fan"
       ],
       "summary": "Accurate and responsible medical question answering (QA) is important in healthcare, where complex cases require factual knowledge and nuanced reasoning. Existing medical QA systems, typically based on single-agent architectures and static retrieval, often lack adaptability, persistent memory, and structured decision-making. This work introduces an adaptive memory and reflection (AMR) agentic system, a multi-agent framework in which specialized agents use dedicated memory and reflection-based feedback to retrieve relevant prior cases and improve subsequent reasoning. Complexity assessment rout",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-08-19",
       "score": 8.0,
       "raw_score": 16,
@@ -1230,6 +1303,30 @@
         "agentic",
         "autonomous",
         "reasoning",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.19263",
+      "source": "arxiv",
+      "title": "The Evaluation Context Protocol (ECP): A Portable Contract for AI Agent Evaluation",
+      "url": "https://arxiv.org/abs/2608.19263",
+      "authors": [
+        "Aniket Wattamwar",
+        "Manav Anandani",
+        "Mrunal Kakirwar"
+      ],
+      "summary": "The evolution of artificial intelligence has necessitated a fundamental shift from evaluating isolated Large Language Models (LLMs) to assessing autonomous agentic architectures. This paper explores the critical methodologies for evaluating AI agents and the essential role of advanced observability infrastructure. We analyze the architectural components of agents and identify the severe limitations of current evaluation paradigms, including benchmark exploitation, the \"confidently wrong\" phenomenon, and the discrepancy between theoretical capability and operational reliability. To begin addres",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-18",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "llm",
         "language model"
       ]
     },
@@ -1428,106 +1525,6 @@
         "multi-agent",
         "reasoning",
         "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.04317",
-      "source": "arxiv",
-      "title": "Trident : How to Break Deep Reinforcement Learning Cyber Defenses (Agentic)",
-      "url": "https://arxiv.org/abs/2608.04317",
-      "authors": [
-        "Ryozo Masukawa",
-        "Ian Bryant",
-        "Armita Kazeminajafabadi",
-        "Sanggeon Yun"
-      ],
-      "summary": "Autonomous cyber defense systems based on Deep Reinforcement Learning (DRL) have attracted significant research attention, yet remain evaluated almost exclusively against static, heuristic red agents, leaving their robustness against adaptive threats critically understudied. Meanwhile, recent advances in Reinforcement Learning with Verifiable Rewards (RLVR) have improved LLM reasoning, but their integration into cybersecurity remains elusive due to the absence of suitable benchmark environments and interaction datasets. To bridge this gap, we introduce Trident, an agentic LLM red teaming frame",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-05",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "reasoning",
-        "llm"
-      ]
-    },
-    {
-      "id": "2608.05042",
-      "source": "arxiv",
-      "title": "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation",
-      "url": "https://arxiv.org/abs/2608.05042",
-      "authors": [
-        "Peiyan Li",
-        "Yuze Zhu",
-        "Yixiang Chen",
-        "Qisen Ma"
-      ],
-      "summary": "Leveraging pre-trained vision-language models (VLMs) to construct vision-language-action (VLA) models has emerged as a promising paradigm for 3D robot manipulation. However, existing 3D VLA methods remain data-hungry, exhibit limited generalization under distribution shifts, and lack explicit memory of past observations. These limitations hinder their application to data-scarce, open-world, and memory-dependent manipulation scenarios. Our previous work, BridgeVLA, improves data efficiency and generalization by preserving the input--output alignment of a pre-trained VLM during 3D action learnin",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-05",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "alignment",
-        "robot",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2608.03648",
-      "source": "arxiv",
-      "title": "Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate",
-      "url": "https://arxiv.org/abs/2608.03648",
-      "authors": [
-        "Hao Wu",
-        "Shoucheng Song",
-        "Chang Yao",
-        "Haoyu Wang"
-      ],
-      "summary": "Multi-Agent Debate (MAD) improves the reasoning performance of Large Language Models (LLMs) through multi-round interaction. However, LLMs in MAD are highly susceptible to blind conformity. Existing individual evaluation methods, typically based on confidence or perplexity, fail to reflect the correctness of reasoning and may even exacerbate blind conformity. To address this, we shift the perspective from individual evaluation to group interaction. We define mutual referencing among LLMs as \\textbf{Debate Relationships} and recognize that regulating these relationships is the key to mitigating",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-04",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.02407",
-      "source": "arxiv",
-      "title": "Antares: Foundation Models for Agentic Vulnerability Localization",
-      "url": "https://arxiv.org/abs/2608.02407",
-      "authors": [
-        "Supriti Vijay",
-        "Aman Priyanshu",
-        "Didier Chapoteau",
-        "Arthur Goldblatt"
-      ],
-      "summary": "Vulnerability localization is a fundamental step in software security, requiring models to reason over large codebases and iteratively identify vulnerable implementations. We present Antares, a family of compact language models (350M, 1B, and 3B parameters) for agentic vulnerability localization. Based on IBM Granite base models, Antares is trained through a two-stage pipeline that combines supervised fine-tuning on cybersecurity reasoning and repository exploration data with reinforcement learning from verifiable rewards over vulnerable repositories. Across extensive evaluations, Antares-3B a",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-03",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "foundation model",
-        "agent",
-        "agentic",
-        "reasoning",
         "language model"
       ]
     }

@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Thu, 20 Aug 2026 13:50:59 +0000</lastBuildDate>
+   <lastBuildDate>Fri, 21 Aug 2026 13:50:22 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Contextual Value Alignment via Multilayer Combinatorial Fusion</title>
@@ -127,11 +127,18 @@
       <description>Large language models (LLMs) and AI agents have demonstrated strong potential for data integration in zero-shot and few-shot settings. However, they continue to face significant accuracy and cost challenges in enterprise environments due to a persistent knowledge gap. This paper envisions trustworth... [Score: 10.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Chuangtao Ma, Arijit Khan</description>
     </item>
     <item>
-      <title>Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents</title>
-      <link>https://arxiv.org/abs/2607.19190</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.19190</guid>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajec... [Score: 10.0 | Flagged for: world model, foundation model, agent, agentic, alignment] Authors: Guanxiong Chen, Qianjun Xia, et al.</description>
+      <title>MidTool: Mid-training Data Synthesis for Agentic Tool Use</title>
+      <link>https://arxiv.org/abs/2608.20314</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.20314</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Mid-training is increasingly recognized as a critical stage for shaping the capabilities of large language models. Recent work has shown that targeted mid-training can strengthen reasoning-intensive abilities such as math and science, and can also improve agentic capabilities in software-engineering... [Score: 9.5 | Flagged for: agent, agentic, tool use, tool-use, reasoning] Authors: Fengqing Jiang, Yite Wang, et al.</description>
+    </item>
+    <item>
+      <title>Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving</title>
+      <link>https://arxiv.org/abs/2608.20129</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.20129</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective control and safety mechanisms, their performance may degrade in situations requiring contextual reasoni... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, reasoning, llm] Authors: Mehdi Azarafza, Faezeh Pasandideh, et al.</description>
     </item>
     <item>
       <title>When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.11679</guid>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
       <description>Digital twins are increasingly used to monitor and simulate the behavior of cyber-physical systems. Even with skilled operators, interpreting anomalies detected within digital twin pipelines is challenging, as the sheer complexity and volume of raw sensor data make thorough analysis difficult. Recen... [Score: 9.0 | Flagged for: agent, agentic, reasoning, interpret, llm] Authors: Touseef Hasan, Mounika Ghanta, et al.</description>
-    </item>
-    <item>
-      <title>Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation</title>
-      <link>https://arxiv.org/abs/2608.05999</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.05999</guid>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Vision-language-action (VLA) models have demonstrated remarkable capabilities in robotic manipulation by leveraging pretrained vision-language models. However, existing post-training methods predominantly optimize VLA models as flat policies, making it difficult to explicitly model task progression ... [Score: 9.0 | Flagged for: agi, agent, embodied, robot, language model] Authors: He Kong, Zengjue Chen, et al.</description>
     </item>
   </channel>
 </rss>

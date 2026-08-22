@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T13:50:22Z",
+  "generated_at": "2026-08-22T13:36:07Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -1161,31 +1161,6 @@
       ]
     },
     {
-      "id": "2607.20064",
-      "source": "arxiv",
-      "title": "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
-      "url": "https://arxiv.org/abs/2607.20064",
-      "authors": [
-        "Alexis Fox",
-        "Junlin Wang",
-        "Paul Rosu",
-        "Bhuwan Dhingra"
-      ],
-      "summary": "Long-horizon tasks require sustained perception, reasoning, and exploration, and are a persistent challenge for large language model (LLM) agents. This gap is reflected in their limited performance on continual learning benchmarks such as ARC-AGI-3, especially when models are evaluated out of the box. Various agent harnesses have been proposed to close this gap, and each commits to a strategy for handling long sequences of observations, i.e., what information to save from the environment and how to load it into model context, a choice we argue is particularly consequential. Existing methods fo",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-22",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2608.20099",
       "source": "arxiv",
       "title": "Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design",
@@ -1524,6 +1499,31 @@
         "agent",
         "multi-agent",
         "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.19794",
+      "source": "arxiv",
+      "title": "Towards general embodied intelligence: integrating large language models, knowledge bases, and reasoning capabilities to build the next generation of AI agents",
+      "url": "https://arxiv.org/abs/2608.19794",
+      "authors": [
+        "Fujiang Yuan",
+        "Xia Huang",
+        "Lusheng Wang",
+        "Jun Ding"
+      ],
+      "summary": "The convergence of large language models (LLMs), structured knowledge bases (KBs), and reasoning ability (RA) presents a promising trajectory toward general embodied intelligence (GEI). This paper reviews the evolution of LLM-centered intelligent systems, emphasising their integration with knowledge representation, logical reasoning, and physical embodiment. We analyse LLM architectures, pre-training methods, and inference mechanisms, along with their interaction with external knowledge sources and structured reasoning frameworks. Furthermore, we examine embodied intelligence (EI) paradigms wh",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-20",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "embodied",
         "llm",
         "language model"
       ]

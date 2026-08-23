@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T13:36:07Z",
+  "generated_at": "2026-08-23T13:36:12Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -657,55 +657,6 @@
       ]
     },
     {
-      "id": "2607.21503",
-      "source": "arxiv",
-      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
-      "url": "https://arxiv.org/abs/2607.21503",
-      "authors": [
-        "Gaurav Dadhich"
-      ],
-      "summary": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations. The incumbent response treats this as a storage-and-retrieval problem. We argue that framing is too narrow. Actively managing what an agent holds in mind is a lifecycle, not merely a store: it s",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-23",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "agentic",
-        "reasoning",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2607.21361",
-      "source": "arxiv",
-      "title": "FedAgentKE: Federated Semantic Knowledge Evolution for Heterogeneous Agents",
-      "url": "https://arxiv.org/abs/2607.21361",
-      "authors": [
-        "Weihao Li",
-        "Jun Bai",
-        "Ziyang Song"
-      ],
-      "summary": "Large language model (LLM)-based agents increasingly rely on reasoning, tool use, and iterative execution, yet existing agent frameworks still operate largely in isolation. While recent memory-based agent systems improve individual agents through local retrieval and workflow reuse, local experiences remain fragmented across isolated agent frameworks, limiting cross-framework knowledge transfer and collaborative reasoning evolution. We propose FedAgentKE, a lightweight framework for Federated Semantic Knowledge Evolution across heterogeneous agents. FedAgentKE enables distributed agent framewor",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-23",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "tool use",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
       "id": "2608.17836",
       "source": "arxiv",
       "title": "Leveraging Association Context Retrieval in Knowledge Edit- ing to Build White-Box Attacks on LLMs",
@@ -1136,31 +1087,6 @@
       ]
     },
     {
-      "id": "2607.21522",
-      "source": "arxiv",
-      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
-      "url": "https://arxiv.org/abs/2607.21522",
-      "authors": [
-        "Hongxin Zhang",
-        "Chunru Lin",
-        "Junyan Li",
-        "Zhou Xian"
-      ],
-      "summary": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic syste",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-07-23",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "foundation model",
-        "agent",
-        "agentic",
-        "rag"
-      ]
-    },
-    {
       "id": "2608.20099",
       "source": "arxiv",
       "title": "Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design",
@@ -1526,6 +1452,81 @@
         "embodied",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.18490",
+      "source": "arxiv",
+      "title": "Bayesian Partner Modelling enables Adaptive Replanning for LLM Coordination",
+      "url": "https://arxiv.org/abs/2608.18490",
+      "authors": [
+        "Harsh Goel",
+        "Aditya Sai Ellendula",
+        "Vaishnav Tadiparthi",
+        "Ehsan Moradi Pari"
+      ],
+      "summary": "Multi-agent Large Language Model (LLM) systems often struggle to collaborate with new teammates whose strategies shift mid-task. Because agents execute multi-step or temporally extended skills, they frequently continue executing outdated plans long after public evidence shows that a partner has changed its skill. Existing methods either treat partner tracking as passive context-leaving the agent aware of the shift but slow to act-or replan indiscriminately. We introduce BayesBeliefAgent, which pairs a hierarchical LLM planner with a Bayesian tracking module. Rather than replanning constantly, ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-19",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "planning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.18473",
+      "source": "arxiv",
+      "title": "A Locally Deployable Tool-Grounded LLM Multi-agent Framework for Automating Methane Emission Analysis and Reporting",
+      "url": "https://arxiv.org/abs/2608.18473",
+      "authors": [
+        "Yang Yan",
+        "Zifan Zhou",
+        "Xuan Wang",
+        "Erum Hassan"
+      ],
+      "summary": "Methane field monitoring requires the integration of sampling design, meteorological interpretation, sensor processing, plume analysis, visualization, and reporting, but these steps are often distributed across separate expert-driven workflows. We developed a locally deployable, tool-grounded large language model (LLM) multi-agent framework for our low-cost methane sensing and field-monitoring campaigns. The framework uses LLM agents as workflow coordinators that link field measurements, meteorological data, deterministic sensor-processing routines, Gaussian plume inversion, and report generat",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-19",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.18840",
+      "source": "arxiv",
+      "title": "Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction",
+      "url": "https://arxiv.org/abs/2608.18840",
+      "authors": [
+        "Zijian Xiao",
+        "Zipeng Ye",
+        "Jinkun Hao",
+        "Xiong Yang"
+      ],
+      "summary": "Indoor scene synthesis provides essential environments for embodied AI, robotic manipulation, and simulation-based policy learning. Recent code-based scene generation methods produce editable and extensible environments, yet they remain focused on visual construction and object-level articulation, leaving the functional usage of scenes largely unmodeled. To address this problem, we present RoomWright, an agentic usage-driven framework for generating 3D scenes represented entirely as code for embodied interaction. RoomWright performs usage-driven object reasoning, which treats each anchor as a ",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-19",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "embodied",
+        "robot"
       ]
     }
   ]

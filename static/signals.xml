@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 23 Aug 2026 13:36:12 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 24 Aug 2026 13:55:46 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Contextual Value Alignment via Multilayer Combinatorial Fusion</title>
@@ -120,13 +120,6 @@
       <description>This paper studies the behavior of language models in a multi-agent crowd simulation, focusing on how affect propagates among agents that perceive and appraise one another. Each agent perceives its neighbors through visual, auditory, and tactile channels, then appraises these perceptions in light of... [Score: 10.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Funda Durupinar</description>
     </item>
     <item>
-      <title>Towards Trustworthy and Cost-Efficient Data Integration: From Naïve RAG to Agentic RAG</title>
-      <link>https://arxiv.org/abs/2607.22319</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.22319</guid>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) and AI agents have demonstrated strong potential for data integration in zero-shot and few-shot settings. However, they continue to face significant accuracy and cost challenges in enterprise environments due to a persistent knowledge gap. This paper envisions trustworth... [Score: 10.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Chuangtao Ma, Arijit Khan</description>
-    </item>
-    <item>
       <title>MidTool: Mid-training Data Synthesis for Agentic Tool Use</title>
       <link>https://arxiv.org/abs/2608.20314</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.20314</guid>
@@ -176,13 +169,6 @@
       <description>We present a structured large-language-model (LLM) architecture for zero-shot human--robot coordination in a cooperative construction task with private goal views. Guided by a Dec-POMDP formulation, the architecture decomposes decision-making into (i) action-conditioned Theory-of-Mind (ToM) inferenc... [Score: 9.5 | Flagged for: agent, multi-agent, planning, reasoning, interpret] Authors: Dong Hae Mangalindan, Anand Gokhale, et al.</description>
     </item>
     <item>
-      <title>A Self-Calibrating Agentic AI Framework for Autonomous Edge Resource Allocation</title>
-      <link>https://arxiv.org/abs/2607.22400</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.22400</guid>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Large Language Models (LLMs) are increasingly deployed as autonomous agents, transitioning from static conversational interfaces to dynamic systems capable of complex reasoning, tool execution, and decision-making. However, the operational reliability of these agentic AI systems is fundamentally cha... [Score: 9.5 | Flagged for: agent, agentic, autonomous, reasoning, llm] Authors: Fin Gentzen, Marla Grunewald, et al.</description>
-    </item>
-    <item>
       <title>Leveraging Association Context Retrieval in Knowledge Edit- ing to Build White-Box Attacks on LLMs</title>
       <link>https://arxiv.org/abs/2608.17836</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.17836</guid>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.29347</guid>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <description>Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomo... [Score: 9.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Jiamin Wu, Peishan Xiang, et al.</description>
+    </item>
+    <item>
+      <title>Designing a Robust LLM-Based Evaluation System for Agentic AI in Drug Discovery Through Human Alignment</title>
+      <link>https://arxiv.org/abs/2608.21057</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.21057</guid>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Agentic large language model (LLM) systems are reshaping scientific workflows in chemistry and drug discovery, but evaluating their open-ended, tool-augmented outputs remains a fundamental bottleneck. Reference-based metrics such as BLEU and ROUGE fail to capture semantic correctness, while expert h... [Score: 8.5 | Flagged for: agent, agentic, alignment, llm, language model] Authors: Emma Granqvist, Rocío Mercado, et al.</description>
+    </item>
+    <item>
+      <title>D2-ScaleAgent: Dual-Dimensional Scaling for Long Document Understanding</title>
+      <link>https://arxiv.org/abs/2608.16417</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.16417</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Multi-modal retrieval-augmented generation (RAG) is a key technique for visually rich long document understanding. Existing multi-modal RAG methods are progressively advancing toward multi-agent systems: they first retrieve relevant pages based on a query, and then iteratively understand information... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, scaling, retrieval] Authors: Hao Zhang, Longrong Yang, et al.</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T13:36:12Z",
+  "generated_at": "2026-08-24T13:55:46Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -422,31 +422,6 @@
       ]
     },
     {
-      "id": "2607.22319",
-      "source": "arxiv",
-      "title": "Towards Trustworthy and Cost-Efficient Data Integration: From Naïve RAG to Agentic RAG",
-      "url": "https://arxiv.org/abs/2607.22319",
-      "authors": [
-        "Chuangtao Ma",
-        "Arijit Khan"
-      ],
-      "summary": "Large language models (LLMs) and AI agents have demonstrated strong potential for data integration in zero-shot and few-shot settings. However, they continue to face significant accuracy and cost challenges in enterprise environments due to a persistent knowledge gap. This paper envisions trustworthy, scalable, and cost-efficient integration through knowledge-grounded LLMs and agents operating within a retrieval-augmented generation (RAG) workflow. Here, trustworthiness refers to evidence-grounded, verifiable reasoning, where integration decisions are transparently supported by retrieved knowl",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-24",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
       "id": "2608.20314",
       "source": "arxiv",
       "title": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
@@ -484,8 +459,8 @@
         "Stefan Henkler"
       ],
       "summary": "Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective control and safety mechanisms, their performance may degrade in situations requiring contextual reasoning. Large Language Models (LLMs) have demonstrated strong capabilities in understanding multimodal information and generating contextual reasoning, however, their use for direct vehicle control can introduce latency and hallucination risks. To address these limitations, a hybrid framework is propose",
-      "category": "cs.CL",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-08-20",
       "score": 9.5,
       "raw_score": 19,
@@ -631,32 +606,6 @@
       ]
     },
     {
-      "id": "2607.22400",
-      "source": "arxiv",
-      "title": "A Self-Calibrating Agentic AI Framework for Autonomous Edge Resource Allocation",
-      "url": "https://arxiv.org/abs/2607.22400",
-      "authors": [
-        "Fin Gentzen",
-        "Marla Grunewald",
-        "Iulisloi Zacarias",
-        "Mounir Bensalem"
-      ],
-      "summary": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, transitioning from static conversational interfaces to dynamic systems capable of complex reasoning, tool execution, and decision-making. However, the operational reliability of these agentic AI systems is fundamentally challenged by the absence of reliable ground truth in open-ended environments and the risk of increasing operational drift over time. To address this challenge, we propose and experimentally evaluate an agentic AI framework, designed to enforce autonomous integrity within LLM-driven systems. We design ",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-07-24",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2608.17836",
       "source": "arxiv",
       "title": "Leveraging Association Context Retrieval in Knowledge Edit- ing to Build White-Box Attacks on LLMs",
@@ -786,51 +735,25 @@
       ]
     },
     {
-      "id": "2607.22014",
+      "id": "2608.21057",
       "source": "arxiv",
-      "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
-      "url": "https://arxiv.org/abs/2607.22014",
+      "title": "Designing a Robust LLM-Based Evaluation System for Agentic AI in Drug Discovery Through Human Alignment",
+      "url": "https://arxiv.org/abs/2608.21057",
       "authors": [
-        "Suman Navaratnarajah",
-        "Taehyoung Kim",
-        "Jona Ruthardt",
-        "Ishaan Bhimwal"
+        "Emma Granqvist",
+        "Rocío Mercado",
+        "Samuel Genheden"
       ],
-      "summary": "Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation of MLLMs in aerial 3D environments. It comprises 120 missions across five simulated 3D environments and four task families. Agents must autonomously plan, navigate, and report outcomes using only egocentric observations and its action history, without aerial-specific fine-tuning. Across 22 open- and",
-      "category": "cs.CL",
+      "summary": "Agentic large language model (LLM) systems are reshaping scientific workflows in chemistry and drug discovery, but evaluating their open-ended, tool-augmented outputs remains a fundamental bottleneck. Reference-based metrics such as BLEU and ROUGE fail to capture semantic correctness, while expert human evaluation does not scale to the iteration speed these systems demand. The LLM-as-a-Judge paradigm has emerged as a scalable alternative, but existing drug discovery benchmarks deploy LLM judges without validating their alignment with human experts. In this work, we present an LLM-as-a-Judge ev",
+      "category": "cs.LG",
       "tag": "Research",
-      "published_at": "2026-07-24",
-      "score": 9.0,
-      "raw_score": 18,
+      "published_at": "2026-08-21",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
         "agent",
-        "autonomous",
-        "reasoning",
-        "embodied",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2607.21912",
-      "source": "arxiv",
-      "title": "Reliability-Contagion Feasibility in LLM Multi-Agent Networks",
-      "url": "https://arxiv.org/abs/2607.21912",
-      "authors": [
-        "Ruiwu Niu",
-        "Xincheng Shu",
-        "Ying Zhao"
-      ],
-      "summary": "Communication allows large language model agents to pool evidence, but it also creates paths along which an erroneous claim can spread. We formulate a correction-aware network model that tracks susceptible, exposed, infectious, and corrected agents and derive its early-invasion condition for heterogeneous communication networks. We then couple this propagation model to an analytic majority-vote benchmark in which a clean-task reliability target imposes a minimum connectivity requirement. Under fixed exposure per communication edge, reliability and error control impose opposing graph constraint",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-24",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
+        "agentic",
+        "alignment",
         "llm",
         "language model"
       ]
@@ -1064,26 +987,53 @@
       ]
     },
     {
-      "id": "2607.22511",
+      "id": "2608.21101",
       "source": "arxiv",
-      "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
-      "url": "https://arxiv.org/abs/2607.22511",
+      "title": "ClawSentry: A Progressive Multi-Tier Security Monitor for Safeguarding Autonomous LLM Agents",
+      "url": "https://arxiv.org/abs/2608.21101",
       "authors": [
-        "Jiyuan Tan",
-        "Vasilis Syrgkanis"
+        "Kai Wang",
+        "Zeming Wei",
+        "BiaoJie Zeng",
+        "Chang Jin"
       ],
-      "summary": "Automating theoretical research is constrained not only by the generation of candidate results, but also by their reliable evaluation. A common approach is to close the research loop with a large language model (LLM) reviewer. However, such reviewers remain empirically unreliable: they may accept fabricated papers and detect them at rates close to chance (Bad Scientist, 2025). We present CausalForge, a framework for automated theoretical research in causal inference grounded in the Lean proof assistant. CausalForge combines Causalean, a foundational Lean library for causal inference containing",
+      "summary": "As large language model (LLM) agents move from conversation to executing code, reading local files, and orchestrating external tools, a single agent hijacked by a malicious third-party skill can cause data exfiltration, privilege escalation, or cascading compromise. We argue that agentic risk is progressive: it can enter at four loci of the agent control loop--skill admission, invocation-time intent, execution-time effect, and post-action consequence--while a denied dangerous objective can reappear across surface forms, tools, or turns; existing safeguards are typically local to one lifecycle ",
       "category": "cs.AI",
       "tag": "Research",
-      "published_at": "2026-07-24",
-      "score": 8.5,
-      "raw_score": 17,
+      "published_at": "2026-08-21",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
-        "self-improving",
         "agent",
         "agentic",
+        "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.21030",
+      "source": "arxiv",
+      "title": "COMET: Contrastive Motion-Enhanced Temporal Reasoning for Video Multimodal Large Language Models",
+      "url": "https://arxiv.org/abs/2608.21030",
+      "authors": [
+        "Chenghua Zhu",
+        "Zhaolu Kang",
+        "Qifan Shi",
+        "Siyan Wu"
+      ],
+      "summary": "Video multimodal large language models have advanced significantly, yet fine-grained motion-temporal understanding remains fragile. The core bottleneck is not only sparse frame sampling, but also the lack of a complete temporal modeling pipeline for explicitly representing frame-to-frame change, enabling appearance-motion interaction, and optimizing temporal direction sensitivity. We propose COMET, a temporally grounded framework that systematically strengthens video MLLMs through explicit temporal representation, appearance-motion fusion, and direction-aware optimization. Architecturally, COM",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-08-21",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -1098,8 +1048,8 @@
         "Pascal Bouvry"
       ],
       "summary": "LLM-based Multi-Agent Systems (MAS) achieve strong performance on complex reasoning tasks by coordinating multiple agents, but at the cost of substantial token consumption. Recent work on automatic topology design, ARG-Designer, has reframed this problem as autoregressive graph generation. However, its training objective provides no explicit incentive for the model to generate sparse and efficient topologies. We address this limitation by introducing a Reward-Guided Autoregressive Graph Generation (RGA-Designer) inspired by Reinforcement Learning from Human Feedback (RLHF). We train a reward m",
-      "category": "cs.LG",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-08-20",
       "score": 8.0,
       "raw_score": 16,
@@ -1430,6 +1380,31 @@
       ]
     },
     {
+      "id": "2608.21305",
+      "source": "arxiv",
+      "title": "Re$^3$Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2608.21305",
+      "authors": [
+        "Haonan Jia",
+        "Shichao Dong",
+        "Zenghui Sun",
+        "Jiawen Zheng"
+      ],
+      "summary": "Reinforcement Learning (RL) has demonstrated significant gains in image captioning, yet it is still limited in encouraging Large Vision-Language Models (LVLMs) to explore novel reasoning strategies. This limitation leads to a performance gap between RL and Supervised Fine-Tuning (SFT). In this paper, we argue that multi-modal retrieval can serve as an effective reasoning signal for caption refinement. Based on this insight, we present the Retrieval-Guided Refinement for Image Captioning (Re$^3$Cap), a retrieval-guided reasoning strategy that enhances image captioning without requiring addition",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-21",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.19794",
       "source": "arxiv",
       "title": "Towards general embodied intelligence: integrating large language models, knowledge bases, and reasoning capabilities to build the next generation of AI agents",
@@ -1527,6 +1502,30 @@
         "reasoning",
         "embodied",
         "robot"
+      ]
+    },
+    {
+      "id": "2608.16357",
+      "source": "arxiv",
+      "title": "MELD: A Protocol for Merging Knowledge Across Distributed Agentic Memories",
+      "url": "https://arxiv.org/abs/2608.16357",
+      "authors": [
+        "Lauri Lovén",
+        "Jaakko Sauvola",
+        "Jukka Riekki",
+        "Sasu Tarkoma"
+      ],
+      "summary": "Autonomous agents share a transport and can call each other's tools, but they cannot share what they know: no protocol lets two agents' memories reconcile a fact phrased two ways, link related facts held apart, or reconcile contradictory knowledge without silently discarding either claim. We present MELD, a self-managing coherence mechanism for a federation of agent memories whose run-time model is the knowledge graph itself. Each brain admits every incoming claim through a five-outcome procedure (insert, merge, relate, conflict, or reject), decided from three signals (scoped claim-key identit",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-17",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "autonomous"
       ]
     }
   ]

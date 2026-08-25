@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T13:55:46Z",
+  "generated_at": "2026-08-25T13:54:51Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -987,6 +987,32 @@
       ]
     },
     {
+      "id": "2608.22657",
+      "source": "arxiv",
+      "title": "Physical Agentic AI: An Architecture for Orchestrating a Robot Crew with LLMs",
+      "url": "https://arxiv.org/abs/2608.22657",
+      "authors": [
+        "Xinyuan Liu",
+        "Eren Sadikoglu",
+        "Riana Chatterjee",
+        "Ransalu Senanayake"
+      ],
+      "summary": "Agentic AI frameworks interpret open-ended task goals and decompose them into multi-step plans. Richer information about embodiment-specific capabilities, physical preconditions, and cross-robot coordination improves grounding, but does not eliminate infeasible, mistimed, or unsafe physical actions. Physical robot crews therefore require an explicit architectural interface between semantic planning and execution, where every planned action is verified against robot capabilities, system state, and workflow constraints before actuation. This paper introduces Physical Agentic AI, a framework for ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-23",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "interpret",
+        "robot",
+        "llm"
+      ]
+    },
+    {
       "id": "2608.21101",
       "source": "arxiv",
       "title": "ClawSentry: A Progressive Multi-Tier Security Monitor for Safeguarding Autonomous LLM Agents",
@@ -1380,6 +1406,31 @@
       ]
     },
     {
+      "id": "2608.23181",
+      "source": "arxiv",
+      "title": "CyberFactory: Scaling Cyber Security Capabilities with Instances from the Wild",
+      "url": "https://arxiv.org/abs/2608.23181",
+      "authors": [
+        "Jian Yang",
+        "Haau-Sing Li",
+        "Shawn Guo",
+        "Zixi Zhao"
+      ],
+      "summary": "As large language models (LLMs) continue to advance in coding capabilities, their potential in cybersecurity has drawn increasing research attention, with closed-source LLMs (e.g., Mythos) delivering advanced cybersecurity capabilities. However, existing open-source efforts remain limited: frontier open-weight models do not provide reproducible cybersecurity training solutions, open-source training solutions focus on isolated tasks and lack scalable agentic data, and scaling agentic rollouts requires strong domain priors. In this work, we introduce \\textbf{CyberFactory}, a unified open-source ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-24",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model",
+        "scaling"
+      ]
+    },
+    {
       "id": "2608.21305",
       "source": "arxiv",
       "title": "Re$^3$Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning",
@@ -1477,55 +1528,6 @@
         "interpret",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2608.18840",
-      "source": "arxiv",
-      "title": "Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction",
-      "url": "https://arxiv.org/abs/2608.18840",
-      "authors": [
-        "Zijian Xiao",
-        "Zipeng Ye",
-        "Jinkun Hao",
-        "Xiong Yang"
-      ],
-      "summary": "Indoor scene synthesis provides essential environments for embodied AI, robotic manipulation, and simulation-based policy learning. Recent code-based scene generation methods produce editable and extensible environments, yet they remain focused on visual construction and object-level articulation, leaving the functional usage of scenes largely unmodeled. To address this problem, we present RoomWright, an agentic usage-driven framework for generating 3D scenes represented entirely as code for embodied interaction. RoomWright performs usage-driven object reasoning, which treats each anchor as a ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-19",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "embodied",
-        "robot"
-      ]
-    },
-    {
-      "id": "2608.16357",
-      "source": "arxiv",
-      "title": "MELD: A Protocol for Merging Knowledge Across Distributed Agentic Memories",
-      "url": "https://arxiv.org/abs/2608.16357",
-      "authors": [
-        "Lauri Lovén",
-        "Jaakko Sauvola",
-        "Jukka Riekki",
-        "Sasu Tarkoma"
-      ],
-      "summary": "Autonomous agents share a transport and can call each other's tools, but they cannot share what they know: no protocol lets two agents' memories reconcile a fact phrased two ways, link related facts held apart, or reconcile contradictory knowledge without silently discarding either claim. We present MELD, a self-managing coherence mechanism for a federation of agent memories whose run-time model is the knowledge graph itself. Each brain admits every incoming claim through a five-outcome procedure (insert, merge, relate, conflict, or reject), decided from three signals (scoped claim-key identit",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-17",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "agentic",
-        "autonomous"
       ]
     }
   ]

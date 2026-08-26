@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 25 Aug 2026 13:54:51 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 26 Aug 2026 13:58:05 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Contextual Value Alignment via Multilayer Combinatorial Fusion</title>
@@ -34,6 +34,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.06865</guid>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <description>The malicious use of generative artificial intelligence to create highly realistic deepfake videos raises serious ethical concerns and poses substantial challenges to AI safety. However, existing deepfake video benchmarks provide limited coverage of recent synthesis methods and generally lack reliab... [Score: 11.0 | Flagged for: agent, multi-agent, reasoning, ai safety, llm] Authors: Xuechao Zou, Shun Zhang, et al.</description>
+    </item>
+    <item>
+      <title>LLM Agents Perform Controlled Experiments Using Simulation Models</title>
+      <link>https://arxiv.org/abs/2608.23622</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.23622</guid>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled ... [Score: 10.5 | Flagged for: agent, multi-agent, tool use, planning, reasoning] Authors: Yuchen Xia, Michael Weyrich, et al.</description>
+    </item>
+    <item>
+      <title>Design-to-Plan: A Large Language Model-Based Multi-Agent Framework for Manufacturing Process Planning from 3D CAD Models and 2D Engineering Drawings</title>
+      <link>https://arxiv.org/abs/2608.24039</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.24039</guid>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Manufacturing process planning transforms heterogeneous design information into coherent manufacturing decisions. However, existing approaches focus on isolated subtasks, such as feature recognition, drawing interpretation, or tool selection, and struggle to support the full reasoning chain from des... [Score: 10.0 | Flagged for: agent, multi-agent, planning, reasoning, interpret] Authors: Muhammad Tayyab Khan, Lequn Chen, et al.</description>
     </item>
     <item>
       <title>Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution</title>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.29347</guid>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <description>Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomo... [Score: 9.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Jiamin Wu, Peishan Xiang, et al.</description>
-    </item>
-    <item>
-      <title>Designing a Robust LLM-Based Evaluation System for Agentic AI in Drug Discovery Through Human Alignment</title>
-      <link>https://arxiv.org/abs/2608.21057</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.21057</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Agentic large language model (LLM) systems are reshaping scientific workflows in chemistry and drug discovery, but evaluating their open-ended, tool-augmented outputs remains a fundamental bottleneck. Reference-based metrics such as BLEU and ROUGE fail to capture semantic correctness, while expert h... [Score: 8.5 | Flagged for: agent, agentic, alignment, llm, language model] Authors: Emma Granqvist, Rocío Mercado, et al.</description>
-    </item>
-    <item>
-      <title>D2-ScaleAgent: Dual-Dimensional Scaling for Long Document Understanding</title>
-      <link>https://arxiv.org/abs/2608.16417</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.16417</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Multi-modal retrieval-augmented generation (RAG) is a key technique for visually rich long document understanding. Existing multi-modal RAG methods are progressively advancing toward multi-agent systems: they first retrieve relevant pages based on a query, and then iteratively understand information... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, scaling, retrieval] Authors: Hao Zhang, Longrong Yang, et al.</description>
     </item>
   </channel>
 </rss>

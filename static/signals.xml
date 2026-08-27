@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Wed, 26 Aug 2026 13:58:05 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 27 Aug 2026 22:53:56 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Contextual Value Alignment via Multilayer Combinatorial Fusion</title>
@@ -41,6 +41,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.23622</guid>
       <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
       <description>Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled ... [Score: 10.5 | Flagged for: agent, multi-agent, tool use, planning, reasoning] Authors: Yuchen Xia, Michael Weyrich, et al.</description>
+    </item>
+    <item>
+      <title>Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems</title>
+      <link>https://arxiv.org/abs/2608.25920</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.25920</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <description>As large language model (LLM)-based multi-agent systems (MASs) are increasingly applied to long-horizon complex tasks, their reliability has emerged as the core bottleneck hindering their real-world deployment. Existing MAS debugging and repair methods typically rely on rerunning and resampling the ... [Score: 10.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Zhongwen Luan, Xiaoyu Zhang, et al.</description>
     </item>
     <item>
       <title>Design-to-Plan: A Large Language Model-Based Multi-Agent Framework for Manufacturing Process Planning from 3D CAD Models and 2D Engineering Drawings</title>
@@ -118,20 +125,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.00747</guid>
       <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
       <description>Large language models are increasingly integrated into autonomous robotic systems for task planning and control, but this integration exposes them to prompt injection attacks that can lead to unsafe decisions and physical harm. Multi-agent settings increase the risks through cross-agent contaminatio... [Score: 10.0 | Flagged for: agent, multi-agent, autonomous, planning, robot] Authors: Neha Nagaraja, Amisha Bagari, et al.</description>
-    </item>
-    <item>
-      <title>Embodied GPT-5.1: Evidence of a World Model?</title>
-      <link>https://arxiv.org/abs/2607.23899</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.23899</guid>
-      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-      <description>This exploratory study examines whether a large multimodal language model, GPT-5.1, can serve as the high-level controller of a physical mobile robot despite having no prior embodiment, no training in simulated environments, and no exposure to sensorimotor experience. Using only low-resolution first... [Score: 10.0 | Flagged for: world model, reasoning, embodied, robot, language model] Authors: Roberto Spinelli, Thiago C. Martins</description>
-    </item>
-    <item>
-      <title>How Affect Propagates among LLM Agents: Emergent Emotional Contagion in Crowd Simulation</title>
-      <link>https://arxiv.org/abs/2607.25140</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.25140</guid>
-      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-      <description>This paper studies the behavior of language models in a multi-agent crowd simulation, focusing on how affect propagates among agents that perceive and appraise one another. Each agent perceives its neighbors through visual, auditory, and tactile channels, then appraises these perceptions in light of... [Score: 10.0 | Flagged for: agi, agent, multi-agent, llm, language model] Authors: Funda Durupinar</description>
     </item>
     <item>
       <title>MidTool: Mid-training Data Synthesis for Agentic Tool Use</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.29347</guid>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <description>Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomo... [Score: 9.0 | Flagged for: agent, multi-agent, agentic, autonomous, planning] Authors: Jiamin Wu, Peishan Xiang, et al.</description>
+    </item>
+    <item>
+      <title>JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution</title>
+      <link>https://arxiv.org/abs/2608.25593</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.25593</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Agent capability is not determined by the model alone. The agent harness, encompassing memory management, planning strategy, action protocol, and tool/skill orchestration, can dominate the contribution of the underlying foundation model. Yet harness design remains manual, task-specific, and fundamen... [Score: 8.5 | Flagged for: foundation model, agent, agentic, planning, llm] Authors: Guibin Zhang, Leo Lu, et al.</description>
     </item>
   </channel>
 </rss>

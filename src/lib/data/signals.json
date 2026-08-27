@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T13:58:05Z",
+  "generated_at": "2026-08-27T22:53:56Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -135,6 +135,32 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.25920",
+      "source": "arxiv",
+      "title": "Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2608.25920",
+      "authors": [
+        "Zhongwen Luan",
+        "Xiaoyu Zhang",
+        "Ming Hu",
+        "Yue Yang"
+      ],
+      "summary": "As large language model (LLM)-based multi-agent systems (MASs) are increasingly applied to long-horizon complex tasks, their reliability has emerged as the core bottleneck hindering their real-world deployment. Existing MAS debugging and repair methods typically rely on rerunning and resampling the entire execution trajectory. However, a fundamental question remains to be answered: do these methods causally repair MAS failures or merely stochastically repair by leveraging the randomness of LLM sampling? To evaluate the effectiveness of MAS repair methods, we introduce SymTrace, a controlled ev",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-26",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -425,54 +451,6 @@
         "robot",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2607.23899",
-      "source": "arxiv",
-      "title": "Embodied GPT-5.1: Evidence of a World Model?",
-      "url": "https://arxiv.org/abs/2607.23899",
-      "authors": [
-        "Roberto Spinelli",
-        "Thiago C. Martins"
-      ],
-      "summary": "This exploratory study examines whether a large multimodal language model, GPT-5.1, can serve as the high-level controller of a physical mobile robot despite having no prior embodiment, no training in simulated environments, and no exposure to sensorimotor experience. Using only low-resolution first-person images and a discrete action set, the model was tasked with navigation and object-directed behaviors such as locating and contacting a target toy. Across multiple trials, GPT-5.1 demonstrated emergent capabilities that suggest elements of spatial reasoning and physical understanding. These i",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-27",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "world model",
-        "reasoning",
-        "embodied",
-        "robot",
-        "language model",
-        "emergent",
-        "emergent capabilit"
-      ]
-    },
-    {
-      "id": "2607.25140",
-      "source": "arxiv",
-      "title": "How Affect Propagates among LLM Agents: Emergent Emotional Contagion in Crowd Simulation",
-      "url": "https://arxiv.org/abs/2607.25140",
-      "authors": [
-        "Funda Durupinar"
-      ],
-      "summary": "This paper studies the behavior of language models in a multi-agent crowd simulation, focusing on how affect propagates among agents that perceive and appraise one another. Each agent perceives its neighbors through visual, auditory, and tactile channels, then appraises these perceptions in light of its prompted personality profile, memory, current affective state, and situational context. Appraisal is carried out by an LLM, which updates the agent's internal affective state and selects its outward expression. The architecture contains no hand-authored mechanism for directly transferring affec",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-27",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model",
-        "emergent"
       ]
     },
     {
@@ -789,6 +767,57 @@
       ]
     },
     {
+      "id": "2608.25593",
+      "source": "arxiv",
+      "title": "JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution",
+      "url": "https://arxiv.org/abs/2608.25593",
+      "authors": [
+        "Guibin Zhang",
+        "Leo Lu",
+        "Fangzhou Xie",
+        "Kang Zhu"
+      ],
+      "summary": "Agent capability is not determined by the model alone. The agent harness, encompassing memory management, planning strategy, action protocol, and tool/skill orchestration, can dominate the contribution of the underlying foundation model. Yet harness design remains manual, task-specific, and fundamentally unscalable. We present JIT-Agent, a harness intelligence model trained to synthesize task-adaptive agent harnesses on the fly for arbitrary off-the-shelf agentic LLMs. We formalize the agent harness as a composable, machine-generatable artifact governed by a fixed four-module protocol, and tra",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-26",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "planning",
+        "llm",
+        "scaling"
+      ]
+    },
+    {
+      "id": "2608.25770",
+      "source": "arxiv",
+      "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+      "url": "https://arxiv.org/abs/2608.25770",
+      "authors": [
+        "Ziqing Qian",
+        "Jiaying Lei",
+        "Yifang Wang",
+        "Nan Cao"
+      ],
+      "summary": "Large language models (LLMs) have enabled AI scientist systems to automate scientific discovery, yet existing approaches most rely on static prompting or fixed workflows and fail to accumulate experience for continual improvement. We propose HypoForge, an experience-guided multi-agent framework that learns reusable scientific skills for automated hypothesis generation and hypothesis testing. HypoForge is built on the observation that these two stages involve different supervision signals. For hypothesis generation, where explicit feedback is unavailable, HypoForge adopts an adversarial generat",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-26",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "self-improving",
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.24735",
       "source": "arxiv",
       "title": "Meta$^n$: Recursive Self-Improvement through Emergent Depth",
@@ -1063,6 +1092,55 @@
         "agentic",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.25992",
+      "source": "arxiv",
+      "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+      "url": "https://arxiv.org/abs/2608.25992",
+      "authors": [
+        "Songyuan Li",
+        "Ahmed M. Abdelmoniem",
+        "Shiqiang Wang"
+      ],
+      "summary": "Multi-agent large language model (LLM) workflows have emerged as a powerful paradigm for solving complex, open-ended tasks through collaborative reasoning among specialized LLM agents, but they incur substantial operating costs due to repeated LLM invocations and long-horizon context accumulation. Existing cascade routing methods make one-shot, query-level decisions and cannot adapt to the dynamic, state-dependent nature of multi-step workflows, in which the right LLM at each step depends on evolving task progress, remaining task difficulty, and cost-efficiency requirements. We present ProgRou",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-26",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.25457",
+      "source": "arxiv",
+      "title": "MACGen: Toward Functionally Correct and Secure Code Generation via Multi-Agent Collaboration",
+      "url": "https://arxiv.org/abs/2608.25457",
+      "authors": [
+        "Miseon Yu",
+        "Jaehoon Choi",
+        "Younghan Lee",
+        "Yunheung Paek"
+      ],
+      "summary": "Despite their strong ability to generate code, large language models often fail to produce secure code, as their outputs frequently contain security vulnerabilities. Secure code generation is inherently challenging because it requires solving a multi-objective problem: functional correctness and security. Existing approaches address this challenge by injecting external security knowledge or by using agentic feedback and iterative refinement. However, guideline retrieval often leaves the generator to translate generic advice into task-specific secure implementations, while shared-dialogue multi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-26",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "language model",
+        "retrieval"
       ]
     },
     {
@@ -1457,80 +1535,6 @@
         "llm",
         "language model",
         "rag"
-      ]
-    },
-    {
-      "id": "2608.07154",
-      "source": "arxiv",
-      "title": "Representation Handoffs for OpenArm-Based Laboratory Mobile Manipulation",
-      "url": "https://arxiv.org/abs/2608.07154",
-      "authors": [
-        "Yang Shen",
-        "Chonghao Cheng",
-        "Ziyi Zhao",
-        "Jialuo Zhu"
-      ],
-      "summary": "Open-source robotics and foundation models have lowered the barrier to embodied AI, yet language-guided laboratory automation still requires reliable alignment from instructions and observations to safe actions. This field report presents an OpenArm-based mobile manipulation prototype for laboratory-style tasks, built by integrating dual OpenArm manipulators with a mobile base, vertical slide, RGB-D sensing, lidar-based mapping, ROS2/MoveIt execution, and profile-defined skill interfaces. The system is organized around representation handoffs: natural language requests are constrained into reg",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-07",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "foundation model",
-        "alignment",
-        "embodied",
-        "robot",
-        "robotics",
-        "automation"
-      ]
-    },
-    {
-      "id": "2608.05956",
-      "source": "arxiv",
-      "title": "Certifying Collective Reasoning in Multi-Agent Systems via Koopman Spectral Analysis",
-      "url": "https://arxiv.org/abs/2608.05956",
-      "authors": [
-        "Nuzhat Khan",
-        "Indrakshi Dey"
-      ],
-      "summary": "Orchestrated collectives of large language model (LLM) agents that debate and vote are an emerging form of computational intelligence: the intelligent behaviour resides in the \\emph{interaction}, not in any single agent. They improve task accuracy, yet remain black boxes at the system level: there is no principled test of convergence, no bound on the rounds needed, and no faithful account of what drove a decision. This paper develops a novel framework based on Koopman operator theory and validates its theoretical guarantees on multi-agent consensus dynamics. Treating the collective as one nonl",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-06",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.24221",
-      "source": "arxiv",
-      "title": "DeepRepoQA: Code Repository Question Answering with Deep Agent Exploration",
-      "url": "https://arxiv.org/abs/2608.24221",
-      "authors": [
-        "Weihan Peng",
-        "Yuling Shi",
-        "Yingwei Ma",
-        "Longfei Yun"
-      ],
-      "summary": "Answering developer questions about a software repository is a critical yet under-explored problem in software engineering. While existing repository understanding methods have advanced the field, they predominantly rely on surface-level code retrieval and lack the ability for deep reasoning over multiple files, complex software architectures, and grounding answers in long-range code dependencies. To address these limitations, we propose DeepRepoQA, a novel question answering (QA) framework for repository-level code understanding. DeepRepoQA builds on an agentic framework where LLM agents find",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-08-25",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "retrieval"
       ]
     }
   ]

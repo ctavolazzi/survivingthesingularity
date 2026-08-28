@@ -1,8 +1,36 @@
 {
-  "generated_at": "2026-08-27T22:53:56Z",
+  "generated_at": "2026-08-28T22:58:29Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
+    {
+      "id": "2608.27142",
+      "source": "arxiv",
+      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+      "url": "https://arxiv.org/abs/2608.27142",
+      "authors": [
+        "Zike Yuan",
+        "Han Zhang",
+        "Jianzhi Yan",
+        "Le Liu"
+      ],
+      "summary": "Despite their potential in standardized graph tasks, Large Language Models (LLMs) remain brittle to real-world shifts in node identifiers and task formulation. While deterministic graph tools are invariant to such shifts, extracting topological structures from noisy text is highly fragile for LLMs, which often overfit to surface patterns. Moreover, mitigating these parsing failures via multi-agent systems incurs prohibitive latency. To address this, we propose GRAIN, a single-agent framework optimized via reinforcement learning. GRAIN models reasoning as a semantic parsing and tool-execution p",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-27",
+      "score": 13.5,
+      "raw_score": 27,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
     {
       "id": "2608.07642",
       "source": "arxiv",
@@ -26,6 +54,34 @@
         "alignment",
         "rlhf",
         "value alignment",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.27348",
+      "source": "arxiv",
+      "title": "INTENT-AS-A-TOOL Makes it Easy to Track Agentic Misalignment",
+      "url": "https://arxiv.org/abs/2608.27348",
+      "authors": [
+        "Yutong Zhang",
+        "Jianshuo Dong",
+        "Peng Xu",
+        "Long Wang"
+      ],
+      "summary": "As large language models (LLMs) are deployed as autonomous agents, safety failures increasingly involve consequential actions. We study agentic misalignment, where agents take harmful actions under goal conflicts and pressures. Using chain-of-thought (CoT) monitoring, we find that harmful execution is often preceded by intent signals in reasoning. However, post-hoc CoT labels are too coarse to show how intent changes during generation. We introduce INTENT-AS-A-TOOL, an approach that adds intent-targeted tools to give the model a dedicated channel for expressing commitment to a target behavior.",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-27",
+      "score": 12.5,
+      "raw_score": 25,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "chain-of-thought",
+        "alignment",
         "llm",
         "language model"
       ]
@@ -111,6 +167,34 @@
       ]
     },
     {
+      "id": "2608.27225",
+      "source": "arxiv",
+      "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
+      "url": "https://arxiv.org/abs/2608.27225",
+      "authors": [
+        "Maitrey Gramopadhye",
+        "Prakash Baskaran",
+        "Xiao Liu",
+        "Songpo Li"
+      ],
+      "summary": "Effective human-robot collaboration in industrial settings requires robots to understand human intentions and assist with task planning, reducing workload. Recent works have explored the use of Multi-modal Large Language Models (MM-LLMs) for task planning in such data-scarce scenarios, leveraging in-context learning to interpret user actions and generate long-horizon action plans in natural language. However, MM-LLMs inherently lack an understanding of system states and do not track state transitions, often leading to hallucinated actions that deviate from the intended goal. Additionally, gene",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-27",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "agi",
+        "planning",
+        "interpret",
+        "robot",
+        "llm",
+        "language model",
+        "in-context learning",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.23622",
       "source": "arxiv",
       "title": "LLM Agents Perform Controlled Experiments Using Simulation Models",
@@ -135,6 +219,33 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.27439",
+      "source": "arxiv",
+      "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+      "url": "https://arxiv.org/abs/2608.27439",
+      "authors": [
+        "Junjie Zhang",
+        "Hui Liu",
+        "Kecheng Chen",
+        "Xianbo Mo"
+      ],
+      "summary": "LLM-based agents are increasingly deployed in product-level execution harnesses, where jailbreaks can trigger harmful tool use and persistent state changes, creating greater risks than unsafe text generation alone. Existing automatic red-teaming methods often rely on fixed attacks, while recent agentic attackers coordinate multiple jailbreak tools and show stronger potential through trajectory-based retrieval. However, such retrieval can reuse misleading experiences due to retrieval bias and unclear tool credit, and full trajectories add context overhead while reducing interpretability. We pro",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-27",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
+        "interpretability",
+        "interpret",
+        "llm",
+        "retrieval"
       ]
     },
     {
@@ -638,6 +749,32 @@
       ]
     },
     {
+      "id": "2608.26950",
+      "source": "arxiv",
+      "title": "From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities",
+      "url": "https://arxiv.org/abs/2608.26950",
+      "authors": [
+        "Jiayi Kuang",
+        "Yinghui Li",
+        "Yunze Song",
+        "Keyu Chen"
+      ],
+      "summary": "Large Language Models (LLMs) are evolving from performing end-to-end mathematical reasoning to integrating agentic intelligence. However, most existing math benchmarks evaluate only final answers. This outcome-oriented evaluation provides limited diagnostic value for identifying process-level failures or rigorous logic, failing to guide the transformation of LLMs into robust agents. To bridge this gap, we present a process-level benchmark designed to evaluate the inherent agentic mathematical reasoning abilities of LLMs. Our framework aligns problem-solving agentic behaviors with a structured ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-27",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "interpret",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.17836",
       "source": "arxiv",
       "title": "Leveraging Association Context Retrieval in Knowledge Edit- ing to Build White-Box Attacks on LLMs",
@@ -1095,6 +1232,29 @@
       ]
     },
     {
+      "id": "2608.27406",
+      "source": "arxiv",
+      "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+      "url": "https://arxiv.org/abs/2608.27406",
+      "authors": [
+        "Kechen Liu",
+        "Ola Shorinwa"
+      ],
+      "summary": "State-of-the-art action-conditioned video models are typically restricted to a single robot embodiment, preventing them from leveraging the vast corpus of heterogeneous video data that contains rich signals for learning generalizable physics. To bridge this gap, we introduce CLAP, a framework for cross-embodiment action-conditioned video generation capable of being trained on diverse, internet-scale videos across human and robotic agents. CLAP is grounded in the insight that universal physical laws govern spatiotemporal dynamics regardless of the actor. However, cross-embodiment learning is no",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-27",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "world model",
+        "agent",
+        "robot",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.25992",
       "source": "arxiv",
       "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
@@ -1105,8 +1265,8 @@
         "Shiqiang Wang"
       ],
       "summary": "Multi-agent large language model (LLM) workflows have emerged as a powerful paradigm for solving complex, open-ended tasks through collaborative reasoning among specialized LLM agents, but they incur substantial operating costs due to repeated LLM invocations and long-horizon context accumulation. Existing cascade routing methods make one-shot, query-level decisions and cannot adapt to the dynamic, state-dependent nature of multi-step workflows, in which the right LLM at each step depends on evolving task progress, remaining task difficulty, and cost-efficiency requirements. We present ProgRou",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-08-26",
       "score": 8.0,
       "raw_score": 16,
@@ -1386,155 +1546,6 @@
         "autonomous",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2608.14452",
-      "source": "arxiv",
-      "title": "SheetCompass: Hierarchical Relation Graphs for Agentic Spreadsheet Reasoning",
-      "url": "https://arxiv.org/abs/2608.14452",
-      "authors": [
-        "Panjing He",
-        "Mingyue Cheng",
-        "Yucong Luo",
-        "Li Li"
-      ],
-      "summary": "Spreadsheets are widely used to organize, analyze, and manipulate semi-structured data, yet automated spreadsheet reasoning remains challenging for large language models (LLMs). Real-world workbooks often contain implicit cross-table associations, fine-grained column dependencies, and complex spatial layouts. Existing methods typically flatten these multidimensional structures into sequential strings, losing important intra-sheet boundaries and inter-sheet semantics. Consequently, LLMs cannot exploit the global spatial context that human experts naturally use when inspecting spreadsheets. We p",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-14",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.12984",
-      "source": "arxiv",
-      "title": "Reconcile Once, Write Anytime: A Trust-Tiered Librarian and a Multi-Agent Writer for Drift-Free, Point-in-Time Research",
-      "url": "https://arxiv.org/abs/2608.12984",
-      "authors": [
-        "Xing Zhang",
-        "Yanwei Cui",
-        "Guanghui Wang",
-        "Peiyang He"
-      ],
-      "summary": "Long-form research reports generated by large language models drift, contradict themselves, and lose provenance: the same metric appears with different values, and rumor is quoted as confidently as an audited filing. We present a two-tier agentic system that separates a maintained, point-in-time knowledge library from report writing. A deterministic \"librarian\" ingests timestamped sources into a trust-tiered ontology, layering evidence cards, an authoritative metric ledger, and a claim graph into an always-current source of truth, not per-query RAG over raw chunks. A portable multi-agent \"writ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-13",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2608.12835",
-      "source": "arxiv",
-      "title": "AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN",
-      "url": "https://arxiv.org/abs/2608.12835",
-      "authors": [
-        "Yutong Liu",
-        "Xiaojie Li",
-        "Mingzhu Xu",
-        "Jianlong Wu"
-      ],
-      "summary": "Unmanned Aerial Vehicle Vision-Language Navigation (UAV-VLN) requires agents to follow language instructions, infer spatial structure from sparse multi-view observations, and execute feasible 3D motion in complex outdoor environments. Despite recent progress with large language models, most existing methods still map vision-language inputs directly to actions, providing limited explicit scene grounding and future-aware spatial reasoning. We propose AirForesight, a current-to-future spatial map imagination framework for UAV-VLN. AirForesight first learns a structured current-map representation ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-13",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "planning",
-        "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.11152",
-      "source": "arxiv",
-      "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
-      "url": "https://arxiv.org/abs/2608.11152",
-      "authors": [
-        "Zetao Hong",
-        "Song Yuan",
-        "Yuanhao Ding",
-        "Yibo Zhu"
-      ],
-      "summary": "Modern reinforcement learning (RL) post-training pipelines for large language models (LLMs) increasingly combine rollout workloads across multiple domains and feedback paradigms. Prefix-aware routing improves inference efficiency through cache reuse and load balancing, but it does not control how heterogeneous rollout sessions compete for KV-cache capacity. When reinforcement learning with verifiable rewards (RLVR), reinforcement learning from human feedback (RLHF), and agentic rollouts share an asynchronous inference service, their distinct sequence structures, interaction patterns, and KV-re",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-08-11",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "rlhf",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.10692",
-      "source": "arxiv",
-      "title": "SPIEval: Evaluating Large Language Models as Mobile Assistants over Scattered Personal Information",
-      "url": "https://arxiv.org/abs/2608.10692",
-      "authors": [
-        "Junjie Ye",
-        "Zhuohui Sheng",
-        "Shaofan Liu",
-        "Yulun Zhu"
-      ],
-      "summary": "Large language models (LLMs) are increasingly deployed as mobile assistants, where a key challenge is leveraging personal information scattered across multiple applications (apps) to complete user instructions. However, due to the lack of dedicated benchmarks, their capabilities remain poorly understood. To address this gap, we introduce SPIEval, a human-curated benchmark grounded in five cognitive capabilities (i.e., reasoning, disambiguation, integration, preference inference, and multi-intent decomposition). SPIEval comprises 250 tasks spanning 4,335 personal records distributed across 10 a",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-08-11",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2608.07367",
-      "source": "arxiv",
-      "title": "People Are Not Just Their Countries. Disentangling Social Determinants of LLM Value Alignment Across Europe",
-      "url": "https://arxiv.org/abs/2608.07367",
-      "authors": [
-        "Maria-Louisa Wightman",
-        "Guillaume Bied",
-        "Tijl De Bie"
-      ],
-      "summary": "As Large Language Models (LLMs) are increasingly used as a primary source of information and advice, understanding their alignment to humans in terms of values becomes a pressing concern. A growing literature has leveraged large scale surveys to investigate to what extent LLMs' and humans' stated values and opinions align. With limited exceptions, studied populations have been defined country borders or cultural bounds. Yet, this focus neglects the role that socio-demographic divides may play for value alignment disparities.\n  Relying on the European Social Survey, we address this knowledge ga",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-07",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "alignment",
-        "value alignment",
-        "llm",
-        "language model",
-        "rag"
       ]
     }
   ]

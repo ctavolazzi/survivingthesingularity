@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 29 Aug 2026 17:03:24 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 30 Aug 2026 17:16:41 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL</title>
@@ -34,13 +34,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.13900</guid>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <description>Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace manipulation. As agents increasingly operate over persistent environments and multi-step workflows, they f... [Score: 12.0 | Flagged for: agent, agentic, autonomous, tool use, reasoning] Authors: Zhaoyan Sun, Xiaoxiao Wang, et al.</description>
-    </item>
-    <item>
-      <title>World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models</title>
-      <link>https://arxiv.org/abs/2607.27599</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.27599</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system t... [Score: 12.0 | Flagged for: agi, world model, agent, planning, reasoning] Authors: Xiangcheng Zhang, Yilun Du</description>
     </item>
     <item>
       <title>Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection</title>
@@ -216,6 +209,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.17836</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <description>As large language models (LLMs) are granted increasing autonomy, it is essential to investigate methods that can induce unsafe behavior. We propose a novel white-box attack inspired by locate-then-edit approaches from the field of Knowledge Editing. Our choice is motivated by the observation that mo... [Score: 9.0 | Flagged for: agi, autonomy, llm, language model, retrieval] Authors: Roman Maksimov, Vladimir Aletov, et al.</description>
+    </item>
+    <item>
+      <title>Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis</title>
+      <link>https://arxiv.org/abs/2608.16775</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.16775</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Large Language Models (LLMs) are increasingly being deployed in cybersecurity operations to assist cybersecurity analysts with rapid decision-making against emerging threats. However, there is a main criteria that must be met when using LLMs in cybersecurity, that is, trust in the generated outputs.... [Score: 9.0 | Flagged for: agent, agentic, autonomous, llm, language model] Authors: Reza Fayyazi, Michael Zuzak, et al.</description>
     </item>
   </channel>
 </rss>

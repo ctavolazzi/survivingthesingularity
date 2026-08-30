@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T17:03:24Z",
+  "generated_at": "2026-08-30T17:16:41Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -111,32 +111,6 @@
         "interpret",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2607.27599",
-      "source": "arxiv",
-      "title": "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models",
-      "url": "https://arxiv.org/abs/2607.27599",
-      "authors": [
-        "Xiangcheng Zhang",
-        "Yilun Du"
-      ],
-      "summary": "Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system that leverages the reasoning capabilities of Vision-Language Models (VLMs) and the physical grounding of a multi-task pose-image conditioned world model. Our system enables an agent to propose initial action plans and iteratively refine them via optimization and search, reasoning over imagined world ",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-07-30",
-      "score": 12.0,
-      "raw_score": 24,
-      "matched_keywords": [
-        "agi",
-        "world model",
-        "agent",
-        "planning",
-        "reasoning",
-        "robot",
-        "language model",
-        "rag"
       ]
     },
     {
@@ -1546,6 +1520,28 @@
         "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.27266",
+      "source": "arxiv",
+      "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
+      "url": "https://arxiv.org/abs/2608.27266",
+      "authors": [
+        "Yuan Chang",
+        "Xiaoqi Chen"
+      ],
+      "summary": "Efficiently improving autonomous agents across diverse tasks is central to accelerating recursive self-improvement (RSI) in agentic AI, with prompt optimization emerging as a promising approach capable of delivering performance gains comparable to those achieved by fine-tuning model weights, while reducing computational costs in both optimization and serving. However, recent developments increasingly favor unnecessarily complex prompt optimizers. We introduce Naive Prompt Optimization (NPO), a lightweight single-lineage method that iteratively revises prompts using a teacher model with rollout",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-27",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "agentic",
+        "autonomous"
       ]
     }
   ]

@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 30 Aug 2026 17:16:41 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 31 Aug 2026 19:28:22 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL</title>
@@ -197,6 +197,13 @@
       <description>We present a structured large-language-model (LLM) architecture for zero-shot human--robot coordination in a cooperative construction task with private goal views. Guided by a Dec-POMDP formulation, the architecture decomposes decision-making into (i) action-conditioned Theory-of-Mind (ToM) inferenc... [Score: 9.5 | Flagged for: agent, multi-agent, planning, reasoning, interpret] Authors: Dong Hae Mangalindan, Anand Gokhale, et al.</description>
     </item>
     <item>
+      <title>CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning</title>
+      <link>https://arxiv.org/abs/2608.28266</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.28266</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination. Most benchmarks either focus on single-agent task completion or summarize multi-agent beha... [Score: 9.0 | Flagged for: agent, multi-agent, planning, embodied, llm] Authors: Yang Chen, Ye-Xin Xie, et al.</description>
+    </item>
+    <item>
       <title>From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities</title>
       <link>https://arxiv.org/abs/2608.26950</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.26950</guid>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.17836</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <description>As large language models (LLMs) are granted increasing autonomy, it is essential to investigate methods that can induce unsafe behavior. We propose a novel white-box attack inspired by locate-then-edit approaches from the field of Knowledge Editing. Our choice is motivated by the observation that mo... [Score: 9.0 | Flagged for: agi, autonomy, llm, language model, retrieval] Authors: Roman Maksimov, Vladimir Aletov, et al.</description>
-    </item>
-    <item>
-      <title>Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis</title>
-      <link>https://arxiv.org/abs/2608.16775</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.16775</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Large Language Models (LLMs) are increasingly being deployed in cybersecurity operations to assist cybersecurity analysts with rapid decision-making against emerging threats. However, there is a main criteria that must be met when using LLMs in cybersecurity, that is, trust in the generated outputs.... [Score: 9.0 | Flagged for: agent, agentic, autonomous, llm, language model] Authors: Reza Fayyazi, Michael Zuzak, et al.</description>
     </item>
   </channel>
 </rss>

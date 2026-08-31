@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T17:16:41Z",
+  "generated_at": "2026-08-31T19:28:22Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -152,8 +152,8 @@
         "Songpo Li"
       ],
       "summary": "Effective human-robot collaboration in industrial settings requires robots to understand human intentions and assist with task planning, reducing workload. Recent works have explored the use of Multi-modal Large Language Models (MM-LLMs) for task planning in such data-scarce scenarios, leveraging in-context learning to interpret user actions and generate long-horizon action plans in natural language. However, MM-LLMs inherently lack an understanding of system states and do not track state transitions, often leading to hallucinated actions that deviate from the intended goal. Additionally, gene",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.RO",
+      "tag": "Robotics",
       "published_at": "2026-08-27",
       "score": 10.5,
       "raw_score": 21,
@@ -723,6 +723,32 @@
       ]
     },
     {
+      "id": "2608.28266",
+      "source": "arxiv",
+      "title": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
+      "url": "https://arxiv.org/abs/2608.28266",
+      "authors": [
+        "Yang Chen",
+        "Ye-Xin Xie",
+        "Lirong Che",
+        "Danyang Peng"
+      ],
+      "summary": "Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination. Most benchmarks either focus on single-agent task completion or summarize multi-agent behavior with overall task success rates, which can obscure coordination failures such as duplicated work, violations of ordering constraints, resource contention, and desynchronized handoffs. In this paper, we introduce CoCoBench, a construct-level benchmark for evaluating multi-agent embodied coordina",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-28",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "planning",
+        "embodied",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.26950",
       "source": "arxiv",
       "title": "From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities",
@@ -852,28 +878,27 @@
       ]
     },
     {
-      "id": "2607.29347",
+      "id": "2608.27924",
       "source": "arxiv",
-      "title": "SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery",
-      "url": "https://arxiv.org/abs/2607.29347",
+      "title": "What Makes Agent Memory Useful for Reliable Unanswerable Question Handling?",
+      "url": "https://arxiv.org/abs/2608.27924",
       "authors": [
-        "Jiamin Wu",
-        "Peishan Xiang",
-        "Jingyang Chen",
-        "Yuqing Zhu"
+        "Chuanyuan Tan",
+        "Junjie Yu",
+        "Yuxin Wang",
+        "Yining Zheng"
       ],
-      "summary": "Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic plan",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-07-31",
-      "score": 9.0,
-      "raw_score": 18,
+      "summary": "Reliable handling of unanswerable questions (UAQs) is critical for trustworthy LLM-based agents. Although memory is widely used in agent systems, its role in reliable UAQ handling remains unclear. We present a systematic study of agent memory for UAQ handling under a unified agentic RAG framework, evaluating four representative memory methods across three UAQ-related datasets and two base models.\n  We find that memory can improve UAQ performance in some settings, but such gains are selective rather than universal and remain fragile under dataset shift. Interestingly, cross-model memory reuse i",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-08-28",
+      "score": 8.5,
+      "raw_score": 17,
       "matched_keywords": [
+        "agi",
         "agent",
-        "multi-agent",
         "agentic",
-        "autonomous",
-        "planning",
+        "llm",
         "rag"
       ]
     },
@@ -1215,8 +1240,8 @@
         "Ola Shorinwa"
       ],
       "summary": "State-of-the-art action-conditioned video models are typically restricted to a single robot embodiment, preventing them from leveraging the vast corpus of heterogeneous video data that contains rich signals for learning generalizable physics. To bridge this gap, we introduce CLAP, a framework for cross-embodiment action-conditioned video generation capable of being trained on diverse, internet-scale videos across human and robotic agents. CLAP is grounded in the insight that universal physical laws govern spatiotemporal dynamics regardless of the actor. However, cross-embodiment learning is no",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.RO",
+      "tag": "Robotics",
       "published_at": "2026-08-27",
       "score": 8.0,
       "raw_score": 16,
@@ -1520,28 +1545,6 @@
         "autonomous",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2608.27266",
-      "source": "arxiv",
-      "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
-      "url": "https://arxiv.org/abs/2608.27266",
-      "authors": [
-        "Yuan Chang",
-        "Xiaoqi Chen"
-      ],
-      "summary": "Efficiently improving autonomous agents across diverse tasks is central to accelerating recursive self-improvement (RSI) in agentic AI, with prompt optimization emerging as a promising approach capable of delivering performance gains comparable to those achieved by fine-tuning model weights, while reducing computational costs in both optimization and serving. However, recent developments increasingly favor unnecessarily complex prompt optimizers. We introduce Naive Prompt Optimization (NPO), a lightweight single-lineage method that iteratively revises prompts using a teacher model with rollout",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-27",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "recursive self-improvement",
-        "agent",
-        "agentic",
-        "autonomous"
       ]
     }
   ]

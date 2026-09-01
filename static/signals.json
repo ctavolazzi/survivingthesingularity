@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T19:28:22Z",
+  "generated_at": "2026-09-01T17:16:06Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -141,6 +141,32 @@
       ]
     },
     {
+      "id": "2608.30938",
+      "source": "arxiv",
+      "title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
+      "url": "https://arxiv.org/abs/2608.30938",
+      "authors": [
+        "Qi Peng",
+        "Yi Cai",
+        "Jialin Cui",
+        "Tong Zhu"
+      ],
+      "summary": "Medical referral (directing patients to the appropriate hospital department) is a complex decision-making process requiring the synthesis of multimodal data, including patient narratives, laboratory indicators, and radiology imaging. While Large Language Models (LLMs) have advanced medical dialogue systems, they struggle with real-world referral tasks due to two primary limitations: (1) Information Overload, where models fixate on high-frequency disease terms while overlooking subtle but critical urgency indicators; and (2) Unstructured Collaboration, where existing multi-agent frameworks rely",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-31",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2608.27225",
       "source": "arxiv",
       "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
@@ -193,6 +219,60 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2608.30910",
+      "source": "arxiv",
+      "title": "S3C-LLM: Skill-Code Guided Agentic Language Models for Spectrum-to-Structure Elucidation",
+      "url": "https://arxiv.org/abs/2608.30910",
+      "authors": [
+        "Xuanle Zhao",
+        "Xinyuan Cai",
+        "Xiang Cheng",
+        "Bo Xu"
+      ],
+      "summary": "Spectroscopic structure elucidation is central to molecular analysis, but recent Large Language Model (LLM)-based methods mostly formulate it as direct spectrum-to-SMILES generation. Although this paradigm can leverage paired spectral data, it does not explicitly model the analytical workflow used by spectroscopists, such as diagnostic peak interpretation, fragment reasoning, formula constraints, and chemical consistency checking. In this paper, we introduce S3C-LLM, a skill-guided and code-grounded agentic LLM for spectrum-to-structure elucidation. Rather than directly predicting a molecule, ",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-08-31",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "interpret",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.29622",
+      "source": "arxiv",
+      "title": "AgenticRag-R1: Agentic Reinforcement Learning with Stack Memory for Multi-Step Reasoning, Retrieval and Memorizing",
+      "url": "https://arxiv.org/abs/2608.29622",
+      "authors": [
+        "Xinke Jiang",
+        "Yue Fang",
+        "Zhibang Yang",
+        "Jiaran Gao"
+      ],
+      "summary": "Retrieval-Augmented Generation (RAG) improves the factuality of large language models (LLMs), yet existing RAG systems often struggle with complex, multi-step reasoning that requires adaptive retrieval and continuous revision of intermediate contexts. Recent reinforcement learning (RL)-based agentic RAG methods partially alleviate this issue, but typically rely on coarse-grained action spaces and trajectory-level rewards, resulting in weak reward assignment and a bias toward short-horizon, stereotyped reasoning template. To address, we propose AgenticRag-R1, a RL framework that deeply integrat",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-30",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
       ]
     },
     {
@@ -510,32 +590,6 @@
         "llm",
         "language model",
         "rag"
-      ]
-    },
-    {
-      "id": "2608.00747",
-      "source": "arxiv",
-      "title": "When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems",
-      "url": "https://arxiv.org/abs/2608.00747",
-      "authors": [
-        "Neha Nagaraja",
-        "Amisha Bagari",
-        "Hayretdin Bahsi"
-      ],
-      "summary": "Large language models are increasingly integrated into autonomous robotic systems for task planning and control, but this integration exposes them to prompt injection attacks that can lead to unsafe decisions and physical harm. Multi-agent settings increase the risks through cross-agent contamination and broader attack surfaces. In this paper, we evaluate prompt injection attacks against an LLM-based multi-agent robotic system, considering both direct injections into task instructions and indirect injections through perception modules. In our experiments across varying attack-goal complexities",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-01",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "planning",
-        "robot",
-        "llm",
-        "language model"
       ]
     },
     {
@@ -878,6 +932,31 @@
       ]
     },
     {
+      "id": "2608.31075",
+      "source": "arxiv",
+      "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "url": "https://arxiv.org/abs/2608.31075",
+      "authors": [
+        "Zhiqin Yang",
+        "Jingwen Fu",
+        "Yuhan Liu",
+        "Hengyu Liu"
+      ],
+      "summary": "Recent advances in large reasoning models (LRMs) have shown that reinforcement learning with verifiable rewards (RLVR) can substantially improve reasoning in mathematics and code, where outcomes can be checked automatically. Extending this progress to open-ended and agentic tasks remains difficult because reliable rewards are harder to obtain and direct human supervision cannot keep pace with the scale and complexity of model-generated experience. This paper studies how LRMs can continue to improve as human supervision gradually recedes from the learning loop. We examine two connected dimensio",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-31",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "superintelligence",
+        "agent",
+        "agentic",
+        "reasoning",
+        "scaling"
+      ]
+    },
+    {
       "id": "2608.27924",
       "source": "arxiv",
       "title": "What Makes Agent Memory Useful for Reliable Unanswerable Question Handling?",
@@ -1206,26 +1285,102 @@
       ]
     },
     {
-      "id": "2608.00718",
+      "id": "2608.30935",
       "source": "arxiv",
-      "title": "Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures",
-      "url": "https://arxiv.org/abs/2608.00718",
+      "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
+      "url": "https://arxiv.org/abs/2608.30935",
       "authors": [
-        "Faisal Haque Bappy",
-        "Tahrim Hossain",
-        "Tarannum Shaila Zaman",
-        "Raiful Hasan"
+        "Shaoan Wang",
+        "Aocheng Luo",
+        "Fei Huang",
+        "Jingyi Xu"
       ],
-      "summary": "Multi-agent LLM pipelines orchestrate multiple specialized language model agents into structured workflows where intermediate outputs are passed across agents to solve complex tasks. This design introduces a security gap absent in single-agent settings: once an agent accepts adversarial content, it is propagated as trusted input throughout the pipeline. We argue that this vulnerability stems from the absence of boundary verification, a security primitive that enforces explicit validation of data as it crosses inter-agent boundaries, including content, identity, execution intent, and state inte",
+      "summary": "Embodied navigation requires agents to translate heterogeneous goals and visual observations into actions across tasks, environments, and robot embodiments. Modern vision-language models (VLMs) already encode spatial priors for visual grounding, spatial reasoning, and pointing, but these capabilities are rarely elicited directly for robot control. Existing navigation systems instead rely on task- or embodiment-specific components, fragmenting perception, reasoning, and action while offering limited generalization. Here we present LightNav-0, a compact generalist embodied navigation model that ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-08-31",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "embodied",
+        "robot",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2608.30396",
+      "source": "arxiv",
+      "title": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
+      "url": "https://arxiv.org/abs/2608.30396",
+      "authors": [
+        "Zixing Lei",
+        "Gengze Zhou",
+        "Xiong-Hui Chen",
+        "Jiazhao Zhang"
+      ],
+      "summary": "Long-horizon physical-world agents must reason over distant goals while grounding decisions in reliable closed-loop behavior. Today's foundation models split these capabilities: vision-language models (VLMs) infer missing information and adapt high-level plans but remain brittle and inefficient at repeated navigation grounding, while navigation foundation models (NFMs) robustly execute semantic goals but operate as bounded episodes without persistent task-level reasoning. We introduce NavMCP, an agentic scaffolding framework that couples a VLM reasoning agent with an NFM executor for long-hori",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-08-31",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "reasoning",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.29646",
+      "source": "arxiv",
+      "title": "Detect Before You Attribute: Cascade Failure Attribution for Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2608.29646",
+      "authors": [
+        "Jiayi Zhang",
+        "Zexin Wang",
+        "Degang Sun",
+        "Changhua Pei"
+      ],
+      "summary": "Large language model (LLM)-based agents have shown strong potential in solving complex tasks through multi-step reasoning, yet they remain vulnerable to execution failures. Accurate failure attribution is therefore critical for improving agent reliability. Existing topology- and spectrum-based methods exploit trajectory structures but often overlook fine-grained semantics, while LLM-based attribution methods capture semantic cues but suffer from long-context degradation over lengthy trajectories. To address these challenges, we propose DUOTRACE, a plug-and-play detection filter for LLM-based f",
       "category": "cs.MA",
       "tag": "Agents",
-      "published_at": "2026-08-01",
-      "score": 8.5,
-      "raw_score": 17,
+      "published_at": "2026-08-30",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
         "agent",
         "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2608.29596",
+      "source": "arxiv",
+      "title": "Towards a Systems Foundation for Agentic Skills: Architecture, Lifecycle, and Security",
+      "url": "https://arxiv.org/abs/2608.29596",
+      "authors": [
+        "Sanket Badhe",
+        "Deep Shah",
+        "Priyanka Tiwari",
+        "Nehal Kathrotia"
+      ],
+      "summary": "Autonomous large language model (LLM) agents increasingly face reliability, context consumption, and execution stability bottlenecks when deployed on complex, long-horizon tasks. While monolithic prompt engineering and stateless tool-calling paradigms struggle to scale, the field is rapidly converging toward \\emph{agentic skills}: modular procedural abstractions that externalize execution knowledge into reusable, executable, and portable artifacts. This paper establishes a unified systems foundation and reference architecture for the agentic skills ecosystem. We formalize skills as externalize",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-08-30",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
         "agentic",
+        "autonomous",
         "llm",
         "language model"
       ]
@@ -1400,151 +1555,6 @@
         "llm",
         "language model",
         "rag"
-      ]
-    },
-    {
-      "id": "2608.20099",
-      "source": "arxiv",
-      "title": "Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design",
-      "url": "https://arxiv.org/abs/2608.20099",
-      "authors": [
-        "Poomphob Suwannapichat",
-        "Boonyarit Changaival",
-        "Caesar Wu",
-        "Pascal Bouvry"
-      ],
-      "summary": "LLM-based Multi-Agent Systems (MAS) achieve strong performance on complex reasoning tasks by coordinating multiple agents, but at the cost of substantial token consumption. Recent work on automatic topology design, ARG-Designer, has reframed this problem as autoregressive graph generation. However, its training objective provides no explicit incentive for the model to generate sparse and efficient topologies. We address this limitation by introducing a Reward-Guided Autoregressive Graph Generation (RGA-Designer) inspired by Reinforcement Learning from Human Feedback (RLHF). We train a reward m",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-20",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "rlhf",
-        "llm"
-      ]
-    },
-    {
-      "id": "2608.19557",
-      "source": "arxiv",
-      "title": "When Do LLM Agents Help? Deadline-Aware Mixed-Criticality Task Scheduling at the Autonomous-Vehicle Edge",
-      "url": "https://arxiv.org/abs/2608.19557",
-      "authors": [
-        "Reza Zakerian"
-      ],
-      "summary": "Autonomous vehicles offload latency-sensitive perception tasks to nearby mobile edge computing (MEC) servers, where a missed safety-critical task is unsafe rather than merely degraded. Large language models (LLMs) are increasingly proposed as adaptive, explainable schedulers, yet evidence of when they help is scarce. We study deadline-aware, mixed-criticality scheduling on heterogeneous MEC servers, where time-critical (TC) tasks must be protected at a controlled cost to best-effort traffic, and ask whether a multi-agent LLM control layer improves on a strong heuristic. We answer in two steps.",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-20",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.19029",
-      "source": "arxiv",
-      "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
-      "url": "https://arxiv.org/abs/2608.19029",
-      "authors": [
-        "Pradeep Murugesan",
-        "Luoxiao Yang",
-        "Xueli Chen",
-        "Xinqi Fan"
-      ],
-      "summary": "Accurate and responsible medical question answering (QA) is important in healthcare, where complex cases require factual knowledge and nuanced reasoning. Existing medical QA systems, typically based on single-agent architectures and static retrieval, often lack adaptability, persistent memory, and structured decision-making. This work introduces an adaptive memory and reflection (AMR) agentic system, a multi-agent framework in which specialized agents use dedicated memory and reflection-based feedback to retrieve relevant prior cases and improve subsequent reasoning. Complexity assessment rout",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-19",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "reasoning",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2608.17928",
-      "source": "arxiv",
-      "title": "A Theoretical Framework for Parallel Lifelong MAPF Using Group Decentralized Planning",
-      "url": "https://arxiv.org/abs/2608.17928",
-      "authors": [
-        "Alex DeWeese",
-        "Jiaoyang Li",
-        "Guannan Qu"
-      ],
-      "summary": "In the Lifelong Multi-Agent Path Finding (L-MAPF) problem, agents must repeatedly move from one destination to another while avoiding obstacles and inter-agent collisions. Widely regarded as one of the highest-performing solutions to this problem is the Rolling-Horizon Collision Resolution (RHCR) framework. However, commensurate with its quality solutions, it incurs a computational cost that limits its applicability to even modest agent counts. In this paper, leveraging theoretical methods from the Locally Interdependent Multi-Agent MDP literature, we first theoretically prove the near-optimal",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-18",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "planning",
-        "rag"
-      ]
-    },
-    {
-      "id": "2608.17834",
-      "source": "arxiv",
-      "title": "AdaLens: Interactive Storyline for Monitoring and Steering Long-Running Agentic Data Analysis",
-      "url": "https://arxiv.org/abs/2608.17834",
-      "authors": [
-        "Yangtian Liu",
-        "Yan Miao",
-        "Shuhan Liu",
-        "Yunfan Zhou"
-      ],
-      "summary": "Large language models are pushing data science toward increasingly autonomous and agentic workflows, with recent systems already supporting multi-step and long-running analyses. As these workflows become more autonomous, conventional interfaces no longer provide adequate support for two critical requirements: observability for understanding an agent's evolving reasoning and evidence, and steerability for redirecting low-value directions or deepening promising ones during execution. Existing interactive approaches improve process visibility and open intervention points, but they remain largely ",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-18",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.19263",
-      "source": "arxiv",
-      "title": "The Evaluation Context Protocol (ECP): A Portable Contract for AI Agent Evaluation",
-      "url": "https://arxiv.org/abs/2608.19263",
-      "authors": [
-        "Aniket Wattamwar",
-        "Manav Anandani",
-        "Mrunal Kakirwar"
-      ],
-      "summary": "The evolution of artificial intelligence has necessitated a fundamental shift from evaluating isolated Large Language Models (LLMs) to assessing autonomous agentic architectures. This paper explores the critical methodologies for evaluating AI agents and the essential role of advanced observability infrastructure. We analyze the architectural components of agents and identify the severe limitations of current evaluation paradigms, including benchmark exploitation, the \"confidently wrong\" phenomenon, and the discrepancy between theoretical capability and operational reliability. To begin addres",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-18",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "llm",
-        "language model"
       ]
     }
   ]

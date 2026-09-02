@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T17:16:06Z",
+  "generated_at": "2026-09-02T17:05:22Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -111,6 +111,30 @@
         "interpret",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.01428",
+      "source": "arxiv",
+      "title": "TRIAGE: Three-level Routing and Intelligent Agent Guidance for Efficient Execution",
+      "url": "https://arxiv.org/abs/2609.01428",
+      "authors": [
+        "Ruocan Wei"
+      ],
+      "summary": "Large Language Model (LLM) agents based on the ReAct paradigm have demonstrated remarkable capabilities in tool use and task execution. However, ReAct suffers from a fundamental efficiency problem: every query triggers a complete reasoning loop from scratch, and similar queries repeat identical steps without leveraging historical experience. We propose TRIAGE,a three-level routing framework that reduces token consumption by reusing historical execution trajectories. Its core innovation is TaaS (Trajectory-as-a-Skill), which abstracts historical execution trajectories into reusable skills, real",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-09-01",
+      "score": 11.0,
+      "raw_score": 22,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag"
       ]
     },
     {
@@ -932,6 +956,31 @@
       ]
     },
     {
+      "id": "2609.01455",
+      "source": "arxiv",
+      "title": "When Safety Routing Breaks: Understanding Alignment Fragility under Benign Fine-Tuning",
+      "url": "https://arxiv.org/abs/2609.01455",
+      "authors": [
+        "Yitong Guo",
+        "Xiaoyi Chen",
+        "Siyuan Zhang",
+        "Xiaofeng Wang"
+      ],
+      "summary": "Benign fine-tuning severely weakens the safety alignment of large language models (LLMs), so we study why refusal behavior is so fragile. While prior work often attributes this failure to gradient conflict, we propose a fundamentally different Fisher-geometric explanation: safety Fisher is low-rank, and alignment makes the safety geometry flatter while preserving an output-routing pathway. After 100 benign fine-tuning examples, this pathway is selectively re-sharpened in output-side MLP modules, explaining the asymmetric fragility: safety can collapse to high attack success rates, while genera",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-01",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.31075",
       "source": "arxiv",
       "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
@@ -1260,31 +1309,6 @@
       ]
     },
     {
-      "id": "2608.01366",
-      "source": "arxiv",
-      "title": "Asking Questions the Right Way: A Multi-Agent Conversational System for Prompt Formulation in Complex Task Resolution",
-      "url": "https://arxiv.org/abs/2608.01366",
-      "authors": [
-        "B. Sankar",
-        "Pawni Yadav",
-        "Srinidhi Ranjini Girish",
-        "Amogh A. S"
-      ],
-      "summary": "Large language models (LLMs) are integral to complex intellectual tasks, yet output quality remains constrained by user-provided prompts. Iterative multi-turn prompting often leads to context degradation and diminishing cognitive returns. We present PAWNI (Prompt Architecture Wizard using Neural Intelligence), an agentic conversational interface of eight agents that transforms unstructured queries into structured prompts through guided question-and-answer dialogue informed by a self-evolving knowledge base. Rather than optimising the model's response, PAWNI optimises the question itself by fro",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-02",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2608.30935",
       "source": "arxiv",
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
@@ -1530,31 +1554,6 @@
         "autonomous",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2608.21030",
-      "source": "arxiv",
-      "title": "COMET: Contrastive Motion-Enhanced Temporal Reasoning for Video Multimodal Large Language Models",
-      "url": "https://arxiv.org/abs/2608.21030",
-      "authors": [
-        "Chenghua Zhu",
-        "Zhaolu Kang",
-        "Qifan Shi",
-        "Siyan Wu"
-      ],
-      "summary": "Video multimodal large language models have advanced significantly, yet fine-grained motion-temporal understanding remains fragile. The core bottleneck is not only sparse frame sampling, but also the lack of a complete temporal modeling pipeline for explicitly representing frame-to-frame change, enabling appearance-motion interaction, and optimizing temporal direction sensitivity. We propose COMET, a temporally grounded framework that systematically strengthens video MLLMs through explicit temporal representation, appearance-motion fusion, and direction-aware optimization. Architecturally, COM",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-08-21",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag"
       ]
     }
   ]

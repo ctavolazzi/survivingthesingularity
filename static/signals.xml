@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 01 Sep 2026 17:16:06 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 02 Sep 2026 17:05:22 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL</title>
@@ -34,6 +34,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.13900</guid>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <description>Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace manipulation. As agents increasingly operate over persistent environments and multi-step workflows, they f... [Score: 12.0 | Flagged for: agent, agentic, autonomous, tool use, reasoning] Authors: Zhaoyan Sun, Xiaoxiao Wang, et al.</description>
+    </item>
+    <item>
+      <title>TRIAGE: Three-level Routing and Intelligent Agent Guidance for Efficient Execution</title>
+      <link>https://arxiv.org/abs/2609.01428</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2609.01428</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Large Language Model (LLM) agents based on the ReAct paradigm have demonstrated remarkable capabilities in tool use and task execution. However, ReAct suffers from a fundamental efficiency problem: every query triggers a complete reasoning loop from scratch, and similar queries repeat identical step... [Score: 11.0 | Flagged for: agi, agent, tool use, reasoning, llm] Authors: Ruocan Wei</description>
     </item>
     <item>
       <title>Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.04309</guid>
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
       <description>We present a structured large-language-model (LLM) architecture for zero-shot human--robot coordination in a cooperative construction task with private goal views. Guided by a Dec-POMDP formulation, the architecture decomposes decision-making into (i) action-conditioned Theory-of-Mind (ToM) inferenc... [Score: 9.5 | Flagged for: agent, multi-agent, planning, reasoning, interpret] Authors: Dong Hae Mangalindan, Anand Gokhale, et al.</description>
-    </item>
-    <item>
-      <title>CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning</title>
-      <link>https://arxiv.org/abs/2608.28266</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.28266</guid>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination. Most benchmarks either focus on single-agent task completion or summarize multi-agent beha... [Score: 9.0 | Flagged for: agent, multi-agent, planning, embodied, llm] Authors: Yang Chen, Ye-Xin Xie, et al.</description>
     </item>
   </channel>
 </rss>

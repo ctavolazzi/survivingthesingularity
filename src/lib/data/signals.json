@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T17:05:22Z",
+  "generated_at": "2026-09-03T17:00:20Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -1283,32 +1283,6 @@
       ]
     },
     {
-      "id": "2608.02101",
-      "source": "arxiv",
-      "title": "Cross-Domain Hybrid OPD for Generalizable Search Agents",
-      "url": "https://arxiv.org/abs/2608.02101",
-      "authors": [
-        "Hongzhan Chen",
-        "Xiaoyu Liu",
-        "Dengming Zhang",
-        "Minzhou Huang"
-      ],
-      "summary": "Recent advances in Reinforcement Learning (RL) have substantially improved the capabilities of autonomous search agents, enabling sophisticated planning, and iterative retrieval over dynamic information sources. However, optimizing language models for specialized search behaviors often incurs an alignment tax, where gains in search performance come at the expense of general-purpose capabilities, limiting their effectiveness as universal assistants. In this technical report, we present the training framework behind the Yuanbao search agent, designed to achieve search specialization without sacr",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-08-03",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "planning",
-        "alignment",
-        "language model",
-        "retrieval"
-      ]
-    },
-    {
       "id": "2608.30935",
       "source": "arxiv",
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
@@ -1552,6 +1526,31 @@
         "agent",
         "agentic",
         "autonomous",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2609.01736",
+      "source": "arxiv",
+      "title": "Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives",
+      "url": "https://arxiv.org/abs/2609.01736",
+      "authors": [
+        "Haibo Jin",
+        "Suijin Wang",
+        "Xucheng Yu",
+        "Haojing Luo"
+      ],
+      "summary": "Large language models (LLMs) augmented with external tools have demonstrated remarkable capability in solving complex real-world tasks. However, existing approaches suffer from two key challenges: brittle multi-step and multi-turn reasoning caused by incompatible tool output types and API schemas, and performance degradation under large tool catalogues. To address these, we introduce \\textbf{Tool Primitives}, a design that replaces rigid API schema-based invocation with natural language as the interface for tool calling, where each tool is wrapped with an LLM interface that handles schema reso",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-01",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "tool use",
+        "reasoning",
         "llm",
         "language model"
       ]

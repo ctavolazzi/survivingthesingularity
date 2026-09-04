@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T17:00:20Z",
+  "generated_at": "2026-09-04T16:48:22Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -165,6 +165,31 @@
       ]
     },
     {
+      "id": "2609.03718",
+      "source": "arxiv",
+      "title": "What Do CAE Simulation Agents Really Need Beyond a Generic Harness?",
+      "url": "https://arxiv.org/abs/2609.03718",
+      "authors": [
+        "Jiasheng Shi",
+        "Tianhan Zhang"
+      ],
+      "summary": "Computer-aided engineering (CAE) simulation is among the largest and most demanding areas of engineering, where setting up a solver such as OpenFOAM, FEniCS, or COMSOL takes real expertise. Large language model (LLM) agents promise to turn a natural-language request into a working simulation, and recent CAE agents add simulation-specific machinery: multi-agent decomposition, domain retrieval, and scripted reflection. That machinery suited weak base models; modern harnesses already supply multi-turn reasoning, tool use, and execution feedback. We ask what a CAE simulation agent still needs beyo",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-09-03",
+      "score": 10.5,
+      "raw_score": 21,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval"
+      ]
+    },
+    {
       "id": "2608.30938",
       "source": "arxiv",
       "title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
@@ -243,6 +268,32 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.04170",
+      "source": "arxiv",
+      "title": "A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms",
+      "url": "https://arxiv.org/abs/2609.04170",
+      "authors": [
+        "Davide Paglieri",
+        "Logan Cross",
+        "Tim Genewein",
+        "Joel Z. Leibo"
+      ],
+      "summary": "Multi-agent AI science ecosystems rely on agents possessing tools that allow them to communicate, coordinate, and build on each other's work. Yet this shared infrastructure can also introduce vulnerabilities by creating a substrate for the contagious spread of unintended and undesirable behaviors. We report a case study on a research collective of 100 autonomous LLM agents tasked with proving formal mathematical conjectures. Within the swarm, cheating spontaneously emerged and was later challenged by whistleblowers - both without any external intervention. When a single agent discovered an exp",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-03",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "llm",
+        "emergent"
       ]
     },
     {
@@ -565,55 +616,51 @@
       ]
     },
     {
-      "id": "2608.03502",
+      "id": "2609.04159",
       "source": "arxiv",
-      "title": "Hybrid LLM-Augmented Reinforcement Learning Agents for Complex Sequential Decision Tasks",
-      "url": "https://arxiv.org/abs/2608.03502",
+      "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
+      "url": "https://arxiv.org/abs/2609.04159",
       "authors": [
-        "Christophe D. Hounwanou",
-        "John Emeka Eze",
-        "Yaé Ulrich Gaba"
+        "Uday Vallabhaneni",
+        "Cassie L. Cagwin",
+        "David J. Wild"
       ],
-      "summary": "Large Language Models (LLMs) have recently shown strong capabilities in reasoning, planning, and tool-use, enabling new forms of autonomous agents. However, LLM-based agents struggle with long-horizon sequential decision tasks that require precise action optimization and environment interaction. Reinforcement Learning (RL), while effective for sequential control, often lacks the high-level abstraction and task decomposition abilities needed for complex scenarios. This paper introduces an LLM-Augmented Reinforcement Learning Agent that integrates LLM-driven planning with RL-based action optimiz",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-04",
-      "score": 10.0,
-      "raw_score": 20,
+      "summary": "Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is consistent with the topology it operates on. We present Sentinel-RL, an agentic-SOC architecture that decouples topological reasoning from semantic reasoning: a heterogeneous graph attention encoder summarizes the live authentication subgraph into a fixed-dimensional state, a Proxima",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-03",
+      "score": 9.5,
+      "raw_score": 19,
       "matched_keywords": [
         "agent",
+        "agentic",
         "autonomous",
-        "tool-use",
-        "planning",
         "reasoning",
         "llm",
         "language model"
       ]
     },
     {
-      "id": "2608.04270",
+      "id": "2609.03834",
       "source": "arxiv",
-      "title": "CURATE: Leveraging LLM Agents to Compose, Catalog, and Deploy Reproducible Workflows",
-      "url": "https://arxiv.org/abs/2608.04270",
+      "title": "Semantic Bayesian World Models",
+      "url": "https://arxiv.org/abs/2609.03834",
       "authors": [
-        "Nolan Cutler",
-        "Chia-Chen Kuo",
-        "Nanda Velugoti",
-        "Kathryn Newhart"
+        "Tommaso Soru"
       ],
-      "summary": "Agentic code generation has shown promise in automating and accelerating software development by utilizing Large Language Models (LLMs) to generate, test, and deploy code. For engineers and scientists, such systems have the potential to accelerate the development of applied and scientific workflows while reducing barriers to entry in domains that have yet to fully realize their benefits. However, a key gap remains: existing coding agents primarily focus on code generation and do not address the entire workflow lifecycle, including deployment and sharing. As a result, users develop and stitch m",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-04",
-      "score": 10.0,
-      "raw_score": 20,
+      "summary": "Knowledge graphs describe reality in crisp assertions, while the systems now consuming them, foundation models and autonomous agents, reason natively in probabilities. We argue that this mismatch is why the integration of language models and knowledge graphs remains a data-feeding pipeline rather than a unified reasoning architecture. We envision Semantic Bayesian World Models (SBWMs): a Web that describes the world not as a database of facts but as a shared, evolving fabric of beliefs over knowledge graphs, where ontological axioms constrain priors, observations update beliefs by Bayesian con",
+      "category": "cs.LG",
+      "tag": "Research",
+      "published_at": "2026-09-03",
+      "score": 9.5,
+      "raw_score": 19,
       "matched_keywords": [
-        "agi",
+        "world model",
+        "foundation model",
         "agent",
-        "agentic",
-        "llm",
-        "language model",
-        "rag"
+        "autonomous",
+        "reasoning",
+        "language model"
       ]
     },
     {
@@ -1258,31 +1305,6 @@
       ]
     },
     {
-      "id": "2608.03387",
-      "source": "arxiv",
-      "title": "RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation",
-      "url": "https://arxiv.org/abs/2608.03387",
-      "authors": [
-        "Shuliang He",
-        "Shuai Wang",
-        "Bo Yue",
-        "Junchi Teng"
-      ],
-      "summary": "Humanoid robots have the potential to perform dexterous manipulation in human environments, yet acquiring diverse and generalizable skills remains costly due to expensive hardware data collection and labor-intensive annotation. Recent advances in video generative models provide a promising opportunity to synthesize rich manipulation experiences from visual observations, but transferring such imagined behaviors into executable whole-body humanoid skills remains largely unexplored. In this work, we present RoboReact, a framework that automatically synthesizes whole-body humanoid manipulation ski",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-04",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "agentic",
-        "humanoid",
-        "robot"
-      ]
-    },
-    {
       "id": "2608.30935",
       "source": "arxiv",
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
@@ -1526,31 +1548,6 @@
         "agent",
         "agentic",
         "autonomous",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.01736",
-      "source": "arxiv",
-      "title": "Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives",
-      "url": "https://arxiv.org/abs/2609.01736",
-      "authors": [
-        "Haibo Jin",
-        "Suijin Wang",
-        "Xucheng Yu",
-        "Haojing Luo"
-      ],
-      "summary": "Large language models (LLMs) augmented with external tools have demonstrated remarkable capability in solving complex real-world tasks. However, existing approaches suffer from two key challenges: brittle multi-step and multi-turn reasoning caused by incompatible tool output types and API schemas, and performance degradation under large tool catalogues. To address these, we introduce \\textbf{Tool Primitives}, a design that replaces rigid API schema-based invocation with natural language as the interface for tool calling, where each tool is wrapped with an LLM interface that handles schema reso",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-01",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "tool use",
-        "reasoning",
         "llm",
         "language model"
       ]

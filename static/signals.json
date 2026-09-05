@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T16:48:22Z",
+  "generated_at": "2026-09-05T15:52:54Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -821,33 +821,6 @@
       ]
     },
     {
-      "id": "2608.04309",
-      "source": "arxiv",
-      "title": "Structured LLM Reasoning for Zero-Shot Human--Robot Coordination Under Hidden Goals",
-      "url": "https://arxiv.org/abs/2608.04309",
-      "authors": [
-        "Dong Hae Mangalindan",
-        "Anand Gokhale",
-        "Francesco Bullo",
-        "Vaibhav Srivastava"
-      ],
-      "summary": "We present a structured large-language-model (LLM) architecture for zero-shot human--robot coordination in a cooperative construction task with private goal views. Guided by a Dec-POMDP formulation, the architecture decomposes decision-making into (i) action-conditioned Theory-of-Mind (ToM) inference, (ii) hierarchical planning, (iii) conversation interpretation, (iv) action verification, and (v) feedback-based replanning. We compare the proposed method with an ablation without ToM inference and a multi-agent reinforcement-learning policy trained offline over many goal pairs. In human-particip",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-05",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "planning",
-        "reasoning",
-        "interpret",
-        "robot",
-        "llm"
-      ]
-    },
-    {
       "id": "2608.28266",
       "source": "arxiv",
       "title": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
@@ -1549,6 +1522,31 @@
         "agentic",
         "autonomous",
         "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2609.03871",
+      "source": "arxiv",
+      "title": "Bioinfoysis Technical Report",
+      "url": "https://arxiv.org/abs/2609.03871",
+      "authors": [
+        "Qingyang Shao",
+        "Xin Zhang",
+        "Zhouyang Yuan",
+        "Xianying Chen"
+      ],
+      "summary": "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them. We introduce \\textbf{Bioinfoysis}, a multi-agent harness that represents each request as a persistent, artifact-grounded analysis run. Bioinfoysis combines global planning with step-wise, evidence-driven replan",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-03",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "tool use",
+        "planning",
         "language model"
       ]
     }

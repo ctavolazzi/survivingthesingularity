@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T15:52:54Z",
+  "generated_at": "2026-09-06T16:07:01Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -563,59 +563,6 @@
       ]
     },
     {
-      "id": "2608.06366",
-      "source": "arxiv",
-      "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
-      "url": "https://arxiv.org/abs/2608.06366",
-      "authors": [
-        "Soorya Ram Shimgekar",
-        "Michelle Hu",
-        "Dorisa Shehi",
-        "Daniel Kang"
-      ],
-      "summary": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data with disease-specific, guideline-based clinical reasoning. Existing rule-based and large language model (LLM)-based approaches offer only partial automation with limited maintainability and evidence traceability. We developed the Nimblemind Multi-Agent System (nMAS), an evidence-linked, rubric-grounde",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-06",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model",
-        "rag",
-        "automation"
-      ]
-    },
-    {
-      "id": "2608.05668",
-      "source": "arxiv",
-      "title": "F$^2$Agent: Financial Fusion of Agentic Intelligence for Multimodal Trading",
-      "url": "https://arxiv.org/abs/2608.05668",
-      "authors": [
-        "Changshuo Liu",
-        "Yanzheng Jin",
-        "Shangfeng Cai",
-        "Peng Fang"
-      ],
-      "summary": "With increasingly diverse and heterogeneous information sources, effectively leveraging multimodal data is becoming pivotal for high-quality financial trading. Although recent advancements in Large Language Model (LLM)-based agents have enabled the ingestion of multimodal inputs, existing methods fail to capture nuanced cross-modal dependencies and remain vulnerable to market noise, due to limited multimodal modeling, ineffective fusion mechanisms, and inadequate robustness. To address these challenges, we propose F$^2$Agent, a novel multimodal agentic paradigm driven by the Financial Fusion o",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-06",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "agentic",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
       "id": "2609.04159",
       "source": "arxiv",
       "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
@@ -950,32 +897,6 @@
       ]
     },
     {
-      "id": "2608.05999",
-      "source": "arxiv",
-      "title": "Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.05999",
-      "authors": [
-        "He Kong",
-        "Zengjue Chen",
-        "Qi Wang",
-        "Qianli Xing"
-      ],
-      "summary": "Vision-language-action (VLA) models have demonstrated remarkable capabilities in robotic manipulation by leveraging pretrained vision-language models. However, existing post-training methods predominantly optimize VLA models as flat policies, making it difficult to explicitly model task progression and perform robust long-horizon manipulation. Although hierarchical approaches introduce task decomposition, they mainly rely on supervised learning from offline demonstrations and cannot effectively improve execution through online interaction. To address this limitation, we propose Hierarchical Ro",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-06",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "embodied",
-        "robot",
-        "language model",
-        "rag"
-      ]
-    },
-    {
       "id": "2609.01455",
       "source": "arxiv",
       "title": "When Safety Routing Breaks: Understanding Alignment Fragility under Benign Fine-Tuning",
@@ -1252,32 +1173,6 @@
       ]
     },
     {
-      "id": "2608.06128",
-      "source": "arxiv",
-      "title": "Contextual Information Policy Optimization for Search Agents",
-      "url": "https://arxiv.org/abs/2608.06128",
-      "authors": [
-        "Xingyu Guo",
-        "Wei Chen",
-        "Linlin Yang",
-        "Baochang Zhang"
-      ],
-      "summary": "Search agents extend large language models beyond static parametric memory by enabling them to acquire and use ex ternal evidence during multi-step reasoning. For knowledge intensive tasks involving complex or evolving information, their reliability depends not only on retrieving relevant ev idence but also on using it to guide subsequent reasoning. However, existing methods primarily reward final-answer cor rectness or intermediate progress, without directly assessing whether post-retrieval actions are grounded in the retrieved evidence. This misalignment encourages prior-driven reason ing: a",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-06",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "alignment",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
       "id": "2608.30935",
       "source": "arxiv",
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
@@ -1548,6 +1443,105 @@
         "tool use",
         "planning",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.03984",
+      "source": "arxiv",
+      "title": "MulDP: Multimodal Diffusion Policy for Autonomous Quadruped Parkour Navigation across Complex Terrains",
+      "url": "https://arxiv.org/abs/2609.03984",
+      "authors": [
+        "Kangmai Hu",
+        "Yueqi Zhang",
+        "Peng Zhai",
+        "Xiaoyi Wei"
+      ],
+      "summary": "Quadruped robots have demonstrated impressive agility in parkour locomotion across complex terrains. However, most systems still rely on human intervention for high-level planning, and autonomous parkour navigation remains underexplored. The key challenges include fine-grained velocity regulation, long-horizon anticipatory behaviors, and tight coupling between perception and embodied execution. To address these challenges, we propose a Multimodal Diffusion Policy (MulDP) that integrates visual perception with robot proprioception and goal information to generate temporally coherent and anticip",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-09-03",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "autonomous",
+        "planning",
+        "embodied",
+        "robot"
+      ]
+    },
+    {
+      "id": "2609.03497",
+      "source": "arxiv",
+      "title": "BRIDGE: An Open-Source Humanoid Platform via Morphology-Control Co-Design for Physical AI",
+      "url": "https://arxiv.org/abs/2609.03497",
+      "authors": [
+        "Jianren Wang",
+        "Letian Qian",
+        "Zikai Wang",
+        "Weiwei Wu"
+      ],
+      "summary": "Developing humanoid robots capable of leveraging human behavioral data is essential for general-purpose embodiment, yet conventional development remains bottlenecked by a decoupled paradigm that isolates hardware design from whole-body control. This approach leads to suboptimal systems that compromise human-like fluidity and agility. To bridge this gap, we introduce a data-driven morphology-control co-design framework that optimizes humanoid morphology for human-like movement. To quantify morphological fidelity, we also introduce a novel metric that jointly considers kinematic retargeting fide",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-09-03",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "humanoid",
+        "robot",
+        "physical ai",
+        "rag"
+      ]
+    },
+    {
+      "id": "2609.01736",
+      "source": "arxiv",
+      "title": "Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives",
+      "url": "https://arxiv.org/abs/2609.01736",
+      "authors": [
+        "Haibo Jin",
+        "Suijin Wang",
+        "Xucheng Yu",
+        "Haojing Luo"
+      ],
+      "summary": "Large language models (LLMs) augmented with external tools have demonstrated remarkable capability in solving complex real-world tasks. However, existing approaches suffer from two key challenges: brittle multi-step and multi-turn reasoning caused by incompatible tool output types and API schemas, and performance degradation under large tool catalogues. To address these, we introduce \\textbf{Tool Primitives}, a design that replaces rigid API schema-based invocation with natural language as the interface for tool calling, where each tool is wrapped with an LLM interface that handles schema reso",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-01",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2609.04183",
+      "source": "arxiv",
+      "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
+      "url": "https://arxiv.org/abs/2609.04183",
+      "authors": [
+        "Ye-Chan Kim",
+        "Seunghee Choi",
+        "SeungJu Cha",
+        "Si-Woo Kim"
+      ],
+      "summary": "Weakly-Supervised Dense Video Captioning aims to localize and describe multiple events in untrimmed videos given only an ordered set of event-level captions per video. Recent work synthesizes auxiliary transition captions via LLM to provide additional vision-language alignment, but these captions lack visual grounding and are rigidly assigned to every inter-event gap at a fixed location and duration. To address these, we propose Seeing Before Synthesizing (SBS), a framework that adaptively provides visually grounded linguistic guidance only where warranted. Leveraging a VLM, we generate frame-",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-03",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "llm",
+        "rag"
       ]
     }
   ]

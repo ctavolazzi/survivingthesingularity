@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sat, 05 Sep 2026 15:52:54 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 06 Sep 2026 16:07:01 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL</title>
@@ -155,20 +155,6 @@
       <description>Large Language Models (LLMs) are increasingly used as high-level planners in embodied multi-robot systems, enabling robots to interpret natural language instructions and coordinate executable actions. Yet, this growing reliance on LLM planners also raises security concerns. Prior work has focused ma... [Score: 10.0 | Flagged for: agent, multi-agent, interpret, embodied, robot] Authors: Zhen Huang, Zhihuang Liu, et al.</description>
     </item>
     <item>
-      <title>Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering</title>
-      <link>https://arxiv.org/abs/2608.06366</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.06366</guid>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data wi... [Score: 10.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Soorya Ram Shimgekar, Michelle Hu, et al.</description>
-    </item>
-    <item>
-      <title>F$^2$Agent: Financial Fusion of Agentic Intelligence for Multimodal Trading</title>
-      <link>https://arxiv.org/abs/2608.05668</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.05668</guid>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <description>With increasingly diverse and heterogeneous information sources, effectively leveraging multimodal data is becoming pivotal for high-quality financial trading. Although recent advancements in Large Language Model (LLM)-based agents have enabled the ingestion of multimodal inputs, existing methods fa... [Score: 10.0 | Flagged for: agi, agent, agentic, llm, language model] Authors: Changshuo Liu, Yanzheng Jin, et al.</description>
-    </item>
-    <item>
       <title>SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center</title>
       <link>https://arxiv.org/abs/2609.04159</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2609.04159</guid>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.09857</guid>
       <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
       <description>Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: bia... [Score: 9.5 | Flagged for: agent, agentic, autonomy, planning, robot] Authors: Rohan Bhagra, Mahantesh Halapannavar, et al.</description>
+    </item>
+    <item>
+      <title>Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration</title>
+      <link>https://arxiv.org/abs/2608.07419</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.07419</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Preference alignment often makes large language models (LLMs) overconfident and poorly calibrated. Traditional post-hoc temperature scaling is inherently domain-dependent: a temperature fitted on one domain does not generalize across domains. This motivates us to modify model parameters during train... [Score: 9.5 | Flagged for: agi, alignment, llm, language model, scaling] Authors: Ruochen Jin, Zhanliang Wang, et al.</description>
+    </item>
+    <item>
+      <title>CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning</title>
+      <link>https://arxiv.org/abs/2608.28266</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.28266</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination. Most benchmarks either focus on single-agent task completion or summarize multi-agent beha... [Score: 9.0 | Flagged for: agent, multi-agent, planning, embodied, llm] Authors: Yang Chen, Ye-Xin Xie, et al.</description>
     </item>
   </channel>
 </rss>

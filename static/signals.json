@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T16:07:01Z",
+  "generated_at": "2026-09-07T18:11:31Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -29,33 +29,6 @@
         "llm",
         "language model",
         "rag"
-      ]
-    },
-    {
-      "id": "2608.07642",
-      "source": "arxiv",
-      "title": "Contextual Value Alignment via Multilayer Combinatorial Fusion",
-      "url": "https://arxiv.org/abs/2608.07642",
-      "authors": [
-        "Yuanhong Wu",
-        "Djallel Bouneffouf",
-        "D. Frank Hsu"
-      ],
-      "summary": "Aligning large language models (LLMs) with human values remains a major challenge, especially for trustworthy AI. While existing approaches such as RLHF, CAI, and their variants have achieved promising results, they often rely on a single-agent framework and a unified reward system. This limits their ability to capture ethical pluralism, adapt to diverse moral contexts, and reflect the dynamics of multi-agent moral reasoning.\n  In this work, we propose a framework that utilizes multilayer combinatorial fusion for contextual value alignment (MCF-CVA). At the first layer of the framework, it ins",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-07",
-      "score": 13.5,
-      "raw_score": 27,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "alignment",
-        "rlhf",
-        "value alignment",
-        "llm",
-        "language model"
       ]
     },
     {
@@ -132,33 +105,6 @@
         "agent",
         "tool use",
         "reasoning",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2608.06865",
-      "source": "arxiv",
-      "title": "Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection",
-      "url": "https://arxiv.org/abs/2608.06865",
-      "authors": [
-        "Xuechao Zou",
-        "Shun Zhang",
-        "Kai Li",
-        "Yi Zhou"
-      ],
-      "summary": "The malicious use of generative artificial intelligence to create highly realistic deepfake videos raises serious ethical concerns and poses substantial challenges to AI safety. However, existing deepfake video benchmarks provide limited coverage of recent synthesis methods and generally lack reliable fine-grained textual annotations. Meanwhile, conventional detectors and multimodal large language models (MLLMs), whether operating as a single model or relying on a single analytical perspective, often fail to capture subtle forgery artifacts, limiting their generalization to emerging AI-generat",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-07",
-      "score": 11.0,
-      "raw_score": 22,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "ai safety",
         "llm",
         "language model",
         "rag"
@@ -536,33 +482,6 @@
       ]
     },
     {
-      "id": "2608.06830",
-      "source": "arxiv",
-      "title": "When Coordination Becomes a Threat: Communication Attacks in LLM-Controlled Multi-Robot Systems",
-      "url": "https://arxiv.org/abs/2608.06830",
-      "authors": [
-        "Zhen Huang",
-        "Zhihuang Liu",
-        "Weijia Shi",
-        "Yifan Yang"
-      ],
-      "summary": "Large Language Models (LLMs) are increasingly used as high-level planners in embodied multi-robot systems, enabling robots to interpret natural language instructions and coordinate executable actions. Yet, this growing reliance on LLM planners also raises security concerns. Prior work has focused mainly on individual robots, while communication risks in multi-robot collaboration remain insufficiently understood. Existing multi-robot studies are further limited to preliminary analysis under the Decentralized Multi-agent System (DMAS) architecture, so it remains unclear whether these risks persi",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-07",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "interpret",
-        "embodied",
-        "robot",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2609.04159",
       "source": "arxiv",
       "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
@@ -739,32 +658,6 @@
         "robot",
         "robotics",
         "llm"
-      ]
-    },
-    {
-      "id": "2608.07419",
-      "source": "arxiv",
-      "title": "Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration",
-      "url": "https://arxiv.org/abs/2608.07419",
-      "authors": [
-        "Ruochen Jin",
-        "Zhanliang Wang",
-        "Zongyu Dai",
-        "Jiancong Xiao"
-      ],
-      "summary": "Preference alignment often makes large language models (LLMs) overconfident and poorly calibrated. Traditional post-hoc temperature scaling is inherently domain-dependent: a temperature fitted on one domain does not generalize across domains. This motivates us to modify model parameters during training to improve calibration. We propose maximizing the entropy of predictive distributions as the calibration objective, which directly targets overconfidence by discouraging overly concentrated predictions. Inspired by temperature scaling, we realize this through a bilevel optimization formulation, ",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-08-07",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agi",
-        "alignment",
-        "llm",
-        "language model",
-        "scaling",
-        "rag"
       ]
     },
     {
@@ -1173,6 +1066,56 @@
       ]
     },
     {
+      "id": "2609.05069",
+      "source": "arxiv",
+      "title": "A Structured Debate-Mixture-of-Agents Framework for Complex Clinical Diagnostic Decision Support",
+      "url": "https://arxiv.org/abs/2609.05069",
+      "authors": [
+        "Chang Xia",
+        "Leilei Ouyang",
+        "Huimin Wang",
+        "Yong Zhao"
+      ],
+      "summary": "Large language models (LLMs) show potential for medical tasks, but their single-turn question-answer format does not reflect how clinical diagnosis is performed in practice. As a result, they remain limited in complex diagnostic settings. We developed Debate-Mixture-of-Agents (DMoA), a novel multi-agent framework that structures role-based interaction to support iterative diagnostic reasoning. Base models and DMoA were evaluated on 297 rare disease cases and 1,719 challenging cases. Across both datasets, DMoA improved most likely diagnosis accuracy by 10.21 percentage points and safety rate by",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-09-04",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2609.05025",
+      "source": "arxiv",
+      "title": "Leveraging Low-Level Symbolic Competences for Unsupervised Grounding in Hallucination Detection",
+      "url": "https://arxiv.org/abs/2609.05025",
+      "authors": [
+        "Renato Vukovic",
+        "Hsien-chin Lin",
+        "Carel van Niekerk",
+        "Benjamin Ruppik"
+      ],
+      "summary": "Hallucination-where a language model generates outputs that are factually incorrect or unsupported by the source-is a major challenge for both prompted and fine-tuned language models. Detecting hallucinations is difficult due to the opaque reasoning processes of LLMs, which often provide little insight into why a model's output may be inaccurate.\n  In this work, we investigate whether an LLM can use an alternative, low level, symbolic competence such as SQL for unsupervised hallucination detection in some high level task. For this, we make an LLM build an SQL database from reference documents.",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-09-04",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agi",
+        "reasoning",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2608.30935",
       "source": "arxiv",
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
@@ -1421,6 +1364,29 @@
       ]
     },
     {
+      "id": "2609.04894",
+      "source": "arxiv",
+      "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+      "url": "https://arxiv.org/abs/2609.04894",
+      "authors": [
+        "Linsen Zhu",
+        "Mengqing Cai"
+      ],
+      "summary": "Large language models become consequential agents when surrounding systems let outputs change external state. Models now call tools, operate interfaces, delegate work, retain state, inhabit generated worlds, and control robots or laboratory equipment. Such advances are often narrated as one march toward autonomy, conflating model competence, system integration, persistence, and safe authority. This critical review synthesizes primary research and official technical specifications available by 31 August 2026. We organize the evidence along delegated authority, temporal persistence, and environm",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-04",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomy",
+        "robot",
+        "language model"
+      ]
+    },
+    {
       "id": "2609.03871",
       "source": "arxiv",
       "title": "Bioinfoysis Technical Report",
@@ -1516,6 +1482,31 @@
         "agent",
         "tool use",
         "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2609.05133",
+      "source": "arxiv",
+      "title": "A Schema Bounded Language Model for Refining Robot Policies Without Destabilizing Local Learning",
+      "url": "https://arxiv.org/abs/2609.05133",
+      "authors": [
+        "Chongwen Dong",
+        "Mithun Paul Saint-Germain",
+        "Pinjari Asif",
+        "Carlo R. daCunha"
+      ],
+      "summary": "This paper addresses navigation by composite heterogeneous robots in a decentralized system when policy reasoning and local control operate at different update levels. In a NetLogo--Python implementation, three robots share motion dynamics but use different LLM backends. Each robot independently combines a large language model (LLM) policy agent, an Upper Confidence Bound (UCB) bandit, and a Double Deep Q-Network (Double DQN) controller; no central LLM generates team actions. LLM inference is confined to round-level policy generation and refinement rather than tick-level action selection. The ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-04",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "robot",
         "llm",
         "language model"
       ]

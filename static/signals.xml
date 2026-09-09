@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 08 Sep 2026 17:11:52 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 09 Sep 2026 17:05:56 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL</title>
@@ -62,6 +62,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.23622</guid>
       <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
       <description>Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled ... [Score: 10.5 | Flagged for: agent, multi-agent, tool use, planning, reasoning] Authors: Yuchen Xia, Michael Weyrich, et al.</description>
+    </item>
+    <item>
+      <title>SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</title>
+      <link>https://arxiv.org/abs/2609.09113</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2609.09113</guid>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <description>While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essent... [Score: 10.0 | Flagged for: recursive self-improvement, agent, autonomous, alignment, interpretability] Authors: Yuqiao Tan, Shizhu He, et al.</description>
     </item>
     <item>
       <title>A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms</title>
@@ -183,6 +190,13 @@
       <description>Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: bia... [Score: 9.5 | Flagged for: agent, agentic, autonomy, planning, robot] Authors: Rohan Bhagra, Mahantesh Halapannavar, et al.</description>
     </item>
     <item>
+      <title>PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving</title>
+      <link>https://arxiv.org/abs/2609.08965</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2609.08965</guid>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Ensuring the safety of autonomous driving is a critical challenge. Scenario-based testing is a systematic process used to validate Autonomous Driving Systems (ADSs), but it remains a fragmented modular pipeline in which scenario generation, retrieval, modification, ADS execution, and results analysi... [Score: 9.0 | Flagged for: agent, autonomous, planning, llm, language model] Authors: Yuan Gao, Sebastian Müller, et al.</description>
+    </item>
+    <item>
       <title>CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning</title>
       <link>https://arxiv.org/abs/2608.28266</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.28266</guid>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.17836</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <description>As large language models (LLMs) are granted increasing autonomy, it is essential to investigate methods that can induce unsafe behavior. We propose a novel white-box attack inspired by locate-then-edit approaches from the field of Knowledge Editing. Our choice is motivated by the observation that mo... [Score: 9.0 | Flagged for: agi, autonomy, llm, language model, retrieval] Authors: Roman Maksimov, Vladimir Aletov, et al.</description>
-    </item>
-    <item>
-      <title>Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis</title>
-      <link>https://arxiv.org/abs/2608.16775</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.16775</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Large Language Models (LLMs) are increasingly being deployed in cybersecurity operations to assist cybersecurity analysts with rapid decision-making against emerging threats. However, there is a main criteria that must be met when using LLMs in cybersecurity, that is, trust in the generated outputs.... [Score: 9.0 | Flagged for: agent, agentic, autonomous, llm, language model] Authors: Reza Fayyazi, Michael Zuzak, et al.</description>
-    </item>
-    <item>
-      <title>AgenticTwin: An Agentic LLM Framework Integrated with Digital Twin for Anomaly Detection</title>
-      <link>https://arxiv.org/abs/2608.11679</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2608.11679</guid>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Digital twins are increasingly used to monitor and simulate the behavior of cyber-physical systems. Even with skilled operators, interpreting anomalies detected within digital twin pipelines is challenging, as the sheer complexity and volume of raw sensor data make thorough analysis difficult. Recen... [Score: 9.0 | Flagged for: agent, agentic, reasoning, interpret, llm] Authors: Touseef Hasan, Mounika Ghanta, et al.</description>
     </item>
   </channel>
 </rss>

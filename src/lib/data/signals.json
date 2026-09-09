@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T17:11:52Z",
+  "generated_at": "2026-09-09T17:05:56Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -214,6 +214,32 @@
         "reasoning",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.09113",
+      "source": "arxiv",
+      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+      "url": "https://arxiv.org/abs/2609.09113",
+      "authors": [
+        "Yuqiao Tan",
+        "Shizhu He",
+        "Jun Zhao",
+        "Kang Liu"
+      ],
+      "summary": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Bench to evaluate whether AI agents can act as scientists utilizing SAE tools for autonomous mechanist",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-08",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "recursive self-improvement",
+        "agent",
+        "autonomous",
+        "alignment",
+        "interpretability",
+        "interpret"
       ]
     },
     {
@@ -658,6 +684,33 @@
         "robot",
         "robotics",
         "llm"
+      ]
+    },
+    {
+      "id": "2609.08965",
+      "source": "arxiv",
+      "title": "PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving",
+      "url": "https://arxiv.org/abs/2609.08965",
+      "authors": [
+        "Yuan Gao",
+        "Sebastian Müller",
+        "Mattia Piccinini",
+        "Marc Kaufeld"
+      ],
+      "summary": "Ensuring the safety of autonomous driving is a critical challenge. Scenario-based testing is a systematic process used to validate Autonomous Driving Systems (ADSs), but it remains a fragmented modular pipeline in which scenario generation, retrieval, modification, ADS execution, and results analysis are performed by separate tools with little interaction. Large Language Model (LLM) agents have shown promise across ADS sub-systems such as perception, planning, and control. However, no prior work covers the whole scenario-based testing pipeline for ADSs with a unified LLM-agent framework. We pr",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-08",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "planning",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
       ]
     },
     {
@@ -1484,55 +1537,6 @@
         "reasoning",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2609.05133",
-      "source": "arxiv",
-      "title": "A Schema Bounded Language Model for Refining Robot Policies Without Destabilizing Local Learning",
-      "url": "https://arxiv.org/abs/2609.05133",
-      "authors": [
-        "Chongwen Dong",
-        "Mithun Paul Saint-Germain",
-        "Pinjari Asif",
-        "Carlo R. daCunha"
-      ],
-      "summary": "This paper addresses navigation by composite heterogeneous robots in a decentralized system when policy reasoning and local control operate at different update levels. In a NetLogo--Python implementation, three robots share motion dynamics but use different LLM backends. Each robot independently combines a large language model (LLM) policy agent, an Upper Confidence Bound (UCB) bandit, and a Double Deep Q-Network (Double DQN) controller; no central LLM generates team actions. LLM inference is confined to round-level policy generation and refinement rather than tick-level action selection. The ",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-04",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "robot",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.04183",
-      "source": "arxiv",
-      "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
-      "url": "https://arxiv.org/abs/2609.04183",
-      "authors": [
-        "Ye-Chan Kim",
-        "Seunghee Choi",
-        "SeungJu Cha",
-        "Si-Woo Kim"
-      ],
-      "summary": "Weakly-Supervised Dense Video Captioning aims to localize and describe multiple events in untrimmed videos given only an ordered set of event-level captions per video. Recent work synthesizes auxiliary transition captions via LLM to provide additional vision-language alignment, but these captions lack visual grounding and are rigidly assigned to every inter-event gap at a fixed location and duration. To address these, we propose Seeing Before Synthesizing (SBS), a framework that adaptively provides visually grounded linguistic guidance only where warranted. Leveraging a VLM, we generate frame-",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-03",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "alignment",
-        "llm",
-        "rag"
       ]
     }
   ]

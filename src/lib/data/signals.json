@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:05:56Z",
+  "generated_at": "2026-09-10T16:57:01Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -661,32 +661,6 @@
       ]
     },
     {
-      "id": "2608.09857",
-      "source": "arxiv",
-      "title": "Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy",
-      "url": "https://arxiv.org/abs/2608.09857",
-      "authors": [
-        "Rohan Bhagra",
-        "Mahantesh Halapannavar",
-        "Uddhav Bhattarai"
-      ],
-      "summary": "Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: biased toward user-specified goals, they may suggest actions misaligned with scientific ethics, they may be unsafe due to an inability to \"remember\" prior safety risks, or they may be vulnerable to adversarial attacks on the autonomy ecosystem. We propose a LLM-driven verification layer between plannin",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-08-10",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomy",
-        "planning",
-        "robot",
-        "robotics",
-        "llm"
-      ]
-    },
-    {
       "id": "2609.08965",
       "source": "arxiv",
       "title": "PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving",
@@ -840,6 +814,54 @@
         "interpret",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.09692",
+      "source": "arxiv",
+      "title": "CT-SAFR: Safe and Interpretable Chain-of-Thought Reasoning for Autonomous Robots: A Multi-Layered Verification Framework for Trustworthy AI-Driven Robotic Decision Making",
+      "url": "https://arxiv.org/abs/2609.09692",
+      "authors": [
+        "Cagri Temel"
+      ],
+      "summary": "Chain-of-Thought (CoT) prompting enables LLMs to perform explicit, step-by-step reasoning, creating opportunities for sophisticated autonomous robots. However, recent research reveals that reasoning models verbalize their actual decision processes only 25-39% of the time, with faithfulness degrading 44% on complex tasks. This paper presents CT-SAFR (Chain-of-Thought Safety and Faithfulness for Robotics), a multi-layered verification framework achieving 94.2% hallucination detection (n = 500, 95% CI: 91.8-95.9%) with sub-500ms latency. Through a warehouse robot case study, this work demonstrate",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-09-09",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "autonomous",
+        "reasoning",
+        "chain-of-thought",
+        "interpret",
+        "robot",
+        "robotics",
+        "llm"
+      ]
+    },
+    {
+      "id": "2609.09503",
+      "source": "arxiv",
+      "title": "Agentic AI-enabled Semantic Commissioning of a Cognitive Digital Twin for Reconfigurable Manufacturing",
+      "url": "https://arxiv.org/abs/2609.09503",
+      "authors": [
+        "Yangyang Liu",
+        "Xun Xu",
+        "Jan Polzer"
+      ],
+      "summary": "Rapid bespoke commissioning of the Cognitive Digital Twin (CDT) is a major challenge in reconfigurable manufacturing. Traditional digital twin (DT) construction methods primarily focus on geometric reconstruction, often neglecting the deep semantic integration and functional interoperability necessary for autonomous reasoning. This paper proposes an agent-based, AI-driven workflow to automate end-to-end CDT debugging. The system utilises LangGraph as a multi-agent orchestration engine to achieve dual-path synthesis: the semantic path extracts technical specifications from unstructured document",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-08",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomous",
+        "reasoning"
       ]
     },
     {
@@ -1116,6 +1138,31 @@
         "alignment",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.10509",
+      "source": "arxiv",
+      "title": "Avatar: Toward Autonomous End-to-End Orchestration of Scientific Workflows using LLMs",
+      "url": "https://arxiv.org/abs/2609.10509",
+      "authors": [
+        "Suman Raj",
+        "Hai Duc Nguyen",
+        "Haochen Pan",
+        "Ryan Chard"
+      ],
+      "summary": "Scientific workflow management (WMSs) systems automate execution, yet orchestrate using fixed, hand-tuned rules. LLM agents promise more autonomous orchestration, but it remains unclear where to introduce agentic reasoning, how to bound its risk, and when it actually helps. We present Avatar, an actor-based architecture comprising an orchestrator, an executor, and a provenance monitor. Each actor's decision policy is pluggable (rule-based or LLM-backed) via a single adapter-validated action catalog, so conventional and agentic control run on the same core across different WMSs. We present an i",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-09",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "autonomous",
+        "reasoning",
+        "llm"
       ]
     },
     {
@@ -1417,126 +1464,75 @@
       ]
     },
     {
-      "id": "2609.04894",
+      "id": "2609.10177",
       "source": "arxiv",
-      "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
-      "url": "https://arxiv.org/abs/2609.04894",
+      "title": "Beyond Surface Imitation: Contrastive Modeling for Reasoning Path Alignment in Multimodal In-Context Learning",
+      "url": "https://arxiv.org/abs/2609.10177",
       "authors": [
-        "Linsen Zhu",
-        "Mengqing Cai"
+        "Mingbo Yang",
+        "Wenqiang Wang",
+        "Zhaolu Kang",
+        "Peng Chen"
       ],
-      "summary": "Large language models become consequential agents when surrounding systems let outputs change external state. Models now call tools, operate interfaces, delegate work, retain state, inhabit generated worlds, and control robots or laboratory equipment. Such advances are often narrated as one march toward autonomy, conflating model competence, system integration, persistence, and safe authority. This critical review synthesizes primary research and official technical specifications available by 31 August 2026. We organize the evidence along delegated authority, temporal persistence, and environm",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-04",
+      "summary": "In-context learning (ICL) is widely used in multimodal large language models (MLLMs) and achieves strong performance across a wide range of multimodal tasks. However, existing multimodal ICL methods often rely on surface level imitation of in-context demonstrations, making it difficult for MLLMs to align their responses with the reasoning path required by the given multimodal input. This limitation becomes more pronounced in complex multimodal tasks, thereby restricting further improvements in MLLM performance. To address this issue, we propose a new multimodal ICL framework that combines cont",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-09",
       "score": 7.5,
       "raw_score": 15,
       "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomy",
-        "robot",
-        "language model"
+        "reasoning",
+        "alignment",
+        "llm",
+        "language model",
+        "in-context learning"
       ]
     },
     {
-      "id": "2609.03871",
+      "id": "2609.09628",
       "source": "arxiv",
-      "title": "Bioinfoysis Technical Report",
-      "url": "https://arxiv.org/abs/2609.03871",
+      "title": "Who Are They to Each Other? Multi-Agent Reasoning for Speaker Relationship Inference",
+      "url": "https://arxiv.org/abs/2609.09628",
       "authors": [
-        "Qingyang Shao",
-        "Xin Zhang",
-        "Zhouyang Yuan",
-        "Xianying Chen"
+        "Yaohan Guan",
+        "Yen-Ju Lu",
+        "Yuzhe Wang",
+        "Junhyeok Lee"
       ],
-      "summary": "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them. We introduce \\textbf{Bioinfoysis}, a multi-agent harness that represents each request as a persistent, artifact-grounded analysis run. Bioinfoysis combines global planning with step-wise, evidence-driven replan",
+      "summary": "Inferring speaker relationships from spoken conversations is an important step towards socially aware speech understanding. However, this task remains underexplored, and supervised modeling is costly to train and scale. At the same time, existing inference-time LLM approaches provide limited structure for handling subtle, distributed, and multimodal relational cues that may support multiple plausible interpretations. To address these limitations, we introduce a training-free multi-agent reasoning framework that organizes inference through structured interaction among LLM agents, allowing relat",
       "category": "cs.MA",
       "tag": "Agents",
-      "published_at": "2026-09-03",
+      "published_at": "2026-09-09",
       "score": 7.5,
       "raw_score": 15,
       "matched_keywords": [
         "agent",
         "multi-agent",
-        "tool use",
-        "planning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.03984",
-      "source": "arxiv",
-      "title": "MulDP: Multimodal Diffusion Policy for Autonomous Quadruped Parkour Navigation across Complex Terrains",
-      "url": "https://arxiv.org/abs/2609.03984",
-      "authors": [
-        "Kangmai Hu",
-        "Yueqi Zhang",
-        "Peng Zhai",
-        "Xiaoyi Wei"
-      ],
-      "summary": "Quadruped robots have demonstrated impressive agility in parkour locomotion across complex terrains. However, most systems still rely on human intervention for high-level planning, and autonomous parkour navigation remains underexplored. The key challenges include fine-grained velocity regulation, long-horizon anticipatory behaviors, and tight coupling between perception and embodied execution. To address these challenges, we propose a Multimodal Diffusion Policy (MulDP) that integrates visual perception with robot proprioception and goal information to generate temporally coherent and anticip",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-03",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "autonomous",
-        "planning",
-        "embodied",
-        "robot"
-      ]
-    },
-    {
-      "id": "2609.03497",
-      "source": "arxiv",
-      "title": "BRIDGE: An Open-Source Humanoid Platform via Morphology-Control Co-Design for Physical AI",
-      "url": "https://arxiv.org/abs/2609.03497",
-      "authors": [
-        "Jianren Wang",
-        "Letian Qian",
-        "Zikai Wang",
-        "Weiwei Wu"
-      ],
-      "summary": "Developing humanoid robots capable of leveraging human behavioral data is essential for general-purpose embodiment, yet conventional development remains bottlenecked by a decoupled paradigm that isolates hardware design from whole-body control. This approach leads to suboptimal systems that compromise human-like fluidity and agility. To bridge this gap, we introduce a data-driven morphology-control co-design framework that optimizes humanoid morphology for human-like movement. To quantify morphological fidelity, we also introduce a novel metric that jointly considers kinematic retargeting fide",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-03",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agi",
-        "humanoid",
-        "robot",
-        "physical ai",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.01736",
-      "source": "arxiv",
-      "title": "Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives",
-      "url": "https://arxiv.org/abs/2609.01736",
-      "authors": [
-        "Haibo Jin",
-        "Suijin Wang",
-        "Xucheng Yu",
-        "Haojing Luo"
-      ],
-      "summary": "Large language models (LLMs) augmented with external tools have demonstrated remarkable capability in solving complex real-world tasks. However, existing approaches suffer from two key challenges: brittle multi-step and multi-turn reasoning caused by incompatible tool output types and API schemas, and performance degradation under large tool catalogues. To address these, we introduce \\textbf{Tool Primitives}, a design that replaces rigid API schema-based invocation with natural language as the interface for tool calling, where each tool is wrapped with an LLM interface that handles schema reso",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-01",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "tool use",
         "reasoning",
-        "llm",
-        "language model"
+        "interpret",
+        "llm"
+      ]
+    },
+    {
+      "id": "2609.09597",
+      "source": "arxiv",
+      "title": "Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints",
+      "url": "https://arxiv.org/abs/2609.09597",
+      "authors": [
+        "Qinzhen Ma",
+        "Sida Peng"
+      ],
+      "summary": "Accurate contact prediction is useful for robotic manipulation only if it supports effective decisions. We investigate this connection using a compact, randomly initialized visuotactile world model, trajectory-level uncertainty calibration, and behavior-initialized actor-critic learning in imagination. On 160 MuJoCo Lift episodes, adding touch reduces endpoint-force prediction error from 1.058 to 0.228 N and interval-peak error from 2.724 to 0.523 N across three training seeds. However, tactile persistence achieves lower errors of 0.095 and 0.498 N, respectively. Two exploratory control rounds",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-09-09",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agi",
+        "world model",
+        "alignment",
+        "robot"
       ]
     }
   ]

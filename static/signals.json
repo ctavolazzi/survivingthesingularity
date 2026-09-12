@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T16:58:50Z",
+  "generated_at": "2026-09-12T16:09:11Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -791,32 +791,6 @@
       ]
     },
     {
-      "id": "2608.11679",
-      "source": "arxiv",
-      "title": "AgenticTwin: An Agentic LLM Framework Integrated with Digital Twin for Anomaly Detection",
-      "url": "https://arxiv.org/abs/2608.11679",
-      "authors": [
-        "Touseef Hasan",
-        "Mounika Ghanta",
-        "Souvika Sarkar",
-        "Ujjwal Guin"
-      ],
-      "summary": "Digital twins are increasingly used to monitor and simulate the behavior of cyber-physical systems. Even with skilled operators, interpreting anomalies detected within digital twin pipelines is challenging, as the sheer complexity and volume of raw sensor data make thorough analysis difficult. Recent advances in large language models (LLMs) offer promising capabilities for reasoning and explanation, yet their integration into digital twin-driven anomaly analysis remains underexplored. In this work, we propose AgenticTwin, an agentic framework that integrates LLM-driven reasoning with a digital",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-12",
-      "score": 9.0,
-      "raw_score": 18,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "interpret",
-        "llm",
-        "language model"
-      ]
-    },
-    {
       "id": "2609.09692",
       "source": "arxiv",
       "title": "CT-SAFR: Safe and Interpretable Chain-of-Thought Reasoning for Autonomous Robots: A Multi-Layered Verification Framework for Trustworthy AI-Driven Robotic Decision Making",
@@ -1176,7 +1150,7 @@
         "Xinyu Zhu"
       ],
       "summary": "On-Policy Self-Distillation (OPSD) has emerged as a popular paradigm for large language model (LLM) self-improvement, allowing models to act as their own teachers by leveraging privileged information such as ground-truth solutions. However, recent findings indicate that OPSD can severely degrade the performance of LLMs on complex reasoning tasks: By forcing the student to imitate an artificially confident reasoning trace conditioned on privileged information, OPSD inadvertently suppresses expressions of uncertainty and penalizes the exploratory, self-corrective behaviors required to solve chal",
-      "category": "cs.LG",
+      "category": "cs.CL",
       "tag": "Research",
       "published_at": "2026-09-10",
       "score": 8.0,
@@ -1532,6 +1506,31 @@
         "autonomous",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.09628",
+      "source": "arxiv",
+      "title": "Who Are They to Each Other? Multi-Agent Reasoning for Speaker Relationship Inference",
+      "url": "https://arxiv.org/abs/2609.09628",
+      "authors": [
+        "Yaohan Guan",
+        "Yen-Ju Lu",
+        "Yuzhe Wang",
+        "Junhyeok Lee"
+      ],
+      "summary": "Inferring speaker relationships from spoken conversations is an important step towards socially aware speech understanding. However, this task remains underexplored, and supervised modeling is costly to train and scale. At the same time, existing inference-time LLM approaches provide limited structure for handling subtle, distributed, and multimodal relational cues that may support multiple plausible interpretations. To address these limitations, we introduce a training-free multi-agent reasoning framework that organizes inference through structured interaction among LLM agents, allowing relat",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-09",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "interpret",
+        "llm"
       ]
     }
   ]

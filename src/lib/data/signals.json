@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T16:09:11Z",
+  "generated_at": "2026-09-16T17:34:30Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -55,33 +55,6 @@
         "reasoning",
         "chain-of-thought",
         "alignment",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.13900",
-      "source": "arxiv",
-      "title": "Agentic Transaction: Towards ACID-Compliant Agent Systems",
-      "url": "https://arxiv.org/abs/2608.13900",
-      "authors": [
-        "Zhaoyan Sun",
-        "Xiaoxiao Wang",
-        "Guoliang Li"
-      ],
-      "summary": "Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace manipulation. As agents increasingly operate over persistent environments and multi-step workflows, they face challenges analogous to those addressed by transactional database systems: reliable execution, consistent outcomes, safe concurrency, and durable state management. We introduce the concept of an agentic transaction and propose an ACID-compliant agent system framework that reinterprets the classi",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-08-14",
-      "score": 12.0,
-      "raw_score": 24,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "tool use",
-        "reasoning",
-        "interpret",
         "llm",
         "language model"
       ]
@@ -508,6 +481,31 @@
       ]
     },
     {
+      "id": "2609.12170",
+      "source": "arxiv",
+      "title": "NDT Factory: Synthesizing Verified Network Digital Twins from Semantic Models via Multi-Agent LLM",
+      "url": "https://arxiv.org/abs/2609.12170",
+      "authors": [
+        "Sudipta Acharya",
+        "Petar Djukic",
+        "Burak Kantarci"
+      ],
+      "summary": "Autonomous network management requires systems that can evaluate Network Service Intents (NSIs) under varying conditions without manual implementation of analysis logic, as envisioned in TM Forum Level~4 (L4) autonomy. Behavioral Network Digital Twins (NDTs) enable such evaluation, but existing NDTs rely on pre-defined analytical logic, limiting adaptability for evolving closed-loop control. This paper introduces the NDT factory, a multi-agent software system that synthesizes executable behavioral NDTs on demand from semantic models using Large Language Model (LLM). We validate the system usin",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-10",
+      "score": 9.5,
+      "raw_score": 19,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "autonomy",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2609.04159",
       "source": "arxiv",
       "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
@@ -788,6 +786,53 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2609.16986",
+      "source": "arxiv",
+      "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+      "url": "https://arxiv.org/abs/2609.16986",
+      "authors": [
+        "Muhammad Ashar Ishfaq",
+        "Glaucia Melo"
+      ],
+      "summary": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92. We then used the",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-15",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "alignment",
+        "llm"
+      ]
+    },
+    {
+      "id": "2609.16270",
+      "source": "arxiv",
+      "title": "Cheap Talk Stabilizes Strategic Interaction in LLM Agents",
+      "url": "https://arxiv.org/abs/2609.16270",
+      "authors": [
+        "Nunzio Lorè",
+        "Hongan Zhu",
+        "Babak Heydari"
+      ],
+      "summary": "Large language models are increasingly deployed as interacting agents, making the persistence of their action policies across repeated interaction critical for reliable multi-agent operation. We investigate whether and how agent-generated, non-binding pre-play communication (\"cheap talk\") increases such persistence in four open-weight 7-9B-parameter LLMs. Our experiments span four repeated two-player games -- Prisoner's Dilemma, Snowdrift, Stag Hunt, and Harmony -- with incentive structures ranging from strategic conflict to alignment, each presented in six contexts. We observe unstable trajec",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-14",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "alignment",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -1086,31 +1131,6 @@
         "planning",
         "reasoning",
         "robot",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.13317",
-      "source": "arxiv",
-      "title": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2608.13317",
-      "authors": [
-        "Yanwen Peng",
-        "Delvin Ce Zhang",
-        "Xi Wang",
-        "Nikolaos Aletras"
-      ],
-      "summary": "Large language model based multi-agent systems usually communicate in text, i.e., using discrete tokens. However, text introduces a discrete bottleneck. Converting the sender's continuous hidden states into discrete tokens discards information that token identities alone cannot capture. Recent work proposes latent communication as an alternative, where agents transmit hidden representations directly without converting them to text. However, existing latent methods either inject working memory layer by layer across the transformers, or require trained projectors that limit portability. We propo",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-08-13",
-      "score": 8.5,
-      "raw_score": 17,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "alignment",
-        "llm",
         "language model"
       ]
     },
@@ -1506,31 +1526,6 @@
         "autonomous",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2609.09628",
-      "source": "arxiv",
-      "title": "Who Are They to Each Other? Multi-Agent Reasoning for Speaker Relationship Inference",
-      "url": "https://arxiv.org/abs/2609.09628",
-      "authors": [
-        "Yaohan Guan",
-        "Yen-Ju Lu",
-        "Yuzhe Wang",
-        "Junhyeok Lee"
-      ],
-      "summary": "Inferring speaker relationships from spoken conversations is an important step towards socially aware speech understanding. However, this task remains underexplored, and supervised modeling is costly to train and scale. At the same time, existing inference-time LLM approaches provide limited structure for handling subtle, distributed, and multimodal relational cues that may support multiple plausible interpretations. To address these limitations, we introduce a training-free multi-agent reasoning framework that organizes inference through structured interaction among LLM agents, allowing relat",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-09",
-      "score": 7.5,
-      "raw_score": 15,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "interpret",
-        "llm"
       ]
     }
   ]

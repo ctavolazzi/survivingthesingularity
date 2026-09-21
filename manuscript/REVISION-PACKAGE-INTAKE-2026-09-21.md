@@ -109,7 +109,7 @@ Four derived or mirrored files were then brought into line:
 | File | How |
 | --- | --- |
 | `manuscript-index.json` | `sts.py id build` |
-| `workshop.json` | `scripts/build_workshop_data.py` |
+| `workshop.json` | title string only, by hand, see below |
 | `static/factcheck-trace/index.html` | `sts.py factcheck` then `build_factcheck_trace.py` |
 | `art-catalog.json` | by hand, see below |
 | `ELIJAH-PROTOCOL.md` | by hand, chapter table row 11 |
@@ -120,10 +120,21 @@ Two traps found while doing it, both worth knowing before the next title-shaped 
    appends assets whose id is not already in the catalog; it never refreshes a
    field on an existing entry. `art sync` reported "0 figures to enroll" while
    `art-catalog.json` still carried the old title. Edit that field directly.
-2. **`build_workshop_data.py` records live git state.** Its `receiptsBroken`,
-   `dirtyPaths` and `origin_exact` counts describe the worktree at the moment it
-   runs, so regenerating it over uncommitted edits bakes a dirty snapshot into a
-   committed file. Regenerate it after the source commit is on origin.
+2. **`build_workshop_data.py` records git state resolved against `origin/main`,
+   so it cannot be regenerated from a feature branch.** Its `receiptsBroken`,
+   `dirtyPaths`, `pushed` and `origin_exact` fields describe the worktree against
+   `origin/main` at the moment it runs. Two chapters edited on a branch are not
+   byte identical to `origin/main`, so every claim in them loses its receipt: a
+   regeneration here reported 71 broken receipts and `pushed: false` even with a
+   clean tree and the branch pushed. `/workshop` renders that number in red with
+   the caption "every claim resolves", so committing it would flip a public page
+   to a false failure until merge.
+
+   Only the title string was changed in `workshop.json` here. **Run
+   `python3 scripts/build_workshop_data.py` on `main` after this merges** and
+   commit the result; the receipts resolve again once the chapters are on
+   `origin/main`. The `generatedAt` in the committed file is 2026-08-01 and the
+   branch it names is `ship-current`, so it was already a stale snapshot.
 
 `sts.py id build` warned that 2 ids were carried by position rather than content,
 in `chapter10` and `chapter11`. Those are the two blocks edited here, and the

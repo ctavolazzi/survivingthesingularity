@@ -1,4 +1,4 @@
-# Chapter 11: Using the Tech to Your Advantage
+# Chapter 11: King and Queen of Your Own Robotic Court
 
 ![Boston Dynamics Spot quadruped robot](/book-images/ch11-spot.jpg)
 

@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
   "book_version": "0.7.4",
-  "generated": "2026-07-31",
+  "generated": "2026-09-21",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
     "blocks": 2065,
-    "words": 91954
+    "words": 91958
   },
   "sections": [
     {
@@ -11457,7 +11457,7 @@
       "title": "Chapter 10: The \"Create Over Consume\" Protocol",
       "file": "12-chapter10.md",
       "next_ordinal": 118,
-      "words": 3661,
+      "words": 3663,
       "tombstones": [],
       "blocks": [
         {
@@ -12655,9 +12655,9 @@
             227,
             227
           ],
-          "words": 55,
-          "hash": "e129c36be2f7",
-          "preview": "We start with **Chapter 11: Using the Tech to Your Advantage**, turning the machine loose "
+          "words": 57,
+          "hash": "b60a5828a8eb",
+          "preview": "We start with **Chapter 11: King and Queen of Your Own Robotic Court**, turning the machin"
         },
         {
           "id": "sts.chapter10.b0108",
@@ -12774,10 +12774,10 @@
     },
     {
       "id": "chapter11",
-      "title": "Chapter 11: Using the Tech to Your Advantage",
+      "title": "Chapter 11: King and Queen of Your Own Robotic Court",
       "file": "13-chapter11.md",
       "next_ordinal": 98,
-      "words": 4061,
+      "words": 4063,
       "tombstones": [],
       "blocks": [
         {
@@ -12787,9 +12787,9 @@
             1,
             1
           ],
-          "words": 8,
-          "hash": "2f62e7c37a5d",
-          "preview": "# Chapter 11: Using the Tech to Your Advantage",
+          "words": 10,
+          "hash": "be289ffbf57b",
+          "preview": "# Chapter 11: King and Queen of Your Own Robotic Court",
           "level": 1
         },
         {

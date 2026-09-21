@@ -258,7 +258,7 @@ first contact with the co-op. **Part III:** building it, together.
 | Ch | Concept | Scene premise | Friction / mistake | Allegory weapon | Co-op |
 |---|---|---|---|---|---|
 | 10 | Create Over Consume | Elijah builds the co-op's media/content engine, turning their story into leverage. | Over-optimizes for the algorithm; it reads as slop; has to make it human again. | — | **Denny** |
-| 11 | Using the Tech to Your Advantage | Elijah turns Silvana on their own problems — the crucible. | A misconfigured deploy leaks; he learns operational discipline the hard way. | Prometheus / fire is a tool or a weapon by whose hand. | co-op |
+| 11 | King and Queen of Your Own Robotic Court | Elijah turns Silvana on their own problems — the crucible. | A misconfigured deploy leaks; he learns operational discipline the hard way. | Prometheus / fire is a tool or a weapon by whose hand. | co-op |
 | 12 | The Land Strategy | Reuben walks the co-op through buying the soil under their feet via a trust. | Elijah assumes it's a code problem; it's a people-and-paperwork problem. | Enclosure, run in reverse. | **Reuben** |
 | 13 | The Shouse Protocol | The container/shouse build — Marta's domain, Elijah on sensors. | Elijah's welds would kill someone; he stays in his lane and learns his limits. | — | **Marta** |
 | 14 | Collapse of the Long Tail | A local business the co-op knows dies to the machine; gradually then suddenly. | Elijah could have warned them and didn't; guilt echoes the realtors. | Hemingway's bankruptcy — gradually, then suddenly. | **Denny** |

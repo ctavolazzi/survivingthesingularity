@@ -224,7 +224,7 @@ In the next act of this manual, we are moving out of the system entirely. We hav
 
 Now, we build.
 
-We start with **Chapter 11: Using the Tech to Your Advantage**, turning the machine loose on our own problems, on hardware we own outright. And we build toward **Chapter 13: The Shouse Protocol**, the precise structural engineering, concrete placement, and metal-welding steps of a double-wide shipping-container home that runs completely outside their speculative, debt-fueled grid.
+We start with **Chapter 11: King and Queen of Your Own Robotic Court**, turning the machine loose on our own problems, on hardware we own outright. And we build toward **Chapter 13: The Shouse Protocol**, the precise structural engineering, concrete placement, and metal-welding steps of a double-wide shipping-container home that runs completely outside their speculative, debt-fueled grid.
 
 Grab your boots and your welding helmet. It is time to get your hands dirty.
 

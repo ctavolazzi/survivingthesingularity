@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
   "book_version": "0.7.4",
-  "generated": "2026-07-31",
+  "generated": "2026-09-22",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2065,
-    "words": 91954
+    "blocks": 2066,
+    "words": 92048
   },
   "sections": [
     {
@@ -474,7 +474,7 @@
       "title": "Preface: Welcome to the Weirdness",
       "file": "01-preface.md",
       "next_ordinal": 36,
-      "words": 1170,
+      "words": 1190,
       "tombstones": [],
       "blocks": [
         {
@@ -796,8 +796,8 @@
             65,
             65
           ],
-          "words": 114,
-          "hash": "f9e5b610a3fe",
+          "words": 134,
+          "hash": "ade318229fee",
           "preview": "The printing economy had made books cheap enough for ordinary people, and circulating libr"
         },
         {
@@ -7961,7 +7961,7 @@
       "title": "Chapter 8: The Psychology of the Collapse",
       "file": "10-chapter8.md",
       "next_ordinal": 190,
-      "words": 6194,
+      "words": 6196,
       "tombstones": [
         "sts.chapter8.b0070",
         "sts.chapter8.b0111",
@@ -9825,8 +9825,8 @@
             352,
             352
           ],
-          "words": 47,
-          "hash": "55a2cfebfe7e",
+          "words": 49,
+          "hash": "72febab1a128",
           "preview": "In 1929 it was scandalous for a woman to smoke in public, which meant half the American ci"
         },
         {
@@ -13874,8 +13874,8 @@
       "id": "chapter12",
       "title": "Chapter 12: The Land Strategy",
       "file": "14-chapter12.md",
-      "next_ordinal": 112,
-      "words": 3833,
+      "next_ordinal": 113,
+      "words": 3909,
       "tombstones": [],
       "blocks": [
         {
@@ -15080,11 +15080,22 @@
           "preview": "The people who filed claims during the chaos held title when the chaos ended. It was one o"
         },
         {
-          "id": "sts.chapter12.b0108",
+          "id": "sts.chapter12.b0112",
           "type": "paragraph",
           "lines": [
             246,
             246
+          ],
+          "words": 76,
+          "hash": "269747b454e9",
+          "preview": "The celebration usually skips what that land cost, and the Ledger will not. Much of it had"
+        },
+        {
+          "id": "sts.chapter12.b0108",
+          "type": "paragraph",
+          "lines": [
+            248,
+            248
           ],
           "words": 53,
           "hash": "af6e62215a93",
@@ -15094,8 +15105,8 @@
           "id": "sts.chapter12.b0109",
           "type": "paragraph",
           "lines": [
-            248,
-            248
+            250,
+            250
           ],
           "words": 61,
           "hash": "d250c292985e",
@@ -15105,8 +15116,8 @@
           "id": "sts.chapter12.b0110",
           "type": "paragraph",
           "lines": [
-            250,
-            250
+            252,
+            252
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -15116,8 +15127,8 @@
           "id": "sts.chapter12.b0111",
           "type": "list",
           "lines": [
-            252,
-            254
+            254,
+            256
           ],
           "words": 190,
           "hash": "7e915cd0bb6c",
@@ -15130,7 +15141,7 @@
       "title": "Chapter 13: The Shouse Protocol",
       "file": "15-chapter13.md",
       "next_ordinal": 117,
-      "words": 4659,
+      "words": 4655,
       "tombstones": [],
       "blocks": [
         {
@@ -16391,8 +16402,8 @@
             248,
             248
           ],
-          "words": 68,
-          "hash": "3c18b038a332",
+          "words": 64,
+          "hash": "f33d47a1a8dd",
           "preview": "The industry said what industries always say: that housing was too complex, too consequent"
         },
         {
@@ -20466,7 +20477,7 @@
             186
           ],
           "words": 108,
-          "hash": "287b6a0dca32",
+          "hash": "650ca58b324b",
           "preview": "The *Whole Earth Catalog* sold welding rigs, geodesic dome mathematics, seed suppliers, ca"
         },
         {

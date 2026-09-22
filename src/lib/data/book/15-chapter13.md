@@ -245,7 +245,7 @@ First, though, the next chapter steps back outside the property line. **Chapter 
 
 For thirty-four years, you could order a house from a catalog. Sears Modern Homes shipped as precut, numbered lumber with nails, paint, fixtures, and an instruction book, delivered to the nearest rail depot. A family with a poured foundation and a few capable friends could assemble a real, permanent, respectable home with no builder's monopoly anywhere in the transaction. Sears sold tens of thousands of them in hundreds of designs, from tiny cottages to genuinely grand houses.
 
-The industry said what industries always say: that housing was too complex, too consequential, too dangerous to hand to amateurs. The houses themselves voted otherwise. Thousands of Sears homes are still standing and still lived in more than a century later, frequently outperforming the contractor-built housing of the same era, because precut parts and clear instructions turn out to encode expertise better than a busy tradesman's afternoon does.
+The industry said what industries always say: that housing was too complex, too consequential, too dangerous to hand to amateurs. The houses themselves voted otherwise. Thousands of Sears homes are still standing and still lived in more than a century later, which is the best evidence there is that precut parts and clear instructions can carry expertise as reliably as a busy tradesman's afternoon.
 
 **The mechanism.** Kit-plus-instructions is how a capability escapes its priesthood. The knowledge gets embedded in the parts and the manual instead of the guild, and the "unqualified" customer turns out to have been qualified all along, just unlicensed.
 

@@ -156,7 +156,7 @@ Post this a few days before the long version, to test the hook.
 ## Titles and thumbnail text
 
 **Title options**
-1. We Spent $300 Billion So Nothing Would Happen. It Worked.
+1. We Spent $300 Billion So Nothing Would Happen. Nothing Happened.
 2. Y2K Wasn't a Hoax. That's the Problem.
 3. Why Good Prevention Always Looks Like an Overreaction
 
@@ -165,9 +165,9 @@ Post this a few days before the long version, to test the hook.
 - "IT WORKED"
 - A clock readout showing "00" becoming "1900"
 
-**Recommendation:** title 1 with "IT WORKED." Title 2 is sharper but "wasn't a hoax"
-overstates what's known; the book itself says the averted damage is contested. Title 1
-makes the same point without the overclaim.
+**Recommendation:** title 1 with "NOTHING HAPPENED." It states what's known and lets
+the viewer feel the irony. "It worked" and "wasn't a hoax" both claim more than the
+book does, since the book itself says the size of the averted damage is contested.
 
 ---
 

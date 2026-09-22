@@ -209,8 +209,8 @@ export async function sendPreorderConfirmation({ name, email, edition_type, copy
   const body = isAuthors
     ? `${greeting} Your Author's Limited Edition preorder is confirmed. Copy #${copy_number} of 100 is reserved for you. ` +
       `Every copy is hand-bound, signed, and numbered by the author. No two are alike, so #${copy_number} is one of a kind. ` +
-      `No payment is collected now. You'll hear from us before the book ships in August 2026.`
-    : `${greeting} Your preorder is confirmed. You'll get first access when the book launches in August 2026, ` +
+      `No payment is collected now. You'll hear from us before the book ships in September 2026.`
+    : `${greeting} Your preorder is confirmed. You'll get first access when the book launches in September 2026, ` +
       `available here on the site and on Amazon in paperback and Kindle. No payment collected now. We'll reach out when it's ready.`;
 
   const cta = isAuthors

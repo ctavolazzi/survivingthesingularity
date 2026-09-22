@@ -4,7 +4,7 @@
 the Red Flag passage in the chapter's "Stage 2: The Panic and the Plug."
 **Register:** The Argument (first person, contractions, short hammers after long runs).
 See `src/lib/data/book/VOICE-GUIDE.md`.
-**Target length:** long version about 3.5 minutes (about 437 spoken words at a normal
+**Target length:** long version about 3 minutes (about 440 spoken words at a normal
 pace). Short under 60 seconds.
 **Status:** draft for CT. Use it as a map of what to say, not lines to read (see the
 note at the top of `p13-the-abbots-confession.md`). Bracketed lines are directions.
@@ -21,7 +21,7 @@ outlived their reason by decades.
 
 **2. The "handed the car industry to Germany" claim.** The book says Britain's red-flag
 era decided where the automobile would be born. Historians argue about how much the law
-mattered next to other factors. The script says it "helped" and "that's the argument,"
+mattered next to other factors. The script says "the argument goes" and "the leash didn't help,"
 not that it single-handedly caused it.
 
 **3. Two things from the chapter left out on purpose:**

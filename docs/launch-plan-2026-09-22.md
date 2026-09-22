@@ -6,7 +6,8 @@
 the book's 23 precedents into a video slate. Filming does not wait on Track A, but
 **the videos' call to action does**: `/book` is password-gated and the password comes
 with the preorder, so until Track A is done there is nothing a viewer can buy or read.
-Until then, point videos at `/early-access` as a waitlist.
+Until then, point videos at `/ledger`, the free Precedent Ledger (all 23 cases, unlocked with
+an email), so every video grows the list today.
 
 ---
 
@@ -90,7 +91,7 @@ and the book says what that means for AI. That is a video format.
 | Cold open | 0:00 to 0:15 | The single most surprising fact, stated flat. No intro, no logo. |
 | The story | about 4 to 6 min | The precedent as written, told in your voice, not read. |
 | The turn | about 1 to 2 min | "Here is why this is happening again right now." Pulled from the chapter the precedent sits in. |
-| The ask | 0:20 | "This is one of 23 cases in the book. $5 preorders it and you get the current draft right away." Link to `/early-access`. Until Track A is done, use a waitlist line instead. |
+| The ask | 0:20 | "This is one of 23 cases in the book. $5 preorders it and you get the current draft right away." Link to `/early-access`. Until Track A is done, point to `/ledger` instead. |
 
 **Plus one Short per episode:** the cold open and the punchline, under 60 seconds,
 posted a few days before the long version to test the hook.

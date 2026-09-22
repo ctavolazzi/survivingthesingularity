@@ -191,7 +191,8 @@ concert in a park.]
 **Before posting: the ask depends on Stripe.** The draft is not free to read. `/book`
 is password-gated, and the gate says the password comes with the $5 preorder, which
 cannot take real money until Track A in `docs/launch-plan-2026-09-22.md` is done. Until
-then, use the waitlist line below instead of the preorder line.
+then, use the `/ledger` line below instead of the preorder line: the Precedent Ledger is
+free with an email, so it works today and grows the list.
 
 [On screen: book cover, survivingthesingularity.com/early-access.]
 
@@ -201,8 +202,8 @@ then, use the waitlist line below instead of the preorder line.
 > you're owed money from. Five bucks preorders it, and you get the whole current draft
 > right away. Link's below.
 >
-> [Until Stripe is live, say instead: "The book's coming soon. Get on the list and
-> you'll be first to know." Link to `/early-access`.]
+> [Until Stripe is live, say instead: "All twenty-three of these stories are free on my
+> site. Link's below." Link to `/ledger`.]
 >
 > Next time: the Kodak engineer who built the first digital camera, and what his bosses
 > told him to do with it.

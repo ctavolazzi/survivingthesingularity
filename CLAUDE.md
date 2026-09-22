@@ -27,6 +27,8 @@ A SvelteKit web platform for the **YouTube Shouse Blueprint** — a comprehensiv
 /blog                → Blog listing
 /blog/[slug]         → Individual blog posts
 /checklist           → Free readiness checklist (EmailGate + email-to-inbox)
+/ledger              → Free Precedent Ledger: all 23 precedents pulled from the book
+                       source at build time; first 3 open, rest behind EmailGate
 /signals             → Signals feed (arXiv sweep ticker)
 /early-access        → Email capture + Stripe checkout ($5 preorder)
 /early-access/success → Post-checkout fulfillment page

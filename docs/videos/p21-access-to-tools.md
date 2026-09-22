@@ -15,7 +15,7 @@ says it does ("access paths" to autonomous tools). The book deliberately doesn't
 the company, so any mention is your call; there's an optional line in the practice
 section.
 
-**One overclaim to avoid.** The book says the commune and the personal computer "both
+**One overclaim to avoid (fixed in the book on 2026-09-22).** The book used to say the commune and the personal computer "both
 came out of" the catalog's pages. Its influence on early personal-computing culture is
 well documented; "came out of" is stronger than that. The script says "influenced."
 
@@ -121,7 +121,8 @@ a workbench.]
 **Before posting: the ask depends on Stripe.** The draft is not free to read. `/book`
 is password-gated, and the gate says the password comes with the $5 preorder, which
 cannot take real money until Track A in `docs/launch-plan-2026-09-22.md` is done. Until
-then, use the waitlist line below instead of the preorder line.
+then, use the `/ledger` line below instead of the preorder line: the Precedent Ledger is
+free with an email, so it works today and grows the list.
 
 [On screen: book cover, survivingthesingularity.com/early-access.]
 
@@ -129,8 +130,8 @@ then, use the waitlist line below instead of the preorder line.
 > it's from is my version of that catalog. Five bucks preorders it, and you get the whole
 > current draft right away. Link's below.
 >
-> [Until Stripe is live, say instead: "The book's coming soon. Get on the list and
-> you'll be first to know." Link to `/early-access`.]
+> [Until Stripe is live, say instead: "All twenty-three of these stories are free on my
+> site. Link's below." Link to `/ledger`.]
 
 [End card.]
 

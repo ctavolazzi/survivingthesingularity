@@ -156,6 +156,16 @@ function buildWelcome(source) {
       cta: { label: 'Open the checklist', url: 'https://survivingthesingularity.com/checklist' },
     };
   }
+  if (source === 'ledger') {
+    return {
+      subject: 'The Precedent Ledger is unlocked',
+      heading: "You're in. All 23 precedents are open.",
+      body:
+        'Every case is unlocked on the site: the story, the mechanism behind it, and three things ' +
+        "to do this week. You'll also hear when the book launches. No spam, no noise. Unsubscribe anytime.",
+      cta: { label: 'Open the ledger', url: 'https://survivingthesingularity.com/ledger' },
+    };
+  }
   return {
     subject: "You're on the list",
     heading: "You're on the list.",

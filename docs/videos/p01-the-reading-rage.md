@@ -23,7 +23,7 @@ research, and a parent watching this should not feel mocked. The book's own prac
 says "Not to mock them." The script aims at the *panic reflex*, the automatic "this is
 rotting their brains," not at every concern. There's a line at 2:15 that says so.
 
-**3. The Sheridan quote, handled honestly.** *The Rivals* is from 1775, not the 1790s,
+**3. The Sheridan quote, handled honestly.** (The book's text was corrected to match on 2026-09-22.) *The Rivals* is from 1775, not the 1790s,
 and the "diabolical knowledge" line belongs to Sir Anthony Absolute, a comic character
 the play is laughing at. The script says both. It makes the point better: even in 1775,
 the panic was already a joke on stage.
@@ -39,7 +39,7 @@ Numbers refer to Appendix B.
 | In the late 1700s, cheap printing and circulating libraries made novels widely available, including to young women | 115, 116 |
 | Rev. Enos Hitchcock, 1790: "The free access which many young people have to romances, novels, and plays has poisoned the mind and corrupted the morals of many a promising youth." | 183 (the original text) |
 | Doctors and moralists described "reading rage," "reading fever" or "reading mania," blamed for bad morals, ruined eyesight and bad posture | 115, 116 |
-| Sheridan, *The Rivals* (1775): a circulating library is "an evergreen tree of diabolical knowledge," said by the comic character Sir Anthony Absolute | Book text; **VERIFY** the character and year against a text of the play before filming |
+| Sheridan, *The Rivals* (1775): a circulating library is "an evergreen tree of diabolical knowledge," said by the comic character Sir Anthony Absolute | Book text, corrected 2026-09-22; character and year confirmed against the play's text |
 
 ---
 
@@ -122,15 +122,16 @@ Numbers refer to Appendix B.
 **Before posting: the ask depends on Stripe.** The draft is not free to read. `/book`
 is password-gated, and the gate says the password comes with the $5 preorder, which
 cannot take real money until Track A in `docs/launch-plan-2026-09-22.md` is done. Until
-then, use the waitlist line below instead of the preorder line.
+then, use the `/ledger` line below instead of the preorder line: the Precedent Ledger is
+free with an email, so it works today and grows the list.
 
 [On screen: book cover, survivingthesingularity.com/early-access.]
 
 > This is the first of twenty-three cases in my book, Surviving the Singularity. Five
 > bucks preorders it, and you get the whole current draft right away. Link's below.
 >
-> [Until Stripe is live, say instead: "The book's coming soon. Get on the list and
-> you'll be first to know." Link to `/early-access`.]
+> [Until Stripe is live, say instead: "All twenty-three of these stories are free on my
+> site. Link's below." Link to `/ledger`.]
 
 [End card.]
 

@@ -31,7 +31,7 @@ Numbers refer to Appendix B.
 | Kits shipped as precut, numbered lumber with nails, paint, fixtures and an instruction book, by rail | 149, 150 |
 | Sears sold tens of thousands of them, in hundreds of designs | 149 (check the exact figures if you say a number) |
 | Thousands are still standing and lived in today | 149 |
-| **Book claim:** they "frequently outperform" contractor-built housing of the same era. **No source.** The script doesn't state it as fact | None. **VERIFY** or leave it out |
+| The book's unsourced claim that they "frequently outperform" contractor-built housing was removed on 2026-09-22 | Not used |
 | The "housing is too dangerous for amateurs" objection is the book's characterization, not a documented quote. The script frames it as "the argument against it," not as something a named group said | Book text |
 | Many buyers hired local builders to assemble the kits, and Sears also offered mortgages | 149. **VERIFY**; worth a sentence of honesty if confirmed |
 
@@ -124,15 +124,16 @@ construction.]
 **Before posting: the ask depends on Stripe.** The draft is not free to read. `/book`
 is password-gated, and the gate says the password comes with the $5 preorder, which
 cannot take real money until Track A in `docs/launch-plan-2026-09-22.md` is done. Until
-then, use the waitlist line below instead of the preorder line.
+then, use the `/ledger` line below instead of the preorder line: the Precedent Ledger is
+free with an email, so it works today and grows the list.
 
 [On screen: book cover, survivingthesingularity.com/early-access.]
 
 > This is one of twenty-three cases in my book, Surviving the Singularity. Five bucks
 > preorders it, and you get the whole current draft right away. Link's below.
 >
-> [Until Stripe is live, say instead: "The book's coming soon. Get on the list and
-> you'll be first to know." Link to `/early-access`.]
+> [Until Stripe is live, say instead: "All twenty-three of these stories are free on my
+> site. Link's below." Link to `/ledger`.]
 
 [End card.]
 

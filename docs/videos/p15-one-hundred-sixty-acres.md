@@ -27,9 +27,8 @@ gets let into the filing office is a political choice.** That reading is also cl
 the chapter's own ending, which is about community land trusts taking ground *off* the
 speculative market.
 
-**Consider fixing the book too.** P-15 in `14-chapter12.md` would be stronger with one
-sentence acknowledging this. That's your call and a source edit, not something this
-script can do.
+**Fixed in the book on 2026-09-22.** P-15 in `14-chapter12.md` now has a paragraph
+acknowledging this, so the book and the video say the same thing.
 
 **Second caution: this is not financial advice.** The book's rule says rural land
 near metros "has not yet been repriced." On a public video, say it as your view, not a
@@ -145,15 +144,16 @@ Numbers refer to Appendix B.
 **Before posting: the ask depends on Stripe.** The draft is not free to read. `/book`
 is password-gated, and the gate says the password comes with the $5 preorder, which
 cannot take real money until Track A in `docs/launch-plan-2026-09-22.md` is done. Until
-then, use the waitlist line below instead of the preorder line.
+then, use the `/ledger` line below instead of the preorder line: the Precedent Ledger is
+free with an email, so it works today and grows the list.
 
 [On screen: book cover, survivingthesingularity.com/early-access.]
 
 > This is one of twenty-three cases in my book, Surviving the Singularity. Five bucks
 > preorders it, and you get the whole current draft right away. Link's below.
 >
-> [Until Stripe is live, say instead: "The book's coming soon. Get on the list and
-> you'll be first to know." Link to `/early-access`.]
+> [Until Stripe is live, say instead: "All twenty-three of these stories are free on my
+> site. Link's below." Link to `/ledger`.]
 
 [End card.]
 

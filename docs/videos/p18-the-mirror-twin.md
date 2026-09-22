@@ -3,7 +3,7 @@
 **Source:** Precedent P-18, `src/lib/data/book/16-chapter14.md`.
 **Register:** The Argument (first person, contractions, short hammers after long runs).
 See `src/lib/data/book/VOICE-GUIDE.md`.
-**Target length:** long version about 3.5 minutes (about 500 spoken words at a normal
+**Target length:** long version about 3 minutes (about 430 spoken words at a normal
 pace). Short under 60 seconds.
 **Status:** draft for CT. Use it as a map of what to say, not lines to read (see the
 note at the top of `p13-the-abbots-confession.md`). Bracketed lines are directions.
@@ -24,8 +24,8 @@ spends its time on the *exercise*, the capability list, which is the most practi
 tool in the chapter. It opens by pointing back to Episode 3. If you'd rather not make a
 second Fujifilm video, the Short works on its own.
 
-**3. Don't overclaim "thrived."** Fujifilm still makes film and cameras (Instax is a big
-business). The accurate story is that it survived by moving its core skills into new
+**3. Don't overclaim "thrived."** Fujifilm still makes film and cameras (including the
+Instax instant line). The accurate story is that it survived by moving its core skills into new
 markets, not that it abandoned photography. The script says "survived."
 
 ---
@@ -60,8 +60,8 @@ markets, not that it abandoned photography. The script says "survived."
 
 [On screen: two columns, KODAK and FUJIFILM, both with a line falling after 2000.]
 
-> A few episodes back I told you about Kodak. They built the first digital camera and
-> put it in a drawer, and filed for bankruptcy in 2012.
+> A few episodes back I told you about Kodak. They built the first digital camera,
+> couldn't let it eat their film business, and filed for bankruptcy in 2012.
 >
 > Kodak had a twin. Fujifilm. Japan's film giant. And [VERIFY] around 2000, Fujifilm's
 > film business peaked and started collapsing on basically the same schedule.

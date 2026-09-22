@@ -147,12 +147,20 @@ while you read it.]
 
 ### 6:15 The ask (20 seconds)
 
+**Before posting: the ask depends on Stripe.** The draft is not free to read. `/book`
+is password-gated, and the gate says the password comes with the $5 preorder, which
+cannot take real money until Track A in `docs/launch-plan-2026-09-22.md` is done. Until
+then, use the waitlist line below instead of the preorder line.
+
 [On screen: book cover, survivingthesingularity.com/early-access.]
 
 > This is one of twenty-three cases in my book, Surviving the Singularity. Every one is
 > a time the smartest people in the room were sure about a new technology, and what that
-> tells us about this one. The draft is free to read on the site. Five bucks preorders
-> the finished edition. Link's below.
+> tells us about this one. Five bucks preorders it, and you get the whole current
+> draft right away. Link's below.
+>
+> [Until Stripe is live, say instead: "The book's coming soon. Get on the list and
+> you'll be first to know." Link to `/early-access`.]
 >
 > Next time: the most famous musician in America, and the machine he thought would kill
 > music.

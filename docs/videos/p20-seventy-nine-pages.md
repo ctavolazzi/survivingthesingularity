@@ -175,7 +175,7 @@ Post this a few days before the long version, to test the hook.
 ## Titles and thumbnail text
 
 **Title options**
-1. A Nobody With a Printing Press Started a Revolution in 79 Pages
+1. A Nobody With a Printing Press Changed a Continent's Mind in 79 Pages
 2. Thomas Paine Didn't Ask Permission. Neither Should You.
 3. The Real Numbers Behind Common Sense (and Why They Still Matter)
 
@@ -184,9 +184,9 @@ Post this a few days before the long version, to test the hook.
 - "NO PERMISSION"
 - The Bell title page beside a phone
 
-**Recommendation:** title 1 with "79 PAGES." "Started a revolution" is a fair shorthand
-for the book's claim that it turned a tax grievance into a movement, but don't upgrade
-it to "caused the Revolution." Title 3 is a good follow-up if the comments fill with
+**Recommendation:** title 1 with "79 PAGES." "Changed a continent's mind" matches the
+book's claim that it changed what ordinary people believed was possible. Avoid "started"
+or "caused the Revolution," which overclaim. Title 3 is a good follow-up if the comments fill with
 the inflated sales numbers.
 
 ---

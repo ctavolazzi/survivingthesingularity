@@ -4,7 +4,7 @@
 Machine Exodus").
 **Register:** The Argument (first person, contractions, short hammers after long runs).
 See `src/lib/data/book/VOICE-GUIDE.md`.
-**Target length:** long version about 2.5 to 3 minutes (about 341 spoken words at a normal
+**Target length:** long version about 2.5 minutes (about 340 spoken words at a normal
 pace). Short under 60 seconds.
 **Status:** draft for CT. Use it as a map of what to say, not lines to read (see the
 note at the top of `p13-the-abbots-confession.md`). Bracketed lines are directions.
@@ -139,7 +139,7 @@ Post this a few days before the long version, to test the hook.
 > In the early 1400s, China had the biggest fleet on Earth. Seven voyages. India,
 > Arabia, Africa. Tens of thousands of sailors.
 >
-> Then the court decided it was too expensive. The voyages stopped.
+> Then the politics at court turned against it. The voyages stopped.
 >
 > About sixty years later, much smaller Portuguese ships sailed into the Indian Ocean.
 >

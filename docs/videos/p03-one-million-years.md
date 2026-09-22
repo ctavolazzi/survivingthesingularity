@@ -4,7 +4,7 @@
 survey table from the same chapter ("Timeline Compression and the 2027 Ignition Point").
 **Register:** The Argument (first person, contractions, short hammers after long runs).
 See `src/lib/data/book/VOICE-GUIDE.md`.
-**Target length:** long version about 6 to 7 minutes (about 1,000 spoken words). Short
+**Target length:** long version about 5.5 to 6 minutes (about 820 spoken words at a normal pace). Short
 under 60 seconds.
 **Status:** draft for CT. Written to be said out loud; change any line that doesn't sound
 like you, and treat bracketed lines as directions, not dialogue.

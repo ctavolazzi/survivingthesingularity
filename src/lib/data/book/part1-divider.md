@@ -2,4 +2,4 @@
 
 ![Pixel art: a dark sun crossed by an amber ring rising over a perspective grid, a lone figure standing at the horizon](/book-images/part1-divider.png)
 
-The event horizon is behind us, not ahead. This part maps what actually happened, the 2017 architecture shift, the nine stages of the intelligence explosion, and the thermodynamic reality that governs all of it.
+This part separates observed capability, personal forecasts, and speculative horizons. The nine stages are a framework for asking questions, not an inevitable sequence. Keep food and useful help in view as the horizon widens.

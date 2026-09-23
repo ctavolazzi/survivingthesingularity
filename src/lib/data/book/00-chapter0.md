@@ -45,7 +45,7 @@ PorusAI had no such patience.
 
 ---
 
-PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Everyone in Elijah's field knew the lineage by heart: in 2017, researchers at Google had published a paper with the almost taunting title "Attention Is All You Need," and quietly replaced the engine of machine intelligence. Before that paper, machines read the way you read, one word at a time, in order, forgetting the beginning of a long sentence by the time they reached the end. The Transformer architecture let a machine attend to *everything, everywhere, at once*, every word weighing every other word simultaneously, and, crucially, it let the whole process run in parallel across the biggest computers on Earth. Google wrote the physics. Then they largely sat on it.
+PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Elijah kept returning to the 2017 paper “Attention Is All You Need.” Its account of attention and parallel training gave him something technical to study beneath the excitement. It didn't tell him what every future model would be able to do. The demonstrations kept giving him new questions anyway.
 
 PorusAI built the bomb.
 
@@ -117,7 +117,7 @@ Elijah smiled and stood up into the handshake, and some part of him began, quiet
 
 Three glasses up, catching the neon.
 
-Elijah's arm lifted his own glass because forty years of social training will run the body without any help from the soul. He heard himself say something. The beer was cold and tasted like nothing.
+Elijah's arm lifted his own glass because a lifetime of social training will run the body without any help from the soul. He heard himself say something. The beer was cold and tasted like nothing.
 
 The kid who did their listing videos. Elijah didn't know him. He knew him completely. He'd been him: some twenty-something with a camera and a laptop full of cracked software and a rate he was embarrassed to quote, stringing together realtors and restaurants and the occasional wedding into the shape of one income, telling his parents it was all going to compound into something. That kid had lost his anchor client this week and didn't know yet what Elijah knew, which was that it wasn't a client, it was the tide.
 
@@ -127,7 +127,7 @@ He'd gotten one thing right, at least. They saw.
 
 His mind went where it would live from then on: down the list. Every graphic designer he'd ever split a bill with. Every session player, every wedding photographer, every copywriter, every voice actor, every friend who'd ever cobbled a living out of the exact set of tasks he had just watched a text box perform for twenty dollars a month. People for whom the economy was already a rigged carnival game. People with no margin, no cushion, no lobbyist, the first people every wave hits and the last people anyone rebuilds for.
 
-The realtors were not going to hire anyone to manage the machine. Nobody was going to hire anyone to manage the machine. That fantasy died at the Bear Flag between one round and the next. They were going to use the machine to replace everyone it could replace, as fast as it could replace them, and the machine was getting better every quarter, and he knew, he had *seen the roadmaps*, how much better, how much faster, this was going to get.
+The realtors were not going to hire anyone to manage the machine. At that moment, it felt to him as though nobody was going to hire anyone to manage the machine. That fantasy died at the Bear Flag between one round and the next. They were going to use the machine to replace everyone it could replace, as fast as it could replace them, and the machine was getting better every quarter, and he knew, he had *seen the roadmaps*, how much better, how much faster, this was going to get.
 
 It was the most significant thing that had ever happened in his lifetime, and it had just happened *to* his own community, *through* his own hands, in a bar, to a toast.
 
@@ -163,16 +163,19 @@ You're holding it.
 
 ## Precedent P-02: The Toy at the Fair (Philadelphia, 1876)
 
-At the 1876 Centennial Exhibition, the machine everyone crossed the country to see was the Corliss engine: 1,400 horsepower, four stories tall, the certified future of American industry. President Grant himself threw the lever. In a side gallery, a Boston elocution teacher named Alexander Graham Bell was demonstrating a gadget the judges, wilting in the heat, had nearly put off until tomorrow: a wooden box that carried a human voice down a wire.
+At the 1876 Centennial Exhibition, the large Corliss steam engine and Alexander Graham Bell's telephone offered very different pictures of useful machinery. The telephone carried a human voice over a wire, a capability whose eventual uses extended far beyond a single demonstration.
 
-Sir William Thomson, later Lord Kelvin, the most famous physicist alive, stopped, listened, and called the telephone the greatest marvel he had seen in America. Almost nobody else at the fair agreed. Western Union, offered Bell's patents around that time, passed on them, and spent the following decades watching the toy from the side gallery swallow the communications empire whole. The steam engine got the applause. The telephone got the century.
+The contrast is worth considering without pretending the entire audience agreed about either machine. A fairground reaction is a small piece of a much longer adoption story.
 
-**The mechanism.** At every demonstration there are two audiences standing in the same room: the crowd measuring the machine against the present, and the handful measuring the present against the machine. The crowd asks whether it is impressive. The handful asks what dies when it becomes boring.
+**The mechanism.** A demonstration can reveal an unfamiliar use. Adoption still depends on reliability, infrastructure, cost, and demand.
 
-**The rule.** You just watched a demonstration, at a bar, on a Tuesday. Do not ask how impressive the machine was. Ask what the world looks like when what it did is unremarkable, and price your next decade off that answer, because that is the calculation the other audience is already running.
+**The rule.** Separate a compelling demonstration from a delivered service.
 
 **The practice.**
 
-1. Run the boring test on the last AI demo that impressed you. Assume the capability is free, invisible, and everywhere within thirty-six months. Write down which of your income streams survives that assumption. That list is your actual resume.
-2. The next time you watch a demonstration, watch the room instead of the stage for two full minutes. Note who is applauding and who has gone quiet and started taking notes. Find out what the quiet ones do for a living. That is the second audience, and you want to be standing with them.
-3. Keep a demonstration log. One line per demo that crosses your feed: date, what it did, your one-sentence prediction of when it becomes boring. Review the log every six months. You are not training the predictions. You are training yourself to stop being surprised on schedule.
+1. Record what one demonstration actually shows.
+2. List the work between that demonstration and ordinary use.
+3. Revisit your prediction in six months, including what failed to arrive.
+
+---
+

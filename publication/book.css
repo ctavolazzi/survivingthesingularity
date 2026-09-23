@@ -149,4 +149,4 @@ code, pre { font-family: BookSans; font-size: 9pt; overflow-wrap: anywhere; whit
 
 /* v0.9.1: the original cover, full bleed */
 .cover.original-cover { padding: 0; background: none; }
-.cover-original { position: absolute; inset: 0; width: 6in; height: 9in; object-fit: cover; }
+.cover-original { position: absolute; inset: 0; width: 6in; height: 9in; object-fit: cover; object-position: left center; }

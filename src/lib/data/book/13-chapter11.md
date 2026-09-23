@@ -2,15 +2,19 @@
 
 ![Boston Dynamics Spot quadruped robot](/book-images/ch11-spot.jpg)
 
-*Spot. A robot demonstrates a particular set of physical capabilities. (Jonte, CC BY-SA 4.0, via Wikimedia Commons)*
+*Spot. The same machines ending careers will happily work for you. (Jonte, CC BY-SA 4.0, via Wikimedia Commons)*
 
 
+
+> *"Give me a place to stand, and I shall move the Earth."*
+> attributed to Archimedes
 
 **In this chapter:**
 
-- Your robotic court begins with useful assistance, food first.
-- A food baseline can coexist with restaurants and chosen work.
-- Local computing still needs careful operation; the postmortem matters.
+- The same class of machine that's ending careers can work for you, on hardware the corporate upgrade cycle throws away. Its first job at your court: food.
+- Every cloud query is a page of your diary mailed to the company store. Local compute is one of the last private places left to think.
+- A food baseline and a restaurant can coexist. The meal is free at the door and paid for somewhere.
+- One careless config line published nineteen households of ordinary life to the open internet for 41 hours. The discipline is part of the tool. So is the honest postmortem.
 
 ---
 
@@ -24,7 +28,7 @@ The rack went together the way everything in the shed went together: Marta on st
 
 *The Crucible. Three filing cabinets and a salvaged radiator.*
 
-For five weeks it did enough useful work that everyone learned to forgive the noise. Reuben found a cross-reference he'd missed, checked it against the document, and brought a better question to the next meeting. Priya's intern used it to find passages in the extension references, then caught it inventing a source and wrote that failure on the board beside the successes. The electricity meter kept turning. Elijah kept a log of what the machine had saved them and what checking it had cost.
+For five weeks it was purely good. Reuben fed it easements and it found a cross-reference he'd missed; he checked it against the document and brought a sharper question to counsel. Priya's intern learned blight triage from it in an afternoon, then caught it inventing a source and wrote that failure on the board beside the successes. It never got tired and it never billed and it never, not once, phoned home, because there was no home to phone. The electricity meter kept turning. Elijah kept a log of what the machine had saved them and what checking it had cost.
 
 He started calling the rack the Crucible. Priya said that was fine as long as the things that didn't survive testing stayed in the log.
 
@@ -40,9 +44,11 @@ He thought about carrying it alone for exactly as long as it took to imagine Mar
 
 Marta did not raise her voice, which everyone in the shed understood to be the worst available outcome. "You published which houses stand empty between two and four on a Tuesday," she said. "At the plant we had lockout-tagout. You don't work a press that can take your hand off unless the breaker is locked and your name is on the lock. You put our hands in the press, college."
 
-Curtis said his piece, and for once it had teeth: this is what happens, you brought their machine inside the wire, pull the plug and melt it down. Heads were nodding when Priya, who had been quiet, set down her cup.
+Curtis said his piece, and for once it had teeth: this is what happens, you brought their machine inside the wire, pull the plug and melt it down. Heads were nodding. Marta let them nod for a moment.
 
-"Elijah left a service open," she said. "That is what the logs show. Pulling the model out won't change which service he exposed."
+"The first family that ever kept fire burned something down," Marta said. "A roof, a winter store, somebody's child. And nobody handed the fire back. They built the hearth. Stones in a circle, rules about who tends it, a bucket that never goes empty." She looked at Elijah, and it was not a rescue. "We didn't get burned by the model, Curtis. We got burned by a boy who left it lit on the porch rail."
+
+Priya, who had been quiet, set down her cup. "Pulling the model out won't change which service he exposed."
 
 "He built it," Curtis said.
 
@@ -54,7 +60,7 @@ It was Denny who found the judo in it. "People already know things break," he sa
 
 At that first Sunday meeting, the co-op had adopted a new rule: a change exposing a service to the internet needed a second reviewer and a recorded check of what an outsider could reach. They separated the private records from the public material and assigned someone besides Elijah responsibility for reviewing access. Marta called it borrowing a habit from lockout-tagout. The analogy gave them a place to start; the network needed its own procedures. The model server came off the external network. Updates arrived by hand after that, with the source and file checks recorded before installation, the disk carried home in Elijah's jacket. The team still had to inspect what it brought into the room.
 
-The pump kept ticking. The radiator clicked against the north wall. When Reuben next asked the machine to summarize a document, he still had to read the document. The leak had not taught Elijah machine learning; he had arrived knowing that. It taught him the difference between knowing a system and operating one, and the tuition was forty-one hours of other people's privacy. The checklist was a beginning. It was not the last thing they would have to learn.
+The pump kept ticking. The radiator clicked against the north wall. When Reuben next asked the machine to summarize a document, he still had to read the document. The leak had not taught Elijah machine learning; he had arrived knowing that. It taught him the difference between knowing a system and operating one, and the tuition was forty-one hours of other people's privacy. The machine went on drafting and checking and never billing, the radiator clicking against the north wall while it thought. Fire in its stones.
 
 ---
 
@@ -62,29 +68,24 @@ The pump kept ticking. The radiator clicked against the north wall. When Reuben 
 
 ## Useful help within reach
 
-King and Queen of Your Own Robotic Court is a playful name for a serious change in who gets assistance. I want the person who needs help to be able to obtain it without first becoming wealthy, technically expert, or employable in the latest fashionable field.
+King and Queen of Your Own Robotic Court is a playful name for a serious change in who gets help. I want the person who needs assistance to be able to get it without first becoming rich, technical, or employable in this year's fashionable field.
 
-The first assignment is food. A suitable farm machine, a kitchen, a distribution service, planning software, and the people maintaining each part might together provide it. The person eating doesn't need to own every component any more than a person reading a library book needs to own the printing press.
+The first assignment is food. A farm machine, a kitchen, a delivery service, some planning software, and the people who keep each of them running might together provide it. The person eating doesn't need to own every piece, any more than someone reading a library book needs to own the printing press. What matters is a usable claim on the result. Can you get adequate food when your income stops? Can you ask for a form you can actually eat? Can you get an answer when a delivery fails? Can you complain without losing your next meal?
 
-What matters is a usable claim on the result. Can you obtain adequate food when your income stops? Can you request a form you can eat and prepare? Can you get an answer when a delivery fails? Can you criticize the service without losing your next meal?
+You don't need to be an engineer to put these tools to work. You need to be persistent. Treat a good model as a tireless research assistant. If the answer is generic, argue with it. Push it to be specific. Ask it for the procedure, the part number, the code section. Then check what it tells you against the source, because it will sometimes make things up with a perfectly straight face, the way it did for Priya's intern.
 
-Those questions describe the difference between admiring somebody else's productive power and having some security of your own.
+- **Teach yourself.** Use it to learn the technical task in front of you: how to read a wiring diagram, how to troubleshoot a pump, how to set up a simple spreadsheet that tracks deliveries. Make the machine explain, not just do.
+- **Read the ground.** Use it alongside public maps and records: county parcel records, zoning codes, soil surveys, water maps, the Bureau of Land Management's land records where they apply. Once you understand the rules of the place you live, you stop being surprised by them.
 
 ## Free to eat, paid for somewhere
 
-The line cook from Chapter 7 still matters here. He has lost a job. A restaurant can continue selling meals, and a funded food service can provide him with dinner. There is no logical contradiction between those arrangements.
+The line cook from Chapter 7 still matters here. He's lost his job. A restaurant can keep selling meals, and a funded food service can give him dinner. There's no contradiction between those two arrangements. There's an operating budget to arrange.
 
-There is an operating budget to arrange.
+Here's one design to argue about, not an existing program. A local public body funds a food partnership for a set period. The partnership pays growers for agreed supplies and a kitchen to prepare meals. It pays for delivery, maintenance, and the human work that's still needed. People collect or request the meal without paying at the door. Some of the participating kitchens could be restaurants, earning money for the work.
 
-Consider one possible service, offered here as a design to evaluate rather than an existing program. A local public body funds a food partnership for a defined period. The partnership pays growers for agreed supplies and a kitchen for preparing meals. It pays for delivery, maintenance, and the human work still required. Recipients can collect or request the appropriate service without paying at the door. Some participating kitchens could be restaurants earning income for that work.
+A co-op could run something similar on shared equipment. An existing food bank could add useful automation to work it already does. The form matters: it decides who's in charge, where the money comes from, and what people can claim when it breaks. "Cooperative" isn't a budget, and "public" isn't accountability. The money might come from a public allocation, pooled contributions, purchased services, or a mix. Donations can start a project. They shouldn't quietly carry a permanent promise nobody's actually funded.
 
-A cooperative could organize a similar service around assets its members share. An existing public or charitable provider could add useful automation to work it already does. The institutional form will affect who decides, where resources come from, and what people can claim if provision fails. Those differences deserve debate; the word cooperative isn't a substitute for a budget, and the word public isn't a substitute for accountability.
-
-The money might come from an agreed public allocation, pooled contributions, purchased services, or a combination. The source, duration, and conditions need to be visible before the offer is described as dependable. Voluntary donations can help begin a project. They should not quietly carry a permanent promise nobody has financed.
-
-An adequate baseline for everyone would require provision beyond this illustrative local service. But the organizing distinction is already clear: receiving food and paying for its production can be separated. We don't have to make a hungry person produce the money before we decide how to do the work.
-
-A baseline could change demand and the terms on which people accept work. Some restaurants might need better pay, different hours, or a different business model. Some could close. I can't promise every existing margin survives. Providing adequate food doesn't require abolishing paid meals, and a worker's hunger shouldn't be the protection a business model depends on. The people supplying the baseline also need compensation and conditions they can sustain.
+A food baseline would change some things. Some restaurants might need better pay, different hours, or a different business model. Some could close. I can't promise every existing margin survives. But providing dinner doesn't require abolishing paid meals, and a worker's hunger shouldn't be the protection a business model depends on.
 
 ## A public meal, and an argument about it
 
@@ -96,67 +97,108 @@ The next day's debate sharpened both sides. A critic with catering interests all
 
 British Restaurants charged for meals. In March 1942, the ministry described prices covering food, preparation, overhead, and a contingency margin, with accounts submitted for review. This was no universal entitlement to free dinner. It was a working example of public authorities organizing meals and accounting for the work. Our proposal changes who pays at the point of eating. It still needs the kitchen, the budget, and opening hours that fit a human life. [Hansard, March 17, 1942](https://hansard.parliament.uk/commons/1942-03-17/debates/55709938-4ce9-4237-ba1f-14645cb0f860/WrittenAnswers)
 
+## The objections, answered once
+
+You'll hear these. Here's how I'd answer each of them.
+
+**"Won't having robots clean up after us make people stop caring?"** It could, if we build a service that encourages carelessness. That's a real concern, and we should watch what actually happens. We can make disposal easier, keep trash from escaping in the first place, and clean up what still gets through, then check whether the place stays cleaner overall. The trash doesn't tell you how it got there, either: wind, runoff, and overflowing bins carry plenty of it, and deliberate dumping happens too. Different problems, different responses. Leaving trash in a river is a poor way to teach responsibility.
+
+**"Isn't this how we end up like WALL-E?"** The worry underneath is worth taking seriously: dependence, lost skills, a life with fewer choices. I want help that gives us *more* room to move, learn, make things, care for each other, and take part. Some people will need more help than others, and receiving it doesn't make them less worthy. Whether a tool widens a life or quietly shrinks it is something we can watch and change.
+
+**"We already know how to do this without robots."** Yes. A robot doesn't have to be the answer. Sometimes a better bin, an existing crew, or a simpler machine does more good. But knowing how to do something isn't the same as making it available, affordable, and dependable everywhere it's needed. Compare the options and use whatever does the work well. There are many ways to make an omelette.
+
+**"But what about the jobs?"** Dishwashers and washing machines make the idea of handing repetitive work to a machine familiar. That comparison doesn't pay the bills of someone whose income just disappeared, and their concern is real. Workers belong in the decisions about how these tools come in and how people are supported through the change. That's what this whole book is arguing for.
+
+**"Why not send machines into the dangerous work?"** Where a suitable machine can keep people out of harm's way, that's a good reason to look hard at it, with the people who know the job. The deployment still has to show that it helps, including the work of maintaining and recovering the machine.
+
 ## Ownership matters because access can be withheld
 
-Suppose the machines work beautifully. Now suppose one company owns them, controls the supplies they need, and can stop service when a subscription lapses. Productive capacity has increased. Security for the person who can't pay may not have changed at all.
+Suppose the machines work beautifully. Now suppose one company owns them, controls their supplies, and can cut off service when a subscription lapses. Productive capacity went up. Security for the person who can't pay may not have moved at all.
 
-That is why the proposal includes social organization. Shared ownership is one possibility. Public provision and funded purchases from private providers are others. Whatever the arrangement, ask who can raise the charge, change the conditions, withdraw the service, or sell the assets. Ask how recipients and workers can challenge those decisions.
+So whatever the arrangement, shared ownership, public provision, or paying private providers, ask who can raise the price, change the rules, withdraw the service, or sell the equipment, and how the people receiving it and the people working it can challenge those decisions. And don't let any one program become the only door to help. Several providers, supplies held back for bad weeks, repairable equipment, and routes that don't need a proprietary account all make the promise sturdier.
 
-A food program should also avoid making itself the only door through which a person can obtain help. Several providers, supplies held for interruptions, repairable equipment, and routes that work without a proprietary account can reduce particular dependencies. They don't eliminate the need for outside resources. They give people more than a single promise to lean on.
+## The Crucible: local compute you own
 
-For me, meaningful control is the ability to understand the terms, influence decisions that affect your life, and obtain a remedy when a commitment is broken. A server in your shed may help with some of that. It can't create the arrangement on its own.
+The scene's argument for owning the machine was privacy, and it's a good one. Every question you send a cloud service carries context with it: what you're building, what you're worried about, what you don't know. For a lot of work that's fine. For some of it, a food program's recipient list, a family's medical questions, a co-op's legal strategy, you'd rather it never left the building. Local compute is one of the last private places left to think.
+
+You don't need enterprise money. Every few years, data centers retire perfectly good hardware onto the used market, and the co-op's rack came from exactly that: a county surplus auction.
+
+### The memory math
+
+For running language models, the bottleneck usually isn't raw processing speed. It's memory: the model's weights have to fit in the graphics card's memory (VRAM) to run fast. A good rule of thumb:
+
+> $$V_{RAM} \approx \frac{P \cdot Q}{8} \cdot B \text{ [GB]}$$
+
+where $P$ is the number of parameters in billions, $Q$ is the bits stored per weight (16 for full precision, 4 or 8 for compressed "quantized" versions), dividing by 8 turns bits into bytes, and $B \approx 1.2$ is a buffer for the working memory a conversation needs.
+
+**A small model at full precision.** An 8-billion-parameter model at 16 bits:
+
+> $$V_{RAM} = \frac{8 \cdot 16}{8} \cdot 1.2 = 19.2 \text{ GB}$$
+
+That fits on one used 24 GB card.
+
+**A large model, compressed.** A 70-billion-parameter model at 4 bits:
+
+> $$V_{RAM} = \frac{70 \cdot 4}{8} \cdot 1.2 = 42 \text{ GB}$$
+
+That needs two 24 GB cards, 48 GB together, which is what the co-op scavenged. Open tools like llama.cpp can split a model's layers across both cards. Ollama runs the models; a local chat interface like Open WebUI puts a friendly front on them. None of it needs to touch the internet to work.
+
+### The heat math
+
+A rack like that throws off somewhere between 600 and 1,000 watts of heat, all day. Inside an insulated building, that's a sauna you're paying an air conditioner to fight. The co-op's answer was to carry the heat outside in liquid. The physics is one line:
+
+> $$\dot{Q} = \dot{m} \cdot C_p \cdot \Delta T$$
+
+To move 1,000 watts with a water-glycol coolant ($C_p \approx 3{,}800$ J/kg·°C) while letting it warm only 5°C through the loop:
+
+> $$\dot{m} = \frac{1000}{3800 \cdot 5} \approx 0.053 \text{ kg/s} \approx 3.2 \text{ liters per minute}$$
+
+That's a gentle flow; a small pump the size of a fist handles it. A salvaged car radiator on a shady outside wall dumps the heat.
+
+![The Split-Loop Thermal Exchange: GPU and CPU water blocks inside the insulated shell feed a 12V pump that sends hot coolant through the wall to a salvaged car radiator in free air, with cool coolant returning to the chips](/book-images/ch11-cooling-loop.svg)
+
+*The split loop. Pull the heat off the silicon and dump it outside, instead of paying an air conditioner to fight your own server.*
+
+### Choose the boundary before the machine
+
+The Crucible breach started with an access failure. Other failures start with an unreliable answer, the wrong model for the job, or a decision the system was never fit to make. Good intentions settle none of those.
+
+Give a tool work that can be checked before its mistakes become someone else's emergency. A model can propose a delivery schedule; a coordinator checks the vehicles and what people actually need. A model can find a relevant passage; a person reads the source. A confident explanation doesn't authorize a machine to decide that food is safe or equipment is ready to run.
+
+And keep the words straight. *Local* means it runs on nearby equipment. *Offline* means it works without a connection. An *air gap* means deliberate, physical separation from a network. None of those means the software is right or the data is safe. Keep the system patched, from sources you've verified. Collect as little private information as the job needs. Keep public and private services separate. Have a second person check anything that exposes a service to the internet, and test what an outsider can actually reach. The co-op learned that the hard way: a design shouldn't depend on one careful person never having a bad Friday.
 
 ## Help should enlarge a life
 
-The fear that assistance could make us passive is worth examining. A system could remove choices, erode skills, or place recipients under intrusive supervision. It could also leave someone with the time and strength to raise a child, practice an instrument, recover from illness, or do work they choose.
+Receiving a lot of help isn't a moral failure. Many of us will need it, and all of us have depended on work we couldn't do ourselves. The test is what the arrangement makes possible and what it demands in return.
 
-Receiving substantial help isn't a moral failure. Many of us will need it, and all of us have depended on work we couldn't do for ourselves. The test is what the arrangement makes possible and what it demands in return.
-
-A meal should not require a performance of ambition. A person who prefers to rest today hasn't thereby forfeited dinner. A person who wants paid work should have room for that too. The larger hope is that necessary effort becomes less exhausting and its benefits more widely available, giving different people more freedom to live differently.
-
-We will still need competence. Someone has to maintain the equipment, recognize a bad result, and know when to stop. Paying, supporting, and training those people belongs inside the program. Otherwise assistance for one household is being purchased with somebody else's hidden exhaustion.
-
-## Choose the boundary before the machine
-
-The Crucible breach began with an access failure. Other failures could begin with an unreliable answer, an unsuitable model, or a decision the system was never fit to make. Good intentions do not settle any of those questions.
-
-Give a tool work that can be checked before its mistakes become someone else's emergency. A model can propose a pickup schedule; a coordinator checks the vehicles, recipients' needs, and actual commitments. A model can help find a relevant passage; a person verifies the source. A model's confident explanation doesn't authorize it to decide that food is safe or machinery is ready to run.
-
-Local, offline, and air-gapped describe different things. Local means the work runs on nearby equipment. Offline means it works without the relevant connection. An air gap requires deliberate separation from the network in question. None of those terms establishes that the software is accurate or the data safe. Transfers, updates, permissions, and the information collected still need attention.
-
-The co-op learned something else: a design can fail by depending too much on one careful person. Another review, a smaller collection of private information, and a separation between public and private services would each have addressed part of their exposure. The repair belongs to the whole arrangement, not merely to Elijah's promise to be more careful.
+A meal shouldn't require a performance of ambition. A person who wants to rest today hasn't forfeited dinner. A person who wants paid work should have room for that too. And somebody still has to maintain the equipment, recognize a bad result, and know when to stop. Paying, training, and supporting those people belongs inside the program. Otherwise one household's help is being bought with somebody else's hidden exhaustion.
 
 ## One request, all the way through
 
-Before buying a machine, write down one request a person should be able to make. For example: “I need meals I can heat with one working hand, and I can't pay for them this month.”
+Before buying a machine, write down one request a person should be able to make. For example: "I need meals I can heat with one working hand, and I can't pay for them this month."
 
-Follow that request through the proposed service. Who receives it? Who confirms supplies and appropriate preparation? Who pays the people doing the work? How does the meal arrive? Who responds if it doesn't? Put the proposed tool beside the task it can actually help perform.
+Follow that request through the service. Who receives it? Who confirms the food and how it's prepared? Who pays the people doing the work? How does the meal arrive? Who answers if it doesn't? Then put your proposed tool next to the one task it can actually help with. Check the route with a willing provider and with someone whose life the request describes. They may show you the missing piece is a kitchen slot, a driver, a phone number somebody answers, or a funding agreement. A robot may fit at one of those points as it gets more capable.
 
-Then check the route with a willing provider and a person whose circumstances the request represents. They may show you that the missing piece is a kitchen slot, a driver, a phone number someone answers, or a funding agreement. A robot may become useful at one of those points as its capabilities develop.
-
-That is a court worth building: assistance with a destination in somebody's life.
+That's a court worth building: help with a destination in somebody's life.
 
 ---
 
 ## Precedent P-14: Quartz and the Assembly Line (Switzerland, 1962 to 1983)
 
-Quartz technology and industrial change put Swiss watchmaking under substantial pressure. The Swiss industry was also involved in developing quartz; it was not a single bloc that refused the technology out of purity.
+The story everyone tells is that the Swiss, masters of mechanical watchmaking, sneered at the quartz watch and got wiped out by it. The real story is stranger and more useful.
 
-The dates complicate the familiar story of a tradition surprised by electronics. A consortium of Swiss manufacturers established the Centre Electronique Horloger in 1962; its quartz wristwatch prototypes followed in 1967. Swiss researchers were helping make the change. [CSEM, Historical Timeline](https://www.csem.ch/en/history-and-start-ups)
+The Swiss helped invent quartz timekeeping. A consortium of Swiss watchmakers founded the Centre Electronique Horloger in 1962, and its quartz wristwatch prototypes followed in 1967. [CSEM, Historical Timeline](https://www.csem.ch/en/history-and-start-ups) Seiko put the first quartz wristwatch on sale in 1969. Then came the crunch, from several directions at once: cheap quartz movements, a strong franc, and an industry built around costly mechanical production. [Seiko Museum, The Quartz Crisis and Recovery of Swiss Watches](https://museum.seiko.co.jp/en/knowledge/relation_11/) Between 1970 and the mid-1980s, Swiss watch employment fell from roughly ninety thousand to about a third of that, and the number of firms collapsed with it. Knowing about the technology wasn't enough. The business around it had to change, and for a lot of people it changed too late.
 
-The 1983 Swatch paired a different product with different production: fifty-one components, assembled on automated lines. That detail matters more than a slogan about embracing the future. Product design and the method of assembly changed together. [Swatch Group, Company History](https://www.swatchgroup.com/en/swatch-group/swatch-group-history)
+What saved the remnant was a kind of heresy. In 1983 the merged Swiss group launched the Swatch: a cheap, plastic, fifty-one-component quartz watch, assembled on automated lines. [Swatch Group, Company History](https://www.swatchgroup.com/en/swatch-group/swatch-group-history) It took the new technology to the bottom of the market, and the company that grew around it went on to own some of the most famous names in mechanical watchmaking at the top. The quartz Trojan horse helped pay for the craft it seemed to threaten.
 
-The later Swatch story offers an example of adaptation through products, manufacturing, and restructuring. It should not be made into a claim that only one strategy has ever worked or that success at the industry level erased the losses experienced by workers.
+**The mechanism.** Survival came from adopting the new technology on your own terms and using its output to support what you meant to keep. None of that erased the losses of the tens of thousands of workers who didn't make it through, and a big firm's options are never an individual's.
 
-**The mechanism.** An industry can combine technical change, restructuring, and differentiated products. That does not establish one universally successful strategy or erase workers' losses.
-
-**The rule.** Examine specific adaptations and their costs.
+**The rule.** Don't beat the new machine by refusing it. Use it to pay for what you actually want to keep.
 
 **The practice.**
 
-1. Identify the part of a craft people still choose to pay for.
-2. Ask which tools support it and which pressures threaten it.
-3. Do not infer an individual worker's options from a large firm's resources.
+1. Name your mechanical movement and your Swatch. On one line, write the thing you refuse to lose: the craft, the practice, the standard of work that's actually you. On the next line, sketch the cheap, fast, machine-assisted offering that could fund it. If the second line feels like a betrayal of the first, you've drawn it correctly.
+2. Set the subsidy ratio and stick to it. Decide what fraction of your machine-assisted income funds the protected craft, time, tools, or savings, and write it down like a tax you owe yourself. Leverage without allocation is just drift.
+3. Refuse purity tests, including your own. The next time someone says "real professionals don't use AI," translate it into 1975: "real watchmakers don't do quartz." Then remember that the Swiss were building quartz watches the whole time, and still nearly lost the industry. Adopting the tool is necessary. It isn't sufficient.
 
 ---
-

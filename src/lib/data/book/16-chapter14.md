@@ -10,13 +10,14 @@
 
 **In this chapter:**
 
-- Local capacity still has outside dependencies.
-- An interruption plan needs a confirmed alternative.
-- Communication tools should match the messages they carry.
+- Every local business you lean on is quietly load-bearing. You find out which ones the week the platform takes them.
+- Collapse is visible for months before it happens: thinning shelves, shortening hours, the kid let go. The gradual part is a readable signal. Read it out loud.
+- If you see it coming, say so. A warning can't always save the thing, but it can buy a person the difference between six months of choosing and six months of hoping.
+- Shorter loops, not no loops. Every local answer still has outside dependencies; name them.
 
 ---
 
-Every controller the co-op ever shipped had parts from Kowalski's in it. The local counter they used was Frank's.
+Every controller the co-op ever shipped had parts from Kowalski's in it. Whenever anybody in the shed said *from town*, the counter they meant was Frank's: third bay off the square, wood worn pale where four generations of forearms had rested on it, a bell over the door that Frank's grandfather had hung, and Frank himself, who could tell you the torque spec for a head bolt from memory and would carry a two-dollar part out to your truck like it was an appliance.
 
 ![An older hardware-store owner wearing glasses and a canvas work apron](/book-images/ch14-frank.png)
 
@@ -30,7 +31,7 @@ He said nothing, and he could give you the reasons the way you can give directio
 
 The paper on the door, when it came, was laminated. Which meant Frank had known long enough to laminate it.
 
-The same week, with the timing this period of history seemed to specialize in, Elijah got an email with the subject line "checking in," from Devendra. Claypot had cut the whole division. The Companion team and every human who had been augmented-not-replaced alongside it, gone in one restructuring memo, the model retained, its trainers not. On the phone Devendra kept starting a sentence, pausing, and starting somewhere else. Elijah recognized the effort of trying to sound all right. "You'll appreciate this," Devendra said, with a laugh that wasn't one. "They kept the very good autocomplete." And then, quietly, the real question: "At the coffee machine. You knew. How?"
+The same week, with the timing this period of history seemed to specialize in, Elijah got an email with the subject line "checking in," from Devendra. Claypot had cut the whole division. The Companion team and every human who had been augmented-not-replaced alongside it, gone in one restructuring memo, the model retained, its trainers not. On the phone Devendra kept starting a sentence, pausing, and starting somewhere else, and his voice had a hum in it that Elijah recognized, because Marta had taught him its name: the sound of a man reading the news all day because the news is the only place his old life still exists. "You'll appreciate this," Devendra said, with a laugh that wasn't one. "They kept the very good autocomplete." And then, quietly, the real question: "At the coffee machine. You knew. How?"
 
 "I didn't know," Elijah said. He almost followed it with the arithmetic, with *you told me I'd calibrate*, with all the sentences that would turn another man's lost job into his own vindication. He looked at Frank's closing notice on the screen and let them pass. "I was frightened. I still am sometimes. What do you need this week?"
 
@@ -40,11 +41,11 @@ Then Elijah made the harder visit, the two-mile one. He drove to the square with
 
 Frank looked at the chart for a while. "Fella in Hemingway gets asked how he went bankrupt," he said, taping another box. "Says: two ways. Gradually, then suddenly." He set the tape gun down. "The gradually part, I kept telling myself it was weather. Turns out it was the climate." He tapped the curve's long slow shoulder, the nine visible months of it. "Wouldn't have saved the store, son. The store was dead the day Memphis bought my distributor. But I'd have liked to have had this in March. I'd have chosen some things, instead of hoping them."
 
-At Friday dinner Elijah said it all again, chart and confession both, in front of everyone, because that had become the co-op's immune system and he trusted it now. Denny, whose chapter this properly is, gave the verdict, and it had edges. "You of all people," he said. "You watched a man get optimized out by a spreadsheet he never saw, and you had the spreadsheet." Then, because Denny's justice always had a second half: "So fix it forward. What's the co-op do about Frank?"
+At Friday dinner Elijah said it all again, chart and confession both, in front of everyone, because that had become the co-op's immune system and he trusted it now. Denny gave the verdict, and it had edges. "You of all people," he said. "You watched a man get optimized out by a spreadsheet he never saw, and you had the spreadsheet." Then, because Denny's justice always had a second half: "So fix it forward. What's the co-op do about Frank?"
 
-What the co-op did about Frank began with an offer, and Frank sent Reuben's first draft back with questions. They agreed a price for the stock the library could use, drew on the equipment reserve, and budgeted paid hours for someone to put the parts wall in order and keep it that way. The library's income and costs would get a monthly review. Frank wanted the figures as well as the welcome.
+What the co-op did about Frank began with an offer, and Frank sent Reuben's first draft back with questions. They settled on the inventory the tool library could use, bought at honest wholesale, not vulture pennies, the money real enough to matter, and a paid job, because the tool library had been running on a clipboard and an honor system and it turned out what it needed was a man who knew the torque specs from memory and where every last thing was. The library's income and costs would get a monthly review. Frank wanted the figures as well as the welcome.
 
-Then he hung his grandfather's bell over the tool library door. The first time it rang for a member checking out equipment, he looked up from the counter before he could help it. The store was gone. He was still doing work he knew, on terms he'd had a part in making. The parts still came from suppliers beyond the valley. The bell had moved two miles east.
+Then he hung his grandfather's bell over the tool library door. The first time it rang for a member checking out equipment, he looked up from the counter before he could help it. The store had not died after all. It had shrunk to fit through a doorway and moved two miles east. The parts still came from suppliers beyond the valley. Frank still knew which ones.
 
 ![A brass bell mounted above a worn wooden hardware-store door frame](/book-images/ch14-bell.png)
 
@@ -56,90 +57,118 @@ Denny asked Frank whether he wanted to tell the story on the channel. They recor
 
 ## The Foundations
 
+Walk into an American supermarket in the early twenty-first century and you were looking at a historical anomaly. Avocados from Mexico, blueberries from Peru, garlic from China, all side by side under bright lights, misted by little sprinklers, priced at a fraction of an hour's minimum wage.
+
+To most of us, that looked like peak civilization. To anyone who thinks in systems, it also looked like a high-wire act.
+
+## The just-in-time trap
+
+The supply chains behind those shelves run on *just-in-time* logistics: keep as little inventory as possible and let a constant stream of trucks act as a rolling warehouse. It's brilliantly efficient. It's also designed to have no slack.
+
+![The Logistic Shockwave: a four-day cascade from port disruption, to trucks rerouted, to shelves stripped clean, to systemic panic, with the local food buffer draining to zero alongside](/book-images/ch14-logistic-shockwave.svg)
+
+*The logistic shockwave. A system with no buffer passes every blow straight through to the shelves.*
+
+Every system trades between two things:
+
+- **Efficiency:** remove buffers, cut stock, streamline every path, maximize return today.
+- **Resilience:** keep backups, local storage, alternate routes, and some ability to take care of yourself.
+
+A grocery store with a few days of stock isn't a store a few days from famine; restocking usually works, and regional warehouses hold more. But when a disruption hits, whether a storm, a strike, a platform decision in Memphis, or a pandemic, the shelves are where you feel it first, and the people who feel it hardest are the ones with no pantry, no car, and no slack of their own. That's the trap. And it's why Frank's chart matters: the platform that bought his distributor didn't hate anybody. It optimized a ledger that didn't need a single-counter hardware store to survive, and the cost landed on people who weren't on that ledger.
+
 ## What the efficiency was for
 
-In Frank's case, the platform's decisions made sense on a ledger that didn't need his store to survive. The people losing a convenient counter, a repair, or a livelihood appeared somewhere else. That is the question worth asking whenever a process becomes more efficient: whose account shows the gain, and whose life absorbs the loss?
+That's the question worth asking whenever something gets more efficient: whose books show the gain, and whose life absorbs the loss? The machine didn't decide Frank's customers were expendable. People chose the terms of supply. Better logistics could just as easily have been pointed at keeping small places served. That would have taken resources and a reason to value the service. Calling the closure inevitable hides the decision that mattered.
 
-The machine didn't decide that Frank's customers were expendable. People chose the terms of supply. Better logistics could also have been directed toward keeping a small community served. That choice would have needed resources and a reason to value the service. Calling the closure inevitable would hide the decision that mattered.
+There's a cemetery full of companies that made the other choice, and the precedents at the end of this chapter walk you through it. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked "how do we protect what we sell?" The other asked "what are we actually for?" Your town, your trade, and your household are being asked that same question right now.
 
-The co-op couldn't restore everything Frank lost. It could recognize useful stock and knowledge, offer fair terms, and make room. A food baseline would add something different: Frank's ability to eat would remain secure even if nobody could offer him another job. We should want both a chance to contribute and protection when that chance isn't available.
+## The short loop
 
-## Shorter loops, visible dependencies
+The answer isn't to cut yourself off. It's to shorten the loops you depend on for survival, and to know exactly which long ones are left.
 
-A local supplier can make a repair easier. A regional grower can make a food partnership more direct. Neither relationship makes the community independent of everything outside it. Replacement parts, seed, transport, fuel, expertise, and finance may still come from elsewhere.
+Think of global logistics as a long, fragile line stretched across oceans. A short loop is a tighter circle drawn around your region: food, repair, tools, and knowledge that can keep circulating when the long line hiccups. Not primitive isolation. Hyper-local design, applied to the physical world.
 
-Resilience means identifying what continues to work during a particular disruption, for how long, and with what support. It doesn't mean declaring every outside connection a weakness. Several different connections can be exactly what prevents one failure from becoming a crisis.
+A local supplier makes a repair easier. A regional grower makes a food partnership more direct. Neither makes a community independent of everything outside it: parts, seed, fuel, expertise, and money still come from elsewhere. Resilience means knowing what keeps working during a particular disruption, for how long, and with what support. Several different connections can be exactly what keeps one failure from becoming a crisis.
 
-## Follow the missing meal
+## Catch the food before it's thrown away
 
-Follow the food a household can actually obtain: what is available, how it reaches them, whether they can use it, and what changes during an interruption. A full warehouse they cannot reach doesn't answer the question. Neither does a reassuring inventory total if the delivery has stopped.
+Here's the most obvious short loop of all. By the US Department of Agriculture's estimate, somewhere between thirty and forty percent of the American food supply goes uneaten. [USDA, Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs) That estimate counts losses at the store and in our own kitchens: unsold surplus, cosmetic rejects, food past a sell-by date but perfectly good, leftovers nobody got to.
 
-Choose a real dependency with the people who operate the service. What happens if a vehicle is unavailable, a grower loses a crop, or a collection site closes? Name an alternative and confirm that it can help. Writing a second provider's name in a spreadsheet doesn't reserve its capacity.
+There's no such thing as waste, only food in the wrong place. And this one already has working law behind it. In 2016, France required larger supermarkets to donate unsold edible food instead of destroying it. California's SB 1383 went further, requiring large grocers, distributors, and food services to recover edible food that would otherwise be thrown away and get it to people who can use it. A community doesn't have to invent this. It can organize the pickups, the kitchens, and the cold storage that make recovery actually reach a plate, and ask its own local leaders to back it.
 
-A food baseline needs this kind of continuity. If the machine is down on Tuesday, the person still needs Tuesday's dinner. Maintain a way to provide it while repairs happen, and be honest about the coverage you have actually arranged.
+Turn a leak in the long system into a local reserve, and you're feeding people from the surplus of the very system that told them they were redundant.
 
-## Tools for coordination
+## The municipal mesh
 
-Use communication suited to the message. A compact request or status update is a different requirement from a video, a reference library, or ordinary voice service. Check each function under the conditions where people will use it. A diagram with one elegant line between every house may conceal several different communication jobs.
+You can't run a short loop if you can't talk to each other. Most of our coordination rides on cell towers and data centers we don't control, which is fine until a tower goes down in a storm or a service decides to shut something off.
 
-Existing phones, printed lists, and face-to-face arrangements can be part of the system. People outside a custom network still count. If joining the food service requires buying a radio, the access design needs another look.
+![Centralized versus decentralized mesh communications: a single tower serving three users fails entirely when broken, while a mesh of nodes routes around any dead node](/book-images/ch14-mesh-comms.svg)
 
-The same discipline applies to logistics software. A route that is short on a map may not work for a driver or a recipient. Verify constraints with the people involved. Let the computer suggest; let reality correct.
+*Two topologies for a town. The tower is a single point of failure; the mesh treats damage as a routing problem.*
+
+A mesh network is built from small, low-power radio nodes spread across an area, often LoRa radios running open software like Meshtastic.
+
+- **Self-healing.** Every node is both a radio and a router. If one fails, messages hop around it.
+- **Independent.** It works locally without the internet, cell service, or satellites.
+- **Low power.** A node can run for a long time on a small solar panel and battery, drawing less than a nightlight.
+
+Let's be honest about the limits. A low-power mesh won't stream video or move big files. It's a nervous system for short messages: "Who has surplus potatoes today?" "The Hollis road is flooded." "Delivery's running an hour late." "Checking in, all fine here." Use communication that fits the message, keep ordinary phones and a printed contact list in the plan, and never make joining the food service depend on buying a radio.
+
+## Build the loop
+
+1. **Map the surplus near you.** Which farms, grocers, bakeries, and restaurants have edible food they can't sell? Ask them what would make donating it easy, and connect them with a kitchen or pantry that can take it.
+2. **Put up the first nodes.** With a few neighbors, set up a handful of mesh radios, test the range, find the dead spots, and keep a printed directory for the people who'll never own one.
+3. **Pool the ground and the tools.** One household with a lawn has an ornamental patch of grass. Five households pooling the same land can have a real market garden and a shared tool shed.
+4. **Name one dependency and one backup.** Pick a real link in your local food route, a van, a grower, a pickup site, and confirm, with an actual person, what happens if it fails. A second name in a spreadsheet doesn't reserve anybody's capacity.
+
+The transition didn't just stress our supply chains. It tested our belief that we can get by without each other. Stop watching the horizon for the next cargo ship and start looking at your neighbor.
 
 ## Give people time to choose
 
-Frank's complaint about the withheld chart is exact: he wanted to choose some things instead of hoping them. Security serves that purpose too. It gives someone more time to judge an offer, learn a different task, or mourn a place without every decision being made under immediate threat.
+Frank's complaint about the withheld chart was exact: he wanted to choose some things instead of hoping them. Security buys that. It gives a person time to judge an offer, learn a new trade, or mourn a place without every decision being made under immediate threat.
 
-A company can have reserves, several lines of business, and people paid to study a transition. A worker may have a final paycheck and next month's rent. Telling both to adapt as if they have the same options misses the work society has to do.
-
-For the immediate food service, map one route from supplier to recipient. Find the point where an interruption would leave someone without a usable alternative. Ask the partners what a realistic backup requires, including who pays for keeping it available. A backup that exists only when someone happens to have spare time isn't the same promise as a funded service.
-
-Then make the unresolved part visible to the people with the power to help resolve it. Local work can reveal what larger provision is needed. It shouldn't become a polite way of telling a neighborhood to absorb every failure on its own.
+A company can have reserves, several lines of business, and people paid to study a transition. A worker may have a last paycheck and next month's rent. Telling both of them to "adapt" as if they had the same options misses the work a society has to do. A food baseline would give Frank something the co-op couldn't: the certainty that he'd eat even if nobody could offer him another job.
 
 ---
 
-## Precedent P-17: The Company Under Pressure (1975 to 2013)
+## Precedent P-17: The Graveyard of the Unconvinced (1975 to 2013)
 
-Kodak developed digital-camera technology and sold digital products, yet technical participation did not prevent financial crisis. Its own milestones record emergence from Chapter 11 in 2013. The company continued after a substantial restructuring. [Kodak, Milestones](https://www.kodak.com/en/company/page/milestones/)
+Four headstones, one epitaph. Every company below *saw the wave*, and died or nearly died anyway, because seeing isn't the hard part.
 
-The earliest device makes the distinction tangible. In December 1975, Kodak engineer Steven Sasson made a black-and-white digital photograph using a system assembled from existing technologies. Its hundred-by-hundred-pixel image took twenty-three seconds to record on a small magnetic cassette. Reading it for display on a television took another twenty-three seconds. A working demonstration existed inside Kodak decades before its bankruptcy. It was also a slow, limited prototype, requiring further development before ordinary consumers could use such a system conveniently. [Swiss Camera Museum, 1975: The Invention](https://www.cameramuseum.ch/en/discover/permanent-exhibition/the-digital-revolution/1975-the-invention/)
+**Kodak, 1975.** A young Kodak engineer named Steven Sasson built one of the first digital cameras: about eight pounds, a hundred-by-hundred-pixel black-and-white image, twenty-three seconds to record each picture to a cassette tape. [Swiss Camera Museum, 1975: The Invention](https://www.cameramuseum.ch/en/discover/permanent-exhibition/the-digital-revolution/1975-the-invention/) He showed management. Their response, in his own later telling: "That's cute, but don't tell anyone about it." Kodak wasn't blind after that. It developed digital technology for decades and by 2011 had shipped its hundred-millionth digital still camera. But its profits lived in film, paper, and chemistry, and digital cameras never replaced them. Kodak filed for bankruptcy in 2012 and emerged in 2013, much smaller, having sold off much of what it had built. [Kodak, Milestones](https://www.kodak.com/en/company/page/milestones/)
 
-The distance from that cassette to the company's later troubles was not empty. Kodak's timeline records shipment of its hundred millionth digital still camera in 2011. It also records the subsequent withdrawal from digital capture, asset sales, and the sale of consumer imaging patents during reorganization. These are a company's selected milestones, not a complete explanation of its finances. They are enough to disprove the simpler tale that Kodak merely refused to make digital cameras. [Kodak, Milestones](https://www.kodak.com/en/company/page/milestones/)
+**Sears, 1993.** For generations Sears mailed a catalog of everything to millions of homes and delivered to the middle of nowhere. You could buy a house from it (P-16). In 1993, with the catalog bringing in billions but losing money, Sears shut it down and dismantled the machine behind it. Amazon was founded the following year. When Sears wanted online commerce later in the decade, it had to rebuild the organ it had just amputated.
 
-The useful question is harder than whether its leaders had heard of digital photography. What changes when customers buy a different product, revenue moves elsewhere, and an established organization has to support the transition? Recognizing a technology, offering it, and sustaining a business through it are distinct accomplishments.
+**Blockbuster, 2000.** Netflix's founders flew to Dallas and offered their company to Blockbuster for fifty million dollars. By their account they were laughed out of the room; Blockbuster's side remembers it differently, and the outcome isn't disputed. Blockbuster earned a big share of its profit from late fees, which meant it was paid, in part, by its customers' resentment, and Netflix's pitch was the removal of that resentment. Blockbuster went bankrupt in 2010.
 
-Sears, Blockbuster, and Borders often join Kodak in the same cautionary list. The names don't become one causal history by sharing a paragraph. For a worker, the immediate lesson is that even a company visibly investing in new technology cannot promise that every existing job will survive. Security needs a foundation beyond that promise.
+**Borders, 2001.** The bookstore chain handed its entire online operation to Amazon. Every Borders web customer was an Amazon customer wearing a Borders name tag. Borders took its website back in 2008 and was liquidated in 2011.
 
-**The mechanism.** Technical awareness, investment, business structure, and financial survival are separate facts. Adoption does not guarantee success, and bankruptcy does not necessarily mean disappearance.
+**The mechanism.** None of these companies lacked information. Kodak *built* the prototype; Sears *owned* the playbook; Blockbuster *heard* the offer; Borders *signed* the partnership. An incumbent rarely dies because it can't see the wave. It dies because it's holding too much beachfront to admit the tide is real, and because awareness, investment, and a business that survives the change are three different accomplishments.
 
-**The rule.** Verify what a company actually did before using it as a warning.
+**The rule.** Verify what a company actually did before you use it as a warning. Then find the line item where the old world charges people for its own inconvenience, late fees, gatekeeping, distribution monopolies. That line item is a countdown clock.
 
 **The practice.**
 
-1. Check an original corporate or archival source for one familiar story.
-2. Separate the technology decision from the financial outcome.
-3. Rewrite your lesson to fit the narrower record.
+1. Run the beachfront audit on yourself, in writing, this week. One column: everything you'd have to admit is depreciating if the wave is real, a skill, a role, a business line, a credential. Second column: what admitting it would cost you today. You can't divest what you refuse to appraise.
+2. Find your Sasson drawer. Somewhere in your life is the prototype that got the "don't tell anyone" treatment: the side project, the pivot, the skill you shelved because it threatened your current income. Take it out. Give it one honest weekend and one real test with real people.
+3. List the countdown clocks in your industry: every place customers pay for the incumbent's inconvenience. For each, ask whether your paycheck depends on it, and whether your next project could delete it. The first answer tells you when to move. The second tells you where.
 
 ---
 
 ## Precedent P-18: The Mirror Twin (Tokyo, 2000s)
 
-Fujifilm applied capabilities associated with its photographic business to other fields as demand for film changed. The instructive move was to ask what the company knew how to do beneath the name of the product it sold. Capabilities could have uses beyond photographic film.
+One company faced Kodak's extinction event and lived, which makes it the most important entry in the graveyard: it shows the deaths involved choices.
 
-Its corporate history dates the peak of demand for photographic film to 2000 and describes the 2004 VISION75 plan as an effort to identify other uses for accumulated technology. There was already more to the company than film. In 2001, it increased its holding in Fuji Xerox from half to three-quarters, consolidating an established office-equipment business. Reinvention began with assets, relationships, and several lines of activity already in place. [Fujifilm, Corporate History](https://holdings.fujifilm.com/special/90th/en/history/)
+Fujifilm's own history puts the peak of world demand for photographic film at 2000. Then demand fell off a cliff, on the same schedule that hit Kodak. [Fujifilm, Corporate History](https://holdings.fujifilm.com/special/90th/en/history/) Instead of defending the product, Fujifilm asked what it was actually good at: thin-film coatings, handling tiny particles, collagen chemistry (film is mostly gelatin), keeping photographs from fading. Its 2004 plan set out to find other uses for that accumulated know-how. It already had more than film to stand on, including its office-equipment business, and it aimed its chemistry at new targets: materials for flat-panel screens, healthcare, and, in 2007, a cosmetics line called ASTALIFT that the company ties directly to its photographic research. [Fujifilm, ASTALIFT History](https://ls-jp.fujifilm.com/astaliftbrand/about/history/)
 
-One visible result was the ASTALIFT skincare line, launched in 2007. The company's account connects its cosmetics work to knowledge developed for photographic materials, including collagen and methods for handling very small particles. The connection is more precise than a film company deciding to become something fashionable: particular knowledge was applied to a different product. The launch establishes a commercial application, not proof of every claim made for the products. [Fujifilm, ASTALIFT History](https://ls-jp.fujifilm.com/astaliftbrand/about/history/)
+**The mechanism.** Kodak believed it was in the film business. Fujifilm decided it was in the applied-chemistry business. One defined itself by a product, which the wave destroyed. The other defined itself by capabilities, which the wave couldn't touch.
 
-That is a useful question for a repair shop, a cooperative, or a worker too. Frank's knowledge didn't vanish when his store closed. But recognizing a transferable skill and finding a supported way to use it are different steps. The comparison becomes cruel when we offer a corporation's reinvention as advice while withholding the resources that made a transition possible. A person deserves somewhere secure to stand while the next use is found.
-
-**The mechanism.** Existing capabilities may find new applications, but firms facing similar shocks can have different assets and constraints. Comparison is not a controlled experiment.
-
-**The rule.** Look for transferable skills without promising effortless reinvention.
+**The rule.** When the wave comes for your job, don't only ask how to save the product. Ask what you're actually good at, and where that skill is needed next. And be honest about the difference between a corporation's reinvention and a person's: Fujifilm had reserves, labs, and other businesses to carry it through. A person deserves somewhere secure to stand while the next use is found.
 
 **The practice.**
 
-1. List a skill you can demonstrate.
-2. Ask someone in another field where it would be useful.
-3. Test one small application before committing to a costly pivot.
+1. Write your capability inventory tonight: one page, no job titles or products allowed. Fujifilm's list said collagen chemistry and thin-film coatings, not "film." Yours might say explaining hard things simply, calming angry people, seeing what's wrong with a system, making physical things precisely, earning trust fast.
+2. For each capability, name two places it could be useful that aren't your current industry. You're not committing to anything. You're drawing the map you'll need on short notice, while you can still draw it calmly.
+3. Test one small application before you commit to a costly pivot. And set an annual date to ask the Fujifilm question formally: has the wave moved, and which capability do I strengthen next?
 
 ---

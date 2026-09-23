@@ -7,7 +7,7 @@
 
   <rect x="1" y="1" width="858" height="638" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
   <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE SOIL FOOD WEB ENGINE</text>
-  <text x="40" y="74" font-size="12" fill="#64748b">the biological refinery that replaces the fertilizer subscription</text>
+  <text x="40" y="74" font-size="12" fill="#64748b">the biological refinery under every garden</text>
   <line x1="40" y1="88" x2="500" y2="88" stroke="#1e293b" stroke-width="2"/>
 
   <!-- sun -->
@@ -49,7 +49,7 @@
   <!-- stage 4 -->
   <rect x="240" y="544" width="380" height="64" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
   <text x="430" y="572" font-size="16" font-weight="600" fill="#f59e0b" text-anchor="middle">FED PLANTS, LIVING SOIL</text>
-  <text x="430" y="594" font-size="12" fill="#94a3b8" text-anchor="middle">zero chemical fertilizers needed</text>
+  <text x="430" y="594" font-size="12" fill="#94a3b8" text-anchor="middle">fewer bought inputs needed</text>
 
   <!-- side loop -->
   <path d="M 620 576 L 744 576 L 744 228 L 628 228" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aa)"/>

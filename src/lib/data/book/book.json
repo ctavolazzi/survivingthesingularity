@@ -2,9 +2,9 @@
   "title": "Surviving the Singularity",
   "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
   "author": "Christopher Tavolazzi",
-  "version": "0.7.5.1",
+  "version": "0.8.1",
   "released": "0.7.5",
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-09-22",
   "sections": [
     {
       "id": "introduction",
@@ -58,12 +58,12 @@
     },
     {
       "id": "chapter6",
-      "title": "Chapter 6: The Singularity Is a Done Deal",
+      "title": "Chapter 6: Is the Singularity a Done Deal?",
       "file": "08-chapter6.md"
     },
     {
       "id": "chapter7",
-      "title": "Chapter 7: The Battle Lines: The Entitled vs. The Ready",
+      "title": "Chapter 7: Work, Loss, and the Cooperative Response",
       "file": "09-chapter7.md"
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "id": "chapter11",
-      "title": "Chapter 11: Using the Tech to Your Advantage",
+      "title": "Chapter 11: King and Queen of Your Own Robotic Court",
       "file": "13-chapter11.md"
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "id": "chapter13",
-      "title": "Chapter 13: The Shouse Protocol",
+      "title": "Chapter 13: Shelter Worth Having",
       "file": "15-chapter13.md"
     },
     {
@@ -128,12 +128,12 @@
     },
     {
       "id": "conclusion",
-      "title": "Conclusion: The 2027 Tipping Point",
+      "title": "Conclusion: What If It All Goes Right?",
       "file": "21-conclusion.md"
     },
     {
       "id": "appendix-a",
-      "title": "Appendix A: The Municipal Autonomy Code",
+      "title": "Appendix A: Questions for a Food Baseline",
       "file": "22-appendix-a.md"
     },
     {
@@ -153,7 +153,7 @@
     },
     {
       "id": "appendix-e",
-      "title": "Appendix E: The Cyberdeck",
+      "title": "Appendix E: Computing You Can Use",
       "file": "26-appendix-e.md"
     }
   ]

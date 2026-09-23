@@ -2,82 +2,49 @@
 
 ![Honda ASIMO humanoid robot, 2001](/book-images/intro-asimo.jpg)
 
-*ASIMO, the 2001 model, photographed at Honda Welcome Plaza Aoyama in 2023. The weirdness arrived on schedule. (Liauzh, CC BY-SA 4.0, via Wikimedia Commons)*
+*ASIMO, the 2001 model, photographed at Honda Welcome Plaza Aoyama in 2023. An earlier chapter in the history of robotics. (Liauzh, CC BY-SA 4.0, via Wikimedia Commons)*
 
 
 > *"Buy the ticket, take the ride."*
-> Hunter S. Thompson, *Fear and Loathing in Las Vegas* (1971)
+> Hunter S. Thompson, a saying attributed by his publisher
 
-So the robots have taken over. Congratulations! The Singularity is upon us.
+So the robots are coming for the jobs. Congratulations, apparently. Now we get to decide what we mean by progress.
 
-Popular media tells us we’ll be fending off hordes of Terminator bots or fighting for food in the era of societal collapse and climate famines. That’s one way it can go. It is not the only way.
+Popular stories give us plenty of machines to fear and plenty of ruined worlds to walk through. I want room for a different question: what useful work could these tools do for people who are tired of being afraid?
 
-This book is about the other ways.
+This is an optimist's field manual. Optimism here means wanting a better outcome enough to investigate how it might work. It doesn't mean calling every concern cowardice or every announcement a breakthrough. You can be hopeful and still ask who gets the food when the machine finishes its shift.
 
-**Here’s the neat trick of this moment: if your entire reality is a construct of your focus, then reframing your thinking is your first and most important tool. True survival begins when you reclaim agency over your own cognitive architecture and realize that nothing can own your mind unless you allow it.**
+Food is the first assignment. Shelter, environmental repair, and health belong in the same larger project: use growing capability to make survival less precarious. The challenge is to organize the people, resources, and machines so that the useful result reaches someone who needs it.
 
-Right now, doesn’t it seem like everything is getting a lot weirder, a lot faster?
+You will meet people who are wrong about important things. Some of them notice. Some need help noticing. That's the point of the scenes. The co-op has skills Elijah doesn't have, and the people who receive help can tell it something a dashboard can't.
 
-This book, *Surviving the Singularity*, is a primer on what happens when the machinery that feeds, houses, and employs us starts improving faster than we can react, and on how to keep getting your needs met while it does.
+A change of attitude can give you room to act. It doesn't erase coercion, exhaustion, poverty, disability, or a broken piece of equipment. If a recommendation doesn't fit your life, that is information about the recommendation too.
 
-Look back across the last 100 years and you find a global society of excess and hyper-capitalism, continent-spanning wars, and weapons that threaten to eradicate all life on earth. Look around today and...well, it's pretty much the same, isn't it? The only thing that really seems to have changed is the pace at which nightmarish horrors beyond our comprehension are being unleashed.
+You don't need to become a different kind of person to enter this book. You don't need land, a server rack, or the spare cash to buy a robot. Start with curiosity. Ask somebody what they need. Find a way to help that they actually want. Keep enough attention free to notice whether it helped.
 
-Wait, that's not quite right is it? Some things have definitely changed.
+The book is meant to give you something you can evaluate and criticize. If a claim is wrong, improve it. If a tool is unnecessary, put it down. If somebody is hungry, the argument has a destination beyond winning the argument.
 
-First, we've learned to automate both cognitive and physical labor. Second, we've concentrated wealth and power into the hands of a microscopic elite who own the servers, the algorithms, and the land. Third, we've created an environment where the average human is not just exploited, but is now becoming entirely redundant.
-
-And that's why you're reading this.
-
-Redundancy doesn't have to mean uselessness, or extinction.
-
-You are likely trying to figure out how to survive in a world that says it will soon no longer have a need for your labor. You are trying to find a way to feed yourself, shelter yourself, and maintain your sanity when the very systems we relied on for survival are collapsing under the weight of their own technological success.
-
-**We are no longer just passive victims of this obsolescence. We are learning to bypass their systems entirely through collaborative, real-world strategies.** 
-
-Here, you will learn about collective land ownership that buys back the soil under our feet, high-leverage content creation that turns our unique human narratives into a resource the algorithms can't replicate or control, and how to keep your head when everything feels completely overwhelming.
-
-**NOTE: this book is not intended as a guide on how to overthrow the system.**
-
-It is intended to help you reframe the way you relate to that system, and maybe even work to build better ones that provide food, housing, and good health for us all.
-
-It is about localizing our resources, building community, reimagining our infrastructure, and reclaiming autonomy in a world that wants to turn us into digital exhaust. **This book has evolved because we realized that surviving in the cracks of life isn't enough; you deserve the opportunity to reclaim your agency, establish a healthy community, and learn how to thrive on your own terms.**
-
-Over the next few chapters, we will explore:
-
-  - **The thermodynamics of survival** (and why energy is the only currency that actually matters).
-  - **The transition** from hyper-global supply chains to hyper-local regenerative networks.
-  - **The power of the soil:** Collective land ownership, protective trusts, and agricultural pooling.
-  - **Digital leverage:** Utilizing content creation, hyper-local media cells, and intellectual assets to build resilient community support ecosystems.
-  - **The tools of the trade:** mesh networks, open-source hardware, and decentralized energy.
-  - **The psychology of the collapse** (and how to keep your head, and reclaim your agency, when everyone else is losing theirs).
-  - **How to prepare yourself for what’s already here, and what’s coming.**
-
-You are not a passive observer of this transition. You are an active participant, even if your participation is currently limited to trying not to starve.
-
-So take a deep breath. Adjust your neural link electrodes. And let's get to work.
+Let's get to that destination.
 
 ---
 
 ## Precedent P-01: The Reading Rage (1790s)
 
-In the 1790s, respectable society identified a technology that was destroying the young, and especially young women: the novel.
+In eighteenth-century Britain, the widening audience for novels provoked arguments about what reading did to people, particularly young women. Critics worried about morals, time, and the difference between life on the page and life in the room. Reading was becoming an activity a person could choose beyond the supervision of the people who thought they knew what was good for her.
 
-The printing economy had made books cheap enough for ordinary people, and circulating libraries had made them nearly free, and suddenly young women were doing something unsupervised with their minds for hours at a time. The elders were horrified. Reverend Enos Hitchcock, 1790: "The free access which many young people have to romances, novels, and plays has poisoned the mind and corrupted the morals of many a promising youth." Doctors across Europe diagnosed "reading rage," "reading fever," "reading mania," an epidemic, blamed for promiscuity, ruined eyesight, bad posture, and moral collapse. In Sheridan's play *The Rivals*, a circulating library is "an evergreen tree of diabolical knowledge." Reading for pleasure was the brain-rot of 1790.
+Ana Vogrinčič's study of the English novel-reading panic follows those disputes through the culture of the period. The objections were not a single medical verdict or a view shared by everyone. They were arguments about a changing practice, its audience, and its authority. [Vogrinčič, The Novel-Reading Panic in 18th-Century England](https://hrcak.srce.hr/en/clanak/49661)
 
-![A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more books stacked on the floor](/book-images/preface-reading-rage.png)
 
-*The epidemic, as the doctors saw it. Two hundred years later we hand this exact picture to children as the cure for their screens.*
+That is the useful comparison. A new practice can carry benefits and costs while also disturbing a familiar arrangement of authority. Ask which argument is being made. Someone may be describing harm, defending a position, or doing both. The work of criticism is to tell the difference.
 
-Sit with that. The activity we now prescribe to children as the antidote to their screens, the one stamped on posters in every school library, was condemned by an entire generation of authority figures in exactly the vocabulary now aimed at the tools in your pocket.
+**The mechanism.** A change in access can unsettle familiar authority. That possibility does not explain every concern, and it does not establish that every new medium is harmless.
 
-**The mechanism.** The panic was never about the books. A new technology had made someone the elders couldn't supervise powerful in a way they didn't understand, and the elders experienced that loss of supervision as moral decay. The panic protected no one. It only ever comforted the panicker.
-
-**The rule.** When you hear a technology described as rotting the minds of the young, translate it: *something just shifted power toward people who don't need permission anymore.* Then go find out what they know that you don't. That is what this book is for.
+**The rule.** Ask what changed and what the concern actually predicts.
 
 **The practice.**
 
-1. This week, write down the next three times you hear "AI is rotting people's brains," and note who said it. For each one, name the thing the speaker can no longer supervise. Not to mock them. To train your ear: the panic is a location signal, and it points at where the power went.
-2. Find one person at least fifteen years younger than you who uses AI daily, and ask for twenty minutes of watching them work. Say nothing for the first ten. Your assignment is not to evaluate them. It is to notice what they no longer ask permission for.
-3. Catch yourself doing it. The next time a tool you don't use makes you irritated on principle, write down what it would cost you to spend one hour learning it, and compare that to how long you have already spent being irritated. Do the cheaper thing.
+1. Ask a younger or older user to show you a useful workflow.
+2. Write down one benefit and one plausible cost.
+3. Test the specific concern instead of assigning the speaker a motive.
 
 ---

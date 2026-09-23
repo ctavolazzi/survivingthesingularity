@@ -2,18 +2,18 @@
 
 ![Peeling red bark of a Pacific madrone (Arbutus menziesii)](/book-images/ch00-madrone-bark.jpg)
 
-*Pacific madrone, mid-shed. It burns to the ground and comes back from the root. (Photo by and (c)2007 Jina Lee, CC BY-SA 3.0, via Wikimedia Commons)*
+*Pacific madrone, mid-shed. It can burn to the ground and come back from the root. (Photo by and (c)2007 Jina Lee, CC BY-SA 3.0, via Wikimedia Commons)*
 
 
 
-> *"The future is already here… it's just not evenly distributed."*
-> attributed to William Gibson, *The Economist* (2003)
+> *"The future is already here. It's just not very evenly distributed."*
+> William Gibson, saying discussed in his *Scientific American* interview (2011)
 
 The night Elijah Madrone ended three careers, he was drinking a four-dollar beer and trying to teach himself CSS.
 
 He didn't know it that night. That's the part that still gets him. There was no black hood, no signature on a layoff memo, no severance packet sliding across a desk. There was a sticky bar top at the Bear Flag, a laptop running on 40 percent battery, and a machine on the other side of the screen that was writing code faster than he could read it.
 
-His full name was Elijah Galen Madrone, and he'd heard every joke about it by the time he was nine. His grandmother used to walk him through the hills behind her place in Sonoma County and put his hand flat against the trunks of the madrone trees, the ones with the smooth red bark that peels back every summer like the tree is shrugging off its own skin. *That's your tree,* she told him. *It burns to the ground and comes back from the root. Remember that.* He was a kid; he didn't remember it. It took about thirty years and the end of the world as he understood it before the lesson came back around.
+His full name was Elijah Galen Madrone, and he'd heard every joke about it by the time he was nine. His grandmother used to walk him through the hills behind her place in Sonoma County and put his hand flat against the trunks of the madrone trees, the ones with the smooth red bark that peels back every summer like the tree is shrugging off its own skin. *That's your tree,* she told him. *It can burn to the ground and come back from the root. Remember that.* He was a kid; he didn't remember it. It took about thirty years and the end of the world as he understood it before the lesson came back around.
 
 The other meaning of his name he'd figured out on his own, at Claypot, in his second year there, sitting in a planning meeting where a vice president explained the team's new charter using the phrase *execution surface*. Elijah had written in his notebook, in block letters, pressing hard enough to emboss the next three pages:
 
@@ -45,7 +45,7 @@ PorusAI had no such patience.
 
 ---
 
-PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Everyone in Elijah's field knew the lineage by heart: in 2017, researchers at Google had published a paper with the almost taunting title "Attention Is All You Need," and quietly replaced the engine of machine intelligence. Before that paper, machines read the way you read, one word at a time, in order, forgetting the beginning of a long sentence by the time they reached the end. The Transformer architecture let a machine attend to *everything, everywhere, at once*, every word weighing every other word simultaneously, and, crucially, it let the whole process run in parallel across the biggest computers on Earth. Google wrote the physics. Then they largely sat on it.
+PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Elijah kept returning to the 2017 paper “Attention Is All You Need.” Its account of attention and parallel training gave him something technical to study beneath the excitement. It didn't tell him what every future model would be able to do. The demonstrations kept giving him new questions anyway.
 
 PorusAI built the bomb.
 
@@ -117,7 +117,7 @@ Elijah smiled and stood up into the handshake, and some part of him began, quiet
 
 Three glasses up, catching the neon.
 
-Elijah's arm lifted his own glass because forty years of social training will run the body without any help from the soul. He heard himself say something. The beer was cold and tasted like nothing.
+Elijah's arm lifted his own glass because a lifetime of social training will run the body without any help from the soul. He heard himself say something. The beer was cold and tasted like nothing.
 
 The kid who did their listing videos. Elijah didn't know him. He knew him completely. He'd been him: some twenty-something with a camera and a laptop full of cracked software and a rate he was embarrassed to quote, stringing together realtors and restaurants and the occasional wedding into the shape of one income, telling his parents it was all going to compound into something. That kid had lost his anchor client this week and didn't know yet what Elijah knew, which was that it wasn't a client, it was the tide.
 
@@ -127,7 +127,7 @@ He'd gotten one thing right, at least. They saw.
 
 His mind went where it would live from then on: down the list. Every graphic designer he'd ever split a bill with. Every session player, every wedding photographer, every copywriter, every voice actor, every friend who'd ever cobbled a living out of the exact set of tasks he had just watched a text box perform for twenty dollars a month. People for whom the economy was already a rigged carnival game. People with no margin, no cushion, no lobbyist, the first people every wave hits and the last people anyone rebuilds for.
 
-The realtors were not going to hire anyone to manage the machine. Nobody was going to hire anyone to manage the machine. That fantasy died at the Bear Flag between one round and the next. They were going to use the machine to replace everyone it could replace, as fast as it could replace them, and the machine was getting better every quarter, and he knew, he had *seen the roadmaps*, how much better, how much faster, this was going to get.
+The realtors were not going to hire anyone to manage the machine. At that moment, it felt to him as though nobody was going to hire anyone to manage the machine. That fantasy died at the Bear Flag between one round and the next. They were going to use the machine to replace everyone it could replace, as fast as it could replace them, and the machine was getting better every quarter, and he knew, he had *seen the roadmaps*, how much better, how much faster, this was going to get.
 
 It was the most significant thing that had ever happened in his lifetime, and it had just happened *to* his own community, *through* his own hands, in a bar, to a toast.
 
@@ -157,22 +157,27 @@ You're holding it.
 
 ---
 
-*The rest of this book is the manual Elijah wished someone had handed him that night at the Bear Flag, what's actually happening, in what order, and what people like us can build while it does.*
+*The rest of this book is the manual Elijah wished someone had handed him that night at the Bear Flag, what might change, which choices still belong to us, and what people like us can build while it does.*
 
 ---
 
 ## Precedent P-02: The Toy at the Fair (Philadelphia, 1876)
 
-At the 1876 Centennial Exhibition, the machine everyone crossed the country to see was the Corliss engine: 1,400 horsepower, four stories tall, the certified future of American industry. President Grant himself threw the lever. In a side gallery, a Boston elocution teacher named Alexander Graham Bell was demonstrating a gadget the judges, wilting in the heat, had nearly put off until tomorrow: a wooden box that carried a human voice down a wire.
+At Philadelphia's Centennial Exhibition in 1876, Alexander Graham Bell demonstrated a telephone. A letter to his parents, written on June 27, records his account of the demonstration and the attention it received. The large Corliss steam engine was another attraction at the exhibition. Visitors could encounter an established form of industrial power and a much newer way to communicate in the same sprawling fair. [Bell to his parents, June 27, 1876, Library of Congress](https://www.loc.gov/item/magbell.00500228/)
 
-Sir William Thomson, later Lord Kelvin, the most famous physicist alive, stopped, listened, and called the telephone the greatest marvel he had seen in America. Almost nobody else at the fair agreed. Western Union, offered Bell's patents around that time, passed on them, and spent the following decades watching the toy from the side gallery swallow the communications empire whole. The steam engine got the applause. The telephone got the century.
+The telephone's importance wasn't exhausted by the moment someone heard a voice through it. A demonstration could establish that an effect was possible. Ordinary use would require equipment, connections, operation, and people willing and able to use the service.
 
-**The mechanism.** At every demonstration there are two audiences standing in the same room: the crowd measuring the machine against the present, and the handful measuring the present against the machine. The crowd asks whether it is impressive. The handful asks what dies when it becomes boring.
+That gap is the part Elijah missed in the bar. He had shown the realtors a capability. He had barely begun to think about the arrangements that would grow around it, or the people who would bear their costs.
 
-**The rule.** You just watched a demonstration, at a bar, on a Tuesday. Do not ask how impressive the machine was. Ask what the world looks like when what it did is unremarkable, and price your next decade off that answer, because that is the calculation the other audience is already running.
+**The mechanism.** A demonstration can reveal an unfamiliar use. Adoption still depends on reliability, infrastructure, cost, and demand.
+
+**The rule.** Separate a compelling demonstration from a delivered service.
 
 **The practice.**
 
-1. Run the boring test on the last AI demo that impressed you. Assume the capability is free, invisible, and everywhere within thirty-six months. Write down which of your income streams survives that assumption. That list is your actual resume.
-2. The next time you watch a demonstration, watch the room instead of the stage for two full minutes. Note who is applauding and who has gone quiet and started taking notes. Find out what the quiet ones do for a living. That is the second audience, and you want to be standing with them.
-3. Keep a demonstration log. One line per demo that crosses your feed: date, what it did, your one-sentence prediction of when it becomes boring. Review the log every six months. You are not training the predictions. You are training yourself to stop being surprised on schedule.
+1. Record what one demonstration actually shows.
+2. List the work between that demonstration and ordinary use.
+3. Revisit your prediction in six months, including what failed to arrive.
+
+---
+

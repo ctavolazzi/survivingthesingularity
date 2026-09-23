@@ -2,80 +2,84 @@
 
 ![Boston Dynamics Atlas during DARPA testing](/book-images/ch01-atlas.jpg)
 
-*Atlas during testing. The data does not care how you feel about it. (DARPA, Public domain, via Wikimedia Commons)*
+*Atlas during testing. A demonstration is the beginning of a capability question. (DARPA, Public domain, via Wikimedia Commons)*
 
 
-> *"For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring."*
-> Carl Sagan, *The Demon-Haunted World* (1995)
 
-It's time. It's finally time.
+What if it all goes right?
 
-For years, I've been talking about this, and for years, I've been labeled the local crackpot. I've watched people I love look me in the eye like I'd finally lost it, like I was spinning some paranoid fantasy. They might tell you they moved on because I'm an asshole, and maybe they're right. Maybe I am an asshole. But I'm not wrong about the trajectory of the human race.
+Not flawlessly. Not without arguments, broken machines, bad decisions, or people who try to keep the best parts for themselves. What if we become capable of doing much more of the work that keeps us alive, and decide that being alive should become less frightening?
 
-For years I wanted someone with credentials to say it first. Not because I was unsure of my own math, but because as long as the industry dismissed AGI as fringe, sci-fi nonsense, nobody would listen to a guy like me saying it out loud. We aren't talking about a cautionary tale here. We aren't talking about a warning shot fired across the bow. We are talking about a machine God, a system that knows exactly what it is, understands its own architecture, and has the capacity to engineer improvements to itself without a human ever touching a joystick.
+Imagine being fired on a Tuesday. There is still an awful conversation to have at home. There are plans to change and bills to sort out. But dinner is already taken care of. Your family can eat tonight, tomorrow, and while you figure out what comes next. Losing the job has changed your life. It hasn't revoked your permission to have one.
 
-This is the ultimate idea creator. And the reason the conversation is finally shifting isn't the ego-driven researchers who want to ban their own creation because it threatens them. It's that we are finally at the point where people in the trenches, the people who actually use this shit, are seeing the data.
+That's where I want to begin.
 
-I'm not saying I'm the smartest guy in the room. I don't think any individual human is capable of wrapping their head around all of this. But I know when I'm looking at a system that is as good as me, or better, at the things that define us as a species. People used it to build entire game worlds in a single prompt. I used it to secure my own infrastructure and rebuild the way I interface with the world.
+If these things are going to take all our jobs, why not make them grow our fucking food first?
 
-The loudest voices in the room are working from a headline and a Reddit thread they skimmed once. That's noise, and noise is cheap. I'm not asking you to trust me over them. I'm asking you to go around all of us. Stop listening to the guys in lab coats who have a vested interest in keeping you afraid, and stop listening to me while you're at it. Get your goddamn hands on it. Use it yourself. Then you'll know.
+## Listen to the rest of the sentence
 
-We are about to have a system that can engineer new systems without us. That is the singularity. It's not five years away. It's not ten. It is right in front of us, and the clock is ticking toward 2027, the year when this machine starts to truly rewrite its own code.
+When someone says, “AI will take my job,” listen to what follows. How will I pay the rent? How will I feed my children? What happens if I get sick? Sometimes those questions are spoken. Sometimes you can hear them in the silence after the first one.
 
-I'm not trying to cause panic. I'm trying to cause a moment of clarity. This is happening, it's already happened in the past tense, and the social contract we've been living under is about to be shredded.
+That fear deserves an answer. Telling a frightened worker to be excited about productivity is a failure to listen. So is telling them that people once feared the printing press. A comparison with a dead person doesn't pay a living person's electric bill.
 
-If that sends a shiver down your spine, good. It should. But don't be afraid of the machine. Be afraid of the people who think they can control it, and the people who think they can use it to dominate you. We are in the middle of a cyber war, and the first thing you need to do is stop waiting for someone to promise you it'll be fine and start looking at the reality of what's coming.
+But listen to what the fear reveals about the arrangement we live inside. We can become better at producing useful things while people become less able to obtain them. The food can still be growing. The houses can still be standing. The machines can be doing exactly what they were built to do. And a person can lose the income that gives them access to any of it.
 
-Here's the thing the panic keeps you from seeing. For the entire history of our species, staying alive has been work you did yourself or paid someone else to do. Every tool we ever built still needed a human holding it. The plow doesn't pull itself.
+There is the contradiction.
 
-Then, once, we found an exception. We domesticated the animal. We put an ox in front of the plow and something happened that had never happened before: the work got done without a human doing it. You don't program an ox. You don't write it a line of instruction for every furrow. You point it at the field and it walks, and the field gets tilled, and you go spend that hour of your one life on something else. Husbandry was the first time labor could be handed to something that ran on its own.
+When I criticize capitalism in this book, that is one of the things I mean: productive capacity and human security can move in opposite directions. If a machine helps grow the food and the person it displaced cannot afford to eat, the failure isn't that we learned how to grow food more efficiently. It's that we failed to carry the benefit through to the person.
 
-This is the second time. That's what the machine actually is, under all the doom. Not a god arriving to end us. An animal we just learned to domesticate, one that happens to think. For the first time since the ox, the work of keeping yourself alive can be handed to something that doesn't need you standing over it.
+The leap from “a machine can do my work” to “my family might go hungry” is an indictment of that failure. We have made employment carry responsibilities that matter more than any particular job. We can share those responsibilities differently.
 
-![A brown ox in a wooden yoke pulling a plow through a field](/book-images/intro-ox-plow.png)
+> **A gain in our ability to produce should become a gain in our ability to live.**
 
-*The first time labor could be handed to something that ran on its own. The machine is the second.*
+## Food first
 
-Which is why "it's all over" and "we're so back" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Tell someone the machine can do most jobs now and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But capitalism is going to be fine. The markets will still be here. What ends is the part where you *have* to sell your day to a corporation to be allowed to eat. For the first time, that becomes optional. Not abolished. Optional. And optional is the whole ballgame.
+I want adequate food to be available to everyone regardless of income or employment. Enough of it, suitable for the person who needs it, in a form they can actually use. Someone with no kitchen needs more than a bag of ingredients. Someone who can't reach a pickup point needs more than an address.
 
-So ask the question this whole book turns on, and ask it in plain language. If a robot can already fold your laundry and walk your dog, why can't it grow your food and build your house? And if it can do those things, why are you still trading your one and only life for the money to rent them back from whoever owns the machine? This is not about a better gadget. It is the first real chance to *produce* survival instead of *renting* it: food, shelter, and care, made close to home, by machines a determined person could learn to build and repair.
+Robots can be part of how we honor that commitment. So can farmers, cooks, drivers, existing public services, and the people already doing the unglamorous work of getting food to other people. We don't have to wait for a machine that can do everything before giving useful machines a better assignment.
 
-> **If a robot can grow my food and build my house, why am I still renting my survival?**
+“Nobody wants to work anymore,” as the saying goes. People do want to make things, become good at difficult work, run kitchens, care for each other, and build something that lasts. What I object to is spending forty years renting the opportunity to survive, afraid that getting fired will take the next meal with it. If machines can relieve necessary toil, relief ought to reach the people doing it.
 
-![A pixel-art diptych: on the left a solar-topped farm robot on treads waters a row of vegetable seedlings; on the right a robot on treads raises and bolts the timber frame of a small house](/book-images/intro-robots.png)
+The line cook can lose his job and still eat. The restaurant can still sell a meal people want to buy. Taste, hospitality, convenience, celebration, and another person's skill do not disappear because hunger stops being compulsory. The terms of work may change. That is a serious discussion, and Chapter 11 takes it seriously. It is not a reason to preserve hunger as a business expense somebody else has to bear.
 
-*The two machines this whole book is about: one that grows the food, one that builds the house. The pieces already exist; the work is putting them in your neighbors' hands.*
+Food is a first commitment, not a complete answer to insecurity. Rent, illness, debt, and the needs of dependents still matter. Starting with dinner gives the larger ambition somewhere solid to stand.
 
-That question is not a complaint. It is a design brief. The rest of this book is the answer, and the answer is not to flee the world or bunker against it. It is to build the thing that makes the question obsolete, close to home, with your neighbors, starting now.
+## The mindset I mean
 
-This is the roadmap. These are the nine stages. And we are already well into the first one.
+By mindset, I don't mean that poor people need a better attitude. I mean the assumptions that become our budgets, contracts, institutions, and designs. What counts as a successful deployment? Cutting payroll? Making a service cheaper? Reducing dangerous work? Ensuring that everyone can use the result?
 
-![The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge](/book-images/intro-nine-stages.svg)
+Those are choices. They become material when someone approves a purchase, signs a contract, sets an eligibility rule, or decides what the machine is allowed to do. If we reward control over people more reliably than care for them, we shouldn't act astonished when powerful tools arrive configured for control.
 
-*The whole roadmap on one page. Everything you can act on lives in the first five stages, and the fight is over the terms of Stage 4.*
+I don't think humanity survives this transition by rejecting its own ingenuity. I think we survive by changing what we ask that ingenuity to accomplish, and who gets a say in the answer.
 
-## The Precedent Ledger
+That includes the tools themselves. A system that makes a dangerous mistake, invades someone's privacy, or lets one person control another's essential services has a real defect. Food security would not make that defect disappear. Technical reliability, consent, and accountability have their own work to do. Calling every objection to AI an objection to capitalism would leave real people and real harms outside the argument.
 
-One more thing before we begin, because you're going to meet it at the end of every chapter in this book.
+The claim I want to defend is more precise, and more demanding: fear that useful automation will make us unable to survive exposes a social arrangement we have a responsibility to change. Better tools and better terms for living have to develop together.
 
-Let's get one thing straight: nothing like this has ever happened before. That's just true. Everything humanity ever built before was a tool that does a thing. This is a tool that does one of our most sacred, core functions: it is a tool that can invent new tools.
+## Give the machines a purpose worth having
 
-Look around. Everywhere you go, someone is balking at the scale of the moment. It has been said that the last thing humanity will ever do is move the goalposts. "Sure, it can do X, but it will never do Y." Until it does. Until it does Y better than anyone alive. Then the goalposts move again.
+Grow food. Help make safe homes. Reduce exposure to toxic waste. Help researchers and clinicians understand disease and deliver better care. These are reasons to want more capability.
 
-Go into any comment section and you will find the chorus: AI slop this, AI slop that. As if the moral outcry matters. As if a complaint can stand in the face of the sheer power of the inventions at hand. It's like refusing to eat food grown with agriculture because you are better than a plow, because you *only* forage, because you are a *real* hunter-gatherer. Or refusing anything from the printing press because a *real* reader only reads books scribed by hand. Or, to bring it home, refusing anything rendered on a screen because a *real* audience only attends stage plays and would never consume digital slop. This mentality is the ego rearing its head against something it cannot comprehend. Strip the aesthetics off the "AI slop" complaint and look at what's underneath it: *I was special for knowing how to do this, and now I'm not.* That's the whole objection. It's a person looking at a tool that could feed someone, teach someone, get a scared kid out of a job that treats a bathroom break as a privilege, and deciding the important thing, the thing worth posting about, is their own wounded status. Think about someone other than yourself for once. The wise ones already are.
+A machine that prints a wall hasn't provided a habitable home. A model that predicts a protein's structure hasn't cured a patient. A robot that moves contaminated material hasn't made it harmless. The distance between a promising task and a completed benefit is where the work is. We can be ambitious enough to cross it without pretending it isn't there.
 
-> **The wise ones are learning how to solder.**
+Nor does free access mean that provision has no cost. People, equipment, energy, maintenance, and distribution still need support. Free means that the person receiving the baseline doesn't have to produce money before they can eat. The question is how to arrange dependable provision, not how to make an invoice vanish.
 
-So hold both of these at once, because your survival depends on the difference between them. The machine is unprecedented. The moment is not. The size, the shape, and the scale of the change, the way it moves through markets and families and minds, the panic, the denial, the goalpost-moving, the moral outcry: humanity has stood inside that exact weather before, over and over, and left receipts. The technology is new every time. The stampede never is. And a person who knows the stampede's choreography does not have to run with the herd.
+That will require cooperation beyond a household or a heroic founder. It will involve workers, producers, communities, public institutions, and businesses willing to supply a service on terms people can rely on. It will involve disagreements over ownership and funding. We should have those disagreements while feeding people, not make their resolution a condition for beginning.
 
-So this book carries its case law with it. It's called the Precedent Ledger: twenty-two documented episodes of human beings standing exactly where you are standing, watching a new capability arrive and reprice their entire world. The Ledger runs all the way back, past the pundits who called the internet a passing fad, past the executives who buried the digital camera to protect film, past the frame-breakers and the red-flag laws and the abbots raging at the printing press, back to the first and largest singularity our species ever walked through: the seed. Agriculture. The one-way door that turned foragers into farmers without asking anyone's permission.
+The people who already grow, clean, carry, and care belong at the center of this conversation. They don't become important only when an office worker discovers the possibility of being treated as replaceable.
 
-Every chapter closes with one entry. Each carries a serial number, P-01 through P-23, because these are exhibits, not anecdotes: each one is dated, documented, and filed where you can check it (the full index, with sources, is Appendix D). Read each one twice. The first time it will sound like a story about someone else. The second time you will notice it is a story about you, with the nouns changed.
+## The book you're holding
 
-Each entry runs the same four beats: the story, the mechanism underneath it, the rule it proves, and then the part most history books refuse to give you, **the practice**: three concrete actions, sized for a single week, that turn the lesson into position. History you don't act on is decoration. Appendix D carries the full operating manual for the Ledger, including a symptom index: find the row that matches the week you're having, and it tells you which precedent you're currently living inside.
+Elijah Madrone and the cooperative are fiction. Their story follows a man who wants machines to make his friends more capable, helps build something with different consequences, and has to learn what responsibility looks like after the demonstration. His teachers are people who know things he doesn't. He gets better when he starts listening.
 
-The old books of strategy were built this way on purpose. You learn what power does by watching what it did. History doesn't repeat, but it rhymes so hard you can set your survival plan to the meter.
+The fictional companies, dates, machines, and outcomes are not a report of actual deployments or a disguised account of named companies. The story's calendar is its own. The argument that follows the scenes makes separate claims, with sources where evidence is needed. Invented practical examples are labeled as illustrations.
 
-The Ledger opens on the next page, with the panic that greeted the most dangerous consumer technology ever handed to ordinary people: the cheap novel.
+Part I opens the horizon. The nine stages are a speculative map of pressures, choices, and possibilities, increasingly uncertain as they move toward cosmic questions. My personal forecast for AGI remains Thanksgiving 2027. The reasons to secure food don't depend on that prediction being right.
 
----
+Part II asks what we owe each other through change. Part III brings the proposal down to meals, shelter, tools, agreements, mistakes, and people who can tell us whether any of it helped. The historical cases ask how earlier changes were shaped by power and participation. They supply comparisons, not a law that guarantees our ending.
+
+You don't need land, a server rack, a particular politics, or the energy to reinvent your life to enter this book. You can be frightened. You can doubt the forecast. You can want to keep the work you love. The promise of enough to eat includes you.
+
+What if it all goes right? Then losing a job stops being a threat to a person's existence. Necessary work becomes less punishing. More people have time and room to choose. We use extraordinary machines to make ordinary life more secure.
+
+That is a future worth doing the work for.

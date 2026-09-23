@@ -2,8 +2,6 @@
 
 ![Pixel art: scattered figures standing alone in the dark on the left, a small group gathered around a warm fire on the right](/book-images/part2-divider.png)
 
-The bottleneck was never the technology. It's us. This part dissects the psychology of the collapse: who resists, who's ready, and why the fear is the thing that actually kills you.
+A useful machine should give us something to look forward to. Yet the possibility of less necessary labor can arrive as a threat to dinner, rent, and the people depending on a paycheck.
 
-![Pixel-art portraits of the co-op: Elijah the ex-tech worker with his notebook, Marta the fabricator in her welding apron, Priya the soil scientist with a broadfork, and Denny the network engineer](/book-images/coop-cast.png)
-
-*The people the rest of this book is about. Nineteen households; these four you get to know.*
+This part follows that fear into the arrangements producing it. A change of mindset means changing what we fund, what we promise, and who can obtain the benefit. The cooperative is one place to begin that work. Its table has to grow beyond the people already sitting at it.

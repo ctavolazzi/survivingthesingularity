@@ -2,7 +2,7 @@
 
 ![Event Horizon Telescope image of the M87 supermassive black hole](/book-images/ch01-m87-black-hole.jpg)
 
-*The event horizon of M87. Past a certain line, there is no going back. (Event Horizon Telescope Collaboration, CC BY 4.0, via Wikimedia Commons)*
+*The shadow of the black hole M87\*. An image at the edge of what we can observe. (Event Horizon Telescope Collaboration, CC BY 4.0, via Wikimedia Commons)*
 
 
 > *"Within thirty years, we will have the technological means to create superhuman intelligence. Shortly after, the human era will be ended."*
@@ -10,11 +10,9 @@
 
 **In this chapter:**
 
-- Nobody agrees what the word means. One hundred and eighty years of definitions sort into three schools that quietly contradict each other, and picking the wrong one is how you talk yourself into waiting.
-- The event horizon is behind us, not ahead. The Singularity is not a forecast; it is a structural condition we are already living inside.
-- The 2017 Transformer paper, "Attention Is All You Need," automated the one thing we thought was ours alone: the processing of thought itself.
-- Silicon is not the only front. Biological computing is closing on the same target from a completely different, far more energy-efficient direction.
-- The clock reads 2027, the point where the machine begins, in earnest, to rewrite its own code without us.
+- AGI, recursive improvement, physical deployment, and access are separate questions.
+- Thanksgiving 2027 is a personal forecast, not a mathematical deadline.
+- Useful food work need not wait for a system that can do everything.
 
 ---
 
@@ -22,9 +20,6 @@ The Monday after the toast, Elijah brought the printout to work.
 
 He'd read "Attention Is All You Need" so many times over the weekend that the pages had gone soft at the corners, furred with highlighter in four colors that had stopped meaning anything distinct. He'd slept maybe five hours across two nights. He carried the thing into Claypot the way you carry a lab result you don't want confirmed, and he found Devendra at the good coffee machine on the fourth floor, because Devendra was senior, and calm, and had been doing this since before Elijah could spell *gradient descent*, and Elijah needed someone to tell him he was overreacting.
 
-![A tech worker in business casual clothing with a laptop bag over one shoulder](/book-images/ch01-devendra.png)
-
-*Devendra. Senior and calm. Wrong about the thing that mattered.*
 
 "I think it's already over," Elijah said. No preamble. "I watched three people get replaced last week. Real people. Not a projection… a bar, a Tuesday, three jobs, gone. And nobody who did it even thought of it as a big deal."
 
@@ -46,11 +41,11 @@ At 1:20 a.m. the machine threw the temperature warning, throttled itself to prot
 
 Elijah sat in the sudden quiet with sweat cooling on the back of his neck and understood something he would spend a whole later chapter of this book trying to say properly.
 
-The thing hadn't hit a ceiling of *intelligence*. It had hit a ceiling of *heat*. It would have kept getting better, it was still getting better when the hardware quit, and the only wall it found was thermodynamic. The machine that had dissolved three careers at the Bear Flag was not magic and was not bounded by cleverness. It was bounded by *watts*, by *cooling*, by the same brutal physics that decided whether his grandmother's crop lived or died. Give it more power and more heat to shed, and it would keep walking down that curve past anything a person could follow.
+The run had stopped at a limit he could feel: heat. He wanted that to explain everything. Give it more power, give it better cooling, and perhaps the curve would keep falling. He almost wrote that down as proof.
 
-He had wanted proof it was just software. He'd gotten it. And the proof was so much worse than the fear, because *just software* running on *enough energy* was precisely the problem. There was no clever limit coming to save anyone. There was only the power bill, and the people who could afford it.
+Then he looked at the notebook again. The run had not tested every task. A falling training loss was not the same as understanding an unfamiliar problem. The machine had forced one question into the room and left the larger ones where they were. He wrote COOLING in one column and WHAT DID IT LEARN? in another.
 
-He didn't tell Devendra any of this. There was no point. Devendra wasn't wrong about the small mechanics, it *was* autocomplete, it *did* make people faster. He was wrong about the only thing that mattered, which was where the curve went when you stopped pretending it would politely stop. Elijah had watched it not stop. He'd had to unplug it to make it stop.
+He still didn't know what to tell Devendra. He knew only that reassurance was not a measurement, and neither was fear.
 
 He left the tower off for a week. Then he opened the notebook where he'd written MADRONE ≠ DRONE, and under it, he started keeping the arithmetic.
 
@@ -58,143 +53,63 @@ He left the tower off for a week. Then he opened the notebook where he'd written
 
 ## The Foundations
 
-## Seventeen Definitions and No Agreement
-The word in the title of this book has no agreed meaning. That isn't a technicality, and it isn't pedantry. It's the reason the argument about it never resolves, and it's the reason two intelligent people can look at the same week of news and walk away with opposite plans.
+## Four questions hiding inside one word
 
-Nikola Danaylov, who runs Singularity Weblog and has interviewed most of the people who think about this professionally, went looking for a definition and came back with seventeen. Not seventeen phrasings of one idea. Seventeen ideas, several of which contradict each other, all wearing the same word. He arranged them in the order they were written, which turns out to run back a hundred and eighty years, and then he left the last slot empty for the reader. That's either intellectual humility or a confession, and it's probably both.
+People use *singularity* to mean accelerating change, an intelligence explosion, or a threshold beyond which prediction becomes unreliable. Those are related ideas, but they aren't interchangeable. The historical definition sources in Appendix B are a starting point for that disagreement, not a vote that settles it.
 
-Here's the lineage, compressed.
+For the practical argument in this book, keep four questions separate.
 
-**1847.** A Michigan preacher named R. Thornton reviews a new four-function mechanical calculator for *The Expounder of Primitive Christianity*, and he doesn't like it. Students will turn a crank instead of thinking. Then, in the middle of the complaint, he trips over the whole thing: "But who knows that such machines when brought to greater perfection, may not think of a plan to remedy all their own defects and then grind out ideas beyond the ken of mortal mind!" That is recursive self-improvement, described in 1847, by a man annoyed about arithmetic homework. Then the idea goes quiet for a century.
+**Capability:** Can a system perform a broad range of unfamiliar intellectual tasks with the reliability and adaptability we'd expect from a capable person? That's the working sense of AGI here. A polished answer to one prompt doesn't settle it. Evaluation needs tasks the system hasn't merely rehearsed, independent checking, and an account of failures.
 
-**1863.** Samuel Butler, farming sheep in New Zealand, reads Darwin and writes to the Christchurch *Press* under a pen name. The letter is called "Darwin among the Machines." He expands it nine years later in *Erewhon*, where the line lands: "There is no security against the ultimate development of mechanical consciousness, in the fact of machines possessing little consciousness now. A mollusc has not much consciousness." His argument is about rate. Machines are doing in centuries what biology needs epochs for.
+**Improvement:** Can the system contribute to making a better successor? Can the claimed improvement survive testing? Recursive self-improvement means feeding improvements back into the process that makes improvements. It doesn't mean every proposed change works, that the process accelerates without limit, or that physical experiments become instantaneous.
 
-**1951.** Alan Turing, speaking to a small society in Manchester: "once the machine thinking method has started, it would not take long to outstrip our feeble powers." And then, without hedging, "At some stage therefore we should have to expect the machines to take control." He credits Butler for the idea, by name.
+**Deployment:** Can that capability operate useful equipment under ordinary conditions? Growing food means encountering weather, mud, wear, living organisms, and people. A better model does not manufacture a missing actuator.
 
-**1958.** Stanislaw Ulam, writing his friend John von Neumann's obituary, recalls a conversation about "the accelerating progress of technology and changes in human life, which gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue." That's the word arriving, borrowed from mathematics, where a singularity is the point at which your equation stops returning answers.
+**Access:** Who actually receives the result? A machine can be capable and unavailable. A service can be cheap to operate and expensive to buy. Someone can live beside a productive farm and still go hungry.
 
-**1965.** I.J. Good, who spent the war breaking German ciphers alongside Turing, writes down the mechanism. "Let an ultraintelligent machine be defined as a machine that can far surpass all the intellectual activities of any man however clever." Such a machine can design better machines. "There would then unquestionably be an 'intelligence explosion.'" Good called it the last invention humanity would ever need to make.
+Those four questions are the spine of the forecast. Don't let an answer to one stand in for all the others.
 
-**1993.** Vernor Vinge, mathematician and novelist, presents "The Coming Technological Singularity" at a NASA symposium and opens on the two sentences at the head of this chapter. He also does something almost nobody who quotes him bothers to repeat: he lists four separate roads to the same destination. Computers that wake up. Networks that wake up. Human-computer interfaces so intimate that the pair counts as superhuman. Or straight biological enhancement of human intellect. Four doors, not one, and the argument doesn't care which opens.
+## My date, and what it does not promise
 
-**2005.** Ray Kurzweil, in *The Singularity Is Near*: "a future period during which the pace of technological change will be so rapid, its impact so deep, that human life will be irreversibly transformed." Read that again and notice what's missing. There is no machine in that sentence. Kurzweil's singularity is a property of a curve, not of a mind.
+My personal expected date for AGI is U.S. Thanksgiving 2027, November 25. Why that day? Because.
 
-The rest of the list fills in around those. Hans Moravec, in 1988, hands robots the succession somewhere around 2030 to 2040. Nick Bostrom, in 1997, defines superintelligence as "an intellect that is much smarter than the best human brains in practically every field, including scientific creativity, general wisdom and social skills." Kevin Kelly compresses a million years of change into the next five minutes. John Smart calls it a permanent and irreversible developmental phase change. The list even runs through Ted Kaczynski, whose passage about a system growing too complex for human beings to steer is the one part of that text that reads as analysis instead of pathology, which is worth knowing and is not a defense of a man who mailed bombs to strangers.
+That's the joke, and it's also the boundary around the claim. This is my forecast, not a mathematical deadline. I expect substantial change and I want to prepare for it. I could be wrong about the date, the capability, or both. Evidence that systems remain brittle on unfamiliar tasks would count against my expectation. Evidence of reliable breadth would count in its favor. Neither observation would, by itself, establish autonomous farming or universal access to meals.
 
-Fifteen decades. No consensus. One word, doing all of that work.
+Keep a dated record of what I predict. Hold me to the distinction. Thanksgiving can come and go without anyone getting permission to pretend a missed forecast was secretly a different forecast all along.
 
-### The three schools, and which one this book runs on
-In 2007 Eliezer Yudkowsky did the sorting that makes the pile usable. Nearly every definition on that list, he argued, belongs to one of three schools, and the schools quietly contradict each other once you push on them. Blend them and you end up defending a claim that nobody actually holds.
+The food-first proposal survives a late arrival. People can improve food access using tools and organizations that already exist while evaluating new capabilities. We don't need to wait for a machine to become good at everything before asking it to help with something useful.
 
-| School | The core claim | Whose | What it tells you to do |
-| --- | --- | --- | --- |
-| **Accelerating Change** | "Technological change feeds on itself, and therefore accelerates." | Kurzweil, Toffler, Smart | Read the curve, extrapolate, set a date. |
-| **Event Horizon** | Build something smarter than us and the far side stops being predictable, by anyone, the builders included. | Vinge | Stop forecasting. Prepare for the unforecastable. |
-| **Intelligence Explosion** | Intelligence is what produces technology. Aim it at itself and the loop closes. | Good, Yudkowsky | Watch one variable: can it improve itself yet? |
+## What the research can carry
 
-*Table 1: The three singularity schools (Yudkowsky, 2007), with the planning posture each one implies.*
+The Transformer paper describes an architecture for machine learning. It does not establish a date for AGI. What matters is what a system can do reliably outside a rehearsed demonstration. A benchmark is evidence about the tested task and conditions; extending it to dependable physical work requires another argument.
 
-Those are three genuinely different animals. Accelerating Change is a claim about a graph, and it doesn't require anything anywhere to be smarter than you are. Event Horizon is a claim about the limits of prediction. Intelligence Explosion is a claim about a feedback loop, and a loop can close fast enough that no curve ever shows it to you in time.
+This doesn't make the research unimportant. It makes the research usable. A result can be remarkable without proving the largest story somebody tells about it.
 
-This book runs on Event Horizon for the map and Intelligence Explosion for the engine, and it declines Accelerating Change as a planning tool on purpose.
+My optimism is that useful machine capabilities can keep expanding. My priority is to direct that expansion toward food people can obtain regardless of income. One is an expectation about technology. The other is a choice about what we want it to do.
 
-Not because Kurzweil's curve is wrong. Because of what a curve does to the person reading it. A smooth exponential invites you to find your dot on it, notice that the interesting part is somewhere off to the right, and go back to work. It sells you a date, and a date is permission to wait. The Precedent at the end of this chapter is what happens to people who accept a comfortable date from a credible source. Event Horizon takes the date away and hands you a door instead, and doors don't give notice.
+## The first question to take outside
 
-> **A curve gives you a date. A door gives you a Monday.**
+Ask a grower or food provider which repeated task consumes time without improving the food. Write down their answer before proposing a robot. Ask what would count as a better result and what would make a trial a failure. The answer might concern scheduling, irrigation, lifting, transport, or something you haven't thought of.
 
-The book's one amendment to Good is Chapter 5, and it's the reason Elijah's tower shut itself down at 1:20 in the morning. The intelligence explosion is real, and it is a physical process. It runs on watts. It sheds heat. Both of those are metered, and somebody owns the meter. Good's loop doesn't close in a vacuum. It closes wherever the power is.
-
-### The seventeenth slot
-Danaylov left one open. Here is the one this book uses, and every claim in the rest of these pages runs downstream of it:
-
-> **The Singularity is the point where intelligence stops being scarce, and every institution quietly built on its scarcity starts failing before anyone has written the replacement.**
-
-Three things follow, and they're why this definition and not one of the other sixteen.
-
-**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything at all. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.
-
-**It's testable this quarter.** You don't need anyone's date. Has the market price of the cognitive work you sell fallen in the last eighteen months? Has the institution that pays for it started behaving strangely about it, restructuring, retitling, quietly not backfilling? That's the measurement, and you can run it on yourself before the end of the week.
-
-**It names the actual emergency, which is not the machine.** It's the gap. The old contract is failing on a schedule set by hardware, and the new one is being drafted by nobody in particular, slowly, mostly by whoever holds the power contracts. Everything in Part II is about that gap. Everything in Part III is about what you build inside it while it's still open.
-
-Sixteen definitions spent a hundred and eighty years describing the same shadow from different angles, and nearly all of them looked up, toward the thing arriving. This one looks down, at the floor already going soft under people you know by name.
-
-## The Event Horizon of General Intelligence
-The public, institutional, and academic discourse surrounding advanced technology frequently approaches the concept of the Technological Singularity as a hypothetical event confined to the distant future. However, empirical trajectories across machine learning, biological computing, and macroeconomic restructuring indicate that the event horizon has already been crossed. The Singularity is no longer an abstract philosophical debate; it is an active, structural reality driven by exponential progressions in computational intelligence and the decoupling of economic value from human labor. The fundamental premise of this societal and technological transition is that intelligence, historically the ultimate scarce resource that has gated human progress, innovation, and production, is rapidly approaching a marginal cost of zero.
-
-The friction currently observed across global markets, socio-political institutions, and local communities is the direct result of legacy systems attempting to artificially meter this zero-cost resource. Corporate monopolies and traditional capitalist frameworks are attempting to fence this moment behind digital moats, forcing humanity to pay subscription fees for a resource that requires minimal variable cost to reproduce, thereby trapping the population in an artificial system of debt and transactional compliance. To understand the trajectory of the coming decade, it is necessary to analyze the exact mechanisms driving this intelligence explosion, the societal and psychological backlash it guarantees, and the hyper-local infrastructural pivots required to survive the systemic collapse of the labor-based social contract. An objective, data-driven analysis maps a distinct progression from the current era of Artificial General Intelligence (AGI) toward Artificial Superintelligence (ASI), and ultimately, to structural shifts on a cosmological scale.
-
-## The Structural Automation of Thought
-The modern acceleration toward AGI was fundamentally catalyzed in 2017 with the introduction of the Transformer architecture by researchers at Google Brain and Google Research. Prior to this innovation, the dominant sequence transduction models in natural language processing relied heavily on complex recurrent neural networks (RNNs) or convolutional neural networks (CNNs) arranged in rigid encoder-decoder configurations. These legacy architectures were inherently bottlenecked by their sequential processing requirements; a system had to fully process step t before it could process step t+1, severely limiting the ability to leverage modern hardware accelerators.
-
-The seminal paper "Attention Is All You Need" achieved a profound structural breakthrough by dispensing with recurrence and convolutions entirely, relying solely on an attention mechanism to map global dependencies between input and output. This shift to parallel self-attention represented the literal automation of thought processing, allowing operations to be massively parallelized. The foundational model was small by today's standards, sixty-five million parameters in its base configuration and two hundred thirteen million in the big one, and the big one beat every system that came before it, including the ensembles that had been stacked specifically to win these benchmarks.
-
-| Evaluation Metric / Task | Best Prior Result, Ensembles Included | Transformer, "Big" Configuration |
-| :-: | :-: | :-: |
-| WMT 2014 English-to-German (BLEU) | 26.4 (ConvS2S ensemble) | 28.4, a gain of more than 2 BLEU |
-| WMT 2014 English-to-French (BLEU) | 41.3 (ConvS2S ensemble) | 41.8, a new single-model record |
-| Training compute, English-to-German | 1.8 x 10^20 FLOPs (GNMT ensemble) | 2.3 x 10^19 FLOPs: 3.5 days on eight P100 GPUs |
-
-*Table 2: Performance Benchmarks of the 2017 Transformer Architecture. Figures are for the 213-million-parameter "big" configuration; the 65-million-parameter base model reached 27.3 and 38.1 on the same two tasks after twelve hours on the same hardware.*
-
-By eliminating the sequential bottleneck, self-attention dramatically improved the speed, scalability, and efficiency of models, enabling the processing of intricate patterns over long-range dependencies across massive datasets. This parallelization was not merely a software optimization; it fundamentally altered the physical execution of machine learning. Later implementations went further, restructuring the model so that its attention and feed-forward stages run concurrently instead of one after the other, squeezing measurably more work out of every GPU in the cluster.
-
-Crucially, this massively parallelized compute architecture grants the model the ability to process its own structure, setting the foundation for unassisted recursive self-improvement, the definitive trigger for an intelligence explosion, wherein the model can iteratively engineer its own code without a human in the loop.
-
-## Synthetic Biological Intelligence and Sample Efficiency
-While silicon-based Transformer architectures scale through brute-force parallelization and massive energy consumption, concurrent breakthroughs in biological computing demonstrate an alternative, highly efficient pathway to advanced intelligence. Cortical Labs' development of "DishBrain" exemplifies the integration of living biological neural networks (BNNs) with in silico computing via high-density multi-electrode arrays. In 2022, researchers successfully embedded 800,000 in vitro human and rodent neurons within a simulated environment, proving that the culture could self-organize its activity to play a simplified version of the arcade game "Pong".
-
-The significance of the DishBrain architecture lies in its adherence to the free energy principle and the theory of active inference. According to this framework, neurons naturally strive to reduce the unpredictability, or entropy, of their surrounding environment. By successfully hitting the digital ball in the simulated game world, the cellular network minimizes its environmental uncertainty, structurally organizing its signaling activity in a goal-directed manner to avoid negative, unpredictable feedback. This represents a foundational form of synthetic biological intelligence (SBI), capable of apparent learning within five minutes of real-time gameplay, a phenomenon not observed in control conditions without closed-loop structured feedback.
-
-When tested against state-of-the-art Deep Reinforcement Learning (DRL) algorithms, specifically Deep Q-Networks (DQN), Advantage Actor-Critic (A2C), and Proximal Policy Optimization (PPO), the biological cultures exhibited vastly superior sample efficiency. While conventional deep learning models require millions of data points and massive computational power to extrapolate complex tasks and achieve generalization, the biological neurons circumvent this requirement through intrinsic plasticity. Under conditions where data samples were strictly limited to a real-world time course, the biological cultures consistently outperformed deep DRL agents across multiple performance characteristics, including the average number of hits per rally and the relative learning improvement over time.
-
-Furthermore, this biological system operates at a tiny fraction of the power required by conventional GPU-based AI models, directly addressing the thermodynamic reality and sustainability challenges of the singularity. The profound implications of this research have drawn significant national security interest, leading to an AU$600,000 grant from the Australian Office of National Intelligence to create a DishBrain-based AI with continual lifelong learning capabilities, a trait that current silicon-based AI cannot natively replicate. This dual acceleration, both in silicon-based parallel processing and synthetic biological active inference, confirms that the barriers to AGI are rapidly deteriorating from multiple intersecting scientific vectors.
-
-## Timeline Compression and the 2027 Ignition Point
-The convergence of these architectural and biological innovations points toward a near-term disruption that heavily contradicts the cautious projections of legacy institutions. A deep analysis of the current industry trajectory indicates that the critical tipping point for AGI, and the subsequent leap to ASI, is mathematically and analytically anchored around the year 2027. This date represents the ignition point at which AI models achieve full, unassisted recursive self-improvement, accelerating past human-level intellectual labor and exiting the human cognitive environment.
-
-This rapid timeline is supported by the unprecedented mobilization of industrial capital currently unfolding within the tech sector. Former OpenAI Superalignment researcher Leopold Aschenbrenner's comprehensive 2024 manuscript, "Situational Awareness," details this extreme trajectory. Over a deeply compressed timeframe, corporate planning has shifted from deploying $10 billion compute clusters to aggressively structuring $100 billion and even trillion-dollar infrastructure expansions. Behind the scenes, a fierce scramble is underway to secure every available power contract and voltage transformer for the rest of the decade, resulting in a mobilization of American industrial might not seen in half a century.
-
-Tracing the trendlines of computational scale (adding ~0.5 orders of magnitude or OOMs per year), algorithmic efficiencies (~0.5 OOMs/year), and "unhobbling" gains that transform chatbots into autonomous agents, the industry expects a qualitative leap from preschooler-level AI to smart-high-schooler-level AI, ultimately outpacing college graduates by 2025 or 2026. By 2027, hundreds of millions of AGIs could be utilized to fully automate AI research itself, compressing a decade's worth of algorithmic progress (over 5 OOMs) into a single year, thereby birthing superintelligence. This intelligence explosion introduces massive geopolitical volatility; Aschenbrenner warns that the free world's survival is at stake, framing the race to AGI as an all-out techno-capital war with authoritarian powers, specifically the CCP, to secure a decisive economic and military advantage.
-
-The broader scientific community is rapidly adjusting its expectations to align with these empirical realities. A longitudinal survey of thousands of AI researchers published in 2024 by Katja Grace et al. revealed a dramatic, unprecedented compression in predictive timelines. Between the 2022 and 2023 iterations of the survey, expert consensus radically shifted.
-
-| AI Milestone | 2022 Aggregate Forecast | 2023 Aggregate Forecast | Net Shift |
-| :-: | :-: | :-: | :-: |
-| High-Level Machine Intelligence (HLMI), 50% probability | 2060 | 2047 | 13 years sooner |
-| Full Automation of Labor (FAOL), 50% probability | 2164 | 2116 | 48 years sooner |
-
-*Table 3: Shifts in Expert Consensus on AI Timelines (Grace et al., 2024).*
-
-The same survey put a 10 percent probability on high-level machine intelligence arriving as early as 2027. And on the darkest question it asked, between 37.8 and 51.4 percent of respondents, depending on how the question was framed, assigned at least a 10 percent probability to outcomes as bad as human extinction. These are not doomers on a forum. These are the people building the systems, surveyed by the thousands.
-
-More than half of the surveyed experts indicated that "substantial" or "extreme" concern is warranted regarding the socio-economic shocks that will accompany this rapid technological diffusion, including authoritarian population control, worsened inequality, and the spread of false information. Despite this, the corporate march toward the 2027 tipping point continues unabated, meaning society must confront the impending obsolescence of human labor.
-
-## The Economic Paradox: Zero Marginal Cost and Post-Scarcity
-The central crisis of the Singularity is not inherently technological; it is macroeconomic and sociological. The current global economic architecture is built upon the fundamental assumption of scarcity, specifically the scarcity of human physical and cognitive labor. However, AGI threatens to substitute human cognitive labor entirely at a marginal cost of zero.
-
-This creates a fatal contradiction within the capitalist framework. From a strict optimization standpoint, the human employee represents a business's single greatest expense, liability, and point of failure. Capitalist enterprises are structurally incentivized to automate this liability out of existence to maximize efficiency and profit. However, in a societal system where an individual's right to survival, measured through access to food, shelter, and healthcare, is legally and culturally tethered to wage labor, the total automation of the workforce without altering the social contract equates to total mass disenfranchisement.
-
-As the marginal cost of intelligence drops to zero, the mechanism of creative destruction continues to destroy old industries, but unlike previous industrial revolutions, it no longer requires human labor to build the new ones; the "creation" phase is executed autonomously by the machine. This economic uncoupling renders traditional business cycle theories obsolete. Humanity is currently caught in a tug-of-war between the mathematical limits of a highly financialized, debt-based economy, which requires excess liquidity that triggers asset price inflation, and the powerful deflationary pressures exerted by exponential AI, which drives the value of human labor toward zero. Prominent industry figures, including OpenAI CEO Sam Altman, have recognized this, floating concepts like Universal Basic Income (UBI), Universal Basic Computing (UBC), and identity verification infrastructures like Worldcoin to distribute the wealth generated by an AI-automated economy.
-
-The logical endpoint of this trajectory is a post-scarcity model, a concept thoroughly explored in post-capitalist theoretical frameworks such as "Fully Automated Luxury Communism" (FALC). Authored by Aaron Bastani, FALC posits that the convergence of five technological drivers, full automation of services and manufacturing, limitless renewable energy and battery storage, asteroid mining for unlimited raw materials, CRISPR synthetic biology for extending lifespans, and cellular agriculture for synthetic food, can permanently eliminate scarcity. When information, labor, energy, and resources become permanently cheap, the traditional price mechanism breaks down, decoupling use-value from market value. In such a paradigm, society possesses the capacity to dissolve the boundary between necessity and luxury, instituting a 10- or 12-hour working week, a guaranteed social wage, and universally guaranteed housing and education. Yet, transitioning to this state of abundance requires overcoming severe psychological and institutional barriers that tie human identity to suffering and toil.
+That's where the future becomes a piece of work somebody can examine.
 
 ---
 
 ## Precedent P-03: One Million Years, Give or Take (New York, 1903)
 
-On October 9, 1903, the New York Times published an editorial titled "Flying Machines Which Do Not Fly." Its conclusion: a working flying machine might be developed by "the combined and continuous efforts of mathematicians and mechanicians in from one million to ten million years."
+On October 9, 1903, the New York Times published “Flying Machines Which Do Not Fly.” The editorial imagined a working flying machine taking an extraordinarily long period of further effort. Later that year, the Wright brothers flew at Kitty Hawk.
 
-Sixty-nine days later, the Wright Flyer lifted off the sand at Kitty Hawk.
+The juxtaposition is memorable because the forecast failed so dramatically. It does not turn a newspaper editorial into a representative sample of all contemporary expertise, or a warrant to disregard expertise now.
 
-The editors were not fools. They were doing exactly what respectable analysis is supposed to do: extrapolating from the evidence in front of them, which was Samuel Langley's spectacularly public crash into the Potomac two days before. Their data was accurate. Their reasoning was careful. And their estimate was wrong by a factor of roughly five million, because they were measuring the past while two bicycle mechanics in Ohio, with no press coverage and no government funding, were building the future.
+**The mechanism.** The aviation forecast illustrates a large error. One failed pessimistic prediction cannot tell us the direction or size of the next error.
 
-**The mechanism.** Expert timelines are autopsies of the most recent failure, not forecasts of the next success. The distance between "one to ten million years" and "done" can be ten weeks, because progress at a frontier is not a trend line. It is a door, and doors open all at once.
-
-**The rule.** When credentialed voices hand you a comfortable timeline for AGI, remember the unit of error. It is not years. It is orders of magnitude, and history has almost always erred in the direction nobody was bracing for. You are past the event horizon. Plan like the door is already open.
+**The rule.** Hold optimistic and pessimistic forecasts to the same evidence.
 
 **The practice.**
 
-1. Start a timeline file. Every time an expert publishes an AI timeline, paste it in with the date and the author. Review it quarterly. Within a year you will have taught yourself, with receipts, exactly how much a confident forecast is worth, and you will stop outsourcing your planning horizon to whoever sounded calmest.
-2. Plan by doors, not dates. Write down three things AI "cannot do" that would change your work or your household if they opened. Check them monthly. When one opens, and one will, you act that week, because you decided what the door means before it moved.
-3. Make one asymmetric bet this month: an action that looks slightly early if the transition takes ten years, and essential if it takes two. Learning the tools, planting the garden, and cutting a fixed cost all qualify. The Times editors risked nothing on their million-year estimate. You do not have that luxury; you live here.
+1. Save one optimistic and one pessimistic prediction with their dates.
+2. Write the observation that would count against each.
+3. Choose a review date and include your own prediction in the record.
+
+---
+

@@ -2,180 +2,91 @@
 
 ![Workbench with hand tools](/book-images/ch17-workbench.jpg)
 
-*The workbench. Own the tools, own the output. (Shixart1985, CC BY 2.0, via Wikimedia Commons)*
+*The workbench. Tools become useful through access, skill, and care. (Shixart1985, CC BY 2.0, via Wikimedia Commons)*
 
 
-> *"We are as gods and might as well get good at it."*
-> Stewart Brand, *Whole Earth Catalog* (1968)
 
 **In this chapter:**
 
-- The tools that survive the transition are the ones you can understand, fix, and run with no cloud, no subscription, and no permission.
-- Networks fail at the node somebody flashed in a hurry. Discipline you skip in fair weather collects its debt in the storm.
-- Debugging in the dark is a solved problem: halve it. Power or brain, this side or that side, measure, cut again.
-- We are as gods with cold fingers and a multimeter, and we might as well get good at it.
+- Choose tools by the task and the support available.
+- Food, cleanup, shelter, and care give technical ambition a human purpose.
+- Compare whole outcomes, including maintenance and remaining human work.
 
 ---
 
-The first hard storm of the winter came up the valley on a Friday afternoon with the barometer falling like a dropped tool, and by dark the county was gone. Grid power went first, a whole hillside of windows going out between one gust and the next. The cell towers lasted forty minutes longer on their batteries and then they went too, and the valley was back in 1890, except for nineteen households, where it was still Tuesday.
+The first hard storm of the winter came up the valley on a Friday afternoon with the barometer falling like a dropped tool, and by dark the hillside windows were going out between one gust and the next. Cell service failed later. At the co-op the backup supplies kept essential equipment running, while the shop put off the jobs that could wait. Somebody brought the printed contact list to the table. Somebody else started the soup.
 
-The mesh held. That's the sentence Elijah had been building toward for a year, the LoRa lattice you'll learn to solder in the Foundations below, node by node across the ridgelines, and on the night it finally mattered it did what it was designed to do: shrugged. The co-op's map stayed lit, house to house, message traffic hopping the valley on watts you could count on your fingers. Marta's shop stayed lit. The greenhouse alarms stayed armed. The whole nervous system he'd been laying into walls and fence posts for a year kept right on reporting, calm as a pulse.
+The mesh held at first. That's the sentence Elijah had been building toward for a year, the LoRa network they had installed for compact messages, node by node across the ridgelines. The map stayed lit, house to house. The greenhouse alarms reported. The system he'd been laying into walls and fence posts kept sending the small packets they had tested it to carry.
 
 Except node 7.
 
 Node 7 was the ridge repeater, the high hop that stitched the north houses into everyone else, and node 7 was his, personally, in every sense that stung: his design, his install, and, the previous Sunday, his firmware flash, done alone, in a hurry, ahead of the weather, without a second set of eyes, because it was "just a repeater" and the checklist law was for things that touched the open internet, and he had let himself believe that discipline was a perimeter instead of a practice. The storm found the ridge at eight o'clock. At 8:04 the map showed a hole where the north houses used to be.
 
-He suited up. Nobody made him; everybody let him, which at the co-op amounted to a verdict. Marta handed him the handheld radio and the small pack, pointed at his headlamp, and said the thing she always said instead of luck: "Talk before you touch."
+He reached for his coat. Marta put a hand on the pack before he could lift it.
 
-The ridge trail in a storm is a different country. Rain going sideways with gravel in it, madrone trunks slick as wet brick, the wind doing shift work: lean, release, lean. He climbed with the multimeter zipped inside his coat to keep the display warm, and the radio crackled at his collarbone every quarter mile, Marta running the net from the shop the way she'd once run a floor: short transmissions, no chatter, callsigns and traffic.
+"Not in this weather. The north houses have the backup check-in. Confirm it. Then sit down."
 
-And he could hear, in the gaps, the system working around the hole he'd made. Priya's greenhouse, riding the alert chain: low-temp alarm at 8:40, relayed around the dead ridge the long way, south through Frank's node, and Denny's voice acknowledging, hauling the backup battery bank through the weather to keep the winter starts alive, all of it happening without him, around him, because the network's whole design assumed any one node, any one person, could be the one that failed. It is a strange, strong medicine, hearing a thing you built survive you.
+So he sat at the shop table and did the less heroic work. The households checked in through their separate voice-radio arrangement, while the LoRa network carried what status messages it could around the failed ridge. Priya's greenhouse alarm reached the shop by the southern route. People answered. Nobody needed him on a slippery trail to make the evening less frightening.
 
-Node 7's enclosure was where he'd bolted it, on the old fire-lookout stub, and the node was dark. He got the lid off inside a garbage bag rigged as a rain fly, fingers going stupid with cold, and keyed the radio, and the two of them debugged it across two miles of storm at 900 megahertz, Marta asking the only question she ever asked, the one you'll find at the top of the troubleshooting flowchart in this chapter:
+By Saturday afternoon the weather had cleared enough for a paired visit. He and Curtis took the known-good firmware, the equipment records, and the repair kit. Marta stayed at the shop on the voice radio. At the enclosure they found that a restart had left the node unable to load its configuration. The image Elijah had installed wasn't the one recorded for that board. He had checked that the upload completed. He hadn't checked a restart.
 
-"Power or brain? Halve it."
+They restored the known-good version and tested the node through a full power cycle before closing the enclosure. Priya confirmed receipt of its status packet at the shop. Curtis watched Elijah write down exactly which check he had skipped. He didn't add anything. There was nothing to add.
 
-Battery voltage: 12.9, healthy. Power. Halved. "Downstream. Check the buck converter under load." Five point one volts, solid. Halved again. So: brain. The radio module's status light was flashing a pattern he'd never bothered to memorize, and Marta made him count it out loud, four short one long, and there it was, in the dark, at the exact intersection of wind and shame: bootloader error. Wrong image. He had flashed the 868-megahertz build onto a 915-megahertz board, Sunday, alone, confident, and the node had run on the old code in memory all week and died the first time the storm's brownout forced a reboot. The vise, the shovel, and now the ridge: the same exam, a third time, in worse weather.
+They came down. There was soup. And the checklist got its amendment that Sunday, in Reuben's careful language: changes to equipment people depended on needed another person to review the work and a recorded recovery check. The boundary was the consequence of a failure, not whether a cable reached the internet.
 
-The fix took eleven minutes because he had, at least, packed like Marta taught: the SD card with the known-good image, hashes checked, lived in a film canister in the pack's top pocket, next to the spare fuses. Reflash, reboot, and the status light went to its slow steady breathing, and in his collar the radio said, in Priya's voice, "North houses just came back. Hello, ridge." Below him the whole county was black to the horizon, and across that blackness the co-op's houses held their small stubborn constellation, and node 7 was a star in it again instead of a hole.
-
-He stood up into the wind to pack the tools, and Marta's voice came up the hill one more time, dry as the inside of the enclosure was supposed to be. "Brand's line. On the shop wall. 'We are as gods and might as well get good at it.'" A crackle, wind on her end too, the shop door open to the weather. "Gods, hell. Gods is the easy part, college. Gods with cold fingers and a multimeter, that's the job. Getting good at it means next time you flash a node, somebody's watching. Come down. There's soup."
-
-He came down. There was soup. And the checklist got its amendment that Sunday, in Reuben's careful language, the one you'll find adapted in the Foundations: the two-eyes rule now covers everything with firmware, because the network doesn't care whether the packet that kills it came from the internet or from your own confident thumb. The storm blew out by noon Saturday. The county's power was back Tuesday. The co-op never noticed, except as traffic on a mesh that had already moved on to arguing about seed orders.
+The county's power came back Tuesday. The co-op noticed. There were supplies to replenish, a postponed delivery to complete, and a repair to pay for. At dinner they wrote down what had held and what had needed people. Curtis asked for a copy of the list. Then he asked who still needed soup taken over.
 
 ---
 
 ## The Foundations
 
-We live in the golden age of high-tech dependency.
+## Give the machines a worthwhile assignment
 
-In the late twenty-first century, your refrigerator has more processing power than the Apollo guidance computer. It can monitor your milk consumption, order groceries autonomously, and display recipes on a high-definition touch screen.
+Imagine the priorities written above the workbench: feed people, restore damaged places, make safe homes, relieve suffering. Those are assignments worthy of a powerful technology. They are also a way to judge the uses of it that actually receive our money and attention.
 
-It can also refuse to open because your subscription has expired, send your dietary telemetry to your health insurance company to raise your premiums, and become completely useless the moment the manufacturer’s cloud server experiences a minor database hiccup.
+Food comes first in this book because nobody needs an elaborate explanation of why dinner matters. The wider ambition includes land care, waste cleanup, housing, and health. These projects can proceed together. Somebody who needs treatment or shelter should not have to wait for the last food problem on Earth to be solved.
 
-This is the **Smart Home Trap**.
+The question for any proposed machine is what useful work it can do under the conditions where people need it. Compare the tools they can obtain and support. A machine impressive in a video may be hard to repair locally. A familiar tool may do the job well. Shared access can matter more than ownership.
 
-The corporate state did not need to build prison walls; they just designed a luxury lifestyle where every door, thermostat, lightbulb, and tool requires an active cloud subscription, continuous biometric authentication, and constant telemetry reporting. The moment you step out of line, your entire life is remotely bricked.
+## Food: count the whole job
 
-In the cracks, we do not use "smart" tools. We use **tools we own**.
+Begin with the chain in Chapter 9. Identify the repetitive task, the present method, and the result at the recipient's end. Include setup, supervision, maintenance, transport, and the work still performed by people. Don't turn a reduction in one motion into a claim that a whole occupation has disappeared.
 
-A tool you own is open-source, modular, repairable, and runs completely offline. If you cannot understand how it works, fix it with basic hand tools, and run it without an internet connection, it is not a tool, it is an electronic leash.
+Equipment also needs dependable inputs. Include its power supply, replacement parts, operator time, and maintenance in the comparison. A custom power system is its own engineering project, with its own costs and responsibilities. You can contribute to a food service without building one.
 
-In this chapter, we are going to dive into the physical hardware of survival: the radios, the power grids, and the open-source machines that will allow us to maintain a high-tech existence in a post-corporate world.
+Likewise, communication equipment should fit the service. The co-op used separate arrangements for compact data and voice, and still needed people to confirm that households were all right. A message received is a useful event. It isn't the whole of being cared for.
 
-![A pixel-art specimen board of the field kit: a photobioreactor, a vertical grow tower, a LoRa mesh node, a solar-and-battery rig, a 3D printer, a CNC plasma table, a walk-behind tractor, and a cyberdeck](/book-images/ch17-field-kit.png)
+## Cleanup: from litter to its destination
 
-*The field kit. Every one of these already exists, and a person with modest money and stubbornness can own the lot.*
+Consider a small ordinary-litter project, undertaken with permission at a suitable site. Locate the litter, collect what the established service can accept, transfer it into that service's disposal stream, and check the place afterward. That complete route matters. Moving waste out of the photograph and into someone else's surroundings is not success.
 
-## 1. The Nervous System: DIY LoRa Mesh Nodes
-In Chapter 2, we discussed the theory of the Decentralized Municipal Mesh Network. Now, let’s look at the actual silicon that makes it work.
+A future cleanup robot could perform part of that chain. To test whether it helps, compare the whole arrangement with an existing crew, better bins, or a simpler capture method. Count maintenance and recovery of the machine. Check whether less waste remains overall, not only how much the device reports picking up.
 
-We do not use cellular networks. We do not use commercial satellite links. Instead, we use **LoRa (Long Range)** radio technology.
+“Won't people just litter more?” They might change their behavior. They might also take better care of a cleaner place. Neither possibility is a measured result. Include prevention, accessible disposal, and repeat observation in the arrangement rather than treating abandoned trash as a lesson people need to endure.
 
-![Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz](/book-images/ch17-lora-node.svg)
+EPA describes intentional and unintentional pathways by which trash reaches water. Wind, runoff, and losses during handling mean that a piece of litter alone doesn't identify a deliberate offender. Accountability should concern what actually happened. [EPA, Learn About Aquatic Trash](https://www.epa.gov/trash-free-waters/learn-about-aquatic-trash)
 
-*A hyper-local mesh node. Sunlight in, encrypted packets out, no license and no bill.*
+Toxic waste is a larger and more demanding assignment. The ambition to use machines for it is worth keeping: take dangerous work off people's bodies and repair places people have been left to live beside. But a robot's ability to pick something up is only one part of that job. Identifying the material, containing it, treating or disposing of it, and establishing what remains are responsibilities for an appropriately equipped and qualified project. Unknown material should go through that route, not become a neighborhood experiment.
 
-A standard mesh node is built around an incredibly cheap, highly efficient microcontroller like the **ESP32** integrated with a LoRa radio chip (such as the Heltec V3 or LilyGO T-Beam). These boards cost less than a lunch at a fast-food restaurant, yet they possess extraordinary capabilities:
+We should ask whether the technology makes the whole operation safer and more effective, including for the workers doing the remaining tasks. We should also ask why the damage was allowed to remain and who is responsible for correcting it. A cleanup machine should add capacity to that obligation, not give someone an excuse to keep making the mess.
 
-  - **Micro-Watt Draw:** A standard LoRa node consumes less than 0.1 watts when idle. It can run indefinitely on a single salvaged lithium-ion battery and a solar panel the size of a paperback book.
-  - **License-Free ISM Bands:** These nodes broadcast on public industrial, scientific, and medical (ISM) radio bands (typically 915 MHz in North America or 868 MHz in Europe). They do not require a government license to operate.
-  - **Meshtastic Integration:** By flashing these chips with open-source firmware like **Meshtastic**, they automatically form a decentralized, encrypted, self-healing communication grid.
+The dependency and jobs questions are addressed in Chapter 11. They belong in evaluation here too. A worker whose exposure is reduced should share in the gain; a community should be able to inspect whether the place is actually improved.
 
-### Building a Field-Ready Node
-To deploy a node that can survive weather, wildlife, and detection, follow the **Hyper-Local Node Standard**:
+## Recovery is a different task
 
-1.  **The Enclosure:** Mount the electronics inside a waterproof plastic Pelican case, a heavy-duty PVC pipe capped at both ends, or a salvaged military ammo can.
-2.  **The Power:** Connect the board to a simple battery holder containing two recycled 18650 lithium-ion cells (salvaged from old laptop battery packs or power tools) and a cheap 5V solar charge regulator wired to a small solar panel.
-3.  **The Antenna:** Ditch the tiny rubber antenna that comes in the box. Invest in or build a tuned, high-gain omnidirectional fiberglass antenna. Elevate the node as high as possible, in a tree canopy, on a rooftop, or on a high ridge line. Line-of-sight is everything; a elevated 100-milliwatt LoRa node can easily transmit messages over thirty miles.
+Collecting a bottle is not the same as converting its material into a dependable replacement part. Recycling and waste-to-resource experiments have their own inputs, losses, and limits. An attractive loop drawn on a page doesn't establish a closed material balance.
 
-## 2. The Muscle: DC-Native Solar and Battery Microgrids
-If you hire a commercial solar company to install an off-grid system, they will sell you a massive, expensive, highly complex array. They will install high-voltage photovoltaic panels, a complex solar charge controller, a massive high-capacity lithium-ion battery bank, and a heavy, hot **AC Inverter**.
+Keep ordinary cleanup useful on its own. The place can be cleaner even if you haven't built a recycling plant. A repair shop can help people even if it still orders parts from distant manufacturers.
 
-The inverter’s job is to take the clean 12V, 24V, or 48V Direct Current (DC) electricity generated by your panels and convert it into 120V or 240V Alternating Current (AC) electricity so it can run standard household appliances.
+## Help that reaches a body
 
-But if you look closely at your appliances, your phone charger, your laptop, your LED lightbulbs, your mesh routers, and your water pumps, they all run on DC power. Their power cords contain heavy plastic bricks whose sole purpose is to convert the AC house current *back* into low-voltage DC power.
+Health belongs in the same larger ambition. We want less pain, earlier help, better treatment, and more room to live. A machine that advances a laboratory task, a tool that assists a clinician, and an aid that helps someone move through a day are different possibilities. Each needs evidence about the benefit it claims. An encouraging research result isn't yet a treatment someone can depend on.
 
-![The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 percent converting DC to AC and again converting back to DC at the wall brick, while the DC-native chain runs solar to battery to fuse block to devices with zero conversion loss](/book-images/ch17-dc-native.svg)
+The access question remains after the technical achievement. If useful care exists but a person can't obtain it, the work of making that advance serve humanity is unfinished. A person should not have to wish the invention had never happened because they fear what its business model will do to them.
 
-*The round-trip toll. Every load in the shell already wanted DC; the inverter chain charges you twice to deliver it.*
+This is what I want optimism to demand of us. Use capability to relieve the burdens people already carry. Evaluate the machine honestly. Arrange access deliberately. Keep people able to question what is being done to them and for them. A society can choose those purposes, then do the practical work required to make them real.
 
-This is a thermodynamic disaster. You are losing up to 30% of your captured solar energy simply converting it back and forth through silicon components that generate heat and are highly vulnerable to failure.
-
-In the cracks, we build **DC-Native Systems**.
-
-We run our microgrids on a unified 12V or 24V DC bus. We completely eliminate the inverter.
-
-  - **Local Distribution:** We route power through standard marine-grade fuse blocks.
-  - **Direct DC Loads:** We run DC-native LED puck lights, marine bilge pumps for water filtration, USB-C chargers for communications hardware, and high-efficiency 12V compression refrigerators.
-  - **Recycled Storage:** Instead of buying expensive, proprietary home-battery packs with closed-source battery management systems (BMS) that can remotely lock down the cell if they detect an unapproved charger, we build our own battery banks. We salvage deep-cycle lead-acid batteries from golf carts, marine vessels, or backup power units (UPS). With a simple voltmeter and basic maintenance, these rugged chemistries can keep your lights on for decades.
-
-## 3. The Skeleton: Open-Source Machine Tools
-Securing communication and power is only half the battle. Eventually, things are going to break. The plastic gears in your water filter will wear down; the metal bracket on your solar mount will snap; the agricultural tools you rely on will shear a bolt.
-
-If you must order replacement parts from a centralized distributor, your survival is still permission-based.
-
-To achieve true mechanical autonomy, your community must establish a **Neighborhood Fab Lab** utilizing open-source machine tools.
-
-![The Neighborhood Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power](/book-images/ch17-fab-lab.svg)
-
-*The Neighborhood Fab Lab. Broken means fabricate, not wait.*
-
-The gold standard for hyper-local fabrication is the **Global Village Construction Set (GVCS)**, an open-source project that details how to build the fifty industrial machines necessary to construct a small, modern, sustainable civilization from scratch, including tractors, 3D printers, wind turbines, and brick presses.
-
-The three critical starting tools for any parallel community are:
-
-### 1. The RepRap 3D Printer
-Instead of buying a proprietary, cloud-tethered 3D printer that requires online slicing software, we build or modify a **RepRap**-style printer.
-
-  - **Self-Replicating:** RepRap printers are designed so that nearly half of their own structural parts can be printed by another RepRap.
-  - **Recycled Feedstock:** By building a simple DIY filament extruder, you can turn discarded PET plastic water bottles and food containers directly into high-strength printing filament (PETG). You are literally turning plastic trash into custom engineering parts, seals, gears, and replacement valves.
-
-### 2. The BCS-Style Walk-Behind Tractor
-A standard four-wheel tractor is a massive energy liability. It burns immense amounts of fuel, requires complex hydraulic systems, and is packed with proprietary computer modules.
-
-Instead, we pool resources to acquire or assemble a heavy-duty, open-source **two-wheel walk-behind tractor** (similar to a BCS system).
-
-  - **Multi-Tool Platform:** A single walk-behind tractor engine can be coupled to a flail mower, a rotary plow, a wood chipper, a water pump, or even a high-output backup generator.
-  - **Mechanical Simplicity:** Running on a simple, single-cylinder diesel engine, these machines can be easily converted to run on locally produced biodiesel, vegetable oil, or wood gas.
-
-### 3. The Faraday Shield Box
-The modern atmosphere is saturated with electromagnetic noise, static charges, and the potential threat of localized electromagnetic pulse (EMP) devices.
-
-To protect your community’s critical spare microchips, LoRa transceivers, and diagnostic tools, you must construct a **Faraday Shield**.
-
-  - **The Hack:** Take a standard, heavy-duty galvanized steel trash can with a tight-fitting metal lid. Line the interior completely with thick, non-conductive cardboard or foam insulation (no metal component of your devices must touch the outer metal can). Place your spare electronics, wrapped in anti-static bags, inside the insulated interior. Seal the lid securely, wrapping the seam with conductive copper adhesive tape.
-
-You now have a physical vault that is completely impenetrable to high-voltage electromagnetic interference.
-
-## The Proof Is Not Hypothetical
-
-Everything in this chapter already exists, and you can watch people build it this weekend. This is the part the doomers never account for: while the comment sections argue about whether the machine ends the world, a quiet and growing number of people are pointing the same machine at their own survival and posting the schematics.
-
-One of them, working under the handle SECTOR 07, wanted his home aquaponics loop to stop depending on a store. The system grows fish and vegetables together, but it still needed bought fish food, so the loop was never closed. His fix was to grow the food too: microalgae, some of the fastest protein on the planet, cultivated the way the labs do it, in a machine called a photobioreactor. A lab-grade one costs tens of thousands of dollars. He printed his on a Bambu A1, a 3D printer that costs less than a used laptop, and ran it on a Raspberry Pi, two Arduinos, and a pH-dosing module he designed himself out of ring magnets and a silicone tube. It grows roughly eight grams of algae a week. It is not finished, and he says so plainly in his own build logs: features he never wired up, automation he never got to, a version he would not recommend anyone copy yet. That honesty is the point. This is not a product launch. It is a person learning in public, and the drawings are free.
-
-![A DIY 3D-printed photobioreactor: a clear vessel of bright green algae culture on a printed frame with a Raspberry Pi board and status light](/book-images/ch17-photobioreactor.png)
-
-*Tens of thousands of dollars in a lab. A few hundred on a workbench.*
-
-![The closed algae fish-food loop drawn as a cycle: fish tank to grow beds to dry-and-grind to photobioreactor and back to the fish as home-made food](/book-images/ch17-algae-loop.svg)
-
-*Grow the fish food too, and the last store-bought input drops out. The loop closes.*
-
-Or take the one-person operation behind EasyGrow, run out of a garage. He designs recirculating vertical grow-towers that use ninety percent less water than a row garden and produce several times the food per square foot. When off-grid customers told him his pumps needed power they did not have, he taught himself to build wind turbines, winding his own axial-flux alternators by hand, and rural-internet antennas so their greenhouses could report their own status. His towers now feed a stadium in Florida, walk-in lettuce markets in Nigeria, off-grid plots in Argentina. Ask him why he refuses to build pots flimsy enough to need replacing every year, the way his imitators do, and he will tell you: "I'm not in business to get rich. I'm in business to grow food and help people grow food."
-
-Now hold that next to the other version of the very same technology. The industrial vertical-farm vendors sell nearly identical hardware with the opposite pitch. Their brochures brag that the platform "reduces labor costs" and "decreases human touch." Same sensors, same pumps, same automation. One spirit builds the tool to remove people from the loop. The other builds it to put a scared, capable person back in charge of feeding their own family, and gives away the plans. The tools do not choose which future they serve. People do. This whole chapter is a bet on which spirit wins, and the people already soldering are the reason to bet on the second one.
-
-## Step Five: Build Your First Node
-Autonomy is not an intellectual concept. It is a physical, calloused-hand reality. To take ownership of your physical tools today:
-
-1.  **Order a Meshtastic Board:** Purchase a cheap Heltec V3 or LilyGO T-Beam board. Flash the open-source Meshtastic firmware using your web browser, connect it to your phone via Bluetooth, and start communicating off-grid with other nodes in your area.
-2.  **Build a 12V Direct Current Power Supply:** Find a discarded 12V car battery or deep-cycle marine battery. Connect it to a simple 12V fuse block. Use it to power your smartphone, your mesh nodes, and a few low-cost 12V LED lights. Congratulations: you have just built your first DC-native microgrid.
-3.  **Build a Solder Iron Rig:** Buy a simple 12V soldering iron that runs directly off your battery alligator clips. Learn how to execute a clean, mechanically sound wire splice.
-
-The machine wants to keep you helpless, dependent on proprietary silicon, and waiting for authorized repair technicians. We are answering by reclaiming the solder iron, the open-source firmware, the DC line, and the raw metal of the earth.
-
-Keep your microcontrollers shielded. Protect your copper loops. Build for the long haul.
+This week, inventory tools with the people doing one existing food or cleanup task. Record what is available, who can use it, what requires training, and who maintains it. The tool library starts with accurate information, not a shopping spree.
 
 ---
 
@@ -183,14 +94,16 @@ Keep your microcontrollers shielded. Protect your copper loops. Build for the lo
 
 In 1968 Stewart Brand put NASA's photograph of the whole Earth on a big black paperback cover and printed three words under the title: **Access to Tools.**
 
-The *Whole Earth Catalog* listed welding rigs, geodesic dome mathematics, seed suppliers, calculators, books on midwifery and books on cybernetics, anything that helped an individual, in Brand's words, conduct his own education, find his own inspiration, and shape his own environment. It sold none of it directly: each entry ran as a review with a price and the supplier's address, what its own statement of purpose called an evaluation and access device. It refused to separate the homestead from the computer; the back-to-the-land commune and the personal computer both came out of its pages, carried by the same readers. Steve Jobs, closing his 2005 Stanford commencement address, described it as "sort of like Google in paperback form, 35 years before Google came along," and gave the graduating class its sign-off as his own final advice: stay hungry, stay foolish.
+The *Whole Earth Catalog* listed welding rigs, geodesic dome mathematics, seed suppliers, calculators, books on midwifery and books on cybernetics, anything that helped an individual, in Brand's words, conduct his own education, find his own inspiration, and shape his own environment. It sold none of it directly: each entry ran as a review with a price and the supplier's address, what its own statement of purpose called an evaluation and access device. It refused to separate the homestead from the computer; its readership connected strands of back-to-the-land culture and personal computing without being the sole source of either. Steve Jobs, closing his 2005 Stanford commencement address, described it as "sort of like Google in paperback form, 35 years before Google came along," and gave the graduating class its sign-off as his own final advice: stay hungry, stay foolish.
 
-**The mechanism.** A catalog of tools is secretly a map of possible selves. Brand understood that people do not become capable by being credentialed. They become capable by getting access, and then getting started. Curation was the product; the tools already existed, scattered and invisible, exactly as they do now.
+**The mechanism.** Curation can make tools and knowledge easier to find. Access also involves cost, skills, maintenance, and whether a tool fits the task.
 
-**The rule.** This chapter is this book's version of that black paperback. Treat your toolset the way Brand treated the catalog: as your education, assembled deliberately, owned outright, and shared forward. Every tool in this chapter was chosen so that you understand it, can repair it, and cannot be locked out of it. Access to tools. It worked in 1968. It is the whole game now.
+**The rule.** Build a useful toolset, not a collection of promises.
 
 **The practice.**
 
-1. Write your own one-page catalog tonight: every tool you own that you actually understand, can repair, and cannot be remotely disabled or locked out of. Be strict; a device you can only use is not on the list. The page will be shorter than you expect. The gaps are not a judgment. They are your curriculum, in priority order.
-2. Close one gap per month. Either learn an owned tool down to the repair level (take it apart, find its manual, buy its spare parts) or replace one rented capability with an owned one. Twelve months of this and your catalog is a different document, and so are you.
-3. Be somebody's access. Brand's genius was not owning tools; it was cataloging them for people who didn't know where to start. Publish your list, lend your tools with a signature and a return date, or run one workshop for your street. The Whole Earth Catalog made builders out of readers. Your one page can do that for at least one person, and one is how it always starts.
+1. Inventory what your group already has.
+2. Identify one missing function rather than a fashionable product.
+3. Find who can teach and maintain the proposed tool.
+
+---

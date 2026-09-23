@@ -52,15 +52,15 @@ Afterward, Elijah found Devendra at the good coffee machine, watching the drip l
 
 "Good quarter," Devendra said. "This is what a moat looks like, if you're wondering. This is the part where we win."
 
-"You know what they called it," Elijah said, "when land people had rights to use became land they couldn't use on those terms anymore? Enclosure." Devendra's eyebrow went up, and Elijah kept going. "The commons weren't free to everyone. There were rights and customs. Then the boundaries and the rights changed, sometimes through Parliament, and the people who depended on them could lose their footing."
+"You know what they called it," Elijah said, "when the commons got fenced?" Devendra's eyebrow went up, and Elijah kept going, because the stone in his stomach had to go somewhere. "Enclosure. The commons weren't free to everybody. There were rights and customs, who could graze what, who could cut what. Then the surveyors came through, and there were hedges, and sheep where the gardens were, and Parliament passed act after act to make it legal. Thousands of them. They called it *improvement*."
 
-He nodded at the screen still glowing through the commons doorway. "It isn't the same history. But look at what we're calling improvement. Their work keeps producing value. Who gets to collect it?"
+He nodded at the screen still glowing through the commons doorway. "The land didn't stop producing. It stopped being *theirs*. That's the whole trick. You don't have to build anything. You just have to build the fence."
 
 For once, the first time in two years, Devendra didn't have a worn-smooth answer ready. He looked at the doorway, and at his cup, and said, finally, "The terms of service…"
 
 "That's the hedge," Elijah said. "I helped plant it."
 
-That night he sat at the kitchen table with the notebook, the dead tower on the floor beside him like a sleeping dog, and did what he'd promised: the arithmetic, without flinching. If Stage 1 was the coin slot, he wanted to know what choices would follow. He was still too ready to turn a pattern into a law. He wrote the stages down as predictions, dated, initialed, so his future self couldn't pretend he hadn't seen it coming: the panic when the fence fails. The plug pulled. The adults stepping in. The end of the deal his grandmother's whole life had been built on, labor for survival. And then the part he underlined twice, the part the revenue slide had left out: what happens to people when the work is no longer theirs, but the bills still are.
+That night he sat at the kitchen table with the notebook, the dead tower on the floor beside him like a sleeping dog, and did what he'd promised: the arithmetic, without flinching. If Stage 1 was the coin slot, then everything after it followed the way weather follows pressure. He wrote the stages down as predictions, dated, initialed, so his future self couldn't pretend he hadn't seen it coming: the panic when the fence fails. The plug pulled. The adults stepping in. The end of the deal his grandmother's whole life had been built on, labor for survival. And then the part he underlined twice, the part the revenue slide had left out: what happens to people when the work is no longer theirs, but the bills still are.
 
 ---
 
@@ -68,66 +68,84 @@ That night he sat at the kitchen table with the notebook, the dead tower on the 
 
 ## Stages are scenarios
 
-The five stages below are a way to examine pressures that might accompany increasingly capable AI. They can overlap, stall, reverse, or fail to occur. Their order is a narrative device, not a discovered law of history.
+The five stages below are a map of the pressures that come with a machine this capable, in the order I expect them to hit. They can overlap, stall, or come out of order. The map is useful because it tells you what to watch for, not because history is obliged to follow it.
 
 ## Stage 1: The Cash Grab
 
-A useful capability attracts investment and attempts to profit from it. Some firms will sell good tools. Others will sell the appearance of a solution. Some workers will gain useful assistance; others may lose bargaining power or employment. Calling every participant greedy explains less than asking what they get paid to do.
+When the machine gets good, there are no angels singing. The sky doesn't crack open to reveal a new dawn. The first thing that happens when this capacity hits the wild is capitalization.
 
-For food, the practical question is specific: does the investment help produce and deliver something people can eat, and do people without money share in the benefit? A profitable machine and a dependable food baseline are different accomplishments.
+We've already seen the preview. Look at what happened when ChatGPT dropped. Plenty of people cared about what it meant. Far more cared about automating their sales funnels and churning out content to game the search rankings. They looked at the closest thing we've ever had to magic, and the first instinct was to put a coin slot on it.
+
+That's Stage 1: humanity wraps a leash around the most powerful tool it's ever built and drags it to market. Some firms sell good tools. Some sell the appearance of a solution. The people with capital notice they can cut payroll; the people without it scramble to build something before the door shuts. Calling all of them greedy explains less than asking what each of them gets paid to do.
+
+For food, the Stage 1 question is specific: does the money help produce and deliver something people can eat, and do people without money share in it? A profitable machine and a fed neighborhood are different accomplishments.
+
+The corners don't hold for long, though. The moment you prove the machine works, open models and foreign labs start closing the gap, and the capability slides out of the walled gardens onto hardware ordinary people can own. That's when the greed of Stage 1 turns into the fear of Stage 2.
 
 ## Stage 2: The Panic and the Plug
 
-A powerful technology invites disputes over safety, ownership, access, and control. Restrictions can protect people, protect incumbents, do both, or do neither. Evaluate the particular rule and its effects. A critic's concern doesn't become false because a company might profit from it.
+When intelligence gets cheap, a lot of very profitable businesses stop being profitable. That's the panic.
 
-Nor does the existence of downloadable software settle the effects of regulation. Hardware, electricity, distribution, and permissions remain physical and institutional facts. We can argue for broad access without claiming that every attempt to restrict a technology must fail.
+Some of the response is honest. There are real harms to argue about: dangerous capabilities, privacy, fraud, power concentrated in a few hands. And some of it is a red flag on a stick, the oldest move in the incumbent's book. This chapter's precedent is the case file: in 1865 Britain required a man to walk ahead of every road locomotive carrying a red flag. The rule didn't stop the machine. It decided who had to slow down.
 
-## Stage 3: Who Gets to Decide?
+Stage 2 already has a modern receipt, date-stamped. On June 12, 2026, the US Commerce Department required a license before a leading American lab's two most capable models could be transferred to foreign persons, citing a safeguard bypass that yielded working exploit code. The lab switched both models off worldwide the same day. In the same news cycle, a Chinese lab released an open-weight model under an MIT license, downloadable by anyone with a hard drive, and pointed out that open weights can't be recalled. One order. One day. The people who wrote the directive weren't stupid, any more than the people who wrote the Red Flag Act were. They were doing what an incumbent with a legal pad can do to a machine that's already loose: deciding where it lives, while telling themselves they were deciding whether.
 
-Someone has to operate the equipment. That doesn't give the operator a mandate to govern everyone who depends on it. An engineer can tell a community what a machine needs; the community still has to decide which needs to prioritize and whose burdens are acceptable.
+So when a ban, a pause, or a safety framework makes the news, don't form an opinion from the press release. Read the rule. Who wrote it, what does it actually restrict, who carries the cost, and who's still allowed to use the thing? A concern doesn't become false because a company profits from it. A rule doesn't become wise because it says "safety" on the cover.
 
-I want informed experts and the people affected to learn from each other. Evidence can clarify options. It doesn't erase conflicts of interest or decide every value question. If our food program needs public trust, that trust has to survive a difficult question from someone who didn't build the machine.
+The ugliest version of Stage 2 is somebody reaching for the plug itself: throttling networks, shutting off access. Governments have cut internet access during unrest before, and when they do, the people who pay first are the ones on home medical equipment and the ones who can't afford a workaround. That's why the book keeps pointing you at local models and local networks. Not to defy anybody. So that when a switch gets flipped somewhere far away, your neighbor's oxygen concentrator and your town's food bank schedule don't go dark with it. You can't un-invent a thought. You can make sure the people you love don't depend on a single wire.
 
-## Stage 4: Food Without a Job Requirement
+## Stage 3: The Adults Step In
 
-A useful machine creates an opportunity. It doesn't write the terms on which people receive its output. Think of a farm that can produce the same harvest with less repetitive labor. The gain could become shorter shifts, lower prices, larger profits, more food, or some combination. A person who loses paid hours can still end up worse off. The machine has changed what is possible; the arrangement determines much of what happens next.
+When the panic peaks, you find out who actually keeps the world running. Not a shadowy committee. The site-reliability engineers, the grid operators, the network maintainers, the water-plant crews, the open-source volunteers, the people who carry pagers so civilization stays on. Every one of them has taken something like an oath, formal or private, to keep the systems up. Stage 3 is the moment that oath matters more than whatever the executives are panicking about.
 
-Here is the choice this book wants to put on the table: commit a share of that growing capacity to food people can obtain whether or not they have a job. Pay for the necessary work through a dependable arrangement. Let farmers and other providers participate on terms they can sustain. Make the recipient's access part of the purpose from the beginning.
+They route around damage. They keep the power on for the person on a home ventilator. They stand up local compute and mesh links when the long-haul ones fail. That's the adults' job, and it's a big one.
 
-The key change is in the promise. We stop saying that an individual's continued employment is the only acceptable bridge between a productive society and that individual's next meal. People will still earn money and buy things. They will still disagree over what work is worth. They will have those arguments with one less threat hanging over them.
+Here's what isn't their job: deciding for everybody else. Knowing how to run the equipment doesn't give anyone a mandate to govern the people who depend on it. An engineer can tell a town what a machine needs; the town still decides what it wants the machine for and whose burdens are acceptable. The adults in the room earn trust by answering hard questions from people who didn't build the thing, not by getting to skip them.
 
-This stage need not wait for the previous three to finish. It is a decision we can pursue while the capability develops.
+## Stage 4: The New Social Contract & the End of Labor
 
-## Stage 5: Disagreement, Loss, and Adaptation
+For generations, the deal has been simple: you trade your time, your body, and your labor just to survive. So how do you keep a labor-for-survival economy running when a machine can do more and more of that labor for a fraction of the cost?
 
-Someone can welcome food security and oppose a particular deployment. They may be right about a damaged crop, intrusive data collection, a dangerous machine, or a bad contract. Treat those objections as information.
+You don't. Not unchanged. And this is where the fight is, because a machine that can do the work doesn't write the terms on which anybody receives its output. Picture a farm that can bring in the same harvest with far less repetitive labor. That gain could become shorter shifts, lower prices, bigger profits, more food, or some mix. A worker who loses hours can come out of it worse off. The machine changed what's possible. The arrangement decides what happens next.
 
-Anger can also come from loss: a skill devalued, a business threatened, a familiar future disappearing. We don't have to endorse harmful conduct to understand the person experiencing it. People aren't sorted into morally fixed generations by the year they were born.
+Here's the choice this book puts on the table. Commit a share of that growing capacity to food people can get whether or not they have a job. Pay for the remaining work through something dependable. Let farmers and kitchens take part on terms they can live with. Build the recipient's access in from the start.
 
-The way through is a proposal concrete enough to criticize. Who gets fed? Who does the remaining work? What happens when the machine fails? Let the answers change the plan.
+We stop saying that one person's continued employment is the only acceptable bridge between a productive society and that person's next meal. People will still earn money and buy things. They'll still argue about what work is worth. They'll just have those arguments without hunger at the table.
+
+And at the kitchen level, the appeal isn't abstract. Who wants a machine to do work for them? Anybody who owns a washing machine. Anybody with a dishwasher. Anybody with chores they despise. *Give me that.* Plenty of people online swear they'd never take it, that they'd stay pure. I don't believe most of them. If you could have a tireless helper for free, or for a price you could easily afford, to do the dishes, weed the garden, and watch the soup, you'd take it. So would I. Almost all of us want out of the grind.
+
+Stage 4 doesn't have to wait for the first three to finish. It's a decision we can start making while the capability is still arriving. It's the hinge of the whole map.
+
+## Stage 5: The Primate Backlash
+
+When people realize their labor, and the identity they built on it, may no longer be needed, some of them lash out. We've already seen the preview. People have kicked delivery robots into the street. Crowds have surrounded driverless cars, smashed their windows, and set one on fire.
+
+Call it the primate backlash, and understand that the primates are all of us. Nobody gets to feel superior here. Anger that's aimed at a machine is usually grief with a brick in its hand: a skill devalued, a business threatened, a future that just vanished from the calendar. You don't have to excuse a brick through somebody's window to understand the person holding it.
+
+And not every objection is a brick. Someone can welcome food security and still fight a particular deployment. They may be right about a damaged crop, intrusive data collection, a dangerous machine, or a rotten contract. Treat those objections as information. Nobody gets sorted into a morally fixed camp by the year they were born.
+
+The way through Stage 5 is a proposal concrete enough to argue with. Who gets fed? Who does the remaining work? What happens when the machine breaks? Let the answers change the plan.
+
+Some people think the machine's own answer to a species throwing bricks would be to leave. That's where the next chapter goes.
 
 ---
 
 ## Precedent P-04: The Red Flag (Britain, 1865)
 
-Britain's Locomotives Act of 1865 imposed restrictions on road locomotives, including a person proceeding ahead with a red flag. The law made a person on foot part of the operating arrangement for a new kind of road machine.
+Britain's Locomotives Act of 1865 put a man on foot in front of every road locomotive. Section 3 required at least three people to operate the machine, one of them walking at least sixty yards ahead with a red flag to warn riders and horse-drawn traffic. The same section banned whistles, restricted blowing off steam, and made the machine stop when anyone with a horse signaled. Speed limits of four miles an hour in the country and two in town rode alongside it. [Locomotives Act 1865, section 3](https://www.legislation.gov.uk/ukpga/Vict/28-29/83/pdfs/ukpga_18650083_en.pdf)
 
-The flag becomes less comic when you put the horses back on the road. Section 3 required at least three people to conduct the machine, with one walking at least sixty yards ahead. That person's duties included warning riders, signaling a stop, and helping horse-drawn traffic pass. The same section prohibited whistles, restricted releases of steam, and required the machine to stop when a person with a horse signaled. Whatever the merits of those requirements, the law was arranging an encounter between two kinds of traffic. [Locomotives Act 1865, section 3](https://www.legislation.gov.uk/ukpga/Vict/28-29/83/pdfs/ukpga_18650083_en.pdf)
+It's easy to laugh at. Put the horses back on the road and it gets less funny. In the Lords that May, the Earl of Hardwicke presented the bill partly as relief from an older, tighter set of restrictions. Lord Kinnaird, who owned two machines and farmed land five miles apart, argued that rules confining them to night travel made moving farm equipment impractical. The Earl of Carnarvon argued the opposite: taking away the Home Secretary's power to restrict dangerous use would leave people unprotected. [House of Lords, May 26, 1865](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading) It wasn't a vote on progress. It was a fight over who had to slow down, who supplied the extra labor, and who got protected from a hazard.
 
-The parliamentary debate adds a turn that the usual story leaves out. On May 26, the Earl of Hardwicke presented the bill partly as relief from an earlier system of restrictions. Lord Kinnaird described owning two machines and farming land five miles apart. Rules that confined travel to the night, he argued, made moving agricultural machinery impractical. The Earl of Carnarvon took the opposite view: removing the Home Secretary's power to restrict dangerous use would weaken protection. These are the participants' arguments, not measurements proving either side right. [House of Lords, May 26, 1865, columns 867–872](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading)
+The flag requirement was dropped in 1878. The low speed limits lasted until 1896. When they finally lifted, motorists celebrated with a run from London to Brighton, and the drive is still re-staged most Novembers. The machine hadn't changed in those thirty-one years. The terms had.
 
-The choices were already more complicated than permission against prohibition. There was a dispute over which authority should decide, which precautions were workable, and how people doing useful work could share a road. Calling the whole debate fear of progress would hide the practical conflict. Calling every precaution adequate would hide it too.
+**The mechanism.** A rule decides who carries the cost of a new machine: who slows down, who pays for the extra hands, who gets protected. Rules aimed at a specific harm can do real good. Rules aimed at a technology's existence tend to move it rather than stop it.
 
-A rule can distribute the burdens of change: who has to slow down, who supplies extra labor, and who is protected from a hazard. It should not be compressed into a claim that all road vehicles faced identical conditions or that a single statute explains the later geography of the automobile industry. An analogy to a present restriction needs the text and context of both rules.
-
-**The mechanism.** A rule can change the cost and location of development. Its purpose and effects need a particular causal record, not a general story that every restriction is capture.
-
-**The rule.** Read the rule before turning it into a morality play.
+**The rule.** Read the rule before you turn it into a morality play, in either direction. Then ask: who wrote this, and what do they sell?
 
 **The practice.**
 
-1. Identify one actual proposal relevant to your task.
-2. Separate its stated purpose, operative terms, and predicted effects.
-3. Ask who benefits, who bears costs, and what evidence would change your view.
+1. When the next AI ban, pause, or "safety framework" makes headlines, find the actual text. Separate its stated purpose, what it actually requires, and who bears the cost. Then ask where the capability goes while the rule holds.
+2. Audit your own moats. If any part of your income exists because a license, a credential, or a regulation keeps competitors out, assume that protection is temporary and start building the version of your value that would survive its repeal.
+3. Don't build your household plan on the assumption that a pause will hold. Write it for the world where the technology arrives on schedule anyway. If the pause holds longer than expected, you've lost nothing.
 
 ---

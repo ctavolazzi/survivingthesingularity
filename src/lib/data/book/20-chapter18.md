@@ -115,7 +115,7 @@ If global shipping stopped for a month, could your community keep everyone fed? 
 
 ## What going right would look like
 
-A person loses a job and still eats. A worker finishes a shorter shift without a smaller life waiting at home. A caregiver can accept help without proving they have no other choice. A grower receives fair payment for food that reaches people who cannot pay for it themselves.
+Picture the ordinary version. A cook loses a job and still eats. A worker finishes a shorter shift without a smaller life waiting at home. A caregiver can accept help without proving they have no other choice. A grower receives fair payment for food that reaches people who cannot pay for it themselves.
 
 That is a future worth doing practical work for. It doesn't require every machine to become perfect. It requires the failures of a machine, a market, or an employer to stop falling immediately onto a person's ability to survive.
 

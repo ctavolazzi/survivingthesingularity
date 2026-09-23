@@ -2,7 +2,7 @@
 
 ![Solar panels on a rural outbuilding roof](/book-images/ch13-solar-barn.jpg)
 
-*Solar on an outbuilding. The shouse grid starts with one roof. (Ermell, CC BY-SA 4.0, via Wikimedia Commons)*
+*Solar on an outbuilding. The shouse grid starts with one roof. (Reinhold Möller, CC BY-SA 4.0, via Wikimedia Commons)*
 
 
 

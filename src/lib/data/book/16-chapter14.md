@@ -1,8 +1,8 @@
 # Chapter 14: The Collapse of the Long Tail
 
-![Interior of an abandoned shopping mall](/book-images/ch14-dead-mall.jpg)
+![An abandoned bar inside an older shopping mall in Haifa](/book-images/ch14-dead-mall.jpg)
 
-*A dead mall. Gradually, then suddenly. (User:Mattes, Public domain, via Wikimedia Commons)*
+*An abandoned bar in an older shopping mall in Haifa. Gradually, then suddenly. (Mattes, Public domain dedication by Mattes, via Wikimedia Commons)*
 
 
 > *“How did you go bankrupt?” … “Two ways,” Mike said. “Gradually and then suddenly.”*

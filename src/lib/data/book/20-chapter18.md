@@ -2,7 +2,7 @@
 
 ![Topographic map with compass rose](/book-images/ch18-compass-map.jpg)
 
-*The map, before the route. Premortem first, then move. (SFC9394, CC BY 2.5, via Wikimedia Commons)*
+*The map, before the route. Premortem first, then move. (SFC9394; compass rose by Stefan-Xp, CC BY 2.5, via Wikimedia Commons)*
 
 
 > *"Plans are worthless, but planning is everything."*

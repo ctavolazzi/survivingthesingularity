@@ -2,7 +2,7 @@
 
 ![Hubble Ultra-Deep Field showing thousands of galaxies](/book-images/ch04-hubble-deep-field.jpg)
 
-*The Hubble Ultra-Deep Field. The available real estate. (NASA/ESA, Public domain, via Wikimedia Commons)*
+*The Hubble Ultra-Deep Field. The available real estate. (NASA, ESA, and S. Beckwith (STScI) and the HUDF Team; black-point adjustment by Noodle snacks, CC BY 4.0 (primary ESA/Hubble distribution), via Wikimedia Commons)*
 
 
 > *"Now, my own suspicion is that the universe is not only queerer than we suppose, but queerer than we can suppose."*

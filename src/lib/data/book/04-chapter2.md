@@ -1,8 +1,8 @@
 # Chapter 2: The Era of AGI (Stages 1–5)
 
-![Robotic arms assembling a car body](/book-images/ch02-factory-robots.jpg)
+![Robotic arms in an interactive Jaguar assembly exhibit at Thinktank, Birmingham](/book-images/ch02-factory-robots.jpg)
 
-*Robotic arms at work. The structural automation of labor, already routine. (ell brown, CC BY-SA 2.0, via Wikimedia Commons)*
+*Robotic arms in Thinktank's interactive Jaguar assembly exhibit. A demonstration of industrial automation. (ell brown, CC BY-SA 2.0, via Wikimedia Commons)*
 
 
 > *"Thus the first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control."*

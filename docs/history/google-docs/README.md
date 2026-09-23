@@ -6,9 +6,9 @@ Filename date is the Drive modified date of the `.gdoc` stub, not necessarily
 the date of writing. The Workbook carries an internal date of "Draft v1 March 31, 2024".
 
 The Author's Foreword came from iCloud, not Drive. The two "Convergence Horizon" files
-are the Drive docs titled "Singularity, Collapse, and Resilience" and "Navigating the
-AI Revolution and Singularity"; both open with the same Convergence Horizon report, and
-which export is A and which is B was not recorded.
+are two Drive docs that open with the same Convergence Horizon report: A is "Navigating the
+AI Revolution and Singularity", B is "Singularity, Collapse, and Resilience" (matched by
+content hash against the browser's Desktop copies of the exports).
 
 These are the inputs to the version-history report and to v0.9.1. Do not edit them.
 

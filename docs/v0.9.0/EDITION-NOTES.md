@@ -100,8 +100,9 @@ transcript, so it stays out.
 - `sts.py id verify`: OK, 1,936 blocks. The committed index was regenerated with
   `sts.py id build`; the verify command checks a live index, so its pass alone
   did not cover the stored file.
-- Gate script (`python3 docs/v0.9.0/gates.py .`): 0 failures
-  on the manuscript, 13 on a deliberately broken copy.
+- Gate script (`python3 docs/v0.9.0/gates.py .`): prints 2 hits on the
+  manuscript, both the correct *Northanger Abbey* "Chapter 25" references, and
+  13 on a deliberately broken copy.
 - PDF: 30 sections, zero TeX or markdown in the extracted text, zero render
   errors; cover, title, contents, all equation pages, two diagram pages and the
   final page were rendered and inspected.

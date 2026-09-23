@@ -17,7 +17,7 @@ These sources support particular claims, not the book's entire proposal. Origina
 ## Useful capability and its limits
 
 - John Jumper and colleagues, [Highly Accurate Protein Structure Prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2), *Nature* 596 (2021), 583–589. Original research on protein-structure prediction. Better structural information can aid research; a predicted structure is not itself a treatment.
-- Jonathan M. Stokes and colleagues, [A Deep Learning Approach to Antibiotic Discovery](https://doi.org/10.1016/j.cell.2020.01.021), *Cell* 180 (2020), 688–702.e13. Original laboratory research using a neural network to identify antibacterial candidates, followed by experiments including mouse infection models. This is not evidence of an established general cure in humans. The [open manuscript](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) corresponds to PMID 32084340; the original article is distinct from its separately indexed correction.
+- Jonathan M. Stokes and colleagues, [A Deep Learning Approach to Antibiotic Discovery](https://doi.org/10.1016/j.cell.2020.01.021), *Cell* 180 (2020), 688–702.e13. Original laboratory research using a neural network to identify antibacterial candidates, followed by experiments including mouse infection models. This is not evidence of an established general cure in humans. The [open manuscript](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) corresponds to PMID 32084340.
 - Sellafield Ltd, [Sellafield Robotics: Using Spot More for Spotless Nuclear Clean-up](https://www.gov.uk/government/news/sellafield-robotics-using-spot-more-for-spotless-nuclear-clean-up) (23 March 2023). An operator's account of remotely operated inspection and cleaning in hazardous areas. It documents a particular deployment, with people and specialist equipment, rather than autonomous removal of every kind of toxic waste.
 - National Institute of Standards and Technology, [Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf), NIST AI 600-1 (July 2024). The final publication identifies risks including erroneous outputs, privacy loss, harmful bias, security failures, and environmental effects. These concerns require attention alongside the distribution of economic benefits.
 
@@ -94,7 +94,7 @@ Kevin Binfield, [Luddite History](https://campus.murraystate.edu/academic/facult
 
 Music Performance Trust Fund, [About](https://musicpf.org/about/). The fund's institutional account traces its establishment in 1948 to agreements between the American Federation of Musicians and recording companies. It documents a negotiated mechanism for financing admission-free performances. It does not imply that every playback of a recording generates a payment to this fund.
 
-University of Maryland Special Collections in Performing Arts, [The Recording Ban of 1942](https://exhibitions.lib.umd.edu/songsofwar/wwii/currents/recording-ban), in *Modern Songs of War and Conflict*, curated by Ben Jackson. Institutional account of the commercial recording dispute, inventories, and different settlement dates. The independent fund's subsequent establishment remains separately documented by its existing bibliography entry.
+University of Maryland Special Collections in Performing Arts, [The Recording Ban of 1942](https://exhibitions.lib.umd.edu/songsofwar/wwii/currents/recording-ban), in *Modern Songs of War and Conflict*, curated by Ben Jackson. Institutional account of the commercial recording dispute, inventories, and different settlement dates.
 
 ### P-11: Torches of Freedom
 
@@ -102,7 +102,7 @@ Vanessa Murphree, [Edward Bernays's 1929 “Torches of Freedom” March: Myths a
 
 Edward L. Bernays, [Propaganda](https://www.gutenberg.org/cache/epub/78634/pg78634-images.html) (New York: Horace Liveright, 1928), chapter IV, pages 54–56. Primary text describing a hypothetical piano-marketing method. It establishes what Bernays advocated, not universal effectiveness.
 
-Vanessa Murphree, [Teaching Our Journal: Edward Bernays's 1929 “Torches of Freedom” March](https://www.american-journalism.org/teaching-our-journal/teaching-our-journal-edward-bernayss-1929-torches-of-freedom-march/), *American Journalism*. The researcher's account of methods, archival limitations, and contemporary press responses, supplementing the existing 2015 article entry.
+Vanessa Murphree, [Teaching Our Journal: Edward Bernays's 1929 “Torches of Freedom” March](https://www.american-journalism.org/teaching-our-journal/teaching-our-journal-edward-bernayss-1929-torches-of-freedom-march/), *American Journalism*. The researcher's account of methods, archival limitations, and contemporary press responses.
 
 The [Library of Congress digital-object record](https://www.loc.gov/pictures/resource/ds.07375/), digital ID ds.07375, supplies another locator for the photograph cited above.
 
@@ -144,7 +144,7 @@ Swiss Camera Museum, [1975: The Invention](https://www.cameramuseum.ch/en/discov
 
 Fujifilm, [Healthcare](https://www.fujifilm.com/us/en/about/hq/corporate/field/healthcare) and [Corporate History](https://global.fujifilm.com/en/about/corporate/history). The company's account describes applications of its materials and imaging expertise in other fields, including healthcare. This documents its stated strategy and activities, not a controlled comparison proving why one company succeeds and another struggles.
 
-Fujifilm Holdings, [90th Anniversary Corporate History](https://holdings.fujifilm.com/special/90th/en/history/), sections on the transition from photographic film and the 2004 plan. Corporate retrospective; the legacy URL redirects to the current anniversary page.
+Fujifilm Holdings, [90th Anniversary Corporate History](https://holdings.fujifilm.com/special/90th/en/history/), sections on the transition from photographic film and the 2004 plan.
 
 Fujifilm, [ASTALIFT History](https://ls-jp.fujifilm.com/astaliftbrand/about/history/), Japanese brand chronology, especially 2004 and 2007. Used for commercialization history, not product efficacy.
 
@@ -159,15 +159,15 @@ US Office of War Information, [Plant a Victory Garden](https://digital.library.u
 
 Thomas Paine, *Common Sense* (1776). Library of Congress [collection record for the book](https://www.loc.gov/item/04002086/) and [exhibition context](https://www.loc.gov/exhibitions/declarations-promise/visual-descriptions/drafting-the-declaration/). These identify the work and its argument for independence. Its circulation does not establish that one pamphlet alone caused a revolution.
 
-- University of Michigan, Clements Library, [Going Viral in 1776](https://clements.umich.edu/exhibit/revolutionary-paine/going-viral-in-1776/). Exhibition descriptions of Bell, Bradford, and London editions of Common Sense. Supports the paper wrapper, two-shilling price, anonymous issue, printing dispute, and handwritten additions in the library's Almon copy. Conflicting sellout intervals on the page are not used.
+- University of Michigan, Clements Library, [Going Viral in 1776](https://clements.umich.edu/exhibit/revolutionary-paine/going-viral-in-1776/). Exhibition descriptions of Bell, Bradford, and London editions of Common Sense. Supports the paper wrapper, two-shilling price, anonymous issue, printing dispute, and handwritten additions in the library's Almon copy.
 - University of Minnesota Law Library, [Common Sense, Philadelphia, 1776](https://librarycollections.law.umn.edu/treasures/index.php?npage=13), Treasures of the Riesenfeld Center. Description of an enlarged Bradford edition and the author-printer dispute over profits. The account establishes the described competing positions, not an independent audit of Bell's books.
 
 ### P-21: Whole Earth Catalog
 
 [Whole Earth Catalog, Fall 1968](https://wholeearth.info/p/whole-earth-catalog-fall-1968), digitized issue indexed by Whole Earth Index. An original example of gathering tools and practical information. Steve Jobs's [2005 Stanford commencement address](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says) is the primary source for his later comparison of the catalog to Google in paperback form. His analogy is a recollection, not a claim that the catalog already provided an internet search engine.
 
-- [Whole Earth Catalog, Fall 1968: sample pages reproduced with later anniversary annotations](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf). The contents and purpose/function page establish examples and selection criteria; the added availability warnings belong to the later reprint. Distinguish the two layers when citing it.
-- David Senior, Museum of Modern Art Library, [Access to Tools: Publications from the Whole Earth Catalog, 1968–1974](https://www.moma.org/interactives/exhibitions/2011/AccesstoTools/) (2011). Institutional exhibition history of the catalog, affiliated Truck Store, and reader contributions. Supports correcting an absolute claim that the organization sold none of the reviewed goods directly.
+- [Whole Earth Catalog, Fall 1968: sample pages reproduced with later anniversary annotations](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf). The contents and purpose/function page establish examples and selection criteria; the added availability warnings belong to the later reprint.
+- David Senior, Museum of Modern Art Library, [Access to Tools: Publications from the Whole Earth Catalog, 1968–1974](https://www.moma.org/interactives/exhibitions/2011/AccesstoTools/) (2011). Institutional exhibition history of the catalog, affiliated Truck Store, and reader contributions.
 
 ### P-22: Y2K preparation
 
@@ -209,6 +209,79 @@ City of Vienna, Municipal and Provincial Archives, [From Red Vienna to the Stän
 
 City of Vienna, Rathauskorrespondenz, [Der Karl-Marx-Hof ist 60](https://presse.wien.gv.at/1990/10/11/der-karl-marx-hof-ist-60), October 11, 1990. German anniversary notice describing the complex and ongoing renovation plans.
 
+## Sources for material restored or added in this edition
+
+Most of what follows was researched for earlier editions, cut in v0.8.0, and restored here; a few items were checked for the first time for this edition. Figures quoted from a builder's own video or a company's own history are attributed as such in the text.
+
+### Introduction and Chapter 1: definitions, forecasts, and the Transformer
+
+- Nikola Danaylov, [17 Definitions of the Technological Singularity](https://www.singularityweblog.com/17-definitions-of-the-technological-singularity/), Singularity Weblog. Sixteen definitions and an empty seventeenth slot; source of the Thornton (1847) and Kevin Kelly definitions.
+- Samuel Butler, ["Darwin among the Machines"](https://en.wikisource.org/wiki/Darwin_among_the_Machines), *The Press*, Christchurch, 13 June 1863; and [*Erewhon*](https://www.gutenberg.org/ebooks/1906) (1872).
+- Alan Turing, ["Intelligent Machinery, A Heretical Theory"](https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4), c. 1951, Turing Digital Archive, King's College Cambridge.
+- Stanislaw Ulam's 1958 recollection of John von Neumann, as quoted in Vinge's essay, listed above.
+- Hans Moravec, *Mind Children* (Harvard University Press, 1988); Nick Bostrom, ["How Long Before Superintelligence?"](https://nickbostrom.com/superintelligence) (1997, revised); Ray Kurzweil, *The Singularity Is Near* (Viking, 2005); John Smart, [Acceleration Watch](http://www.accelerationwatch.com/).
+- Leopold Aschenbrenner, [Situational Awareness: The Decade Ahead](https://situational-awareness.ai/) (2024). One insider's argument, cited as such.
+- Katja Grace and colleagues, [Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843) (2024). Source of the 2022 and 2023 aggregate forecasts, the 10 percent probability of high-level machine intelligence by 2027, and the extinction-risk responses.
+- Brett J. Kagan and colleagues, [In vitro neurons learn and exhibit sentience when embodied in a simulated game-world](https://pubmed.ncbi.nlm.nih.gov/36228614/), *Neuron* (2022). The DishBrain *Pong* study; see also the [2024 comparison with deep reinforcement learning](https://arxiv.org/abs/2405.16946).
+- Aaron Bastani, *Fully Automated Luxury Communism* (Verso, 2019).
+
+### Chapters 3 and 4: the far horizon
+
+- Nick Bostrom, ["Are You Living in a Computer Simulation?"](https://simulation-argument.com/simulation.pdf), *Philosophical Quarterly* 53 (2003).
+- David Kipping, ["A Bayesian Approach to the Simulation Argument"](https://www.mdpi.com/2218-1997/6/8/109), *Universe* 6 (2020).
+- Copernicus's dedication and the Osiander preface are listed under P-06 above.
+
+### Chapter 5: energy and the cyberdeck lineage
+
+- *The Times* (London), July 1816, on the waltz as an "indecent foreign dance," as quoted in histories of the dance.
+- McGill Office for Science and Society, [The Moral and Medical Panic Over Bicycles](https://www.mcgill.ca/oss/article/history-did-you-know/moral-and-medical-panic-over-bicycles), on "bicycle face."
+- John Philip Sousa, ["The Menace of Mechanical Music"](https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf), *Appleton's Magazine* (1906), full text via MIT OpenCourseWare.
+- William Gibson, *Neuromancer* (1984), origin of the "cyberspace deck."
+
+### Chapter 7: work, loss, and the labor campaigns
+
+- Karsten I. Paul and Bernad Batinic, ["The need for work: Jahoda's latent functions of employment in a representative sample of the German population"](https://www.researchgate.net/publication/229915902_The_need_for_work_Jahoda's_latent_functions_of_employment_in_a_representative_sample_of_the_German_population), *Journal of Organizational Behavior* (2010).
+- John Maynard Keynes, ["Economic Possibilities for our Grandchildren"](https://www.marxists.org/reference/subject/economics/keynes/1930/our-grandchildren.htm) (1930).
+- Anandi Mani, Sendhil Mullainathan, Eldar Shafir, and Jiaying Zhao, ["Poverty Impedes Cognitive Function"](https://www.science.org/doi/10.1126/science.1238041), *Science* 341 (2013), the sugarcane-harvest study; and Mullainathan and Shafir, *Scarcity* (2013).
+- The Guardian, ["The rebel group stopping self-driving cars in San Francisco"](https://www.theguardian.com/us-news/2023/jul/26/san-francisco-stop-self-driving-cars-traffic-cone-safe-street-rebel) (26 July 2023), on Safe Street Rebel and coning.
+- Brian Merchant, *Blood in the Machine* (Little, Brown, 2023).
+- American Federation of Musicians, the robot advertisements in [*Exhibitors Herald-World*, 16 November 1929](https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up) and [17 May 1930](https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up); Smithsonian Magazine, ["Musicians Wage War Against Evil Robots"](https://www.smithsonianmag.com/history/musicians-wage-war-against-evil-robots-92702721/).
+- [Home Taping Is Killing Music](https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music) (BPI, 1981); Jack Valenti's 1982 testimony to the House Judiciary subcommittee on home recording; *Sony Corp. of America v. Universal City Studios* (1984).
+
+### Chapter 8: attention and cooperation
+
+- Gloria Mark, Daniela Gudith, and Ulrich Klocke, ["The Cost of Interrupted Work: More Speed and Stress"](https://ics.uci.edu/~gmark/chi08-mark.pdf), CHI 2008.
+- Robert Axelrod, *The Evolution of Cooperation* (Basic Books, 1984).
+- Robin Dunbar, "Coevolution of neocortical size, group size and language in humans," *Behavioral and Brain Sciences* 16 (1993).
+
+### Chapter 9: the neighborhood factory and nitrogen
+
+- International Energy Agency, [Ammonia Technology Roadmap](https://www.iea.org/reports/ammonia-technology-roadmap) (2021), for the energy use and emissions of ammonia production.
+- Kyle Gabriel and contributors, [Mycodo](https://github.com/kizniche/Mycodo), open-source environmental controller; installer at the project's documented address (checked 23 September 2026).
+
+### Chapter 10: model collapse
+
+- Ilia Shumailov and colleagues, ["AI models collapse when trained on recursively generated data"](https://www.nature.com/articles/s41586-024-07566-y), *Nature* 631 (2024).
+
+### Chapter 14: food recovery and the graveyard
+
+- USDA, [Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs). The 30 to 40 percent estimate of food waste at the retail and consumer levels.
+- California's SB 1383 edible-food-recovery requirements and France's 2016 law on supermarket food donation, as cited in the chapter.
+- Snopes, [Kodak's digital camera](https://www.snopes.com/fact-check/kodak-digital-camera-invention/), on Sasson's account of management's response; Fortune, ["Sears Could've Been Amazon"](https://fortune.com/longform/sears-couldve-been-amazon/); Variety, ["How Blockbuster Could Have Owned Netflix"](https://variety.com/2013/biz/news/epic-fail-how-blockbuster-could-have-owned-netflix-1200823443/); [Borders Group](https://en.wikipedia.org/wiki/Borders_Group).
+
+### Chapter 17: tools
+
+- SECTOR 07, [I 3D Printed a Photobioreactor](https://www.youtube.com/watch?v=SLckTj_tJg4). Builder's own video; source of the eight-grams-a-week figure and the unfinished-design caveat.
+- Kirsten Dirksen, [Mad scientist's homestead](https://www.youtube.com/watch?v=QSnHShly5R0), interviewing the EasyGrow builder. Source of his density, water, stadium, and "not in business to get rich" statements, which the chapter attributes to him.
+- SANANBIO, [Introducing the SANANBIO Uplift](https://www.youtube.com/watch?v=0s4YwzbUzhw). Vendor promotion; source of the labor-cost and human-touch claims.
+- Open Source Ecology, [Global Village Construction Set](https://www.opensourceecology.org/gvcs/); [Meshtastic](https://meshtastic.org/); [Kiwix](https://kiwix.org/).
+
+### Appendix E: the cyberdeck
+
+- Newsweek, ["What is a cyberdeck: Meet Gen Z's new DIY obsession"](https://www.newsweek.com/what-is-a-cyberdeck-gen-zs-new-custom-computing-obsession-11787017) (2026); TechCrunch, ["Cyberdecks are having a moment"](https://techcrunch.com/2026/06/02/cyberdeck-tiktok-trend-reject-big-tech/) (2 June 2026).
+- Hackaday's cyberdeck contests: [2022](https://hackaday.com/2022/10/13/2022-cyberdeck-contest-picking-the-best-of-the-best/) and [2023](https://hackaday.com/2023/09/07/2023-cyberdeck-challenge-the-best-decks-on-the-net/).
+- [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030.
+
 ## Sources for the retained epigraphs
 
 The entries below identify the work or institutional record supporting each attribution. An institutional attribution does not establish the first occasion on which a saying was used. Dialogue from a novel belongs to its character and scene.
@@ -217,6 +290,10 @@ The entries below identify the work or institutional record supporting each attr
 - **Chapter 0, William Gibson:** [Interview in Scientific American](https://www.scientificamerican.com/article/gibson-interview-cities-in-fact-and-fiction/) (26 August 2011). Gibson acknowledges and discusses the formulation quoted to him, including “not very evenly distributed.” This is a documented use, not a claim of its first appearance.
 - **Chapter 1, Vernor Vinge:** The opening of [The Coming Technological Singularity](https://edoras.sdsu.edu/~vinge/misc/singularity.html) (1993), listed above. Read the prediction with its original date.
 - **Chapter 2, I. J. Good:** [Speculations Concerning the First Ultraintelligent Machine](https://vtechworks.lib.vt.edu/bitstream/handle/10919/89424/TechReport05-3.pdf) (1965), printed page 33. The condition about retaining control is part of the sentence, not an optional qualification.
+- **Chapter 3, Konstantin Tsiolkovsky:** A translated saying attributed to Tsiolkovsky and traced by NASA's historians to his collected works of about 1911 to 1912. [NASA, Historical Origins of the ISS](https://www.nasa.gov/history/space-station-20th-historical-origins-of-iss/) Given as "commonly translated," not as the text of a specific letter.
+- **Chapter 7, Louis Pasteur:** The familiar English rendering of Pasteur's observation about the prepared mind, as given by the Institut Pasteur; attributed without claiming a checked original speech.
+- **Chapter 11, Archimedes:** A saying traditionally attributed to Archimedes; marked "attributed" because no ancient source was inspected for this edition.
+- **Chapter 17, Stewart Brand:** The 1968 *Whole Earth Catalog* statement of purpose, which reads "We are as gods and might as well get used to it" in the [available 1968 facsimile](https://eastofborneo.org/wp-content/uploads/2016/08/Whole_Earth_1968_sample.pdf). Brand later used the variant "get good at it," which a character quotes in the chapter.
 - **Chapter 4, J. B. S. Haldane:** The closing passage of the title essay in [Possible Worlds and Other Essays](https://jbshaldane.org/books/1927-Possible-Worlds/haldane-1927-possible-worlds.html) (1927), online transcription. The epigraph retains his framing as a personal suspicion.
 - **Chapter 5, Arthur Eddington:** [The Nature of the Physical World](https://www.gutenberg.org/files/72963/72963-h/72963-h.htm) (1928; digitized from a 1929 impression), chapter IV, printed pages 74–75. The second-law passage concerns physical theory, not a forecast about AI capabilities.
 - **Chapter 10, Alan Kay:** Computer History Museum, [From Alto to AI](https://computerhistory.org/blog/from-alto-to-ai/). Institutional attribution of the future-and-invention saying to Kay. This edition makes no claim to have established the date or transcript of its first delivery.
@@ -224,7 +301,3 @@ The entries below identify the work or institutional record supporting each attr
 - **Chapter 14, Ernest Hemingway:** [The Sun Also Rises](https://www.gutenberg.org/files/67138/old/67138-h/67138-h.htm) (1926), chapter XIII. Mike Campbell's exchange about bankruptcy supplies the epigraph.
 - **Chapter 15, Franklin D. Roosevelt:** [Letter to All State Governors on a Uniform Soil Conservation Law](https://www.presidency.ucsb.edu/documents/letter-all-state-governors-uniform-soil-conservation-law) (26 February 1937), transcript hosted by the American Presidency Project.
 - **Chapter 18, Dwight D. Eisenhower:** [Eisenhower Presidential Library quotation record](https://www.eisenhowerlibrary.gov/eisenhowers/quotes), identifying the National Defense Executive Reserve Conference remarks of 14 November 1957. Eisenhower introduced the planning maxim as a saying he had heard in the Army; its use here does not claim he invented it.
-
-## Editorial provenance
-
-Earlier bibliographies and the detailed evidence review remain with this edition's editorial records. Sources for deleted passages are research history, not additional proof for the revised argument. The review distinguishes checked text from catalogue identification and records unresolved retrieval or edition questions.

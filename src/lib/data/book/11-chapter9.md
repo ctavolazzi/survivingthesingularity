@@ -6,6 +6,9 @@
 
 
 
+> *"The scattering of industries over the country … so as to bring the factory amidst the fields … is surely the next step to be made."*
+> Peter Kropotkin, *Fields, Factories and Workshops* (revised edition, 1913), Chapter VII
+
 **In this chapter:**
 
 - You don't beat the global supply chain by lobbying it. You beat it by needing it less, one neighborhood at a time, without pretending you can do without it.

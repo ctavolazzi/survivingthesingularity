@@ -4,6 +4,9 @@
 
 *Sunrise from orbit. The new era doesn't ask permission, and it still has work to do. (NASA Johnson Space Center, Public domain, via Wikimedia Commons)*
 
+> *"A map of the world that does not include Utopia is not worth even glancing at, for it leaves out the one country at which Humanity is always landing."*
+> Oscar Wilde, *The Soul of Man under Socialism* (1891)
+
 ## A future worth wanting
 
 I don't want us to become so practiced at imagining catastrophe that we forget what we would build if we thought success was possible.

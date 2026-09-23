@@ -6,6 +6,9 @@
 
 
 
+> *"When a distinguished but elderly scientist states that something is possible, he is almost certainly right. When he states that something is impossible, he is very probably wrong."*
+> Arthur C. Clarke, *Profiles of the Future* (1962)
+
 **In this chapter:**
 
 - Capability, deployment, and access move at different speeds. The fight is in the gaps.

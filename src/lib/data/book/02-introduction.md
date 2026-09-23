@@ -6,6 +6,9 @@
 
 
 
+> *"It is difficult to get a man to understand something, when his salary depends upon his not understanding it!"*
+> Upton Sinclair, *I, Candidate for Governor: And How I Got Licked* (1935)
+
 It's time. It's finally time.
 
 For years, I've been talking about this, and for years, I've been labeled the local crackpot. I've watched people I love look me in the eye like I'd finally lost it, like I was spinning some paranoid fantasy. They might tell you they moved on because I'm an asshole, and maybe they're right. But I'm not wrong about the trajectory.

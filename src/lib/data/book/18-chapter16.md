@@ -6,6 +6,9 @@
 
 
 
+> *"Freedom of the press is guaranteed only to those who own one."*
+> A. J. Liebling, "The Wayward Press: Do You Belong in Journalism?", *The New Yorker* (14 May 1960)
+
 **In this chapter:**
 
 - Code and media can work while you sleep. They're the closest thing to employees that never get tired, and nobody's permission is needed to start.

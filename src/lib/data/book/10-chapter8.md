@@ -6,6 +6,9 @@
 
 
 
+> *"Men, it has been well said, think in herds; it will be seen that they go mad in herds, while they only recover their senses slowly, and one by one."*
+> Charles Mackay, *Memoirs of Extraordinary Popular Delusions and the Madness of Crowds*, Preface (1852 edition)
+
 **In this chapter:**
 
 - The last battlefield isn't the grid or the market. It's the three pounds of wet tissue behind your eyes.

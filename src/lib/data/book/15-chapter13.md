@@ -6,6 +6,9 @@
 
 
 
+> *"The cost of a thing is the amount of what I will call life which is required to be exchanged for it, immediately or in the long run."*
+> Henry David Thoreau, *Walden* (1854), "Economy"
+
 **In this chapter:**
 
 - Two steel boxes and a lot of skilled work can make a small, owned home. The double-wide hack is how you keep them from being a coffin.

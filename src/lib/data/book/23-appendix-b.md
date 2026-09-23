@@ -282,9 +282,9 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - Hackaday's cyberdeck contests: [2022](https://hackaday.com/2022/10/13/2022-cyberdeck-contest-picking-the-best-of-the-best/) and [2023](https://hackaday.com/2023/09/07/2023-cyberdeck-challenge-the-best-decks-on-the-net/).
 - [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030.
 
-## Sources for the retained epigraphs
+## Sources for the epigraphs
 
-The entries below identify the work or institutional record supporting each attribution. An institutional attribution does not establish the first occasion on which a saying was used. Dialogue from a novel belongs to its character and scene.
+The entries below identify the work or institutional record supporting each attribution. The seven epigraphs added in v0.9.1 were each checked word for word against the text named. An institutional attribution does not establish the first occasion on which a saying was used. Dialogue from a novel belongs to its character and scene.
 
 - **Preface, Hunter S. Thompson:** Simon & Schuster's [description of Fear and Loathing at Rolling Stone](https://www.simonandschuster.co.in/books/Fear-and-Loathing-at-Rolling-Stone/Hunter-S-Thompson/9781439165959) identifies the ticket-and-ride saying with Thompson. This supports the name attribution, without claiming a verified page in the 1971 novel.
 - **Chapter 0, William Gibson:** [Interview in Scientific American](https://www.scientificamerican.com/article/gibson-interview-cities-in-fact-and-fiction/) (26 August 2011). Gibson acknowledges and discusses the formulation quoted to him, including “not very evenly distributed.” This is a documented use, not a claim of its first appearance.
@@ -301,3 +301,11 @@ The entries below identify the work or institutional record supporting each attr
 - **Chapter 14, Ernest Hemingway:** [The Sun Also Rises](https://www.gutenberg.org/files/67138/old/67138-h/67138-h.htm) (1926), chapter XIII. Mike Campbell's exchange about bankruptcy supplies the epigraph.
 - **Chapter 15, Franklin D. Roosevelt:** [Letter to All State Governors on a Uniform Soil Conservation Law](https://www.presidency.ucsb.edu/documents/letter-all-state-governors-uniform-soil-conservation-law) (26 February 1937), transcript hosted by the American Presidency Project.
 - **Chapter 18, Dwight D. Eisenhower:** [Eisenhower Presidential Library quotation record](https://www.eisenhowerlibrary.gov/eisenhowers/quotes), identifying the National Defense Executive Reserve Conference remarks of 14 November 1957. Eisenhower introduced the planning maxim as a saying he had heard in the Army; its use here does not claim he invented it.
+
+- **Introduction, Upton Sinclair:** *I, Candidate for Governor: And How I Got Licked* (1935), first excerpted in the *Oakland Tribune* on 11 December 1934. [Quote Investigator, It Is Difficult to Get a Man to Understand Something](https://quoteinvestigator.com/2017/11/30/salary/) reproduces the wording, exclamation mark included.
+- **Chapter 6, Arthur C. Clarke:** *Profiles of the Future* (1962), chapter 2, "Hazards of Prophecy: The Failure of Imagination." This is the statement later called Clarke's First Law. [Quote Investigator](https://quoteinvestigator.com/2018/11/28/possible/)
+- **Chapter 8, Charles Mackay:** [Memoirs of Extraordinary Popular Delusions and the Madness of Crowds](https://www.gutenberg.org/ebooks/24518), Preface, checked in the 1852 edition. Mackay presents the herd line as something "well said," not as his own coinage.
+- **Chapter 9, Peter Kropotkin:** [Fields, Factories and Workshops](https://www.gutenberg.org/ebooks/64353), revised and enlarged edition (1913), chapter VII. The ellipses mark two omissions: a dash and the clause about combining agriculture with industry.
+- **Chapter 13, Henry David Thoreau:** [Walden](https://www.gutenberg.org/ebooks/205) (1854), "Economy." Thoreau makes the point about the price of an ordinary house and the years of a laborer's life it takes to pay for one.
+- **Chapter 16, A. J. Liebling:** "The Wayward Press: Do You Belong in Journalism?", *The New Yorker*, 14 May 1960, page 109, where it appears as a parenthetical remark. [Quote Investigator](https://quoteinvestigator.com/2015/05/21/free-press/)
+- **Conclusion, Oscar Wilde:** [The Soul of Man under Socialism](https://www.gutenberg.org/ebooks/1017) (1891). A few lines later Wilde writes that "the community by means of organisation of machinery will supply the useful things."

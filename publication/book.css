@@ -146,3 +146,7 @@ code, pre { font-family: BookSans; font-size: 9pt; overflow-wrap: anywhere; whit
 .cover-art { position: absolute; top: 3.42in; left: 0.43in; width: 5.15in; height: 3.45in; }
 .cover .cover-author { position: absolute; left: 0.57in; bottom: 0.53in; font: 12pt BookSans; letter-spacing: 0.03em; }
 .cover .cover-rule { position: absolute; bottom: 1.09in; left: 0.57in; right: 0.57in; border-top: 0.6pt solid #8c9c72; }
+
+/* v0.9.1: the original cover, full bleed */
+.cover.original-cover { padding: 0; background: none; }
+.cover-original { position: absolute; inset: 0; width: 6in; height: 9in; object-fit: cover; }

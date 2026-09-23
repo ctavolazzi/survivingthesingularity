@@ -118,7 +118,7 @@ for index, section in enumerate(META['sections']):
             audit = RIGHTS_BY_FILE.get(filename)
             assert audit and audit['status'] == 'retain', ('Uncleared image',filename)
             caption = fig.find('figcaption')
-            if caption and audit['kind'] == 'third_party':
+            if caption and audit['kind'] == 'third_party' and audit.get('caption_policy') != 'keep':
                 old = caption.get_text()
                 description = old.split(' (',1)[0]
                 if filename == 'ch02-factory-robots.jpg':
@@ -204,7 +204,7 @@ toc += '<a class="toc-row" href="#image-credits">Illustration credits &amp; desi
 
 credits_data = json.loads((ROOT/'static/book-images/credits.json').read_text())
 credits = '<section class="chapter credits" id="image-credits"><div class="running-label">ILLUSTRATION CREDITS</div><h1>Illustration credits<br/>&amp; design notes</h1>'
-credits += '<p>Original botanical and mechanical line drawings were created with Codex for this edition as editable SVG artwork. The three part-divider illustrations and four photographs or artworks have been replaced for this design. Narrative and argument text are unchanged; image captions have been corrected where required.</p>'
+credits += '<p>The cover is the book\'s original cover illustration. Original botanical and mechanical line drawings were created with Codex for an earlier design as editable SVG artwork. The three part-divider illustrations and four photographs or artworks whose commercial reproduction basis was unclear have been replaced with those drawings. Explanatory diagrams were drawn for this book as SVG. Image captions follow the audited sources.</p>'
 credits += '<p>Typeset in Source Serif 4 and Source Sans Pro, designed by Frank Grießhammer and Paul D. Hunt respectively, published by Adobe under the SIL Open Font License 1.1.</p>'
 license_urls = {'CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 2.0':'https://creativecommons.org/licenses/by-sa/2.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/'}
 for item in credits_data:
@@ -215,11 +215,11 @@ for item in credits_data:
     title = item['source_title'].removeprefix('File:')
     source_url=audit['source_url']
     credits += f'<div class="credit"><p><b>{html.escape(title)}</b><br/>{html.escape(audit["artist"])}. {html.escape(audit["license"])}. {html.escape(audit["modification_note"])}</p><p class="credit-url"><a href="{html.escape(source_url)}">{html.escape(source_url.removeprefix("https://"))}</a><br/><a href="{html.escape(license_url)}">{html.escape(license_url.removeprefix("https://"))}</a></p></div>'
-credits += '<p>Image adaptations retain the relevant image licenses. Those licenses do not extend to the manuscript text.</p><p>Ten narrative plates were created with PixelLab and assembled for an earlier edition. These generated illustrations depict fictional scenes and are not photographs or evidence of actual deployments. The companion asset register records generation identifiers, component files and provider terms.</p></section>'
+credits += '<p>Image adaptations retain the relevant image licenses. Those licenses do not extend to the manuscript text.</p><p>'+str(sum(1 for f in included_images if RIGHTS_BY_FILE.get(f,{}).get('kind')=='generated' and f.endswith('.png')))+' narrative plates were created with PixelLab and assembled for an earlier edition. These generated illustrations depict fictional scenes and are not photographs or evidence of actual deployments. The companion asset register records generation identifiers, component files and provider terms.</p></section>'
 
 subtitle = html.escape(META['subtitle']).replace(' and the Future','<br/>and the Future')
 front = f'''<section class="front title-page"><div class="chapter-label">Christopher Tavolazzi</div><h1>Surviving<br/>the Singularity</h1><p class="subtitle">{subtitle}</p>{motif('grain-and-gripper')}<p class="edition">ILLUSTRATED EDITION</p></section>
-<section class="front copyright"><p>Surviving the Singularity<br/>{html.escape(META['author'])}</p><p>Copyright © 2026 Christopher Tavolazzi.<br/>All rights reserved in original text. Quoted material and third-party images remain subject to their respective rights. Image licenses are identified in the illustration credits.</p><p>Manuscript v0.8.2 · Publication design 01<br/>September 2026</p><p>Elijah Madrone and the cooperative are fiction. The story and its imagined deployments are distinguished from historical evidence and sourced claims in the manuscript.</p></section>'''
+<section class="front copyright"><p>Surviving the Singularity<br/>{html.escape(META['author'])}</p><p>Copyright © 2026 Christopher Tavolazzi.<br/>All rights reserved in original text. Quoted material and third-party images remain subject to their respective rights. Image licenses are identified in the illustration credits.</p><p>Manuscript v{META['version']} · Publication design 01<br/>September 2026</p><p>Elijah Madrone and the cooperative are fiction. The story and its imagined deployments are distinguished from historical evidence and sourced claims in the manuscript.</p></section>'''
 
 (HERE/'assets').mkdir(exist_ok=True)
 (HERE/'assets/ornament.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"><g fill="none" stroke="#66764e" stroke-width="1.5"><path d="M4 15h27m38 0h27M40 15l10-7 10 7-10 7z"/><circle cx="50" cy="15" r="2"/></g></svg>')
@@ -229,7 +229,7 @@ if not cover_motif.exists():
 if cover_motif.exists():
     art = cover_motif.read_text().replace('#202c28','#eee8d1').replace('#66764e','#bcc995')
     (HERE/'assets/cover-art.svg').write_text(art)
-cover = f'''<section class="cover"><div class="cover-kicker">WHAT IF IT ALL GOES RIGHT?</div><h1>Surviving<br/>the Singularity</h1><p class="cover-subtitle">{subtitle}</p><img class="cover-art" src="{(HERE/'assets/cover-art.svg').as_uri()}" alt="A mechanical gripper tending ears of grain"/><div class="cover-rule"></div><p class="cover-author">CHRISTOPHER TAVOLAZZI</p></section>'''
+cover = f'''<section class="cover original-cover"><img class="cover-original" src="{(ROOT/'scripts/book-cover.png').as_uri()}" alt="Surviving the Singularity by Christopher Tavolazzi: a moss-covered robot resting in a meadow of flowers"/></section>'''
 
 def document(body):
     return f'<!DOCTYPE html><html lang="en-US"><head><meta charset="utf-8"/><title>Surviving the Singularity</title><meta name="author" content="Christopher Tavolazzi"/><link rel="stylesheet" href="{(HERE/"book.css").as_uri()}"/></head><body>{body}</body></html>'
@@ -264,7 +264,7 @@ writer.insert_page(PdfReader(OUT/'Surviving-the-Singularity-front-cover.pdf').pa
 writer.set_page_label(0,0,prefix='Cover')
 writer.set_page_label(1,4,style=PageLabelStyle.LOWERCASE_ROMAN,start=1)
 writer.set_page_label(5,len(writer.pages)-1,style=PageLabelStyle.DECIMAL,start=1)
-writer.add_metadata({'/Title':META['title'],'/Author':META['author'],'/Subject':'Publication design edition of manuscript v0.8.2'})
+writer.add_metadata({'/Title':META['title'],'/Author':META['author'],'/Subject':f'Publication design edition of manuscript v{META["version"]}'})
 reading = OUT/'Surviving-the-Singularity-reading.pdf'
 writer.write(reading)
 records['outputs']['reading']={'path':str(reading),'pages':len(writer.pages),'sha256':hashlib.sha256(reading.read_bytes()).hexdigest()}

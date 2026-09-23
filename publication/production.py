@@ -8,6 +8,7 @@ from pypdf.constants import PageLabelStyle
 
 HERE=Path(__file__).resolve().parent
 OUT=HERE/'output'
+ROOT_BOOKJSON=HERE.parent/'src/lib/data/book/book.json'
 source=OUT/'Surviving-the-Singularity-interior.pdf'
 converted=OUT/'print-converted.pdf'
 target=OUT/'Surviving-the-Singularity-print-interior.pdf'
@@ -19,7 +20,7 @@ if len(writer.pages)%2:
     added_blank=True
 writer.set_page_label(0,3,style=PageLabelStyle.LOWERCASE_ROMAN,start=1)
 writer.set_page_label(4,len(writer.pages)-1,style=PageLabelStyle.DECIMAL,start=1)
-writer.add_metadata({'/Title':'Surviving the Singularity','/Author':'Christopher Tavolazzi','/Subject':'6 x 9 inch grayscale print interior, manuscript v0.8.2'})
+writer.add_metadata({'/Title':'Surviving the Singularity','/Author':'Christopher Tavolazzi','/Subject':'6 x 9 inch grayscale print interior, manuscript v' + json.loads(open(ROOT_BOOKJSON).read())['version']})
 writer.write(target)
 record=json.loads((OUT/'build.json').read_text())
 record['outputs']['print-interior']={'path':str(target),'pages':len(writer.pages),'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'grayscale':True,'blank_final_verso_added':added_blank}

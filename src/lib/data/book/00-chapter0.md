@@ -45,7 +45,7 @@ PorusAI had no such patience.
 
 ---
 
-PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Elijah kept returning to the 2017 paper “Attention Is All You Need.” Its account of attention and parallel training gave him something technical to study beneath the excitement. It didn't tell him what every future model would be able to do. The demonstrations kept giving him new questions anyway.
+PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Everyone in Elijah's field knew the lineage by heart: in 2017, researchers at Google had published a paper with the almost taunting title "Attention Is All You Need," and quietly replaced the engine of machine intelligence. Before that paper, machines read the way you read, one word at a time, in order, forgetting the beginning of a long sentence by the time they reached the end. The Transformer architecture let a machine attend to *everything, everywhere, at once*, every word weighing every other word simultaneously, and, crucially, it let the whole process run in parallel across the biggest computers on Earth. Google wrote the physics.
 
 PorusAI built the bomb.
 
@@ -127,7 +127,7 @@ He'd gotten one thing right, at least. They saw.
 
 His mind went where it would live from then on: down the list. Every graphic designer he'd ever split a bill with. Every session player, every wedding photographer, every copywriter, every voice actor, every friend who'd ever cobbled a living out of the exact set of tasks he had just watched a text box perform for twenty dollars a month. People for whom the economy was already a rigged carnival game. People with no margin, no cushion, no lobbyist, the first people every wave hits and the last people anyone rebuilds for.
 
-The realtors were not going to hire anyone to manage the machine. At that moment, it felt to him as though nobody was going to hire anyone to manage the machine. That fantasy died at the Bear Flag between one round and the next. They were going to use the machine to replace everyone it could replace, as fast as it could replace them, and the machine was getting better every quarter, and he knew, he had *seen the roadmaps*, how much better, how much faster, this was going to get.
+The realtors were not going to hire anyone to manage the machine. Nobody was going to hire anyone to manage the machine. That fantasy died at the Bear Flag between one round and the next. They were going to use the machine to replace everyone it could replace, as fast as it could replace them, and the machine was getting better every quarter, and he knew, he had *seen the roadmaps*, how much better, how much faster, this was going to get.
 
 It was the most significant thing that had ever happened in his lifetime, and it had just happened *to* his own community, *through* his own hands, in a bar, to a toast.
 
@@ -155,36 +155,27 @@ It would take another name, eventually.
 
 You're holding it.
 
----
-
-*The rest of this book is the manual Elijah wished someone had handed him that night at the Bear Flag, what might change, which choices still belong to us, and what people like us can build while it does.*
 
 ---
 
 ## Precedent P-02: The Voice at the Fair (Philadelphia, 1876)
 
-At Philadelphia's Centennial Exhibition in 1876, Alexander Graham Bell demonstrated a telephone. A letter to his parents, written on June 27, records his account of the demonstration and the attention it received. The large Corliss steam engine was another attraction at the exhibition. Visitors could encounter an established form of industrial power and a much newer way to communicate in the same sprawling fair. [Bell to his parents, June 27, 1876, Library of Congress](https://www.loc.gov/item/magbell.00500228/)
+At the 1876 Centennial Exhibition, the machine everyone came to see was the Corliss engine, the great steam engine towering over Machinery Hall, the certified future of American industry. President Grant and Emperor Dom Pedro II of Brazil started it together on opening day. Elsewhere at the fair, a Boston teacher of speech named Alexander Graham Bell was demonstrating a wooden box that carried a human voice down a wire.
 
-Bell's letter gives the demonstration a human scale. Dom Pedro II, emperor of Brazil, recognized him from an earlier meeting in Boston. William Thomson, later Lord Kelvin, was there too. Bell first demonstrated electrical signaling, then offered something less settled: the transmission of a human voice. He described it to the listeners as an invention still in development. He went into another room and sang.
+Bell's own account survives, in a letter to his parents dated June 27. Dom Pedro recognized him from an earlier meeting in Boston. William Thomson, later Lord Kelvin, was there too. Bell showed them electrical signaling first, then something much less settled: a human voice, from an invention he told them was still in development. He went into another room and sang. The letter is careful about what Bell saw and what he was told: the listeners' reactions come to his parents secondhand, from his associate Willie Hubbard. Thomson heard words, went looking for Bell, and found him in the other room. [Bell to his parents, June 27, 1876, Library of Congress](https://tile.loc.gov/storage-services/service/mss/magbell/005/00500228/00500228.pdf)
 
-At that point the letter changes its source of information. Bell tells his parents that Willie Hubbard supplied the account of the listeners' reactions. Thomson heard words, asked to find Bell, and came to the other room. The distinction matters: some of what survives is an inventor describing his own work, and some is an inventor repeating what an associate told him. It is a remarkable record without our adding a roomful of scoffers for him to defeat.
+Then, two pages later, the same letter turns from sound to money. Bell reports a conversation with his rival Elisha Gray about joining forces against Western Union, and his fear that long lawsuits would leave them both at the big company's mercy. The voice had barely finished crossing the room and the negotiation over who would own it had already started.
 
-Near the end, the same letter turns from sound to bargaining. Bell reports a conversation with rival inventor Elisha Gray about possibly joining their interests against Western Union. He hopes cooperation will bring success and fears prolonged lawsuits will leave them vulnerable to the larger company. This was a proposed arrangement as Bell understood it that day, not evidence that the agreement took effect. [Bell's letter, including the demonstration and proposed alliance](https://tile.loc.gov/storage-services/service/mss/magbell/005/00500228/00500228.pdf)
+The steam engine got the applause. The telephone got the century. But neither the applause nor the century was decided in that room. A demonstration proves an effect is possible. Wires, exchanges, operators, prices, and patents decided who would get to use it.
 
-There, on two pages, are both kinds of invention the chapter is asking you to watch: a new technical possibility and people beginning to negotiate who will control it. The second doesn't wait for the first to become ordinary.
+**The mechanism.** At every demonstration there are two audiences standing in the same room: the crowd measuring the machine against the present, and the handful measuring the present against the machine. The crowd asks whether it's impressive. The handful asks what dies when it becomes boring, and who will own the wires.
 
-The telephone's importance wasn't exhausted by the moment someone heard a voice through it. A demonstration could establish that an effect was possible. Ordinary use would require equipment, connections, operation, and people willing and able to use the service.
-
-That gap is the part Elijah missed in the bar. He had shown the realtors a capability. He had barely begun to think about the arrangements that would grow around it, or the people who would bear their costs.
-
-**The mechanism.** A demonstration can reveal an unfamiliar use. Adoption still depends on reliability, infrastructure, cost, and demand.
-
-**The rule.** Separate a compelling demonstration from a delivered service.
+**The rule.** Don't ask how impressive the machine was. Ask what the world looks like when what it did is unremarkable, and what has to be built between the demonstration and that day.
 
 **The practice.**
 
-1. Record what one demonstration actually shows.
-2. List the work between that demonstration and ordinary use.
-3. Revisit your prediction in six months, including what failed to arrive.
+1. Run the boring test on the last AI demo that impressed you. Assume the capability is cheap, invisible, and everywhere within thirty-six months. Write down which of your income streams survives that assumption. That list is your actual resume.
+2. The next time you watch a demonstration, watch the room instead of the stage for two full minutes. Note who's applauding and who has gone quiet and started taking notes. Find out what the quiet ones do for a living.
+3. Keep a demonstration log. One line per demo that crosses your feed: date, what it did, what still has to exist before ordinary people can use it, and your guess at when it becomes boring. Review the log every six months, including what failed to arrive.
 
 ---

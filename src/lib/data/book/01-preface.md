@@ -2,54 +2,74 @@
 
 ![Honda ASIMO humanoid robot, 2001](/book-images/intro-asimo.jpg)
 
-*ASIMO, the 2001 model, photographed at Honda Welcome Plaza Aoyama in 2023. An earlier chapter in the history of robotics. (Liauzh, CC BY-SA 4.0, via Wikimedia Commons)*
+*ASIMO, the 2001 model, photographed at Honda Welcome Plaza Aoyama in 2023. The weirdness arrived on schedule. (Liauzh, CC BY-SA 4.0, via Wikimedia Commons)*
 
 
 > *"Buy the ticket, take the ride."*
-> Hunter S. Thompson, a saying attributed by his publisher
+> Hunter S. Thompson
 
 So the robots are coming for the jobs. Congratulations, apparently. Now we get to decide what we mean by progress.
 
-Popular stories give us plenty of machines to fear and plenty of ruined worlds to walk through. I want room for a different question: what useful work could these tools do for people who are tired of being afraid?
+Popular media tells us we'll be fending off hordes of Terminator bots or fighting over food in the ruins of a climate famine. That's one way it can go. It isn't the only way.
 
-This is an optimist's field manual. Optimism here means wanting a better outcome enough to investigate how it might work. It doesn't mean calling every concern cowardice or every announcement a breakthrough. You can be hopeful and still ask who gets the food when the machine finishes its shift.
+This book is about the other ways.
 
-Food is the first assignment. Shelter, environmental repair, and health belong in the same larger project: use growing capability to make survival less precarious. The challenge is to organize the people, resources, and machines so that the useful result reaches someone who needs it.
+Right now, doesn't it seem like everything is getting a lot weirder, a lot faster?
 
-You will meet people who are wrong about important things. Some of them notice. Some need help noticing. That's the point of the scenes. The co-op has skills Elijah doesn't have, and the people who receive help can tell it something a dashboard can't.
+Look back across the last hundred years and you find a global society of excess, continent-spanning wars, and weapons that could end all life on earth. Look around today and... well, it's pretty much the same, isn't it? The main thing that seems to have changed is the pace.
 
-A change of attitude can give you room to act. It doesn't erase coercion, exhaustion, poverty, disability, or a broken piece of equipment. If a recommendation doesn't fit your life, that is information about the recommendation too.
+Wait, that's not quite right. Some things have definitely changed. We've learned to automate cognitive work and more and more physical work. We've concentrated an enormous amount of wealth and power in the hands of the few people who own the servers, the models, and the land. And a lot of ordinary workers are being told, more or less directly, that they may soon be redundant.
 
-You don't need to become a different kind of person to enter this book. You don't need land, a server rack, or the spare cash to buy a robot. Start with curiosity. Ask somebody what they need. Find a way to help that they actually want. Keep enough attention free to notice whether it helped.
+And that's why you're reading this.
 
-The book is meant to give you something you can evaluate and criticize. If a claim is wrong, improve it. If a tool is unnecessary, put it down. If somebody is hungry, the argument has a destination beyond winning the argument.
+Redundancy doesn't have to mean uselessness. And it doesn't have to mean hunger.
 
-Let's get to that destination.
+Here's the neat trick of this moment: how you frame it changes what you can see to do. A reframe won't pay a bill. It can show you which bill to fight, and who to fight it with.
+
+This is an optimist's field manual. Optimism here means wanting a better outcome enough to investigate how it might actually work. It doesn't mean calling every concern cowardice or every product announcement a breakthrough. You can be hopeful and still ask who gets the food when the machine finishes its shift.
+
+Food is the first assignment. Land, cleanup, shelter, and health belong to the same larger project: use growing capability to make survival less precarious. Here's what's ahead:
+
+- **The horizon:** the nine stages, from the first cash grab to the edge of the map, and which parts are forecast, which are speculation, and which are already on your desk.
+- **The thermodynamics of survival**, and why every machine still needs a world to run in.
+- **The cooperative transition:** what we owe each other when the work changes, and how to keep your head while everyone else is losing theirs.
+- **The neighborhood factory:** bringing repair and production close to home without pretending the rest of the world disappears.
+- **Food and land:** shared ground, land trusts, soil you can actually read, and one delivery followed all the way to the door.
+- **Digital leverage:** documentation, media, and knowledge that travels further than the people who made it.
+- **The tools of the trade:** local AI, mesh networks, open hardware, and the plans that survive a storm.
+
+**NOTE: this book isn't a guide to overthrowing the system.**
+
+It's meant to help you change how you relate to that system, and maybe build better ones that provide food, housing, and good health for all of us. You'll meet people in these pages who are wrong about important things. Some of them notice. Some need help noticing. That's the point of the scenes.
+
+You're not a passive observer of this transition. You're a participant, even if right now your participation is mostly trying to hold on.
+
+So take a deep breath. And let's get to work.
 
 ---
 
 ## Precedent P-01: The Reading Rage (Britain, eighteenth and early nineteenth centuries)
 
-In eighteenth-century Britain, the widening audience for novels provoked arguments about what reading did to people, particularly young women. Critics worried about morals, time, and the difference between life on the page and life in the room. Reading was becoming an activity a person could choose beyond the supervision of the people who thought they knew what was good for her.
+In the late eighteenth century, respectable people identified a technology that was ruining the young, and especially young women: the novel.
 
-Ana Vogrinčič's study of the English novel-reading panic follows those disputes through the culture of the period. The objections were not a single medical verdict or a view shared by everyone. They were arguments about a changing practice, its audience, and its authority. [Vogrinčič, The Novel-Reading Panic in 18th-Century England](https://hrcak.srce.hr/en/clanak/49661)
+Printing had made books cheap enough for ordinary readers, and circulating libraries lent them out by the volume. Suddenly young women were doing something unsupervised with their minds for hours at a time, and the objections poured in: about morals, about wasted time, about confusing life on the page with life in the room. In Sheridan's 1775 comedy *The Rivals*, Sir Anthony Absolute calls a circulating library "an evergreen tree of diabolical knowledge." German critics even had a word for the condition: *Lesesucht*, reading mania. The objections weren't one medical verdict or a view held by everyone. They were arguments about a changing practice, its audience, and who got to supervise it. [Vogrinčič, The Novel-Reading Panic in 18th-Century England](https://hrcak.srce.hr/en/clanak/49661)
 
-Jane Austen puts the dispute inside *Northanger Abbey*. In Chapter 5, Catherine and Isabella spend rainy mornings reading together. The narrator interrupts their story to defend the activity, including against novelists who make their own heroines despise novels. She imagines a young woman putting down a book with embarrassment, describing it as "only a novel," although she would proudly identify a more respectable publication. The distinction gives the reader a small social performance to watch: the book has not changed, but the admission of enjoying it has become something to manage. This is fiction and a novelist's argument for her craft, not a transcript of an encounter or a survey of British opinion. It shows what one writer thought needed defending. [Austen, Northanger Abbey, Chapter 5](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0005)
+![A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more books stacked on the floor](/book-images/preface-reading-rage.png)
 
-Austen also gives her defense an awkward companion. Later, Catherine recognizes that Gothic reading has helped her turn ordinary circumstances at the abbey into evidence for a frightening story. The book that defends novels makes its heroine answer for a bad inference. Pleasure and imagination deserve room; they do not make every interpretation sound. [Austen, Northanger Abbey, Chapter 25](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0025)
+*The epidemic, as its critics saw it. Two hundred years later we hand this exact picture to children as the cure for their screens.*
 
-An optimist can inherit that discipline. We can defend someone's access to a new tool while examining what they believe it can do. We can object to the embarrassment attached to using it without treating enthusiasm as proof. A benefit worth pursuing deserves that much care.
+Sit with that. The activity we now prescribe to children as the antidote to their screens, the one on posters in every school library, was condemned in almost exactly the vocabulary now aimed at the tools in your pocket.
 
-That is the useful comparison. A new practice can carry benefits and costs while also disturbing a familiar arrangement of authority. Ask which argument is being made. Someone may be describing harm, defending a position, or doing both. The work of criticism is to tell the difference.
+Jane Austen answered the panic from inside a novel. In Chapter 5 of *Northanger Abbey*, her narrator stops the story to defend the form, and mocks the young woman who puts a book down in embarrassment and calls it "only a novel." [Austen, Northanger Abbey, Chapter 5](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0005) Then Austen does something braver. Later in the book, her own heroine lets Gothic reading turn an ordinary house into evidence for a frightening story, and has to answer for the bad inference. [Chapter 25](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0025) The book that defends novels makes its reader own her mistake. Defend the access; examine the belief. An optimist can inherit that discipline.
 
-**The mechanism.** A change in access can unsettle familiar authority. That possibility does not explain every concern, and it does not establish that every new medium is harmless.
+**The mechanism.** Much of the panic was about control, not content. A new technology had made someone the elders couldn't supervise powerful in a way they didn't understand, and they experienced that loss of supervision as moral decay. Some of the concerns were real. The panic wasn't how anyone found out which ones.
 
-**The rule.** Ask what changed and what the concern actually predicts.
+**The rule.** When you hear a technology described as rotting the minds of the young, translate it: *something just shifted power toward people who don't need permission anymore.* Then go find out what they know that you don't. Then test the specific concern on its merits.
 
 **The practice.**
 
-1. Ask a younger or older user to show you a useful workflow.
-2. Write down one benefit and one plausible cost.
-3. Test the specific concern instead of assigning the speaker a motive.
+1. This week, write down the next three times you hear "AI is rotting people's brains," and note who said it. For each one, name the thing the speaker can no longer supervise, and the specific harm they predict. Not to mock them. To train your ear: the panic is a location signal, and it points at where the power went.
+2. Find one person at least fifteen years younger than you who uses AI daily, and ask for twenty minutes of watching them work. Say nothing for the first ten. Your assignment isn't to evaluate them. It's to notice what they no longer ask permission for.
+3. Catch yourself doing it. The next time a tool you don't use irritates you on principle, write down what it would cost to spend one hour learning it, and compare that to how long you've already spent being irritated. Do the cheaper thing.
 
 ---

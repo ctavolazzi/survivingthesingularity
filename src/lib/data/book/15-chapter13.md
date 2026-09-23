@@ -85,7 +85,7 @@ Here's the physics that makes it serious. A container's corrugated side walls ar
 
 A metal box is a superb conductor of heat, which makes it an oven in August and an icebox in January. Heat flow through a wall follows Fourier's law:
 
-> $$Q = \frac{k \cdot A \cdot \Delta T}{d}$$
+> $$Q = (k · A · \Delta T) / d$$
 
 where $k$ is how well the material conducts heat, $A$ is the wall area, $\Delta T$ is the temperature difference, and $d$ is the thickness. Steel conducts heat thousands of times better than foam, and a container wall is only a couple of millimeters thick, so bare steel barely slows heat at all. Everything depends on the insulation layer.
 

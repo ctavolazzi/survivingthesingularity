@@ -127,19 +127,19 @@ You don't need enterprise money. Every few years, data centers retire perfectly 
 
 For running language models, the bottleneck usually isn't raw processing speed. It's memory: the model's weights have to fit in the graphics card's memory (VRAM) to run fast. A good rule of thumb:
 
-> $$V_{RAM} \approx \frac{P \cdot Q}{8} \cdot B \text{ [GB]}$$
+> $$V_{RAM} ≈ ((P · Q) / 8) · B \text{ [GB]}$$
 
 where $P$ is the number of parameters in billions, $Q$ is the bits stored per weight (16 for full precision, 4 or 8 for compressed "quantized" versions), dividing by 8 turns bits into bytes, and $B \approx 1.2$ is a buffer for the working memory a conversation needs.
 
 **A small model at full precision.** An 8-billion-parameter model at 16 bits:
 
-> $$V_{RAM} = \frac{8 \cdot 16}{8} \cdot 1.2 = 19.2 \text{ GB}$$
+> $$V_{RAM} = ((8 · 16) / 8) · 1.2 = 19.2 \text{ GB}$$
 
 That fits on one used 24 GB card.
 
 **A large model, compressed.** A 70-billion-parameter model at 4 bits:
 
-> $$V_{RAM} = \frac{70 \cdot 4}{8} \cdot 1.2 = 42 \text{ GB}$$
+> $$V_{RAM} = ((70 · 4) / 8) · 1.2 = 42 \text{ GB}$$
 
 That needs two 24 GB cards, 48 GB together, which is what the co-op scavenged. Open tools like llama.cpp can split a model's layers across both cards. Ollama runs the models; a local chat interface like Open WebUI puts a friendly front on them. None of it needs to touch the internet to work.
 
@@ -147,11 +147,11 @@ That needs two 24 GB cards, 48 GB together, which is what the co-op scavenged. O
 
 A rack like that throws off somewhere between 600 and 1,000 watts of heat, all day. Inside an insulated building, that's a sauna you're paying an air conditioner to fight. The co-op's answer was to carry the heat outside in liquid. The physics is one line:
 
-> $$\dot{Q} = \dot{m} \cdot C_p \cdot \Delta T$$
+> $$\dot{Q} = \dot{m} · C_p · \Delta T$$
 
 To move 1,000 watts with a water-glycol coolant ($C_p \approx 3{,}800$ J/kg·°C) while letting it warm only 5°C through the loop:
 
-> $$\dot{m} = \frac{1000}{3800 \cdot 5} \approx 0.053 \text{ kg/s} \approx 3.2 \text{ liters per minute}$$
+> $$\dot{m} = 1000 / (3800 · 5) ≈ 0.053 \text{ kg/s} ≈ 3.2 \text{ liters per minute}$$
 
 That's a gentle flow; a small pump the size of a fist handles it. A salvaged car radiator on a shady outside wall dumps the heat.
 

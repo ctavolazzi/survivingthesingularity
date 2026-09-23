@@ -8,9 +8,10 @@
 
 **In this chapter:**
 
-- Capability, deployment, and access can move at different speeds.
-- Material constraints matter alongside attitudes.
-- Begin with people already doing useful work.
+- Capability, deployment, and access move at different speeds. The fight is in the gaps.
+- The bottleneck to a livable transition isn't only technical. It's exhaustion, status, and a very reasonable fear of losing the ability to survive.
+- You don't have to take anyone's wealth to end that fear. Use the robots to grow the food and build the shelter, and let people keep what they have.
+- Some people have already survived an automation wave. Find them. They aren't on LinkedIn.
 
 ---
 
@@ -32,7 +33,7 @@ The shop he pulled into wasn't a mechanic's. He realized it too late, halfway ac
 
 She turned around then and looked at him, one long, level pass, boots to haircut, the look of someone who has hired and fired and buried, and something in the shop's whole arrangement must have loosened her, because instead of pointing at the road she said, "Co-op. Nineteen households. We make what we can't afford to buy and fix what the market says to throw away." She nodded at the plasma table. "Right now: brackets for a neighbor's solar rack. You need something made?"
 
-And Elijah, God help him, alone with the arithmetic for eleven months and now facing a stranger standing inside something that looked like an answer to it, Elijah went off. Again. The way he had at the Bear Flag.
+And Elijah, God help him, alone with the arithmetic for eleven months and now facing a stranger standing inside the exact answer to it, Elijah went off. Again. The way he had at the Bear Flag.
 
 He told her what was coming, machine-gun style: the models, the curve, the end of labor. And then, because years at Claypot had installed a whole grammar in him he didn't know he was speaking, he started *pitching*. He heard himself say the shop could *scale*. He said *platform*. He said there ought to be an app: coordination software, a network of co-ops, a marketplace layer; he could build it in a month, this thing could be in fifty towns by spring, they could get ahead of the wave, first-mover, and somewhere in there he ran out of gas, because Marta Okonkwo had crossed her arms and was watching him with the exact expression she'd given the plasma cut: waiting to see if the machine would finish or fault.
 
@@ -62,73 +63,74 @@ Marta looked at him for another second. Then she picked up a push broom leaning 
 
 Elijah arrives with a forecast. Marta has a workshop, a history, and a bill for the welding gas. They need things from each other, but first he has to stop confusing his prediction with her future.
 
-That confusion is easy to make. Show a machine doing something remarkable and the conversation leaps to what society must become. Yet capability, deployment, ownership, and access are different events. A tool can improve while its price rises. A company can increase output while reducing payroll. A town can contain a productive farm and people who can't afford its food.
+It's an easy mistake. Show someone a machine doing something remarkable and the conversation leaps straight to what society must become. But capability, deployment, ownership, and access are different events. A tool can get better while its price goes up. A company can increase output while cutting payroll. A town can contain a productive farm and people who can't afford its food.
 
-An economy can work that way. The human outcome is what I want to change. There is a choice hiding in the distance between them.
+That gap between what's possible and what reaches people is the part we get to decide. As machines take on more necessary work, use the gains to make necessities dependable. Start with food. Make a lost paycheck less able to turn an ordinary evening into an emergency.
 
-My argument is that we should deliberately shorten that distance. As machines become capable of more necessary work, use the gains to make necessities dependable. Start with food. Make a lost paycheck less capable of turning an ordinary evening into an emergency.
+That choice doesn't depend on my date. If progress is slower than I expect, people still need to eat. If only some jobs disappear, the people who lose them still count. The International Labour Organization's 2025 analysis estimates which occupations are *exposed* to generative AI, not how many jobs are already gone, and concludes that for most exposed jobs transformation is more likely than outright replacement. [ILO, Generative AI and Jobs: A 2025 Update](https://www.ilo.org/publications/generative-ai-and-jobs-2025-update) Good. That's a reason to be careful about predicting universal unemployment. It's not a reason to make the unlucky worker's dinner depend on the average outcome.
 
-That choice doesn't require agreement about the exact date of the singularity. If progress is slower than I expect, people still need to eat. If only some jobs disappear, the people who lose them still count. If machines transform tasks while most occupations remain, the gains can still support shorter hours, safer work, and more secure lives.
+## Two kinds of fear
 
-The ILO's 2025 analysis of generative AI makes a useful distinction here. It estimates exposure of occupations to changing capabilities, rather than counting jobs already lost, and concludes that transformation is more likely than replacement for most exposed jobs. That's reason to be careful with a forecast of universal unemployment. It isn't a reason to make the unlucky worker's dinner depend on the average outcome. [ILO, Generative AI and Jobs: A 2025 Update](https://www.ilo.org/publications/generative-ai-and-jobs-2025-update)
+So why do so many people resist a future where the machines do more of the work? From years of watching people react to this, two groups stand out, and neither one is stupid.
 
-## What a decision makes possible
+**The overwhelmed.** Most people are so worn down by the daily work of staying afloat that they have no bandwidth left to process a change this big, let alone welcome it. When you're drowning, even a rescue boat can look like a threat. That's not a character flaw. It's what exhaustion does.
 
-I don't mean that frightened people need a better attitude. The worker reading a layoff notice has encountered a fact, not failed a test of optimism. Nor can enthusiasm supply water to a dry field or a replacement part to a broken pump.
+**The status-invested.** Others aren't being crushed by the current arrangement; they're doing fine inside it. Their fear is different: losing their relative position, losing control, and the vertigo of having to redefine themselves outside the job title that's been doing the defining.
 
-I mean the assumptions we carry into decisions. Do we treat the purpose of a productive gain as cutting the wage bill, or can it also be keeping people fed? Do we assume someone has to justify their existence with a job, even when we celebrate machines for reducing the need for that job? When the two ambitions collide, which one do we change?
+Both fears contain information. A worker afraid that the new system will take her dinner is reading the situation correctly under the current rules. The answer isn't to tell her to think positive. It's to change the rule that makes the fear accurate.
 
-Those assumptions take physical form. They become a purchasing contract, a budget, a delivery route, a condition attached to receiving help. They determine whether a town buys useful capacity for its residents or offers a demonstration they can watch but cannot afford to use.
+## The preservation solution
 
-A different mindset earns its keep when a decision changes. A food provider receives reliable funding. A worker has a say before the new system changes their shift. An access rule stops requiring a pay stub. A repair reserve keeps a service alive after the launch photographs are forgotten.
+Here's the move that makes the fear unnecessary.
 
-I want optimism that can show you the changed line in the budget.
+We don't need to take anyone's money. We don't need a hostile redistribution of wealth, and we don't need to win every argument about economics first. We need to use the robots to grow the food and, in time, build the houses, and let people keep what they already have. Preserve what people have while adding dependable abundance underneath them, and you take away the terror that keeps everybody in a defensive crouch: the fear of losing the ability to survive.
 
-## Security is something people can rely on
+That's food first, stated as plainly as I can state it. It doesn't threaten the status-invested, because nobody's taking their house. It gives the overwhelmed somewhere to stand, because dinner no longer depends on this month going well.
 
-A promise made by a generous founder is welcome. A service that continues when the founder is ill is stronger. A right that can be asserted when an administrator says no is stronger still. Different places will arrive at these arrangements through different institutions, but the distinction matters wherever the book travels.
+## The ladder with the bottom rungs sawed off
 
-A cooperative can own equipment. A public body can fund food service. An existing producer can be paid to supply it. Residents can participate in decisions about what is provided and how a failure is corrected. None of these words makes a system fair by itself. Together they describe work we know how to begin: assigning resources, responsibilities, and a usable claim on the result.
+For people under twenty-five, the old deal, sell your labor and buy your survival, has failed on both ends at once.
 
-The goal isn't to make everyone dependent on one kindly operator. People should be able to question the service without losing it. They should have somewhere to turn when it fails, including an alternative provider where one is available. Ownership and oversight matter because the machine that feeds a neighborhood could also give its controller enormous power over that neighborhood.
+On the buy side, housing, healthcare, and education have all climbed far faster than wages for decades. In 1970, by the Census Bureau's numbers, the median home was worth about twice the median household income. Measure it any reasonable way today and the multiple is well above that in most of the country.
 
-Calling the arrangement public doesn't settle that problem. Calling it local doesn't settle it either. We have to build ways for people to challenge decisions and keep obtaining what they need while a dispute is heard.
+On the sell side, the entry-level cognitive work a twenty-two-year-old once used to climb, the junior analyst seat, the first coding job, the paralegal desk, is exactly the kind of task these systems are getting good at first. Costs up. Bottom rungs going. A cohort can't out-hustle that arithmetic, and it isn't a failure of their ambition.
+
+## Security is something you can rely on
+
+A promise from a generous founder is welcome. A service that keeps running when the founder gets sick is stronger. A right you can still claim when an administrator says no is stronger still.
+
+A cooperative can own equipment. A public body can fund a food service. An existing grower can be paid to supply it. Residents can have a say in what's provided and how failures get fixed. None of those words makes anything fair on its own. Together they describe work we already know how to start: assigning resources, responsibilities, and a usable claim on the result.
+
+The point isn't to make everyone dependent on one kindly operator. People should be able to criticize the service without losing it, and have somewhere else to turn when it fails. Ownership and oversight matter because the machine that feeds a neighborhood could also give whoever controls it enormous power over that neighborhood. Calling it public doesn't solve that. Calling it local doesn't either.
 
 ## A workshop is a beginning
 
-Elijah can drive north because he has savings, a vehicle, and skills the workshop can use. Someone caring for a parent in a fourth-floor apartment may have none of those options. A serious proposal has to reach that apartment too.
+Elijah can drive north because he has savings, a car, and skills a workshop can use. Someone caring for a parent in a fourth-floor apartment may have none of those. A serious proposal has to reach that apartment too.
 
-Marta's nineteen households can teach us how people cooperate, repair things, and notice each other's needs. They can't stand in for every city, every climate, every public service, or every person who doesn't know somebody at the table. Their work becomes more useful when it connects with growers, kitchens, workers' organizations, and institutions beyond the shed.
+Marta's nineteen households can teach us how people cooperate, repair things, and notice each other's needs. They can't stand in for every city, every climate, or every person who doesn't know somebody at the table. Their work gets more useful the more it connects with growers, kitchens, unions, and institutions beyond the shed.
 
-You can begin by finding one such connection. Ask an existing food provider where a useful meal gets held up: money, transport, equipment, staffing, an inaccessible application, a missing place to cook. The answer identifies a task for the tools and a task for the people organizing them.
-
-That is the decision in front of us. We can put more intelligence into defending the conditions that make survival precarious, or into changing those conditions. The future doesn't have to be settled for the direction to matter.
+So find one connection this week. Ask an existing food provider where a meal gets held up: money, transport, equipment, staffing, a confusing application, nowhere to cook. The answer names a job for the tools and a job for the people organizing them.
 
 ---
 
-## Precedent P-08: The Grain Trap (Fertile Crescent, c. 9500 BC)
+## Precedent P-08: The Grain Trap (Fertile Crescent and Anatolia, c. 9500 to 6000 BC)
 
-The transition to agriculture changed food production, settlement, and social organization across different places and long periods. Some early farming populations show evidence of health burdens associated with those changes.
+The first singularity was a seed.
 
-That makes agriculture a useful complication for a book about technology. A practice can spread while imposing costs on some of the people adopting it. The history is not a single vote by humanity, and it is not a uniform story in which every forager became a farmer or every farmer became better off.
+When people in the Fertile Crescent and beyond settled down around wild grasses, the deal for many individuals got measurably *worse*. In a lot of places the skeletons tell the story: early farmers were often shorter than the foragers before them, with worse teeth, new diseases caught from crowding and livestock, and a workday a forager would have found strange. Not everywhere, and not all at once. But often enough that archaeologists have spent decades documenting the cost.
 
-Consider a later settlement in that long transition: Çatalhöyük, on the Anatolian plateau. Its houses stood back to back, without streets between them, and people entered through the roofs. Wall paintings and reliefs survived inside. This was a place people built and inhabited, not merely a point on a graph of agricultural expansion. The roofs and rooms give the change a human scale. [UNESCO, Neolithic Site of Çatalhöyük](https://whc.unesco.org/en/list/1405/)
+Go to one place and look. Çatalhöyük, on the Anatolian plateau, was a town of houses built back to back with no streets between them, entered through the roofs, with paintings and reliefs on the walls inside. [UNESCO, Neolithic Site of Çatalhöyük](https://whc.unesco.org/en/list/1405/) A 2019 study led by Clark Spencer Larsen read roughly twelve centuries of its people in their bones: teeth marked by a cereal-heavy diet, leg bones that suggest more travel and harder physical work over time. The town endured while the work of feeding it got harder. The same study found some infection markers falling and growth staying relatively normal. The evidence points more than one way, which is what real evidence usually does. [Larsen and colleagues, Bioarchaeology of Neolithic Çatalhöyük](https://doi.org/10.1073/pnas.1904345116)
 
-The inhabitants left another record in their bodies. A 2019 study led by Clark Spencer Larsen examined skeletal evidence across roughly twelve centuries of occupation. Teeth carried evidence of decay associated with a cereal-rich diet. Changes in leg bones were consistent with increasing travel and physical demands over time. The settlement could endure while obtaining what sustained it became harder work. Those findings describe different parts of the achievement: maintaining a community and living well inside it. [Larsen and colleagues, Bioarchaeology of Neolithic Çatalhöyük](https://doi.org/10.1073/pnas.1904345116)
+And none of it stopped the spread. Grain could be stored, counted, taxed, and multiplied. Farming villages out-bred and out-organized foraging bands, and over a few thousand years there were fewer and fewer places left to not-farm. No one voted. The people inside the transition mostly couldn't see it, and their grandchildren couldn't leave it, because the skills, the land, and the population had already crossed over.
 
-The same study refuses a tidy story of uninterrupted decline. Some bone changes associated with infection became less prevalent through time, and the researchers found resources sufficient to sustain relatively normal growth. The evidence points in more than one direction. Bones preserve evidence of particular stresses; they don't give us a complete account of what any one inhabitant thought their life was worth. [Larsen and colleagues, growth and infection findings, page 6 of the open manuscript](https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/3/58744/files/2020/10/Catalhoyuk-PNAS-Publication.pdf)
+**The mechanism.** A technology doesn't need to make each person better off to become hard to refuse. It only needs to make the groups that adopt it outcompete the groups that don't. That ratchet turns on group advantage, not consent. And a growing harvest tells you nothing, by itself, about whether the people bringing it in are eating well.
 
-For the machinery arriving now, this changes what I want to count. Adoption tells us that a practice found a way to spread. Output tells us what it produced. Neither number, on its own, tells us whether the person doing the work had enough to eat, enough rest, or any power to change the terms. The lesson isn't to abandon the field. It's to stop treating a growing harvest as the whole account of the people living beside it.
-
-**The mechanism.** Agricultural transitions involved different conditions and outcomes across places. Greater production or wider adoption does not establish better lives for every participant.
-
-**The rule.** Count welfare and distribution separately from adoption.
+**The rule.** Stop spending your energy on whether the transition happens. Spend it on what position you hold when it does, and count welfare separately from adoption.
 
 **The practice.**
 
-1. Describe one claimed gain from a tool.
-2. Ask who might bear a cost even if that gain is real.
-3. Choose an outcome measure that includes those people.
+1. Put a hard cap on "whether" debates. The next time you're in an argument about whether AI should exist or whether it'll really happen, give it five minutes, then ask out loud: "Given that it's arriving anyway, what should we each do this month?" Watch how few people can switch questions. Be one who can.
+2. Run the group audit on your own affiliations: employer, industry, town, community. For each, answer honestly: is this group adapting or refusing? And is it counting who gets hurt along the way? The grain trap punished groups for their choices, and individuals for their group.
+3. Keep one part of your life off the ratchet on purpose: food you can grow, heat you can make, skills that work without a subscription. Not to exit the system. Because the person with an alternative negotiates from a different posture than the person without one.
 
 ---
-

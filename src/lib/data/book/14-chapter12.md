@@ -10,9 +10,10 @@
 
 **In this chapter:**
 
-- Land access need not mean buying property.
-- Grandma's request needs a confirmed service, not a technological label.
-- Count what people and machines actually do, and what reaches her door.
+- Land is the one input the machine can't manufacture more of. Buying it is one route to it. Sharing, leasing, and trusts are others.
+- The outfit circling your county runs a pipeline: estates, widows, cash offers, fourteen-day closes. Its strategy is speed and loneliness.
+- A community land trust is enclosure run in reverse. One deed at a time, ground comes off the speculative market.
+- Grandma's request, followed all the way to her door: what the neighbors do, what the machines do, and what reaches her kitchen.
 
 ---
 
@@ -20,23 +21,23 @@ The first letter was addressed to OWNER/OCCUPANT, and Irene Calder read it on he
 
 Everything the co-op had built stood on Calder ground. The shed had been Walt Calder's equipment barn; Priya's beds ran where his hay had run; the lease was month to month and had been since Walt died, because Irene liked Marta and had never once raised the rent, and nobody had wanted to disturb an arrangement that worked by being talked about over pie. The young man on the porch offered twenty-three percent over anything the county said forty acres was worth, all cash, a fourteen-day close, and a flyer with a sunset on it. Irene told him no. Irene's son Dale, in Phoenix, said, "Mom."
 
-Elijah did what Elijah does when he is frightened: he pulled data. The county recorder's index was public, ancient, and slow, so he was polite to it, scraping at night, and then he did two neighboring counties for context. Company names began to repeat across the records. Adjacent parcels changed hands. He cross-checked the public business filings and put the uncertain connections in a separate color. Eleven companies shared a registered agent in Sacramento. That could be a useful lead; Reuben reminded him that an agent could represent unrelated clients too. The map showed acquisitions. It didn't show every motive behind them.
+Elijah did what Elijah does when he is frightened: he pulled data. The county recorder's index was public, ancient, and slow, so he was polite to it, scraping at night, and then he did two neighboring counties for context. The pattern assembled itself the way patterns do, all at once, on the third evening. Eleven different LLC names, one registered agent, a mail-forwarding address in Sacramento. Fifty-some parcels in three years, always the same shape: an estate or a widow, a cash offer, a fast close. Then the parcel goes quiet inside a shell company for a year or two and reappears stitched into a block big enough to matter, leased to whoever needs flat land, water rights, and no neighbors with opinions. Reuben, reading over his shoulder, reminded him that a registered agent can represent a hundred unrelated clients. Elijah colored the uncertain links a different shade and kept going.
 
-That Sunday, on the regular call, he asked his mother what the outfit was called, the one that bought the Hollis place back home. She had to go find the church newsletter to check. He wrote the name down for Reuben. While she talked about the pump, he looked out at the shed. He didn't need to establish one secret owner of everything to understand Irene's offer. Someone wanted the ground beneath the place where they ate dinner.
+That Sunday, on the regular call, he asked his mother what the outfit was called, the one that bought the Hollis place back home. She had to go find the church newsletter to check. Same agent. Eight hundred miles apart, the same signature. He sat with the phone against his ear while she talked about the pump, and looked out at the shed, and understood that whatever had bought the Hollis dairy was standing two fences away.
 
-He built a map. He built, God help him, a dashboard, and it was beautiful, and he presented it at Friday dinner with a laser pointer, and this time he heard himself doing it and grinned mid-sentence, and the room grinned back, because everyone at that table had been present for the greenhouse controllers. But the dashboard did one useful job: the recorded purchases showed an active buyer assembling nearby ground. The records couldn't tell him what was in every private offer or when Irene would decide. Her letter gave them the deadline that mattered: an offer already on her table.
+He built a map. He built, God help him, a dashboard, and it was beautiful, and he presented it at Friday dinner with a laser pointer, and this time he heard himself doing it and grinned mid-sentence, and the room grinned back, because everyone at that table had been present for the greenhouse controllers. But the dashboard did its one load-bearing job: in the parcels he could trace, the time from first letter to recorded deed ran about nine weeks, and Irene had gotten her first letter five weeks ago. The data couldn't close the gap. It could only tell them how wide it was.
 
 "It's not a data problem," Reuben said, already dealing folders around the table like cards. "It's a people problem wearing a paperwork costume. Fortunately," and here he almost smiled, "I have been waiting my entire adult life for this exact fight."
 
 What he dealt out was a proposal for a community land trust. It would hold the ground under restrictions on resale, with residents represented in its decisions. The draft protected Irene's right to remain in the house and provided for regular payments under an agreement she would have her own adviser review. A long ground lease would give the co-op terms it could plan around. Reuben had also brought the less thrilling pages: taxes, insurance, maintenance, the balance still to be paid, and what happened if the arrangement failed.
 
-The down payment would take the channel's first real surplus and the greenhouse-controller money. Future payments would have to come from future work. Denny looked from one column to the other. "So the machines help buy the ground," he said. "And we still have to keep the promise."
+The down payment would take the channel's first real surplus and the greenhouse-controller money. Future payments would have to come from future work. Denny looked from one column to the other. "So the machine that took my warehouse job," he said, "is helping buy ground it can never take back." He tapped the second column. "And we still have to keep the promise."
 
 "Every month," Reuben said.
 
 Dale attended the kitchen-table meeting by speakerphone, from Phoenix, and he was not wrong by his own lights. "Their number is higher, Mom. That's just math."
 
-"It's a bigger number," Reuben said to the phone where it lay on the oilcloth, next to the coffee and the folders. "Your mother gets to take that seriously. She also gets to decide what she wants to keep. What's on this table is a different offer: staying here, receiving the agreed payments, and putting restrictions on what happens to the ground. Including restrictions on us. Those promises need review. They won't end every possible dispute. They give us terms somebody can read and hold us to. That's why we brought the folders."
+"It's a bigger number," Reuben said to the phone where it lay on the oilcloth, next to the coffee and the folders. "There's a machine that's been running since the fifteen hundreds, Dale. It turns commons into fences. Every century it gets a new name. Enclosure. Consolidation. Urban renewal. This week it's a string of companies with one mailing address and a flyer with a sunset on it. It runs in one direction, and it's never once run toward your mother's porch. What's on this table is that machine in reverse." He let that sit. "Your mother gets to take the bigger number seriously. She also gets to decide what she wants to keep. What's on this table is a different offer: staying here, receiving the agreed payments, and putting restrictions on what happens to the ground. Including restrictions on us. Those promises need review. They won't end every possible dispute. They give us terms somebody can read and hold us to. That's why we brought the folders."
 
 There was a long quiet on the line, the box fan working, Walt's cap on its peg by the door. Irene had listened to all of it with both hands around her cup, and what she finally asked was not about the resale formula.
 
@@ -48,7 +49,7 @@ There was a long quiet on the line, the box fan working, Walt's cap on its peg b
 
 The review took longer than Elijah wanted. Irene asked questions he hadn't thought to put in the dashboard. So did Dale. By the time they agreed, several pages had changed. Reuben carried the completed documents to the county himself, and Doreen at the recorder's window stamped them at 11:04 on a Tuesday morning. The letters from Sacramento kept coming for a month. Irene brought one to dinner and left it unopened beside the salt.
 
-The dashboard had given them a reason to act. It couldn't tell Irene what mattered to her, earn the trust behind a fuel line fixed honestly, or settle the terms that had taken weeks to read. Elijah wrote the number in the notebook anyway, under MADRONE ≠ DRONE and Sal's rule, where the important arithmetic lived. A new line, a new unit of measure: PARCELS HELD IN TRUST: 1.
+The dashboard had been right about the timeline and the pattern, and none of it closed the deal. What closed it was a fuel line fixed honest in 2011, a stack of questions Irene got answered in writing, and a clerk who trusted the man across the counter. Elijah wrote the number in the notebook anyway, under MADRONE ≠ DRONE and Sal's rule, where the important arithmetic lived. A new line, a new unit of measure: PARCELS HELD IN TRUST: 1.
 
 ---
 
@@ -56,15 +57,11 @@ The dashboard had given them a reason to act. It couldn't tell Irene what matter
 
 ## A place the promise can stand
 
-A productive tool needs somewhere to work. A hungry person needs access to what it produces. Those are connected needs, but they aren't the same need. We should not ask everyone who wants dinner to become a property owner first.
+A productive tool needs somewhere to work. A hungry person needs access to what it produces. Those needs are connected, but they aren't the same, and nobody should have to become a property owner before they get dinner.
 
-The trust in the scene changes a set of relationships: who may use the ground, who can decide its future, what Irene receives, and what the co-op must keep paying. The paperwork doesn't abolish responsibility. It gives the responsibility a shape people can read and challenge.
+Still, land is the one input the machine can't make more of, and whoever holds it holds a lot of the terms. So if you *do* have capital, think hard before you put it into a bigger house, status symbols, or a business that only works if the city stays healthy. Consider ground. Buy what you can afford to hold, and set aside enough to cover the property taxes for years, so the land stays yours through a bad stretch. Whatever happens to the institutions around you, you'll have a place to build.
 
-That's the institutional part of the technological argument. A better machine can increase the usefulness of a place. The terms governing the place help determine who benefits. If a garden becomes more productive and the people beside it still cannot obtain its food, production and access have parted company. Buying another machine will not necessarily reunite them.
-
-Land trusts, public facilities, leases, cooperatives, and agreements with existing growers are different possibilities, with different obligations and limits. The fictional arrangement above illustrates one negotiation; it isn't a reusable legal instrument. What matters for this book is the question that brought those people to the table: how do we keep useful capacity serving the people who depend on it?
-
-For your first project, the answer may be an existing kitchen, a suitable garden you can share, or a grower who wants a dependable distribution partner. Start with a place and a relationship that can carry the work. A parcel you cannot maintain is an additional problem, however beautiful the listing photograph.
+That's one route, and it's not the only one or the entry fee. Land trusts, leases, shared gardens, public land, and agreements with growers who already have ground are all ways to get useful capacity under your feet. The trust in the scene changes a set of relationships: who may use the ground, who decides its future, what Irene receives, and what the co-op must keep paying. The paperwork doesn't abolish responsibility. It gives responsibility a shape people can read and hold each other to. The fictional trust isn't a legal template, and anyone setting one up needs real advice. What matters here is the question that brought those people to the table: how do we keep useful capacity serving the people who depend on it?
 
 ## Land that could hold a right
 
@@ -80,56 +77,76 @@ Reuben's folders therefore belong beside a larger set of questions. Who supplies
 
 ## Grandma's request
 
-Imagine an eighty-two-year-old neighbor on a fixed income. Arthritis makes yard work difficult. The yard is overgrown, a landscaping quote is beyond her budget, and a code-enforcement notice adds pressure she doesn't need. The groceries are another calculation. She has begun buying what she can carry rather than what she would choose.
+Now let's finish the story this chapter has been circling, all the way to the door.
 
-In this illustrative service arrangement, a local group already has a small funded help program and agreements with qualified operators. She can request help by phone, through a neighbor, or using a simple device if she prefers. She doesn't need to learn our favorite interface before somebody listens.
+Picture an eighty-two-year-old woman on a fixed income at the edge of town. Her joints are stiff with arthritis. Her yard has gone to star thistle, a fire hazard for her and for everyone downwind, and the county has sent a code-enforcement notice with a fine she can't pay. A landscaping crew wants $400 cash. The groceries are another calculation: she's started buying what she can carry instead of what she'd choose.
 
-A coordinator confirms what she wants and what the group can offer. The request is for ordinary yard work assessed by an appropriate operator, plus a food delivery she has asked for. It is not an invitation for volunteers to improvise hazardous tree work or operate unfamiliar machinery.
+What's she supposed to do? Sit there, run out of money, and wait for fire season?
 
-The coordinator checks available people and tools, agrees a time, and records who is responsible. A schedule helps them keep the promise. It doesn't decide what she deserves.
+Absolutely not.
 
-On Saturday, the crew does the agreed yard work. A person checks the result with her. Separately, a food partner supplies a confirmed share, and a driver delivers it. If the share contains five kilograms of vegetables, that is what the record says. The coordinator has already asked whether she can prepare them and what she wants. Receiving help shouldn't mean surrendering every ordinary preference about dinner.
+This is exactly where the lone-prepper story falls apart. A bunker does nothing for her. What she needs is a network of neighbors with tools, food, and time, organized well enough to show up. Here's what that looks like, as an illustration, not a report of a real program.
 
-The vegetables are one contribution to her meals. The group still needs other sources for a sufficient, varied supply, and prepared food when cooking isn't practical. Her needs determine whether the arrangement works. The size of the box alone can't tell us.
+**The nodes.** Several households in the area each run a shop-house, or a *shouse*: half workshop, half home, with the tools, some power, and often a garden or a greenhouse attached. Chapter 13 builds one. Each is a node in a small network. Some nodes have a surplus of food in a given week. Some have a tractor or a chipper. Some have neither, and that's fine.
 
-The group charges her nothing. Its budget, equipment, and donated time still exist. Free to grandma means somebody arranged provision; it doesn't mean the costs vanished.
+**The balance.** For the network as a whole, the math is simple:
+
+> **Network surplus = (everything the nodes produce) − (everything the nodes need)**
+
+In the old arrangement, a household that produces nothing and can't pay gets cut off. In this one, the partial surpluses of a dozen nodes cover the household that can't contribute this week. Be honest about the size of it: a single garden, even a heavily automated one, usually won't cover a household's full diet, and anyone promising you a guaranteed multiple of your caloric needs is selling something. Automation makes a surplus *possible* where before there was only labor. Pool the partial surpluses and the network can carry its neighbors, not because any node is a miracle, but because the bottleneck was never raw productivity. It was distribution.
+
+![The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhouse, Shouse Node B with its tool library and battery bank, exchanging tasks over LoRa mesh, and a vulnerable node receiving automated calorie and labor deliveries](/book-images/ch12-csa-network.svg)
+
+*The semi-autonomous CSA. Whatever surplus the nodes produce goes to the neighbors who can't. The point is distribution, not a guaranteed yield.*
+
+**The request.** She doesn't need a smartphone. She has a phone number somebody answers, a neighbor who checks in, or, if she likes gadgets, a simple mesh radio on the kitchen counter with one button: NEED HELP. However it arrives, the request lands with a coordinator.
+
+**The coordination.** The coordinator, with a local model on the co-op's own server helping with the scheduling, looks at the shared directory of who has which tools, skills, and surplus this week. The software proposes: Saturday morning, the tractor from one node, the chipper from another, two people with the right experience. A person confirms it with her: this is what she wants done, at a time that suits her, and yes, she'd like some vegetables. What does she like? Can she cook them, or would soup be better?
+
+**The delivery.** Saturday morning, the crew clears the thistle, which lowers the fire risk for her and for the whole road. Someone brings five kilograms of vegetables from a greenhouse that had more than it could use, plus a pot of soup from the co-op kitchen, because she said standing at the stove is hard these days. A person walks the yard with her before they leave, and asks whether the county notice needs a letter.
+
+We aren't doing charity in the condescending, form-in-triplicate sense. We're maintaining our own neighborhood. She keeps her yard, her pantry, and her dignity, and nobody asks her to prove she deserves any of it. The group charges her nothing. Its equipment, fuel, and donated hours still exist, and they go in the record. Free to her means somebody arranged it, not that it cost nothing.
 
 ## What the machines did
 
-In that version, software assisted coordination and garden equipment may have helped tend the crop. People assessed the yard, operated the tools, harvested or obtained the food, and delivered it. Calling the whole sequence autonomous would give machines credit for work people performed.
+Be precise about the credit. Software helped schedule. A greenhouse controller may have helped grow the vegetables. People assessed the yard, ran the tools, harvested the food, made the soup, and drove it over. Calling the whole thing "autonomous" would give machines credit for work people did.
 
-A future robot service might do more of the physical work. That's a forecast to test against actual tasks, conditions, reliability, and availability. My personal 2027 AGI expectation is not evidence that such a service will be available to her that year.
-
-The current example still matters. It shows where labor is needed and where a useful machine could reduce it. It also shows that we can help before the future version arrives.
+A future robot service might do much more of the physical work. That's a forecast to test against real tasks, real reliability, and real availability, and my 2027 expectation doesn't promise it'll be on her road that year. But the example matters now, because it shows exactly where labor is needed and where a good machine could lighten it. And it shows we can help before the future version shows up.
 
 ## Count the result at the door
 
-Keep separate records for food, equipment time, travel, money, and remaining labor. Ask whether the recipient got what was agreed, whether it met their needs, and whether the group can repeat the service. A machine's activity log alone can't answer those questions.
+Keep separate records for food, equipment time, travel, money, and remaining labor. Ask whether she got what was agreed, whether it met her needs, and whether the group can do it again next month. A machine's activity log can't answer any of those.
 
-The larger goal is universal food access. A small cooperative isn't humanity, and a good Saturday isn't a permanent guarantee. Expansion needs reliable partners, provision for shortages, and ways to serve people outside the founders' circle. Keep those gaps visible without demanding that one neighbor solve all of them before helping another.
+The bigger goal is food access for everyone. A small co-op isn't humanity, and a good Saturday isn't a permanent guarantee. Growing it takes reliable partners, a plan for shortages, and ways to reach people outside the founders' circle. Imagine what a dependable version would take off her week: the worry about carrying everything in one trip, the price math narrowing her dinner, the need to justify asking again. The real achievement would be the expectation she could safely form: help will come, and she doesn't have to get poorer, more grateful, or more useful to keep getting it.
 
-Now imagine what a dependable version would remove from her week: the worry about carrying everything in one trip, the price calculation that narrows her dinner, the need to justify asking again. Better machines could help make that service easier to sustain. The social achievement would be the expectation she could safely form: the help will come, and she doesn't have to become poorer, more grateful, or more useful to keep receiving it.
+## Right now
 
-This week, ask one existing local organization how someone requests food or practical help. Check whether that route is usable without a smartphone, transport, or spare money. With the organization's agreement, help close one barrier. The first useful infrastructure might be an accurate phone number and somebody who answers it.
+Let's skip the hand-wringing and the endless theory.
+
+Right now, you can start learning to build machines that help grow food. Right now, you can start working toward a home and ground that you and your neighbors actually hold. You don't need permission from a central board, and you don't need to wait for a federal program or a change in the political weather.
+
+You can, *right now*, start working with your neighbors, your friends, and your family to share not only food and tools but labor, actual fucking labor, with the people who need it most, without the condescension and the paperwork that usually come wrapped around charity.
+
+This week, ask one local organization how someone requests food or practical help. Check whether that route works without a smartphone, a car, or spare money. With their agreement, help close one gap. The first piece of infrastructure might be an accurate phone number and somebody who answers it.
 
 ---
 
 ## Precedent P-15: One Hundred Sixty Acres (United States, 1862)
 
-The Homestead Act of 1862 made land available to eligible claimants under specified conditions. Its promise of opportunity helped shape settlement and agriculture.
+The Homestead Act was signed in May 1862, and the timing is half the lesson: the country was a year into the Civil War. While every headline was consumed by the emergency, the federal government opened millions of acres, offering one hundred sixty acres to eligible claimants, including women heads of household and immigrants who'd declared their intent to become citizens, who would live on the land and improve it for five years. [National Archives, Homestead Act of 1862](https://www.archives.gov/milestone-documents/homestead-act)
 
-That land was already inhabited by Indigenous peoples. The National Park Service's account recognizes that history alongside the experiences of homesteaders. Access for one group cannot be told honestly as though it took place on a blank map. [National Park Service, Homestead History and Culture](https://www.nps.gov/home/learn/historyculture/index.htm)
+The people who filed during the chaos held title when the chaos ended. It was one of the largest transfers of land and position in the country's history, and it happened in the middle of a crisis, not after it.
 
-The case belongs in a discussion of land access, eligibility, power, and dispossession. It supplies no evidence that buying rural property today guarantees appreciation or security.
+The other half of the lesson is who was already there. That land wasn't empty. It was the home of Indigenous nations, and much of it had been taken through war, treaties broken, and forced removal. The National Park Service's own account of the Homestead story holds both histories together, and so should we. [National Park Service, Homestead History and Culture](https://www.nps.gov/home/learn/historyculture/index.htm) Access for one group can't be told honestly as though it happened on a blank map.
 
-**The mechanism.** Land policy creates opportunity for some people while affecting those already there. Access cannot be understood without eligibility, dispossession, and the terms of ownership.
+**The mechanism.** Transitions reprice land and position early, and the window often opens during the confusion, not after it. Every land policy creates opportunity for some people while landing on the people already there.
 
-**The rule.** Ask whose land and whose opportunity the story describes.
+**The rule.** Ask whose land and whose opportunity the story describes. Then don't wait for clarity to start your paperwork.
 
 **The practice.**
 
-1. Investigate an existing local route to garden or farm access.
-2. Include the rights and interests of current occupants.
-3. Compare purchase with sharing or leasing without assuming future price gains.
+1. Open the filing office this month. Spend one evening doing real research: three places you might live, actual listings or lease options or land-trust openings, actual prices, actual water and zoning notes, in a spreadsheet. Not to buy anything this month. To turn "someday, land" from a mood into a document with numbers in it.
+2. Put a date on the claim. The homesteaders had a five-year proving period with a clock on it. Give yourself one: the date by which you'll have made a position decision, buy, lease, join a co-op's ground, or commit to improving where you already are.
+3. Look for today's programs before the crowd does: county land banks, community land trusts, rural development grants, conservation leases, community garden plots. Find out who lived on and used that ground before, and whose interests are still tied to it. Set a quarterly hour to check what's on offer where you live.
 
 ---

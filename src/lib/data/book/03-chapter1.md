@@ -110,6 +110,8 @@ Danaylov left one open. Here's the one this book uses, and every claim in the re
 
 > **The Singularity is the point where intelligence stops being scarce, and every institution quietly built on its scarcity starts failing before anyone has written the replacement.**
 
+Here's how I first pictured it, years before I had the words. Imagine every person on this spinning rock gets their own Einstein as entry-level tech support. Your mom stops calling you to fix her email, because she's got Einstein on speed dial, and by next week she's debating relativity over breakfast. It's a funny picture. Now ask what happens to everyone who was paid to be the smart one in the room.
+
 Three things follow.
 
 **It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.

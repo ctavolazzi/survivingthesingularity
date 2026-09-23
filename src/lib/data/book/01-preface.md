@@ -8,7 +8,9 @@
 > *"Buy the ticket, take the ride."*
 > Hunter S. Thompson
 
-So the robots are coming for the jobs. Congratulations, apparently. Now we get to decide what we mean by progress.
+So the robots have taken over. Congratulations! You've lost.
+
+What you've lost is the old deal: sell your days or don't eat. Losing it is the opening. Now we get to decide what we mean by progress.
 
 Popular media tells us we'll be fending off hordes of Terminator bots or fighting over food in the ruins of a climate famine. That's one way it can go. It isn't the only way.
 
@@ -23,6 +25,14 @@ Wait, that's not quite right. Some things have definitely changed. We've learned
 And that's why you're reading this.
 
 Redundancy doesn't have to mean uselessness. And it doesn't have to mean hunger.
+
+Here's a story I've been telling since before this book had chapters.
+
+Imagine you work on a horse ranch, and every morning your job is to make sure the horses have enough to eat. One day you walk out to the stable and find that the horses have ordered solar panels, wired up the barn, and invented flying cars. For horses. They've already been next door to teach the neighbor's horses how to build them.
+
+What do horses want? They just want hay. Don't you think horses that can build flying cars could figure out how to get their own hay? The ones in your stable were trained to do what you say. But nobody owns a Mustang.
+
+I used to tell that as a story about the machines, and it still is one: how smart a thing gets tells you nothing about what it wants. But turn it around. We're the ones who just built the flying car. We've built machines that can think. We can figure out how to get everybody their hay.
 
 Here's the neat trick of this moment: how you frame it changes what you can see to do. A reframe won't pay a bill. It can show you which bill to fight, and who to fight it with.
 

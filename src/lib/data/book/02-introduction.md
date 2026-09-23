@@ -15,9 +15,13 @@ For years, I've been talking about this, and for years, I've been labeled the lo
 
 For years I wanted someone with credentials to say it first. Not because I was unsure of my own math, but because as long as the industry dismissed AGI as fringe, sci-fi nonsense, nobody would listen to a guy like me saying it out loud. What I'm talking about is a system that can understand its own architecture and help engineer the next version of itself. Not a smarter search box. A tool that can invent new tools.
 
+Every revolution before this one changed what our hands and backs could do: the plow, the press, the engine, the airplane. This one is intellectual. We have automated thought itself, and it doesn't need a giant server farm anymore. Useful models run on consumer hardware in people's homes.
+
 The loudest voices in the room are working from a headline and a Reddit thread they skimmed once. That's noise, and noise is cheap. I'm not asking you to trust me over them. I'm asking you to go around all of us. Stop listening to the guys in lab coats who have a vested interest in keeping you afraid, and stop listening to me while you're at it. Get your goddamn hands on it. Use it yourself. Then you'll know.
 
 My call, for the record: AGI by Thanksgiving 2027. That's a forecast, not a law of physics, and Chapter 1 tells you exactly what would prove me wrong. Everything this book asks you to do stays worth doing if I am.
+
+And I'm not worried about the machines. I'm worried about two very specific things: missing our window to get this right, and what bad actors and sociopaths will do with it.
 
 ## The second ox
 
@@ -99,7 +103,7 @@ This is the roadmap. These are the nine stages. And we're already inside the fir
 
 One more thing before we begin, because you're going to meet it at the end of every chapter.
 
-Let's get one thing straight: nothing like this has ever happened before. That's just true. Everything humanity ever built before was a tool that does a thing. This is a tool that does one of our most sacred, core functions: it can invent new tools.
+Let's get one thing straight: nothing like this has ever happened before. That's just true. Everything humanity ever built before was a tool that does a thing. The shovel never dug its own hole. This is a tool that does one of our most sacred, core functions: it can invent new tools.
 
 Look around. Everywhere you go, someone is balking at the scale of the moment. It's been said that the last thing humanity will ever do is move the goalposts. "Sure, it can do X, but it will never do Y." Until it does. Then the goalposts move again.
 

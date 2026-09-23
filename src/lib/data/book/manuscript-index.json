@@ -1,20 +1,20 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.9.0",
+  "book_version": "0.9.1",
   "generated": "2026-09-23",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 1936,
-    "words": 85385
+    "blocks": 1954,
+    "words": 86473
   },
   "sections": [
     {
       "id": "introduction",
       "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md",
-      "next_ordinal": 135,
-      "words": 2701,
+      "next_ordinal": 139,
+      "words": 2907,
       "tombstones": [
         "sts.introduction.b0003",
         "sts.introduction.b0004",
@@ -127,11 +127,22 @@
           "preview": "*Atlas during testing. The data does not care how you feel about it. (DARPA, Public domain"
         },
         {
+          "id": "sts.introduction.b0135",
+          "type": "blockquote",
+          "lines": [
+            9,
+            10
+          ],
+          "words": 31,
+          "hash": "dfc84ba3cb86",
+          "preview": "> *\"It is difficult to get a man to understand something, when his salary depends upon his"
+        },
+        {
           "id": "sts.introduction.b0081",
           "type": "paragraph",
           "lines": [
-            9,
-            9
+            12,
+            12
           ],
           "words": 5,
           "hash": "634b3eb48423",
@@ -141,8 +152,8 @@
           "id": "sts.introduction.b0082",
           "type": "paragraph",
           "lines": [
-            11,
-            11
+            14,
+            14
           ],
           "words": 60,
           "hash": "a7dad97b8cc9",
@@ -152,19 +163,30 @@
           "id": "sts.introduction.b0083",
           "type": "paragraph",
           "lines": [
-            13,
-            13
+            16,
+            16
           ],
           "words": 78,
           "hash": "3e452ad06266",
           "preview": "For years I wanted someone with credentials to say it first. Not because I was unsure of m"
         },
         {
+          "id": "sts.introduction.b0079",
+          "type": "paragraph",
+          "lines": [
+            18,
+            18
+          ],
+          "words": 48,
+          "hash": "c7b39ca25f00",
+          "preview": "Every revolution before this one changed what our hands and backs could do: the plow, the "
+        },
+        {
           "id": "sts.introduction.b0086",
           "type": "paragraph",
           "lines": [
-            15,
-            15
+            20,
+            20
           ],
           "words": 80,
           "hash": "85616612c6b6",
@@ -174,19 +196,30 @@
           "id": "sts.introduction.b0088",
           "type": "paragraph",
           "lines": [
-            17,
-            17
+            22,
+            22
           ],
           "words": 41,
           "hash": "cd6524e4b836",
           "preview": "My call, for the record: AGI by Thanksgiving 2027. That's a forecast, not a law of physics"
         },
         {
+          "id": "sts.introduction.b0136",
+          "type": "paragraph",
+          "lines": [
+            24,
+            24
+          ],
+          "words": 31,
+          "hash": "d5a824dafa8a",
+          "preview": "And I'm not worried about the machines. I'm worried about two very specific things: missin"
+        },
+        {
           "id": "sts.introduction.b0099",
           "type": "heading",
           "lines": [
-            19,
-            19
+            26,
+            26
           ],
           "words": 3,
           "hash": "3e068f0d6130",
@@ -197,8 +230,8 @@
           "id": "sts.introduction.b0089",
           "type": "paragraph",
           "lines": [
-            21,
-            21
+            28,
+            28
           ],
           "words": 46,
           "hash": "571e5e4b481d",
@@ -208,8 +241,8 @@
           "id": "sts.introduction.b0090",
           "type": "paragraph",
           "lines": [
-            23,
-            23
+            30,
+            30
           ],
           "words": 95,
           "hash": "13754a0a8108",
@@ -219,8 +252,8 @@
           "id": "sts.introduction.b0091",
           "type": "paragraph",
           "lines": [
-            25,
-            25
+            32,
+            32
           ],
           "words": 60,
           "hash": "699713e45998",
@@ -230,8 +263,8 @@
           "id": "sts.introduction.b0115",
           "type": "figure",
           "lines": [
-            27,
-            27
+            34,
+            34
           ],
           "words": 16,
           "hash": "19d6cac61998",
@@ -243,8 +276,8 @@
           "id": "sts.introduction.b0116",
           "type": "caption",
           "lines": [
-            29,
-            29
+            36,
+            36
           ],
           "words": 19,
           "hash": "3e37e3df67ca",
@@ -254,8 +287,8 @@
           "id": "sts.introduction.b0094",
           "type": "paragraph",
           "lines": [
-            31,
-            31
+            38,
+            38
           ],
           "words": 135,
           "hash": "0f7932dd2add",
@@ -265,8 +298,8 @@
           "id": "sts.introduction.b0117",
           "type": "heading",
           "lines": [
-            33,
-            33
+            40,
+            40
           ],
           "words": 6,
           "hash": "acf617cfa09e",
@@ -277,8 +310,8 @@
           "id": "sts.introduction.b0095",
           "type": "paragraph",
           "lines": [
-            35,
-            35
+            42,
+            42
           ],
           "words": 45,
           "hash": "c6eeefe30fe9",
@@ -288,8 +321,8 @@
           "id": "sts.introduction.b0096",
           "type": "paragraph",
           "lines": [
-            37,
-            37
+            44,
+            44
           ],
           "words": 61,
           "hash": "412f933f7d96",
@@ -299,8 +332,8 @@
           "id": "sts.introduction.b0084",
           "type": "paragraph",
           "lines": [
-            39,
-            39
+            46,
+            46
           ],
           "words": 6,
           "hash": "cc5719e0ff19",
@@ -310,8 +343,8 @@
           "id": "sts.introduction.b0050",
           "type": "paragraph",
           "lines": [
-            41,
-            41
+            48,
+            48
           ],
           "words": 19,
           "hash": "9a64fc90f6f8",
@@ -321,8 +354,8 @@
           "id": "sts.introduction.b0085",
           "type": "heading",
           "lines": [
-            43,
-            43
+            50,
+            50
           ],
           "words": 7,
           "hash": "20645f586e4a",
@@ -333,8 +366,8 @@
           "id": "sts.introduction.b0097",
           "type": "paragraph",
           "lines": [
-            45,
-            45
+            52,
+            52
           ],
           "words": 47,
           "hash": "f63c3676dcaa",
@@ -344,8 +377,8 @@
           "id": "sts.introduction.b0087",
           "type": "paragraph",
           "lines": [
-            47,
-            47
+            54,
+            54
           ],
           "words": 43,
           "hash": "02644319cb99",
@@ -355,8 +388,8 @@
           "id": "sts.introduction.b0098",
           "type": "paragraph",
           "lines": [
-            49,
-            49
+            56,
+            56
           ],
           "words": 68,
           "hash": "c62901811151",
@@ -366,8 +399,8 @@
           "id": "sts.introduction.b0100",
           "type": "paragraph",
           "lines": [
-            51,
-            51
+            58,
+            58
           ],
           "words": 3,
           "hash": "836dee1b0614",
@@ -377,8 +410,8 @@
           "id": "sts.introduction.b0101",
           "type": "paragraph",
           "lines": [
-            53,
-            53
+            60,
+            60
           ],
           "words": 60,
           "hash": "82341ffa38e9",
@@ -388,8 +421,8 @@
           "id": "sts.introduction.b0102",
           "type": "paragraph",
           "lines": [
-            55,
-            55
+            62,
+            62
           ],
           "words": 39,
           "hash": "ce5bd451e3bd",
@@ -399,8 +432,8 @@
           "id": "sts.introduction.b0092",
           "type": "blockquote",
           "lines": [
-            57,
-            57
+            64,
+            64
           ],
           "words": 16,
           "hash": "654228ca5ef8",
@@ -410,8 +443,8 @@
           "id": "sts.introduction.b0093",
           "type": "heading",
           "lines": [
-            59,
-            59
+            66,
+            66
           ],
           "words": 2,
           "hash": "4f9c85a31c20",
@@ -422,8 +455,8 @@
           "id": "sts.introduction.b0103",
           "type": "paragraph",
           "lines": [
-            61,
-            61
+            68,
+            68
           ],
           "words": 52,
           "hash": "44cdaea7ccc1",
@@ -433,8 +466,8 @@
           "id": "sts.introduction.b0104",
           "type": "paragraph",
           "lines": [
-            63,
-            63
+            70,
+            70
           ],
           "words": 50,
           "hash": "fdea9cf68213",
@@ -444,8 +477,8 @@
           "id": "sts.introduction.b0106",
           "type": "paragraph",
           "lines": [
-            65,
-            65
+            72,
+            72
           ],
           "words": 56,
           "hash": "a7b5996f4a08",
@@ -455,8 +488,8 @@
           "id": "sts.introduction.b0107",
           "type": "paragraph",
           "lines": [
-            67,
-            67
+            74,
+            74
           ],
           "words": 65,
           "hash": "7974f6d6884f",
@@ -466,8 +499,8 @@
           "id": "sts.introduction.b0108",
           "type": "paragraph",
           "lines": [
-            69,
-            69
+            76,
+            76
           ],
           "words": 53,
           "hash": "a223cd3130e8",
@@ -477,8 +510,8 @@
           "id": "sts.introduction.b0109",
           "type": "paragraph",
           "lines": [
-            71,
-            71
+            78,
+            78
           ],
           "words": 98,
           "hash": "9f6970983132",
@@ -488,8 +521,8 @@
           "id": "sts.introduction.b0118",
           "type": "blockquote",
           "lines": [
-            73,
-            73
+            80,
+            80
           ],
           "words": 18,
           "hash": "ab2c2d95db7f",
@@ -499,8 +532,8 @@
           "id": "sts.introduction.b0119",
           "type": "figure",
           "lines": [
-            75,
-            75
+            82,
+            82
           ],
           "words": 38,
           "hash": "9b8dde00b0ee",
@@ -512,8 +545,8 @@
           "id": "sts.introduction.b0120",
           "type": "caption",
           "lines": [
-            77,
-            77
+            84,
+            84
           ],
           "words": 31,
           "hash": "5cf401d6c758",
@@ -523,8 +556,8 @@
           "id": "sts.introduction.b0110",
           "type": "paragraph",
           "lines": [
-            79,
-            79
+            86,
+            86
           ],
           "words": 38,
           "hash": "36300da031aa",
@@ -534,8 +567,8 @@
           "id": "sts.introduction.b0105",
           "type": "heading",
           "lines": [
-            81,
-            81
+            88,
+            88
           ],
           "words": 7,
           "hash": "6707101233cf",
@@ -546,8 +579,8 @@
           "id": "sts.introduction.b0112",
           "type": "paragraph",
           "lines": [
-            83,
-            83
+            90,
+            90
           ],
           "words": 25,
           "hash": "fe1ee3a30eaa",
@@ -557,8 +590,8 @@
           "id": "sts.introduction.b0113",
           "type": "paragraph",
           "lines": [
-            85,
-            85
+            92,
+            92
           ],
           "words": 50,
           "hash": "87a5ee6578d2",
@@ -568,19 +601,30 @@
           "id": "sts.introduction.b0114",
           "type": "paragraph",
           "lines": [
-            87,
-            87
+            94,
+            94
           ],
           "words": 90,
           "hash": "6f057cae212a",
           "preview": "Free doesn't mean costless, either. People, equipment, energy, maintenance, and delivery s"
         },
         {
+          "id": "sts.introduction.b0137",
+          "type": "paragraph",
+          "lines": [
+            96,
+            96
+          ],
+          "words": 89,
+          "hash": "6b0aad992624",
+          "preview": "I'll tell you where I stand, because you'll find out anyway. We need to move away from mon"
+        },
+        {
           "id": "sts.introduction.b0077",
           "type": "paragraph",
           "lines": [
-            89,
-            89
+            98,
+            98
           ],
           "words": 16,
           "hash": "4f8de493f53d",
@@ -590,8 +634,8 @@
           "id": "sts.introduction.b0121",
           "type": "figure",
           "lines": [
-            91,
-            91
+            100,
+            100
           ],
           "words": 50,
           "hash": "9f1451eb8e1a",
@@ -603,8 +647,8 @@
           "id": "sts.introduction.b0122",
           "type": "caption",
           "lines": [
-            93,
-            93
+            102,
+            102
           ],
           "words": 27,
           "hash": "45f95c86ed4f",
@@ -614,8 +658,8 @@
           "id": "sts.introduction.b0123",
           "type": "heading",
           "lines": [
-            95,
-            95
+            104,
+            104
           ],
           "words": 3,
           "hash": "caaec0489b26",
@@ -626,30 +670,30 @@
           "id": "sts.introduction.b0078",
           "type": "paragraph",
           "lines": [
-            97,
-            97
+            106,
+            106
           ],
           "words": 18,
           "hash": "5abcc2e9dc3d",
           "preview": "One more thing before we begin, because you're going to meet it at the end of every chapte"
         },
         {
-          "id": "sts.introduction.b0079",
+          "id": "sts.introduction.b0138",
           "type": "paragraph",
           "lines": [
-            99,
-            99
+            108,
+            108
           ],
-          "words": 45,
-          "hash": "38cb53789958",
+          "words": 52,
+          "hash": "d48a3e1597ef",
           "preview": "Let's get one thing straight: nothing like this has ever happened before. That's just true"
         },
         {
           "id": "sts.introduction.b0080",
           "type": "paragraph",
           "lines": [
-            101,
-            101
+            110,
+            110
           ],
           "words": 48,
           "hash": "04b1cf8e96fb",
@@ -659,8 +703,8 @@
           "id": "sts.introduction.b0124",
           "type": "paragraph",
           "lines": [
-            103,
-            103
+            112,
+            112
           ],
           "words": 167,
           "hash": "2ae2c254c15e",
@@ -670,8 +714,8 @@
           "id": "sts.introduction.b0125",
           "type": "blockquote",
           "lines": [
-            105,
-            105
+            114,
+            114
           ],
           "words": 8,
           "hash": "e14939b8e251",
@@ -681,8 +725,8 @@
           "id": "sts.introduction.b0126",
           "type": "paragraph",
           "lines": [
-            107,
-            107
+            116,
+            116
           ],
           "words": 88,
           "hash": "141e73243892",
@@ -692,8 +736,8 @@
           "id": "sts.introduction.b0127",
           "type": "paragraph",
           "lines": [
-            109,
-            109
+            118,
+            118
           ],
           "words": 94,
           "hash": "ca4fc361e2f0",
@@ -703,8 +747,8 @@
           "id": "sts.introduction.b0128",
           "type": "paragraph",
           "lines": [
-            111,
-            111
+            120,
+            120
           ],
           "words": 82,
           "hash": "3d6694c75adc",
@@ -714,8 +758,8 @@
           "id": "sts.introduction.b0129",
           "type": "paragraph",
           "lines": [
-            113,
-            113
+            122,
+            122
           ],
           "words": 42,
           "hash": "10f40f88065d",
@@ -725,8 +769,8 @@
           "id": "sts.introduction.b0111",
           "type": "heading",
           "lines": [
-            115,
-            115
+            124,
+            124
           ],
           "words": 4,
           "hash": "d540d2928f9c",
@@ -737,8 +781,8 @@
           "id": "sts.introduction.b0130",
           "type": "paragraph",
           "lines": [
-            117,
-            117
+            126,
+            126
           ],
           "words": 82,
           "hash": "e86cacf2b4d8",
@@ -748,8 +792,8 @@
           "id": "sts.introduction.b0131",
           "type": "paragraph",
           "lines": [
-            119,
-            119
+            128,
+            128
           ],
           "words": 43,
           "hash": "e9269055a770",
@@ -759,8 +803,8 @@
           "id": "sts.introduction.b0132",
           "type": "paragraph",
           "lines": [
-            121,
-            121
+            130,
+            130
           ],
           "words": 46,
           "hash": "6fb02a7167ef",
@@ -770,8 +814,8 @@
           "id": "sts.introduction.b0133",
           "type": "paragraph",
           "lines": [
-            123,
-            123
+            132,
+            132
           ],
           "words": 41,
           "hash": "89713e8a3df1",
@@ -781,8 +825,8 @@
           "id": "sts.introduction.b0134",
           "type": "paragraph",
           "lines": [
-            125,
-            125
+            134,
+            134
           ],
           "words": 34,
           "hash": "dce1ee7e7246",
@@ -794,8 +838,8 @@
       "id": "preface",
       "title": "Preface: Welcome to the Weirdness",
       "file": "01-preface.md",
-      "next_ordinal": 69,
-      "words": 1236,
+      "next_ordinal": 74,
+      "words": 1428,
       "tombstones": [
         "sts.preface.b0003",
         "sts.preface.b0004",
@@ -888,16 +932,27 @@
             11,
             11
           ],
-          "words": 20,
-          "hash": "a21db9a42599",
-          "preview": "So the robots are coming for the jobs. Congratulations, apparently. Now we get to decide w"
+          "words": 9,
+          "hash": "f85b87ccddf0",
+          "preview": "So the robots have taken over. Congratulations! You've lost."
+        },
+        {
+          "id": "sts.preface.b0069",
+          "type": "paragraph",
+          "lines": [
+            13,
+            13
+          ],
+          "words": 28,
+          "hash": "b3b7bc88fe7d",
+          "preview": "What you've lost is the old deal: sell your days or don't eat. Losing it is the opening. N"
         },
         {
           "id": "sts.preface.b0040",
           "type": "paragraph",
           "lines": [
-            13,
-            13
+            15,
+            15
           ],
           "words": 34,
           "hash": "b266a680d968",
@@ -907,8 +962,8 @@
           "id": "sts.preface.b0041",
           "type": "paragraph",
           "lines": [
-            15,
-            15
+            17,
+            17
           ],
           "words": 7,
           "hash": "5275c8fe62cf",
@@ -918,8 +973,8 @@
           "id": "sts.preface.b0053",
           "type": "paragraph",
           "lines": [
-            17,
-            17
+            19,
+            19
           ],
           "words": 15,
           "hash": "3213ae0ff76e",
@@ -929,8 +984,8 @@
           "id": "sts.preface.b0043",
           "type": "paragraph",
           "lines": [
-            19,
-            19
+            21,
+            21
           ],
           "words": 49,
           "hash": "1948cf51b257",
@@ -940,8 +995,8 @@
           "id": "sts.preface.b0044",
           "type": "paragraph",
           "lines": [
-            21,
-            21
+            23,
+            23
           ],
           "words": 66,
           "hash": "6376ac919f37",
@@ -951,8 +1006,8 @@
           "id": "sts.preface.b0054",
           "type": "paragraph",
           "lines": [
-            23,
-            23
+            25,
+            25
           ],
           "words": 6,
           "hash": "bb244adb3ec6",
@@ -962,19 +1017,63 @@
           "id": "sts.preface.b0046",
           "type": "paragraph",
           "lines": [
-            25,
-            25
+            27,
+            27
           ],
           "words": 13,
           "hash": "40dbcff0901f",
           "preview": "Redundancy doesn't have to mean uselessness. And it doesn't have to mean hunger."
         },
         {
+          "id": "sts.preface.b0070",
+          "type": "paragraph",
+          "lines": [
+            29,
+            29
+          ],
+          "words": 12,
+          "hash": "1e4a44f0b20f",
+          "preview": "Here's a story I've been telling since before this book had chapters."
+        },
+        {
+          "id": "sts.preface.b0071",
+          "type": "paragraph",
+          "lines": [
+            31,
+            31
+          ],
+          "words": 63,
+          "hash": "ea8698823733",
+          "preview": "Imagine you work on a horse ranch, and every morning your job is to make sure the horses h"
+        },
+        {
+          "id": "sts.preface.b0072",
+          "type": "paragraph",
+          "lines": [
+            33,
+            33
+          ],
+          "words": 43,
+          "hash": "7f22340d3276",
+          "preview": "What do horses want? They just want hay. Don't you think horses that can build flying cars"
+        },
+        {
+          "id": "sts.preface.b0073",
+          "type": "paragraph",
+          "lines": [
+            35,
+            35
+          ],
+          "words": 57,
+          "hash": "2fb9ec79c379",
+          "preview": "I used to tell that as a story about the machines, and it still is one: how smart a thing "
+        },
+        {
           "id": "sts.preface.b0047",
           "type": "paragraph",
           "lines": [
-            27,
-            27
+            37,
+            37
           ],
           "words": 38,
           "hash": "cc9cf8b60971",
@@ -984,8 +1083,8 @@
           "id": "sts.preface.b0055",
           "type": "paragraph",
           "lines": [
-            29,
-            29
+            39,
+            39
           ],
           "words": 51,
           "hash": "ef0814407f03",
@@ -995,8 +1094,8 @@
           "id": "sts.preface.b0056",
           "type": "paragraph",
           "lines": [
-            31,
-            31
+            41,
+            41
           ],
           "words": 27,
           "hash": "2d63ec74f81c",
@@ -1006,8 +1105,8 @@
           "id": "sts.preface.b0051",
           "type": "list",
           "lines": [
-            33,
-            39
+            43,
+            49
           ],
           "words": 143,
           "hash": "e83ddf9de9fb",
@@ -1017,8 +1116,8 @@
           "id": "sts.preface.b0058",
           "type": "paragraph",
           "lines": [
-            41,
-            41
+            51,
+            51
           ],
           "words": 10,
           "hash": "247404ade3ac",
@@ -1028,8 +1127,8 @@
           "id": "sts.preface.b0059",
           "type": "paragraph",
           "lines": [
-            43,
-            43
+            53,
+            53
           ],
           "words": 54,
           "hash": "1aa354491cee",
@@ -1039,8 +1138,8 @@
           "id": "sts.preface.b0060",
           "type": "paragraph",
           "lines": [
-            45,
-            45
+            55,
+            55
           ],
           "words": 23,
           "hash": "cc3413b66daf",
@@ -1050,8 +1149,8 @@
           "id": "sts.preface.b0057",
           "type": "paragraph",
           "lines": [
-            47,
-            47
+            57,
+            57
           ],
           "words": 10,
           "hash": "015ef23ff241",
@@ -1061,8 +1160,8 @@
           "id": "sts.preface.b0026",
           "type": "hr",
           "lines": [
-            49,
-            49
+            59,
+            59
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -1072,8 +1171,8 @@
           "id": "sts.preface.b0061",
           "type": "heading",
           "lines": [
-            51,
-            51
+            61,
+            61
           ],
           "words": 11,
           "hash": "b0e786c5a47c",
@@ -1084,8 +1183,8 @@
           "id": "sts.preface.b0049",
           "type": "paragraph",
           "lines": [
-            53,
-            53
+            63,
+            63
           ],
           "words": 21,
           "hash": "c6df639e3096",
@@ -1095,8 +1194,8 @@
           "id": "sts.preface.b0050",
           "type": "paragraph",
           "lines": [
-            55,
-            55
+            65,
+            65
           ],
           "words": 126,
           "hash": "f9367030d402",
@@ -1106,8 +1205,8 @@
           "id": "sts.preface.b0062",
           "type": "figure",
           "lines": [
-            57,
-            57
+            67,
+            67
           ],
           "words": 25,
           "hash": "2b52dda5b51c",
@@ -1119,8 +1218,8 @@
           "id": "sts.preface.b0063",
           "type": "caption",
           "lines": [
-            59,
-            59
+            69,
+            69
           ],
           "words": 24,
           "hash": "e65278b46466",
@@ -1130,8 +1229,8 @@
           "id": "sts.preface.b0064",
           "type": "paragraph",
           "lines": [
-            61,
-            61
+            71,
+            71
           ],
           "words": 39,
           "hash": "4434de8ee148",
@@ -1141,8 +1240,8 @@
           "id": "sts.preface.b0065",
           "type": "paragraph",
           "lines": [
-            63,
-            63
+            73,
+            73
           ],
           "words": 125,
           "hash": "938e996cb975",
@@ -1152,8 +1251,8 @@
           "id": "sts.preface.b0066",
           "type": "paragraph",
           "lines": [
-            65,
-            65
+            75,
+            75
           ],
           "words": 53,
           "hash": "27993bfe46bb",
@@ -1163,8 +1262,8 @@
           "id": "sts.preface.b0067",
           "type": "paragraph",
           "lines": [
-            67,
-            67
+            77,
+            77
           ],
           "words": 46,
           "hash": "c4385466abd4",
@@ -1174,8 +1273,8 @@
           "id": "sts.preface.b0033",
           "type": "paragraph",
           "lines": [
-            69,
-            69
+            79,
+            79
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -1185,8 +1284,8 @@
           "id": "sts.preface.b0068",
           "type": "list",
           "lines": [
-            71,
-            73
+            81,
+            83
           ],
           "words": 151,
           "hash": "43897762959c",
@@ -1196,8 +1295,8 @@
           "id": "sts.preface.b0035",
           "type": "hr",
           "lines": [
-            75,
-            75
+            85,
+            85
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -2260,8 +2359,8 @@
       "id": "chapter1",
       "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md",
-      "next_ordinal": 173,
-      "words": 4238,
+      "next_ordinal": 174,
+      "words": 4309,
       "tombstones": [
         "sts.chapter1.b0003",
         "sts.chapter1.b0006",
@@ -2371,9 +2470,9 @@
             5,
             5
           ],
-          "words": 26,
-          "hash": "ecfafefb6c4c",
-          "preview": "*The shadow of the black hole M87\\*. Past a certain line, there's no going back. (Event Ho"
+          "words": 24,
+          "hash": "f10765f64fb8",
+          "preview": "*The shadow of the black hole M87\\*. Past a certain line, there's no going back. (EHT Coll"
         },
         {
           "id": "sts.chapter1.b0004",
@@ -2923,11 +3022,22 @@
           "preview": "> **The Singularity is the point where intelligence stops being scarce, and every institut"
         },
         {
-          "id": "sts.chapter1.b0131",
+          "id": "sts.chapter1.b0173",
           "type": "paragraph",
           "lines": [
             113,
             113
+          ],
+          "words": 73,
+          "hash": "fb89685615a5",
+          "preview": "Here's how I first pictured it, years before I had the words. Imagine every person on this"
+        },
+        {
+          "id": "sts.chapter1.b0131",
+          "type": "paragraph",
+          "lines": [
+            115,
+            115
           ],
           "words": 3,
           "hash": "fd395ba47297",
@@ -2937,8 +3047,8 @@
           "id": "sts.chapter1.b0132",
           "type": "paragraph",
           "lines": [
-            115,
-            115
+            117,
+            117
           ],
           "words": 60,
           "hash": "6616b52216f2",
@@ -2948,8 +3058,8 @@
           "id": "sts.chapter1.b0124",
           "type": "paragraph",
           "lines": [
-            117,
-            117
+            119,
+            119
           ],
           "words": 60,
           "hash": "23f5b022ed84",
@@ -2959,8 +3069,8 @@
           "id": "sts.chapter1.b0125",
           "type": "paragraph",
           "lines": [
-            119,
-            119
+            121,
+            121
           ],
           "words": 82,
           "hash": "3b0581b5c385",
@@ -2970,8 +3080,8 @@
           "id": "sts.chapter1.b0139",
           "type": "paragraph",
           "lines": [
-            121,
-            121
+            123,
+            123
           ],
           "words": 41,
           "hash": "702f68369754",
@@ -2981,8 +3091,8 @@
           "id": "sts.chapter1.b0102",
           "type": "heading",
           "lines": [
-            123,
-            123
+            125,
+            125
           ],
           "words": 6,
           "hash": "9cee6aaf2977",
@@ -2993,8 +3103,8 @@
           "id": "sts.chapter1.b0140",
           "type": "paragraph",
           "lines": [
-            125,
-            125
+            127,
+            127
           ],
           "words": 23,
           "hash": "f82b9e4eb606",
@@ -3004,8 +3114,8 @@
           "id": "sts.chapter1.b0141",
           "type": "paragraph",
           "lines": [
-            127,
-            127
+            129,
+            129
           ],
           "words": 47,
           "hash": "569998674863",
@@ -3015,8 +3125,8 @@
           "id": "sts.chapter1.b0142",
           "type": "paragraph",
           "lines": [
-            129,
-            129
+            131,
+            131
           ],
           "words": 31,
           "hash": "601450189d59",
@@ -3026,8 +3136,8 @@
           "id": "sts.chapter1.b0143",
           "type": "paragraph",
           "lines": [
-            131,
-            131
+            133,
+            133
           ],
           "words": 28,
           "hash": "140fa1312bb1",
@@ -3037,8 +3147,8 @@
           "id": "sts.chapter1.b0144",
           "type": "paragraph",
           "lines": [
-            133,
-            133
+            135,
+            135
           ],
           "words": 37,
           "hash": "74a499cc50c9",
@@ -3048,8 +3158,8 @@
           "id": "sts.chapter1.b0145",
           "type": "paragraph",
           "lines": [
-            135,
-            135
+            137,
+            137
           ],
           "words": 20,
           "hash": "54bdb1713e94",
@@ -3059,8 +3169,8 @@
           "id": "sts.chapter1.b0146",
           "type": "heading",
           "lines": [
-            137,
-            137
+            139,
+            139
           ],
           "words": 6,
           "hash": "b57e0f8f08eb",
@@ -3071,8 +3181,8 @@
           "id": "sts.chapter1.b0147",
           "type": "paragraph",
           "lines": [
-            139,
-            139
+            141,
+            141
           ],
           "words": 73,
           "hash": "e4f781d1c9b8",
@@ -3082,8 +3192,8 @@
           "id": "sts.chapter1.b0148",
           "type": "paragraph",
           "lines": [
-            141,
-            141
+            143,
+            143
           ],
           "words": 52,
           "hash": "ba17c9011329",
@@ -3093,8 +3203,8 @@
           "id": "sts.chapter1.b0149",
           "type": "table",
           "lines": [
-            143,
-            147
+            145,
+            149
           ],
           "words": 66,
           "hash": "6f6cf1021132",
@@ -3104,8 +3214,8 @@
           "id": "sts.chapter1.b0150",
           "type": "paragraph",
           "lines": [
-            149,
-            149
+            151,
+            151
           ],
           "words": 51,
           "hash": "dc6eb8736690",
@@ -3115,8 +3225,8 @@
           "id": "sts.chapter1.b0151",
           "type": "paragraph",
           "lines": [
-            151,
-            151
+            153,
+            153
           ],
           "words": 45,
           "hash": "b5ea90476de0",
@@ -3126,8 +3236,8 @@
           "id": "sts.chapter1.b0152",
           "type": "paragraph",
           "lines": [
-            153,
-            153
+            155,
+            155
           ],
           "words": 104,
           "hash": "37511c5a24b3",
@@ -3137,8 +3247,8 @@
           "id": "sts.chapter1.b0153",
           "type": "heading",
           "lines": [
-            155,
-            155
+            157,
+            157
           ],
           "words": 8,
           "hash": "ac4d32d881ab",
@@ -3149,8 +3259,8 @@
           "id": "sts.chapter1.b0111",
           "type": "paragraph",
           "lines": [
-            157,
-            157
+            159,
+            159
           ],
           "words": 17,
           "hash": "d9f770d3fcf9",
@@ -3160,8 +3270,8 @@
           "id": "sts.chapter1.b0154",
           "type": "paragraph",
           "lines": [
-            159,
-            159
+            161,
+            161
           ],
           "words": 55,
           "hash": "0e1f3cbb9270",
@@ -3171,8 +3281,8 @@
           "id": "sts.chapter1.b0155",
           "type": "paragraph",
           "lines": [
-            161,
-            161
+            163,
+            163
           ],
           "words": 88,
           "hash": "a99c599a572c",
@@ -3182,8 +3292,8 @@
           "id": "sts.chapter1.b0156",
           "type": "table",
           "lines": [
-            163,
-            166
+            165,
+            168
           ],
           "words": 33,
           "hash": "023455a616de",
@@ -3193,8 +3303,8 @@
           "id": "sts.chapter1.b0157",
           "type": "paragraph",
           "lines": [
-            168,
-            168
+            170,
+            170
           ],
           "words": 13,
           "hash": "0ec554f4512e",
@@ -3204,8 +3314,8 @@
           "id": "sts.chapter1.b0158",
           "type": "paragraph",
           "lines": [
-            170,
-            170
+            172,
+            172
           ],
           "words": 79,
           "hash": "590e07c0ad36",
@@ -3215,8 +3325,8 @@
           "id": "sts.chapter1.b0159",
           "type": "paragraph",
           "lines": [
-            172,
-            172
+            174,
+            174
           ],
           "words": 78,
           "hash": "264f51d81501",
@@ -3226,8 +3336,8 @@
           "id": "sts.chapter1.b0160",
           "type": "heading",
           "lines": [
-            174,
-            174
+            176,
+            176
           ],
           "words": 4,
           "hash": "86d4e593f8e2",
@@ -3238,8 +3348,8 @@
           "id": "sts.chapter1.b0161",
           "type": "paragraph",
           "lines": [
-            176,
-            176
+            178,
+            178
           ],
           "words": 14,
           "hash": "cb8eb4929c7d",
@@ -3249,8 +3359,8 @@
           "id": "sts.chapter1.b0162",
           "type": "paragraph",
           "lines": [
-            178,
-            178
+            180,
+            180
           ],
           "words": 60,
           "hash": "f3be8311d27d",
@@ -3260,8 +3370,8 @@
           "id": "sts.chapter1.b0163",
           "type": "paragraph",
           "lines": [
-            180,
-            180
+            182,
+            182
           ],
           "words": 91,
           "hash": "7336d1e54cd3",
@@ -3271,8 +3381,8 @@
           "id": "sts.chapter1.b0119",
           "type": "heading",
           "lines": [
-            182,
-            182
+            184,
+            184
           ],
           "words": 6,
           "hash": "f00e90c7f205",
@@ -3283,8 +3393,8 @@
           "id": "sts.chapter1.b0164",
           "type": "paragraph",
           "lines": [
-            184,
-            184
+            186,
+            186
           ],
           "words": 57,
           "hash": "7cae69768803",
@@ -3294,8 +3404,8 @@
           "id": "sts.chapter1.b0165",
           "type": "paragraph",
           "lines": [
-            186,
-            186
+            188,
+            188
           ],
           "words": 17,
           "hash": "d0030c560894",
@@ -3305,8 +3415,8 @@
           "id": "sts.chapter1.b0053",
           "type": "hr",
           "lines": [
-            188,
-            188
+            190,
+            190
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -3316,8 +3426,8 @@
           "id": "sts.chapter1.b0054",
           "type": "heading",
           "lines": [
-            190,
-            190
+            192,
+            192
           ],
           "words": 11,
           "hash": "d093e8ad6f1c",
@@ -3328,8 +3438,8 @@
           "id": "sts.chapter1.b0166",
           "type": "paragraph",
           "lines": [
-            192,
-            192
+            194,
+            194
           ],
           "words": 61,
           "hash": "055c66c68788",
@@ -3339,8 +3449,8 @@
           "id": "sts.chapter1.b0167",
           "type": "paragraph",
           "lines": [
-            194,
-            194
+            196,
+            196
           ],
           "words": 13,
           "hash": "aa37ed36be1c",
@@ -3350,8 +3460,8 @@
           "id": "sts.chapter1.b0168",
           "type": "paragraph",
           "lines": [
-            196,
-            196
+            198,
+            198
           ],
           "words": 53,
           "hash": "97c6cabf38b1",
@@ -3361,8 +3471,8 @@
           "id": "sts.chapter1.b0169",
           "type": "paragraph",
           "lines": [
-            198,
-            198
+            200,
+            200
           ],
           "words": 147,
           "hash": "290c5b8b53e3",
@@ -3372,8 +3482,8 @@
           "id": "sts.chapter1.b0170",
           "type": "paragraph",
           "lines": [
-            200,
-            200
+            202,
+            202
           ],
           "words": 25,
           "hash": "e89bbf731b58",
@@ -3383,8 +3493,8 @@
           "id": "sts.chapter1.b0171",
           "type": "paragraph",
           "lines": [
-            202,
-            202
+            204,
+            204
           ],
           "words": 60,
           "hash": "150428310d14",
@@ -3394,8 +3504,8 @@
           "id": "sts.chapter1.b0172",
           "type": "paragraph",
           "lines": [
-            204,
-            204
+            206,
+            206
           ],
           "words": 27,
           "hash": "2956273d52cc",
@@ -3405,8 +3515,8 @@
           "id": "sts.chapter1.b0060",
           "type": "paragraph",
           "lines": [
-            206,
-            206
+            208,
+            208
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -3416,8 +3526,8 @@
           "id": "sts.chapter1.b0126",
           "type": "list",
           "lines": [
-            208,
-            210
+            210,
+            212
           ],
           "words": 152,
           "hash": "55fb19ee2af1",
@@ -3427,8 +3537,8 @@
           "id": "sts.chapter1.b0096",
           "type": "hr",
           "lines": [
-            212,
-            212
+            214,
+            214
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -3441,7 +3551,7 @@
       "title": "Chapter 2: The Era of AGI (Stages 1–5)",
       "file": "04-chapter2.md",
       "next_ordinal": 141,
-      "words": 3144,
+      "words": 3151,
       "tombstones": [
         "sts.chapter2.b0004",
         "sts.chapter2.b0006",
@@ -3531,9 +3641,9 @@
             3,
             3
           ],
-          "words": 9,
-          "hash": "ceecf43446df",
-          "preview": "![Robotic arms assembling a car body](/book-images/ch02-factory-robots.jpg)",
+          "words": 14,
+          "hash": "9f3380783e75",
+          "preview": "![Robotic arms in an interactive Jaguar assembly exhibit at Thinktank, Birmingham](/book-i",
           "image": "/book-images/ch02-factory-robots.jpg",
           "art_id": "sts.photo.ch02-factory-robots"
         },
@@ -3544,9 +3654,9 @@
             5,
             5
           ],
-          "words": 20,
-          "hash": "1f3fb22627d5",
-          "preview": "*Robotic arms at work. The structural automation of labor, already routine. (ell brown, CC"
+          "words": 22,
+          "hash": "2b2face0c7fa",
+          "preview": "*Robotic arms in Thinktank's interactive Jaguar assembly exhibit. A demonstration of indus"
         },
         {
           "id": "sts.chapter2.b0120",
@@ -5028,7 +5138,7 @@
       "title": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)",
       "file": "06-chapter4.md",
       "next_ordinal": 92,
-      "words": 2443,
+      "words": 2462,
       "tombstones": [
         "sts.chapter4.b0003",
         "sts.chapter4.b0004",
@@ -5094,9 +5204,9 @@
             5,
             5
           ],
-          "words": 15,
-          "hash": "c4b1b8689e9b",
-          "preview": "*The Hubble Ultra-Deep Field. The available real estate. (NASA/ESA, Public domain, via Wik"
+          "words": 34,
+          "hash": "69c25914da68",
+          "preview": "*The Hubble Ultra-Deep Field. The available real estate. (NASA, ESA, and S. Beckwith (STSc"
         },
         {
           "id": "sts.chapter4.b0075",
@@ -6795,8 +6905,8 @@
       "id": "chapter6",
       "title": "Chapter 6: Is the Singularity a Done Deal?",
       "file": "08-chapter6.md",
-      "next_ordinal": 112,
-      "words": 2646,
+      "next_ordinal": 114,
+      "words": 2751,
       "tombstones": [
         "sts.chapter6.b0001",
         "sts.chapter6.b0004",
@@ -6883,11 +6993,22 @@
           "preview": "*Edmond de Belamy, generated by a GAN, sold at Christie's for $432,500 in 2018. (Artificia"
         },
         {
+          "id": "sts.chapter6.b0112",
+          "type": "blockquote",
+          "lines": [
+            9,
+            10
+          ],
+          "words": 36,
+          "hash": "e3a2aa9f2250",
+          "preview": "> *\"When a distinguished but elderly scientist states that something is possible, he is al"
+        },
+        {
           "id": "sts.chapter6.b0005",
           "type": "paragraph",
           "lines": [
-            9,
-            9
+            12,
+            12
           ],
           "words": 3,
           "hash": "6f68df3c273f",
@@ -6897,8 +7018,8 @@
           "id": "sts.chapter6.b0057",
           "type": "list",
           "lines": [
-            11,
-            14
+            14,
+            17
           ],
           "words": 80,
           "hash": "f73b3b9665a1",
@@ -6908,8 +7029,8 @@
           "id": "sts.chapter6.b0007",
           "type": "hr",
           "lines": [
-            16,
-            16
+            19,
+            19
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -6919,8 +7040,8 @@
           "id": "sts.chapter6.b0008",
           "type": "paragraph",
           "lines": [
-            18,
-            18
+            21,
+            21
           ],
           "words": 20,
           "hash": "5466113053c1",
@@ -6930,8 +7051,8 @@
           "id": "sts.chapter6.b0086",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            23,
+            23
           ],
           "words": 107,
           "hash": "0b40265e300b",
@@ -6941,8 +7062,8 @@
           "id": "sts.chapter6.b0010",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            25,
+            25
           ],
           "words": 98,
           "hash": "70fc69131fca",
@@ -6952,8 +7073,8 @@
           "id": "sts.chapter6.b0011",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            27,
+            27
           ],
           "words": 110,
           "hash": "7b83acb82e4c",
@@ -6963,8 +7084,8 @@
           "id": "sts.chapter6.b0053",
           "type": "figure",
           "lines": [
-            26,
-            26
+            29,
+            29
           ],
           "words": 15,
           "hash": "58da5838457e",
@@ -6976,8 +7097,8 @@
           "id": "sts.chapter6.b0054",
           "type": "caption",
           "lines": [
-            28,
-            28
+            31,
+            31
           ],
           "words": 8,
           "hash": "80b03f174a3f",
@@ -6987,8 +7108,8 @@
           "id": "sts.chapter6.b0012",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            33,
+            33
           ],
           "words": 19,
           "hash": "4254bdbcf34c",
@@ -6998,8 +7119,8 @@
           "id": "sts.chapter6.b0013",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            35,
+            35
           ],
           "words": 14,
           "hash": "6d5d6a16f01f",
@@ -7009,8 +7130,8 @@
           "id": "sts.chapter6.b0014",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            37,
+            37
           ],
           "words": 84,
           "hash": "b362d223320e",
@@ -7020,8 +7141,8 @@
           "id": "sts.chapter6.b0087",
           "type": "paragraph",
           "lines": [
-            36,
-            36
+            39,
+            39
           ],
           "words": 36,
           "hash": "3f62e319a185",
@@ -7031,8 +7152,8 @@
           "id": "sts.chapter6.b0088",
           "type": "paragraph",
           "lines": [
-            38,
-            38
+            41,
+            41
           ],
           "words": 129,
           "hash": "b7113f057018",
@@ -7042,8 +7163,8 @@
           "id": "sts.chapter6.b0017",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            43,
+            43
           ],
           "words": 4,
           "hash": "ee1c0c03f1df",
@@ -7053,8 +7174,8 @@
           "id": "sts.chapter6.b0018",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            45,
+            45
           ],
           "words": 3,
           "hash": "5647116be7bf",
@@ -7064,8 +7185,8 @@
           "id": "sts.chapter6.b0019",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            47,
+            47
           ],
           "words": 91,
           "hash": "5ab79196a5c4",
@@ -7075,8 +7196,8 @@
           "id": "sts.chapter6.b0020",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            49,
+            49
           ],
           "words": 22,
           "hash": "53c844d352d0",
@@ -7086,8 +7207,8 @@
           "id": "sts.chapter6.b0089",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            51,
+            51
           ],
           "words": 98,
           "hash": "39392c175542",
@@ -7097,8 +7218,8 @@
           "id": "sts.chapter6.b0022",
           "type": "paragraph",
           "lines": [
-            50,
-            50
+            53,
+            53
           ],
           "words": 45,
           "hash": "5941f422d370",
@@ -7108,8 +7229,8 @@
           "id": "sts.chapter6.b0023",
           "type": "paragraph",
           "lines": [
-            52,
-            52
+            55,
+            55
           ],
           "words": 29,
           "hash": "bad745a605b1",
@@ -7119,8 +7240,8 @@
           "id": "sts.chapter6.b0024",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            57,
+            57
           ],
           "words": 22,
           "hash": "1a58fb713888",
@@ -7130,8 +7251,8 @@
           "id": "sts.chapter6.b0025",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            59,
+            59
           ],
           "words": 10,
           "hash": "42c85989a554",
@@ -7141,8 +7262,8 @@
           "id": "sts.chapter6.b0026",
           "type": "hr",
           "lines": [
-            58,
-            58
+            61,
+            61
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -7152,8 +7273,8 @@
           "id": "sts.chapter6.b0027",
           "type": "heading",
           "lines": [
-            60,
-            60
+            63,
+            63
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -7164,8 +7285,8 @@
           "id": "sts.chapter6.b0090",
           "type": "heading",
           "lines": [
-            62,
-            62
+            65,
+            65
           ],
           "words": 6,
           "hash": "74f58557aec3",
@@ -7173,11 +7294,22 @@
           "level": 2
         },
         {
+          "id": "sts.chapter6.b0113",
+          "type": "paragraph",
+          "lines": [
+            67,
+            67
+          ],
+          "words": 69,
+          "hash": "f6fef9366ff4",
+          "preview": "So is it a done deal? My answer, for the record, is yes. I think we're already inside the "
+        },
+        {
           "id": "sts.chapter6.b0091",
           "type": "paragraph",
           "lines": [
-            64,
-            64
+            69,
+            69
           ],
           "words": 36,
           "hash": "5439c1456ef5",
@@ -7187,8 +7319,8 @@
           "id": "sts.chapter6.b0092",
           "type": "paragraph",
           "lines": [
-            66,
-            66
+            71,
+            71
           ],
           "words": 62,
           "hash": "2a7ee7f2bcb7",
@@ -7198,8 +7330,8 @@
           "id": "sts.chapter6.b0093",
           "type": "paragraph",
           "lines": [
-            68,
-            68
+            73,
+            73
           ],
           "words": 47,
           "hash": "6cafdb401116",
@@ -7209,8 +7341,8 @@
           "id": "sts.chapter6.b0094",
           "type": "paragraph",
           "lines": [
-            70,
-            70
+            75,
+            75
           ],
           "words": 106,
           "hash": "f27ff9d04447",
@@ -7220,8 +7352,8 @@
           "id": "sts.chapter6.b0097",
           "type": "heading",
           "lines": [
-            72,
-            72
+            77,
+            77
           ],
           "words": 4,
           "hash": "80d71dc243b3",
@@ -7232,8 +7364,8 @@
           "id": "sts.chapter6.b0095",
           "type": "paragraph",
           "lines": [
-            74,
-            74
+            79,
+            79
           ],
           "words": 34,
           "hash": "596d0e60ceff",
@@ -7243,8 +7375,8 @@
           "id": "sts.chapter6.b0096",
           "type": "paragraph",
           "lines": [
-            76,
-            76
+            81,
+            81
           ],
           "words": 52,
           "hash": "386671cb734b",
@@ -7254,8 +7386,8 @@
           "id": "sts.chapter6.b0098",
           "type": "paragraph",
           "lines": [
-            78,
-            78
+            83,
+            83
           ],
           "words": 42,
           "hash": "87b156d5b328",
@@ -7265,8 +7397,8 @@
           "id": "sts.chapter6.b0099",
           "type": "paragraph",
           "lines": [
-            80,
-            80
+            85,
+            85
           ],
           "words": 43,
           "hash": "45af941a14e8",
@@ -7276,8 +7408,8 @@
           "id": "sts.chapter6.b0103",
           "type": "heading",
           "lines": [
-            82,
-            82
+            87,
+            87
           ],
           "words": 3,
           "hash": "de50ca7170d9",
@@ -7288,8 +7420,8 @@
           "id": "sts.chapter6.b0100",
           "type": "paragraph",
           "lines": [
-            84,
-            84
+            89,
+            89
           ],
           "words": 8,
           "hash": "f0f9973a7834",
@@ -7299,8 +7431,8 @@
           "id": "sts.chapter6.b0101",
           "type": "paragraph",
           "lines": [
-            86,
-            86
+            91,
+            91
           ],
           "words": 81,
           "hash": "7ff5839dbf22",
@@ -7310,8 +7442,8 @@
           "id": "sts.chapter6.b0102",
           "type": "paragraph",
           "lines": [
-            88,
-            88
+            93,
+            93
           ],
           "words": 38,
           "hash": "6ada0bb09667",
@@ -7321,8 +7453,8 @@
           "id": "sts.chapter6.b0045",
           "type": "heading",
           "lines": [
-            90,
-            90
+            95,
+            95
           ],
           "words": 8,
           "hash": "8cab080844e5",
@@ -7333,8 +7465,8 @@
           "id": "sts.chapter6.b0104",
           "type": "paragraph",
           "lines": [
-            92,
-            92
+            97,
+            97
           ],
           "words": 21,
           "hash": "4435e5618647",
@@ -7344,8 +7476,8 @@
           "id": "sts.chapter6.b0079",
           "type": "paragraph",
           "lines": [
-            94,
-            94
+            99,
+            99
           ],
           "words": 53,
           "hash": "664d01dcade3",
@@ -7355,8 +7487,8 @@
           "id": "sts.chapter6.b0080",
           "type": "paragraph",
           "lines": [
-            96,
-            96
+            101,
+            101
           ],
           "words": 57,
           "hash": "30d8fd9ec62b",
@@ -7366,8 +7498,8 @@
           "id": "sts.chapter6.b0110",
           "type": "heading",
           "lines": [
-            98,
-            98
+            103,
+            103
           ],
           "words": 7,
           "hash": "205fec9c10ea",
@@ -7378,8 +7510,8 @@
           "id": "sts.chapter6.b0081",
           "type": "paragraph",
           "lines": [
-            100,
-            100
+            105,
+            105
           ],
           "words": 34,
           "hash": "d1400ff8f129",
@@ -7389,8 +7521,8 @@
           "id": "sts.chapter6.b0082",
           "type": "paragraph",
           "lines": [
-            102,
-            102
+            107,
+            107
           ],
           "words": 65,
           "hash": "0eb6dc43b349",
@@ -7400,8 +7532,8 @@
           "id": "sts.chapter6.b0083",
           "type": "paragraph",
           "lines": [
-            104,
-            104
+            109,
+            109
           ],
           "words": 64,
           "hash": "043c342efcc2",
@@ -7411,8 +7543,8 @@
           "id": "sts.chapter6.b0105",
           "type": "heading",
           "lines": [
-            106,
-            106
+            111,
+            111
           ],
           "words": 5,
           "hash": "1b3b90680a30",
@@ -7423,8 +7555,8 @@
           "id": "sts.chapter6.b0084",
           "type": "paragraph",
           "lines": [
-            108,
-            108
+            113,
+            113
           ],
           "words": 39,
           "hash": "a9318b6d47c1",
@@ -7434,8 +7566,8 @@
           "id": "sts.chapter6.b0085",
           "type": "paragraph",
           "lines": [
-            110,
-            110
+            115,
+            115
           ],
           "words": 53,
           "hash": "d3ce89937f7f",
@@ -7445,8 +7577,8 @@
           "id": "sts.chapter6.b0075",
           "type": "paragraph",
           "lines": [
-            112,
-            112
+            117,
+            117
           ],
           "words": 43,
           "hash": "b3df4fcfad28",
@@ -7456,8 +7588,8 @@
           "id": "sts.chapter6.b0037",
           "type": "hr",
           "lines": [
-            114,
-            114
+            119,
+            119
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -7467,8 +7599,8 @@
           "id": "sts.chapter6.b0111",
           "type": "heading",
           "lines": [
-            116,
-            116
+            121,
+            121
           ],
           "words": 14,
           "hash": "f20d70817b50",
@@ -7479,8 +7611,8 @@
           "id": "sts.chapter6.b0076",
           "type": "paragraph",
           "lines": [
-            118,
-            118
+            123,
+            123
           ],
           "words": 6,
           "hash": "ea66542438d9",
@@ -7490,8 +7622,8 @@
           "id": "sts.chapter6.b0106",
           "type": "paragraph",
           "lines": [
-            120,
-            120
+            125,
+            125
           ],
           "words": 78,
           "hash": "85ccde5ffa63",
@@ -7501,8 +7633,8 @@
           "id": "sts.chapter6.b0107",
           "type": "paragraph",
           "lines": [
-            122,
-            122
+            127,
+            127
           ],
           "words": 137,
           "hash": "a39d288072d1",
@@ -7512,8 +7644,8 @@
           "id": "sts.chapter6.b0108",
           "type": "paragraph",
           "lines": [
-            124,
-            124
+            129,
+            129
           ],
           "words": 67,
           "hash": "0079e0d4c1fc",
@@ -7523,8 +7655,8 @@
           "id": "sts.chapter6.b0109",
           "type": "paragraph",
           "lines": [
-            126,
-            126
+            131,
+            131
           ],
           "words": 59,
           "hash": "c7dc87b6c502",
@@ -7534,8 +7666,8 @@
           "id": "sts.chapter6.b0077",
           "type": "paragraph",
           "lines": [
-            128,
-            128
+            133,
+            133
           ],
           "words": 27,
           "hash": "432396bcad86",
@@ -7545,8 +7677,8 @@
           "id": "sts.chapter6.b0051",
           "type": "paragraph",
           "lines": [
-            130,
-            130
+            135,
+            135
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -7556,8 +7688,8 @@
           "id": "sts.chapter6.b0078",
           "type": "list",
           "lines": [
-            132,
-            134
+            137,
+            139
           ],
           "words": 149,
           "hash": "f9b25a6daf2d",
@@ -7567,8 +7699,8 @@
           "id": "sts.chapter6.b0044",
           "type": "hr",
           "lines": [
-            136,
-            136
+            141,
+            141
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -9011,8 +9143,8 @@
       "id": "chapter8",
       "title": "Chapter 8: The Psychology of the Collapse",
       "file": "10-chapter8.md",
-      "next_ordinal": 293,
-      "words": 4043,
+      "next_ordinal": 294,
+      "words": 4088,
       "tombstones": [
         "sts.chapter8.b0004",
         "sts.chapter8.b0006",
@@ -9241,11 +9373,22 @@
           "preview": "*Sophia. The mirror humans keep flinching at. (ITU Pictures, CC BY 2.0, via Wikimedia Comm"
         },
         {
+          "id": "sts.chapter8.b0293",
+          "type": "blockquote",
+          "lines": [
+            9,
+            10
+          ],
+          "words": 45,
+          "hash": "df2bd728fc4e",
+          "preview": "> *\"Men, it has been well said, think in herds; it will be seen that they go mad in herds,"
+        },
+        {
           "id": "sts.chapter8.b0005",
           "type": "paragraph",
           "lines": [
-            9,
-            9
+            12,
+            12
           ],
           "words": 3,
           "hash": "6f68df3c273f",
@@ -9255,8 +9398,8 @@
           "id": "sts.chapter8.b0220",
           "type": "list",
           "lines": [
-            11,
-            14
+            14,
+            17
           ],
           "words": 84,
           "hash": "311507d3e8d6",
@@ -9266,8 +9409,8 @@
           "id": "sts.chapter8.b0007",
           "type": "hr",
           "lines": [
-            16,
-            16
+            19,
+            19
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -9277,8 +9420,8 @@
           "id": "sts.chapter8.b0221",
           "type": "paragraph",
           "lines": [
-            18,
-            18
+            21,
+            21
           ],
           "words": 28,
           "hash": "eec65ebf2b79",
@@ -9288,8 +9431,8 @@
           "id": "sts.chapter8.b0009",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            23,
+            23
           ],
           "words": 79,
           "hash": "ada440ee9464",
@@ -9299,8 +9442,8 @@
           "id": "sts.chapter8.b0010",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            25,
+            25
           ],
           "words": 208,
           "hash": "a5a13db7d04b",
@@ -9310,8 +9453,8 @@
           "id": "sts.chapter8.b0011",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            27,
+            27
           ],
           "words": 34,
           "hash": "bd684152b1fa",
@@ -9321,8 +9464,8 @@
           "id": "sts.chapter8.b0012",
           "type": "paragraph",
           "lines": [
-            26,
-            26
+            29,
+            29
           ],
           "words": 65,
           "hash": "1c935265b0f0",
@@ -9332,8 +9475,8 @@
           "id": "sts.chapter8.b0013",
           "type": "paragraph",
           "lines": [
-            28,
-            28
+            31,
+            31
           ],
           "words": 35,
           "hash": "59af775c3bb2",
@@ -9343,8 +9486,8 @@
           "id": "sts.chapter8.b0014",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            33,
+            33
           ],
           "words": 4,
           "hash": "a94074fb44d9",
@@ -9354,8 +9497,8 @@
           "id": "sts.chapter8.b0222",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            35,
+            35
           ],
           "words": 148,
           "hash": "e2f113fb028b",
@@ -9365,8 +9508,8 @@
           "id": "sts.chapter8.b0249",
           "type": "figure",
           "lines": [
-            34,
-            34
+            37,
+            37
           ],
           "words": 16,
           "hash": "0df4e8566721",
@@ -9378,8 +9521,8 @@
           "id": "sts.chapter8.b0250",
           "type": "caption",
           "lines": [
-            36,
-            36
+            39,
+            39
           ],
           "words": 3,
           "hash": "d26650538011",
@@ -9389,8 +9532,8 @@
           "id": "sts.chapter8.b0016",
           "type": "paragraph",
           "lines": [
-            38,
-            38
+            41,
+            41
           ],
           "words": 39,
           "hash": "f01c4b47b97f",
@@ -9400,8 +9543,8 @@
           "id": "sts.chapter8.b0223",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            43,
+            43
           ],
           "words": 114,
           "hash": "2a4f5ef24666",
@@ -9411,8 +9554,8 @@
           "id": "sts.chapter8.b0224",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            45,
+            45
           ],
           "words": 11,
           "hash": "0f6a4839b086",
@@ -9422,8 +9565,8 @@
           "id": "sts.chapter8.b0225",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            47,
+            47
           ],
           "words": 36,
           "hash": "5eee90f24761",
@@ -9433,8 +9576,8 @@
           "id": "sts.chapter8.b0226",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            49,
+            49
           ],
           "words": 4,
           "hash": "521400ac6fac",
@@ -9444,8 +9587,8 @@
           "id": "sts.chapter8.b0227",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            51,
+            51
           ],
           "words": 40,
           "hash": "a92231e2529a",
@@ -9455,8 +9598,8 @@
           "id": "sts.chapter8.b0228",
           "type": "paragraph",
           "lines": [
-            50,
-            50
+            53,
+            53
           ],
           "words": 20,
           "hash": "0a9c3c273a9d",
@@ -9466,8 +9609,8 @@
           "id": "sts.chapter8.b0229",
           "type": "paragraph",
           "lines": [
-            52,
-            52
+            55,
+            55
           ],
           "words": 139,
           "hash": "78443c2e09ea",
@@ -9477,8 +9620,8 @@
           "id": "sts.chapter8.b0230",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            57,
+            57
           ],
           "words": 17,
           "hash": "fc5cce4c240f",
@@ -9488,8 +9631,8 @@
           "id": "sts.chapter8.b0231",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            59,
+            59
           ],
           "words": 75,
           "hash": "1094623acf82",
@@ -9499,8 +9642,8 @@
           "id": "sts.chapter8.b0232",
           "type": "paragraph",
           "lines": [
-            58,
-            58
+            61,
+            61
           ],
           "words": 42,
           "hash": "959c159fb483",
@@ -9510,8 +9653,8 @@
           "id": "sts.chapter8.b0022",
           "type": "hr",
           "lines": [
-            60,
-            60
+            63,
+            63
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -9521,8 +9664,8 @@
           "id": "sts.chapter8.b0023",
           "type": "heading",
           "lines": [
-            62,
-            62
+            65,
+            65
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -9533,8 +9676,8 @@
           "id": "sts.chapter8.b0233",
           "type": "heading",
           "lines": [
-            64,
-            64
+            67,
+            67
           ],
           "words": 5,
           "hash": "0c23feeea4dc",
@@ -9545,8 +9688,8 @@
           "id": "sts.chapter8.b0234",
           "type": "paragraph",
           "lines": [
-            66,
-            66
+            69,
+            69
           ],
           "words": 57,
           "hash": "f95b8f3e94e9",
@@ -9556,8 +9699,8 @@
           "id": "sts.chapter8.b0235",
           "type": "paragraph",
           "lines": [
-            68,
-            68
+            71,
+            71
           ],
           "words": 65,
           "hash": "36821505a80f",
@@ -9567,8 +9710,8 @@
           "id": "sts.chapter8.b0236",
           "type": "paragraph",
           "lines": [
-            70,
-            70
+            73,
+            73
           ],
           "words": 63,
           "hash": "434f6dd72393",
@@ -9578,8 +9721,8 @@
           "id": "sts.chapter8.b0237",
           "type": "paragraph",
           "lines": [
-            72,
-            72
+            75,
+            75
           ],
           "words": 19,
           "hash": "254e337de7e3",
@@ -9589,8 +9732,8 @@
           "id": "sts.chapter8.b0239",
           "type": "heading",
           "lines": [
-            74,
-            74
+            77,
+            77
           ],
           "words": 4,
           "hash": "e2ba68cc5643",
@@ -9601,8 +9744,8 @@
           "id": "sts.chapter8.b0238",
           "type": "paragraph",
           "lines": [
-            76,
-            76
+            79,
+            79
           ],
           "words": 4,
           "hash": "57d0b6d2018d",
@@ -9612,8 +9755,8 @@
           "id": "sts.chapter8.b0240",
           "type": "paragraph",
           "lines": [
-            78,
-            78
+            81,
+            81
           ],
           "words": 30,
           "hash": "09a4731f221b",
@@ -9623,8 +9766,8 @@
           "id": "sts.chapter8.b0241",
           "type": "paragraph",
           "lines": [
-            80,
-            80
+            83,
+            83
           ],
           "words": 49,
           "hash": "6039e2d7a485",
@@ -9634,8 +9777,8 @@
           "id": "sts.chapter8.b0251",
           "type": "figure",
           "lines": [
-            82,
-            82
+            85,
+            85
           ],
           "words": 30,
           "hash": "51fb11a9cea7",
@@ -9647,8 +9790,8 @@
           "id": "sts.chapter8.b0252",
           "type": "caption",
           "lines": [
-            84,
-            84
+            87,
+            87
           ],
           "words": 21,
           "hash": "97ac04ccc89c",
@@ -9658,8 +9801,8 @@
           "id": "sts.chapter8.b0242",
           "type": "paragraph",
           "lines": [
-            86,
-            86
+            89,
+            89
           ],
           "words": 80,
           "hash": "81967ecd354f",
@@ -9669,8 +9812,8 @@
           "id": "sts.chapter8.b0191",
           "type": "heading",
           "lines": [
-            88,
-            88
+            91,
+            91
           ],
           "words": 5,
           "hash": "ac2a0ed04f97",
@@ -9681,8 +9824,8 @@
           "id": "sts.chapter8.b0243",
           "type": "paragraph",
           "lines": [
-            90,
-            90
+            93,
+            93
           ],
           "words": 48,
           "hash": "329164fd74a1",
@@ -9692,8 +9835,8 @@
           "id": "sts.chapter8.b0211",
           "type": "paragraph",
           "lines": [
-            92,
-            92
+            95,
+            95
           ],
           "words": 74,
           "hash": "985b1b1cddf9",
@@ -9703,8 +9846,8 @@
           "id": "sts.chapter8.b0212",
           "type": "paragraph",
           "lines": [
-            94,
-            94
+            97,
+            97
           ],
           "words": 28,
           "hash": "dce0c1b0adfe",
@@ -9714,8 +9857,8 @@
           "id": "sts.chapter8.b0253",
           "type": "figure",
           "lines": [
-            96,
-            96
+            99,
+            99
           ],
           "words": 33,
           "hash": "34ee91529336",
@@ -9727,8 +9870,8 @@
           "id": "sts.chapter8.b0254",
           "type": "caption",
           "lines": [
-            98,
-            98
+            101,
+            101
           ],
           "words": 16,
           "hash": "51012af12b5e",
@@ -9738,8 +9881,8 @@
           "id": "sts.chapter8.b0255",
           "type": "heading",
           "lines": [
-            100,
-            100
+            103,
+            103
           ],
           "words": 6,
           "hash": "4aa405a0691b",
@@ -9750,8 +9893,8 @@
           "id": "sts.chapter8.b0213",
           "type": "paragraph",
           "lines": [
-            102,
-            102
+            105,
+            105
           ],
           "words": 26,
           "hash": "28714cc82ebb",
@@ -9761,8 +9904,8 @@
           "id": "sts.chapter8.b0256",
           "type": "blockquote",
           "lines": [
-            104,
-            104
+            107,
+            107
           ],
           "words": 8,
           "hash": "bd9a41fe003a",
@@ -9772,8 +9915,8 @@
           "id": "sts.chapter8.b0214",
           "type": "paragraph",
           "lines": [
-            106,
-            106
+            109,
+            109
           ],
           "words": 84,
           "hash": "2bd1075bbaf9",
@@ -9783,8 +9926,8 @@
           "id": "sts.chapter8.b0257",
           "type": "heading",
           "lines": [
-            108,
-            108
+            111,
+            111
           ],
           "words": 3,
           "hash": "594233f007cb",
@@ -9795,8 +9938,8 @@
           "id": "sts.chapter8.b0215",
           "type": "paragraph",
           "lines": [
-            110,
-            110
+            113,
+            113
           ],
           "words": 48,
           "hash": "4ce2d65734b3",
@@ -9806,8 +9949,8 @@
           "id": "sts.chapter8.b0258",
           "type": "figure",
           "lines": [
-            112,
-            112
+            115,
+            115
           ],
           "words": 25,
           "hash": "5020eed8383d",
@@ -9819,8 +9962,8 @@
           "id": "sts.chapter8.b0259",
           "type": "caption",
           "lines": [
-            114,
-            114
+            117,
+            117
           ],
           "words": 11,
           "hash": "ef5710239a14",
@@ -9830,8 +9973,8 @@
           "id": "sts.chapter8.b0260",
           "type": "heading",
           "lines": [
-            116,
-            116
+            119,
+            119
           ],
           "words": 4,
           "hash": "5a73b0a4be88",
@@ -9842,8 +9985,8 @@
           "id": "sts.chapter8.b0216",
           "type": "paragraph",
           "lines": [
-            118,
-            118
+            121,
+            121
           ],
           "words": 23,
           "hash": "5a6a5d07bfd8",
@@ -9853,8 +9996,8 @@
           "id": "sts.chapter8.b0210",
           "type": "list",
           "lines": [
-            120,
-            122
+            123,
+            125
           ],
           "words": 83,
           "hash": "89f5b740ab84",
@@ -9864,8 +10007,8 @@
           "id": "sts.chapter8.b0217",
           "type": "paragraph",
           "lines": [
-            124,
-            124
+            127,
+            127
           ],
           "words": 23,
           "hash": "04bd9abdbda7",
@@ -9875,8 +10018,8 @@
           "id": "sts.chapter8.b0261",
           "type": "heading",
           "lines": [
-            126,
-            126
+            129,
+            129
           ],
           "words": 4,
           "hash": "33d41a6f25b9",
@@ -9887,8 +10030,8 @@
           "id": "sts.chapter8.b0218",
           "type": "paragraph",
           "lines": [
-            128,
-            128
+            131,
+            131
           ],
           "words": 44,
           "hash": "356ae2496587",
@@ -9898,8 +10041,8 @@
           "id": "sts.chapter8.b0262",
           "type": "figure",
           "lines": [
-            130,
-            130
+            133,
+            133
           ],
           "words": 25,
           "hash": "857cbdfd0339",
@@ -9911,8 +10054,8 @@
           "id": "sts.chapter8.b0263",
           "type": "caption",
           "lines": [
-            132,
-            132
+            135,
+            135
           ],
           "words": 17,
           "hash": "b0b756f07948",
@@ -9922,8 +10065,8 @@
           "id": "sts.chapter8.b0245",
           "type": "paragraph",
           "lines": [
-            134,
-            134
+            137,
+            137
           ],
           "words": 2,
           "hash": "cfc6924c9924",
@@ -9933,8 +10076,8 @@
           "id": "sts.chapter8.b0264",
           "type": "list",
           "lines": [
-            136,
-            137
+            139,
+            140
           ],
           "words": 74,
           "hash": "efe807d375cd",
@@ -9944,8 +10087,8 @@
           "id": "sts.chapter8.b0265",
           "type": "heading",
           "lines": [
-            139,
-            139
+            142,
+            142
           ],
           "words": 4,
           "hash": "6ea8f1c2c8ae",
@@ -9956,8 +10099,8 @@
           "id": "sts.chapter8.b0266",
           "type": "table",
           "lines": [
-            141,
-            146
+            144,
+            149
           ],
           "words": 26,
           "hash": "6aaccd0c6afe",
@@ -9967,8 +10110,8 @@
           "id": "sts.chapter8.b0267",
           "type": "list",
           "lines": [
-            148,
-            151
+            151,
+            154
           ],
           "words": 108,
           "hash": "0f70f32a4ac1",
@@ -9978,8 +10121,8 @@
           "id": "sts.chapter8.b0268",
           "type": "heading",
           "lines": [
-            153,
-            153
+            156,
+            156
           ],
           "words": 3,
           "hash": "4e142568952e",
@@ -9990,8 +10133,8 @@
           "id": "sts.chapter8.b0246",
           "type": "paragraph",
           "lines": [
-            155,
-            155
+            158,
+            158
           ],
           "words": 54,
           "hash": "5623a7fa547f",
@@ -10001,8 +10144,8 @@
           "id": "sts.chapter8.b0269",
           "type": "heading",
           "lines": [
-            157,
-            157
+            160,
+            160
           ],
           "words": 5,
           "hash": "0714c65aa684",
@@ -10013,8 +10156,8 @@
           "id": "sts.chapter8.b0219",
           "type": "paragraph",
           "lines": [
-            159,
-            159
+            162,
+            162
           ],
           "words": 45,
           "hash": "db1c40f4c48d",
@@ -10024,8 +10167,8 @@
           "id": "sts.chapter8.b0247",
           "type": "paragraph",
           "lines": [
-            161,
-            161
+            164,
+            164
           ],
           "words": 47,
           "hash": "e708e0db400c",
@@ -10035,8 +10178,8 @@
           "id": "sts.chapter8.b0248",
           "type": "paragraph",
           "lines": [
-            163,
-            163
+            166,
+            166
           ],
           "words": 20,
           "hash": "811b636550cd",
@@ -10046,8 +10189,8 @@
           "id": "sts.chapter8.b0270",
           "type": "heading",
           "lines": [
-            165,
-            165
+            168,
+            168
           ],
           "words": 2,
           "hash": "6ab0ff3dcd28",
@@ -10058,8 +10201,8 @@
           "id": "sts.chapter8.b0208",
           "type": "paragraph",
           "lines": [
-            167,
-            167
+            170,
+            170
           ],
           "words": 32,
           "hash": "e7ea77c1277c",
@@ -10069,8 +10212,8 @@
           "id": "sts.chapter8.b0209",
           "type": "paragraph",
           "lines": [
-            169,
-            169
+            172,
+            172
           ],
           "words": 63,
           "hash": "4c1dbe57546d",
@@ -10080,8 +10223,8 @@
           "id": "sts.chapter8.b0271",
           "type": "paragraph",
           "lines": [
-            171,
-            171
+            174,
+            174
           ],
           "words": 55,
           "hash": "03ca8dd11e9c",
@@ -10091,8 +10234,8 @@
           "id": "sts.chapter8.b0272",
           "type": "paragraph",
           "lines": [
-            173,
-            173
+            176,
+            176
           ],
           "words": 6,
           "hash": "8d780308f6ba",
@@ -10102,8 +10245,8 @@
           "id": "sts.chapter8.b0273",
           "type": "heading",
           "lines": [
-            175,
-            175
+            178,
+            178
           ],
           "words": 3,
           "hash": "07c6b0e47973",
@@ -10114,8 +10257,8 @@
           "id": "sts.chapter8.b0274",
           "type": "paragraph",
           "lines": [
-            177,
-            177
+            180,
+            180
           ],
           "words": 81,
           "hash": "76a78b786607",
@@ -10125,8 +10268,8 @@
           "id": "sts.chapter8.b0275",
           "type": "paragraph",
           "lines": [
-            179,
-            179
+            182,
+            182
           ],
           "words": 95,
           "hash": "577a74e6f0ba",
@@ -10136,8 +10279,8 @@
           "id": "sts.chapter8.b0276",
           "type": "paragraph",
           "lines": [
-            181,
-            181
+            184,
+            184
           ],
           "words": 47,
           "hash": "2f6b489a2508",
@@ -10147,8 +10290,8 @@
           "id": "sts.chapter8.b0277",
           "type": "heading",
           "lines": [
-            183,
-            183
+            186,
+            186
           ],
           "words": 3,
           "hash": "413da9e6be9a",
@@ -10159,8 +10302,8 @@
           "id": "sts.chapter8.b0278",
           "type": "paragraph",
           "lines": [
-            185,
-            185
+            188,
+            188
           ],
           "words": 31,
           "hash": "76eb530d3ed6",
@@ -10170,8 +10313,8 @@
           "id": "sts.chapter8.b0279",
           "type": "figure",
           "lines": [
-            187,
-            187
+            190,
+            190
           ],
           "words": 35,
           "hash": "e04f17df4332",
@@ -10183,8 +10326,8 @@
           "id": "sts.chapter8.b0280",
           "type": "caption",
           "lines": [
-            189,
-            189
+            192,
+            192
           ],
           "words": 20,
           "hash": "a8ac1d6d17a6",
@@ -10194,8 +10337,8 @@
           "id": "sts.chapter8.b0281",
           "type": "paragraph",
           "lines": [
-            191,
-            191
+            194,
+            194
           ],
           "words": 75,
           "hash": "48fe1c287f63",
@@ -10205,8 +10348,8 @@
           "id": "sts.chapter8.b0282",
           "type": "paragraph",
           "lines": [
-            193,
-            193
+            196,
+            196
           ],
           "words": 36,
           "hash": "2d281c42ba6b",
@@ -10216,8 +10359,8 @@
           "id": "sts.chapter8.b0283",
           "type": "heading",
           "lines": [
-            195,
-            195
+            198,
+            198
           ],
           "words": 3,
           "hash": "dd41a01d49c6",
@@ -10228,8 +10371,8 @@
           "id": "sts.chapter8.b0284",
           "type": "list",
           "lines": [
-            197,
-            199
+            200,
+            202
           ],
           "words": 105,
           "hash": "713eefe1a1f9",
@@ -10239,8 +10382,8 @@
           "id": "sts.chapter8.b0244",
           "type": "heading",
           "lines": [
-            201,
-            201
+            204,
+            204
           ],
           "words": 6,
           "hash": "bc3ef072f182",
@@ -10251,8 +10394,8 @@
           "id": "sts.chapter8.b0285",
           "type": "paragraph",
           "lines": [
-            203,
-            203
+            206,
+            206
           ],
           "words": 81,
           "hash": "c671e1c1464e",
@@ -10262,8 +10405,8 @@
           "id": "sts.chapter8.b0074",
           "type": "hr",
           "lines": [
-            205,
-            205
+            208,
+            208
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -10273,8 +10416,8 @@
           "id": "sts.chapter8.b0180",
           "type": "heading",
           "lines": [
-            207,
-            207
+            210,
+            210
           ],
           "words": 8,
           "hash": "398bbe917d2c",
@@ -10285,8 +10428,8 @@
           "id": "sts.chapter8.b0286",
           "type": "paragraph",
           "lines": [
-            209,
-            209
+            212,
+            212
           ],
           "words": 50,
           "hash": "64e9d49436ff",
@@ -10296,8 +10439,8 @@
           "id": "sts.chapter8.b0287",
           "type": "paragraph",
           "lines": [
-            211,
-            211
+            214,
+            214
           ],
           "words": 90,
           "hash": "40b2d42f022b",
@@ -10307,8 +10450,8 @@
           "id": "sts.chapter8.b0288",
           "type": "paragraph",
           "lines": [
-            213,
-            213
+            216,
+            216
           ],
           "words": 63,
           "hash": "eca3d7758065",
@@ -10318,8 +10461,8 @@
           "id": "sts.chapter8.b0289",
           "type": "paragraph",
           "lines": [
-            215,
-            215
+            218,
+            218
           ],
           "words": 89,
           "hash": "0d9b4b277f7b",
@@ -10329,8 +10472,8 @@
           "id": "sts.chapter8.b0290",
           "type": "paragraph",
           "lines": [
-            217,
-            217
+            220,
+            220
           ],
           "words": 47,
           "hash": "efc692ab2589",
@@ -10340,8 +10483,8 @@
           "id": "sts.chapter8.b0291",
           "type": "paragraph",
           "lines": [
-            219,
-            219
+            222,
+            222
           ],
           "words": 61,
           "hash": "e4c7c6a89b47",
@@ -10351,8 +10494,8 @@
           "id": "sts.chapter8.b0185",
           "type": "paragraph",
           "lines": [
-            221,
-            221
+            224,
+            224
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -10362,8 +10505,8 @@
           "id": "sts.chapter8.b0292",
           "type": "list",
           "lines": [
-            223,
-            225
+            226,
+            228
           ],
           "words": 122,
           "hash": "d65a3cd68b82",
@@ -10373,8 +10516,8 @@
           "id": "sts.chapter8.b0130",
           "type": "hr",
           "lines": [
-            227,
-            227
+            230,
+            230
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -10386,8 +10529,8 @@
       "id": "chapter9",
       "title": "Chapter 9: Deglobalization and the Neighborhood Factory",
       "file": "11-chapter9.md",
-      "next_ordinal": 212,
-      "words": 3949,
+      "next_ordinal": 213,
+      "words": 3984,
       "tombstones": [
         "sts.chapter9.b0004",
         "sts.chapter9.b0006",
@@ -10547,11 +10690,22 @@
           "preview": "*A desktop 3D printer. The neighborhood factory fits on a workbench. (John Abella, CC BY 2"
         },
         {
+          "id": "sts.chapter9.b0212",
+          "type": "blockquote",
+          "lines": [
+            9,
+            10
+          ],
+          "words": 35,
+          "hash": "2483c18f1d64",
+          "preview": "> *\"The scattering of industries over the country … so as to bring the factory amidst the "
+        },
+        {
           "id": "sts.chapter9.b0005",
           "type": "paragraph",
           "lines": [
-            9,
-            9
+            12,
+            12
           ],
           "words": 3,
           "hash": "6f68df3c273f",
@@ -10561,8 +10715,8 @@
           "id": "sts.chapter9.b0176",
           "type": "list",
           "lines": [
-            11,
-            14
+            14,
+            17
           ],
           "words": 89,
           "hash": "94267f76a836",
@@ -10572,8 +10726,8 @@
           "id": "sts.chapter9.b0007",
           "type": "hr",
           "lines": [
-            16,
-            16
+            19,
+            19
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -10583,8 +10737,8 @@
           "id": "sts.chapter9.b0008",
           "type": "paragraph",
           "lines": [
-            18,
-            18
+            21,
+            21
           ],
           "words": 45,
           "hash": "5ed72ccfb1f3",
@@ -10594,8 +10748,8 @@
           "id": "sts.chapter9.b0134",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            23,
+            23
           ],
           "words": 86,
           "hash": "8b8b5393ed7d",
@@ -10605,8 +10759,8 @@
           "id": "sts.chapter9.b0010",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            25,
+            25
           ],
           "words": 70,
           "hash": "14ad2c9ec226",
@@ -10616,8 +10770,8 @@
           "id": "sts.chapter9.b0011",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            27,
+            27
           ],
           "words": 8,
           "hash": "9109369f378b",
@@ -10627,8 +10781,8 @@
           "id": "sts.chapter9.b0012",
           "type": "paragraph",
           "lines": [
-            26,
-            26
+            29,
+            29
           ],
           "words": 26,
           "hash": "e2aaf2be7bb2",
@@ -10638,8 +10792,8 @@
           "id": "sts.chapter9.b0177",
           "type": "paragraph",
           "lines": [
-            28,
-            28
+            31,
+            31
           ],
           "words": 169,
           "hash": "6b24cf27deca",
@@ -10649,8 +10803,8 @@
           "id": "sts.chapter9.b0014",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            33,
+            33
           ],
           "words": 5,
           "hash": "a40b66fe5a74",
@@ -10660,8 +10814,8 @@
           "id": "sts.chapter9.b0015",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            35,
+            35
           ],
           "words": 20,
           "hash": "849bccd45228",
@@ -10671,8 +10825,8 @@
           "id": "sts.chapter9.b0178",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            37,
+            37
           ],
           "words": 98,
           "hash": "a43ad7f19452",
@@ -10682,8 +10836,8 @@
           "id": "sts.chapter9.b0129",
           "type": "figure",
           "lines": [
-            36,
-            36
+            39,
+            39
           ],
           "words": 20,
           "hash": "b11548fc4423",
@@ -10695,8 +10849,8 @@
           "id": "sts.chapter9.b0130",
           "type": "caption",
           "lines": [
-            38,
-            38
+            41,
+            41
           ],
           "words": 8,
           "hash": "2683e27d1ffd",
@@ -10706,8 +10860,8 @@
           "id": "sts.chapter9.b0017",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            43,
+            43
           ],
           "words": 62,
           "hash": "edae00ce01da",
@@ -10717,8 +10871,8 @@
           "id": "sts.chapter9.b0018",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            45,
+            45
           ],
           "words": 24,
           "hash": "cbddd6c34054",
@@ -10728,8 +10882,8 @@
           "id": "sts.chapter9.b0131",
           "type": "figure",
           "lines": [
-            44,
-            44
+            47,
+            47
           ],
           "words": 17,
           "hash": "53b15b5cc8de",
@@ -10741,8 +10895,8 @@
           "id": "sts.chapter9.b0132",
           "type": "caption",
           "lines": [
-            46,
-            46
+            49,
+            49
           ],
           "words": 12,
           "hash": "512f4c6e1573",
@@ -10752,8 +10906,8 @@
           "id": "sts.chapter9.b0179",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            51,
+            51
           ],
           "words": 74,
           "hash": "8e50d95cd6b9",
@@ -10763,8 +10917,8 @@
           "id": "sts.chapter9.b0180",
           "type": "paragraph",
           "lines": [
-            50,
-            50
+            53,
+            53
           ],
           "words": 42,
           "hash": "309a017101b3",
@@ -10774,8 +10928,8 @@
           "id": "sts.chapter9.b0181",
           "type": "paragraph",
           "lines": [
-            52,
-            52
+            55,
+            55
           ],
           "words": 10,
           "hash": "a12fba670478",
@@ -10785,8 +10939,8 @@
           "id": "sts.chapter9.b0182",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            57,
+            57
           ],
           "words": 50,
           "hash": "8a05d0b8628e",
@@ -10796,8 +10950,8 @@
           "id": "sts.chapter9.b0020",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            59,
+            59
           ],
           "words": 15,
           "hash": "ce4d167b6490",
@@ -10807,8 +10961,8 @@
           "id": "sts.chapter9.b0021",
           "type": "paragraph",
           "lines": [
-            58,
-            58
+            61,
+            61
           ],
           "words": 11,
           "hash": "9e28fe871703",
@@ -10818,8 +10972,8 @@
           "id": "sts.chapter9.b0183",
           "type": "paragraph",
           "lines": [
-            60,
-            60
+            63,
+            63
           ],
           "words": 62,
           "hash": "21bacbfde80a",
@@ -10829,8 +10983,8 @@
           "id": "sts.chapter9.b0184",
           "type": "paragraph",
           "lines": [
-            62,
-            62
+            65,
+            65
           ],
           "words": 103,
           "hash": "acea8c530807",
@@ -10840,8 +10994,8 @@
           "id": "sts.chapter9.b0185",
           "type": "paragraph",
           "lines": [
-            64,
-            64
+            67,
+            67
           ],
           "words": 88,
           "hash": "38a7143afcf0",
@@ -10851,8 +11005,8 @@
           "id": "sts.chapter9.b0186",
           "type": "paragraph",
           "lines": [
-            66,
-            66
+            69,
+            69
           ],
           "words": 19,
           "hash": "b3ce2e88b419",
@@ -10862,8 +11016,8 @@
           "id": "sts.chapter9.b0025",
           "type": "hr",
           "lines": [
-            68,
-            68
+            71,
+            71
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -10873,8 +11027,8 @@
           "id": "sts.chapter9.b0026",
           "type": "heading",
           "lines": [
-            70,
-            70
+            73,
+            73
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -10885,8 +11039,8 @@
           "id": "sts.chapter9.b0188",
           "type": "paragraph",
           "lines": [
-            72,
-            72
+            75,
+            75
           ],
           "words": 42,
           "hash": "b48e763c4a02",
@@ -10896,8 +11050,8 @@
           "id": "sts.chapter9.b0162",
           "type": "list",
           "lines": [
-            74,
-            77
+            77,
+            80
           ],
           "words": 197,
           "hash": "8bc914c86940",
@@ -10907,8 +11061,8 @@
           "id": "sts.chapter9.b0195",
           "type": "figure",
           "lines": [
-            79,
-            79
+            82,
+            82
           ],
           "words": 37,
           "hash": "776551378aaf",
@@ -10920,8 +11074,8 @@
           "id": "sts.chapter9.b0196",
           "type": "caption",
           "lines": [
-            81,
-            81
+            84,
+            84
           ],
           "words": 27,
           "hash": "6c8dc715215d",
@@ -10931,8 +11085,8 @@
           "id": "sts.chapter9.b0140",
           "type": "heading",
           "lines": [
-            83,
-            83
+            86,
+            86
           ],
           "words": 11,
           "hash": "91974b37c59b",
@@ -10943,8 +11097,8 @@
           "id": "sts.chapter9.b0163",
           "type": "paragraph",
           "lines": [
-            85,
-            85
+            88,
+            88
           ],
           "words": 54,
           "hash": "8c68b0a4a370",
@@ -10954,8 +11108,8 @@
           "id": "sts.chapter9.b0164",
           "type": "paragraph",
           "lines": [
-            87,
-            87
+            90,
+            90
           ],
           "words": 83,
           "hash": "68511ed38bbb",
@@ -10965,8 +11119,8 @@
           "id": "sts.chapter9.b0165",
           "type": "paragraph",
           "lines": [
-            89,
-            89
+            92,
+            92
           ],
           "words": 115,
           "hash": "863c13e7ab3b",
@@ -10976,8 +11130,8 @@
           "id": "sts.chapter9.b0197",
           "type": "figure",
           "lines": [
-            91,
-            91
+            94,
+            94
           ],
           "words": 32,
           "hash": "5c201a448612",
@@ -10989,8 +11143,8 @@
           "id": "sts.chapter9.b0198",
           "type": "caption",
           "lines": [
-            93,
-            93
+            96,
+            96
           ],
           "words": 27,
           "hash": "841cde99d129",
@@ -11000,8 +11154,8 @@
           "id": "sts.chapter9.b0187",
           "type": "heading",
           "lines": [
-            95,
-            95
+            98,
+            98
           ],
           "words": 4,
           "hash": "608ddc4b8ab0",
@@ -11012,8 +11166,8 @@
           "id": "sts.chapter9.b0166",
           "type": "paragraph",
           "lines": [
-            97,
-            97
+            100,
+            100
           ],
           "words": 37,
           "hash": "ff2205c258e3",
@@ -11023,8 +11177,8 @@
           "id": "sts.chapter9.b0141",
           "type": "paragraph",
           "lines": [
-            99,
-            99
+            102,
+            102
           ],
           "words": 71,
           "hash": "ab1bdd401a9e",
@@ -11034,8 +11188,8 @@
           "id": "sts.chapter9.b0151",
           "type": "heading",
           "lines": [
-            101,
-            101
+            104,
+            104
           ],
           "words": 3,
           "hash": "9892ec760185",
@@ -11046,8 +11200,8 @@
           "id": "sts.chapter9.b0142",
           "type": "paragraph",
           "lines": [
-            103,
-            103
+            106,
+            106
           ],
           "words": 14,
           "hash": "e3f3466b8150",
@@ -11057,8 +11211,8 @@
           "id": "sts.chapter9.b0143",
           "type": "paragraph",
           "lines": [
-            105,
-            105
+            108,
+            108
           ],
           "words": 27,
           "hash": "dab1e28a5bec",
@@ -11068,8 +11222,8 @@
           "id": "sts.chapter9.b0199",
           "type": "blockquote",
           "lines": [
-            107,
-            107
+            110,
+            110
           ],
           "words": 8,
           "hash": "760ee4a54509",
@@ -11079,8 +11233,8 @@
           "id": "sts.chapter9.b0145",
           "type": "paragraph",
           "lines": [
-            109,
-            109
+            112,
+            112
           ],
           "words": 76,
           "hash": "be00c7f17cad",
@@ -11090,8 +11244,8 @@
           "id": "sts.chapter9.b0146",
           "type": "paragraph",
           "lines": [
-            111,
-            111
+            114,
+            114
           ],
           "words": 33,
           "hash": "39e0547fd63f",
@@ -11101,8 +11255,8 @@
           "id": "sts.chapter9.b0200",
           "type": "blockquote",
           "lines": [
-            113,
-            113
+            116,
+            116
           ],
           "words": 13,
           "hash": "ab34656723b9",
@@ -11112,8 +11266,8 @@
           "id": "sts.chapter9.b0147",
           "type": "paragraph",
           "lines": [
-            115,
-            115
+            118,
+            118
           ],
           "words": 72,
           "hash": "4c105c71a850",
@@ -11123,8 +11277,8 @@
           "id": "sts.chapter9.b0171",
           "type": "heading",
           "lines": [
-            117,
-            117
+            120,
+            120
           ],
           "words": 6,
           "hash": "b02659f65a4a",
@@ -11135,8 +11289,8 @@
           "id": "sts.chapter9.b0148",
           "type": "paragraph",
           "lines": [
-            119,
-            119
+            122,
+            122
           ],
           "words": 74,
           "hash": "94b724bff93c",
@@ -11146,8 +11300,8 @@
           "id": "sts.chapter9.b0201",
           "type": "figure",
           "lines": [
-            121,
-            121
+            124,
+            124
           ],
           "words": 36,
           "hash": "c652f1b45300",
@@ -11159,8 +11313,8 @@
           "id": "sts.chapter9.b0202",
           "type": "caption",
           "lines": [
-            123,
-            123
+            126,
+            126
           ],
           "words": 16,
           "hash": "9eec1ce48904",
@@ -11170,8 +11324,8 @@
           "id": "sts.chapter9.b0149",
           "type": "paragraph",
           "lines": [
-            125,
-            125
+            128,
+            128
           ],
           "words": 61,
           "hash": "bfebac92a575",
@@ -11181,8 +11335,8 @@
           "id": "sts.chapter9.b0203",
           "type": "heading",
           "lines": [
-            127,
-            127
+            130,
+            130
           ],
           "words": 3,
           "hash": "aa3a03c4147e",
@@ -11193,8 +11347,8 @@
           "id": "sts.chapter9.b0150",
           "type": "paragraph",
           "lines": [
-            129,
-            129
+            132,
+            132
           ],
           "words": 31,
           "hash": "698bdd77aa07",
@@ -11204,8 +11358,8 @@
           "id": "sts.chapter9.b0204",
           "type": "figure",
           "lines": [
-            131,
-            131
+            134,
+            134
           ],
           "words": 41,
           "hash": "71f21c86b546",
@@ -11217,8 +11371,8 @@
           "id": "sts.chapter9.b0205",
           "type": "caption",
           "lines": [
-            133,
-            133
+            136,
+            136
           ],
           "words": 17,
           "hash": "9221a2ee505c",
@@ -11228,8 +11382,8 @@
           "id": "sts.chapter9.b0206",
           "type": "list",
           "lines": [
-            135,
-            136
+            138,
+            139
           ],
           "words": 56,
           "hash": "6233c5a7cddc",
@@ -11239,8 +11393,8 @@
           "id": "sts.chapter9.b0152",
           "type": "paragraph",
           "lines": [
-            138,
-            138
+            141,
+            141
           ],
           "words": 12,
           "hash": "475084ee2d76",
@@ -11250,8 +11404,8 @@
           "id": "sts.chapter9.b0207",
           "type": "code",
           "lines": [
-            140,
-            143
+            143,
+            146
           ],
           "words": 17,
           "hash": "e213b626ce51",
@@ -11261,8 +11415,8 @@
           "id": "sts.chapter9.b0154",
           "type": "paragraph",
           "lines": [
-            145,
-            145
+            148,
+            148
           ],
           "words": 27,
           "hash": "ccd942bc1fc3",
@@ -11272,8 +11426,8 @@
           "id": "sts.chapter9.b0208",
           "type": "blockquote",
           "lines": [
-            147,
-            147
+            150,
+            150
           ],
           "words": 15,
           "hash": "d65e6f1ff405",
@@ -11283,8 +11437,8 @@
           "id": "sts.chapter9.b0167",
           "type": "paragraph",
           "lines": [
-            149,
-            149
+            152,
+            152
           ],
           "words": 67,
           "hash": "97ca74c52e63",
@@ -11294,8 +11448,8 @@
           "id": "sts.chapter9.b0144",
           "type": "heading",
           "lines": [
-            151,
-            151
+            154,
+            154
           ],
           "words": 9,
           "hash": "f6dc594a41e3",
@@ -11306,8 +11460,8 @@
           "id": "sts.chapter9.b0168",
           "type": "paragraph",
           "lines": [
-            153,
-            153
+            156,
+            156
           ],
           "words": 60,
           "hash": "6daef86b9931",
@@ -11317,8 +11471,8 @@
           "id": "sts.chapter9.b0169",
           "type": "paragraph",
           "lines": [
-            155,
-            155
+            158,
+            158
           ],
           "words": 47,
           "hash": "6bcfb5f5dc01",
@@ -11328,8 +11482,8 @@
           "id": "sts.chapter9.b0170",
           "type": "paragraph",
           "lines": [
-            157,
-            157
+            160,
+            160
           ],
           "words": 30,
           "hash": "52bc4769fb1f",
@@ -11339,8 +11493,8 @@
           "id": "sts.chapter9.b0172",
           "type": "paragraph",
           "lines": [
-            159,
-            159
+            162,
+            162
           ],
           "words": 57,
           "hash": "84af06d976d4",
@@ -11350,8 +11504,8 @@
           "id": "sts.chapter9.b0153",
           "type": "table",
           "lines": [
-            161,
-            169
+            164,
+            172
           ],
           "words": 92,
           "hash": "85774743cecc",
@@ -11361,8 +11515,8 @@
           "id": "sts.chapter9.b0173",
           "type": "paragraph",
           "lines": [
-            171,
-            171
+            174,
+            174
           ],
           "words": 62,
           "hash": "e087a054c532",
@@ -11372,8 +11526,8 @@
           "id": "sts.chapter9.b0189",
           "type": "heading",
           "lines": [
-            173,
-            173
+            176,
+            176
           ],
           "words": 7,
           "hash": "63d7c5947a5e",
@@ -11384,8 +11538,8 @@
           "id": "sts.chapter9.b0174",
           "type": "paragraph",
           "lines": [
-            175,
-            175
+            178,
+            178
           ],
           "words": 68,
           "hash": "3afffeda87a3",
@@ -11395,8 +11549,8 @@
           "id": "sts.chapter9.b0175",
           "type": "paragraph",
           "lines": [
-            177,
-            177
+            180,
+            180
           ],
           "words": 72,
           "hash": "905c1af8c102",
@@ -11406,8 +11560,8 @@
           "id": "sts.chapter9.b0158",
           "type": "paragraph",
           "lines": [
-            179,
-            179
+            182,
+            182
           ],
           "words": 87,
           "hash": "a121836c3f39",
@@ -11417,8 +11571,8 @@
           "id": "sts.chapter9.b0209",
           "type": "heading",
           "lines": [
-            181,
-            181
+            184,
+            184
           ],
           "words": 5,
           "hash": "65f7051abe25",
@@ -11429,8 +11583,8 @@
           "id": "sts.chapter9.b0210",
           "type": "list",
           "lines": [
-            183,
-            185
+            186,
+            188
           ],
           "words": 102,
           "hash": "8aa90b6b60dc",
@@ -11440,8 +11594,8 @@
           "id": "sts.chapter9.b0040",
           "type": "hr",
           "lines": [
-            187,
-            187
+            190,
+            190
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -11451,8 +11605,8 @@
           "id": "sts.chapter9.b0194",
           "type": "heading",
           "lines": [
-            189,
-            189
+            192,
+            192
           ],
           "words": 14,
           "hash": "e94410444298",
@@ -11463,8 +11617,8 @@
           "id": "sts.chapter9.b0190",
           "type": "paragraph",
           "lines": [
-            191,
-            191
+            194,
+            194
           ],
           "words": 49,
           "hash": "769125a673f3",
@@ -11474,8 +11628,8 @@
           "id": "sts.chapter9.b0191",
           "type": "paragraph",
           "lines": [
-            193,
-            193
+            196,
+            196
           ],
           "words": 110,
           "hash": "738c7319240b",
@@ -11485,8 +11639,8 @@
           "id": "sts.chapter9.b0192",
           "type": "paragraph",
           "lines": [
-            195,
-            195
+            198,
+            198
           ],
           "words": 110,
           "hash": "730f079fd243",
@@ -11496,8 +11650,8 @@
           "id": "sts.chapter9.b0159",
           "type": "paragraph",
           "lines": [
-            197,
-            197
+            200,
+            200
           ],
           "words": 45,
           "hash": "b2a0903813aa",
@@ -11507,8 +11661,8 @@
           "id": "sts.chapter9.b0193",
           "type": "paragraph",
           "lines": [
-            199,
-            199
+            202,
+            202
           ],
           "words": 24,
           "hash": "e1c5f52822e9",
@@ -11518,8 +11672,8 @@
           "id": "sts.chapter9.b0121",
           "type": "paragraph",
           "lines": [
-            201,
-            201
+            204,
+            204
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -11529,8 +11683,8 @@
           "id": "sts.chapter9.b0211",
           "type": "list",
           "lines": [
-            203,
-            205
+            206,
+            208
           ],
           "words": 163,
           "hash": "b041127cbcea",
@@ -11540,8 +11694,8 @@
           "id": "sts.chapter9.b0115",
           "type": "hr",
           "lines": [
-            207,
-            207
+            210,
+            210
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -14753,8 +14907,8 @@
       "id": "chapter13",
       "title": "Chapter 13: The Shouse Protocol",
       "file": "15-chapter13.md",
-      "next_ordinal": 182,
-      "words": 3572,
+      "next_ordinal": 183,
+      "words": 3607,
       "tombstones": [
         "sts.chapter13.b0001",
         "sts.chapter13.b0003",
@@ -14900,16 +15054,27 @@
             5,
             5
           ],
-          "words": 19,
-          "hash": "36c9512d7aee",
-          "preview": "*Solar on an outbuilding. The shouse grid starts with one roof. (Ermell, CC BY-SA 4.0, via"
+          "words": 20,
+          "hash": "04a9a16bad19",
+          "preview": "*Solar on an outbuilding. The shouse grid starts with one roof. (Reinhold Möller, CC BY-SA"
+        },
+        {
+          "id": "sts.chapter13.b0182",
+          "type": "blockquote",
+          "lines": [
+            9,
+            10
+          ],
+          "words": 34,
+          "hash": "b7402ddb4ef9",
+          "preview": "> *\"The cost of a thing is the amount of what I will call life which is required to be exc"
         },
         {
           "id": "sts.chapter13.b0005",
           "type": "paragraph",
           "lines": [
-            9,
-            9
+            12,
+            12
           ],
           "words": 3,
           "hash": "6f68df3c273f",
@@ -14919,8 +15084,8 @@
           "id": "sts.chapter13.b0146",
           "type": "list",
           "lines": [
-            11,
-            14
+            14,
+            17
           ],
           "words": 105,
           "hash": "91271c109ea3",
@@ -14930,8 +15095,8 @@
           "id": "sts.chapter13.b0007",
           "type": "hr",
           "lines": [
-            16,
-            16
+            19,
+            19
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -14941,8 +15106,8 @@
           "id": "sts.chapter13.b0147",
           "type": "paragraph",
           "lines": [
-            18,
-            18
+            21,
+            21
           ],
           "words": 124,
           "hash": "02979a4c7098",
@@ -14952,8 +15117,8 @@
           "id": "sts.chapter13.b0148",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            23,
+            23
           ],
           "words": 87,
           "hash": "c7ba1001d407",
@@ -14963,8 +15128,8 @@
           "id": "sts.chapter13.b0010",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            25,
+            25
           ],
           "words": 114,
           "hash": "4ac79bc296a7",
@@ -14974,8 +15139,8 @@
           "id": "sts.chapter13.b0011",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            27,
+            27
           ],
           "words": 26,
           "hash": "4efb60922e79",
@@ -14985,8 +15150,8 @@
           "id": "sts.chapter13.b0115",
           "type": "figure",
           "lines": [
-            26,
-            26
+            29,
+            29
           ],
           "words": 20,
           "hash": "9ab23e7515f2",
@@ -14998,8 +15163,8 @@
           "id": "sts.chapter13.b0116",
           "type": "caption",
           "lines": [
-            28,
-            28
+            31,
+            31
           ],
           "words": 10,
           "hash": "666082002acf",
@@ -15009,8 +15174,8 @@
           "id": "sts.chapter13.b0149",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            33,
+            33
           ],
           "words": 135,
           "hash": "8179bd52674c",
@@ -15020,8 +15185,8 @@
           "id": "sts.chapter13.b0150",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            35,
+            35
           ],
           "words": 132,
           "hash": "fe4406c5604a",
@@ -15031,8 +15196,8 @@
           "id": "sts.chapter13.b0151",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            37,
+            37
           ],
           "words": 104,
           "hash": "f59081c2c256",
@@ -15042,8 +15207,8 @@
           "id": "sts.chapter13.b0152",
           "type": "paragraph",
           "lines": [
-            36,
-            36
+            39,
+            39
           ],
           "words": 108,
           "hash": "a5aa39a71af3",
@@ -15053,8 +15218,8 @@
           "id": "sts.chapter13.b0016",
           "type": "paragraph",
           "lines": [
-            38,
-            38
+            41,
+            41
           ],
           "words": 97,
           "hash": "647ae7f12ca1",
@@ -15064,8 +15229,8 @@
           "id": "sts.chapter13.b0120",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            43,
+            43
           ],
           "words": 76,
           "hash": "1c06b1788c58",
@@ -15075,8 +15240,8 @@
           "id": "sts.chapter13.b0018",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            45,
+            45
           ],
           "words": 51,
           "hash": "cb31f30c48b6",
@@ -15086,8 +15251,8 @@
           "id": "sts.chapter13.b0019",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            47,
+            47
           ],
           "words": 10,
           "hash": "0549da035276",
@@ -15097,8 +15262,8 @@
           "id": "sts.chapter13.b0020",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            49,
+            49
           ],
           "words": 34,
           "hash": "47db7b56d472",
@@ -15108,8 +15273,8 @@
           "id": "sts.chapter13.b0153",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            51,
+            51
           ],
           "words": 70,
           "hash": "ff2a9dc490a2",
@@ -15119,8 +15284,8 @@
           "id": "sts.chapter13.b0022",
           "type": "hr",
           "lines": [
-            50,
-            50
+            53,
+            53
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -15130,8 +15295,8 @@
           "id": "sts.chapter13.b0023",
           "type": "heading",
           "lines": [
-            52,
-            52
+            55,
+            55
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -15142,8 +15307,8 @@
           "id": "sts.chapter13.b0154",
           "type": "heading",
           "lines": [
-            54,
-            54
+            57,
+            57
           ],
           "words": 5,
           "hash": "6552bc7413a6",
@@ -15154,8 +15319,8 @@
           "id": "sts.chapter13.b0155",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            59,
+            59
           ],
           "words": 59,
           "hash": "8ec55088942e",
@@ -15165,8 +15330,8 @@
           "id": "sts.chapter13.b0156",
           "type": "paragraph",
           "lines": [
-            58,
-            58
+            61,
+            61
           ],
           "words": 81,
           "hash": "6ab0b556b4f0",
@@ -15176,8 +15341,8 @@
           "id": "sts.chapter13.b0168",
           "type": "heading",
           "lines": [
-            60,
-            60
+            63,
+            63
           ],
           "words": 5,
           "hash": "96c874efa76b",
@@ -15188,8 +15353,8 @@
           "id": "sts.chapter13.b0157",
           "type": "paragraph",
           "lines": [
-            62,
-            62
+            65,
+            65
           ],
           "words": 33,
           "hash": "f48ef34dab7a",
@@ -15199,8 +15364,8 @@
           "id": "sts.chapter13.b0139",
           "type": "list",
           "lines": [
-            64,
-            66
+            67,
+            69
           ],
           "words": 153,
           "hash": "7155bf6af210",
@@ -15210,8 +15375,8 @@
           "id": "sts.chapter13.b0158",
           "type": "paragraph",
           "lines": [
-            68,
-            68
+            71,
+            71
           ],
           "words": 40,
           "hash": "49bc38210fa2",
@@ -15221,8 +15386,8 @@
           "id": "sts.chapter13.b0125",
           "type": "paragraph",
           "lines": [
-            70,
-            70
+            73,
+            73
           ],
           "words": 17,
           "hash": "e68d28aca670",
@@ -15232,8 +15397,8 @@
           "id": "sts.chapter13.b0169",
           "type": "heading",
           "lines": [
-            72,
-            72
+            75,
+            75
           ],
           "words": 3,
           "hash": "6e5d9fd1bf42",
@@ -15244,8 +15409,8 @@
           "id": "sts.chapter13.b0159",
           "type": "paragraph",
           "lines": [
-            74,
-            74
+            77,
+            77
           ],
           "words": 63,
           "hash": "21b363a1e866",
@@ -15255,8 +15420,8 @@
           "id": "sts.chapter13.b0160",
           "type": "paragraph",
           "lines": [
-            76,
-            76
+            79,
+            79
           ],
           "words": 76,
           "hash": "c4389bd86b93",
@@ -15266,8 +15431,8 @@
           "id": "sts.chapter13.b0170",
           "type": "figure",
           "lines": [
-            78,
-            78
+            81,
+            81
           ],
           "words": 31,
           "hash": "423b49b92aaa",
@@ -15279,8 +15444,8 @@
           "id": "sts.chapter13.b0171",
           "type": "caption",
           "lines": [
-            80,
-            80
+            83,
+            83
           ],
           "words": 19,
           "hash": "4999e1bdfc7c",
@@ -15290,8 +15455,8 @@
           "id": "sts.chapter13.b0140",
           "type": "paragraph",
           "lines": [
-            82,
-            82
+            85,
+            85
           ],
           "words": 102,
           "hash": "ae5d77e52f78",
@@ -15301,8 +15466,8 @@
           "id": "sts.chapter13.b0172",
           "type": "heading",
           "lines": [
-            84,
-            84
+            87,
+            87
           ],
           "words": 4,
           "hash": "b89417a912a9",
@@ -15313,8 +15478,8 @@
           "id": "sts.chapter13.b0129",
           "type": "paragraph",
           "lines": [
-            86,
-            86
+            89,
+            89
           ],
           "words": 29,
           "hash": "d7c32d0eecc3",
@@ -15324,8 +15489,8 @@
           "id": "sts.chapter13.b0173",
           "type": "blockquote",
           "lines": [
-            88,
-            88
+            91,
+            91
           ],
           "words": 6,
           "hash": "8487a6ff832d",
@@ -15335,8 +15500,8 @@
           "id": "sts.chapter13.b0130",
           "type": "paragraph",
           "lines": [
-            90,
-            90
+            93,
+            93
           ],
           "words": 59,
           "hash": "82af2b9d2d91",
@@ -15346,8 +15511,8 @@
           "id": "sts.chapter13.b0174",
           "type": "figure",
           "lines": [
-            92,
-            92
+            95,
+            95
           ],
           "words": 38,
           "hash": "c90557baaed5",
@@ -15359,8 +15524,8 @@
           "id": "sts.chapter13.b0175",
           "type": "caption",
           "lines": [
-            94,
-            94
+            97,
+            97
           ],
           "words": 18,
           "hash": "39385565bd79",
@@ -15370,8 +15535,8 @@
           "id": "sts.chapter13.b0132",
           "type": "paragraph",
           "lines": [
-            96,
-            96
+            99,
+            99
           ],
           "words": 84,
           "hash": "45a5979c1c4f",
@@ -15381,8 +15546,8 @@
           "id": "sts.chapter13.b0176",
           "type": "heading",
           "lines": [
-            98,
-            98
+            101,
+            101
           ],
           "words": 6,
           "hash": "b7e29cba3421",
@@ -15393,8 +15558,8 @@
           "id": "sts.chapter13.b0133",
           "type": "paragraph",
           "lines": [
-            100,
-            100
+            103,
+            103
           ],
           "words": 112,
           "hash": "44b72210e786",
@@ -15404,8 +15569,8 @@
           "id": "sts.chapter13.b0124",
           "type": "heading",
           "lines": [
-            102,
-            102
+            105,
+            105
           ],
           "words": 5,
           "hash": "172e0b0d698c",
@@ -15416,8 +15581,8 @@
           "id": "sts.chapter13.b0141",
           "type": "paragraph",
           "lines": [
-            104,
-            104
+            107,
+            107
           ],
           "words": 58,
           "hash": "f8a8c083f3b1",
@@ -15427,8 +15592,8 @@
           "id": "sts.chapter13.b0142",
           "type": "paragraph",
           "lines": [
-            106,
-            106
+            109,
+            109
           ],
           "words": 94,
           "hash": "8ed1dd806f99",
@@ -15438,8 +15603,8 @@
           "id": "sts.chapter13.b0162",
           "type": "heading",
           "lines": [
-            108,
-            108
+            111,
+            111
           ],
           "words": 5,
           "hash": "25175ce79d42",
@@ -15450,8 +15615,8 @@
           "id": "sts.chapter13.b0163",
           "type": "paragraph",
           "lines": [
-            110,
-            110
+            113,
+            113
           ],
           "words": 79,
           "hash": "87dc347b9cc8",
@@ -15461,8 +15626,8 @@
           "id": "sts.chapter13.b0164",
           "type": "paragraph",
           "lines": [
-            112,
-            112
+            115,
+            115
           ],
           "words": 103,
           "hash": "485cef488600",
@@ -15472,8 +15637,8 @@
           "id": "sts.chapter13.b0165",
           "type": "paragraph",
           "lines": [
-            114,
-            114
+            117,
+            117
           ],
           "words": 60,
           "hash": "fd12970d5e10",
@@ -15483,8 +15648,8 @@
           "id": "sts.chapter13.b0166",
           "type": "paragraph",
           "lines": [
-            116,
-            116
+            119,
+            119
           ],
           "words": 61,
           "hash": "970401ac66e3",
@@ -15494,8 +15659,8 @@
           "id": "sts.chapter13.b0167",
           "type": "paragraph",
           "lines": [
-            118,
-            118
+            121,
+            121
           ],
           "words": 87,
           "hash": "819942e66802",
@@ -15505,8 +15670,8 @@
           "id": "sts.chapter13.b0128",
           "type": "heading",
           "lines": [
-            120,
-            120
+            123,
+            123
           ],
           "words": 3,
           "hash": "270b856d90db",
@@ -15517,8 +15682,8 @@
           "id": "sts.chapter13.b0135",
           "type": "paragraph",
           "lines": [
-            122,
-            122
+            125,
+            125
           ],
           "words": 74,
           "hash": "86f93cc6b3ab",
@@ -15528,8 +15693,8 @@
           "id": "sts.chapter13.b0131",
           "type": "heading",
           "lines": [
-            124,
-            124
+            127,
+            127
           ],
           "words": 6,
           "hash": "8dfec393cae1",
@@ -15540,8 +15705,8 @@
           "id": "sts.chapter13.b0143",
           "type": "paragraph",
           "lines": [
-            126,
-            126
+            129,
+            129
           ],
           "words": 77,
           "hash": "92a244ad34a3",
@@ -15551,8 +15716,8 @@
           "id": "sts.chapter13.b0137",
           "type": "paragraph",
           "lines": [
-            128,
-            128
+            131,
+            131
           ],
           "words": 45,
           "hash": "d5c07ca268e4",
@@ -15562,8 +15727,8 @@
           "id": "sts.chapter13.b0028",
           "type": "hr",
           "lines": [
-            130,
-            130
+            133,
+            133
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -15573,8 +15738,8 @@
           "id": "sts.chapter13.b0161",
           "type": "heading",
           "lines": [
-            132,
-            132
+            135,
+            135
           ],
           "words": 13,
           "hash": "b8141e1dc2d9",
@@ -15585,8 +15750,8 @@
           "id": "sts.chapter13.b0138",
           "type": "paragraph",
           "lines": [
-            134,
-            134
+            137,
+            137
           ],
           "words": 99,
           "hash": "b267523fe5cd",
@@ -15596,8 +15761,8 @@
           "id": "sts.chapter13.b0177",
           "type": "paragraph",
           "lines": [
-            136,
-            136
+            139,
+            139
           ],
           "words": 49,
           "hash": "fcde77b80c9b",
@@ -15607,8 +15772,8 @@
           "id": "sts.chapter13.b0178",
           "type": "paragraph",
           "lines": [
-            138,
-            138
+            141,
+            141
           ],
           "words": 46,
           "hash": "0a66e00ff353",
@@ -15618,8 +15783,8 @@
           "id": "sts.chapter13.b0179",
           "type": "paragraph",
           "lines": [
-            140,
-            140
+            143,
+            143
           ],
           "words": 43,
           "hash": "37f571c27747",
@@ -15629,8 +15794,8 @@
           "id": "sts.chapter13.b0180",
           "type": "paragraph",
           "lines": [
-            142,
-            142
+            145,
+            145
           ],
           "words": 18,
           "hash": "5c76d7aeb54a",
@@ -15640,8 +15805,8 @@
           "id": "sts.chapter13.b0113",
           "type": "paragraph",
           "lines": [
-            144,
-            144
+            147,
+            147
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -15651,8 +15816,8 @@
           "id": "sts.chapter13.b0181",
           "type": "list",
           "lines": [
-            146,
-            148
+            149,
+            151
           ],
           "words": 160,
           "hash": "de5bbbbe2e33",
@@ -15662,8 +15827,8 @@
           "id": "sts.chapter13.b0107",
           "type": "hr",
           "lines": [
-            150,
-            150
+            153,
+            153
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -15676,7 +15841,7 @@
       "title": "Chapter 14: The Collapse of the Long Tail",
       "file": "16-chapter14.md",
       "next_ordinal": 174,
-      "words": 3651,
+      "words": 3664,
       "tombstones": [
         "sts.chapter14.b0004",
         "sts.chapter14.b0006",
@@ -15792,9 +15957,9 @@
             3,
             3
           ],
-          "words": 9,
-          "hash": "6e1dbadfdc8a",
-          "preview": "![Interior of an abandoned shopping mall](/book-images/ch14-dead-mall.jpg)",
+          "words": 13,
+          "hash": "10337f39927b",
+          "preview": "![An abandoned bar inside an older shopping mall in Haifa](/book-images/ch14-dead-mall.jpg",
           "image": "/book-images/ch14-dead-mall.jpg",
           "art_id": "sts.photo.ch14-dead-mall"
         },
@@ -15805,9 +15970,9 @@
             5,
             5
           ],
-          "words": 13,
-          "hash": "f0379c6ef295",
-          "preview": "*A dead mall. Gradually, then suddenly. (User:Mattes, Public domain, via Wikimedia Commons"
+          "words": 22,
+          "hash": "5e25a3f861c1",
+          "preview": "*An abandoned bar in an older shopping mall in Haifa. Gradually, then suddenly. (Mattes, P"
         },
         {
           "id": "sts.chapter14.b0140",
@@ -17554,8 +17719,8 @@
       "id": "chapter16",
       "title": "Chapter 16: Digital Leverage and Media Autonomy",
       "file": "18-chapter16.md",
-      "next_ordinal": 143,
-      "words": 2792,
+      "next_ordinal": 144,
+      "words": 2821,
       "tombstones": [
         "sts.chapter16.b0003",
         "sts.chapter16.b0004",
@@ -17676,11 +17841,22 @@
           "preview": "*Server racks. A useful record can travel beyond the people who made it. (Victor Grigas, C"
         },
         {
+          "id": "sts.chapter16.b0143",
+          "type": "blockquote",
+          "lines": [
+            9,
+            10
+          ],
+          "words": 29,
+          "hash": "8fa6d0222627",
+          "preview": "> *\"Freedom of the press is guaranteed only to those who own one.\"* > A. J. Liebling, \"The"
+        },
+        {
           "id": "sts.chapter16.b0005",
           "type": "paragraph",
           "lines": [
-            9,
-            9
+            12,
+            12
           ],
           "words": 3,
           "hash": "6f68df3c273f",
@@ -17690,8 +17866,8 @@
           "id": "sts.chapter16.b0085",
           "type": "list",
           "lines": [
-            11,
-            14
+            14,
+            17
           ],
           "words": 85,
           "hash": "cd3b8f4c09f6",
@@ -17701,8 +17877,8 @@
           "id": "sts.chapter16.b0007",
           "type": "hr",
           "lines": [
-            16,
-            16
+            19,
+            19
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -17712,8 +17888,8 @@
           "id": "sts.chapter16.b0008",
           "type": "paragraph",
           "lines": [
-            18,
-            18
+            21,
+            21
           ],
           "words": 9,
           "hash": "6eb17f1ae5d8",
@@ -17723,8 +17899,8 @@
           "id": "sts.chapter16.b0118",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            23,
+            23
           ],
           "words": 127,
           "hash": "5ff3604b7162",
@@ -17734,8 +17910,8 @@
           "id": "sts.chapter16.b0010",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            25,
+            25
           ],
           "words": 14,
           "hash": "d923b6379627",
@@ -17745,8 +17921,8 @@
           "id": "sts.chapter16.b0119",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            27,
+            27
           ],
           "words": 55,
           "hash": "80fd247f09a8",
@@ -17756,8 +17932,8 @@
           "id": "sts.chapter16.b0120",
           "type": "paragraph",
           "lines": [
-            26,
-            26
+            29,
+            29
           ],
           "words": 107,
           "hash": "40c62aeb1663",
@@ -17767,8 +17943,8 @@
           "id": "sts.chapter16.b0121",
           "type": "paragraph",
           "lines": [
-            28,
-            28
+            31,
+            31
           ],
           "words": 104,
           "hash": "0b6c20c0c5ca",
@@ -17778,8 +17954,8 @@
           "id": "sts.chapter16.b0014",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            33,
+            33
           ],
           "words": 20,
           "hash": "b21ee733da50",
@@ -17789,8 +17965,8 @@
           "id": "sts.chapter16.b0087",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            35,
+            35
           ],
           "words": 101,
           "hash": "c90d488bae66",
@@ -17800,8 +17976,8 @@
           "id": "sts.chapter16.b0016",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            37,
+            37
           ],
           "words": 110,
           "hash": "049bda314459",
@@ -17811,8 +17987,8 @@
           "id": "sts.chapter16.b0122",
           "type": "paragraph",
           "lines": [
-            36,
-            36
+            39,
+            39
           ],
           "words": 72,
           "hash": "9cb5db04a29f",
@@ -17822,8 +17998,8 @@
           "id": "sts.chapter16.b0018",
           "type": "paragraph",
           "lines": [
-            38,
-            38
+            41,
+            41
           ],
           "words": 73,
           "hash": "21e0d117911c",
@@ -17833,8 +18009,8 @@
           "id": "sts.chapter16.b0088",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            43,
+            43
           ],
           "words": 95,
           "hash": "67d79fad0dab",
@@ -17844,8 +18020,8 @@
           "id": "sts.chapter16.b0089",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            45,
+            45
           ],
           "words": 37,
           "hash": "cbb1d3b6c39c",
@@ -17855,8 +18031,8 @@
           "id": "sts.chapter16.b0123",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            47,
+            47
           ],
           "words": 103,
           "hash": "85e273fa6cd4",
@@ -17866,8 +18042,8 @@
           "id": "sts.chapter16.b0124",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            49,
+            49
           ],
           "words": 33,
           "hash": "ef1e1784d261",
@@ -17877,8 +18053,8 @@
           "id": "sts.chapter16.b0125",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            51,
+            51
           ],
           "words": 13,
           "hash": "cd4a05e9332c",
@@ -17888,8 +18064,8 @@
           "id": "sts.chapter16.b0022",
           "type": "hr",
           "lines": [
-            50,
-            50
+            53,
+            53
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -17899,8 +18075,8 @@
           "id": "sts.chapter16.b0023",
           "type": "heading",
           "lines": [
-            52,
-            52
+            55,
+            55
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -17911,8 +18087,8 @@
           "id": "sts.chapter16.b0127",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            57,
+            57
           ],
           "words": 73,
           "hash": "f54d8075364e",
@@ -17922,8 +18098,8 @@
           "id": "sts.chapter16.b0128",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            59,
+            59
           ],
           "words": 22,
           "hash": "37b4fab0d65b",
@@ -17933,8 +18109,8 @@
           "id": "sts.chapter16.b0098",
           "type": "heading",
           "lines": [
-            58,
-            58
+            61,
+            61
           ],
           "words": 5,
           "hash": "aec6f81d799f",
@@ -17945,8 +18121,8 @@
           "id": "sts.chapter16.b0129",
           "type": "paragraph",
           "lines": [
-            60,
-            60
+            63,
+            63
           ],
           "words": 93,
           "hash": "2e5fdd434dd0",
@@ -17956,8 +18132,8 @@
           "id": "sts.chapter16.b0126",
           "type": "heading",
           "lines": [
-            62,
-            62
+            65,
+            65
           ],
           "words": 5,
           "hash": "e9e8893656a3",
@@ -17968,8 +18144,8 @@
           "id": "sts.chapter16.b0130",
           "type": "paragraph",
           "lines": [
-            64,
-            64
+            67,
+            67
           ],
           "words": 62,
           "hash": "5f85f5ea2988",
@@ -17979,8 +18155,8 @@
           "id": "sts.chapter16.b0099",
           "type": "paragraph",
           "lines": [
-            66,
-            66
+            69,
+            69
           ],
           "words": 92,
           "hash": "57eba33c63fd",
@@ -17990,8 +18166,8 @@
           "id": "sts.chapter16.b0094",
           "type": "heading",
           "lines": [
-            68,
-            68
+            71,
+            71
           ],
           "words": 4,
           "hash": "e02799128207",
@@ -18002,8 +18178,8 @@
           "id": "sts.chapter16.b0095",
           "type": "paragraph",
           "lines": [
-            70,
-            70
+            73,
+            73
           ],
           "words": 32,
           "hash": "a650fd5b597e",
@@ -18013,8 +18189,8 @@
           "id": "sts.chapter16.b0096",
           "type": "paragraph",
           "lines": [
-            72,
-            72
+            75,
+            75
           ],
           "words": 39,
           "hash": "2ba89eeb4004",
@@ -18024,8 +18200,8 @@
           "id": "sts.chapter16.b0097",
           "type": "paragraph",
           "lines": [
-            74,
-            74
+            77,
+            77
           ],
           "words": 45,
           "hash": "da3c0ff24f5c",
@@ -18035,8 +18211,8 @@
           "id": "sts.chapter16.b0138",
           "type": "heading",
           "lines": [
-            76,
-            76
+            79,
+            79
           ],
           "words": 6,
           "hash": "a62409967a64",
@@ -18047,8 +18223,8 @@
           "id": "sts.chapter16.b0110",
           "type": "paragraph",
           "lines": [
-            78,
-            78
+            81,
+            81
           ],
           "words": 31,
           "hash": "cf3f034fadd8",
@@ -18058,8 +18234,8 @@
           "id": "sts.chapter16.b0101",
           "type": "paragraph",
           "lines": [
-            80,
-            80
+            83,
+            83
           ],
           "words": 72,
           "hash": "6efcb244390c",
@@ -18069,8 +18245,8 @@
           "id": "sts.chapter16.b0103",
           "type": "paragraph",
           "lines": [
-            82,
-            82
+            85,
+            85
           ],
           "words": 59,
           "hash": "0d58c5fb99a6",
@@ -18080,8 +18256,8 @@
           "id": "sts.chapter16.b0104",
           "type": "paragraph",
           "lines": [
-            84,
-            84
+            87,
+            87
           ],
           "words": 66,
           "hash": "f10b3ff1eff3",
@@ -18091,8 +18267,8 @@
           "id": "sts.chapter16.b0115",
           "type": "paragraph",
           "lines": [
-            86,
-            86
+            89,
+            89
           ],
           "words": 40,
           "hash": "388776bbba19",
@@ -18102,8 +18278,8 @@
           "id": "sts.chapter16.b0139",
           "type": "figure",
           "lines": [
-            88,
-            88
+            91,
+            91
           ],
           "words": 36,
           "hash": "49ac4cfadf59",
@@ -18115,8 +18291,8 @@
           "id": "sts.chapter16.b0140",
           "type": "caption",
           "lines": [
-            90,
-            90
+            93,
+            93
           ],
           "words": 11,
           "hash": "21d6418704cc",
@@ -18126,8 +18302,8 @@
           "id": "sts.chapter16.b0141",
           "type": "heading",
           "lines": [
-            92,
-            92
+            95,
+            95
           ],
           "words": 2,
           "hash": "5ee9e893b723",
@@ -18138,8 +18314,8 @@
           "id": "sts.chapter16.b0132",
           "type": "paragraph",
           "lines": [
-            94,
-            94
+            97,
+            97
           ],
           "words": 11,
           "hash": "519d4ce20aaa",
@@ -18149,8 +18325,8 @@
           "id": "sts.chapter16.b0133",
           "type": "paragraph",
           "lines": [
-            96,
-            96
+            99,
+            99
           ],
           "words": 59,
           "hash": "9fd2794b9b29",
@@ -18160,8 +18336,8 @@
           "id": "sts.chapter16.b0131",
           "type": "heading",
           "lines": [
-            98,
-            98
+            101,
+            101
           ],
           "words": 4,
           "hash": "c303cc161374",
@@ -18172,8 +18348,8 @@
           "id": "sts.chapter16.b0111",
           "type": "paragraph",
           "lines": [
-            100,
-            100
+            103,
+            103
           ],
           "words": 54,
           "hash": "45a19a5a8f1d",
@@ -18183,8 +18359,8 @@
           "id": "sts.chapter16.b0112",
           "type": "paragraph",
           "lines": [
-            102,
-            102
+            105,
+            105
           ],
           "words": 51,
           "hash": "7639c24cd1c4",
@@ -18194,8 +18370,8 @@
           "id": "sts.chapter16.b0113",
           "type": "paragraph",
           "lines": [
-            104,
-            104
+            107,
+            107
           ],
           "words": 30,
           "hash": "097ce752bd1c",
@@ -18205,8 +18381,8 @@
           "id": "sts.chapter16.b0102",
           "type": "heading",
           "lines": [
-            106,
-            106
+            109,
+            109
           ],
           "words": 3,
           "hash": "c0c33fab7f92",
@@ -18217,8 +18393,8 @@
           "id": "sts.chapter16.b0109",
           "type": "list",
           "lines": [
-            108,
-            110
+            111,
+            113
           ],
           "words": 99,
           "hash": "fc8d92d72961",
@@ -18228,8 +18404,8 @@
           "id": "sts.chapter16.b0076",
           "type": "hr",
           "lines": [
-            112,
-            112
+            115,
+            115
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -18239,8 +18415,8 @@
           "id": "sts.chapter16.b0137",
           "type": "heading",
           "lines": [
-            114,
-            114
+            117,
+            117
           ],
           "words": 10,
           "hash": "482e06723021",
@@ -18251,8 +18427,8 @@
           "id": "sts.chapter16.b0134",
           "type": "paragraph",
           "lines": [
-            116,
-            116
+            119,
+            119
           ],
           "words": 47,
           "hash": "ce990e711aa4",
@@ -18262,8 +18438,8 @@
           "id": "sts.chapter16.b0135",
           "type": "paragraph",
           "lines": [
-            118,
-            118
+            121,
+            121
           ],
           "words": 62,
           "hash": "194eeb2e43f5",
@@ -18273,8 +18449,8 @@
           "id": "sts.chapter16.b0136",
           "type": "paragraph",
           "lines": [
-            120,
-            120
+            123,
+            123
           ],
           "words": 124,
           "hash": "07b7271ae5c1",
@@ -18284,8 +18460,8 @@
           "id": "sts.chapter16.b0116",
           "type": "paragraph",
           "lines": [
-            122,
-            122
+            125,
+            125
           ],
           "words": 53,
           "hash": "1f48fa5d0cc3",
@@ -18295,8 +18471,8 @@
           "id": "sts.chapter16.b0107",
           "type": "paragraph",
           "lines": [
-            124,
-            124
+            127,
+            127
           ],
           "words": 25,
           "hash": "5490c8939193",
@@ -18306,8 +18482,8 @@
           "id": "sts.chapter16.b0082",
           "type": "paragraph",
           "lines": [
-            126,
-            126
+            129,
+            129
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -18317,8 +18493,8 @@
           "id": "sts.chapter16.b0142",
           "type": "list",
           "lines": [
-            128,
-            130
+            131,
+            133
           ],
           "words": 161,
           "hash": "9925f7975f70",
@@ -18328,8 +18504,8 @@
           "id": "sts.chapter16.b0084",
           "type": "hr",
           "lines": [
-            132,
-            132
+            135,
+            135
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -19396,7 +19572,7 @@
       "title": "Chapter 18: The Roadmap and the Premortem Pivot",
       "file": "20-chapter18.md",
       "next_ordinal": 186,
-      "words": 4219,
+      "words": 4223,
       "tombstones": [
         "sts.chapter18.b0004",
         "sts.chapter18.b0006",
@@ -19512,9 +19688,9 @@
             5,
             5
           ],
-          "words": 17,
-          "hash": "acd9dddb3712",
-          "preview": "*The map, before the route. Premortem first, then move. (SFC9394, CC BY 2.5, via Wikimedia"
+          "words": 21,
+          "hash": "cd490ce2dff8",
+          "preview": "*The map, before the route. Premortem first, then move. (SFC9394; compass rose by Stefan-X"
         },
         {
           "id": "sts.chapter18.b0129",
@@ -20657,8 +20833,8 @@
       "id": "conclusion",
       "title": "Conclusion: What If It All Goes Right?",
       "file": "21-conclusion.md",
-      "next_ordinal": 127,
-      "words": 2784,
+      "next_ordinal": 128,
+      "words": 2822,
       "tombstones": [
         "sts.conclusion.b0001",
         "sts.conclusion.b0003",
@@ -20763,11 +20939,22 @@
           "preview": "*Sunrise from orbit. The new era doesn't ask permission, and it still has work to do. (NAS"
         },
         {
+          "id": "sts.conclusion.b0127",
+          "type": "blockquote",
+          "lines": [
+            7,
+            8
+          ],
+          "words": 38,
+          "hash": "7a287b34af12",
+          "preview": "> *\"A map of the world that does not include Utopia is not worth even glancing at, for it "
+        },
+        {
           "id": "sts.conclusion.b0088",
           "type": "heading",
           "lines": [
-            7,
-            7
+            10,
+            10
           ],
           "words": 4,
           "hash": "d2aff7b40e97",
@@ -20778,8 +20965,8 @@
           "id": "sts.conclusion.b0089",
           "type": "paragraph",
           "lines": [
-            9,
-            9
+            12,
+            12
           ],
           "words": 24,
           "hash": "273d58c09382",
@@ -20789,8 +20976,8 @@
           "id": "sts.conclusion.b0090",
           "type": "paragraph",
           "lines": [
-            11,
-            11
+            14,
+            14
           ],
           "words": 72,
           "hash": "7ce237ef6855",
@@ -20800,8 +20987,8 @@
           "id": "sts.conclusion.b0091",
           "type": "paragraph",
           "lines": [
-            13,
-            13
+            16,
+            16
           ],
           "words": 49,
           "hash": "a5b4933c4d2e",
@@ -20811,8 +20998,8 @@
           "id": "sts.conclusion.b0092",
           "type": "paragraph",
           "lines": [
-            15,
-            15
+            18,
+            18
           ],
           "words": 14,
           "hash": "89368ac18a7c",
@@ -20822,8 +21009,8 @@
           "id": "sts.conclusion.b0093",
           "type": "heading",
           "lines": [
-            17,
-            17
+            20,
+            20
           ],
           "words": 6,
           "hash": "8a042501e351",
@@ -20834,8 +21021,8 @@
           "id": "sts.conclusion.b0094",
           "type": "paragraph",
           "lines": [
-            19,
-            19
+            22,
+            22
           ],
           "words": 43,
           "hash": "38c323e1822e",
@@ -20845,8 +21032,8 @@
           "id": "sts.conclusion.b0095",
           "type": "paragraph",
           "lines": [
-            21,
-            21
+            24,
+            24
           ],
           "words": 53,
           "hash": "6e1ef7816710",
@@ -20856,8 +21043,8 @@
           "id": "sts.conclusion.b0096",
           "type": "paragraph",
           "lines": [
-            23,
-            23
+            26,
+            26
           ],
           "words": 34,
           "hash": "03f2b4ea5eb2",
@@ -20867,8 +21054,8 @@
           "id": "sts.conclusion.b0097",
           "type": "paragraph",
           "lines": [
-            25,
-            25
+            28,
+            28
           ],
           "words": 53,
           "hash": "3718ec1f9e26",
@@ -20878,8 +21065,8 @@
           "id": "sts.conclusion.b0098",
           "type": "paragraph",
           "lines": [
-            27,
-            27
+            30,
+            30
           ],
           "words": 52,
           "hash": "28d983c94c48",
@@ -20889,8 +21076,8 @@
           "id": "sts.conclusion.b0099",
           "type": "heading",
           "lines": [
-            29,
-            29
+            32,
+            32
           ],
           "words": 4,
           "hash": "81c3040c38ea",
@@ -20901,8 +21088,8 @@
           "id": "sts.conclusion.b0100",
           "type": "paragraph",
           "lines": [
-            31,
-            31
+            34,
+            34
           ],
           "words": 52,
           "hash": "149c3e709ff7",
@@ -20912,8 +21099,8 @@
           "id": "sts.conclusion.b0101",
           "type": "paragraph",
           "lines": [
-            33,
-            33
+            36,
+            36
           ],
           "words": 35,
           "hash": "8ee7820669f1",
@@ -20923,8 +21110,8 @@
           "id": "sts.conclusion.b0102",
           "type": "paragraph",
           "lines": [
-            35,
-            35
+            38,
+            38
           ],
           "words": 49,
           "hash": "ba451b4d529c",
@@ -20934,8 +21121,8 @@
           "id": "sts.conclusion.b0103",
           "type": "paragraph",
           "lines": [
-            37,
-            37
+            40,
+            40
           ],
           "words": 19,
           "hash": "e305a828dcff",
@@ -20945,8 +21132,8 @@
           "id": "sts.conclusion.b0104",
           "type": "paragraph",
           "lines": [
-            39,
-            39
+            42,
+            42
           ],
           "words": 60,
           "hash": "2c16bb576934",
@@ -20956,8 +21143,8 @@
           "id": "sts.conclusion.b0105",
           "type": "heading",
           "lines": [
-            41,
-            41
+            44,
+            44
           ],
           "words": 5,
           "hash": "f84e36bc3fe8",
@@ -20968,8 +21155,8 @@
           "id": "sts.conclusion.b0106",
           "type": "paragraph",
           "lines": [
-            43,
-            43
+            46,
+            46
           ],
           "words": 48,
           "hash": "abb29347b683",
@@ -20979,8 +21166,8 @@
           "id": "sts.conclusion.b0107",
           "type": "paragraph",
           "lines": [
-            45,
-            45
+            48,
+            48
           ],
           "words": 49,
           "hash": "a9825b959ec4",
@@ -20990,8 +21177,8 @@
           "id": "sts.conclusion.b0108",
           "type": "paragraph",
           "lines": [
-            47,
-            47
+            50,
+            50
           ],
           "words": 30,
           "hash": "90476c8d6bb1",
@@ -21001,8 +21188,8 @@
           "id": "sts.conclusion.b0119",
           "type": "heading",
           "lines": [
-            49,
-            49
+            52,
+            52
           ],
           "words": 3,
           "hash": "91d555a1a927",
@@ -21013,8 +21200,8 @@
           "id": "sts.conclusion.b0111",
           "type": "paragraph",
           "lines": [
-            51,
-            51
+            54,
+            54
           ],
           "words": 67,
           "hash": "39b8ed14cba8",
@@ -21024,8 +21211,8 @@
           "id": "sts.conclusion.b0115",
           "type": "paragraph",
           "lines": [
-            53,
-            53
+            56,
+            56
           ],
           "words": 120,
           "hash": "f639ba26462d",
@@ -21035,8 +21222,8 @@
           "id": "sts.conclusion.b0112",
           "type": "paragraph",
           "lines": [
-            55,
-            55
+            58,
+            58
           ],
           "words": 104,
           "hash": "946570daaba6",
@@ -21046,8 +21233,8 @@
           "id": "sts.conclusion.b0078",
           "type": "paragraph",
           "lines": [
-            57,
-            57
+            60,
+            60
           ],
           "words": 96,
           "hash": "f20883acb09d",
@@ -21057,8 +21244,8 @@
           "id": "sts.conclusion.b0079",
           "type": "paragraph",
           "lines": [
-            59,
-            59
+            62,
+            62
           ],
           "words": 7,
           "hash": "2b3a43ec80ab",
@@ -21068,8 +21255,8 @@
           "id": "sts.conclusion.b0081",
           "type": "paragraph",
           "lines": [
-            61,
-            61
+            64,
+            64
           ],
           "words": 22,
           "hash": "605254e64e9a",
@@ -21079,8 +21266,8 @@
           "id": "sts.conclusion.b0109",
           "type": "paragraph",
           "lines": [
-            63,
-            63
+            66,
+            66
           ],
           "words": 7,
           "hash": "a45408f10131",
@@ -21090,8 +21277,8 @@
           "id": "sts.conclusion.b0007",
           "type": "hr",
           "lines": [
-            65,
-            65
+            68,
+            68
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -21101,8 +21288,8 @@
           "id": "sts.conclusion.b0118",
           "type": "heading",
           "lines": [
-            67,
-            67
+            70,
+            70
           ],
           "words": 9,
           "hash": "7afc6cd9a209",
@@ -21113,8 +21300,8 @@
           "id": "sts.conclusion.b0120",
           "type": "paragraph",
           "lines": [
-            69,
-            69
+            72,
+            72
           ],
           "words": 8,
           "hash": "5dad75e8d77c",
@@ -21124,8 +21311,8 @@
           "id": "sts.conclusion.b0121",
           "type": "paragraph",
           "lines": [
-            71,
-            71
+            74,
+            74
           ],
           "words": 64,
           "hash": "a9a078128a6b",
@@ -21135,8 +21322,8 @@
           "id": "sts.conclusion.b0122",
           "type": "paragraph",
           "lines": [
-            73,
-            73
+            76,
+            76
           ],
           "words": 106,
           "hash": "a22e5aee7494",
@@ -21146,8 +21333,8 @@
           "id": "sts.conclusion.b0116",
           "type": "paragraph",
           "lines": [
-            75,
-            75
+            78,
+            78
           ],
           "words": 97,
           "hash": "d9fc71df9706",
@@ -21157,8 +21344,8 @@
           "id": "sts.conclusion.b0117",
           "type": "paragraph",
           "lines": [
-            77,
-            77
+            80,
+            80
           ],
           "words": 67,
           "hash": "685e4a9a4b69",
@@ -21168,8 +21355,8 @@
           "id": "sts.conclusion.b0123",
           "type": "paragraph",
           "lines": [
-            79,
-            79
+            82,
+            82
           ],
           "words": 50,
           "hash": "8846d5169b1b",
@@ -21179,8 +21366,8 @@
           "id": "sts.conclusion.b0124",
           "type": "paragraph",
           "lines": [
-            81,
-            81
+            84,
+            84
           ],
           "words": 71,
           "hash": "ee5976d36eff",
@@ -21190,8 +21377,8 @@
           "id": "sts.conclusion.b0046",
           "type": "paragraph",
           "lines": [
-            83,
-            83
+            86,
+            86
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -21201,8 +21388,8 @@
           "id": "sts.conclusion.b0080",
           "type": "list",
           "lines": [
-            85,
-            87
+            88,
+            90
           ],
           "words": 158,
           "hash": "d6e27cee1432",
@@ -21212,8 +21399,8 @@
           "id": "sts.conclusion.b0020",
           "type": "hr",
           "lines": [
-            89,
-            89
+            92,
+            92
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -21223,8 +21410,8 @@
           "id": "sts.conclusion.b0113",
           "type": "heading",
           "lines": [
-            91,
-            91
+            94,
+            94
           ],
           "words": 4,
           "hash": "86d8f56a971e",
@@ -21235,8 +21422,8 @@
           "id": "sts.conclusion.b0008",
           "type": "paragraph",
           "lines": [
-            93,
-            93
+            96,
+            96
           ],
           "words": 71,
           "hash": "6be942c4589c",
@@ -21246,8 +21433,8 @@
           "id": "sts.conclusion.b0049",
           "type": "figure",
           "lines": [
-            95,
-            95
+            98,
+            98
           ],
           "words": 13,
           "hash": "33da180b4b27",
@@ -21259,8 +21446,8 @@
           "id": "sts.conclusion.b0050",
           "type": "caption",
           "lines": [
-            97,
-            97
+            100,
+            100
           ],
           "words": 8,
           "hash": "0520233665b0",
@@ -21270,8 +21457,8 @@
           "id": "sts.conclusion.b0055",
           "type": "paragraph",
           "lines": [
-            99,
-            99
+            102,
+            102
           ],
           "words": 132,
           "hash": "ff13cab3d197",
@@ -21281,8 +21468,8 @@
           "id": "sts.conclusion.b0056",
           "type": "paragraph",
           "lines": [
-            101,
-            101
+            104,
+            104
           ],
           "words": 102,
           "hash": "0ef2b4c6495b",
@@ -21292,8 +21479,8 @@
           "id": "sts.conclusion.b0114",
           "type": "paragraph",
           "lines": [
-            103,
-            103
+            106,
+            106
           ],
           "words": 107,
           "hash": "fde8e3941465",
@@ -21303,8 +21490,8 @@
           "id": "sts.conclusion.b0012",
           "type": "paragraph",
           "lines": [
-            105,
-            105
+            108,
+            108
           ],
           "words": 17,
           "hash": "24f4afa6f774",
@@ -21314,8 +21501,8 @@
           "id": "sts.conclusion.b0125",
           "type": "paragraph",
           "lines": [
-            107,
-            107
+            110,
+            110
           ],
           "words": 88,
           "hash": "0017ef0e46cf",
@@ -21325,8 +21512,8 @@
           "id": "sts.conclusion.b0082",
           "type": "paragraph",
           "lines": [
-            109,
-            109
+            112,
+            112
           ],
           "words": 70,
           "hash": "c16f4e6e00f7",
@@ -21336,8 +21523,8 @@
           "id": "sts.conclusion.b0126",
           "type": "paragraph",
           "lines": [
-            111,
-            111
+            114,
+            114
           ],
           "words": 79,
           "hash": "ca47257b011f",
@@ -21347,8 +21534,8 @@
           "id": "sts.conclusion.b0083",
           "type": "paragraph",
           "lines": [
-            113,
-            113
+            116,
+            116
           ],
           "words": 28,
           "hash": "db412eee44a5",
@@ -21358,8 +21545,8 @@
           "id": "sts.conclusion.b0084",
           "type": "paragraph",
           "lines": [
-            115,
-            115
+            118,
+            118
           ],
           "words": 25,
           "hash": "f3e3baed0df0",
@@ -21369,8 +21556,8 @@
           "id": "sts.conclusion.b0015",
           "type": "paragraph",
           "lines": [
-            117,
-            117
+            120,
+            120
           ],
           "words": 17,
           "hash": "09a2b3b93ab6",
@@ -21380,8 +21567,8 @@
           "id": "sts.conclusion.b0085",
           "type": "paragraph",
           "lines": [
-            119,
-            119
+            122,
+            122
           ],
           "words": 60,
           "hash": "34a3ccae9c2a",
@@ -21391,8 +21578,8 @@
           "id": "sts.conclusion.b0060",
           "type": "paragraph",
           "lines": [
-            121,
-            121
+            124,
+            124
           ],
           "words": 72,
           "hash": "734ddd573985",
@@ -21402,8 +21589,8 @@
           "id": "sts.conclusion.b0018",
           "type": "paragraph",
           "lines": [
-            123,
-            123
+            126,
+            126
           ],
           "words": 33,
           "hash": "e67b0d8ed14d",
@@ -21413,8 +21600,8 @@
           "id": "sts.conclusion.b0019",
           "type": "paragraph",
           "lines": [
-            125,
-            125
+            128,
+            128
           ],
           "words": 3,
           "hash": "d3a590965e0b",
@@ -21623,8 +21810,8 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
-      "next_ordinal": 193,
-      "words": 5711,
+      "next_ordinal": 194,
+      "words": 6000,
       "tombstones": [
         "sts.appendix-b.b0001",
         "sts.appendix-b.b0002",
@@ -23057,9 +23244,9 @@
             285,
             285
           ],
-          "words": 5,
-          "hash": "522c526c313c",
-          "preview": "## Sources for the retained epigraphs",
+          "words": 4,
+          "hash": "010a7f19635e",
+          "preview": "## Sources for the epigraphs",
           "level": 2
         },
         {
@@ -23069,9 +23256,9 @@
             287,
             287
           ],
-          "words": 37,
-          "hash": "ee39e84105b8",
-          "preview": "The entries below identify the work or institutional record supporting each attribution. A"
+          "words": 55,
+          "hash": "c39e6b216cd1",
+          "preview": "The entries below identify the work or institutional record supporting each attribution. T"
         },
         {
           "id": "sts.appendix-b.b0192",
@@ -23083,6 +23270,17 @@
           "words": 580,
           "hash": "588b9cc0217a",
           "preview": "- **Preface, Hunter S. Thompson:** Simon & Schuster's [description of Fear and Loathing at"
+        },
+        {
+          "id": "sts.appendix-b.b0193",
+          "type": "list",
+          "lines": [
+            305,
+            311
+          ],
+          "words": 272,
+          "hash": "6c00effbda7f",
+          "preview": "- **Introduction, Upton Sinclair:** *I, Candidate for Governor: And How I Got Licked* (193"
         }
       ]
     },

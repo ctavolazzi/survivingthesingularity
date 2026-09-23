@@ -93,6 +93,8 @@ A machine that prints a wall hasn't provided a home. A model that predicts a pro
 
 Free doesn't mean costless, either. People, equipment, energy, maintenance, and delivery still have to be paid for. Free means the person receiving the baseline doesn't have to produce money before they can eat. The question is how to arrange dependable provision, not how to make an invoice vanish. That takes workers, growers, neighbors, public institutions, and businesses willing to supply a service on terms people can rely on. We'll argue about ownership and funding. Good. Let's have those arguments while feeding people, not make winning them a condition for starting.
 
+I'll tell you where I stand, because you'll find out anyway. We need to move away from money as a system of control, as the thing that decides who gets fed. That's the most radical idea in this book. I've turned it over every way I know how, and I don't believe we survive this as a species if staying alive keeps running through money. You don't have to go that far with me. You only have to agree that nobody should go hungry while we argue about it.
+
 This is the roadmap. These are the nine stages. And we're already inside the first one.
 
 ![The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge](/book-images/intro-nine-stages.svg)

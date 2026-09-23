@@ -64,6 +64,8 @@ Marta looked at him for another second. Then she picked up a push broom leaning 
 
 ## The part we get to decide
 
+So is it a done deal? My answer, for the record, is yes. I think we're already inside the Singularity, and my evidence is sitting on a desk: a model that does real intellectual work, running on consumer hardware, with no data center behind it. You don't have to agree with me. This chapter works either way, because the part that matters, what happens next, isn't done at all.
+
 Elijah arrives with a forecast. Marta has a workshop, a history, and a bill for the welding gas. They need things from each other, but first he has to stop confusing his prediction with her future.
 
 It's an easy mistake. Show someone a machine doing something remarkable and the conversation leaps straight to what society must become. But capability, deployment, ownership, and access are different events. A tool can get better while its price goes up. A company can increase output while cutting payroll. A town can contain a productive farm and people who can't afford its food.

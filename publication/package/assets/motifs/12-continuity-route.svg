@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">A route and an alternative</title>
+  <desc id="desc">Two routes through contoured ground join the same endpoints; one has a visible break. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#202c28" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M45 202C84 218 124 222 162 210C193 200 209 206 237 214C275 225 309 221 352 201" stroke="#66764e" stroke-width="4.2"/>
+<path d="M49 225C92 237 142 235 177 223M257 231C294 234 326 228 354 213" stroke="#66764e" stroke-width="4.2"/>
+<path d="M45 113C81 113 106 95 135 63C157 39 184 39 207 58M266 62C296 50 326 58 351 80" stroke="#66764e" stroke-width="4.2"/>
+<path d="M53 87C86 84 98 67 121 43M281 39C312 35 337 43 354 53" stroke="#66764e" stroke-width="4.2"/>
+<circle cx="84" cy="176" r="9" stroke="#202c28" fill="none"/>
+<circle cx="320" cy="119" r="9" stroke="#202c28" fill="none"/>
+<path d="M91 169C124 144 155 150 177 171M211 188C250 193 290 161 315 127" stroke="#202c28" stroke-width="4.2"/>
+<path d="M86 167C94 135 116 115 143 100C177 80 211 88 240 109C265 127 287 134 311 122" stroke="#202c28" stroke-width="4.2"/>
+<circle cx="181" cy="176" r="3" stroke="#202c28" fill="#202c28"/>
+<circle cx="203" cy="186" r="3" stroke="#202c28" fill="#202c28"/>
+<path d="M182 222C187 210 195 204 205 201" stroke="#66764e" stroke-width="4.2"/>
+<path d="M192 210C179 208 176 200 178 192M198 205C210 209 219 201 222 192" stroke="#66764e" stroke-width="4.2"/>
+  </g>
+</svg>

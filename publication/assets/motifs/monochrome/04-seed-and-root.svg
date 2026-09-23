@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">A seed becoming a plant</title>
+  <desc id="desc">A small seed opens into paired leaves and a branching root system across the ground line. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#000000" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M64 145C102 142 127 147 156 145M237 145C272 142 305 147 338 144" stroke="#000000" stroke-width="4.2"/>
+<path d="M190 142C170 128 178 111 197 110C217 114 223 132 204 145" stroke="#000000" stroke-width="4.2"/>
+<path d="M198 128C201 104 197 81 203 52" stroke="#000000" stroke-width="4.2"/>
+<path d="M201 96C175 97 153 81 150 61C180 61 198 76 201 96Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M202 76C226 81 246 66 253 43C227 43 208 53 202 76Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M194 138C194 160 180 175 179 196C178 208 181 219 185 228" stroke="#000000" stroke-width="4.2"/>
+<path d="M191 157C210 163 221 178 225 198C228 211 233 220 241 227" stroke="#000000" stroke-width="4.2"/>
+<path d="M184 177C161 177 149 188 140 207M158 185L146 178M150 194L153 207" stroke="#000000" stroke-width="4.2"/>
+<path d="M182 199C166 202 162 215 155 226M216 177C237 175 252 184 267 200" stroke="#000000" stroke-width="4.2"/>
+<path d="M238 181L246 169M253 190L264 184M225 199L213 213" stroke="#000000" stroke-width="4.2"/>
+<circle cx="104" cy="173" r="2.5" stroke="#000000" fill="#000000"/>
+<circle cx="296" cy="173" r="2.5" stroke="#000000" fill="#000000"/>
+<path d="M91 200L104 198" stroke="#000000"/>
+<path d="M290 221L304 223" stroke="#000000"/>
+  </g>
+</svg>

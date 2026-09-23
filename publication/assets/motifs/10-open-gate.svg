@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">An open garden gate</title>
+  <desc id="desc">A garden gate opens toward a curved path; posts and living branches frame the entrance. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#202c28" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M90 223V84L102 75L114 84V223M286 223V84L298 75L310 84V223" stroke="#202c28" stroke-width="4.2"/>
+<path d="M115 99L213 62V178L115 216M115 112L213 76M115 196L213 158" stroke="#202c28" stroke-width="4.2"/>
+<path d="M142 99V184M171 88V173M115 118L212 153" stroke="#202c28" stroke-width="4.2"/>
+<circle cx="122" cy="109" r="3" stroke="#202c28" fill="none"/>
+<circle cx="122" cy="197" r="3" stroke="#202c28" fill="none"/>
+<path d="M202 116V134" stroke="#202c28" stroke-width="4.2"/>
+<path d="M48 115H89M48 159H89M311 115H354M311 159H354" stroke="#202c28" stroke-width="4.2"/>
+<path d="M187 232C201 207 236 190 257 170C272 156 272 142 260 130" stroke="#66764e" stroke-width="4.2"/>
+<path d="M233 232C245 214 267 195 278 176" stroke="#66764e" stroke-width="4.2"/>
+<path d="M73 220C66 204 62 190 61 171M64 190C48 189 44 180 43 172M69 205C81 202 85 193 85 184" stroke="#66764e" stroke-width="4.2"/>
+<path d="M324 220C331 204 335 190 336 171M333 190C348 187 352 180 353 171" stroke="#66764e" stroke-width="4.2"/>
+  </g>
+</svg>

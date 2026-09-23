@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">Grain and an open gripper</title>
+  <desc id="desc">A curved ear of grain meets the open fingers of an articulated machine. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#000000" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M135 219C142 189 154 151 171 105C177 86 181 63 179 42" stroke="#000000" stroke-width="4.2"/>
+<path d="M178 62C164 61 155 53 154 40C170 41 178 49 178 62Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M178 73C192 67 199 57 195 44C182 49 176 60 178 73Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M174 91C159 90 149 82 148 68C163 70 173 79 174 91Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M170 104C187 100 197 92 197 78C181 80 171 90 170 104Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M163 123C148 120 138 111 139 97C154 102 163 111 163 123Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M158 137C176 137 188 130 192 116C176 114 162 125 158 137Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M179 42L180 31M154 40L145 32M195 44L207 35M148 68L135 59M197 78L211 69M139 97L128 85M192 116L205 109" stroke="#000000" stroke-width="4.2"/>
+<path d="M146 183C124 173 115 156 113 142C132 152 143 166 146 183Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M148 175C166 170 180 157 188 143C166 148 152 162 148 175Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M258 220H322M272 220V199L293 182" stroke="#000000" stroke-width="4.2"/>
+<circle cx="295" cy="168" r="14" stroke="#000000" fill="none"/>
+<path d="M287 155L243 115M305 157L255 105" stroke="#000000" stroke-width="4.2"/>
+<circle cx="242" cy="103" r="13" stroke="#000000" fill="none"/>
+<path d="M230 97L212 89L188 99L184 114M231 110L215 122L191 125L177 116" stroke="#000000" stroke-width="4.2"/>
+<path d="M202 96L211 107L202 120" stroke="#000000" stroke-width="4.2"/>
+<path d="M305 179L310 194V220" stroke="#000000" stroke-width="4.2"/>
+<circle cx="295" cy="168" r="3" stroke="#000000" fill="#000000"/>
+<circle cx="242" cy="103" r="3" stroke="#000000" fill="#000000"/>
+  </g>
+</svg>

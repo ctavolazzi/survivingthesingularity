@@ -1,0 +1,7 @@
+# Bibliography additions: Preface and Conclusion
+
+Append-ready entries for integration into Appendix B. Do not duplicate existing Stoll or Vogrinčič entries.
+
+- **Austen, Jane.** *Northanger Abbey*. Chapters 5 and 25. Public-domain text, Project Gutenberg. [Read Chapter 5](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0005); [read Chapter 25](https://www.gutenberg.org/files/121/121-h/121-h.htm#link2HCH0025). Primary literary testimony for P01: the narrator's defense of novels and Catherine's later recognition of mistaken inferences. Fiction, not a record of real incidents.
+- **Stoll, Clifford.** 1995 Newsweek essay excerpt, "The Internet? Bah! Why Cyberspace isn't and Never Will Be Nirvana." *Imagining the Internet*, Elon University. [Archived excerpt](https://www.elon.edu/u/imagining/expert_predictions/the-internet-bah-why-cyberspace-isnt-and-never-will-be-nirvana/). Additional access point for P23, preserving an attributed passage of Stoll's actual essay. Use alongside, not in place of, the existing publisher citation; the complete publisher text was unavailable during this review.
+- **Smith, Tim, and François Flückiger.** "Licensing the Web." CERN. [Institutional history and reproduced release terms](https://home.cern/science/computing/the-birth-of-the-web/licensing-web/). P23: CERN's April 30, 1993 public-domain release of three Web software components and the 1994 server release under a permissive license. These decisions concern particular software, not universal free internet access.

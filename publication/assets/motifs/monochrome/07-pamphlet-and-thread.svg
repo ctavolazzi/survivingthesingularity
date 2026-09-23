@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">A stitched pamphlet</title>
+  <desc id="desc">An open, hand-stitched pamphlet shows its folds and thread, without simulated writing. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#000000" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M73 67C113 62 159 73 200 96C241 73 287 62 327 67L319 190C281 187 243 194 202 217C159 194 121 187 81 190Z" stroke="#000000" stroke-width="4.2"/>
+<path d="M200 97L202 216M73 77L63 82L72 203C119 198 158 207 201 228C244 207 282 198 328 203L337 82L327 77" stroke="#000000" stroke-width="4.2"/>
+<path d="M101 83C131 84 154 91 178 102M100 173C128 173 152 179 179 191" stroke="#000000" stroke-width="4.2"/>
+<path d="M222 103C249 91 273 84 302 83M224 191C251 179 275 173 302 173" stroke="#000000" stroke-width="4.2"/>
+<circle cx="200" cy="117" r="3" stroke="#000000" fill="#000000"/>
+<circle cx="201" cy="147" r="3" stroke="#000000" fill="#000000"/>
+<circle cx="201" cy="178" r="3" stroke="#000000" fill="#000000"/>
+<path d="M200 117C185 126 215 137 201 147C186 157 215 168 201 178C193 188 188 212 173 225C151 242 135 230 149 216C158 207 174 221 160 236" stroke="#000000" stroke-width="4.2"/>
+<path d="M249 142C262 132 278 119 287 102M264 128C251 126 248 118 250 111M277 114C287 116 297 110 300 102" stroke="#000000" stroke-width="4.2"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">Repair tools and a loose washer</title>
+  <desc id="desc">An open-ended wrench, a screwdriver and a loose washer make a small working still life. Original publication ornament for Surviving the Singularity.</desc>
+  <g fill="none" stroke="#202c28" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M128 215C121 222 109 215 114 206L217 101C204 84 211 63 230 57L221 80L235 94L258 86C251 106 232 115 222 111L128 215Z" stroke="#202c28" stroke-width="4.2"/>
+<path d="M128 200L205 122" stroke="#202c28" stroke-width="4.2"/>
+<circle cx="122" cy="209" r="3" stroke="#202c28" fill="none"/>
+<path d="M146 52L161 56L170 73L159 85L142 76L137 62Z" stroke="#202c28" stroke-width="4.2"/>
+<path d="M164 79L248 170M155 89L238 178" stroke="#202c28" stroke-width="4.2"/>
+<path d="M248 165L273 185C283 195 285 212 277 220C268 229 253 225 244 215L225 190Z" stroke="#202c28" stroke-width="4.2"/>
+<path d="M243 187L266 211M252 179L276 203" stroke="#202c28" stroke-width="4.2"/>
+<circle cx="309" cy="178" r="18" stroke="#202c28" fill="none"/>
+<circle cx="309" cy="178" r="7" stroke="#202c28" fill="none"/>
+<path d="M68 168C83 152 90 136 90 117" stroke="#66764e" stroke-width="4.2"/>
+<path d="M82 149C66 148 61 137 62 127C78 133 83 140 82 149Z" stroke="#66764e" stroke-width="4.2"/>
+<path d="M89 131C103 132 115 123 118 112C103 113 93 120 89 131Z" stroke="#66764e" stroke-width="4.2"/>
+  </g>
+</svg>

@@ -1,0 +1,74 @@
+{
+  "title": "Surviving the Singularity: original publication motifs",
+  "viewBox": [
+    0,
+    0,
+    400,
+    260
+  ],
+  "colors": {
+    "ink": "#202c28",
+    "olive": "#66764e"
+  },
+  "stroke_svg_units": 4.2,
+  "stroke_at_two_inches_pt": 1.5120000000000002,
+  "authoring": "Original geometry authored for this publication; no tracing, external fonts or embedded assets.",
+  "assets": [
+    {
+      "file": "01-grain-and-gripper.svg",
+      "title": "Grain and an open gripper",
+      "description": "A curved ear of grain meets the open fingers of an articulated machine."
+    },
+    {
+      "file": "02-event-horizon.svg",
+      "title": "An uncertain horizon",
+      "description": "Curved orbital lines pass around an open circular center; a speculative astronomical metaphor."
+    },
+    {
+      "file": "03-centrifugal-governor.svg",
+      "title": "A centrifugal governor",
+      "description": "Two weighted arms, a sliding collar and a spindle suggest regulation and feedback."
+    },
+    {
+      "file": "04-seed-and-root.svg",
+      "title": "A seed becoming a plant",
+      "description": "A small seed opens into paired leaves and a branching root system across the ground line."
+    },
+    {
+      "file": "05-roof-and-joint.svg",
+      "title": "A roof and its joint",
+      "description": "Open timber framing emphasizes the roof's supporting joints rather than a finished property."
+    },
+    {
+      "file": "06-shared-table.svg",
+      "title": "A shared table",
+      "description": "An oval table holds distinct bowls and a small stem, with seats around its open perimeter."
+    },
+    {
+      "file": "07-pamphlet-and-thread.svg",
+      "title": "A stitched pamphlet",
+      "description": "An open, hand-stitched pamphlet shows its folds and thread, without simulated writing."
+    },
+    {
+      "file": "08-water-pump.svg",
+      "title": "A pump and its water",
+      "description": "A hand-operated pump with a curved lever releases water above a small, open ripple."
+    },
+    {
+      "file": "09-repair-tools.svg",
+      "title": "Repair tools and a loose washer",
+      "description": "An open-ended wrench, a screwdriver and a loose washer make a small working still life."
+    },
+    {
+      "file": "11-soil-profile.svg",
+      "title": "Roots and a depth probe",
+      "description": "A root system and an unnumbered three-level probe cross an uneven soil section."
+    },
+    {
+      "file": "12-continuity-route.svg",
+      "title": "A route and an alternative",
+      "description": "Two routes through contoured ground join the same endpoints; one has a visible break."
+    }
+  ],
+  "package_note": "Only referenced motifs are bundled. Cover artwork is assets/cover-art.svg."
+}

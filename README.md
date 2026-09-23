@@ -5,6 +5,12 @@
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
 **Status:** Open draft. Book ships when it ships. Site updates as the world does.
 
+**Publication design, September 22, 2026:** v0.8.2 now has a 6 x 9 illustrated
+reading edition, a grayscale print interior, original SVG artwork, packaged
+fonts, and documented visual and rights reviews. Start with the
+[design report](docs/publication/DESIGN-REPORT.md) or the
+[production instructions](publication/README.md).
+
 ---
 
 **Editing the book?** The single source of truth is

@@ -1,0 +1,652 @@
+{
+  "schema": "sts-editable-publication-package/v1",
+  "manuscript_version": "0.8.2",
+  "weasyprint_version": "68.1",
+  "diagnostic_image_placeholders": [
+    "part1-divider.png",
+    "part2-divider.png",
+    "ch06-edmond-de-belamy.png",
+    "part3-divider.png",
+    "ch10-nyse.jpg",
+    "ch12-farmbot.jpg",
+    "ch12-farmbot-watering.jpg"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "3ae175bb73e7f907fbcde9cd6ea4c14b95d909962d41be31661c59cb93e805b2",
+      "bytes": 3845,
+      "origin": "Generated portable production handoff"
+    },
+    {
+      "path": "assets/cover-art.svg",
+      "sha256": "7b51487844465d32fce3ad8be969ea6f2338afc7777a5db899f7bd2001edf225",
+      "bytes": 17736,
+      "origin": "publication/assets/cover-art.svg"
+    },
+    {
+      "path": "assets/fonts/FONT-COPYRIGHTS.txt",
+      "sha256": "0f7f709d8538b6524f0b5719f040bc13e089f2a232f4c69491e42960c33d2e79",
+      "bytes": 1003,
+      "origin": "publication/assets/fonts/FONT-COPYRIGHTS.txt"
+    },
+    {
+      "path": "assets/fonts/SOURCES.md",
+      "sha256": "5f730c60445ca49c8136916a3ba19fddf25b68b89f5f75580a7b1c22df5c9d7e",
+      "bytes": 7073,
+      "origin": "publication/assets/fonts/SOURCES.md"
+    },
+    {
+      "path": "assets/fonts/SourceSansPro-LICENSE.txt",
+      "sha256": "4a4a4179a96b5ef6786186d199f0d049b151352f460b8d2f3c00083792f37dd9",
+      "bytes": 4529,
+      "origin": "publication/assets/fonts/SourceSansPro-LICENSE.txt"
+    },
+    {
+      "path": "assets/fonts/SourceSansPro-Regular.otf",
+      "sha256": "7134d229b15cdd0827376d8a24f6f531f616eb1b3fecd16e1cf8a86d0bf6bc51",
+      "bytes": 293200,
+      "origin": "publication/assets/fonts/SourceSansPro-Regular.otf"
+    },
+    {
+      "path": "assets/fonts/SourceSansPro-RegularIt.otf",
+      "sha256": "d38e0d70cd4f4aa072457c5ae647b987f10c3cea34bff581ee358a7c2a526053",
+      "bytes": 208408,
+      "origin": "publication/assets/fonts/SourceSansPro-RegularIt.otf"
+    },
+    {
+      "path": "assets/fonts/SourceSansPro-Semibold.otf",
+      "sha256": "aa53ed4fc17334a0c2ee8412c1e4e728bfb732a96b119164f7354343dad8f2f2",
+      "bytes": 295952,
+      "origin": "publication/assets/fonts/SourceSansPro-Semibold.otf"
+    },
+    {
+      "path": "assets/fonts/SourceSansPro-SemiboldIt.otf",
+      "sha256": "cdeddc767fdb11770451c5fac8f98b7d343b7fc9604f9db5034f50f7f437047a",
+      "bytes": 210012,
+      "origin": "publication/assets/fonts/SourceSansPro-SemiboldIt.otf"
+    },
+    {
+      "path": "assets/fonts/SourceSerif4-It.otf",
+      "sha256": "f8062257f4693e438a8e317c9fe2b4393f0d4eed84d897edcbfd733c30a1c1a1",
+      "bytes": 169132,
+      "origin": "publication/assets/fonts/SourceSerif4-It.otf"
+    },
+    {
+      "path": "assets/fonts/SourceSerif4-LICENSE.md",
+      "sha256": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464",
+      "bytes": 4491,
+      "origin": "publication/assets/fonts/SourceSerif4-LICENSE.md"
+    },
+    {
+      "path": "assets/fonts/SourceSerif4-Regular.otf",
+      "sha256": "edf160d0d584deee8a3bb2c3371b2a7624ca63580fbe02c57c1f4c91e84d8787",
+      "bytes": 241392,
+      "origin": "publication/assets/fonts/SourceSerif4-Regular.otf"
+    },
+    {
+      "path": "assets/fonts/SourceSerif4-Semibold.otf",
+      "sha256": "25e034392847d9965c92f98971b3646436b7ab919ece9118b0c0e5ec94c02efc",
+      "bytes": 252852,
+      "origin": "publication/assets/fonts/SourceSerif4-Semibold.otf"
+    },
+    {
+      "path": "assets/fonts/font-provenance.json",
+      "sha256": "22270a22feeda2937488203f6ba708648773095f1bf6e3d5c6a086f6c175a974",
+      "bytes": 8597,
+      "origin": "publication/assets/fonts/font-provenance.json"
+    },
+    {
+      "path": "assets/images/ch00-madrone-bark.jpg",
+      "sha256": "73f29adb2dd4e27f79f85cabbd3e5b3b4f153318fc05a91d128ebd29e3f2221d",
+      "bytes": 966014,
+      "origin": "static/book-images/ch00-madrone-bark.jpg"
+    },
+    {
+      "path": "assets/images/ch01-atlas.jpg",
+      "sha256": "4bd77247b1a37d537c3036f0a2f821536e97186176661deecc296e45b377b0a9",
+      "bytes": 540540,
+      "origin": "static/book-images/ch01-atlas.jpg"
+    },
+    {
+      "path": "assets/images/ch01-m87-black-hole.jpg",
+      "sha256": "9479a85c6c9eb90d634c7b6703da98faa4e2cf10f4122491b503cade902e6f28",
+      "bytes": 69206,
+      "origin": "static/book-images/ch01-m87-black-hole.jpg"
+    },
+    {
+      "path": "assets/images/ch01-pc-rig.png",
+      "sha256": "8d4e4e29087770f5d6386d979acb604cdc1486d304939456ddae0b8b99564fbf",
+      "bytes": 21494,
+      "origin": "static/book-images/ch01-pc-rig.png"
+    },
+    {
+      "path": "assets/images/ch02-factory-robots.jpg",
+      "sha256": "10c765307473a80b4069a557c10805baeacf69119d43035f6d7408e4f1ed411f",
+      "bytes": 266894,
+      "origin": "static/book-images/ch02-factory-robots.jpg"
+    },
+    {
+      "path": "assets/images/ch03-falcon-heavy.jpg",
+      "sha256": "987e7f4547eefef240d8605533a9cc48fe129997a71d9d916e3c34042683a7c6",
+      "bytes": 417295,
+      "origin": "static/book-images/ch03-falcon-heavy.jpg"
+    },
+    {
+      "path": "assets/images/ch04-hubble-deep-field.jpg",
+      "sha256": "c66c7f08bff2dc7cb3aa6afc1699e9dd9bb667e33549d1e0798dd27ee8c32368",
+      "bytes": 750460,
+      "origin": "static/book-images/ch04-hubble-deep-field.jpg"
+    },
+    {
+      "path": "assets/images/ch05-sdo-sun.jpg",
+      "sha256": "bdad996f80c2c00a49c312cb2cd23697df8fe4434ae577af2a5e394dd2e91b17",
+      "bytes": 880095,
+      "origin": "static/book-images/ch05-sdo-sun.jpg"
+    },
+    {
+      "path": "assets/images/ch06-tool-wall.png",
+      "sha256": "572d7f0b04831b32db85f21b37a0abe34ab126ac3a11200800b00acfe4ecfb7f",
+      "bytes": 18070,
+      "origin": "static/book-images/ch06-tool-wall.png"
+    },
+    {
+      "path": "assets/images/ch07-chess-battle-lines.jpg",
+      "sha256": "e84aff20e5cc908e598b638dc69f43739a9daa6b49a44a41cc99743c6a5ca402",
+      "bytes": 783083,
+      "origin": "static/book-images/ch07-chess-battle-lines.jpg"
+    },
+    {
+      "path": "assets/images/ch08-sophia.jpg",
+      "sha256": "5e5c0c4ac1017cb5006af8b00018a84ce318f905ba0bd3320a39919f19465651",
+      "bytes": 101939,
+      "origin": "static/book-images/ch08-sophia.jpg"
+    },
+    {
+      "path": "assets/images/ch09-3d-printer.jpg",
+      "sha256": "bcb75cd2d4be36d180c81a5ec4675ebccccb90c1352daf745bee6cda0ebb590d",
+      "bytes": 1025582,
+      "origin": "static/book-images/ch09-3d-printer.jpg"
+    },
+    {
+      "path": "assets/images/ch09-controller.png",
+      "sha256": "a59200030013d620da77757a5219c2104bce9da1a6abc0439b79d89c393355cd",
+      "bytes": 17560,
+      "origin": "static/book-images/ch09-controller.png"
+    },
+    {
+      "path": "assets/images/ch09-reuben.png",
+      "sha256": "ea6519faef49fa98e8099983976dfa8bd37d77e900c91238d2d319f86528b38b",
+      "bytes": 23766,
+      "origin": "static/book-images/ch09-reuben.png"
+    },
+    {
+      "path": "assets/images/ch11-crucible.png",
+      "sha256": "cf0ae6e415947d30254b0accedda9fc47a9a8ddd4fa1b8fd6d6a1007acf1714c",
+      "bytes": 25647,
+      "origin": "static/book-images/ch11-crucible.png"
+    },
+    {
+      "path": "assets/images/ch11-spot.jpg",
+      "sha256": "7a91f3b7e54256bb55dd877b640e708013126903d3159523eb3f743b3dfb3ebb",
+      "bytes": 495134,
+      "origin": "static/book-images/ch11-spot.jpg"
+    },
+    {
+      "path": "assets/images/ch13-solar-barn.jpg",
+      "sha256": "46f2e5359770789dac4ce1e15551cbd881e8350dffd930e2bda5ecdb3e72a416",
+      "bytes": 758824,
+      "origin": "static/book-images/ch13-solar-barn.jpg"
+    },
+    {
+      "path": "assets/images/ch13-vise.png",
+      "sha256": "66523bd7955693fd7c2b96a897a765d16feca1cc44d65070683571f2ddfc3dbe",
+      "bytes": 21448,
+      "origin": "static/book-images/ch13-vise.png"
+    },
+    {
+      "path": "assets/images/ch14-bell.png",
+      "sha256": "d10ea5bd65e0a5b0a9f9e9ac3d74789032a87d36f7ee4c0f2d92174f621eee32",
+      "bytes": 19903,
+      "origin": "static/book-images/ch14-bell.png"
+    },
+    {
+      "path": "assets/images/ch14-dead-mall.jpg",
+      "sha256": "3c0060868c7083c58c5c9b4b3f4e3bee1fafa66d7f54b292eb33df4700b32c8b",
+      "bytes": 1113215,
+      "origin": "static/book-images/ch14-dead-mall.jpg"
+    },
+    {
+      "path": "assets/images/ch14-frank.png",
+      "sha256": "3b05b80f745ee3d404006a055cf2648e09619e96af6e4b10dbc9c52dae75d954",
+      "bytes": 25915,
+      "origin": "static/book-images/ch14-frank.png"
+    },
+    {
+      "path": "assets/images/ch15-probe.png",
+      "sha256": "7dda32a7598ee12541dff75aca9f8e668d1074ccb999d50cb175201aac789092",
+      "bytes": 13929,
+      "origin": "static/book-images/ch15-probe.png"
+    },
+    {
+      "path": "assets/images/ch16-servers.jpg",
+      "sha256": "fcb35fb42bae4aa0e9836102ca71ccdfe8029e2f8a11b968e9d4fc11e0e75725",
+      "bytes": 652230,
+      "origin": "static/book-images/ch16-servers.jpg"
+    },
+    {
+      "path": "assets/images/ch17-workbench.jpg",
+      "sha256": "f34ce3b6abec77123bb056184d6bad2ac529f4a314f5d6eb2be55b15683febcd",
+      "bytes": 1647235,
+      "origin": "static/book-images/ch17-workbench.jpg"
+    },
+    {
+      "path": "assets/images/ch18-compass-map.jpg",
+      "sha256": "697628618df180f891fe5922884fae79ebe9de500a717fe96aaa2bfa479c47ec",
+      "bytes": 930964,
+      "origin": "static/book-images/ch18-compass-map.jpg"
+    },
+    {
+      "path": "assets/images/ch19-iss-sunrise.jpg",
+      "sha256": "e4c0262c2f3cd6e95a69b878a3e0b1293c2a718ba883dce89863e42d3ec4aa52",
+      "bytes": 278174,
+      "origin": "static/book-images/ch19-iss-sunrise.jpg"
+    },
+    {
+      "path": "assets/images/conclusion-proofs.png",
+      "sha256": "c19346d7a53d20f58a8483f442fc1f5c1f14a51594bb7536830fae8528e1086c",
+      "bytes": 14868,
+      "origin": "static/book-images/conclusion-proofs.png"
+    },
+    {
+      "path": "assets/images/intro-asimo.jpg",
+      "sha256": "95f4c12e663734e49a9afac739c054e591a6c537ab2c513c3beee73789fe5260",
+      "bytes": 860432,
+      "origin": "static/book-images/intro-asimo.jpg"
+    },
+    {
+      "path": "assets/motifs/01-grain-and-gripper.svg",
+      "sha256": "4e6b2656faa759bba9cf5c6811bbf92b654233adab60fbad7468565494e17c31",
+      "bytes": 2201,
+      "origin": "publication/assets/motifs/01-grain-and-gripper.svg"
+    },
+    {
+      "path": "assets/motifs/02-event-horizon.svg",
+      "sha256": "4c5d1c8c960ba4dccf7e451abd58d87b3eae49fa442acda5ee3156fd83764d01",
+      "bytes": 1294,
+      "origin": "publication/assets/motifs/02-event-horizon.svg"
+    },
+    {
+      "path": "assets/motifs/03-centrifugal-governor.svg",
+      "sha256": "3b88abfb603452a697159d0e55ddbc6bcb9f833b05e8ce0434e6d924fa0b170e",
+      "bytes": 1619,
+      "origin": "publication/assets/motifs/03-centrifugal-governor.svg"
+    },
+    {
+      "path": "assets/motifs/04-seed-and-root.svg",
+      "sha256": "5f6945a19a3e2c782e453bf2d915925611183d514f69734fc15e1ce1940bf2cd",
+      "bytes": 1725,
+      "origin": "publication/assets/motifs/04-seed-and-root.svg"
+    },
+    {
+      "path": "assets/motifs/05-roof-and-joint.svg",
+      "sha256": "08b28f4b8870418e189744cb4294899d735233ca608c17b8817285dbd2209bd2",
+      "bytes": 1471,
+      "origin": "publication/assets/motifs/05-roof-and-joint.svg"
+    },
+    {
+      "path": "assets/motifs/06-shared-table.svg",
+      "sha256": "477dd95430e27938c6679c969f5d26d322e867d6229d651a48ea5bcdc312f6a4",
+      "bytes": 1712,
+      "origin": "publication/assets/motifs/06-shared-table.svg"
+    },
+    {
+      "path": "assets/motifs/07-pamphlet-and-thread.svg",
+      "sha256": "092df19fb5c61d03c389ef93335ee0d7b6a91a758c26d37d80eeb3bce61fdd32",
+      "bytes": 1502,
+      "origin": "publication/assets/motifs/07-pamphlet-and-thread.svg"
+    },
+    {
+      "path": "assets/motifs/08-water-pump.svg",
+      "sha256": "ecd4c88dab66ddb50e3efdf544f6631ff5af9fb43c586ed879a76c89c13c0041",
+      "bytes": 1553,
+      "origin": "publication/assets/motifs/08-water-pump.svg"
+    },
+    {
+      "path": "assets/motifs/09-repair-tools.svg",
+      "sha256": "3a59a9d6c0e5de162a7ab9d6b1136b484e90fe1de650ca1673e010b7c659ba66",
+      "bytes": 1549,
+      "origin": "publication/assets/motifs/09-repair-tools.svg"
+    },
+    {
+      "path": "assets/motifs/11-soil-profile.svg",
+      "sha256": "19b25925267bbf3494d53bbd9d29200018d816bfa3c0b05a317a4aab82f41e60",
+      "bytes": 2105,
+      "origin": "publication/assets/motifs/11-soil-profile.svg"
+    },
+    {
+      "path": "assets/motifs/12-continuity-route.svg",
+      "sha256": "9995164fbbff0139a7d39d0df6c7c46b33b8b10888cd1663b66b5da62fba7b64",
+      "bytes": 1624,
+      "origin": "publication/assets/motifs/12-continuity-route.svg"
+    },
+    {
+      "path": "assets/motifs/manifest.json",
+      "sha256": "d41c5304ab4bf3e1351e1b4587fccd31ae16afb45f6851d122be27a8cc87ab90",
+      "bytes": 2721,
+      "origin": "Filtered publication/assets/motifs/manifest.json"
+    },
+    {
+      "path": "assets/ornament.svg",
+      "sha256": "0e2d2c9ea8307c03ddfe57449eec2843dabb36e5df92e50b9e6e0e14758fa102",
+      "bytes": 203,
+      "origin": "publication/assets/ornament.svg"
+    },
+    {
+      "path": "audits/DESIGN-REPORT.md",
+      "sha256": "eb0e9f7d3a92a4c763d3f92d1a190e02b355d2b2b22e802c1302799b5bc88a84",
+      "bytes": 7164,
+      "origin": "docs/publication/DESIGN-REPORT.md"
+    },
+    {
+      "path": "audits/FINAL-VISUAL-REVIEW.md",
+      "sha256": "44031aa95e99fcb900876cde451016171dc0b3e10fc333ee5e9fb5cfd6dafd4d",
+      "bytes": 7220,
+      "origin": "docs/publication/FINAL-VISUAL-REVIEW.md"
+    },
+    {
+      "path": "audits/PDF-RESOURCE-CHECKS.json",
+      "sha256": "d9fe35068a09aef8338b892e6bed0d43cac4c5dfee5b66c140ff0d5f483a8f5f",
+      "bytes": 14317,
+      "origin": "docs/publication/PDF-RESOURCE-CHECKS.json"
+    },
+    {
+      "path": "audits/PDF-RESOURCE-CHECKS.md",
+      "sha256": "2a5e33a64ac8dc23ebad426f099e3ea0fa0e00317e61c9b561afca2a5796debd",
+      "bytes": 2822,
+      "origin": "docs/publication/PDF-RESOURCE-CHECKS.md"
+    },
+    {
+      "path": "audits/PLAN.md",
+      "sha256": "3c2985c5daa2cd1aef070bbbfb1f820c8056c7ed12de35ce4394012e9d042e16",
+      "bytes": 2331,
+      "origin": "docs/publication/PLAN.md"
+    },
+    {
+      "path": "audits/READING-DESIGN-REVIEW.md",
+      "sha256": "c215e0cc3c422c2da4041e1aa9f037a1dd185a594c56031c7af84d1174ac69cf",
+      "bytes": 19314,
+      "origin": "docs/publication/READING-DESIGN-REVIEW.md"
+    },
+    {
+      "path": "audits/RIGHTS-AUDIT.md",
+      "sha256": "4019073e91d640db5a0b1e2dfcc2dadd3c4327d755f47820fdc3e12489e1c785",
+      "bytes": 24179,
+      "origin": "docs/publication/RIGHTS-AUDIT.md"
+    },
+    {
+      "path": "audits/VISUAL-MAP.md",
+      "sha256": "d010747fe2ee336fba2522600e564f185d42d7c050834349fb1a508c241917ec",
+      "bytes": 12508,
+      "origin": "docs/publication/VISUAL-MAP.md"
+    },
+    {
+      "path": "audits/asset-rights.json",
+      "sha256": "f69586d97bc49d789d98723a410cd5536d9c40f7954c789f369b8a48b51fe09e",
+      "bytes": 102689,
+      "origin": "docs/publication/asset-rights.json"
+    },
+    {
+      "path": "audits/baseline.json",
+      "sha256": "033825a2774e9295b95096aaeffdff3d4f0f7c54c9a5bf0d61434242a23b29dc",
+      "bytes": 2673,
+      "origin": "docs/publication/baseline.json"
+    },
+    {
+      "path": "book.css",
+      "sha256": "bdda984d9b02068ddefb7830ed3eae233f799abc1377e051817bff1907853030",
+      "bytes": 10441,
+      "origin": "publication/book.css"
+    },
+    {
+      "path": "build.json",
+      "sha256": "07b14d36f7c698d1590e76d90baffa9ac75b554855751ed14003c566cf275bfd",
+      "bytes": 10124,
+      "origin": "publication/output/build.json with portable PDF paths"
+    },
+    {
+      "path": "front-cover.html",
+      "sha256": "a54fe41ee20c93ec551810c6b129c92f52a41125c981ec629ef08e277041d023",
+      "bytes": 621,
+      "origin": "publication/output/front-cover.html"
+    },
+    {
+      "path": "interior.html",
+      "sha256": "a401a15cbdac3421fd46f7d7a8a2bba8735a4c24fd2ad17cb998e8b8b937c3cb",
+      "bytes": 424136,
+      "origin": "publication/output/interior.html"
+    },
+    {
+      "path": "manuscript/00-chapter0.md",
+      "sha256": "15fda8ebd8369bd868fbba1ca7326c9a3b1bcf7f8ad5e5a2e1e2faadb8e171af",
+      "bytes": 21435,
+      "origin": "src/lib/data/book/00-chapter0.md"
+    },
+    {
+      "path": "manuscript/01-preface.md",
+      "sha256": "50aca4615f45a113c976e014f67cd846d2a3a6535d5c0ecad070fa86fad054ab",
+      "bytes": 5540,
+      "origin": "src/lib/data/book/01-preface.md"
+    },
+    {
+      "path": "manuscript/02-introduction.md",
+      "sha256": "89cbc6e56af8f656bbafcf41946b9f259cdbd855289ed352139e063893eb1798",
+      "bytes": 9174,
+      "origin": "src/lib/data/book/02-introduction.md"
+    },
+    {
+      "path": "manuscript/03-chapter1.md",
+      "sha256": "c4250d0e0fae562dd0fd4ac112151151a10ebe0e1fbba3cc86f66ffb2f75ea4d",
+      "bytes": 11840,
+      "origin": "src/lib/data/book/03-chapter1.md"
+    },
+    {
+      "path": "manuscript/04-chapter2.md",
+      "sha256": "4b72144de11830c2f15d4b94570487a43e375e6267c581cd95219d1450069fd7",
+      "bytes": 13587,
+      "origin": "src/lib/data/book/04-chapter2.md"
+    },
+    {
+      "path": "manuscript/05-chapter3.md",
+      "sha256": "d65d469f870680f298df3332955fd8fd3b32ab0cd70a92ba578e04292bf7a039",
+      "bytes": 12973,
+      "origin": "src/lib/data/book/05-chapter3.md"
+    },
+    {
+      "path": "manuscript/06-chapter4.md",
+      "sha256": "88c1871b62965417f35f64a4d77b1ef51f87b4570e5f2c3ba9864cddd8138571",
+      "bytes": 11667,
+      "origin": "src/lib/data/book/06-chapter4.md"
+    },
+    {
+      "path": "manuscript/07-chapter5.md",
+      "sha256": "cbc4d15d7ccb91d35acc259a54e9eacd49d5439c6c45cd02fe10f959389fcf2f",
+      "bytes": 11995,
+      "origin": "src/lib/data/book/07-chapter5.md"
+    },
+    {
+      "path": "manuscript/08-chapter6.md",
+      "sha256": "d4caf629a89550ce01093eabac468879fbdea4305e8c6c97b69731a86655faa9",
+      "bytes": 14818,
+      "origin": "src/lib/data/book/08-chapter6.md"
+    },
+    {
+      "path": "manuscript/09-chapter7.md",
+      "sha256": "112c3e5c0ecb41aa0669505f91eb7d7e6f89815ba531ea53a76c4d37efe77672",
+      "bytes": 19977,
+      "origin": "src/lib/data/book/09-chapter7.md"
+    },
+    {
+      "path": "manuscript/10-chapter8.md",
+      "sha256": "bc8133f5f17ce2801eaeadf2b00bb70a5ffc6f6cf2531c89da4f97bbfbe70d64",
+      "bytes": 14090,
+      "origin": "src/lib/data/book/10-chapter8.md"
+    },
+    {
+      "path": "manuscript/11-chapter9.md",
+      "sha256": "57342e6b4de45e3df7530613bf8824a173c0778c8c45ef43dc8940368c944fd3",
+      "bytes": 18906,
+      "origin": "src/lib/data/book/11-chapter9.md"
+    },
+    {
+      "path": "manuscript/12-chapter10.md",
+      "sha256": "273b8913249ef29a7477ac1c087c0735db3fe7b41f447a697904283838f70b7b",
+      "bytes": 12409,
+      "origin": "src/lib/data/book/12-chapter10.md"
+    },
+    {
+      "path": "manuscript/13-chapter11.md",
+      "sha256": "d7f66b5b9f499b2119e7d50bde89177cabccae7074396a21bb09a66b9e0661a1",
+      "bytes": 20723,
+      "origin": "src/lib/data/book/13-chapter11.md"
+    },
+    {
+      "path": "manuscript/14-chapter12.md",
+      "sha256": "64cb46fa123c3a4a2bcc365f773456f01ba396315756e6f8d7fc63b74ab17bfa",
+      "bytes": 16089,
+      "origin": "src/lib/data/book/14-chapter12.md"
+    },
+    {
+      "path": "manuscript/15-chapter13.md",
+      "sha256": "c2ca60944a3b9fe6d6dbcc42cef87da643238e3c88c09bad19c85cb1cb6761d7",
+      "bytes": 14264,
+      "origin": "src/lib/data/book/15-chapter13.md"
+    },
+    {
+      "path": "manuscript/16-chapter14.md",
+      "sha256": "58e0a87f26dc5b3898395ca4f5929a3b174b481590b06f065478d17e64476bfd",
+      "bytes": 16248,
+      "origin": "src/lib/data/book/16-chapter14.md"
+    },
+    {
+      "path": "manuscript/17-chapter15.md",
+      "sha256": "03c01d35521e447e7002e8948b6eb4c1f49fed9a594d2058cbfcf34bbf7df1ad",
+      "bytes": 14073,
+      "origin": "src/lib/data/book/17-chapter15.md"
+    },
+    {
+      "path": "manuscript/18-chapter16.md",
+      "sha256": "86b5a4e46191076f671a68663be805ab412588a2a8b506de8107e3ab717cc848",
+      "bytes": 13889,
+      "origin": "src/lib/data/book/18-chapter16.md"
+    },
+    {
+      "path": "manuscript/19-chapter17.md",
+      "sha256": "3558032aa1c79d52e845be6f9fbb6c08ad10a56d13867cedee7855b5b015e343",
+      "bytes": 14024,
+      "origin": "src/lib/data/book/19-chapter17.md"
+    },
+    {
+      "path": "manuscript/20-chapter18.md",
+      "sha256": "2563bec7fd5cd85f21097f53ec88f585d46c1849c2ab71fac4c757c157f88757",
+      "bytes": 20481,
+      "origin": "src/lib/data/book/20-chapter18.md"
+    },
+    {
+      "path": "manuscript/21-conclusion.md",
+      "sha256": "f099a7d3575f62487cd23b5a9b4a1336de031b8c2b0648a65afc53d649df5d9c",
+      "bytes": 12495,
+      "origin": "src/lib/data/book/21-conclusion.md"
+    },
+    {
+      "path": "manuscript/22-appendix-a.md",
+      "sha256": "c55fd6cbdbbe2b7238679fbf5da1ebe6522c4075eb2bf5e79ec2ec506631b127",
+      "bytes": 3016,
+      "origin": "src/lib/data/book/22-appendix-a.md"
+    },
+    {
+      "path": "manuscript/23-appendix-b.md",
+      "sha256": "d09d30f0380f60771acaaf0815cbcdc2b8d0a9f6e99f4a5a8896fb8b85cbd4c2",
+      "bytes": 34685,
+      "origin": "src/lib/data/book/23-appendix-b.md"
+    },
+    {
+      "path": "manuscript/24-appendix-c.md",
+      "sha256": "bdf143ba8ba5bf395fe216c0061dc344bbdc0c7a6010f1f868489aef69b4f226",
+      "bytes": 2772,
+      "origin": "src/lib/data/book/24-appendix-c.md"
+    },
+    {
+      "path": "manuscript/25-appendix-d.md",
+      "sha256": "9dc3ac267040ac872cfb693de5fb9e69e86c53c4e4b9d550b1748a745adfddb0",
+      "bytes": 4124,
+      "origin": "src/lib/data/book/25-appendix-d.md"
+    },
+    {
+      "path": "manuscript/26-appendix-e.md",
+      "sha256": "cd357be297786c07f616216538944bd4580b4d186efa6dd934b6d5ff4a5af413",
+      "bytes": 2609,
+      "origin": "src/lib/data/book/26-appendix-e.md"
+    },
+    {
+      "path": "manuscript/baseline-sha256.json",
+      "sha256": "971a9e9118334fccbce1df6b0018090c859fafb57aaf4ed8de339e9786c2d32b",
+      "bytes": 2756,
+      "origin": "Reviewed section baseline plus packaged manifest checksum"
+    },
+    {
+      "path": "manuscript/book.json",
+      "sha256": "57dcdbd35986ffddee141249f9f591dd4d9694194586cda1f06759ad24109f88",
+      "bytes": 4115,
+      "origin": "src/lib/data/book/book.json"
+    },
+    {
+      "path": "manuscript/part1-divider.md",
+      "sha256": "abff74f5761e2cec082d0cae571fbbdf61bf67cd6cddee2586e62a50de686904",
+      "bytes": 415,
+      "origin": "src/lib/data/book/part1-divider.md"
+    },
+    {
+      "path": "manuscript/part2-divider.md",
+      "sha256": "dbf42bd92d3c273d1c3fb0ffbfdfe3406ede542916c0854c7626ce5097800590",
+      "bytes": 678,
+      "origin": "src/lib/data/book/part2-divider.md"
+    },
+    {
+      "path": "manuscript/part3-divider.md",
+      "sha256": "b5a3f42e3f3db749e7f3ac626b6294a5464b4ab7c09faceb0ead277a665e35a0",
+      "bytes": 728,
+      "origin": "src/lib/data/book/part3-divider.md"
+    },
+    {
+      "path": "pdfs/Surviving-the-Singularity-front-cover.pdf",
+      "sha256": "d394a10ace35e566da9b3ba6515b180ee594df5edb051396eb8ac603cf864cb5",
+      "bytes": 312390,
+      "origin": "publication/output/Surviving-the-Singularity-front-cover.pdf"
+    },
+    {
+      "path": "pdfs/Surviving-the-Singularity-interior.pdf",
+      "sha256": "554e9988db2d765da6f99b99d16e2f9b67cedba36052f39e160ce67989ad5c7d",
+      "bytes": 13157810,
+      "origin": "publication/output/Surviving-the-Singularity-interior.pdf"
+    },
+    {
+      "path": "pdfs/Surviving-the-Singularity-print-interior.pdf",
+      "sha256": "92de382066ba06acf9eb4ddf088a17fd792895bf7e8af711c879a61c25eab1c0",
+      "bytes": 7718646,
+      "origin": "publication/output/Surviving-the-Singularity-print-interior.pdf"
+    },
+    {
+      "path": "pdfs/Surviving-the-Singularity-reading.pdf",
+      "sha256": "4d8e4a441cf2e476ee45d0ab77bde8028cd4da9c0305e2ac111196241ac11c9e",
+      "bytes": 13696456,
+      "origin": "publication/output/Surviving-the-Singularity-reading.pdf"
+    },
+    {
+      "path": "source-rendered.html",
+      "sha256": "a8aac9c55971c3278848da970f8ac3b2973b6d77124debe266ecef74c06072a6",
+      "bytes": 404646,
+      "origin": "publication/output/source-rendered.html"
+    }
+  ]
+}

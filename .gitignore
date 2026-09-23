@@ -88,3 +88,8 @@ promo/**/.cvcache/
 
 # video render caches (regenerable)
 .cvcache/
+
+# Publication build outputs: regenerable, archived outside git
+publication/output/
+publication/package/pdfs/
+__pycache__/

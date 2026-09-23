@@ -1,0 +1,23 @@
+Font copyright notices extracted from the packaged font binaries.
+The original OFL license texts are supplied separately and remain unchanged.
+
+SourceSansPro-Regular.otf
+© 2010 - 2019 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+
+SourceSansPro-RegularIt.otf
+© 2010 - 2019 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+
+SourceSansPro-Semibold.otf
+© 2010 - 2019 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+
+SourceSansPro-SemiboldIt.otf
+© 2010 - 2019 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+
+SourceSerif4-It.otf
+© 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+
+SourceSerif4-Regular.otf
+© 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+
+SourceSerif4-Semibold.otf
+© 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’.

@@ -66,13 +66,14 @@ For most of us, a global supply system does that heavy lifting out of sight. It 
 
 Here's a hard truth the tech-utopians skip: as an engine, you're not very efficient.
 
-| System | Typical Efficiency |
+| System | Share of the energy in that comes out as useful work |
 | :-- | :-: |
-| Human muscle (mechanical) | ~18% to 25% |
-| Diesel engine | ~35% to 40% |
-| Steam turbine | ~40% to 45% |
-| Combined-cycle gas plant | ~60% |
-| Electric motor | ~90% to 95% |
+| Human muscle (food chemistry to motion) | about 14% to 27% |
+| Combustion engine (small engines to large diesels) | about 10% to 50% |
+| Combined-cycle gas plant (fuel to electricity) | up to about 63% |
+| Electric motor, over 200 watts | about 70% to 99% |
+
+*Typical conversion efficiencies, as compiled in [Wikipedia, Energy conversion efficiency](https://en.wikipedia.org/wiki/Energy_conversion_efficiency). Ranges, not specifications: a particular machine can sit anywhere in its band.*
 
 You burn roughly 2,000 to 2,500 kilocalories a day to keep your heart pumping, your lungs moving, and your brain generating existential dread. That's about 100 watts of continuous power, the draw of an old incandescent bulb, and about twenty of those watts run your brain. To get them, you need proteins, carbohydrates, and fats that somebody had to grow, harvest, move, and cook.
 
@@ -100,11 +101,11 @@ Before we go any further into land and grids and agreements, I want to show you 
 
 You already met the novel panic at the end of the Preface. It had company.
 
-In 1816, *The Times* of London condemned an "indecent foreign dance" sweeping the ballrooms and warned parents to keep their daughters away from it. The dance was the **waltz**.
+In 1816, *The Times* of London condemned an "indecent foreign dance" sweeping the ballrooms and warned parents to keep their daughters away from it. The dance was the **waltz**. [The Times (July 1816), as quoted in John Hood, Hayek, Strauss, and the Political Waltz, FEE](https://fee.org/articles/hayek-strauss-and-the-political-waltz/)
 
-In the 1890s, when the safety bicycle let young women go where they pleased without a chaperone, some physicians warned of a condition called **"bicycle face,"** a strained, haggard expression supposedly caused by the effort of balancing. The thing actually on the move wasn't anybody's face. It was women's freedom of movement.
+In the 1890s, when the safety bicycle let young women go where they pleased without a chaperone, some physicians warned of a condition called **"bicycle face,"** a strained, haggard expression supposedly caused by the effort of balancing. The thing actually on the move wasn't anybody's face. It was women's freedom of movement. [McGill Office for Science and Society, The Moral and Medical Panic Over Bicycles](https://www.mcgill.ca/oss/article/history-did-you-know/moral-and-medical-panic-over-bicycles)
 
-In 1906, John Philip Sousa, the most famous musician in America, published "The Menace of Mechanical Music," warning that the phonograph would wither the human voice: "the vocal cords will be eliminated by a process of evolution." His own band was already one of the best-selling recording acts in the country.
+In 1906, John Philip Sousa, the most famous musician in America, published "The Menace of Mechanical Music," warning that the phonograph would wither the human voice: "the vocal cords will be eliminated by a process of evolution." His own band was already one of the best-selling recording acts in the country. [Sousa, The Menace of Mechanical Music (1906)](https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf)
 
 Then radio was rotting children's brains. Then comic books were, and the United States Senate held hearings about it. Then television. Then Dungeons & Dragons was Satanic, then video games were murder simulators, then the internet, then the phone, and now, right on schedule, the machine this book is about.
 

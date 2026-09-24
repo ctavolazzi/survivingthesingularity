@@ -78,7 +78,7 @@ That's the Apex. The end of the line, where the machine becomes the architect of
 
 The scenario forces an old question into the room: if a mind can run realities, are we in one?
 
-In 2003 the philosopher Nick Bostrom argued that at least one of three things must be true:
+In 2003 the philosopher Nick Bostrom argued that at least one of three things must be true: [Bostrom, Are You Living in a Computer Simulation? (2003)](https://simulation-argument.com/simulation.pdf)
 
 1. The fraction of human-level civilizations that reach a posthuman stage, able to run high-fidelity simulations of their ancestors, is very close to zero.
 2. The fraction of posthuman civilizations interested in running such simulations is very close to zero.
@@ -86,7 +86,7 @@ In 2003 the philosopher Nick Bostrom argued that at least one of three things mu
 
 If advanced civilizations have both the ability and the desire, simulated worlds would vastly outnumber the single real one, and you'd bet on being simulated.
 
-In 2020 the astronomer David Kipping ran the odds with more care, and his result cuts through the vertigo. His starting point is plain honesty: nobody has ever shown that simulating conscious beings is actually possible, so a fair calculation has to weigh that uncertainty instead of just counting hypothetical worlds. Collapse the trilemma to a two-horse race, either realities like ours produce simulations or they don't, and if they do, the arithmetic is brutal:
+In 2020 the astronomer David Kipping ran the odds with more care, and his result cuts through the vertigo. [Kipping, A Bayesian Approach to the Simulation Argument (2020)](https://www.mdpi.com/2218-1997/6/8/109) His starting point is plain honesty: nobody has ever shown that simulating conscious beings is actually possible, so a fair calculation has to weigh that uncertainty instead of just counting hypothetical worlds. Collapse the trilemma to a two-horse race, either realities like ours produce simulations or they don't, and if they do, the arithmetic is brutal:
 
 > $$P(\text{base reality} | \text{simulations exist}) = 1 / (N_{\text{sim}} + 1)$$
 

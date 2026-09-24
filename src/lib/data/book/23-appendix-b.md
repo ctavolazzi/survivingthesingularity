@@ -233,7 +233,7 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 
 ### Chapter 5: energy and the cyberdeck lineage
 
-- *The Times* (London), July 1816, on the waltz as an "indecent foreign dance," as quoted in histories of the dance.
+- *The Times* (London), July 1816, on the waltz as an "indecent foreign dance," as quoted in John Hood, [Hayek, Strauss, and the Political Waltz](https://fee.org/articles/hayek-strauss-and-the-political-waltz/), Foundation for Economic Education (2005). A secondary quotation; the 1816 issue itself was not inspected.
 - McGill Office for Science and Society, [The Moral and Medical Panic Over Bicycles](https://www.mcgill.ca/oss/article/history-did-you-know/moral-and-medical-panic-over-bicycles), on "bicycle face."
 - John Philip Sousa, ["The Menace of Mechanical Music"](https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf), *Appleton's Magazine* (1906), full text via MIT OpenCourseWare.
 - William Gibson, *Neuromancer* (1984), origin of the "cyberspace deck."

@@ -92,7 +92,7 @@ In 2007 Eliezer Yudkowsky did the sorting that makes the pile usable. Nearly eve
 | **Event Horizon** | Build something smarter than us and the far side stops being predictable, by anyone, the builders included. | Vinge | Stop forecasting. Prepare for the unforecastable. |
 | **Intelligence Explosion** | Intelligence is what produces technology. Aim it at itself and the loop closes. | Good, Yudkowsky | Watch one variable: can it improve itself yet? |
 
-*Table 1: The three singularity schools (Yudkowsky, 2007), with the planning posture each one implies.*
+*Table 1: The three singularity schools ([Yudkowsky, 2007](https://intelligence.org/2007/09/30/three-major-singularity-schools/)), with the planning posture each one implies.*
 
 Those are three genuinely different animals. Accelerating Change is a claim about a graph, and it doesn't require anything to be smarter than you. Event Horizon is a claim about the limits of prediction. Intelligence Explosion is a claim about a feedback loop, and a loop can close fast enough that no curve shows it to you in time.
 

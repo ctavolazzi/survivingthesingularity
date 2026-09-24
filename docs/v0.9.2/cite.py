@@ -31,6 +31,9 @@ for e in edits:
     if n != 1:
         problems.append(f'{f}: anchor found {n} times: {anchor[:70]!r}')
         continue
+    if 'after' in e and not anchor.rstrip().endswith(('.', '!', '?', '."', '?"', '!"', ':', '.*', '**')):
+        problems.append(f'{f}: citation anchor must end a sentence: {anchor[-40:]!r}')
+        continue
     if 'after' in e:
         if e['url'] in texts[f][texts[f].index(anchor):texts[f].index(anchor) + len(anchor) + 400]:
             problems.append(f'{f}: already cited right after anchor: {anchor[:50]!r}')

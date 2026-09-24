@@ -55,7 +55,7 @@ The notebook got its line that fall, under the arithmetic, where the important n
 
 If you want to know what the people with the most money think the future is worth, don't read their essays about artificial general intelligence or watch their keynotes about Mars. Look at what they buy.
 
-For years, big investment funds and some of the richest people alive have been buying farmland, water rights, and timber. Why? Because they know something our very digital culture keeps trying to make us forget: **you can't eat code.**
+For years, big investment funds and some of the richest people alive have been buying farmland, water rights, and timber. By 2021 Bill Gates, with about 242,000 acres across eighteen states, was the largest private owner of farmland in the United States, [GeekWire, reporting The Land Report's figures](https://www.geekwire.com/2021/report-bill-gates-largest-owner-private-farmland-u-s-acreage-across-18-states/) and a teachers' pension giant runs one of the world's biggest farmland portfolios. [Nuveen, Global farmland](https://www.nuveen.com/global/investment-capabilities/real-assets/farmland) Whatever each buyer's reasons, the purchases make a point our very digital culture keeps trying to make us forget: **you can't eat code.**
 
 You can run your life through a phone, trade digital assets, and spend your evenings in a virtual world. But as long as your body is a wet, biological organism, you're tied to a thin layer of topsoil and the fact that it rains. The oldest enclosure is still the most important one: the ground under your feet.
 
@@ -69,7 +69,7 @@ Chapter 12 showed a land trust being born. Here's the machinery, because it's wo
 
 A community land trust is usually a nonprofit, governed partly by the people who live on and around its land. It works by splitting the title:
 
-1. **The trust holds the land.** The people using it own what they build on it, the homes, greenhouses, crops, under a long ground lease, often ninety-nine years.
+1. **The trust holds the land.** The people using it own what they build on it, the homes, greenhouses, crops, under a long ground lease, often ninety-nine years. [Grounded Solutions Network, Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/)
 2. **The land comes off the speculative market.** Because the trust's charter restricts resale, the ground can't simply be flipped to the highest bidder.
 3. **Stewardship passes on.** If a household leaves, it can sell its improvements, but at a formula that keeps them affordable for the next household.
 

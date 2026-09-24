@@ -234,7 +234,7 @@ Parliament's reply was the Frame Breaking Act, which made machine-wrecking a cap
 
 The croppers had no negotiating table. The musicians had every table there was, used all of them, and left behind the most useful failure in this book.
 
-Start with the warning shot. In 1906 John Philip Sousa, the most famous bandleader alive, published "The Menace of Mechanical Music" in *Appleton's Magazine*, arguing that recording would kill amateur music-making and empty the parlors. He wasn't a crank. His band was already one of the most recorded acts in the country, and his essay was timed to a copyright fight he mostly won. He kept recording for decades.
+Start with the warning shot. In 1906 John Philip Sousa, the most famous bandleader alive, published "The Menace of Mechanical Music" in *Appleton's Magazine*, arguing that recording would kill amateur music-making and empty the parlors. [Sousa (1906), facsimile](https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf) He wasn't a crank. His band was already one of the most recorded acts in the country, and his essay was timed to a copyright fight he mostly won. He kept recording for decades.
 
 Then came the machine that actually took the jobs. *The Jazz Singer* opened in 1927, and within a few years synchronized sound was emptying the orchestra pits of American movie theaters, where some 22,000 musicians, a fifth of their union's membership, had played under silent films. [Local 802 AFM, Musicians vs. the Talkies](https://www.local802afm.org/allegro/articles/music-history-musicians-vs-the-talkies/) This wasn't a forecast. It was a payroll, and it was ending.
 

@@ -126,5 +126,5 @@ assert not broken_links, broken_links
 assert not missing_assets, missing_assets
 assert all(fonts.values()), fonts
 assert sizes=={(432.0,648.0)}, sizes
-assert len(sections_present)==30
+assert len(sections_present)==len(source_sections), (len(sections_present), len(source_sections))
 assert 'The Uncompromising Truth' in pages[4], 'Front matter must occupy exactly four pages before numbering restarts'

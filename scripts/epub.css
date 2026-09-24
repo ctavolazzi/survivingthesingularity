@@ -20,3 +20,8 @@ hr { border: none; border-top: 1px solid #ccc; margin: 2em auto; width: 40%; }
 table { border-collapse: collapse; width: 100%; font-size: 0.9em; }
 th, td { border: 1px solid #bbb; padding: 0.35em 0.6em; text-align: left; }
 .footnotes { font-size: 0.85em; }
+
+/* "By the numbers" boxes */
+aside.numbers { margin: 1.2em 0; padding: 0.6em 1em; border: 1px solid #cbd5e1; border-left: 4px solid #3b82f6; }
+aside.numbers > p:first-child { margin: 0 0 0.3em; font-family: monospace; font-size: 0.85em; letter-spacing: 0.05em; text-transform: uppercase; }
+aside.numbers ul { margin: 0; padding-left: 1.1em; }

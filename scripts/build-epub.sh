@@ -49,7 +49,7 @@ done
 cat > "$TMP/metadata.yaml" <<YAML
 ---
 title: Surviving the Singularity
-subtitle: Staying agentic while AI rewrites work, money, medicine, and meaning
+subtitle: $(python3 -c "import json;print(json.load(open('$ROOT/src/lib/data/book/book.json'))['subtitle'])")
 author: Christopher Tavolazzi
 date: '2026 &middot; <span class="version-stamp">$LABEL</span>'
 lang: en-US

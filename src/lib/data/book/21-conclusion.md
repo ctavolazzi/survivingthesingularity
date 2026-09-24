@@ -87,7 +87,7 @@ That did not give everyone a computer or a connection. It removed a particular b
 
 **The mechanism.** A compounding technology is always the worst it will ever be, today. Critics benchmark the present version; builders build against the next one. Both are describing something real. And a technology can prove its critics wrong about what it can do and still create real problems worth criticizing.
 
-**The rule.** Let actual results change the plan, including your optimistic plan. You're living through this decade's version of Stoll's essay, published weekly, about AI, by smart people, containing accurate complaints. You've now read twenty-three entries in the Precedent Ledger, from the first grain fields to a magazine calling the web a letdown. You know how this rhymes. My bet is 2027. The essayists will still be writing. You'll be building.
+**The rule.** Let actual results change the plan, including your optimistic plan. You're living through this decade's version of Stoll's essay, published weekly, about AI, by smart people, containing accurate complaints. You've now read twenty-four entries in the Precedent Ledger, from the first grain fields to a magazine calling the web a letdown. You know how this rhymes. My bet is 2027. The essayists will still be writing. You'll be building.
 
 **The practice.**
 

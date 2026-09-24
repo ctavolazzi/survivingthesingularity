@@ -60,6 +60,7 @@ cat={
  'open weights recall claim':r"open weights can't be recalled",
  'one order one day':r'One order\. One day\.',
  'Kropotkin false ellipsis':r'over the country … so as to',
+ 'stale ledger count':r'(twenty-three|23) (entries|documented episodes|precedents)',
 }
 for k,v in cat.items(): hit(k,v)
 # images resolve

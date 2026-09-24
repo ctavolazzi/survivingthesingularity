@@ -206,7 +206,7 @@ A system is only as good as its ability to provide food, shelter, and care to th
 
 ## Precedent P-22: The Apocalypse That Ran On Time (1999 to 2004)
 
-The Y2K bug was real. Enormous amounts of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" could mean 1900 to machines that ran the world.
+The Y2K bug was real. Enormous amounts of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" could mean 1900 to machines that ran the world. [US GAO, Year 2000 Computing Challenge: Lessons Learned (2000)](https://www.gao.gov/products/aimd-00-290)
 
 What followed was history's largest premortem. Instead of waiting to see what broke, organizations assumed failure in advance and worked backward, spending, by common estimates, hundreds of billions of dollars worldwide on auditing, patching, and testing before the deadline. The US government's own retrospective describes the scale of that work. [GAO, Year 2000 Computing Challenge](https://www.gao.gov/products/aimd-00-290)
 

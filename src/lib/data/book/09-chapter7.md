@@ -118,7 +118,7 @@ But in a society where survival is tied to employment, automating the work witho
 
 If the paycheck were the only thing a job provided, this would be a much simpler book. It isn't.
 
-In the 1930s, the social psychologist Marie Jahoda studied an Austrian town where the main factory had closed, and she spent decades afterward refining what she found. Beyond the obvious function of a job, earning money, she argued employment supplies five hidden ones:
+In the 1930s, the social psychologist Marie Jahoda studied an Austrian town where the main factory had closed, and she spent decades afterward refining what she found. Beyond the obvious function of a job, earning money, she argued employment supplies five hidden ones: [Paul and Batinic, The need for work: Jahoda's latent functions of employment (2010)](https://www.researchgate.net/publication/229915902_The_need_for_work_Jahoda's_latent_functions_of_employment_in_a_representative_sample_of_the_German_population)
 
 | Latent Function | What it provides | What losing it looks like |
 | :-- | :-- | :-- |
@@ -130,7 +130,7 @@ In the 1930s, the social psychologist Marie Jahoda studied an Austrian town wher
 
 Researchers built a questionnaire around her model, the Latent and Manifest Benefits scale, and have used it across a body of studies involving thousands of people. Separate large surveys have found that these hidden functions account for a big share of the link between unemployment and poor mental health. The lesson isn't that jobs are sacred. It's that a food baseline alone won't replace everything work was quietly doing, and a good transition plans for rhythm, company, and purpose too.
 
-John Maynard Keynes saw a version of this coming. In his 1930 essay "Economic Possibilities for our Grandchildren," he predicted that within a century technical progress could solve what he called the economic problem, and he worried out loud about what people would do with themselves once the pressing cares of subsistence were lifted, having been trained for so long to strive rather than enjoy. The question he asked was how to live "wisely and agreeably and well." It's a much better problem than hunger. It's still a problem.
+John Maynard Keynes saw a version of this coming. In his 1930 essay "Economic Possibilities for our Grandchildren," he predicted that within a century technical progress could solve what he called the economic problem, and he worried out loud about what people would do with themselves once the pressing cares of subsistence were lifted, having been trained for so long to strive rather than enjoy. The question he asked was how to live "wisely and agreeably and well." [Keynes, Economic Possibilities for our Grandchildren (1930)](https://www.marxists.org/reference/subject/economics/keynes/1930/our-grandchildren.htm) It's a much better problem than hunger. It's still a problem.
 
 And there's a reason people in the middle of the squeeze can't think about any of this. The economist Sendhil Mullainathan and the psychologist Eldar Shafir showed that scarcity, of money or time, captures attention involuntarily and narrows it: tunnel vision. In one of their best-known findings, sugarcane farmers in India scored better on cognitive tests after the harvest, when money was in hand, than before it, when money was tight. Same people. Different bandwidth. Someone worried about next week's rent isn't failing to imagine a post-scarcity future. Their mind is fully booked.
 
@@ -151,6 +151,8 @@ Stage 5 isn't a theory. In San Francisco, a group called Safe Street Rebel ran a
 | **Their own rules:** target only empty vehicles, stay away from intersections and bus stops. | **Destruction:** February 10, 2024, a crowd in Chinatown surrounded a Waymo, smashed its windows, and set it on fire. |
 | **Jobs:** anxiety about drivers losing work and people losing control of their streets. | **Federal scrutiny:** US regulators opened investigations into robotaxi safety, including around school buses. |
 
+*Sources: the dog, [TechCrunch](https://techcrunch.com/2023/06/06/a-waymo-self-driving-car-killed-a-dog-in-unavoidable-accident/) (Waymo called the collision unavoidable); the fire department's reports, [San Francisco Standard](https://sfstandard.com/2026/07/10/waymo-robotaxi-emergency-response/); the Chinatown fire, [San Francisco Standard](https://sfstandard.com/2024/02/10/waymo-robotaxi-goes-up-in-flames-in-chinatown-after-crowd-attacks-vehicle/); the school-bus probes, [CBS News](https://www.cbsnews.com/news/waymo-investigation-nhtsa-robotaxis-passing-school-bus/); coning, The Guardian in Appendix B.*
+
 The activists framed it as pedestrian safety and privacy, and some of those concerns were concrete. Underneath ran something older. As Brian Merchant argues in *Blood in the Machine*, the original Luddites weren't ignorant of technology; they understood exactly what the new machines would do to their pay and their standing. The cone on the hood belongs to that lineage.
 
 ## The campaign has a letterhead
@@ -167,6 +169,8 @@ It's been run at least six times in the last hundred and twenty years, by seriou
 | 1981 | British Phonographic Industry | "Home taping is killing music" | a levy on blank cassettes | Never enacted in Britain. The industry survived the cassette decade. |
 | 1982 | MPAA, Jack Valenti, before a House subcommittee | "the Boston strangler" | the VCR banned or taxed | Lost 5 to 4 in *Sony v. Universal* (1984). Within a few years home video was out-earning the box office. |
 | 1999–2001 | RIAA | piracy | Napster shut down | Napster shut down. Streaming became the industry's revenue base within fifteen years. |
+
+*Sources: Sousa's essay and the AFM ads, Appendix B; the 1942 recording ban, [University of Maryland](https://exhibitions.lib.umd.edu/songsofwar/wwii/currents/recording-ban); the VCR case, [Sony Corp. of America v. Universal City Studios](https://en.wikipedia.org/wiki/Sony_Corp._of_America_v._Universal_City_Studios,_Inc.); home video passing the box office by 1986, [Media and Culture](https://courses.lumenlearning.com/suny-massmedia/chapter/8-5-the-influence-of-new-technology/); streaming's first majority of US music revenue in 2016, [RIAA 2016 Year-End Report](https://www.riaa.com/wp-content/uploads/2017/03/RIAA-2016-Year-End-News-Notes.pdf).*
 
 Three campaigns you might expect on that list are missing, for the same reason: this book only carries cases that survive a primary source. There was no organized campaign against the printing press, only one eloquent abbot, and even he's more complicated than the legend (his file is at the end of Chapter 10). The famous Western Union memo calling the telephone "a toy" has never been produced by anyone. And the Bavarian medical decree warning that fast trains would give passengers brain disease traces to no archival record anyone has cited. Real history is a strong enough argument. Appendix D has the rest of the blacklist.
 
@@ -212,7 +216,7 @@ The framework knitters and croppers of the English Midlands and North were skill
 
 It wasn't only hammers, either. The same movement sent petitions, held public protests, and appealed to employers and government. And some of it was darker: a proclamation dated 23 December 1811, in the name of the invented "King Ludd" and preserved in Britain's National Archives, threatens death to informers and constables. [National Archives, proclamation of Ned Ludd](https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-proclamation-of-ned-ludd/) Hold both facts at once: real grievances, and some methods that terrorized other people.
 
-Parliament's reply was the Frame Breaking Act, which made machine-wrecking a capital crime, and twelve thousand soldiers sent into the disturbed counties. Seventeen men were hanged at York in January 1813. The frames won anyway. The wages fell anyway. The Luddites read the future of their trade far better than their masters did, got the strategy tragically wrong, and paid for the difference at the gallows.
+Parliament's reply was the Frame Breaking Act, which made machine-wrecking a capital crime, and twelve thousand soldiers sent into the disturbed counties. Seventeen men were hanged at York in January 1813. [Capital Punishment UK, York Castle Prisons](https://capitalpunishmentuk.org/york-castle-prisons/) The frames won anyway. The wages fell anyway. The Luddites read the future of their trade far better than their masters did, got the strategy tragically wrong, and paid for the difference at the gallows.
 
 **The mechanism.** Rage against the machine aims at the one part of the system that can't hear you. The owners heard perfectly well, and answered with the army, because the battle line was never human versus machine. It was, and still is, a fight over who sets the terms.
 
@@ -232,7 +236,7 @@ The croppers had no negotiating table. The musicians had every table there was, 
 
 Start with the warning shot. In 1906 John Philip Sousa, the most famous bandleader alive, published "The Menace of Mechanical Music" in *Appleton's Magazine*, arguing that recording would kill amateur music-making and empty the parlors. He wasn't a crank. His band was already one of the most recorded acts in the country, and his essay was timed to a copyright fight he mostly won. He kept recording for decades.
 
-Then came the machine that actually took the jobs. *The Jazz Singer* opened in 1927, and within a few years synchronized sound was emptying the orchestra pits of American movie theaters, where tens of thousands of musicians had played under silent films. This wasn't a forecast. It was a payroll, and it was ending.
+Then came the machine that actually took the jobs. *The Jazz Singer* opened in 1927, and within a few years synchronized sound was emptying the orchestra pits of American movie theaters, where some 22,000 musicians, a fifth of their union's membership, had played under silent films. [Local 802 AFM, Musicians vs. the Talkies](https://www.local802afm.org/allegro/articles/music-history-musicians-vs-the-talkies/) This wasn't a forecast. It was a payroll, and it was ending.
 
 So the American Federation of Musicians did what the Luddites never could. It ran a campaign.
 
@@ -240,7 +244,7 @@ So the American Federation of Musicians did what the Luddites never could. It ra
 
 *Exhibitors Herald-World, November 16, 1929. The union asks whether the Robot is good enough company to hog the whole show.*
 
-Starting in the autumn of 1929, the union bought advertisements in newspapers across the United States and Canada, and by 1930 had organized the effort into an enrollment drive with a name built for the age: the Music Defense League. And it chose, as the face of the enemy, a robot.
+Starting in the autumn of 1929, the union bought advertisements in newspapers across the United States and Canada, and by 1930 had organized the effort into an enrollment drive with a name built for the age: the Music Defense League. [American Federation of Musicians, Exhibitors Herald-World, 1930 (archive.org)](https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up) And it chose, as the face of the enemy, a robot.
 
 Not a metaphor. A drawn mechanical man, week after week: shoving a harpist aside, hoisting a banner reading CANNED MUSIC IN THEATERS over a gathering of muses, failing to soothe a baby. The copy is worth reading closely, because you've read it recently. "Dehumanizing the theatre may prove to be an exceedingly dangerous move." "Tho' the Robot can make no music of himself, he can and does arrest the efforts of those who can." And a coupon at the bottom, which readers could clip and mail in to be enrolled "as one who is opposed to the elimination of Living Music from the Theatre."
 

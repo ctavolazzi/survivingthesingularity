@@ -191,7 +191,7 @@ A community isn't a hierarchy; it's a topology. A lot of corporate and state str
 
 *Star versus mesh. In the star, the hub's failure is everyone's failure; in the mesh, damage is a routing problem.*
 
-In a mesh, every node connects to several neighbors, and damage becomes a detour. There's a limit, though. The anthropologist Robin Dunbar estimated that people can keep up something like 150 stable relationships. Past that, trust needs paperwork. So don't try to grow one enormous circle. Build tight circles of a few dozen people and connect them to other circles, trading tools, seed, surplus, and knowledge, without anybody having to merge into one big thing.
+In a mesh, every node connects to several neighbors, and damage becomes a detour. There's a limit, though. The anthropologist Robin Dunbar estimated that people can keep up something like 150 stable relationships. [Dunbar, Coevolution of neocortical size, group size and language in humans (1993)](https://doi.org/10.1017/S0140525X00032325) Past that, trust needs paperwork. So don't try to grow one enormous circle. Build tight circles of a few dozen people and connect them to other circles, trading tools, seed, surplus, and knowledge, without anybody having to merge into one big thing.
 
 And keep a door in every circle. Knowing everyone's name helps you notice who's missing; it can also make it easy to decide an outsider doesn't count. Nineteen households are a beginning. Humanity is the ambition.
 

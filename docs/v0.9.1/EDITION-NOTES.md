@@ -95,13 +95,27 @@ may ask for a larger master. The reading edition is 318 pages (cover plus 317).
 - Letter PDF (rebuilt after the SVG fix): 256 pages, 0 TeX or markdown leaks, every new passage found in the
   extracted text, and ten pages rendered and inspected (cover, Introduction,
   Preface, five epigraph pages).
-- 6x9: `publication/build.py` passed its manuscript-hash and image-rights asserts. The Preface
-  opener, the parable, the Mackay epigraph, the copyright page ("Manuscript v0.9.1"), the cover and
-  the credits were found in the text and rendered. The first full-font build crashed on a subscript
-  p in `ch11-cooling-loop.svg`. Every used SVG was rendered alone to find it, and it is fixed.
+- 6x9: `publication/build.py` passed its manuscript-hash and image-rights asserts;
+  `publication/proof.py` recovered all 2,104 source text blocks from the 317-page
+  interior, across 30 sections, with no text outside the page, no broken links and
+  no missing assets. The only exceptions are five captions whose images the print
+  edition replaces with line drawings. Its negative controls include a new one:
+  cut the middle third of a paragraph and the proof must report it missing.
+- Found and fixed while proofing: (1) the audited credit printed twice under three
+  photos, because pandoc wraps captions and the credit swap missed the wrapped
+  ones; the rendered interior now has no duplicated credit. (2) The first
+  full-font build crashed on a subscript p in `ch11-cooling-loop.svg`; every used
+  SVG was rendered alone to find it. (3) Paragraphs interrupted by a diagram at a
+  page break read as missing; the proof now recovers them, and the new negative
+  control keeps it honest.
+- The rendered cover was inspected after the crop was anchored left.
 
 ## Not done
 
 - No complete fact-check of restored material beyond the gates and spot checks.
 - The four unclear-rights images remain in the web source (above).
 - Site release, README, RELEASES.md and download links untouched.
+- Printer readiness: diagram symbols with no glyph in the book fonts fall back to
+  macOS system fonts (Songti SC, AppleMyungjo, Times New Roman Bold), which get
+  embedded in the 6x9 PDF. Check the embedding terms, or change those symbols to
+  shapes, before a commercial print run. No physical proof has been made.

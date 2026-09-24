@@ -4,9 +4,9 @@
   "generated": "2026-09-24",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
-    "sections": 33,
-    "blocks": 2156,
-    "words": 95065
+    "sections": 34,
+    "blocks": 2176,
+    "words": 96409
   },
   "sections": [
     {
@@ -24698,8 +24698,8 @@
       "id": "appendix-c",
       "title": "Appendix C: Executive Reference Guide",
       "file": "24-appendix-c.md",
-      "next_ordinal": 45,
-      "words": 813,
+      "next_ordinal": 50,
+      "words": 1149,
       "tombstones": [
         "sts.appendix-c.b0002",
         "sts.appendix-c.b0003",
@@ -24961,11 +24961,68 @@
           "preview": "- **Stage 1: The Cash Grab.** A new capability gets monetized first. Ask whether the money"
         },
         {
-          "id": "sts.appendix-c.b0022",
+          "id": "sts.appendix-c.b0045",
           "type": "heading",
           "lines": [
             59,
             59
+          ],
+          "words": 5,
+          "hash": "7bbf0976beee",
+          "preview": "## The plan, in nine lines",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-c.b0046",
+          "type": "paragraph",
+          "lines": [
+            61,
+            61
+          ],
+          "words": 21,
+          "hash": "ea21b3896edf",
+          "preview": "The larger goal is survival that doesn't depend on money: not abolished, optional. Chapter"
+        },
+        {
+          "id": "sts.appendix-c.b0047",
+          "type": "list",
+          "lines": [
+            63,
+            71
+          ],
+          "words": 92,
+          "hash": "8c9dc39761d6",
+          "preview": "1. Count what's wasted and who's hungry, side by side, in public. 2. Feed everyone who ask"
+        },
+        {
+          "id": "sts.appendix-c.b0048",
+          "type": "heading",
+          "lines": [
+            73,
+            73
+          ],
+          "words": 5,
+          "hash": "27b68c886123",
+          "preview": "## Objections, answered in a sentence",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-c.b0049",
+          "type": "list",
+          "lines": [
+            75,
+            81
+          ],
+          "words": 213,
+          "hash": "0bd267c8b8c4",
+          "preview": "- **\"Who pays for it?\"** Everyone together, the way we pay for roads and libraries; free t"
+        },
+        {
+          "id": "sts.appendix-c.b0022",
+          "type": "heading",
+          "lines": [
+            83,
+            83
           ],
           "words": 3,
           "hash": "bd1b3519a173",
@@ -24976,8 +25033,8 @@
           "id": "sts.appendix-c.b0044",
           "type": "paragraph",
           "lines": [
-            61,
-            61
+            85,
+            85
           ],
           "words": 41,
           "hash": "a9d811b856e4",
@@ -24987,8 +25044,8 @@
           "id": "sts.appendix-c.b0024",
           "type": "paragraph",
           "lines": [
-            63,
-            63
+            87,
+            87
           ],
           "words": 4,
           "hash": "3cf270779867",
@@ -26525,6 +26582,188 @@
           "words": 15,
           "hash": "f1227c5d951d",
           "preview": "Then start again. The second year is easier, because you won't be doing it alone."
+        }
+      ]
+    },
+    {
+      "id": "appendix-h",
+      "title": "Appendix H: Talk About It",
+      "file": "30-appendix-h.md",
+      "next_ordinal": 16,
+      "words": 1008,
+      "tombstones": [],
+      "blocks": [
+        {
+          "id": "sts.appendix-h.b0001",
+          "type": "heading",
+          "lines": [
+            1,
+            1
+          ],
+          "words": 5,
+          "hash": "b06de815ab88",
+          "preview": "# Appendix H: Talk About It",
+          "level": 1
+        },
+        {
+          "id": "sts.appendix-h.b0002",
+          "type": "paragraph",
+          "lines": [
+            3,
+            3
+          ],
+          "words": 62,
+          "hash": "54781ce5c1e7",
+          "preview": "*This book is meant to be argued with, out loud, with the people you live near. Here are q"
+        },
+        {
+          "id": "sts.appendix-h.b0003",
+          "type": "heading",
+          "lines": [
+            5,
+            5
+          ],
+          "words": 4,
+          "hash": "aca4451ff05b",
+          "preview": "## Questions for the Introduction",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-h.b0004",
+          "type": "list",
+          "lines": [
+            7,
+            9
+          ],
+          "words": 91,
+          "hash": "5144442de247",
+          "preview": "1. The author says \"we don't have to live like this.\" What, specifically, do you think we "
+        },
+        {
+          "id": "sts.appendix-h.b0005",
+          "type": "heading",
+          "lines": [
+            11,
+            11
+          ],
+          "words": 8,
+          "hash": "9fa1c0f4e384",
+          "preview": "## Questions for Part I: What is the Singularity?",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-h.b0006",
+          "type": "list",
+          "lines": [
+            13,
+            16
+          ],
+          "words": 102,
+          "hash": "fc273b6f3bdc",
+          "preview": "1. The book defines the Singularity as the point where intelligence stops being scarce. Ha"
+        },
+        {
+          "id": "sts.appendix-h.b0007",
+          "type": "heading",
+          "lines": [
+            18,
+            18
+          ],
+          "words": 7,
+          "hash": "4ed6094b7d1d",
+          "preview": "## Questions for Part II: How Humans React",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-h.b0008",
+          "type": "list",
+          "lines": [
+            20,
+            23
+          ],
+          "words": 106,
+          "hash": "270af21202ed",
+          "preview": "1. Chapter 7 says \"the Entitled\" and \"the Ready\" are mindsets, not kinds of people, and mo"
+        },
+        {
+          "id": "sts.appendix-h.b0009",
+          "type": "heading",
+          "lines": [
+            25,
+            25
+          ],
+          "words": 9,
+          "hash": "d218cb3d9408",
+          "preview": "## Questions for Part III: How to Survive the Transition",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-h.b0010",
+          "type": "list",
+          "lines": [
+            27,
+            30
+          ],
+          "words": 86,
+          "hash": "90b24671f14f",
+          "preview": "1. Which is harder where you live: getting land, getting tools, or getting people to work "
+        },
+        {
+          "id": "sts.appendix-h.b0011",
+          "type": "heading",
+          "lines": [
+            32,
+            32
+          ],
+          "words": 7,
+          "hash": "4423c2cb8b2f",
+          "preview": "## Questions for Chapter 19 and the Conclusion",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-h.b0012",
+          "type": "list",
+          "lines": [
+            34,
+            37
+          ],
+          "words": 105,
+          "hash": "80815bb10304",
+          "preview": "1. Which of the nine rungs is your town already standing on, even partly? Which is the nex"
+        },
+        {
+          "id": "sts.appendix-h.b0013",
+          "type": "heading",
+          "lines": [
+            39,
+            39
+          ],
+          "words": 4,
+          "hash": "ba00c5909ace",
+          "preview": "## What to read next",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-h.b0014",
+          "type": "paragraph",
+          "lines": [
+            41,
+            41
+          ],
+          "words": 8,
+          "hash": "e356f53a4b20",
+          "preview": "Most of these are free to read online."
+        },
+        {
+          "id": "sts.appendix-h.b0015",
+          "type": "list",
+          "lines": [
+            43,
+            54
+          ],
+          "words": 404,
+          "hash": "306279495084",
+          "preview": "- **Henry David Thoreau, *Walden* (1854), the chapter \"Economy.\"** The original argument t"
         }
       ]
     }

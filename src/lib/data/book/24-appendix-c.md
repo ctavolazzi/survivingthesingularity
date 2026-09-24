@@ -56,6 +56,30 @@ The map runs from observable to speculative. Stages 1 through 5 are where the ch
 - **Stage 8: The Transition to USI.** Speculation: intelligence at the scale of the cosmos.
 - **Stage 9: The Apex Intelligence.** Speculation: the edge of the map, and the simulation question. None of it changes what's for dinner.
 
+## The plan, in nine lines
+
+The larger goal is survival that doesn't depend on money: not abolished, optional. Chapter 19 lays it out as a ladder.
+
+1. Count what's wasted and who's hungry, side by side, in public.
+2. Feed everyone who asks, from food that's already there.
+3. Make the meal a public service, like the library.
+4. Take the ground off the market with land trusts.
+5. Own the machines together, the way farmers owned their power lines.
+6. Stop letting a credit score or an eviction decide who survives.
+7. Widen the floor: shelter, care, transport, information.
+8. Publish the Adequate Level of Care every month.
+9. Keep the market for everything above the floor.
+
+## Objections, answered in a sentence
+
+- **"Who pays for it?"** Everyone together, the way we pay for roads and libraries; free to the person eating isn't free to provide, and the rural electric co-ops paid back almost every loan they took (Chapter 19).
+- **"Won't people stop working?"** People want to make things, run kitchens, and take care of each other; what they don't want is to spend forty years renting the chance to survive (Introduction).
+- **"Isn't this just socialism?"** Markets stay for everything above the floor; public schools, libraries, and Britain's health service already live alongside markets, and this adds food to that list (Chapter 19).
+- **"But what about the jobs?"** The worry is real, and the people doing the work belong in the decisions about how machines come in and how people are carried through the change (Chapter 11).
+- **"Isn't this how we end up like WALL-E?"** Help should widen a life, not shrink it, and that's something we can watch and change (Chapter 11).
+- **"We already know how to do this without robots."** Then do it that way; the point is making the result dependable everywhere it's needed, with whatever tool works (Chapter 11).
+- **"Why food first?"** Nobody needs an elaborate explanation of why dinner matters, and it's the easiest promise to measure (Chapters 17 and 18).
+
 ## A first move
 
 Ask how a proposed gain in productivity reaches the people affected. Bring workers, growers, cooks, recipients, and public decision-makers into the answer. A small trial can test a task; a continuing service needs money, responsibility, and terms people can rely on.

@@ -15,7 +15,59 @@
 
 ---
 
+The county chambers smelled like wet coats and floor wax. Rain had followed them down the valley, and the co-op came in shaking it off: Curtis in his route jacket, Reuben with an accordion folder under one arm, the kitchen coordinator with a banker's box of receipts, Devendra with a child asleep against his shoulder and the other one counting ceiling tiles. Irene Calder came last and took the aisle seat as if she'd been assigned it.
+
+Elijah had fourteen slides. He'd built them over three nights: cost per delivered meal, failure modes with names beside them, a curve of what the route could carry if the county matched what the co-op had already set aside for repairs. He'd timed the talk at eleven minutes.
+
+The clerk read the rules off a laminated card. Public comment, three minutes per speaker. A red light would come on at thirty seconds.
+
+"Three minutes," Elijah said.
+
+"Eleven was always a fantasy," Reuben said, not unkindly. He slid a single page out of the folder. The proposal, costed, one side. He'd filed it with the clerk on Tuesday. Nobody had asked him to.
+
+Item nine came up at 8:40. The supervisors had been sitting since six. One of them was eating almonds out of a paper cup below the dais where she thought nobody could see.
+
+Elijah went first because the sign-up sheet said so. He got through the cost per meal and the funding date, *through June*, and then the red light came on, and he watched himself skip to the last slide, which was the wrong slide, and say "so the model suggests" into a microphone that popped on the *s*. He sat down with forty seconds of unspent argument in his mouth.
+
+Rosa went second. She hadn't told anyone she was coming. She was still in her warehouse shirt, the wrist brace grey at the edges, and she didn't have a page.
+
+"I pack fruit for a living," she said. "Afternoon shift. The route comes late enough that I can get it. I'm not here to say thank you, though I am thankful. I'm here because every month we don't know if it's the last month. You can't plan a week around maybe." She looked at the supervisor with the almonds. "I asked them to tell us before the week it stops. They said they would. I'm asking you the same thing."
+
+She sat down with a minute left on the clock. Nobody else in the room had managed that.
+
+The chair thanked her and turned to the staff report. The county's analyst, a tired man in a sweater vest, said the numbers were sound but the program would be an ongoing obligation, and the county didn't take on ongoing obligations for services the private sector and charities already provided. "We simply can't afford to make food free," he said. "Nobody can."
+
+Irene was already standing. Her chair scraped the floor loud enough for the microphone to catch it.
+
+"My father-in-law ran that same line," she said. "Walt's dad. Nineteen thirty-nine. The power company told him wiring out to our place didn't pay. Too far, too few of us. So the farmers along our road made a co-op and borrowed the money from the government, and they strung the wire themselves, on poles they set with a borrowed truck." She leaned on the podium. "They paid it back. Every cent. My husband was born under a bulb that his daddy's neighbors paid for. So when a man in a sweater tells me something can't be afforded, I'd like him to say who it can't be afforded *by*."
+
+The almonds went down. The chair cleared her throat and said the speaker's time had expired, and Irene said she knew, she'd been watching the light, and sat.
+
+They didn't win. Not the way Elijah had pictured it on the second night of slides. The board voted four to one to extend the route through December and to direct staff to study a permanent food line for the next budget cycle, which Reuben said, on the steps outside, was how a county said *maybe* in writing. The analyst was assigned the study. Curtis laughed out loud at that, once, into the rain.
+
+"December's six more months than June," the kitchen coordinator said. She was already writing it on the lid of the banker's box. "And a study has a due date."
+
+Devendra's older child wanted to know if they'd won. Devendra looked at Elijah.
+
+"Some," Elijah said.
+
+Curtis pulled out his phone and started the texts, one household at a time, the way he'd promised. *Funded through December. Tell you more in June.* He read the first one aloud to Rosa before he sent it. She read it back to him and changed *more* to *the rest*.
+
+Elijah stood under the eave with the laptop in its sleeve, fourteen slides unshown, and understood for the first time that the model had never been the argument. It was the receipt you handed over after someone else had made it.
+
+Reuben took the folder back and wrote the study's due date on the tab in ink.
+
+---
+
 ## The Foundations
+
+## Why I wrote this chapter
+
+I'm going to be straight with you. I'm so fucking pissed off about this. Not at you. At the arrangement.
+
+Greed is a sickness, and too many of the decisions that shape our lives serve private property first, enforced by state-sanctioned violence. If you don't have enough money, somebody with a badge and a gun has permission to come and put you out. People go hungry and suffer because they *have* to, not because there isn't enough. It's fucking disgusting, and it doesn't have to be this way.
+
+So this chapter does what I promised at the start: a literal, step-by-step plan to convert society over to the way it's supposed to be, where we all get our needs met and nobody has to suffer or die for the price of anything. Money should be optional. Here's how we get there.
 
 ## The plan, in one sentence
 

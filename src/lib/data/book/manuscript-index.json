@@ -5,8 +5,8 @@
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 35,
-    "blocks": 2183,
-    "words": 96618
+    "blocks": 2209,
+    "words": 97625
   },
   "sections": [
     {
@@ -21432,8 +21432,8 @@
       "id": "chapter19",
       "title": "Chapter 19: The Ladder: How Money Becomes Optional",
       "file": "27-chapter19.md",
-      "next_ordinal": 74,
-      "words": 2570,
+      "next_ordinal": 100,
+      "words": 3577,
       "tombstones": [],
       "blocks": [
         {
@@ -21517,11 +21517,253 @@
           "preview": "---"
         },
         {
-          "id": "sts.chapter19.b0008",
-          "type": "heading",
+          "id": "sts.chapter19.b0074",
+          "type": "paragraph",
           "lines": [
             18,
             18
+          ],
+          "words": 77,
+          "hash": "1503cdca35ef",
+          "preview": "The county chambers smelled like wet coats and floor wax. Rain had followed them down the "
+        },
+        {
+          "id": "sts.chapter19.b0075",
+          "type": "paragraph",
+          "lines": [
+            20,
+            20
+          ],
+          "words": 48,
+          "hash": "e09a07844042",
+          "preview": "Elijah had fourteen slides. He'd built them over three nights: cost per delivered meal, fa"
+        },
+        {
+          "id": "sts.chapter19.b0076",
+          "type": "paragraph",
+          "lines": [
+            22,
+            22
+          ],
+          "words": 24,
+          "hash": "a6d2ffe04c87",
+          "preview": "The clerk read the rules off a laminated card. Public comment, three minutes per speaker. "
+        },
+        {
+          "id": "sts.chapter19.b0077",
+          "type": "paragraph",
+          "lines": [
+            24,
+            24
+          ],
+          "words": 4,
+          "hash": "d105ccebf0b5",
+          "preview": "\"Three minutes,\" Elijah said."
+        },
+        {
+          "id": "sts.chapter19.b0078",
+          "type": "paragraph",
+          "lines": [
+            26,
+            26
+          ],
+          "words": 36,
+          "hash": "226a5506faa2",
+          "preview": "\"Eleven was always a fantasy,\" Reuben said, not unkindly. He slid a single page out of the"
+        },
+        {
+          "id": "sts.chapter19.b0079",
+          "type": "paragraph",
+          "lines": [
+            28,
+            28
+          ],
+          "words": 34,
+          "hash": "b45e899ce9db",
+          "preview": "Item nine came up at 8:40. The supervisors had been sitting since six. One of them was eat"
+        },
+        {
+          "id": "sts.chapter19.b0080",
+          "type": "paragraph",
+          "lines": [
+            30,
+            30
+          ],
+          "words": 69,
+          "hash": "5a7f1ad346dc",
+          "preview": "Elijah went first because the sign-up sheet said so. He got through the cost per meal and "
+        },
+        {
+          "id": "sts.chapter19.b0081",
+          "type": "paragraph",
+          "lines": [
+            32,
+            32
+          ],
+          "words": 30,
+          "hash": "6d1a1e0113cb",
+          "preview": "Rosa went second. She hadn't told anyone she was coming. She was still in her warehouse sh"
+        },
+        {
+          "id": "sts.chapter19.b0082",
+          "type": "paragraph",
+          "lines": [
+            34,
+            34
+          ],
+          "words": 80,
+          "hash": "32a1f0749c31",
+          "preview": "\"I pack fruit for a living,\" she said. \"Afternoon shift. The route comes late enough that "
+        },
+        {
+          "id": "sts.chapter19.b0083",
+          "type": "paragraph",
+          "lines": [
+            36,
+            36
+          ],
+          "words": 18,
+          "hash": "526d35f10a96",
+          "preview": "She sat down with a minute left on the clock. Nobody else in the room had managed that."
+        },
+        {
+          "id": "sts.chapter19.b0084",
+          "type": "paragraph",
+          "lines": [
+            38,
+            38
+          ],
+          "words": 62,
+          "hash": "ffc163f14e59",
+          "preview": "The chair thanked her and turned to the staff report. The county's analyst, a tired man in"
+        },
+        {
+          "id": "sts.chapter19.b0085",
+          "type": "paragraph",
+          "lines": [
+            40,
+            40
+          ],
+          "words": 17,
+          "hash": "d84df5f654be",
+          "preview": "Irene was already standing. Her chair scraped the floor loud enough for the microphone to "
+        },
+        {
+          "id": "sts.chapter19.b0086",
+          "type": "paragraph",
+          "lines": [
+            42,
+            42
+          ],
+          "words": 108,
+          "hash": "1328e06a0159",
+          "preview": "\"My father-in-law ran that same line,\" she said. \"Walt's dad. Nineteen thirty-nine. The po"
+        },
+        {
+          "id": "sts.chapter19.b0087",
+          "type": "paragraph",
+          "lines": [
+            44,
+            44
+          ],
+          "words": 28,
+          "hash": "95303e31ba4b",
+          "preview": "The almonds went down. The chair cleared her throat and said the speaker's time had expire"
+        },
+        {
+          "id": "sts.chapter19.b0088",
+          "type": "paragraph",
+          "lines": [
+            46,
+            46
+          ],
+          "words": 74,
+          "hash": "c7dbbbe480a4",
+          "preview": "They didn't win. Not the way Elijah had pictured it on the second night of slides. The boa"
+        },
+        {
+          "id": "sts.chapter19.b0089",
+          "type": "paragraph",
+          "lines": [
+            48,
+            48
+          ],
+          "words": 29,
+          "hash": "b1d20af93709",
+          "preview": "\"December's six more months than June,\" the kitchen coordinator said. She was already writ"
+        },
+        {
+          "id": "sts.chapter19.b0090",
+          "type": "paragraph",
+          "lines": [
+            50,
+            50
+          ],
+          "words": 13,
+          "hash": "23c3df0edef9",
+          "preview": "Devendra's older child wanted to know if they'd won. Devendra looked at Elijah."
+        },
+        {
+          "id": "sts.chapter19.b0091",
+          "type": "paragraph",
+          "lines": [
+            52,
+            52
+          ],
+          "words": 3,
+          "hash": "c521debcb6ea",
+          "preview": "\"Some,\" Elijah said."
+        },
+        {
+          "id": "sts.chapter19.b0092",
+          "type": "paragraph",
+          "lines": [
+            54,
+            54
+          ],
+          "words": 50,
+          "hash": "6ccda86fd374",
+          "preview": "Curtis pulled out his phone and started the texts, one household at a time, the way he'd p"
+        },
+        {
+          "id": "sts.chapter19.b0093",
+          "type": "paragraph",
+          "lines": [
+            56,
+            56
+          ],
+          "words": 41,
+          "hash": "010f5796eb50",
+          "preview": "Elijah stood under the eave with the laptop in its sleeve, fourteen slides unshown, and un"
+        },
+        {
+          "id": "sts.chapter19.b0094",
+          "type": "paragraph",
+          "lines": [
+            58,
+            58
+          ],
+          "words": 16,
+          "hash": "3d37b12c46f0",
+          "preview": "Reuben took the folder back and wrote the study's due date on the tab in ink."
+        },
+        {
+          "id": "sts.chapter19.b0065",
+          "type": "hr",
+          "lines": [
+            60,
+            60
+          ],
+          "words": 0,
+          "hash": "ebad27de99a8",
+          "preview": "---"
+        },
+        {
+          "id": "sts.chapter19.b0008",
+          "type": "heading",
+          "lines": [
+            62,
+            62
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -21529,11 +21771,56 @@
           "level": 2
         },
         {
+          "id": "sts.chapter19.b0095",
+          "type": "heading",
+          "lines": [
+            64,
+            64
+          ],
+          "words": 5,
+          "hash": "80e726ab7c1b",
+          "preview": "## Why I wrote this chapter",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter19.b0096",
+          "type": "paragraph",
+          "lines": [
+            66,
+            66
+          ],
+          "words": 20,
+          "hash": "0bdc975135ee",
+          "preview": "I'm going to be straight with you. I'm so fucking pissed off about this. Not at you. At th"
+        },
+        {
+          "id": "sts.chapter19.b0097",
+          "type": "paragraph",
+          "lines": [
+            68,
+            68
+          ],
+          "words": 68,
+          "hash": "faa597efe606",
+          "preview": "Greed is a sickness, and too many of the decisions that shape our lives serve private prop"
+        },
+        {
+          "id": "sts.chapter19.b0098",
+          "type": "paragraph",
+          "lines": [
+            70,
+            70
+          ],
+          "words": 53,
+          "hash": "336de3d32863",
+          "preview": "So this chapter does what I promised at the start: a literal, step-by-step plan to convert"
+        },
+        {
           "id": "sts.chapter19.b0009",
           "type": "heading",
           "lines": [
-            20,
-            20
+            72,
+            72
           ],
           "words": 5,
           "hash": "da83513c4124",
@@ -21544,8 +21831,8 @@
           "id": "sts.chapter19.b0010",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            74,
+            74
           ],
           "words": 25,
           "hash": "e4ddc77db4c8",
@@ -21555,8 +21842,8 @@
           "id": "sts.chapter19.b0011",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            76,
+            76
           ],
           "words": 10,
           "hash": "d6f5fb60cebd",
@@ -21566,8 +21853,8 @@
           "id": "sts.chapter19.b0012",
           "type": "paragraph",
           "lines": [
-            26,
-            26
+            78,
+            78
           ],
           "words": 56,
           "hash": "5548ca80f63e",
@@ -21577,8 +21864,8 @@
           "id": "sts.chapter19.b0013",
           "type": "paragraph",
           "lines": [
-            28,
-            28
+            80,
+            80
           ],
           "words": 103,
           "hash": "051dffc11fa6",
@@ -21588,8 +21875,8 @@
           "id": "sts.chapter19.b0014",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            82,
+            82
           ],
           "words": 46,
           "hash": "ae99beec0153",
@@ -21599,8 +21886,8 @@
           "id": "sts.chapter19.b0015",
           "type": "heading",
           "lines": [
-            32,
-            32
+            84,
+            84
           ],
           "words": 8,
           "hash": "fce901a907a5",
@@ -21611,8 +21898,8 @@
           "id": "sts.chapter19.b0016",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            86,
+            86
           ],
           "words": 37,
           "hash": "17e0c2081de5",
@@ -21622,8 +21909,8 @@
           "id": "sts.chapter19.b0017",
           "type": "paragraph",
           "lines": [
-            36,
-            36
+            88,
+            88
           ],
           "words": 120,
           "hash": "956e66994267",
@@ -21633,8 +21920,8 @@
           "id": "sts.chapter19.b0018",
           "type": "paragraph",
           "lines": [
-            38,
-            38
+            90,
+            90
           ],
           "words": 26,
           "hash": "29de04d6cb4a",
@@ -21644,8 +21931,8 @@
           "id": "sts.chapter19.b0019",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            92,
+            92
           ],
           "words": 17,
           "hash": "180180cd4113",
@@ -21655,8 +21942,8 @@
           "id": "sts.chapter19.b0020",
           "type": "heading",
           "lines": [
-            42,
-            42
+            94,
+            94
           ],
           "words": 10,
           "hash": "f1e70d21cb5a",
@@ -21667,8 +21954,8 @@
           "id": "sts.chapter19.b0021",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            96,
+            96
           ],
           "words": 31,
           "hash": "822e9de73019",
@@ -21678,8 +21965,8 @@
           "id": "sts.chapter19.b0022",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            98,
+            98
           ],
           "words": 60,
           "hash": "ac1c4820f0e9",
@@ -21689,8 +21976,8 @@
           "id": "sts.chapter19.b0023",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            100,
+            100
           ],
           "words": 26,
           "hash": "943e385a80de",
@@ -21700,8 +21987,8 @@
           "id": "sts.chapter19.b0024",
           "type": "paragraph",
           "lines": [
-            50,
-            50
+            102,
+            102
           ],
           "words": 18,
           "hash": "e6eb597b7056",
@@ -21711,8 +21998,8 @@
           "id": "sts.chapter19.b0025",
           "type": "heading",
           "lines": [
-            52,
-            52
+            104,
+            104
           ],
           "words": 11,
           "hash": "c06d8e9a3c66",
@@ -21723,8 +22010,8 @@
           "id": "sts.chapter19.b0026",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            106,
+            106
           ],
           "words": 29,
           "hash": "4d19b0001bd8",
@@ -21734,8 +22021,8 @@
           "id": "sts.chapter19.b0027",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            108,
+            108
           ],
           "words": 91,
           "hash": "f2cb98730bab",
@@ -21745,8 +22032,8 @@
           "id": "sts.chapter19.b0028",
           "type": "paragraph",
           "lines": [
-            58,
-            58
+            110,
+            110
           ],
           "words": 20,
           "hash": "ec6f8d1fb675",
@@ -21756,8 +22043,8 @@
           "id": "sts.chapter19.b0029",
           "type": "paragraph",
           "lines": [
-            60,
-            60
+            112,
+            112
           ],
           "words": 19,
           "hash": "4eb96b421a03",
@@ -21767,8 +22054,8 @@
           "id": "sts.chapter19.b0030",
           "type": "heading",
           "lines": [
-            62,
-            62
+            114,
+            114
           ],
           "words": 8,
           "hash": "ed31d6c28168",
@@ -21779,8 +22066,8 @@
           "id": "sts.chapter19.b0031",
           "type": "paragraph",
           "lines": [
-            64,
-            64
+            116,
+            116
           ],
           "words": 26,
           "hash": "1a73476c3698",
@@ -21790,8 +22077,8 @@
           "id": "sts.chapter19.b0032",
           "type": "paragraph",
           "lines": [
-            66,
-            66
+            118,
+            118
           ],
           "words": 63,
           "hash": "f4dcd5fc0a7e",
@@ -21801,8 +22088,8 @@
           "id": "sts.chapter19.b0033",
           "type": "paragraph",
           "lines": [
-            68,
-            68
+            120,
+            120
           ],
           "words": 14,
           "hash": "fac35b820acd",
@@ -21812,8 +22099,8 @@
           "id": "sts.chapter19.b0034",
           "type": "paragraph",
           "lines": [
-            70,
-            70
+            122,
+            122
           ],
           "words": 17,
           "hash": "bf0999ef2d86",
@@ -21823,8 +22110,8 @@
           "id": "sts.chapter19.b0035",
           "type": "heading",
           "lines": [
-            72,
-            72
+            124,
+            124
           ],
           "words": 6,
           "hash": "c266b552a78d",
@@ -21835,8 +22122,8 @@
           "id": "sts.chapter19.b0036",
           "type": "paragraph",
           "lines": [
-            74,
-            74
+            126,
+            126
           ],
           "words": 39,
           "hash": "f2808276263f",
@@ -21846,8 +22133,8 @@
           "id": "sts.chapter19.b0037",
           "type": "paragraph",
           "lines": [
-            76,
-            76
+            128,
+            128
           ],
           "words": 123,
           "hash": "696033f77675",
@@ -21857,8 +22144,8 @@
           "id": "sts.chapter19.b0038",
           "type": "paragraph",
           "lines": [
-            78,
-            78
+            130,
+            130
           ],
           "words": 34,
           "hash": "aa9bfba94a26",
@@ -21868,8 +22155,8 @@
           "id": "sts.chapter19.b0039",
           "type": "paragraph",
           "lines": [
-            80,
-            80
+            132,
+            132
           ],
           "words": 13,
           "hash": "7a8b38dfe8c6",
@@ -21879,8 +22166,8 @@
           "id": "sts.chapter19.b0040",
           "type": "paragraph",
           "lines": [
-            82,
-            82
+            134,
+            134
           ],
           "words": 18,
           "hash": "5c6783a3d613",
@@ -21890,8 +22177,8 @@
           "id": "sts.chapter19.b0041",
           "type": "heading",
           "lines": [
-            84,
-            84
+            136,
+            136
           ],
           "words": 9,
           "hash": "0f2ac8b9bb0d",
@@ -21902,8 +22189,8 @@
           "id": "sts.chapter19.b0042",
           "type": "paragraph",
           "lines": [
-            86,
-            86
+            138,
+            138
           ],
           "words": 40,
           "hash": "0ad5146e7fbb",
@@ -21913,8 +22200,8 @@
           "id": "sts.chapter19.b0043",
           "type": "paragraph",
           "lines": [
-            88,
-            88
+            140,
+            140
           ],
           "words": 63,
           "hash": "a0f068225f25",
@@ -21924,8 +22211,8 @@
           "id": "sts.chapter19.b0044",
           "type": "paragraph",
           "lines": [
-            90,
-            90
+            142,
+            142
           ],
           "words": 10,
           "hash": "60b44c77a955",
@@ -21935,8 +22222,8 @@
           "id": "sts.chapter19.b0045",
           "type": "paragraph",
           "lines": [
-            92,
-            92
+            144,
+            144
           ],
           "words": 12,
           "hash": "a6cacba84f21",
@@ -21946,8 +22233,8 @@
           "id": "sts.chapter19.b0046",
           "type": "heading",
           "lines": [
-            94,
-            94
+            146,
+            146
           ],
           "words": 5,
           "hash": "08da4e70f798",
@@ -21958,8 +22245,8 @@
           "id": "sts.chapter19.b0047",
           "type": "paragraph",
           "lines": [
-            96,
-            96
+            148,
+            148
           ],
           "words": 29,
           "hash": "9e6814993b6f",
@@ -21969,8 +22256,8 @@
           "id": "sts.chapter19.b0048",
           "type": "paragraph",
           "lines": [
-            98,
-            98
+            150,
+            150
           ],
           "words": 111,
           "hash": "1c4f4d62402c",
@@ -21980,8 +22267,8 @@
           "id": "sts.chapter19.b0049",
           "type": "paragraph",
           "lines": [
-            100,
-            100
+            152,
+            152
           ],
           "words": 10,
           "hash": "f24811f76238",
@@ -21991,8 +22278,8 @@
           "id": "sts.chapter19.b0050",
           "type": "paragraph",
           "lines": [
-            102,
-            102
+            154,
+            154
           ],
           "words": 13,
           "hash": "6bbdd7da7c45",
@@ -22002,8 +22289,8 @@
           "id": "sts.chapter19.b0051",
           "type": "heading",
           "lines": [
-            104,
-            104
+            156,
+            156
           ],
           "words": 9,
           "hash": "275a97e6631d",
@@ -22014,8 +22301,8 @@
           "id": "sts.chapter19.b0052",
           "type": "paragraph",
           "lines": [
-            106,
-            106
+            158,
+            158
           ],
           "words": 33,
           "hash": "89f7106ca8ca",
@@ -22025,8 +22312,8 @@
           "id": "sts.chapter19.b0053",
           "type": "paragraph",
           "lines": [
-            108,
-            108
+            160,
+            160
           ],
           "words": 51,
           "hash": "d77500b66d94",
@@ -22036,8 +22323,8 @@
           "id": "sts.chapter19.b0054",
           "type": "paragraph",
           "lines": [
-            110,
-            110
+            162,
+            162
           ],
           "words": 13,
           "hash": "a1e52734d7a1",
@@ -22047,8 +22334,8 @@
           "id": "sts.chapter19.b0055",
           "type": "heading",
           "lines": [
-            112,
-            112
+            164,
+            164
           ],
           "words": 8,
           "hash": "5b190b6bb15b",
@@ -22059,8 +22346,8 @@
           "id": "sts.chapter19.b0056",
           "type": "paragraph",
           "lines": [
-            114,
-            114
+            166,
+            166
           ],
           "words": 37,
           "hash": "ce9111948384",
@@ -22070,8 +22357,8 @@
           "id": "sts.chapter19.b0057",
           "type": "paragraph",
           "lines": [
-            116,
-            116
+            168,
+            168
           ],
           "words": 3,
           "hash": "711c3aea9a72",
@@ -22081,8 +22368,8 @@
           "id": "sts.chapter19.b0058",
           "type": "paragraph",
           "lines": [
-            118,
-            118
+            170,
+            170
           ],
           "words": 66,
           "hash": "c5b66ffceb7f",
@@ -22092,8 +22379,8 @@
           "id": "sts.chapter19.b0059",
           "type": "heading",
           "lines": [
-            120,
-            120
+            172,
+            172
           ],
           "words": 4,
           "hash": "c5bf60e56c40",
@@ -22104,8 +22391,8 @@
           "id": "sts.chapter19.b0060",
           "type": "paragraph",
           "lines": [
-            122,
-            122
+            174,
+            174
           ],
           "words": 9,
           "hash": "84d570559cf0",
@@ -22115,8 +22402,8 @@
           "id": "sts.chapter19.b0061",
           "type": "list",
           "lines": [
-            124,
-            127
+            176,
+            179
           ],
           "words": 134,
           "hash": "59ed3628a354",
@@ -22126,8 +22413,8 @@
           "id": "sts.chapter19.b0062",
           "type": "paragraph",
           "lines": [
-            129,
-            129
+            181,
+            181
           ],
           "words": 28,
           "hash": "dc415563d9c7",
@@ -22137,8 +22424,8 @@
           "id": "sts.chapter19.b0063",
           "type": "heading",
           "lines": [
-            131,
-            131
+            183,
+            183
           ],
           "words": 6,
           "hash": "ece119100ee7",
@@ -22149,19 +22436,19 @@
           "id": "sts.chapter19.b0064",
           "type": "list",
           "lines": [
-            133,
-            138
+            185,
+            190
           ],
           "words": 128,
           "hash": "2a6af643ada9",
           "preview": "- **If you work for a living:** find out what your employer does with food it can't sell, "
         },
         {
-          "id": "sts.chapter19.b0065",
+          "id": "sts.chapter19.b0099",
           "type": "hr",
           "lines": [
-            140,
-            140
+            192,
+            192
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -22171,8 +22458,8 @@
           "id": "sts.chapter19.b0066",
           "type": "heading",
           "lines": [
-            142,
-            142
+            194,
+            194
           ],
           "words": 12,
           "hash": "545df7ca23c3",
@@ -22183,8 +22470,8 @@
           "id": "sts.chapter19.b0067",
           "type": "paragraph",
           "lines": [
-            144,
-            144
+            196,
+            196
           ],
           "words": 85,
           "hash": "33e59653d063",
@@ -22194,8 +22481,8 @@
           "id": "sts.chapter19.b0068",
           "type": "paragraph",
           "lines": [
-            146,
-            146
+            198,
+            198
           ],
           "words": 84,
           "hash": "57c423450c72",
@@ -22205,8 +22492,8 @@
           "id": "sts.chapter19.b0069",
           "type": "paragraph",
           "lines": [
-            148,
-            148
+            200,
+            200
           ],
           "words": 91,
           "hash": "aa32d5e99b5d",
@@ -22216,8 +22503,8 @@
           "id": "sts.chapter19.b0070",
           "type": "paragraph",
           "lines": [
-            150,
-            150
+            202,
+            202
           ],
           "words": 44,
           "hash": "0a3f5ea50895",
@@ -22227,8 +22514,8 @@
           "id": "sts.chapter19.b0071",
           "type": "paragraph",
           "lines": [
-            152,
-            152
+            204,
+            204
           ],
           "words": 31,
           "hash": "00b8c212d91a",
@@ -22238,8 +22525,8 @@
           "id": "sts.chapter19.b0072",
           "type": "paragraph",
           "lines": [
-            154,
-            154
+            206,
+            206
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -22249,8 +22536,8 @@
           "id": "sts.chapter19.b0073",
           "type": "list",
           "lines": [
-            156,
-            158
+            208,
+            210
           ],
           "words": 89,
           "hash": "b1c9c7935aa0",

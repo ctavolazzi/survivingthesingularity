@@ -230,10 +230,79 @@ def conversion_ladder():
                  body, 'Chapter 19. Sources for every rung in the chapter and in Appendix B.')
 
 
+def eighteen_days():
+    """Chapter 2: the June 2026 export-control episode. Only dates verified in
+    sources get a position; the open-weight release is a note ('within days')."""
+    import datetime as dt
+    W, H = 900, 520
+    x0, x1 = 80, 840
+    d0, d1 = dt.date(2026, 6, 10), dt.date(2026, 7, 3)
+    X = lambda d: x0 + (d - d0).days / (d1 - d0).days * (x1 - x0)
+    axis_y = 250
+    body = ''
+    # stage bands
+    body += f'<rect x="{X(dt.date(2026,6,12)):.1f}" y="120" width="{X(dt.date(2026,6,26))-X(dt.date(2026,6,12)):.1f}" height="16" rx="4" fill="{AMBER}" fill-opacity="0.85"/>\n'
+    body += f'<text x="{X(dt.date(2026,6,12))+8:.1f}" y="132" font-size="11" fill="{BG}" font-weight="600">STAGE 2: THE PANIC AND THE PLUG</text>\n'
+    body += f'<rect x="{X(dt.date(2026,6,26)):.1f}" y="120" width="{X(dt.date(2026,7,1))-X(dt.date(2026,6,26)):.1f}" height="16" rx="4" fill="{BLUE}" fill-opacity="0.9"/>\n'
+    body += f'<text x="{X(dt.date(2026,6,26))+6:.1f}" y="132" font-size="11" fill="{INK}" font-weight="600">STAGE 3</text>\n'
+    body += f'<line x1="{x0}" y1="{axis_y}" x2="{x1}" y2="{axis_y}" stroke="{FAINT}" stroke-width="2"/>\n'
+    for d in (dt.date(2026,6,15), dt.date(2026,6,22), dt.date(2026,6,29)):
+        body += f'<text x="{X(d):.1f}" y="{axis_y+22}" font-size="10.5" fill="{MUTED}" text-anchor="middle">{d.strftime("%b %-d")}</text>\n'
+    events = [
+        (dt.date(2026,6,12), 'up', 'JUNE 12', ['Commerce requires a license', 'for two frontier models;', 'the lab switches them off', 'worldwide']),
+        (dt.date(2026,6,26), 'down', 'JUNE 26', ['Trusted partners exempted', 'for critical infrastructure']),
+        (dt.date(2026,6,30), 'up', 'JUNE 30', ['Controls lifted, on', 'conditions: detect risks,', 'report misuse, set standards']),
+        (dt.date(2026,7,1), 'down2', 'JULY 1', ['Access begins returning']),
+    ]
+    for d, side, label, lines in events:
+        x = X(d)
+        body += f'<circle cx="{x:.1f}" cy="{axis_y}" r="7" fill="{AMBER if d < dt.date(2026,6,26) else BLUE}" stroke="{BG}" stroke-width="2"/>\n'
+        if side == 'up':
+            ty = 158
+            body += f'<line x1="{x:.1f}" y1="{ty+len(lines)*15+4}" x2="{x:.1f}" y2="{axis_y-9}" stroke="{FAINT}" stroke-width="1"/>\n'
+        else:
+            ty = axis_y + (44 if side == 'down' else 104)
+            body += f'<line x1="{x:.1f}" y1="{axis_y+9}" x2="{x:.1f}" y2="{ty-12}" stroke="{FAINT}" stroke-width="1"/>\n'
+        anchor = 'end' if x > 590 else 'start'
+        tx = x - 6 if anchor == 'end' else x + 6
+        body += f'<text x="{tx:.1f}" y="{ty}" font-size="12" font-weight="600" fill="{INK}" text-anchor="{anchor}">{label}</text>\n'
+        for i, ln in enumerate(lines):
+            body += f'<text x="{tx:.1f}" y="{ty+16+i*15}" font-size="11.5" fill="{MUTED}" text-anchor="{anchor}">{esc(ln)}</text>\n'
+    body += f'<text x="{x0}" y="{H-70}" font-size="11.5" fill="{MUTED}">Within days of the order, a Chinese lab published an open-weight model under an MIT license:</text>\n'
+    body += f'<text x="{x0}" y="{H-54}" font-size="11.5" fill="{MUTED}">"no regional limits, technical access without borders."</text>\n'
+    return frame(W, H, 'PANIC TO PAPERWORK IN EIGHTEEN DAYS', 'June 12 to June 30, 2026: Stage 2 and Stage 3 of this chapter, run at speed.',
+                 body, 'Sources: Mayer Brown (June 30, 2026); Al Jazeera (July 1, 2026); Z.ai GLM-5.2 model card. Details in the chapter.')
+
+
+def capability_to_access():
+    """Chapter 6: capability, deployment, ownership and access are different events."""
+    W, H = 900, 400
+    steps = [('CAPABILITY', 'Can a machine', 'do the task?'), ('DEPLOYMENT', 'Is it working', 'somewhere real?'),
+             ('OWNERSHIP', 'Who controls it', 'and sets the price?'), ('ACCESS', 'Can a person get it', 'without money?')]
+    bw, gap, y = 170, 26, 150
+    x0 = (W - (4 * bw + 3 * gap)) / 2
+    body = ''
+    for i, (t, a, b) in enumerate(steps):
+        x = x0 + i * (bw + gap)
+        stroke = BLUE if i == 3 else AMBER
+        body += f'<rect x="{x:.1f}" y="{y}" width="{bw}" height="96" rx="10" fill="{CARD}" stroke="{stroke}" stroke-width="2"/>\n'
+        body += f'<text x="{x+bw/2:.1f}" y="{y+30}" font-size="13.5" font-weight="600" fill="{INK}" text-anchor="middle">{t}</text>\n'
+        body += f'<text x="{x+bw/2:.1f}" y="{y+56}" font-size="11.5" fill="{MUTED}" text-anchor="middle">{esc(a)}</text>\n'
+        body += f'<text x="{x+bw/2:.1f}" y="{y+72}" font-size="11.5" fill="{MUTED}" text-anchor="middle">{esc(b)}</text>\n'
+        if i < 3:
+            gx = x + bw + gap / 2
+            body += f'<text x="{gx:.1f}" y="{y+54}" font-size="20" fill="{BRAND}" text-anchor="middle">&#8250;</text>\n'
+    body += f'<text x="{W/2:.0f}" y="{y+140}" font-size="13" fill="{INK}" text-anchor="middle">A tool can get better while its price goes up. A town can hold a productive farm</text>\n'
+    body += f'<text x="{W/2:.0f}" y="{y+160}" font-size="13" fill="{INK}" text-anchor="middle">and people who can\'t afford its food. The gaps between these boxes are the part we get to decide.</text>\n'
+    return frame(W, H, 'THE GAP IS WHERE WE DECIDE', 'Four different events, often confused for one.', body, 'Chapter 6.')
+
+
 if __name__ == '__main__':
     for name, fn in (('ch05-horses-tractors.svg', horses_tractors),
                      ('intro-food-insecurity.svg', food_insecurity),
                      ('appd-precedent-timeline.svg', precedent_timeline),
-                     ('ch19-conversion-ladder.svg', conversion_ladder)):
+                     ('ch19-conversion-ladder.svg', conversion_ladder),
+                     ('ch02-eighteen-days.svg', eighteen_days),
+                     ('ch06-capability-access.svg', capability_to_access)):
         (OUT / name).write_text(fn())
         print('wrote', OUT / name)

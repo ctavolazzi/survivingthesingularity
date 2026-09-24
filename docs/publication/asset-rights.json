@@ -2508,6 +2508,28 @@
    ]
   },
   {
+   "file": "ch02-eighteen-days.svg",
+   "path": "static/book-images/ch02-eighteen-days.svg",
+   "section": "04-chapter2.md",
+   "sha256": "1f844cb170df5819927c4ff6be56e05197ef8a35c42dad8cba73530ecaa9dec2",
+   "audited_for": "v0.9.2",
+   "kind": "generated",
+   "status": "retain",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data, sourced reporting, or the book's own text; no third-party artwork.",
+   "size": null
+  },
+  {
+   "file": "ch06-capability-access.svg",
+   "path": "static/book-images/ch06-capability-access.svg",
+   "section": "08-chapter6.md",
+   "sha256": "200e895b78f60738a8a3b3e3fe38f3aa9f87fb8817b838c0ba16af9c2220f861",
+   "audited_for": "v0.9.2",
+   "kind": "generated",
+   "status": "retain",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data, sourced reporting, or the book's own text; no third-party artwork.",
+   "size": null
+  },
+  {
    "file": "ch05-horses-tractors.svg",
    "path": "static/book-images/ch05-horses-tractors.svg",
    "section": "07-chapter5.md",
@@ -2515,7 +2537,7 @@
    "audited_for": "v0.9.2",
    "kind": "generated",
    "status": "retain",
-   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data, sourced reporting, or the book's own text; no third-party artwork.",
    "size": null
   },
   {
@@ -2526,7 +2548,7 @@
    "audited_for": "v0.9.2",
    "kind": "generated",
    "status": "retain",
-   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data, sourced reporting, or the book's own text; no third-party artwork.",
    "size": null
   },
   {
@@ -2537,7 +2559,7 @@
    "audited_for": "v0.9.2",
    "kind": "generated",
    "status": "retain",
-   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data, sourced reporting, or the book's own text; no third-party artwork.",
    "size": null
   },
   {
@@ -2548,7 +2570,7 @@
    "audited_for": "v0.9.2",
    "kind": "generated",
    "status": "retain",
-   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data, sourced reporting, or the book's own text; no third-party artwork.",
    "size": null
   }
  ],

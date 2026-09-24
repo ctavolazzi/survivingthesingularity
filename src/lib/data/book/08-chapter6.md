@@ -70,6 +70,10 @@ Elijah arrives with a forecast. Marta has a workshop, a history, and a bill for 
 
 It's an easy mistake. Show someone a machine doing something remarkable and the conversation leaps straight to what society must become. But capability, deployment, ownership, and access are different events. A tool can get better while its price goes up. A company can increase output while cutting payroll. A town can contain a productive farm and people who can't afford its food.
 
+![Four boxes in a row, capability, deployment, ownership, and access, each asking its own question, with the gaps between them labeled as the part we get to decide](/book-images/ch06-capability-access.svg)
+
+*Four different events, often mistaken for one.*
+
 That gap between what's possible and what reaches people is the part we get to decide. As machines take on more necessary work, use the gains to make necessities dependable. Start with food. Make a lost paycheck less able to turn an ordinary evening into an emergency.
 
 That choice doesn't depend on my date. If progress is slower than I expect, people still need to eat. If only some jobs disappear, the people who lose them still count. The International Labour Organization's 2025 analysis estimates which occupations are *exposed* to generative AI, not how many jobs are already gone, and concludes that for most exposed jobs transformation is more likely than outright replacement. [ILO, Generative AI and Jobs: A 2025 Update](https://www.ilo.org/publications/generative-ai-and-jobs-2025-update) Good. That's a reason to be careful about predicting universal unemployment. It's not a reason to make the unlucky worker's dinner depend on the average outcome.

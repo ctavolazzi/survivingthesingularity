@@ -252,7 +252,7 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - The Guardian, ["The rebel group stopping self-driving cars in San Francisco"](https://www.theguardian.com/us-news/2023/jul/26/san-francisco-stop-self-driving-cars-traffic-cone-safe-street-rebel) (26 July 2023), on Safe Street Rebel and coning.
 - Brian Merchant, *Blood in the Machine* (Little, Brown, 2023).
 - American Federation of Musicians, the robot advertisements in [*Exhibitors Herald-World*, 16 November 1929](https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up) and [17 May 1930](https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up); Smithsonian Magazine, ["Musicians Wage War Against Evil Robots"](https://www.smithsonianmag.com/history/musicians-wage-war-against-evil-robots-92702721/).
-- [Home Taping Is Killing Music](https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music) (BPI, 1981); Jack Valenti's 1982 testimony to the House Judiciary subcommittee on home recording; *Sony Corp. of America v. Universal City Studios* (1984).
+- [Home Taping Is Killing Music](https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music) (BPI, 1981); Jack Valenti's 1982 testimony to the House Judiciary subcommittee on home recording; [*Sony Corp. of America v. Universal City Studios*, 464 U.S. 417 (1984)](https://www.law.cornell.edu/supremecourt/text/464/417).
 
 ### Chapter 8: attention and cooperation
 
@@ -273,7 +273,7 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 
 - USDA, [Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs). The 30 to 40 percent estimate of food waste at the retail and consumer levels.
 - CalRecycle, [SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/), the state's account of the edible-food-recovery requirements and the 20 percent recovery target for 2025; NPR, [French Food Waste Law Changing How Grocery Stores Approach Excess Food](https://www.npr.org/sections/thesalt/2018/02/24/586579455/french-food-waste-law-changing-how-grocery-stores-approach-excess-food) (2018), on France's 2016 law (Law 2016-138, the Garot law).
-- Snopes, [Kodak's digital camera](https://www.snopes.com/fact-check/kodak-digital-camera-invention/), on Sasson's account of management's response; Fortune, ["Sears Could've Been Amazon"](https://fortune.com/longform/sears-couldve-been-amazon/); Variety, ["How Blockbuster Could Have Owned Netflix"](https://variety.com/2013/biz/news/epic-fail-how-blockbuster-could-have-owned-netflix-1200823443/); [Borders Group](https://en.wikipedia.org/wiki/Borders_Group).
+- Snopes, [Kodak's digital camera](https://www.snopes.com/fact-check/kodak-digital-camera-invention/), on Sasson's account of management's response; Fortune, ["Sears Could've Been Amazon"](https://fortune.com/longform/sears-couldve-been-amazon/); Variety, ["How Blockbuster Could Have Owned Netflix"](https://variety.com/2013/biz/news/epic-fail-how-blockbuster-could-have-owned-netflix-1200823443/); Slate, [Borders bankruptcy: Done in by its own stupidity, not the Internet](https://slate.com/business/2011/07/borders-bankruptcy-done-in-by-its-own-stupidity-not-the-internet.html) (July 2011).
 
 ### Chapter 17: tools
 

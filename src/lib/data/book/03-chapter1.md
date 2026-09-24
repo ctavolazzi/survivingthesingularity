@@ -173,6 +173,8 @@ The same survey put a 10 percent probability on high-level machine intelligence 
 
 So write my date down and hold me to it. Thanksgiving can come and go without anyone getting permission to pretend a missed forecast was secretly a different forecast all along. And here's the part that matters: the food-first proposal survives a late arrival. People can improve food access with tools and organizations that already exist while the capability develops. We don't need a machine that's good at everything before we ask it to help with something useful.
 
+If you're reading this after November 25, 2027, you already know how my date did. Check it against the two tests above, brittle on unfamiliar work or reliably broad, and grade me honestly. Then turn the page anyway. Everything from here on was written to be true on both sides of that Thanksgiving.
+
 ## Who gets the savings?
 
 If thinking gets cheap, somebody saves a lot of money. The question is who.

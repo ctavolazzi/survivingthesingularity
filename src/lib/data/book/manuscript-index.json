@@ -4,9 +4,9 @@
   "generated": "2026-09-24",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
-    "sections": 34,
-    "blocks": 2180,
-    "words": 96532
+    "sections": 35,
+    "blocks": 2184,
+    "words": 96668
   },
   "sections": [
     {
@@ -14,7 +14,7 @@
       "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md",
       "next_ordinal": 160,
-      "words": 3882,
+      "words": 3734,
       "tombstones": [
         "sts.introduction.b0003",
         "sts.introduction.b0004",
@@ -87,7 +87,11 @@
         "sts.introduction.b0073",
         "sts.introduction.b0074",
         "sts.introduction.b0075",
-        "sts.introduction.b0076"
+        "sts.introduction.b0076",
+        "sts.introduction.b0155",
+        "sts.introduction.b0156",
+        "sts.introduction.b0158",
+        "sts.introduction.b0159"
       ],
       "blocks": [
         {
@@ -918,8 +922,8 @@
             153,
             153
           ],
-          "words": 94,
-          "hash": "0421005a11b6",
+          "words": 98,
+          "hash": "1d6678018f2b",
           "preview": "So this book carries its case law with it. It's called the Precedent Ledger: twenty-four d"
         },
         {
@@ -990,67 +994,22 @@
           "preview": "You don't need land, a server rack, a particular politics, or the energy to reinvent your "
         },
         {
-          "id": "sts.introduction.b0155",
-          "type": "heading",
+          "id": "sts.introduction.b0157",
+          "type": "paragraph",
           "lines": [
             167,
             167
           ],
-          "words": 5,
-          "hash": "ef1d759982bc",
-          "preview": "### Three ways to read it",
-          "level": 3
-        },
-        {
-          "id": "sts.introduction.b0156",
-          "type": "list",
-          "lines": [
-            169,
-            171
-          ],
-          "words": 69,
-          "hash": "ea29bb65ff81",
-          "preview": "- **Twenty minutes.** This Introduction, Chapter 19, and Appendix C. You'll have the argum"
-        },
-        {
-          "id": "sts.introduction.b0157",
-          "type": "paragraph",
-          "lines": [
-            173,
-            173
-          ],
-          "words": 6,
-          "hash": "4d9eb3ff7fc4",
-          "preview": "Or start from where you're standing:"
-        },
-        {
-          "id": "sts.introduction.b0158",
-          "type": "table",
-          "lines": [
-            175,
-            181
-          ],
-          "words": 57,
-          "hash": "2df907d6981b",
-          "preview": "| If you are... | Start with | | --- | --- | | Worried about your job | Chapters 6, 7, 11,"
-        },
-        {
-          "id": "sts.introduction.b0159",
-          "type": "paragraph",
-          "lines": [
-            183,
-            183
-          ],
-          "words": 36,
-          "hash": "6334e1b4504f",
-          "preview": "Every term you might trip on is in the Glossary (Appendix F). Appendix G turns every pract"
+          "words": 21,
+          "hash": "225032da102c",
+          "preview": "There's a one-page guide to reading it, by the time you have and by who you are, right aft"
         },
         {
           "id": "sts.introduction.b0133",
           "type": "paragraph",
           "lines": [
-            185,
-            185
+            169,
+            169
           ],
           "words": 41,
           "hash": "89713e8a3df1",
@@ -1060,8 +1019,8 @@
           "id": "sts.introduction.b0134",
           "type": "paragraph",
           "lines": [
-            187,
-            187
+            171,
+            171
           ],
           "words": 34,
           "hash": "dce1ee7e7246",
@@ -1536,6 +1495,96 @@
           "words": 0,
           "hash": "ebad27de99a8",
           "preview": "---"
+        }
+      ]
+    },
+    {
+      "id": "how-to-use",
+      "title": "How to Use This Book",
+      "file": "31-how-to-use.md",
+      "next_ordinal": 8,
+      "words": 189,
+      "tombstones": [],
+      "blocks": [
+        {
+          "id": "sts.how-to-use.b0001",
+          "type": "heading",
+          "lines": [
+            1,
+            1
+          ],
+          "words": 5,
+          "hash": "2eb1201b9388",
+          "preview": "# How to Use This Book",
+          "level": 1
+        },
+        {
+          "id": "sts.how-to-use.b0002",
+          "type": "paragraph",
+          "lines": [
+            3,
+            3
+          ],
+          "words": 12,
+          "hash": "6fe580718db4",
+          "preview": "*Three ways in, and a place to start for whoever you are.*"
+        },
+        {
+          "id": "sts.how-to-use.b0003",
+          "type": "heading",
+          "lines": [
+            5,
+            5
+          ],
+          "words": 5,
+          "hash": "81c9e2ca0412",
+          "preview": "## Three ways to read it",
+          "level": 2
+        },
+        {
+          "id": "sts.how-to-use.b0004",
+          "type": "list",
+          "lines": [
+            7,
+            9
+          ],
+          "words": 69,
+          "hash": "6b67fb2b902e",
+          "preview": "- **Twenty minutes.** The Introduction, Chapter 19, and Appendix C. You'll have the argume"
+        },
+        {
+          "id": "sts.how-to-use.b0005",
+          "type": "heading",
+          "lines": [
+            11,
+            11
+          ],
+          "words": 5,
+          "hash": "0ed3f4b5bad0",
+          "preview": "## Start from where you're standing",
+          "level": 2
+        },
+        {
+          "id": "sts.how-to-use.b0006",
+          "type": "table",
+          "lines": [
+            13,
+            19
+          ],
+          "words": 57,
+          "hash": "2df907d6981b",
+          "preview": "| If you are... | Start with | | --- | --- | | Worried about your job | Chapters 6, 7, 11,"
+        },
+        {
+          "id": "sts.how-to-use.b0007",
+          "type": "paragraph",
+          "lines": [
+            21,
+            21
+          ],
+          "words": 36,
+          "hash": "6334e1b4504f",
+          "preview": "Every term you might trip on is in the Glossary (Appendix F). Appendix G turns every pract"
         }
       ]
     },
@@ -2594,8 +2643,8 @@
       "id": "chapter1",
       "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md",
-      "next_ordinal": 174,
-      "words": 4547,
+      "next_ordinal": 175,
+      "words": 4600,
       "tombstones": [
         "sts.chapter1.b0003",
         "sts.chapter1.b0006",
@@ -3568,11 +3617,22 @@
           "preview": "So write my date down and hold me to it. Thanksgiving can come and go without anyone getti"
         },
         {
-          "id": "sts.chapter1.b0160",
-          "type": "heading",
+          "id": "sts.chapter1.b0174",
+          "type": "paragraph",
           "lines": [
             176,
             176
+          ],
+          "words": 53,
+          "hash": "6bfb8d1df490",
+          "preview": "If you're reading this after November 25, 2027, you already know how my date did. Check it"
+        },
+        {
+          "id": "sts.chapter1.b0160",
+          "type": "heading",
+          "lines": [
+            178,
+            178
           ],
           "words": 4,
           "hash": "86d4e593f8e2",
@@ -3583,8 +3643,8 @@
           "id": "sts.chapter1.b0161",
           "type": "paragraph",
           "lines": [
-            178,
-            178
+            180,
+            180
           ],
           "words": 14,
           "hash": "cb8eb4929c7d",
@@ -3594,8 +3654,8 @@
           "id": "sts.chapter1.b0162",
           "type": "paragraph",
           "lines": [
-            180,
-            180
+            182,
+            182
           ],
           "words": 60,
           "hash": "f3be8311d27d",
@@ -3605,8 +3665,8 @@
           "id": "sts.chapter1.b0163",
           "type": "paragraph",
           "lines": [
-            182,
-            182
+            184,
+            184
           ],
           "words": 126,
           "hash": "4d36cd3194b2",
@@ -3616,8 +3676,8 @@
           "id": "sts.chapter1.b0119",
           "type": "heading",
           "lines": [
-            184,
-            184
+            186,
+            186
           ],
           "words": 6,
           "hash": "f00e90c7f205",
@@ -3628,8 +3688,8 @@
           "id": "sts.chapter1.b0164",
           "type": "paragraph",
           "lines": [
-            186,
-            186
+            188,
+            188
           ],
           "words": 57,
           "hash": "7cae69768803",
@@ -3639,8 +3699,8 @@
           "id": "sts.chapter1.b0165",
           "type": "paragraph",
           "lines": [
-            188,
-            188
+            190,
+            190
           ],
           "words": 17,
           "hash": "d0030c560894",
@@ -3650,8 +3710,8 @@
           "id": "sts.chapter1.b0053",
           "type": "hr",
           "lines": [
-            190,
-            190
+            192,
+            192
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -3661,8 +3721,8 @@
           "id": "sts.chapter1.b0054",
           "type": "heading",
           "lines": [
-            192,
-            192
+            194,
+            194
           ],
           "words": 11,
           "hash": "d093e8ad6f1c",
@@ -3673,8 +3733,8 @@
           "id": "sts.chapter1.b0166",
           "type": "paragraph",
           "lines": [
-            194,
-            194
+            196,
+            196
           ],
           "words": 61,
           "hash": "055c66c68788",
@@ -3684,8 +3744,8 @@
           "id": "sts.chapter1.b0167",
           "type": "paragraph",
           "lines": [
-            196,
-            196
+            198,
+            198
           ],
           "words": 13,
           "hash": "aa37ed36be1c",
@@ -3695,8 +3755,8 @@
           "id": "sts.chapter1.b0168",
           "type": "paragraph",
           "lines": [
-            198,
-            198
+            200,
+            200
           ],
           "words": 53,
           "hash": "97c6cabf38b1",
@@ -3706,8 +3766,8 @@
           "id": "sts.chapter1.b0169",
           "type": "paragraph",
           "lines": [
-            200,
-            200
+            202,
+            202
           ],
           "words": 147,
           "hash": "290c5b8b53e3",
@@ -3717,8 +3777,8 @@
           "id": "sts.chapter1.b0170",
           "type": "paragraph",
           "lines": [
-            202,
-            202
+            204,
+            204
           ],
           "words": 25,
           "hash": "e89bbf731b58",
@@ -3728,8 +3788,8 @@
           "id": "sts.chapter1.b0171",
           "type": "paragraph",
           "lines": [
-            204,
-            204
+            206,
+            206
           ],
           "words": 60,
           "hash": "150428310d14",
@@ -3739,8 +3799,8 @@
           "id": "sts.chapter1.b0172",
           "type": "paragraph",
           "lines": [
-            206,
-            206
+            208,
+            208
           ],
           "words": 27,
           "hash": "2956273d52cc",
@@ -3750,8 +3810,8 @@
           "id": "sts.chapter1.b0060",
           "type": "paragraph",
           "lines": [
-            208,
-            208
+            210,
+            210
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -3761,8 +3821,8 @@
           "id": "sts.chapter1.b0126",
           "type": "list",
           "lines": [
-            210,
-            212
+            212,
+            214
           ],
           "words": 152,
           "hash": "55fb19ee2af1",
@@ -3772,8 +3832,8 @@
           "id": "sts.chapter1.b0096",
           "type": "hr",
           "lines": [
-            214,
-            214
+            216,
+            216
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -4713,7 +4773,7 @@
       "title": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)",
       "file": "05-chapter3.md",
       "next_ordinal": 96,
-      "words": 2461,
+      "words": 2504,
       "tombstones": [
         "sts.chapter3.b0003",
         "sts.chapter3.b0004",
@@ -4817,18 +4877,18 @@
           "type": "list",
           "lines": [
             15,
-            18
+            19
           ],
-          "words": 64,
-          "hash": "b03449984b73",
+          "words": 107,
+          "hash": "e61b7213dbb0",
           "preview": "- Recursive self-improvement is the tipping point: a process that upgrades the thing doing"
         },
         {
           "id": "sts.chapter3.b0007",
           "type": "hr",
           "lines": [
-            20,
-            20
+            21,
+            21
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -4838,8 +4898,8 @@
           "id": "sts.chapter3.b0008",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            23,
+            23
           ],
           "words": 9,
           "hash": "693bb83cccbd",
@@ -4849,8 +4909,8 @@
           "id": "sts.chapter3.b0009",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            25,
+            25
           ],
           "words": 118,
           "hash": "fe9467169e8f",
@@ -4860,8 +4920,8 @@
           "id": "sts.chapter3.b0010",
           "type": "paragraph",
           "lines": [
-            26,
-            26
+            27,
+            27
           ],
           "words": 26,
           "hash": "f596b2a5c1aa",
@@ -4871,8 +4931,8 @@
           "id": "sts.chapter3.b0011",
           "type": "paragraph",
           "lines": [
-            28,
-            28
+            29,
+            29
           ],
           "words": 109,
           "hash": "768353fbc301",
@@ -4882,8 +4942,8 @@
           "id": "sts.chapter3.b0084",
           "type": "paragraph",
           "lines": [
-            30,
-            30
+            31,
+            31
           ],
           "words": 113,
           "hash": "c8e47b9e8a17",
@@ -4893,8 +4953,8 @@
           "id": "sts.chapter3.b0013",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            33,
+            33
           ],
           "words": 33,
           "hash": "a58acb3f7f93",
@@ -4904,8 +4964,8 @@
           "id": "sts.chapter3.b0014",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            35,
+            35
           ],
           "words": 17,
           "hash": "18c95b790cf9",
@@ -4915,8 +4975,8 @@
           "id": "sts.chapter3.b0015",
           "type": "paragraph",
           "lines": [
-            36,
-            36
+            37,
+            37
           ],
           "words": 47,
           "hash": "7e0b919271e7",
@@ -4926,8 +4986,8 @@
           "id": "sts.chapter3.b0016",
           "type": "paragraph",
           "lines": [
-            38,
-            38
+            39,
+            39
           ],
           "words": 6,
           "hash": "986572114898",
@@ -4937,8 +4997,8 @@
           "id": "sts.chapter3.b0017",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            41,
+            41
           ],
           "words": 44,
           "hash": "4feb3e9d5778",
@@ -4948,8 +5008,8 @@
           "id": "sts.chapter3.b0018",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            43,
+            43
           ],
           "words": 19,
           "hash": "c715f3c73931",
@@ -4959,8 +5019,8 @@
           "id": "sts.chapter3.b0019",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            45,
+            45
           ],
           "words": 112,
           "hash": "25e903661a01",
@@ -4970,8 +5030,8 @@
           "id": "sts.chapter3.b0020",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            47,
+            47
           ],
           "words": 9,
           "hash": "92ba3be7d5ba",
@@ -4981,8 +5041,8 @@
           "id": "sts.chapter3.b0021",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            49,
+            49
           ],
           "words": 71,
           "hash": "950efccb9059",
@@ -4992,8 +5052,8 @@
           "id": "sts.chapter3.b0085",
           "type": "paragraph",
           "lines": [
-            50,
-            50
+            51,
+            51
           ],
           "words": 122,
           "hash": "6e6e230b856b",
@@ -5003,8 +5063,8 @@
           "id": "sts.chapter3.b0023",
           "type": "paragraph",
           "lines": [
-            52,
-            52
+            53,
+            53
           ],
           "words": 11,
           "hash": "3dac8752f41d",
@@ -5014,8 +5074,8 @@
           "id": "sts.chapter3.b0024",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            55,
+            55
           ],
           "words": 100,
           "hash": "d24d55b4775c",
@@ -5025,8 +5085,8 @@
           "id": "sts.chapter3.b0025",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            57,
+            57
           ],
           "words": 44,
           "hash": "961d74332d82",
@@ -5036,8 +5096,8 @@
           "id": "sts.chapter3.b0026",
           "type": "hr",
           "lines": [
-            58,
-            58
+            59,
+            59
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -5047,8 +5107,8 @@
           "id": "sts.chapter3.b0027",
           "type": "heading",
           "lines": [
-            60,
-            60
+            61,
+            61
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -5059,8 +5119,8 @@
           "id": "sts.chapter3.b0061",
           "type": "heading",
           "lines": [
-            62,
-            62
+            63,
+            63
           ],
           "words": 3,
           "hash": "817d9cb4b01e",
@@ -5071,8 +5131,8 @@
           "id": "sts.chapter3.b0086",
           "type": "paragraph",
           "lines": [
-            64,
-            64
+            65,
+            65
           ],
           "words": 72,
           "hash": "577fdf022cfd",
@@ -5082,8 +5142,8 @@
           "id": "sts.chapter3.b0064",
           "type": "heading",
           "lines": [
-            66,
-            66
+            67,
+            67
           ],
           "words": 5,
           "hash": "a7ec7f2a6d1f",
@@ -5094,8 +5154,8 @@
           "id": "sts.chapter3.b0062",
           "type": "paragraph",
           "lines": [
-            68,
-            68
+            69,
+            69
           ],
           "words": 8,
           "hash": "f327e02fb3ab",
@@ -5105,8 +5165,8 @@
           "id": "sts.chapter3.b0063",
           "type": "paragraph",
           "lines": [
-            70,
-            70
+            71,
+            71
           ],
           "words": 63,
           "hash": "bbcc4bcec96e",
@@ -5116,8 +5176,8 @@
           "id": "sts.chapter3.b0065",
           "type": "paragraph",
           "lines": [
-            72,
-            72
+            73,
+            73
           ],
           "words": 71,
           "hash": "06b85d01d233",
@@ -5127,8 +5187,8 @@
           "id": "sts.chapter3.b0087",
           "type": "paragraph",
           "lines": [
-            74,
-            74
+            75,
+            75
           ],
           "words": 4,
           "hash": "76e7898d0f04",
@@ -5138,8 +5198,8 @@
           "id": "sts.chapter3.b0067",
           "type": "paragraph",
           "lines": [
-            76,
-            76
+            77,
+            77
           ],
           "words": 29,
           "hash": "e2e67918cfd1",
@@ -5149,8 +5209,8 @@
           "id": "sts.chapter3.b0068",
           "type": "paragraph",
           "lines": [
-            78,
-            78
+            79,
+            79
           ],
           "words": 60,
           "hash": "948e27c261e6",
@@ -5160,8 +5220,8 @@
           "id": "sts.chapter3.b0088",
           "type": "paragraph",
           "lines": [
-            80,
-            80
+            81,
+            81
           ],
           "words": 63,
           "hash": "289e54364107",
@@ -5171,8 +5231,8 @@
           "id": "sts.chapter3.b0089",
           "type": "paragraph",
           "lines": [
-            82,
-            82
+            83,
+            83
           ],
           "words": 61,
           "hash": "4b7b7144d4c8",
@@ -5182,8 +5242,8 @@
           "id": "sts.chapter3.b0057",
           "type": "heading",
           "lines": [
-            84,
-            84
+            85,
+            85
           ],
           "words": 8,
           "hash": "04f3ffea8ad5",
@@ -5194,8 +5254,8 @@
           "id": "sts.chapter3.b0079",
           "type": "paragraph",
           "lines": [
-            86,
-            86
+            87,
+            87
           ],
           "words": 52,
           "hash": "207ffe8efa96",
@@ -5205,8 +5265,8 @@
           "id": "sts.chapter3.b0080",
           "type": "paragraph",
           "lines": [
-            88,
-            88
+            89,
+            89
           ],
           "words": 133,
           "hash": "1cc029042af3",
@@ -5216,8 +5276,8 @@
           "id": "sts.chapter3.b0081",
           "type": "paragraph",
           "lines": [
-            90,
-            90
+            91,
+            91
           ],
           "words": 21,
           "hash": "db6f7a3f59ca",
@@ -5227,8 +5287,8 @@
           "id": "sts.chapter3.b0082",
           "type": "paragraph",
           "lines": [
-            92,
-            92
+            93,
+            93
           ],
           "words": 86,
           "hash": "fe6bbab629f2",
@@ -5238,8 +5298,8 @@
           "id": "sts.chapter3.b0072",
           "type": "paragraph",
           "lines": [
-            94,
-            94
+            95,
+            95
           ],
           "words": 57,
           "hash": "2cad40180229",
@@ -5249,8 +5309,8 @@
           "id": "sts.chapter3.b0058",
           "type": "heading",
           "lines": [
-            96,
-            96
+            97,
+            97
           ],
           "words": 5,
           "hash": "9abbb2ef94de",
@@ -5261,8 +5321,8 @@
           "id": "sts.chapter3.b0073",
           "type": "paragraph",
           "lines": [
-            98,
-            98
+            99,
+            99
           ],
           "words": 36,
           "hash": "216c86309601",
@@ -5272,8 +5332,8 @@
           "id": "sts.chapter3.b0074",
           "type": "paragraph",
           "lines": [
-            100,
-            100
+            101,
+            101
           ],
           "words": 30,
           "hash": "9dc654635c68",
@@ -5283,8 +5343,8 @@
           "id": "sts.chapter3.b0049",
           "type": "hr",
           "lines": [
-            102,
-            102
+            103,
+            103
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -5294,8 +5354,8 @@
           "id": "sts.chapter3.b0094",
           "type": "heading",
           "lines": [
-            104,
-            104
+            105,
+            105
           ],
           "words": 12,
           "hash": "26db977524d1",
@@ -5306,8 +5366,8 @@
           "id": "sts.chapter3.b0090",
           "type": "paragraph",
           "lines": [
-            106,
-            106
+            107,
+            107
           ],
           "words": 45,
           "hash": "30b6453457cf",
@@ -5317,8 +5377,8 @@
           "id": "sts.chapter3.b0091",
           "type": "paragraph",
           "lines": [
-            108,
-            108
+            109,
+            109
           ],
           "words": 115,
           "hash": "a3acf67f9bdb",
@@ -5328,8 +5388,8 @@
           "id": "sts.chapter3.b0092",
           "type": "paragraph",
           "lines": [
-            110,
-            110
+            111,
+            111
           ],
           "words": 53,
           "hash": "5ca0dde592d0",
@@ -5339,8 +5399,8 @@
           "id": "sts.chapter3.b0093",
           "type": "paragraph",
           "lines": [
-            112,
-            112
+            113,
+            113
           ],
           "words": 54,
           "hash": "f56b2b92e76f",
@@ -5350,8 +5410,8 @@
           "id": "sts.chapter3.b0075",
           "type": "paragraph",
           "lines": [
-            114,
-            114
+            115,
+            115
           ],
           "words": 37,
           "hash": "a4ea413e6ffc",
@@ -5361,8 +5421,8 @@
           "id": "sts.chapter3.b0076",
           "type": "paragraph",
           "lines": [
-            116,
-            116
+            117,
+            117
           ],
           "words": 22,
           "hash": "e7b7a15bc4ac",
@@ -5372,8 +5432,8 @@
           "id": "sts.chapter3.b0055",
           "type": "paragraph",
           "lines": [
-            118,
-            118
+            119,
+            119
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -5383,8 +5443,8 @@
           "id": "sts.chapter3.b0078",
           "type": "list",
           "lines": [
-            120,
-            122
+            121,
+            123
           ],
           "words": 116,
           "hash": "c95122e28ff5",
@@ -5394,8 +5454,8 @@
           "id": "sts.chapter3.b0059",
           "type": "hr",
           "lines": [
-            124,
-            124
+            125,
+            125
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -21380,10 +21440,10 @@
     },
     {
       "id": "chapter19",
-      "title": "Chapter 19: We Don't Have to Live Like This",
+      "title": "Chapter 19: The Ladder: How Money Becomes Optional",
       "file": "27-chapter19.md",
       "next_ordinal": 74,
-      "words": 2571,
+      "words": 2570,
       "tombstones": [],
       "blocks": [
         {
@@ -21393,9 +21453,9 @@
             1,
             1
           ],
-          "words": 9,
-          "hash": "833d9d9351fb",
-          "preview": "# Chapter 19: We Don't Have to Live Like This",
+          "words": 8,
+          "hash": "6f032de3f40c",
+          "preview": "# Chapter 19: The Ladder: How Money Becomes Optional",
           "level": 1
         },
         {
@@ -22771,7 +22831,7 @@
             90
           ],
           "words": 71,
-          "hash": "ee5976d36eff",
+          "hash": "217d81395ca0",
           "preview": "**The rule.** Let actual results change the plan, including your optimistic plan. You're l"
         },
         {

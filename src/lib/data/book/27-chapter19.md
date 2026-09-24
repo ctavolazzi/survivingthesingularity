@@ -1,4 +1,4 @@
-# Chapter 19: We Don't Have to Live Like This
+# Chapter 19: The Ladder: How Money Becomes Optional
 
 ![A ladder of nine rungs, from counting what is wasted at the bottom to keeping the market above the floor at the top, grouped into three bands: feed people now, change who owns and decides, and widen the floor](/book-images/ch19-conversion-ladder.svg)
 

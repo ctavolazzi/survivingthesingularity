@@ -226,7 +226,7 @@ def conversion_ladder():
     body += f'<text x="326" y="{ly+11}" font-size="11" fill="{MUTED}">already done somewhere</text>\n'
     body += f'<rect x="520" y="{ly}" width="18" height="12" rx="3" fill="{CARD}" stroke="{BLUE}" stroke-width="2"/>\n'
     body += f'<text x="546" y="{ly+11}" font-size="11" fill="{MUTED}">how you hold it together</text>\n'
-    return frame(W, H, 'WE DON\'T HAVE TO LIVE LIKE THIS', 'Nine rungs, from the bottom up. Start with food. Climb as far as your town can hold.',
+    return frame(W, H, 'THE LADDER', 'Nine rungs, from the bottom up. Start with food. Climb as far as your town can hold.',
                  body, 'Chapter 19. Sources for every rung in the chapter and in Appendix B.')
 
 

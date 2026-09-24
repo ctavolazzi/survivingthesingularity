@@ -73,7 +73,7 @@ pandoc metadata.yaml $FILES \
 echo "==> Review PDF"
 # shellcheck disable=SC2086
 pandoc metadata.yaml $FILES \
-  -o "$OUT/Surviving-the-Singularity-$LABEL.pdf" \
+  -o "$OUT/Surviving-the-Singularity-$LABEL-epub-review.pdf" \
   --toc --toc-depth=1 \
   --pdf-engine=weasyprint \
   --include-before-body=cover-page.html \

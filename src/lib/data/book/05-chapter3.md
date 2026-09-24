@@ -16,6 +16,7 @@
 - The scenario I keep coming back to: the machine's answer to a hostile planet isn't war. It's exit.
 - Greater capability tells you nothing about motives. The cures, if they come, still have to reach a patient.
 - None of this has to happen before anybody eats.
+- This chapter and the next are the book's most speculative. If you're here for the practical part, Chapter 5 picks the thread back up; you'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.
 
 ---
 

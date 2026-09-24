@@ -1,6 +1,6 @@
 {
   "title": "Surviving the Singularity",
-  "subtitle": "The 9 Stages of the Singularity and the Future of Earth",
+  "subtitle": "We Don't Have to Live Like This",
   "author": "Christopher Tavolazzi",
   "version": "0.9.2",
   "released": "0.7.5",
@@ -15,6 +15,11 @@
       "id": "preface",
       "title": "Preface: Welcome to the Weirdness",
       "file": "01-preface.md"
+    },
+    {
+      "id": "how-to-use",
+      "title": "How to Use This Book",
+      "file": "31-how-to-use.md"
     },
     {
       "id": "chapter0",
@@ -128,7 +133,7 @@
     },
     {
       "id": "chapter19",
-      "title": "Chapter 19: We Don't Have to Live Like This",
+      "title": "Chapter 19: The Ladder: How Money Becomes Optional",
       "file": "27-chapter19.md"
     },
     {

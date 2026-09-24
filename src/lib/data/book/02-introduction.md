@@ -150,7 +150,7 @@ Go into any comment section and you'll find the chorus: AI slop this, AI slop th
 
 So hold both of these at once, because a lot depends on the difference. The machine is unprecedented. The moment isn't. The size, the shape, and the scale of the change, the way it moves through markets and families and minds, the panic, the denial, the goalpost-moving, the moral outcry: humanity has stood inside that weather before, over and over, and left receipts. The technology is new every time. The stampede never is. And a person who knows the stampede's choreography doesn't have to run with the herd.
 
-So this book carries its case law with it. It's called the Precedent Ledger: twenty-four documented episodes of people standing where you're standing, watching a new capability arrive and reprice their world. It runs back past the pundit who called the internet a passing fad, past the camera company that invented the digital camera and still went bankrupt, past the frame-breakers and the red-flag law and the abbot who praised hand-copied books in a printed one, back to the first and largest transition our species ever walked through: the seed. Agriculture. The one-way door.
+So this book carries its case law with it. It's called the Precedent Ledger: twenty-four documented episodes of people standing where you're standing, watching a new capability, or a new rule, arrive and reprice their world. It runs back past the pundit who called the internet a passing fad, past the camera company that invented the digital camera and still went bankrupt, past the frame-breakers and the red-flag law and the abbot who praised hand-copied books in a printed one, back to the first and largest transition our species ever walked through: the seed. Agriculture. The one-way door.
 
 Every chapter closes with one entry. Each carries a serial number, P-01 through P-24, because these are exhibits, not anecdotes: dated, documented, and filed where you can check them (the full index is Appendix D, the sources Appendix B). Each runs the same four beats: the story, the mechanism underneath it, the rule it teaches, and then the part most history books won't give you, **the practice**: three concrete actions, sized for a single week. History you don't act on is decoration.
 
@@ -164,23 +164,7 @@ Part I opens the horizon: the nine stages, getting stranger and more speculative
 
 You don't need land, a server rack, a particular politics, or the energy to reinvent your life to walk in. You can be frightened. You can doubt my forecast. You can want to keep the work you love. The promise of enough to eat includes you.
 
-### Three ways to read it
-
-- **Twenty minutes.** This Introduction, Chapter 19, and Appendix C. You'll have the argument, the plan, and the one-page version to hand to someone else.
-- **An evening.** Add the Preface, Chapter 6, Chapter 12, and the Conclusion: what we owe each other, where the ground comes from, and why it's worth doing.
-- **The whole thing.** In order. Elijah's story runs through every chapter, and it pays off at the end.
-
-Or start from where you're standing:
-
-| If you are... | Start with |
-| --- | --- |
-| Worried about your job | Chapters 6, 7, 11, and 19 |
-| Raising kids | Chapters 8, 14, and 19, then Appendix G |
-| Organizing your neighbors | Chapters 12, 18, and 19, then Appendix A |
-| Someone who builds things | Chapters 9, 13, and 17, then Appendix E |
-| A skeptic | Chapters 1 and 2, then Appendix D |
-
-Every term you might trip on is in the Glossary (Appendix F). Appendix G turns every practice in the book into a first year, month by month, and Appendix H has questions for reading it together.
+There's a one-page guide to reading it, by the time you have and by who you are, right after the Preface.
 
 What if it all goes right? Then losing a job stops being a threat to a person's existence. Necessary work gets less punishing. More people get time and room to choose. We use extraordinary machines to make ordinary life more secure.
 

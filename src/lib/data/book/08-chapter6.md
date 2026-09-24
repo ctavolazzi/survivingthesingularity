@@ -64,7 +64,7 @@ Marta looked at him for another second. Then she picked up a push broom leaning 
 
 ## The part we get to decide
 
-So is it a done deal? My answer, for the record, is yes. I think we're already inside the Singularity, and my evidence is sitting on a desk: a model that does real intellectual work, running on consumer hardware, with no data center behind it. You don't have to agree with me. This chapter works either way, because the part that matters, what happens next, isn't done at all.
+So is it a done deal? My answer, for the record, is yes. I think we're already inside the Singularity, and my evidence is sitting on a desk: a model that does real intellectual work, running on consumer hardware, with no data center behind it. That's not the same claim as my AGI date. By this book's definition the Singularity begins when intelligence stops being scarce, and that's under way; a single system that can do what we can is the thing I'm forecasting for Thanksgiving 2027. You don't have to agree with me on either. This chapter works either way, because the part that matters, what happens next, isn't done at all.
 
 Elijah arrives with a forecast. Marta has a workshop, a history, and a bill for the welding gas. They need things from each other, but first he has to stop confusing his prediction with her future.
 

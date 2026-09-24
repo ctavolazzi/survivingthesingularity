@@ -15,7 +15,7 @@ For years, I've been talking about this, and for years, I've been labeled the lo
 
 For years I wanted someone with credentials to say it first. Not because I was unsure of my own math, but because as long as the industry dismissed AGI as fringe, sci-fi nonsense, nobody would listen to a guy like me saying it out loud. What I'm talking about is a system that can understand its own architecture and help engineer the next version of itself. Not a smarter search box. A tool that can invent new tools.
 
-Every revolution before this one changed what our hands and backs could do: the plow, the press, the engine, the airplane. This one is intellectual. We have automated thought itself, and it doesn't need a giant server farm anymore. Useful models run on consumer hardware in people's homes.
+Every revolution before this one changed what our hands and backs could do: the plow, the press, the engine, the airplane. This one is intellectual. We have automated thought itself, and it doesn't need a giant server farm anymore. Useful models run on consumer hardware in people's homes. The cost of running a system as capable as 2022's GPT-3.5 fell more than 280-fold in under two years, driven by smaller models. [Stanford HAI, 2025 AI Index Report](https://hai.stanford.edu/ai-index/2025-ai-index-report)
 
 The loudest voices in the room are working from a headline and a Reddit thread they skimmed once. That's noise, and noise is cheap. I'm not asking you to trust me over them. I'm asking you to go around all of us. Stop listening to the guys in lab coats who have a vested interest in keeping you afraid, and stop listening to me while you're at it. Get your goddamn hands on it. Use it yourself. Then you'll know.
 

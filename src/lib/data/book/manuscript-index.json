@@ -5,8 +5,8 @@
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 35,
-    "blocks": 2184,
-    "words": 96668
+    "blocks": 2183,
+    "words": 96618
   },
   "sections": [
     {
@@ -20181,7 +20181,7 @@
       "title": "Chapter 18: The Roadmap and the Premortem Pivot",
       "file": "20-chapter18.md",
       "next_ordinal": 186,
-      "words": 4238,
+      "words": 4188,
       "tombstones": [
         "sts.chapter18.b0004",
         "sts.chapter18.b0006",
@@ -20262,7 +20262,8 @@
         "sts.chapter18.b0095",
         "sts.chapter18.b0096",
         "sts.chapter18.b0097",
-        "sts.chapter18.b0099"
+        "sts.chapter18.b0099",
+        "sts.chapter18.b0126"
       ],
       "blocks": [
         {
@@ -20875,8 +20876,8 @@
             118,
             118
           ],
-          "words": 53,
-          "hash": "8b9d8d034091",
+          "words": 57,
+          "hash": "62e5f09b2edf",
           "preview": "Picture the ordinary version. A cook loses a job and still eats. A worker finishes a short"
         },
         {
@@ -20886,9 +20887,9 @@
             120,
             120
           ],
-          "words": 39,
-          "hash": "4e05795ab364",
-          "preview": "That is a future worth doing practical work for. It doesn't require every machine to becom"
+          "words": 37,
+          "hash": "1bcf2cbdf6be",
+          "preview": "That's worth doing the practical work for. It doesn't need every machine to be perfect. It"
         },
         {
           "id": "sts.chapter18.b0158",
@@ -20897,32 +20898,32 @@
             122,
             122
           ],
-          "words": 64,
-          "hash": "80b2d091a3e5",
-          "preview": "Food is where this book begins because the promise is both urgent and concrete. We can ask"
-        },
-        {
-          "id": "sts.chapter18.b0103",
-          "type": "paragraph",
-          "lines": [
-            124,
-            124
-          ],
-          "words": 41,
-          "hash": "f73a94e7c61b",
-          "preview": "The task is larger than nineteen households. The co-op matters because its members learned"
+          "words": 43,
+          "hash": "b9b530760e24",
+          "preview": "And it's bigger than nineteen households. The co-op matters because its members learned to"
         },
         {
           "id": "sts.chapter18.b0159",
           "type": "heading",
           "lines": [
+            124,
+            124
+          ],
+          "words": 7,
+          "hash": "d1b45404c04e",
+          "preview": "## Build the machine and the promise together",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter18.b0103",
+          "type": "paragraph",
+          "lines": [
             126,
             126
           ],
-          "words": 7,
-          "hash": "e6ac40e99368",
-          "preview": "## Build the capacity and the claim together",
-          "level": 2
+          "words": 61,
+          "hash": "18ecb5871467",
+          "preview": "There are two jobs, and you have to do both. Get better at making the food. And build a pr"
         },
         {
           "id": "sts.chapter18.b0104",
@@ -20931,9 +20932,9 @@
             128,
             128
           ],
-          "words": 56,
-          "hash": "425152f15774",
-          "preview": "There are two connected jobs. Improve the ability to provide necessities, and build a depe"
+          "words": 74,
+          "hash": "718b554a52eb",
+          "preview": "Start with a food service that already exists. Sit down with the people who use it and the"
         },
         {
           "id": "sts.chapter18.b0105",
@@ -20942,9 +20943,9 @@
             130,
             130
           ],
-          "words": 52,
-          "hash": "59ab861f5df3",
-          "preview": "Start by mapping an existing food service with the people using and running it. Find the m"
+          "words": 60,
+          "hash": "004772cab761",
+          "preview": "Then follow the gain all the way to a plate. A controller helps a grower. The grower signs"
         },
         {
           "id": "sts.chapter18.b0106",
@@ -20953,32 +20954,32 @@
             132,
             132
           ],
-          "words": 56,
-          "hash": "94d0f8fe0036",
-          "preview": "Then connect the gain to a commitment. A controller can help a grower; the grower can join"
-        },
-        {
-          "id": "sts.chapter18.b0107",
-          "type": "paragraph",
-          "lines": [
-            134,
-            134
-          ],
-          "words": 36,
-          "hash": "e7e3170409aa",
-          "preview": "A tool can save time that becomes higher output, a larger private return, a shorter shift,"
+          "words": 34,
+          "hash": "3a949c1b6066",
+          "preview": "A tool that saves an hour can turn that hour into more output, a bigger profit, a shorter "
         },
         {
           "id": "sts.chapter18.b0160",
           "type": "heading",
           "lines": [
+            134,
+            134
+          ],
+          "words": 6,
+          "hash": "527c74a9b8b6",
+          "preview": "## A proposal people can vote on",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter18.b0107",
+          "type": "paragraph",
+          "lines": [
             136,
             136
           ],
-          "words": 6,
-          "hash": "13c7d9b5118d",
-          "preview": "## A proposal people can decide on",
-          "level": 2
+          "words": 22,
+          "hash": "a4669cf26ecb",
+          "preview": "Here's what a real next step could look like after the five-household trial. It's an examp"
         },
         {
           "id": "sts.chapter18.b0108",
@@ -20987,9 +20988,9 @@
             138,
             138
           ],
-          "words": 23,
-          "hash": "114d0800f8ae",
-          "preview": "Consider a possible next step beyond the five-household trial. This is an illustrative pro"
+          "words": 50,
+          "hash": "22583c86a33e",
+          "preview": "The food bank, the growers, a kitchen, the workers, and the neighbors write down one offer"
         },
         {
           "id": "sts.chapter18.b0109",
@@ -20998,9 +20999,9 @@
             140,
             140
           ],
-          "words": 60,
-          "hash": "56756a9f734c",
-          "preview": "An existing food provider, participating growers, a kitchen, workers, and residents develo"
+          "words": 56,
+          "hash": "27607f836b5c",
+          "preview": "They write down what it costs to run: food, paid jobs, transport, repairs, and money set a"
         },
         {
           "id": "sts.chapter18.b0110",
@@ -21009,9 +21010,9 @@
             142,
             142
           ],
-          "words": 50,
-          "hash": "fbb13a4ea931",
-          "preview": "The operating plan names the supplies, paid roles, transport, equipment support, and repla"
+          "words": 63,
+          "hash": "141e1aabfb7b",
+          "preview": "Then they go looking for steady money: the county, a co-op, a church, a grocer, or some mi"
         },
         {
           "id": "sts.chapter18.b0111",
@@ -21020,9 +21021,9 @@
             144,
             144
           ],
-          "words": 72,
-          "hash": "a6518d08af6e",
-          "preview": "They seek a public allocation, a cooperative funding commitment, or another continuing sou"
+          "words": 45,
+          "hash": "94dd88ee9a94",
+          "preview": "The offer also says who takes complaints, how you appeal if you're turned away, what infor"
         },
         {
           "id": "sts.chapter18.b0112",
@@ -21032,31 +21033,31 @@
             146
           ],
           "words": 45,
-          "hash": "67bb9a3df6b4",
-          "preview": "The proposal also says who handles a complaint, how an access decision can be reviewed, wh"
-        },
-        {
-          "id": "sts.chapter18.b0113",
-          "type": "paragraph",
-          "lines": [
-            148,
-            148
-          ],
-          "words": 45,
-          "hash": "7efa4102da29",
-          "preview": "A decision then has substance. People can support, reject, or amend a named service with a"
+          "hash": "360ee6e70567",
+          "preview": "Now there's something real to vote on. People can say yes, no, or change it, and they can "
         },
         {
           "id": "sts.chapter18.b0161",
           "type": "heading",
           "lines": [
+            148,
+            148
+          ],
+          "words": 6,
+          "hash": "5907056d21b5",
+          "preview": "## Keeping people whole while it's built",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter18.b0113",
+          "type": "paragraph",
+          "lines": [
             150,
             150
           ],
-          "words": 4,
-          "hash": "8e9c912fa5c5",
-          "preview": "## Security during the transition",
-          "level": 2
+          "words": 47,
+          "hash": "4bb0ec7262d5",
+          "preview": "The person who just lost a job to a machine needs to eat while all this gets built. A retr"
         },
         {
           "id": "sts.chapter18.b0114",
@@ -21065,9 +21066,9 @@
             152,
             152
           ],
-          "words": 44,
-          "hash": "942a0267a4e9",
-          "preview": "The person displaced by automation needs provision while the proposed future is being buil"
+          "words": 68,
+          "hash": "ad7f951157ce",
+          "preview": "So whoever brings the machine in should answer for the people it moves out, before the job"
         },
         {
           "id": "sts.chapter18.b0115",
@@ -21076,9 +21077,9 @@
             154,
             154
           ],
-          "words": 64,
-          "hash": "36ee7acc4afa",
-          "preview": "That makes worker transitions part of the deployment decision. Ask what happens before rep"
+          "words": 48,
+          "hash": "14a936c2fb35",
+          "preview": "Some hard jobs will get harder to fill once people have better choices. Good. Then look at"
         },
         {
           "id": "sts.chapter18.b0116",
@@ -21087,27 +21088,16 @@
             156,
             156
           ],
-          "words": 46,
-          "hash": "40b0c8264c79",
-          "preview": "Some necessary jobs may become harder to fill when people have better alternatives. That c"
-        },
-        {
-          "id": "sts.chapter18.b0117",
-          "type": "paragraph",
-          "lines": [
-            158,
-            158
-          ],
-          "words": 50,
-          "hash": "ab7326b1afab",
-          "preview": "Food first is an application priority, not an instruction to leave every other insecurity "
+          "words": 32,
+          "hash": "9bf4609798bc",
+          "preview": "Food first is where we start, not a rule that everything else waits. Housing and health ca"
         },
         {
           "id": "sts.chapter18.b0162",
           "type": "heading",
           "lines": [
-            160,
-            160
+            158,
+            158
           ],
           "words": 7,
           "hash": "6846d32f9543",
@@ -21115,22 +21105,22 @@
           "level": 2
         },
         {
-          "id": "sts.chapter18.b0118",
+          "id": "sts.chapter18.b0117",
           "type": "paragraph",
           "lines": [
-            162,
-            162
+            160,
+            160
           ],
-          "words": 60,
-          "hash": "10dc1f2c5051",
+          "words": 57,
+          "hash": "be1ca1c91205",
           "preview": "Before expanding a service, imagine that next week's commitment has failed. Work backward "
         },
         {
           "id": "sts.chapter18.b0079",
           "type": "paragraph",
           "lines": [
-            164,
-            164
+            162,
+            162
           ],
           "words": 4,
           "hash": "4d998eb2abd7",
@@ -21140,30 +21130,30 @@
           "id": "sts.chapter18.b0163",
           "type": "table",
           "lines": [
-            166,
-            173
+            164,
+            171
           ],
           "words": 81,
           "hash": "c6b7d491d106",
           "preview": "| Question | What to record | | --- | --- | | Who is affected? | The people whose food or "
         },
         {
-          "id": "sts.chapter18.b0119",
+          "id": "sts.chapter18.b0118",
           "type": "paragraph",
           "lines": [
-            175,
-            175
+            173,
+            173
           ],
-          "words": 40,
-          "hash": "19eefb1e8cc8",
-          "preview": "Keep personal information out of public records unless it is necessary and appropriately a"
+          "words": 45,
+          "hash": "57535416dcc6",
+          "preview": "Keep people's personal details out of public records unless they're needed and the people "
         },
         {
           "id": "sts.chapter18.b0120",
           "type": "paragraph",
           "lines": [
-            177,
-            177
+            175,
+            175
           ],
           "words": 36,
           "hash": "a1265c5d6402",
@@ -21173,13 +21163,24 @@
           "id": "sts.chapter18.b0121",
           "type": "heading",
           "lines": [
-            179,
-            179
+            177,
+            177
           ],
           "words": 10,
           "hash": "6994118c8cd7",
           "preview": "## Grow the promise at the speed you can keep it",
           "level": 2
+        },
+        {
+          "id": "sts.chapter18.b0119",
+          "type": "paragraph",
+          "lines": [
+            179,
+            179
+          ],
+          "words": 52,
+          "hash": "54de9d58c50b",
+          "preview": "A pilot can run on a grant for a set time. A floor people build their lives on needs money"
         },
         {
           "id": "sts.chapter18.b0122",
@@ -21188,9 +21189,9 @@
             181,
             181
           ],
-          "words": 51,
-          "hash": "e7e5259ddf96",
-          "preview": "A pilot can rely on a grant for a stated period. A baseline people arrange their lives aro"
+          "words": 58,
+          "hash": "2e76ac197129",
+          "preview": "Check three things together: whether the machines work, whether the remaining jobs got bet"
         },
         {
           "id": "sts.chapter18.b0123",
@@ -21199,9 +21200,9 @@
             183,
             183
           ],
-          "words": 58,
-          "hash": "5d981628f121",
-          "preview": "Review three things together: the technical performance, the conditions of the remaining w"
+          "words": 47,
+          "hash": "c9ea4a487cae",
+          "preview": "Grow by adding partners who bring what's missing: other crops, cooking, delivery, winter c"
         },
         {
           "id": "sts.chapter18.b0124",
@@ -21210,9 +21211,9 @@
             185,
             185
           ],
-          "words": 52,
-          "hash": "83e13bcf8bad",
-          "preview": "Broaden the service through partners and places that add what is missing: different crops,"
+          "words": 32,
+          "hash": "54006da11420",
+          "preview": "There will be fights about money and ownership, arguments about methods, and failures nobo"
         },
         {
           "id": "sts.chapter18.b0125",
@@ -21221,27 +21222,16 @@
             187,
             187
           ],
-          "words": 33,
-          "hash": "ad56d5d12045",
-          "preview": "There will be political disagreement about funding and ownership, practical disputes about"
-        },
-        {
-          "id": "sts.chapter18.b0126",
-          "type": "paragraph",
-          "lines": [
-            189,
-            189
-          ],
-          "words": 48,
-          "hash": "1507b8f647c0",
-          "preview": "The first meeting need not design the whole economy. It should leave someone responsible f"
+          "words": 53,
+          "hash": "7081b598cf79",
+          "preview": "The first meeting doesn't have to design the whole economy. It has to end with one person "
         },
         {
           "id": "sts.chapter18.b0127",
           "type": "paragraph",
           "lines": [
-            191,
-            191
+            189,
+            189
           ],
           "words": 17,
           "hash": "bb3e8e343593",
@@ -21251,8 +21241,8 @@
           "id": "sts.chapter18.b0054",
           "type": "hr",
           "lines": [
-            193,
-            193
+            191,
+            191
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -21262,8 +21252,8 @@
           "id": "sts.chapter18.b0174",
           "type": "heading",
           "lines": [
-            195,
-            195
+            193,
+            193
           ],
           "words": 4,
           "hash": "779cbd4ac10b",
@@ -21274,8 +21264,8 @@
           "id": "sts.chapter18.b0101",
           "type": "paragraph",
           "lines": [
-            197,
-            197
+            195,
+            195
           ],
           "words": 13,
           "hash": "da9b97c59295",
@@ -21285,8 +21275,8 @@
           "id": "sts.chapter18.b0175",
           "type": "paragraph",
           "lines": [
-            199,
-            199
+            197,
+            197
           ],
           "words": 48,
           "hash": "5bf542fbe560",
@@ -21296,8 +21286,8 @@
           "id": "sts.chapter18.b0176",
           "type": "paragraph",
           "lines": [
-            201,
-            201
+            199,
+            199
           ],
           "words": 52,
           "hash": "3db84a120d09",
@@ -21307,8 +21297,8 @@
           "id": "sts.chapter18.b0177",
           "type": "paragraph",
           "lines": [
-            203,
-            203
+            201,
+            201
           ],
           "words": 35,
           "hash": "15c0d13a8262",
@@ -21318,8 +21308,8 @@
           "id": "sts.chapter18.b0066",
           "type": "hr",
           "lines": [
-            205,
-            205
+            203,
+            203
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -21329,8 +21319,8 @@
           "id": "sts.chapter18.b0169",
           "type": "heading",
           "lines": [
-            207,
-            207
+            205,
+            205
           ],
           "words": 11,
           "hash": "b5a3b07f98a3",
@@ -21341,8 +21331,8 @@
           "id": "sts.chapter18.b0178",
           "type": "paragraph",
           "lines": [
-            209,
-            209
+            207,
+            207
           ],
           "words": 55,
           "hash": "1f14da8283df",
@@ -21352,8 +21342,8 @@
           "id": "sts.chapter18.b0179",
           "type": "paragraph",
           "lines": [
-            211,
-            211
+            209,
+            209
           ],
           "words": 61,
           "hash": "76f275888993",
@@ -21363,8 +21353,8 @@
           "id": "sts.chapter18.b0180",
           "type": "paragraph",
           "lines": [
-            213,
-            213
+            211,
+            211
           ],
           "words": 141,
           "hash": "e3aa488167e9",
@@ -21374,8 +21364,8 @@
           "id": "sts.chapter18.b0181",
           "type": "paragraph",
           "lines": [
-            215,
-            215
+            213,
+            213
           ],
           "words": 103,
           "hash": "ab672cfd1a9c",
@@ -21385,8 +21375,8 @@
           "id": "sts.chapter18.b0182",
           "type": "paragraph",
           "lines": [
-            217,
-            217
+            215,
+            215
           ],
           "words": 33,
           "hash": "d0511d83d65f",
@@ -21396,8 +21386,8 @@
           "id": "sts.chapter18.b0183",
           "type": "paragraph",
           "lines": [
-            219,
-            219
+            217,
+            217
           ],
           "words": 43,
           "hash": "d3108952ccff",
@@ -21407,8 +21397,8 @@
           "id": "sts.chapter18.b0061",
           "type": "paragraph",
           "lines": [
-            221,
-            221
+            219,
+            219
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -21418,8 +21408,8 @@
           "id": "sts.chapter18.b0184",
           "type": "list",
           "lines": [
-            223,
-            225
+            221,
+            223
           ],
           "words": 145,
           "hash": "70ecc59b192a",
@@ -21429,8 +21419,8 @@
           "id": "sts.chapter18.b0185",
           "type": "hr",
           "lines": [
-            227,
-            227
+            225,
+            225
           ],
           "words": 0,
           "hash": "ebad27de99a8",

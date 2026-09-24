@@ -115,51 +115,49 @@ If global shipping stopped for a month, could your community keep everyone fed? 
 
 ## What going right would look like
 
-Picture the ordinary version. A cook loses a job and still eats. A worker finishes a shorter shift without a smaller life waiting at home. A caregiver can accept help without proving they have no other choice. A grower receives fair payment for food that reaches people who cannot pay for it themselves.
+Picture the ordinary version. A cook loses a job and still eats. A worker finishes a shorter shift and goes home to the same life, not a smaller one. A caregiver takes help without having to prove there's no other choice. A grower gets paid fairly for food that goes to people who can't pay for it.
 
-That is a future worth doing practical work for. It doesn't require every machine to become perfect. It requires the failures of a machine, a market, or an employer to stop falling immediately onto a person's ability to survive.
+That's worth doing the practical work for. It doesn't need every machine to be perfect. It needs a machine breaking, a market crashing, or a boss cutting hours to stop landing straight on somebody's ability to eat.
 
-Food is where this book begins because the promise is both urgent and concrete. We can ask who ate, what they could obtain, and whether the arrangement will hold next week. The larger direction includes safe housing, cleaner surroundings, and care that heals. Each needs its own expertise and evidence. Each can be organized around the same question: do people actually receive the benefit?
+And it's bigger than nineteen households. The co-op matters because its members learned to fix a plan together and could show their work. Its limits matter too: a valley full of successful founders would still leave most of the world outside the fence.
 
-The task is larger than nineteen households. The co-op matters because its members learned to improve a plan together and could show the work. Its limits matter because a valley full of successful founders would still leave most of humanity elsewhere.
+## Build the machine and the promise together
 
-## Build the capacity and the claim together
+There are two jobs, and you have to do both. Get better at making the food. And build a promise people can count on that the food will reach them. Do only the first and you get impressive machines behind a price somebody can't pay. Do only the second and you get a right on paper that the kitchen can't keep.
 
-There are two connected jobs. Improve the ability to provide necessities, and build a dependable claim on that provision. If we do only the first, the result may be impressive machines behind a price somebody cannot pay. If we promise the second without the supplies, labor, and funding, people encounter a right the service cannot honor.
+Start with a food service that already exists. Sit down with the people who use it and the people who run it, and find where it breaks: the missed meal, the pickup point nobody can reach, the task someone repeats forty times a day, the freezer that's been waiting three weeks for a part. The first fix might be a machine. It might be another paid shift, a better supplier, or a bus route.
 
-Start by mapping an existing food service with the people using and running it. Find the missing meal, the inaccessible collection point, the repeated handling task, the equipment that spends too long waiting for repair. Establish what would improve the result. The first useful change may involve automation, staffing, purchasing, or access.
+Then follow the gain all the way to a plate. A controller helps a grower. The grower signs on to supply a kitchen. The kitchen turns it into meals people can actually eat. Somebody pays for the service, so the person eating doesn't have to. Every link needs a name next to it and the money to keep it running.
 
-Then connect the gain to a commitment. A controller can help a grower; the grower can join a supply agreement; a kitchen can turn supplies into usable meals; a funded service can make those meals available without charging the recipient. Every connection needs an accountable party and resources. Follow them until you reach the person eating.
+A tool that saves an hour can turn that hour into more output, a bigger profit, a shorter shift, or a free meal that shows up every week. The tool doesn't pick. We do.
 
-A tool can save time that becomes higher output, a larger private return, a shorter shift, or a more dependable free service. Its existence doesn't choose the destination. We do that through the arrangements surrounding it.
+## A proposal people can vote on
 
-## A proposal people can decide on
+Here's what a real next step could look like after the five-household trial. It's an example, not a program that's been funded.
 
-Consider a possible next step beyond the five-household trial. This is an illustrative proposal, not a claim that a program has been funded.
+The food bank, the growers, a kitchen, the workers, and the neighbors write down one offer for one area. What food. How you ask for it without paying. What happens if you can't cook or can't get there. How you get in without a smartphone and without knowing the founders.
 
-An existing food provider, participating growers, a kitchen, workers, and residents develop a service offer for a defined area. They describe what food will be available, how people can request it without payment, and what will be provided to someone who can't cook or travel. They include a way to participate without a smartphone or membership in the founders' group.
+They write down what it costs to run: food, paid jobs, transport, repairs, and money set aside for when the truck dies. They count volunteer hours separately and say which jobs can't depend on whoever happens to show up. The people doing the work get paid. The person eating doesn't have to work for the meal.
 
-The operating plan names the supplies, paid roles, transport, equipment support, and replacement reserve. It counts volunteer time separately and specifies which responsibilities cannot depend on a volunteer happening to be free. Providers are compensated for agreed work. The person receiving food has no work requirement attached to the meal.
+Then they go looking for steady money: the county, a co-op, a church, a grocer, or some mix. The county could run it, or pay several groups to run it. Donations can add to it, but they don't carry the core promise, because donations come and go. Each choice puts different people in charge, so everyone should see the options side by side.
 
-They seek a public allocation, a cooperative funding commitment, or another continuing source suited to the place. A public body might operate the service directly or purchase it from several providers. Shared assets might support a cooperative arrangement. Donations could add capacity while being kept distinct from resources needed to meet the central promise. These choices have different costs and power structures; residents and workers need to be able to compare them.
+The offer also says who takes complaints, how you appeal if you're turned away, what information gets collected about you, and what happens when something breaks. It makes room for people who disagree with the organizers. You shouldn't have to be liked to be fed.
 
-The proposal also says who handles a complaint, how an access decision can be reviewed, what information is collected, and what happens during an interruption. It provides for a person who disagrees with the organizers. Being popular with the provider is not a nutrition requirement.
+Now there's something real to vote on. People can say yes, no, or change it, and they can see what it costs and check whether it's working. That's how a good idea becomes a public promise instead of a sentence that starts with "society should."
 
-A decision then has substance. People can support, reject, or amend a named service with a visible cost and a way to examine its performance. This is one route from private optimism to a public commitment. The work doesn't disappear into the phrase “society should.”
+## Keeping people whole while it's built
 
-## Security during the transition
+The person who just lost a job to a machine needs to eat while all this gets built. A retraining course only helps if your life can survive the time and cost it takes. Rent, food, medicine, the bus, and your kids don't wait for a certificate.
 
-The person displaced by automation needs provision while the proposed future is being built. A retraining course is useful only within a life that can accommodate its time, cost, and uncertainty. Food, housing, healthcare, transport, and care responsibilities do not pause for a certificate.
+So whoever brings the machine in should answer for the people it moves out, before the job is cut, not after. Who keeps the paycheck or the essentials coming? What do the workers get a say in? What help is funded, and for how long? The answer might come from the employer, a union, the county, or a co-op, but somebody has to put their name on it.
 
-That makes worker transitions part of the deployment decision. Ask what happens before replacing a task, not merely after cutting the position. Who will keep income or essential services available? What choices can the affected workers influence? What assistance is funded, and for how long? A business, union, public institution, or cooperative may hold different responsibilities, but someone has to make the commitments real.
+Some hard jobs will get harder to fill once people have better choices. Good. Then look at the pay, the conditions, the training, the equipment, and whether the job needs doing at all. Using hunger to fill jobs is exactly the problem this book is trying to end.
 
-Some necessary jobs may become harder to fill when people have better alternatives. That calls for examining pay, conditions, training, equipment, and how much work is actually necessary. Treating hunger as the missing workforce strategy would concede the very problem the book is trying to solve.
-
-Food first is an application priority, not an instruction to leave every other insecurity in place until a global agricultural project is finished. A housing effort or a medical service can move at the same time. The fired cook's dinner is our first clear test of a much wider intention.
+Food first is where we start, not a rule that everything else waits. Housing and health care can move at the same time. The fired cook's dinner is just the first test.
 
 ## Put the failed meal on the board
 
-Before expanding a service, imagine that next week's commitment has failed. Work backward with the people who would experience it. Perhaps the crop is unavailable, the driver is ill, the food can't be used, the system gives a wrong answer, or the operating money has run out. The discussion is valuable because those people know things the model may omit.
+Before expanding a service, imagine that next week's commitment has failed. Work backward with the people who would experience it. Perhaps the crop is unavailable, the driver is ill, the food can't be used, the system gives a wrong answer, or the operating money has run out. Ask them, because they know things the plan leaves out.
 
 Use a short record:
 
@@ -172,21 +170,21 @@ Use a short record:
 | What supports the promise? | Available supplies, labor, money, and the date that provision ends. |
 | When do we review it? | The next decision date and the evidence people need. |
 
-Keep personal information out of public records unless it is necessary and appropriately agreed. Give recipients a way to correct the assumptions about their lives. A delivery logged as complete may still have left somebody with food they couldn't eat.
+Keep people's personal details out of public records unless they're needed and the people agree. Give the people you're feeding a way to correct what you assumed about their lives. A delivery logged as complete may still have left somebody with food they couldn't eat.
 
 Test a response before depending on it. Confirm the alternative supplier's capacity; let the backup person actually perform the handoff; check the public contact route. A second name in a spreadsheet isn't a second available driver.
 
 ## Grow the promise at the speed you can keep it
 
-A pilot can rely on a grant for a stated period. A baseline people arrange their lives around needs continuing provision and a response when that provision is threatened. Tell people which one they have. Do not make recipients discover a funding gap by waiting for a meal that never arrives.
+A pilot can run on a grant for a set time. A floor people build their lives on needs money that keeps coming, and a plan for when it's threatened. Tell people which one they're getting. Nobody should find out about a funding gap by waiting for a meal that never comes.
 
-Review three things together: the technical performance, the conditions of the remaining work, and the food people received. Improvement in one does not excuse deterioration in another. If equipment saves time but exposes a worker to a new hazard, the result needs repair. If the food arrives but only members can get it, the universal ambition remains unmet.
+Check three things together: whether the machines work, whether the remaining jobs got better or worse, and whether people actually ate. Winning on one doesn't excuse losing on another. If a machine saves time but puts a worker in danger, fix it. If the food arrives but only members can get it, you haven't kept the promise yet.
 
-Broaden the service through partners and places that add what is missing: different crops, preparation, transport, seasonal coverage, accessible collection, and public provision beyond the founders' circle. A successful small project is evidence about that project. It is also something useful to take to people who can help build the next part.
+Grow by adding partners who bring what's missing: other crops, cooking, delivery, winter coverage, a pickup spot people can reach, and public money beyond the founders' circle. One small success proves that one small thing. It's also the best thing you can carry into the next meeting.
 
-There will be political disagreement about funding and ownership, practical disputes about methods, and failures we did not foresee. We can acknowledge those without treating the present arrangement as the only imaginable one.
+There will be fights about money and ownership, arguments about methods, and failures nobody saw coming. None of that means the way things are now is the only way they can be.
 
-The first meeting need not design the whole economy. It should leave someone responsible for a concrete next move: a costed service proposal, an agreed trial, a worker consultation, a delivery gap closed. Put a date beside it. Bring the people affected back when the result is reviewed.
+The first meeting doesn't have to design the whole economy. It has to end with one person responsible for one next step: a costed proposal, a trial, a talk with the workers, one delivery gap closed. Put a date next to it. Bring the people it affects back when you check the result.
 
 Wide lens, narrow focus. Keep the larger promise in view, and keep making the next piece dependable.
 

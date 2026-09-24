@@ -63,6 +63,16 @@ Still, land is the one input the machine can't make more of, and whoever holds i
 
 That's one route, and it's not the only one or the entry fee. Land trusts, leases, shared gardens, public land, and agreements with growers who already have ground are all ways to get useful capacity under your feet. The trust in the scene changes a set of relationships: who may use the ground, who decides its future, what Irene receives, and what the co-op must keep paying. The paperwork doesn't abolish responsibility. It gives responsibility a shape people can read and hold each other to. The fictional trust isn't a legal template, and anyone setting one up needs real advice. What matters here is the question that brought those people to the table: how do we keep useful capacity serving the people who depend on it?
 
+<aside class="numbers">
+
+**By the numbers: the ground**
+
+- **$4,500** an acre: the average value of US farm real estate in 2026, up 3.4 percent in a year. [USDA NASS, Land Values 2026 Summary](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf)
+- **$6,020** an acre for cropland and **$2,000** for pasture, the same year. [USDA NASS](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf)
+- **99 years:** the usual ground lease in a community land trust, long enough to outlast a mortgage and a lifetime (Chapter 15).
+
+</aside>
+
 ## Land that could hold a right
 
 In southwest Georgia, losing a place to farm could be punishment for trying to vote. Charles Sherrod had worked with sharecroppers and tenant farmers forced off land after attempting to register. Collective ownership offered a way to reduce that power over individual families. New Communities was founded in 1969, and on January 9, 1970, it completed the purchase of 5,735 acres near Albany. The project joined farming to a proposed system of homestead leases. Security on the ground was part of making a political right usable. [SNCC Digital Gateway, New Communities](https://snccdigital.org/events/new-communities-formed-in-southwest-georgia/)

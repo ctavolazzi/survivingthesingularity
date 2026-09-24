@@ -565,6 +565,26 @@
     text-shadow: none;
   }
 
+  /* "By the numbers" boxes (<aside class="numbers"> in the manuscript).
+     Blue, not amber, so a data box never reads as a pull quote. */
+  :global(.chapter-article aside.numbers) {
+    margin: 2rem 0;
+    padding: 1.1rem 1.4rem;
+    background: rgba(59,130,246,0.06);
+    border: 1px solid rgba(59,130,246,0.35);
+    border-radius: 10px;
+  }
+  :global(.chapter-article aside.numbers > p:first-child strong) {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #93c5fd;
+  }
+  :global(.chapter-article aside.numbers ul) { margin: 0.6rem 0 0; padding-left: 1.1rem; }
+  :global(.chapter-article aside.numbers li) { margin: 0.45rem 0; color: #e2e8f0; }
+  :global(.chapter-article aside.numbers > p:last-child) { margin-bottom: 0; }
+
   /* Math. The equations live inside in-body blockquotes so they keep the
      amber callout treatment above - these rules just stop the callout's
      italic/text-shadow from leaking into KaTeX's own typesetting. */

@@ -100,6 +100,16 @@ On the buy side, housing, healthcare, and education have all climbed far faster 
 
 On the sell side, the entry-level cognitive work a twenty-two-year-old once used to climb, the junior analyst seat, the first coding job, the paralegal desk, is exactly the kind of task these systems are getting good at first. Costs up. Bottom rungs going. A cohort can't out-hustle that arithmetic, and it isn't a failure of their ambition.
 
+<aside class="numbers">
+
+**By the numbers: work, home, dinner**
+
+- **1 in 4** workers worldwide is in a job with some exposure to generative AI. The ILO expects most of those jobs to be transformed rather than eliminated. [ILO, Generative AI and Jobs: A 2025 Update](https://www.ilo.org/publications/generative-ai-and-jobs-2025-update)
+- **2 times, then 5 times.** A median home cost about twice the median household income in 1970 and about five times in 2024 (sources in the paragraph above).
+- **47.9 million** people in the United States lived in food-insecure households in 2024, including 7.3 million children in homes where the children themselves went short. [USDA ERS](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics)
+
+</aside>
+
 ## Security is something you can rely on
 
 A promise from a generous founder is welcome. A service that keeps running when the founder gets sick is stronger. A right you can still claim when an administrator says no is stronger still.

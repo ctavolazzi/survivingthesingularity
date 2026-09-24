@@ -98,6 +98,19 @@ There's no such thing as waste, only food in the wrong place. And this one alrea
 
 Turn a leak in the long system into a local reserve, and you're feeding people from the surplus of the very system that told them they were redundant.
 
+<aside class="numbers">
+
+**By the numbers: food in the wrong place**
+
+- **30 to 40 percent** of the US food supply goes uneaten, by the USDA's estimate (linked above).
+- **5 to 6 million tons** of food thrown away by Californians every year. [CDFA, Food Recovery](https://www.cdfa.ca.gov/is/foodrecovery/)
+- **20 percent:** California's target for recovering edible food that would otherwise be landfilled, to feed people in need (linked above).
+- **47.9 million** people in US households that couldn't count on enough food in 2024. [USDA ERS](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics)
+
+Put the first number next to the last one. That gap is the argument.
+
+</aside>
+
 ## The municipal mesh
 
 You can't run a short loop if you can't talk to each other. Most of our coordination rides on cell towers and data centers we don't control, which is fine until a tower goes down in a storm or a service decides to shut something off.

@@ -75,6 +75,18 @@ Here's a hard truth the tech-utopians skip: as an engine, you're not very effici
 
 *Typical conversion efficiencies, as compiled in [Wikipedia, Energy conversion efficiency](https://en.wikipedia.org/wiki/Energy_conversion_efficiency). Ranges, not specifications: a particular machine can sit anywhere in its band.*
 
+<aside class="numbers">
+
+**By the numbers: the machine's appetite**
+
+- **415 terawatt-hours.** What the world's data centres used in 2024, about 1.5 percent of all electricity. [Scientific American, reporting the IEA](https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/)
+- **945 terawatt-hours.** The IEA's projection for 2030, roughly what Japan uses in a year. [Scientific American](https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/)
+- **280-fold.** How far the cost of running a system as capable as GPT-3.5 fell between November 2022 and October 2024. [Stanford AI Index 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report)
+
+The machines are getting hungrier in total and cheaper per unit of thought, both at once. Somebody owns the meter.
+
+</aside>
+
 You burn roughly 2,000 to 2,500 kilocalories a day to keep your heart pumping, your lungs moving, and your brain generating existential dread. That's about 100 watts of continuous power, the draw of an old incandescent bulb, and about twenty of those watts run your brain. To get them, you need proteins, carbohydrates, and fats that somebody had to grow, harvest, move, and cook.
 
 The machines are less picky. They eat raw electricity, from sunlight, wind, uranium, or coal. They don't spend energy repairing cell walls or fighting off a cold.

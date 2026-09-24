@@ -150,3 +150,10 @@ code, pre { font-family: BookSans; font-size: 9pt; overflow-wrap: anywhere; whit
 /* v0.9.1: the original cover, full bleed */
 .cover.original-cover { padding: 0; background: none; }
 .cover-original { position: absolute; inset: 0; width: 6in; height: 9in; object-fit: cover; object-position: left center; }
+
+/* "By the numbers" boxes */
+aside.numbers { margin: 0.9em 0; padding: 0.08in 0.14in; border: 0.6pt solid #9aa58a; border-left: 2.2pt solid #7c8b67; font-size: 9.5pt; break-inside: avoid; }
+aside.numbers > p:first-child { margin: 0 0 0.04in; font: 8pt BookSans; letter-spacing: 0.12em; text-transform: uppercase; }
+aside.numbers ul { margin: 0; padding-left: 0.14in; }
+aside.numbers li { margin: 0.03in 0; text-align: left; }
+aside.numbers > p { text-align: left; }

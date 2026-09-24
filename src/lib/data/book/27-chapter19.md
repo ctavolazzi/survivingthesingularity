@@ -69,6 +69,8 @@ Greed is a sickness, and too many of the decisions that shape our lives serve pr
 
 So this chapter does what I promised at the start: a literal, step-by-step plan to convert society over to the way it's supposed to be, where we all get our needs met and nobody has to suffer or die for the price of anything. Money should be optional. Here's how we get there.
 
+I wrote my mission down in February 2026, before this book had its shape, and it hasn't changed: to create systems where capital is no longer a requirement for survival, and to prove that the requirement is unnecessary and enforced.
+
 ## The plan, in one sentence
 
 Make survival a public floor instead of a private purchase, one rung at a time, starting with food, and let automation keep raising the floor.

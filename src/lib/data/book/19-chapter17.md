@@ -62,9 +62,9 @@ The alternative is simple to say: **tools you own.** Repairable, documented, abl
 
 ## Give the machines a worthwhile assignment
 
-Imagine the priorities written above the workbench: feed people, restore damaged places, make safe homes, relieve suffering. Those are assignments worthy of a powerful technology. They are also a way to judge the uses of it that actually receive our money and attention.
+Imagine the priorities written above the workbench: feed people, restore damaged places, make safe homes, relieve suffering. Those are assignments worthy of a powerful technology. They're also a way to judge the uses of it that actually receive our money and attention.
 
-Food comes first in this book because nobody needs an elaborate explanation of why dinner matters. The wider ambition includes land care, waste cleanup, housing, and health. These projects can proceed together. Somebody who needs treatment or shelter should not have to wait for the last food problem on Earth to be solved.
+Food comes first in this book because nobody needs an elaborate explanation of why dinner matters. The wider ambition includes land care, waste cleanup, housing, and health. These projects can proceed together. Somebody who needs treatment or shelter shouldn't have to wait for the last food problem on Earth to be solved.
 
 The question for any proposed machine is what useful work it can do under the conditions where people need it. Compare the tools they can obtain and support. A machine impressive in a video may be hard to repair locally. A familiar tool may do the job well. Shared access can matter more than ownership.
 
@@ -140,11 +140,11 @@ Toxic waste is a much bigger assignment, and it belongs to properly equipped spe
 
 Health belongs in the same larger ambition. We want less pain, earlier help, better treatment, and more room to live. A machine that advances a laboratory task, a tool that assists a clinician, and an aid that helps someone move through a day are different possibilities. Each needs evidence about the benefit it claims. An encouraging research result isn't yet a treatment someone can depend on.
 
-The access question remains after the technical achievement. If useful care exists but a person can't obtain it, the work of making that advance serve humanity is unfinished. A person should not have to wish the invention had never happened because they fear what its business model will do to them.
+The access question remains after the technical achievement. If useful care exists but a person can't obtain it, the work of making that advance serve humanity is unfinished. A person shouldn't have to wish the invention had never happened because they fear what its business model will do to them.
 
-This is what I want optimism to demand of us. Use capability to relieve the burdens people already carry. Evaluate the machine honestly. Arrange access deliberately. Keep people able to question what is being done to them and for them. A society can choose those purposes, then do the practical work required to make them real.
+This is what I want optimism to demand of us. Use capability to relieve the burdens people already carry. Evaluate the machine honestly. Arrange access deliberately. Keep people able to question what's being done to them and for them. A society can choose those purposes, then do the practical work required to make them real.
 
-This week, inventory tools with the people doing one existing food or cleanup task. Record what is available, who can use it, what requires training, and who maintains it. The tool library starts with accurate information, not a shopping spree.
+This week, inventory tools with the people doing one existing food or cleanup task. Record what's available, who can use it, what requires training, and who maintains it. The tool library starts with accurate information, not a shopping spree.
 
 ---
 

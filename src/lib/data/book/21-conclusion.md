@@ -19,7 +19,7 @@ I don't want us to become so practiced at imagining catastrophe that we forget w
 
 A person loses a job and still eats. A parent can take a child to receive care. A home is a place to live in, not the first thing a bad month takes away. A dangerous site gets cleaned without sending somebody into harm because their labor was the cheapest item on the plan. Useful work continues. More of its burden is carried by machines, and more of its benefit reaches people.
 
-That is what I mean by asking whether it could all go right. The world remains complicated. We remain capable of selfishness, error, and cruelty. There is still maintenance to do. But the daily conditions of being human improve because we choose to use our growing capability that way.
+That's what I mean by asking whether it could all go right. The world remains complicated. We remain capable of selfishness, error, and cruelty. There's still maintenance to do. But the daily conditions of being human improve because we choose to use our growing capability that way.
 
 We don't have to agree on the most distant future to want that one.
 
@@ -37,13 +37,13 @@ Housing, health, and environmental repair follow the same question: what would m
 
 ## Choose what success means
 
-The most consequential mindset change is one we can write into decisions. A successful machine deployment should be judged by more than the labor it removes from a payroll. Ask about time returned, danger avoided, access secured, and power over the service. Ask whose life improves and who is carrying the cost.
+The most consequential mindset change is one we can write into decisions. A successful machine deployment should be judged by more than the labor it removes from a payroll. Ask about time returned, danger avoided, access secured, and power over the service. Ask whose life improves and who's carrying the cost.
 
 That work belongs in public decisions, workplaces, research programs, procurement agreements, and community projects. It also belongs with the people receiving help, who can tell us when our magnificent answer doesn't fit through their door.
 
 The proposals in this book leave room for disagreement about means. We can compare ownership arrangements, funding choices, and ways of delivering a service. We can insist that commitments be funded and decisions challengeable. We can change a tool that fails. None of that requires retreating from the purpose.
 
-Wanting everyone to have enough is not a technical prediction. It is the standard we bring to the technology.
+Wanting everyone to have enough isn't a technical prediction. It's the standard we bring to the technology.
 
 My AGI forecast may be wrong. New capabilities may arrive unevenly, and some may prove harder than their promoters expect. A food service that works is still useful in that world. So is a better agreement, a repaired home, a safer job, or treatment that reaches a patient. We don't need to manufacture certainty in order to act with purpose.
 
@@ -83,7 +83,7 @@ Read the whole essay, though, and it's not the work of a fool. Stoll liked the n
 
 Another part of that future was being made through a quieter decision. On April 30, 1993, CERN placed three components of its Web software in the public domain: a basic client, a server, and a shared code library. People were permitted to use, copy, modify, and distribute the code. In 1994 CERN retained copyright on a new server release while continuing to grant free use through a permissive license. Access depended on decisions about ownership and permission, made by identifiable people and an institution. [Smith and Flückiger, Licensing the Web](https://home.cern/science/computing/the-birth-of-the-web/licensing-web/)
 
-That did not give everyone a computer or a connection. It removed a particular barrier to building on particular software. The comparison with food has that boundary: a meal still needs material, work, and delivery. But the episode gives hope something firmer than a prediction to stand on. People can choose terms that let more people benefit. We can ask which barrier our next decision will remove.
+That didn't give everyone a computer or a connection. It removed a particular barrier to building on particular software. The comparison with food has that boundary: a meal still needs material, work, and delivery. But the episode gives hope something firmer than a prediction to stand on. People can choose terms that let more people benefit. We can ask which barrier our next decision will remove.
 
 **The mechanism.** A compounding technology is always the worst it will ever be, today. Critics benchmark the present version; builders build against the next one. Both are describing something real. And a technology can prove its critics wrong about what it can do and still create real problems worth criticizing.
 
@@ -99,17 +99,17 @@ That did not give everyone a computer or a connection. It removed a particular b
 
 ## Back to Bear Flag
 
-The proofs came back from a print shop two towns over in a cardboard box that weighed about as much as the Fisher's replacement firebrick, ten copies, perfect-bound, the cover plain. The working title had not survived. Working titles don't. The first copy went to his mother, mailed flat in a padded envelope with a pencil note that said only: *This is what I was trying to say on the phone.*
+The proofs came back from a print shop two towns over in a cardboard box that weighed about as much as the Fisher's replacement firebrick, ten copies, perfect-bound, the cover plain. The working title hadn't survived. Working titles don't. The first copy went to his mother, mailed flat in a padded envelope with a pencil note that said only: *This is what I was trying to say on the phone.*
 
 ![An open cardboard box of freshly printed perfect-bound paperback books](/book-images/conclusion-proofs.png)
 
 *The proofs. Ten copies, perfect-bound. The book, finally.*
 
-Elijah drove south on a Thursday in late winter, three years and some weeks after the toast, and the drive was the same drive from Chapter 6 run in reverse: shoulders climbing gradually up toward his ears as the country closed in, wood and weather giving way to billboards, the check-engine light staying dark the whole way because Curtis had fixed it for two dollars in another life. Past Cloverdale he took the long way, on purpose, through the hills behind what had been his grandmother's place, and slowed where the madrones stood in the wet, shrugging off their bark the way they do, red under grey, burned down and come back how many times now. He did not stop. You don't need to stop for the things you're carrying with you.
+Elijah drove south on a Thursday in late winter, three years and some weeks after the toast, and the drive was the same drive from Chapter 6 run in reverse: shoulders climbing gradually up toward his ears as the country closed in, wood and weather giving way to billboards, the check-engine light staying dark the whole way because Curtis had fixed it for two dollars in another life. Past Cloverdale he took the long way, on purpose, through the hills behind what had been his grandmother's place, and slowed where the madrones stood in the wet, shrugging off their bark the way they do, red under grey, burned down and come back how many times now. He didn't stop. You don't need to stop for the things you're carrying with you.
 
 His mother called at 9:40 Sunday, four days before, right on schedule, the radio and the sink running behind her voice. She had read it twice. "I kept hearing you try to tell me this on the phone," she said. "For three years, honey. It reads better than it sounded." A pause, the pot going into the rack. "The part with the trees is the best part. Your grandmother would say you finally listened." And then, because her frame had always had room in it for everything that mattered: "Manny says to tell you you were right about the pressure switch."
 
-The Bear Flag had not changed, which was the eeriest thing it could have done. Same sticky wood, same neon, same television nobody was watching, the same corner table where three realtors had once toasted the dismissal of three people who were not there to raise a glass. The beer was five dollars now. He ordered one, and sat where he had sat with the laptop and the CSS tutorial and the 40 percent battery, and at the far end of the bar, because history doesn't repeat but it does like a good seat, somebody's laptop was glowing, somebody grinding away at teaching themselves something after hours.
+The Bear Flag hadn't changed, which was the eeriest thing it could have done. Same sticky wood, same neon, same television nobody was watching, the same corner table where three realtors had once toasted the dismissal of three people who weren't there to raise a glass. The beer was five dollars now. He ordered one, and sat where he had sat with the laptop and the CSS tutorial and the 40 percent battery, and at the far end of the bar, because history doesn't repeat but it does like a good seat, somebody's laptop was glowing, somebody grinding away at teaching themselves something after hours.
 
 He took a copy of the book out of his jacket and set it on the bar.
 
@@ -123,7 +123,7 @@ He put his phone beside the book. There was a message from the kitchen: the afte
 
 The first time he had sat here, he thought the future was a thing you could show someone on a laptop. Now it had addresses.
 
-He raised the glass. Not high. This is not that kind of bar, and it never was.
+He raised the glass. Not high. This isn't that kind of bar, and it never was.
 
 "Congratulations," he said, quietly, to the corner table, to the laptop at the end of the bar, to the whole grinding hopeful improbable room, and for the first time in three years the word came out meaning what it says. There was no forecast in it this time. Just relief at the ordinary, unfinished work waiting for him at home.
 

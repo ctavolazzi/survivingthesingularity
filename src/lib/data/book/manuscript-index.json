@@ -6,7 +6,7 @@
   "totals": {
     "sections": 30,
     "blocks": 1954,
-    "words": 86473
+    "words": 86478
   },
   "sections": [
     {
@@ -5138,7 +5138,7 @@
       "title": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)",
       "file": "06-chapter4.md",
       "next_ordinal": 92,
-      "words": 2462,
+      "words": 2461,
       "tombstones": [
         "sts.chapter4.b0003",
         "sts.chapter4.b0004",
@@ -5649,9 +5649,9 @@
             91,
             91
           ],
-          "words": 13,
-          "hash": "f46c2c8a0306",
-          "preview": "> $$P(\\text{base reality} \\mid \\text{simulations exist}) = 1 / (N_{\\text{sim}} + 1)$$"
+          "words": 12,
+          "hash": "4fdda35e081d",
+          "preview": "> $$P(\\text{base reality} | \\text{simulations exist}) = 1 / (N_{\\text{sim}} + 1)$$"
         },
         {
           "id": "sts.chapter4.b0079",
@@ -10530,7 +10530,7 @@
       "title": "Chapter 9: Deglobalization and the Neighborhood Factory",
       "file": "11-chapter9.md",
       "next_ordinal": 213,
-      "words": 3984,
+      "words": 3991,
       "tombstones": [
         "sts.chapter9.b0004",
         "sts.chapter9.b0006",
@@ -11258,9 +11258,9 @@
             116,
             116
           ],
-          "words": 13,
-          "hash": "ab34656723b9",
-          "preview": "> **N₂ + 8H⁺ + 8e⁻ + 16 ATP → 2NH₃ + H₂ + 16 ADP + 16 Pᵢ** (via nitrogenase)"
+          "words": 20,
+          "hash": "81b94a5bf1b7",
+          "preview": "> **N₂ + 8H<sup>+</sup> + 8e<sup>−</sup> + 16 ATP → 2NH₃ + H₂ + 16 ADP + 16 P<sub>i</sub>*"
         },
         {
           "id": "sts.chapter9.b0147",
@@ -11781,7 +11781,7 @@
       "title": "Chapter 10: The \"Create Over Consume\" Protocol",
       "file": "12-chapter10.md",
       "next_ordinal": 184,
-      "words": 3112,
+      "words": 3111,
       "tombstones": [
         "sts.chapter10.b0003",
         "sts.chapter10.b0004",
@@ -12391,9 +12391,9 @@
             98,
             98
           ],
-          "words": 11,
-          "hash": "6813ee5567e5",
-          "preview": "> $$P_k(x) = \\int q_k(x \\mid y) P_{k-1}(y) \\, dy$$"
+          "words": 10,
+          "hash": "16ee8848d113",
+          "preview": "> $$P_k(x) = \\int q_k(x | y) P_{k-1}(y) \\, dy$$"
         },
         {
           "id": "sts.chapter10.b0131",

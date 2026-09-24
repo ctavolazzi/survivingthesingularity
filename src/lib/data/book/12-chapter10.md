@@ -95,7 +95,7 @@ A large language model learns the statistics of the text it was trained on, the 
 
 Model it like this. Call the real human data distribution $P_0(x)$. Each new generation $k$ learns from samples of the one before:
 
-> $$P_k(x) = \int q_k(x \mid y) P_{k-1}(y) \, dy$$
+> $$P_k(x) = \int q_k(x | y) P_{k-1}(y) \, dy$$
 
 where $q_k$ stands for all the small approximation and sampling errors of model $M_k$. Two things happen.
 

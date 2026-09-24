@@ -113,7 +113,7 @@ To force that reaction, plants run at 150 to 250 times atmospheric pressure and 
 
 Biology does the same chemistry at outdoor temperature. Legumes, clover, peas, beans, vetch, host *Rhizobium* bacteria in their roots, and those bacteria use an enzyme called nitrogenase to break the nitrogen triple bond:
 
-> **N₂ + 8H⁺ + 8e⁻ + 16 ATP → 2NH₃ + H₂ + 16 ADP + 16 Pᵢ** (via nitrogenase)
+> **N₂ + 8H<sup>+</sup> + 8e<sup>−</sup> + 16 ATP → 2NH₃ + H₂ + 16 ADP + 16 P<sub>i</sub>** (via nitrogenase)
 
 The plant pays in sugar from sunlight. That's not the same job as the fungi that help roots take up phosphorus and water, and none of it means a garden feeds itself forever: every harvest carries nutrients away, and something has to put them back. But a living soil, managed well, can carry a lot of the load that currently comes from a gas well. (Chapter 15 goes down into the dirt.)
 

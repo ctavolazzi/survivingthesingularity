@@ -88,7 +88,7 @@ If advanced civilizations have both the ability and the desire, simulated worlds
 
 In 2020 the astronomer David Kipping ran the odds with more care, and his result cuts through the vertigo. His starting point is plain honesty: nobody has ever shown that simulating conscious beings is actually possible, so a fair calculation has to weigh that uncertainty instead of just counting hypothetical worlds. Collapse the trilemma to a two-horse race, either realities like ours produce simulations or they don't, and if they do, the arithmetic is brutal:
 
-> $$P(\text{base reality} \mid \text{simulations exist}) = 1 / (N_{\text{sim}} + 1)$$
+> $$P(\text{base reality} | \text{simulations exist}) = 1 / (N_{\text{sim}} + 1)$$
 
 One real world, $N_{\text{sim}}$ simulated ones, and you're equally likely to be in any of them. *If.*
 

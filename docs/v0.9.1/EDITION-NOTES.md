@@ -12,7 +12,7 @@ Changed". Its primary sources are committed under `docs/history/google-docs/`.
 
 | | v0.9.0 | v0.9.1 |
 |---|---:|---:|
-| Words (manuscript index) | 84,483 | 86,473 |
+| Words (manuscript index) | 84,483 | 86,478 |
 | Letter PDF pages | 254 | 256 |
 | Chapters without an epigraph | 7 | 0 |
 | Third-party captions matching the rights audit | 12 of 18 | 18 of 18 |
@@ -107,7 +107,12 @@ may ask for a larger master. The reading edition is 318 pages (cover plus 317).
   full-font build crashed on a subscript p in `ch11-cooling-loop.svg`; every used
   SVG was rendered alone to find it. (3) Paragraphs interrupted by a diagram at a
   page break read as missing; the proof now recovers them, and the new negative
-  control keeps it honest.
+  control keeps it honest. (4) Ghostscript's grayscale pass reported that Songti SC
+  "cannot be embedded because of licensing restrictions" and dropped a glyph. A
+  per-text-run font scan traced it to U+2223 (from \mid in two formulas) and traced
+  two more system fallbacks to the Ch. 9 nitrogenase equation. The formulas now use
+  | and <sup>/<sub>. The rebuilt interior has 0 text runs outside the book fonts
+  and Menlo, and the grayscale pass prints no warnings.
 - The rendered cover was inspected after the crop was anchored left.
 
 ## Not done
@@ -115,7 +120,7 @@ may ask for a larger master. The reading edition is 318 pages (cover plus 317).
 - No complete fact-check of restored material beyond the gates and spot checks.
 - The four unclear-rights images remain in the web source (above).
 - Site release, README, RELEASES.md and download links untouched.
-- Printer readiness: diagram symbols with no glyph in the book fonts fall back to
-  macOS system fonts (Songti SC, AppleMyungjo, Times New Roman Bold), which get
-  embedded in the 6x9 PDF. Check the embedding terms, or change those symbols to
-  shapes, before a commercial print run. No physical proof has been made.
+- Printer readiness: the only fonts embedded are the book's own (Source Serif 4 and
+  Source Sans, OFL) and Menlo for diagram labels, the same as v0.8.2. Check Menlo's
+  embedding terms with the printer, or swap the diagrams to JetBrains Mono (OFL).
+  No physical proof has been made.

@@ -112,21 +112,19 @@ for index, section in enumerate(META['sections']):
             fig.replace_with(BeautifulSoup(motif(RIGHTS_REPLACEMENTS[filename]), 'html.parser'))
             continue
         if sid.startswith('part-'):
+            cap = fig.find('figcaption')
             fig.replace_with(BeautifulSoup(motif(MOTIFS[sid]), 'html.parser'))
-            transformations.append({'section':sid,'original':filename,'action':'Replace generated divider with original vector motif; retain all divider prose.'})
+            transformations.append({'section':sid,'original':filename,'omitted_caption':cap.get_text() if cap else '','action':'Replace generated divider with original vector motif; retain all divider prose. The image caption goes with the image.'})
         else:
             audit = RIGHTS_BY_FILE.get(filename)
             assert audit and audit['status'] == 'retain', ('Uncleared image',filename)
             caption = fig.find('figcaption')
             if caption and audit['kind'] == 'third_party' and audit.get('caption_policy') != 'keep':
-                old = caption.get_text()
+                # Pandoc wraps long captions, so normalize whitespace before
+                # finding the credit. Since v0.9.1 the source captions carry the
+                # audited identifications themselves (ch02 Thinktank, ch14 Haifa).
+                old = ' '.join(caption.get_text().split())
                 description = old.split(' (',1)[0]
-                if filename == 'ch02-factory-robots.jpg':
-                    description = "Robotic arms in Thinktank's interactive Jaguar assembly exhibit. A demonstration of industrial automation."
-                    img['alt'] = 'Robotic arms in an interactive Jaguar assembly exhibit at Thinktank, Birmingham'
-                if filename == 'ch14-dead-mall.jpg':
-                    description = 'An abandoned bar in an older shopping mall in Haifa. Gradually, then suddenly.'
-                    img['alt'] = 'An abandoned bar inside an older shopping mall in Haifa'
                 new = f'{description} ({audit["artist"]}, {audit["license"]}, via Wikimedia Commons)'
                 if ' '.join(new.split()) != ' '.join(old.split()):
                     caption.clear(); caption.string = new

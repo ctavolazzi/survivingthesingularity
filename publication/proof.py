@@ -31,8 +31,29 @@ def outside(rect,w,h):
     x,y,bw,bh=rect
     return x < -0.5 or y < -0.5 or x+bw > w+0.5 or y+bh > h+0.5
 
+def split_present(b, normalized, window=6000, pieces=4):
+    """True when every character of b appears in order, in at most `pieces`
+    runs of 12+ characters within `window` characters. A figure placed across a
+    page break makes pypdf emit its SVG labels mid-paragraph; the paragraph is
+    intact but interrupted. Text cut from the middle still fails: every
+    character has to be matched."""
+    pos, start = 0, None
+    while b:
+        lo, hi, best = 0, len(b), -1
+        end = None if start is None else pos + window
+        while lo < hi:
+            mid = (lo + hi + 1) // 2
+            j = normalized.find(b[:mid], pos, end)
+            if j >= 0: lo, best = mid, j
+            else: hi = mid - 1
+        if lo < min(12, len(b)): return False
+        if start is None: start = best
+        pos, b, pieces = best + lo, b[lo:], pieces - 1
+        if pieces < 0: return False
+    return True
+
 def missing_blocks(blocks, normalized):
-    return [b for b in blocks if normalize(b) not in normalized]
+    return [b for b in blocks if normalize(b) not in normalized and not split_present(normalize(b), normalized)]
 
 baseline=json.loads((ROOT/'docs/publication/baseline.json').read_text())
 source=ROOT/'src/lib/data/book'
@@ -84,6 +105,7 @@ sections_present=[s['id'] for s in source_sections if html_doc.find(id='sec-'+s[
 assert missing_blocks(['This intentionally absent publication proof sentence.'],normalized)
 probe=next(b for b in blocks if 'rosacheckedthecontainers' in normalize(b))
 assert missing_blocks([probe],normalized.replace(normalize(probe),''))
+cut=normalize(probe); assert missing_blocks([probe],normalized.replace(cut,cut[:len(cut)//3]+cut[2*len(cut)//3:]))
 assert outside((-5,40,30,20),576,864)
 assert '#intentionally-missing' not in ids
 report={
@@ -92,7 +114,7 @@ report={
     'sections_present':len(sections_present),'source_text_blocks_checked':len(blocks),
     'missing_text_blocks':missing,'documented_caption_exceptions':exceptions,
     'text_outside_page':overflow,'fonts_embedded':fonts,'broken_internal_links':broken_links,
-    'missing_assets':missing_assets,'negative_controls':['absent text','removed known paragraph','outside-page rectangle','absent destination'],
+    'missing_assets':missing_assets,'negative_controls':['absent text','removed known paragraph','middle third cut from a paragraph','outside-page rectangle','absent destination'],
     'limits':'Does not establish legal clearance, vendor acceptance, factual accuracy or visual quality. Contact sheets and full-size samples are reviewed separately.'
 }
 (PROOF/'checks.json').write_text(json.dumps(report,indent=2)+'\n')

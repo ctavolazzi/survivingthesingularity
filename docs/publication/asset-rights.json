@@ -2506,6 +2506,50 @@
     760,
     542
    ]
+  },
+  {
+   "file": "ch05-horses-tractors.svg",
+   "path": "static/book-images/ch05-horses-tractors.svg",
+   "section": "07-chapter5.md",
+   "sha256": "78668d7fa019cec71797e9f571309c31c24ba5d74eb28e77f1323853ff69c4e6",
+   "audited_for": "v0.9.2",
+   "kind": "generated",
+   "status": "retain",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "size": null
+  },
+  {
+   "file": "intro-food-insecurity.svg",
+   "path": "static/book-images/intro-food-insecurity.svg",
+   "section": "02-introduction.md",
+   "sha256": "a87e9e6a5da6dccb053834a84c27ea21fc2e5505569f5918829feac5bb8de52f",
+   "audited_for": "v0.9.2",
+   "kind": "generated",
+   "status": "retain",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "size": null
+  },
+  {
+   "file": "appd-precedent-timeline.svg",
+   "path": "static/book-images/appd-precedent-timeline.svg",
+   "section": "25-appendix-d.md",
+   "sha256": "5d665d976a06f99f35d7a698aa2afb30b44521da483e37deeae2160033034bc0",
+   "audited_for": "v0.9.2",
+   "kind": "generated",
+   "status": "retain",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "size": null
+  },
+  {
+   "file": "ch19-conversion-ladder.svg",
+   "path": "static/book-images/ch19-conversion-ladder.svg",
+   "section": "27-chapter19.md",
+   "sha256": "be4b826e7e4f6d129cf5204107e9f950125d5a71f31b72b326acbe0ae797e28e",
+   "audited_for": "v0.9.2",
+   "kind": "generated",
+   "status": "retain",
+   "basis": "Original chart or diagram generated as SVG by docs/v0.9.2/charts.py from committed public-domain government data or the book's own text; no third-party artwork.",
+   "size": null
   }
  ],
  "counts": {

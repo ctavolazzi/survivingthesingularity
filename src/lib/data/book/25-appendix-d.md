@@ -1,6 +1,10 @@
 # APPENDIX D: THE PRECEDENT LEDGER
 
-*Every chapter of this book closes with a precedent: a documented case of people meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-23. The dates run from the first farms to the week the web was called a letdown. Same wave, different water. None of them proves a date for AGI or a law of progress. Each one is a question to bring to your own situation.*
+*Every chapter of this book closes with a precedent: a documented case of people meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-24. The dates run from the first farms to the week the web was called a letdown. Same wave, different water. None of them proves a date for AGI or a law of progress. Each one is a question to bring to your own situation.*
+
+![All twenty-four precedents on one page: nineteen shown on a timeline from 1750 to today, as dots for single dates and bars for spans, and five from deep history listed with their dates, from the first farms around 9500 BC to the Great Demotion of 1543](/book-images/appd-precedent-timeline.svg)
+
+*The Ledger on one page. Dashed bars are approximate spans drawn from each chapter's documents.*
 
 ## How to run the Ledger
 
@@ -40,7 +44,8 @@ A ledger you read once is trivia. A ledger you operate is an instrument. The dif
 | P-20 | An Argument in Circulation | 1776 | Chapter 16 |
 | P-21 | Access to Tools | 1968 | Chapter 17 |
 | P-22 | The Apocalypse That Ran On Time | 1999 to 2004 | Chapter 18 |
-| P-23 | What the Forecast Missed | 1993 to 1995 | Conclusion |
+| P-23 | The Day Care Stopped Costing Money | 1942 to 1948 | Chapter 19 |
+| P-24 | What the Forecast Missed | 1993 to 1995 | Conclusion |
 
 ## The rules, in one breath each
 
@@ -66,7 +71,8 @@ A ledger you read once is trivia. A ledger you operate is an instrument. The dif
 - **P-20.** Make it clear enough to discuss, and own enough of your press that nobody else gets the last edit.
 - **P-21.** Build a toolset you understand, can repair, and can't be locked out of.
 - **P-22.** A premortem that works looks like paranoia that wasn't needed. Judge the reasoning, not the silence.
-- **P-23.** Today's version of a compounding technology is the worst it will ever be. Let results change the plan, including the optimistic one.
+- **P-23.** When someone says a need can't be made free, ask what changed the day it became free somewhere else. Usually nothing but the decision.
+- **P-24.** Today's version of a compounding technology is the worst it will ever be. Let results change the plan, including the optimistic one.
 
 ## The symptom index
 
@@ -96,7 +102,8 @@ A ledger you read once is trivia. A ledger you operate is an instrument. The dif
 | You know something worth saying and have no audience | P-20 |
 | You want to start building and don't know where | P-21 |
 | Someone calls your preparation paranoid | P-22 |
-| A smart person just called AI a fad, a bubble, or a toy | P-23 |
+| Someone says we could never afford to make food, housing, or care free | P-23 |
+| A smart person just called AI a fad, a bubble, or a toy | P-24 |
 
 ## Sourcing, and the blacklist
 

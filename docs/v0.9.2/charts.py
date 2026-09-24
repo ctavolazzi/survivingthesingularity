@@ -141,7 +141,8 @@ PRECEDENTS_MODERN = [  # (id, name, start, end, approximate)
     ('P-14', 'Quartz and the Assembly Line', 1962, 1983, False),
     ('P-21', 'Access to Tools', 1968, 1968, False),
     ('P-17', 'The Graveyard of the Unconvinced', 1975, 2013, False),
-    ('P-23', 'What the Forecast Missed', 1993, 1995, False),
+    ('P-23', 'The Day Care Stopped Costing Money', 1942, 1948, False),
+    ('P-24', 'What the Forecast Missed', 1993, 1995, False),
     ('P-22', 'The Apocalypse That Ran On Time', 1999, 2004, False),
     ('P-18', 'The Mirror Twin', 2000, 2009, True),
 ]
@@ -185,13 +186,54 @@ def precedent_timeline():
         body += f'<text x="{lx}" y="{cy}" font-size="11.5" fill="{MUTED}">{pid}</text>\n'
         body += f'<text x="{lx+46}" y="{cy}" font-size="11.5" fill="{INK}">{esc(name)}</text>\n'
         body += f'<text x="{x0}" y="{cy}" font-size="11.5" fill="{AMBER}">{esc(when)}</text>\n'
-    return frame(W, H, 'THE LEDGER ON ONE PAGE', 'Twenty-three times people watched a new capability arrive and reprice their world.',
+    return frame(W, H, 'THE LEDGER ON ONE PAGE', 'Twenty-four times people watched a new capability arrive, or a new rule, and reprice their world.',
                  body, 'Dates from Appendix D; sources for every entry in Appendix B.')
+
+
+RUNGS = [  # (number, rung, proof it's possible)
+    (1, 'Count what\'s wasted and who\'s hungry', 'California SB 1383 recovery targets'),
+    (2, 'Feed everyone who asks', 'France, 2016: no destroying edible food'),
+    (3, 'Make the meal a public service', 'California universal school meals, 2022'),
+    (4, 'Take the ground off the market', 'community land trusts, 99-year leases'),
+    (5, 'Own the machines together', 'rural electric co-ops, from 1936'),
+    (6, 'Stop letting a score decide who survives', 'NYC right to counsel, 2017'),
+    (7, 'Widen the floor', 'NHS, 1948; Universal Basic Services'),
+    (8, 'Put it on the scoreboard, in public', 'holds the ladder together'),
+    (9, 'Keep the market above the floor', 'money stays; it becomes optional'),
+]
+BANDS = [(1, 3, 'FEED PEOPLE NOW'), (4, 6, 'CHANGE WHO OWNS AND DECIDES'), (7, 9, 'WIDEN THE FLOOR')]
+
+
+def conversion_ladder():
+    W, row, top = 900, 52, 112
+    H = top + len(RUNGS) * row + 70
+    body = ''
+    y_of = lambda n: top + (len(RUNGS) - n) * row  # rung 1 at the bottom
+    for a, b, label in BANDS:
+        y0, y1 = y_of(b), y_of(a) + row - 8
+        body += f'<rect x="40" y="{y0}" width="6" height="{y1-y0}" rx="3" fill="{BRAND}"/>\n'
+        body += f'<text x="58" y="{(y0+y1)/2+4:.0f}" font-size="11" letter-spacing="1" fill="{MUTED}">{label}</text>\n'
+    for n, rung, proof in RUNGS:
+        y = y_of(n)
+        held = n >= 8
+        stroke = BLUE if held else AMBER
+        body += f'<rect x="300" y="{y}" width="560" height="{row-12}" rx="8" fill="{CARD}" stroke="{stroke}" stroke-width="2"/>\n'
+        body += f'<text x="322" y="{y+26}" font-size="16" font-weight="600" fill="{INK}">{n}</text>\n'
+        body += f'<text x="352" y="{y+17}" font-size="13" font-weight="600" fill="{INK}">{esc(rung)}</text>\n'
+        body += f'<text x="352" y="{y+33}" font-size="11" fill="{MUTED}">{esc(proof)}</text>\n'
+    ly = top + len(RUNGS) * row + 8
+    body += f'<rect x="300" y="{ly}" width="18" height="12" rx="3" fill="{CARD}" stroke="{AMBER}" stroke-width="2"/>\n'
+    body += f'<text x="326" y="{ly+11}" font-size="11" fill="{MUTED}">already done somewhere</text>\n'
+    body += f'<rect x="520" y="{ly}" width="18" height="12" rx="3" fill="{CARD}" stroke="{BLUE}" stroke-width="2"/>\n'
+    body += f'<text x="546" y="{ly+11}" font-size="11" fill="{MUTED}">how you hold it together</text>\n'
+    return frame(W, H, 'WE DON\'T HAVE TO LIVE LIKE THIS', 'Nine rungs, from the bottom up. Start with food. Climb as far as your town can hold.',
+                 body, 'Chapter 19. Sources for every rung in the chapter and in Appendix B.')
 
 
 if __name__ == '__main__':
     for name, fn in (('ch05-horses-tractors.svg', horses_tractors),
                      ('intro-food-insecurity.svg', food_insecurity),
-                     ('appd-precedent-timeline.svg', precedent_timeline)):
+                     ('appd-precedent-timeline.svg', precedent_timeline),
+                     ('ch19-conversion-ladder.svg', conversion_ladder)):
         (OUT / name).write_text(fn())
         print('wrote', OUT / name)

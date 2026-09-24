@@ -177,7 +177,13 @@ For AIMD-00-290, see especially printed pages 29–32 of the [complete report](h
 
 - US General Accounting Office, [Social Security Administration: Year 2000 Readiness Efforts Helped Ensure Century Rollover and Leap Year Success](https://www.gao.gov/products/aimd-00-125), AIMD-00-125 (19 April 2000), including subsequent recommendation-status updates. Supports continued contingency planning and the explicitly later April 2004 separation of validation testing from development.
 
-### P-23: Internet forecasts
+### P-23: The National Health Service (Chapter 19)
+
+UK Government History blog, [The founding of the NHS: 75 years on](https://history.blog.gov.uk/2023/07/13/the-founding-of-the-nhs-75-years-on/) (13 July 2023). Government historians' account of the Beveridge Report's five giants, the limits of wartime health insurance (about half the population covered; hospital, specialist, dental, optical, and hearing services excluded), doctors' concerns and Bevan's answer, and the service's launch on 5 July 1948 as the first free-at-the-point-of-use medical care for a whole population in a western country.
+
+Aneurin Bevan, *In Place of Fear* (1952), chapter 5, [transcribed by Public Matters](https://publicmatters.org.uk/2019/02/05/aneurin-bevans-1952-essay-on-the-nhs-chapter-5-of-in-place-of-fear/). Source of the epigraph: "no society can legitimately call itself civilized if a sick person is denied medical aid because of lack of means."
+
+### P-24: Internet forecasts
 
 Clifford Stoll, [Why the Web Won't Be Nirvana](https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306), *Newsweek* (February 1995), also known by the print title “The Internet? Bah!” The publisher's archival version is the source for this dated forecast. The case concerns Stoll's argument, not a representative sample of every critic of the internet.
 
@@ -282,6 +288,21 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - Hackaday's cyberdeck contests: [2022](https://hackaday.com/2022/10/13/2022-cyberdeck-contest-picking-the-best-of-the-best/) and [2023](https://hackaday.com/2023/09/07/2023-cyberdeck-challenge-the-best-decks-on-the-net/).
 - [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030.
 
+### Introduction and Chapter 19: the conversion
+
+- United Nations, [Food](https://www.un.org/en/global-issues/food): "today's global food production is enough to feed everyone on the planet."
+- California Department of Food and Agriculture, [Food Recovery](https://www.cdfa.ca.gov/is/foodrecovery/): US food waste estimated at 30 to 40 percent of the food supply; Californians throw away five to six million tons a year.
+- Consumer Financial Protection Bureau, [CFPB Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) (2022), on credit reports, credit scores, and proprietary risk scores in rental decisions.
+- Shoshana Zuboff, *The Age of Surveillance Capitalism* (PublicAffairs, 2019); [summary](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism).
+- National Low Income Housing Coalition, [New Research Finds 2.7 Million Households Receive Eviction Filings Annually](https://nlihc.org/resource/new-research-finds-27-million-households-receive-eviction-filings-annually) (2022), reporting Gromis et al., "Estimating Eviction Prevalence across the United States," *PNAS*: 3.6 million filings a year, 2000 to 2018.
+- Judicial Council of California, [What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case), on the sheriff's notice to vacate and lockout.
+- Oxfam, [An Economy for the 99%](https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/file_attachments/bp-economy-for-99-percent-160117-summ-en.pdf) (January 2017), and [Billionaire wealth jumps three times faster in 2025](https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking) (19 January 2026). Oxfam's wealth comparisons rest on published estimates of net worth and have been debated; they are cited here for scale, not precision.
+- California Department of Education, [California Universal Meals](https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp).
+- NYC Office of Civil Justice, [Universal Access Annual Report 2022](https://www.nyc.gov/assets/hra/downloads/pdf/services/civiljustice/OCJ_UA_Annual_Report_2022.pdf): Local Law 136 of 2017; 78 percent of represented households remained in their homes in fiscal 2022.
+- Federal Reserve Bank of Richmond, [Electrifying Rural America](https://www.richmondfed.org/publications/research/econ_focus/2020/q1/economic_history) (2020), and America's Electric Cooperatives, [Fact Sheet](https://www.cooperative.com/programs-services/bts/Documents/Data/Electric-Co-op-Fact-Sheet.pdf) (April 2026).
+- [Universal basic services](https://en.wikipedia.org/wiki/Universal_basic_services), on the 2017 UCL Institute for Global Prosperity proposal and its costing, and Basic Income Earth Network, [on the 2019 UCL report](https://basicincome.org/news/2019/06/ucl-institute-for-global-prosperity-issues-report-on-universal-basic-services/).
+- USDA Economic Research Service, [Food Security in the U.S.: Key Statistics](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics), and the [trends data](https://www.ers.usda.gov/media/6990/trends.xlsx) behind the Introduction's chart.
+
 ## Sources for the epigraphs
 
 The entries below identify the work or institutional record supporting each attribution. The seven epigraphs added in v0.9.1 were each checked word for word against the text named. An institutional attribution does not establish the first occasion on which a saying was used. Dialogue from a novel belongs to its character and scene.
@@ -309,3 +330,4 @@ The entries below identify the work or institutional record supporting each attr
 - **Chapter 13, Henry David Thoreau:** [Walden](https://www.gutenberg.org/ebooks/205) (1854), "Economy." Thoreau makes the point about the price of an ordinary house and the years of a laborer's life it takes to pay for one.
 - **Chapter 16, A. J. Liebling:** "The Wayward Press: Do You Belong in Journalism?", *The New Yorker*, 14 May 1960, page 109, where it appears as a parenthetical remark. [Quote Investigator](https://quoteinvestigator.com/2015/05/21/free-press/)
 - **Conclusion, Oscar Wilde:** [The Soul of Man under Socialism](https://www.gutenberg.org/ebooks/1017) (1891). A few lines later Wilde writes that "the community by means of organisation of machinery will supply the useful things."
+- **Chapter 19, Aneurin Bevan:** *In Place of Fear* (1952), chapter 5; see P-23 above. The sentence is quoted from its middle, where it begins "It insists that no society…"; the epigraph capitalizes the first word.

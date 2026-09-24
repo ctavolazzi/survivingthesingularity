@@ -67,7 +67,7 @@ Food first. Then keep the promise growing.
 
 ---
 
-## Precedent P-23: What the Forecast Missed (1993 to 1995)
+## Precedent P-24: What the Forecast Missed (1993 to 1995)
 
 The Ledger closes with a receipt. Frame it.
 

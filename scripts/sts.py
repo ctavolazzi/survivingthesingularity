@@ -119,7 +119,7 @@ BOOK_DIR = ROOT / "src" / "lib" / "data" / "book"
 # from the index would make the comparison a tautology. Bump it when a
 # precedent is added, and `verify precedents` will name whichever end of
 # the renumber you missed.
-LEDGER_SIZE = 23
+LEDGER_SIZE = 24
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -4213,7 +4213,7 @@ def verify_meta() -> list:
 
 
 def verify_precedents() -> dict:
-    """Precedent Ledger integrity: P-01..P-23, one per section, all indexed."""
+    """Precedent Ledger integrity: P-01..P-24, one per section, all indexed."""
     per_section, all_ids = {}, set()
     for f in sorted(BOOK_DIR.glob("*.md")):
         if not BOOK_SECTION_RE.match(f.name):

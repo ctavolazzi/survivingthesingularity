@@ -70,11 +70,11 @@ for f,t in text.items():
 for f,t in text.items():
     for m in re.finditer(r'Chapter (\d+)',t):
         near=t[max(0,m.start()-200):m.end()+120]
-        if int(m.group(1))>18 and 'Northanger' not in near and 'gutenberg.org/files/121' not in near:
+        if int(m.group(1))>19 and 'Northanger' not in near and 'gutenberg.org/files/121' not in near:
             fails.append(('bad chapter ref',f,m.group(0)))
 # precedent ids present once each in body, and in Appendix D
 body=''.join(text[f] for f in files)
-for i in range(1,24):
+for i in range(1,25):
     pid=f'P-{i:02d}'
     n=len(re.findall(rf'^## Precedent {pid}:',body,re.M))
     if n!=1: fails.append(('precedent count',pid,str(n)))

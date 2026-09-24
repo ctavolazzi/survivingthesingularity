@@ -63,6 +63,36 @@ The leap from "a machine can do my work" to "my family might go hungry" is an in
 
 > **A gain in our ability to produce should become a gain in our ability to live.**
 
+## We don't have to live like this
+
+Here's what I actually believe, as plainly as I can say it.
+
+We don't have to live like this.
+
+We could have a beautiful world where AI and robots provide for the physical survival needs of every single person. Robots grow our food and build our houses. AI helps cure our diseases, helps us learn and grow, helps us explore the universe, and helps us discover new ways of building new kinds of technology, better societies, and a better life for every individual person.
+
+We don't have that, and it isn't because we can't make enough. The United Nations says it flatly: "today's global food production is enough to feed everyone on the planet." [United Nations, Food](https://www.un.org/en/global-issues/food) In this country, by the government's own estimate, 30 to 40 percent of the food supply goes uneaten, and California's Department of Food and Agriculture says Californians throw away five to six million tons of food every year. [CDFA, Food Recovery](https://www.cdfa.ca.gov/is/foodrecovery/)
+
+So why should food be denied to hungry people because it doesn't sell?
+
+Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Landlords in the United States file about 3.6 million eviction cases a year. [NLIHC, reporting Gromis et al. in PNAS](https://nlihc.org/resource/new-research-finds-27-million-households-receive-eviction-filings-annually) When a family loses one, California's own courts spell out what comes next: "The sheriff gives you a Notice to Vacate," five days to move, and "if you don't move out, the sheriff can lock you out of your home." [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.
+
+Meanwhile the money piles up at the top. In 2017, Oxfam found that eight men owned as much wealth as the poorest half of the world. [Oxfam, An Economy for the 99%](https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/file_attachments/bp-economy-for-99-percent-160117-summ-en.pdf) By January 2026, billionaire wealth had grown 81 percent since 2020, to $18.3 trillion, and billionaires were 4,000 times more likely than ordinary people to hold political office, while one in four people on Earth didn't regularly have enough to eat. [Oxfam, Resisting the Rule of the Rich (2026)](https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking) The people at the top of that pile have every reason to keep the rules exactly as they are.
+
+![A line chart of the share of US households that were food insecure, 2001 to 2024. It rises from 11.1 percent in 2007 to 14.6 percent in 2008 during the recession, takes a decade to fall back, and reaches 13.7 percent, 18.3 million households, in 2024. Very low food security follows the same shape, reaching 5.4 percent.](/book-images/intro-food-insecurity.svg)
+
+*When the jobs went in 2008, food insecurity jumped by a third in a single year. Source: [USDA Economic Research Service, food security trends](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics).*
+
+That system of rules is enforced. It doesn't have to be.
+
+If you want to make a billion dollars and buy things, fine. Go for it. But why should everyone else have to suffer at your expense? Money should be optional. Not abolished. Optional.
+
+What the fuck is the point of having a society at all if it doesn't meet the needs of the people who live in it?
+
+We could have a society where people grow and learn, fix their own bodies, build amazing things, and make wonderful art, and do it all because they *want* to. Instead we have one where people go hungry and suffer because they *have* to. Greed isn't a law of physics. It's a set of choices, written down and enforced, and choices can be changed.
+
+That's the whole book. Everything else is how. Chapter 19 lays out the plan, step by step.
+
 ## Food first
 
 I want adequate food available to everyone, regardless of income or employment. Enough of it, suitable for the person who needs it, in a form they can actually use. Someone with no kitchen needs more than a bag of ingredients. Someone who can't reach a pickup point needs more than an address.
@@ -93,8 +123,6 @@ A machine that prints a wall hasn't provided a home. A model that predicts a pro
 
 Free doesn't mean costless, either. People, equipment, energy, maintenance, and delivery still have to be paid for. Free means the person receiving the baseline doesn't have to produce money before they can eat. The question is how to arrange dependable provision, not how to make an invoice vanish. That takes workers, growers, neighbors, public institutions, and businesses willing to supply a service on terms people can rely on. We'll argue about ownership and funding. Good. Let's have those arguments while feeding people, not make winning them a condition for starting.
 
-I'll tell you where I stand, because you'll find out anyway. We need to move away from money as a system of control, as the thing that decides who gets fed. That's the most radical idea in this book. I've turned it over every way I know how, and I don't believe we survive this as a species if staying alive keeps running through money. You don't have to go that far with me. You only have to agree that nobody should go hungry while we argue about it.
-
 This is the roadmap. These are the nine stages. And we're already inside the first one.
 
 ![The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge](/book-images/intro-nine-stages.svg)
@@ -115,9 +143,9 @@ Go into any comment section and you'll find the chorus: AI slop this, AI slop th
 
 So hold both of these at once, because a lot depends on the difference. The machine is unprecedented. The moment isn't. The size, the shape, and the scale of the change, the way it moves through markets and families and minds, the panic, the denial, the goalpost-moving, the moral outcry: humanity has stood inside that weather before, over and over, and left receipts. The technology is new every time. The stampede never is. And a person who knows the stampede's choreography doesn't have to run with the herd.
 
-So this book carries its case law with it. It's called the Precedent Ledger: twenty-three documented episodes of people standing where you're standing, watching a new capability arrive and reprice their world. It runs back past the pundit who called the internet a passing fad, past the camera company that invented the digital camera and still went bankrupt, past the frame-breakers and the red-flag law and the abbot who praised hand-copied books in a printed one, back to the first and largest transition our species ever walked through: the seed. Agriculture. The one-way door.
+So this book carries its case law with it. It's called the Precedent Ledger: twenty-four documented episodes of people standing where you're standing, watching a new capability arrive and reprice their world. It runs back past the pundit who called the internet a passing fad, past the camera company that invented the digital camera and still went bankrupt, past the frame-breakers and the red-flag law and the abbot who praised hand-copied books in a printed one, back to the first and largest transition our species ever walked through: the seed. Agriculture. The one-way door.
 
-Every chapter closes with one entry. Each carries a serial number, P-01 through P-23, because these are exhibits, not anecdotes: dated, documented, and filed where you can check them (the full index is Appendix D, the sources Appendix B). Each runs the same four beats: the story, the mechanism underneath it, the rule it teaches, and then the part most history books won't give you, **the practice**: three concrete actions, sized for a single week. History you don't act on is decoration.
+Every chapter closes with one entry. Each carries a serial number, P-01 through P-24, because these are exhibits, not anecdotes: dated, documented, and filed where you can check them (the full index is Appendix D, the sources Appendix B). Each runs the same four beats: the story, the mechanism underneath it, the rule it teaches, and then the part most history books won't give you, **the practice**: three concrete actions, sized for a single week. History you don't act on is decoration.
 
 Read each one twice. The first time it'll sound like a story about someone else. The second time you'll notice it's about you, with the nouns changed. History doesn't repeat, but it rhymes hard enough to set a plan to the meter.
 

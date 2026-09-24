@@ -164,6 +164,10 @@ The paperwork survives. The Science Museum holds a contract dated March 1, 1786,
 
 The horse looked untouchable for another century. The horse and mule population on American farms kept climbing right through the railroad age, peaking above twenty-six million in 1918, with a whole economy of hay fields, stables, farriers, harness makers, and teamsters built on its metabolism. Then tractors, trucks, feed prices, farm wages, and a dozen other lines in the farm ledger moved, and within a working lifetime the herd collapsed. [USDA, Statistical Bulletin 83, table 14](https://downloads.usda.library.cornell.edu/usda-esmis/files/7m01bk68h/d217qs47w/4f16c641b/frmprodcostreturn_Farm_Production_Practices_Costs_and_Returns__1910-48.pdf) The horse never got less noble, less strong, or less willing. Sentiment just never appeared as a row in anybody's books.
 
+![Two stacked line charts sharing a year axis, 1910 to 1949. Horses and mules on US farms peak at 26.7 million in 1918 and fall to 8.3 million by 1949. Tractors on farms rise from about 1,000 in 1910 to 3.5 million in 1949.](/book-images/ch05-horses-tractors.svg)
+
+*The herd and the machine. The horse didn't get worse; the ledger changed. Source: USDA Statistical Bulletin 83, table 14.*
+
 **The mechanism.** The horse's owners argued about tradition, beauty, and loyalty. The machine's buyers ran operating cost per unit of work, alongside wages, feed, and credit. The arithmetic doesn't negotiate, and it doesn't send a warning before it closes the account.
 
 **The rule.** You're a twenty-watt thinking engine inside a hundred-watt body, in a market that's started selling intelligence by the kilowatt-hour. Measure the task without pricing the person as obsolete, and audit your own ledger before somebody else runs the numbers on you. The horse found out its price after the fact. You still get to set some of the terms.

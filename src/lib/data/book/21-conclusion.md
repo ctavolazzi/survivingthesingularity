@@ -7,6 +7,12 @@
 > *"A map of the world that does not include Utopia is not worth even glancing at, for it leaves out the one country at which Humanity is always landing."*
 > Oscar Wilde, *The Soul of Man under Socialism* (1891)
 
+**In this chapter:**
+
+- Success is more than labor removed from a payroll: count time returned, danger avoided, access secured, and who holds the power.
+- Bring one question to every decision about automation: how will the people affected share in the benefit?
+- The moral mandate: stop arguing over the scraps of a dying arrangement and build the machinery of our own freedom. Food first, then keep the promise growing.
+
 ## A future worth wanting
 
 I don't want us to become so practiced at imagining catastrophe that we forget what we would build if we thought success was possible.
@@ -43,7 +49,7 @@ My AGI forecast may be wrong. New capabilities may arrive unevenly, and some may
 
 ## Take the next decision seriously
 
-You may be in a position to build something, fund it, study it, negotiate its terms, or vote on it. You may be the person who needs the service and knows why the current version fails. Start with that position. Join people who can carry the other parts.
+You may be in a position to build something, fund it, study it, negotiate its terms, or vote on it. You may be the person who needs the service and knows why the current version fails. Start with that position. Join people who can carry the other parts. Chapter 19 lays out the whole ladder, rung by rung; find the rung your town is standing on and reach for the next one.
 
 Bring one question into the next decision about automation: how will the people affected share in the benefit, including the people whose paid work goes away? Ask for an answer that names provision and responsibility. A promise without either is still waiting to become a promise someone can use.
 

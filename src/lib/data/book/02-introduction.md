@@ -9,6 +9,13 @@
 > *"It is difficult to get a man to understand something, when his salary depends upon his not understanding it!"*
 > Upton Sinclair, *I, Candidate for Governor: And How I Got Licked* (1935)
 
+**In this chapter:**
+
+- My forecast is AGI by Thanksgiving 2027. Everything this book asks you to do stays worth doing if I'm wrong.
+- We don't have to live like this. There's enough food for everyone; the rules that make survival cost money are choices, enforced, and choices can change.
+- Food first: adequate food for everyone, regardless of income or employment, as the first commitment of a bigger one.
+- The machine is new. The stampede isn't. Every chapter ends with a documented case from the Precedent Ledger.
+
 It's time. It's finally time.
 
 For years, I've been talking about this, and for years, I've been labeled the local crackpot. I've watched people I love look me in the eye like I'd finally lost it, like I was spinning some paranoid fantasy. They might tell you they moved on because I'm an asshole, and maybe they're right. But I'm not wrong about the trajectory.
@@ -153,9 +160,27 @@ Read each one twice. The first time it'll sound like a story about someone else.
 
 Elijah Madrone and the co-op are fiction. Their story follows a man who wants machines to make his friends more capable, helps set off something with very different consequences, and has to learn what responsibility looks like after the demonstration. His teachers are people who know things he doesn't. He gets better when he starts listening. The companies, machines, and dates in his story are invented; the arguments that follow each scene make their own claims, with sources where evidence is needed.
 
-Part I opens the horizon: the nine stages, getting stranger and more speculative as they climb toward the cosmic. Part II asks what we owe each other through the change. Part III brings it down to meals, land, shelter, tools, agreements, and mistakes.
+Part I opens the horizon: the nine stages, getting stranger and more speculative as they climb toward the cosmic. Part II asks what we owe each other through the change. Part III brings it down to meals, land, shelter, tools, agreements, and mistakes, and ends with the plan: Chapter 19, the ladder from here to a world where money is optional.
 
 You don't need land, a server rack, a particular politics, or the energy to reinvent your life to walk in. You can be frightened. You can doubt my forecast. You can want to keep the work you love. The promise of enough to eat includes you.
+
+### Three ways to read it
+
+- **Twenty minutes.** This Introduction, Chapter 19, and Appendix C. You'll have the argument, the plan, and the one-page version to hand to someone else.
+- **An evening.** Add the Preface, Chapter 6, Chapter 12, and the Conclusion: what we owe each other, where the ground comes from, and why it's worth doing.
+- **The whole thing.** In order. Elijah's story runs through every chapter, and it pays off at the end.
+
+Or start from where you're standing:
+
+| If you are... | Start with |
+| --- | --- |
+| Worried about your job | Chapters 6, 7, 11, and 19 |
+| Raising kids | Chapters 8, 14, and 19, then Appendix G |
+| Organizing your neighbors | Chapters 12, 18, and 19, then Appendix A |
+| Someone who builds things | Chapters 9, 13, and 17, then Appendix E |
+| A skeptic | Chapters 1 and 2, then Appendix D |
+
+Every term you might trip on is in the Glossary (Appendix F). Appendix G turns every practice in the book into a first year, month by month, and Appendix H has questions for reading it together.
 
 What if it all goes right? Then losing a job stops being a threat to a person's existence. Necessary work gets less punishing. More people get time and room to choose. We use extraordinary machines to make ordinary life more secure.
 

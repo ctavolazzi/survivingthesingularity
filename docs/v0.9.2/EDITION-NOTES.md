@@ -135,7 +135,23 @@ New in v0.9.2:
 
 ## Verification
 
-(Filled in after the build completes; see below.)
+- `sts.py verify`: Clean, all 24 precedents present and indexed. `sts.py id
+  verify`: 2,180 blocks across 34 sections.
+- Gates (`docs/v0.9.2/gates.py`): 0 failures. The negative control fired on
+  every newly catalogued error.
+- Letter PDF: 285 pages, original cover, no TeX or markdown leaks. Eight key
+  new pages were rendered and inspected.
+- 6x9: the build passed its manuscript-hash and rights asserts. The proof
+  found all 2,429 text blocks in the 349-page interior across all 34
+  sections, with no overflow, broken links or missing assets. Its section
+  check had a hardcoded 30, now read from `book.json`. The font scan found 0
+  runs outside the book fonts and Menlo. The grayscale interior (350 pages,
+  blank verso added) printed no Ghostscript warnings.
+- EPUB: 37 chapter files, zip integrity OK. The EPUB script writes a review
+  PDF to the same path as the letter build, so the letter PDF was rebuilt
+  last to keep the right file.
+- Every new chart and diagram was rendered in headless Chrome and inspected;
+  five layout collisions were fixed before placement.
 
 ## Not done
 

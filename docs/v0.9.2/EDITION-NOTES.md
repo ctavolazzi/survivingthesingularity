@@ -8,7 +8,9 @@ Mid-build, CT added a ruling that became this edition's center: the book must
 say plainly that **we don't have to live like this**, that money should be
 optional, and it must propose a literal step-by-step plan.
 
-The plan and the critique that preceded the work are in [PLAN.md](PLAN.md).
+After the first build CT asked for recommendations on content, language and
+design, then said "Do it." That revision pass is section 7. The plan and the
+critique that preceded the work are in [PLAN.md](PLAN.md).
 Every citation and correction made through `cite.py` is logged, one per line,
 in [claims-ledger.jsonl](claims-ledger.jsonl) (75 entries).
 
@@ -16,13 +18,14 @@ in [claims-ledger.jsonl](claims-ledger.jsonl) (75 entries).
 
 | | v0.9.1 | v0.9.2 |
 |---|---:|---:|
-| Words (manuscript index) | 86,478 | 96,532 |
-| Sections | 30 | 34 |
-| Inline source links in the text | 236 | 352 |
+| Words (manuscript index) | 86,478 | 97,840 |
+| Sections | 30 | 35 |
+| Inline source links in the text | 236 | 353 |
 | Images | 73 | 79 |
 | Data charts | 0 | 3 |
 | "By the numbers" boxes | 0 | 4 |
 | Precedents | 23 | 24 |
+| Diagrams with a light print version | 0 | 32 |
 
 ### 1. CT's ruling: "We don't have to live like this"
 
@@ -33,7 +36,7 @@ in [claims-ledger.jsonl](claims-ledger.jsonl) (75 entries).
   year), California Courts (the sheriff's lockout), Oxfam 2017 and 2026, and
   the USDA food-insecurity chart. It replaces the v0.9.1 paragraph I had
   written in CT's voice from the Thesis.
-- **Chapter 19, "We Don't Have to Live Like This" (new).** The conversion
+- **Chapter 19, "The Ladder: How Money Becomes Optional" (new).** The conversion
   plan: nine rungs, from counting wasted food to keeping the market above the
   floor. Rungs 1 to 7 each cite a place that already did it (SB 1383, France
   2016, California universal school meals, land trusts, rural electric
@@ -55,8 +58,15 @@ in [claims-ledger.jsonl](claims-ledger.jsonl) (75 entries).
   keep the rules exactly as they are."
 - "A man with a gun": rendered in California's own court language (the
   sheriff's notice and lockout), with the national eviction count.
-- Profanity: one of CT's lines keeps it ("What the fuck is the point of
-  having a society at all..."). The rest of the anger is carried by facts.
+- Profanity: the Introduction keeps one of CT's lines ("What the fuck is the
+  point of having a society at all..."), and the facts carry the rest of the
+  anger there. The revision pass added CT's own words in Chapters 13 and 19
+  (section 7), from his 24 September message and the StS-Redux draft. Two
+  older curses can't be traced to CT: "why not make them grow our fucking
+  food first?" (Introduction, first seen in the v0.8.0 edit) and "actual
+  fucking labor" (Chapter 12, first seen in v0.9.0). Neither appears in any
+  of CT's drafts in `docs/history/`. They're listed below with the other
+  sentences written in his voice.
 
 ### 2. Factual backing (Wave 2)
 
@@ -109,7 +119,81 @@ in [claims-ledger.jsonl](claims-ledger.jsonl) (75 entries).
 New: `ch02-eighteen-days.svg` and `ch06-capability-access.svg`, plus the three
 charts and the Chapter 19 ladder. All are rendered in headless Chrome and
 inspected, and all are registered in the rights audit. No PixelLab plates
-were made, to save CT's credits.
+were made, to save CT's credits. Section 7 covers the print versions and the
+fixes to older diagrams.
+
+### 7. Revision pass (24 September, after the first build)
+
+Six waves, each committed on its own. Decisions that were CT's to make are
+marked **(CT's call, made reversibly)**; each is a small edit to undo.
+
+- **Subtitle: "We Don't Have to Live Like This"** (CT's line). The site
+  description and the cover modal carry it too; `sts.py verify` caught the
+  drift and now reports one subtitle. **(CT's call, made reversibly)**
+- **Chapter 19 renamed "The Ladder: How Money Becomes Optional"**, so the
+  subtitle phrase isn't used three times. **(CT's call, made reversibly)**
+- **How to Use This Book** (new page after the Preface): reading paths and a
+  start-here table, moved out of the Introduction.
+- **Chapter 3 gets a signpost, not a merge with Chapter 4:** it's the most
+  speculative stretch, and practical readers can skip to Chapter 5 without
+  losing anything later chapters depend on. **(CT's call, made reversibly)**
+- **Introduction and Preface keep their order.** **(CT's call, made reversibly)**
+- **Chapter 1:** a paragraph for readers after November 25, 2027.
+- **Chapter 18's middle in plain speech.** Bureaucratic vocabulary fell from
+  8.2 to 2.4 per 1,000 words and contractions rose from 21 to 31 per 1,000
+  (CT's own range is 24 to 47). The section is 24 percent shorter with every
+  point kept.
+- **Chapter 19's scene** (864 words, per ELIJAH-PROTOCOL): the public meeting
+  Chapter 18 set up. Irene uses her father-in-law's 1939 electric co-op
+  against "we can't afford it," which is Rung 5 used as a weapon rather than
+  a lecture. It's a partial win: funded through December, with a permanent
+  line sent to study.
+- **Chapter 19, "Why I wrote this chapter":** CT in the first person, built
+  only from his own 24 September lines not already used in the
+  Introduction, including two of his curses. The anger is aimed at the
+  arrangement, "not at you." CT's February 2026 mission line from the Redux
+  is also in the chapter.
+- **Chapter 13:** the shouse in CT's own words from StS-Redux ("What the
+  fuck is a shouse?"). **Chapter 12:** CT's June 2026 thesis note frames
+  Chapters 12 and 19. Twenty-six contractions in the argument sections of
+  Chapters 9, 12, 13, 15, 17 and the Conclusion.
+- **Left out of the Redux on purpose:** the "imaginary line" land passage
+  (it contradicts the lawful plan), "clout for consent", and the medical
+  disclosure, which stays out unless CT decides otherwise.
+- **Primary sources replace Wikipedia** for Sony v. Universal (the Supreme
+  Court opinion at Cornell LII) and Borders (Slate, July 2011). The Stoll
+  citation stays on Wikipedia: his 2010 comment no longer appears on Boing
+  Boing's served page, and nothing is cited for text that can't be seen.
+- **Figures for print.** In the 6x9 grayscale edition the dark diagrams
+  printed as solid black blocks. Their labels came out at about 4 point,
+  because figures were capped at 2.05 to 2.65 inches tall.
+  `print_figures.py` now makes a paper-palette copy of all 32 diagrams. It
+  maps text and shapes separately, removes the dark card and crops to the
+  content. It enlarges labels up to 1.4x only where Chrome measures no new
+  collision with another label, a box edge, a line or the frame; a forced
+  enlargement is its negative control. The 6x9 gives diagrams the full text
+  width, and the letter PDF allows them 19 cm. The website keeps the dark
+  originals. Both builds refuse a print copy whose source changed after it
+  was made.
+- **Older diagrams fixed at the source.** An audit of the originals found 31
+  defects in 16 figures: labels spilling past their boxes, labels sitting on
+  arrows and curves, and labels overlapping. All are fixed, so the website
+  improves too. The audit now reports zero, with four intentional cases
+  allowed and explained. Reinjected defects are caught. The Chapter 19
+  ladder's held rungs are dashed as well as blue, so its legend works
+  without color.
+- **Diagram font: JetBrains Mono** (SIL OFL 1.1, release 2.304, with
+  license and provenance in `publication/assets/fonts/`). The diagrams
+  already named it first, and print had been falling back to Apple's Menlo.
+  The two glyphs JetBrains Mono lacks were removed: the lightning marks in
+  Chapter 8 are now drawn, and Chapter 11's formula line reads "heat per
+  second = flow × Cp × ΔT". WeasyPrint's SVG renderer can't place combining
+  dots, so Q̇ and ṁ printed with dotted-circle placeholders. They still
+  appear in the body text, which shapes them correctly.
+- **Build tooling:** `proof.py` and `package.py` read the section count
+  instead of assuming 30. The EPUB review PDF has its own filename.
+  `fonts_check.py` lists fonts inside SVG XObjects, which the old scan
+  couldn't see; that's how the Menlo fallback was found.
 
 ## Sentences I wrote in CT's voice (for CT to keep or cut)
 
@@ -120,6 +204,11 @@ Carried forward from v0.9.1:
   the smart one in the room."
 - Most of the Chapter 6 "already inside" paragraph, and the closing turn of
   the horse parable.
+- Introduction: "If these things are going to take all our jobs, why not
+  make them grow our fucking food first?" (arrived with the v0.8.0 edit; not in CT's
+  drafts).
+- Chapter 12: "share not only food and tools but labor, actual fucking
+  labor, with the people who need it most" (written for v0.9.0).
 
 New in v0.9.2:
 - Chapter 6: the sentence separating "already inside the Singularity" from
@@ -128,6 +217,10 @@ New in v0.9.2:
   table.
 - All of Chapter 19 except the facts and Bevan's words. It's in the book's
   field-manual register, built on CT's ruling, but the wording is mine.
+- Chapter 19's Elijah scene (fiction, in the book's narrative voice) and the
+  plain-speech rewrite of Chapter 18's middle.
+- The joins in Chapter 19's "Why I wrote this chapter": the sentences are
+  CT's, but the order and the one-line transitions are mine.
 - The connective lines in the "We don't have to live like this" section:
   "That's what it means when survival costs money," "Greed isn't a law of
   physics. It's a set of choices, written down and enforced," "That's the

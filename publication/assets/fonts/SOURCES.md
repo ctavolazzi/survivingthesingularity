@@ -10,16 +10,19 @@ Labels, captions, tables, and navigation use **Source Sans Pro**, version 3.006.
 
 Source Sans 3 was the initial preference. Requests to the pinned official repository, its release branch, its contents API, and a byte-range endpoint repeatedly stalled or timed out. The complete licensed local Source Sans Pro set was selected to avoid an undocumented system-font fallback. No incomplete Source Sans 3 files have been included.
 
-Both families are supplied under **SIL Open Font License 1.1**. That license permits embedding and redistribution under its conditions; distributing a document created with the font does not put the document under OFL. Keep the original copyright and license files with any redistributed font package. These rights are grounded in the supplied font licenses and the [official OFL text](https://openfontlicense.org/open-font-license-official-text/), not merely in a font's availability online.
+Diagram labels use **JetBrains Mono**, version 2.304, added 2026-09-24 for the v0.9.2 print figures. The diagrams already name it as their first font; before this, print builds fell back to the system's Menlo, which is an Apple system font and not ours to redistribute. Regular, SemiBold and Bold static TTFs were extracted unchanged from the [official 2.304 release asset](https://github.com/JetBrains/JetBrainsMono/releases/tag/v2.304) `JetBrainsMono-2.304.zip`, with the release's `OFL.txt` kept as [JetBrainsMono-OFL.txt](JetBrainsMono-OFL.txt).
+
+All three families are supplied under **SIL Open Font License 1.1**. That license permits embedding and redistribution under its conditions; distributing a document created with the font does not put the document under OFL. Keep the original copyright and license files with any redistributed font package. These rights are grounded in the supplied font licenses and the [official OFL text](https://openfontlicense.org/open-font-license-official-text/), not merely in a font's availability online.
 
 - [Source Serif 4 original license](SourceSerif4-LICENSE.md), copied from the exact pinned repository version.
 - [Source Sans Pro original package license](SourceSansPro-LICENSE.txt), copied from the installed distribution.
+- [JetBrains Mono original license](JetBrainsMono-OFL.txt), copied from the release asset.
 - [Copyright notices extracted from the supplied fonts](FONT-COPYRIGHTS.txt). This preserves the binaries' more recent notices in addition to the unmodified package license.
 - [Machine-readable provenance and SHA-256 manifest](font-provenance.json).
 
 ## Static-face verification
 
-FontTools successfully parsed every supplied font. All seven fonts lack an `fvar` table, confirming these are static faces. All have `OS/2.fsType = 0`. Regular and italic weights are 400; semibold weights are 600. These metadata checks establish file identity and embedding-bit status. The accompanying OFL documents establish the license basis.
+FontTools successfully parsed every supplied font. All ten fonts lack an `fvar` table, confirming these are static faces. All have `OS/2.fsType = 0`. Regular and italic weights are 400; semibold weights are 600. These metadata checks establish file identity and embedding-bit status. The accompanying OFL documents establish the license basis.
 
 | File | Family | Style | Weight |
 | --- | --- | --- | --- |
@@ -30,6 +33,9 @@ FontTools successfully parsed every supplied font. All seven fonts lack an `fvar
 | [SourceSerif4-It.otf](SourceSerif4-It.otf) | Source Serif 4 | Italic | 400 |
 | [SourceSerif4-Regular.otf](SourceSerif4-Regular.otf) | Source Serif 4 | Regular | 400 |
 | [SourceSerif4-Semibold.otf](SourceSerif4-Semibold.otf) | Source Serif 4 | Semibold | 600 |
+| [JetBrainsMono-Regular.ttf](JetBrainsMono-Regular.ttf) | JetBrains Mono | Regular | 400 |
+| [JetBrainsMono-SemiBold.ttf](JetBrainsMono-SemiBold.ttf) | JetBrains Mono | SemiBold | 600 |
+| [JetBrainsMono-Bold.ttf](JetBrainsMono-Bold.ttf) | JetBrains Mono | Bold | 700 |
 
 Use the exact paths and weights in the publication stylesheet. The Source Sans Pro italic filename is `SourceSansPro-RegularIt.otf`, not `SourceSans3-It.otf`. Source Serif 4 semibold italic is not packaged; an unavailable face should not silently be described as an embedded genuine face. Final PDF font-resource inspection remains necessary to detect font substitution or synthesis in the actual typeset artifact.
 
@@ -98,4 +104,28 @@ SHA-256: `c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464`
 Local source: `/usr/local/texlive/2025/texmf-dist/doc/latex/sourcesanspro/LICENSE.txt`.
 
 SHA-256: `4a4a4179a96b5ef6786186d199f0d049b151352f460b8d2f3c00083792f37dd9`
+
+### JetBrainsMono-Regular.ttf
+
+Source: `fonts/ttf/JetBrainsMono-Regular.ttf` in the [JetBrains Mono 2.304 release asset](https://github.com/JetBrains/JetBrainsMono/releases/download/v2.304/JetBrainsMono-2.304.zip).
+
+SHA-256: `a0bf60ef0f83c5ed4d7a75d45838548b1f6873372dfac88f71804491898d138f`
+
+### JetBrainsMono-SemiBold.ttf
+
+Source: `fonts/ttf/JetBrainsMono-SemiBold.ttf` in the [JetBrains Mono 2.304 release asset](https://github.com/JetBrains/JetBrainsMono/releases/download/v2.304/JetBrainsMono-2.304.zip).
+
+SHA-256: `1b3bfa1ed5665a4ce3f9feb68d2d4e40e70bf8b4b7d9a3edd418f321b4e166a0`
+
+### JetBrainsMono-Bold.ttf
+
+Source: `fonts/ttf/JetBrainsMono-Bold.ttf` in the [JetBrains Mono 2.304 release asset](https://github.com/JetBrains/JetBrainsMono/releases/download/v2.304/JetBrainsMono-2.304.zip).
+
+SHA-256: `5590990c82e097397517f275f430af4546e1c45cff408bde4255dad142479dcb`
+
+### JetBrainsMono-OFL.txt
+
+Source: `OFL.txt` in the same release asset.
+
+SHA-256: `30f0c136e3c88e422d0791acd97238870f9054a9729bc34cf2ff0d4ed8cac4ad`
 

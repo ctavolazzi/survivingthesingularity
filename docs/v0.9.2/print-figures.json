@@ -9,7 +9,9 @@
       "min_final": 13.2,
       "median_scale": 1.2,
       "frame_width": 900,
-      "crop_width": 875.9
+      "crop_width": 875.9,
+      "source_sha256": "5d665d976a06f99f35d7a698aa2afb30b44521da483e37deeae2160033034bc0",
+      "print_sha256": "f4d566338a3c79d446bb6d948377f07222e35a84e7f75f87a96827764a7a53a4"
     },
     "ch02-eighteen-days.svg": {
       "labels": 24,
@@ -18,7 +20,9 @@
       "min_final": 12.07,
       "median_scale": 1.2,
       "frame_width": 900,
-      "crop_width": 860.5
+      "crop_width": 860.5,
+      "source_sha256": "1f844cb170df5819927c4ff6be56e05197ef8a35c42dad8cba73530ecaa9dec2",
+      "print_sha256": "9256ce7511c784b59f386b23041d7935dd54b553b2e6721a16925220b2a33e39"
     },
     "ch05-horses-tractors.svg": {
       "labels": 27,
@@ -27,7 +31,9 @@
       "min_final": 12,
       "median_scale": 1.09,
       "frame_width": 900,
-      "crop_width": 866.9
+      "crop_width": 866.9,
+      "source_sha256": "2640f41565ddacb37554addbcdbf18d67ed161b7563e8d48ea2ef44ede6a6b0c",
+      "print_sha256": "07b455295e594d002313fef2588cbe1bc6f6e93e95b70901ef9fbcb60ad41416"
     },
     "ch06-capability-access.svg": {
       "labels": 20,
@@ -36,7 +42,9 @@
       "min_final": 12.65,
       "median_scale": 1.2,
       "frame_width": 900,
-      "crop_width": 897.1
+      "crop_width": 897.1,
+      "source_sha256": "200e895b78f60738a8a3b3e3fe38f3aa9f87fb8817b838c0ba16af9c2220f861",
+      "print_sha256": "a19503fdfccac7440e18d168988d33bc3e1e70259d314dcc0c2bf2165c763628"
     },
     "ch08-cognitive-extraction.svg": {
       "labels": 12,
@@ -45,7 +53,9 @@
       "min_final": 13.65,
       "median_scale": 1.22,
       "frame_width": 860,
-      "crop_width": 829.9
+      "crop_width": 829.9,
+      "source_sha256": "ab5bbd210730e49adb8fc8b60a540534a2f049b8af815144a7366fce2282e0f8",
+      "print_sha256": "2003c8025df47be2f8d76a3e1c55922001f9cd74df3429dd7b28981214978859"
     },
     "ch08-firewall-pipeline.svg": {
       "labels": 23,
@@ -54,16 +64,20 @@
       "min_final": 13.75,
       "median_scale": 1.35,
       "frame_width": 860,
-      "crop_width": 810
+      "crop_width": 810,
+      "source_sha256": "2718de7f48a26a554f4abff49d8177f94478d1092785b7864015082d689fe865",
+      "print_sha256": "451cba4cdd338ac2c083e64ab4ae2ddd7b127faf78eb653df93b5b380e40ef24"
     },
     "ch08-focus-recovery.svg": {
-      "labels": 13,
-      "marks": 10,
+      "labels": 10,
+      "marks": 13,
       "min_base": 12,
       "min_final": 12,
-      "median_scale": 1.17,
+      "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 784
+      "crop_width": 786.4,
+      "source_sha256": "013b0e6aaeb0d5142680d71f3bc81a7bc1f15eb59bde692ab6fefb2ad5255360",
+      "print_sha256": "974e0c0da35f55c498c87ea506efd4264ba890e3ed56b9758696521429d248be"
     },
     "ch08-info-architectures.svg": {
       "labels": 24,
@@ -72,7 +86,9 @@
       "min_final": 13.8,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 816.2
+      "crop_width": 816.2,
+      "source_sha256": "5ccacb135bf0b80071b2833bc2bdfd95631057f013b2e9bad43d0ed519331dac",
+      "print_sha256": "a6dba420abce65de0f7fa0c5cd4cd170d5578646721bfae3b86d93519ec85b21"
     },
     "ch08-star-vs-mesh.svg": {
       "labels": 9,
@@ -81,7 +97,9 @@
       "min_final": 12,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 815.6
+      "crop_width": 815.6,
+      "source_sha256": "535d201b3e6bd4712d5effc5a28239f6e906925bb69bcb0972646d73a3813b5e",
+      "print_sha256": "db06ffdd4e51d169787b8de1bda107a0c7db91a2a8965d62b703c52b259fc6d8"
     },
     "ch09-cnc-bed.svg": {
       "labels": 16,
@@ -90,7 +108,9 @@
       "min_final": 11.55,
       "median_scale": 1.35,
       "frame_width": 860,
-      "crop_width": 788.2
+      "crop_width": 788.2,
+      "source_sha256": "ac01a17fa56ce0a9a173abe0b05200ecdad7aa5e882b5594e96f1beb1265bd43",
+      "print_sha256": "6d75484e691b685bb9804c2862b9646417a71e23412d5187813d4881a9511ae3"
     },
     "ch09-greenhouse-bus.svg": {
       "labels": 17,
@@ -99,7 +119,9 @@
       "min_final": 13.2,
       "median_scale": 1.35,
       "frame_width": 860,
-      "crop_width": 812.7
+      "crop_width": 812.7,
+      "source_sha256": "0dead8e129be5005f56a35c1afce2a05dea14c5288db8b087914adf2df7bcf17",
+      "print_sha256": "a5c7b93ede690efd2bbc72fb20e2c64a193ae06af5937c62e53340d8f0fe5070"
     },
     "ch09-hyperlocal-vs-global.svg": {
       "labels": 28,
@@ -108,7 +130,9 @@
       "min_final": 14.7,
       "median_scale": 1.18,
       "frame_width": 860,
-      "crop_width": 788.6
+      "crop_width": 788.6,
+      "source_sha256": "cc278653214ec61e4c7f6ffd3bc209fca9fae9963f0767e8d4524951a02d66d4",
+      "print_sha256": "7407520553fec4e64074200abe9545191f2f02c068b8112e7e80a02363159410"
     },
     "ch09-region-ring.svg": {
       "labels": 15,
@@ -117,7 +141,9 @@
       "min_final": 11,
       "median_scale": 1.3,
       "frame_width": 900,
-      "crop_width": 855.6
+      "crop_width": 855.6,
+      "source_sha256": "09d43573ed96b81b071133c80276f6822687b57bf10d0983c1f0af094688b66c",
+      "print_sha256": "7e6c55c5ad1b9b6f79513346ec1c643b032b5e66d7eaab4d3b63b3c1855d2012"
     },
     "ch10-algorithm-unlock.svg": {
       "labels": 20,
@@ -126,7 +152,9 @@
       "min_final": 12.1,
       "median_scale": 1.25,
       "frame_width": 860,
-      "crop_width": 851.8
+      "crop_width": 851.8,
+      "source_sha256": "00b0aea8754987985390d6f25ede67b9f8f5a547ed9583f3dca442260a42393b",
+      "print_sha256": "f4321bac330e774c0f54bc684baf7ea96ff076daf6fb96507e4baa490071ea9d"
     },
     "ch10-model-collapse.svg": {
       "labels": 12,
@@ -135,16 +163,20 @@
       "min_final": 11.55,
       "median_scale": 1.31,
       "frame_width": 860,
-      "crop_width": 864.4
+      "crop_width": 864.4,
+      "source_sha256": "68fbf60222f698940d433b6d89252d6b1d603d0c3a1f114ee4edb345f5282ecd",
+      "print_sha256": "d6e3d2fe4284b55c5c28278115d4bb0b039ce504c16fa401449f97a6c790a6cd"
     },
     "ch11-cooling-loop.svg": {
       "labels": 16,
       "marks": 13,
       "min_base": 10,
       "min_final": 10,
-      "median_scale": 1.4,
+      "median_scale": 1.31,
       "frame_width": 860,
-      "crop_width": 869
+      "crop_width": 869,
+      "source_sha256": "ba4d64b02e409f9e284a1e3ae2dab07d98afa4c996527cb3d903f22fe592e609",
+      "print_sha256": "6d0c76c3d4f7648f3e60dc3646d4954ae54386a37c531a738a810eb50189ec0c"
     },
     "ch12-csa-network.svg": {
       "labels": 14,
@@ -153,7 +185,9 @@
       "min_final": 12.1,
       "median_scale": 1.3,
       "frame_width": 860,
-      "crop_width": 872.5
+      "crop_width": 872.5,
+      "source_sha256": "2cd376725e507844a67ee6ec79ebbb3d5e5db28ee4ea8eafc27bd04bf8b27d68",
+      "print_sha256": "b05d4362b3b7f3fce324ed4bdb8ce96471bbe1e3cd463ce51c419f4a2b6607f8"
     },
     "ch13-shell-architecture.svg": {
       "labels": 13,
@@ -162,7 +196,9 @@
       "min_final": 15,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 793.3
+      "crop_width": 793.3,
+      "source_sha256": "6163c784d4ab4d17abece8789c0b10fe3c2f839937b4a35d2b5199f2f6535656",
+      "print_sha256": "efeed9b43a7cb4493a60594dfe47d72f8944342e78e933ed27026996a16d3a19"
     },
     "ch13-thermal-seal.svg": {
       "labels": 20,
@@ -171,7 +207,9 @@
       "min_final": 12,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 867.4
+      "crop_width": 867.4,
+      "source_sha256": "ea31edd7a1dca8b2535c4289ac963db73606a4daa1b92b746315a4f5b58dd541",
+      "print_sha256": "f0d20d25ebeb1db3f279e6a2e680e9498ef8830c5840aa22858bb59d0878974d"
     },
     "ch14-logistic-shockwave.svg": {
       "labels": 16,
@@ -180,7 +218,9 @@
       "min_final": 15.4,
       "median_scale": 1.38,
       "frame_width": 860,
-      "crop_width": 812.7
+      "crop_width": 812.7,
+      "source_sha256": "02ece01fd8d94e396ec2ff71a324ee5d3c221b88584c0f16592d83068a2a391a",
+      "print_sha256": "1a2dc8ef75d50945e1fa21ca804b68c31efae60f39579ac563b707beddf4c9c3"
     },
     "ch14-mesh-comms.svg": {
       "labels": 14,
@@ -189,7 +229,9 @@
       "min_final": 12.6,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 828.7
+      "crop_width": 828.7,
+      "source_sha256": "05b0d9a3d18c62c3cca8672ba9cda5879922a71d828383864ff6e412714492d4",
+      "print_sha256": "15baad552d8104534bbf8b78452156cf89aa37911f5e2a5e207beee25fe8f9f4"
     },
     "ch15-clt-firewall.svg": {
       "labels": 14,
@@ -198,7 +240,9 @@
       "min_final": 12.6,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 707.1
+      "crop_width": 707.1,
+      "source_sha256": "9ad58b1cfd56ea0bbe9d8e26377573b3f0a1959667e51cdbc1b8031329f5592a",
+      "print_sha256": "706415eed931673c62c20def003b63bd139325307dfeabc30ba635f69fb13683"
     },
     "ch15-soil-food-web.svg": {
       "labels": 13,
@@ -207,7 +251,9 @@
       "min_final": 12.6,
       "median_scale": 1.38,
       "frame_width": 860,
-      "crop_width": 774.3
+      "crop_width": 774.3,
+      "source_sha256": "516599087b7100fa10d0dd6da65c91e0b5d4ca7df446f47977950df13ec26f1c",
+      "print_sha256": "5ef871be3446aeba46bb86927f785bafd5f556007d99883e5e4a5cdffec8cfd2"
     },
     "ch16-sneakernet.svg": {
       "labels": 15,
@@ -216,7 +262,9 @@
       "min_final": 12.65,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 823.6
+      "crop_width": 823.6,
+      "source_sha256": "7c3f444b2c449bbb184d20cd306f0980d6005fd73943b0c226bfbfe3f9ad1e68",
+      "print_sha256": "701ee94783a3d5bfabeb7b161100b8997c2bb1a5b8e5be3c24b45abf075b2dd7"
     },
     "ch17-algae-loop.svg": {
       "labels": 18,
@@ -225,7 +273,9 @@
       "min_final": 13.65,
       "median_scale": 1.2,
       "frame_width": 860,
-      "crop_width": 794
+      "crop_width": 794,
+      "source_sha256": "7985df07e7fdcd5895925509fb8a7294a55075911145003b6357d257d98f1db9",
+      "print_sha256": "2993a2da56969fbb8e07b0daf54074bb0c59a41d7ed0ff59a5f7b4438a7491e0"
     },
     "ch17-dc-native.svg": {
       "labels": 25,
@@ -234,7 +284,9 @@
       "min_final": 12.65,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 788.2
+      "crop_width": 788.2,
+      "source_sha256": "267ac42cdd2bfb729d4aff795937408179ee8c48ec317927b9ee9651641895a9",
+      "print_sha256": "108f56517cf09c1299543fa8a01389a06b3715268903c7103d627aa2914f1ff1"
     },
     "ch17-fab-lab.svg": {
       "labels": 19,
@@ -243,7 +295,9 @@
       "min_final": 11,
       "median_scale": 1.3,
       "frame_width": 860,
-      "crop_width": 859.6
+      "crop_width": 859.6,
+      "source_sha256": "906aea64dbe8104282dc7344fb24d53ad971be6081190972ed5b412a11671963",
+      "print_sha256": "93e4cbf1a6958266acca06c76bcbbf9e9057d59d26af4a97fa52d633e0bfb6db"
     },
     "ch17-lora-node.svg": {
       "labels": 15,
@@ -252,7 +306,9 @@
       "min_final": 11,
       "median_scale": 1.27,
       "frame_width": 860,
-      "crop_width": 799.3
+      "crop_width": 799.3,
+      "source_sha256": "9a213488c366cf55f6106f792e01eb0f7510ac3cf7a3708bd479cec1d3d1c644",
+      "print_sha256": "ec0e00e7e50cb90613f89cc9f5f2fad69e9a36a920b225618a44aa71df50cd0f"
     },
     "ch18-social-contract.svg": {
       "labels": 18,
@@ -261,7 +317,9 @@
       "min_final": 13.8,
       "median_scale": 1.4,
       "frame_width": 900,
-      "crop_width": 844
+      "crop_width": 844,
+      "source_sha256": "0a1782b34cfb897df89795d1be4b093a84dd2dc0ea8c7b09a26b012761e03cce",
+      "print_sha256": "ffe0bd3f048b10c751a17c5172804fd15f80a06813e136925ffc29f8db52991d"
     },
     "ch19-conversion-ladder.svg": {
       "labels": 35,
@@ -270,7 +328,9 @@
       "min_final": 12.65,
       "median_scale": 1.3,
       "frame_width": 900,
-      "crop_width": 844
+      "crop_width": 844,
+      "source_sha256": "c53eefe7101662861edd090d274c2c437b54ad0da7a8d4ffcf8e7adea62ad980",
+      "print_sha256": "f5fe5cfd295ddd49e4b13a342ec1c579d1abdce24678509638680ce46e0e7658"
     },
     "intro-food-insecurity.svg": {
       "labels": 24,
@@ -279,7 +339,9 @@
       "min_final": 11,
       "median_scale": 1.09,
       "frame_width": 900,
-      "crop_width": 861.9
+      "crop_width": 861.9,
+      "source_sha256": "85d96f3a9e9b03c97c91fc8758c3ee8bb8740c0e1e858acd6736df8f17445dd6",
+      "print_sha256": "204d85209e57c4c81a3c55df03df0aa3af9b1aefa4cc9bdc9824f079d73c3e0d"
     },
     "intro-nine-stages.svg": {
       "labels": 28,
@@ -288,7 +350,9 @@
       "min_final": 15,
       "median_scale": 1.29,
       "frame_width": 900,
-      "crop_width": 844
+      "crop_width": 844,
+      "source_sha256": "c4fd78d4313e9bd4a52432e82001643657c39ed2b317d6a950e48529f3cab359",
+      "print_sha256": "028d3c714b950b2b122f6b9fce9e3117eb9267358de58c498b760fd774e86b49"
     }
   },
   "count": 32

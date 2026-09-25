@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.5 20.9 869 496.7" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.5 20.9 869 496.2" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0,0L10,5L0,10z" fill="#dc2626"/>
@@ -30,7 +30,7 @@
   
   <rect x="150" y="300" width="230" height="70" rx="8" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
   <text x="265" y="330" font-size="18.2" font-weight="600" fill="#0f172a" text-anchor="middle">12V BRUSHLESS PUMP</text>
-  <text x="265" y="352" font-size="15.4" fill="#334155" text-anchor="middle">PWM speed control</text>
+  <text x="265" y="352" font-size="14.4" fill="#334155" text-anchor="middle">PWM speed control</text>
 
   
   <rect x="560" y="220" width="230" height="120" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="2.5"/>
@@ -48,11 +48,11 @@
   <line x1="335" y1="220" x2="300" y2="298" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ah)"/>
   
   <path d="M 380 320 L 470 320 L 470 260 L 552 260" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ah)"/>
-  <text x="492" y="248" font-size="15.4" fill="#b91c1c" text-anchor="end">hot coolant out</text>
+  <text x="492" y="248" font-size="14.4" fill="#b91c1c" text-anchor="end">hot coolant out</text>
   
   <path d="M 560 300 L 470 300 L 470 400 L 90 400 L 90 224" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#ac)"/>
-  <text x="300" y="418" font-size="15.4" fill="#1d4ed8" text-anchor="middle">cool coolant returns to the chips</text>
+  <text x="300" y="418" font-size="14.4" fill="#1d4ed8" text-anchor="middle">cool coolant returns to the chips</text>
 
   <text x="430" y="470" font-size="15.6" fill="#0f172a" text-anchor="middle">pull the heat straight off the silicon and dump it outside: no AC fighting your own server</text>
-  <text x="430" y="496" font-size="15.6" fill="#475569" text-anchor="middle">Q̇ = ṁ · C<tspan baseline-shift="sub" font-size="75%">p</tspan> · ΔT · in winter, duct that waste heat into the living space instead</text>
+  <text x="430" y="496" font-size="14.4" fill="#475569" text-anchor="middle">heat per second = flow × C<tspan baseline-shift="sub" font-size="75%">p</tspan> × ΔT · in winter, duct that waste heat into the living space instead</text>
 </svg>

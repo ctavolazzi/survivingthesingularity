@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 23.8 784 498.1" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 20.9 786.4 501" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
   <defs>
     <marker id="ax" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M0,0L10,5L0,10z" fill="#64748b"/>
@@ -10,7 +10,7 @@
   </defs>
 
   
-  <text x="40" y="52" font-size="17.6" letter-spacing="3.52" fill="#334155">THE COGNITIVE FRAGMENTATION CURVE</text>
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">THE COGNITIVE FRAGMENTATION CURVE</text>
   <line x1="40" y1="66" x2="440" y2="66" stroke="#cbd5e1" stroke-width="2"/>
 
   
@@ -32,12 +32,13 @@
     <line x1="473" y1="120" x2="473" y2="404"/>
     <line x1="613" y1="120" x2="613" y2="404"/>
   </g>
-  <g font-size="16" fill="#0f172a" text-anchor="middle">
-    <text x="323" y="112" fill="#0f172a" font-size="17.6">↯</text>
-    <text x="473" y="112" fill="#0f172a" font-size="17.6">↯</text>
-    <text x="613" y="112" fill="#0f172a" font-size="17.6">↯</text>
+  
+  <g fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round">
+    <polyline points="327,99 320,107 326,107 319,116"/>
+    <polyline points="477,99 470,107 476,107 469,116"/>
+    <polyline points="617,99 610,107 616,107 609,116"/>
   </g>
-  <text x="470" y="94" font-size="13.2" fill="#334155" text-anchor="middle">algorithmic interrupts (3+ per hour)</text>
+  <text x="470" y="94" font-size="16.8" fill="#334155" text-anchor="middle">algorithmic interrupts (3+ per hour)</text>
 
   
   <line x1="252" y1="206" x2="240" y2="166" stroke="#d97706" stroke-width="1.5" marker-end="url(#aai)"/>
@@ -49,5 +50,5 @@
   <text x="714" y="226" font-size="16.8" fill="#334155" text-anchor="middle">each recovery</text>
   <text x="714" y="244" font-size="16.8" fill="#334155" text-anchor="middle">peaks lower</text>
 
-  <text x="430" y="506" font-size="17.6" fill="#0f172a" text-anchor="middle">above ~3 interrupts per hour, the curve never touches baseline again</text>
+  <text x="430" y="506" font-size="18.2" fill="#0f172a" text-anchor="middle">above ~3 interrupts per hour, the curve never touches baseline again</text>
 </svg>

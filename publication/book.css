@@ -5,6 +5,9 @@
 @font-face { font-family: BookSans; src: url('assets/fonts/SourceSansPro-RegularIt.otf'); font-style: italic; }
 @font-face { font-family: BookSans; src: url('assets/fonts/SourceSansPro-Semibold.otf'); font-weight: 600 900; }
 @font-face { font-family: BookSans; src: url('assets/fonts/SourceSansPro-SemiboldIt.otf'); font-weight: 600 900; font-style: italic; }
+@font-face { font-family: 'JetBrains Mono'; src: url('assets/fonts/JetBrainsMono-Regular.ttf'); }
+@font-face { font-family: 'JetBrains Mono'; src: url('assets/fonts/JetBrainsMono-SemiBold.ttf'); font-weight: 600; }
+@font-face { font-family: 'JetBrains Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
 @page {
   size: 6in 9in;
   margin: 0.68in 0.64in 0.7in 0.8in;
@@ -65,6 +68,8 @@ figcaption em { font-style: normal; }
 figure.opener-image { margin-top: 0; margin-bottom: 0.2in; }
 figure.opener-image img { max-height: 1.7in; max-width: 3.7in; }
 figure.scene-image img { max-height: 2.05in; }
+figure.diagram { margin: 0.18in 0 0.24in; }
+figure.diagram img { max-height: 7in; }
 .chapter { break-before: page; }
 .chapter-label { font: 8.5pt BookSans; letter-spacing: 0.17em; text-transform: uppercase; margin: 0.03in 0 0.14in; color: #66764e; break-after: avoid; }
 .running-label { height: 0; font-size: 0; line-height: 0; string-set: running content(); }

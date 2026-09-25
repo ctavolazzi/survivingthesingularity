@@ -32,7 +32,7 @@ AUDITS = ROOT / "docs/publication"
 ASSETS = HERE / "assets"
 IMAGES = ROOT / "static/book-images"
 FONT_NOTICES = (
-    "SourceSansPro-LICENSE.txt", "SourceSerif4-LICENSE.md",
+    "SourceSansPro-LICENSE.txt", "SourceSerif4-LICENSE.md", "JetBrainsMono-OFL.txt",
     "FONT-COPYRIGHTS.txt", "SOURCES.md", "font-provenance.json",
 )
 CSS_URL = re.compile(r"url\(\s*(?P<quote>['\"]?)(?P<url>[^)'\"]+)(?P=quote)\s*\)", re.I)
@@ -103,6 +103,16 @@ class Plan:
             if path.suffix.lower() not in (".svg", ".otf", ".ttf", ".woff", ".woff2", ".css"):
                 raise PackageError(f"Unexpected publication resource type: {path}")
             name = "assets/" + path.relative_to(ASSETS).as_posix()
+        elif path.parent == IMAGES / "print":
+            # A light-palette print copy of an audited diagram. Its rights are
+            # the source's, and the source must still match its audit.
+            record = self.rights.get(path.name)
+            if not record or record["status"] != "retain":
+                raise PackageError(f"Print copy of an excluded or unaudited image: {path.name}")
+            if record["sha256"] != digest(read(IMAGES / path.name)):
+                raise PackageError(f"Source of print copy changed after rights audit: {path.name}")
+            name = "assets/images/print/" + path.name
+            self.retained.add(path.name)
         elif path.parent == IMAGES:
             record = self.rights.get(path.name)
             if not record or record["status"] != "retain":
@@ -202,7 +212,7 @@ class Plan:
         for notice in FONT_NOTICES:
             if "assets/fonts/" + notice not in self.files:
                 raise PackageError(f"Missing required font license/provenance: {notice}")
-        for notice in FONT_NOTICES[:2]:
+        for notice in FONT_NOTICES[:3]:
             if b"OPEN FONT LICENSE" not in self.files["assets/fonts/" + notice].upper():
                 raise PackageError(f"Unexpected font license content: {notice}")
         provenance = json.loads(self.files["assets/fonts/font-provenance.json"])

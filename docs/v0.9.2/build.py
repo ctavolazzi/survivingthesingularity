@@ -4,8 +4,11 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from print_figures import print_variant  # noqa: E402
 SOURCE = ROOT / 'src/lib/data/book'
 META = json.loads((SOURCE / 'book.json').read_text())
 OUT = ROOT / 'book-build'
@@ -17,7 +20,9 @@ for i, section in enumerate(META['sections']):
         ['python3', str(ROOT / 'scripts/sts.py'), 'refs', 'render', section['file']],
         check=True, capture_output=True, text=True,
     )
-    text = result.stdout.replace('](/book-images/', '](' + (ROOT / 'static/book-images').as_uri() + '/')
+    # Diagrams print from their light-palette copies; photos and plates are unchanged.
+    text = re.sub(r'\]\(/book-images/([^)\s]+\.svg)', lambda m: '](' + print_variant(m[1]).as_uri(), result.stdout)
+    text = text.replace('](/book-images/', '](' + (ROOT / 'static/book-images').as_uri() + '/')
     text = re.sub(r'^(> \*.*\*)\n(?=> )', r'\1  \n', text, flags=re.MULTILINE)
     text = re.sub(r'\[\^([^\]]+)\]', lambda m: f'[^{i}-{m[1]}]', text)
     sections.append(text)
@@ -29,6 +34,10 @@ metadata.update({'lang': 'en-US', 'date': 'v0.9.2 | What if it all goes right? |
 (WORK / 'metadata.json').write_text(json.dumps(metadata, indent=2))
 css = (ROOT / 'scripts/book-print.css').read_text().replace('BOOK_VERSION', 'v0.9.2')
 css = css.replace('height: 100vh;', 'height: 279.4mm;')
+# Diagrams name JetBrains Mono first; supply it rather than fall back to Menlo.
+FONTS = (ROOT / 'publication/assets/fonts').as_uri()
+css = ''.join(f"@font-face {{ font-family: 'JetBrains Mono'; src: url('{FONTS}/JetBrainsMono-{face}.ttf');{weight} }}\n"
+              for face, weight in (('Regular', ''), ('SemiBold', ' font-weight: 600;'), ('Bold', ' font-weight: 700;'))) + css
 css += '''
 /* Edition-specific proof improvements. */
 body { margin: 0; }
@@ -46,6 +55,7 @@ a { color: #3c5572; overflow-wrap: anywhere; }
 table { table-layout: fixed; }
 td, th { overflow-wrap: anywhere; }
 figure img { max-height: 12cm; }
+figure img[src$='.svg'] { max-height: 19cm; }
 figcaption { display: none; }
 tr { break-inside: avoid; }
 '''

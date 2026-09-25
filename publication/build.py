@@ -18,6 +18,8 @@ from PIL import Image
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / 'docs/v0.9.2'))
+from print_figures import print_variant  # noqa: E402
 SOURCE = ROOT / 'src/lib/data/book'
 OUT = HERE / 'output'
 OUT.mkdir(parents=True, exist_ok=True)
@@ -71,6 +73,8 @@ visible_baseline = []
 for index, section in enumerate(META['sections']):
     sid = section['id']
     rendered = subprocess.run([sys.executable, str(ROOT/'scripts/sts.py'), 'refs','render', section['file']], capture_output=True, text=True, check=True).stdout
+    # Diagrams print from their light-palette copies; photos and plates are unchanged.
+    rendered = re.sub(r'\]\(/book-images/([^)\s]+\.svg)', lambda m: '](' + print_variant(m[1]).as_uri(), rendered)
     rendered = rendered.replace('](/book-images/', '](' + (ROOT/'static/book-images').as_uri() + '/')
     rendered = re.sub(r'^(> \*.*\*)\n(?=> )', r'\1  \n', rendered, flags=re.M)
     rendered = re.sub(r'\[\^([^\]]+)\]', lambda m: f'[^{index}-{m[1]}]', rendered)
@@ -133,6 +137,8 @@ for index, section in enumerate(META['sections']):
             # The first image follows the chapter opening in every source section.
             if fig.find_previous_sibling() and fig.find_previous_sibling().name in ('header','div'):
                 fig['class'] = ['opener-image']
+            if filename.endswith('.svg'):
+                fig['class'] = ['diagram']  # full text width: labels stay readable
             included_images.append(filename)
     for p in soup.find_all('p'):
         if p.get_text(strip=True) == 'In this chapter:':

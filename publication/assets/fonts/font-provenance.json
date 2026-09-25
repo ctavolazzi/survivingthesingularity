@@ -117,5 +117,53 @@
     "file": "SourceSansPro-LICENSE.txt",
     "source": "/usr/local/texlive/2025/texmf-dist/doc/latex/sourcesanspro/LICENSE.txt",
     "sha256": "4a4a4179a96b5ef6786186d199f0d049b151352f460b8d2f3c00083792f37dd9"
+  },
+  {
+    "file": "JetBrainsMono-Regular.ttf",
+    "sha256": "a0bf60ef0f83c5ed4d7a75d45838548b1f6873372dfac88f71804491898d138f",
+    "weight": 400,
+    "fsType": 0,
+    "static": true,
+    "family": "JetBrains Mono",
+    "style": "Regular",
+    "version": "Version 2.304; ttfautohint (v1.8.4.7-5d5b)",
+    "copyright": "Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)",
+    "license_text": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+    "repository": "https://github.com/JetBrains/JetBrainsMono",
+    "upstream_release_url": "https://github.com/JetBrains/JetBrainsMono/releases/tag/v2.304",
+    "source_local_path": "JetBrainsMono-2.304.zip, fonts/ttf/JetBrainsMono-Regular.ttf (release asset, downloaded 2026-09-24)",
+    "upstream_byte_identity_verified": true
+  },
+  {
+    "file": "JetBrainsMono-SemiBold.ttf",
+    "sha256": "1b3bfa1ed5665a4ce3f9feb68d2d4e40e70bf8b4b7d9a3edd418f321b4e166a0",
+    "weight": 600,
+    "fsType": 0,
+    "static": true,
+    "family": "JetBrains Mono SemiBold",
+    "style": "SemiBold",
+    "version": "Version 2.304; ttfautohint (v1.8.4.7-5d5b)",
+    "copyright": "Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)",
+    "license_text": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+    "repository": "https://github.com/JetBrains/JetBrainsMono",
+    "upstream_release_url": "https://github.com/JetBrains/JetBrainsMono/releases/tag/v2.304",
+    "source_local_path": "JetBrainsMono-2.304.zip, fonts/ttf/JetBrainsMono-SemiBold.ttf (release asset, downloaded 2026-09-24)",
+    "upstream_byte_identity_verified": true
+  },
+  {
+    "file": "JetBrainsMono-Bold.ttf",
+    "sha256": "5590990c82e097397517f275f430af4546e1c45cff408bde4255dad142479dcb",
+    "weight": 700,
+    "fsType": 0,
+    "static": true,
+    "family": "JetBrains Mono",
+    "style": "Bold",
+    "version": "Version 2.304; ttfautohint (v1.8.4.7-5d5b)",
+    "copyright": "Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)",
+    "license_text": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+    "repository": "https://github.com/JetBrains/JetBrainsMono",
+    "upstream_release_url": "https://github.com/JetBrains/JetBrainsMono/releases/tag/v2.304",
+    "source_local_path": "JetBrainsMono-2.304.zip, fonts/ttf/JetBrainsMono-Bold.ttf (release asset, downloaded 2026-09-24)",
+    "upstream_byte_identity_verified": true
   }
 ]

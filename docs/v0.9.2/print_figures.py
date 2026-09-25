@@ -17,12 +17,11 @@ scale, and no label ends larger than one that started larger.
     python3 docs/v0.9.2/print_figures.py --audit    # list defects in the originals
 """
 from pathlib import Path
+import hashlib
 import json
 import re
 import sys
 import xml.etree.ElementTree as ET
-
-from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[2]
 BOOK = ROOT / 'src/lib/data/book'
@@ -58,6 +57,22 @@ TEXT = {
 COLOR_ATTRS = ('fill', 'stroke', 'stop-color')
 TEXTY = {'text', 'tspan'}
 SHAPES = {'rect', 'circle', 'ellipse', 'line', 'path', 'polygon', 'polyline', 'use', 'image'}
+
+
+def sha(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def print_variant(name):
+    """The print copy of a figure, for the print builds. Refuses a stale copy:
+    the source and the print file must both match what the last run recorded."""
+    report = json.loads(REPORT.read_text())['figures']
+    record = report.get(name)
+    if record is None:
+        raise SystemExit(f'No print copy of {name}; run docs/v0.9.2/print_figures.py')
+    if record['source_sha256'] != sha(IMAGES / name) or record['print_sha256'] != sha(OUT / name):
+        raise SystemExit(f'Print copy of {name} is stale; run docs/v0.9.2/print_figures.py')
+    return OUT / name
 
 
 def local(tag):
@@ -296,6 +311,7 @@ def fit(page, svg_text, force=0):
 
 
 def main():
+    from playwright.sync_api import sync_playwright
     check = '--check' in sys.argv
     names = figures_in_book()
     if '--audit' in sys.argv:
@@ -333,6 +349,8 @@ def main():
             svg = result.pop('svg')
             (OUT / name).write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + svg + '\n')
             result.pop('new_collisions')
+            result['source_sha256'] = sha(IMAGES / name)
+            result['print_sha256'] = sha(OUT / name)
             report['figures'][name] = result
             print(f"{name:34} labels {result['labels']:3}  min {result['min_base']:5.1f} -> {result['min_final']:5.1f}px"
                   f"  median x{result['median_scale']:.2f}  width {result['frame_width']:.0f} -> {result['crop_width']:.0f}")

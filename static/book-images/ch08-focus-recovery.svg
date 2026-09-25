@@ -40,10 +40,11 @@
     <line x1="473" y1="120" x2="473" y2="404"/>
     <line x1="613" y1="120" x2="613" y2="404"/>
   </g>
-  <g font-size="16" fill="#f1f5f9" text-anchor="middle">
-    <text x="323" y="112">↯</text>
-    <text x="473" y="112">↯</text>
-    <text x="613" y="112">↯</text>
+  <!-- lightning marks, drawn rather than typed so no font has to supply them -->
+  <g fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round">
+    <polyline points="327,99 320,107 326,107 319,116"/>
+    <polyline points="477,99 470,107 476,107 469,116"/>
+    <polyline points="617,99 610,107 616,107 609,116"/>
   </g>
   <text x="470" y="94" font-size="12" fill="#94a3b8" text-anchor="middle">algorithmic interrupts (3+ per hour)</text>
 

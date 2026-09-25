@@ -21,3 +21,12 @@ SourceSerif4-Regular.otf
 
 SourceSerif4-Semibold.otf
 © 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+
+JetBrainsMono-Bold.ttf
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+
+JetBrainsMono-Regular.ttf
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+
+JetBrainsMono-SemiBold.ttf
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)

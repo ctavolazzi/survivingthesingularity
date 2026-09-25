@@ -228,27 +228,45 @@ New in v0.9.2:
 
 ## Verification
 
+Final run, 24 September, after the revision pass. Each step was logged to
+its own file with its own exit code, never through a pipe.
+
 - `sts.py verify`: Clean, all 24 precedents present and indexed. `sts.py id
-  verify`: 2,180 blocks across 34 sections.
+  verify`: 2,212 blocks across 35 sections, 97,840 words.
 - Gates (`docs/v0.9.2/gates.py`): 0 failures. The negative control fired on
   every newly catalogued error.
-- Letter PDF: 285 pages, original cover, no TeX or markdown leaks. Eight key
-  new pages were rendered and inspected.
-- 6x9: the build passed its manuscript-hash and rights asserts. The proof
-  found all 2,429 text blocks in the 349-page interior across all 34
-  sections, with no overflow, broken links or missing assets. Its section
-  check had a hardcoded 30, now read from `book.json`. The font scan found 0
-  runs outside the book fonts and Menlo. The grayscale interior (350 pages,
-  blank verso added) printed no Ghostscript warnings.
-- EPUB: 37 chapter files, zip integrity OK. The EPUB script writes a review
-  PDF to the same path as the letter build, so the letter PDF was rebuilt
-  last to keep the right file.
-- Every new chart and diagram was rendered in headless Chrome and inspected;
-  five layout collisions were fixed before placement.
+- Figures: `print_figures.py --audit` reports 0 problems in the 32 original
+  diagrams, with 4 intentional cases allowed. Three old defects put back
+  into memory copies were all caught. `--check` forced labels to 1.8x and
+  saw collisions. The builds refused a deliberately stale print copy.
+- Letter PDF: 287 pages, original cover. It embeds JetBrains Mono for the
+  diagrams and system Georgia and Helvetica for the text; this is the
+  author-review copy. One bold arrow on page 124 falls back to Times New
+  Roman Bold because Georgia Bold lacks the glyph.
+- 6x9: the build passed its manuscript-hash and rights asserts against the
+  refreshed 35-section baseline. The proof found all 2,459 text blocks in
+  the 363-page interior across all 35 sections, with no overflow, broken
+  links or missing assets. `fonts_check.py`, which went red on the previous
+  build's Menlo, finds only BookSans, BookSerif and JetBrains Mono. Pages
+  90 and 185 were rendered in grayscale and inspected: the diagrams now
+  print on white at the full text width.
+- Grayscale print interior: 364 pages, blank final verso added, no
+  Ghostscript warnings. Ghostscript relabels the six CFF-based book faces
+  as "Anonymous" on conversion. The face count (6 plus 2 JetBrains Mono)
+  matches the color interior, and the text extracts normally.
+- EPUB: 38 XHTML files, zip integrity OK. It keeps the dark diagrams, as the
+  website does.
 
 ## Not done
 
 - No physical print proof; the cover master is still about 228 dpi at 6x9.
+- Some diagram labels couldn't grow without a collision and stay at their
+  original size (10 to 11 user units, about 4 point in the 6x9). Per-figure
+  numbers are in `print-figures.json`. Five figures have a label that
+  stayed at 11 units or less: the Chapter 9 region ring, the Chapter 11
+  cooling loop, the Chapter 17 fab lab and mesh node, and the
+  Introduction's food-insecurity chart. Larger type there means redrawing
+  those figures.
 - The four unclear-rights images still show on the website.
 - Site release, README and download links untouched; `released` stays 0.7.5.
 - The speculative stages (Chapters 3 and 4) are argument by design and carry

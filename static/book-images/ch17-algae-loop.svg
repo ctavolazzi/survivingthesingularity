@@ -36,17 +36,17 @@
 
   <!-- edges clockwise -->
   <path d="M 530 140 Q 705 150 705 253" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#bb)"/>
-  <text x="648" y="180" font-size="12.5" fill="#94a3b8">nitrate-rich water</text>
+  <text x="672" y="205" font-size="12.5" fill="#94a3b8" text-anchor="end">nitrate-rich water</text>
 
   <path d="M 705 345 Q 705 475 532 475" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#bb)"/>
-  <text x="600" y="452" font-size="12.5" fill="#94a3b8" text-anchor="middle">harvested algae</text>
+  <text x="660" y="425" font-size="12.5" fill="#94a3b8" text-anchor="end">harvested algae</text>
 
   <path d="M 330 475 Q 155 475 155 347" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#bb)"/>
-  <text x="212" y="452" font-size="12.5" fill="#94a3b8" text-anchor="middle">dried protein</text>
+  <text x="200" y="425" font-size="12.5" fill="#94a3b8" text-anchor="start">dried protein</text>
 
   <!-- the closing edge (amber): fish food back to the fish -->
   <path d="M 155 253 Q 155 135 328 135" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#bg)"/>
-  <text x="212" y="180" font-size="12.5" fill="#f59e0b" text-anchor="middle">fish food, made not bought</text>
+  <text x="190" y="205" font-size="12.5" fill="#f59e0b" text-anchor="start">fish food, made not bought</text>
 
   <!-- center note -->
   <text x="430" y="292" font-size="13" fill="#94a3b8" text-anchor="middle">the store-bought</text>

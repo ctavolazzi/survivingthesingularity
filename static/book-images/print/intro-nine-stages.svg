@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 18 844 841" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  
+  <text x="40" y="50" font-size="22" letter-spacing="2.32" fill="#0f172a">THE NINE STAGES OF THE SINGULARITY</text>
+  <line x1="40" y1="64" x2="520" y2="64" stroke="#d97706" stroke-width="2"/>
+
+  
+  <text x="60" y="96" font-size="17.55" letter-spacing="2.7" fill="#b45309">PART I  ·  THE ERA OF AGI  ·  STAGES 1-5</text>
+  <text x="60" y="114" font-size="15" fill="#334155">the human window, where the choices are still ours</text>
+
+  
+  <rect x="60" y="126" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="153" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="159" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">1</text>
+  <text x="130" y="159" font-size="22" fill="#0f172a">The Cash Grab</text>
+  
+  <rect x="60" y="188" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="215" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="221" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">2</text>
+  <text x="130" y="221" font-size="22" fill="#0f172a">The Panic and the Plug</text>
+  
+  <rect x="60" y="250" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="277" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="283" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">3</text>
+  <text x="130" y="283" font-size="22" fill="#0f172a">The Adults Step In</text>
+  
+  <rect x="60" y="312" width="780" height="54" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <circle cx="96" cy="339" r="17" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+  <text x="96" y="345" font-size="22" font-weight="600" fill="#b45309" text-anchor="middle">4</text>
+  <text x="130" y="345" font-size="22" font-weight="600" fill="#b45309">The New Social Contract &amp; the End of Labor</text>
+  <text x="828" y="345" font-size="15" fill="#b45309" text-anchor="end">the hinge</text>
+  
+  <rect x="60" y="374" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="401" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="407" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">5</text>
+  <text x="130" y="407" font-size="22" fill="#0f172a">The Primate Backlash</text>
+
+  
+  <text x="60" y="458" font-size="17.55" letter-spacing="2.7" fill="#b45309">THE LEAP TO ASI  ·  STAGES 6-7</text>
+  <text x="60" y="476" font-size="15" fill="#334155">2027: recursive self-improvement ignites, and there is no pause button</text>
+  
+  <rect x="60" y="488" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="515" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="521" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">6</text>
+  <text x="130" y="521" font-size="22" fill="#0f172a">The ASI Exodus</text>
+  
+  <rect x="60" y="550" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="577" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="583" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">7</text>
+  <text x="130" y="583" font-size="22" fill="#0f172a">Simulation, Transhumanism, the Ultimate Cure</text>
+
+  
+  <text x="60" y="632" font-size="17.55" letter-spacing="2.7" fill="#b45309">UNIVERSAL &amp; MULTIVERSE APEX  ·  STAGES 8-9</text>
+  <text x="60" y="650" font-size="15" fill="#334155">the machine outgrows the planet, then the physics</text>
+  
+  <rect x="60" y="662" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="689" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="695" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">8</text>
+  <text x="130" y="695" font-size="22" fill="#0f172a">The Transition to USI</text>
+  
+  <rect x="60" y="724" width="780" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="96" cy="751" r="17" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="96" y="757" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">9</text>
+  <text x="130" y="757" font-size="22" fill="#0f172a">The Apex Intelligence</text>
+
+  <line x1="40" y1="800" x2="860" y2="800" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="40" y="826" font-size="15" fill="#334155">We are already well into Stage 1. Everything in this book is about setting the terms of</text>
+  <text x="40" y="843" font-size="15" fill="#334155">Stage 4 while the choices are still ours to make.</text>
+</svg>

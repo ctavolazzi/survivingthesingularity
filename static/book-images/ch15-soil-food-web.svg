@@ -24,7 +24,7 @@
   </g>
 
   <!-- stage 1 -->
-  <rect x="240" y="196" width="380" height="64" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="214" y="196" width="432" height="64" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
   <text x="430" y="224" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">SUNLIGHT &amp; PLANTS</text>
   <text x="430" y="246" font-size="12" fill="#94a3b8" text-anchor="middle">photosynthesis pumps sugar into the root zone</text>
 
@@ -32,7 +32,7 @@
   <text x="450" y="290" font-size="12" fill="#94a3b8">root exudates (sugars)</text>
 
   <!-- stage 2 -->
-  <rect x="240" y="312" width="380" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <rect x="214" y="312" width="432" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
   <text x="430" y="340" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">BACTERIA &amp; FUNGI</text>
   <text x="430" y="362" font-size="12" fill="#94a3b8" text-anchor="middle">mine raw minerals out of rock, sand, and organic matter</text>
 
@@ -40,18 +40,18 @@
   <text x="450" y="406" font-size="12" fill="#94a3b8">grazed by the next trophic level</text>
 
   <!-- stage 3 -->
-  <rect x="240" y="428" width="380" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <rect x="214" y="428" width="432" height="64" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
   <text x="430" y="456" font-size="16" font-weight="600" fill="#f1f5f9" text-anchor="middle">PROTOZOA &amp; NEMATODES</text>
   <text x="430" y="478" font-size="12" fill="#94a3b8" text-anchor="middle">digest the microbes, excrete plant-available nutrients</text>
 
   <line x1="430" y1="492" x2="430" y2="538" stroke="#f59e0b" stroke-width="2" marker-end="url(#aa)"/>
 
   <!-- stage 4 -->
-  <rect x="240" y="544" width="380" height="64" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+  <rect x="214" y="544" width="432" height="64" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
   <text x="430" y="572" font-size="16" font-weight="600" fill="#f59e0b" text-anchor="middle">FED PLANTS, LIVING SOIL</text>
   <text x="430" y="594" font-size="12" fill="#94a3b8" text-anchor="middle">fewer bought inputs needed</text>
 
   <!-- side loop -->
-  <path d="M 620 576 L 744 576 L 744 228 L 628 228" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aa)"/>
+  <path d="M 646 576 L 744 576 L 744 228 L 654 228" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aa)"/>
   <text x="776" y="402" font-size="12" fill="#3b82f6" text-anchor="middle" transform="rotate(90 776 402)">plants feed the web that feeds the plants</text>
 </svg>

@@ -45,7 +45,7 @@
 
   <!-- feedback loop -->
   <path d="M 240 422 Q 240 480 430 480 Q 620 480 620 422" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="7 5" marker-start="url(#ab)" marker-end="url(#aa)"/>
-  <text x="430" y="470" font-size="12" fill="#64748b" text-anchor="middle">sense → decide → actuate → sense</text>
+  <text x="430" y="452" font-size="12" fill="#64748b" text-anchor="middle">sense → decide → actuate → sense</text>
 
   <text x="430" y="528" font-size="13" fill="#f1f5f9" text-anchor="middle">the greenhouse waters itself with control-loop precision while you sleep</text>
 </svg>

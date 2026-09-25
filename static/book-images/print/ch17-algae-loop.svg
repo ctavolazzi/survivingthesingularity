@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 20.9 794 501.1" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="bb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#2563eb"/>
+    </marker>
+    <marker id="bg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">CLOSING THE LOOP: THE ALGAE FISH-FOOD CYCLE</text>
+  <line x1="40" y1="66" x2="612" y2="66" stroke="#cbd5e1" stroke-width="2"/>
+
+  
+  <rect x="330" y="100" width="200" height="70" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="130" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">FISH TANK</text>
+  <text x="430" y="152" font-size="13.65" fill="#334155" text-anchor="middle">waste becomes nitrates</text>
+
+  
+  <rect x="600" y="255" width="210" height="90" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="705" y="285" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">GROW BEDS</text>
+  <text x="705" y="307" font-size="14.3" fill="#334155" text-anchor="middle">plants clean the water,</text>
+  <text x="705" y="325" font-size="14.3" fill="#334155" text-anchor="middle">feed the household</text>
+
+  
+  <rect x="330" y="440" width="200" height="70" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="470" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">DRY + GRIND</text>
+  <text x="430" y="492" font-size="14.3" fill="#334155" text-anchor="middle">8 g/week into pellets</text>
+
+  
+  <rect x="50" y="255" width="210" height="90" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="155" y="283" font-size="21.25" font-weight="600" fill="#b45309" text-anchor="middle">PHOTOBIOREACTOR</text>
+  <text x="155" y="305" font-size="15.6" fill="#334155" text-anchor="middle">algae grown on light,</text>
+  <text x="155" y="323" font-size="15.6" fill="#334155" text-anchor="middle">water, a $400 printer</text>
+
+  
+  <path d="M 530 140 Q 705 150 705 253" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#bb)"/>
+  <text x="672" y="205" font-size="13.65" fill="#334155" text-anchor="end">nitrate-rich water</text>
+
+  <path d="M 705 345 Q 705 475 532 475" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#bb)"/>
+  <text x="660" y="425" font-size="13.65" fill="#334155" text-anchor="end">harvested algae</text>
+
+  <path d="M 330 475 Q 155 475 155 347" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#bb)"/>
+  <text x="200" y="425" font-size="13.65" fill="#334155" text-anchor="start">dried protein</text>
+
+  
+  <path d="M 155 253 Q 155 135 328 135" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#bg)"/>
+  <text x="190" y="205" font-size="13.65" fill="#b45309" text-anchor="start">fish food, made not bought</text>
+
+  
+  <text x="430" y="292" font-size="18.2" fill="#334155" text-anchor="middle">the store-bought</text>
+  <text x="430" y="312" font-size="18.2" fill="#334155" text-anchor="middle">input is gone;</text>
+  <text x="430" y="332" font-size="18.2" font-weight="600" fill="#0f172a" text-anchor="middle">the loop is closed</text>
+</svg>

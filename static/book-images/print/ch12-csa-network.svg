@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6.3 20.9 872.5 566.9" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#2563eb"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">THE SEMI-AUTONOMOUS CSA NETWORK</text>
+  <line x1="40" y1="66" x2="470" y2="66" stroke="#cbd5e1" stroke-width="2"/>
+
+  
+  <rect x="180" y="96" width="500" height="98" rx="10" fill="#f1f5f9" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="430" y="128" font-size="21" font-weight="600" fill="#0f172a" text-anchor="middle">SHOUSE NODE A</text>
+  <text x="430" y="152" font-size="15.6" fill="#334155" text-anchor="middle">local AI server (Crucible) · Mycodo micro-greenhouse</text>
+  <text x="430" y="174" font-size="12.6" fill="#1d4ed8" text-anchor="middle">yields: coordination + calories</text>
+
+  
+  <line x1="430" y1="194" x2="430" y2="242" stroke="#d97706" stroke-width="2.5" marker-end="url(#aa)" marker-start="url(#aa)"/>
+  <text x="450" y="222" font-size="15.6" fill="#b45309">mesh task exchange (LoRa)</text>
+
+  
+  <rect x="180" y="248" width="500" height="98" rx="10" fill="#f1f5f9" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="430" y="280" font-size="21" font-weight="600" fill="#0f172a" text-anchor="middle">SHOUSE NODE B</text>
+  <text x="430" y="304" font-size="12.6" fill="#334155" text-anchor="middle">tool library (CNC, tractor, welder) · recycled DC battery bank</text>
+  <text x="430" y="326" font-size="12.6" fill="#1d4ed8" text-anchor="middle">yields: fabrication + stored power</text>
+
+  
+  <line x1="430" y1="346" x2="430" y2="394" stroke="#d97706" stroke-width="2.5" marker-end="url(#aa)" marker-start="url(#aa)"/>
+  <text x="450" y="374" font-size="15.6" fill="#b45309">mesh task exchange (LoRa)</text>
+
+  
+  <rect x="180" y="400" width="500" height="98" rx="10" fill="#cbd5e1" stroke="#d97706" stroke-width="2.5"/>
+  <text x="430" y="432" font-size="21" font-weight="600" fill="#b45309" text-anchor="middle">VULNERABLE NODE</text>
+  <text x="430" y="456" font-size="13.2" fill="#334155" text-anchor="middle">elder neighbor · fixed-income home · one-button LoRa terminal</text>
+  <text x="430" y="478" font-size="12.1" fill="#0f172a" text-anchor="middle">receives automated calorie + labor deliveries, no dollars involved</text>
+
+  <text x="430" y="546" font-size="15.6" fill="#0f172a" text-anchor="middle">automated nodes run at ~300% of their own need; the surplus carries whoever cannot produce</text>
+  <text x="430" y="572" font-size="15" fill="#475569" text-anchor="middle">E-net = Σ automated yield − Σ basic demand · in this network, positive means nobody is cut off</text>
+</svg>

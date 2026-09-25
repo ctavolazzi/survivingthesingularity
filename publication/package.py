@@ -222,8 +222,8 @@ def make_plan() -> Plan:
     baseline = json.loads(read(AUDITS / "baseline.json"))
     metadata = json.loads(read(BOOK / "book.json"))
     sections = [s["file"] for s in metadata["sections"]]
-    if len(sections) != 30 or len(set(sections)) != 30 or set(sections) != set(baseline):
-        raise PackageError("Expected the complete 30-section reviewed manuscript baseline")
+    if len(set(sections)) != len(sections) or set(sections) != set(baseline):
+        raise PackageError(f"Expected the complete {len(baseline)}-section reviewed manuscript baseline")
     for filename in sections:
         if Path(filename).name != filename or not filename.endswith(".md"):
             raise PackageError(f"Unsafe manuscript filename: {filename}")
@@ -264,7 +264,7 @@ def make_plan() -> Plan:
             if path.suffix == ".md":
                 audit_names.append(path.name)
     build = json.loads(read(OUT / "build.json"))
-    if build["source_sha256"] != baseline or build["sections"] != 30:
+    if build["source_sha256"] != baseline or build["sections"] != len(baseline):
         raise PackageError("Build record differs from the reviewed manuscript baseline")
     if set(build["included_images"]) != included_in_publication:
         raise PackageError("Publication images do not match build.json")
@@ -320,7 +320,7 @@ The supplied reading PDF includes the cover and interior, with page labels.
 Printer-specific conversion, stock, binding, bleed and spine dimensions remain
 production decisions. See the companion production and review notes below.
 
-The 30 Markdown sections and `book.json` in `manuscript/` are unchanged source
+The {len(sections)} Markdown sections and `book.json` in `manuscript/` are unchanged source
 snapshots. `manuscript/baseline-sha256.json` records their checksums. Editing them
 does not automatically update the included HTML. The original repository build
 performs manuscript-to-layout transformations; this portable package provides

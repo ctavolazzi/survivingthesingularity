@@ -1,0 +1,295 @@
+{
+  "target_scale": 1.4,
+  "cap_px": 22,
+  "figures": {
+    "appd-precedent-timeline.svg": {
+      "labels": 66,
+      "marks": 28,
+      "min_base": 10.5,
+      "min_final": 13.2,
+      "median_scale": 1.2,
+      "frame_width": 900,
+      "crop_width": 875.9
+    },
+    "ch02-eighteen-days.svg": {
+      "labels": 24,
+      "marks": 10,
+      "min_base": 10.5,
+      "min_final": 12.07,
+      "median_scale": 1.2,
+      "frame_width": 900,
+      "crop_width": 860.5
+    },
+    "ch05-horses-tractors.svg": {
+      "labels": 27,
+      "marks": 15,
+      "min_base": 10.5,
+      "min_final": 12,
+      "median_scale": 1.09,
+      "frame_width": 900,
+      "crop_width": 866.9
+    },
+    "ch06-capability-access.svg": {
+      "labels": 20,
+      "marks": 5,
+      "min_base": 10.5,
+      "min_final": 12.65,
+      "median_scale": 1.2,
+      "frame_width": 900,
+      "crop_width": 897.1
+    },
+    "ch08-cognitive-extraction.svg": {
+      "labels": 12,
+      "marks": 8,
+      "min_base": 13,
+      "min_final": 13.65,
+      "median_scale": 1.22,
+      "frame_width": 860,
+      "crop_width": 829.9
+    },
+    "ch08-firewall-pipeline.svg": {
+      "labels": 23,
+      "marks": 8,
+      "min_base": 11,
+      "min_final": 13.75,
+      "median_scale": 1.35,
+      "frame_width": 860,
+      "crop_width": 810
+    },
+    "ch08-focus-recovery.svg": {
+      "labels": 13,
+      "marks": 10,
+      "min_base": 12,
+      "min_final": 12,
+      "median_scale": 1.17,
+      "frame_width": 860,
+      "crop_width": 784
+    },
+    "ch08-info-architectures.svg": {
+      "labels": 24,
+      "marks": 10,
+      "min_base": 12,
+      "min_final": 13.8,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 816.2
+    },
+    "ch08-star-vs-mesh.svg": {
+      "labels": 9,
+      "marks": 36,
+      "min_base": 12,
+      "min_final": 12,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 815.6
+    },
+    "ch09-cnc-bed.svg": {
+      "labels": 16,
+      "marks": 8,
+      "min_base": 10,
+      "min_final": 11.55,
+      "median_scale": 1.35,
+      "frame_width": 860,
+      "crop_width": 788.2
+    },
+    "ch09-greenhouse-bus.svg": {
+      "labels": 17,
+      "marks": 9,
+      "min_base": 11,
+      "min_final": 13.2,
+      "median_scale": 1.35,
+      "frame_width": 860,
+      "crop_width": 812.7
+    },
+    "ch09-hyperlocal-vs-global.svg": {
+      "labels": 28,
+      "marks": 17,
+      "min_base": 12.5,
+      "min_final": 14.7,
+      "median_scale": 1.18,
+      "frame_width": 860,
+      "crop_width": 788.6
+    },
+    "ch09-region-ring.svg": {
+      "labels": 15,
+      "marks": 11,
+      "min_base": 11,
+      "min_final": 11,
+      "median_scale": 1.3,
+      "frame_width": 900,
+      "crop_width": 855.6
+    },
+    "ch10-algorithm-unlock.svg": {
+      "labels": 20,
+      "marks": 8,
+      "min_base": 11,
+      "min_final": 12.1,
+      "median_scale": 1.25,
+      "frame_width": 860,
+      "crop_width": 851.8
+    },
+    "ch10-model-collapse.svg": {
+      "labels": 12,
+      "marks": 11,
+      "min_base": 11,
+      "min_final": 11.55,
+      "median_scale": 1.31,
+      "frame_width": 860,
+      "crop_width": 864.4
+    },
+    "ch11-cooling-loop.svg": {
+      "labels": 16,
+      "marks": 13,
+      "min_base": 10,
+      "min_final": 10,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 869
+    },
+    "ch12-csa-network.svg": {
+      "labels": 14,
+      "marks": 6,
+      "min_base": 11,
+      "min_final": 12.1,
+      "median_scale": 1.3,
+      "frame_width": 860,
+      "crop_width": 872.5
+    },
+    "ch13-shell-architecture.svg": {
+      "labels": 13,
+      "marks": 6,
+      "min_base": 12,
+      "min_final": 15,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 793.3
+    },
+    "ch13-thermal-seal.svg": {
+      "labels": 20,
+      "marks": 7,
+      "min_base": 11,
+      "min_final": 12,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 867.4
+    },
+    "ch14-logistic-shockwave.svg": {
+      "labels": 16,
+      "marks": 9,
+      "min_base": 11,
+      "min_final": 15.4,
+      "median_scale": 1.38,
+      "frame_width": 860,
+      "crop_width": 812.7
+    },
+    "ch14-mesh-comms.svg": {
+      "labels": 14,
+      "marks": 36,
+      "min_base": 12,
+      "min_final": 12.6,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 828.7
+    },
+    "ch15-clt-firewall.svg": {
+      "labels": 14,
+      "marks": 7,
+      "min_base": 12,
+      "min_final": 12.6,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 707.1
+    },
+    "ch15-soil-food-web.svg": {
+      "labels": 13,
+      "marks": 18,
+      "min_base": 12,
+      "min_final": 12.6,
+      "median_scale": 1.38,
+      "frame_width": 860,
+      "crop_width": 774.3
+    },
+    "ch16-sneakernet.svg": {
+      "labels": 15,
+      "marks": 8,
+      "min_base": 11,
+      "min_final": 12.65,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 823.6
+    },
+    "ch17-algae-loop.svg": {
+      "labels": 18,
+      "marks": 9,
+      "min_base": 12.5,
+      "min_final": 13.65,
+      "median_scale": 1.2,
+      "frame_width": 860,
+      "crop_width": 794
+    },
+    "ch17-dc-native.svg": {
+      "labels": 25,
+      "marks": 19,
+      "min_base": 11,
+      "min_final": 12.65,
+      "median_scale": 1.4,
+      "frame_width": 860,
+      "crop_width": 788.2
+    },
+    "ch17-fab-lab.svg": {
+      "labels": 19,
+      "marks": 13,
+      "min_base": 11,
+      "min_final": 11,
+      "median_scale": 1.3,
+      "frame_width": 860,
+      "crop_width": 859.6
+    },
+    "ch17-lora-node.svg": {
+      "labels": 15,
+      "marks": 24,
+      "min_base": 11,
+      "min_final": 11,
+      "median_scale": 1.27,
+      "frame_width": 860,
+      "crop_width": 799.3
+    },
+    "ch18-social-contract.svg": {
+      "labels": 18,
+      "marks": 16,
+      "min_base": 11.5,
+      "min_final": 13.8,
+      "median_scale": 1.4,
+      "frame_width": 900,
+      "crop_width": 844
+    },
+    "ch19-conversion-ladder.svg": {
+      "labels": 35,
+      "marks": 12,
+      "min_base": 10.5,
+      "min_final": 12.65,
+      "median_scale": 1.3,
+      "frame_width": 900,
+      "crop_width": 844
+    },
+    "intro-food-insecurity.svg": {
+      "labels": 24,
+      "marks": 12,
+      "min_base": 10.5,
+      "min_final": 11,
+      "median_scale": 1.09,
+      "frame_width": 900,
+      "crop_width": 861.9
+    },
+    "intro-nine-stages.svg": {
+      "labels": 28,
+      "marks": 20,
+      "min_base": 11,
+      "min_final": 15,
+      "median_scale": 1.29,
+      "frame_width": 900,
+      "crop_width": 844
+    }
+  },
+  "count": 32
+}

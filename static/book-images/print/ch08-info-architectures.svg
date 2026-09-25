@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 20.9 816.2 551.1" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#475569"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">INFORMATION DISPENSING ARCHITECTURES</text>
+  <line x1="40" y1="66" x2="470" y2="66" stroke="#cbd5e1" stroke-width="2"/>
+
+  <line x1="430" y1="90" x2="430" y2="560" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 6"/>
+
+  
+  <text x="230" y="106" font-size="19.6" font-weight="600" fill="#475569" text-anchor="middle">REAL-TIME REACTIVE</text>
+  <text x="230" y="126" font-size="16.8" fill="#475569" text-anchor="middle">(fragile)</text>
+
+  <rect x="70" y="146" width="320" height="66" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="230" y="174" font-size="21" font-weight="600" fill="#334155" text-anchor="middle">CENTRALIZED</text>
+  <text x="230" y="196" font-size="21" font-weight="600" fill="#334155" text-anchor="middle">ALGORITHMIC STREAM</text>
+
+  
+  <line x1="180" y1="212" x2="196" y2="288" stroke="#475569" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="230" y1="212" x2="230" y2="288" stroke="#475569" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="280" y1="212" x2="264" y2="288" stroke="#475569" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="174" y="246" font-size="13.8" fill="#475569" text-anchor="end">constant</text>
+  <text x="174" y="262" font-size="13.8" fill="#475569" text-anchor="end">interruptions</text>
+
+  <rect x="110" y="296" width="240" height="58" rx="10" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+  <text x="230" y="331" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">YOUR BRAIN (OS)</text>
+
+  <text x="90" y="404" font-size="19.6" fill="#334155">- outrage-loops</text>
+  <text x="90" y="434" font-size="19.6" fill="#334155">- high anxiety</text>
+  <text x="90" y="464" font-size="19.6" fill="#334155">- depleted working memory</text>
+  <text x="90" y="494" font-size="19.6" fill="#334155">- zero surplus for strategy</text>
+
+  
+  <text x="630" y="106" font-size="19.6" font-weight="600" fill="#b45309" text-anchor="middle">ANALOG BATCH-PROCESSING</text>
+  <text x="630" y="126" font-size="16.8" fill="#b45309" text-anchor="middle">(independent)</text>
+
+  <rect x="470" y="146" width="320" height="66" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
+  <text x="630" y="174" font-size="21" font-weight="600" fill="#0f172a" text-anchor="middle">FILTERED</text>
+  <text x="630" y="196" font-size="21" font-weight="600" fill="#0f172a" text-anchor="middle">LOCAL SOURCES</text>
+
+  
+  <line x1="630" y1="212" x2="630" y2="288" stroke="#d97706" stroke-width="2" marker-end="url(#aa)"/>
+  <text x="646" y="256" font-size="16.8" fill="#b45309">scheduled batches</text>
+
+  <rect x="510" y="296" width="240" height="58" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
+  <text x="630" y="331" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">YOUR BRAIN (OS)</text>
+
+  <text x="490" y="404" font-size="19.6" fill="#0f172a">- strategic action</text>
+  <text x="490" y="434" font-size="19.6" fill="#0f172a">- high executive function</text>
+  <text x="490" y="464" font-size="19.6" fill="#0f172a">- creative, focused agency</text>
+  <text x="490" y="494" font-size="19.6" fill="#0f172a">- surplus energy for building</text>
+
+  <text x="230" y="548" font-size="18.2" fill="#475569" text-anchor="middle">their architecture</text>
+  <text x="630" y="548" font-size="18.2" fill="#b45309" text-anchor="middle">your architecture</text>
+</svg>

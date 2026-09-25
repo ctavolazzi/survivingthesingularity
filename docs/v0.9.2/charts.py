@@ -78,11 +78,11 @@ def horses_tractors():
             body += f'<text x="{px+10:.1f}" y="{py-10:.1f}" font-size="12" fill="{INK}">1918 peak: 26.7 million</text>\n'
             ex, ey = X(1949), Y(8.274)
             body += f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="5" fill="{color}" stroke="{BG}" stroke-width="2"/>\n'
-            body += f'<text x="{ex-10:.1f}" y="{ey-14:.1f}" font-size="12" fill="{INK}" text-anchor="end">1949: 8.3 million, under a third</text>\n'
+            body += f'<text x="{ex-10:.1f}" y="{ey+24:.1f}" font-size="12" fill="{INK}" text-anchor="end">1949: 8.3 million, under a third</text>\n'
         else:
             ex, ey = X(1949), Y(3.5)
             body += f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="5" fill="{color}" stroke="{BG}" stroke-width="2"/>\n'
-            body += f'<text x="{ex-10:.1f}" y="{ey-12:.1f}" font-size="12" fill="{INK}" text-anchor="end">1949: 3.5 million</text>\n'
+            body += f'<text x="{ex-12:.1f}" y="{ey-6:.1f}" font-size="12" fill="{INK}" text-anchor="end">1949: 3.5 million</text>\n'
             sx, sy = X(1910), Y(0.001)
             body += f'<text x="{sx+6:.1f}" y="{sy-10:.1f}" font-size="12" fill="{INK}">1910: about 1,000</text>\n'
     for y in range(1910, 1950, 5):
@@ -117,7 +117,7 @@ def food_insecurity():
     body += f'<text x="{X(2024)-10:.1f}" y="{Y(13.7)-14:.1f}" font-size="12" fill="{INK}" text-anchor="end">2024: 13.7%, 18.3 million households</text>\n'
     body += f'<text x="{X(2024)-10:.1f}" y="{Y(5.4)-14:.1f}" font-size="12" fill="{INK}" text-anchor="end">very low food security: 5.4%</text>\n'
     body += f'<text x="{X(2001)+4:.1f}" y="{Y(8.8):.1f}" font-size="12" fill="{MUTED}">food insecure, any time in the year</text>\n'
-    body += f'<text x="{X(2003):.1f}" y="{Y(3.5)-14:.1f}" font-size="12" fill="{MUTED}">very low food security</text>\n'
+    body += f'<text x="{X(2003):.1f}" y="{Y(3.5)+22:.1f}" font-size="12" fill="{MUTED}">very low food security</text>\n'
     for y in range(2001, 2025, 3):
         body += f'<text x="{X(y):.1f}" y="{bottom+22}" font-size="11" fill="{MUTED}" text-anchor="middle">{y}</text>\n'
     body += f'<text x="{x0}" y="{top-18}" font-size="12.5" font-weight="600" fill="{INK}">SHARE OF US HOUSEHOLDS</text>\n'
@@ -216,7 +216,8 @@ def conversion_ladder():
     for n, rung, proof in RUNGS:
         y = y_of(n)
         held = n >= 8
-        stroke = BLUE if held else AMBER
+        # Dashed as well as blue, so the two kinds of rung differ without color.
+        stroke = f'{BLUE}" stroke-dasharray="7 4' if held else AMBER
         body += f'<rect x="300" y="{y}" width="560" height="{row-12}" rx="8" fill="{CARD}" stroke="{stroke}" stroke-width="2"/>\n'
         body += f'<text x="322" y="{y+26}" font-size="16" font-weight="600" fill="{INK}">{n}</text>\n'
         body += f'<text x="352" y="{y+17}" font-size="13" font-weight="600" fill="{INK}">{esc(rung)}</text>\n'
@@ -224,8 +225,8 @@ def conversion_ladder():
     ly = top + len(RUNGS) * row + 8
     body += f'<rect x="300" y="{ly}" width="18" height="12" rx="3" fill="{CARD}" stroke="{AMBER}" stroke-width="2"/>\n'
     body += f'<text x="326" y="{ly+11}" font-size="11" fill="{MUTED}">already done somewhere</text>\n'
-    body += f'<rect x="520" y="{ly}" width="18" height="12" rx="3" fill="{CARD}" stroke="{BLUE}" stroke-width="2"/>\n'
-    body += f'<text x="546" y="{ly+11}" font-size="11" fill="{MUTED}">how you hold it together</text>\n'
+    body += f'<rect x="560" y="{ly}" width="18" height="12" rx="3" fill="{CARD}" stroke="{BLUE}" stroke-width="2" stroke-dasharray="4 2"/>\n'
+    body += f'<text x="586" y="{ly+11}" font-size="11" fill="{MUTED}">how you hold it together</text>\n'
     return frame(W, H, 'THE LADDER', 'Nine rungs, from the bottom up. Start with food. Climb as far as your town can hold.',
                  body, 'Chapter 19. Sources for every rung in the chapter and in Appendix B.')
 

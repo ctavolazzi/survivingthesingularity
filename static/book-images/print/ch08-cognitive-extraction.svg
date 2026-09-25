@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 20.9 829.9 581.1" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">THE COGNITIVE EXTRACTION ENGINE</text>
+  <line x1="40" y1="66" x2="428" y2="66" stroke="#cbd5e1" stroke-width="2"/>
+
+  
+  <rect x="220" y="92" width="420" height="78" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
+  <text x="430" y="126" font-size="22" font-weight="600" fill="#b45309" text-anchor="middle">YOUR RAW ATTENTION</text>
+  <text x="430" y="150" font-size="18.2" fill="#334155" text-anchor="middle">the ore body: finite, chemical, yours</text>
+
+  <line x1="430" y1="170" x2="430" y2="224" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="450" y="202" font-size="14.95" fill="#334155">harvested by infinite scroll + notifications</text>
+
+  
+  <rect x="220" y="232" width="420" height="78" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="266" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">PREFRONTAL CORTEX DEPLETION</text>
+  <text x="430" y="290" font-size="18.2" fill="#334155" text-anchor="middle">dopamine baseline spike and crash</text>
+
+  <line x1="430" y1="310" x2="430" y2="364" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="450" y="342" font-size="13.65" fill="#334155">receptors down-regulate, executive function dims</text>
+
+  
+  <rect x="220" y="372" width="420" height="78" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="406" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">SYSTEMIC SUGGESTIBILITY</text>
+  <text x="430" y="430" font-size="14.95" fill="#334155" text-anchor="middle">ready to accept automated corporate solutions</text>
+
+  <line x1="430" y1="450" x2="430" y2="504" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="450" y="482" font-size="18.2" fill="#334155">exhaustion becomes compliance</text>
+
+  
+  <rect x="220" y="512" width="420" height="78" rx="10" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+  <text x="430" y="546" font-size="22" font-weight="600" fill="#334155" text-anchor="middle">LOSS OF PHYSICAL AGENCY</text>
+  <text x="430" y="570" font-size="16.9" fill="#475569" text-anchor="middle">too tired to farm, build, or coordinate</text>
+</svg>

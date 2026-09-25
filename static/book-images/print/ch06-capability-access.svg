@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5 14 897.1 379" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" role="img" aria-label="The Gap Is Where We Decide">
+
+<text x="40" y="46" font-size="22" letter-spacing="2.32" fill="#0f172a">THE GAP IS WHERE WE DECIDE</text>
+<line x1="40" y1="60" x2="357" y2="60" stroke="#d97706" stroke-width="2"/>
+<text x="40" y="82" font-size="14.95" fill="#334155">Four different events, often confused for one.</text>
+<rect x="71.0" y="150" width="170" height="96" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
+<text x="156.0" y="180" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">CAPABILITY</text>
+<text x="156.0" y="206" font-size="14.38" fill="#334155" text-anchor="middle">Can a machine</text>
+<text x="156.0" y="222" font-size="14.38" fill="#334155" text-anchor="middle">do the task?</text>
+<text x="254.0" y="204" font-size="22" fill="#b45309" text-anchor="middle">›</text>
+<rect x="267.0" y="150" width="170" height="96" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
+<text x="352.0" y="180" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">DEPLOYMENT</text>
+<text x="352.0" y="206" font-size="14.38" fill="#334155" text-anchor="middle">Is it working</text>
+<text x="352.0" y="222" font-size="14.38" fill="#334155" text-anchor="middle">somewhere real?</text>
+<text x="450.0" y="204" font-size="22" fill="#b45309" text-anchor="middle">›</text>
+<rect x="463.0" y="150" width="170" height="96" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
+<text x="548.0" y="180" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">OWNERSHIP</text>
+<text x="548.0" y="206" font-size="13.8" fill="#334155" text-anchor="middle">Who controls it</text>
+<text x="548.0" y="222" font-size="13.8" fill="#334155" text-anchor="middle">and sets the price?</text>
+<text x="646.0" y="204" font-size="22" fill="#b45309" text-anchor="middle">›</text>
+<rect x="659.0" y="150" width="170" height="96" rx="10" fill="#f1f5f9" stroke="#2563eb" stroke-width="2"/>
+<text x="744.0" y="180" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">ACCESS</text>
+<text x="744.0" y="206" font-size="12.65" fill="#334155" text-anchor="middle">Can a person get it</text>
+<text x="744.0" y="222" font-size="12.65" fill="#334155" text-anchor="middle">without money?</text>
+<text x="450" y="290" font-size="14.95" fill="#0f172a" text-anchor="middle">A tool can get better while its price goes up. A town can hold a productive farm</text>
+<text x="450" y="310" font-size="14.95" fill="#0f172a" text-anchor="middle">and people who can't afford its food. The gaps between these boxes are the part we get to decide.</text>
+<text x="40" y="378" font-size="12.65" fill="#334155">Chapter 6.</text>
+</svg>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18.2 20.9 823.6 440.9" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#d97706"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">THE SNEAKERNET CYCLE</text>
+  <text x="40" y="74" font-size="16.8" fill="#475569">the un-hackable network: data that walks</text>
+  <line x1="40" y1="88" x2="380" y2="88" stroke="#cbd5e1" stroke-width="2"/>
+
+  
+  <rect x="60" y="160" width="210" height="110" rx="10" fill="#f1f5f9" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="165" y="198" font-size="20.25" font-weight="600" fill="#0f172a" text-anchor="middle">INDEPENDENT NODE</text>
+  <text x="165" y="222" font-size="14.4" fill="#334155" text-anchor="middle">local server + archive</text>
+  <text x="165" y="244" font-size="14.4" fill="#1d4ed8" text-anchor="middle">encrypts ⇒</text>
+
+  
+  <g transform="translate(380,168)">
+    <rect x="0" y="0" width="100" height="120" rx="10" fill="#cbd5e1" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M 78 0 L 100 22 L 100 0 Z" fill="#ffffff"/>
+    <g fill="#d97706">
+      <rect x="12" y="10" width="8" height="18" rx="2"/>
+      <rect x="26" y="10" width="8" height="18" rx="2"/>
+      <rect x="40" y="10" width="8" height="18" rx="2"/>
+      <rect x="54" y="10" width="8" height="18" rx="2"/>
+    </g>
+    <text x="50" y="70" font-size="18.2" font-weight="600" fill="#0f172a" text-anchor="middle">microSD</text>
+    <text x="50" y="90" font-size="12.65" fill="#334155" text-anchor="middle">1 TB</text>
+    <text x="50" y="104" font-size="12.65" fill="#334155" text-anchor="middle">encrypted</text>
+  </g>
+
+  
+  <line x1="270" y1="215" x2="372" y2="215" stroke="#d97706" stroke-width="2.5" marker-end="url(#aa)"/>
+  <line x1="488" y1="215" x2="590" y2="215" stroke="#d97706" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  
+  <path d="M 165 156 Q 430 60 695 156" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ab)"/>
+  <text x="430" y="142" font-size="13.2" fill="#334155" text-anchor="middle">passed by hand · local courier · town to town</text>
+
+  
+  <rect x="596" y="160" width="210" height="110" rx="10" fill="#f1f5f9" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="701" y="198" font-size="21" font-weight="600" fill="#0f172a" text-anchor="middle">NEIGHBOR NODE</text>
+  <text x="701" y="222" font-size="16.8" fill="#334155" text-anchor="middle">next community over</text>
+  <text x="701" y="244" font-size="16.8" fill="#1d4ed8" text-anchor="middle">⇐ decrypts</text>
+
+  
+  <path d="M 695 278 Q 430 372 173 280" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ab)"/>
+  <text x="430" y="342" font-size="16.8" fill="#475569" text-anchor="middle">and back again, with their library merged into yours</text>
+
+  <text x="430" y="420" font-size="18.2" fill="#0f172a" text-anchor="middle">immune to surveillance, remote shutdown, and electromagnetic interference</text>
+  <text x="430" y="446" font-size="16.8" fill="#475569" text-anchor="middle">a library walks across town in a pocket; nobody upstream ever sees a packet</text>
+</svg>

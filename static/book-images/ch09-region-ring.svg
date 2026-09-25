@@ -22,12 +22,12 @@
   <text x="450" y="327" font-size="11" fill="#94a3b8" text-anchor="middle">high density, low production</text>
 
   <!-- top: food -->
-  <rect x="340" y="98" width="220" height="66" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="320" y="98" width="260" height="66" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
   <text x="450" y="126" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">FOOD PRODUCTION</text>
   <text x="450" y="145" font-size="11" fill="#94a3b8" text-anchor="middle">CSA farms, greenhouses, grow towers</text>
 
   <!-- bottom: factories -->
-  <rect x="340" y="482" width="220" height="66" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="320" y="482" width="260" height="66" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
   <text x="450" y="510" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">NEIGHBORHOOD FACTORIES</text>
   <text x="450" y="529" font-size="11" fill="#94a3b8" text-anchor="middle">plasma tables, printers, fab labs</text>
 

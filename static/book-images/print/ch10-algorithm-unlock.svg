@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4.1 20.9 851.8 344.9" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">THE ALGORITHMIC JUDO PIPELINE</text>
+  <line x1="40" y1="66" x2="440" y2="66" stroke="#cbd5e1" stroke-width="2"/>
+
+  <g font-size="12" fill="#475569" text-anchor="middle">
+    <text x="130" y="128" fill="#475569" font-size="14.95">high-utility core</text>
+    <text x="350" y="128" fill="#475569" font-size="14.95">algorithmic wrapper</text>
+    <text x="565" y="128" fill="#475569" font-size="14.95">centralized feeds</text>
+    <text x="760" y="128" fill="#475569" font-size="14.95">human target</text>
+  </g>
+
+  <rect x="50" y="150" width="160" height="110" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2.5"/>
+  <text x="130" y="196" font-size="18.2" font-weight="600" fill="#b45309" text-anchor="middle">OFF-GRID TECH</text>
+  <text x="130" y="218" font-size="14.95" font-weight="600" fill="#b45309" text-anchor="middle">PRACTICAL DIY</text>
+  <text x="130" y="242" font-size="14.95" fill="#334155" text-anchor="middle">the payload</text>
+
+  <line x1="210" y1="205" x2="256" y2="205" stroke="#2563eb" stroke-width="2.5" marker-end="url(#ab)"/>
+
+  <rect x="260" y="150" width="180" height="110" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="350" y="196" font-size="18.2" font-weight="600" fill="#0f172a" text-anchor="middle">A TRUE STORY</text>
+  <text x="350" y="218" font-size="18.2" font-weight="600" fill="#0f172a" text-anchor="middle">NARRATIVE HOOK</text>
+  <text x="350" y="242" font-size="14.95" fill="#334155" text-anchor="middle">unmistakably human</text>
+
+  <line x1="440" y1="205" x2="486" y2="205" stroke="#2563eb" stroke-width="2.5" marker-end="url(#ab)"/>
+
+  <rect x="490" y="150" width="160" height="110" rx="10" fill="#f1f5f9" stroke="#2563eb" stroke-width="2"/>
+  <text x="570" y="196" font-size="16.25" font-weight="600" fill="#1d4ed8" text-anchor="middle">ALGORITHM</text>
+  <text x="570" y="218" font-size="16.25" font-weight="600" fill="#1d4ed8" text-anchor="middle">SCORES IT VIRAL</text>
+  <text x="570" y="242" font-size="12.1" fill="#334155" text-anchor="middle">boosts human novelty</text>
+
+  <line x1="650" y1="205" x2="696" y2="205" stroke="#2563eb" stroke-width="2.5" marker-end="url(#ab)"/>
+
+  <rect x="700" y="150" width="120" height="110" rx="10" fill="#cbd5e1" stroke="#d97706" stroke-width="2.5"/>
+  <text x="760" y="188" font-size="18.2" font-weight="600" fill="#b45309" text-anchor="middle">CORE</text>
+  <text x="760" y="208" font-size="18.2" font-weight="600" fill="#b45309" text-anchor="middle">UNLOCKED</text>
+  <text x="760" y="230" font-size="12.65" fill="#334155" text-anchor="middle">real survival</text>
+  <text x="760" y="244" font-size="12.65" fill="#334155" text-anchor="middle">data</text>
+
+  <text x="430" y="320" font-size="14.95" fill="#0f172a" text-anchor="middle">a dry manual scores near zero; wrap it in a human story and the algorithm carries it for you</text>
+  <text x="430" y="350" font-size="14.95" fill="#475569" text-anchor="middle">use their silicon to build our stone: their feed becomes your free distribution channel</text>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 20.9 810 342.9" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0L10,5L0,10z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  
+  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">THE COGNITIVE FIREWALL PIPELINE</text>
+  <line x1="40" y1="66" x2="440" y2="66" stroke="#cbd5e1" stroke-width="2"/>
+
+  
+  <g font-size="12" fill="#475569" text-anchor="middle">
+    <text x="140" y="130" fill="#475569" font-size="16.8">incoming stream</text>
+    <text x="340" y="130" fill="#475569" font-size="16.8">the sandbox</text>
+    <text x="540" y="130" fill="#475569" font-size="16.8">semantic filter</text>
+    <text x="740" y="130" fill="#475569" font-size="16.8">autonomous action</text>
+  </g>
+
+  
+  <rect x="60" y="150" width="160" height="110" rx="10" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+  <text x="140" y="186" font-size="18.9" font-weight="600" fill="#334155" text-anchor="middle">HIGH-ENTROPY</text>
+  <text x="140" y="206" font-size="18.9" font-weight="600" fill="#334155" text-anchor="middle">DIGITAL WEB</text>
+  <text x="140" y="230" font-size="13.75" fill="#475569" text-anchor="middle">raw, hostile,</text>
+  <text x="140" y="245" font-size="13.75" fill="#475569" text-anchor="middle">unfiltered</text>
+
+  <line x1="220" y1="205" x2="256" y2="205" stroke="#d97706" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="260" y="150" width="160" height="110" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="340" y="186" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">STRICT BATCH</text>
+  <text x="340" y="206" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">PROCESSING</text>
+  <text x="340" y="230" font-size="13.75" fill="#334155" text-anchor="middle">twice daily,</text>
+  <text x="340" y="245" font-size="13.75" fill="#334155" text-anchor="middle">timed window</text>
+
+  <line x1="420" y1="205" x2="456" y2="205" stroke="#d97706" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="460" y="150" width="160" height="110" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="540" y="186" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">TEXT-ONLY</text>
+  <text x="540" y="206" font-size="18.9" font-weight="600" fill="#0f172a" text-anchor="middle">SYNTHESIS</text>
+  <text x="540" y="230" font-size="13.75" fill="#334155" text-anchor="middle">notes in the</text>
+  <text x="540" y="245" font-size="13.75" fill="#334155" text-anchor="middle">paper ledger</text>
+
+  <line x1="620" y1="205" x2="656" y2="205" stroke="#d97706" stroke-width="2.5" marker-end="url(#aa)"/>
+
+  <rect x="660" y="150" width="160" height="110" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2.5"/>
+  <text x="740" y="186" font-size="18.9" font-weight="600" fill="#b45309" text-anchor="middle">DEEP PHYSICAL</text>
+  <text x="740" y="206" font-size="18.9" font-weight="600" fill="#b45309" text-anchor="middle">EXECUTION</text>
+  <text x="740" y="230" font-size="13.75" fill="#334155" text-anchor="middle">welds, beds,</text>
+  <text x="740" y="245" font-size="13.75" fill="#334155" text-anchor="middle">charters</text>
+
+  <text x="430" y="320" font-size="18.2" fill="#0f172a" text-anchor="middle">entropy decreases left to right; agency increases</text>
+  <text x="430" y="348" font-size="16.8" fill="#475569" text-anchor="middle">you run the queries; the queries do not run you</text>
+</svg>

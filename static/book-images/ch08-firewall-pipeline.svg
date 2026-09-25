@@ -19,30 +19,34 @@
 
   <!-- boxes -->
   <rect x="60" y="150" width="160" height="110" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
-  <text x="140" y="192" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">HIGH-ENTROPY</text>
-  <text x="140" y="214" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">DIGITAL WEB</text>
-  <text x="140" y="240" font-size="11" fill="#64748b" text-anchor="middle">raw, hostile, unfiltered</text>
+  <text x="140" y="186" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">HIGH-ENTROPY</text>
+  <text x="140" y="206" font-size="14" font-weight="600" fill="#94a3b8" text-anchor="middle">DIGITAL WEB</text>
+  <text x="140" y="230" font-size="11" fill="#64748b" text-anchor="middle">raw, hostile,</text>
+  <text x="140" y="245" font-size="11" fill="#64748b" text-anchor="middle">unfiltered</text>
 
   <line x1="220" y1="205" x2="256" y2="205" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
 
   <rect x="260" y="150" width="160" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-  <text x="340" y="192" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">STRICT BATCH</text>
-  <text x="340" y="214" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">PROCESSING</text>
-  <text x="340" y="240" font-size="11" fill="#94a3b8" text-anchor="middle">twice daily, timed window</text>
+  <text x="340" y="186" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">STRICT BATCH</text>
+  <text x="340" y="206" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">PROCESSING</text>
+  <text x="340" y="230" font-size="11" fill="#94a3b8" text-anchor="middle">twice daily,</text>
+  <text x="340" y="245" font-size="11" fill="#94a3b8" text-anchor="middle">timed window</text>
 
   <line x1="420" y1="205" x2="456" y2="205" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
 
   <rect x="460" y="150" width="160" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-  <text x="540" y="192" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">TEXT-ONLY</text>
-  <text x="540" y="214" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">SYNTHESIS</text>
-  <text x="540" y="240" font-size="11" fill="#94a3b8" text-anchor="middle">notes in the paper ledger</text>
+  <text x="540" y="186" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">TEXT-ONLY</text>
+  <text x="540" y="206" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">SYNTHESIS</text>
+  <text x="540" y="230" font-size="11" fill="#94a3b8" text-anchor="middle">notes in the</text>
+  <text x="540" y="245" font-size="11" fill="#94a3b8" text-anchor="middle">paper ledger</text>
 
   <line x1="620" y1="205" x2="656" y2="205" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)"/>
 
   <rect x="660" y="150" width="160" height="110" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
-  <text x="740" y="192" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">DEEP PHYSICAL</text>
-  <text x="740" y="214" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">EXECUTION</text>
-  <text x="740" y="240" font-size="11" fill="#94a3b8" text-anchor="middle">welds, beds, charters</text>
+  <text x="740" y="186" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">DEEP PHYSICAL</text>
+  <text x="740" y="206" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">EXECUTION</text>
+  <text x="740" y="230" font-size="11" fill="#94a3b8" text-anchor="middle">welds, beds,</text>
+  <text x="740" y="245" font-size="11" fill="#94a3b8" text-anchor="middle">charters</text>
 
   <text x="430" y="320" font-size="13" fill="#f1f5f9" text-anchor="middle">entropy decreases left to right; agency increases</text>
   <text x="430" y="348" font-size="12" fill="#64748b" text-anchor="middle">you run the queries; the queries do not run you</text>

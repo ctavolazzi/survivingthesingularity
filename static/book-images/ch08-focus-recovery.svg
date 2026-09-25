@@ -48,9 +48,9 @@
   <text x="470" y="94" font-size="12" fill="#94a3b8" text-anchor="middle">algorithmic interrupts (3+ per hour)</text>
 
   <!-- ~20 min annotation -->
-  <line x1="140" y1="196" x2="232" y2="172" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#aai)"/>
-  <text x="138" y="216" font-size="12" fill="#f59e0b">settling in:</text>
-  <text x="138" y="234" font-size="12" fill="#f59e0b">~20 minutes</text>
+  <line x1="252" y1="206" x2="240" y2="166" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#aai)"/>
+  <text x="230" y="224" font-size="12" fill="#f59e0b">settling in:</text>
+  <text x="230" y="242" font-size="12" fill="#f59e0b">~20 minutes</text>
 
   <!-- never returns annotation -->
   <line x1="712" y1="252" x2="688" y2="300" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ax)"/>

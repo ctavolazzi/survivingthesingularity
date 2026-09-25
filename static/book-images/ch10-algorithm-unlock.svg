@@ -38,9 +38,10 @@
   <line x1="650" y1="205" x2="696" y2="205" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ab)"/>
 
   <rect x="700" y="150" width="120" height="110" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
-  <text x="760" y="196" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">CORE</text>
-  <text x="760" y="218" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">UNLOCKED</text>
-  <text x="760" y="242" font-size="11" fill="#94a3b8" text-anchor="middle">real survival data</text>
+  <text x="760" y="188" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">CORE</text>
+  <text x="760" y="208" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">UNLOCKED</text>
+  <text x="760" y="230" font-size="11" fill="#94a3b8" text-anchor="middle">real survival</text>
+  <text x="760" y="244" font-size="11" fill="#94a3b8" text-anchor="middle">data</text>
 
   <text x="430" y="320" font-size="13" fill="#f1f5f9" text-anchor="middle">a dry manual scores near zero; wrap it in a human story and the algorithm carries it for you</text>
   <text x="430" y="350" font-size="12" fill="#64748b" text-anchor="middle">use their silicon to build our stone: their feed becomes your free distribution channel</text>

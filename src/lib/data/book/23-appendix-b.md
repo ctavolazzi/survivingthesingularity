@@ -158,5 +158,20 @@
 204. Music Performance Trust Fund - the 1948 origin, the continuing royalty from the signatory labels, and the admission-free performances it still funds - MPTF, https://musicpf.org/about/
 205. Jack Valenti, testimony on home recording of copyrighted works ("the VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone") - Hearings before the Subcommittee on Courts, Civil Liberties and the Administration of Justice, House Committee on the Judiciary, 1982 - transcript, https://cryptome.org/hrcw-hear.htm
 206. Home Taping Is Killing Music - the BPI campaign launched October 28, 1981, and the blank-tape levy that Britain never enacted - Wikipedia, https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music
+207. John Maynard Keynes, *The General Theory of Employment, Interest and Money* (1936), Chapter 4, "The Choice of Units" - the wage-unit and the labour-unit - Marxists Internet Archive, https://www.marxists.org/reference/subject/economics/keynes/general-theory/ch04.htm
+208. U.S. Bureau of Labor Statistics, Productivity program - unit labor costs defined as compensation per unit of output - BLS, https://www.bls.gov/productivity/
+209. Textile manufacture during the British Industrial Revolution - operative hours to process 100 lb of cotton, from hand spinning (about 50,000) through the self-acting mule (about 135), after Catling - Wikipedia, https://en.wikipedia.org/wiki/Textile_manufacture_during_the_British_Industrial_Revolution
+210. Growing a Nation: The Story of American Agriculture, Farm Machinery and Technology timeline - labor-hours to produce 100 bushels of wheat, 1830 (250 to 300), 1890 (40 to 50), 1987 (3) - National Agriculture in the Classroom / USDA, https://www.agclassroom.org/gan/timeline/farm_tech.htm
+211. William Stanley Jevons, *The Coal Question* (1865), and the rebound effect that bears his name - Wikipedia, https://en.wikipedia.org/wiki/Jevons_paradox
+212. U.S. Bureau of Labor Statistics, *100 Years of U.S. Consumer Spending* (2006) - apparel's share of household spending in 1901 - BLS, https://www.bls.gov/opub/100-years-of-u-s-consumer-spending.pdf
+213. McKinsey & Company, "Style that's sustainable: A new fast-fashion formula" (2016) - clothing production doubling from 2000 to 2014 - McKinsey, https://www.mckinsey.com/capabilities/sustainability/our-insights/style-thats-sustainable-a-new-fast-fashion-formula
+214. Textile Exchange, *Materials Market Report* - annual global fiber production - Textile Exchange, https://textileexchange.org/knowledge-center/reports/
+215. 2013 Rana Plaza garment factory collapse - Wikipedia, https://en.wikipedia.org/wiki/2013_Rana_Plaza_garment_factory_collapse
+216. Fall of Tenochtitlan (1521) and the Tlaxcalan alliance - Wikipedia, https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan
+217. Population history of the Indigenous peoples of the Americas - the collapse of central Mexico's population in the sixteenth century - Wikipedia, https://en.wikipedia.org/wiki/Population_history_of_the_Indigenous_peoples_of_the_Americas
+218. Price revolution - the sixteenth-century European inflation and the inflow of American silver - Wikipedia, https://en.wikipedia.org/wiki/Price_revolution
+219. Encomienda - Wikipedia, https://en.wikipedia.org/wiki/Encomienda
+220. Meiji Restoration - Wikipedia, https://en.wikipedia.org/wiki/Meiji_Restoration
+221. Battle of Adwa (1896) - Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Adwa
 
 ---

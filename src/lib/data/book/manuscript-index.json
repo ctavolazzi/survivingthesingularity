@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
   "book_version": "0.7.4",
-  "generated": "2026-07-31",
+  "generated": "2026-09-26",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2065,
-    "words": 91954
+    "blocks": 2110,
+    "words": 94818
   },
   "sections": [
     {
@@ -1889,8 +1889,8 @@
       "id": "chapter1",
       "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md",
-      "next_ordinal": 96,
-      "words": 5058,
+      "next_ordinal": 108,
+      "words": 5667,
       "tombstones": [],
       "blocks": [
         {
@@ -2856,11 +2856,144 @@
           "preview": "The logical endpoint of this trajectory is a post-scarcity model, a concept thoroughly exp"
         },
         {
-          "id": "sts.chapter1.b0053",
-          "type": "hr",
+          "id": "sts.chapter1.b0096",
+          "type": "heading",
           "lines": [
             182,
             182
+          ],
+          "words": 5,
+          "hash": "601d67a6119f",
+          "preview": "### The Price of a Labor-Hour",
+          "level": 3
+        },
+        {
+          "id": "sts.chapter1.b0097",
+          "type": "paragraph",
+          "lines": [
+            184,
+            184
+          ],
+          "words": 29,
+          "hash": "38c0b98a6d8d",
+          "preview": "\"Marginal cost of zero\" is a phrase that's easy to nod at and hard to feel. So let's give "
+        },
+        {
+          "id": "sts.chapter1.b0098",
+          "type": "paragraph",
+          "lines": [
+            186,
+            186
+          ],
+          "words": 118,
+          "hash": "fbcbdb759520",
+          "preview": "Economists already have the pieces. A **labor-hour** is the standard unit of work: one per"
+        },
+        {
+          "id": "sts.chapter1.b0099",
+          "type": "paragraph",
+          "lines": [
+            188,
+            188
+          ],
+          "words": 23,
+          "hash": "ec1fb3e63c87",
+          "preview": "None of those measures were built for a world where the worker might not be a person. So t"
+        },
+        {
+          "id": "sts.chapter1.b0100",
+          "type": "blockquote",
+          "lines": [
+            190,
+            190
+          ],
+          "words": 28,
+          "hash": "bff09fe3a557",
+          "preview": "> **Cost per Labor-Hour Equivalent (CLHE): the all-in cost of getting one human-hour's wor"
+        },
+        {
+          "id": "sts.chapter1.b0101",
+          "type": "paragraph",
+          "lines": [
+            192,
+            192
+          ],
+          "words": 75,
+          "hash": "eb87da3e42a3",
+          "preview": "For a person, CLHE is the fully loaded wage (pay plus taxes, benefits, and overhead) divid"
+        },
+        {
+          "id": "sts.chapter1.b0102",
+          "type": "paragraph",
+          "lines": [
+            194,
+            194
+          ],
+          "words": 42,
+          "hash": "cb39c8e700af",
+          "preview": "And here's the rule the whole Industrial Revolution ran on: **when a machine's CLHE for a "
+        },
+        {
+          "id": "sts.chapter1.b0103",
+          "type": "paragraph",
+          "lines": [
+            196,
+            196
+          ],
+          "words": 24,
+          "hash": "086caff94925",
+          "preview": "The history is not subtle about this. Look at how many human-hours the same output took be"
+        },
+        {
+          "id": "sts.chapter1.b0104",
+          "type": "table",
+          "lines": [
+            198,
+            203
+          ],
+          "words": 81,
+          "hash": "e7e5d1543920",
+          "preview": "| Task | Before | After | | --- | --- | --- | | Spinning 100 lb of cotton into yarn | abou"
+        },
+        {
+          "id": "sts.chapter1.b0105",
+          "type": "paragraph",
+          "lines": [
+            205,
+            205
+          ],
+          "words": 93,
+          "hash": "f3c7461c0f94",
+          "preview": "Three patterns repeat in every row. The drop isn't twenty percent. It's ninety to ninety-n"
+        },
+        {
+          "id": "sts.chapter1.b0106",
+          "type": "paragraph",
+          "lines": [
+            207,
+            207
+          ],
+          "words": 52,
+          "hash": "6d82f7141568",
+          "preview": "What's different now is the width of the front. Every row in that table is one task. AI an"
+        },
+        {
+          "id": "sts.chapter1.b0107",
+          "type": "paragraph",
+          "lines": [
+            209,
+            209
+          ],
+          "words": 39,
+          "hash": "f992b7ac4e84",
+          "preview": "So don't ask whether a machine can do your job. Ask what your CLHE is, what the machine's "
+        },
+        {
+          "id": "sts.chapter1.b0053",
+          "type": "hr",
+          "lines": [
+            211,
+            211
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -2870,8 +3003,8 @@
           "id": "sts.chapter1.b0054",
           "type": "heading",
           "lines": [
-            184,
-            184
+            213,
+            213
           ],
           "words": 11,
           "hash": "d093e8ad6f1c",
@@ -2882,8 +3015,8 @@
           "id": "sts.chapter1.b0055",
           "type": "paragraph",
           "lines": [
-            186,
-            186
+            215,
+            215
           ],
           "words": 45,
           "hash": "3c72268c82a7",
@@ -2893,8 +3026,8 @@
           "id": "sts.chapter1.b0056",
           "type": "paragraph",
           "lines": [
-            188,
-            188
+            217,
+            217
           ],
           "words": 13,
           "hash": "aa37ed36be1c",
@@ -2904,8 +3037,8 @@
           "id": "sts.chapter1.b0057",
           "type": "paragraph",
           "lines": [
-            190,
-            190
+            219,
+            219
           ],
           "words": 81,
           "hash": "6afbb36430e0",
@@ -2915,8 +3048,8 @@
           "id": "sts.chapter1.b0058",
           "type": "paragraph",
           "lines": [
-            192,
-            192
+            221,
+            221
           ],
           "words": 51,
           "hash": "c35d7572afba",
@@ -2926,8 +3059,8 @@
           "id": "sts.chapter1.b0059",
           "type": "paragraph",
           "lines": [
-            194,
-            194
+            223,
+            223
           ],
           "words": 52,
           "hash": "b6c62da4c719",
@@ -2937,8 +3070,8 @@
           "id": "sts.chapter1.b0060",
           "type": "paragraph",
           "lines": [
-            196,
-            196
+            225,
+            225
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -2948,8 +3081,8 @@
           "id": "sts.chapter1.b0061",
           "type": "list",
           "lines": [
-            198,
-            200
+            227,
+            229
           ],
           "words": 158,
           "hash": "b039512707d1",
@@ -6385,8 +6518,8 @@
       "id": "chapter6",
       "title": "Chapter 6: The Singularity Is a Done Deal",
       "file": "08-chapter6.md",
-      "next_ordinal": 55,
-      "words": 2410,
+      "next_ordinal": 88,
+      "words": 4258,
       "tombstones": [],
       "blocks": [
         {
@@ -6452,18 +6585,18 @@
           "type": "list",
           "lines": [
             13,
-            16
+            17
           ],
-          "words": 82,
-          "hash": "80922dae4aa1",
+          "words": 122,
+          "hash": "23a6913aeb83",
           "preview": "- The event horizon is behind us. The debate you're watching on the news is a rerun; the m"
         },
         {
           "id": "sts.chapter6.b0007",
           "type": "hr",
           "lines": [
-            18,
-            18
+            19,
+            19
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -6473,8 +6606,8 @@
           "id": "sts.chapter6.b0008",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            21,
+            21
           ],
           "words": 20,
           "hash": "5466113053c1",
@@ -6484,8 +6617,8 @@
           "id": "sts.chapter6.b0009",
           "type": "paragraph",
           "lines": [
-            22,
-            22
+            23,
+            23
           ],
           "words": 107,
           "hash": "d85e8d819385",
@@ -6495,8 +6628,8 @@
           "id": "sts.chapter6.b0010",
           "type": "paragraph",
           "lines": [
-            24,
-            24
+            25,
+            25
           ],
           "words": 98,
           "hash": "70fc69131fca",
@@ -6506,8 +6639,8 @@
           "id": "sts.chapter6.b0011",
           "type": "paragraph",
           "lines": [
-            26,
-            26
+            27,
+            27
           ],
           "words": 110,
           "hash": "7b83acb82e4c",
@@ -6517,8 +6650,8 @@
           "id": "sts.chapter6.b0053",
           "type": "figure",
           "lines": [
-            28,
-            28
+            29,
+            29
           ],
           "words": 15,
           "hash": "58da5838457e",
@@ -6530,8 +6663,8 @@
           "id": "sts.chapter6.b0054",
           "type": "caption",
           "lines": [
-            30,
-            30
+            31,
+            31
           ],
           "words": 8,
           "hash": "80b03f174a3f",
@@ -6541,8 +6674,8 @@
           "id": "sts.chapter6.b0012",
           "type": "paragraph",
           "lines": [
-            32,
-            32
+            33,
+            33
           ],
           "words": 19,
           "hash": "4254bdbcf34c",
@@ -6552,8 +6685,8 @@
           "id": "sts.chapter6.b0013",
           "type": "paragraph",
           "lines": [
-            34,
-            34
+            35,
+            35
           ],
           "words": 14,
           "hash": "6d5d6a16f01f",
@@ -6563,8 +6696,8 @@
           "id": "sts.chapter6.b0014",
           "type": "paragraph",
           "lines": [
-            36,
-            36
+            37,
+            37
           ],
           "words": 84,
           "hash": "b362d223320e",
@@ -6574,8 +6707,8 @@
           "id": "sts.chapter6.b0015",
           "type": "paragraph",
           "lines": [
-            38,
-            38
+            39,
+            39
           ],
           "words": 36,
           "hash": "3f62e319a185",
@@ -6585,8 +6718,8 @@
           "id": "sts.chapter6.b0016",
           "type": "paragraph",
           "lines": [
-            40,
-            40
+            41,
+            41
           ],
           "words": 130,
           "hash": "2b6b8a44f1f1",
@@ -6596,8 +6729,8 @@
           "id": "sts.chapter6.b0017",
           "type": "paragraph",
           "lines": [
-            42,
-            42
+            43,
+            43
           ],
           "words": 4,
           "hash": "ee1c0c03f1df",
@@ -6607,8 +6740,8 @@
           "id": "sts.chapter6.b0018",
           "type": "paragraph",
           "lines": [
-            44,
-            44
+            45,
+            45
           ],
           "words": 3,
           "hash": "5647116be7bf",
@@ -6618,8 +6751,8 @@
           "id": "sts.chapter6.b0019",
           "type": "paragraph",
           "lines": [
-            46,
-            46
+            47,
+            47
           ],
           "words": 91,
           "hash": "5ab79196a5c4",
@@ -6629,8 +6762,8 @@
           "id": "sts.chapter6.b0020",
           "type": "paragraph",
           "lines": [
-            48,
-            48
+            49,
+            49
           ],
           "words": 22,
           "hash": "53c844d352d0",
@@ -6640,8 +6773,8 @@
           "id": "sts.chapter6.b0021",
           "type": "paragraph",
           "lines": [
-            50,
-            50
+            51,
+            51
           ],
           "words": 96,
           "hash": "09dae8c31b35",
@@ -6651,8 +6784,8 @@
           "id": "sts.chapter6.b0022",
           "type": "paragraph",
           "lines": [
-            52,
-            52
+            53,
+            53
           ],
           "words": 45,
           "hash": "5941f422d370",
@@ -6662,8 +6795,8 @@
           "id": "sts.chapter6.b0023",
           "type": "paragraph",
           "lines": [
-            54,
-            54
+            55,
+            55
           ],
           "words": 29,
           "hash": "bad745a605b1",
@@ -6673,8 +6806,8 @@
           "id": "sts.chapter6.b0024",
           "type": "paragraph",
           "lines": [
-            56,
-            56
+            57,
+            57
           ],
           "words": 22,
           "hash": "1a58fb713888",
@@ -6684,8 +6817,8 @@
           "id": "sts.chapter6.b0025",
           "type": "paragraph",
           "lines": [
-            58,
-            58
+            59,
+            59
           ],
           "words": 10,
           "hash": "42c85989a554",
@@ -6695,8 +6828,8 @@
           "id": "sts.chapter6.b0026",
           "type": "hr",
           "lines": [
-            60,
-            60
+            61,
+            61
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -6706,8 +6839,8 @@
           "id": "sts.chapter6.b0027",
           "type": "heading",
           "lines": [
-            62,
-            62
+            63,
+            63
           ],
           "words": 2,
           "hash": "8fce937e4da9",
@@ -6718,8 +6851,8 @@
           "id": "sts.chapter6.b0028",
           "type": "heading",
           "lines": [
-            64,
-            64
+            65,
+            65
           ],
           "words": 2,
           "hash": "f34377991c56",
@@ -6730,8 +6863,8 @@
           "id": "sts.chapter6.b0029",
           "type": "paragraph",
           "lines": [
-            66,
-            66
+            67,
+            67
           ],
           "words": 34,
           "hash": "af3d38ce838c",
@@ -6741,8 +6874,8 @@
           "id": "sts.chapter6.b0030",
           "type": "paragraph",
           "lines": [
-            68,
-            68
+            69,
+            69
           ],
           "words": 86,
           "hash": "c8d68bf1e97e",
@@ -6752,8 +6885,8 @@
           "id": "sts.chapter6.b0031",
           "type": "paragraph",
           "lines": [
-            70,
-            70
+            71,
+            71
           ],
           "words": 54,
           "hash": "5c431223fa4b",
@@ -6763,8 +6896,8 @@
           "id": "sts.chapter6.b0032",
           "type": "heading",
           "lines": [
-            72,
-            72
+            73,
+            73
           ],
           "words": 10,
           "hash": "1b35caec4032",
@@ -6775,8 +6908,8 @@
           "id": "sts.chapter6.b0033",
           "type": "paragraph",
           "lines": [
-            74,
-            74
+            75,
+            75
           ],
           "words": 38,
           "hash": "aec32ceda78f",
@@ -6786,8 +6919,8 @@
           "id": "sts.chapter6.b0034",
           "type": "paragraph",
           "lines": [
-            76,
-            76
+            77,
+            77
           ],
           "words": 17,
           "hash": "fd3b9d7713f1",
@@ -6797,8 +6930,8 @@
           "id": "sts.chapter6.b0035",
           "type": "list",
           "lines": [
-            78,
-            79
+            79,
+            80
           ],
           "words": 106,
           "hash": "9868a321c76e",
@@ -6808,8 +6941,8 @@
           "id": "sts.chapter6.b0036",
           "type": "paragraph",
           "lines": [
-            81,
-            81
+            82,
+            82
           ],
           "words": 69,
           "hash": "6d81d9056c14",
@@ -6819,8 +6952,8 @@
           "id": "sts.chapter6.b0037",
           "type": "hr",
           "lines": [
-            83,
-            83
+            84,
+            84
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -6830,8 +6963,8 @@
           "id": "sts.chapter6.b0038",
           "type": "heading",
           "lines": [
-            85,
-            85
+            86,
+            86
           ],
           "words": 4,
           "hash": "20ed7dcc9304",
@@ -6842,19 +6975,385 @@
           "id": "sts.chapter6.b0039",
           "type": "paragraph",
           "lines": [
-            87,
-            87
+            88,
+            88
           ],
           "words": 87,
           "hash": "2831eb4ed3b3",
           "preview": "Chapter 1 laid out the economic paradox in full: an economy built on the scarcity of human"
         },
         {
+          "id": "sts.chapter6.b0055",
+          "type": "heading",
+          "lines": [
+            90,
+            90
+          ],
+          "words": 5,
+          "hash": "22a1297ddbbd",
+          "preview": "## Jevons and the Blue Jeans",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter6.b0056",
+          "type": "paragraph",
+          "lines": [
+            92,
+            92
+          ],
+          "words": 10,
+          "hash": "9fceb5b13ba2",
+          "preview": "Time for a reality check, and it cuts both ways."
+        },
+        {
+          "id": "sts.chapter6.b0057",
+          "type": "paragraph",
+          "lines": [
+            94,
+            94
+          ],
+          "words": 84,
+          "hash": "ddcf630a9f75",
+          "preview": "In 1865 the economist William Stanley Jevons published *The Coal Question*. Britain was wo"
+        },
+        {
+          "id": "sts.chapter6.b0058",
+          "type": "paragraph",
+          "lines": [
+            96,
+            96
+          ],
+          "words": 7,
+          "hash": "ba73729985ef",
+          "preview": "Now look down at what you're wearing."
+        },
+        {
+          "id": "sts.chapter6.b0059",
+          "type": "paragraph",
+          "lines": [
+            98,
+            98
+          ],
+          "words": 85,
+          "hash": "68381c2643b9",
+          "preview": "Fabric is the oldest, cleanest automation story we have, and we take it so completely for "
+        },
+        {
+          "id": "sts.chapter6.b0060",
+          "type": "list",
+          "lines": [
+            100,
+            103
+          ],
+          "words": 163,
+          "hash": "87a73439d65c",
+          "preview": "- **We didn't make the same cloth with fewer people. We made incomparably more cloth.** Wo"
+        },
+        {
+          "id": "sts.chapter6.b0061",
+          "type": "blockquote",
+          "lines": [
+            105,
+            105
+          ],
+          "words": 21,
+          "hash": "7148deade977",
+          "preview": "> **More automation than ever. More T-shirts and blue jeans than ever. And there are still"
+        },
+        {
+          "id": "sts.chapter6.b0062",
+          "type": "paragraph",
+          "lines": [
+            107,
+            107
+          ],
+          "words": 66,
+          "hash": "7c048fb90461",
+          "preview": "That's the hopeful half: automation doesn't end labor, it moves it. When one step gets che"
+        },
+        {
+          "id": "sts.chapter6.b0063",
+          "type": "paragraph",
+          "lines": [
+            109,
+            109
+          ],
+          "words": 9,
+          "hash": "33e50340a563",
+          "preview": "Now the other half, which is just as true:"
+        },
+        {
+          "id": "sts.chapter6.b0064",
+          "type": "list",
+          "lines": [
+            111,
+            113
+          ],
+          "words": 174,
+          "hash": "c38452c1b003",
+          "preview": "- **\"Still requires human labor\" doesn't mean \"still pays.\"** The steps that resisted auto"
+        },
+        {
+          "id": "sts.chapter6.b0065",
+          "type": "paragraph",
+          "lines": [
+            115,
+            115
+          ],
+          "words": 34,
+          "hash": "153f4988fb95",
+          "preview": "\"Humanity adapts\" is a statement about a species over decades. It says nothing about wheth"
+        },
+        {
+          "id": "sts.chapter6.b0066",
+          "type": "heading",
+          "lines": [
+            117,
+            117
+          ],
+          "words": 6,
+          "hash": "8bd4b28c8ef7",
+          "preview": "## The Gold of the New World",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter6.b0067",
+          "type": "paragraph",
+          "lines": [
+            119,
+            119
+          ],
+          "words": 9,
+          "hash": "d79bd05d8f77",
+          "preview": "Fabric is the gentle analogy. Here's the severe one."
+        },
+        {
+          "id": "sts.chapter6.b0068",
+          "type": "paragraph",
+          "lines": [
+            121,
+            121
+          ],
+          "words": 70,
+          "hash": "b75970c69792",
+          "preview": "In 1519 Hernán Cortés landed on the coast of Mexico with a few hundred men. By August 1521"
+        },
+        {
+          "id": "sts.chapter6.b0069",
+          "type": "paragraph",
+          "lines": [
+            123,
+            123
+          ],
+          "words": 64,
+          "hash": "55288e1c3df2",
+          "preview": "Map it onto now. The Spanish are AI and robotics: a force arriving with capabilities the l"
+        },
+        {
+          "id": "sts.chapter6.b0070",
+          "type": "paragraph",
+          "lines": [
+            125,
+            125
+          ],
+          "words": 13,
+          "hash": "760764a34b86",
+          "preview": "Now follow the actual gold, because it tells you exactly where this goes."
+        },
+        {
+          "id": "sts.chapter6.b0071",
+          "type": "paragraph",
+          "lines": [
+            127,
+            127
+          ],
+          "words": 90,
+          "hash": "8310581de436",
+          "preview": "Cortés's men melted the Mexica treasure into bars. Then the Spanish found silver at Zacate"
+        },
+        {
+          "id": "sts.chapter6.b0072",
+          "type": "blockquote",
+          "lines": [
+            129,
+            129
+          ],
+          "words": 23,
+          "hash": "9ab9fb32cd40",
+          "preview": "> **When a new world floods the market with the thing everyone used to fight over, that th"
+        },
+        {
+          "id": "sts.chapter6.b0073",
+          "type": "paragraph",
+          "lines": [
+            131,
+            131
+          ],
+          "words": 66,
+          "hash": "4be4b5137483",
+          "preview": "That's what's about to happen to labor. Human labor has always been scarce: only so many h"
+        },
+        {
+          "id": "sts.chapter6.b0074",
+          "type": "paragraph",
+          "lines": [
+            133,
+            133
+          ],
+          "words": 72,
+          "hash": "c3644a0cd40d",
+          "preview": "The machines will keep gaining ground on every task that pays. And then, the same as every"
+        },
+        {
+          "id": "sts.chapter6.b0075",
+          "type": "paragraph",
+          "lines": [
+            135,
+            135
+          ],
+          "words": 62,
+          "hash": "74fab385b87e",
+          "preview": "One thing about this cycle has never changed: **every time we expand our technology, we al"
+        },
+        {
+          "id": "sts.chapter6.b0076",
+          "type": "paragraph",
+          "lines": [
+            137,
+            137
+          ],
+          "words": 23,
+          "hash": "24ade697ae96",
+          "preview": "Which is the uncomfortable twist. The machines aren't the conquistadors. Machines don't wa"
+        },
+        {
+          "id": "sts.chapter6.b0077",
+          "type": "heading",
+          "lines": [
+            139,
+            139
+          ],
+          "words": 5,
+          "hash": "baebb917f359",
+          "preview": "## Three Paths, and a Fourth",
+          "level": 2
+        },
+        {
+          "id": "sts.chapter6.b0078",
+          "type": "paragraph",
+          "lines": [
+            141,
+            141
+          ],
+          "words": 24,
+          "hash": "da30cc1dd1f9",
+          "preview": "Every people that has met a technologically superior force has gone down some mix of three"
+        },
+        {
+          "id": "sts.chapter6.b0079",
+          "type": "list",
+          "lines": [
+            143,
+            145
+          ],
+          "words": 192,
+          "hash": "acabd69ce149",
+          "preview": "1. **Steamrolled.** The advanced side takes the resources and gives nothing back. The *enc"
+        },
+        {
+          "id": "sts.chapter6.b0080",
+          "type": "paragraph",
+          "lines": [
+            147,
+            147
+          ],
+          "words": 37,
+          "hash": "71dbbacce3e9",
+          "preview": "My honest bet is that we get all three at once. Some people and some places get steamrolle"
+        },
+        {
+          "id": "sts.chapter6.b0081",
+          "type": "paragraph",
+          "lines": [
+            149,
+            149
+          ],
+          "words": 130,
+          "hash": "ae1af2a8c742",
+          "preview": "And there's a fourth path none of the Mexica, the Japanese, or the Ethiopians ever had: **"
+        },
+        {
+          "id": "sts.chapter6.b0082",
+          "type": "paragraph",
+          "lines": [
+            151,
+            151
+          ],
+          "words": 18,
+          "hash": "41f624a0a47e",
+          "preview": "Collapse all of that down and there are two futures ahead, and both have already happened "
+        },
+        {
+          "id": "sts.chapter6.b0083",
+          "type": "list",
+          "lines": [
+            153,
+            154
+          ],
+          "words": 43,
+          "hash": "6768538c863e",
+          "preview": "- **We get outcompeted, and we suffer.** That's Tenochtitlan in 1521, the handloom weavers"
+        },
+        {
+          "id": "sts.chapter6.b0084",
+          "type": "paragraph",
+          "lines": [
+            156,
+            156
+          ],
+          "words": 32,
+          "hash": "2e0b3be361b5",
+          "preview": "Here's the part that doesn't depend on which one we get. Whether cheap, abundant labor arr"
+        },
+        {
+          "id": "sts.chapter6.b0085",
+          "type": "list",
+          "lines": [
+            158,
+            162
+          ],
+          "words": 79,
+          "hash": "1312c95d75ec",
+          "preview": "1. The supply of labor increases exponentially. 2. The CLHE of almost every task collapses"
+        },
+        {
+          "id": "sts.chapter6.b0086",
+          "type": "paragraph",
+          "lines": [
+            164,
+            164
+          ],
+          "words": 66,
+          "hash": "a4435abb150d",
+          "preview": "We don't know what those scarcities will be. We can be confident some of what drives them "
+        },
+        {
+          "id": "sts.chapter6.b0087",
+          "type": "blockquote",
+          "lines": [
+            166,
+            166
+          ],
+          "words": 26,
+          "hash": "39335c080799",
+          "preview": "> **Don't compete with the machine on price per hour. You'll lose that race the way the sp"
+        },
+        {
           "id": "sts.chapter6.b0040",
           "type": "heading",
           "lines": [
-            89,
-            89
+            168,
+            168
           ],
           "words": 4,
           "hash": "3d3dc2ed3226",
@@ -6865,8 +7364,8 @@
           "id": "sts.chapter6.b0041",
           "type": "paragraph",
           "lines": [
-            91,
-            91
+            170,
+            170
           ],
           "words": 39,
           "hash": "f0a282ce4ff3",
@@ -6876,8 +7375,8 @@
           "id": "sts.chapter6.b0042",
           "type": "paragraph",
           "lines": [
-            93,
-            93
+            172,
+            172
           ],
           "words": 66,
           "hash": "5533d9658dbd",
@@ -6887,8 +7386,8 @@
           "id": "sts.chapter6.b0043",
           "type": "paragraph",
           "lines": [
-            95,
-            95
+            174,
+            174
           ],
           "words": 143,
           "hash": "bee3984f0bbf",
@@ -6898,8 +7397,8 @@
           "id": "sts.chapter6.b0044",
           "type": "hr",
           "lines": [
-            97,
-            97
+            176,
+            176
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -6909,8 +7408,8 @@
           "id": "sts.chapter6.b0045",
           "type": "heading",
           "lines": [
-            99,
-            99
+            178,
+            178
           ],
           "words": 10,
           "hash": "2cbf9e6d0311",
@@ -6921,8 +7420,8 @@
           "id": "sts.chapter6.b0046",
           "type": "paragraph",
           "lines": [
-            101,
-            101
+            180,
+            180
           ],
           "words": 6,
           "hash": "ea66542438d9",
@@ -6932,8 +7431,8 @@
           "id": "sts.chapter6.b0047",
           "type": "paragraph",
           "lines": [
-            103,
-            103
+            182,
+            182
           ],
           "words": 86,
           "hash": "77eb3d392f84",
@@ -6943,8 +7442,8 @@
           "id": "sts.chapter6.b0048",
           "type": "paragraph",
           "lines": [
-            105,
-            105
+            184,
+            184
           ],
           "words": 82,
           "hash": "d81a1398daac",
@@ -6954,8 +7453,8 @@
           "id": "sts.chapter6.b0049",
           "type": "paragraph",
           "lines": [
-            107,
-            107
+            186,
+            186
           ],
           "words": 53,
           "hash": "7bd811cfc82d",
@@ -6965,8 +7464,8 @@
           "id": "sts.chapter6.b0050",
           "type": "paragraph",
           "lines": [
-            109,
-            109
+            188,
+            188
           ],
           "words": 60,
           "hash": "b43c4620dcdf",
@@ -6976,8 +7475,8 @@
           "id": "sts.chapter6.b0051",
           "type": "paragraph",
           "lines": [
-            111,
-            111
+            190,
+            190
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -6987,8 +7486,8 @@
           "id": "sts.chapter6.b0052",
           "type": "list",
           "lines": [
-            113,
-            115
+            192,
+            194
           ],
           "words": 209,
           "hash": "c4ee8d8e1803",
@@ -22377,7 +22876,7 @@
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
       "next_ordinal": 28,
-      "words": 5499,
+      "words": 5849,
       "tombstones": [],
       "blocks": [
         {
@@ -22671,18 +23170,18 @@
           "type": "list",
           "lines": [
             151,
-            160
+            175
           ],
-          "words": 407,
-          "hash": "cb5ecca61d78",
+          "words": 757,
+          "hash": "7875ef4df5ff",
           "preview": "197. American Federation of Musicians, \"Taking Liberties With Folks' Habits\" (advertisemen"
         },
         {
           "id": "sts.appendix-b.b0011",
           "type": "hr",
           "lines": [
-            162,
-            162
+            177,
+            177
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -22695,7 +23194,7 @@
       "title": "Appendix C: Executive Reference Guide",
       "file": "24-appendix-c.md",
       "next_ordinal": 18,
-      "words": 702,
+      "words": 759,
       "tombstones": [],
       "blocks": [
         {
@@ -22749,18 +23248,18 @@
           "type": "list",
           "lines": [
             9,
-            10
+            11
           ],
-          "words": 73,
-          "hash": "33464361ebc0",
+          "words": 130,
+          "hash": "987e0aa998db",
           "preview": "- **The one-sentence definition this book uses.** The Singularity is the point where intel"
         },
         {
           "id": "sts.appendix-c.b0014",
           "type": "paragraph",
           "lines": [
-            12,
-            12
+            13,
+            13
           ],
           "words": 31,
           "hash": "81b81c2719cd",
@@ -22770,8 +23269,8 @@
           "id": "sts.appendix-c.b0015",
           "type": "list",
           "lines": [
-            14,
-            16
+            15,
+            17
           ],
           "words": 97,
           "hash": "6892e7173b42",
@@ -22781,8 +23280,8 @@
           "id": "sts.appendix-c.b0016",
           "type": "paragraph",
           "lines": [
-            18,
-            18
+            19,
+            19
           ],
           "words": 61,
           "hash": "06250d2b46bb",
@@ -22792,8 +23291,8 @@
           "id": "sts.appendix-c.b0017",
           "type": "paragraph",
           "lines": [
-            20,
-            20
+            21,
+            21
           ],
           "words": 48,
           "hash": "0f658cef463d",
@@ -22803,8 +23302,8 @@
           "id": "sts.appendix-c.b0003",
           "type": "heading",
           "lines": [
-            22,
-            22
+            23,
+            23
           ],
           "words": 9,
           "hash": "4bbcd91eab0f",
@@ -22815,8 +23314,8 @@
           "id": "sts.appendix-c.b0004",
           "type": "list",
           "lines": [
-            24,
-            28
+            25,
+            29
           ],
           "words": 136,
           "hash": "87fed857fea6",
@@ -22826,8 +23325,8 @@
           "id": "sts.appendix-c.b0005",
           "type": "heading",
           "lines": [
-            30,
-            30
+            31,
+            31
           ],
           "words": 9,
           "hash": "9482228b1773",
@@ -22838,8 +23337,8 @@
           "id": "sts.appendix-c.b0006",
           "type": "list",
           "lines": [
-            32,
-            33
+            33,
+            34
           ],
           "words": 61,
           "hash": "b60c802ac867",
@@ -22849,8 +23348,8 @@
           "id": "sts.appendix-c.b0007",
           "type": "heading",
           "lines": [
-            35,
-            35
+            36,
+            36
           ],
           "words": 10,
           "hash": "ea6ddbd47614",
@@ -22861,8 +23360,8 @@
           "id": "sts.appendix-c.b0008",
           "type": "list",
           "lines": [
-            37,
-            38
+            38,
+            39
           ],
           "words": 62,
           "hash": "3b952a246273",
@@ -22872,8 +23371,8 @@
           "id": "sts.appendix-c.b0009",
           "type": "heading",
           "lines": [
-            40,
-            40
+            41,
+            41
           ],
           "words": 5,
           "hash": "977fc1deca5e",
@@ -22884,8 +23383,8 @@
           "id": "sts.appendix-c.b0010",
           "type": "list",
           "lines": [
-            42,
-            42
+            43,
+            43
           ],
           "words": 32,
           "hash": "8aef0c8685a1",

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ask the Book</title>
+<!-- Served by `python3 scripts/sts.py ask --serve` on 127.0.0.1 only. Colors from src/lib/styles/theme.css. -->
+<style>
+:root{--bg:#020617;--surface:rgba(30,41,59,.5);--line:#1e293b;--line2:#334155;--text:#f1f5f9;--text2:#94a3b8;--amber:#f59e0b;--blue:#3b82f6;
+  --sans:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;padding:0 16px;background:var(--bg);color:var(--text);font:15px/1.55 var(--sans)}
+.wrap{max-width:920px;margin:0 auto;padding-block:24px 60px;display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
+h1{margin:0;font-size:26px}
+.eyebrow{font:500 11.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--amber)}
+.muted{color:var(--text2);font-size:13.5px}
+.bar{display:grid;grid-template-columns:1fr auto;gap:8px}
+input,select,button{font:inherit;color:inherit}
+input[type=search],select{background:var(--surface);border:1px solid var(--line2);border-radius:8px;padding:10px 12px;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{background:var(--surface);border:1px solid var(--line2);border-radius:8px;padding:8px 12px;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--amber);border-color:var(--amber);color:var(--bg)}
+.btn.small{padding:3px 8px;font:500 12px var(--mono)}
+.btn:disabled{opacity:.5;cursor:default}
+.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.hits{display:grid;gap:8px}
+.hit{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:5px}
+.hit.cited{border-color:var(--amber)}
+.hit .head{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.id{font:500 12.5px var(--mono);color:var(--amber)}
+.loc{font:12px var(--mono);color:var(--text2)}
+.tx{font-size:14.5px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.tx mark{background:rgba(245,158,11,.25);color:#fde68a;border-radius:2px}
+.answer{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.35);border-radius:10px;padding:12px;line-height:1.6;display:grid;gap:8px}
+.cite{font:500 11.5px var(--mono);color:var(--amber);background:rgba(245,158,11,.12);border:0;border-radius:4px;padding:1px 5px;cursor:pointer}
+.status{font:12.5px var(--mono);color:var(--text2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Surviving the Singularity · local editing tool</div>
+  <h1>Ask the Book</h1>
+  <p class="muted" id="meta">Loading the manuscript…</p>
+  <div class="bar">
+    <input type="search" id="q" placeholder="Search the manuscript: land, soil, cyberdeck…" aria-label="Search the manuscript" autofocus>
+    <select id="section" aria-label="Section"><option value="">All sections</option></select>
+  </div>
+  <div class="row">
+    <button class="btn primary" id="ask" type="button">Answer with receipts</button>
+    <span class="status" id="status"></span>
+  </div>
+  <div id="answer"></div>
+  <div class="hits" id="hits"></div>
+</div>
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const STOP = new Set("the a an and or of to in on for is are was were be been it its this that with as at by from not but they them their you your we our i he she his her can will would could should do does did has have had so if than then there these those what which who when where why how all any more most some such into over out up about also just like very".split(" "));
+const terms = (q) => [...new Set((q.toLowerCase().match(/[a-z0-9]+/g) || []).filter((w) => w.length > 2 && !STOP.has(w)))];
+let hits = [];
+
+fetch("/api/meta").then((r) => r.json()).then((m) => {
+  $("#meta").textContent = `${m.blocks.toLocaleString()} blocks, ${m.words.toLocaleString()} words, version ${m.version}. Reads the live .md files; edits show up on the next search.`;
+  $("#section").innerHTML += m.sections.map((s) => `<option value="${esc(s.id)}">${esc(s.title)}</option>`).join("");
+});
+
+function highlight(text, q) {
+  let h = esc(text);
+  terms(q).forEach((w) => { h = h.replace(new RegExp(`\\b(${w}\\w*)`, "gi"), "<mark>$1</mark>"); });
+  return h;
+}
+async function search() {
+  const q = $("#q").value, section = $("#section").value;
+  $("#answer").innerHTML = "";
+  if (!q.trim()) { $("#hits").innerHTML = ""; return; }
+  const r = await fetch(`/api/search?q=${encodeURIComponent(q)}&section=${encodeURIComponent(section)}&n=12`).then((r) => r.json());
+  hits = r.hits;
+  $("#hits").innerHTML = hits.length ? hits.map((h) => `
+    <article class="hit" id="h-${esc(h.id)}">
+      <div class="head"><span class="id">${esc(h.id)}</span><span class="loc">${esc(h.file)}:${h.lines[0]}-${h.lines[1]} · ${esc(h.title)}</span></div>
+      <div class="tx">${highlight(h.text.length > 900 ? h.text.slice(0, 900) + "…" : h.text, q)}</div>
+      <div class="row"><button class="btn small" data-copy="${esc(h.id)}" type="button">Copy id</button><button class="btn small" data-copy="python3 scripts/sts.py id get ${esc(h.id)}" type="button">Copy id get</button></div>
+    </article>`).join("") : '<p class="muted">No blocks match.</p>';
+}
+let t; $("#q").addEventListener("input", () => { clearTimeout(t); t = setTimeout(search, 150); });
+$("#section").addEventListener("change", search);
+document.addEventListener("click", async (e) => {
+  const c = e.target.closest("[data-copy]");
+  if (c) { try { await navigator.clipboard.writeText(c.dataset.copy); c.textContent = "Copied"; } catch { c.textContent = "Copy failed"; } setTimeout(() => (c.textContent = c.dataset.copy.startsWith("python3") ? "Copy id get" : "Copy id"), 1200); return; }
+  const cite = e.target.closest(".cite[data-id]");
+  if (cite) document.getElementById("h-" + cite.dataset.id)?.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+$("#ask").addEventListener("click", async () => {
+  const q = $("#q").value;
+  if (!q.trim()) { $("#status").textContent = "Type a question first."; return; }
+  $("#ask").disabled = true; $("#status").textContent = "Asking Claude (10 to 40 seconds)…";
+  try {
+    const r = await fetch("/api/answer", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ q, section: $("#section").value }) }).then((r) => r.json());
+    if (r.error) { $("#status").textContent = r.error; return; }
+    const known = new Set(hits.map((h) => h.id));
+    const body = esc(r.text).replace(/\[(sts\.[\w.-]+)\]/g, (m, id) => `<button class="cite" data-id="${id}" type="button">${id}</button>`);
+    document.querySelectorAll(".hit").forEach((h) => h.classList.toggle("cited", r.cited.includes(h.id.slice(2))));
+    $("#answer").innerHTML = `<div class="answer"><div>${body}</div><div class="status">${esc(r.model)} · cited ${r.cited.length} of the retrieved blocks${r.unknown.length ? " · unknown ids: " + esc(r.unknown.join(", ")) : ""}</div></div>`;
+    $("#status").textContent = "";
+  } catch { $("#status").textContent = "The local server didn't answer. Is sts.py ask --serve still running?"; }
+  finally { $("#ask").disabled = false; }
+});
+</script>
+</body>
+</html>

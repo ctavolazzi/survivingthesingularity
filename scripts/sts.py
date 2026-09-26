@@ -35,6 +35,10 @@ Commands:
     scan      Scannability audit: pull-quote candidates, wall-of-text
               paragraphs, heading/emphasis deserts, list opportunities,
               per-chapter texture scores
+    ask       Search the manuscript (BM25 over every block of the live source).
+              Each hit is a block id ready for `id get` / `id replace`.
+              --answer has Claude answer from the hits with id citations;
+              --serve opens a local search page on 127.0.0.1.
     id        Manuscript addressing: a stable unique id for every block
               (build|list|get|replace|verify|stress). Non-invasive sidecar
               index (src/lib/data/book/manuscript-index.json); the .md source
@@ -67,10 +71,12 @@ import hashlib
 import hmac
 import html as html_mod
 import json
+import math
 import os
 import re
 import shutil
 import tempfile
+import textwrap
 import subprocess
 import sys
 import time
@@ -3148,6 +3154,243 @@ def _refs_stress(args):
     return 1 if failed else 0
 
 
+# ── ask: search the manuscript by meaning of its words, return block ids ────
+#
+# BM25 over every block of the live source, addressed by the same stable ids
+# `sts.py id` mints. Built for editing: every hit is a ready-made argument to
+# `sts.py id get` / `sts.py id replace`. Reads live .md through _live_index(),
+# so line spans are never stale.
+#
+# --answer is the only part that leaves the machine, and the only part that is
+# not stdlib: it imports the `anthropic` SDK lazily and asks Claude to answer
+# from the retrieved blocks alone, citing their ids. Search never needs it.
+
+_ASK_STOP = set((
+    "the a an and or of to in on for is are was were be been it its this that "
+    "with as at by from not but they them their you your we our i he she his her "
+    "can will would could should do does did has have had so if than then there "
+    "these those what which who when where why how all any more most some such "
+    "into over out up about also just like very").split())
+_ASK_TOKEN_RE = re.compile(r"[a-z0-9]+")
+ASK_MODEL = "claude-opus-5"
+
+
+def _ask_tokens(text):
+    return [w for w in _ASK_TOKEN_RE.findall(text.lower())
+            if len(w) > 2 and w not in _ASK_STOP]
+
+
+def _ask_corpus():
+    """Every block of the live source with its text, section and line span."""
+    index = _live_index()
+    docs = []
+    for sec in index["sections"]:
+        lines = (BOOK_DIR / sec["file"]).read_text(encoding="utf-8").split("\n")
+        for blk in sec["blocks"]:
+            a, b = blk["lines"]
+            text = "\n".join(lines[a - 1:b]).strip()
+            if not text:
+                continue
+            docs.append({"id": blk["id"], "type": blk["type"], "section": sec["id"],
+                         "title": sec["title"], "file": sec["file"],
+                         "lines": blk["lines"], "text": text})
+    return index, docs
+
+
+class _AskIndex:
+    """BM25 (k1=1.2, b=0.75) over manuscript blocks."""
+
+    def __init__(self, docs):
+        self.docs = docs
+        self.tf, self.len, self.df = [], [], {}
+        for d in docs:
+            counts = {}
+            for w in _ask_tokens(d["text"]):
+                counts[w] = counts.get(w, 0) + 1
+            self.tf.append(counts)
+            self.len.append(sum(counts.values()))
+            for w in counts:
+                self.df[w] = self.df.get(w, 0) + 1
+        self.n = len(docs)
+        self.avgdl = (sum(self.len) / self.n) if self.n else 1.0
+
+    def search(self, query, k=8, section=None, types=None):
+        terms = list(dict.fromkeys(_ask_tokens(query)))
+        if not terms:
+            return []
+        scored = []
+        for i, counts in enumerate(self.tf):
+            d = self.docs[i]
+            if section and d["section"] != section:
+                continue
+            if types and d["type"] not in types:
+                continue
+            s = 0.0
+            for w in terms:
+                f = counts.get(w)
+                if not f:
+                    continue
+                idf = math.log(1 + (self.n - self.df[w] + 0.5) / (self.df[w] + 0.5))
+                s += idf * f * 2.2 / (f + 1.2 * (0.25 + 0.75 * self.len[i] / self.avgdl))
+            if s > 0:
+                scored.append((s, i))
+        scored.sort(key=lambda x: -x[0])
+        return [{**self.docs[i], "score": round(s, 3)} for s, i in scored[:k]]
+
+
+def _ask_answer(question, hits):
+    """Ask Claude to answer from `hits` only, citing block ids. Returns a dict."""
+    try:
+        import anthropic
+    except ImportError:
+        return {"error": "--answer needs the Anthropic SDK: pip install anthropic"}
+    passages = "\n\n".join(f"[{h['id']}] ({h['title']})\n{h['text'][:1500]}" for h in hits)
+    prompt = (
+        "Answer the question using ONLY the book passages below. After every "
+        "sentence, cite the passage id in square brackets exactly as given, like "
+        "[sts.chapter12.b0031]. If the passages don't answer it, say so in one "
+        "sentence. Four to six sentences, plain language, no em dashes.\n\n"
+        f"QUESTION: {question}\n\nPASSAGES:\n{passages}")
+    client = anthropic.Anthropic()
+    try:
+        # fallbacks="default" re-runs a policy-declined request on Anthropic's
+        # recommended model inside the same call instead of returning a refusal.
+        resp = client.beta.messages.create(
+            model=ASK_MODEL, max_tokens=16000,
+            betas=["server-side-fallback-2026-07-01"], fallbacks="default",
+            messages=[{"role": "user", "content": prompt}])
+    except anthropic.AuthenticationError:
+        return {"error": "No Anthropic credentials. Set ANTHROPIC_API_KEY or run `ant auth login`."}
+    except anthropic.RateLimitError:
+        return {"error": "Rate limited by the API. Try again in a minute."}
+    except anthropic.APIStatusError as e:
+        return {"error": f"API error {e.status_code}: {e.message}"}
+    except anthropic.APIConnectionError:
+        return {"error": "Couldn't reach the Anthropic API."}
+    except TypeError as e:
+        # The SDK raises TypeError, not AuthenticationError, when it finds no
+        # credentials at all (no key, no token, no `ant auth login` profile).
+        if "authentication" not in str(e):
+            raise
+        return {"error": "No Anthropic credentials. Set ANTHROPIC_API_KEY or run `ant auth login`."}
+    if resp.stop_reason == "refusal":
+        return {"error": "Claude declined to answer this one."}
+    text = "".join(b.text for b in resp.content if b.type == "text").strip()
+    known = {h["id"] for h in hits}
+    cited = list(dict.fromkeys(re.findall(r"\[(sts\.[\w.-]+)\]", text)))
+    return {"text": text, "model": resp.model,
+            "cited": [c for c in cited if c in known],
+            "unknown": [c for c in cited if c not in known]}
+
+
+def _ask_serve(port):
+    """Local-only search page. Binds 127.0.0.1; the manuscript never leaves the machine
+    except for the passages sent to Claude when you press Answer."""
+    import http.server
+    import urllib.parse
+
+    page = (ROOT / "scripts" / "ask_book.html").read_bytes()
+    state = {"sig": None, "ix": None, "index": None}
+
+    def current():
+        # Rebuild only when a book file changed, so edits show up on the next search.
+        sig = tuple(sorted((p.name, p.stat().st_mtime_ns) for p in BOOK_DIR.glob("*.md")))
+        if sig != state["sig"]:
+            index, docs = _ask_corpus()
+            state.update(sig=sig, ix=_AskIndex(docs), index=index)
+        return state["ix"], state["index"]
+
+    class Handler(http.server.BaseHTTPRequestHandler):
+        def _send(self, code, body, ctype="application/json"):
+            data = body if isinstance(body, bytes) else json.dumps(body, ensure_ascii=False).encode()
+            self.send_response(code)
+            self.send_header("Content-Type", ctype + "; charset=utf-8")
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(data)
+
+        def log_message(self, *a):
+            pass
+
+        def do_GET(self):
+            url = urllib.parse.urlparse(self.path)
+            q = urllib.parse.parse_qs(url.query)
+            if url.path == "/":
+                return self._send(200, page, "text/html")
+            ix, index = current()
+            if url.path == "/api/meta":
+                t = index["totals"]
+                return self._send(200, {"version": index.get("book_version"), "blocks": t["blocks"],
+                                        "words": t["words"],
+                                        "sections": [{"id": s["id"], "title": s["title"]} for s in index["sections"]]})
+            if url.path == "/api/search":
+                hits = ix.search(q.get("q", [""])[0], k=int(q.get("n", ["12"])[0]),
+                                 section=q.get("section", [None])[0] or None)
+                return self._send(200, {"hits": hits})
+            return self._send(404, {"error": "not found"})
+
+        def do_POST(self):
+            if urllib.parse.urlparse(self.path).path != "/api/answer":
+                return self._send(404, {"error": "not found"})
+            body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
+            ix, _ = current()
+            hits = ix.search(body.get("q", ""), k=8, section=body.get("section") or None)
+            if not hits:
+                return self._send(200, {"error": "No blocks match. Search first."})
+            try:
+                return self._send(200, _ask_answer(body.get("q", ""), hits))
+            except Exception as e:  # never drop the connection; show the reason on the page
+                return self._send(200, {"error": f"{type(e).__name__}: {e}"})
+
+    srv = http.server.ThreadingHTTPServer(("127.0.0.1", port), Handler)
+    print(f"ask the book: http://127.0.0.1:{port}  (Ctrl+C to stop)")
+    try:
+        srv.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    return 0
+
+
+def cmd_ask(args):
+    if args.serve:
+        return _ask_serve(args.port)
+    query = " ".join(args.query or [])
+    if not query.strip():
+        sys.exit("sts.py ask: give a query, or use --serve for the search page")
+    types = set(args.type.split(",")) if args.type else None
+    index, docs = _ask_corpus()
+    hits = _AskIndex(docs).search(query, k=args.n, section=args.section, types=types)
+    answer = _ask_answer(query, hits) if (args.answer and hits) else None
+    if args.json:
+        print(json.dumps({"query": query, "hits": hits, "answer": answer},
+                         indent=2, ensure_ascii=False))
+        return 0
+    t = index["totals"]
+    print(f"ask: \"{query}\"  ·  {len(hits)} of {t['blocks']} blocks\n")
+    if not hits:
+        print("  no blocks match")
+        return 1
+    for h in hits:
+        a, z = h["lines"]
+        print(f"  {h['id']:<26} {h['score']:>6.2f}  {h['file']}:{a}-{z}  {h['title']}")
+        body = h["text"] if args.full else _norm_text(h["text"])[:160]
+        for line in textwrap.wrap(body, 88) if not args.full else body.split("\n"):
+            print(f"      {line}")
+        print()
+    if answer:
+        if answer.get("error"):
+            print(f"  answer: {answer['error']}")
+        else:
+            print("  answer (" + answer["model"] + "):\n")
+            for line in textwrap.wrap(answer["text"], 88):
+                print(f"    {line}")
+            print(f"\n    cited {len(answer['cited'])} of {len(hits)} retrieved blocks"
+                  + (f"; unknown ids: {', '.join(answer['unknown'])}" if answer["unknown"] else ""))
+    print(f"\n  edit one:  sts.py id get {hits[0]['id']}   ·   "
+          f"sts.py id replace {hits[0]['id']} --file new.md")
+    return 0
+
+
 def cmd_refs(args):
     return {"list": _refs_list, "render": _refs_render,
             "stress": _refs_stress}[args.action](args)
@@ -4962,6 +5205,20 @@ def main():
     p.add_argument("--save", action="store_true",
                    help="append results to manuscript/sources/research-log.md")
     p.set_defaults(fn=cmd_research)
+
+    p = sub.add_parser("ask",
+                       help="search the manuscript; every hit is a block id for `id get/replace`")
+    p.add_argument("query", nargs="*", help="what to look for")
+    p.add_argument("-n", type=int, default=8, help="results (default 8)")
+    p.add_argument("--section", help="restrict to one section id (e.g. chapter12)")
+    p.add_argument("--type", help="restrict to block types, comma-separated (paragraph,heading,...)")
+    p.add_argument("--full", action="store_true", help="print each block's full source")
+    p.add_argument("--answer", action="store_true",
+                   help="ask Claude to answer from the hits, citing block ids (needs `anthropic`)")
+    p.add_argument("--serve", action="store_true", help="local search page on 127.0.0.1")
+    p.add_argument("--port", type=int, default=8765)
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_ask)
 
     p = sub.add_parser("id",
                        help="manuscript addressing: a stable unique id for every block")

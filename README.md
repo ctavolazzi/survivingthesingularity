@@ -5,6 +5,8 @@
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
 **Status:** Open draft. Book ships when it ships. Site updates as the world does.
 
+**Picking this up?** Read [`HANDOFF.md`](HANDOFF.md) first: recent work, open PRs, and outstanding tasks.
+
 ---
 
 **Editing the book?** The single source of truth is

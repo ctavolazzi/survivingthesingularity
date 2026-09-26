@@ -13,6 +13,7 @@
 - The event horizon is behind us. The debate you're watching on the news is a rerun; the machine already shipped.
 - The bottleneck to a livable transition isn't technical. It's the human ego, the exhausted, and the status-invested.
 - You don't have to take anyone's wealth to end the terror. You have to use the robots to grow food and build shelter, and let people keep what they have.
+- Cheap labor doesn't end work, it moves it. Jevons proved it with coal and your closet proves it with blue jeans. But the gains land on whoever holds the machines, the way the silver of 1519 landed on the bankers.
 - Some people have already survived an automation wave. Find them. They are not on LinkedIn.
 
 ---
@@ -85,6 +86,86 @@ Through years of analyzing why society rejects obviously superior ways of living
 ## The Economic Paradox, Revisited
 
 Chapter 1 laid out the economic paradox in full: an economy built on the scarcity of human labor colliding with a machine that supplies cognitive labor at a marginal cost of zero, and the post-scarcity endpoint that collision makes possible. If you skipped it, go back; the argument matters here. Because this chapter is about the part of that collision nobody wants to say out loud: it is no longer a forecast. The paradox is already operating, and the only live question is who absorbs the impact.
+
+## Jevons and the Blue Jeans
+
+Time for a reality check, and it cuts both ways.
+
+In 1865 the economist William Stanley Jevons published *The Coal Question*. Britain was worried about running out of coal, and the comfortable assumption was that more efficient steam engines would save it. Jevons argued the opposite: an engine that burns less coal per unit of work makes coal cheaper to use, cheaper coal finds new uses, and total consumption goes *up*. He was right. It's now called **Jevons Paradox**: when something gets dramatically cheaper to use, we tend to use dramatically more of it.
+
+Now look down at what you're wearing.
+
+Fabric is the oldest, cleanest automation story we have, and we take it so completely for granted that we forget cloth was ever expensive. Before the mills, people patched clothing until it fell apart and left good garments to their children in their wills. Remember the spinning row from the CLHE table in [](sts:chapter1): about 50,000 hours of hand spinning for a hundred pounds of cotton. Then the cost of spinning and weaving collapsed by something like ninety-nine percent. Here's what happened next:
+
+- **We didn't make the same cloth with fewer people. We made incomparably more cloth.** World fiber production now runs well over a hundred million tonnes a year, and clothing production roughly doubled in just the first fifteen years of this century.
+- **Clothing went from a major expense to a minor one.** In 1901 the average American household spent fourteen percent of its budget on apparel. In 2024 it spent two and a half.
+- **Demand exploded into forms nobody in 1780 could have imagined.** Fast fashion, athletic wear, technical fabrics, band shirts, merch drops, a pair of jeans for every mood. Cheap cloth didn't just satisfy the old demand. It invented new demand.
+- **And people are still sewing.** After two and a half centuries of textile automation, the step where a person guides fabric through a sewing machine is still overwhelmingly done by human hands, because fabric is floppy and stretchy and robots are still bad at it. Tens of millions of people work in garments worldwide. And the clock on that last human step is running too: robotics labs are now sewing whole garments by temporarily stiffening the cloth with a water-soluble polymer, so a machine can handle it like sheet metal and rinse it soft at the end. That's somebody's CLHE, starting to fall.
+
+> **More automation than ever. More T-shirts and blue jeans than ever. And there are still human beings at the sewing machines.**
+
+That's the hopeful half: automation doesn't end labor, it moves it. When one step gets cheap, demand for the whole product can grow so much that the steps nobody automated need more people than before. Generation after generation, people found the next thing to do. The spinners' grandchildren became clerks. The clerks' grandchildren became engineers, nurses, and people who film themselves building things for a living.
+
+Now the other half, which is just as true:
+
+- **"Still requires human labor" doesn't mean "still pays."** The steps that resisted automation in clothing are some of the lowest-paid, most dangerous work on Earth. When the Rana Plaza factory building collapsed outside Dhaka in 2013, it killed more than eleven hundred garment workers. The humans left inside a heavily automated supply chain are often the ones with the least leverage.
+- **Jevons protects demand for the output, not for any particular input.** Demand for moving people and goods exploded after the engine, exactly as Jevons would predict. Demand for horses never came back. The horse was the input that got replaced, and the new demand flowed to the machine. That's [](sts:chapter5)'s precedent, and it's the one that should keep you honest.
+- **Every previous round, there was something the machines couldn't do yet.** Hands, when machines had muscle. Minds, when machines had hands. AI is the first technology aimed straight at the mind. The rebound may come anyway, and history says bet on it. But it's a bet, not a law of physics.
+
+"Humanity adapts" is a statement about a species over decades. It says nothing about whether *you* land on the weaver's side of the table or the mill owner's side in the next ten years.
+
+## The Gold of the New World
+
+Fabric is the gentle analogy. Here's the severe one.
+
+In 1519 Hernán Cortés landed on the coast of Mexico with a few hundred men. By August 1521, Tenochtitlan, one of the largest cities on Earth, had fallen. The Spanish brought steel, gunpowder, horses, and ships the Mexica had never seen. Smallpox came with them and tore through the city in 1520. Over the next eighty years, waves of epidemic disease (smallpox first, then the *cocoliztli* fevers of 1545 and 1576, whose origin historians still argue about) cut the Indigenous population of central Mexico by roughly ninety percent, from something like twenty million people to fewer than two.
+
+Map it onto now. The Spanish are AI and robotics: a force arriving with capabilities the locals can't match. The Indigenous population is us, human workers. The smallpox is the damage nobody planned: collapsing wages, stranded skills, institutions that can't adapt as fast as the thing they're adapting to. And the gold is the thing everyone suddenly wants. In the analogy, that's human labor.
+
+Now follow the actual gold, because it tells you exactly where this goes.
+
+Cortés's men melted the Mexica treasure into bars. Then the Spanish found silver at Zacatecas and Potosí, and precious metal poured into Europe for a century. The result was what historians call the **Price Revolution**: over roughly a century and a half, prices across Europe rose severalfold, in some cases sixfold. Spain was flooded with the most valuable substance in the world, and that substance lost value because there was so much of it. Philip II's crown suspended payments to its bankers four times, in 1557, 1560, 1575, and 1596, while the silver passed through Spanish hands to the bankers of Genoa.
+
+> **When a new world floods the market with the thing everyone used to fight over, that thing gets cheap. And the fight moves.**
+
+That's what's about to happen to labor. Human labor has always been scarce: only so many hands, only so many hours. Bring a vast artificial workforce online and labor stops being scarce. Its CLHE falls toward the price of electricity and hardware, and anyone competing with the machine on price per hour watches the value of their hours drop the way silver dropped in sixteenth-century Seville.
+
+The machines will keep gaining ground on every task that pays. And then, the same as every time before, we'll invent something new to compete over. Commodities will show up that nobody can currently foresee, that people want, and that are scarce. Nobody in Seville in 1519 predicted that the potato, sugar, tobacco, and chocolate would reshape the world economy. The treasure they crossed the ocean for wasn't the treasure that lasted.
+
+One thing about this cycle has never changed: **every time we expand our technology, we also expand our ability to control each other with it.** If billions of machine-workers come online, the most valuable resource on Earth stops being labor. It becomes *control over labor*: who owns the models, the robots, the data centers, the energy, and the land they sit on.
+
+Which is the uncomfortable twist. The machines aren't the conquistadors. Machines don't want gold. The conquistadors are whoever ends up holding the machines.
+
+## Three Paths, and a Fourth
+
+Every people that has met a technologically superior force has gone down some mix of three roads, and history has a case for each.
+
+1. **Steamrolled.** The advanced side takes the resources and gives nothing back. The *encomienda* system handed conquistadors the forced labor of whole Indigenous communities. The AI version: the gains from machine labor flow almost entirely to whoever owns the machines, and everyone else competes for the shrinking set of tasks still cheaper to do by hand.
+2. **Merged.** The two sides blend into something new. Modern Mexico is exactly this, a mestizo nation whose language, food, faith, and people fuse both worlds. Cortés only won because tens of thousands of Tlaxcalan and other Indigenous allies fought beside him for reasons of their own. The AI version: humans and machines integrate, through tools, augmentation, maybe eventually the body itself, until "human work" and "machine work" stop being separate categories.
+3. **Mastered.** The side that's behind adopts the technology fast enough to control it. Meiji Japan, facing Western gunboats in the 1850s, industrialized in about a generation and was never colonized. Ethiopia bought modern rifles and destroyed an invading Italian army at Adwa in 1896. The AI version: people, neighborhoods, and nations that own their own models, robots, and energy instead of renting them.
+
+   And read the fine print on that one. Japan didn't stop at mastering the machine. Within a generation it was taking colonies of its own: Taiwan in 1895, Korea in 1910. Mastery isn't the same thing as decency. Whoever masters a technology of control tends to use it on somebody.
+
+My honest bet is that we get all three at once. Some people and some places get steamrolled. Some blend. Some take control. The mix depends on choices being made right now about who owns this stuff.
+
+And there's a fourth path none of the Mexica, the Japanese, or the Ethiopians ever had: **a breakaway civilization leaves Earth.** Every wave of settlers who crossed an ocean eventually stopped being the people who left, but that divergence was cultural. This one could be biological. We already know bodies change off-planet: bone thins, muscle wastes, fluid shifts, eyesight changes. Children raised in low gravity, under different radiation, in engineered environments and possibly with engineered biology, could over generations become something measurably different from the people who stayed. Not a subspecies by choice of flag. A subspecies by the physics of where they grew up. [](sts:chapter3) imagines the machine leaving us behind; this is the version where some of us do the leaving. It's speculative. It's also not crazy.
+
+Collapse all of that down and there are two futures ahead, and both have already happened to someone:
+
+- **We get outcompeted, and we suffer.** That's Tenochtitlan in 1521, the handloom weavers of the 1830s, and the horse.
+- **We keep control of the technology, and the market evolves to value new kinds of scarcity.** That's the long arc of the blue jeans.
+
+Here's the part that doesn't depend on which one we get. Whether cheap, abundant labor arrives through private companies or through governments nationalizing these space-age machines, the economics run the same way:
+
+1. The supply of labor increases exponentially.
+2. The CLHE of almost every task collapses toward the cost of energy and hardware.
+3. Jevons kicks in. Cheap labor gets used for far more things than expensive labor ever was; jobs nobody bothered with, because they weren't worth paying a person for, suddenly pencil out.
+4. Value migrates away from labor itself and toward whatever is still scarce.
+5. The economy reorganizes around new scarcities we mostly can't name yet.
+
+We don't know what those scarcities will be. We can be confident some of what drives them hasn't been invented. But the past gives us a decent guess list: attention, trust, provenance (proof a real person made the thing), land, energy, ownership of compute, physical presence, taste, and authority over the machines themselves. Every item on it is already getting more valuable as labor gets cheaper.
+
+> **Don't compete with the machine on price per hour. You'll lose that race the way the spinners lost it. Own a piece of the machine instead.**
 
 ## The Mathematical Dead End
 

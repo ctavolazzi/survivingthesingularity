@@ -1,5 +1,7 @@
 # Surviving the Singularity — Project Guide
 
+**Before starting work, read [`HANDOFF.md`](HANDOFF.md)** (recent work, open PRs, outstanding tasks). When you finish, update it.
+
 ## What This Is
 A SvelteKit web platform for the **YouTube Shouse Blueprint** — a comprehensive strategy for material independence through digital leverage, local AI, open-source robotics, and minimalist infrastructure.
 

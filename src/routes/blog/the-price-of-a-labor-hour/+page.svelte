@@ -143,7 +143,7 @@
               <td>Connecting a phone call</td>
               <td>A human operator for every call</td>
               <td>Mechanical, then electronic, switching</td>
-              <td>Once one of the largest jobs for young American women; now effectively gone</td>
+              <td>AT&amp;T automated over half its network from 1920 to 1940; where a city switched to dial, jobs for young women as operators fell 50 to 80%</td>
             </tr>
             <tr>
               <td>Doing arithmetic</td>
@@ -155,7 +155,7 @@
         </table>
       </div>
       <p class="table-note">
-        Sources: spinning hours from the Chapman and Catling estimates widely cited in economic history of the Industrial Revolution; wheat hours from the USDA's <em>A History of American Agriculture</em>; horse counts from USDA census data. Figures are rounded and approximate.
+        Sources: spinning hours from Catling's operative-hours estimates; wheat hours from the USDA's <em>Growing a Nation</em> farm technology timeline; operator figures from Feigenbaum and Gross (NBER Working Paper 28061); horse counts from USDA census data. Figures are rounded.
       </p>
 
       <p>Three patterns repeat in every row.</p>
@@ -196,9 +196,9 @@
 
       <ul>
         <li><strong>We didn't make the same amount of cloth with fewer people. We made incomparably more cloth.</strong> Global fiber production is now well over 100 million tonnes a year. Clothing production roughly doubled in just the first fifteen years of this century.</li>
-        <li><strong>Clothing went from a major expense to a minor one.</strong> In 1901, the average American household spent about 14% of its budget on apparel. Today it's around 3%.</li>
+        <li><strong>Clothing went from a major expense to a minor one.</strong> In 1901, the average American household spent 14% of its budget on apparel. In 2024 it spent 2.5%.</li>
         <li><strong>The demand exploded into forms nobody in 1780 could have imagined:</strong> fast fashion, athletic wear, technical fabrics, band T-shirts, merch drops, cosplay, a pair of jeans for every mood. Cheap fabric didn't just satisfy the old demand. It invented new demand.</li>
-        <li><strong>And humans are still sewing.</strong> This is the part that should stop you cold. After 250 years of textile automation, the step where a person guides fabric through a sewing machine is still overwhelmingly done by human hands, because fabric is floppy and stretchy and robots are still bad at it. Tens of millions of people work in textiles, clothing and footwear worldwide, many in Bangladesh, Vietnam, India and China.</li>
+        <li><strong>And humans are still sewing.</strong> This is the part that should stop you cold. After 250 years of textile automation, the step where a person guides fabric through a sewing machine is still overwhelmingly done by human hands, because fabric is floppy and stretchy and robots are still bad at it. Tens of millions of people work in textiles, clothing and footwear worldwide, many in Bangladesh, Vietnam, India and China. (Even that step is starting to move: robotics labs now sew whole garments by temporarily stiffening the cloth with a water-soluble polymer, then rinsing it soft.)</li>
       </ul>
 
       <blockquote>
@@ -232,7 +232,7 @@
       </p>
 
       <p>
-        In 1519, Hernán Cortés landed on the coast of Mexico with a few hundred men. Two years later, Tenochtitlan, one of the largest cities in the world at the time, had fallen. The Spanish brought steel, gunpowder, horses and ships the Mexica had never seen. They also brought, without intending to, smallpox. Over the following century, the indigenous population of central Mexico collapsed by something on the order of 90%, overwhelmingly from disease.
+        In 1519, Hernán Cortés landed on the coast of Mexico with a few hundred men. Two years later, Tenochtitlan, one of the largest cities in the world at the time, had fallen. The Spanish brought steel, gunpowder, horses and ships the Mexica had never seen. Smallpox came with them and tore through the city in 1520. Over the next eighty years, waves of epidemic disease (smallpox first, then the cocoliztli fevers of 1545 and 1576, whose origin historians still debate) cut the Indigenous population of central Mexico by roughly 90%, from something like 20 million to under 2 million.
       </p>
 
       <p>
@@ -261,7 +261,7 @@
       </p>
 
       <p>
-        Cortés and his men melted down Mexica treasure into bars. Then the Spanish found the silver mines of Zacatecas and Potosí, and precious metal poured into Europe for the next century. The result was the <strong>Price Revolution</strong>: prices across Europe rose severalfold over the 1500s. Spain was flooded with the most valuable substance in the world, and the value of that substance fell because there was so much of it. Spain itself went bankrupt repeatedly while the gold passed through its hands to the bankers of Genoa and Antwerp.
+        Cortés and his men melted down Mexica treasure into bars. Then the Spanish found the silver mines of Zacatecas and Potosí, and precious metal poured into Europe for the next century. The result was the <strong>Price Revolution</strong>: over roughly a century and a half, prices across Europe rose severalfold, in some cases sixfold. Spain was flooded with the most valuable substance in the world, and the value of that substance fell because there was so much of it. Philip II's crown suspended payments to its bankers four times (1557, 1560, 1575, 1596) while the silver passed through Spanish hands to the bankers of Genoa.
       </p>
 
       <blockquote>
@@ -311,7 +311,7 @@
           <p class="path-num">Path 3</p>
           <p class="path-title">Mastered</p>
           <p class="path-body">
-            The less advanced side adopts the technology fast enough to control it. Meiji Japan, facing Western gunboats in the 1850s, industrialized in about a generation and was never colonized. Ethiopia bought modern rifles and defeated an invading Italian army at Adwa in 1896. In AI terms: individuals, communities and nations that own their own models, their own robots and their own energy, instead of renting them.
+            The less advanced side adopts the technology fast enough to control it. Meiji Japan, facing Western gunboats in the 1850s, industrialized in about a generation and was never colonized. Ethiopia bought modern rifles and defeated an invading Italian army at Adwa in 1896. In AI terms: individuals, communities and nations that own their own models, their own robots and their own energy, instead of renting them. The fine print: Japan didn't stop at mastering the machine. Within a generation it was taking colonies of its own, Taiwan in 1895 and Korea in 1910. Mastery isn't the same thing as decency.
           </p>
         </div>
       </div>

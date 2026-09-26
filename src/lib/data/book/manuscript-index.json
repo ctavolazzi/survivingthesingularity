@@ -5,8 +5,8 @@
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 30,
-    "blocks": 2110,
-    "words": 94818
+    "blocks": 2112,
+    "words": 95265
   },
   "sections": [
     {
@@ -1889,8 +1889,8 @@
       "id": "chapter1",
       "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md",
-      "next_ordinal": 108,
-      "words": 5667,
+      "next_ordinal": 109,
+      "words": 5749,
       "tombstones": [],
       "blocks": [
         {
@@ -2885,8 +2885,8 @@
             186,
             186
           ],
-          "words": 118,
-          "hash": "fbcbdb759520",
+          "words": 129,
+          "hash": "a098c90b950b",
           "preview": "Economists already have the pieces. A **labor-hour** is the standard unit of work: one per"
         },
         {
@@ -2951,16 +2951,27 @@
             198,
             203
           ],
-          "words": 81,
-          "hash": "e7e5d1543920",
+          "words": 91,
+          "hash": "8ffeb7ed6aa2",
           "preview": "| Task | Before | After | | --- | --- | --- | | Spinning 100 lb of cotton into yarn | abou"
+        },
+        {
+          "id": "sts.chapter1.b0108",
+          "type": "paragraph",
+          "lines": [
+            205,
+            205
+          ],
+          "words": 61,
+          "hash": "200690f8090d",
+          "preview": "The telephone row is the one to sit with. In the 1920s AT&T was the largest employer in th"
         },
         {
           "id": "sts.chapter1.b0105",
           "type": "paragraph",
           "lines": [
-            205,
-            205
+            207,
+            207
           ],
           "words": 93,
           "hash": "f3c7461c0f94",
@@ -2970,8 +2981,8 @@
           "id": "sts.chapter1.b0106",
           "type": "paragraph",
           "lines": [
-            207,
-            207
+            209,
+            209
           ],
           "words": 52,
           "hash": "6d82f7141568",
@@ -2981,8 +2992,8 @@
           "id": "sts.chapter1.b0107",
           "type": "paragraph",
           "lines": [
-            209,
-            209
+            211,
+            211
           ],
           "words": 39,
           "hash": "f992b7ac4e84",
@@ -2992,8 +3003,8 @@
           "id": "sts.chapter1.b0053",
           "type": "hr",
           "lines": [
-            211,
-            211
+            213,
+            213
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -3003,8 +3014,8 @@
           "id": "sts.chapter1.b0054",
           "type": "heading",
           "lines": [
-            213,
-            213
+            215,
+            215
           ],
           "words": 11,
           "hash": "d093e8ad6f1c",
@@ -3015,8 +3026,8 @@
           "id": "sts.chapter1.b0055",
           "type": "paragraph",
           "lines": [
-            215,
-            215
+            217,
+            217
           ],
           "words": 45,
           "hash": "3c72268c82a7",
@@ -3026,8 +3037,8 @@
           "id": "sts.chapter1.b0056",
           "type": "paragraph",
           "lines": [
-            217,
-            217
+            219,
+            219
           ],
           "words": 13,
           "hash": "aa37ed36be1c",
@@ -3037,8 +3048,8 @@
           "id": "sts.chapter1.b0057",
           "type": "paragraph",
           "lines": [
-            219,
-            219
+            221,
+            221
           ],
           "words": 81,
           "hash": "6afbb36430e0",
@@ -3048,8 +3059,8 @@
           "id": "sts.chapter1.b0058",
           "type": "paragraph",
           "lines": [
-            221,
-            221
+            223,
+            223
           ],
           "words": 51,
           "hash": "c35d7572afba",
@@ -3059,8 +3070,8 @@
           "id": "sts.chapter1.b0059",
           "type": "paragraph",
           "lines": [
-            223,
-            223
+            225,
+            225
           ],
           "words": 52,
           "hash": "b6c62da4c719",
@@ -3070,8 +3081,8 @@
           "id": "sts.chapter1.b0060",
           "type": "paragraph",
           "lines": [
-            225,
-            225
+            227,
+            227
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -3081,8 +3092,8 @@
           "id": "sts.chapter1.b0061",
           "type": "list",
           "lines": [
-            227,
-            229
+            229,
+            231
           ],
           "words": 158,
           "hash": "b039512707d1",
@@ -6518,8 +6529,8 @@
       "id": "chapter6",
       "title": "Chapter 6: The Singularity Is a Done Deal",
       "file": "08-chapter6.md",
-      "next_ordinal": 88,
-      "words": 4258,
+      "next_ordinal": 89,
+      "words": 4400,
       "tombstones": [],
       "blocks": [
         {
@@ -7045,8 +7056,8 @@
             100,
             103
           ],
-          "words": 163,
-          "hash": "87a73439d65c",
+          "words": 215,
+          "hash": "b78e779c0b72",
           "preview": "- **We didn't make the same cloth with fewer people. We made incomparably more cloth.** Wo"
         },
         {
@@ -7134,8 +7145,8 @@
             121,
             121
           ],
-          "words": 70,
-          "hash": "b75970c69792",
+          "words": 98,
+          "hash": "a54542f4be8d",
           "preview": "In 1519 Hernán Cortés landed on the coast of Mexico with a few hundred men. By August 1521"
         },
         {
@@ -7167,8 +7178,8 @@
             127,
             127
           ],
-          "words": 90,
-          "hash": "8310581de436",
+          "words": 102,
+          "hash": "286d46498a49",
           "preview": "Cortés's men melted the Mexica treasure into bars. Then the Spanish found silver at Zacate"
         },
         {
@@ -7261,11 +7272,22 @@
           "preview": "1. **Steamrolled.** The advanced side takes the resources and gives nothing back. The *enc"
         },
         {
-          "id": "sts.chapter6.b0080",
+          "id": "sts.chapter6.b0088",
           "type": "paragraph",
           "lines": [
             147,
             147
+          ],
+          "words": 50,
+          "hash": "6afece720682",
+          "preview": "And read the fine print on that one. Japan didn't stop at mastering the machine. Within a "
+        },
+        {
+          "id": "sts.chapter6.b0080",
+          "type": "paragraph",
+          "lines": [
+            149,
+            149
           ],
           "words": 37,
           "hash": "71dbbacce3e9",
@@ -7275,8 +7297,8 @@
           "id": "sts.chapter6.b0081",
           "type": "paragraph",
           "lines": [
-            149,
-            149
+            151,
+            151
           ],
           "words": 130,
           "hash": "ae1af2a8c742",
@@ -7286,8 +7308,8 @@
           "id": "sts.chapter6.b0082",
           "type": "paragraph",
           "lines": [
-            151,
-            151
+            153,
+            153
           ],
           "words": 18,
           "hash": "41f624a0a47e",
@@ -7297,8 +7319,8 @@
           "id": "sts.chapter6.b0083",
           "type": "list",
           "lines": [
-            153,
-            154
+            155,
+            156
           ],
           "words": 43,
           "hash": "6768538c863e",
@@ -7308,8 +7330,8 @@
           "id": "sts.chapter6.b0084",
           "type": "paragraph",
           "lines": [
-            156,
-            156
+            158,
+            158
           ],
           "words": 32,
           "hash": "2e0b3be361b5",
@@ -7319,8 +7341,8 @@
           "id": "sts.chapter6.b0085",
           "type": "list",
           "lines": [
-            158,
-            162
+            160,
+            164
           ],
           "words": 79,
           "hash": "1312c95d75ec",
@@ -7330,8 +7352,8 @@
           "id": "sts.chapter6.b0086",
           "type": "paragraph",
           "lines": [
-            164,
-            164
+            166,
+            166
           ],
           "words": 66,
           "hash": "a4435abb150d",
@@ -7341,8 +7363,8 @@
           "id": "sts.chapter6.b0087",
           "type": "blockquote",
           "lines": [
-            166,
-            166
+            168,
+            168
           ],
           "words": 26,
           "hash": "39335c080799",
@@ -7352,8 +7374,8 @@
           "id": "sts.chapter6.b0040",
           "type": "heading",
           "lines": [
-            168,
-            168
+            170,
+            170
           ],
           "words": 4,
           "hash": "3d3dc2ed3226",
@@ -7364,8 +7386,8 @@
           "id": "sts.chapter6.b0041",
           "type": "paragraph",
           "lines": [
-            170,
-            170
+            172,
+            172
           ],
           "words": 39,
           "hash": "f0a282ce4ff3",
@@ -7375,8 +7397,8 @@
           "id": "sts.chapter6.b0042",
           "type": "paragraph",
           "lines": [
-            172,
-            172
+            174,
+            174
           ],
           "words": 66,
           "hash": "5533d9658dbd",
@@ -7386,8 +7408,8 @@
           "id": "sts.chapter6.b0043",
           "type": "paragraph",
           "lines": [
-            174,
-            174
+            176,
+            176
           ],
           "words": 143,
           "hash": "bee3984f0bbf",
@@ -7397,8 +7419,8 @@
           "id": "sts.chapter6.b0044",
           "type": "hr",
           "lines": [
-            176,
-            176
+            178,
+            178
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -7408,8 +7430,8 @@
           "id": "sts.chapter6.b0045",
           "type": "heading",
           "lines": [
-            178,
-            178
+            180,
+            180
           ],
           "words": 10,
           "hash": "2cbf9e6d0311",
@@ -7420,8 +7442,8 @@
           "id": "sts.chapter6.b0046",
           "type": "paragraph",
           "lines": [
-            180,
-            180
+            182,
+            182
           ],
           "words": 6,
           "hash": "ea66542438d9",
@@ -7431,8 +7453,8 @@
           "id": "sts.chapter6.b0047",
           "type": "paragraph",
           "lines": [
-            182,
-            182
+            184,
+            184
           ],
           "words": 86,
           "hash": "77eb3d392f84",
@@ -7442,8 +7464,8 @@
           "id": "sts.chapter6.b0048",
           "type": "paragraph",
           "lines": [
-            184,
-            184
+            186,
+            186
           ],
           "words": 82,
           "hash": "d81a1398daac",
@@ -7453,8 +7475,8 @@
           "id": "sts.chapter6.b0049",
           "type": "paragraph",
           "lines": [
-            186,
-            186
+            188,
+            188
           ],
           "words": 53,
           "hash": "7bd811cfc82d",
@@ -7464,8 +7486,8 @@
           "id": "sts.chapter6.b0050",
           "type": "paragraph",
           "lines": [
-            188,
-            188
+            190,
+            190
           ],
           "words": 60,
           "hash": "b43c4620dcdf",
@@ -7475,8 +7497,8 @@
           "id": "sts.chapter6.b0051",
           "type": "paragraph",
           "lines": [
-            190,
-            190
+            192,
+            192
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -7486,8 +7508,8 @@
           "id": "sts.chapter6.b0052",
           "type": "list",
           "lines": [
-            192,
-            194
+            194,
+            196
           ],
           "words": 209,
           "hash": "c4ee8d8e1803",
@@ -22876,7 +22898,7 @@
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
       "next_ordinal": 28,
-      "words": 5849,
+      "words": 6072,
       "tombstones": [],
       "blocks": [
         {
@@ -23170,18 +23192,18 @@
           "type": "list",
           "lines": [
             151,
-            175
+            181
           ],
-          "words": 757,
-          "hash": "7875ef4df5ff",
+          "words": 980,
+          "hash": "a9824ac26b26",
           "preview": "197. American Federation of Musicians, \"Taking Liberties With Folks' Habits\" (advertisemen"
         },
         {
           "id": "sts.appendix-b.b0011",
           "type": "hr",
           "lines": [
-            177,
-            177
+            183,
+            183
           ],
           "words": 0,
           "hash": "ebad27de99a8",

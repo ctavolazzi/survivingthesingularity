@@ -98,9 +98,9 @@ Now look down at what you're wearing.
 Fabric is the oldest, cleanest automation story we have, and we take it so completely for granted that we forget cloth was ever expensive. Before the mills, people patched clothing until it fell apart and left good garments to their children in their wills. Remember the spinning row from the CLHE table in [](sts:chapter1): about 50,000 hours of hand spinning for a hundred pounds of cotton. Then the cost of spinning and weaving collapsed by something like ninety-nine percent. Here's what happened next:
 
 - **We didn't make the same cloth with fewer people. We made incomparably more cloth.** World fiber production now runs well over a hundred million tonnes a year, and clothing production roughly doubled in just the first fifteen years of this century.
-- **Clothing went from a major expense to a minor one.** In 1901 the average American household spent about fourteen percent of its budget on apparel. Today it's about three.
+- **Clothing went from a major expense to a minor one.** In 1901 the average American household spent fourteen percent of its budget on apparel. In 2024 it spent two and a half.
 - **Demand exploded into forms nobody in 1780 could have imagined.** Fast fashion, athletic wear, technical fabrics, band shirts, merch drops, a pair of jeans for every mood. Cheap cloth didn't just satisfy the old demand. It invented new demand.
-- **And people are still sewing.** After two and a half centuries of textile automation, the step where a person guides fabric through a sewing machine is still overwhelmingly done by human hands, because fabric is floppy and stretchy and robots are still bad at it. Tens of millions of people work in garments worldwide.
+- **And people are still sewing.** After two and a half centuries of textile automation, the step where a person guides fabric through a sewing machine is still overwhelmingly done by human hands, because fabric is floppy and stretchy and robots are still bad at it. Tens of millions of people work in garments worldwide. And the clock on that last human step is running too: robotics labs are now sewing whole garments by temporarily stiffening the cloth with a water-soluble polymer, so a machine can handle it like sheet metal and rinse it soft at the end. That's somebody's CLHE, starting to fall.
 
 > **More automation than ever. More T-shirts and blue jeans than ever. And there are still human beings at the sewing machines.**
 
@@ -118,13 +118,13 @@ Now the other half, which is just as true:
 
 Fabric is the gentle analogy. Here's the severe one.
 
-In 1519 Hernán Cortés landed on the coast of Mexico with a few hundred men. By August 1521, Tenochtitlan, one of the largest cities on Earth, had fallen. The Spanish brought steel, gunpowder, horses, and ships the Mexica had never seen. They also brought, without planning to, smallpox. Over the following century the Indigenous population of central Mexico collapsed by something on the order of ninety percent, overwhelmingly from disease.
+In 1519 Hernán Cortés landed on the coast of Mexico with a few hundred men. By August 1521, Tenochtitlan, one of the largest cities on Earth, had fallen. The Spanish brought steel, gunpowder, horses, and ships the Mexica had never seen. Smallpox came with them and tore through the city in 1520. Over the next eighty years, waves of epidemic disease (smallpox first, then the *cocoliztli* fevers of 1545 and 1576, whose origin historians still argue about) cut the Indigenous population of central Mexico by roughly ninety percent, from something like twenty million people to fewer than two.
 
 Map it onto now. The Spanish are AI and robotics: a force arriving with capabilities the locals can't match. The Indigenous population is us, human workers. The smallpox is the damage nobody planned: collapsing wages, stranded skills, institutions that can't adapt as fast as the thing they're adapting to. And the gold is the thing everyone suddenly wants. In the analogy, that's human labor.
 
 Now follow the actual gold, because it tells you exactly where this goes.
 
-Cortés's men melted the Mexica treasure into bars. Then the Spanish found silver at Zacatecas and Potosí, and precious metal poured into Europe for a century. The result was what historians call the **Price Revolution**: prices across Europe rose severalfold over the 1500s. Spain was flooded with the most valuable substance in the world, and that substance lost value because there was so much of it. The Spanish crown defaulted on its debts again and again while the silver passed through its hands to the bankers of Genoa and Antwerp.
+Cortés's men melted the Mexica treasure into bars. Then the Spanish found silver at Zacatecas and Potosí, and precious metal poured into Europe for a century. The result was what historians call the **Price Revolution**: over roughly a century and a half, prices across Europe rose severalfold, in some cases sixfold. Spain was flooded with the most valuable substance in the world, and that substance lost value because there was so much of it. Philip II's crown suspended payments to its bankers four times, in 1557, 1560, 1575, and 1596, while the silver passed through Spanish hands to the bankers of Genoa.
 
 > **When a new world floods the market with the thing everyone used to fight over, that thing gets cheap. And the fight moves.**
 
@@ -143,6 +143,8 @@ Every people that has met a technologically superior force has gone down some mi
 1. **Steamrolled.** The advanced side takes the resources and gives nothing back. The *encomienda* system handed conquistadors the forced labor of whole Indigenous communities. The AI version: the gains from machine labor flow almost entirely to whoever owns the machines, and everyone else competes for the shrinking set of tasks still cheaper to do by hand.
 2. **Merged.** The two sides blend into something new. Modern Mexico is exactly this, a mestizo nation whose language, food, faith, and people fuse both worlds. Cortés only won because tens of thousands of Tlaxcalan and other Indigenous allies fought beside him for reasons of their own. The AI version: humans and machines integrate, through tools, augmentation, maybe eventually the body itself, until "human work" and "machine work" stop being separate categories.
 3. **Mastered.** The side that's behind adopts the technology fast enough to control it. Meiji Japan, facing Western gunboats in the 1850s, industrialized in about a generation and was never colonized. Ethiopia bought modern rifles and destroyed an invading Italian army at Adwa in 1896. The AI version: people, neighborhoods, and nations that own their own models, robots, and energy instead of renting them.
+
+   And read the fine print on that one. Japan didn't stop at mastering the machine. Within a generation it was taking colonies of its own: Taiwan in 1895, Korea in 1910. Mastery isn't the same thing as decency. Whoever masters a technology of control tends to use it on somebody.
 
 My honest bet is that we get all three at once. Some people and some places get steamrolled. Some blend. Some take control. The mix depends on choices being made right now about who owns this stuff.
 

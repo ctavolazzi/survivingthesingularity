@@ -183,7 +183,7 @@ The logical endpoint of this trajectory is a post-scarcity model, a concept thor
 
 "Marginal cost of zero" is a phrase that's easy to nod at and hard to feel. So let's give it a unit you can measure against your own paycheck.
 
-Economists already have the pieces. A **labor-hour** is the standard unit of work: one person, one hour. In *The General Theory* (1936), John Maynard Keynes named the money wage of that hour the **wage-unit**, and used it as a ruler to measure a whole economy without inflation bending the numbers. Governments track the modern version as **Unit Labor Cost**: total compensation divided by units of output. Put another way, what you're paid per hour divided by what you produce per hour. If your wage rises five percent and your output rises five percent, your Unit Labor Cost doesn't move. If your output doubles and your wage doesn't, the labor inside everything you make just got half as expensive.
+Economists already have the pieces. A **labor-hour** is the standard unit of work: one person, one hour. In *The General Theory* (1936), John Maynard Keynes took an hour of ordinary labor as his **labour-unit** and named the money wage of that hour the **wage-unit**, so he could measure an economy in hours and dollars instead of a fuzzy "general price level." Governments track the modern version as **Unit Labor Cost**: total compensation divided by units of output. Put another way, what you're paid per hour divided by what you produce per hour. If your wage rises five percent and your output rises five percent, your Unit Labor Cost doesn't move. If your output doubles and your wage doesn't, the labor inside everything you make just got half as expensive.
 
 None of those measures were built for a world where the worker might not be a person. So this book uses one more:
 
@@ -199,8 +199,10 @@ The history is not subtle about this. Look at how many human-hours the same outp
 | --- | --- | --- |
 | Spinning 100 lb of cotton into yarn | about 50,000 hours by hand | about 300 hours on power-assisted mules by 1795, about 135 by 1825 |
 | Growing 100 bushels of U.S. wheat | 250 to 300 hours in 1830 | 40 to 50 hours by 1890, about 3 by 1987 |
-| Connecting a telephone call | a human operator, every call | mechanical, then electronic, switching |
+| Connecting a telephone call | a human operator, every call | dial switching across more than half of AT&T's network between 1920 and 1940 |
 | Doing arithmetic | "computer" was a job title held by people | the job title transferred to the machine |
+
+The telephone row is the one to sit with. In the 1920s AT&T was the largest employer in the country and operators were about half its workforce, the standard first job for young American women. When a city cut over to dial, the number of young women working as operators there dropped by fifty to eighty percent, immediately and permanently.
 
 Three patterns repeat in every row. The drop isn't twenty percent. It's ninety to ninety-nine, because once a machine gets a foothold its CLHE keeps falling for decades while a human hour stays a human hour. The people displaced are almost never the people who collect the gains. And total employment recovered anyway, every time, because the work went somewhere new. The horse, in [](sts:chapter5), is the case where it didn't. The framework knitters, in [](sts:chapter7), are the case where the people saw all of this coming and it didn't help.
 

@@ -165,13 +165,19 @@
 211. William Stanley Jevons, *The Coal Question* (1865), and the rebound effect that bears his name - Wikipedia, https://en.wikipedia.org/wiki/Jevons_paradox
 212. U.S. Bureau of Labor Statistics, *100 Years of U.S. Consumer Spending* (2006) - apparel's share of household spending in 1901 - BLS, https://www.bls.gov/opub/100-years-of-u-s-consumer-spending.pdf
 213. McKinsey & Company, "Style that's sustainable: A new fast-fashion formula" (2016) - clothing production doubling from 2000 to 2014 - McKinsey, https://www.mckinsey.com/capabilities/sustainability/our-insights/style-thats-sustainable-a-new-fast-fashion-formula
-214. Textile Exchange, *Materials Market Report* - annual global fiber production - Textile Exchange, https://textileexchange.org/knowledge-center/reports/
-215. 2013 Rana Plaza garment factory collapse - Wikipedia, https://en.wikipedia.org/wiki/2013_Rana_Plaza_garment_factory_collapse
+214. Textile Exchange, *Materials Market Report 2024* - global fiber production of 124 million tonnes in 2023 - Textile Exchange, https://textileexchange.org/news/textile-exchange-releases-2024-materials-market-report/
+215. Rana Plaza collapse (April 24, 2013) - confirmed death toll of 1,134 - Wikipedia, https://en.wikipedia.org/wiki/Rana_Plaza_collapse
 216. Fall of Tenochtitlan (1521) and the Tlaxcalan alliance - Wikipedia, https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan
 217. Population history of the Indigenous peoples of the Americas - the collapse of central Mexico's population in the sixteenth century - Wikipedia, https://en.wikipedia.org/wiki/Population_history_of_the_Indigenous_peoples_of_the_Americas
 218. Price revolution - the sixteenth-century European inflation and the inflow of American silver - Wikipedia, https://en.wikipedia.org/wiki/Price_revolution
 219. Encomienda - Wikipedia, https://en.wikipedia.org/wiki/Encomienda
 220. Meiji Restoration - Wikipedia, https://en.wikipedia.org/wiki/Meiji_Restoration
 221. Battle of Adwa (1896) - Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Adwa
+222. U.S. Bureau of Labor Statistics, *Consumer Expenditures in 2024* - apparel and services at 2.5 percent of average annual expenditures - BLS, https://www.bls.gov/opub/reports/consumer-expenditures/2024/home.htm
+223. James Feigenbaum and Daniel P. Gross, "Answering the Call of Automation: How the Labor Market Adjusted to Mechanizing Telephone Operation," NBER Working Paper 28061 - AT&T's 1920 to 1940 dial conversion and the 50 to 80 percent drop in young women employed as operators after cutover - NBER, https://www.nber.org/papers/w28061
+224. Rodolfo Acuna-Soto et al., "Megadrought and Megadeath in 16th Century Mexico," *Emerging Infectious Diseases* 8, no. 4 (2002) - the 1520 smallpox epidemic, the 1545 and 1576 cocoliztli epidemics, and the fall from roughly 22 million to under 2 million - CDC, https://wwwnc.cdc.gov/eid/article/8/4/01-0175_article
+225. Mauricio Drelichman and Hans-Joachim Voth, "The Sustainable Debts of Philip II" - the payment suspensions of 1557, 1560, 1575 and 1596 - NBER, https://users.nber.org/~confer/2007/eges07/drelichman.pdf
+226. ARM Institute, "Robotic Assembly of Garments" - sewing garments robotically by stiffening fabric with a water-soluble thermoplastic - ARM Institute, https://arminstitute.org/projects/robotic-assembly-of-garments/
+227. International Labour Organization, Textiles, apparel, leather and related products sector - ILO, https://www.ilo.org/topics-and-sectors/industries-and-sectors/textiles-apparel-leather-and-related-products
 
 ---

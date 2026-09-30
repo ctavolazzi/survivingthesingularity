@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T18:31:38Z",
+  "generated_at": "2026-09-30T18:20:28Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -185,33 +185,6 @@
       ]
     },
     {
-      "id": "2608.29622",
-      "source": "arxiv",
-      "title": "AgenticRag-R1: Agentic Reinforcement Learning with Stack Memory for Multi-Step Reasoning, Retrieval and Memorizing",
-      "url": "https://arxiv.org/abs/2608.29622",
-      "authors": [
-        "Xinke Jiang",
-        "Yue Fang",
-        "Zhibang Yang",
-        "Jiaran Gao"
-      ],
-      "summary": "Retrieval-Augmented Generation (RAG) improves the factuality of large language models (LLMs), yet existing RAG systems often struggle with complex, multi-step reasoning that requires adaptive retrieval and continuous revision of intermediate contexts. Recent reinforcement learning (RL)-based agentic RAG methods partially alleviate this issue, but typically rely on coarse-grained action spaces and trajectory-level rewards, resulting in weak reward assignment and a bias toward short-horizon, stereotyped reasoning template. To address, we propose AgenticRag-R1, a RL framework that deeply integrat",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-30",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
       "id": "2609.33885",
       "source": "arxiv",
       "title": "Prospective Interpretation Risk: Principled Communication Control Between LLMs",
@@ -362,6 +335,57 @@
       ]
     },
     {
+      "id": "2609.38177",
+      "source": "arxiv",
+      "title": "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering",
+      "url": "https://arxiv.org/abs/2609.38177",
+      "authors": [
+        "Jaewoo Jung",
+        "Hyeonseo Yu",
+        "Honggyu An",
+        "Jisang Han"
+      ],
+      "summary": "Reasoning about the 3D world from multi-view images remains a fundamental challenge for Multimodal Large Language Models (MLLMs). While modern MLLMs handle single-image inputs effectively, they struggle to integrate evidence across viewpoints into a coherent 3D understanding. A growing body of work attempts to close this gap by injecting 3D awareness into MLLMs, either by boosting fine-grained pixel-level cross-view correspondence or by fusing features from 3D geometry foundation models, yet a substantial gap to human reasoning persists. In this work, we revisit human spatial reasoning, which ",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-09-29",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agi",
+        "foundation model",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2609.38078",
+      "source": "arxiv",
+      "title": "MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation",
+      "url": "https://arxiv.org/abs/2609.38078",
+      "authors": [
+        "Bingxuan Li",
+        "Siqi Song",
+        "Yizhuo Wu",
+        "Jiarui Yao"
+      ],
+      "summary": "Vision-language-action (VLA) models have advanced robotic manipulation, but their zero-shot generalization in new tasks and environments remains limited, and their reliance on specialized training keeps them from benefiting directly from rapidly advancing general-purpose vision-language models (VLMs). In parallel, recent agentic robotic systems leverage VLMs for high-level reasoning or coding agents for robot control, but often depend on extensive external models and tools, introducing additional complexity and cost. This motivates us to ask: Can a general-purpose VLM itself operate a robot mo",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-09-29",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "robot",
+        "language model",
+        "rag"
+      ]
+    },
+    {
       "id": "2609.16986",
       "source": "arxiv",
       "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
@@ -504,6 +528,31 @@
         "agentic",
         "reasoning",
         "scaling"
+      ]
+    },
+    {
+      "id": "2609.37094",
+      "source": "arxiv",
+      "title": "LLM-Based Multi-Agent Systems over Wireless Networks: A Joint Agent--Network Design Perspective",
+      "url": "https://arxiv.org/abs/2609.37094",
+      "authors": [
+        "Chao Hu",
+        "Yuan Guo",
+        "Guanlin Wu",
+        "Yueling Che"
+      ],
+      "summary": "As large language models (LLMs) evolve from standalone models into collaborative agents embedded in physical systems, their reasoning and execution are increasingly distributed across wireless edge nodes. In this setting, wireless networks are experiencing a paradigm shift from only providing data connectivity to supporting the multi-agent reasoning workflow itself. The task performance of such network-constrained LLM-based multi-agent systems (MASs) is jointly affected by the multi-agent reasoning dependencies as well as the underlying network connectivity and edge resources. This coupling gi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-29",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -799,53 +848,28 @@
       ]
     },
     {
-      "id": "2608.29646",
+      "id": "2609.38178",
       "source": "arxiv",
-      "title": "Detect Before You Attribute: Cascade Failure Attribution for Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2608.29646",
+      "title": "Skill-Space Shooting for Autonomous Robot Policy Improvement",
+      "url": "https://arxiv.org/abs/2609.38178",
       "authors": [
-        "Jiayi Zhang",
-        "Zexin Wang",
-        "Degang Sun",
-        "Changhua Pei"
+        "Zihang Rui",
+        "Renhao Wang",
+        "Haoxu Huang",
+        "Yang Gao"
       ],
-      "summary": "Large language model (LLM)-based agents have shown strong potential in solving complex tasks through multi-step reasoning, yet they remain vulnerable to execution failures. Accurate failure attribution is therefore critical for improving agent reliability. Existing topology- and spectrum-based methods exploit trajectory structures but often overlook fine-grained semantics, while LLM-based attribution methods capture semantic cues but suffer from long-context degradation over lengthy trajectories. To address these challenges, we propose DUOTRACE, a plug-and-play detection filter for LLM-based f",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-30",
-      "score": 8.0,
-      "raw_score": 16,
+      "summary": "Robots deployed in the physical world must be able to improve beyond their initial training as they encounter new situations and failures. For this improvement to scale across tasks, it must make effective use of experience without requiring human demonstration of each correction. Recent agentic systems offer a way to reduce this reliance on human effort by using foundation models to autonomously compose learned behaviors to complete tasks. Yet completing tasks this way does not itself teach a task policy to overcome its own failures; that requires turning these behaviors into learnable correc",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-29",
+      "score": 7.5,
+      "raw_score": 15,
       "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2608.29596",
-      "source": "arxiv",
-      "title": "Towards a Systems Foundation for Agentic Skills: Architecture, Lifecycle, and Security",
-      "url": "https://arxiv.org/abs/2608.29596",
-      "authors": [
-        "Sanket Badhe",
-        "Deep Shah",
-        "Priyanka Tiwari",
-        "Nehal Kathrotia"
-      ],
-      "summary": "Autonomous large language model (LLM) agents increasingly face reliability, context consumption, and execution stability bottlenecks when deployed on complex, long-horizon tasks. While monolithic prompt engineering and stateless tool-calling paradigms struggle to scale, the field is rapidly converging toward \\emph{agentic skills}: modular procedural abstractions that externalize execution knowledge into reusable, executable, and portable artifacts. This paper establishes a unified systems foundation and reference architecture for the agentic skills ecosystem. We formalize skills as externalize",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-08-30",
-      "score": 8.0,
-      "raw_score": 16,
-      "matched_keywords": [
+        "foundation model",
         "agent",
         "agentic",
         "autonomous",
-        "llm",
-        "language model"
+        "robot"
       ]
     },
     {
@@ -871,6 +895,31 @@
         "embodied",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2609.35916",
+      "source": "arxiv",
+      "title": "VehicleArena: A Realistic Urban Environment for Multi-Agent Driving",
+      "url": "https://arxiv.org/abs/2609.35916",
+      "authors": [
+        "Jie Yang",
+        "Jiajun Chen",
+        "Jiazheng Zhou",
+        "Mianqiu Huang"
+      ],
+      "summary": "Real-world embodied agents often pursue independent objectives within a shared physical environment, where their actions can alter the conditions faced by others. Existing benchmarks, however, typically assume shared goals or explicitly prescribed interaction protocols, leaving such emergent physical coupling underexplored. We introduce VehicleArena, a 3D urban-driving benchmark for studying independently operating agents in a dynamic shared world. In VehicleArena, LLM-controlled agents must fulfill evolving passenger requests while navigating complex traffic, and each agent's driving decision",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-28",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "embodied",
+        "llm",
+        "emergent"
       ]
     },
     {
@@ -948,6 +997,29 @@
       ]
     },
     {
+      "id": "2609.37922",
+      "source": "arxiv",
+      "title": "WayFinder: Hierarchical Visual-Language-Action for Zero-Shot Waypoint Generation and Low-Level Kinematic Control",
+      "url": "https://arxiv.org/abs/2609.37922",
+      "authors": [
+        "Timothy K Johnsen",
+        "Marco Levorato"
+      ],
+      "summary": "Visual Language Action (VLA) models offer unprecedented generalization for autonomous robots; however, their real-world deployment is frequently bottlenecked by unreliable execution and the prohibitive computational cost of fine-tuning for specific robot embodiments and tasks. To bridge this gap, we propose WayFinder, an end-to-end, closed-loop hierarchical VLA framework that circumvents the need for fine-tuning by decoupling high-level task reasoning from low-level kinematic control. WayFinder utilizes a zero-shot, offboard Multimodal Large Language Model (MLLM) policy to process linguistic c",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-09-29",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "autonomous",
+        "reasoning",
+        "robot",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2609.35559",
       "source": "arxiv",
       "title": "From Search to Research: Exploring Search Scaling in Autonomous Quantitative Factor Mining",
@@ -995,6 +1067,78 @@
         "embodied",
         "robot",
         "llm"
+      ]
+    },
+    {
+      "id": "2609.37968",
+      "source": "arxiv",
+      "title": "SelfSearch: Reward-Free Search for Self-Improving Agents",
+      "url": "https://arxiv.org/abs/2609.37968",
+      "authors": [
+        "Jungwoo Yang",
+        "In Jin Kong",
+        "Yohan Jo"
+      ],
+      "summary": "Advances in the coding capabilities of LLM agents allow them to inspect and modify their own instructions, tools, and execution procedures. Existing approaches use this ability to search for improved agents through repeated downstream evaluation, which incurs substantial costs and ties the search to the evaluated tasks. We introduce \\textbf{SelfSearch}, a reward-free search procedure in which agents modify themselves using records of previous self-improvement episodes. These records capture the reasoning, tool actions, and outcomes of earlier modification attempts, providing concrete experienc",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-09-29",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "self-improving",
+        "agent",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
+      "id": "2609.37782",
+      "source": "arxiv",
+      "title": "Selecting What Matters: Semantic Compression-Guided Selective Pooling for Long-Context Embeddings",
+      "url": "https://arxiv.org/abs/2609.37782",
+      "authors": [
+        "Zifeng Cheng",
+        "Jie Zheng",
+        "Zhiwei Jiang",
+        "Shuwen Wang"
+      ],
+      "summary": "Large language models (LLMs) have shown strong potential as training-free text encoders for long-context embeddings. Existing approaches primarily improve information flow under causal attention and typically construct embeddings by uniformly averaging all token representations. However, for long documents, such mean pooling can dilute salient semantic information with abundant redundant or weakly informative content. To this end, we propose SCSP, a training-free framework that leverages semantic compression for informative token selection in long-context embedding. Specifically, SCSP first pa",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-09-29",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agi",
+        "llm",
+        "language model",
+        "rag"
+      ]
+    },
+    {
+      "id": "2609.37810",
+      "source": "arxiv",
+      "title": "Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents",
+      "url": "https://arxiv.org/abs/2609.37810",
+      "authors": [
+        "Sicheng Xie",
+        "Yitong Chen",
+        "Haidong Cao",
+        "Shunlin Lu"
+      ],
+      "summary": "Vision-language-action and world-action models have demonstrated impressive capabilities in robotics, yet generalization to unseen tasks remains challenging. More recently, general-purpose multimodal agents have shown great potential for zero-shot robotic task solving. However, they often incur high execution costs by reasoning and exploring the physical world from scratch. To reduce these costs, we introduce RoboSkill, a framework that connects skill acquisition and reuse through an Explore, Execute, Evolve loop. Within this loop, the agent explores to gather task-relevant information, execut",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-09-29",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "embodied",
+        "robot",
+        "robotics"
       ]
     },
     {
@@ -1055,8 +1199,8 @@
         "Junpei Komiyama"
       ],
       "summary": "Multi-agent systems bring together language model agents with different roles to propose, review, and refine solutions. Each agent's response depends on its model's capabilities, the reasoning strategy defined by its system prompt, and the information in its input context. Existing frameworks often adapt communication by changing this context while leaving individual prompts fixed, even when a problem calls for different skills. We study whether agents' initial responses can identify a strategy better suited to the current problem and guide its transfer to other agents. To address this, we int",
-      "category": "cs.CL",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-09-28",
       "score": 6.5,
       "raw_score": 13,
@@ -1114,6 +1258,54 @@
         "embodied",
         "robot",
         "robotics"
+      ]
+    },
+    {
+      "id": "2609.35936",
+      "source": "arxiv",
+      "title": "Embodied Semantic Communication for Collective Autonomous Agents: A Tutorial on Representation, Wireless Delivery, and Closed-Loop Coordination",
+      "url": "https://arxiv.org/abs/2609.35936",
+      "authors": [
+        "Yizheng Huang",
+        "Wensheng Lin",
+        "Lixin Li",
+        "Qinghe Du"
+      ],
+      "summary": "As autonomous systems and embodied intelligence enter the dynamic physical world, multi-agent collaboration calls for a paradigm shift in communication design. However, existing communication paradigms overlook that agents form action understanding from their own states, environmental observations, and collaboration relations through a process that evolves as a task unfolds. Consequently, reliable bit delivery, general semantic recovery, or single-task utility optimization alone cannot ensure that heterogeneous agents form coordinated actions compatible with their own conditions from shared in",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-28",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "embodied"
+      ]
+    },
+    {
+      "id": "2609.35928",
+      "source": "arxiv",
+      "title": "Prompted Identity Degrades Cooperation in Multi-Agent LLM Systems",
+      "url": "https://arxiv.org/abs/2609.35928",
+      "authors": [
+        "Xavier Del Giudice",
+        "Alessio Palma",
+        "Matteo Migliarini",
+        "Fabio Galasso"
+      ],
+      "summary": "Multi-agent LLM systems increasingly mix models from several providers, yet exposing each agent's underlying model identity to its peers significantly impairs cooperation. We show that when agents are aware of each other's model family, the group splits into clusters, where agents prefer interacting with others carrying their same label, although nothing in the task rewards or asks for such a split. We argue that the label itself causes this split, which we define as $\\textit{factionalism}$. We show and measure this phenomenon in two cooperative games and on a reasoning benchmark, with nine to",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-09-28",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm"
       ]
     },
     {
@@ -1272,193 +1464,6 @@
         "agentic",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2609.35750",
-      "source": "arxiv",
-      "title": "KV-streams for Efficient Compaction in Agentic Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2609.35750",
-      "authors": [
-        "Emiliano Penaloza",
-        "Dane Malenfant",
-        "Dheeraj Vattikonda",
-        "Roger Creus Castanyer"
-      ],
-      "summary": "Scaling the horizon of agentic LLMs is bottlenecked by the need to fit ever longer context traces in GPU memory. Context compaction has been the most popular mechanism to alleviate this issue, keeping GPU memory constant for a given trace. Unfortunately, most compaction strategies rely on prefilling the LLM context many times over, hindering training throughput. To alleviate this bottleneck and enable efficient trainable compaction, we propose KV-streams, a plug-and-play strategy compatible with any compaction strategy that substantially increases throughput while showing no evidence of hinder",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2609.35571",
-      "source": "arxiv",
-      "title": "Representation Alignment as a Bottleneck in LLM-Based Retrosynthesis Planning",
-      "url": "https://arxiv.org/abs/2609.35571",
-      "authors": [
-        "Hyunwoo Yoo",
-        "Cassie Huang",
-        "Haebin Shin",
-        "Li Zhang"
-      ],
-      "summary": "While LLMs show promise in general reasoning, symbolic planning in chemistry remains a bottleneck. Direct ''SMILES-to-PDDL'' attempts fail because they force models to juggle chemical analysis and planning-language structuring simultaneously. We hypothesize that this failure stems from a lack of intermediate abstractions rather than insufficient model capacity. By decomposing retrosynthesis into molecule mapping, reaction mapping, and PDDL generation, we achieve high success rates where end-to-end approaches fail. This provides evidence that a primary bottleneck lies in representation alignmen",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "planning",
-        "reasoning",
-        "alignment",
-        "llm"
-      ]
-    },
-    {
-      "id": "2609.35544",
-      "source": "arxiv",
-      "title": "Less Sycophancy, Stronger Refusal? Lessons for AI Safety from Mechanistic Interpretability",
-      "url": "https://arxiv.org/abs/2609.35544",
-      "authors": [
-        "Xu Wang",
-        "Difan Zou",
-        "Xuansheng Wu"
-      ],
-      "summary": "Reliable refusal of harmful requests is essential to the safe deployment of language models. Because excessive eagerness to please users may undermine existing refusal capabilities, reducing sycophancy offers a potential route to stronger refusal beyond the harmful scenarios covered by safety training. We investigate this possibility using compensatory feature injection (CFI), a training technique designed to limit the acquisition of a target concept by supplying its associated activation during learning. Across three Qwen3.5 base models, we use sparse autoencoders (SAEs) to identify the top-r",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "ai safety",
-        "interpretability",
-        "interpret",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.35530",
-      "source": "arxiv",
-      "title": "AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation",
-      "url": "https://arxiv.org/abs/2609.35530",
-      "authors": [
-        "Yuta Oshima",
-        "Ku Onoda",
-        "Yusuke Iwasawa",
-        "Masahiro Suzuki"
-      ],
-      "summary": "Recent image generation models can take multiple reference images as input and combine them into a new image. However, multi-reference image generation remains challenging: models may omit or duplicate subjects from the references, or produce images in which multiple subjects appear unnaturally pasted. Recent work has proposed image generation agents that combine image generation models, reasoning models, and a harness, which is an executable program that specifies how reference images are interpreted, how generation is performed, how outputs are diagnosed, and how the final image is selected.",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "interpret"
-      ]
-    },
-    {
-      "id": "2609.35695",
-      "source": "arxiv",
-      "title": "Rethinking Personalized Generation: Test-Time Alignment via Factorized Ranking Models",
-      "url": "https://arxiv.org/abs/2609.35695",
-      "authors": [
-        "Qiyao Ma",
-        "Junshan Zhang",
-        "Zhe Zhao"
-      ],
-      "summary": "Aligning large language models (LLMs) to diverse user preferences is fundamentally hindered by standard alignment paradigms that optimize for monolithic users. In this work, empirical studies are first used to reveal the existence of a massive, untapped performance headroom for personalized generation through test-time alignment. We demonstrate that personalized generation is uniquely suited for test-time scaling methods like Best-of-N (BoN) because it can be viewed primarily as a candidate matching problem rather than a generator capability bottleneck. While reward models could in principle e",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "alignment",
-        "llm",
-        "language model",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2609.35759",
-      "source": "arxiv",
-      "title": "Scaling Long-Form Story Generation via Narrative State Tracking",
-      "url": "https://arxiv.org/abs/2609.35759",
-      "authors": [
-        "Zhennan Wan",
-        "Jianfei Chen"
-      ],
-      "summary": "LLMs have demonstrated strong capabilities in creative writing. However, scaling them to full-length novels remains challenging, as maintaining narrative consistency becomes increasingly difficult. Existing story-generation methods typically focus on stories of up to about ten thousand words, leaving their ability to scale to full-length novels underexplored. In this work, we introduce Narrative State Tracking Agent (NstAgent), a training-free agentic framework that allows LLMs to track a structured narrative state including characters, past events and future requirements. We extend an existin",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2609.35367",
-      "source": "arxiv",
-      "title": "From Input to Output: A Flexible Agent for Dual-End Interpretation of Sparse Autoencoder Features",
-      "url": "https://arxiv.org/abs/2609.35367",
-      "authors": [
-        "Dewen Liu",
-        "Zixuan Li",
-        "Jonathan Pan",
-        "Zhao Wu"
-      ],
-      "summary": "Sparse autoencoders (SAEs) are an important tool for mechanistic interpretability, but interpreting their many features remains challenging. Existing methods characterize input-side activation patterns and output-side intervention effects, yet often leave their functional connection implicit, while input-side evidence collection typically relies on costly large-corpus scans. We introduce functional interpretation, which characterizes an SAE feature as a mapping from its activating input semantics to its output effects under intervention, and present Dual-End Agentic Feature Interpretation (DAF",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "interpretability",
-        "interpret"
-      ]
-    },
-    {
-      "id": "2609.33403",
-      "source": "arxiv",
-      "title": "DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration",
-      "url": "https://arxiv.org/abs/2609.33403",
-      "authors": [
-        "Yupeng Xie",
-        "Zhenyang Wang",
-        "Liangwei Wang",
-        "Jiayi Zhu"
-      ],
-      "summary": "Data videos communicate data insights through dynamic charts, voice narration, and synchronized animations, and have become a widely adopted form of data storytelling. However, producing them requires expertise in data analysis, narrative design, and video editing. Static visualization tools lack narrative and animation capabilities; authoring tools rely on pre-prepared charts rather than raw data; and pixel-level models generate videos end-to-end but cannot guarantee data accuracy or provenance. End-to-end automatic generation faces two core challenges: how to uniformly represent charts, narr",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-27",
-      "score": 6.0,
-      "raw_score": 12,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent"
       ]
     }
   ]

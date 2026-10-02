@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T18:46:11Z",
+  "generated_at": "2026-10-02T18:18:37Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -54,30 +54,6 @@
         "agentic",
         "robot",
         "robotics",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.01428",
-      "source": "arxiv",
-      "title": "TRIAGE: Three-level Routing and Intelligent Agent Guidance for Efficient Execution",
-      "url": "https://arxiv.org/abs/2609.01428",
-      "authors": [
-        "Ruocan Wei"
-      ],
-      "summary": "Large Language Model (LLM) agents based on the ReAct paradigm have demonstrated remarkable capabilities in tool use and task execution. However, ReAct suffers from a fundamental efficiency problem: every query triggers a complete reasoning loop from scratch, and similar queries repeat identical steps without leveraging historical experience. We propose TRIAGE,a three-level routing framework that reduces token consumption by reusing historical execution trajectories. Its core innovation is TaaS (Trajectory-as-a-Skill), which abstracts historical execution trajectories into reusable skills, real",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-09-01",
-      "score": 11.0,
-      "raw_score": 22,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "tool use",
-        "reasoning",
-        "llm",
-        "language model",
         "rag"
       ]
     },
@@ -278,6 +254,56 @@
         "agent",
         "autonomous",
         "reasoning",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.01569",
+      "source": "arxiv",
+      "title": "Managing Context and Communication in Distributed Agentic UAV Swarms",
+      "url": "https://arxiv.org/abs/2610.01569",
+      "authors": [
+        "Andrea Iannoli",
+        "Ivan Zyrianoff",
+        "Angelo Trotta",
+        "Lorenzo Gigli"
+      ],
+      "summary": "Unmanned aerial vehicle (UAV) swarms increasingly rely on language-model agents to provide adaptive mission-level reasoning in uncertain environments. Fully distributed control, in which each UAV hosts an independent Small Language Model (SLM), removes reliance on a centralized coordinator but introduces an information-management problem: long-running interaction histories can degrade the reasoning context, while indiscriminate information dissemination increases communication and inference overhead. We address these challenges with a distributed UAV-agent architecture that enables continuous ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-01",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "agentic",
+        "reasoning",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.01451",
+      "source": "arxiv",
+      "title": "A Multi-Agent LLM Framework for Personalized Health Checkup Interpretation and Guidance",
+      "url": "https://arxiv.org/abs/2610.01451",
+      "authors": [
+        "HyungJun Kim",
+        "Taehan Lee",
+        "Soojin Cheon"
+      ],
+      "summary": "Personalized interpretation of health checkup results requires reasoning across longitudinal records, medical knowledge, lifestyle guidance, and healthcare navigation. We present a multi-agent large language model (LLM) system that identifies multiple intents, maps each to a task-specific agent, executes them in parallel, and synthesizes their outputs. We compared answers generated in Single Agent and Multi Agent settings on 120 Korean compound queries combining two to four requirements, using synthetic health checkup records. The Multi Agent improved the weighted LLM-judge score from 1.695 to",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-01",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "interpret",
+        "llm",
         "language model"
       ]
     },
@@ -504,25 +530,25 @@
       ]
     },
     {
-      "id": "2609.01455",
+      "id": "2610.02191",
       "source": "arxiv",
-      "title": "When Safety Routing Breaks: Understanding Alignment Fragility under Benign Fine-Tuning",
-      "url": "https://arxiv.org/abs/2609.01455",
+      "title": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2610.02191",
       "authors": [
-        "Yitong Guo",
-        "Xiaoyi Chen",
-        "Siyuan Zhang",
-        "Xiaofeng Wang"
+        "Shuo Xing",
+        "Zilin Dai",
+        "Chengyuan Qian",
+        "Fangzhou Lin"
       ],
-      "summary": "Benign fine-tuning severely weakens the safety alignment of large language models (LLMs), so we study why refusal behavior is so fragile. While prior work often attributes this failure to gradient conflict, we propose a fundamentally different Fisher-geometric explanation: safety Fisher is low-rank, and alignment makes the safety geometry flatter while preserving an output-routing pathway. After 100 benign fine-tuning examples, this pathway is selectively re-sharpened in output-side MLP modules, explaining the asymmetric fragility: safety can collapse to high attack success rates, while genera",
-      "category": "cs.AI",
+      "summary": "While Large Language Models (LLMs) have demonstrated striking capabilities on frontier mathematical problems, it remains unclear whether they possess the structural mathematical understanding underlying their solutions. In this paper, we take a first step toward systematically studying mathematical understanding in LLMs, from diagnosing its distinct capabilities to leveraging these findings to improve post-training. First, we introduce the notion of Mathematical Primitive to probe structural mathematical understanding and propose \\hlei{}, a novel benchmark that evaluates mathematical reasoning",
+      "category": "cs.LG",
       "tag": "Research",
-      "published_at": "2026-09-01",
-      "score": 8.5,
-      "raw_score": 17,
+      "published_at": "2026-10-01",
+      "score": 8.0,
+      "raw_score": 16,
       "matched_keywords": [
         "agi",
-        "alignment",
+        "reasoning",
         "llm",
         "language model",
         "rag"
@@ -792,6 +818,55 @@
         "llm",
         "language model",
         "rag"
+      ]
+    },
+    {
+      "id": "2610.02038",
+      "source": "arxiv",
+      "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
+      "url": "https://arxiv.org/abs/2610.02038",
+      "authors": [
+        "Yimeng Liu",
+        "Mi Zhang",
+        "Younsuk Dong",
+        "Zhichao Cao"
+      ],
+      "summary": "Large language model (LLM) agents increasingly combine reasoning, tool use, and action, but most evidence comes from episodic tasks with relatively immediate feedback and reset failures. Long-running physical control operates in a different regime: actions alter future states, errors compound across decisions, and an agent must improve from experience without being allowed to rewrite the physical rules that make execution safe. We study this regime through irrigation, where daily decisions interact with soil-water dynamics over entire growing seasons. We present Mimir, a physics-grounded LLM a",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-01",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "tool use",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.00889",
+      "source": "arxiv",
+      "title": "HakiCC: LLM-Driven Multi-Agent Design and Optimization of Concurrency Control Protocols",
+      "url": "https://arxiv.org/abs/2610.00889",
+      "authors": [
+        "Farzad Habibi",
+        "Juncheng Fang",
+        "Faisal Nawab"
+      ],
+      "summary": "Large language models (LLMs) have recently been applied in systems research as a tool to reduce human-intensive engineering effort through cost-efficient automation. Decades of research have produced a rich landscape of concurrency control (CC) protocols, each encoding distinct trade-offs in correctness, throughput, and abort behavior. However, most applications in practice default to 2PL or OCC, because selecting and adapting a protocol to a specific application requires expert knowledge that is rarely available to application designers. This is a wasted opportunity, as an application-specifi",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-01",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "language model",
+        "automation"
       ]
     },
     {
@@ -1112,6 +1187,79 @@
       ]
     },
     {
+      "id": "2610.02206",
+      "source": "arxiv",
+      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "url": "https://arxiv.org/abs/2610.02206",
+      "authors": [
+        "Pengfei Li",
+        "Naufal Suryanto",
+        "Sicheng Zhang",
+        "Muzammal Naseer"
+      ],
+      "summary": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark ",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-01",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
+        "llm"
+      ]
+    },
+    {
+      "id": "2610.01936",
+      "source": "arxiv",
+      "title": "Mapping the RAG Landscape: A Four Axis Taxonomy of Efficiency, Defense, Interactivity, and Reasoning",
+      "url": "https://arxiv.org/abs/2610.01936",
+      "authors": [
+        "Meghana Sunil",
+        "Shravya V",
+        "Shravan Venkatraman",
+        "Joe Dhanith PR"
+      ],
+      "summary": "Large Language Models (LLMs) have demonstrated remarkable fluency across many tasks but remain limited by their static, parameter bound knowledge and their susceptibility to hallucinating information. Retrieval Augmented Generation (RAG) addresses these issues by incorporating external retrieval into the generation process, grounding model outputs in verifiable and up to date sources. While prior surveys primarily focus on core RAG architectures and standard pipelines, recent research explores broader challenges and capabilities that extend beyond these foundational designs. This survey provid",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-01",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.01847",
+      "source": "arxiv",
+      "title": "Detecting Inconsistencies in Model Specifications with LLM-as-Verifier Reasoning",
+      "url": "https://arxiv.org/abs/2610.01847",
+      "authors": [
+        "Zichen Xie",
+        "Mrigank Pawagi",
+        "Lize Shao",
+        "Yang Hu"
+      ],
+      "summary": "Model specifications define how large language models (LLMs) should behave, guiding alignment training, inference-time behavior, and evaluation. Yet these specifications may themselves contain defects: two individually reasonable principles may prescribe incompatible behavior when applied to the same situation, leaving no response that satisfies both. Detecting such inconsistencies is challenging. Formalizing natural-language specifications risks losing subtle distinctions, while behavior-based testing cannot reliably distinguish specification defects from differences in model behavior. We int",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-01",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "reasoning",
+        "alignment",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2609.39958",
       "source": "arxiv",
       "title": "Better Deck or Different Judge? Evaluating Agentic Harness Gains in Corporate and Investment Banking",
@@ -1323,149 +1471,6 @@
         "agentic",
         "autonomous",
         "llm"
-      ]
-    },
-    {
-      "id": "2609.35599",
-      "source": "arxiv",
-      "title": "Signatures of semantic search in the activations of large language models",
-      "url": "https://arxiv.org/abs/2609.35599",
-      "authors": [
-        "Luke Leckie",
-        "Peter M. Todd",
-        "Jacob G. Foster"
-      ],
-      "summary": "When recalling lists of concepts (e.g., animals) during the semantic fluency task (SFT), both humans and large language models (LLMs) organise their output into clusters of related items (e.g., sea animals) that are punctuated by strategic switches between clusters. In humans, this pattern can be explained by a semantic foraging process, whereby distinct neural and behavioural signatures accompany within-cluster production (\"exploit\") and between-cluster switching (\"explore\"). Whether LLMs likewise represent these two search regimes within their internal states is unknown. Here, we apply a ran",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agi",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2609.35551",
-      "source": "arxiv",
-      "title": "BaRe-Mem: Bayesian Reliability Memory for Robust and Adaptive Agent Consultation",
-      "url": "https://arxiv.org/abs/2609.35551",
-      "authors": [
-        "Peilin Feng",
-        "Zhengyang Huang",
-        "Soujanya Poria"
-      ],
-      "summary": "In multi-agent systems, reliable consultation is challenging because advisor capabilities vary across tasks, and misleading information can make consultation worse than autonomous reasoning. We introduce BaRe-Mem, an online Bayesian reliability memory for multi-agent consultation. It estimates advisor reliability based on the central model's internal belief representations and updates these estimates from historical interactions. These estimates modulate the influence of advisor responses and guide the choice between consultation and autonomous reasoning. Across nine benchmarks and six central",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "reasoning"
-      ]
-    },
-    {
-      "id": "2609.35412",
-      "source": "arxiv",
-      "title": "Self-Adapting Group of Experts for Multi-Agent Reasoning",
-      "url": "https://arxiv.org/abs/2609.35412",
-      "authors": [
-        "Mohammad Atif Quamar",
-        "Nurbek Tastan",
-        "Karthik Nandakumar",
-        "Junpei Komiyama"
-      ],
-      "summary": "Multi-agent systems bring together language model agents with different roles to propose, review, and refine solutions. Each agent's response depends on its model's capabilities, the reasoning strategy defined by its system prompt, and the information in its input context. Existing frameworks often adapt communication by changing this context while leaving individual prompts fixed, even when a problem calls for different skills. We study whether agents' initial responses can identify a strategy better suited to the current problem and guide its transfer to other agents. To address this, we int",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-28",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "reasoning",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.35378",
-      "source": "arxiv",
-      "title": "Multilinguality in Hybrid Attention LLMs",
-      "url": "https://arxiv.org/abs/2609.35378",
-      "authors": [
-        "Lucas Bandarkar",
-        "Junlin Hu",
-        "Chenyuan Yang",
-        "Mohsen Fayyaz"
-      ],
-      "summary": "In response to the growing demand for long sequences in agentic and reasoning use cases, many state-of-the-art LLMs combine multiple variants of attention to mitigate the quadratic complexity of traditional softmax attention. These hybrid attention LLMs aim to balance the strengths and limitations of full attention and alternatives based on recurrence. This work presents a first study of how hybrid attention impacts the multilinguality of LLMs. Beyond the impact on long sequences in poorly tokenized languages, our study is motivated by the possibility that the inductive biases of the recurrent",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "reasoning",
-        "llm"
-      ]
-    },
-    {
-      "id": "2609.35032",
-      "source": "arxiv",
-      "title": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
-      "url": "https://arxiv.org/abs/2609.35032",
-      "authors": [
-        "Zhixi Cai",
-        "Fucai Ke",
-        "Sukai Huang",
-        "Maria Garcia de la Banda"
-      ],
-      "summary": "In complex embodied visual reasoning scenarios, an agent often has only a limited field of view, and the evidence needed to answer a question may be distributed across time, viewpoint, and interacting objects. A model may therefore give a plausible answer without ever observing the relevant object, time, or view that supports it. Current visual reasoning benchmarks largely evaluate passive observations and final answers, overlooking settings that require active reasoning and evidence acquisition. We introduce JRDB-AVR, a benchmark derived from existing real-world JRDB robotics data through a s",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-28",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "reasoning",
-        "embodied",
-        "robot",
-        "robotics"
-      ]
-    },
-    {
-      "id": "2609.35936",
-      "source": "arxiv",
-      "title": "Embodied Semantic Communication for Collective Autonomous Agents: A Tutorial on Representation, Wireless Delivery, and Closed-Loop Coordination",
-      "url": "https://arxiv.org/abs/2609.35936",
-      "authors": [
-        "Yizheng Huang",
-        "Wensheng Lin",
-        "Lixin Li",
-        "Qinghe Du"
-      ],
-      "summary": "As autonomous systems and embodied intelligence enter the dynamic physical world, multi-agent collaboration calls for a paradigm shift in communication design. However, existing communication paradigms overlook that agents form action understanding from their own states, environmental observations, and collaboration relations through a process that evolves as a task unfolds. Consequently, reliable bit delivery, general semantic recovery, or single-task utility optimization alone cannot ensure that heterogeneous agents form coordinated actions compatible with their own conditions from shared in",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-09-28",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "embodied"
       ]
     }
   ]

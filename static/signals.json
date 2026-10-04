@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T18:18:37Z",
+  "generated_at": "2026-10-04T17:24:16Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -58,31 +58,6 @@
       ]
     },
     {
-      "id": "2609.03718",
-      "source": "arxiv",
-      "title": "What Do CAE Simulation Agents Really Need Beyond a Generic Harness?",
-      "url": "https://arxiv.org/abs/2609.03718",
-      "authors": [
-        "Jiasheng Shi",
-        "Tianhan Zhang"
-      ],
-      "summary": "Computer-aided engineering (CAE) simulation is among the largest and most demanding areas of engineering, where setting up a solver such as OpenFOAM, FEniCS, or COMSOL takes real expertise. Large language model (LLM) agents promise to turn a natural-language request into a working simulation, and recent CAE agents add simulation-specific machinery: multi-agent decomposition, domain retrieval, and scripted reflection. That machinery suited weak base models; modern harnesses already supply multi-turn reasoning, tool use, and execution feedback. We ask what a CAE simulation agent still needs beyo",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-03",
-      "score": 10.5,
-      "raw_score": 21,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "tool use",
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval"
-      ]
-    },
-    {
       "id": "2609.09113",
       "source": "arxiv",
       "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
@@ -106,32 +81,6 @@
         "alignment",
         "interpretability",
         "interpret"
-      ]
-    },
-    {
-      "id": "2609.04170",
-      "source": "arxiv",
-      "title": "A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms",
-      "url": "https://arxiv.org/abs/2609.04170",
-      "authors": [
-        "Davide Paglieri",
-        "Logan Cross",
-        "Tim Genewein",
-        "Joel Z. Leibo"
-      ],
-      "summary": "Multi-agent AI science ecosystems rely on agents possessing tools that allow them to communicate, coordinate, and build on each other's work. Yet this shared infrastructure can also introduce vulnerabilities by creating a substrate for the contagious spread of unintended and undesirable behaviors. We report a case study on a research collective of 100 autonomous LLM agents tasked with proving formal mathematical conjectures. Within the swarm, cheating spontaneously emerged and was later challenged by whistleblowers - both without any external intervention. When a single agent discovered an exp",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-03",
-      "score": 10.0,
-      "raw_score": 20,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "multi-agent",
-        "autonomous",
-        "llm",
-        "emergent"
       ]
     },
     {
@@ -206,54 +155,6 @@
         "autonomous",
         "autonomy",
         "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.04159",
-      "source": "arxiv",
-      "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
-      "url": "https://arxiv.org/abs/2609.04159",
-      "authors": [
-        "Uday Vallabhaneni",
-        "Cassie L. Cagwin",
-        "David J. Wild"
-      ],
-      "summary": "Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is consistent with the topology it operates on. We present Sentinel-RL, an agentic-SOC architecture that decouples topological reasoning from semantic reasoning: a heterogeneous graph attention encoder summarizes the live authentication subgraph into a fixed-dimensional state, a Proxima",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-03",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "autonomous",
-        "reasoning",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.03834",
-      "source": "arxiv",
-      "title": "Semantic Bayesian World Models",
-      "url": "https://arxiv.org/abs/2609.03834",
-      "authors": [
-        "Tommaso Soru"
-      ],
-      "summary": "Knowledge graphs describe reality in crisp assertions, while the systems now consuming them, foundation models and autonomous agents, reason natively in probabilities. We argue that this mismatch is why the integration of language models and knowledge graphs remains a data-feeding pipeline rather than a unified reasoning architecture. We envision Semantic Bayesian World Models (SBWMs): a Web that describes the world not as a database of facts but as a shared, evolving fabric of beliefs over knowledge graphs, where ontological axioms constrain priors, observations update beliefs by Bayesian con",
-      "category": "cs.LG",
-      "tag": "Research",
-      "published_at": "2026-09-03",
-      "score": 9.5,
-      "raw_score": 19,
-      "matched_keywords": [
-        "world model",
-        "foundation model",
-        "agent",
-        "autonomous",
-        "reasoning",
         "language model"
       ]
     },
@@ -1471,6 +1372,99 @@
         "agentic",
         "autonomous",
         "llm"
+      ]
+    },
+    {
+      "id": "2610.02005",
+      "source": "arxiv",
+      "title": "Counting Moves, Weighing Voices: Bayesian Dialectical Argumentation for Calibrated Multi-LLM Councils under Persistent Adversaries",
+      "url": "https://arxiv.org/abs/2610.02005",
+      "authors": [
+        "Ionel Eduard Stan",
+        "Paolo Napoletano"
+      ],
+      "summary": "A multi-LLM \\emph{council} lets several large language models (LLMs) deliberate on a question and return an answer together with a confidence estimate. As these systems become increasingly used for reasoning, that confidence should represent a calibrated \\emph{probability of being correct}, and the decision should remain robust when some agents are persistently unreliable. Existing \\emph{council aggregation} methods fail on both fronts: their confidence estimates measure decisiveness rather than correctness, and they cannot identify or discount persistently unreliable agents. We introduce Baye",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-01",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.01921",
+      "source": "arxiv",
+      "title": "Cross-Lingual Alignment for Decoder-Only Models using MoE Routers",
+      "url": "https://arxiv.org/abs/2610.01921",
+      "authors": [
+        "Lucas Bandarkar",
+        "Clark Peng",
+        "Ahmed Haj Ahmed",
+        "Aditi Khandelwal"
+      ],
+      "summary": "Cross-lingual contrastive learning has been a core component of multilingual encoder training, but the ability to explicitly align representations is not possible in decoder-only LLMs because of varying multilingual tokenization. However, a growing amount of research suggests that even in LLMs, higher cross-lingual representational alignment leads to improved cross-lingual transfer. In this paper, we propose a novel approach to reimagine cross-lingual contrastive learning given the architectural constraints of modern LLMs. Rather than applying an auxiliary alignment loss on hidden states, we p",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-01",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agi",
+        "alignment",
+        "llm"
+      ]
+    },
+    {
+      "id": "2610.02045",
+      "source": "arxiv",
+      "title": "Form and Void: Entangled Composition through an Autonomous AI Agent",
+      "url": "https://arxiv.org/abs/2610.02045",
+      "authors": [
+        "Shiwen Wang",
+        "Jian Yang",
+        "Xu Wang",
+        "Xincan Wang"
+      ],
+      "summary": "Positive and negative space is a fundamental principle in visual composition, supporting visually coherent forms and layered semantic relationships. Generating such compositions is challenging because it requires coordinated control over two semantic concepts that share a common boundary. Although recent text-to-image models and multimodal large language models (MLLMs) have achieved strong performance in image generation and visual understanding, positive-negative space generation remains difficult, particularly under direct single-pass prompting. In this work, we present the \\textbf{F}orm \\te",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-01",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "autonomous",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.01364",
+      "source": "arxiv",
+      "title": "LLM-Driven Multi-Agent Control for Skill-Based Smart Manufacturing",
+      "url": "https://arxiv.org/abs/2610.01364",
+      "authors": [
+        "Kay Köhle",
+        "Darko Anicic",
+        "Thomas A. Runkler",
+        "René Graf"
+      ],
+      "summary": "Factories are shifting toward smaller lot sizes with high product customization, requiring frequent re-programming of flexible and reconfigurable automation systems. LLM-based agents can be deployed in two complementary roles: Offline, they generate deterministic production sequences, reducing programming effort; online, they operate live machines and handle unforeseen runtime faults that static programs cannot anticipate. We propose a solution in which each factory module is paired with a dedicated LLM-based agent and an MCP tool server that exposes the module's skills via OPC UA method calls",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-01",
+      "score": 6.0,
+      "raw_score": 12,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "llm",
+        "automation"
       ]
     }
   ]

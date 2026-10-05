@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Sun, 04 Oct 2026 17:24:16 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 05 Oct 2026 21:08:12 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -27,6 +27,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.09113</guid>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
       <description>While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essent... [Score: 10.0 | Flagged for: recursive self-improvement, agent, autonomous, alignment, interpretability] Authors: Yuqiao Tan, Shizhu He, et al.</description>
+    </item>
+    <item>
+      <title>OmniAct3D: Leveraging Foundation Geometry and Evidence-Grounded Reasoning for Panoramic 3D Detection</title>
+      <link>https://arxiv.org/abs/2610.03015</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.03015</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Accurate 3D detection is essential for mobile embodied agents, while Vision Foundation Models (VFMs) offer transferable visual and geometric priors. Yet existing VFM-based 3D detectors rely on narrow-view monocular images or discrete perspective views, limiting coherent surround perception; equirect... [Score: 9.5 | Flagged for: agi, foundation model, agent, reasoning, embodied] Authors: Runtong Wu, Fei Teng, et al.</description>
     </item>
     <item>
       <title>Prospective Interpretation Risk: Principled Communication Control Between LLMs</title>
@@ -78,6 +85,20 @@
       <description>Ensuring the safety of autonomous driving is a critical challenge. Scenario-based testing is a systematic process used to validate Autonomous Driving Systems (ADSs), but it remains a fragmented modular pipeline in which scenario generation, retrieval, modification, ADS execution, and results analysi... [Score: 9.0 | Flagged for: agent, autonomous, planning, llm, language model] Authors: Yuan Gao, Sebastian Müller, et al.</description>
     </item>
     <item>
+      <title>Investigating the Role of Reasoning-Language Alignment in Monolingual Retrieval-Augmented Generation</title>
+      <link>https://arxiv.org/abs/2610.03136</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.03136</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Reasoning traces improve large language models (LLMs), but current models are trained to reason mostly in English. It has been shown that forcing a model to reason in another language degrades accuracy, even when the reasoning language matches the language of the prompt -- but only for a setting whe... [Score: 8.5 | Flagged for: reasoning, alignment, llm, language model, retrieval] Authors: Oliver Hauck, Mario Sanz-Guerrero, et al.</description>
+    </item>
+    <item>
+      <title>Engineering Sustainable Agents: A Systematic Comparison of Agentic LLMs for Developer Workflows</title>
+      <link>https://arxiv.org/abs/2610.03010</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.03010</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) are increasingly used in software engineering, including agentic systems that coordinate multiple agents, but impose higher computational and environmental costs. In this paper, we present a comprehensive empirical study of agentic LLM systems across five software engine... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, llm, language model] Authors: Merve Astekin, Yan Naing Tun, et al.</description>
+    </item>
+    <item>
       <title>Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering</title>
       <link>https://arxiv.org/abs/2609.38177</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2609.38177</guid>
@@ -125,6 +146,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.09503</guid>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
       <description>Rapid bespoke commissioning of the Cognitive Digital Twin (CDT) is a major challenge in reconfigurable manufacturing. Traditional digital twin (DT) construction methods primarily focus on geometric reconstruction, often neglecting the deep semantic integration and functional interoperability necessa... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, autonomous, reasoning] Authors: Yangyang Liu, Xun Xu, et al.</description>
+    </item>
+    <item>
+      <title>Collective Bias Mitigation via Model Routing and Collaboration</title>
+      <link>https://arxiv.org/abs/2610.03240</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.03240</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language models (LLMs) are increasingly deployed in public health, finance, and governance, requiring both accuracy and societal value alignment. Despite recent advances, LLMs often perpetuate or amplify bias embedded in their training data, posing challenges to fairness. While self-debiasing ... [Score: 8.0 | Flagged for: alignment, value alignment, llm, language model, rag] Authors: Mingzhe Du, Luu Anh Tuan, et al.</description>
+    </item>
+    <item>
+      <title>Defense-in-Depth at the Perception-Reasoning Interface of LLM-Centric Agentic UAV Swarms</title>
+      <link>https://arxiv.org/abs/2610.03319</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.03319</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large Language Models (LLMs) increasingly support Uncrewed Aerial Vehicle (UAV) swarm operations such as data collection scheduling, where the model reads structured sensor reports and decides which sensors to visit. An adversary who quietly manipulates those reports can redirect the swarm without m... [Score: 8.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Mohammadhossein Homaei, Yousef Emami, et al.</description>
     </item>
     <item>
       <title>The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models</title>
@@ -181,41 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.11699</guid>
       <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
       <description>On-Policy Self-Distillation (OPSD) has emerged as a popular paradigm for large language model (LLM) self-improvement, allowing models to act as their own teachers by leveraging privileged information such as ground-truth solutions. However, recent findings indicate that OPSD can severely degrade the... [Score: 8.0 | Flagged for: agi, reasoning, llm, language model, rag] Authors: Rongcan Pei, Zhepei Wei, et al.</description>
-    </item>
-    <item>
-      <title>A Voice-Interactive Multi-Agent System for Smart Operating Rooms: Architecture Design and Key Technologies</title>
-      <link>https://arxiv.org/abs/2609.11231</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.11231</guid>
-      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
-      <description>This paper presents SurgicalRoomAgent, a voice-interactive multi-agent system for smart operating rooms based on large language models (LLMs). The system achieves natural language understanding, device control, intraoperative recording, and surgical report generation through a layered architecture c... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Tianxiang Zhou</description>
-    </item>
-    <item>
-      <title>Avatar: Toward Autonomous End-to-End Orchestration of Scientific Workflows using LLMs</title>
-      <link>https://arxiv.org/abs/2609.10509</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.10509</guid>
-      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Scientific workflow management (WMSs) systems automate execution, yet orchestrate using fixed, hand-tuned rules. LLM agents promise more autonomous orchestration, but it remains unclear where to introduce agentic reasoning, how to bound its risk, and when it actually helps. We present Avatar, an act... [Score: 8.0 | Flagged for: agent, agentic, autonomous, reasoning, llm] Authors: Suman Raj, Hai Duc Nguyen, et al.</description>
-    </item>
-    <item>
-      <title>A Structured Debate-Mixture-of-Agents Framework for Complex Clinical Diagnostic Decision Support</title>
-      <link>https://arxiv.org/abs/2609.05069</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.05069</guid>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) show potential for medical tasks, but their single-turn question-answer format does not reflect how clinical diagnosis is performed in practice. As a result, they remain limited in complex diagnostic settings. We developed Debate-Mixture-of-Agents (DMoA), a novel multi-a... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Chang Xia, Leilei Ouyang, et al.</description>
-    </item>
-    <item>
-      <title>Leveraging Low-Level Symbolic Competences for Unsupervised Grounding in Hallucination Detection</title>
-      <link>https://arxiv.org/abs/2609.05025</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.05025</guid>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Hallucination-where a language model generates outputs that are factually incorrect or unsupported by the source-is a major challenge for both prompted and fine-tuned language models. Detecting hallucinations is difficult due to the opaque reasoning processes of LLMs, which often provide little insi... [Score: 8.0 | Flagged for: agi, reasoning, llm, language model, rag] Authors: Renato Vukovic, Hsien-chin Lin, et al.</description>
-    </item>
-    <item>
-      <title>Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control</title>
-      <link>https://arxiv.org/abs/2610.02038</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.02038</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large language model (LLM) agents increasingly combine reasoning, tool use, and action, but most evidence comes from episodic tasks with relatively immediate feedback and reset failures. Long-running physical control operates in a different regime: actions alter future states, errors compound across... [Score: 7.5 | Flagged for: agent, tool use, reasoning, llm, language model] Authors: Yimeng Liu, Mi Zhang, et al.</description>
     </item>
   </channel>
 </rss>

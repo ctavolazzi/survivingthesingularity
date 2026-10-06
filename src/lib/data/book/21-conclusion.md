@@ -85,7 +85,7 @@ Another part of that future was being made through a quieter decision. On April 
 
 That didn't give everyone a computer or a connection. It removed a particular barrier to building on particular software. The comparison with food has that boundary: a meal still needs material, work, and delivery. But the episode gives hope something firmer than a prediction to stand on. People can choose terms that let more people benefit. We can ask which barrier our next decision will remove.
 
-**The mechanism.** A compounding technology is always the worst it will ever be, today. Critics benchmark the present version; builders build against the next one. Both are describing something real. And a technology can prove its critics wrong about what it can do and still create real problems worth criticizing.
+**The mechanism.** A technology's present limits don't tell you which ones will yield to further work. Critics benchmark the present version; builders test what can change. Neither improvement nor failure is guaranteed. And a technology can prove its critics wrong about what it can do and still create real problems worth criticizing.
 
 **The rule.** Let actual results change the plan, including your optimistic plan. You're living through this decade's version of Stoll's essay, published weekly, about AI, by smart people, containing accurate complaints. You've now read twenty-four entries in the Precedent Ledger, from the first grain fields to a magazine calling the web a letdown. You know how this rhymes. My bet is 2027. The essayists will still be writing. You'll be building.
 
@@ -115,7 +115,7 @@ He took a copy of the book out of his jacket and set it on the bar.
 
 On the television above the liquor, sound off, a panel of serious people was arguing about the newest model release, chyrons doing the work of sirens. Nobody in the bar looked up. That was the other thing three years had taught him: the wave never announces itself on the news. It announces itself in rooms like this one, three careers at a time, quietly, while everybody watches the wrong screen. For how people were living through it, he had learned to ask someone, and wait for an answer.
 
-Three years. Long enough to lose the pleasure of being right about everything he feared. Long enough for Devendra to arrive with the children, for Frank to put his name on a different bench, for a delivery sheet to acquire Rosa's instruction in Curtis's careful handwriting: *prepared, less spicy*. The route still needed money beyond June. Reuben still had unanswered questions. Nobody had mistaken a stack of forms for dinner.
+Three years. Long enough to lose the pleasure of being right about everything he feared. Long enough for Devendra to arrive with the children, for Frank to put his name on a different bench, for a delivery sheet to acquire Rosa's instruction in Curtis's careful handwriting: *prepared, less spicy*. The route still needed money beyond December. Reuben still had unanswered questions. Nobody had mistaken a stack of forms for dinner.
 
 Long enough, too, to be wrong in every way this book documents, the renders, the optimized script, the commented-out line, the crust called a planet, the flash done solo, and to learn the one thing his arithmetic could never have produced on its own: that the answer to the machine was never going to be a smarter machine. It was nineteen households who know whose kid is whose, times eleven towns, times whatever number you're about to make it.
 

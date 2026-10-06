@@ -2,10 +2,10 @@
   "scope": "Frozen publication PDFs; independent resource and text-layer audit",
   "files": {
     "interior": {
-      "path": "/Users/ctavolazzi/Code/active/sts-v0.8.2/publication/output/Surviving-the-Singularity-interior.pdf",
-      "sha256": "554e9988db2d765da6f99b99d16e2f9b67cedba36052f39e160ce67989ad5c7d",
-      "pages": 228,
-      "bytes": 13157810,
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.1/publication/output/Surviving-the-Singularity-interior.pdf",
+      "sha256": "8c47246769808fffdb1a47bf0e6c038624aea94039911d6d34721f2a3690c946",
+      "pages": 393,
+      "bytes": 27185491,
       "all_boxes_6x9": true,
       "wrong_boxes": [],
       "fonts": [
@@ -31,6 +31,31 @@
         },
         {
           "base_font": "/HRFTZU+BookSerif-Italic",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/FSDAEI+JetBrains-Mono-Semi-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/DAAMAH+JetBrains-Mono",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/OCCJPU+BookSans-Italic",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/CFDMQT+Arial-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/HHHHIV+Arial",
           "subtype": "/Type0",
           "embedded": true
         }
@@ -51,29 +76,19 @@
         "7"
       ],
       "page_labels_last_three": [
-        "226",
-        "227",
-        "228"
+        "391",
+        "392",
+        "393"
       ]
     },
     "reading": {
-      "path": "/Users/ctavolazzi/Code/active/sts-v0.8.2/publication/output/Surviving-the-Singularity-reading.pdf",
-      "sha256": "4d8e4a441cf2e476ee45d0ab77bde8028cd4da9c0305e2ac111196241ac11c9e",
-      "pages": 229,
-      "bytes": 13696456,
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.1/publication/output/Surviving-the-Singularity-reading.pdf",
+      "sha256": "3790dfa79eaab6d977bb40dba423e65aede617f5a2cc575729e231dba8532a13",
+      "pages": 394,
+      "bytes": 31792078,
       "all_boxes_6x9": true,
       "wrong_boxes": [],
       "fonts": [
-        {
-          "base_font": "/SHNHDX+BookSans",
-          "subtype": "/Type0",
-          "embedded": true
-        },
-        {
-          "base_font": "/KHEPKV+BookSerif",
-          "subtype": "/Type0",
-          "embedded": true
-        },
         {
           "base_font": "/SHNHDX+BookSans",
           "subtype": "/Type0",
@@ -98,6 +113,31 @@
           "base_font": "/HRFTZU+BookSerif-Italic",
           "subtype": "/Type0",
           "embedded": true
+        },
+        {
+          "base_font": "/FSDAEI+JetBrains-Mono-Semi-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/DAAMAH+JetBrains-Mono",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/OCCJPU+BookSans-Italic",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/CFDMQT+Arial-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/HHHHIV+Arial",
+          "subtype": "/Type0",
+          "embedded": true
         }
       ],
       "all_fonts_embedded": true,
@@ -105,7 +145,7 @@
         "/Producer": "WeasyPrint 68.1",
         "/Title": "Surviving the Singularity",
         "/Author": "Christopher Tavolazzi",
-        "/Subject": "Publication design edition of manuscript v0.8.2"
+        "/Subject": "Publication design edition of manuscript v0.10.1"
       },
       "page_labels_first_seven": [
         "Cover",
@@ -117,41 +157,66 @@
         "2"
       ],
       "page_labels_last_three": [
-        "222",
-        "223",
-        "224"
+        "387",
+        "388",
+        "389"
       ]
     },
     "print-interior": {
-      "path": "/Users/ctavolazzi/Code/active/sts-v0.8.2/publication/output/Surviving-the-Singularity-print-interior.pdf",
-      "sha256": "92de382066ba06acf9eb4ddf088a17fd792895bf7e8af711c879a61c25eab1c0",
-      "pages": 228,
-      "bytes": 7718646,
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.1/publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "sha256": "81a2bde3407457df9ff157ce1380a2e89cb0899b6d5dd641accd9062752709b9",
+      "pages": 394,
+      "bytes": 11808561,
       "all_boxes_6x9": true,
       "wrong_boxes": [],
       "fonts": [
         {
-          "base_font": "/QVWHJN+Anonymous",
+          "base_font": "/ZKBAMD+Anonymous",
           "subtype": "/Type0",
           "embedded": true
         },
         {
-          "base_font": "/IVLHYS+Anonymous",
+          "base_font": "/XRBSSN+Anonymous",
           "subtype": "/Type0",
           "embedded": true
         },
         {
-          "base_font": "/NAFOVQ+Anonymous",
+          "base_font": "/TRKTOO+Anonymous",
           "subtype": "/Type0",
           "embedded": true
         },
         {
-          "base_font": "/PLBWKT+Anonymous",
+          "base_font": "/ORQCIO+Anonymous",
           "subtype": "/Type0",
           "embedded": true
         },
         {
-          "base_font": "/TEUIPH+Anonymous",
+          "base_font": "/GFORNF+Anonymous",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/RKURFS+JetBrains-Mono",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/BLMHYK+JetBrains-Mono-Semi-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/DISHXE+Anonymous",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/AXEWIN+Arial",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "base_font": "/PMFLBD+Arial-Bold",
           "subtype": "/Type0",
           "embedded": true
         }
@@ -159,11 +224,11 @@
       "all_fonts_embedded": true,
       "metadata": {
         "/Producer": "GPL Ghostscript 10.04.0",
-        "/CreationDate": "D:20260922185916-07'00'",
-        "/ModDate": "D:20260922185916-07'00'",
+        "/CreationDate": "D:20260928041941-07'00'",
+        "/ModDate": "D:20260928041941-07'00'",
         "/Title": "Surviving the Singularity",
         "/Author": "Christopher Tavolazzi",
-        "/Subject": "6 x 9 inch grayscale print interior, manuscript v0.8.2"
+        "/Subject": "6 x 9 inch grayscale print interior, manuscript v0.10.1"
       },
       "page_labels_first_seven": [
         "i",
@@ -175,30 +240,19 @@
         "3"
       ],
       "page_labels_last_three": [
-        "222",
-        "223",
-        "224"
+        "388",
+        "389",
+        "390"
       ]
     },
     "front-cover": {
-      "path": "/Users/ctavolazzi/Code/active/sts-v0.8.2/publication/output/Surviving-the-Singularity-front-cover.pdf",
-      "sha256": "d394a10ace35e566da9b3ba6515b180ee594df5edb051396eb8ac603cf864cb5",
+      "path": "/Users/ctavolazzi/Code/active/sts-v0.10.1/publication/output/Surviving-the-Singularity-front-cover.pdf",
+      "sha256": "e1129c884a648514de935599ff20d619426f5ab5c703a96c6eb807bd0e932e16",
       "pages": 1,
-      "bytes": 312390,
+      "bytes": 4060298,
       "all_boxes_6x9": true,
       "wrong_boxes": [],
-      "fonts": [
-        {
-          "base_font": "/SHNHDX+BookSans",
-          "subtype": "/Type0",
-          "embedded": true
-        },
-        {
-          "base_font": "/KHEPKV+BookSerif",
-          "subtype": "/Type0",
-          "embedded": true
-        }
-      ],
+      "fonts": [],
       "all_fonts_embedded": true,
       "metadata": {
         "/Producer": "WeasyPrint 68.1",
@@ -214,6 +268,11 @@
     }
   },
   "negative_controls": {
+    "equal_print_page_count_accepted": true,
+    "blank_final_print_page_accepted": true,
+    "nonblank_extra_print_page_rejected": true,
+    "truncated_print_page_rejected": true,
+    "two_extra_print_pages_rejected": true,
     "missing_font_program_rejected": true,
     "wrong_page_width_rejected": true,
     "missing_destination_rejected": true,
@@ -223,10 +282,18 @@
     "text_corruption_detected": true,
     "red_raster_pixel_rejected": true
   },
+  "page_parity": {
+    "interior_pages": 393,
+    "print_pages": 394,
+    "extra_print_pages": 1,
+    "blank_final_page_excluded": true,
+    "passes": true,
+    "reason": "One empty final print page excluded"
+  },
   "annotation_checks": {
-    "interior_total": 378,
-    "reading_total": 378,
-    "print_total": 378,
+    "interior_total": 732,
+    "reading_total": 732,
+    "print_total": 732,
     "cover_annotations": 0,
     "reading_counts_equal_after_cover": true,
     "reading_rectangles_and_targets_equal": true,
@@ -234,14 +301,14 @@
     "print_target_multisets_equal_color": true,
     "all_internal_destinations_resolve": true,
     "internal_counts": {
-      "interior": 62,
-      "reading": 62,
-      "print": 62
+      "interior": 74,
+      "reading": 74,
+      "print": 74
     },
     "external_counts": {
-      "interior": 316,
-      "reading": 316,
-      "print": 316
+      "interior": 658,
+      "reading": 658,
+      "print": 658
     },
     "unresolved": {
       "interior": [],
@@ -251,8 +318,10 @@
   },
   "grayscale_checks": {
     "operator_counts": {
-      "g": 920,
-      "G": 139
+      "g": 9831,
+      "G": 679,
+      "cs": 5,
+      "scn": 5
     },
     "chromatic_operations": [],
     "non_gray_spaces": [],
@@ -266,7 +335,39 @@
         "image_mask": false
       },
       {
-        "object": "(51, 0)",
+        "object": "(372, 0)",
+        "width": 760,
+        "height": 492,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(373, 0)",
+        "width": 1024,
+        "height": 1536,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(374, 0)",
+        "width": 1024,
+        "height": 1536,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(427, 0)",
+        "width": 1180,
+        "height": 684,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(58, 0)",
         "width": 1280,
         "height": 1705,
         "bits": 8,
@@ -274,7 +375,15 @@
         "image_mask": false
       },
       {
-        "object": "(65, 0)",
+        "object": "(468, 0)",
+        "width": 760,
+        "height": 599,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(71, 0)",
         "width": 1920,
         "height": 1440,
         "bits": 8,
@@ -282,7 +391,7 @@
         "image_mask": false
       },
       {
-        "object": "(79, 0)",
+        "object": "(85, 0)",
         "width": 1920,
         "height": 1920,
         "bits": 8,
@@ -290,7 +399,15 @@
         "image_mask": false
       },
       {
-        "object": "(398, 0)",
+        "object": "(534, 0)",
+        "width": 760,
+        "height": 650,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(539, 0)",
         "width": 760,
         "height": 654,
         "bits": 8,
@@ -298,7 +415,7 @@
         "image_mask": false
       },
       {
-        "object": "(89, 0)",
+        "object": "(95, 0)",
         "width": 1280,
         "height": 960,
         "bits": 8,
@@ -306,7 +423,7 @@
         "image_mask": false
       },
       {
-        "object": "(98, 0)",
+        "object": "(104, 0)",
         "width": 1920,
         "height": 1280,
         "bits": 8,
@@ -314,7 +431,23 @@
         "image_mask": false
       },
       {
-        "object": "(107, 0)",
+        "object": "(719, 0)",
+        "width": 1024,
+        "height": 1536,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(720, 0)",
+        "width": 1024,
+        "height": 1536,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(113, 0)",
         "width": 1920,
         "height": 1920,
         "bits": 8,
@@ -322,7 +455,7 @@
         "image_mask": false
       },
       {
-        "object": "(116, 0)",
+        "object": "(122, 0)",
         "width": 1920,
         "height": 1833,
         "bits": 8,
@@ -330,105 +463,89 @@
         "image_mask": false
       },
       {
-        "object": "(549, 0)",
+        "object": "(790, 0)",
         "width": 760,
-        "height": 654,
+        "height": 614,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(139, 0)",
-        "width": 1920,
-        "height": 1920,
+        "object": "(796, 0)",
+        "width": 1283,
+        "height": 1226,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(148, 0)",
-        "width": 1280,
-        "height": 853,
+        "object": "(797, 0)",
+        "width": 1283,
+        "height": 1226,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(157, 0)",
-        "width": 1920,
-        "height": 2560,
+        "object": "(911, 0)",
+        "width": 248,
+        "height": 248,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(677, 0)",
-        "width": 760,
-        "height": 622,
+        "object": "(912, 0)",
+        "width": 248,
+        "height": 248,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(682, 0)",
-        "width": 760,
-        "height": 652,
+        "object": "(915, 0)",
+        "width": 244,
+        "height": 244,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(182, 0)",
-        "width": 1280,
-        "height": 853,
+        "object": "(916, 0)",
+        "width": 244,
+        "height": 244,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(763, 0)",
-        "width": 760,
-        "height": 646,
+        "object": "(920, 0)",
+        "width": 248,
+        "height": 248,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(198, 0)",
-        "width": 1920,
-        "height": 1242,
+        "object": "(921, 0)",
+        "width": 248,
+        "height": 248,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(850, 0)",
-        "width": 760,
-        "height": 662,
+        "object": "(925, 0)",
+        "width": 248,
+        "height": 248,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(207, 0)",
-        "width": 1920,
-        "height": 2560,
-        "bits": 8,
-        "color_space": "gray",
-        "image_mask": false
-      },
-      {
-        "object": "(887, 0)",
-        "width": 760,
-        "height": 636,
-        "bits": 8,
-        "color_space": "gray",
-        "image_mask": false
-      },
-      {
-        "object": "(899, 0)",
-        "width": 760,
-        "height": 666,
+        "object": "(926, 0)",
+        "width": 248,
+        "height": 248,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
@@ -436,13 +553,173 @@
       {
         "object": "(936, 0)",
         "width": 760,
+        "height": 654,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(148, 0)",
+        "width": 1920,
+        "height": 1920,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1125, 0)",
+        "width": 1400,
+        "height": 2070,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1136, 0)",
+        "width": 1400,
+        "height": 2161,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(157, 0)",
+        "width": 1280,
+        "height": 853,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1154, 0)",
+        "width": 760,
+        "height": 654,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(166, 0)",
+        "width": 1920,
+        "height": 2560,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1310, 0)",
+        "width": 760,
+        "height": 622,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1316, 0)",
+        "width": 760,
+        "height": 652,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1387, 0)",
+        "width": 1184,
+        "height": 1328,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1388, 0)",
+        "width": 1184,
+        "height": 1328,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(192, 0)",
+        "width": 1280,
+        "height": 853,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1622, 0)",
+        "width": 760,
+        "height": 646,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1659, 0)",
+        "width": 1536,
+        "height": 1024,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1660, 0)",
+        "width": 1536,
+        "height": 1024,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(208, 0)",
+        "width": 1920,
+        "height": 1242,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1848, 0)",
+        "width": 760,
+        "height": 662,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(217, 0)",
+        "width": 1920,
+        "height": 2560,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1946, 0)",
+        "width": 760,
+        "height": 636,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(1960, 0)",
+        "width": 760,
+        "height": 666,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(2100, 0)",
+        "width": 760,
         "height": 626,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
       },
       {
-        "object": "(224, 0)",
+        "object": "(234, 0)",
         "width": 1920,
         "height": 1280,
         "bits": 8,
@@ -450,7 +727,7 @@
         "image_mask": false
       },
       {
-        "object": "(232, 0)",
+        "object": "(243, 0)",
         "width": 1920,
         "height": 2876,
         "bits": 8,
@@ -458,7 +735,39 @@
         "image_mask": false
       },
       {
-        "object": "(241, 0)",
+        "object": "(2249, 0)",
+        "width": 1648,
+        "height": 792,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(2255, 0)",
+        "width": 1150,
+        "height": 1368,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(2256, 0)",
+        "width": 1150,
+        "height": 1368,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(2264, 0)",
+        "width": 760,
+        "height": 606,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(252, 0)",
         "width": 1479,
         "height": 1114,
         "bits": 8,
@@ -466,7 +775,7 @@
         "image_mask": false
       },
       {
-        "object": "(249, 0)",
+        "object": "(281, 0)",
         "width": 1920,
         "height": 1280,
         "bits": 8,
@@ -474,9 +783,17 @@
         "image_mask": false
       },
       {
-        "object": "(1105, 0)",
+        "object": "(2645, 0)",
         "width": 760,
         "height": 614,
+        "bits": 8,
+        "color_space": "gray",
+        "image_mask": false
+      },
+      {
+        "object": "(331, 0)",
+        "width": 760,
+        "height": 542,
         "bits": 8,
         "color_space": "gray",
         "image_mask": false
@@ -510,7 +827,7 @@
           270,
           405
         ],
-        "max_channel_difference_8bit": 1,
+        "max_channel_difference_8bit": 0,
         "passes_one_level_tolerance": true
       },
       {
@@ -519,7 +836,7 @@
           270,
           405
         ],
-        "max_channel_difference_8bit": 1,
+        "max_channel_difference_8bit": 0,
         "passes_one_level_tolerance": true
       }
     ],
@@ -527,17 +844,19 @@
   },
   "text_checks": {
     "normalization": "NFKC; remove whitespace and soft hyphens only; retain punctuation and text order",
-    "pages_compared": 228,
-    "same_page_count": true,
+    "pages_compared": 393,
+    "print_page_parity_passes": true,
+    "blank_final_page_excluded": true,
+    "same_page_count": false,
     "all_pages_equal": true,
     "mismatches": [],
     "after_counts": {
-      "interior": 50,
-      "print-interior": 50
+      "interior": 78,
+      "print-interior": 79
     },
     "shift_counts": {
-      "interior": 9,
-      "print-interior": 9
+      "interior": 15,
+      "print-interior": 15
     },
     "previous_ft_corruption_present": {
       "interior": false,
@@ -558,7 +877,7 @@
     "Annotation arrays are compared as multisets; Ghostscript ordering is not assumed identical. Reading checks include rectangles and normalized page targets. Print checks compare pagewise target counts.",
     "All print page/form streams and referenced image/shading spaces are inspected. Four rendered pages check actual neutral pixels with documented one-level rounding. This is not an ink-separation or PDF/X certification.",
     "Font embedding checks nonempty programs, not appearance or rights. Original font licenses are packaged separately.",
-    "Text checks compare extracted page text after stated normalization; manuscript paragraph preservation is independently checked by the main proof script."
+    "Text checks compare extracted page text after stated normalization. One empty final print page may be excluded; missing pages, multiple extras, annotations or any content operations on an extra page are rejected. Manuscript paragraph preservation is independently checked by the main proof script."
   ],
   "overall_pass": true
 }

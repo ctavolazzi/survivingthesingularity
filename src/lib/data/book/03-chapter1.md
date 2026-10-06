@@ -138,7 +138,7 @@ Don't let an answer to one stand in for the other three. Most of this book lives
 
 ## What the 2017 paper actually did
 
-The modern run started in 2017, with a Google paper titled "Attention Is All You Need." [Vaswani et al., Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762) Before it, the best language systems read the way you do, one word after another, which meant they couldn't use modern hardware to its full width. The Transformer threw out that sequence and let every word attend to every other word at once, so the whole job could run in parallel across a room full of chips.
+The modern run started in 2017, with a Google paper titled "Attention Is All You Need." Many leading language systems used a recurrent chain: each step depended on the one before it. The Transformer replaced that chain with attention, allowing much more of training to run in parallel. It didn't abolish sequence. Positions still mattered, and its decoder generated an answer one token at a time, using the output already produced. Parallel training and sequential generation are different jobs. [Vaswani et al., Attention Is All You Need (2017), sections 1 and 3](https://arxiv.org/abs/1706.03762)
 
 The foundational model was small by today's standards: sixty-five million parameters in its base configuration, two hundred thirteen million in the big one. The big one beat every system that came before it, including ensembles stacked specifically to win these benchmarks, and it did it on a fraction of the training compute.
 
@@ -168,6 +168,10 @@ I'm not alone out on this limb, and I'm not in the middle of the pack either. In
 | Full Automation of Labor (FAOL), 50% probability | 2164 | 2116 | 48 years sooner |
 
 *Table 3: Shifts in expert forecasts on AI timelines (Grace et al., 2024).*
+
+![Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates.](/book-images/v101-chart-forecast-shift.svg)
+
+*Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. [Grace et al., Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843v3).*
 
 The same survey put a 10 percent probability on high-level machine intelligence arriving as early as 2027. And on the darkest question it asked, between 37.8 and 51.4 percent of respondents, depending on how it was framed, gave at least a 10 percent chance to outcomes as bad as human extinction. These aren't doomers on a forum. These are the people building the systems, surveyed by the thousands, and the median moved thirteen years in twelve months. [Grace et al., Thousands of AI Authors on the Future of AI (2024)](https://arxiv.org/abs/2401.02843)
 

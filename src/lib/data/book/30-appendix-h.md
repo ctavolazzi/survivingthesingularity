@@ -19,7 +19,7 @@
 
 1. Chapter 7 says "the Entitled" and "the Ready" are mindsets, not kinds of people, and most of us carry a little of both. Where do you notice each in yourself?
 2. The Luddites understood exactly what the machines would do to their pay, and still lost. What would they need to have done differently?
-3. Musicians ran newspaper ads against "the Robot" in 1930 and enrolled two million people. Is your trade running its own version now? Would you sign the coupon?
+3. Musicians ran newspaper ads against "the Robot" in 1930; one ad claimed two million supporters. Is your trade running its own version now? Would you sign the coupon?
 4. What's one thing your household depends on that you couldn't replace for a month? Who near you could help if it failed?
 
 ## Questions for Part III: How to Survive the Transition

@@ -64,7 +64,7 @@ The CSA hired an electrical technician to review the installation plan, and two 
 
 By the time the forty units shipped in February, the yellow tab had an answer attached and the folder had grown thick enough to prop open a door. Denny delivered them in apple boxes, each one tested on the bench against a space heater and a cup of wet dirt, with the instructions and the agreed support number. Two growers needed replacement probes in the first month. With the power isolated and help from the support call, they could change the documented part without discarding the controller. Marta put the repair emails up on the corkboard like other shops hang their first dollar.
 
-And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's check-engine light. Curtis, it turned out, diagnosed it in nine minutes off a fourteen-dollar OBD dongle, a cracked vacuum line, two dollars of hose. The light had been on since the drive north. The dealership had quoted him twelve hundred dollars and a week; The man who wanted to fence out the world did the repair while the coffee brewed. He left the remaining length on the dashboard, coiled like a small black snake.
+And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's check-engine light. Curtis, it turned out, diagnosed it in nine minutes off a fourteen-dollar OBD dongle, a cracked vacuum line, two dollars of hose. The light had been on since the drive north. The dealership had quoted him twelve hundred dollars and a week; the man who wanted to fence out the world did the repair while the coffee brewed. He left the remaining length on the dashboard, coiled like a small black snake.
 
 Elijah put the repair card for controller number forty in the folder. Curtis's hose went in the glove box.
 
@@ -97,6 +97,10 @@ Think of it at the scale it deserves, which is Manhattan Project scale. Not a bu
 
 ## The controller isn't dinner
 
+![Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.](/book-images/v101-cutout-printer.png)
+
+*A machine takes shape around its work. AI-adapted cutout from [John Abella](https://commons.wikimedia.org/wiki/File:Prusa_i3_-_RepRap_3D_printer_printing.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).*
+
 The neighborhood factory earns its name when somebody can keep doing useful work because it exists. A repairable controller helps a grower. A local crew knows which part fails during the week nobody has a spare afternoon.
 
 But food first means following the benefit past the machine. Growing, harvesting, handling, storage, cooking, and delivery all stand between a valve opening and a person eating. Rosa couldn't turn a bag of potatoes into dinner with one working hand. The crop was fine. The offer was wrong. How much food exists and what a person can actually eat are different questions, and any honest account of abundance keeps them apart.
@@ -110,6 +114,10 @@ Plants need nitrogen, and the air is almost eighty percent nitrogen, but plants 
 > **N₂ + 3H₂ → 2NH₃** (catalyst, high pressure, high temperature)
 
 To force that reaction, plants run at 150 to 250 times atmospheric pressure and 400 to 500°C, with hydrogen made mostly from natural gas. Ammonia production eats roughly one to two percent of the world's energy supply and accounts for something over one percent of global energy-related carbon emissions. It also feeds billions of people. Synthetic fertilizer is one of the great achievements of the last century, and it's fossil energy stabilized in a bag.
+
+![Three columns show net energy intensity of ammonia production in IEA's 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average.](/book-images/v101-chart-ammonia-energy.svg)
+
+*The energy in ammonia. IEA's global-average estimate and best-available-process benchmarks are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. [IEA, Ammonia Technology Roadmap, 2021](https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary).*
 
 Biology does the same chemistry at outdoor temperature. Legumes, clover, peas, beans, vetch, host *Rhizobium* bacteria in their roots, and those bacteria use an enzyme called nitrogenase to break the nitrogen triple bond:
 
@@ -138,7 +146,7 @@ For the controller in the scene, or one like it, the open-source project Mycodo 
 - **Sensors:** an air temperature and humidity sensor (the SHT31-D is common) and a capacitive soil-moisture probe, which resists corrosion better than the cheap resistive kind.
 - **Actuators:** a relay board switching low-voltage devices: an exhaust fan, a solenoid valve on the irrigation line, supplemental lights. Have someone who knows electrical work check anything that touches mains power.
 
-On a clean Raspberry Pi OS install, the project's documented installer is:
+On a clean Raspberry Pi OS install, check the project's current [installation requirements](https://github.com/kizniche/Mycodo#install-mycodo), then use its documented installer:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -170,6 +178,12 @@ Suppose there are 10 kilograms of usable vegetables and the plan is two kilogram
 | Remaining commitment | Two kilograms, sourced through the food partner before delivery. |
 | Funding | Partner covers supplies and transport; donated time and existing equipment recorded separately. |
 | Outcome to check | All five deliveries arrive, people can use them, and the partner's extra work shows up in the record. |
+
+<!-- interactive:food-delivery -->
+
+![Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.](/book-images/v101-scene-food-delivery.svg)
+
+*One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals.*
 
 Those vegetables supplement meals. They don't make five complete diets. A dependable baseline needs enough suitable food across seasons, prepared food for people who can't cook, and a plan for interruptions. The small trial tests one contribution to that. The donated time and equipment get written down too, not called free: a permanent service can't run on a lucky month of volunteers.
 

@@ -113,6 +113,10 @@ You'll hear these. Here's how I'd answer each of them.
 
 ## Ownership matters because access can be withheld
 
+![Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail.](/book-images/v101-cutout-spot.png)
+
+*Capability still needs an arrangement for access. AI-adapted cutout from [Jonte](https://commons.wikimedia.org/wiki/File%3ASpot_by_Boston_Dynamics.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
+
 Suppose the machines work beautifully. Now suppose one company owns them, controls their supplies, and can cut off service when a subscription lapses. Productive capacity went up. Security for the person who can't pay may not have moved at all.
 
 So whatever the arrangement, shared ownership, public provision, or paying private providers, ask who can raise the price, change the rules, withdraw the service, or sell the equipment, and how the people receiving it and the people working it can challenge those decisions. And don't let any one program become the only door to help. Several providers, supplies held back for bad weeks, repairable equipment, and routes that don't need a proprietary account all make the promise sturdier.
@@ -123,29 +127,37 @@ The scene's argument for owning the machine was privacy, and it's a good one. Ev
 
 You don't need enterprise money. Every few years, data centers retire perfectly good hardware onto the used market, and the co-op's rack came from exactly that: a county surplus auction.
 
+![A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights.](/book-images/v101-visual-operating-stack.svg)
+
+*The model file is one layer of a working service. Running a useful service also takes software, hardware, power, and people who maintain it. Conceptual illustration.*
+
 ### The memory math
 
-For running language models, the bottleneck usually isn't raw processing speed. It's memory: the model's weights have to fit in the graphics card's memory (VRAM) to run fast. A good rule of thumb:
+For running language models, memory is one of the first limits to check. Keeping the weights in graphics memory (VRAM) avoids slower transfers, although some tools can divide work between GPU and system memory. Start with an estimate:
 
 > $$V_{RAM} ≈ ((P · Q) / 8) · B \text{ [GB]}$$
 
-where $P$ is the number of parameters in billions, $Q$ is the bits stored per weight (16 for full precision, 4 or 8 for compressed "quantized" versions), dividing by 8 turns bits into bytes, and $B \approx 1.2$ is a buffer for the working memory a conversation needs.
+where $P$ is the number of parameters in billions, $Q$ is the nominal bits stored per weight (16 for a common unquantized format, 4 or 8 for quantized versions), and dividing by 8 turns bits into bytes. The examples use $B = 1.2$, an illustrative 20 percent allowance, not a guarantee. Quantization metadata, the conversation's key-value cache, context length, and simultaneous users all change the actual requirement. [llama.cpp, server memory and context options](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)
 
-**A small model at full precision.** An 8-billion-parameter model at 16 bits:
+![A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory.](/book-images/v101-chart-weights-memory.svg)
+
+*Memory before the overhead. These are derived weights-only sizes, not measured VRAM requirements. They omit the chapter's illustrative allowance as well as runtime costs. [llama.cpp, memory and context options](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md).*
+
+**A small model at 16 bits.** An 8-billion-parameter model:
 
 > $$V_{RAM} = ((8 · 16) / 8) · 1.2 = 19.2 \text{ GB}$$
 
-That fits on one used 24 GB card.
+That estimate fits within one 24 GB card. Check the actual model and intended context length before buying one.
 
 **A large model, compressed.** A 70-billion-parameter model at 4 bits:
 
 > $$V_{RAM} = ((70 · 4) / 8) · 1.2 = 42 \text{ GB}$$
 
-That needs two 24 GB cards, 48 GB together, which is what the co-op scavenged. Open tools like llama.cpp can split a model's layers across both cards. Ollama runs the models; a local chat interface like Open WebUI puts a friendly front on them. None of it needs to touch the internet to work.
+Two 24 GB cards provide 48 GB in total, which is what the co-op scavenged. Tools like llama.cpp can split supported models across cards, but adding the labels on the boxes doesn't guarantee a working configuration. Test the model, memory use, and speed under the workload you intend. Once the software and weights are downloaded, local inference can run without an internet connection.
 
 ### The heat math
 
-A rack like that throws off somewhere between 600 and 1,000 watts of heat, all day. Inside an insulated building, that's a sauna you're paying an air conditioner to fight. The co-op's answer was to carry the heat outside in liquid. The physics is one line:
+A rack drawing 600 to 1,000 watts turns roughly that much electrical power into heat while it runs. Measure your own load; retired hardware doesn't share one power rating. Inside an insulated building, that's heat you're paying an air conditioner to fight. The co-op's answer was to carry it outside in liquid. The physics is one line:
 
 > $$\dot{Q} = \dot{m} · C_p · \Delta T$$
 
@@ -153,7 +165,7 @@ To move 1,000 watts with a water-glycol coolant ($C_p \approx 3{,}800$ J/kg·°C
 
 > $$\dot{m} = 1000 / (3800 · 5) ≈ 0.053 \text{ kg/s} ≈ 3.2 \text{ liters per minute}$$
 
-That's a gentle flow; a small pump the size of a fist handles it. A salvaged car radiator on a shady outside wall dumps the heat.
+That's the required flow for these assumptions, not a pump specification. The pump must deliver it against the loop's resistance, and the radiator needs enough area, airflow, and temperature difference to reject the heat. Measure coolant temperature under load before relying on the arrangement.
 
 ![The Split-Loop Thermal Exchange: GPU and CPU water blocks inside the insulated shell feed a 12V pump that sends hot coolant through the wall to a salvaged car radiator in free air, with cool coolant returning to the chips](/book-images/ch11-cooling-loop.svg)
 

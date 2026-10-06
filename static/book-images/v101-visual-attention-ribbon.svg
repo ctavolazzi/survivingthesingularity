@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 352" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">THE DAY, CUT INTO PIECES</title>
+<desc id="desc">Fragmented ribbon contrasted with an intact ribbon. A visual metaphor for interruptions and time devoted to a chosen task, without measured scale.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">THE DAY, CUT INTO PIECES</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="78" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Pulled away</text>
+<path d="M28 113L60 118L56 133L31 129Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M34 121L32 126" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M42 121L40 126" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M50 121L48 126" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M63 122L74 112" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<path d="M101 108L144 113L140 146L104 142Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M107 116L105 139" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M115 116L113 139" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M123 116L121 139" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M131 116L129 139" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M139 116L137 139" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M147 122L158 112" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<path d="M165 121L209 126L205 144L168 140Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M171 129L169 137" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M179 129L177 137" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M187 129L185 137" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M195 129L193 137" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M203 129L201 137" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M212 122L223 112" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<path d="M235 104L281 109L277 128L238 124Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M241 112L239 121" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M249 112L247 121" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M257 112L255 121" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M265 112L263 121" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M273 112L271 121" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M284 122L295 112" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<path d="M309 119L350 124L346 147L312 143Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M315 127L313 140" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M323 127L321 140" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M331 127L329 140" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M339 127L337 140" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M353 122L364 112" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<path d="M381 108L446 113L442 131L384 127Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M387 116L385 124" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M395 116L393 124" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M403 116L401 124" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M411 116L409 124" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M419 116L417 124" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M427 116L425 124" fill="none" stroke="#475569" stroke-width="0.8"/>
+<path d="M435 116L433 124" fill="none" stroke="#475569" stroke-width="0.8"/>
+<text x="20" y="191" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">A chosen task</text>
+<path d="M28 223C120 198 172 256 240 232S366 203 449 226L449 252C366 230 302 279 240 258S120 225 28 249Z" fill="#0f172a" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M31 235C120 210 172 269 240 245S366 216 446 239" fill="none" stroke="#475569" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M20 286L460 286" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="306" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Illustration of interruptions, not a clock.</text>
+<text x="20" y="327" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">No fixed recovery time is implied.</text>
+</svg>

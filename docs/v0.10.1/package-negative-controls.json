@@ -1,0 +1,9 @@
+{
+  "scope": "Production package validator, deliberately invalid in-memory plans",
+  "controls": {
+    "missing_referenced_asset": true,
+    "missing_font_notices": true,
+    "remote_render_dependency": true,
+    "unsafe_destination": true
+  }
+}

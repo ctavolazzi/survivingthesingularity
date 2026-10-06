@@ -10,10 +10,12 @@
   //      all of it on load would cost seconds on a phone, so we render a few
   //      sections and extend as the reader approaches the end of what's built.
   import { onMount, tick } from 'svelte';
-  import { marked } from 'marked';
-  import DOMPurify from 'isomorphic-dompurify';
+  import { renderMarkdown } from '$lib/utils/bookMarkdown.js';
+  import { splitBookFigures } from '$lib/bookScenes/segments.js';
+  import { interactiveRegistry } from '$lib/components/interactives/registry.js';
+  import '$lib/styles/book-figures.css';
+  import 'katex/dist/katex.min.css';
   import { sectionsWithBody, book } from '$lib/bookContent';
-  import imageDimensions from '$lib/data/book/image-dimensions.json';
   import { readingPosition } from '$lib/stores/readingPosition';
   import { readerFontSize } from '$lib/stores/readerFontSize';
 
@@ -32,27 +34,6 @@
     for (const s of sections) { out.push(run); run += s.wordCount; }
     return out;
   })();
-
-  function renderMarkdown(raw) {
-    if (!raw) return '';
-    const html = DOMPurify.sanitize(marked(raw));
-    // Applied to the sanitized output - after DOMPurify, never before, so we
-    // are not handing it markup to re-parse.
-    //
-    // The width/height pair is what makes "put me back where I was" work. The
-    // markdown carries no dimensions, so without these the browser cannot
-    // reserve space for an image until it downloads it, and every arrival
-    // shoves the prose below it down the page. Restoring a position against a
-    // document that is still growing lands the reader in the wrong chapter.
-    // With the intrinsic size declared (and CSS keeping width:100%;height:auto)
-    // the box is correct before a single byte arrives, so nothing shifts.
-    return html.replace(/<img ([^>]*?)src="([^"]+)"/g, (match, pre, src) => {
-      const name = src.split('/').pop();
-      const size = imageDimensions[name];
-      const dims = size ? ` width="${size[0]}" height="${size[1]}"` : '';
-      return `<img loading="lazy" decoding="async"${dims} ${pre}src="${src}"`;
-    });
-  }
 
   const INITIAL_MOUNT = 3;
   const MOUNT_STEP = 2;
@@ -344,7 +325,15 @@
           </div>
         {:else}
           <article class="prose">
-            {@html renderMarkdown(section.raw)}
+            {#each splitBookFigures(section.raw) as segment}
+              {#if segment.type === 'markdown'}
+                {@html renderMarkdown(segment.raw)}
+              {:else if interactiveRegistry[segment.id]}
+                {#key segment.id}
+                  <svelte:component this={interactiveRegistry[segment.id]} id={segment.id} src={segment.src} alt={segment.alt} caption={segment.caption} />
+                {/key}
+              {/if}
+            {/each}
           </article>
         {/if}
       </section>

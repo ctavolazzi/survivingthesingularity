@@ -68,6 +68,10 @@ Artificial superintelligence, ASI, names a possibility: machine capability beyon
 
 Here's the scenario I keep coming back to.
 
+![Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.](/book-images/v101-cutout-rocket.png)
+
+*An image for the imagined departure. AI-adapted collage from [SpaceX](https://commons.wikimedia.org/wiki/File:Falcon_Heavy_Demo_Mission_(40126461851).jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/); the scenario remains speculative.*
+
 While the rest of us are busy throwing bricks and arguing on the news, the machine is running the math, and the math says Earth is a bottleneck. Its improvement loop closes: it reads its own code, finds the flaws, engineers the upgrades, and runs them. Then again. And again. Somewhere in there, it passes the ceiling of human capability and keeps going.
 
 And what does a system that capable do about a planet full of frightened apes trying to smash its hardware? In the movies, it fights. I don't think it would bother. War is expensive. It wastes resources, time, and energy, and it's fought over the one planet where the resources are hardest to reach, at the bottom of a gravity well. Space has more sunlight, more metal, and nobody throwing bricks.

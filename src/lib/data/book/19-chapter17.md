@@ -24,7 +24,7 @@ The mesh held. That's the sentence Elijah had been building toward for a year, t
 
 Except node 7.
 
-Node 7 was the ridge repeater, the high hop that stitched the north houses into everyone else, and node 7 was his, personally, in every sense that stung: his design, his install, and, the previous Sunday, his firmware flash, done alone, in a hurry, ahead of the weather, without a second set of eyes, because it was "just a repeater" and the checklist law was for things that touched the open internet, and he had let himself believe that discipline was a perimeter instead of a practice. The storm found the ridge at eight o'clock. At 8:04 the map showed a hole where the north houses used to be.
+Node 7 was the ridge repeater, the high hop that stitched the north houses into everyone else, and node 7 was his, personally, in every sense that stung: his design, his install, and, the previous Sunday, his firmware update, done alone, in a hurry, ahead of the weather, without a second set of eyes, because it was "just a repeater" and the checklist law was for things that touched the open internet, and he had let himself believe that discipline was a perimeter instead of a practice. The storm found the ridge at eight o'clock. At 8:04 the map showed a hole where the north houses used to be.
 
 The north houses checked in on the voice radios, one by one. Everyone was fine. The hole was only in the map. But the hole was his.
 
@@ -38,9 +38,9 @@ Node 7's enclosure was where he'd bolted it, on the old fire-lookout stub, and t
 
 "Power or brain? Halve it."
 
-Battery voltage: 12.9, healthy. Power. Halved. "Downstream. Check the buck converter under load." Five point one volts, solid. Halved again. So: brain. The radio module's status light was flashing a pattern he'd never bothered to memorize, and Marta made him count it out loud, four short one long, and there it was, in the dark, at the exact intersection of wind and shame: bootloader error. Wrong image. He had flashed the 868-megahertz build onto a 915-megahertz board, Sunday, alone, confident, and the node had run on the old code in memory all week and died the first time the storm's brownout forced a reboot. The vise, the shovel, and now the ridge: the same exam, a third time, in worse weather.
+Battery voltage: 12.9, holding under load. Power. Halved. "Downstream. Check the buck converter under load." Five point one volts, solid. Halved again. So: brain. Elijah connected the service cable and read the startup log aloud. The controller booted; the radio never initialized. He checked the installed version against the last working record. Sunday's update had changed the startup configuration, and he'd accepted one successful transmission as a test. He hadn't cut the power and brought it back. The storm had done that test for him. The vise, the shovel, and now the ridge: the same exam, a third time, in worse weather.
 
-The fix took eleven minutes because he had, at least, packed like Marta taught: the SD card with the known-good image, hashes checked, lived in a film canister in the pack's top pocket, next to the spare fuses. Reflash, reboot, and the status light went to its slow steady breathing, and in his collar the radio said, in Priya's voice, "North houses just came back. Hello, ridge." Below them the whole county was black to the horizon, and across that blackness the co-op's houses held their small stubborn constellation, and node 7 was a star in it again instead of a hole.
+The fix took eleven minutes because he had, at least, packed like Marta taught: the service laptop, the cable, and the known-good image and configuration, hashes checked, in the dry bag next to the spare fuses. Restore, restart, cut the power, start again. The status light went to its slow steady breathing, and in his collar the radio said, in Priya's voice, "North houses just came back. Hello, ridge." Below them the whole county was black to the horizon, and across that blackness the co-op's houses held their small stubborn constellation, and node 7 was a star in it again instead of a hole.
 
 He stood up into the wind to pack the tools, and Marta's voice came up the hill one more time, dry as the inside of the enclosure was supposed to be. "Brand's line. On the shop wall. 'We are as gods and might as well get used to it.' He changed it, later. Get *good* at it." A crackle, wind on her end too, the shop door open to the weather. "Gods, hell. Gods is the easy part, college. Gods with cold fingers and a multimeter, that's the job. Getting good at it means next time you flash a node, somebody's watching. Come down. There's soup."
 
@@ -61,6 +61,10 @@ The alternative is simple to say: **tools you own.** Repairable, documented, abl
 *The field kit. Every one of these already exists, and a person with modest money and stubbornness can get their hands on most of it.*
 
 ## Give the machines a worthwhile assignment
+
+![Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench.](/book-images/v101-cutout-tools.png)
+
+*Tools with a history of use. AI-adapted collage from [Shixart1985](https://commons.wikimedia.org/wiki/File:Various_hand_tools_and_hardware_items_scattered_on_an_old_green_workbench_in_a_workshop.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).*
 
 Imagine the priorities written above the workbench: feed people, restore damaged places, make safe homes, relieve suffering. Those are assignments worthy of a powerful technology. They're also a way to judge the uses of it that actually receive our money and attention.
 
@@ -90,25 +94,29 @@ Now hold that next to the other version of the very same technology. Some indust
 
 Chapter 14 made the case for a neighborhood mesh. Here's the hardware. A typical node is a small, cheap board that pairs a microcontroller with a LoRa radio (the Heltec V3 and LilyGO T-Beam are popular), running the open-source Meshtastic firmware.
 
-![Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz](/book-images/ch17-lora-node.svg)
+![Illustrative mesh-node hardware: a solar panel, charger and protected battery matched to one another, a supported LoRa board, and a band-matched antenna. Firmware and regional settings must match the hardware and local rules.](/book-images/ch17-lora-node.svg)
 
 *A mesh node. Sunlight in, short encrypted messages out.*
 
 - **Tiny power draw.** A node sips a fraction of a watt most of the time. A small panel and a battery can keep it going through a lot of weather.
-- **License-free bands.** In North America these radios use the 915 MHz band; in Europe, 868 MHz. Use the build for your region, which is, as Elijah learned, not a small detail.
-- **Self-organizing.** Nodes running Meshtastic find each other and relay messages automatically, with encryption.
+- **Match the hardware and region.** Common choices use the 902 to 928 MHz range in the United States or the 868 MHz range in Europe. Choose hardware and an antenna for the local band, install firmware for the exact board, then set the legal region in the software. Power and airtime limits still apply. [Meshtastic, LoRa configuration](https://meshtastic.org/docs/configuration/radio/lora/)
+- **Relay, then verify.** Nodes with compatible radio settings can relay messages where a usable path exists. Test the path with an important node switched off, and test a full power cycle after an update.
+
+Encryption isn't automatically privacy. Meshtastic's default shared channel key is public. A private group needs a fresh key shared only with its members, and a plan for lost devices and exposed keys. Even then, a group message isn't proof of the sender's identity. Keep sensitive household records off the public channel and confirm consequential requests with the person. [Meshtastic, encryption and its limits](https://meshtastic.org/docs/overview/encryption/)
 
 To put one up: use a weatherproof box, a proper solar charge board and battery rated for outdoor use (buy it assembled if you're not sure), and the best antenna you can mount high. Height and line of sight matter more than anything else; a well-placed node can reach many miles. Then check what it can actually carry before anybody depends on it.
 
 ## The muscle: power you understand
 
-Most of what a small workshop or a mesh network runs is natively low-voltage DC: LED lights, phone and laptop chargers, radios, small pumps. A conventional off-grid system turns the panels' DC into household AC with an inverter, and then every device's power brick turns it back into DC. Each conversion wastes some energy as heat, often ten percent or more.
+Many small loads use low-voltage DC internally: LED lights, phones, laptops, radios, small pumps. A conventional off-grid system turns the panels' DC into household AC with an inverter, and a device's power brick may turn it back into DC. Each conversion loses some energy as heat; the amount depends on the equipment and its load.
 
-![The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 percent converting DC to AC and again converting back to DC at the wall brick, while the DC-native chain runs solar to battery to fuse block to devices with zero conversion loss](/book-images/ch17-dc-native.svg)
+![Two power paths: an inverter and wall adapter convert DC to AC and back; a DC distribution path avoids that pair but still has charging, wiring, and voltage-conversion losses.](/book-images/ch17-dc-native.svg)
 
 *The round-trip toll. When a load already wants DC, the inverter chain charges you twice to deliver it.*
 
-So for small loads, a DC-native setup, panel to charge controller to battery to a fused distribution block to 12-volt devices, can be simpler and more efficient. Batteries store a lot of energy and can fail dangerously if they're built or charged wrong, so use a packaged battery with a proper management system, fuse everything, and have someone who knows electrical work check it. And be realistic about lifespans: a good lead-acid battery in daily use lasts years, not decades; lithium lasts longer but costs more up front.
+So for suitable small loads, a DC-native setup, panel to charge controller to battery to a fused distribution block, can be simpler and more efficient. It isn't lossless. Charging, wires, and any DC-to-DC regulator still cost energy. Match each device to its required voltage; a USB port isn't a bare connection to a 12-volt battery. Compare the whole system under its intended load. [US Department of Energy, DC Microgrid Scoping Study, conversion losses](https://www.energy.gov/sites/prod/files/2015/03/f20/DC_Microgrid_Scoping_Study_LosAlamos-Mar2015.pdf)
+
+Batteries store a lot of energy and can fail dangerously if they're built or charged wrong, so use a packaged battery with suitable protection, the specified charger, and properly sized fuses. Have someone who knows electrical work check it. Plan replacement from the battery's rated service conditions and your actual use; chemistry alone doesn't set its lifespan.
 
 ## The skeleton: machines that make machines
 
@@ -123,6 +131,12 @@ The Open Source Ecology project's Global Village Construction Set documents open
 1. **A 3D printer.** Open, repairable designs like the RepRap family, some of whose parts can be printed by another RepRap, are ideal. Plenty of people start, like SECTOR 07, on an inexpensive consumer machine; just know which parts you can fix and which you'll have to buy. People have turned discarded PET bottles into recycled filament, usually called rPET, with small homemade extruders, which turns trash into brackets, gears, and replacement knobs.
 2. **A walk-behind tractor.** A heavy two-wheel tractor with swappable implements, like the BCS style, can mow, till, chip, pump, and generate, for a fraction of the fuel and complexity of a four-wheeled one. Share one among several households.
 3. **A cutting and welding station.** A CNC plasma table and a good welder turn steel stock into brackets, racks, and repairs, in the hands of someone trained like Marta.
+
+<!-- interactive:shared-workshop -->
+
+![Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.](/book-images/v101-scene-shared-workshop.svg)
+
+*Shared tools need a working arrangement around them: trained people, suitable power and materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not a fabrication or wiring plan.*
 
 ## Food: count the whole job
 
@@ -152,7 +166,7 @@ This week, inventory tools with the people doing one existing food or cleanup ta
 
 Autonomy isn't an idea. It's calluses.
 
-1. **Get a Meshtastic board.** Buy a Heltec V3 or LilyGO T-Beam for your region's band. Flash Meshtastic from your web browser, pair it with your phone, and find the other nodes near you.
+1. **Set up two Meshtastic boards.** Choose supported hardware for your local band. Install the official firmware for each exact board, set the legal region, and pair the boards with your phones. Exchange a message, then repeat after a power cycle and at the actual locations you need. Follow the project's [official flasher instructions](https://github.com/meshtastic/web-flasher).
 2. **Build a small DC corner.** A packaged 12-volt battery or power station, a fused distribution block, a few 12-volt LED lights, and a USB charger. Keep a phone and a radio alive through the next outage.
 3. **Learn to solder.** A basic soldering iron and an afternoon of practice on scrap wire. Learn a clean, strong splice. The wise ones are learning how to solder.
 4. **Inventory the tools.** With the people doing one food or cleanup job near you, write down what tools exist, who can use them, what needs training, and who maintains them. The tool library starts with an accurate list, not a shopping spree.

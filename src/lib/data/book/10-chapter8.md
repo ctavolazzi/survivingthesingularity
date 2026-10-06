@@ -82,39 +82,39 @@ Look at that piece of glass. It's cold, it's inert, and it weighs less than half
 
 In the old economy, the big engine was extracting physical resources: coal, oil, timber. A lot of the new economy runs on extracting attention. You think you're checking the news, staying connected, managing your schedule. A good share of the time, the thing in your hand is managing you.
 
-![The Cognitive Extraction Engine: raw attention is harvested by infinite scroll and notifications, depleting the prefrontal cortex, producing systemic suggestibility, and ending in loss of physical agency](/book-images/ch08-cognitive-extraction.svg)
+![A conceptual sequence: scrolling and alerts compete with a chosen task, repeated switches leave work waiting, and less time may remain for that task. This is an illustration, not a neurological model.](/book-images/ch08-cognitive-extraction.svg)
 
-*The Cognitive Extraction Engine. Attention goes in at the top; agency comes out the bottom, and the platform keeps the difference.*
+*The Cognitive Extraction Engine. A picture of diverted time, not a measurement of brain chemistry.*
 
-What it leaves behind is a chronic, low-grade fog. It gets hard to read a book, hold a long conversation, focus on a complicated technical job, or coordinate with your neighbors. You feel tired, anxious, and helpless. That isn't a personal failure of willpower. It's what a product optimized for engagement does to a nervous system, and it's working as designed. Exhausted people don't build mesh networks or organize food routes. They click "Subscribe" and wait for the next buzz.
+The cost can feel like a low-grade fog: a book left unread, a conversation half-heard, a technical job you keep starting again. That experience isn't a diagnosis, and a feed doesn't affect everyone the same way. But if checking it keeps taking time from something you wanted to do, you have a concrete problem you can change without blaming your character.
 
 ### Your cognitive budget is finite
 
-Your brain is about two percent of your body's mass and burns roughly twenty percent of its energy. That's the twenty watts from Chapter 5, and it's a fixed budget. Every decision you make and every notification you glance at is paid for out of the same account.
+Your brain is about two percent of your body's mass and uses roughly twenty percent of its energy at rest. That's the rough twenty-watt comparison from Chapter 5. It isn't a fixed allowance of decisions you can spend down with notifications; much of that energy supports ongoing activity whether or not you're tackling a task. [Raichle and Gusnard, Appraising the Brain's Energy Budget (2002)](https://pmc.ncbi.nlm.nih.gov/articles/124895/) The practical question here is what keeps pulling your attention away from the thing you meant to do.
 
-The expensive part is the switch. When you're deep in a demanding task, wiring a panel or drafting a funding request, and a notification lands, you don't snap back. Attention researchers studying interrupted knowledge workers, most famously Gloria Mark's group at UC Irvine, found that getting back to a demanding task after an interruption takes on the order of twenty minutes, and that people compensate by working faster at the price of more stress.
+Switching can have a cost. Gloria Mark and colleagues observed information workers moving through other activities before returning to interrupted work. Their return-time measure included that intervening work; it wasn't a stopwatch on how long a brain needs to regain focus. [Mark, Gonzalez, and Harris, No Task Left Behind? (2005)](https://www.ics.uci.edu/~gmark/CHI2005.pdf) In a separate experiment, interrupted participants completed work faster but reported more stress, frustration, effort, and time pressure. [Mark, Gudith, and Klocke, The Cost of Interrupted Work (2008)](https://www.ics.uci.edu/~gmark/chi08-mark.pdf)
 
-Do the arithmetic that implies. If settling in costs twenty minutes, then more than two or three interruptions an hour means you never reach real focus at all.
+Neither finding gives you a universal recovery time or a maximum number of interruptions per hour. Try a protected stretch on one demanding task, keep the necessary safety alerts, and compare what you finish with an ordinary stretch. Count what actually pulled you away and whether it helped.
 
-![The Cognitive Fragmentation Curve: a graph of cognitive depth over one hour, showing a twenty-minute climb to deep-focus baseline, then repeated algorithmic interrupts, each recovery peaking lower than the last](/book-images/ch08-focus-recovery.svg)
+![An illustrative curve of attention on a task rising, dropping at interruptions, and recovering between them. The axes have no measured scale and the curve makes no claim about a fixed recovery time.](/book-images/ch08-focus-recovery.svg)
 
-*The Cognitive Fragmentation Curve. Above roughly three interrupts an hour, the curve never touches baseline again.*
+*One possible pattern of interrupted work. A conceptual sketch, not measured data or a universal recovery curve.*
 
 ### The slot machine in your pocket
 
-So why is it so hard to put down? Information theory gives a precise lens. Shannon entropy, $H$, measures how uncertain a stream of messages is:
+The slot-machine comparison needs a boundary too. Shannon entropy, $H$, measures uncertainty in a probability model:
 
 > $$H(X) = -\sum P(x_i) \log_2 P(x_i)$$
 
-where $P(x_i)$ is the chance the next item is a particular thing: a funny video, an outrageous headline, a message from a friend. A perfectly predictable feed has an entropy of zero, and you'd get bored and close it. So the feed keeps its uncertainty high on purpose, mixing rare rewards with a lot of noise, so the next scroll always *might* pay off. That's the slot-machine trick, expressed in bits. Variable rewards are some of the most reliable habit-formers psychology knows about.
+where $P(x_i)$ is the probability of outcome $x_i$. You could use it for a toy model of feed categories: a video, a headline, a friend's message. But bits of uncertainty don't measure pleasure, compulsion, or mental fatigue. A predictable message can matter enormously; random noise can bore you. The slot-machine analogy is narrower: you keep checking because something you want might appear. The formula doesn't prove what a platform intends or what its feed does to your mind.
 
 ## The cognitive firewall
 
 To take your attention back, treat your head the way a security engineer treats a critical server: put a firewall between your working memory and the firehose. You wouldn't drink untreated water from a puddle behind a refinery. Hold the same standard for what crosses into your head.
 
-![The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batch processing, then text-only synthesis, and emerges as deep physical execution](/book-images/ch08-firewall-pipeline.svg)
+![A suggested attention routine: check incoming information in scheduled windows, make notes, then return to a chosen task. This is a practical proposal, not a measured change in entropy or agency.](/book-images/ch08-firewall-pipeline.svg)
 
-*The Cognitive Firewall Pipeline. Entropy falls left to right; agency rises.*
+*The Cognitive Firewall Pipeline. A routine to try and adjust around the work and people who need you.*
 
 ### Protocol 1: No notifications
 
@@ -153,6 +153,10 @@ Two rules:
 - **Long-form reading:** whole books and whole documents. Following a three-hundred-page argument is heavy squats for the part of your brain that plans.
 - **Anchoring work:** tactile jobs that need your whole attention. Soldering, turning a compost pile, kneading bread.
 
+![A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task.](/book-images/v101-visual-attention-ribbon.svg)
+
+*A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive budget or a fixed recovery time.*
+
 ### Protocol 4: Grayscale
 
 Color is a powerful pull, and app designers test their reds and oranges hard. Switch your phone to grayscale. Stripped of its palette, the screen gets boring, clinical, and dead, which is to say it goes back to being what it should have been all along: a dry tool for finding and sending information.
@@ -161,7 +165,7 @@ Color is a powerful pull, and app designers test their reds and oranges hard. Sw
 
 The first four cut the inputs. This one lets you recover. Schedule at least thirty minutes a day with no inputs at all: no podcasts, no music, no screens, no reading. Walk, sit, do dishes. Your brain will complain and beg for stimulation. Let it.
 
-Give the firewall a few weeks. People who do this tend to report the same things: the background hum of anxiety drops, focus comes back, and the quiet jobs of an actual life, weeding, cooking, working through a manual, stop feeling like chores and start feeling absorbing.
+Give the firewall a few weeks, then check what changed: what you finished, what you missed, whether you feel less pulled around. Keep the parts that help. Adjust the ones that interfere with care, work, or the people who need to reach you.
 
 The firewall is the half you can do alone. The other half, as Marta proved, is somebody at the door.
 
@@ -171,7 +175,7 @@ If you build an isolated bunker, buy a decade of freeze-dried food, stock up on 
 
 The lone-prepper model fails on the physics. Every system needs maintenance, and one person trying to manage the garden, the water, the power, the tools, the paperwork, and their own health is running an energy deficit that only goes one way. Maintenance slips. Mistakes get made tired. And one person absorbing every shock alone lives inside exactly the tunnel vision Chapter 7 described.
 
-Spread that load across three households and the maintenance cost per person falls roughly in proportion to the number of people sharing it. One person keeps the tools, another keeps the garden, a third keeps the records and the radios. Nobody imposed that from above. It's just load-sharing, the same trick a mesh network uses.
+Three households can share work that each would otherwise duplicate: one person keeps the tools, another helps with the garden, a third keeps the records and the radios. More people also bring more needs, and coordination takes time. Count the actual work saved before promising a smaller burden. That's load-sharing you can check.
 
 True autonomy isn't individual. It's relational.
 
@@ -187,11 +191,11 @@ The test comes on an inconvenient day. Someone misses a shift. Someone criticize
 
 A community isn't a hierarchy; it's a topology. A lot of corporate and state structures are stars: everything runs through one hub, and if the hub fails, every node goes dark.
 
-![Trust network topologies: a star topology where every node depends on one hub that can fail, versus a mesh topology where every node connects to several neighbors and damage becomes a detour](/book-images/ch08-star-vs-mesh.svg)
+![Illustrative network topologies: a star depends on one hub, while the mesh has alternate connections that may provide a route around a failure.](/book-images/ch08-star-vs-mesh.svg)
 
-*Star versus mesh. In the star, the hub's failure is everyone's failure; in the mesh, damage is a routing problem.*
+*Star versus mesh. The star loses its links when the hub fails. The mesh can reroute if another working path remains.*
 
-In a mesh, every node connects to several neighbors, and damage becomes a detour. There's a limit, though. The anthropologist Robin Dunbar estimated that people can keep up something like 150 stable relationships. [Dunbar, Coevolution of neocortical size, group size and language in humans (1993)](https://doi.org/10.1017/S0140525X00032325) Past that, trust needs paperwork. So don't try to grow one enormous circle. Build tight circles of a few dozen people and connect them to other circles, trading tools, seed, surplus, and knowledge, without anybody having to merge into one big thing.
+In a mesh, damage can become a detour if another working route remains. Social capacity has limits too. The anthropologist Robin Dunbar estimated that people can keep up something like 150 stable relationships. [Dunbar, Coevolution of neocortical size, group size and language in humans (1993)](https://doi.org/10.1017/S0140525X00032325) That's an estimate, not a membership limit, and even a small circle needs written agreements. Build circles small enough to maintain their relationships and connect them to other circles, trading tools, seed, surplus, and knowledge, without anybody having to merge into one big thing.
 
 And keep a door in every circle. Knowing everyone's name helps you notice who's missing; it can also make it easy to decide an outsider doesn't count. Nineteen households are a beginning. Humanity is the ambition.
 

@@ -13,7 +13,7 @@
 
   <!-- LEFT: centralized -->
   <text x="230" y="110" font-size="14" font-weight="600" fill="#64748b" text-anchor="middle">CENTRALIZED</text>
-  <text x="230" y="130" font-size="12" fill="#64748b" text-anchor="middle">(fragile)</text>
+  <text x="230" y="130" font-size="12" fill="#64748b" text-anchor="middle">(one uplink in this example)</text>
 
   <!-- tower -->
   <path d="M 214 236 L 230 172 L 246 236 Z" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
@@ -39,12 +39,12 @@
     <text x="230" y="386">[you]</text>
     <text x="340" y="386">[you]</text>
   </g>
-  <text x="230" y="440" font-size="13" fill="#f59e0b" text-anchor="middle">one break = total blackout</text>
-  <text x="230" y="464" font-size="12" fill="#64748b" text-anchor="middle">permission-based coordination</text>
+  <text x="230" y="440" font-size="13" fill="#f59e0b" text-anchor="middle">tower failure cuts this link</text>
+  <text x="230" y="464" font-size="12" fill="#64748b" text-anchor="middle">a second path needs planning</text>
 
   <!-- RIGHT: mesh -->
   <text x="640" y="110" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">DECENTRALIZED MESH</text>
-  <text x="640" y="130" font-size="12" fill="#f59e0b" text-anchor="middle">(resilient)</text>
+  <text x="640" y="130" font-size="12" fill="#f59e0b" text-anchor="middle">(several surviving paths)</text>
 
   <!-- mesh edges -->
   <g stroke="#3b82f6" stroke-width="1.8" opacity="0.8">
@@ -82,8 +82,8 @@
     <line x1="647" y1="285" x2="633" y2="299"/>
   </g>
 
-  <text x="640" y="440" font-size="13" fill="#3b82f6" text-anchor="middle">every node is a router</text>
-  <text x="640" y="464" font-size="12" fill="#94a3b8" text-anchor="middle">self-healing: kill one node, the signal hops around it</text>
+  <text x="640" y="440" font-size="13" fill="#3b82f6" text-anchor="middle">relay nodes pass messages</text>
+  <text x="640" y="464" font-size="12" fill="#94a3b8" text-anchor="middle">another usable path must remain</text>
 
-  <text x="430" y="528" font-size="12" fill="#64748b" text-anchor="middle">LoRa radios + salvaged Wi-Fi hardware · no tower, no telecom, no kill-switch</text>
+  <text x="430" y="528" font-size="12" fill="#64748b" text-anchor="middle">local radio links; test coverage, power, and the loss of a relay</text>
 </svg>

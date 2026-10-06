@@ -55,6 +55,10 @@ Reuben drew a second column. The co-op could commit part of the repair budget it
 
 They wrote *funded through June* in ink. The proposed continuation went underneath in pencil, with a meeting date beside it. Curtis took responsibility for telling the households what had and hadn't been secured. The coordinator asked for someone besides Curtis to learn the route. Two hands went up.
 
+![One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.](/book-images/v101-visual-continuity-calendar.svg)
+
+*Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene.*
+
 Elijah went home that night and rebuilt the model with the room's amendments, and the change that mattered was a names column. Every failure mode carried two names now, who it happens to and who is watching for it, because a risk without a name attached isn't a risk, it's a wish with error bars. He kept the household details in the private record; the public proposal would carry the service commitments, the costs, and the gaps. He was pasting in the last of it when he understood what he was actually looking at.
 
 The supply models, the watts, the stages, the names, the repair he had misunderstood and the meal they had delivered wrong: it was the notebook. All of it. MADRONE ≠ DRONE, three years of arithmetic and margins and lists, finally arranged in the shape it had been trying to take since 1:40 in the morning at a kitchen table: not notes toward surviving something, but a manual for it, with the open boxes left open. He started, that week, turning the notebook into the book you are nearly done holding.
@@ -173,6 +177,10 @@ Use a short record:
 Keep people's personal details out of public records unless they're needed and the people agree. Give the people you're feeding a way to correct what you assumed about their lives. A delivery logged as complete may still have left somebody with food they couldn't eat.
 
 Test a response before depending on it. Confirm the alternative supplier's capacity; let the backup person actually perform the handoff; check the public contact route. A second name in a spreadsheet isn't a second available driver.
+
+![An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.](/book-images/v101-chart-meal-response.svg)
+
+*When a meal fails. An illustrative worksheet from this chapter's premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise.*
 
 ## Grow the promise at the speed you can keep it
 

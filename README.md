@@ -3,13 +3,19 @@
 > A field manual for staying agentic as AI rewrites work, money, medicine, and meaning.
 
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
-**Status:** Open draft. Book ships when it ships. Site updates as the world does.
+**Local source edition:** v0.10.1, the visual expansion of v0.10.0. The
+35-section manuscript now includes 23 additional figures: six photo-derived
+cutouts, eight charts and worksheets, six conceptual SVGs, and three Three.js
+scenes with static SVG illustrations. See the
+[edition notes](docs/v0.10.1/EDITION-NOTES.md) for scope and verification status,
+and [production instructions](publication/README.md) for the publication pipeline.
 
-**Publication design, September 22, 2026:** v0.8.2 now has a 6 x 9 illustrated
-reading edition, a grayscale print interior, original SVG artwork, packaged
-fonts, and documented visual and rights reviews. Start with the
-[design report](docs/publication/DESIGN-REPORT.md) or the
-[production instructions](publication/README.md).
+The previous v0.10.0 source and deliveries remain preserved. Local v0.10.1
+PDF, EPUB and reader checks passed. Open the [394-page reading PDF](book-build/Surviving-the-Singularity-v0.10.1.pdf),
+[EPUB](book-build/Surviving-the-Singularity-v0.10.1.epub), or
+[grayscale print interior](book-build/Surviving-the-Singularity-v0.10.1-print-interior.pdf).
+The public-download manifest still records v0.7.5. This local edition has not
+been committed, deployed, or published.
 
 ---
 
@@ -18,6 +24,29 @@ fonts, and documented visual and rights reviews. Start with the
 [`book.json`](src/lib/data/book/book.json). Everything else that contains book
 text is generated output. Full rules: [Book content: the single source of
 truth](#book-content-the-single-source-of-truth).
+
+---
+
+## Open the local illustrated edition
+
+[Start the development server](#local-development), then open
+[the chapter reader](http://localhost:5189/book) or
+[the continuous reader](http://localhost:5189/read). Both use the existing
+draft-password gate. The new figures are part of the canonical manuscript,
+so both readers load the same edition.
+
+The three scenes appear within their chapters:
+
+- [Chapter 9](http://localhost:5189/book/chapter9): one harvest, five doors.
+- [Chapter 15](http://localhost:5189/book/chapter15): a growing bed and the inputs and outputs around it.
+- [Chapter 17](http://localhost:5189/book/chapter17): shared tools and the people and supplies that keep them useful.
+
+Choose **Explore in 3D** to load a scene. Camera buttons and connection
+controls work with a keyboard. Static illustrations, captions, and text
+explanations remain available when WebGL cannot run. PDF and EPUB editions
+use the static SVG illustrations; they do not run the Three.js scenes.
+[Scene reproduction and browser proof](docs/v0.10.1/scenes/SCENE-REVIEW.md)
+document the implementation.
 
 ---
 
@@ -44,7 +73,7 @@ A SvelteKit site built around one question:
 
 > What does it look like to build a life that doesn't depend on the things AI is about to dissolve?
 
-It is not a sales page. It is not a course. It is a working draft of a book, a long blueprint of practical answers, and a blog of dispatches from the curve. Free to read. No login. No paywall. No email required.
+It is not a sales page. It is not a course. It is a working draft of a book, a long blueprint of practical answers, and a blog of dispatches from the curve. The repository contains the manuscript and site source. The current draft readers use a password gate; there is no account sign-in.
 
 ## Who this is for
 
@@ -52,16 +81,15 @@ It is not a sales page. It is not a course. It is a working draft of a book, a l
 - People who can feel the economic ground shifting under their feet and want a practical move, not another think piece.
 - Makers, builders, parents, teachers, anyone who would rather stay agentic than be passive cargo.
 
-If you came here because someone you trust sent you the link, start at [**Why**](https://survivingthesingularity.com/why). It is the shortest case for why any of this matters.
+For this local edition, start with [the Introduction](http://localhost:5189/book/introduction) after opening the draft reader.
 
 ## What is on the site
 
 | Route | What it is |
 |-------|-----------|
-| [`/`](https://survivingthesingularity.com/) | Landing page. Thesis, four steps, the stack, a savings calculator, the chapter index. |
-| [`/why`](https://survivingthesingularity.com/why) | The case. AGI timeline, expert voices, benchmarks. Start here if you are new. |
-| [`/book`](https://survivingthesingularity.com/book) | Open draft of *Surviving the Singularity*. Free to read. Chapter previews. |
-| [`/blueprint`](https://survivingthesingularity.com/blueprint) | Eight chapter blueprint. Shouse construction, collective ownership, semi-autonomous CSA, local AI, offline healthcare AI, and more. |
+| [`/`](https://survivingthesingularity.com/) | Landing page and book offer. |
+| `/book` and `/book/[sectionId]` | Password-gated contents and chapter reader. The local routes above serve v0.10.1. |
+| `/read` | Password-gated continuous reader, with the same illustrations and optional 3D scenes. |
 | [`/blog`](https://survivingthesingularity.com/blog) | Dispatches. Some philosophical, some profane. |
 | [`/about`](https://survivingthesingularity.com/about) | What this project is and is not. |
 | [`/factcheck`](https://survivingthesingularity.com/factcheck) | Every checkable claim in the book, traced back to its evidence. Audit it yourself. |
@@ -157,8 +185,8 @@ for it rather than shipping a key.
 ```bash
 git clone https://github.com/ctavolazzi/survivingthesingularity.git
 cd survivingthesingularity
-npm install
-npm run dev -- --open
+npm ci
+npm run dev -- --port 5189 --strictPort
 ```
 
 Without `SUPABASE_SERVICE_KEY` in `.env`, `/api/waitlist` returns 503 and the
@@ -193,19 +221,19 @@ src/
       blueprint.js       Orphaned: no route renders this any more
     styles/theme.css     Design tokens
 static/
-  book-images/           Every figure the book references (106 files)
+  book-images/           Canonical figure assets and prepared print variants
 ```
 
 ### Book content: the single source of truth
 
-**The book is the 30 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
+**The book is the 35 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
 
 Both halves are required:
 
 - **`*.md`** holds the prose, one file per section.
 - **`book.json`** is the manifest: which files, what order, what titles, plus the version, title and subtitle that become EPUB and PDF metadata.
 
-Neither is the book on its own. **A `.md` file in that folder that is not listed in `book.json` is not in the book.** That is how `VOICE-GUIDE.md`, `ELIJAH-PROTOCOL.md` and `README.md` live in the directory without leaking into the manuscript. It is a real gate, not a convention: `scripts/build-epub.sh` reads the file list with `jq -r '.sections[].file'`, and the website reads the same manifest in `src/lib/bookContent.js`.
+Neither is the book on its own. **A `.md` file in that folder that is not listed in `book.json` is not in the book.** That is how `VOICE-GUIDE.md`, `ELIJAH-PROTOCOL.md` and `README.md` live in the directory without leaking into the manuscript. It is a real gate, not a convention: the build tools read the manifest through `scripts/sts.py` or the publication loader, and the website reads the same manifest in `src/lib/bookContent.js`.
 
 Everything else is **output, derived from those two inputs**:
 
@@ -217,7 +245,7 @@ Everything else is **output, derived from those two inputs**:
 | `manuscript/StS-Complete-Draft-*.md` | `sts.py compile` | export snapshots, nothing reads them back |
 | `src/lib/data/book/manuscript-index.json` | `sts.py id build` | a generated cache |
 
-Five consumers, no editable copies. Hand-editing any of them is lost work: the next build overwrites it.
+The consumers do not maintain editable manuscript copies. Hand-editing any of them is lost work: the next build overwrites it.
 
 Three ways people get this wrong:
 
@@ -254,7 +282,7 @@ PRs welcome for bug fixes, accessibility improvements, and performance. Content 
 
 ## License
 
-Code: open source. Book content: all rights reserved, free to read on the live site.
+Code: open source. Book content: all rights reserved. Source-image credits and adaptation notices remain attached to the artwork; generated edits do not erase the source-license requirements.
 
 ## Author
 

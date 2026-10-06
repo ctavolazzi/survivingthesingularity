@@ -1,8 +1,8 @@
 # Chapter 12: The Land Strategy
 
-![FarmBot automated gardening system over a raised bed](/book-images/ch12-farmbot.jpg)
+![Line drawing of a germinating seed and roots](/book-images/original-04-seed-and-root.svg)
 
-*FarmBot over a raised bed. A place to grow, and a tool that can do part of the work. (FarmBot, CC BY 4.0, via Wikimedia Commons)*
+*A place to grow begins with access to the ground. Original illustration for this book.*
 
 
 > *"Land is the only thing in the world that amounts to anything … for 'tis the only thing in this world that lasts."*
@@ -64,6 +64,14 @@ A productive tool needs somewhere to work. A hungry person needs access to what 
 Still, land is the one input the machine can't make more of, and whoever holds it holds a lot of the terms. So if you *do* have capital, think hard before you put it into a bigger house, status symbols, or a business that only works if the city stays healthy. Consider ground. Buy what you can afford to hold, and set aside enough to cover the property taxes for years, so the land stays yours through a bad stretch. Whatever happens to the institutions around you, you'll have a place to build.
 
 That's one route, and it's not the only one or the entry fee. Land trusts, leases, shared gardens, public land, and agreements with growers who already have ground are all ways to get useful capacity under your feet. The trust in the scene changes a set of relationships: who may use the ground, who decides its future, what Irene receives, and what the co-op must keep paying. The paperwork doesn't abolish responsibility. It gives responsibility a shape people can read and hold each other to. The fictional trust isn't a legal template, and anyone setting one up needs real advice. What matters here's the question that brought those people to the table: how do we keep useful capacity serving the people who depend on it?
+
+![A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages.](/book-images/v101-chart-land-values.svg)
+
+*What an acre costs. USDA survey estimates include farm buildings as well as land. These are nominal national averages, not inflation-adjusted values or local offers. [USDA NASS, Land Values 2026, page 5](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf).*
+
+![A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement.](/book-images/v101-visual-shared-land.svg)
+
+*Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a way to challenge decisions. Conceptual illustration, not a legal template.*
 
 <aside class="numbers">
 

@@ -18,7 +18,7 @@ This book is about the other ways.
 
 Right now, doesn't it seem like everything is getting a lot weirder, a lot faster?
 
-Look back across the last hundred years and you find a global society of excess, continent-spanning wars, and weapons that could end all life on earth. Look around today and... well, it's pretty much the same, isn't it? The main thing that seems to have changed is the pace.
+Look back across the last hundred years and you find a global society of excess, continent-spanning wars, and weapons that could devastate civilization. Look around today and... well, it's pretty much the same, isn't it? The main thing that seems to have changed is the pace.
 
 Wait, that's not quite right. Some things have definitely changed. We've learned to automate cognitive work and more and more physical work. We've concentrated an enormous amount of wealth and power in the hands of the few people who own the servers, the models, and the land. And a lot of ordinary workers are being told, more or less directly, that they may soon be redundant.
 

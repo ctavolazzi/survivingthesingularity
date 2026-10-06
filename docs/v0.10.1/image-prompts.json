@@ -1,0 +1,84 @@
+{
+  "edition": "0.10.1",
+  "mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "atlas",
+      "source": "ch01-atlas.jpg",
+      "output": "v101-cutout-atlas.png",
+      "prompt": "Edit the supplied photograph into a faithful editorial photographic cutout for a nonfiction book. Isolate the complete Atlas humanoid robot, including every visible hand, foot, mechanical frame detail, blue central light, and yellow beacon. Remove the entire workshop background, floor, ceiling tether, and background objects. Preserve the robot's actual proportions, pose, materials, and recognizable details from this photograph. Keep holes between limbs and frame elements genuinely transparent. Crisp intricate silhouette without white or black halos. Fully transparent RGBA background, actual alpha channel, no checkerboard, no white rectangle, no ground plane, no shadow beyond the subject. Center the complete full body with a small transparent safety margin. High resolution. Add no text, logos, inventions, decorative border, or extra components.",
+      "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e50b-668f-79d2-ab08-f8398cd548db/exec-23fee16d-8083-4cd4-b3e7-53f8acf90df9.png",
+      "sha256": "a589cf1d182f5d955c13d8515a8f210a9ff514f81bcdecf49294bdc38132c2db",
+      "pixels": [
+        1024,
+        1536
+      ],
+      "transparent_pixel_fraction": 0.6906
+    },
+    {
+      "id": "printer",
+      "source": "ch09-3d-printer.jpg",
+      "output": "v101-cutout-printer.png",
+      "prompt": "Use case: background-extraction. Edit target: supplied photograph of the Prusa 3D printer. Create a photographic editorial cutout with an actual transparent RGBA background. Isolate the complete printer frame, orange printed vase, blue build plate, print head and working cables as one open-frame assemblage. Remove the surrounding room, windows, table and all background visible through the frame. Preserve the original mechanical arrangement and perspective, orange details and familiar black PRUSA frame. No reconstructed machine or invented parts. Complete silhouette with small transparent margin, high resolution. Actual alpha, no black or white rectangle, no checkerboard, no drop shadow, no added text. The open spaces through the machine must be genuinely transparent so book text can sit beside the object.",
+      "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e50b-668f-79d2-ab08-f8398cd548db/exec-76854d20-3dfc-45b0-bb06-55a9d21f6a90.png",
+      "sha256": "156b2371385e2216897d8d057a32d45e3421cf0ef18376e45d630c371b4132bd",
+      "pixels": [
+        1184,
+        1328
+      ],
+      "transparent_pixel_fraction": 0.429
+    },
+    {
+      "id": "sun",
+      "source": "ch05-sdo-sun.jpg",
+      "output": "v101-cutout-sun.png",
+      "prompt": "Use case: background-extraction. Edit target: supplied NASA solar image. Isolate the full orange solar disk including visible edge prominences, delicate corona and wisps. Remove only black space around it using genuine alpha transparency with soft physically plausible edges. Preserve the source's disk texture, dark and bright areas, original circular form and orange color. Do not invent sunspots, additional flares, measurement marks or labels. Editorial cutout, not a new scientific observation. Full disk, small safe transparent margin, high resolution. Actual transparent RGBA background, no checkerboard or opaque rectangle.",
+      "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e50b-668f-79d2-ab08-f8398cd548db/exec-a1ac2451-df75-4b91-935a-cda2c818be19.png",
+      "sha256": "e28663cd57a7b72457810fff1bfe6c430582d7f3196b5eca97d6d07f6a5fe8a7",
+      "pixels": [
+        1283,
+        1226
+      ],
+      "transparent_pixel_fraction": 0.3501
+    },
+    {
+      "id": "tools",
+      "source": "ch17-workbench.jpg",
+      "output": "v101-cutout-tools.png",
+      "prompt": "Use case: compositing. Edit target: supplied photograph of worn hand tools on a green workbench. Create a playful but faithful photographic paper-cut collage on actual transparent alpha. Extract the brown-handled combination pliers at center-right, the small adjustable wrench in lower center, and the slim translucent-handled screwdriver beside the pliers. Arrange these three real source tools as a loose fan, with the pliers dominant, a slight overlap of handles only, and open air between metal tips. Keep their worn metal, warm brown handles, scale relationships and visual character; do not turn them into new generic tools. Remove all tabletop, electrical cords, other tools, containers and background. Every selected tool fully visible with a small transparent safety margin. High resolution editorial still life, genuine RGBA transparency, no drawn background, no checkerboard, no added text or drop shadow.",
+      "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e50b-668f-79d2-ab08-f8398cd548db/exec-9b39db03-8773-41ef-b7b1-6772b5fd3635.png",
+      "sha256": "b6eee075e0a4c62a86da11af653d7471204a5607078ec442e831026d6be7c543",
+      "pixels": [
+        1150,
+        1368
+      ],
+      "transparent_pixel_fraction": 0.7085
+    },
+    {
+      "id": "spot",
+      "source": "ch11-spot.jpg",
+      "output": "v101-cutout-spot.png",
+      "prompt": "Use case: background-extraction. Edit target: supplied photograph of the yellow Spot quadruped robot standing on a woodland trail. Extract the entire robot faithfully in its existing tilted pose and perspective, including all four legs, black feet, yellow body, black top modules and visible branding from source. Remove all forest, trail and ground. Keep the empty spaces between legs genuinely transparent. Preserve proportions and mechanical structure without inventing components. Full subject with small safety margin. High-resolution photographic editorial cutout on actual transparent RGBA alpha background. No ground plane, invented shadows, white or black rectangle, checkerboard, captions or new labels.",
+      "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e50b-668f-79d2-ab08-f8398cd548db/exec-55d0ab93-f84e-4d65-8582-cfbc8dd26635.png",
+      "sha256": "a607f5b8dbc43c4fcbd9bc96ed22bea10bdbbe3844b873513a43a147f7a1837a",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "transparent_pixel_fraction": 0.7408
+    },
+    {
+      "id": "rocket",
+      "source": "ch03-falcon-heavy.jpg",
+      "output": "v101-cutout-rocket.png",
+      "prompt": "Use case: compositing. Edit target: supplied SpaceX Falcon Heavy launch photograph. Make a tall, irregular photographic cutout of the actual three-core rocket, luminous exhaust column and a small billowing plume at its base. Keep the source rocket shape, orientation and lighting. Remove sky, launch tower, water tower, fences, landscape and water. Creatively shape the bottom plume as a soft asymmetric torn-paper island of smoke that dissipates into genuine transparent alpha; do not keep the entire landscape-width smoke cloud. The flame connects the rocket to the isolated smoke base. Editorial collage derived from the photograph, not new evidence or a technical rendering. Complete rocket tip and smoke, generous transparent side space, high resolution. Actual RGBA transparency, no checkerboard, no opaque rectangle, no added text or invented equipment.",
+      "generated_path": "/Users/ctavolazzi/.codex/generated_images/01a0e50b-668f-79d2-ab08-f8398cd548db/exec-683f384d-d11e-4da6-9619-32e8cefd7d67.png",
+      "sha256": "8d2763491b2f03d3839ad34d7458dc695e0d8b98f28d2a8502cff95c52219b02",
+      "pixels": [
+        1024,
+        1536
+      ],
+      "transparent_pixel_fraction": 0.768
+    }
+  ]
+}

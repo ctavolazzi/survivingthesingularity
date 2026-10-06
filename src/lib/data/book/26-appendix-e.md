@@ -12,7 +12,7 @@ The word is older than the hardware. William Gibson coined "cyberspace deck" in 
 
 The hole started filling in around 2012, when the Raspberry Pi put a whole Linux computer on a credit-card board for thirty-five dollars. Suddenly the fictional deck had a plausible brain. Hobbyists began building physical versions and posting them, and a scene formed around community sites and Hackaday's cyberdeck contests. For a decade it stayed a maker subculture.
 
-Then, in 2026, it stopped being niche.
+In 2026, it began reaching a wider audience.
 
 ## The 2026 return
 
@@ -51,7 +51,7 @@ Don't start with the seashell that runs a local AI. Build capability in order, a
 
 **Tier 0, the phone you have.** Save one non-sensitive reference you're allowed to copy, turn off the network, and confirm you can open it and find what you need. Write down its source and date so you'll know when it's stale. That's the offline habit, for free.
 
-**Tier 1, the Communicator.** A Meshtastic node on a cheap Heltec or LilyGO board, flashed from your browser, paired to your phone. Off-grid text messaging with no carrier and no bill, for about the price of a pizza. It's the highest-value thing you can build in an afternoon.
+**Tier 1, the Communicator.** A supported Meshtastic board, flashed with the firmware for that hardware, configured for your region, and paired to your phone. Budget for the antenna, battery, and enclosure as well as the board. Test a short message with a second compatible node before counting on a route. Terrain, placement, power, and settings decide whether the link works. Default channel keys are public; use a randomly generated shared key for a private group and decide whether location sharing belongs on. [Meshtastic, channel configuration](https://meshtastic.org/docs/configuration/radio/channels/)
 
 **Tier 2, the Librarian.** A Raspberry Pi, a screen, a protected battery, and Kiwix loaded with the libraries you'd actually reach for. Now you have a machine that answers questions with no signal. Add a small local model when the hardware allows.
 
@@ -61,12 +61,12 @@ Don't start with the seashell that runs a local AI. Build capability in order, a
 
 Two warnings, because the cyberdeck world runs right up against lines this book won't cross with you.
 
-First, the honest part. A deck holds your life: notes, keys, maps, your questions. A machine you carry is a machine that can get lost or taken. Encrypt the storage; Linux full-disk encryption is free and built in, and it turns a stolen deck from a confession into a brick. And a local machine isn't automatically safe: it still needs updates from sources you've verified, sensible passwords, and a clear idea of what it's connected to.
+First, the honest part. A deck holds your life: notes, keys, maps, your questions. A machine you carry is a machine that can get lost or taken. Use storage encryption supported by your operating system, a strong passphrase, and a separate backup you have tested. Encryption protects stored data while it is locked; it doesn't make an unlocked or compromised computer safe. A local machine still needs updates from sources you've verified, sensible passwords, and a clear idea of what it's connected to. [Cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/-/blob/main/FAQ.md)
 
 Second, the boundary. The same hardware skills overlap with offensive security work, and a lot of cyberdeck content online is really about getting into other people's networks. This book's use is defensive and personal, never offensive, and there are two hard lines with real penalties behind them:
 
-- **Access.** Touching a computer or network you aren't authorized to touch is a crime in most places, including under the US Computer Fraud and Abuse Act. A deck doesn't change that.
-- **Spectrum.** Listening is broad and mostly legal. Transmitting isn't. Receiving weather, aircraft, and broadcast signals is generally fine; transmitting on frequencies you aren't licensed for, jamming, or intercepting private communications is illegal. Listen freely. Transmit only where you're allowed to.
+- **Access.** Get permission before testing someone else's computer or network, and stay inside that permission. Unauthorized access can violate computer-misuse laws, including the US Computer Fraud and Abuse Act. [18 U.S.C. 1030](https://www.law.cornell.edu/uscode/text/18/1030)
+- **Spectrum.** Check the rules for your location and the service you intend to use. Some transmissions need an individual license; others are allowed only with compliant equipment and operating conditions. Reception and disclosure have their own restrictions, so an audible signal isn't permission to record or share it. Start with public broadcasts and your own authorized links. [US interception statute, including its exceptions](https://www.law.cornell.edu/uscode/text/18/2511); [US Part 15 operating conditions](https://www.law.cornell.edu/cfr/text/47/15.5).
 
 Build the deck to keep yourself free, not to reach into anyone else's life. The tool doesn't decide that for you. You do.
 
@@ -74,7 +74,7 @@ Build the deck to keep yourself free, not to reach into anyone else's life. The 
 
 In 1968 Stewart Brand put three words on the cover of the *Whole Earth Catalog*: Access to Tools (P-21). The cyberdeck is that catalog collapsed into one object: not a computer you're allowed to use, but a computer you understand, can repair, and can't be locked out of.
 
-1. **Build the Communicator this month.** One Meshtastic node, flashed from your browser, paired to your phone. It's the fastest way to feel the difference between a rented network and one that's yours.
+1. **Test the Communicator this month.** Pair a supported node with your phone and exchange a message with another node using compatible settings. Borrow equipment for the trial if you can. Record where the link works and where it fails.
 2. **Load a Librarian.** Put Kiwix and one offline library, medical, repair, or all of Wikipedia, onto a Raspberry Pi or an old phone. Now you own an answer machine that works with the towers down.
 3. **Run one model with the network unplugged.** Get a small language model answering on a device with the Wi-Fi physically off. The first time it works, you'll understand the Crucible from Chapter 11 in your hands instead of on the page.
 

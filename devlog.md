@@ -1,5 +1,5 @@
 # Development Log
-*Last Updated: 2025-01-27 20:30 UTC*
+*Last Updated: 2026-09-27*
 
 ## 2025-01-27 20:30 UTC - Project Exploration and Johnny Decimal Structure
 - Conducted comprehensive project exploration and structure analysis
@@ -209,3 +209,24 @@ Two sessions, one release, integrated on weave-and-mobile-polish: editorial + th
 - book.json 0.7.0 -> 0.7.1; 86,444 words; sts.py id verify clean (2,002 blocks, 83/83 figures linked); render probe 83 imgs CLEAN, zero wreckage; EPUB/PDF rebuilt at v0.7.1 (275 pages, stamped); public download swapped to Surviving-the-Singularity-v0.7.1.pdf.
 - Process note: a long uncommitted editing session got tangled with the parallel session's stash/merge and was recovered from the dropped-stash commit via git fsck; lesson recorded (commit per coherent wave, never batch to the end).
 - NOT yet deployed: merge to main is a live-Stripe prod deploy and needs CT's explicit yes each time. Held pending that yes.
+
+
+## 2026-09-27: Surviving the Singularity v0.10.0 finalization
+
+- Created isolated `book-v0.10.0` worktree from the latest actual v0.9.2 source at `3d29215`; user confirmed the standard minor version, v0.10.0.
+- Reviewed all 35 sections using repository voice, continuity, research, prior reviews, and production evidence. Corrected factual overclaims, practical instructions, chronology, glossary entries, and the final funding deadline while preserving the approved argument and narrative.
+- Redrew five unreadable print diagrams, corrected eleven companion diagrams, replaced four unresolved interior image uses with existing original illustrations, and synchronized all canonical artwork captions and alt text.
+- Reconciled the bibliography and three-year character guide; froze the final source and rebuilt manuscript index. Final count is 95,052 words by `sts book --json`, with 24 precedents.
+- Built versioned reading/print PDFs, EPUB, compiled manuscript, and portable editable publication files. Review details and measured proof results: [v0.10.0 edition notes](docs/v0.10.0/EDITION-NOTES.md).
+- Retained the author-selected cover with its unresolved provenance documented. Current epigraph inventory has 23 entries; external-release rights and physical print decisions remain visible. No commit or deployment; public-release manifest remains v0.7.5.
+
+- Final visual proof caught and corrected the cast image's baked-in Denny role and tiny labels, and a split Part III divider. The replacement SVG embeds the original portraits unchanged. Print preparation now removes unused page resource references; source streams, links and sampled pixels were preserved, with full conversion measured at 36.58 seconds.
+
+
+## 2026-09-28: v0.10.1 illustrated edition
+
+- Added 23 figures across the canonical manuscript: six photo-derived cutouts, eight charts and worksheets, six conceptual SVGs, and three interactive Three.js scenes with static PDF/EPUB illustrations.
+- Resumed the interrupted publication proof, fixed a cutout/caption page split and caption line height, and rebuilt the final PDFs. Reading PDF: 394 pages. Print interior: 393 content pages plus one blank verso.
+- Verified all 35 sections and 2,524 PDF source blocks, all 102 EPUB images, all 23 new figures, grayscale text/resource preservation, and real browser interaction and fallback behavior. Strengthened EPUB checks with actual missing-art and missing-text defects.
+- Final output paths and SHA-256 values: [delivery manifest](docs/v0.10.1/deliverables.json). Scope and evidence: [edition notes](docs/v0.10.1/EDITION-NOTES.md).
+- Previous v0.10.0 preserved. Local files only; no commit, deployment or public-download change.

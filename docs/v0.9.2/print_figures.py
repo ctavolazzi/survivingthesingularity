@@ -30,6 +30,8 @@ OUT = IMAGES / 'print'
 REPORT = ROOT / 'docs/v0.9.2/print-figures.json'
 SVG_NS = 'http://www.w3.org/2000/svg'
 ET.register_namespace('', SVG_NS)
+sys.path.insert(0, str(ROOT / 'publication'))
+from visuals import prepared_variant  # noqa: E402
 
 TARGET = 1.4      # label scale tried first
 CAP = 22          # no label is enlarged past this; titles are big enough already
@@ -66,6 +68,9 @@ def sha(path):
 def print_variant(name):
     """The print copy of a figure, for the print builds. Refuses a stale copy:
     the source and the print file must both match what the last run recorded."""
+    prepared = prepared_variant(name)
+    if prepared is not None:
+        return prepared
     report = json.loads(REPORT.read_text())['figures']
     record = report.get(name)
     if record is None:
@@ -81,7 +86,8 @@ def local(tag):
 
 def figures_in_book():
     names = set()
-    for md in sorted(BOOK.glob('[0-9][0-9]-*.md')):
+    metadata = json.loads((BOOK / 'book.json').read_text())
+    for md in (BOOK / section['file'] for section in metadata['sections']):
         names.update(re.findall(r'\]\(/book-images/([^)\s]+\.svg)\)', md.read_text()))
     return sorted(names)
 
@@ -240,8 +246,9 @@ FIT_JS = r"""
   const sizes = texts.map((t, i) => size(i));
   return {svg: new XMLSerializer().serializeToString(svg), new_collisions: after.map(x => x.join(':')),
           labels: texts.length, marks: marks.length,
-          min_base: Math.min(...base), min_final: +Math.min(...sizes).toFixed(2),
-          median_scale: +[...sizes.map((z, i) => z / base[i])].sort((a,b)=>a-b)[Math.floor(sizes.length/2)].toFixed(2),
+          min_base: base.length ? Math.min(...base) : null,
+          min_final: sizes.length ? +Math.min(...sizes).toFixed(2) : null,
+          median_scale: sizes.length ? +[...sizes.map((z, i) => z / base[i])].sort((a,b)=>a-b)[Math.floor(sizes.length/2)].toFixed(2) : null,
           frame_width: frame.w, crop_width: +(c.width + 2*PAD).toFixed(1)};
 }
 """
@@ -342,6 +349,26 @@ def main():
             assert forced['new_collisions'], 'Negative control failed: forced enlargement reported clean'
             print(f"negative control: {len(forced['new_collisions'])} collisions detected at forced 1.8x")
         for name in names:
+            prepared = prepared_variant(name)
+            if prepared is not None:
+                report['figures'][name] = {'source_sha256': sha(IMAGES / name), 'print_sha256': sha(prepared), 'prepared': True, 'registry': 'src/lib/data/book/visuals.json'}
+                print(f'{name:34} verified prepared artwork, left unchanged')
+                continue
+            if name == 'coop-cast.svg':
+                # This composite has unchanged embedded character PNGs and
+                # purpose-set type. Regenerate its two palettes together.
+                sys.path.insert(0, str(ROOT / 'docs/v0.10.0'))
+                from cast_plate import render
+                assert (IMAGES / name).read_text() == render('screen'), 'Regenerate cast_plate.py first'
+                (OUT / name).write_text(render('print'))
+                report['figures'][name] = {
+                    'labels': 13, 'min_base': 13.5, 'min_final': 13.5,
+                    'median_scale': 1, 'frame_width': 480, 'crop_width': 480,
+                    'source_sha256': sha(IMAGES / name), 'print_sha256': sha(OUT / name),
+                    'generator': 'docs/v0.10.0/cast_plate.py',
+                }
+                print(f'{name:34} bespoke cast plate; minimum 9.23pt at 4.56in')
+                continue
             src = recolor((IMAGES / name).read_text(), name)
             result = fit(page, src)
             if result['new_collisions']:
@@ -352,8 +379,11 @@ def main():
             result['source_sha256'] = sha(IMAGES / name)
             result['print_sha256'] = sha(OUT / name)
             report['figures'][name] = result
-            print(f"{name:34} labels {result['labels']:3}  min {result['min_base']:5.1f} -> {result['min_final']:5.1f}px"
-                  f"  median x{result['median_scale']:.2f}  width {result['frame_width']:.0f} -> {result['crop_width']:.0f}")
+            if result['labels']:
+                print(f"{name:34} labels {result['labels']:3}  min {result['min_base']:5.1f} -> {result['min_final']:5.1f}px"
+                      f"  median x{result['median_scale']:.2f}  width {result['frame_width']:.0f} -> {result['crop_width']:.0f}")
+            else:
+                print(f"{name:34} original illustration without text labels")
         browser.close()
     report['count'] = len(report['figures'])
     REPORT.write_text(json.dumps(report, indent=2) + '\n')

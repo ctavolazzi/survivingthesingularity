@@ -1,6 +1,6 @@
 {
   "schema": "sts-art-catalog/v1",
-  "generated": "2026-07-27",
+  "generated": "2026-09-28",
   "project": "Surviving the Singularity (book)",
   "book_version_introduced": "0.7.0",
   "palette": {
@@ -12,7 +12,8 @@
   },
   "provenance": {
     "tool": "PixelLab (Tier 1) + Python(Pillow) compositing; SVG diagrams hand-authored",
-    "license_note": "PixelLab-generated assets subject to PixelLab Terms of Service (https://pixellab.ai/termsofservice). Verify commercial/coursework rights before external reuse."
+    "license_note": "PixelLab-generated assets subject to PixelLab Terms of Service (https://pixellab.ai/termsofservice). Verify commercial/coursework rights before external reuse.",
+    "v0.10.1": "Six photo-derived alpha illustrations edited with built-in image_gen; eight charts, six conceptual SVGs, and three Three.js scenes. Per-asset records name sources and licenses; historical PixelLab provenance remains on earlier assets."
   },
   "id_scheme": "sts.<kind>.<slug>  (kind: sprite=object, char=character, plate=composite, diagram=svg)",
   "assets": [
@@ -325,7 +326,7 @@
       "id": "sts.char.denny",
       "type": "sprite-character",
       "label": "Denny",
-      "role": "network engineer; livestreamer",
+      "role": "ex-logistics worker; co-op media operator",
       "concepts": [
         "cast"
       ],
@@ -369,17 +370,17 @@
         "file": "19-chapter17.md",
         "section": "Foundations intro"
       },
-      "alt": "A pixel-art specimen board of the field kit: photobioreactor, grow tower, LoRa node, solar and battery, 3D printer, CNC plasma table, walk-behind tractor, cyberdeck",
-      "caption": "The field kit. Every one of these already exists, and a person with modest money and stubbornness can own the lot."
+      "alt": "A pixel-art specimen board of the field kit: a photobioreactor, a vertical grow tower, a LoRa mesh node, a solar-and-battery rig, a 3D printer, a CNC plasma table, a walk-behind tractor, and a cyberdeck",
+      "caption": "The field kit. Every one of these already exists, and a person with modest money and stubbornness can get their hands on most of it."
     },
     {
       "id": "sts.plate.co-op-cast",
       "type": "plate-composite",
       "label": "The Co-op",
-      "figure": "static/book-images/coop-cast.png",
+      "figure": "static/book-images/coop-cast.svg",
       "size": [
-        1808,
-        606
+        480,
+        588
       ],
       "composed_of": [
         "sts.char.elijah",
@@ -392,8 +393,10 @@
         "file": "part2-divider.md",
         "section": "divider"
       },
-      "alt": "Pixel-art portraits of the co-op: Elijah, Marta, Priya, and Denny",
-      "caption": "The people the rest of this book is about. Nineteen households; these four you get to know."
+      "alt": "Pixel-art portraits of the co-op: Elijah the ex-tech worker with his notebook, Marta the fabricator in her welding apron, Priya the soil scientist with a broadfork, and Denny the former logistics worker",
+      "caption": "The people the rest of this book is about. Nineteen households; these four you get to know.",
+      "generator": "docs/v0.10.0/cast_plate.py",
+      "historical_figure": "static/book-images/coop-cast.png"
     },
     {
       "id": "sts.plate.photobioreactor",
@@ -412,7 +415,7 @@
         "file": "19-chapter17.md",
         "section": "The Proof Is Not Hypothetical (SECTOR 07)"
       },
-      "alt": "A DIY 3D-printed photobioreactor growing green algae with a Raspberry Pi board",
+      "alt": "A DIY 3D-printed photobioreactor: a clear vessel of bright green algae culture on a printed frame with a Raspberry Pi board and status light",
       "caption": "Tens of thousands of dollars in a lab. A few hundred on a workbench."
     },
     {
@@ -432,7 +435,7 @@
         "file": "26-appendix-e.md",
         "section": "opening"
       },
-      "alt": "A homemade cyberdeck: rugged case, mechanical keyboard, amber map screen, antenna",
+      "alt": "A homemade cyberdeck: a rugged hard case holding a mechanical keyboard, an amber map-lit screen, and a stub antenna",
       "caption": "A computer you understand all the way down, that answers to nobody's server."
     },
     {
@@ -453,7 +456,7 @@
         "section": "the ox / husbandry passage"
       },
       "alt": "A brown ox in a wooden yoke pulling a plow through a field",
-      "caption": "The first time labor could be handed to something that ran on its own. The machine is the second."
+      "caption": "An early way to hand over some of the heavy work. Training, guidance, and care still belonged to people."
     },
     {
       "id": "sts.diagram.hyperlocal-vs-global",
@@ -471,8 +474,8 @@
         "file": "11-chapter9.md",
         "section": "Deglobalization, Not Decentralization"
       },
-      "alt": "Two supply lines compared: a long fragile global chain versus a short hyper-local loop",
-      "caption": "Not decentralization for its own sake. A shorter line you can hold in your head."
+      "alt": "Two supply lines compared side by side: a long fragile global chain of raw material, overseas factory, ocean freight and last-mile truck, versus a short hyper-local loop of local material, neighborhood factory, and you",
+      "caption": "Not decentralization for its own sake. A shorter line: one you can hold in your head, that depends on your neighbors' hands instead of strangers far away."
     },
     {
       "id": "sts.diagram.algae-loop",
@@ -490,8 +493,8 @@
         "file": "19-chapter17.md",
         "section": "The Proof Is Not Hypothetical"
       },
-      "alt": "The closed algae fish-food loop: fish, grow beds, dry and grind, photobioreactor, back to fish",
-      "caption": "Grow the fish food too, and the last store-bought input drops out. The loop closes."
+      "alt": "The closed algae fish-food loop drawn as a cycle: fish tank to grow beds to dry-and-grind to photobioreactor and back to the fish as home-made food",
+      "caption": "Grow the fish food too, and one more store-bought input drops out."
     },
     {
       "id": "sts.photo.ch01-atlas",
@@ -550,7 +553,7 @@
         "section": "Chapter 0: The Demonstration"
       },
       "alt": "Peeling red bark of a Pacific madrone (Arbutus menziesii)",
-      "caption": "Pacific madrone, mid-shed. It burns to the ground and comes back from the root.",
+      "caption": "Pacific madrone, mid-shed. It can burn to the ground and come back from the root.",
       "credit": {
         "artist": "Photo by and (c)2007 Jina Lee",
         "license": "CC BY-SA 3.0",
@@ -589,7 +592,7 @@
         "section": "Chapter 1: The Event Horizon"
       },
       "alt": "Event Horizon Telescope image of the M87 supermassive black hole",
-      "caption": "The event horizon of M87. Past a certain line, there is no going back.",
+      "caption": "The shadow of the black hole M87\\*. Past a certain line, there's no going back.",
       "credit": {
         "artist": "Event Horizon Telescope Collaboration",
         "license": "CC BY 4.0",
@@ -610,8 +613,8 @@
         "file": "04-chapter2.md",
         "section": "Chapter 2: The Era of AGI (Stages 1–5)"
       },
-      "alt": "Robotic arms assembling a car body",
-      "caption": "Robotic arms at work. The structural automation of labor, already routine.",
+      "alt": "Robotic arms in an interactive Jaguar assembly exhibit at Thinktank, Birmingham",
+      "caption": "Robotic arms in Thinktank's interactive Jaguar assembly exhibit. A demonstration of industrial automation.",
       "credit": {
         "artist": "ell brown",
         "license": "CC BY-SA 2.0",
@@ -632,7 +635,7 @@
         "section": "Chapter 3: The Leap to ASI & the Machine Exodus (Stages 6–7)"
       },
       "alt": "Falcon Heavy lifting off from Kennedy Space Center",
-      "caption": "Falcon Heavy demo mission. The exodus hardware is already flying.",
+      "caption": "Falcon Heavy demo mission. The first rungs of a very long ladder.",
       "credit": {
         "artist": "SpaceX",
         "license": "CC0",
@@ -674,7 +677,7 @@
         "section": "Chapter 5: The Thermodynamics of Survival"
       },
       "alt": "The Sun imaged by NASA's Solar Dynamics Observatory",
-      "caption": "The Sun, via NASA's Solar Dynamics Observatory. The only income the planet has.",
+      "caption": "The Sun, via NASA's Solar Dynamics Observatory. The dominant energy income of everything alive on Earth.",
       "credit": {
         "artist": "NASA/SDO (AIA)",
         "license": "Public domain",
@@ -797,8 +800,8 @@
         "file": "10-chapter8.md",
         "section": "The Great Cognitive Extraction"
       },
-      "alt": "The Cognitive Extraction Engine: raw attention is harvested by infinite scroll and notifications, depleting the prefrontal cortex, producing systemic suggestibility, and ending in loss of physical agency",
-      "caption": "The Cognitive Extraction Engine. Attention goes in at the top; agency comes out the bottom, and the platform keeps the difference."
+      "alt": "A conceptual sequence: scrolling and alerts compete with a chosen task, repeated switches leave work waiting, and less time may remain for that task. This is an illustration, not a neurological model.",
+      "caption": "The Cognitive Extraction Engine. A picture of diverted time, not a measurement of brain chemistry."
     },
     {
       "id": "sts.diagram.ch08-info-architectures",
@@ -815,7 +818,7 @@
         "section": "2. Semantic Hygiene: Filtering Memetic Viruses"
       },
       "alt": "Information Dispensing Architectures: a centralized algorithmic stream interrupting your brain constantly, versus filtered local sources delivered to your brain in scheduled batches",
-      "caption": "Two architectures for the same brain. The stream keeps you reactive; the batch keeps you sovereign."
+      "caption": "Two architectures for the same brain. The stream keeps you reactive; the batch keeps you in charge."
     },
     {
       "id": "sts.diagram.ch08-focus-recovery",
@@ -830,8 +833,8 @@
         "file": "10-chapter8.md",
         "section": "The Thermodynamics of Cognitive Capture"
       },
-      "alt": "The Cognitive Fragmentation Curve: a graph of cognitive depth over one hour, showing a twenty-minute climb to deep-focus baseline, then repeated algorithmic interrupts, each recovery peaking lower than the last",
-      "caption": "The Cognitive Fragmentation Curve. Above roughly three interrupts an hour, the curve never touches baseline again."
+      "alt": "An illustrative curve of attention on a task rising, dropping at interruptions, and recovering between them. The axes have no measured scale and the curve makes no claim about a fixed recovery time.",
+      "caption": "One possible pattern of interrupted work. A conceptual sketch, not measured data or a universal recovery curve."
     },
     {
       "id": "sts.diagram.ch08-firewall-pipeline",
@@ -850,8 +853,8 @@
         "file": "10-chapter8.md",
         "section": "Semantic Hygiene: Protecting the Input Buffer"
       },
-      "alt": "The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batch processing, then text-only synthesis, and emerges as deep physical execution",
-      "caption": "The Cognitive Firewall Pipeline. Entropy falls left to right; agency rises."
+      "alt": "A suggested attention routine: check incoming information in scheduled windows, make notes, then return to a chosen task. This is a practical proposal, not a measured change in entropy or agency.",
+      "caption": "The Cognitive Firewall Pipeline. A routine to try and adjust around the work and people who need you."
     },
     {
       "id": "sts.diagram.ch08-isolated-decay",
@@ -886,8 +889,8 @@
         "file": "10-chapter8.md",
         "section": "Section 3: Trust Network Topologies"
       },
-      "alt": "Trust network topologies: a star topology where every node depends on one hub that can fail, versus a mesh topology where every node connects to several neighbors and damage becomes a detour",
-      "caption": "Star versus mesh. In the star, the hub's failure is everyone's failure; in the mesh, damage is a routing problem."
+      "alt": "Illustrative network topologies: a star depends on one hub, while the mesh has alternate connections that may provide a route around a failure.",
+      "caption": "Star versus mesh. The star loses its links when the hub fails. The mesh can reroute if another working path remains."
     },
     {
       "id": "sts.diagram.ch08-commons-loop",
@@ -974,7 +977,7 @@
         "section": "Section 2: The Automated Greenhouse Core (Mycodo and Raspberry Pi)"
       },
       "alt": "The Greenhouse Automation Bus: a Raspberry Pi running Mycodo reads an I2C sensor bus (SHT31-D air, STEMMA soil) and drives a GPIO relay board controlling a water solenoid, exhaust fan, and grow lights, in a closed sense-decide-actuate loop",
-      "caption": "The Greenhouse Automation Bus. Sensors in on I2C, 12V actuators out on GPIO relays, PID loops in the middle."
+      "caption": "The greenhouse bus. Sensors in on I2C, low-voltage actuators out on relays, control loops in the middle."
     },
     {
       "id": "sts.diagram.ch09-cnc-bed",
@@ -995,7 +998,7 @@
         "section": "Section 3: The Mechanical Calorie Engine (FarmBot Architecture)"
       },
       "alt": "The CNC Autonomous Bed: a gantry travels the X-axis over a dense raised bed while a Z-axis tool head seeds, waters, and weeds plants addressed by X-Y coordinate, with no walking paths wasted",
-      "caption": "The CNC Autonomous Bed. Every plant is a coordinate; the machine tends the whole grid from one rail."
+      "caption": "The CNC bed. Every plant is a coordinate; the machine tends the grid from one rail."
     },
     {
       "id": "sts.diagram.ch09-act-reactor",
@@ -1070,8 +1073,8 @@
         "file": "12-chapter10.md",
         "section": "2. Error Accumulation (The Degeneracy Boundary)"
       },
-      "alt": "Model collapse generation by generation: a wide, rich human-data distribution at Generation 0 narrows to a piled-up mean at Generation 1 and finally to a single degenerate spike at Generation 5",
-      "caption": "Model collapse across one training lineage. The rich tails, the edge cases, the genius, are pruned first and gone by Generation 5."
+      "alt": "Schematic model collapse: a broad distribution narrows over successive generations. The generation labels illustrate the process, not a measured timetable for language models.",
+      "caption": "A simplified picture of model collapse across one training lineage, not a forecast of which generation fails. Rare cases can disappear first."
     },
     {
       "id": "sts.diagram.ch10-algorithm-unlock",
@@ -1089,8 +1092,8 @@
         "file": "12-chapter10.md",
         "section": "Algorithmic Judo: Weaponizing the Feedback Loop"
       },
-      "alt": "The Algorithmic Judo pipeline: a high-utility off-grid tech core wrapped in an outrage or tragedy narrative hook is scored viral by the algorithm and delivered to a human target who unlocks the core",
-      "caption": "Algorithmic Judo. A dry manual scores near zero; wrapped in a human story, the algorithm carries it for you."
+      "alt": "A proposed publishing path: useful instructions become part of a true story, travel through a feed, and reach a reader who can use them. Reach isn't guaranteed.",
+      "caption": "Algorithmic judo: give a useful manual a human entry point. Distribution still depends on the platform and the people who encounter it."
     },
     {
       "id": "sts.photo.ch11-spot",
@@ -1154,7 +1157,7 @@
         "section": "Section 2: Custom Thermodynamic Cooling (External Heat Exchange)"
       },
       "alt": "The Split-Loop Thermal Exchange: GPU and CPU water blocks inside the insulated shell feed a 12V pump that sends hot coolant through the wall to a salvaged car radiator in free air, with cool coolant returning to the chips",
-      "caption": "The Split-Loop Thermal Exchange. Pull the heat straight off the silicon and dump it outside, instead of paying an AC unit to fight your own server."
+      "caption": "The split loop. Pull the heat off the silicon and dump it outside, instead of paying an air conditioner to fight your own server."
     },
     {
       "id": "sts.photo.ch12-farmbot",
@@ -1227,7 +1230,7 @@
         "section": "Section 2: The Semi-Autonomous CSA Topology"
       },
       "alt": "The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhouse, Shouse Node B with its tool library and battery bank, exchanging tasks over LoRa mesh, and a vulnerable node receiving automated calorie and labor deliveries",
-      "caption": "The Semi-Autonomous CSA. Automated nodes run at roughly 300% of their own need; the surplus carries whoever cannot produce."
+      "caption": "The semi-autonomous CSA. Whatever surplus the nodes produce goes to the neighbors who can't. The point is distribution, not a guaranteed yield."
     },
     {
       "id": "sts.photo.ch13-solar-barn",
@@ -1244,7 +1247,7 @@
         "section": "Chapter 13: The Shouse Protocol"
       },
       "alt": "Solar panels on a rural outbuilding roof",
-      "caption": "Solar on an outbuilding. The Shouse Grid starts with one roof.",
+      "caption": "Solar on an outbuilding. The shouse grid starts with one roof.",
       "credit": {
         "artist": "Ermell",
         "license": "CC BY-SA 4.0",
@@ -1268,7 +1271,7 @@
         "section": "The Autonomous Shell: The $25,000 Exit Strategy"
       },
       "alt": "The Double-Wide Shell Architecture: two 8-by-40-foot containers mated along a reinforced seam, one side holding the workspace and server room, the other the wet-room, kitchen, and living quarters",
-      "caption": "The Double-Wide Shell. Two one-trip containers, one surgical cut, 640 square feet of open span."
+      "caption": "The double-wide shell, in plan. Two containers, one room, and a steel skeleton where the walls used to be."
     },
     {
       "id": "sts.diagram.ch13-pier-alignment",
@@ -1316,8 +1319,8 @@
         "file": "15-chapter13.md",
         "section": "Step 4: The Thermodynamics of Insulation (Beating the Tin Can)"
       },
-      "alt": "The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel",
-      "caption": "The thermal barrier in section. Foam bonded to bare steel: vapor-sealed, condensation-proof, and the heat stays outside."
+      "alt": "Illustrative wall section: steel, closed-cell foam, and interior finish. Insulation reduces heat flow; joints, penetrations, moisture control, and fire protection still need a complete design.",
+      "caption": "The thermal barrier in section. A continuous insulation and air barrier helps keep warm, moist indoor air away from cold metal."
     },
     {
       "id": "sts.diagram.ch13-wet-room",
@@ -1350,8 +1353,8 @@
         "file": "16-chapter14.md",
         "section": "Chapter 14: The Collapse of the Long Tail"
       },
-      "alt": "Interior of an abandoned shopping mall",
-      "caption": "A dead mall. Gradually, then suddenly.",
+      "alt": "An abandoned bar inside an older shopping mall in Haifa",
+      "caption": "An abandoned bar in an older shopping mall in Haifa. Gradually, then suddenly.",
       "credit": {
         "artist": "User:Mattes",
         "license": "Public domain",
@@ -1374,7 +1377,7 @@
         "section": "The Just-In-Time Trap"
       },
       "alt": "The Logistic Shockwave: a four-day cascade from port disruption, to trucks rerouted, to shelves stripped clean, to systemic panic, with the local food buffer draining to zero alongside",
-      "caption": "The Logistic Shockwave. A just-in-time system has no buffer to absorb the blow, so the blow travels straight through to the shelves."
+      "caption": "The logistic shockwave. A system with no buffer passes every blow straight through to the shelves."
     },
     {
       "id": "sts.diagram.ch14-mesh-comms",
@@ -1391,8 +1394,8 @@
         "file": "16-chapter14.md",
         "section": "The Municipal Mesh: Independent Communications"
       },
-      "alt": "Centralized versus decentralized mesh communications: a single tower serving three users fails entirely when broken, while a mesh of nodes routes around any dead node",
-      "caption": "Two topologies for a town. The tower is a single point of failure; the mesh treats damage as a routing problem."
+      "alt": "Two example networks: users dependent on one tower lose their link when it fails; a mesh with several surviving radio paths can pass messages around a failed node.",
+      "caption": "Two topologies for a town. A mesh can route around damage only where another usable path remains."
     },
     {
       "id": "sts.photo.ch12-farmbot-watering",
@@ -1432,8 +1435,8 @@
         "file": "17-chapter15.md",
         "section": "The Legal Firewall: Hacking the Deed"
       },
-      "alt": "The Cooperative Land Trust Firewall: the speculative real estate market's attempts to buy or foreclose are blocked by a legal shield; inside the trust, the land is held in perpetuity and leased to community stewards on a 99-year ground lease",
-      "caption": "The CLT firewall. Split the title, and the market can no longer reach the dirt."
+      "alt": "Community land trust structure: a nonprofit holds land under resale restrictions and members hold improvements under a long ground lease. Taxes, debt, and governance duties remain; the structure doesn't guarantee protection from foreclosure.",
+      "caption": "The land-trust idea. Split the title, and the speculative market has a much harder time reaching the dirt."
     },
     {
       "id": "sts.diagram.ch15-soil-food-web",
@@ -1451,7 +1454,7 @@
         "section": "The Biological Hack: Bypassing the Petrochemical Cartel"
       },
       "alt": "The Soil Food Web Engine: sunlight and plants pump sugars to bacteria and fungi, which mine minerals, which are digested by protozoa and nematodes, which release plant-available nutrients back to the plants in a closed loop",
-      "caption": "The Soil Food Web. A biological refinery running on sunlight: the plants feed the web that feeds the plants."
+      "caption": "The soil food web. Sunlight feeds the plants, the plants feed the microbes, and the microbes help feed the plants."
     },
     {
       "id": "sts.photo.ch16-servers",
@@ -1467,7 +1470,7 @@
         "section": "Chapter 16: Digital Leverage and Media Autonomy"
       },
       "alt": "Racks of servers in a data center",
-      "caption": "Server racks. Code and media scale while you sleep.",
+      "caption": "Server racks. A useful record can travel beyond the people who made it.",
       "credit": {
         "artist": "Victor Grigas",
         "license": "CC BY-SA 3.0",
@@ -1526,7 +1529,7 @@
         "section": "3. Sneakernets: The Physical Air-Gap"
       },
       "alt": "The Sneakernet Cycle: a hyper-local node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse",
-      "caption": "The Sneakernet Cycle. A terabyte walks across town in a pocket, and nobody upstream ever sees a packet."
+      "caption": "The sneakernet cycle. A library walks across town in a pocket."
     },
     {
       "id": "sts.photo.ch17-workbench",
@@ -1566,8 +1569,8 @@
         "file": "19-chapter17.md",
         "section": "1. The Nervous System: DIY LoRa Mesh Nodes"
       },
-      "alt": "Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar panel feeding two salvaged 18650 batteries feeding an ESP32 LoRa chip, with a tuned antenna broadcasting to the next node on 915 or 868 MHz",
-      "caption": "A hyper-local mesh node. Sunlight in, encrypted packets out, no license and no bill."
+      "alt": "Illustrative mesh-node hardware: a solar panel, charger and protected battery matched to one another, a supported LoRa board, and a band-matched antenna. Firmware and regional settings must match the hardware and local rules.",
+      "caption": "A mesh node. Sunlight in, short encrypted messages out."
     },
     {
       "id": "sts.diagram.ch17-dc-native",
@@ -1585,8 +1588,8 @@
         "file": "19-chapter17.md",
         "section": "2. The Muscle: DC-Native Solar and Battery Microgrids"
       },
-      "alt": "The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 percent converting DC to AC and again converting back to DC at the wall brick, while the DC-native chain runs solar to battery to fuse block to devices with zero conversion loss",
-      "caption": "The round-trip toll. Every load in the shell already wanted DC; the inverter chain charges you twice to deliver it."
+      "alt": "Two power paths: an inverter and wall adapter convert DC to AC and back; a DC distribution path avoids that pair but still has charging, wiring, and voltage-conversion losses.",
+      "caption": "The round-trip toll. When a load already wants DC, the inverter chain charges you twice to deliver it."
     },
     {
       "id": "sts.diagram.ch17-fab-lab",
@@ -1604,7 +1607,7 @@
         "section": "3. The Skeleton: Open-Source Machine Tools"
       },
       "alt": "The Neighborhood Fab Lab: recycled raw materials feed three open-source machine cores, a RepRap 3D printer, a CNC plasma router, and an open-source tractor, producing custom parts, structural steel, and field power",
-      "caption": "The Neighborhood Fab Lab. Broken means fabricate, not wait."
+      "caption": "The neighborhood fab lab. Broken means fabricate, not wait."
     },
     {
       "id": "sts.photo.ch18-compass-map",
@@ -1641,7 +1644,7 @@
         "section": "CONCLUSION: The 2027 Tipping Point"
       },
       "alt": "Sunrise seen from the International Space Station",
-      "caption": "Sunrise from orbit. The new era does not ask permission.",
+      "caption": "Sunrise from orbit. The new era doesn't ask permission, and it still has work to do.",
       "credit": {
         "artist": "NASA Johnson Space Center",
         "license": "Public domain",
@@ -1709,7 +1712,7 @@
         "section": "A Dense City Cannot Feed Itself, and It Does Not Have To"
       },
       "alt": "A dense city core ringed by four surrounding municipalities that supply it: food production, materials recovery, energy and water, and neighborhood factories, with supply flowing inward to the core",
-      "caption": "You do not deglobalize a city by walling it off. You ring it with municipalities that produce what it cannot, which is also where the good jobs are."
+      "caption": "You don't deglobalize a city by walling it off. You ring it with towns that produce what it can't, which is also where the good jobs are."
     },
     {
       "id": "sts.diagram.ch18-social-contract",
@@ -1750,7 +1753,7 @@
         "section": "INTRODUCTION: The Uncompromising Truth"
       },
       "alt": "A pixel-art diptych: on the left a solar-topped farm robot on treads waters a row of vegetable seedlings; on the right a robot on treads raises and bolts the timber frame of a small house",
-      "caption": "The two machines this whole book is about: one that grows the food, one that builds the house. The pieces already exist; the work is putting them in your neighbors' hands.",
+      "caption": "The two machines this whole book is about: one that grows the food, one that builds the house. The pieces are arriving. The work is putting them in your neighbors' hands.",
       "pixellab": {
         "grower": {
           "object_id": "43d42db2-15d1-4072-bcc7-0d97ae6b1b61",
@@ -1856,7 +1859,7 @@
         "section": "Precedent P-01: The Reading Rage (1790s)"
       },
       "alt": "A young woman in a 1790s gown reads a novel by candlelight in a wingback armchair, more books stacked on the floor",
-      "caption": "The epidemic, as the doctors saw it. Two hundred years later we hand this exact picture to children as the cure for their screens."
+      "caption": "The epidemic, as its critics saw it. Two hundred years later we hand this exact picture to children as the cure for their screens."
     },
     {
       "id": "sts.sprite.woodstove",
@@ -1900,8 +1903,8 @@
         "file": "07-chapter5.md",
         "section": "the grandmother's stove"
       },
-      "alt": "A squat black cast-iron wood stove with the door open, one cracked firebrick visible inside",
-      "caption": "The Fisher. Eighty pounds of steel, one cracked firebrick. Older than him."
+      "alt": "A squat black wood stove with the door open, one cracked firebrick visible inside",
+      "caption": "The Fisher. Four hundred pounds of steel, one cracked firebrick. Older than him."
     },
     {
       "id": "sts.sprite.tool-wall",
@@ -2355,7 +2358,7 @@
         "section": "Marta tells Gary and Sal's story"
       },
       "alt": "A middle-aged factory worker with a tired anxious expression, wearing a plant uniform",
-      "caption": "Gary. Stayed informed. Couldn't fix a fence."
+      "caption": "Gary. Stayed informed."
     },
     {
       "id": "sts.char.devendra",
@@ -2415,8 +2418,8 @@
         "file": "09-chapter7.md",
         "section": "Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)"
       },
-      "alt": "A 1929 newspaper advertisement headlined \"Taking Liberties With Folks' Habits,\" showing a large robot shouldering aside a weeping cherub at a harp while a dog howls, above columns of argument signed by the American Federation of Musicians",
-      "caption": "Exhibitors Herald-World, November 16, 1929. \"Is the Robot such good company he can 'hog the whole show?'\"",
+      "alt": "A robot shoulders aside a weeping cherub at a harp while a dog howls at it",
+      "caption": "Exhibitors Herald-World, November 16, 1929. The union asks whether the Robot is good enough company to hog the whole show.",
       "credit": {
         "artist": "Advertisement by the American Federation of Musicians (Joseph N. Weber, president); illustration signed Helguera",
         "license": "Public domain (published in the United States in 1929; US copyright expired January 1, 2025)",
@@ -2436,12 +2439,691 @@
         "file": "09-chapter7.md",
         "section": "Precedent P-10: The Robot in the Orchestra Pit (United States, 1929 to 1948)"
       },
-      "alt": "A 1930 newspaper advertisement headlined \"Is the Robot Fooling YOU?\", showing a robot among classical muses holding a banner reading CANNED MUSIC IN THEATERS, with a mail-in coupon enrolling the reader in the Music Defense League",
+      "alt": "A robot stands among classical muses holding a banner reading CANNED MUSIC IN THEATERS",
       "caption": "Exhibitors Herald-World, May 17, 1930. The union claimed two million enrollments by that spring. Note the coupon.",
       "credit": {
         "artist": "Advertisement by the American Federation of Musicians (Joseph N. Weber, president); illustration signed Helguera",
         "license": "Public domain (published in the United States in 1930; US copyright expired January 1, 2026)",
         "source": "https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up"
+      }
+    },
+    {
+      "id": "sts.diagram.intro-food-insecurity",
+      "type": "diagram-svg",
+      "label": "A line chart of the share of US households that were food insecure, 2001 to 2024",
+      "concepts": [],
+      "figure": "static/book-images/intro-food-insecurity.svg",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "We don't have to live like this"
+      },
+      "alt": "A line chart of the share of US households that were food insecure, 2001 to 2024. It rises from 11.1 percent in 2007 to 14.6 percent in 2008 during the recession, takes a decade to fall back, and reaches 13.7 percent, 18.3 million households, in 2024. Very low food security follows the same shape, reaching 5.4 percent.",
+      "caption": "When the jobs went in 2008, food insecurity jumped by a third in a single year. Source: [USDA Economic Research Service, food security trends](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics)."
+    },
+    {
+      "id": "sts.diagram.ch02-eighteen-days",
+      "type": "diagram-svg",
+      "label": "A timeline from June 12 to July 1, 2026",
+      "concepts": [],
+      "figure": "static/book-images/ch02-eighteen-days.svg",
+      "placement": {
+        "chapter": "chapter2",
+        "file": "04-chapter2.md",
+        "section": "Stage 2: The Panic and the Plug"
+      },
+      "alt": "A timeline from June 12 to July 1, 2026: on June 12 Commerce requires a license for two frontier models and the lab switches them off worldwide; on June 26 trusted partners are exempted for critical infrastructure; on June 30 the controls are lifted on conditions; on July 1 access begins returning. The first stretch is marked Stage 2, the last Stage 3.",
+      "caption": "Stage 2 and Stage 3, eighteen days apart. Every date on the line is from the sources cited above."
+    },
+    {
+      "id": "sts.diagram.ch05-horses-tractors",
+      "type": "diagram-svg",
+      "label": "Two stacked line charts sharing a year axis, 1910 to 1949. Horses and mules on U",
+      "concepts": [],
+      "figure": "static/book-images/ch05-horses-tractors.svg",
+      "placement": {
+        "chapter": "chapter5",
+        "file": "07-chapter5.md",
+        "section": "Precedent P-07: The Horse and the Ledger (Britain and United States, eighteenth to twentieth centuries)"
+      },
+      "alt": "Two stacked line charts sharing a year axis, 1910 to 1949. Horses and mules on US farms peak at 26.7 million in 1918 and fall to 8.3 million by 1949. Tractors on farms rise from about 1,000 in 1910 to 3.5 million in 1949.",
+      "caption": "The herd and the machine. The horse didn't get worse; the ledger changed. Source: USDA Statistical Bulletin 83, table 14."
+    },
+    {
+      "id": "sts.diagram.original-09-repair-tools",
+      "type": "diagram-svg",
+      "label": "Line drawing of hand tools arranged for repair",
+      "concepts": [
+        "fabrication"
+      ],
+      "figure": "static/book-images/original-09-repair-tools.svg",
+      "placement": {
+        "chapter": "chapter6",
+        "file": "08-chapter6.md",
+        "section": "Chapter 6: Is the Singularity a Done Deal?"
+      },
+      "alt": "Line drawing of hand tools arranged for repair",
+      "caption": "Tools become useful through people who can operate, maintain, and share them. Original illustration for this book."
+    },
+    {
+      "id": "sts.diagram.ch06-capability-access",
+      "type": "diagram-svg",
+      "label": "Four boxes in a row, capability, deployment, ownership, and access, each asking ",
+      "concepts": [],
+      "figure": "static/book-images/ch06-capability-access.svg",
+      "placement": {
+        "chapter": "chapter6",
+        "file": "08-chapter6.md",
+        "section": "The part we get to decide"
+      },
+      "alt": "Four boxes in a row, capability, deployment, ownership, and access, each asking its own question, with the gaps between them labeled as the part we get to decide",
+      "caption": "Four different events, often mistaken for one."
+    },
+    {
+      "id": "sts.diagram.original-07-pamphlet-and-thread",
+      "type": "diagram-svg",
+      "label": "Line drawing of a printed pamphlet and binding thread",
+      "concepts": [],
+      "figure": "static/book-images/original-07-pamphlet-and-thread.svg",
+      "placement": {
+        "chapter": "chapter10",
+        "file": "12-chapter10.md",
+        "section": "Chapter 10: The \"Create Over Consume\" Protocol"
+      },
+      "alt": "Line drawing of a printed pamphlet and binding thread",
+      "caption": "Make something another person can use. Original illustration for this book."
+    },
+    {
+      "id": "sts.diagram.original-04-seed-and-root",
+      "type": "diagram-svg",
+      "label": "Line drawing of a germinating seed and roots",
+      "concepts": [],
+      "figure": "static/book-images/original-04-seed-and-root.svg",
+      "placement": {
+        "chapter": "chapter12",
+        "file": "14-chapter12.md",
+        "section": "Chapter 12: The Land Strategy"
+      },
+      "alt": "Line drawing of a germinating seed and roots",
+      "caption": "A place to grow begins with access to the ground. Original illustration for this book."
+    },
+    {
+      "id": "sts.diagram.original-11-soil-profile",
+      "type": "diagram-svg",
+      "label": "Line drawing of roots and layers of soil",
+      "concepts": [
+        "soil-health"
+      ],
+      "figure": "static/book-images/original-11-soil-profile.svg",
+      "placement": {
+        "chapter": "chapter15",
+        "file": "17-chapter15.md",
+        "section": "Chapter 15: The Power of Reclaiming Soil"
+      },
+      "alt": "Line drawing of roots and layers of soil",
+      "caption": "The living ground beneath the work. Original illustration for this book."
+    },
+    {
+      "id": "sts.diagram.ch19-conversion-ladder",
+      "type": "diagram-svg",
+      "label": "A ladder of nine rungs, from counting what is wasted at the bottom to keeping th",
+      "concepts": [],
+      "figure": "static/book-images/ch19-conversion-ladder.svg",
+      "placement": {
+        "chapter": "chapter19",
+        "file": "27-chapter19.md",
+        "section": "Chapter 19: The Ladder: How Money Becomes Optional"
+      },
+      "alt": "A ladder of nine rungs, from counting what is wasted at the bottom to keeping the market above the floor at the top, grouped into three bands: feed people now, change who owns and decides, and widen the floor",
+      "caption": "The conversion, one rung at a time. The first seven draw on programs and institutions that already exist."
+    },
+    {
+      "id": "sts.diagram.appd-precedent-timeline",
+      "type": "diagram-svg",
+      "label": "All twenty-four precedents on one page",
+      "concepts": [],
+      "figure": "static/book-images/appd-precedent-timeline.svg",
+      "placement": {
+        "chapter": "appendix-d",
+        "file": "25-appendix-d.md",
+        "section": "APPENDIX D: THE PRECEDENT LEDGER"
+      },
+      "alt": "All twenty-four precedents on one page: nineteen shown on a timeline from 1750 to today, as dots for single dates and bars for spans, and five from deep history listed with their dates, from the first farms around 9500 BC to the Great Demotion of 1543",
+      "caption": "The Ledger on one page. Dashed bars are approximate spans drawn from each chapter's documents."
+    },
+    {
+      "id": "sts.photo.v101-cutout-atlas",
+      "type": "photo",
+      "label": "Cutout Atlas",
+      "concepts": [
+        "humanoid-robot"
+      ],
+      "figure": "static/book-images/v101-cutout-atlas.png",
+      "placement": {
+        "chapter": "introduction",
+        "file": "02-introduction.md",
+        "section": "The second ox"
+      },
+      "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.",
+      "caption": "Atlas, outside the demonstration room. AI-adapted cutout from [DARPA](https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg), [public domain](https://www.darpa.mil/policies/usage-policy).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "cutout",
+        "tool": "built-in image_gen",
+        "source": "ch01-atlas.jpg",
+        "source_sha256": "4bd77247b1a37d537c3036f0a2f821536e97186176661deecc296e45b377b0a9",
+        "license": "Public domain",
+        "prompt_record": "docs/v0.10.1/image-prompts.json",
+        "adaptation": true
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-forecast-shift",
+      "type": "diagram-svg",
+      "label": "Chart Forecast Shift",
+      "concepts": [
+        "automation"
+      ],
+      "figure": "static/book-images/v101-chart-forecast-shift.svg",
+      "placement": {
+        "chapter": "chapter1",
+        "file": "03-chapter1.md",
+        "section": "My date, and what would prove it wrong"
+      },
+      "alt": "Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates.",
+      "caption": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. [Grace et al., Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843v3).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-visual-local-copies",
+      "type": "diagram-svg",
+      "label": "Visual Local Copies",
+      "concepts": [
+        "local-copies"
+      ],
+      "figure": "static/book-images/v101-visual-local-copies.svg",
+      "placement": {
+        "chapter": "chapter2",
+        "file": "04-chapter2.md",
+        "section": "Stage 2: The Panic and the Plug"
+      },
+      "alt": "A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power.",
+      "caption": "A copy you can open can outlast a broken link. It does not replace electrical power or a tested plan for equipment that depends on it. Conceptual illustration.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "conceptual",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/vignettes.py"
+      }
+    },
+    {
+      "id": "sts.photo.v101-cutout-rocket",
+      "type": "photo",
+      "label": "Cutout Rocket",
+      "concepts": [
+        "spaceflight"
+      ],
+      "figure": "static/book-images/v101-cutout-rocket.png",
+      "placement": {
+        "chapter": "chapter3",
+        "file": "05-chapter3.md",
+        "section": "Stage 6: The ASI Exodus"
+      },
+      "alt": "Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.",
+      "caption": "An image for the imagined departure. AI-adapted collage from [SpaceX](https://commons.wikimedia.org/wiki/File:Falcon_Heavy_Demo_Mission_(40126461851).jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/); the scenario remains speculative.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "cutout",
+        "tool": "built-in image_gen",
+        "source": "ch03-falcon-heavy.jpg",
+        "source_sha256": "987e7f4547eefef240d8605533a9cc48fe129997a71d9d916e3c34042683a7c6",
+        "license": "CC0",
+        "prompt_record": "docs/v0.10.1/image-prompts.json",
+        "adaptation": true
+      }
+    },
+    {
+      "id": "sts.photo.v101-cutout-sun",
+      "type": "photo",
+      "label": "Cutout Sun",
+      "concepts": [
+        "solar-energy"
+      ],
+      "figure": "static/book-images/v101-cutout-sun.png",
+      "placement": {
+        "chapter": "chapter5",
+        "file": "07-chapter5.md",
+        "section": "The Foundations"
+      },
+      "alt": "Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.",
+      "caption": "Energy has to come from somewhere. AI-adapted [NASA/SDO imagery](https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg), [public domain](https://www.nasa.gov/nasa-brand-center/images-and-media/); not an unaltered scientific image.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "cutout",
+        "tool": "built-in image_gen",
+        "source": "ch05-sdo-sun.jpg",
+        "source_sha256": "bdad996f80c2c00a49c312cb2cd23697df8fe4434ae577af2a5e394dd2e91b17",
+        "license": "Public domain",
+        "prompt_record": "docs/v0.10.1/image-prompts.json",
+        "adaptation": true
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-data-centre-demand",
+      "type": "diagram-svg",
+      "label": "Chart Data Centre Demand",
+      "concepts": [
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/v101-chart-data-centre-demand.svg",
+      "placement": {
+        "chapter": "chapter5",
+        "file": "07-chapter5.md",
+        "section": "The meat engine and the silicon machine"
+      },
+      "alt": "Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted.",
+      "caption": "The machine's appetite. The solid column is IEA's estimate for 2025; the hatched column is its 2030 projection. This is all data-centre electricity, not AI alone. [IEA, Key Questions on Energy and AI, 2026](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-income-food-access",
+      "type": "diagram-svg",
+      "label": "Chart Income Food Access",
+      "concepts": [
+        "income-food-access"
+      ],
+      "figure": "static/book-images/v101-chart-income-food-access.svg",
+      "placement": {
+        "chapter": "chapter6",
+        "file": "08-chapter6.md",
+        "section": "The ladder with the bottom rungs sawed off"
+      },
+      "alt": "Two lollipop bars show food insecurity in selected US income groups during 2024: 39.4% of households below the poverty threshold and 7.9% at or above 185% of that threshold. Dashed reference ticks mark the 13.7% national household rate. Middle and unknown income categories are not plotted.",
+      "caption": "Income and food access. In the 2024 survey, food insecurity was associated with income. These two selected groups do not represent every income category, and the comparison does not establish causation. [USDA ERS, ERR-358, Table 2](https://www.ers.usda.gov/media/9161/err-358.pdf?v=35619).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-visual-access-gate",
+      "type": "diagram-svg",
+      "label": "Visual Access Gate",
+      "concepts": [
+        "access-gate"
+      ],
+      "figure": "static/book-images/v101-visual-access-gate.svg",
+      "placement": {
+        "chapter": "chapter6",
+        "file": "08-chapter6.md",
+        "section": "Security is something you can rely on"
+      },
+      "alt": "A productive machine stands before an open gate and a plate. The gate names terms, price, eligibility, and delivery as choices that affect who receives the result.",
+      "caption": "A working machine still needs an arrangement that lets people reach its output. Conceptual illustration.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "conceptual",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/vignettes.py"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-visual-attention-ribbon",
+      "type": "diagram-svg",
+      "label": "Visual Attention Ribbon",
+      "concepts": [
+        "attention-economy",
+        "cognitive-autonomy"
+      ],
+      "figure": "static/book-images/v101-visual-attention-ribbon.svg",
+      "placement": {
+        "chapter": "chapter8",
+        "file": "10-chapter8.md",
+        "section": "Protocol 3: Batch it"
+      },
+      "alt": "A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task.",
+      "caption": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive budget or a fixed recovery time.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "conceptual",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/vignettes.py"
+      }
+    },
+    {
+      "id": "sts.photo.v101-cutout-printer",
+      "type": "photo",
+      "label": "Cutout Printer",
+      "concepts": [
+        "3d-printing"
+      ],
+      "figure": "static/book-images/v101-cutout-printer.png",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "The controller isn't dinner"
+      },
+      "alt": "Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.",
+      "caption": "A machine takes shape around its work. AI-adapted cutout from [John Abella](https://commons.wikimedia.org/wiki/File:Prusa_i3_-_RepRap_3D_printer_printing.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "cutout",
+        "tool": "built-in image_gen",
+        "source": "ch09-3d-printer.jpg",
+        "source_sha256": "bcb75cd2d4be36d180c81a5ec4675ebccccb90c1352daf745bee6cda0ebb590d",
+        "license": "CC BY 2.0",
+        "prompt_record": "docs/v0.10.1/image-prompts.json",
+        "adaptation": true
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-ammonia-energy",
+      "type": "diagram-svg",
+      "label": "Chart Ammonia Energy",
+      "concepts": [
+        "strategy"
+      ],
+      "figure": "static/book-images/v101-chart-ammonia-energy.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "The nitrogen problem"
+      },
+      "alt": "Three columns show net energy intensity of ammonia production in IEA's 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average.",
+      "caption": "The energy in ammonia. IEA's global-average estimate and best-available-process benchmarks are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. [IEA, Ammonia Technology Roadmap, 2021](https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-scene-food-delivery",
+      "type": "diagram-svg",
+      "label": "Scene Food Delivery",
+      "concepts": [
+        "food-independence"
+      ],
+      "figure": "static/book-images/v101-scene-food-delivery.svg",
+      "placement": {
+        "chapter": "chapter9",
+        "file": "11-chapter9.md",
+        "section": "A worked example: one delivery, all the way through"
+      },
+      "alt": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.",
+      "caption": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "scene",
+        "tool": "Three.js 0.168.0 and SVGRenderer",
+        "record": "docs/v0.10.1/scenes/render-manifest.json"
+      }
+    },
+    {
+      "id": "sts.photo.v101-cutout-spot",
+      "type": "photo",
+      "label": "Cutout Spot",
+      "concepts": [
+        "humanoid-robot",
+        "robotics"
+      ],
+      "figure": "static/book-images/v101-cutout-spot.png",
+      "placement": {
+        "chapter": "chapter11",
+        "file": "13-chapter11.md",
+        "section": "Ownership matters because access can be withheld"
+      },
+      "alt": "Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail.",
+      "caption": "Capability still needs an arrangement for access. AI-adapted cutout from [Jonte](https://commons.wikimedia.org/wiki/File%3ASpot_by_Boston_Dynamics.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "cutout",
+        "tool": "built-in image_gen",
+        "source": "ch11-spot.jpg",
+        "source_sha256": "7a91f3b7e54256bb55dd877b640e708013126903d3159523eb3f743b3dfb3ebb",
+        "license": "CC BY-SA 4.0",
+        "prompt_record": "docs/v0.10.1/image-prompts.json",
+        "adaptation": true
+      }
+    },
+    {
+      "id": "sts.diagram.v101-visual-operating-stack",
+      "type": "diagram-svg",
+      "label": "Visual Operating Stack",
+      "concepts": [
+        "operating-stack"
+      ],
+      "figure": "static/book-images/v101-visual-operating-stack.svg",
+      "placement": {
+        "chapter": "chapter11",
+        "file": "13-chapter11.md",
+        "section": "The Crucible: local compute you own"
+      },
+      "alt": "A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights.",
+      "caption": "The model file is one layer of a working service. Running a useful service also takes software, hardware, power, and people who maintain it. Conceptual illustration.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "conceptual",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/vignettes.py"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-weights-memory",
+      "type": "diagram-svg",
+      "label": "Chart Weights Memory",
+      "concepts": [
+        "systems-thinking"
+      ],
+      "figure": "static/book-images/v101-chart-weights-memory.svg",
+      "placement": {
+        "chapter": "chapter11",
+        "file": "13-chapter11.md",
+        "section": "The memory math"
+      },
+      "alt": "A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory.",
+      "caption": "Memory before the overhead. These are derived weights-only sizes, not measured VRAM requirements. They omit the chapter's illustrative allowance as well as runtime costs. [llama.cpp, memory and context options](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-land-values",
+      "type": "diagram-svg",
+      "label": "Chart Land Values",
+      "concepts": [
+        "land-values"
+      ],
+      "figure": "static/book-images/v101-chart-land-values.svg",
+      "placement": {
+        "chapter": "chapter12",
+        "file": "14-chapter12.md",
+        "section": "A place the promise can stand"
+      },
+      "alt": "A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages.",
+      "caption": "What an acre costs. USDA survey estimates include farm buildings as well as land. These are nominal national averages, not inflation-adjusted values or local offers. [USDA NASS, Land Values 2026, page 5](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-visual-shared-land",
+      "type": "diagram-svg",
+      "label": "Visual Shared Land",
+      "concepts": [
+        "commons"
+      ],
+      "figure": "static/book-images/v101-visual-shared-land.svg",
+      "placement": {
+        "chapter": "chapter12",
+        "file": "14-chapter12.md",
+        "section": "A place the promise can stand"
+      },
+      "alt": "A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement.",
+      "caption": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a way to challenge decisions. Conceptual illustration, not a legal template.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "conceptual",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/vignettes.py"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-waste-pathways",
+      "type": "diagram-svg",
+      "label": "Chart Waste Pathways",
+      "concepts": [
+        "waste-pathways"
+      ],
+      "figure": "static/book-images/v101-chart-waste-pathways.svg",
+      "placement": {
+        "chapter": "chapter14",
+        "file": "16-chapter14.md",
+        "section": "Catch the food before it's thrown away"
+      },
+      "alt": "Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material.",
+      "caption": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could not have been donated. Donation is net of food banks' unusable portion. [EPA, Table 5](https://www.epa.gov/system/files/documents/2024-04/2019-wasted-food-report_508_opt_ec_4.23correction.pdf).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-scene-living-soil",
+      "type": "diagram-svg",
+      "label": "Scene Living Soil",
+      "concepts": [
+        "composting",
+        "food-independence",
+        "soil-health"
+      ],
+      "figure": "static/book-images/v101-scene-living-soil.svg",
+      "placement": {
+        "chapter": "chapter15",
+        "file": "17-chapter15.md",
+        "section": "Soil is alive"
+      },
+      "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+      "caption": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "scene",
+        "tool": "Three.js 0.168.0 and SVGRenderer",
+        "record": "docs/v0.10.1/scenes/render-manifest.json"
+      }
+    },
+    {
+      "id": "sts.photo.v101-cutout-tools",
+      "type": "photo",
+      "label": "Cutout Tools",
+      "concepts": [
+        "fabrication"
+      ],
+      "figure": "static/book-images/v101-cutout-tools.png",
+      "placement": {
+        "chapter": "chapter17",
+        "file": "19-chapter17.md",
+        "section": "Give the machines a worthwhile assignment"
+      },
+      "alt": "Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench.",
+      "caption": "Tools with a history of use. AI-adapted collage from [Shixart1985](https://commons.wikimedia.org/wiki/File:Various_hand_tools_and_hardware_items_scattered_on_an_old_green_workbench_in_a_workshop.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "cutout",
+        "tool": "built-in image_gen",
+        "source": "ch17-workbench.jpg",
+        "source_sha256": "f34ce3b6abec77123bb056184d6bad2ac529f4a314f5d6eb2be55b15683febcd",
+        "license": "CC BY 2.0",
+        "prompt_record": "docs/v0.10.1/image-prompts.json",
+        "adaptation": true
+      }
+    },
+    {
+      "id": "sts.diagram.v101-scene-shared-workshop",
+      "type": "diagram-svg",
+      "label": "Scene Shared Workshop",
+      "concepts": [
+        "3d-printing",
+        "commons"
+      ],
+      "figure": "static/book-images/v101-scene-shared-workshop.svg",
+      "placement": {
+        "chapter": "chapter17",
+        "file": "19-chapter17.md",
+        "section": "The skeleton: machines that make machines"
+      },
+      "alt": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.",
+      "caption": "Shared tools need a working arrangement around them: trained people, suitable power and materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not a fabrication or wiring plan.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "scene",
+        "tool": "Three.js 0.168.0 and SVGRenderer",
+        "record": "docs/v0.10.1/scenes/render-manifest.json"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-visual-continuity-calendar",
+      "type": "diagram-svg",
+      "label": "Visual Continuity Calendar",
+      "concepts": [
+        "strategy"
+      ],
+      "figure": "static/book-images/v101-visual-continuity-calendar.svg",
+      "placement": {
+        "chapter": "chapter18",
+        "file": "20-chapter18.md",
+        "section": "Chapter 18: The Roadmap and the Premortem Pivot"
+      },
+      "alt": "One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.",
+      "caption": "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "conceptual",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/vignettes.py"
+      }
+    },
+    {
+      "id": "sts.diagram.v101-chart-meal-response",
+      "type": "diagram-svg",
+      "label": "Chart Meal Response",
+      "concepts": [
+        "strategy"
+      ],
+      "figure": "static/book-images/v101-chart-meal-response.svg",
+      "placement": {
+        "chapter": "chapter18",
+        "file": "20-chapter18.md",
+        "section": "Put the failed meal on the board"
+      },
+      "alt": "An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.",
+      "caption": "When a meal fails. An illustrative worksheet from this chapter's premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise.",
+      "provenance": {
+        "edition": "0.10.1",
+        "kind": "chart",
+        "tool": "Python-authored SVG",
+        "record": "docs/v0.10.1/chart-data.json"
       }
     }
   ]

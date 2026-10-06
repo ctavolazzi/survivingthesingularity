@@ -1,8 +1,8 @@
 # Chapter 15: The Power of Reclaiming Soil
 
-![Automated watering over garden soil](/book-images/ch12-farmbot-watering.jpg)
+![Line drawing of roots and layers of soil](/book-images/original-11-soil-profile.svg)
 
-*Automated watering over living soil. The substrate everything else depends on. (FarmBot, CC BY 4.0, via Wikimedia Commons)*
+*The living ground beneath the work. Original illustration for this book.*
 
 
 > *"The nation that destroys its soil destroys itself."*
@@ -63,7 +63,7 @@ You can run your life through a phone, trade digital assets, and spend your even
 
 Chapter 12 showed a land trust being born. Here's the machinery, because it's worth understanding.
 
-![The Cooperative Land Trust Firewall: the speculative real estate market's attempts to buy or foreclose are blocked by a legal shield; inside the trust, the land is held in perpetuity and leased to community stewards on a 99-year ground lease](/book-images/ch15-clt-firewall.svg)
+![Community land trust structure: a nonprofit holds land under resale restrictions and members hold improvements under a long ground lease. Taxes, debt, and governance duties remain; the structure doesn't guarantee protection from foreclosure.](/book-images/ch15-clt-firewall.svg)
 
 *The land-trust idea. Split the title, and the speculative market has a much harder time reaching the dirt.*
 
@@ -102,6 +102,12 @@ A teaspoon of healthy soil can hold more living organisms than there are people 
 
 Cover crops, compost, deep mulch, and less tillage all feed that system. [University of Minnesota Extension, Soil Biology](https://extension.umn.edu/natural-resources/conservation/agricultural-soil-and-water/soil-biology) What none of them do is make a garden feed itself forever. Every harvest carries nutrients away in the food, and something has to put them back.
 
+<!-- interactive:living-soil -->
+
+![Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.](/book-images/v101-scene-living-soil.svg)
+
+*The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile.*
+
 ## Know the ground's history
 
 Priya's string line matters as much as her shovel. Old farm yards, rail lines, parking lots, and industrial sites can carry lead, fuel, solvents, and worse, and a healthy-looking plant can't tell you the ground is safe to eat from. Before you grow food on land with any history, find out what that history was and get the soil tested. EPA's urban-agriculture guidance is a good starting point for what to ask. [EPA, Urban Agriculture](https://www.epa.gov/brownfields/urban-agriculture)
@@ -110,10 +116,10 @@ Cleaning up damaged ground belongs in the larger ambition, and machines may help
 
 ## Pool the work
 
-Growing food is hard, calorie-hungry work, and a single household working alone often burns more of its own energy than the garden gives back. So pool it:
+Growing food takes labor, tools, water, and attention across the season. A household doesn't have to provide all of that alone. Pool it:
 
 - **A tool commons.** Instead of five neighbors each buying a fragile little tiller, pool your money for one heavy-duty walk-behind tractor with swappable implements, and a shed to keep it in.
-- **Work by the season, not the clock.** A coordinated weekend crew can plant or harvest a whole community garden in two days, and leave the rest of the week free.
+- **Work by the season, not the clock.** A coordinated weekend crew can share a major planting or harvest. Keep watering, crop checks, and the next round of harvesting on a rota too; the garden keeps growing between work parties.
 - **A community seed library.** Collect and share open-pollinated varieties adapted to your own climate, whose seed you can save and replant. Many hybrids don't come back true from saved seed, and some patented varieties come with contracts that forbid saving it. Your own seed is a living library, shared freely.
 
 ## From a plot to a plate

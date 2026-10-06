@@ -32,15 +32,19 @@ And I'm not worried about the machines. I'm worried about two very specific thin
 
 ## The second ox
 
-Here's the thing the panic keeps you from seeing. For the entire history of our species, staying alive has been work you did yourself or paid someone else to do. Every tool we ever built still needed a human holding it. The plow doesn't pull itself.
+![Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.](/book-images/v101-cutout-atlas.png)
 
-Then, once, we found an exception. We domesticated the animal. We put an ox in front of the plow and something happened that had never happened before: the work got done without a human doing it. You don't program an ox. You don't write it a line of instruction for every furrow. You point it at the field and it walks, and the field gets tilled, and you go spend that hour of your one life on something else. Husbandry was the first time labor could be handed to something that ran on its own.
+*Atlas, outside the demonstration room. AI-adapted cutout from [DARPA](https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg), [public domain](https://www.darpa.mil/policies/usage-policy).*
 
-This is the second time. That's what the machine actually is, under all the doom. Not a god arriving to end us. An animal we're learning to domesticate, one that happens to think. For the first time since the ox, more of the work of keeping yourself alive can be handed to something that doesn't need you standing over it.
+Here's the thing the panic keeps you from seeing. Staying alive takes work. A plow can make that work easier, but the plow doesn't pull itself.
+
+Domestication let us hand some of the heavy work to an animal. Put an ox in front of the plow and human muscle no longer has to supply all the pulling power. You still have to train it, feed it, guide it, and care for it. You don't get to point it at a field and walk away. But you no longer have to do all the work with your own body. [FAO, Draught animal power and implements](https://www.fao.org/family-farming/detail/en/c/1619223/)
+
+Call this the second ox. That's a way to see the machine under all the doom. Not a god arriving to end us. An animal we're learning to domesticate, one that happens to think. The promise is familiar: hand over more of the work of keeping yourself alive. The responsibility is familiar too: build the system, maintain it, and decide what work it should do.
 
 ![A brown ox in a wooden yoke pulling a plow through a field](/book-images/intro-ox-plow.png)
 
-*The first time labor could be handed to something that ran on its own. The machine is the second.*
+*An early way to hand over some of the heavy work. Training, guidance, and care still belonged to people.*
 
 Which is why "it's all over" and "we're so back" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Tell someone the machine can do most jobs now and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But the markets will still be here. What can end is the part where you *have* to sell your day to be allowed to eat. That can become optional. Not abolished. Optional. And optional is the whole ballgame.
 

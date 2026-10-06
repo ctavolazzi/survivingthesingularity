@@ -11,6 +11,8 @@
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import { interactiveRegistry } from '$lib/components/interactives/registry.js';
+  import { splitBookFigures } from '$lib/bookScenes/segments.js';
+  import '$lib/styles/book-figures.css';
   export let data;
 
   let currentSection = 1;
@@ -18,30 +20,8 @@
   let navOpen = false;
   let navHidden = false;
 
-  // A chapter can drop `[[interactive:some-id]]` on its own line to embed a
-  // live widget from the interactives registry at that point in the prose.
-  // Split on the marker BEFORE running markdown, so the token never has to
-  // survive marked()/HTML escaping - the raw markdown chunks around it are
-  // rendered normally, and the id in between is looked up in the registry.
-  const INTERACTIVE_MARKER = /^\[\[interactive:([a-z0-9-]+)\]\]\s*$/m;
-
-  function splitIntoSegments(raw) {
-    const segments = [];
-    let rest = raw;
-    let match;
-    while ((match = INTERACTIVE_MARKER.exec(rest))) {
-      const before = rest.slice(0, match.index);
-      if (before.trim()) segments.push({ type: 'html', value: renderMarkdown(before) });
-      segments.push({ type: 'component', id: match[1] });
-      rest = rest.slice(match.index + match[0].length);
-    }
-    if (rest.trim()) segments.push({ type: 'html', value: renderMarkdown(rest) });
-    return segments;
-  }
-
-  // Chapters with no marker fall straight through as a single html segment,
-  // so this is a strict superset of the old `marked(data.content)` behavior.
-  $: segments = splitIntoSegments(data.content);
+  // Source figures remain ordinary Markdown in EPUB, PDF, and no-script HTML.
+  $: segments = splitBookFigures(data.content);
 
   $: currentMeta = sectionsWithMeta.find(s => s.id === data.section.id);
 
@@ -234,11 +214,13 @@
 
   <article class="prose prose-lg dark:prose-invert chapter-article">
     {#each segments as segment}
-      {#if segment.type === 'html'}
-        {@html segment.value}
+      {#if segment.type === 'markdown'}
+        {@html renderMarkdown(segment.raw)}
       {:else if interactiveRegistry[segment.id]}
         <div class="interactive-embed not-prose">
-          <svelte:component this={interactiveRegistry[segment.id]} />
+          {#key segment.id}
+                  <svelte:component this={interactiveRegistry[segment.id]} id={segment.id} src={segment.src} alt={segment.alt} caption={segment.caption} />
+                {/key}
         </div>
       {/if}
     {/each}

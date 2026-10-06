@@ -33,7 +33,7 @@ Then he did the other math, the one that mattered. The tower drew 600 watts flat
 
 On Sunday he drove out to the storage unit where his grandmother's things had been sitting since the estate sale nobody could face finishing, and he came back with the woodstove. It was a squat black Fisher, older than he was, four hundred pounds of plate steel with a crack in one firebrick, and he had no fireplace and no flue and no permission from his landlord, so it sat in the corner of the living room as a monument, which was the point. His grandmother had heated a whole farmhouse with it, cooked on it, dried socks over it, kept lambs alive behind it in bad Februaries, all on wood she'd bucked herself from her own downed oaks. Total utility bill, as far as he knew it then: a chainsaw's gas and her own hundred watts. For a moment he wanted to count the cost as nothing but fuel and muscle. Then he remembered the borrowed trailer, the neighbor who helped when her shoulder went, the work of keeping a chimney clear. There had been a whole small arrangement around that stove. His grandmother knew what it needed and who she could call. That was part of the warmth.
 
-![A squat black cast-iron wood stove with the door open, one cracked firebrick visible inside](/book-images/ch05-woodstove.png)
+![A squat black wood stove with the door open, one cracked firebrick visible inside](/book-images/ch05-woodstove.png)
 
 *The Fisher. Four hundred pounds of steel, one cracked firebrick. Older than him.*
 
@@ -48,6 +48,10 @@ He unplugged the cable box on his way to bed. It was, he'd say later, only half 
 
 ## The Foundations
 
+![Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.](/book-images/v101-cutout-sun.png)
+
+*Energy has to come from somewhere. AI-adapted [NASA/SDO imagery](https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg), [public domain](https://www.nasa.gov/nasa-brand-center/images-and-media/); not an unaltered scientific image.*
+
 Let's talk about energy.
 
 And no, I don't mean the "I'm really vibing with your aura" kind. Nobody ever stayed warm in January by aligning their chakras.
@@ -56,9 +60,9 @@ I mean real energy. The brutal, unforgiving energy of physics, measured in joule
 
 ## The rules of the board
 
-**The first law: you can't cheat the universe.** Energy can't be created or destroyed, only changed from one form to another. Everything you do needs an input. To think a thought, your brain burns glucose. To run a water filter, you need electricity. To run a model, somebody pays a utility.
+**The first law: you can't cheat the universe.** Energy can't be created or destroyed, only changed from one form to another. Everything you do needs an input. To think a thought, your brain burns glucose. To run an electric water pump, you need electricity. To run a model, somebody supplies power.
 
-**The second law: there's no breaking even.** In every transfer, some energy leaks away as heat, and the universe slides steadily toward disorder. Your body is a highly organized structure that, left alone, would decay into a cold puddle of carbon and water. To stay alive you have to keep importing organized energy, food, and exporting waste and heat.
+**The second law: useful energy has limits.** Energy can remain on the books while becoming less available to do work. A heat engine operating in a complete cycle can't turn all the heat it takes in into work, and real machines dissipate energy through friction and other losses. [OpenStax, Statements of the Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics) Your body is a highly organized structure that needs continuing upkeep. To stay alive you have to keep taking in food and exporting waste and heat.
 
 For most of us, a global supply system does that heavy lifting out of sight. It burns an astonishing amount of fuel to move a strawberry across a continent so you can eat its sugar in February. Most days it works. The days it doesn't are when you find out how far you live from your own dinner.
 
@@ -79,17 +83,21 @@ Here's a hard truth the tech-utopians skip: as an engine, you're not very effici
 
 **By the numbers: the machine's appetite**
 
-- **415 terawatt-hours.** What the world's data centres used in 2024, about 1.5 percent of all electricity. [Scientific American, reporting the IEA](https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/)
-- **945 terawatt-hours.** The IEA's projection for 2030, roughly what Japan uses in a year. [Scientific American](https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/)
+- **485 terawatt-hours.** The IEA's estimate of worldwide data-centre electricity use in 2025. [IEA, Key Questions on Energy and AI (2026)](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)
+- **950 terawatt-hours.** The same report's projection for 2030, about 3 percent of global electricity demand. It's a forecast, not a meter reading. [IEA (2026)](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)
 - **280-fold.** How far the cost of running a system as capable as GPT-3.5 fell between November 2022 and October 2024. [Stanford AI Index 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report)
 
 The machines are getting hungrier in total and cheaper per unit of thought, both at once. Somebody owns the meter.
 
 </aside>
 
+![Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted.](/book-images/v101-chart-data-centre-demand.svg)
+
+*The machine's appetite. The solid column is IEA's estimate for 2025; the hatched column is its 2030 projection. This is all data-centre electricity, not AI alone. [IEA, Key Questions on Energy and AI, 2026](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).*
+
 You burn roughly 2,000 to 2,500 kilocalories a day to keep your heart pumping, your lungs moving, and your brain generating existential dread. That's about 100 watts of continuous power, the draw of an old incandescent bulb, and about twenty of those watts run your brain. To get them, you need proteins, carbohydrates, and fats that somebody had to grow, harvest, move, and cook.
 
-The machines are less picky. They eat raw electricity, from sunlight, wind, uranium, or coal. They don't spend energy repairing cell walls or fighting off a cold.
+The machines are less picky. They eat raw electricity, from sunlight, wind, uranium, or coal. They don't spend energy repairing tissue or fighting off a cold.
 
 That comparison is vivid, and it's exactly where people get dangerous with it. Calling someone a meat engine can make the physics easy to feel. It must never make their worth depend on how cheaply they compete with a motor. Thermodynamics checks a claim against the physical world. It doesn't tell you what a person deserves or who gets to eat.
 

@@ -1,6 +1,6 @@
 # Appendix G: Your First Year
 
-*Every precedent in this book ends with three practices, seventy-two in all. Here they are in an order you can live: twelve months, each with a theme and a handful of actions. The tag after each one (P-12, say) points back to the story it came from, so you can reread why it matters. Move a month if your season or your life needs it. Don't skip the uncomfortable ones; they're usually the ones doing the work.*
+*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Move a month if your season or your life needs it, and choose a scale you can sustain.*
 
 ## Month 1: Get your bearings
 
@@ -81,7 +81,7 @@
 
 1. Date-stamp your reasoning: one paragraph for each big decision this year, what you knew, what you assumed, and why you acted. (P-22)
 2. Ask the Fujifilm question on the calendar: has the wave moved, and which capability do you lead with next year? (P-18)
-3. Keep the standby system warm: save seed from one crop and keep the beds alive over winter. (P-19)
+3. Keep the standby system ready: save suitable seed from one crop, and protect or plant the beds for your local season. (P-19)
 4. Go back through this list and pick the one that made you most uncomfortable. That discomfort is a compass. Do that one first. (P-24)
 
-Then start again. The second year is easier, because you won't be doing it alone.
+Then review what worked, who joined you, and what you can sustain. Carry that into the second year.

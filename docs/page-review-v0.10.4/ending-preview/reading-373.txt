@@ -1,0 +1,36 @@
+After  food,  the  order  is  land  care,  cleanup,  shelter,  then  everything
+further out. A priority is where you start, not a waiting list for people in
+urgent need.
+The yardstick is the Adequate Level of Care: can a community make sure
+the people who live there have food, shelter, and basic care, dependably,
+including through a bad week?
+What the word means
+Nobody agrees on a definition, so most arguments about the Singularity
+are two people defending different claims with the same noun. Chapter 1
+has the full lineage. The version for the dinner table:
+This bookʼs definition. The Singularity is the point where intelligence
+stops being scarce, and every institution quietly built on its scarcity
+starts failing before anyone has written the replacement.
+Why that one. It doesnʼt wait for a superintelligence, you can test it on
+your own paycheck this quarter, and it points at the real emergency:
+the gap between the contract thatʼs failing and the one nobody has
+drafted.
+The three schools (Eliezer Yudkowskyʼs sorting, 2007):
+Accelerating Change (Kurzweil, Toffler, Smart). Technology feeds on
+itself and speeds up. A claim about a graph. It ends in a date.
+Event Horizon (Vinge). Build something smarter than us and the far
+side becomes unpredictable to everyone. A claim about the limits of
+forecasting. It ends in a door.
+Intelligence Explosion (I. J. Good, Yudkowsky). Intelligence makes
+technology; aim it at itself and the loop closes. A claim about
+feedback.
+This book uses Event Horizon for the map and Intelligence Explosion for
+the engine, and declines Accelerating Change as a planning tool. A curve
+gives you a date. A door gives you a Monday.
+• 
+• 
+• 
+• 
+• 
+SURVIVING THE SINGULARITY
+368

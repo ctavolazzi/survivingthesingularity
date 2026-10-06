@@ -1,0 +1,297 @@
+{
+  "edition": "0.10.2",
+  "figures": [
+    {
+      "file": "ch13-shell-architecture.svg",
+      "width": 480,
+      "height": 450,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter13 corrected canonical prose; ART-AUDIT A07. Geometry is a nominal exterior-footprint illustration, not a construction drawing."
+      ],
+      "recommended_caption": "Two nominal forty-foot containers give a 640-square-foot exterior footprint. Usable space and structural details depend on the finished design; the chapter’s budget is fictional.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch13-shell-architecture.svg",
+        "sha256": "75dc12e15311f34096f695dff52e670265b69af2cfdb55a4e22d7ea140ece51b",
+        "baseline_sha256": "6163c784d4ab4d17abece8789c0b10fe3c2f839937b4a35d2b5199f2f6535656"
+      },
+      "recommended_alt": "Conceptual plan of two nominal forty-by-eight-foot containers. Their combined exterior footprint is 640 square feet, not usable interior area. Foundations, openings, connections and reinforcement require project-specific design.",
+      "meaning": "Conceptual plan of two nominal forty-by-eight-foot containers. Their combined exterior footprint is 640 square feet, not usable interior area. Foundations, openings, connections and reinforcement require project-specific design.",
+      "print": {
+        "file": "print/ch13-shell-architecture.svg",
+        "sha256": "c793182a4a2721df0a34fd19d9c4d231cf56f1dd69188386ccca741545c0c86c",
+        "baseline_sha256": "efeed9b43a7cb4493a60594dfe47d72f8944342e78e933ed27026996a16d3a19",
+        "source_sha256": "75dc12e15311f34096f695dff52e670265b69af2cfdb55a4e22d7ea140ece51b"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        450
+      ]
+    },
+    {
+      "file": "ch13-thermal-seal.svg",
+      "width": 480,
+      "height": 500,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter13 corrected canonical prose; DOE Insulation Guide cited in AppendixB. No material thickness is prescribed."
+      ],
+      "recommended_caption": "Insulation is one layer in a wall. Air control, moisture, ventilation and fire protection have to work with it.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch13-thermal-seal.svg",
+        "sha256": "26166b01513c2c343469307a356fcb13105638c8ce5abb6fa8fdd303582041ac",
+        "baseline_sha256": "b8c4142932664be9ff01d71b7262dc1742a237bad3bd3689b2bcaae3765235c8"
+      },
+      "recommended_alt": "Conceptual wall section with steel, insulation and air control, and an interior layer. Insulation reduces conduction without eliminating it. Moisture, ventilation and required fire protection belong in the complete design.",
+      "meaning": "Conceptual wall section with steel, insulation and air control, and an interior layer. Insulation reduces conduction without eliminating it. Moisture, ventilation and required fire protection belong in the complete design.",
+      "print": {
+        "file": "print/ch13-thermal-seal.svg",
+        "sha256": "751bcdb643a673571e4f588ab901b5d8d6ea94f1b7d8c8b3bbd8fe661305eea3",
+        "baseline_sha256": "d4bd627ae99fc11cd580e040dede16ab7308767561491b578254b30a2521e244",
+        "source_sha256": "26166b01513c2c343469307a356fcb13105638c8ce5abb6fa8fdd303582041ac"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        500
+      ]
+    },
+    {
+      "file": "ch14-mesh-comms.svg",
+      "width": 480,
+      "height": 540,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter14 canonical prose; Meshtastic mesh documentation cited in AppendixB. Graph is illustrative, not a tested installation."
+      ],
+      "recommended_caption": "A mesh can route around a break only where another powered, usable path remains. Test the missing relay.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch14-mesh-comms.svg",
+        "sha256": "91da4dd1212653776bb0092974bbfdf6495c0e108377f8880a50ed791e3ec44a",
+        "baseline_sha256": "bdc256dca7c9ba6013c46c6c075e65a07db8e30f31370c40e25781f4475df9e0"
+      },
+      "recommended_alt": "A single-uplink network loses its connection when the tower fails. A four-node mesh routes around a failed link only because another powered and tested path remains.",
+      "meaning": "A single-uplink network loses its connection when the tower fails. A four-node mesh routes around a failed link only because another powered and tested path remains.",
+      "print": {
+        "file": "print/ch14-mesh-comms.svg",
+        "sha256": "d6e6d0e49979a75da4eb4dd118a59566ec1f5b1497b7c556fa79929039a9c971",
+        "baseline_sha256": "ab4c91b3617f49a77882050d571438f4aa4038aa61fe37658d5c755e2da1abd5",
+        "source_sha256": "91da4dd1212653776bb0092974bbfdf6495c0e108377f8880a50ed791e3ec44a"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        540
+      ]
+    },
+    {
+      "file": "ch15-clt-firewall.svg",
+      "width": 480,
+      "height": 500,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter15 corrected canonical prose; Grounded Solutions Network typical homeownership model."
+      ],
+      "recommended_caption": "A common land-trust housing arrangement separates ownership of land and home. Resale terms need continuing stewardship; taxes and debt remain.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch15-clt-firewall.svg",
+        "sha256": "8553e9f10e08ad70b2c0bc12b624247d237f57b6c6da633652d0e11e0a87d60a",
+        "baseline_sha256": "e1070504a9827eedb4360a905e5b3085458a0e309d1698b7462db25cdd3fd7d8"
+      },
+      "recommended_alt": "A typical community land trust homeownership arrangement. A household owns the home; the trust holds the land under a long renewable ground lease with resale restrictions. Taxes, debt and stewardship duties remain.",
+      "meaning": "A typical community land trust homeownership arrangement. A household owns the home; the trust holds the land under a long renewable ground lease with resale restrictions. Taxes, debt and stewardship duties remain.",
+      "print": {
+        "file": "print/ch15-clt-firewall.svg",
+        "sha256": "e634184bb1f3c7a4d29e998b88ccf6d7cebaff6032b36243beb0d0e319f7e114",
+        "baseline_sha256": "e8a227fd2bb3ba7e1a36017bc120cf9b8f40a21372146bec60224ffd9375283f",
+        "source_sha256": "8553e9f10e08ad70b2c0bc12b624247d237f57b6c6da633652d0e11e0a87d60a"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        500
+      ]
+    },
+    {
+      "file": "ch16-sneakernet.svg",
+      "width": 480,
+      "height": 424,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter16 corrected canonical prose; ART-AUDIT A08. Physical transport removes the need for a live link, not endpoint/media risks."
+      ],
+      "recommended_caption": "A hand-carried copy needs no live network link. It still needs trusted handling, a compatible reader and a recoverable backup.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch16-sneakernet.svg",
+        "sha256": "4587c0b99cd6cfb02143c1fdd10859c9fad1d26353dd65e2de1e7eba79b51321",
+        "baseline_sha256": "7c3f444b2c449bbb184d20cd306f0980d6005fd73943b0c226bfbfe3f9ad1e68"
+      },
+      "recommended_alt": "A checked file moves between two computers on hand-carried storage. No live network link is required. Private material may be encrypted, but loss, copying, incompatible software and unsafe endpoints remain possible.",
+      "meaning": "A checked file moves between two computers on hand-carried storage. No live network link is required. Private material may be encrypted, but loss, copying, incompatible software and unsafe endpoints remain possible.",
+      "print": {
+        "file": "print/ch16-sneakernet.svg",
+        "sha256": "3dc040580dd02172202a3cd5c80490fad8a21116f5d5b24fd0ceba29c804d412",
+        "baseline_sha256": "701ee94783a3d5bfabeb7b161100b8997c2bb1a5b8e5be3c24b45abf075b2dd7",
+        "source_sha256": "4587c0b99cd6cfb02143c1fdd10859c9fad1d26353dd65e2de1e7eba79b51321"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        424
+      ]
+    },
+    {
+      "file": "ch17-dc-native.svg",
+      "width": 480,
+      "height": 585,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter17 canonical prose; DOE DC Microgrid Scoping Study cited in AppendixB. Configuration-dependent energy paths, no efficiency percentages."
+      ],
+      "recommended_caption": "For a load that already uses DC, compare the whole path. Avoiding an inverter pair does not remove charging, wiring or regulation losses.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch17-dc-native.svg",
+        "sha256": "2f57027bcfc3cd411ba3e5bb6668f6deecb516b006838814e33268d66944642e",
+        "baseline_sha256": "bc89bceeb18d7a325296b8e15a7ca888b713dacaa0299dffd76d923b39a72fb5"
+      },
+      "recommended_alt": "Solar charging and storage feed two conceptual paths to an already-DC device. The inverter path converts DC to AC and an adapter converts it back. The DC route still needs voltage regulation and protection. Both have charging, wiring and operating losses; compare at the intended load.",
+      "meaning": "Solar charging and storage feed two conceptual paths to an already-DC device. The inverter path converts DC to AC and an adapter converts it back. The DC route still needs voltage regulation and protection. Both have charging, wiring and operating losses; compare at the intended load.",
+      "print": {
+        "file": "print/ch17-dc-native.svg",
+        "sha256": "09c78b334b709458e53d9d959c65311d73c2525c0b6f7b21e8b1542cd1628078",
+        "baseline_sha256": "8802bb645b1f1f822873d169a459c99768207682d63fc4259c9c9cf8596ef415",
+        "source_sha256": "2f57027bcfc3cd411ba3e5bb6668f6deecb516b006838814e33268d66944642e"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        585
+      ]
+    },
+    {
+      "file": "ch17-fab-lab.svg",
+      "width": 480,
+      "height": 562,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter17 corrected canonical prose; ART-AUDIT A12. A shared commercial tractor is distinct from a licensed open machine design."
+      ],
+      "recommended_caption": "A neighborhood fab lab combines suitable tools with trained people, supported materials and checks for the actual job.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch17-fab-lab.svg",
+        "sha256": "012b07d9a089df3c84f81774a465f354be481d7c7745e014e6e2aa4d91bab864",
+        "baseline_sha256": "b23840d58606e30f9fd7220ae8779b43a31db870eed478df69eb4d3aa0abf507"
+      },
+      "recommended_alt": "A printer, a metalworking station and a shared walk-behind tractor are tools for selected jobs. Suitable materials, trained people, maintenance and checking remain necessary. Commercial tractor forms are not labelled open source, and parts are not guaranteed fit for every application.",
+      "meaning": "A printer, a metalworking station and a shared walk-behind tractor are tools for selected jobs. Suitable materials, trained people, maintenance and checking remain necessary. Commercial tractor forms are not labelled open source, and parts are not guaranteed fit for every application.",
+      "print": {
+        "file": "print/ch17-fab-lab.svg",
+        "sha256": "ef3cceaff4775ce5f2263e012d8438ed1fe5baab4477a828b08a0d1e85f233e6",
+        "baseline_sha256": "082ea69a030c6768207f3534dcbae1447cb578216460ed51f656c336f4e025f3",
+        "source_sha256": "012b07d9a089df3c84f81774a465f354be481d7c7745e014e6e2aa4d91bab864"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        562
+      ]
+    },
+    {
+      "file": "ch18-social-contract.svg",
+      "width": 480,
+      "height": 535,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter18 corrected canonical prose; ART-AUDIT A09. A proposed funded service, not achieved local abundance."
+      ],
+      "recommended_caption": "The proposal makes essentials a funded floor, available without a job. Tools help; remaining work, supplies and reliable delivery still need provision.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch18-social-contract.svg",
+        "sha256": "05b979825da7006b65f68bea62a33f5806acf94eed751de487d3e83dbf92dc89",
+        "baseline_sha256": "0a1782b34cfb897df89795d1be4b093a84dd2dc0ea8c7b09a26b012761e03cce"
+      },
+      "recommended_alt": "A current vulnerability ties essentials to continuing earnings. A proposed arrangement funds supplies, remaining paid work, tools and backup capacity so people can receive essentials without a job. Adequate provision is a commitment to verify, not an achieved effect of robots or a closed loop.",
+      "meaning": "A current vulnerability ties essentials to continuing earnings. A proposed arrangement funds supplies, remaining paid work, tools and backup capacity so people can receive essentials without a job. Adequate provision is a commitment to verify, not an achieved effect of robots or a closed loop.",
+      "print": {
+        "file": "print/ch18-social-contract.svg",
+        "sha256": "718b74c05c0745ac8cf09dca92b1a5177b943bcb720e760b67de5f8ed4425e47",
+        "baseline_sha256": "ffe0bd3f048b10c751a17c5172804fd15f80a06813e136925ffc29f8db52991d",
+        "source_sha256": "05b979825da7006b65f68bea62a33f5806acf94eed751de487d3e83dbf92dc89"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        535
+      ]
+    },
+    {
+      "file": "ch19-conversion-ladder.svg",
+      "width": 480,
+      "height": 646,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "Chapter19 corrected canonical prose and AppendixB sources for each precedent; ART-AUDIT A10. Legal examples are bounded as in prose."
+      ],
+      "recommended_caption": "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained.",
+      "kind": "conceptual",
+      "screen": {
+        "file": "ch19-conversion-ladder.svg",
+        "sha256": "764918df8775bf7745e26c53db4145633fe974af6c9d4f768db9694ef291113c",
+        "baseline_sha256": "15c481de2a9b72e8c3093c3fa39cf067055939d8fe39c02198eb203d4e66e130"
+      },
+      "recommended_alt": "Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.",
+      "meaning": "Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.",
+      "print": {
+        "file": "print/ch19-conversion-ladder.svg",
+        "sha256": "5abb544f56196e1d4fe62b95222f283d8b19a22f4f8ee98524048248dd4155bc",
+        "baseline_sha256": "546042a9b016d758a71610a2e201d17cf27f10f1aedd5cd1dd9ca0f1f020af19",
+        "source_sha256": "764918df8775bf7745e26c53db4145633fe974af6c9d4f768db9694ef291113c"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        646
+      ]
+    },
+    {
+      "file": "appd-precedent-timeline.svg",
+      "width": 480,
+      "height": 650,
+      "source": "docs/v0.10.2/figures_ending.py",
+      "provenance": [
+        "AppendixD current precedent index; ART-AUDIT A13. Approximate spans retain the prior diagram’s illustrative endpoints (1770–1830, 1786–1949, 1908–1940, 2000–2009); Appendix D supplies their broader period descriptions. The axis begins at 1700; no new historical dates are asserted."
+      ],
+      "recommended_caption": "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.",
+      "kind": "historical_timeline",
+      "screen": {
+        "file": "appd-precedent-timeline.svg",
+        "sha256": "a4971c6a5023232f79c57b9019f759b828a6b7f322743a8ffb0406ee99a178fd",
+        "baseline_sha256": "5d665d976a06f99f35d7a698aa2afb30b44521da483e37deeae2160033034bc0"
+      },
+      "recommended_alt": "Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.",
+      "meaning": "Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.",
+      "print": {
+        "file": "print/appd-precedent-timeline.svg",
+        "sha256": "5e7f9129e015a0c7499820b00650b4517eaa39e1c3326dfc5de60de2123eeb53",
+        "baseline_sha256": "f4d566338a3c79d446bb6d948377f07222e35a84e7f75f87a96827764a7a53a4",
+        "source_sha256": "a4971c6a5023232f79c57b9019f759b828a6b7f322743a8ffb0406ee99a178fd"
+      },
+      "geometry_pair_verified": true,
+      "dimensions": [
+        480,
+        650
+      ]
+    }
+  ],
+  "registry_integration": "Root-owned; this generator never writes shared registries or canonical prose.",
+  "geometry": "480 units wide; all labels at least 14 units; screen and print geometry is identical except print background."
+}

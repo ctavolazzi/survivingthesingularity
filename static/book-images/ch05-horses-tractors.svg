@@ -1,47 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" role="img" aria-label="The Herd And The Machine">
-<rect x="1" y="1" width="898" height="618" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-<text x="40" y="46" font-size="19" letter-spacing="2" fill="#f1f5f9">THE HERD AND THE MACHINE</text>
-<line x1="40" y1="60" x2="333" y2="60" stroke="#f59e0b" stroke-width="2"/>
-<text x="40" y="82" font-size="12.5" fill="#94a3b8">On American farms, 1910 to 1949. The horse didn&#x27;t get worse. The ledger changed.</text>
-<text x="110" y="118" font-size="12.5" font-weight="600" fill="#f1f5f9">HORSES AND MULES ON FARMS, MILLIONS</text>
-<line x1="110" y1="318.0" x2="840" y2="318.0" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="322.0" font-size="11" fill="#94a3b8" text-anchor="end">0</text>
-<line x1="110" y1="256.0" x2="840" y2="256.0" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="260.0" font-size="11" fill="#94a3b8" text-anchor="end">10</text>
-<line x1="110" y1="194.0" x2="840" y2="194.0" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="198.0" font-size="11" fill="#94a3b8" text-anchor="end">20</text>
-<line x1="110" y1="132.0" x2="840" y2="132.0" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="136.0" font-size="11" fill="#94a3b8" text-anchor="end">30</text>
-<polygon points="110.0,318.0 110.0,167.9 128.7,163.9 147.4,161.3 166.2,158.7 184.9,155.7 203.6,153.7 222.3,153.5 241.0,152.7 259.7,152.3 278.5,153.8 297.2,158.4 315.9,162.2 334.6,165.6 353.3,169.1 372.1,173.6 390.8,178.1 409.5,181.7 428.2,186.6 446.9,191.2 465.6,195.6 484.4,199.4 503.1,203.5 521.8,207.6 540.5,210.5 559.2,212.6 577.9,214.6 596.7,217.4 615.4,220.0 634.1,223.5 652.8,226.3 671.5,228.2 690.3,230.6 709.0,233.3 727.7,236.0 746.4,239.8 765.1,243.9 783.8,249.4 802.6,255.9 821.3,261.4 840.0,266.7 840.0,318.0" fill="#d97706" fill-opacity="0.16"/>
-<polyline points="110.0,167.9 128.7,163.9 147.4,161.3 166.2,158.7 184.9,155.7 203.6,153.7 222.3,153.5 241.0,152.7 259.7,152.3 278.5,153.8 297.2,158.4 315.9,162.2 334.6,165.6 353.3,169.1 372.1,173.6 390.8,178.1 409.5,181.7 428.2,186.6 446.9,191.2 465.6,195.6 484.4,199.4 503.1,203.5 521.8,207.6 540.5,210.5 559.2,212.6 577.9,214.6 596.7,217.4 615.4,220.0 634.1,223.5 652.8,226.3 671.5,228.2 690.3,230.6 709.0,233.3 727.7,236.0 746.4,239.8 765.1,243.9 783.8,249.4 802.6,255.9 821.3,261.4 840.0,266.7" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="259.7" cy="152.3" r="5" fill="#d97706" stroke="#020617" stroke-width="2"/>
-<text x="269.7" y="142.3" font-size="12" fill="#f1f5f9">1918 peak: 26.7 million</text>
-<circle cx="840.0" cy="266.7" r="5" fill="#d97706" stroke="#020617" stroke-width="2"/>
-<text x="830.0" y="290.7" font-size="12" fill="#f1f5f9" text-anchor="end">1949: 8.3 million, under a third</text>
-<text x="110" y="354" font-size="12.5" font-weight="600" fill="#f1f5f9">TRACTORS ON FARMS, MILLIONS</text>
-<line x1="110" y1="518.0" x2="840" y2="518.0" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="522.0" font-size="11" fill="#94a3b8" text-anchor="end">0</text>
-<line x1="110" y1="480.5" x2="840" y2="480.5" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="484.5" font-size="11" fill="#94a3b8" text-anchor="end">1</text>
-<line x1="110" y1="443.0" x2="840" y2="443.0" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="447.0" font-size="11" fill="#94a3b8" text-anchor="end">2</text>
-<line x1="110" y1="405.5" x2="840" y2="405.5" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="409.5" font-size="11" fill="#94a3b8" text-anchor="end">3</text>
-<line x1="110" y1="368.0" x2="840" y2="368.0" stroke="#1e293b" stroke-width="1"/>
-<text x="98" y="372.0" font-size="11" fill="#94a3b8" text-anchor="end">4</text>
-<polygon points="110.0,518.0 110.0,518.0 128.7,517.9 147.4,517.7 166.2,517.5 184.9,517.4 203.6,517.1 222.3,516.6 241.0,516.1 259.7,514.8 278.5,512.1 297.2,508.8 315.9,505.1 334.6,504.1 353.3,501.9 372.1,499.4 390.8,497.4 409.5,494.7 428.2,492.0 446.9,488.7 465.6,487.0 484.4,483.5 503.1,480.6 521.8,479.7 540.5,479.8 559.2,479.9 577.9,478.7 596.7,475.8 615.4,471.9 634.1,466.6 652.8,463.8 671.5,460.1 690.3,455.2 709.0,447.3 727.7,439.2 746.4,434.9 765.1,427.2 783.8,421.1 802.6,413.0 821.3,399.9 840.0,386.8 840.0,518.0" fill="#3b82f6" fill-opacity="0.16"/>
-<polyline points="110.0,518.0 128.7,517.9 147.4,517.7 166.2,517.5 184.9,517.4 203.6,517.1 222.3,516.6 241.0,516.1 259.7,514.8 278.5,512.1 297.2,508.8 315.9,505.1 334.6,504.1 353.3,501.9 372.1,499.4 390.8,497.4 409.5,494.7 428.2,492.0 446.9,488.7 465.6,487.0 484.4,483.5 503.1,480.6 521.8,479.7 540.5,479.8 559.2,479.9 577.9,478.7 596.7,475.8 615.4,471.9 634.1,466.6 652.8,463.8 671.5,460.1 690.3,455.2 709.0,447.3 727.7,439.2 746.4,434.9 765.1,427.2 783.8,421.1 802.6,413.0 821.3,399.9 840.0,386.8" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="840.0" cy="386.8" r="5" fill="#3b82f6" stroke="#020617" stroke-width="2"/>
-<text x="828.0" y="380.8" font-size="12" fill="#f1f5f9" text-anchor="end">1949: 3.5 million</text>
-<text x="116.0" y="508.0" font-size="12" fill="#f1f5f9">1910: about 1,000</text>
-<text x="110.0" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1910</text>
-<text x="203.6" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1915</text>
-<text x="297.2" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1920</text>
-<text x="390.8" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1925</text>
-<text x="484.4" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1930</text>
-<text x="577.9" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1935</text>
-<text x="671.5" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1940</text>
-<text x="765.1" y="540" font-size="11" fill="#94a3b8" text-anchor="middle">1945</text>
-<text x="765.1" y="560" font-size="11" fill="#94a3b8" text-anchor="middle">(1948 and 1949 preliminary)</text>
-<text x="40" y="598" font-size="10.5" fill="#94a3b8">Source: USDA, Farm Production Practices, Costs, and Returns, Statistical Bulletin 83 (1949), table 14.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 650" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">THE HERD AND THE MACHINE</title>
+<desc id="desc">Two line charts of US farm counts on January 1, 1910 through 1949. Horses and mules peaked at 26.723 million in 1918 and fell to 8.274 million in 1949. Tractors increased from 1,000 in 1910 to 3.5 million in 1949. The charts use different vertical scales. 1948 and 1949 data are preliminary in USDA Statistical Bulletin 83, table 14.</desc>
+<rect x="0" y="0" width="480" height="650" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="20" y="32" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">THE HERD AND THE MACHINE</text>
+<path d="M20 48L460 48" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="78" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">On US farms, January 1, 1910–1949.</text>
+<text x="20" y="105" font-size="15" fill="#f1f5f9" text-anchor="start" font-weight="600">HORSES AND MULES · MILLIONS</text>
+<text x="20" y="132" font-size="14" fill="#f59e0b" text-anchor="start" font-weight="400">1918 peak: 26.7 million</text>
+<path d="M55 270.0L441 270.0" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="275.0" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">0</text>
+<path d="M55 230.33333333333334L441 230.33333333333334" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="235.33333333333334" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">10</text>
+<path d="M55 190.66666666666669L441 190.66666666666669" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="195.66666666666669" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">20</text>
+<path d="M55 151.0L441 151.0" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="156.0" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">30</text>
+<path d="M55.000 173.963 L64.897 171.440 L74.795 169.735 L84.692 168.092 L94.590 166.161 L104.487 164.911 L114.385 164.748 L124.282 164.253 L134.179 163.999 L144.077 164.923 L153.974 167.890 L163.872 170.290 L173.769 172.468 L183.667 174.729 L193.564 177.636 L203.462 180.476 L213.359 182.789 L223.256 185.938 L233.154 188.890 L243.051 191.682 L252.949 194.141 L262.846 196.744 L272.744 199.346 L282.641 201.230 L292.538 202.579 L302.436 203.824 L312.333 205.637 L322.231 207.319 L332.128 209.528 L342.026 211.325 L351.923 212.571 L361.821 214.054 L371.718 215.835 L381.615 217.517 L391.513 219.968 L401.410 222.598 L411.308 226.117 L421.205 230.250 L431.103 233.784 L441.000 237.180" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" data-series="horses_and_mules_thousands" data-count="40"/>
+<text x="55.0" y="294" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">1910</text>
+<text x="252.94871794871793" y="294" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">1930</text>
+<text x="441.0" y="294" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">1949</text>
+<circle cx="134.17948717948718" cy="163.99876666666665" r="3.5" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"/>
+<circle cx="441.0" cy="237.1798" r="3.5" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"/>
+<text x="20" y="324" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">1949: 8.3 million, under a third of the peak.</text>
+<path d="M20 344L460 344" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="371" font-size="15" fill="#f1f5f9" text-anchor="start" font-weight="600">TRACTORS · MILLIONS</text>
+<path d="M55 507.0L441 507.0" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="512.0" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">0</text>
+<path d="M55 479.25L441 479.25" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="484.25" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">1</text>
+<path d="M55 451.5L441 451.5" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="456.5" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">2</text>
+<path d="M55 423.75L441 423.75" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="428.75" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">3</text>
+<path d="M55 396.0L441 396.0" fill="none" stroke="#526176" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="44" y="401.0" font-size="14" fill="#a6b4c8" text-anchor="end" font-weight="400">4</text>
+<path d="M55.000 506.972 L64.897 506.889 L74.795 506.778 L84.692 506.611 L94.590 506.528 L104.487 506.306 L114.385 505.973 L124.282 505.585 L134.179 504.641 L144.077 502.615 L153.974 500.173 L163.872 497.482 L173.769 496.677 L183.667 495.123 L193.564 493.236 L203.462 491.765 L213.359 489.767 L223.256 487.769 L233.154 485.300 L243.051 484.051 L252.949 481.470 L262.846 479.333 L272.744 478.639 L282.641 478.723 L292.538 478.806 L302.436 477.918 L312.333 475.781 L322.231 472.868 L332.128 468.983 L342.026 466.901 L351.923 464.126 L361.821 460.519 L371.718 454.691 L381.615 448.725 L391.513 445.534 L401.410 439.789 L411.308 435.266 L421.205 429.300 L431.103 419.587 L441.000 409.875" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" data-series="tractors_thousands" data-count="40"/>
+<text x="55.0" y="531" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">1910</text>
+<text x="252.94871794871793" y="531" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">1930</text>
+<text x="441.0" y="531" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">1949</text>
+<circle cx="441.0" cy="409.875" r="3.5" fill="#60a5fa" stroke="#60a5fa" stroke-width="1"/>
+<text x="20" y="558" font-size="14" fill="#60a5fa" text-anchor="start" font-weight="400">1910: 1,000 → 1949: 3.5 million</text>
+<path d="M20 581L460 581" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="601" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Separate vertical scales; 1948–49 preliminary.</text>
+<text x="20" y="622" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Source: USDA, Statistical Bulletin 83 (1949),</text>
+<text x="20" y="643" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">table 14, p. 45. All annual values plotted.</text>
 </svg>

@@ -1,0 +1,49 @@
+                                                                         CHAPTER 17
+
+
+Or take the one-man operation behind EasyGrow, run out of a garage.
+He designs recirculating vertical grow towers that, by his account,
+pack about eight times the plants into the same footprint and use
+about ninety percent less water. When off-grid customers told him
+his pumps needed power they didnʼt have, he taught himself to build
+wind systems, hand-winding axial-flux alternators, and rural anten-
+nas so greenhouses could report their own status. By his account his
+towers feed a stadium in Florida and lettuce gardens in Nigeria, and
+his wind systems turn in Buenos Aires. Ask him why he wonʼt build
+pots cheap enough to need replacing, and heʼll tell you: “Iʼm not in
+business to get rich. Iʼm in business to grow food and help people
+grow food.” Kirsten Dirksen, Mad scientistʼs homestead
+Now hold that next to the other version of the very same technology.
+Some industrial vertical-farm vendors sell nearly identical hardware
+with the opposite pitch: their promotional material brags that the
+system reduces labor costs and decreases human touch. Same sen-
+sors, same pumps, same automation. One spirit builds the tool to
+take people out of the loop. The other builds it to put a scared,
+capable person back in charge of feeding their family, and gives away
+the plans. The tools donʼt choose which future they serve. People do.
+
+The nervous system: mesh nodes
+
+Chapter 14 made the case for a neighborhood mesh. Hereʼs the hard-
+ware. A typical node is a small, cheap board that pairs a microcon-
+troller with a LoRa radio (the Heltec V3 and LilyGO T-Beam are
+popular), running the open-source Meshtastic firmware.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                               289

@@ -1,0 +1,534 @@
+[
+  {
+    "file": "17-chapter15.md",
+    "reason": "Avoid describing a spring sowing as a winter cover already completed.",
+    "before": "seeded with a winter cover of vetch and rye",
+    "after": "seeded with a cover crop of vetch and rye",
+    "id": "E01"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Date and attribute ownership estimate to original reporting; remove conflicting state count and undated portfolio ranking.",
+    "before": "By 2021 Bill Gates, with about 242,000 acres across eighteen states, was the largest private owner of farmland in the United States, [GeekWire, reporting The Land Report's figures](https://www.geekwire.com/2021/report-bill-gates-largest-owner-private-farmland-u-s-acreage-across-18-states/) and a teachers' pension giant runs one of the world's biggest farmland portfolios.",
+    "after": "In January 2021, Land Report put Bill Gates's farmland holdings at about 242,000 acres, the largest private holding in the United States. [Land Report, January 2021 newsletter](https://landreport.com/newsletters/LR_Newsletter_January2021.pdf) Nuveen, the investment manager owned by teachers' pension provider TIAA, also manages a large global farmland portfolio.",
+    "id": "E02"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Specify typical homeownership model rather than claim every CLT uses identical tenure.",
+    "before": "It works by splitting the title:",
+    "after": "A common homeownership model separates ownership of the land from ownership of the home:",
+    "id": "E03"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Avoid extending housing-ownership model automatically to all crops and structures.",
+    "before": "1. **The trust holds the land.** The people using it own what they build on it, the homes, greenhouses, crops, under a long ground lease, often ninety-nine years.",
+    "after": "1. **The trust holds the land.** A household owns its home under a long ground lease, often ninety-nine years. Farming, rental housing, and other uses need their own agreements.",
+    "id": "E04"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Do not treat a charter alone or the name of an organization as universal legal protection.",
+    "before": "2. **The land comes off the speculative market.** Because the trust's charter restricts resale, the ground can't simply be flipped to the highest bidder.",
+    "after": "2. **The trust stewards the land for the long term.** Its governing documents and leases set the restrictions. The legal structure has to do the work; calling an organization a land trust doesn't do it for you.",
+    "id": "E05"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Replace broad lower-tax assertion with actual jurisdiction-dependent mechanism; separate property and income tax.",
+    "before": "- **Agricultural and timber classifications.** In most places, land actively farmed or managed for timber is assessed far lower than residential land. A co-op that really farms its ground may qualify.\n- **Conservation easements.** A permanent, legally binding limit on developing the land can lower its assessed value, and in some cases qualify for other tax benefits, in exchange for protecting it for good.",
+    "after": "- **Agricultural and timber classifications.** Ask which use-based assessments your jurisdiction offers and what qualifies. In California, Williamson Act contracts can exchange restrictions on land use for assessment based on agricultural or open-space use. The state cautions that the tax benefit varies by property and isn't always greater than its existing treatment. [California Department of Conservation, Williamson Act FAQ](https://www.conservation.ca.gov/dlrp/wa/Documents/Williamson%20Act%20FAQ%202024.pdf)\n- **Conservation easements.** A lasting restriction on development changes what future owners may do. Ask the assessor how it affects this parcel's valuation. A qualifying donation may also receive a federal income-tax deduction, with specific legal and valuation requirements. That's a separate question from the annual property-tax bill. [IRS, Conservation Easements](https://www.irs.gov/charities-non-profits/conservation-easements)",
+    "id": "E06"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Avoid unsupported universal microbial count and time-dependent world-population comparison.",
+    "before": "A teaspoon of healthy soil can hold more living organisms than there are people on Earth: bacteria, fungi, protozoa, nematodes, and more. Together they run an economy:",
+    "after": "A teaspoon of healthy soil can hold enormous populations of bacteria, alongside fungal threads, protozoa, nematodes, and other life. Together they run an economy:",
+    "id": "E07"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Align soil diagram alt text with open nutrient budget.",
+    "before": "![The Soil Food Web Engine: sunlight and plants pump sugars to bacteria and fungi, which mine minerals, which are digested by protozoa and nematodes, which release plant-available nutrients back to the plants in a closed loop]",
+    "after": "![The soil food web: sunlight supports plants, root sugars support microbes, and organisms release nutrients plants can use. Harvest removes nutrients, so replenishment remains necessary.]",
+    "id": "E08"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Make the closing exercise obey the site-history requirement already established in the chapter.",
+    "before": "2. **Dig a hole.** In your own yard, a friend's, or a community plot. Is the soil pale, compacted, and empty of worms? Start a compost pile today. Ask a grocer or café about the scraps they throw away (Chapter 14).",
+    "after": "2. **Check, then dig.** Get permission and establish the site's history before disturbing it; use the testing advice above where contamination is possible. On suitable ground, compare texture, roots, and moisture at several depths. Worms alone aren't a verdict on soil health. Ask an established grower what organic matter your plot needs, and a grocer or café which suitable scraps they can supply for compost (Chapter 14).",
+    "id": "E09"
+  },
+  {
+    "file": "18-chapter16.md",
+    "reason": "Match Chapter10 and glossary distinction between a studied failure mode and an inevitability.",
+    "before": "Chapter 10 walked through model collapse: models trained on the output of earlier models lose their tails and drift toward mush.",
+    "after": "Chapter 10 walked through model collapse: in repeated training that replaces real data with generated output, rare patterns can disappear and errors can accumulate. That isn't the result of every use of synthetic data.",
+    "id": "E10"
+  },
+  {
+    "file": "18-chapter16.md",
+    "reason": "Remove repeated metadata, permanence, and physical-transfer explanations immediately repeated in the next section.",
+    "before": "Removing file metadata can reduce one kind of exposure. It doesn't remove a street sign in the photograph or stop a caption from identifying someone. Review the actual exported material, including what is visible and what your words reveal.\n\nA local copy, a content address, and encryption do different jobs. Availability depends on someone keeping and serving the data. A content identifier doesn't promise perpetual hosting. Physical transfer avoids some network exposure but doesn't make a file immune to loss, damage, or unauthorized copying.\n\n",
+    "after": "The next section handles the files. Permission comes first: no technical setting makes consent unnecessary.\n\n",
+    "id": "E11"
+  },
+  {
+    "file": "18-chapter16.md",
+    "reason": "Make offline archive instructions choose a real edition and verify storage and offline access.",
+    "before": "**Build a local archive.** Kiwix will give you all of English Wikipedia offline. Add the manuals, repair guides, and records your community actually uses, on a drive or two that someone keeps current. You're now the librarian of your neighborhood.",
+    "after": "**Build a local archive.** Kiwix reads downloaded reference collections offline. Choose the language and edition you need, check the download size against free storage, and test it with the network off. Wikipedia's `mini` files contain article introductions; `nopic` keeps full articles without images; `maxi` is the full edition. Add the manuals and records your community uses, and record each collection's date. You're now the librarian of your neighborhood. [Kiwix, FAQ](https://get.kiwix.org/en/faq/)",
+    "id": "E12"
+  },
+  {
+    "file": "18-chapter16.md",
+    "reason": "Replace large unconditional download with a usable and tested first archive.",
+    "before": "2. **Start the archive.** Download Wikipedia with Kiwix and one shelf's worth of manuals your household or co-op actually needs. Put a copy on a second drive.",
+    "after": "2. **Start the archive.** Download one Kiwix collection and the manuals your household or co-op actually needs. Put a copy on a second drive, then open it on the device you'd use during an outage.",
+    "id": "E13"
+  },
+  {
+    "file": "19-chapter17.md",
+    "reason": "Attribute prototype output to builder and remove unbounded current-price comparison.",
+    "before": "He printed his on a Bambu A1, a 3D printer that costs less than a used laptop, and ran it on a Raspberry Pi and two Arduinos, with sensors he made himself out of magnets. It grows about eight grams of algae a week.",
+    "after": "He printed parts for his on a Bambu A1 and ran it on a Raspberry Pi and two Arduinos, with sensors he made himself out of magnets. He reports about eight grams of algae a week.",
+    "id": "E14"
+  },
+  {
+    "file": "19-chapter17.md",
+    "reason": "Replace uncited unlike-for-like price comparison.",
+    "before": "*Tens of thousands of dollars in a lab. A few hundred on a workbench.*",
+    "after": "*A home-built algae culture system. The builder's experiment, not a cost or performance comparison with laboratory equipment.*",
+    "id": "E15"
+  },
+  {
+    "file": "19-chapter17.md",
+    "reason": "Correct biology and order in diagram description; root owns corresponding artwork correction.",
+    "before": "![The closed algae fish-food loop drawn as a cycle: fish tank to grow beds to dry-and-grind to photobioreactor and back to the fish as home-made food]",
+    "after": "![Aquaponics recirculates water between fish, filtration, and growing beds. A separate algae-cultivation branch may supply a feed ingredient after processing and nutritional checks; outside inputs and harvest remain.]",
+    "id": "E16"
+  },
+  {
+    "file": "19-chapter17.md",
+    "reason": "Separate algae production from proof of nutritionally complete feed or closed resource loop.",
+    "before": "*Grow the fish food too, and one more store-bought input drops out.*",
+    "after": "*Growing an ingredient can reduce a bought input. It doesn't establish a complete fish diet or a closed system.*\n\nFeed still has to meet the needs of the fish species and life stage. Algae can contribute to some diets; that doesn't show that this prototype replaces balanced feed, its mineral inputs, or the work of maintaining water quality. [FAO, Use of Algae and Aquatic Macrophytes as Feed in Small-scale Aquaculture](https://www.fao.org/4/i1141e/i1141e00.htm)",
+    "id": "E17"
+  },
+  {
+    "file": "19-chapter17.md",
+    "reason": "Remove verbatim duplicate of closing exercise4.",
+    "before": "This week, inventory tools with the people doing one existing food or cleanup task. Record what's available, who can use it, what requires training, and who maintains it. The tool library starts with accurate information, not a shopping spree.\n\n",
+    "after": "",
+    "id": "E18"
+  },
+  {
+    "file": "20-chapter18.md",
+    "reason": "Adequate care has several dimensions, not one interchangeable numerical unit.",
+    "before": "Measure a community by one number that matters:",
+    "after": "Measure a community by one test that matters:",
+    "id": "E19"
+  },
+  {
+    "file": "20-chapter18.md",
+    "reason": "Replace unsupported exact-duration forecast with explicit contingent bottleneck.",
+    "before": "Disrupt them and progress slows for years.",
+    "after": "A major disruption could constrain supply; its effect would depend on the damage, inventories, and alternative capacity.",
+    "id": "E20"
+  },
+  {
+    "file": "20-chapter18.md",
+    "reason": "Specify actual quartz use with primary source instead of unqualified geographic supply claim.",
+    "before": "3. **The materials bottleneck.** Chipmaking depends on a few surprisingly narrow supply lines, like the ultra-pure quartz mined in a small corner of North Carolina.",
+    "after": "3. **The materials bottleneck.** Chipmaking needs specialized materials and equipment that can't always be substituted quickly. Ultra-high-purity quartz, for example, is used in crucibles for semiconductor manufacture. A disruption matters at a specific link, not because the world has run out of ordinary sand. [US Geological Survey, Silica Statistics and Information](https://www.usgs.gov/centers/national-minerals-information-center/silica-statistics-and-information)",
+    "id": "E21"
+  },
+  {
+    "file": "20-chapter18.md",
+    "reason": "Remove unverifiable historical superlative.",
+    "before": "What followed was history's largest premortem.",
+    "after": "What followed was a global exercise in anticipating failure.",
+    "id": "E22"
+  },
+  {
+    "file": "20-chapter18.md",
+    "reason": "Preserve Y2K argument without ranking it against all modern engineering.",
+    "before": "But the most successful act of anticipatory engineering in modern history is remembered, by many, as an overreaction.",
+    "after": "But that vast act of anticipatory engineering is remembered, by many, as an overreaction.",
+    "id": "E23"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "Correct dimensional error while preserving the food-recovery objective.",
+    "before": "**What.** Put two numbers side by side, in public, for your town: how much edible food gets thrown away, and how many households can't count on eating. The gap between those two numbers is the whole argument.",
+    "after": "**What.** Put two measures side by side, in public, for your town: how much edible food gets thrown away, and how many households can't count on eating. Keep their units and reporting periods visible. You can't subtract households from pounds of food; you can investigate how much suitable food could reach those households, when, and at what cost.",
+    "id": "E24"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "Do not imply all provider data are public or national annual survey yields monthly municipal counts.",
+    "before": "**Who.** Anyone with a library card and a spreadsheet can start. Food banks, county recovery plans, and the census survey that USDA uses are all public.",
+    "after": "**Who.** Anyone with a library card and a spreadsheet can start with published food-bank reports, county recovery plans, and USDA survey results. Ask local providers which records they can share as totals. The national survey doesn't supply a reliable monthly estimate for every town, and household records aren't public just because an organization holds them.",
+    "id": "E25"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "Align reporting cadence with actual evidence and Appendix19 rung8 limits.",
+    "before": "**How you'll know.** One page, published and updated every month: pounds recovered, meals served, households still short.",
+    "after": "**How you'll know.** One page, updated when new records arrive: pounds recovered, meals served, households still short. Label dates, sources, missing groups, and estimated figures. A monthly update can report progress without pretending an annual estimate was measured again.",
+    "id": "E26"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "Preserve unconditional access while allowing information needed for safe usable food.",
+    "before": "No forms, no proof of poverty, no questions. Every form is a door some hungry person won't walk through.",
+    "after": "No proof of poverty and no interrogation about whether somebody deserves dinner. Ask what you need to provide a meal they can use, including dietary and access needs. Every unnecessary form is a door some hungry person won't walk through.",
+    "id": "E27"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "Prevent door-only metric from disguising service inaccessibility.",
+    "before": "**How you'll know.** Meals served, and the number of people turned away. The second number should be zero.",
+    "after": "**How you'll know.** Meals served, people turned away, and requests the service couldn't meet because of timing, transport, or dietary needs. The target for unmet requests is zero; count people who couldn't reach the door as well as those who did.",
+    "id": "E28"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "State actual scope and school-day limit of California Universal Meals.",
+    "before": "Since the 2022 to 2023 school year, every public school in the state must provide breakfast and lunch free of charge to every student who asks,",
+    "after": "Since the 2022 to 2023 school year, public school districts, county offices of education, and charter schools serving transitional kindergarten through grade twelve must provide breakfast and lunch free of charge each school day to students who ask,",
+    "id": "E29"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "Keep institutional thesis while avoiding claim budget vote alone makes a universal service operational.",
+    "before": "The step from there to a public kitchen open to everyone is a budget line and a vote, not a technological breakthrough.",
+    "after": "A public kitchen open to everyone uses an established capability. Extending that promise still takes public authority, a funded operating plan, suitable facilities, and people to run it.",
+    "id": "E30"
+  },
+  {
+    "file": "27-chapter19.md",
+    "reason": "Distinguish observed resistance from assertion that the proposed stage model is demonstrated.",
+    "before": "- **Backlash.** Stage 5 is real.",
+    "after": "- **Backlash.** The resistance described in Stage 5 can be real even if the nine stages never unfold in order.",
+    "id": "E31"
+  },
+  {
+    "file": "24-appendix-c.md",
+    "reason": "Keep reference summary consistent with proposed, not validated, stage map.",
+    "before": "The map runs from observable to speculative. Stages 1 through 5 are where the choices are still ours.",
+    "after": "The map runs from present social pressures to distant speculation. Stages 1 through 5 organize the near-term choices the author wants us to make; they aren't an established sequence.",
+    "id": "E32"
+  },
+  {
+    "file": "25-appendix-d.md",
+    "reason": "Conclusion ends with fictional Bear Flag bookend; introduction has no precedent.",
+    "before": "*Every chapter of this book closes with a precedent:",
+    "after": "*The book's chapters carry precedents, usually as their closing move:",
+    "id": "E33"
+  },
+  {
+    "file": "25-appendix-d.md",
+    "reason": "Match actual practice deadlines such as monthly publishing and seasonal growing.",
+    "before": "6. **Do the practices as written.** Each entry closes with three actions sized for a week.",
+    "after": "6. **Start a practice this week.** Each entry closes with three actions. Some finish in an evening; others need a month, a season, or repeated work.",
+    "id": "E34"
+  },
+  {
+    "file": "28-appendix-f.md",
+    "reason": "Distinguish LoRa physical radio technology from network software or standards.",
+    "before": "**LoRa and Meshtastic.** A long-range, low-power radio standard, and open-source software that uses it to pass short text messages between devices with no cell carrier in the middle.",
+    "after": "**LoRa and Meshtastic.** LoRa is a long-range, low-power radio technology. Meshtastic is open-source software that uses compatible radios to pass short messages directly or through relay nodes, without a cell carrier.",
+    "id": "E35"
+  },
+  {
+    "file": "28-appendix-f.md",
+    "reason": "Prevent incommensurable resource arithmetic and automatic sufficiency claim.",
+    "before": "**Network surplus.** Everything the households in a local network produce, minus everything they need. When it's positive, the network can cover a household that has a bad month.",
+    "after": "**Network surplus.** What a local network has available beyond its own commitments, counted resource by resource: food, usable power, money, or time. A surplus helps another household only if it matches a need and can reach them; extra electricity isn't automatically dinner.",
+    "id": "E36"
+  },
+  {
+    "file": "28-appendix-f.md",
+    "reason": "Keep glossary stage definition appropriately conditional.",
+    "before": "Stages 1 to 5 are where the choices are still ours.",
+    "after": "Stages 1 to 5 organize its near-term social choices; the whole sequence remains a proposed map.",
+    "id": "E37"
+  },
+  {
+    "file": "28-appendix-f.md",
+    "reason": "Avoid false either/or between public services and cash support.",
+    "before": "**Universal Basic Services.** Providing needs like food, shelter, transport, care, and information to everyone, free at the point of use and paid for together, instead of handing out cash for people to buy them.",
+    "after": "**Universal Basic Services.** Providing needs like food, shelter, transport, care, and information through services free at the point of use and paid for together. This differs from a cash payment and can coexist with income support.",
+    "id": "E38"
+  },
+  {
+    "file": "29-appendix-g.md",
+    "reason": "Restore P24 symmetric evidence collection rather than bias toward disproving skeptics.",
+    "before": "4. Start a receipts file: every time a credentialed voice calls AI a fad or a bubble, save the headline, the author, and the date. (P-24)",
+    "after": "4. Start a receipts file for confident AI predictions, skeptical and optimistic: save the claim, author, and date, including mine. (P-24)",
+    "id": "E39"
+  },
+  {
+    "file": "29-appendix-g.md",
+    "reason": "Do not turn the year plan into a motive attribution that ignores evidence of harm.",
+    "before": "5. Write down the next three times you hear that AI is rotting people's brains, and note what the speaker can no longer supervise. (P-01)",
+    "after": "5. Write down the next three claims that AI is harming people's thinking. Note the specific harm alleged, the evidence offered, and what would change your mind. (P-01)",
+    "id": "E40"
+  },
+  {
+    "file": "29-appendix-g.md",
+    "reason": "Make skill inventory voluntary and distinguish licensed care/trades from informal DIY.",
+    "before": "1. Take the neighbor census: who within walking distance can fix an engine, stitch a wound, grow food, or wire a panel? Learn it in person. (P-12)",
+    "after": "1. Ask willing neighbors what help they can offer: repair, growing, transport, qualified medical care, or licensed electrical work. Record agreed contact details and limits, and ask before sharing them. (P-12)",
+    "id": "E41"
+  },
+  {
+    "file": "29-appendix-g.md",
+    "reason": "Align year plan with corrected local evidence and privacy instructions.",
+    "before": "1. Build the Rung 1 page from Chapter 19: how much edible food your town throws away, beside how many households can't count on eating. Publish it. (Chapter 19)",
+    "after": "1. Build the Rung 1 page from Chapter 19: edible food discarded beside households lacking dependable food. Publish totals with units, periods, sources, and gaps. Keep personal records private. (Chapter 19)",
+    "id": "E42"
+  },
+  {
+    "file": "30-appendix-h.md",
+    "reason": "Identify policy scope, preserve access distinction, and make prompt invite evidence rather than assume panic.",
+    "before": "3. In June 2026 the government restricted two AI models and lifted the restriction eighteen days later. Was that a panic, a reasonable precaution, or both?",
+    "after": "3. Chapter 2 recounts the June 2026 export controls on Fable 5 and Mythos 5 and their lifting eighteen days later, while access to the two models still differed. What evidence would distinguish an overreaction from a justified precaution?",
+    "id": "E43"
+  },
+  {
+    "file": "30-appendix-h.md",
+    "reason": "Do not equate enactment of law with complete compliance or delivered food.",
+    "before": "3. France stopped supermarkets from destroying edible food in 2016. What would it take to do the same where you live?",
+    "after": "3. France's 2016 law prohibited deliberately spoiling edible surplus and required qualifying retailers to offer donation agreements. What would it take to turn such a rule into dependable meals where you live?",
+    "id": "E44"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Avoid implying DIY appearance guarantees offline operation or control.",
+    "before": "A cyberdeck is a personal computer you build yourself, from parts you understand, to run without a cloud, a subscription, or anyone's permission.",
+    "after": "A cyberdeck is a personal computer you assemble or adapt around the functions you want to control. Choose hardware and software that can do those jobs without a cloud or a subscription.",
+    "id": "E45"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Do not promise a valley-crossing link before testing actual terrain.",
+    "before": "3. **Local communication.** A mesh radio, the same LoRa and Meshtastic hardware as the co-op's network, so two devices can pass short messages across a valley with no carrier in the middle.",
+    "after": "3. **Local communication.** A mesh radio, the same LoRa and Meshtastic hardware as the co-op's network, for short messages over a tested radio path. Two nodes may reach directly; terrain can require relays, and some routes won't work.",
+    "id": "E46"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Replace universal phone/account claim and automatic DIY-repair guarantee with actual distinction.",
+    "before": "What a phone usually can't do is let you open it, repair it, swap its parts, or run it for years without an account somewhere. That's the gap a deck fills.",
+    "after": "Many phones make repair and component replacement difficult. A well-documented deck can give you more control over those choices, though it still needs supported software and obtainable parts.",
+    "id": "E47"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Replace undated market dominance/newest-model claims with board-specific power and thermal planning.",
+    "before": "- **The brain.** A single-board computer. The Raspberry Pi dominates because of price, community, and software; the newest models run hot enough to need real cooling and a real battery. Compute Module versions drop the same brain into slimmer custom bodies.",
+    "after": "- **The brain.** A single-board computer supported by the software you need. Raspberry Pi is one well-documented option. Match the power supply to the exact board and peripherals, then check temperature and runtime under your workload. Cooling needs depend on that workload and the enclosure. Compute Modules need a compatible carrier board. [Raspberry Pi, computer hardware documentation](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html)",
+    "id": "E48"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Document missing kit parts and remove invented assembly-time promise.",
+    "before": "- **The body.** More and more people start from an integrated handheld kit, like the ClockworkPi uConsole or the community-built Hackberry Pi, which ship with a screen, keyboard, and battery sled already solved. They turn a weekend of wiring into an afternoon.",
+    "after": "- **The body.** An integrated handheld such as the ClockworkPi uConsole or Hackberry Pi can supply the screen, keyboard, and battery mounting. Read the exact kit contents before budgeting: uConsole offers a version without the compute module and excludes battery cells. Assembly, software, and accessories still need work. [ClockworkPi, uConsole](https://www.clockworkpi.com/uconsole); [ZitaoTech, Hackberry Pi](https://github.com/ZitaoTech/Hackberry-Pi_Zero)",
+    "id": "E49"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Make archive capability a verified activity and distinguish source text from generated model answers.",
+    "before": "**Tier 2, the Librarian.** A Raspberry Pi, a screen, a protected battery, and Kiwix loaded with the libraries you'd actually reach for. Now you have a machine that answers questions with no signal. Add a small local model when the hardware allows.",
+    "after": "**Tier 2, the Librarian.** A supported computer, a screen, suitable protected power, and Kiwix loaded with the libraries you'd actually reach for. Check file size and edition before downloading, as Chapter 16 explains. Open the archive with the network off and find a specific answer. Add a small local model only if the hardware supports it; keep its generated answers distinct from the reference text.",
+    "id": "E50"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Avoid suggesting assembled peripherals automatically work or guarantee reception/security.",
+    "before": "**Tier 3, the Field Station.** Start from a handheld kit so the screen, keyboard, and battery are solved, then add a receive-only software-defined radio for weather and aircraft. Fold in your mesh radio and your library, encrypt the storage, and you're holding all four capabilities in one case.",
+    "after": "**Tier 3, the Field Station.** Start from a compatible handheld and test its power budget with every peripheral connected. Add a receive-only software-defined radio and an antenna suitable for the public broadcasts you intend to receive. Fold in the mesh and library, then configure and test storage encryption and recovery. Integration earns this tier; buying four parts doesn't.",
+    "id": "E51"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Repeat core offline verification without unearned answer-machine promise.",
+    "before": "2. **Load a Librarian.** Put Kiwix and one offline library, medical, repair, or all of Wikipedia, onto a Raspberry Pi or an old phone. Now you own an answer machine that works with the towers down.",
+    "after": "2. **Load a Librarian.** Put Kiwix and one relevant offline collection onto a supported device. Record its edition date, disconnect the network, and confirm you can search it. A stored reference is useful only if you can retrieve it when needed.",
+    "id": "E52"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Disable all network routes rather than Wi-Fi alone and check model answer, not just execution.",
+    "before": "3. **Run one model with the network unplugged.** Get a small language model answering on a device with the Wi-Fi physically off. The first time it works, you'll understand the Crucible from Chapter 11 in your hands instead of on the page.",
+    "after": "3. **Try one model offline, if your device supports it.** Disable Wi-Fi and cellular data and unplug wired networking. Ask a question you can check against the saved library. A returned answer proves the model ran; a checked answer tells you whether it helped.",
+    "id": "E53"
+  },
+  {
+    "file": "26-appendix-e.md",
+    "reason": "Respect optional tiers and unknown device/budget limits; remove fixed success deadline.",
+    "before": "Three weekends. At the end of them you're not only carrying a phone that belongs to someone else. You're carrying something that belongs to you.",
+    "after": "Start with one weekend and the device you have. Keep the capability that worked, then build the next one.",
+    "id": "E54"
+  },
+  {
+    "file": "28-appendix-f.md",
+    "reason": "Match glossary to practical AppendixE definition including kits and adapted hardware.",
+    "before": "**Cyberdeck.** A personal computer you build instead of buy, from parts you understand, to run without a cloud, a subscription, or anyone's permission.",
+    "after": "**Cyberdeck.** A personal computer assembled or adapted around functions you want to control, often using documented parts and offline software. The particular hardware and software determine how repairable and self-contained it is.",
+    "id": "E55"
+  },
+  {
+    "file": "28-appendix-f.md",
+    "reason": "Match glossary to actual typical homeownership arrangement, not all CLT uses.",
+    "before": "**Community land trust.** Usually a nonprofit, governed partly by the people who live on and around its land. It holds the land; the people using it own what they build, under a long ground lease.",
+    "after": "**Community land trust.** Usually a nonprofit, governed partly by the people who live on and around its land. In a common housing model, it holds the land while households own homes under long ground leases with resale restrictions. Other uses need their own agreements.",
+    "id": "E56"
+  },
+  {
+    "file": "21-conclusion.md",
+    "reason": "Distinguish fixed physical limits from changeable cost/law and treat unsolved problems as evidence rather than mere annoyance.",
+    "before": "2. Learn the one distinction that separates useful criticism from Stoll's mistake. When you read an AI complaint, ask: is this an *annoyance*, something engineers are visibly grinding away at, or a *limit*, something physics, cost, or law really forbids? Slow modems were an annoyance. The speed of light is a limit. Let limits change your plan.",
+    "after": "2. Separate an observed problem from a claim that it can never change. When you read an AI complaint, ask what evidence would show improvement and what constraint would remain. Slow modems improved. The speed of light didn't. Cost and law can change, but you can't budget as though they already have. Let the constraints change your plan.",
+    "id": "E57"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Opening reviewer: cite original amendments for corrected Red Flag chronology.",
+    "before": "### P-05: Ming voyages",
+    "after": "[Highways and Locomotives (Amendment) Act 1878](https://www.legislation.gov.uk/ukpga/Vict/41-42/77/pdfs/ukpga_18780077_en.pdf), section 29, and [Locomotives on Highways Act 1896](https://www.legislation.gov.uk/ukpga/Vict/59-60/36/pdfs/ukpga_18960036_en.pdf), sections 1 and 4. Original statutes: the first changes the advance-walker rule in England; the second exempts a defined light-locomotive class and sets a higher speed ceiling for it.\n\n### P-05: Ming voyages",
+    "id": "E58"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Middle reviewer: establish actual homesteading term and exception.",
+    "before": "### P-16: Mail-order houses",
+    "after": "US Capitol Visitor Center, [Homesteading Certificate of Eligibility, Daniel Freeman, January 20, 1868](https://www.visitthecapitol.gov/artifact/homesteading-certificate-eligibility-daniel-freeman-january-20-1868). Certificate and institutional description of Freeman completing the five-year requirement. The 1862 Act above also provided a paid route to earlier title.\n\n### P-16: Mail-order houses",
+    "id": "E59"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Opening reviewer: pin survey revision and distinguish changing samples and aggregate thresholds.",
+    "before": "- Katja Grace and colleagues, [Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843) (2024). Source of the 2022 and 2023 aggregate forecasts, the 10 percent probability of high-level machine intelligence by 2027, and the extinction-risk responses.",
+    "after": "- Katja Grace and colleagues, [Thousands of AI Authors on the Future of AI, revision 3](https://arxiv.org/abs/2401.02843v3), first published 2024, revised 2025. Source of the 2022 and 2023 aggregate forecasts, the 10 percent probability of high-level machine intelligence by 2027, and the extinction-risk responses. The surveys used changing samples; the displayed dates are aggregate probability thresholds, not every respondent revising a personal date.",
+    "id": "E60"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Opening reviewer: primary institutional source for correctly bounded query-price comparison.",
+    "before": "### Chapters 3 and 4: the far horizon",
+    "after": "- Stanford HAI, [AI Index Report 2025, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf). The historical query-price comparison fixes a GPT-3.5-level MMLU threshold. It does not measure energy per task or equivalence across all work.\n\n### Chapters 3 and 4: the far horizon",
+    "id": "E61"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Opening reviewer: support actual Hubble discovery without modern census attribution.",
+    "before": "### Chapter 5: energy and the cyberdeck lineage",
+    "after": "- NASA, [Hubble Views the Star that Changed the Universe](https://science.nasa.gov/missions/hubble/hubble-views-the-star-that-changed-the-universe/) (2011). Institutional history of the Cepheid observations that placed Andromeda outside the Milky Way.\n\n### Chapter 5: energy and the cyberdeck lineage",
+    "id": "E62"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Opening reviewer: qualify host-plus-peripheral power and e-ink retention.",
+    "before": "### Chapter 7: work, loss, and the labor campaigns",
+    "after": "- Raspberry Pi, [Computer Hardware: Maximum Power Output](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#maximum-power-output), and E Ink, [Benefits: Bi-Stability](https://www.eink.com/tech/detail/Benefits). Manufacturer documentation on peripheral budgets and static display retention. Neither establishes total draw or battery runtime for a particular cyberdeck.\n\n### Chapter 7: work, loss, and the labor campaigns",
+    "id": "E63"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Middle reviewer: replace secondary school-bus account with primary inquiry evidence.",
+    "before": "### Chapter 8: attention and cooperation",
+    "after": "- National Highway Traffic Safety Administration, [information request to Waymo, November 24, 2025](https://static.nhtsa.gov/odi/inv/2025/INOT-PE25013-30887.pdf), investigation PE25013. Primary record of an inquiry concerning stopped school buses. An inquiry is not a final finding about every reported incident.\n\n### Chapter 8: attention and cooperation",
+    "id": "E64"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Middle and ending reviewers: integrate practical primary-source references under their chapters.",
+    "before": "### Chapter 14: food recovery and the graveyard",
+    "after": "- Internal Revenue Service, [What Is Taxable and Nontaxable Income?](https://www.irs.gov/businesses/small-businesses-self-employed/what-is-taxable-and-nontaxable-income). Barter generally creates income measured at fair market value; the guidance distinguishes informal noncommercial exchanges of similar services.\n\n### Chapter 11: local computing and machine work\n\n- National Institute of Standards and Technology, [Air Gap](https://csrc.nist.gov/glossary/term/air_gap). Physical separation and the controlled transfer of information across it; local execution alone is not isolation.\n- California Department of Justice, [Data Security Breach Reporting](https://oag.ca.gov/privacy/databreach/reporting). State reporting requirements for defined incidents. Counsel must assess the facts; this source does not determine whether the fictional exposure meets a statutory definition.\n- Occupational Safety and Health Administration, [Control of Hazardous Energy, 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147). Servicing procedures address energy isolation, stored energy, and verification. A command to stop software is not equivalent to physical isolation.\n\n### Chapters 12 and 15: land tenure and assessment\n\n- Grounded Solutions Network, [Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/). Practitioner documentation of a typical affordable-homeownership model: separately owned land and homes, a renewable ground lease often lasting ninety-nine years, and resale restrictions. Other uses need appropriate agreements.\n- California Department of Conservation, [Williamson Act FAQ](https://www.conservation.ca.gov/dlrp/wa/Documents/Williamson%20Act%20FAQ%202024.pdf) (2024). Use restrictions and property-specific assessment; a contract does not necessarily produce greater savings than existing tax treatment.\n- Internal Revenue Service, [Conservation Easements](https://www.irs.gov/charities-non-profits/conservation-easements). Qualified donations and valuation requirements for federal income-tax deductions. These are distinct from local property-tax assessments.\n- Land Report, [January 2021 newsletter](https://landreport.com/newsletters/LR_Newsletter_January2021.pdf). Original publication's estimate of Gates's farmland holdings; a dated estimate rather than a current parcel inventory.\n- Nuveen, [Global Farmland Capabilities](https://www.nuveen.com/global/investment-capabilities/real-assets/farmland). Investment manager's description of its portfolio, not independent evidence of any investor's motive.\n\n### Chapter 13: shelter and heating\n\n- DuraVent, [DVL](https://duravent.com/product/dvl). Manufacturer documentation identifies the product as an interior connector, distinct from the chimney.\n- US Fire Administration, [Heating Fire Safety](https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/heating/). Guidance on combustible clearance and maintenance.\n- Centers for Disease Control and Prevention, [Carbon Monoxide Poisoning: About](https://www.cdc.gov/carbon-monoxide/about/index.html). Fuel-burning equipment and enclosed-space exposure.\n\n### Chapter 14: food recovery and the graveyard",
+    "id": "E65"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Middle reviewer: preserve waste-estimate observation period.",
+    "before": "The 30 to 40 percent estimate of food waste at the retail and consumer levels.",
+    "after": "The 30 to 40 percent estimate of food waste at the retail and consumer levels uses a 2010 baseline; it is not a fresh measurement for the publication year.",
+    "id": "E66"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Ending reviewer: support feed limit and precise radio/archive terminology.",
+    "before": "### Appendix E: the cyberdeck",
+    "after": "- FAO, [Use of Algae and Aquatic Macrophytes as Feed in Small-scale Aquaculture](https://www.fao.org/4/i1141e/i1141e00.htm), Fisheries and Aquaculture Technical Paper 531 (2009). Species, feed composition, and inclusion levels matter. Growing algae does not establish a complete diet for every fish or validate the prototype's output.\n- Semtech, [What Is LoRa?](https://www.semtech.com/lora/what-is-lora). Manufacturer description of the radio modulation technology, distinct from a complete network protocol.\n- Kiwix, [FAQ](https://get.kiwix.org/en/faq/). Project documentation on offline archives, supported platforms, and differences among `mini`, `nopic`, and `maxi` editions.\n\n### Appendix E: the cyberdeck",
+    "id": "E67"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Ending reviewer: scope kit completeness, cooling needs and quartz bottleneck.",
+    "before": "### Introduction and Chapter 19: the conversion",
+    "after": "- ClockworkPi, [uConsole](https://www.clockworkpi.com/uconsole), and ZitaoTech, [Hackberry Pi Zero](https://github.com/ZitaoTech/Hackberry-Pi_Zero). Maker documentation of components and power arrangements. Kit contents vary; uConsole excludes battery cells and offers a configuration without the compute module.\n- Raspberry Pi, [Heating and Cooling Raspberry Pi 5](https://www.raspberrypi.com/news/heating-and-cooling-raspberry-pi-5/). Manufacturer tests distinguish ordinary use from sustained workloads that can cause thermal throttling.\n\n### Chapter 18: specialized materials\n\n- US Geological Survey, [Silica Statistics and Information](https://www.usgs.gov/centers/national-minerals-information-center/silica-statistics-and-information). Ultra-high-purity quartz is used in semiconductor-manufacturing crucibles. This establishes a material requirement, not a fixed duration for a future supply interruption.\n\n### Introduction and Chapter 19: the conversion",
+    "id": "E68"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Opening reviewer: replace secondary citation with author-institution record and historical period.",
+    "before": "- National Low Income Housing Coalition, [New Research Finds 2.7 Million Households Receive Eviction Filings Annually](https://nlihc.org/resource/new-research-finds-27-million-households-receive-eviction-filings-annually) (2022), reporting Gromis et al., \"Estimating Eviction Prevalence across the United States,\" *PNAS*: 3.6 million filings a year, 2000 to 2018.",
+    "after": "- Ashley Gromis and colleagues, [Estimating Eviction Prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/), *PNAS* 119 (2022), e2116169119. Author-institution research record. The annual averages of 3.6 million filings and 2.7 million households concern 2000 to 2018, not the current year.",
+    "id": "E69"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Middle reviewer: use actual insulation guide instead of tax-credit source.",
+    "before": "- US Department of Energy, [Insulation and Air Sealing](https://www.energy.gov/cmei/buildings/articles/energy-efficient-home-improvement-credit-insulation-and-air-sealing). Building-envelope guidance cited for heat flow and air leakage, not current eligibility for a tax credit.",
+    "after": "- US Department of Energy, [Insulation Guide](https://www.energy.gov/sites/default/files/2023-03/insulation_guide_0.pdf). Building-envelope guidance on insulation and air sealing, without relying on a tax-credit announcement.",
+    "id": "E70"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Make recovery times conditional instead of promising rapid remediation of all degraded ground.",
+    "before": "- Soil isn't dirt. It's a living system, and worn-out ground can be brought back in seasons, not centuries, with patience and the right help.",
+    "after": "- Soil is a living system. Some damaged ground improves within seasons; the starting condition and the work decide what recovery is possible.",
+    "id": "E71"
+  },
+  {
+    "file": "19-chapter17.md",
+    "reason": "Remove unsupported universal fuel ratio and automatic implement compatibility.",
+    "before": "2. **A walk-behind tractor.** A heavy two-wheel tractor with swappable implements, like the BCS style, can mow, till, chip, pump, and generate, for a fraction of the fuel and complexity of a four-wheeled one. Share one among several households.",
+    "after": "2. **A walk-behind tractor.** A heavy two-wheel tractor with compatible swappable implements can serve several jobs. Compare the actual task, attachments, operator effort, maintenance, and fuel use with the equipment you'd otherwise need. Share one among several households where that comparison makes sense.",
+    "id": "E72"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Middle reviewer: add remaining primary JIT source.",
+    "before": "### Chapter 17: tools",
+    "after": "- Toyota, [Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/). Manufacturer description of just-in-time production includes minimum necessary stock; it does not mean every inventory is literally zero.\n\n### Chapter 17: tools",
+    "id": "E73"
+  },
+  {
+    "file": "17-chapter15.md",
+    "reason": "Keep the investment claim within the linked portfolio source without adding a corporate-ownership aside.",
+    "before": "Nuveen, the investment manager owned by teachers' pension provider TIAA, also manages a large global farmland portfolio.",
+    "after": "Investment manager Nuveen also manages a large global farmland portfolio.",
+    "id": "E74"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Keep source-heading scope accurate after integration of current-edition references.",
+    "before": "## Sources for material restored or added in v0.9.0 through v0.10.0",
+    "after": "## Additional chapter sources",
+    "id": "E75"
+  },
+  {
+    "file": "23-appendix-b.md",
+    "reason": "Update source-list context to include this review.",
+    "before": "Later additions support the expanded manuscript and the v0.10.0 corrections.",
+    "after": "Later additions support the expanded manuscript and corrections through v0.10.2.",
+    "id": "E76"
+  }
+]

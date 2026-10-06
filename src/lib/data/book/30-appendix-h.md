@@ -12,21 +12,21 @@
 
 1. The book defines the Singularity as the point where intelligence stops being scarce. Has the price of any thinking work you know of already started to fall?
 2. "A curve gives you a date. A door gives you a Monday." What door, if it opened, would change your work or your household most?
-3. In June 2026 the government restricted two AI models and lifted the restriction eighteen days later. Was that a panic, a reasonable precaution, or both?
+3. Chapter 2 recounts the June 2026 export controls on Fable 5 and Mythos 5 and their lifting eighteen days later, while access to the two models still differed. What evidence would distinguish an overreaction from a justified precaution?
 4. The nine stages get more speculative as they climb. Which stage do you think is furthest from happening? Which is closest?
 
 ## Questions for Part II: How Humans React
 
 1. Chapter 7 says "the Entitled" and "the Ready" are mindsets, not kinds of people, and most of us carry a little of both. Where do you notice each in yourself?
 2. The Luddites understood exactly what the machines would do to their pay, and still lost. What would they need to have done differently?
-3. Musicians ran newspaper ads against "the Robot" in 1930 and enrolled two million people. Is your trade running its own version now? Would you sign the coupon?
+3. Musicians ran newspaper ads against "the Robot" in 1930; one ad claimed two million supporters. Is your trade running its own version now? Would you sign the coupon?
 4. What's one thing your household depends on that you couldn't replace for a month? Who near you could help if it failed?
 
 ## Questions for Part III: How to Survive the Transition
 
 1. Which is harder where you live: getting land, getting tools, or getting people to work together? Why?
 2. The book wants the machines that feed people to be owned by the people who depend on them. What would that look like for one machine in your town?
-3. France stopped supermarkets from destroying edible food in 2016. What would it take to do the same where you live?
+3. France's 2016 law prohibited deliberately spoiling edible surplus and required qualifying retailers to offer donation agreements. What would it take to turn such a rule into dependable meals where you live?
 4. Run the premortem from Chapter 18 on a plan your group already has. What fails first?
 
 ## Questions for Chapter 19 and the Conclusion

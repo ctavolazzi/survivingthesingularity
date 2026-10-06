@@ -1,0 +1,174 @@
+{
+  "schema": "sts-chart-data/v1",
+  "edition": "0.10.1",
+  "checked": "2026-09-27",
+  "charts": [
+    {
+      "id": "waste-pathways",
+      "chapter": 14,
+      "kind": "published_estimates",
+      "units": "percent of wasted food; US short tons",
+      "year": 2019,
+      "source": {
+        "title": "EPA, 2019 Wasted Food Report, corrected April 2024",
+        "url": "https://www.epa.gov/system/files/documents/2024-04/2019-wasted-food-report_508_opt_ec_4.23correction.pdf",
+        "locator": "Table 5, printed page 12, PDF page 19",
+        "method": "Direct transcription of published management rows and percentages."
+      },
+      "reported_total_tons": 66216242,
+      "rows": [
+        {"label": "Donation to people", "tons": 5135293, "percent": 7.76},
+        {"label": "Animal feed", "tons": 1516771, "percent": 2.29},
+        {"label": "Bio-based / biochemical", "source_label": "Bio-based Materials/Biochemical Processing", "tons": 2335988, "percent": 3.53},
+        {"label": "Anaerobic digestion", "tons": 538539, "percent": 0.81},
+        {"label": "Composting", "tons": 3304764, "percent": 4.99},
+        {"label": "Land application", "tons": 141371, "percent": 0.21},
+        {"label": "Controlled combustion", "tons": 9646263, "percent": 14.57},
+        {"label": "Landfill", "tons": 39621902, "percent": 59.84},
+        {"label": "Sewer / wastewater", "tons": 3975352, "percent": 6.00}
+      ],
+      "limits": [
+        "Food retail, food service, and residential sectors only; manufacturing is excluded.",
+        "Wasted food includes inedible parts, not a quantity that could all be donated.",
+        "Donation excludes food banks' undistributed portion, which is assigned to other pathways.",
+        "Published integer rows sum to one ton above the published total; retained as transcribed. Percentages sum to 100.00."
+      ]
+    },
+    {
+      "id": "land-values",
+      "chapter": 12,
+      "kind": "survey_estimates",
+      "units": "nominal US dollars per acre",
+      "source": {
+        "title": "USDA NASS, Land Values 2026 Summary",
+        "url": "https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf",
+        "locator": "Average Farm Real Estate Value, printed page 5, PDF page 5",
+        "method": "All 15 labeled annual values transcribed from the published chart."
+      },
+      "rows": [
+        {"year": 2012, "value": 2520}, {"year": 2013, "value": 2730},
+        {"year": 2014, "value": 2940}, {"year": 2015, "value": 3000},
+        {"year": 2016, "value": 2990}, {"year": 2017, "value": 3030},
+        {"year": 2018, "value": 3100}, {"year": 2019, "value": 3140},
+        {"year": 2020, "value": 3130}, {"year": 2021, "value": 3330},
+        {"year": 2022, "value": 3720}, {"year": 2023, "value": 3970},
+        {"year": 2024, "value": 4170}, {"year": 2025, "value": 4350},
+        {"year": 2026, "value": 4500}
+      ],
+      "limits": ["Includes farm land and buildings; not vacant land alone.", "Nominal, not inflation-adjusted; national averages are not local asking prices."]
+    },
+    {
+      "id": "income-food-access",
+      "chapter": 6,
+      "kind": "survey_estimates",
+      "units": "percent of households food insecure at some time in 2024",
+      "year": 2024,
+      "source": {
+        "title": "USDA ERS, Household Food Security in the United States in 2024, ERR-358",
+        "url": "https://www.ers.usda.gov/media/9161/err-358.pdf?v=35619",
+        "locator": "Table 2, printed page 20, PDF page 26; discussion printed page 18",
+        "method": "Selected non-overlapping income groups, not all income categories."
+      },
+      "national_percent": 13.7,
+      "rows": [
+        {"label": "Below the poverty threshold", "income_to_poverty": "under 1.00", "percent": 39.4},
+        {"label": "At least 185% of the threshold", "income_to_poverty": "1.85 and over", "percent": 7.9}
+      ],
+      "limits": ["Selected groups omit middle incomes and unknown income.", "National rate covers all households, not just the two shown.", "Survey association does not establish causation; food insecurity is not identical to reduced intake for every member."]
+    },
+    {
+      "id": "data-centre-demand",
+      "chapter": 5,
+      "kind": "estimate_and_forecast",
+      "units": "terawatt-hours per year",
+      "source": {
+        "title": "IEA, Key Questions on Energy and AI (2026)",
+        "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+        "locator": "Our updated data centre electricity demand outlook",
+        "method": "Two stated values only; no intermediate or extrapolated points."
+      },
+      "rows": [
+        {"year": 2025, "value": 485, "type": "estimate"},
+        {"year": 2030, "value": 950, "type": "forecast"}
+      ],
+      "limits": ["All data centres worldwide, not AI-only electricity.", "The 2030 figure is a projection, not an observation."]
+    },
+    {
+      "id": "forecast-shift",
+      "chapter": 1,
+      "kind": "surveyed_forecasts",
+      "units": "calendar year at 50 percent aggregate forecast probability",
+      "source": {
+        "title": "Grace et al., Thousands of AI Authors on the Future of AI",
+        "url": "https://arxiv.org/abs/2401.02843v3",
+        "locator": "Abstract; surveys conducted in 2022 and 2023",
+        "method": "Four aggregate forecast dates, also present in canonical Chapter 1 Table 3."
+      },
+      "rows": [
+        {"label": "High-level machine intelligence", "survey_2022": 2060, "survey_2023": 2047, "shift_years": 13},
+        {"label": "Full automation of labor", "survey_2022": 2164, "survey_2023": 2116, "shift_years": 48}
+      ],
+      "limits": ["These are aggregate probabilistic forecasts from respondents, not actual arrival dates, guarantees, or observed technology progress.", "High-level machine intelligence and full labor automation are different milestones."]
+    },
+    {
+      "id": "ammonia-energy",
+      "chapter": 9,
+      "kind": "estimate_and_benchmarks",
+      "units": "gigajoules per tonne of ammonia, net basis",
+      "source": {
+        "title": "IEA, Ammonia Technology Roadmap (2021)",
+        "url": "https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary",
+        "locator": "Paragraph beginning: Using technology to improve the performance of existing equipment",
+        "method": "Global-average estimate and two best-available-technology benchmarks."
+      },
+      "rows": [
+        {"label": "Global average", "value": 41, "type": "estimate"},
+        {"label": "Natural gas BAT", "value": 28, "type": "benchmark"},
+        {"label": "Coal BAT", "value": 36, "type": "benchmark"}
+      ],
+      "limits": ["2021 report values, not a current census of plants.", "Benchmarks are not proof every existing plant can reach them, or that biological fixation has no energy cost."]
+    },
+    {
+      "id": "weights-memory",
+      "chapter": 11,
+      "kind": "derived_arithmetic",
+      "units": "decimal gigabytes of nominal model weights only",
+      "source": {
+        "title": "Canonical Chapter 11, The memory math",
+        "path": "src/lib/data/book/13-chapter11.md",
+        "url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
+        "locator": "Chapter equation with overhead factor omitted for this weights-only comparison; server documentation explains context and memory options."
+      },
+      "formula": "GB = parameter_count_in_billions * bits_per_weight / 8",
+      "rows": [
+        {"parameters_billion": 8, "bits": 4, "gb": 4},
+        {"parameters_billion": 8, "bits": 8, "gb": 8},
+        {"parameters_billion": 8, "bits": 16, "gb": 16},
+        {"parameters_billion": 70, "bits": 4, "gb": 35},
+        {"parameters_billion": 70, "bits": 8, "gb": 70},
+        {"parameters_billion": 70, "bits": 16, "gb": 140}
+      ],
+      "limits": ["Not measured VRAM demand or a hardware purchasing specification.", "Excludes quantization metadata, KV cache, activations, runtime buffers, and simultaneous users.", "The chapter's illustrative 20 percent allowance is not included here."]
+    },
+    {
+      "id": "meal-response",
+      "chapter": 18,
+      "kind": "illustrative_workflow",
+      "units": "none",
+      "source": {
+        "title": "Canonical Chapter 18, Put the failed meal on the board",
+        "path": "src/lib/data/book/20-chapter18.md",
+        "locator": "Six-row premortem record and the following handoff-test instruction."
+      },
+      "rows": [
+        {"question": "WHO LOSES THE MEAL?", "detail": "Name affected people and jobs."},
+        {"question": "WHAT WARNS YOU?", "detail": "Define a signal or missing check-in."},
+        {"question": "WHO RESPONDS?", "detail": "Confirm a lead and an available backup."},
+        {"question": "WHAT GETS DELIVERED?", "detail": "Test the alternative; show any gap."},
+        {"question": "WHAT KEEPS IT RUNNING?", "detail": "Name supplies, labor, money, end date."},
+        {"question": "WHEN DO YOU CHECK AGAIN?", "detail": "Set a review date and needed evidence."}
+      ],
+      "limits": ["Illustrative worksheet, not results from an actual service or a measured risk model.", "Personal details belong in appropriate private records, not the public board."]
+    }
+  ]
+}

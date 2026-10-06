@@ -1,0 +1,44 @@
+SURVIVING THE SINGULARITY
+
+
+forty minutes longer on their batteries and then they went too, and
+the valley was back in 1890, except for nineteen households, where it
+was still Tuesday. Somebody brought the printed contact list to the
+shop table. Somebody else started the soup.
+The mesh held. Thatʼs the sentence Elijah had been building toward
+for a year, the LoRa lattice laid node by node across the ridgelines,
+and on the night it finally mattered it did what it was designed to do:
+shrugged. The co-opʼs map stayed lit, house to house, short messages
+hopping the valley on watts you could count on your fingers. Martaʼs
+shop stayed lit. The greenhouse alarms stayed armed. The whole ner-
+vous system heʼd been laying into walls and fence posts for a year
+kept right on reporting, calm as a pulse.
+Except node 7.
+
+Node 7 was the ridge repeater, the high hop that stitched the north
+houses into everyone else, and node 7 was his, personally, in every
+sense that stung: his design, his install, and, the previous Sunday, his
+firmware update, done alone, in a hurry, ahead of the weather, with-
+out a second set of eyes, because it was “just a repeater” and the
+checklist law was for things that touched the open internet, and he
+had let himself believe that discipline was a perimeter instead of a
+practice. The storm found the ridge at eight oʼclock. At 8:04 the map
+showed a hole where the north houses used to be.
+
+The north houses checked in on the voice radios, one by one. Every-
+one was fine. The hole was only in the map. But the hole was his.
+
+He suited up. Nobody climbs the ridge alone, and Curtis was already
+lacing his boots, which at the co-op amounted to a verdict. Marta
+handed Elijah the handheld radio and the small pack, pointed at his
+headlamp, and said the thing she always said instead of luck: “Talk
+before you touch.”
+The ridge trail in a storm is a different country. Rain going sideways
+with gravel in it, madrone trunks slick as wet brick, the wind doing
+shift work: lean, release, lean. He climbed with the multimeter
+zipped inside his coat to keep the display warm, Curtisʼs light steady
+
+
+
+
+282

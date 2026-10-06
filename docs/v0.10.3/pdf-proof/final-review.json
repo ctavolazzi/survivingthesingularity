@@ -1,0 +1,559 @@
+{
+  "reviewed_utc": "2026-09-29T02:25:19.695398+00:00",
+  "edition": "0.10.3",
+  "status": "pass",
+  "scope": "All eight new figures in color and grayscale, seven extra layout pages in both editions and the blank print verso, plus three relocated existing figures in selected editions. This is not a whole-book visual review.",
+  "pdfs": {
+    "interior": {
+      "path": "publication/output/Surviving-the-Singularity-interior.pdf",
+      "sha256": "caa4a051f63c31ef04d6e3084c5e995aaf16b02b956e46c36520b8e2c5856782",
+      "pages": 407,
+      "rendering_source": {
+        "path": "publication/output/print-prepared.pdf",
+        "sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538",
+        "page_streams_unchanged": true,
+        "annotation_descriptors_unchanged": true
+      }
+    },
+    "print": {
+      "path": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b",
+      "pages": 408
+    }
+  },
+  "reading_pdf": {
+    "path": "/Users/ctavolazzi/Code/active/sts-v0.10.3/publication/output/Surviving-the-Singularity-reading.pdf",
+    "pages": 408,
+    "sha256": "bc7a867a3ba359ffc4bb07b7112fd84705eea5b0748e93de17dc95fca6f46171"
+  },
+  "actual_layout_sha256": "5b04281973cd552c0bf6db91143fae382b6a5dbcf9cc34b755c97dc161e72676",
+  "figure_layout_sha256": "35e13c4907038c6bbf8c7a384c09c7b111049fdeade738dccf6404aa7ab45200",
+  "raster_dpi": 120,
+  "new_figure_reviews": [
+    {
+      "file": "v103-reading-routes.svg",
+      "result": "pass",
+      "notes": "Three numbered routes, direct chapter labels and arrows remain legible in grayscale. One unnumbered page title; caption stays on the same page.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 24,
+          "printed_folio": "20",
+          "figure": "v103-reading-routes.svg",
+          "caption_fragments": [
+            "Three ways in. The short route gives you the argument and plan; the full route follows Elijah",
+            "through the chapters."
+          ],
+          "render": "final/interior-024-v103-reading-routes.png",
+          "sha256": "7db19897232bd87b228949e9a6747ea56694678ae04ae9794069bb5f54de7055"
+        },
+        {
+          "edition": "print",
+          "physical_page": 24,
+          "printed_folio": "20",
+          "figure": "v103-reading-routes.svg",
+          "caption_fragments": [
+            "Three ways in. The short route gives you the argument and plan; the full route follows Elijah",
+            "through the chapters."
+          ],
+          "render": "final/print-024-v103-reading-routes.png",
+          "sha256": "8d34a6b5e03944fd99cca52ff9b69e8afd73363ace6a906a2ec78e1ea6db8cf4"
+        }
+      ]
+    },
+    {
+      "file": "v103-narrative-bear-flag.png",
+      "result": "pass",
+      "notes": "Toast, laptop and Elijah's expression remain distinct in grayscale. Complete fictional-scene caption and prose follow the image.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 34,
+          "printed_folio": "30",
+          "figure": "v103-narrative-bear-flag.png",
+          "caption_fragments": [
+            "Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion."
+          ],
+          "render": "final/interior-034-v103-narrative-bear-flag.png",
+          "sha256": "696bf03e58a0656d7b937f736ce7ebe7264177d61f36498915a14e4cc865b72c"
+        },
+        {
+          "edition": "print",
+          "physical_page": 34,
+          "printed_folio": "30",
+          "figure": "v103-narrative-bear-flag.png",
+          "caption_fragments": [
+            "Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion."
+          ],
+          "render": "final/print-034-v103-narrative-bear-flag.png",
+          "sha256": "678cc1d777d740ca8b7407008a54966c086ac9ab925cd9c84437652d26816aad"
+        }
+      ]
+    },
+    {
+      "file": "v103-narrative-near-end.png",
+      "result": "pass",
+      "notes": "Window, mug, closed laptop and notebook remain distinct in grayscale. Caption fits below the low-page illustration without entering the folio.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 80,
+          "printed_folio": "76",
+          "figure": "v103-narrative-near-end.png",
+          "caption_fragments": [
+            "Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the",
+            "world outside his window."
+          ],
+          "render": "final/interior-080-v103-narrative-near-end.png",
+          "sha256": "1861da5f033929f3457f91f98299c515defc5bf1b419c4d5a33b50376b5dc88d"
+        },
+        {
+          "edition": "print",
+          "physical_page": 80,
+          "printed_folio": "76",
+          "figure": "v103-narrative-near-end.png",
+          "caption_fragments": [
+            "Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the",
+            "world outside his window."
+          ],
+          "render": "final/print-080-v103-narrative-near-end.png",
+          "sha256": "abd1ea351f5faa1c08a4cafaff0f72830057ba5291a3ab7009707238fc40d04a"
+        }
+      ]
+    },
+    {
+      "file": "v103-narrative-passing-beans.png",
+      "result": "pass",
+      "notes": "Bowl exchange, table, people and dog remain readable in grayscale. Complete caption and subsequent narrative occupy the same page.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 122,
+          "printed_folio": "118",
+          "figure": "v103-narrative-passing-beans.png",
+          "caption_fragments": [
+            "Fictional scene: pass the beans. The conversation turns from retraining to the floor people need",
+            "beneath them."
+          ],
+          "render": "final/interior-122-v103-narrative-passing-beans.png",
+          "sha256": "198b6c432c3e42f932cd5a136076088895720048d855a955560704725403830a"
+        },
+        {
+          "edition": "print",
+          "physical_page": 122,
+          "printed_folio": "118",
+          "figure": "v103-narrative-passing-beans.png",
+          "caption_fragments": [
+            "Fictional scene: pass the beans. The conversation turns from retraining to the floor people need",
+            "beneath them."
+          ],
+          "render": "final/print-122-v103-narrative-passing-beans.png",
+          "sha256": "861a683dc76c1d288031f60872fa6ebb51df80d96b098e2270324b572ad6304c"
+        }
+      ]
+    },
+    {
+      "file": "v103-narrative-rosa-testimony.png",
+      "result": "pass",
+      "notes": "Rosa, wrist brace and microphone remain distinct from seated listeners in grayscale. Caption and narrative stay clear of the image.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 322,
+          "printed_folio": "318",
+          "figure": "v103-narrative-rosa-testimony.png",
+          "caption_fragments": [
+            "Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond",
+            "the next delivery."
+          ],
+          "render": "final/interior-322-v103-narrative-rosa-testimony.png",
+          "sha256": "f44054c4e46be2a903913fe25bd3126de490f1b01bd71e3e94c6eb71fee22345"
+        },
+        {
+          "edition": "print",
+          "physical_page": 322,
+          "printed_folio": "318",
+          "figure": "v103-narrative-rosa-testimony.png",
+          "caption_fragments": [
+            "Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond",
+            "the next delivery."
+          ],
+          "render": "final/print-322-v103-narrative-rosa-testimony.png",
+          "sha256": "6f87481cdd22b0f746036faea29a272b8c829be6a4ee7882cacd73c2d1bbcdaf"
+        }
+      ]
+    },
+    {
+      "file": "v103-service-ledger.svg",
+      "result": "pass",
+      "notes": "Equipment, maintenance, remaining labor and delivery labels remain legible. Column structure and check marks do not require color.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 369,
+          "printed_folio": "365",
+          "figure": "v103-service-ledger.svg",
+          "caption_fragments": [
+            "Free to the person eating still leaves a working ledger: equipment, maintenance, remaining",
+            "labor, and delivery need dependable funding."
+          ],
+          "render": "final/interior-369-v103-service-ledger.png",
+          "sha256": "5b8916adb521105f0783514eead27430cbdcc3f0d8c4a4b595d9215f53f47fee"
+        },
+        {
+          "edition": "print",
+          "physical_page": 369,
+          "printed_folio": "365",
+          "figure": "v103-service-ledger.svg",
+          "caption_fragments": [
+            "Free to the person eating still leaves a working ledger: equipment, maintenance, remaining",
+            "labor, and delivery need dependable funding."
+          ],
+          "render": "final/print-369-v103-service-ledger.png",
+          "sha256": "94cd1f7a68971c3f55c88838162b2adbb644f4c8f214acc9d71933df96240820"
+        }
+      ]
+    },
+    {
+      "file": "v103-offline-check.svg",
+      "result": "pass",
+      "notes": "Four numbered steps and device drawing remain legible; complete caption, Tier 1 and Tier 2 prose fit below.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 386,
+          "printed_folio": "382",
+          "figure": "v103-offline-check.svg",
+          "caption_fragments": [
+            "Tier 0 ends with a test: can you open the reference and find what you need with the network off?",
+            "Record the source and date so you know which copy you have."
+          ],
+          "render": "final/interior-386-v103-offline-check.png",
+          "sha256": "168fe980486dafd1afabaee57e75d0b4ffb4ef856542ef298bdd4fb60df5ebe8"
+        },
+        {
+          "edition": "print",
+          "physical_page": 386,
+          "printed_folio": "382",
+          "figure": "v103-offline-check.svg",
+          "caption_fragments": [
+            "Tier 0 ends with a test: can you open the reference and find what you need with the network off?",
+            "Record the source and date so you know which copy you have."
+          ],
+          "render": "final/print-386-v103-offline-check.png",
+          "sha256": "fba335600b4cd216c55ce9c33c536d01a2ca00199b25d9784bfbbe35b3074582"
+        }
+      ]
+    },
+    {
+      "file": "v103-first-year-index.svg",
+      "result": "pass",
+      "notes": "All twelve month labels, including the wrapped twelfth label, fit within their columns. Caption and Month 1 opening remain readable.",
+      "samples": [
+        {
+          "edition": "interior",
+          "physical_page": 394,
+          "printed_folio": "390",
+          "figure": "v103-first-year-index.svg",
+          "caption_fragments": [
+            "A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the",
+            "actions and precedent references follow below."
+          ],
+          "render": "final/interior-394-v103-first-year-index.png",
+          "sha256": "adabf2d1867faf3ff1990d5d08e86d23de2cee40f5461d4bd1a461ae200c33b0"
+        },
+        {
+          "edition": "print",
+          "physical_page": 394,
+          "printed_folio": "390",
+          "figure": "v103-first-year-index.svg",
+          "caption_fragments": [
+            "A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the",
+            "actions and precedent references follow below."
+          ],
+          "render": "final/print-394-v103-first-year-index.png",
+          "sha256": "e95fe82c6405f483d45f60208379014596a86fae70c0a8d89758ca0fdf924cb3"
+        }
+      ]
+    }
+  ],
+  "polish_extra_samples": [
+    {
+      "edition": "interior",
+      "page": 173,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/interior-page-173.png",
+      "sha256": "83cdcc67b5298208c220ceea21423739e0f0e7d87279d8309c53dc5bd3dc8648",
+      "pdf": "publication/output/print-prepared.pdf",
+      "pdf_sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "edition": "interior",
+      "page": 319,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/interior-page-319.png",
+      "sha256": "9c968aa7122b03752702bfe733a0b42bffa1e0864e7fd110b4be607d533bf168",
+      "pdf": "publication/output/print-prepared.pdf",
+      "pdf_sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "edition": "interior",
+      "page": 320,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/interior-page-320.png",
+      "sha256": "ac3fbff9f81190b0b66346ecfcea4c7b14a509aa79f3cd16f52094a69b83d835",
+      "pdf": "publication/output/print-prepared.pdf",
+      "pdf_sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "edition": "interior",
+      "page": 374,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/interior-page-374.png",
+      "sha256": "f2b660defb2dd7d4f929d4e853bc29bde900cc9bd949f2eeb795321996672c84",
+      "pdf": "publication/output/print-prepared.pdf",
+      "pdf_sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "edition": "interior",
+      "page": 403,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/interior-page-403.png",
+      "sha256": "e531cb7550ba27f2b0e8970ebf9ed97c2a10a0a9a6d3eaf6c2e4b2ac42b2f0c0",
+      "pdf": "publication/output/print-prepared.pdf",
+      "pdf_sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "edition": "interior",
+      "page": 404,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/interior-page-404.png",
+      "sha256": "491de09182cc6a245995998aabbfdc4efacb04c3e1da937ea789a59f307dbdac",
+      "pdf": "publication/output/print-prepared.pdf",
+      "pdf_sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "edition": "interior",
+      "page": 407,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/interior-page-407.png",
+      "sha256": "15b5463d2ec29d8bf81d19682082b44ae4b87fd57795d8f649006a0d260d10fd",
+      "pdf": "publication/output/print-prepared.pdf",
+      "pdf_sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "edition": "print",
+      "page": 173,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-173.png",
+      "sha256": "56b347a4ef9b75501ca842b0a109cda3a0df5c2f1781aeac947a51bb3990cc5b",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    },
+    {
+      "edition": "print",
+      "page": 319,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-319.png",
+      "sha256": "b9d416f607f0c6db96f1d994c26cbc7274bd0cadba3c0bedb195c5b1bd88987c",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    },
+    {
+      "edition": "print",
+      "page": 320,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-320.png",
+      "sha256": "1fac7988ef156ccefe9db7fba8229e2ad67a1f24a3efc993d4dd607e367d4fbb",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    },
+    {
+      "edition": "print",
+      "page": 374,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-374.png",
+      "sha256": "43689cf0dddbd4b1365abda3c8267b86e23c73cda2a05b7b261ec988f7e973b8",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    },
+    {
+      "edition": "print",
+      "page": 403,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-403.png",
+      "sha256": "a8f012d14b68a96dddb42362ea31c1d7ac04d30d531236de9a58177c87a303ff",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    },
+    {
+      "edition": "print",
+      "page": 404,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-404.png",
+      "sha256": "405cb9627802234114ae58619f2a00b36af006e6955a166036ab27e9cf1a99c9",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    },
+    {
+      "edition": "print",
+      "page": 407,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-407.png",
+      "sha256": "6f9e3321d4b79cae8b8026932debfe32840dd9ff17dc4d6f3c417a7a58606993",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    },
+    {
+      "edition": "print",
+      "page": 408,
+      "file": "docs/v0.10.3/pdf-proof/final-polish-extra/print-page-408.png",
+      "sha256": "70f63eb3bda755fc9b3cc5cd581abdc2adbfaff97de3f4ec8189ecf51903da7c",
+      "pdf": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "pdf_sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b"
+    }
+  ],
+  "relocated_figure_samples": [
+    {
+      "edition": "interior",
+      "physical_page": 174,
+      "printed_folio": "170",
+      "figure": "ch09-greenhouse-bus.svg",
+      "caption_fragments": [
+        "The greenhouse bus is a component map. Use moisture readings checked against the bed,",
+        "configure run-time and water limits, verify that water stops on faults and power loss, and retain",
+        "a manual shutoff."
+      ],
+      "render": "final/interior-174-ch09-greenhouse-bus.png",
+      "sha256": "b3eb543704d353bfb712e7f63b29500782e5194fbfc81ba30a0617fbcc449230"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 326,
+      "printed_folio": "322",
+      "figure": "ch19-conversion-ladder.svg",
+      "caption_fragments": [
+        "Read from the bottom up. The first seven rungs draw on bounded precedents; the final two",
+        "describe how the proposal would be maintained."
+      ],
+      "render": "final/interior-326-ch19-conversion-ladder.png",
+      "sha256": "33184d3f479b1d91ac587336ecb72594876b0797d943245e3c26c8bef7f98015"
+    },
+    {
+      "edition": "print",
+      "physical_page": 377,
+      "printed_folio": "373",
+      "figure": "appd-precedent-timeline.svg",
+      "caption_fragments": [
+        "All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates",
+        "and complete titles are in Appendix D."
+      ],
+      "render": "final/print-377-appd-precedent-timeline.png",
+      "sha256": "683b61677af42778ef0c69a875f0b496bdda3044102190162fdd0d4ec205f38c"
+    }
+  ],
+  "transition_checks": {
+    "how_to_use": {
+      "interior_page": 24,
+      "result": "pass",
+      "one_title": true,
+      "reading_routes_also_reviewed": true
+    },
+    "greenhouse": {
+      "interior_page": 173,
+      "body_words": 264,
+      "result": "pass",
+      "figure_follows_page": 174
+    },
+    "chapter19": {
+      "interior_page": 320,
+      "preceding_page": 319,
+      "body_words": 259,
+      "result": "pass",
+      "story_starts_on_opening_page": true,
+      "preceding_page_contains_end_of_chapter18": true
+    },
+    "appendix_d": {
+      "interior_page": 374,
+      "body_words": 347,
+      "result": "pass",
+      "timeline_after_ledger_page": 377
+    },
+    "credits": {
+      "interior_pages": [
+        403,
+        404,
+        407
+      ],
+      "result": "pass",
+      "last_page_body_words": 272,
+      "provenance_on_intro_page": 403,
+      "first_individual_credit_page": 404,
+      "fix": "Moved the two unchanged provenance paragraphs ahead of individual credit entries. All26 entries and links retained; no font-size or CSS reduction.",
+      "prior_failing_leaf": {
+        "page": 408,
+        "body_words": 57,
+        "review": "pre-credits-fix-review.json",
+        "rasters": "polish-extra/"
+      },
+      "print_final_verso": {
+        "page": 408,
+        "blank": true,
+        "visually_reviewed": true
+      }
+    }
+  },
+  "limits": [
+    "On-screen raster review at 120 dpi, not a physical printer proof.",
+    "New artwork and selected transitions reviewed; remaining pages are outside this visual-review scope.",
+    "Detailed font, link, complete manuscript coverage and resource checks belong to separate publication proofs."
+  ],
+  "rebuild_continuity": {
+    "all_16_new_art_rasters_byte_identical": true,
+    "matching_extra_rasters": [
+      {
+        "edition": "interior",
+        "page": 173,
+        "sha256": "83cdcc67b5298208c220ceea21423739e0f0e7d87279d8309c53dc5bd3dc8648"
+      },
+      {
+        "edition": "interior",
+        "page": 319,
+        "sha256": "9c968aa7122b03752702bfe733a0b42bffa1e0864e7fd110b4be607d533bf168"
+      },
+      {
+        "edition": "interior",
+        "page": 320,
+        "sha256": "ac3fbff9f81190b0b66346ecfcea4c7b14a509aa79f3cd16f52094a69b83d835"
+      },
+      {
+        "edition": "interior",
+        "page": 374,
+        "sha256": "f2b660defb2dd7d4f929d4e853bc29bde900cc9bd949f2eeb795321996672c84"
+      },
+      {
+        "edition": "interior",
+        "page": 407,
+        "sha256": "15b5463d2ec29d8bf81d19682082b44ae4b87fd57795d8f649006a0d260d10fd"
+      },
+      {
+        "edition": "print",
+        "page": 173,
+        "sha256": "56b347a4ef9b75501ca842b0a109cda3a0df5c2f1781aeac947a51bb3990cc5b"
+      },
+      {
+        "edition": "print",
+        "page": 319,
+        "sha256": "b9d416f607f0c6db96f1d994c26cbc7274bd0cadba3c0bedb195c5b1bd88987c"
+      },
+      {
+        "edition": "print",
+        "page": 320,
+        "sha256": "1fac7988ef156ccefe9db7fba8229e2ad67a1f24a3efc993d4dd607e367d4fbb"
+      },
+      {
+        "edition": "print",
+        "page": 374,
+        "sha256": "43689cf0dddbd4b1365abda3c8267b86e23c73cda2a05b7b261ec988f7e973b8"
+      },
+      {
+        "edition": "print",
+        "page": 407,
+        "sha256": "6f9e3321d4b79cae8b8026932debfe32840dd9ff17dc4d6f3c417a7a58606993"
+      }
+    ],
+    "final_credits_pages_reviewed_again": [
+      403,
+      404,
+      407
+    ],
+    "blank_print_verso_reviewed_again": 408,
+    "superseded_review": "pre-credits-fix-review.json"
+  }
+}

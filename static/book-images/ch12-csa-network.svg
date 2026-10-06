@@ -1,43 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  <defs>
-    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
-    </marker>
-    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
-    </marker>
-  </defs>
-
-  <rect x="1" y="1" width="858" height="618" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE SEMI-AUTONOMOUS CSA NETWORK</text>
-  <line x1="40" y1="66" x2="470" y2="66" stroke="#1e293b" stroke-width="2"/>
-
-  <!-- node A -->
-  <rect x="180" y="96" width="500" height="98" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
-  <text x="430" y="128" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">SHOUSE NODE A</text>
-  <text x="430" y="152" font-size="12" fill="#94a3b8" text-anchor="middle">local AI server (Crucible) · Mycodo micro-greenhouse</text>
-  <text x="430" y="174" font-size="11" fill="#3b82f6" text-anchor="middle">yields: coordination + calories</text>
-
-  <!-- exchange 1 -->
-  <line x1="430" y1="194" x2="430" y2="242" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)" marker-start="url(#aa)"/>
-  <text x="450" y="222" font-size="12" fill="#f59e0b">mesh task exchange (LoRa)</text>
-
-  <!-- node B -->
-  <rect x="180" y="248" width="500" height="98" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
-  <text x="430" y="280" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">SHOUSE NODE B</text>
-  <text x="430" y="304" font-size="12" fill="#94a3b8" text-anchor="middle">tool library (CNC, tractor, welder) · recycled DC battery bank</text>
-  <text x="430" y="326" font-size="11" fill="#3b82f6" text-anchor="middle">yields: fabrication + stored power</text>
-
-  <!-- exchange 2 -->
-  <line x1="430" y1="346" x2="430" y2="394" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#aa)" marker-start="url(#aa)"/>
-  <text x="450" y="374" font-size="12" fill="#f59e0b">mesh task exchange (LoRa)</text>
-
-  <!-- vulnerable node -->
-  <rect x="180" y="400" width="500" height="98" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
-  <text x="430" y="432" font-size="15" font-weight="600" fill="#f59e0b" text-anchor="middle">VULNERABLE NODE</text>
-  <text x="430" y="456" font-size="12" fill="#94a3b8" text-anchor="middle">elder neighbor · fixed-income home · one-button LoRa terminal</text>
-  <text x="430" y="478" font-size="11" fill="#f1f5f9" text-anchor="middle">receives automated calorie + labor deliveries, no dollars involved</text>
-
-  <text x="430" y="546" font-size="13" fill="#f1f5f9" text-anchor="middle">automated nodes run at ~300% of their own need; the surplus carries whoever cannot produce</text>
-  <text x="430" y="572" font-size="12" fill="#64748b" text-anchor="middle">E-net = Σ automated yield − Σ basic demand · in this network, positive means nobody is cut off</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">A NETWORK THAT MUST DELIVER</title>
+<desc id="desc">A proposed growing and tool network coordinated by people. Food and support reach households through paid work, transport and backup. Each resource has its own supply and demand budget.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">A NETWORK THAT MUST DELIVER</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Proposed service, not a measured yield</text>
+<path d="M20 99H220V190H20Z" fill="none" stroke="#f1f5f9" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="32" y="124" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Growing site</text>
+<text x="32" y="150" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Water · power</text>
+<text x="32" y="171" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Crops · tending</text>
+<path d="M260 99H460V190H260Z" fill="none" stroke="#f1f5f9" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="272" y="124" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Shared workshop</text>
+<text x="272" y="150" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Tools · parts</text>
+<text x="272" y="171" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Repairs · upkeep</text>
+<path d="M120 194L120 235" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M120 235L115.81850216855473 228.17980382352397" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M120 235L124.18149783144527 228.17980382352394" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M360 194L360 235" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M360 235L355.81850216855474 228.17980382352397" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M360 235L364.18149783144526 228.17980382352394" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M120 235L360 235" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M240 235L240 257" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M240 257L235.81850216855472 250.17980382352397" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M240 257L244.18149783144528 250.17980382352394" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<text x="240" y="286" font-size="17" fill="#f1f5f9" text-anchor="middle" font-weight="400">People coordinate the service</text>
+<text x="240" y="311" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Requests · stock · routes · backup</text>
+<path d="M240 329L240 366" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M240 366L235.81850216855472 359.17980382352397" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M240 366L244.18149783144528 359.17980382352397" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M145 408L240 374L335 408V450H145Z" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="240" y="422" font-size="18" fill="#f1f5f9" text-anchor="middle" font-weight="400">Households</text>
+<text x="240" y="443" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Food and support</text>
+<path d="M20 468L460 468" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="488" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Budget food, energy, water and work separately.</text>
+<text x="20" y="509" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">A surplus in one cannot cancel a shortage</text>
+<text x="20" y="530" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">in another. Delivery still needs people.</text>
 </svg>

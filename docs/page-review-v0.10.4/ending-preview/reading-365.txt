@@ -1,0 +1,51 @@
+Chapter 14: food recovery and the graveyard
+USDA, Food Waste FAQs. The 30 to 40 percent estimate of food waste at the
+retail and consumer levels uses a 2010 baseline; it is not a fresh
+measurement for the publication year.
+CalRecycle, SB 1383 Food Recovery, the stateʼs account of the edible-food-
+recovery requirements and the 20 percent recovery target for 2025; NPR, 
+French Food Waste Law Changing How Grocery Stores Approach Excess
+Food (2018), on Franceʼs 2016 law (Law 2016-138, the Garot law).
+Snopes, Kodakʼs digital camera, on Sassonʼs account of managementʼs
+response; Fortune, “Sears Couldʼve Been Amazon”; Variety, “How Block-
+buster Could Have Owned Netflix”; Slate, Borders bankruptcy: Done in by
+its own stupidity, not the Internet (July 2011).
+Toyota, Toyota Production System. Manufacturer description of just-in-time
+production includes minimum necessary stock; it does not mean every
+inventory is literally zero.
+Chapter 17: tools
+SECTOR 07, I 3D Printed a Photobioreactor. Builderʼs own video; source of
+the eight-grams-a-week figure and the unfinished-design caveat.
+Kirsten Dirksen, Mad scientistʼs homestead, interviewing the EasyGrow
+builder. Source of his density, water, stadium, and “not in business to get
+rich” statements, which the chapter attributes to him.
+SANANBIO, Introducing the SANANBIO Uplift. Vendor promotion; source of
+the labor-cost and human-touch claims.
+Open Source Ecology, Global Village Construction Set; Meshtastic; Kiwix.
+FAO, Use of Algae and Aquatic Macrophytes as Feed in Small-scale Aquacul-
+ture, Fisheries and Aquaculture Technical Paper 531 (2009). Species, feed
+composition, and inclusion levels matter. Growing algae does not establish a
+complete diet for every fish or validate the prototypeʼs output.
+Semtech, What Is LoRa?. Manufacturer description of the radio modulation
+technology, distinct from a complete network protocol.
+Kiwix, FAQ. Project documentation on offline archives, supported
+platforms, and differences among mini, nopic, and maxi editions.
+Appendix E: the cyberdeck
+Newsweek, “What is a cyberdeck: Meet Gen Zʼs new DIY obsession” (2026);
+TechCrunch, “Cyberdecks are having a moment” (2 June 2026).
+Hackadayʼs cyberdeck contests: 2022 and 2023.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+SURVIVING THE SINGULARITY
+360

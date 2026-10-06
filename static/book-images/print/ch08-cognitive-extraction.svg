@@ -1,41 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 20.9 829.9 581.1" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  <defs>
-    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#2563eb"/>
-    </marker>
-  </defs>
-
-  
-  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">THE COGNITIVE EXTRACTION ENGINE</text>
-  <line x1="40" y1="66" x2="428" y2="66" stroke="#cbd5e1" stroke-width="2"/>
-
-  
-  <rect x="220" y="92" width="420" height="78" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
-  <text x="430" y="126" font-size="22" font-weight="600" fill="#b45309" text-anchor="middle">YOUR RAW ATTENTION</text>
-  <text x="430" y="150" font-size="18.2" fill="#334155" text-anchor="middle">the ore body: finite, chemical, yours</text>
-
-  <line x1="430" y1="170" x2="430" y2="224" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="450" y="202" font-size="14.95" fill="#334155">harvested by infinite scroll + notifications</text>
-
-  
-  <rect x="220" y="232" width="420" height="78" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-  <text x="430" y="266" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">PREFRONTAL CORTEX DEPLETION</text>
-  <text x="430" y="290" font-size="18.2" fill="#334155" text-anchor="middle">dopamine baseline spike and crash</text>
-
-  <line x1="430" y1="310" x2="430" y2="364" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="450" y="342" font-size="13.65" fill="#334155">receptors down-regulate, executive function dims</text>
-
-  
-  <rect x="220" y="372" width="420" height="78" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-  <text x="430" y="406" font-size="22" font-weight="600" fill="#0f172a" text-anchor="middle">SYSTEMIC SUGGESTIBILITY</text>
-  <text x="430" y="430" font-size="14.95" fill="#334155" text-anchor="middle">ready to accept automated corporate solutions</text>
-
-  <line x1="430" y1="450" x2="430" y2="504" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="450" y="482" font-size="18.2" fill="#334155">exhaustion becomes compliance</text>
-
-  
-  <rect x="220" y="512" width="420" height="78" rx="10" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
-  <text x="430" y="546" font-size="22" font-weight="600" fill="#334155" text-anchor="middle">LOSS OF PHYSICAL AGENCY</text>
-  <text x="430" y="570" font-size="16.9" fill="#475569" text-anchor="middle">too tired to farm, build, or coordinate</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 542" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">WHEN ATTENTION GETS DIVERTED</title>
+<desc id="desc">A conceptual sequence follows time for a chosen task, a switch to another item, unfinished work, and possible time spent reorienting. A side branch shows an alert drawing attention away. Some switches help; no brain chemistry or fixed time cost is claimed.</desc>
+<rect x="0" y="0" width="480" height="542" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="20" y="32" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">WHEN ATTENTION GETS DIVERTED</text>
+<path d="M20 48L460 48" fill="none" stroke="#9a4f13" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="78" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">A possible pattern to notice in your day.</text>
+<path d="M59 111L59 448" fill="none" stroke="#315f78" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<circle cx="59" cy="120" r="8" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<text x="86" y="125" font-size="15" fill="#17251f" text-anchor="start" font-weight="600">THE TASK YOU CHOSE</text>
+<text x="86" y="151" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Time and attention available.</text>
+<circle cx="59" cy="223" r="8" fill="#ffffff" stroke="#9a4f13" stroke-width="2"/>
+<text x="86" y="228" font-size="15" fill="#17251f" text-anchor="start" font-weight="600">A SWITCH TO SOMETHING ELSE</text>
+<text x="86" y="254" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Some switches help; others interrupt.</text>
+<circle cx="59" cy="329" r="8" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<text x="86" y="334" font-size="15" fill="#17251f" text-anchor="start" font-weight="600">WORK LEFT WAITING</text>
+<text x="86" y="360" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Returning can require reorientation.</text>
+<circle cx="59" cy="431" r="8" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<text x="86" y="436" font-size="15" fill="#17251f" text-anchor="start" font-weight="600">LESS TIME ON THE TASK</text>
+<text x="86" y="462" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">A possible cost, not a diagnosis.</text>
+<path d="M59 173H403V205" fill="none" stroke="#9a4f13" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M398 198L403 205L408 198" fill="none" stroke="#9a4f13" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="87" y="195" font-size="14" fill="#9a4f13" text-anchor="start" font-weight="400">An alert or a feed pulls you away.</text>
+<path d="M20 487L460 487" fill="none" stroke="#a2afa6" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="507" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Conceptual illustration, not brain chemistry.</text>
 </svg>

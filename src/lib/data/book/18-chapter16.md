@@ -60,7 +60,7 @@ But a magic trick only works while the audience looks where the magician points.
 
 ## Why the machine needs you
 
-Chapter 10 walked through model collapse: models trained on the output of earlier models lose their tails and drift toward mush. The flip side is this chapter's whole argument. In a world filling up with synthetic content, **something that actually happened, recorded by the person it happened to, is scarce.** Your stories, your mistakes, your local experiments, the record of what failed on the ridge and why: that's the valuable stuff now. Chapter 10's algorithmic judo is how you get it read. This chapter is about keeping control of it once it is.
+Chapter 10 walked through model collapse: in repeated training that replaces real data with generated output, rare patterns can disappear and errors can accumulate. That isn't the result of every use of synthetic data. The flip side is this chapter's whole argument. In a world filling up with synthetic content, **something that actually happened, recorded by the person it happened to, is scarce.** Your stories, your mistakes, your local experiments, the record of what failed on the ridge and why: that's the valuable stuff now. Chapter 10's algorithmic judo is how you get it read. This chapter is about keeping control of it once it is.
 
 ## Let the useful thing travel
 
@@ -72,9 +72,7 @@ That's the hopeful answer to scale. People and places differ, but the knowledge 
 
 Ask permission before publishing someone's image, circumstances, address, or request for help. Consent to receive food isn't consent to become content. Give people a route to participate without appearing in the documentation.
 
-Removing file metadata can reduce one kind of exposure. It doesn't remove a street sign in the photograph or stop a caption from identifying someone. Review the actual exported material, including what is visible and what your words reveal.
-
-A local copy, a content address, and encryption do different jobs. Availability depends on someone keeping and serving the data. A content identifier doesn't promise perpetual hosting. Physical transfer avoids some network exposure but doesn't make a file immune to loss, damage, or unauthorized copying.
+The next section handles the files. Permission comes first: no technical setting makes consent unnecessary.
 
 ## Media autonomy: keep your own press
 
@@ -86,11 +84,11 @@ Platforms are a temporary distribution channel, not a home. If everything you've
 
 **Keep a sneakernet.** Sometimes the most reliable network is a person with a pocket. A single small memory card can hold a whole library of manuals, maps, and a full offline copy of Wikipedia. Passing drives hand to hand avoids a lot of network exposure. It doesn't make a file immune to loss, damage, or copying, so encrypt what's private and keep more than one copy.
 
-**Build a local archive.** Kiwix will give you all of English Wikipedia offline. Add the manuals, repair guides, and records your community actually uses, on a drive or two that someone keeps current. You're now the librarian of your neighborhood.
+**Build a local archive.** Kiwix reads downloaded reference collections offline. Choose the language and edition you need, check the download size against free storage, and test it with the network off. Wikipedia's `mini` files contain article introductions; `nopic` keeps full articles without images; `maxi` is the full edition. Add the manuals and records your community uses, and record each collection's date. You're now the librarian of your neighborhood. [Kiwix, FAQ](https://get.kiwix.org/en/faq/)
 
-![The Sneakernet Cycle: a hyper-local node encrypts data onto a microSD card, which is passed by hand or local courier to a neighbor node that decrypts it, and the cycle repeats in reverse](/book-images/ch16-sneakernet.svg)
+![A checked file moves between two computers on hand-carried storage. No live network link is required. Private material may be encrypted, but loss, copying, incompatible software and unsafe endpoints remain possible.](/book-images/ch16-sneakernet.svg)
 
-*The sneakernet cycle. A library walks across town in a pocket.*
+*A hand-carried copy needs no live network link. It still needs trusted handling, a compatible reader and a recoverable backup.*
 
 ## Creative immunity
 
@@ -109,7 +107,7 @@ We can want the machines to help and still report a machine's failure plainly. A
 ## This week's handoff
 
 1. **Clean your output.** Install a metadata stripper and make cleaning photos a habit before anything leaves your devices.
-2. **Start the archive.** Download Wikipedia with Kiwix and one shelf's worth of manuals your household or co-op actually needs. Put a copy on a second drive.
+2. **Start the archive.** Download one Kiwix collection and the manuals your household or co-op actually needs. Put a copy on a second drive, then open it on the device you'd use during an outage.
 3. **Make one useful thing for someone else.** Offer a food group a simple choice: a corrected public schedule, a checked translation, a clear page on how to ask for help, or a short account of one repair. Let them choose, including "none of those." Finish it, and confirm who'll keep it current.
 
 ---
@@ -129,7 +127,7 @@ But look at what actually happened on paper, because it's the whole lesson of me
 **The practice.**
 
 1. Write your pamphlet, even if it's four pages. Pick the one thing you know from experience that would really help the person two years behind you, and write it the way Denny talked on camera: plain speech, what happened, what you'd do differently. Publish it this month.
-2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. When the algorithm changes, the people on your list are still yours.
+2. Own your printing press before you need it. A platform account is a stall in someone else's market; an email list and a site you control are a press. Set both up now, even with an audience of nine, and point every platform reader toward them. Use the list to reach readers who've asked to hear from you when the algorithm changes.
 3. Run the tavern test. Read your latest piece out loud. Every sentence you stumble on, every word you'd never say to a neighbor over a fence, rewrite in plain speech. Then ask one reader to explain it back to you and name its weakest point, and fix that before you share it wider.
 
 ---

@@ -25,8 +25,9 @@ from bs4 import BeautifulSoup
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 OUT = HERE / "output"
-PACKAGE = HERE / "package"
-ZIP = OUT / "Surviving-the-Singularity-editable-publication.zip"
+EDITION = json.loads((ROOT / "src/lib/data/book/book.json").read_text())["version"]
+PACKAGE = HERE / ("package-v" + EDITION)
+ZIP = OUT / ("Surviving-the-Singularity-v" + EDITION + "-editable-publication.zip")
 BOOK = ROOT / "src/lib/data/book"
 AUDITS = ROOT / "docs/publication"
 ASSETS = HERE / "assets"
@@ -99,6 +100,11 @@ class Plan:
             return self.resources[path]
         if path == HERE / "book.css":
             name = "book.css"
+        elif path == ROOT / "scripts/book-cover.png":
+            record = self.rights.get(path.name, {})
+            if record.get('local_review_only') is not True or record.get('sha256') != digest(read(path)):
+                raise PackageError('Original cover needs its exact local-review exception and checksum')
+            name = 'assets/original-cover.png'
         elif path.is_relative_to(ASSETS):
             if path.suffix.lower() not in (".svg", ".otf", ".ttf", ".woff", ".woff2", ".css"):
                 raise PackageError(f"Unexpected publication resource type: {path}")
@@ -232,8 +238,10 @@ def make_plan() -> Plan:
     baseline = json.loads(read(AUDITS / "baseline.json"))
     metadata = json.loads(read(BOOK / "book.json"))
     sections = [s["file"] for s in metadata["sections"]]
-    if len(set(sections)) != len(sections) or set(sections) != set(baseline):
-        raise PackageError(f"Expected the complete {len(baseline)}-section reviewed manuscript baseline")
+    if len(set(sections)) != len(sections) or set(sections) | {'book.json'} != set(baseline):
+        raise PackageError(f"Expected the complete {len(sections)}-section baseline and manifest")
+    if digest(read(BOOK / 'book.json')) != baseline['book.json']:
+        raise PackageError('Manifest changed after publication baseline')
     for filename in sections:
         if Path(filename).name != filename or not filename.endswith(".md"):
             raise PackageError(f"Unsafe manuscript filename: {filename}")
@@ -264,7 +272,7 @@ def make_plan() -> Plan:
             item.pop("monochrome", None)
             selected.append(item)
     motif_manifest["assets"] = selected
-    motif_manifest["package_note"] = "Only referenced motifs are bundled. Cover artwork is assets/cover-art.svg."
+    motif_manifest["package_note"] = "Only referenced motifs are bundled. Original cover is assets/original-cover.png, retained for local review with its unresolved provenance recorded."
     plan.add("assets/motifs/manifest.json", json_bytes(motif_manifest), "Filtered publication/assets/motifs/manifest.json")
 
     audit_names = []
@@ -274,7 +282,7 @@ def make_plan() -> Plan:
             if path.suffix == ".md":
                 audit_names.append(path.name)
     build = json.loads(read(OUT / "build.json"))
-    if build["source_sha256"] != baseline or build["sections"] != len(baseline):
+    if build["source_sha256"] != baseline or build["sections"] != len(sections):
         raise PackageError("Build record differs from the reviewed manuscript baseline")
     if set(build["included_images"]) != included_in_publication:
         raise PackageError("Publication images do not match build.json")
@@ -313,7 +321,7 @@ for public sale or a substitute for the publisher's production and rights review
 
 Edit `interior.html`, `front-cover.html`, `book.css`, or the SVGs in `assets/`.
 All rendering assets are included. The HTML has relative local resource URLs.
-The bundled static fonts are Adobe Source Serif 4 and Source Sans Pro.
+The bundled static fonts are Adobe Source Serif 4, Source Sans Pro, and JetBrains Mono.
 Keep their licenses, copyright notices and provenance with any redistribution.
 
 From this directory, with WeasyPrint {weasy_version} and its system dependencies
@@ -339,9 +347,11 @@ the fully editable final HTML and CSS independently of that repository.
 `source-rendered.html` is a diagnostic rendering of the original manuscript,
 not the publication interior. Its {len(plan.omitted)} excluded image elements have
 been replaced with explicit placeholders. Original surrounding captions remain
-as source evidence. No excluded raster artwork is bundled. Publication image
+as source evidence. Excluded interior raster artwork is not bundled. Publication image
 substitutions and caption corrections are recorded in `build.json` and the audits.
-The original cover was also replaced in this design.
+The author-selected original cover is retained for this local handoff. Its
+provenance remains unresolved in the audit; this exception grants no permission
+for external distribution.
 
 ## Supplied PDFs
 

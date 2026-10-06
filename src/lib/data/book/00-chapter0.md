@@ -45,7 +45,7 @@ PorusAI had no such patience.
 
 ---
 
-PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Everyone in Elijah's field knew the lineage by heart: in 2017, researchers at Google had published a paper with the almost taunting title "Attention Is All You Need," and quietly replaced the engine of machine intelligence. Before that paper, machines read the way you read, one word at a time, in order, forgetting the beginning of a long sentence by the time they reached the end. The Transformer architecture let a machine attend to *everything, everywhere, at once*, every word weighing every other word simultaneously, and, crucially, it let the whole process run in parallel across the biggest computers on Earth. Google wrote the physics.
+PorusAI was the other kind of company, a research lab with a messiah complex and a burn rate, the kind of outfit that published its breakthroughs like mixtapes. Everyone in Elijah's field knew the lineage by heart: in 2017, researchers at Google had published a paper with the almost taunting title "Attention Is All You Need," and quietly replaced the engine of machine intelligence. Many of the leading systems had processed a sentence through a chain, one step depending on the last. The Transformer connected words across a passage through attention, without that recurrent chain, and made training far easier to run in parallel. It still generated an answer piece by piece. The breakthrough was how much work the chips could do together while learning. Google drew the engine.
 
 PorusAI built the bomb.
 
@@ -116,6 +116,10 @@ Elijah smiled and stood up into the handshake, and some part of him began, quiet
 "Oh." The realtor waved a hand, easy, unbothered, a man closing a chapter that had already stopped mattering to him. "Yeah, we let three folks go this week. Our transaction coordinator, our marketing gal, and the kid who did our listing videos. Good people, don't get me wrong. But the numbers just don't… I mean, you *saw* what it does. You showed us!" He raised his glass. The other two raised theirs. "To Elijah!"
 
 Three glasses up, catching the neon.
+
+![Illustration of three realtors raising glasses beside Elijah and his laptop at the Bear Flag.](/book-images/v103-narrative-bear-flag.png)
+
+*Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion.*
 
 Elijah's arm lifted his own glass because a lifetime of social training will run the body without any help from the soul. He heard himself say something. The beer was cold and tasted like nothing.
 

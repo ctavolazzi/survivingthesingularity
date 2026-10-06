@@ -10,7 +10,7 @@
 
 **In this chapter:**
 
-- Every intelligence, silicon or biological, pays its bills in the same currency: watts.
+- Every intelligence, silicon or biological, needs energy. Watts measure how fast it uses it.
 - You're a hundred-watt machine with expensive fuel requirements. The machine's hard ceilings are heat and power. Whoever owns energy has a big say in the transition.
 - Keep food, energy, labor, and money in separate ledgers. Free to eat isn't free to provide.
 - The counterattack starts small and already has a name: the cyberdeck. The kids are building it.
@@ -25,7 +25,7 @@ His first instinct was that he'd been hacked. His second, arriving with the slow
 
 He sat down at the kitchen table with the bill and the notebook, and for once he didn't need to build the insight. It walked in and pulled up a chair.
 
-The night the tower had cooked itself into a shutdown, he'd written down that the machine's only wall was heat. He'd understood it then the way you understand a headline. Now, holding the invoice, he understood it the way you understand a hangover. Intelligence wasn't magic. Intelligence was *energy, arranged*. Every token the machine produced was a little cone of waste heat over a server rack somewhere; every clever thing it said had a wattage. And every clever thing *he* said did too: roughly a hundred watts, day and night, the output of one warm incandescent bulb, fueled by groceries. He wrote the two numbers side by side. The datacenter measured in gigawatts, him measured in sandwiches. The whole coming war, right there in one line of notebook arithmetic.
+The night the tower had cooked itself into a shutdown, he'd written down the wall he'd actually hit: heat. He'd understood it then the way you understand a headline. Now, holding the invoice, he understood it the way you understand a hangover. Intelligence wasn't magic. Intelligence was *energy, arranged*. Every token the machine produced was a little cone of waste heat over a server rack somewhere; every clever thing it said had a wattage. And every clever thing *he* said did too: roughly a hundred watts, day and night, the output of one warm incandescent bulb, fueled by groceries. He wrote the two numbers side by side. The datacenter measured in gigawatts, him measured in sandwiches. The whole coming war, right there in one line of notebook arithmetic.
 
 That week he became insufferable in a brand-new way. He bought a plug-in power meter (a little gray box, fourteen dollars, the single highest-leverage instrument purchase of his life) and went through the apartment like an auditor with a grudge. The television, off, sipping eleven watts around the clock for the privilege of turning on two seconds faster. The cable box, twenty-three watts, doing *nothing*, a tenant who paid no rent. The microwave clock. The laser printer he used four times a year. He filled two notebook pages with the ledger of it, and the ledger gave him a much smaller assignment than predicting the end of the world: he had been leaking energy (money, agency, *survival margin*) in a fine mist, everywhere, always, invisibly, to machines that did not love him.
 
@@ -33,7 +33,7 @@ Then he did the other math, the one that mattered. The tower drew 600 watts flat
 
 On Sunday he drove out to the storage unit where his grandmother's things had been sitting since the estate sale nobody could face finishing, and he came back with the woodstove. It was a squat black Fisher, older than he was, four hundred pounds of plate steel with a crack in one firebrick, and he had no fireplace and no flue and no permission from his landlord, so it sat in the corner of the living room as a monument, which was the point. His grandmother had heated a whole farmhouse with it, cooked on it, dried socks over it, kept lambs alive behind it in bad Februaries, all on wood she'd bucked herself from her own downed oaks. Total utility bill, as far as he knew it then: a chainsaw's gas and her own hundred watts. For a moment he wanted to count the cost as nothing but fuel and muscle. Then he remembered the borrowed trailer, the neighbor who helped when her shoulder went, the work of keeping a chimney clear. There had been a whole small arrangement around that stove. His grandmother knew what it needed and who she could call. That was part of the warmth.
 
-![A squat black cast-iron wood stove with the door open, one cracked firebrick visible inside](/book-images/ch05-woodstove.png)
+![A squat black wood stove with the door open, one cracked firebrick visible inside](/book-images/ch05-woodstove.png)
 
 *The Fisher. Four hundred pounds of steel, one cracked firebrick. Older than him.*
 
@@ -48,6 +48,10 @@ He unplugged the cable box on his way to bed. It was, he'd say later, only half 
 
 ## The Foundations
 
+![Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.](/book-images/v101-cutout-sun.png)
+
+*Energy has to come from somewhere. AI-adapted [NASA/SDO imagery](https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg), [public domain](https://www.nasa.gov/nasa-brand-center/images-and-media/); not an unaltered scientific image.*
+
 Let's talk about energy.
 
 And no, I don't mean the "I'm really vibing with your aura" kind. Nobody ever stayed warm in January by aligning their chakras.
@@ -56,9 +60,9 @@ I mean real energy. The brutal, unforgiving energy of physics, measured in joule
 
 ## The rules of the board
 
-**The first law: you can't cheat the universe.** Energy can't be created or destroyed, only changed from one form to another. Everything you do needs an input. To think a thought, your brain burns glucose. To run a water filter, you need electricity. To run a model, somebody pays a utility.
+**The first law: you can't cheat the universe.** Energy can't be created or destroyed, only changed from one form to another. Everything you do needs an input. To think a thought, your brain burns glucose. To run an electric water pump, you need electricity. To run a model, somebody supplies power.
 
-**The second law: there's no breaking even.** In every transfer, some energy leaks away as heat, and the universe slides steadily toward disorder. Your body is a highly organized structure that, left alone, would decay into a cold puddle of carbon and water. To stay alive you have to keep importing organized energy, food, and exporting waste and heat.
+**The second law: useful energy has limits.** Energy can remain on the books while becoming less available to do work. A heat engine operating in a complete cycle can't turn all the heat it takes in into work, and real machines dissipate energy through friction and other losses. [OpenStax, Statements of the Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics) Your body is a highly organized structure that needs continuing upkeep. To stay alive you have to keep taking in food and exporting waste and heat.
 
 For most of us, a global supply system does that heavy lifting out of sight. It burns an astonishing amount of fuel to move a strawberry across a continent so you can eat its sugar in February. Most days it works. The days it doesn't are when you find out how far you live from your own dinner.
 
@@ -75,21 +79,27 @@ Here's a hard truth the tech-utopians skip: as an engine, you're not very effici
 
 *Typical conversion efficiencies, as compiled in [Wikipedia, Energy conversion efficiency](https://en.wikipedia.org/wiki/Energy_conversion_efficiency). Ranges, not specifications: a particular machine can sit anywhere in its band.*
 
+These rows have different boundaries. A motor's figure starts with electricity already delivered to it; a power plant's starts with fuel. Neither includes the whole chain of making, powering, and maintaining a robot. Use the table to understand a conversion, then compare complete systems doing the same job.
+
 <aside class="numbers">
 
 **By the numbers: the machine's appetite**
 
-- **415 terawatt-hours.** What the world's data centres used in 2024, about 1.5 percent of all electricity. [Scientific American, reporting the IEA](https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/)
-- **945 terawatt-hours.** The IEA's projection for 2030, roughly what Japan uses in a year. [Scientific American](https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/)
-- **280-fold.** How far the cost of running a system as capable as GPT-3.5 fell between November 2022 and October 2024. [Stanford AI Index 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report)
+- **485 terawatt-hours.** The IEA's estimate of worldwide data-centre electricity use in 2025. [IEA, Key Questions on Energy and AI (2026)](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)
+- **950 terawatt-hours.** The same report's projection for 2030, about 3 percent of global electricity demand. It's a forecast, not a meter reading. [IEA (2026)](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)
+- **More than 280-fold.** The fall in query price for models matching GPT-3.5 on the MMLU benchmark between November 2022 and October 2024. This measures price at a benchmark threshold, not energy consumed per task. [Stanford AI Index 2025, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf)
 
-The machines are getting hungrier in total and cheaper per unit of thought, both at once. Somebody owns the meter.
+Data centres are using more electricity in total while some measured capabilities get cheaper to buy. Both can happen at once. Somebody owns the meter.
 
 </aside>
 
+![Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted.](/book-images/v101-chart-data-centre-demand.svg)
+
+*The machine's appetite. The solid column is IEA's estimate for 2025; the hatched column is its 2030 projection. This is all data-centre electricity, not AI alone. [IEA, Key Questions on Energy and AI, 2026](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).*
+
 You burn roughly 2,000 to 2,500 kilocalories a day to keep your heart pumping, your lungs moving, and your brain generating existential dread. That's about 100 watts of continuous power, the draw of an old incandescent bulb, and about twenty of those watts run your brain. To get them, you need proteins, carbohydrates, and fats that somebody had to grow, harvest, move, and cook.
 
-The machines are less picky. They eat raw electricity, from sunlight, wind, uranium, or coal. They don't spend energy repairing cell walls or fighting off a cold.
+The machines are less picky. They eat raw electricity, from sunlight, wind, uranium, or coal. They don't spend energy repairing tissue or fighting off a cold.
 
 That comparison is vivid, and it's exactly where people get dangerous with it. Calling someone a meat engine can make the physics easy to feel. It must never make their worth depend on how cheaply they compete with a motor. Thermodynamics checks a claim against the physical world. It doesn't tell you what a person deserves or who gets to eat.
 
@@ -103,7 +113,7 @@ So keep the ledgers separate. Suppose a shared garden has solar panels, a water 
 
 When I say food should be free at the point of access, I don't mean steel, land, labor, or electricity stop costing money. I mean the person who needs to eat shouldn't have to produce a payment first.
 
-We already know how to separate the person eating from the person paying. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.
+We already know how to fund a service without charging for each use. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.
 
 ## The cyberdeck: your first machine
 
@@ -131,8 +141,8 @@ Right now, while the professionally worried write op-eds about screen time, a lo
 
 There's no factory spec, but a common anatomy has emerged:
 
-- **The brain:** a single-board computer, often a Raspberry Pi. Total draw: single-digit watts.
-- **The face:** a small screen, or e-ink for sunlight and almost no power.
+- **The brain:** a single-board computer, often a Raspberry Pi. Measure the board under your intended load, then add the screen, radios, storage, and power-conversion losses. Single-digit watts is a target for some builds, not a whole-system guarantee. [Raspberry Pi, power and peripherals](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#maximum-power-output)
+- **The face:** a small screen, or e-ink for sunlight and low power while holding a static page. Refreshing the page and running the rest of the computer still take power. [E Ink, bistability](https://www.eink.com/tech/detail/Benefits)
 - **The hands:** a mechanical keyboard, often a tiny one, sometimes hand-wired key by key.
 - **The body:** a Pelican case, an ammo can, a 3D-printed shell, a thrift-store briefcase.
 - **The ears:** a cheap software-defined radio stick, and a LoRa radio running Meshtastic, the off-grid mesh messaging network.
@@ -159,7 +169,7 @@ Your first machine doesn't need to be pretty. It needs to be yours. Build one wi
 Before you pool anything with anybody, run a cold-eyed audit of your own balance sheet.
 
 1. **What are your inputs?** Where does your food come from, where does your power come from, and what happens to each during a week-long interruption?
-2. **Where are your leaks?** Standby loads, subscriptions, fuel, and attention. Attention is energy too: hours spent doomscrolling are hours somebody else is billing for.
+2. **Where are your leaks?** Standby loads, subscriptions, fuel, and attention. Keep the units straight: count the first in watts and hours, the subscriptions in dollars, the fuel by quantity, and doomscrolling in time you don't get back.
 3. **Who's in your pod?** Which people within walking distance could share tools, meals, rides, and labor with you?
 
 Then pick one task you actually care about, food first if you can, and write a short inventory with the people who already do it: the task, what it needs, who's responsible, what it still depends on from outside, and what happens during an interruption. An irrigation controller won't fix a missing water supply. A better motor won't fix a delivery route that never reaches the person.
@@ -176,9 +186,9 @@ The paperwork survives. The Science Museum holds a contract dated March 1, 1786,
 
 The horse looked untouchable for another century. The horse and mule population on American farms kept climbing right through the railroad age, peaking above twenty-six million in 1918, with a whole economy of hay fields, stables, farriers, harness makers, and teamsters built on its metabolism. Then tractors, trucks, feed prices, farm wages, and a dozen other lines in the farm ledger moved, and within a working lifetime the herd collapsed. [USDA, Statistical Bulletin 83, table 14](https://downloads.usda.library.cornell.edu/usda-esmis/files/7m01bk68h/d217qs47w/4f16c641b/frmprodcostreturn_Farm_Production_Practices_Costs_and_Returns__1910-48.pdf) The horse never got less noble, less strong, or less willing. Sentiment just never appeared as a row in anybody's books.
 
-![Two stacked line charts sharing a year axis, 1910 to 1949. Horses and mules on US farms peak at 26.7 million in 1918 and fall to 8.3 million by 1949. Tractors on farms rise from about 1,000 in 1910 to 3.5 million in 1949.](/book-images/ch05-horses-tractors.svg)
+![Two line charts show horses and mules on US farms peaking at 26.7 million in 1918 and falling to 8.3 million in 1949, while tractors rise from 1,000 in 1910 to 3.5 million in 1949. The vertical scales differ; all annual values are plotted.](/book-images/ch05-horses-tractors.svg)
 
-*The herd and the machine. The horse didn't get worse; the ledger changed. Source: USDA Statistical Bulletin 83, table 14.*
+*US farm counts on January 1, 1910–1949. Separate vertical scales; 1948 and 1949 figures were preliminary. Source: USDA Statistical Bulletin 83 (1949), table 14, p. 45.*
 
 **The mechanism.** The horse's owners argued about tradition, beauty, and loyalty. The machine's buyers ran operating cost per unit of work, alongside wages, feed, and credit. The arithmetic doesn't negotiate, and it doesn't send a warning before it closes the account.
 
@@ -186,7 +196,7 @@ The horse looked untouchable for another century. The horse and mule population 
 
 **The practice.**
 
-1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who captures the spread. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.
+1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who gets paid. Keep each quantity in its own units. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.
 2. List the tasks in your job the way a buyer would, then ask a coworker what the list missed. Mark the parts where you're competing on raw output against silicon, and the parts where you aren't: trust, presence, hands, judgment on the ground, relationships. Shift your effort toward the second list this quarter.
 3. Move one meaningful expense from rented energy to owned energy this year: insulation, a bicycle that replaces short car trips, a panel and battery sized by someone who knows the job. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.
 

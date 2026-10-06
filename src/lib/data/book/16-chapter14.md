@@ -63,11 +63,11 @@ To most of us, that looked like peak civilization. To anyone who thinks in syste
 
 ## The just-in-time trap
 
-The supply chains behind those shelves run on *just-in-time* logistics: keep as little inventory as possible and let a constant stream of trucks act as a rolling warehouse. It's brilliantly efficient. It's also designed to have no slack.
+The supply chains behind those shelves run on *just-in-time* logistics: keep as little inventory as possible and let a constant stream of trucks act as a rolling warehouse. The aim is to reduce idle inventory. The amount of stock and backup capacity still varies by product, operator, and route. Even Toyota's account of just-in-time production includes a minimum stock of parts ready for assembly. [Toyota, Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/)
 
-![The Logistic Shockwave: a four-day cascade from port disruption, to trucks rerouted, to shelves stripped clean, to systemic panic, with the local food buffer draining to zero alongside](/book-images/ch14-logistic-shockwave.svg)
+![An illustrative chain from disruption to delayed deliveries and pressure on local stock, with rerouting and replenishment as possible responses. No fixed countdown or inevitable collapse is implied.](/book-images/ch14-logistic-shockwave.svg)
 
-*The logistic shockwave. A system with no buffer passes every blow straight through to the shelves.*
+*One possible disruption sequence, not a clock. Existing stock, replacement routes, demand, and the specific failure determine what reaches the shelves and when.*
 
 Every system trades between two things:
 
@@ -80,7 +80,7 @@ A grocery store with a few days of stock isn't a store a few days from famine; r
 
 That's the question worth asking whenever something gets more efficient: whose books show the gain, and whose life absorbs the loss? The machine didn't decide Frank's customers were expendable. People chose the terms of supply. Better logistics could just as easily have been pointed at keeping small places served. That would have taken resources and a reason to value the service. Calling the closure inevitable hides the decision that mattered.
 
-There's a cemetery full of companies that made the other choice, and the precedents at the end of this chapter walk you through it. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked "how do we protect what we sell?" The other asked "what are we actually for?" Your town, your trade, and your household are being asked that same question right now.
+The two precedents at the end of this chapter walk through a corporate cemetery, then follow a survivor that found other uses for its skills. Here's the plaque at the gate: **the difference between Kodak and Fujifilm was never information.** Both saw the wave. One asked "how do we protect what we sell?" The other asked "what are we actually for?" Your town, your trade, and your household are being asked that same question right now.
 
 ## The short loop
 
@@ -92,11 +92,15 @@ A local supplier makes a repair easier. A regional grower makes a food partnersh
 
 ## Catch the food before it's thrown away
 
-Here's the most obvious short loop of all. By the US Department of Agriculture's estimate, somewhere between thirty and forty percent of the American food supply goes uneaten. [USDA, Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs) That estimate counts losses at the store and in our own kitchens: unsold surplus, cosmetic rejects, food past a sell-by date but perfectly good, leftovers nobody got to.
+Here's the most obvious short loop of all. By the US Department of Agriculture's estimate, somewhere between thirty and forty percent of the American food supply goes uneaten. [USDA, Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs) The USDA FAQ points to a 2010 estimate of 31 percent at retail and consumer levels; the 30 to 40 percent range isn't a fresh annual measurement. Loss includes food that can no longer be eaten as well as recoverable surplus. A date label alone doesn't establish safety; storage and handling still matter.
 
-There's no such thing as waste, only food in the wrong place. And this one already has working law behind it. In 2016, France required larger supermarkets to donate unsold edible food instead of destroying it. [NPR, French Food Waste Law Changing How Grocery Stores Approach Excess Food (2018)](https://www.npr.org/sections/thesalt/2018/02/24/586579455/french-food-waste-law-changing-how-grocery-stores-approach-excess-food) California's SB 1383 went further, requiring large grocers, distributors, and food services to recover edible food that would otherwise be thrown away and get it to people who can use it. [CalRecycle, SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/) A community doesn't have to invent this. It can organize the pickups, the kitchens, and the cold storage that make recovery actually reach a plate, and ask its own local leaders to back it.
+Some of that waste is still edible food in the wrong place. Recovering it already has working law behind it. France's 2016 law prohibited deliberately spoiling unsold food still fit to eat and required larger food retailers to offer donation agreements to eligible charities. Food-safety rules still applied; this wasn't a command to donate everything in a waste bin. [France, Law 2016-138, Article 1](https://www.legifrance.gouv.fr/eli/loi/2016/2/11/2016-138/jo/texte) California's SB 1383 requires covered grocers, distributors, and food services to recover edible food that would otherwise be thrown away and get it to people who can use it. [CalRecycle, SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/) A community doesn't have to invent this. It can organize the pickups, the kitchens, and the cold storage that make recovery actually reach a plate, and ask its own local leaders to back it.
 
 Turn a leak in the long system into a local reserve, and you're feeding people from the surplus of the very system that told them they were redundant.
+
+![Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material.](/book-images/v101-chart-waste-pathways.svg)
+
+*Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could not have been donated. Donation is net of food banks' unusable portion. [EPA, Table 5](https://www.epa.gov/system/files/documents/2024-04/2019-wasted-food-report_508_opt_ec_4.23correction.pdf).*
 
 <aside class="numbers">
 
@@ -104,10 +108,10 @@ Turn a leak in the long system into a local reserve, and you're feeding people f
 
 - **30 to 40 percent** of the US food supply goes uneaten, by the USDA's estimate (linked above).
 - **5 to 6 million tons** of food thrown away by Californians every year. [CDFA, Food Recovery](https://www.cdfa.ca.gov/is/foodrecovery/)
-- **20 percent:** California's target for recovering edible food that would otherwise be landfilled, to feed people in need (linked above).
+- **20 percent by 2025:** California's statutory recovery target for edible food that would otherwise be landfilled. A target isn't a reported achievement. [CalRecycle, Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/)
 - **47.9 million** people in US households that couldn't count on enough food in 2024. [USDA ERS](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics)
 
-Put the first number next to the last one. That gap is the argument.
+Put the first number next to the last one. That mismatch is the argument, not a calculation of meals available: the figures cover different years and populations, and some lost food can't be recovered.
 
 </aside>
 
@@ -115,13 +119,13 @@ Put the first number next to the last one. That gap is the argument.
 
 You can't run a short loop if you can't talk to each other. Most of our coordination rides on cell towers and data centers we don't control, which is fine until a tower goes down in a storm or a service decides to shut something off.
 
-![Centralized versus decentralized mesh communications: a single tower serving three users fails entirely when broken, while a mesh of nodes routes around any dead node](/book-images/ch14-mesh-comms.svg)
+![A single-uplink network loses its connection when the tower fails. A four-node mesh routes around a failed link only because another powered and tested path remains.](/book-images/ch14-mesh-comms.svg)
 
-*Two topologies for a town. The tower is a single point of failure; the mesh treats damage as a routing problem.*
+*A mesh can route around a break only where another powered, usable path remains. Test the missing relay.*
 
 A mesh network is built from small, low-power radio nodes spread across an area, often LoRa radios running open software like Meshtastic.
 
-- **Self-healing.** Every node is both a radio and a router. If one fails, messages hop around it.
+- **Alternate paths.** Nodes can relay messages. If one fails, messages can travel another way only if a usable radio path remains. A ridge repeater can still be a single point of failure, as Chapter 17 shows. [Meshtastic, mesh algorithm](https://meshtastic.org/docs/overview/mesh-algo/)
 - **Independent.** It works locally without the internet, cell service, or satellites.
 - **Low power.** A node can run for a long time on a small solar panel and battery, drawing less than a nightlight.
 
@@ -174,7 +178,7 @@ One company faced Kodak's extinction event and lived, which makes it the most im
 
 Fujifilm's own history puts the peak of world demand for photographic film at 2000. Then demand fell off a cliff, on the same schedule that hit Kodak. [Fujifilm, Corporate History](https://holdings.fujifilm.com/special/90th/en/history/) Instead of defending the product, Fujifilm asked what it was actually good at: thin-film coatings, handling tiny particles, collagen chemistry (film is mostly gelatin), keeping photographs from fading. Its 2004 plan set out to find other uses for that accumulated know-how. It already had more than film to stand on, including its office-equipment business, and it aimed its chemistry at new targets: materials for flat-panel screens, healthcare, and, in 2007, a cosmetics line called ASTALIFT that the company ties directly to its photographic research. [Fujifilm, ASTALIFT History](https://ls-jp.fujifilm.com/astaliftbrand/about/history/)
 
-**The mechanism.** Kodak believed it was in the film business. Fujifilm decided it was in the applied-chemistry business. One defined itself by a product, which the wave destroyed. The other defined itself by capabilities, which the wave couldn't touch.
+**The mechanism.** Both companies invested beyond film. Fujifilm's account shows how existing businesses and a deliberate search for new uses of its chemistry helped it absorb the loss. Kodak's digital investments didn't replace the old profits. The useful distinction is whether a new business can carry the people and capabilities you mean to keep, not whether management can name the coming technology.
 
 **The rule.** When the wave comes for your job, don't only ask how to save the product. Ask what you're actually good at, and where that skill is needed next. And be honest about the difference between a corporation's reinvention and a person's: Fujifilm had reserves, labs, and other businesses to carry it through. A person deserves somewhere secure to stand while the next use is found.
 

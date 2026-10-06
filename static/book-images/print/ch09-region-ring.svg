@@ -1,50 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 14 855.6 619" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  <defs>
-    <marker id="sa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#d97706"/>
-    </marker>
-  </defs>
-
-  
-  <text x="40" y="46" font-size="22" letter-spacing="2.32" fill="#0f172a">THE REGION, NOT THE CITY LIMITS</text>
-  <line x1="40" y1="60" x2="470" y2="60" stroke="#d97706" stroke-width="2"/>
-  <text x="40" y="82" font-size="16.25" fill="#334155">A dense core cannot produce everything inside its own limits. The ring around it can.</text>
-
-  
-  <line x1="450" y1="164" x2="450" y2="266" stroke="#d97706" stroke-width="2" marker-end="url(#sa)"/>
-  <line x1="450" y1="482" x2="450" y2="356" stroke="#d97706" stroke-width="2" marker-end="url(#sa)"/>
-  <line x1="272" y1="312" x2="346" y2="312" stroke="#d97706" stroke-width="2" marker-end="url(#sa)"/>
-  <line x1="628" y1="312" x2="554" y2="312" stroke="#d97706" stroke-width="2" marker-end="url(#sa)"/>
-
-  
-  <rect x="350" y="272" width="200" height="80" rx="12" fill="#f1f5f9" stroke="#2563eb" stroke-width="2.5"/>
-  <text x="450" y="307" font-size="20.25" font-weight="600" fill="#0f172a" text-anchor="middle">DENSE CITY CORE</text>
-  <text x="450" y="327" font-size="11" fill="#334155" text-anchor="middle">high density, low production</text>
-
-  
-  <rect x="320" y="98" width="260" height="66" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
-  <text x="450" y="126" font-size="19.6" font-weight="600" fill="#0f172a" text-anchor="middle">FOOD PRODUCTION</text>
-  <text x="450" y="145" font-size="11.55" fill="#334155" text-anchor="middle">CSA farms, greenhouses, grow towers</text>
-
-  
-  <rect x="320" y="482" width="260" height="66" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
-  <text x="450" y="510" font-size="18.2" font-weight="600" fill="#0f172a" text-anchor="middle">NEIGHBORHOOD FACTORIES</text>
-  <text x="450" y="529" font-size="12.1" fill="#334155" text-anchor="middle">plasma tables, printers, fab labs</text>
-
-  
-  <rect x="48" y="279" width="224" height="66" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
-  <text x="160" y="307" font-size="19.6" font-weight="600" fill="#0f172a" text-anchor="middle">MATERIALS RECOVERY</text>
-  <text x="160" y="326" font-size="14.3" fill="#334155" text-anchor="middle">capture the 40% we waste</text>
-
-  
-  <rect x="628" y="279" width="224" height="66" rx="10" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
-  <text x="740" y="307" font-size="19.6" font-weight="600" fill="#0f172a" text-anchor="middle">ENERGY + WATER</text>
-  <text x="740" y="326" font-size="13.2" fill="#334155" text-anchor="middle">solar, storage, microgrids</text>
-
-  <text x="574" y="250" font-size="15.4" fill="#b45309">supply in</text>
-
-  <line x1="40" y1="574" x2="860" y2="574" stroke="#cbd5e1" stroke-width="2"/>
-  <text x="40" y="598" font-size="17.5" fill="#334155">The ring builds the capacity, and that is good local work.</text>
-  <text x="40" y="617" font-size="17.5" fill="#334155">If the trucks stop, the region still eats. Resilience, not secession.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 624" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">BUILD REGIONAL CAPACITY</title>
+<desc id="desc">A town exchanges goods and services with nearby farms, materials recovery, power and water services, and workshops. This is a capacity-building objective. Coverage depends on stores, seasonal production, water, power, logistics and remaining imports, which must be measured.</desc>
+<rect width="480" height="624" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">BUILD REGIONAL CAPACITY</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="79" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">A regional objective, not a closed economy.</text>
+<rect x="20" y="116" width="208" height="76" rx="3" fill="#ffffff" stroke="#a2afa6" stroke-width="1.5"/>
+<text x="124" y="144" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">FOOD</text>
+<text x="124" y="169" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Farms + kitchens</text>
+<rect x="252" y="116" width="208" height="76" rx="3" fill="#ffffff" stroke="#a2afa6" stroke-width="1.5"/>
+<text x="356" y="144" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">MATERIALS</text>
+<text x="356" y="169" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Recovery + stores</text>
+<rect x="20" y="398" width="208" height="76" rx="3" fill="#ffffff" stroke="#a2afa6" stroke-width="1.5"/>
+<text x="124" y="426" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">POWER + WATER</text>
+<text x="124" y="451" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Supply + upkeep</text>
+<rect x="252" y="398" width="208" height="76" rx="3" fill="#ffffff" stroke="#a2afa6" stroke-width="1.5"/>
+<text x="356" y="426" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">WORKSHOPS</text>
+<text x="356" y="451" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Tools + repairs</text>
+<path d="M124 192V221H205V247M356 192V221H275V247M205 329V368H124V398M275 329V368H356V398" fill="none" stroke="#9a4f13" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="129" y="252" width="222" height="74" rx="3" fill="#ffffff" stroke="#9a4f13" stroke-width="1.5"/>
+<text x="240" y="281" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">TOWN + HOUSEHOLDS</text>
+<text x="240" y="305" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">People do the work</text>
+<text x="20" y="509" font-size="14" fill="#315f78" text-anchor="start" font-weight="400">Still connected to outside suppliers.</text>
+<path d="M20 528L460 528" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="548" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Measure stores and seasonal production.</text>
+<text x="20" y="569" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Water, power and delivery limit coverage.</text>
+<text x="20" y="590" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Ask: what can we supply, and for how long?</text>
 </svg>

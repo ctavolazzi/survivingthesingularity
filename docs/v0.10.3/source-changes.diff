@@ -1,0 +1,172 @@
+--- v0.10.2/31-how-to-use.md
++++ v0.10.3/31-how-to-use.md
+@@ -7,6 +7,10 @@
+ - **The short route.** The Introduction, Chapter 19, and Appendix C. You'll have the argument, the plan, and the condensed version to hand to someone else.
+ - **A wider view.** Add the Preface, Chapter 6, Chapter 12, and the Conclusion: what we owe each other, where the ground comes from, and why it's worth doing.
+ - **The whole thing.** In order. Elijah's story runs through every chapter, and it pays off at the end.
++
++![Three reading routes: Introduction, Chapter 19 and Appendix C; add Preface, Chapters 6 and 12, and Conclusion for a wider view; or read every section in order.](/book-images/v103-reading-routes.svg)
++
++*Three ways in. The short route gives you the argument and plan; the full route follows Elijah through the chapters.*
+ 
+ ## Start from where you're standing
+ 
+--- v0.10.2/00-chapter0.md
++++ v0.10.3/00-chapter0.md
+@@ -117,6 +117,10 @@
+ 
+ Three glasses up, catching the neon.
+ 
++![Illustration of three realtors raising glasses beside Elijah and his laptop at the Bear Flag.](/book-images/v103-narrative-bear-flag.png)
++
++*Fictional scene: the Bear Flag toast. Elijah hears what his demonstration helped set in motion.*
++
+ Elijah's arm lifted his own glass because a lifetime of social training will run the body without any help from the soul. He heard himself say something. The beer was cold and tasted like nothing.
+ 
+ The kid who did their listing videos. Elijah didn't know him. He knew him completely. He'd been him: some twenty-something with a camera and a laptop full of cracked software and a rate he was embarrassed to quote, stringing together realtors and restaurants and the occasional wedding into the shape of one income, telling his parents it was all going to compound into something. That kid had lost his anchor client this week and didn't know yet what Elijah knew, which was that it wasn't a client, it was the tide.
+--- v0.10.2/06-chapter4.md
++++ v0.10.3/06-chapter4.md
+@@ -43,6 +43,10 @@
+ *So stop mapping the far end. The far end doesn't need me. Work the near end, the part with weather and dirt and bills. That part I can farm.*
+ 
+ Outside, the sky was doing its slow gray warm-up. He made coffee and stood at the window with it, feeling strangely light. There is a specific relief in finding the edge of your own comprehension: the same relief as reaching the fence line of a field you're responsible for. Everything inside the fence: yours. Everything beyond it: the sky's. His grandmother had never once worried about the valley she couldn't farm.
++
++![Illustration of Elijah holding coffee at his apartment window at dawn, with a closed laptop behind him.](/book-images/v103-narrative-near-end.png)
++
++*Fictional scene: the near end. Elijah closes the spreadsheet and returns his attention to the world outside his window.*
+ 
+ The electric bill was in the mailbox that Monday. That envelope, the near end arriving on schedule, is where the next chapter begins.
+ 
+--- v0.10.2/09-chapter7.md
++++ v0.10.3/09-chapter7.md
+@@ -45,6 +45,10 @@
+ "They did. Some of them threatened people, too. And a fire in a depot can hurt somebody who had nothing to do with a layoff. I'm not defending that." She moved the bowl away from the edge, where the dog had reached an ambitious nose. "I'm saying you don't fence those people out. You build the floor Parliament wouldn't. That's what this table *is*." She picked her fork back up. "Pass the beans."
+ 
+ Denny held out his hand for the bowl. Marta passed it.
++
++![Illustration of Marta passing a bowl of beans to Denny at the cooperative's plywood dinner table.](/book-images/v103-narrative-passing-beans.png)
++
++*Fictional scene: pass the beans. The conversation turns from retraining to the floor people need beneath them.*
+ 
+ The beans got passed. The conversation moved, the way conversations at long tables do, into three smaller ones. Elijah didn't say much for the rest of the dinner. But late that night, in the notebook, under a year of arithmetic (stages and watts and orders of magnitude), he started a different kind of page. Names. *Denny: two ladders, both moved. Where does he stand for six months? Curtis: fence-minded but shows up for every work day; the fence is fear. Marta: knows the Luddite hangings cold. Where does a welder learn that?* He looked at the page a long time, because it didn't look like anything he'd ever produced at Claypot, and it was the most useful data he'd gathered in two years.
+ 
+--- v0.10.2/11-chapter9.md
++++ v0.10.3/11-chapter9.md
+@@ -139,10 +139,6 @@
+ 
+ For the controller in the scene, or one like it, the open-source project Mycodo turns a Raspberry Pi into an environmental controller: sensors in, relays out, and feedback loops in between.
+ 
+-![SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.](/book-images/ch09-greenhouse-bus.svg)
+-
+-*The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.*
+-
+ - **Sensors:** an air temperature and humidity sensor (the SHT31-D is common) and a capacitive soil-moisture probe, which resists corrosion better than the cheap resistive kind.
+ - **Actuators:** a relay board switching low-voltage devices: an exhaust fan, a solenoid valve on the irrigation line, supplemental lights. Have someone who knows electrical work check anything that touches mains power.
+ 
+@@ -158,6 +154,10 @@
+ > $$u(t) = K_p e(t) + K_i \int e(\tau) d\tau + K_d \, de(t)/dt$$
+ 
+ where $e(t)$ is the gap between the target and the sensor reading, and the three $K$ values tune the response. A valve that only opens or closes still needs limits on run time and total water, plus an off state if the sensor stops reporting. Start with a grower's judgment about what the plants need, keep the manual valve working, and check the soil with your hands until you trust the numbers. (Chapter 15 is about what happens when you don't.)
++
++![SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.](/book-images/ch09-greenhouse-bus.svg)
++
++*The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.*
+ 
+ ## A worked example: one delivery, all the way through
+ 
+--- v0.10.2/27-chapter19.md
++++ v0.10.3/27-chapter19.md
+@@ -1,8 +1,4 @@
+ # Chapter 19: The Ladder: How Money Becomes Optional
+-
+-![Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.](/book-images/ch19-conversion-ladder.svg)
+-
+-*Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained.*
+ 
+ > *"No society can legitimately call itself civilized if a sick person is denied medical aid because of lack of means."*
+ > Aneurin Bevan, *In Place of Fear* (1952)
+@@ -33,6 +29,10 @@
+ 
+ "I pack fruit for a living," she said. "Afternoon shift. The route comes late enough that I can get it. I'm not here to say thank you, though I am thankful. I'm here because every month we don't know if it's the last month. You can't plan a week around maybe." She looked at the supervisor with the almonds. "I asked them to tell us before the week it stops. They said they would. I'm asking you the same thing."
+ 
++![Illustration of Rosa speaking at a county microphone in her warehouse shirt, with a brace on her right wrist.](/book-images/v103-narrative-rosa-testimony.png)
++
++*Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond the next delivery.*
++
+ She sat down with a minute left on the clock. Nobody else in the room had managed that.
+ 
+ The chair thanked her and turned to the staff report. The county's analyst, a tired man in a sweater vest, said the numbers were sound but the program would be an ongoing obligation, and the county didn't take on ongoing obligations for services the private sector and charities already provided. "We simply can't afford to make food free," he said. "Nobody can."
+@@ -82,6 +82,10 @@
+ This isn't a revolution, and it doesn't wait for one. It doesn't need a single leader, a new constitution, or the permission of the people who profit from the way things are now. It needs people who live somewhere to decide, out loud and on the record, that everyone who lives there gets what they need to survive, and then to build the institutions that make the decision real. The first seven rungs below draw on things real places have already done. Those precedents have limits; none proves the whole plan has worked. The last two are how you hold it together. The proposal is to connect these pieces, deliberately, and widen who they serve.
+ 
+ The yardstick is the one Chapter 18 set: the **Adequate Level of Care**. Can a community make sure everyone who lives there has food, shelter, and basic care, dependably, including through a bad week? Each rung moves a place closer, and each one can be measured.
++
++![Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.](/book-images/ch19-conversion-ladder.svg)
++
++*Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained.*
+ 
+ ## Rung 1: Count what's wasted and who's hungry
+ 
+--- v0.10.2/24-appendix-c.md
++++ v0.10.3/24-appendix-c.md
+@@ -7,6 +7,10 @@
+ Use AI and robots to make survival more secure. Start with food: adequate food available to everyone, regardless of employment or money. A person who loses a job should still be able to eat. Restaurants, paid work, and meals sold above the baseline can coexist with that.
+ 
+ Free to the person eating doesn't mean free to provide. Equipment, maintenance, remaining labor, and delivery all need dependable funding. Cheaper production doesn't settle who gets access; people do.
++
++![An open ledger with four continuing service costs: equipment, maintenance, remaining labor and delivery. No prices or budget estimates are shown.](/book-images/v103-service-ledger.svg)
++
++*Free to the person eating still leaves a working ledger: equipment, maintenance, remaining labor, and delivery need dependable funding.*
+ 
+ After food, the order is land care, cleanup, shelter, then everything further out. A priority is where you start, not a waiting list for people in urgent need.
+ 
+--- v0.10.2/25-appendix-d.md
++++ v0.10.3/25-appendix-d.md
+@@ -1,10 +1,6 @@
+ # APPENDIX D: THE PRECEDENT LEDGER
+ 
+ *The book's chapters carry precedents, usually as their closing move: a documented case of people meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-24. The dates run from the first farms to the week the web was called a letdown. Same wave, different water. None of them proves a date for AGI or a law of progress. Each one is a question to bring to your own situation.*
+-
+-![Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.](/book-images/appd-precedent-timeline.svg)
+-
+-*All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.*
+ 
+ ## How to run the Ledger
+ 
+@@ -46,6 +42,10 @@
+ | P-22 | The Apocalypse That Ran On Time | 1999 to 2004 | Chapter 18 |
+ | P-23 | The Day Care Stopped Costing Money | 1942 to 1948 | Chapter 19 |
+ | P-24 | What the Forecast Missed | 1993 to 1995 | Conclusion |
++
++![Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.](/book-images/appd-precedent-timeline.svg)
++
++*All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.*
+ 
+ ## The rules, in one breath each
+ 
+--- v0.10.2/26-appendix-e.md
++++ v0.10.3/26-appendix-e.md
+@@ -51,6 +51,10 @@
+ 
+ **Tier 0, the phone you have.** Save one non-sensitive reference you're allowed to copy, turn off the network, and confirm you can open it and find what you need. Write down its source and date so you'll know when it's stale. That's the offline habit, for free.
+ 
++![A phone and an offline retrieval test: save a reference you may copy, record source and date, turn the network off, then open the copy and find an answer.](/book-images/v103-offline-check.svg)
++
++*Tier 0 ends with a test: can you open the reference and find what you need with the network off? Record the source and date so you know which copy you have.*
++
+ **Tier 1, the Communicator.** A supported Meshtastic board, flashed with the firmware for that hardware, configured for your region, and paired to your phone. Budget for the antenna, battery, and enclosure as well as the board. Test a short message with a second compatible node before counting on a route. Terrain, placement, power, and settings decide whether the link works. Default channel keys are public; use a randomly generated shared key for a private group and decide whether location sharing belongs on. [Meshtastic, channel configuration](https://meshtastic.org/docs/configuration/radio/channels/)
+ 
+ **Tier 2, the Librarian.** A supported computer, a screen, suitable protected power, and Kiwix loaded with the libraries you'd actually reach for. Check file size and edition before downloading, as Chapter 16 explains. Open the archive with the network off and find a specific answer. Add a small local model only if the hardware supports it; keep its generated answers distinct from the reference text.
+--- v0.10.2/29-appendix-g.md
++++ v0.10.3/29-appendix-g.md
+@@ -1,6 +1,10 @@
+ # Appendix G: Your First Year
+ 
+ *The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Move a month if your season or your life needs it, and choose a scale you can sustain.*
++
++![Twelve monthly themes arranged as a two-page year index, from getting your bearings and knowing your numbers to going on the record and looking back, then forward.](/book-images/v103-first-year-index.svg)
++
++*A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the actions and precedent references follow below.*
+ 
+ ## Month 1: Get your bearings
+ 

@@ -1,0 +1,57 @@
+SURVIVING THE SINGULARITY
+
+Beating the tin can
+A metal box is a superb conductor of heat, which makes it an oven in
+August and an icebox in January. For steady conduction through one
+uniform layer, Fourierʼs law gives the heat-transfer rate:
+
+      Q̇  = (k · A · ΔT)/d
+
+
+where Q̇  is heat flow in watts, k is thermal conductivity, A is area, ΔT
+is the temperature difference across that layer, and d is its thickness.
+A complete wall adds other layers, surface effects, and paths through
+steel framing. Steel conducts heat thousands of times better than
+foam, and a container wall is only a couple of millimeters thick, so
+bare steel barely slows heat at all. Everything depends on the
+insulation layer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+234

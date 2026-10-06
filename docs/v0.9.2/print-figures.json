@@ -3,357 +3,359 @@
   "cap_px": 22,
   "figures": {
     "appd-precedent-timeline.svg": {
-      "labels": 66,
-      "marks": 28,
-      "min_base": 10.5,
-      "min_final": 13.2,
-      "median_scale": 1.2,
-      "frame_width": 900,
-      "crop_width": 875.9,
-      "source_sha256": "5d665d976a06f99f35d7a698aa2afb30b44521da483e37deeae2160033034bc0",
-      "print_sha256": "f4d566338a3c79d446bb6d948377f07222e35a84e7f75f87a96827764a7a53a4"
+      "source_sha256": "a4971c6a5023232f79c57b9019f759b828a6b7f322743a8ffb0406ee99a178fd",
+      "print_sha256": "5e7f9129e015a0c7499820b00650b4517eaa39e1c3326dfc5de60de2123eeb53",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch02-eighteen-days.svg": {
-      "labels": 24,
-      "marks": 10,
-      "min_base": 10.5,
-      "min_final": 12.07,
-      "median_scale": 1.2,
-      "frame_width": 900,
-      "crop_width": 860.5,
-      "source_sha256": "1f844cb170df5819927c4ff6be56e05197ef8a35c42dad8cba73530ecaa9dec2",
-      "print_sha256": "9256ce7511c784b59f386b23041d7935dd54b553b2e6721a16925220b2a33e39"
+      "source_sha256": "a579b02ab771c23f6b9e41199742efd262c6843e9e4ace1c3f48784d99943235",
+      "print_sha256": "e197fe6b2a7b4a1bb622821c6a30118a072677ab80ffb8fe7c6cf7d438b5e281",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch05-horses-tractors.svg": {
-      "labels": 27,
-      "marks": 15,
-      "min_base": 10.5,
-      "min_final": 12,
-      "median_scale": 1.09,
-      "frame_width": 900,
-      "crop_width": 866.9,
-      "source_sha256": "2640f41565ddacb37554addbcdbf18d67ed161b7563e8d48ea2ef44ede6a6b0c",
-      "print_sha256": "07b455295e594d002313fef2588cbe1bc6f6e93e95b70901ef9fbcb60ad41416"
+      "source_sha256": "3c719bd272eed866a71e4b278bf86f93c5ef326b343d3cfd517c0576b2ffbe4c",
+      "print_sha256": "0e2a6d68627127aa36402b7d66b2c4b98367b4f42cc3b59abb8fb592360a4fe2",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch06-capability-access.svg": {
-      "labels": 20,
-      "marks": 5,
-      "min_base": 10.5,
-      "min_final": 12.65,
-      "median_scale": 1.2,
-      "frame_width": 900,
-      "crop_width": 897.1,
-      "source_sha256": "200e895b78f60738a8a3b3e3fe38f3aa9f87fb8817b838c0ba16af9c2220f861",
-      "print_sha256": "a19503fdfccac7440e18d168988d33bc3e1e70259d314dcc0c2bf2165c763628"
+      "source_sha256": "0d129784e51e948b36caca6ad34166a1025cc884d76948015af0dee123607a67",
+      "print_sha256": "835fbea5981ba3135ec49a81abd3cdbbff1d74fcc42905fb8b5ab545a8dec088",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch08-cognitive-extraction.svg": {
-      "labels": 12,
-      "marks": 8,
-      "min_base": 13,
-      "min_final": 13.65,
-      "median_scale": 1.22,
-      "frame_width": 860,
-      "crop_width": 829.9,
-      "source_sha256": "ab5bbd210730e49adb8fc8b60a540534a2f049b8af815144a7366fce2282e0f8",
-      "print_sha256": "2003c8025df47be2f8d76a3e1c55922001f9cd74df3429dd7b28981214978859"
+      "source_sha256": "406ffee7ab39d2ba53775aa940e19ac9325eeb4b9948b4ab2945c744e66dc0c9",
+      "print_sha256": "07cdb4846e81f113aaebb116266cca41d68c5a5c1cb57dd7732e4a72452d1dd4",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch08-firewall-pipeline.svg": {
-      "labels": 23,
-      "marks": 8,
-      "min_base": 11,
-      "min_final": 13.75,
-      "median_scale": 1.35,
-      "frame_width": 860,
-      "crop_width": 810,
-      "source_sha256": "2718de7f48a26a554f4abff49d8177f94478d1092785b7864015082d689fe865",
-      "print_sha256": "451cba4cdd338ac2c083e64ab4ae2ddd7b127faf78eb653df93b5b380e40ef24"
+      "source_sha256": "2412069c23abcea5f167f638a6a4c0698dfeb62d603effe2e2e51dd443459c6c",
+      "print_sha256": "bce21db24028e1bf29e75da76dde51da9c3cc393ccb7395350bcc6d1106f2ada",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch08-focus-recovery.svg": {
-      "labels": 10,
-      "marks": 13,
-      "min_base": 12,
-      "min_final": 12,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 786.4,
-      "source_sha256": "013b0e6aaeb0d5142680d71f3bc81a7bc1f15eb59bde692ab6fefb2ad5255360",
-      "print_sha256": "974e0c0da35f55c498c87ea506efd4264ba890e3ed56b9758696521429d248be"
+      "source_sha256": "4a19df52fea817bf1e2f5935495df746b69866cc03b1785e5a3b733df48efd6f",
+      "print_sha256": "626bb7d8fd6d6eaba363a40740bdbb08bf185490b359099ee4729da188a5a94c",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch08-info-architectures.svg": {
-      "labels": 24,
-      "marks": 10,
-      "min_base": 12,
-      "min_final": 13.8,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 816.2,
-      "source_sha256": "5ccacb135bf0b80071b2833bc2bdfd95631057f013b2e9bad43d0ed519331dac",
-      "print_sha256": "a6dba420abce65de0f7fa0c5cd4cd170d5578646721bfae3b86d93519ec85b21"
+      "source_sha256": "3f51494b754bdf9fac490df82780d81c89a0e1743db0783900ae26a268c4b4f3",
+      "print_sha256": "b44e3a60851a59e55b59573c660ac023f2d3ef1057ddc09348b4ea0e0adf7d40",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch08-star-vs-mesh.svg": {
-      "labels": 9,
-      "marks": 36,
-      "min_base": 12,
-      "min_final": 12,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 815.6,
-      "source_sha256": "535d201b3e6bd4712d5effc5a28239f6e906925bb69bcb0972646d73a3813b5e",
-      "print_sha256": "db06ffdd4e51d169787b8de1bda107a0c7db91a2a8965d62b703c52b259fc6d8"
+      "source_sha256": "5d7d482a3ab6d1d9e3feea37c9b312898390d6823cee12f9f7c2ec602bef9d6b",
+      "print_sha256": "dc6d72da19ccc7b894b26b05b650172c7c2f30f15664d0a58b0af99c31b6bd86",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch09-cnc-bed.svg": {
-      "labels": 16,
-      "marks": 8,
-      "min_base": 10,
-      "min_final": 11.55,
-      "median_scale": 1.35,
-      "frame_width": 860,
-      "crop_width": 788.2,
-      "source_sha256": "ac01a17fa56ce0a9a173abe0b05200ecdad7aa5e882b5594e96f1beb1265bd43",
-      "print_sha256": "6d75484e691b685bb9804c2862b9646417a71e23412d5187813d4881a9511ae3"
+      "source_sha256": "ab194625806be4608a6abf0ec47a15ece4123cdc35a8ee4f8ddc92482935583c",
+      "print_sha256": "6f00880b34f5f4a1fcbaded17b40c23169448315b20f12aeee1f7ea8428f9d20",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch09-greenhouse-bus.svg": {
-      "labels": 17,
-      "marks": 9,
-      "min_base": 11,
-      "min_final": 13.2,
-      "median_scale": 1.35,
-      "frame_width": 860,
-      "crop_width": 812.7,
-      "source_sha256": "0dead8e129be5005f56a35c1afce2a05dea14c5288db8b087914adf2df7bcf17",
-      "print_sha256": "a5c7b93ede690efd2bbc72fb20e2c64a193ae06af5937c62e53340d8f0fe5070"
+      "source_sha256": "25403083a4e785503e32b61352819f19d8945e0a79df12d358243b77b1edc702",
+      "print_sha256": "2896db1d01e32508eb6a91e3983c23d3a70ad5e113df3afbf4cc3c52c1370b9f",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch09-hyperlocal-vs-global.svg": {
-      "labels": 28,
-      "marks": 17,
-      "min_base": 12.5,
-      "min_final": 14.7,
-      "median_scale": 1.18,
-      "frame_width": 860,
-      "crop_width": 788.6,
-      "source_sha256": "cc278653214ec61e4c7f6ffd3bc209fca9fae9963f0767e8d4524951a02d66d4",
-      "print_sha256": "7407520553fec4e64074200abe9545191f2f02c068b8112e7e80a02363159410"
+      "source_sha256": "6e7bb65874c9c6d0bf384666f67e595e66e5c85b496794f2433bcc4cd0d1a16c",
+      "print_sha256": "0ed2e8082eb76daa3e15c210893ef83809f5cf7fb7bcc607f21793c9c2de8ef8",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch09-region-ring.svg": {
-      "labels": 15,
-      "marks": 11,
-      "min_base": 11,
-      "min_final": 11,
-      "median_scale": 1.3,
-      "frame_width": 900,
-      "crop_width": 855.6,
-      "source_sha256": "09d43573ed96b81b071133c80276f6822687b57bf10d0983c1f0af094688b66c",
-      "print_sha256": "7e6c55c5ad1b9b6f79513346ec1c643b032b5e66d7eaab4d3b63b3c1855d2012"
+      "source_sha256": "e3553bf80c03b543e28af0e681d61caf14e94b5585d4600215c27707684e385f",
+      "print_sha256": "67081ce5c2201c79c1cea93518a482f896984277b32ff0d2e547189393cf9142",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch10-algorithm-unlock.svg": {
-      "labels": 20,
-      "marks": 8,
-      "min_base": 11,
-      "min_final": 12.1,
-      "median_scale": 1.25,
-      "frame_width": 860,
-      "crop_width": 851.8,
-      "source_sha256": "00b0aea8754987985390d6f25ede67b9f8f5a547ed9583f3dca442260a42393b",
-      "print_sha256": "f4321bac330e774c0f54bc684baf7ea96ff076daf6fb96507e4baa490071ea9d"
+      "source_sha256": "254420c3f821561d4dcc95e59d6e8399750aebf56593f64b88a9346754532fa8",
+      "print_sha256": "e5844fbd5b9e20aee5ec4133abeda31db022b963d60797877dbe7ceca46d75b3",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch10-model-collapse.svg": {
-      "labels": 12,
-      "marks": 11,
-      "min_base": 11,
-      "min_final": 11.55,
-      "median_scale": 1.31,
-      "frame_width": 860,
-      "crop_width": 864.4,
-      "source_sha256": "68fbf60222f698940d433b6d89252d6b1d603d0c3a1f114ee4edb345f5282ecd",
-      "print_sha256": "d6e3d2fe4284b55c5c28278115d4bb0b039ce504c16fa401449f97a6c790a6cd"
+      "source_sha256": "9ac0595a04f0aa1de23887c7a667db0b4c8c51994508c7674456f6e34d11eaf0",
+      "print_sha256": "001c754a94d4f86c7c72f08869e052329ffcbb95913085dfaf1ba10349a24ff3",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch11-cooling-loop.svg": {
-      "labels": 16,
-      "marks": 13,
-      "min_base": 10,
-      "min_final": 10,
-      "median_scale": 1.31,
-      "frame_width": 860,
-      "crop_width": 869,
-      "source_sha256": "ba4d64b02e409f9e284a1e3ae2dab07d98afa4c996527cb3d903f22fe592e609",
-      "print_sha256": "6d0c76c3d4f7648f3e60dc3646d4954ae54386a37c531a738a810eb50189ec0c"
+      "source_sha256": "3bc548544d2b9fa6dc3048206eb26906741bcff2f526704e9659e30047355109",
+      "print_sha256": "1bb47ceaf9d82e54a9fa9209d66e1a0d7828ea2933cb712f96bee181d5a51347",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch12-csa-network.svg": {
-      "labels": 14,
-      "marks": 6,
-      "min_base": 11,
-      "min_final": 12.1,
-      "median_scale": 1.3,
-      "frame_width": 860,
-      "crop_width": 872.5,
-      "source_sha256": "2cd376725e507844a67ee6ec79ebbb3d5e5db28ee4ea8eafc27bd04bf8b27d68",
-      "print_sha256": "b05d4362b3b7f3fce324ed4bdb8ce96471bbe1e3cd463ce51c419f4a2b6607f8"
+      "source_sha256": "4c1a7206003e0defb43c6bc67158ed2dfc95ba1d9f366efc60b7eb3af18cab71",
+      "print_sha256": "cc655f7b1b167ffb9ffd9f12c690d8b60d10c11b1d9468aba031fcbf3798df85",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch13-shell-architecture.svg": {
-      "labels": 13,
-      "marks": 6,
-      "min_base": 12,
-      "min_final": 15,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 793.3,
-      "source_sha256": "6163c784d4ab4d17abece8789c0b10fe3c2f839937b4a35d2b5199f2f6535656",
-      "print_sha256": "efeed9b43a7cb4493a60594dfe47d72f8944342e78e933ed27026996a16d3a19"
+      "source_sha256": "75dc12e15311f34096f695dff52e670265b69af2cfdb55a4e22d7ea140ece51b",
+      "print_sha256": "c793182a4a2721df0a34fd19d9c4d231cf56f1dd69188386ccca741545c0c86c",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch13-thermal-seal.svg": {
-      "labels": 20,
-      "marks": 7,
-      "min_base": 11,
-      "min_final": 12,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 867.4,
-      "source_sha256": "ea31edd7a1dca8b2535c4289ac963db73606a4daa1b92b746315a4f5b58dd541",
-      "print_sha256": "f0d20d25ebeb1db3f279e6a2e680e9498ef8830c5840aa22858bb59d0878974d"
+      "source_sha256": "26166b01513c2c343469307a356fcb13105638c8ce5abb6fa8fdd303582041ac",
+      "print_sha256": "751bcdb643a673571e4f588ab901b5d8d6ea94f1b7d8c8b3bbd8fe661305eea3",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch14-logistic-shockwave.svg": {
-      "labels": 16,
-      "marks": 9,
-      "min_base": 11,
-      "min_final": 15.4,
-      "median_scale": 1.38,
-      "frame_width": 860,
-      "crop_width": 812.7,
-      "source_sha256": "02ece01fd8d94e396ec2ff71a324ee5d3c221b88584c0f16592d83068a2a391a",
-      "print_sha256": "1a2dc8ef75d50945e1fa21ca804b68c31efae60f39579ac563b707beddf4c9c3"
+      "source_sha256": "41477ea9a22ad6b44742713cd66a767dcd31cde0bccac7ef2ee27432ad6d241a",
+      "print_sha256": "2e12005987649d7a8921057bd4bf450fee4e9f7c2def655a6afe4ee0874d4e02",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch14-mesh-comms.svg": {
-      "labels": 14,
-      "marks": 36,
-      "min_base": 12,
-      "min_final": 12.6,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 828.7,
-      "source_sha256": "05b0d9a3d18c62c3cca8672ba9cda5879922a71d828383864ff6e412714492d4",
-      "print_sha256": "15baad552d8104534bbf8b78452156cf89aa37911f5e2a5e207beee25fe8f9f4"
+      "source_sha256": "91da4dd1212653776bb0092974bbfdf6495c0e108377f8880a50ed791e3ec44a",
+      "print_sha256": "d6e6d0e49979a75da4eb4dd118a59566ec1f5b1497b7c556fa79929039a9c971",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch15-clt-firewall.svg": {
-      "labels": 14,
-      "marks": 7,
-      "min_base": 12,
-      "min_final": 12.6,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 707.1,
-      "source_sha256": "9ad58b1cfd56ea0bbe9d8e26377573b3f0a1959667e51cdbc1b8031329f5592a",
-      "print_sha256": "706415eed931673c62c20def003b63bd139325307dfeabc30ba635f69fb13683"
+      "source_sha256": "8553e9f10e08ad70b2c0bc12b624247d237f57b6c6da633652d0e11e0a87d60a",
+      "print_sha256": "e634184bb1f3c7a4d29e998b88ccf6d7cebaff6032b36243beb0d0e319f7e114",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch15-soil-food-web.svg": {
-      "labels": 13,
-      "marks": 18,
-      "min_base": 12,
-      "min_final": 12.6,
-      "median_scale": 1.38,
-      "frame_width": 860,
-      "crop_width": 774.3,
-      "source_sha256": "516599087b7100fa10d0dd6da65c91e0b5d4ca7df446f47977950df13ec26f1c",
-      "print_sha256": "5ef871be3446aeba46bb86927f785bafd5f556007d99883e5e4a5cdffec8cfd2"
+      "source_sha256": "d0d4f8e7e153122e6c8ba513e1eb216d1ad6bf2c0ecdf9b83aef6ce57dcb7f52",
+      "print_sha256": "5df26993caa8b39275816ae6f4991324dc5a8543f468c1866fc4993409944866",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch16-sneakernet.svg": {
-      "labels": 15,
-      "marks": 8,
-      "min_base": 11,
-      "min_final": 12.65,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 823.6,
-      "source_sha256": "7c3f444b2c449bbb184d20cd306f0980d6005fd73943b0c226bfbfe3f9ad1e68",
-      "print_sha256": "701ee94783a3d5bfabeb7b161100b8997c2bb1a5b8e5be3c24b45abf075b2dd7"
+      "source_sha256": "4587c0b99cd6cfb02143c1fdd10859c9fad1d26353dd65e2de1e7eba79b51321",
+      "print_sha256": "3dc040580dd02172202a3cd5c80490fad8a21116f5d5b24fd0ceba29c804d412",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch17-algae-loop.svg": {
-      "labels": 18,
-      "marks": 9,
-      "min_base": 12.5,
-      "min_final": 13.65,
-      "median_scale": 1.2,
-      "frame_width": 860,
-      "crop_width": 794,
-      "source_sha256": "7985df07e7fdcd5895925509fb8a7294a55075911145003b6357d257d98f1db9",
-      "print_sha256": "2993a2da56969fbb8e07b0daf54074bb0c59a41d7ed0ff59a5f7b4438a7491e0"
+      "source_sha256": "e3090f6eeaff9fb0bbc86863f32e36d7aaef5f9a9a372540b8698a6ff5bb9392",
+      "print_sha256": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch17-dc-native.svg": {
-      "labels": 25,
-      "marks": 19,
-      "min_base": 11,
-      "min_final": 12.65,
-      "median_scale": 1.4,
-      "frame_width": 860,
-      "crop_width": 788.2,
-      "source_sha256": "267ac42cdd2bfb729d4aff795937408179ee8c48ec317927b9ee9651641895a9",
-      "print_sha256": "108f56517cf09c1299543fa8a01389a06b3715268903c7103d627aa2914f1ff1"
+      "source_sha256": "2f57027bcfc3cd411ba3e5bb6668f6deecb516b006838814e33268d66944642e",
+      "print_sha256": "09c78b334b709458e53d9d959c65311d73c2525c0b6f7b21e8b1542cd1628078",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch17-fab-lab.svg": {
-      "labels": 19,
-      "marks": 13,
-      "min_base": 11,
-      "min_final": 11,
-      "median_scale": 1.3,
-      "frame_width": 860,
-      "crop_width": 859.6,
-      "source_sha256": "906aea64dbe8104282dc7344fb24d53ad971be6081190972ed5b412a11671963",
-      "print_sha256": "93e4cbf1a6958266acca06c76bcbbf9e9057d59d26af4a97fa52d633e0bfb6db"
+      "source_sha256": "012b07d9a089df3c84f81774a465f354be481d7c7745e014e6e2aa4d91bab864",
+      "print_sha256": "ef3cceaff4775ce5f2263e012d8438ed1fe5baab4477a828b08a0d1e85f233e6",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch17-lora-node.svg": {
-      "labels": 15,
-      "marks": 24,
-      "min_base": 11,
-      "min_final": 11,
-      "median_scale": 1.27,
-      "frame_width": 860,
-      "crop_width": 799.3,
-      "source_sha256": "9a213488c366cf55f6106f792e01eb0f7510ac3cf7a3708bd479cec1d3d1c644",
-      "print_sha256": "ec0e00e7e50cb90613f89cc9f5f2fad69e9a36a920b225618a44aa71df50cd0f"
+      "labels": 26,
+      "marks": 12,
+      "min_base": 12,
+      "min_final": 13.2,
+      "median_scale": 1.3,
+      "frame_width": 480,
+      "crop_width": 456,
+      "source_sha256": "bd70722bddd9f5ef968a272d7791475ade1418a9eeacf3a7b0649f242832935d",
+      "print_sha256": "58be532888edfa48a34306d2bc5912f4ca416a1e2f9ce295685b359344c86833"
     },
     "ch18-social-contract.svg": {
-      "labels": 18,
-      "marks": 16,
-      "min_base": 11.5,
-      "min_final": 13.8,
-      "median_scale": 1.4,
-      "frame_width": 900,
-      "crop_width": 844,
-      "source_sha256": "0a1782b34cfb897df89795d1be4b093a84dd2dc0ea8c7b09a26b012761e03cce",
-      "print_sha256": "ffe0bd3f048b10c751a17c5172804fd15f80a06813e136925ffc29f8db52991d"
+      "source_sha256": "05b979825da7006b65f68bea62a33f5806acf94eed751de487d3e83dbf92dc89",
+      "print_sha256": "718b74c05c0745ac8cf09dca92b1a5177b943bcb720e760b67de5f8ed4425e47",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "ch19-conversion-ladder.svg": {
-      "labels": 35,
-      "marks": 12,
-      "min_base": 10.5,
-      "min_final": 12.65,
-      "median_scale": 1.3,
-      "frame_width": 900,
-      "crop_width": 844,
-      "source_sha256": "c53eefe7101662861edd090d274c2c437b54ad0da7a8d4ffcf8e7adea62ad980",
-      "print_sha256": "f5fe5cfd295ddd49e4b13a342ec1c579d1abdce24678509638680ce46e0e7658"
+      "source_sha256": "764918df8775bf7745e26c53db4145633fe974af6c9d4f768db9694ef291113c",
+      "print_sha256": "5abb544f56196e1d4fe62b95222f283d8b19a22f4f8ee98524048248dd4155bc",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "coop-cast.svg": {
+      "labels": 13,
+      "min_base": 13.5,
+      "min_final": 13.5,
+      "median_scale": 1,
+      "frame_width": 480,
+      "crop_width": 480,
+      "source_sha256": "ebf1693b40674a670ab06e3772ec84de96cbfc0e03ac9d61b70bc7f6f402b68d",
+      "print_sha256": "1f8b5874284680749ca45b89e517b01ce890b63497e83075828aaae5c98657bb",
+      "generator": "docs/v0.10.0/cast_plate.py"
     },
     "intro-food-insecurity.svg": {
-      "labels": 24,
-      "marks": 12,
-      "min_base": 10.5,
-      "min_final": 11,
-      "median_scale": 1.09,
-      "frame_width": 900,
-      "crop_width": 861.9,
-      "source_sha256": "85d96f3a9e9b03c97c91fc8758c3ee8bb8740c0e1e858acd6736df8f17445dd6",
-      "print_sha256": "204d85209e57c4c81a3c55df03df0aa3af9b1aefa4cc9bdc9824f079d73c3e0d"
+      "source_sha256": "24cfe5c46899ed2a9509f6deb267fa54c5e9593a524a1f326a1c68dd7ea272b6",
+      "print_sha256": "d9edaa0782d807968323c5b9c8bcab1d96485b0ec9e7989f0ef8302f77d6c610",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     },
     "intro-nine-stages.svg": {
-      "labels": 28,
-      "marks": 20,
-      "min_base": 11,
-      "min_final": 15,
-      "median_scale": 1.29,
-      "frame_width": 900,
-      "crop_width": 844,
-      "source_sha256": "c4fd78d4313e9bd4a52432e82001643657c39ed2b317d6a950e48529f3cab359",
-      "print_sha256": "028d3c714b950b2b122f6b9fce9e3117eb9267358de58c498b760fd774e86b49"
+      "source_sha256": "431a84e360f009fd99134877c7281c012f0cb2d83d7a22c60634603830a92655",
+      "print_sha256": "4e4c20a1c6d6265863b43ceef4750c2dcf97621a4762f4c717c88b0f69371dac",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "original-04-seed-and-root.svg": {
+      "labels": 0,
+      "marks": 14,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 298,
+      "source_sha256": "c1397545a7b8f6ed015cc8ce289a06b53e526799d517d164c477147305acb875",
+      "print_sha256": "c9a29aa4445931ed2cf73cf35a152407b961a27b10640fd0b618a7d2401f205f"
+    },
+    "original-07-pamphlet-and-thread.svg": {
+      "labels": 0,
+      "marks": 9,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 298,
+      "source_sha256": "aca87a52ba0cb81a6c2fff5909c151d076e5567a271244facfcad0b866292fbc",
+      "print_sha256": "d233fbc705edb7f39db54f166d166fbb356f0ee6d1c4cb60326ccc0d4c65f390"
+    },
+    "original-09-repair-tools.svg": {
+      "labels": 0,
+      "marks": 12,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 289.1,
+      "source_sha256": "bb29b16942030a47e726d3dbb754ae8dbe3c748ddfb193338f73a3cb37744596",
+      "print_sha256": "b2cd6bb5fe1bd76189b506dc2f76f51afdbe7a2907e7f6ae9fb21cf983d5f047"
+    },
+    "original-11-soil-profile.svg": {
+      "labels": 0,
+      "marks": 18,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 309,
+      "source_sha256": "2275cc3278dcc718c7a7a2b4f833b98b47b10c95a5b90003d470e5356b15e083",
+      "print_sha256": "48c19f48c34060b5cdf5287beafb0e010e87a3f288d5d47c18efa3c1b69d300b"
+    },
+    "v101-chart-ammonia-energy.svg": {
+      "source_sha256": "1c76d0e955d926851e8e27e37cf332738ea7c36d75d51bd81cb33244d2eb47d4",
+      "print_sha256": "db1df8587058e8c920cbac261a4b90fc4c37e024b4718ebe0c305f08ca2330a3",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-chart-data-centre-demand.svg": {
+      "source_sha256": "31067186e55140fc31d9a5106e592675e7123332773ca92e2769430a9f5cd811",
+      "print_sha256": "e20d70acdcd5d17d30326de2e539cb15401372a735c9947623500c7e3c5df62d",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-chart-forecast-shift.svg": {
+      "source_sha256": "f92083133d81252869467d0b84081a23242f5353b3854625e84c3c61440e4f49",
+      "print_sha256": "f17a1b2b01cb8db0a3eeead18469935260664611ea67a801d2b5283dfd9135c9",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-chart-income-food-access.svg": {
+      "source_sha256": "a35750d78a8b4deae7770d0f364e7c39f3c074bdd2da197ca4f94264f8364cbd",
+      "print_sha256": "8a39039eb3ee7f92fcce1f39cec0df834e6650c934aaa1df0bddfcf5114672a5",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-chart-land-values.svg": {
+      "source_sha256": "901e3530df715f7fae44f2901175e1e98006853a45d55de947db425c11d4cf46",
+      "print_sha256": "01b05854aa077ec44879e61bd3679943438c32bc08ce5eef6595236a9224a84a",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-chart-meal-response.svg": {
+      "source_sha256": "79648863c02519be44c599b087233ff2b094015f2c8b576be8197995492c30f0",
+      "print_sha256": "be07cd42e23cb52c03b4763ca937a7e3c71adb6da4598c6924f8a519e64c7817",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-chart-waste-pathways.svg": {
+      "source_sha256": "0429307b4752a784c06a2a461b635073fc50ffe53f3563a44123ef87dcbcfdbc",
+      "print_sha256": "c191734a13ec7bbd1882a149bbd8a597a839e9cd22d7fef55c3e6ad0b4b1243d",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-chart-weights-memory.svg": {
+      "source_sha256": "61969acc27f2e6a94fa72d7c65a702e4b053e240cc9a8f02d876ff554147c656",
+      "print_sha256": "2657bb2229747becb13bb2fa9ee96eee5581783b0335b0acfff488504d483a48",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-scene-food-delivery.svg": {
+      "source_sha256": "a1f520312ee5ab384b8f6e1d7bf093e78327f89e1052fbd39f2fbf20c4dc140e",
+      "print_sha256": "74b4eb3cd786b6a62fe86ed0eecc15fe01af4e2c2e5a54cdcd8a16ade94e982b",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-scene-living-soil.svg": {
+      "source_sha256": "d397231526eb9f4967a7660301ca71013709c083ce84588ec4c5bb8d164f9dd2",
+      "print_sha256": "17935101242fe9c5e0e3ccac30be276a50d85c5f558feb17c653d2eb6507ea73",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-scene-shared-workshop.svg": {
+      "source_sha256": "3aa16701bd12e1d8bc8d1a53a63e58f549ff049eb7e9a7b88ecb83e3629cc876",
+      "print_sha256": "c9053537b3f90445a676f4874eb6a4b407988125cec33042b512e3d0634485bc",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-visual-access-gate.svg": {
+      "source_sha256": "ee3976a62c414e32a169ed8ee4d143a5e3e9bf717ea741d2a386e8c7f66c0e35",
+      "print_sha256": "474f9f53dde0488f204103cdadd2db2cf20f138956dc7dc784209387c04746af",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-visual-attention-ribbon.svg": {
+      "source_sha256": "fcdbdce808fcba2c3cb4a6d7cf6310e0f3803b614d4217fd18cc566e1cc73460",
+      "print_sha256": "1e121f8a08e43e0fae53aa6e5aa5fb5818a6a1ef484c121dc5a0246b930c5f53",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-visual-continuity-calendar.svg": {
+      "source_sha256": "ba70e6c4b7611c260836c9483d3ff97efc7101500a1f1722d798d9277e93233b",
+      "print_sha256": "889d7cef01b72959d2b791d82132aaae5d8204411d08b17d6367740da8d16631",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-visual-local-copies.svg": {
+      "source_sha256": "f59fe6f14b961eb1b7d4bb3ff16dd89c691ff95a7adb815823a3bc598a986bb8",
+      "print_sha256": "49822397475ec5150ff7ea65da3e484b222fb51874eddced7dfad9d3e56fa125",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-visual-operating-stack.svg": {
+      "source_sha256": "37ed8cd8dd2f9b9a8a25165aaaa77fef160c1e9317ca21e08eda6dbc47dd7fe0",
+      "print_sha256": "3be7eeea868005873ef12c3c7208c774ea6082a2662d5f9d30be2bdde7b0052e",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
+    },
+    "v101-visual-shared-land.svg": {
+      "source_sha256": "54b2f62555b7a1e623c62233920849ed5fdb29d03fa114a0bcf033cc04d712c5",
+      "print_sha256": "d1951a179314c8cf3b703979fdfc2160b3c4626dfd877895d245272ba628f8f5",
+      "prepared": true,
+      "registry": "src/lib/data/book/visuals.json"
     }
   },
-  "count": 32
+  "count": 54
 }

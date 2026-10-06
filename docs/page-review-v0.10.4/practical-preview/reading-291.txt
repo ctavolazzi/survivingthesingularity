@@ -1,0 +1,41 @@
+SURVIVING THE SINGULARITY
+
+Give the machines a worthwhile assignment
+Imagine the priorities written above the
+workbench: feed people, restore damaged
+places, make safe homes, relieve suffering.
+Those are assignments worthy of a powerful
+technology. Theyʼre also a way to judge the
+uses of it that actually receive our money
+and attention.
+
+Food comes first in this book because
+nobody needs an elaborate explanation of                Tools with a history of use. AI-
+why dinner matters. The wider ambition                  adapted collage from
+includes land care, waste cleanup, housing,             Shixart1985, CC BY 2.0.
+and health. These projects can proceed
+together. Somebody who needs treatment or shelter shouldnʼt have to
+wait for the last food problem on Earth to be solved.
+The question for any proposed machine is what useful work it can do
+under the conditions where people need it. Compare the tools they
+can obtain and support. A machine impressive in a video may be
+hard to repair locally. A familiar tool may do the job well. Shared
+access can matter more than ownership.
+
+The proof isnʼt hypothetical
+Everything in this chapter already exists, and you can watch people
+build it this weekend. This is the part the doom crowd never accounts
+for: while the comment sections argue about whether the machine
+ends the world, a growing number of people are pointing the same
+technology at their own food and posting the plans.
+
+One of them, working under the handle SECTOR 07, wanted his home
+aquaponics loop to stop depending on a store. The system grows fish
+and vegetables together, but it still needed bought fish food, so the
+loop was never closed. His fix was to grow the food too: microalgae,
+cultivated the way labs do it, in a machine called a photobioreactor.
+Commercial units are priced for research budgets. He printed parts
+for his on a Bambu A1 and ran it on a Raspberry Pi and two Arduinos,
+
+
+286

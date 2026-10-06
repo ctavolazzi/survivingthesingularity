@@ -14,7 +14,7 @@
 
 **Cognitive firewall.** Treating your attention the way a security engineer treats a critical server: batch your inputs, prefer text, and control what crosses into your head. (Chapter 8)
 
-**Community land trust.** Usually a nonprofit, governed partly by the people who live on and around its land. It holds the land; the people using it own what they build, under a long ground lease. (Chapters 12 and 15)
+**Community land trust.** Usually a nonprofit, governed partly by the people who live on and around its land. In a common housing model, it holds the land while households own homes under long ground leases with resale restrictions. Other uses need their own agreements. (Chapters 12 and 15)
 
 **Create Over Consume.** The protocol of spending your attention and hours making things (writing, building, recording, teaching) instead of only absorbing what's fed to you. (Chapter 10)
 
@@ -22,9 +22,9 @@
 
 **CSA (community-supported agriculture).** An arrangement where households share in a farm's harvest, and its risk, directly. (Chapter 12)
 
-**Cyberdeck.** A personal computer you build instead of buy, from parts you understand, to run without a cloud, a subscription, or anyone's permission. (Chapter 5 and Appendix E)
+**Cyberdeck.** A personal computer assembled or adapted around functions you want to control, often using documented parts and offline software. The particular hardware and software determine how repairable and self-contained it is. (Chapter 5 and Appendix E)
 
-**DC-native.** Running a small solar system's loads directly on direct current, skipping the losses of converting to household AC and back. (Chapter 17)
+**DC-native.** Running suitable loads on direct current, avoiding an unnecessary conversion to household AC and back. Charge controllers, voltage converters, batteries, and wiring still have losses. (Chapter 17)
 
 **Deglobalization.** Shortening the supply lines we depend on for survival, so a shock on the other side of the planet doesn't reach all the way to your dinner. Not isolation, and not the same as "decentralization." (Chapter 9)
 
@@ -46,23 +46,23 @@
 
 **Local model.** An AI model running on hardware you own, with no company's server in the loop. "Local" says where it runs; it doesn't say the answers are right. (Chapter 11)
 
-**LoRa and Meshtastic.** A long-range, low-power radio standard, and open-source software that uses it to pass short text messages between devices with no cell carrier in the middle. (Chapters 8 and 17, Appendix E)
+**LoRa and Meshtastic.** LoRa is a long-range, low-power radio technology. Meshtastic is open-source software that uses compatible radios to pass short messages directly or through relay nodes, without a cell carrier. (Chapters 8 and 17, Appendix E)
 
 **Luddites.** English textile workers who broke machines in 1811 to 1816. They read what the machines would do to their pay correctly and chose a strategy that failed. (Chapter 7)
 
-**Mesh network.** A network where every node connects to several neighbors, so damage becomes a detour instead of an outage. (Chapters 8 and 17)
+**Mesh network.** A network whose nodes can relay messages through one another. An alternate working path can carry traffic around a failure; without one, part of the network can still go dark. (Chapters 8 and 17)
 
-**Model collapse.** What happens when AI models are trained on the output of earlier models: the rare, varied parts of human data wash out, generation after generation. (Chapter 10)
+**Model collapse.** A failure mode in repeated training on generated data: less common patterns can disappear and errors can compound. It isn't an inevitable result of every use of synthetic data. (Chapter 10)
 
 **Money optional.** The book's goal for the economy: markets and money stay for everything above survival, but nobody needs money to stay alive. Not abolished. Optional. (Introduction and Chapter 19)
 
 **Neighborhood factory.** Repair and small-scale production brought close to home: 3D printers, a plasma table, a welder, and people who know how to use them. (Chapter 9)
 
-**Network surplus.** Everything the households in a local network produce, minus everything they need. When it's positive, the network can cover a household that has a bad month. (Chapter 12)
+**Network surplus.** What a local network has available beyond its own commitments, counted resource by resource: food, usable power, money, or time. A surplus helps another household only if it matches a need and can reach them; extra electricity isn't automatically dinner. (Chapter 12)
 
-**Nine stages.** This book's map of the Singularity, from Stage 1, the Cash Grab, to Stage 9, the Apex Intelligence. Stages 1 to 5 are where the choices are still ours. (Chapters 2 to 4, Appendix C)
+**Nine stages.** This book's map of the Singularity, from Stage 1, the Cash Grab, to Stage 9, the Apex Intelligence. Stages 1 to 5 organize its near-term social choices; the whole sequence remains a proposed map. (Chapters 2 to 4, Appendix C)
 
-**Open weights.** An AI model whose trained parameters are published, so anyone can download and run it. Once released, they can't be recalled. (Chapter 2)
+**Open weights.** A model whose trained parameters are available to download, subject to its license and access terms. Downloaded copies can run locally on suitable hardware, but availability alone doesn't grant unrestricted rights or provide the training data. (Chapter 2)
 
 **Photobioreactor.** A vessel that grows algae under controlled light and conditions. The builder in Chapter 17 printed one at home. (Chapter 17)
 
@@ -88,8 +88,8 @@
 
 **Surveillance capitalism.** Shoshana Zuboff's name for the business of harvesting people's attention and personal data and selling predictions about them. (Introduction)
 
-**Transformer.** The neural-network design introduced by Google researchers in 2017, in "Attention Is All You Need," that lets a model process every word in relation to every other at once. The basis of today's language models. (Chapter 1)
+**Transformer.** A neural-network architecture introduced in the 2017 paper "Attention Is All You Need." Attention relates positions in a sequence and permits more parallel computation during training than earlier recurrent designs. Autoregressive language models still generate their response a token at a time. (Chapter 1)
 
-**Universal Basic Services.** Providing needs like food, shelter, transport, care, and information to everyone, free at the point of use and paid for together, instead of handing out cash for people to buy them. (Chapter 19)
+**Universal Basic Services.** Providing needs like food, shelter, transport, care, and information through services free at the point of use and paid for together. This differs from a cash payment and can coexist with income support. (Chapter 19)
 
 **USI (universal superintelligence).** Stage 8's speculation: intelligence at the scale of the cosmos. (Chapter 4)

@@ -93,3 +93,6 @@ promo/**/.cvcache/
 publication/output/
 publication/package/pdfs/
 __pycache__/
+
+# Versioned editable handoffs are generated from reviewed source.
+publication/package-v*/

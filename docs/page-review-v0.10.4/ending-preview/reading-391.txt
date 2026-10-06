@@ -1,0 +1,26 @@
+Build the deck to keep yourself free, not to reach into anyone elseʼs life.
+The tool doesnʼt decide that for you. You do.
+The practice
+In 1968 Stewart Brand put three words on the cover of the  Whole Earth
+Catalog: Access to Tools (P-21). The cyberdeck is that catalog collapsed
+into one object: not a computer youʼre allowed to use, but a computer you
+understand, can repair, and canʼt be locked out of.
+Test the Communicator this month. Pair a supported node with your
+phone and exchange a message with another node using compatible
+settings. Borrow equipment for the trial if you can. Record where the
+link works and where it fails.
+Load a Librarian. Put Kiwix and one relevant offline collection onto a
+supported device. Record its edition date, disconnect the network, and
+confirm you can search it. A stored reference is useful only if you can
+retrieve it when needed.
+Try one model offline, if your device supports it. Disable Wi-Fi and
+cellular data and unplug wired networking. Ask a question you can
+check against the saved library. A returned answer proves the model
+ran; a checked answer tells you whether it helped.
+Start with one weekend and the device you have. Keep the capability that
+worked, then build the next one.
+1. 
+2. 
+3. 
+SURVIVING THE SINGULARITY
+386

@@ -1,0 +1,50 @@
+[
+  {
+    "file": "ch12-csa-network.svg",
+    "generator": "docs/v0.10.2/figures_core.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      560
+    ],
+    "provenance": "Original native SVG revision; semantics aligned with the reviewed canonical chapter and its bibliography. No new numerical dataset.",
+    "screen_sha256": "4c1a7206003e0defb43c6bc67158ed2dfc95ba1d9f366efc60b7eb3af18cab71",
+    "print_sha256": "cc655f7b1b167ffb9ffd9f12c690d8b60d10c11b1d9468aba031fcbf3798df85"
+  },
+  {
+    "file": "ch14-logistic-shockwave.svg",
+    "generator": "docs/v0.10.2/figures_core.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      552
+    ],
+    "provenance": "Original native SVG revision; semantics aligned with the reviewed canonical chapter and its bibliography. No new numerical dataset.",
+    "screen_sha256": "41477ea9a22ad6b44742713cd66a767dcd31cde0bccac7ef2ee27432ad6d241a",
+    "print_sha256": "2e12005987649d7a8921057bd4bf450fee4e9f7c2def655a6afe4ee0874d4e02"
+  },
+  {
+    "file": "ch15-soil-food-web.svg",
+    "generator": "docs/v0.10.2/figures_core.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      598
+    ],
+    "provenance": "Original native SVG revision; semantics aligned with the reviewed canonical chapter and its bibliography. No new numerical dataset.",
+    "screen_sha256": "d0d4f8e7e153122e6c8ba513e1eb216d1ad6bf2c0ecdf9b83aef6ce57dcb7f52",
+    "print_sha256": "5df26993caa8b39275816ae6f4991324dc5a8543f468c1866fc4993409944866"
+  },
+  {
+    "file": "ch17-algae-loop.svg",
+    "generator": "docs/v0.10.2/figures_core.py",
+    "kind": "conceptual",
+    "pixels": [
+      480,
+      618
+    ],
+    "provenance": "Original native SVG revision; semantics aligned with the reviewed canonical chapter and its bibliography. No new numerical dataset.",
+    "screen_sha256": "e3090f6eeaff9fb0bbc86863f32e36d7aaef5f9a9a372540b8698a6ff5bb9392",
+    "print_sha256": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78"
+  }
+]

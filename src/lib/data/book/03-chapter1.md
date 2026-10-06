@@ -44,11 +44,11 @@ At 1:20 a.m. the machine threw the temperature warning, throttled itself to prot
 
 Elijah sat in the sudden quiet with sweat cooling on the back of his neck and understood something he would spend a whole later chapter of this book trying to say properly.
 
-The thing hadn't hit a ceiling of *intelligence*. It had hit a ceiling of *heat*. The curve was still falling when the hardware quit. The machine that had dissolved three careers at the Bear Flag wasn't magic and it wasn't bounded by cleverness. It was bounded by *watts*, by *cooling*, by the same brutal physics that decided whether his grandmother's crop lived or died.
+The limit he'd actually found was *heat*. The loss curve was still falling when the hardware quit. He hadn't found out what the model could learn next. He'd found out what his room couldn't cool. The machine that had dissolved three careers at the Bear Flag needed *watts*, needed *cooling*, needed the same brutal physics that decided whether his grandmother's crop lived or died.
 
-He had wanted proof it was just software. He'd gotten it. And the proof was worse than the fear, because *just software* running on *enough energy* was precisely the problem. There was no clever limit coming to save anyone. There was only the power bill, and the people who could afford it.
+He had wanted proof it was just software. He'd gotten a dead screen and a room too hot to sleep in. He couldn't see a clever limit coming to save anyone. What he could see was the power bill, and the people who could afford it.
 
-He didn't tell Devendra any of this. Devendra wasn't wrong about the small mechanics: it *was* autocomplete, it *did* make people faster. He was wrong about the only thing that mattered, which was where the curve went when you stopped pretending it would politely stop. Elijah had watched it not stop. He'd had to unplug it to make it stop.
+He didn't tell Devendra any of this. He kept seeing the loss curve where it had broken off. The machine had shut itself down. The question that had kept him feeding it hadn't stopped.
 
 He left the tower off for a week. Then he opened the notebook where he'd written MADRONE ≠ DRONE, and under it, he started keeping the arithmetic.
 
@@ -114,9 +114,9 @@ Here's how I first pictured it, years before I had the words. Imagine every pers
 
 Three things follow.
 
-**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.
+**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the old price of trained work no longer holds. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.
 
-**It's testable this quarter.** You don't need anyone's date, including mine. Has the market price of the cognitive work you sell fallen in the last eighteen months? Has the institution that pays for it started behaving strangely about it, restructuring, retitling, quietly not backfilling? That's the measurement, and you can run it on yourself before the end of the week.
+**It's testable this quarter.** You don't need anyone's date, including mine. Has the market price of the cognitive work you sell fallen in the last eighteen months? Has the institution that pays for it started behaving strangely about it, restructuring, retitling, quietly not backfilling? Those are signals you can investigate before the end of the week. A pay cut or hiring freeze alone doesn't identify the cause. Find out which tasks actually changed, what replaced them, and whether the work still gets done.
 
 **It names the actual emergency, which isn't the machine.** It's the gap. The old contract, sell your hours and eat, is failing on a schedule set by hardware, and the new one is being drafted by nobody in particular. Everything in Part II is about that gap. Everything in Part III is about what you build inside it while it's open. And the first clause of the new contract is the simplest one to write: losing your job doesn't cost you dinner.
 
@@ -138,13 +138,13 @@ Don't let an answer to one stand in for the other three. Most of this book lives
 
 ## What the 2017 paper actually did
 
-The modern run started in 2017, with a Google paper titled "Attention Is All You Need." [Vaswani et al., Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762) Before it, the best language systems read the way you do, one word after another, which meant they couldn't use modern hardware to its full width. The Transformer threw out that sequence and let every word attend to every other word at once, so the whole job could run in parallel across a room full of chips.
+The modern run started in 2017, with a Google paper titled "Attention Is All You Need." Many leading language systems used a recurrent chain: each step depended on the one before it. The Transformer replaced that chain with attention, allowing much more of training to run in parallel. It didn't abolish sequence. Positions still mattered, and its decoder generated an answer one token at a time, using the output already produced. Parallel training and sequential generation are different jobs. [Vaswani et al., Attention Is All You Need (2017), sections 1 and 3](https://arxiv.org/abs/1706.03762)
 
-The foundational model was small by today's standards: sixty-five million parameters in its base configuration, two hundred thirteen million in the big one. The big one beat every system that came before it, including ensembles stacked specifically to win these benchmarks, and it did it on a fraction of the training compute.
+The foundational model was small by today's standards: sixty-five million parameters in its base configuration, two hundred thirteen million in the big one. On the two translation benchmarks below, the paper reported that the big one beat the earlier systems it compared, including ensembles, at substantially lower training cost than those ensembles.
 
 | Evaluation Metric / Task | Best Prior Result, Ensembles Included | Transformer, "Big" Configuration |
 | :-: | :-: | :-: |
-| WMT 2014 English-to-German (BLEU) | 26.4 (ConvS2S ensemble) | 28.4, a gain of more than 2 BLEU |
+| WMT 2014 English-to-German (BLEU) | 26.36 (ConvS2S ensemble) | 28.4, a gain of more than 2 BLEU |
 | WMT 2014 English-to-French (BLEU) | 41.3 (ConvS2S ensemble) | 41.8, a new single-model record |
 | Training compute, English-to-German | 1.8 x 10^20 FLOPs (GNMT ensemble) | 2.3 x 10^19 FLOPs: 3.5 days on eight P100 GPUs |
 
@@ -160,7 +160,7 @@ My personal expected date for AGI is U.S. Thanksgiving 2027, November 25. Why th
 
 That's the joke, and it's also the boundary around the claim. This is my forecast, not a mathematical deadline. I could be wrong about the date, the capability, or both. Evidence that systems stay brittle on unfamiliar tasks counts against me. Evidence of reliable breadth counts for me. Neither one, by itself, gets anybody fed.
 
-I'm not alone out on this limb, and I'm not in the middle of the pack either. In 2024 the former OpenAI researcher Leopold Aschenbrenner published "Situational Awareness," arguing that stacked gains in compute and algorithms, roughly half an order of magnitude a year each, could carry these systems to automated AI research around 2027. That's one insider's argument, not a measurement. [Aschenbrenner, Situational Awareness (2024)](https://situational-awareness.ai/) The researchers themselves have been moving too. The largest survey of AI researchers, run by Katja Grace and colleagues, asked the same questions a year apart:
+I'm not alone out on this limb, and I'm not in the middle of the pack either. In 2024 the former OpenAI researcher Leopold Aschenbrenner published "Situational Awareness," arguing that stacked gains in compute and algorithms, roughly half an order of magnitude a year each, could carry these systems to automated AI research around 2027. That's one insider's argument, not a measurement. [Aschenbrenner, Situational Awareness (2024)](https://situational-awareness.ai/) The researchers themselves have been moving too. Katja Grace and colleagues compared similar questions in their 2022 and 2023 surveys of AI researchers. The later survey was much larger and drew from more publication venues, so these are changing samples, not simply the same people revising their answers:
 
 | AI Milestone | 2022 Aggregate Forecast | 2023 Aggregate Forecast | Net Shift |
 | :-: | :-: | :-: | :-: |
@@ -169,7 +169,11 @@ I'm not alone out on this limb, and I'm not in the middle of the pack either. In
 
 *Table 3: Shifts in expert forecasts on AI timelines (Grace et al., 2024).*
 
-The same survey put a 10 percent probability on high-level machine intelligence arriving as early as 2027. And on the darkest question it asked, between 37.8 and 51.4 percent of respondents, depending on how it was framed, gave at least a 10 percent chance to outcomes as bad as human extinction. These aren't doomers on a forum. These are the people building the systems, surveyed by the thousands, and the median moved thirteen years in twelve months. [Grace et al., Thousands of AI Authors on the Future of AI (2024)](https://arxiv.org/abs/2401.02843)
+![Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates.](/book-images/v101-chart-forecast-shift.svg)
+
+*Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. [Grace et al., Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843v3).*
+
+The same survey put a 10 percent probability on high-level machine intelligence arriving as early as 2027. And on the darkest question it asked, between 37.8 and 51.4 percent of respondents, depending on how it was framed, gave at least a 10 percent chance to outcomes as bad as human extinction. These aren't doomers on a forum. These are the people building the systems, surveyed by the thousands, and the aggregate 50 percent date moved thirteen years between surveys. [Grace et al., Thousands of AI Authors on the Future of AI (2024)](https://arxiv.org/abs/2401.02843)
 
 So write my date down and hold me to it. Thanksgiving can come and go without anyone getting permission to pretend a missed forecast was secretly a different forecast all along. And here's the part that matters: the food-first proposal survives a late arrival. People can improve food access with tools and organizations that already exist while the capability develops. We don't need a machine that's good at everything before we ask it to help with something useful.
 

@@ -1,10 +1,6 @@
 # APPENDIX D: THE PRECEDENT LEDGER
 
-*Every chapter of this book closes with a precedent: a documented case of people meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-24. The dates run from the first farms to the week the web was called a letdown. Same wave, different water. None of them proves a date for AGI or a law of progress. Each one is a question to bring to your own situation.*
-
-![All twenty-four precedents on one page: nineteen shown on a timeline from 1750 to today, as dots for single dates and bars for spans, and five from deep history listed with their dates, from the first farms around 9500 BC to the Great Demotion of 1543](/book-images/appd-precedent-timeline.svg)
-
-*The Ledger on one page. Dashed bars are approximate spans drawn from each chapter's documents.*
+*The book's chapters carry precedents, usually as their closing move: a documented case of people meeting a technological wave before this one. This is the full index. The serial numbers run in reading order, P-01 through P-24. The dates run from the first farms to the week the web was called a letdown. Same wave, different water. None of them proves a date for AGI or a law of progress. Each one is a question to bring to your own situation.*
 
 ## How to run the Ledger
 
@@ -15,7 +11,7 @@ A ledger you read once is trivia. A ledger you operate is an instrument. The dif
 3. **Name your seat.** Every precedent has three seats: the incumbent defending the beachfront, the panicker demanding the wave stop, and the builder working out new terms. Say out loud which seat you're in right now. The rules exist to move you to the third.
 4. **Name the difference, too.** For every entry, write down one way your situation is like it and one way it isn't. Who benefited, who carried the cost, and what would count against the lesson? A precedent is a prompt for investigation, not permission to ignore a present objection.
 5. **Run the rule within twenty-four hours.** Find one real decision on your desk this week and pass it through the rule. Small is fine.
-6. **Do the practices as written.** Each entry closes with three actions sized for a week. If you only have time for one, do the one that makes you defensive.
+6. **Start a practice this week.** Each entry closes with three actions. Some finish in an evening; others need a month, a season, or repeated work. If you only have time for one, do the one that makes you defensive.
 7. **Teach one entry to one person.** Pick the precedent your friend, your kid, or your coworker is living inside, and tell it to them as a story, the way Marta tells Gary and Sal. Panic spreads person to person. So does this.
 
 ## The Ledger
@@ -47,6 +43,10 @@ A ledger you read once is trivia. A ledger you operate is an instrument. The dif
 | P-23 | The Day Care Stopped Costing Money | 1942 to 1948 | Chapter 19 |
 | P-24 | What the Forecast Missed | 1993 to 1995 | Conclusion |
 
+![Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.](/book-images/appd-precedent-timeline.svg)
+
+*All twenty-four precedents. Square-ended dashed bars mark approximate periods; exact dates and complete titles are in Appendix D.*
+
 ## The rules, in one breath each
 
 - **P-01.** "Kids these days" usually means power just moved toward people who don't need permission. Find out what they know, then test the specific worry.
@@ -71,8 +71,8 @@ A ledger you read once is trivia. A ledger you operate is an instrument. The dif
 - **P-20.** Make it clear enough to discuss, and own enough of your press that nobody else gets the last edit.
 - **P-21.** Build a toolset you understand, can repair, and can't be locked out of.
 - **P-22.** A premortem that works looks like paranoia that wasn't needed. Judge the reasoning, not the silence.
-- **P-23.** When someone says a need can't be made free, ask what changed the day it became free somewhere else. Usually nothing but the decision.
-- **P-24.** Today's version of a compounding technology is the worst it will ever be. Let results change the plan, including the optimistic one.
+- **P-23.** When someone says we can't afford to make a need free, ask how it became free somewhere else: who decided, who paid, and who kept the service running.
+- **P-24.** A technology's present limits don't settle its future. Let results change the plan, including the optimistic one.
 
 ## The symptom index
 

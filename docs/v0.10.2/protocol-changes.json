@@ -1,0 +1,22 @@
+[
+  {
+    "before": "**Chapter 0 is exempt.** It is the book-scale Zone 2 \u2014 a pure narrative cold\n  open with no briefing bullets and no Foundations. It is the one place the story\n  runs unbroken.",
+    "after": "**Chapter 0 is exempt.** It is the book-scale Zone 2, a narrative cold\n  open with no briefing bullets and no Foundations. Its narrative runs unbroken\n  before the following P-02 precedent."
+  },
+  {
+    "before": "automated out of two jobs in three years.",
+    "after": "automated out of two jobs in four years (2019 and 2023)."
+  },
+  {
+    "before": "Burns a weekend fine-tuning a toy model",
+    "after": "Burns Monday night fine-tuning a toy model"
+  },
+  {
+    "before": "| First summer | Ch. 5 | Electricity bill and grandmother's stove |",
+    "after": "| Monday after the spring LADDER weekend | Ch. 5 | Electricity bill and grandmother's stove |"
+  },
+  {
+    "before": "Exchange completes both ways: her intuition becomes legible in his dashboards \u2014\n  the tea-inoculated beds provably hold water longer.",
+    "after": "Exchange completes both ways: her observations become legible in his dashboards.\n  The fork, cover-crop and mulch trial remains observational; unequal irrigation\n  prevents attributing the difference to any one treatment."
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "dpi": 140,
+  "physical_pages": [
+    7,
+    73,
+    90,
+    163,
+    197,
+    278
+  ],
+  "source_color_sha256": "8c47246769808fffdb1a47bf0e6c038624aea94039911d6d34721f2a3690c946",
+  "prepared_color_sha256": "f71696f64094cb003a89c0db4b7352b56b1f824530ca3ceb729944c22d7865b8",
+  "source_print_sha256": "81a2bde3407457df9ff157ce1380a2e89cb0899b6d5dd641accd9062752709b9",
+  "render_command": "gs -q -dBATCH -dNOPAUSE -sDEVICE=png16m -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -r140 -sPageList=7,73,90,163,197,278 -sOutputFile=<color-or-print>-%03d.png <PDF>",
+  "samples": [
+    {
+      "edition": "color",
+      "figure": "atlas",
+      "interior_page": 7,
+      "folio": 3,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/color-001.png",
+      "sha256": "785b5b8eae9be85f9218e7a2f1923484b47f6d7f0799270aa4d5be683696fc45"
+    },
+    {
+      "edition": "print",
+      "figure": "atlas",
+      "interior_page": 7,
+      "folio": 3,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/print-001.png",
+      "sha256": "d12abdd52304835da8c04c6c814cf5ad2a0da036aa983ffc7031a823cff37f75"
+    },
+    {
+      "edition": "color",
+      "figure": "rocket",
+      "interior_page": 73,
+      "folio": 69,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/color-002.png",
+      "sha256": "367a6a24481634279fa63ef552f91ba64688ad4fc04d0032c43b46ccc885abb5"
+    },
+    {
+      "edition": "print",
+      "figure": "rocket",
+      "interior_page": 73,
+      "folio": 69,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/print-002.png",
+      "sha256": "320005797e41981e01384070948a152efff9e7ae070d5c1da5f6379853529f08"
+    },
+    {
+      "edition": "color",
+      "figure": "sun",
+      "interior_page": 90,
+      "folio": 86,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/color-003.png",
+      "sha256": "431a9cbd8ab588fd786636f41a1b60b14117e3f0f1b885343c789897073b3690"
+    },
+    {
+      "edition": "print",
+      "figure": "sun",
+      "interior_page": 90,
+      "folio": 86,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/print-003.png",
+      "sha256": "cd61e071389c1e80286108075d42beb8f24a28f94215b30ddae8654338667abc"
+    },
+    {
+      "edition": "color",
+      "figure": "printer",
+      "interior_page": 163,
+      "folio": 159,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/color-004.png",
+      "sha256": "c95f8d84aa156fd57a86e28a1d80e35d59f829e9a71aaef42bba89213a7ac908"
+    },
+    {
+      "edition": "print",
+      "figure": "printer",
+      "interior_page": 163,
+      "folio": 159,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/print-004.png",
+      "sha256": "f6cb1c30fc200010ca24344988f4e7070568cc354c94acff0b4df9111d7e98c7"
+    },
+    {
+      "edition": "color",
+      "figure": "spot",
+      "interior_page": 197,
+      "folio": 193,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/color-005.png",
+      "sha256": "a880db9a66773798d1311d9445183da32761165e6ffbc97389154cca2978e595"
+    },
+    {
+      "edition": "print",
+      "figure": "spot",
+      "interior_page": 197,
+      "folio": 193,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/print-005.png",
+      "sha256": "da252bce063516e527f4460d5221035a351d8e6507aad36986091173ea304568"
+    },
+    {
+      "edition": "color",
+      "figure": "tools",
+      "interior_page": 278,
+      "folio": 274,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/color-006.png",
+      "sha256": "3835829071d95de4f003b1d4842cc0481919c939f3a7f03b38ccf3b353f39f6e"
+    },
+    {
+      "edition": "print",
+      "figure": "tools",
+      "interior_page": 278,
+      "folio": 274,
+      "path": "docs/v0.10.1/pdf-proof/cutouts-final/print-006.png",
+      "sha256": "30951b1957dd551d0bc80c373ac9365add6c99f8c520590dae83672d6e879617"
+    }
+  ],
+  "visual_review": "All twelve final color/grayscale cutout pages inspected. Clean transparent edges, complete credits, readable adjacent prose, no caption split, no gutter intrusion. Tools and credit now together on page278.",
+  "limits": "Digital raster review of these six cutout pages; no physical print acceptance."
+}

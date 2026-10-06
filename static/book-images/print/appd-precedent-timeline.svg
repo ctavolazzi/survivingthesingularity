@@ -1,98 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 14 875.9 851" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" role="img" aria-label="The Ledger On One Page">
-
-<text x="40" y="46" font-size="22" letter-spacing="2.32" fill="#0f172a">THE LEDGER ON ONE PAGE</text>
-<line x1="40" y1="60" x2="308" y2="60" stroke="#d97706" stroke-width="2"/>
-<text x="40" y="82" font-size="14.37" fill="#334155">Twenty-four times people watched a new capability arrive, or a new rule, and reprice their world.</text>
-<text x="40" y="120" font-size="17.5" font-weight="600" fill="#0f172a">1750 TO TODAY</text>
-<line x1="380.0" y1="136" x2="380.0" y2="581" stroke="#cbd5e1" stroke-width="1"/>
-<text x="380.0" y="130" font-size="13.8" fill="#334155" text-anchor="middle">1750</text>
-<line x1="465.5" y1="136" x2="465.5" y2="581" stroke="#cbd5e1" stroke-width="1"/>
-<text x="465.5" y="130" font-size="13.8" fill="#334155" text-anchor="middle">1800</text>
-<line x1="550.9" y1="136" x2="550.9" y2="581" stroke="#cbd5e1" stroke-width="1"/>
-<text x="550.9" y="130" font-size="13.8" fill="#334155" text-anchor="middle">1850</text>
-<line x1="636.4" y1="136" x2="636.4" y2="581" stroke="#cbd5e1" stroke-width="1"/>
-<text x="636.4" y="130" font-size="13.8" fill="#334155" text-anchor="middle">1900</text>
-<line x1="721.8" y1="136" x2="721.8" y2="581" stroke="#cbd5e1" stroke-width="1"/>
-<text x="721.8" y="130" font-size="13.8" fill="#334155" text-anchor="middle">1950</text>
-<line x1="807.3" y1="136" x2="807.3" y2="581" stroke="#cbd5e1" stroke-width="1"/>
-<text x="807.3" y="130" font-size="13.2" fill="#334155" text-anchor="middle">2000</text>
-<line x1="850.0" y1="136" x2="850.0" y2="581" stroke="#cbd5e1" stroke-width="1"/>
-<text x="850.0" y="130" font-size="13.2" fill="#334155" text-anchor="middle">2025</text>
-<text x="40" y="160" font-size="13.8" fill="#334155">P-01</text>
-<text x="86" y="160" font-size="13.8" fill="#0f172a">The Reading Rage</text>
-<line x1="414.2" y1="156" x2="516.7" y2="156" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-dasharray="5 4"/>
-<text x="40" y="183" font-size="13.8" fill="#334155">P-20</text>
-<text x="86" y="183" font-size="13.8" fill="#0f172a">An Argument in Circulation</text>
-<circle cx="424.4" cy="179" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="206" font-size="13.8" fill="#334155">P-07</text>
-<text x="86" y="206" font-size="13.8" fill="#0f172a">The Horse and the Ledger</text>
-<line x1="441.5" y1="202" x2="720.1" y2="202" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-dasharray="5 4"/>
-<text x="40" y="229" font-size="13.8" fill="#334155">P-09</text>
-<text x="86" y="229" font-size="13.8" fill="#0f172a">The Frame-Breakers</text>
-<line x1="484.3" y1="225" x2="492.8" y2="225" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
-<text x="40" y="252" font-size="13.8" fill="#334155">P-15</text>
-<text x="86" y="252" font-size="13.8" fill="#0f172a">One Hundred Sixty Acres</text>
-<circle cx="571.4" cy="248" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="275" font-size="13.8" fill="#334155">P-04</text>
-<text x="86" y="275" font-size="13.8" fill="#0f172a">The Red Flag</text>
-<circle cx="576.5" cy="271" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="298" font-size="13.8" fill="#334155">P-02</text>
-<text x="86" y="298" font-size="13.8" fill="#0f172a">The Voice at the Fair</text>
-<circle cx="595.3" cy="294" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="321" font-size="13.8" fill="#334155">P-03</text>
-<text x="86" y="321" font-size="13.8" fill="#0f172a">One Million Years, Give or Take</text>
-<circle cx="641.5" cy="317" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="344" font-size="13.8" fill="#334155">P-16</text>
-<text x="86" y="344" font-size="13.8" fill="#0f172a">The House That Came by Mail</text>
-<line x1="650.0" y1="340" x2="704.7" y2="340" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-dasharray="5 4"/>
-<text x="40" y="367" font-size="13.8" fill="#334155">P-11</text>
-<text x="86" y="367" font-size="13.8" fill="#0f172a">Torches of Freedom</text>
-<circle cx="685.9" cy="363" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="390" font-size="13.8" fill="#334155">P-10</text>
-<text x="86" y="390" font-size="13.8" fill="#0f172a">The Robot in the Orchestra Pit</text>
-<line x1="685.9" y1="386" x2="718.4" y2="386" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
-<text x="40" y="413" font-size="13.8" fill="#334155">P-23</text>
-<text x="86" y="413" font-size="13.8" fill="#0f172a">The Day Care Stopped Costing Money</text>
-<line x1="708.1" y1="409" x2="718.4" y2="409" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
-<text x="40" y="436" font-size="13.8" fill="#334155">P-19</text>
-<text x="86" y="436" font-size="13.8" fill="#0f172a">Organizing the Harvest</text>
-<circle cx="709.9" cy="432" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="459" font-size="13.8" fill="#334155">P-14</text>
-<text x="86" y="459" font-size="13.8" fill="#0f172a">Quartz and the Assembly Line</text>
-<line x1="742.3" y1="455" x2="778.2" y2="455" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
-<text x="40" y="482" font-size="13.8" fill="#334155">P-21</text>
-<text x="86" y="482" font-size="13.8" fill="#0f172a">Access to Tools</text>
-<circle cx="752.6" cy="478" r="5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
-<text x="40" y="505" font-size="13.8" fill="#334155">P-17</text>
-<text x="86" y="505" font-size="13.8" fill="#0f172a">The Graveyard of the Unconvinced</text>
-<line x1="764.5" y1="501" x2="829.5" y2="501" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
-<text x="40" y="528" font-size="13.8" fill="#334155">P-24</text>
-<text x="86" y="528" font-size="13.8" fill="#0f172a">What the Forecast Missed</text>
-<line x1="795.3" y1="524" x2="798.7" y2="524" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
-<text x="40" y="551" font-size="13.8" fill="#334155">P-22</text>
-<text x="86" y="551" font-size="13.8" fill="#0f172a">The Apocalypse That Ran On Time</text>
-<line x1="805.6" y1="547" x2="814.1" y2="547" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
-<text x="40" y="574" font-size="13.8" fill="#334155">P-18</text>
-<text x="86" y="574" font-size="13.8" fill="#0f172a">The Mirror Twin</text>
-<line x1="807.3" y1="570" x2="822.7" y2="570" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-dasharray="5 4"/>
-<line x1="380" y1="607" x2="410" y2="607" stroke="#d97706" stroke-width="6" stroke-linecap="round" stroke-dasharray="5 4"/>
-<text x="420" y="611" font-size="13.75" fill="#334155">dashed: an approximate span, from the chapter's documents</text>
-<text x="40" y="657" font-size="17.5" font-weight="600" fill="#0f172a">DEEP HISTORY</text>
-<text x="40" y="681" font-size="13.8" fill="#334155">P-08</text>
-<text x="86" y="681" font-size="13.8" fill="#0f172a">The Grain Trap</text>
-<text x="380" y="681" font-size="14.37" fill="#b45309">c. 9500 to 6000 BC</text>
-<text x="40" y="704" font-size="13.8" fill="#334155">P-12</text>
-<text x="86" y="704" font-size="13.8" fill="#0f172a">The Networks Behind the Bronze</text>
-<text x="380" y="704" font-size="14.37" fill="#b45309">14th to 12th c. BC</text>
-<text x="40" y="727" font-size="13.8" fill="#334155">P-05</text>
-<text x="86" y="727" font-size="13.8" fill="#0f172a">The Court and the Fleet</text>
-<text x="380" y="727" font-size="14.37" fill="#b45309">1405 to 1433</text>
-<text x="40" y="750" font-size="13.8" fill="#334155">P-13</text>
-<text x="86" y="750" font-size="13.8" fill="#0f172a">The Abbot and the Press</text>
-<text x="380" y="750" font-size="14.37" fill="#b45309">1492 to 1494</text>
-<text x="40" y="773" font-size="13.8" fill="#334155">P-06</text>
-<text x="86" y="773" font-size="13.8" fill="#0f172a">The Great Demotion</text>
-<text x="380" y="773" font-size="14.37" fill="#b45309">1543</text>
-<text x="40" y="850" font-size="13.2" fill="#334155">Dates from Appendix D; sources for every entry in Appendix B.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 650" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">Twenty-four precedents</title>
+<desc id="desc">Compact index of all twenty-four precedents. Nineteen appear against an axis from 1700 to 2025; five earlier cases have written dates. Dots identify one date, solid bars dated spans, and visibly dashed square-ended bars approximate periods. Full titles and dates remain in Appendix D.</desc>
+<rect width="480" height="650" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">Twenty-four precedents</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<path d="M248.0 88L248.0 450" fill="none" stroke="#a2afa6" stroke-width="0.7"/>
+<text x="248.0" y="76" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">1700</text>
+<path d="M312.3076923076923 88L312.3076923076923 450" fill="none" stroke="#a2afa6" stroke-width="0.7"/>
+<text x="312.3076923076923" y="76" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">1800</text>
+<path d="M376.61538461538464 88L376.61538461538464 450" fill="none" stroke="#a2afa6" stroke-width="0.7"/>
+<text x="376.61538461538464" y="76" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">1900</text>
+<path d="M457.0 88L457.0 450" fill="none" stroke="#a2afa6" stroke-width="0.7"/>
+<text x="457.0" y="76" font-size="14" fill="#4b5b52" text-anchor="end" font-weight="400">2025</text>
+<text x="20" y="105" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-01 Reading rage</text>
+<path d="M293.0153846153846 100L331.6 100" fill="none" stroke="#9a4f13" stroke-width="3" stroke-dasharray="3 4"/>
+<text x="20" y="124" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-20 Paine’s pamphlet</text>
+<circle cx="296.87384615384616" cy="119" r="2.8" fill="#9a4f13" stroke="#9a4f13" stroke-width="1"/>
+<text x="20" y="143" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-07 Horse + ledger</text>
+<path d="M303.3046153846154 138L408.12615384615384 138" fill="none" stroke="#9a4f13" stroke-width="3" stroke-dasharray="3 4"/>
+<text x="20" y="162" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-09 Frame-breakers</text>
+<path d="M319.38153846153847 157L322.5969230769231 157" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="181" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-15 Homesteading</text>
+<circle cx="352.17846153846153" cy="176" r="2.8" fill="#9a4f13" stroke="#9a4f13" stroke-width="1"/>
+<text x="20" y="200" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-04 Red Flag</text>
+<circle cx="354.10769230769233" cy="195" r="2.8" fill="#9a4f13" stroke="#9a4f13" stroke-width="1"/>
+<text x="20" y="219" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-02 Bell at the fair</text>
+<circle cx="361.1815384615385" cy="214" r="2.8" fill="#9a4f13" stroke="#9a4f13" stroke-width="1"/>
+<text x="20" y="238" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-03 Flight forecast</text>
+<circle cx="378.5446153846154" cy="233" r="2.8" fill="#9a4f13" stroke="#9a4f13" stroke-width="1"/>
+<text x="20" y="257" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-16 Mail-order homes</text>
+<path d="M381.76 252L402.33846153846156 252" fill="none" stroke="#9a4f13" stroke-width="3" stroke-dasharray="3 4"/>
+<text x="20" y="276" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-11 Torches</text>
+<circle cx="395.26461538461535" cy="271" r="2.8" fill="#9a4f13" stroke="#9a4f13" stroke-width="1"/>
+<text x="20" y="295" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-10 Recorded music</text>
+<path d="M395.26461538461535 290L407.48307692307696 290" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="314" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-23 NHS</text>
+<path d="M403.62461538461537 309L407.48307692307696 309" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="333" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-19 Victory gardens</text>
+<path d="M404.2676923076923 328L404.91076923076923 328" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="352" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-14 Quartz watches</text>
+<path d="M416.4861538461538 347L429.9907692307692 347" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="371" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-21 Access to tools</text>
+<circle cx="420.3446153846154" cy="366" r="2.8" fill="#9a4f13" stroke="#9a4f13" stroke-width="1"/>
+<text x="20" y="390" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-17 Kodak</text>
+<path d="M424.8461538461538 385L449.2830769230769 385" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="409" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-24 Web forecasts</text>
+<path d="M436.4215384615385 404L437.7076923076923 404" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="428" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-22 Y2K</text>
+<path d="M440.28 423L443.49538461538464 423" fill="none" stroke="#9a4f13" stroke-width="3"/>
+<text x="20" y="447" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-18 Fujifilm</text>
+<path d="M440.9230769230769 442L446.71076923076924 442" fill="none" stroke="#9a4f13" stroke-width="3" stroke-dasharray="3 4"/>
+<text x="20" y="475" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Dots: one date. Dashed: approximate period.</text>
+<text x="20" y="501" font-size="14" fill="#17251f" text-anchor="start" font-weight="600">EARLIER CASES</text>
+<text x="20" y="526" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-08 Grain trap</text>
+<text x="248" y="526" font-size="14" fill="#9a4f13" text-anchor="start" font-weight="400">c. 9500–6000 BC</text>
+<text x="20" y="546" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-12 Bronze networks</text>
+<text x="248" y="546" font-size="14" fill="#9a4f13" text-anchor="start" font-weight="400">14th–12th c. BC</text>
+<text x="20" y="566" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-05 Ming voyages</text>
+<text x="248" y="566" font-size="14" fill="#9a4f13" text-anchor="start" font-weight="400">1405–1433</text>
+<text x="20" y="586" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-13 Abbot + press</text>
+<text x="248" y="586" font-size="14" fill="#9a4f13" text-anchor="start" font-weight="400">1492–1494</text>
+<text x="20" y="606" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">P-06 Copernicus</text>
+<text x="248" y="606" font-size="14" fill="#9a4f13" text-anchor="start" font-weight="400">1543</text>
+<text x="20" y="637" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Full names and dates: Appendix D.</text>
 </svg>

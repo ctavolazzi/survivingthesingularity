@@ -1,0 +1,186 @@
+[
+  {
+    "section": "introduction",
+    "file": "02-introduction.md",
+    "line": 9,
+    "attribution": "Upton Sinclair, *I, Candidate for Governor: And How I Got Licked* (1935)",
+    "words": 19,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "preface",
+    "file": "01-preface.md",
+    "line": 8,
+    "attribution": "Hunter S. Thompson",
+    "words": 6,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter0",
+    "file": "00-chapter0.md",
+    "line": 9,
+    "attribution": "William Gibson, saying discussed in his *Scientific American* interview (2011)",
+    "words": 11,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter1",
+    "file": "03-chapter1.md",
+    "line": 8,
+    "attribution": "Vernor Vinge, *The Coming Technological Singularity* (1993)",
+    "words": 21,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter2",
+    "file": "04-chapter2.md",
+    "line": 8,
+    "attribution": "I. J. Good, *Speculations Concerning the First Ultraintelligent Machine* (1965)",
+    "words": 30,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter3",
+    "file": "05-chapter3.md",
+    "line": 8,
+    "attribution": "Konstantin Tsiolkovsky, as commonly translated",
+    "words": 14,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter4",
+    "file": "06-chapter4.md",
+    "line": 8,
+    "attribution": "J. B. S. Haldane, *Possible Worlds* (1927)",
+    "words": 21,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter5",
+    "file": "07-chapter5.md",
+    "line": 8,
+    "attribution": "Arthur Eddington, *The Nature of the Physical World* (1928)",
+    "words": 31,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter6",
+    "file": "08-chapter6.md",
+    "line": 9,
+    "attribution": "Arthur C. Clarke, *Profiles of the Future* (1962)",
+    "words": 28,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter7",
+    "file": "09-chapter7.md",
+    "line": 9,
+    "attribution": "Louis Pasteur, as commonly rendered in English",
+    "words": 6,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter8",
+    "file": "10-chapter8.md",
+    "line": 9,
+    "attribution": "Charles Mackay, *Memoirs of Extraordinary Popular Delusions and the Madness of Crowds*, Preface (1852 edition)",
+    "words": 30,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter9",
+    "file": "11-chapter9.md",
+    "line": 9,
+    "attribution": "Peter Kropotkin, *Fields, Factories and Workshops* (revised edition, 1913), Chapter VII",
+    "words": 25,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter10",
+    "file": "12-chapter10.md",
+    "line": 8,
+    "attribution": "Alan Kay",
+    "words": 11,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter11",
+    "file": "13-chapter11.md",
+    "line": 9,
+    "attribution": "attributed to Archimedes",
+    "words": 12,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter12",
+    "file": "14-chapter12.md",
+    "line": 8,
+    "attribution": "Gerald O'Hara in Margaret Mitchell's *Gone with the Wind* (1936), Chapter II",
+    "words": 23,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter13",
+    "file": "15-chapter13.md",
+    "line": 9,
+    "attribution": "Henry David Thoreau, *Walden* (1854), \"Economy\"",
+    "words": 28,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter14",
+    "file": "16-chapter14.md",
+    "line": 8,
+    "attribution": "Ernest Hemingway, *The Sun Also Rises* (1926), Chapter XIII",
+    "words": 14,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter15",
+    "file": "17-chapter15.md",
+    "line": 8,
+    "attribution": "Franklin D. Roosevelt, *letter to all state governors* (1937)",
+    "words": 8,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter16",
+    "file": "18-chapter16.md",
+    "line": 9,
+    "attribution": "A. J. Liebling, \"The Wayward Press: Do You Belong in Journalism?\", *The New Yorker* (14 May 1960)",
+    "words": 12,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter17",
+    "file": "19-chapter17.md",
+    "line": 9,
+    "attribution": "Stewart Brand, *Whole Earth Catalog* (1968)",
+    "words": 12,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter18",
+    "file": "20-chapter18.md",
+    "line": 8,
+    "attribution": "Dwight D. Eisenhower, recalling an Army saying in *remarks to the National Defense Executive Reserve Conference* (1957)",
+    "words": 7,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "chapter19",
+    "file": "27-chapter19.md",
+    "line": 7,
+    "attribution": "Aneurin Bevan, *In Place of Fear* (1952)",
+    "words": 20,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  },
+  {
+    "section": "conclusion",
+    "file": "21-conclusion.md",
+    "line": 7,
+    "attribution": "Oscar Wilde, *The Soul of Man under Socialism* (1891)",
+    "words": 29,
+    "external_use_assessment": "Not resolved by this editorial pass; retain source and prior audit records."
+  }
+]

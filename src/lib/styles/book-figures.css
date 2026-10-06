@@ -1,0 +1,53 @@
+/* Shared editorial art in both reading routes. Intrinsic dimensions reserve space. */
+:is(.chapter-article, .prose) figure.book-figure {
+  display: block;
+  clear: both;
+  margin: 2rem 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow: visible;
+}
+:is(.chapter-article, .prose) figure.book-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+:is(.chapter-article, .prose) figure.book-figure figcaption {
+  margin: .7rem 0 0;
+  color: inherit;
+  opacity: .8;
+  font-size: .82em;
+  line-height: 1.45;
+  text-align: left;
+}
+:is(.chapter-article, .prose) figure.book-figure figcaption em { font-style: normal; }
+:is(.chapter-article, .prose) figure.figure-inset { width: 72%; margin-inline: auto; }
+:is(.chapter-article, .prose) figure[class*='figure-cutout'] { width: 46%; margin-inline: auto; }
+@media (min-width: 760px) {
+  :is(.chapter-article, .prose) figure.figure-cutout-left { float: left; width: 32%; margin: .4rem 1.6rem 1.1rem 0; }
+  :is(.chapter-article, .prose) figure.figure-cutout-right { float: right; width: 32%; margin: .4rem 0 1.1rem 1.6rem; }
+}
+:is(.chapter-article, .prose) :is(h1,h2,h3,h4,hr,table,ul,ol,blockquote) { clear: both; }
+:is(.chapter-article, .prose)::after { display: block; content: ''; clear: both; }
+@media (max-width: 759px) {
+  :is(.chapter-article, .prose) figure[class*='figure-cutout'] { float: none; width: min(58%, 240px); margin: 1.5rem auto; }
+  :is(.chapter-article, .prose) figure.figure-inset { width: 100%; }
+}
+/* Display equations must have the same bounded reading area in both readers. */
+.prose .katex-display, .prose .math-fallback-display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: .35rem 0;
+}
+.prose .katex { font-style: normal; text-shadow: none; }

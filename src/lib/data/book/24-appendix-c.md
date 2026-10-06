@@ -8,6 +8,10 @@ Use AI and robots to make survival more secure. Start with food: adequate food a
 
 Free to the person eating doesn't mean free to provide. Equipment, maintenance, remaining labor, and delivery all need dependable funding. Cheaper production doesn't settle who gets access; people do.
 
+![An open ledger with four continuing service costs: equipment, maintenance, remaining labor and delivery. No prices or budget estimates are shown.](/book-images/v103-service-ledger.svg)
+
+*Free to the person eating still leaves a working ledger: equipment, maintenance, remaining labor, and delivery need dependable funding.*
+
 After food, the order is land care, cleanup, shelter, then everything further out. A priority is where you start, not a waiting list for people in urgent need.
 
 The yardstick is the **Adequate Level of Care**: can a community make sure the people who live there have food, shelter, and basic care, dependably, including through a bad week?
@@ -44,7 +48,7 @@ The author's personal AGI forecast is U.S. Thanksgiving, November 25, 2027. It's
 
 ## The nine stages
 
-The map runs from observable to speculative. Stages 1 through 5 are where the choices are still ours.
+The map runs from present social pressures to distant speculation. Stages 1 through 5 organize the near-term choices the author wants us to make; they aren't an established sequence.
 
 - **Stage 1: The Cash Grab.** A new capability gets monetized first. Ask whether the money produces something people can eat, and whether people without money share in it.
 - **Stage 2: The Panic and the Plug.** Incumbents and the frightened reach for restrictions, and sometimes for the plug. Read the rule: who wrote it, what it restricts, who carries the cost.

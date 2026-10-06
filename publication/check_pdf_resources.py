@@ -10,8 +10,8 @@ import re
 import subprocess
 import unicodedata
 from PIL import Image, ImageChops
-from pypdf import PdfReader
-from pypdf.generic import ContentStream, DictionaryObject, NameObject
+from pypdf import PdfReader, PdfWriter
+from pypdf.generic import ContentStream, DecodedStreamObject, DictionaryObject, NameObject
 
 ROOT = Path(__file__).resolve().parent.parent
 KINDS = ['interior', 'reading', 'print-interior', 'front-cover']
@@ -181,6 +181,62 @@ def gray_resources(reader):
     return result
 
 
+def empty_final_page(page):
+    """An intentional production verso has no annotations or content operations.
+
+    Checking extracted text alone misses images and vector marks. Require the
+    content stream itself to be empty, as PdfWriter.add_blank_page produces it.
+    Even a single painted rectangle makes the page ineligible for exclusion.
+    """
+    if page.get('/Annots', []):
+        return False
+    contents = page.get_contents()
+    return contents is None or not contents.operations
+
+
+def print_page_parity(interior, printed):
+    """Only an empty final print page may be excluded from pagewise parity."""
+    color_count, print_count = len(interior.pages), len(printed.pages)
+    extra = print_count - color_count
+    blank = extra == 1 and empty_final_page(printed.pages[-1])
+    allowed = extra == 0 or blank
+    return {
+        'interior_pages': color_count,
+        'print_pages': print_count,
+        'extra_print_pages': extra,
+        'blank_final_page_excluded': blank,
+        'passes': allowed,
+        'reason': ('Equal page counts' if extra == 0 else
+                   'One empty final print page excluded' if blank else
+                   'Print must retain every interior page and add at most one empty final page'),
+    }
+
+
+def page_parity_controls():
+    """Exercise page loss and non-text marks without modifying final PDFs."""
+    def sample(count, painted_last=False):
+        writer = PdfWriter()
+        for _ in range(count):
+            writer.add_blank_page(width=432, height=648)
+        if painted_last:
+            stream = DecodedStreamObject()
+            stream.set_data(b'0 0 10 10 re f')
+            writer.pages[-1][NameObject('/Contents')] = writer._add_object(stream)
+        buffer = io.BytesIO()
+        writer.write(buffer)
+        buffer.seek(0)
+        return PdfReader(buffer)
+
+    interior = sample(3)
+    return {
+        'equal_print_page_count_accepted': print_page_parity(interior, sample(3))['passes'],
+        'blank_final_print_page_accepted': print_page_parity(interior, sample(4))['passes'],
+        'nonblank_extra_print_page_rejected': not print_page_parity(interior, sample(4, True))['passes'],
+        'truncated_print_page_rejected': not print_page_parity(interior, sample(2))['passes'],
+        'two_extra_print_pages_rejected': not print_page_parity(interior, sample(5))['passes'],
+    }
+
+
 def normalized(text):
     return re.sub(r'\s+', '', unicodedata.normalize('NFKC', text)).replace('\u00ad', '')
 
@@ -196,6 +252,7 @@ def main():
     readers = {k: PdfReader(path) for k, path in paths.items()}
     report = {'scope': 'Frozen publication PDFs; independent resource and text-layer audit', 'files': {}, 'negative_controls': {}}
     controls = report['negative_controls']
+    controls.update(page_parity_controls())
     for kind, reader in readers.items():
         fonts, seen, wrong = {}, set(), []
         for n, page in enumerate(reader.pages, 1):
@@ -210,7 +267,10 @@ def main():
     controls['missing_font_program_rejected'] = not embedded(DictionaryObject({NameObject('/Subtype'): NameObject('/Type1')}))
     controls['wrong_page_width_rejected'] = not six_by_nine(433, 648)
     a, b, g = annotations(readers['interior']), annotations(readers['reading'], 1), annotations(readers['print-interior'])
-    report['annotation_checks'] = {'interior_total': sum(a['counts']), 'reading_total': sum(b['counts']), 'print_total': sum(g['counts']), 'cover_annotations': b['counts'][0], 'reading_counts_equal_after_cover': a['counts'] == b['counts'][1:], 'reading_rectangles_and_targets_equal': a['descriptors'] == b['descriptors'][1:], 'print_counts_equal_color': a['counts'] == g['counts'], 'print_target_multisets_equal_color': a['targets'] == g['targets'], 'all_internal_destinations_resolve': not a['unresolved'] and not b['unresolved'] and not g['unresolved'], 'internal_counts': {k: v['internal'] for k, v in [('interior', a), ('reading', b), ('print', g)]}, 'external_counts': {k: v['external'] for k, v in [('interior', a), ('reading', b), ('print', g)]}, 'unresolved': {k: v['unresolved'] for k, v in [('interior', a), ('reading', b), ('print', g)]}}
+    parity = print_page_parity(readers['interior'], readers['print-interior'])
+    report['page_parity'] = parity
+    interior_pages = len(readers['interior'].pages)
+    report['annotation_checks'] = {'interior_total': sum(a['counts']), 'reading_total': sum(b['counts']), 'print_total': sum(g['counts']), 'cover_annotations': b['counts'][0], 'reading_counts_equal_after_cover': a['counts'] == b['counts'][1:], 'reading_rectangles_and_targets_equal': a['descriptors'] == b['descriptors'][1:], 'print_counts_equal_color': parity['passes'] and a['counts'] == g['counts'][:interior_pages], 'print_target_multisets_equal_color': parity['passes'] and a['targets'] == g['targets'][:interior_pages], 'all_internal_destinations_resolve': not a['unresolved'] and not b['unresolved'] and not g['unresolved'], 'internal_counts': {k: v['internal'] for k, v in [('interior', a), ('reading', b), ('print', g)]}, 'external_counts': {k: v['external'] for k, v in [('interior', a), ('reading', b), ('print', g)]}, 'unresolved': {k: v['unresolved'] for k, v in [('interior', a), ('reading', b), ('print', g)]}}
     controls['missing_destination_rejected'] = destination(readers['reading'], '__missing_probe__') is None
     changed = a['counts'].copy()
     changed[next(n for n, count in enumerate(changed) if count)] -= 1
@@ -233,10 +293,11 @@ def main():
             start = next((i for i, (x, y) in enumerate(zip(left, right)) if x != y), min(len(left), len(right)))
             mismatches.append({'page': n, 'first_difference': start, 'color_excerpt': left[max(0, start-30):start+70], 'print_excerpt': right[max(0, start-30):start+70]})
     joined = {k: '\n'.join(v) for k, v in texts.items()}
-    report['text_checks'] = {'normalization': 'NFKC; remove whitespace and soft hyphens only; retain punctuation and text order', 'pages_compared': len(texts['interior']), 'same_page_count': len(texts['interior']) == len(texts['print-interior']), 'all_pages_equal': not mismatches, 'mismatches': mismatches, 'after_counts': {k: len(re.findall(r'\bafter\b', v, re.I)) for k, v in joined.items()}, 'shift_counts': {k: len(re.findall(r'\bshift\b', v, re.I)) for k, v in joined.items()}, 'previous_ft_corruption_present': {k: bool(re.search('[Ƥɇ]', v)) for k, v in joined.items()}, 'example_phrase': {k: 'silence after the first one' in re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', v)) for k, v in joined.items()}}
+    report['text_checks'] = {'normalization': 'NFKC; remove whitespace and soft hyphens only; retain punctuation and text order', 'pages_compared': min(len(texts['interior']), len(texts['print-interior'])), 'print_page_parity_passes': parity['passes'], 'blank_final_page_excluded': parity['blank_final_page_excluded'], 'same_page_count': len(texts['interior']) == len(texts['print-interior']), 'all_pages_equal': parity['passes'] and not mismatches, 'mismatches': mismatches, 'after_counts': {k: len(re.findall(r'\bafter\b', v, re.I)) for k, v in joined.items()}, 'shift_counts': {k: len(re.findall(r'\bshift\b', v, re.I)) for k, v in joined.items()}, 'previous_ft_corruption_present': {k: bool(re.search('[Ƥɇ]', v)) for k, v in joined.items()}, 'example_phrase': {k: 'silence after the first one' in re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', v)) for k, v in joined.items()}}
     controls['text_corruption_detected'] = normalized('silence after the first one') != normalized('silence aƤer the first one')
     rasters = []
-    for n in [1, 5, 28, 139]:
+    raster_pages = sorted({min(n, len(readers['print-interior'].pages)) for n in [1, 5, 28, 139]})
+    for n in raster_pages:
         result = subprocess.run(['gs', '-q', '-dBATCH', '-dNOPAUSE', '-sDEVICE=png16m', '-r45', f'-dFirstPage={n}', f'-dLastPage={n}', '-sOutputFile=-', str(paths['print-interior'])], capture_output=True, check=True)
         image = Image.open(io.BytesIO(result.stdout))
         rasters.append({'page': n, 'pixels': list(image.size), **raster_neutrality(image)})
@@ -244,34 +305,40 @@ def main():
     gray['pixel_tolerance_reason'] = 'RGB rendering of gray PDF photographs introduces at most one 8-bit level of channel conversion rounding. All stream operators and image color spaces independently verify gray representation.'
     controls['red_raster_pixel_rejected'] = not raster_neutrality(Image.new('RGB', (1, 1), (255, 0, 0)))['passes_one_level_tolerance']
     report['navigation_metadata_checks'] = {'reading_labels_correct': readers['reading'].page_labels[:7] == ['Cover', 'i', 'ii', 'iii', 'iv', '1', '2'], 'print_labels_correct': readers['print-interior'].page_labels[:7] == ['i', 'ii', 'iii', 'iv', '1', '2', '3'], 'title_author_consistent': all(r.metadata.get('/Title') == 'Surviving the Singularity' and r.metadata.get('/Author') == 'Christopher Tavolazzi' for r in readers.values())}
-    report['limitations'] = ['Color interior keeps default physical-number PDF labels; reading and print use Roman frontmatter and Arabic main text.', 'Annotation arrays are compared as multisets; Ghostscript ordering is not assumed identical. Reading checks include rectangles and normalized page targets. Print checks compare pagewise target counts.', 'All print page/form streams and referenced image/shading spaces are inspected. Four rendered pages check actual neutral pixels with documented one-level rounding. This is not an ink-separation or PDF/X certification.', 'Font embedding checks nonempty programs, not appearance or rights. Original font licenses are packaged separately.', 'Text checks compare extracted page text after stated normalization; manuscript paragraph preservation is independently checked by the main proof script.']
+    report['limitations'] = ['Color interior keeps default physical-number PDF labels; reading and print use Roman frontmatter and Arabic main text.', 'Annotation arrays are compared as multisets; Ghostscript ordering is not assumed identical. Reading checks include rectangles and normalized page targets. Print checks compare pagewise target counts.', 'All print page/form streams and referenced image/shading spaces are inspected. Four rendered pages check actual neutral pixels with documented one-level rounding. This is not an ink-separation or PDF/X certification.', 'Font embedding checks nonempty programs, not appearance or rights. Original font licenses are packaged separately.', 'Text checks compare extracted page text after stated normalization. One empty final print page may be excluded; missing pages, multiple extras, annotations or any content operations on an extra page are rejected. Manuscript paragraph preservation is independently checked by the main proof script.']
     annotation_keys = ['reading_counts_equal_after_cover', 'reading_rectangles_and_targets_equal', 'print_counts_equal_color', 'print_target_multisets_equal_color', 'all_internal_destinations_resolve']
-    report['overall_pass'] = (all(f['all_boxes_6x9'] and f['all_fonts_embedded'] for f in report['files'].values()) and all(report['annotation_checks'][k] for k in annotation_keys) and gray['passes_stream_checks'] and all(r['passes_one_level_tolerance'] for r in rasters) and report['text_checks']['same_page_count'] and not mismatches and not any(report['text_checks']['previous_ft_corruption_present'].values()) and all(controls.values()) and all(report['navigation_metadata_checks'].values()))
+    report['overall_pass'] = (all(f['all_boxes_6x9'] and f['all_fonts_embedded'] for f in report['files'].values()) and all(report['annotation_checks'][k] for k in annotation_keys) and gray['passes_stream_checks'] and all(r['passes_one_level_tolerance'] for r in rasters) and parity['passes'] and not mismatches and not any(report['text_checks']['previous_ft_corruption_present'].values()) and all(controls.values()) and all(report['navigation_metadata_checks'].values()))
     docs = ROOT/'docs/publication'
     (docs/'PDF-RESOURCE-CHECKS.json').write_text(json.dumps(report, indent=2, ensure_ascii=False)+'\n')
     counts = ', '.join(f"{k}: {len(v['fonts'])}" for k, v in report['files'].items())
+    page_counts = ', '.join(f"{kind}: {item['pages']}" for kind, item in report['files'].items())
+    annotation_counts = ', '.join(f"{kind}: {sum(item['counts'])}" for kind, item in [('interior', a), ('reading', b), ('print', g)])
+    internal_counts = ', '.join(f"{kind}: {item['internal']}" for kind, item in [('interior', a), ('reading', b), ('print', g)])
+    external_counts = ', '.join(f"{kind}: {item['external']}" for kind, item in [('interior', a), ('reading', b), ('print', g)])
+    text_checks = report['text_checks']
     markdown = f"""# PDF resource checks
 
-Result: **{'PASS' if report['overall_pass'] else 'FAIL'}** for the frozen publication PDFs.
+Result: **{'PASS' if report['overall_pass'] else 'FAIL'}** for the publication PDFs.
 
 Reproduce with `python3 publication/check_pdf_resources.py` from repository root. Dependencies are pypdf, Pillow, and Ghostscript. No network access or source-PDF changes occur. Exact hashes and complete results are in [PDF-RESOURCE-CHECKS.json](PDF-RESOURCE-CHECKS.json).
 
-| Check | Result |
+| Check | Measured result |
 | --- | --- |
-| Page geometry | Every media and crop box is 432 by 648 points, equivalent to 6 by 9 inches. |
-| Page counts | 228 color interior, 229 reading, 228 grayscale print interior, 1 front cover. |
-| Fonts | Every discovered page/form/pattern font resource has a nonempty embedded font program. Resource counts: {counts}. |
-| Annotations | All 378 annotations survive in reading and print. Reading per-page rectangles and targets match after the one-page cover offset. Print target multisets match without assuming annotation order. |
-| Destinations | All 62 internal destinations resolve in each applicable PDF; 316 external URI annotations are retained. Remote URL availability was not tested. |
-| Grayscale streams | All inspected print streams use gray operators: 920 fill and 139 stroke operations. All 28 referenced image resources are gray. No chromatic operations or non-gray image/shading spaces were found. |
-| Grayscale render | Pages 1, 5, 28, and 139 pass the one-level 8-bit RGB neutrality tolerance. Photographs show at most one level of channel rounding during Ghostscript conversion; gray PDF resources independently establish grayscale representation. |
-| Text | All 228 pages match after NFKC and removal of whitespace and soft hyphens. Punctuation and text order are retained. |
-| Prior ligature defect | No previous ft corruption remains. Both files contain 50 instances of after and 9 of shift. The phrase silence after the first one extracts correctly. |
-| Navigation metadata | Reading labels begin Cover, i, ii, iii, iv, 1, 2. Print begins i, ii, iii, iv, 1, 2, 3. Title and author agree. Color interior retains default physical-page labels. |
+| Page geometry | All media and crop boxes are 432 by 648 points: {all(item['all_boxes_6x9'] for item in report['files'].values())}. |
+| Page counts | {page_counts}. |
+| Print page parity | {parity['reason']}. Pass: {parity['passes']}. |
+| Fonts | All discovered page/form/pattern fonts have a nonempty embedded program: {all(item['all_fonts_embedded'] for item in report['files'].values())}. Resource counts: {counts}. |
+| Annotations | {annotation_counts}. Reading rectangles and targets match after the cover offset: {report['annotation_checks']['reading_rectangles_and_targets_equal']}. Print target multisets match on all interior pages: {report['annotation_checks']['print_target_multisets_equal_color']}. |
+| Destinations | Internal: {internal_counts}. External URI annotations: {external_counts}. All internal destinations resolve: {report['annotation_checks']['all_internal_destinations_resolve']}. Remote URL availability was not tested. |
+| Grayscale streams | Fill-gray operators: {gray['operator_counts'].get('g', 0)}; stroke-gray operators: {gray['operator_counts'].get('G', 0)}. Referenced images: {len(gray['images'])}. Chromatic operations: {len(gray['chromatic_operations'])}; non-gray spaces: {len(gray['non_gray_spaces'])}. |
+| Grayscale render | Pages {', '.join(map(str, raster_pages))}; every sample passes one-level 8-bit RGB neutrality: {all(item['passes_one_level_tolerance'] for item in rasters)}. |
+| Text | {text_checks['pages_compared']} interior pages compared; {len(mismatches)} mismatches. One permitted final empty print page excluded: {parity['blank_final_page_excluded']}. NFKC normalization removes whitespace and soft hyphens while retaining punctuation and text order. |
+| Prior ligature defect | Previous ft corruption present: {text_checks['previous_ft_corruption_present']}. Counts of after: {text_checks['after_counts']}; shift: {text_checks['shift_counts']}. Example phrase preserved: {text_checks['example_phrase']}. |
+| Navigation metadata | Reading labels correct: {report['navigation_metadata_checks']['reading_labels_correct']}. Print labels correct: {report['navigation_metadata_checks']['print_labels_correct']}. Title and author agree: {report['navigation_metadata_checks']['title_author_consistent']}. |
 
-## Negative controls
+## Controls
 
-The checking functions reject a font missing its program, a page one point too wide, an unresolved destination, a removed annotation, a red vector instruction, an RGB image color space, the previous aƤer text corruption, and a deliberately red raster pixel. All eight controls rejected their defective input without modifying the final PDFs.
+{sum(bool(value) for value in controls.values())} of {len(controls)} controls passed. These include accepting equal page counts and one empty final print page; rejecting a truncated print PDF, two extra pages, and a final page carrying a painted rectangle even when it has no extractable text. The font, geometry, annotation, destination, grayscale and text-corruption controls run without modifying the final PDFs. The JSON report lists each outcome separately.
 
 ## Limits
 

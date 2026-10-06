@@ -1,14 +1,18 @@
 # Appendix G: Your First Year
 
-*Every precedent in this book ends with three practices, seventy-two in all. Here they are in an order you can live: twelve months, each with a theme and a handful of actions. The tag after each one (P-12, say) points back to the story it came from, so you can reread why it matters. Move a month if your season or your life needs it. Don't skip the uncomfortable ones; they're usually the ones doing the work.*
+*The twenty-four precedents contain seventy-two practices. This year plan selects and adapts some of them, alongside a few chapter exercises: twelve months, each with a theme and a handful of actions. It isn't a complete checklist of all seventy-two. The tag after an action (P-12, say) points back to its story. Move a month if your season or your life needs it, and choose a scale you can sustain.*
+
+![Twelve monthly themes arranged as a two-page year index, from getting your bearings and knowing your numbers to going on the record and looking back, then forward.](/book-images/v103-first-year-index.svg)
+
+*A year of practice, at a scale you can sustain. Shift the months to fit your season and your life; the actions and precedent references follow below.*
 
 ## Month 1: Get your bearings
 
 1. Turn off notifications, put the phone in a drawer that closes, and do one real thing before noon. (P-11)
 2. For one week, tally two numbers each day: hours consuming commentary about the transition, and hours making anything at all. (P-13)
 3. Start a timeline file. Every time an expert publishes an AI timeline, paste it in with the date and the author. Add mine. (P-03)
-4. Start a receipts file: every time a credentialed voice calls AI a fad or a bubble, save the headline, the author, and the date. (P-24)
-5. Write down the next three times you hear that AI is rotting people's brains, and note what the speaker can no longer supervise. (P-01)
+4. Start a receipts file for confident AI predictions, skeptical and optimistic: save the claim, author, and date, including mine. (P-24)
+5. Write down the next three claims that AI is harming people's thinking. Note the specific harm alleged, the evidence offered, and what would change your mind. (P-01)
 
 ## Month 2: Know your numbers
 
@@ -40,13 +44,13 @@
 
 ## Month 6: Find your people
 
-1. Take the neighbor census: who within walking distance can fix an engine, stitch a wound, grow food, or wire a panel? Learn it in person. (P-12)
+1. Ask willing neighbors what help they can offer: repair, growing, transport, qualified medical care, or licensed electrical work. Record agreed contact details and limits, and ask before sharing them. (P-12)
 2. Make your garden a network: find the two or three people nearest you who grow anything, and trade one variety. (P-19)
 3. Before joining any movement, ask it one question: "What are we building, and what terms are we demanding?" (P-09)
 
 ## Month 7: Count the food
 
-1. Build the Rung 1 page from Chapter 19: how much edible food your town throws away, beside how many households can't count on eating. Publish it. (Chapter 19)
+1. Build the Rung 1 page from Chapter 19: edible food discarded beside households lacking dependable food. Publish totals with units, periods, sources, and gaps. Keep personal records private. (Chapter 19)
 2. List what's already free at the door where you live: the library, the school, the roads. Each was once a decision someone fought for. (P-23)
 3. Find out what your employer or your grocer does with food it can't sell, and where it could go instead. (Chapter 14)
 
@@ -81,7 +85,7 @@
 
 1. Date-stamp your reasoning: one paragraph for each big decision this year, what you knew, what you assumed, and why you acted. (P-22)
 2. Ask the Fujifilm question on the calendar: has the wave moved, and which capability do you lead with next year? (P-18)
-3. Keep the standby system warm: save seed from one crop and keep the beds alive over winter. (P-19)
+3. Keep the standby system ready: save suitable seed from one crop, and protect or plant the beds for your local season. (P-19)
 4. Go back through this list and pick the one that made you most uncomfortable. That discomfort is a compass. Do that one first. (P-24)
 
-Then start again. The second year is easier, because you won't be doing it alone.
+Then review what worked, who joined you, and what you can sustain. Carry that into the second year.

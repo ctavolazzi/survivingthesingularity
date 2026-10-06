@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 374" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">KEEP A COPY YOU CAN OPEN</title>
+<desc id="desc">A distant server and a local folder separated by a broken network link. A local copy can preserve information access, but still requires power, compatible software and an up-to-date version.</desc>
+<rect width="480" height="374" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">KEEP A COPY YOU CAN OPEN</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="80" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Remote service</text>
+<text x="459" y="80" font-size="14" fill="#17251f" text-anchor="end" font-weight="400">Local copy</text>
+<path d="M40 103H147V120H40Z" fill="#ffffff" stroke="#315f78" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="50" cy="111" r="2" fill="#315f78" stroke="#315f78" stroke-width="1"/>
+<path d="M112 111L136 111" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M40 126H147V143H40Z" fill="#ffffff" stroke="#315f78" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="50" cy="134" r="2" fill="#315f78" stroke="#315f78" stroke-width="1"/>
+<path d="M112 134L136 134" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M40 149H147V166H40Z" fill="#ffffff" stroke="#315f78" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="50" cy="157" r="2" fill="#315f78" stroke="#315f78" stroke-width="1"/>
+<path d="M112 157L136 157" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M93 169L93 195" fill="none" stroke="#17251f" stroke-width="1.5"/>
+<path d="M50 195H137" fill="none" stroke="#17251f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M161 139L220 139" fill="none" stroke="#4b5b52" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M262 139L319 139" fill="none" stroke="#4b5b52" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M233 129L225 139L237 145L231 155M247 125L241 136L253 142L247 153" fill="none" stroke="#9a4f13" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M335 107H373L385 118H446V203H335Z" fill="#ffffff" stroke="#9a4f13" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M344 126H437L426 209H324Z" fill="#ffffff" stroke="#17251f" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M355 146H416M352 157H413M349 168H397" fill="none" stroke="#a2afa6" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="241" y="239" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">The link can fail.</text>
+<path d="M20 266L460 266" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="286" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Keep the files, an app that opens them,</text>
+<text x="20" y="307" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">and a version you have checked.</text>
+<text x="20" y="328" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Copies do not provide electrical power.</text>
+</svg>

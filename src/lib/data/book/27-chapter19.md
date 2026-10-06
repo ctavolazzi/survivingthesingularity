@@ -1,15 +1,11 @@
 # Chapter 19: The Ladder: How Money Becomes Optional
 
-![A ladder of nine rungs, from counting what is wasted at the bottom to keeping the market above the floor at the top, grouped into three bands: feed people now, change who owns and decides, and widen the floor](/book-images/ch19-conversion-ladder.svg)
-
-*The conversion, one rung at a time. The first seven have already been done somewhere.*
-
 > *"No society can legitimately call itself civilized if a sick person is denied medical aid because of lack of means."*
 > Aneurin Bevan, *In Place of Fear* (1952)
 
 **In this chapter:**
 
-- The rules that make survival cost money were written by people, and people can rewrite them. Here are nine steps. Seven of them have already been done somewhere, with a date and a receipt; the last two hold the rest together.
+- The rules that make survival cost money were written by people, and people can rewrite them. Here are nine steps. The first seven have precedents, with dates and receipts; the last two hold the plan together.
 - Start where the food already is: count what's thrown away, feed whoever asks, then make the meal a public service like the library.
 - Money stays. It just stops being the ticket to staying alive.
 
@@ -32,6 +28,10 @@ Elijah went first because the sign-up sheet said so. He got through the cost per
 Rosa went second. She hadn't told anyone she was coming. She was still in her warehouse shirt, the wrist brace grey at the edges, and she didn't have a page.
 
 "I pack fruit for a living," she said. "Afternoon shift. The route comes late enough that I can get it. I'm not here to say thank you, though I am thankful. I'm here because every month we don't know if it's the last month. You can't plan a week around maybe." She looked at the supervisor with the almonds. "I asked them to tell us before the week it stops. They said they would. I'm asking you the same thing."
+
+![Illustration of Rosa speaking at a county microphone in her warehouse shirt, with a brace on her right wrist.](/book-images/v103-narrative-rosa-testimony.png)
+
+*Fictional scene: Rosa at the county hearing. A funded route means households can plan beyond the next delivery.*
 
 She sat down with a minute left on the clock. Nobody else in the room had managed that.
 
@@ -79,35 +79,39 @@ That's it. The rest of this chapter is the ladder.
 
 The Introduction said it plainly, and it belongs at the top of the plan too: we don't have to live like this. Nobody has to go hungry because food doesn't sell. Nobody has to be locked out of a home because a score came back wrong. Those outcomes are rules, and rules are written by people.
 
-This isn't a revolution, and it doesn't wait for one. It doesn't need a single leader, a new constitution, or the permission of the people who profit from the way things are now. It needs people who live somewhere to decide, out loud and on the record, that everyone who lives there gets what they need to survive, and then to build the institutions that make the decision real. The first seven rungs below are things real places have already done. The last two are how you hold them together. The only new thing is doing all of them, in order, on purpose.
+This isn't a revolution, and it doesn't wait for one. It doesn't need a single leader, a new constitution, or the permission of the people who profit from the way things are now. It needs people who live somewhere to decide, out loud and on the record, that everyone who lives there gets what they need to survive, and then to build the institutions that make the decision real. The first seven rungs below draw on things real places have already done. Those precedents have limits; none proves the whole plan has worked. The last two are how you hold it together. The proposal is to connect these pieces, deliberately, and widen who they serve.
 
 The yardstick is the one Chapter 18 set: the **Adequate Level of Care**. Can a community make sure everyone who lives there has food, shelter, and basic care, dependably, including through a bad week? Each rung moves a place closer, and each one can be measured.
 
+![Nine proposed steps, read from bottom to top. The first seven draw on bounded precedents, not a completed universal guarantee. Dashed rungs eight and nine describe accountability and keeping markets above the floor. France’s precedent concerns surplus recovery rules; land trusts use long-term leases.](/book-images/ch19-conversion-ladder.svg)
+
+*Read from the bottom up. The first seven rungs draw on bounded precedents; the final two describe how the proposal would be maintained.*
+
 ## Rung 1: Count what's wasted and who's hungry
 
-**What.** Put two numbers side by side, in public, for your town: how much edible food gets thrown away, and how many households can't count on eating. The gap between those two numbers is the whole argument.
+**What.** Put two measures side by side, in public, for your town: how much edible food gets thrown away, and how many households can't count on eating. Keep their units and reporting periods visible. You can't subtract households from pounds of food; you can investigate how much suitable food could reach those households, when, and at what cost.
 
 **Proof it's possible.** California already makes large food businesses count and recover. SB 1383 requires large grocers, distributors, and food services to recover edible food that would otherwise be thrown away, requires cities and counties to set up food recovery programs, and sets a statewide target: by 2025, recover 20 percent of the edible food that would otherwise go to landfill, "to feed people in need." [CalRecycle, SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/) Nationally, the Department of Agriculture counts food insecurity every year: 13.7 percent of US households, 18.3 million of them, were food insecure at some point in 2024. [USDA ERS, Key Statistics](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics)
 
-**Who.** Anyone with a library card and a spreadsheet can start. Food banks, county recovery plans, and the census survey that USDA uses are all public.
+**Who.** Anyone with a library card and a spreadsheet can start with published food-bank reports, county recovery plans, and USDA survey results. Ask local providers which records they can share as totals. The national survey doesn't supply a reliable monthly estimate for every town, and household records aren't public just because an organization holds them.
 
-**How you'll know.** One page, published and updated every month: pounds recovered, meals served, households still short.
+**How you'll know.** One page, updated when new records arrive: pounds recovered, meals served, households still short. Label dates, sources, missing groups, and estimated figures. A monthly update can report progress without pretending an annual estimate was measured again.
 
 ## Rung 2: Feed everyone who asks, from what's already there
 
-**What.** Route recovered food to kitchens that serve anyone who shows up. No forms, no proof of poverty, no questions. Every form is a door some hungry person won't walk through.
+**What.** Route recovered food to kitchens that serve anyone who shows up. No proof of poverty and no interrogation about whether somebody deserves dinner. Ask what you need to provide a meal they can use, including dietary and access needs. Every unnecessary form is a door some hungry person won't walk through.
 
-**Proof it's possible.** France stopped letting large supermarkets destroy edible food in 2016 and made them donate it instead (Chapter 14). Britain opened public restaurants for anyone in wartime, at low, set prices: the British Restaurants of Chapter 11. The food exists. The kitchens can exist. What's usually missing is the decision that the meal belongs to whoever needs it.
+**Proof it's possible.** France's 2016 law prohibited deliberately spoiling edible surplus and required larger food retailers to offer donation agreements to eligible charities (Chapter 14). Britain opened public restaurants in wartime at low, set prices: the British Restaurants of Chapter 11. Neither example established this rung's universal free meal. They show parts of the arrangement already working. Joining those parts still takes safe food, kitchens, paid work, and a funded promise to whoever needs it.
 
 **Who.** A food bank, a church kitchen, a restaurant with a slow Tuesday, a school cafeteria after hours, a co-op like the one in these pages.
 
-**How you'll know.** Meals served, and the number of people turned away. The second number should be zero.
+**How you'll know.** Meals served, people turned away, and requests the service couldn't meet because of timing, transport, or dietary needs. The target for unmet requests is zero; count people who couldn't reach the door as well as those who did.
 
 ## Rung 3: Make the meal a public service, like the library
 
 **What.** Move the meal from charity to entitlement: a funded, permanent public service that doesn't depend on who volunteered this week, the way a library or a school doesn't.
 
-**Proof it's possible.** California already did it for its children. Since the 2022 to 2023 school year, every public school in the state must provide breakfast and lunch free of charge to every student who asks, "regardless of their free or reduced-price meal eligibility." It was the first state to do it. [California Department of Education, California Universal Meals](https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp) The step from there to a public kitchen open to everyone is a budget line and a vote, not a technological breakthrough.
+**Proof it's possible.** California already did it for its children. Since the 2022 to 2023 school year, public school districts, county offices of education, and charter schools serving transitional kindergarten through grade twelve must provide breakfast and lunch free of charge each school day to students who ask, "regardless of their free or reduced-price meal eligibility." It was the first state to do it. [California Department of Education, California Universal Meals](https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp) A public kitchen open to everyone uses an established capability. Extending that promise still takes public authority, a funded operating plan, suitable facilities, and people to run it.
 
 **Who.** City councils, county supervisors, school boards, and the voters who elect them. Appendix A has the questions to bring.
 
@@ -117,7 +121,7 @@ The yardstick is the one Chapter 18 set: the **Adequate Level of Care**. Can a c
 
 **What.** Put land for food and homes into community land trusts and public trusts, so it can't be bid away from the people who use it.
 
-**Proof it's possible.** Community land trusts already do this across the country, usually with a 99-year ground lease that keeps homes affordable for the next household too. [Grounded Solutions Network, Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/) Chapter 12 shows one being born and Chapter 15 shows the machinery, including New Communities in Georgia, which lost its land and got it back.
+**Proof it's possible.** Community land trusts already do this across the country, usually with a 99-year ground lease that keeps homes affordable for the next household too. [Grounded Solutions Network, Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/) Chapter 12 shows one being born and recounts New Communities in Georgia, which lost its original land and later bought a new property. Chapter 15 shows the machinery and its limits.
 
 **Who.** Nonprofits, cities with surplus land, farmers who want their ground to outlive them.
 
@@ -139,7 +143,7 @@ That's the pattern for everything this book wants machines to do. When the marke
 
 **What.** Take money tests out of essentials. A lawyer for every tenant facing eviction. Limits on using credit reports and private risk scores to decide who gets housing and utilities. No shutoffs that leave people without water, power, or heat.
 
-**Proof it's possible.** In 2017, New York City became the first city in the country to commit to free legal representation for tenants facing eviction. In the 2022 fiscal year, 78 percent of households represented in court by those lawyers kept their homes. [NYC Office of Civil Justice, Annual Report 2022](https://www.nyc.gov/assets/hra/downloads/pdf/services/civiljustice/OCJ_UA_Annual_Report_2022.pdf)
+**Proof it's possible.** In 2017, New York City became the first city in the country to establish a right to counsel for tenants facing eviction. The law provided full representation to households at or below 200 percent of the federal poverty guidelines and brief legal assistance above that threshold. In the 2022 fiscal year, 78 percent of households represented in court by those lawyers kept their homes. This is a precedent for public legal help, not proof that income tests have already disappeared. [NYC Office of Civil Justice, Annual Report 2022](https://www.nyc.gov/assets/hra/downloads/pdf/services/civiljustice/OCJ_UA_Annual_Report_2022.pdf)
 
 **Who.** Tenant unions, legal aid groups, city councils, state legislatures.
 
@@ -149,7 +153,7 @@ That's the pattern for everything this book wants machines to do. When the marke
 
 **What.** Food first, then shelter, care, transport, and information. The same principle, one need at a time: provided to everyone, free at the point of use, paid for together.
 
-**Proof it's possible.** Britain did it for medical care in 1948 (the precedent at the end of this chapter). And the idea has been costed in detail. In 2017, researchers at University College London's Institute for Global Prosperity proposed Universal Basic Services, putting their version at about £42 billion a year and proposing to pay for it through a reduction in the personal tax allowance. [Universal basic services](https://en.wikipedia.org/wiki/Universal_basic_services) A 2019 follow-up argued that services like these would do more for people on low incomes than a universal basic income. [Basic Income Earth Network, on the 2019 UCL report](https://basicincome.org/news/2019/06/ucl-institute-for-global-prosperity-issues-report-on-universal-basic-services/)
+**Proof it's possible.** Britain did it for medical care in 1948 (the precedent at the end of this chapter). In 2017, researchers at University College London's Institute for Global Prosperity costed one proposed expansion of Universal Basic Services at about £42 billion a year, funded through changes to the personal tax allowance. Their package covered specified housing, transport, food, and communications provision. That was a UK proposal using its period's assumptions, not the price of meeting every need everywhere. [UCL, Future welfare: Universal Basic Services](https://www.ucl.ac.uk/bartlett/ideas/bartlett-review/bartlett-review-2017/future-welfare-universal-basic-services)
 
 **Who.** States and nations, pushed by every rung below them.
 
@@ -159,7 +163,7 @@ That's the pattern for everything this book wants machines to do. When the marke
 
 **What.** Publish the Adequate Level of Care every month, the way a city publishes crime or unemployment: who ate, who's housed, who got care, who was turned away. Tie budgets to the scoreboard.
 
-**Proof it's possible.** Every number on that board is already collected somewhere; Rung 1 showed two of them. What's missing is putting them on one page and making someone answerable for it. Chapter 18's "Put the failed meal on the board" is the same practice at the scale of one kitchen.
+**Proof it's possible.** Rung 1 showed existing food-recovery records and a national food-insecurity survey. They don't automatically yield a monthly count for your town. Start with the records local providers actually have, state the coverage and gaps, and agree how to count unmet need. Publish totals, not recipients' names or medical details. Chapter 18's "Put the failed meal on the board" is the same practice at the scale of one kitchen.
 
 **How you'll know.** People can read it, and it changes what gets funded.
 
@@ -169,7 +173,7 @@ That's the pattern for everything this book wants machines to do. When the marke
 
 Not abolished. Optional.
 
-And the floor doesn't have to stay where it starts. As robots and AI take on more of the work of growing food, building homes, and caring for bodies, what it costs to provide the floor keeps falling, and the floor can keep rising. That's the whole point of the machines. A gain in our ability to produce becomes a gain in our ability to live.
+And the floor doesn't have to stay where it starts. Where robots and AI reduce the full cost of growing food, building homes, or providing care, the saving can help raise the floor. Count maintenance and the remaining human work, then decide how the gain reaches people. That's the whole point of the machines. A gain in our ability to produce becomes a gain in our ability to live.
 
 ## What would stop it
 
@@ -177,7 +181,7 @@ Honesty about the obstacles is part of the plan.
 
 - **Money.** Every rung costs something to run, even when it's free to the person eating. The fights over who pays will be real. Have them while people are being fed, not as a condition for starting.
 - **Capture.** A service can be captured by whoever runs it. Build in complaints, reviews, and the scoreboard from day one.
-- **Backlash.** Stage 5 is real. Some people will fight any change that looks like losing ground. A concrete, measurable proposal is harder to fight than a slogan.
+- **Backlash.** The resistance described in Stage 5 can be real even if the nine stages never unfold in order. Some people will fight any change that looks like losing ground. A concrete, measurable proposal is harder to fight than a slogan.
 - **The people it doesn't pay.** Some of the people who profit from the way things are will spend a lot to keep it. The answer is the same one the electric co-ops found: build it anyway, own it together, and make it work well enough that nobody wants to go back.
 
 None of those is a reason to wait. Each rung stands on its own. A town that only ever gets to Rung 3 has still fed its people.
@@ -199,11 +203,11 @@ In 1942, in the middle of a war, a government committee chaired by the economist
 
 The doctors had real fears: a loss of freedom, new bureaucratic demands. Aneurin Bevan, the health minister, answered them rather than dismissing them. "Any health service which hopes to win the consent of the doctors must allay these fears," he said. And on 5 July 1948, the National Health Service opened. Britain became the first western country to offer medical care, free at the point of use, to its whole population. [UK Government History blog](https://history.blog.gov.uk/2023/07/13/the-founding-of-the-nhs-75-years-on/)
 
-Nothing about medicine changed that morning. The doctors, the hospitals, and the drugs were the same ones as the day before. What changed was the rule. The day before, whether you could see a doctor depended on whether you could pay. The day after, it didn't. Four years later Bevan put the principle in one sentence: no society can legitimately call itself civilized if a sick person is denied medical aid because of lack of means. [Bevan, In Place of Fear, chapter 5](https://publicmatters.org.uk/2019/02/05/aneurin-bevans-1952-essay-on-the-nhs-chapter-5-of-in-place-of-fear/)
+No new medical discovery arrived that morning to make the principle possible. A new institution did. Years of legislation, financing, and negotiation brought existing hospitals and practitioners into a service intended to cover everyone regardless of ability to pay. Some people had insurance or public provision before it; access hadn't been universal. The change was who could claim care and how the work was organized and paid for. [UK Government History blog](https://history.blog.gov.uk/2023/07/13/the-founding-of-the-nhs-75-years-on/) Four years later Bevan put the principle in one sentence: no society can legitimately call itself civilized if a sick person is denied medical aid because of lack of means. [Bevan, In Place of Fear, chapter 5](https://publicmatters.org.uk/2019/02/05/aneurin-bevans-1952-essay-on-the-nhs-chapter-5-of-in-place-of-fear/)
 
 **The mechanism.** A need stops costing money at the door when enough people decide on the record that it should, and then build the institution that makes the decision real. The capability usually exists long before the decision does. The obstacle is the rule.
 
-**The rule.** When someone says we can't afford to make a need free, ask what changed the day it became free somewhere else. Usually the answer is nothing but the decision.
+**The rule.** When someone says we can't afford to make a need free, ask how it became free somewhere else: who decided, who paid, and who kept the service running.
 
 **The practice.**
 

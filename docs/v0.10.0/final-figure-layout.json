@@ -1,0 +1,56 @@
+[
+  {
+    "page": 11,
+    "file": "intro-food-insecurity.svg",
+    "display_inches": [
+      4.56,
+      6.264183673469389
+    ],
+    "svg": true
+  },
+  {
+    "page": 98,
+    "file": "coop-cast.svg",
+    "display_inches": [
+      4.56,
+      5.5859999999999985
+    ],
+    "svg": true
+  },
+  {
+    "page": 155,
+    "file": "ch09-region-ring.svg",
+    "display_inches": [
+      4.56,
+      6.102
+    ],
+    "svg": true
+  },
+  {
+    "page": 190,
+    "file": "ch11-cooling-loop.svg",
+    "display_inches": [
+      4.56,
+      6.425634782608694
+    ],
+    "svg": true
+  },
+  {
+    "page": 265,
+    "file": "ch17-lora-node.svg",
+    "display_inches": [
+      4.56,
+      6.692
+    ],
+    "svg": true
+  },
+  {
+    "page": 269,
+    "file": "ch17-fab-lab.svg",
+    "display_inches": [
+      4.56,
+      6.731999999999999
+    ],
+    "svg": true
+  }
+]

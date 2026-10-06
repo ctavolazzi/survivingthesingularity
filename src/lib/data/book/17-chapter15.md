@@ -1,8 +1,8 @@
 # Chapter 15: The Power of Reclaiming Soil
 
-![Automated watering over garden soil](/book-images/ch12-farmbot-watering.jpg)
+![Line drawing of roots and layers of soil](/book-images/original-11-soil-profile.svg)
 
-*Automated watering over living soil. The substrate everything else depends on. (FarmBot, CC BY 4.0, via Wikimedia Commons)*
+*The living ground beneath the work. Original illustration for this book.*
 
 
 > *"The nation that destroys its soil destroys itself."*
@@ -10,7 +10,7 @@
 
 **In this chapter:**
 
-- Soil isn't dirt. It's a living system, and worn-out ground can be brought back in seasons, not centuries, with patience and the right help.
+- Soil is a living system. Some damaged ground improves within seasons; the starting condition and the work decide what recovery is possible.
 - Instruments lie with total confidence about everywhere they aren't. Your sensor lives at one centimeter; the root lives at thirty.
 - The shovel is also a probe. It just logs to your arm.
 - Know a site's history before you grow food on it. The people eating it can't be the experiment.
@@ -21,7 +21,7 @@ The reclamation beds went in on the worst ground the forty acres had: the quarte
 
 Not all of it, though. At the far end, where a tractor had bled hydraulic fluid through the Clinton administration, she drove four stakes and ran a string between them. "Not that end. That end gets a lab test and somebody who does this for a living before anybody plants a radish. The people eating this can't be the experiment."
 
-That spring she built her trial like the scientist she had never stopped being: twelve beds on the old pad. Six she broadforked through the pan, buried in deep mulch, and seeded with a winter cover of vetch and rye; six got only the mulch. Everything else identical. And Elijah instrumented everything, because that was his lane and by now everyone including him knew it: moisture probes from the greenhouse-controller stock and a dashboard that made the rows look orderly from anywhere he stood. He liked that part. Priya asked for the readings weekly. She never once asked him to mistake the diagram for the ground.
+That spring she built her trial like the scientist she had never stopped being: twelve beds on the old pad. Six she broadforked through the pan, buried in deep mulch, and seeded with a cover crop of vetch and rye; six got only the mulch. Everything else identical. And Elijah instrumented everything, because that was his lane and by now everyone including him knew it: moisture probes from the greenhouse-controller stock and a dashboard that made the rows look orderly from anywhere he stood. He liked that part. Priya asked for the readings weekly. She never once asked him to mistake the diagram for the ground.
 
 In August he brought her his conclusion, and he brought it gently, because he liked her and believed he was about to cost her something. The dashboard showed the two sets of beds tracking identical on moisture, week after week. His irrigation controller had actually been watering the forked beds a touch more. "I can't find your effect," he said. "I'm sorry. Whatever the forking is doing, it isn't measurable."
 
@@ -55,7 +55,7 @@ The notebook got its line that fall, under the arithmetic, where the important n
 
 If you want to know what the people with the most money think the future is worth, don't read their essays about artificial general intelligence or watch their keynotes about Mars. Look at what they buy.
 
-For years, big investment funds and some of the richest people alive have been buying farmland, water rights, and timber. By 2021 Bill Gates, with about 242,000 acres across eighteen states, was the largest private owner of farmland in the United States, [GeekWire, reporting The Land Report's figures](https://www.geekwire.com/2021/report-bill-gates-largest-owner-private-farmland-u-s-acreage-across-18-states/) and a teachers' pension giant runs one of the world's biggest farmland portfolios. [Nuveen, Global farmland](https://www.nuveen.com/global/investment-capabilities/real-assets/farmland) Whatever each buyer's reasons, the purchases make a point our very digital culture keeps trying to make us forget: **you can't eat code.**
+For years, big investment funds and some of the richest people alive have been buying farmland, water rights, and timber. In January 2021, Land Report put Bill Gates's farmland holdings at about 242,000 acres, the largest private holding in the United States. [Land Report, January 2021 newsletter](https://landreport.com/newsletters/LR_Newsletter_January2021.pdf) Investment manager Nuveen also manages a large global farmland portfolio. [Nuveen, Global farmland](https://www.nuveen.com/global/investment-capabilities/real-assets/farmland) Whatever each buyer's reasons, the purchases make a point our very digital culture keeps trying to make us forget: **you can't eat code.**
 
 You can run your life through a phone, trade digital assets, and spend your evenings in a virtual world. But as long as your body is a wet, biological organism, you're tied to a thin layer of topsoil and the fact that it rains. The oldest enclosure is still the most important one: the ground under your feet.
 
@@ -63,14 +63,14 @@ You can run your life through a phone, trade digital assets, and spend your even
 
 Chapter 12 showed a land trust being born. Here's the machinery, because it's worth understanding.
 
-![The Cooperative Land Trust Firewall: the speculative real estate market's attempts to buy or foreclose are blocked by a legal shield; inside the trust, the land is held in perpetuity and leased to community stewards on a 99-year ground lease](/book-images/ch15-clt-firewall.svg)
+![A typical community land trust homeownership arrangement. A household owns the home; the trust holds the land under a long renewable ground lease with resale restrictions. Taxes, debt and stewardship duties remain.](/book-images/ch15-clt-firewall.svg)
 
-*The land-trust idea. Split the title, and the speculative market has a much harder time reaching the dirt.*
+*A common land-trust housing arrangement separates ownership of land and home. Resale terms need continuing stewardship; taxes and debt remain.*
 
-A community land trust is usually a nonprofit, governed partly by the people who live on and around its land. It works by splitting the title:
+A community land trust is usually a nonprofit, governed partly by the people who live on and around its land. A common homeownership model separates ownership of the land from ownership of the home:
 
-1. **The trust holds the land.** The people using it own what they build on it, the homes, greenhouses, crops, under a long ground lease, often ninety-nine years. [Grounded Solutions Network, Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/)
-2. **The land comes off the speculative market.** Because the trust's charter restricts resale, the ground can't simply be flipped to the highest bidder.
+1. **The trust holds the land.** A household owns its home under a long ground lease, often ninety-nine years. Farming, rental housing, and other uses need their own agreements. [Grounded Solutions Network, Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/)
+2. **The trust stewards the land for the long term.** Its governing documents and leases set the restrictions. The legal structure has to do the work; calling an organization a land trust doesn't do it for you.
 3. **Stewardship passes on.** If a household leaves, it can sell its improvements, but at a formula that keeps them affordable for the next household.
 
 None of that is magic. A trust can still fail to pay its bills, be badly governed, or lose its land, as New Communities did in Georgia before it came back. But it changes who the land is for.
@@ -79,8 +79,8 @@ None of that is magic. A trust can still fail to pay its bills, be badly governe
 
 Property tax is the quiet way land changes hands: miss enough payments and the county can eventually sell the deed. There are legitimate, well-trodden ways to keep that bill manageable for working land:
 
-- **Agricultural and timber classifications.** In most places, land actively farmed or managed for timber is assessed far lower than residential land. A co-op that really farms its ground may qualify.
-- **Conservation easements.** A permanent, legally binding limit on developing the land can lower its assessed value, and in some cases qualify for other tax benefits, in exchange for protecting it for good.
+- **Agricultural and timber classifications.** Ask which use-based assessments your jurisdiction offers and what qualifies. In California, Williamson Act contracts can exchange restrictions on land use for assessment based on agricultural or open-space use. The state cautions that the tax benefit varies by property and isn't always greater than its existing treatment. [California Department of Conservation, Williamson Act FAQ](https://www.conservation.ca.gov/dlrp/wa/Documents/Williamson%20Act%20FAQ%202024.pdf)
+- **Conservation easements.** A lasting restriction on development changes what future owners may do. Ask the assessor how it affects this parcel's valuation. A qualifying donation may also receive a federal income-tax deduction, with specific legal and valuation requirements. That's a separate question from the annual property-tax bill. [IRS, Conservation Easements](https://www.irs.gov/charities-non-profits/conservation-easements)
 
 Talk to your county assessor and a local land-use attorney before you count on either. And never mistake lower taxes for no taxes: a plan that depends on a loophole is a plan waiting for a letter.
 
@@ -90,17 +90,23 @@ Once the ground is secure, you face the soil itself.
 
 For generations, industrial agriculture has treated soil mostly as a place to hold roots up and pour fertilizer in. Heavy tillage and heavy synthetic inputs can suppress a lot of the life that used to do some of that feeding for free, and a farm that leans entirely on bought inputs is only as independent as its supplier. The alternative isn't to reject every bag of fertilizer. It's to rebuild the living system underneath.
 
-![The Soil Food Web Engine: sunlight and plants pump sugars to bacteria and fungi, which mine minerals, which are digested by protozoa and nematodes, which release plant-available nutrients back to the plants in a closed loop](/book-images/ch15-soil-food-web.svg)
+![Plants exchange carbon with a soil food web. Decomposition and grazing cycle nutrients; harvest removes nutrients and losses also occur. Soil care includes measurement and appropriate replenishment.](/book-images/ch15-soil-food-web.svg)
 
-*The soil food web. Sunlight feeds the plants, the plants feed the microbes, and the microbes help feed the plants.*
+*The soil food web cycles nutrients. Harvest and other losses remove them, so a productive bed still needs measurement and appropriate replenishment.*
 
-A teaspoon of healthy soil can hold more living organisms than there are people on Earth: bacteria, fungi, protozoa, nematodes, and more. Together they run an economy:
+A teaspoon of healthy soil can hold enormous populations of bacteria, alongside fungal threads, protozoa, nematodes, and other life. Together they run an economy:
 
 1. **The exchange.** Plants turn sunlight into sugars and leak some of them out through their roots.
 2. **The mining.** Bacteria and fungi feed on those sugars. Some fungi extend a plant's reach for water and phosphorus; legume bacteria fix nitrogen from the air (Chapter 9). These are different partnerships doing different jobs.
 3. **The release.** Protozoa and nematodes eat bacteria and fungi and release nutrients near the roots in forms plants can use.
 
 Cover crops, compost, deep mulch, and less tillage all feed that system. [University of Minnesota Extension, Soil Biology](https://extension.umn.edu/natural-resources/conservation/agricultural-soil-and-water/soil-biology) What none of them do is make a garden feed itself forever. Every harvest carries nutrients away in the food, and something has to put them back.
+
+<!-- interactive:living-soil -->
+
+![Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.](/book-images/v101-scene-living-soil.svg)
+
+*The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile.*
 
 ## Know the ground's history
 
@@ -110,10 +116,10 @@ Cleaning up damaged ground belongs in the larger ambition, and machines may help
 
 ## Pool the work
 
-Growing food is hard, calorie-hungry work, and a single household working alone often burns more of its own energy than the garden gives back. So pool it:
+Growing food takes labor, tools, water, and attention across the season. A household doesn't have to provide all of that alone. Pool it:
 
 - **A tool commons.** Instead of five neighbors each buying a fragile little tiller, pool your money for one heavy-duty walk-behind tractor with swappable implements, and a shed to keep it in.
-- **Work by the season, not the clock.** A coordinated weekend crew can plant or harvest a whole community garden in two days, and leave the rest of the week free.
+- **Work by the season, not the clock.** A coordinated weekend crew can share a major planting or harvest. Keep watering, crop checks, and the next round of harvesting on a rota too; the garden keeps growing between work parties.
 - **A community seed library.** Collect and share open-pollinated varieties adapted to your own climate, whose seed you can save and replant. Many hybrids don't come back true from saved seed, and some patented varieties come with contracts that forbid saving it. Your own seed is a living library, shared freely.
 
 ## From a plot to a plate
@@ -123,7 +129,7 @@ Go back to Chapter 9's five-household trial. The garden records the crop and the
 ## Touch the dirt
 
 1. **Find your legal core.** Three to five people nearby who want the same thing. Look up how land trusts and co-ops are set up in your state, and find a sympathetic local lawyer.
-2. **Dig a hole.** In your own yard, a friend's, or a community plot. Is the soil pale, compacted, and empty of worms? Start a compost pile today. Ask a grocer or café about the scraps they throw away (Chapter 14).
+2. **Check, then dig.** Get permission and establish the site's history before disturbing it; use the testing advice above where contamination is possible. On suitable ground, compare texture, roots, and moisture at several depths. Worms alone aren't a verdict on soil health. Ask an established grower what organic matter your plot needs, and a grocer or café which suitable scraps they can supply for compost (Chapter 14).
 3. **Learn from someone who knows the ground.** Visit an established grower, with permission, and ask what observation changed their mind recently. What did they think was happening? What did they check? What did they change?
 4. **Look for the overlooked ground.** Tax-delinquent lots, county land banks, church land, underused farmland. Find out who's responsible for it and who used it before.
 

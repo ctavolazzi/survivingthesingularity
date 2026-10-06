@@ -56,6 +56,8 @@ Wilbur Wright, [letter to the Smithsonian Institution, May 30, 1899](https://sia
 
 [House of Lords debate, May 26, 1865, columns 867–872](https://api.parliament.uk/historic-hansard/lords/1865/may/26/second-reading), on the Locomotives on Roads Bill. A primary record of competing arguments and participants' reported experiences. Speeches do not establish either the safety of the machines or the later effects of the law.
 
+[Highways and Locomotives (Amendment) Act 1878](https://www.legislation.gov.uk/ukpga/Vict/41-42/77/pdfs/ukpga_18780077_en.pdf), section 29, and [Locomotives on Highways Act 1896](https://www.legislation.gov.uk/ukpga/Vict/59-60/36/pdfs/ukpga_18960036_en.pdf), sections 1 and 4. Original statutes: the first changes the advance-walker rule in England; the second exempts a defined light-locomotive class and sets a higher speed ceiling for it.
+
 ### P-05: Ming voyages
 
 Hong Kong Government, [Exhibition Follows the Footsteps of Zheng He](https://www.info.gov.hk/gia/general/200602/21/P200602210148.htm) (21 February 2006), announcing an exhibition at Hong Kong Museum of History. Institutional context for the seven voyages of 1405–1433. For a participant's account, see Ma Huan, *Ying-yai Sheng-lan: The Overall Survey of the Ocean's Shores*, translated by J. V. G. Mills (1970), identified in the [Indiana University library catalogue](https://iucat.iu.edu/iub/6311122). The catalogue identifies the edition; it is not a substitute for reading the translated text.
@@ -129,6 +131,8 @@ Swatch Group, [Company History](https://www.swatchgroup.com/en/swatch-group/swat
 ### P-15: Homesteading
 
 US National Archives, [Homestead Act of 1862](https://www.archives.gov/milestone-documents/homestead-act), original act and transcript. National Park Service, [Homestead History and Culture](https://www.nps.gov/home/learn/historyculture/index.htm), supplies the necessary context of prior Indigenous habitation and displacement. The legal transfer of land must not be confused with the land having been empty or universally available.
+
+US Capitol Visitor Center, [Homesteading Certificate of Eligibility, Daniel Freeman, January 20, 1868](https://www.visitthecapitol.gov/artifact/homesteading-certificate-eligibility-daniel-freeman-january-20-1868). Certificate and institutional description of Freeman completing the five-year requirement. The 1862 Act above also provided a paid route to earlier title.
 
 ### P-16: Mail-order houses
 
@@ -215,9 +219,9 @@ City of Vienna, Municipal and Provincial Archives, [From Red Vienna to the Stän
 
 City of Vienna, Rathauskorrespondenz, [Der Karl-Marx-Hof ist 60](https://presse.wien.gv.at/1990/10/11/der-karl-marx-hof-ist-60), October 11, 1990. German anniversary notice describing the complex and ongoing renovation plans.
 
-## Sources for material restored or added in this edition
+## Additional chapter sources
 
-Most of what follows was researched for earlier editions, cut in v0.8.0, and restored here; a few items were checked for the first time for this edition. Figures quoted from a builder's own video or a company's own history are attributed as such in the text.
+Much of what follows was researched for earlier editions, cut in v0.8.0, and restored in v0.9.0. Later additions support the expanded manuscript and corrections through v0.10.2. Figures quoted from a builder's own video or a company's own history are attributed as such in the text.
 
 ### Introduction and Chapter 1: definitions, forecasts, and the Transformer
 
@@ -227,9 +231,11 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - Stanislaw Ulam's 1958 recollection of John von Neumann, as quoted in Vinge's essay, listed above.
 - Hans Moravec, *Mind Children* (Harvard University Press, 1988); Nick Bostrom, ["How Long Before Superintelligence?"](https://nickbostrom.com/superintelligence) (1997, revised); Ray Kurzweil, *The Singularity Is Near* (Viking, 2005); John Smart, [Acceleration Watch](http://www.accelerationwatch.com/).
 - Leopold Aschenbrenner, [Situational Awareness: The Decade Ahead](https://situational-awareness.ai/) (2024). One insider's argument, cited as such.
-- Katja Grace and colleagues, [Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843) (2024). Source of the 2022 and 2023 aggregate forecasts, the 10 percent probability of high-level machine intelligence by 2027, and the extinction-risk responses.
+- Katja Grace and colleagues, [Thousands of AI Authors on the Future of AI, revision 3](https://arxiv.org/abs/2401.02843v3), first published 2024, revised 2025. Source of the 2022 and 2023 aggregate forecasts, the 10 percent probability of high-level machine intelligence by 2027, and the extinction-risk responses. The surveys used changing samples; the displayed dates are aggregate probability thresholds, not every respondent revising a personal date.
 - Brett J. Kagan and colleagues, [In vitro neurons learn and exhibit sentience when embodied in a simulated game-world](https://pubmed.ncbi.nlm.nih.gov/36228614/), *Neuron* (2022). The DishBrain *Pong* study; see also the [2024 comparison with deep reinforcement learning](https://arxiv.org/abs/2405.16946).
 - Aaron Bastani, *Fully Automated Luxury Communism* (Verso, 2019).
+
+- Stanford HAI, [AI Index Report 2025, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf). The historical query-price comparison fixes a GPT-3.5-level MMLU threshold. It does not measure energy per task or equivalence across all work.
 
 ### Chapters 3 and 4: the far horizon
 
@@ -237,12 +243,16 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - David Kipping, ["A Bayesian Approach to the Simulation Argument"](https://www.mdpi.com/2218-1997/6/8/109), *Universe* 6 (2020).
 - Copernicus's dedication and the Osiander preface are listed under P-06 above.
 
+- NASA, [Hubble Views the Star that Changed the Universe](https://science.nasa.gov/missions/hubble/hubble-views-the-star-that-changed-the-universe/) (2011). Institutional history of the Cepheid observations that placed Andromeda outside the Milky Way.
+
 ### Chapter 5: energy and the cyberdeck lineage
 
 - *The Times* (London), July 1816, on the waltz as an "indecent foreign dance," as quoted in John Hood, [Hayek, Strauss, and the Political Waltz](https://fee.org/articles/hayek-strauss-and-the-political-waltz/), Foundation for Economic Education (2005). A secondary quotation; the 1816 issue itself was not inspected.
 - McGill Office for Science and Society, [The Moral and Medical Panic Over Bicycles](https://www.mcgill.ca/oss/article/history-did-you-know/moral-and-medical-panic-over-bicycles), on "bicycle face."
 - John Philip Sousa, ["The Menace of Mechanical Music"](https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/18ab3aba9fe7aa1502a55cd049333659_MIT21M_380F09_read02_sousa.pdf), *Appleton's Magazine* (1906), full text via MIT OpenCourseWare.
 - William Gibson, *Neuromancer* (1984), origin of the "cyberspace deck."
+
+- Raspberry Pi, [Computer Hardware: Maximum Power Output](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#maximum-power-output), and E Ink, [Benefits: Bi-Stability](https://www.eink.com/tech/detail/Benefits). Manufacturer documentation on peripheral budgets and static display retention. Neither establishes total draw or battery runtime for a particular cyberdeck.
 
 ### Chapter 7: work, loss, and the labor campaigns
 
@@ -253,6 +263,8 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - Brian Merchant, *Blood in the Machine* (Little, Brown, 2023).
 - American Federation of Musicians, the robot advertisements in [*Exhibitors Herald-World*, 16 November 1929](https://archive.org/details/exhibitorsherald97unse/page/n586/mode/2up) and [17 May 1930](https://archive.org/details/exhibitorsherald99unse/page/n735/mode/2up); Smithsonian Magazine, ["Musicians Wage War Against Evil Robots"](https://www.smithsonianmag.com/history/musicians-wage-war-against-evil-robots-92702721/).
 - [Home Taping Is Killing Music](https://en.wikipedia.org/wiki/Home_Taping_Is_Killing_Music) (BPI, 1981); Jack Valenti's 1982 testimony to the House Judiciary subcommittee on home recording; [*Sony Corp. of America v. Universal City Studios*, 464 U.S. 417 (1984)](https://www.law.cornell.edu/supremecourt/text/464/417).
+
+- National Highway Traffic Safety Administration, [information request to Waymo, November 24, 2025](https://static.nhtsa.gov/odi/inv/2025/INOT-PE25013-30887.pdf), investigation PE25013. Primary record of an inquiry concerning stopped school buses. An inquiry is not a final finding about every reported incident.
 
 ### Chapter 8: attention and cooperation
 
@@ -269,11 +281,35 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 
 - Ilia Shumailov and colleagues, ["AI models collapse when trained on recursively generated data"](https://www.nature.com/articles/s41586-024-07566-y), *Nature* 631 (2024).
 
+- Internal Revenue Service, [What Is Taxable and Nontaxable Income?](https://www.irs.gov/businesses/small-businesses-self-employed/what-is-taxable-and-nontaxable-income). Barter generally creates income measured at fair market value; the guidance distinguishes informal noncommercial exchanges of similar services.
+
+### Chapter 11: local computing and machine work
+
+- National Institute of Standards and Technology, [Air Gap](https://csrc.nist.gov/glossary/term/air_gap). Physical separation and the controlled transfer of information across it; local execution alone is not isolation.
+- California Department of Justice, [Data Security Breach Reporting](https://oag.ca.gov/privacy/databreach/reporting). State reporting requirements for defined incidents. Counsel must assess the facts; this source does not determine whether the fictional exposure meets a statutory definition.
+- Occupational Safety and Health Administration, [Control of Hazardous Energy, 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147). Servicing procedures address energy isolation, stored energy, and verification. A command to stop software is not equivalent to physical isolation.
+
+### Chapters 12 and 15: land tenure and assessment
+
+- Grounded Solutions Network, [Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/). Practitioner documentation of a typical affordable-homeownership model: separately owned land and homes, a renewable ground lease often lasting ninety-nine years, and resale restrictions. Other uses need appropriate agreements.
+- California Department of Conservation, [Williamson Act FAQ](https://www.conservation.ca.gov/dlrp/wa/Documents/Williamson%20Act%20FAQ%202024.pdf) (2024). Use restrictions and property-specific assessment; a contract does not necessarily produce greater savings than existing tax treatment.
+- Internal Revenue Service, [Conservation Easements](https://www.irs.gov/charities-non-profits/conservation-easements). Qualified donations and valuation requirements for federal income-tax deductions. These are distinct from local property-tax assessments.
+- Land Report, [January 2021 newsletter](https://landreport.com/newsletters/LR_Newsletter_January2021.pdf). Original publication's estimate of Gates's farmland holdings; a dated estimate rather than a current parcel inventory.
+- Nuveen, [Global Farmland Capabilities](https://www.nuveen.com/global/investment-capabilities/real-assets/farmland). Investment manager's description of its portfolio, not independent evidence of any investor's motive.
+
+### Chapter 13: shelter and heating
+
+- DuraVent, [DVL](https://duravent.com/product/dvl). Manufacturer documentation identifies the product as an interior connector, distinct from the chimney.
+- US Fire Administration, [Heating Fire Safety](https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/heating/). Guidance on combustible clearance and maintenance.
+- Centers for Disease Control and Prevention, [Carbon Monoxide Poisoning: About](https://www.cdc.gov/carbon-monoxide/about/index.html). Fuel-burning equipment and enclosed-space exposure.
+
 ### Chapter 14: food recovery and the graveyard
 
-- USDA, [Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs). The 30 to 40 percent estimate of food waste at the retail and consumer levels.
+- USDA, [Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs). The 30 to 40 percent estimate of food waste at the retail and consumer levels uses a 2010 baseline; it is not a fresh measurement for the publication year.
 - CalRecycle, [SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/), the state's account of the edible-food-recovery requirements and the 20 percent recovery target for 2025; NPR, [French Food Waste Law Changing How Grocery Stores Approach Excess Food](https://www.npr.org/sections/thesalt/2018/02/24/586579455/french-food-waste-law-changing-how-grocery-stores-approach-excess-food) (2018), on France's 2016 law (Law 2016-138, the Garot law).
 - Snopes, [Kodak's digital camera](https://www.snopes.com/fact-check/kodak-digital-camera-invention/), on Sasson's account of management's response; Fortune, ["Sears Could've Been Amazon"](https://fortune.com/longform/sears-couldve-been-amazon/); Variety, ["How Blockbuster Could Have Owned Netflix"](https://variety.com/2013/biz/news/epic-fail-how-blockbuster-could-have-owned-netflix-1200823443/); Slate, [Borders bankruptcy: Done in by its own stupidity, not the Internet](https://slate.com/business/2011/07/borders-bankruptcy-done-in-by-its-own-stupidity-not-the-internet.html) (July 2011).
+
+- Toyota, [Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/). Manufacturer description of just-in-time production includes minimum necessary stock; it does not mean every inventory is literally zero.
 
 ### Chapter 17: tools
 
@@ -282,11 +318,24 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - SANANBIO, [Introducing the SANANBIO Uplift](https://www.youtube.com/watch?v=0s4YwzbUzhw). Vendor promotion; source of the labor-cost and human-touch claims.
 - Open Source Ecology, [Global Village Construction Set](https://www.opensourceecology.org/gvcs/); [Meshtastic](https://meshtastic.org/); [Kiwix](https://kiwix.org/).
 
+- FAO, [Use of Algae and Aquatic Macrophytes as Feed in Small-scale Aquaculture](https://www.fao.org/4/i1141e/i1141e00.htm), Fisheries and Aquaculture Technical Paper 531 (2009). Species, feed composition, and inclusion levels matter. Growing algae does not establish a complete diet for every fish or validate the prototype's output.
+- Semtech, [What Is LoRa?](https://www.semtech.com/lora/what-is-lora). Manufacturer description of the radio modulation technology, distinct from a complete network protocol.
+- Kiwix, [FAQ](https://get.kiwix.org/en/faq/). Project documentation on offline archives, supported platforms, and differences among `mini`, `nopic`, and `maxi` editions.
+
 ### Appendix E: the cyberdeck
 
 - Newsweek, ["What is a cyberdeck: Meet Gen Z's new DIY obsession"](https://www.newsweek.com/what-is-a-cyberdeck-gen-zs-new-custom-computing-obsession-11787017) (2026); TechCrunch, ["Cyberdecks are having a moment"](https://techcrunch.com/2026/06/02/cyberdeck-tiktok-trend-reject-big-tech/) (2 June 2026).
 - Hackaday's cyberdeck contests: [2022](https://hackaday.com/2022/10/13/2022-cyberdeck-contest-picking-the-best-of-the-best/) and [2023](https://hackaday.com/2023/09/07/2023-cyberdeck-challenge-the-best-decks-on-the-net/).
-- [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030.
+- [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030; [interception and disclosure rules](https://www.law.cornell.edu/uscode/text/18/2511), 18 U.S.C. 2511; and [Part 15 operating conditions](https://www.law.cornell.edu/cfr/text/47/15.5), 47 C.F.R. 15.5. US provisions cited for bounded examples, not permission to operate in every jurisdiction.
+- Meshtastic, [Channel Configuration](https://meshtastic.org/docs/configuration/radio/channels/). Project documentation distinguishes public default keys from randomly generated private-group keys and explains location and gateway settings.
+- Cryptsetup contributors, [FAQ](https://gitlab.com/cryptsetup/cryptsetup/-/blob/main/FAQ.md). Technical documentation on disk encryption, passphrases, backups, and threat limits. Encryption of stored data does not protect an already compromised running system.
+
+- ClockworkPi, [uConsole](https://www.clockworkpi.com/uconsole), and ZitaoTech, [Hackberry Pi Zero](https://github.com/ZitaoTech/Hackberry-Pi_Zero). Maker documentation of components and power arrangements. Kit contents vary; uConsole excludes battery cells and offers a configuration without the compute module.
+- Raspberry Pi, [Heating and Cooling Raspberry Pi 5](https://www.raspberrypi.com/news/heating-and-cooling-raspberry-pi-5/). Manufacturer tests distinguish ordinary use from sustained workloads that can cause thermal throttling.
+
+### Chapter 18: specialized materials
+
+- US Geological Survey, [Silica Statistics and Information](https://www.usgs.gov/centers/national-minerals-information-center/silica-statistics-and-information). Ultra-high-purity quartz is used in semiconductor-manufacturing crucibles. This establishes a material requirement, not a fixed duration for a future supply interruption.
 
 ### Introduction and Chapter 19: the conversion
 
@@ -294,7 +343,7 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 - California Department of Food and Agriculture, [Food Recovery](https://www.cdfa.ca.gov/is/foodrecovery/): US food waste estimated at 30 to 40 percent of the food supply; Californians throw away five to six million tons a year.
 - Consumer Financial Protection Bureau, [CFPB Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) (2022), on credit reports, credit scores, and proprietary risk scores in rental decisions.
 - Shoshana Zuboff, *The Age of Surveillance Capitalism* (PublicAffairs, 2019); [summary](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism).
-- National Low Income Housing Coalition, [New Research Finds 2.7 Million Households Receive Eviction Filings Annually](https://nlihc.org/resource/new-research-finds-27-million-households-receive-eviction-filings-annually) (2022), reporting Gromis et al., "Estimating Eviction Prevalence across the United States," *PNAS*: 3.6 million filings a year, 2000 to 2018.
+- Ashley Gromis and colleagues, [Estimating Eviction Prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/), *PNAS* 119 (2022), e2116169119. Author-institution research record. The annual averages of 3.6 million filings and 2.7 million households concern 2000 to 2018, not the current year.
 - Judicial Council of California, [What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case), on the sheriff's notice to vacate and lockout.
 - Oxfam, [An Economy for the 99%](https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/file_attachments/bp-economy-for-99-percent-160117-summ-en.pdf) (January 2017), and [Billionaire wealth jumps three times faster in 2025](https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking) (19 January 2026). Oxfam's wealth comparisons rest on published estimates of net worth and have been debated; they are cited here for scale, not precision.
 - California Department of Education, [California Universal Meals](https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp).
@@ -331,3 +380,29 @@ The entries below identify the work or institutional record supporting each attr
 - **Chapter 16, A. J. Liebling:** "The Wayward Press: Do You Belong in Journalism?", *The New Yorker*, 14 May 1960, page 109, where it appears as a parenthetical remark. [Quote Investigator](https://quoteinvestigator.com/2015/05/21/free-press/)
 - **Conclusion, Oscar Wilde:** [The Soul of Man under Socialism](https://www.gutenberg.org/ebooks/1017) (1891). A few lines later Wilde writes that "the community by means of organisation of machinery will supply the useful things."
 - **Chapter 19, Aneurin Bevan:** *In Place of Fear* (1952), chapter 5; see P-23 above. The sentence is quoted from its middle, where it begins "It insists that no society…"; the epigraph capitalizes the first word.
+
+
+## Sources checked for v0.10.0 corrections
+
+- Gloria Mark, Victor M. González, and Justin Harris, [No Task Left Behind? Examining the Nature of Fragmented Work](https://www.ics.uci.edu/~gmark/CHI2005.pdf), CHI 2005. Observed time before workers resumed an interrupted activity; not a fixed neurological recovery threshold. The CHI 2008 study listed above examines speed and stress under interruptions.
+- International Energy Agency, [Key Questions on Energy and AI: Executive Summary](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) (2026). Separates the estimate of 2025 data-center electricity use from the projection for 2030.
+- France, [Law 2016-138 of 11 February 2016, Article 1](https://www.legifrance.gouv.fr/eli/loi/2016/2/11/2016-138/jo/texte). Original enactment on food waste, including proposed donation agreements for eligible shops. A legal requirement is distinct from proof of universal collection or access.
+- University College London, [The future of welfare: Universal Basic Services](https://www.ucl.ac.uk/bartlett/ideas/bartlett-review/bartlett-review-2017/future-welfare-universal-basic-services) (2017). The institution's account of the proposal, not an implemented universal guarantee.
+- llama.cpp contributors, [HTTP server documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md). Bind addresses and server access settings; running a model locally doesn't by itself prevent network exposure.
+- US Department of Energy, [Insulation Guide](https://www.energy.gov/sites/default/files/2023-03/insulation_guide_0.pdf). Building-envelope guidance on insulation and air sealing, without relying on a tax-credit announcement.
+- US Department of Energy, [DC Microgrid Scoping Study](https://www.energy.gov/sites/prod/files/2015/03/f20/DC_Microgrid_Scoping_Study_LosAlamos-Mar2015.pdf) (2015). Configuration-dependent efficiency and conversion stages; no universal zero-loss claim.
+- Meshtastic, [Mesh algorithm](https://meshtastic.org/docs/overview/mesh-algo/), [LoRa configuration](https://meshtastic.org/docs/configuration/radio/lora/), [Encryption](https://meshtastic.org/docs/overview/encryption/), and [Web Flasher source](https://github.com/meshtastic/web-flasher). Project documentation for routing limits, matching settings, key handling, and hardware-specific firmware.
+
+- FAO, [Labour-saving technologies and practices: draught animal power and implements](https://www.fao.org/family-farming/detail/en/c/1619223/). Animal traction involves care, training, equipment, and human guidance; it does not establish labor free of human supervision.
+- Anthropic, [Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5) (June 30, updated July 1, 2026). Company account of Fable's return and continuing limits on Mythos access; safeguard claims remain attributed.
+- US Food and Drug Administration, [Medical Devices and Natural Disasters](https://www.fda.gov/medical-devices/emergency-situations-medical-devices/fda-offers-tips-about-medical-devices-and-natural-disasters). Outage planning for powered equipment with healthcare providers and equipment suppliers.
+- OpenStax, [Statements of the Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics), *University Physics*, Volume 2. The heat-engine limitation applies to operation in a complete cycle.
+- Library of Congress, [Good Times Are Here: New to the National Jukebox](https://blogs.loc.gov/now-see-hear/2022/10/good-times-are-here-new-to-the-national-jukebox/) (2022). Sousa's band recorded frequently under other conductors; Sousa himself rarely entered the studio.
+- Marcus E. Raichle and Debra A. Gusnard, [Appraising the Brain's Energy Budget](https://pmc.ncbi.nlm.nih.gov/articles/124895/), *Proceedings of the National Academy of Sciences* 99 (2002). Ongoing brain activity and energy use; the resting-energy estimate is not a fixed allowance of decisions.
+
+
+## Visual source notes for v0.10.1
+
+- **Waste pathways, Chapter 14:** US Environmental Protection Agency, [2019 Wasted Food Report](https://www.epa.gov/system/files/documents/2024-04/2019-wasted-food-report_508_opt_ec_4.23correction.pdf), corrected April 2024, Table 5, printed page 12. Estimated management of food from retail, food service, and households, including inedible parts. The total is not a quantity that could all be donated; donation excludes food banks' undistributed portion.
+- **Land values, Chapter 12:** USDA National Agricultural Statistics Service, [Land Values 2026 Summary](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf), page 5. Annual national farm-real-estate survey estimates for 2012 through 2026 include land and buildings. Values are nominal dollars per acre, not inflation-adjusted values or local asking prices.
+- **Income and food access, Chapter 6:** USDA Economic Research Service, [Household Food Security in the United States in 2024](https://www.ers.usda.gov/media/9161/err-358.pdf?v=35619), ERR-358, Table 2, printed page 20. Survey estimates for two selected, non-overlapping income groups, with the national rate as a reference. The comparison omits middle and unknown income categories and does not establish causation.

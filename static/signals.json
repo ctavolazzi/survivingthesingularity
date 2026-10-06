@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T21:08:12Z",
+  "generated_at": "2026-10-06T18:51:29Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -182,6 +182,31 @@
         "autonomy",
         "llm",
         "language model"
+      ]
+    },
+    {
+      "id": "2610.06400",
+      "source": "arxiv",
+      "title": "Visual Swarm Navigation via Deep Reinforcement Learning and Evolutionary Hybrid Design",
+      "url": "https://arxiv.org/abs/2610.06400",
+      "authors": [
+        "Álvaro Díez",
+        "Fidel Aznar"
+      ],
+      "summary": "Swarm robotics presents a robust and cost-effective paradigm for advanced automation in complex, dynamic environments, such as those encountered in search and rescue or environmental monitoring. A fundamental challenge for this field is the data-driven design of decentralized controllers capable of generating emergent collective behaviors. This paper proposes a novel, AI-driven hybrid methodology for the automatic synthesis of swarm robotic controllers for autonomous visual navigation. This approach synergistically combines multi-agent reinforcement learning with neuro-evolutionary strategies,",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-05",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "autonomous",
+        "robot",
+        "robotics",
+        "emergent",
+        "automation"
       ]
     },
     {
@@ -507,6 +532,132 @@
       ]
     },
     {
+      "id": "2610.06843",
+      "source": "arxiv",
+      "title": "Recursive Video In-Context Learning for Agentic Robot",
+      "url": "https://arxiv.org/abs/2610.06843",
+      "authors": [
+        "Wenrui Bao",
+        "Xinxin Liu",
+        "Bingxin Xu",
+        "Yuzhang Shang"
+      ],
+      "summary": "LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyframes lose the contact detail that decides whether a grasp holds, and what the agent needs shifts from the task's structure while planning to the frames around each contact. We introduce Recursive Video In-Context Learning (RV-ICL), a training-free method that turns a demonstration into a hierarchy the",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "planning",
+        "robot",
+        "llm",
+        "in-context learning"
+      ]
+    },
+    {
+      "id": "2610.06597",
+      "source": "arxiv",
+      "title": "Can Agent Harnesses and Inference Engines Hear Each Other? The HEAR Protocol for Agentic LLM Serving",
+      "url": "https://arxiv.org/abs/2610.06597",
+      "authors": [
+        "Jiaqi Zhao",
+        "Haodong Chen",
+        "Jitai Hao",
+        "Wei Zhao"
+      ],
+      "summary": "LLM agents increasingly execute complex workflows involving multi-turn reasoning, tool use, and parallel agents. Efficient serving requires decisions that span two layers with complementary information: the agent harness understands workflow dependencies, context lifecycles, and execution objectives, whereas the inference engine observes request queues, KV-cache state, resource pressure, and execution capabilities. Existing interfaces do not systematically connect these views, limiting workflow-aware execution.\n  HEAR, a bidirectional Harness--Engine Pairing protocol for agentic LLM serving. H",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
+        "reasoning",
+        "llm"
+      ]
+    },
+    {
+      "id": "2610.06563",
+      "source": "arxiv",
+      "title": "HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention",
+      "url": "https://arxiv.org/abs/2610.06563",
+      "authors": [
+        "Han Luo",
+        "Bingbing Wen",
+        "Guang Yang",
+        "Zora Zhiruo Wang"
+      ],
+      "summary": "Large language model (LLM) agents are increasingly capable of acting in complex tool-use environments, yet they often fail to recognize when tasks are infeasible and no valid solution exists. Recent work has formalized this reliability gap as the problem of agentic abstention, and existing approaches typically optimize a model or agent harness against a fixed set of tasks, leading to limited generalization to unseen failure modes. We introduce HERA, a framework for harness-environment co-evolution for agentic abstention. HERA consists of (i) a pipeline to automatically construct verifiable pai",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool-use",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.06695",
+      "source": "arxiv",
+      "title": "MedPrune: Topology-Efficient Multimodal Multi-Agent Communication Evolution for Medical VQA Tasks",
+      "url": "https://arxiv.org/abs/2610.06695",
+      "authors": [
+        "Jiuheng Wan",
+        "Runze Li",
+        "Chen Chen",
+        "Tingyuan Hu"
+      ],
+      "summary": "While medical multimodal large language models (Med-MLLMs) advance medical visual question answering (VQA), existing clinical workflow-inspired multi-agent frameworks suffer from interaction patterns and excessive computational overhead caused by redundant communication topologies. In this paper, we propose MedPrune, an efficient medical multimodal multi-agent collaboration framework that dynamically prunes both nodes and edges from the communication topology to enhance reasoning ability and token efficiency. Specifically, we first formulate the diagnostic process as a heterogeneous communicat",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "reasoning",
+        "llm",
+        "language model"
+      ]
+    },
+    {
+      "id": "2610.05782",
+      "source": "arxiv",
+      "title": "Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement",
+      "url": "https://arxiv.org/abs/2610.05782",
+      "authors": [
+        "Shovan Roy",
+        "Lopamudra Praharaj",
+        "Maanak Gupta",
+        "Bhavani Thuraisingham"
+      ],
+      "summary": "Agentic AI is emerging as a promising paradigm for automating complex cybersecurity decisions, yet its use in enforcing zero trust introduces significant challenges in safety, reliability, and policy compliance. This paper presents Agentic AI based zero trust architecture (Agentic-ZTA) that operationalizes the NIST SP 800-207 ZTA architecture control loop through coordinated multi- agent decision pipeline. In the proposed framework, policy knowledge is embedded into a retrieval-augmented generation pipeline and retrieved at inference time as top-k relevant policies. Access requests are interce",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-05",
+      "score": 8.0,
+      "raw_score": 16,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "autonomous",
+        "retrieval"
+      ]
+    },
+    {
       "id": "2610.03240",
       "source": "arxiv",
       "title": "Collective Bias Mitigation via Model Routing and Collaboration",
@@ -795,6 +946,55 @@
         "autonomous",
         "reasoning",
         "llm"
+      ]
+    },
+    {
+      "id": "2610.06790",
+      "source": "arxiv",
+      "title": "Back to the Future: Rethinking EDA Infrastructure for Agentic Systems in Chip Design Verification",
+      "url": "https://arxiv.org/abs/2610.06790",
+      "authors": [
+        "Je Yang",
+        "Ivan Lobov",
+        "Thomas Karpati"
+      ],
+      "summary": "The unprecedented computational scale of modern artificial intelligence depends on complex, multi-billion-transistor Systems-on-Chip, yet the workflows that verify these chips remain stubbornly manual. Although Large Language Models (LLMs) have made rapid inroads into Electronic Design Automation (EDA), approximately 74.6% of existing studies target static Register-Transfer Level (RTL) code generation, leaving post-simulation verification and interactive waveform debugging largely untouched. We introduce Back-to-the-Future (BTTF), an end-to-end agentic framework that closes this infrastructura",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-05",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model",
+        "automation"
+      ]
+    },
+    {
+      "id": "2610.05964",
+      "source": "arxiv",
+      "title": "From Social Reasoning to Embodied Interaction: An Agentic Framework for Social Robots",
+      "url": "https://arxiv.org/abs/2610.05964",
+      "authors": [
+        "Ziyu Cheng",
+        "Yuewen Guo",
+        "Zhirui Liu",
+        "Dong Zhang"
+      ],
+      "summary": "Natural face-to-face human--robot interaction requires a robot to understand an evolving social situation, decide when to engage, and express its intent through coordinated physical behavior. Yet existing approaches rarely close this loop: foundation-model agents provide increasingly capable multimodal reasoning and memory but remain largely disembodied, while expressive virtual agents do not face the physical constraints of real robots, and physical social robots typically address social reasoning and embodied expression only partially. We present ARISE, a unified framework that bridges Agent",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-05",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "embodied",
+        "robot"
       ]
     },
     {
@@ -1116,6 +1316,29 @@
       ]
     },
     {
+      "id": "2610.04829",
+      "source": "arxiv",
+      "title": "Viva La Vida: Verification and Accumulation Failures in Multi-Agent Proof Search",
+      "url": "https://arxiv.org/abs/2610.04829",
+      "authors": [
+        "Benji Xu",
+        "Ken Zheng",
+        "Noah Han"
+      ],
+      "summary": "When an agentic prover works on an open problem, there is no proof assistant to fall back on: its verifier and lemma library are ultimately language models judging model outputs. We instrumented such a system end to end and analyzed $51{,}754$ traced observations across three full runs ($186$ hours, \\$$5{,}694$). We find three connected failure modes. First, the three-model verifier requires unanimity and treats parse or API failure as non-approval; in $10$ of $12$ verification events, one member returned no parseable output or an API error, making acceptance arithmetically impossible without ",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-04",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.02654",
       "source": "arxiv",
       "title": "Coherence-Driven Belief Formation and Population Dynamics of Contagion in LLM Agents",
@@ -1211,6 +1434,30 @@
       ]
     },
     {
+      "id": "2610.05247",
+      "source": "arxiv",
+      "title": "templar: agentic induction and evolution of standardized radiology reporting templates from large-scale clinical corpora",
+      "url": "https://arxiv.org/abs/2610.05247",
+      "authors": [
+        "Xiaotian Hu",
+        "Mingxuan Liu",
+        "Zhonghan Wang",
+        "Xinfeng Zhang"
+      ],
+      "summary": "Structured radiology reporting mitigates the heterogeneity of free-text reports, yet its benefits depend on high-quality reporting templates. In practice, such templates are conventionally built through labor-intensive expert consensus and therefore vary across institutions and lag behind evolving clinical practice. Large language models (LLMs) enable automated template induction, but existing approaches remain limited: single-LLM induction is constrained by context length, and the corpus-scale method ASTAR produces a static, closed-corpus template without external grounding or downstream adap",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-04",
+      "score": 6.5,
+      "raw_score": 13,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "llm",
+        "language model"
+      ]
+    },
+    {
       "id": "2610.03356",
       "source": "arxiv",
       "title": "ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models",
@@ -1232,247 +1479,6 @@
         "agent",
         "llm",
         "language model"
-      ]
-    },
-    {
-      "id": "2610.03421",
-      "source": "arxiv",
-      "title": "CLIMB: Confidence-Guided Complementary Evidence for Multimodal Retrieval-Augmented Generation",
-      "url": "https://arxiv.org/abs/2610.03421",
-      "authors": [
-        "Hang Gao",
-        "Wujiang Xu",
-        "Zhixing Zhang",
-        "Kai Mei"
-      ],
-      "summary": "Multimodal large language models (MLLMs) have shown strong visual reasoning abilities, but knowledge-intensive visual question answering often requires external textual evidence beyond the image and the model's parametric knowledge. Existing multimodal RAG systems commonly rely on Top-$K$ retrieval or reranking, which may return redundant passages and provide limited control over whether an answer update is sufficiently supported by the retrieved evidence. We propose \\textit{CLIMB}, a training-free inference-time framework for multimodal RAG. CLIMB first constructs a compact complementary evid",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-02",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.03124",
-      "source": "arxiv",
-      "title": "The Fragility of Trigger-Tag Mechanisms for Misuse Detection in Open-Weight LLMs",
-      "url": "https://arxiv.org/abs/2610.03124",
-      "authors": [
-        "Toluwani Aremu",
-        "Manit Baser",
-        "Mohan Gurusamy",
-        "Nils Lukas"
-      ],
-      "summary": "Open-weight language models can be downloaded, modified, and deployed beyond their developers' control, limiting the effectiveness of centrally enforced safeguards. Recent work has therefore proposed \\emph{trigger-tag} mechanisms that produce a detectable signal when a model is used under a target condition, such as generating phishing contents. Although these mechanisms borrow from established techniques, their use for conditional misuse detection in open-weight LLMs is relatively new. Therefore, existing research works have not systematically studied the robustness of trigger-tag mechanisms ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-02",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agi",
-        "llm",
-        "language model",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.03174",
-      "source": "arxiv",
-      "title": "FinNextAssist: Towards Professional Financial Deep Research Assistant",
-      "url": "https://arxiv.org/abs/2610.03174",
-      "authors": [
-        "Xiangyu Li",
-        "Fengbin Zhu",
-        "Xuan Yao",
-        "Siyu Liu"
-      ],
-      "summary": "Deep Research (DR) agents have demonstrated strong capabilities in complex, research-oriented tasks through autonomous planning, iterative retrieval, multi-step reasoning, and structured reporting. However, adapting DR agents to finance introduces unique challenges: financial analysis demands the joint completion of heterogeneous sub-tasks spanning diverse data types, tools, and analytical workflows. We identify three key requirements for a professional financial DR agent: integration of authoritative, heterogeneous financial data sources; specialized analytical tools and skills; and dedicated",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-02",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "planning",
-        "reasoning",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "2610.02206",
-      "source": "arxiv",
-      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
-      "url": "https://arxiv.org/abs/2610.02206",
-      "authors": [
-        "Pengfei Li",
-        "Naufal Suryanto",
-        "Sicheng Zhang",
-        "Muzammal Naseer"
-      ],
-      "summary": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark ",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-01",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "tool use",
-        "llm"
-      ]
-    },
-    {
-      "id": "2610.01936",
-      "source": "arxiv",
-      "title": "Mapping the RAG Landscape: A Four Axis Taxonomy of Efficiency, Defense, Interactivity, and Reasoning",
-      "url": "https://arxiv.org/abs/2610.01936",
-      "authors": [
-        "Meghana Sunil",
-        "Shravya V",
-        "Shravan Venkatraman",
-        "Joe Dhanith PR"
-      ],
-      "summary": "Large Language Models (LLMs) have demonstrated remarkable fluency across many tasks but remain limited by their static, parameter bound knowledge and their susceptibility to hallucinating information. Retrieval Augmented Generation (RAG) addresses these issues by incorporating external retrieval into the generation process, grounding model outputs in verifiable and up to date sources. While prior surveys primarily focus on core RAG architectures and standard pipelines, recent research explores broader challenges and capabilities that extend beyond these foundational designs. This survey provid",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-01",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "reasoning",
-        "llm",
-        "language model",
-        "retrieval",
-        "rag"
-      ]
-    },
-    {
-      "id": "2610.01847",
-      "source": "arxiv",
-      "title": "Detecting Inconsistencies in Model Specifications with LLM-as-Verifier Reasoning",
-      "url": "https://arxiv.org/abs/2610.01847",
-      "authors": [
-        "Zichen Xie",
-        "Mrigank Pawagi",
-        "Lize Shao",
-        "Yang Hu"
-      ],
-      "summary": "Model specifications define how large language models (LLMs) should behave, guiding alignment training, inference-time behavior, and evaluation. Yet these specifications may themselves contain defects: two individually reasonable principles may prescribe incompatible behavior when applied to the same situation, leaving no response that satisfies both. Detecting such inconsistencies is challenging. Formalizing natural-language specifications risks losing subtle distinctions, while behavior-based testing cannot reliably distinguish specification defects from differences in model behavior. We int",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-10-01",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "reasoning",
-        "alignment",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.02349",
-      "source": "arxiv",
-      "title": "MIRROR: Multipath Quorum Integrity for LLM Multi-Agent Communication",
-      "url": "https://arxiv.org/abs/2610.02349",
-      "authors": [
-        "Ryuichi Yamafuji Lun",
-        "Jingzhen Wang",
-        "Shreyas Kolte",
-        "Ruiteng Li"
-      ],
-      "summary": "Inter-agent communication is central to Large Language Model Multi-Agent Systems (LLM-MAS), but it introduces an underexplored vulnerability: Agent-in-the-Middle (AiTM) attacks that manipulate messages in transit without compromising the agents themselves. Prior work reports Attack Success Rates (ASR) approaching 100% on structured tasks. Existing defenses rely on semantic validation, which requires additional inference and can block benign outputs, or on transport-layer encryption, which does not help when an intermediary legitimately terminates TLS. We present MIRROR, a communication-layer i",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-01",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.39958",
-      "source": "arxiv",
-      "title": "Better Deck or Different Judge? Evaluating Agentic Harness Gains in Corporate and Investment Banking",
-      "url": "https://arxiv.org/abs/2609.39958",
-      "authors": [
-        "Ludovic Gibert",
-        "Matis Despujols",
-        "Andre-Louis Rochet"
-      ],
-      "summary": "Corporate and investment banking teams use presentations to support credit decisions and advise clients on financing and transactions. Producing these decks requires reconciling financial data, tracing sources and turning analysis into a recommendation. We retrospectively study the development of an agentic harness combining a 27B language model, financial calculations, narrative templates and validation checks. LLM judges guide engineering changes and assess the resulting decks, raising the question of whether higher scores reflect better documents or changes in grading. In shared-session tex",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-30",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.39853",
-      "source": "arxiv",
-      "title": "Cognitive Enhancement: Rethinking the Necessity of Role-Playing for Large Language Models",
-      "url": "https://arxiv.org/abs/2609.39853",
-      "authors": [
-        "Xingjie Zhuang",
-        "Jialong Tang",
-        "Chulun Zhou",
-        "Buchao Zhan"
-      ],
-      "summary": "Role-playing prompting has become a popular yet simple technique for improving LLM reasoning and output quality. However, whether it consistently boosts performance across diverse domains remains unclear, as systematic validation is lacking. To fill this gap, we run multi-model, cross-domain, and multilingual experiments on MMLU and MMLU-Redux. We find that gains from role-play prompting depend heavily on model capacity, knowledge domain, and prompt language. Drawing on metacognition theory, we propose the persona-related cognitive alignment hypothesis: role-play works only when the LLM correc",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-30",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "reasoning",
-        "alignment",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.39838",
-      "source": "arxiv",
-      "title": "Learning Steganography Is Easy, Learning Steganographic Reasoning Is Hard",
-      "url": "https://arxiv.org/abs/2609.39838",
-      "authors": [
-        "Julian Schulz",
-        "Lukas Fülle",
-        "Rieke Fruengel"
-      ],
-      "summary": "Chain-of-thought monitoring as an approach for AI oversight and control is threatened by the possibility of steganographic reasoning, where LLMs conceal their reasoning inside innocuous-looking text. Two neighbouring capabilities, steganographic messaging (passing a concealed message) and encoded reasoning (reasoning in an illegible but unconcealed format), have already been shown to emerge under training pressures that occur in real pipelines, such as reinforcement learning against monitors. This suggests that steganographic reasoning too might arise as an unintended side effect of training. ",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-30",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agi",
-        "reasoning",
-        "chain-of-thought",
-        "llm"
       ]
     }
   ]

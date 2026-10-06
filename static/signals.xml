@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Mon, 05 Oct 2026 21:08:12 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 06 Oct 2026 18:51:29 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -55,6 +55,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.12170</guid>
       <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
       <description>Autonomous network management requires systems that can evaluate Network Service Intents (NSIs) under varying conditions without manual implementation of analysis logic, as envisioned in TM Forum Level~4 (L4) autonomy. Behavioral Network Digital Twins (NDTs) enable such evaluation, but existing NDTs... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, autonomy, llm] Authors: Sudipta Acharya, Petar Djukic, et al.</description>
+    </item>
+    <item>
+      <title>Visual Swarm Navigation via Deep Reinforcement Learning and Evolutionary Hybrid Design</title>
+      <link>https://arxiv.org/abs/2610.06400</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.06400</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Swarm robotics presents a robust and cost-effective paradigm for advanced automation in complex, dynamic environments, such as those encountered in search and rescue or environmental monitoring. A fundamental challenge for this field is the data-driven design of decentralized controllers capable of ... [Score: 9.0 | Flagged for: agent, multi-agent, autonomous, robot, robotics] Authors: Álvaro Díez, Fidel Aznar</description>
     </item>
     <item>
       <title>Managing Context and Communication in Distributed Agentic UAV Swarms</title>
@@ -148,6 +155,41 @@
       <description>Rapid bespoke commissioning of the Cognitive Digital Twin (CDT) is a major challenge in reconfigurable manufacturing. Traditional digital twin (DT) construction methods primarily focus on geometric reconstruction, often neglecting the deep semantic integration and functional interoperability necessa... [Score: 8.5 | Flagged for: agent, multi-agent, agentic, autonomous, reasoning] Authors: Yangyang Liu, Xun Xu, et al.</description>
     </item>
     <item>
+      <title>Recursive Video In-Context Learning for Agentic Robot</title>
+      <link>https://arxiv.org/abs/2610.06843</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.06843</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyfram... [Score: 8.0 | Flagged for: agent, agentic, planning, robot, llm] Authors: Wenrui Bao, Xinxin Liu, et al.</description>
+    </item>
+    <item>
+      <title>Can Agent Harnesses and Inference Engines Hear Each Other? The HEAR Protocol for Agentic LLM Serving</title>
+      <link>https://arxiv.org/abs/2610.06597</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.06597</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>LLM agents increasingly execute complex workflows involving multi-turn reasoning, tool use, and parallel agents. Efficient serving requires decisions that span two layers with complementary information: the agent harness understands workflow dependencies, context lifecycles, and execution objectives... [Score: 8.0 | Flagged for: agent, agentic, tool use, reasoning, llm] Authors: Jiaqi Zhao, Haodong Chen, et al.</description>
+    </item>
+    <item>
+      <title>HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention</title>
+      <link>https://arxiv.org/abs/2610.06563</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.06563</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language model (LLM) agents are increasingly capable of acting in complex tool-use environments, yet they often fail to recognize when tasks are infeasible and no valid solution exists. Recent work has formalized this reliability gap as the problem of agentic abstention, and existing approache... [Score: 8.0 | Flagged for: agent, agentic, tool-use, llm, language model] Authors: Han Luo, Bingbing Wen, et al.</description>
+    </item>
+    <item>
+      <title>MedPrune: Topology-Efficient Multimodal Multi-Agent Communication Evolution for Medical VQA Tasks</title>
+      <link>https://arxiv.org/abs/2610.06695</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.06695</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>While medical multimodal large language models (Med-MLLMs) advance medical visual question answering (VQA), existing clinical workflow-inspired multi-agent frameworks suffer from interaction patterns and excessive computational overhead caused by redundant communication topologies. In this paper, we... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Jiuheng Wan, Runze Li, et al.</description>
+    </item>
+    <item>
+      <title>Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement</title>
+      <link>https://arxiv.org/abs/2610.05782</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.05782</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Agentic AI is emerging as a promising paradigm for automating complex cybersecurity decisions, yet its use in enforcing zero trust introduces significant challenges in safety, reliability, and policy compliance. This paper presents Agentic AI based zero trust architecture (Agentic-ZTA) that operatio... [Score: 8.0 | Flagged for: agent, multi-agent, agentic, autonomous, retrieval] Authors: Shovan Roy, Lopamudra Praharaj, et al.</description>
+    </item>
+    <item>
       <title>Collective Bias Mitigation via Model Routing and Collaboration</title>
       <link>https://arxiv.org/abs/2610.03240</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.03240</guid>
@@ -174,48 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.37094</guid>
       <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
       <description>As large language models (LLMs) evolve from standalone models into collaborative agents embedded in physical systems, their reasoning and execution are increasingly distributed across wireless edge nodes. In this setting, wireless networks are experiencing a paradigm shift from only providing data c... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Chao Hu, Yuan Guo, et al.</description>
-    </item>
-    <item>
-      <title>Reinforcing Agentic Creativity in Scientific Ideation with Night Science</title>
-      <link>https://arxiv.org/abs/2609.35706</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.35706</guid>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) excel at structured, verifiable tasks, but their low-entropy bias can produce homogeneous and predictable outputs, limiting their utility for open-ended scientific ideation. Effective discovery, however, spans a broader creative spectrum: from structured day science to l... [Score: 8.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Priyanka Kargupta, Silviu Cucerzan, et al.</description>
-    </item>
-    <item>
-      <title>Population Physics, Population Problems: Safety and Emergence in LLM Societies</title>
-      <link>https://arxiv.org/abs/2609.33871</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.33871</guid>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <description>The collective behaviour of large language model (LLM) societies is not the sum of their individual outputs. It yields statistically distinct, sometimes-unpredictable phenomena, for which the tools we use to study single agents may not scale. Due to recent incidents involving autonomous agentic syst... [Score: 8.0 | Flagged for: agent, agentic, autonomous, llm, language model] Authors: Adrian de Wynter</description>
-    </item>
-    <item>
-      <title>MA-JEPA: Joint-Embedding World Models for Multi-Agent Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2609.33563</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.33563</guid>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <description>World models improve sample efficiency by training policies on imagined trajectories, but their usefulness depends on learning representations that capture the information needed for future control. We study whether self-supervised joint-embedding prediction (JEPA) can provide this learning signal f... [Score: 8.0 | Flagged for: agi, world model, agent, multi-agent] Authors: Brandon Gary Kaplowitz, Osaze James Obahor, et al.</description>
-    </item>
-    <item>
-      <title>Theory of Scene: Breaking the Symmetry Trap in Multi-Agent LLM Coordination</title>
-      <link>https://arxiv.org/abs/2609.32939</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.32939</guid>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Multi-agent systems built on large language models (LLMs) are largely homogeneous, as their agents behave alike even across distinct LLMs. We show that when such agents act concurrently without communication, they collide on targets they must split and diverge on targets they must take together, a d... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Liangqi Yuan, Wenzhi Fang, et al.</description>
-    </item>
-    <item>
-      <title>Autonomy, Social Norms, and Alignment: Towards a Developmental Framework for Autonomous Artificial Agents</title>
-      <link>https://arxiv.org/abs/2609.11660</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.11660</guid>
-      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
-      <description>In recent years, artificial intelligence has made extraordinary progress thanks to large-scale models capable of generalization and the generation of complex outputs. However, transferring this potential into embodied agents reveals a significant limitation: the most advanced systems rely on pre-exi... [Score: 8.0 | Flagged for: agent, autonomous, autonomy, alignment, embodied] Authors: Marica Notte, Ludovica Marinucci, et al.</description>
-    </item>
-    <item>
-      <title>Negative Self-Distillation: Learning to Reason by Avoiding Flaws</title>
-      <link>https://arxiv.org/abs/2609.11699</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.11699</guid>
-      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
-      <description>On-Policy Self-Distillation (OPSD) has emerged as a popular paradigm for large language model (LLM) self-improvement, allowing models to act as their own teachers by leveraging privileged information such as ground-truth solutions. However, recent findings indicate that OPSD can severely degrade the... [Score: 8.0 | Flagged for: agi, reasoning, llm, language model, rag] Authors: Rongcan Pei, Zhepei Wei, et al.</description>
     </item>
   </channel>
 </rss>

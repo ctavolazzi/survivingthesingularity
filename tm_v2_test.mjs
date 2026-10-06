@@ -1,0 +1,105 @@
+import { chromium } from "playwright";
+
+const browser = await chromium.launch();
+const page = await browser.newPage();
+const errors = [];
+page.on("pageerror", (e) => errors.push("PAGEERROR: " + e.message));
+page.on("console", (msg) => { if (msg.type() === "error" && !msg.text().includes("404")) errors.push("CONSOLE: " + msg.text()); });
+
+await page.goto("http://localhost:8930/index.html?debug=1");
+await page.evaluate(() => localStorage.clear());
+await page.reload();
+
+// 1. Title screen
+const title = await page.textContent("#screen h1");
+const missionsDisabled = await page.evaluate(() => document.getElementById("btnMissions").disabled);
+console.log("1. Title:", title, "| Missions locked:", missionsDisabled);
+
+// 2. Enter sim -> brief VN with portrait swatch
+await page.click("#btnSim");
+await page.waitForTimeout(400);
+const vnOpen = await page.evaluate(() => document.querySelector(".gk-vn").classList.contains("gk-vn-open"));
+const portraitVisible = await page.evaluate(() => !document.querySelector(".gk-vn-portrait").classList.contains("gk-vn-noportrait"));
+const portraitText = await page.textContent(".gk-vn-portrait");
+console.log("2. Sim brief VN open:", vnOpen, "| portrait shown:", portraitVisible, "| initial:", portraitText);
+
+// advance 3 brief lines
+for (let i = 0; i < 3; i++) { await page.waitForTimeout(2600); await page.click(".gk-vn-box"); }
+await page.waitForTimeout(300);
+const obj0 = await page.textContent("#objective");
+console.log("3. Stage 0 objective:", obj0);
+
+// 3. ESC pause menu
+await page.keyboard.press("Escape");
+await page.waitForTimeout(200);
+const pauseVisible = await page.evaluate(() => !document.getElementById("pause").classList.contains("hidden"));
+console.log("4. ESC pause menu visible:", pauseVisible);
+await page.keyboard.press("Escape");
+await page.waitForTimeout(200);
+const pauseHidden = await page.evaluate(() => document.getElementById("pause").classList.contains("hidden"));
+console.log("5. ESC resume hides menu:", pauseHidden);
+
+// 4. Fast-forward through sim stages via debug (each advance triggers next brief VN)
+for (let s = 0; s < 5; s++) {
+  const stageNow = await page.evaluate(() => window.__debug.simState.stage);
+  if (stageNow >= 5) break;
+  await page.evaluate(() => window.__debug.advanceSimStage());
+  await page.waitForTimeout(400);
+  // click through whatever VN is open (briefs are 1-3 lines; completion is 3)
+  for (let i = 0; i < 4; i++) {
+    const open = await page.evaluate(() => document.querySelector(".gk-vn").classList.contains("gk-vn-open"));
+    if (!open) break;
+    await page.waitForTimeout(2600);
+    await page.click(".gk-vn-box");
+    await page.waitForTimeout(200);
+  }
+}
+await page.waitForTimeout(400);
+const simCompleteScreen = await page.evaluate(() => document.getElementById("screen").innerHTML.includes("SIMULATION COMPLETE"));
+const simFlag = await page.evaluate(() => window.__debug.getProfile().simComplete);
+console.log("6. Sim complete screen:", simCompleteScreen, "| profile.simComplete:", simFlag);
+
+// 5. First mission
+await page.click("#btnFirstMission");
+await page.waitForTimeout(400);
+for (let i = 0; i < 2; i++) { await page.waitForTimeout(2600); await page.click(".gk-vn-box"); }
+await page.waitForTimeout(1200);
+const missionObj = await page.textContent("#objective");
+const mode = await page.evaluate(() => window.__debug.state.mode);
+console.log("7. Mission running, mode:", mode, "| objective:", missionObj);
+
+// 6. Force mission success -> results + credits
+await page.evaluate(() => window.__debug.missionEnd(true));
+await page.waitForTimeout(300);
+const resultsHtml = await page.evaluate(() => document.getElementById("screen").innerHTML);
+const credits = await page.evaluate(() => window.__debug.getProfile().credits);
+console.log("8. Results shown:", resultsHtml.includes("MISSION COMPLETE"), "| credits:", credits, "| worthy bonus in html:", resultsHtml.includes("WORTHY"));
+
+// 7. Hangar purchase
+await page.click("#btnHangar2");
+await page.waitForTimeout(300);
+const beforeParts = await page.evaluate(() => ({ ...window.__debug.getProfile().parts }));
+const buyBtn = await page.evaluate(() => {
+  const btn = document.querySelector('[data-part="engine"]');
+  return btn ? btn.disabled : null;
+});
+if (buyBtn === false) {
+  await page.click('[data-part="engine"]');
+  await page.waitForTimeout(300);
+}
+const afterParts = await page.evaluate(() => ({ ...window.__debug.getProfile().parts }));
+const afterCredits = await page.evaluate(() => window.__debug.getProfile().credits);
+console.log("9. Hangar: engine", beforeParts.engine, "->", afterParts.engine, "| credits now:", afterCredits);
+
+// 8. Mission select shows m2 unlocked
+await page.click("#btnBack");
+await page.waitForTimeout(200);
+await page.click("#btnMissions");
+await page.waitForTimeout(300);
+const m2Enabled = await page.evaluate(() => !document.querySelector('[data-mission="m2"]').disabled);
+const m3Disabled = await page.evaluate(() => document.querySelector('[data-mission="m3"]').disabled);
+console.log("10. Mission select: m2 unlocked:", m2Enabled, "| m3 locked (needs legendary):", m3Disabled);
+
+await page.screenshot({ path: "/tmp/tm_v2.png" });
+console.log("ERRORS:", JSON.stringify(errors, null, 2));
+await browser.close();

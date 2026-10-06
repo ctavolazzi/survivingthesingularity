@@ -3,6 +3,8 @@ import { defineConfig } from 'vite';
 import { imagetools } from 'vite-imagetools';
 
 export default defineConfig({
+	// Isolated cache (worktree shares node_modules with the main repo via symlink).
+	cacheDir: '.vite-game',
 	plugins: [
 		sveltekit(),
 		imagetools({
@@ -34,7 +36,13 @@ export default defineConfig({
 	},
 	server: {
 		fs: {
-			allow: ['src/lib/data']
+			// node_modules is symlinked to the main repo, whose real path sits
+			// outside this worktree. Allow both roots so Vite can serve the
+			// SvelteKit client runtime (otherwise it 403s the symlinked deps).
+			allow: [
+				'.',
+				'/Users/ctavolazzi/Code/active/survivingthesingularity'
+			]
 		}
 	}
 });

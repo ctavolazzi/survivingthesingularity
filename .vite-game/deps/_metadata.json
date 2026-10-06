@@ -1,0 +1,103 @@
+{
+  "hash": "bb2fbe8b",
+  "configHash": "cdd62c76",
+  "lockfileHash": "c8e3b460",
+  "browserHash": "5005865d",
+  "optimized": {
+    "svelte/animate": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/animate/index.js",
+      "file": "svelte_animate.js",
+      "fileHash": "87c6ed30",
+      "needsInterop": false
+    },
+    "svelte/easing": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/easing/index.js",
+      "file": "svelte_easing.js",
+      "fileHash": "564d98e2",
+      "needsInterop": false
+    },
+    "svelte/internal": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/internal/index.js",
+      "file": "svelte_internal.js",
+      "fileHash": "e8662d61",
+      "needsInterop": false
+    },
+    "svelte/internal/disclose-version": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/internal/disclose-version/index.js",
+      "file": "svelte_internal_disclose-version.js",
+      "fileHash": "045112e6",
+      "needsInterop": false
+    },
+    "svelte/motion": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/motion/index.js",
+      "file": "svelte_motion.js",
+      "fileHash": "298322d7",
+      "needsInterop": false
+    },
+    "svelte/store": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/store/index.js",
+      "file": "svelte_store.js",
+      "fileHash": "a29a5fe5",
+      "needsInterop": false
+    },
+    "svelte/transition": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/transition/index.js",
+      "file": "svelte_transition.js",
+      "fileHash": "be1706eb",
+      "needsInterop": false
+    },
+    "svelte": {
+      "src": "../../../survivingthesingularity/node_modules/svelte/src/runtime/index.js",
+      "file": "svelte.js",
+      "fileHash": "eb98e475",
+      "needsInterop": false
+    },
+    "devalue": {
+      "src": "../../../survivingthesingularity/node_modules/devalue/index.js",
+      "file": "devalue.js",
+      "fileHash": "400d3748",
+      "needsInterop": false
+    },
+    "esm-env": {
+      "src": "../../../survivingthesingularity/node_modules/esm-env/index.js",
+      "file": "esm-env.js",
+      "fileHash": "b7a877c1",
+      "needsInterop": false
+    },
+    "isomorphic-dompurify": {
+      "src": "../../../survivingthesingularity/node_modules/isomorphic-dompurify/dist/browser.mjs",
+      "file": "isomorphic-dompurify.js",
+      "fileHash": "d7c77204",
+      "needsInterop": false
+    },
+    "marked": {
+      "src": "../../../survivingthesingularity/node_modules/marked/lib/marked.esm.js",
+      "file": "marked.js",
+      "fileHash": "12265446",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../../survivingthesingularity/node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "2c75b7b1",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UFDZLREF": {
+      "file": "chunk-UFDZLREF.js"
+    },
+    "chunk-NIOSZ2JR": {
+      "file": "chunk-NIOSZ2JR.js"
+    },
+    "chunk-KLSSZ67W": {
+      "file": "chunk-KLSSZ67W.js"
+    },
+    "chunk-IW7ZVCEP": {
+      "file": "chunk-IW7ZVCEP.js"
+    },
+    "chunk-V6TY7KAL": {
+      "file": "chunk-V6TY7KAL.js"
+    }
+  }
+}

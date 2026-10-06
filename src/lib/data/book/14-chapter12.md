@@ -1,8 +1,8 @@
 # Chapter 12: The Land Strategy
 
-![FarmBot automated gardening system over a raised bed](/book-images/ch12-farmbot.jpg)
+![Line drawing of a germinating seed and roots](/book-images/original-04-seed-and-root.svg)
 
-*FarmBot over a raised bed. A place to grow, and a tool that can do part of the work. (FarmBot, CC BY 4.0, via Wikimedia Commons)*
+*A place to grow begins with access to the ground. Original illustration for this book.*
 
 
 > *"Land is the only thing in the world that amounts to anything … for 'tis the only thing in this world that lasts."*
@@ -23,7 +23,7 @@ Everything the co-op had built stood on Calder ground. The shed had been Walt Ca
 
 Elijah did what Elijah does when he is frightened: he pulled data. The county recorder's index was public, ancient, and slow, so he was polite to it, scraping at night, and then he did two neighboring counties for context. The pattern assembled itself the way patterns do, all at once, on the third evening. Eleven different LLC names, one registered agent, a mail-forwarding address in Sacramento. Fifty-some parcels in three years, always the same shape: an estate or a widow, a cash offer, a fast close. Then the parcel goes quiet inside a shell company for a year or two and reappears stitched into a block big enough to matter, leased to whoever needs flat land, water rights, and no neighbors with opinions. Reuben, reading over his shoulder, reminded him that a registered agent can represent a hundred unrelated clients. Elijah colored the uncertain links a different shade and kept going.
 
-That Sunday, on the regular call, he asked his mother what the outfit was called, the one that bought the Hollis place back home. She had to go find the church newsletter to check. Same agent. Eight hundred miles apart, the same signature. He sat with the phone against his ear while she talked about the pump, and looked out at the shed, and understood that whatever had bought the Hollis dairy was standing two fences away.
+That Sunday, on the regular call, he asked his mother what the outfit was called, the one that bought the Hollis place back home. She had to go find the church newsletter to check. Same agent. Eight hundred miles apart, the same signature. He sat with the phone against his ear while she talked about the pump, and looked out at the shed, and wondered whether the same buyers were standing two fences away. He circled the link for Reuben to check.
 
 He built a map. He built, God help him, a dashboard, and it was beautiful, and he presented it at Friday dinner with a laser pointer, and this time he heard himself doing it and grinned mid-sentence, and the room grinned back, because everyone at that table had been present for the greenhouse controllers. But the dashboard did its one load-bearing job: in the parcels he could trace, the time from first letter to recorded deed ran about nine weeks, and Irene had gotten her first letter five weeks ago. The data couldn't close the gap. It could only tell them how wide it was.
 
@@ -61,9 +61,17 @@ When I finally pinned down my core thesis, I wrote it as a note to myself, and i
 
 A productive tool needs somewhere to work. A hungry person needs access to what it produces. Those needs are connected, but they aren't the same, and nobody should have to become a property owner before they get dinner.
 
-Still, land is the one input the machine can't make more of, and whoever holds it holds a lot of the terms. So if you *do* have capital, think hard before you put it into a bigger house, status symbols, or a business that only works if the city stays healthy. Consider ground. Buy what you can afford to hold, and set aside enough to cover the property taxes for years, so the land stays yours through a bad stretch. Whatever happens to the institutions around you, you'll have a place to build.
+Still, land is the one input the machine can't make more of, and whoever holds it holds a lot of the terms. So if you *do* have capital, think hard before you put it into a bigger house, status symbols, or a business that only works if the city stays healthy. Consider ground. Buy what you can afford to hold, and set aside enough to cover the property taxes for years, so the land stays yours through a bad stretch. Before committing, check legal access, water, permitted uses, insurance, and the cost of keeping it usable. A deed alone doesn't make a build possible.
 
 That's one route, and it's not the only one or the entry fee. Land trusts, leases, shared gardens, public land, and agreements with growers who already have ground are all ways to get useful capacity under your feet. The trust in the scene changes a set of relationships: who may use the ground, who decides its future, what Irene receives, and what the co-op must keep paying. The paperwork doesn't abolish responsibility. It gives responsibility a shape people can read and hold each other to. The fictional trust isn't a legal template, and anyone setting one up needs real advice. What matters here's the question that brought those people to the table: how do we keep useful capacity serving the people who depend on it?
+
+![A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages.](/book-images/v101-chart-land-values.svg)
+
+*What an acre costs. USDA survey estimates include farm buildings as well as land. These are nominal national averages, not inflation-adjusted values or local offers. [USDA NASS, Land Values 2026, page 5](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf).*
+
+![A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement.](/book-images/v101-visual-shared-land.svg)
+
+*Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a way to challenge decisions. Conceptual illustration, not a legal template.*
 
 <aside class="numbers">
 
@@ -71,7 +79,7 @@ That's one route, and it's not the only one or the entry fee. Land trusts, lease
 
 - **$4,500** an acre: the average value of US farm real estate in 2026, up 3.4 percent in a year. [USDA NASS, Land Values 2026 Summary](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf)
 - **$6,020** an acre for cropland and **$2,000** for pasture, the same year. [USDA NASS](https://www.nass.usda.gov/Publications/Todays_Reports/reports/land0726.pdf)
-- **99 years:** the usual ground lease in a community land trust, long enough to outlast a mortgage and a lifetime (Chapter 15).
+- **99 years:** a common renewable ground-lease term in community land trusts, subject to the actual agreement. [Grounded Solutions Network, Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/)
 
 </aside>
 
@@ -101,15 +109,15 @@ This is exactly where the lone-prepper story falls apart. A bunker does nothing 
 
 **The nodes.** Several households in the area each run a shop-house, or a *shouse*: half workshop, half home, with the tools, some power, and often a garden or a greenhouse attached. Chapter 13 builds one. Each is a node in a small network. Some nodes have a surplus of food in a given week. Some have a tractor or a chipper. Some have neither, and that's fine.
 
-**The balance.** For the network as a whole, the math is simple:
+**The balance.** Count each resource in its own unit and over the same week: usable vegetables, prepared meals, equipment hours, driver time. For each one:
 
-> **Network surplus = (everything the nodes produce) − (everything the nodes need)**
+> **Available to share = usable supply − prior commitments − reserve for interruptions**
 
-In the old arrangement, a household that produces nothing and can't pay gets cut off. In this one, the partial surpluses of a dozen nodes cover the household that can't contribute this week. Be honest about the size of it: a single garden, even a heavily automated one, usually won't cover a household's full diet, and anyone promising you a guaranteed multiple of your caloric needs is selling something. Automation makes a surplus *possible* where before there was only labor. Pool the partial surpluses and the network can carry its neighbors, not because any node is a miracle, but because the bottleneck was never raw productivity. It was distribution.
+Then compare that amount with the requests. Don't add kilograms to hours and call the total abundance. A single garden, even a heavily automated one, usually won't cover a household's full diet, and anyone promising you a guaranteed multiple of your caloric needs is selling something. Pooling partial surpluses can help a household that can't contribute this week, but only if the food is suitable and someone can get it there. If requests exceed what the nodes can provide, the coordinator needs a funded partner or a replacement supply. Production and distribution both count.
 
-![The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhouse, Shouse Node B with its tool library and battery bank, exchanging tasks over LoRa mesh, and a vulnerable node receiving automated calorie and labor deliveries](/book-images/ch12-csa-network.svg)
+![A proposed growing and tool network coordinated by people. Food and support reach households through paid work, transport and backup. Each resource has its own supply and demand budget.](/book-images/ch12-csa-network.svg)
 
-*The semi-autonomous CSA. Whatever surplus the nodes produce goes to the neighbors who can't. The point is distribution, not a guaranteed yield.*
+*A shared-service network. People match usable surplus to requests and arrange delivery. The drawing promises neither a yield nor an autonomous crew.*
 
 **The request.** She doesn't need a smartphone. She has a phone number somebody answers, a neighbor who checks in, or, if she likes gadgets, a simple mesh radio on the kitchen counter with one button: NEED HELP. However it arrives, the request lands with a coordinator.
 
@@ -147,7 +155,7 @@ This week, ask one local organization how someone requests food or practical hel
 
 The Homestead Act was signed in May 1862, and the timing is half the lesson: the country was a year into the Civil War. While every headline was consumed by the emergency, the federal government opened millions of acres, offering one hundred sixty acres to eligible claimants, including women heads of household and immigrants who'd declared their intent to become citizens, who would live on the land and improve it for five years. [National Archives, Homestead Act of 1862](https://www.archives.gov/milestone-documents/homestead-act)
 
-The people who filed during the chaos held title when the chaos ended. It was one of the largest transfers of land and position in the country's history, and it happened in the middle of a crisis, not after it.
+Filing began in January 1863. The ordinary five-year route therefore ran beyond the Civil War's end in 1865; Daniel Freeman's surviving certificate of eligibility dates to January 1868. [US Capitol Visitor Center, Freeman's certificate](https://www.visitthecapitol.gov/artifact/homesteading-certificate-eligibility-daniel-freeman-january-20-1868) There was also a paid route to earlier title. The opportunity opened during the crisis. Turning a claim into a lasting farm still took time, money, and successful proof.
 
 The other half of the lesson is who was already there. That land wasn't empty. It was the home of Indigenous nations, and much of it had been taken through war, treaties broken, and forced removal. The National Park Service's own account of the Homestead story holds both histories together, and so should we. [National Park Service, Homestead History and Culture](https://www.nps.gov/home/learn/historyculture/index.htm) Access for one group can't be told honestly as though it happened on a blank map.
 

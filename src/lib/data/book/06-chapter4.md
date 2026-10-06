@@ -10,8 +10,8 @@
 
 **In this chapter:**
 
-- Stage 8: the machine stops being an intelligence on Earth and becomes an intelligence the universe is merely part of.
-- Stage 9: even physics has a ceiling, and a mind like that might treat the ceiling as a door.
+- In speculative Stage 8, the machine expands from Earth toward intelligence operating on a cosmic scale.
+- Stage 9 imagines a way beyond the universe's physical limits. We have no demonstrated route there.
 - Your brain was built to track weather, predators, and other primates. Past Stage 7, it's navigating without a map. The right response isn't paralysis. It's humility, and a shorter horizon.
 
 ---
@@ -90,9 +90,9 @@ In 2020 the astronomer David Kipping ran the odds with more care, and his result
 
 > $$P(\text{base reality} | \text{simulations exist}) = 1 / (N_{\text{sim}} + 1)$$
 
-One real world, $N_{\text{sim}}$ simulated ones, and you're equally likely to be in any of them. *If.*
+One base reality, $N_{\text{sim}}$ simulated ones, all weighted equally in this simplified model. Those are assumptions, not a census of universes. *If.*
 
-But here's the part everybody skips: we've never built one. Kipping calls ours a "nulliparous" reality, one that hasn't yet given birth to a single simulated universe. Weigh the two hypotheses evenly, as the evidence currently allows, and the odds that we're living in a simulation come out just under fifty percent. A coin flip, leaning slightly toward real.
+But here's the part everybody skips: we've never built one. Kipping calls ours a "nulliparous" reality, one that hasn't yet given birth to such a simulation. Under his choice to give the two hypotheses equal prior weight, the calculated probability that we're simulated stays below fifty percent, approaching that limit as the hypothetical number of simulations grows. The result depends on those assumptions. It isn't a measured probability that our world is artificial. [Kipping, author preprint](https://arxiv.org/abs/2008.12254)
 
 And there's a twist in the tail. If we ever do build convincing simulations of conscious beings ourselves, we stop being nulliparous, and on Kipping's reasoning the odds swing hard toward our being simulated too. The machine that feeds you might one day hand you the strangest argument you've ever heard about where you live.
 
@@ -112,7 +112,7 @@ In 1543, as he lay dying in Frombork, a Polish canon named Nicolaus Copernicus s
 
 Open the book and you find more than a diagram. Copernicus dedicated it to Pope Paul III, described his long hesitation about publishing, and named the churchmen who'd urged him on, Cardinal Nicolaus Schönberg and Bishop Tiedemann Giese among them. [Copernicus, dedication to Paul III](https://hti.osu.edu/sites/hti.osu.edu/files/dedication_of_the_revolutions_of_the_heavenly_bodies_to_pope_paul_iii.pdf) And readers met a second voice he never authorized: while the book was being printed in Nuremberg, the theologian Andreas Osiander slipped in an unsigned preface calling the whole system a convenient aid to calculation, not necessarily a description of the heavens. [Cambridge, Copernicus's Book](https://www.sites.hps.cam.ac.uk/starry/coperbooks.html) The moving Earth reached the world wearing two different labels, and the fight over which one was true was partly about evidence and partly about who got to say what the evidence meant.
 
-The demotions kept coming. Galileo's telescope found other worlds with their own moons. Darwin filed humanity under the animals. Hubble showed our galaxy to be one among billions. Each time, somebody predicted that meaning itself would come apart. Each time, ordinary people absorbed the new map and kept making breakfast, falling in love, and planting gardens.
+The demotions kept coming. Galileo's telescope found other worlds with their own moons. Darwin filed humanity under the animals. Hubble established that Andromeda lay beyond our own galaxy. Each time, somebody predicted that meaning itself would come apart. Each time, ordinary people absorbed the new map and kept making breakfast, falling in love, and planting gardens.
 
 What strained, each time, was something else: the institutions that had staked their authority on the old map. People survived being decentered. Some hierarchies built on the old center didn't, and others bent and survived. There was no single reaction and no single ending.
 

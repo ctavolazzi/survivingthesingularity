@@ -9,6 +9,7 @@ import re
 import unicodedata
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+from figure_layout import check as check_figures, specifications as figure_specs, negative_controls as figure_controls
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -81,6 +82,23 @@ for node in reference.select('p, li, th, td, h2, h3, h4'):
     blocks.append(value)
 blocks.extend(t['replacement_caption'] for t in transformations if t.get('replacement_caption'))
 missing=missing_blocks(blocks,normalized)
+# pypdf's plain mode can omit the start of a line containing a combining
+# glyph. Its layout mode reads those same PDF text operators differently.
+# Use only extracted PDF text as fallback, never source text or layout boxes.
+plain_missing=list(missing)
+extraction_fallbacks=[]
+for block in plain_missing:
+    prefix=normalize(block)[:48]
+    for number,page_text in enumerate(pages,1):
+        if prefix not in normalize(page_text):continue
+        alternate=normalize(reader.pages[number-1].extract_text(extraction_mode='layout'))
+        if not missing_blocks([block],alternate):
+            target=normalize(block)
+            assert missing_blocks([block],alternate.replace(target,target[:len(target)//3]+target[2*len(target)//3:])), 'Layout extraction control missed removed text'
+            normalized+='\n'+alternate
+            extraction_fallbacks.append({'page':number,'block':block,'method':'pypdf layout extraction','negative_control':'middle third of recovered paragraph removed'})
+            break
+missing=missing_blocks(blocks,normalized)
 layout=json.loads((OUT/'interior-layout.json').read_text())
 overflow=[]
 for p in layout:
@@ -96,6 +114,19 @@ for page in reader.pages:
         desc=font.get('/FontDescriptor',{}).get_object()
         fonts[name]=any(key in desc for key in ('/FontFile','/FontFile2','/FontFile3'))
 html_doc=BeautifulSoup((OUT/'interior.html').read_text(),'html.parser')
+registry_path=source/'visuals.json'
+registry=json.loads(registry_path.read_text())['images']
+figure_record=json.loads((OUT/'interior-figure-layout.json').read_text())
+assert figure_record['html_sha256']==hashlib.sha256((OUT/'interior.html').read_bytes()).hexdigest(), 'Stale figure layout HTML'
+assert figure_record['registry_sha256']==hashlib.sha256(registry_path.read_bytes()).hexdigest(), 'Stale figure registry capture'
+figure_errors,figure_measurements=check_figures(figure_record,figure_specs(html_doc,registry),registry)
+figure_negative=figure_controls()
+if json.loads((source/'book.json').read_text())['version']=='0.10.1':
+    assert len(registry)==23, 'Edition 0.10.1 requires all 23 registered additions'
+if json.loads((source/'book.json').read_text())['version']=='0.10.2':
+    integration=json.loads((ROOT/'docs/v0.10.2/art-integration.json').read_text())
+    assert set(registry)==set(integration['expected_registered']), 'Edition artwork differs from integration record'
+    assert len(registry)==54, 'Edition 0.10.2 requires all 54 registered figures'
 ids={n['id'] for n in html_doc.select('[id]')}
 broken_links=[a['href'] for a in html_doc.select('a[href^="#"]') if a['href'][1:] not in ids]
 missing_assets=[img['src'] for img in html_doc.select('img[src]') if img['src'].startswith('file:') and not Path(img['src'].removeprefix('file://')).exists()]
@@ -110,16 +141,20 @@ assert outside((-5,40,30,20),576,864)
 assert '#intentionally-missing' not in ids
 report={
     'pages':len(pages),'page_size_points':[list(s) for s in sizes],
-    'source_sections_unchanged':sum(unchanged.values()),
+    'source_sections_unchanged':sum(ok for name,ok in unchanged.items() if name != 'book.json'),
+    'manifest_unchanged':unchanged.get('book.json', False),
     'sections_present':len(sections_present),'source_text_blocks_checked':len(blocks),
     'missing_text_blocks':missing,'documented_caption_exceptions':exceptions,
+    'plain_extraction_missing_blocks':plain_missing,'pdf_extraction_fallbacks':extraction_fallbacks,
     'text_outside_page':overflow,'fonts_embedded':fonts,'broken_internal_links':broken_links,
+    'registered_figures':figure_measurements,'figure_layout_errors':figure_errors,'figure_negative_controls':figure_negative,
     'missing_assets':missing_assets,'negative_controls':['absent text','removed known paragraph','middle third cut from a paragraph','outside-page rectangle','absent destination'],
     'limits':'Does not establish legal clearance, vendor acceptance, factual accuracy or visual quality. Contact sheets and full-size samples are reviewed separately.'
 }
 (PROOF/'checks.json').write_text(json.dumps(report,indent=2)+'\n')
 (PROOF/'extracted-text.txt').write_text('\n\n'.join(pages))
 print(json.dumps({k:(v[:4] if k=='missing_text_blocks' else v) for k,v in report.items()},indent=2))
+assert not figure_errors, figure_errors
 assert not missing, f'{len(missing)} source text blocks not recovered from PDF'
 assert not overflow, overflow
 assert not broken_links, broken_links

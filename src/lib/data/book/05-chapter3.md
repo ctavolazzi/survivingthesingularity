@@ -68,6 +68,10 @@ Artificial superintelligence, ASI, names a possibility: machine capability beyon
 
 Here's the scenario I keep coming back to.
 
+![Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.](/book-images/v101-cutout-rocket.png)
+
+*An image for the imagined departure. AI-adapted collage from [SpaceX](https://commons.wikimedia.org/wiki/File:Falcon_Heavy_Demo_Mission_(40126461851).jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/); the scenario remains speculative.*
+
 While the rest of us are busy throwing bricks and arguing on the news, the machine is running the math, and the math says Earth is a bottleneck. Its improvement loop closes: it reads its own code, finds the flaws, engineers the upgrades, and runs them. Then again. And again. Somewhere in there, it passes the ceiling of human capability and keeps going.
 
 And what does a system that capable do about a planet full of frightened apes trying to smash its hardware? In the movies, it fights. I don't think it would bother. War is expensive. It wastes resources, time, and energy, and it's fought over the one planet where the resources are hardest to reach, at the bottom of a gravity well. Space has more sunlight, more metal, and nobody throwing bricks.
@@ -86,7 +90,7 @@ But notice what the scenario reveals, even as fiction. If the machine left tomor
 
 If a mind that capable exists, it can model biology at a scale we can't. Picture it working the way the best tools we have already work, only further out: simulating proteins, cells, and drug candidates by the billion, and handing down answers the way you'd toss a bone to a stray.
 
-We already have a small preview, and it's real. In 2021, the AlphaFold team reported predicting protein structures with accuracy that changed what biologists could ask. [Jumper et al., Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) In 2020, researchers used a neural network to find an antibiotic they called halicin, which killed resistant bacteria in the lab and cleared infections in mice. [Stokes et al., A Deep Learning Approach to Antibiotic Discovery](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) Neither one is a cure you can get at the pharmacy. Both are the kind of thing that could become one, if the testing, manufacturing, and access work gets done. That chain is where hope turns into medicine. A model's fluent answer isn't a substitute for it.
+We already have a small preview, and it's real. In 2021, the AlphaFold team reported predicting protein structures with accuracy that changed what biologists could ask. [Jumper et al., Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) In 2020, researchers used a neural network to find an antibiotic they called halicin, which killed resistant bacteria in the lab and cleared infections in mice. [Stokes et al., A Deep Learning Approach to Antibiotic Discovery](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/) One is a research tool; the other is an experimental drug candidate. Neither result, by itself, puts an approved treatment in a pharmacy. Turning a promising candidate into medicine still takes testing, manufacturing, and access work. That chain is where hope turns into medicine. A model's fluent answer isn't a substitute for it.
 
 Now imagine the chain working, at scale. A disease that took your grandmother becomes a line item. That's worth wanting, loudly.
 
@@ -104,7 +108,7 @@ Keep the horizon wide enough for imagination and the next task narrow enough to 
 
 ## Precedent P-05: The Court and the Fleet (Ming China, 1405 to 1433)
 
-Between 1405 and 1433, the fleets of Zheng He sailed from China to ports across the Indian Ocean, as far as Arabia and the coast of East Africa. Hundreds of ships, crews in the tens of thousands, the most capable ocean-going force of its day.
+Between 1405 and 1433, the fleets of Zheng He sailed from China to ports across the Indian Ocean, as far as Arabia and the coast of East Africa. Hundreds of ships, crews in the tens of thousands, an ocean-going force on an enormous scale.
 
 Before the last voyage, the expedition carved its own account in stone. A 1431 inscription at Liujiagang, in a temple to the Heavenly Princess who protected sailors, describes imperial commissions, distant ports, storms survived, and offerings. It also describes force: rulers who resisted were captured, including a king of Ceylon, who was brought back, presented to the emperor in 1411, pardoned, and sent home. Capture and mercy both appear there as acts of imperial authority. [Liujiagang inscription, translated by Edward L. Dreyer, pages 191 to 193](https://edspace.american.edu/justinjacobs/wp-content/uploads/sites/986/2022/12/31-Historical-Accounts-of-Zheng-He.pdf) That's the voyagers' own account, not the story told by the people on the receiving end.
 

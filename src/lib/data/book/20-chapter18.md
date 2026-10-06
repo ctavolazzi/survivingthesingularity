@@ -12,7 +12,7 @@
 
 - A premortem is an obituary you write early enough to falsify. Assume the plan died; explain why; fix that, now.
 - Your model will be excellent about supply chains, grids, and legal exposure, and silent about the divorce, the burnout, and the shoulder. The room knows what the model doesn't.
-- Measure a community by one number that matters: can it provide an Adequate Level of Care, starting with dinner?
+- Measure a community by one test that matters: can it provide an Adequate Level of Care, starting with dinner?
 - Plans are worthless. Planning is everything. The people doing the planning are the plan.
 
 ---
@@ -55,6 +55,10 @@ Reuben drew a second column. The co-op could commit part of the repair budget it
 
 They wrote *funded through June* in ink. The proposed continuation went underneath in pencil, with a meeting date beside it. Curtis took responsibility for telling the households what had and hadn't been secured. The coordinator asked for someone besides Curtis to learn the route. Two hands went up.
 
+![One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.](/book-images/v101-visual-continuity-calendar.svg)
+
+*Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene.*
+
 Elijah went home that night and rebuilt the model with the room's amendments, and the change that mattered was a names column. Every failure mode carried two names now, who it happens to and who is watching for it, because a risk without a name attached isn't a risk, it's a wish with error bars. He kept the household details in the private record; the public proposal would carry the service commitments, the costs, and the gaps. He was pasting in the last of it when he understood what he was actually looking at.
 
 The supply models, the watts, the stages, the names, the repair he had misunderstood and the meal they had delivered wrong: it was the notebook. All of it. MADRONE ≠ DRONE, three years of arithmetic and margins and lists, finally arranged in the shape it had been trying to take since 1:40 in the morning at a kitchen table: not notes toward surviving something, but a manual for it, with the open boxes left open. He started, that week, turning the notebook into the book you are nearly done holding.
@@ -92,8 +96,8 @@ You're right to worry about those things. They're real vulnerabilities. But usin
 I'm not selling a certainty. Here's what could slow or stop the machine side of this story, and it's worth knowing:
 
 1. **War.** A big enough war stalls everything, this included.
-2. **The chip bottleneck.** A huge share of the world's most advanced chips come out of a handful of fabs in Taiwan. Disrupt them and progress slows for years.
-3. **The materials bottleneck.** Chipmaking depends on a few surprisingly narrow supply lines, like the ultra-pure quartz mined in a small corner of North Carolina.
+2. **The chip bottleneck.** A huge share of the world's most advanced chips come out of a handful of fabs in Taiwan. A major disruption could constrain supply; its effect would depend on the damage, inventories, and alternative capacity.
+3. **The materials bottleneck.** Chipmaking needs specialized materials and equipment that can't always be substituted quickly. Ultra-high-purity quartz, for example, is used in crucibles for semiconductor manufacture. A disruption matters at a specific link, not because the world has run out of ordinary sand. [US Geological Survey, Silica Statistics and Information](https://www.usgs.gov/centers/national-minerals-information-center/silica-statistics-and-information)
 4. **The backlash.** People could choose, or be frightened into choosing, to stop the build-out.
 5. **Things nobody's thought of.** There's always a column for the unknown.
 
@@ -105,9 +109,9 @@ So here's the standard I want to measure a community by. I've been calling it th
 
 Stop measuring success only by GDP. GDP can rise while a lot of people get more precarious. Ask instead whether your community can provide an Adequate Level of Care to the people in it, and how much of that provision depends on a job, a truck from far away, or one generous person.
 
-![Two social contracts compared side by side: the old one runs your labor to a wage to rented survival, and cuts you off if you miss a payment; the new one runs machines and regenerative loops to local abundance to an adequate level of care, so a job becomes a choice](/book-images/ch18-social-contract.svg)
+![A current vulnerability ties essentials to continuing earnings. A proposed arrangement funds supplies, remaining paid work, tools and backup capacity so people can receive essentials without a job. Adequate provision is a commitment to verify, not an achieved effect of robots or a closed loop.](/book-images/ch18-social-contract.svg)
 
-*The old contract makes you rent your survival month to month. The new one makes survival the floor, so a job becomes a choice, not a sentence.*
+*The proposal makes essentials a funded floor, available without a job. Tools help; remaining work, supplies and reliable delivery still need provision.*
 
 Food is the first line of the Adequate Level of Care, because it's urgent, concrete, and measurable: we can ask who ate, what they could get, and whether the arrangement will hold next week. Shelter and care come next. Each needs its own expertise and evidence, and each can be organized around the same question: do people actually receive it?
 
@@ -174,6 +178,10 @@ Keep people's personal details out of public records unless they're needed and t
 
 Test a response before depending on it. Confirm the alternative supplier's capacity; let the backup person actually perform the handoff; check the public contact route. A second name in a spreadsheet isn't a second available driver.
 
+![An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.](/book-images/v101-chart-meal-response.svg)
+
+*When a meal fails. An illustrative worksheet from this chapter's premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise.*
+
 ## Grow the promise at the speed you can keep it
 
 A pilot can run on a grant for a set time. A floor people build their lives on needs money that keeps coming, and a plan for when it's threatened. Tell people which one they're getting. Nobody should find out about a funding gap by waiting for a meal that never comes.
@@ -206,11 +214,11 @@ A system is only as good as its ability to provide food, shelter, and care to th
 
 The Y2K bug was real. Enormous amounts of code stored years as two digits, wired into banks, power grids, air traffic, and payroll, and at midnight on January 1, 2000, "00" could mean 1900 to machines that ran the world. [US GAO, Year 2000 Computing Challenge: Lessons Learned (2000)](https://www.gao.gov/products/aimd-00-290)
 
-What followed was history's largest premortem. Instead of waiting to see what broke, organizations assumed failure in advance and worked backward, spending, by common estimates, hundreds of billions of dollars worldwide on auditing, patching, and testing before the deadline. The US government's own retrospective describes the scale of that work. [GAO, Year 2000 Computing Challenge](https://www.gao.gov/products/aimd-00-290)
+What followed was a global exercise in anticipating failure. Instead of waiting to see what broke, organizations assumed failure in advance and worked backward, spending, by common estimates, hundreds of billions of dollars worldwide on auditing, patching, and testing before the deadline. The US government's own retrospective describes the scale of that work. [GAO, Year 2000 Computing Challenge](https://www.gao.gov/products/aimd-00-290)
 
 The best of the work was ordinary and concrete. The Department of Housing and Urban Development built an inventory of how its systems depended on each other and on outside partners, and found the inventory useful long after the date problem was solved. At Oak Ridge, a rollover test caught a nuclear-material accounting system writing four-digit years to a transfer program that expected two; the transfer failed, and staff moved the data on magnetic tape under contingency procedures they'd already updated and tested. [GAO, Y2K Lessons Learned, pages 29 to 32](https://www.gao.gov/assets/aimd-00-290.pdf) The Social Security Administration folded its Y2K contingency plans into its permanent operations, and in 2004 required that software be validation-tested by people other than the ones who built it. [GAO, Social Security Administration Year 2000 Readiness](https://www.gao.gov/products/aimd-00-125)
 
-Midnight came. Planes flew. Banks opened. And then came the strange part: because so little happened, a chorus concluded nothing would have happened, that the whole effort was hysteria. Some countries that spent little also passed quietly, so the true size of the disaster that was avoided is still argued about. But the most successful act of anticipatory engineering in modern history is remembered, by many, as an overreaction. And one caution runs the other way: a missed AI forecast doesn't get to call itself a disaster averted. Y2K had a known deadline and a bounded class of bug. This transition has neither.
+Midnight came. Planes flew. Banks opened. And then came the strange part: because so little happened, a chorus concluded nothing would have happened, that the whole effort was hysteria. Some countries that spent little also passed quietly, so the true size of the disaster that was avoided is still argued about. But that vast act of anticipatory engineering is remembered, by many, as an overreaction. And one caution runs the other way: a missed AI forecast doesn't get to call itself a disaster averted. Y2K had a known deadline and a bounded class of bug. This transition has neither.
 
 **The mechanism.** Prevention is invisible by construction. A premortem that works looks, from outside, exactly like paranoia that turned out to be unnecessary, because the catastrophe it prevented never shows up to testify.
 

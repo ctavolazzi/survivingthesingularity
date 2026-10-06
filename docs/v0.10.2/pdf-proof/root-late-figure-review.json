@@ -1,0 +1,50 @@
+{
+  "reviewer": "root Codex",
+  "method": "Viewed six side-by-side full-resolution120dpi page pairs with view_image original detail, twelve final page renders total. Verified individual capture hashes against parent receipt.",
+  "rows": [
+    {
+      "figure": "ch17-algae-loop.svg",
+      "physical_page": 288,
+      "pair": "review-pairs/288-ch17-algae-loop-color-gray.png",
+      "interior_sha256": "661374e94daaa23efbcef8da3267a130f00db5bf211732552487111d11486d6d",
+      "print_sha256": "e9ea86249765c84f8ae650e178c9c37f34d2c9e2a170fd9ee3e07a6a73f5dc80"
+    },
+    {
+      "figure": "ch17-dc-native.svg",
+      "physical_page": 292,
+      "pair": "review-pairs/292-ch17-dc-native-color-gray.png",
+      "interior_sha256": "5f7144a6a4ea0144694ffa6d50863dd26ae0e5f7df7e86fe76392e33539e1e2f",
+      "print_sha256": "94eda63603ce1406f1a3d0894485002997d0a4dea60dbbc2a37e40b95c11703a"
+    },
+    {
+      "figure": "ch17-fab-lab.svg",
+      "physical_page": 294,
+      "pair": "review-pairs/294-ch17-fab-lab-color-gray.png",
+      "interior_sha256": "93de2069ddafb90340fa5973165eaa9f31d8e3e3629dd8b5bdb1001caf575dc9",
+      "print_sha256": "17efce570f9d521f66601ca057fe6ec02460e224deacd4394d47c925127003a0"
+    },
+    {
+      "figure": "ch18-social-contract.svg",
+      "physical_page": 308,
+      "pair": "review-pairs/308-ch18-social-contract-color-gray.png",
+      "interior_sha256": "100c565d295fc88e77cac650df381fbeec866d1df9a5ba1890e524203318fc70",
+      "print_sha256": "5183027b0cb1a6a6b62336b3904824b3050cacca9232510151b777b328099c7f"
+    },
+    {
+      "figure": "ch19-conversion-ladder.svg",
+      "physical_page": 320,
+      "pair": "review-pairs/320-ch19-conversion-ladder-color-gray.png",
+      "interior_sha256": "5e4b67009a49bfe0211de971d3a3c06837f4798ceee6f1f1d40b098e32e8a51c",
+      "print_sha256": "03ed4260ddc2c498030d4fd0cdf0f444e32bb427c83d8ea85829c8658e2098f1"
+    },
+    {
+      "figure": "appd-precedent-timeline.svg",
+      "physical_page": 374,
+      "pair": "review-pairs/374-appd-precedent-timeline-color-gray.png",
+      "interior_sha256": "e34414d6c938de587886c318833dba3f8ec6e1355aadbb8bf14cb38e261c4358",
+      "print_sha256": "40916f82f3280d5869bd3ea22e373d13bd50a4dda5d1bc1ffcfc4790fe8e76e3"
+    }
+  ],
+  "findings": "All diagram labels and captions complete; no clipping, collisions or ambiguous color-only meaning. Timeline dashed approximate periods remain visibly separated in grayscale. Ladder distinguishes proposed upper rungs with dashed strokes. Algae water and feed paths remain separate. Social provision retains paid work and backup.",
+  "limits": "Screen inspection of final digital samples, not a physical print proof."
+}

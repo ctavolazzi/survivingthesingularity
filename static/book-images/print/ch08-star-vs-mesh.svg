@@ -1,71 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="23.6 20.9 815.6 466.9" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  
-  <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">TRUST NETWORK TOPOLOGIES</text>
-  <line x1="40" y1="66" x2="380" y2="66" stroke="#cbd5e1" stroke-width="2"/>
-
-  <line x1="430" y1="90" x2="430" y2="450" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 6"/>
-
-  
-  <text x="230" y="110" font-size="19.6" font-weight="600" fill="#475569" text-anchor="middle">STAR TOPOLOGY</text>
-  <text x="230" y="130" font-size="16.8" fill="#475569" text-anchor="middle">(centralized · fragile)</text>
-
-  
-  <g stroke="#64748b" stroke-width="2">
-    <line x1="230" y1="270" x2="230" y2="180"/>
-    <line x1="230" y1="270" x2="130" y2="220"/>
-    <line x1="230" y1="270" x2="330" y2="220"/>
-    <line x1="230" y1="270" x2="130" y2="330"/>
-    <line x1="230" y1="270" x2="330" y2="330"/>
-    <line x1="230" y1="270" x2="230" y2="368"/>
-  </g>
-  
-  <circle cx="230" cy="270" r="26" fill="#cbd5e1" stroke="#64748b" stroke-width="2.5"/>
-  <text x="230" y="276" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">HUB</text>
-  
-  <g stroke="#d97706" stroke-width="4">
-    <line x1="212" y1="252" x2="248" y2="288"/>
-    <line x1="248" y1="252" x2="212" y2="288"/>
-  </g>
-  
-  <g fill="#f1f5f9" stroke="#64748b" stroke-width="2">
-    <circle cx="230" cy="180" r="12"/>
-    <circle cx="130" cy="220" r="12"/>
-    <circle cx="330" cy="220" r="12"/>
-    <circle cx="130" cy="330" r="12"/>
-    <circle cx="330" cy="330" r="12"/>
-    <circle cx="230" cy="368" r="12"/>
-  </g>
-  <text x="230" y="416" font-size="16.8" fill="#475569" text-anchor="middle">hub dies, everything dies</text>
-
-  
-  <text x="640" y="110" font-size="19.6" font-weight="600" fill="#b45309" text-anchor="middle">MESH TOPOLOGY</text>
-  <text x="640" y="130" font-size="16.8" fill="#b45309" text-anchor="middle">(decentralized · robust)</text>
-
-  <g stroke="#2563eb" stroke-width="1.8" opacity="0.85">
-    <line x1="560" y1="200" x2="720" y2="200"/>
-    <line x1="560" y1="200" x2="520" y2="290"/>
-    <line x1="560" y1="200" x2="640" y2="270"/>
-    <line x1="720" y1="200" x2="640" y2="270"/>
-    <line x1="720" y1="200" x2="760" y2="290"/>
-    <line x1="520" y1="290" x2="640" y2="270"/>
-    <line x1="760" y1="290" x2="640" y2="270"/>
-    <line x1="520" y1="290" x2="580" y2="368"/>
-    <line x1="760" y1="290" x2="700" y2="368"/>
-    <line x1="580" y1="368" x2="700" y2="368"/>
-    <line x1="640" y1="270" x2="580" y2="368"/>
-    <line x1="640" y1="270" x2="700" y2="368"/>
-  </g>
-  <g fill="#f1f5f9" stroke="#d97706" stroke-width="2.5">
-    <circle cx="560" cy="200" r="13"/>
-    <circle cx="720" cy="200" r="13"/>
-    <circle cx="520" cy="290" r="13"/>
-    <circle cx="640" cy="270" r="13"/>
-    <circle cx="760" cy="290" r="13"/>
-    <circle cx="580" cy="368" r="13"/>
-    <circle cx="700" cy="368" r="13"/>
-  </g>
-  <text x="640" y="416" font-size="16.8" fill="#334155" text-anchor="middle">every node routes; damage is a detour</text>
-
-  <text x="430" y="472" font-size="16.8" fill="#475569" text-anchor="middle">keep each circle under Dunbar's ~150 · federate circles instead of growing one</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 616" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">TRUST NETWORK TOPOLOGIES</title>
+<desc id="desc">A star graph loses its hub and the spokes connected to it. A mesh with a failed central node retains a route around the outside. Failure is shown with crosses, affected links with dashes, and surviving links with solid strokes, so the distinction does not depend on color. Actual resilience requires a working path and maintained relationships.</desc>
+<rect x="0" y="0" width="480" height="616" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="20" y="32" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">TRUST NETWORK TOPOLOGIES</text>
+<path d="M20 48L460 48" fill="none" stroke="#9a4f13" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="83" font-size="16" fill="#17251f" text-anchor="start" font-weight="600">ONE HUB</text>
+<path d="M240 184L143 126" fill="none" stroke="#a2afa6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M240 184L240 116" fill="none" stroke="#a2afa6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M240 184L337 126" fill="none" stroke="#a2afa6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M240 184L143 231" fill="none" stroke="#a2afa6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M240 184L337 231" fill="none" stroke="#a2afa6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<circle cx="143" cy="126" r="10" fill="#ffffff" stroke="#a2afa6" stroke-width="1.8"/>
+<circle cx="240" cy="116" r="10" fill="#ffffff" stroke="#a2afa6" stroke-width="1.8"/>
+<circle cx="337" cy="126" r="10" fill="#ffffff" stroke="#a2afa6" stroke-width="1.8"/>
+<circle cx="143" cy="231" r="10" fill="#ffffff" stroke="#a2afa6" stroke-width="1.8"/>
+<circle cx="337" cy="231" r="10" fill="#ffffff" stroke="#a2afa6" stroke-width="1.8"/>
+<circle cx="240" cy="184" r="23" fill="#ffffff" stroke="#9a4f13" stroke-width="2"/>
+<path d="M227 171L253 197M253 171L227 197" fill="none" stroke="#9a4f13" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="278" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Lose this hub and its links stop working.</text>
+<path d="M20 302L460 302" fill="none" stroke="#a2afa6" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="334" font-size="16" fill="#17251f" text-anchor="start" font-weight="600">ALTERNATE PATHS</text>
+<path d="M143 376L337 376" fill="none" stroke="#315f78" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M143 376L240 437" fill="none" stroke="#a2afa6" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M337 376L372 439" fill="none" stroke="#315f78" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M337 376L240 437" fill="none" stroke="#a2afa6" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M372 439L314 501" fill="none" stroke="#315f78" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M372 439L240 437" fill="none" stroke="#a2afa6" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M314 501L165 501" fill="none" stroke="#315f78" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M314 501L240 437" fill="none" stroke="#a2afa6" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M165 501L107 439" fill="none" stroke="#315f78" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M165 501L240 437" fill="none" stroke="#a2afa6" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<path d="M107 439L143 376" fill="none" stroke="#315f78" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M107 439L240 437" fill="none" stroke="#a2afa6" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="4 5" />
+<circle cx="143" cy="376" r="10" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<circle cx="337" cy="376" r="10" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<circle cx="372" cy="439" r="10" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<circle cx="314" cy="501" r="10" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<circle cx="165" cy="501" r="10" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<circle cx="107" cy="439" r="10" fill="#ffffff" stroke="#315f78" stroke-width="2"/>
+<circle cx="240" cy="437" r="21" fill="#ffffff" stroke="#9a4f13" stroke-width="2"/>
+<path d="M228 425L252 449M252 425L228 449" fill="none" stroke="#9a4f13" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="550" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">A mesh can reroute if a usable path remains.</text>
+<text x="20" y="571" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">People maintain the circle and its links.</text>
+<text x="20" y="592" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Cross: failed node. Dashes: affected links.</text>
 </svg>

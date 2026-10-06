@@ -11,37 +11,18 @@
   import FloatingPopupProgressBar from '$lib/components/FloatingPopupProgressBar.svelte';
   import Spacer from '$lib/components/Spacer.svelte';
   import { interactiveRegistry } from '$lib/components/interactives/registry.js';
+  import { splitBookFigures } from '$lib/bookScenes/segments.js';
+  import '$lib/styles/book-figures.css';
   export let data;
 
   let currentSection = 1;
   let totalSections = data.book.sections.length;
   let navOpen = false;
   let navHidden = false;
+  let chapterToggle;
 
-  // A chapter can drop `[[interactive:some-id]]` on its own line to embed a
-  // live widget from the interactives registry at that point in the prose.
-  // Split on the marker BEFORE running markdown, so the token never has to
-  // survive marked()/HTML escaping - the raw markdown chunks around it are
-  // rendered normally, and the id in between is looked up in the registry.
-  const INTERACTIVE_MARKER = /^\[\[interactive:([a-z0-9-]+)\]\]\s*$/m;
-
-  function splitIntoSegments(raw) {
-    const segments = [];
-    let rest = raw;
-    let match;
-    while ((match = INTERACTIVE_MARKER.exec(rest))) {
-      const before = rest.slice(0, match.index);
-      if (before.trim()) segments.push({ type: 'html', value: renderMarkdown(before) });
-      segments.push({ type: 'component', id: match[1] });
-      rest = rest.slice(match.index + match[0].length);
-    }
-    if (rest.trim()) segments.push({ type: 'html', value: renderMarkdown(rest) });
-    return segments;
-  }
-
-  // Chapters with no marker fall straight through as a single html segment,
-  // so this is a strict superset of the old `marked(data.content)` behavior.
-  $: segments = splitIntoSegments(data.content);
+  // Source figures remain ordinary Markdown in EPUB, PDF, and no-script HTML.
+  $: segments = splitBookFigures(data.content);
 
   $: currentMeta = sectionsWithMeta.find(s => s.id === data.section.id);
 
@@ -111,11 +92,16 @@
     // Left/right arrow keys move between chapters, skipped while typing
     // anywhere or while the chapter-jump dropdown is open.
     function onKeydown(e) {
-      if (navOpen) return;
-      const tag = e.target && e.target.tagName;
-      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
-      if (e.key === 'ArrowRight') handleNavigation({ detail: { direction: 'next' } });
-      else if (e.key === 'ArrowLeft') handleNavigation({ detail: { direction: 'prev' } });
+      if (navOpen) {
+        if (e.key === 'Escape') { navOpen = false; chapterToggle?.focus(); e.preventDefault(); }
+        return;
+      }
+      if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      if (e.target instanceof Element && e.target.closest('a, button, input, textarea, select, summary, [contenteditable]:not([contenteditable="false"]), .interactive-embed')) return;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        handleNavigation({ detail: { direction: e.key === 'ArrowRight' ? 'next' : 'prev' } });
+      }
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -177,6 +163,8 @@
       <button
         type="button"
         class="chapter-nav-toggle"
+        bind:this={chapterToggle}
+        aria-controls="chapter-jump-list"
         aria-expanded={navOpen}
         on:click={() => navOpen = !navOpen}
       >
@@ -189,7 +177,7 @@
   </div>
 
   {#if navOpen && !$readerMode}
-    <div class="chapter-nav-dropdown">
+    <div class="chapter-nav-dropdown" id="chapter-jump-list">
       {#each tocGroups as group}
         <div class="chapter-nav-group">
           <p class="chapter-nav-group-label">{group.label}</p>
@@ -234,11 +222,13 @@
 
   <article class="prose prose-lg dark:prose-invert chapter-article">
     {#each segments as segment}
-      {#if segment.type === 'html'}
-        {@html segment.value}
+      {#if segment.type === 'markdown'}
+        {@html renderMarkdown(segment.raw)}
       {:else if interactiveRegistry[segment.id]}
         <div class="interactive-embed not-prose">
-          <svelte:component this={interactiveRegistry[segment.id]} />
+          {#key segment.id}
+                  <svelte:component this={interactiveRegistry[segment.id]} id={segment.id} src={segment.src} alt={segment.alt} caption={segment.caption} />
+                {/key}
         </div>
       {/if}
     {/each}
@@ -280,6 +270,7 @@
     transform: translateY(-130%);
     opacity: 0;
   }
+  .chapter-nav:focus-within { transform: translateY(0); opacity: 1; }
   .chapter-nav-pill {
     pointer-events: all;
     display: flex;

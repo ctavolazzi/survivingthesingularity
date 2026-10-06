@@ -44,7 +44,7 @@ The author's personal AGI forecast is U.S. Thanksgiving, November 25, 2027. It's
 
 ## The nine stages
 
-The map runs from observable to speculative. Stages 1 through 5 are where the choices are still ours.
+The map runs from present social pressures to distant speculation. Stages 1 through 5 organize the near-term choices the author wants us to make; they aren't an established sequence.
 
 - **Stage 1: The Cash Grab.** A new capability gets monetized first. Ask whether the money produces something people can eat, and whether people without money share in it.
 - **Stage 2: The Panic and the Plug.** Incumbents and the frightened reach for restrictions, and sometimes for the plug. Read the rule: who wrote it, what it restricts, who carries the cost.

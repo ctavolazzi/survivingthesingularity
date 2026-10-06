@@ -64,7 +64,7 @@ The CSA hired an electrical technician to review the installation plan, and two 
 
 By the time the forty units shipped in February, the yellow tab had an answer attached and the folder had grown thick enough to prop open a door. Denny delivered them in apple boxes, each one tested on the bench against a space heater and a cup of wet dirt, with the instructions and the agreed support number. Two growers needed replacement probes in the first month. With the power isolated and help from the support call, they could change the documented part without discarding the controller. Marta put the repair emails up on the corkboard like other shops hang their first dollar.
 
-And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's check-engine light. Curtis, it turned out, diagnosed it in nine minutes off a fourteen-dollar OBD dongle, a cracked vacuum line, two dollars of hose. The light had been on since the drive north. The dealership had quoted him twelve hundred dollars and a week; The man who wanted to fence out the world did the repair while the coffee brewed. He left the remaining length on the dashboard, coiled like a small black snake.
+And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's check-engine light. Curtis, it turned out, diagnosed it in nine minutes off a fourteen-dollar OBD dongle, a cracked vacuum line, two dollars of hose. The light had been on since the drive north. The dealership had quoted him twelve hundred dollars and a week; the man who wanted to fence out the world did the repair while the coffee brewed. He left the remaining length on the dashboard, coiled like a small black snake.
 
 Elijah put the repair card for controller number forty in the folder. Curtis's hose went in the glove box.
 
@@ -79,9 +79,9 @@ The strategy isn't to stop the big companies or to appeal to the conscience of p
 - **Survival by charter.** That capacity should serve basic needs first: food, then shelter and care. Not by waiting for a government decree, but by writing it into the charter of your own infrastructure: the co-op bylaw that says the kitchen feeds whoever's hungry before it sells a single meal, the land-trust covenant that says nobody gets evicted into the market. Chapter 12 goes into how that ground gets held.
 - **The prototype is already in backyards.** Drip lines that open on soil moisture. Sensor rigs that turn a raised bed into something closer to a Tamagotchi than a chore. Open, non-proprietary garden robots. None of it waits on anybody's permission.
 
-![Two supply lines compared side by side: a long fragile global chain of raw material, overseas factory, ocean freight and last-mile truck, versus a short hyper-local loop of local material, neighborhood factory, and you](/book-images/ch09-hyperlocal-vs-global.svg)
+![Two schematic supply routes reach households: distant suppliers through factory and freight, or imported parts through nearby workshops and growers, with a repair return. Both rely on people, energy and imports.](/book-images/ch09-hyperlocal-vs-global.svg)
 
-*Not decentralization for its own sake. A shorter line: one you can hold in your head, that depends on your neighbors' hands instead of strangers far away.*
+*Shorter supply lines can make repair and coordination more local. Imported parts, materials, energy and human work remain; distance alone does not establish fair treatment.*
 
 ## A dense city can't feed itself, and it doesn't have to
 
@@ -91,11 +91,15 @@ The trick is to stop drawing the circle around the city and start drawing it aro
 
 Think of it at the scale it deserves, which is Manhattan Project scale. Not a bunker in the woods. A deliberate, regional, out-loud build-out of the capacity to feed and house ourselves, handing the back-breaking work to machines. The goal is never to cut the city off from the world. It's to make sure that if the world's supply lines seize up for a week or a season, the region keeps its people fed instead of waiting on a truck that isn't coming. Resilience, not secession. So ask the only question that matters: if the trucks stopped tomorrow, how long could your region feed its people? Most places don't know. That gap is the work.
 
-![A dense city core ringed by four surrounding municipalities that supply it: food production, materials recovery, energy and water, and neighborhood factories, with supply flowing inward to the core](/book-images/ch09-region-ring.svg)
+![A town and households connect to nearby farms and kitchens, materials recovery and stores, power and water services, and workshops. Regional coverage is a capacity-building objective that must be measured, with outside suppliers still needed.](/book-images/ch09-region-ring.svg)
 
-*You don't deglobalize a city by walling it off. You ring it with towns that produce what it can't, which is also where the good jobs are.*
+*Build regional capacity, then measure what it covers. Stores, seasonal production, water, power, delivery and remaining imports determine how many people can be supplied and for how long.*
 
 ## The controller isn't dinner
+
+![Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.](/book-images/v101-cutout-printer.png)
+
+*A machine takes shape around its work. AI-adapted cutout from [John Abella](https://commons.wikimedia.org/wiki/File:Prusa_i3_-_RepRap_3D_printer_printing.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).*
 
 The neighborhood factory earns its name when somebody can keep doing useful work because it exists. A repairable controller helps a grower. A local crew knows which part fails during the week nobody has a spare afternoon.
 
@@ -109,7 +113,11 @@ Plants need nitrogen, and the air is almost eighty percent nitrogen, but plants 
 
 > **N₂ + 3H₂ → 2NH₃** (catalyst, high pressure, high temperature)
 
-To force that reaction, plants run at 150 to 250 times atmospheric pressure and 400 to 500°C, with hydrogen made mostly from natural gas. Ammonia production eats roughly one to two percent of the world's energy supply and accounts for something over one percent of global energy-related carbon emissions. It also feeds billions of people. Synthetic fertilizer is one of the great achievements of the last century, and it's fossil energy stabilized in a bag.
+To force that reaction, industrial reactors run at high pressure and temperature, with hydrogen made mostly from natural gas and coal. The IEA's 2021 assessment puts ammonia production at about two percent of global final energy consumption, including feedstock, and estimates 450 million tonnes of direct CO₂ emissions a year. [IEA, Ammonia Technology Roadmap](https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary) Synthetic fertilizer helps feed billions of people. It's one of the great achievements of the last century, with a large fossil-energy bill attached.
+
+![Three columns show net energy intensity of ammonia production in IEA's 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average.](/book-images/v101-chart-ammonia-energy.svg)
+
+*The energy in ammonia. IEA's global-average estimate and best-available-process benchmarks are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. [IEA, Ammonia Technology Roadmap, 2021](https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary).*
 
 Biology does the same chemistry at outdoor temperature. Legumes, clover, peas, beans, vetch, host *Rhizobium* bacteria in their roots, and those bacteria use an enzyme called nitrogenase to break the nitrogen triple bond:
 
@@ -121,9 +129,9 @@ The plant pays in sugar from sunlight. That's not the same job as the fungi that
 
 FarmBot's own documentation describes a gantry on rails over a raised bed, driven by stepper motors to millimeter-class accuracy, with tool heads for seeding, watering, and weeding. [FarmBot tool documentation](https://farm.bot/pages/tools) Every plant becomes a coordinate. That's a concrete, useful set of tasks. It isn't a machine that harvests every crop, cooks a balanced diet, and delivers it for free, so keep the claim the size of the documented work.
 
-![The CNC Autonomous Bed: a gantry travels the X-axis over a dense raised bed while a Z-axis tool head seeds, waters, and weeds plants addressed by X-Y coordinate, with no walking paths wasted](/book-images/ch09-cnc-bed.svg)
+![Top view of a gantry over a growing bed, with X travel along the bed, Y travel across the gantry and Z motion lowering the tool toward a plant. Generic tooling can seed, water or weed; people still inspect, maintain and harvest.](/book-images/ch09-cnc-bed.svg)
 
-*The CNC bed. Every plant is a coordinate; the machine tends the grid from one rail.*
+*A gantry can reduce walking space in a bed. Tooling and behavior depend on the machine and software version; this concept is not a build plan or a promise to automate the entire crop.*
 
 The UN Food and Agriculture Organization's 2022 report on agricultural automation looks at the opportunities alongside the barriers, especially for smaller farms. [FAO, The State of Food and Agriculture 2022](https://www.fao.org/agrifood-economics/publications/detail/en/c/1613500/) That's a reason to investigate useful automation and who can afford it, not proof that any one installation feeds a town.
 
@@ -131,14 +139,14 @@ The UN Food and Agriculture Organization's 2022 report on agricultural automatio
 
 For the controller in the scene, or one like it, the open-source project Mycodo turns a Raspberry Pi into an environmental controller: sensors in, relays out, and feedback loops in between.
 
-![The Greenhouse Automation Bus: a Raspberry Pi running Mycodo reads an I2C sensor bus (SHT31-D air, STEMMA soil) and drives a GPIO relay board controlling a water solenoid, exhaust fan, and grow lights, in a closed sense-decide-actuate loop](/book-images/ch09-greenhouse-bus.svg)
+![SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.](/book-images/ch09-greenhouse-bus.svg)
 
-*The greenhouse bus. Sensors in on I2C, low-voltage actuators out on relays, control loops in the middle.*
+*The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.*
 
 - **Sensors:** an air temperature and humidity sensor (the SHT31-D is common) and a capacitive soil-moisture probe, which resists corrosion better than the cheap resistive kind.
 - **Actuators:** a relay board switching low-voltage devices: an exhaust fan, a solenoid valve on the irrigation line, supplemental lights. Have someone who knows electrical work check anything that touches mains power.
 
-On a clean Raspberry Pi OS install, the project's documented installer is:
+On a clean Raspberry Pi OS install, check the project's current [installation requirements](https://github.com/kizniche/Mycodo#install-mycodo), then use its documented installer:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -149,7 +157,7 @@ Then browse to `https://<your-pi-ip>/` for the web interface. From there you can
 
 > $$u(t) = K_p e(t) + K_i \int e(\tau) d\tau + K_d \, de(t)/dt$$
 
-where $e(t)$ is the gap between the moisture you want and the moisture the probe reads, and the three $K$ values tune how hard and how smoothly the valve responds. Start with a grower's judgment about what the plants need, keep the manual valve working, and check the soil with your hands until you trust the numbers. (Chapter 15 is about what happens when you don't.)
+where $e(t)$ is the gap between the target and the sensor reading, and the three $K$ values tune the response. A valve that only opens or closes still needs limits on run time and total water, plus an off state if the sensor stops reporting. Start with a grower's judgment about what the plants need, keep the manual valve working, and check the soil with your hands until you trust the numbers. (Chapter 15 is about what happens when you don't.)
 
 ## A worked example: one delivery, all the way through
 
@@ -170,6 +178,12 @@ Suppose there are 10 kilograms of usable vegetables and the plan is two kilogram
 | Remaining commitment | Two kilograms, sourced through the food partner before delivery. |
 | Funding | Partner covers supplies and transport; donated time and existing equipment recorded separately. |
 | Outcome to check | All five deliveries arrive, people can use them, and the partner's extra work shows up in the record. |
+
+<!-- interactive:food-delivery -->
+
+![Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.](/book-images/v101-scene-food-delivery.svg)
+
+*One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals.*
 
 Those vegetables supplement meals. They don't make five complete diets. A dependable baseline needs enough suitable food across seasons, prepared food for people who can't cook, and a plan for interruptions. The small trial tests one contribution to that. The donated time and equipment get written down too, not called free: a permanent service can't run on a lucky month of volunteers.
 

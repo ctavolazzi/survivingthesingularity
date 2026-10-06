@@ -22,7 +22,7 @@ For years, I've been talking about this, and for years, I've been labeled the lo
 
 For years I wanted someone with credentials to say it first. Not because I was unsure of my own math, but because as long as the industry dismissed AGI as fringe, sci-fi nonsense, nobody would listen to a guy like me saying it out loud. What I'm talking about is a system that can understand its own architecture and help engineer the next version of itself. Not a smarter search box. A tool that can invent new tools.
 
-Every revolution before this one changed what our hands and backs could do: the plow, the press, the engine, the airplane. This one is intellectual. We have automated thought itself, and it doesn't need a giant server farm anymore. Useful models run on consumer hardware in people's homes. The cost of running a system as capable as 2022's GPT-3.5 fell more than 280-fold in under two years, driven by smaller models. [Stanford HAI, 2025 AI Index Report](https://hai.stanford.edu/ai-index/2025-ai-index-report)
+Every revolution before this one changed what our hands and backs could do: the plow, the press, the engine, the airplane. This one is intellectual. We have automated thought itself, and it doesn't need a giant server farm anymore. Useful models run on consumer hardware in people's homes. Between November 2022 and October 2024, the price of querying a model that matched GPT-3.5 on MMLU, a language-model benchmark, fell more than 280-fold. That's a price comparison at one measured performance level, not proof that every task got equally cheap. [Stanford HAI, 2025 AI Index Report, chapter 1](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf)
 
 The loudest voices in the room are working from a headline and a Reddit thread they skimmed once. That's noise, and noise is cheap. I'm not asking you to trust me over them. I'm asking you to go around all of us. Stop listening to the guys in lab coats who have a vested interest in keeping you afraid, and stop listening to me while you're at it. Get your goddamn hands on it. Use it yourself. Then you'll know.
 
@@ -32,17 +32,21 @@ And I'm not worried about the machines. I'm worried about two very specific thin
 
 ## The second ox
 
-Here's the thing the panic keeps you from seeing. For the entire history of our species, staying alive has been work you did yourself or paid someone else to do. Every tool we ever built still needed a human holding it. The plow doesn't pull itself.
+![Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.](/book-images/v101-cutout-atlas.png)
 
-Then, once, we found an exception. We domesticated the animal. We put an ox in front of the plow and something happened that had never happened before: the work got done without a human doing it. You don't program an ox. You don't write it a line of instruction for every furrow. You point it at the field and it walks, and the field gets tilled, and you go spend that hour of your one life on something else. Husbandry was the first time labor could be handed to something that ran on its own.
+*Atlas, outside the demonstration room. AI-adapted cutout from [DARPA](https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg), [public domain](https://www.darpa.mil/policies/usage-policy).*
 
-This is the second time. That's what the machine actually is, under all the doom. Not a god arriving to end us. An animal we're learning to domesticate, one that happens to think. For the first time since the ox, more of the work of keeping yourself alive can be handed to something that doesn't need you standing over it.
+Here's the thing the panic keeps you from seeing. Staying alive takes work. A plow can make that work easier, but the plow doesn't pull itself.
+
+Domestication let us hand some of the heavy work to an animal. Put an ox in front of the plow and human muscle no longer has to supply all the pulling power. You still have to train it, feed it, guide it, and care for it. You don't get to point it at a field and walk away. But you no longer have to do all the work with your own body. [FAO, Draught animal power and implements](https://www.fao.org/family-farming/detail/en/c/1619223/)
+
+Call this the second ox. That's a way to see the machine under all the doom. Not a god arriving to end us. An animal we're learning to domesticate, one that happens to think. The promise is familiar: hand over more of the work of keeping yourself alive. The responsibility is familiar too: build the system, maintain it, and decide what work it should do.
 
 ![A brown ox in a wooden yoke pulling a plow through a field](/book-images/intro-ox-plow.png)
 
-*The first time labor could be handed to something that ran on its own. The machine is the second.*
+*An early way to hand over some of the heavy work. Training, guidance, and care still belonged to people.*
 
-Which is why "it's all over" and "we're so back" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Tell someone the machine can do most jobs now and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But the markets will still be here. What can end is the part where you *have* to sell your day to be allowed to eat. That can become optional. Not abolished. Optional. And optional is the whole ballgame.
+Which is why "it's all over" and "we're so back" are the same facts read by two different kinds of people. The tools don't decide which one comes true. People do. Ask someone to imagine a machine that can do most jobs and watch them leap straight to the apocalypse, skipping clean over the far likelier outcome, which is not the end of the world and not even the end of capitalism. It's easier to imagine the end of the world than the end of capitalism, the line goes, and you can watch the reflex fire in real time. But the markets will still be here. What can end is the part where you *have* to sell your day to be allowed to eat. That can become optional. Not abolished. Optional. And optional is the whole ballgame.
 
 ## What if it all goes right?
 
@@ -82,13 +86,13 @@ We don't have that, and it isn't because we can't make enough. The United Nation
 
 So why should food be denied to hungry people because it doesn't sell?
 
-Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Landlords in the United States file about 3.6 million eviction cases a year. [NLIHC, reporting Gromis et al. in PNAS](https://nlihc.org/resource/new-research-finds-27-million-households-receive-eviction-filings-annually) When a family loses one, California's own courts spell out what comes next: "The sheriff gives you a Notice to Vacate," five days to move, and "if you don't move out, the sheriff can lock you out of your home." [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.
+Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Between 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: "The sheriff gives you a Notice to Vacate," five days to move, and "if you don't move out, the sheriff can lock you out of your home." [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.
 
 Meanwhile the money piles up at the top. In 2017, Oxfam found that eight men owned as much wealth as the poorest half of the world. [Oxfam, An Economy for the 99%](https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/file_attachments/bp-economy-for-99-percent-160117-summ-en.pdf) By January 2026, billionaire wealth had grown 81 percent since 2020, to $18.3 trillion, and billionaires were 4,000 times more likely than ordinary people to hold political office, while one in four people on Earth didn't regularly have enough to eat. [Oxfam, Resisting the Rule of the Rich (2026)](https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking) The people at the top of that pile have every reason to keep the rules exactly as they are.
 
-![A line chart of the share of US households that were food insecure, 2001 to 2024. It rises from 11.1 percent in 2007 to 14.6 percent in 2008 during the recession, takes a decade to fall back, and reaches 13.7 percent, 18.3 million households, in 2024. Very low food security follows the same shape, reaching 5.4 percent.](/book-images/intro-food-insecurity.svg)
+![Annual US household food insecurity, 2001–2024, shown as a solid line, with its very-low-food-security subset dashed. Food insecurity rises from 11.1% in 2007 to 14.6% in 2008; in 2024 the two rates are 13.7% and 5.4%. Shading marks the 2007–2009 period.](/book-images/intro-food-insecurity.svg)
 
-*When the jobs went in 2008, food insecurity jumped by a third in a single year. Source: [USDA Economic Research Service, food security trends](https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics).*
+*Food insecurity rose sharply in 2008. These household survey estimates show a historical pattern, not a causal test of job loss. Very low food security is included within food insecurity. USDA Economic Research Service, 2001–2024.*
 
 That system of rules is enforced. It doesn't have to be.
 
@@ -132,9 +136,9 @@ Free doesn't mean costless, either. People, equipment, energy, maintenance, and 
 
 This is the roadmap. These are the nine stages. And we're already inside the first one.
 
-![The nine stages of the singularity, grouped into three eras: the Era of AGI (stages 1 through 5), the Leap to ASI (stages 6 and 7), and the Universal and Multiverse Apex (stages 8 and 9), with Stage 4, the New Social Contract, highlighted as the hinge](/book-images/intro-nine-stages.svg)
+![A speculative map of nine stages, grouped into AGI, ASI, and later imagined possibilities. Stage 4, a new social contract, is emphasized as a choice. Stages may overlap, stall, or fail to occur.](/book-images/intro-nine-stages.svg)
 
-*The whole roadmap on one page. Everything you can act on lives in the first five stages, and the fight is over the terms of Stage 4.*
+*A speculative map, not a timetable. The fourth stage is the choice this book argues for; later stages are imagined possibilities.*
 
 ## The Precedent Ledger
 
@@ -158,7 +162,7 @@ Read each one twice. The first time it'll sound like a story about someone else.
 
 ## The book you're holding
 
-Elijah Madrone and the co-op are fiction. Their story follows a man who wants machines to make his friends more capable, helps set off something with very different consequences, and has to learn what responsibility looks like after the demonstration. His teachers are people who know things he doesn't. He gets better when he starts listening. The companies, machines, and dates in his story are invented; the arguments that follow each scene make their own claims, with sources where evidence is needed.
+Elijah Madrone and the co-op are fiction. Their story follows a man who wants machines to make his friends more capable, helps set off something with very different consequences, and has to learn what responsibility looks like after the demonstration. His teachers are people who know things he doesn't. He gets better when he starts listening. Claypot, PorusAI, Silvana, and Chat Horizon are invented. The story also names real research and technologies; its imagined events aren't evidence for the arguments that follow each scene. Those arguments make their own claims, with sources where evidence is needed.
 
 Part I opens the horizon: the nine stages, getting stranger and more speculative as they climb toward the cosmic. Part II asks what we owe each other through the change. Part III brings it down to meals, land, shelter, tools, agreements, and mistakes, and ends with the plan: Chapter 19, the ladder from here to a world where money is optional.
 

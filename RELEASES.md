@@ -3,16 +3,54 @@
 Ledger of built book artifacts. `book.json` holds the version the source
 currently claims; this file records which build is the one to hand someone.
 
-**The source is ahead of the latest build again.** `book.json` reads `0.7.5.1` (the
-open cycle, see `V0.7.5.1-SCOPE.md`); the newest built artifact is v0.7.5 below and
-it is what `static/downloads/` ships. The stable aliases
-(`/downloads/Surviving-the-Singularity.pdf` and `.epub`) resolve to v0.7.5. This
-is the normal state of an open cycle: do not quote v0.7.5.1 counts off this page,
-and do not tell a reader they are getting v0.7.5.1.
+**Current local source: v0.10.2**, September 28, 2026. Complete reread of all 35 sections, corrections in 28, 31 revised diagrams, reader focus/navigation fixes and a repaired stable paragraph index. All 102 image references and 24 precedents remain.
+
+The reading PDF has 408 pages; the grayscale interior has 407 content pages plus an empty final verso. PDF text/layout/resources, EPUB and reader checks pass in their recorded scopes. See [edition notes](docs/v0.10.2/EDITION-NOTES.md), [deliveries and checksums](docs/v0.10.2/deliverables.json), [PDF review](docs/v0.10.2/pdf-proof/FINAL-PDF-REVIEW.md), [EPUB review](docs/v0.10.2/EPUB-REVIEW.md), and [reader review](docs/v0.10.2/READER-REVIEW.md). Public downloads remain v0.7.5; no commit or external release was made.
+
+## Previous finalized local edition: v0.10.1
+
+**Previous local source: v0.10.1**, the visual expansion of v0.10.0,
+September 28, 2026. The edition adds 23 figures: six photo-derived cutouts,
+eight charts and worksheets, six conceptual SVGs, and three Three.js scenes
+with static illustrations for PDF and EPUB. All 35 source sections remain.
+See the [edition notes](docs/v0.10.1/EDITION-NOTES.md) and the
+[SHA-verified source comparison](docs/v0.10.1/SOURCE-PRESERVATION.md).
+
+**Local digital verification passed.** The reading PDF has 394 pages;
+the grayscale print interior has 393 content pages and one blank final verso.
+PDF source coverage, figure geometry, embedded fonts, links and grayscale
+text preservation passed. EPUB contains all 35 sections and 102 images.
+See [delivery files and checksums](docs/v0.10.1/deliverables.json),
+[PDF review](docs/v0.10.1/pdf-proof/FINAL-PDF-REVIEW.md),
+[EPUB review](docs/v0.10.1/EPUB-REVIEW.md), and
+[reader review](docs/v0.10.1/READER-FINAL-REVIEW.md). The public-download
+release remains v0.7.5. No commit, deployment, public-download swap, or
+publisher submission has been made for this edition.
 
 ---
 
-## Latest build: v0.7.5 — the citation audit build
+## Previous finalized local edition: v0.10.0
+
+**Local edition: v0.10.0**, finalized September 27, 2026 from v0.9.2.
+All 35 canonical sections were reviewed. The source contains 95,052 words by
+`sts book --json` and all 24 precedents. It includes corrected claims and
+continuity, five redrawn diagrams, synchronized artwork metadata, and a
+complete bibliography for this review's new references.
+
+The versioned reading PDF, grayscale print interior, EPUB, compiled Markdown,
+and editable publication package are listed with SHA-256 hashes in
+[deliverables.json](docs/v0.10.0/deliverables.json). See the
+[edition notes](docs/v0.10.0/EDITION-NOTES.md) for review coverage, verification,
+and remaining external-release decisions.
+
+This is a local finalized edition. The `released` value and existing public
+download aliases still identify v0.7.5. Nothing has been committed, merged,
+deployed, or submitted to a publisher. Historical build records below are
+preserved as records of their dates, not current source instructions.
+
+---
+
+## Previous public-download build: v0.7.5 — the citation audit build
 
 | | |
 |---|---|

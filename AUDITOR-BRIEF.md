@@ -1,5 +1,14 @@
 # AUDITOR BRIEF — Surviving the Singularity (book)
 
+Current local source edition: **v0.10.2**, the full reread and correction pass on v0.10.1. Start with [edition notes](docs/v0.10.2/EDITION-NOTES.md), [source review receipts](docs/v0.10.2/source-review.json), [stable ID review](docs/v0.10.2/INDEX-REVIEW.md), and [production instructions](publication/README.md). All 35 sections were reviewed; 28 changed, 31 existing SVGs were revised, and reader focus/navigation defects were fixed. All 102 image references and 24 precedents remain. The reading PDF has 408 pages; current hashes belong to [this delivery manifest](docs/v0.10.2/deliverables.json). Older counts, paths and completed checks describe their dated editions.
+
+The source and `book.json` remain authoritative; `released` still records
+v0.7.5. Previous worktrees and deliveries are preserved. No commit, merge,
+deployment, or publisher submission is authorized by this document.
+Prior version-specific instructions below are historical. Do not use their
+stale branch, section counts, or commit/push instructions as current
+authorization.
+
 Continuation prompt for any agent auditing or editing this book. Read this file
 FIRST, in full. It replaces repo spelunking: everything below was verified on
 2026-07-19 at book v0.5.2. If you change the system (tools, paths, conventions,

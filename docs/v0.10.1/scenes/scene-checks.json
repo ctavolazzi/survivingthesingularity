@@ -1,0 +1,82 @@
+{
+  "inputs": [
+    "src/lib/bookScenes/catalog.js",
+    "src/lib/bookScenes/geometry.js",
+    "src/lib/bookScenes/svg.js"
+  ],
+  "scenes": [
+    {
+      "id": "food-delivery",
+      "meshes": 279,
+      "triangles": 9212,
+      "checks": [
+        {
+          "mode": "source",
+          "sha256": "a1f520312ee5ab384b8f6e1d7bf093e78327f89e1052fbd39f2fbf20c4dc140e",
+          "textCount": 14,
+          "outOfBounds": [],
+          "tooSmall": [],
+          "paths": 2923
+        },
+        {
+          "mode": "print",
+          "sha256": "74b4eb3cd786b6a62fe86ed0eecc15fe01af4e2c2e5a54cdcd8a16ade94e982b",
+          "textCount": 14,
+          "outOfBounds": [],
+          "tooSmall": [],
+          "paths": 2918
+        }
+      ]
+    },
+    {
+      "id": "living-soil",
+      "meshes": 224,
+      "triangles": 8152,
+      "checks": [
+        {
+          "mode": "source",
+          "sha256": "d397231526eb9f4967a7660301ca71013709c083ce84588ec4c5bb8d164f9dd2",
+          "textCount": 14,
+          "outOfBounds": [],
+          "tooSmall": [],
+          "paths": 2565
+        },
+        {
+          "mode": "print",
+          "sha256": "17935101242fe9c5e0e3ccac30be276a50d85c5f558feb17c653d2eb6507ea73",
+          "textCount": 14,
+          "outOfBounds": [],
+          "tooSmall": [],
+          "paths": 2516
+        }
+      ]
+    },
+    {
+      "id": "shared-workshop",
+      "meshes": 128,
+      "triangles": 3836,
+      "checks": [
+        {
+          "mode": "source",
+          "sha256": "3aa16701bd12e1d8bc8d1a53a63e58f549ff049eb7e9a7b88ecb83e3629cc876",
+          "textCount": 14,
+          "outOfBounds": [],
+          "tooSmall": [],
+          "paths": 1369
+        },
+        {
+          "mode": "print",
+          "sha256": "c9053537b3f90445a676f4874eb6a4b407988125cec33042b512e3d0634485bc",
+          "textCount": 14,
+          "outOfBounds": [],
+          "tooSmall": [],
+          "paths": 1361
+        }
+      ]
+    }
+  ],
+  "negative_controls": [
+    "Hash gate rejected a deliberately stale artifact.",
+    "Unknown scene and mismatched still preserve the original Markdown instead of dropping it."
+  ]
+}

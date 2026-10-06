@@ -1,56 +1,78 @@
 # Publication production files
 
-This directory typesets manuscript v0.8.2 without editing its canonical files.
-The 30-section baseline and image/caption exceptions are recorded under
-[`docs/publication`](../docs/publication/). Read the
-[design report](../docs/publication/DESIGN-REPORT.md) for delivered files,
-verification and external-release decisions.
+Current local edition: **v0.10.2**. All 35 canonical sections were reread; 28 changed, 31 SVGs were revised, and reader and paragraph-index defects were corrected. See [edition notes](../docs/v0.10.2/EDITION-NOTES.md). Reading PDF: 408 pages. Print interior: 407 content pages plus one blank final verso. [Delivery hashes](../docs/v0.10.2/deliverables.json) identify the files. Previous worktrees and deliveries remain preserved.
 
-## Outputs
+## Build and verify
 
-- `output/Surviving-the-Singularity-reading.pdf`: color reading edition with cover, 229 pages.
-- `output/Surviving-the-Singularity-print-interior.pdf`: grayscale, no-bleed 6 x 9 interior, 228 pages.
-- `output/Surviving-the-Singularity-front-cover.pdf`: vector front-cover design. A full cover wrap requires the chosen printer, paper and binding.
-- `output/Surviving-the-Singularity-interior.pdf`: color interior master used for conversion.
-- `output/Surviving-the-Singularity-editable-publication.zip`: portable HTML/CSS/SVG/font/manuscript and PDF handoff.
+Requirements: Node dependencies from `npm ci`; Python 3 with WeasyPrint, Beautiful Soup, pypdf, Pillow and Playwright; Pandoc; Ghostscript; Chrome. Fonts and licenses are bundled in `assets/fonts`.
 
-## Rebuild from this repository
+Canonical manuscript source is `src/lib/data/book/`, ordered by `book.json`. Frozen hashes in `docs/publication/baseline.json` must match all 35 sections and the manifest. `docs/v0.10.2/baseline.json` separately records the preserved v0.10.1 reference edition. Do not update the freeze merely to bypass a failure; review and record any source changes first.
 
-Required commands: Python 3, Pandoc, Ghostscript. Python packages used are
-WeasyPrint, Beautiful Soup, pypdf and Pillow. The font files and their original
-licenses are included in `assets/fonts`.
+Run from the repository root:
 
 ```sh
 export DAILY_NOTE_AGENT=codex
-python3 publication/build.py
-python3 publication/production.py
+python3 scripts/sts.py verify
+python3 scripts/sts.py id verify
+python3 docs/v0.10.2/check_review.py
+python3 docs/v0.10.2/gates.py
+node scripts/render-book-scenes.mjs --check
+python3 docs/v0.9.2/print_figures.py --verify
+python3 docs/v0.10.2/build.py
 python3 publication/proof.py
 python3 publication/check_pdf_resources.py
-python3 publication/render_contact_sheets.py
+python3 docs/v0.10.2/check_epub.py
+python3 docs/v0.10.2/prove_epub_layout.py
+python3 docs/v0.10.2/check_package.py
 python3 publication/package.py --check
 python3 publication/package.py
 ```
 
-The exporter refuses to overwrite an existing ZIP or altered package. Preserve
-previous handoffs under distinct versioned paths before creating a new handoff.
-It packages only assets used by the final design and rejects missing resources,
-unapproved images and font packages without their notices. The source-rendered
-diagnostic copy marks omitted source images explicitly; the manuscript snapshot
-itself remains unchanged.
+The last command exports a new versioned editable package and refuses to overwrite an existing ZIP. Rebuilding PDFs changes output hashes; rerun output proofs and preserve any previous package before preparing a separate handoff.
 
-`build.py` retains intermediate HTML, source hashes, layout measurements and
-exact caption/image transformations. `proof.py` compares manuscript text with
-the rendered PDF and checks geometry, fonts and references. Resource and visual
-reviews supplement those checks; they are not substitutes for a physical proof.
+The shared print resolver's `--verify` mode checks recorded source/print hashes and runs its deliberately failing collision fixture without writing files. Its older default and `--check` modes regenerate legacy variants with browser-dependent font fitting. Final production should use `--verify` to preserve the reviewed variants.
+
+Source review receipts reconstruct the reviewed prose and then apply only recorded artwork-caption changes. The index review corrected semantic ID shifts that a hash/span check cannot recognize. Further mixed insertions, removals and revisions require reviewing any positional-ID warnings again.
 
 ## Editable artwork
 
-`book.css` holds the page design. `assets/motifs` contains twelve interior
-masters, a separate detailed cover illustration, monochrome counterparts,
-generation scripts and proofs. Eleven motifs are placed; the open-gate drawing
-is an unused alternative. `assets/cover-art.svg` is the light-on-green palette
-variant used by the cover. The two explanatory diagrams remain editable text
-and layout in `build.py`.
+The 31 revised source/print SVG pairs are generated by:
 
-Original source images, manuscript sections and all previous editions remain
-available. Publishing, committing and printer approval are separate actions.
+- `docs/v0.10.2/figures_opening.py`
+- `docs/v0.10.2/figures_middle.py`
+- `docs/v0.10.2/figures_ending.py`
+- `docs/v0.10.2/figures_core.py`
+
+Generators write only their assigned images and evidence. After intentional edits, synchronize their print hashes in `visuals.json`, canonical alt text/captions, the art catalog and rights records. `integrate_art.py` records the initial one-time edition integration and refuses a blind rerun. Do not run historical generators over revised assets.
+
+Retained v0.10.1 sources remain:
+
+- `docs/v0.10.1/charts.py` and `chart-data.json`: eight charts and worksheets.
+- `docs/v0.10.1/vignettes.py`: six conceptual SVGs and shared drawing primitives.
+- `scripts/render-book-scenes.mjs`: three scene still pairs using the same Three.js geometry as the reader.
+- `docs/v0.10.1/image-prompts.json`: generation provenance for six photo-derived cutouts. Prompts record requests, not deterministic reproduction or exact photographic fidelity.
+
+Registered print artwork is hash-checked and bypasses generic recoloring. PDF and EPUB use static scene SVGs; only the web readers execute Three.js.
+
+## Proof and outputs
+
+[PDF visual review](../docs/v0.10.2/pdf-proof/FINAL-PDF-REVIEW.md), [EPUB review](../docs/v0.10.2/EPUB-REVIEW.md), [reader review](../docs/v0.10.2/READER-REVIEW.md), and [index review](../docs/v0.10.2/INDEX-REVIEW.md) record coverage and limits. Automated PDF checks are in `output/proof/checks.json`; the independent resource audit is in `docs/publication/PDF-RESOURCE-CHECKS.json`.
+
+PDF proof uses pypdf plain extraction first. If a block is missing, it tries layout extraction from matching PDF pages. The cooling caption needs that fallback because of a combining glyph. Its visible text was inspected separately; the fallback never imports source text into the extracted result and rejects a deliberately removed middle third.
+
+- `output/Surviving-the-Singularity-reading.pdf`: color interior plus original cover.
+- `output/Surviving-the-Singularity-print-interior.pdf`: grayscale 6 by 9 interior, with an empty final verso when required.
+- `output/Surviving-the-Singularity-front-cover.pdf`: original front cover at 6 by 9, for review.
+- `output/Surviving-the-Singularity-interior.pdf`: color interior master.
+- `output/Surviving-the-Singularity-v0.10.2-editable-publication.zip`: portable publication handoff.
+- `package-v0.10.2/`: unpacked handoff.
+- `../book-build/Surviving-the-Singularity-v0.10.2.epub`: EPUB.
+- `../manuscript/Surviving-the-Singularity-v0.10.2.md`: compiled Markdown.
+
+Versioned PDF delivery copies and all delivery hashes are recorded in `docs/v0.10.2/deliverables.json`. Export verifies every packaged file and ZIP member. The package includes portable HTML/CSS, artwork, fonts/notices, canonical source snapshots, audits and PDFs. It excludes repository history, environment files and proof-image clutter.
+
+## Publication scope
+
+The public-download release remains v0.7.5. This work creates a local digital edition. See [finalization record](../docs/publication/FINALIZATION-v0.10.2.md).
+
+Six retained cutouts are generated adaptations of credited photographs. They are not exact extractions, and the solar adaptation is not an unaltered scientific image. Existing cover provenance and the 23-epigraph inventory remain in [quotation and cover review](../docs/publication/QUOTATIONS-v0.10.0.md). A printer-specific wrap, binding/paper choice, physical proof and external quotation/cover decisions remain separate. No ISBN, publisher, rights grant or physical-device acceptance is implied.

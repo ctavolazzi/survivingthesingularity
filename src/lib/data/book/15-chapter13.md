@@ -36,15 +36,15 @@ So Marta welded the spine of his house, and Elijah went to his lane, and here is
 
 The day of the cut, the columns and headers already in and inspected twice, Denny ran the plasma torch, and the interior mating walls came out in glowing rectangles, and light went through the two coffins and made them one room, sixteen feet of open span where no room had been. Everyone stood in it. That's all. Nobody said anything worth recording. Sixteen feet by forty isn't a large space by the old world's arithmetic, and every person standing in it had lived in bigger, and hardly any of them had ever held a cubic foot of shelter on terms they could count on.
 
-The stove went in last. The Fisher had come north with his belongings nearly a year ago, four hundred pounds of plate steel and one cracked firebrick, and it had sat in the corner of the shed being a monument the way it had once been a monument in a rented apartment, and monuments, Marta observed, rust. They bought the replacement brick. The inspector looked at the clearances and the hearth. The flue kit was double-wall pipe, bought new, the one line in the budget nobody let him salvage, and Priya held the storm collar while he sealed the roof penetration in a wind that wanted his hat.
+The stove went in last. The Fisher had come north with his belongings nearly a year ago, four hundred pounds of plate steel and one cracked firebrick, and it had sat in the corner of the shed being a monument the way it had once been a monument in a rented apartment, and monuments, Marta observed, rust. They bought the replacement brick. The inspector looked at the clearances and the hearth. The installer specified a listed, insulated chimney system through the roof and double-wall connector pipe inside, all bought new, the one line in the budget nobody let him salvage. Priya steadied the ladder while the installer finished the storm collar in a wind that wanted his hat.
 
-The first cold night came in the last week of September. He laid the fire the way his grandmother's hands had taught his hands before he was tall enough to see the top of the stove, and the draw caught on the first match, and the steel began to tick as it heated, the same sound as every engine and every server he had ever loved, run in reverse. People drifted over without being organized. Reuben brought chairs the way Reuben brings paperwork, already done. Somebody hung a pair of socks over the stove on general principle.
+The first cold night came in the last week of September. He laid the fire the way his grandmother's hands had taught his hands before he was tall enough to see the top of the stove, and the draw caught on the first match, and the steel began to tick as it heated, the same sound as every engine and every server he had ever loved, run in reverse. People drifted over without being organized. Reuben brought chairs the way Reuben brings paperwork, already done. Somebody set a drying rack well clear of the stove and hung a pair of socks on general principle.
 
 He took one photograph from inside the shell: the stove lit, the socks, the new brick glowing faintly through the door gap, the dashboard on the wall behind reporting all systems green. He sent it to his mother at 9:41 on a Sunday, and for nearly two years he had failed to build one sentence that could carry across to her what was happening to the world, and the phone rang before the checkmark appeared.
 
 "That's the Fisher," she said. No hello, but the radio was going behind her, so it was the same kitchen, the same country station, the same distance suddenly not mattering. "Is your flue double-wall? The Hendersons had a chimney fire in '88 and your grandmother talked about it for ten years."
 
-"Double-wall, Ma. Storm collar and all. Inspector signed it Tuesday."
+"Inside. Insulated chimney through the roof. Installer picked the system; inspector signed it Tuesday."
 
 A quiet went down the line, with the radio under it. "It looks right in there," his mother said finally, in the voice she used for things that were settled. "It looks like somewhere."
 
@@ -66,7 +66,7 @@ Once you have ground, whether bought, leased, or held in trust, don't try to bui
 
 What the fuck is a shouse? When I first wrote it down, this is how I put it: not a house with a garage where you keep a lawnmower you use twice a month, but a shop that's been set up to keep the person running it alive. Seventy percent production, thirty percent survival. You don't need a thirty-year mortgage to have a place to sleep. You need a slab of concrete, a roof that doesn't leak, and the tools.
 
-1. **Start with a shell.** A foundation, a metal utility building, and a travel trailer or RV parked inside it gives you a secure, weatherproof place to live while you develop the site, if your county allows it.
+1. **Start with the approved use.** Ask whether the site can support a workshop and a dwelling, and what temporary occupancy is allowed during construction. A trailer or RV may be an option on an approved outdoor pad with the required services. Don't treat an enclosed utility building as a safe place to occupy an RV or run its fuel-burning equipment.
 2. **Call the building department.** Don't be afraid of them. They aren't the police. They're people with a checklist. Call, tell them what you have, and ask exactly what it takes to live on your land while you build. Meet the requirements, pay the fees, get the stamp. Working inside the rules is what keeps you from being interrupted later.
 3. **Bring the tools in as they earn it.** Once you're established, the land gives you room for new machines: a garden robot over a raised bed, a 3D printer in the shop, and, some day, printed structures. If you hold the ground, you have space to deploy them as they get affordable and proven.
 
@@ -78,27 +78,27 @@ Own the dirt. Build the systems. Be the one who's prepared, rather than the one 
 
 A standard suburban house with a thirty-year mortgage, a manicured lawn, and a smart lock a bank's foreclosure script can disable isn't the only way to have a home. For a lot of people it's a financial cage: you spend the best decades of your life servicing debt to be allowed to live somewhere. The shouse is one attempt at a different deal.
 
-Shipping containers are the structural Lego of the moment: cheap, weather-sealed, and built to take brutal loads at their corners. But a single container, eight feet wide on the outside, is under seven feet inside once it's framed and insulated, which is less a home than a very aesthetic coffin. The co-op's answer was the double-wide: two 40-foot high-cube containers side by side, the shared inner walls cut away, making one sixteen-by-forty-foot room, 640 square feet.
+Shipping containers are the structural Lego of the moment: weather-sealed and built to take brutal loads at their corners. But a single container, eight feet wide on the outside, can end up under seven feet inside once it's framed and insulated, which is less a home than a very aesthetic coffin. The co-op's answer was the double-wide: two 40-foot high-cube containers side by side, the shared inner walls cut away. The outside footprint is sixteen by forty feet, 640 square feet; the finished usable room is smaller.
 
-![The Double-Wide Shell Architecture: two 8-by-40-foot containers mated along a reinforced seam, one side holding the workspace and server room, the other the wet-room, kitchen, and living quarters](/book-images/ch13-shell-architecture.svg)
+![Conceptual plan of two nominal forty-by-eight-foot containers. Their combined exterior footprint is 640 square feet, not usable interior area. Foundations, openings, connections and reinforcement require project-specific design.](/book-images/ch13-shell-architecture.svg)
 
-*The double-wide shell, in plan. Two containers, one room, and a steel skeleton where the walls used to be.*
+*Two nominal forty-foot containers give a 640-square-foot exterior footprint. Usable space and structural details depend on the finished design; the chapter’s budget is fictional.*
 
 Here's the physics that makes it serious. A container's corrugated side walls aren't just walls; they work as deep beams that carry the roof. Cut them out, and the roof loses its support. That's why, in the scene, the columns and header beam go in and get inspected *before* anyone touches a torch, and why Marta welds that spine herself. Sizing that steel is engineering for a specific site, snow load, and design, and it's a job for someone qualified to sign it. The principle every reader should keep: never cut a structural member until something else is already carrying its load.
 
 ## Beating the tin can
 
-A metal box is a superb conductor of heat, which makes it an oven in August and an icebox in January. Heat flow through a wall follows Fourier's law:
+A metal box is a superb conductor of heat, which makes it an oven in August and an icebox in January. For steady conduction through one uniform layer, Fourier's law gives the heat-transfer rate:
 
-> $$Q = (k · A · \Delta T) / d$$
+> $$\dot{Q} = (k · A · \Delta T) / d$$
 
-where $k$ is how well the material conducts heat, $A$ is the wall area, $\Delta T$ is the temperature difference, and $d$ is the thickness. Steel conducts heat thousands of times better than foam, and a container wall is only a couple of millimeters thick, so bare steel barely slows heat at all. Everything depends on the insulation layer.
+where $\dot{Q}$ is heat flow in watts, $k$ is thermal conductivity, $A$ is area, $\Delta T$ is the temperature difference across that layer, and $d$ is its thickness. A complete wall adds other layers, surface effects, and paths through steel framing. Steel conducts heat thousands of times better than foam, and a container wall is only a couple of millimeters thick, so bare steel barely slows heat at all. Everything depends on the insulation layer.
 
-![The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel](/book-images/ch13-thermal-seal.svg)
+![Conceptual wall section with steel, insulation and air control, and an interior layer. Insulation reduces conduction without eliminating it. Moisture, ventilation and required fire protection belong in the complete design.](/book-images/ch13-thermal-seal.svg)
 
-*The thermal barrier in section. Foam bonded to steel: warm, moist indoor air never touches the cold metal.*
+*Insulation is one layer in a wall. Air control, moisture, ventilation and fire protection have to work with it.*
 
-The common answer for containers is closed-cell spray foam applied directly to the steel, at roughly R-6 to R-7 per inch. Its real advantage isn't just the R-value. Foam bonded to the metal keeps warm, damp indoor air from ever reaching the cold steel, and that's what stops condensation from rusting the box from the inside. Fiberglass batts, by contrast, let moist air circulate in the corrugations. Get this part designed for your climate and done by people who do it for a living.
+One approach is closed-cell spray foam bonded to the steel, with the thickness and R-value selected for the product and climate. Its advantage isn't just insulation: a continuous, correctly installed layer can also control air leakage. Gaps, penetrations, and exposed steel still matter. Fiberglass batts alone aren't an air barrier either. Get the whole wall assembly designed for your climate, including moisture control and the required fire protection over foam, and installed by people who do it for a living. [US Department of Energy, Energy Renovations: Insulation](https://www.energy.gov/sites/default/files/2023-03/insulation_guide_0.pdf)
 
 ## Build for every age you'll be
 

@@ -94,7 +94,7 @@ A local supplier makes a repair easier. A regional grower makes a food partnersh
 
 Here's the most obvious short loop of all. By the US Department of Agriculture's estimate, somewhere between thirty and forty percent of the American food supply goes uneaten. [USDA, Food Waste FAQs](https://www.usda.gov/about-food/food-safety/food-loss-and-waste/food-waste-faqs) That estimate counts losses at the store and in our own kitchens: unsold surplus, cosmetic rejects, food past a sell-by date but perfectly good, leftovers nobody got to.
 
-There's no such thing as waste, only food in the wrong place. And this one already has working law behind it. In 2016, France required larger supermarkets to donate unsold edible food instead of destroying it. [NPR, French Food Waste Law Changing How Grocery Stores Approach Excess Food (2018)](https://www.npr.org/sections/thesalt/2018/02/24/586579455/french-food-waste-law-changing-how-grocery-stores-approach-excess-food) California's SB 1383 went further, requiring large grocers, distributors, and food services to recover edible food that would otherwise be thrown away and get it to people who can use it. [CalRecycle, SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/) A community doesn't have to invent this. It can organize the pickups, the kitchens, and the cold storage that make recovery actually reach a plate, and ask its own local leaders to back it.
+Some of that waste is still edible food in the wrong place. Recovering it already has working law behind it. France's 2016 law prohibited deliberately spoiling unsold food still fit to eat and required larger food retailers to offer donation agreements to eligible charities. Food-safety rules still applied; this wasn't a command to donate everything in a waste bin. [France, Law 2016-138, Article 1](https://www.legifrance.gouv.fr/eli/loi/2016/2/11/2016-138/jo/texte) California's SB 1383 requires covered grocers, distributors, and food services to recover edible food that would otherwise be thrown away and get it to people who can use it. [CalRecycle, SB 1383 Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/) A community doesn't have to invent this. It can organize the pickups, the kitchens, and the cold storage that make recovery actually reach a plate, and ask its own local leaders to back it.
 
 Turn a leak in the long system into a local reserve, and you're feeding people from the surplus of the very system that told them they were redundant.
 
@@ -115,13 +115,13 @@ Put the first number next to the last one. That gap is the argument.
 
 You can't run a short loop if you can't talk to each other. Most of our coordination rides on cell towers and data centers we don't control, which is fine until a tower goes down in a storm or a service decides to shut something off.
 
-![Centralized versus decentralized mesh communications: a single tower serving three users fails entirely when broken, while a mesh of nodes routes around any dead node](/book-images/ch14-mesh-comms.svg)
+![Two example networks: users dependent on one tower lose their link when it fails; a mesh with several surviving radio paths can pass messages around a failed node.](/book-images/ch14-mesh-comms.svg)
 
-*Two topologies for a town. The tower is a single point of failure; the mesh treats damage as a routing problem.*
+*Two topologies for a town. A mesh can route around damage only where another usable path remains.*
 
 A mesh network is built from small, low-power radio nodes spread across an area, often LoRa radios running open software like Meshtastic.
 
-- **Self-healing.** Every node is both a radio and a router. If one fails, messages hop around it.
+- **Alternate paths.** Nodes can relay messages. If one fails, messages can travel another way only if a usable radio path remains. A ridge repeater can still be a single point of failure, as Chapter 17 shows. [Meshtastic, mesh algorithm](https://meshtastic.org/docs/overview/mesh-algo/)
 - **Independent.** It works locally without the internet, cell service, or satellites.
 - **Low power.** A node can run for a long time on a small solar panel and battery, drawing less than a nightlight.
 

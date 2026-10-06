@@ -27,7 +27,7 @@
     <rect x="326" y="140" width="200" height="200" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
     <path d="M 346 300 C 396 300 396 210 426 210 C 456 210 456 300 506 300" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
     <text x="426" y="128" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">GEN 1</text>
-    <text x="426" y="322" font-size="11" fill="#94a3b8" text-anchor="middle">tails pruned, mean piles up</text>
+    <text x="426" y="322" font-size="11" fill="#94a3b8" text-anchor="middle">rare cases can disappear</text>
   </g>
 
   <line x1="534" y1="240" x2="574" y2="240" stroke="#64748b" stroke-width="2.5" marker-end="url(#ag)"/>
@@ -38,11 +38,11 @@
     <rect x="582" y="140" width="200" height="200" rx="10" fill="#0f172a" stroke="#475569" stroke-width="2"/>
     <line x1="682" y1="300" x2="682" y2="185" stroke="#64748b" stroke-width="6"/>
     <path d="M 662 300 L 682 300" stroke="#64748b" stroke-width="6"/>
-    <text x="682" y="128" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">GEN 5 · pure slop</text>
-    <text x="682" y="322" font-size="11" fill="#64748b" text-anchor="middle">a single spike: the average</text>
+    <text x="682" y="128" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">LATER GENERATIONS</text>
+    <text x="682" y="322" font-size="11" fill="#64748b" text-anchor="middle">collapse toward a spike</text>
   </g>
 
-  <text x="430" y="380" font-size="13" fill="#f1f5f9" text-anchor="middle">each generation trains on the last one's output; the variance bleeds out with every pass</text>
-  <text x="430" y="410" font-size="12" fill="#64748b" text-anchor="middle">the edge cases, the genius, the weird local knowledge: pruned first, gone by Gen 5</text>
-  <text x="430" y="452" font-size="12" fill="#f59e0b" text-anchor="middle">the cyclical view of this same failure appears in Chapter 16; here is what one lineage looks like</text>
+  <text x="430" y="380" font-size="13" fill="#f1f5f9" text-anchor="middle">repeatedly replacing training data with finite samples can lose variety</text>
+  <text x="430" y="410" font-size="12" fill="#64748b" text-anchor="middle">schematic only: no fixed timetable, and the final spike can drift</text>
+  <text x="430" y="452" font-size="12" fill="#f59e0b" text-anchor="middle">source: Shumailov et al., Nature (2024); training conditions matter</text>
 </svg>

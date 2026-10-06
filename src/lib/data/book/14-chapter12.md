@@ -1,8 +1,8 @@
 # Chapter 12: The Land Strategy
 
-![FarmBot automated gardening system over a raised bed](/book-images/ch12-farmbot.jpg)
+![Line drawing of a germinating seed and roots](/book-images/original-04-seed-and-root.svg)
 
-*FarmBot over a raised bed. A place to grow, and a tool that can do part of the work. (FarmBot, CC BY 4.0, via Wikimedia Commons)*
+*A place to grow begins with access to the ground. Original illustration for this book.*
 
 
 > *"Land is the only thing in the world that amounts to anything … for 'tis the only thing in this world that lasts."*

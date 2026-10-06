@@ -7,7 +7,7 @@
 
   <!-- STAR -->
   <text x="230" y="110" font-size="14" font-weight="600" fill="#64748b" text-anchor="middle">STAR TOPOLOGY</text>
-  <text x="230" y="130" font-size="12" fill="#64748b" text-anchor="middle">(centralized · fragile)</text>
+  <text x="230" y="130" font-size="12" fill="#64748b" text-anchor="middle">(one hub)</text>
 
   <!-- spokes -->
   <g stroke="#475569" stroke-width="2">
@@ -35,11 +35,11 @@
     <circle cx="330" cy="330" r="12"/>
     <circle cx="230" cy="368" r="12"/>
   </g>
-  <text x="230" y="416" font-size="12" fill="#64748b" text-anchor="middle">hub dies, everything dies</text>
+  <text x="230" y="416" font-size="12" fill="#64748b" text-anchor="middle">hub loss breaks these links</text>
 
   <!-- MESH -->
   <text x="640" y="110" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">MESH TOPOLOGY</text>
-  <text x="640" y="130" font-size="12" fill="#f59e0b" text-anchor="middle">(decentralized · robust)</text>
+  <text x="640" y="130" font-size="12" fill="#f59e0b" text-anchor="middle">(alternate paths)</text>
 
   <g stroke="#3b82f6" stroke-width="1.8" opacity="0.85">
     <line x1="560" y1="200" x2="720" y2="200"/>
@@ -64,7 +64,7 @@
     <circle cx="580" cy="368" r="13"/>
     <circle cx="700" cy="368" r="13"/>
   </g>
-  <text x="640" y="416" font-size="12" fill="#94a3b8" text-anchor="middle">every node routes; damage is a detour</text>
+  <text x="640" y="416" font-size="12" fill="#94a3b8" text-anchor="middle">reroute if a working path remains</text>
 
-  <text x="430" y="472" font-size="12" fill="#64748b" text-anchor="middle">keep each circle under Dunbar's ~150 · federate circles instead of growing one</text>
+  <text x="430" y="472" font-size="12" fill="#64748b" text-anchor="middle">relationship limits vary · maintain the circle and its connections</text>
 </svg>

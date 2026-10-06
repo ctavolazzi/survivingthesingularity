@@ -138,7 +138,7 @@ Don't let an answer to one stand in for the other three. Most of this book lives
 
 ## What the 2017 paper actually did
 
-The modern run started in 2017, with a Google paper titled "Attention Is All You Need." [Vaswani et al., Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762) Before it, the best language systems read the way you do, one word after another, which meant they couldn't use modern hardware to its full width. The Transformer threw out that sequence and let every word attend to every other word at once, so the whole job could run in parallel across a room full of chips.
+The modern run started in 2017, with a Google paper titled "Attention Is All You Need." Many leading language systems used a recurrent chain: each step depended on the one before it. The Transformer replaced that chain with attention, allowing much more of training to run in parallel. It didn't abolish sequence. Positions still mattered, and its decoder generated an answer one token at a time, using the output already produced. Parallel training and sequential generation are different jobs. [Vaswani et al., Attention Is All You Need (2017), sections 1 and 3](https://arxiv.org/abs/1706.03762)
 
 The foundational model was small by today's standards: sixty-five million parameters in its base configuration, two hundred thirteen million in the big one. The big one beat every system that came before it, including ensembles stacked specifically to win these benchmarks, and it did it on a fraction of the training compute.
 

@@ -1,25 +1,26 @@
 # PDF resource checks
 
-Result: **PASS** for the frozen publication PDFs.
+Result: **PASS** for the publication PDFs.
 
 Reproduce with `python3 publication/check_pdf_resources.py` from repository root. Dependencies are pypdf, Pillow, and Ghostscript. No network access or source-PDF changes occur. Exact hashes and complete results are in [PDF-RESOURCE-CHECKS.json](PDF-RESOURCE-CHECKS.json).
 
-| Check | Result |
+| Check | Measured result |
 | --- | --- |
-| Page geometry | Every media and crop box is 432 by 648 points, equivalent to 6 by 9 inches. |
-| Page counts | 228 color interior, 229 reading, 228 grayscale print interior, 1 front cover. |
-| Fonts | Every discovered page/form/pattern font resource has a nonempty embedded font program. Resource counts: interior: 5, reading: 7, print-interior: 5, front-cover: 2. |
-| Annotations | All 378 annotations survive in reading and print. Reading per-page rectangles and targets match after the one-page cover offset. Print target multisets match without assuming annotation order. |
-| Destinations | All 62 internal destinations resolve in each applicable PDF; 316 external URI annotations are retained. Remote URL availability was not tested. |
-| Grayscale streams | All inspected print streams use gray operators: 920 fill and 139 stroke operations. All 28 referenced image resources are gray. No chromatic operations or non-gray image/shading spaces were found. |
-| Grayscale render | Pages 1, 5, 28, and 139 pass the one-level 8-bit RGB neutrality tolerance. Photographs show at most one level of channel rounding during Ghostscript conversion; gray PDF resources independently establish grayscale representation. |
-| Text | All 228 pages match after NFKC and removal of whitespace and soft hyphens. Punctuation and text order are retained. |
-| Prior ligature defect | No previous ft corruption remains. Both files contain 50 instances of after and 9 of shift. The phrase silence after the first one extracts correctly. |
-| Navigation metadata | Reading labels begin Cover, i, ii, iii, iv, 1, 2. Print begins i, ii, iii, iv, 1, 2, 3. Title and author agree. Color interior retains default physical-page labels. |
+| Page geometry | All media and crop boxes are 432 by 648 points: True. |
+| Page counts | interior: 371, reading: 372, print-interior: 372, front-cover: 1. |
+| Print page parity | One empty final print page excluded. Pass: True. |
+| Fonts | All discovered page/form/pattern fonts have a nonempty embedded program: True. Resource counts: interior: 8, reading: 8, print-interior: 8, front-cover: 0. |
+| Annotations | interior: 688, reading: 688, print: 688. Reading rectangles and targets match after the cover offset: True. Print target multisets match on all interior pages: True. |
+| Destinations | Internal: interior: 74, reading: 74, print: 74. External URI annotations: interior: 614, reading: 614, print: 614. All internal destinations resolve: True. Remote URL availability was not tested. |
+| Grayscale streams | Fill-gray operators: 2580; stroke-gray operators: 505. Referenced images: 47. Chromatic operations: 0; non-gray spaces: 0. |
+| Grayscale render | Pages 1, 5, 28, 139; every sample passes one-level 8-bit RGB neutrality: True. |
+| Text | 371 interior pages compared; 0 mismatches. One permitted final empty print page excluded: True. NFKC normalization removes whitespace and soft hyphens while retaining punctuation and text order. |
+| Prior ligature defect | Previous ft corruption present: {'interior': False, 'print-interior': False}. Counts of after: {'interior': 78, 'print-interior': 78}; shift: {'interior': 15, 'print-interior': 15}. Example phrase preserved: {'interior': True, 'print-interior': True}. |
+| Navigation metadata | Reading labels correct: True. Print labels correct: True. Title and author agree: True. |
 
-## Negative controls
+## Controls
 
-The checking functions reject a font missing its program, a page one point too wide, an unresolved destination, a removed annotation, a red vector instruction, an RGB image color space, the previous aƤer text corruption, and a deliberately red raster pixel. All eight controls rejected their defective input without modifying the final PDFs.
+13 of 13 controls passed. These include accepting equal page counts and one empty final print page; rejecting a truncated print PDF, two extra pages, and a final page carrying a painted rectangle even when it has no extractable text. The font, geometry, annotation, destination, grayscale and text-corruption controls run without modifying the final PDFs. The JSON report lists each outcome separately.
 
 ## Limits
 

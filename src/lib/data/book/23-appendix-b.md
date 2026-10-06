@@ -215,9 +215,9 @@ City of Vienna, Municipal and Provincial Archives, [From Red Vienna to the Stän
 
 City of Vienna, Rathauskorrespondenz, [Der Karl-Marx-Hof ist 60](https://presse.wien.gv.at/1990/10/11/der-karl-marx-hof-ist-60), October 11, 1990. German anniversary notice describing the complex and ongoing renovation plans.
 
-## Sources for material restored or added in this edition
+## Sources for material restored or added in v0.9.0 through v0.10.0
 
-Most of what follows was researched for earlier editions, cut in v0.8.0, and restored here; a few items were checked for the first time for this edition. Figures quoted from a builder's own video or a company's own history are attributed as such in the text.
+Much of what follows was researched for earlier editions, cut in v0.8.0, and restored in v0.9.0. Later additions support the expanded manuscript and the v0.10.0 corrections. Figures quoted from a builder's own video or a company's own history are attributed as such in the text.
 
 ### Introduction and Chapter 1: definitions, forecasts, and the Transformer
 
@@ -286,7 +286,9 @@ Most of what follows was researched for earlier editions, cut in v0.8.0, and res
 
 - Newsweek, ["What is a cyberdeck: Meet Gen Z's new DIY obsession"](https://www.newsweek.com/what-is-a-cyberdeck-gen-zs-new-custom-computing-obsession-11787017) (2026); TechCrunch, ["Cyberdecks are having a moment"](https://techcrunch.com/2026/06/02/cyberdeck-tiktok-trend-reject-big-tech/) (2 June 2026).
 - Hackaday's cyberdeck contests: [2022](https://hackaday.com/2022/10/13/2022-cyberdeck-contest-picking-the-best-of-the-best/) and [2023](https://hackaday.com/2023/09/07/2023-cyberdeck-challenge-the-best-decks-on-the-net/).
-- [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030.
+- [Computer Fraud and Abuse Act](https://www.law.cornell.edu/uscode/text/18/1030), 18 U.S.C. 1030; [interception and disclosure rules](https://www.law.cornell.edu/uscode/text/18/2511), 18 U.S.C. 2511; and [Part 15 operating conditions](https://www.law.cornell.edu/cfr/text/47/15.5), 47 C.F.R. 15.5. US provisions cited for bounded examples, not permission to operate in every jurisdiction.
+- Meshtastic, [Channel Configuration](https://meshtastic.org/docs/configuration/radio/channels/). Project documentation distinguishes public default keys from randomly generated private-group keys and explains location and gateway settings.
+- Cryptsetup contributors, [FAQ](https://gitlab.com/cryptsetup/cryptsetup/-/blob/main/FAQ.md). Technical documentation on disk encryption, passphrases, backups, and threat limits. Encryption of stored data does not protect an already compromised running system.
 
 ### Introduction and Chapter 19: the conversion
 
@@ -331,3 +333,22 @@ The entries below identify the work or institutional record supporting each attr
 - **Chapter 16, A. J. Liebling:** "The Wayward Press: Do You Belong in Journalism?", *The New Yorker*, 14 May 1960, page 109, where it appears as a parenthetical remark. [Quote Investigator](https://quoteinvestigator.com/2015/05/21/free-press/)
 - **Conclusion, Oscar Wilde:** [The Soul of Man under Socialism](https://www.gutenberg.org/ebooks/1017) (1891). A few lines later Wilde writes that "the community by means of organisation of machinery will supply the useful things."
 - **Chapter 19, Aneurin Bevan:** *In Place of Fear* (1952), chapter 5; see P-23 above. The sentence is quoted from its middle, where it begins "It insists that no society…"; the epigraph capitalizes the first word.
+
+
+## Sources checked for v0.10.0 corrections
+
+- Gloria Mark, Victor M. González, and Justin Harris, [No Task Left Behind? Examining the Nature of Fragmented Work](https://www.ics.uci.edu/~gmark/CHI2005.pdf), CHI 2005. Observed time before workers resumed an interrupted activity; not a fixed neurological recovery threshold. The CHI 2008 study listed above examines speed and stress under interruptions.
+- International Energy Agency, [Key Questions on Energy and AI: Executive Summary](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) (2026). Separates the estimate of 2025 data-center electricity use from the projection for 2030.
+- France, [Law 2016-138 of 11 February 2016, Article 1](https://www.legifrance.gouv.fr/eli/loi/2016/2/11/2016-138/jo/texte). Original enactment on food waste, including proposed donation agreements for eligible shops. A legal requirement is distinct from proof of universal collection or access.
+- University College London, [The future of welfare: Universal Basic Services](https://www.ucl.ac.uk/bartlett/ideas/bartlett-review/bartlett-review-2017/future-welfare-universal-basic-services) (2017). The institution's account of the proposal, not an implemented universal guarantee.
+- llama.cpp contributors, [HTTP server documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md). Bind addresses and server access settings; running a model locally doesn't by itself prevent network exposure.
+- US Department of Energy, [Insulation and Air Sealing](https://www.energy.gov/cmei/buildings/articles/energy-efficient-home-improvement-credit-insulation-and-air-sealing). Building-envelope guidance cited for heat flow and air leakage, not current eligibility for a tax credit.
+- US Department of Energy, [DC Microgrid Scoping Study](https://www.energy.gov/sites/prod/files/2015/03/f20/DC_Microgrid_Scoping_Study_LosAlamos-Mar2015.pdf) (2015). Configuration-dependent efficiency and conversion stages; no universal zero-loss claim.
+- Meshtastic, [Mesh algorithm](https://meshtastic.org/docs/overview/mesh-algo/), [LoRa configuration](https://meshtastic.org/docs/configuration/radio/lora/), [Encryption](https://meshtastic.org/docs/overview/encryption/), and [Web Flasher source](https://github.com/meshtastic/web-flasher). Project documentation for routing limits, matching settings, key handling, and hardware-specific firmware.
+
+- FAO, [Labour-saving technologies and practices: draught animal power and implements](https://www.fao.org/family-farming/detail/en/c/1619223/). Animal traction involves care, training, equipment, and human guidance; it does not establish labor free of human supervision.
+- Anthropic, [Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5) (June 30, updated July 1, 2026). Company account of Fable's return and continuing limits on Mythos access; safeguard claims remain attributed.
+- US Food and Drug Administration, [Medical Devices and Natural Disasters](https://www.fda.gov/medical-devices/emergency-situations-medical-devices/fda-offers-tips-about-medical-devices-and-natural-disasters). Outage planning for powered equipment with healthcare providers and equipment suppliers.
+- OpenStax, [Statements of the Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics), *University Physics*, Volume 2. The heat-engine limitation applies to operation in a complete cycle.
+- Library of Congress, [Good Times Are Here: New to the National Jukebox](https://blogs.loc.gov/now-see-hear/2022/10/good-times-are-here-new-to-the-national-jukebox/) (2022). Sousa's band recorded frequently under other conductors; Sousa himself rarely entered the studio.
+- Marcus E. Raichle and Debra A. Gusnard, [Appraising the Brain's Energy Budget](https://pmc.ncbi.nlm.nih.gov/articles/124895/), *Proceedings of the National Academy of Sciences* 99 (2002). Ongoing brain activity and energy use; the resting-energy estimate is not a fixed allowance of decisions.

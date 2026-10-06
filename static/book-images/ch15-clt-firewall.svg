@@ -15,15 +15,15 @@
   <!-- attacker -->
   <rect x="206" y="92" width="448" height="60" rx="10" fill="#0f172a" stroke="#475569" stroke-width="2"/>
   <text x="430" y="118" font-size="15" font-weight="600" fill="#94a3b8" text-anchor="middle">SPECULATIVE REAL ESTATE MARKET</text>
-  <text x="430" y="140" font-size="12" fill="#64748b" text-anchor="middle">algorithmic buyers · foreclosure scripts · tax auctions</text>
+  <text x="430" y="140" font-size="12" fill="#64748b" text-anchor="middle">rising prices · competing offers · speculative resale</text>
 
   <!-- attack arrow -->
   <line x1="430" y1="152" x2="430" y2="208" stroke="#64748b" stroke-width="3" marker-end="url(#ag)"/>
-  <text x="450" y="186" font-size="12" fill="#64748b">attempts to buy / foreclose</text>
+  <text x="450" y="186" font-size="12" fill="#64748b">pressure to sell</text>
 
   <!-- firewall -->
   <rect x="150" y="214" width="560" height="16" rx="8" fill="#f59e0b"/>
-  <text x="430" y="252" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">BLOCKED BY LEGAL SHIELD</text>
+  <text x="430" y="252" font-size="13" font-weight="600" fill="#f59e0b" text-anchor="middle">RESALE RESTRICTED BY LEGAL TERMS</text>
 
   <!-- CLT container -->
   <rect x="150" y="270" width="560" height="320" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="2.5"/>
@@ -31,19 +31,19 @@
 
   <!-- land box -->
   <rect x="190" y="322" width="480" height="96" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2"/>
-  <text x="430" y="350" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">THE LAND · held in perpetuity</text>
-  <text x="430" y="374" font-size="12" fill="#94a3b8" text-anchor="middle">removed from market speculation forever</text>
-  <text x="430" y="394" font-size="12" fill="#94a3b8" text-anchor="middle">tax-sheltered via easements + agricultural classification</text>
+  <text x="430" y="350" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">THE LAND · held by the trust</text>
+  <text x="430" y="374" font-size="12" fill="#94a3b8" text-anchor="middle">long-term affordability is the purpose</text>
+  <text x="430" y="394" font-size="12" fill="#94a3b8" text-anchor="middle">taxes, debt, and governance duties remain</text>
 
   <!-- lease arrow -->
   <line x1="430" y1="418" x2="430" y2="464" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="450" y="446" font-size="12" fill="#94a3b8">99-year ground lease</text>
+  <text x="450" y="446" font-size="12" fill="#94a3b8">often a 99-year lease</text>
 
   <!-- stewardship box -->
   <rect x="190" y="470" width="480" height="96" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
   <text x="430" y="498" font-size="15" font-weight="600" fill="#f1f5f9" text-anchor="middle">THE STEWARDSHIP · housing, farms, greenhouses</text>
-  <text x="430" y="522" font-size="12" fill="#94a3b8" text-anchor="middle">owned by community members, inheritable</text>
-  <text x="430" y="542" font-size="12" fill="#94a3b8" text-anchor="middle">resale by formula: permanently affordable</text>
+  <text x="430" y="522" font-size="12" fill="#94a3b8" text-anchor="middle">improvements held under the ground lease</text>
+  <text x="430" y="542" font-size="12" fill="#94a3b8" text-anchor="middle">resale formula protects the next household</text>
 
-  <text x="430" y="616" font-size="12" fill="#64748b" text-anchor="middle">split the title: the market can no longer reach the dirt</text>
+  <text x="430" y="616" font-size="12" fill="#64748b" text-anchor="middle">a trust can still fail or lose land; legal structure requires stewardship</text>
 </svg>

@@ -1,56 +1,70 @@
 # Publication production files
 
-This directory typesets manuscript v0.8.2 without editing its canonical files.
-The 30-section baseline and image/caption exceptions are recorded under
-[`docs/publication`](../docs/publication/). Read the
-[design report](../docs/publication/DESIGN-REPORT.md) for delivered files,
-verification and external-release decisions.
+Current local edition: **v0.10.0**, finalized from the v0.9.2 manuscript on
+September 27, 2026. The canonical 35-section source lives in
+`src/lib/data/book/` with `book.json` as its manifest. See the
+[edition notes](../docs/v0.10.0/EDITION-NOTES.md) for changes and measured results.
 
-## Outputs
+## Build and verify
 
-- `output/Surviving-the-Singularity-reading.pdf`: color reading edition with cover, 229 pages.
-- `output/Surviving-the-Singularity-print-interior.pdf`: grayscale, no-bleed 6 x 9 interior, 228 pages.
-- `output/Surviving-the-Singularity-front-cover.pdf`: vector front-cover design. A full cover wrap requires the chosen printer, paper and binding.
-- `output/Surviving-the-Singularity-interior.pdf`: color interior master used for conversion.
-- `output/Surviving-the-Singularity-editable-publication.zip`: portable HTML/CSS/SVG/font/manuscript and PDF handoff.
-
-## Rebuild from this repository
-
-Required commands: Python 3, Pandoc, Ghostscript. Python packages used are
-WeasyPrint, Beautiful Soup, pypdf and Pillow. The font files and their original
-licenses are included in `assets/fonts`.
+Requirements: Python 3 with WeasyPrint, Beautiful Soup, pypdf, Pillow and
+Playwright; Pandoc; Ghostscript; Chrome for the vector proofs. Fonts and their
+licenses are bundled in `assets/fonts`. The approved source checksums live in
+`docs/publication/baseline.json`. A build refuses unreviewed changes to that
+baseline, including the manifest.
 
 ```sh
 export DAILY_NOTE_AGENT=codex
-python3 publication/build.py
-python3 publication/production.py
+python3 scripts/sts.py verify
+python3 docs/v0.10.0/gates.py
+python3 docs/v0.9.2/print_figures.py --check
+python3 docs/v0.10.0/proof_figures.py
+python3 docs/v0.10.0/build.py
 python3 publication/proof.py
 python3 publication/check_pdf_resources.py
-python3 publication/render_contact_sheets.py
+python3 docs/v0.10.0/check_epub.py
 python3 publication/package.py --check
 python3 publication/package.py
 ```
 
-The exporter refuses to overwrite an existing ZIP or altered package. Preserve
-previous handoffs under distinct versioned paths before creating a new handoff.
-It packages only assets used by the final design and rejects missing resources,
-unapproved images and font packages without their notices. The source-rendered
-diagnostic copy marks omitted source images explicitly; the manuscript snapshot
-itself remains unchanged.
+The earlier `print_figures.py` is retained as the shared palette and layout
+engine. `docs/v0.10.0/figures.py` is the editable generator for the five
+redrawn figures. `docs/v0.10.0/cast_plate.py` regenerates the cast
+plate from unchanged portrait sprites. The proof records actual label sizes, collision checks, and
+negative controls. `build.py` creates the EPUB, reading and print PDFs, and
+compiled Markdown from the same source. It does not publish them.
 
-`build.py` retains intermediate HTML, source hashes, layout measurements and
-exact caption/image transformations. `proof.py` compares manuscript text with
-the rendered PDF and checks geometry, fonts and references. Resource and visual
-reviews supplement those checks; they are not substitutes for a physical proof.
+## Outputs
 
-## Editable artwork
+- `output/Surviving-the-Singularity-reading.pdf`: color reading PDF with original cover.
+- `output/Surviving-the-Singularity-print-interior.pdf`: grayscale 6 x 9 interior, without cover; a blank final verso is added when needed.
+- `output/Surviving-the-Singularity-front-cover.pdf`: original front cover at 6 x 9, for review.
+- `output/Surviving-the-Singularity-interior.pdf`: color interior master.
+- `output/Surviving-the-Singularity-v0.10.0-editable-publication.zip`: portable HTML, CSS, artwork, fonts, source snapshots, audits, and PDFs.
+- `../book-build/Surviving-the-Singularity-v0.10.0.epub`: EPUB edition.
 
-`book.css` holds the page design. `assets/motifs` contains twelve interior
-masters, a separate detailed cover illustration, monochrome counterparts,
-generation scripts and proofs. Eleven motifs are placed; the open-gate drawing
-is an unused alternative. `assets/cover-art.svg` is the light-on-green palette
-variant used by the cover. The two explanatory diagrams remain editable text
-and layout in `build.py`.
+The versioned reading and print delivery copies and their hashes are recorded
+in `docs/v0.10.0/deliverables.json` after proofing. Generated layout, text,
+geometry, and source-preservation evidence remain in `output/`.
 
-Original source images, manuscript sections and all previous editions remain
-available. Publishing, committing and printer approval are separate actions.
+Package export refuses to overwrite an existing ZIP or an altered package.
+Preserve a previous handoff before exporting a new one. Versioned packages
+are generated under `publication/package-v<version>/`; the historical
+`publication/package/` snapshot is preserved.
+
+## Scope of finalization
+
+Manuscript review, digital typesetting, and build checks are completed locally.
+The website's public-release value remains v0.7.5. No deployment, upload,
+commit, or publisher submission is part of this edition close.
+
+The four previously unresolved interior image uses now have original
+illustrations in canonical source. The author-selected original cover is
+retained for this local handoff, with unresolved provenance explicitly recorded.
+The current 23-epigraph inventory and external-use questions are in
+[QUOTATIONS-v0.10.0.md](../docs/publication/QUOTATIONS-v0.10.0.md).
+
+A printer-specific wrap, binding and paper selection, physical proof, and
+external-publication quotation/cover decisions remain. Digital geometry and
+font checks do not certify those. The original cover is about 228 pixels per
+inch at 6 x 9. No ISBN, publisher, or permission grant has been invented.

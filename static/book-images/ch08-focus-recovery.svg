@@ -9,18 +9,18 @@
   </defs>
 
   <rect x="1" y="1" width="858" height="538" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">THE COGNITIVE FRAGMENTATION CURVE</text>
+  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">INTERRUPTED WORK: AN ILLUSTRATION</text>
   <line x1="40" y1="66" x2="440" y2="66" stroke="#1e293b" stroke-width="2"/>
 
   <!-- axes -->
   <line x1="100" y1="110" x2="100" y2="430" stroke="#475569" stroke-width="2" marker-start="url(#ax)"/>
   <line x1="100" y1="430" x2="800" y2="430" stroke="#475569" stroke-width="2" marker-end="url(#ax)"/>
-  <text x="66" y="270" font-size="12" fill="#94a3b8" text-anchor="middle" transform="rotate(-90 66 270)">cognitive depth</text>
-  <text x="450" y="466" font-size="12" fill="#94a3b8" text-anchor="middle">time (one hour)</text>
+  <text x="66" y="270" font-size="12" fill="#94a3b8" text-anchor="middle" transform="rotate(-90 66 270)">attention on task (illustrative)</text>
+  <text x="450" y="466" font-size="12" fill="#94a3b8" text-anchor="middle">time (not to scale)</text>
 
   <!-- baseline -->
   <line x1="100" y1="150" x2="800" y2="150" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.7"/>
-  <text x="792" y="140" font-size="12" fill="#3b82f6" text-anchor="end">deep focus baseline</text>
+  <text x="792" y="140" font-size="12" fill="#3b82f6" text-anchor="end">sustained focus</text>
 
   <!-- the curve: ramp to baseline, hold, interrupt drop, partial recovery, interrupt, partial, interrupt -->
   <path d="M 100 424
@@ -46,17 +46,17 @@
     <polyline points="477,99 470,107 476,107 469,116"/>
     <polyline points="617,99 610,107 616,107 609,116"/>
   </g>
-  <text x="470" y="94" font-size="12" fill="#94a3b8" text-anchor="middle">algorithmic interrupts (3+ per hour)</text>
+  <text x="470" y="94" font-size="12" fill="#94a3b8" text-anchor="middle">interruptions</text>
 
-  <!-- ~20 min annotation -->
+  <!-- qualitative settling-in annotation -->
   <line x1="252" y1="206" x2="240" y2="166" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#aai)"/>
-  <text x="230" y="224" font-size="12" fill="#f59e0b">settling in:</text>
-  <text x="230" y="242" font-size="12" fill="#f59e0b">~20 minutes</text>
+  <text x="230" y="224" font-size="12" fill="#f59e0b">settling in</text>
+  <text x="230" y="242" font-size="12" fill="#f59e0b">time varies</text>
 
-  <!-- never returns annotation -->
+  <!-- one possible pattern, not a measured trajectory -->
   <line x1="712" y1="252" x2="688" y2="300" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ax)"/>
-  <text x="714" y="226" font-size="12" fill="#94a3b8" text-anchor="middle">each recovery</text>
-  <text x="714" y="244" font-size="12" fill="#94a3b8" text-anchor="middle">peaks lower</text>
+  <text x="714" y="226" font-size="12" fill="#94a3b8" text-anchor="middle">returning to</text>
+  <text x="714" y="244" font-size="12" fill="#94a3b8" text-anchor="middle">unfinished work</text>
 
-  <text x="430" y="506" font-size="13" fill="#f1f5f9" text-anchor="middle">above ~3 interrupts per hour, the curve never touches baseline again</text>
+  <text x="430" y="506" font-size="13" fill="#f1f5f9" text-anchor="middle">conceptual sketch: no fixed recovery time or interruption threshold</text>
 </svg>

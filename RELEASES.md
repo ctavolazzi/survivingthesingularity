@@ -3,16 +3,26 @@
 Ledger of built book artifacts. `book.json` holds the version the source
 currently claims; this file records which build is the one to hand someone.
 
-**The source is ahead of the latest build again.** `book.json` reads `0.7.5.1` (the
-open cycle, see `V0.7.5.1-SCOPE.md`); the newest built artifact is v0.7.5 below and
-it is what `static/downloads/` ships. The stable aliases
-(`/downloads/Surviving-the-Singularity.pdf` and `.epub`) resolve to v0.7.5. This
-is the normal state of an open cycle: do not quote v0.7.5.1 counts off this page,
-and do not tell a reader they are getting v0.7.5.1.
+**Latest local edition: v0.10.0**, finalized September 27, 2026 from v0.9.2.
+All 35 canonical sections were reviewed. The source contains 95,052 words by
+`sts book --json` and all 24 precedents. It includes corrected claims and
+continuity, five redrawn diagrams, synchronized artwork metadata, and a
+complete bibliography for this review's new references.
+
+The versioned reading PDF, grayscale print interior, EPUB, compiled Markdown,
+and editable publication package are listed with SHA-256 hashes in
+[deliverables.json](docs/v0.10.0/deliverables.json). See the
+[edition notes](docs/v0.10.0/EDITION-NOTES.md) for review coverage, verification,
+and remaining external-release decisions.
+
+This is a local finalized edition. The `released` value and existing public
+download aliases still identify v0.7.5. Nothing has been committed, merged,
+deployed, or submitted to a publisher. Historical build records below are
+preserved as records of their dates, not current source instructions.
 
 ---
 
-## Latest build: v0.7.5 — the citation audit build
+## Previous public-download build: v0.7.5 — the citation audit build
 
 | | |
 |---|---|

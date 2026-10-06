@@ -71,8 +71,8 @@ A ledger you read once is trivia. A ledger you operate is an instrument. The dif
 - **P-20.** Make it clear enough to discuss, and own enough of your press that nobody else gets the last edit.
 - **P-21.** Build a toolset you understand, can repair, and can't be locked out of.
 - **P-22.** A premortem that works looks like paranoia that wasn't needed. Judge the reasoning, not the silence.
-- **P-23.** When someone says a need can't be made free, ask what changed the day it became free somewhere else. Usually nothing but the decision.
-- **P-24.** Today's version of a compounding technology is the worst it will ever be. Let results change the plan, including the optimistic one.
+- **P-23.** When someone says we can't afford to make a need free, ask how it became free somewhere else: who decided, who paid, and who kept the service running.
+- **P-24.** A technology's present limits don't settle its future. Let results change the plan, including the optimistic one.
 
 ## The symptom index
 

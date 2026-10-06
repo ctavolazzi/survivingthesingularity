@@ -1,8 +1,8 @@
 # Chapter 10: The "Create Over Consume" Protocol
 
-![The New York Stock Exchange trading floor](/book-images/ch10-nyse.jpg)
+![Line drawing of a printed pamphlet and binding thread](/book-images/original-07-pamphlet-and-thread.svg)
 
-*A trading floor. A price records an exchange; it doesn't exhaust the value of a life. (Scott Beale, CC BY-SA 4.0, via Wikimedia Commons)*
+*Make something another person can use. Original illustration for this book.*
 
 
 > *"The best way to predict the future is to invent it."*
@@ -93,37 +93,37 @@ If you've spent any time online lately, you've felt it: search results padded wi
 
 A large language model learns the statistics of the text it was trained on, the probability of each next word given the ones before, and it generates by sampling from what it learned. Now flood the internet with that model's output, and train the next model on the flooded internet. In 2024, a team led by Ilia Shumailov published a study in *Nature* showing what happens when models train, generation after generation, on data produced by earlier models. [Shumailov et al., AI models collapse when trained on recursively generated data](https://www.nature.com/articles/s41586-024-07566-y)
 
-Model it like this. Call the real human data distribution $P_0(x)$. Each new generation $k$ learns from samples of the one before:
+Picture one simplified training lineage. Call the real human data distribution $P_0(x)$. Each new generation $k$ learns from finite samples of the one before:
 
 > $$P_k(x) = \int q_k(x | y) P_{k-1}(y) \, dy$$
 
-where $q_k$ stands for all the small approximation and sampling errors of model $M_k$. Two things happen.
+Here $q_k$ is a schematic transition kernel for the training and sampling process, not the paper's general equation for a language model. Under the repeated resampling conditions the study examines, two things can happen.
 
 **The tails get pruned.** Models favor high-probability outputs and under-sample the rare ones. Over generations, the spread of the distribution shrinks. The weird hand-made engineering trick, the specific local history, the odd brilliant idea, those live in the tails, and they're the first to go.
 
-**The errors compound.** A model's small biases become the next model's training data, and the next. In the stylized limit the researchers describe, the distribution collapses toward a single, generic spike: the most average possible answer, over and over. A copy of a copy of a copy.
+**The errors compound.** A model's small biases become the next model's training data, and the next. Some of the paper's simplified examples converge toward a narrow spike. That spike needn't sit at the original average; a distribution can lose its variety and drift at the same time. A copy of a copy of a copy.
 
-![Model collapse generation by generation: a wide, rich human-data distribution at Generation 0 narrows to a piled-up mean at Generation 1 and finally to a single degenerate spike at Generation 5](/book-images/ch10-model-collapse.svg)
+![Schematic model collapse: a broad distribution narrows over successive generations. The generation labels illustrate the process, not a measured timetable for language models.](/book-images/ch10-model-collapse.svg)
 
-*Model collapse across one training lineage. The tails, the edge cases and the genius, go first.*
+*A simplified picture of model collapse across one training lineage, not a forecast of which generation fails. Rare cases can disappear first.*
 
 The practical conclusion isn't that the machines are doomed. The labs know about this, and they work hard to keep real human data in the mix. It's that real human data just got more valuable. Something that actually happened, recorded by the person it happened to, is now the scarce input. That's your leverage.
 
-And the energy bill is real too. Generating a page of text on a big model costs on the order of a kilojoule. Tiny for one page, enormous across trillions of automated pages, most of which nobody will ever read. They're running hot. You can run cold: a paper book on small-engine repair, or a saved offline copy of a good manual, keeps delivering for no energy at all.
+And the energy bill is real too. Generating another answer takes computation; keeping a useful answer lets you reuse it. A paper book on small-engine repair needs no powered device to read, and a saved offline manual needs no new model query. Keep the good instructions where you can reach them again.
 
 ## Algorithmic judo
 
 Hiding in the woods with paper books isn't the plan, though. Millions of real people are still in the feed, scrolling past the synthetic flood, looking for any sign of an actual human. You can reach them. You just can't do it by impersonating the machine.
 
-Post a dry technical document, "How to Wire a Small Solar Kit and Run a Local Model," and the recommendation system will likely bury it. Its job is to keep people watching, and a dry manual makes people close the app. So you practice algorithmic judo: you wrap useful, practical knowledge inside a human story strong enough that the system carries it for you, then you hand the reader something real. You use the machine's own momentum to throw it.
+Post a technical document, "How to Wire a Small Solar Kit and Run a Local Model," and the person who needs it may never see it. A true account of why you built the kit can give that person a reason to stop and read. That's the bet behind algorithmic judo: wrap useful, practical knowledge inside a human story, then hand the reader something real. Try it, watch who actually uses the result, and don't confuse one successful post with a law of the feed.
 
-![The Algorithmic Judo pipeline: a high-utility practical core wrapped in a true human story is scored highly by the algorithm and delivered to a person who unlocks the core](/book-images/ch10-algorithm-unlock.svg)
+![A proposed publishing path: useful instructions become part of a true story, travel through a feed, and reach a reader who can use them. Reach isn't guaranteed.](/book-images/ch10-algorithm-unlock.svg)
 
-*Algorithmic judo. A dry manual scores near zero; wrapped in a true story, the algorithm carries it for you.*
+*Algorithmic judo: give a useful manual a human entry point. Distribution still depends on the platform and the people who encounter it.*
 
 Three rules.
 
-**Rule 1: The hook has to be true.** The system boosts what people can't look away from, and what people can't look away from, it turns out, is each other, actually telling the truth. Don't write "Here's how to test your soil." Don't write a manufactured outrage either; the cargo has to be true, or the whole thing is just another picture of food. Write what happened: "I retrained twice and the ladder moved both times. Here's the machine we built instead, and here's how to build one." That's Denny's video. The machine has flooded the world with pictures of food. The remaining economy of human attention runs on the difference between that and a meal.
+**Rule 1: The hook has to be true.** Give someone a reason to care about the instructions. "Here's how to test your soil" can become the account of the bed that failed and what the test found. Don't manufacture outrage; the cargo has to be true, or the whole thing is just another picture of food. Write what happened: "I retrained twice and the ladder moved both times. Here's the machine we built instead, and here's how to build one." That's Denny's video. The point is to give the reader a meal, not another picture of food.
 
 **Rule 2: Pivot to the practical.** Once they're reading, move quickly from the story to the steps: the parts list, the wiring diagram, the schedule, the phone number of the food pantry. The reader came for the person and stays for the thing they can use.
 

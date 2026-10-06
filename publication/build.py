@@ -1,4 +1,4 @@
-"""Reproducible publication layout of unchanged v0.8.2 manuscript.
+"""Reproducible publication layout of the frozen canonical manuscript.
 
 Run from any directory: python3 publication/build.py
 The source manuscript and previous editions are never overwritten.
@@ -115,7 +115,7 @@ for index, section in enumerate(META['sections']):
             transformations.append({'section':sid,'original':filename,'omitted_caption':caption_text,'replacement':RIGHTS_REPLACEMENTS[filename],'action':'Replace image and its credit caption with original motif; commercial reproduction basis unclear or conflicting. Source unchanged. See RIGHTS-AUDIT.md.'})
             fig.replace_with(BeautifulSoup(motif(RIGHTS_REPLACEMENTS[filename]), 'html.parser'))
             continue
-        if sid.startswith('part-'):
+        if sid.startswith('part-') and filename.startswith('part') and '-divider' in filename:
             cap = fig.find('figcaption')
             fig.replace_with(BeautifulSoup(motif(MOTIFS[sid]), 'html.parser'))
             transformations.append({'section':sid,'original':filename,'omitted_caption':cap.get_text() if cap else '','action':'Replace generated divider with original vector motif; retain all divider prose. The image caption goes with the image.'})
@@ -137,8 +137,10 @@ for index, section in enumerate(META['sections']):
             # The first image follows the chapter opening in every source section.
             if fig.find_previous_sibling() and fig.find_previous_sibling().name in ('header','div'):
                 fig['class'] = ['opener-image']
-            if filename.endswith('.svg'):
+            if filename.endswith('.svg') and not filename.startswith('original-'):
                 fig['class'] = ['diagram']  # full text width: labels stay readable
+            if filename == 'coop-cast.svg':
+                fig['class'] = ['diagram', 'cast-plate']
             included_images.append(filename)
     for p in soup.find_all('p'):
         if p.get_text(strip=True) == 'In this chapter:':
@@ -209,7 +211,7 @@ toc += '<a class="toc-row" href="#image-credits">Illustration credits &amp; desi
 credits_data = json.loads((ROOT/'static/book-images/credits.json').read_text())
 credits = '<section class="chapter credits" id="image-credits"><div class="running-label">ILLUSTRATION CREDITS</div><h1>Illustration credits<br/>&amp; design notes</h1>'
 credits += '<p>The cover is the book\'s original cover illustration. Original botanical and mechanical line drawings were created with Codex for an earlier design as editable SVG artwork. The three part-divider illustrations and four photographs or artworks whose commercial reproduction basis was unclear have been replaced with those drawings. Explanatory diagrams were drawn for this book as SVG. Image captions follow the audited sources.</p>'
-credits += '<p>Typeset in Source Serif 4 and Source Sans Pro, designed by Frank Grießhammer and Paul D. Hunt respectively, published by Adobe under the SIL Open Font License 1.1.</p>'
+credits += '<p>Diagram labels use JetBrains Mono. Body text is typeset in Source Serif 4 and Source Sans Pro, designed by Frank Grießhammer and Paul D. Hunt respectively, published by Adobe under the SIL Open Font License 1.1.</p>'
 license_urls = {'CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 2.0':'https://creativecommons.org/licenses/by-sa/2.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/'}
 for item in credits_data:
     if item['file'] not in included_images:
@@ -219,11 +221,11 @@ for item in credits_data:
     title = item['source_title'].removeprefix('File:')
     source_url=audit['source_url']
     credits += f'<div class="credit"><p><b>{html.escape(title)}</b><br/>{html.escape(audit["artist"])}. {html.escape(audit["license"])}. {html.escape(audit["modification_note"])}</p><p class="credit-url"><a href="{html.escape(source_url)}">{html.escape(source_url.removeprefix("https://"))}</a><br/><a href="{html.escape(license_url)}">{html.escape(license_url.removeprefix("https://"))}</a></p></div>'
-credits += '<p>Image adaptations retain the relevant image licenses. Those licenses do not extend to the manuscript text.</p><p>'+str(sum(1 for f in included_images if RIGHTS_BY_FILE.get(f,{}).get('kind')=='generated' and f.endswith('.png')))+' narrative plates were created with PixelLab and assembled for an earlier edition. These generated illustrations depict fictional scenes and are not photographs or evidence of actual deployments. The companion asset register records generation identifiers, component files and provider terms.</p></section>'
+credits += '<p>Image adaptations retain the relevant image licenses. Those licenses do not extend to the manuscript text.</p><p>'+str(sum(1 for f in included_images if RIGHTS_BY_FILE.get(f,{}).get('kind')=='generated'))+' narrative plates were created with PixelLab and assembled for an earlier edition. These generated illustrations depict fictional scenes and are not photographs or evidence of actual deployments. The companion asset register records generation identifiers, component files and provider terms.</p></section>'
 
 subtitle = html.escape(META['subtitle']).replace(' and the Future','<br/>and the Future')
 front = f'''<section class="front title-page"><div class="chapter-label">Christopher Tavolazzi</div><h1>Surviving<br/>the Singularity</h1><p class="subtitle">{subtitle}</p>{motif('grain-and-gripper')}<p class="edition">ILLUSTRATED EDITION</p></section>
-<section class="front copyright"><p>Surviving the Singularity<br/>{html.escape(META['author'])}</p><p>Copyright © 2026 Christopher Tavolazzi.<br/>All rights reserved in original text. Quoted material and third-party images remain subject to their respective rights. Image licenses are identified in the illustration credits.</p><p>Manuscript v{META['version']} · Publication design 01<br/>September 2026</p><p>Elijah Madrone and the cooperative are fiction. The story and its imagined deployments are distinguished from historical evidence and sourced claims in the manuscript.</p></section>'''
+<section class="front copyright"><p>Surviving the Singularity<br/>{html.escape(META['author'])}</p><p>Copyright © 2026 Christopher Tavolazzi.<br/>All rights reserved in original text. Quoted material and third-party images remain subject to their respective rights. Image licenses are identified in the illustration credits.</p><p>Manuscript v{META['version']} · Finalized edition<br/>September 2026</p><p>Elijah Madrone and the cooperative are fiction. The story and its imagined deployments are distinguished from historical evidence and sourced claims in the manuscript.</p></section>'''
 
 (HERE/'assets').mkdir(exist_ok=True)
 (HERE/'assets/ornament.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"><g fill="none" stroke="#66764e" stroke-width="1.5"><path d="M4 15h27m38 0h27M40 15l10-7 10 7-10 7z"/><circle cx="50" cy="15" r="2"/></g></svg>')
@@ -239,7 +241,7 @@ def document(body):
     return f'<!DOCTYPE html><html lang="en-US"><head><meta charset="utf-8"/><title>Surviving the Singularity</title><meta name="author" content="Christopher Tavolazzi"/><link rel="stylesheet" href="{(HERE/"book.css").as_uri()}"/></head><body>{body}</body></html>'
 
 interior = front + toc + '<main>' + ''.join(sections) + credits + '</main>'
-records = {'manuscript_version':META['version'],'design_version':'01','sections':len(sections),'source_sha256':BASELINE,'image_transformations':transformations,'included_images':included_images,'outputs':{}}
+records = {'manuscript_version':META['version'],'design_version':'02','sections':len(sections),'source_sha256':BASELINE,'image_transformations':transformations,'included_images':included_images,'outputs':{}}
 for kind, body in [('interior',interior), ('front-cover',cover)]:
     html_path = OUT / f'{kind}.html'
     html_path.write_text(document(body))
@@ -255,6 +257,8 @@ for kind, body in [('interior',interior), ('front-cover',cover)]:
                 boxes.append({'text':b.text,'rect':[b.position_x,b.position_y,b.width,b.height],'tag':b.element_tag})
             if 'ReplacedBox' in type(b).__name__ and b.element is not None:
                 src=b.element.get('src','')
+                if src.endswith('.svg'):
+                    images.append({'file':Path(src).name,'display_inches':[b.width/96,b.height/96],'svg':True})
                 if src.startswith('file:') and not src.endswith('.svg'):
                     with Image.open(src.removeprefix('file://')) as im:
                         images.append({'file':Path(src).name,'pixels':list(im.size),'display_inches':[b.width/96,b.height/96],'ppi':min(im.width/(b.width/96),im.height/(b.height/96))})

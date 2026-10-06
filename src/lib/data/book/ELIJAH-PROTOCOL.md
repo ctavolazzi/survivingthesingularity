@@ -282,23 +282,28 @@ The ledger (§6) fixes each scene's premise. This section fixes what connects th
 Scenes run the length the story needs — the 800–1,200 window is a floor for effort,
 not a ceiling on the narrative (author ruling, 2026-07-16).
 
-### 7.1 Timeline (two years, Bear Flag to Bear Flag)
+### 7.1 Timeline (current manuscript continuity, v0.10.0)
 
-| When | Chapters | Season anchor |
+The current prose supersedes the older two-year outline. The first fire in
+Chapter 13 precedes the Chapter 16 media success by a year. Chapter 18 and the
+Conclusion place the return to Bear Flag three years after the opening toast.
+Don't compress those events back into the old outline's month 23 to 26 window.
+
+| When | Chapters | Anchor |
 |---|---|---|
-| Month 0 | Ch. 0 (the toast) | late fall — Chat Horizon is weeks old |
-| Months 1–2 | Ch. 1–2 (printout Monday; Companion all-hands) | winter |
-| Months 3–5 | Ch. 3–4 (Sunday calls; LADDER weekend, "cold spring") | spring |
-| Month 6 | Ch. 5 (the $211 bill; the woodstove) | early summer |
-| Month 11 | Ch. 6 (quits on a Tuesday; drives north; the broom) | early fall, year 1 |
-| Months 11–13 | Ch. 7–8 (potluck battle lines; the breakdown) | fall → first winter north |
-| Months 13–15 | Ch. 9 (first manufacturing cell) | deep winter |
-| Months 16–18 | Ch. 10–11 (media engine; the leak, the Crucible) | spring, year 2 |
-| Months 18–20 | Ch. 12 (the deed) · Ch. 15 (Priya's beds run all season) | late spring–summer |
-| Months 20–22 | Ch. 13 (shouse build) · Ch. 14 (Kowalski's closes) | summer–early fall |
-| Month 23 | Ch. 16 (the overnight win) · Ch. 17 (the storm) | fall–first storm |
-| Month 24 | Ch. 18 (premortem, annual meeting) | one year at the co-op |
-| Month ~26 | Conclusion (manuscript done; the drive south) | winter — two years after the toast |
+| Opening | Ch. 0 | Late fall; Chat Horizon is weeks old |
+| First winter and spring | Ch. 1 to 4 | Printout, all-hands, Sunday calls, LADDER weekend |
+| First summer | Ch. 5 | Electricity bill and grandmother's stove |
+| Eleven months after the toast | Ch. 6 | Elijah leaves Claypot and drives north |
+| First fall and winter at the co-op | Ch. 7 to 9 | Potluck, breakdown, first manufacturing cell |
+| Following building seasons | Ch. 10 to 15 | Media work, Crucible, land, shouse, soil |
+| A year after the first fire | Ch. 16 | Media success |
+| Later storm and annual review | Ch. 17 to 18 | Failed mesh node; three years since the toast |
+| After the premortem | Ch. 19 | Public meeting; route funded through December |
+| Three years after the toast | Conclusion | Return to Bear Flag; funding needed beyond December |
+
+These are the text's anchors, not a newly imposed day-by-day calendar. Where a
+chapter supplies only relative time, preserve that precision.
 
 ### 7.2 Elijah's arc in one line per phase
 

@@ -1,12 +1,12 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.9.2",
-  "generated": "2026-09-24",
+  "book_version": "0.10.0",
+  "generated": "2026-09-27",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
     "sections": 35,
-    "blocks": 2212,
-    "words": 97840
+    "blocks": 2217,
+    "words": 99184
   },
   "sections": [
     {
@@ -14,7 +14,7 @@
       "title": "Introduction: The Uncompromising Truth",
       "file": "02-introduction.md",
       "next_ordinal": 160,
-      "words": 3734,
+      "words": 3711,
       "tombstones": [
         "sts.introduction.b0003",
         "sts.introduction.b0004",
@@ -259,9 +259,9 @@
             35,
             35
           ],
-          "words": 46,
-          "hash": "571e5e4b481d",
-          "preview": "Here's the thing the panic keeps you from seeing. For the entire history of our species, s"
+          "words": 26,
+          "hash": "97acd2e22d3a",
+          "preview": "Here's the thing the panic keeps you from seeing. Staying alive takes work. A plow can mak"
         },
         {
           "id": "sts.introduction.b0090",
@@ -270,9 +270,9 @@
             37,
             37
           ],
-          "words": 95,
-          "hash": "13754a0a8108",
-          "preview": "Then, once, we found an exception. We domesticated the animal. We put an ox in front of th"
+          "words": 87,
+          "hash": "c78de234a6c5",
+          "preview": "Domestication let us hand some of the heavy work to an animal. Put an ox in front of the p"
         },
         {
           "id": "sts.introduction.b0091",
@@ -281,9 +281,9 @@
             39,
             39
           ],
-          "words": 60,
-          "hash": "699713e45998",
-          "preview": "This is the second time. That's what the machine actually is, under all the doom. Not a go"
+          "words": 65,
+          "hash": "dbe2b880fc06",
+          "preview": "Call this the second ox. That's a way to see the machine under all the doom. Not a god arr"
         },
         {
           "id": "sts.introduction.b0115",
@@ -306,8 +306,8 @@
             43
           ],
           "words": 19,
-          "hash": "3e37e3df67ca",
-          "preview": "*The first time labor could be handed to something that ran on its own. The machine is the"
+          "hash": "3ed7971ebe40",
+          "preview": "*An early way to hand over some of the heavy work. Training, guidance, and care still belo"
         },
         {
           "id": "sts.introduction.b0094",
@@ -565,7 +565,7 @@
           "hash": "695333cabd24",
           "preview": "![A line chart of the share of US households that were food insecure, 2001 to 2024. It ris",
           "image": "/book-images/intro-food-insecurity.svg",
-          "art_id": null
+          "art_id": "sts.diagram.intro-food-insecurity"
         },
         {
           "id": "sts.introduction.b0145",
@@ -1033,7 +1033,7 @@
       "title": "Preface: Welcome to the Weirdness",
       "file": "01-preface.md",
       "next_ordinal": 74,
-      "words": 1428,
+      "words": 1425,
       "tombstones": [
         "sts.preface.b0003",
         "sts.preface.b0004",
@@ -1181,8 +1181,8 @@
             21,
             21
           ],
-          "words": 49,
-          "hash": "1948cf51b257",
+          "words": 46,
+          "hash": "a424c43661cb",
           "preview": "Look back across the last hundred years and you find a global society of excess, continent"
         },
         {
@@ -1503,7 +1503,7 @@
       "title": "How to Use This Book",
       "file": "31-how-to-use.md",
       "next_ordinal": 8,
-      "words": 189,
+      "words": 186,
       "tombstones": [],
       "blocks": [
         {
@@ -1548,9 +1548,9 @@
             7,
             9
           ],
-          "words": 69,
-          "hash": "6b67fb2b902e",
-          "preview": "- **Twenty minutes.** The Introduction, Chapter 19, and Appendix C. You'll have the argume"
+          "words": 71,
+          "hash": "3ae831c10d0a",
+          "preview": "- **The short route.** The Introduction, Chapter 19, and Appendix C. You'll have the argum"
         },
         {
           "id": "sts.how-to-use.b0005",
@@ -1582,9 +1582,9 @@
             21,
             21
           ],
-          "words": 36,
-          "hash": "6334e1b4504f",
-          "preview": "Every term you might trip on is in the Glossary (Appendix F). Appendix G turns every pract"
+          "words": 31,
+          "hash": "3f637f01bc4e",
+          "preview": "Key terms are in the Glossary (Appendix F). Appendix G arranges the Precedent Ledger's pra"
         }
       ]
     },
@@ -1593,7 +1593,7 @@
       "title": "Chapter 0: The Demonstration",
       "file": "00-chapter0.md",
       "next_ordinal": 109,
-      "words": 3795,
+      "words": 3791,
       "tombstones": [
         "sts.chapter0.b0003",
         "sts.chapter0.b0004",
@@ -1869,8 +1869,8 @@
             48,
             48
           ],
-          "words": 133,
-          "hash": "deb6bf87deca",
+          "words": 129,
+          "hash": "cd3cd668af5e",
           "preview": "PorusAI was the other kind of company, a research lab with a messiah complex and a burn ra"
         },
         {
@@ -2644,7 +2644,7 @@
       "title": "Chapter 1: The Event Horizon",
       "file": "03-chapter1.md",
       "next_ordinal": 175,
-      "words": 4600,
+      "words": 4610,
       "tombstones": [
         "sts.chapter1.b0003",
         "sts.chapter1.b0006",
@@ -3468,9 +3468,9 @@
             141,
             141
           ],
-          "words": 88,
-          "hash": "52ff04574700",
-          "preview": "The modern run started in 2017, with a Google paper titled \"Attention Is All You Need.\" [V"
+          "words": 98,
+          "hash": "ec2c1f89b6fd",
+          "preview": "The modern run started in 2017, with a Google paper titled \"Attention Is All You Need.\" Ma"
         },
         {
           "id": "sts.chapter1.b0148",
@@ -3846,7 +3846,7 @@
       "title": "Chapter 2: The Era of AGI (Stages 1–5)",
       "file": "04-chapter2.md",
       "next_ordinal": 144,
-      "words": 3364,
+      "words": 3369,
       "tombstones": [
         "sts.chapter2.b0004",
         "sts.chapter2.b0006",
@@ -4404,8 +4404,8 @@
             91,
             91
           ],
-          "words": 180,
-          "hash": "57ea4e81209a",
+          "words": 179,
+          "hash": "1da8e18fdc69",
           "preview": "Stage 2 already has a modern receipt, date-stamped. On June 12, 2026, the US Commerce Depa"
         },
         {
@@ -4415,9 +4415,9 @@
             93,
             93
           ],
-          "words": 86,
-          "hash": "62b1e9158e44",
-          "preview": "Then Stage 3 arrived on schedule. After two and a half weeks of negotiation, Commerce lift"
+          "words": 83,
+          "hash": "6ad466e928bf",
+          "preview": "Then Stage 3 arrived on schedule. On June 30 the export controls were lifted. Fable 5 retu"
         },
         {
           "id": "sts.chapter2.b0142",
@@ -4430,7 +4430,7 @@
           "hash": "4860548e2c50",
           "preview": "![A timeline from June 12 to July 1, 2026: on June 12 Commerce requires a license for two ",
           "image": "/book-images/ch02-eighteen-days.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch02-eighteen-days"
         },
         {
           "id": "sts.chapter2.b0143",
@@ -4461,8 +4461,8 @@
             101,
             101
           ],
-          "words": 111,
-          "hash": "de2744eaf95d",
+          "words": 120,
+          "hash": "5c9ed07bf836",
           "preview": "The ugliest version of Stage 2 is somebody reaching for the plug itself: throttling networ"
         },
         {
@@ -5468,7 +5468,7 @@
       "title": "Chapter 4: Universal and Multiverse Apex (Stages 8–9)",
       "file": "06-chapter4.md",
       "next_ordinal": 92,
-      "words": 2492,
+      "words": 2520,
       "tombstones": [
         "sts.chapter4.b0003",
         "sts.chapter4.b0004",
@@ -5990,9 +5990,9 @@
             93,
             93
           ],
-          "words": 19,
-          "hash": "34b31160fa1e",
-          "preview": "One real world, $N_{\\text{sim}}$ simulated ones, and you're equally likely to be in any of"
+          "words": 24,
+          "hash": "2767dd821f23",
+          "preview": "One base reality, $N_{\\text{sim}}$ simulated ones, all weighted equally in this simplified"
         },
         {
           "id": "sts.chapter4.b0070",
@@ -6001,8 +6001,8 @@
             95,
             95
           ],
-          "words": 59,
-          "hash": "198556e67508",
+          "words": 82,
+          "hash": "2b2d1baf35a0",
           "preview": "But here's the part everybody skips: we've never built one. Kipping calls ours a \"nullipar"
         },
         {
@@ -6190,7 +6190,7 @@
       "title": "Chapter 5: The Thermodynamics of Survival",
       "file": "07-chapter5.md",
       "next_ordinal": 172,
-      "words": 3871,
+      "words": 3907,
       "tombstones": [
         "sts.chapter5.b0003",
         "sts.chapter5.b0004",
@@ -6454,9 +6454,9 @@
             36,
             36
           ],
-          "words": 18,
-          "hash": "24ce9805b28d",
-          "preview": "![A squat black cast-iron wood stove with the door open, one cracked firebrick visible ins",
+          "words": 17,
+          "hash": "45ea6797706d",
+          "preview": "![A squat black wood stove with the door open, one cracked firebrick visible inside](/book",
           "image": "/book-images/ch05-woodstove.png",
           "art_id": "sts.plate.woodstove"
         },
@@ -6580,7 +6580,7 @@
             59
           ],
           "words": 51,
-          "hash": "d0f7f0d8769e",
+          "hash": "2bd7fdc9a139",
           "preview": "**The first law: you can't cheat the universe.** Energy can't be created or destroyed, onl"
         },
         {
@@ -6590,9 +6590,9 @@
             61,
             61
           ],
-          "words": 59,
-          "hash": "48edf4ec9e56",
-          "preview": "**The second law: there's no breaking even.** In every transfer, some energy leaks away as"
+          "words": 89,
+          "hash": "85e2ef101e80",
+          "preview": "**The second law: useful energy has limits.** Energy can remain on the books while becomin"
         },
         {
           "id": "sts.chapter5.b0106",
@@ -6679,9 +6679,9 @@
             82,
             84
           ],
-          "words": 81,
-          "hash": "25694c2ef03f",
-          "preview": "- **415 terawatt-hours.** What the world's data centres used in 2024, about 1.5 percent of"
+          "words": 89,
+          "hash": "3add4ab33375",
+          "preview": "- **485 terawatt-hours.** The IEA's estimate of worldwide data-centre electricity use in 2"
         },
         {
           "id": "sts.chapter5.b0171",
@@ -6723,8 +6723,8 @@
             92,
             92
           ],
-          "words": 27,
-          "hash": "232f7b60e4b4",
+          "words": 26,
+          "hash": "45ebaf23be98",
           "preview": "The machines are less picky. They eat raw electricity, from sunlight, wind, uranium, or co"
         },
         {
@@ -7175,7 +7175,7 @@
           "hash": "edcb4ca9ac1b",
           "preview": "![Two stacked line charts sharing a year axis, 1910 to 1949. Horses and mules on US farms ",
           "image": "/book-images/ch05-horses-tractors.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch05-horses-tractors"
         },
         {
           "id": "sts.chapter5.b0166",
@@ -7250,7 +7250,7 @@
       "title": "Part II: How Humans React: The Cooperative Transition",
       "file": "part2-divider.md",
       "next_ordinal": 11,
-      "words": 133,
+      "words": 134,
       "tombstones": [
         "sts.part-2.b0003",
         "sts.part-2.b0004",
@@ -7302,10 +7302,10 @@
             7,
             7
           ],
-          "words": 34,
-          "hash": "71ad2223a146",
+          "words": 35,
+          "hash": "d64536a654e3",
           "preview": "![Pixel-art portraits of the co-op: Elijah the ex-tech worker with his notebook, Marta the",
-          "image": "/book-images/coop-cast.png",
+          "image": "/book-images/coop-cast.svg",
           "art_id": "sts.plate.co-op-cast"
         },
         {
@@ -7326,7 +7326,7 @@
       "title": "Chapter 6: Is the Singularity a Done Deal?",
       "file": "08-chapter6.md",
       "next_ordinal": 120,
-      "words": 3045,
+      "words": 3056,
       "tombstones": [
         "sts.chapter6.b0001",
         "sts.chapter6.b0004",
@@ -7395,11 +7395,11 @@
             3,
             3
           ],
-          "words": 16,
-          "hash": "a162f31a7fbc",
-          "preview": "![Edmond de Belamy, the first AI-generated portrait sold at a major auction house](/book-i",
-          "image": "/book-images/ch06-edmond-de-belamy.png",
-          "art_id": "sts.photo.ch06-edmond-de-belamy"
+          "words": 11,
+          "hash": "aa9910915032",
+          "preview": "![Line drawing of hand tools arranged for repair](/book-images/original-09-repair-tools.sv",
+          "image": "/book-images/original-09-repair-tools.svg",
+          "art_id": "sts.diagram.original-09-repair-tools"
         },
         {
           "id": "sts.chapter6.b0003",
@@ -7408,9 +7408,9 @@
             5,
             5
           ],
-          "words": 23,
-          "hash": "301780dec93f",
-          "preview": "*Edmond de Belamy, generated by a GAN, sold at Christie's for $432,500 in 2018. (Artificia"
+          "words": 17,
+          "hash": "81ecf4596c76",
+          "preview": "*Tools become useful through people who can operate, maintain, and share them. Original il"
         },
         {
           "id": "sts.chapter6.b0112",
@@ -7757,7 +7757,7 @@
           "hash": "fd3915046495",
           "preview": "![Four boxes in a row, capability, deployment, ownership, and access, each asking its own ",
           "image": "/book-images/ch06-capability-access.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch06-capability-access"
         },
         {
           "id": "sts.chapter6.b0119",
@@ -7967,8 +7967,8 @@
             111,
             113
           ],
-          "words": 108,
-          "hash": "1f0e17217d1f",
+          "words": 130,
+          "hash": "42e1736e7d74",
           "preview": "- **1 in 4** workers worldwide is in a job with some exposure to generative AI. The ILO ex"
         },
         {
@@ -8201,7 +8201,7 @@
       "title": "Chapter 7: The Battle Lines: The Entitled vs. The Ready",
       "file": "09-chapter7.md",
       "next_ordinal": 203,
-      "words": 5849,
+      "words": 5879,
       "tombstones": [
         "sts.chapter7.b0001",
         "sts.chapter7.b0004",
@@ -9084,8 +9084,8 @@
             164,
             171
           ],
-          "words": 180,
-          "hash": "b07d355498d4",
+          "words": 181,
+          "hash": "71fc3814e2af",
           "preview": "| Year | Who organized it | What they called the machine | What they demanded | How it wen"
         },
         {
@@ -9441,8 +9441,8 @@
             237,
             237
           ],
-          "words": 80,
-          "hash": "75fa986e27f5",
+          "words": 109,
+          "hash": "d7d5e1f3a78c",
           "preview": "Start with the warning shot. In 1906 John Philip Sousa, the most famous bandleader alive, "
         },
         {
@@ -9654,7 +9654,7 @@
       "title": "Chapter 8: The Psychology of the Collapse",
       "file": "10-chapter8.md",
       "next_ordinal": 294,
-      "words": 4106,
+      "words": 4161,
       "tombstones": [
         "sts.chapter8.b0004",
         "sts.chapter8.b0006",
@@ -10290,9 +10290,9 @@
             85,
             85
           ],
-          "words": 30,
-          "hash": "51fb11a9cea7",
-          "preview": "![The Cognitive Extraction Engine: raw attention is harvested by infinite scroll and notif",
+          "words": 35,
+          "hash": "f7b6ffec00ec",
+          "preview": "![A conceptual sequence: scrolling and alerts compete with a chosen task, repeated switche",
           "image": "/book-images/ch08-cognitive-extraction.svg",
           "art_id": "sts.diagram.ch08-cognitive-extraction"
         },
@@ -10303,9 +10303,9 @@
             87,
             87
           ],
-          "words": 21,
-          "hash": "97ac04ccc89c",
-          "preview": "*The Cognitive Extraction Engine. Attention goes in at the top; agency comes out the botto"
+          "words": 15,
+          "hash": "a459eda13947",
+          "preview": "*The Cognitive Extraction Engine. A picture of diverted time, not a measurement of brain c"
         },
         {
           "id": "sts.chapter8.b0242",
@@ -10314,9 +10314,9 @@
             89,
             89
           ],
-          "words": 80,
-          "hash": "81967ecd354f",
-          "preview": "What it leaves behind is a chronic, low-grade fog. It gets hard to read a book, hold a lon"
+          "words": 61,
+          "hash": "019a0b2350aa",
+          "preview": "The cost can feel like a low-grade fog: a book left unread, a conversation half-heard, a t"
         },
         {
           "id": "sts.chapter8.b0191",
@@ -10337,9 +10337,9 @@
             93,
             93
           ],
-          "words": 48,
-          "hash": "329164fd74a1",
-          "preview": "Your brain is about two percent of your body's mass and burns roughly twenty percent of it"
+          "words": 90,
+          "hash": "bce700176f4b",
+          "preview": "Your brain is about two percent of your body's mass and uses roughly twenty percent of its"
         },
         {
           "id": "sts.chapter8.b0211",
@@ -10348,9 +10348,9 @@
             95,
             95
           ],
-          "words": 74,
-          "hash": "985b1b1cddf9",
-          "preview": "The expensive part is the switch. When you're deep in a demanding task, wiring a panel or "
+          "words": 94,
+          "hash": "1c20b55df5da",
+          "preview": "Switching can have a cost. Gloria Mark and colleagues observed information workers moving "
         },
         {
           "id": "sts.chapter8.b0212",
@@ -10359,9 +10359,9 @@
             97,
             97
           ],
-          "words": 28,
-          "hash": "dce0c1b0adfe",
-          "preview": "Do the arithmetic that implies. If settling in costs twenty minutes, then more than two or"
+          "words": 48,
+          "hash": "d23ee1ea7a23",
+          "preview": "Neither finding gives you a universal recovery time or a maximum number of interruptions p"
         },
         {
           "id": "sts.chapter8.b0253",
@@ -10370,9 +10370,9 @@
             99,
             99
           ],
-          "words": 33,
-          "hash": "34ee91529336",
-          "preview": "![The Cognitive Fragmentation Curve: a graph of cognitive depth over one hour, showing a t",
+          "words": 36,
+          "hash": "4c08fd1e960c",
+          "preview": "![An illustrative curve of attention on a task rising, dropping at interruptions, and reco",
           "image": "/book-images/ch08-focus-recovery.svg",
           "art_id": "sts.diagram.ch08-focus-recovery"
         },
@@ -10383,9 +10383,9 @@
             101,
             101
           ],
-          "words": 16,
-          "hash": "51012af12b5e",
-          "preview": "*The Cognitive Fragmentation Curve. Above roughly three interrupts an hour, the curve neve"
+          "words": 17,
+          "hash": "2d9a4b5af594",
+          "preview": "*One possible pattern of interrupted work. A conceptual sketch, not measured data or a uni"
         },
         {
           "id": "sts.chapter8.b0255",
@@ -10406,9 +10406,9 @@
             105,
             105
           ],
-          "words": 26,
-          "hash": "28714cc82ebb",
-          "preview": "So why is it so hard to put down? Information theory gives a precise lens. Shannon entropy"
+          "words": 16,
+          "hash": "3d2bead45ad4",
+          "preview": "The slot-machine comparison needs a boundary too. Shannon entropy, $H$, measures uncertain"
         },
         {
           "id": "sts.chapter8.b0256",
@@ -10428,9 +10428,9 @@
             109,
             109
           ],
-          "words": 84,
-          "hash": "2bd1075bbaf9",
-          "preview": "where $P(x_i)$ is the chance the next item is a particular thing: a funny video, an outrag"
+          "words": 79,
+          "hash": "ca2aa9f0769e",
+          "preview": "where $P(x_i)$ is the probability of outcome $x_i$. You could use it for a toy model of fe"
         },
         {
           "id": "sts.chapter8.b0257",
@@ -10462,9 +10462,9 @@
             115,
             115
           ],
-          "words": 25,
-          "hash": "5020eed8383d",
-          "preview": "![The Cognitive Firewall Pipeline: the high-entropy digital web passes through strict batc",
+          "words": 34,
+          "hash": "8c6fc46fdedc",
+          "preview": "![A suggested attention routine: check incoming information in scheduled windows, make not",
           "image": "/book-images/ch08-firewall-pipeline.svg",
           "art_id": "sts.diagram.ch08-firewall-pipeline"
         },
@@ -10475,9 +10475,9 @@
             117,
             117
           ],
-          "words": 11,
-          "hash": "ef5710239a14",
-          "preview": "*The Cognitive Firewall Pipeline. Entropy falls left to right; agency rises.*"
+          "words": 18,
+          "hash": "df3167d71207",
+          "preview": "*The Cognitive Firewall Pipeline. A routine to try and adjust around the work and people w"
         },
         {
           "id": "sts.chapter8.b0260",
@@ -10680,9 +10680,9 @@
             164,
             164
           ],
-          "words": 47,
-          "hash": "e708e0db400c",
-          "preview": "Give the firewall a few weeks. People who do this tend to report the same things: the back"
+          "words": 43,
+          "hash": "40f2a6854e68",
+          "preview": "Give the firewall a few weeks, then check what changed: what you finished, what you missed"
         },
         {
           "id": "sts.chapter8.b0248",
@@ -10736,9 +10736,9 @@
             174,
             174
           ],
-          "words": 55,
-          "hash": "03ca8dd11e9c",
-          "preview": "Spread that load across three households and the maintenance cost per person falls roughly"
+          "words": 53,
+          "hash": "2dc3a804eaed",
+          "preview": "Three households can share work that each would otherwise duplicate: one person keeps the "
         },
         {
           "id": "sts.chapter8.b0272",
@@ -10826,9 +10826,9 @@
             190,
             190
           ],
-          "words": 35,
-          "hash": "e04f17df4332",
-          "preview": "![Trust network topologies: a star topology where every node depends on one hub that can f",
+          "words": 26,
+          "hash": "770aaf9ed9fd",
+          "preview": "![Illustrative network topologies: a star depends on one hub, while the mesh has alternate",
           "image": "/book-images/ch08-star-vs-mesh.svg",
           "art_id": "sts.diagram.ch08-star-vs-mesh"
         },
@@ -10839,9 +10839,9 @@
             192,
             192
           ],
-          "words": 20,
-          "hash": "a8ac1d6d17a6",
-          "preview": "*Star versus mesh. In the star, the hub's failure is everyone's failure; in the mesh, dama"
+          "words": 21,
+          "hash": "689e08c8cf04",
+          "preview": "*Star versus mesh. The star loses its links when the hub fails. The mesh can reroute if an"
         },
         {
           "id": "sts.chapter8.b0281",
@@ -10850,9 +10850,9 @@
             194,
             194
           ],
-          "words": 93,
-          "hash": "fdf5f3bd0e0b",
-          "preview": "In a mesh, every node connects to several neighbors, and damage becomes a detour. There's "
+          "words": 95,
+          "hash": "9a5efac1dd87",
+          "preview": "In a mesh, damage can become a detour if another working route remains. Social capacity ha"
         },
         {
           "id": "sts.chapter8.b0282",
@@ -11040,7 +11040,7 @@
       "title": "Chapter 9: Deglobalization and the Neighborhood Factory",
       "file": "11-chapter9.md",
       "next_ordinal": 213,
-      "words": 3991,
+      "words": 4003,
       "tombstones": [
         "sts.chapter9.b0004",
         "sts.chapter9.b0006",
@@ -11508,7 +11508,7 @@
             67
           ],
           "words": 88,
-          "hash": "38a7143afcf0",
+          "hash": "cd2c962ca865",
           "preview": "And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's"
         },
         {
@@ -11906,9 +11906,9 @@
             141,
             141
           ],
-          "words": 12,
-          "hash": "475084ee2d76",
-          "preview": "On a clean Raspberry Pi OS install, the project's documented installer is:"
+          "words": 24,
+          "hash": "2889084d2a25",
+          "preview": "On a clean Raspberry Pi OS install, check the project's current [installation requirements"
         },
         {
           "id": "sts.chapter9.b0207",
@@ -12291,7 +12291,7 @@
       "title": "Chapter 10: The \"Create Over Consume\" Protocol",
       "file": "12-chapter10.md",
       "next_ordinal": 184,
-      "words": 3111,
+      "words": 3094,
       "tombstones": [
         "sts.chapter10.b0003",
         "sts.chapter10.b0004",
@@ -12420,11 +12420,11 @@
             3,
             3
           ],
-          "words": 10,
-          "hash": "e410cbf35cb3",
-          "preview": "![The New York Stock Exchange trading floor](/book-images/ch10-nyse.jpg)",
-          "image": "/book-images/ch10-nyse.jpg",
-          "art_id": "sts.photo.ch10-nyse"
+          "words": 12,
+          "hash": "f228e8b23be8",
+          "preview": "![Line drawing of a printed pamphlet and binding thread](/book-images/original-07-pamphlet",
+          "image": "/book-images/original-07-pamphlet-and-thread.svg",
+          "art_id": "sts.diagram.original-07-pamphlet-and-thread"
         },
         {
           "id": "sts.chapter10.b0139",
@@ -12433,9 +12433,9 @@
             5,
             5
           ],
-          "words": 25,
-          "hash": "60f2917ced37",
-          "preview": "*A trading floor. A price records an exchange; it doesn't exhaust the value of a life. (Sc"
+          "words": 11,
+          "hash": "5b9a0b114b96",
+          "preview": "*Make something another person can use. Original illustration for this book.*"
         },
         {
           "id": "sts.chapter10.b0140",
@@ -12890,9 +12890,9 @@
             96,
             96
           ],
-          "words": 23,
-          "hash": "4bf10328dfe4",
-          "preview": "Model it like this. Call the real human data distribution $P_0(x)$. Each new generation $k"
+          "words": 25,
+          "hash": "f032d5341ca4",
+          "preview": "Picture one simplified training lineage. Call the real human data distribution $P_0(x)$. E"
         },
         {
           "id": "sts.chapter10.b0166",
@@ -12912,9 +12912,9 @@
             100,
             100
           ],
-          "words": 17,
-          "hash": "66afd978a837",
-          "preview": "where $q_k$ stands for all the small approximation and sampling errors of model $M_k$. Two"
+          "words": 34,
+          "hash": "8413bb63b337",
+          "preview": "Here $q_k$ is a schematic transition kernel for the training and sampling process, not the"
         },
         {
           "id": "sts.chapter10.b0132",
@@ -12934,8 +12934,8 @@
             104,
             104
           ],
-          "words": 47,
-          "hash": "21a4ef32fda9",
+          "words": 55,
+          "hash": "98413c28585d",
           "preview": "**The errors compound.** A model's small biases become the next model's training data, and"
         },
         {
@@ -12945,9 +12945,9 @@
             106,
             106
           ],
-          "words": 34,
-          "hash": "b6e028e66ffa",
-          "preview": "![Model collapse generation by generation: a wide, rich human-data distribution at Generat",
+          "words": 26,
+          "hash": "affad33fa0ed",
+          "preview": "![Schematic model collapse: a broad distribution narrows over successive generations. The ",
           "image": "/book-images/ch10-model-collapse.svg",
           "art_id": "sts.diagram.ch10-model-collapse"
         },
@@ -12958,9 +12958,9 @@
             108,
             108
           ],
-          "words": 16,
-          "hash": "e3b8eac56ae9",
-          "preview": "*Model collapse across one training lineage. The tails, the edge cases and the genius, go "
+          "words": 22,
+          "hash": "824c11ac05d5",
+          "preview": "*A simplified picture of model collapse across one training lineage, not a forecast of whi"
         },
         {
           "id": "sts.chapter10.b0161",
@@ -12980,9 +12980,9 @@
             112,
             112
           ],
-          "words": 69,
-          "hash": "45b95b8ad753",
-          "preview": "And the energy bill is real too. Generating a page of text on a big model costs on the ord"
+          "words": 52,
+          "hash": "876ba538c300",
+          "preview": "And the energy bill is real too. Generating another answer takes computation; keeping a us"
         },
         {
           "id": "sts.chapter10.b0169",
@@ -13014,9 +13014,9 @@
             118,
             118
           ],
-          "words": 80,
-          "hash": "ed28443500df",
-          "preview": "Post a dry technical document, \"How to Wire a Small Solar Kit and Run a Local Model,\" and "
+          "words": 85,
+          "hash": "c186f22ce4f8",
+          "preview": "Post a technical document, \"How to Wire a Small Solar Kit and Run a Local Model,\" and the "
         },
         {
           "id": "sts.chapter10.b0170",
@@ -13025,9 +13025,9 @@
             120,
             120
           ],
-          "words": 32,
-          "hash": "a682dcb7a977",
-          "preview": "![The Algorithmic Judo pipeline: a high-utility practical core wrapped in a true human sto",
+          "words": 30,
+          "hash": "f11857d4841c",
+          "preview": "![A proposed publishing path: useful instructions become part of a true story, travel thro",
           "image": "/book-images/ch10-algorithm-unlock.svg",
           "art_id": "sts.diagram.ch10-algorithm-unlock"
         },
@@ -13038,9 +13038,9 @@
             122,
             122
           ],
-          "words": 19,
-          "hash": "10aa2e962c1d",
-          "preview": "*Algorithmic judo. A dry manual scores near zero; wrapped in a true story, the algorithm c"
+          "words": 22,
+          "hash": "2b961f62b691",
+          "preview": "*Algorithmic judo: give a useful manual a human entry point. Distribution still depends on"
         },
         {
           "id": "sts.chapter10.b0159",
@@ -13060,9 +13060,9 @@
             126,
             126
           ],
-          "words": 116,
-          "hash": "45e8994a1eaa",
-          "preview": "**Rule 1: The hook has to be true.** The system boosts what people can't look away from, a"
+          "words": 97,
+          "hash": "63f607782c55",
+          "preview": "**Rule 1: The hook has to be true.** Give someone a reason to care about the instructions."
         },
         {
           "id": "sts.chapter10.b0134",
@@ -13272,7 +13272,7 @@
       "title": "Chapter 11: King and Queen of Your Own Robotic Court",
       "file": "13-chapter11.md",
       "next_ordinal": 207,
-      "words": 4511,
+      "words": 4599,
       "tombstones": [
         "sts.chapter11.b0001",
         "sts.chapter11.b0003",
@@ -14064,9 +14064,9 @@
             128,
             128
           ],
-          "words": 33,
-          "hash": "fe3a1366591d",
-          "preview": "For running language models, the bottleneck usually isn't raw processing speed. It's memor"
+          "words": 38,
+          "hash": "b51ca5e2cd5b",
+          "preview": "For running language models, memory is one of the first limits to check. Keeping the weigh"
         },
         {
           "id": "sts.chapter11.b0190",
@@ -14086,9 +14086,9 @@
             132,
             132
           ],
-          "words": 49,
-          "hash": "664de9fd67bd",
-          "preview": "where $P$ is the number of parameters in billions, $Q$ is the bits stored per weight (16 f"
+          "words": 86,
+          "hash": "359e47da14b4",
+          "preview": "where $P$ is the number of parameters in billions, $Q$ is the nominal bits stored per weig"
         },
         {
           "id": "sts.chapter11.b0136",
@@ -14097,9 +14097,9 @@
             134,
             134
           ],
-          "words": 12,
-          "hash": "5af790040528",
-          "preview": "**A small model at full precision.** An 8-billion-parameter model at 16 bits:"
+          "words": 9,
+          "hash": "27bdd8a90d08",
+          "preview": "**A small model at 16 bits.** An 8-billion-parameter model:"
         },
         {
           "id": "sts.chapter11.b0191",
@@ -14119,9 +14119,9 @@
             138,
             138
           ],
-          "words": 8,
-          "hash": "eb15c2db6b3a",
-          "preview": "That fits on one used 24 GB card."
+          "words": 19,
+          "hash": "2f736c919b02",
+          "preview": "That estimate fits within one 24 GB card. Check the actual model and intended context leng"
         },
         {
           "id": "sts.chapter11.b0138",
@@ -14152,9 +14152,9 @@
             144,
             144
           ],
-          "words": 55,
-          "hash": "f3751cbdde73",
-          "preview": "That needs two 24 GB cards, 48 GB together, which is what the co-op scavenged. Open tools "
+          "words": 64,
+          "hash": "671c7af69afd",
+          "preview": "Two 24 GB cards provide 48 GB in total, which is what the co-op scavenged. Tools like llam"
         },
         {
           "id": "sts.chapter11.b0193",
@@ -14175,9 +14175,9 @@
             148,
             148
           ],
-          "words": 47,
-          "hash": "4476b1b98deb",
-          "preview": "A rack like that throws off somewhere between 600 and 1,000 watts of heat, all day. Inside"
+          "words": 58,
+          "hash": "c24c69bb348c",
+          "preview": "A rack drawing 600 to 1,000 watts turns roughly that much electrical power into heat while"
         },
         {
           "id": "sts.chapter11.b0194",
@@ -14219,9 +14219,9 @@
             156,
             156
           ],
-          "words": 26,
-          "hash": "3b5d6e1e27d2",
-          "preview": "That's a gentle flow; a small pump the size of a fist handles it. A salvaged car radiator "
+          "words": 44,
+          "hash": "d9a790f8475d",
+          "preview": "That's the required flow for these assumptions, not a pump specification. The pump must de"
         },
         {
           "id": "sts.chapter11.b0196",
@@ -14489,7 +14489,7 @@
       "title": "Chapter 12: The Land Strategy",
       "file": "14-chapter12.md",
       "next_ordinal": 181,
-      "words": 3683,
+      "words": 3671,
       "tombstones": [
         "sts.chapter12.b0003",
         "sts.chapter12.b0004",
@@ -14615,10 +14615,10 @@
             3
           ],
           "words": 11,
-          "hash": "0948d55d0bbc",
-          "preview": "![FarmBot automated gardening system over a raised bed](/book-images/ch12-farmbot.jpg)",
-          "image": "/book-images/ch12-farmbot.jpg",
-          "art_id": "sts.photo.ch12-farmbot"
+          "hash": "36b91552fe66",
+          "preview": "![Line drawing of a germinating seed and roots](/book-images/original-04-seed-and-root.svg",
+          "image": "/book-images/original-04-seed-and-root.svg",
+          "art_id": "sts.diagram.original-04-seed-and-root"
         },
         {
           "id": "sts.chapter12.b0146",
@@ -14627,9 +14627,9 @@
             5,
             5
           ],
-          "words": 27,
-          "hash": "b11ebaee3394",
-          "preview": "*FarmBot over a raised bed. A place to grow, and a tool that can do part of the work. (Far"
+          "words": 15,
+          "hash": "2c303b4aeb19",
+          "preview": "*A place to grow begins with access to the ground. Original illustration for this book.*"
         },
         {
           "id": "sts.chapter12.b0147",
@@ -15473,7 +15473,7 @@
       "title": "Chapter 13: The Shouse Protocol",
       "file": "15-chapter13.md",
       "next_ordinal": 184,
-      "words": 3684,
+      "words": 3700,
       "tombstones": [
         "sts.chapter13.b0001",
         "sts.chapter13.b0003",
@@ -15999,9 +15999,9 @@
             81,
             81
           ],
-          "words": 76,
-          "hash": "c4389bd86b93",
-          "preview": "Shipping containers are the structural Lego of the moment: cheap, weather-sealed, and buil"
+          "words": 87,
+          "hash": "f2befa649ee1",
+          "preview": "Shipping containers are the structural Lego of the moment: weather-sealed and built to tak"
         },
         {
           "id": "sts.chapter13.b0170",
@@ -16090,9 +16090,9 @@
             97,
             97
           ],
-          "words": 38,
-          "hash": "c90557baaed5",
-          "preview": "![The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm ",
+          "words": 28,
+          "hash": "a2a962fde3fb",
+          "preview": "![Illustrative wall section: steel, closed-cell foam, and interior finish. Insulation redu",
           "image": "/book-images/ch13-thermal-seal.svg",
           "art_id": "sts.diagram.ch13-thermal-seal"
         },
@@ -16103,9 +16103,9 @@
             99,
             99
           ],
-          "words": 18,
-          "hash": "39385565bd79",
-          "preview": "*The thermal barrier in section. Foam bonded to steel: warm, moist indoor air never touche"
+          "words": 21,
+          "hash": "16c473372c53",
+          "preview": "*The thermal barrier in section. A continuous insulation and air barrier helps keep warm, "
         },
         {
           "id": "sts.chapter13.b0132",
@@ -16114,9 +16114,9 @@
             101,
             101
           ],
-          "words": 84,
-          "hash": "45a5979c1c4f",
-          "preview": "The common answer for containers is closed-cell spray foam applied directly to the steel, "
+          "words": 96,
+          "hash": "32881c03f0f6",
+          "preview": "One approach is closed-cell spray foam bonded to the steel, with the thickness and R-value"
         },
         {
           "id": "sts.chapter13.b0176",
@@ -16417,7 +16417,7 @@
       "title": "Chapter 14: The Collapse of the Long Tail",
       "file": "16-chapter14.md",
       "next_ordinal": 179,
-      "words": 3858,
+      "words": 3900,
       "tombstones": [
         "sts.chapter14.b0004",
         "sts.chapter14.b0006",
@@ -17030,9 +17030,9 @@
             97,
             97
           ],
-          "words": 137,
-          "hash": "3bcb69c11656",
-          "preview": "There's no such thing as waste, only food in the wrong place. And this one already has wor"
+          "words": 152,
+          "hash": "ca0e5aee6cd9",
+          "preview": "Some of that waste is still edible food in the wrong place. Recovering it already has work"
         },
         {
           "id": "sts.chapter14.b0158",
@@ -17130,9 +17130,9 @@
             118,
             118
           ],
-          "words": 28,
-          "hash": "5ff4ffbc728d",
-          "preview": "![Centralized versus decentralized mesh communications: a single tower serving three users",
+          "words": 31,
+          "hash": "db78cf69148a",
+          "preview": "![Two example networks: users dependent on one tower lose their link when it fails; a mesh",
           "image": "/book-images/ch14-mesh-comms.svg",
           "art_id": "sts.diagram.ch14-mesh-comms"
         },
@@ -17143,9 +17143,9 @@
             120,
             120
           ],
-          "words": 21,
-          "hash": "05446d8999ac",
-          "preview": "*Two topologies for a town. The tower is a single point of failure; the mesh treats damage"
+          "words": 17,
+          "hash": "87784f3d43d9",
+          "preview": "*Two topologies for a town. A mesh can route around damage only where another usable path "
         },
         {
           "id": "sts.chapter14.b0133",
@@ -17165,9 +17165,9 @@
             124,
             126
           ],
-          "words": 50,
-          "hash": "c7a3eeb9c9cf",
-          "preview": "- **Self-healing.** Every node is both a radio and a router. If one fails, messages hop ar"
+          "words": 78,
+          "hash": "f3cf650a1c39",
+          "preview": "- **Alternate paths.** Nodes can relay messages. If one fails, messages can travel another"
         },
         {
           "id": "sts.chapter14.b0135",
@@ -17477,7 +17477,7 @@
       "title": "Chapter 15: The Power of Reclaiming Soil",
       "file": "17-chapter15.md",
       "next_ordinal": 146,
-      "words": 3049,
+      "words": 3042,
       "tombstones": [
         "sts.chapter15.b0006",
         "sts.chapter15.b0008",
@@ -17575,11 +17575,11 @@
             3,
             3
           ],
-          "words": 8,
-          "hash": "995d89c3c15a",
-          "preview": "![Automated watering over garden soil](/book-images/ch12-farmbot-watering.jpg)",
-          "image": "/book-images/ch12-farmbot-watering.jpg",
-          "art_id": "sts.photo.ch12-farmbot-watering"
+          "words": 11,
+          "hash": "f8367955e03a",
+          "preview": "![Line drawing of roots and layers of soil](/book-images/original-11-soil-profile.svg)",
+          "image": "/book-images/original-11-soil-profile.svg",
+          "art_id": "sts.diagram.original-11-soil-profile"
         },
         {
           "id": "sts.chapter15.b0003",
@@ -17588,9 +17588,9 @@
             5,
             5
           ],
-          "words": 19,
-          "hash": "5dfe3d80398e",
-          "preview": "*Automated watering over living soil. The substrate everything else depends on. (FarmBot, "
+          "words": 11,
+          "hash": "50127304ee88",
+          "preview": "*The living ground beneath the work. Original illustration for this book.*"
         },
         {
           "id": "sts.chapter15.b0004",
@@ -17900,9 +17900,9 @@
             66,
             66
           ],
-          "words": 43,
-          "hash": "a54ddc2008c1",
-          "preview": "![The Cooperative Land Trust Firewall: the speculative real estate market's attempts to bu",
+          "words": 36,
+          "hash": "e02faaaa6632",
+          "preview": "![Community land trust structure: a nonprofit holds land under resale restrictions and mem",
           "image": "/book-images/ch15-clt-firewall.svg",
           "art_id": "sts.diagram.ch15-clt-firewall"
         },
@@ -18139,9 +18139,9 @@
             113,
             113
           ],
-          "words": 27,
-          "hash": "e3756e9ebe94",
-          "preview": "Growing food is hard, calorie-hungry work, and a single household working alone often burn"
+          "words": 23,
+          "hash": "5af753949e87",
+          "preview": "Growing food takes labor, tools, water, and attention across the season. A household doesn"
         },
         {
           "id": "sts.chapter15.b0139",
@@ -18150,8 +18150,8 @@
             115,
             117
           ],
-          "words": 111,
-          "hash": "214913eeb002",
+          "words": 120,
+          "hash": "cdc8927aed51",
           "preview": "- **A tool commons.** Instead of five neighbors each buying a fragile little tiller, pool "
         },
         {
@@ -19148,8 +19148,8 @@
       "id": "chapter17",
       "title": "Chapter 17: Tools of the Trade",
       "file": "19-chapter17.md",
-      "next_ordinal": 178,
-      "words": 4032,
+      "next_ordinal": 180,
+      "words": 4188,
       "tombstones": [
         "sts.chapter17.b0003",
         "sts.chapter17.b0004",
@@ -19367,7 +19367,7 @@
             27
           ],
           "words": 110,
-          "hash": "605b7f98228f",
+          "hash": "c8ced456e8c3",
           "preview": "Node 7 was the ridge repeater, the high hop that stitched the north houses into everyone e"
         },
         {
@@ -19443,9 +19443,9 @@
             41,
             41
           ],
-          "words": 122,
-          "hash": "aef9c1c146e0",
-          "preview": "Battery voltage: 12.9, healthy. Power. Halved. \"Downstream. Check the buck converter under"
+          "words": 103,
+          "hash": "f235fe7f647a",
+          "preview": "Battery voltage: 12.9, holding under load. Power. Halved. \"Downstream. Check the buck conv"
         },
         {
           "id": "sts.chapter17.b0108",
@@ -19454,9 +19454,9 @@
             43,
             43
           ],
-          "words": 102,
-          "hash": "af021f36c959",
-          "preview": "The fix took eleven minutes because he had, at least, packed like Marta taught: the SD car"
+          "words": 104,
+          "hash": "949a778ae62f",
+          "preview": "The fix took eleven minutes because he had, at least, packed like Marta taught: the servic"
         },
         {
           "id": "sts.chapter17.b0143",
@@ -19739,9 +19739,9 @@
             93,
             93
           ],
-          "words": 42,
-          "hash": "bdf22c9dc9cc",
-          "preview": "![Anatomy of a hyper-local mesh node: a waterproof Pelican case containing a 5-watt solar ",
+          "words": 36,
+          "hash": "018c20470657",
+          "preview": "![Illustrative mesh-node hardware: a solar panel, charger and protected battery matched to",
           "image": "/book-images/ch17-lora-node.svg",
           "art_id": "sts.diagram.ch17-lora-node"
         },
@@ -19763,16 +19763,27 @@
             97,
             99
           ],
-          "words": 74,
-          "hash": "5f0bb6eb940e",
+          "words": 128,
+          "hash": "8beb8afe560f",
           "preview": "- **Tiny power draw.** A node sips a fraction of a watt most of the time. A small panel an"
+        },
+        {
+          "id": "sts.chapter17.b0150",
+          "type": "paragraph",
+          "lines": [
+            101,
+            101
+          ],
+          "words": 69,
+          "hash": "8dbe9ed01cc6",
+          "preview": "Encryption isn't automatically privacy. Meshtastic's default shared channel key is public."
         },
         {
           "id": "sts.chapter17.b0119",
           "type": "paragraph",
           "lines": [
-            101,
-            101
+            103,
+            103
           ],
           "words": 63,
           "hash": "41245ada869d",
@@ -19782,8 +19793,8 @@
           "id": "sts.chapter17.b0161",
           "type": "heading",
           "lines": [
-            103,
-            103
+            105,
+            105
           ],
           "words": 5,
           "hash": "7256e90736f9",
@@ -19791,26 +19802,26 @@
           "level": 2
         },
         {
-          "id": "sts.chapter17.b0150",
+          "id": "sts.chapter17.b0145",
           "type": "paragraph",
           "lines": [
-            105,
-            105
+            107,
+            107
           ],
-          "words": 61,
-          "hash": "0e1e79063653",
-          "preview": "Most of what a small workshop or a mesh network runs is natively low-voltage DC: LED light"
+          "words": 55,
+          "hash": "8bb99d602d84",
+          "preview": "Many small loads use low-voltage DC internally: LED lights, phones, laptops, radios, small"
         },
         {
           "id": "sts.chapter17.b0162",
           "type": "figure",
           "lines": [
-            107,
-            107
+            109,
+            109
           ],
-          "words": 49,
-          "hash": "31181763f289",
-          "preview": "![The inverter trap versus the DC-native protocol: the conventional chain loses 10 to 15 p",
+          "words": 32,
+          "hash": "f68042494bf4",
+          "preview": "![Two power paths: an inverter and wall adapter convert DC to AC and back; a DC distributi",
           "image": "/book-images/ch17-dc-native.svg",
           "art_id": "sts.diagram.ch17-dc-native"
         },
@@ -19818,30 +19829,41 @@
           "id": "sts.chapter17.b0163",
           "type": "caption",
           "lines": [
-            109,
-            109
+            111,
+            111
           ],
           "words": 18,
           "hash": "b9383026cad6",
           "preview": "*The round-trip toll. When a load already wants DC, the inverter chain charges you twice t"
         },
         {
-          "id": "sts.chapter17.b0145",
+          "id": "sts.chapter17.b0178",
           "type": "paragraph",
           "lines": [
-            111,
-            111
+            113,
+            113
           ],
-          "words": 88,
-          "hash": "f70bf58ba0a3",
-          "preview": "So for small loads, a DC-native setup, panel to charge controller to battery to a fused di"
+          "words": 85,
+          "hash": "a2dade087f8c",
+          "preview": "So for suitable small loads, a DC-native setup, panel to charge controller to battery to a"
+        },
+        {
+          "id": "sts.chapter17.b0179",
+          "type": "paragraph",
+          "lines": [
+            115,
+            115
+          ],
+          "words": 57,
+          "hash": "3d481384b912",
+          "preview": "Batteries store a lot of energy and can fail dangerously if they're built or charged wrong"
         },
         {
           "id": "sts.chapter17.b0164",
           "type": "heading",
           "lines": [
-            113,
-            113
+            117,
+            117
           ],
           "words": 6,
           "hash": "de4bd213aaa4",
@@ -19852,8 +19874,8 @@
           "id": "sts.chapter17.b0146",
           "type": "paragraph",
           "lines": [
-            115,
-            115
+            119,
+            119
           ],
           "words": 25,
           "hash": "d389d7bac7a3",
@@ -19863,8 +19885,8 @@
           "id": "sts.chapter17.b0165",
           "type": "figure",
           "lines": [
-            117,
-            117
+            121,
+            121
           ],
           "words": 35,
           "hash": "1e90ba00348a",
@@ -19876,8 +19898,8 @@
           "id": "sts.chapter17.b0166",
           "type": "caption",
           "lines": [
-            119,
-            119
+            123,
+            123
           ],
           "words": 9,
           "hash": "17487086689e",
@@ -19887,8 +19909,8 @@
           "id": "sts.chapter17.b0147",
           "type": "paragraph",
           "lines": [
-            121,
-            121
+            125,
+            125
           ],
           "words": 36,
           "hash": "832847bbcaee",
@@ -19898,8 +19920,8 @@
           "id": "sts.chapter17.b0167",
           "type": "list",
           "lines": [
-            123,
-            125
+            127,
+            129
           ],
           "words": 142,
           "hash": "c2c6f613830c",
@@ -19909,8 +19931,8 @@
           "id": "sts.chapter17.b0107",
           "type": "heading",
           "lines": [
-            127,
-            127
+            131,
+            131
           ],
           "words": 5,
           "hash": "668677938bdd",
@@ -19921,8 +19943,8 @@
           "id": "sts.chapter17.b0148",
           "type": "paragraph",
           "lines": [
-            129,
-            129
+            133,
+            133
           ],
           "words": 58,
           "hash": "07eb2780e741",
@@ -19932,8 +19954,8 @@
           "id": "sts.chapter17.b0111",
           "type": "heading",
           "lines": [
-            131,
-            131
+            135,
+            135
           ],
           "words": 6,
           "hash": "55fd09cb558a",
@@ -19944,8 +19966,8 @@
           "id": "sts.chapter17.b0149",
           "type": "paragraph",
           "lines": [
-            133,
-            133
+            137,
+            137
           ],
           "words": 54,
           "hash": "2dacb63ee57e",
@@ -19955,8 +19977,8 @@
           "id": "sts.chapter17.b0122",
           "type": "paragraph",
           "lines": [
-            135,
-            135
+            139,
+            139
           ],
           "words": 103,
           "hash": "b1bea5736224",
@@ -19966,8 +19988,8 @@
           "id": "sts.chapter17.b0123",
           "type": "paragraph",
           "lines": [
-            137,
-            137
+            141,
+            141
           ],
           "words": 84,
           "hash": "3ee23a5560e2",
@@ -19977,8 +19999,8 @@
           "id": "sts.chapter17.b0129",
           "type": "heading",
           "lines": [
-            139,
-            139
+            143,
+            143
           ],
           "words": 5,
           "hash": "8e11fd5a3038",
@@ -19989,8 +20011,8 @@
           "id": "sts.chapter17.b0130",
           "type": "paragraph",
           "lines": [
-            141,
-            141
+            145,
+            145
           ],
           "words": 66,
           "hash": "ad8e774f6af4",
@@ -20000,8 +20022,8 @@
           "id": "sts.chapter17.b0131",
           "type": "paragraph",
           "lines": [
-            143,
-            143
+            147,
+            147
           ],
           "words": 50,
           "hash": "61ecc6d8fc53",
@@ -20011,8 +20033,8 @@
           "id": "sts.chapter17.b0132",
           "type": "paragraph",
           "lines": [
-            145,
-            145
+            149,
+            149
           ],
           "words": 55,
           "hash": "1ab562f5fed4",
@@ -20022,8 +20044,8 @@
           "id": "sts.chapter17.b0120",
           "type": "paragraph",
           "lines": [
-            147,
-            147
+            151,
+            151
           ],
           "words": 39,
           "hash": "304148c223ae",
@@ -20033,8 +20055,8 @@
           "id": "sts.chapter17.b0087",
           "type": "hr",
           "lines": [
-            149,
-            149
+            153,
+            153
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -20044,8 +20066,8 @@
           "id": "sts.chapter17.b0168",
           "type": "heading",
           "lines": [
-            151,
-            151
+            155,
+            155
           ],
           "words": 4,
           "hash": "2aab316ed3e9",
@@ -20056,8 +20078,8 @@
           "id": "sts.chapter17.b0169",
           "type": "paragraph",
           "lines": [
-            153,
-            153
+            157,
+            157
           ],
           "words": 6,
           "hash": "8fc666ddacad",
@@ -20067,19 +20089,19 @@
           "id": "sts.chapter17.b0170",
           "type": "list",
           "lines": [
-            155,
-            158
+            159,
+            162
           ],
-          "words": 143,
-          "hash": "fb70a44a0707",
-          "preview": "1. **Get a Meshtastic board.** Buy a Heltec V3 or LilyGO T-Beam for your region's band. Fl"
+          "words": 168,
+          "hash": "eadc73db2d56",
+          "preview": "1. **Set up two Meshtastic boards.** Choose supported hardware for your local band. Instal"
         },
         {
           "id": "sts.chapter17.b0171",
           "type": "paragraph",
           "lines": [
-            160,
-            160
+            164,
+            164
           ],
           "words": 5,
           "hash": "c330432d1f67",
@@ -20089,8 +20111,8 @@
           "id": "sts.chapter17.b0095",
           "type": "hr",
           "lines": [
-            162,
-            162
+            166,
+            166
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -20100,8 +20122,8 @@
           "id": "sts.chapter17.b0088",
           "type": "heading",
           "lines": [
-            164,
-            164
+            168,
+            168
           ],
           "words": 8,
           "hash": "dd489287c4a4",
@@ -20112,8 +20134,8 @@
           "id": "sts.chapter17.b0089",
           "type": "paragraph",
           "lines": [
-            166,
-            166
+            170,
+            170
           ],
           "words": 37,
           "hash": "b1246cde90e7",
@@ -20123,8 +20145,8 @@
           "id": "sts.chapter17.b0172",
           "type": "paragraph",
           "lines": [
-            168,
-            168
+            172,
+            172
           ],
           "words": 138,
           "hash": "23a6a621bba8",
@@ -20134,8 +20156,8 @@
           "id": "sts.chapter17.b0173",
           "type": "paragraph",
           "lines": [
-            170,
-            170
+            174,
+            174
           ],
           "words": 161,
           "hash": "fc41ed99fbc9",
@@ -20145,8 +20167,8 @@
           "id": "sts.chapter17.b0174",
           "type": "paragraph",
           "lines": [
-            172,
-            172
+            176,
+            176
           ],
           "words": 50,
           "hash": "51f736937d71",
@@ -20156,8 +20178,8 @@
           "id": "sts.chapter17.b0175",
           "type": "paragraph",
           "lines": [
-            174,
-            174
+            178,
+            178
           ],
           "words": 22,
           "hash": "ba07aa03a931",
@@ -20167,8 +20189,8 @@
           "id": "sts.chapter17.b0093",
           "type": "paragraph",
           "lines": [
-            176,
-            176
+            180,
+            180
           ],
           "words": 2,
           "hash": "d3f3b3e8610e",
@@ -20178,8 +20200,8 @@
           "id": "sts.chapter17.b0176",
           "type": "list",
           "lines": [
-            178,
-            180
+            182,
+            184
           ],
           "words": 153,
           "hash": "d9305ea1c00e",
@@ -20189,8 +20211,8 @@
           "id": "sts.chapter17.b0177",
           "type": "hr",
           "lines": [
-            182,
-            182
+            186,
+            186
           ],
           "words": 0,
           "hash": "ebad27de99a8",
@@ -21455,7 +21477,7 @@
       "title": "Chapter 19: The Ladder: How Money Becomes Optional",
       "file": "27-chapter19.md",
       "next_ordinal": 101,
-      "words": 3617,
+      "words": 3729,
       "tombstones": [],
       "blocks": [
         {
@@ -21481,7 +21503,7 @@
           "hash": "da9b579548c1",
           "preview": "![A ladder of nine rungs, from counting what is wasted at the bottom to keeping the market",
           "image": "/book-images/ch19-conversion-ladder.svg",
-          "art_id": null
+          "art_id": "sts.diagram.ch19-conversion-ladder"
         },
         {
           "id": "sts.chapter19.b0003",
@@ -21490,9 +21512,9 @@
             5,
             5
           ],
-          "words": 15,
-          "hash": "5361c39ce858",
-          "preview": "*The conversion, one rung at a time. The first seven have already been done somewhere.*"
+          "words": 18,
+          "hash": "c577d7d52993",
+          "preview": "*The conversion, one rung at a time. The first seven draw on programs and institutions tha"
         },
         {
           "id": "sts.chapter19.b0004",
@@ -21523,8 +21545,8 @@
             12,
             14
           ],
-          "words": 75,
-          "hash": "3dd6806138bb",
+          "words": 70,
+          "hash": "27dc030f3bf5",
           "preview": "- The rules that make survival cost money were written by people, and people can rewrite t"
         },
         {
@@ -21900,8 +21922,8 @@
             82,
             82
           ],
-          "words": 103,
-          "hash": "051dffc11fa6",
+          "words": 115,
+          "hash": "53eb8ed39c7c",
           "preview": "This isn't a revolution, and it doesn't wait for one. It doesn't need a single leader, a n"
         },
         {
@@ -22001,9 +22023,9 @@
             100,
             100
           ],
-          "words": 60,
-          "hash": "ac1c4820f0e9",
-          "preview": "**Proof it's possible.** France stopped letting large supermarkets destroy edible food in "
+          "words": 75,
+          "hash": "77da036b9a9a",
+          "preview": "**Proof it's possible.** France's 2016 law prohibited deliberately spoiling edible surplus"
         },
         {
           "id": "sts.chapter19.b0023",
@@ -22113,8 +22135,8 @@
             120,
             120
           ],
-          "words": 63,
-          "hash": "f4dcd5fc0a7e",
+          "words": 69,
+          "hash": "aa3fe3e1d3f1",
           "preview": "**Proof it's possible.** Community land trusts already do this across the country, usually"
         },
         {
@@ -22236,9 +22258,9 @@
             142,
             142
           ],
-          "words": 63,
-          "hash": "a0f068225f25",
-          "preview": "**Proof it's possible.** In 2017, New York City became the first city in the country to co"
+          "words": 103,
+          "hash": "8b5adc20e81b",
+          "preview": "**Proof it's possible.** In 2017, New York City became the first city in the country to es"
         },
         {
           "id": "sts.chapter19.b0044",
@@ -22292,8 +22314,8 @@
             152,
             152
           ],
-          "words": 111,
-          "hash": "1c4f4d62402c",
+          "words": 95,
+          "hash": "a5f4ef45d8a3",
           "preview": "**Proof it's possible.** Britain did it for medical care in 1948 (the precedent at the end"
         },
         {
@@ -22348,9 +22370,9 @@
             162,
             162
           ],
-          "words": 51,
-          "hash": "d77500b66d94",
-          "preview": "**Proof it's possible.** Every number on that board is already collected somewhere; Rung 1"
+          "words": 71,
+          "hash": "3ec20635e324",
+          "preview": "**Proof it's possible.** Rung 1 showed existing food-recovery records and a national food-"
         },
         {
           "id": "sts.chapter19.b0054",
@@ -22404,9 +22426,9 @@
             172,
             172
           ],
-          "words": 66,
-          "hash": "c5b66ffceb7f",
-          "preview": "And the floor doesn't have to stay where it starts. As robots and AI take on more of the w"
+          "words": 69,
+          "hash": "77a45a2fea59",
+          "preview": "And the floor doesn't have to stay where it starts. Where robots and AI reduce the full co"
         },
         {
           "id": "sts.chapter19.b0059",
@@ -22528,9 +22550,9 @@
             202,
             202
           ],
-          "words": 91,
-          "hash": "aa32d5e99b5d",
-          "preview": "Nothing about medicine changed that morning. The doctors, the hospitals, and the drugs wer"
+          "words": 126,
+          "hash": "402be736255f",
+          "preview": "No new medical discovery arrived that morning to make the principle possible. A new instit"
         },
         {
           "id": "sts.chapter19.b0070",
@@ -22550,9 +22572,9 @@
             206,
             206
           ],
-          "words": 31,
-          "hash": "00b8c212d91a",
-          "preview": "**The rule.** When someone says we can't afford to make a need free, ask what changed the "
+          "words": 30,
+          "hash": "502060082b8c",
+          "preview": "**The rule.** When someone says we can't afford to make a need free, ask how it became fre"
         },
         {
           "id": "sts.chapter19.b0072",
@@ -22583,7 +22605,7 @@
       "title": "Conclusion: What If It All Goes Right?",
       "file": "21-conclusion.md",
       "next_ordinal": 130,
-      "words": 2918,
+      "words": 2920,
       "tombstones": [
         "sts.conclusion.b0001",
         "sts.conclusion.b0003",
@@ -23129,9 +23151,9 @@
             88,
             88
           ],
-          "words": 50,
-          "hash": "8846d5169b1b",
-          "preview": "**The mechanism.** A compounding technology is always the worst it will ever be, today. Cr"
+          "words": 52,
+          "hash": "8be20d7f1b93",
+          "preview": "**The mechanism.** A technology's present limits don't tell you which ones will yield to f"
         },
         {
           "id": "sts.conclusion.b0124",
@@ -23287,7 +23309,7 @@
             118
           ],
           "words": 70,
-          "hash": "c16f4e6e00f7",
+          "hash": "ba063d37e897",
           "preview": "Three years. Long enough to lose the pleasure of being right about everything he feared. L"
         },
         {
@@ -23581,8 +23603,8 @@
       "id": "appendix-b",
       "title": "Appendix B: Works Cited",
       "file": "23-appendix-b.md",
-      "next_ordinal": 199,
-      "words": 6675,
+      "next_ordinal": 202,
+      "words": 7313,
       "tombstones": [
         "sts.appendix-b.b0001",
         "sts.appendix-b.b0002",
@@ -24796,9 +24818,9 @@
             218,
             218
           ],
-          "words": 9,
-          "hash": "bb06c9eb7705",
-          "preview": "## Sources for material restored or added in this edition",
+          "words": 14,
+          "hash": "c21776ddf350",
+          "preview": "## Sources for material restored or added in v0.9.0 through v0.10.0",
           "level": 2
         },
         {
@@ -24808,9 +24830,9 @@
             220,
             220
           ],
-          "words": 48,
-          "hash": "855e300b5457",
-          "preview": "Most of what follows was researched for earlier editions, cut in v0.8.0, and restored here"
+          "words": 51,
+          "hash": "36bec0d785bd",
+          "preview": "Much of what follows was researched for earlier editions, cut in v0.8.0, and restored in v"
         },
         {
           "id": "sts.appendix-b.b0173",
@@ -25036,18 +25058,18 @@
           "type": "list",
           "lines": [
             287,
-            289
+            291
           ],
-          "words": 72,
-          "hash": "6ccdda23932e",
+          "words": 185,
+          "hash": "263bc7d84322",
           "preview": "- Newsweek, [\"What is a cyberdeck: Meet Gen Z's new DIY obsession\"](https://www.newsweek.c"
         },
         {
           "id": "sts.appendix-b.b0197",
           "type": "heading",
           "lines": [
-            291,
-            291
+            293,
+            293
           ],
           "words": 6,
           "hash": "aaa7777b3981",
@@ -25058,8 +25080,8 @@
           "id": "sts.appendix-b.b0193",
           "type": "list",
           "lines": [
-            293,
-            304
+            295,
+            306
           ],
           "words": 406,
           "hash": "30d6d85badff",
@@ -25069,8 +25091,8 @@
           "id": "sts.appendix-b.b0116",
           "type": "heading",
           "lines": [
-            306,
-            306
+            308,
+            308
           ],
           "words": 4,
           "hash": "010a7f19635e",
@@ -25081,8 +25103,8 @@
           "id": "sts.appendix-b.b0117",
           "type": "paragraph",
           "lines": [
-            308,
-            308
+            310,
+            310
           ],
           "words": 55,
           "hash": "c39e6b216cd1",
@@ -25092,8 +25114,8 @@
           "id": "sts.appendix-b.b0192",
           "type": "list",
           "lines": [
-            310,
-            324
+            312,
+            326
           ],
           "words": 580,
           "hash": "588b9cc0217a",
@@ -25103,12 +25125,46 @@
           "id": "sts.appendix-b.b0198",
           "type": "list",
           "lines": [
-            326,
-            333
+            328,
+            335
           ],
           "words": 311,
           "hash": "ac5e34d04e71",
           "preview": "- **Introduction, Upton Sinclair:** *I, Candidate for Governor: And How I Got Licked* (193"
+        },
+        {
+          "id": "sts.appendix-b.b0199",
+          "type": "heading",
+          "lines": [
+            338,
+            338
+          ],
+          "words": 7,
+          "hash": "aff370bf7562",
+          "preview": "## Sources checked for v0.10.0 corrections",
+          "level": 2
+        },
+        {
+          "id": "sts.appendix-b.b0200",
+          "type": "list",
+          "lines": [
+            340,
+            347
+          ],
+          "words": 306,
+          "hash": "17099c596d02",
+          "preview": "- Gloria Mark, Victor M. González, and Justin Harris, [No Task Left Behind? Examining the "
+        },
+        {
+          "id": "sts.appendix-b.b0201",
+          "type": "list",
+          "lines": [
+            349,
+            354
+          ],
+          "words": 204,
+          "hash": "5726e6e75090",
+          "preview": "- FAO, [Labour-saving technologies and practices: draught animal power and implements](htt"
         }
       ]
     },
@@ -25476,7 +25532,7 @@
       "title": "Appendix D: The Precedent Ledger",
       "file": "25-appendix-d.md",
       "next_ordinal": 30,
-      "words": 1605,
+      "words": 1604,
       "tombstones": [
         "sts.appendix-d.b0002",
         "sts.appendix-d.b0003",
@@ -25526,7 +25582,7 @@
           "hash": "b03a749acea9",
           "preview": "![All twenty-four precedents on one page: nineteen shown on a timeline from 1750 to today,",
           "image": "/book-images/appd-precedent-timeline.svg",
-          "art_id": null
+          "art_id": "sts.diagram.appd-precedent-timeline"
         },
         {
           "id": "sts.appendix-d.b0029",
@@ -25615,8 +25671,8 @@
             52,
             75
           ],
-          "words": 432,
-          "hash": "a98693485b35",
+          "words": 431,
+          "hash": "2130f02217fe",
           "preview": "- **P-01.** \"Kids these days\" usually means power just moved toward people who don't need "
         },
         {
@@ -25694,7 +25750,7 @@
       "title": "Appendix E: The Cyberdeck",
       "file": "26-appendix-e.md",
       "next_ordinal": 75,
-      "words": 1554,
+      "words": 1683,
       "tombstones": [
         "sts.appendix-e.b0001",
         "sts.appendix-e.b0002",
@@ -25824,9 +25880,9 @@
             15,
             15
           ],
-          "words": 7,
-          "hash": "9865ec01e398",
-          "preview": "Then, in 2026, it stopped being niche."
+          "words": 8,
+          "hash": "10d23e93782f",
+          "preview": "In 2026, it began reaching a wider audience."
         },
         {
           "id": "sts.appendix-e.b0043",
@@ -26004,9 +26060,9 @@
             54,
             54
           ],
-          "words": 48,
-          "hash": "2e302b82f363",
-          "preview": "**Tier 1, the Communicator.** A Meshtastic node on a cheap Heltec or LilyGO board, flashed"
+          "words": 92,
+          "hash": "d43d91b346ce",
+          "preview": "**Tier 1, the Communicator.** A supported Meshtastic board, flashed with the firmware for "
         },
         {
           "id": "sts.appendix-e.b0063",
@@ -26060,8 +26116,8 @@
             64,
             64
           ],
-          "words": 76,
-          "hash": "0972e955fb14",
+          "words": 94,
+          "hash": "27222a1813d2",
           "preview": "First, the honest part. A deck holds your life: notes, keys, maps, your questions. A machi"
         },
         {
@@ -26082,9 +26138,9 @@
             68,
             69
           ],
-          "words": 71,
-          "hash": "2fdf44100928",
-          "preview": "- **Access.** Touching a computer or network you aren't authorized to touch is a crime in "
+          "words": 130,
+          "hash": "4e00e0a4d87b",
+          "preview": "- **Access.** Get permission before testing someone else's computer or network, and stay i"
         },
         {
           "id": "sts.appendix-e.b0070",
@@ -26127,9 +26183,9 @@
             77,
             79
           ],
-          "words": 111,
-          "hash": "cf85dfca26fa",
-          "preview": "1. **Build the Communicator this month.** One Meshtastic node, flashed from your browser, "
+          "words": 118,
+          "hash": "1429dac7e47e",
+          "preview": "1. **Test the Communicator this month.** Pair a supported node with your phone and exchang"
         },
         {
           "id": "sts.appendix-e.b0074",
@@ -26149,7 +26205,7 @@
       "title": "Appendix F: Glossary",
       "file": "28-appendix-f.md",
       "next_ordinal": 49,
-      "words": 1338,
+      "words": 1381,
       "tombstones": [],
       "blocks": [
         {
@@ -26303,9 +26359,9 @@
             27,
             27
           ],
-          "words": 23,
-          "hash": "ca4727a5c3fc",
-          "preview": "**DC-native.** Running a small solar system's loads directly on direct current, skipping t"
+          "words": 28,
+          "hash": "2f3e9921efa8",
+          "preview": "**DC-native.** Running suitable loads on direct current, avoiding an unnecessary conversio"
         },
         {
           "id": "sts.appendix-f.b0015",
@@ -26446,9 +26502,9 @@
             53,
             53
           ],
-          "words": 24,
-          "hash": "cd70472ac259",
-          "preview": "**Mesh network.** A network where every node connects to several neighbors, so damage beco"
+          "words": 36,
+          "hash": "bf0d2229f195",
+          "preview": "**Mesh network.** A network whose nodes can relay messages through one another. An alterna"
         },
         {
           "id": "sts.appendix-f.b0028",
@@ -26457,9 +26513,9 @@
             55,
             55
           ],
-          "words": 29,
-          "hash": "3504a8b679f1",
-          "preview": "**Model collapse.** What happens when AI models are trained on the output of earlier model"
+          "words": 33,
+          "hash": "4ecd7c5aa1c8",
+          "preview": "**Model collapse.** A failure mode in repeated training on generated data: less common pat"
         },
         {
           "id": "sts.appendix-f.b0029",
@@ -26512,9 +26568,9 @@
             65,
             65
           ],
-          "words": 25,
-          "hash": "63d188281c34",
-          "preview": "**Open weights.** An AI model whose trained parameters are published, so anyone can downlo"
+          "words": 40,
+          "hash": "abe487293fac",
+          "preview": "**Open weights.** A model whose trained parameters are available to download, subject to i"
         },
         {
           "id": "sts.appendix-f.b0034",
@@ -26655,9 +26711,9 @@
             91,
             91
           ],
-          "words": 38,
-          "hash": "a46113be08ff",
-          "preview": "**Transformer.** The neural-network design introduced by Google researchers in 2017, in \"A"
+          "words": 45,
+          "hash": "e00faeabd752",
+          "preview": "**Transformer.** A neural-network architecture introduced in the 2017 paper \"Attention Is "
         },
         {
           "id": "sts.appendix-f.b0047",
@@ -26688,7 +26744,7 @@
       "title": "Appendix G: Your First Year",
       "file": "29-appendix-g.md",
       "next_ordinal": 28,
-      "words": 1222,
+      "words": 1221,
       "tombstones": [],
       "blocks": [
         {
@@ -26710,9 +26766,9 @@
             3,
             3
           ],
-          "words": 77,
-          "hash": "0bc703cc725e",
-          "preview": "*Every precedent in this book ends with three practices, seventy-two in all. Here they are"
+          "words": 69,
+          "hash": "36ca2814a377",
+          "preview": "*The twenty-four precedents contain seventy-two practices. This year plan selects and adap"
         },
         {
           "id": "sts.appendix-g.b0003",
@@ -26986,8 +27042,8 @@
             82,
             85
           ],
-          "words": 89,
-          "hash": "1eb950b78451",
+          "words": 93,
+          "hash": "ecd9ed53c908",
           "preview": "1. Date-stamp your reasoning: one paragraph for each big decision this year, what you knew"
         },
         {
@@ -26997,9 +27053,9 @@
             87,
             87
           ],
-          "words": 15,
-          "hash": "f1227c5d951d",
-          "preview": "Then start again. The second year is easier, because you won't be doing it alone."
+          "words": 18,
+          "hash": "ecb5cb09b2d8",
+          "preview": "Then review what worked, who joined you, and what you can sustain. Carry that into the sec"
         }
       ]
     },
@@ -27008,7 +27064,7 @@
       "title": "Appendix H: Talk About It",
       "file": "30-appendix-h.md",
       "next_ordinal": 16,
-      "words": 1008,
+      "words": 1009,
       "tombstones": [],
       "blocks": [
         {
@@ -27099,8 +27155,8 @@
             20,
             23
           ],
-          "words": 106,
-          "hash": "270af21202ed",
+          "words": 107,
+          "hash": "ab0c4701871c",
           "preview": "1. Chapter 7 says \"the Entitled\" and \"the Ready\" are mindsets, not kinds of people, and mo"
         },
         {

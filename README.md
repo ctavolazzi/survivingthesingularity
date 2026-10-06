@@ -3,13 +3,15 @@
 > A field manual for staying agentic as AI rewrites work, money, medicine, and meaning.
 
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
-**Status:** Open draft. Book ships when it ships. Site updates as the world does.
-
-**Publication design, September 22, 2026:** v0.8.2 now has a 6 x 9 illustrated
-reading edition, a grayscale print interior, original SVG artwork, packaged
-fonts, and documented visual and rights reviews. Start with the
-[design report](docs/publication/DESIGN-REPORT.md) or the
+**Manuscript edition:** v0.10.0, finalized September 27, 2026. The source has
+35 sections: Chapters 0 through 19, front matter, three part dividers, the
+Conclusion, and Appendices A through H. See the
+[finalization report](docs/v0.10.0/EDITION-NOTES.md) and
 [production instructions](publication/README.md).
+
+The repository's public-download manifest still records v0.7.5. This local
+edition has not been deployed or published. The finalized source and generated
+reading, print, and EPUB files belong to the v0.10.0 worktree.
 
 ---
 
@@ -198,7 +200,7 @@ static/
 
 ### Book content: the single source of truth
 
-**The book is the 30 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
+**The book is the 35 Markdown files in [`src/lib/data/book/`](src/lib/data/book/), and [`book.json`](src/lib/data/book/book.json) decides which files are the book and in what order.**
 
 Both halves are required:
 

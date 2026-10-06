@@ -1,3 +1,11 @@
+> Historical audit: this document describes the v0.8.2 selection on September 22,
+> 2026. For the current v0.10.0 edition, use `asset-rights.json` and
+> [the current quotation and cover inventory](QUOTATIONS-v0.10.0.md). The new
+> source has 35 sections and 23 opening epigraphs. Four unresolved interior
+> image uses have original replacements; the original cover is retained only
+> for the documented local handoff. Historical counts and dispositions below
+> are evidence of that earlier review, not current publication clearance.
+
 # Publication rights audit: v0.8.2
 
 Checked 22 September 2026. Scope is the 35 unique images referenced by the current 30-section `src/lib/data/book/book.json` manuscript plus its existing `scripts/book-cover.png`. This agent changed neither manuscript nor original images. New publication SVGs are outside this inherited-image inventory and need their own creation record.

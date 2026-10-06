@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="23.6 20.9 815.6 466.9" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 20.9 790.9 466.9" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
   
   <text x="40" y="52" font-size="21" letter-spacing="4.2" fill="#334155">TRUST NETWORK TOPOLOGIES</text>
   <line x1="40" y1="66" x2="380" y2="66" stroke="#cbd5e1" stroke-width="2"/>
@@ -8,7 +8,7 @@
 
   
   <text x="230" y="110" font-size="19.6" font-weight="600" fill="#475569" text-anchor="middle">STAR TOPOLOGY</text>
-  <text x="230" y="130" font-size="16.8" fill="#475569" text-anchor="middle">(centralized · fragile)</text>
+  <text x="230" y="130" font-size="16.8" fill="#475569" text-anchor="middle">(one hub)</text>
 
   
   <g stroke="#64748b" stroke-width="2">
@@ -36,11 +36,11 @@
     <circle cx="330" cy="330" r="12"/>
     <circle cx="230" cy="368" r="12"/>
   </g>
-  <text x="230" y="416" font-size="16.8" fill="#475569" text-anchor="middle">hub dies, everything dies</text>
+  <text x="230" y="416" font-size="16.8" fill="#475569" text-anchor="middle">hub loss breaks these links</text>
 
   
   <text x="640" y="110" font-size="19.6" font-weight="600" fill="#b45309" text-anchor="middle">MESH TOPOLOGY</text>
-  <text x="640" y="130" font-size="16.8" fill="#b45309" text-anchor="middle">(decentralized · robust)</text>
+  <text x="640" y="130" font-size="16.8" fill="#b45309" text-anchor="middle">(alternate paths)</text>
 
   <g stroke="#2563eb" stroke-width="1.8" opacity="0.85">
     <line x1="560" y1="200" x2="720" y2="200"/>
@@ -65,7 +65,7 @@
     <circle cx="580" cy="368" r="13"/>
     <circle cx="700" cy="368" r="13"/>
   </g>
-  <text x="640" y="416" font-size="16.8" fill="#334155" text-anchor="middle">every node routes; damage is a detour</text>
+  <text x="640" y="416" font-size="16.8" fill="#334155" text-anchor="middle">reroute if a working path remains</text>
 
-  <text x="430" y="472" font-size="16.8" fill="#475569" text-anchor="middle">keep each circle under Dunbar's ~150 · federate circles instead of growing one</text>
+  <text x="430" y="472" font-size="16.8" fill="#475569" text-anchor="middle">relationship limits vary · maintain the circle and its connections</text>
 </svg>

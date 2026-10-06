@@ -47,15 +47,15 @@
       "print_sha256": "a19503fdfccac7440e18d168988d33bc3e1e70259d314dcc0c2bf2165c763628"
     },
     "ch08-cognitive-extraction.svg": {
-      "labels": 12,
+      "labels": 13,
       "marks": 8,
-      "min_base": 13,
-      "min_final": 13.65,
-      "median_scale": 1.22,
+      "min_base": 12,
+      "min_final": 16.8,
+      "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 829.9,
-      "source_sha256": "ab5bbd210730e49adb8fc8b60a540534a2f049b8af815144a7366fce2282e0f8",
-      "print_sha256": "2003c8025df47be2f8d76a3e1c55922001f9cd74df3429dd7b28981214978859"
+      "crop_width": 828.3,
+      "source_sha256": "e0287445fc17db0472130bd6eb2930ea39ca7f12f4ac2bc3f9e5dd4cf7c22ac1",
+      "print_sha256": "ac53f49d3b0c6a7049952e0831e666681e32b9563e09acba43a0c0832882ffff"
     },
     "ch08-firewall-pipeline.svg": {
       "labels": 23,
@@ -64,20 +64,20 @@
       "min_final": 13.75,
       "median_scale": 1.35,
       "frame_width": 860,
-      "crop_width": 810,
-      "source_sha256": "2718de7f48a26a554f4abff49d8177f94478d1092785b7864015082d689fe865",
-      "print_sha256": "451cba4cdd338ac2c083e64ab4ae2ddd7b127faf78eb653df93b5b380e40ef24"
+      "crop_width": 804,
+      "source_sha256": "cf4dac67ba01b7032b7d259fb82f5922b428742567f0f21c476c5be155854443",
+      "print_sha256": "994b7428f9c03f98911329719f12b27b5b0654fb871a3233ee65731aeb4abf01"
     },
     "ch08-focus-recovery.svg": {
       "labels": 10,
       "marks": 13,
       "min_base": 12,
-      "min_final": 12,
+      "min_final": 13.2,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 786.4,
-      "source_sha256": "013b0e6aaeb0d5142680d71f3bc81a7bc1f15eb59bde692ab6fefb2ad5255360",
-      "print_sha256": "974e0c0da35f55c498c87ea506efd4264ba890e3ed56b9758696521429d248be"
+      "crop_width": 784,
+      "source_sha256": "c05a8bdaee279212a4acd89910fcd320d2d0cdbebb6273aa6bc2cef0047f0e2d",
+      "print_sha256": "c63ac8f969c65ee6e4cbed0293e6e0eec887d349f24882098cb5d94e1b43a828"
     },
     "ch08-info-architectures.svg": {
       "labels": 24,
@@ -97,9 +97,9 @@
       "min_final": 12,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 815.6,
-      "source_sha256": "535d201b3e6bd4712d5effc5a28239f6e906925bb69bcb0972646d73a3813b5e",
-      "print_sha256": "db06ffdd4e51d169787b8de1bda107a0c7db91a2a8965d62b703c52b259fc6d8"
+      "crop_width": 790.9,
+      "source_sha256": "31d1765d859c0be72fb125d1f8d5ffc7e34906f8e4dc97c8f58b333930c41c4d",
+      "print_sha256": "c0fe43039838ec17a9a0d016f012a549dbb714b7e9fedf9598ce503284ae2d8f"
     },
     "ch09-cnc-bed.svg": {
       "labels": 16,
@@ -135,48 +135,48 @@
       "print_sha256": "7407520553fec4e64074200abe9545191f2f02c068b8112e7e80a02363159410"
     },
     "ch09-region-ring.svg": {
-      "labels": 15,
-      "marks": 11,
-      "min_base": 11,
-      "min_final": 11,
-      "median_scale": 1.3,
-      "frame_width": 900,
-      "crop_width": 855.6,
-      "source_sha256": "09d43573ed96b81b071133c80276f6822687b57bf10d0983c1f0af094688b66c",
-      "print_sha256": "7e6c55c5ad1b9b6f79513346ec1c643b032b5e66d7eaab4d3b63b3c1855d2012"
+      "labels": 23,
+      "marks": 10,
+      "min_base": 12,
+      "min_final": 13.8,
+      "median_scale": 1.2,
+      "frame_width": 480,
+      "crop_width": 456,
+      "source_sha256": "c8b7522f33f35f5ccef569e2df5b525a87f08d7be0ea32baef2e474edc8f2ea7",
+      "print_sha256": "320d35205a8befcc565107052135f5ca038ff804983322b58492fa1e12bf51ae"
     },
     "ch10-algorithm-unlock.svg": {
       "labels": 20,
       "marks": 8,
       "min_base": 11,
-      "min_final": 12.1,
-      "median_scale": 1.25,
+      "min_final": 12.65,
+      "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 851.8,
-      "source_sha256": "00b0aea8754987985390d6f25ede67b9f8f5a547ed9583f3dca442260a42393b",
-      "print_sha256": "f4321bac330e774c0f54bc684baf7ea96ff076daf6fb96507e4baa490071ea9d"
+      "crop_width": 804,
+      "source_sha256": "7de6330b20cff5183b2deb05fb2adc12e5da302466d5984e4e42db403d171ac7",
+      "print_sha256": "75fcd31da5c067615219fd92550475f45da73d31dfb2c30fd93add08dc32ec66"
     },
     "ch10-model-collapse.svg": {
       "labels": 12,
       "marks": 11,
       "min_base": 11,
-      "min_final": 11.55,
-      "median_scale": 1.31,
+      "min_final": 12.1,
+      "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 864.4,
-      "source_sha256": "68fbf60222f698940d433b6d89252d6b1d603d0c3a1f114ee4edb345f5282ecd",
-      "print_sha256": "d6e3d2fe4284b55c5c28278115d4bb0b039ce504c16fa401449f97a6c790a6cd"
+      "crop_width": 802.9,
+      "source_sha256": "d87296dc91bd3210f42ed1c2420b5d2015d4f6b40b838119447a9fc6ac3e95d9",
+      "print_sha256": "7a10550c12a0ad027af34a474c51cbc4754b2f23441f61d12c298431950c4b7a"
     },
     "ch11-cooling-loop.svg": {
-      "labels": 16,
-      "marks": 13,
-      "min_base": 10,
-      "min_final": 10,
-      "median_scale": 1.31,
-      "frame_width": 860,
-      "crop_width": 869,
-      "source_sha256": "ba4d64b02e409f9e284a1e3ae2dab07d98afa4c996527cb3d903f22fe592e609",
-      "print_sha256": "6d0c76c3d4f7648f3e60dc3646d4954ae54386a37c531a738a810eb50189ec0c"
+      "labels": 21,
+      "marks": 11,
+      "min_base": 12,
+      "min_final": 14.4,
+      "median_scale": 1.3,
+      "frame_width": 480,
+      "crop_width": 460,
+      "source_sha256": "bc902f7a714104dad7eb69cfdc84d7d044a29c42f050ff39ec5a20c84e697c90",
+      "print_sha256": "28da9c4b242abe4e520e825523aea477a89fd5ade13109103d522a80df8b8a61"
     },
     "ch12-csa-network.svg": {
       "labels": 14,
@@ -207,9 +207,9 @@
       "min_final": 12,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 867.4,
-      "source_sha256": "ea31edd7a1dca8b2535c4289ac963db73606a4daa1b92b746315a4f5b58dd541",
-      "print_sha256": "f0d20d25ebeb1db3f279e6a2e680e9498ef8830c5840aa22858bb59d0878974d"
+      "crop_width": 825.1,
+      "source_sha256": "b8c4142932664be9ff01d71b7262dc1742a237bad3bd3689b2bcaae3765235c8",
+      "print_sha256": "d4bd627ae99fc11cd580e040dede16ab7308767561491b578254b30a2521e244"
     },
     "ch14-logistic-shockwave.svg": {
       "labels": 16,
@@ -226,23 +226,23 @@
       "labels": 14,
       "marks": 36,
       "min_base": 12,
-      "min_final": 12.6,
+      "min_final": 16.8,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 828.7,
-      "source_sha256": "05b0d9a3d18c62c3cca8672ba9cda5879922a71d828383864ff6e412714492d4",
-      "print_sha256": "15baad552d8104534bbf8b78452156cf89aa37911f5e2a5e207beee25fe8f9f4"
+      "crop_width": 780.8,
+      "source_sha256": "bdc256dca7c9ba6013c46c6c075e65a07db8e30f31370c40e25781f4475df9e0",
+      "print_sha256": "ab4c91b3617f49a77882050d571438f4aa4038aa61fe37658d5c755e2da1abd5"
     },
     "ch15-clt-firewall.svg": {
       "labels": 14,
       "marks": 7,
       "min_base": 12,
-      "min_final": 12.6,
+      "min_final": 13.2,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 707.1,
-      "source_sha256": "9ad58b1cfd56ea0bbe9d8e26377573b3f0a1959667e51cdbc1b8031329f5592a",
-      "print_sha256": "706415eed931673c62c20def003b63bd139325307dfeabc30ba635f69fb13683"
+      "crop_width": 783.2,
+      "source_sha256": "e1070504a9827eedb4360a905e5b3085458a0e309d1698b7462db25cdd3fd7d8",
+      "print_sha256": "e8a227fd2bb3ba7e1a36017bc120cf9b8f40a21372146bec60224ffd9375283f"
     },
     "ch15-soil-food-web.svg": {
       "labels": 13,
@@ -281,34 +281,34 @@
       "labels": 25,
       "marks": 19,
       "min_base": 11,
-      "min_final": 12.65,
+      "min_final": 14.85,
       "median_scale": 1.4,
       "frame_width": 860,
-      "crop_width": 788.2,
-      "source_sha256": "267ac42cdd2bfb729d4aff795937408179ee8c48ec317927b9ee9651641895a9",
-      "print_sha256": "108f56517cf09c1299543fa8a01389a06b3715268903c7103d627aa2914f1ff1"
+      "crop_width": 791.9,
+      "source_sha256": "bc89bceeb18d7a325296b8e15a7ca888b713dacaa0299dffd76d923b39a72fb5",
+      "print_sha256": "8802bb645b1f1f822873d169a459c99768207682d63fc4259c9c9cf8596ef415"
     },
     "ch17-fab-lab.svg": {
-      "labels": 19,
-      "marks": 13,
-      "min_base": 11,
-      "min_final": 11,
-      "median_scale": 1.3,
-      "frame_width": 860,
-      "crop_width": 859.6,
-      "source_sha256": "906aea64dbe8104282dc7344fb24d53ad971be6081190972ed5b412a11671963",
-      "print_sha256": "93e4cbf1a6958266acca06c76bcbbf9e9057d59d26af4a97fa52d633e0bfb6db"
+      "labels": 31,
+      "marks": 12,
+      "min_base": 12,
+      "min_final": 14.4,
+      "median_scale": 1.2,
+      "frame_width": 480,
+      "crop_width": 456,
+      "source_sha256": "b23840d58606e30f9fd7220ae8779b43a31db870eed478df69eb4d3aa0abf507",
+      "print_sha256": "082ea69a030c6768207f3534dcbae1447cb578216460ed51f656c336f4e025f3"
     },
     "ch17-lora-node.svg": {
-      "labels": 15,
-      "marks": 24,
-      "min_base": 11,
-      "min_final": 11,
-      "median_scale": 1.27,
-      "frame_width": 860,
-      "crop_width": 799.3,
-      "source_sha256": "9a213488c366cf55f6106f792e01eb0f7510ac3cf7a3708bd479cec1d3d1c644",
-      "print_sha256": "ec0e00e7e50cb90613f89cc9f5f2fad69e9a36a920b225618a44aa71df50cd0f"
+      "labels": 26,
+      "marks": 12,
+      "min_base": 12,
+      "min_final": 13.2,
+      "median_scale": 1.3,
+      "frame_width": 480,
+      "crop_width": 456,
+      "source_sha256": "bd70722bddd9f5ef968a272d7791475ade1418a9eeacf3a7b0649f242832935d",
+      "print_sha256": "58be532888edfa48a34306d2bc5912f4ca416a1e2f9ce295685b359344c86833"
     },
     "ch18-social-contract.svg": {
       "labels": 18,
@@ -329,19 +329,19 @@
       "median_scale": 1.3,
       "frame_width": 900,
       "crop_width": 844,
-      "source_sha256": "c53eefe7101662861edd090d274c2c437b54ad0da7a8d4ffcf8e7adea62ad980",
-      "print_sha256": "f5fe5cfd295ddd49e4b13a342ec1c579d1abdce24678509638680ce46e0e7658"
+      "source_sha256": "15c481de2a9b72e8c3093c3fa39cf067055939d8fe39c02198eb203d4e66e130",
+      "print_sha256": "546042a9b016d758a71610a2e201d17cf27f10f1aedd5cd1dd9ca0f1f020af19"
     },
     "intro-food-insecurity.svg": {
       "labels": 24,
-      "marks": 12,
-      "min_base": 10.5,
-      "min_final": 11,
-      "median_scale": 1.09,
-      "frame_width": 900,
-      "crop_width": 861.9,
-      "source_sha256": "85d96f3a9e9b03c97c91fc8758c3ee8bb8740c0e1e858acd6736df8f17445dd6",
-      "print_sha256": "204d85209e57c4c81a3c55df03df0aa3af9b1aefa4cc9bdc9824f079d73c3e0d"
+      "marks": 10,
+      "min_base": 12,
+      "min_final": 15.6,
+      "median_scale": 1.4,
+      "frame_width": 480,
+      "crop_width": 470.4,
+      "source_sha256": "4acc1e68efec7039ed606e117e4b20c7f9a38dedef0755d98321b1cb9d71df6e",
+      "print_sha256": "d82b7a6216aabedb76b24622b17c28a67bc3010b594e6edd023f91a74d517019"
     },
     "intro-nine-stages.svg": {
       "labels": 28,
@@ -353,7 +353,62 @@
       "crop_width": 844,
       "source_sha256": "c4fd78d4313e9bd4a52432e82001643657c39ed2b317d6a950e48529f3cab359",
       "print_sha256": "028d3c714b950b2b122f6b9fce9e3117eb9267358de58c498b760fd774e86b49"
+    },
+    "original-04-seed-and-root.svg": {
+      "labels": 0,
+      "marks": 14,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 298,
+      "source_sha256": "c1397545a7b8f6ed015cc8ce289a06b53e526799d517d164c477147305acb875",
+      "print_sha256": "c9a29aa4445931ed2cf73cf35a152407b961a27b10640fd0b618a7d2401f205f"
+    },
+    "original-07-pamphlet-and-thread.svg": {
+      "labels": 0,
+      "marks": 9,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 298,
+      "source_sha256": "aca87a52ba0cb81a6c2fff5909c151d076e5567a271244facfcad0b866292fbc",
+      "print_sha256": "d233fbc705edb7f39db54f166d166fbb356f0ee6d1c4cb60326ccc0d4c65f390"
+    },
+    "original-09-repair-tools.svg": {
+      "labels": 0,
+      "marks": 12,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 289.1,
+      "source_sha256": "bb29b16942030a47e726d3dbb754ae8dbe3c748ddfb193338f73a3cb37744596",
+      "print_sha256": "b2cd6bb5fe1bd76189b506dc2f76f51afdbe7a2907e7f6ae9fb21cf983d5f047"
+    },
+    "original-11-soil-profile.svg": {
+      "labels": 0,
+      "marks": 18,
+      "min_base": null,
+      "min_final": null,
+      "median_scale": null,
+      "frame_width": 400,
+      "crop_width": 309,
+      "source_sha256": "2275cc3278dcc718c7a7a2b4f833b98b47b10c95a5b90003d470e5356b15e083",
+      "print_sha256": "48c19f48c34060b5cdf5287beafb0e010e87a3f288d5d47c18efa3c1b69d300b"
+    },
+    "coop-cast.svg": {
+      "labels": 13,
+      "min_base": 13.5,
+      "min_final": 13.5,
+      "median_scale": 1,
+      "frame_width": 480,
+      "crop_width": 480,
+      "source_sha256": "ebf1693b40674a670ab06e3772ec84de96cbfc0e03ac9d61b70bc7f6f402b68d",
+      "print_sha256": "1f8b5874284680749ca45b89e517b01ce890b63497e83075828aaae5c98657bb",
+      "generator": "docs/v0.10.0/cast_plate.py"
     }
   },
-  "count": 32
+  "count": 37
 }

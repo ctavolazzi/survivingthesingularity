@@ -110,7 +110,8 @@ assert outside((-5,40,30,20),576,864)
 assert '#intentionally-missing' not in ids
 report={
     'pages':len(pages),'page_size_points':[list(s) for s in sizes],
-    'source_sections_unchanged':sum(unchanged.values()),
+    'source_sections_unchanged':sum(ok for name,ok in unchanged.items() if name != 'book.json'),
+    'manifest_unchanged':unchanged.get('book.json', False),
     'sections_present':len(sections_present),'source_text_blocks_checked':len(blocks),
     'missing_text_blocks':missing,'documented_caption_exceptions':exceptions,
     'text_outside_page':overflow,'fonts_embedded':fonts,'broken_internal_links':broken_links,

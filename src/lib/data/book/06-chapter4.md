@@ -90,9 +90,9 @@ In 2020 the astronomer David Kipping ran the odds with more care, and his result
 
 > $$P(\text{base reality} | \text{simulations exist}) = 1 / (N_{\text{sim}} + 1)$$
 
-One real world, $N_{\text{sim}}$ simulated ones, and you're equally likely to be in any of them. *If.*
+One base reality, $N_{\text{sim}}$ simulated ones, all weighted equally in this simplified model. Those are assumptions, not a census of universes. *If.*
 
-But here's the part everybody skips: we've never built one. Kipping calls ours a "nulliparous" reality, one that hasn't yet given birth to a single simulated universe. Weigh the two hypotheses evenly, as the evidence currently allows, and the odds that we're living in a simulation come out just under fifty percent. A coin flip, leaning slightly toward real.
+But here's the part everybody skips: we've never built one. Kipping calls ours a "nulliparous" reality, one that hasn't yet given birth to such a simulation. Under his choice to give the two hypotheses equal prior weight, the calculated probability that we're simulated stays below fifty percent, approaching that limit as the hypothetical number of simulations grows. The result depends on those assumptions. It isn't a measured probability that our world is artificial. [Kipping, author preprint](https://arxiv.org/abs/2008.12254)
 
 And there's a twist in the tail. If we ever do build convincing simulations of conscious beings ourselves, we stop being nulliparous, and on Kipping's reasoning the odds swing hard toward our being simulated too. The machine that feeds you might one day hand you the strangest argument you've ever heard about where you live.
 

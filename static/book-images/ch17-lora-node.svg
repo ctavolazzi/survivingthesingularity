@@ -1,77 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
-  <defs>
-    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#3b82f6"/>
-    </marker>
-    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0L10,5L0,10z" fill="#f59e0b"/>
-    </marker>
-  </defs>
-
-  <rect x="1" y="1" width="858" height="618" rx="12" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-  <text x="40" y="52" font-size="15" letter-spacing="3" fill="#94a3b8">ANATOMY OF AN INDEPENDENT MESH NODE</text>
-  <line x1="40" y1="66" x2="470" y2="66" stroke="#1e293b" stroke-width="2"/>
-
-  <!-- pelican box -->
-  <rect x="150" y="110" width="420" height="450" rx="16" fill="#0f172a" stroke="#94a3b8" stroke-width="3"/>
-  <rect x="150" y="110" width="420" height="34" rx="16" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
-  <circle cx="196" cy="127" r="6" fill="#475569"/>
-  <circle cx="524" cy="127" r="6" fill="#475569"/>
-  <text x="360" y="132" font-size="12" fill="#94a3b8" text-anchor="middle">WATERPROOF PELICAN / AMMO BOX</text>
-
-  <!-- solar panel -->
-  <rect x="200" y="170" width="320" height="86" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
-  <g stroke="#3b82f6" stroke-width="1" opacity="0.6">
-    <line x1="264" y1="172" x2="264" y2="254"/>
-    <line x1="328" y1="172" x2="328" y2="254"/>
-    <line x1="392" y1="172" x2="392" y2="254"/>
-    <line x1="456" y1="172" x2="456" y2="254"/>
-    <line x1="202" y1="213" x2="518" y2="213"/>
-  </g>
-  <rect x="276" y="188" width="168" height="22" rx="3" fill="#1e293b"/>
-  <text x="360" y="204" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">5W SOLAR PV PANEL</text>
-  <rect x="244" y="228" width="232" height="17" rx="3" fill="#1e293b"/>
-  <text x="360" y="240" font-size="11" fill="#94a3b8" text-anchor="middle">paperback-sized, roof of the case</text>
-
-  <line x1="360" y1="256" x2="360" y2="296" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="378" y="282" font-size="11" fill="#64748b">5V charge regulator</text>
-
-  <!-- batteries -->
-  <rect x="200" y="302" width="320" height="80" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
-  <rect x="226" y="322" width="120" height="40" rx="20" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
-  <rect x="346" y="336" width="8" height="12" fill="#f59e0b"/>
-  <rect x="380" y="322" width="120" height="40" rx="20" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
-  <rect x="500" y="336" width="8" height="12" fill="#f59e0b"/>
-  <text x="286" y="347" font-size="11" fill="#f59e0b" text-anchor="middle">18650</text>
-  <text x="440" y="347" font-size="11" fill="#f59e0b" text-anchor="middle">18650</text>
-
-  <line x1="360" y1="382" x2="360" y2="422" stroke="#3b82f6" stroke-width="2" marker-end="url(#ab)"/>
-  <text x="378" y="408" font-size="11" fill="#64748b">salvaged laptop cells</text>
-
-  <!-- esp32 -->
-  <rect x="200" y="428" width="320" height="86" rx="8" fill="#020617" stroke="#f59e0b" stroke-width="2.5"/>
-  <g fill="#f59e0b" opacity="0.8">
-    <rect x="212" y="440" width="6" height="10"/><rect x="212" y="456" width="6" height="10"/>
-    <rect x="212" y="472" width="6" height="10"/><rect x="212" y="488" width="6" height="10"/>
-    <rect x="502" y="440" width="6" height="10"/><rect x="502" y="456" width="6" height="10"/>
-    <rect x="502" y="472" width="6" height="10"/><rect x="502" y="488" width="6" height="10"/>
-  </g>
-  <text x="360" y="466" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">ESP32 / HELTEC LORA CHIP</text>
-  <text x="360" y="492" font-size="11" fill="#94a3b8" text-anchor="middle">Meshtastic firmware · under 0.1 W idle</text>
-
-  <!-- antenna out -->
-  <line x1="570" y1="470" x2="660" y2="470" stroke="#f59e0b" stroke-width="2.5"/>
-  <line x1="660" y1="470" x2="660" y2="240" stroke="#f59e0b" stroke-width="2.5"/>
-  <circle cx="660" cy="228" r="6" fill="#f59e0b"/>
-  <path d="M 640 210 a 28 28 0 0 1 40 0" fill="none" stroke="#f59e0b" stroke-width="2"/>
-  <path d="M 628 196 a 45 45 0 0 1 64 0" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
-  <path d="M 616 182 a 62 62 0 0 1 88 0" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.35"/>
-  <text x="672" y="300" font-size="11" fill="#94a3b8">tuned high-gain</text>
-  <text x="672" y="318" font-size="11" fill="#94a3b8">antenna, elevated</text>
-
-  <line x1="700" y1="228" x2="790" y2="228" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#aa)"/>
-  <text x="746" y="212" font-size="11" fill="#f59e0b" text-anchor="middle">915 / 868 MHz</text>
-  <text x="746" y="252" font-size="11" fill="#94a3b8" text-anchor="middle">to next node</text>
-
-  <text x="430" y="596" font-size="12" fill="#64748b" text-anchor="middle">license-free ISM bands · runs forever on sun · thirty-mile reach with line-of-sight</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 676" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace" role="img" aria-label="AN INDEPENDENT MESH NODE">
+<defs><marker id="amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#f59e0b"/></marker><marker id="blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#3b82f6"/></marker><marker id="red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#ef4444"/></marker></defs>
+<rect x="1" y="1" width="478" height="674" rx="8" fill="#020617" stroke="#334155" stroke-width="1.5"/>
+<text x="24" y="34" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">AN INDEPENDENT MESH NODE</text>
+<line x1="24" y1="46" x2="456" y2="46" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="24" y="69" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">The power path and radio link.</text>
+<text x="24" y="88" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">A component map, not assembly instructions.</text>
+<rect x="24" y="110" width="320" height="420" rx="8" fill="#0f172a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="184" y="135" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">WATERPROOF PELICAN</text>
+<text x="184" y="154" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">/ AMMO BOX</text>
+<rect x="44" y="168" width="280" height="79" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="184.0" y="194" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="600">5W SOLAR PV PANEL*</text>
+<text x="184.0" y="221" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">Paperback-sized,</text>
+<text x="184.0" y="239" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">mounted on the case</text>
+<path d="M184 247 V274" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#blue)"/>
+<text x="203" y="267" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">Matched charger*</text>
+<rect x="44" y="281" width="280" height="75" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="184.0" y="307" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="600">PROTECTED BATTERY PACK*</text>
+<text x="184.0" y="334" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">Matched cells and protection</text>
+<path d="M184 356 V386" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#blue)"/>
+<rect x="44" y="393" width="280" height="114" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="184.0" y="419" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="600">ESP32 / HELTEC</text>
+<text x="184.0" y="439" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="600">LORA BOARD*</text>
+<text x="184.0" y="466" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">Meshtastic firmware;</text>
+<text x="184.0" y="484" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">idle draw varies by setup</text>
+<path d="M324 451 H372 V278" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="372" cy="270" r="5" fill="#f59e0b"/>
+<path d="M357 257 Q372 239 387 257" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M348 248 Q372 221 396 248" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="397" y="187" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">TUNED,</text>
+<text x="397" y="206" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">ELEVATED</text>
+<text x="397" y="225" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="400">ANTENNA</text>
+<path d="M390 270 H449" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#amber)" stroke-dasharray="5 5"/>
+<text x="384" y="309" font-size="12" fill="#f59e0b" text-anchor="start" font-weight="400">TO NEXT</text>
+<text x="384" y="328" font-size="12" fill="#f59e0b" text-anchor="start" font-weight="400">NODE</text>
+<text x="24" y="557" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">*Illustrative hardware. Use protected cells</text>
+<text x="24" y="576" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">and a charger matched to the battery pack.</text>
+<text x="24" y="595" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">Match 915 / 868 MHz hardware, firmware</text>
+<text x="24" y="614" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">and regional settings to local radio rules.</text>
+<text x="24" y="633" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">Reach depends on terrain and line of sight.</text>
+<text x="24" y="652" font-size="12" fill="#94a3b8" text-anchor="start" font-weight="400">Solar runtime depends on weather and load.</text>
 </svg>

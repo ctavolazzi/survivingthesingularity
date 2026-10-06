@@ -78,7 +78,7 @@ Own the dirt. Build the systems. Be the one who's prepared, rather than the one 
 
 A standard suburban house with a thirty-year mortgage, a manicured lawn, and a smart lock a bank's foreclosure script can disable isn't the only way to have a home. For a lot of people it's a financial cage: you spend the best decades of your life servicing debt to be allowed to live somewhere. The shouse is one attempt at a different deal.
 
-Shipping containers are the structural Lego of the moment: cheap, weather-sealed, and built to take brutal loads at their corners. But a single container, eight feet wide on the outside, is under seven feet inside once it's framed and insulated, which is less a home than a very aesthetic coffin. The co-op's answer was the double-wide: two 40-foot high-cube containers side by side, the shared inner walls cut away, making one sixteen-by-forty-foot room, 640 square feet.
+Shipping containers are the structural Lego of the moment: weather-sealed and built to take brutal loads at their corners. But a single container, eight feet wide on the outside, can end up under seven feet inside once it's framed and insulated, which is less a home than a very aesthetic coffin. The co-op's answer was the double-wide: two 40-foot high-cube containers side by side, the shared inner walls cut away. The outside footprint is sixteen by forty feet, 640 square feet; the finished usable room is smaller.
 
 ![The Double-Wide Shell Architecture: two 8-by-40-foot containers mated along a reinforced seam, one side holding the workspace and server room, the other the wet-room, kitchen, and living quarters](/book-images/ch13-shell-architecture.svg)
 
@@ -94,11 +94,11 @@ A metal box is a superb conductor of heat, which makes it an oven in August and 
 
 where $k$ is how well the material conducts heat, $A$ is the wall area, $\Delta T$ is the temperature difference, and $d$ is the thickness. Steel conducts heat thousands of times better than foam, and a container wall is only a couple of millimeters thick, so bare steel barely slows heat at all. Everything depends on the insulation layer.
 
-![The Thermal Barrier Layer: wall section showing heat from the exterior hitting the 2 mm steel wall, being absorbed by 75 mm of closed-cell spray foam rated R-21, and blocked before the interior wood panel](/book-images/ch13-thermal-seal.svg)
+![Illustrative wall section: steel, closed-cell foam, and interior finish. Insulation reduces heat flow; joints, penetrations, moisture control, and fire protection still need a complete design.](/book-images/ch13-thermal-seal.svg)
 
-*The thermal barrier in section. Foam bonded to steel: warm, moist indoor air never touches the cold metal.*
+*The thermal barrier in section. A continuous insulation and air barrier helps keep warm, moist indoor air away from cold metal.*
 
-The common answer for containers is closed-cell spray foam applied directly to the steel, at roughly R-6 to R-7 per inch. Its real advantage isn't just the R-value. Foam bonded to the metal keeps warm, damp indoor air from ever reaching the cold steel, and that's what stops condensation from rusting the box from the inside. Fiberglass batts, by contrast, let moist air circulate in the corrugations. Get this part designed for your climate and done by people who do it for a living.
+One approach is closed-cell spray foam bonded to the steel, with the thickness and R-value selected for the product and climate. Its advantage isn't just insulation: a continuous, correctly installed layer can also control air leakage. Gaps, penetrations, and exposed steel still matter. Fiberglass batts alone aren't an air barrier either. Get the whole wall assembly designed for your climate, including moisture control and the required fire protection over foam, and installed by people who do it for a living. [US Department of Energy, insulation and air-sealing details](https://www.energy.gov/cmei/buildings/articles/energy-efficient-home-improvement-credit-insulation-and-air-sealing)
 
 ## Build for every age you'll be
 

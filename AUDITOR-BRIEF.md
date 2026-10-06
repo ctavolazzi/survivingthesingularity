@@ -1,5 +1,13 @@
 # AUDITOR BRIEF — Surviving the Singularity (book)
 
+Current edition: **v0.10.0**, finalized locally on 2026-09-27. Start with
+`docs/v0.10.0/EDITION-NOTES.md` and `publication/README.md` for current artifacts,
+checks, and build commands. There are 35 sections and 24 precedents. The current
+source and `book.json` remain authoritative; `released` still records the older
+public download. Prior version-specific instructions below are historical.
+Do not use their stale branch, section counts, or commit/push instructions as
+current authorization.
+
 Continuation prompt for any agent auditing or editing this book. Read this file
 FIRST, in full. It replaces repo spelunking: everything below was verified on
 2026-07-19 at book v0.5.2. If you change the system (tools, paths, conventions,

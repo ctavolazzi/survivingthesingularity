@@ -64,7 +64,7 @@ The CSA hired an electrical technician to review the installation plan, and two 
 
 By the time the forty units shipped in February, the yellow tab had an answer attached and the folder had grown thick enough to prop open a door. Denny delivered them in apple boxes, each one tested on the bench against a space heater and a cup of wet dirt, with the instructions and the agreed support number. Two growers needed replacement probes in the first month. With the power isolated and help from the support call, they could change the documented part without discarding the controller. Marta put the repair emails up on the corkboard like other shops hang their first dollar.
 
-And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's check-engine light. Curtis, it turned out, diagnosed it in nine minutes off a fourteen-dollar OBD dongle, a cracked vacuum line, two dollars of hose. The light had been on since the drive north. The dealership had quoted him twelve hundred dollars and a week; The man who wanted to fence out the world did the repair while the coffee brewed. He left the remaining length on the dashboard, coiled like a small black snake.
+And somewhere in the middle of all that, without ceremony, somebody finally fixed Elijah's check-engine light. Curtis, it turned out, diagnosed it in nine minutes off a fourteen-dollar OBD dongle, a cracked vacuum line, two dollars of hose. The light had been on since the drive north. The dealership had quoted him twelve hundred dollars and a week; the man who wanted to fence out the world did the repair while the coffee brewed. He left the remaining length on the dashboard, coiled like a small black snake.
 
 Elijah put the repair card for controller number forty in the folder. Curtis's hose went in the glove box.
 
@@ -138,7 +138,7 @@ For the controller in the scene, or one like it, the open-source project Mycodo 
 - **Sensors:** an air temperature and humidity sensor (the SHT31-D is common) and a capacitive soil-moisture probe, which resists corrosion better than the cheap resistive kind.
 - **Actuators:** a relay board switching low-voltage devices: an exhaust fan, a solenoid valve on the irrigation line, supplemental lights. Have someone who knows electrical work check anything that touches mains power.
 
-On a clean Raspberry Pi OS install, the project's documented installer is:
+On a clean Raspberry Pi OS install, check the project's current [installation requirements](https://github.com/kizniche/Mycodo#install-mycodo), then use its documented installer:
 
 ```bash
 sudo apt update && sudo apt upgrade -y

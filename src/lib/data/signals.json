@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T18:51:29Z",
+  "generated_at": "2026-10-07T19:16:50Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -55,6 +55,59 @@
         "robot",
         "robotics",
         "rag"
+      ]
+    },
+    {
+      "id": "2610.08452",
+      "source": "arxiv",
+      "title": "Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents",
+      "url": "https://arxiv.org/abs/2610.08452",
+      "authors": [
+        "Lasse B. Strand",
+        "Robert Jakob",
+        "Kevin O'Sullivan",
+        "Markus Kreft"
+      ],
+      "summary": "Retrieval-augmented generation (RAG) is a widely used approach for grounding large language models (LLMs) in external knowledge. However, configuring a pipeline is an expensive hyperparameter optimization problem over many interacting choices, from chunking and embedding model to reranking and generation. Existing optimizers, from greedy search to Bayesian optimization, reduce each trial to an aggregate score and search without modeling why a configuration performed as it did, even though the retrieved chunks already provide evidence about whether each failure occurred during retrieval or afte",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-06",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.08155",
+      "source": "arxiv",
+      "title": "Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor",
+      "url": "https://arxiv.org/abs/2610.08155",
+      "authors": [
+        "Zihan Zhou",
+        "Xinzhe Hu",
+        "Hanxu Yang",
+        "Liangjian Wen"
+      ],
+      "summary": "Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operations, including task selection, role assignment, message routing, and context management. As interactions grow, using powerful LLMs for these bounded control decisions introduces substantial token overhead and latency, limiting the scalability of agentic Web services. In this paper, we investigate wh",
+      "category": "cs.MA",
+      "tag": "Agents",
+      "published_at": "2026-10-06",
+      "score": 10.0,
+      "raw_score": 20,
+      "matched_keywords": [
+        "agent",
+        "multi-agent",
+        "agentic",
+        "reasoning",
+        "llm",
+        "language model"
       ]
     },
     {
@@ -543,8 +596,8 @@
         "Yuzhang Shang"
       ],
       "summary": "LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyframes lose the contact detail that decides whether a grasp holds, and what the agent needs shifts from the task's structure while planning to the frames around each contact. We introduce Recursive Video In-Context Learning (RV-ICL), a training-free method that turns a demonstration into a hierarchy the",
-      "category": "cs.AI",
-      "tag": "Research",
+      "category": "cs.MA",
+      "tag": "Agents",
       "published_at": "2026-10-05",
       "score": 8.0,
       "raw_score": 16,
@@ -949,6 +1002,31 @@
       ]
     },
     {
+      "id": "2610.08761",
+      "source": "arxiv",
+      "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
+      "url": "https://arxiv.org/abs/2610.08761",
+      "authors": [
+        "Zewei Zhou",
+        "Rachel Luo",
+        "Yulong Cao",
+        "Chaowei Xiao"
+      ],
+      "summary": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improv",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-06",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "self-improving",
+        "agent",
+        "reasoning",
+        "embodied",
+        "scaling"
+      ]
+    },
+    {
       "id": "2610.06790",
       "source": "arxiv",
       "title": "Back to the Future: Rethinking EDA Infrastructure for Agentic Systems in Chip Design Verification",
@@ -1316,6 +1394,31 @@
       ]
     },
     {
+      "id": "2610.08225",
+      "source": "arxiv",
+      "title": "UWB Meets Crazyflow: Simulating Degraded Feedback at Scale for Aerial Robotics",
+      "url": "https://arxiv.org/abs/2610.08225",
+      "authors": [
+        "Martin Schuck",
+        "Marcel P. Rath",
+        "Yufei Hua",
+        "Abhishek Goudar"
+      ],
+      "summary": "In this work, we introduce Crazyflow, an accurate, differentiable simulator built on JAX. By leveraging jit compilation via XLA, Crazyflow unifies physics and control into a single differentiable computation graph, enabling massive parallelization on accelerated hardware without sacrificing modeling accuracy. This architecture achieves order-of-magnitude speedups over existing baselines, capable of training deployable reinforcement learning agents in seconds. To highlight its highly modular design, we demonstrate how easily Crazyflow can be extended by integrating a complete, high-fidelity Ult",
+      "category": "cs.RO",
+      "tag": "Robotics",
+      "published_at": "2026-10-06",
+      "score": 7.0,
+      "raw_score": 14,
+      "matched_keywords": [
+        "agi",
+        "agent",
+        "robot",
+        "robotics",
+        "rag"
+      ]
+    },
+    {
       "id": "2610.04829",
       "source": "arxiv",
       "title": "Viva La Vida: Verification and Accumulation Failures in Multi-Agent Proof Search",
@@ -1379,104 +1482,6 @@
         "autonomous",
         "reasoning",
         "robot",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.35559",
-      "source": "arxiv",
-      "title": "From Search to Research: Exploring Search Scaling in Autonomous Quantitative Factor Mining",
-      "url": "https://arxiv.org/abs/2609.35559",
-      "authors": [
-        "Kangcheng Deng",
-        "Hui Cai",
-        "Jiacheng Lu",
-        "Chester Zhongshu Qian"
-      ],
-      "summary": "Inference scaling has been shown to improve large language model (LLM) performance, and this principle naturally extends to autonomous LLM agents through increased search budgets, which we refer to as *search scaling*. Although prior work has characterized the mechanisms, scaling behavior, and performance limits of LLM inference scaling, much less is known about these questions in autonomous research. Therefore, we investigate how search scaling affects research performance and what mechanisms drive these gains using 50 quantitative factor-mining tasks grounded in financial research reports. E",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "llm",
-        "language model",
-        "scaling"
-      ]
-    },
-    {
-      "id": "2609.35427",
-      "source": "arxiv",
-      "title": "LLMs are General Asynchronous Agents",
-      "url": "https://arxiv.org/abs/2609.35427",
-      "authors": [
-        "George Yakushev",
-        "Denis Mazur",
-        "Vladimir Bartenev",
-        "Vyacheslav Zhdanovskiy"
-      ],
-      "summary": "Modern LLMs are increasingly capable as autonomous agents, but they follow sequential interaction cycles: read, think, reply or call tools, repeat. Many real-world use cases are not sequential: voice assistants, embodied agents, and monitoring systems receive new inputs while they think or perform another task. Modern LLMs address this with specialized architectures for voice interaction and video streams, VLAs for robot control, asynchronous tool calling for API usage, and others. In this work, we generalize from different asynchronous tasks to general asynchronous agents that can adapt to di",
-      "category": "cs.CL",
-      "tag": "Research",
-      "published_at": "2026-09-28",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "autonomous",
-        "embodied",
-        "robot",
-        "llm"
-      ]
-    },
-    {
-      "id": "2610.05247",
-      "source": "arxiv",
-      "title": "templar: agentic induction and evolution of standardized radiology reporting templates from large-scale clinical corpora",
-      "url": "https://arxiv.org/abs/2610.05247",
-      "authors": [
-        "Xiaotian Hu",
-        "Mingxuan Liu",
-        "Zhonghan Wang",
-        "Xinfeng Zhang"
-      ],
-      "summary": "Structured radiology reporting mitigates the heterogeneity of free-text reports, yet its benefits depend on high-quality reporting templates. In practice, such templates are conventionally built through labor-intensive expert consensus and therefore vary across institutions and lag behind evolving clinical practice. Large language models (LLMs) enable automated template induction, but existing approaches remain limited: single-LLM induction is constrained by context length, and the corpus-scale method ASTAR produces a static, closed-corpus template without external grounding or downstream adap",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-04",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "agent",
-        "agentic",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.03356",
-      "source": "arxiv",
-      "title": "ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models",
-      "url": "https://arxiv.org/abs/2610.03356",
-      "authors": [
-        "Hainiu Xu",
-        "Vítor N. Lourenço",
-        "Mohnish Dubey",
-        "Yunfei Bai"
-      ],
-      "summary": "Large Language Model (LLM) agents are increasingly deployed in high-stakes settings such as industrial maintenance and equipment fault troubleshooting, where workers occupy a variety of roles. A capable agent must therefore act in a way that is calibrated to user's role: taking actions and providing information that respect the role's knowledge and capability boundaries. Unlike coding, where mistakes are usually recoverable, agent responses in these settings are enacted on physical equipment, and can therefore cause irreversible equipment damage, production loss, or personnel harm. Existing be",
-      "category": "cs.AI",
-      "tag": "Research",
-      "published_at": "2026-10-02",
-      "score": 6.5,
-      "raw_score": 13,
-      "matched_keywords": [
-        "world model",
-        "agent",
         "llm",
         "language model"
       ]

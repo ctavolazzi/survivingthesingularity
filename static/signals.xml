@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Tue, 06 Oct 2026 18:51:29 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 07 Oct 2026 19:16:50 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -20,6 +20,20 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.34823</guid>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
       <description>Augmented dexterity has the potential to reduce the fatigue experienced by surgeons during repetitive surgical tasks. In this paper, we propose the first AGentic RObotics framework for SUrgical VIscoelastic DEbridement (AGRO-SUVIDE), the repeated removal of small fragments attached to a viscoelastic... [Score: 11.0 | Flagged for: agi, self-improving, agent, agentic, robot] Authors: Shutong Jin, Ziyang Chen, et al.</description>
+    </item>
+    <item>
+      <title>Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents</title>
+      <link>https://arxiv.org/abs/2610.08452</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.08452</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Retrieval-augmented generation (RAG) is a widely used approach for grounding large language models (LLMs) in external knowledge. However, configuring a pipeline is an expensive hyperparameter optimization problem over many interacting choices, from chunking and embedding model to reranking and gener... [Score: 10.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Lasse B. Strand, Robert Jakob, et al.</description>
+    </item>
+    <item>
+      <title>Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor</title>
+      <link>https://arxiv.org/abs/2610.08155</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.08155</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operati... [Score: 10.0 | Flagged for: agent, multi-agent, agentic, reasoning, llm] Authors: Zihan Zhou, Xinzhe Hu, et al.</description>
     </item>
     <item>
       <title>SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</title>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.03319</guid>
       <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
       <description>Large Language Models (LLMs) increasingly support Uncrewed Aerial Vehicle (UAV) swarm operations such as data collection scheduling, where the model reads structured sensor reports and decides which sensors to visit. An adversary who quietly manipulates those reports can redirect the swarm without m... [Score: 8.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Mohammadhossein Homaei, Yousef Emami, et al.</description>
-    </item>
-    <item>
-      <title>The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models</title>
-      <link>https://arxiv.org/abs/2610.02191</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.02191</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <description>While Large Language Models (LLMs) have demonstrated striking capabilities on frontier mathematical problems, it remains unclear whether they possess the structural mathematical understanding underlying their solutions. In this paper, we take a first step toward systematically studying mathematical ... [Score: 8.0 | Flagged for: agi, reasoning, llm, language model, rag] Authors: Shuo Xing, Zilin Dai, et al.</description>
-    </item>
-    <item>
-      <title>LLM-Based Multi-Agent Systems over Wireless Networks: A Joint Agent--Network Design Perspective</title>
-      <link>https://arxiv.org/abs/2609.37094</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2609.37094</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <description>As large language models (LLMs) evolve from standalone models into collaborative agents embedded in physical systems, their reasoning and execution are increasingly distributed across wireless edge nodes. In this setting, wireless networks are experiencing a paradigm shift from only providing data c... [Score: 8.0 | Flagged for: agent, multi-agent, reasoning, llm, language model] Authors: Chao Hu, Yuan Guo, et al.</description>
     </item>
   </channel>
 </rss>

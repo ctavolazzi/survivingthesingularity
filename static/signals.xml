@@ -5,7 +5,7 @@
     <link>https://survivingthesingularity.com/signals</link>
     <description>Algorithmically swept arXiv research ranked by singularity relevance. Not human-curated.</description>
     <language>en-us</language>
-   <lastBuildDate>Wed, 07 Oct 2026 19:16:50 +0000</lastBuildDate>
+   <lastBuildDate>Thu, 08 Oct 2026 19:12:57 +0000</lastBuildDate>
     <atom:link href="https://survivingthesingularity.com/signals.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement</title>
@@ -71,6 +71,13 @@
       <description>Autonomous network management requires systems that can evaluate Network Service Intents (NSIs) under varying conditions without manual implementation of analysis logic, as envisioned in TM Forum Level~4 (L4) autonomy. Behavioral Network Digital Twins (NDTs) enable such evaluation, but existing NDTs... [Score: 9.5 | Flagged for: agent, multi-agent, autonomous, autonomy, llm] Authors: Sudipta Acharya, Petar Djukic, et al.</description>
     </item>
     <item>
+      <title>EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</title>
+      <link>https://arxiv.org/abs/2610.10498</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.10498</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic ha... [Score: 9.0 | Flagged for: foundation model, agent, agentic, autonomous, embodied] Authors: Python Song, Zhixuan Liang, et al.</description>
+    </item>
+    <item>
       <title>Visual Swarm Navigation via Deep Reinforcement Learning and Evolutionary Hybrid Design</title>
       <link>https://arxiv.org/abs/2610.06400</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2610.06400</guid>
@@ -104,6 +111,13 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2609.08965</guid>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
       <description>Ensuring the safety of autonomous driving is a critical challenge. Scenario-based testing is a systematic process used to validate Autonomous Driving Systems (ADSs), but it remains a fragmented modular pipeline in which scenario generation, retrieval, modification, ADS execution, and results analysi... [Score: 9.0 | Flagged for: agent, autonomous, planning, llm, language model] Authors: Yuan Gao, Sebastian Müller, et al.</description>
+    </item>
+    <item>
+      <title>RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing</title>
+      <link>https://arxiv.org/abs/2610.10507</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2610.10507</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries and tool use but remain largely retrieval-centric. However, ... [Score: 8.5 | Flagged for: agent, agentic, tool use, language model, retrieval] Authors: Yilun Hao, Krishna Sayana, et al.</description>
     </item>
     <item>
       <title>Investigating the Role of Reasoning-Language Alignment in Monolingual Retrieval-Augmented Generation</title>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2610.05782</guid>
       <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
       <description>Agentic AI is emerging as a promising paradigm for automating complex cybersecurity decisions, yet its use in enforcing zero trust introduces significant challenges in safety, reliability, and policy compliance. This paper presents Agentic AI based zero trust architecture (Agentic-ZTA) that operatio... [Score: 8.0 | Flagged for: agent, multi-agent, agentic, autonomous, retrieval] Authors: Shovan Roy, Lopamudra Praharaj, et al.</description>
-    </item>
-    <item>
-      <title>Collective Bias Mitigation via Model Routing and Collaboration</title>
-      <link>https://arxiv.org/abs/2610.03240</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.03240</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large language models (LLMs) are increasingly deployed in public health, finance, and governance, requiring both accuracy and societal value alignment. Despite recent advances, LLMs often perpetuate or amplify bias embedded in their training data, posing challenges to fairness. While self-debiasing ... [Score: 8.0 | Flagged for: alignment, value alignment, llm, language model, rag] Authors: Mingzhe Du, Luu Anh Tuan, et al.</description>
-    </item>
-    <item>
-      <title>Defense-in-Depth at the Perception-Reasoning Interface of LLM-Centric Agentic UAV Swarms</title>
-      <link>https://arxiv.org/abs/2610.03319</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2610.03319</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Large Language Models (LLMs) increasingly support Uncrewed Aerial Vehicle (UAV) swarm operations such as data collection scheduling, where the model reads structured sensor reports and decides which sensors to visit. An adversary who quietly manipulates those reports can redirect the swarm without m... [Score: 8.0 | Flagged for: agent, agentic, reasoning, llm, language model] Authors: Mohammadhossein Homaei, Yousef Emami, et al.</description>
     </item>
   </channel>
 </rss>

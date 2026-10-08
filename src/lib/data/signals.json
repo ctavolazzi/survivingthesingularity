@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T19:16:50Z",
+  "generated_at": "2026-10-08T19:12:57Z",
   "source": "arxiv",
   "item_count": 60,
   "items": [
@@ -238,6 +238,32 @@
       ]
     },
     {
+      "id": "2610.10498",
+      "source": "arxiv",
+      "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
+      "url": "https://arxiv.org/abs/2610.10498",
+      "authors": [
+        "Python Song",
+        "Zhixuan Liang",
+        "Kelsey Fu",
+        "Mengdi Wang"
+      ],
+      "summary": "Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic harnesses can adapt around the model, but current self-evolving harnesses use robot trials inefficiently when deciding which code and skill changes to pursue. We introduce EmbodiedRSI, a self-evolving agentic harness that autonomously decides where to explore next and turns the resulting physical inte",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-07",
+      "score": 9.0,
+      "raw_score": 18,
+      "matched_keywords": [
+        "foundation model",
+        "agent",
+        "agentic",
+        "autonomous",
+        "embodied",
+        "robot"
+      ]
+    },
+    {
       "id": "2610.06400",
       "source": "arxiv",
       "title": "Visual Swarm Navigation via Deep Reinforcement Learning and Evolutionary Hybrid Design",
@@ -359,6 +385,32 @@
         "autonomous",
         "planning",
         "llm",
+        "language model",
+        "retrieval",
+        "rag"
+      ]
+    },
+    {
+      "id": "2610.10507",
+      "source": "arxiv",
+      "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+      "url": "https://arxiv.org/abs/2610.10507",
+      "authors": [
+        "Yilun Hao",
+        "Krishna Sayana",
+        "Isabella Ye",
+        "James S Ren"
+      ],
+      "summary": "Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries and tool use but remain largely retrieval-centric. However, in many tasks, the evidence required for a solution is not explicitly present in any single source item. Instead, it must be derived through filtering, aggregation, or computation across multiple source items. In this work, we introduce RECAST (Routing Evidence through Computation, Access, and Synth",
+      "category": "cs.AI",
+      "tag": "Research",
+      "published_at": "2026-10-07",
+      "score": 8.5,
+      "raw_score": 17,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "tool use",
         "language model",
         "retrieval",
         "rag"
@@ -1002,6 +1054,31 @@
       ]
     },
     {
+      "id": "2610.09684",
+      "source": "arxiv",
+      "title": "From Pareto to Preference: Personalized Test-Time Scaling via Amortized Agentic Policy Discovery",
+      "url": "https://arxiv.org/abs/2610.09684",
+      "authors": [
+        "Xinglin Wang",
+        "Zishen Liu",
+        "Tong Zheng",
+        "Shaoxiong Feng"
+      ],
+      "summary": "Test-time scaling (TTS) improves the reasoning capabilities of large language models by allocating additional inference computation. Existing approaches to improving TTS efficiency largely optimize accuracy against one resource dimension at a time, advancing either the accuracy--cost or accuracy--latency Pareto frontier. Yet user requirements are multidimensional: users may specify accuracy, latency, and inference-cost requirements jointly, and different requirements can favor different controllers. We formulate Personalized Test-Time Scaling as discovering executable controllers that maximize",
+      "category": "cs.CL",
+      "tag": "Research",
+      "published_at": "2026-10-07",
+      "score": 7.5,
+      "raw_score": 15,
+      "matched_keywords": [
+        "agent",
+        "agentic",
+        "reasoning",
+        "language model",
+        "scaling"
+      ]
+    },
+    {
       "id": "2610.08761",
       "source": "arxiv",
       "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
@@ -1416,74 +1493,6 @@
         "robot",
         "robotics",
         "rag"
-      ]
-    },
-    {
-      "id": "2610.04829",
-      "source": "arxiv",
-      "title": "Viva La Vida: Verification and Accumulation Failures in Multi-Agent Proof Search",
-      "url": "https://arxiv.org/abs/2610.04829",
-      "authors": [
-        "Benji Xu",
-        "Ken Zheng",
-        "Noah Han"
-      ],
-      "summary": "When an agentic prover works on an open problem, there is no proof assistant to fall back on: its verifier and lemma library are ultimately language models judging model outputs. We instrumented such a system end to end and analyzed $51{,}754$ traced observations across three full runs ($186$ hours, \\$$5{,}694$). We find three connected failure modes. First, the three-model verifier requires unanimity and treats parse or API failure as non-approval; in $10$ of $12$ verification events, one member returned no parseable output or an API error, making acceptance arithmetically impossible without ",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-04",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agent",
-        "multi-agent",
-        "agentic",
-        "language model"
-      ]
-    },
-    {
-      "id": "2610.02654",
-      "source": "arxiv",
-      "title": "Coherence-Driven Belief Formation and Population Dynamics of Contagion in LLM Agents",
-      "url": "https://arxiv.org/abs/2610.02654",
-      "authors": [
-        "Tathagata Banerjee",
-        "Nima Moghaddas"
-      ],
-      "summary": "Models of social contagion usually assume how individuals adopt beliefs and derive population behavior from it. We instead empirically measure belief adoption in language model agents, quantifying the probability an agent adopts a claim given how many peers endorse it. We find this adoption kernel to be sigmoid, a characteristic of complex contagion, with a threshold that is sensitive to three sources: the claim's plausibility, the source's reliability, and the agent's disposition. These three dimensions are well approximated by a single effective dimension which we propose can be understood a",
-      "category": "cs.MA",
-      "tag": "Agents",
-      "published_at": "2026-10-02",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "agi",
-        "agent",
-        "llm",
-        "language model"
-      ]
-    },
-    {
-      "id": "2609.37922",
-      "source": "arxiv",
-      "title": "WayFinder: Hierarchical Visual-Language-Action for Zero-Shot Waypoint Generation and Low-Level Kinematic Control",
-      "url": "https://arxiv.org/abs/2609.37922",
-      "authors": [
-        "Timothy K Johnsen",
-        "Marco Levorato"
-      ],
-      "summary": "Visual Language Action (VLA) models offer unprecedented generalization for autonomous robots; however, their real-world deployment is frequently bottlenecked by unreliable execution and the prohibitive computational cost of fine-tuning for specific robot embodiments and tasks. To bridge this gap, we propose WayFinder, an end-to-end, closed-loop hierarchical VLA framework that circumvents the need for fine-tuning by decoupling high-level task reasoning from low-level kinematic control. WayFinder utilizes a zero-shot, offboard Multimodal Large Language Model (MLLM) policy to process linguistic c",
-      "category": "cs.RO",
-      "tag": "Robotics",
-      "published_at": "2026-09-29",
-      "score": 7.0,
-      "raw_score": 14,
-      "matched_keywords": [
-        "autonomous",
-        "reasoning",
-        "robot",
-        "llm",
-        "language model"
       ]
     }
   ]

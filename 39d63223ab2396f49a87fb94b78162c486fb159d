@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 618" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">WATER LOOP, FEED BRANCH</title>
+<desc id="desc">Aquaponic water recirculates from a fish tank through solids handling and biofiltration to grow beds and back. Algae cultivation is a separate branch whose harvested output may supply a validated share of feed. Feed, nutrients, water, power and labor remain inputs.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">WATER LOOP, FEED BRANCH</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Conceptual flows, not a construction plan</text>
+<text x="20" y="112" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">1  AQUAPONIC WATER</text>
+<path d="M20 135H180V204H20Z" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="100" y="165" font-size="17" fill="#f1f5f9" text-anchor="middle" font-weight="400">Fish tank</text>
+<text x="100" y="189" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Feed enters</text>
+<path d="M182 169L259 169" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M259 169L252.17980382352397 173.18149783144528" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M259 169L252.17980382352397 164.81850216855472" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<text x="274" y="149" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Solids handling</text>
+<text x="274" y="172" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">+ biofiltration</text>
+<path d="M351 189L351 224" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M351 224L346.81850216855474 217.17980382352397" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M351 224L355.18149783144526 217.17980382352394" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M267 229H457V298H267Z" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="362" y="257" font-size="17" fill="#f1f5f9" text-anchor="middle" font-weight="400">Grow beds</text>
+<text x="362" y="282" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Plants take nutrients</text>
+<path d="M264 270H100V209" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M93 217L100 209L107 217" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="20" y="315" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Return water</text>
+<text x="264" y="323" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Plant harvest leaves</text>
+<path d="M20 345L460 345" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="378" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">2  POSSIBLE ALGAE FEED</text>
+<text x="20" y="410" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Cultivation</text>
+<text x="20" y="434" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Light, nutrients</text>
+<text x="20" y="456" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">and water</text>
+<path d="M157 409L230 409" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M230 409L223.17980382352397 413.18149783144526" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M230 409L223.17980382352397 404.81850216855474" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="250" y="408" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Harvest + prepare</text>
+<text x="250" y="434" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Check species, diet</text>
+<text x="250" y="456" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">and feed contribution</text>
+<text x="20" y="490" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="400">Validated feed contribution → fish tank</text>
+<path d="M20 521L460 521" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="541" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Algae is not automatically a complete feed.</text>
+<text x="20" y="562" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Feed, nutrients, water, power and human work</text>
+<text x="20" y="583" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">remain part of the operating budget.</text>
+</svg>

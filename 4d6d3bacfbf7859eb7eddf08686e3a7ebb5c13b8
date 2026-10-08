@@ -1,0 +1,330 @@
+{
+  "created_utc": "2026-09-28T11:14:29.147615+00:00",
+  "stage": "initial",
+  "dpi": 140,
+  "renderer": "10.04.0",
+  "pdfs": {
+    "interior": {
+      "path": "publication/output/Surviving-the-Singularity-interior.pdf",
+      "sha256": "c7c45452fa9fa0d6d7f1b0b1cc3fb5a3c9475734ab6f03cee3a2370bee53479e",
+      "pages": 392
+    },
+    "print": {
+      "path": "publication/output/Surviving-the-Singularity-print-interior.pdf",
+      "sha256": "e83001c676952fbf7bffcad81f80a20a3796893bbf462abffe71d65d3ec986bb",
+      "pages": 392
+    }
+  },
+  "layout_sha256": "ca078a925f83a16ab0e792fe613ed9ef9c42c9f4b182f0a45440761eefff155d",
+  "build_sha256": "293ecea97f3445575726f6c59c9b623d43b8ef1d00d7affc24d846358f1e00dc",
+  "page_number_note": "Physical PDF pages; reading adds one cover page. Folios come from the interior layout capture.",
+  "samples": [
+    {
+      "edition": "interior",
+      "physical_page": 53,
+      "printed_folio": "49",
+      "figure": "v101-chart-forecast-shift.svg",
+      "caption": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the2023 survey. The two milestones are distinct, and neither date is a deadline. Grace et al.,Thousands of AI Authors on the Future of AI.",
+      "render": "initial/interior-053-chart-forecast-shift.png",
+      "sha256": "391eeacd7458bba8159552e5cde0c47031583f381e91ac99d5dfb45147b8f9ec"
+    },
+    {
+      "edition": "print",
+      "physical_page": 53,
+      "printed_folio": "49",
+      "figure": "v101-chart-forecast-shift.svg",
+      "caption": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the2023 survey. The two milestones are distinct, and neither date is a deadline. Grace et al.,Thousands of AI Authors on the Future of AI.",
+      "render": "initial/print-053-chart-forecast-shift.png",
+      "sha256": "5777b56daea5c9726833d7617e40ca816af140d74a589b53ef1bcc7e558be583"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 64,
+      "printed_folio": "60",
+      "figure": "v101-visual-local-copies.svg",
+      "caption": "A copy you can open can outlast a broken link. It does not replace electrical power or a testedplan for equipment that depends on it. Conceptual illustration.",
+      "render": "initial/interior-064-visual-local-copies.png",
+      "sha256": "b572e5e066b9882266ce183f6ed6f04fa63dca52eddc41e4b2388564bad3e109"
+    },
+    {
+      "edition": "print",
+      "physical_page": 64,
+      "printed_folio": "60",
+      "figure": "v101-visual-local-copies.svg",
+      "caption": "A copy you can open can outlast a broken link. It does not replace electrical power or a testedplan for equipment that depends on it. Conceptual illustration.",
+      "render": "initial/print-064-visual-local-copies.png",
+      "sha256": "aae099851057e03a8fa74d898eb009f67a53d5af5487a26dea7fdf96cb89cfa1"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 92,
+      "printed_folio": "88",
+      "figure": "v101-chart-data-centre-demand.svg",
+      "caption": "The machine\u2019s appetite. The solid column is IEA\u2019s estimate for 2025; the hatched column is its2030 projection. This is all data-centre electricity, not AI alone. IEA, Key Questions on Energy andAI, 2026.",
+      "render": "initial/interior-092-chart-data-centre-demand.png",
+      "sha256": "66a0a5058aac5e6973d4711048eaa0ec70674a32c8509296402f660d0b47d9ea"
+    },
+    {
+      "edition": "print",
+      "physical_page": 92,
+      "printed_folio": "88",
+      "figure": "v101-chart-data-centre-demand.svg",
+      "caption": "The machine\u2019s appetite. The solid column is IEA\u2019s estimate for 2025; the hatched column is its2030 projection. This is all data-centre electricity, not AI alone. IEA, Key Questions on Energy andAI, 2026.",
+      "render": "initial/print-092-chart-data-centre-demand.png",
+      "sha256": "99274e58e8562a71b1a01efbfb8867091c6c90fb40f9eeae045034a5de83c056"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 111,
+      "printed_folio": "107",
+      "figure": "v101-chart-income-food-access.svg",
+      "caption": "Income and food access. In the 2024 survey, food insecurity was associated with income. Thesetwo selected groups do not represent every income category, and the comparison does notestablish causation. USDA ERS, ERR-358, Table 2.",
+      "render": "initial/interior-111-chart-income-food-access.png",
+      "sha256": "7af52e9f990dd24141890d299e0412e4a35509393c4031038d175280be799c83"
+    },
+    {
+      "edition": "print",
+      "physical_page": 111,
+      "printed_folio": "107",
+      "figure": "v101-chart-income-food-access.svg",
+      "caption": "Income and food access. In the 2024 survey, food insecurity was associated with income. Thesetwo selected groups do not represent every income category, and the comparison does notestablish causation. USDA ERS, ERR-358, Table 2.",
+      "render": "initial/print-111-chart-income-food-access.png",
+      "sha256": "b4cd04e8264781478321fc86862b32ce102f6fe3c4b768df2d85a12934c4340e"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 113,
+      "printed_folio": "109",
+      "figure": "v101-visual-access-gate.svg",
+      "caption": "A working machine still needs an arrangement that lets people reach its output. Conceptualillustration.",
+      "render": "initial/interior-113-visual-access-gate.png",
+      "sha256": "1384b56d5685c385e1652bb5a18162bc4584bb08398e010f70467462d7a713c6"
+    },
+    {
+      "edition": "print",
+      "physical_page": 113,
+      "printed_folio": "109",
+      "figure": "v101-visual-access-gate.svg",
+      "caption": "A working machine still needs an arrangement that lets people reach its output. Conceptualillustration.",
+      "render": "initial/print-113-visual-access-gate.png",
+      "sha256": "1f7ef54507b7e3724ccfa0835acdf309c2427aeaad89bef82759267706ce1261"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 147,
+      "printed_folio": "143",
+      "figure": "v101-visual-attention-ribbon.svg",
+      "caption": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitivebudget or a fixed recovery time.",
+      "render": "initial/interior-147-visual-attention-ribbon.png",
+      "sha256": "be3a4a5e5ff275b9883773908969b4db73b29cf3fc662da7e9e0eeda4ac1d923"
+    },
+    {
+      "edition": "print",
+      "physical_page": 147,
+      "printed_folio": "143",
+      "figure": "v101-visual-attention-ribbon.svg",
+      "caption": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitivebudget or a fixed recovery time.",
+      "render": "initial/print-147-visual-attention-ribbon.png",
+      "sha256": "d051889de9e76616c185f4e99c013d33ddefacf0bd27c4b4ab79f238fc2f789d"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 164,
+      "printed_folio": "160",
+      "figure": "v101-chart-ammonia-energy.svg",
+      "caption": "The energy in ammonia. IEA\u2019s global-average estimate and best-available-process benchmarksare different kinds of evidence. A benchmark is not proof every existing plant can achieve it. IEA,Ammonia Technology Roadmap, 2021.",
+      "render": "initial/interior-164-chart-ammonia-energy.png",
+      "sha256": "1c159c648061a5a3e7e37a33f3b5064ac07faf4c3a5bfa1dd993a2890f4e80e3"
+    },
+    {
+      "edition": "print",
+      "physical_page": 164,
+      "printed_folio": "160",
+      "figure": "v101-chart-ammonia-energy.svg",
+      "caption": "The energy in ammonia. IEA\u2019s global-average estimate and best-available-process benchmarksare different kinds of evidence. A benchmark is not proof every existing plant can achieve it. IEA,Ammonia Technology Roadmap, 2021.",
+      "render": "initial/print-164-chart-ammonia-energy.png",
+      "sha256": "3efb8c5d86238cd06808a411bc3a2caf14caaea94759fc2e03a71dddc9fa0ee3"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 170,
+      "printed_folio": "166",
+      "figure": "v101-scene-food-delivery.svg",
+      "caption": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keepthe five-household promise. The buildings and route are illustrative; the vegetables supplementmeals.",
+      "render": "initial/interior-170-scene-food-delivery.png",
+      "sha256": "8d632b008d9ad23c75fdd2c19e0f58ece80703e05c29058d50fbba9a081e2297"
+    },
+    {
+      "edition": "print",
+      "physical_page": 170,
+      "printed_folio": "166",
+      "figure": "v101-scene-food-delivery.svg",
+      "caption": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keepthe five-household promise. The buildings and route are illustrative; the vegetables supplementmeals.",
+      "render": "initial/print-170-scene-food-delivery.png",
+      "sha256": "b73bff92d2924bdc640cbbc2cca65c3ec4260ec496fb58b008e0ed424177c3ef"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 198,
+      "printed_folio": "194",
+      "figure": "v101-visual-operating-stack.svg",
+      "caption": "The model file is one layer of a working service. Running a useful service also takes software,hardware, power, and people who maintain it. Conceptual illustration.",
+      "render": "initial/interior-198-visual-operating-stack.png",
+      "sha256": "26820b95c9bb74dafbafca2fb990935fde88f06d0309c1f9b38b026dccfaa054"
+    },
+    {
+      "edition": "print",
+      "physical_page": 198,
+      "printed_folio": "194",
+      "figure": "v101-visual-operating-stack.svg",
+      "caption": "The model file is one layer of a working service. Running a useful service also takes software,hardware, power, and people who maintain it. Conceptual illustration.",
+      "render": "initial/print-198-visual-operating-stack.png",
+      "sha256": "cf6b14aacc70a8fd958afa1793c8032334533975237c3c1c3a355fbe293f92aa"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 200,
+      "printed_folio": "196",
+      "figure": "v101-chart-weights-memory.svg",
+      "caption": "Memory before the overhead. These are derived weights-only sizes, not measured VRAMrequirements. They omit the chapter\u2019s illustrative allowance as well as runtime costs. llama.cpp,memory and context options.",
+      "render": "initial/interior-200-chart-weights-memory.png",
+      "sha256": "96eedba7deaac15c89cf8f2b7882d404c2881b783e24e95e9331ce7b207fa7c1"
+    },
+    {
+      "edition": "print",
+      "physical_page": 200,
+      "printed_folio": "196",
+      "figure": "v101-chart-weights-memory.svg",
+      "caption": "Memory before the overhead. These are derived weights-only sizes, not measured VRAMrequirements. They omit the chapter\u2019s illustrative allowance as well as runtime costs. llama.cpp,memory and context options.",
+      "render": "initial/print-200-chart-weights-memory.png",
+      "sha256": "039b89743e49e6ed56b0be2c6e16937b0921d7eed3da3938bdf969ae41a68e16"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 212,
+      "printed_folio": "208",
+      "figure": "v101-chart-land-values.svg",
+      "caption": "What an acre costs. USDA survey estimates include farm buildings as well as land. These arenominal national averages, not inflation-adjusted values or local offers. USDA NASS, Land Values2026, page 5.",
+      "render": "initial/interior-212-chart-land-values.png",
+      "sha256": "1fae2840b65d218ec5c3202e3ca1cb613e7e016310871fcd4721ac0ce21c6500"
+    },
+    {
+      "edition": "print",
+      "physical_page": 212,
+      "printed_folio": "208",
+      "figure": "v101-chart-land-values.svg",
+      "caption": "What an acre costs. USDA survey estimates include farm buildings as well as land. These arenominal national averages, not inflation-adjusted values or local offers. USDA NASS, Land Values2026, page 5.",
+      "render": "initial/print-212-chart-land-values.png",
+      "sha256": "e71eba30b59795cb4c5c2c97a6c76445381e4ec3e84040367c165cfc4b6ed4c4"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 213,
+      "printed_folio": "209",
+      "figure": "v101-visual-shared-land.svg",
+      "caption": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and away to challenge decisions. Conceptual illustration, not a legal template.",
+      "render": "initial/interior-213-visual-shared-land.png",
+      "sha256": "e8c2335f26f5cf85c39e08084400c9295550402e7ba09338e2015c199e833c8f"
+    },
+    {
+      "edition": "print",
+      "physical_page": 213,
+      "printed_folio": "209",
+      "figure": "v101-visual-shared-land.svg",
+      "caption": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and away to challenge decisions. Conceptual illustration, not a legal template.",
+      "render": "initial/print-213-visual-shared-land.png",
+      "sha256": "00e7ae7f68f31189212967c25fab21ba44d499ec7ba30aaac2973b5a6ce7ebb1"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 243,
+      "printed_folio": "239",
+      "figure": "v101-chart-waste-pathways.svg",
+      "caption": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total couldnot have been donated. Donation is net of food banks\u2019 unusable portion. EPA, Table 5.",
+      "render": "initial/interior-243-chart-waste-pathways.png",
+      "sha256": "187b0add2172869687c334cc4535001b52c41d27cb058035cdc8ade4196475f1"
+    },
+    {
+      "edition": "print",
+      "physical_page": 243,
+      "printed_folio": "239",
+      "figure": "v101-chart-waste-pathways.svg",
+      "caption": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total couldnot have been donated. Donation is net of food banks\u2019 unusable portion. EPA, Table 5.",
+      "render": "initial/print-243-chart-waste-pathways.png",
+      "sha256": "f4e6ad47d2b28cc088e42eb7eac385d2b77341d7b330a09af7952d9d69b6a95f"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 259,
+      "printed_folio": "255",
+      "figure": "v101-scene-living-soil.svg",
+      "caption": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchangenutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross itsboundary. Conceptual cutaway, not a measured soil profile.",
+      "render": "initial/interior-259-scene-living-soil.png",
+      "sha256": "db838fb70dbbd2f78b699522231a70411751f8b13fef705788a47a579e8f18d4"
+    },
+    {
+      "edition": "print",
+      "physical_page": 259,
+      "printed_folio": "255",
+      "figure": "v101-scene-living-soil.svg",
+      "caption": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchangenutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross itsboundary. Conceptual cutaway, not a measured soil profile.",
+      "render": "initial/print-259-scene-living-soil.png",
+      "sha256": "0411edac23a968c89fe6b101f51e99f224c387cc13d6b40decf627a2251f661a"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 287,
+      "printed_folio": "283",
+      "figure": "v101-scene-shared-workshop.svg",
+      "caption": "Shared tools need a working arrangement around them: trained people, suitable power andmaterials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, nota fabrication or wiring plan.",
+      "render": "initial/interior-287-scene-shared-workshop.png",
+      "sha256": "541c12aedea27eed6f16f9a922f6c9feb194d95450bfd82604f128b0d1c284f2"
+    },
+    {
+      "edition": "print",
+      "physical_page": 287,
+      "printed_folio": "283",
+      "figure": "v101-scene-shared-workshop.svg",
+      "caption": "Shared tools need a working arrangement around them: trained people, suitable power andmaterials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, nota fabrication or wiring plan.",
+      "render": "initial/print-287-scene-shared-workshop.png",
+      "sha256": "9fa18fcf1703eb2dbeaece0908523b6efd1f314e27cac9e727f50e5148e16447"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 296,
+      "printed_folio": "292",
+      "figure": "v101-visual-continuity-calendar.svg",
+      "caption": "Ink for what is funded; pencil for the continuation still being proposed. The distinction mattersto the households expecting a delivery. Illustration of the fictional scene.",
+      "render": "initial/interior-296-visual-continuity-calendar.png",
+      "sha256": "93831f9a8ed8df98f522436c7f4897e06b9a19882ea8e5b040a54ed1f5ddbba1"
+    },
+    {
+      "edition": "print",
+      "physical_page": 296,
+      "printed_folio": "292",
+      "figure": "v101-visual-continuity-calendar.svg",
+      "caption": "Ink for what is funded; pencil for the continuation still being proposed. The distinction mattersto the households expecting a delivery. Illustration of the fictional scene.",
+      "render": "initial/print-296-visual-continuity-calendar.png",
+      "sha256": "117aff1dc0ef2a367f100028a1323adae7c29b345134bcd2d1d6f411ba67abe6"
+    },
+    {
+      "edition": "interior",
+      "physical_page": 304,
+      "printed_folio": "300",
+      "figure": "v101-chart-meal-response.svg",
+      "caption": "When a meal fails. An illustrative worksheet from this chapter\u2019s premortem record, not themeasured performance of a service. Confirm the alternative and the people who will deliver itbefore expanding the promise.",
+      "render": "initial/interior-304-chart-meal-response.png",
+      "sha256": "c083b38ad2e1972239f3a26ef02803c6498ef4e31a8d870821bd3e536a388e17"
+    },
+    {
+      "edition": "print",
+      "physical_page": 304,
+      "printed_folio": "300",
+      "figure": "v101-chart-meal-response.svg",
+      "caption": "When a meal fails. An illustrative worksheet from this chapter\u2019s premortem record, not themeasured performance of a service. Confirm the alternative and the people who will deliver itbefore expanding the promise.",
+      "render": "initial/print-304-chart-meal-response.png",
+      "sha256": "9753c0979cfdce0ac855389821ca9485faec165978a30de0641479d67c1c4d4a"
+    }
+  ],
+  "limits": "Raster evidence only. The review report identifies visual findings; this script does not certify appearance or physical print quality."
+}

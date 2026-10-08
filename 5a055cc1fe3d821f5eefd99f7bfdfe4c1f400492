@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 535" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">A floor people can rely on</title>
+<desc id="desc">A current vulnerability ties essentials to continuing earnings. A proposed arrangement funds supplies, remaining paid work, tools and backup capacity so people can receive essentials without a job. Adequate provision is a commitment to verify, not an achieved effect of robots or a closed loop.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">A floor people can rely on</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="120" y="80" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">CURRENT VULNERABILITY</text>
+<text x="359" y="80" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">PROPOSED ARRANGEMENT</text>
+<path d="M240 105L240 438" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M73 119H166V176H73ZM73 119L120 151L166 119" fill="#0f172a" stroke="#60a5fa" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="120" y="205" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Paid work</text>
+<path d="M120 217L120 245" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M120 245L116.16459569116637 237.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M120 245L123.83540430883362 237.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<text x="120" y="273" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Wage</text>
+<path d="M120 285L120 315" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M120 315L116.16459569116637 307.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M120 315L123.83540430883362 307.97933950487703" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<text x="120" y="343" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Buy essentials</text>
+<text x="120" y="395" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Income can fail;</text>
+<text x="120" y="417" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">needs continue.</text>
+<path d="M309 115H413V183H309Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5"/>
+<path d="M325 133L398 133" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M325 148L398 148" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M325 163L398 163" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="359" y="212" font-size="15" fill="#f1f5f9" text-anchor="middle" font-weight="400">Funded provision</text>
+<text x="359" y="244" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Supplies + paid work</text>
+<text x="359" y="267" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Tools + backup</text>
+<path d="M359 281L359 315" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M359 315L355.16459569116637 307.97933950487703" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M359 315L362.83540430883363 307.97933950487703" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<text x="359" y="343" font-size="15" fill="#f1f5f9" text-anchor="middle" font-weight="400">Deliver essentials</text>
+<text x="359" y="395" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Access without a job;</text>
+<text x="359" y="417" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">check who receives it.</text>
+<path d="M20 457L460 457" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="477" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Fund the promise. Keep people able to challenge it.</text>
+<text x="20" y="498" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Adequacy is measured at the recipient’s end.</text>
+</svg>

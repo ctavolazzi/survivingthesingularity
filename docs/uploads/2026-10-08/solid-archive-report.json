@@ -1,0 +1,89 @@
+{
+  "schema": "sts-solid-archive-experiment/v1",
+  "verified_utc": "2026-10-08T23:04:47.015407+00:00",
+  "archive": "book-build/Surviving-the-Singularity-all-editions-2026-10-08.tar.zst",
+  "archive_name": "Surviving-the-Singularity-all-editions-2026-10-08.tar.zst",
+  "source_inventory": "docs/uploads/2026-10-08/artifact-inventory.json",
+  "portable_manifest": "book-build/upload-archive-2026-10-08/solid-input/manifest.json",
+  "sha256sums": "book-build/upload-archive-2026-10-08/solid-input/SHA256SUMS",
+  "artifacts": 149,
+  "tar_members": 151,
+  "source_bytes": 3041969876,
+  "compressed_bytes": 379175616,
+  "sha256": "8812195af8cdfde5c776222bd0869cd61a8dd486bdd403d6eb8b594ecc1977ce",
+  "compression_seconds": 191.683,
+  "verification_seconds": 10.195,
+  "ratio": 0.1246480509197521,
+  "compression_command": [
+    "zstd",
+    "-19",
+    "--long=29",
+    "-T2",
+    "-c"
+  ],
+  "verification_command": [
+    "zstd",
+    "--long=29",
+    "-d",
+    "-c",
+    "book-build/Surviving-the-Singularity-all-editions-2026-10-08.tar.zst"
+  ],
+  "verification": "Streamed zstd decompression through tarfile; exact SHA256 and size match for all 149 artifact members, exact portable metadata bytes, no expanded extraction directory.",
+  "decoder_requirement": "zstd --long=29 or --memory=512MB is required; default 128 MiB decoder limit rejects this 512 MiB window archive.",
+  "hardlink_staging": {
+    "new": 149,
+    "existing_verified": 0
+  },
+  "estimated_upload_seconds_at_50000_bytes_per_second": 7583.5,
+  "transport_status": "Upload in progress; archive content verified locally.",
+  "downloader_verification": {
+    "tested_utc": "2026-10-08T23:34:01.847887+00:00",
+    "script": "docs/uploads/2026-10-08/download-archive.py",
+    "script_sha256": "37a3f54ac19a9ec4c1975c1bdcae819b5e2d00ae7f37e9a4c937318e192d603e",
+    "manifest": "docs/uploads/2026-10-08/archive-transport.json",
+    "manifest_sha256": "f29c44f09b86f9ac6c0aa62baa8389b4e42073538a442c9a0efbbf94eee1600e",
+    "actual_local_parts": 91,
+    "combined_bytes": 379175616,
+    "combined_sha256": "8812195af8cdfde5c776222bd0869cd61a8dd486bdd403d6eb8b594ecc1977ce",
+    "combined_output": "book-build/upload-archive-2026-10-08/downloader-proof/combined/Surviving-the-Singularity-all-editions-2026-10-08.tar.zst",
+    "offline_combine_seconds": 4.505,
+    "self_test": {
+      "passed": true,
+      "negative_controls": [
+        "wrong bytes with matching length",
+        "truncated bytes",
+        "extra bytes",
+        "unsafe filename ../outside",
+        "unsafe filename /absolute",
+        "unsafe filename a/b",
+        "unsafe filename a\\b",
+        "unsafe filename .",
+        "unsafe filename ..",
+        "unsafe filename https://other",
+        "unsafe filename bad name",
+        "different GitHub repository",
+        "reordered parts",
+        "manifest path traversal",
+        "wrong part length",
+        "changed archive identity",
+        "wrong concatenation order",
+        "omitted part",
+        "corrupted combined bytes"
+      ],
+      "positive_controls": [
+        "exact streamed bytes",
+        "complete transport structure",
+        "retry asset name",
+        "ordered byte concatenation"
+      ]
+    },
+    "cache_controls": [
+      "Real damaged cached part retained",
+      "Real 4 MiB bad network response rejected",
+      "Second mocked response accepted only after exact size/SHA",
+      "Valid cached part reused without a third request",
+      "Planted wrong expected hash rejects actual valid cached bytes"
+    ],
+    "network_limit": "Network response controls use injected streams. No live GitHub download was made by this verification."
+  }
+}

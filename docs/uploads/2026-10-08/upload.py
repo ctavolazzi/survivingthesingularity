@@ -111,15 +111,19 @@ def get_release() -> dict:
 
 def get_assets(release: dict) -> dict[str, dict]:
     # gh api has no --repo flag. This endpoint specifies the owner/repo literally.
-    pages = gh_json(["api", "--hostname", "github.com", "--paginate", "--slurp",
-                     f"repos/{REPO}/releases/{release['id']}/assets?per_page=100"])
     assets = {}
-    for page in pages:
+    page_number = 1
+    while True:
+        page = gh_json(["api", "--hostname", "github.com",
+                        f"repos/{REPO}/releases/{release['id']}/assets?per_page=100&page={page_number}"])
         for asset in page:
             name = asset.get("name")
             if name in assets:
                 raise VerificationError(f"Duplicate remote asset name: {name}")
             assets[name] = asset
+        if len(page) < 100:
+            break
+        page_number += 1
     return assets
 
 

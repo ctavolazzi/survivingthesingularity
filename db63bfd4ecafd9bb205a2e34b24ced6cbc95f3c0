@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 598" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">SOIL CYCLES, HARVEST LEAVES</title>
+<desc id="desc">Plants exchange carbon with a soil food web. Decomposition and grazing cycle nutrients; harvest removes nutrients and losses also occur. Soil care includes measurement and appropriate replenishment.</desc>
+<rect width="480" height="598" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">SOIL CYCLES, HARVEST LEAVES</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">A nutrient cycle is not a sealed container</text>
+<path d="M100 228V126M100 157Q63 119 66 156Q83 174 100 166M100 142Q133 108 135 142Q120 159 100 153" fill="none" stroke="#9a4f13" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M100 224L79 255M100 231L117 262M95 237L96 273M80 255L59 265M117 262L137 270" fill="none" stroke="#17251f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M20 223L460 223" fill="none" stroke="#a2afa6" stroke-width="2"/>
+<text x="20" y="108" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Light + water</text>
+<path d="M149 160L260 160" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<path d="M260 160L253.17980382352397 164.18149783144528" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<path d="M260 160L253.17980382352397 155.81850216855472" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<text x="283" y="155" font-size="17" fill="#17251f" text-anchor="start" font-weight="400">Harvest</text>
+<text x="283" y="181" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Nutrients leave</text>
+<text x="168" y="244" font-size="14" fill="#17251f" text-anchor="start" font-weight="400">Roots supply carbon</text>
+<text x="168" y="268" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">to the soil food web.</text>
+<path d="M99 286L99 322" fill="none" stroke="#315f78" stroke-width="2"/>
+<path d="M99 322L94.81850216855473 315.17980382352397" fill="none" stroke="#315f78" stroke-width="2"/>
+<path d="M99 322L103.18149783144527 315.17980382352397" fill="none" stroke="#315f78" stroke-width="2"/>
+<text x="20" y="349" font-size="17" fill="#17251f" text-anchor="start" font-weight="400">Bacteria + fungi</text>
+<text x="20" y="375" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Decomposition</text>
+<text x="267" y="349" font-size="17" fill="#17251f" text-anchor="start" font-weight="400">Microbial grazers</text>
+<text x="267" y="375" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Nutrient cycling</text>
+<path d="M193 345L248 345" fill="none" stroke="#315f78" stroke-width="2"/>
+<path d="M248 345L241.17980382352397 349.18149783144526" fill="none" stroke="#315f78" stroke-width="2"/>
+<path d="M248 345L241.17980382352397 340.81850216855474" fill="none" stroke="#315f78" stroke-width="2"/>
+<path d="M355 393V428H8V245H63" fill="none" stroke="#315f78" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M55 238L63 245L55 252" fill="none" stroke="#315f78" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="240" y="456" font-size="14" fill="#4b5b52" text-anchor="middle" font-weight="400">Nutrients can return to plant uptake.</text>
+<path d="M20 493L460 493" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="513" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Harvest and losses draw down the budget.</text>
+<text x="20" y="534" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Test the soil, keep it covered, and replenish</text>
+<text x="20" y="555" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">what the crop and site actually require.</text>
+</svg>

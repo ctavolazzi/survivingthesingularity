@@ -1,0 +1,602 @@
+{
+  "pages": 407,
+  "page_size_points": [
+    [
+      432.0,
+      648.0
+    ]
+  ],
+  "source_sections_unchanged": 35,
+  "manifest_unchanged": true,
+  "sections_present": 35,
+  "source_text_blocks_checked": 2599,
+  "missing_text_blocks": [],
+  "documented_caption_exceptions": [],
+  "plain_extraction_missing_blocks": [
+    "Move heat out through a compatible, verified coolant loop. Heat\nrate uses mass flow in kilograms per second: Q\u0307 = \u1e41 Cp \u0394T. This diagram\nspecifies neither components nor cooling capacity."
+  ],
+  "pdf_extraction_fallbacks": [
+    {
+      "page": 207,
+      "block": "Move heat out through a compatible, verified coolant loop. Heat\nrate uses mass flow in kilograms per second: Q\u0307 = \u1e41 Cp \u0394T. This diagram\nspecifies neither components nor cooling capacity.",
+      "method": "pypdf layout extraction",
+      "negative_control": "middle third of recovered paragraph removed"
+    }
+  ],
+  "text_outside_page": [],
+  "fonts_embedded": {
+    "/SHNHDX+BookSans": true,
+    "/KHEPKV+BookSerif": true,
+    "/MKCUTK+BookSans-Semi-Bold": true,
+    "/TLUGJV+BookSerif-Semi-Bold": true,
+    "/HRFTZU+BookSerif-Italic": true,
+    "/FSDAEI+JetBrains-Mono-Semi-Bold": true,
+    "/DAAMAH+JetBrains-Mono": true,
+    "/OCCJPU+BookSans-Italic": true,
+    "/CFDMQT+Arial-Bold": true,
+    "/HHHHIV+Arial": true
+  },
+  "broken_internal_links": [],
+  "registered_figures": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "page": 7,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        2.13
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "intro-food-insecurity.svg",
+      "page": 11,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.137
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "intro-nine-stages.svg",
+      "page": 15,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.079999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-forecast-shift.svg",
+      "page": 51,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.263
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch02-eighteen-days.svg",
+      "page": 61,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.041999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-local-copies.svg",
+      "page": 62,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.5529999999999995
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-rocket.png",
+      "page": 71,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        2.13
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-sun.png",
+      "page": 88,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        1.3569134840218238
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-data-centre-demand.svg",
+      "page": 91,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.3389999999999995
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch05-horses-tractors.svg",
+      "page": 99,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.175
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch06-capability-access.svg",
+      "page": 108,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.205999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-income-food-access.svg",
+      "page": 111,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.788
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-access-gate.svg",
+      "page": 113,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.2110000000000003
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch08-cognitive-extraction.svg",
+      "page": 142,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.148999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch08-focus-recovery.svg",
+      "page": 144,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.3415
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch08-firewall-pipeline.svg",
+      "page": 146,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.5575
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch08-info-architectures.svg",
+      "page": 148,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.7665
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-attention-ribbon.svg",
+      "page": 150,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.344
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch08-star-vs-mesh.svg",
+      "page": 153,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.851999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch09-hyperlocal-vs-global.svg",
+      "page": 163,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.585999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch09-region-ring.svg",
+      "page": 165,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.928
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-printer.png",
+      "page": 166,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        1.5927027027027025
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-ammonia-energy.svg",
+      "page": 167,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.624
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch09-cnc-bed.svg",
+      "page": 169,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.795000000000001
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch09-greenhouse-bus.svg",
+      "page": 171,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.175
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-food-delivery.svg",
+      "page": 174,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7999999999999994
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch10-model-collapse.svg",
+      "page": 187,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.832999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch10-algorithm-unlock.svg",
+      "page": 189,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.6905
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-spot.png",
+      "page": 202,
+      "layout": "cutout-left",
+      "display_inches": [
+        1.42,
+        0.9466666666666667
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-operating-stack.svg",
+      "page": 203,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7714999999999996
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-weights-memory.svg",
+      "page": 205,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.415
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch11-cooling-loop.svg",
+      "page": 207,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.099
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-land-values.svg",
+      "page": 217,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.358
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-shared-land.svg",
+      "page": 218,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7904999999999998
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch12-csa-network.svg",
+      "page": 221,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.32
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch13-shell-architecture.svg",
+      "page": 233,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.2749999999999995
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch13-thermal-seal.svg",
+      "page": 235,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.75
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch14-logistic-shockwave.svg",
+      "page": 245,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.244
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-waste-pathways.svg",
+      "page": 249,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.403
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch14-mesh-comms.svg",
+      "page": 251,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.13
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch15-clt-firewall.svg",
+      "page": 262,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.749999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch15-soil-food-web.svg",
+      "page": 264,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.680999999999998
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-living-soil.svg",
+      "page": 266,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.7999999999999994
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch16-sneakernet.svg",
+      "page": 277,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        4.028
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-cutout-tools.png",
+      "page": 286,
+      "layout": "cutout-right",
+      "display_inches": [
+        1.42,
+        1.689182608695652
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch17-algae-loop.svg",
+      "page": 288,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.870999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch17-dc-native.svg",
+      "page": 292,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.5575
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch17-fab-lab.svg",
+      "page": 294,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.338999999999999
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-scene-shared-workshop.svg",
+      "page": 295,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.8000000000000003
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-visual-continuity-calendar.svg",
+      "page": 304,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        3.6479999999999997
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch18-social-contract.svg",
+      "page": 308,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        5.0825
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "v101-chart-meal-response.svg",
+      "page": 313,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.422000000000001
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "ch19-conversion-ladder.svg",
+      "page": 320,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.137
+      ],
+      "caption_same_page": true
+    },
+    {
+      "file": "appd-precedent-timeline.svg",
+      "page": 374,
+      "layout": "diagram",
+      "display_inches": [
+        4.56,
+        6.174999999999998
+      ],
+      "caption_same_page": true
+    }
+  ],
+  "figure_layout_errors": [],
+  "figure_negative_controls": [
+    "figure shifted into gutter",
+    "prose moved into figure",
+    "caption clipped by figure",
+    "missing caption text",
+    "missing rendered figure",
+    "diagram/cutout shrunk",
+    "caption moved to a second page",
+    "missing HTML figure marker"
+  ],
+  "missing_assets": [],
+  "negative_controls": [
+    "absent text",
+    "removed known paragraph",
+    "middle third cut from a paragraph",
+    "outside-page rectangle",
+    "absent destination"
+  ],
+  "limits": "Does not establish legal clearance, vendor acceptance, factual accuracy or visual quality. Contact sheets and full-size samples are reviewed separately."
+}

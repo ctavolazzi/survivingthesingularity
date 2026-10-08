@@ -96,6 +96,20 @@ We don't need to take anyone's money. We don't need a hostile redistribution of 
 
 That's food first, stated as plainly as I can state it. It doesn't threaten the status-invested, because nobody's taking their house. It gives the overwhelmed somewhere to stand, because dinner no longer depends on this month going well.
 
+## Whose robots?
+
+Use the robots to grow the food. Fine. Whose robots?
+
+That's a reasonable objection. People with the money to own the servers, the models, and the land can decide whose needs their machines serve. When I talk about oligarchs, I mean that concentration of wealth and decision-making power. A machine can get better while its owner raises the price, restricts its use, or withdraws a service your town has come to depend on.
+
+The machines aren't all locked away. Useful models can run on consumer hardware. But a local computer can still depend on somebody else's license, replacement parts, or online service. Ownership has to reach the terms you depend on.
+
+Norbert Wiener saw the problem in 1949. Writing to autoworkers' union president Walter Reuther on August 13, he explained that he'd refused an industrial consultancy because of the unemployment automatic factories could cause. Then he wrote: "it is manifestly not enough to take a negative attitude on this." He proposed that organized labor take part in producing the machines and direct their profits toward labor's benefit. [Wiener, letter to Walter Reuther](https://libcom.org/history/father-cybernetics-norbert-wieners-letter-uaw-president-walter-reuther)
+
+Elinor Ostrom supplied evidence for another piece of the argument. Her studies of shared fisheries, forests, and other resources found that users could develop rules and enforce them themselves. The 2009 economics prize recognized that work. Those findings give us a useful starting point for shared machines: examine who makes the rules, who enforces them, and how people settle disputes. [Royal Swedish Academy of Sciences, 2009 economics prize](https://www.nobelprize.org/prizes/economic-sciences/2009/press-release/)
+
+That's the point of Rung 5 in [](sts:chapter19): own the necessary machines together, and make the right to their output dependable. Ask who sets the price, who can change the rules, and where a person can appeal when dinner doesn't arrive. Put those answers in the agreement. The same capability can serve different arrangements. We have work to do on both.
+
 ## The ladder with the bottom rungs sawed off
 
 For people under twenty-five, the old deal, sell your labor and buy your survival, has failed on both ends at once.

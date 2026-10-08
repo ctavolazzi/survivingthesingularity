@@ -3,9 +3,9 @@
 > A field manual for staying agentic as AI rewrites work, money, medicine, and meaning.
 
 **Live site:** [survivingthesingularity.com](https://survivingthesingularity.com)
-**Local source edition:** v0.10.4, with 18 careful editorial revisions following a complete reread. Clearer transitions, more usable exercises and repaired continuity preserve the narrative scenes and existing artwork. See [gentle critique](docs/v0.10.4/CRITIQUE.md), [edition notes](docs/v0.10.4/EDITION-NOTES.md) and [production instructions](publication/README.md).
+**Local source edition:** v0.11.0, clarifying the title's promise and adding ownership, participation, and solarpunk sections. Existing scenes and artwork remain. See [edition notes](docs/v0.11.0/EDITION-NOTES.md) and [production instructions](publication/README.md).
 
-Open the [411-page reading PDF](book-build/Surviving-the-Singularity-v0.10.4.pdf), [EPUB](book-build/Surviving-the-Singularity-v0.10.4.epub), or [410-page grayscale print interior](book-build/Surviving-the-Singularity-v0.10.4-print-interior.pdf). Previous v0.10.3 source and deliveries remain preserved. Public downloads still record v0.7.5. This local edition has not been committed or deployed.
+Open the [reading PDF](book-build/Surviving-the-Singularity-v0.11.0.pdf), [EPUB](book-build/Surviving-the-Singularity-v0.11.0.epub), or [grayscale print interior](book-build/Surviving-the-Singularity-v0.11.0-print-interior.pdf). Previous source and deliveries remain in their worktrees. Public downloads still record v0.7.5. This local edition has not been committed or deployed.
 
 ---
 
@@ -19,17 +19,17 @@ truth](#book-content-the-single-source-of-truth).
 
 ## Open the local illustrated edition
 
-From this edition's worktree, run `node docs/v0.10.4/reader-proof/server.mjs`, then open
-[the chapter reader](http://localhost:5192/book) or
-[the continuous reader](http://localhost:5192/read). Both use the existing
+From this edition's worktree, run `npm run build`, then `node docs/v0.11.0/reader-proof/server.mjs` to preview that build. Open
+[the chapter reader](http://localhost:5193/book) or
+[the continuous reader](http://localhost:5193/read). Both use the existing
 draft-password gate. The new figures are part of the canonical manuscript,
 so both readers load the same edition.
 
 The three scenes appear within their chapters:
 
-- [Chapter 9](http://localhost:5192/book/chapter9): one harvest, five doors.
-- [Chapter 15](http://localhost:5192/book/chapter15): a growing bed and the inputs and outputs around it.
-- [Chapter 17](http://localhost:5192/book/chapter17): shared tools and the people and supplies that keep them useful.
+- [Chapter 9](http://localhost:5193/book/chapter9): one harvest, five doors.
+- [Chapter 15](http://localhost:5193/book/chapter15): a growing bed and the inputs and outputs around it.
+- [Chapter 17](http://localhost:5193/book/chapter17): shared tools and the people and supplies that keep them useful.
 
 Choose **Explore in 3D** to load a scene. Camera buttons and connection
 controls work with a keyboard. Static illustrations, captions, and text
@@ -71,14 +71,14 @@ It is not a sales page. It is not a course. It is a working draft of a book, a l
 - People who can feel the economic ground shifting under their feet and want a practical move, not another think piece.
 - Makers, builders, parents, teachers, anyone who would rather stay agentic than be passive cargo.
 
-For this local edition, start with [the Introduction](http://localhost:5192/book/introduction) after opening the draft reader.
+For this local edition, start with [the Introduction](http://localhost:5193/book/introduction) after opening the draft reader.
 
 ## What is on the site
 
 | Route | What it is |
 |-------|-----------|
 | [`/`](https://survivingthesingularity.com/) | Landing page and book offer. |
-| `/book` and `/book/[sectionId]` | Password-gated contents and chapter reader. The local routes above serve v0.10.4. |
+| `/book` and `/book/[sectionId]` | Password-gated contents and chapter reader. The local routes above serve v0.11.0. |
 | `/read` | Password-gated continuous reader, with the same illustrations and optional 3D scenes. |
 | [`/blog`](https://survivingthesingularity.com/blog) | Dispatches. Some philosophical, some profane. |
 | [`/about`](https://survivingthesingularity.com/about) | What this project is and is not. |

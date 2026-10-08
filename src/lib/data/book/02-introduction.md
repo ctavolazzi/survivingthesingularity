@@ -30,6 +30,8 @@ My call, for the record: AGI by Thanksgiving 2027. That's a forecast, not a law 
 
 And I'm not worried about the machines. I'm worried about two very specific things: missing our window to get this right, and what bad actors and sociopaths will do with it.
 
+*Surviving the Singularity* means keeping people fed, housed, and cared for as machines take on more of the work we're paid to do. It means having a say in who owns the tools and who gets their benefit. Start with food: a lost paycheck shouldn't decide whether your family eats. We can begin now, with farmers, cooks, neighbors, useful machines, and public institutions. My forecast may be wrong. A dependable dinner still matters. The work is making survival less precarious for everyone.
+
 ## The second ox
 
 ![Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.](/book-images/v101-cutout-atlas.png)

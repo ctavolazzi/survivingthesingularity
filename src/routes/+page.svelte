@@ -210,10 +210,10 @@
           <a href="https://www.google.com/search?q=open+source+robot+arm+$1000+home+2026+LeRobot+SO-100" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Open-source robotics</a>
         </div>
         <div class="ss-item">
-          <span class="ss-label">Safety net</span>
-          <div class="ss-figure"><span class="ss-num">0</span></div>
-          <span class="ss-desc">plans in place to catch displaced workers. <strong>No one is coming to save you.</strong></span>
-          <a href="https://www.google.com/search?q=government+AI+displacement+worker+protection+plan+2026" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">See for yourself</a>
+          <span class="ss-label">Food first</span>
+          <div class="ss-figure"><span class="ss-num">1</span></div>
+          <span class="ss-desc">place to start: <strong>make sure people eat, even when paid work changes.</strong></span>
+          <a href="/book" class="ss-src ss-src-link">Explore the proposal</a>
         </div>
       </div>
     </div>
@@ -274,38 +274,26 @@
     </div>
   </section>
 
-  <!-- BEFORE / AFTER -->
-  <section class="reality-section" aria-label="Without a plan vs with a plan">
+  <!-- SHARED SURVIVAL -->
+  <section class="reality-section" aria-labelledby="shared-survival-heading">
     <div class="reality-inner reveal">
-      <h2 class="reality-heading">Most people will get steamrolled.<br>You don't have to be one of them.</h2>
-      <div class="reality-diagram" aria-hidden="true">
-        <svg viewBox="0 0 600 170" preserveAspectRatio="xMidYMid meet">
-          <line x1="20" y1="85" x2="180" y2="85" class="rd-stem" />
-          <path class="rd-path rd-path-good" d="M180,85 C300,85 420,30 570,22" fill="none" />
-          <path class="rd-path rd-path-bad" d="M180,85 C300,85 420,140 570,148" fill="none" />
-          <circle class="rd-now" cx="180" cy="85" r="6" />
-          <text x="20" y="70" class="rd-label rd-label-dim">today</text>
-          <text x="430" y="14" class="rd-label rd-label-good">with a plan</text>
-          <text x="430" y="166" class="rd-label rd-label-bad">without one</text>
-        </svg>
-      </div>
+      <h2 id="shared-survival-heading" class="reality-heading">Your next meal shouldn't depend on your last paycheck.</h2>
+      <p class="reality-intro">As AI changes work, how do we make ordinary life more secure? Explore how neighbors, growers, useful machines, and public institutions can make necessities more dependable, starting with food. Find a way to take part.</p>
       <div class="reality-cols">
-        <div class="reality-col reality-col-bad">
-          <span class="reality-col-label">Without a plan</span>
+        <div class="reality-col">
+          <h3 class="reality-col-label">What is at stake</h3>
           <ul class="reality-list">
-            <li>You fall behind while others win</li>
-            <li>Every disruption makes your position worse</li>
-            <li>You scramble when others capitalize</li>
-            <li>You're the last to adapt. First to suffer.</li>
+            <li>Food access tied to a paycheck</li>
+            <li>Control of useful equipment</li>
+            <li>Decisions about public resources</li>
           </ul>
         </div>
-        <div class="reality-col reality-col-good">
-          <span class="reality-col-label">With a plan</span>
+        <div class="reality-col reality-col-action">
+          <h3 class="reality-col-label">Where you can act</h3>
           <ul class="reality-list">
-            <li>You see what's coming while others are blindsided</li>
-            <li>You build leverage most people won't even know exists</li>
-            <li>Disruptions become advantages. For you.</li>
-            <li>You level up while everyone else is still catching on.</li>
+            <li>Work with a local food provider on an unmet need</li>
+            <li>Help set ownership, repair, and access terms</li>
+            <li>Bring a concrete proposal to the body that can decide it</li>
           </ul>
         </div>
       </div>
@@ -318,7 +306,7 @@
       <div class="middle-inner">
 
         <div class="middle-facts reveal">
-          <h2 class="middle-heading">They don't want you to know the truth...<br>so here it is.</h2>
+          <h2 class="middle-heading">The tools matter.<br>So do the terms.</h2>
           <div class="middle-diagram" aria-hidden="true">
             <svg viewBox="0 0 560 210" preserveAspectRatio="xMidYMid meet">
               <line x1="30" y1="185" x2="540" y2="185" class="md-axis" />
@@ -334,8 +322,8 @@
           <ul class="middle-list">
             <li>AI is displacing workers right now. CEOs are tripping over themselves to cut headcount. It is not stopping.</li>
             <li>Robot capabilities that cost $100K in 2022 are available for under $1,000 today.</li>
-            <li>Most people are treating AI like the enemy. Fighting it. Resisting it. That is not going to work.</li>
-            <li>You can use the same tools ending other people's careers to build yours. Automate your survival. Get ahead.</li>
+            <li>Who owns a tool, who sets its terms, and who can use its output shape what it does for a community.</li>
+            <li>Find people working on food, useful equipment, or public decisions near you. Bring a skill, a question, or a concrete request.</li>
           </ul>
         </div>
 
@@ -1247,24 +1235,22 @@
   .reality-inner { max-width: min(900px, 100%); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
   .reality-heading {
     font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; line-height: 1.05;
-    letter-spacing: -0.03em; color: var(--text-1); margin-bottom: clamp(28px, 4vw, 44px);
+    letter-spacing: -0.03em; color: var(--text-1); margin-bottom: 24px;
   }
+  .reality-intro { max-width: 68ch; font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.7; color: var(--text-2); margin: 0 0 clamp(28px, 4vw, 44px); }
   .reality-cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 3vw, 32px); }
   @media (max-width: 640px) { .reality-cols { grid-template-columns: 1fr; } }
-  .reality-col { padding: clamp(20px, 3vw, 28px); border-radius: 16px; display: flex; flex-direction: column; gap: 0; }
-  .reality-col-bad { background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.12); }
-  .reality-col-good { background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.15); }
+  .reality-col { padding: clamp(20px, 3vw, 28px); border: 1px solid var(--border); border-radius: 16px; display: flex; flex-direction: column; gap: 0; }
+  .reality-col-action { background: rgba(245,158,11,0.04); border-color: rgba(245,158,11,0.2); }
   .reality-col-label {
     font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 14px; display: block;
+    text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 14px; display: block; color: var(--text-2);
   }
-  .reality-col-bad .reality-col-label { color: #f87171; }
-  .reality-col-good .reality-col-label { color: #34d399; }
+  .reality-col-action .reality-col-label { color: var(--amber); }
   .reality-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-  .reality-list li { font-size: clamp(0.92rem, 2vw, 1rem); color: var(--text-2); line-height: 1.55; padding-left: 0; }
-  .reality-col-bad .reality-list li, .reality-col-good .reality-list li { padding-left: 16px; position: relative; }
-  .reality-col-bad .reality-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: #f87171; }
-  .reality-col-good .reality-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: #34d399; }
+  .reality-list li { font-size: clamp(0.92rem, 2vw, 1rem); color: var(--text-2); line-height: 1.55; padding-left: 16px; position: relative; }
+  .reality-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--text-3); }
+  .reality-col-action .reality-list li::before { background: var(--amber); }
 
   /* MIDDLE SECTION */
   .middle-section { border-top: 1px solid var(--border); padding: clamp(56px, 9vw, 96px) 0; }
@@ -1383,28 +1369,6 @@
     .ev-cell-large .ev-media { aspect-ratio: 16/9; min-height: 0; flex: none; }
     .ev-cell-wide { grid-column: 1 / 3; }
     .ev-cell-wide .ev-media { aspect-ratio: 16/8; }
-  }
-
-  /* REALITY DIAGRAM */
-  .reality-diagram { max-width: 620px; margin: 0 auto clamp(28px, 4vw, 40px); }
-  .reality-diagram svg { width: 100%; height: auto; display: block; overflow: visible; }
-  .rd-stem { stroke: var(--text-4); stroke-width: 2; }
-  .rd-path { stroke-width: 2.5; stroke-dasharray: 480; stroke-dashoffset: 480; }
-  .rd-path-good { stroke: #10b981; }
-  .rd-path-bad { stroke: #f87171; stroke-dasharray: 6 7; opacity: 0.85; }
-  :global(.reality-inner.visible) .rd-path-good { animation: rd-draw 1.4s var(--ease-out) 0.2s forwards; }
-  :global(.reality-inner.visible) .rd-path-bad { animation: rd-fade 1.4s ease 0.2s forwards; }
-  @keyframes rd-draw { to { stroke-dashoffset: 0; } }
-  @keyframes rd-fade { from { opacity: 0; } to { opacity: 0.85; } }
-  .rd-path-bad { opacity: 0; }
-  .rd-now { fill: var(--amber); }
-  .rd-label { font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-  .rd-label-good { fill: #10b981; }
-  .rd-label-bad { fill: #f87171; }
-  .rd-label-dim { fill: var(--text-3); }
-  @media (prefers-reduced-motion: reduce) {
-    .rd-path { stroke-dashoffset: 0; }
-    .rd-path-bad { opacity: 0.85; }
   }
 
   /* MIDDLE DIAGRAM */

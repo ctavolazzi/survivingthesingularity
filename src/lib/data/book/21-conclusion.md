@@ -23,6 +23,18 @@ That's what I mean by asking whether it could all go right. The world remains co
 
 We don't have to agree on the most distant future to want that one.
 
+## A future called solarpunk
+
+One name for a future like that is solarpunk.
+
+On April 30, 2008, a blogger writing as John-Robert proposed the word for a literary genre, taking inspiration from a cargo ship using wind to supplement its engines. He imagined modern technology combined with older tools in an economy powered by renewables. [John-Robert, From Steampunk to Solarpunk](https://republicofthebees.blogspot.com/2008/04/from-steampunk-to-solarpunk.html)
+
+For this book, the useful idea is a future where renewable energy, repairable tools, and shared decisions make daily life more secure. Solar points toward the sun and the living world every machine depends on. Punk asks whose hands the tools are in. A working greenhouse, a shared workshop, and a funded meal route give that picture substance.
+
+In her 2014 National Book Foundation speech, Ursula K. Le Guin argued that writers can help people imagine alternatives to the way they live, and that arrangements of human power can be changed. [Le Guin, National Book Foundation Medal speech](https://www.ursulakleguin.com/nbf-medal)
+
+The picture is an invitation to work. Soil still needs tending. Somebody still has to fix the controller and deliver the meal. Hope gets useful when we give it a job.
+
 ## Hear the criticism inside the fear
 
 When somebody tells you a machine will take their livelihood, don't answer only with a demonstration of the machine. Ask what the livelihood has been holding up. Food. Rent. Medicine. Someone else's education. A little dignity at the end of a difficult week.
@@ -67,7 +79,7 @@ Humans weren't built to live the way we've been living. We didn't claw our way u
 
 So wake up. All the way up.
 
-Stop arguing. Stop waiting. Start building. And when you've found your footing, turn around and help everyone you can reach find theirs.
+Stop waiting. Show up. Start building. And when you've found your footing, turn around and help everyone you can reach find theirs.
 
 Food first. Then keep the promise growing.
 

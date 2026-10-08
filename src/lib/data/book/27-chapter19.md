@@ -186,6 +186,30 @@ Honesty about the obstacles is part of the plan.
 
 None of those is a reason to wait. Each rung stands on its own. A town that only ever gets to Rung 3 has still fed its people.
 
+## Get involved
+
+If you're worried about who controls this technology, give that concern somewhere to go. Talk to your government. Form a coalition with your peers. Get together with local business owners and petition your city council. Write a book. Pick a decision you want changed and work on it with other people.
+
+Take fucking action.
+
+Posting can recruit neighbors, share records, and get a proposal into people's hands. Connect that work to a request somebody has the power to grant: fund the kitchen, protect the water, put the machines into community ownership. Name the decision and the person or body responsible for it.
+
+Find the next meeting agenda. Check the public-comment rules and speaking limit. Write one request that fits the time: what you want, who it serves, and what the next step would cost. Bring the longer version for the record. Ask for a specific next step, such as a staff report or a budget item, and a date when you can follow up.
+
+Afterward, send the request in writing. Read the minutes. Find out whether anyone was assigned to act, and come back when the item returns. A speech starts a conversation; the follow-up keeps the request alive.
+
+If you can't get to the room, ask the clerk how to submit written comments or participate remotely. You can help research the proposal, call an office, recruit support, or arrange transport and childcare for someone who can attend. Organizing needs more than whoever holds the microphone.
+
+Tucson shows what a public decision can change, and where its reach ends. On August 6, 2025, its mayor and council ended negotiations over Project Blue's proposed city annexation and development agreement. They canceled the annexation hearing and removed the agreement from the next agenda. [City of Tucson, adopted motions](https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/motions-adopted-under-aug-6.pdf)
+
+The project continued outside city limits. Pima County documented activity at its construction site in May 2026. Residents could influence the council's decision; they couldn't settle every decision governing the project. That means finding the next authority and keeping at it. [Pima County, construction update](https://content.civicplus.com/api/assets/6063ed1f-cc11-4876-bbc8-d64025507660)
+
+[Rung 5](sts:sts.chapter19.b0035) gives the other half of the work: people organizing to own infrastructure and extend a service. You can press a council to refuse a deal or organize a cooperative to build something worth having. Both require people to make decisions together.
+
+Frederick Douglass put the demand plainly in 1857: "Power concedes nothing without a demand. It never did and it never will." [Douglass, speech excerpt](https://blogs.loc.gov/law/files/2020/05/2020-Law-Day-Public-Program-Booklet-042220.pdf)
+
+Make one. Then follow it through.
+
 ## What you can do this month
 
 - **If you work for a living:** find out what a food business near you does with food it can't sell, and ask a local food provider what need remains unmet. Bring those findings to one meeting.

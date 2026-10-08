@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 585" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">THE COGNITIVE FIREWALL</title>
+<desc id="desc">A suggested routine moves from incoming messages, through scheduled checks and paper notes, to a chosen task. A clock, ledger and workbench distinguish steps. Twice-daily checks are an example schedule rather than an experimentally measured optimum.</desc>
+<rect x="0" y="0" width="480" height="585" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="20" y="32" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">THE COGNITIVE FIREWALL</text>
+<path d="M20 48L460 48" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="78" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">A routine you can try, observe and adjust.</text>
+<text x="112" y="128" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">INCOMING</text>
+<text x="112" y="154" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Messages, feeds and alerts.</text>
+<text x="112" y="239" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">SCHEDULE CHECKS</text>
+<text x="112" y="265" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Try two timed windows each day.</text>
+<text x="112" y="286" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Adjust to the work and people involved.</text>
+<text x="112" y="353" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">MAKE NOTES</text>
+<text x="112" y="379" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Put useful findings in a paper ledger.</text>
+<text x="112" y="400" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Keep what the chosen task needs.</text>
+<text x="112" y="465" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="600">DO THE WORK</text>
+<text x="112" y="491" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Welds, beds, charters:</text>
+<text x="112" y="512" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">return to a task you chose.</text>
+<rect x="27" y="110" width="42" height="22" fill="#0f172a" stroke="#526176" stroke-width="1"/>
+<path d="M34 118L62 118" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<rect x="43" y="122" width="42" height="22" fill="#0f172a" stroke="#526176" stroke-width="1"/>
+<path d="M50 130L78 130" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<rect x="31" y="135" width="42" height="22" fill="#0f172a" stroke="#526176" stroke-width="1"/>
+<path d="M38 143L66 143" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<circle cx="57" cy="247" r="24" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<path d="M57 229V247L71 256" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M76.0 247.0L79.0 247.0" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M57.0 266.0L57.0 269.0" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M38.0 247.0L35.0 247.0" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M57.0 228.0L56.99999999999999 225.0" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M29 328H83V384H29Z" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M39 328L39 384" fill="none" stroke="#60a5fa" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M46 342L75 342" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M46 353L75 353" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M46 364L75 364" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M46 375L75 375" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M28 473H85M35 473V496M79 473V496M42 466V454H70V466" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M57 167L57 202" fill="none" stroke="#526176" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M52 195L57 202L62 195" fill="none" stroke="#526176" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M57 282L57 314" fill="none" stroke="#526176" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M52 307L57 314L62 307" fill="none" stroke="#526176" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M57 395L57 432" fill="none" stroke="#526176" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M52 425L57 432L62 425" fill="none" stroke="#526176" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M20 528L460 528" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="548" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">You run the queries; they do not run you.</text>
+</svg>

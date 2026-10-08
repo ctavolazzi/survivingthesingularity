@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 540" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">A second route must exist</title>
+<desc id="desc">A single-uplink network loses its connection when the tower fails. A four-node mesh routes around a failed link only because another powered and tested path remains.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">A second route must exist</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="80" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="600">ONE UPLINK IN THIS EXAMPLE</text>
+<path d="M226 162L240 111L254 162M232 139H248" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="240" cy="105" r="4" fill="#60a5fa" stroke="#60a5fa" stroke-width="1"/>
+<path d="M240 168L90 213" fill="none" stroke="#475569" stroke-width="1.3" stroke-dasharray="4 5"/>
+<circle cx="90" cy="220" r="9" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="90" y="248" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Home</text>
+<path d="M240 168L240 213" fill="none" stroke="#475569" stroke-width="1.3" stroke-dasharray="4 5"/>
+<circle cx="240" cy="220" r="9" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="240" y="248" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Home</text>
+<path d="M240 168L390 213" fill="none" stroke="#475569" stroke-width="1.3" stroke-dasharray="4 5"/>
+<circle cx="390" cy="220" r="9" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="390" y="248" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Home</text>
+<path d="M271 130L288 148M288 130L271 148" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="20" y="280" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Tower fails: this route is lost.</text>
+<path d="M20 302L460 302" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="334" font-size="14" fill="#f1f5f9" text-anchor="start" font-weight="600">MESH WITH AN ALTERNATE ROUTE</text>
+<path d="M110 373L220 373" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M260 373L370 373" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M232 365L248 381M248 365L232 381" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M110 373V449H370V373" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110" cy="373" r="9" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5"/>
+<circle cx="370" cy="373" r="9" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5"/>
+<circle cx="110" cy="449" r="9" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5"/>
+<circle cx="370" cy="449" r="9" fill="#0f172a" stroke="#f1f5f9" stroke-width="1.5"/>
+<text x="240" y="414" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">usable route below</text>
+<path d="M20 485L460 485" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="505" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Test coverage, power and a missing relay.</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 384" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">INK FOR WHAT IS FUNDED</title>
+<desc id="desc">Two calendar sheets distinguish funding secured through June from a proposed continuation. Delivery also depends on paid work, backup cover and clear communication with households. No year or invented schedule is shown.</desc>
+<rect width="480" height="384" fill="#ffffff"/>
+<text x="20" y="31" font-size="20" fill="#17251f" text-anchor="start" font-weight="600">INK FOR WHAT IS FUNDED</text>
+<path d="M20 46L460 46" fill="none" stroke="#9a4f13" stroke-width="2"/>
+<path d="M28 103H222V243H28Z" fill="#ffffff" stroke="#17251f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M252 103H446V243H252Z" fill="#ffffff" stroke="#4b5b52" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 4"/>
+<path d="M66 111V91" fill="none" stroke="#17251f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M184 111V91" fill="none" stroke="#17251f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M290 111V91" fill="none" stroke="#17251f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M408 111V91" fill="none" stroke="#17251f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="125" y="147" font-size="17" fill="#17251f" text-anchor="middle" font-weight="400">THROUGH JUNE</text>
+<text x="349" y="147" font-size="17" fill="#4b5b52" text-anchor="middle" font-weight="400">CONTINUATION</text>
+<path d="M45 161L205 161" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<path d="M269 161L429 161" fill="none" stroke="#a2afa6" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M82 202L106 220L165 180" fill="none" stroke="#9a4f13" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349" y="204" font-size="17" fill="#4b5b52" text-anchor="middle" font-weight="400">proposed</text>
+<text x="125" y="274" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Secured</text>
+<text x="349" y="274" font-size="14" fill="#17251f" text-anchor="middle" font-weight="400">Not yet promised</text>
+<path d="M20 302L460 302" fill="none" stroke="#a2afa6" stroke-width="1"/>
+<text x="20" y="322" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Name the cover. Pay for the work.</text>
+<text x="20" y="343" font-size="14" fill="#4b5b52" text-anchor="start" font-weight="400">Tell households what is actually secured.</text>
+</svg>

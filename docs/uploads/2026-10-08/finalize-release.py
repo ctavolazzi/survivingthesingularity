@@ -138,7 +138,11 @@ def stage_metadata(checks):
     mappings = {"ARCHIVE-INDEX.md": "README.md", "book-catalog.json": "book-archive-manifest.json",
                 "archive-transport.json": "archive-transport.json", "download-archive.py": "download-archive.py",
                 "solid-archive-report.json": "solid-archive-report.json",
-                "chunk-upload-receipt.json": "chunk-upload-receipt.json"}
+                "chunk-upload-receipt.json": "chunk-upload-receipt.json",
+                "SOURCE-PROVENANCE.md": "SOURCE-PROVENANCE.md",
+                "source-provenance.json": "source-provenance.json",
+                "recent-work.json": "recent-work.json",
+                "game-preview-work.patch": "game-preview-work.patch"}
     data = {name: (HERE / source).read_bytes() for name, source in mappings.items()}
     data["final-verification-receipt.json"] = (json.dumps(verification, indent=2) + "\n").encode()
     expected = []
@@ -190,7 +194,7 @@ def main():
     if args.self_test:
         self_test()
         return 0
-    # This connection survived the observed HTTP/2 upload inactivity failures.
+    # Use the HTTP/1 mode that passed the single-transfer probe.
     os.environ["GODEBUG"] = "http2client=0"
     receipt = {"schema": "sts-final-release-receipt/v1", "repository": REPO, "tag": TAG,
                "mode": "publish" if args.publish else "verify-only", "started_utc": chunks.stamp(),

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 624" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">BUILD REGIONAL CAPACITY</title>
+<desc id="desc">A town exchanges goods and services with nearby farms, materials recovery, power and water services, and workshops. This is a capacity-building objective. Coverage depends on stores, seasonal production, water, power, logistics and remaining imports, which must be measured.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">BUILD REGIONAL CAPACITY</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="79" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">A regional objective, not a closed economy.</text>
+<rect x="20" y="116" width="208" height="76" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<text x="124" y="144" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">FOOD</text>
+<text x="124" y="169" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Farms + kitchens</text>
+<rect x="252" y="116" width="208" height="76" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<text x="356" y="144" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">MATERIALS</text>
+<text x="356" y="169" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Recovery + stores</text>
+<rect x="20" y="398" width="208" height="76" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<text x="124" y="426" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">POWER + WATER</text>
+<text x="124" y="451" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Supply + upkeep</text>
+<rect x="252" y="398" width="208" height="76" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+<text x="356" y="426" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">WORKSHOPS</text>
+<text x="356" y="451" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Tools + repairs</text>
+<path d="M124 192V221H205V247M356 192V221H275V247M205 329V368H124V398M275 329V368H356V398" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="129" y="252" width="222" height="74" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="240" y="281" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">TOWN + HOUSEHOLDS</text>
+<text x="240" y="305" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">People do the work</text>
+<text x="20" y="509" font-size="14" fill="#60a5fa" text-anchor="start" font-weight="400">Still connected to outside suppliers.</text>
+<path d="M20 528L460 528" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="548" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Measure stores and seasonal production.</text>
+<text x="20" y="569" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Water, power and delivery limit coverage.</text>
+<text x="20" y="590" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Ask: what can we supply, and for how long?</text>
+</svg>

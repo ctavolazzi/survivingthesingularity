@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 562" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">A neighborhood fab lab</title>
+<desc id="desc">A printer, a metalworking station and a shared walk-behind tractor are tools for selected jobs. Suitable materials, trained people, maintenance and checking remain necessary. Commercial tractor forms are not labelled open source, and parts are not guaranteed fit for every application.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">A neighborhood fab lab</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="78" font-size="16" fill="#f1f5f9" text-anchor="start" font-weight="400">Suitable stock + usable salvage</text>
+<text x="20" y="102" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Materials, designs and spares come from outside.</text>
+<path d="M30 149H144V270H30Z" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M40 168L134 168" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M74 163H94V183H74Z" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M84 184V201M46 245H130M64 244V213H103V244" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M183 232H294M190 232V271M285 232V271M196 224H278" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M253 151L253 196L244 206" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M244 207L237 210" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+<path d="M244 207L251 213" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+<path d="M244 207L244 222" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+<circle cx="359" cy="247" r="21" fill="none" stroke="#f1f5f9" stroke-width="2"/>
+<circle cx="359" cy="247" r="8" fill="none" stroke="#f1f5f9" stroke-width="1.5"/>
+<circle cx="411" cy="247" r="16" fill="none" stroke="#f1f5f9" stroke-width="2"/>
+<path d="M358 203H408V232H358Z" fill="#0f172a" stroke="#f59e0b" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M380 203L422 159L444 159M365 232H414" fill="none" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="87" y="304" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Printer</text>
+<text x="240" y="304" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Metalwork</text>
+<text x="391" y="304" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Shared</text>
+<text x="391" y="324" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">tractor</text>
+<path d="M20 344L460 344" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="240" y="376" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Trained people · power · maintenance</text>
+<path d="M240 395L240 422" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M240 422L236.16459569116637 414.97933950487703" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M240 422L243.83540430883363 414.97933950487703" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M188 467V432H210V450H285V467Z" fill="#0f172a" stroke="#f1f5f9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="200" cy="443" r="3" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+<circle cx="270" cy="458" r="3" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+<text x="240" y="496" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Suitable, checked parts and field work</text>
+<path d="M20 521L460 521" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="541" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Open designs do not make every tool open source.</text>
+</svg>

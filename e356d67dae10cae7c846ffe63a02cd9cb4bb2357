@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 424" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">A library walks across town</title>
+<desc id="desc">A checked file moves between two computers on hand-carried storage. No live network link is required. Private material may be encrypted, but loss, copying, incompatible software and unsafe endpoints remain possible.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">A library walks across town</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="92" y="82" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Prepare</text>
+<text x="387" y="82" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">Receive</text>
+<path d="M28 118H158V204H28Z" fill="#0f172a" stroke="#60a5fa" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M44 140L128 140" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M44 155L128 155" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M44 170L128 170" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M93 205V222M65 223H121" fill="none" stroke="#60a5fa" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M323 118H453V204H323Z" fill="#0f172a" stroke="#60a5fa" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M339 140L423 140" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M339 155L423 155" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M339 170L423 170" fill="none" stroke="#475569" stroke-width="1"/>
+<path d="M388 205V222M360 223H416" fill="none" stroke="#60a5fa" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M215 126H248L265 143V200H215Z" fill="#0f172a" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M222 177L222 192" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M232 177L232 192" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M242 177L242 192" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M252 177L252 192" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<path d="M169 161L205 161" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M205 161L197.97933950487703 164.83540430883363" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M205 161L197.97933950487703 157.16459569116637" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M277 161L312 161" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M312 161L304.97933950487703 164.83540430883363" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<path d="M312 161L304.97933950487703 157.16459569116637" fill="none" stroke="#f1f5f9" stroke-width="1.6"/>
+<text x="92" y="251" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Check files</text>
+<text x="387" y="251" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Open + verify</text>
+<text x="240" y="286" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Carry a copy. No live link required.</text>
+<path d="M20 316L460 316" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="336" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Trusted handling and compatible software.</text>
+<text x="20" y="357" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Encrypt private material; keep a backup.</text>
+<text x="20" y="378" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Loss, copying and unsafe endpoints remain.</text>
+</svg>

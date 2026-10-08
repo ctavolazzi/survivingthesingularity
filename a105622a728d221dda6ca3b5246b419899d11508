@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 552" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">WHEN REPLENISHMENT BREAKS</title>
+<desc id="desc">An illustrative chain from disruption to delayed deliveries and pressure on local stock, with rerouting and replenishment as possible responses. No fixed countdown or inevitable collapse is implied.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">WHEN REPLENISHMENT BREAKS</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="20" y="77" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Illustrative sequence, not a four-day clock</text>
+<path d="M42 133L42 191" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M42 221L42 279" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M42 309L42 367" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<circle cx="42" cy="118" r="15" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<text x="42" y="124" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">1</text>
+<text x="72" y="124" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Upstream disruption</text>
+<text x="72" y="150" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">A port, supplier or ordering system fails.</text>
+<circle cx="42" cy="206" r="15" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<text x="42" y="212" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">2</text>
+<text x="72" y="212" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Deliveries delayed</text>
+<text x="72" y="238" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Stock arrives late or takes another route.</text>
+<circle cx="42" cy="294" r="15" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<text x="42" y="300" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">3</text>
+<text x="72" y="300" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Local buffer under pressure</text>
+<text x="72" y="326" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Demand and remaining stock set the pace.</text>
+<circle cx="42" cy="382" r="15" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+<text x="42" y="388" font-size="16" fill="#f1f5f9" text-anchor="middle" font-weight="400">4</text>
+<text x="72" y="388" font-size="17" fill="#f1f5f9" text-anchor="start" font-weight="400">Service response</text>
+<text x="72" y="414" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Reroute, replenish and prioritize needs.</text>
+<path d="M20 453L460 453" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="473" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">There is no universal time to empty shelves.</text>
+<text x="20" y="494" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Buffers, alternative routes, replenishment</text>
+<text x="20" y="515" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">and demand change the outcome.</text>
+</svg>

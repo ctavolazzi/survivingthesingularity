@@ -1,0 +1,2223 @@
+{
+  "schema": "sts-book-archive/v1",
+  "archive_date": "2026-10-08",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "release_tag": "book-archive-2026-10-08",
+  "scope": "Recovered local book editions, variants, compiled drafts and editable publication packages. Duplicate bytes are stored once. The tag identifies the archive inventory, not every original build source.",
+  "source_provenance": "source-provenance.json",
+  "summary": {
+    "candidate_files": 505,
+    "unique_artifacts": 149,
+    "unique_bytes": 3041969876,
+    "duplicate_copies": 356,
+    "versions_with_artifacts": [
+      "0.0.1",
+      "0.0.3",
+      "0.0.5",
+      "0.0.6",
+      "0.0.7",
+      "0.0.8",
+      "0.0.9",
+      "0.2",
+      "0.3.0",
+      "0.3.1",
+      "0.5.0",
+      "0.5.1",
+      "0.5.2",
+      "0.6.0",
+      "0.6.1",
+      "0.6.2",
+      "0.7.0",
+      "0.7.1",
+      "0.7.2",
+      "0.7.3",
+      "0.7.4",
+      "0.7.5",
+      "0.8.0",
+      "0.8.1",
+      "0.8.2",
+      "0.9.0",
+      "0.9.1",
+      "0.9.2",
+      "0.10.0",
+      "0.10.1",
+      "0.10.2",
+      "0.10.3",
+      "0.10.4",
+      "0.11.0",
+      "legacy-5.4",
+      "legacy-5.5",
+      "legacy-DRAFT",
+      "legacy-DRAFT_5.2",
+      "legacy-DRAFT_5.3",
+      "legacy-DRAFT_7",
+      "legacy-Draft5",
+      "legacy-Draft5.1",
+      "snapshot-2026-07-19",
+      "snapshot-2026-07-20",
+      "snapshot-2026-07-21",
+      "snapshot-2026-08-02"
+    ],
+    "missing_rendered_versions": [
+      "0.9.3"
+    ],
+    "artifacts_over_100_mib": [
+      "e32cacea64b6cd91e3113f680990c047d2cbf5e08f268399a12f88a3262b69fd",
+      "f416494cb207273b6d831dd049533f3a56ffbab82a929b16e696551da6e8e4dc",
+      "023b37aa3a983296c001b4b05dea440931b64950ae199aadb6cd19ebaf2469ef",
+      "bd4454e27ec046339fe092034af0b5cf5ecedc7772fde82926cee2caf12f13d5",
+      "c7746e04551331076e4cc54bf309568052e72ce29bdf22dd7099b60e1498bb83",
+      "c650deaf93c9cc686892386d41fcd2a2e6e430f3abfca0d075bd05b77534deac",
+      "111a3873c82340fad24d39934bb21825351675535f0242de988f28ed9b6b93d7"
+    ],
+    "candidate_archive_groups": 46,
+    "recommended_primary_artifacts": 103,
+    "preserve_additional_variants": 46
+  },
+  "artifacts": [
+    {
+      "name": "StS-Complete-Draft-v0.0.1.md",
+      "version": "0.0.1",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 164807,
+      "sha256": "97cfd8d55d18f4556f7bcfa88aece4e570aeb8bc6b12b1547fa92c1b715e6b08",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-v0.0.1.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-v0.0.1.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-v0.0.1.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-v0.0.3.md",
+      "version": "0.0.3",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 290157,
+      "sha256": "67b4efa91ba06d5ea37510e61b342d04325efe7aef0be23b20a39db2c17d7b03",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-v0.0.3.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-v0.0.3.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-v0.0.3.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-v0.0.5.md",
+      "version": "0.0.5",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 309847,
+      "sha256": "a5e19c9f816c0930a10f117de12018de1e35b179e535ee681598e74f16a6d13b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-v0.0.5.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-v0.0.5.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-v0.0.5.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-v0.0.6.md",
+      "version": "0.0.6",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 316304,
+      "sha256": "0a9e8162d159d2aeba0a585d3a833b745174d314b87681492d08dd56566626ab",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-v0.0.6.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-v0.0.6.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-v0.0.6.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-v0.0.7.md",
+      "version": "0.0.7",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 492838,
+      "sha256": "8384fdc208ba0602c06fad1ed3139cc5754ed22300f982039235aaa32a69e15d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-v0.0.7.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-v0.0.7.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-v0.0.7.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-v0.0.8.md",
+      "version": "0.0.8",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 521344,
+      "sha256": "e013487f64bbbf64407cc99e9cacff4216d8f4be821eab2609b68cacde476b32",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-v0.0.8.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-v0.0.8.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-v0.0.8.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-v0.0.9.md",
+      "version": "0.0.9",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 530602,
+      "sha256": "d4967c9f1e43d305bbfd39b6ff22efa79a84e2045235721788ba5812df173f05",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-v0.0.9.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-v0.0.9.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-v0.0.9.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+      "version": "0.2",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 250724,
+      "sha256": "3ca3e2c8500ab88d74678e8b2a67a59eabf3fdd9fdbf1b2c9bfe089c1d61060d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.10.1/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.10.2/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.10.3/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.10.4/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.11.0/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.7.3/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.8.0/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.8.1/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.8.2/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.9.0/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.9.1/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.9.2/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/sts-v0.9.3/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf",
+        "active/survivingthesingularity/manuscript/Surviving-the-Singularity-Book-Draft-v0.2.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.3.0.epub",
+      "version": "0.3.0",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16483456,
+      "sha256": "5c0cfa4dee2cf3a98d83df740d1d844402295b27dae87f4027c200a315022c4f",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.3.0.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.3.0.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.3.0.pdf",
+      "version": "0.3.0",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 16845507,
+      "sha256": "df542489c42ba26ed4873b3dae2f4865a44ebd1e92dc9c42d566296be3e56f51",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.3.0.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.3.0.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.3.1.epub",
+      "version": "0.3.1",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16483533,
+      "sha256": "96026756c720ad45ef18a4ca7be98b7d4ca92ce0c6e21b7efb3843a34e774503",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.3.1.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.3.1.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.3.1.pdf",
+      "version": "0.3.1",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 16845482,
+      "sha256": "5025501ebb99f0d84ceda6abb3b9d1aa5f4e0551d613faba026d311b82f84cde",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.3.1.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.3.1.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.0.epub",
+      "version": "0.5.0",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16537578,
+      "sha256": "d231d16fb7cdbc22a4a0ef9eae63b82113bbec5c0a2947ca165783ca81b5665d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.0.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.0.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.0.pdf",
+      "version": "0.5.0",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 17212205,
+      "sha256": "31180d542945b593e6baa3de96d1f79ccf3c2da1dd6363bd035cd1c4e81f8e91",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.0.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.0.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.1.epub",
+      "version": "0.5.1",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16538268,
+      "sha256": "a371f1003c98850c98f1c67c6504958527376dc586473925d42610dc4595caa5",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.1.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.1.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.1.pdf",
+      "version": "0.5.1",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 17259480,
+      "sha256": "23f88a9ac3502ef66627d5b22084741ae86fd04ce4852587b1a9adf4abe7aad9",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.1.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.1.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.2.epub",
+      "version": "0.5.2",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16538279,
+      "sha256": "9f2980d284301ca6a01fdcc76a964359a98d7fe8ce9b17ebe1f8a684bca37e24",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.2.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.2.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.2-DELUXE.pdf",
+      "version": "0.5.2",
+      "kind": "reading",
+      "variant": "deluxe",
+      "bytes": 17403840,
+      "sha256": "6f74b99c7dd874646fa7286078b4e1b03e3984f72f69b0a33d9e805ca2a1e7bb",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.2-DELUXE.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.2-DELUXE.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.2.pdf",
+      "version": "0.5.2",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 17259628,
+      "sha256": "52e469e39483955525a3c4af223a3b033d0e326f10eb3fc6c28b24b4d0ad5e42",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.2.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.2.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.5.2-PLAIN.pdf",
+      "version": "0.5.2",
+      "kind": "reading",
+      "variant": "plain",
+      "bytes": 2101979,
+      "sha256": "95f4e44d232c39bbce65575adec5b74e93ce7f9fc6fbc502a22c343360aafd80",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.5.2-PLAIN.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.5.2-PLAIN.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.6.0.epub",
+      "version": "0.6.0",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16540721,
+      "sha256": "48273c8b1f35f5e35f01fa9f5b1c85e3c9397c33b3b52db405f13e613000f331",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.6.0.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.6.0.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.6.0.pdf",
+      "version": "0.6.0",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 17264860,
+      "sha256": "35e9fecf76e0d3afa06b759b51fb8f65f5898bc0c67e4a8717ff067f51c29102",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.6.0.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.6.0.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.6.1.epub",
+      "version": "0.6.1",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16541527,
+      "sha256": "ffdf6484ef1e2dffba6f99a15121aeded88d26bcdd3e05c4832c4be7a2104a05",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.6.1.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.6.1.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.6.1.pdf",
+      "version": "0.6.1",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 17266588,
+      "sha256": "332be18b3f027dfaacd454e67c76c7b6d48f1cf6288fddbd0b620775f9964326",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.6.1.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.6.1.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.6.2.epub",
+      "version": "0.6.2",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16541523,
+      "sha256": "f12717105950cab1fc6976d6a5ab37cbc14410e861f794db1297a6906e7b0b27",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.6.2.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.6.2.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.6.2.pdf",
+      "version": "0.6.2",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 17266581,
+      "sha256": "187c386a01a00ab422bac9e9e20c4b56bdb7f2d4b2b58a878fa520f57da0bbbc",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.6.2.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.6.2.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.0.epub",
+      "version": "0.7.0",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 16738744,
+      "sha256": "a375f713382c0c48e968d68036eec268b5e1484a42d04932c396ad88339dc2f0",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.0.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.7.0.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.0.pdf",
+      "version": "0.7.0",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 17503684,
+      "sha256": "f63ae81d32288b163f4c6a45c15002faa300f47a6df62b1a072d5f83768c6b0e",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.0.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.7.0.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.1.epub",
+      "version": "0.7.1",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 20664297,
+      "sha256": "82771834caf1b27ea6fe5060d20f75b00c16034b0ed0efb0210500f9be3947a9",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.1.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.7.1.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.1.pdf",
+      "version": "0.7.1",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 21921376,
+      "sha256": "0996d5932129bbc9a872e8dc9f94a8049ba197c943ff1e0974e8b72a492f594f",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.1.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.7.1.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.2.epub",
+      "version": "0.7.2",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 20664299,
+      "sha256": "cc6d846d2645cb1b114ec62ffbaf38d08ec524b738203d1c631173311b10bb4f",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.2.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.7.2.epub",
+        "active/survivingthesingularity/manuscript/bonus/dist/The-Precedent-File/book/Surviving-the-Singularity.epub",
+        "active/survivingthesingularity/static/downloads/Surviving-the-Singularity-v0.7.2.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.2.pdf",
+      "version": "0.7.2",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 21921406,
+      "sha256": "86d6773c3c960403e12add0f112271397ce1d4c61724bb2a69dd637faea4d018",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.2.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-v0.7.2.pdf",
+        "active/survivingthesingularity/manuscript/bonus/dist/The-Precedent-File/book/Surviving-the-Singularity.pdf",
+        "active/survivingthesingularity/static/downloads/Surviving-the-Singularity-v0.7.2.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.3.epub",
+      "version": "0.7.3",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 20670710,
+      "sha256": "bcc9c1955fe66960a66655d80cbd3c9e73f8b05dade4e6690e895ad5d7415442",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.3.epub",
+      "original_paths": [
+        "active/sts-v0.7.3/book-build/Surviving-the-Singularity-v0.7.3.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.3.pdf",
+      "version": "0.7.3",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 21936863,
+      "sha256": "cc2d758e31ba5c407cb69937035aacd4f8b348de79651376f781e03960f7bb76",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.3.pdf",
+      "original_paths": [
+        "active/sts-v0.7.3/book-build/Surviving-the-Singularity-v0.7.3.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.4.epub",
+      "version": "0.7.4",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 22142881,
+      "sha256": "d64b608b3fd1820ce7d183b6142c996b880d97319d160c022dc41cc1bc210022",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.4.epub",
+      "original_paths": [
+        "active/sts-v0.10.0/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.10.1/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.10.2/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.10.3/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.10.4/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.11.0/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.7.3/book-build/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.7.3/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.8.0/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.8.1/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.8.2/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.9.0/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.9.1/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.9.2/static/downloads/Surviving-the-Singularity-v0.7.4.epub",
+        "active/sts-v0.9.3/static/downloads/Surviving-the-Singularity-v0.7.4.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.4.pdf",
+      "version": "0.7.4",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 23428861,
+      "sha256": "0a1839c7f746925440482dbb972b2be8003f779d956c2397c9b20d1e73cb7c4e",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.4.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.10.1/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.10.2/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.10.3/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.10.4/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.11.0/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.7.3/book-build/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.7.3/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.8.0/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.8.1/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.8.2/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.9.0/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.9.1/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.9.2/static/downloads/Surviving-the-Singularity-v0.7.4.pdf",
+        "active/sts-v0.9.3/static/downloads/Surviving-the-Singularity-v0.7.4.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.5.epub",
+      "version": "0.7.5",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 22170885,
+      "sha256": "89f6ae51f197f84fe940ad15cf00456a8cc8592f3e7ff9d100672af000b93831",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.5.epub",
+      "original_paths": [
+        "active/sts-v0.10.0/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.10.1/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.10.2/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.10.3/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.10.4/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.11.0/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.7.3/book-build/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.7.3/manuscript/bonus/dist/The-Precedent-File/book/Surviving-the-Singularity.epub",
+        "active/sts-v0.7.3/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.8.0/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.8.1/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.8.2/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.9.0/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.9.1/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.9.2/static/downloads/Surviving-the-Singularity-v0.7.5.epub",
+        "active/sts-v0.9.3/static/downloads/Surviving-the-Singularity-v0.7.5.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.7.5.pdf",
+      "version": "0.7.5",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 23463333,
+      "sha256": "c7b8cfea6227d581bc24df2a643349a47e9ca1b2bb1f6dc74dbc19bba345e173",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.7.5.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.10.1/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.10.2/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.10.3/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.10.4/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.11.0/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.7.3/book-build/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.7.3/manuscript/bonus/dist/The-Precedent-File/book/Surviving-the-Singularity.pdf",
+        "active/sts-v0.7.3/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.8.0/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.8.1/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.8.2/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.9.0/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.9.1/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.9.2/static/downloads/Surviving-the-Singularity-v0.7.5.pdf",
+        "active/sts-v0.9.3/static/downloads/Surviving-the-Singularity-v0.7.5.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.0-render-input-markdown.md",
+      "version": "0.8.0",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 268091,
+      "sha256": "684e8e5b37511ebd2d8715bb26e3278d81dcd1566f7b952905c711fe0e399590",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.0-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.0/book-build/v0.8.0-source/manuscript.md",
+        "active/sts-v0.8.0/book-build/v0.8.0-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.0.pdf",
+      "version": "0.8.0",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 19520687,
+      "sha256": "fb3fa74d912927bbec5b5f96c3b51104760da4eb56d593e1eb9d62fbed9dbe78",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.0.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.0/book-build/Surviving-the-Singularity-v0.8.0.pdf",
+        "active/sts-v0.8.0/book-build/Surviving-the-Singularity-v0.8.0.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.1-render-input-markdown.md",
+      "version": "0.8.1",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 312215,
+      "sha256": "0ab8f0c722d21605524fa63e40bd9ae63fadc9d7e7419500dc1d4d1eab051a50",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.1-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.1/book-build/v0.8.1-source/manuscript.md",
+        "active/sts-v0.8.1/book-build/v0.8.1-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.1.pdf",
+      "version": "0.8.1",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 19473938,
+      "sha256": "169e6218f6ac7168fdf9b3c224e9931c681eeb1e1b08ce2bd19f73ad99ce100b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.1.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.1/book-build/Surviving-the-Singularity-v0.8.1.pdf",
+        "active/sts-v0.8.1/book-build/Surviving-the-Singularity-v0.8.1.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-editable-package-editable_package.zip",
+      "version": "0.8.2",
+      "kind": "editable_package",
+      "variant": "editable-package",
+      "bytes": 48288286,
+      "sha256": "b264ed18ee9fe6420da50dc71e44a699ecd3059cb3f8a0db6091e0817a812c9a",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-editable-package-editable_package.zip",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/Surviving-the-Singularity-editable-publication.zip",
+        "active/sts-v0.8.2/publication/output/Surviving-the-Singularity-editable-publication.zip"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-01-front-cover.pdf",
+      "version": "0.8.2",
+      "kind": "front-cover",
+      "variant": "proof-01",
+      "bytes": 253611,
+      "sha256": "2beef2af5cbd61eeddb01af7279e54c1fb43f356e702c6e9f31b324cc0f1d7a2",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-01-front-cover.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-01/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.8.2/publication/output/proof-01/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-02-front-cover.pdf",
+      "version": "0.8.2",
+      "kind": "front-cover",
+      "variant": "proof-02",
+      "bytes": 312390,
+      "sha256": "686e22e359d4ed436789e2f02fb283994b2ca4ee38e13070d608ca4e699cca0e",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-02-front-cover.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-02/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-04/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.8.2/publication/output/proof-02/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.8.2/publication/output/proof-04/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-publication-render-front-cover.pdf",
+      "version": "0.8.2",
+      "kind": "front-cover",
+      "variant": "publication-render",
+      "bytes": 312390,
+      "sha256": "d394a10ace35e566da9b3ba6515b180ee594df5edb051396eb8ac603cf864cb5",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-publication-render-front-cover.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-final/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-output/proof/final-review/final-Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-package-pdfs/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.8.2/publication/output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.8.2/publication/output/proof-final/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.8.2/publication/output/proof/final-review/final-Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.8.2/publication/package/pdfs/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-01-interior.pdf",
+      "version": "0.8.2",
+      "kind": "interior",
+      "variant": "proof-01",
+      "bytes": 13622666,
+      "sha256": "3438516a4d50354b8446f53c8b13082d47428e418a013348dcc064f04efe4b02",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-01-interior.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-01/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.8.2/publication/output/proof-01/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-02-interior.pdf",
+      "version": "0.8.2",
+      "kind": "interior",
+      "variant": "proof-02",
+      "bytes": 13748923,
+      "sha256": "b5185d11ffdf9e6073d99e4fd2a5546a8fb58affdce172a3a1aa3204d2e0e417",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-02-interior.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-02/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.8.2/publication/output/proof-02/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-04-interior.pdf",
+      "version": "0.8.2",
+      "kind": "interior",
+      "variant": "proof-04",
+      "bytes": 13167164,
+      "sha256": "e2254594f7c9caa6e5cc417dbb28be35d0c967fac95c215ade8f8b63e3438bbc",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-04-interior.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-04/Surviving-the-Singularity-interior.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-output/proof/contact/interior-e2254594f7c9.pdf",
+        "active/sts-v0.8.2/publication/output/proof-04/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.8.2/publication/output/proof/contact/interior-e2254594f7c9.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-final-interior.pdf",
+      "version": "0.8.2",
+      "kind": "interior",
+      "variant": "proof-final",
+      "bytes": 13157801,
+      "sha256": "377d973b826579111c8cb030a95c73d7e9fe19381de5214b5143acad6f46638a",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-final-interior.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-final/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.8.2/publication/output/proof-final/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-publication-render-interior.pdf",
+      "version": "0.8.2",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 13157810,
+      "sha256": "554e9988db2d765da6f99b99d16e2f9b67cedba36052f39e160ce67989ad5c7d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-output/proof/contact/interior-554e9988db2d.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-output/proof/final-review/final-Surviving-the-Singularity-interior.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-package-pdfs/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.8.2/publication/output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.8.2/publication/output/proof/contact/interior-554e9988db2d.pdf",
+        "active/sts-v0.8.2/publication/output/proof/final-review/final-Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.8.2/publication/package/pdfs/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-render-input-markdown.md",
+      "version": "0.8.2",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 371694,
+      "sha256": "8fff7e3eb1615d37a000d6fcc02a7b7542d86eeabac022c0ce1f624188774d82",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/book-build/v0.8.2-source/manuscript.md",
+        "active/sts-v0.8.2/book-build/v0.8.2-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-print-converted-print-interior.pdf",
+      "version": "0.8.2",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 7572104,
+      "sha256": "5dd949a4b02ad851afab4057f05ef25cd30d9cbf8f9e81699d54655ffbc60b69",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/print-converted.pdf",
+        "active/sts-v0.8.2/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-publication-render-print-interior.pdf",
+      "version": "0.8.2",
+      "kind": "print-interior",
+      "variant": "publication-render",
+      "bytes": 7718646,
+      "sha256": "92de382066ba06acf9eb4ddf088a17fd792895bf7e8af711c879a61c25eab1c0",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-publication-render-print-interior.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-output/proof/final-review/final-Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-package-pdfs/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.8.2/publication/output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.8.2/publication/output/proof/final-review/final-Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.8.2/publication/package/pdfs/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2.pdf",
+      "version": "0.8.2",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 19534748,
+      "sha256": "a78fa51a12dc71f4f417e6c563fa80bbf8cb4747f8ed3246677ba6264666ea47",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/book-build/Surviving-the-Singularity-v0.8.2.pdf",
+        "active/sts-v0.8.2/book-build/Surviving-the-Singularity-v0.8.2.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-01-reading.pdf",
+      "version": "0.8.2",
+      "kind": "reading",
+      "variant": "proof-01",
+      "bytes": 13624380,
+      "sha256": "f14d3207a46becc830bddd77f4c604307091424d22e662f5b178399bb0f31efa",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-01-reading.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-01/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.8.2/publication/output/proof-01/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-proof-02-reading.pdf",
+      "version": "0.8.2",
+      "kind": "reading",
+      "variant": "proof-02",
+      "bytes": 14294870,
+      "sha256": "ebe81750e547f1dfb838de972549e06df5e0e071d72364a541dddc82ba443f1e",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-proof-02-reading.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/proof-02/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.8.2/publication/output/proof-02/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.8.2-publication-render-reading.pdf",
+      "version": "0.8.2",
+      "kind": "reading",
+      "variant": "publication-render",
+      "bytes": 13696456,
+      "sha256": "4d8e4a441cf2e476ee45d0ab77bde8028cd4da9c0305e2ac111196241ac11c9e",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.8.2-publication-render-reading.pdf",
+      "original_paths": [
+        "active/sts-edition-archive/v0.8.2/publication-output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-edition-archive/v0.8.2/publication-package-pdfs/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.8.2/publication/output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.8.2/publication/package/pdfs/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.0-render-input-markdown.md",
+      "version": "0.9.0",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 520333,
+      "sha256": "c33373d77bd9f23515b9a9c3d6d402293b0b70cdd3b46afb6567d8096feb2ca6",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.0-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.9.0/book-build/v0.9.0-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.0.pdf",
+      "version": "0.9.0",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 23181879,
+      "sha256": "5dc84adb165b87f615389cec0f187c332253698b691c3464a23ca629624e4016",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.0.pdf",
+      "original_paths": [
+        "active/sts-v0.9.0/book-build/Surviving-the-Singularity-v0.9.0.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.1-publication-render-front-cover.pdf",
+      "version": "0.9.1",
+      "kind": "front-cover",
+      "variant": "publication-render",
+      "bytes": 4060296,
+      "sha256": "24592530ebcd60aefd1a55844b8abd906ca804a6eda43aac029119b03e24e68d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.1-publication-render-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.9.1/publication/output/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.1-publication-render-interior.pdf",
+      "version": "0.9.1",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 17245139,
+      "sha256": "f14d118ff5f51df44a41db19179115aa94118c48393a81e84d9fa3ce2523c4f9",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.1-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.9.1/publication/output/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.1-render-input-markdown.md",
+      "version": "0.9.1",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 526786,
+      "sha256": "09d4114addc4f9c59e4bb99d6419aa0186f549807b4f56e78a2b8636c63d4792",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.1-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.9.1/book-build/v0.9.1-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.1-print-converted-print-interior.pdf",
+      "version": "0.9.1",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 182465932,
+      "sha256": "c650deaf93c9cc686892386d41fcd2a2e6e430f3abfca0d075bd05b77534deac",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.1-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.9.1/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.1-publication-render-print-interior.pdf",
+      "version": "0.9.1",
+      "kind": "print-interior",
+      "variant": "publication-render",
+      "bytes": 189751386,
+      "sha256": "111a3873c82340fad24d39934bb21825351675535f0242de988f28ed9b6b93d7",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.1-publication-render-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.9.1/publication/output/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.1.pdf",
+      "version": "0.9.1",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 21805199,
+      "sha256": "c0ecb65c87e968be17d27189ad5061ae403c3d9fca8e15baac4cfa30ebc477a0",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.1.pdf",
+      "original_paths": [
+        "active/sts-v0.9.1/book-build/Surviving-the-Singularity-v0.9.1.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.1-publication-render-reading.pdf",
+      "version": "0.9.1",
+      "kind": "reading",
+      "variant": "publication-render",
+      "bytes": 21713709,
+      "sha256": "1a7c224f66c0db7dc61dc7d2e9d9e145f990ecefec4a9a944672d43950538ec2",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.1-publication-render-reading.pdf",
+      "original_paths": [
+        "active/sts-v0.9.1/publication/output/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2.epub",
+      "version": "0.9.2",
+      "kind": "epub",
+      "variant": "edition",
+      "bytes": 22174451,
+      "sha256": "87d348906abf511c059ae8f2d787d45d9d8eaf839fb4bfdcb1ce73e673c20bc0",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2.epub",
+      "original_paths": [
+        "active/sts-v0.9.2/book-build/Surviving-the-Singularity-v0.9.2.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2-publication-render-front-cover.pdf",
+      "version": "0.9.2",
+      "kind": "front-cover",
+      "variant": "publication-render",
+      "bytes": 4060296,
+      "sha256": "dbdda5496b604e28f23e6eb148bcf4609b5192690b76339b3868f24f1f8e4564",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2-publication-render-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.9.2/publication/output/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2-publication-render-interior.pdf",
+      "version": "0.9.2",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 16000914,
+      "sha256": "0f8dd2610418e814264f9b9739ab1762638e190a693beaa3b63aed53e59f613a",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.9.2/publication/output/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2-render-input-markdown.md",
+      "version": "0.9.2",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 598116,
+      "sha256": "f0deb5af0dc02c54354dabcb2fffeae064c24530f6cd6a8754509311bb469463",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.9.2/book-build/v0.9.2-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2-print-converted-print-interior.pdf",
+      "version": "0.9.2",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 9978633,
+      "sha256": "a00a3835960e2f1daa60d535885f4ae91d3fcb3889cf2447899f5b824ff3be16",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.9.2/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2-publication-render-print-interior.pdf",
+      "version": "0.9.2",
+      "kind": "print-interior",
+      "variant": "publication-render",
+      "bytes": 10241756,
+      "sha256": "eade001012a94c540899bfb5097222d9a316549bcdf0223fbc9a342b7a5f1fb3",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2-publication-render-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.9.2/publication/output/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2.pdf",
+      "version": "0.9.2",
+      "kind": "reading",
+      "variant": "edition",
+      "bytes": 21954266,
+      "sha256": "58d2882a42104d41e8afe9f0a126c1e543b58ee6a9842bb9ff6f934148e211fd",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2.pdf",
+      "original_paths": [
+        "active/sts-v0.9.2/book-build/Surviving-the-Singularity-v0.9.2.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2-epub-review.pdf",
+      "version": "0.9.2",
+      "kind": "reading",
+      "variant": "epub-review",
+      "bytes": 21983027,
+      "sha256": "7a04951d8667de77e203de1eb083edaad2a7a9dd483dfff8ea360fd178f7acc6",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2-epub-review.pdf",
+      "original_paths": [
+        "active/sts-v0.9.2/book-build/Surviving-the-Singularity-v0.9.2-epub-review.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.9.2-publication-render-reading.pdf",
+      "version": "0.9.2",
+      "kind": "reading",
+      "variant": "publication-render",
+      "bytes": 20495169,
+      "sha256": "94bcb627825f481422c8a9481c6b4f6bf7dac6b5b3d27356ba03f4146074ea36",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.9.2-publication-render-reading.pdf",
+      "original_paths": [
+        "active/sts-v0.9.2/publication/output/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0-final-delivery-editable_package.zip",
+      "version": "0.10.0",
+      "kind": "editable_package",
+      "variant": "final-delivery",
+      "bytes": 70553120,
+      "sha256": "296c862c8f7a433ed4ed2cab85846acd246a1ec62c19b1d430f7f34cd52e765f",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0-final-delivery-editable_package.zip",
+      "original_paths": [
+        "active/sts-v0.10.0/publication/output/Surviving-the-Singularity-v0.10.0-editable-publication.zip"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0.epub",
+      "version": "0.10.0",
+      "kind": "epub",
+      "variant": "final-delivery",
+      "bytes": 19205713,
+      "sha256": "f146be78174ae328e1daeb92b03be9e278ec443f3cf58b235cba7af64ed9e986",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0.epub",
+      "original_paths": [
+        "active/sts-v0.10.0/book-build/Surviving-the-Singularity-v0.10.0.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0-front-cover.pdf",
+      "version": "0.10.0",
+      "kind": "front-cover",
+      "variant": "final-delivery",
+      "bytes": 4060296,
+      "sha256": "bf73bbc6f47bc8b56ff60cda26231d133c9ab4430dbf7b51c26ad5502529fdfc",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/book-build/Surviving-the-Singularity-v0.10.0-front-cover.pdf",
+        "active/sts-v0.10.0/publication/output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.10.0/publication/package-v0.10.0/pdfs/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0-publication-render-interior.pdf",
+      "version": "0.10.0",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 16063228,
+      "sha256": "897183981e282cf32d219a67256d794572ab59f9bce257ded27d630f09384fec",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/publication/output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.10.0/publication/package-v0.10.0/pdfs/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0.md",
+      "version": "0.10.0",
+      "kind": "markdown",
+      "variant": "final-delivery",
+      "bytes": 606253,
+      "sha256": "789ad0adef5b9a8b9777eeca6b09772e7ff4f4087429ba2347725a10a6d87e2b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/Surviving-the-Singularity-v0.10.0.md",
+        "active/sts-v0.10.1/manuscript/Surviving-the-Singularity-v0.10.0.md",
+        "active/sts-v0.10.2/manuscript/Surviving-the-Singularity-v0.10.0.md",
+        "active/sts-v0.10.3/manuscript/Surviving-the-Singularity-v0.10.0.md",
+        "active/sts-v0.10.4/manuscript/Surviving-the-Singularity-v0.10.0.md",
+        "active/sts-v0.11.0/manuscript/Surviving-the-Singularity-v0.10.0.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0-render-input-markdown.md",
+      "version": "0.10.0",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 608834,
+      "sha256": "4c4518d51d109528ab7ca0e44b4473f0a5647347bfd7e5669ad8b88457ce223f",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.10.0/book-build/v0.10.0-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0-print-interior.pdf",
+      "version": "0.10.0",
+      "kind": "print-interior",
+      "variant": "final-delivery",
+      "bytes": 10296924,
+      "sha256": "4f5e2b7da63b7f63c5a37034094430fd44b6fdf362bc7d0167f38822bf9cf569",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/book-build/Surviving-the-Singularity-v0.10.0-print-interior.pdf",
+        "active/sts-v0.10.0/publication/output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.10.0/publication/package-v0.10.0/pdfs/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0-print-converted-print-interior.pdf",
+      "version": "0.10.0",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 10019985,
+      "sha256": "f8572c66fc11b408fc07ad21d78f13ac2a64ab169f7bb5253975774c0e606f6b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0-before-visual-corrections.pdf",
+      "version": "0.10.0",
+      "kind": "reading",
+      "variant": "before-visual-corrections",
+      "bytes": 20589237,
+      "sha256": "5dc7c96f2225a9abd3c4ddd75fb713229ec7c9f57bcba412ccce2a8208854281",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0-before-visual-corrections.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/book-build/Surviving-the-Singularity-v0.10.0-before-visual-corrections.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.0.pdf",
+      "version": "0.10.0",
+      "kind": "reading",
+      "variant": "final-delivery",
+      "bytes": 20575004,
+      "sha256": "b9c0c84bab4b4f981ed06b47ce7f6f476f899c0a761734e7dba0bb4c47e4e0d9",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.0.pdf",
+      "original_paths": [
+        "active/sts-v0.10.0/book-build/Surviving-the-Singularity-v0.10.0.pdf",
+        "active/sts-v0.10.0/publication/output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.10.0/publication/package-v0.10.0/pdfs/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1-final-delivery-editable_package.zip",
+      "version": "0.10.1",
+      "kind": "editable_package",
+      "variant": "final-delivery",
+      "bytes": 105099274,
+      "sha256": "e32cacea64b6cd91e3113f680990c047d2cbf5e08f268399a12f88a3262b69fd",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1-final-delivery-editable_package.zip",
+      "original_paths": [
+        "active/sts-v0.10.1/publication/output/Surviving-the-Singularity-v0.10.1-editable-publication.zip"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1.epub",
+      "version": "0.10.1",
+      "kind": "epub",
+      "variant": "final-delivery",
+      "bytes": 30215141,
+      "sha256": "f6a054c3bdd536aace8fb548bdf0ccb55dd94634f1c5607580564f6ec1bfd15d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1.epub",
+      "original_paths": [
+        "active/sts-v0.10.1/book-build/Surviving-the-Singularity-v0.10.1.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1-front-cover.pdf",
+      "version": "0.10.1",
+      "kind": "front-cover",
+      "variant": "final-delivery",
+      "bytes": 4060298,
+      "sha256": "e1129c884a648514de935599ff20d619426f5ab5c703a96c6eb807bd0e932e16",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.10.1/book-build/Surviving-the-Singularity-v0.10.1-front-cover.pdf",
+        "active/sts-v0.10.1/publication/output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.10.1/publication/package-v0.10.1/pdfs/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1-publication-render-interior.pdf",
+      "version": "0.10.1",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 27185491,
+      "sha256": "8c47246769808fffdb1a47bf0e6c038624aea94039911d6d34721f2a3690c946",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.1/publication/output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.10.1/publication/package-v0.10.1/pdfs/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1.md",
+      "version": "0.10.1",
+      "kind": "markdown",
+      "variant": "final-delivery",
+      "bytes": 619073,
+      "sha256": "8b94ff52842a1562b77fab4e7d4bb8d07bcf9d377cbdf1fd722f30fa84d17b48",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1.md",
+      "original_paths": [
+        "active/sts-v0.10.1/manuscript/Surviving-the-Singularity-v0.10.1.md",
+        "active/sts-v0.10.2/manuscript/Surviving-the-Singularity-v0.10.1.md",
+        "active/sts-v0.10.3/manuscript/Surviving-the-Singularity-v0.10.1.md",
+        "active/sts-v0.10.4/manuscript/Surviving-the-Singularity-v0.10.1.md",
+        "active/sts-v0.11.0/manuscript/Surviving-the-Singularity-v0.10.1.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1-render-input-markdown.md",
+      "version": "0.10.1",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 623243,
+      "sha256": "fb15cbceb04d296e2e627fed94f0c609f690bb2f9d0ece90e3b53384c0a4b8bc",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.10.1/book-build/v0.10.1-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1-print-interior.pdf",
+      "version": "0.10.1",
+      "kind": "print-interior",
+      "variant": "final-delivery",
+      "bytes": 11808561,
+      "sha256": "81a2bde3407457df9ff157ce1380a2e89cb0899b6d5dd641accd9062752709b9",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.1/book-build/Surviving-the-Singularity-v0.10.1-print-interior.pdf",
+        "active/sts-v0.10.1/publication/output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.10.1/publication/package-v0.10.1/pdfs/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1-print-converted-print-interior.pdf",
+      "version": "0.10.1",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 11506851,
+      "sha256": "7aaee805d2e3eedfb4928b9d47ac0ae06db51ba402d080890393153dad68b29a",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.1/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.1.pdf",
+      "version": "0.10.1",
+      "kind": "reading",
+      "variant": "final-delivery",
+      "bytes": 31792078,
+      "sha256": "3790dfa79eaab6d977bb40dba423e65aede617f5a2cc575729e231dba8532a13",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.1.pdf",
+      "original_paths": [
+        "active/sts-v0.10.1/book-build/Surviving-the-Singularity-v0.10.1.pdf",
+        "active/sts-v0.10.1/publication/output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.10.1/publication/package-v0.10.1/pdfs/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2-final-delivery-editable_package.zip",
+      "version": "0.10.2",
+      "kind": "editable_package",
+      "variant": "final-delivery",
+      "bytes": 104956555,
+      "sha256": "f416494cb207273b6d831dd049533f3a56ffbab82a929b16e696551da6e8e4dc",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2-final-delivery-editable_package.zip",
+      "original_paths": [
+        "active/sts-v0.10.2/publication/output/Surviving-the-Singularity-v0.10.2-editable-publication.zip"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2.epub",
+      "version": "0.10.2",
+      "kind": "epub",
+      "variant": "final-delivery",
+      "bytes": 30220678,
+      "sha256": "002ca8563a15536f919786b83bfbed34d3b233200d9574df2a20e3eb7a6efd46",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2.epub",
+      "original_paths": [
+        "active/sts-v0.10.2/book-build/Surviving-the-Singularity-v0.10.2.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2-front-cover.pdf",
+      "version": "0.10.2",
+      "kind": "front-cover",
+      "variant": "final-delivery",
+      "bytes": 4060297,
+      "sha256": "0d4c96ff8c188ff00dbf2f651016c06b19315448ea04ce37a1b1884b4e55fdc4",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.10.2/book-build/Surviving-the-Singularity-v0.10.2-front-cover.pdf",
+        "active/sts-v0.10.2/publication/output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.10.2/publication/package-v0.10.2/pdfs/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2-publication-render-interior.pdf",
+      "version": "0.10.2",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 27065790,
+      "sha256": "265fdda8df4266e564d284560b2c1bf3894bb9c93703fcf88fae5e34d3260f59",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.2/publication/output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.10.2/publication/package-v0.10.2/pdfs/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2.md",
+      "version": "0.10.2",
+      "kind": "markdown",
+      "variant": "final-delivery",
+      "bytes": 637063,
+      "sha256": "762d429c8e104cdd733e43c21a66be2018b17dce50debd903e3ca60d0243dda0",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2.md",
+      "original_paths": [
+        "active/sts-v0.10.2/manuscript/Surviving-the-Singularity-v0.10.2.md",
+        "active/sts-v0.10.3/manuscript/Surviving-the-Singularity-v0.10.2.md",
+        "active/sts-v0.10.4/manuscript/Surviving-the-Singularity-v0.10.2.md",
+        "active/sts-v0.11.0/manuscript/Surviving-the-Singularity-v0.10.2.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2-render-input-markdown.md",
+      "version": "0.10.2",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 641233,
+      "sha256": "3c638348fc94edab79d3ad8b0738f7d1382bbc979ec282ceac08988324b31a23",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.10.2/book-build/v0.10.2-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2-print-interior.pdf",
+      "version": "0.10.2",
+      "kind": "print-interior",
+      "variant": "final-delivery",
+      "bytes": 11723058,
+      "sha256": "c24e729c20d0a3d07ae130627b842aee4ee2aeec34150c09e2d6cdb87410d4bd",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.2/book-build/Surviving-the-Singularity-v0.10.2-print-interior.pdf",
+        "active/sts-v0.10.2/publication/output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.10.2/publication/package-v0.10.2/pdfs/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2-print-converted-print-interior.pdf",
+      "version": "0.10.2",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 11414416,
+      "sha256": "0176db0fe2f0ee5257c501841a06cc3da7f59c4d79999b17396cbd40169057fe",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.2/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.2.pdf",
+      "version": "0.10.2",
+      "kind": "reading",
+      "variant": "final-delivery",
+      "bytes": 31637921,
+      "sha256": "9baabaf7b824264a5a49dc68f3e09b43a9aaf317c1c6423ffe99e5bd413caaa9",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.2.pdf",
+      "original_paths": [
+        "active/sts-v0.10.2/book-build/Surviving-the-Singularity-v0.10.2.pdf",
+        "active/sts-v0.10.2/publication/output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.10.2/publication/package-v0.10.2/pdfs/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3-final-delivery-editable_package.zip",
+      "version": "0.10.3",
+      "kind": "editable_package",
+      "variant": "final-delivery",
+      "bytes": 139030172,
+      "sha256": "023b37aa3a983296c001b4b05dea440931b64950ae199aadb6cd19ebaf2469ef",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3-final-delivery-editable_package.zip",
+      "original_paths": [
+        "active/sts-v0.10.3/publication/output/Surviving-the-Singularity-v0.10.3-editable-publication.zip"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3.epub",
+      "version": "0.10.3",
+      "kind": "epub",
+      "variant": "final-delivery",
+      "bytes": 41851429,
+      "sha256": "35518ada9f32a2655e690f02e936b4b053b789f208bdada7a5fef9ae7a557521",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3.epub",
+      "original_paths": [
+        "active/sts-v0.10.3/book-build/Surviving-the-Singularity-v0.10.3.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3-front-cover.pdf",
+      "version": "0.10.3",
+      "kind": "front-cover",
+      "variant": "final-delivery",
+      "bytes": 4060299,
+      "sha256": "5904173381fc95f38e993b5736ee3a2e176d5fa99b8250cd9652324984a4d757",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.10.3/book-build/Surviving-the-Singularity-v0.10.3-front-cover.pdf",
+        "active/sts-v0.10.3/publication/output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.10.3/publication/package-v0.10.3/pdfs/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3-publication-render-interior.pdf",
+      "version": "0.10.3",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 37940249,
+      "sha256": "caa4a051f63c31ef04d6e3084c5e995aaf16b02b956e46c36520b8e2c5856782",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.3/publication/output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.10.3/publication/package-v0.10.3/pdfs/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3.md",
+      "version": "0.10.3",
+      "kind": "markdown",
+      "variant": "final-delivery",
+      "bytes": 639481,
+      "sha256": "793b5d5928309d452fd3fd8a7727735bb533105ffe2621751aa595e35200e07d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3.md",
+      "original_paths": [
+        "active/sts-v0.10.3/manuscript/Surviving-the-Singularity-v0.10.3.md",
+        "active/sts-v0.10.4/manuscript/Surviving-the-Singularity-v0.10.3.md",
+        "active/sts-v0.11.0/manuscript/Surviving-the-Singularity-v0.10.3.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3-render-input-markdown.md",
+      "version": "0.10.3",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 644115,
+      "sha256": "39e77e125a9a1ed41441aad8598426670c6809e0cb948cc15ca61ea2fd10e02d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.10.3/book-build/v0.10.3-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3-print-interior.pdf",
+      "version": "0.10.3",
+      "kind": "print-interior",
+      "variant": "final-delivery",
+      "bytes": 12407539,
+      "sha256": "4795bea3392ac2a45409fb2cf185f57914d466ec9b2cac179d3a10cafe5e284b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.3/book-build/Surviving-the-Singularity-v0.10.3-print-interior.pdf",
+        "active/sts-v0.10.3/publication/output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.10.3/publication/package-v0.10.3/pdfs/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3-print-converted-print-interior.pdf",
+      "version": "0.10.3",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 12098835,
+      "sha256": "781975eb387f3f51faaf28b377417f4374111f27bde4f2d4edec9e9d4b512acb",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.3/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.3.pdf",
+      "version": "0.10.3",
+      "kind": "reading",
+      "variant": "final-delivery",
+      "bytes": 42514070,
+      "sha256": "bc7a867a3ba359ffc4bb07b7112fd84705eea5b0748e93de17dc95fca6f46171",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.3.pdf",
+      "original_paths": [
+        "active/sts-v0.10.3/book-build/Surviving-the-Singularity-v0.10.3.pdf",
+        "active/sts-v0.10.3/publication/output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.10.3/publication/package-v0.10.3/pdfs/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4-final-delivery-editable_package.zip",
+      "version": "0.10.4",
+      "kind": "editable_package",
+      "variant": "final-delivery",
+      "bytes": 139033750,
+      "sha256": "bd4454e27ec046339fe092034af0b5cf5ecedc7772fde82926cee2caf12f13d5",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4-final-delivery-editable_package.zip",
+      "original_paths": [
+        "active/sts-v0.10.4/publication/output/Surviving-the-Singularity-v0.10.4-editable-publication.zip"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4.epub",
+      "version": "0.10.4",
+      "kind": "epub",
+      "variant": "final-delivery",
+      "bytes": 41851412,
+      "sha256": "780a29d0ab73b5cefcc7eae2faa4a9a34a9ed9a902f67efcf252bd9742fae97c",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4.epub",
+      "original_paths": [
+        "active/sts-v0.10.4/book-build/Surviving-the-Singularity-v0.10.4.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4-front-cover.pdf",
+      "version": "0.10.4",
+      "kind": "front-cover",
+      "variant": "final-delivery",
+      "bytes": 4060297,
+      "sha256": "d6be441aa68e49733f2e8d27d685ac1e246d3826d28877c78e129a76f29e593b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.10.4/book-build/Surviving-the-Singularity-v0.10.4-front-cover.pdf",
+        "active/sts-v0.10.4/publication/output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.10.4/publication/package-v0.10.4/pdfs/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4-publication-render-interior.pdf",
+      "version": "0.10.4",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 37940997,
+      "sha256": "57209f592628417075068ba4f1bddb5672741e7ec8c0d957773516af57b9aa11",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.4/publication/output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.10.4/publication/package-v0.10.4/pdfs/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4.md",
+      "version": "0.10.4",
+      "kind": "markdown",
+      "variant": "final-delivery",
+      "bytes": 639376,
+      "sha256": "f46574b2477e1a0a26a363393aca985abf14dd60ae0397ae3931a59ee90f911d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4.md",
+      "original_paths": [
+        "active/sts-v0.10.4/manuscript/Surviving-the-Singularity-v0.10.4.md",
+        "active/sts-v0.11.0/manuscript/Surviving-the-Singularity-v0.10.4.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4-render-input-markdown.md",
+      "version": "0.10.4",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 644010,
+      "sha256": "9015e6de21ae2ddf077ee072e36e9075ef59433beee894b9c4bb71ea37f28785",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.10.4/book-build/v0.10.4-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4-print-interior.pdf",
+      "version": "0.10.4",
+      "kind": "print-interior",
+      "variant": "final-delivery",
+      "bytes": 12409143,
+      "sha256": "b851d95654cc67bfa72be5f83568980c7dcca38bff08e1fb026fa3ba69973329",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.4/book-build/Surviving-the-Singularity-v0.10.4-print-interior.pdf",
+        "active/sts-v0.10.4/publication/output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.10.4/publication/package-v0.10.4/pdfs/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4-print-converted-print-interior.pdf",
+      "version": "0.10.4",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 12100204,
+      "sha256": "57d1998113a5ba7a1ecc0eeee455b5f146c50ecaa34270c319f6b2ac1b5f4fa4",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.10.4/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.10.4.pdf",
+      "version": "0.10.4",
+      "kind": "reading",
+      "variant": "final-delivery",
+      "bytes": 42515518,
+      "sha256": "4c6b8b0d034d35824d26a20a692a9d450810af380b2c43f376d52e19fd2c931d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.10.4.pdf",
+      "original_paths": [
+        "active/sts-v0.10.4/book-build/Surviving-the-Singularity-v0.10.4.pdf",
+        "active/sts-v0.10.4/publication/output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.10.4/publication/package-v0.10.4/pdfs/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0-final-delivery-editable_package.zip",
+      "version": "0.11.0",
+      "kind": "editable_package",
+      "variant": "final-delivery",
+      "bytes": 139095688,
+      "sha256": "c7746e04551331076e4cc54bf309568052e72ce29bdf22dd7099b60e1498bb83",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0-final-delivery-editable_package.zip",
+      "original_paths": [
+        "active/sts-v0.11.0/publication/output/Surviving-the-Singularity-v0.11.0-editable-publication.zip"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0.epub",
+      "version": "0.11.0",
+      "kind": "epub",
+      "variant": "final-delivery",
+      "bytes": 41855461,
+      "sha256": "b759dd2a23bdc0bb739a4dcc7ea8b25617cdc0cb63fff8be8176ab6d4c64048d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0.epub",
+      "original_paths": [
+        "active/sts-v0.11.0/book-build/Surviving-the-Singularity-v0.11.0.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0-front-cover.pdf",
+      "version": "0.11.0",
+      "kind": "front-cover",
+      "variant": "final-delivery",
+      "bytes": 4060296,
+      "sha256": "c258b2e9cf35983518db7dd805c57816b171c67ff3b3beb603a3299101fb5482",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0-front-cover.pdf",
+      "original_paths": [
+        "active/sts-v0.11.0/book-build/Surviving-the-Singularity-v0.11.0-front-cover.pdf",
+        "active/sts-v0.11.0/publication/output/Surviving-the-Singularity-front-cover.pdf",
+        "active/sts-v0.11.0/publication/package-v0.11.0/pdfs/Surviving-the-Singularity-front-cover.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0-publication-render-interior.pdf",
+      "version": "0.11.0",
+      "kind": "interior",
+      "variant": "publication-render",
+      "bytes": 37956936,
+      "sha256": "da4732e0aa085c9c4cb195afc7d05cd0495236963bb7049bbcf6bb7d807b2676",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0-publication-render-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.11.0/publication/output/Surviving-the-Singularity-interior.pdf",
+        "active/sts-v0.11.0/publication/package-v0.11.0/pdfs/Surviving-the-Singularity-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0.md",
+      "version": "0.11.0",
+      "kind": "markdown",
+      "variant": "final-delivery",
+      "bytes": 649044,
+      "sha256": "7deb116d91ae6132f16b0413011583bb5ee5ae90de17f14fefd37c722ac35603",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0.md",
+      "original_paths": [
+        "active/sts-v0.11.0/manuscript/Surviving-the-Singularity-v0.11.0.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0-render-input-markdown.md",
+      "version": "0.11.0",
+      "kind": "markdown",
+      "variant": "render-input",
+      "bytes": 653678,
+      "sha256": "79d7ac5df9c81317641513f2533100b4206533ab90e3097ffd8f210803a9e15d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0-render-input-markdown.md",
+      "original_paths": [
+        "active/sts-v0.11.0/book-build/v0.11.0-source/manuscript.md"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0-print-interior.pdf",
+      "version": "0.11.0",
+      "kind": "print-interior",
+      "variant": "final-delivery",
+      "bytes": 12432892,
+      "sha256": "5616ee9a2c8632add0952e624e98bc2a1fa4cbaa96c4e3da44cacd735a6ffa3d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.11.0/book-build/Surviving-the-Singularity-v0.11.0-print-interior.pdf",
+        "active/sts-v0.11.0/publication/output/Surviving-the-Singularity-print-interior.pdf",
+        "active/sts-v0.11.0/publication/package-v0.11.0/pdfs/Surviving-the-Singularity-print-interior.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0-print-converted-print-interior.pdf",
+      "version": "0.11.0",
+      "kind": "print-interior",
+      "variant": "print-converted",
+      "bytes": 12118062,
+      "sha256": "70d583dcecbc84eb309607c02ae3ad1cd957d93575f8c6995fcdedefb9c7de11",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0-print-converted-print-interior.pdf",
+      "original_paths": [
+        "active/sts-v0.11.0/publication/output/print-converted.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-v0.11.0.pdf",
+      "version": "0.11.0",
+      "kind": "reading",
+      "variant": "final-delivery",
+      "bytes": 42538010,
+      "sha256": "a330bc15febc6033116e9454b6c09ca93074b27a034e8eb2183a961136d035fc",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-v0.11.0.pdf",
+      "original_paths": [
+        "active/sts-v0.11.0/book-build/Surviving-the-Singularity-v0.11.0.pdf",
+        "active/sts-v0.11.0/publication/output/Surviving-the-Singularity-reading.pdf",
+        "active/sts-v0.11.0/publication/package-v0.11.0/pdfs/Surviving-the-Singularity-reading.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-5.4.epub",
+      "version": "legacy-5.4",
+      "kind": "epub",
+      "variant": "legacy-render",
+      "bytes": 16394293,
+      "sha256": "7042616f3f0e40be31df33b4a832adf446aa23b199c6d1a4bda7e8151955f332",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-5.4.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-5.4.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-5.4.pdf",
+      "version": "legacy-5.4",
+      "kind": "reading",
+      "variant": "legacy-render",
+      "bytes": 16639100,
+      "sha256": "691384fe7fd9215e42b74d5cda84971a17f24c67191dfca03eb9ae18a3f5b68b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-5.4.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-5.4.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-5.5.epub",
+      "version": "legacy-5.5",
+      "kind": "epub",
+      "variant": "legacy-render",
+      "bytes": 16402829,
+      "sha256": "861891b97ccf9d9d48cfacd1fcbb5bc4cd865c51d3b3846e21f2132e78cdbd9f",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-5.5.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-5.5.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-5.5.pdf",
+      "version": "legacy-5.5",
+      "kind": "reading",
+      "variant": "legacy-render",
+      "bytes": 16658207,
+      "sha256": "481e3e429012b970aecb81de1c67bf73c9bb92b3bc5e973d285265a3992bfb6b",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-5.5.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-5.5.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT.epub",
+      "version": "legacy-DRAFT",
+      "kind": "epub",
+      "variant": "legacy-render",
+      "bytes": 16483529,
+      "sha256": "26e3a65c4a2502ca632cb2a68bb5805cef9fc4f9f4dbfba9cc2a231fc303ef1e",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT.pdf",
+      "version": "legacy-DRAFT",
+      "kind": "reading",
+      "variant": "legacy-render",
+      "bytes": 16845482,
+      "sha256": "3c7375ebadb9f8c4907fa70779a9a935e67a339b5015fae631e7139e67da73a2",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT_5.2.epub",
+      "version": "legacy-DRAFT_5.2",
+      "kind": "epub",
+      "variant": "legacy-render",
+      "bytes": 16385871,
+      "sha256": "065ba1ecb5a3119bee336a202e742f25d975be04f0058ff3fa4a45f0997c5fe0",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT_5.2.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT_5.2.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT_5.2.pdf",
+      "version": "legacy-DRAFT_5.2",
+      "kind": "reading",
+      "variant": "legacy-render",
+      "bytes": 16619878,
+      "sha256": "2e36123d6fb522fdfa257865df6947011ff8155377a01abe91aa49aa0cbde7ea",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT_5.2.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT_5.2.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT_5.3.epub",
+      "version": "legacy-DRAFT_5.3",
+      "kind": "epub",
+      "variant": "legacy-render",
+      "bytes": 16388633,
+      "sha256": "5736a2528462fbcb832a62e11163dbf5c628ce9ce9b3465afad9472c80632eda",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT_5.3.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT_5.3.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT_5.3.pdf",
+      "version": "legacy-DRAFT_5.3",
+      "kind": "reading",
+      "variant": "legacy-render",
+      "bytes": 16626245,
+      "sha256": "7ad6339b3941c35e08ebd873be701ae8938c7a0483efeb012dc37c1c31be6cc3",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT_5.3.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT_5.3.pdf"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT_7.epub",
+      "version": "legacy-DRAFT_7",
+      "kind": "epub",
+      "variant": "legacy-render",
+      "bytes": 7625490,
+      "sha256": "1f2be322446dc5e6bce4da4fe8bc98fcef8acbab59e833391194151c78904e02",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT_7.epub",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT_7.epub"
+      ]
+    },
+    {
+      "name": "Surviving-the-Singularity-DRAFT_7.pdf",
+      "version": "legacy-DRAFT_7",
+      "kind": "reading",
+      "variant": "legacy-render",
+      "bytes": 8650170,
+      "sha256": "e7f6193e31bf8645900e7743d2d7ca7ee65586dc829b2903df1d3103bc73ff1d",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/Surviving-the-Singularity-DRAFT_7.pdf",
+      "original_paths": [
+        "active/survivingthesingularity/book-build/Surviving-the-Singularity-DRAFT_7.pdf"
+      ]
+    },
+    {
+      "name": "STS-Draft5-google-doc.md",
+      "version": "legacy-Draft5",
+      "kind": "markdown",
+      "variant": "legacy-import",
+      "bytes": 181014,
+      "sha256": "ff3574dd6f802bff069b7236665cdcc477acae45d953a92b98b8d4e77c9e13dc",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/STS-Draft5-google-doc.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.10.1/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.10.2/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.10.3/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.10.4/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.11.0/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.7.3/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.8.0/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.8.1/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.8.2/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.9.0/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.9.1/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.9.2/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/sts-v0.9.3/manuscript/sources/STS-Draft5-google-doc.md",
+        "active/survivingthesingularity/manuscript/sources/STS-Draft5-google-doc.md"
+      ]
+    },
+    {
+      "name": "StS-Draft-5.1-google-doc.md",
+      "version": "legacy-Draft5.1",
+      "kind": "markdown",
+      "variant": "legacy-import",
+      "bytes": 98282,
+      "sha256": "f120a6774ef126d32822fa016057f609b32a4cea85931f56bf8ebc51e02b07d5",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Draft-5.1-google-doc.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.10.1/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.10.2/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.10.3/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.10.4/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.11.0/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.7.3/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.8.0/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.8.1/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.8.2/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.9.0/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.9.1/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.9.2/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/sts-v0.9.3/manuscript/sources/StS-Draft-5.1-google-doc.md",
+        "active/survivingthesingularity/manuscript/sources/StS-Draft-5.1-google-doc.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-compiled-2026-07-19.md",
+      "version": "snapshot-2026-07-19",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 531209,
+      "sha256": "7d67e547e9449b0d0f15a3fff1579d10602b4e84112e99e8b1929f791b90fb94",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-compiled-2026-07-19.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-compiled-2026-07-19.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-compiled-2026-07-19.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-compiled-2026-07-20.md",
+      "version": "snapshot-2026-07-20",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 533286,
+      "sha256": "5f58ddcba0cd09e04091bb5221c48cc4c1bfadb0c774d2f6fb42957fe164cd71",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-compiled-2026-07-20.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-compiled-2026-07-20.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-compiled-2026-07-20.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-compiled-2026-07-21.md",
+      "version": "snapshot-2026-07-21",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 541052,
+      "sha256": "12b128add28bff3023fc4d81b2f28e7546549b060b57b402ea1c2ede731fd417",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-compiled-2026-07-21.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-compiled-2026-07-21.md",
+        "active/survivingthesingularity/manuscript/StS-Complete-Draft-compiled-2026-07-21.md"
+      ]
+    },
+    {
+      "name": "StS-Complete-Draft-compiled-2026-08-02.md",
+      "version": "snapshot-2026-08-02",
+      "kind": "markdown",
+      "variant": "compiled-draft",
+      "bytes": 577574,
+      "sha256": "a3b5935fc3be18ae2fa68eb13fca5db259751fab1d9bf772ca7f3df004190586",
+      "download_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-archive-2026-10-08/StS-Complete-Draft-compiled-2026-08-02.md",
+      "original_paths": [
+        "active/sts-v0.10.0/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.10.1/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.10.2/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.10.3/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.10.4/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.11.0/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.7.3/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.8.0/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.8.1/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.8.2/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.9.0/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.9.1/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.9.2/manuscript/StS-Complete-Draft-compiled-2026-08-02.md",
+        "active/sts-v0.9.3/manuscript/StS-Complete-Draft-compiled-2026-08-02.md"
+      ]
+    }
+  ]
+}

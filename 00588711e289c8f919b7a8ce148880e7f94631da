@@ -1,0 +1,91 @@
+{
+  "figures": {
+    "ch12-csa-network.svg": {
+      "screen": {
+        "labels": 15,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.31982421875,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      },
+      "print": {
+        "labels": 15,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.31982421875,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      }
+    },
+    "ch14-logistic-shockwave.svg": {
+      "screen": {
+        "labels": 17,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.243815104166667,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      },
+      "print": {
+        "labels": 17,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.243815104166667,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      }
+    },
+    "ch15-soil-food-web.svg": {
+      "screen": {
+        "labels": 15,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.680826822916667,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      },
+      "print": {
+        "labels": 15,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.680826822916667,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      }
+    },
+    "ch17-algae-loop.svg": {
+      "screen": {
+        "labels": 22,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.870768229166667,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      },
+      "print": {
+        "labels": 22,
+        "min_pt": 9.57578125,
+        "width_in": 4.559895833333333,
+        "height_in": 5.870768229166667,
+        "overlaps": [],
+        "outside": [],
+        "paths": []
+      }
+    }
+  },
+  "negative_controls": {
+    "small_label": true,
+    "outside_label": true,
+    "label_overlap": true,
+    "path_through_label": true
+  },
+  "limits": "Actual-width browser geometry and screenshot evidence; final PDF page placement requires separate proof."
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 588" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">SHORTEN THE SUPPLY LINE</title>
+<desc id="desc">Two schematic routes lead to households. One passes through distant suppliers, factories and freight; another uses imported parts in nearby workshops and returns goods for repair. People, energy and imports sustain both routes. Neither distance nor this drawing proves fair treatment.</desc>
+<text x="20" y="31" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">SHORTEN THE SUPPLY LINE</text>
+<path d="M20 46L460 46" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="120" y="88" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">LONGER ROUTE</text>
+<text x="350" y="88" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">NEARBY WORK</text>
+<text x="240" y="114" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">A comparison of dependencies, not distances.</text>
+<rect x="20" y="140" width="200" height="68" rx="3" fill="#0f172a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="120" y="167" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Raw inputs</text>
+<text x="120" y="189" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Distant suppliers</text>
+<path d="M120 215L120 244" fill="none" stroke="#94a3b8" stroke-width="1.6"/>
+<path d="M116 238L120 244L124 238" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="20" y="250" width="200" height="68" rx="3" fill="#0f172a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="120" y="277" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Factory + freight</text>
+<text x="120" y="299" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Warehouses</text>
+<path d="M120 325L120 354" fill="none" stroke="#94a3b8" stroke-width="1.6"/>
+<path d="M116 348L120 354L124 348" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="20" y="360" width="200" height="68" rx="3" fill="#0f172a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="120" y="387" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Regional delivery</text>
+<text x="120" y="409" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Households</text>
+<rect x="250" y="140" width="200" height="68" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="350" y="167" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Imported parts</text>
+<text x="350" y="189" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Tools + materials</text>
+<path d="M350 215L350 244" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M346 238L350 244L354 238" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="250" y="250" width="200" height="68" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="350" y="277" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Nearby workshops</text>
+<text x="350" y="299" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Growers + repair</text>
+<path d="M350 325L350 354" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+<path d="M346 348L350 354L354 348" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="250" y="360" width="200" height="68" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="350" y="387" font-size="14" fill="#f1f5f9" text-anchor="middle" font-weight="400">Households</text>
+<text x="350" y="409" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="400">Use + return</text>
+<path d="M450 404H466V284H454" fill="none" stroke="#60a5fa" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M460 280L454 284L460 288" fill="none" stroke="#60a5fa" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="350" y="456" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="400">Repair and reuse</text>
+<path d="M20 491L460 491" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="20" y="511" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Imports remain in both routes.</text>
+<text x="20" y="532" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">People, energy and upkeep sustain the work.</text>
+<text x="20" y="553" font-size="14" fill="#94a3b8" text-anchor="start" font-weight="400">Distance alone cannot establish fairness.</text>
+</svg>

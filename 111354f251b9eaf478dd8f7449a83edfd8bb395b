@@ -1,0 +1,275 @@
+{
+  "review": "Part II and early Part III",
+  "changes": [
+    {
+      "file": "src/lib/data/book/08-chapter6.md",
+      "before": "On the buy side, housing, healthcare, and education have all climbed far faster than wages for decades.",
+      "after": "On the buy side, housing shows how much harder securing a foothold has become.",
+      "rationale": "The accompanying evidence concerns housing and household income, not a decades-long comparison of three sectors with wages."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "The machine sorted people into spreadsheets. The floor got built out of names.\n\n",
+      "after": "",
+      "rationale": "The scene already ends its first movement with names in the notebook; remove the explanatory moral before the concrete delivery scene."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "To a business under competition, the biggest expense, the biggest risk, and the most common point of failure is usually the payroll. The incentive to automate it is built into the structure.",
+      "after": "To a business under competition, payroll is a recurring cost, and replacing paid tasks with a cheaper machine can look attractive on the ledger. The incentive is built into the structure.",
+      "rationale": "Remove unsupported cross-industry claims that payroll is generally the largest expense, risk, and failure source while preserving the incentive argument."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "The economist Sendhil Mullainathan and the psychologist Eldar Shafir showed that scarcity, of money or time, captures attention involuntarily and narrows it: tunnel vision. In one of their best-known findings, sugarcane farmers in India scored better on cognitive tests after the harvest, when money was in hand, than before it, when money was tight. Same people. Different bandwidth.",
+      "after": "The economist Sendhil Mullainathan and the psychologist Eldar Shafir describe how scarcity can capture attention and narrow it: tunnel vision. In a 2013 study with Anandi Mani and Jiaying Zhao, sugarcane farmers in India scored better on cognitive tests after the harvest, when money was in hand, than before it, when money was tight. [Mani and colleagues, Poverty Impedes Cognitive Function](https://doi.org/10.1126/science.1238041) Same people. Different financial circumstances. The finding concerns those tests and conditions, not a fixed loss of ability in every person short of money.",
+      "rationale": "Attribute the actual study team and separate a finding from a universal psychological law."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "Trust gets produced locally or not at all.",
+      "after": "Trust of that kind takes shared work and time.",
+      "rationale": "Remote trust is possible; the argument here concerns locally accountable relationships, not all trust."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "The scarcity psychology you just read about, the tunnel vision, the captured bandwidth, is a solo condition. It's what a nervous system does when one household absorbs every shock alone. Nineteen households pooling tools, food, childcare, and repair skills can absorb a shock that would flatten any one of them, and once that buffer exists, the tunnel opens. Mullainathan and Shafir's farmers thought better after the harvest, when the buffer was full. A dependable food baseline *is* the harvest, made permanent. It doesn't just feed you. It gives you your mind back.",
+      "after": "The scarcity psychology you just read about is one reason to stop making a household absorb every shock alone. Nineteen households pooling tools, food, childcare, and repair skills may be able to carry a burden that would flatten one of them. A regional disaster can hit all nineteen, so they still need help beyond the circle. The harvest study gives us a reason to take financial pressure seriously; it didn't test a food baseline or a cooperative. A dependable dinner removes one demand on attention. That's already worth building.",
+      "rationale": "Avoid treating scarcity as an exclusively solitary condition or claiming an untested intervention guarantees cognitive restoration."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "the school-bus probes, [CBS News](https://www.cbsnews.com/news/waymo-investigation-nhtsa-robotaxis-passing-school-bus/)",
+      "after": "the school-bus inquiry, [NHTSA's November 24, 2025 letter to Waymo](https://static.nhtsa.gov/odi/inv/2025/INOT-PE25013-30887.pdf)",
+      "rationale": "Replace a secondary regulatory-news citation with the regulator's actual correspondence."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "There was no organized campaign against the printing press, only one eloquent abbot, and even he's more complicated than the legend",
+      "after": "The printing-press story documented here concerns one eloquent abbot, not evidence of an organized campaign, and even he's more complicated than the legend",
+      "rationale": "A single documented case cannot establish that no organized opposition ever existed."
+    },
+    {
+      "file": "src/lib/data/book/09-chapter7.md",
+      "before": "None of that touched the outcome, because the public was never voting on whether recording should exist. It was enjoying recordings.",
+      "after": "It didn't preserve the orchestra pits. The public was enjoying recordings, and a campaign for live music couldn't by itself preserve the old payroll.",
+      "rationale": "Keep the failed job-preservation outcome distinct from the union's successful institutional changes."
+    },
+    {
+      "file": "src/lib/data/book/10-chapter8.md",
+      "before": "Don't react to, post about, or share a breaking national story in its first twenty-four hours. The first wave is emotional, unverified, and tuned for maximum outrage.",
+      "after": "Give commentary on a breaking national story twenty-four hours before reacting or sharing. Early accounts can be incomplete or wrong. This delay is for commentary, not evacuation orders, urgent health notices, or a person who needs help now.",
+      "rationale": "Make the attention rule compatible with actionable emergency information and avoid declaring all initial reporting false."
+    },
+    {
+      "file": "src/lib/data/book/10-chapter8.md",
+      "before": "**Write a protocol, not a contract.** One page, plain language:",
+      "after": "**Write down the arrangement.** Start with one page in plain language:",
+      "rationale": "A plain-language sharing agreement may itself be a contract; do not imply its label removes obligations."
+    },
+    {
+      "file": "src/lib/data/book/11-chapter9.md",
+      "before": "To force that reaction, plants run at 150 to 250 times atmospheric pressure and 400 to 500°C, with hydrogen made mostly from natural gas. Ammonia production eats roughly one to two percent of the world's energy supply and accounts for something over one percent of global energy-related carbon emissions. It also feeds billions of people. Synthetic fertilizer is one of the great achievements of the last century, and it's fossil energy stabilized in a bag.",
+      "after": "To force that reaction, industrial reactors run at high pressure and temperature, with hydrogen made mostly from natural gas and coal. The IEA's 2021 assessment puts ammonia production at about two percent of global final energy consumption, including feedstock, and estimates 450 million tonnes of direct CO₂ emissions a year. [IEA, Ammonia Technology Roadmap](https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary) Synthetic fertilizer helps feed billions of people. It's one of the great achievements of the last century, with a large fossil-energy bill attached.",
+      "rationale": "Use the documented energy denominator and direct-emissions boundary; remove uncited operating ranges and avoid conflating total energy supply with final energy consumption."
+    },
+    {
+      "file": "src/lib/data/book/11-chapter9.md",
+      "before": "where $e(t)$ is the gap between the moisture you want and the moisture the probe reads, and the three $K$ values tune how hard and how smoothly the valve responds. Start with a grower's judgment about what the plants need, keep the manual valve working, and check the soil with your hands until you trust the numbers.",
+      "after": "where $e(t)$ is the gap between the target and the sensor reading, and the three $K$ values tune the response. A valve that only opens or closes still needs limits on run time and total water, plus an off state if the sensor stops reporting. Start with a grower's judgment about what the plants need, keep the manual valve working, and check the soil with your hands until you trust the numbers.",
+      "rationale": "A continuous PID expression is not by itself an irrigation safety policy; distinguish controller tuning from actuator limits and sensor failure."
+    },
+    {
+      "file": "src/lib/data/book/12-chapter10.md",
+      "before": "who was in the shed pressing enclosure cases",
+      "after": "who was in the shed fitting enclosure lids",
+      "rationale": "Keep assembly consistent with the PETG printed controller cases introduced in Chapter 9."
+    },
+    {
+      "file": "src/lib/data/book/12-chapter10.md",
+      "before": "Denny didn't look up from the press.",
+      "after": "Denny didn't look up from the bench.",
+      "rationale": "Same controller assembly continuity correction."
+    },
+    {
+      "file": "src/lib/data/book/12-chapter10.md",
+      "before": "He stamped another case.",
+      "after": "He fitted another lid.",
+      "rationale": "Same controller assembly continuity correction."
+    },
+    {
+      "file": "src/lib/data/book/12-chapter10.md",
+      "before": "He pointed to the screw and said which one he meant.",
+      "after": "He pointed to the screw and said which one he meant. Elijah sent the corrected card directly to every grower who'd received the first version.",
+      "rationale": "A wiring correction needs to reach installed users, not only channel viewers."
+    },
+    {
+      "file": "src/lib/data/book/12-chapter10.md",
+      "before": "Under the repeated resampling conditions the study examines, two things can happen.",
+      "after": "Under the repeated resampling conditions the study examines, two things can happen. This isn't a claim that every use of synthetic training data causes collapse; selection, checking, and access to real data change the setup.",
+      "rationale": "State the experimental boundary before readers infer a universal prohibition on synthetic data."
+    },
+    {
+      "file": "src/lib/data/book/12-chapter10.md",
+      "before": "That's Denny's video. The point is to give the reader a meal, not another picture of food.",
+      "after": "That's Denny's video.",
+      "rationale": "Remove the second food-versus-picture restatement in the same short rule."
+    },
+    {
+      "file": "src/lib/data/book/12-chapter10.md",
+      "before": "It can't hear a conversation held around a physical table. It can't index a hand-drawn plan passed from neighbor to neighbor. It can't easily see two neighbors trading a morning of carpentry for a box of tomatoes. (The tax authorities, for the record, still count barter as income. Invisible to an algorithm isn't the same as outside the law.)",
+      "after": "A conversation without a recording device, a hand-drawn plan that stays on paper, a morning traded for a box of tomatoes: those don't automatically create a platform record. Photograph them, record them, or put the details in an app, and that boundary moves. (In the United States, barter generally creates taxable income at the fair market value received; the IRS distinguishes some informal, noncommercial exchanges of similar services. [IRS, Taxable and Nontaxable Income](https://www.irs.gov/businesses/small-businesses-self-employed/what-is-taxable-and-nontaxable-income) Outside a feed isn't outside the law.)",
+      "rationale": "Offline activity is not automatically unobservable; qualify barter taxation and its noncommercial exception using IRS guidance."
+    },
+    {
+      "file": "src/lib/data/book/13-chapter11.md",
+      "before": "Reuben spent the next two days doing what Reuben does. The customer list crossed county lines; he mapped the exposure, drafted the letter to every family on it, and answered the question nobody had asked out loud: \"I can build you an argument that we don't owe anyone notice. I'd rather we not be the people who went looking for that argument.\"",
+      "after": "Reuben spent the next two days mapping the exposure with counsel and drafting a letter to every family on the list. The lawyer checked the notice requirements; Reuben checked the addresses and what each family needed to know. \"We're not waiting for somebody to prove we owe them the truth,\" he said.",
+      "rationale": "A paralegal should not independently determine breach-notification duties; crossing county lines is not the test for California notice requirements."
+    },
+    {
+      "file": "src/lib/data/book/13-chapter11.md",
+      "before": "An *air gap* means deliberate, physical separation from a network.",
+      "after": "An *air gap* separates the protected system from outside networks, with no wired or wireless network path across the boundary; moving data across it is a deliberate human act. [NIST glossary, air gap](https://csrc.nist.gov/glossary/term/air_gap)",
+      "rationale": "Distinguish external isolation from absence of all local networking, and retain the manual-transfer limitation."
+    },
+    {
+      "file": "src/lib/data/book/13-chapter11.md",
+      "before": "The machine went on drafting and checking and never billing, the radiator clicking against the north wall while it thought. Fire in its stones.",
+      "after": "The machine went on drafting and checking. Fire in its stones.",
+      "rationale": "Remove the repeated radiator sound and never-billing claim at the end of the same scene, which already accounts for power and checking labor."
+    },
+    {
+      "file": "src/lib/data/book/14-chapter12.md",
+      "before": "and understood that whatever had bought the Hollis dairy was standing two fences away.",
+      "after": "and wondered whether the same buyers were standing two fences away. He circled the link for Reuben to check.",
+      "rationale": "Sharing a registered agent does not establish common ownership; preserve the uncertainty already introduced in this scene."
+    },
+    {
+      "file": "src/lib/data/book/14-chapter12.md",
+      "before": "Whatever happens to the institutions around you, you'll have a place to build.",
+      "after": "Before committing, check legal access, water, permitted uses, insurance, and the cost of keeping it usable. A deed alone doesn't make a build possible.",
+      "rationale": "Remove a categorical land-security promise contradicted by the chapter's own foreclosure history and site requirements."
+    },
+    {
+      "file": "src/lib/data/book/14-chapter12.md",
+      "before": "**99 years:** the usual ground lease in a community land trust, long enough to outlast a mortgage and a lifetime (Chapter 15).",
+      "after": "**99 years:** a common renewable ground-lease term in community land trusts, subject to the actual agreement. [Grounded Solutions Network, Community Land Trusts](https://groundedsolutions.org/strengthening-neighborhoods/community-land-trusts/)",
+      "rationale": "Support and qualify the lease term; replace an unhelpful cross-reference to the soil chapter."
+    },
+    {
+      "file": "src/lib/data/book/14-chapter12.md",
+      "before": "**The balance.** For the network as a whole, the math is simple:\n\n> **Network surplus = (everything the nodes produce) − (everything the nodes need)**\n\nIn the old arrangement, a household that produces nothing and can't pay gets cut off. In this one, the partial surpluses of a dozen nodes cover the household that can't contribute this week. Be honest about the size of it: a single garden, even a heavily automated one, usually won't cover a household's full diet, and anyone promising you a guaranteed multiple of your caloric needs is selling something. Automation makes a surplus *possible* where before there was only labor. Pool the partial surpluses and the network can carry its neighbors, not because any node is a miracle, but because the bottleneck was never raw productivity. It was distribution.",
+      "after": "**The balance.** Count each resource in its own unit and over the same week: usable vegetables, prepared meals, equipment hours, driver time. For each one:\n\n> **Available to share = usable supply − prior commitments − reserve for interruptions**\n\nThen compare that amount with the requests. Don't add kilograms to hours and call the total abundance. A single garden, even a heavily automated one, usually won't cover a household's full diet, and anyone promising you a guaranteed multiple of your caloric needs is selling something. Pooling partial surpluses can help a household that can't contribute this week, but only if the food is suitable and someone can get it there. If requests exceed what the nodes can provide, the coordinator needs a funded partner or a replacement supply. Production and distribution both count.",
+      "rationale": "Replace a dimensionally invalid aggregate and guaranteed network surplus with resource-specific accounting, prior commitments, reserves, and a shortage route."
+    },
+    {
+      "file": "src/lib/data/book/14-chapter12.md",
+      "before": "![The Semi-Autonomous CSA Network: Shouse Node A with its AI server and automated greenhouse, Shouse Node B with its tool library and battery bank, exchanging tasks over LoRa mesh, and a vulnerable node receiving automated calorie and labor deliveries]",
+      "after": "![An illustrative shared-service network: two workshop homes exchange requests and offers over radio, and neighbors deliver food and practical help to a household that needs it. Software assists coordination; people perform the delivery.]",
+      "rationale": "Align the alt text with the explicitly human delivery and limited automation in the worked example."
+    },
+    {
+      "file": "src/lib/data/book/14-chapter12.md",
+      "before": "*The semi-autonomous CSA. Whatever surplus the nodes produce goes to the neighbors who can't. The point is distribution, not a guaranteed yield.*",
+      "after": "*A shared-service network. People match usable surplus to requests and arrange delivery. The drawing promises neither a yield nor an autonomous crew.*",
+      "rationale": "Match the image boundary to the corrected resource accounting."
+    },
+    {
+      "file": "src/lib/data/book/14-chapter12.md",
+      "before": "The people who filed during the chaos held title when the chaos ended. It was one of the largest transfers of land and position in the country's history, and it happened in the middle of a crisis, not after it.",
+      "after": "Filing began in January 1863. The ordinary five-year route therefore ran beyond the Civil War's end in 1865; Daniel Freeman's surviving certificate of eligibility dates to January 1868. [US Capitol Visitor Center, Freeman's certificate](https://www.visitthecapitol.gov/artifact/homesteading-certificate-eligibility-daniel-freeman-january-20-1868) There was also a paid route to earlier title. The opportunity opened during the crisis. Turning a claim into a lasting farm still took time, money, and successful proof.",
+      "rationale": "Correct the contradiction between the five-year proving period and an asserted title by the 1865 war end; retain paid early-purchase exception."
+    },
+    {
+      "file": "src/lib/data/book/15-chapter13.md",
+      "before": "The flue kit was double-wall pipe, bought new, the one line in the budget nobody let him salvage, and Priya held the storm collar while he sealed the roof penetration in a wind that wanted his hat.",
+      "after": "The installer specified a listed, insulated chimney system through the roof and double-wall connector pipe inside, all bought new, the one line in the budget nobody let him salvage. Priya steadied the ladder while the installer finished the storm collar in a wind that wanted his hat.",
+      "rationale": "Distinguish interior connector pipe from a listed chimney and keep installation responsibility with the qualified installer."
+    },
+    {
+      "file": "src/lib/data/book/15-chapter13.md",
+      "before": "Somebody hung a pair of socks over the stove on general principle.",
+      "after": "Somebody set a drying rack well clear of the stove and hung a pair of socks on general principle.",
+      "rationale": "Remove combustible clothing directly above a hot stove while retaining the domestic scene detail."
+    },
+    {
+      "file": "src/lib/data/book/15-chapter13.md",
+      "before": "\"Double-wall, Ma. Storm collar and all. Inspector signed it Tuesday.\"",
+      "after": "\"Inside. Insulated chimney through the roof. Installer picked the system; inspector signed it Tuesday.\"",
+      "rationale": "Keep the mother-call callback while correcting the same connector/chimney distinction."
+    },
+    {
+      "file": "src/lib/data/book/15-chapter13.md",
+      "before": "**Start with a shell.** A foundation, a metal utility building, and a travel trailer or RV parked inside it gives you a secure, weatherproof place to live while you develop the site, if your county allows it.",
+      "after": "**Start with the approved use.** Ask whether the site can support a workshop and a dwelling, and what temporary occupancy is allowed during construction. A trailer or RV may be an option on an approved outdoor pad with the required services. Don't treat an enclosed utility building as a safe place to occupy an RV or run its fuel-burning equipment.",
+      "rationale": "Remove an unsafe enclosed-RV living suggestion and put site/occupancy approval before purchase or construction."
+    },
+    {
+      "file": "src/lib/data/book/15-chapter13.md",
+      "before": "[US Department of Energy, insulation and air-sealing details](https://www.energy.gov/cmei/buildings/articles/energy-efficient-home-improvement-credit-insulation-and-air-sealing)",
+      "after": "[US Department of Energy, Energy Renovations: Insulation](https://www.energy.gov/sites/default/files/2023-03/insulation_guide_0.pdf)",
+      "rationale": "Cite the DOE construction guide covering professional foam installation and fire barriers rather than tax-credit criteria."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "It's brilliantly efficient. It's also designed to have no slack.",
+      "after": "The aim is to reduce idle inventory. The amount of stock and backup capacity still varies by product, operator, and route.",
+      "rationale": "Just-in-time does not establish literally zero inventory or no contingency capacity across every supply chain."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "![The Logistic Shockwave: a four-day cascade from port disruption, to trucks rerouted, to shelves stripped clean, to systemic panic, with the local food buffer draining to zero alongside]",
+      "after": "![An illustrative sequence from a port disruption through truck delays to local shortages. The diagram's stages are a hypothetical example, not a measured four-day timetable or a prediction of when food runs out.]",
+      "rationale": "Make the logistics picture's invented timing explicit in accessible text."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "*The logistic shockwave. A system with no buffer passes every blow straight through to the shelves.*",
+      "after": "*One possible disruption sequence, not a clock. Existing stock, replacement routes, demand, and the specific failure determine what reaches the shelves and when.*",
+      "rationale": "Remove unsupported inevitability and quantify no unmeasured supply-chain timetable."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "That estimate counts losses at the store and in our own kitchens: unsold surplus, cosmetic rejects, food past a sell-by date but perfectly good, leftovers nobody got to.",
+      "after": "The USDA FAQ points to a 2010 estimate of 31 percent at retail and consumer levels; the 30 to 40 percent range isn't a fresh annual measurement. Loss includes food that can no longer be eaten as well as recoverable surplus. A date label alone doesn't establish safety; storage and handling still matter.",
+      "rationale": "Date the historical estimate and avoid implying all measured loss is safe recoverable food."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "**20 percent:** California's target for recovering edible food that would otherwise be landfilled, to feed people in need (linked above).",
+      "after": "**20 percent by 2025:** California's statutory recovery target for edible food that would otherwise be landfilled. A target isn't a reported achievement. [CalRecycle, Food Recovery](https://calrecycle.ca.gov/organics/slcp/foodrecovery/)",
+      "rationale": "A 2026 edition must date the 2025 target and not imply it is future or achieved."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "**The mechanism.** Kodak believed it was in the film business. Fujifilm decided it was in the applied-chemistry business. One defined itself by a product, which the wave destroyed. The other defined itself by capabilities, which the wave couldn't touch.",
+      "after": "**The mechanism.** Both companies invested beyond film. Fujifilm's account shows how existing businesses and a deliberate search for new uses of its chemistry helped it absorb the loss. Kodak's digital investments didn't replace the old profits. The useful distinction is whether a new business can carry the people and capabilities you mean to keep, not whether management can name the coming technology.",
+      "rationale": "Resolve the contradiction with P-17's acknowledgement of Kodak digital investments; corporate survival cannot be reduced to a slogan about self-definition."
+    },
+    {
+      "file": "src/lib/data/book/13-chapter11.md",
+      "before": "You don't work a press that can take your hand off unless the breaker is locked and your name is on the lock.",
+      "after": "You don't service a press that can take your hand off until its energy sources are isolated, the stored energy is dealt with, and the lockout is verified. Your name goes on your lock.",
+      "rationale": "Lockout applies to servicing, not normal operation, and an electrical breaker alone cannot control hydraulic, pneumatic, or other stored energy."
+    },
+    {
+      "file": "src/lib/data/book/15-chapter13.md",
+      "before": "Heat flow through a wall follows Fourier's law:\n\n> $$Q = (k · A · \\Delta T) / d$$\n\nwhere $k$ is how well the material conducts heat, $A$ is the wall area, $\\Delta T$ is the temperature difference, and $d$ is the thickness.",
+      "after": "For steady conduction through one uniform layer, Fourier's law gives the heat-transfer rate:\n\n> $$\\dot{Q} = (k · A · \\Delta T) / d$$\n\nwhere $\\dot{Q}$ is heat flow in watts, $k$ is thermal conductivity, $A$ is area, $\\Delta T$ is the temperature difference across that layer, and $d$ is its thickness. A complete wall adds other layers, surface effects, and paths through steel framing.",
+      "rationale": "Distinguish a heat-transfer rate from heat quantity and one-dimensional material conduction from a whole-building envelope model."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "The aim is to reduce idle inventory. The amount of stock and backup capacity still varies by product, operator, and route.",
+      "after": "The aim is to reduce idle inventory. The amount of stock and backup capacity still varies by product, operator, and route. Even Toyota's account of just-in-time production includes a minimum stock of parts ready for assembly. [Toyota, Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/)",
+      "rationale": "Document the zero-inventory correction with the originating manufacturer's own description."
+    },
+    {
+      "file": "src/lib/data/book/16-chapter14.md",
+      "before": "That gap is the argument.",
+      "after": "That mismatch is the argument, not a calculation of meals available: the figures cover different years and populations, and some lost food can't be recovered.",
+      "rationale": "The juxtaposed loss estimate and food-insecurity population are not directly comparable quantities or evidence that all missing diets are covered by recoverable food."
+    }
+  ]
+}

@@ -1,0 +1,1615 @@
+{
+  "epub_sha256": "f6a054c3bdd536aace8fb548bdf0ccb55dd94634f1c5607580564f6ec1bfd15d",
+  "browser": "Chrome 150.0.7871.125",
+  "javascript_disabled": true,
+  "viewports": [
+    390,
+    768
+  ],
+  "registered_figures_per_viewport": 23,
+  "measurements": [
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 390,
+      "file": "v101-cutout-atlas.png",
+      "src": "../media/file1.png",
+      "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.",
+      "figure": {
+        "x": 92.15625,
+        "y": 2573.59375,
+        "width": 205.6875,
+        "height": 383.90625,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 2573.59375,
+        "width": 205.6875,
+        "height": 308.53125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 2896.46875,
+        "width": 205.6875,
+        "height": 61.03125,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 390,
+      "captionText": "Atlas, outside the demonstration room. AI-adapted cutout from DARPA, public domain."
+    },
+    {
+      "chapter": "EPUB/text/ch006.xhtml",
+      "width": 390,
+      "file": "v101-chart-forecast-shift.svg",
+      "src": "../media/file13.svg",
+      "alt": "Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates.",
+      "figure": {
+        "x": 8,
+        "y": 14358.921875,
+        "width": 374,
+        "height": 527.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 14358.921875,
+        "width": 374,
+        "height": 431.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 14804.921875,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 130,
+      "viewport": 390,
+      "captionText": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. Grace et al., Thousands of AI Authors on the Future of AI."
+    },
+    {
+      "chapter": "EPUB/text/ch007.xhtml",
+      "width": 390,
+      "file": "v101-visual-local-copies.svg",
+      "src": "../media/file16.svg",
+      "alt": "A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power.",
+      "figure": {
+        "x": 8,
+        "y": 8056.84375,
+        "width": 374,
+        "height": 366.78125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8056.84375,
+        "width": 374,
+        "height": 291.40625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8362.59375,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 193,
+      "viewport": 390,
+      "captionText": "A copy you can open can outlast a broken link. It does not replace electrical power or a tested plan for equipment that depends on it. Conceptual illustration."
+    },
+    {
+      "chapter": "EPUB/text/ch008.xhtml",
+      "width": 390,
+      "file": "v101-cutout-rocket.png",
+      "src": "../media/file18.png",
+      "alt": "Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.",
+      "figure": {
+        "x": 92.15625,
+        "y": 4933.21875,
+        "width": 205.6875,
+        "height": 404.25,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 4933.21875,
+        "width": 205.6875,
+        "height": 308.53125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 5256.09375,
+        "width": 205.6875,
+        "height": 81.375,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 390,
+      "captionText": "An image for the imagined departure. AI-adapted collage from SpaceX, CC0; the scenario remains speculative."
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 390,
+      "file": "v101-cutout-sun.png",
+      "src": "../media/file22.png",
+      "alt": "Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.",
+      "figure": {
+        "x": 92.15625,
+        "y": 4340.3125,
+        "width": 205.6875,
+        "height": 312.609375,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 4340.3125,
+        "width": 205.6875,
+        "height": 196.546875,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 4551.203125,
+        "width": 205.6875,
+        "height": 101.71875,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1283,
+      "viewport": 390,
+      "captionText": "Energy has to come from somewhere. AI-adapted NASA/SDO imagery, public domain; not an unaltered scientific image."
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 390,
+      "file": "v101-chart-data-centre-demand.svg",
+      "src": "../media/file23.svg",
+      "alt": "Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted.",
+      "figure": {
+        "x": 8,
+        "y": 6726.140625,
+        "width": 374,
+        "height": 533.609375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 6726.140625,
+        "width": 374,
+        "height": 437.890625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 7178.375,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 390,
+      "captionText": "The machine’s appetite. The solid column is IEA’s estimate for 2025; the hatched column is its 2030 projection. This is all data-centre electricity, not AI alone. IEA, Key Questions on Energy and AI, 2026."
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 390,
+      "file": "v101-chart-income-food-access.svg",
+      "src": "../media/file30.svg",
+      "alt": "Two lollipop bars show food insecurity in selected US income groups during 2024: 39.4% of households below the poverty threshold and 7.9% at or above 185% of that threshold. Dashed reference ticks mark the 13.7% national household rate. Middle and unknown income categories are not plotted.",
+      "figure": {
+        "x": 8,
+        "y": 8220.53125,
+        "width": 374,
+        "height": 488.40625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8220.53125,
+        "width": 374,
+        "height": 392.6875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8627.5625,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 143,
+      "viewport": 390,
+      "captionText": "Income and food access. In the 2024 survey, food insecurity was associated with income. These two selected groups do not represent every income category, and the comparison does not establish causation. USDA ERS, ERR-358, Table 2."
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 390,
+      "file": "v101-visual-access-gate.svg",
+      "src": "../media/file31.svg",
+      "alt": "A productive machine stands before an open gate and a plate. The gate names terms, price, eligibility, and delivery as choices that affect who receives the result.",
+      "figure": {
+        "x": 8,
+        "y": 9871.15625,
+        "width": 374,
+        "height": 318.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 9871.15625,
+        "width": 374,
+        "height": 263.34375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 10148.84375,
+        "width": 374,
+        "height": 40.6875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 213,
+      "viewport": 390,
+      "captionText": "A working machine still needs an arrangement that lets people reach its output. Conceptual illustration."
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 390,
+      "file": "v101-visual-attention-ribbon.svg",
+      "src": "../media/file41.svg",
+      "alt": "A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task.",
+      "figure": {
+        "x": 8,
+        "y": 11543.40625,
+        "width": 374,
+        "height": 349.640625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 11543.40625,
+        "width": 374,
+        "height": 274.265625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 11832.015625,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 205,
+      "viewport": 390,
+      "captionText": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive budget or a fixed recovery time."
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "file": "v101-cutout-printer.png",
+      "src": "../media/file48.png",
+      "alt": "Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.",
+      "figure": {
+        "x": 92.15625,
+        "y": 9019.1875,
+        "width": 205.6875,
+        "height": 306.078125,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 9019.1875,
+        "width": 205.6875,
+        "height": 230.703125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 9264.234375,
+        "width": 205.6875,
+        "height": 61.03125,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1184,
+      "viewport": 390,
+      "captionText": "A machine takes shape around its work. AI-adapted cutout from John Abella, CC BY 2.0."
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "file": "v101-chart-ammonia-energy.svg",
+      "src": "../media/file49.svg",
+      "alt": "Three columns show net energy intensity of ammonia production in IEA’s 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average.",
+      "figure": {
+        "x": 8,
+        "y": 10278.3125,
+        "width": 374,
+        "height": 556.984375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 10278.3125,
+        "width": 374,
+        "height": 461.265625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 10753.921875,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 122,
+      "viewport": 390,
+      "captionText": "The energy in ammonia. IEA’s global-average estimate and best-available-process benchmarks are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. IEA, Ammonia Technology Roadmap, 2021."
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 390,
+      "file": "v101-scene-food-delivery.svg",
+      "src": "../media/file52.svg",
+      "alt": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.",
+      "figure": {
+        "x": 8,
+        "y": 15041.4375,
+        "width": 374,
+        "height": 407.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 15041.4375,
+        "width": 374,
+        "height": 311.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 15367.4375,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 390,
+      "captionText": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals."
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 390,
+      "file": "v101-cutout-spot.png",
+      "src": "../media/file59.png",
+      "alt": "Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail.",
+      "figure": {
+        "x": 92.15625,
+        "y": 10839.953125,
+        "width": 205.6875,
+        "height": 232.84375,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 10839.953125,
+        "width": 205.6875,
+        "height": 137.125,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 10991.421875,
+        "width": 205.6875,
+        "height": 81.375,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 390,
+      "captionText": "Capability still needs an arrangement for access. AI-adapted cutout from Jonte, CC BY-SA 4.0."
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 390,
+      "file": "v101-visual-operating-stack.svg",
+      "src": "../media/file60.svg",
+      "alt": "A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights.",
+      "figure": {
+        "x": 8,
+        "y": 11919.453125,
+        "width": 374,
+        "height": 384.703125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 11919.453125,
+        "width": 374,
+        "height": 309.328125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 12243.125,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 181,
+      "viewport": 390,
+      "captionText": "The model file is one layer of a working service. Running a useful service also takes software, hardware, power, and people who maintain it. Conceptual illustration."
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 390,
+      "file": "v101-chart-weights-memory.svg",
+      "src": "../media/file61.svg",
+      "alt": "A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory.",
+      "figure": {
+        "x": 8,
+        "y": 12823.53125,
+        "width": 374,
+        "height": 539.84375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 12823.53125,
+        "width": 374,
+        "height": 444.125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 13282,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 126,
+      "viewport": 390,
+      "captionText": "Memory before the overhead. These are derived weights-only sizes, not measured VRAM requirements. They omit the chapter’s illustrative allowance as well as runtime costs. llama.cpp, memory and context options."
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 390,
+      "file": "v101-chart-land-values.svg",
+      "src": "../media/file64.svg",
+      "alt": "A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages.",
+      "figure": {
+        "x": 8,
+        "y": 5863.71875,
+        "width": 374,
+        "height": 535.15625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 5863.71875,
+        "width": 374,
+        "height": 439.4375,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 6317.5,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 390,
+      "captionText": "What an acre costs. USDA survey estimates include farm buildings as well as land. These are nominal national averages, not inflation-adjusted values or local offers. USDA NASS, Land Values 2026, page 5."
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 390,
+      "file": "v101-visual-shared-land.svg",
+      "src": "../media/file65.svg",
+      "alt": "A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement.",
+      "figure": {
+        "x": 8,
+        "y": 6422.875,
+        "width": 374,
+        "height": 386.25,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 6422.875,
+        "width": 374,
+        "height": 310.875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 6748.09375,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 180,
+      "viewport": 390,
+      "captionText": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a way to challenge decisions. Conceptual illustration, not a legal template."
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 390,
+      "file": "v101-chart-waste-pathways.svg",
+      "src": "../media/file75.svg",
+      "alt": "Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material.",
+      "figure": {
+        "x": 8,
+        "y": 9184.09375,
+        "width": 374,
+        "height": 600.53125,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 9184.09375,
+        "width": 374,
+        "height": 525.15625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 9723.59375,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 390,
+      "captionText": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could not have been donated. Donation is net of food banks’ unusable portion. EPA, Table 5."
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 390,
+      "file": "v101-scene-living-soil.svg",
+      "src": "../media/file81.svg",
+      "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+      "figure": {
+        "x": 8,
+        "y": 8473.484375,
+        "width": 374,
+        "height": 427.71875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 8473.484375,
+        "width": 374,
+        "height": 311.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 8799.484375,
+        "width": 374,
+        "height": 101.71875,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 390,
+      "captionText": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile."
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 390,
+      "file": "v101-cutout-tools.png",
+      "src": "../media/file86.png",
+      "alt": "Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench.",
+      "figure": {
+        "x": 92.15625,
+        "y": 5557.578125,
+        "width": 205.6875,
+        "height": 320.046875,
+        "right": 297.84375
+      },
+      "image": {
+        "x": 92.15625,
+        "y": 5557.578125,
+        "width": 205.6875,
+        "height": 244.671875,
+        "right": 297.84375
+      },
+      "caption": {
+        "x": 92.15625,
+        "y": 5816.59375,
+        "width": 205.6875,
+        "height": 61.03125,
+        "right": 297.84375
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1150,
+      "viewport": 390,
+      "captionText": "Tools with a history of use. AI-adapted collage from Shixart1985, CC BY 2.0."
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 390,
+      "file": "v101-scene-shared-workshop.svg",
+      "src": "../media/file92.svg",
+      "alt": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.",
+      "figure": {
+        "x": 8,
+        "y": 13277.578125,
+        "width": 374,
+        "height": 407.375,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 13277.578125,
+        "width": 374,
+        "height": 311.65625,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 13603.578125,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 390,
+      "captionText": "Shared tools need a working arrangement around them: trained people, suitable power and materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not a fabrication or wiring plan."
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 390,
+      "file": "v101-visual-continuity-calendar.svg",
+      "src": "../media/file94.svg",
+      "alt": "One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.",
+      "figure": {
+        "x": 8,
+        "y": 4463.9375,
+        "width": 374,
+        "height": 374.5625,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 4463.9375,
+        "width": 374,
+        "height": 299.1875,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 4777.46875,
+        "width": 374,
+        "height": 61.03125,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 188,
+      "viewport": 390,
+      "captionText": "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene."
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 390,
+      "file": "v101-chart-meal-response.svg",
+      "src": "../media/file96.svg",
+      "alt": "An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.",
+      "figure": {
+        "x": 8,
+        "y": 12523.15625,
+        "width": 374,
+        "height": 622.421875,
+        "right": 382
+      },
+      "image": {
+        "x": 8,
+        "y": 12523.15625,
+        "width": 374,
+        "height": 526.703125,
+        "right": 382
+      },
+      "caption": {
+        "x": 8,
+        "y": 13064.203125,
+        "width": 374,
+        "height": 81.375,
+        "right": 382
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 390,
+      "captionText": "When a meal fails. An illustrative worksheet from this chapter’s premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise."
+    },
+    {
+      "chapter": "EPUB/text/ch001.xhtml",
+      "width": 768,
+      "file": "v101-cutout-atlas.png",
+      "src": "../media/file1.png",
+      "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.",
+      "figure": {
+        "x": 240,
+        "y": 2437.078125,
+        "width": 288,
+        "height": 487.03125,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 2437.078125,
+        "width": 288,
+        "height": 432,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 2883.421875,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 768,
+      "captionText": "Atlas, outside the demonstration room. AI-adapted cutout from DARPA, public domain."
+    },
+    {
+      "chapter": "EPUB/text/ch006.xhtml",
+      "width": 768,
+      "file": "v101-chart-forecast-shift.svg",
+      "src": "../media/file13.svg",
+      "alt": "Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates.",
+      "figure": {
+        "x": 8,
+        "y": 9943.25,
+        "width": 752,
+        "height": 922.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9943.25,
+        "width": 752,
+        "height": 867.921875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 10825.515625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 130,
+      "viewport": 768,
+      "captionText": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the 2023 survey. The two milestones are distinct, and neither date is a deadline. Grace et al., Thousands of AI Authors on the Future of AI."
+    },
+    {
+      "chapter": "EPUB/text/ch007.xhtml",
+      "width": 768,
+      "file": "v101-visual-local-copies.svg",
+      "src": "../media/file16.svg",
+      "alt": "A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power.",
+      "figure": {
+        "x": 8,
+        "y": 5394.15625,
+        "width": 752,
+        "height": 640.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5394.15625,
+        "width": 752,
+        "height": 585.921875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5994.421875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 193,
+      "viewport": 768,
+      "captionText": "A copy you can open can outlast a broken link. It does not replace electrical power or a tested plan for equipment that depends on it. Conceptual illustration."
+    },
+    {
+      "chapter": "EPUB/text/ch008.xhtml",
+      "width": 768,
+      "file": "v101-cutout-rocket.png",
+      "src": "../media/file18.png",
+      "alt": "Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.",
+      "figure": {
+        "x": 240,
+        "y": 3316.25,
+        "width": 288,
+        "height": 507.375,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 3316.25,
+        "width": 288,
+        "height": 432,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 3762.59375,
+        "width": 288,
+        "height": 61.03125,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1024,
+      "viewport": 768,
+      "captionText": "An image for the imagined departure. AI-adapted collage from SpaceX, CC0; the scenario remains speculative."
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 768,
+      "file": "v101-cutout-sun.png",
+      "src": "../media/file22.png",
+      "alt": "Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.",
+      "figure": {
+        "x": 240,
+        "y": 3489.21875,
+        "width": 288,
+        "height": 350.578125,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 3489.21875,
+        "width": 288,
+        "height": 275.203125,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 3778.765625,
+        "width": 288,
+        "height": 61.03125,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1283,
+      "viewport": 768,
+      "captionText": "Energy has to come from somewhere. AI-adapted NASA/SDO imagery, public domain; not an unaltered scientific image."
+    },
+    {
+      "chapter": "EPUB/text/ch010.xhtml",
+      "width": 768,
+      "file": "v101-chart-data-centre-demand.svg",
+      "src": "../media/file23.svg",
+      "alt": "Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted.",
+      "figure": {
+        "x": 8,
+        "y": 5130.671875,
+        "width": 752,
+        "height": 935.484375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5130.671875,
+        "width": 752,
+        "height": 880.453125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6025.46875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 768,
+      "captionText": "The machine’s appetite. The solid column is IEA’s estimate for 2025; the hatched column is its 2030 projection. This is all data-centre electricity, not AI alone. IEA, Key Questions on Energy and AI, 2026."
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 768,
+      "file": "v101-chart-income-food-access.svg",
+      "src": "../media/file30.svg",
+      "alt": "Two lollipop bars show food insecurity in selected US income groups during 2024: 39.4% of households below the poverty threshold and 7.9% at or above 185% of that threshold. Dashed reference ticks mark the 13.7% national household rate. Middle and unknown income categories are not plotted.",
+      "figure": {
+        "x": 8,
+        "y": 5961.171875,
+        "width": 752,
+        "height": 844.625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 5961.171875,
+        "width": 752,
+        "height": 789.59375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 6765.109375,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 143,
+      "viewport": 768,
+      "captionText": "Income and food access. In the 2024 survey, food insecurity was associated with income. These two selected groups do not represent every income category, and the comparison does not establish causation. USDA ERS, ERR-358, Table 2."
+    },
+    {
+      "chapter": "EPUB/text/ch012.xhtml",
+      "width": 768,
+      "file": "v101-visual-access-gate.svg",
+      "src": "../media/file31.svg",
+      "alt": "A productive machine stands before an open gate and a plate. The gate names terms, price, eligibility, and delivery as choices that affect who receives the result.",
+      "figure": {
+        "x": 8,
+        "y": 7446.09375,
+        "width": 752,
+        "height": 564.21875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7446.09375,
+        "width": 752,
+        "height": 529.53125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 7989.96875,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 213,
+      "viewport": 768,
+      "captionText": "A working machine still needs an arrangement that lets people reach its output. Conceptual illustration."
+    },
+    {
+      "chapter": "EPUB/text/ch014.xhtml",
+      "width": 768,
+      "file": "v101-visual-attention-ribbon.svg",
+      "src": "../media/file41.svg",
+      "alt": "A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task.",
+      "figure": {
+        "x": 8,
+        "y": 9169.234375,
+        "width": 752,
+        "height": 586.140625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9169.234375,
+        "width": 752,
+        "height": 551.453125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 9735.03125,
+        "width": 752,
+        "height": 20.34375,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 205,
+      "viewport": 768,
+      "captionText": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive budget or a fixed recovery time."
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "file": "v101-cutout-printer.png",
+      "src": "../media/file48.png",
+      "alt": "Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.",
+      "figure": {
+        "x": 240,
+        "y": 8067.078125,
+        "width": 288,
+        "height": 378.046875,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 8067.078125,
+        "width": 288,
+        "height": 323.015625,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 8404.4375,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1184,
+      "viewport": 768,
+      "captionText": "A machine takes shape around its work. AI-adapted cutout from John Abella, CC BY 2.0."
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "file": "v101-chart-ammonia-energy.svg",
+      "src": "../media/file49.svg",
+      "alt": "Three columns show net energy intensity of ammonia production in IEA’s 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average.",
+      "figure": {
+        "x": 8,
+        "y": 9051.015625,
+        "width": 752,
+        "height": 982.484375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 9051.015625,
+        "width": 752,
+        "height": 927.453125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 9992.8125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 122,
+      "viewport": 768,
+      "captionText": "The energy in ammonia. IEA’s global-average estimate and best-available-process benchmarks are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. IEA, Ammonia Technology Roadmap, 2021."
+    },
+    {
+      "chapter": "EPUB/text/ch015.xhtml",
+      "width": 768,
+      "file": "v101-scene-food-delivery.svg",
+      "src": "../media/file52.svg",
+      "alt": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job.",
+      "figure": {
+        "x": 8,
+        "y": 13283.6875,
+        "width": 752,
+        "height": 681.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 13283.6875,
+        "width": 752,
+        "height": 626.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 13924.6875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 768,
+      "captionText": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep the five-household promise. The buildings and route are illustrative; the vegetables supplement meals."
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 768,
+      "file": "v101-cutout-spot.png",
+      "src": "../media/file59.png",
+      "alt": "Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail.",
+      "figure": {
+        "x": 240,
+        "y": 7041.765625,
+        "width": 288,
+        "height": 247.03125,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 7041.765625,
+        "width": 288,
+        "height": 192,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 7248.109375,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1536,
+      "viewport": 768,
+      "captionText": "Capability still needs an arrangement for access. AI-adapted cutout from Jonte, CC BY-SA 4.0."
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 768,
+      "file": "v101-visual-operating-stack.svg",
+      "src": "../media/file60.svg",
+      "alt": "A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights.",
+      "figure": {
+        "x": 8,
+        "y": 7813.09375,
+        "width": 752,
+        "height": 676.984375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7813.09375,
+        "width": 752,
+        "height": 621.953125,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8449.390625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 181,
+      "viewport": 768,
+      "captionText": "The model file is one layer of a working service. Running a useful service also takes software, hardware, power, and people who maintain it. Conceptual illustration."
+    },
+    {
+      "chapter": "EPUB/text/ch018.xhtml",
+      "width": 768,
+      "file": "v101-chart-weights-memory.svg",
+      "src": "../media/file61.svg",
+      "alt": "A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory.",
+      "figure": {
+        "x": 8,
+        "y": 8835.875,
+        "width": 752,
+        "height": 948.03125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 8835.875,
+        "width": 752,
+        "height": 893,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 9743.21875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 126,
+      "viewport": 768,
+      "captionText": "Memory before the overhead. These are derived weights-only sizes, not measured VRAM requirements. They omit the chapter’s illustrative allowance as well as runtime costs. llama.cpp, memory and context options."
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 768,
+      "file": "v101-chart-land-values.svg",
+      "src": "../media/file64.svg",
+      "alt": "A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages.",
+      "figure": {
+        "x": 8,
+        "y": 3863.109375,
+        "width": 752,
+        "height": 938.625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 3863.109375,
+        "width": 752,
+        "height": 883.59375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 4761.046875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 128,
+      "viewport": 768,
+      "captionText": "What an acre costs. USDA survey estimates include farm buildings as well as land. These are nominal national averages, not inflation-adjusted values or local offers. USDA NASS, Land Values 2026, page 5."
+    },
+    {
+      "chapter": "EPUB/text/ch019.xhtml",
+      "width": 768,
+      "file": "v101-visual-shared-land.svg",
+      "src": "../media/file65.svg",
+      "alt": "A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement.",
+      "figure": {
+        "x": 8,
+        "y": 4825.734375,
+        "width": 752,
+        "height": 680.125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 4825.734375,
+        "width": 752,
+        "height": 625.09375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 5465.171875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 180,
+      "viewport": 768,
+      "captionText": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a way to challenge decisions. Conceptual illustration, not a legal template."
+    },
+    {
+      "chapter": "EPUB/text/ch021.xhtml",
+      "width": 768,
+      "file": "v101-chart-waste-pathways.svg",
+      "src": "../media/file75.svg",
+      "alt": "Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material.",
+      "figure": {
+        "x": 8,
+        "y": 7534.453125,
+        "width": 752,
+        "height": 1110.953125,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 7534.453125,
+        "width": 752,
+        "height": 1055.921875,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 8604.71875,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 768,
+      "captionText": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could not have been donated. Donation is net of food banks’ unusable portion. EPA, Table 5."
+    },
+    {
+      "chapter": "EPUB/text/ch022.xhtml",
+      "width": 768,
+      "file": "v101-scene-living-soil.svg",
+      "src": "../media/file81.svg",
+      "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away.",
+      "figure": {
+        "x": 8,
+        "y": 6649.15625,
+        "width": 752,
+        "height": 681.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 6649.15625,
+        "width": 752,
+        "height": 626.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 7290.15625,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 768,
+      "captionText": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its boundary. Conceptual cutaway, not a measured soil profile."
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 768,
+      "file": "v101-cutout-tools.png",
+      "src": "../media/file86.png",
+      "alt": "Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench.",
+      "figure": {
+        "x": 240,
+        "y": 4419.390625,
+        "width": 288,
+        "height": 397.625,
+        "right": 528
+      },
+      "image": {
+        "x": 240,
+        "y": 4419.390625,
+        "width": 288,
+        "height": 342.59375,
+        "right": 528
+      },
+      "caption": {
+        "x": 240,
+        "y": 4776.328125,
+        "width": 288,
+        "height": 40.6875,
+        "right": 528
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 1150,
+      "viewport": 768,
+      "captionText": "Tools with a history of use. AI-adapted collage from Shixart1985, CC BY 2.0."
+    },
+    {
+      "chapter": "EPUB/text/ch024.xhtml",
+      "width": 768,
+      "file": "v101-scene-shared-workshop.svg",
+      "src": "../media/file92.svg",
+      "alt": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop.",
+      "figure": {
+        "x": 8,
+        "y": 11867,
+        "width": 752,
+        "height": 681.6875,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 11867,
+        "width": 752,
+        "height": 626.65625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 12508,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 960,
+      "viewport": 768,
+      "captionText": "Shared tools need a working arrangement around them: trained people, suitable power and materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not a fabrication or wiring plan."
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 768,
+      "file": "v101-visual-continuity-calendar.svg",
+      "src": "../media/file94.svg",
+      "alt": "One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured.",
+      "figure": {
+        "x": 8,
+        "y": 3078.0625,
+        "width": 752,
+        "height": 656.625,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 3078.0625,
+        "width": 752,
+        "height": 601.59375,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 3694,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 188,
+      "viewport": 768,
+      "captionText": "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters to the households expecting a delivery. Illustration of the fictional scene."
+    },
+    {
+      "chapter": "EPUB/text/ch025.xhtml",
+      "width": 768,
+      "file": "v101-chart-meal-response.svg",
+      "src": "../media/file96.svg",
+      "alt": "An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board.",
+      "figure": {
+        "x": 8,
+        "y": 8800.40625,
+        "width": 752,
+        "height": 1114.09375,
+        "right": 760
+      },
+      "image": {
+        "x": 8,
+        "y": 8800.40625,
+        "width": 752,
+        "height": 1059.0625,
+        "right": 760
+      },
+      "caption": {
+        "x": 8,
+        "y": 9873.8125,
+        "width": 752,
+        "height": 40.6875,
+        "right": 760
+      },
+      "float": "none",
+      "complete": true,
+      "naturalWidth": 107,
+      "viewport": 768,
+      "captionText": "When a meal fails. An illustrative worksheet from this chapter’s premortem record, not the measured performance of a service. Confirm the alternative and the people who will deliver it before expanding the promise."
+    }
+  ],
+  "layout_errors": [],
+  "missing_requests": [],
+  "cutout_alpha": [
+    {
+      "file": "v101-cutout-atlas.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.6905778249104818,
+      "partial_alpha_fraction": 0.30942217508951825,
+      "near_opaque_fraction": 0.2656866709391276,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-rocket.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.7680098215738932,
+      "partial_alpha_fraction": 0.23199017842610678,
+      "near_opaque_fraction": 0.12463887532552083,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-sun.png",
+      "dimensions": [
+        1283,
+        1226
+      ],
+      "transparent_fraction": 0.35007991313181913,
+      "partial_alpha_fraction": 0.6499200868681808,
+      "near_opaque_fraction": 0.538367203701561,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-printer.png",
+      "dimensions": [
+        1184,
+        1328
+      ],
+      "transparent_fraction": 0.4289656514571801,
+      "partial_alpha_fraction": 0.57103434854282,
+      "near_opaque_fraction": 0.45303786938293716,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-spot.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent_fraction": 0.7407919565836588,
+      "partial_alpha_fraction": 0.2592080434163411,
+      "near_opaque_fraction": 0.22690645853678384,
+      "max_alpha": 254
+    },
+    {
+      "file": "v101-cutout-tools.png",
+      "dimensions": [
+        1150,
+        1368
+      ],
+      "transparent_fraction": 0.7085163996948894,
+      "partial_alpha_fraction": 0.2908276125095347,
+      "near_opaque_fraction": 0.2583403254513094,
+      "max_alpha": 255
+    }
+  ],
+  "screenshots": [
+    "docs/v0.10.1/epub-proof/v101-cutout-atlas-768.png",
+    "docs/v0.10.1/epub-proof/v101-chart-data-centre-demand-768.png",
+    "docs/v0.10.1/epub-proof/v101-cutout-printer-768.png",
+    "docs/v0.10.1/epub-proof/v101-scene-food-delivery-768.png",
+    "docs/v0.10.1/epub-proof/v101-cutout-spot-768.png",
+    "docs/v0.10.1/epub-proof/v101-chart-weights-memory-768.png",
+    "docs/v0.10.1/epub-proof/v101-chart-waste-pathways-768.png",
+    "docs/v0.10.1/epub-proof/v101-scene-living-soil-768.png",
+    "docs/v0.10.1/epub-proof/v101-scene-shared-workshop-768.png"
+  ],
+  "negative_controls": [
+    "actual EPUB figure given 150vw width and left float"
+  ],
+  "limits": "Chrome reflow of packaged XHTML/CSS; not dedicated EPUB-reader pagination or physical-device acceptance."
+}

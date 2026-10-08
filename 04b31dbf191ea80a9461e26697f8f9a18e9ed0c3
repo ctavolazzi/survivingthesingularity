@@ -85,7 +85,7 @@ for index, section in enumerate(META['sections']):
     soup = BeautifulSoup(raw, 'html.parser')
     original_h1 = soup.find('h1')
     full_title = original_h1.get_text(' ', strip=True)
-    label, _, title = full_title.partition(':')
+    label, separator, title = full_title.partition(':')
     title = title.strip() or full_title
     # Case is display typography only; the manifest supplies the canonical title.
     canonical = section['title'].partition(':')[2].strip()
@@ -96,7 +96,9 @@ for index, section in enumerate(META['sections']):
     original_h1.insert_before(running)
     opening = make('header', {'class':'chapter-opening'})
     original_h1.wrap(opening)
-    original_h1.insert_before(make('div', {'class':'chapter-label'}, label.title()))
+    # Unnumbered headings such as How to Use This Book need one title.
+    if separator and label.strip():
+        original_h1.insert_before(make('div', {'class':'chapter-label'}, label.title()))
     for fig in soup.find_all('figure'):
         img = fig.find('img')
         if not img:
@@ -216,7 +218,9 @@ credits = '<section class="chapter credits" id="image-credits"><div class="runni
 credits += '<p>The cover is the book\'s original cover illustration. Original botanical and mechanical line drawings were created with Codex for an earlier design as editable SVG artwork. The three part-divider illustrations and four photographs or artworks whose commercial reproduction basis was unclear have been replaced with those drawings. Explanatory diagrams were drawn for this book as SVG. Image captions follow the audited sources.</p>'
 credits += '<p>Edition v0.10.1 adds six photo-derived editorial cutouts made with built-in image_gen. Backgrounds were removed and subject details regenerated; the tools and launch plume were recomposed. These are credited adaptations, not unchanged documentary photographs. Eight sourced or explicitly illustrative charts, six conceptual SVG drawings, and three Three.js scene stills provide additional explanations. The interactive versions of the three scenes are available in the web reader; PDF and EPUB retain static illustrations.</p>'
 credits += '<p>Edition v0.10.2 revises 31 existing SVG diagrams for print readability and agreement with the reviewed text. Forecasts, illustrations and measured results are distinguished; resource diagrams retain outside inputs, maintenance and human work. Original numerical observations in the redrawn food-security and farm-machinery charts are preserved.</p>'
+credits += '<p>Edition v0.10.3 adds four fictional narrative illustrations generated with built-in image_gen from scenes in Chapters 0, 4, 7 and 19. They are illustrations, not documentary images. Four original SVG graphics explain reading routes, continuing service costs, offline retrieval and the first-year practice plan. Prompt and source records accompany the edition.</p>'
 credits += '<p>Diagram labels use JetBrains Mono. Body text is typeset in Source Serif 4 and Source Sans Pro, designed by Frank Grießhammer and Paul D. Hunt respectively, published by Adobe under the SIL Open Font License 1.1.</p>'
+credits += '<div class="credits-closing"><p>Image adaptations retain the relevant image licenses. Those licenses do not extend to the manuscript text.</p><p>'+str(sum(1 for f in included_images if RIGHTS_BY_FILE.get(f,{}).get('kind')=='generated' and Path(f).suffix.lower() in {'.png','.jpg','.webp'}))+' narrative plates were created with PixelLab and assembled for an earlier edition. These generated illustrations depict fictional scenes and are not photographs or evidence of actual deployments. The companion asset register records generation identifiers, component files and provider terms.</p></div>'
 license_urls = {'CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 2.0':'https://creativecommons.org/licenses/by-sa/2.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/'}
 for item in credits_data:
     if item['file'] not in included_images:
@@ -226,7 +230,7 @@ for item in credits_data:
     title = item['source_title'].removeprefix('File:')
     source_url=audit['source_url']
     credits += f'<div class="credit"><p><b>{html.escape(title)}</b><br/>{html.escape(audit["artist"])}. {html.escape(audit["license"])}. {html.escape(audit["modification_note"])}</p><p class="credit-url"><a href="{html.escape(source_url)}">{html.escape(source_url.removeprefix("https://"))}</a><br/><a href="{html.escape(license_url)}">{html.escape(license_url.removeprefix("https://"))}</a></p></div>'
-credits += '<p>Image adaptations retain the relevant image licenses. Those licenses do not extend to the manuscript text.</p><p>'+str(sum(1 for f in included_images if RIGHTS_BY_FILE.get(f,{}).get('kind')=='generated' and Path(f).suffix.lower() in {'.png','.jpg','.webp'}))+' narrative plates were created with PixelLab and assembled for an earlier edition. These generated illustrations depict fictional scenes and are not photographs or evidence of actual deployments. The companion asset register records generation identifiers, component files and provider terms.</p></section>'
+credits += '</section>'
 
 subtitle = html.escape(META['subtitle']).replace(' and the Future','<br/>and the Future')
 front = f'''<section class="front title-page"><div class="chapter-label">Christopher Tavolazzi</div><h1>Surviving<br/>the Singularity</h1><p class="subtitle">{subtitle}</p>{motif('grain-and-gripper')}<p class="edition">ILLUSTRATED EDITION</p></section>

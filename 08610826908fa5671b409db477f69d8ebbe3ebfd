@@ -139,10 +139,6 @@ The UN Food and Agriculture Organization's 2022 report on agricultural automatio
 
 For the controller in the scene, or one like it, the open-source project Mycodo turns a Raspberry Pi into an environmental controller: sensors in, relays out, and feedback loops in between.
 
-![SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.](/book-images/ch09-greenhouse-bus.svg)
-
-*The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.*
-
 - **Sensors:** an air temperature and humidity sensor (the SHT31-D is common) and a capacitive soil-moisture probe, which resists corrosion better than the cheap resistive kind.
 - **Actuators:** a relay board switching low-voltage devices: an exhaust fan, a solenoid valve on the irrigation line, supplemental lights. Have someone who knows electrical work check anything that touches mains power.
 
@@ -158,6 +154,10 @@ Then browse to `https://<your-pi-ip>/` for the web interface. From there you can
 > $$u(t) = K_p e(t) + K_i \int e(\tau) d\tau + K_d \, de(t)/dt$$
 
 where $e(t)$ is the gap between the target and the sensor reading, and the three $K$ values tune the response. A valve that only opens or closes still needs limits on run time and total water, plus an off state if the sensor stops reporting. Start with a grower's judgment about what the plants need, keep the manual valve working, and check the soil with your hands until you trust the numbers. (Chapter 15 is about what happens when you don't.)
+
+![SHT31-D air temperature and humidity and STEMMA capacitive moisture sensors connect over I2C to a Raspberry Pi running Mycodo. Growers configure and test setpoints, run-time and water limits, irrigation fail-off behavior and manual shutoffs; matched drivers operate low-voltage valve, fan and light circuits.](/book-images/ch09-greenhouse-bus.svg)
+
+*The greenhouse bus is a component map. Use moisture readings checked against the bed, configure run-time and water limits, verify that water stops on faults and power loss, and retain a manual shutoff.*
 
 ## A worked example: one delivery, all the way through
 

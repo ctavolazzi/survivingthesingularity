@@ -1,6 +1,6 @@
 {
   "schema": "sts-visuals/v1",
-  "edition": "0.10.2",
+  "edition": "0.10.3",
   "images": {
     "v101-cutout-atlas.png": {
       "layout": "cutout-right",
@@ -673,6 +673,90 @@
         "source_sha256": "e3090f6eeaff9fb0bbc86863f32e36d7aaef5f9a9a372540b8698a6ff5bb9392",
         "sha256": "dcfc20c67bca2765a50b2e152dd47c1d983bd71db9b546e1108f22e6d2a7cf78"
       }
+    },
+    "v103-reading-routes.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        376
+      ],
+      "print": {
+        "file": "print/v103-reading-routes.svg",
+        "source_sha256": "2e42c7d6ac4f1988d6646e64315c87deb72d6ebfd8457e9e34c2ebd99ab1bb4d",
+        "sha256": "291fb538492de62b95c5e9726101b78a0ae05cd7b19ce9e61aaaba121249d07c"
+      }
+    },
+    "v103-service-ledger.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        357
+      ],
+      "print": {
+        "file": "print/v103-service-ledger.svg",
+        "source_sha256": "cd371c6d3a61c0b0cf1d73f8dc7d217160870d1ec83221df482bf01318585d98",
+        "sha256": "96e843f945b92c6c936eb729104a66143a5a4fac99b723096c4ae23f9ec0647e"
+      }
+    },
+    "v103-offline-check.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        381
+      ],
+      "print": {
+        "file": "print/v103-offline-check.svg",
+        "source_sha256": "2e7f69921763689d38261690a617e26b3f39fa7fd7f327887fee1a9b9ed0c5dd",
+        "sha256": "24a42ae5c92086ceee428ed0010fdab3b8260a11b56ec61d2d68f61808c78013"
+      }
+    },
+    "v103-first-year-index.svg": {
+      "layout": "diagram",
+      "kind": "conceptual",
+      "pixels": [
+        480,
+        398
+      ],
+      "print": {
+        "file": "print/v103-first-year-index.svg",
+        "source_sha256": "6683749e7b0c735249f25b84e48b783a23b8c8495a57f007521f97d001eb8484",
+        "sha256": "5fe1a8cbe71d9da92db743aa7ed623841181083764a3a708c842a1f2d76eafda"
+      }
+    },
+    "v103-narrative-bear-flag.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "v103-narrative-near-end.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "v103-narrative-passing-beans.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
+    },
+    "v103-narrative-rosa-testimony.png": {
+      "layout": "diagram",
+      "kind": "narrative",
+      "pixels": [
+        1536,
+        1024
+      ]
     }
   }
 }

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 457" role="img" aria-labelledby="title desc" font-family="JetBrains Mono, monospace">
+<title id="title">INTERRUPTED WORK</title>
+<desc id="desc">An illustrative attention curve rises, drops after three interruptions, and resumes unevenly. A dashed line is a sustained-focus reference. Neither line represents measured data or establishes a recovery time, causal effect size, or interruption threshold.</desc>
+<rect x="0" y="0" width="480" height="457" fill="#0f172a" stroke="none" stroke-width="1"/>
+<text x="20" y="32" font-size="20" fill="#f1f5f9" text-anchor="start" font-weight="600">INTERRUPTED WORK</text>
+<path d="M20 48L460 48" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="20" y="78" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Attention on task · illustrative, not data</text>
+<text x="272" y="111" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">Interruptions</text>
+<path d="M58 145V326H449" fill="none" stroke="#526176" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M443 321L449 326L443 331" fill="none" stroke="#526176" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M58 168L443 168" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="7 5" />
+<path d="M191 142L191 315" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="3 5" />
+<path d="M195 121L187 130H194L187 139" fill="none" stroke="#f1f5f9" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M286 142L286 315" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="3 5" />
+<path d="M290 121L282 130H289L282 139" fill="none" stroke="#f1f5f9" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M367 142L367 315" fill="none" stroke="#526176" stroke-width="1" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="3 5" />
+<path d="M371 121L363 130H370L363 139" fill="none" stroke="#f1f5f9" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="butt" />
+<path d="M58 318C80 303 101 186 132 171L188 170L194 310C216 292 242 223 283 200L289 309C314 294 343 248 364 231L370 313C395 296 416 280 441 269" fill="none" stroke="#f59e0b" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="butt" />
+<text x="253" y="355" font-size="14" fill="#a6b4c8" text-anchor="middle" font-weight="400">Time · not to scale</text>
+<path d="M23 385L52 385" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="7 5" />
+<text x="64" y="390" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Sustained focus reference</text>
+<text x="20" y="422" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">No fixed recovery time or threshold.</text>
+<text x="20" y="443" font-size="14" fill="#a6b4c8" text-anchor="start" font-weight="400">Returning to unfinished work varies.</text>
+</svg>

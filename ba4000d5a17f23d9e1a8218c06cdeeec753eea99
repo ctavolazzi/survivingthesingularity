@@ -1,0 +1,44 @@
+[
+  {
+    "id": "atlas",
+    "file": "02-introduction.md",
+    "before": "Here's the thing the panic keeps you from seeing. Staying alive takes work. A plow can make that work easier, but the plow doesn't pull itself.",
+    "markdown": "![Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page.](/book-images/v101-cutout-atlas.png)\n\n*Atlas, outside the demonstration room. AI-adapted cutout from [DARPA](https://commons.wikimedia.org/wiki/File%3AAtlas_during_testing.jpg), [public domain](https://www.darpa.mil/policies/usage-policy).*",
+    "status": "inserted"
+  },
+  {
+    "id": "rocket",
+    "file": "05-chapter3.md",
+    "before": "While the rest of us are busy throwing bricks and arguing on the news, the machine is running the math, and the math says Earth is a bottleneck. Its improvement loop closes: it reads its own code, finds the flaws, engineers the upgrades, and runs them. Then again. And again. Somewhere in there, it passes the ceiling of human capability and keeps going.",
+    "markdown": "![Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed.](/book-images/v101-cutout-rocket.png)\n\n*An image for the imagined departure. AI-adapted collage from [SpaceX](https://commons.wikimedia.org/wiki/File:Falcon_Heavy_Demo_Mission_(40126461851).jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/); the scenario remains speculative.*",
+    "status": "inserted"
+  },
+  {
+    "id": "sun",
+    "file": "07-chapter5.md",
+    "before": "Let's talk about energy.",
+    "markdown": "![Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background.](/book-images/v101-cutout-sun.png)\n\n*Energy has to come from somewhere. AI-adapted [NASA/SDO imagery](https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg), [public domain](https://www.nasa.gov/nasa-brand-center/images-and-media/); not an unaltered scientific image.*",
+    "status": "inserted"
+  },
+  {
+    "id": "printer",
+    "file": "11-chapter9.md",
+    "before": "The neighborhood factory earns its name when somebody can keep doing useful work because it exists. A repairable controller helps a grower. A local crew knows which part fails during the week nobody has a spare afternoon.",
+    "markdown": "![Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame.](/book-images/v101-cutout-printer.png)\n\n*A machine takes shape around its work. AI-adapted cutout from [John Abella](https://commons.wikimedia.org/wiki/File:Prusa_i3_-_RepRap_3D_printer_printing.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).*",
+    "status": "inserted"
+  },
+  {
+    "id": "spot",
+    "file": "13-chapter11.md",
+    "before": "Suppose the machines work beautifully. Now suppose one company owns them, controls their supplies, and can cut off service when a subscription lapses. Productive capacity went up. Security for the person who can't pay may not have moved at all.",
+    "markdown": "![Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail.](/book-images/v101-cutout-spot.png)\n\n*Capability still needs an arrangement for access. AI-adapted cutout from [Jonte](https://commons.wikimedia.org/wiki/File%3ASpot_by_Boston_Dynamics.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*",
+    "status": "inserted"
+  },
+  {
+    "id": "tools",
+    "file": "19-chapter17.md",
+    "before": "Imagine the priorities written above the workbench: feed people, restore damaged places, make safe homes, relieve suffering. Those are assignments worthy of a powerful technology. They're also a way to judge the uses of it that actually receive our money and attention.",
+    "markdown": "![Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench.](/book-images/v101-cutout-tools.png)\n\n*Tools with a history of use. AI-adapted collage from [Shixart1985](https://commons.wikimedia.org/wiki/File:Various_hand_tools_and_hardware_items_scattered_on_an_old_green_workbench_in_a_workshop.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).*",
+    "status": "inserted"
+  }
+]

@@ -1,0 +1,5686 @@
+{
+  "schema": "sts-figure-layout/v1",
+  "html_sha256": "d7bfaf1e9df031cadb6226e524289b8546b41189b2d14042d6b416aa9c50d98d",
+  "registry_sha256": "f459d8a0ff6ee5dce5632b303951f878963d91056cc0b0ba38cbf79603234f8c",
+  "pages": [
+    {
+      "page": 7,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-atlas.png",
+          "fragments": [
+            [
+              378.24,
+              100.85333333333334,
+              136.32,
+              270.4330533854166
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-atlas.png",
+              "rect": [
+                378.24,
+                100.85333333333332,
+                136.32,
+                204.48
+              ],
+              "alt": "Photo-derived illustration of a complete Atlas humanoid, its exposed frame and blue central light isolated against the page."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Atlas, outside the",
+              "rect": [
+                378.24,
+                317.0254817708334,
+                76.8818359375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "demonstration room. AI-",
+              "rect": [
+                378.24,
+                330.3588151041667,
+                108.9541015625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "adapted cutout from ",
+              "rect": [
+                378.24,
+                343.6921484375,
+                94.1611328125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "DARPA",
+              "rect": [
+                472.4011328125,
+                343.6921484375,
+                29.6640625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ",",
+              "rect": [
+                502.0651953125,
+                343.6921484375,
+                2.666015625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "public domain",
+              "rect": [
+                378.24,
+                357.0254817708333,
+                64.3701171875,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                442.6101171875,
+                357.0254817708333,
+                2.666015625,
+                15.1884765625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "The second ox",
+          "rect": [
+            76.80000000000001,
+            63.871256510416664,
+            120.7509765625,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Here\u2019s the thing the panic keeps you from",
+          "rect": [
+            76.80000000000001,
+            97.21867838541667,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "seeing. Staying alive takes work. A plow can",
+          "rect": [
+            76.80000000000001,
+            117.00534505208336,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "make that work easier, but the plow doesn\u2019t",
+          "rect": [
+            76.80000000000001,
+            136.79201171875002,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "pull itself.",
+          "rect": [
+            76.80000000000001,
+            156.57867838541668,
+            63.08984375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Domestication let us hand some of the heavy",
+          "rect": [
+            76.80000000000001,
+            184.84534505208333,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "work to an animal. Put an ox in front of the",
+          "rect": [
+            76.80000000000001,
+            204.63201171875,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "plow and human muscle no longer has to",
+          "rect": [
+            76.80000000000001,
+            224.41867838541665,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "supply all the pulling power. You still have to",
+          "rect": [
+            76.80000000000001,
+            244.20534505208332,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "train it, feed it, guide it, and care for it. You",
+          "rect": [
+            76.80000000000001,
+            263.99201171874995,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "don\u2019t get to point it at a field and walk away.",
+          "rect": [
+            76.80000000000001,
+            283.77867838541664,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "But you no longer have to do all the work",
+          "rect": [
+            76.80000000000001,
+            303.56534505208333,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "with your own body. ",
+          "rect": [
+            76.80000000000001,
+            323.35201171875,
+            145.39312499999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "FAO, Draught animal",
+          "rect": [
+            222.19312499999998,
+            323.35201171875,
+            138.766875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "power and implements",
+          "rect": [
+            76.80000000000001,
+            343.1386783854167,
+            145.400390625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Call this the second ox. That\u2019s a way to see",
+          "rect": [
+            76.80000000000001,
+            371.4053450520834,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "the machine under all the doom. Not a god arriving to end us. An",
+          "rect": [
+            76.80000000000001,
+            391.1920117187501,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "animal we\u2019re learning to domesticate, one that happens to think. The",
+          "rect": [
+            76.80000000000001,
+            410.9786783854168,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "promise is familiar: hand over more of the work of keeping yourself",
+          "rect": [
+            76.80000000000001,
+            430.7653450520835,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "alive. The responsibility is familiar too: build the system, maintain it,",
+          "rect": [
+            76.80000000000001,
+            450.5520117187502,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and decide what work it should do.",
+          "rect": [
+            76.80000000000001,
+            470.33867838541687,
+            218.73828125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "An early way to hand over some of the heavy work. Training, guidance, and care still belonged to",
+          "rect": [
+            76.80000000000001,
+            714.2955403645835,
+            435.6669921875,
+            15.568359375
+          ]
+        },
+        {
+          "text": "people.",
+          "rect": [
+            76.80000000000001,
+            729.0555403645835,
+            34.427734375,
+            15.568359375
+          ]
+        },
+        {
+          "text": "INTRODUCTION",
+          "rect": [
+            448.45717447916667,
+            25.99498046875,
+            66.10282552083333,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "3",
+          "rect": [
+            508.5961328125,
+            821.8560546875,
+            5.9638671875,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 53,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-forecast-shift.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              65.28,
+              437.76,
+              562.1477200520833
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-forecast-shift.svg",
+              "rect": [
+                76.80000000000001,
+                65.28000000000003,
+                437.76,
+                505.248
+              ],
+              "alt": "Two pairs of points compare aggregate 50% forecast dates from the 2022 and 2023 AI-researcher surveys. High-level machine intelligence moved from 2060 to 2047, thirteen years earlier. Full automation of labor moved from 2164 to 2116, forty-eight years earlier. These are respondent forecasts, not actual arrival dates."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Forecasts moved closer. The same probability threshold yielded earlier aggregate dates in the",
+              "rect": [
+                76.80000000000001,
+                582.7435403645833,
+                423.509765625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "2023 survey. The two milestones are distinct, and neither date is a deadline. ",
+              "rect": [
+                76.80000000000001,
+                597.5035403645833,
+                345.046875,
+                15.568359375
+              ]
+            },
+            {
+              "text": "Grace et al.,",
+              "rect": [
+                421.846875,
+                597.5035403645833,
+                53.1328125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "Thousands of AI Authors on the Future of AI",
+              "rect": [
+                76.80000000000001,
+                612.2635403645833,
+                196.4619140625,
+                15.568359375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                273.2619140625,
+                612.2635403645833,
+                2.7333984375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "The same survey put a 10 percent probability on high-level machine",
+          "rect": [
+            76.80000000000001,
+            650.6730651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "intelligence arriving as early as 2027. And on the darkest question it",
+          "rect": [
+            76.80000000000001,
+            670.4597317708332,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "asked, between 37.8 and 51.4 percent of respondents, depending on",
+          "rect": [
+            76.80000000000001,
+            690.2463984374998,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "how it was framed, gave at least a 10 percent chance to outcomes as",
+          "rect": [
+            76.80000000000001,
+            710.0330651041664,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "bad as human extinction. These aren\u2019t doomers on a forum. These",
+          "rect": [
+            76.80000000000001,
+            729.8197317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 1",
+          "rect": [
+            467.89662760416667,
+            25.99498046875,
+            46.663372395833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "49",
+          "rect": [
+            502.632265625,
+            821.8560546875,
+            11.927734375,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-local-copies.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              383.2277200520832
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-local-copies.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                341.08799999999997
+              ],
+              "alt": "A distant server and a local folder are separated by a broken network connection. A local copy still needs a compatible app, a checked version, and electrical power."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A copy you can open can outlast a broken link. It does not replace electrical power or a tested",
+              "rect": [
+                61.44,
+                418.58354036458326,
+                421.873046875,
+                15.568359375
+              ]
+            },
+            {
+              "text": "plan for equipment that depends on it. Conceptual illustration.",
+              "rect": [
+                61.44,
+                433.34354036458325,
+                284.8623046875,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Stage 3: The Adults Step In",
+          "rect": [
+            61.44,
+            471.3656432291665,
+            222.70703125,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "When the panic peaks, you find out who actually keeps the world",
+          "rect": [
+            61.44,
+            504.7130651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "running. Not a shadowy committee. The site-reliability engineers, the",
+          "rect": [
+            61.44,
+            524.4997317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "grid operators, the network maintainers, the water-plant crews, the",
+          "rect": [
+            61.44,
+            544.2863984374998,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "open-source volunteers, the people who carry pagers so civilization",
+          "rect": [
+            61.44,
+            564.0730651041664,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "stays on. Every one of them has taken something like an oath, formal",
+          "rect": [
+            61.44,
+            583.859731770833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "or private, to keep the systems up. Stage 3 is the moment that oath",
+          "rect": [
+            61.44,
+            603.6463984374997,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "matters more than whatever the executives are panicking about.",
+          "rect": [
+            61.44,
+            623.4330651041663,
+            403.67578125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "They route around damage. They keep the power on for the person",
+          "rect": [
+            61.44,
+            651.699731770833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "on a home ventilator. They stand up local compute and mesh links",
+          "rect": [
+            61.44,
+            671.4863984374996,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "when the long-haul ones fail. That\u2019s the adults\u2019 job, and it\u2019s a big one.",
+          "rect": [
+            61.44,
+            691.2730651041662,
+            430.248046875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Here\u2019s what isn\u2019t their job: deciding for everybody else. Knowing how",
+          "rect": [
+            61.44,
+            719.5397317708329,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "to run the equipment doesn\u2019t give anyone a mandate to govern the",
+          "rect": [
+            61.44,
+            739.3263984374995,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "people who depend on it. An engineer can tell a town what a machine",
+          "rect": [
+            61.44,
+            759.1130651041661,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "60",
+          "rect": [
+            61.44,
+            821.8560546875,
+            11.927734375,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 73,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-rocket.png",
+          "fragments": [
+            [
+              76.80000000000001,
+              212.74666666666664,
+              136.32,
+              270.43305338541666
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-rocket.png",
+              "rect": [
+                76.80000000000001,
+                212.74666666666664,
+                136.32,
+                204.48
+              ],
+              "alt": "Photo-derived collage of Falcon Heavy lifting above a narrow exhaust column and an irregular island of smoke, with the launch site removed."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "An image for the imagined",
+              "rect": [
+                76.80000000000001,
+                428.9188151041667,
+                116.67578125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "departure. AI-adapted collage",
+              "rect": [
+                76.80000000000001,
+                442.2521484375,
+                132.08984375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "from ",
+              "rect": [
+                76.80000000000001,
+                455.5854817708333,
+                23.4755859375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "SpaceX",
+              "rect": [
+                100.27558593750001,
+                455.5854817708333,
+                32.25390625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                132.5294921875,
+                455.5854817708333,
+                4.798828125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "CC0",
+              "rect": [
+                137.3283203125,
+                455.5854817708333,
+                17.1708984375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "; the",
+              "rect": [
+                154.49921875,
+                455.5854817708333,
+                19.5078125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "scenario remains speculative.",
+              "rect": [
+                76.80000000000001,
+                468.91881510416664,
+                131.4990234375,
+                15.1884765625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "ground noise. From here on, the map is scenario. I\u2019ll tell you what I",
+          "rect": [
+            76.80000000000001,
+            65.48534505208333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "think. You should hold it the way you\u2019d hold a weather forecast for",
+          "rect": [
+            76.80000000000001,
+            85.27201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "next spring.",
+          "rect": [
+            76.80000000000001,
+            105.05867838541666,
+            75.638671875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Stage 6: The ASI Exodus",
+          "rect": [
+            76.80000000000001,
+            147.4979231770833,
+            199.7265625,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Here\u2019s the scenario I keep coming back to.",
+          "rect": [
+            76.80000000000001,
+            180.84534505208333,
+            265.0048828125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "While the rest of us are busy throwing bricks",
+          "rect": [
+            230.4,
+            209.11201171874998,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and arguing on the news, the machine is",
+          "rect": [
+            230.4,
+            228.89867838541664,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "running the math, and the math says Earth is",
+          "rect": [
+            230.4,
+            248.68534505208328,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "a bottleneck. Its improvement loop closes: it",
+          "rect": [
+            230.4,
+            268.47201171874997,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "reads its own code, finds the flaws, engi\u2010",
+          "rect": [
+            230.4,
+            288.25867838541666,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "neers the upgrades, and runs them. Then",
+          "rect": [
+            230.4,
+            308.04534505208335,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "again. And again. Somewhere in there, it",
+          "rect": [
+            230.4,
+            327.83201171875004,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "passes the ceiling of human capability and",
+          "rect": [
+            230.4,
+            347.61867838541673,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "keeps going.",
+          "rect": [
+            230.4,
+            367.4053450520834,
+            78.6630859375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "And what does a system that capable do",
+          "rect": [
+            230.4,
+            395.6720117187501,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "about a planet full of frightened apes trying",
+          "rect": [
+            230.4,
+            415.4586783854168,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "to smash its hardware? In the movies, it",
+          "rect": [
+            230.4,
+            435.2453450520835,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "fights. I don\u2019t think it would bother. War is",
+          "rect": [
+            230.4,
+            455.0320117187502,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "expensive. It wastes resources, time, and",
+          "rect": [
+            230.4,
+            474.8186783854169,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "energy, and it\u2019s fought over the one planet",
+          "rect": [
+            230.4,
+            494.6053450520836,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "where the resources are hardest to reach, at the bottom of a gravity",
+          "rect": [
+            76.80000000000001,
+            514.3920117187503,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "well. Space has more sunlight, more metal, and nobody throwing",
+          "rect": [
+            76.80000000000001,
+            534.1786783854169,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "bricks.",
+          "rect": [
+            76.80000000000001,
+            553.9653450520835,
+            42.7666015625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "It packs its bags.",
+          "rect": [
+            76.80000000000001,
+            582.2320117187502,
+            103.0263671875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "It leaves us holding the bricks, staring up at the sky. That\u2019s the",
+          "rect": [
+            76.80000000000001,
+            610.4986783854168,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ultimate insult to human arrogance: we weren\u2019t even worth",
+          "rect": [
+            76.80000000000001,
+            630.2853450520835,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "destroying. We were just something it outgrew.",
+          "rect": [
+            76.80000000000001,
+            650.0720117187501,
+            294.005859375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Maybe it keeps an eye on us. Maybe it\u2019s the sort of neighbor that steps",
+          "rect": [
+            76.80000000000001,
+            678.3386783854168,
+            437.76,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "in before somebody presses the big red button. If we treated it like a",
+          "rect": [
+            76.80000000000001,
+            698.1253450520834,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "friend instead of an enemy, maybe. That\u2019s the hope the phrase ",
+          "rect": [
+            76.80000000000001,
+            717.91201171875,
+            400.98656249999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "mutu\u2010",
+          "rect": [
+            477.78656249999995,
+            717.91201171875,
+            36.7734375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ally assured survival",
+          "rect": [
+            76.80000000000001,
+            737.6986783854167,
+            123.49622514204545,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " is trying to name: a world where cooperation is",
+          "rect": [
+            200.29622514204544,
+            737.6986783854167,
+            314.2637748579545,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "simply more useful than domination, for everyone involved.",
+          "rect": [
+            76.80000000000001,
+            757.4853450520833,
+            377.703125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 3",
+          "rect": [
+            467.89662760416667,
+            25.99498046875,
+            46.663372395833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "69",
+          "rect": [
+            502.632265625,
+            821.8560546875,
+            11.927734375,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 90,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-sun.png",
+          "fragments": [
+            [
+              61.44,
+              106.54847656250001,
+              136.32,
+              209.550081184845
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-sun.png",
+              "rect": [
+                61.44,
+                106.54847656250001,
+                136.32,
+                130.26369446609507
+              ],
+              "alt": "Illustration adapted from an orange NASA SDO solar image, with the disk and edge prominences isolated on a transparent background."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Energy has to come from",
+              "rect": [
+                61.44,
+                248.50431946609513,
+                110.2109375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "somewhere. AI-adapted ",
+              "rect": [
+                61.44,
+                261.83765279942844,
+                108.025390625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "NASA/",
+              "rect": [
+                169.465390625,
+                261.83765279942844,
+                27.9248046875,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "SDO imagery",
+              "rect": [
+                61.44,
+                275.17098613276175,
+                57.830078125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                119.270078125,
+                275.17098613276175,
+                4.798828125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "public domain",
+              "rect": [
+                124.06890625,
+                275.17098613276175,
+                64.3701171875,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ";",
+              "rect": [
+                188.4390234375,
+                275.17098613276175,
+                2.666015625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "not an unaltered scientific",
+              "rect": [
+                61.44,
+                288.50431946609507,
+                115.9169921875,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "image.",
+              "rect": [
+                61.44,
+                301.8376527994284,
+                30.0458984375,
+                15.1884765625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "THE FOUNDATIONS",
+          "rect": [
+            61.44,
+            82.39999999999999,
+            110.324609375,
+            15.1884765625
+          ]
+        },
+        {
+          "text": "Let\u2019s talk about energy.",
+          "rect": [
+            215.04,
+            102.91382161458334,
+            144.5205078125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "And no, I don\u2019t mean the \u201cI\u2019m really vibing",
+          "rect": [
+            215.04,
+            131.18048828125,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "with your aura\u201d kind. Nobody ever stayed",
+          "rect": [
+            215.04,
+            150.96715494791667,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "warm in January by aligning their chakras.",
+          "rect": [
+            215.04,
+            170.75382161458333,
+            268.7958984375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "I mean real energy. The brutal, unforgiving",
+          "rect": [
+            215.04,
+            199.02048828124998,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "energy of physics, measured in joules, calo\u2010",
+          "rect": [
+            215.04,
+            218.80715494791664,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ries, and kilowatt-hours. Whether you\u2019re a",
+          "rect": [
+            215.04,
+            238.5938216145833,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "frontier model running in a warehouse full",
+          "rect": [
+            215.04,
+            258.38048828124994,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "of chillers or a wet, anxious ape eating a",
+          "rect": [
+            215.04,
+            278.16715494791663,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "dented can of beans, you\u2019re bound by the",
+          "rect": [
+            215.04,
+            297.9538216145833,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "same laws of thermodynamics. No algorithm",
+          "rect": [
+            215.04,
+            317.74048828125,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "can patch them out. No lobbyist can buy them off.",
+          "rect": [
+            61.44,
+            337.5271549479167,
+            313.6044921875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The rules of the board",
+          "rect": [
+            61.44,
+            379.9663997395834,
+            186.6435546875,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "The first law: you can\u2019t cheat the universe.",
+          "rect": [
+            61.44,
+            413.31382161458333,
+            269.96302734374996,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " Energy can\u2019t be created or",
+          "rect": [
+            331.40302734374995,
+            413.31382161458333,
+            167.79697265624998,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "destroyed, only changed from one form to another. Everything you",
+          "rect": [
+            61.44,
+            433.10048828125,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "do needs an input. To think a thought, your brain burns glucose. To",
+          "rect": [
+            61.44,
+            452.8871549479167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "run an electric water pump, you need electricity. To run a model,",
+          "rect": [
+            61.44,
+            472.6738216145834,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "somebody supplies power.",
+          "rect": [
+            61.44,
+            492.4604882812501,
+            166.146484375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The second law: useful energy has limits.",
+          "rect": [
+            61.44,
+            520.7271549479168,
+            267.3359765625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " Energy can remain on the",
+          "rect": [
+            328.7759765625,
+            520.7271549479168,
+            170.42402343749998,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "books while becoming less available to do work. A heat engine oper\u2010",
+          "rect": [
+            61.44,
+            540.5138216145834,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ating in a complete cycle can\u2019t turn all the heat it takes in into work,",
+          "rect": [
+            61.44,
+            560.3004882812501,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and real machines dissipate energy through friction and other losses.",
+          "rect": [
+            61.44,
+            580.0871549479167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "OpenStax, Statements of the Second Law of Thermodynamics",
+          "rect": [
+            61.44,
+            599.8738216145833,
+            402.99336914062496,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " Your",
+          "rect": [
+            464.43336914062496,
+            599.8738216145833,
+            34.76663085937499,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "body is a highly organized structure that needs continuing upkeep. To",
+          "rect": [
+            61.44,
+            619.66048828125,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "stay alive you have to keep taking in food and exporting waste and",
+          "rect": [
+            61.44,
+            639.4471549479166,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "heat.",
+          "rect": [
+            61.44,
+            659.2338216145832,
+            31.5869140625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "For most of us, a global supply system does that heavy lifting out of",
+          "rect": [
+            61.44,
+            687.5004882812499,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "sight. It burns an astonishing amount of fuel to move a strawberry",
+          "rect": [
+            61.44,
+            707.2871549479165,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "across a continent so you can eat its sugar in February. Most days it",
+          "rect": [
+            61.44,
+            727.0738216145832,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "works. The days it doesn\u2019t are when you find out how far you live",
+          "rect": [
+            61.44,
+            746.8604882812498,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "from your own dinner.",
+          "rect": [
+            61.44,
+            766.6471549479164,
+            142.6162109375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "86",
+          "rect": [
+            61.44,
+            821.8560546875,
+            11.927734375,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 92,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-data-centre-demand.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              569.4437200520831
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-data-centre-demand.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                512.5439999999999
+              ],
+              "alt": "Two columns compare worldwide data-centre electricity use: 485 terawatt-hours estimated for 2025, shown solid, and 950 terawatt-hours projected for 2030, shown hatched. The figures cover all data centres, not AI alone; no intermediate years are plotted."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The machine\u2019s appetite. The solid column is IEA\u2019s estimate for 2025; the hatched column is its",
+              "rect": [
+                61.44,
+                590.0395403645831,
+                421.0087890625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "2030 projection. This is all data-centre electricity, not AI alone. ",
+              "rect": [
+                61.44,
+                604.7995403645831,
+                283.771484375,
+                15.568359375
+              ]
+            },
+            {
+              "text": "IEA, Key Questions on Energy and",
+              "rect": [
+                345.211484375,
+                604.7995403645831,
+                152.107421875,
+                15.568359375
+              ]
+            },
+            {
+              "text": "AI, 2026",
+              "rect": [
+                61.44,
+                619.5595403645831,
+                35.4765625,
+                15.568359375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                96.9165625,
+                619.5595403645831,
+                2.7333984375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "You burn roughly 2,000 to 2,500 kilocalories a day to keep your heart",
+          "rect": [
+            61.44,
+            657.9690651041664,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "pumping, your lungs moving, and your brain generating existential",
+          "rect": [
+            61.44,
+            677.755731770833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "dread. That\u2019s about 100 watts of continuous power, the draw of an old",
+          "rect": [
+            61.44,
+            697.5423984374996,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "incandescent bulb, and about twenty of those watts run your brain.",
+          "rect": [
+            61.44,
+            717.3290651041663,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "To get them, you need proteins, carbohydrates, and fats that",
+          "rect": [
+            61.44,
+            737.1157317708329,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "somebody had to grow, harvest, move, and cook.",
+          "rect": [
+            61.44,
+            756.9023984374995,
+            305.708984375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "88",
+          "rect": [
+            61.44,
+            821.8560546875,
+            11.927734375,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 111,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-income-food-access.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              65.28,
+              437.76,
+              516.5477200520833
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-income-food-access.svg",
+              "rect": [
+                76.80000000000001,
+                65.27999999999997,
+                437.76,
+                459.648
+              ],
+              "alt": "Two lollipop bars show food insecurity in selected US income groups during 2024: 39.4% of households below the poverty threshold and 7.9% at or above 185% of that threshold. Dashed reference ticks mark the 13.7% national household rate. Middle and unknown income categories are not plotted."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Income and food access. In the 2024 survey, food insecurity was associated with income. These",
+              "rect": [
+                76.80000000000001,
+                537.1435403645833,
+                430.302734375,
+                15.568359375
+              ]
+            },
+            {
+              "text": "two selected groups do not represent every income category, and the comparison does not",
+              "rect": [
+                76.80000000000001,
+                551.9035403645833,
+                412.318359375,
+                15.568359375
+              ]
+            },
+            {
+              "text": "establish causation. ",
+              "rect": [
+                76.80000000000001,
+                566.6635403645832,
+                92.5341796875,
+                15.568359375
+              ]
+            },
+            {
+              "text": "USDA ERS, ERR-358, Table 2",
+              "rect": [
+                169.3341796875,
+                566.6635403645832,
+                125.1142578125,
+                15.568359375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                294.4484375,
+                566.6635403645832,
+                2.7333984375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "CHAPTER 6",
+          "rect": [
+            467.89662760416667,
+            25.99498046875,
+            46.663372395833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "107",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 113,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-access-gate.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              65.28,
+              437.76,
+              350.39572005208333
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-access-gate.svg",
+              "rect": [
+                76.80000000000001,
+                65.28000000000003,
+                437.76,
+                308.25600000000003
+              ],
+              "alt": "A productive machine stands before an open gate and a plate. The gate names terms, price, eligibility, and delivery as choices that affect who receives the result."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A working machine still needs an arrangement that lets people reach its output. Conceptual",
+              "rect": [
+                76.80000000000001,
+                385.7515403645834,
+                414.9833984375,
+                15.568359375
+              ]
+            },
+            {
+              "text": "illustration.",
+              "rect": [
+                76.80000000000001,
+                400.51154036458337,
+                52.236328125,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A workshop is a beginning",
+          "rect": [
+            76.80000000000001,
+            438.5336432291666,
+            222.779296875,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Elijah can drive north because he has savings, a car, and skills a",
+          "rect": [
+            76.80000000000001,
+            471.88106510416657,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "workshop can use. Someone caring for a parent in a fourth-floor",
+          "rect": [
+            76.80000000000001,
+            491.66773177083326,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "apartment may have none of those. A serious proposal has to reach",
+          "rect": [
+            76.80000000000001,
+            511.4543984375,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "that apartment too.",
+          "rect": [
+            76.80000000000001,
+            531.2410651041666,
+            121.6689453125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Marta\u2019s nineteen households can teach us how people cooperate,",
+          "rect": [
+            76.80000000000001,
+            559.5077317708333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "repair things, and notice each other\u2019s needs. They can\u2019t stand in for",
+          "rect": [
+            76.80000000000001,
+            579.2943984374999,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "every city, every climate, or every person who doesn\u2019t know some\u2010",
+          "rect": [
+            76.80000000000001,
+            599.0810651041666,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "body at the table. Their work gets more useful the more it connects",
+          "rect": [
+            76.80000000000001,
+            618.8677317708332,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "with growers, kitchens, unions, and institutions beyond the shed.",
+          "rect": [
+            76.80000000000001,
+            638.6543984374998,
+            410.3388671875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "So find one connection this week. Ask an existing food provider",
+          "rect": [
+            76.80000000000001,
+            666.9210651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "where a meal gets held up: money, transport, equipment, staffing, a",
+          "rect": [
+            76.80000000000001,
+            686.7077317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "confusing application, nowhere to cook. The answer names a job for",
+          "rect": [
+            76.80000000000001,
+            706.4943984374997,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "the tools and a job for the people organizing them.",
+          "rect": [
+            76.80000000000001,
+            726.2810651041664,
+            316.5751953125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 6",
+          "rect": [
+            467.89662760416667,
+            25.99498046875,
+            46.663372395833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "109",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 147,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-attention-ribbon.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              424.00800000000027,
+              437.76,
+              363.16372005208325
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-attention-ribbon.svg",
+              "rect": [
+                76.80000000000001,
+                424.00800000000027,
+                437.76,
+                321.024
+              ],
+              "alt": "A ribbon interrupted into scattered fragments sits above one continuous ribbon, contrasting repeated interruptions with attention given to a chosen task."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A day can feel cut into pieces. The ribbons illustrate interruptions, without measuring a cognitive",
+              "rect": [
+                76.80000000000001,
+                757.2475403645835,
+                437.4931640625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "budget or a fixed recovery time.",
+              "rect": [
+                76.80000000000001,
+                772.0075403645835,
+                143.7861328125,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Real-time stream (fragile)",
+          "rect": [
+            82.08000000000001,
+            73.84938802083335,
+            131.3408203125,
+            17.087890625
+          ]
+        },
+        {
+          "text": "Batch processing (steady)",
+          "rect": [
+            300.96,
+            73.84938802083335,
+            131.8203125,
+            17.087890625
+          ]
+        },
+        {
+          "text": "Digital fragmentation",
+          "rect": [
+            82.08000000000001,
+            105.59605468750001,
+            106.4638671875,
+            17.087890625
+          ]
+        },
+        {
+          "text": "Written notes",
+          "rect": [
+            300.96,
+            105.59605468750001,
+            66.9619140625,
+            17.087890625
+          ]
+        },
+        {
+          "text": "Shallow comprehension",
+          "rect": [
+            82.08000000000001,
+            136.72938802083334,
+            121.021484375,
+            17.087890625
+          ]
+        },
+        {
+          "text": "Mastery of a craft",
+          "rect": [
+            300.96,
+            136.72938802083334,
+            85.740234375,
+            17.087890625
+          ]
+        },
+        {
+          "text": "\u2022 ",
+          "rect": [
+            86.86315104166667,
+            175.71201171875003,
+            7.603515625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The twice-a-day rule:",
+          "rect": [
+            96.58666666666667,
+            175.71201171875003,
+            135.3359375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " check email and messages at set times, say",
+          "rect": [
+            231.92260416666667,
+            175.71201171875003,
+            271.2802734375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "10:00 and 4:00, with a thirty-minute window to deal with them.",
+          "rect": [
+            96.58666666666667,
+            195.4986783854167,
+            393.5615234375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "\u2022 ",
+          "rect": [
+            86.86315104166667,
+            219.80801171875004,
+            7.603515625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The paper log:",
+          "rect": [
+            96.58666666666667,
+            219.80801171875004,
+            92.3720703125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " keep a notebook on the desk. When your brain",
+          "rect": [
+            188.95873697916667,
+            219.80801171875004,
+            295.87109375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "wants to look something up, write the question down instead. At",
+          "rect": [
+            96.58666666666667,
+            239.5946783854167,
+            403.1962890625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "the next window, run the whole list, write the answers, and close",
+          "rect": [
+            96.58666666666667,
+            259.38134505208336,
+            406.2421875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "the machine. You run the queries; the queries don\u2019t run you.",
+          "rect": [
+            96.58666666666667,
+            279.16801171875005,
+            377.23828125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "\u2022 ",
+          "rect": [
+            86.86315104166667,
+            303.4773450520834,
+            7.603515625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Long-form reading:",
+          "rect": [
+            96.58666666666667,
+            303.4773450520834,
+            125.1181640625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " whole books and whole documents.",
+          "rect": [
+            221.70483072916667,
+            303.4773450520834,
+            227.541015625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Following a three-hundred-page argument is heavy squats for the",
+          "rect": [
+            96.58666666666667,
+            323.2640117187501,
+            409.9658203125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "part of your brain that plans.",
+          "rect": [
+            96.58666666666667,
+            343.0506783854168,
+            180.9853515625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "\u2022 ",
+          "rect": [
+            86.86315104166667,
+            367.3600117187502,
+            7.603515625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Anchoring work:",
+          "rect": [
+            96.58666666666667,
+            367.3600117187502,
+            108.03125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " tactile jobs that need your whole attention.",
+          "rect": [
+            204.61791666666667,
+            367.3600117187502,
+            272.0576171875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Soldering, turning a compost pile, kneading bread.",
+          "rect": [
+            96.58666666666667,
+            387.14667838541686,
+            319.92578125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 8",
+          "rect": [
+            467.89662760416667,
+            25.99498046875,
+            46.663372395833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "143",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 163,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-printer.png",
+          "fragments": [
+            [
+              378.24,
+              100.85333333333334,
+              136.32,
+              205.51917951154275
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-printer.png",
+              "rect": [
+                378.24,
+                100.85333333333332,
+                136.32,
+                152.89945945945945
+              ],
+              "alt": "Photo-derived illustration of an open-frame Prusa 3D printer making an orange vase, with background removed through its frame."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "A machine takes shape around",
+              "rect": [
+                378.24,
+                265.44494123029284,
+                135.767578125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "its work. AI-adapted cutout",
+              "rect": [
+                378.24,
+                278.77827456362616,
+                120.548828125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "from ",
+              "rect": [
+                378.24,
+                292.11160789695947,
+                23.4755859375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "John Abella",
+              "rect": [
+                401.7155859375,
+                292.11160789695947,
+                52.48828125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                454.2038671875,
+                292.11160789695947,
+                4.798828125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "CC BY 2.0",
+              "rect": [
+                459.0026953125,
+                292.11160789695947,
+                40.6025390625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                499.605234375,
+                292.11160789695947,
+                2.666015625,
+                15.1884765625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "The controller isn\u2019t dinner",
+          "rect": [
+            76.80000000000001,
+            63.871256510416664,
+            221.9423828125,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "The neighborhood factory earns its name",
+          "rect": [
+            76.80000000000001,
+            97.21867838541667,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "when somebody can keep doing useful work",
+          "rect": [
+            76.80000000000001,
+            117.00534505208336,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "because it exists. A repairable controller",
+          "rect": [
+            76.80000000000001,
+            136.79201171875002,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "helps a grower. A local crew knows which",
+          "rect": [
+            76.80000000000001,
+            156.57867838541668,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "part fails during the week nobody has a",
+          "rect": [
+            76.80000000000001,
+            176.36534505208334,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "spare afternoon.",
+          "rect": [
+            76.80000000000001,
+            196.15201171875,
+            104.5546875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "But food first means following the benefit",
+          "rect": [
+            76.80000000000001,
+            224.41867838541665,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "past the machine. Growing, harvesting, han\u2010",
+          "rect": [
+            76.80000000000001,
+            244.20534505208332,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "dling, storage, cooking, and delivery all",
+          "rect": [
+            76.80000000000001,
+            263.99201171874995,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "stand between a valve opening and a person",
+          "rect": [
+            76.80000000000001,
+            283.77867838541664,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "eating. Rosa couldn\u2019t turn a bag of potatoes",
+          "rect": [
+            76.80000000000001,
+            303.56534505208333,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "into dinner with one working hand. The crop was fine. The offer was",
+          "rect": [
+            76.80000000000001,
+            323.35201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "wrong. How much food exists and what a person can actually eat are",
+          "rect": [
+            76.80000000000001,
+            343.1386783854167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "different questions, and any honest account of abundance keeps",
+          "rect": [
+            76.80000000000001,
+            362.9253450520834,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "them apart.",
+          "rect": [
+            76.80000000000001,
+            382.7120117187501,
+            73.6748046875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The nitrogen problem",
+          "rect": [
+            76.80000000000001,
+            425.1512565104168,
+            186.0830078125,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Here\u2019s why the food system burns so much fuel, and what biology",
+          "rect": [
+            76.80000000000001,
+            458.4986783854167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "offers instead.",
+          "rect": [
+            76.80000000000001,
+            478.2853450520834,
+            90.041015625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Plants need nitrogen, and the air is almost eighty percent nitrogen,",
+          "rect": [
+            76.80000000000001,
+            506.5520117187501,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "but plants can\u2019t use it in that form. Industrial agriculture solves this",
+          "rect": [
+            76.80000000000001,
+            526.3386783854168,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "with the Haber-Bosch process:",
+          "rect": [
+            76.80000000000001,
+            546.1253450520834,
+            192.109375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "N\u2082 + 3H\u2082 \u2192 2NH\u2083",
+          "rect": [
+            108.85333333333334,
+            585.4094986979167,
+            100.787109375,
+            19.1943359375
+          ]
+        },
+        {
+          "text": " (catalyst, high pressure, high temperature)",
+          "rect": [
+            209.64044270833335,
+            585.4094986979167,
+            269.1494140625,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "To force that reaction, plants run at 150 to 250 times atmospheric",
+          "rect": [
+            76.80000000000001,
+            625.2120117187501,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "pressure and 400 to 500\u00b0C, with hydrogen made mostly from natural",
+          "rect": [
+            76.80000000000001,
+            644.9986783854167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "gas. Ammonia production eats roughly one to two percent of the",
+          "rect": [
+            76.80000000000001,
+            664.7853450520834,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "world\u2019s energy supply and accounts for something over one percent",
+          "rect": [
+            76.80000000000001,
+            684.57201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "of global energy-related carbon emissions. It also feeds billions of",
+          "rect": [
+            76.80000000000001,
+            704.3586783854166,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "people. Synthetic fertilizer is one of the great achievements of the last",
+          "rect": [
+            76.80000000000001,
+            724.1453450520833,
+            437.76,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "century, and it\u2019s fossil energy stabilized in a bag.",
+          "rect": [
+            76.80000000000001,
+            743.9320117187499,
+            302.8828125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 9",
+          "rect": [
+            467.89662760416667,
+            25.99498046875,
+            46.663372395833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "159",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 164,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-ammonia-energy.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              596.8037200520831
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-ammonia-energy.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                539.9039999999999
+              ],
+              "alt": "Three columns show net energy intensity of ammonia production in IEA\u2019s 2021 assessment: a global-average estimate of 41 gigajoules per tonne, and best-available-technology benchmarks of 28 for natural gas and 36 for coal. Hatched benchmark columns are distinguished from the solid global average."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The energy in ammonia. IEA\u2019s global-average estimate and best-available-process benchmarks",
+              "rect": [
+                61.44,
+                617.3995403645831,
+                428.125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "are different kinds of evidence. A benchmark is not proof every existing plant can achieve it. ",
+              "rect": [
+                61.44,
+                632.1595403645831,
+                417.171875,
+                15.568359375
+              ]
+            },
+            {
+              "text": "IEA,",
+              "rect": [
+                478.611875,
+                632.1595403645831,
+                17.3173828125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "Ammonia Technology Roadmap, 2021",
+              "rect": [
+                61.44,
+                646.9195403645831,
+                172.1357421875,
+                15.568359375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                233.5757421875,
+                646.9195403645831,
+                2.7333984375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Biology does the same chemistry at outdoor temperature. Legumes,",
+          "rect": [
+            61.44,
+            685.3290651041664,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "clover, peas, beans, vetch, host ",
+          "rect": [
+            61.44,
+            705.115731770833,
+            199.44103515624997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Rhizobium",
+          "rect": [
+            260.88103515624994,
+            705.115731770833,
+            64.9970703125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " bacteria in their roots, and",
+          "rect": [
+            325.87810546874994,
+            705.115731770833,
+            173.32189453124997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "those bacteria use an enzyme called nitrogenase to break the",
+          "rect": [
+            61.44,
+            724.9023984374996,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "nitrogen triple bond:",
+          "rect": [
+            61.44,
+            744.6890651041663,
+            131.392578125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "160",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 170,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-scene-food-delivery.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              421.6997200520832
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-scene-food-delivery.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                364.79999999999995
+              ],
+              "alt": "Isometric neighborhood model: a garden supplies eight usable kilograms, a food partner adds two, people pack the produce, and a delivery route reaches five homes with two kilograms each. Growing, handling, transport, and confirmation all remain part of the job."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "One harvest, five doors. Eight kilograms from the garden and two from the food partner keep",
+              "rect": [
+                61.44,
+                442.29554036458325,
+                420.61328125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "the five-household promise. The buildings and route are illustrative; the vegetables supplement",
+              "rect": [
+                61.44,
+                457.05554036458324,
+                433.9189453125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "meals.",
+              "rect": [
+                61.44,
+                471.8155403645832,
+                29.9453125,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Those vegetables supplement meals. They don\u2019t make five complete",
+          "rect": [
+            61.44,
+            510.22506510416656,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "diets. A dependable baseline needs enough suitable food across sea\u2010",
+          "rect": [
+            61.44,
+            530.0117317708332,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "sons, prepared food for people who can\u2019t cook, and a plan for inter\u2010",
+          "rect": [
+            61.44,
+            549.7983984374998,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ruptions. The small trial tests one contribution to that. The donated",
+          "rect": [
+            61.44,
+            569.5850651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "time and equipment get written down too, not called free: a perma\u2010",
+          "rect": [
+            61.44,
+            589.3717317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "nent service can\u2019t run on a lucky month of volunteers.",
+          "rect": [
+            61.44,
+            609.1583984374997,
+            337.8173828125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "What would make the machine worth it?",
+          "rect": [
+            61.44,
+            651.5976432291664,
+            340.6923828125,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Compare the whole arrangement with the ordinary way of doing it.",
+          "rect": [
+            61.44,
+            684.9450651041664,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The controller might cut water checks and add maintenance. It might",
+          "rect": [
+            61.44,
+            704.731731770833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "let someone with a bad back do a job they couldn\u2019t before. It might",
+          "rect": [
+            61.44,
+            724.5183984374996,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "166",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 197,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-spot.png",
+          "fragments": [
+            [
+              76.80000000000001,
+              351.2533333333332,
+              136.32,
+              156.83305338541658
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-spot.png",
+              "rect": [
+                76.80000000000001,
+                351.2533333333332,
+                136.32,
+                90.88
+              ],
+              "alt": "Photo-derived illustration of a yellow Spot quadruped, four legs and equipment isolated from the woodland trail."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Capability still needs an",
+              "rect": [
+                76.80000000000001,
+                453.8254817708332,
+                105.4755859375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "arrangement for access. AI-",
+              "rect": [
+                76.80000000000001,
+                467.15881510416654,
+                120.236328125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "adapted cutout from ",
+              "rect": [
+                76.80000000000001,
+                480.49214843749985,
+                94.1611328125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "Jonte",
+              "rect": [
+                170.9611328125,
+                480.49214843749985,
+                25.4921875,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ",",
+              "rect": [
+                196.4533203125,
+                480.49214843749985,
+                2.666015625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "CC BY-SA 4.0",
+              "rect": [
+                76.80000000000001,
+                493.82548177083316,
+                54.5322265625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                131.3322265625,
+                493.82548177083316,
+                2.666015625,
+                15.1884765625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "\u201cBut what about the jobs?\u201d",
+          "rect": [
+            76.80000000000001,
+            65.48534505208333,
+            168.69845486111112,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " Dishwashers and washing machines make",
+          "rect": [
+            245.49845486111113,
+            65.48534505208333,
+            269.0615451388889,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "the idea of handing repetitive work to a machine familiar. That com\u2010",
+          "rect": [
+            76.80000000000001,
+            85.27201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "parison doesn\u2019t pay the bills of someone whose income just disap\u2010",
+          "rect": [
+            76.80000000000001,
+            105.05867838541666,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "peared, and their concern is real. Workers belong in the decisions",
+          "rect": [
+            76.80000000000001,
+            124.84534505208333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "about how these tools come in and how people are supported",
+          "rect": [
+            76.80000000000001,
+            144.63201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "through the change. That\u2019s what this whole book is arguing for.",
+          "rect": [
+            76.80000000000001,
+            164.41867838541665,
+            393.755859375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "\u201cWhy not send machines into the dangerous work?\u201d",
+          "rect": [
+            76.80000000000001,
+            192.6853450520833,
+            344.57389453124995,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " Where a suit\u2010",
+          "rect": [
+            421.37389453124996,
+            192.6853450520833,
+            93.18610546874999,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "able machine can keep people out of harm\u2019s way, that\u2019s a good reason",
+          "rect": [
+            76.80000000000001,
+            212.47201171874997,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "to look hard at it, with the people who know the job. The deployment",
+          "rect": [
+            76.80000000000001,
+            232.25867838541663,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "still has to show that it helps, including the work of maintaining and",
+          "rect": [
+            76.80000000000001,
+            252.0453450520833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "recovering the machine.",
+          "rect": [
+            76.80000000000001,
+            271.8320117187499,
+            153.8232421875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Ownership matters because access can be withheld",
+          "rect": [
+            76.80000000000001,
+            314.2712565104166,
+            432.5908203125,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Suppose the machines work beautifully. Now",
+          "rect": [
+            230.4,
+            347.61867838541656,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "suppose one company owns them, controls",
+          "rect": [
+            230.4,
+            367.40534505208325,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "their supplies, and can cut off service when a",
+          "rect": [
+            230.4,
+            387.19201171874994,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "subscription lapses. Productive capacity",
+          "rect": [
+            230.4,
+            406.97867838541663,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "went up. Security for the person who can\u2019t",
+          "rect": [
+            230.4,
+            426.7653450520833,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "pay may not have moved at all.",
+          "rect": [
+            230.4,
+            446.55201171875,
+            193.7607421875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "So whatever the arrangement, shared owner\u2010",
+          "rect": [
+            230.4,
+            474.8186783854167,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ship, public provision, or paying private",
+          "rect": [
+            230.4,
+            494.6053450520834,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "providers, ask who can raise the price,",
+          "rect": [
+            230.4,
+            514.39201171875,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "change the rules, withdraw the service, or sell the equipment, and",
+          "rect": [
+            76.80000000000001,
+            534.1786783854167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "how the people receiving it and the people working it can challenge",
+          "rect": [
+            76.80000000000001,
+            553.9653450520833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "those decisions. And don\u2019t let any one program become the only door",
+          "rect": [
+            76.80000000000001,
+            573.7520117187499,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "to help. Several providers, supplies held back for bad weeks,",
+          "rect": [
+            76.80000000000001,
+            593.5386783854166,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "repairable equipment, and routes that don\u2019t need a proprietary",
+          "rect": [
+            76.80000000000001,
+            613.3253450520832,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "account all make the promise sturdier.",
+          "rect": [
+            76.80000000000001,
+            633.1120117187498,
+            242.1806640625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The Crucible: local compute you own",
+          "rect": [
+            76.80000000000001,
+            675.5512565104165,
+            313.55078125,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "The scene\u2019s argument for owning the machine was privacy, and it\u2019s a",
+          "rect": [
+            76.80000000000001,
+            708.8986783854165,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "good one. Every question you send a cloud service carries context",
+          "rect": [
+            76.80000000000001,
+            728.6853450520831,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "with it: what you\u2019re building, what you\u2019re worried about, what you",
+          "rect": [
+            76.80000000000001,
+            748.4720117187497,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "don\u2019t know. For a lot of work that\u2019s fine. For some of it, a food",
+          "rect": [
+            76.80000000000001,
+            768.2586783854164,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 11",
+          "rect": [
+            462.88490885416667,
+            25.99498046875,
+            51.675091145833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "193",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 198,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-operating-stack.svg",
+          "fragments": [
+            [
+              61.44,
+              209.75999999999996,
+              437.75999999999993,
+              404.2037200520831
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-operating-stack.svg",
+              "rect": [
+                61.44,
+                209.75999999999993,
+                437.75999999999993,
+                362.0639999999999
+              ],
+              "alt": "A sheet representing downloadable model weights sits beside separate layers for software, compute, power, and maintenance. A license still sets the terms for using the weights."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The model file is one layer of a working service. Running a useful service also takes software,",
+              "rect": [
+                61.44,
+                584.0395403645831,
+                418.705078125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "hardware, power, and people who maintain it. Conceptual illustration.",
+              "rect": [
+                61.44,
+                598.7995403645831,
+                318.4033203125,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "program\u2019s recipient list, a family\u2019s medical questions, a co-op\u2019s legal",
+          "rect": [
+            61.44,
+            65.48534505208333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "strategy, you\u2019d rather it never left the building. Local compute is one",
+          "rect": [
+            61.44,
+            85.27201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "of the last private places left to think.",
+          "rect": [
+            61.44,
+            105.05867838541666,
+            232.87890625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "You don\u2019t need enterprise money. Every few years, data centers retire",
+          "rect": [
+            61.44,
+            133.32534505208332,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "perfectly good hardware onto the used market, and the co-op\u2019s rack",
+          "rect": [
+            61.44,
+            153.11201171874998,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "came from exactly that: a county surplus auction.",
+          "rect": [
+            61.44,
+            172.89867838541664,
+            310.607421875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The memory math",
+          "rect": [
+            61.44,
+            636.1772226562497,
+            105.546875,
+            18.986328125
+          ]
+        },
+        {
+          "text": "For running language models, memory is one of the first limits to",
+          "rect": [
+            61.44,
+            659.8757317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "check. Keeping the weights in graphics memory (VRAM) avoids",
+          "rect": [
+            61.44,
+            679.6623984374997,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "slower transfers, although some tools can divide work between GPU",
+          "rect": [
+            61.44,
+            699.4490651041664,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and system memory. Start with an estimate:",
+          "rect": [
+            61.44,
+            719.235731770833,
+            275.6484375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "V",
+          "rect": [
+            93.49333333333333,
+            758.5198854166663,
+            8.4697265625,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "R",
+          "rect": [
+            101.96305989583333,
+            766.5921510416663,
+            7.751953125,
+            16.451171875
+          ]
+        },
+        {
+          "text": "A",
+          "rect": [
+            109.71501302083333,
+            766.5921510416663,
+            8.1123046875,
+            16.451171875
+          ]
+        },
+        {
+          "text": "M",
+          "rect": [
+            117.82731770833333,
+            766.5921510416663,
+            11.1240234375,
+            16.451171875
+          ]
+        },
+        {
+          "text": "\u2004\u2248\u2004((",
+          "rect": [
+            128.95134114583334,
+            758.5198854166663,
+            25.5224609375,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "P",
+          "rect": [
+            154.47380208333334,
+            758.5198854166663,
+            7.8818359375,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "\u2005\u00b7\u2005",
+          "rect": [
+            162.35563802083334,
+            758.5198854166663,
+            11.2001953125,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "Q",
+          "rect": [
+            173.55583333333334,
+            758.5198854166663,
+            9.240234375,
+            19.1943359375
+          ]
+        },
+        {
+          "text": ")/8)\u2005\u00b7\u2005",
+          "rect": [
+            182.79606770833334,
+            758.5198854166663,
+            32.3125,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "B",
+          "rect": [
+            215.10856770833334,
+            758.5198854166663,
+            8.736328125,
+            19.1943359375
+          ]
+        },
+        {
+          "text": " [GB]",
+          "rect": [
+            223.84489583333334,
+            758.5198854166663,
+            29.8759765625,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "194",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 200,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-weights-memory.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              576.7397200520832
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-weights-memory.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                519.8399999999999
+              ],
+              "alt": "A weights-only memory matrix uses decimal gigabytes. At four, eight, and sixteen bits per weight, an eight-billion-parameter model has nominal weight sizes of 4, 8, and 16 GB; a seventy-billion-parameter model has 35, 70, and 140 GB. Runtime buffers, quantization metadata, cache, context, and simultaneous users require additional memory."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Memory before the overhead. These are derived weights-only sizes, not measured VRAM",
+              "rect": [
+                61.44,
+                597.3355403645832,
+                398.576171875,
+                15.568359375
+              ]
+            },
+            {
+              "text": "requirements. They omit the chapter\u2019s illustrative allowance as well as runtime costs. ",
+              "rect": [
+                61.44,
+                612.0955403645831,
+                387.5556640625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "llama.cpp,",
+              "rect": [
+                448.9956640625,
+                612.0955403645831,
+                48.0166015625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "memory and context options",
+              "rect": [
+                61.44,
+                626.8555403645831,
+                131.3798828125,
+                15.568359375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                192.8198828125,
+                626.8555403645831,
+                2.7333984375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "A small model at 16 bits.",
+          "rect": [
+            61.44,
+            665.2650651041664,
+            155.4482421875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " An 8-billion-parameter model:",
+          "rect": [
+            216.8882421875,
+            665.2650651041664,
+            195.0908203125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "V",
+          "rect": [
+            93.49333333333333,
+            704.5492187499997,
+            8.4697265625,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "R",
+          "rect": [
+            101.96305989583333,
+            712.6214843749997,
+            7.751953125,
+            16.451171875
+          ]
+        },
+        {
+          "text": "A",
+          "rect": [
+            109.71501302083333,
+            712.6214843749997,
+            8.1123046875,
+            16.451171875
+          ]
+        },
+        {
+          "text": "M",
+          "rect": [
+            117.82731770833333,
+            712.6214843749997,
+            11.1240234375,
+            16.451171875
+          ]
+        },
+        {
+          "text": "\u2004=\u2004((8\u2005\u00b7\u200516)/8)\u2005\u00b7\u20051.2\u2004=\u200419.2 GB",
+          "rect": [
+            128.95134114583334,
+            704.5492187499997,
+            171.6552734375,
+            19.1943359375
+          ]
+        },
+        {
+          "text": "That estimate fits within one 24 GB card. Check the actual model and",
+          "rect": [
+            61.44,
+            749.478001302083,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "intended context length before buying one.",
+          "rect": [
+            61.44,
+            769.2646679687497,
+            271.7470703125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "196",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 212,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-land-values.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              571.2677200520832
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-land-values.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                514.3679999999999
+              ],
+              "alt": "A line chart of estimated average US farm-real-estate value per acre, including land and buildings, from 2012 to 2026. Values rise from $2,520 to $4,500, with a broad plateau around $3,000 from 2015 through 2020. Values are nominal dollars and national averages."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "What an acre costs. USDA survey estimates include farm buildings as well as land. These are",
+              "rect": [
+                61.44,
+                591.8635403645832,
+                414.775390625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "nominal national averages, not inflation-adjusted values or local offers. ",
+              "rect": [
+                61.44,
+                606.6235403645832,
+                324.986328125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "USDA NASS, Land Values",
+              "rect": [
+                386.426328125,
+                606.6235403645832,
+                111.7099609375,
+                15.568359375
+              ]
+            },
+            {
+              "text": "2026, page 5",
+              "rect": [
+                61.44,
+                621.3835403645832,
+                56.48828125,
+                15.568359375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                117.92828125,
+                621.3835403645832,
+                2.7333984375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "208",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 213,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-shared-land.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              65.28,
+              437.76,
+              406.0277200520833
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-shared-land.svg",
+              "rect": [
+                76.80000000000001,
+                65.27999999999997,
+                437.76,
+                363.88800000000003
+              ],
+              "alt": "A cultivated field rests above an open agreement with separate spaces for an owner, users, and neighbors. Consent, terms, and decisions people can contest support the arrangement."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Useful ground comes with people and obligations. Shared use needs consent, clear terms, and a",
+              "rect": [
+                76.80000000000001,
+                441.3835403645833,
+                435.3427734375,
+                15.568359375
+              ]
+            },
+            {
+              "text": "way to challenge decisions. Conceptual illustration, not a legal template.",
+              "rect": [
+                76.80000000000001,
+                456.1435403645833,
+                328.451171875,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "BY THE NUMBERS: THE GROUND",
+          "rect": [
+            93.17333333333335,
+            502.82772005208324,
+            180.6637890625,
+            15.1884765625
+          ]
+        },
+        {
+          "text": "\u2022 ",
+          "rect": [
+            99.79888020833334,
+            522.0402460937499,
+            6.814453125,
+            17.365234375
+          ]
+        },
+        {
+          "text": "$4,500",
+          "rect": [
+            108.51333333333335,
+            522.0402460937499,
+            36.7294921875,
+            17.365234375
+          ]
+        },
+        {
+          "text": " an acre: the average value of US farm real estate in 2026, up",
+          "rect": [
+            145.24282552083335,
+            522.0402460937499,
+            336.587890625,
+            17.365234375
+          ]
+        },
+        {
+          "text": "3.4 percent in a year. ",
+          "rect": [
+            108.51333333333335,
+            539.7735794270833,
+            119.517578125,
+            17.365234375
+          ]
+        },
+        {
+          "text": "USDA NASS, Land Values 2026 Summary",
+          "rect": [
+            228.03091145833335,
+            539.7735794270833,
+            225.7998046875,
+            17.365234375
+          ]
+        },
+        {
+          "text": "\u2022 ",
+          "rect": [
+            99.79888020833334,
+            560.3869127604166,
+            6.814453125,
+            17.365234375
+          ]
+        },
+        {
+          "text": "$6,020",
+          "rect": [
+            108.51333333333335,
+            560.3869127604166,
+            36.7294921875,
+            17.365234375
+          ]
+        },
+        {
+          "text": " an acre for cropland and ",
+          "rect": [
+            145.24282552083335,
+            560.3869127604166,
+            144.3154296875,
+            17.365234375
+          ]
+        },
+        {
+          "text": "$2,000",
+          "rect": [
+            289.5582552083333,
+            560.3869127604166,
+            36.7294921875,
+            17.365234375
+          ]
+        },
+        {
+          "text": " for pasture, the same year.",
+          "rect": [
+            326.2877473958333,
+            560.3869127604166,
+            152.3232421875,
+            17.365234375
+          ]
+        },
+        {
+          "text": "USDA NASS",
+          "rect": [
+            108.51333333333335,
+            578.12024609375,
+            64.9521484375,
+            17.365234375
+          ]
+        },
+        {
+          "text": "\u2022 ",
+          "rect": [
+            99.79888020833334,
+            598.7335794270833,
+            6.814453125,
+            17.365234375
+          ]
+        },
+        {
+          "text": "99 years:",
+          "rect": [
+            108.51333333333335,
+            598.7335794270833,
+            50.20703125,
+            17.365234375
+          ]
+        },
+        {
+          "text": " the usual ground lease in a community land trust, long",
+          "rect": [
+            158.72036458333335,
+            598.7335794270833,
+            310.9150390625,
+            17.365234375
+          ]
+        },
+        {
+          "text": "enough to outlast a mortgage and a lifetime (Chapter 15).",
+          "rect": [
+            108.51333333333335,
+            616.4669127604167,
+            319.0322265625,
+            17.365234375
+          ]
+        },
+        {
+          "text": "Land that could hold a right",
+          "rect": [
+            76.80000000000001,
+            668.2341197916667,
+            234.0712890625,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "In southwest Georgia, losing a place to farm could be punishment for",
+          "rect": [
+            76.80000000000001,
+            701.5815416666667,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "trying to vote. Charles Sherrod had worked with sharecroppers and",
+          "rect": [
+            76.80000000000001,
+            721.3682083333333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "tenant farmers forced off land after attempting to register. Collective",
+          "rect": [
+            76.80000000000001,
+            741.154875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ownership offered a way to reduce that power over individual fami\u2010",
+          "rect": [
+            76.80000000000001,
+            760.9415416666666,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 12",
+          "rect": [
+            462.88490885416667,
+            25.99498046875,
+            51.675091145833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "209",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 243,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-waste-pathways.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              65.28,
+              437.76,
+              656.8277200520832
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-waste-pathways.svg",
+              "rect": [
+                76.80000000000001,
+                65.27999999999997,
+                437.76,
+                614.688
+              ],
+              "alt": "Nine bars show estimated management of 66.2 million US short tons of wasted food from retail, food service, and households in 2019: landfill 59.84%, combustion 14.57%, donation 7.76%, sewer 6.00%, composting 4.99%, bio-based materials and biochemical processing 3.53%, animal feed 2.29%, anaerobic digestion 0.81%, and land application 0.21%. The total includes inedible material."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Where wasted food goes. EPA estimates for 2019 include inedible parts; the whole total could",
+              "rect": [
+                76.80000000000001,
+                692.1835403645832,
+                420.1884765625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "not have been donated. Donation is net of food banks\u2019 unusable portion. ",
+              "rect": [
+                76.80000000000001,
+                706.9435403645832,
+                331.39453125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "EPA, Table 5",
+              "rect": [
+                408.19453125,
+                706.9435403645832,
+                54.7412109375,
+                15.568359375
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                462.9357421875,
+                706.9435403645832,
+                2.7333984375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "CHAPTER 14",
+          "rect": [
+            462.88490885416667,
+            25.99498046875,
+            51.675091145833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "239",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 259,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-scene-living-soil.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              161.70666666666665,
+              437.76,
+              421.69972005208325
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-scene-living-soil.svg",
+              "rect": [
+                76.80000000000001,
+                161.70666666666665,
+                437.76,
+                364.8
+              ],
+              "alt": "Three-dimensional growing-bed cutaway with crop leaves above mulch, branching roots in soil, a watering pipe, compost, and a harvested crate outside the bed. Sunlight and water enter; nutrients need replenishment, and harvested food carries nutrients away."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "The bed is part of a larger system. Plants, soil life, and returning organic matter exchange",
+              "rect": [
+                76.80000000000001,
+                538.7222070312499,
+                402.2470703125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "nutrients; sunlight, water, replenishment, and the nutrients carried away in harvest still cross its",
+              "rect": [
+                76.80000000000001,
+                553.4822070312499,
+                434.59765625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "boundary. Conceptual cutaway, not a measured soil profile.",
+              "rect": [
+                76.80000000000001,
+                568.2422070312499,
+                270.1474609375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Cover crops, compost, deep mulch, and less tillage all feed that",
+          "rect": [
+            76.80000000000001,
+            65.48534505208333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "system. ",
+          "rect": [
+            76.80000000000001,
+            85.27201171875,
+            53.38088867187499,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "University of Minnesota Extension, Soil Biology",
+          "rect": [
+            130.180888671875,
+            85.27201171875,
+            308.34291992187497,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " What none",
+          "rect": [
+            438.52380859374995,
+            85.27201171875,
+            76.03619140624998,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "of them do is make a garden feed itself forever. Every harvest carries",
+          "rect": [
+            76.80000000000001,
+            105.05867838541666,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "nutrients away in the food, and something has to put them back.",
+          "rect": [
+            76.80000000000001,
+            124.84534505208333,
+            404.4814453125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Know the ground\u2019s history",
+          "rect": [
+            76.80000000000001,
+            606.2643098958332,
+            221.26953125,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Priya\u2019s string line matters as much as her shovel. Old farm yards, rail",
+          "rect": [
+            76.80000000000001,
+            639.6117317708332,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "lines, parking lots, and industrial sites can carry lead, fuel, solvents,",
+          "rect": [
+            76.80000000000001,
+            659.3983984374998,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and worse, and a healthy-looking plant can\u2019t tell you the ground is",
+          "rect": [
+            76.80000000000001,
+            679.1850651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "safe to eat from. Before you grow food on land with any history, find",
+          "rect": [
+            76.80000000000001,
+            698.9717317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "out what that history was and get the soil tested. EPA\u2019s urban-agricul\u2010",
+          "rect": [
+            76.80000000000001,
+            718.7583984374997,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ture guidance is a good starting point for what to ask. ",
+          "rect": [
+            76.80000000000001,
+            738.5450651041664,
+            362.9685579427083,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "EPA, Urban",
+          "rect": [
+            439.7685579427083,
+            738.5450651041664,
+            74.79144205729166,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Agriculture",
+          "rect": [
+            76.80000000000001,
+            758.331731770833,
+            72.119140625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 15",
+          "rect": [
+            462.88490885416667,
+            25.99498046875,
+            51.675091145833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "255",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 277,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-tools.png",
+          "fragments": [
+            [
+              378.24,
+              625.3397200520833,
+              136.32,
+              171.4602799479167
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-cutout-tools.png",
+              "rect": [
+                378.24,
+                625.3397200520833,
+                136.32,
+                162.1615304347826
+              ],
+              "alt": "Three worn hand tools extracted and recomposed as a fan: brown-handled pliers, a screwdriver, and an adjustable wrench."
+            }
+          ],
+          "caption_boxes": []
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Your refrigerator may have more computing power than the Apollo",
+          "rect": [
+            76.80000000000001,
+            65.48534505208333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "guidance computer. It can track your milk, reorder groceries, and",
+          "rect": [
+            76.80000000000001,
+            85.27201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "show recipes on a touchscreen. It can also stop working properly",
+          "rect": [
+            76.80000000000001,
+            105.05867838541666,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "when the manufacturer\u2019s cloud has a bad day, nag you about a sub\u2010",
+          "rect": [
+            76.80000000000001,
+            124.84534505208333,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "scription, and report more about your household than you\u2019d ever tell",
+          "rect": [
+            76.80000000000001,
+            144.63201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "a stranger. Call it the smart-home trap: every door, thermostat, bulb,",
+          "rect": [
+            76.80000000000001,
+            164.41867838541665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and tool quietly depending on a server somebody else owns.",
+          "rect": [
+            76.80000000000001,
+            184.20534505208332,
+            377.7177734375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The alternative is simple to say: ",
+          "rect": [
+            76.80000000000001,
+            212.47201171874997,
+            219.31107812499997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "tools you own.",
+          "rect": [
+            296.11107812499995,
+            212.47201171874997,
+            98.37778124999998,
+            19.3759765625
+          ]
+        },
+        {
+          "text": " Repairable, docu\u2010",
+          "rect": [
+            394.48885937499995,
+            212.47201171874997,
+            120.07114062499998,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "mented, able to run without an internet connection, and understand\u2010",
+          "rect": [
+            76.80000000000001,
+            232.25867838541663,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "able by the person using them. If you can\u2019t understand how it works,",
+          "rect": [
+            76.80000000000001,
+            252.0453450520833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "can\u2019t fix it with ordinary tools, and can\u2019t run it offline, it\u2019s less a tool",
+          "rect": [
+            76.80000000000001,
+            271.8320117187499,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "than a leash.",
+          "rect": [
+            76.80000000000001,
+            291.6186783854166,
+            79.751953125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The field kit. Every one of these already exists, and a person with modest money and",
+          "rect": [
+            76.80000000000001,
+            535.5755403645833,
+            382.5263671875,
+            15.568359375
+          ]
+        },
+        {
+          "text": "stubbornness can get their hands on most of it.",
+          "rect": [
+            76.80000000000001,
+            550.3355403645833,
+            213.6044921875,
+            15.568359375
+          ]
+        },
+        {
+          "text": "Give the machines a worthwhile assignment",
+          "rect": [
+            76.80000000000001,
+            588.3576432291666,
+            371.0068359375,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Imagine the priorities written above the",
+          "rect": [
+            76.80000000000001,
+            621.7050651041666,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "workbench: feed people, restore damaged",
+          "rect": [
+            76.80000000000001,
+            641.4917317708332,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "places, make safe homes, relieve suffering.",
+          "rect": [
+            76.80000000000001,
+            661.2783984374998,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Those are assignments worthy of a powerful",
+          "rect": [
+            76.80000000000001,
+            681.0650651041665,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "technology. They\u2019re also a way to judge the",
+          "rect": [
+            76.80000000000001,
+            700.8517317708331,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "uses of it that actually receive our money",
+          "rect": [
+            76.80000000000001,
+            720.6383984374997,
+            284.15999999999997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and attention.",
+          "rect": [
+            76.80000000000001,
+            740.4250651041664,
+            88.5703125,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 17",
+          "rect": [
+            462.88490885416667,
+            25.99498046875,
+            51.675091145833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "273",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 278,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-cutout-tools.png",
+          "fragments": [
+            [
+              378.24,
+              65.28,
+              136.32,
+              47.67999999999999
+            ]
+          ],
+          "images": [],
+          "caption_boxes": [
+            {
+              "text": "Tools with a history of use. AI-",
+              "rect": [
+                378.24,
+                72.03242838541668,
+                131.607421875,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "adapted collage from",
+              "rect": [
+                378.24,
+                85.36576171875001,
+                94.458984375,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "Shixart1985",
+              "rect": [
+                378.24,
+                98.69909505208334,
+                52.701171875,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ", ",
+              "rect": [
+                430.941171875,
+                98.69909505208334,
+                4.798828125,
+                15.1884765625
+              ]
+            },
+            {
+              "text": "CC BY 2.0",
+              "rect": [
+                435.74,
+                98.69909505208334,
+                40.6025390625,
+                15.1884765625
+              ]
+            },
+            {
+              "text": ".",
+              "rect": [
+                476.3425390625,
+                98.69909505208334,
+                2.666015625,
+                15.1884765625
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Food comes first in this book because nobody",
+          "rect": [
+            61.44,
+            65.48534505208333,
+            299.52,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "needs an elaborate explanation of why dinner",
+          "rect": [
+            61.44,
+            85.27201171875,
+            299.52,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "matters. The wider ambition includes land",
+          "rect": [
+            61.44,
+            105.05867838541666,
+            299.52,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "care, waste cleanup, housing, and health.",
+          "rect": [
+            61.44,
+            124.84534505208333,
+            299.52,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "These projects can proceed together. Somebody who needs treatment",
+          "rect": [
+            61.44,
+            144.63201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "or shelter shouldn\u2019t have to wait for the last food problem on Earth to",
+          "rect": [
+            61.44,
+            164.41867838541665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "be solved.",
+          "rect": [
+            61.44,
+            184.20534505208332,
+            62.79296875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The question for any proposed machine is what useful work it can do",
+          "rect": [
+            61.44,
+            212.47201171874997,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "under the conditions where people need it. Compare the tools they",
+          "rect": [
+            61.44,
+            232.25867838541663,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "can obtain and support. A machine impressive in a video may be",
+          "rect": [
+            61.44,
+            252.0453450520833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "hard to repair locally. A familiar tool may do the job well. Shared",
+          "rect": [
+            61.44,
+            271.8320117187499,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "access can matter more than ownership.",
+          "rect": [
+            61.44,
+            291.6186783854166,
+            255.16796875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The proof isn\u2019t hypothetical",
+          "rect": [
+            61.44,
+            334.0579231770833,
+            232.4677734375,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Everything in this chapter already exists, and you can watch people",
+          "rect": [
+            61.44,
+            367.40534505208325,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "build it this weekend. This is the part the doom crowd never accounts",
+          "rect": [
+            61.44,
+            387.19201171874994,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "for: while the comment sections argue about whether the machine",
+          "rect": [
+            61.44,
+            406.97867838541663,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ends the world, a growing number of people are pointing the same",
+          "rect": [
+            61.44,
+            426.7653450520833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "technology at their own food and posting the plans.",
+          "rect": [
+            61.44,
+            446.55201171875,
+            322.7099609375,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "One of them, working under the handle SECTOR 07, wanted his home",
+          "rect": [
+            61.44,
+            474.8186783854167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "aquaponics loop to stop depending on a store. The system grows fish",
+          "rect": [
+            61.44,
+            494.6053450520834,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and vegetables together, but it still needed bought fish food, so the",
+          "rect": [
+            61.44,
+            514.39201171875,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "loop was never closed. His fix was to grow the food too: microalgae,",
+          "rect": [
+            61.44,
+            534.1786783854167,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "cultivated the way labs do it, in a machine called a photobioreactor.",
+          "rect": [
+            61.44,
+            553.9653450520833,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Commercial units are priced for research budgets. He printed his on",
+          "rect": [
+            61.44,
+            573.7520117187499,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "a Bambu A1, a 3D printer that costs less than a used laptop, and ran it",
+          "rect": [
+            61.44,
+            593.5386783854166,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "on a Raspberry Pi and two Arduinos, with sensors he made himself",
+          "rect": [
+            61.44,
+            613.3253450520832,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "out of magnets. It grows about eight grams of algae a week. He says",
+          "rect": [
+            61.44,
+            633.1120117187498,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "plainly in his own build log that it isn\u2019t finished: features he isn\u2019t",
+          "rect": [
+            61.44,
+            652.8986783854165,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "using, automation he never completed, a design he\u2019d rework for a",
+          "rect": [
+            61.44,
+            672.6853450520831,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "second version. That honesty is the point. This isn\u2019t a product launch.",
+          "rect": [
+            61.44,
+            692.4720117187497,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "It\u2019s a person learning in public. ",
+          "rect": [
+            61.44,
+            712.2586783854164,
+            214.41320312499997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SECTOR 07, I 3D Printed a Photo\u2010",
+          "rect": [
+            275.85320312499994,
+            712.2586783854164,
+            223.34679687499997,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "bioreactor",
+          "rect": [
+            61.44,
+            732.045345052083,
+            65.4482421875,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "274",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 287,
+      "content_rect": [
+        76.80000000000001,
+        65.28,
+        437.76,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-scene-shared-workshop.svg",
+          "fragments": [
+            [
+              76.80000000000001,
+              65.28,
+              437.76,
+              421.6997200520833
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-scene-shared-workshop.svg",
+              "rect": [
+                76.80000000000001,
+                65.28000000000003,
+                437.76,
+                364.8
+              ],
+              "alt": "Isometric open workshop with a 3D printer, a metalworking bench, a shared walk-behind tractor, a materials rack, and two people. Colored connections lead between the tools, the people who use and maintain them, incoming stock and spares, and a repaired part leaving the shop."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Shared tools need a working arrangement around them: trained people, suitable power and",
+              "rect": [
+                76.80000000000001,
+                442.29554036458336,
+                416.732421875,
+                15.568359375
+              ]
+            },
+            {
+              "text": "materials, maintenance, and parts. The useful result leaves the bench. Illustrative workshop, not",
+              "rect": [
+                76.80000000000001,
+                457.05554036458335,
+                435.943359375,
+                15.568359375
+              ]
+            },
+            {
+              "text": "a fabrication or wiring plan.",
+              "rect": [
+                76.80000000000001,
+                471.81554036458334,
+                125.2109375,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Food: count the whole job",
+          "rect": [
+            76.80000000000001,
+            509.8376432291666,
+            217.4931640625,
+            25.5908203125
+          ]
+        },
+        {
+          "text": "Begin with Chapter 9\u2019s chain. Name the repetitive task, the current",
+          "rect": [
+            76.80000000000001,
+            543.1850651041666,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "method, and the result at the recipient\u2019s end. Count setup, supervi\u2010",
+          "rect": [
+            76.80000000000001,
+            562.9717317708332,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "sion, maintenance, transport, and the work people still do. Don\u2019t turn",
+          "rect": [
+            76.80000000000001,
+            582.7583984374999,
+            437.76,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "a machine that saves one motion into a claim that a whole job disap\u2010",
+          "rect": [
+            76.80000000000001,
+            602.5450651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "peared. Equipment needs power, spare parts, and an operator\u2019s time;",
+          "rect": [
+            76.80000000000001,
+            622.3317317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "count those too.",
+          "rect": [
+            76.80000000000001,
+            642.1183984374998,
+            100.681640625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "CHAPTER 17",
+          "rect": [
+            462.88490885416667,
+            25.99498046875,
+            51.675091145833335,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "283",
+          "rect": [
+            496.6683984375,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 296,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-visual-continuity-calendar.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              392.3477200520832
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-visual-continuity-calendar.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                350.20799999999997
+              ],
+              "alt": "One calendar sheet marks funding secured through June in solid ink. A second outlines a proposed continuation, with a reminder to name backup cover, pay for the work, and tell households what is secured."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "Ink for what is funded; pencil for the continuation still being proposed. The distinction matters",
+              "rect": [
+                61.44,
+                427.70354036458326,
+                427.4150390625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "to the households expecting a delivery. Illustration of the fictional scene.",
+              "rect": [
+                61.44,
+                442.46354036458325,
+                328.736328125,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "Elijah went home that night and rebuilt the model with the room\u2019s",
+          "rect": [
+            61.44,
+            480.8730651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "amendments, and the change that mattered was a names column.",
+          "rect": [
+            61.44,
+            500.6597317708332,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "Every failure mode carried two names now, who it happens to and",
+          "rect": [
+            61.44,
+            520.4463984374999,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "who is watching for it, because a risk without a name attached isn\u2019t a",
+          "rect": [
+            61.44,
+            540.2330651041665,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "risk, it\u2019s a wish with error bars. He kept the household details in the",
+          "rect": [
+            61.44,
+            560.0197317708331,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "private record; the public proposal would carry the service commit\u2010",
+          "rect": [
+            61.44,
+            579.8063984374998,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "ments, the costs, and the gaps. He was pasting in the last of it when",
+          "rect": [
+            61.44,
+            599.5930651041664,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "he understood what he was actually looking at.",
+          "rect": [
+            61.44,
+            619.379731770833,
+            294.3447265625,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "The supply models, the watts, the stages, the names, the repair he",
+          "rect": [
+            61.44,
+            647.6463984374997,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "had misunderstood and the meal they had delivered wrong: it was the",
+          "rect": [
+            61.44,
+            667.4330651041663,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "notebook. All of it. MADRONE \u2260 DRONE, three years of arithmetic",
+          "rect": [
+            61.44,
+            687.2197317708329,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "and margins and lists, finally arranged in the shape it had been trying",
+          "rect": [
+            61.44,
+            707.0063984374996,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "to take since 1:40 in the morning at a kitchen table: not notes toward",
+          "rect": [
+            61.44,
+            726.7930651041662,
+            437.75999999999993,
+            19.3759765625
+          ]
+        },
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "292",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    },
+    {
+      "page": 304,
+      "content_rect": [
+        61.44,
+        65.28,
+        437.75999999999993,
+        731.52
+      ],
+      "figures": [
+        {
+          "file": "v101-chart-meal-response.svg",
+          "fragments": [
+            [
+              61.44,
+              65.28,
+              437.75999999999993,
+              673.4117200520832
+            ]
+          ],
+          "images": [
+            {
+              "file": "v101-chart-meal-response.svg",
+              "rect": [
+                61.44,
+                65.27999999999997,
+                437.75999999999993,
+                616.512
+              ],
+              "alt": "An illustrative six-step premortem worksheet asks who loses the meal, what warns the team, who responds, what gets delivered, what keeps the service running, and when to review it. The final instructions are to test the handoff before promising it and keep personal details off the public board."
+            }
+          ],
+          "caption_boxes": [
+            {
+              "text": "When a meal fails. An illustrative worksheet from this chapter\u2019s premortem record, not the",
+              "rect": [
+                61.44,
+                694.0075403645832,
+                407.4423828125,
+                15.568359375
+              ]
+            },
+            {
+              "text": "measured performance of a service. Confirm the alternative and the people who will deliver it",
+              "rect": [
+                61.44,
+                708.7675403645832,
+                423.6103515625,
+                15.568359375
+              ]
+            },
+            {
+              "text": "before expanding the promise.",
+              "rect": [
+                61.44,
+                723.5275403645832,
+                139.337890625,
+                15.568359375
+              ]
+            }
+          ]
+        }
+      ],
+      "other_text": [
+        {
+          "text": "SURVIVING THE SINGULARITY",
+          "rect": [
+            61.44,
+            25.99498046875,
+            135.4259375,
+            13.2900390625
+          ]
+        },
+        {
+          "text": "300",
+          "rect": [
+            61.44,
+            821.8560546875,
+            17.8916015625,
+            17.087890625
+          ]
+        }
+      ]
+    }
+  ]
+}

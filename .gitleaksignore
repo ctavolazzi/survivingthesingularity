@@ -1,0 +1,5 @@
+
+# Public Git commit IDs for cloudflare-fix refs in the Oct9 coverage receipt.
+# Each value was verified with git cat-file as a commit, not a credential.
+docs/uploads/2026-10-09/ref-coverage.json:cloudflare-api-key:487
+docs/uploads/2026-10-09/ref-coverage.json:cloudflare-api-key:566

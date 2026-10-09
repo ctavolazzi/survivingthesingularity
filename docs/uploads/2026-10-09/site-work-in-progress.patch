@@ -1,0 +1,295 @@
+diff --git a/src/app.html b/src/app.html
+index 646855d8de6013dd2f12f6b3023c982b09d8c812..3a00e31f89d90b59bf4963560bace12829183bbf 100644
+--- a/src/app.html
++++ b/src/app.html
+@@ -3,7 +3,10 @@
+ 	<head>
+ 		<meta charset="utf-8" />
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-		<meta name="description" content="Surviving the Singularity: We Don't Have to Live Like This. A field manual for staying human as AI rewrites work, money, and survival." />
++		<!-- No meta description here on purpose. Every route sets its own in
++		     <svelte:head>, and a default in this shell is emitted FIRST on every
++		     page, so each page served two descriptions with the generic one ahead
++		     of its own. -->
+ 		<meta name="theme-color" content="#020617" />
+ 		<link rel="icon" href="/favicon.png" type="image/png" />
+ 		<link rel="icon" href="/favicon.webp" type="image/webp" />
+diff --git a/src/lib/components/BookGate.svelte b/src/lib/components/BookGate.svelte
+index 70e718142afaaa9c406ecd7825a992bd946b9b60..7d4a100a69c146649e5e00eff94a99cc66c2f203 100644
+--- a/src/lib/components/BookGate.svelte
++++ b/src/lib/components/BookGate.svelte
+@@ -37,6 +37,7 @@
+       type="password"
+       bind:value={password}
+       placeholder="Password"
++      aria-label="Password"
+       autocomplete="off"
+       autocapitalize="off"
+       spellcheck="false"
+diff --git a/src/lib/components/DiscordApplication.svelte b/src/lib/components/DiscordApplication.svelte
+index 780028f9686361ef29e58724abf7e3dbb0ae65b2..874946693eea9f2468f64be07ba4bce8b55dc2b9 100644
+--- a/src/lib/components/DiscordApplication.svelte
++++ b/src/lib/components/DiscordApplication.svelte
+@@ -58,6 +58,7 @@
+           class="da-input"
+           bind:value={name}
+           placeholder="Your name"
++          aria-label="Your name"
+           required
+           maxlength="120"
+           autocomplete="name"
+@@ -68,6 +69,7 @@
+           class="da-input"
+           bind:value={email}
+           placeholder="your@email.com"
++          aria-label="Email address"
+           required
+           maxlength="254"
+           autocomplete="email"
+@@ -78,6 +80,7 @@
+         class="da-textarea"
+         bind:value={answer}
+         placeholder="What are you working on, and why do you want in?"
++        aria-label="What are you working on, and why do you want in?"
+         maxlength="2000"
+         rows="3"
+         disabled={state === 'loading'}
+diff --git a/src/lib/offer.js b/src/lib/offer.js
+index 7363a233790250a20e0d19287e4dc43b22e04864..fcd6cb74e0d12edb10c1638c094642a896ac806f 100644
+--- a/src/lib/offer.js
++++ b/src/lib/offer.js
+@@ -58,8 +58,8 @@ export const cadence = Object.freeze({
+  * artifacts.
+  *
+  * `LEDGER_PRECEDENT_COUNT` is the BOOK's ledger: one precedent closing each
+- * chapter, indexed in Appendix D, running P-01 to P-23. `python3 scripts/sts.py
+- * verify precedents` reports "all 23 present in the book and indexed in
++ * chapter, indexed in Appendix D, running P-01 to P-24. `python3 scripts/sts.py
++ * verify precedents` reports "all 24 present in the book and indexed in
+  * Appendix D". It stays asserted here rather than derived, mirroring LEDGER_SIZE
+  * in scripts/sts.py, because deriving it from Appendix D would make that
+  * verification a tautology, comparing the file against itself.
+@@ -96,7 +96,7 @@ export const cadence = Object.freeze({
+  */
+ import bundleManifest from './data/bundleManifest.js';
+ 
+-const LEDGER_PRECEDENT_COUNT = 23;
++const LEDGER_PRECEDENT_COUNT = 24;
+ const PRECEDENT_FILE_CASE_COUNT = bundleManifest.counts.precedent_file_cases;
+ const PRECEDENT_FILE_SOURCED_COUNT = bundleManifest.counts.cases_with_sources;
+ 
+diff --git a/src/routes/+page.svelte b/src/routes/+page.svelte
+index 4a558b76b315e3125a199a4c35173cfaff529a39..62b2748decd7d238c5dbfc1c75d0c553a29af44a 100644
+--- a/src/routes/+page.svelte
++++ b/src/routes/+page.svelte
+@@ -192,7 +192,7 @@
+           <span class="ss-label">Scale</span>
+           <div class="ss-figure"><span class="ss-num">300M</span></div>
+           <span class="ss-desc">jobs rendered obsolete by AI, globally</span>
+-          <a href="https://www.google.com/search?q=Goldman+Sachs+300+million+jobs+AI+generative" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs</a>
++          <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent" target="_blank" rel="noopener noreferrer" class="ss-src ss-src-link">Goldman Sachs</a>
+         </div>
+         <div class="ss-item">
+           <span class="ss-label">Speed</span>
+diff --git a/src/routes/about/+page.svelte b/src/routes/about/+page.svelte
+index b41abd28a12f137c9a495070763fa77956ea6239..f46f76c5073a40c0bf1f9b73cbb7048346a6b9ed 100644
+--- a/src/routes/about/+page.svelte
++++ b/src/routes/about/+page.svelte
+@@ -1,11 +1,6 @@
+ <script>
+-  import { fade } from 'svelte/transition';
+-  import { onMount } from 'svelte';
+   import AuthorBio from '$lib/components/AuthorBio.svelte';
+   import { offerBlurb } from '$lib/offer';
+-
+-  let visible = false;
+-  onMount(() => { visible = true; });
+ </script>
+ 
+ <svelte:head>
+@@ -33,8 +28,7 @@
+   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/about.png" />
+ </svelte:head>
+ 
+-{#if visible}
+-  <div class="about-page" in:fade={{ duration: 400 }}>
++  <div class="about-page">
+     <header class="about-header">
+       <p class="about-label">About</p>
+       <h1 class="about-title">I'm writing this in real time.</h1>
+@@ -107,13 +101,20 @@
+       </p>
+     </section>
+   </div>
+-{/if}
+ 
+ <style>
++  /* Fades in over 400ms with CSS, not `{#if visible}` + in:fade. The gate kept
++     this whole page out of the served HTML until JavaScript ran. See the note in
++     src/routes/blog/+page.svelte. */
+   .about-page {
+     max-width: 760px;
+     margin: 0 auto;
+     padding: 2rem 1rem 3rem;
++    animation: page-fade 400ms linear;
++  }
++
++  @keyframes page-fade {
++    from { opacity: 0; }
+   }
+ 
+   @media (min-width: 640px) {
+diff --git a/src/routes/blog/+page.svelte b/src/routes/blog/+page.svelte
+index b83e785396c2f5bf7a4b4cc49a0d8b9a2eb613ee..f5cae68b321f0d1bc29db8be132fe0a936aa74a3 100644
+--- a/src/routes/blog/+page.svelte
++++ b/src/routes/blog/+page.svelte
+@@ -1,14 +1,13 @@
+ <script>
+-  import { onMount } from 'svelte';
+-  import { fade } from 'svelte/transition';
+   export let data;
+   const { posts } = data;
+ 
+-  let visible = false;
+-  onMount(() => { visible = true; });
+-
++  // Post dates are plain days ('2026-07-17'), which JavaScript reads as midnight
++  // UTC. Formatting that in the visitor's own zone printed the day before for
++  // everyone west of Greenwich, and would disagree with the prerendered HTML.
++  // Same fix as /signals: format in the zone the date is written in.
+   function formatDate(dateStr) {
+-    return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
++    return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+   }
+ 
+   function estimateReadTime(excerpt) {
+@@ -54,8 +53,7 @@
+   <meta name="twitter:image" content="https://survivingthesingularity.com/images/og/blog.png" />
+ </svelte:head>
+ 
+-{#if visible}
+-  <div class="blog-page" in:fade={{ duration: 400 }}>
++  <div class="blog-page">
+     <header class="blog-header">
+       <p class="blog-label">The Blog</p>
+       <h1 class="blog-title">Information You Can Use Today</h1>
+@@ -111,13 +109,23 @@
+       </div>
+     {/if}
+   </div>
+-{/if}
+ 
+ <style>
++  /* The page fades in over 400ms, as it always has. It used to do that with
++     `{#if visible}` set in onMount plus in:fade, which kept every word of this
++     page out of the served HTML until JavaScript ran: a crawler or a link
++     preview got a nav and a footer, and the footer jumped down the screen when
++     the posts arrived. A CSS animation is the same fade with the content in the
++     HTML from the first byte. app.css already shortens it for reduced motion. */
+   .blog-page {
+     max-width: 1000px;
+     margin: 0 auto;
+     padding: 3rem 1.5rem 5rem;
++    animation: page-fade 400ms linear;
++  }
++
++  @keyframes page-fade {
++    from { opacity: 0; }
+   }
+ 
+   .blog-header {
+diff --git a/src/routes/blog/robot-farm-bot/+page.svelte b/src/routes/blog/robot-farm-bot/+page.svelte
+index 5eef476ac106beb20d054b00ec224f6549f739dc..d85156838988c98b5b3075bd79d5e99ba048d517 100644
+--- a/src/routes/blog/robot-farm-bot/+page.svelte
++++ b/src/routes/blog/robot-farm-bot/+page.svelte
+@@ -10,6 +10,9 @@
+     title: 'Robot Farm Bot - The Future of Residential Agriculture',
+     date: '2024-08-15',
+     author: 'Christopher Tavolazzi',
++    // The head below reads post.excerpt for the description tags. It was never
++    // set, so both were served empty. Same words as this post's card on /blog.
++    excerpt: 'Imagine a world where your backyard vegetable garden is tended by an AI-powered robot, ensuring a bountiful harvest with minimal effort. Welcome to the era of the Robot Farm Bot.',
+     image: 'https://farm.bot/cdn/shop/files/FarmBot_Genesis_v1-3_c10ecd67-00ed-4ae1-a32e-111f11312655_2049x1365.jpg?v=1697756943',
+     readingTime: '7 min read'
+   };
+diff --git a/src/routes/exclusive-friends-only/+page.svelte b/src/routes/exclusive-friends-only/+page.svelte
+index 04858ee97e6f785b48510bce65837c0ad88c3483..a09e3cf5cb599233f2099562934ea42b043905e7 100644
+--- a/src/routes/exclusive-friends-only/+page.svelte
++++ b/src/routes/exclusive-friends-only/+page.svelte
+@@ -112,6 +112,7 @@
+         bind:value={password}
+         bind:this={passwordInput}
+         placeholder="the code"
++        aria-label="Access code"
+         autocomplete="off"
+         autocapitalize="off"
+         spellcheck="false"
+diff --git a/src/routes/factcheck/+page.svelte b/src/routes/factcheck/+page.svelte
+index 2d1010b64c5a6fe4477c475a920c34bf05624a78..23895ad2a195fc6a1b2be62ce1991d0a5f01cb1d 100644
+--- a/src/routes/factcheck/+page.svelte
++++ b/src/routes/factcheck/+page.svelte
+@@ -1,11 +1,6 @@
+ <script>
+-  import { fade } from 'svelte/transition';
+-  import { onMount } from 'svelte';
+   import summary from '$lib/data/factcheck-summary.json';
+ 
+-  let visible = false;
+-  onMount(() => { visible = true; });
+-
+   // Nothing on this page is a typed-in number. Every figure comes from
+   // factcheck-summary.json, which sts.py generates alongside the trace itself,
+   // so the page cannot claim something the audit does not say.
+@@ -28,7 +23,6 @@
+ <svelte:head>
+   <title>Fact-check: audit every claim in Surviving the Singularity</title>
+   <meta name="description" content="Every checkable claim in the book, traced back to the commit and source behind it. {n(summary.claims)} claims, {n(summary.resolvable)} with a permalink to the exact line on GitHub. Audit it yourself." />
+-  <link rel="canonical" href="https://survivingthesingularity.com/factcheck" />
+ 
+   <meta property="og:type" content="website" />
+   <meta property="og:site_name" content="Surviving the Singularity" />
+@@ -41,8 +35,7 @@
+   <meta name="twitter:description" content="Every checkable claim traced back to the commit and the source behind it, including the places the trail breaks." />
+ </svelte:head>
+ 
+-{#if visible}
+-<div class="fc" in:fade={{ duration: 400 }}>
++<div class="fc">
+ 
+   <header class="fc-header">
+     <p class="fc-label">Provenance</p>
+@@ -127,7 +120,11 @@
+       and the chain of custody draws itself hop by hop, and stops dead where the
+       evidence does.
+     </p>
+-    <a class="fc-button" href="/factcheck-trace/">
++    <!-- rel="external": the trace is a static document under static/, not a
++         route of this app. Without it the prerenderer follows the link, cannot
++         resolve a static directory URL, and fails the build on a 404 for a page
++         that exists. -->
++    <a class="fc-button" href="/factcheck-trace/" rel="external">
+       Open the full audit
+       <span aria-hidden="true">-&gt;</span>
+     </a>
+@@ -139,13 +136,20 @@
+   </section>
+ 
+ </div>
+-{/if}
+ 
+ <style>
++  /* Fades in over 400ms with CSS, not `{#if visible}` + in:fade. The gate kept
++     this whole page out of the served HTML until JavaScript ran. See the note in
++     src/routes/blog/+page.svelte. */
+   .fc {
+     max-width: 940px;
+     margin: 0 auto;
+     padding: 4rem 1.5rem 6rem;
++    animation: page-fade 400ms linear;
++  }
++
++  @keyframes page-fade {
++    from { opacity: 0; }
+   }
+ 
+   .fc-label {

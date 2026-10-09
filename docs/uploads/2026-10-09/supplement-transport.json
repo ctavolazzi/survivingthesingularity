@@ -1,0 +1,965 @@
+{
+  "schema": "sts-supplement-transport/v1",
+  "repository": "ctavolazzi/survivingthesingularity",
+  "tag": "book-work-archive-2026-10-09",
+  "base_url": "https://github.com/ctavolazzi/survivingthesingularity/releases/download/book-work-archive-2026-10-09",
+  "archive": {
+    "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst",
+    "bytes": 123741800,
+    "sha256": "db1da47195f82bec1f7fd3ca1ceb5d7db17568fe4f38cf99a49480c50dd6ccaa"
+  },
+  "chunk_bytes": 4194304,
+  "parts": [
+    {
+      "index": 1,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part001",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part001",
+      "bytes": 4194304,
+      "sha256": "3f1d7ed8b58d12698df23193af1ddbf059ba58ec2e805f5d9b91fc0a5018ff7b"
+    },
+    {
+      "index": 2,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part002",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part002",
+      "bytes": 4194304,
+      "sha256": "28d5ca76e9f990529c107632dcd3ff68ce4f5d5805783a36d0a5da9996a2d16d"
+    },
+    {
+      "index": 3,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part003",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part003",
+      "bytes": 4194304,
+      "sha256": "271583eeb8801277c4f594f33c297702340b6588f96081d52f67f43ab9f72305"
+    },
+    {
+      "index": 4,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part004",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part004",
+      "bytes": 4194304,
+      "sha256": "a2098f654541af5cad1954971ac54a817113eaee9d02e3ff556b194b485fb13e"
+    },
+    {
+      "index": 5,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part005",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part005",
+      "bytes": 4194304,
+      "sha256": "cd9835e3b2fa82e8892144afccdf348caa124e28908246037a541cbcedb64485"
+    },
+    {
+      "index": 6,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part006",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part006",
+      "bytes": 4194304,
+      "sha256": "6e340200a7cfa48f224d9a80c094463b16aa6a73ce06437773cead84b4a06a77"
+    },
+    {
+      "index": 7,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part007",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part007",
+      "bytes": 4194304,
+      "sha256": "0b8fd566e3b6554e688306c36a4963b662fa7a0e59017241c4bade58df005342"
+    },
+    {
+      "index": 8,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part008",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part008",
+      "bytes": 4194304,
+      "sha256": "25f9d4fa231094b3ace3cc1ffc77523e7a2f25457f9c46f64f672d6c0364f160"
+    },
+    {
+      "index": 9,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part009",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part009",
+      "bytes": 4194304,
+      "sha256": "1548f4970cc070ba148dbc1afb71c0f067c0a87ae695cb057c502df952562854"
+    },
+    {
+      "index": 10,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part010",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part010",
+      "bytes": 4194304,
+      "sha256": "0c1e46650b750164de4f38009591b47e0a7fd21ac17389c494ef66a79529bf4b"
+    },
+    {
+      "index": 11,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part011",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part011",
+      "bytes": 4194304,
+      "sha256": "4c83e8f573aacd71aaf4959a2a62700779052ac2b69d212aa515c89f35ea3b8d"
+    },
+    {
+      "index": 12,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part012",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part012",
+      "bytes": 4194304,
+      "sha256": "be631efc0cb884e4d78f9a30e97a463c01209d27745fe141d37e42775c39e175"
+    },
+    {
+      "index": 13,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part013",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part013",
+      "bytes": 4194304,
+      "sha256": "60923763ee2e62b32fd8a410177c19fb224e347270509247c764f50570046281"
+    },
+    {
+      "index": 14,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part014",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part014",
+      "bytes": 4194304,
+      "sha256": "b23af953bae410e4b2a26143f46ee1db1153cea14c594ddef0489451c73ef833"
+    },
+    {
+      "index": 15,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part015",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part015",
+      "bytes": 4194304,
+      "sha256": "adf8f9aa66f63078492f2dc40586b85eb14e54129537bac96fa4fbb4b60a30b3"
+    },
+    {
+      "index": 16,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part016",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part016",
+      "bytes": 4194304,
+      "sha256": "1f4cb9c20f2fcab6e4d6b411ef3b665d37a77e438244b55834363d65d82faac2"
+    },
+    {
+      "index": 17,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part017",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part017",
+      "bytes": 4194304,
+      "sha256": "bcb10fdbc9f03481e841546eba52fd13ad8bddf9c040eb7e12f620ad87fd065c"
+    },
+    {
+      "index": 18,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part018",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part018",
+      "bytes": 4194304,
+      "sha256": "189ed5d40a6790bf26bdcfceb6a24b3ea1a8219522ae5d919db98d35a86d044f"
+    },
+    {
+      "index": 19,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part019",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part019",
+      "bytes": 4194304,
+      "sha256": "c4f5df41b516e1d1cf4d4a8ede9ce72becbd5a40b489b06c232c9f6f8fd8611b"
+    },
+    {
+      "index": 20,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part020",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part020",
+      "bytes": 4194304,
+      "sha256": "23e01d7a04fa5fcfc961bf9ea836b66c71f36556e890d5e28a4d618312fe6970"
+    },
+    {
+      "index": 21,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part021",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part021",
+      "bytes": 4194304,
+      "sha256": "723f568adc06b46816710a0c9c68cec9bbd2b9272c540fbb627501d87c6ce615"
+    },
+    {
+      "index": 22,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part022",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part022",
+      "bytes": 4194304,
+      "sha256": "dbe7bdd8673b670b8c29174f6f0993589c6e4817f3406e68663e30dc1078dd63"
+    },
+    {
+      "index": 23,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part023",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part023",
+      "bytes": 4194304,
+      "sha256": "50e5c3f471bced410cd58d3c2198eb3374c9efbf7a51780caf3d2df6eb57cd4b"
+    },
+    {
+      "index": 24,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part024",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part024",
+      "bytes": 4194304,
+      "sha256": "64123ecb742fe170e39b28481aa23d379be3f838f8627c1351e39a72234f27ca"
+    },
+    {
+      "index": 25,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part025",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part025",
+      "bytes": 4194304,
+      "sha256": "aa9efe41d0a721f3df52279371385cc2698c0247a3c80376471a7814bb7cb1d7"
+    },
+    {
+      "index": 26,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part026",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part026",
+      "bytes": 4194304,
+      "sha256": "185db00e8a374971346bef16cc00a9c45cb8895efd941c645a3174eb67d90d00"
+    },
+    {
+      "index": 27,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part027",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part027",
+      "bytes": 4194304,
+      "sha256": "d610191c5f4851fefc927edb2bbce1a549ce39b6d50980e291b1dc986775d78c"
+    },
+    {
+      "index": 28,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part028",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part028",
+      "bytes": 4194304,
+      "sha256": "cf525c7c8161caebc33e31ff40d51b0145228b95839304c2bf4a7ba0a1d62afd"
+    },
+    {
+      "index": 29,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part029",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part029",
+      "bytes": 4194304,
+      "sha256": "aadec941c1218ec22d4034a7babae8df21645808de40e321cfcaa470d07c22cf"
+    },
+    {
+      "index": 30,
+      "name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part030",
+      "canonical_name": "Surviving-the-Singularity-supplement-2026-10-09.tar.zst.part030",
+      "bytes": 2106984,
+      "sha256": "b1bf7a95728a3a88b1cb5b053906e59815930cba31bf5e2386948e39ad3b6d57"
+    }
+  ],
+  "payload_count": 147,
+  "payload_bytes": 380405614,
+  "payloads": [
+    {
+      "path": "projects/sts-pixel-video/.gitignore",
+      "bytes": 34,
+      "sha256": "b923a1cb79dcd5da52b9e9e314d7c7f140c0f9d817d3d51ed3741fdb3daee6cb"
+    },
+    {
+      "path": "projects/sts-production-tracker/.gitignore",
+      "bytes": 210,
+      "sha256": "d1aec8becdfa546cbb4ed193ffd576dd7f353c742cb9f361be4b2697ecefe992"
+    },
+    {
+      "path": "projects/sts-production-tracker/.npmrc",
+      "bytes": 19,
+      "sha256": "7151cf397def0c2cb0ab65643701d27d335a72c90f775675b5f826bc7005818a"
+    },
+    {
+      "path": "projects/sts-production-tracker/src/app.html",
+      "bytes": 331,
+      "sha256": "824aebe3df873b559437d5e9dbf97f09f35c3b006608950cb582bcfbeae85faa"
+    },
+    {
+      "path": "files/Downloads/sts-book-cover-001.jpg",
+      "bytes": 1269903,
+      "sha256": "9da0c9883ce5e8948ec0778759109663dd26d0dcb0fc8d8ec98b302c33b36f95"
+    },
+    {
+      "path": "files/Downloads/sts-cover-cropped.jpg",
+      "bytes": 1445886,
+      "sha256": "ba3e3852a0ac6a0cbfa81e81e76180d5ea37efabf35c8dc7bbca674a738351cd"
+    },
+    {
+      "path": "files/Downloads/sts-cover-thumb.jpg",
+      "bytes": 133070,
+      "sha256": "8317b7046a77ac22c43b3dad45d2cf625be7eadca8d91ee7c6914ca3ff441a07"
+    },
+    {
+      "path": "files/Downloads/sts-cover-web.jpg",
+      "bytes": 435468,
+      "sha256": "522d99d4508883a3b744bcbc28a51706af58c62b47392b7e069993dfaf09393c"
+    },
+    {
+      "path": "files/Downloads/survivinvg-the-singularity-limited-edition-HD.jpg",
+      "bytes": 2106030,
+      "sha256": "c2a36baee61aee4cfd4800f4883b4d4949e9bc2cb686553794a70eb30d123602"
+    },
+    {
+      "path": "projects/sts-pixel-video/out/ch15/render-report.json",
+      "bytes": 137,
+      "sha256": "46b5785de5ea94810669160d85aa6aeafaca9528c05d618dc65ad4244e5cbda3"
+    },
+    {
+      "path": "projects/sts-production-tracker/.vscode/extensions.json",
+      "bytes": 49,
+      "sha256": "613d3fbe180f7d0ef4381a7c5cd15e7ff5a7f35313cfe4d96b82c2215c3c796a"
+    },
+    {
+      "path": "projects/sts-production-tracker/package-lock.json",
+      "bytes": 42404,
+      "sha256": "61617064681db5e536c0ed33f58d8e6f7d268a1b884766f2814e5804fe033d9c"
+    },
+    {
+      "path": "projects/sts-production-tracker/package.json",
+      "bytes": 675,
+      "sha256": "8179febd025f65cb2de3f231df22fedb0539bc76df1418a44228431d459ee35e"
+    },
+    {
+      "path": "projects/sts-production-tracker/tsconfig.json",
+      "bytes": 692,
+      "sha256": "7a19bf2d57ef51ed3d7ddb0ed6ac3c4aa89025ab1cc2b0271132477905763134"
+    },
+    {
+      "path": "projects/sts-pixel-video/README.md",
+      "bytes": 3740,
+      "sha256": "d5725207e1ffc792ea10d84d7a7831705603e311cb0741202c5c80d69f3f540d"
+    },
+    {
+      "path": "projects/sts-production-tracker/README.md",
+      "bytes": 964,
+      "sha256": "59dc1abbf4b3c4414ef32004febad9566ecc781822e33641cc115dbfa734aaaf"
+    },
+    {
+      "path": "projects/sts-pixel-video/out/ch15/sts-ch15-1080p.mp4",
+      "bytes": 3705177,
+      "sha256": "0474e1d02f4187e6b581cd2f5b07474fd33f2156fbf8823a20dc25901863bd44"
+    },
+    {
+      "path": "projects/sts-pixel-video/out/ch15/sts-ch15-2160p.mp4",
+      "bytes": 3267930,
+      "sha256": "57db8e49755c20accdb5473a2eb6a9557408e2852645198435e17f5c3ca14aa9"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-baseline-p1.pdf",
+      "bytes": 51403,
+      "sha256": "69bdb5471eb86855001dac365407f1c97e2b31804328e04e7d55a009907c5243"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-baseline-p6.pdf",
+      "bytes": 55261,
+      "sha256": "ea352308478cbea945c3716fbdbc544467a96b8ae27a7b1051d7bbfd2cecd5df"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-helper-page151.pdf",
+      "bytes": 73408,
+      "sha256": "8d0b7373eb647bb4be55dc4165bbc60f1d3b15d51fbd33a035e78d97238c0bf5"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-helper-prepared.pdf",
+      "bytes": 16748383,
+      "sha256": "e3901895a1bd82295d2e6db7265123e95d7379630b6b21a1f293b5f0e2485f85"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-indirect-p1.pdf",
+      "bytes": 51416,
+      "sha256": "bf8261e58c0e83bd0e0d3d85b78a006a48a3905da83f46dd89cbdc4a4ebb8345"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-indirect-p151.pdf",
+      "bytes": 73407,
+      "sha256": "28a7a831a0c75e07ffe465599f6f53093153986143f585a27859a346753e6cce"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-indirect-p25.pdf",
+      "bytes": 536417,
+      "sha256": "15d87ed996e218c225761fb5f54a4c2252dbfb3b7fa7d64cdbce08a5f64bd34b"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-indirect-p6.pdf",
+      "bytes": 55277,
+      "sha256": "78e40ddd97c06825a8913cab84d036a67fca96bf6101d4cf7fe66fc049af5497"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-no-duplicate-p1.pdf",
+      "bytes": 51435,
+      "sha256": "436cb79a775675964918b5bef329eacf68d843426cbe2082d9798b9e24fd7dd9"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-no-duplicate-p6.pdf",
+      "bytes": 55294,
+      "sha256": "437d0787e2203fcf9f587ba49362e12e58c6a2a90b6eebf31729ae7a6f2058c9"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-original-p25.pdf",
+      "bytes": 536401,
+      "sha256": "00f6a075e4a9343918f93a7daa568cdbbb562a2b49688e45b5fefda732e852c1"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-pruned-p1.pdf",
+      "bytes": 51403,
+      "sha256": "38dd3ab60779fdbcf5f5cd8a7b8b3eb5d5cc21ddf44a274bc5a1057688f950a7"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-pruned-p151.pdf",
+      "bytes": 2556,
+      "sha256": "e3a5585151c743afe08c580c40ac7da2f12b8f07c1b45cfeaea7a5a915958519"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-pruned-p25.pdf",
+      "bytes": 2556,
+      "sha256": "c9577d12ba03d430700207a521cdb127618e751d80cdaf5d1ccdb7e8e3662c19"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-pruned-p6.pdf",
+      "bytes": 2554,
+      "sha256": "69a073cf764d75abcddb8b0d46e94b2392470ac2738f00b076669ed2927c2d0a"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/diagnostic-pruned-xobjects.pdf",
+      "bytes": 30518431,
+      "sha256": "7749e9ee72c0db965b13d5f0163e33bab07b71d3bc8e78a370d7f27a12083a08"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.0/publication/output/print-prepared.pdf",
+      "bytes": 16733886,
+      "sha256": "b681edf2cb94984436840514d9c057a450e4c4bcf9d884981661dbd91da2eda4"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.1/publication/output/print-prepared.pdf",
+      "bytes": 27985764,
+      "sha256": "f71696f64094cb003a89c0db4b7352b56b1f824530ca3ceb729944c22d7865b8"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.2/publication/output/print-prepared.pdf",
+      "bytes": 27663647,
+      "sha256": "a9e7420e7baa4f124e3458cf3fbd82716770b89bcd463ae2beebabb997175c2b"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.3/publication/output/print-prepared.pdf",
+      "bytes": 38540083,
+      "sha256": "c5383ed817145e618a6ca7e2f473eddacec1169d3bbc2f3491eff40efdaa2538"
+    },
+    {
+      "path": "files/Code/active/sts-v0.10.4/publication/output/print-prepared.pdf",
+      "bytes": 38542115,
+      "sha256": "282bed801f81ac6d3e80cc15821a7ed0d0c63ec4c7a5c245978dc88ba3a3d833"
+    },
+    {
+      "path": "files/Code/active/sts-v0.11.0/publication/output/print-prepared.pdf",
+      "bytes": 38565577,
+      "sha256": "4fbee6351622a48b5fc64311efdc359ed2b8333e1501b4469a5b508033203cff"
+    },
+    {
+      "path": "files/Code/active/sts-v0.7.3/manuscript/bonus/dist/The-Precedent-File/The-Precedent-File.pdf",
+      "bytes": 100752,
+      "sha256": "5db3fb5da2d75b6aa2ca679793c5e61c98a4c4022a2c966d5157ffef5e172dee"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/manuscript/bonus/dist/The-Precedent-File/The-Precedent-File.pdf",
+      "bytes": 87121,
+      "sha256": "8f5231c25398962c93fb06ab2fd6d42719c75c0e07c1d6501f5823ef40b382ca"
+    },
+    {
+      "path": "files/Downloads/9-Stages-of-the-Singularity.pdf.pdf",
+      "bytes": 64166,
+      "sha256": "a4879c6cd6bf741d0adfb1b40f1c63559afa78dd48b9dff6d6f8cd703ea34144"
+    },
+    {
+      "path": "files/Downloads/Singularity%20Research%20and%20Evidence%20Synthesis.pdf.pdf",
+      "bytes": 311409,
+      "sha256": "abe14dd06748f76b1e35daf756c0a61dff68ab3b7b03b9f5b47b3819e3e75308"
+    },
+    {
+      "path": "files/Downloads/StS-Core-Concepts.pdf",
+      "bytes": 97671,
+      "sha256": "bfc9a9b66f4ea8d52b13dd3c29d9db41b4d04fca193571083a00665b556a2fa6"
+    },
+    {
+      "path": "files/Downloads/StS-Outline 2.pdf",
+      "bytes": 71933,
+      "sha256": "102f7b7fd8c2a0561bc38d59c6cdd9b8ae455437e92bf4d3a4b335491346e448"
+    },
+    {
+      "path": "files/Downloads/StS-Page1 2.pdf",
+      "bytes": 189104,
+      "sha256": "af4b5f083606711718a0fc8e6de527d206b8f4c6a8dbaa1d17da3741c00dffb9"
+    },
+    {
+      "path": "files/Downloads/StS-The-Road-Map 2.pdf",
+      "bytes": 84681,
+      "sha256": "850b2f8bedc76ea73f8e1da1e664906262fefcfa0256021370ce2a146f52b241"
+    },
+    {
+      "path": "files/Downloads/Surviving%20the%20Singularity-%20The%20Empowerment%20Archite....pdf.pdf",
+      "bytes": 82323,
+      "sha256": "a498264350362348aeb7a5d420432d6ab4ccb3f8e8c83d340489b89265e2cf45"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/book-cover-finalist-02-source.png",
+      "bytes": 6975400,
+      "sha256": "4ecf699b0a3e545cd69211225f9a94e1d018480772da7deada8976f1096f542f"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/book-cover-orange-flowers-variant.png",
+      "bytes": 4329451,
+      "sha256": "7be58fa4e1ff3fe5f0ebe87c8560ee806b566f2ee674e0de2c003440a55dae38"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/builderbot.png",
+      "bytes": 9175,
+      "sha256": "a18b741996fa6974b549f1a33dfc9387210e3cd7772d89a36665f40f1a9a0ae7"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch01-pc-rig-content.png",
+      "bytes": 23079,
+      "sha256": "1714a15f14643f3093620afdcae185b806c3411d4d7a7e4dabd57011954d91f9"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch01-pc-rig-figure.png",
+      "bytes": 15977,
+      "sha256": "b6d240d54a45a495d6f76a8177c80d7436e88ffe476690d5048e695073a42c2f"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch05-woodstove-content.png",
+      "bytes": 19489,
+      "sha256": "a5a8eb37064468a2ff1cff44f9fa03412370bddfc503ad458a56615787e32b8c"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch05-woodstove-figure.png",
+      "bytes": 12162,
+      "sha256": "eb8e18288d361cd5e86049d787e4f303287a6ea24b25585bfb707466b600f19e"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch06-pegboard-content.png",
+      "bytes": 19501,
+      "sha256": "ff10764b4261faced2673fe817be5979bc5122d4ba32c20a2aa7029ae60ed227"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch06-pegboard-figure.png",
+      "bytes": 7975,
+      "sha256": "cb6ae81785a12eb7abae034648f60bf55896b2e4f8b4e47b333e1ca5541b90d1"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch09-controller-box-content.png",
+      "bytes": 18751,
+      "sha256": "d0adce718406065f260f90777f4591146e304ea9a1379d53bebbc3a6821c523f"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch09-controller-box-figure.png",
+      "bytes": 10956,
+      "sha256": "0244bf0cd4102296ec177ee6eaccd3f53e2668761c5a135b3f90c86e78b1125b"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch11-rack-radiator-content.png",
+      "bytes": 27419,
+      "sha256": "c8a46e225a4e751d92ad6d087b25ce97bd46e793cf571d4d0b0e7c008907cfee"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch11-rack-radiator-figure.png",
+      "bytes": 20151,
+      "sha256": "6db3ad9549ff1d1c6decd548a867f43e03510a1e9af9a0cbe84a35f1e47d5e74"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch13-bench-vise-content.png",
+      "bytes": 22914,
+      "sha256": "e25bca919539ee67d9400387d20ff5fbf902e31f9db79f9496198f236afaf355"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch13-bench-vise-figure.png",
+      "bytes": 16104,
+      "sha256": "c13e3931dbc97e768683b08b6c6402d983772c30aec99a8da576a14113adb022"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch14-bell-content.png",
+      "bytes": 21276,
+      "sha256": "fc56239e611e69039103228ca76f9d391804e4482ac729f2b3a51dd9aac666fc"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch14-bell-figure.png",
+      "bytes": 15390,
+      "sha256": "89d7a5f74139e13f7156e51057bb88baa0e25d509ed1164ce37df479928894cb"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch15-soil-probe-content.png",
+      "bytes": 15064,
+      "sha256": "d7c30dd61f8849be1d0cfd989a0a0c2a15837698e69eff681ee91d13afe3789e"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/ch15-soil-probe-figure.png",
+      "bytes": 8037,
+      "sha256": "910b46335432aba646cf9e41210833d09dd4594305ffa87ca57fa898b4a4c6cb"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-devendra-content.png",
+      "bytes": 21440,
+      "sha256": "3f045db9ac758ad279a41decb90193fc6f76c61af055bacd7bc37c114b2d829e"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-devendra-figure.png",
+      "bytes": 13880,
+      "sha256": "3a80b1b74ee4f29bd1fe2b6f5f686a4199773b24e68b73d523cd558dcde845da"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-frank-content.png",
+      "bytes": 27835,
+      "sha256": "5c4aea98094103fcfa21e43271bcf00ec6bcbe72a76512b3729322d153b0a9d0"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-frank-figure.png",
+      "bytes": 19090,
+      "sha256": "9320c8ce592a516cb449a893c435b08f06532040e02828e514c7bd18a24f29ca"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-gary-content.png",
+      "bytes": 27453,
+      "sha256": "de3a2951837abd5c55cfedf9b98ebeb4fdfc95a88837bc8a32fa399d5748d5d9"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-gary-figure.png",
+      "bytes": 21043,
+      "sha256": "075c719a33a31759a1187f42c37c63c4de03c48e0aa0d28e96fbce862e164213"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-reuben-content.png",
+      "bytes": 25550,
+      "sha256": "3fda66156be27c14324a4faa6c6c85ea579dff34c6d65c533c84b05924390629"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/char-reuben-figure.png",
+      "bytes": 17617,
+      "sha256": "0ad529396e143382d9244f1a0163169e3885f3f1c39d310929997cbcab58f1b1"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/conclusion-paperbacks-content.png",
+      "bytes": 15920,
+      "sha256": "00444a7f40e16412464f95291babb35e6b3bc9fa41b9c3dac61d11a48561be8a"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/conclusion-paperbacks-figure.png",
+      "bytes": 8009,
+      "sha256": "9fc54f8cce80817403f6e98dd5bb3ae72abf7f1000d4b67080e900323863589d"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/test-content.png",
+      "bytes": 20908,
+      "sha256": "ee6f95ff96cb7fd4e7880f0e76fcf833641dc817771b8d2f53b0dfd78f008beb"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/cut/test-figure.png",
+      "bytes": 13133,
+      "sha256": "8d23e551fcb22ae9c133b1b153e1c1dbde26b24d7e0128fb9eb851d7f9deeb01"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/growerbot.png",
+      "bytes": 9774,
+      "sha256": "73179f74fe72434056d5325478a5230c4ecb495fc16986aa34fd8db6be42f72b"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/render-ch09-hyperlocal-vs-global.png",
+      "bytes": 179998,
+      "sha256": "446d139dd7c5fdd47dd2db0d17bc8f4103a592ab5d8298c053e9fd05e1fd9dd1"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/render-ch17-algae-loop.png",
+      "bytes": 129287,
+      "sha256": "634593007a48c250bea9be99f6831a256027fc9481a7898618ef070ca6af1e14"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/test-plate.png",
+      "bytes": 19575,
+      "sha256": "f893126b2b8311059d89297e5c976d33afef3eb2a869455bff37f90a089e7645"
+    },
+    {
+      "path": "files/Downloads/sts-cover-by-ct.PNG",
+      "bytes": 6525912,
+      "sha256": "576333c2fd4043221e95e79dea49dbb67eb7ddb5faf6929bbf9df737a8c3669c"
+    },
+    {
+      "path": "files/Downloads/sts-cover-cropped.png",
+      "bytes": 4222178,
+      "sha256": "1c91fab78de7cfdfa8357e87fa22ad0769f35349ff8fbfbc375c706287b14997"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/elijah-east-idle-0.png",
+      "bytes": 1772,
+      "sha256": "bef883f53034f1ae3de224185b710e0415cbecdb851aab7b7d603f49a9eb8c7e"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/elijah-east-idle-1.png",
+      "bytes": 1763,
+      "sha256": "7e6f94523e5318393d63c4f0c7c9d6784588bd2fdaa9c3b1c23a8f44b59b5fcb"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/elijah-east-idle-2.png",
+      "bytes": 1826,
+      "sha256": "2e15b6e8333883a934f4e6d5e88ac929a0185541643056559134133cf843539d"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/elijah-east-idle-3.png",
+      "bytes": 1715,
+      "sha256": "85fe2bbe719510a283f8ff47f5b6f30391197050bf67756a76cbe46aea77edfc"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/elijah-east.png",
+      "bytes": 1434,
+      "sha256": "5f867b9c2690d8b3f6394e6fe7c850acd24f33676ff4000c9f8149d040aefd59"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/priya-west-idle-0.png",
+      "bytes": 1564,
+      "sha256": "728a8eac00c899df6753e47bf078fb91bdacea4d2623975997f367479f8ffb01"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/priya-west-idle-1.png",
+      "bytes": 1587,
+      "sha256": "81333e45e4d3ef8cdcacc4691557f4311c958c787f9123f4a20278d4c316bf4a"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/priya-west-idle-2.png",
+      "bytes": 1537,
+      "sha256": "6476e8dedfc2edb970a7fca26c303aeb3265f65d7e77f0eac9dc408e20758fcc"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/priya-west-idle-3.png",
+      "bytes": 1544,
+      "sha256": "d1653499bf06955015d39f6c810b589ad2c1b768666c48f75b33fcced85d977e"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/chars/priya-west.png",
+      "bytes": 1289,
+      "sha256": "acf192492b26a31b1df8a4c0ad45c7ae2ee7976ed60666f7002a32a2d30db102"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/font/sts-caption-atlas.png",
+      "bytes": 1870,
+      "sha256": "c90d272d2049606b596f415a73259b33058b3235bb61e3ac39ea2f55c145b484"
+    },
+    {
+      "path": "projects/sts-pixel-video/out/ch15/mp4-sheet.png",
+      "bytes": 479031,
+      "sha256": "ee0e31702cdb5951a555a78691b10b8cc1829aabe4835d98a326ff9cbe655c98"
+    },
+    {
+      "path": "projects/sts-pixel-video/out/ch15/preview.png",
+      "bytes": 205897,
+      "sha256": "cfe1edd84cb7c0374711f774a846c54f0f5f348e3a1edf9defc0717a3f18e87c"
+    },
+    {
+      "path": "projects/sts-pixel-video/out/ch15/zoom.png",
+      "bytes": 112001,
+      "sha256": "ff140b68e628f5c3b899cf2256c679461cfa6d4df100fa864deb9931ebe14cfc"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/chapter_plates.py",
+      "bytes": 2415,
+      "sha256": "071d4238250fa008b211edc2deac119567505512183d3a6e5b79e5a0a630c35c"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/compose.py",
+      "bytes": 1762,
+      "sha256": "0a40c24062aef7a8287e9009e89d9981862b6214d1aba09c9545fd0f3ad01dad"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/compose_duo.py",
+      "bytes": 1722,
+      "sha256": "0438eb96683a67122f65278058e2700cfc9d12d5761b34b7ebe1aa40d375e133"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/grid.py",
+      "bytes": 2243,
+      "sha256": "88f5ca912e4017607eacfea74c93c5ea83353685a0ec60d035c8d5675e730e69"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/art-raw/plates.py",
+      "bytes": 2781,
+      "sha256": "4f9ac8baa9faf505f7453f57c9c10a3e1547264e294c9f1a145e77e3f980a29d"
+    },
+    {
+      "path": "projects/sts-pixel-video/ch15/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/sts-pixel-video/ch15/art.py",
+      "bytes": 30415,
+      "sha256": "cacf873153b8aa8ecc705aa262e019952338ad7463f19a48bedaa80b6ec5d139"
+    },
+    {
+      "path": "projects/sts-pixel-video/ch15/audio.py",
+      "bytes": 12519,
+      "sha256": "b69c4546db6d1ce91289ce177e9f136d3c4c2077c84c2407d13d42bc9eabe6b7"
+    },
+    {
+      "path": "projects/sts-pixel-video/ch15/render.py",
+      "bytes": 3739,
+      "sha256": "987f3a3cb34f10d0de8916a77f96de0f4c2feaa7d849be4eb284851918fde381"
+    },
+    {
+      "path": "projects/sts-pixel-video/ch15/shots.py",
+      "bytes": 18687,
+      "sha256": "a821f5a643468138f724d81b3357bb3a8f7aa9af19dc469d4e4f7aa24162fb56"
+    },
+    {
+      "path": "projects/sts-pixel-video/lib/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/sts-pixel-video/lib/palette.py",
+      "bytes": 2197,
+      "sha256": "42f0a4577c0105f9f29304537d79296b08f6ee0337ce9016dc31ec2fe9c5fd89"
+    },
+    {
+      "path": "projects/sts-pixel-video/lib/px.py",
+      "bytes": 8404,
+      "sha256": "91f9299df08b96e7ccea93225adf77e4f3ee8aa3547a707df0e9a44fcb048c2d"
+    },
+    {
+      "path": "projects/sts-pixel-video/tools/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/sts-pixel-video/tools/check.py",
+      "bytes": 10197,
+      "sha256": "f655844cef6c7c3ac7ac284bd5d272f48f05bd84d48e503affa4ae124e5ec38c"
+    },
+    {
+      "path": "projects/sts-production-tracker/src/routes/+layout.svelte",
+      "bytes": 196,
+      "sha256": "ebd8d1fe186e66679a9f5627747a0d9aa04853505d70c9f00cbbc7333dabe3d5"
+    },
+    {
+      "path": "projects/sts-production-tracker/src/routes/+page.svelte",
+      "bytes": 131,
+      "sha256": "9dd633ced2345cf3712ded48cdba85cb07933348909e5681a3d2d941627403c0"
+    },
+    {
+      "path": "projects/sts-production-tracker/src/lib/assets/favicon.svg",
+      "bytes": 1569,
+      "sha256": "d7d9227f0fe5bfb4189fb6ba4dd9e2d524f6a1dfd02bd901c65330987675c0b3"
+    },
+    {
+      "path": "projects/sts-production-tracker/src/app.d.ts",
+      "bytes": 274,
+      "sha256": "3d450fc2fc7b0f10b6a9493a682769aac34f8b612f0f5d1bc4845a7b0bfe9f0a"
+    },
+    {
+      "path": "projects/sts-production-tracker/src/lib/index.ts",
+      "bytes": 75,
+      "sha256": "4beec0ade3bea5be651939b305bccf69d48506c74eda0a1a50a0dd6c79c4e91a"
+    },
+    {
+      "path": "projects/sts-production-tracker/vite.config.ts",
+      "bytes": 747,
+      "sha256": "8f489600e36ef36af5b82d1e7733b5026f9d41a49a94302cbb76833033a9254a"
+    },
+    {
+      "path": "projects/sts-pixel-video/assets/font/sts-caption.ttf",
+      "bytes": 14544,
+      "sha256": "c42f0c7e96c7b26c3c66cc39a4366727c9f9f615b7b4584c2e1256065d9cddd0"
+    },
+    {
+      "path": "files/Desktop/Chapter 2_ What is the Singularity_.txt",
+      "bytes": 8327,
+      "sha256": "f8119228069e5b5afa2b55d55b2f015e0b48b274fdb455862a19f17401356593"
+    },
+    {
+      "path": "files/Desktop/Navigating the AI Revolution and Singularity.txt",
+      "bytes": 33241,
+      "sha256": "e372808cd153d7b99ebafd64b3e2f49d182021f23bb80067f167e9186cd4b840"
+    },
+    {
+      "path": "files/Desktop/Singularity, Collapse, and Resilience.txt",
+      "bytes": 34829,
+      "sha256": "f0d80c8694564ca4f18606980063b9c223abd0bf873d67dae8ce80b2410ab2f8"
+    },
+    {
+      "path": "files/Desktop/StS - Chapter 1.txt",
+      "bytes": 8014,
+      "sha256": "81db9ef751b6c6dd729de612b98a62f477baa0c5356b2877872cf018461edfdc"
+    },
+    {
+      "path": "files/Desktop/StS - FULL CONTEXT.txt",
+      "bytes": 974274,
+      "sha256": "3b035e19bb3fbc3fe1fc32190b7aaa465830dca87b0628c816ccb10881452370"
+    },
+    {
+      "path": "files/Desktop/StS - Table of Contents.txt",
+      "bytes": 1751,
+      "sha256": "ce1174dba71c929f8f9ab7fea73eff165ea6f8646a18e02820e340edc19c5abe"
+    },
+    {
+      "path": "files/Desktop/StS literary analysis.txt",
+      "bytes": 3699,
+      "sha256": "935c7d5532e3a8e7050c9236eeff35f2404aee18cb1c9d8e59110622ffca3164"
+    },
+    {
+      "path": "files/Desktop/StS-Book-Format (1).txt",
+      "bytes": 124076,
+      "sha256": "8897f4a8ef890426e1d222c7a19b197d253109e9531eb5308a4295def409509f"
+    },
+    {
+      "path": "files/Desktop/StS-Draft-2 (1).txt",
+      "bytes": 127850,
+      "sha256": "2b5d48c9361cabbdfb8874e5ed1871af6dfd1156ff416c7f30e653a7931e5b47"
+    },
+    {
+      "path": "files/Desktop/StS-Draft-4 (1).txt",
+      "bytes": 139101,
+      "sha256": "ec708791d1178772ba9d21a4e21ba80280b5df6d9feab6556352b379b4ac43d5"
+    },
+    {
+      "path": "files/Desktop/StS-Draft3 (1).txt",
+      "bytes": 77697,
+      "sha256": "15adf89c3c38af3831451ad4087544f433adb2deee29c27cb87666437db68f00"
+    },
+    {
+      "path": "files/Desktop/StS-Draft5 (1).txt",
+      "bytes": 147046,
+      "sha256": "112c80a44bc4d0bf58d7fd31ee84575604ad4780a7dce9ba83e33522b1aebd51"
+    },
+    {
+      "path": "files/Desktop/StS-Redux_ The Blueprint for the Exit.txt",
+      "bytes": 7108,
+      "sha256": "83c8ac5393c41c715121232b704922d18b0d2dbe1d311e0be782d2a40ea29003"
+    },
+    {
+      "path": "files/Desktop/Surviving the Singularity - First Draft (1).txt",
+      "bytes": 11621,
+      "sha256": "bf8e034395503da80d6a8eff9a2f38e3b751a50518beaa0c7dde46550feb100b"
+    },
+    {
+      "path": "files/Desktop/Surviving the Singularity - First Draft -v.00 (1).txt",
+      "bytes": 91848,
+      "sha256": "67c341146d613db5b95322a292955a318af6c64ecdb057dd06de222636a45334"
+    },
+    {
+      "path": "files/Desktop/Surviving the Singularity - First Draft -v.01 (1).txt",
+      "bytes": 119282,
+      "sha256": "42476da1925951c8c9a4f46a1e209a2dd15838416ac0a1feafc2d739c8889c02"
+    },
+    {
+      "path": "files/Desktop/Surviving the Singularity - StS Draft 2.5 (1).txt",
+      "bytes": 11660,
+      "sha256": "eb0fb2fd958bba053f6f111238f87d34860c42e0706c5b4a9436aa789371a392"
+    },
+    {
+      "path": "files/Desktop/Surviving the Singularity - StS Draft 3 (1).txt",
+      "bytes": 242846,
+      "sha256": "b630e2afded36cb5023d768dbe8af6a2a4a3f237d2b46d26c519a128b7a78b59"
+    },
+    {
+      "path": "files/Desktop/Surviving the Singularity - Workbook - First Draft (1).txt",
+      "bytes": 172200,
+      "sha256": "7a23481ab6bdc683abace6744aaa2931345f376730ec119397dd51a9fc7a5e37"
+    },
+    {
+      "path": "files/Desktop/Surviving the Singularity_ Project Brief.txt",
+      "bytes": 3886,
+      "sha256": "8b6fca8610e877bfb63b7c2c4c42b8273f1971eca8d81fdba62f81dd28dd4b4b"
+    },
+    {
+      "path": "files/Desktop/Whispers of Singularity_ A discussion on early signs of the upcoming AGI.txt",
+      "bytes": 2277,
+      "sha256": "a05ac23f52cac3eeb51b2f69e2d9ab398b06c23fe42711f9e817bcf5bdff2e28"
+    },
+    {
+      "path": "projects/sts-production-tracker/static/robots.txt",
+      "bytes": 63,
+      "sha256": "b033243267bcbdab84cb01e940811d6d77a894d78f0470faaf0eb43f8e4efcc9"
+    },
+    {
+      "path": "projects/sts-pixel-video/out/ch15/audio.wav",
+      "bytes": 6144044,
+      "sha256": "e1faef901cf4ce7ead89360c444b1a4b29ba1303871d82c70666ea7603ca855e"
+    },
+    {
+      "path": "files/Code/active/sts-v0.7.3/manuscript/bonus/dist/research-bundle-v1.zip",
+      "bytes": 48907175,
+      "sha256": "89054717eecde2b317ad1993c3474c34619a8c3a25c44f6bb2a757db072b5cff"
+    },
+    {
+      "path": "files/Code/active/survivingthesingularity/manuscript/bonus/dist/research-bundle-v1.zip",
+      "bytes": 48776826,
+      "sha256": "cf5d99c8db81b09ba2adec640c2e70aea3c8fc7b1ad21df972c4542c215889ec"
+    }
+  ],
+  "transport_verified": false,
+  "updated_utc": "2026-10-09T16:03:15.920697+00:00"
+}

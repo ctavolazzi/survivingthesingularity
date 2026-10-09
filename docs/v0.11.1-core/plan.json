@@ -1,0 +1,1228 @@
+{
+ "thesis": "Machines can now do much of the thinking people are paid for, cheaply and on hardware a person can own, and the old deal (sell your days or you don't eat) is ending before anyone has written its replacement. In this book the Singularity is the point where intelligence stops being scarce and the institutions built on that scarcity start failing before a replacement exists. CT forecasts AGI by Thanksgiving 2027, names what would prove him wrong, and builds every ask so it still holds if he is wrong. The danger is the arrangement around the machine, not the machine: productive capacity and human security can move in opposite directions, there is already enough food, and hunger, eviction and credit gatekeeping are enforced rules that people wrote and can rewrite. We don't have to live like this. So the core gives a reader starting from zero something concrete to start this week: food first, for everyone, regardless of income or employment; then land, shelter and care; machines, land and compute owned close to home by the people who depend on them; free at the door but paid for together, like a library; money made optional, not abolished; and a public floor built rung by rung, raised by automation. It carries that argument inside a story a newcomer can feel. Elijah demos the future at a bar and helps end three careers, then spends three years being corrected by a welder, a twice-reskilled warehouse worker, a soil scientist, a hardware man and a woman with a braced wrist, and learns that the answer to the machine was never a smarter machine but people who know each other, multiplied. It ends where it began, at the Bear Flag, with the toast reclaimed and the book left on the bar, and it hands the reader one question for every automation decision, a year of practices, and a meeting to go to.",
+ "budgets": [
+  {
+   "file": "02-introduction.md",
+   "budget_words": 2370,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2372 words): b0001 b0081 b0082 b0083 b0079 b0086 b0088 b0163 b0099 b0089 b0090 b0091 b0117 b0096 b0084 b0050 b0085 b0097 b0087 b0098 b0100 b0101 b0102 b0092 b0139 b0137 b0127 b0128 b0140 b0141 b0162 b0146 b0147 b0148 b0149 b0150 b0093 b0103 b0106 b0107 b0108 b0109 b0118 b0110 b0105 b0112 b0114 b0123 b0138 b0126 b0151 b0111 b0130 b0132 b0133. Thesis and contract. Keep CT's confession (it mirrors Elijah), what is happening, use the tools yourself, the dated forecast, the title's promise, the second ox, fired on a Tuesday, listen to the rest of the sentence, the contradiction, the whole We don't have to live like this run, food first, the renting-survival design brief, free does not mean costless, the Ledger promise, the fiction contract and the open invitation. b0083 stays as CT's Page 1 voice; flag for CT that it defines AGI differently from Ch1 b0141. b0087 stays (respect for the frightened worker); flag that it sits uneasily beside the Ledger in b0126 and b0151. CUT FIRST: every figure and caption (b0002 b0048 b0160 b0161 b0115 b0116 b0119 b0120 b0144 b0145 b0121 b0122), the epigraph b0135, the bullets b0131 b0153, b0094 (its money-optional and tools-don't-choose lines have other homes), b0095, b0104, b0113, b0136, the stat run b0142 b0143, the AI-slop riff b0124 and its pull quote b0125 (they sneer at the artists Chapter 0 grieves for), b0080, b0077, b0078, b0152 (claims every chapter closes with a precedent, no longer true), b0129, the tour b0154, the How to Use pointer b0157, the P-01 pointer b0134. If still over: b0084, b0106."
+  },
+  {
+   "file": "01-preface.md",
+   "budget_words": 530,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (527 words): b0001 b0039 b0069 b0040 b0041 b0053 b0043 b0044 b0054 b0046 b0070 b0071 b0072 b0073 b0047 b0055 b0060 b0057. CT's April 2024 first line and its turn, the weirdness riff in his 2024 register, the horse-ranch parable kept as one unit (b0070 to b0073), framing, optimism as investigation, you are a participant. CUT FIRST: all of P-01 (b0026 b0061 b0049 b0050 b0062 b0063 b0064 b0065 b0066 b0067 b0033 b0068 b0035): its rule contradicts b0044, its panic history repeats Ch5, and Appendix D keeps its one-line rule. Then the third book tour b0051, the all-caps disclaimer b0058 b0059, b0056 (the food-first ladder is already in the Introduction), the figure b0002 b0038 and the epigraph b0052. Flag for CT: this front door holds the best first line in the book and may belong ahead of the Introduction in v0.12."
+  },
+  {
+   "file": "31-how-to-use.md",
+   "budget_words": 0,
+   "drop_entirely": true,
+   "priorities": "DROP. A fourth front door. Its short route skips Chapter 0, its persona rows misroute readers (parents to Chapters 8 and 14), and routing has to be rebuilt after v0.12 settles the structure. Its only inbound pointer, Introduction b0157, is cut with it."
+  },
+  {
+   "file": "00-chapter0.md",
+   "budget_words": 2940,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2937 words): b0001 b0005 b0006 b0100 b0008 b0009 b0010 b0013 b0014 b0015 b0016 b0017 b0018 b0019 b0020 b0021 b0024 b0025 b0026 b0027 b0028 b0029 b0030 b0031 b0032 b0033 b0035 b0036 b0037 b0038 b0039 b0040 b0041 b0043 b0044 b0045 b0046 b0047 b0048 b0050 b0051 b0052 b0053 b0054 b0055 b0056 b0057 b0058 b0090 b0060 b0062 b0063 b0066 b0067 b0069 b0071 b0072 b0073 b0074 b0075 b0076 b0077 b0108 b0101 b0105 b0107 b0086 b0096. The book's hook and the guns the Conclusion fires: protect the scene. Keep the cold open, the madrones, MADRONE notebook, the backstory from b0013 (b0015 stays because it is where Claypot and the job enter), the labs, Silvana, the dismissal (mirrors the Introduction's crackpot confession), the demonstration, the napkin and the telescope, the toast through 'Were', the kid who did the listing videos and the list of precarious creatives (b0063), the hollow Congratulations, the 1:40 a.m. close with the working title (b0074 b0075 b0076; the Conclusion's b0008 pays it off), and P-02 compressed to hook, rule and the boring-test practice (not in Appendix G). CUT FIRST: figures and captions b0002 b0098 (spoils the grandmother's line) b0109 b0110, the epigraph b0099, the narrator intrusion b0012, the Transformer lecture b0089 (Ch1 owns the 2017 paper), b0042, the narration that explains the toast after it lands (b0061 b0091 b0065), the generational-cycles detour b0070, P-02's letter sourcing b0102 b0104 and mechanism b0106. Flags for CT: b0039 is a broken sentence; a 2022-era text chatbot replacing a listing-video producer within seven days strains plausibility."
+  },
+  {
+   "file": "part1-divider.md",
+   "budget_words": 62,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (62 words): b0001 b0004. Keep the heading and b0004 for its line about keeping dinner in view. Cut the pixel art b0002."
+  },
+  {
+   "file": "03-chapter1.md",
+   "budget_words": 2650,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2647 words): b0001 b0008 b0009 b0010 b0011 b0012 b0013 b0014 b0015 b0016 b0021 b0110 b0103 b0104 b0105 b0112 b0113 b0114 b0117 b0115 b0118 b0121 b0122 b0123 b0136 b0137 b0130 b0138 b0173 b0131 b0132 b0124 b0125 b0102 b0140 b0141 b0142 b0143 b0144 b0145 b0146 b0151 b0153 b0111 b0154 b0155 b0158 b0174 b0160 b0161 b0162 b0119 b0164 b0165 b0054 b0166 b0167 b0171 b0172 b0060 b0126. The newcomer's definition chapter; it gets priority. Keep the Monday scene (Devendra's denial plants Ch14 and Ch18; the heat shutdown plants Ch5), Danaylov's open slot (b0104, which b0130 and the heading b0137 need), the lineage cut to Good, Vinge and Kurzweil, the schools in prose without the table, doors not dates, the definition and CT's 2024 Einstein picture (b0173), the three consequences, the four questions (the core's only AGI definition), the 2017 paper in two blocks (b0146 b0151, which keep the Part I divider's promise), the forecast with its falsifiers and one survey (b0155 b0158), who gets the savings, the first question to take outside, P-03 compressed, and its practice b0126 (doors and the asymmetric bet are not in Appendix G). CUT FIRST: figures, captions and the epigraph (b0002 b0127 b0133 b0134 b0064 b0065 b0004), the bullets b0005 b0097, the narrator's heat explanation b0017 b0099 b0100 b0101 (spends Ch5's payoff early), b0023, the rest of the roll call b0106 b0107 b0108 b0109 b0128, the schools table b0135 b0120, b0129, b0139, the benchmark section b0147 b0148 b0149 b0150, the neuron tangent b0152, the survey tables and chart b0156 b0157 b0175 b0176, b0159 (one hedge too many), b0163, b0168 b0169 b0170. Seam for CT: b0155 ends on a colon that introduced the cut table."
+  },
+  {
+   "file": "04-chapter2.md",
+   "budget_words": 2100,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2101 words): b0001 b0008 b0010 b0011 b0012 b0013 b0014 b0015 b0016 b0017 b0018 b0121 b0020 b0021 b0022 b0023 b0024 b0025 b0122 b0123 b0027 b0028 b0097 b0098 b0032 b0099 b0101 b0102 b0042 b0105 b0125 b0127 b0103 b0110 b0112 b0106 b0118 b0129 b0130 b0131 b0119 b0115 b0094 b0116 b0132 b0133 b0134 b0088 b0136 b0139 b0140. Keep the all-hands scene ending on the knife line b0028, stages as scenarios, Stage 1 with its food test, Stage 2 with read-the-rule, Stage 3's mandate line, Stage 4 whole (the hinge the food proposal hangs on), Stage 5 (Ch19 b0061 refers back to it), and P-04's story, mechanism and rule (b0125 points to it). CUT FIRST: b0124 (the kitchen-table explanation after the knife line), b0009, figures and the repeated Good epigraph (b0002 b0003 b0120), the bullets b0005 b0096, b0031, b0100, b0104 (orphaned opening), the June 2026 receipt b0126 b0141 b0142 b0143 (mislabeled as Stage 3, and it will date), b0128 b0144 b0145, b0111, b0135, b0137 b0138, the practice b0092 b0117. Flags for CT: the H1 b0001 carries a stage-range dash (so do the Ch3 and Ch4 titles); b0133 ends on an orphaned clause."
+  },
+  {
+   "file": "05-chapter3.md",
+   "budget_words": 1220,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1221 words): b0001 b0008 b0010 b0011 b0084 b0013 b0014 b0015 b0016 b0017 b0018 b0019 b0020 b0021 b0085 b0023 b0024 b0025 b0061 b0086 b0064 b0062 b0063 b0065 b0087 b0067 b0089. Keep the scene except b0009: the star thistle, compound interest on cognition, the whole 9:40 Sunday call (radio, pot, Manny's pressure switch, the Hollis sale, the mother's answer), b0085, the satellite and the notebook. These plant Ch12, Ch13 and the Conclusion's best payoffs. In the Foundations keep the ASI definition and the exodus through b0089 (man versus man). CUT FIRST: figures, captions and the epigraph (b0002 b0083 b0095 b0096 b0097), the bullets b0005 b0060, the reading route b0098 (it invites readers to skip setups the Conclusion pays off), b0009, b0027, b0088 (retracts the scenario), b0068, all of Stage 7 (b0057 b0079 b0080 b0081 b0082 b0072), b0058 b0073 b0074 (Ch4's notebook says it in story form), all of P-05 (b0094 b0090 b0091 b0092 b0093 b0075 b0076 b0055 b0078). Flag: the H1 carries a dash."
+  },
+  {
+   "file": "06-chapter4.md",
+   "budget_words": 1210,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1210 words): b0001 b0008 b0010 b0012 b0013 b0014 b0015 b0016 b0017 b0018 b0019 b0020 b0021 b0022 b0059 b0060 b0061 b0064 b0065 b0084 b0085 b0089 b0090 b0053 b0091. Keep the LADDER.xlsx scene except b0009 and b0011, one Stage 8 section (b0059 b0060 b0061 b0064 b0065, for its closing line about godlike machines and hungry people), and P-06 compressed to hook, mechanism and rule with its undemotable-list practice (b0053 b0091, not in Appendix G). CUT FIRST: figures, captions and the epigraph (b0002 b0074 b0075 b0092 b0093), the bullets b0005 b0056, b0009, b0011 (its eighty-dollar bill contradicts Ch5), b0024, b0057 b0058, b0062 (calls back to Ch2 images that do not exist), all of Stage 9 (b0063 b0066 b0067 b0068), the simulation trilemma with its LaTeX (b0080 b0069 b0076 b0073 b0077 b0078 b0081 b0079 b0070 b0071 b0072), b0055 b0082 b0083 (they explain the scene), b0086 b0087 b0088. Flag: the H1 carries a dash."
+  },
+  {
+   "file": "07-chapter5.md",
+   "budget_words": 2200,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2203 words): b0001 b0008 b0009 b0124 b0011 b0125 b0126 b0127 b0128 b0129 b0130 b0017 b0103 b0104 b0105 b0106 b0111 b0109 b0110 b0112 b0167 b0168 b0169 b0171 b0170 b0099 b0113 b0114 b0107 b0131 b0132 b0138 b0144 b0154 b0155 b0156 b0157 b0158 b0134 b0115 b0160 b0161 b0162. Keep the $211.46 scene whole (the plug-in meter plants Ch15; the Fisher plants Ch13 and the Conclusion), the rules of the board, the meat engine without the efficiency table, the machine's-appetite aside, separate ledgers, free at the door paid like a library, a two-block cyberdeck sliver (b0138 b0144) so b0127's line about the kids lands on a name, the energy audit (b0158 keeps the low entry bar), and P-07 (Watt, the 1918 peak, mechanism, rule). CUT FIRST: figures, captions and the epigraph (b0002 b0122 b0123 b0172 b0173 b0174 b0175 b0165 b0166), the bullets b0005 b0096, b0019, the template opener b0100 b0101 b0102, b0108 with the efficiency table and caveats (b0137 b0121 b0176), the kids-these-days history (b0139 b0120 b0117 b0118 b0164 b0140 b0141 b0142; repeats P-01 and contradicts Ch7 on Sousa), b0133, the anatomy b0143 b0145 b0119, b0146 (points to the cut Appendix E), the Tiffany Doctrine b0147 b0148 b0149 b0150 b0151 b0152 b0153, b0159, the practice b0091 b0163 (Appendix G Month 2 carries the audit). Flag for CT: the intergenerational alliance in b0151 is worth rebuilding as one short passage in his own voice."
+  },
+  {
+   "file": "part2-divider.md",
+   "budget_words": 57,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (57 words): b0001 b0008. Keep b0001 and b0008. Cut the pixel art b0002 and the cast portrait b0009 b0010 (it spoils Marta's reveal and shows Priya instead of Curtis)."
+  },
+  {
+   "file": "08-chapter6.md",
+   "budget_words": 2270,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2267 words): b0056 b0008 b0086 b0010 b0011 b0012 b0013 b0014 b0087 b0088 b0017 b0018 b0019 b0020 b0089 b0022 b0023 b0024 b0025 b0090 b0113 b0092 b0093 b0097 b0095 b0096 b0098 b0099 b0103 b0100 b0101 b0102 b0124 b0125 b0126 b0128 b0130 b0045 b0104 b0079 b0110 b0081 b0105 b0084 b0085 b0075 b0111 b0076 b0106 b0108 b0109 b0077. Keep the drive-north scene whole (off-boarded by a light, the check-engine light, Marta at the plasma table, Elijah going off again, the load-bearing wall, the 2009 plant, the broom). Keep the done-deal answer and the gap, the two kinds of fear (the preservation solution in b0100 b0101 b0102 answers them by name, so they stay even though Ch7 has its own battle lines), the preservation solution, whose robots with Wiener and the Rung 5 pointer, the ladder for readers under twenty-five (b0045 b0104 b0079), the security ladder b0110 b0081, a workshop is a beginning with its this-week action b0075, and P-08 without the Catalhoyuk paragraph. CUT FIRST: figure, caption and the epigraph (b0002 b0003 b0112 b0053 b0054), the bullets b0005 b0057, b0027, b0091, b0094 (a fourth forecast restatement), the conceptual figures b0118 b0119 b0122 b0123 b0120 b0121, the numbers aside b0114 b0115 b0116 b0117, b0080, b0127, b0129, b0082 b0083 (memo register, and b0082 strains the no-redistribution promise), b0107, the practice b0051 b0078."
+  },
+  {
+   "file": "09-chapter7.md",
+   "budget_words": 3000,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2995 words): b0086 b0088 b0009 b0010 b0011 b0143 b0013 b0144 b0015 b0016 b0017 b0145 b0146 b0147 b0148 b0149 b0150 b0151 b0152 b0153 b0154 b0155 b0156 b0157 b0158 b0115 b0116 b0117 b0118 b0119 b0120 b0121 b0122 b0123 b0159 b0125 b0126 b0161 b0127 b0170 b0128 b0171 b0131 b0132 b0135 b0177 b0164 b0165 b0107 b0109 b0178 b0110 b0167 b0138 b0168 b0112 b0064 b0201 b0187 b0202 b0194 b0195 b0197 b0198 b0199 b0200. Keep both scenes whole: the potluck (Curtis's fence, the Claypot word, Denny's ladder and his question, Marta's Luddites ending on the floor, the beans, the names page) and the Rosa ride-along (the wrong food, no work day owed, doesn't change your dinner, funded through next month), which launches the route-funding arc to Ch18, Ch19 and the Conclusion. In the Foundations keep where the person stands, the battle lines with the table AND the reflexes-not-people note b0128 (the table never survives without it), what a job does (Jahoda in prose) and scarcity tunnel vision b0135 (Ch8 cites it), the egalitarian pivot with b0164 (it defuses the title), the cook still eats without b0166, a voice before the decision, and P-10 told once, ending on the Music Performance Trust Fund invoice. CUT FIRST: figures, captions and the epigraph (b0002 b0003 b0203 b0204 b0169 b0188 b0189 b0192 b0193), the bullets b0005 b0087, b0022, the payroll duplicate b0162 b0129 b0130, the Jahoda table b0172 and b0133 b0134, b0160 b0136 b0137, the street-backlash section b0173 b0139 b0174 b0181 b0140, the letterhead section b0175 b0141 b0142 b0176 b0185 b0104 b0105, b0163 b0106, b0166 (the Introduction owns the line cook), b0111, all of P-09 (b0028 b0049 b0113 b0179 b0180 b0186 b0182 b0183 b0055 b0108; Marta already told it and Appendix D keeps its rule), and from P-10 b0184 b0190 b0191 b0196 and the practice b0084 b0114."
+  },
+  {
+   "file": "10-chapter8.md",
+   "budget_words": 2520,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2524 words): b0001 b0221 b0009 b0010 b0011 b0012 b0013 b0014 b0222 b0223 b0225 b0226 b0227 b0228 b0229 b0230 b0231 b0232 b0233 b0234 b0235 b0237 b0239 b0238 b0240 b0241 b0257 b0215 b0260 b0216 b0210 b0217 b0261 b0218 b0245 b0264 b0265 b0267 b0248 b0270 b0208 b0209 b0271 b0272 b0275 b0276 b0283 b0284 b0180 b0286 b0287 b0289 b0290 b0291. Keep the spiral and Marta's Gary and Sal story (minus b0016 and b0224), Soup's on at noon, Sal's rule in the notebook. Keep mindset as rules, the second machine, the cognitive firewall Protocols 1 to 3 with the bridge b0248, relational autonomy, the rule that a circle never withholds food and the inconvenient-day test, Start with three, and P-11 with Murphree's correction. CUT FIRST: the figure and epigraph (b0002 b0003 b0293), the bullets b0005 b0220, b0023, b0016, b0224, the generated Gary portrait b0249 b0250 (its caption reverses the scene), b0236, every conceptual figure and caption (b0251 b0252 b0253 b0254 b0258 b0259 b0262 b0263 b0294 b0295 b0279 b0280), the self-disclaiming budget and slot-machine sections (b0242 b0191 b0243 b0211 b0212 b0255 b0213 b0256 b0214), the batch table b0266, Protocols 4 and 5 together (b0268 b0246 b0269 b0219 b0247; keeping 5 without 4 leaves a numbering gap, and b0219 counts four protocols), Axelrod b0273 b0274, mesh-not-star b0277 b0278 b0281 b0282, b0244 b0285, b0288, the practice b0185 b0292 (Appendix G Month 1 carries the phone in the drawer)."
+  },
+  {
+   "file": "11-chapter9.md",
+   "budget_words": 2110,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2106 words): b0001 b0008 b0134 b0010 b0011 b0012 b0177 b0014 b0015 b0178 b0017 b0018 b0179 b0180 b0181 b0182 b0020 b0021 b0184 b0185 b0186 b0188 b0162 b0140 b0163 b0164 b0165 b0187 b0141 b0189 b0174 b0175 b0209 b0210 b0194 b0190 b0192 b0159 b0193. Keep the controller scene minus b0183: the renders, Marta's 11, 1, 0 and ugly as a maintenance feature, the yellow box and the repair card, Reuben's entrance with the yellow tab, Priya's line about Reuben, the corkboard of repairs, Curtis's two dollars of hose. Keep the strategy b0188, the definitions list b0162, region not city at Manhattan Project scale, the controller isn't dinner, where the saving goes (b0174 b0175), where to start this season (b0209 b0210), and P-12 without the shipwreck paragraph. CUT FIRST: figures, captions and the epigraph (b0002 b0003 b0212 b0129 b0130 b0131 b0132 b0195 b0196 b0197 b0198 b0213 b0214), the bullets b0005 b0176, b0026, b0183, b0166, the nitrogen chemistry and equations (b0151 b0142 b0143 b0199 b0145 b0215 b0216 b0146 b0200 b0147; Ch15 keeps a short soil passage), the garden robot (b0171 b0148 b0201 b0202 b0149), the greenhouse brain with code and PID (b0203 b0150 b0206 b0152 b0207 b0154 b0208 b0167 b0204 b0205), the worked example told four times (b0144 b0168 b0169 b0170 b0172 b0153 b0217 b0218 b0219 b0173), b0158, b0191, the practice b0121 b0211 (Appendix G Month 2 carries map your tin). Flag for CT: the Raspberry Pi redesign fails Marta's own single-supplier test."
+  },
+  {
+   "file": "part3-divider.md",
+   "budget_words": 65,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (65 words): b0001 b0007. Keep b0001 and b0007 (follow one person's need through people, tools, land and agreements; Ch11 b0131 b0199 apply it). Cut b0002, b0008 (a third, vaguer forecast that contradicts b0007) and b0009."
+  },
+  {
+   "file": "12-chapter10.md",
+   "budget_words": 1870,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1871 words): b0001 b0141 b0142 b0010 b0011 b0012 b0013 b0143 b0144 b0145 b0146 b0018 b0019 b0020 b0147 b0148 b0024 b0150 b0151 b0126 b0125 b0165 b0127 b0128 b0155 b0132 b0137 b0161 b0169 b0157 b0158 b0159 b0133 b0134 b0172 b0175 b0160 b0178 b0179 b0181 b0182. Keep the channel scene whole (the optimized script, Denny's one take, forty-one views, Sal's rule, the channel becomes Denny's, the repair-card correction). Keep the thesis b0150 with its guard b0151 (nobody earns dinner), share a result people can judge (b0126 b0125, the one home for sharing conditions with results), the slop-ocalypse and model collapse in plain words (b0155 b0132 b0137 b0161, the one home for real experience as the scarce input), algorithmic judo with its three rules and b0175, and P-13 without b0180. CUT FIRST: figures, captions and the epigraph (b0002 b0139 b0140 b0167 b0168 b0170 b0171), the bullets b0005 b0118, b0152, Steps 1 to 3 (b0149 b0153 b0135 b0122 b0154 b0162 b0163 b0123 b0164; the cleanup step points to Ch17 material that is cut), b0124 (explains the scene), b0136 b0166 b0131 (the schematic integral), b0156, b0173 b0174, the handoff b0130 b0176 b0177, b0180, the practice b0116 b0183 (Appendix G Month 1 carries the tally). Flag for CT: b0150 says a habit divides survivors from the flattened, which argues against Ch8's Gary and Sal; reconcile in v0.12."
+  },
+  {
+   "file": "13-chapter11.md",
+   "budget_words": 2200,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2198 words): b0098 b0008 b0143 b0144 b0145 b0146 b0147 b0013 b0014 b0015 b0148 b0017 b0018 b0149 b0155 b0150 b0151 b0153 b0154 b0156 b0158 b0159 b0160 b0161 b0163 b0164 b0165 b0169 b0173 b0175 b0188 b0176 b0133 b0198 b0184 b0178 b0131 b0199 b0200. Keep the Crucible scene: diary to the company store, each member's need and Curtis's refusal, Silvana's descendant booting (pays off Ch0), five good weeks and the name, the breach (b0014 plants Marta's Tuesday physical therapy for Ch18), the subscriber, the dinner bell, Marta's press line and the hearth, Priya's bad Friday, Denny's honest report (Ch16 ships it), the new rules b0154 (Ch17 amends them). Keep useful help within reach (b0158 b0159 b0160), free to eat paid for somewhere (b0163 b0164 b0165; the Introduction's b0107 points here), ownership because access can be withheld, local compute you own (b0176 b0133), the boundary rule b0184, and one request all the way through. CUT FIRST: photos, captions and the epigraph (b0002 b0099 b0187 b0096 b0097 b0207 b0208 b0209 b0210), the bullets b0005 b0100, b0025, b0152, b0157 (a coda that states the moral), b0132, b0162 (points to a Ch7 line cook the cut removes), the British Restaurants Hansard (b0186 b0179 b0180 b0181 b0182), the objections FAQ (b0177 b0166 b0167 b0168 b0170 b0171 b0172; Appendix C b0049 is their one home), the memory and heat math with all LaTeX and figures (b0189 b0134 b0190 b0135 b0211 b0212 b0136 b0191 b0137 b0138 b0192 b0139 b0193 b0140 b0194 b0141 b0195 b0142 b0196 b0197), b0128, b0185, the enlarge-a-life section b0174 b0129 b0130 (duplicates Ch10 b0151), all of P-14 (b0031 b0183 b0201 b0202 b0203 b0204 b0205 b0094 b0206)."
+  },
+  {
+   "file": "14-chapter12.md",
+   "budget_words": 2210,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2206 words): b0001 b0008 b0113 b0148 b0149 b0150 b0013 b0151 b0152 b0153 b0015 b0154 b0017 b0018 b0019 b0155 b0156 b0157 b0158 b0161 b0159 b0160 b0164 b0162 b0163 b0165 b0119 b0141 b0142 b0121 b0125 b0128 b0129 b0130 b0133 b0171 b0134 b0135 b0136 b0137. Keep the land scene whole (OWNER/OCCUPANT, Irene and Dale, eleven LLCs, the Hollis link that pays off Ch3, the dashboard, Reuben's people problem, the trust folders, Denny's warehouse line, Every month, enclosure in reverse paying off Ch2, Walt's tractor for sixty dollars, Doreen's stamp, PARCELS HELD IN TRUST: 1). Keep CT's core thesis note b0161, b0159 b0160 b0164 (nobody has to own land to eat), New Communities as the honest counterweight (b0162 b0163 b0165), Grandma's request in plain form (b0119 b0141 b0142 b0121 b0125 b0128 b0129), count the result at the door (b0130 b0133), and Right now (CT's own register). CUT FIRST: the Gone with the Wind epigraph b0147, figure and caption b0002 b0146, the bullets b0005 b0112, b0024, the USDA and agreement figures (b0181 b0182 b0183 b0184), the numbers aside b0176 b0177 b0178 b0179, b0167 b0166 b0180, b0140, b0122 (the lone prepper, Ch8 owns it), b0123 (Ch13 defines the shouse), the surplus arithmetic b0143 b0168 b0144 b0169 b0170, b0127, b0126 b0131 b0132, b0145, all of P-15 (b0028 b0105 b0138 b0172 b0173 b0174 b0175 b0110 b0139; its rule is the Sacramento outfit's playbook, and Appendix D keeps it). Seam for CT: b0165 opens on a phrase that pointed at the cut b0167."
+  },
+  {
+   "file": "15-chapter13.md",
+   "budget_words": 1960,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1958 words): b0144 b0147 b0148 b0010 b0011 b0149 b0150 b0151 b0152 b0016 b0120 b0018 b0019 b0020 b0153 b0168 b0157 b0164 b0139 b0169 b0159 b0160 b0140 b0161 b0138 b0178 b0179 b0180. Keep the build scene whole: the piers, the vise, Elijah's lane, two coffins becoming one room, the Fisher's flue (pays off Ch5), the first fire, the photo and the mother's call (pays off Ch3), ROOFS: 1. Keep the shouse defined in CT's own words (b0164, closest to his original voice), start with the approved use (b0139), own the dirt then build (b0157 b0158), the double-wide and never cutting a load-bearing member before something else carries it (b0159 b0160 b0140), and P-16 without b0177. CUT FIRST: figures, captions and the epigraph (b0002 b0145 b0182 b0115 b0116 b0170 b0171 b0174 b0175), the bullets b0005 b0146 (they spoil the vise), b0023, a door you can close (b0154 b0155 b0156), b0125, the tin-can section with Fourier's law (b0172 b0129 b0173 b0130 b0132), universal design b0176 b0133, the sketch section b0124 b0141 b0142 (cites a budget no longer in the text), Red Vienna (b0162 b0163 b0165 b0166 b0167 b0183), respect the skill b0128 b0135, b0131 b0143 b0137, b0177, the practice b0113 b0181. Flag for CT: b0157 says half and half; b0164 says seventy-thirty."
+  },
+  {
+   "file": "16-chapter14.md",
+   "budget_words": 2010,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2007 words): b0001 b0141 b0009 b0142 b0011 b0012 b0143 b0144 b0145 b0146 b0016 b0017 b0147 b0148 b0149 b0107 b0153 b0108 b0126 b0109 b0150 b0154 b0110 b0113 b0155 b0157 b0158 b0134 b0132 b0133 b0156 b0160 b0136 b0093 b0129 b0171 b0172. Keep Frank's story whole (the bell, nine months of the ledger, the laminated notice, Devendra's email and Elijah declining to be vindicated, the two-mile visit and Frank's Hemingway line, fix it forward, the tool library, the chart beside the coupon). Keep the just-in-time trap (b0107 b0153 b0108 b0126 b0109), whose books show the gain (b0150 b0154), the short loop (b0110 b0113 b0155), catch the food with the France and SB 1383 precedent (b0157 b0158, the one home for food-recovery law), the municipal mesh in three blocks (b0134 b0132 b0133; Ch17 b0118 refers back to it), give people time to choose, and a compressed P-18 (b0093 b0129 b0171 b0172). CUT FIRST: figures, captions and the Hemingway epigraph (Frank says the line in b0016) (b0002 b0003 b0140 b0100 b0101 b0102 b0103 b0163 b0164 b0179 b0180 b0165 b0166), the bullets b0005 b0105 (they spoil Frank's line), b0021 b0151 b0152, b0112 (points at the precedents), b0116, b0114 b0117 (the Introduction keeps the food-waste figure), the numbers aside b0174 b0175 b0176 b0178 b0177, b0131 b0135, build the loop b0167 b0168 b0159, all of P-17 (b0081 b0169 b0137 b0124 b0125 b0138 b0161 b0162 b0139 b0090 b0170; its countdown-clock rule casts Frank as Blockbuster), and P-18's b0130 and practice b0098 b0173 (Appendix G Month 3 carries the inventory). Seam: P-18's b0129 and b0171 name Kodak, whose story is cut."
+  },
+  {
+   "file": "17-chapter15.md",
+   "budget_words": 1680,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1679 words): b0001 b0113 b0114 b0084 b0115 b0011 b0086 b0013 b0116 b0117 b0016 b0017 b0088 b0089 b0019 b0121 b0097 b0109 b0098 b0100 b0101 b0102 b0141 b0128 b0131 b0129 b0130 b0111 b0106 b0107 b0143 b0144. Keep the pit scene: the hardpan and the string line, the trial, the gentle wrong conclusion, the shovel, the pits, where the probe lives, b0116 (the Conclusion's b0126 lists the crust called a planet, which only this block sets up), the lesson under the lesson (pays off Ch5's meter), the eleven-dollar fix, pencil not proof, the monthly pit, the notebook line. Keep you can't eat code (b0121), soil is alive in brief (b0097 b0109 b0098 b0100), know the ground's history (b0101 b0102), touch the dirt (b0141 b0128), and P-19 whole minus its practice. CUT FIRST: figures, captions and the epigraph (Priya quotes it in b0117) (b0002 b0003 b0004 b0077 b0078 b0135 b0136 b0146 b0147 b0148 b0132 b0133), the bullets b0005 b0112, b0021, b0118 b0120 (the farmland meme), the land-trust and tax machinery (b0119 b0122 b0123 b0108 b0094 b0124 b0125 b0134 b0126; Ch12 and Ch19 carry the trust), b0099 b0137, b0103, pool the work b0138 b0110 b0139, b0140 b0127 (calls Ch9's illustration a trial), b0142, the practice b0075 b0145 (Appendix G Month 5). Flag for CT: the irrigation caveat patched into b0115."
+  },
+  {
+   "file": "18-chapter16.md",
+   "budget_words": 1420,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1421 words): b0001 b0008 b0118 b0010 b0119 b0120 b0121 b0014 b0087 b0016 b0122 b0018 b0089 b0124 b0125 b0127 b0128 b0094 b0095 b0138 b0101 b0104 b0115 b0137 b0134 b0135 b0116 b0107. Keep the dawn inbox and the decision: the first-fire video, the frost and the graph, eleven towns in nine states (the Conclusion multiplies them), Curtis's business, Frank's answer (b0016, pays off Ch14), the press in two sentences, Marta's ship-the-blueprints (pays off Ch6), the leak postmortem beside the successes with consent (b0089), the Ohio machinist and Denny reading him first. Keep users as the crop (b0127 b0128), consent before content (b0094 b0095), own your press as a short how-to (b0138 b0101 b0104 b0115), and P-20's hook, mechanism and rule. CUT FIRST: figure, caption and the epigraph (b0002 b0117 b0143 b0139 b0140), the bullets b0005 b0085 (borrowed leverage framing), b0023, the release-prep compliance b0088, the status-report dawn b0123, b0098 b0129 (a near-verbatim repeat of Ch10), b0126 b0130 b0099 (b0099 calls the success fictional), b0096, b0110 (Ch10 b0175 owns it), b0103, creative immunity b0141 b0132 b0133, who gets to speak b0131 b0111 b0112 b0113, the handoff b0102 b0109, P-20's b0136, the practice b0082 b0142 (Appendix G Month 9)."
+  },
+  {
+   "file": "19-chapter17.md",
+   "budget_words": 1920,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1915 words): b0001 b0151 b0135 b0136 b0010 b0011 b0098 b0099 b0100 b0101 b0102 b0137 b0138 b0108 b0143 b0144 b0125 b0113 b0114 b0139 b0140 b0117 b0115 b0127 b0128 b0158 b0118 b0150 b0168 b0169 b0170 b0171 b0088 b0089 b0174 b0175. Keep the storm whole (the mesh holds, node 7 is his own fault, Curtis's boots, the ridge, the system routing around its maker, halving, the known-good image, Marta's gods with cold fingers, soup and the amended checklist) and the epigraph b0151, because Marta answers it. Keep tools you own or it's a leash (b0125 b0113 b0114), the worthwhile assignment in two blocks (b0139 b0140), one real maker (b0117 b0115 b0127) and same hardware, opposite pitch (b0128, the one home of the tools-don't-choose idea), the mesh node in brief with the public-key warning (b0158 b0118 b0150), build your first node (b0168 b0169 b0170 b0171), and P-21's hook, mechanism and rule. CUT FIRST: figures and captions (b0002 b0133 b0152 b0153 b0180 b0181 b0154 b0155 b0156 b0157 b0159 b0160 b0162 b0163 b0165 b0166 b0182 b0183 b0184), the bullets b0005 b0134, b0022, b0141 b0142, SECTOR 07 and its hedges (b0126 b0185), b0124 b0119, DC power (b0161 b0145 b0178 b0179), the fab lab (b0164 b0146 b0147 b0167), food, cleanup and health (b0107 b0148 b0111 b0149 b0122 b0123 b0129 b0130 b0131 b0132), P-21's history b0172 b0173, the practice b0093 b0176 (Appendix G Month 8 carries the catalog)."
+  },
+  {
+   "file": "20-chapter18.md",
+   "budget_words": 2340,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2343 words): b0001 b0130 b0131 b0010 b0132 b0012 b0133 b0134 b0135 b0069 b0070 b0071 b0136 b0140 b0141 b0143 b0144 b0073 b0146 b0147 b0149 b0150 b0151 b0152 b0148 b0153 b0154 b0156 b0098 b0171 b0166 b0167 b0168 b0128 b0159 b0103 b0104 b0105 b0160 b0108 b0111 b0161 b0113 b0114 b0115 b0121 b0119 b0125 b0127 b0169 b0178 b0181 b0182 b0183. Keep the premortem meeting (the co-op is dead, the model, Marta on what kills these things, burnout, divorce, founder-dependence, Marta's shoulder and Tyler paying off Ch11, the open box), the route thread in four blocks (b0136 b0140 b0141 b0143: funded through June in ink, Rosa's note; Ch19 pays them off), the names column b0144, and Devendra's arrival with the broom handed on. Keep the objections named (b0156 b0098), the Adequate Level of Care (the yardstick Ch19 b0014 names), build the machine and the promise together (b0159 b0103 b0104 b0105), the offer people can vote on in brief (b0160 b0108 b0111), keeping people whole (b0161 b0113 b0114 b0115), grow the promise at the speed you can keep it (b0121 b0119 b0125 b0127), and P-22 without b0179 b0180. CUT FIRST: figures, captions and the epigraph (b0002 b0003 b0129 b0186 b0187 b0172 b0173 b0188 b0189), the bullets b0005 b0067, b0021, b0137 b0138 b0139 b0142, b0145 (it uses up the Conclusion's last line early), what could stall it (b0170 b0164 b0102 b0165), going right (b0155 b0100 b0157 b0158), b0106, b0107 b0109 b0110 b0112, b0116, the failed-meal worksheet (b0162 b0117 b0079 b0163 b0118 b0120), b0122 b0123 b0124, who this is for (b0174 b0101 b0175 b0176 b0177), b0179 b0180, the practice b0061 b0184 (Appendix G Month 2 carries the household Y2K)."
+  },
+  {
+   "file": "27-chapter19.md",
+   "budget_words": 2770,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (2767 words): b0001 b0074 b0075 b0076 b0077 b0078 b0079 b0080 b0081 b0082 b0083 b0084 b0085 b0086 b0087 b0088 b0089 b0090 b0091 b0092 b0094 b0095 b0096 b0097 b0098 b0100 b0009 b0010 b0011 b0013 b0014 b0015 b0016 b0020 b0021 b0025 b0026 b0027 b0028 b0030 b0031 b0035 b0036 b0037 b0038 b0041 b0042 b0046 b0047 b0051 b0052 b0055 b0056 b0057 b0058 b0059 b0060 b0061 b0062 b0103 b0104 b0105 b0107 b0108 b0113 b0114 b0063 b0064 b0066 b0067 b0069 b0070 b0071. This is the plan the Introduction promises. Keep the hearing scene whole minus b0093 (fourteen slides against three minutes, Reuben's one page, the almonds, the red light, Rosa's testimony, the analyst, Irene's 1939 co-op, four to one through December, Rosa's one-word edit, the due date in ink). Keep why I wrote this chapter (b0095 b0096 b0097 b0098 b0100, CT's rawest voice), the plan in one sentence (b0009 b0010 b0011 b0013 b0014), every rung's heading and What line, the two proofs that stand (b0027 California school meals; b0037 b0038 the rural electric co-ops), b0028 (keeps the Appendix A pointer live), Rung 9 whole (b0056 b0057 b0058), what would stop it (b0059 b0060 b0061 b0062), get involved (b0103 b0104 b0105 b0107 b0108 b0113 b0114), what you can do this month by role (b0063 b0064), and P-23's story, mechanism and rule. CUT FIRST: the epigraph, figures and captions (b0004 b0002 b0003 b0101 b0102), the bullets b0005 b0006, b0008, b0093 (explains the scene and claims a first), b0012 (reruns the Introduction), the Proof paragraphs that disown themselves or belong elsewhere (b0017 b0022 b0032 b0043 b0048 b0053), every How line (b0019 b0024 b0029 b0034 b0040 b0045 b0050 b0054), the Who lines except b0028 (b0018 b0023 b0033 b0039 b0044 b0049; the role list b0064 does their work), b0106 b0109, Tucson b0110 b0111 b0112, b0068, the practice b0072 b0073 (Appendix G Months 7 and 11)."
+  },
+  {
+   "file": "21-conclusion.md",
+   "budget_words": 1590,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1591 words): b0086 b0088 b0089 b0090 b0092 b0093 b0094 b0096 b0108 b0099 b0100 b0103 b0105 b0107 b0119 b0111 b0115 b0078 b0079 b0081 b0109 b0113 b0008 b0055 b0056 b0114 b0012 b0125 b0082 b0126 b0083 b0084 b0015 b0085 b0060 b0018 b0019. Keep a future worth wanting (b0088 b0089 b0090 b0092), hear the need inside the fear (b0093 b0094 b0096 b0108), success redefined (b0099 b0100 b0103), the one question (b0105 b0107), and the moral mandate (b0119 b0111 b0115 b0078 b0079 b0081 b0109), then straight into Back to Bear Flag, kept whole (b0113 b0008 b0055 b0056 b0114 b0012 b0125 b0082 b0126 b0083 b0084 b0015 b0085 b0060 b0018 b0019). CUT FIRST: figures, captions and the epigraph (b0002 b0087 b0127 b0049 b0050), the bullets b0106 b0128, b0091, solarpunk and Le Guin (b0130 b0135 b0131 b0132 b0133 b0134), b0095 b0097 b0098, b0101 b0102, b0104 (the fifth forecast hedge), b0129, b0112 (its line about regulating everyone else out contradicts Ch19), all of P-24 (b0007 b0118 b0120 b0121 b0122 b0116 b0117 b0123 b0124 b0046 b0080; a third ending between the mandate and the bookend; Appendix D keeps its rule). Flags for CT: b0115's last fence puts the barrier inside the reader, against the rules-are-the-fence thesis; b0111's scare quotes cut against b0108."
+  },
+  {
+   "file": "22-appendix-a.md",
+   "budget_words": 340,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (341 words): b0050 b0052 b0053 b0054 b0055 b0056 b0057 b0058. Keep the proposal and its scope (b0050 b0052 b0053 b0054), the nine questions (b0055 b0056, the one working organizer tool; Ch19 b0028 points here), and the one-page trial (b0057 b0058). CUT FIRST: the disclaimers and civics b0051 b0062 b0060 b0061."
+  },
+  {
+   "file": "24-appendix-c.md",
+   "budget_words": 670,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (674 words): b0001 b0036 b0035 b0027 b0034 b0042 b0043 b0045 b0047 b0048 b0049. The ten-minute hand-off, and the only compact home of all nine stages once the Stage 7 and Stage 9 Foundations are cut. Keep b0001 b0036, the proposal b0035 b0027, the nine stages b0034 b0042 b0043, the plan in nine lines b0045 b0047, and the objections b0048 b0049 (their one home now that Ch11's FAQ is cut). CUT FIRST: b0029 b0050 b0051 (free-to-eat said three times), b0031 b0033, the definition, schools and names (b0032 b0019 b0039 b0037 b0040 b0021 b0038; Ch1 owns them), b0028 b0018, the forecast b0030 b0041 (contradicts doors not dates), b0046, b0022 b0044 b0024. Seam: b0049 cites Chapter 11 for the jobs, WALL-E and no-robots answers, whose Ch11 sections are cut."
+  },
+  {
+   "file": "25-appendix-d.md",
+   "budget_words": 550,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (549 words): b0001 b0015 b0008 b0023. The Ledger's compressed form. Keep b0001 b0015 b0008 and all twenty-four rules b0023: the only place the seven cut precedents (P-01, P-05, P-09, P-14, P-15, P-17, P-24) survive, and the decoder for Appendix G's P-tags. CUT FIRST: the reading ritual b0016 b0017 b0018, the index table b0006 b0022 and the self-referential timeline b0028 b0029, the symptom index b0019 b0020 b0024 (it routes into stories now cut), the sourcing and blacklist b0025 b0026 b0027 (its only inbound pointer, Ch7 b0104, is cut)."
+  },
+  {
+   "file": "26-appendix-e.md",
+   "budget_words": 0,
+   "drop_entirely": true,
+   "priorities": "DROP. It duplicates Ch5 and Ch17, contradicts Ch5's anatomy, says twice that it is optional, and its 2026 press hooks and kit details date fast. Its inbound pointer Ch5 b0146 is cut. Seam: Appendix G Month 4 item 4 names it; that item's fallback (Tier 0, one reference you can open with the network off) still reads on its own."
+  },
+  {
+   "file": "28-appendix-f.md",
+   "budget_words": 0,
+   "drop_entirely": true,
+   "priorities": "DROP. Every entry restates a chapter or Appendix C, many technical entries define by caveat, and its chapter pointers would dangle. Regenerate the glossary from the v0.12 term set (start with Singularity, AGI, ASI, Adequate Level of Care, food baseline, the Entitled and the Ready, shouse, premortem)."
+  },
+  {
+   "file": "29-appendix-g.md",
+   "budget_words": 1250,
+   "drop_entirely": false,
+   "priorities": "KEEP these blocks (1251 words): b0001 b0002 b0003 b0004 b0005 b0006 b0007 b0008 b0009 b0010 b0011 b0012 b0013 b0014 b0015 b0016 b0017 b0018 b0019 b0020 b0021 b0022 b0023 b0024 b0025 b0026 b0027. Keep whole except the figure and caption b0028 b0029. It is the single sequenced answer to what to do on Monday and the one home for the precedents' practices; chapter practice lists are cut in its favor, except the three it lacks (P-02's boring test in Ch0, P-03's doors and asymmetric bet in Ch1, P-06's undemotable list in Ch4). b0002 stays because it explains the P-tags, which Appendix D's rules decode. The months are numbered, so all twelve stay."
+  },
+  {
+   "file": "30-appendix-h.md",
+   "budget_words": 0,
+   "drop_entirely": true,
+   "priorities": "DROP. Conventional back matter, and one question is pinned to a June 2026 news cycle. Restore the reading list (b0015) at publication for readers getting up to speed."
+  }
+ ],
+ "spine": [
+  {
+   "idea": "The robots have won the old deal: what you lose is having to sell your days to eat, and that loss is an opening (CT's April 2024 first line and its turn).",
+   "keep_in": "01-preface.md",
+   "blocks": [
+    "sts.preface.b0039",
+    "sts.preface.b0069"
+   ]
+  },
+  {
+   "idea": "What is happening: thought itself is now automated, cheaply and on home hardware; go around the pundits and use the tools yourself.",
+   "keep_in": "02-introduction.md",
+   "blocks": [
+    "sts.introduction.b0079",
+    "sts.introduction.b0138",
+    "sts.introduction.b0086"
+   ]
+  },
+  {
+   "idea": "Surviving the Singularity means keeping people fed, housed and cared for, with a say over who owns the tools; make the machines grow our food first.",
+   "keep_in": "02-introduction.md",
+   "blocks": [
+    "sts.introduction.b0163",
+    "sts.introduction.b0050",
+    "sts.introduction.b0103",
+    "sts.introduction.b0108"
+   ]
+  },
+  {
+   "idea": "The second ox: AI as a thinking draft animal people must train, feed and direct.",
+   "keep_in": "02-introduction.md",
+   "blocks": [
+    "sts.introduction.b0089",
+    "sts.introduction.b0090",
+    "sts.introduction.b0091"
+   ]
+  },
+  {
+   "idea": "Fired on a Tuesday, dinner already handled: the picture of it going right.",
+   "keep_in": "02-introduction.md",
+   "blocks": [
+    "sts.introduction.b0096",
+    "sts.introduction.b0133"
+   ]
+  },
+  {
+   "idea": "Listen to the fear under 'AI will take my job': productive capacity and human security can move apart, so carry the gain through to the person.",
+   "keep_in": "02-introduction.md",
+   "blocks": [
+    "sts.introduction.b0097",
+    "sts.introduction.b0087",
+    "sts.introduction.b0098",
+    "sts.introduction.b0100",
+    "sts.introduction.b0101",
+    "sts.introduction.b0102",
+    "sts.introduction.b0092"
+   ]
+  },
+  {
+   "idea": "We don't have to live like this: there is enough food, and scarcity is an enforced arrangement of rules people can change.",
+   "keep_in": "02-introduction.md",
+   "blocks": [
+    "sts.introduction.b0127",
+    "sts.introduction.b0128",
+    "sts.introduction.b0140",
+    "sts.introduction.b0141",
+    "sts.introduction.b0162",
+    "sts.introduction.b0146",
+    "sts.introduction.b0148",
+    "sts.introduction.b0149",
+    "sts.introduction.b0150"
+   ]
+  },
+  {
+   "idea": "Money optional, not abolished; markets stay above the floor.",
+   "keep_in": "02-introduction.md (thesis) and 27-chapter19.md (Rung 9)",
+   "blocks": [
+    "sts.introduction.b0147",
+    "sts.chapter19.b0056",
+    "sts.chapter19.b0057"
+   ]
+  },
+  {
+   "idea": "The design brief: if a robot can grow my food and build my house, why am I still renting my survival? Answered in the Conclusion.",
+   "keep_in": "02-introduction.md",
+   "blocks": [
+    "sts.introduction.b0109",
+    "sts.introduction.b0118",
+    "sts.introduction.b0110",
+    "sts.conclusion.b0115"
+   ]
+  },
+  {
+   "idea": "Free at the door is not free to provide: fund it together like a library, and start feeding people while the funding is argued.",
+   "keep_in": "07-chapter5.md",
+   "blocks": [
+    "sts.introduction.b0114",
+    "sts.chapter5.b0131",
+    "sts.chapter5.b0132",
+    "sts.chapter11.b0164",
+    "sts.chapter11.b0165"
+   ]
+  },
+  {
+   "idea": "The machine is unprecedented, the stampede is not: the Precedent Ledger, kept as chapter precedents and as twenty-four one-line rules.",
+   "keep_in": "02-introduction.md and 25-appendix-d.md",
+   "blocks": [
+    "sts.introduction.b0126",
+    "sts.introduction.b0151",
+    "sts.appendix-d.b0023"
+   ]
+  },
+  {
+   "idea": "One demonstration, seven days, three careers, no villain: the well-meaning enthusiast becomes the accomplice, and the precarious are hit first.",
+   "keep_in": "00-chapter0.md",
+   "blocks": [
+    "sts.chapter0.b0041",
+    "sts.chapter0.b0047",
+    "sts.chapter0.b0053",
+    "sts.chapter0.b0054",
+    "sts.chapter0.b0057",
+    "sts.chapter0.b0060",
+    "sts.chapter0.b0063",
+    "sts.chapter0.b0067"
+   ]
+  },
+  {
+   "idea": "The working definition: the Singularity is the point where intelligence stops being scarce and institutions built on that scarcity fail before a replacement is written; no god required, testable on your own paycheck, and the emergency is the gap.",
+   "keep_in": "03-chapter1.md",
+   "blocks": [
+    "sts.chapter1.b0138",
+    "sts.chapter1.b0173",
+    "sts.chapter1.b0132",
+    "sts.chapter1.b0124",
+    "sts.chapter1.b0125"
+   ]
+  },
+  {
+   "idea": "A dated, falsifiable forecast (AGI by Thanksgiving 2027) with stated falsifiers and survey evidence; every ask holds if it is wrong.",
+   "keep_in": "03-chapter1.md (stated once in 02-introduction.md)",
+   "blocks": [
+    "sts.introduction.b0088",
+    "sts.chapter1.b0111",
+    "sts.chapter1.b0154",
+    "sts.chapter1.b0158",
+    "sts.chapter1.b0174"
+   ]
+  },
+  {
+   "idea": "Plan by doors, not dates: expert timelines are autopsies of the last failure; make one asymmetric bet.",
+   "keep_in": "03-chapter1.md",
+   "blocks": [
+    "sts.chapter1.b0123",
+    "sts.chapter1.b0136",
+    "sts.chapter1.b0171",
+    "sts.chapter1.b0172",
+    "sts.chapter1.b0126"
+   ]
+  },
+  {
+   "idea": "Four questions hide in one word (capability, improvement, deployment, access), and this book lives in access.",
+   "keep_in": "03-chapter1.md",
+   "blocks": [
+    "sts.chapter1.b0140",
+    "sts.chapter1.b0141",
+    "sts.chapter1.b0142",
+    "sts.chapter1.b0143",
+    "sts.chapter1.b0144",
+    "sts.chapter1.b0145"
+   ]
+  },
+  {
+   "idea": "Who gets the savings: the payroll incentive turns cheap thinking into hunger for specific people.",
+   "keep_in": "03-chapter1.md",
+   "blocks": [
+    "sts.chapter1.b0161",
+    "sts.chapter1.b0162"
+   ]
+  },
+  {
+   "idea": "Enclosure: the builder discovers he planted the hedge; the land trust later runs enclosure in reverse.",
+   "keep_in": "04-chapter2.md, paid off in 14-chapter12.md",
+   "blocks": [
+    "sts.chapter2.b0017",
+    "sts.chapter2.b0121",
+    "sts.chapter2.b0122",
+    "sts.chapter2.b0123",
+    "sts.chapter2.b0028",
+    "sts.chapter12.b0154"
+   ]
+  },
+  {
+   "idea": "The stages are scenarios, not a timetable; Stage 4, the new social contract, is the hinge and a decision available now.",
+   "keep_in": "04-chapter2.md (full map in 24-appendix-c.md)",
+   "blocks": [
+    "sts.chapter2.b0098",
+    "sts.chapter2.b0118",
+    "sts.chapter2.b0129",
+    "sts.chapter2.b0130",
+    "sts.chapter2.b0131",
+    "sts.chapter2.b0115",
+    "sts.appendix-c.b0043"
+   ]
+  },
+  {
+   "idea": "Exponentials look like nothing, then everything; seeing it coming exiles you from the people you love; the threat was always man versus man.",
+   "keep_in": "05-chapter3.md",
+   "blocks": [
+    "sts.chapter3.b0011",
+    "sts.chapter3.b0013",
+    "sts.chapter3.b0021",
+    "sts.chapter3.b0085",
+    "sts.chapter3.b0089"
+   ]
+  },
+  {
+   "idea": "Find the edge of your map and work the near end; godlike machines beside hungry people would be a failure of priorities.",
+   "keep_in": "06-chapter4.md",
+   "blocks": [
+    "sts.chapter4.b0015",
+    "sts.chapter4.b0016",
+    "sts.chapter4.b0018",
+    "sts.chapter4.b0020",
+    "sts.chapter4.b0065"
+   ]
+  },
+  {
+   "idea": "Intelligence is energy, arranged: physics checks claims but never prices a person, and the ledgers stay separate.",
+   "keep_in": "07-chapter5.md",
+   "blocks": [
+    "sts.chapter5.b0125",
+    "sts.chapter5.b0104",
+    "sts.chapter5.b0105",
+    "sts.chapter5.b0109",
+    "sts.chapter5.b0112",
+    "sts.chapter5.b0114"
+   ]
+  },
+  {
+   "idea": "When the cost per unit of work flips, sentiment doesn't save the incumbent (the horse and the ledger).",
+   "keep_in": "07-chapter5.md",
+   "blocks": [
+    "sts.chapter5.b0115",
+    "sts.chapter5.b0160",
+    "sts.chapter5.b0161",
+    "sts.chapter5.b0162"
+   ]
+  },
+  {
+   "idea": "Capability is not access; the preservation solution adds abundance under everyone and takes nothing; ownership has to reach the terms people depend on.",
+   "keep_in": "08-chapter6.md",
+   "blocks": [
+    "sts.chapter6.b0113",
+    "sts.chapter6.b0092",
+    "sts.chapter6.b0093",
+    "sts.chapter6.b0101",
+    "sts.chapter6.b0102",
+    "sts.chapter6.b0126",
+    "sts.chapter6.b0128",
+    "sts.chapter6.b0130",
+    "sts.chapter11.b0173",
+    "sts.chapter11.b0175"
+   ]
+  },
+  {
+   "idea": "Technologies spread by group advantage, not consent: spend energy on position, not on whether.",
+   "keep_in": "08-chapter6.md",
+   "blocks": [
+    "sts.chapter6.b0106",
+    "sts.chapter6.b0108",
+    "sts.chapter6.b0109",
+    "sts.chapter6.b0077"
+   ]
+  },
+  {
+   "idea": "Reskilling is what the comfortable prescribe; ask where the person stands meanwhile, build the floor instead of the fence, and keep it unconditional.",
+   "keep_in": "09-chapter7.md",
+   "blocks": [
+    "sts.chapter7.b0143",
+    "sts.chapter7.b0144",
+    "sts.chapter7.b0145",
+    "sts.chapter7.b0147",
+    "sts.chapter7.b0116",
+    "sts.chapter7.b0119",
+    "sts.chapter7.b0125",
+    "sts.chapter7.b0167"
+   ]
+  },
+  {
+   "idea": "The battle line runs through every person as two reflexes; when intelligence is cheap, trust from specific people is the scarce asset, so stop climbing and start weaving.",
+   "keep_in": "09-chapter7.md",
+   "blocks": [
+    "sts.chapter7.b0127",
+    "sts.chapter7.b0128",
+    "sts.chapter7.b0164",
+    "sts.chapter7.b0165",
+    "sts.chapter7.b0107",
+    "sts.chapter7.b0109"
+   ]
+  },
+  {
+   "idea": "Argue about the machine's invoice, not its soul (the Music Performance Trust Fund).",
+   "keep_in": "09-chapter7.md",
+   "blocks": [
+    "sts.chapter7.b0197",
+    "sts.chapter7.b0199",
+    "sts.chapter7.b0200"
+   ]
+  },
+  {
+   "idea": "Panic is a state, not information; resilience is room to move, not attitude; build a cognitive firewall; autonomy is relational, and a circle never withholds food to keep people in line.",
+   "keep_in": "10-chapter8.md",
+   "blocks": [
+    "sts.chapter8.b0010",
+    "sts.chapter8.b0222",
+    "sts.chapter8.b0223",
+    "sts.chapter8.b0225",
+    "sts.chapter8.b0229",
+    "sts.chapter8.b0215",
+    "sts.chapter8.b0216",
+    "sts.chapter8.b0210",
+    "sts.chapter8.b0264",
+    "sts.chapter8.b0208",
+    "sts.chapter8.b0272",
+    "sts.chapter8.b0275",
+    "sts.chapter8.b0276",
+    "sts.chapter8.b0284"
+   ]
+  },
+  {
+   "idea": "Need the long supply chain less: design for repair, deglobalize survival needs, plan at the scale of the region, decide in advance where the saving goes, and remember interdependence is contagion in foul weather.",
+   "keep_in": "11-chapter9.md",
+   "blocks": [
+    "sts.chapter9.b0177",
+    "sts.chapter9.b0015",
+    "sts.chapter9.b0178",
+    "sts.chapter9.b0188",
+    "sts.chapter9.b0162",
+    "sts.chapter9.b0164",
+    "sts.chapter9.b0165",
+    "sts.chapter9.b0141",
+    "sts.chapter9.b0175",
+    "sts.chapter9.b0159"
+   ]
+  },
+  {
+   "idea": "Create more than you consume, with nobody earning dinner; real recorded experience is now the scarce input; wrap useful knowledge in a true story and point people off the platform.",
+   "keep_in": "12-chapter10.md",
+   "blocks": [
+    "sts.chapter10.b0013",
+    "sts.chapter10.b0143",
+    "sts.chapter10.b0145",
+    "sts.chapter10.b0020",
+    "sts.chapter10.b0150",
+    "sts.chapter10.b0151",
+    "sts.chapter10.b0161",
+    "sts.chapter10.b0133",
+    "sts.chapter10.b0134",
+    "sts.chapter10.b0172",
+    "sts.chapter10.b0175"
+   ]
+  },
+  {
+   "idea": "Own the compute you think on; knowing a system is not operating it; follow one request all the way through before buying a machine.",
+   "keep_in": "13-chapter11.md",
+   "blocks": [
+    "sts.chapter11.b0008",
+    "sts.chapter11.b0149",
+    "sts.chapter11.b0151",
+    "sts.chapter11.b0154",
+    "sts.chapter11.b0176",
+    "sts.chapter11.b0184",
+    "sts.chapter11.b0159",
+    "sts.chapter11.b0131",
+    "sts.chapter11.b0199",
+    "sts.part-3.b0007"
+   ]
+  },
+  {
+   "idea": "Land is the input the machine can't make; meet survival needs on your own ground or through a city that runs them better; trust closes what data can't; help arrives without condescension, starting now.",
+   "keep_in": "14-chapter12.md",
+   "blocks": [
+    "sts.chapter12.b0161",
+    "sts.chapter12.b0160",
+    "sts.chapter12.b0018",
+    "sts.chapter12.b0019",
+    "sts.chapter12.b0155",
+    "sts.chapter12.b0129",
+    "sts.chapter12.b0125",
+    "sts.chapter12.b0137"
+   ]
+  },
+  {
+   "idea": "The shouse: production and shelter under one roof, built in your lane, never cutting a load-bearing member first.",
+   "keep_in": "15-chapter13.md",
+   "blocks": [
+    "sts.chapter13.b0164",
+    "sts.chapter13.b0149",
+    "sts.chapter13.b0160",
+    "sts.chapter13.b0140",
+    "sts.chapter13.b0139"
+   ]
+  },
+  {
+   "idea": "Collapse is readable before it lands, so say so; efficiency is a choice about whose books show the loss; shorten the loops; recover food in the wrong place; security buys time to choose.",
+   "keep_in": "16-chapter14.md",
+   "blocks": [
+    "sts.chapter14.b0016",
+    "sts.chapter14.b0017",
+    "sts.chapter14.b0154",
+    "sts.chapter14.b0109",
+    "sts.chapter14.b0113",
+    "sts.chapter14.b0157",
+    "sts.chapter14.b0136",
+    "sts.chapter14.b0160"
+   ]
+  },
+  {
+   "idea": "A meter tells the truth only where it sits; know the ground's history; distributed food production scales once somebody organizes it.",
+   "keep_in": "17-chapter15.md",
+   "blocks": [
+    "sts.chapter15.b0016",
+    "sts.chapter15.b0116",
+    "sts.chapter15.b0102",
+    "sts.chapter15.b0130",
+    "sts.chapter15.b0111",
+    "sts.chapter15.b0143"
+   ]
+  },
+  {
+   "idea": "Trust doesn't scale, blueprints do: ship the files, keep consent first, own your press; leverage is reach over permission.",
+   "keep_in": "18-chapter16.md",
+   "blocks": [
+    "sts.chapter16.b0016",
+    "sts.chapter16.b0018",
+    "sts.chapter16.b0124",
+    "sts.chapter16.b0095",
+    "sts.chapter16.b0116"
+   ]
+  },
+  {
+   "idea": "A tool you can't understand, repair or run offline is a leash; tools don't choose which future they serve, people do; discipline is a practice.",
+   "keep_in": "19-chapter17.md",
+   "blocks": [
+    "sts.chapter17.b0114",
+    "sts.chapter17.b0128",
+    "sts.chapter17.b0138",
+    "sts.chapter17.b0144",
+    "sts.chapter17.b0175"
+   ]
+  },
+  {
+   "idea": "Run the premortem with people in it, measure by the Adequate Level of Care, build the machine and the promise together, and make whoever automates answer for the people moved out; nobody should have to be liked to be fed.",
+   "keep_in": "20-chapter18.md",
+   "blocks": [
+    "sts.chapter18.b0130",
+    "sts.chapter18.b0132",
+    "sts.chapter18.b0144",
+    "sts.chapter18.b0166",
+    "sts.chapter18.b0167",
+    "sts.chapter18.b0168",
+    "sts.chapter18.b0103",
+    "sts.chapter18.b0105",
+    "sts.chapter18.b0111",
+    "sts.chapter18.b0114",
+    "sts.chapter18.b0182",
+    "sts.chapter18.b0183"
+   ]
+  },
+  {
+   "idea": "The ladder: survival as a public floor built rung by rung, food first, raised by automation; each rung stands alone; ask who it can't be afforded by and how it became free somewhere else.",
+   "keep_in": "27-chapter19.md",
+   "blocks": [
+    "sts.chapter19.b0010",
+    "sts.chapter19.b0013",
+    "sts.chapter19.b0026",
+    "sts.chapter19.b0027",
+    "sts.chapter19.b0036",
+    "sts.chapter19.b0037",
+    "sts.chapter19.b0058",
+    "sts.chapter19.b0062",
+    "sts.chapter19.b0086",
+    "sts.chapter19.b0070",
+    "sts.chapter19.b0071"
+   ]
+  },
+  {
+   "idea": "Civic action that works: testimony beats the model; bring one specific request sized to the speaking limit and follow it in writing; a role for every reader.",
+   "keep_in": "27-chapter19.md",
+   "blocks": [
+    "sts.chapter19.b0082",
+    "sts.chapter19.b0107",
+    "sts.chapter19.b0108",
+    "sts.chapter19.b0114",
+    "sts.chapter19.b0064"
+   ]
+  },
+  {
+   "idea": "One question for every automation decision, success measured by time returned and danger avoided, and the moral mandate.",
+   "keep_in": "21-conclusion.md",
+   "blocks": [
+    "sts.conclusion.b0090",
+    "sts.conclusion.b0094",
+    "sts.conclusion.b0100",
+    "sts.conclusion.b0107",
+    "sts.conclusion.b0115",
+    "sts.conclusion.b0078"
+   ]
+  },
+  {
+   "idea": "The bookend: the toast reclaimed, the napkin redeemed, the reader holding the book.",
+   "keep_in": "00-chapter0.md and 21-conclusion.md",
+   "blocks": [
+    "sts.chapter0.b0005",
+    "sts.chapter0.b0067",
+    "sts.chapter0.b0077",
+    "sts.conclusion.b0114",
+    "sts.conclusion.b0085",
+    "sts.conclusion.b0060",
+    "sts.conclusion.b0019"
+   ]
+  },
+  {
+   "idea": "A year of sequenced practice and the organizer's questions: the single home for what to do on Monday.",
+   "keep_in": "29-appendix-g.md and 22-appendix-a.md",
+   "blocks": [
+    "sts.appendix-g.b0004",
+    "sts.appendix-g.b0006",
+    "sts.appendix-g.b0016",
+    "sts.appendix-g.b0024",
+    "sts.appendix-g.b0026",
+    "sts.appendix-a.b0056"
+   ]
+  }
+ ],
+ "duplicates": [
+  {
+   "idea": "Money optional, not abolished",
+   "keep": "sts.introduction.b0147 (thesis); sts.chapter19.b0056 b0057 (Rung 9)",
+   "drop": "sts.introduction.b0094, sts.appendix-c.b0046, sts.appendix-f.b0029"
+  },
+  {
+   "idea": "Tools don't choose which future they serve; people do",
+   "keep": "sts.chapter17.b0128 (same hardware, opposite pitch); sts.chapter9.b0175 stays only as the actionable 'decide where the saving goes'",
+   "drop": "sts.introduction.b0094, sts.chapter18.b0106"
+  },
+  {
+   "idea": "AGI by Thanksgiving 2027 and the hedge that the advice holds if wrong",
+   "keep": "sts.introduction.b0088; sts.chapter1.b0111 b0154 b0174",
+   "drop": "sts.introduction.b0153, sts.part-3.b0008, sts.chapter6.b0094, sts.chapter1.b0159, sts.conclusion.b0104, sts.appendix-c.b0041, sts.appendix-f.b0005"
+  },
+  {
+   "idea": "Definition of the Singularity",
+   "keep": "sts.chapter1.b0138",
+   "drop": "sts.chapter1.b0139, sts.appendix-c.b0039, sts.appendix-c.b0019, sts.appendix-f.b0042"
+  },
+  {
+   "idea": "Three schools; plan by doors, not dates",
+   "keep": "sts.chapter1.b0118 b0121 b0122 b0123 b0136; the P-03 line in sts.appendix-d.b0023",
+   "drop": "sts.chapter1.b0135, sts.appendix-c.b0037 b0040 b0021, sts.appendix-f.b0003 b0017 b0022"
+  },
+  {
+   "idea": "The 2017 Transformer paper",
+   "keep": "sts.chapter1.b0146 b0151",
+   "drop": "sts.chapter0.b0089, sts.chapter1.b0147 b0148 b0149 b0150, sts.appendix-f.b0046"
+  },
+  {
+   "idea": "Payroll incentive: the employee as a liability",
+   "keep": "sts.chapter1.b0162",
+   "drop": "sts.chapter7.b0129, sts.chapter7.b0130"
+  },
+  {
+   "idea": "The line cook loses his job and still eats",
+   "keep": "sts.introduction.b0107 (promise) with sts.chapter11.b0164 b0165 as its target",
+   "drop": "sts.chapter7.b0166, sts.chapter11.b0162, sts.chapter18.b0100"
+  },
+  {
+   "idea": "Kids-these-days technology panics",
+   "keep": "the P-01 line in sts.appendix-d.b0023",
+   "drop": "sts.preface.b0061 to b0068, sts.chapter5.b0139 b0120 b0117 b0118 b0140 b0141 b0142"
+  },
+  {
+   "idea": "Sousa's warning about mechanical music",
+   "keep": "none (P-10 stands without it)",
+   "drop": "sts.chapter5.b0164, sts.chapter7.b0190"
+  },
+  {
+   "idea": "The Luddites fought over terms",
+   "keep": "sts.chapter7.b0145 b0147 (Marta, mid-fight)",
+   "drop": "sts.chapter7.b0140, all of P-09 (sts.chapter7.b0113 b0179 b0180 b0186 b0182 b0183 b0108), sts.appendix-f.b0026"
+  },
+  {
+   "idea": "The musicians' campaign and the invoice that outlasted it",
+   "keep": "sts.chapter7.b0201 b0187 b0202 b0194 b0195 b0197 b0198 b0199 b0200 (P-10, told once)",
+   "drop": "sts.chapter7.b0175 b0141 b0142 b0176 b0185 b0104 b0105 b0184 b0191 b0196"
+  },
+  {
+   "idea": "Two kinds of fear versus the Entitled and the Ready",
+   "keep": "both kept for different jobs: sts.chapter6.b0095 b0096 b0098 b0099 set up the preservation solution; sts.chapter7.b0127 b0170 b0128 name the battle line",
+   "drop": "no drop; restatements go: sts.appendix-f.b0016"
+  },
+  {
+   "idea": "The lone prepper fails; a bunker is a tomb",
+   "keep": "sts.chapter8.b0208 b0209 b0272",
+   "drop": "sts.chapter7.b0163, sts.chapter12.b0122"
+  },
+  {
+   "idea": "Food waste beside hunger (enough food, 30 to 40 percent uneaten)",
+   "keep": "sts.introduction.b0140",
+   "drop": "sts.chapter14.b0117, sts.chapter14.b0176, sts.chapter6.b0116, sts.appendix-h.b0004"
+  },
+  {
+   "idea": "Food-recovery law (France 2016, California SB 1383)",
+   "keep": "sts.chapter14.b0157",
+   "drop": "sts.chapter19.b0017, sts.chapter19.b0022, sts.appendix-f.b0039"
+  },
+  {
+   "idea": "Community land trust machinery",
+   "keep": "sts.chapter12.b0151 b0154 (in scene); sts.chapter19.b0031 (Rung 4 What line)",
+   "drop": "sts.chapter15.b0122 b0123 b0108 b0094, sts.chapter19.b0032, sts.appendix-f.b0009"
+  },
+  {
+   "idea": "Real recorded experience is scarce; model collapse",
+   "keep": "sts.chapter10.b0155 b0161",
+   "drop": "sts.chapter16.b0129, sts.chapter10.b0136 b0131, sts.appendix-f.b0028"
+  },
+  {
+   "idea": "Platforms are a temporary channel, not a home",
+   "keep": "sts.chapter10.b0175",
+   "drop": "sts.chapter16.b0110"
+  },
+  {
+   "idea": "Share conditions with results; consent before content",
+   "keep": "sts.chapter10.b0125 (conditions); sts.chapter16.b0095 (consent)",
+   "drop": "sts.chapter16.b0130, sts.chapter16.b0099, sts.chapter10.b0176"
+  },
+  {
+   "idea": "What a neighborhood mesh is",
+   "keep": "sts.chapter14.b0132 b0133 (the case); sts.chapter17.b0118 b0150 (the node)",
+   "drop": "sts.chapter14.b0131 b0135, sts.chapter17.b0124 b0119, sts.appendix-e.b0062"
+  },
+  {
+   "idea": "Nitrogen and soil biology",
+   "keep": "sts.chapter15.b0098 b0100",
+   "drop": "sts.chapter9.b0142 b0143 b0145 b0146 b0147 and its equations"
+  },
+  {
+   "idea": "Donations can't carry a permanent promise; fund the floor dependably",
+   "keep": "sts.chapter11.b0164; sts.chapter18.b0119",
+   "drop": "sts.chapter18.b0110, sts.appendix-c.b0029"
+  },
+  {
+   "idea": "Free does not mean costless",
+   "keep": "sts.introduction.b0114; sts.chapter5.b0131 b0132",
+   "drop": "sts.appendix-c.b0029 b0050 b0051, sts.appendix-a.b0051"
+  },
+  {
+   "idea": "Food first is a start, not 'food only'",
+   "keep": "sts.introduction.b0108",
+   "drop": "sts.preface.b0056, sts.chapter17.b0141, sts.chapter18.b0116, sts.conclusion.b0097 b0098, sts.appendix-c.b0031"
+  },
+  {
+   "idea": "Adequate Level of Care",
+   "keep": "sts.chapter18.b0166 b0167 b0168 (with sts.chapter19.b0014 as the callback)",
+   "drop": "sts.appendix-c.b0033, sts.appendix-f.b0004"
+  },
+  {
+   "idea": "Objections answered (who pays, work, socialism, jobs, WALL-E, no robots, why food)",
+   "keep": "sts.appendix-c.b0049",
+   "drop": "sts.chapter11.b0166 b0167 b0168 b0170 b0171 b0172"
+  },
+  {
+   "idea": "Help without strings; nobody earns dinner",
+   "keep": "sts.chapter10.b0151; sts.chapter8.b0275; sts.chapter12.b0129",
+   "drop": "sts.chapter11.b0129, sts.chapter11.b0130"
+  },
+  {
+   "idea": "Follow one request all the way through",
+   "keep": "sts.part-3.b0007 (signpost); sts.chapter11.b0131 b0199 b0200 (method)",
+   "drop": "sts.chapter12.b0140"
+  },
+  {
+   "idea": "Reskilling is not an answer",
+   "keep": "sts.chapter7.b0143 b0144 (Denny)",
+   "drop": "sts.conclusion.b0095"
+  },
+  {
+   "idea": "Testimony beats the model",
+   "keep": "sts.chapter12.b0157 (first time); sts.conclusion.b0126 (the arc)",
+   "drop": "sts.chapter19.b0093, sts.chapter10.b0124"
+  },
+  {
+   "idea": "The notebook becomes this book",
+   "keep": "sts.chapter0.b0077; sts.conclusion.b0019",
+   "drop": "sts.chapter18.b0145"
+  },
+  {
+   "idea": "Tour of the book",
+   "keep": "the Part dividers only",
+   "drop": "sts.introduction.b0154, sts.preface.b0051, sts.how-to-use.b0004 b0008 b0009, sts.part-2.b0009 b0010"
+  },
+  {
+   "idea": "Cyberdeck definition and anatomy",
+   "keep": "sts.chapter5.b0138 b0144 (two blocks)",
+   "drop": "sts.chapter5.b0143 b0145 b0119 b0146, all of 26-appendix-e.md"
+  },
+  {
+   "idea": "Cleanup practice",
+   "keep": "none in the core",
+   "drop": "sts.chapter10.b0135, sts.chapter17.b0149 b0122, sts.chapter11.b0167"
+  },
+  {
+   "idea": "Chapter practice lists",
+   "keep": "29-appendix-g.md months; plus sts.chapter0.b0096 (P-02), sts.chapter1.b0126 (P-03), sts.chapter4.b0091 (P-06), which Appendix G lacks",
+   "drop": "sts.chapter2.b0117, sts.chapter5.b0163, sts.chapter6.b0078, sts.chapter7.b0108 b0114, sts.chapter8.b0292, sts.chapter9.b0211, sts.chapter10.b0183, sts.chapter13.b0181, sts.chapter14.b0170 b0173, sts.chapter15.b0145, sts.chapter16.b0142, sts.chapter17.b0176, sts.chapter18.b0184, sts.chapter19.b0073, sts.conclusion.b0080"
+  },
+  {
+   "idea": "Scene lessons explained after the scene lands",
+   "keep": "the scene beat itself",
+   "drop": "sts.chapter0.b0061 b0091 b0065, sts.chapter1.b0017 b0099 b0100 b0101, sts.chapter2.b0124, sts.chapter4.b0082, sts.chapter10.b0124, sts.chapter11.b0157, sts.chapter19.b0093"
+  }
+ ],
+ "continuity": [
+  {
+   "setup": "sts.chapter0.b0005, b0006 (four-dollar beer, CSS, 40 percent battery at the Bear Flag)",
+   "payoff": "sts.conclusion.b0114 (same seat, five-dollar beer)",
+   "rule": "Keep both; the bookend is the book's frame."
+  },
+  {
+   "setup": "sts.preface.b0039 and sts.chapter0.b0066, b0067 (the hollow Congratulations)",
+   "payoff": "sts.conclusion.b0015, b0085 (Congratulations, meant this time)",
+   "rule": "Keep all of them; this is the most CT structural move in the book."
+  },
+  {
+   "setup": "sts.chapter0.b0043 to b0048 (the napkin; he thought he was handing them a telescope)",
+   "payoff": "sts.conclusion.b0060 (the book left where the napkin went)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter0.b0073 to b0077 (he starts to write; the working title; the narrator's last line)",
+   "payoff": "sts.conclusion.b0008 (the working title hadn't survived) and sts.conclusion.b0018, b0019 (the same last line)",
+   "rule": "Keep b0074, b0075, b0076 with b0077; drop sts.chapter18.b0145, which spends the last line early."
+  },
+  {
+   "setup": "sts.chapter0.b0100 (the grandmother's madrones)",
+   "payoff": "sts.chapter5.b0129 and sts.conclusion.b0055",
+   "rule": "Keep b0100 while either payoff stays."
+  },
+  {
+   "setup": "sts.chapter0.b0008 to b0010 (MADRONE notebook) and sts.chapter1.b0021",
+   "payoff": "sts.chapter12.b0157 (PARCELS), sts.chapter13.b0153 (ROOFS), sts.chapter18.b0144 (names column)",
+   "rule": "Keep the notebook chain unbroken."
+  },
+  {
+   "setup": "sts.chapter0.b0025 (Silvana inside Chat Horizon)",
+   "payoff": "sts.chapter11.b0144 (her open-weights descendant on the Crucible)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter0.b0027 (the 2017 paper read three times)",
+   "payoff": "sts.chapter1.b0008, b0009 (the worn printout carried to Devendra)",
+   "rule": "Keep b0027 while Ch1 opens on the printout."
+  },
+  {
+   "setup": "sts.chapter0.b0039 (Elijah went off)",
+   "payoff": "sts.chapter6.b0087 (he goes off again)",
+   "rule": "Keep both; CT fixes the broken sentence in b0039."
+  },
+  {
+   "setup": "sts.chapter1.b0010, b0011 (Devendra: augmentation, not replacement)",
+   "payoff": "sts.chapter2.b0024 to b0027, sts.chapter14.b0143 to b0145, sts.chapter18.b0073 and b0146 to b0154, sts.chapter19.b0090, sts.conclusion.b0082",
+   "rule": "The Devendra thread is all or nothing; the core keeps every link."
+  },
+  {
+   "setup": "sts.chapter1.b0014 to b0016 (the tower overheats and shuts down)",
+   "payoff": "sts.chapter5.b0125 (the wall he had actually hit: heat)",
+   "rule": "Keep both, and keep Ch1's explanations b0017, b0099 to b0101 cut so Ch5 delivers the insight."
+  },
+  {
+   "setup": "sts.chapter2.b0122, b0123, b0028 (enclosure; the hedge he helped plant)",
+   "payoff": "sts.chapter12.b0154 (the trust as that machine in reverse)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter2.b0011 (COMPANION)",
+   "payoff": "sts.chapter8.b0009 (Companion 2.0 ships)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter2.b0116, b0132 to b0134 (Stage 5)",
+   "payoff": "sts.chapter19.b0061 (the resistance Stage 5 described)",
+   "rule": "Keep Stage 5 in Ch2."
+  },
+  {
+   "setup": "sts.chapter3.b0014 to b0023 and b0085 (the 9:40 Sunday call, Manny's pressure switch, the failed explanation)",
+   "payoff": "sts.chapter13.b0120, b0018 to b0020 (the stove photo gets through) and sts.conclusion.b0008, b0056",
+   "rule": "Keep the call whole; it is why Ch3's reading-route invitation b0098 goes."
+  },
+  {
+   "setup": "sts.chapter3.b0017 (the Hollis place sold to an outfit from Sacramento)",
+   "payoff": "sts.chapter12.b0149 (same registered agent)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter4.b0021 (coffee at the window) and b0022 (the electric bill arrives)",
+   "payoff": "sts.chapter8.b0231 and sts.chapter5.b0008, b0009",
+   "rule": "Keep Ch4's last two scene blocks."
+  },
+  {
+   "setup": "sts.chapter5.b0126 (the plug-in power meter)",
+   "payoff": "sts.chapter15.b0016 (a meter tells the truth only where it lives)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter5.b0128 to b0130 (the Fisher stove with no flue)",
+   "payoff": "sts.chapter13.b0152, b0016, b0018 and sts.conclusion.b0008 (the replacement firebrick)",
+   "rule": "Keep the stove whole in Ch5."
+  },
+  {
+   "setup": "sts.chapter5.b0127 (the kids already had a name for it)",
+   "payoff": "sts.chapter5.b0138, b0144 (the cyberdeck, named)",
+   "rule": "Keep the two-block sliver so b0127 does not dangle."
+  },
+  {
+   "setup": "sts.chapter6.b0010 (the check-engine light past Cloverdale)",
+   "payoff": "sts.chapter9.b0185, b0186 (two dollars of hose) and sts.conclusion.b0055",
+   "rule": "Keep all three."
+  },
+  {
+   "setup": "sts.chapter6.b0019 (nineteen households, the load-bearing wall)",
+   "payoff": "sts.chapter16.b0018 (the wall doesn't scale; its blueprints do)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter6.b0024, b0025 (the broom; swarf goes in the red bin)",
+   "payoff": "sts.chapter18.b0148, b0153 (the same broom and line handed to Devendra)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter6.b0089 (Marta's 2009 plant; she knows what it's like after)",
+   "payoff": "sts.chapter8.b0222 to b0227 (Gary and Sal) and sts.chapter18.b0132",
+   "rule": "Keep b0089."
+  },
+  {
+   "setup": "sts.chapter6.b0095, b0096, b0098 (the overwhelmed and the status-invested)",
+   "payoff": "sts.chapter6.b0102 (the preservation solution answers both by name)",
+   "rule": "Keep the two kinds of fear while b0102 stays."
+  },
+  {
+   "setup": "sts.chapter6.b0130 (Rung 5 pointer)",
+   "payoff": "sts.chapter19.b0035 to b0038",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter7.b0009 (Curtis wants the fence)",
+   "payoff": "sts.chapter9.b0185, sts.chapter16.b0087, sts.chapter18.b0152",
+   "rule": "Keep the fence while Curtis's arc stays."
+  },
+  {
+   "setup": "sts.chapter7.b0149 (a page of names, not numbers)",
+   "payoff": "sts.chapter18.b0144 (the names column)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter7.b0150 to b0123 (Rosa's potatoes; funded through next month)",
+   "payoff": "sts.chapter18.b0136, b0140, b0141, b0143 (funded through June, Rosa's note), sts.chapter19.b0081 to b0092 (testimony, December, the texts), sts.conclusion.b0082",
+   "rule": "One chain; cutting any link breaks every later one."
+  },
+  {
+   "setup": "sts.chapter7.b0170 (the Entitled and Ready table)",
+   "payoff": "sts.chapter7.b0128 (that table isn't a list of good and bad people)",
+   "rule": "Never keep the table without b0128, or the reverse."
+  },
+  {
+   "setup": "sts.chapter8.b0223, b0231 (Sal's rule in the notebook)",
+   "payoff": "sts.chapter10.b0018 and sts.chapter12.b0157",
+   "rule": "Keep b0231 while either callback stays."
+  },
+  {
+   "setup": "sts.chapter8.b0229 (the greenhouse controller could use his attention)",
+   "payoff": "sts.chapter9.b0008, b0134",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter9.b0178 (the laminated repair card)",
+   "payoff": "sts.chapter10.b0148 (Denny's correction) and sts.chapter16.b0124 (the machinist's correction)",
+   "rule": "Keep all three."
+  },
+  {
+   "setup": "sts.chapter9.b0017, b0018, b0179 to b0182 (Reuben arrives with the paperwork done)",
+   "payoff": "sts.chapter12.b0013, b0151, b0154 and sts.chapter19.b0078",
+   "rule": "Keep Reuben's entrance."
+  },
+  {
+   "setup": "sts.chapter10.b0147 (the channel becomes Denny's)",
+   "payoff": "sts.chapter11.b0015, sts.chapter12.b0152, sts.chapter14.b0149, sts.chapter16.b0118, sts.chapter18.b0012",
+   "rule": "Keep b0147."
+  },
+  {
+   "setup": "sts.chapter11.b0014 (Marta's Tuesday physical therapy in the leaked journal)",
+   "payoff": "sts.chapter18.b0135 (her shoulder is done)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter11.b0153, b0154 (the honest report; the second-reviewer rule)",
+   "payoff": "sts.chapter16.b0089, b0120 (the postmortem shipped beside the successes) and sts.chapter17.b0011, b0144 (the rule amended)",
+   "rule": "Keep both pairs."
+  },
+  {
+   "setup": "sts.chapter12.b0113 and b0017 to b0019 (Irene, Walt's tractor for sixty dollars)",
+   "payoff": "sts.chapter19.b0074, b0085 to b0087 (Irene's 1939 co-op)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter13.b0010, b0011, b0149 (the vise)",
+   "payoff": "sts.chapter15.b0016 and sts.chapter17.b0138 (the vise, the shovel, the ridge)",
+   "rule": "Keep all three tests."
+  },
+  {
+   "setup": "sts.chapter13.b0016 (the first fire)",
+   "payoff": "sts.chapter16.b0008, b0118 (the first-fire video)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter14.b0132, b0133 (the case for a mesh)",
+   "payoff": "sts.chapter17.b0118 (Chapter 14 made the case) and the storm scene",
+   "rule": "Keep the Ch14 mesh blocks while Ch17 b0118 stays."
+  },
+  {
+   "setup": "sts.chapter14.b0141 and b0016 (Frank and his counter)",
+   "payoff": "sts.chapter16.b0016, sts.chapter18.b0134, sts.conclusion.b0082",
+   "rule": "Keep Frank's arc whole."
+  },
+  {
+   "setup": "sts.chapter15.b0116 (the crust called the climate of the planet), sts.chapter9.b0010 (renders), sts.chapter10.b0145 (optimized cut), sts.chapter11.b0013 (the commented-out line), sts.chapter17.b0011 (the solo flash), sts.chapter16.b0121 (eleven towns)",
+   "payoff": "sts.conclusion.b0126 (every way he was wrong, times eleven towns)",
+   "rule": "Keep every listed setup while b0126 stays."
+  },
+  {
+   "setup": "sts.chapter17.b0151 (the epigraph Marta answers)",
+   "payoff": "sts.chapter17.b0143",
+   "rule": "The one epigraph the core keeps."
+  },
+  {
+   "setup": "sts.chapter18.b0166 to b0168 (the Adequate Level of Care)",
+   "payoff": "sts.chapter19.b0014",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter19.b0079 (a supervisor eating almonds)",
+   "payoff": "sts.chapter19.b0087 (the almonds went down)",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.chapter19.b0028 (Appendix A has the questions to bring)",
+   "payoff": "sts.appendix-a.b0056",
+   "rule": "Keep Appendix A's questions while b0028 stays."
+  },
+  {
+   "setup": "sts.introduction.b0088 (Chapter 1 says what would prove me wrong)",
+   "payoff": "sts.chapter1.b0154, b0174",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.introduction.b0107 (Chapter 11 takes the terms of work seriously)",
+   "payoff": "sts.chapter11.b0163, b0164, b0165",
+   "rule": "Keep the Ch11 section while the pointer stays."
+  },
+  {
+   "setup": "sts.introduction.b0109, b0118 (why am I still renting my survival?)",
+   "payoff": "sts.conclusion.b0115",
+   "rule": "Keep both; CT reconciles b0115's last fence with the rules-are-the-fence thesis."
+  },
+  {
+   "setup": "sts.introduction.b0117, b0133 (What if it all goes right?)",
+   "payoff": "sts.conclusion.b0086, b0088 to b0092",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.introduction.b0150 (Chapter 19 lays out the plan)",
+   "payoff": "sts.chapter19.b0098, b0010 and the rung headings",
+   "rule": "Keep both."
+  },
+  {
+   "setup": "sts.introduction.b0151 (twenty-four documented episodes)",
+   "payoff": "sts.appendix-d.b0023 (all twenty-four rules) and the seventeen chapter precedents kept",
+   "rule": "Keep b0023 whole, because seven precedent stories are cut."
+  },
+  {
+   "setup": "sts.appendix-g.b0002 and every P-tag in Appendix G",
+   "payoff": "sts.appendix-d.b0023",
+   "rule": "Keep both; the tags resolve through the rules list."
+  },
+  {
+   "setup": "Pointers whose targets the cut removes: sts.introduction.b0134 (P-01), b0152 (every chapter closes with a precedent), b0157 (How to Use); sts.chapter5.b0146 (Appendix E); sts.chapter10.b0135 (Ch17 cleanup); sts.chapter11.b0162 (Ch7's cook); sts.chapter14.b0112 (P-17); sts.chapter19.b0017, b0022 (Ch14 law, British Restaurants)",
+   "payoff": "their targets",
+   "rule": "Drop each pointer with its target. Pointers inside kept blocks that still dangle are seams: sts.appendix-g.b0010 item 4 (Appendix E), sts.appendix-c.b0049 (Chapter 11 answers), sts.chapter14.b0129 and b0171 (Kodak), sts.chapter12.b0165, sts.chapter1.b0155."
+  }
+ ],
+ "principles": [
+  "Whole blocks only, verbatim. Never trim a sentence. A defect inside a block that must stay (a broken sentence, a title dash, a dangling pointer) is recorded as a seam for CT's v0.12 rewrite, not patched and not used as a reason to keep a weaker block.",
+  "Every budget is the word count of the keep list named in that file's priorities. Cutters may swap blocks of similar size inside the 8 percent band, but a swap must not break a continuity pair or bring back a dropped duplicate.",
+  "Spend in the order a newcomer needs: first understanding (the definition, the stages, the physics), then caring (Elijah, Denny, Rosa, Frank), then acting (the firewall, start with three, the premortem, the ladder, the year plan). Definitions and the floor argument outrank speculation; the plan outranks reference material.",
+  "Scenes are the engine. Keep each scene through its turn and every planted setup or payoff. Cut narration that explains a beat after it lands, captions that spoil the scene, and backstory that delays the hook.",
+  "A setup stays only if its payoff stays, and the reverse. When a pair cannot both fit, both go and the dangling reference is logged as a seam.",
+  "One home per idea, as the duplicates list names. Only Appendix C (the ten-minute hand-off) and Appendix G (the year plan) may restate the body, because restating is their job.",
+  "In the Foundations keep the claim, its single best evidence and its one concrete action. Cut stacked hedges, stat runs that bury the hammer line, and passages in a committee or policy-memo register.",
+  "Insider material goes first: the lineage beyond Good, Vinge and Kurzweil; benchmark tables; the simulation trilemma; VRAM, heat, PID and Fourier math; install scripts; Hansard detail; tax classifications; cyberdeck anatomy; Stage 7 and Stage 9 speculation.",
+  "Precedents keep their hook, mechanism and rule where they earn a place; seventeen stay (P-02, P-03, P-04, P-06, P-07, P-08, P-10, P-11, P-12, P-13, P-16, P-18, P-19, P-20, P-21, P-22, P-23). P-01, P-05, P-09, P-14, P-15, P-17 and P-24 go because they contradict their chapter, duplicate a scene or stand between the climax and the ending; all twenty-four rules survive in Appendix D b0023.",
+  "Practices live in Appendix G. A chapter keeps its own practice only when Appendix G lacks it: P-02's boring test, P-03's doors and asymmetric bet, P-06's undemotable list.",
+  "CT's voice beats committee voice. When two blocks carry one idea, keep the one closest to his April 2024 draft and his own dictated lines (for example Introduction b0050, b0147, b0148; Ch1 b0173; Ch12 b0136; Ch13 b0164; Ch19 b0096, b0105), and keep profanity that earns its place.",
+  "Apparatus goes: figures, captions, epigraphs, In this chapter bullets, interactive markers, LaTeX and code. The one exception is the Ch17 epigraph b0151, because Marta answers it in b0143.",
+  "No pointer survives to material the cut removes unless its target is kept; a pointer and its target are dropped together, and a pointer trapped inside a kept block is listed as a seam.",
+  "Get to the hook fast. Front matter (Introduction, Preface, How to Use, Chapter 0) falls from 9,236 words to 5,840; How to Use goes, the Introduction keeps its hammer lines and loses its stat run, tours and signposts, and the Preface keeps CT's first line and the horse parable.",
+  "Keep the entry bar low wherever there is a choice: blocks saying a reader can take part without land, servers or a robot (Introduction b0132, Ch5 b0158, Ch12 b0164) outrank blocks that assume ownership.",
+  "The plan writes no em or en dashes. Dashes inside kept book text (the stage-range titles of Ch2, Ch3 and Ch4) are flagged for CT, not edited."
+ ],
+ "total": 50084,
+ "rationale": "METHOD. I rebuilt every budget from a block-level keep list instead of averaging the three proposals: for each file I merged the architects' keep and cut lists, decided each disagreement against the annotated text, summed the kept blocks' word counts, and rounded to the nearest 10 (the three dividers are exact). Each file's priorities now open with that exact keep list, so a cutter can hit the budget and knows what to cut first. ARITHMETIC. Front matter 5,840 (Introduction 2,370 + Preface 530 + How to Use 0 + Chapter 0 2,940). Part I 9,442 (divider 62 + Ch1 2,650 + Ch2 2,100 + Ch3 1,220 + Ch4 1,210 + Ch5 2,200). Part II 9,957 (divider 57 + Ch6 2,270 + Ch7 3,000 + Ch8 2,520 + Ch9 2,110). Part III 17,675 (divider 65 + Ch10 1,870 + Ch11 2,200 + Ch12 2,210 + Ch13 1,960 + Ch14 2,010 + Ch15 1,680 + Ch16 1,420 + Ch17 1,920 + Ch18 2,340). Chapter 19 and Conclusion 4,360 (2,770 + 1,590). Appendices 2,810 (A 340 + C 670 + D 550 + G 1,250; E, F and H 0). Total 5,840 + 9,442 + 9,957 + 17,675 + 4,360 + 2,810 = 50,084, inside 49,700 to 50,300. Every budget is at or under its file's total. Appendix B is untouched and uncounted. THREE READERS. The newcomer gets a fast hook (CT's first line, the Bear Flag), a definition before any jargon (Ch1 keeps the definition, the four questions and the Einstein picture and loses the benchmark tables), the floor argument in story form (Denny, Rosa, Gary and Sal), and one sequenced year of actions. The reader already into the singularity gets the falsifiable forecast with its falsifiers and survey evidence, doors not dates, the stage map (compact in Appendix C), the energy physics and the ownership question. The reader looking for a different perspective gets what the genre usually lacks: the human arrangement as the real variable, enclosure run in reverse, New Communities as an honest counterweight, the Music Performance Trust Fund invoice, the county hearing, and CT's anger aimed at the arrangement, never the reader. DISAGREEMENTS, DECIDED. (1) How to Use (zero and story drop, path 185): dropped. It is a fourth front door, its short route skips Chapter 0, two of its persona rows misroute readers, and routing has to be rebuilt for v0.12 anyway. (2) Appendix G (zero 1,150, path 1,255, story drop): kept whole at 1,250. CT asked for a book that changes a newcomer's life, and this is its only sequenced answer to what to do on Monday. Making it the single home for practices is what lets every chapter drop its own practice list, which pays for most of its cost. Its intro b0002 stays because it explains the P-tags. (3) Appendix D (zero drop, path and story 550): kept as its twenty-four one-line rules. Seven precedent stories are cut, the Introduction's b0151 still promises twenty-four, and Appendix G's tags need a decoder; the rules list does all three in 550 words. The index table, timeline, symptom index and blacklist go because they route into stories that are gone. (4) Appendix A (zero 260, path 345, story drop): kept at 340. Ch19 b0028 points to it, and its nine questions are the one working tool for the organizer. (5) Appendix E (path 225, others drop): dropped. It duplicates Ch5 and Ch17 and dates fast; the one dangling reference (Appendix G Month 4 item 4) carries its own fallback and is logged as a seam. (6) Appendix C (625 to 695): 670, keeping the proposal, all nine stages (their only compact home once Stage 7 and Stage 9 Foundations are cut), the plan in nine lines and the objections (their only home once Ch11's FAQ is cut). The definition and forecast restatements go to Ch1. (7) Chapter 0 (2,320 to 3,167): 2,940, near the story architect, because it plants nearly every gun the Conclusion fires. The working-title blocks b0074 to b0076 stay although two architects cut them: Conclusion b0008 pays them off. The generational-cycles detour, the Transformer lecture and the narration explaining the toast go, as all three wanted. (8) Chapter 1 (1,850 to 2,850): 2,650. It is the newcomer's definition chapter, so it keeps Danaylov's open slot (b0130 and its heading need it), Good, Vinge and Kurzweil, one survey, and the doors-not-dates practice that Appendix G lacks, while losing the roll call, the tables and the explanations that spend Ch5's payoff. (9) Chapter 4 (680 to 1,525): 1,210. The LADDER scene is the book's pivot from speculation to the near end; one Stage 8 section stays so the chapter still delivers its title and CT's line about godlike machines and hungry people; P-06 stays compressed with the undemotable list. Stage 9 and the simulation math go. (10) Chapter 5 cyberdeck (zero and story drop all, path three blocks): two blocks (b0138, b0144), only so b0127's line about the kids lands on a name. The panic history, the anatomy and the Tiffany Doctrine go; CT should rebuild the intergenerational alliance himself. (11) Chapter 6's two kinds of fear (zero and story drop, path keeps): kept, because the preservation solution in b0102 answers the overwhelmed and the status-invested by name. Ch7's battle lines also stay; they do a different job. (12) Chapter 7: both scenes whole; the Entitled and Ready table stays only with the reflexes-not-people note b0128 and the title defuser b0164; P-09 goes because Marta already tells the Luddites mid-fight; P-10 is told once. (13) Chapter 8: Protocols 4 and 5 go together (zero and path wanted 5 alone, which leaves a numbering gap and a block that counts four protocols). (14) Chapter 11: the free-to-eat section keeps b0163 because b0164 builds on it and the Introduction's b0107 points there; the British Restaurants history, the objections FAQ, the VRAM and heat math, and P-14 go. (15) Chapter 12: New Communities stays as the honest counterweight (zero and story); P-15 goes because its rule is the villain's playbook. (16) Chapter 14: the mesh blocks stay because Ch17 b0118 points back to them; P-17 goes because its countdown-clock rule casts Frank as Blockbuster; P-18 stays compressed. (17) Chapter 15: b0116 stays although the story architect cut it, because the Conclusion's b0126 needs the crust image it sets up. (18) Chapter 19 (2,843 to 3,500): 2,770. The hearing scene, CT's rawest voice, every rung's heading and What line, the two proofs that stand, Rung 9, the obstacles, the civic how-to and the role list stay. The Who lines go except b0028 (the role list does their work), the How lines go, and the self-disowning proofs go. (19) Conclusion: P-24 goes so the moral mandate runs straight into the Bear Flag, and the bookend stays whole. (20) Trims to land near 50,000 (none touches a continuity pair): Ch2 b0009 and b0100, Ch3 b0009, Ch4 Stage 9, Ch7 the Jahoda table, Ch8 Axelrod, Ch9 the shipwreck paragraph, Ch11 the coda b0157, Ch12 the lone-prepper repeat, Ch13 b0177, Ch14 the Fujifilm narrative b0130, Ch16 P-20's b0136, Ch18 the going-right repeat. VERDICT ON v0.11.0. Not publishable as is. The front matter runs about 9,300 words through four front doors before Chapter 1 says what the Singularity is; the Introduction and Chapter 1 define AGI two different ways; the AI-slop riff sneers at the artists Chapter 0 grieves for; most scenes are followed by narration explaining them; the Conclusion ends three times; several precedents argue against their own chapters; and Part III spends thousands of words on reference material in a hedged committee voice far from CT's April 2024 draft. Every one of those failures can be removed by dropping whole blocks, and the spine fits in about 50,000 words, which is the evidence that a strong book sits inside this one. SEAMS FOR CT (a block cut cannot fix these): the stage-range dash in the Ch2, Ch3 and Ch4 titles; the broken sentence in Ch0 b0039 and the plausibility of the seven-day firing; Introduction b0083 against Ch1 b0141 on what AGI means; Introduction b0087 against the Ledger; Ch1 b0155 ending on a colon for a cut table; Ch10 b0150's habit thesis against Ch8's Gary and Sal; Ch12 b0165's opening phrase pointing at the cut b0167; Ch13 b0157 (half and half) against b0164 (seventy-thirty); Ch14 b0129 and b0171 naming Kodak, whose story is cut; Ch15 b0115's patched irrigation caveat; Ch9 b0178's Raspberry Pi failing Marta's single-supplier test; Conclusion b0115's last fence against the rules-are-the-fence thesis, and b0111 against b0108; Appendix C b0049 citing Chapter 11 answers that are cut; Appendix G Month 4 item 4 naming the dropped Appendix E; and the intergenerational alliance (Ch5 b0151), worth rebuilding in CT's own voice."
+}

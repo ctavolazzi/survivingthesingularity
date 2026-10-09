@@ -1,0 +1,169 @@
+{
+  "edition": "0.10.4",
+  "scope": "Complete prose reread of the assigned opening sections, approximately 26,477 words before revision. This is an editorial read, not a fresh factual verification or rendered-layout proof.",
+  "guides_read": [
+    "src/lib/data/book/VOICE-GUIDE.md",
+    "src/lib/data/book/ELIJAH-PROTOCOL.md"
+  ],
+  "files_read": [
+    {
+      "file": "src/lib/data/book/02-introduction.md",
+      "words_before": 3675,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The food-first commitment is explicit, and the second-ox image gives the argument a physical anchor. The longest enforcement paragraph briefly asks the reader to carry several examples without a pause. One paragraph break improves that passage without cooling the voice or altering any claim.",
+      "before_sha256": "46b0da2dc4dd852ff12d1cf7b31c957ac8a355ea1fa355e50272310b7f7424a2",
+      "after_sha256": "8d0292f4174c13a8f5af41b8018051618fe9838d88196b922694908ce94ecf0d"
+    },
+    {
+      "file": "src/lib/data/book/01-preface.md",
+      "words_before": 1404,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The horse-ranch reversal and Austen example establish hopeful skepticism well. The closing practices are concrete. No change needed in this pass.",
+      "before_sha256": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc",
+      "after_sha256": "a87038fe3ac3808297ee14d191f26f87047f95651cf67bab634df737f0cc61dc"
+    },
+    {
+      "file": "src/lib/data/book/31-how-to-use.md",
+      "words_before": 262,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The three routes and starting-point table are short enough to consult. The practical route is explicit and the glossary is easy to locate. No change needed.",
+      "before_sha256": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779",
+      "after_sha256": "4d2e76f63c4e345563963fb2ce1ef58d71e080ae86d2036890b05fed57c80779"
+    },
+    {
+      "file": "src/lib/data/book/00-chapter0.md",
+      "words_before": 3813,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The demonstration, delayed consequence and hollow toast remain the strongest opening sequence. The new illustration sits at the emotional turn. The scene and precedent read coherently, so both are retained intact.",
+      "before_sha256": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489",
+      "after_sha256": "929c40fb8e6f618c39254a93d2ee85c1a1fe7d080515f497d32abfd5ac54b489"
+    },
+    {
+      "file": "src/lib/data/book/part1-divider.md",
+      "words_before": 84,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "This brief transition names the speculative boundary and keeps the food commitment in view. No change needed.",
+      "before_sha256": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434",
+      "after_sha256": "09283b99ba348022725f9d1858486f43291b6321ec432235be42c4743e5ea434"
+    },
+    {
+      "file": "src/lib/data/book/03-chapter1.md",
+      "words_before": 4639,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The failed experiment grounds the definitions, and the four-question distinction helps the reader separate capability from access. One economic phrase was harder to parse than the surrounding direct address; the revision uses ordinary language.",
+      "before_sha256": "2ef6993b4fdafb825a2a168ce554cdea6183d7ae1e0f16fa47501d441b778d4e",
+      "after_sha256": "9916db2c37a5a665fe82ca051a7992b44e9f2d40fb35b922c5a682ccaa125d4a"
+    },
+    {
+      "file": "src/lib/data/book/04-chapter2.md",
+      "words_before": 3445,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The all-hands scene gives the stages human stakes, while the Foundations section distinguishes competence from authority. Existing safeguards around scenarios and deployment remain useful. No change needed.",
+      "before_sha256": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7",
+      "after_sha256": "1e0da5db5997ffde8d7a13a4b092d22d1221e4ec4cfed8bb0d3bfe39b1843cc7"
+    },
+    {
+      "file": "src/lib/data/book/05-chapter3.md",
+      "words_before": 2532,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The phone call earns the speculative distance emotionally. The optional route back to practical work is considerate, but it was buried as a long fifth thesis bullet. Giving that route its own paragraph makes the choice easier to find.",
+      "before_sha256": "65b6f36d7705ea69ef86941cf43e937893d97334f836288879ac5f294d5bea84",
+      "after_sha256": "4bdc3e8c7f7e75dca3f40366d870d8bed618d612bf6ba146fe161643a296d304"
+    },
+    {
+      "file": "src/lib/data/book/06-chapter4.md",
+      "words_before": 2515,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The spreadsheet scene makes the limit of prediction tangible. The return to Earth is clear, and the simulation assumptions remain explicitly qualified. Only a small idiom needed correction.",
+      "before_sha256": "b8c4508dc0f45c1ce3855af2b955e574146bbf0e0f6fa508c9c9b9899dd1c243",
+      "after_sha256": "effaaa6d8af9e47826ec930e4f4edc7dbd41da10ae12a78c5c6eff38a35da979"
+    },
+    {
+      "file": "src/lib/data/book/07-chapter5.md",
+      "words_before": 4108,
+      "coverage": "Read in full, including narrative, argument, figures and captions, precedent and practices where present.",
+      "critique": "The power bill and stove bring the chapter back to things a reader can measure. The library analogy needs a smoother lead-in, and the closing energy audit should explicitly retain separate units. Both changes improve use without adding advice or changing numbers.",
+      "before_sha256": "f675003081c692dcef988ae78d2ad31de5797430a56b95144870db5ae4fceba6",
+      "after_sha256": "77a81d1b8c6c9d2e57ccff4ca80e0c88799ed06ea10f39c061f8006f9a268186"
+    }
+  ],
+  "edits": [
+    {
+      "file": "src/lib/data/book/02-introduction.md",
+      "before": "Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism) Between 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: \"The sheriff gives you a Notice to Vacate,\" five days to move, and \"if you don't move out, the sheriff can lock you out of your home.\" [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.",
+      "after": "Because almost everything in this world has been arranged around money, as if nothing else actually matters, and that arrangement is enforced. A credit report and a private risk score decide whether a landlord will rent to you. [CFPB, Reports Highlight Problems with Tenant Background Checks](https://www.consumerfinance.gov/archive/newsroom/cfpb-reports-highlight-problems-with-tenant-background-checks/) Your attention and your personal data are harvested and sold, the business model Shoshana Zuboff named surveillance capitalism. [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism)\n\nBetween 2000 and 2018, landlords in the United States filed more than 3.6 million eviction cases in an average year. [Gromis et al., Estimating eviction prevalence across the United States](https://collaborate.princeton.edu/en/publications/estimating-eviction-prevalence-across-the-united-states/) When a family loses one, California's own courts spell out what comes next: \"The sheriff gives you a Notice to Vacate,\" five days to move, and \"if you don't move out, the sheriff can lock you out of your home.\" [California Courts, What happens if you lose your eviction case](https://selfhelp.courts.ca.gov/eviction-tenant/lose-case) That's what it means when survival costs money. If you can't pay, a person with a badge and a gun is authorized to come and put you out.",
+      "reason": "Give the long paragraph a pause between examples of monetary access and the evidence about enforcement. Every word and citation is retained."
+    },
+    {
+      "file": "src/lib/data/book/03-chapter1.md",
+      "before": "**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the price of a trained person stops clearing. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.",
+      "after": "**It doesn't wait for a god.** It doesn't require a machine smarter than the smartest human at anything. It only requires that thinking gets cheap enough, in enough places, that the old price of trained work no longer holds. Nobody at the Bear Flag lost their livelihood to a superintelligence. They lost it to a competent autocomplete with a subscription fee.",
+      "reason": "Replace market jargon with plain language while preserving the argument about falling prices for cognitive work."
+    },
+    {
+      "file": "src/lib/data/book/05-chapter3.md",
+      "before": "- Recursive self-improvement is the tipping point: a process that upgrades the thing doing the upgrading. Compound interest on cognition.\n- The scenario I keep coming back to: the machine's answer to a hostile planet isn't war. It's exit.\n- Greater capability tells you nothing about motives. The cures, if they come, still have to reach a patient.\n- None of this has to happen before anybody eats.\n- This chapter and the next are the book's most speculative. If you're here for the practical part, Chapter 5 picks the thread back up; you'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.",
+      "after": "- Recursive self-improvement is the tipping point: a process that upgrades the thing doing the upgrading. Compound interest on cognition.\n- The scenario I keep coming back to: the machine's answer to a hostile planet isn't war. It's exit.\n- Greater capability tells you nothing about motives. The cures, if they come, still have to reach a patient.\n- None of this has to happen before anybody eats.\n\n**Reading route.** Chapters 3 and 4 are the book's most speculative. If you're here for the practical part, continue at Chapter 5. You'll miss a stretch of Elijah's story, but nothing the later chapters argue depends on Stages 6 to 9.",
+      "reason": "Separate the optional reading route from the four chapter claims so a practical reader can find it quickly. Preserve the warning about skipping part of the story."
+    },
+    {
+      "file": "src/lib/data/book/06-chapter4.md",
+      "before": "In the far end of this scenario, the USI hits that wall. And it does what a self-improving system does when it runs out of local resources: it looks elsewhere. Branches of physics we lack the hardware to comprehend. Pocket universes. Simulations so vast that everything we know could be a forgotten line in one of its subroutines.",
+      "after": "At the far end of this scenario, the USI hits that wall. And it does what a self-improving system does when it runs out of local resources: it looks elsewhere. Branches of physics we lack the hardware to comprehend. Pocket universes. Simulations so vast that everything we know could be a forgotten line in one of its subroutines.",
+      "reason": "Correct a small idiom without changing the speculative scenario."
+    },
+    {
+      "file": "src/lib/data/book/07-chapter5.md",
+      "before": "We already know how to separate the person eating from the person paying. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.",
+      "after": "We already know how to fund a service without charging for each use. A library has a budget and charges you nothing at the door. Automation can bring down the cost of some of the work. It doesn't decide who pays or who gets served. If a project can't say how next month's maintenance gets covered, it has no business advertising a permanent promise. Find the gap while there's still time to fix it.",
+      "reason": "Bridge directly into the library example instead of making the reader mentally translate a person eating into a library user."
+    },
+    {
+      "file": "src/lib/data/book/07-chapter5.md",
+      "before": "1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who captures the spread. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.\n2. List the tasks in your job the way a buyer would, then ask a coworker what the list missed. Mark the parts where you're competing on raw output against silicon, and the parts where you aren't: trust, presence, hands, judgment on the ground, relationships. Shift your effort toward the second list this quarter.\n3. Move one meaningful expense from rented energy to owned energy this year: insulation, a bicycle that replaces short car trips, a panel and battery sized by someone who knows the job. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.",
+      "after": "1. Run the energy audit from this chapter on paper: what comes in (calories, kilowatt-hours, dollars), what goes out (labor, attention, rent), and who gets paid. Keep each quantity in its own units. Most people have never once seen their own ledger the way a buyer would. The horse never saw its ledger at all.\n2. List the tasks in your job the way a buyer would, then ask a coworker what the list missed. Mark the parts where you're competing on raw output against silicon, and the parts where you aren't: trust, presence, hands, judgment on the ground, relationships. Shift your effort toward the second list this quarter.\n3. Move one meaningful expense from rented energy to owned energy this year: insulation, a bicycle that replaces short car trips, a panel and battery sized by someone who knows the job. Watt priced the horse in the horse's own currency. Every watt you own is a watt nobody can price you in.",
+      "reason": "Make the practice agree with the earlier instruction to keep food, energy, labor and money separate. A spread could imply subtracting quantities that use different units."
+    }
+  ],
+  "verification": {
+    "read_back": true,
+    "narrative_scenes": "Unchanged.",
+    "artwork_captions_epigraphs_citations": "No edits.",
+    "new_dash_characters": "None.",
+    "paragraph_boundaries_changed": [
+      "Introduction: split one paragraph before the eviction evidence.",
+      "Chapter 3: reading route moved out of the briefing list."
+    ],
+    "limitations": [
+      "No fresh source research was performed.",
+      "Full PDF, EPUB and reader rebuilds are handled by the root agent."
+    ]
+  },
+  "critique": [
+    "The opening has a clear emotional spine: a useful demonstration becomes an unintended consequence, then an inquiry into responsibility. The scenes deserve to keep their cadence. The useful improvements are small pauses and clearer reader instructions, especially where a long argument paragraph or an operational metaphor asks for extra interpretation. Six local edits address those points while preserving scenes, positioning, images, captions, epigraphs, factual claims and citations.",
+    "src/lib/data/book/02-introduction.md: The food-first commitment is explicit, and the second-ox image gives the argument a physical anchor. The longest enforcement paragraph briefly asks the reader to carry several examples without a pause. One paragraph break improves that passage without cooling the voice or altering any claim.",
+    "src/lib/data/book/01-preface.md: The horse-ranch reversal and Austen example establish hopeful skepticism well. The closing practices are concrete. No change needed in this pass.",
+    "src/lib/data/book/31-how-to-use.md: The three routes and starting-point table are short enough to consult. The practical route is explicit and the glossary is easy to locate. No change needed.",
+    "src/lib/data/book/00-chapter0.md: The demonstration, delayed consequence and hollow toast remain the strongest opening sequence. The new illustration sits at the emotional turn. The scene and precedent read coherently, so both are retained intact.",
+    "src/lib/data/book/part1-divider.md: This brief transition names the speculative boundary and keeps the food commitment in view. No change needed.",
+    "src/lib/data/book/03-chapter1.md: The failed experiment grounds the definitions, and the four-question distinction helps the reader separate capability from access. One economic phrase was harder to parse than the surrounding direct address; the revision uses ordinary language.",
+    "src/lib/data/book/04-chapter2.md: The all-hands scene gives the stages human stakes, while the Foundations section distinguishes competence from authority. Existing safeguards around scenarios and deployment remain useful. No change needed.",
+    "src/lib/data/book/05-chapter3.md: The phone call earns the speculative distance emotionally. The optional route back to practical work is considerate, but it was buried as a long fifth thesis bullet. Giving that route its own paragraph makes the choice easier to find.",
+    "src/lib/data/book/06-chapter4.md: The spreadsheet scene makes the limit of prediction tangible. The return to Earth is clear, and the simulation assumptions remain explicitly qualified. Only a small idiom needed correction.",
+    "src/lib/data/book/07-chapter5.md: The power bill and stove bring the chapter back to things a reader can measure. The library analogy needs a smoother lead-in, and the closing energy audit should explicitly retain separate units. Both changes improve use without adding advice or changing numbers."
+  ],
+  "stable_id_mapping": [
+    {
+      "old_id": "sts.introduction.b0142",
+      "retain_for": "First fragment beginning Because almost everything in this world",
+      "new_id_for": "Second fragment beginning Between 2000 and 2018,",
+      "reason": "The first fragment keeps the original paragraph ID; the later fragment receives a new ID."
+    },
+    {
+      "old_id": "sts.chapter3.b0060",
+      "retain_for": "Briefing list beginning Recursive self-improvement is the tipping point, containing its original first four bullets",
+      "new_id_for": "Standalone paragraph beginning Reading route. Chapters 3 and 4",
+      "reason": "The shortened briefing list keeps its original ID; the extracted navigation paragraph receives a new ID."
+    }
+  ]
+}

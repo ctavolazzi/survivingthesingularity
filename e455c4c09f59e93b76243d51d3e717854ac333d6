@@ -1,0 +1,271 @@
+{
+  "version": "0.10.3",
+  "epub_sha256": "35518ada9f32a2655e690f02e936b4b053b789f208bdada7a5fef9ae7a557521",
+  "epub_bytes": 41851429,
+  "target_artworks": 8,
+  "target_captures": 16,
+  "status": "pass",
+  "structural_report_sha256": "96c1c5a6013eb0b96f5c1edc2347bb3f5548cec6a46ba9af9b590cb35faefe58",
+  "layout_report_sha256": "f7e9b581d681a084430d3a4c37ef1d3494ed094c2c4193618e57eb0ef844031f",
+  "final_source_receipt_sha256": "6dc6f65ef8457cc4a7e01904951ae357072edc9ba3068249ee0e5f77ed5670c0",
+  "captures": [
+    {
+      "asset": "v103-first-year-index.svg",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-first-year-index-390.png",
+      "capture_sha256": "25e1a2b1b90f66a79be866a7235a2e63ff7f4dd8ab552a6917e4e4a47bed8935",
+      "capture_dimensions": [
+        374,
+        386
+      ],
+      "status": "pass",
+      "finding": "All twelve numbered actions fit. The twelfth action uses an intentional second line without touching the border or footer.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    },
+    {
+      "asset": "v103-first-year-index.svg",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-first-year-index-768.png",
+      "capture_sha256": "4dcf114f938b399f20d23aa96bcbe2d147ea5694df29905eb5b2fad0ba126050",
+      "capture_dimensions": [
+        752,
+        679
+      ],
+      "status": "pass",
+      "finding": "All twelve numbered actions fit. The twelfth action uses an intentional second line without touching the border or footer.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    },
+    {
+      "asset": "v103-narrative-bear-flag.png",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-bear-flag-390.png",
+      "capture_sha256": "c940be0f02844b9225d114f67bc5361340b7a28a8bce2550538b19544d2ad1a3",
+      "capture_dimensions": [
+        374,
+        305
+      ],
+      "status": "pass",
+      "finding": "Three toasting men, Elijah and the laptop remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-narrative-bear-flag.png",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-bear-flag-768.png",
+      "capture_sha256": "49a732853726d2c98ad8fac27ce8856db15582f61052ca3e5e8bca32db1ed818",
+      "capture_dimensions": [
+        752,
+        537
+      ],
+      "status": "pass",
+      "finding": "Three toasting men, Elijah and the laptop remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-narrative-near-end.png",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-near-end-390.png",
+      "capture_sha256": "b6accd19be48a831e4ee403222f4b2a84f41803f61d006f37c9188e050c128e2",
+      "capture_dimensions": [
+        374,
+        306
+      ],
+      "status": "pass",
+      "finding": "Coffee cup, closed laptop, window and horizon remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-narrative-near-end.png",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-near-end-768.png",
+      "capture_sha256": "1f21c900be7cb2513f81eed29a2b8f408fc19104c65e96f7ddd51367af23d860",
+      "capture_dimensions": [
+        752,
+        537
+      ],
+      "status": "pass",
+      "finding": "Coffee cup, closed laptop, window and horizon remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-narrative-passing-beans.png",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-passing-beans-390.png",
+      "capture_sha256": "c9fa429049f27743a7454c551fa87d25756226eb6e971c17ac81340e570ec602",
+      "capture_dimensions": [
+        374,
+        306
+      ],
+      "status": "pass",
+      "finding": "Bowl exchange, adult diners and dog beneath the table remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-narrative-passing-beans.png",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-passing-beans-768.png",
+      "capture_sha256": "051d6907e5218918f628661e6c4c6a17e880f43c0cbd11378bdff1785111b79b",
+      "capture_dimensions": [
+        752,
+        537
+      ],
+      "status": "pass",
+      "finding": "Bowl exchange, adult diners and dog beneath the table remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-narrative-rosa-testimony.png",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-rosa-testimony-390.png",
+      "capture_sha256": "3cd351ccb3f39c9cd626bad71cfe6231f96a386138383b37d81ac005bf576ceb",
+      "capture_dimensions": [
+        374,
+        305
+      ],
+      "status": "pass",
+      "finding": "Rosa, microphone, wrist brace and meeting setting remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-narrative-rosa-testimony.png",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-narrative-rosa-testimony-768.png",
+      "capture_sha256": "e6cec3806f6e5c8d0b09edcddd83669542fcf1cb196496b2042909de94081e68",
+      "capture_dimensions": [
+        752,
+        537
+      ],
+      "status": "pass",
+      "finding": "Rosa, microphone, wrist brace and meeting setting remain visible. Complete caption uses two lines at 390 and one at 768.",
+      "reviewers": [
+        "/root/v102_middle",
+        "/root/v102_middle/v103_epub_checks"
+      ]
+    },
+    {
+      "asset": "v103-offline-check.svg",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-offline-check-390.png",
+      "capture_sha256": "19ff03ad5588de735588e6186abdb5faa830e15b6c07ffc72ceee8abc4e07cff",
+      "capture_dimensions": [
+        374,
+        373
+      ],
+      "status": "pass",
+      "finding": "All four numbered steps and their detail lines fit beside the phone. Footer and caption remain complete.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    },
+    {
+      "asset": "v103-offline-check.svg",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-offline-check-768.png",
+      "capture_sha256": "b420e0ac72434e533317560c82de6dd8457402791238821ba62768de5910268c",
+      "capture_dimensions": [
+        752,
+        653
+      ],
+      "status": "pass",
+      "finding": "All four numbered steps and their detail lines fit beside the phone. Footer and caption remain complete.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    },
+    {
+      "asset": "v103-reading-routes.svg",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-reading-routes-390.png",
+      "capture_sha256": "27f27f7f5f048f9286acbdc08692a09eb1549468abcd711ee101f7e6922634ed",
+      "capture_dimensions": [
+        374,
+        349
+      ],
+      "status": "pass",
+      "finding": "All three routes, nodes, arrow and abbreviated section labels fit. Caption is complete at both widths.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    },
+    {
+      "asset": "v103-reading-routes.svg",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-reading-routes-768.png",
+      "capture_sha256": "3269ec2ce46c2223fc4b76114bec96d9621b3bd243e9004a2fea5de12755a6ef",
+      "capture_dimensions": [
+        752,
+        625
+      ],
+      "status": "pass",
+      "finding": "All three routes, nodes, arrow and abbreviated section labels fit. Caption is complete at both widths.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    },
+    {
+      "asset": "v103-service-ledger.svg",
+      "viewport_width": 390,
+      "capture": "docs/v0.10.3/epub-proof/v103-service-ledger-390.png",
+      "capture_sha256": "f727d75dbf7f02b760e3f73cc381097a4895984da5369a2d8f462f436bd66774",
+      "capture_dimensions": [
+        374,
+        355
+      ],
+      "status": "pass",
+      "finding": "Both ledger columns and all four cost labels fit. Checkmarks and caption remain separate from the illustration labels.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    },
+    {
+      "asset": "v103-service-ledger.svg",
+      "viewport_width": 768,
+      "capture": "docs/v0.10.3/epub-proof/v103-service-ledger-768.png",
+      "capture_sha256": "6c2e351d57bb6567cb59b30ddd2ea038f0354ec9c1479b4e6b18fdf8421e6ce7",
+      "capture_dimensions": [
+        752,
+        616
+      ],
+      "status": "pass",
+      "finding": "Both ledger columns and all four cost labels fit. Checkmarks and caption remain separate from the illustration labels.",
+      "reviewers": [
+        "/root/v102_middle"
+      ]
+    }
+  ],
+  "completed_at_utc": "2026-09-29T00:36:01.777375+00:00",
+  "reviewed_artworks": 8,
+  "reviewed_captures": 16,
+  "observed_defects": [],
+  "limits": [
+    "Actual packaged XHTML/CSS/resources rendered in Chrome with JavaScript disabled; no EPUBCheck certification, dedicated e-reader pagination or physical-device test.",
+    "Figure captures cover artwork and caption. They do not establish full surrounding paragraph placement or screen-reader usability.",
+    "At 390 px, fine facial, hand and wrist-brace details are smaller; principal actions remain visible.",
+    "All 62 registered figures were measured at both widths; targeted manual review covers the 8 additions, not every retained artwork."
+  ]
+}

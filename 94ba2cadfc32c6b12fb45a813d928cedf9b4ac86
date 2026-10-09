@@ -1,0 +1,79 @@
+ M AUDITOR-BRIEF.md
+ M README.md
+ M docs/publication/PDF-RESOURCE-CHECKS.json
+ M docs/publication/PDF-RESOURCE-CHECKS.md
+ M docs/publication/baseline.json
+ M publication/README.md
+ M src/lib/data/book/02-introduction.md
+ M src/lib/data/book/08-chapter6.md
+ M src/lib/data/book/21-conclusion.md
+ M src/lib/data/book/23-appendix-b.md
+ M src/lib/data/book/27-chapter19.md
+ M src/lib/data/book/book.json
+ M src/lib/data/book/manuscript-index.json
+ M src/routes/+page.svelte
+?? docs/publication/FINALIZATION-v0.11.0.md
+?? docs/v0.11.0/
+?? manuscript/Surviving-the-Singularity-v0.11.0.md
+?? static/images/optimized/v101_cutout_atlas_400.png
+?? static/images/optimized/v101_cutout_atlas_400.webp
+?? static/images/optimized/v101_cutout_atlas_800.png
+?? static/images/optimized/v101_cutout_atlas_800.webp
+?? static/images/optimized/v101_cutout_atlas_original.webp
+?? static/images/optimized/v101_cutout_printer_400.png
+?? static/images/optimized/v101_cutout_printer_400.webp
+?? static/images/optimized/v101_cutout_printer_800.png
+?? static/images/optimized/v101_cutout_printer_800.webp
+?? static/images/optimized/v101_cutout_printer_original.webp
+?? static/images/optimized/v101_cutout_rocket_400.png
+?? static/images/optimized/v101_cutout_rocket_400.webp
+?? static/images/optimized/v101_cutout_rocket_800.png
+?? static/images/optimized/v101_cutout_rocket_800.webp
+?? static/images/optimized/v101_cutout_rocket_original.webp
+?? static/images/optimized/v101_cutout_spot_1200.png
+?? static/images/optimized/v101_cutout_spot_1200.webp
+?? static/images/optimized/v101_cutout_spot_400.png
+?? static/images/optimized/v101_cutout_spot_400.webp
+?? static/images/optimized/v101_cutout_spot_800.png
+?? static/images/optimized/v101_cutout_spot_800.webp
+?? static/images/optimized/v101_cutout_spot_original.webp
+?? static/images/optimized/v101_cutout_sun_1200.png
+?? static/images/optimized/v101_cutout_sun_1200.webp
+?? static/images/optimized/v101_cutout_sun_400.png
+?? static/images/optimized/v101_cutout_sun_400.webp
+?? static/images/optimized/v101_cutout_sun_800.png
+?? static/images/optimized/v101_cutout_sun_800.webp
+?? static/images/optimized/v101_cutout_sun_original.webp
+?? static/images/optimized/v101_cutout_tools_400.png
+?? static/images/optimized/v101_cutout_tools_400.webp
+?? static/images/optimized/v101_cutout_tools_800.png
+?? static/images/optimized/v101_cutout_tools_800.webp
+?? static/images/optimized/v101_cutout_tools_original.webp
+?? static/images/optimized/v103_narrative_bear_flag_1200.png
+?? static/images/optimized/v103_narrative_bear_flag_1200.webp
+?? static/images/optimized/v103_narrative_bear_flag_400.png
+?? static/images/optimized/v103_narrative_bear_flag_400.webp
+?? static/images/optimized/v103_narrative_bear_flag_800.png
+?? static/images/optimized/v103_narrative_bear_flag_800.webp
+?? static/images/optimized/v103_narrative_bear_flag_original.webp
+?? static/images/optimized/v103_narrative_near_end_1200.png
+?? static/images/optimized/v103_narrative_near_end_1200.webp
+?? static/images/optimized/v103_narrative_near_end_400.png
+?? static/images/optimized/v103_narrative_near_end_400.webp
+?? static/images/optimized/v103_narrative_near_end_800.png
+?? static/images/optimized/v103_narrative_near_end_800.webp
+?? static/images/optimized/v103_narrative_near_end_original.webp
+?? static/images/optimized/v103_narrative_passing_beans_1200.png
+?? static/images/optimized/v103_narrative_passing_beans_1200.webp
+?? static/images/optimized/v103_narrative_passing_beans_400.png
+?? static/images/optimized/v103_narrative_passing_beans_400.webp
+?? static/images/optimized/v103_narrative_passing_beans_800.png
+?? static/images/optimized/v103_narrative_passing_beans_800.webp
+?? static/images/optimized/v103_narrative_passing_beans_original.webp
+?? static/images/optimized/v103_narrative_rosa_testimony_1200.png
+?? static/images/optimized/v103_narrative_rosa_testimony_1200.webp
+?? static/images/optimized/v103_narrative_rosa_testimony_400.png
+?? static/images/optimized/v103_narrative_rosa_testimony_400.webp
+?? static/images/optimized/v103_narrative_rosa_testimony_800.png
+?? static/images/optimized/v103_narrative_rosa_testimony_800.webp
+?? static/images/optimized/v103_narrative_rosa_testimony_original.webp

@@ -18,6 +18,17 @@ ROOT, REPO, TAG = chunks.ROOT, chunks.REPO, chunks.TAG
 TARGETS = HERE / "source-upload-targets.json"
 RECEIPT = HERE / "final-release-receipt.json"
 STAGE = ROOT / "book-build" / "upload-archive-2026-10-08" / "final-metadata"
+METADATA_SOURCES = {
+    "ARCHIVE-INDEX.md": "README.md", "book-catalog.json": "book-archive-manifest.json",
+    "archive-transport.json": "archive-transport.json", "download-archive.py": "download-archive.py",
+    "solid-archive-report.json": "solid-archive-report.json",
+    "chunk-upload-receipt.json": "chunk-upload-receipt.json",
+    "SOURCE-PROVENANCE.md": "SOURCE-PROVENANCE.md",
+    "source-provenance.json": "source-provenance.json",
+    "recent-work.json": "recent-work.json",
+    "game-preview-work.patch": "game-preview-work.patch",
+}
+METADATA_NAMES = (*METADATA_SOURCES, "final-verification-receipt.json")
 
 
 def read(path):
@@ -135,15 +146,7 @@ def stage_metadata(checks):
                     "release_id": checks["release_id"],
                     "parts": [{key: part[key] for key in ("index", "name", "id", "bytes", "sha256", "verified_digest")}
                               for part in checks["parts"]]}
-    mappings = {"ARCHIVE-INDEX.md": "README.md", "book-catalog.json": "book-archive-manifest.json",
-                "archive-transport.json": "archive-transport.json", "download-archive.py": "download-archive.py",
-                "solid-archive-report.json": "solid-archive-report.json",
-                "chunk-upload-receipt.json": "chunk-upload-receipt.json",
-                "SOURCE-PROVENANCE.md": "SOURCE-PROVENANCE.md",
-                "source-provenance.json": "source-provenance.json",
-                "recent-work.json": "recent-work.json",
-                "game-preview-work.patch": "game-preview-work.patch"}
-    data = {name: (HERE / source).read_bytes() for name, source in mappings.items()}
+    data = {name: (HERE / source).read_bytes() for name, source in METADATA_SOURCES.items()}
     data["final-verification-receipt.json"] = (json.dumps(verification, indent=2) + "\n").encode()
     expected = []
     for name, content in data.items():
@@ -216,10 +219,8 @@ def main():
         receipt["published"] = not release["draft"]
         receipt["release_url"] = release["html_url"]
         if not args.publish and not release["draft"]:
-            names = ["ARCHIVE-INDEX.md", "book-catalog.json", "archive-transport.json", "download-archive.py",
-                     "solid-archive-report.json", "chunk-upload-receipt.json", "final-verification-receipt.json"]
             expected = [{"index": 0, "name": name, "bytes": (STAGE / name).stat().st_size,
-                         "sha256": chunks.file_hash(STAGE / name)[1]} for name in names]
+                         "sha256": chunks.file_hash(STAGE / name)[1]} for name in METADATA_NAMES]
             ensure_metadata(expected, release, assets, receipt, save, allow_upload=False)
         if args.publish:
             complete_documents()

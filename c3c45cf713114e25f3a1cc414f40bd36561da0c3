@@ -1,0 +1,38 @@
+Tier 3, the Field Station. Start from a compatible handheld and test its
+power budget with every peripheral connected. Add a receive-only soft-
+ware-defined radio and an antenna suitable for the public broadcasts you
+intend to receive. Fold in the mesh and library, then configure and test
+storage encryption and recovery. Integration earns this tier; buying four
+parts doesnʼt.
+Owning the stack means securing it, and staying
+legal
+Two warnings, because the cyberdeck world runs right up against lines
+this book wonʼt cross with you.
+First, the honest part. A deck holds your life: notes, keys, maps, your
+questions. A machine you carry is a machine that can get lost or taken.
+Use  storage  encryption  supported  by  your  operating  system,  a  strong
+passphrase, and a separate backup you have tested. Encryption protects
+stored data while it is locked; it doesnʼt make an unlocked or compro-
+mised computer safe. A local machine still needs updates from sources
+youʼve  verified,  sensible  passwords,  and  a  clear  idea  of  what  itʼs
+connected to. Cryptsetup FAQ
+Second, the boundary. The same hardware skills overlap with offensive
+security  work,  and  a  lot  of  cyberdeck  content  online  is  really  about
+getting  into  other  peopleʼs  networks.  This  bookʼs  use  is  defensive  and
+personal, never offensive, and there are two hard lines with real penalties
+behind them:
+Access. Get permission before testing someone elseʼs computer or
+network, and stay inside that permission. Unauthorized access can
+violate computer-misuse laws, including the US Computer Fraud and
+Abuse Act. 18 U.S.C. 1030
+Spectrum. Check the rules for your location and the service you
+intend to use. Some transmissions need an individual license; others
+are allowed only with compliant equipment and operating conditions.
+Reception and disclosure have their own restrictions, so an audible
+signal isnʼt permission to record or share it. Start with public
+broadcasts and your own authorized links. US interception statute,
+including its exceptions; US Part 15 operating conditions.
+• 
+• 
+APPENDIX E
+385

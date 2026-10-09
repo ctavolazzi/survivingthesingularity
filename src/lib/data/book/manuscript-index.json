@@ -1,14 +1,410 @@
 {
   "schema": "sts-manuscript-index/v1",
-  "book_version": "0.7.4",
-  "generated": "2026-07-31",
+  "book_version": "0.7.5",
+  "generated": "2026-10-09",
   "id_scheme": "sts.<section_id>.b<NNNN>  (b = block, 4-digit monotonic ordinal)",
   "totals": {
-    "sections": 30,
-    "blocks": 2065,
-    "words": 91954
+    "sections": 31,
+    "blocks": 2100,
+    "words": 93566
   },
   "sections": [
+    {
+      "id": "foreword",
+      "title": "Author's Foreword: Why Tell You All This?",
+      "file": "00-authors-foreword.md",
+      "next_ordinal": 36,
+      "words": 1612,
+      "tombstones": [],
+      "blocks": [
+        {
+          "id": "sts.foreword.b0001",
+          "type": "heading",
+          "lines": [
+            1,
+            1
+          ],
+          "words": 7,
+          "hash": "94444c226325",
+          "preview": "# AUTHOR'S FOREWORD: Why Tell You All This?",
+          "level": 1
+        },
+        {
+          "id": "sts.foreword.b0002",
+          "type": "paragraph",
+          "lines": [
+            3,
+            3
+          ],
+          "words": 59,
+          "hash": "8bb7bb8dd6d4",
+          "preview": "There's a TV show you've probably forgotten about called *Farscape*. An astronaut named Jo"
+        },
+        {
+          "id": "sts.foreword.b0003",
+          "type": "paragraph",
+          "lines": [
+            5,
+            5
+          ],
+          "words": 41,
+          "hash": "e60bd3d08085",
+          "preview": "The show is full of strange and wonderful aliens, but here's the part that stuck with me: "
+        },
+        {
+          "id": "sts.foreword.b0004",
+          "type": "paragraph",
+          "lines": [
+            7,
+            7
+          ],
+          "words": 24,
+          "hash": "65d2bf70d4d6",
+          "preview": "I want to put that image on the table, because I think it's where this technology is headi"
+        },
+        {
+          "id": "sts.foreword.b0005",
+          "type": "paragraph",
+          "lines": [
+            9,
+            9
+          ],
+          "words": 84,
+          "hash": "e2fbc293fb3b",
+          "preview": "Here are two real examples, so you know I'm not just talking about television. In early 20"
+        },
+        {
+          "id": "sts.foreword.b0006",
+          "type": "paragraph",
+          "lines": [
+            11,
+            11
+          ],
+          "words": 41,
+          "hash": "640c1687c84c",
+          "preview": "And back on Earth, mycelium is already shipping. A company called Ecovative grows it into "
+        },
+        {
+          "id": "sts.foreword.b0007",
+          "type": "paragraph",
+          "lines": [
+            13,
+            13
+          ],
+          "words": 16,
+          "hash": "85a4d1ae8278",
+          "preview": "It is a short skip and a jump from growing a package to growing a vessel."
+        },
+        {
+          "id": "sts.foreword.b0008",
+          "type": "paragraph",
+          "lines": [
+            15,
+            15
+          ],
+          "words": 47,
+          "hash": "2d048087cf89",
+          "preview": "Now take one more step. Grow the vessel, put a local AI model inside it, and let it pilot "
+        },
+        {
+          "id": "sts.foreword.b0009",
+          "type": "paragraph",
+          "lines": [
+            17,
+            17
+          ],
+          "words": 95,
+          "hash": "40f71c3515c9",
+          "preview": "That's not only a movie plot anymore. In 2021, a UN panel of experts reported that a Turki"
+        },
+        {
+          "id": "sts.foreword.b0010",
+          "type": "paragraph",
+          "lines": [
+            19,
+            19
+          ],
+          "words": 16,
+          "hash": "d89571549a75",
+          "preview": "That's the doom and gloom. We have to address it. It would be irresponsible not to."
+        },
+        {
+          "id": "sts.foreword.b0011",
+          "type": "paragraph",
+          "lines": [
+            21,
+            21
+          ],
+          "words": 24,
+          "hash": "f4ee445d01c8",
+          "preview": "**So why would I tell you about all that and bring all of that to your attention in a book"
+        },
+        {
+          "id": "sts.foreword.b0012",
+          "type": "paragraph",
+          "lines": [
+            23,
+            23
+          ],
+          "words": 12,
+          "hash": "51c1abdddc50",
+          "preview": "Because I believe something else, and I believe it just as hard."
+        },
+        {
+          "id": "sts.foreword.b0013",
+          "type": "paragraph",
+          "lines": [
+            25,
+            25
+          ],
+          "words": 15,
+          "hash": "f284734b77bd",
+          "preview": "There are ways this can go well, and that things can turn out all right."
+        },
+        {
+          "id": "sts.foreword.b0014",
+          "type": "blockquote",
+          "lines": [
+            27,
+            27
+          ],
+          "words": 93,
+          "hash": "8aa4bbcd0e75",
+          "preview": "> We are not going to get there unless somebody chooses to put energy into building the fu"
+        },
+        {
+          "id": "sts.foreword.b0015",
+          "type": "paragraph",
+          "lines": [
+            29,
+            29
+          ],
+          "words": 9,
+          "hash": "5b69759919d8",
+          "preview": "Each individual person is a microcosm of us all."
+        },
+        {
+          "id": "sts.foreword.b0016",
+          "type": "paragraph",
+          "lines": [
+            31,
+            31
+          ],
+          "words": 131,
+          "hash": "bdd22032b352",
+          "preview": "We all put our pants on one leg at a time, except for some strange and gifted individuals "
+        },
+        {
+          "id": "sts.foreword.b0017",
+          "type": "paragraph",
+          "lines": [
+            33,
+            33
+          ],
+          "words": 19,
+          "hash": "2ef6771e44f6",
+          "preview": "And if you've never felt that sting, maybe you're one of the people privileged enough to m"
+        },
+        {
+          "id": "sts.foreword.b0018",
+          "type": "paragraph",
+          "lines": [
+            35,
+            35
+          ],
+          "words": 111,
+          "hash": "be843d8b3b1f",
+          "preview": "What a privilege it is these days to be bored. Boredom is where a lot of creativity starts"
+        },
+        {
+          "id": "sts.foreword.b0019",
+          "type": "paragraph",
+          "lines": [
+            37,
+            37
+          ],
+          "words": 60,
+          "hash": "13f8e664a016",
+          "preview": "So think about the ways your life is lacking. Then think about what you might do with an a"
+        },
+        {
+          "id": "sts.foreword.b0020",
+          "type": "paragraph",
+          "lines": [
+            39,
+            39
+          ],
+          "words": 2,
+          "hash": "d00c1f27a45b",
+          "preview": "First principles."
+        },
+        {
+          "id": "sts.foreword.b0021",
+          "type": "paragraph",
+          "lines": [
+            41,
+            41
+          ],
+          "words": 72,
+          "hash": "73fcf09218ca",
+          "preview": "When I say first principles, I don't mean learning electrical theory. I mean learning what"
+        },
+        {
+          "id": "sts.foreword.b0022",
+          "type": "paragraph",
+          "lines": [
+            43,
+            43
+          ],
+          "words": 49,
+          "hash": "5021f0cd073b",
+          "preview": "Most of us put it into our jobs, into making money, managing that money, budgeting, shoppi"
+        },
+        {
+          "id": "sts.foreword.b0023",
+          "type": "paragraph",
+          "lines": [
+            45,
+            45
+          ],
+          "words": 59,
+          "hash": "fdfb686ad09d",
+          "preview": "Now imagine all of that, all the heaviness of the world. Feel its weight around your neck "
+        },
+        {
+          "id": "sts.foreword.b0024",
+          "type": "paragraph",
+          "lines": [
+            47,
+            47
+          ],
+          "words": 29,
+          "hash": "5b303ef0f348",
+          "preview": "In this moment, as you read this, how much energy just opened up? If you look around, how "
+        },
+        {
+          "id": "sts.foreword.b0025",
+          "type": "paragraph",
+          "lines": [
+            49,
+            49
+          ],
+          "words": 94,
+          "hash": "9f4e32875bf2",
+          "preview": "The next time you're out on a walk, look around and think about how many tasks it takes to"
+        },
+        {
+          "id": "sts.foreword.b0026",
+          "type": "paragraph",
+          "lines": [
+            51,
+            51
+          ],
+          "words": 30,
+          "hash": "1a0231b8a37f",
+          "preview": "One of our most core and consistent elements is that we are explorers. We poke and prod an"
+        },
+        {
+          "id": "sts.foreword.b0027",
+          "type": "paragraph",
+          "lines": [
+            53,
+            53
+          ],
+          "words": 12,
+          "hash": "d0eafbd65015",
+          "preview": "So in this foreword I want to assert one very specific premise."
+        },
+        {
+          "id": "sts.foreword.b0028",
+          "type": "paragraph",
+          "lines": [
+            55,
+            55
+          ],
+          "words": 13,
+          "hash": "d92b3de3d70c",
+          "preview": "**We have always been explorers. We will never stop going on new adventures.**"
+        },
+        {
+          "id": "sts.foreword.b0029",
+          "type": "paragraph",
+          "lines": [
+            57,
+            57
+          ],
+          "words": 43,
+          "hash": "f2f66a7efce8",
+          "preview": "It's less about what we'll do and more about who we are now. When the barrier to entry is "
+        },
+        {
+          "id": "sts.foreword.b0030",
+          "type": "paragraph",
+          "lines": [
+            59,
+            59
+          ],
+          "words": 132,
+          "hash": "fe0bd6293eae",
+          "preview": "I believe humanity will keep spreading out and settling new areas of the world. There's a "
+        },
+        {
+          "id": "sts.foreword.b0031",
+          "type": "paragraph",
+          "lines": [
+            61,
+            61
+          ],
+          "words": 30,
+          "hash": "221669f1bd34",
+          "preview": "Who doesn't want that? If you're thinking *I don't have any friends*, good news: you're st"
+        },
+        {
+          "id": "sts.foreword.b0032",
+          "type": "paragraph",
+          "lines": [
+            63,
+            63
+          ],
+          "words": 57,
+          "hash": "28c953c76abb",
+          "preview": "And think about how much time would open up in your day if you knew you had the God-given "
+        },
+        {
+          "id": "sts.foreword.b0033",
+          "type": "paragraph",
+          "lines": [
+            65,
+            65
+          ],
+          "words": 74,
+          "hash": "3322a7f6989b",
+          "preview": "Those tools are moving into the physical world next. I, for one, am very excited to see th"
+        },
+        {
+          "id": "sts.foreword.b0034",
+          "type": "paragraph",
+          "lines": [
+            67,
+            67
+          ],
+          "words": 6,
+          "hash": "a0778ed9191f",
+          "preview": "Maybe it could be a benchmark."
+        },
+        {
+          "id": "sts.foreword.b0035",
+          "type": "paragraph",
+          "lines": [
+            69,
+            71
+          ],
+          "words": 6,
+          "hash": "852d3a8190a3",
+          "preview": "Christopher Tavolazzi Chico, California October 2026"
+        }
+      ]
+    },
     {
       "id": "introduction",
       "title": "Introduction: The Uncompromising Truth",

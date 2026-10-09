@@ -1,0 +1,12 @@
+# False positives only. Each line is file:rule:line for one finding.
+#
+# docs/v0.10.4/baseline.json maps file paths to SHA-256 checksums. Six of the
+# paths contain the word "access" (for example ch06-capability-access.svg),
+# which the generic-api-key rule reads as a credential next to a long hex
+# string. They are checksums of image files.
+docs/v0.10.4/baseline.json:generic-api-key:121
+docs/v0.10.4/baseline.json:generic-api-key:154
+docs/v0.10.4/baseline.json:generic-api-key:225
+docs/v0.10.4/baseline.json:generic-api-key:251
+docs/v0.10.4/baseline.json:generic-api-key:262
+docs/v0.10.4/baseline.json:generic-api-key:288
